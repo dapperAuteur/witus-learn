@@ -105,6 +105,15 @@ export const courses = pgTable(
     // UI show what's been announced and stagger the rest over time.
     announcedAt: timestamp("announced_at", { withTimezone: true }),
 
+    // Monotonic counter bumped every time the course's TEACHING CONTENT changes (a lesson is
+    // added, edited, reordered or deleted). A learner who saved lessons for offline stores the
+    // version they downloaded; /downloads compares it against this one and offers "Update
+    // available" so an offline copy is never silently stale.
+    //
+    // Deliberately NOT `updated_at`, which moves on any write at all (a price change, a publish
+    // toggle, an announce stamp) and would cry wolf about content the learner already has.
+    contentVersion: integer("content_version").notNull().default(1),
+
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },

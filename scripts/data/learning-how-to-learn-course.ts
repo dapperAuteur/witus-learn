@@ -99,7 +99,7 @@ How to use it:
 
 This is why every quiz in Learn.WitUS courses links each question back to the lesson that teaches it: the quiz isn't just a grade, it's a learning tool.
 
-:::reveal Why did rereading look *better* than testing on an immediate test but *worse* after a week? ||| Rereading builds easy short-term familiarity, so it flatters an immediate test. But testing forces effortful retrieval, which strengthens durable memory — so a week later, once familiarity has faded, the tested group remembers far more. The struggle to recall is the mechanism; if it feels easy, little learning is happening.
+:::reveal Why did rereading look *better* than testing on an immediate test but *worse* after a week? ||| Rereading builds easy short-term familiarity, so it flatters an immediate test. But testing forces effortful retrieval, which strengthens durable memory, so a week later, once familiarity has faded, the tested group remembers far more. The struggle to recall is the mechanism; if it feels easy, little learning is happening.
 
 ## Sources
 - Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. *Psychological Science, 17*(3), 249-255. https://doi.org/10.1111/j.1467-9280.2006.01693.x
@@ -239,7 +239,7 @@ The implications for studying are direct:
 
 This is also the deepest form of the **diffuse mode** from Lesson 2: your brain making connections while you're not consciously working.
 
-:::reveal Give two reasons an all-nighter is a poor way to prepare, in terms of consolidation and the modes of thinking. ||| (1) Sleep is when memories consolidate and get integrated and locked in, so skipping it trades away the very process that would have secured what you crammed. (2) An exhausted brain also loses the diffuse mode — the relaxed, connection-making state that helps you solve and integrate — leaving you only a depleted focused mode.
+:::reveal Give two reasons an all-nighter is a poor way to prepare, in terms of consolidation and the modes of thinking. ||| (1) Sleep is when memories consolidate and get integrated and locked in, so skipping it trades away the very process that would have secured what you crammed. (2) An exhausted brain also loses the diffuse mode, the relaxed, connection-making state that helps you solve and integrate, leaving you only a depleted focused mode.
 
 ## Sources
 - Diekelmann, S., & Born, J. (2010). The memory function of sleep. *Nature Reviews Neuroscience, 11*(2), 114-126. https://doi.org/10.1038/nrn2762`,
@@ -340,7 +340,7 @@ The cure is to **replace the feeling with a measurement**, and the measurement i
 
 The Learn.WitUS quiz design is built for exactly this: each result links to the lesson behind the answer, so a miss isn't a grade: it's a pointer to your next study target.
 
-:::reveal Why is "this feels familiar" a dangerous signal, and what should you do instead of trusting it? ||| Familiarity is an illusion of competence: "this looks familiar" is not "I can explain this without looking," and it fools you into stopping too soon. Instead, trust performance — close the book and produce the idea from memory (the Feynman move: explain it simply); wherever you stall is exactly what to study next.
+:::reveal Why is "this feels familiar" a dangerous signal, and what should you do instead of trusting it? ||| Familiarity is an illusion of competence: "this looks familiar" is not "I can explain this without looking," and it fools you into stopping too soon. Instead, trust performance, close the book and produce the idea from memory (the Feynman move: explain it simply); wherever you stall is exactly what to study next.
 
 ## Sources
 - Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. *American Psychologist, 34*(10), 906-911. https://doi.org/10.1037/0003-066X.34.10.906
@@ -419,7 +419,7 @@ Notice that the system isn't a pile of separate tricks: the techniques **reinfor
 
 The discomfort is the tell. If your studying feels smooth and easy, you're probably building familiarity, not memory. If it feels effortful (recalling, mixing, spacing, drilling the hard parts), that's the sound of learning that lasts.
 
-:::reveal Pick a subject you're learning now. Write the one step of this loop you're currently *skipping*, and how you'll add it this week. ||| There's no single right answer — most people skip retrieval (rereading instead of recalling), spacing (cramming), or metacognition (never checking what they actually can't do). Name the one you skip and add it concretely this week; the techniques reinforce each other, and the discomfort of effortful study is the tell that it's working.
+:::reveal Pick a subject you're learning now. Write the one step of this loop you're currently *skipping*, and how you'll add it this week. ||| There's no single right answer, most people skip retrieval (rereading instead of recalling), spacing (cramming), or metacognition (never checking what they actually can't do). Name the one you skip and add it concretely this week; the techniques reinforce each other, and the discomfort of effortful study is the tell that it's working.
 
 ## Sources
 - Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology. *Psychological Science in the Public Interest, 14*(1), 4-58. https://doi.org/10.1177/1529100612453266

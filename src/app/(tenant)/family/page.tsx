@@ -111,7 +111,7 @@ export default async function FamilyPage() {
                   <ul className="mt-2 space-y-1 text-sm">
                     {child.credentials.map((c) => (
                       <li key={c.courseTitle}>
-                        {c.courseTitle} — {new Date(c.completedAt).toLocaleDateString()}
+                        {c.courseTitle}, {new Date(c.completedAt).toLocaleDateString()}
                       </li>
                     ))}
                   </ul>

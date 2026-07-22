@@ -176,7 +176,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 - **Contact your legislators** in Salt Lake City: you have one Representative and one Senator; note the session is a short 45 days each winter, so timing matters.
 - **Run.** School board, city council, and county commission are reachable local starting points.
 
-:::reveal Name two ways Utah's dual-path system lets you influence who gets on the ballot. ||| You can attend your neighborhood precinct caucus and become a delegate who helps pick party nominees, and you can gather or sign nominating-petition signatures to put a candidate on the ballot — the two paths of Utah's dual-path system.
+:::reveal Name two ways Utah's dual-path system lets you influence who gets on the ballot. ||| You can attend your neighborhood precinct caucus and become a delegate who helps pick party nominees, and you can gather or sign nominating-petition signatures to put a candidate on the ballot, the two paths of Utah's dual-path system.
 
 ## Sources
 - Utah State Legislature. (n.d.). *Local government: counties, cities, and towns*. le.utah.gov. https://le.utah.gov/

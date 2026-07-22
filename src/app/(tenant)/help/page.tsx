@@ -19,7 +19,7 @@ export default function HelpPage() {
     <main className="mx-auto max-w-2xl px-4 py-10">
       <h1 className="text-2xl font-bold">Help &amp; teacher guide</h1>
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-        How to use the app — creating courses, recording, pricing, publishing, live, and more. Search
+        How to use the app, creating courses, recording, pricing, publishing, live, and more. Search
         or browse below.
       </p>
       <div className="mt-6">

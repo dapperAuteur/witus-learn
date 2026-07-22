@@ -181,7 +181,7 @@ The goal isn't fear, it's **responsible use**: get the speed of AI while keeping
 
 Do that and AI makes you faster *and* harder to fool. That's the whole point: **use it well, and use it wisely.**
 
-:::reveal Name one thing you should never paste into a public AI tool, and the two-step "draft / ___" habit. ||| Never paste secrets: passwords, financial or health records, other people's personal data, or confidential work files. The habit is "draft with AI, then verify with sources" — confirm every fact, quote, and citation that matters.
+:::reveal Name one thing you should never paste into a public AI tool, and the two-step "draft / ___" habit. ||| Never paste secrets: passwords, financial or health records, other people's personal data, or confidential work files. The habit is "draft with AI, then verify with sources", confirm every fact, quote, and citation that matters.
 
 ## Sources
 - National Institute of Standards and Technology. (2020). NIST Privacy Framework 1.0. https://www.nist.gov/privacy-framework

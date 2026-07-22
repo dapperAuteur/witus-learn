@@ -89,7 +89,7 @@ async function main() {
   const bvc = await tenantIdBySlug("better-vice-club");
   const acme = await tenantIdBySlug("acme-academy");
   if (!bvc || !acme) {
-    console.error("Tenants missing — run `pnpm seed:tenants` first.");
+    console.error("Tenants missing, run `pnpm seed:tenants` first.");
     process.exit(1);
   }
 
@@ -104,7 +104,7 @@ async function main() {
     title: "Coffee",
     slug: "coffee",
     description:
-      "Coffee originated in the volcanic highlands of Ethiopia — the world's second-largest traded commodity, and the economics that put $2-a-day farmers behind a $5 cup.",
+      "Coffee originated in the volcanic highlands of Ethiopia, the world's second-largest traded commodity, and the economics that put $2-a-day farmers behind a $5 cup.",
     category: "Daily Rituals",
     seasonNumber: 1,
     seriesSlug: "daily-rituals",

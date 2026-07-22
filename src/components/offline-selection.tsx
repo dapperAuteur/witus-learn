@@ -200,7 +200,7 @@ export function OfflineLessonCheckbox({ pagePath, lessonTitle }: { pagePath: str
         onChange={() => ctx.toggle(pagePath)}
         // Names the lesson, not just "select" — a screen reader hears which one, and whether it's
         // already on the device.
-        aria-label={`${lessonTitle} — ${isSaved ? "saved for offline; select to remove" : "select to download for offline"}`}
+        aria-label={`${lessonTitle}, ${isSaved ? "saved for offline; select to remove" : "select to download for offline"}`}
       />
       {isSaved ? (
         <span aria-hidden className="text-xs leading-none text-green-600 dark:text-green-400">
@@ -271,8 +271,8 @@ function unavailableReason(ctx: SelectionCtx): string | null {
   if (!ctx.readiness.serviceWorkerApi) return "Offline downloads aren’t supported in this browser.";
   if (!ctx.readiness.controlling) {
     return ctx.readiness.registered
-      ? "Offline mode is still starting up — reload the page to finish enabling downloads."
-      : "Offline mode isn’t running on this page yet — reload the page to enable downloads.";
+      ? "Offline mode is still starting up, reload the page to finish enabling downloads."
+      : "Offline mode isn’t running on this page yet, reload the page to enable downloads.";
   }
   return null;
 }

@@ -7,7 +7,7 @@ export function LinkUsagePanel({ rows }: { rows: LinkUsageRow[] }) {
     <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <h2 className="font-semibold">Link usage</h2>
       <p className="mt-1 text-sm text-neutral-500">
-        Outbound-link clicks in this course (counts only — no per-learner tracking).
+        Outbound-link clicks in this course (counts only, no per-learner tracking).
       </p>
       {rows.length === 0 ? (
         <p className="mt-3 text-sm text-neutral-500">No clicks recorded yet.</p>

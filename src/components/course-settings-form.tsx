@@ -98,7 +98,7 @@ export function CourseSettingsForm({
       });
     } catch {
       setState("error");
-      setErrMsg("Network error — check your connection and try again.");
+      setErrMsg("Network error, check your connection and try again.");
       return;
     }
     if (r.ok) {
@@ -115,7 +115,7 @@ export function CourseSettingsForm({
       .catch(() => null);
     setErrMsg(
       r.status === 403
-        ? "You don't have permission to edit this course — it's owned by another instructor. Ask an admin to reassign it to you (Course settings → Instructor)."
+        ? "You don't have permission to edit this course, it's owned by another instructor. Ask an admin to reassign it to you (Course settings → Instructor)."
         : serverMsg || `Could not save (error ${r.status}).`,
     );
   }
@@ -174,7 +174,7 @@ export function CourseSettingsForm({
             className={field}
           >
             {instructors.some((o) => o.userId === v.instructorId) ? null : (
-              <option value={v.instructorId}>Current instructor (unlisted — {v.instructorId})</option>
+              <option value={v.instructorId}>Current instructor (unlisted, {v.instructorId})</option>
             )}
             {instructors.map((o) => (
               <option key={o.userId} value={o.userId}>{instructorLabel(o)}</option>
@@ -223,7 +223,7 @@ export function CourseSettingsForm({
         <label className="text-sm font-medium" htmlFor="cs-pricetype">Pricing</label>
         {!hasStripe && v.priceType !== "free" ? (
           <p className="mt-1 rounded-md border border-amber-400 bg-amber-50 px-2 py-1.5 text-xs text-amber-800 dark:border-amber-600 dark:bg-amber-950/40 dark:text-amber-300">
-            ⚠️ Stripe isn’t configured, so learners can’t actually purchase a paid course yet —
+            ⚠️ Stripe isn’t configured, so learners can’t actually purchase a paid course yet,
             checkout will fail. Set the Stripe keys before publishing this as paid.
           </p>
         ) : null}
@@ -267,21 +267,21 @@ export function CourseSettingsForm({
         {v.priceType !== "free" && v.price > 0 ? (
           <p className="mt-2 text-xs text-neutral-500">
             You keep about <strong>${estimatedNet(v.price).toFixed(2)}</strong> per sale (after an estimated{" "}
-            ${estimatedFee(v.price).toFixed(2)} processor fee — actual varies by card/region).
+            ${estimatedFee(v.price).toFixed(2)} processor fee, actual varies by card/region).
           </p>
         ) : null}
       </div>
 
       {v.publishHoldReason ? (
         <div className="rounded-md border-2 border-amber-400 bg-amber-50 p-3 text-sm dark:border-amber-600 dark:bg-amber-950/40">
-          <p className="font-semibold text-amber-900 dark:text-amber-200">⚠️ This course is on hold — publishing is blocked</p>
+          <p className="font-semibold text-amber-900 dark:text-amber-200">⚠️ This course is on hold, publishing is blocked</p>
           <p className="mt-1 text-amber-800 dark:text-amber-300">{v.publishHoldReason}</p>
           <button
             type="button"
             onClick={() => set("publishHoldReason", null)}
             className="mt-2 min-h-9 rounded-md border border-amber-500 px-3 text-xs font-medium text-amber-900 hover:bg-amber-100 dark:text-amber-200 dark:hover:bg-amber-900"
           >
-            Release hold (vetted / cleared) — then you can publish and Save
+            Release hold (vetted / cleared), then you can publish and Save
           </button>
         </div>
       ) : null}

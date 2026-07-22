@@ -334,22 +334,22 @@ export function LessonRecorder({
 
       {parts > 0 && status !== "recording" && status !== "idle" ? (
         <span className="w-full text-xs text-neutral-500">
-          Long recording — split into {parts} parts, uploaded and played back in order.
+          Long recording, split into {parts} parts, uploaded and played back in order.
         </span>
       ) : null}
 
-      {status === "local" ? <span className="text-neutral-500">Recorded — preparing upload…</span> : null}
+      {status === "local" ? <span className="text-neutral-500">Recorded, preparing upload…</span> : null}
       {status === "uploading" ? <span className="text-neutral-500">Uploading… {progress}%</span> : null}
       {status === "offline" ? (
         <>
-          <span className="text-amber-600">Saved locally — waiting to upload when you’re back online.</span>
+          <span className="text-amber-600">Saved locally, waiting to upload when you’re back online.</span>
           <button type="button" onClick={retryUpload} className={btn}>Try now</button>
           <button type="button" onClick={discard} className={btn}>Discard</button>
         </>
       ) : null}
       {status === "uploaded" ? (
         <>
-          <span className="text-green-700 dark:text-green-400">Uploaded ✓ — attached to this lesson.</span>
+          <span className="text-green-700 dark:text-green-400">Uploaded ✓, attached to this lesson.</span>
           <button type="button" onClick={() => setStatus("idle")} className={btn}>Re-record</button>
         </>
       ) : null}

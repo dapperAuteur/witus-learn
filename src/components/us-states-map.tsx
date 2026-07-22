@@ -42,7 +42,7 @@ export function UsStatesMap({ states }: { states: Record<string, StateLink> }) {
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         className="w-full"
         role="img"
-        aria-label="United States — choose a state to open its civics course"
+        aria-label="United States, choose a state to open its civics course"
       >
         {features.map(({ name, d }) => {
           const link = states[name];
@@ -53,7 +53,7 @@ export function UsStatesMap({ states }: { states: Record<string, StateLink> }) {
               d={d}
               tabIndex={active ? 0 : -1}
               role={active ? "button" : undefined}
-              aria-label={active ? `${name}: ${link.title}` : `${name} — coming soon`}
+              aria-label={active ? `${name}: ${link.title}` : `${name}, coming soon`}
               aria-disabled={active ? undefined : true}
               onClick={() => link && router.push(link.href)}
               onKeyDown={(e) => {
@@ -77,7 +77,7 @@ export function UsStatesMap({ states }: { states: Record<string, StateLink> }) {
         })}
       </svg>
       <p className="min-h-6 text-center text-sm text-neutral-600 dark:text-neutral-400">
-        {hover ? (hovered ? `${hover} — ${hovered.title}` : `${hover} — coming soon`) : "Hover or tab a highlighted state."}
+        {hover ? (hovered ? `${hover}, ${hovered.title}` : `${hover}, coming soon`) : "Hover or tab a highlighted state."}
       </p>
     </div>
   );

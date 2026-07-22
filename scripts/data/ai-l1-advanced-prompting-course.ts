@@ -72,7 +72,7 @@ A field-tested order that works for most tasks:
 
 You don't need all five every time. But when an answer disappoints, the fix is almost always **a missing piece of the frame**, not a missing magic word. Google's People + AI Guidebook frames this as designing the *handoff* between the person and the system: the clearer you are about goal, inputs, and the form of a good result, the better the collaboration.
 
-:::reveal Name the four core pieces of the frame, and say which one is where accuracy is usually won or lost. ||| Role, Context, Task, and Format. Accuracy is usually won or lost in the Context — the pasted material and background the model needs; when an answer disappoints, the fix is almost always a missing piece of the frame (most often context), not a magic word.
+:::reveal Name the four core pieces of the frame, and say which one is where accuracy is usually won or lost. ||| Role, Context, Task, and Format. Accuracy is usually won or lost in the Context, the pasted material and background the model needs; when an answer disappoints, the fix is almost always a missing piece of the frame (most often context), not a magic word.
 
 ## Sources
 - Anthropic. Prompt engineering overview (clarity, role prompting, providing context). https://docs.anthropic.com/en/docs/prompt-engineering
@@ -331,7 +331,7 @@ That's not a limitation to apologize for, it's the skill that makes you genuinel
 
 Notice what every pattern shares: a **role**, **pasted context** when accuracy matters, a **precise task**, an explicit **format/constraint**, and a built-in **verify/uncertainty** step. That's not a coincidence, it's this whole course, compressed into templates you can reuse for the rest of your life.
 
-:::reveal Pick the pattern closest to something you do weekly. Which piece of the frame would you customize first to make it yours? ||| For most weekly tasks the piece to customize first is the Context (paste your real material), and often the Format (the exact shape you want back). Every reusable pattern shares a role, pasted context when accuracy matters, a precise task, an explicit format, and a built-in verify/uncertainty step — making it yours means filling those with your specifics.
+:::reveal Pick the pattern closest to something you do weekly. Which piece of the frame would you customize first to make it yours? ||| For most weekly tasks the piece to customize first is the Context (paste your real material), and often the Format (the exact shape you want back). Every reusable pattern shares a role, pasted context when accuracy matters, a precise task, an explicit format, and a built-in verify/uncertainty step, making it yours means filling those with your specifics.
 
 ## Sources
 - OpenAI. (2025). Prompting (API guide). https://platform.openai.com/docs/guides/prompting

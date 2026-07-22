@@ -90,7 +90,7 @@ That means "is this AI fair?" is the wrong question. The right questions are: **
 
 Fairness is also context-specific: what's acceptable for a movie recommender is not acceptable for a sentencing tool. Higher stakes demand more scrutiny.
 
-:::reveal Two engineers both say their model is "fair" and both are telling the truth. How is that possible? ||| Because "fair" has several reasonable but mathematically incompatible definitions (e.g. equal accuracy across groups vs. equal approval rates), and when base rates differ you can't satisfy them all at once. Each engineer is optimizing a different definition, so both can be truthful — which is why the real question is "fair by which definition, chosen by whom, and who bears the tradeoff?"
+:::reveal Two engineers both say their model is "fair" and both are telling the truth. How is that possible? ||| Because "fair" has several reasonable but mathematically incompatible definitions (e.g. equal accuracy across groups vs. equal approval rates), and when base rates differ you can't satisfy them all at once. Each engineer is optimizing a different definition, so both can be truthful, which is why the real question is "fair by which definition, chosen by whom, and who bears the tradeoff?"
 
 ## Sources
 - Barocas, S., Hardt, M., & Narayanan, A. (2023). *Fairness and Machine Learning: Limitations and Opportunities.* MIT Press. https://fairmlbook.org
@@ -115,7 +115,7 @@ Two reasons to keep both in view:
 - Allocational harms get attention because they're measurable; representational harms get **overlooked** because they're harder to quantify, but they're real, and UNESCO's framing of AI ethics around human **dignity** (not just resources) exists precisely to capture them (UNESCO, 2021).
 - A single system can do both: a biased hiring tool denies interviews (allocational) *and* teaches the company that "the ideal candidate looks like our past hires" (representational).
 
-:::reveal Give one example of a representational harm that involves no one being denied a resource. ||| An image generator that always depicts "a doctor" as a man and "a criminal" with a particular skin tone, or a search that returns demeaning results for a group's name. No one is denied a specific resource, but it injures dignity and entrenches bias — and it often feeds allocational harms downstream.
+:::reveal Give one example of a representational harm that involves no one being denied a resource. ||| An image generator that always depicts "a doctor" as a man and "a criminal" with a particular skin tone, or a search that returns demeaning results for a group's name. No one is denied a specific resource, but it injures dignity and entrenches bias, and it often feeds allocational harms downstream.
 
 ## Sources
 - Barocas, S., Hardt, M., & Narayanan, A. (2023). *Fairness and Machine Learning: Limitations and Opportunities.* MIT Press. https://fairmlbook.org
@@ -326,7 +326,7 @@ None of this is destiny. These are **design and policy choices**, which means th
 
 The goal isn't fear or refusal, it's **responsible use**: use AI's power while protecting people's rights, dignity, and shared reality. An informed, questioning user is the most important safeguard there is.
 
-:::reveal A manager says "the hiring AI is objective, so it's fair." Give two questions you'd ask in response. ||| (1) Objective by which fairness definition, and who chose it — since a model trained on past hires can just reproduce their bias while looking neutral? (2) Has it been tested for different outcomes across groups, and who is the human accountable for the decisions it influences? "Objective" describes the math, not the fairness.
+:::reveal A manager says "the hiring AI is objective, so it's fair." Give two questions you'd ask in response. ||| (1) Objective by which fairness definition, and who chose it, since a model trained on past hires can just reproduce their bias while looking neutral? (2) Has it been tested for different outcomes across groups, and who is the human accountable for the decisions it influences? "Objective" describes the math, not the fairness.
 
 ## Sources
 - Association for Computing Machinery. (2018). *ACM Code of Ethics and Professional Conduct.* https://www.acm.org/code-of-ethics

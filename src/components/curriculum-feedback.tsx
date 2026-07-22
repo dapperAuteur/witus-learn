@@ -57,7 +57,7 @@ export function CurriculumFeedback({ courseId, lessonId }: { courseId: string; l
         setState("queued");
       } else {
         setState("error");
-        setError("Couldn't hold that note (storage is full). Your text is still here — copy it somewhere safe.");
+        setError("Couldn't hold that note (storage is full). Your text is still here, copy it somewhere safe.");
       }
       return;
     }
@@ -84,7 +84,7 @@ export function CurriculumFeedback({ courseId, lessonId }: { courseId: string; l
         setState("queued");
       } else {
         setState("error");
-        setError("Network error, and your note couldn't be held. Your text is still here — copy it somewhere safe.");
+        setError("Network error, and your note couldn't be held. Your text is still here, copy it somewhere safe.");
       }
     }
   }
@@ -94,7 +94,7 @@ export function CurriculumFeedback({ courseId, lessonId }: { courseId: string; l
   if (state === "done" && pending.length === 0) {
     return (
       <p className="mt-10 text-sm text-green-700 dark:text-green-400">
-        Thanks — your note was sent to the instructor.
+        Thanks, your note was sent to the instructor.
       </p>
     );
   }
@@ -126,7 +126,7 @@ export function CurriculumFeedback({ courseId, lessonId }: { courseId: string; l
                 >
                   {item.failed
                     ? (item.lastError ?? "This note wasn't sent.")
-                    : (item.lastError ?? "Waiting to send — goes out when you're back online")}
+                    : (item.lastError ?? "Waiting to send, goes out when you're back online")}
                 </span>
                 <button
                   type="button"
@@ -175,12 +175,12 @@ export function CurriculumFeedback({ courseId, lessonId }: { courseId: string; l
           </button>
           {state === "queued" ? (
             <span role="status" className="text-sm text-amber-700 dark:text-amber-500">
-              Saved on this device — it&rsquo;ll send itself when you&rsquo;re back online.
+              Saved on this device, it&rsquo;ll send itself when you&rsquo;re back online.
             </span>
           ) : null}
           {state === "done" ? (
             <span role="status" className="text-sm text-green-700 dark:text-green-400">
-              Thanks — sent to the instructor.
+              Thanks, sent to the instructor.
             </span>
           ) : null}
           {state === "error" && error ? (
@@ -190,7 +190,7 @@ export function CurriculumFeedback({ courseId, lessonId }: { courseId: string; l
         {!online ? (
           <p className="text-xs text-neutral-500">
             You&rsquo;re offline. Your note is held on this device and sent automatically when you
-            reconnect — you can keep writing.
+            reconnect, you can keep writing.
           </p>
         ) : null}
       </form>

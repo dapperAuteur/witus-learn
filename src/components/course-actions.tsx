@@ -63,7 +63,7 @@ export function CourseActions({
           className="min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60"
           style={{ backgroundColor: "var(--accent)" }}
         >
-          {pending ? "Working…" : isFree ? "Enroll for free" : `Buy — ${priceLabel}`}
+          {pending ? "Working…" : isFree ? "Enroll for free" : `Buy, ${priceLabel}`}
         </button>
       ) : null}
       {enrolled ? (

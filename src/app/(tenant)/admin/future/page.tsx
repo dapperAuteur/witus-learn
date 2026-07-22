@@ -69,7 +69,7 @@ export default async function FutureWorkPage() {
     <main className="max-w-3xl py-10">
       <h1 className="text-2xl font-bold">Future classes &amp; features</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-        Everything proposed but not yet built. Notes you leave here go straight into the database —
+        Everything proposed but not yet built. Notes you leave here go straight into the database,
         Claude reads them with <span className="font-mono">pnpm future:list</span>, so nothing needs
         to be pasted into a chat. To add a proposal, drop the markdown in{" "}
         <span className="break-all font-mono">plans/future-courses/</span> and run{" "}

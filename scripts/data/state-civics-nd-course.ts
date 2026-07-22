@@ -172,7 +172,7 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
 - **Contact your legislators** in Bismarck: you have one Representative-district team and one Senator; note the Legislature meets mainly in odd years.
 - **Run**: school board, township board, city council, and county commission are reachable local starting points.
 
-:::reveal What do you bring to vote in North Dakota (since there's no registration), and why are citizen initiatives especially common here? ||| North Dakota has no voter registration — you just show up with a valid ID. Citizen initiatives are especially common because North Dakota's signature thresholds are low, making it easy to put measures on the ballot.
+:::reveal What do you bring to vote in North Dakota (since there's no registration), and why are citizen initiatives especially common here? ||| North Dakota has no voter registration, you just show up with a valid ID. Citizen initiatives are especially common because North Dakota's signature thresholds are low, making it easy to put measures on the ballot.
 
 ## Sources
 - North Dakota Legislative Assembly. (n.d.). *Local government: counties, cities, townships*. ndlegis.gov. https://www.ndlegis.gov/

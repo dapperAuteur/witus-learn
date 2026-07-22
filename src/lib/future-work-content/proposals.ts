@@ -16,25 +16,25 @@ export interface ProposalDoc {
 export const PROPOSAL_DOCS: ProposalDoc[] = [
   {
     key: "africa-precolonial-track-proposal",
-    title: "Precolonial Africa — course track proposal",
+    title: "Precolonial Africa, course track proposal",
     summary: "A proposed \"Africa Before Colonization\" track: one built anchor course plus seven follow-on",
-    body: `# Precolonial Africa — course track proposal
+    body: `# Precolonial Africa, course track proposal
 
 A proposed **"Africa Before Colonization"** track: one built anchor course plus seven follow-on
 courses, each going survey-to-depth on a region or method the anchor could only give one or two
-lessons. From BAM's note (\`plans/future-courses/world.md\`): "Africa before colonization" — sibling
+lessons. From BAM's note (\`plans/future-courses/world.md\`): "Africa before colonization", sibling
 queue entries (Pan-Africanism, Afrocentricity, Central America Pre-Columbian, Asia pre-colonization)
 are separate courses on parallel branches, and this track deliberately does NOT overlap them: this
 track is the precolonial documented record; Pan-Africanism/Afrocentricity are modern intellectual
 and political movements ABOUT that record.
 
-**Nothing below is built.** These are proposals — pick which to author, and in what order.
+**Nothing below is built.** These are proposals, pick which to author, and in what order.
 
 ---
 
 ## The anchor (built, \`content/africa-precolonial\`)
 
-**Africa Before Colonization: The Documented Record** (Culture & History) — 7 sections, 16 teaching
+**Africa Before Colonization: The Documented Record** (Culture & History), 7 sections, 16 teaching
 lessons, 7 quizzes (15-16-question banks), 1 exercise. Opens with the claim in the deniers' own
 words (Hegel 1837; Trevor-Roper 1965, both verified) and answers it with the record: Kush/25th
 Dynasty, Aksum, Ghana→Mali→Songhai + Timbuktu, Great Zimbabwe (with Rhodesia's documented 1970
@@ -78,7 +78,7 @@ standing "how evidence works" lesson.
 British Museum and Sudanese corpus, UNESCO GHA vol. II. Coins and inscriptions are primary sources
 students can see.
 **What's hard:** chronology conventions differ between references (regnal dates vary by decades);
-Sudan's current conflict makes site-status claims perishable — date everything. Avoid the
+Sudan's current conflict makes site-status claims perishable, date everything. Avoid the
 "Black pharaohs" framing wars by teaching the naming debate itself.
 
 ### 2. The West African Empires: Ghana, Mali, Songhai
@@ -90,7 +90,7 @@ source-audit from the anchor expands into a full unit.
 **Sourcing strength:** the best documentary base in the track (Levtzion & Hopkins; Gomez's
 *African Dominion* as the modern spine; Hunwick's Tarikh al-Sudan).
 **What's hard:** popular myth pressure is highest here (net-worth figures, "Abubakari II crossed
-the Atlantic" — teach as unsupported); Koumbi Saleh's identification is debated; the
+the Atlantic", teach as unsupported); Koumbi Saleh's identification is debated; the
 Ghana-modern-Ghana naming trap needs constant policing.
 
 ### 3. Great Zimbabwe & the Southern States
@@ -98,10 +98,10 @@ Ghana-modern-Ghana naming trap needs constant policing.
 Mapungubwe → Great Zimbabwe → Khami/Mutapa sequence; drystone building technique; the
 gold-and-cattle economy; and the FULL denial-and-censorship file (Mauch → Bent → Ancient Ruins Ltd
 → Hall → Randall-MacIver → Caton-Thompson → Rhodesia 1970 → Garlake) as a documented case study in
-politicized archaeology — the strongest single "evidence vs ideology" unit the platform could own.
+politicized archaeology, the strongest single "evidence vs ideology" unit the platform could own.
 **Sourcing strength:** strong and citable (Garlake, Pikirayi, Caton-Thompson's own report, Huffman
 with his critics, UNESCO). The censorship chapter is unusually well documented (Pikirayi 2012).
-**What's hard:** population and trade-volume figures are all estimates — hedge everything;
+**What's hard:** population and trade-volume figures are all estimates, hedge everything;
 Mapungubwe's gold rhino involves South African heritage politics; texts are so thin that lessons
 must teach FROM material evidence, which is harder to write engagingly (lean on the anchor's
 convergence lesson).
@@ -114,21 +114,21 @@ hinge into the colonial era. Natural map-content course (\`mapContent\` support 
 **Sourcing strength:** good: Horton & Middleton, Kusimba, LaViolette, the Periplus for deep
 background, Gibb's Ibn Battuta, UNESCO Kilwa documentation.
 **What's hard:** the Kilwa Chronicle's two divergent versions demand careful handling (also an
-opportunity — it IS the methods lesson); Swahili identity is a live modern debate (coastal
+opportunity, it IS the methods lesson); Swahili identity is a live modern debate (coastal
 communities' own histories vs archaeological narratives); Zanzibar-era slave-trade history must be
 kept distinct in period from the medieval trade to avoid flattening.
 
 ### 5. Benin, Ife & the Forest Kingdoms
 **Uniquely teaches:** art as historical record (Ife naturalism, the Benin plaque corpus as a court
 archive in brass, the casters' guild continuity); the manilla economy and the 2023 isotope study as
-a "follow the metal" methods unit; Benin's 16th-c. slave-export embargo and later participation —
+a "follow the metal" methods unit; Benin's 16th-c. slave-export embargo and later participation,
 the track's most concrete case of an African state setting trade terms; the 1897 expedition,
 dispersal, and the live restitution ledger (dated). Oyo, Dahomey and Asante as the political
 context of the forest belt.
 **Sourcing strength:** strong: Ryder's *Benin and the Europeans* (from the Portuguese/Dutch
 records), Blier on Ife, Hicks and the British Museum's own statements for 1897 and after,
 Skowronek et al. 2023.
-**What's hard:** restitution moves monthly — every status line needs an as-of date; loot counts
+**What's hard:** restitution moves monthly, every status line needs an as-of date; loot counts
 have no complete inventory (ranges only); Dahomey's slave-trade centrality must be taught at the
 anchor's honesty standard without letting it swallow the art-historical spine.
 
@@ -140,7 +140,7 @@ TRADITION taught as such, and Adwa 1896 as diplomatic history (Wuchale's Article
 translation-criticism lesson). The "never colonized" formulation taught precisely, WITH 1936-41.
 **Sourcing strength:** excellent: Phillipson, Munro-Hay, Marcus, Jonas's *Battle of Adwa*, Bausi on
 the manuscripts, UNESCO (Lalibela 1978, Aksum 1980).
-**What's hard:** the Ark and Solomonic traditions are identity-bearing for living communities —
+**What's hard:** the Ark and Solomonic traditions are identity-bearing for living communities,
 teach as tradition without either endorsing or sneering; modern Ethiopian/Eritrean politics
 (Tigray war; heritage sites in conflict zones) makes site-status claims perishable; church
 chronology vs archaeological phasing at Lalibela must stay visibly separate.
@@ -151,11 +151,11 @@ source criticism on the Arabic corpus (translation comparison exercises), Vansin
 method with recorded epic excerpts, radiocarbon + stratigraphy walkthroughs (Jenne-jeno, Igbo-Ukwu
 as case studies), historical linguistics (Bantu expansion), archival survivorship (what burned,
 what was looted, what was never written), and a final "audit a viral claim" capstone exercise.
-This is the platform's most TRANSFERABLE course — it generalizes to every history track WitUS ever
+This is the platform's most TRANSFERABLE course, it generalizes to every history track WitUS ever
 builds (the anchor's five-part audit becomes a reusable cross-course tool).
 **Sourcing strength:** excellent and stable (Vansina 1985, Ehret 2016, Levtzion & Hopkins, the GHA
 methodology volume I, published site reports).
-**What's hard:** methods courses risk dryness — every unit must run on a concrete African case the
+**What's hard:** methods courses risk dryness, every unit must run on a concrete African case the
 learner already met in the track; exercise design (translation comparison, claim audits) is more
 build-intensive than narrative lessons.
 
@@ -163,42 +163,42 @@ build-intensive than narrative lessons.
 
 ## Recommended build order + reasoning
 
-1. **The West African Empires** — highest learner demand (Mansa Musa is the track's celebrity),
+1. **The West African Empires**, highest learner demand (Mansa Musa is the track's celebrity),
    best documentary base, and the anchor's most compressed section (three empires in one lesson
    block). The myth-pressure is exactly where the platform's hedging house style shines.
-2. **Great Zimbabwe & the Southern States** — the strongest thesis course (evidence vs ideology,
+2. **Great Zimbabwe & the Southern States**, the strongest thesis course (evidence vs ideology,
    with the censorship file), and zero overlap with anything else on the platform. Pairs with #1
    to cover both a text-rich and a text-poor methodology.
-3. **How We Know (Africa Edition)** — build third, once two deep regional courses exist for its
+3. **How We Know (Africa Edition)**, build third, once two deep regional courses exist for its
    case studies to point back into; it then multiplies the value of everything after it, and its
    audit tooling gets reused by every later WitUS history course.
-4. **Benin, Ife & the Forest Kingdoms** — the restitution news cycle keeps it current; the
+4. **Benin, Ife & the Forest Kingdoms**, the restitution news cycle keeps it current; the
    honesty-standard slavery treatment is already modeled by the anchor; art-as-record extends the
    platform's "documents aren't the only evidence" argument.
-5. **Ethiopia** — rich, stable sourcing; strongest continuity story; benefits from the methods
+5. **Ethiopia**, rich, stable sourcing; strongest continuity story; benefits from the methods
    course existing first (tradition-vs-record framing is its spine).
-6. **The Swahili Coast** — excellent map-course potential; slots after Ethiopia so the Indian
+6. **The Swahili Coast**, excellent map-course potential; slots after Ethiopia so the Indian
    Ocean context (Aksum → Adulis → Kilwa) reads as one arc.
-7. **Kush & Aksum** — last not because it is weakest but because the anchor already covers it
+7. **Kush & Aksum**, last not because it is weakest but because the anchor already covers it
    proportionally best (two full lessons), and Sudan's conflict makes fieldwork-fresh sourcing
    hardest right now; by building last it can absorb whatever the war has done to site status.
 
 **Track-wide rules** (inherited from the anchor, non-negotiable): the five-part audit as skeleton;
 APA 7 + \`## Sources\` per teaching lesson; every shaky beloved claim labeled contested/estimated or
 refused; African participation in slavery taught plainly wherever it touches a course's period;
-never flatten "Africa" — name people, place, period; quiz banks ~15 with \`explanation\` +
+never flatten "Africa", name people, place, period; quiz banks ~15 with \`explanation\` +
 \`sourceLessonSlug\` on every question.`,
     provenance: "plans/future-courses/africa-precolonial-track-proposal.md",
   },
   {
     key: "afrocentricity-track-proposal",
-    title: "Afrocentricity — course track proposal",
+    title: "Afrocentricity, course track proposal",
     summary: "A proposed \"Afrocentricity\" track: one built anchor course plus a set of deep-dive courses, each",
-    body: `# Afrocentricity — course track proposal
+    body: `# Afrocentricity, course track proposal
 
 A proposed **"Afrocentricity"** track: one built anchor course plus a set of deep-dive courses, each
 taking one strand the anchor teaches as a single section and expanding it into a full, primary-source
-course. The track's unifying deliverable is **not** "here is the truth about Afrocentricity" — it is a
+course. The track's unifying deliverable is **not** "here is the truth about Afrocentricity", it is a
 transferable skill: **how to evaluate a contested academic paradigm** that is part legitimate corrective
 and part overcorrection.
 
@@ -209,43 +209,43 @@ The design rule the whole track inherits from the anchor is non-negotiable and l
 > who makes it · assert in the course's own voice only what is genuinely settled · declare no winner on
 > live debates · distinguish rigorous scholarship from pop-myth · never invent a citation or a quote.**
 
-**Nothing below is built.** These are proposals — pick which to author, and in what order. Several
+**Nothing below is built.** These are proposals, pick which to author, and in what order. Several
 require BAM's explicit editorial sign-off before authoring begins (flagged per course).
 
 ---
 
 ## The anchor (built, \`content/afrocentricity\`)
 
-**Afrocentricity: How to Evaluate a Contested Paradigm** (Culture & History, slug \`afrocentricity\`) —
+**Afrocentricity: How to Evaluate a Contested Paradigm** (Culture & History, slug \`afrocentricity\`),
 6 sections, 15 teaching lessons, 6 quizzes (15-question banks, above the 10-question attempt cap so
 retries rotate; 90 questions total), for high school students. Registered in \`scripts/seed-courses.ts\`;
-no migration — \`pnpm seed:courses\`.
+no migration, \`pnpm seed:courses\`.
 
-- **S1 — What Afrocentricity Is (and Isn't):** Asante's own definition (centering African agency); the
+- **S1, What Afrocentricity Is (and Isn't):** Asante's own definition (centering African agency); the
   *real* Eurocentric erasure (Hegel, Trevor-Roper) that makes the corrective legitimate; the two
   founders (Diop = the founding historical claim, Asante = the named method).
-- **S2 — The Kemet Question:** Diop's evidence-based case (melanin tests, *Kemet*, Herodotus,
+- **S2, The Kemet Question:** Diop's evidence-based case (melanin tests, *Kemet*, Herodotus,
   linguistics, the 1974 UNESCO Cairo symposium), the mainstream Egyptological response ("race" is a
   modern category; *Kemet* = "the Black **Land**," i.e. soil), and the 2017 ancient-DNA study
   (Schuenemann et al.) taught **dated and with its limits stated**. **No winner declared.**
-- **S3 — Black Athena and Stolen Legacy:** Bernal's Ancient/Aryan Model challenge; Lefkowitz's
+- **S3, Black Athena and Stolen Legacy:** Bernal's Ancient/Aryan Model challenge; Lefkowitz's
   response across her two 1996 books (\`Not Out of Africa\`; \`Black Athena Revisited\`, co-ed. Rogers)
-  plus Bernal's 2001 reply — the concede/don't-concede split reported, **no winner**; George G. M.
+  plus Bernal's 2001 reply, the concede/don't-concede split reported, **no winner**; George G. M.
   James's *Stolen Legacy* taught as failing on specifics (the Library of Alexandria postdates
   Aristotle) **without erasing** the documented Egypt→Greece influence.
-- **S4 — Rigorous Scholarship vs. Pop-Myth:** the melanin pseudoscience (Welsing; Jeffries's "Sun
+- **S4, Rigorous Scholarship vs. Pop-Myth:** the melanin pseudoscience (Welsing; Jeffries's "Sun
   People / Ice People") named as a distinct pop strand, shown to be pseudoscience **and** a mirror of
-  the racism the tradition opposed — with the point that Afrocentrism's **own** critics (Howe, Ortiz de
+  the racism the tradition opposed, with the point that Afrocentrism's **own** critics (Howe, Ortiz de
   Montellano) draw the same line, so naming it is not partisan.
-- **S5 — The Critics, and the Answers:** Howe (empirical), Appiah (essentialism), Gilroy
-  (anti-purity, from the **left** — not all critics are conservatives), each steelmanned from their
+- **S5, The Critics, and the Answers:** Howe (empirical), Appiah (essentialism), Gilroy
+  (anti-purity, from the **left**, not all critics are conservatives), each steelmanned from their
   own books, then the proponents' strongest reply to each, with honest scorekeeping.
-- **S6 — How to Evaluate a Contested Paradigm:** the six-move toolkit (steelman → separate the levels
+- **S6, How to Evaluate a Contested Paradigm:** the six-move toolkit (steelman → separate the levels
   of claim → attribute → check sourcing + date live science → corrective-or-overcorrection → refuse
   the false binary), applied end-to-end to Afrocentricity **and** to an unrelated claim to prove the
   skill transfers.
 
-**The anchor's real payload is a reusable analytical spine — "the six moves" (S6).** Every deep-dive
+**The anchor's real payload is a reusable analytical spine, "the six moves" (S6).** Every deep-dive
 course in this track should be built on that spine, so the track compounds instead of being six
 unrelated arguments. A student who has done the anchor plus any two deep-dive courses should be able to
 walk into a paradigm they have never studied and produce a defensible first-pass evaluation.
@@ -259,18 +259,18 @@ ships).
 ## Selection criteria (why these six, and not others)
 
 A deep-dive course earns a slot only if it teaches something **the anchor's single section on it could
-not** — more primary text, a fuller cast, a live sub-debate the section had to compress. The test is
+not**, more primary text, a fuller cast, a live sub-debate the section had to compress. The test is
 not "is it important"; it is "does the extra depth change what a student can *do*."
 
-Every course also has a **contestedness rating** and a **public-risk rating** — because two different
+Every course also has a **contestedness rating** and a **public-risk rating**, because two different
 things make a course hard:
 
 - **Contestedness** = how divided the scholarship is (does the course have to declare no winner?).
-- **Public risk** = how likely the course is to be weaponized, misread, or to defame a living person —
+- **Public risk** = how likely the course is to be weaponized, misread, or to defame a living person,
   independent of how well it is sourced. A course can be superbly sourced *and* high public risk (a
   whole course on "was Egypt Black" is the type case).
 
-The safe/sign-off split below is driven mostly by **public risk**, not by sourcing — every course here
+The safe/sign-off split below is driven mostly by **public risk**, not by sourcing, every course here
 is sourceable from material already in print.
 
 ---
@@ -280,68 +280,68 @@ is sourceable from material already in print.
 ### SAFE TO BUILD (author with the anchor's method; no reviewer, no sign-off needed)
 
 #### 1. Diop and the Origins of the Paradigm
-**Teaches uniquely (beyond S1's founders lesson):** the full intellectual biography of the argument —
+**Teaches uniquely (beyond S1's founders lesson):** the full intellectual biography of the argument,
 Diop's training in Paris, the rejected then re-submitted doctoral thesis, *Nations nègres et culture*
 (1954), the two English books (*The African Origin of Civilization*, 1974; *Civilization or Barbarism*,
 1991), Obenga's linguistic work, and the **reception history** (why the 1974 UNESCO symposium mattered,
 and how the "Black hypothesis" was argued *and answered* in the room). It teaches how a paradigm is
-*born* — one scholar, one grievance, a body of evidence, and a fight for a hearing.
+*born*, one scholar, one grievance, a body of evidence, and a fight for a hearing.
 **Sourcing strength:** strong. Diop's own translated books; the UNESCO *General History of Africa* Vol.
 II and the 1974 symposium proceedings; standard biographical scholarship.
 **Contestedness:** high (Diop's specific claims are contested), but the course teaches the *arguments
-and their reception*, not a verdict — so it stays inside the no-winner rule comfortably.
+and their reception*, not a verdict, so it stays inside the no-winner rule comfortably.
 **Public risk:** low-to-moderate. It is a history-of-scholarship course; it does not have to re-litigate
 Egypt's "race" in its own voice.
 
 #### 2. Black Athena: Anatomy of a Scholarly Fight
-**Teaches uniquely (beyond S3):** the exchange at full length — Bernal's three volumes (1987, 1991,
+**Teaches uniquely (beyond S3):** the exchange at full length, Bernal's three volumes (1987, 1991,
 2006) taken model-by-model; the specialist essays in *Black Athena Revisited* engaged individually;
 Bernal's *Black Athena Writes Back* (2001) reply; and the **independent** "orientalizing" scholarship
 (Burkert, 1992; West, 1997) that shows where the field actually moved. The payload is a rare, fully
-in-print case study of **how a discipline argues with itself over years** — and how "largely wrong in
+in-print case study of **how a discipline argues with itself over years**, and how "largely wrong in
 the particulars, right about the big thing" can both be true.
 **Sourcing strength:** excellent. Everything is published and in print, on both sides.
-**Contestedness:** high on specifics, but the concede/don't-concede split is now well-documented — the
+**Contestedness:** high on specifics, but the concede/don't-concede split is now well-documented, the
 course reports it rather than adjudicating.
 **Public risk:** low. This is an academic-historiography fight; the participants published to be argued
 with. Keep it about the scholarship, not about "who was really Black."
 
 #### 3. The Critics: Howe, Appiah, Gilroy (and the Answers)
-**Teaches uniquely (beyond S5):** each critic given a full treatment from their own book — Howe's
+**Teaches uniquely (beyond S5):** each critic given a full treatment from their own book, Howe's
 *Afrocentrism* (1998) on the empirical record; Appiah's *In My Father's House* (1992) on racial
-essence; Gilroy's *The Black Atlantic* (1993) on routes-over-roots — plus the proponents' developed
+essence; Gilroy's *The Black Atlantic* (1993) on routes-over-roots, plus the proponents' developed
 replies, plus the **internal-to-Black-studies** critics the anchor only gestured at (e.g. Clarence
 Walker, *We Can't Go Home Again*, 2001; Wilson Jeremiah Moses, *Afrotopia*, 1998). The point students
-carry away: **critique of a paradigm is not the same as opposition to its cause** — Gilroy and Appiah
+carry away: **critique of a paradigm is not the same as opposition to its cause**, Gilroy and Appiah
 are anti-racist critics, and that is the most misunderstood fact in the whole debate.
 **Sourcing strength:** excellent; all in print.
-**Contestedness:** these are live philosophical disagreements — perfect no-winner material.
+**Contestedness:** these are live philosophical disagreements, perfect no-winner material.
 **Public risk:** low-to-moderate. Handled as steelmanned scholarship it is defensible; the only risk is
 a reader mistaking "we teach the critics" for "we endorse the critics," which the framing must prevent.
 
 ### NEEDS BAM'S EDITORIAL SIGN-OFF BEFORE AUTHORING
 
 #### 4. The Kemet Debate (deep): Was Ancient Egypt a Black African Civilization?
-**Teaches uniquely (beyond S2):** the whole evidentiary landscape — the classical testimony in full
+**Teaches uniquely (beyond S2):** the whole evidentiary landscape, the classical testimony in full
 (Herodotus 2.104 in context, Diodorus, the debates over translation), the physical-anthropology
 history, the *Kemet*/*Deshret* philology, Nubia and the Nile-Valley population continuum, and the
 **post-2017 ancient-DNA literature** as it continues to develop (each study dated and bounded).
-**Sourcing strength:** strong on all sides — but this is precisely the problem.
+**Sourcing strength:** strong on all sides, but this is precisely the problem.
 **Contestedness:** maximal.
-**Public risk: HIGH — this is the single highest-risk course in the track.** A whole course (vs. one
+**Public risk: HIGH, this is the single highest-risk course in the track.** A whole course (vs. one
 carefully bounded section) on "was Egypt Black?" is a lightning rod that **both** sides will try to
 weaponize as a verdict no matter how scrupulously it declares none. **Why sign-off:** BAM should
 approve the *scope and framing* (how much aDNA; how the "race is a modern category" move is weighted;
-whether it ships published or gated) before a line is written. It is buildable and would be excellent —
+whether it ships published or gated) before a line is written. It is buildable and would be excellent,
 but it must be a deliberate editorial decision, not a default.
 
 #### 5. Scholarship vs. Pop-Myth: How to Tell Rigor From Pseudoscience
 **Teaches uniquely (beyond S4):** the full anatomy of the pop-myth strand as a *case study in
-pseudoscience detection* — melanin theory, "Sun People / Ice People," and the ancient-astronaut-adjacent
-claims — set against the rigorous scholarship, using the build-tests as the through-line. Genuinely
+pseudoscience detection*, melanin theory, "Sun People / Ice People," and the ancient-astronaut-adjacent
+claims, set against the rigorous scholarship, using the build-tests as the through-line. Genuinely
 valuable as a media-literacy course.
 **Sourcing strength:** good (Ortiz de Montellano, 1993; Howe, 1998; Moses, 1998; the primary pop texts).
-**Contestedness:** low on the science (the pseudoscience really is pseudoscience) — but that is the
+**Contestedness:** low on the science (the pseudoscience really is pseudoscience), but that is the
 risk.
 **Public risk: HIGH.** A whole course that names **living or recently-living people** (e.g. Leonard
 Jeffries) as purveyors of pseudoscience is defamation-adjacent and racially charged in a way one
@@ -350,11 +350,11 @@ individuals, or critique claims without naming?), the tone, and legal comfort be
 *idea* is safe; the *execution* around named living people is not automatically safe.
 
 #### 6. Afrocentric Education and the Curriculum Debates
-**Teaches uniquely:** the applied, contemporary fight — the Portland African-American Baseline Essays
+**Teaches uniquely:** the applied, contemporary fight, the Portland African-American Baseline Essays
 (1987), New York State's "A Curriculum of Inclusion" (1989), Asa Hilliard's role, the multiculturalism
 wars of the 1990s, and how all of it rhymes with **today's** curriculum battles. The most
 present-tense, most "relevant to a student's own school" course in the track.
-**Sourcing strength:** good, but **needs a careful verification pass** — the curriculum documents and
+**Sourcing strength:** good, but **needs a careful verification pass**, the curriculum documents and
 their reception are real and locatable, but the retellings are highly polarized, so each claim must be
 sourced to a primary document and dated.
 **Contestedness:** high, and **entangled with live present-day politics** (it maps directly onto current
@@ -381,7 +381,7 @@ The reasoning:
 - **Then, and only with BAM's sign-off, the three high-public-risk courses.** Among them,
   **Scholarship vs. Pop-Myth before The Kemet Debate**, because the pseudoscience-detection skill is the
   cleaner build and inoculates the student against the pop version *before* the hardest course asks them
-  to weigh contested real scholarship. **The Kemet Debate is the capstone** — it should be attempted
+  to weigh contested real scholarship. **The Kemet Debate is the capstone**, it should be attempted
   last, when the method is proven and the framing has been signed off, because it is the one most likely
   to be misread as a verdict. **Afrocentric Education** is last of all, or deferred indefinitely,
   because its entanglement with present-day politics is the hardest editorial call in the set.
@@ -395,17 +395,17 @@ test before a student goes and evaluates a paradigm of their own.
 
 ## What BAM would need to build the sign-off courses responsibly
 
-1. **An editorial decision on the three high-public-risk courses' *scope and framing*** — not their
+1. **An editorial decision on the three high-public-risk courses' *scope and framing***, not their
    sourcing (all are sourceable), but how far each goes, whether it ships published or gated, and how
    the most inflammatory move in each is weighted. The anchor already models the discipline; these
    courses raise the stakes from one section to a whole course.
-2. **A naming policy for the pop-myth course** — name individuals as purveyors of specific claims, or
+2. **A naming policy for the pop-myth course**, name individuals as purveyors of specific claims, or
    critique the claims without naming living people? This is a legal-comfort and tone decision, not a
    research one.
-3. **A verification pass for the curriculum course** — every claim about the Portland Baseline Essays,
+3. **A verification pass for the curriculum course**, every claim about the Portland Baseline Essays,
    the New York task force, and the 1990s multiculturalism debates sourced to a primary document and
    dated, because the retellings are polarized.
-4. **Nothing else.** The three SAFE courses need no permissions, no reviewer, and no sign-off — only
+4. **Nothing else.** The three SAFE courses need no permissions, no reviewer, and no sign-off, only
    authoring time. That is the argument for starting there.
 
 ---
@@ -413,10 +413,10 @@ test before a student goes and evaluates a paradigm of their own.
 ## Cross-links
 
 - Anchor course: \`scripts/data/afrocentricity-course.ts\` (branch \`content/afrocentricity\`).
-- Registration: \`scripts/seed-courses.ts\` (import + Culture & History entry) — verified.
+- Registration: \`scripts/seed-courses.ts\` (import + Culture & History entry), verified.
 - Category: **Culture & History** (the anchor ships there). If the track grows past ~4 courses, consider
   promoting it to its own learning path within Culture & History.
-- Source note: \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\` (Asante bio — the anchor is
+- Source note: \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\` (Asante bio, the anchor is
   its home; move to \`completed/\` once the anchor ships).
 - Model for this proposal: \`plans/future-courses/workers-rights-track-proposal.md\` (the built-anchor +
   waves + safe/needs-care structure this file mirrors).`,
@@ -424,36 +424,36 @@ test before a student goes and evaluates a paradigm of their own.
   },
   {
     key: "civics-more-proposal",
-    title: "More civics courses — proposal (topic choice is BAM's to redirect)",
+    title: "More civics courses, proposal (topic choice is BAM's to redirect)",
     summary: "Six high-value topics that fill gaps in the existing civics catalog (civics-101, us-constitution,",
-    body: `# More civics courses — proposal (topic choice is BAM's to redirect)
+    body: `# More civics courses, proposal (topic choice is BAM's to redirect)
 
 Six high-value topics that fill gaps in the existing civics catalog (civics-101, us-constitution,
 state-vs-federal, us-state-local-gov, how-to-run, help-a-campaign, spotting-misleading-marketing, +
 50 states + DC). All would be non-partisan (process/institutions, no position on any bill/ruling).
 
 ## Drafted this session (shipped in \`bundle/content-courses-2026-07-09\`)
-1. **How a Bill Becomes Law (Federal), in depth** — the existing civics-101 only covers it in a
+1. **How a Bill Becomes Law (Federal), in depth**, the existing civics-101 only covers it in a
    6-line overview; this is the full institutional process (committees, Rules Committee, filibuster/
    cloture/reconciliation, conference, veto/override).
-2. **The Supreme Court & the Judicial Branch, in depth** — state-vs-federal uses cases to show the
+2. **The Supreme Court & the Judicial Branch, in depth**, state-vs-federal uses cases to show the
    federalism split but never how the Court *operates*; this covers structure, cert, oral argument,
    opinions/precedent, interpretive approaches (neutrally), and checks on the judiciary.
 
-## The 4 remaining candidates (not yet drafted — pick which to author next)
-3. **The Bill of Rights / Know Your Rights (1st & 4th Amendment basics)** — a practical,
+## The 4 remaining candidates (not yet drafted, pick which to author next)
+3. **The Bill of Rights / Know Your Rights (1st & 4th Amendment basics)**, a practical,
    plain-language walk through core rights (speech, religion, press, assembly; search/seizure) and
    what they do and don't cover. High everyday relevance; pairs with the civics + constitution courses.
-4. **Voting & Elections 101** — how registration, primaries vs general, the Electoral College,
+4. **Voting & Elections 101**, how registration, primaries vs general, the Electoral College,
    ballot measures, and certification actually work. Non-partisan mechanics; complements the 50-state
    civics "how to take part" lessons with the national picture.
-5. **Jury Duty & the Courts (the citizen's side)** — what a summons means, voir dire, grand vs petit
+5. **Jury Duty & the Courts (the citizen's side)**, what a summons means, voir dire, grand vs petit
    juries, the trial process, and why jury service matters. A civic duty almost no course covers.
-6. **Citizenship & Naturalization Basics** — who is a citizen, the naturalization process, the civics
+6. **Citizenship & Naturalization Basics**, who is a citizen, the naturalization process, the civics
    test, and the rights/responsibilities of citizenship. Useful for new-citizen and homeschool audiences.
 
 **Recommendation:** #3 (Know Your Rights) and #4 (Voting & Elections 101) are the highest-leverage next
-two — broadest everyday relevance and the most-requested civic-literacy gaps. #5 and #6 are strong
+two, broadest everyday relevance and the most-requested civic-literacy gaps. #5 and #6 are strong
 follow-ups. Tell Claude which to author.`,
     provenance: "plans/future-courses/civics-more-proposal.md",
   },
@@ -468,12 +468,12 @@ create a track of courses that covers workers rights globally, with courses on d
   },
   {
     key: "home-school-pricing-research",
-    title: "Home-School Live BVC Pricing — Market Research (July 2026)",
+    title: "Home-School Live BVC Pricing, Market Research (July 2026)",
     summary: "_Companion to `home-school-pricing.md` (the existing one-pager, tiers ~$20/$60/$150). This file is",
-    body: `# Home-School Live BVC Pricing — Market Research (July 2026)
+    body: `# Home-School Live BVC Pricing, Market Research (July 2026)
 
 _Companion to \`home-school-pricing.md\` (the existing one-pager, tiers ~$20/$60/$150). This file is
-the evidence base for that pager's numbers. Local research note — not for publication._
+the evidence base for that pager's numbers. Local research note, not for publication._
 
 ---
 
@@ -481,68 +481,68 @@ the evidence base for that pager's numbers. Local research note — not for publ
 
 | Offering | What you get | Price | Per-unit basis | Source |
 |---|---|---|---|---|
-| **Outschool — group live class (guideline rate)** | Teacher-set live class, any format except 1:1 | **$17–21** per learner per hour (one-time/ongoing/short-course bands all cluster here; semester 8+ wk programs $18–20) | per student, per class-hour | [teach.outschool.com/insights/pricing](https://teach.outschool.com/insights/pricing/) |
-| **Outschool — 1:1 tutoring (guideline rate)** | Private live tutoring | **$45–60/hr** (≤30 min sessions run $60–64/hr) | per student, per hour | [teach.outschool.com/insights/pricing](https://teach.outschool.com/insights/pricing/) |
-| **Outschool — monthly membership (buyer side)** | Credit bundle a parent buys, spent on live/self-paced classes | **$40/mo** (~1 live class/wk) · $70/mo (~2/wk) · $120/mo (~3/wk) · $240/mo (~4/wk) | per student, per month | [brighterly.com/blog/outschool-pricing](https://brighterly.com/blog/outschool-pricing/) |
-| **Outschool — 1:1 tutoring (market/actual)** | Private tutoring, promo-inclusive | $15–118 per lesson (national comparison: $25–80/hr) | per lesson | [brighterly.com/blog/outschool-pricing](https://brighterly.com/blog/outschool-pricing/) |
-| **Prenda microschool — direct-pay** | Platform fee + a "guide" (facilitator) fee, full weekday microschool, not a single subject | **$219.90/mo** platform fee alone; guide fee typically $3,500–4,000/yr (~$290–333/mo) → **~$475–517/mo total** per student | per student, per month | [help.prenda.com — Financial Policies](https://help.prenda.com/knowledge/prenda-financial-policies-direct-pay-microschools) |
-| **Primer microschool** | Full micro-private-school seat; heavily state-scholarship-funded | **$0–$3,200/yr** out-of-pocket depending on state/income (many families pay $0 via ESA/scholarship) | per student, per year | [primer.com/tuition](https://primer.com/tuition) |
-| **Sora Schools** (full-time accredited online private school, grades 6–12 — ceiling reference, not a single-subject comparable) | Full course load, not enrichment | **$17,900/yr** full tuition; flexible-tuition band **$7,500–$16,000/yr** | per student, per year | [soraschools.com/tuition-and-affordability](https://soraschools.com/tuition-and-affordability) |
-| **Small-group / online tutoring, general market** | Live tutoring, subject-dependent | **$20–60/hr** online average; by grade: K-2 $25–45, 3-5 $30–55, 6-8 $40–65, 9-12 $50–100/hr | per student, per hour | [brighterly.com/blog/tutoring-rates-per-hour](https://brighterly.com/blog/tutoring-rates-per-hour/) |
-| **Homeschool co-op membership (typical)** | Parent-taught or paid-instructor classes, in-person hub | **$500–$3,000+/yr** all-in tuition; separately, registration $25–150/family, semester fee $70–140, building fee $125–350 | per family (+ per-class add-ons) | [numaschool.com — co-op fees](https://numaschool.com/learn/glossary/co-op-membership-fees), [tshanywhere.org — co-op tuition guide](https://www.tshanywhere.org/post/co-op-homeschool-tuition-fees-guide) |
+| **Outschool, group live class (guideline rate)** | Teacher-set live class, any format except 1:1 | **$17-21** per learner per hour (one-time/ongoing/short-course bands all cluster here; semester 8+ wk programs $18-20) | per student, per class-hour | [teach.outschool.com/insights/pricing](https://teach.outschool.com/insights/pricing/) |
+| **Outschool, 1:1 tutoring (guideline rate)** | Private live tutoring | **$45-60/hr** (≤30 min sessions run $60-64/hr) | per student, per hour | [teach.outschool.com/insights/pricing](https://teach.outschool.com/insights/pricing/) |
+| **Outschool, monthly membership (buyer side)** | Credit bundle a parent buys, spent on live/self-paced classes | **$40/mo** (~1 live class/wk) · $70/mo (~2/wk) · $120/mo (~3/wk) · $240/mo (~4/wk) | per student, per month | [brighterly.com/blog/outschool-pricing](https://brighterly.com/blog/outschool-pricing/) |
+| **Outschool, 1:1 tutoring (market/actual)** | Private tutoring, promo-inclusive | $15-118 per lesson (national comparison: $25-80/hr) | per lesson | [brighterly.com/blog/outschool-pricing](https://brighterly.com/blog/outschool-pricing/) |
+| **Prenda microschool, direct-pay** | Platform fee + a "guide" (facilitator) fee, full weekday microschool, not a single subject | **$219.90/mo** platform fee alone; guide fee typically $3,500-4,000/yr (~$290-333/mo) → **~$475-517/mo total** per student | per student, per month | [help.prenda.com, Financial Policies](https://help.prenda.com/knowledge/prenda-financial-policies-direct-pay-microschools) |
+| **Primer microschool** | Full micro-private-school seat; heavily state-scholarship-funded | **$0-$3,200/yr** out-of-pocket depending on state/income (many families pay $0 via ESA/scholarship) | per student, per year | [primer.com/tuition](https://primer.com/tuition) |
+| **Sora Schools** (full-time accredited online private school, grades 6-12, ceiling reference, not a single-subject comparable) | Full course load, not enrichment | **$17,900/yr** full tuition; flexible-tuition band **$7,500-$16,000/yr** | per student, per year | [soraschools.com/tuition-and-affordability](https://soraschools.com/tuition-and-affordability) |
+| **Small-group / online tutoring, general market** | Live tutoring, subject-dependent | **$20-60/hr** online average; by grade: K-2 $25-45, 3-5 $30-55, 6-8 $40-65, 9-12 $50-100/hr | per student, per hour | [brighterly.com/blog/tutoring-rates-per-hour](https://brighterly.com/blog/tutoring-rates-per-hour/) |
+| **Homeschool co-op membership (typical)** | Parent-taught or paid-instructor classes, in-person hub | **$500-$3,000+/yr** all-in tuition; separately, registration $25-150/family, semester fee $70-140, building fee $125-350 | per family (+ per-class add-ons) | [numaschool.com, co-op fees](https://numaschool.com/learn/glossary/co-op-membership-fees), [tshanywhere.org, co-op tuition guide](https://www.tshanywhere.org/post/co-op-homeschool-tuition-fees-guide) |
 | **Real 2026-27 co-op examples** | Registration/membership only (classes billed separately) | Joy Homeschool Co-op **$115/family**; TEACH (Tri-Cities) **$45/family**; Ignite Homeschool Co-op **$150/student** (2026-27) | per family or per student | [joyhomeschool.org](https://www.joyhomeschool.org/), [teachtricities.com](https://www.teachtricities.com/tn/teach/index.cfm), [ignitehomeschoolcoop.org](https://www.ignitehomeschoolcoop.org/registration/fees-tuition) |
-| **Maven** (adult cohort-based courses — ceiling reference for "live cohort" premium, not a kids' comparable) | Multi-week live cohort with expert instructor, projects, community | **$500–$3,000/cohort** (avg ~$500; typical band $800–$2,500) | per person, per cohort/course | [maven.com/resources/course-price-and-length](https://maven.com/resources/course-price-and-length), [help.maven.com — pricing your course](https://help.maven.com/en/articles/6732396-pricing-your-course) |
-| **Woke Homeschooling** (Black-history-adjacent, self-paced only — no live component) | Downloadable U.S.-history curriculum | Grades 3–7: **$50**; high-school (2 parts): **$60 each** — one-time purchase, not recurring | per curriculum, one-time | [wokehomeschooling.com](https://wokehomeschooling.com/) |
-| **Gilder Lehrman Institute — self-paced African American History courses** | Lecture-based self-paced course w/ primary sources, quizzes | **$29.99** (affiliate-school network) / **$39.99** (general public) | per course, one-time | [gilderlehrman.org — self-paced courses](https://www.gilderlehrman.org/history-resources/curriculum/3-self-paced-courses-african-american-history) |
-| **Cultural Roots Homeschool Co-Op** (Richmond, VA — culturally centered, closest live positioning to BVC) | Weekly à la carte classes centered on Black/Brown/Indigenous history & culture | **No public price found** — site frames participation via tax-deductible "Patron" donations, not a listed tuition/class fee | unknown | [culturalrootsco-op.com](https://culturalrootsco-op.com/) — **could not source a hard number** |
-| **National Black Home Educators (NBHE)** | Support/resource network, co-op-formation help | No live-class pricing published (membership/resource-network model) | n/a | [nbhe.net](https://www.nbhe.net/) — **could not source a hard number** |
+| **Maven** (adult cohort-based courses, ceiling reference for "live cohort" premium, not a kids' comparable) | Multi-week live cohort with expert instructor, projects, community | **$500-$3,000/cohort** (avg ~$500; typical band $800-$2,500) | per person, per cohort/course | [maven.com/resources/course-price-and-length](https://maven.com/resources/course-price-and-length), [help.maven.com, pricing your course](https://help.maven.com/en/articles/6732396-pricing-your-course) |
+| **Woke Homeschooling** (Black-history-adjacent, self-paced only, no live component) | Downloadable U.S.-history curriculum | Grades 3-7: **$50**; high-school (2 parts): **$60 each**, one-time purchase, not recurring | per curriculum, one-time | [wokehomeschooling.com](https://wokehomeschooling.com/) |
+| **Gilder Lehrman Institute, self-paced African American History courses** | Lecture-based self-paced course w/ primary sources, quizzes | **$29.99** (affiliate-school network) / **$39.99** (general public) | per course, one-time | [gilderlehrman.org, self-paced courses](https://www.gilderlehrman.org/history-resources/curriculum/3-self-paced-courses-african-american-history) |
+| **Cultural Roots Homeschool Co-Op** (Richmond, VA, culturally centered, closest live positioning to BVC) | Weekly à la carte classes centered on Black/Brown/Indigenous history & culture | **No public price found**, site frames participation via tax-deductible "Patron" donations, not a listed tuition/class fee | unknown | [culturalrootsco-op.com](https://culturalrootsco-op.com/), **could not source a hard number** |
+| **National Black Home Educators (NBHE)** | Support/resource network, co-op-formation help | No live-class pricing published (membership/resource-network model) | n/a | [nbhe.net](https://www.nbhe.net/), **could not source a hard number** |
 
 ---
 
-## 2. Synthesis — going rate by delivery model
+## 2. Synthesis, going rate by delivery model
 
 **(a) Async/recorded access only.** There's no clean like-for-like: Outschool doesn't sell a pure
 self-paced subscription, and the closest culturally-specific analogs (Woke Homeschooling, Gilder
-Lehrman) are **one-time** purchases at **$30–$60**, not recurring. The nearest recurring proxy is a
-co-op's per-family registration/semester fee amortized monthly (~$10–30/mo-equivalent). A recurring
-$20–25/mo for ongoing access + quizzes + certificate + a monthly live group Q&A is defensible and, if
+Lehrman) are **one-time** purchases at **$30-$60**, not recurring. The nearest recurring proxy is a
+co-op's per-family registration/semester fee amortized monthly (~$10-30/mo-equivalent). A recurring
+$20-25/mo for ongoing access + quizzes + certificate + a monthly live group Q&A is defensible and, if
 anything, priced conservatively against Outschool's cheapest bundle ($40/mo, which already includes
 one weekly *live* class).
 
-**(b) Weekly live group class.** Outschool's own guideline rate ($17–21/learner/hr) implies **~$68–84/
+**(b) Weekly live group class.** Outschool's own guideline rate ($17-21/learner/hr) implies **~$68-84/
 month** for one weekly 1-hour class billed à la carte; Outschool's packaged membership compresses
-that to $40–70/mo because popular repeat classes are discounted inside the credit system. So the
-real-world range for "weekly live group class" is **$60–90/month per student**, with $60–70/mo as the
+that to $40-70/mo because popular repeat classes are discounted inside the credit system. So the
+real-world range for "weekly live group class" is **$60-90/month per student**, with $60-70/mo as the
 most common lived price once bundled.
 
 **(c) Live + small-group + parent reporting/light 1:1.** This sits between a large-group live class
 and true 1:1 tutoring. Small-group tutoring commands a discount off solo rates (one source cites
-~70% lower cost than 1:1 for similar gains) but is still meaningfully above a big-group class —
-figure **$100–200/month** per student for a weekly small-group session, before adding the reporting
-layer. Full 1:1 tutoring ($45–118/hr) and full-time microschool tuition ($475–1,500+/mo) sit well
-above this and confirm there's plenty of headroom — a $150/mo "guided" tier is nowhere near the
+~70% lower cost than 1:1 for similar gains) but is still meaningfully above a big-group class,
+figure **$100-200/month** per student for a weekly small-group session, before adding the reporting
+layer. Full 1:1 tutoring ($45-118/hr) and full-time microschool tuition ($475-1,500+/mo) sit well
+above this and confirm there's plenty of headroom, a $150/mo "guided" tier is nowhere near the
 ceiling this market will bear.
 
-**Ceiling reference:** Families who've already looked at Prenda (~$475–517/mo), Sora ($1,492/mo
+**Ceiling reference:** Families who've already looked at Prenda (~$475-517/mo), Sora ($1,492/mo
 equivalent), or private tutoring ($45+/hr) will not blink at $150/mo for one subject's live +
-guided offering — it reads as a small fraction of a full alternative-schooling budget.
+guided offering, it reads as a small fraction of a full alternative-schooling budget.
 
 ---
 
 ## 3. Recommended 3 tiers for BVC home-school
 
 All tiers priced **per student, per month** (matches Outschool's dominant convention and avoids the
-per-family ambiguity co-ops have — see risk note below). Season equivalents assume a ~10–12-week
+per-family ambiguity co-ops have, see risk note below). Season equivalents assume a ~10-12-week
 Season 1 run.
 
-| | **Explorer (Low)** | **Cohort (Mid) — ⭐ ANCHOR** | **Guided (High)** |
+| | **Explorer (Low)** | **Cohort (Mid), ⭐ ANCHOR** | **Guided (High)** |
 |---|---|---|---|
-| **Price** | **$20–25/student/mo** | **$60/student/mo** (~$150–180/season) | **$150/student/mo** (~$750/season) |
-| **Positioned against** | Priced under Outschool's cheapest live bundle ($40/mo); above one-time self-paced curricula ($30–60) because it's recurring + monthly live | Sits exactly inside the Outschool weekly-live-class real-world range ($60–90/mo) | Below small-group-tutoring-plus-reporting ($100–200+/mo) and far below 1:1 tutoring or microschool tuition |
+| **Price** | **$20-25/student/mo** | **$60/student/mo** (~$150-180/season) | **$150/student/mo** (~$750/season) |
+| **Positioned against** | Priced under Outschool's cheapest live bundle ($40/mo); above one-time self-paced curricula ($30-60) because it's recurring + monthly live | Sits exactly inside the Outschool weekly-live-class real-world range ($60-90/mo) | Below small-group-tutoring-plus-reporting ($100-200+/mo) and far below 1:1 tutoring or microschool tuition |
 | **What's included** | Self-paced Season 1 course + Commodity Map; quizzes + certificate; **monthly** live group Q&A | Everything in Explorer + **weekly** live class (cohort-sized group) via \`/live\`; quick-check assignments | Everything in Cohort + **weekly small-group live** (capped roster) + full capstone project with feedback + parent progress reports (attendance/grades via the upcoming Family view) |
 | **What Learn.WitUS already delivers** | Recorded course, quizzes, certificate | + cohorts, \`/live\` | + \`/live\` small-group cap, + Family view (in progress) is the differentiator no comparable at this price offers |
 
-**Anchor the Mid tier.** $60/mo is the best-evidenced number in this set — it's not an estimate, it's
+**Anchor the Mid tier.** $60/mo is the best-evidenced number in this set, it's not an estimate, it's
 where Outschool's own guideline rate and its packaged membership price converge. Lead pricing
 conversations with Cohort, then show Explorer as "try it first" and Guided as "if you want feedback
 and reporting."
@@ -553,24 +553,24 @@ and reporting."
 
 **Ask the parent:**
 1. *"How many kids total (your child + classmates), and would a per-child monthly price work, or
-   would you rather I quote one flat price for the whole group?"* — tests per-student vs. per-family
+   would you rather I quote one flat price for the whole group?"*, tests per-student vs. per-family
    pricing tolerance and locks the group size before quoting.
-2. *"What have you paid (or budgeted) for a comparable class — an Outschool course, a co-op class, or
-   a tutor — for a similar subject?"* — anchors to her actual revealed willingness-to-pay instead of
+2. *"What have you paid (or budgeted) for a comparable class, an Outschool course, a co-op class, or
+   a tutor, for a similar subject?"*, anchors to her actual revealed willingness-to-pay instead of
    market averages, and surfaces whether she's benchmarking against $40/mo Outschool bundles (cohort
-   tier will look pricier) or $500–3,000/yr co-op tuition (cohort tier will look cheap).
+   tier will look pricier) or $500-3,000/yr co-op tuition (cohort tier will look cheap).
 
 **Pricing risks:**
 - **Per-family vs. per-child.** Co-ops mostly price per-family; Outschool prices per-child. If the
   "classmates" are a fixed small group (not open enrollment), a flat group rate (e.g., "$X/week for
-  up to 6 kids") may land better than strict per-seat pricing — decide before quoting.
+  up to 6 kids") may land better than strict per-seat pricing, decide before quoting.
 - **Sibling / group discount.** Comparable co-ops routinely stack registration + semester + per-class
-  fees; a simple 10–15% discount for 3+ students from one family (or one classmate group) is
+  fees; a simple 10-15% discount for 3+ students from one family (or one classmate group) is
   standard practice and should be pre-built into the quote, not negotiated ad hoc.
 - **Free trial.** Outschool gives new users 40 free credits (~1 class); co-ops often waive the first
   session. A free first live session lowers the parent's risk and matches category norms.
 - **Anchoring mismatch.** If she's already compared BVC to Outschool's $40/mo entry tier rather than
-  the $60–90/mo real weekly-live rate, the Cohort tier may need the "here's what a weekly live class
+  the $60-90/mo real weekly-live rate, the Cohort tier may need the "here's what a weekly live class
   actually costs elsewhere" framing from §2(b) above.
 
 ---
@@ -580,38 +580,38 @@ and reporting."
 | Tier | Existing price | Evidence says | Recommendation |
 |---|---|---|---|
 | **Explorer** | ~$20/mo | Slightly under Outschool's cheapest live bundle ($40/mo) and in line with amortized co-op registration fees; no direct pure-async comparable to test against | **Keep, or nudge to $25/mo.** Evidence does not support lowering. |
-| **Cohort** | ~$60/mo (~$150/season) | Matches the real-world weekly-live-class range ($60–90/mo) almost exactly | **Keep as-is — this is the best-supported number in the set.** |
-| **Guided** | ~$150/mo (~$750/season) | Below the $100–200+/mo small-group-plus-reporting comparable band's upper end, and far below 1:1 tutoring/microschool ceilings | **Keep. There is headroom to test higher ($175–200/mo) if the parent reporting/Family-view feature lands as a strong differentiator, but $150 is defensible today.** |
+| **Cohort** | ~$60/mo (~$150/season) | Matches the real-world weekly-live-class range ($60-90/mo) almost exactly | **Keep as-is, this is the best-supported number in the set.** |
+| **Guided** | ~$150/mo (~$750/season) | Below the $100-200+/mo small-group-plus-reporting comparable band's upper end, and far below 1:1 tutoring/microschool ceilings | **Keep. There is headroom to test higher ($175-200/mo) if the parent reporting/Family-view feature lands as a strong differentiator, but $150 is defensible today.** |
 
 ---
 
 ## Numbers I could NOT source (flagged, not invented)
 
-- **Cultural Roots Homeschool Co-Op** (Richmond, VA) — the single closest live, culturally-centered
-  comparable to BVC — publishes no tuition/class price; site framing is donation/"Patron"-based.
-- **National Black Home Educators** — resource/support network, no live-class pricing model found.
-- **Outschool actual realized multi-week-course total price** — only the per-hour guideline rate and
+- **Cultural Roots Homeschool Co-Op** (Richmond, VA), the single closest live, culturally-centered
+  comparable to BVC, publishes no tuition/class price; site framing is donation/"Patron"-based.
+- **National Black Home Educators**, resource/support network, no live-class pricing model found.
+- **Outschool actual realized multi-week-course total price**, only the per-hour guideline rate and
   a rough illustrative example ($50 for a 4-week series) were found; Outschool doesn't publish an
   aggregate average because every teacher sets their own price.
-- **Sora Schools single-subject/enrichment add-on pricing** — only full-enrollment annual tuition was
+- **Sora Schools single-subject/enrichment add-on pricing**, only full-enrollment annual tuition was
   found; no per-course or drop-in rate.`,
     provenance: "plans/future-courses/home-school-pricing-research.md",
   },
   {
     key: "home-school-pricing",
-    title: "Live BVC Classes for Homeschoolers — one-pager",
+    title: "Live BVC Classes for Homeschoolers, one-pager",
     summary: "_Send-ready draft. Also as a print-to-PDF page: `home-school-pricing.html` (open → Cmd/Ctrl-P → Save as PDF)._",
-    body: `# Live BVC Classes for Homeschoolers — one-pager
+    body: `# Live BVC Classes for Homeschoolers, one-pager
 
 _Send-ready draft. Also as a print-to-PDF page: \`home-school-pricing.html\` (open → Cmd/Ctrl-P → Save as PDF)._
 
 ---
 
 ## Live Better Vice Club, taught by Brand Anthony McDonald
-**On Learn.WitUS.Online — cited, media-rich lessons + a live class with the instructor.**
+**On Learn.WitUS.Online, cited, media-rich lessons + a live class with the instructor.**
 
-Your student joins **Better Vice Club: Season 1** — the story of how everyday commodities (coffee, tea,
-chocolate, sugar, and more) shaped world history, geography, and culture — on an interactive **Commodity
+Your student joins **Better Vice Club: Season 1**, the story of how everyday commodities (coffee, tea,
+chocolate, sugar, and more) shaped world history, geography, and culture, on an interactive **Commodity
 Map**. Self-paced lessons at home, plus **live sessions** with me for discussion, questions, and projects.
 
 **How it works:** each student gets a free login, enrolls in the class, works through the lessons at home,
@@ -627,20 +627,20 @@ and joins the scheduled **live class** (video + Q&A). Progress, quizzes, and a c
 | **Self-paced Season-1 course + map** | ✓ | ✓ | ✓ |
 | **Live class with the instructor** | Monthly group Q&A | **Weekly live class** | **Weekly small-group live** |
 | **Quizzes + certificate** | ✓ | ✓ | ✓ |
-| **Graded assignments / project feedback** | — | Quick-check | **Full capstone + feedback** |
-| **Parent progress dashboard** (grades + attendance) | — | — | ✓ |
+| **Graded assignments / project feedback** |, | Quick-check | **Full capstone + feedback** |
+| **Parent progress dashboard** (grades + attendance) |, |, | ✓ |
 | **Price (per student)** | **$20/mo** | **$60/mo** _(or $150/season)_ | **$150/mo** _(or $750/season)_ |
 
-_**First live session is free.** **Sibling/classmate discount:** 10–15% off for 3+ students from one
+_**First live session is free.** **Sibling/classmate discount:** 10-15% off for 3+ students from one
 family or group. Larger co-ops (5+): ask about a group rate._
 
 ---
 
 ### Why families like it
-- **Cited & honest** — every claim ties to a real source (APA), so it meets homeschool-portfolio standards.
-- **One story, many subjects** — history, geography, economics, and culture in one thread.
-- **Interactive** — the Commodity Map lets kids explore where each story begins.
-- **A real teacher** — live time with the instructor, not just videos.
+- **Cited & honest**, every claim ties to a real source (APA), so it meets homeschool-portfolio standards.
+- **One story, many subjects**, history, geography, economics, and culture in one thread.
+- **Interactive**, the Commodity Map lets kids explore where each story begins.
+- **A real teacher**, live time with the instructor, not just videos.
 
 ### Getting started
 1. I set up your class group and send each student a login.
@@ -651,35 +651,35 @@ family or group. Larger co-ops (5+): ask about a group rate._
 
 ---
 
-_Notes (internal): pricing validated against 2026 comparables (\`home-school-pricing-research.md\`) —
-Outschool live ~$17–21/learner-hr & $40–240/mo bundles, co-ops $45–150/family, microschools as the
+_Notes (internal): pricing validated against 2026 comparables (\`home-school-pricing-research.md\`),
+Outschool live ~$17-21/learner-hr & $40-240/mo bundles, co-ops $45-150/family, microschools as the
 ceiling. **$60 Cohort is the best-anchored tier** (matches the real weekly-live rate); Guided has
-headroom to test $175–200. Live now runs **in-app**: the app hosts the course, Commodity Map,
+headroom to test $175-200. Live now runs **in-app**: the app hosts the course, Commodity Map,
 **live class + live chat + "who's here" roster**, recordings (ViLoud embed), quizzes, certificates,
 and the **parent Family view** (a linked parent sees their own child's progress, grades, and
-attendance — powers the Guided tier's progress dashboard). Kid-friendly avatar+PIN login is available
+attendance, powers the Guided tier's progress dashboard). Kid-friendly avatar+PIN login is available
 for young students without email._`,
     provenance: "plans/future-courses/home-school-pricing.md",
   },
   {
     key: "pan-africanism-track-proposal",
-    title: "Pan-Africanism — course track proposal",
+    title: "Pan-Africanism, course track proposal",
     summary: "A proposed \"Pan-Africanism\" track: one built anchor course plus eight follow-on courses, each",
-    body: `# Pan-Africanism — course track proposal
+    body: `# Pan-Africanism, course track proposal
 
 A proposed **"Pan-Africanism"** track: one built anchor course plus eight follow-on courses, each
 taking a section of the anchor and giving it the room it deserves. From BAM's direction: each
-World-History topic becomes a SERIES — the anchor is the movement's overview/entry point; the
+World-History topic becomes a SERIES, the anchor is the movement's overview/entry point; the
 follow-ons go deep.
 
-**Nothing below is built except the anchor.** These are proposals — pick which to author, and in
+**Nothing below is built except the anchor.** These are proposals, pick which to author, and in
 what order.
 
 ---
 
 ## The anchor (built, \`content/pan-africanism\`)
 
-**Pan-Africanism: The Idea, the Movement, the Reckoning** (Culture & History) — 6 sections,
+**Pan-Africanism: The Idea, the Movement, the Reckoning** (Culture & History), 6 sections,
 16 teaching lessons, 6 quizzes (15-question banks, 90 questions). The full arc: 19th-century roots
 (Cuffe vs the ACS, Ethiopianism, Blyden) → Williams's 1900 London conference → Du Bois's
 Congresses and Manchester 1945 → Garvey and Du Bois taught honestly (both halves of the trial;
@@ -687,7 +687,7 @@ the feud's structural questions) → Nkrumah, Ghana 1957, OAU 1963 → AU 2002 �
 Rastafari (symbol vs fact) → the reckoning (five structural tensions; the strongmen named with
 hedged numbers).
 
-**The anchor's real payload is a reusable audit method** — every course in this track should keep
+**The anchor's real payload is a reusable audit method**, every course in this track should keep
 it, so the track compounds instead of being eight disconnected biographies:
 
 1. **Quotes: verbatim-verified or explicitly flagged, never reconstructed.** (The anchor's
@@ -701,13 +701,13 @@ it, so the track compounds instead of being eight disconnected biographies:
    red-black-green.)
 
 A student who has done the anchor plus any three follow-ons should be able to pick up any new
-pan-African claim — a viral quote, a membership figure, a hero narrative — and audit it unassisted.
+pan-African claim, a viral quote, a membership figure, a hero narrative, and audit it unassisted.
 
 **Cross-links, not duplication.** Two sibling anchors are already shipped and the track must not
 re-teach them: **Africa Before Colonization: The Documented Record**
-(\`scripts/data/africa-before-colonization-course.ts\` — the deep history the movement invoked:
+(\`scripts/data/africa-before-colonization-course.ts\`, the deep history the movement invoked:
 Kush, Aksum, Mali, Great Zimbabwe, Adwa, and the "how we know" toolkit) and **Afrocentricity: How
-to Evaluate a Contested Paradigm** (\`scripts/data/afrocentricity-course.ts\` — the Diop/Asante
+to Evaluate a Contested Paradigm** (\`scripts/data/afrocentricity-course.ts\`, the Diop/Asante
 scholarly paradigm debate). Every follow-on that touches deep history or the Kemet debate points
 at those courses instead of duplicating them.
 
@@ -715,132 +715,132 @@ at those courses instead of duplicating them.
 
 ## The follow-ons (proposed, in recommended build order)
 
-### 1. The Pan-African Congresses, 1900–1945 (and 1974/2014)
-**Teaches uniquely:** the movement's institutional spine as a *documents course* — the 1900
+### 1. The Pan-African Congresses, 1900-1945 (and 1974/2014)
+**Teaches uniquely:** the movement's institutional spine as a *documents course*, the 1900
 Address, the 1919/1921/1923/1927 resolutions, Padmore's 1947 Manchester report read as primary
 sources, plus the post-independence congresses the anchor skips (Dar es Salaam 1974, Accra 2014)
 where the diaspora/continent power balance visibly inverts. The anchor gives the arc; this course
 teaches students to *read the resolutions themselves* and watch the demands escalate decade by
-decade — the single best primary-source close-reading exercise the whole track offers.
-**Sourcing strength:** excellent — the strongest in the track. The congress documents are
-published (Padmore's *Colonial and Coloured Unity* is in print; the 1919–27 resolutions are
+decade, the single best primary-source close-reading exercise the whole track offers.
+**Sourcing strength:** excellent, the strongest in the track. The congress documents are
+published (Padmore's *Colonial and Coloured Unity* is in print; the 1919-27 resolutions are
 reprinted in Du Bois collections and in Adi & Sherwood's *The 1945 Manchester Pan-African Congress
 Revisited*, which includes delegate lists and session minutes). No translation needed.
-**What's contested:** attendance figures and delegate counts for 1921–27 vary by source (report
-ranges); how much causal weight Manchester deserves for decolonization (historians differ —
+**What's contested:** attendance figures and delegate counts for 1921-27 vary by source (report
+ranges); how much causal weight Manchester deserves for decolonization (historians differ,
 supply the doctrine-network-nerve framing, not sole causation); the status of the 1974 and 2014
 congresses as "real" successors is argued inside the movement itself.
 
 ### 2. Garvey and the UNIA: Rise, Fall, Afterlives
-**Teaches uniquely:** the largest Black mass movement ever built, at full depth — the UNIA's
+**Teaches uniquely:** the largest Black mass movement ever built, at full depth, the UNIA's
 actual business operations and organizational machinery (Negro Factories Corporation, the
 divisions system, Liberty Hall), the complete Black Star Line record from ship purchase to
 suspension, the trial transcript, Amy Ashwood AND Amy Jacques Garvey as principals rather than
 footnotes, and the afterlives (Rastafari, the Nation of Islam's debts to Garveyism, Ghana's black
 star, hip-hop's Garvey revivals). The anchor's two lessons become a full forensic case study in
 holding "real offense" and "targeted prosecution" simultaneously.
-**Sourcing strength:** excellent — Hill's *Marcus Garvey and UNIA Papers* (multi-volume,
+**Sourcing strength:** excellent, Hill's *Marcus Garvey and UNIA Papers* (multi-volume,
 documentary) is the gold standard; Grant (2008) and Cronon (1955) give narrative spine; the FBI
 files (Hoover's 1919 memo) are published. The trial record exists.
-**What's contested:** membership numbers (claims to six million vs far lower paid-member counts —
-teach as the anchor does); how to weigh the KKK meeting (strategy vs betrayal — present the
+**What's contested:** membership numbers (claims to six million vs far lower paid-member counts,
+teach as the anchor does); how to weigh the KKK meeting (strategy vs betrayal, present the
 documented reactions, don't adjudicate motive); posthumous exoneration campaigns (a US pardon
-push exists in recent years — date any claim about its status; verify before asserting anything
+push exists in recent years, date any claim about its status; verify before asserting anything
 happened).
 
-### 3. Du Bois: The Long Arc (1868–1963)
-**Teaches uniquely:** the one biography that spans the entire movement — 1900 London to Accra
+### 3. Du Bois: The Long Arc (1868-1963)
+**Teaches uniquely:** the one biography that spans the entire movement, 1900 London to Accra
 1963 in a single life. Full treatment of what the anchor compresses: the Talented Tenth and its
 later self-revision, *The Crisis* years, the congress diplomacy, the 1951 indictment and passport
 war, the late Marxist turn and CPUSA membership at 93, the Encyclopedia Africana, Ghanaian
 citizenship. Also the honest ledger: his elitism (self-admitted), the Garvey feud's conduct, his
-documented late defenses of Stalin — the course must not sand its own subject smooth.
-**Sourcing strength:** excellent — Lewis's two-volume Pulitzer biography, Du Bois's three
-autobiographies (which contradict each other in documented ways — itself a teachable
+documented late defenses of Stalin, the course must not sand its own subject smooth.
+**Sourcing strength:** excellent, Lewis's two-volume Pulitzer biography, Du Bois's three
+autobiographies (which contradict each other in documented ways, itself a teachable
 source-criticism exercise), the complete Crisis archive online.
 **What's contested:** interpretation of the late-Soviet alignment (naïveté, conviction, or
-despair — attribute readings to their holders); the Washington–Du Bois debate's fairness to
+despair, attribute readings to their holders); the Washington-Du Bois debate's fairness to
 Washington; whether his renunciation of America was final or contextual.
 
 ### 4. Nkrumah and the Union That Wasn't: Ghana, the OAU, and the AU
-**Teaches uniquely:** the state-power chapter at full depth — CPP organizing and Positive Action
+**Teaches uniquely:** the state-power chapter at full depth, CPP organizing and Positive Action
 as a decolonization method; Ghana as pan-African HQ (Padmore's office, the 1958 conferences,
 support for liberation movements); the Congo crisis and Lumumba (the anchor's one-line mention
 becomes a full lesson: the murder, the 2001 Belgian inquiry and 2002 apology); Casablanca vs
 Monrovia in documents; the OAU's actual mechanics; the AU's architecture (Article 4(h), PSC,
 AfCFTA) with the text-vs-practice audit run properly. And the PDA/one-party/coup file, complete.
-**Sourcing strength:** strong — Nkrumah's own books (autobiography 1957, *Africa Must Unite*
+**Sourcing strength:** strong, Nkrumah's own books (autobiography 1957, *Africa Must Unite*
 1963), Birmingham and Biney on the biography, Meredith for the debit column, OAU/AU treaty texts
 free online, the Belgian parliamentary inquiry on Lumumba published.
-**What's contested:** Nkrumah's overthrow (CIA involvement is argued — documented declassified
+**What's contested:** Nkrumah's overthrow (CIA involvement is argued, documented declassified
 material exists but is partial; state what the documents show and stop); responsibility
-apportionment for the Congo crisis; AU effectiveness claims (date everything — the institution is
+apportionment for the Congo crisis; AU effectiveness claims (date everything, the institution is
 a moving target; the anchor's audit frame transfers directly).
 
 ### 5. Négritude and the Black Atlantic of Letters
-**Teaches uniquely:** the cultural-movement chapter as a literature course — actual close reading
+**Teaches uniquely:** the cultural-movement chapter as a literature course, actual close reading
 of the *Cahier*, *Pigments*, Senghor's poems and prose, *Discourse on Colonialism*, and the
 Nardal-salon/Harlem-Renaissance transmission (Hughes, McKay's *Banjo*) in both directions. Then
 the full critique sequence (Sartre's praise-burial, Fanon's museum warning, Soyinka's tigritude,
 the créolité generation's later break with Césaire) as a live intellectual debate students can
 join rather than a settled verdict. Présence Africaine, the 1956/1959 congresses, Dakar 1966 and
 FESTAC '77 as institutional history.
-**Sourcing strength:** strong — the primary texts are all in good English translations; Kesteloot,
+**Sourcing strength:** strong, the primary texts are all in good English translations; Kesteloot,
 Sharpley-Whiting, and Wilder are solid scholarship. One caveat: some Nardal-circle material and
-*L'Étudiant noir* itself are French-only — a translation pass is required for primary-source
+*L'Étudiant noir* itself are French-only, a translation pass is required for primary-source
 lessons beyond the canonical texts.
-**What's contested:** what négritude *is* (Senghor's essentialism vs Césaire's solidarity reading —
+**What's contested:** what négritude *is* (Senghor's essentialism vs Césaire's solidarity reading,
 the founders themselves diverge; teach the divergence); Senghor's presidency (the Dia case);
 Soyinka-quip wording (paraphrase, as the anchor does); how much the Harlem Renaissance "caused"
-négritude (influence documented, arithmetic not — avoid overclaiming).
+négritude (influence documented, arithmetic not, avoid overclaiming).
 
 ### 6. Rastafari and Ethiopia: The Symbol and the State
-**Teaches uniquely:** the anchor's best lesson expanded into the track's methods course —
+**Teaches uniquely:** the anchor's best lesson expanded into the track's methods course,
 symbol-vs-fact at book length. Early Rastafari (Howell, Pinnacle, colonial persecution, the 1960
 UWI report and the 1961 mission to Africa), Ethiopia the actual state (Adwa's afterlife, the
-1935–41 occupation and diaspora mobilization, Selassie's absolutism and the 1942 abolition,
+1935-41 occupation and diaspora mobilization, Selassie's absolutism and the 1942 abolition,
 the Derg), Shashamane and repatriation as lived practice, Grounation 1966, and the globalization
 via reggae. The Garvey-prophecy audit and the 1937 "great coward" essay get full primary-source
 treatment.
-**Sourcing strength:** strong on both halves — Chevannes, Edmonds, and Hill (1983) on Rastafari;
+**Sourcing strength:** strong on both halves, Chevannes, Edmonds, and Hill (1983) on Rastafari;
 Zewde on Ethiopia; Garvey's *Black Man* essays are locatable. The UWI 1960 report is published.
-**What's contested:** Selassie's death circumstances (contested — teach as the anchor does);
-Shashamane grant details (dates/acreage vary — hedge); insider/outsider tension in teaching a
-living faith respectfully while auditing its founding claims (the platform's Hoodoo posture — a
-knowledgeable-reviewer pass before publishing — is the right model here; this is the one
+**What's contested:** Selassie's death circumstances (contested, teach as the anchor does);
+Shashamane grant details (dates/acreage vary, hedge); insider/outsider tension in teaching a
+living faith respectfully while auditing its founding claims (the platform's Hoodoo posture, a
+knowledgeable-reviewer pass before publishing, is the right model here; this is the one
 follow-on that may warrant holding from publication pending review).
 
 ### 7. The Diaspora and the Continent: Who Speaks for Africa?
-**Teaches uniquely:** the track's through-line tension as its own subject — the only course that
+**Teaches uniquely:** the track's through-line tension as its own subject, the only course that
 is an *argument map* rather than a chronology. Emigration debates (1817 Philadelphia through
 Delany), the congress-era diaspora leadership, the 1958 inversion (continental leaders take the
 wheel), Malcolm X and the OAU, the AU's "sixth region" designation and its practical emptiness,
 dual citizenship and Ghana's Year of Return (2019) / Beyond the Return, diaspora remittances vs
 representation, and Afro-descendant movements in Latin America (the track's chance to break the
-US-centric frame — Colombia, Brazil, the Garifuna).
-**Sourcing strength:** moderate — the historical halves are well-sourced from the same corpus as
-courses 1–4; the contemporary half (Year of Return figures, sixth-region mechanics, remittance
+US-centric frame, Colombia, Brazil, the Garifuna).
+**Sourcing strength:** moderate, the historical halves are well-sourced from the same corpus as
+courses 1-4; the contemporary half (Year of Return figures, sixth-region mechanics, remittance
 data) needs primary AU documents and dated statistics, and Latin American Afro-descendant
 material is thinner in English.
-**What's contested:** almost everything contemporary — Year of Return economic-impact figures are
+**What's contested:** almost everything contemporary, Year of Return economic-impact figures are
 government claims (attribute); "sixth region" status is aspirational text vs practice; who counts
 as diaspora (the AU definition vs lived identities). Build AFTER the historical courses so the
 audit method is second nature.
 
 ### 8. After Independence: The Strongmen, the Critics, and the Reckoning
-**Teaches uniquely:** Section 6 of the anchor at full depth — the hardest and most valuable
+**Teaches uniquely:** Section 6 of the anchor at full depth, the hardest and most valuable
 course in the track. Case files: Nkrumah's Ghana (PDA, Danquah, the 1964 referendum, the coup),
 Touré's Guinea (1958 heroism → Camp Boiro → Diallo Telli), Amin's OAU chairmanship, Mobutu's
 authenticité, Mengistu (the Derg as Ethiopia's own reckoning), Mugabe's liberation-credential
 shield. Against each file, the dissident tradition that named it: Soyinka, Ngũgĩ, Achebe's
 essays, the survivors' memoirs, the lawyers and oppositions. The course's thesis is the anchor's
-rule 3: honesty about the strongmen IS the pan-African tradition — its dissident half.
-**Sourcing strength:** adequate but demanding — Meredith and Schmidt are solid; Amnesty/ICJ
+rule 3: honesty about the strongmen IS the pan-African tradition, its dissident half.
+**Sourcing strength:** adequate but demanding, Meredith and Schmidt are solid; Amnesty/ICJ
 reports exist for Amin; Camp Boiro documentation leans on survivor memoirs (French) and needs
 careful attribution. Every number in this course must carry a source and a range.
 **What's contested:** nearly every death toll (present ranges, attribute); CIA/foreign-hand
 claims in the coups (document what's declassified, refuse the rest); Mugabe and Mengistu remain
-politically live in their countries — date claims, attribute judgments, and expect strong
+politically live in their countries, date claims, attribute judgments, and expect strong
 learner reactions. **Build LAST: it inherits the audit method from every course before it, and a
 celebration-conditioned audience needs the earlier courses first.**
 
@@ -850,7 +850,7 @@ celebration-conditioned audience needs the earlier courses first.**
 
 - **A standalone "Kemet/ancient-origins" course.** The Diop/Asante material and the "was ancient
   Egypt Black?" debate are already taught, with a no-winner-declared posture, in the shipped
-  **Afrocentricity** anchor — and the deep precolonial record is in **Africa Before Colonization**.
+  **Afrocentricity** anchor, and the deep precolonial record is in **Africa Before Colonization**.
   A third course here would duplicate, not deepen. Cross-link instead.
 - **A "Pan-Africanism today" news course.** AfCFTA implementation, AU reform, and
   sixth-region politics move faster than course maintenance; the contemporary material lives as
@@ -869,7 +869,7 @@ The reasoning:
 - **Start with the Congresses** because it is the best-sourced course in the track (published
   primary documents, no translation, no living-politics risk) and it teaches the close-reading
   habit every later course leans on. Cheapest credibility, highest method-transfer.
-- **Garvey second, Du Bois third** — the two biographies extend the anchor's most gripping
+- **Garvey second, Du Bois third**, the two biographies extend the anchor's most gripping
   section while the sourcing is still gold-standard (Hill's Papers; Lewis's biography). Garvey
   before Du Bois because the UNIA course is the bigger draw and its forensic both-halves
   structure is the track's signature move.
@@ -877,23 +877,23 @@ The reasoning:
   and the audit frame are fresh.
 - **Négritude fifth and Rastafari sixth** widen from politics to culture once the political
   chronology is fixed; Rastafari waits for its reviewer arrangement (see above).
-- **Diaspora-vs-continent seventh** because it is an argument map across everything prior — it
+- **Diaspora-vs-continent seventh** because it is an argument map across everything prior, it
   reads as review-plus-extension if built late, and as confusion if built early.
 - **After Independence last**, for the same reason the workers-rights track holds China and the
   Gulf to the end: it is where a sourcing failure would be most damaging, and it lands hardest
   on an audience that has already learned to hold two truths at once.
 
 **Track sequencing for the learner** matches the build order, with one swap: a learner who wants
-culture first can take Négritude/Rastafari immediately after the anchor without loss — the
+culture first can take Négritude/Rastafari immediately after the anchor without loss, the
 political courses don't depend on them.
 
 ---
 
 ## What BAM would need to build these responsibly
 
-1. **Nothing external for courses 1–5** — published sources and authoring time only. That is the
+1. **Nothing external for courses 1-5**, published sources and authoring time only. That is the
    argument for starting there.
-2. **A Rastafari reviewer** (course 6) — the platform's existing Hoodoo posture applied again: a
+2. **A Rastafari reviewer** (course 6), the platform's existing Hoodoo posture applied again: a
    knowledgeable member of the tradition reads before publishing.
 3. **A translation pass** for French material: *L'Étudiant noir* and Nardal-circle primary
    sources (course 5), Camp Boiro survivor memoirs (course 8).
@@ -911,16 +911,16 @@ political courses don't depend on them.
   \`scripts/data/afrocentricity-course.ts\` (the paradigm debate; proposal at
   \`plans/future-courses/afrocentricity-track-proposal.md\`).
 - Category: **Culture & History** (the anchor ships there). If the World-History series grows,
-  consider a "World History" grouping with per-topic tracks — this is the second topic after the
+  consider a "World History" grouping with per-topic tracks, this is the second topic after the
   precolonial-Africa track to follow the anchor+series pattern.
 - Seed task: \`plans/user-tasks/107-seed-pan-africanism.md\`.`,
     provenance: "plans/future-courses/pan-africanism-track-proposal.md",
   },
   {
     key: "precolonial-asia-track-proposal",
-    title: "Asia Before European Colonization — course track proposal",
+    title: "Asia Before European Colonization, course track proposal",
     summary: "A proposed precolonial-Asia track: one built anchor course plus eight follow-on courses, each",
-    body: `# Asia Before European Colonization — course track proposal
+    body: `# Asia Before European Colonization, course track proposal
 
 A proposed **precolonial-Asia track**: one built anchor course plus eight follow-on courses, each
 going deep where the anchor deliberately stays at orientation depth. From BAM's \`world.md\` queue,
@@ -928,31 +928,31 @@ sibling to the Africa-precolonial track (\`africa-precolonial-track-proposal.md\
 same editorial spine: every claim names a civilization, a period, and a region; every number is
 attributed; hedges are explicit; the romance trap is treated as equal to the erasure trap.
 
-**Nothing below is built.** These are proposals — pick which to author, and in what order.
+**Nothing below is built.** These are proposals, pick which to author, and in what order.
 
 ---
 
 ## The anchor (built, \`content/precolonial-asia\`)
 
-**Asia Before European Colonization: The Center of Gravity** (Culture & History) — 7 sections,
+**Asia Before European Colonization: The Center of Gravity** (Culture & History), 7 sections,
 17 teaching lessons, 7 quizzes (15-question banks), 1 exercise. Deliberately an ORIENTATION course:
 the zone map (South, East, Southeast, Central, West Asia), when each civilization flourished, the
 connective tissue (Silk Roads land + sea, the Baghdad translation movement, the Mongols), a
 dedicated no-utopia section (caste, nobi, temple bondage, the Indian Ocean slave trade, intra-Asian
 conquest), and the Great Divergence taught as a live debate.
 
-**The anchor's real payload is a reusable audit** — *who says it, in what kind of source, about
-which people, where, when, and does anything independent converge?* — plus four standing rules
+**The anchor's real payload is a reusable audit**, *who says it, in what kind of source, about
+which people, where, when, and does anything independent converge?*, plus four standing rules
 every follow-on course should inherit:
 
 1. **Never flatten.** No "Asia did X"; name the civilization, period, and region.
-2. **Attribute every number.** Maddison's shares, Hartwell's tonnage, Palais's nobi percentage —
+2. **Attribute every number.** Maddison's shares, Hartwell's tonnage, Palais's nobi percentage,
    estimates carry their author's name and their error bars.
 3. **Hedge the beloved claims.** The Indus script is undeciphered (and may not encode language);
    the House of Wisdom is thinly evidenced; Genji is "often called" the first novel; chronicle
    death tolls are expressions of catastrophe, not counts.
 4. **No utopia, no waiting room.** Hierarchy, slavery, and conquest are taught plainly; "European
-   colonization" is dated precisely (enclaves 1510–1571; territorial rule from Plassey 1757) and
+   colonization" is dated precisely (enclaves 1510-1571; territorial rule from Plassey 1757) and
    is an escalation, not the arrival of domination.
 
 The anchor cross-links the shipped **Africa Before Colonization** anchor (same method, sibling
@@ -963,13 +963,13 @@ track) and should cross-link each follow-on as it ships.
 ## Selection criteria (why these eight, and not others)
 
 A course earns a slot only if it teaches something **no other course in the track can teach**, and
-the set has to cover the anchor's whole map — not just the famous empires. The test is "does
+the set has to cover the anchor's whole map, not just the famous empires. The test is "does
 removing it leave a hole," and the holes each one fills:
 
 | What the track must cover | Course that anchors it |
 |---|---|
 | Deep time + the founding evidence problems (undeciphered script, text-vs-archaeology) | Ancient India |
-| The premodern economic frontier at its peak | Imperial China (Tang–Song) |
+| The premodern economic frontier at its peak | Imperial China (Tang-Song) |
 | West Asia IS Asia; the transmission engine | Islamic Golden Age |
 | The connective tissue as its own subject; source-criticism at its best | Silk Roads |
 | Empire at maximum scale; steppe perspective; both cartoons refused | Mongol Empire |
@@ -985,7 +985,7 @@ Deliberate omissions, so the reasoning is on the record:
   proves out.**
 - **A dedicated Southeast Asia mainland course (Pagan, Ayutthaya, Dai Viet).** Real hole, but the
   maritime-empires course must ship first and can carry Dai Viet's resistance story (Ming
-  occupation 1407–27) meanwhile. **Build as a second SE-Asia course only if the first performs.**
+  occupation 1407-27) meanwhile. **Build as a second SE-Asia course only if the first performs.**
 - **Persia/Iran as its own course.** The Safavids and earlier Persian empires deserve one, but the
   Islamic Golden Age course carries the Persian intellectual world, and the anchor's scope was
   "before European colonization," where Iran's story (never formally colonized, heavily
@@ -993,54 +993,54 @@ Deliberate omissions, so the reasoning is on the record:
 
 ---
 
-## Wave 1 — build first (best sourcing, widest reuse)
+## Wave 1, build first (best sourcing, widest reuse)
 
 ### 1. Ancient India: From the Indus Cities to the Guptas
-**Teaches uniquely:** the evidence problems that make deep-time history honest — an entire
+**Teaches uniquely:** the evidence problems that make deep-time history honest, an entire
 civilization known only through archaeology (Indus, script undeciphered, with the
 Farmer/Sproat/Witzel vs. Parpola dispute taught as live), the text-vs-archaeology gap for the
 Vedic period, why "Aryan invasion" died and what the migration evidence actually says (incl. the
 aDNA studies, dated and hedged), Ashoka as the first ruler whose own words survive, and the full
 zero/place-value chain the anchor could only sketch (Aryabhata → Brahmagupta → Gwalior; Bakhshali
 contested per Plofker et al. 2017).
-**Sourcing:** excellent — Kenoyer, Possehl, Thapar (2002; 2012), Plofker (2009), the edicts in
+**Sourcing:** excellent, Kenoyer, Possehl, Thapar (2002; 2012), Plofker (2009), the edicts in
 translation (Dhammika), UNESCO site documentation.
 **Hard parts:** the Indus script and Indo-Aryan migration questions are politically charged in
 present-day India (Hindutva historiography claims both). The course must teach the evidence and
-name the dispute without adjudicating modern politics — same posture as the Afrocentricity course.
+name the dispute without adjudicating modern politics, same posture as the Afrocentricity course.
 Caste's ancient history must be taught between the two myths (neither eternal essence nor British
 invention, per Bayly 1999).
 
 ### 2. Imperial China: Tang and Song
-**Teaches uniquely:** the premodern economic frontier in full — the Song "medieval economic
+**Teaches uniquely:** the premodern economic frontier in full, the Song "medieval economic
 revolution" (Elvin) with its primary sources (Shen Kuo 1088, Wujing Zongyao 1044, Zhu Yu, jiaozi),
 Tang cosmopolitanism (Chang'an, Dunhuang, the 781 stele), the examination system's reality vs.
 its "meritocracy" myth, and the honest ledger (Chanyuan tribute 1005, the 1127 fall of the north,
 foot binding's spread).
-**Sourcing:** excellent — Ebrey, Benn, Elvin, Hartwell (1962), Kuhn, the British Library's
+**Sourcing:** excellent, Ebrey, Benn, Elvin, Hartwell (1962), Kuhn, the British Library's
 Dunhuang collections, primary texts in translation.
 **Hard parts:** resisting the "four great inventions" listicle frame (each invention needs its
-primary source and its wrinkle — movable type was real but woodblock stayed dominant); keeping
+primary source and its wrinkle, movable type was real but woodblock stayed dominant); keeping
 Tang/Song distinct instead of blurring into "medieval China"; the An Lushan census-collapse
-number (36M "dead") must be taught as the anchor teaches it — a lesson in what registers count.
+number (36M "dead") must be taught as the anchor teaches it, a lesson in what registers count.
 
 ### 3. The Islamic Golden Age: Baghdad and the Translation Movement
 **Teaches uniquely:** West Asia as Asia, and the transmission engine that moved Indian numerals
 and Greek philosophy into and through the Arabic world (al-Khwarizmi, Ibn Sina, Ibn al-Haytham,
 al-Biruni). The methodological centerpiece is the **House of Wisdom hedge**: the documented wonder
-is the two-century, society-wide movement (Gutas 1998), not one inflated building — a perfect
+is the two-century, society-wide movement (Gutas 1998), not one inflated building, a perfect
 whole-course case study in how institutions harden into myth.
-**Sourcing:** excellent — Gutas, Saliba (2007), Pormann & Savage-Smith (2007), primary texts in
+**Sourcing:** excellent, Gutas, Saliba (2007), Pormann & Savage-Smith (2007), primary texts in
 translation.
 **Hard parts:** the "golden age then eternal decline" frame is itself contested (Saliba) and must
 be taught as such; the era's religious politics (which caliphs patronized what, the mihna) need
-care; and the course must not become a "Muslims invented everything" listicle — same discipline as
+care; and the course must not become a "Muslims invented everything" listicle, same discipline as
 the inventions rule in the China course, with the transmission chain (credit the origin AND the
 messenger) as the standing pattern.
 
 ---
 
-## Wave 2 — build second (the connective tissue, after the nodes exist)
+## Wave 2, build second (the connective tissue, after the nodes exist)
 
 ### 4. The Silk Roads: Land, Sea, and the Traffic in Ideas
 **Teaches uniquely:** connection as a subject in its own right, and the best source-criticism
@@ -1048,7 +1048,7 @@ material in the whole track: Richthofen's 1877 coinage, Hansen's documents-first
 overland trade was local; the great cargo was religions and technologies), the Sogdian letters,
 the Belitung wreck as industrial-scale maritime proof, the Talas-751 paper story as legend vs. the
 documented mills, and plague transmission along the unified routes.
-**Sourcing:** excellent — Hansen (2012; 2020), Whitfield, Frankopan, UNESCO's 2014 corridor
+**Sourcing:** excellent, Hansen (2012; 2020), Whitfield, Frankopan, UNESCO's 2014 corridor
 listing, museum collections (British Library Dunhuang, Asian Civilisations Museum Belitung).
 **Hard parts:** the romance pressure is enormous (the Silk Road is the most romanticized topic in
 world history); Frankopan's "axis of world history" framing should be taught as an attributed
@@ -1056,16 +1056,16 @@ argument, not recited. Build AFTER China + Islamic Golden Age so the endpoints e
 
 ### 5. The Mongol Empire: Destruction and Connection
 **Teaches uniquely:** empire at maximum scale seen from the steppe rather than from its victims'
-capitals only — and the track's hardest both-cartoons-refused problem. Chronicle death tolls read
+capitals only, and the track's hardest both-cartoons-refused problem. Chronicle death tolls read
 as expressions of catastrophe, not counts; the yam, censuses, spared artisans, and technology
 transfer taught as equally documented; Marco Polo with his hedges; the successor khanates and the
 Timurid→Mughal afterlife.
-**Sourcing:** good — Morgan (2007), Jackson (2017), May, the Secret History of the Mongols in
+**Sourcing:** good, Morgan (2007), Jackson (2017), May, the Secret History of the Mongols in
 scholarly translation (de Rachewiltz), Rashid al-Din in translation.
 **Hard parts:** popular sources are polluted in both directions (Weatherford's rehabilitation is
 as distorting as the barbarian cartoon); the Secret History is court literature and must be
 genre-labeled like the Nagarakretagama; atrocity numbers will tempt every quiz author toward
-false precision — the bank must test the METHOD (how to read chronicle figures), not fake counts.
+false precision, the bank must test the METHOD (how to read chronicle figures), not fake counts.
 
 ### 6. The Maritime Empires of Southeast Asia
 **Teaches uniquely:** the zone every survey skips, at full depth: Srivijaya (and the
@@ -1074,54 +1074,54 @@ Sailendras, Angkor as engineered landscape (Evans 2007/2013 lidar; Zhou Daguan; 
 droughts), Majapahit and the panegyric problem, Malacca and the monsoon entrepôt logic, the Maluku
 spice monopoly, and mainland resistance (Dai Viet expelling the Ming, 1427) until a dedicated
 mainland course exists.
-**Sourcing:** good but more specialist — Coedès (1968), Hall (2011), Lockard, Coe (2003), Zhou
+**Sourcing:** good but more specialist, Coedès (1968), Hall (2011), Lockard, Coe (2003), Zhou
 Daguan (Harris trans.), the PNAS papers, UNESCO documentation.
 **Hard parts:** chronology is inscription-dependent and genuinely uncertain in places (say so);
 "Indianization" is a contested frame (older scholarship overstated Indian agency; newer work
-stresses local agency in borrowing — teach the historiography); modern nationalisms (Indonesian,
+stresses local agency in borrowing, teach the historiography); modern nationalisms (Indonesian,
 Malaysian, Cambodian, Thai) all claim these empires, so keep the naming precise and the politics
 out.
 
 ---
 
-## Wave 3 — build last (the capstones)
+## Wave 3, build last (the capstones)
 
 ### 7. Japan and Korea: Borrowing, Refusing, Never Colonized (by Europe)
-**Teaches uniquely:** selective adaptation as a strategy — two states in constant conversation
+**Teaches uniquely:** selective adaptation as a strategy, two states in constant conversation
 with China that engineered their own courts, scripts, and institutions (Heian court culture and
 women's literature; the 700-year shogunal dual structure; Goryeo's Jikji and the Tripitaka
-Koreana; Sejong's Hangul as the world's best-documented script invention) — and the fact that
+Koreana; Sejong's Hangul as the world's best-documented script invention), and the fact that
 neither was ever a European colony, which completes the anchor's precision about what "European
 colonization" was and wasn't. Ends with the Imjin War and Japan's 1910 annexation of Korea: the
 last pre-1945 colonizer of a major Asian nation was Asian.
-**Sourcing:** excellent — Totman, Seth, Palais (1996) for nobi, Swope (2009) for Imjin, UNESCO
+**Sourcing:** excellent, Totman, Seth, Palais (1996) for nobi, Swope (2009) for Imjin, UNESCO
 Memory of the World (Jikji), the Hunminjeongeum itself.
-**Hard parts:** Japan–Korea history is a live diplomatic wound (textbook wars, colonial-era
+**Hard parts:** Japan-Korea history is a live diplomatic wound (textbook wars, colonial-era
 disputes); the course must date claims, attribute estimates (nobi shares, Imjin casualties), and
 adjudicate nothing. Sakoku must be taught as managed trade, not the sealed-country myth. The
 "often called the first novel" hedge on Genji is non-negotiable.
 
 ### 8. The Great Divergence: When and Why "the West" Pulled Ahead
-**Teaches uniquely:** the capstone — how economic history is actually argued. Pomeranz (2000) at
+**Teaches uniquely:** the capstone, how economic history is actually argued. Pomeranz (2000) at
 full depth (the like-with-like method, the ecological bottleneck, coal + colonies), the named
 pushback (Broadberry/Guan/Li 2018; Allen's wage series with the rice-vs-wheat basket problem),
 Maddison and the Maddison Project as method (how you reconstruct GDP for 1700, and why the error
 bars are wide), Frank's ReOrient and Abu-Lughod's 13th-century world system, and the
 colonialism-and-deindustrialization debates (Bengal's textiles) taught with the causation
-disputes named. **No winner declared** — the deliverable is the student's ability to read a
+disputes named. **No winner declared**, the deliverable is the student's ability to read a
 contested quantitative literature.
-**Sourcing:** excellent and entirely in print — the debate IS the reading list.
+**Sourcing:** excellent and entirely in print, the debate IS the reading list.
 **Hard parts:** this is the track's most intellectually demanding course and assumes the anchor
 plus ideally the China course; numbers will tempt false precision at every turn (the course
 should teach the Maddison Project's revision history as content, not embarrassment); it must not
-collapse into either "the West cheated" or "the West earned it" — both are slogans, and the
+collapse into either "the West cheated" or "the West earned it", both are slogans, and the
 scholarship is better than both.
 
 ---
 
 ## Recommended build order, and why
 
-**1 → Ancient India. 2 → Imperial China (Tang–Song). 3 → Islamic Golden Age. 4 → Silk Roads.
+**1 → Ancient India. 2 → Imperial China (Tang-Song). 3 → Islamic Golden Age. 4 → Silk Roads.
 5 → Mongol Empire. 6 → SE-Asian maritime empires. 7 → Japan & Korea. 8 → The Great Divergence.**
 
 - **Start with Ancient India and China** because they are the best-sourced, they deepen the
@@ -1130,7 +1130,7 @@ scholarship is better than both.
   reality numbers).
 - **Islamic Golden Age third**, because it is the transmission hub the two connective-tissue
   courses need in place.
-- **Silk Roads and Mongols in the middle** — they connect nodes, so the nodes should exist first;
+- **Silk Roads and Mongols in the middle**, they connect nodes, so the nodes should exist first;
   each also leans on the other (the Pax runs on the roads; the roads' unification is Mongol).
 - **SE Asia sixth** rather than earlier only because its sourcing is the most specialist; its
   content is the track's most distinctive and it must not be cut.
@@ -1139,7 +1139,7 @@ scholarship is better than both.
 - **The Great Divergence last, always.** It is the anchor's Section 7 grown into a full course,
   and it only works after the student has seen the economies it argues about.
 
-**Learner sequencing** differs from build order: anchor first, then any of 1–7 in any order, then
+**Learner sequencing** differs from build order: anchor first, then any of 1-7 in any order, then
 **The Great Divergence last**, because "how do we even know who was richer?" is the right final
 question before a student re-reads every confident claim they have ever heard about why the
 modern world looks the way it does.
@@ -1149,15 +1149,15 @@ modern world looks the way it does.
 ## What BAM would need to build these responsibly
 
 1. **A standing editorial rule for politically live historiography** (Indus/Aryan questions in
-   Indian politics; Japan–Korea colonial disputes; modern nationalist claims on SE-Asian empires):
+   Indian politics; Japan-Korea colonial disputes; modern nationalist claims on SE-Asian empires):
    *teach the evidence, name the dispute, date every claim, adjudicate nothing.* The anchor and
-   the Afrocentricity course already model this — a proven pattern in this repo.
+   the Afrocentricity course already model this, a proven pattern in this repo.
 2. **Translation-dependence awareness**: the primary sources for Mongols (Persian, Chinese),
    SE Asia (Old Malay, Khmer, Chinese), and Korea/Japan are used in scholarly translation; cite
    the translation used, as the anchor does (Harris's Zhou Daguan, de Rachewiltz's Secret
    History).
-3. **No reviewer requirements** for Waves 1–2 (unlike the workers-rights track's South Africa
-   course) — the contested material here is historiographical, not living-community-sensitive.
+3. **No reviewer requirements** for Waves 1-2 (unlike the workers-rights track's South Africa
+   course), the contested material here is historiographical, not living-community-sensitive.
    Japan & Korea (Wave 3) would benefit from a sensitivity read on the Imjin/1910 lessons.
 4. **Nothing else.** Every course above is buildable from published scholarship already cited in
    the anchor's bibliographies. That is the argument for this track: the anchor did the source
@@ -1169,7 +1169,7 @@ modern world looks the way it does.
 
 - Anchor course: \`scripts/data/asia-before-european-colonization-course.ts\` (branch
   \`content/precolonial-asia\`, slug \`asia-before-european-colonization\`, Culture & History).
-- Sibling track: \`africa-precolonial-track-proposal.md\` (anchor shipped) — same method, and the
+- Sibling track: \`africa-precolonial-track-proposal.md\` (anchor shipped), same method, and the
   two anchors should cross-reference each other's "two traps" / "no utopia" lessons.
 - Seed task: \`plans/user-tasks/110-seed-precolonial-asia.md\`.
 - Category: **Culture & History**. If the track grows past ~4 courses, consider a "World Before
@@ -1179,16 +1179,16 @@ modern world looks the way it does.
   },
   {
     key: "precolumbian-mesoamerica-track-proposal",
-    title: "Pre-Columbian Mesoamerica — course track proposal",
+    title: "Pre-Columbian Mesoamerica, course track proposal",
     summary: "A proposed Pre-Columbian Mesoamerica track: one built anchor course plus seven follow-on",
-    body: `# Pre-Columbian Mesoamerica — course track proposal
+    body: `# Pre-Columbian Mesoamerica, course track proposal
 
 A proposed **Pre-Columbian Mesoamerica** track: one built anchor course plus seven follow-on
 courses that go deep where the anchor goes wide. The anchor surveys the whole region and installs
 the method; each follow-on earns its slot only if it teaches something no other course in the
 track can.
 
-**Nothing below is built except the anchor.** These are proposals — pick which to author, and in
+**Nothing below is built except the anchor.** These are proposals, pick which to author, and in
 what order.
 
 ---
@@ -1196,26 +1196,26 @@ what order.
 ## The anchor (built, \`content/precolumbian-mesoamerica\`)
 
 **Pre-Columbian Mesoamerica: Cities, Calendars, and the People Who Are Still Here** (Culture &
-History) — 7 sections, 17 teaching lessons, 7 quizzes (15-question banks; 105 questions), 1
+History), 7 sections, 17 teaching lessons, 7 quizzes (15-question banks; 105 questions), 1
 exercise. Olmec (mother-vs-sister as a live debate) → Aguada Fénix → Teotihuacan (the humility
 lesson: builders/language unknown) → the Maya (script, zero, Long Count; 2012 = Tortuguero
 Monument 6, a period ending, not a prophecy; the Classic collapse specific AND debated; they did
-not vanish) → the Mexica (Tenochtitlan, Triple Alliance, chinampas; sacrifice honest — the Huei
+not vanish) → the Mexica (Tenochtitlan, Triple Alliance, chinampas; sacrifice honest, the Huei
 Tzompantli real, the 80,400 refused) → Oaxaca/Purépecha + Central America beyond Mexico → the
 conquest per Restall + the demographic catastrophe as a range → "how we know" (Landa's 1562
 burning + ~4 codices, Knorozov→Coe decipherment, PACUNAM LiDAR) → "They are still here."
 
-**The anchor's real payload is a reusable audit — five moves the whole track should reuse:**
+**The anchor's real payload is a reusable audit, five moves the whole track should reuse:**
 
 1. **Name the people, place, and period** (never "ancient Mexico did X").
 2. **Ranges, not false precision** (population, sacrifice counts, dates).
 3. **Contested = say so, with a name on each side** (mother culture, collapse causes, Quetzalcoatl).
-4. **Ask what evidence class a claim stands on** — their texts / hostile witnesses / excavation /
-   instruments — and what would change it.
+4. **Ask what evidence class a claim stands on**, their texts / hostile witnesses / excavation /
+   instruments, and what would change it.
 5. **Present tense matters**: descendants are alive; "vanished" is a harm, not a flourish.
 
 A student who has done the anchor plus any two follow-ons should be able to hear a claim about any
-ancient civilization — Mesoamerican or not — and run the audit unprompted.
+ancient civilization, Mesoamerican or not, and run the audit unprompted.
 
 ---
 
@@ -1232,12 +1232,12 @@ test is depth the anchor had to compress:
 | Formative Mesoamerica before and beside the Olmec | **The Olmec & early Mesoamerica** |
 | The intellectual systems as systems, not highlights | **Writing, calendars & astronomy** |
 | The conquest as a full course with the sources read closely | **The Conquest & its myths** |
-| The living peoples — the anchor's final lesson, expanded to a course | **Indigenous Central America today** |
+| The living peoples, the anchor's final lesson, expanded to a course | **Indigenous Central America today** |
 
 Two deliberate omissions, so the reasoning is on the record:
 
 - **The Inca / South America.** Constantly requested alongside Mesoamerica, but it is a different
-  culture area with different sources (khipu, no deciphered script, Spanish chronicles) — it
+  culture area with different sources (khipu, no deciphered script, Spanish chronicles), it
   deserves its own track, not a bolt-on course that would blur exactly the culture-area concept the
   anchor teaches.
 - **A "Mesoamerican mythology" course.** The gods sell, but decontextualized mythology is the
@@ -1247,17 +1247,17 @@ Two deliberate omissions, so the reasoning is on the record:
 
 ---
 
-## Wave 1 — build first (highest teaching value per unit of sourcing pain)
+## Wave 1, build first (highest teaching value per unit of sourcing pain)
 
-### 1. The Maya: Three Thousand Years — *the deep course*
+### 1. The Maya: Three Thousand Years, *the deep course*
 **Teaches uniquely:** the full arc the anchor compressed: Preclassic origins (Aguada Fénix, El
 Mirador) → Classic city-states with the Tikal/Calakmul geopolitics told campaign by campaign from
 the inscriptions → Terminal Classic transformations → Postclassic Chichén Itzá/Mayapán → the
 colonial centuries (Landa, the Caste War) → the 20th-century genocide and today's language
 movement. The only course where students read translated primary Maya texts at length (stelae,
 the Popol Vuh, the Books of Chilam Balam).
-**Why it earns a slot:** the Maya are the best-documented Indigenous civilization in the hemisphere
-— the one place the track can do *history from Indigenous written sources*, which is the skill
+**Why it earns a slot:** the Maya are the best-documented Indigenous civilization in the hemisphere,
+the one place the track can do *history from Indigenous written sources*, which is the skill
 nothing else teaches.
 **Hard parts:** scope discipline (this could swallow the track); the temptation to teach only the
 Classic. Sourcing is excellent: Martin & Grube, Coe & Houston, Christenson's *Popol Vuh*, Restall's
@@ -1268,10 +1268,10 @@ Classic. Sourcing is excellent: Martin & Grube, Coe & Houston, Christenson's *Po
 1521 told primarily from Nahua sources (Codex Mendoza, Florentine Codex, the annals tradition,
 Nahuatl poetry); the economy (markets, pochteca, tribute, chinampas); law, education, gender, and
 slavery in Mexica society; religion including sacrifice with the anchor's honesty at full depth;
-and the historiography problem — almost everything we "know" passed through colonial filters, so
+and the historiography problem, almost everything we "know" passed through colonial filters, so
 the course doubles as a lab in reading filtered sources.
 **Why it earns a slot:** the anchor gave the Mexica three lessons; the sources could sustain thirty.
-This is also where Townsend's *Fifth Sun* approach — Aztec history from Nahuatl annals — can be
+This is also where Townsend's *Fifth Sun* approach, Aztec history from Nahuatl annals, can be
 taught as a method.
 **Hard parts:** the sacrifice material must keep the anchor's calibration (real, audited, neither
 lurid nor laundered). Sourcing is superb and mostly in English translation: Smith, Berdan,
@@ -1281,10 +1281,10 @@ Townsend, León-Portilla, Sahagún (Anderson & Dibble), Durán.
 **Teaches uniquely:** the anchor's Section 6 as a full source-critical course: Cortés's letters,
 Díaz, and the Nahua accounts (Lockhart's *We People Here*, the Florentine Codex Book 12, the
 Lienzo de Tlaxcala) read **against each other**, myth by myth through Restall; then the forgotten
-sequels — the Purépecha submission and Tarascan colonial deal, Alvarado in Guatemala, the Mixtón
+sequels, the Purépecha submission and Tarascan colonial deal, Alvarado in Guatemala, the Mixtón
 war, northern resistance, and Nojpetén 1697. Ends with the demographic-catastrophe debate taught
 as a numbers-literacy unit (Cook & Borah vs. Henige, *Numbers from Nowhere*).
-**Why it earns a slot:** it is the track's methods-capstone — the one course whose whole subject is
+**Why it earns a slot:** it is the track's methods-capstone, the one course whose whole subject is
 "how do you know what happened when every source is motivated?" That skill transfers to reading
 the news.
 **Hard parts:** none severe; the literature is rich and the debates are mapped. Keep the
@@ -1292,18 +1292,18 @@ Quetzalcoatl-myth treatment labeled contested, as the anchor does.
 
 ---
 
-## Wave 2 — build second (widens the track; needs more care)
+## Wave 2, build second (widens the track; needs more care)
 
 ### 4. Teotihuacan & the Classic Cities of Central Mexico
-**Teaches uniquely:** urbanism as a subject — what a city *is*, taught from the hemisphere's most
+**Teaches uniquely:** urbanism as a subject, what a city *is*, taught from the hemisphere's most
 startling one: Millon's mapping project, apartment-compound life, the multiethnic barrios, the
 obsidian economy, the state-without-portraits governance debate (kings vs. collective rule), the
 378 entrada and Teotihuacan's Maya shadow, the fall, and the afterlife of the ruins (Aztec
 pilgrimage → Porfirian excavation → the 1960s reconstruction the modern visitor actually sees,
-taught honestly as reconstruction). Extends to Cholula, Cacaxtla, Xochicalco, and Tula — and the
+taught honestly as reconstruction). Extends to Cholula, Cacaxtla, Xochicalco, and Tula, and the
 "Toltec problem" (history vs. Aztec political mythology) as a named debate.
 **Why it earns a slot:** the anchor's humility lesson at course length: an entire course where the
-honest answer to central questions is "unknown, and here is how we'd find out" — the best
+honest answer to central questions is "unknown, and here is how we'd find out", the best
 epistemology training in the track.
 **Hard parts:** the unknowns must stay load-bearing, not padding; the Toltec historiography is
 genuinely confusing and needs careful staging. Sourcing: Cowgill, Manzanilla, Sugiyama, Nichols;
@@ -1311,25 +1311,25 @@ all major claims have recent syntheses.
 
 ### 5. Writing, Calendars & Astronomy: Mesoamerican Science
 **Teaches uniquely:** the intellectual systems as systems: how the script actually works (students
-learn to sound out real glyphs — the track's only hands-on decipherment unit), bar-and-dot
+learn to sound out real glyphs, the track's only hands-on decipherment unit), bar-and-dot
 arithmetic and the zero, the tzolk'in/haab/Long Count machinery (students compute a Long Count
 date), the Dresden Venus table as applied mathematics, Mixtec and Aztec pictorial systems as a
 *different solution* to recording, and the decipherment story at full length (Knorozov,
-Proskouriakoff, Schele, Stuart — with Thompson as the authority-vs-evidence case study).
+Proskouriakoff, Schele, Stuart, with Thompson as the authority-vs-evidence case study).
 **Why it earns a slot:** it converts the anchor's most-cited wonders from trivia into working
-knowledge, and it is the track's STEM crossover — usable in a math or astronomy classroom.
+knowledge, and it is the track's STEM crossover, usable in a math or astronomy classroom.
 **Hard parts:** difficulty calibration (real glyph exercises need careful scaffolding); the
 correlation-constant debate should be taught, not hidden. Sourcing: Coe & Van Stone (*Reading the
 Maya Glyphs*), Aveni, Stuart, Boone (*Stories in Red and Black*).
 
 ### 6. The Olmec & Early Mesoamerica: Before the Famous Names
-**Teaches uniquely:** how civilizations *start* — the Archaic-to-Formative transition: maize
+**Teaches uniquely:** how civilizations *start*, the Archaic-to-Formative transition: maize
 domestication as a millennia-long Indigenous science project, village-to-city dynamics, San
 Lorenzo and La Venta in depth, the mother/sister debate with the actual evidence (sourcing
 studies, iconography) laid out for students to weigh, Aguada Fénix and the collective-labor
 argument, early Oaxaca (San José Mogote → Monte Albán's founding), and the "firsts race"
 (writing, calendar, kingship) as a case study in how new instruments keep moving the answers.
-**Why it earns a slot:** it is the track's origins course and its best "science in motion" course —
+**Why it earns a slot:** it is the track's origins course and its best "science in motion" course,
 the one where students watch a debate move in real time (the 2020-2021 LiDAR papers postdate most
 textbooks).
 **Hard parts:** the evidence is more technical (radiocarbon, sourcing chemistry) and the narrative
@@ -1338,7 +1338,7 @@ Marcus, the Inomata papers.
 
 ---
 
-## Wave 3 — build with a reviewer (present-tense stakes)
+## Wave 3, build with a reviewer (present-tense stakes)
 
 ### 7. Indigenous Central America Today
 **Teaches uniquely:** the anchor's closing lesson as a full course, and the only course in the
@@ -1349,13 +1349,13 @@ comarca systems of Panama (Guna Yala's 1925 revolution and its self-government),
 Miskito, and Lenca presents, land and water defense (Berta Cáceres; the documented risks to
 defenders), language revitalization and Indigenous media, and repatriation/heritage politics (who
 owns the codices? the museum question).
-**Why it earns a slot:** without it the track performs the exact erasure the anchor names — teaching
+**Why it earns a slot:** without it the track performs the exact erasure the anchor names, teaching
 seven courses of past tense and calling it respect. It is also the course most likely to matter to
 a learner's civic life (heritage law, Indigenous rights, development conflicts are live issues).
-**Hard parts — and this is Wave 3 on purpose:** the subject is living politics. The CEH/genocide
+**Hard parts, and this is Wave 3 on purpose:** the subject is living politics. The CEH/genocide
 material, Zapatismo, and defender killings must be taught dated, attributed, and adjudicating
 nothing beyond what commissions and courts found. **Recommendation: build it with a reviewer from
-or close to the communities covered** — the same posture the repo takes on the Hoodoo courses —
+or close to the communities covered**, the same posture the repo takes on the Hoodoo courses,
 and privilege Indigenous-authored sources (community media, the language academies' own
 publications, Menchú and her critics both on the record).
 
@@ -1369,11 +1369,11 @@ Central America today.**
 
 - **Maya and Mexica first**: they carry the most learner demand, the best sources, and each deepens
   the anchor's two biggest sections. Either can ship independently.
-- **The Conquest third**, once both protagonist courses exist — it reads their sources against each
+- **The Conquest third**, once both protagonist courses exist, it reads their sources against each
   other, so it lands hardest with them in place.
 - **Teotihuacan and Writing/Calendars** in the middle: methods courses that reward students who
   already have the survey; the glyph course can also be marketed standalone to math/astro teachers.
-- **Olmec sixth**: richest in method, thinnest in narrative — better once learners are invested.
+- **Olmec sixth**: richest in method, thinnest in narrative, better once learners are invested.
 - **Indigenous Central America last not because it matters least but because it must be built
   right**: with a reviewer, with Indigenous-authored sources, once the track's editorial pattern is
   proven. If a reviewer materializes earlier, move it earlier.
@@ -1386,9 +1386,9 @@ tense, exactly as the anchor does.
 
 ## What BAM would need to build these responsibly
 
-1. **Nothing external for Waves 1-2** — the sources are published, mostly in English translation,
+1. **Nothing external for Waves 1-2**, the sources are published, mostly in English translation,
    and the debates are mapped. Authoring time only.
-2. **A reviewer for course 7** (Indigenous Central America today) — community-connected, per the
+2. **A reviewer for course 7** (Indigenous Central America today), community-connected, per the
    Hoodoo precedent.
 3. **Visual assets** matter more here than in most tracks (maps, site plans, glyph charts). Public-
    domain and Creative Commons material exists (INAH, museum open-access programs, FAMSI/Mesoweb
@@ -1404,7 +1404,7 @@ tense, exactly as the anchor does.
 - Anchor course: \`scripts/data/precolumbian-mesoamerica-course.ts\` (branch
   \`content/precolumbian-mesoamerica\`; seed task \`plans/user-tasks/109-seed-precolumbian-mesoamerica.md\`).
 - Method siblings: \`africa-before-colonization\` (the documented-record pattern this anchor
-  follows), \`afrocentricity\` (evaluating contested paradigms — the mother-culture and Kemet
+  follows), \`afrocentricity\` (evaluating contested paradigms, the mother-culture and Kemet
   debates rhyme), \`great-migration\` (Culture & History mapping conventions).
 - Category: **Culture & History** (the anchor ships there). If the track grows past ~4 courses,
   consider a learning path ("The Americas Before 1492") pairing it with any future Andes/North
@@ -1424,9 +1424,9 @@ tense, exactly as the anchor does.
   },
   {
     key: "teachers-pay-teachers-proposal",
-    title: "Teachers Pay Teachers strategy — proposal",
+    title: "Teachers Pay Teachers strategy, proposal",
     summary: "Status: proposal for BAM review · 2026-07-17",
-    body: `# Teachers Pay Teachers strategy — proposal
+    body: `# Teachers Pay Teachers strategy, proposal
 
 **Status:** proposal for BAM review · 2026-07-17
 **Source note:** \`plans/future-courses/teacher-pay-teachers.md\` (BAM: "put some of the courses on
@@ -1447,26 +1447,26 @@ are available", surfaced via web search 2026-07-17):
 | Payout | 55% of list price | 80% of list price |
 | Per-resource fee | $0.30 per resource sold | $0 on items ≥ $3; $0.15 on items under $3 |
 
-Premium pays for itself at roughly 25 sales of a $3 item. **Recommendation: start Premium** — the
+Premium pays for itself at roughly 25 sales of a $3 item. **Recommendation: start Premium**, the
 55% Basic rate makes every price band below unattractive, and the under-$3 fee is why the paid lead
 magnet below is priced at exactly $3, not $2.
 
 **Two structural rules that shape the plan:**
 - **A new seller's first posted resource must be free.** That's not a growth hack, it's a platform
-  requirement — so the free lead magnet is product #1 by necessity as well as strategy.
+  requirement, so the free lead magnet is product #1 by necessity as well as strategy.
 - **TpT sets a minimum price for paid items** (shown on the upload page; confirm at upload).
 
-**What sells:** self-contained, printable/PDF classroom material — full units, worksheet packs with
+**What sells:** self-contained, printable/PDF classroom material, full units, worksheet packs with
 answer keys, sub plans, test prep, bell ringers, primary-source analysis sets. Teachers search by
 **grade band + subject + specific topic** ("Great Migration unit 8th grade", "Constitution
-worksheets high school", "Indiana government") and, for the serious buyers, **by standard code** —
+worksheets high school", "Indiana government") and, for the serious buyers, **by standard code**,
 which is exactly the search our \`/academic-standards\` work was built to win.
 
 **Who buys:** classroom teachers spending their own money or small school allotments,
-homeschool parents (a large and underserved TpT segment — our catalog's actual design center), and
+homeschool parents (a large and underserved TpT segment, our catalog's actual design center), and
 CTE/elective teachers hunting niche content (drone/aviation, media literacy, financial literacy).
 
-## 2. The linking policy — what is actually allowed (verified, with provenance)
+## 2. The linking policy, what is actually allowed (verified, with provenance)
 
 This is the load-bearing compliance question, verified against TpT's own help-center text.
 help.teacherspayteachers.com 403s our tooling, so the articles were retrieved via the Wayback
@@ -1487,7 +1487,7 @@ Machine (same method the standards work uses for in.gov/azed.gov), fetched 2026-
   2024-02-28): *"Subscriptions to external websites are not permitted."*
 - **"Can I offer resources that are hosted on a third party site?"** (article 360042199032;
   snapshot 2024-02-22): third-party hosting is allowed for >4GB files, streaming, and online
-  courses, but buyers may not be required to create an account on the third-party system — and:
+  courses, but buyers may not be required to create an account on the third-party system, and:
   *"You can include your TPT store and credits/copyright information in the file as well."*
 - **"Is it ok to include hyperlinks or QR codes to other websites in my resources?"** (article
   360043004671, surfaced via web search 2026-07-17): hyperlinks/QR codes **to content that
@@ -1503,7 +1503,7 @@ Machine (same method the standards work uses for in.gov/azed.gov), fetched 2026-
 | --- | --- |
 | Credits/copyright/attribution page inside the PDF naming Learn.WitUS.Online as the source curriculum | "Buy the full course at learn.witus.online" anywhere on TpT |
 | APA 7 citations and a \`## Sources\` bibliography (some references naturally live at learn.witus.online) | Hyperlinks to any page whose job is to sell (course sales pages, pricing pages) |
-| Links to **free supplemental content** that genuinely supports the printed lesson (the free \`/academic-standards\` finder, the free Great Migration interactive map) — provided those pages are verifiably accessible without login | Requiring a Learn.WitUS account to use any part of the packet |
+| Links to **free supplemental content** that genuinely supports the printed lesson (the free \`/academic-standards\` finder, the free Great Migration interactive map), provided those pages are verifiably accessible without login | Requiring a Learn.WitUS account to use any part of the packet |
 | Brand identity: store name, logo, "From the Learn.WitUS.Online cited-curriculum catalog" tagline on covers and in descriptions | Selling Learn.WitUS subscriptions or course access through TpT listings |
 | Same-or-higher pricing elsewhere for the same PDF | Selling the identical packet cheaper on learn.witus.online |
 
@@ -1511,8 +1511,8 @@ Machine (same method the standards work uses for in.gov/azed.gov), fetched 2026-
 the name on its cover. The packets are engineered for exactly that: the differentiators (verified
 standards with exact codes, every claim cited, no AI tells, answer keys that explain) are visible
 on every page, and the attribution page says *who we are* without saying *go buy*. Free
-supplemental links (standards finder, interactive map) land the teacher on Learn.WitUS legitimately
-— as supplements to what they already bought, which is precisely what TpT's hyperlink guidance
+supplemental links (standards finder, interactive map) land the teacher on Learn.WitUS legitimately,
+as supplements to what they already bought, which is precisely what TpT's hyperlink guidance
 permits.
 
 **One deliberate safety margin:** the packets sold on TpT are **print adaptations**, not the
@@ -1523,38 +1523,38 @@ visit: the thing on the website is not the thing they already own, it's the livi
 
 ## 3. Proposed product list
 
-### Tier A — lead magnets (free or $3)
+### Tier A, lead magnets (free or $3)
 
-**A1 · Wish · Outcome · Obstacle · Plan — research-based goal-setting (FREE)** — *packet built*
+**A1 · Wish · Outcome · Obstacle · Plan, research-based goal-setting (FREE)**, *packet built*
 - **Why it sells:** goal-setting/SEL printables are evergreen TpT staples (advisory, New Year,
   September). Ours is the only one whose every claim carries a DOI, and whose honest hook
-  ("visualizing success makes you less likely to get it — here's the trial evidence") is a
+  ("visualizing success makes you less likely to get it, here's the trial evidence") is a
   pattern-interrupt in a category full of vision-board fluff. First-resource-must-be-free rule
   makes this product #1 regardless.
 - **Search terms:** goal setting worksheet, SEL high school, executive function, if-then planning,
   new year goals, advisory activities, research-based goal setting, growth mindset alternative.
-- **Grade band:** 8–12 + adult ed. **Price:** FREE.
+- **Grade band:** 8-12 + adult ed. **Price:** FREE.
 - **Standards:** Indiana Health & Wellness HS.6.2 and HS.6.3 (both **full**, verified). Only IN is
   live-verified for this course; say nothing beyond that.
 - **Funnels toward:** the WOOP course, Learning How to Learn, the Study Skills category; shows off
   the citation discipline to the broadest possible teacher audience.
 
-**A2 · US Constitution mini-unit ($3)** — *packet built*
-- **Why it sells:** Constitution Day (Sept 17) is a compliance event — federally funded schools
+**A2 · US Constitution mini-unit ($3)**, *packet built*
+- **Why it sells:** Constitution Day (Sept 17) is a compliance event, federally funded schools
   must program on the Constitution that week, and teachers buy ready-made mini-units for it every
   August/September. Ours quotes the document verbatim, cites the National Archives transcript, and
   ships a 10-question quiz keyed to lessons.
 - **Search terms:** Constitution Day activity, US Constitution unit, Bill of Rights worksheet,
   three branches of government, checks and balances, civics test prep, government sub plan.
-- **Grade band:** 8–12 (readable at 7). **Price:** $3 (at the no-fee threshold).
-- **Standards:** IN USG.1.3 (full), USG.2.1/2.3/3.2/3.6 (partial — the packet says exactly which
+- **Grade band:** 8-12 (readable at 7). **Price:** $3 (at the no-fee threshold).
+- **Standards:** IN USG.1.3 (full), USG.2.1/2.3/3.2/3.6 (partial, the packet says exactly which
   halves). Only IN live-verified.
-- **Funnels toward:** the whole Civics catalog — 12+ general civics courses and the 50-state
+- **Funnels toward:** the whole Civics catalog, 12+ general civics courses and the 50-state
   series. The natural next purchase is the buyer's own state's civics unit.
 
-### Tier B — catalog products ($5–10 each)
+### Tier B, catalog products ($5-10 each)
 
-**B1 · The 50-state civics series as 50 individual listings ($6–8 each)** — *Indiana packet built
+**B1 · The 50-state civics series as 50 individual listings ($6-8 each)**, *Indiana packet built
 as the template*
 - **Why it sells:** this is the strategic centerpiece. "State government unit" is a required topic
   in nearly every state's middle/high-school civics sequence, and TpT search is starved for
@@ -1564,18 +1564,18 @@ as the template*
 - **Search terms (per state):** "<state> government unit", "<state> civics", "<state> constitution
   worksheet", "<state> studies", plus state-specific hooks (Indiana: Crawford v. Marion County,
   township government).
-- **Grade band:** 6–12. **Price:** $6–8.
-- **Standards — the honest line:** ONLY Indiana's listing may cite standards today (live in
+- **Grade band:** 6-12. **Price:** $6-8.
+- **Standards, the honest line:** ONLY Indiana's listing may cite standards today (live in
   \`src/lib/standards/data/in.ts\`). Arizona and Arkansas are mapped on the un-merged
-  \`feat/standards-az-ar\` branch (user-task 115) — their listings can cite codes **after BAM merges
+  \`feat/standards-az-ar\` branch (user-task 115), their listings can cite codes **after BAM merges
   it**. The other 47 states' listings ship with NO standards claims and a truthful line: "Standards
-  alignment for <state> is in progress — see our verified-alignment methodology." Never imply more.
+  alignment for <state> is in progress, see our verified-alignment methodology." Never imply more.
 - **Funnels toward:** neighboring-state units, the general civics courses, and the live \`/academic-standards\`
   finder (free, supplemental, compliant to link).
 - **Effort note:** with the Indiana packet as template, each additional state is a content-swap, not
-  a redesign — realistic at ~2–3 hours per state from the existing course files.
+  a redesign, realistic at ~2-3 hours per state from the existing course files.
 
-**B2 · The Great Migration unit ($8–10)** — *packet built*
+**B2 · The Great Migration unit ($8-10)**, *packet built*
 - **Why it sells:** Black History Month (February) is TpT's single biggest social-studies buying
   season, and most Great Migration material there is thin (a reading + questions). Ours is a
   12-lesson unit with primary-source pointers to real archives (Schomburg, National Archives,
@@ -1584,74 +1584,74 @@ as the template*
   February discovery.
 - **Search terms:** Great Migration unit, Black History Month high school, Harlem Renaissance,
   Jim Crow lesson, primary source analysis, redlining lesson, African American history.
-- **Grade band:** 6–12 + homeschool. **Price:** $8–10.
-- **Standards:** IN USH.2.5, 3.4, 3.6, 7.1, 10.2 (all **partial** — the packet quotes each
+- **Grade band:** 6-12 + homeschool. **Price:** $8-10.
+- **Standards:** IN USH.2.5, 3.4, 3.6, 7.1, 10.2 (all **partial**, the packet quotes each
   coverage note verbatim; the honesty is the differentiator). Arkansas's African-American History
-  course standards are mapped on the pending AZ/AR branch — add after merge.
+  course standards are mapped on the pending AZ/AR branch, add after merge.
 - **Funnels toward:** the free interactive migration map on Learn.WitUS (compliant supplemental
   link), Africa Before Colonization, History of Unions, the Civics catalog.
 
-**B3 · History of Unions — labor-history primary-source unit ($8–12)**
+**B3 · History of Unions, labor-history primary-source unit ($8-12)**
 - **Why it sells:** labor history is chronically under-served on TpT; the course's honest angles
   (Haymarket taught as an unresolved dispute, the Wagner Act's deliberate exclusions, unions' own
   colour bar, Randolph→Memphis) give an AP US History / US History teacher exactly the
   document-based nuance the exam rewards.
 - **Search terms:** labor history unit, Gilded Age labor movement, Haymarket, Triangle fire,
   Wagner Act, APUSH period 6, labor unions lesson.
-- **Grade band:** 9–12. **Price:** $8–12 (29 lessons; could split into two volumes).
+- **Grade band:** 9-12. **Price:** $8-12 (29 lessons; could split into two volumes).
 - **Standards:** IN USH.2.4, 3.4, 4.7, 9.1 + WH.6.6/6.10 (all partial, notes quoted).
 - **Funnels toward:** Know Your Rights at Work, the six country labor courses, Great Migration.
 
-**B4 · "Reading a source against the record": the PGA's Caucasian-only clause ($3–4)**
+**B4 · "Reading a source against the record": the PGA's Caucasian-only clause ($3-4)**
 - **Why it sells:** a self-contained one-lesson primary-source-audit exercise from the Golf
-  course — students read the actual January 1962 *Golfdom* trade-magazine report of the repeal
+  course, students read the actual January 1962 *Golfdom* trade-magazine report of the repeal
   (free scan, MSU Turfgrass Information Center) and discover the industry's own account names none
   of the men who forced the change (Sifford, Spiller, Rhodes, Mosk). Media literacy + Black history
   + sports hook in one printable period. Cheap, sharp, extremely shareable.
 - **Search terms:** primary source analysis, media literacy history, sports history, Black History
   Month activity, historiography lesson, critical thinking history.
-- **Grade band:** 8–12. **Price:** $3–4.
+- **Grade band:** 8-12. **Price:** $3-4.
 - **Funnels toward:** Golf course, media-literacy courses, Great Migration.
 
-**B5 · FAA Part 107 ground-school study packs ($5–8)**
+**B5 · FAA Part 107 ground-school study packs ($5-8)**
 - **Why it sells:** drone/aviation CTE programs are growing fast and TpT's Part 107 shelf is
   nearly empty; the repo already carries a large Part 107 quiz bank (\`faa-part-107-quizzes.ts\`) to
   adapt into printable practice tests with explained answer keys. CTE teachers buy per-program, not
-  per-classroom — less price sensitivity.
+  per-classroom, less price sensitivity.
 - **Search terms:** drone curriculum, FAA Part 107 test prep, UAS ground school, aviation CTE,
   remote pilot practice test.
-- **Grade band:** 9–12 CTE + adult. **Price:** $5–8 per pack (regulations / weather / airspace /
-  operations packs). **Standards:** none claimed (FAA ACS-referenced instead — that's the aligned
+- **Grade band:** 9-12 CTE + adult. **Price:** $5-8 per pack (regulations / weather / airspace /
+  operations packs). **Standards:** none claimed (FAA ACS-referenced instead, that's the aligned
   authority for this content).
-- **Funnels toward:** the FAA Part 107 course with its rotating quiz banks — the strongest "the
+- **Funnels toward:** the FAA Part 107 course with its rotating quiz banks, the strongest "the
   online version does something paper can't" pitch in the catalog.
 
-**B6 · Media-literacy pair: Spotting Misleading Marketing / Detecting AI ($5–7 each)**
-- **Why it sells:** AI-detection and media-literacy lessons are among 2025–26's fastest-growing
+**B6 · Media-literacy pair: Spotting Misleading Marketing / Detecting AI ($5-7 each)**
+- **Why it sells:** AI-detection and media-literacy lessons are among 2025-26's fastest-growing
   TpT searches; ours are cited to C2PA/NIST/FTC rather than vibes, and IN ELA 9-10.CC.8 /
   11-12.CC.8 are **full-coverage** verified claims.
-- **Grade band:** 9–12. **Price:** $5–7. **Funnels toward:** the AI Literacy ladder.
+- **Grade band:** 9-12. **Price:** $5-7. **Funnels toward:** the AI Literacy ladder.
 
-### Tier C — premium bundles ($15–35)
+### Tier C, premium bundles ($15-35)
 
-Standard TpT practice: bundle at ~25–30% off the sum of parts, list only after the parts exist.
-- **C1 · Civics Complete** — Constitution mini-unit + a state unit + Voting & Elections + How a
-  Bill Becomes Law ($15–20).
-- **C2 · Black History Month mega-bundle** — Great Migration + Golfdom lesson + (later) Africa
-  Before Colonization adaptation ($18–25).
-- **C3 · Labor History bundle** — History of Unions volumes + Know Your Rights at Work ($20–25).
-- **C4 · Study Skills starter** — Learning How to Learn adaptation + the free WOOP printable's
-  paid big-sibling (full 24-lesson adaptation) ($12–15).
+Standard TpT practice: bundle at ~25-30% off the sum of parts, list only after the parts exist.
+- **C1 · Civics Complete**, Constitution mini-unit + a state unit + Voting & Elections + How a
+  Bill Becomes Law ($15-20).
+- **C2 · Black History Month mega-bundle**, Great Migration + Golfdom lesson + (later) Africa
+  Before Colonization adaptation ($18-25).
+- **C3 · Labor History bundle**, History of Unions volumes + Know Your Rights at Work ($20-25).
+- **C4 · Study Skills starter**, Learning How to Learn adaptation + the free WOOP printable's
+  paid big-sibling (full 24-lesson adaptation) ($12-15).
 
 ## 4. The honest constraints
 
 1. **Standards claims: 2 states live, 2 pending, 47 absent.** Indiana (\`in.ts\`) and D.C. (\`dc.ts\`,
-   Commodity-Map-only — irrelevant to these packets) are in main. Arizona + Arkansas are complete
+   Commodity-Map-only, irrelevant to these packets) are in main. Arizona + Arkansas are complete
    but sit on un-merged \`feat/standards-az-ar\` (user-task 115). Every packet's standards page names
    Indiana only, links the free \`/academic-standards\` finder for currency, and says the coverage grade
-   (full/partial) out loud — including the partial-coverage notes verbatim. **No packet may imply
-   alignment beyond the mapped states.** (D.C.'s civics/history mapping hasn't been done at all —
-   \`dc.ts\` says so — so D.C. is not cited in these packets either.)
+   (full/partial) out loud, including the partial-coverage notes verbatim. **No packet may imply
+   alignment beyond the mapped states.** (D.C.'s civics/history mapping hasn't been done at all,
+   \`dc.ts\` says so, so D.C. is not cited in these packets either.)
 2. **TpT license vs. ownership.** BAM keeps copyright; TpT takes a non-exclusive license to host
    and sell. Buyers get a single-classroom license (TpT's standard); the packets' attribution page
    states the license plainly. Because the packets are derivative print adaptations, the courses
@@ -1662,9 +1662,9 @@ Standard TpT practice: bundle at ~25–30% off the sum of parts, list only after
 4. **Link liveness is a seller obligation.** Any URL inside a PDF (archives, .gov sources, the
    /academic-standards finder, the migration map) must stay live or TpT can refund + deactivate the product.
    The supplemental Learn.WitUS links must be verified publicly accessible **without login** before
-   upload — flagged in task 122.
-5. **Effort per packet:** the four built packets averaged 7–9 markdown files each; converting to
-   branded PDF (fonts, cover art, TpT preview images) is BAM-side work, est. 2–4 hours per packet
+   upload, flagged in task 122.
+5. **Effort per packet:** the four built packets averaged 7-9 markdown files each; converting to
+   branded PDF (fonts, cover art, TpT preview images) is BAM-side work, est. 2-4 hours per packet
    the first time, less once a template exists.
 6. **Needs BAM (task 122):** seller account + $59.95 Premium, storefront branding (name, banner,
    logo, bio), final pricing sign-off, PDF conversion/branding, public-accessibility check on the
@@ -1672,16 +1672,16 @@ Standard TpT practice: bundle at ~25–30% off the sum of parts, list only after
 
 ## 5. Recommended launch order (first 5)
 
-1. **WOOP goal-setting printable (FREE)** — required first-free-product; broadest audience;
+1. **WOOP goal-setting printable (FREE)**, required first-free-product; broadest audience;
    plants the "every claim has a DOI" brand flag; September advisory season.
-2. **US Constitution mini-unit ($3)** — Constitution Day (Sept 17) buying wave starts in August;
+2. **US Constitution mini-unit ($3)**, Constitution Day (Sept 17) buying wave starts in August;
    cheap enough for impulse purchase + review velocity; feeds every other civics listing.
-3. **Indiana Civics unit ($7)** — the standards-verified flagship and the template for the other
+3. **Indiana Civics unit ($7)**, the standards-verified flagship and the template for the other
    49; Indiana teachers searching "Indiana government unit" find near-zero competition; proves the
    state-by-state model before scaling it.
-4. **Great Migration unit ($9)** — the premium anchor; listed early (fall) so reviews accumulate
-   before the January–February Black History Month surge.
-5. **Golfdom primary-source lesson ($3–4)** — fast to build (one lesson already written), sharp
+4. **Great Migration unit ($9)**, the premium anchor; listed early (fall) so reviews accumulate
+   before the January-February Black History Month surge.
+5. **Golfdom primary-source lesson ($3-4)**, fast to build (one lesson already written), sharp
    hook, low price → review velocity; cross-promotes both the media-literacy and Black-history
    shelves and rides the Great Migration unit's February traffic.
 
@@ -1701,7 +1701,7 @@ paste-ready TpT listing (description + keywords):
 - \`great-migration-unit/\` ($9 premium anchor)
 
 All content is adapted from the shipped course files (\`scripts/data/*.ts\`); nothing was invented.
-Citations and \`## Sources\` sections carry over intact — that is the brand.
+Citations and \`## Sources\` sections carry over intact, that is the brand.
 
 ## Sources
 
@@ -1728,59 +1728,59 @@ another course about how multiple civilizations tried to introduce europeans to 
   },
   {
     key: "travel-abroad-proposal",
-    title: "Travel & Living Abroad — course track proposal (from the US)",
-    summary: "A new \"Travel & Living Abroad\" category. Two courses are building now; the rest are proposals —",
-    body: `# Travel & Living Abroad — course track proposal (from the US)
+    title: "Travel & Living Abroad, course track proposal (from the US)",
+    summary: "A new \"Travel & Living Abroad\" category. Two courses are building now; the rest are proposals",
+    body: `# Travel & Living Abroad, course track proposal (from the US)
 
-A new **"Travel & Living Abroad"** category. Two courses are building now; the rest are proposals —
+A new **"Travel & Living Abroad"** category. Two courses are building now; the rest are proposals,
 pick which to author. All cited from authoritative gov sources (travel.state.gov, CDC, CBP, IRS,
 USCIS, SSA), all stressing "verify current rules/fees at the official source" since these change.
 
 ## Building now
-1. **How to Get a U.S. Passport** — book vs. **card** (dedicated section: card is land/sea only, NOT
+1. **How to Get a U.S. Passport**, book vs. **card** (dedicated section: card is land/sea only, NOT
    international air), first-time (DS-11) vs. renewal (DS-82), documents, fees, expedited, minors,
    lost/stolen, the 6-month-validity rule. _(travel.state.gov)_
-2. **Travel Visas 101** — how to figure out and get a visa for any destination as a US traveler:
+2. **Travel Visas 101**, how to figure out and get a visa for any destination as a US traveler:
    visa-free / visa-on-arrival / e-visa / embassy, Schengen + **ETIAS**, documents, a repeatable
    research checklist. _(travel.state.gov country pages, EU/ETIAS, embassy sites)_
 
-## Proposed — Short trips & tourism (traveling FROM the US)
-3. **International Travel Basics** — the whole pre-trip checklist tying passport + visa + insurance +
+## Proposed, Short trips & tourism (traveling FROM the US)
+3. **International Travel Basics**, the whole pre-trip checklist tying passport + visa + insurance +
    health + money + **STEP enrollment** (Smart Traveler) + itinerary together. The "start here" hub.
-4. **Travel Health & Safety** — CDC destination vaccines & health notices, travel insurance, staying
+4. **Travel Health & Safety**, CDC destination vaccines & health notices, travel insurance, staying
    safe, what to do in an emergency abroad (embassy/consulate help). _(CDC Travelers' Health, State Dept)_
-5. **Money Abroad** — currency, cards vs. cash, foreign-transaction & ATM fees, avoiding scams,
+5. **Money Abroad**, currency, cards vs. cash, foreign-transaction & ATM fees, avoiding scams,
    notifying your bank. _(CFPB, FTC)_
-6. **Flying Internationally & Coming Home** — airports/customs, **CBP re-entry**, **Global Entry /
+6. **Flying Internationally & Coming Home**, airports/customs, **CBP re-entry**, **Global Entry /
    TSA PreCheck / Trusted Traveler**, and **what you can (and can't) bring back** (duty, ag/food rules).
    _(CBP, TSA)_
-7. **Culture & Language Ready** — cultural etiquette, basic language prep, respectful travel. (Pairs
+7. **Culture & Language Ready**, cultural etiquette, basic language prep, respectful travel. (Pairs
    with the existing Languages atlas + language courses.)
 
-## Proposed — Moving & living abroad (long-term)
-8. **Moving Abroad 101** — the big decisions: tourist stay vs. **residency** vs. citizenship, types of
+## Proposed, Moving & living abroad (long-term)
+8. **Moving Abroad 101**, the big decisions: tourist stay vs. **residency** vs. citizenship, types of
    long-stay/retirement/work visas, choosing a country, the realistic timeline & costs. The hub course.
-9. **Working Abroad & Digital-Nomad Visas** — work permits, employer sponsorship, the wave of
+9. **Working Abroad & Digital-Nomad Visas**, work permits, employer sponsorship, the wave of
    **remote-work/digital-nomad visas**, and what they do/don't allow.
-10. **Taxes for Americans Abroad** — the big one: the US taxes citizens on **worldwide income** even
+10. **Taxes for Americans Abroad**, the big one: the US taxes citizens on **worldwide income** even
     abroad. Covers the **Foreign Earned Income Exclusion**, **FBAR**, **FATCA**, foreign tax credit,
-    filing deadlines. High-value, high-anxiety topic. _(IRS — cite carefully; "consult a tax pro.")_
-11. **Banking & Money When You Live Abroad** — how **FATCA** affects opening foreign accounts,
+    filing deadlines. High-value, high-anxiety topic. _(IRS, cite carefully; "consult a tax pro.")_
+11. **Banking & Money When You Live Abroad**, how **FATCA** affects opening foreign accounts,
     keeping US accounts, transferring money, currency risk. _(IRS/Treasury, CFPB)_
-12. **Healthcare Abroad** — international/expat health insurance, how care differs, Medicare doesn't
+12. **Healthcare Abroad**, international/expat health insurance, how care differs, Medicare doesn't
     travel, planning for prescriptions & emergencies.
-13. **Retiring Abroad** — **Social Security payments while overseas** (SSA), residency/retirement
+13. **Retiring Abroad**, **Social Security payments while overseas** (SSA), residency/retirement
     visas, taxes + healthcare for retirees, cost-of-living. _(SSA, State Dept)_
-14. **Studying Abroad** — programs, student visas, safety, credit transfer, funding.
-15. **Dual Citizenship & Renunciation basics** — what dual citizenship is, how the US treats it, and
+14. **Studying Abroad**, programs, student visas, safety, credit transfer, funding.
+15. **Dual Citizenship & Renunciation basics**, what dual citizenship is, how the US treats it, and
     the (rare, serious) renunciation process. _(State Dept)_
-16. **Shipping & Logistics of an International Move** — movers vs. ship-it-yourself, customs on your
+16. **Shipping & Logistics of an International Move**, movers vs. ship-it-yourself, customs on your
     goods, pets, what to sell/store, mail forwarding & voting from abroad.
 
 ## Recommended sequencing
 - **Now:** Passport + Visas (building).
 - **Next (short-trip pillar):** #3 International Travel Basics (the hub) + #6 Flying & Coming Home
-  (Global Entry / customs) — highest everyday demand.
+  (Global Entry / customs), highest everyday demand.
 - **Then (moving pillar):** #8 Moving Abroad 101 (hub) + #10 Taxes for Americans Abroad (the topic
   people most fear getting wrong).
 - The rest as demand shows.
@@ -1792,31 +1792,31 @@ The tax/legal/immigration courses must be firmly framed as **educational, not pr
   },
   {
     key: "workers-rights-track-proposal",
-    title: "Workers' Rights Around the World — course track proposal",
+    title: "Workers' Rights Around the World, course track proposal",
     summary: "A proposed \"Workers' Rights\" track: one built anchor course plus a set of country courses chosen",
-    body: `# Workers' Rights Around the World — course track proposal
+    body: `# Workers' Rights Around the World, course track proposal
 
 A proposed **"Workers' Rights"** track: one built anchor course plus a set of country courses chosen
-to span a genuinely diverse spectrum of how states interact with labor — not a tour of rich
+to span a genuinely diverse spectrum of how states interact with labor, not a tour of rich
 democracies. From BAM's note (\`plans/future-courses/history-of-unions.md\`):
 
 > "create a track of courses that covers workers rights globally, with courses on different countries
 > showing a diverse spectrum of how nations/states interact with labor"
 
-**Nothing below is built.** These are proposals — pick which to author, and in what order.
+**Nothing below is built.** These are proposals, pick which to author, and in what order.
 
 ---
 
 ## The anchor (built, \`content/history-of-unions\`)
 
-**The History of Unions: America and the World** (Culture & History) — 7 sections, 22 teaching
+**The History of Unions: America and the World** (Culture & History), 7 sections, 22 teaching
 lessons, 7 quizzes, 1 exercise. The full US arc (Knights/AFL → Haymarket → Homestead/Pullman →
 Triangle → Wagner Act → CIO → Taft-Hartley → Randolph/Memphis → PATCO → the BLS density series),
 told with the parts a comfortable course skips (the NLRA's agricultural/domestic carve-out, unions'
 own record of racial and gender exclusion, the corruption chapters). Then one lesson each on six
 national models, and the ILO.
 
-**The anchor's real payload is a reusable analytical spine — "the four questions."** Every course in
+**The anchor's real payload is a reusable analytical spine, "the four questions."** Every course in
 this track should use it as its skeleton, so the track compounds instead of being twelve unrelated
 country tours:
 
@@ -1838,7 +1838,7 @@ this get built, and why is it different over there.**
 ## Selection criteria (why these countries, and not others)
 
 A country earns a slot only if it teaches something **no other course in the track can teach**. The
-test is not "is it important" — it is "does removing it leave a hole in the spectrum."
+test is not "is it important", it is "does removing it leave a hole in the spectrum."
 
 The spectrum this track is trying to cover, end to end:
 
@@ -1846,82 +1846,82 @@ The spectrum this track is trying to cover, end to end:
 |---|---|
 | Workers **in the boardroom**, by statute | Germany |
 | Unions run the **welfare plumbing**; the wage floor is a contract, not a law | Sweden / Denmark |
-| The union as **liberation movement** — and then as part of the government | South Africa |
+| The union as **liberation movement**, and then as part of the government | South Africa |
 | The union as the thing that **brought down the state** | Poland |
 | Most workers have **no employer at all** to bargain with | India |
-| Unions **chartered and funded by the state** — and then defunded overnight | Brazil |
-| The union as a **tool of the employer** (the protection contract) — and rights enforced through a **trade deal** | Mexico |
+| Unions **chartered and funded by the state**, and then defunded overnight | Brazil |
+| The union as a **tool of the employer** (the protection contract), and rights enforced through a **trade deal** | Mexico |
 | A labor system **deliberately engineered to atomise bargaining** | Chile |
-| Rights won *with* democracy — and then policed with **damages suits against individual strikers** | South Korea |
+| Rights won *with* democracy, and then policed with **damages suits against individual strikers** | South Korea |
 | Your real employer is a **brand on another continent** | Bangladesh |
 | The union **is an arm of the party-state** | China |
 | Workers with **almost no rights at all** | The Gulf (Qatar / UAE / Saudi Arabia) |
 
 Two deliberate omissions, so the reasoning is on the record:
 
-- **The UK.** Voluntarism, the 1984–85 miners' strike, the 2016 Trade Union Act, the 2023
+- **The UK.** Voluntarism, the 1984-85 miners' strike, the 2016 Trade Union Act, the 2023
   minimum-service-levels law. Genuinely interesting, but it overlaps the US course heavily (common
   law, adversarial, declining density) and would spend a slot without widening the spectrum. **Build
   it only if a UK audience materialises.**
 - **France.** The very low density / very high coverage gap is the most vivid illustration of
-  Question 3 anywhere on earth — but it is *already* the punchline of the Germany course, and
+  Question 3 anywhere on earth, but it is *already* the punchline of the Germany course, and
   France's own union landscape (multiple competing confederations, extension by ministerial decree)
   is more confusing than instructive for a first pass. **Fold the France contrast into Germany;
   don't build the course.**
 
 ---
 
-## Wave 1 — build first (highest teaching value per unit of sourcing pain)
+## Wave 1, build first (highest teaching value per unit of sourcing pain)
 
 These four are the backbone. Each is well-sourced from official/primary material, each anchors a
 distinct end of the spectrum, and none requires a subject-matter reviewer to ship responsibly.
 
-### 1. Germany — *Workers on the Board*
+### 1. Germany, *Workers on the Board*
 **Teaches uniquely:** that a country can have roughly the same union **membership** rate as the US
-(14.1%, 2024) and roughly **five times** the bargaining **coverage** (~49–50%) — and that the
+(14.1%, 2024) and roughly **five times** the bargaining **coverage** (~49-50%), and that the
 difference is a design choice, not a cultural one. Board-level co-determination (Co-determination
 Act 1976: half the supervisory board of a >2,000-employee company) and the **dual channel** (works
 councils are statutory bodies elected by *all* employees, and are not the union).
 **Why it earns a slot:** it is the strongest available refutation of "unions vs. companies" as the
 only possible frame. Nothing else in the track shows workers with a structural, permanent, legal
 seat.
-**Hard parts:** the two-tier board is genuinely confusing to an American student — this course needs
+**Hard parts:** the two-tier board is genuinely confusing to an American student, this course needs
 real diagrams. And the honest version must include the **casting-vote catch** (parity of seats, not
 of power) and the insider/outsider critique (co-determination is argued to protect permanent staff
 at the expense of everyone else). Sourcing is excellent: statutes in English at
 \`gesetze-im-internet.de\`, ETUI's \`worker-participation.eu\`, Hans-Böckler-Stiftung, OECD/AIAS.
 
-### 2. Sweden & Denmark — *The Wage Floor That Isn't a Law*
+### 2. Sweden & Denmark, *The Wage Floor That Isn't a Law*
 **Teaches uniquely:** the **Ghent system** (unemployment insurance administered by union-affiliated
 funds → density around 65%), **sectoral bargaining**, and the fact that neither country has a
-statutory national minimum wage — because the floor is a contract. Plus Danish **flexicurity**: easy
-dismissal, generous benefit, active retraining — a bargain most Americans have never heard proposed.
+statutory national minimum wage, because the floor is a contract. Plus Danish **flexicurity**: easy
+dismissal, generous benefit, active retraining, a bargain most Americans have never heard proposed.
 **Why it earns a slot:** it detonates the assumption that a legal protection must be a *law*. It also
-teaches the track's best methodological habit — *look for the plumbing before you reach for the
+teaches the track's best methodological habit, *look for the plumbing before you reach for the
 culture*.
 **Hard parts:** it must tell the **erosion** story (private unemployment funds that don't require
 membership; decades of decline from a higher peak; pressure from the EU Adequate Minimum Wages
 Directive 2022/2041) or it is a tourism brochure. Also: Sweden and Denmark differ enough that the
 course has to teach both, not blur them into "Scandinavia."
 
-### 3. Poland — *Solidarność: When a Union Brought Down a State*
+### 3. Poland, *Solidarność: When a Union Brought Down a State*
 **Teaches uniquely:** that in a one-party state, "who may organise?" **is** "who governs?" The 21
 Demands (demand #1 was the right to form free unions, not pay), the Gdańsk Agreement (31 Aug 1980),
 roughly 10 million members, martial law (13 Dec 1981), the Round Table, June 1989.
 **Why it earns a slot:** it is the most dramatic and most *teachable* proof of the anchor's thesis,
-and it puts a trade union at the centre of the biggest geopolitical story of the late 20th century —
+and it puts a trade union at the centre of the biggest geopolitical story of the late 20th century,
 which most students have never been told.
-**Hard parts:** **the present tense is a minefield.** The 1980–89 history is superbly sourced (UNESCO
+**Hard parts:** **the present tense is a minefield.** The 1980-89 history is superbly sourced (UNESCO
 Memory of the World holds the 21 Demands; the European Solidarity Centre in Gdańsk has a vast open
 archive; the Institute of National Remembrance). But today's NSZZ "Solidarność" is a politically
 aligned organization very different from the 1980 movement, and **Lech Wałęsa's own record is
 fiercely contested in Polish politics**, including long-running allegations about a 1970s
-security-service file. **Recommendation: build the course on 1980–89, state explicitly that the
+security-service file. **Recommendation: build the course on 1980-89, state explicitly that the
 movement's contemporary legacy is contested in Poland today, and do not adjudicate Wałęsa's file.**
 Say so in the course, in one honest paragraph. That is the whole fix.
 
-### 4. Mexico — *The Protection Contract, and the Trade Deal That Came for It*
-**Teaches uniquely:** a **third kind of union object** the anchor only gestures at — the union that
+### 4. Mexico, *The Protection Contract, and the Trade Deal That Came for It*
+**Teaches uniquely:** a **third kind of union object** the anchor only gestures at, the union that
 is a **tool of the employer**. Mexico's "protection contracts" were collective agreements signed
 between a company and a friendly or phantom union, sometimes before a single worker was hired, which
 then legally blocked any real union from organising. Then: the **2019 labour reform** (personal,
@@ -1929,51 +1929,51 @@ free, direct, secret votes to legitimise existing contracts) and the **USMCA Rap
 Mechanism** (in force 2020), under which the United States can impose tariffs **on one specific
 factory** for denying freedom of association.
 **Why it earns a slot:** the RRM is the only concrete, working, *enforceable* international labor
-mechanism in the whole track — the answer to the anchor's bleak ILO lesson ("the floor is made of
+mechanism in the whole track, the answer to the anchor's bleak ILO lesson ("the floor is made of
 paper"). And the protection contract teaches a student to ask *whose union is it?* rather than *is
 there a union?*
 **Hard parts:** none that are severe. Sourcing is good and public: the Ley Federal del Trabajo as
-amended (2019), the USMCA text, and USTR's **published list of RRM cases** — which is a gift,
-because students can read the actual disputes. Keep it neutral on US–Mexico trade politics; teach
+amended (2019), the USMCA text, and USTR's **published list of RRM cases**, which is a gift,
+because students can read the actual disputes. Keep it neutral on US-Mexico trade politics; teach
 the mechanism, not the trade war.
 
 ---
 
-## Wave 2 — build second (widens the spectrum; needs more care)
+## Wave 2, build second (widens the spectrum; needs more care)
 
-### 5. India — *When Most Workers Have No Employer*
-**Teaches uniquely — and this may be the single most important course in the track.** The
+### 5. India, *When Most Workers Have No Employer*
+**Teaches uniquely, and this may be the single most important course in the track.** The
 overwhelming majority of India's workforce is **informal**: no contract, no employer of record,
-frequently no identifiable legal employer at all. Every concept in the anchor course — the election,
-the contract, the grievance procedure, the duty to bargain — assumes an *employer*. **India is where
-that assumption breaks.** It teaches SEWA (the Self-Employed Women's Association, founded 1972) — a
-union of self-employed women, which is a genuinely different institutional invention — and general
+frequently no identifiable legal employer at all. Every concept in the anchor course, the election,
+the contract, the grievance procedure, the duty to bargain, assumes an *employer*. **India is where
+that assumption breaks.** It teaches SEWA (the Self-Employed Women's Association, founded 1972), a
+union of self-employed women, which is a genuinely different institutional invention, and general
 strikes that mobilise tens of millions.
 **Why it earns a slot:** it is the course that stops a student from thinking "worker = employee." It
 is also, bluntly, the world's largest workforce, and its absence from the track would be
 embarrassing.
-**Hard parts:** **the statistics are genuinely contested** — informality is defined differently by
+**Hard parts:** **the statistics are genuinely contested**, informality is defined differently by
 different bodies and the headline percentage swings accordingly. The course must name its definition
-and its source rather than quoting a number. The 2019–20 **Labour Codes** (consolidating dozens of
-statutes) are politically contested and their implementation has been staggered — do not state their
+and its source rather than quoting a number. The 2019-20 **Labour Codes** (consolidating dozens of
+statutes) are politically contested and their implementation has been staggered, do not state their
 status as settled; date it. Sources: ILO India, the Periodic Labour Force Survey, the Codes' text on
 \`india.gov.in\`, SEWA's own materials.
 
-### 6. South Korea — *Democracy, the Chaebol, and the Lawsuit as a Weapon*
+### 6. South Korea, *Democracy, the Chaebol, and the Lawsuit as a Weapon*
 **Teaches uniquely:** rights won *alongside* democracy (the 1987 Great Workers' Struggle), the
 **regular/irregular dual labour market** inside the chaebol conglomerates, and a repression mechanism
-students will not have seen anywhere else — **civil damages suits and provisional seizure of assets
+students will not have seen anywhere else, **civil damages suits and provisional seizure of assets
 brought against individual strikers**, which can financially destroy a worker without ever
-criminalising the strike. Great hook: **Korea ratified ILO Conventions 87 and 98 only in 2021** — a
+criminalising the strike. Great hook: **Korea ratified ILO Conventions 87 and 98 only in 2021**, a
 rich, democratic OECD member that took until the 2020s to sign the freedom-of-association floor.
 **Why it earns a slot:** it is the track's sharpest version of **Question 4** *inside a wealthy
 democracy*, which is exactly where American students assume Question 4 is boring.
 **Hard parts:** contested domestic politics (the "yellow envelope" bill limiting damages suits has
-been passed, vetoed and re-fought — date any claim about its status). Sourcing is otherwise good:
+been passed, vetoed and re-fought, date any claim about its status). Sourcing is otherwise good:
 ILO NORMLEX, OECD, the KCTU and FKTU, Korean labour statutes.
 
-### 7. Brazil — *State-Chartered Unions, a Union-Made President, and the 2017 Rupture*
-**Teaches uniquely:** **corporatism** — a system in which unions are chartered by the state, granted
+### 7. Brazil, *State-Chartered Unions, a Union-Made President, and the 2017 Rupture*
+**Teaches uniquely:** **corporatism**, a system in which unions are chartered by the state, granted
 monopoly representation of a category in a territory, and funded by a **compulsory union tax**
 deducted from workers whether or not they joined (the 1943 CLT structure). Then the "new unionism"
 of the ABC metalworkers, which produced a president. Then **Law 13.467/2017**, which abolished the
@@ -1985,49 +1985,49 @@ unions that were funded by the state, when the state stops funding them?* Brazil
 brutally polarised. The course must be scrupulously neutral, stick to the statute and the numbers,
 and date everything. Sourcing is fine (CLT, Law 13.467/2017, ILO, IBGE).
 
-### 8. Chile — *A Labor System Designed to Be Weak*
-**Teaches uniquely:** the **1979 Plan Laboral** — a labour code written under a military dictatorship
+### 8. Chile, *A Labor System Designed to Be Weak*
+**Teaches uniquely:** the **1979 Plan Laboral**, a labour code written under a military dictatorship
 which deliberately **fragmented bargaining to the individual firm**, permitted competing unions
 inside one workplace, and constrained the right to strike. This is the clearest documented case
-anywhere of a labour system *engineered*, on purpose, to atomise worker power — and it survived the
+anywhere of a labour system *engineered*, on purpose, to atomise worker power, and it survived the
 return to democracy largely intact, which is the more interesting half of the story.
 **Why it earns a slot:** every other course shows institutions that *evolved*. Chile shows one that
 was **designed**, by named people, with a stated goal. It turns Question 3 from a description into an
-accusation — and it is the perfect final lesson before a student re-reads their own country's law.
+accusation, and it is the perfect final lesson before a student re-reads their own country's law.
 **Hard parts:** Pinochet-era history is contested and painful; the course must handle the
 dictatorship soberly and cite carefully. Sourcing is adequate (the Código del Trabajo, ILO, OECD,
-Chilean scholarship) but much of the best material is in Spanish — a translation pass is required.
+Chilean scholarship) but much of the best material is in Spanish, a translation pass is required.
 
 ---
 
-## Wave 3 — build last (hardest to source; the state may be hostile)
+## Wave 3, build last (hardest to source; the state may be hostile)
 
 These three complete the spectrum and are the ones the track *needs* in order not to be a tour of
 comfortable countries. They are also the ones most likely to produce a credibility failure if built
-carelessly. **Do not build these until the method is proven on Waves 1–2.**
+carelessly. **Do not build these until the method is proven on Waves 1-2.**
 
-### 9. China — *The Union That Is the State*
+### 9. China, *The Union That Is the State*
 **Teaches uniquely:** the sharpest possible form of **Question 1**. The ACFTU is the world's largest
 union organization and a genuinely different *object*: unions operate under Party leadership by
 statute, a workplace union must affiliate upward, and forming one requires higher-level approval. The
 right to strike was in the 1975 and 1978 constitutions and was **removed in 1982**.
 **Why it earns a slot:** without it, "union" reads as a fixed unit across countries. It isn't.
-**What makes it hard — and this is a *specific* difficulty worth understanding:** the **law is easy**
+**What makes it hard, and this is a *specific* difficulty worth understanding:** the **law is easy**
 and the **practice is hard**. The statutes are public and officially translated (\`npc.gov.cn\`), so
 the legal structure is unarguable and can be taught from primary sources with total confidence. What
 cannot be sourced cleanly is *what actually happens*: strike frequency, detentions of labour NGO
-staff, conditions. The standard open dataset was **China Labour Bulletin's strike map**, and CLB — a
-Hong Kong-based advocacy organization — **wound down its operations in 2023**, which leaves a real
+staff, conditions. The standard open dataset was **China Labour Bulletin's strike map**, and CLB, a
+Hong Kong-based advocacy organization, **wound down its operations in 2023**, which leaves a real
 and worsening evidence gap. The state is hostile to independent research on exactly this question.
-**What BAM would need:** a hard editorial rule — *build the course from the statute and from ILO
+**What BAM would need:** a hard editorial rule, *build the course from the statute and from ILO
 supervisory-body findings; state explicitly what cannot be verified; do not launder advocacy claims
 as fact; do not caricature (the ACFTU does administer real welfare and legal aid); date everything.*
 Done that way this course is defensible and genuinely excellent. Done the other way it is a
 liability.
 
-### 10. The Gulf — *Kafala: The Workers Who Build the Cities* (Qatar / UAE / Saudi Arabia)
+### 10. The Gulf, *Kafala: The Workers Who Build the Cities* (Qatar / UAE / Saudi Arabia)
 **Teaches uniquely:** the near-zero end of the spectrum, and the exact same *mechanism* as the NLRA's
-1935 farm/domestic carve-out — a class of worker defined **by law** as outside the protections
+1935 farm/domestic carve-out, a class of worker defined **by law** as outside the protections
 everyone else gets, doing the hardest and most dangerous work. Qatar's 2020 reforms (Law No. 17,
 minimum wage; Law No. 19, removing the No-Objection Certificate) are **real** and must be taught as
 real; and migrant workers still **may not form or join trade unions**, which must also be taught.
@@ -2035,27 +2035,27 @@ real; and migrant workers still **may not form or join trade unions**, which mus
 described the world.
 **What makes it hard:** the two failure modes are the promotional version (recite the 2020 laws,
 stop) and the atrocity version (recite abuses, ignore that the law changed). **Both are propaganda.**
-Independent research access is limited, official statistics are thin, and *every* available source —
+Independent research access is limited, official statistics are thin, and *every* available source,
 including the ILO's own Qatar office, which operates inside a formal joint programme with the
-government and is therefore both authoritative and diplomatically constrained — is motivated.
+government and is therefore both authoritative and diplomatically constrained, is motivated.
 Migrant-worker death-toll figures in particular are contested and have been misreported by major
 outlets.
 **What BAM would need:** a rule that **every claim carries the statute + the ILO + at least one
 independent monitor**, that contested figures are presented *as contested, with the range and the
-dispute named*, and that nothing is asserted undated. Also: do not erase migrant workers' agency —
+dispute named*, and that nothing is asserted undated. Also: do not erase migrant workers' agency,
 wildcat strikes happen and are documented.
 
-### 11. Bangladesh — *Rana Plaza and the Brand on Another Continent*
+### 11. Bangladesh, *Rana Plaza and the Brand on Another Continent*
 **Teaches uniquely:** what Question 3 means when **your real employer is a logo in another country**.
 The Rana Plaza collapse (24 April 2013; more than 1,100 garment workers killed) and what followed:
-the **Accord on Fire and Building Safety in Bangladesh** — a *legally binding* agreement between
+the **Accord on Fire and Building Safety in Bangladesh**, a *legally binding* agreement between
 global brands and global unions, enforceable through arbitration. That is one of the most important
 labour-governance experiments of this century and it is essentially invisible to American students,
 who are wearing its output.
 **Why it earns a slot:** it is the course with the shortest distance between the syllabus and the
-student's own shirt. It also answers the ILO lesson's despair with something that actually binds —
+student's own shirt. It also answers the ILO lesson's despair with something that actually binds,
 not a treaty, but a contract.
-**What makes it hard:** the **Bangladeshi state has been hostile to garment-union organising** —
+**What makes it hard:** the **Bangladeshi state has been hostile to garment-union organising**,
 union registration is difficult, and organisers have been dismissed, blacklisted and assaulted (well
 documented). The Accord's status has been repeatedly renegotiated and litigated, so any claim about
 its current form must be dated. Sourcing is otherwise good: ILO, Better Work, the Accord's own
@@ -2065,12 +2065,12 @@ published inspection reports, the brands' own disclosures.
 
 ## Optional / later
 
-- **Nigeria (or Kenya)** — African labour *outside* South Africa. The Nigeria Labour Congress
+- **Nigeria (or Kenya)**, African labour *outside* South Africa. The Nigeria Labour Congress
   repeatedly calls general strikes that shut the country (fuel-subsidy disputes), so a union
-  federation functions as de facto political opposition — a thing American students never see.
+  federation functions as de facto political opposition, a thing American students never see.
   Sourcing is moderate; informal-sector statistics are weak. Good candidate if the track continues.
-- **The UK** and **France** — see "deliberate omissions" above.
-- **South Africa** is listed in the spectrum table and *should* be built — see the reviewer caveat in
+- **The UK** and **France**, see "deliberate omissions" above.
+- **South Africa** is listed in the spectrum table and *should* be built, see the reviewer caveat in
   "What BAM would need." It sits between Wave 1 and Wave 2 on difficulty: the archives are excellent
   (South African History Online, the O'Malley/Nelson Mandela Foundation archives, the Labour
   Relations Act, the 2015 Marikana Commission report), but the post-1994 ANC alliance and Marikana
@@ -2092,14 +2092,14 @@ The reasoning:
 - **Then Mexico**, early and deliberately, because the USMCA Rapid Response mechanism is the track's
   one piece of good news, and because it inoculates the student against the assumption that "a union
   exists" means "workers have a union."
-- **Then Poland**, once the student has the vocabulary — Solidarity lands far harder *after* you know
+- **Then Poland**, once the student has the vocabulary, Solidarity lands far harder *after* you know
   what a normal union is, because the point is what it wasn't.
 - **India, South Africa, Korea, Brazil, Chile** widen the spectrum in the middle. India in particular
   should come before the Wave-3 courses, because "most workers have no employer" is the concept that
   makes the Gulf course legible rather than merely shocking.
 - **Bangladesh, China and the Gulf go last** because they are the three where a sourcing failure
-  would be most damaging, and because by then the method — statute first, dated claims, named
-  disputes, motivated sources read against each other — will be established and repeatable.
+  would be most damaging, and because by then the method, statute first, dated claims, named
+  disputes, motivated sources read against each other, will be established and repeatable.
 
 **Track sequencing for the learner** is a different order from the build order. As a learning path:
 *Know Your Rights at Work* (present-tense, practical) → **History of Unions** (the anchor and the
@@ -2117,17 +2117,17 @@ country's statute.
    with the range and the dispute named · no advocacy claim laundered as fact · at least one
    independent monitor cited alongside any official source, and vice versa.*
    The anchor course already models this (Haymarket's bomb-thrower, Hoffa, the NLRA exclusion's
-   motive, the Qatar reforms) — it is a proven pattern in this repo, not a new invention.
+   motive, the Qatar reforms), it is a proven pattern in this repo, not a new invention.
 2. **A South African reviewer for the COSATU course** (Marikana is still litigated and the ANC
-   alliance is a live domestic fight) — the same posture the repo already takes on the Hoodoo
+   alliance is a live domestic fight), the same posture the repo already takes on the Hoodoo
    courses, which are held from publishing pending review by a knowledgeable member of the tradition.
 3. **Translation capacity** for the Chile course (Spanish) and, to a lesser degree, Brazil
    (Portuguese) and Korea. Primary sources exist; they are not in English.
-4. **A decision about the China course's evidence gap** — with China Labour Bulletin wound down since
+4. **A decision about the China course's evidence gap**, with China Labour Bulletin wound down since
    2023, there is no longer a good open dataset on Chinese strikes. Either build the course from the
    statute alone and *say so in the course*, or don't build it.
 5. **Nothing else.** Waves 1 and 2 need no permissions, no reviewers (except South Africa), and no
-   vendor — only authoring time. That is the argument for starting there.
+   vendor, only authoring time. That is the argument for starting there.
 
 ---
 
@@ -2137,7 +2137,7 @@ country's statute.
 - Companion: **Know Your Rights at Work** (branch \`content/know-your-rights-at-work\`).
 - Category: **Culture & History** (the anchor ships there). If the track grows past ~4 courses,
   consider promoting it to its own **"Workers & Rights"** category with a learning path.
-- Source note: \`plans/future-courses/history-of-unions.md\` (BAM's original ask — move to
+- Source note: \`plans/future-courses/history-of-unions.md\` (BAM's original ask, move to
   \`completed/\` once the anchor ships).`,
     provenance: "plans/future-courses/workers-rights-track-proposal.md",
   },
@@ -2176,13 +2176,13 @@ Asante advocates for Afrocentricity.[7][8] He is the author of more than 90 book
   },
   {
     key: "mansa-gold-interview-prep",
-    title: "Mansa Gold — Interview Prep",
+    title: "Mansa Gold, Interview Prep",
     group: "Mansa Gold",
     summary: "For: BAM · Interviewee: Preba Arkaah, founder, Mansa Gold (https://mansa.gold/)",
-    body: `# Mansa Gold — Interview Prep
+    body: `# Mansa Gold, Interview Prep
 
 **For:** BAM · **Interviewee:** Preba Arkaah, founder, Mansa Gold (https://mansa.gold/)
-**Purpose:** Better Vice Club (BVC) Commodity Map — cocoa (and coffee) episode material for high school students
+**Purpose:** Better Vice Club (BVC) Commodity Map, cocoa (and coffee) episode material for high school students
 **Compiled:** 13 July 2026
 
 ---
@@ -2196,22 +2196,22 @@ Three labels appear throughout:
 | Label | Meaning |
 |---|---|
 | **VERIFIED** | Fetched from a named source. Cite it, say it on camera. |
-| **SINGLE-SOURCE** | One outlet says it; I could not corroborate. Say "reportedly," or better — ask her. |
+| **SINGLE-SOURCE** | One outlet says it; I could not corroborate. Say "reportedly," or better, ask her. |
 | **CONFIRM IN INTERVIEW** | Nobody has published it. Do not assume it. Ask. |
 
 **The companion files:**
 
-- **[\`01-ghana-cocoa-background.md\`](01-ghana-cocoa-background.md)** — COCOBOD, the fixed farmgate price, the purchase ban, the 2023–26 price spike and crash, child labour, certification, EUDR, disease and galamsey.
-- **[\`02-ghana-coffee-background.md\`](02-ghana-coffee-background.md)** — the smaller, stranger, and (for teaching) possibly better story.
-- **[\`03-women-in-cocoa-and-coffee.md\`](03-women-in-cocoa-and-coffee.md)** — including a **myth audit** of the widely repeated statistics in this space, several of which do not survive contact with their sources.
+- **[\`01-ghana-cocoa-background.md\`](01-ghana-cocoa-background.md)**, COCOBOD, the fixed farmgate price, the purchase ban, the 2023-26 price spike and crash, child labour, certification, EUDR, disease and galamsey.
+- **[\`02-ghana-coffee-background.md\`](02-ghana-coffee-background.md)**, the smaller, stranger, and (for teaching) possibly better story.
+- **[\`03-women-in-cocoa-and-coffee.md\`](03-women-in-cocoa-and-coffee.md)**, including a **myth audit** of the widely repeated statistics in this space, several of which do not survive contact with their sources.
 
 **One structural warning before anything else.** Preba Arkaah is a woman founder in a sector where "women in cocoa" is a heavily sloganised topic. The fastest way to waste this interview is to ask her to *confirm a statistic*. Her experience is hers and only she can give it to you. The sector-wide numbers are in file 03 and they are yours to cite. **Keep the two apart.** More on this in the questions section.
 
 ---
 
-## 1. Mansa Gold — what is actually knowable
+## 1. Mansa Gold, what is actually knowable
 
-### 1.1 VERIFIED — from their own website
+### 1.1 VERIFIED, from their own website
 
 All of the following is on https://mansa.gold/ as of 13 July 2026 (Mansa Gold, n.d.).
 
@@ -2225,9 +2225,9 @@ All of the following is on https://mansa.gold/ as of 13 July 2026 (Mansa Gold, n
 |---|---|---|
 | **Mankese** | 42% | Milk bar. "Rich and creamy… overlaid with caramel notes." |
 | **Mampong** | 50% | Dark milk. "More intense chocolate flavour with fruity notes." |
-| **Simpa** | 48% | Coconut milk chocolate — **vegan and lactose free**. |
+| **Simpa** | 48% | Coconut milk chocolate, **vegan and lactose free**. |
 | **Bono** | 71% | Dark. "The pure taste of Ghana's cocoa." |
-| **Cabo Corso** | 35% cocoa butter | "White" chocolate — muscovado sugar and **Ghanaian vanilla**. |
+| **Cabo Corso** | 35% cocoa butter | "White" chocolate, muscovado sugar and **Ghanaian vanilla**. |
 | **Afi** | not stated | Seasonal. |
 
 (Mansa Gold, n.d., *Products*.)
@@ -2238,7 +2238,7 @@ All of the following is on https://mansa.gold/ as of 13 July 2026 (Mansa Gold, n
 
 **The logo** is three interlinked cocoa pods in a circle, described as *"the full completion of our golden journey"* (Mansa Gold, n.d., *About Us*).
 
-### 1.2 VERIFIED — from citable outside coverage
+### 1.2 VERIFIED, from citable outside coverage
 
 **She is publicly on record against the law that bans direct purchase from farmers.** This is the most valuable thing in the entire prep file. In February 2021, Asaase Radio reported her calling for review of the policy barring cocoa-product manufacturers from buying beans directly from farmers. Her words:
 
@@ -2252,7 +2252,7 @@ All of the following is on https://mansa.gold/ as of 13 July 2026 (Mansa Gold, n
 
 **COCOBOD publicly answered her, six days later.** Fiifi Boafo, speaking for COCOBOD, defended the rule: *"when there are rules and regulation guiding the sector it helps shape it,"* and *"to also ensure we maintain quality there must be a rule guiding the entire process"* (Dzakpata, 2021b).
 
-**She is legally correct.** The Ghana Cocoa Board Act 1984 (PNDCL 81), s.4, provides that *"No person shall purchase cocoa except: (a) the Board through its wholly-owned subsidiary buying company; or (b) a person or organisation authorised in writing by the Board"* — and s.4(7) binds the *farmer* too. Penalty under s.4(9): **five to ten years' imprisonment, with no option of a fine** (Ghana, 1984). See file 01 §3.
+**She is legally correct.** The Ghana Cocoa Board Act 1984 (PNDCL 81), s.4, provides that *"No person shall purchase cocoa except: (a) the Board through its wholly-owned subsidiary buying company; or (b) a person or organisation authorised in writing by the Board"*, and s.4(7) binds the *farmer* too. Penalty under s.4(9): **five to ten years' imprisonment, with no option of a fine** (Ghana, 1984). See file 01 §3.
 
 **Her background** (Setrana, 2022, *Yen.com.gh*): she worked roughly **ten years as a lawyer** for a fast-moving-consumer-goods company that owns Guinness Ghana Company Limited; after retiring she started the chocolate company because *"she realized that Ghana does not have a decent premium chocolate brand that can rival those in Europe."* The article states the **factory operates in her garden**, with a dedicated shed for storing and processing beans.
 
@@ -2262,9 +2262,9 @@ All of the following is on https://mansa.gold/ as of 13 July 2026 (Mansa Gold, n
 
 ⚠️ **Name note.** BAM supplied the name **Preba Arkaah**, and she is quoted as "Arkaah" by Asaase Radio and Yen. Tennis coverage gives **"Preba Arkaah Greenstreet."** The match is solid (same person, same company, same role), but **ask her how she wants to be named and credited on screen.** That is a courtesy and a fact-check in one question.
 
-### 1.3 SINGLE-SOURCE — say "reportedly," or just ask her
+### 1.3 SINGLE-SOURCE, say "reportedly," or just ask her
 
-An AMAKA Studio founder profile (Makhokha, n.d.) is the most detailed piece written about her. **I could not retrieve the article body** — the page renders client-side and returned only navigation to me. The following comes from search-index summaries of that article and is therefore **second-hand**:
+An AMAKA Studio founder profile (Makhokha, n.d.) is the most detailed piece written about her. **I could not retrieve the article body**, the page renders client-side and returned only navigation to me. The following comes from search-index summaries of that article and is therefore **second-hand**:
 
 - Mansa Gold was **founded in 2020**.
 - In **2018** she took a **chocolate-making course in Switzerland**.
@@ -2274,11 +2274,11 @@ An AMAKA Studio founder profile (Makhokha, n.d.) is the most detailed piece writ
 
 **Every one of these is a great question rather than a great fact.** Ask her; she will tell it better than the summary does.
 
-### 1.4 CONFIRM IN INTERVIEW — nobody has published this
+### 1.4 CONFIRM IN INTERVIEW, nobody has published this
 
 - **Prices.** Not on the site. Not anywhere I could find. You need a price to teach economics.
 - **Volume.** How many bars a week/year? How many tonnes of beans a year? Unknown.
-- **Coffee.** **The Mansa Gold website contains no coffee product, no coffee page, and no mention of coffee.** Searches for "Mansa Gold coffee" return only chocolate. If BAM has been told this interview covers coffee, **that is information he has and the public record does not.** Ask early: *do you do anything with coffee?* If she does not, the coffee angle still works — but as a **contrast** episode (see file 02), not as her business.
+- **Coffee.** **The Mansa Gold website contains no coffee product, no coffee page, and no mention of coffee.** Searches for "Mansa Gold coffee" return only chocolate. If BAM has been told this interview covers coffee, **that is information he has and the public record does not.** Ask early: *do you do anything with coffee?* If she does not, the coffee angle still works, but as a **contrast** episode (see file 02), not as her business.
 - **How she legally sources.** Her site says "known farms"; the law says only Board-authorised buyers may purchase. **This tension is unresolved in public.** It is the single best question in this document (see Q2.1).
 - **Certifications.** None claimed on the site. No Fairtrade or Rainforest Alliance mark visible.
 - **Employees, ownership, funding.** Nothing published.
@@ -2296,18 +2296,18 @@ Grouped by theme. Ordered inside each group from easy to hard. **Bold** = the on
 
 > **Your website says you buy from "a limited number of known farms." But you've said publicly that "the law actually says that nobody can buy directly from the farmer." So walk me through it — when a bean leaves a farm in the Eastern Region and arrives in your factory, whose hands does it pass through, and what does each of them charge?**
 
-Why this is the one: it is **specific to her**, it is **rooted in her own published words** (Dzakpata, 2021a), it produces a **supply-chain map** — a teachable artifact — and it forces a real answer to a real contradiction that nobody has printed. Whatever she says (she uses a licensed buying company; she has a special authorisation; the rule is unevenly enforced; she buys her tonne from COCOBOD and knows the farm anyway) is a lesson.
+Why this is the one: it is **specific to her**, it is **rooted in her own published words** (Dzakpata, 2021a), it produces a **supply-chain map**, a teachable artifact, and it forces a real answer to a real contradiction that nobody has printed. Whatever she says (she uses a licensed buying company; she has a special authorisation; the rule is unevenly enforced; she buys her tonne from COCOBOD and knows the farm anyway) is a lesson.
 
 Follow-ups:
 - *Who is the licensed buyer you go through, and what does that intermediation cost you?*
-- *COCOBOD is reported to sell in minimum lots of one tonne. Is that a problem at your scale?* (This "one-tonne minimum" claim appears only in Ghanaian trade press; I could not verify it in a COCOBOD document — see file 01. **She can settle it.**)
-- *Five years after you said that on the radio — has anything changed?*
+- *COCOBOD is reported to sell in minimum lots of one tonne. Is that a problem at your scale?* (This "one-tonne minimum" claim appears only in Ghanaian trade press; I could not verify it in a COCOBOD document, see file 01. **She can settle it.**)
+- *Five years after you said that on the radio, has anything changed?*
 
 ### 2.2 Money and the math (these produce numbers students can compute with)
 
 - **What does a Mansa Gold bar sell for in Accra, and what does it weigh?**
-- **Take that bar and break it down for me. Of the cedis a customer hands over, how much goes to the farmer, the beans, the sugar and milk, the packaging, the electricity, the labour, the retailer, the tax?** (This is the artifact. Even her rough numbers beat any published estimate — and see file 01 §4 on why the famous "farmers get 6%" figure is a 2015 estimate being quoted as if it were current.)
-- **The world cocoa price went from about $2,500 a tonne to nearly $13,000 in December 2024, and it's around $5,800 now (Trading Economics, 2026). What did that actually do to your business?** (Note the trap this avoids: many people assume the spike enriched Ghanaian farmers. It largely did not, because COCOBOD had forward-sold the crop — file 01 §5. She lives on the other side of that: her *input* cost spiked.)
+- **Take that bar and break it down for me. Of the cedis a customer hands over, how much goes to the farmer, the beans, the sugar and milk, the packaging, the electricity, the labour, the retailer, the tax?** (This is the artifact. Even her rough numbers beat any published estimate, and see file 01 §4 on why the famous "farmers get 6%" figure is a 2015 estimate being quoted as if it were current.)
+- **The world cocoa price went from about $2,500 a tonne to nearly $13,000 in December 2024, and it's around $5,800 now (Trading Economics, 2026). What did that actually do to your business?** (Note the trap this avoids: many people assume the spike enriched Ghanaian farmers. It largely did not, because COCOBOD had forward-sold the crop, file 01 §5. She lives on the other side of that: her *input* cost spiked.)
 - **In February 2026 COCOBOD cut the farmgate price by 28.6%, from GH¢3,625 to GH¢2,587 a bag, mid-season (COCOBOD, 2026). What did the farmers you know say to you about that?**
 - *What was the single biggest cost you did not see coming?*
 - *Is imported sugar, milk powder, or packaging a bigger problem for you than cocoa?* (A sneaky-good question: a Ghanaian chocolate maker may be undone by the *non*-cocoa inputs.)
@@ -2315,25 +2315,25 @@ Follow-ups:
 
 ### 2.3 Making chocolate in the country that grows the cocoa
 
-- **Ghana exports its cocoa mostly as beans and semi-finished paste, butter and powder — finished chocolate is under 1.5% of its cocoa exports (USDA FAS, 2025). Why? What actually stops a country that grows the bean from making the bar?**
+- **Ghana exports its cocoa mostly as beans and semi-finished paste, butter and powder, finished chocolate is under 1.5% of its cocoa exports (USDA FAS, 2025). Why? What actually stops a country that grows the bean from making the bar?**
 - **You said it's the law. Is it only the law? What else?** (Push her. Electricity, cold chain, packaging, machinery imports, financing, the taste of the domestic market, competing with imported brands.)
-- **What breaks first when you try to make chocolate in a country where it's 30°C?** (Tempering and cold chain — a genuinely vivid, physical, teachable problem.)
+- **What breaks first when you try to make chocolate in a country where it's 30°C?** (Tempering and cold chain, a genuinely vivid, physical, teachable problem.)
 - *You trained abroad, reportedly in Switzerland. What did you have to un-learn to make chocolate in Ghana?*
 - *What does Ghana lose by shipping the bean instead of the bar? Put a number on it if you can.*
-- *Who is your customer — Ghanaians, tourists, exports? Has that changed?*
+- *Who is your customer, Ghanaians, tourists, exports? Has that changed?*
 
 ### 2.4 Where she disagrees with the conventional story (best classroom material)
 
 The standard chocolate narrative students arrive with is: *poor farmers, child labour, buy Fairtrade, feel better.* Nearly every part of that is more complicated, and she is positioned to say so.
 
 - **The usual story about chocolate is "farmers are exploited by big companies, so buy certified." You're a Ghanaian buying Ghanaian cocoa. Does that story describe your world?**
-- **Do you certify? Why not?** (No certification is claimed on her site. If she says the premium isn't worth the audit cost, that is a *far* more honest lesson than a Fairtrade logo — and it's backed by research: the Fairtrade premium for Ghana is US$240/t on a ~$5,800/t market, roughly 4%, and the sector's own leading watchdog says *"certified is not the same as sustainable"* (Fairtrade International, 2025; Fountain & Huetz-Adams, 2022). See file 01 §7.)
-- **When Americans hear "Ghana" and "cocoa," they think child labour. What do they get wrong?** (Do not soften this and do not accept a soft answer. The real data: 55% of children aged 5–17 in agricultural households in Ghana's cocoa areas were in child labour in 2018/19, and 83% of children working in cocoa were working for their own parents (NORC, 2020). Both facts are true at once. She will have a view.)
-- **Is COCOBOD good for Ghana or bad for Ghana?** (She has already answered half of this in public. Let her answer the other half. The steelman is real: COCOBOD guarantees the farmer a price, so the farmer does not eat the crash — until, as in February 2026, they do.)
+- **Do you certify? Why not?** (No certification is claimed on her site. If she says the premium isn't worth the audit cost, that is a *far* more honest lesson than a Fairtrade logo, and it's backed by research: the Fairtrade premium for Ghana is US$240/t on a ~$5,800/t market, roughly 4%, and the sector's own leading watchdog says *"certified is not the same as sustainable"* (Fairtrade International, 2025; Fountain & Huetz-Adams, 2022). See file 01 §7.)
+- **When Americans hear "Ghana" and "cocoa," they think child labour. What do they get wrong?** (Do not soften this and do not accept a soft answer. The real data: 55% of children aged 5-17 in agricultural households in Ghana's cocoa areas were in child labour in 2018/19, and 83% of children working in cocoa were working for their own parents (NORC, 2020). Both facts are true at once. She will have a view.)
+- **Is COCOBOD good for Ghana or bad for Ghana?** (She has already answered half of this in public. Let her answer the other half. The steelman is real: COCOBOD guarantees the farmer a price, so the farmer does not eat the crash, until, as in February 2026, they do.)
 - *If you could change one law tomorrow, which one, and what would break as a result?*
 - *Who disagrees with you in Ghana, and what's their best argument?*
 
-### 2.5 Her story — the questions only she can answer
+### 2.5 Her story, the questions only she can answer
 
 Note the framing rule here: **ask for her experience, never for her to confirm a statistic.**
 
@@ -2342,42 +2342,42 @@ Note the framing rule here: **ask for her experience, never for her to confirm a
 - **You started, reportedly, in your own garden. What was in that shed?**
 - **What did you get wrong in the first year that you would warn someone else about?**
 - **Which of your bars nearly didn't happen, and why?**
-- *You name the bars after places and birds. Tell me about one bird and why that bar is that bird.* (Her bird-watching is the seam between the brand and the person — and it hands you your conservation thread and your visual material at the same time.)
-- *What does the name "Mansa Gold" mean to you?* (See §3.1 — the Mansa Musa hook.)
+- *You name the bars after places and birds. Tell me about one bird and why that bar is that bird.* (Her bird-watching is the seam between the brand and the person, and it hands you your conservation thread and your visual material at the same time.)
+- *What does the name "Mansa Gold" mean to you?* (See §3.1, the Mansa Musa hook.)
 - *When a farmer you buy from tastes your bar, what do they say?*
 
-### 2.6 Women in the sector — asked properly
+### 2.6 Women in the sector, asked properly
 
-**The wrong question:** *"Women are 45% of the cocoa workforce — what's that like?"* (That statistic traces to an **unpublished internal consultancy memo** from 2012 and is contradicted by the largest primary survey in the sector — file 03 §0. If BAM quotes it to her, he is quoting a ghost.)
+**The wrong question:** *"Women are 45% of the cocoa workforce, what's that like?"* (That statistic traces to an **unpublished internal consultancy memo** from 2012 and is contradicted by the largest primary survey in the sector, file 03 §0. If BAM quotes it to her, he is quoting a ghost.)
 
 **The right questions:**
 
 - **When you walk into a room of Ghanaian cocoa people, who else is in it?**
-- **You buy from farms. Who do you actually negotiate with — the man who holds the passbook, or the woman doing the work?** (This is the crux. In Ghana, "cocoa farmer" legally means *the recognised landholder who holds the passbook*, and 25.2% of cocoa holders are women (Ghana Statistical Service, 2020). The woman working her husband's farm is in no statistic at all. She will know exactly what this means in practice.)
-- **Was being a woman ever the reason a door didn't open — and did you go through it anyway?**
+- **You buy from farms. Who do you actually negotiate with, the man who holds the passbook, or the woman doing the work?** (This is the crux. In Ghana, "cocoa farmer" legally means *the recognised landholder who holds the passbook*, and 25.2% of cocoa holders are women (Ghana Statistical Service, 2020). The woman working her husband's farm is in no statistic at all. She will know exactly what this means in practice.)
+- **Was being a woman ever the reason a door didn't open, and did you go through it anyway?**
 - **You sponsor a professional tennis tournament for women. Why tennis? What does that have to do with chocolate?** (Verified: GhanaWeb, 2023.)
 - *Who taught you? Who are you teaching?*
 - *Do you buy differently because you're a woman? Do you pay differently?*
-- *There are other Ghanaian women in chocolate — the Addison sisters at '57 Chocolate, Selassie Atadika at Midunu (Cuisine Noir, 2026; Cuisine Noir, n.d.). Do you know each other? Is there a scene, or are you all alone?*
+- *There are other Ghanaian women in chocolate, the Addison sisters at '57 Chocolate, Selassie Atadika at Midunu (Cuisine Noir, 2026; Cuisine Noir, n.d.). Do you know each other? Is there a scene, or are you all alone?*
 
 ### 2.7 Coffee (ask early whether it applies)
 
-If she does coffee, everything below is live. If she does not, ask her the last two anyway — they are good.
+If she does coffee, everything below is live. If she does not, ask her the last two anyway, they are good.
 
 - **Do you touch coffee at all?**
 - *Ghana grows about 736 tonnes of coffee a year and about 600,000 tonnes of cocoa (FAO, via Our World in Data, 2024; ICCO, 2025). Coffee is roughly an 800th of cocoa. Why did coffee die here?*
-- *Coffee has no COCOBOD — no guaranteed price, no guaranteed buyer, no grading. Cocoa has all three. Which farmer would you rather be?* (This is the sharpest structural question in the whole project. See file 02 §5.)
+- *Coffee has no COCOBOD, no guaranteed price, no guaranteed buyer, no grading. Cocoa has all three. Which farmer would you rather be?* (This is the sharpest structural question in the whole project. See file 02 §5.)
 - *Do Ghanaians drink Ghanaian coffee?*
 
 ### 2.8 Questions a high school student would actually ask
 
-Give these to students to ask, or ask them yourself. They are not filler — the naive question often gets the best answer.
+Give these to students to ask, or ask them yourself. They are not filler, the naive question often gets the best answer.
 
 - **What does a cocoa pod smell like when you open it?**
 - **Have you ever eaten a raw cocoa bean? What does it taste like?** (It is not chocolate. That surprise is a whole lesson.)
 - **How many bars do you eat a week? Honestly.**
 - **What's your favourite of your own bars, and is that embarrassing to admit?**
-- **Do the farmers you buy from eat chocolate?** (Ask this one. The answer is often *no, not really* — and it is the most quietly devastating fact in the entire commodity chain.)
+- **Do the farmers you buy from eat chocolate?** (Ask this one. The answer is often *no, not really*, and it is the most quietly devastating fact in the entire commodity chain.)
 - **How long from the tree to the bar in my hand?**
 - **How much money would I need to start what you started?**
 - **What's the worst-tasting chocolate you've ever made?**
@@ -2385,19 +2385,19 @@ Give these to students to ask, or ask them yourself. They are not filler — the
 
 ---
 
-## 3. Other information that would be beneficial — my own thinking
+## 3. Other information that would be beneficial, my own thinking
 
 BAM asked what else would help. This is the part I would fight for.
 
 ### 3.1 The name is a history lesson sitting in plain sight
 
-**"Mansa"** is the title of the ruler of the Mali Empire — *Mansa* Musa, who ruled c. 1312–1337 and whose 1324 hajj to Mecca is the origin of the "richest man who ever lived" claim that circulates constantly online. The company is called **Mansa *Gold***.
+**"Mansa"** is the title of the ruler of the Mali Empire, *Mansa* Musa, who ruled c. 1312-1337 and whose 1324 hajj to Mecca is the origin of the "richest man who ever lived" claim that circulates constantly online. The company is called **Mansa *Gold***.
 
-That is a gift. Ghana was called **the Gold Coast**. The Mali Empire's wealth was gold. And the argument Arkaah makes — that Ghana grows the raw material and someone else captures the value — is a **direct rhyme with the gold trade**: the raw commodity leaves, the value is added elsewhere.
+That is a gift. Ghana was called **the Gold Coast**. The Mali Empire's wealth was gold. And the argument Arkaah makes, that Ghana grows the raw material and someone else captures the value, is a **direct rhyme with the gold trade**: the raw commodity leaves, the value is added elsewhere.
 
 ⚠️ **But do not put words in her mouth.** I have no source saying she named it after Mansa Musa. Ask: *"What does 'Mansa' mean to you?"* If she confirms it, you have a spine for the whole episode. If she says it means something else entirely, that is even better, because it is a surprise.
 
-**Teaching note on Mansa Musa:** the "richest person in history" figure is not a real calculation — it is an internet-native claim with no defensible methodology. Use it as a **media-literacy hook** ("here's a number everyone repeats — where did it come from?") rather than as a fact. That move is on-brand for BVC.
+**Teaching note on Mansa Musa:** the "richest person in history" figure is not a real calculation, it is an internet-native claim with no defensible methodology. Use it as a **media-literacy hook** ("here's a number everyone repeats, where did it come from?") rather than as a fact. That move is on-brand for BVC.
 
 ### 3.2 The economics a student can actually compute
 
@@ -2417,37 +2417,37 @@ Build the episode around a worksheet. Every number below is real and sourced, so
 
 1. **The bag is not a tonne.** COCOBOD publishes a per-bag price *and* a per-tonne price, and the per-tonne figure is the bag price × 16. But 16 × 64 kg = **1,024 kg**, not 1,000. COCOBOD's headline "per tonne" number therefore **overstates the true per-metric-tonne price by about 2.4%.** Have students catch that. It is a beautiful, real, unit-analysis lesson hiding inside a government press release.
 2. **The February 2026 cut.** GH¢3,625 → GH¢2,587 is a **28.6% cut, four months into the season**, after farmers had already planted and hired. Compute what that does to a farmer with a 1.3-hectare farm yielding ~450 kg.
-3. **The living-income line, crossed in one announcement.** Fairtrade's Living Income Reference Price for Ghana is **GH¢45.40/kg** (Fairtrade International, 2026). The February 2026 farmgate price of GH¢2,587 per 64 kg bag works out to **GH¢40.42/kg** — about **11% below** the living-income line. In October 2025, at GH¢3,625/bag (GH¢56.64/kg), it was comfortably *above* it. **Ghana crossed from above to below the living income line in a single press release.** Students can compute both sides of that themselves. This is the best single quantitative lesson I found in the entire research.
+3. **The living-income line, crossed in one announcement.** Fairtrade's Living Income Reference Price for Ghana is **GH¢45.40/kg** (Fairtrade International, 2026). The February 2026 farmgate price of GH¢2,587 per 64 kg bag works out to **GH¢40.42/kg**, about **11% below** the living-income line. In October 2025, at GH¢3,625/bag (GH¢56.64/kg), it was comfortably *above* it. **Ghana crossed from above to below the living income line in a single press release.** Students can compute both sides of that themselves. This is the best single quantitative lesson I found in the entire research.
 4. **Why the price spike didn't reach the farmer.** World price hit ~$12,900/t in December 2024 (Trading Economics, 2026). COCOBOD had forward-sold much of the crop at roughly **$2,500/t** eighteen months earlier (Fountain & Huetz-Adams, 2025). Ask students: *is a guaranteed price a good deal?* Then show them February 2026, when the price fell and the cut arrived within weeks. The Cocoa Barometer names the asymmetry directly: when prices rise, farmers feel it late; *"when prices fall, producers feel the impact very quickly, as stakeholders, including governments, do not wait to lower farmgate prices"* (Fountain & Huetz-Adams, 2025, p. 16).
-5. **The percentage game.** The Fairtrade premium for Ghana is **US$240/tonne** (Fairtrade International, 2025). The world price on 13 July 2026 was **US$5,817/tonne** (Trading Economics, 2026). Have them compute the premium as a percentage. It is about **4%**. Rainforest Alliance's minimum differential is **US$70/tonne** — about **1.2%**. Then ask them what they *thought* the certification label meant.
+5. **The percentage game.** The Fairtrade premium for Ghana is **US$240/tonne** (Fairtrade International, 2025). The world price on 13 July 2026 was **US$5,817/tonne** (Trading Economics, 2026). Have them compute the premium as a percentage. It is about **4%**. Rainforest Alliance's minimum differential is **US$70/tonne**, about **1.2%**. Then ask them what they *thought* the certification label meant.
 
 ### 3.3 A tasting is a lesson, and it is cheap
 
 Students can *taste* the argument. Get bars at three cocoa percentages and, if possible, from three origins.
 
 - **Percentage flight.** Mansa Gold themselves offer 42% / 48% / 50% / 71%. Same maker, same country, four points on a curve. What changes? (Sugar falls, bitterness rises, the bean gets louder.)
-- **Origin flight.** Ghanaian vs. Ivorian vs. Ecuadorian chocolate. Ghana's beans are prized for a classic, deep "chocolatey" flavour; Ecuador's for floral/fruity notes. Ecuador is also, not coincidentally, the country now challenging Ghana for the #2 producer spot — with **higher yields (~800 kg/ha vs Ghana's ~500)** and farmers reportedly capturing **~90% of the world price vs Ghana's ~70%** (Ecofin Agency, 2025 — secondary; see file 01 §1). **Taste and structure are the same lesson.**
+- **Origin flight.** Ghanaian vs. Ivorian vs. Ecuadorian chocolate. Ghana's beans are prized for a classic, deep "chocolatey" flavour; Ecuador's for floral/fruity notes. Ecuador is also, not coincidentally, the country now challenging Ghana for the #2 producer spot, with **higher yields (~800 kg/ha vs Ghana's ~500)** and farmers reportedly capturing **~90% of the world price vs Ghana's ~70%** (Ecofin Agency, 2025, secondary; see file 01 §1). **Taste and structure are the same lesson.**
 - **The raw bean.** Give them a raw cocoa bean. It is astringent, sour, nothing like chocolate. Fermentation and roasting *make* the flavour. Students think chocolate is a plant; it is a **process**.
-- **Read the wrapper.** Have them find who made it, where the beans came from, and what the certification mark actually promises. Most wrappers will not answer question two — and that is the finding.
+- **Read the wrapper.** Have them find who made it, where the beans came from, and what the certification mark actually promises. Most wrappers will not answer question two, and that is the finding.
 
 ### 3.4 The colonial spine of the story
 
-Cocoa is not indigenous to Africa. It is Amazonian. It was introduced to the Gold Coast in the late 19th century, and the country became the world's largest producer under British colonial rule. The **entire architecture of Ghanaian cocoa — a state marketing board buying the whole crop at a fixed price and selling it abroad** — is a *colonial* institution (the West African Produce Control Board / Cocoa Marketing Board) that independent Ghana **kept**, because it was a superb machine for extracting revenue from farmers to fund the state.
+Cocoa is not indigenous to Africa. It is Amazonian. It was introduced to the Gold Coast in the late 19th century, and the country became the world's largest producer under British colonial rule. The **entire architecture of Ghanaian cocoa, a state marketing board buying the whole crop at a fixed price and selling it abroad**, is a *colonial* institution (the West African Produce Control Board / Cocoa Marketing Board) that independent Ghana **kept**, because it was a superb machine for extracting revenue from farmers to fund the state.
 
-That is the deep version of Arkaah's complaint. When she says *"we have legislated against"* an indigenous chocolate industry, the legislation she is talking about descends from a system built to make sure the value was added somewhere else. **A country can inherit its own extraction.** For high schoolers, that reframing — that the problem is not a villain but a *structure*, and one their own government now owns — is more durable than any villain story.
+That is the deep version of Arkaah's complaint. When she says *"we have legislated against"* an indigenous chocolate industry, the legislation she is talking about descends from a system built to make sure the value was added somewhere else. **A country can inherit its own extraction.** For high schoolers, that reframing, that the problem is not a villain but a *structure*, and one their own government now owns, is more durable than any villain story.
 
 ### 3.5 Cross-links to the rest of the Commodity Map
 
 - **Gold.** Same country, same land, and they are now in direct conflict: *galamsey* (illegal small-scale gold mining) is eating cocoa farms. Farmers are paid cash to let miners cut the trees, and the resulting pollution damages neighbouring farms — *"forcing the owners of surrounding farms to also consider selling their land for gold"* (Fountain & Huetz-Adams, 2025, p. 28). COCOBOD figures reported in Ghanaian press went from **>19,000 ha destroyed (2022)** to **~30,000 ha (2024–25)**, with ~50,000 ha more at risk. **Two commodities, one hectare, and the more valuable one is winning.** This is the strongest cross-episode link in the whole map.
 - **Sugar.** A 42% bar is 58% *other things*, and most of that is sugar. Where does Ghana's sugar come from? (Largely imported.) The chocolate bar is a **multi-commodity object**.
-- **Coffee.** The control group. Same country, same farmers, same soil — minus the institution. See file 02.
-- **Palm oil / vanilla.** Cabo Corso uses **Ghanaian vanilla** — a rare and specific detail worth pulling on.
+- **Coffee.** The control group. Same country, same farmers, same soil, minus the institution. See file 02.
+- **Palm oil / vanilla.** Cabo Corso uses **Ghanaian vanilla**, a rare and specific detail worth pulling on.
 
 ### 3.6 What makes a bean-to-bar business survive
 
 Worth asking her, and worth teaching as a business lesson: the graveyard is full of origin-country chocolate makers. The survivors seem to share some combination of a **domestic premium customer** (Accra's supermarkets, hotels, tourists), a **diaspora/export channel**, **low fixed costs** (a garden shed beats a factory), and **a story that carries the price**. Have students build the P&L.
 
-The uncomfortable counter-example is worth teaching too: **Divine Chocolate**, the famous farmer-owned brand, is no longer majority farmer-owned. In June 2020 the German manufacturer Ludwig Weinrich acquired **80%**, and Kuapa Kokoo's stake fell from ~44–45% to **20%** — yet Divine's own "Our Story" page still tells the 45% story and does not mention Weinrich (see file 03 §5). **A ninety-second, student-verifiable media-literacy exercise: read the marketing page, then find the ownership.**
+The uncomfortable counter-example is worth teaching too: **Divine Chocolate**, the famous farmer-owned brand, is no longer majority farmer-owned. In June 2020 the German manufacturer Ludwig Weinrich acquired **80%**, and Kuapa Kokoo's stake fell from ~44-45% to **20%**, yet Divine's own "Our Story" page still tells the 45% story and does not mention Weinrich (see file 03 §5). **A ninety-second, student-verifiable media-literacy exercise: read the marketing page, then find the ownership.**
 
 ---
 
@@ -2458,26 +2458,26 @@ Things I cannot do and he can, plus the threads worth pulling. **⏰ = time-sens
 ### 4.1 Things only a human with access can get
 
 - **⏰ Ask Preba Arkaah who else he should talk to.** The single highest-leverage question in the interview, and it costs nothing. Ask it at the end, when she is warm.
-- **The other Ghanaian women in chocolate.** '57 Chocolate (**Kimberly and Priscilla Addison** — Ghanaian-American sisters, founded 2016, ~20 employees, ~1,000 bars/week; Cuisine Noir, 2026) and **Midunu** (**Selassie Atadika**, chef, ex-UN, named to the 2025 TIME Earth Awards; Cuisine Noir, n.d.). Three women-led Ghanaian chocolate makers is not an anecdote, it is a **cohort** — and a genuinely strong BVC episode.
-- **Ghanaian coffee, if he wants the coffee thread to be real:** **Benedicta Tamakloe** of **Bean Masters** (Accra, founded 2018) sources **exclusively from a collective of ~200 women growers — reportedly the largest of its kind in Ghana** — who produced ~10 tonnes in a year (Reuters, 2023). And **Emi-Beth Aku Quantson** of **Kawa Moka**. Either would give BVC the coffee episode that Mansa Gold cannot.
+- **The other Ghanaian women in chocolate.** '57 Chocolate (**Kimberly and Priscilla Addison**, Ghanaian-American sisters, founded 2016, ~20 employees, ~1,000 bars/week; Cuisine Noir, 2026) and **Midunu** (**Selassie Atadika**, chef, ex-UN, named to the 2025 TIME Earth Awards; Cuisine Noir, n.d.). Three women-led Ghanaian chocolate makers is not an anecdote, it is a **cohort**, and a genuinely strong BVC episode.
+- **Ghanaian coffee, if he wants the coffee thread to be real:** **Benedicta Tamakloe** of **Bean Masters** (Accra, founded 2018) sources **exclusively from a collective of ~200 women growers, reportedly the largest of its kind in Ghana**, who produced ~10 tonnes in a year (Reuters, 2023). And **Emi-Beth Aku Quantson** of **Kawa Moka**. Either would give BVC the coffee episode that Mansa Gold cannot.
 - **A cooperative.** **ABOCFA** (Suhum, Eastern Region) is billed as Ghana's only organic Fairtrade-certified cocoa cooperative and sells to Tony's Chocolonely, Taza, TCHO and Dr. Bronner's. Roughly 26% of its ~1,100 members are women; **Sarah Larweh** is on the board. A cooperative will talk about price in a way a brand will not.
-- **A US importer/distributor.** Whoever brings Ghanaian bars into the US can show BAM a **landed-cost sheet** — the single most teachable document in this entire subject.
+- **A US importer/distributor.** Whoever brings Ghanaian bars into the US can show BAM a **landed-cost sheet**, the single most teachable document in this entire subject.
 - **Diaspora and trade bodies that can open doors:** the Ghana Export Promotion Authority; the Ghana Chocolate Hub (which lists Mansa Gold in its directory); the Ghana embassy's trade section.
 
-### 4.2 Primary sources that no one publishes — the gold
+### 4.2 Primary sources that no one publishes, the gold
 
 These are the artifacts that turn a claim into evidence. They exist only inside a relationship, which is why the interview matters more than the research.
 
 - **⭐ A price sheet or invoice.** What Mansa Gold pays per kilo of beans, and what a bar wholesales for. **Nothing published anywhere gives this.**
 - **⭐ A cost breakdown of one bar.** Even scrawled on paper. This is the worksheet.
-- **A shipping/export document** — a bill of lading, a customs form, a landed-cost calculation. Students have never seen one, and it makes global trade *physical*.
+- **A shipping/export document**, a bill of lading, a customs form, a landed-cost calculation. Students have never seen one, and it makes global trade *physical*.
 - **A COCOBOD purchase receipt or an LBC document** showing how she legally acquires beans. This would **settle the sourcing question** that no journalist has resolved.
-- **A cooperative's payout record** — what a farmer actually received, per bag, on a date.
+- **A cooperative's payout record**, what a farmer actually received, per bag, on a date.
 - **Photos:** the pod, the fermentation, the drying, the roast, the mould, the shed. And **a farmer's face, with their name and permission.**
 
 Ask for these **explicitly and specifically**. "Any data you can share" gets nothing. "Could I photograph one invoice with the customer name blacked out?" gets an invoice.
 
-### 4.3 Things I genuinely could not verify — where the silence is
+### 4.3 Things I genuinely could not verify, where the silence is
 
 Do not read these silences as "there's nothing there." Each is a real gap.
 
@@ -2487,45 +2487,45 @@ Do not read these silences as "there's nothing there." Each is a real gap.
 | **How she legally buys beans** | Site, press, COCOBOD, PNDCL 81 | **Ask her.** No journalist has resolved this. |
 | **Her exact former employer and job title** | Yen says "Azure"; another profile says Guinness Ghana Breweries / Diageo | **Ask her.** Sources conflict. |
 | **The AMAKA Studio profile's contents** | Page renders client-side; body unretrievable | Her, or a browser with JS |
-| **Whether Ghana Cocoa Board (Amendment) Act 2020 (Act 1035) touches the s.4 purchase ban** | GhaLII, Dennislaw, FAOLEX — could not retrieve text | **A Ghanaian lawyer** (she is one), or Dennislaw with a subscription |
-| **The "COCOBOD minimum lot = one tonne" claim** | Trade press only, no primary COCOBOD document | **Ask her** — she is exactly the person it would bind |
-| **"91% of Ghanaian cocoa households below the living income benchmark" (2024)** | Secondary reporting only; could not identify the publisher | The original study — worth chasing before quoting |
-| **CSSVD infected area** | Sources give **90,000 ha** (USDA FAS, 2025) and **592,230 ha** (survey via trade press) — a 6.5× gap | COCOBOD/CRIG directly. Likely "targeted for rehabilitation" vs "any infection" — **do not conflate them** |
+| **Whether Ghana Cocoa Board (Amendment) Act 2020 (Act 1035) touches the s.4 purchase ban** | GhaLII, Dennislaw, FAOLEX, could not retrieve text | **A Ghanaian lawyer** (she is one), or Dennislaw with a subscription |
+| **The "COCOBOD minimum lot = one tonne" claim** | Trade press only, no primary COCOBOD document | **Ask her**, she is exactly the person it would bind |
+| **"91% of Ghanaian cocoa households below the living income benchmark" (2024)** | Secondary reporting only; could not identify the publisher | The original study, worth chasing before quoting |
+| **CSSVD infected area** | Sources give **90,000 ha** (USDA FAS, 2025) and **592,230 ha** (survey via trade press), a 6.5× gap | COCOBOD/CRIG directly. Likely "targeted for rehabilitation" vs "any infection", **do not conflate them** |
 | **Galamsey hectares destroyed** | COCOBOD statements via press; no primary dataset | COCOBOD directly |
 | **The "$100bn industry, $6bn to Africa" claim** | Widely repeated, attributed to Akufo-Addo; **no published arithmetic exists behind it** | Nobody. **Treat it as rhetoric, not data** |
-| **Any impact evaluation of a gender programme in cocoa** | Searched hard. **Found none — not one** | Nobody has done it. **That absence is the finding** (file 03 §3) |
+| **Any impact evaluation of a gender programme in cocoa** | Searched hard. **Found none, not one** | Nobody has done it. **That absence is the finding** (file 03 §3) |
 
 ### 4.4 First-hand research BAM can do without anyone's permission
 
-- **⏰ Track the cocoa futures price with students across a semester.** It was ~$12,900/t in Dec 2024 and ~$5,817/t on 13 July 2026 — down ~30% year-on-year (Trading Economics, 2026). A live, volatile, real number. Have them predict, then check. **Time-sensitive in the good way: the volatility is the curriculum.**
+- **⏰ Track the cocoa futures price with students across a semester.** It was ~$12,900/t in Dec 2024 and ~$5,817/t on 13 July 2026, down ~30% year-on-year (Trading Economics, 2026). A live, volatile, real number. Have them predict, then check. **Time-sensitive in the good way: the volatility is the curriculum.**
 - **The comparative tasting** (§3.3). Ghana vs. Côte d'Ivoire vs. Ecuador. Cheap, physical, memorable.
 - **The wrapper audit.** Every bar in one supermarket aisle: who made it, where are the beans from, what does the certification actually promise? Most will fail question two.
-- **Visit an importer or a US bean-to-bar maker.** Many will happily show a cost sheet — they are proud of it.
+- **Visit an importer or a US bean-to-bar maker.** Many will happily show a cost sheet, they are proud of it.
 - **The Divine Chocolate exercise** (§3.6). Read the marketing page, then find the ownership. Ninety seconds, and students will never read a brand story the same way again.
 
-### 4.5 Threads worth pulling — each is its own BVC episode
+### 4.5 Threads worth pulling, each is its own BVC episode
 
 | Thread | Why it's an episode | What BAM needs |
 |---|---|---|
 | **⏰ Cocoa vs. gold on the same hectare** | Two Commodity Map episodes literally colliding. Galamsey is destroying cocoa farms *now* | A farmer or COCOBOD officer who will talk about it |
 | **The control group: Ghana's dead coffee industry** | Same country, same farmers, minus the institution. Output fell from 6,700 t (1967) to ~736 t. **The best pure-economics story in the whole project** | Bean Masters or Kawa Moka (file 02) |
-| **⏰ EUDR: the rule that could cut smallholders out** | ~75% of Ghana's cocoa goes to the EU. Compliance for large operators: **30 Dec 2026** — inside this school year | The regulation text; a Ghanaian exporter's view |
-| **Who owns the "farmer-owned" chocolate?** | Divine/Kuapa/Weinrich. A perfect media-literacy episode | Nothing — it's all public. **Just do it** |
+| **⏰ EUDR: the rule that could cut smallholders out** | ~75% of Ghana's cocoa goes to the EU. Compliance for large operators: **30 Dec 2026**, inside this school year | The regulation text; a Ghanaian exporter's view |
+| **Who owns the "farmer-owned" chocolate?** | Divine/Kuapa/Weinrich. A perfect media-literacy episode | Nothing, it's all public. **Just do it** |
 | **The statistic that came from nowhere** | The "45% of cocoa labour is women" figure traces to an **unpublished internal consultancy memo** (file 03). A whole lesson on how a number becomes "true" | Nothing. It's documented |
 
-**Triage:** the EUDR deadline (**30 Dec 2026**) and the current price cycle are the time-sensitive ones. Everything else is evergreen — and the Divine/Weinrich and phantom-statistic episodes need **no access at all** and could be built this month.
+**Triage:** the EUDR deadline (**30 Dec 2026**) and the current price cycle are the time-sensitive ones. Everything else is evergreen, and the Divine/Weinrich and phantom-statistic episodes need **no access at all** and could be built this month.
 
 ---
 
-## 5. Capture checklist — what to physically collect
+## 5. Capture checklist, what to physically collect
 
 An interview becomes course content only if the assets come home with you. Print this.
 
 ### Before the interview
 
 - [ ] **Send the media release in advance.** Do not spring a consent form on someone at the end of a warm conversation. See \`plans/user-tasks/83-mansa-gold-interview.md\`.
-- [ ] Confirm **how she wants to be named and credited** (Preba Arkaah / Preba Arkaah Greenstreet — sources differ) and her **title**.
-- [ ] Send **3–4 questions in advance** — specifically the ones that need her to *look something up* (the price breakdown, the bean cost). She cannot recall an invoice on the spot.
+- [ ] Confirm **how she wants to be named and credited** (Preba Arkaah / Preba Arkaah Greenstreet, sources differ) and her **title**.
+- [ ] Send **3-4 questions in advance**, specifically the ones that need her to *look something up* (the price breakdown, the bean cost). She cannot recall an invoice on the spot.
 - [ ] Ask in advance for **permission to use the Mansa Gold logo and product images**, and whether she has a **press kit**.
 
 ### Audio (the thing that ruins interviews)
@@ -2541,27 +2541,27 @@ An interview becomes course content only if the assets come home with you. Print
 - [ ] **B-roll is the course.** Ask for: cocoa pods, wet beans, fermentation boxes, drying beans in the sun, the roaster, the grinder/melanger, the conche, the moulds, the wrapped bar, the shelf in the shop, her hands working.
 - [ ] **Her at work**, not just her talking.
 - [ ] **The farm**, if she can get you there or has footage.
-- [ ] **Vertical clips** as well as horizontal — the shares are vertical.
+- [ ] **Vertical clips** as well as horizontal, the shares are vertical.
 - [ ] Get **high-res product photos** and the **logo file** (SVG/PNG).
 
 ### Data and documents (ask, explicitly, by name)
 
 - [ ] Retail **price** and **weight** of a bar.
-- [ ] **Cost breakdown** of one bar — even approximate.
+- [ ] **Cost breakdown** of one bar, even approximate.
 - [ ] What she **pays per kilo/bag for beans**, and to whom.
 - [ ] **Region and, if she'll give it, farm names**.
 - [ ] **Any document**: invoice, price list, export paperwork, COCOBOD/LBC receipt. Offer to redact.
 - [ ] The **2019 International Cocoa Award** documentation.
 - [ ] **Production volume** (bars/week, tonnes/year).
 
-### Consent — do not skip this
+### Consent, do not skip this
 
 - [ ] **Signed media release**, covering: audio, video, stills, name, likeness, logo, and company name; used in **educational course content**, marketing of that content, and on **learn.witus.online**; **worldwide**, **perpetual**, **royalty-free**.
 - [ ] Explicit line on **logo and trademark use**.
-- [ ] Explicit line on **third-party images** she supplies — *does she have the right to grant them?* (If she hands you a farmer's photo taken by someone else, her permission is not enough.)
+- [ ] Explicit line on **third-party images** she supplies, *does she have the right to grant them?* (If she hands you a farmer's photo taken by someone else, her permission is not enough.)
 - [ ] **Consent for any farmer or employee** who appears identifiably. Their permission is theirs, not hers.
 - [ ] Agree **what is off the record** *before* you start, especially on prices and on COCOBOD.
-- [ ] Offer her a **review of any direct quote used in the course** — it costs little and it is how you get invited back.
+- [ ] Offer her a **review of any direct quote used in the course**, it costs little and it is how you get invited back.
 
 ---
 
@@ -2589,7 +2589,7 @@ Ecofin Agency. (2025). *Ecuador on track to overtake Ghana as world's second-lar
 
 Fairtrade International. (2025, December 11). *Cocoa price announcement*. https://www.fairtrade.net/
 
-Fairtrade International. (2026, April). *Living income reference prices for cocoa from Ghana & Côte d'Ivoire — Explanatory note*. https://www.fairtrade.net/
+Fairtrade International. (2026, April). *Living income reference prices for cocoa from Ghana & Côte d'Ivoire, Explanatory note*. https://www.fairtrade.net/
 
 Food and Agriculture Organization of the United Nations. (2024). *Green coffee bean production* [Data set]. Via Our World in Data. https://ourworldindata.org/grapher/coffee-bean-production
 
@@ -2619,17 +2619,17 @@ Reuters. (2023, February 23). *Female-owned farms and companies are growing Ghan
 
 Setrana, R. (2022, July 25). *Retired Ghanaian woman starts chocolate factory in her garden*. Yen.com.gh. https://yen.com.gh/real-estate/211922-retired-ghanaian-woman-starts-chocolate-factory-garden/
 
-Taylor, J., Beillard, M. J., & Galloway, J. D. (2025, March 31). *Ghana — Cocoa sector overview 2025* (GAIN Report GH2025-0008). USDA Foreign Agricultural Service. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Ghana+-+Cocoa+Sector+Overview+-+2025_Accra_Ghana_GH2025-0008.pdf
+Taylor, J., Beillard, M. J., & Galloway, J. D. (2025, March 31). *Ghana, Cocoa sector overview 2025* (GAIN Report GH2025-0008). USDA Foreign Agricultural Service. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Ghana+-+Cocoa+Sector+Overview+-+2025_Accra_Ghana_GH2025-0008.pdf
 
-Trading Economics. (2026, July 13). *Cocoa — price, chart, historical data*. https://tradingeconomics.com/commodity/cocoa`,
+Trading Economics. (2026, July 13). *Cocoa, price, chart, historical data*. https://tradingeconomics.com/commodity/cocoa`,
     provenance: "plans/future-courses/mansa-gold/00-interview-prep.md",
   },
   {
     key: "mansa-gold-ghana-cocoa-background",
-    title: "Ghana Cocoa — Background Brief",
+    title: "Ghana Cocoa, Background Brief",
     group: "Mansa Gold",
     summary: "Companion to [`00-interview-prep.md`](00-interview-prep.md) · Compiled 13 July 2026",
-    body: `# Ghana Cocoa — Background Brief
+    body: `# Ghana Cocoa, Background Brief
 
 **Companion to [\`00-interview-prep.md\`](00-interview-prep.md)** · Compiled 13 July 2026
 Every figure carries its year. Where authoritative sources disagree, **both are given**. Where nothing credible exists, it says so.
@@ -2639,10 +2639,10 @@ Every figure carries its year. Where authoritative sources disagree, **both are 
 ## Six things that are true and surprising
 
 1. **The famous "Côte d'Ivoire and Ghana grow over 60% of the world's cocoa" line is out of date.** On ICCO's own numbers the pair is now at roughly **50%** (ICCO, 2025).
-2. **A Ghanaian farmer who sells cocoa to anyone but a licensed buyer commits a criminal offence** punishable by **5–10 years in prison, with no option of a fine** (Ghana, 1984, s.4).
-3. **When the world cocoa price nearly quintupled, Ghanaian farmers largely did not benefit** — because the government had already sold the crop forward, up to 18 months in advance (Fountain & Huetz-Adams, 2025).
+2. **A Ghanaian farmer who sells cocoa to anyone but a licensed buyer commits a criminal offence** punishable by **5-10 years in prison, with no option of a fine** (Ghana, 1984, s.4).
+3. **When the world cocoa price nearly quintupled, Ghanaian farmers largely did not benefit**, because the government had already sold the crop forward, up to 18 months in advance (Fountain & Huetz-Adams, 2025).
 4. **When the price fell, the cut reached farmers within weeks.** On 12 February 2026 the farmgate price was cut **28.6% mid-season** (COCOBOD, 2026).
-5. **Ghana's child-labour rate in cocoa areas did not fall over a decade — it rose**, from 44% to 55% (NORC, 2020). And **83% of children working in cocoa in Ghana were working for their own parents.** Both facts are true.
+5. **Ghana's child-labour rate in cocoa areas did not fall over a decade, it rose**, from 44% to 55% (NORC, 2020). And **83% of children working in cocoa in Ghana were working for their own parents.** Both facts are true.
 6. **Finished chocolate is less than 1.5% of Ghana's cocoa exports** (USDA FAS, 2025). The country that grows the bean does not make the bar.
 
 ---
@@ -2666,13 +2666,13 @@ Ghana's share: **13.0% → 11.8% → 12.4%**. Côte d'Ivoire + Ghana combined: *
 **Ghana's own numbers disagree with each other.** For 2023/24:
 
 - **530,873 t** — COCOBOD's official season figure, as reported by USDA FAS (2025), described as *"Ghana's worst performing cocoa bean production season over the past 15 years."*
-- **432,145 t** — the figure the Ghanaian government itself used in its February 2026 cocoa-reform briefing, stating COCOBOD had forward-sold **786,672 t** against a projection of 800,000 t, leaving a **333,767 t rollover** and a loss *"of over US$1 billion"* (COCOBOD, 2026).
+- **432,145 t**, the figure the Ghanaian government itself used in its February 2026 cocoa-reform briefing, stating COCOBOD had forward-sold **786,672 t** against a projection of 800,000 t, leaving a **333,767 t rollover** and a loss *"of over US$1 billion"* (COCOBOD, 2026).
 
-The 432,145 t figure is probably *graded-and-sealed purchases* rather than farm-level production — but the government presents it as production. **Report both.**
+The 432,145 t figure is probably *graded-and-sealed purchases* rather than farm-level production, but the government presents it as production. **Report both.**
 
-**Is Ghana still #2?** **Contested.** Ecuador is projected to export **over 623,000 t in 2026** and multiple outlets report it overtaking Ghana (Ecofin Agency, 2025 — secondary). Ecuador's yields are cited at ~800 kg/ha vs Ghana's ~500. **Do not teach "Ghana is the world's second-largest producer" as settled fact in 2026.**
+**Is Ghana still #2?** **Contested.** Ecuador is projected to export **over 623,000 t in 2026** and multiple outlets report it overtaking Ghana (Ecofin Agency, 2025, secondary). Ecuador's yields are cited at ~800 kg/ha vs Ghana's ~500. **Do not teach "Ghana is the world's second-largest producer" as settled fact in 2026.**
 
-**Context:** ~**800,000 farm families**; ~**US$2 billion** in annual foreign exchange; ~**1.27 million ha** harvested; yields **0.41–0.55 t/ha** (USDA FAS, 2025).
+**Context:** ~**800,000 farm families**; ~**US$2 billion** in annual foreign exchange; ~**1.27 million ha** harvested; yields **0.41-0.55 t/ha** (USDA FAS, 2025).
 
 ---
 
@@ -2686,7 +2686,7 @@ This is the genuinely unusual thing about Ghanaian cocoa, and the best teaching 
 2. **The law backs it.** PNDCL 81 s.3(a): the Board shall *"determine… the prices to be paid from time to time to producers for their cocoa"* (Ghana, 1984). Farmers are paid by cheque under the **Akuafo Cheque System**.
 3. **The crop is sold before it grows.** COCOBOD's Cocoa Marketing Company **forward-sells** most of the crop, up to ~18 months ahead. Farmgate prices are therefore *"based on sales that were effected up to 18 months previously"* (Fountain & Huetz-Adams, 2025, p. 30).
 4. **Licensed Buying Companies (LBCs)** buy from farmers at the fixed price and deliver to COCOBOD. Of 62 registered LBCs only ~20 are active, and **five foreign-owned firms control ~60% of purchases** (secondary reporting, 2026).
-5. **The Quality Control Company grades and seals every bag.** Ghana's grading reputation is *why* its beans earn a premium — and it is the thing coffee never had (see file 02).
+5. **The Quality Control Company grades and seals every bag.** Ghana's grading reputation is *why* its beans earn a premium, and it is the thing coffee never had (see file 02).
 
 ### The price series
 
@@ -2700,7 +2700,7 @@ This is the genuinely unusual thing about Ghanaian cocoa, and the best teaching 
 | 2025/26 (Oct 2025) | 3,625 | MoFEP (2025) |
 | **2025/26 CUT (12 Feb 2026)** | **2,587** | COCOBOD (2026) |
 
-**February 2026 is the first producer-price cut in this series** — GH¢1,038 off a bag, **−28.6%, four months into the season.** Farmers from Western North picketed COCOBOD's Accra headquarters on 20 February 2026 and demanded reciprocal cuts to COCOBOD staff salaries (Ghanaian press, 2026).
+**February 2026 is the first producer-price cut in this series**, GH¢1,038 off a bag, **−28.6%, four months into the season.** Farmers from Western North picketed COCOBOD's Accra headquarters on 20 February 2026 and demanded reciprocal cuts to COCOBOD staff salaries (Ghanaian press, 2026).
 
 ### 🔥 The number everyone gets wrong: what share does the farmer get?
 
@@ -2710,13 +2710,13 @@ This is the genuinely unusual thing about Ghanaian cocoa, and the best teaching 
 |---|---|
 | Government *targets* **70%** of the FOB price for farmers | USDA FAS (2025) |
 | In 2023/24 the producer price was **83%** of the $2,600 FOB price | USDA FAS (2025) |
-| In 2024/25 the farmer's share was **63.9%** — below the target | COCOBOD (2025) |
+| In 2024/25 the farmer's share was **63.9%**, below the target | COCOBOD (2025) |
 | Since Feb 2026, farmers receive **90% of achieved gross FOB** | COCOBOD (2026) |
-| Ghana's farmgate price sits roughly **72% *below* the ICCO world price** — the worst of nine countries charted | Fountain & Huetz-Adams (2025, p. 33) |
+| Ghana's farmgate price sits roughly **72% *below* the ICCO world price**, the worst of nine countries charted | Fountain & Huetz-Adams (2025, p. 33) |
 
 **How can "70% of FOB" and "72% below world price" both be true?**
 
-Because the "70%" is 70% of **the price COCOBOD actually sold at** — which, thanks to forward selling, was around **US$2,500/t** while the spot market was near **US$10,000/t**.
+Because the "70%" is 70% of **the price COCOBOD actually sold at**, which, thanks to forward selling, was around **US$2,500/t** while the spot market was near **US$10,000/t**.
 
 > **This is the single most important thing to explain correctly in the curriculum.** The farmer gets a fair share *of a stale price*.
 
@@ -2738,13 +2738,13 @@ Mansa Gold's founder said publicly: *"The law actually says that nobody can buy 
 
 **Note the symmetry.** s.4(1) binds the buyer; **s.4(7) binds the farmer.** A farmer selling his own beans to an unlicensed chocolate maker is himself committing the offence.
 
-**Corroborated by:** USDA FAS (2025) — *"Only COCOBOD, or persons or organizations authorized by the board, can purchase cocoa"*; ClientEarth (2022); Chambers & Partners (2026). **COCOBOD has publicly warned artisanal chocolate makers to stop buying directly from farmers.**
+**Corroborated by:** USDA FAS (2025), *"Only COCOBOD, or persons or organizations authorized by the board, can purchase cocoa"*; ClientEarth (2022); Chambers & Partners (2026). **COCOBOD has publicly warned artisanal chocolate makers to stop buying directly from farmers.**
 
 **And COCOBOD's answer to her**, from Fiifi Boafo: *"to also ensure we maintain quality there must be a rule guiding the entire process"* (Dzakpata, 2021b). **Give students both sides.** The steelman for COCOBOD is real: the grading system that the monopoly funds is *why* Ghanaian beans command a premium.
 
 ### ⚠️ Gaps here
 
-- **Ghana Cocoa Board (Amendment) Act 2020 (Act 1035)** exists. **I could not retrieve its text**, so I cannot certify s.4 is unamended — only that FAO's consolidated text and USDA's March 2025 description both present it as operative. **Preba Arkaah is a lawyer. Ask her.**
+- **Ghana Cocoa Board (Amendment) Act 2020 (Act 1035)** exists. **I could not retrieve its text**, so I cannot certify s.4 is unamended, only that FAO's consolidated text and USDA's March 2025 description both present it as operative. **Preba Arkaah is a lawyer. Ask her.**
 - The claim that **COCOBOD's minimum sale lot is one tonne**, while Ghana's largest artisanal maker buys less than that, appears **only in trade press**. Unverified. **She is exactly the person it would bind.**
 
 ---
@@ -2757,7 +2757,7 @@ Mansa Gold's founder said publicly: *"The law actually says that nobody can buy 
 
 **Ghana exports semi-finished goods, not chocolate.** That is Arkaah's entire argument, in one statistic.
 
-### 🔍 The "farmers get 6% of a chocolate bar" figure — verified, with provenance
+### 🔍 The "farmers get 6% of a chocolate bar" figure, verified, with provenance
 
 **Origin: Cocoa Barometer 2015**, "Value Distribution" table (Fountain & Huetz-Adams, 2015, p. 33):
 
@@ -2776,24 +2776,24 @@ The same authors restated it in 2025 with a crucial caveat: *"**Before the curre
 
 **Two honest caveats students should hear:**
 1. It measures **value added**, not profit. The manufacturer's 35.2% is gross. The Barometer itself notes *"none of the average margins in the supply chain are exorbitant."*
-2. **UNCTAD's "less than 6.6%" figure is almost certainly the same Barometer number recycled** — do not present them as two independent sources.
+2. **UNCTAD's "less than 6.6%" figure is almost certainly the same Barometer number recycled**, do not present them as two independent sources.
 
 ### ⚠️ The claim to *avoid*
 
-The widely repeated line — *"Ghana and Côte d'Ivoire grow ~65% of the world's cocoa but get $6bn from a $100bn industry"* — is attributed to then-President Akufo-Addo and circulates in several mutually incompatible versions ($120bn/<10%; $165bn/6%). **I could not find published arithmetic behind any of them.** It is **advocacy rhetoric, not data**.
+The widely repeated line, *"Ghana and Côte d'Ivoire grow ~65% of the world's cocoa but get $6bn from a $100bn industry"*, is attributed to then-President Akufo-Addo and circulates in several mutually incompatible versions ($120bn/<10%; $165bn/6%). **I could not find published arithmetic behind any of them.** It is **advocacy rhetoric, not data**.
 
 **Teach the verifiable pair instead:** Africa grows **~71.5%** of world cocoa (ICCO, 2025), and finished chocolate is **<1.5%** of Ghana's cocoa exports (USDA FAS, 2025). That says the same thing, and it is true.
 
 ---
 
-## 5. The 2023–2026 price shock
+## 5. The 2023-2026 price shock
 
 ### The peak and the fall
 
 | Date | Price | Source |
 |---|---|---|
-| 2022–23 (pre-crisis norm) | ~US$2,500/t | Fountain & Huetz-Adams (2025) |
-| **December 2024 (all-time high)** | **~US$12,900–12,931/t** | Trading Economics (2026) |
+| 2022-23 (pre-crisis norm) | ~US$2,500/t | Fountain & Huetz-Adams (2025) |
+| **December 2024 (all-time high)** | **~US$12,900-12,931/t** | Trading Economics (2026) |
 | Mid-2025 | below US$8,000/t | J.P. Morgan (Allen et al., 2025) |
 | **13 July 2026** | **US$5,817/t** (−29.8% y/y) | Trading Economics (2026) |
 
@@ -2823,18 +2823,18 @@ Specifically: **El Niño rains** (rotting pods bred disease), **swollen shoot vi
 
 ---
 
-## 6. Child labour — the real numbers, without the slogan
+## 6. Child labour, the real numbers, without the slogan
 
 **Primary source: NORC at the University of Chicago (2020),** funded by the U.S. Department of Labor. Survey round 2018/19.
 
 ### The counts
 
-- **1.56 million children** in child labour in cocoa across Côte d'Ivoire and Ghana — **~770,000 in Ghana**.
-- **1.48 million** exposed to **hazardous** child labour — **~710,000 in Ghana**.
+- **1.56 million children** in child labour in cocoa across Côte d'Ivoire and Ghana, **~770,000 in Ghana**.
+- **1.48 million** exposed to **hazardous** child labour, **~710,000 in Ghana**.
 
-### The prevalence — and Ghana is worse than Côte d'Ivoire
+### The prevalence, and Ghana is worse than Côte d'Ivoire
 
-Among children aged 5–17 in agricultural households in cocoa-growing areas:
+Among children aged 5-17 in agricultural households in cocoa-growing areas:
 
 | | Côte d'Ivoire | **Ghana** |
 |---|---|---|
@@ -2843,7 +2843,7 @@ Among children aged 5–17 in agricultural households in cocoa-growing areas:
 
 Over the same decade **production rose 62%**. NORC's own verdict: *"despite the efforts made by the governments, Industry, and other key stakeholders… during the past 10 years, **the child labor and hazardous child labor prevalence rates did not go down**"* (NORC, 2020, p. 12).
 
-### Get the distinctions right — this is where the slogan breaks
+### Get the distinctions right, this is where the slogan breaks
 
 - **Child labour** is defined by **ILO Conventions 138 and 182**. **Hazardous child labour** in cocoa means sharp tools, land clearing, heavy loads, agrochemicals, long hours, night work.
 - **Forced labour / child slavery is a different thing** (ILO C29) and **NORC explicitly did not measure it**: *"This research focuses on child labor and hazardous child labor, **not forced child labor/child slavery**"* (p. 5).
@@ -2853,34 +2853,34 @@ Over the same decade **production rose 62%**. NORC's own verdict: *"despite the 
 
 ### Why price is the root cause
 
-- **The Cocoa Barometer's arithmetic:** a working Child Labour Monitoring and Remediation System costs **US$75–95 per household per year** — *"only about **6% of the costs of purchasing the cocoa at farm gate price**."* And even a well-run one *"can only stop around **30%** of child labourers from engaging in hazardous activities."* Their conclusion: *"**Tackling child labour will also require less price pressure at farm gate level**"* (Fountain & Huetz-Adams, 2025, p. 133).
-- The 2022 Barometer is blunter: with a living wage at **US$13.50/day in Ghana**, hired labour is unaffordable — so child labour *"could be cynically seen as **a supply of free/cheap labour**"* (Fountain & Huetz-Adams, 2022, p. 10).
+- **The Cocoa Barometer's arithmetic:** a working Child Labour Monitoring and Remediation System costs **US$75-95 per household per year**, *"only about **6% of the costs of purchasing the cocoa at farm gate price**."* And even a well-run one *"can only stop around **30%** of child labourers from engaging in hazardous activities."* Their conclusion: *"**Tackling child labour will also require less price pressure at farm gate level**"* (Fountain & Huetz-Adams, 2025, p. 133).
+- The 2022 Barometer is blunter: with a living wage at **US$13.50/day in Ghana**, hired labour is unaffordable, so child labour *"could be cynically seen as **a supply of free/cheap labour**"* (Fountain & Huetz-Adams, 2022, p. 10).
 
 ### The Harkin-Engel Protocol
 
-Signed **September 2001**. A **voluntary industry agreement** — not a treaty, not law. Its central pledge was a **70% reduction** in the worst forms of child labour in the two countries. **It was missed at every deadline: 2005 → 2008 → 2010 → 2015 → 2020.** The NORC data above is the terminal verdict on the 2020 deadline.
+Signed **September 2001**. A **voluntary industry agreement**, not a treaty, not law. Its central pledge was a **70% reduction** in the worst forms of child labour in the two countries. **It was missed at every deadline: 2005 → 2008 → 2010 → 2015 → 2020.** The NORC data above is the terminal verdict on the 2020 deadline.
 
 ### *Nestlé USA, Inc. v. Doe* (2021)
 
-**593 U.S. 628**, decided 17 June 2021. Six Malians alleged they were trafficked into Côte d'Ivoire as children and enslaved on cocoa farms. **Held, 8–1** (Thomas, J.): the suit impermissibly sought **extraterritorial application of the Alien Tort Statute**; allegations of "general corporate activity" in the US are insufficient.
+**593 U.S. 628**, decided 17 June 2021. Six Malians alleged they were trafficked into Côte d'Ivoire as children and enslaved on cocoa farms. **Held, 8-1** (Thomas, J.): the suit impermissibly sought **extraterritorial application of the Alien Tort Statute**; allegations of "general corporate activity" in the US are insufficient.
 
 > **The precise, non-sloganeering framing:** the Court did **not** find the companies innocent or the allegations false. It closed a US **jurisdictional** door. Students should learn the difference between "you cannot sue here" and "it did not happen."
 
 ---
 
-## 7. Certification — what the premium actually is
+## 7. Certification, what the premium actually is
 
 ### Fairtrade, current figures (Fairtrade International, 2025)
 
 | Origin | Minimum Price | **Premium** | Valid |
 |---|---|---|---|
 | **Ghana** | US$2,400/t FOB | **US$240/t** | until 1 Oct 2026 |
-| **Ghana (from 1 Oct 2026)** | US$3,500/t FOB | **US$275/t** | — |
+| **Ghana (from 1 Oct 2026)** | US$3,500/t FOB | **US$275/t** |, |
 | Côte d'Ivoire | €2,206/t FOB | €221/t | until 1 Oct 2026 |
 
 **Three things a curriculum must say about this table:**
 
-1. **These are FOB prices, not farmgate prices.** They are paid at the export dock, to the exporter/cooperative — not to the farmer at the buying centre.
+1. **These are FOB prices, not farmgate prices.** They are paid at the export dock, to the exporter/cooperative, not to the farmer at the buying centre.
 2. **The Minimum Price is a floor, and right now it is not binding.** With cocoa at **US$5,817/t**, a floor of $2,400 (or even $3,500) is far below market. **The only thing Fairtrade currently adds in Ghana is the Premium.**
 3. **Do the division.** US$240/t on a ~US$5,800/t market is **about 4%**. And from October 2026, a new rule mandates that only **40% of the premium** be paid in cash to cooperative members.
 
@@ -2897,9 +2897,9 @@ Signed **September 2001**. A **voluntary industry agreement** — not a treaty, 
 
 Fairtrade's own honesty, from the same document: *"it is no guarantee that all farmers will earn a living income… **The LIRP is not a standalone solution**."*
 
-### The honest critiques — from the sector's own watchdog
+### The honest critiques, from the sector's own watchdog
 
-**Fountain & Huetz-Adams, Cocoa Barometer 2022** (pp. 43–44):
+**Fountain & Huetz-Adams, Cocoa Barometer 2022** (pp. 43-44):
 
 > *"The race for certified volumes in the past decade **has not led to the bar being raised**."*
 >
@@ -2915,13 +2915,13 @@ Executive summary, same report: *"**Without significantly higher farm gate price
 
 ---
 
-## 8. EUDR — the rule that could cut smallholders out ⏰
+## 8. EUDR, the rule that could cut smallholders out ⏰
 
 **Instrument:** Regulation (EU) **2023/1115**, as amended by Regulation (EU) **2025/2650**.
 
-**What it requires:** cocoa and chocolate placed on (or exported from) the EU market must be **deforestation-free** — not grown on land deforested after **31 December 2020** — produced legally in the country of origin, and covered by a **due-diligence statement backed by GPS coordinates of the plot of production**. Penalties up to **4% of annual EU turnover**.
+**What it requires:** cocoa and chocolate placed on (or exported from) the EU market must be **deforestation-free**, not grown on land deforested after **31 December 2020**, produced legally in the country of origin, and covered by a **due-diligence statement backed by GPS coordinates of the plot of production**. Penalties up to **4% of annual EU turnover**.
 
-**⏰ Current compliance dates — it has been delayed twice:**
+**⏰ Current compliance dates, it has been delayed twice:**
 
 | Who | Deadline |
 |---|---|
@@ -2932,13 +2932,13 @@ Executive summary, same report: *"**Without significantly higher farm gate price
 
 > **A teaching gift:** USDA FAS's March 2025 report was written when the deadlines were **30 Dec 2025 / 30 June 2026**. It is now wrong. **Show students a real, authoritative, out-of-date document** and ask them how they'd know. That is media literacy with teeth.
 
-**Ghana's exposure is not marginal — it is the market.** In 2024 Ghana sent ~**292,755 MT** of cocoa and cocoa products to the EU: about **75% of its total reported export volume** (USDA FAS, 2025).
+**Ghana's exposure is not marginal, it is the market.** In 2024 Ghana sent ~**292,755 MT** of cocoa and cocoa products to the EU: about **75% of its total reported export volume** (USDA FAS, 2025).
 
-**What researchers say about the smallholder burden.** The EU's own Joint Research Centre (Boysen, 2025) models *"large shifts in trade flows and a reduction in global cocoa production, while farmer welfare increases,"* but names the opponents' case: **high transaction costs**, and *"the possible exclusion of some farmers, **especially small and remote farmers and indigenous peoples**, from EUDR-compliant supply chains as compliance costs are likely higher."* Plus **leakage** — non-compliant cocoa simply diverted to non-EU markets.
+**What researchers say about the smallholder burden.** The EU's own Joint Research Centre (Boysen, 2025) models *"large shifts in trade flows and a reduction in global cocoa production, while farmer welfare increases,"* but names the opponents' case: **high transaction costs**, and *"the possible exclusion of some farmers, **especially small and remote farmers and indigenous peoples**, from EUDR-compliant supply chains as compliance costs are likely higher."* Plus **leakage**, non-compliant cocoa simply diverted to non-EU markets.
 
-**And the sting in the tail:** the regulation's *recital* asks for *"a fair price… to producers, in particular smallholders, so as to enable a living income"* — but, as the JRC paper notes, **that requirement "is not repeated in the regulation itself."** The traceability is binding. The fair price is not.
+**And the sting in the tail:** the regulation's *recital* asks for *"a fair price… to producers, in particular smallholders, so as to enable a living income"*, but, as the JRC paper notes, **that requirement "is not repeated in the regulation itself."** The traceability is binding. The fair price is not.
 
-**Cost estimate:** Fairtrade producer networks put the cost of geolocation data collection at **€5,000–€15,000 per producer organisation**.
+**Cost estimate:** Fairtrade producer networks put the cost of geolocation data collection at **€5,000-€15,000 per producer organisation**.
 
 **Where Ghana actually is:** COCOBOD is registering GPS coordinates; ~**250,000 farms mapped by 2020**, and by 2023 **82%** of cocoa sourced by companies with sustainability agreements was traceable to the producer (World Cocoa Foundation, via USDA FAS, 2025).
 
@@ -2948,7 +2948,7 @@ Executive summary, same report: *"**Without significantly higher farm gate price
 
 ### Cocoa Swollen Shoot Virus Disease (CSSVD)
 
-- **Mortality is total.** *"The mortality rate of CSSV is 100%"* — up to complete tree loss within three years, *"potentially making the land unfit for cocoa cultivation from then on"* (Fountain & Huetz-Adams, 2025, pp. 27–28). Peer-reviewed work puts yield loss at **30–50%** and tree death within **2–3 years** of infection (Ameyaw et al., 2023).
+- **Mortality is total.** *"The mortality rate of CSSV is 100%"*, up to complete tree loss within three years, *"potentially making the land unfit for cocoa cultivation from then on"* (Fountain & Huetz-Adams, 2025, pp. 27-28). Peer-reviewed work puts yield loss at **30-50%** and tree death within **2-3 years** of infection (Ameyaw et al., 2023).
 - **Prevalence in Ghana: "over 30%"** (Ameyaw et al., 2023).
 
 > ⚠️ **Area infested — sources disagree by 6.5×, and you must not conflate them:**
@@ -2961,32 +2961,32 @@ Executive summary, same report: *"**Without significantly higher farm gate price
 
 ### Black pod
 
-Losses *"up to ca. 10% per year"* (Fountain & Huetz-Adams, 2025) — far less lethal than CSSVD per farm, but recurrent. USDA FAS attributes part of the 2023/24 collapse to a black-pod uptick *"coincid[ing] with a cutback in government-supplied insecticides."*
+Losses *"up to ca. 10% per year"* (Fountain & Huetz-Adams, 2025), far less lethal than CSSVD per farm, but recurrent. USDA FAS attributes part of the 2023/24 collapse to a black-pod uptick *"coincid[ing] with a cutback in government-supplied insecticides."*
 
-### 🔥 Galamsey — where two Commodity Map episodes collide
+### 🔥 Galamsey, where two Commodity Map episodes collide
 
 **The mechanism** (Fountain & Huetz-Adams, 2025, p. 28):
 
 > *"Farmers are paid cash sums for the miners to use the farmers' land, cut down the trees, and create open mines where once a farm was… it also heavily **pollutes groundwater and soil**, damaging surrounding plantations, **forcing the owners of surrounding farms to also consider selling their land for gold**."*
 
-**That contagion is the point.** It is not a static loss — one sale poisons the neighbours into selling.
+**That contagion is the point.** It is not a static loss, one sale poisons the neighbours into selling.
 
 **And it takes the labour too:** *"more lucrative galamsey activities have **enticed younger laborers away from farming**"* (USDA FAS, 2025).
 
-**The hectares — COCOBOD statements via press, escalating:**
+**The hectares, COCOBOD statements via press, escalating:**
 
 | Figure | Year | Attributed to |
 |---|---|---|
 | >19,000 ha destroyed | 2022 | COCOBOD CEO Joseph Boahen Aidoo |
-| ~30,000 ha destroyed, ~50,000 ha more at risk | 2024–25 | COCOBOD CEO Dr Randy Abbey |
+| ~30,000 ha destroyed, ~50,000 ha more at risk | 2024-25 | COCOBOD CEO Dr Randy Abbey |
 
 > ⚠️ **All of these reach me through Ghanaian press, not a primary COCOBOD dataset.** Present them as *COCOBOD statements reported in the press, with the year attached*. **The 19,000 → 30,000 trajectory is itself the story**, and the escalation is the honest thing to teach.
 
-Over **90%** of Ghana's cocoa comes from the Eastern, Western and Ashanti regions — the same regions worst hit by galamsey.
+Over **90%** of Ghana's cocoa comes from the Eastern, Western and Ashanti regions, the same regions worst hit by galamsey.
 
 ### Climate
 
-**Schroth, Läderach, Martinez-Valle, Bunn & Jassogne (2016)**, using 19 climate models under RCP 6.0 for the 2050s, project *"a potential loss of approximately **50% of current climatically suitable area by 2050**"* — but with **strong regional variation**. Some areas become unsuitable; some need adaptation; and **some become *more* suitable** (the Kwahu Plateau in Ghana; south-western Côte d'Ivoire).
+**Schroth, Läderach, Martinez-Valle, Bunn & Jassogne (2016)**, using 19 climate models under RCP 6.0 for the 2050s, project *"a potential loss of approximately **50% of current climatically suitable area by 2050**"*, but with **strong regional variation**. Some areas become unsuitable; some need adaptation; and **some become *more* suitable** (the Kwahu Plateau in Ghana; south-western Côte d'Ivoire).
 
 > ⚠️ **Do not teach "cocoa will be gone by 2050."** The literature says **the map moves**, and roughly half the currently suitable area is at risk. That is serious, and it is a different claim — and it is the one the researchers actually make.
 
@@ -2996,14 +2996,14 @@ Over **90%** of Ghana's cocoa comes from the Eastern, Western and Ashanti region
 
 State these as gaps; do not paper over them.
 
-1. **Ghana Cocoa Board (Amendment) Act 2020 (Act 1035)** and **PNDCL 265 (1991)** — could not retrieve either text. I cannot certify s.4 is unamended, only that FAO's consolidated text and USDA (March 2025) both present it as operative.
-2. The **COCOBOD "one-tonne minimum lot"** obstacle for artisanal makers — **trade press only**.
-3. The **"91% of Ghanaian cocoa households below the living income benchmark"** study — could not identify the publisher.
-4. **CSSVD area figures** (592,230 ha; 81% of Western North affected; 17% annual loss) — **secondary only**.
-5. **Galamsey hectare figures** — COCOBOD statements via press; **no primary dataset**.
-6. The **"$100bn industry / $6bn to Africa"** family of claims — **no published arithmetic exists behind any version**.
+1. **Ghana Cocoa Board (Amendment) Act 2020 (Act 1035)** and **PNDCL 265 (1991)**, could not retrieve either text. I cannot certify s.4 is unamended, only that FAO's consolidated text and USDA (March 2025) both present it as operative.
+2. The **COCOBOD "one-tonne minimum lot"** obstacle for artisanal makers, **trade press only**.
+3. The **"91% of Ghanaian cocoa households below the living income benchmark"** study, could not identify the publisher.
+4. **CSSVD area figures** (592,230 ha; 81% of Western North affected; 17% annual loss), **secondary only**.
+5. **Galamsey hectare figures**, COCOBOD statements via press; **no primary dataset**.
+6. The **"$100bn industry / $6bn to Africa"** family of claims, **no published arithmetic exists behind any version**.
 7. **Any quantified attribution of the 2024 price spike to speculation.**
-8. **ICCO country-level production for 2025/26** — ICCO put country tables behind a paid subscription; the last free country table is February 2025.
+8. **ICCO country-level production for 2025/26**, ICCO put country tables behind a paid subscription; the last free country table is February 2025.
 
 ---
 
@@ -3037,7 +3037,7 @@ European Union. (2023). *Regulation (EU) 2023/1115 on deforestation-free product
 
 Fairtrade International. (2025, December 11). *Cocoa price announcement*. https://www.fairtrade.net/
 
-Fairtrade International. (2026, April). *Living income reference prices for cocoa from Ghana & Côte d'Ivoire — Explanatory note*. https://www.fairtrade.net/
+Fairtrade International. (2026, April). *Living income reference prices for cocoa from Ghana & Côte d'Ivoire, Explanatory note*. https://www.fairtrade.net/
 
 Fountain, A. C., & Huetz-Adams, F. (2015). *Cocoa Barometer 2015*. VOICE Network.
 
@@ -3055,19 +3055,19 @@ NORC at the University of Chicago. (2020). *Assessing progress in reducing child
 
 Nestlé USA, Inc. v. Doe, 593 U.S. 628 (2021). https://www.supremecourt.gov/opinions/20pdf/19-416_i4dj.pdf
 
-Schroth, G., Läderach, P., Martinez-Valle, A. I., Bunn, C., & Jassogne, L. (2016). Vulnerability to climate change of cocoa in West Africa: Patterns, opportunities and limits to adaptation. *Science of the Total Environment*, 556, 231–241.
+Schroth, G., Läderach, P., Martinez-Valle, A. I., Bunn, C., & Jassogne, L. (2016). Vulnerability to climate change of cocoa in West Africa: Patterns, opportunities and limits to adaptation. *Science of the Total Environment*, 556, 231-241.
 
-Taylor, J., Beillard, M. J., & Galloway, J. D. (2025, March 31). *Ghana — Cocoa sector overview 2025* (GAIN Report GH2025-0008). USDA Foreign Agricultural Service.
+Taylor, J., Beillard, M. J., & Galloway, J. D. (2025, March 31). *Ghana, Cocoa sector overview 2025* (GAIN Report GH2025-0008). USDA Foreign Agricultural Service.
 
-Trading Economics. (2026, July 13). *Cocoa — price, chart, historical data*. https://tradingeconomics.com/commodity/cocoa`,
+Trading Economics. (2026, July 13). *Cocoa, price, chart, historical data*. https://tradingeconomics.com/commodity/cocoa`,
     provenance: "plans/future-courses/mansa-gold/01-ghana-cocoa-background.md",
   },
   {
     key: "mansa-gold-ghana-coffee-background",
-    title: "Ghana Coffee — Background Brief",
+    title: "Ghana Coffee, Background Brief",
     group: "Mansa Gold",
     summary: "Companion to [`00-interview-prep.md`](00-interview-prep.md) · Compiled 13 July 2026",
-    body: `# Ghana Coffee — Background Brief
+    body: `# Ghana Coffee, Background Brief
 
 **Companion to [\`00-interview-prep.md\`](00-interview-prep.md)** · Compiled 13 July 2026
 
@@ -3077,15 +3077,15 @@ Trading Economics. (2026, July 13). *Cocoa — price, chart, historical data*. h
 
 **The Mansa Gold website has no coffee product, no coffee page, and no mention of coffee** (Mansa Gold, n.d.). Searches for "Mansa Gold coffee" return only chocolate.
 
-If BAM has been told the interview covers coffee, **that is information he has and the public record does not** — ask her directly and early.
+If BAM has been told the interview covers coffee, **that is information he has and the public record does not**, ask her directly and early.
 
-**But do not drop the coffee thread.** It may be the single best pure-economics story in this entire project — just not as *her* business. As a **contrast** to cocoa, Ghanaian coffee is close to a natural experiment, and it is more teachable than anything in the cocoa file.
+**But do not drop the coffee thread.** It may be the single best pure-economics story in this entire project, just not as *her* business. As a **contrast** to cocoa, Ghanaian coffee is close to a natural experiment, and it is more teachable than anything in the cocoa file.
 
 ---
 
 ## The one-sentence version
 
-**Ghana's coffee sector is what happens to a smallholder tree crop when the state withdraws completely — and the answer, measured over 35 years, is that the crop nearly disappears.**
+**Ghana's coffee sector is what happens to a smallholder tree crop when the state withdraws completely, and the answer, measured over 35 years, is that the crop nearly disappears.**
 
 Same country. Same farmers. Same soil. Same cocoa belt. **Minus the institution.**
 
@@ -3095,7 +3095,7 @@ Same country. Same farmers. Same soil. Same cocoa belt. **Minus the institution.
 
 This is not a caveat. **It is the finding**, and it belongs in the lesson.
 
-The flagship source — the **ICO/COCOBOD *Country Coffee Profile: Ghana*** (ICO & Ghana Cocoa Board, 2018), co-authored by Ghana's own cocoa board — **contradicts itself within a single document:**
+The flagship source, the **ICO/COCOBOD *Country Coffee Profile: Ghana*** (ICO & Ghana Cocoa Board, 2018), co-authored by Ghana's own cocoa board, **contradicts itself within a single document:**
 
 | Claim in the same 2018 document | Implied 2015 production |
 |---|---|
@@ -3103,9 +3103,9 @@ The flagship source — the **ICO/COCOBOD *Country Coffee Profile: Ghana*** (ICO
 | §16: "gradual increase in production to 6,000 tonnes by 2015" | **6,000 t** |
 | §3: "estimated production level of 12,650 tonnes at the end of 2015" | **12,650 t** |
 
-**A 20-fold spread, for the same year, in the same report.** Area under coffee is likewise given as both **400–470 ha** and **17,000 ha** — a 36-fold spread.
+**A 20-fold spread, for the same year, in the same report.** Area under coffee is likewise given as both **400-470 ha** and **17,000 ha**, a 36-fold spread.
 
-Meanwhile **FAO reports Ghana's coffee production as 736 tonnes — identically, for 2018, 2019, 2020, 2021, 2022, 2023 and 2024** (FAO, via Our World in Data, 2024). A perfectly flat seven-year series is the signature of a **carried-forward estimate**, not a measurement. FAO is almost certainly imputing, because Ghana is not reporting.
+Meanwhile **FAO reports Ghana's coffee production as 736 tonnes, identically, for 2018, 2019, 2020, 2021, 2022, 2023 and 2024** (FAO, via Our World in Data, 2024). A perfectly flat seven-year series is the signature of a **carried-forward estimate**, not a measurement. FAO is almost certainly imputing, because Ghana is not reporting.
 
 > 🔥 **The teaching point, and it is a good one:**
 > **Cocoa is counted to the bag, because COCOBOD buys every bag. Coffee is barely counted at all, because nobody official buys it.**
@@ -3117,9 +3117,9 @@ Use the numbers below as **orders of magnitude, not precision.**
 
 ## 2. How tiny is tiny?
 
-**Best available figure: 736 t (FAO, nominally 2024 — treat as imputed).** FAO ranks Ghana **#52 in the world**, at "0.0%" of global output.
+**Best available figure: 736 t (FAO, nominally 2024, treat as imputed).** FAO ranks Ghana **#52 in the world**, at "0.0%" of global output.
 
-### Against Ghana's own cocoa — the killer comparison
+### Against Ghana's own cocoa, the killer comparison
 
 | | Volume | Year |
 |---|---|---|
@@ -3152,7 +3152,7 @@ Coffee's share of Ghana's GDP *"has always been less than 0.2%"* and was **0.12%
 
 > **Uganda earns more from coffee than Ghana earns from the crop that defines it.**
 
-**The sharpest framing for students:** Ghana's 736 t is about **12,270 × 60-kg bags**. The world drank about **176 million bags** in 2024 (ICO). **Ghana produces roughly 0.007% of what the world drinks** — seven thousandths of one percent.
+**The sharpest framing for students:** Ghana's 736 t is about **12,270 × 60-kg bags**. The world drank about **176 million bags** in 2024 (ICO). **Ghana produces roughly 0.007% of what the world drinks**, seven thousandths of one percent.
 
 ---
 
@@ -3160,9 +3160,9 @@ Coffee's share of Ghana's GDP *"has always been less than 0.2%"* and was **0.12%
 
 **Robusta, essentially entirely.** *"Robusta coffee is the main variety grown in Ghana due to ecological limitations"* (ICO & Ghana Cocoa Board, 2018).
 
-**Why not arabica? Altitude.** Ghana sits mostly at **400–800 m**, and its highest peak — **Mount Afadja (Afadjato) — reaches only 885 m**, beneath the band arabica commercially wants (Perfect Daily Grind, 2021; Sprudge, 2025). A Ghanaian roaster adds a second reason: *"insect infestation and diseases also mean arabica isn't worthwhile"* (Walsh, in Perfect Daily Grind, 2021).
+**Why not arabica? Altitude.** Ghana sits mostly at **400-800 m**, and its highest peak, **Mount Afadja (Afadjato), reaches only 885 m**, beneath the band arabica commercially wants (Perfect Daily Grind, 2021; Sprudge, 2025). A Ghanaian roaster adds a second reason: *"insect infestation and diseases also mean arabica isn't worthwhile"* (Walsh, in Perfect Daily Grind, 2021).
 
-**How it's grown and processed:** under shade (*"an average of 16 shade trees per hectare"*), and dry/natural processed — sun-dried on mats, **often on repurposed cocoa drying beds** (ICO & Ghana Cocoa Board, 2018; Perfect Daily Grind, 2021).
+**How it's grown and processed:** under shade (*"an average of 16 shade trees per hectare"*), and dry/natural processed, sun-dried on mats, **often on repurposed cocoa drying beds** (ICO & Ghana Cocoa Board, 2018; Perfect Daily Grind, 2021).
 
 **Where:** the **cocoa belt**. COCOBOD (2022) lists nine regions: Eastern, Central, Ashanti, Western North, Western, Bono, Ahafo, **Volta and Oti**. Coffee *"grows where cocoa grows well, as well as in areas marginal to cocoa cultivation."*
 
@@ -3170,19 +3170,19 @@ Coffee's share of Ghana's GDP *"has always been less than 0.2%"* and was **0.12%
 
 ---
 
-## 4. The history — and the story is NOT the one you'd guess
+## 4. The history, and the story is NOT the one you'd guess
 
 ### The timeline (ICO & Ghana Cocoa Board, 2018, unless noted)
 
 | Year | What happened |
 |---|---|
 | **1967/68** | **Peak: 6,700 tonnes.** |
-| 1970–80 | 13,346 ha under coffee. |
+| 1970-80 | 13,346 ha under coffee. |
 | **1983/84** | **Drought and bush fires.** Area collapses from 13,346 ha to ~3,170 ha by 1985. Production hits an all-time low of **123 tonnes**. |
 | 1980s | Government establishes **19 state coffee plantations**. |
 | **1991** | **Under the Agricultural Diversification Project, "the coffee sector was completely liberalized and COCOBOD left the sector and all services were discontinued."** The 19 plantations were divested; most were *"abandoned or grubbed to pave way for other crops."* Extension *"totally collapsed"*; *"coffee farmers were left on their own."* |
 | **1999** | **Second peak: 5,700 tonnes**, under improved pricing. |
-| **2001–04** | World coffee price crash reaches Ghana. *"Most coffee farmers responded by switching to other cash crop farming, especially cocoa."* |
+| **2001-04** | World coffee price crash reaches Ghana. *"Most coffee farmers responded by switching to other cash crop farming, especially cocoa."* |
 | 2009 | Low of 1,140 tonnes. |
 | 2024 | ~736 tonnes (FAO estimate). |
 
@@ -3190,16 +3190,16 @@ Coffee's share of Ghana's GDP *"has always been less than 0.2%"* and was **0.12%
 
 The obvious story is: *"Ghana's coffee died when the International Coffee Agreement's quota system collapsed in 1989."* **That story is wrong**, and catching it is the lesson.
 
-The ICA quota system *was* suspended in July 1989, and it *did* trigger the worst coffee crisis in history — producing countries' export earnings fell from **US$10–12 billion/year to ~US$5.5 billion** while retail sales in consuming countries rose from ~$30bn to ~$80bn (Osorio, 2004, ICO).
+The ICA quota system *was* suspended in July 1989, and it *did* trigger the worst coffee crisis in history, producing countries' export earnings fell from **US$10-12 billion/year to ~US$5.5 billion** while retail sales in consuming countries rose from ~$30bn to ~$80bn (Osorio, 2004, ICO).
 
-**But look at the dates.** Ghana's coffee had **already peaked in 1967/68** and **already collapsed to 123 t in 1983/84** — *six years before* the ICA fell. And Ghana's **second peak came in 1999 — a decade *after* it.**
+**But look at the dates.** Ghana's coffee had **already peaked in 1967/68** and **already collapsed to 123 t in 1983/84**, *six years before* the ICA fell. And Ghana's **second peak came in 1999, a decade *after* it.**
 
 **The honest causal chain for Ghana:**
 
 1. **1983: fire and drought** physically destroyed ~75% of the coffee area. *(Climate shock.)*
-2. **1991: liberalization** removed the state entirely — no buyer, no extension, no inputs, no credit, no grading. *(Institutional shock.)*
-3. **The price gap** made switching to cocoa rational. *(Opportunity cost — see below.)*
-4. **2001–04: the global crash** (which *is* the ICA aftermath) killed the fragile recovery. *(Market shock.)*
+2. **1991: liberalization** removed the state entirely, no buyer, no extension, no inputs, no credit, no grading. *(Institutional shock.)*
+3. **The price gap** made switching to cocoa rational. *(Opportunity cost, see below.)*
+4. **2001-04: the global crash** (which *is* the ICA aftermath) killed the fragile recovery. *(Market shock.)*
 
 > **A curriculum that says "Ghana's coffee died because the ICA quotas ended in 1989" is wrong.** Ghana's coffee died mainly because **fire took the trees in 1983 and the state walked away in 1991.**
 
@@ -3214,22 +3214,22 @@ The ICA quota system *was* suspended in July 1989, and it *did* trigger the wors
 
 **Cocoa paid ~5× more per bag than coffee in 2011.** A rational farmer in the cocoa belt plants cocoa.
 
-**That is the whole decline in one table** — and it is a **policy-made** gap, because the cocoa number is a state-guaranteed price and the coffee number is not.
+**That is the whole decline in one table**, and it is a **policy-made** gap, because the cocoa number is a state-guaranteed price and the coffee number is not.
 
 ---
 
-## 5. 🔥 The structural difference — the analytical core
+## 5. 🔥 The structural difference, the analytical core
 
 This is the strongest material in the file. The contrast is documented, stark, and explains everything else.
 
 | Feature | **Cocoa** | **Coffee** |
 |---|---|---|
-| **Guaranteed farmgate price** | **YES.** 2025/26: GH¢58,000/t (GH¢3,625/bag), set at ~70% of assumed FOB (COCOBOD, 2025) | **NO.** *"Currently, there is **no pricing regime for coffee** in Ghana. Farmers and buyers negotiate the farm gate price"* (ICO & Ghana Cocoa Board, 2018, §7.1). COCOBOD announces only an ***indicative*** price — a non-binding suggestion |
+| **Guaranteed farmgate price** | **YES.** 2025/26: GH¢58,000/t (GH¢3,625/bag), set at ~70% of assumed FOB (COCOBOD, 2025) | **NO.** *"Currently, there is **no pricing regime for coffee** in Ghana. Farmers and buyers negotiate the farm gate price"* (ICO & Ghana Cocoa Board, 2018, §7.1). COCOBOD announces only an ***indicative*** price, a non-binding suggestion |
 | **Who sets it** | Producer Price Review Committee, chaired by the Finance Minister | Nobody |
 | **Guaranteed buyer** | **YES.** LBCs buy at the fixed price; COCOBOD's CMC is the sole external marketer | **NO.** Bought by *"local processors, private exporters and **even foreigners from neighbouring countries who buy directly from farmers**"* |
-| **Legal mandate** | Yes, and exercised | **YES on paper, NO in practice.** COCOBOD Act 1984 (PNDCL 81) covers cocoa, **coffee AND shea** — but COCOBOD *"has no capacity or structures to take delivery"* of coffee |
-| **Forward selling / risk absorption** | **YES** — COCOBOD absorbs price swings | **NO.** World-price volatility passes **straight through to the farmer** |
-| **Quality grading** | **YES.** Quality Control Company grades and seals every bag — *this is why Ghanaian cocoa earns a premium* | **NOMINALLY YES, EFFECTIVELY NO.** *"Due to the liberalization of the coffee sector, it has become difficult to undertake this activity."* A Ghanaian roaster, bluntly: *"**there is no quality standardisation in the country**"* (Walsh, in Perfect Daily Grind, 2021) |
+| **Legal mandate** | Yes, and exercised | **YES on paper, NO in practice.** COCOBOD Act 1984 (PNDCL 81) covers cocoa, **coffee AND shea**, but COCOBOD *"has no capacity or structures to take delivery"* of coffee |
+| **Forward selling / risk absorption** | **YES**, COCOBOD absorbs price swings | **NO.** World-price volatility passes **straight through to the farmer** |
+| **Quality grading** | **YES.** Quality Control Company grades and seals every bag, *this is why Ghanaian cocoa earns a premium* | **NOMINALLY YES, EFFECTIVELY NO.** *"Due to the liberalization of the coffee sector, it has become difficult to undertake this activity."* A Ghanaian roaster, bluntly: *"**there is no quality standardisation in the country**"* (Walsh, in Perfect Daily Grind, 2021) |
 | **Extension services** | Yes | ***"Total collapse."*** *"Coffee farmers were left on their own"* |
 | **Credit** | Seed funds, input credit | **NO.** Farmers *"borrow from private lenders who charge exorbitant interest rates"* |
 
@@ -3237,7 +3237,7 @@ This is the strongest material in the file. The contrast is documented, stark, a
 
 Ghana created the **Tree Crops Development Authority** under **Act 1010 (2019)** precisely to give non-cocoa tree crops a COCOBOD-like regulator. Its mandate covers **six crops: rubber, cashew, shea, mango, coconut, oil palm.**
 
-**Coffee is not among them** — because coffee is *legally* still COCOBOD's, under PNDCL 81.
+**Coffee is not among them**, because coffee is *legally* still COCOBOD's, under PNDCL 81.
 
 > **So coffee sits in a gap: too small to command COCOBOD's attention, and legally fenced out of the agency built to help crops exactly like it.** It has a regulator on paper that does not regulate it, and is excluded from the regulator that might.
 
@@ -3245,17 +3245,17 @@ Ghana created the **Tree Crops Development Authority** under **Act 1010 (2019)**
 
 **The downside is dominant and well-evidenced:**
 
-- **No price floor.** When the world price falls, the farmer falls with it. That is exactly what happened in 2001–04 — and **farmers responded by cutting the trees down.**
-- **No guaranteed buyer**, so no reason to invest in a tree that takes 3–4 years to bear.
+- **No price floor.** When the world price falls, the farmer falls with it. That is exactly what happened in 2001-04, and **farmers responded by cutting the trees down.**
+- **No guaranteed buyer**, so no reason to invest in a tree that takes 3-4 years to bear.
 - **No quality system → no reputation → no premium.** Ghana cannot sell "Ghana coffee" as a differentiated origin the way it sells Ghana cocoa, because nobody guarantees what is in the bag.
 - **No aggregation → no export scale.** *"Ghana is not internationally known as a coffee producer… **we don't have the volumes yet**"* (Tamakloe, Bean Masters, in Perfect Daily Grind, 2021).
-- **The value leaks across the border, uncounted.** *"The processed products are mainly exported to neighbouring countries such as **Burkina Faso and Mali without any records at the ports and borders**"* (ICO & Ghana Cocoa Board, 2018). Over the six years to 2018, **57% of recorded Ghanaian coffee exports went to Togo** — a transit destination, not a consumer market.
+- **The value leaks across the border, uncounted.** *"The processed products are mainly exported to neighbouring countries such as **Burkina Faso and Mali without any records at the ports and borders**"* (ICO & Ghana Cocoa Board, 2018). Over the six years to 2018, **57% of recorded Ghanaian coffee exports went to Togo**, a transit destination, not a consumer market.
 
 **But the upside is real, and students should have to wrestle with it:**
 
 - **The farmer keeps what they negotiate.** No board levy, no state marketing margin, no mandated deduction.
 - **Direct trade is legal.** A Ghanaian roaster can buy from a Ghanaian farmer without a licence and a state auction in between. **In cocoa, that is a criminal offence** (see file 01 §3).
-- **In a boom, the coffee farmer can capture the spike.** The cocoa farmer is stuck with a price set months earlier at ~70% of a stale FOB. *(The corollary — that the coffee farmer eats the whole crash — is why this "upside" has historically not been worth it.)*
+- **In a boom, the coffee farmer can capture the spike.** The cocoa farmer is stuck with a price set months earlier at ~70% of a stale FOB. *(The corollary, that the coffee farmer eats the whole crash, is why this "upside" has historically not been worth it.)*
 
 > ### 🔥 The discussion prompt
 > **Ghana's cocoa farmers get a guaranteed price deliberately set at ~70% of the world price. The state captures ~30% of the value in exchange for certainty.**
@@ -3267,18 +3267,18 @@ Ghana created the **Tree Crops Development Authority** under **Act 1010 (2019)**
 
 ---
 
-## 6. Revival — a great deal announced, considerably less delivered
+## 6. Revival, a great deal announced, considerably less delivered
 
 ### What actually happened
 
-**Coffee Rehabilitation Project (2011–2015)** — the one real, completed programme (ICO & Ghana Cocoa Board, 2018):
+**Coffee Rehabilitation Project (2011-2015)**, the one real, completed programme (ICO & Ghana Cocoa Board, 2018):
 
 - Budget **GH¢4.2 million**, 13 operational areas.
 - **Target:** raise production from 1,760 t (2011) to **10,000 t by 2014**.
 - **Delivered:** 2,714 ha rehabilitated, ~4,567 farmers (**22% women**), 22 community nurseries, 1.8m hybrid seedlings.
-- **Result:** claimed 12,650 t — a figure **the same document contradicts twice**. If its own Table 3 is right (~600 t in 2015), **the project missed its target by ~94%.**
+- **Result:** claimed 12,650 t, a figure **the same document contradicts twice**. If its own Table 3 is right (~600 t in 2015), **the project missed its target by ~94%.**
 
-**Ghana Coffee Week** — first ever, **21–22 October 2024**, Accra. Organised by the **International Trade Centre** with the **Coffee Federation of Ghana** and **COCOBOD**, funded via the EU/OACPS ACP Business-Friendly Programme. COCOBOD's Deputy Chief Executive said coffee *"holds enormous potential to generate as much foreign exchange as cocoa"* — **and the announcement cited no current production figure at all**, which tells you plenty (COCOBOD, 2024).
+**Ghana Coffee Week**, first ever, **21-22 October 2024**, Accra. Organised by the **International Trade Centre** with the **Coffee Federation of Ghana** and **COCOBOD**, funded via the EU/OACPS ACP Business-Friendly Programme. COCOBOD's Deputy Chief Executive said coffee *"holds enormous potential to generate as much foreign exchange as cocoa"*, **and the announcement cited no current production figure at all**, which tells you plenty (COCOBOD, 2024).
 
 **Seedlings:** 2 million hybrid seedlings mandated; **630,000 raised for distribution in 2022** (MyJoyOnline, 2022).
 
@@ -3291,16 +3291,16 @@ The 2018 ICO/COCOBOD profile announced, in the future tense: production of **100
 - Actual output: **~736 t.** The 100,000 t target was **missed by ~99.3%.**
 - **I found no evidence a Ghana Coffee Development Board was ever created.**
 - **No evidence of district coffee marketing centres.**
-- **No evidence that a minimum farmgate price for coffee was ever announced, in any season.** My most recent verified coffee price is **GH¢250/bag — from 2016.** A decade old.
+- **No evidence that a minimum farmgate price for coffee was ever announced, in any season.** My most recent verified coffee price is **GH¢250/bag, from 2016.** A decade old.
 
 > **The gap between announcement and delivery is, by itself, one of the most instructive facts in this brief** — and a genuinely useful media-literacy lesson: *a press release is not an outcome.*
 
 ### Roasters actually operating in Ghana
 
-- **Kawa Moka Coffee Company** — founder/CEO **Emi-Beth Aku Quantson**. Has trained **600+ women, men and youth across four coffee enclaves**, reaching 4,000+ households; **250+ jobs created** (Lionesses of Africa, 2025; Sprudge, 2025).
-- **Bean Masters** (Accra, founded 2018) — founder **Benedicta Tamakloe**. See §7.
-- **Jamestown Coffee Company** (est. 2018) — roasts **5–6 tonnes annually** (Sprudge, 2025). *Note: one roaster's annual output is ~0.8% of the entire national crop.*
-- **Gold Coast Roasters** — Cillian Walsh.
+- **Kawa Moka Coffee Company**, founder/CEO **Emi-Beth Aku Quantson**. Has trained **600+ women, men and youth across four coffee enclaves**, reaching 4,000+ households; **250+ jobs created** (Lionesses of Africa, 2025; Sprudge, 2025).
+- **Bean Masters** (Accra, founded 2018), founder **Benedicta Tamakloe**. See §7.
+- **Jamestown Coffee Company** (est. 2018), roasts **5-6 tonnes annually** (Sprudge, 2025). *Note: one roaster's annual output is ~0.8% of the entire national crop.*
+- **Gold Coast Roasters**, Cillian Walsh.
 
 ---
 
@@ -3312,7 +3312,7 @@ The 2018 ICO/COCOBOD profile announced, in the future tense: production of **100
 
 ### The one BAM should actually call
 
-**⭐ Bean Masters — Benedicta Tamakloe** (Accra, founded 2018). A former computer-science teacher. Bean Masters **sources exclusively from female farmers**, organised as a collective of **~200 women growers — reportedly the largest of its kind in Ghana** — which also helps members harvest. The collective produced **~10 tonnes** in the year before reporting. Tamakloe roasts much of it herself **at a chocolate factory in Accra**. (Reuters, 2023.)
+**⭐ Bean Masters, Benedicta Tamakloe** (Accra, founded 2018). A former computer-science teacher. Bean Masters **sources exclusively from female farmers**, organised as a collective of **~200 women growers, reportedly the largest of its kind in Ghana**, which also helps members harvest. The collective produced **~10 tonnes** in the year before reporting. Tamakloe roasts much of it herself **at a chocolate factory in Accra**. (Reuters, 2023.)
 
 > **Do the arithmetic with students: ~10 tonnes across ~200 women is about 50 kg each.** That single division tells you more about the scale of Ghanaian coffee than any chart.
 >
@@ -3320,19 +3320,19 @@ The 2018 ICO/COCOBOD profile announced, in the future tense: production of **100
 
 **Also:** the **International Women's Coffee Alliance has a Ghana chapter**, described on IWCA's own site as *"newly launched"* (IWCA, 2026). ⚠️ No launch date or membership number is given.
 
-**And a finding worth stating:** **I found no COCOBOD or Government-of-Ghana women-in-coffee programme.** Every women-focused coffee initiative I could verify is **private-sector or NGO-led.** That rhymes exactly with §5 — where the state is absent, private and civil-society actors do the institution-building.
+**And a finding worth stating:** **I found no COCOBOD or Government-of-Ghana women-in-coffee programme.** Every women-focused coffee initiative I could verify is **private-sector or NGO-led.** That rhymes exactly with §5, where the state is absent, private and civil-society actors do the institution-building.
 
 ---
 
 ## 8. Does Ghana drink coffee?
 
-**Hard data is nearly non-existent.** The only primary figure: *"around 2,000 bags are consumed per annum by Ghana"* (ICO & Ghana Cocoa Board, 2018) — and **the document does not even specify the bag size.** If 60 kg, that is ~120 t/year for ~29 million people: about **0.004 kg per person per year**, against a world average of roughly 1.3 kg.
+**Hard data is nearly non-existent.** The only primary figure: *"around 2,000 bags are consumed per annum by Ghana"* (ICO & Ghana Cocoa Board, 2018), and **the document does not even specify the bag size.** If 60 kg, that is ~120 t/year for ~29 million people: about **0.004 kg per person per year**, against a world average of roughly 1.3 kg.
 
 > ⚠️ **That per-capita figure is my arithmetic on ICO's ambiguous number, not a published statistic.** Treat any per-capita coffee figure for Ghana with deep suspicion — the ones circulating online (Helgi Library, Statista) are paywalled market-research *models*, not measurements.
 
-**The qualitative direction is consistently upward.** A specialty café scene is real and growing in **Accra, Kumasi and Takoradi**, with single-origin beans and curated spaces (Sprudge, 2025). Bean Masters sells in bulk to Accra restaurants and hotels (Reuters, 2023). And tellingly, **the entire strategic rationale of Ghana Coffee Week (2024) was to promote *domestic* consumption** — a sign the sector believes local demand, not export, is the realistic near-term market.
+**The qualitative direction is consistently upward.** A specialty café scene is real and growing in **Accra, Kumasi and Takoradi**, with single-origin beans and curated spaces (Sprudge, 2025). Bean Masters sells in bulk to Accra restaurants and hotels (Reuters, 2023). And tellingly, **the entire strategic rationale of Ghana Coffee Week (2024) was to promote *domestic* consumption**, a sign the sector believes local demand, not export, is the realistic near-term market.
 
-**But the volume is trivial.** Ghana's most productive specialty roaster roasts 5–6 tonnes a year. The mass market drinks **instant coffee**.
+**But the volume is trivial.** Ghana's most productive specialty roaster roasts 5-6 tonnes a year. The mass market drinks **instant coffee**.
 
 ---
 
@@ -3343,8 +3343,8 @@ Silence here is a finding, not a gap in effort.
 - ❌ **Any Ghanaian government or COCOBOD publication of an annual coffee production figure after 2016.** COCOBOD's own 2024 statements about coffee's potential **cite no current production number at all.**
 - ❌ **A reconciliation between FAO's 736 t and the trade-press figure of ~2,220 t.** Neither is traceable to a Ghanaian primary measurement.
 - ❌ **Any explanation of the internal contradictions inside ICC-122-8** (600 t vs 6,000 t vs 12,650 t for the same year).
-- ⚠️ **The claim that coffee arrived in Ghana in the "mid-eighteenth century" with "early missionaries" is UNVERIFIED and probably wrong.** It predates the Basel and Wesleyan missions by ~80 years. It traces to a single COCOBOD sentence recycled across ICO, COCOBOD's site and trade press — which makes it *look* well-sourced while being one unverified assertion. **Do not state the 18th-century date as fact without a historian's source.**
-- ❌ **Any Ghana-specific academic paper analysing the coffee collapse.** None in open access. A university library search would likely find one — worth doing before publishing.
+- ⚠️ **The claim that coffee arrived in Ghana in the "mid-eighteenth century" with "early missionaries" is UNVERIFIED and probably wrong.** It predates the Basel and Wesleyan missions by ~80 years. It traces to a single COCOBOD sentence recycled across ICO, COCOBOD's site and trade press, which makes it *look* well-sourced while being one unverified assertion. **Do not state the 18th-century date as fact without a historian's source.**
+- ❌ **Any Ghana-specific academic paper analysing the coffee collapse.** None in open access. A university library search would likely find one, worth doing before publishing.
 - ❌ **Any evidence the Ghana Coffee Development Board was ever created**, that district marketing centres exist, or that a **minimum farmgate price for coffee** was ever set.
 - ❌ **A current (2025/26) coffee farmgate price in Ghana, in any unit.** The most recent I could verify is **GH¢250/bag, from 2016.**
 - ❌ **The Coffee Federation of Ghana's founding date, membership or governance.** Its website (coffeefederationofghana.com) **does not resolve** (DNS failure, July 2026). Its existence is confirmed only indirectly, via ITC and COCOBOD naming it as a partner.
@@ -3358,7 +3358,7 @@ Silence here is a finding, not a gap in effort.
 
 COCOBOD. (2022, July 9). *Coffee: Production, consumption & potential health benefits*. Ghana Cocoa Board. https://cocobod.gh/news/coffee-production-consumption-potential-health-benefits
 
-COCOBOD. (2024, October 23). *Coffee holds potential to complement cocoa gains — Deputy CE*. Ghana Cocoa Board. https://cocobod.gh/news/coffee-holds-potential-to-complement-cocoa-gains-deputy-ce
+COCOBOD. (2024, October 23). *Coffee holds potential to complement cocoa gains, Deputy CE*. Ghana Cocoa Board. https://cocobod.gh/news/coffee-holds-potential-to-complement-cocoa-gains-deputy-ce
 
 COCOBOD. (2025). *Review of producer price for the 2025/26 cocoa season*. Ghana Cocoa Board. https://cocobod.gh/news/review-of-producer-price-for-the-202526-cocoa-season
 
@@ -3376,7 +3376,7 @@ Lionesses of Africa. (2025, January 19). *Brewing change: 6 inspiring women-led 
 
 Mansa Gold. (n.d.). Retrieved July 13, 2026, from https://mansa.gold/
 
-MyJoyOnline. (2022). *630k coffee seedlings ready for distribution to farmers — COCOBOD*. https://www.myjoyonline.com/630k-coffee-seedlings-ready-for-distribution-to-farmers-cocobod/
+MyJoyOnline. (2022). *630k coffee seedlings ready for distribution to farmers, COCOBOD*. https://www.myjoyonline.com/630k-coffee-seedlings-ready-for-distribution-to-farmers-cocobod/
 
 Osorio, N. (2004, June 18). *Lessons from the world coffee crisis: A serious problem for sustainable development* (ED-1922/04). International Coffee Organization, submission to UNCTAD XI. https://www.ico.org/documents/ed1922e.pdf
 
@@ -3393,10 +3393,10 @@ UN Comtrade. (2022). *Ghana coffee (HS 090111) exports by partner* [Data set]. V
   },
   {
     key: "mansa-gold-women-in-cocoa-and-coffee",
-    title: "Women in Cocoa and Coffee — Background Brief",
+    title: "Women in Cocoa and Coffee, Background Brief",
     group: "Mansa Gold",
     summary: "Companion to [`00-interview-prep.md`](00-interview-prep.md) · Focus: Ghana / West Africa · Compiled 13 July 2026",
-    body: `# Women in Cocoa and Coffee — Background Brief
+    body: `# Women in Cocoa and Coffee, Background Brief
 
 **Companion to [\`00-interview-prep.md\`](00-interview-prep.md)** · Focus: Ghana / West Africa · Compiled 13 July 2026
 
@@ -3404,7 +3404,7 @@ UN Comtrade. (2022). *Ghana coffee (HS 090111) exports by partner* [Data set]. V
 
 ## Read this first
 
-This is the section most likely to attract lazy, uncited statistics — so it is the one that had to be hardest on itself.
+This is the section most likely to attract lazy, uncited statistics, so it is the one that had to be hardest on itself.
 
 **Several of the most-repeated numbers in this space do not survive contact with their sources.** One of them originates in an **unpublished internal consultancy memo**. Another is a 1970s "zombie statistic" that FAO-linked researchers formally dismantled. A third is contradicted by the very study it is attributed to.
 
@@ -3413,18 +3413,18 @@ This is the section most likely to attract lazy, uncited statistics — so it is
 
 ---
 
-## 0. 🔥 The myth audit — do this before you quote anything
+## 0. 🔥 The myth audit, do this before you quote anything
 
 | Widely repeated claim | Verdict |
 |---|---|
-| **"Women are 45–50% of the cocoa labour force"** | **UNSOURCED AT ORIGIN.** Traces to a **Dalberg Global Development Advisors *internal document* (2012)** — never published. Contradicted by the largest primary survey in the sector. |
-| **"Women do 70% of the work but own 1% of the land"** | **DEBUNKED.** Not a cocoa statistic at all — a 1970s-era UN "zombie statistic," formally dismantled by FAO-linked researchers in 2018. Women's share of individually-owned land in Africa ranges from **4% (Nigeria) to 40% (Malawi)**. |
-| **FAO's "close the gender gap → +20–30% yields, feed 100–150 million more people"** | **SUPERSEDED, and routinely inverted.** FAO's own text called those estimates *"admittedly very rough."* FAO's **2023** flagship replaced them with better-evidenced numbers. **Use the 2023 ones.** |
+| **"Women are 45–50% of the cocoa labour force"** | **UNSOURCED AT ORIGIN.** Traces to a **Dalberg Global Development Advisors *internal document* (2012)**, never published. Contradicted by the largest primary survey in the sector. |
+| **"Women do 70% of the work but own 1% of the land"** | **DEBUNKED.** Not a cocoa statistic at all, a 1970s-era UN "zombie statistic," formally dismantled by FAO-linked researchers in 2018. Women's share of individually-owned land in Africa ranges from **4% (Nigeria) to 40% (Malawi)**. |
+| **FAO's "close the gender gap → +20-30% yields, feed 100-150 million more people"** | **SUPERSEDED, and routinely inverted.** FAO's own text called those estimates *"admittedly very rough."* FAO's **2023** flagship replaced them with better-evidenced numbers. **Use the 2023 ones.** |
 | **"Only 2% of cocoa land is owned by women"** | **The study it is attributed to says the opposite.** See §1.3. |
 
 ### The 45% figure, traced
 
-KIT's *Demystifying the Cocoa Sector* (Bymolt, Laven & Tyszler, 2018) — **~1,500 household surveys per country plus 37 focus groups per country, the largest primary dataset in the sector** — traced the claim and then tested it:
+KIT's *Demystifying the Cocoa Sector* (Bymolt, Laven & Tyszler, 2018), **~1,500 household surveys per country plus 37 focus groups per country, the largest primary dataset in the sector**, traced the claim and then tested it:
 
 > *"An often cited study by Dalberg (2012) reports that, in West-Africa, women provide 45% of the labour for cocoa production."*
 > **Footnote 22:** *"Dalberg Global Development Advisors (2012) Analysis of IFPRI (2002)… **Dalberg Global Development Advisors Internal Document**."*
@@ -3433,8 +3433,8 @@ KIT's *Demystifying the Cocoa Sector* (Bymolt, Laven & Tyszler, 2018) — **~1,5
 
 **What KIT's own data found:**
 
-- **Ghana:** men participate in *virtually all* cocoa activities at **98–100%**. Women participate at *"much lower rates,"* concentrated in planting, fertiliser application, pod-breaking, transporting and drying — *"almost always done alongside men."*
-- **Côte d'Ivoire:** KIT is blunt — *"**The narrative that, in Côte d'Ivoire, women provide an important share of the labour in cocoa does not seem to be correct.**"*
+- **Ghana:** men participate in *virtually all* cocoa activities at **98-100%**. Women participate at *"much lower rates,"* concentrated in planting, fertiliser application, pod-breaking, transporting and drying, *"almost always done alongside men."*
+- **Côte d'Ivoire:** KIT is blunt, *"**The narrative that, in Côte d'Ivoire, women provide an important share of the labour in cocoa does not seem to be correct.**"*
 
 **But KIT is also honest about its own limit:** *"Our data does not allow us to measure the actual labour days worked on the cocoa farm by men and women."*
 
@@ -3444,7 +3444,7 @@ KIT's *Demystifying the Cocoa Sector* (Bymolt, Laven & Tyszler, 2018) — **~1,5
 
 ### FAO's actual current numbers (use these)
 
-From **FAO's *The status of women in agrifood systems* (2023)** — replacing the 2010–11 estimates:
+From **FAO's *The status of women in agrifood systems* (2023)**, replacing the 2010-11 estimates:
 
 - A **24% productivity gap** between male- and female-managed farms of equal size.
 - Women in agrifood systems earn **82 cents for every dollar** men earn.
@@ -3454,7 +3454,7 @@ From **FAO's *The status of women in agrifood systems* (2023)** — replacing th
 
 ## 1. What the evidence actually says about Ghana
 
-### 1.1 Share of cocoa farmers: **25.2%** — and this one is census-grade
+### 1.1 Share of cocoa farmers: **25.2%**, and this one is census-grade
 
 The authoritative figure is not from an NGO. It is from **Ghana's national agricultural census** (Ghana Statistical Service, 2020, *Ghana Census of Agriculture 2017/18*, Table 9.1):
 
@@ -3470,22 +3470,22 @@ This finally gives a **real, citable source** to the widely quoted "about 25% of
 
 > Oxfam states it directly: *"there is significant underreporting… due to a bias towards farmers being defined by land ownership, from which women are often excluded."*
 
-### 1.2 The invisible labour is real — it is just not measured as "cocoa"
+### 1.2 The invisible labour is real, it is just not measured as "cocoa"
 
 - Ghanaian women spend **26 hours/week on domestic chores; men, 10** (Vargas Hill & Vigneri, 2011, in KIT 2018).
 - Counting household + farm + non-farm work together, **women's total working hours exceed men's by 29%** (Skalidou / Fairtrade Foundation, 2020).
 
-### 1.3 Land — the evidence flatly contradicts the popular story
+### 1.3 Land, the evidence flatly contradicts the popular story
 
 This is where the research gets genuinely surprising, and where a teacher can look very good.
 
 **KIT (2018):**
-- In Ghana, **91% of female-headed households reported owning land vs 85% of male-headed households** — statistically significant, and *in women's favour*.
+- In Ghana, **91% of female-headed households reported owning land vs 85% of male-headed households**, statistically significant, and *in women's favour*.
 - KIT's verdict: *"**Our findings suggest that the narrative 'women typically don't own land' is not accurate for female-headed households**."*
 - **But** female-headed households own **less** land (3.49 ha vs 4.28 ha). For *cocoa* land specifically, **no statistically significant difference in amount**.
 - KIT's own crucial caveat: female household heads *"are typically single, divorced or widowed"* and are **not** the same as **married women living inside male-headed households**. *"These findings should not be interpreted more broadly in terms of 'female land ownership'."*
 
-**Hiscox & Goldstein (2014)** — Harvard, **2,809 cocoa households** — the study most often cited for *"only 2% of cocoa land is owned by women"* — **says the opposite:**
+**Hiscox & Goldstein (2014)**, Harvard, **2,809 cocoa households**, the study most often cited for *"only 2% of cocoa land is owned by women"*, **says the opposite:**
 
 | | Male farmers | **Female farmers** |
 |---|---|---|
@@ -3502,22 +3502,22 @@ It is **not** that Ghanaian women own no cocoa land. It is that:
 
 1. **Far fewer women than men are *recognised* as farmers at all** (25.2%);
 2. Those who are hold **smaller, more marginal plots**;
-3. And **the women who do most of the invisible labour — wives inside male-headed households — appear in *none* of these statistics.**
+3. And **the women who do most of the invisible labour, wives inside male-headed households, appear in *none* of these statistics.**
 
 That is a subtler claim than the slogan, and it is true.
 
-### 1.4 Income and productivity — the estimates genuinely conflict
+### 1.4 Income and productivity, the estimates genuinely conflict
 
 | Source | Finding |
 |---|---|
-| Hiscox & Goldstein (2014), n=2,809 | Female farmers' income/productivity **25–30% below** men's (regression-adjusted). ⚠️ **The raw differences in their own table are not statistically significant (p = 0.20).** The 25–30% is a *modelled* result. |
+| Hiscox & Goldstein (2014), n=2,809 | Female farmers' income/productivity **25-30% below** men's (regression-adjusted). ⚠️ **The raw differences in their own table are not statistically significant (p = 0.20).** The 25-30% is a *modelled* result. |
 | Vigneri & Holmes (2009), ODI | **No significant difference** in land productivity between male and female cocoa farmers in Ghana; women used **hired labour more efficiently**. |
 | Danso-Abbeam, Baiyegunhi & Ojo (2020), n=505 | Technical efficiency **0.77 (male) vs 0.64 (female)**; output **1,484.6 kg vs 1,023.5 kg** (p<0.01). |
 | KIT (2018) | **No statistically significant difference** in poverty index between male- and female-headed households. |
 
 > **Teach the conflict, not a single number.** The defensible synthesis: **women are not worse farmers** — they consistently farm **smaller plots with fewer inputs**, and therefore earn less in absolute terms.
 
-### 1.5 Decision-making — and Ghana is *not* Côte d'Ivoire
+### 1.5 Decision-making, and Ghana is *not* Côte d'Ivoire
 
 **KIT (2018), who makes cocoa decisions:**
 
@@ -3530,7 +3530,7 @@ That is a subtler claim than the slogan, and it is true.
 >
 > **Ghana is genuinely different**, and a curriculum that lumps "West Africa" together loses the most interesting fact in the data. Ghana's matrilineal Akan majority is a plausible part of the explanation (§2.1).
 
-**And the switch that turns on women's control of the money:** Oxfam's Ghana fieldwork found *"most women exercise little agency and voice in decision-making regarding… income earned from cocoa"* — **except** that *"**women who own land in their own right** (through outright purchase or inheritance) **do not consult anyone** before using the income earned from cocoa"* (Dery & Dongzagla / Oxfam, 2020).
+**And the switch that turns on women's control of the money:** Oxfam's Ghana fieldwork found *"most women exercise little agency and voice in decision-making regarding… income earned from cocoa"*, **except** that *"**women who own land in their own right** (through outright purchase or inheritance) **do not consult anyone** before using the income earned from cocoa"* (Dery & Dongzagla / Oxfam, 2020).
 
 > **Land title is the switch.** Everything else is downstream of it.
 
@@ -3538,24 +3538,24 @@ That is a subtler claim than the slogan, and it is true.
 
 ## 2. The structural barriers
 
-### 2.1 Land tenure — and the Akan nuance that complicates the simple story
+### 2.1 Land tenure, and the Akan nuance that complicates the simple story
 
 **The landscape.** ~**80% of Ghana's land is under customary authority.** Statutory reform exists on paper:
 
-- **Intestate Succession Law, 1985 (PNDCL 111)** — gives widows and children rights to the matrimonial home and shares of the estate.
-- **Land Act, 2020 (Act 1036)** — property acquired jointly in marriage **must be registered in both spouses' names**; **§47** bars a spouse from selling, mortgaging or gifting marital land **without the other's written consent**.
+- **Intestate Succession Law, 1985 (PNDCL 111)**, gives widows and children rights to the matrimonial home and shares of the estate.
+- **Land Act, 2020 (Act 1036)**, property acquired jointly in marriage **must be registered in both spouses' names**; **§47** bars a spouse from selling, mortgaging or gifting marital land **without the other's written consent**.
 
 **But** FAO/ECOWAS (2018) is clear: *"Despite these provisions in the legal frameworks, **in practice discriminatory customary law often prevails**."*
 
-**The Akan matrilineal nuance — this is the genuinely interesting part.** Under classical Akan (Ashanti) matrilineal custom, land passes through the *abusua* (matriclan) — from a man to his brother or his sister's son. **A wife inherits nothing from her husband; her sons inherit nothing from their father.** So matrilineality does **not** automatically help wives.
+**The Akan matrilineal nuance, this is the genuinely interesting part.** Under classical Akan (Ashanti) matrilineal custom, land passes through the *abusua* (matriclan), from a man to his brother or his sister's son. **A wife inherits nothing from her husband; her sons inherit nothing from their father.** So matrilineality does **not** automatically help wives.
 
-**And yet:** Quisumbing, Payongayong, Aidoo & Otsuka (2001), studying western Ghana's cocoa belt, found something counter-intuitive — as tenure individualised to create tree-planting incentives, **women's land rights were *strengthened***, through ***inter vivos* gifts** from husbands and fathers. Barrientos & Bobie (2016) confirm the mechanism: *"Kuapa is encouraging male farmers to gift land to their female spouse"* — and in one of their focus groups **4 of 14 women had been gifted land by their husband**, while in a second community **zero of 19 had**.
+**And yet:** Quisumbing, Payongayong, Aidoo & Otsuka (2001), studying western Ghana's cocoa belt, found something counter-intuitive, as tenure individualised to create tree-planting incentives, **women's land rights were *strengthened***, through ***inter vivos* gifts** from husbands and fathers. Barrientos & Bobie (2016) confirm the mechanism: *"Kuapa is encouraging male farmers to gift land to their female spouse"*, and in one of their focus groups **4 of 14 women had been gifted land by their husband**, while in a second community **zero of 19 had**.
 
 > **The honest story:** Ghanaian women *can* acquire cocoa land — by purchase, by matrilineal inheritance, and increasingly by spousal gift. **The barrier is not a legal prohibition.** It is that these routes are **discretionary, uneven, and unenforced**, and the default is still male.
 
-### 2.2 Credit, inputs, and services — the gaps that are real
+### 2.2 Credit, inputs, and services, the gaps that are real
 
-**Arhin, Kwarteng & Fredua Antoh (2026)**, 532 Ghanaian cocoa farmers — the most recent peer-reviewed evidence:
+**Arhin, Kwarteng & Fredua Antoh (2026)**, 532 Ghanaian cocoa farmers, the most recent peer-reviewed evidence:
 
 | | Men | Women | p |
 |---|---|---|---|
@@ -3573,7 +3573,7 @@ That is a subtler claim than the slogan, and it is true.
 
 **Banking** (same study): women are **20% less likely to have received a loan** in the past year and **50% less likely to hold a bank account**.
 
-### 2.3 🔥 Cooperative membership requires land title — the load-bearing barrier
+### 2.3 🔥 Cooperative membership requires land title, the load-bearing barrier
 
 This is the mechanism that **structurally caps every gender programme in the sector.**
 
@@ -3607,25 +3607,25 @@ And a male sharecropper, quoted in the same study:
 >
 > If one sentence from this brief makes it into the course, make it that one. It is cited, it is defensible, and it is far more powerful than any percentage.
 
-**Where women *do* control income: food crops.** KIT's focus groups: *"Food crops belong to the women while cash crops belong to the men."* Women grow, sell and process cassava, plantain and pepper — and control that money. But it is earmarked for **household expenditure**, while cocoa money is the household's **capital**.
+**Where women *do* control income: food crops.** KIT's focus groups: *"Food crops belong to the women while cash crops belong to the men."* Women grow, sell and process cassava, plantain and pepper, and control that money. But it is earmarked for **household expenditure**, while cocoa money is the household's **capital**.
 
 ---
 
-## 3. What has actually worked — with the nulls reported honestly
+## 3. What has actually worked, with the nulls reported honestly
 
 ### 3.0 🔥 The headline finding: there is essentially no rigorous evidence base
 
 > **I could not locate a single randomized or quasi-experimental impact evaluation of a gender programme delivered inside the cocoa sector in Ghana or Côte d'Ivoire. Not one.**
 
-Every cocoa-specific gender intervention — Fairtrade's Women's School of Leadership, Cocoa Life's gender action plans, Rainforest Alliance gender modules, women's cocoa cooperatives — is documented through **qualitative assessment, contribution analysis, or corporate reporting**.
+Every cocoa-specific gender intervention, Fairtrade's Women's School of Leadership, Cocoa Life's gender action plans, Rainforest Alliance gender modules, women's cocoa cooperatives, is documented through **qualitative assessment, contribution analysis, or corporate reporting**.
 
-The **Cocoa Barometer 2025** — 204 pages by the sector's leading critical watchdog — **cites no impact evaluation of any cocoa gender programme.** It says only:
+The **Cocoa Barometer 2025**, 204 pages by the sector's leading critical watchdog, **cites no impact evaluation of any cocoa gender programme.** It says only:
 
 > *"Gender equality is a topic that gets mentioned regularly. Progress, however, is **frustratingly slow**. It is time, as a sector, that we **stopped talking about it and started acting on it** instead."* (p. 124)
 
 **That absence is itself the finding.** Report it as one.
 
-### 3.1 Land documentation — the best-evidenced lever, and the one cocoa hasn't pulled
+### 3.1 Land documentation, the best-evidenced lever, and the one cocoa hasn't pulled
 
 | Study | Design | Finding for women |
 |---|---|---|
@@ -3637,18 +3637,18 @@ The **Cocoa Barometer 2025** — 204 pages by the sector's leading critical watc
 >
 > Good for women's incomes. **Not "closing the gender gap in cocoa."** Say so.
 
-### 3.2 VSLAs — a good financial tool being oversold as an empowerment tool
+### 3.2 VSLAs, a good financial tool being oversold as an empowerment tool
 
-**Karlan, Savonitto, Thuysbaert & Udry (2017)**, *PNAS* — **pre-registered RCT, 561 village clusters, 15,221 households**, Ghana/Malawi/Uganda, with CARE:
+**Karlan, Savonitto, Thuysbaert & Udry (2017)**, *PNAS*, **pre-registered RCT, 561 village clusters, 15,221 households**, Ghana/Malawi/Uganda, with CARE:
 
 - Women's savings **+34%**; loan access 42% vs 31%; **+4pp** on women's control over household decisions.
 - **But: *"No evidence of impacts on average consumption or other welfare outcomes."***
 
 **The Ghana arm is blunter.** J-PAL's summary of the 175-village Northern Ghana trial: *"VSLAs did **not** lead to improvements in households' financial well-being, livelihoods, **women's empowerment**, or microenterprise outcomes."*
 
-### ⭐ 3.3 What *did* work — the most actionable finding in this brief
+### ⭐ 3.3 What *did* work, the most actionable finding in this brief
 
-**Gupta, Falb, Lehmann et al. (2013)**, IRC — **24 villages in Côte d'Ivoire, 934 partnered women, village-level randomization.** The design pitted **VSLA alone (control)** against **VSLA + 8 "Gender Dialogue Group" sessions *with couples*** (treatment):
+**Gupta, Falb, Lehmann et al. (2013)**, IRC, **24 villages in Côte d'Ivoire, 934 partnered women, village-level randomization.** The design pitted **VSLA alone (control)** against **VSLA + 8 "Gender Dialogue Group" sessions *with couples*** (treatment):
 
 | Outcome | Result |
 |---|---|
@@ -3664,18 +3664,18 @@ The **Cocoa Barometer 2025** — 204 pages by the sector's leading critical watc
 
 **Sector context** (Cocoa Barometer 2025, p. 124): a study of **660 VSLAs in Ghana with 16,651 members** found women were **~60% of membership but only ~13% of leadership.**
 
-### 3.4 Gender-focused extension — female agents work; the cascade model does not
+### 3.4 Gender-focused extension, female agents work; the cascade model does not
 
 - **Kondylis, Mueller, Sheriff & Zhu (2016)**, RCT, Mozambique: assigning a **female extension messenger** raised women's awareness **+9pp** and adoption **+5pp**. **Targeting women with female agents works.**
 - **Kondylis, Mueller & Zhu (2017)**, same team: training "contact farmers" raised **their own** adoption substantially, but had *"limited impact on the behavior of other farmers."* **The cascade / lead-farmer / "ambassador" diffusion model failed.**
 
 > ⚠️ **This matters directly**, because **Fairtrade's Women's School of Leadership is built on a cascade model** — train ~50 "ambassadors," who diffuse empowerment onward.
 
-### 3.5 Fairtrade's Women's School of Leadership — read the evaluation, not the press release
+### 3.5 Fairtrade's Women's School of Leadership, read the evaluation, not the press release
 
 Launched by Fairtrade Africa in **2017** in Côte d'Ivoire's Abengourou zone across 7 certified producer organisations.
 
-**Prospective and Cooperation (2022)**, commissioned by Max Havelaar France & Fairtrade Africa. ⚠️ **Despite being titled an "Impact Assessment," it is not a causal impact evaluation** — no control group, no baseline, no quantitative outcome measurement. Côte d'Ivoire Phase 1: **n = 44**.
+**Prospective and Cooperation (2022)**, commissioned by Max Havelaar France & Fairtrade Africa. ⚠️ **Despite being titled an "Impact Assessment," it is not a causal impact evaluation**, no control group, no baseline, no quantitative outcome measurement. Côte d'Ivoire Phase 1: **n = 44**.
 
 **What the evaluators themselves conclude:**
 
@@ -3686,11 +3686,11 @@ Launched by Fairtrade Africa in **2017** in Côte d'Ivoire's Abengourou zone acr
 
 > **The programme does not measure the outcome it exists to produce.**
 
-**And the Fairtrade Gender Strategy 2016–2020's own damning baseline:** women were **25%** of Fairtrade farmers and workers, and **"close to zero percent"** of Fairtrade Premium was reinvested in projects focused exclusively on women's needs in small-producer organisations. It even concedes: *"due to its focus on export or 'cash' crops, **Fairtrade may even be unintentionally reinforcing existing gender inequalities**."*
+**And the Fairtrade Gender Strategy 2016-2020's own damning baseline:** women were **25%** of Fairtrade farmers and workers, and **"close to zero percent"** of Fairtrade Premium was reinvested in projects focused exclusively on women's needs in small-producer organisations. It even concedes: *"due to its focus on export or 'cash' crops, **Fairtrade may even be unintentionally reinforcing existing gender inequalities**."*
 
 ⚠️ **A post-2020 successor strategy: I could not find one. Do not assert one exists.**
 
-### 3.6 Women's cocoa cooperatives — an evidence vacuum
+### 3.6 Women's cocoa cooperatives, an evidence vacuum
 
 **No counterfactual-based evidence exists** that women's cocoa cooperatives raise women's income, land access, or decision-making power. I searched directly and found only promotional material from buyers and lenders. **This is a genuine gap, not a search failure.**
 
@@ -3701,21 +3701,21 @@ Launched by Fairtrade Africa in **2017** in Côte d'Ivoire's Abengourou zone acr
 | Business | Verdict | Detail |
 |---|---|---|
 | **Mansa Gold** (Ghana) | ✅ **Woman-founded** | **Preba Arkaah.** See file 00 for everything verifiable. |
-| **'57 Chocolate** (Ghana) | ✅ **VERIFIED — women-led** | Founded **2016** by sisters **Kimberly and Priscilla Addison**. Ghana's **first bean-to-bar** company; "'57" = 1957, independence. **~20 employees, ~1,000 bars/week** (Cuisine Noir, 2026). ⚠️ **Nationality precision:** born in the USA to Ghanaian parents, raised across Senegal/Switzerland/North America, moved to Accra ~2016. Say **"Ghanaian-American sisters,"** not "born in Ghana." |
-| **Midunu Chocolates** (Ghana) | ✅ **VERIFIED — women-led** | Founder **Selassie Atadika**, Ghanaian chef and former UN humanitarian worker. **Not** a bean-to-bar factory — an artisanal **truffle** line (2015), grown out of her Accra "nomadic dinners." Truffles named for African women. Named to the **2025 TIME Earth Awards** (Cuisine Noir, n.d.). |
-| **Bean Masters** (Ghana, coffee) | ✅ **VERIFIED — women-led** | **Benedicta Tamakloe**, founded 2018. Sources **exclusively from ~200 women growers**. See file 02 §7. |
-| **Kawa Moka** (Ghana, coffee) | ✅ **VERIFIED — women-led** | **Emi-Beth Aku Quantson.** 600+ people trained across four coffee enclaves. |
-| **fairafric** | ⚠️ **NOT women-led** | Ghana-**producing**, **German-founded and German-owned** — founded 2016 by **Hendrik Reimers**; fairafric AG, Munich; solar-powered factory at Amanase, Suhum; ~300 Ghanaian employees. Frequently miscast as a Ghanaian company. |
-| **Niche Cocoa** (Ghana) | ❌ **NOT women-led** | Founded by **Edmund Poku** (male, ex-Goldman Sachs). A genuinely notable wholly-Ghanaian processor — **but not a women's story.** |
-| **ABOCFA** (Ghana) | ✅ Real — but **~26% women, not women-led** | Aponoapono Biakoye Organic Cocoa Farmers Association, Suhum. Billed as **Ghana's only organic Fairtrade-certified cocoa cooperative.** Buyers: Tony's Chocolonely, Taza, TCHO, Dr. Bronner's. **Sarah Larweh** is treasurer/board member. |
-| **MonChoco** (Côte d'Ivoire) | ✅ Verified | **Dana Mroueh** — organic raw bean-to-bar, Abidjan. |
+| **'57 Chocolate** (Ghana) | ✅ **VERIFIED, women-led** | Founded **2016** by sisters **Kimberly and Priscilla Addison**. Ghana's **first bean-to-bar** company; "'57" = 1957, independence. **~20 employees, ~1,000 bars/week** (Cuisine Noir, 2026). ⚠️ **Nationality precision:** born in the USA to Ghanaian parents, raised across Senegal/Switzerland/North America, moved to Accra ~2016. Say **"Ghanaian-American sisters,"** not "born in Ghana." |
+| **Midunu Chocolates** (Ghana) | ✅ **VERIFIED, women-led** | Founder **Selassie Atadika**, Ghanaian chef and former UN humanitarian worker. **Not** a bean-to-bar factory, an artisanal **truffle** line (2015), grown out of her Accra "nomadic dinners." Truffles named for African women. Named to the **2025 TIME Earth Awards** (Cuisine Noir, n.d.). |
+| **Bean Masters** (Ghana, coffee) | ✅ **VERIFIED, women-led** | **Benedicta Tamakloe**, founded 2018. Sources **exclusively from ~200 women growers**. See file 02 §7. |
+| **Kawa Moka** (Ghana, coffee) | ✅ **VERIFIED, women-led** | **Emi-Beth Aku Quantson.** 600+ people trained across four coffee enclaves. |
+| **fairafric** | ⚠️ **NOT women-led** | Ghana-**producing**, **German-founded and German-owned**, founded 2016 by **Hendrik Reimers**; fairafric AG, Munich; solar-powered factory at Amanase, Suhum; ~300 Ghanaian employees. Frequently miscast as a Ghanaian company. |
+| **Niche Cocoa** (Ghana) | ❌ **NOT women-led** | Founded by **Edmund Poku** (male, ex-Goldman Sachs). A genuinely notable wholly-Ghanaian processor, **but not a women's story.** |
+| **ABOCFA** (Ghana) | ✅ Real, but **~26% women, not women-led** | Aponoapono Biakoye Organic Cocoa Farmers Association, Suhum. Billed as **Ghana's only organic Fairtrade-certified cocoa cooperative.** Buyers: Tony's Chocolonely, Taza, TCHO, Dr. Bronner's. **Sarah Larweh** is treasurer/board member. |
+| **MonChoco** (Côte d'Ivoire) | ✅ Verified | **Dana Mroueh**, organic raw bean-to-bar, Abidjan. |
 | **"Kokoa Kollection"** | ❌ **NO EVIDENCE IT EXISTS. Drop it.** | Three targeted searches found nothing. Likely confusion with **Kokoa Collection** (UK, male founder), **Kokoa Kamili** (Tanzania, two male founders), or **Koa** (Swiss-Ghanaian, male MD). |
 
 > 🎓 **Three women-led Ghanaian chocolate makers — Mansa Gold, '57 Chocolate, Midunu — is not an anecdote. It is a cohort, and it is a BVC episode.** Add Bean Masters and Kawa Moka in coffee and you have five.
 
 ---
 
-## 5. 🔥 Kuapa Kokoo and Divine Chocolate — the story most people get wrong
+## 5. 🔥 Kuapa Kokoo and Divine Chocolate, the story most people get wrong
 
 ### 5.1 Kuapa Kokoo
 
@@ -3731,21 +3731,21 @@ Launched by Fairtrade Africa in **2017** in Côte d'Ivoire's Abengourou zone acr
 
 ⚠️ **A "nearly half are women" claim circulates on a Fairtrade Canada page. It contradicts the academic source and could not be verified. Do not use it.**
 
-### 5.2 Divine Chocolate — **the ownership changed in 2020**
+### 5.2 Divine Chocolate, **the ownership changed in 2020**
 
 **Correction to a premise almost everyone still carries:** Divine is **no longer 44% farmer-owned.**
 
 | Year | Structure |
 |---|---|
-| 1998 | Founded as **The Day Chocolate Company** — Kuapa Kokoo, Twin Trading and The Body Shop. Kuapa: **33%**. |
+| 1998 | Founded as **The Day Chocolate Company**, Kuapa Kokoo, Twin Trading and The Body Shop. Kuapa: **33%**. |
 | ~2007 | The Body Shop **donated** its shares to Kuapa → **Kuapa 45%**. |
-| 2015 | After the UK–US merger: **Kuapa 44%**. |
-| **June 2020** | **Ludwig Weinrich GmbH & Co. KG (a German manufacturer) acquired 80% of Divine Chocolate Ltd. Kuapa Kokoo fell from ~44–45% to 20%.** Weinrich had manufactured Divine's chocolate since 1998. CEO Sophi Tranchell departed after 21 years. |
+| 2015 | After the UK-US merger: **Kuapa 44%**. |
+| **June 2020** | **Ludwig Weinrich GmbH & Co. KG (a German manufacturer) acquired 80% of Divine Chocolate Ltd. Kuapa Kokoo fell from ~44-45% to 20%.** Weinrich had manufactured Divine's chocolate since 1998. CEO Sophi Tranchell departed after 21 years. |
 | April 2024 | Divine is *"ultimately controlled by German confectionery group Ludwig Weinrich"* (The Grocer, 2024). **Weinrich ~80% / Kuapa ~20%.** |
 
 ### 🎓 A ninety-second, student-verifiable media-literacy exercise
 
-**Divine's own "Our Story" page (fetched July 2026) still tells the 45% story and never mentions the 20%.** It says *"Kuapa initially owns 33% of the shares"* and *"This donation gave the farmers' cooperative an even bigger stake: 45% of the company"* — **and stops.** No Weinrich. No 20%.
+**Divine's own "Our Story" page (fetched July 2026) still tells the 45% story and never mentions the 20%.** It says *"Kuapa initially owns 33% of the shares"* and *"This donation gave the farmers' cooperative an even bigger stake: 45% of the company"*, **and stops.** No Weinrich. No 20%.
 
 **The flagship origin page has presented an out-of-date shareholding for six years.**
 
@@ -3755,7 +3755,7 @@ Launched by Fairtrade Africa in **2017** in Côte d'Ivoire's Abengourou zone acr
 
 ### 5.3 Does Fairtrade actually reach the Ghanaian cocoa farmer?
 
-**Nelson, Opoku, Martin, Bugri & Posthumus (2013)** — Natural Resources Institute with KNUST, **DFID-funded, four years, insider access to Kuapa Kokoo**:
+**Nelson, Opoku, Martin, Bugri & Posthumus (2013)**, Natural Resources Institute with KNUST, **DFID-funded, four years, insider access to Kuapa Kokoo**:
 
 > *"There was **no significant difference in household income** between non certified and certified farmers… **There is no evidence of positive income impacts attributable to Fairtrade**."*
 >
@@ -3765,7 +3765,7 @@ Launched by Fairtrade Africa in **2017** in Côte d'Ivoire's Abengourou zone acr
 >
 > **On gender specifically:** *"**There has been no marked change in gender relations**… although women's representation has increased."*
 
-**Donovan, Stoian, Foundjem & Degrande (2016)** — 322 members of four Fairtrade Ghanaian co-ops, **commissioned by Fairtrade Africa**: women were **37% of members but only 20% of board directors and 17% of general-assembly attendees.** Average premium per member, 2013–14: **US$36.**
+**Donovan, Stoian, Foundjem & Degrande (2016)**, 322 members of four Fairtrade Ghanaian co-ops, **commissioned by Fairtrade Africa**: women were **37% of members but only 20% of board directors and 17% of general-assembly attendees.** Average premium per member, 2013-14: **US$36.**
 
 ### ⭐ The structural explanation for all of it
 
@@ -3793,19 +3793,19 @@ Fairtrade International concedes this in its own **April 2026** FAQ: *"In regula
 
 ## What I could not verify
 
-- **Any impact evaluation of a gender programme inside the cocoa sector.** None exists. **(§3.0 — the most important gap here.)**
+- **Any impact evaluation of a gender programme inside the cocoa sector.** None exists. **(§3.0, the most important gap here.)**
 - **Any counterfactual-based evidence** that women's cocoa cooperatives raise income, land access or decision-making power.
 - **A post-2020 Fairtrade Gender Strategy.**
-- **The "45% of cocoa labour"** figure at origin — the Dalberg document is **unpublished**.
-- **The "2% of cocoa land"** figure — **the study it is attributed to says the opposite.**
-- Fairtrade's flagship gender evidence study (CIFOR/Gallagher, 2020) states its own comparators *"do not represent true counterfactuals"* — and its six case studies are **all coffee, in Guatemala, Indonesia and Kenya. Zero cocoa. Zero West Africa.**
-- Widely circulated Ghanaian extension figures ("only 15–30% of women farmers reached"; "9.5% of women vs 34.4% of men") are **weakly sourced.** The peer-reviewed number is **1.61 extension visits for men vs 0.82 for women** (Danso-Abbeam et al., 2020).
+- **The "45% of cocoa labour"** figure at origin, the Dalberg document is **unpublished**.
+- **The "2% of cocoa land"** figure, **the study it is attributed to says the opposite.**
+- Fairtrade's flagship gender evidence study (CIFOR/Gallagher, 2020) states its own comparators *"do not represent true counterfactuals"*, and its six case studies are **all coffee, in Guatemala, Indonesia and Kenya. Zero cocoa. Zero West Africa.**
+- Widely circulated Ghanaian extension figures ("only 15-30% of women farmers reached"; "9.5% of women vs 34.4% of men") are **weakly sourced.** The peer-reviewed number is **1.61 extension visits for men vs 0.82 for women** (Danso-Abbeam et al., 2020).
 
 ---
 
 ## References
 
-Ali, D. A., Deininger, K., & Goldstein, M. (2014). Environmental and gender impacts of land tenure regularization in Africa: Pilot evidence from Rwanda. *Journal of Development Economics*, 110, 262–275.
+Ali, D. A., Deininger, K., & Goldstein, M. (2014). Environmental and gender impacts of land tenure regularization in Africa: Pilot evidence from Rwanda. *Journal of Development Economics*, 110, 262-275.
 
 Arhin, I., Kwarteng, A., & Fredua Antoh, E. (2026). Gender disparities in access to productive resources among cocoa farmers in Ghana. *Journal of Sustainable Development*, 19(2), 71.
 
@@ -3825,7 +3825,7 @@ Donovan, J., Stoian, D., Foundjem, D., & Degrande, A. (2016). *Assessing Fairtra
 
 Fairtrade Foundation. (2020). *Women and cocoa* (Skalidou, D.).
 
-Fairtrade International. (2016). *Fairtrade gender strategy 2016–2020*. https://www.fairtrade.net/
+Fairtrade International. (2016). *Fairtrade gender strategy 2016-2020*. https://www.fairtrade.net/
 
 Food and Agriculture Organization of the United Nations. (2023). *The status of women in agrifood systems*. https://www.fao.org/documents/card/en/c/cc5343en
 
@@ -3835,25 +3835,25 @@ Fountain, A. C., & Huetz-Adams, F. (2025). *Cocoa Barometer 2025*. VOICE Network
 
 Ghana Statistical Service. (2020). *Ghana census of agriculture 2017/18* [Table 9.1, p. 145].
 
-Goldstein, M., Houngbedji, K., Kondylis, F., O'Sullivan, M., & Selod, H. (2018). Formalization without certification? Experimental evidence on property rights and investment. *Journal of Development Economics*, 132, 57–74.
+Goldstein, M., Houngbedji, K., Kondylis, F., O'Sullivan, M., & Selod, H. (2018). Formalization without certification? Experimental evidence on property rights and investment. *Journal of Development Economics*, 132, 57-74.
 
 Gupta, J., Falb, K. L., Lehmann, H., Kpebo, D., Xuan, Z., Hossain, M., Zimmerman, C., Watts, C., & Annan, J. (2013). Gender norms and economic empowerment intervention to reduce intimate partner violence against women in rural Côte d'Ivoire: A randomized controlled pilot study. *BMC International Health and Human Rights*, 13, 46.
 
 Hiscox, M. J., & Goldstein, R. (2014). *Gender inequality in the Ghanaian cocoa sector*. Harvard University.
 
-Karlan, D., Savonitto, B., Thuysbaert, B., & Udry, C. (2017). Impact of savings groups on the lives of the poor. *PNAS*, 114(12), 3079–3084.
+Karlan, D., Savonitto, B., Thuysbaert, B., & Udry, C. (2017). Impact of savings groups on the lives of the poor. *PNAS*, 114(12), 3079-3084.
 
-Kondylis, F., Mueller, V., Sheriff, G., & Zhu, S. (2016). Do female instructors reduce gender bias in diffusion of sustainable land management techniques? Experimental evidence from Mozambique. *World Development*, 78, 436–449.
+Kondylis, F., Mueller, V., Sheriff, G., & Zhu, S. (2016). Do female instructors reduce gender bias in diffusion of sustainable land management techniques? Experimental evidence from Mozambique. *World Development*, 78, 436-449.
 
-Kondylis, F., Mueller, V., & Zhu, J. (2017). Seeing is believing? Evidence from an extension network experiment. *Journal of Development Economics*, 125, 1–20.
+Kondylis, F., Mueller, V., & Zhu, J. (2017). Seeing is believing? Evidence from an extension network experiment. *Journal of Development Economics*, 125, 1-20.
 
 Nelson, V., Opoku, K., Martin, A., Bugri, J., & Posthumus, H. (2013). *Assessing the poverty impact of sustainability standards: Fairtrade in Ghanaian cocoa*. Natural Resources Institute, University of Greenwich (DFID-funded).
 
 Oxfam. (2020). *Women's rights in the cocoa sector in Ghana* (Dery, I., & Dongzagla, A.).
 
-Prospective and Cooperation. (2022). *Impact assessment of the Fairtrade Africa Women School of Leadership — Phases 1 and 2*. Commissioned by Max Havelaar France & Fairtrade Africa.
+Prospective and Cooperation. (2022). *Impact assessment of the Fairtrade Africa Women School of Leadership, Phases 1 and 2*. Commissioned by Max Havelaar France & Fairtrade Africa.
 
-Quisumbing, A. R., Payongayong, E., Aidoo, J. B., & Otsuka, K. (2001). Women's land rights in the transition to individualized ownership: Implications for tree-resource management in western Ghana. *Economic Development and Cultural Change*, 50(1), 157–182.
+Quisumbing, A. R., Payongayong, E., Aidoo, J. B., & Otsuka, K. (2001). Women's land rights in the transition to individualized ownership: Implications for tree-resource management in western Ghana. *Economic Development and Cultural Change*, 50(1), 157-182.
 
 The Grocer. (2024, April). *Divine Chocolate financial results*.
 

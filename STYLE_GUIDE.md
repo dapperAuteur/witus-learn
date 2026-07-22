@@ -66,8 +66,11 @@ Every customer-facing surface must pass before it can merge:
 ## 3. Content policy (BVC content rules are product features)
 
 - Every factual claim ties to a verified source; APA 7 in-line + `## Sources` bibliography.
-- No fabricated characters — real, cited figures or second-person address.
-- No "AI tells": no em/en dashes (use commas/periods/parentheses), no ornate filler.
+- No fabricated characters: real, cited figures or second-person address.
+- No "AI tells": no em/en dashes (use commas/periods/parentheses/colons), no ornate filler.
+  Four things keep their dashes, because changing them would be an error, not a style fix:
+  verbatim quotations, reference entries whose cited title contains a dash, verbatim
+  state-standard text in `src/lib/standards/data/`, and code (comments, regex literals).
 - Age-gate + per-tenant legal pages where `tenants.requires_age_gate` is set.
 
 ---

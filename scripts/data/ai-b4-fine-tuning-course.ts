@@ -461,7 +461,7 @@ This is NIST's **"Measure"** function in practice: you don't assert the system i
 
 > **Trust DNA, final form:** the goal was never "fine-tune a model." It was "solve the problem with the cheapest, most honest, most maintainable tool that works." Often that's a better prompt. Sometimes it's RAG. Occasionally it's a small, well-evaluated fine-tune. Knowing *which* (and being able to prove it) is the whole skill.
 
-:::reveal Of the six steps, which one stops the *most* would-be fine-tunes, and why is stopping there a *win*, not a failure? ||| The early step that asks whether a great prompt (or RAG) on the base model already solves it stops the most: most problems end there. Stopping is a win, not a failure, because the goal was never to fine-tune — it was to solve the problem with the cheapest, most honest, most maintainable tool that works, which is usually a better prompt.
+:::reveal Of the six steps, which one stops the *most* would-be fine-tunes, and why is stopping there a *win*, not a failure? ||| The early step that asks whether a great prompt (or RAG) on the base model already solves it stops the most: most problems end there. Stopping is a win, not a failure, because the goal was never to fine-tune, it was to solve the problem with the cheapest, most honest, most maintainable tool that works, which is usually a better prompt.
 
 ## Sources
 - OpenAI. (2025). *Model optimization (fine-tuning) guide*: prompt-engineer first; fine-tune for token savings and narrow tasks. https://platform.openai.com/docs/guides/fine-tuning

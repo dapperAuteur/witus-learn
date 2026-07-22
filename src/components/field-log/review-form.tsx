@@ -57,7 +57,7 @@ export function ReviewForm({
   if (done) {
     return (
       <div className="rounded-lg border border-emerald-300 bg-emerald-50 p-4 text-sm text-emerald-800 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-300">
-        Review submitted — thank you. You can{" "}
+        Review submitted, thank you. You can{" "}
         <button type="button" onClick={() => router.push("/field-log/review")} className="underline">
           review another project
         </button>.
@@ -71,7 +71,7 @@ export function ReviewForm({
         <label className="flex items-center gap-2">
           <input type="checkbox" checked={gate === "pass"} onChange={(e) => setGate(e.target.checked ? "pass" : "fail")} className="h-4 w-4" />
           <span>
-            <strong>Safety/legal floor passes</strong> — no prohibited content, no subject endangered.
+            <strong>Safety/legal floor passes</strong>, no prohibited content, no subject endangered.
             Uncheck to force a revise.
           </span>
         </label>

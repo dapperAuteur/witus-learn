@@ -11,7 +11,7 @@ export function MarkdownEditor({
   value,
   onChange,
   rows = 10,
-  placeholder = "Write in markdown — use the toolbar, or type directly.",
+  placeholder = "Write in markdown, use the toolbar, or type directly.",
 }: {
   value: string;
   onChange: (v: string) => void;
@@ -69,7 +69,7 @@ export function MarkdownEditor({
   // Image insert with a REQUIRED alt-text gate: ask for the description first (screen-reader
   // accessibility), then upload to Cloudinary and insert ![alt](url). No alt → nothing inserted.
   function insertImage() {
-    const alt = window.prompt("Describe this image for screen readers (alt text — required):");
+    const alt = window.prompt("Describe this image for screen readers (alt text, required):");
     if (!alt || !alt.trim()) return;
     pendingAltRef.current = alt.trim();
     fileRef.current?.click();

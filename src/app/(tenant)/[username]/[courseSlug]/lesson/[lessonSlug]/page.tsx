@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const view = await loadCourseView(username, courseSlug);
   const lesson = view?.lessons.find((l) => l.slug === lessonSlug);
   if (!view || !lesson) return { title: "Lesson" };
-  const description = `${lesson.title} — part of ${view.course.title}.`;
+  const description = `${lesson.title}, part of ${view.course.title}.`;
   const image = ogImageUrl({ title: lesson.title, subtitle: view.course.title });
   return {
     title: lesson.title,
@@ -210,7 +210,7 @@ export default async function LessonPage({ params }: Params) {
           <div className="flex items-start justify-between gap-3">
             <h1 className="text-2xl font-bold tracking-tight">{lesson.title}</h1>
             {view.course.isPublished && view.course.visibility !== "private" ? (
-              <ShareButton title={`${lesson.title} — ${view.course.title}`} label="Share" courseId={view.course.id} lessonId={lesson.id} />
+              <ShareButton title={`${lesson.title}, ${view.course.title}`} label="Share" courseId={view.course.id} lessonId={lesson.id} />
             ) : null}
           </div>
 

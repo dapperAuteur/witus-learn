@@ -79,8 +79,8 @@ export function SaveOfflineButton({
         {!ready.storage || !ready.serviceWorkerApi
           ? "Offline downloads aren’t supported in this browser. (Private or incognito windows usually block the storage they need.)"
           : ready.registered
-            ? "Offline mode is still starting up — reload the page to finish enabling downloads."
-            : "Offline mode isn’t running on this page yet — reload the page to enable downloads."}
+            ? "Offline mode is still starting up, reload the page to finish enabling downloads."
+            : "Offline mode isn’t running on this page yet, reload the page to enable downloads."}
       </p>
     );
   }

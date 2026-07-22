@@ -756,13 +756,13 @@ function printBreakdown(course: AuthoredCourse, stats: BuildStats): void {
 async function main() {
   const { course, stats } = buildCourse();
   if (course.lessons.length === 0) {
-    console.error("No FAA content found — copy the academy-import into content/drone-curriculum/.");
+    console.error("No FAA content found: copy the academy-import into content/drone-curriculum/.");
     process.exit(1);
   }
   printBreakdown(course, stats);
 
   if (DRY_RUN) {
-    console.log("\nDry run — no database was touched. Re-run without --dry-run to seed.\n");
+    console.log("\nDry run: no database was touched. Re-run without --dry-run to seed.\n");
     return;
   }
 
@@ -786,7 +786,7 @@ async function main() {
       .limit(1);
     const tenantId = t[0]?.id;
     if (!tenantId) {
-      console.error("Learn.WitUS tenant missing — run `pnpm seed:tenants` first.");
+      console.error("Learn.WitUS tenant missing: run `pnpm seed:tenants` first.");
       process.exit(1);
     }
 

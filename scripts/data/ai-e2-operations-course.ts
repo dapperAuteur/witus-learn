@@ -182,7 +182,7 @@ A good rule: **fix the process first, then automate it.** Automating a messy wor
 
 **The thread running through all of it:** AI is a fast assistant for the tedious middle of the work, but **the output is only as trustworthy as your check on it.** A wrong inventory count means a missed sale or a stockout; a wrong number in your books is a real problem. Use AI to go faster, then verify what matters before you rely on it.
 
-:::reveal Name one inventory task and one data task AI can help with, and say why you'd still spot-check each one. ||| Inventory: help track stock levels or flag reorder points; data: summarize a month of sales or categorize expenses. You still spot-check both because you're responsible for the numbers being right — a wrong inventory count means a stockout or missed sale, and a wrong number in your books is a real problem. AI is only as trustworthy as your check on it.
+:::reveal Name one inventory task and one data task AI can help with, and say why you'd still spot-check each one. ||| Inventory: help track stock levels or flag reorder points; data: summarize a month of sales or categorize expenses. You still spot-check both because you're responsible for the numbers being right, a wrong inventory count means a stockout or missed sale, and a wrong number in your books is a real problem. AI is only as trustworthy as your check on it.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Manage your business*: bookkeeping and managing assets keep a business running smoothly. https://www.sba.gov/business-guide/manage-your-business
@@ -354,7 +354,7 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
 
 **The whole course in one line:** automate the boring, repetitive work so you have more time for what matters, but keep a human mapping it, checking it, and answerable for it. AI assists; you decide.
 
-:::reveal What does it mean to "name the owner" of an automation, and why is "the AI did it" never a valid excuse to a customer? ||| Naming the owner means a specific human is accountable for each automation — they monitor it, fix it when it fails, and make it right with the customer. "The AI did it" is never valid because the FTC has been clear it's no defense for misleading customers; you, not the tool, are responsible for truthful claims and protecting data, and owning mistakes is what keeps your brand trustworthy.
+:::reveal What does it mean to "name the owner" of an automation, and why is "the AI did it" never a valid excuse to a customer? ||| Naming the owner means a specific human is accountable for each automation, they monitor it, fix it when it fails, and make it right with the customer. "The AI did it" is never valid because the FTC has been clear it's no defense for misleading customers; you, not the tool, are responsible for truthful claims and protecting data, and owning mistakes is what keeps your brand trustworthy.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: accountability and human oversight as traits of trustworthy AI. https://www.nist.gov/itl/ai-risk-management-framework

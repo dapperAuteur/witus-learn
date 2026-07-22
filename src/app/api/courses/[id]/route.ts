@@ -95,10 +95,10 @@ export async function PATCH(req: Request, { params }: Params) {
       if (!eligible) return errorJson("That person isn't an instructor on this brand.", 400);
       // Pretty course URLs are /{username}/{slug} — the new instructor needs a username.
       const uname = await ensureUsernameById(newInstructorId);
-      if (!uname) return errorJson("That instructor has no profile yet — can't build their course URL.", 400);
+      if (!uname) return errorJson("That instructor has no profile yet, can't build their course URL.", 400);
       // The (tenant, instructor, slug) unique index would collide if they already own this slug.
       if (course.slug && (await instructorSlugTaken(sdb.tenantId, newInstructorId, course.slug, course.id))) {
-        return errorJson("That instructor already has a course at this URL — rename this course's slug first.", 409);
+        return errorJson("That instructor already has a course at this URL, rename this course's slug first.", 409);
       }
     }
   }

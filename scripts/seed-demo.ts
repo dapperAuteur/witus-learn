@@ -35,7 +35,7 @@ const DEMO_USER_ID = "demo-teacher";
 async function main() {
   const email = process.env.DEMO_VISITOR_USER_EMAIL;
   if (!email) {
-    console.error("DEMO_VISITOR_USER_EMAIL is not set — nothing to seed. Set it in .env.local.");
+    console.error("DEMO_VISITOR_USER_EMAIL is not set, nothing to seed. Set it in .env.local.");
     process.exit(1);
   }
 
@@ -86,7 +86,7 @@ async function main() {
 
   if (published.length === 0) {
     console.log(
-      `No published courses on ${DEMO_TENANT_SLUG} yet — skipping baseline enrollment. ` +
+      `No published courses on ${DEMO_TENANT_SLUG} yet, skipping baseline enrollment. ` +
         "Seed real course content into Acme for the demo to feel alive.",
     );
   }

@@ -79,7 +79,7 @@ export function CommodityMap({ commodities }: { commodities: MapPin[] }) {
               role="button"
               tabIndex={0}
               aria-expanded={isSel}
-              aria-label={`${c.name}${c.geo ? ` — ${c.geo}` : ""}`}
+              aria-label={`${c.name}${c.geo ? `, ${c.geo}` : ""}`}
               onClick={() => setSelected(c)}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
@@ -88,7 +88,7 @@ export function CommodityMap({ commodities }: { commodities: MapPin[] }) {
                 }
               }}
             >
-              <title>{`${c.name} — ${c.geo ?? ""}`}</title>
+              <title>{`${c.name}, ${c.geo ?? ""}`}</title>
               {/* A generous transparent hit area: the visible dot is 5px, which is far below a
                   44px touch target on a phone. */}
               <circle r={22} fill="transparent" />

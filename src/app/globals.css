@@ -22,7 +22,7 @@ body {
 
 /* Anchor jumps (skip-to-content #main-content, /explore's #map + #pricing, heading links)
    must land BELOW the sticky site header, not underneath it. Scoped with :has() to pages
-   that actually render the header — /downloads, /offline, /kids and /embed/* have no site
+   that actually render the header, /downloads, /offline, /kids and /embed/* have no site
    header, so their anchor math stays untouched. */
 html:has([data-site-header]) {
   scroll-padding-top: calc(var(--site-header-h) + 0.5rem);

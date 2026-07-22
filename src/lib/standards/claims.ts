@@ -61,8 +61,8 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Maps where commodities grow and why, and how that distribution drives trade.",
     courseSlugs: ["coffee", "tea", "chocolate", "sugar", "forest-wisdom", "kava"],
     lessons: [
-      "The Commodity Map itself — every episode pinned at its origin",
-      "The Growing Belts map — production regions by latitude band and country",
+      "The Commodity Map itself, every episode pinned at its origin",
+      "The Growing Belts map, production regions by latitude band and country",
       "Ep 1 · The Coffee Belt: Where Coffee Grows and Why",
       "Ep 3 · The Cacao Tree and the Narrowest Belt",
       "Ep 6 · Why Volcanic Soil Only",
@@ -112,8 +112,8 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Has the student prepare maps and data tables (the Coffee episode's graded project).",
     courseSlugs: ["coffee"],
     lessons: [
-      "Ep 1 · Assignment, Option A — map the supply chain of 3 items from your morning routine",
-      "Ep 1 · Assignment, Option B — Coffee Belt climate report, with maps and data tables",
+      "Ep 1 · Assignment, Option A, map the supply chain of 3 items from your morning routine",
+      "Ep 1 · Assignment, Option B, Coffee Belt climate report, with maps and data tables",
     ],
   },
   {
@@ -250,7 +250,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Puts authors' differing accounts of the same events side by side and assesses their evidence.",
     courseSlugs: ["sugar", "chocolate", "forest-wisdom", "coca"],
     lessons: [
-      "Ep 4 · Whose Voice Tells the Story — Beckford (1790) against Equiano (1789) and Mary Prince (1831) on the same plantation world",
+      "Ep 4 · Whose Voice Tells the Story, Beckford (1790) against Equiano (1789) and Mary Prince (1831) on the same plantation world",
       "Ep 3 · Two Ways of Seeing a Bean",
       "Ep 5 · Two Ways of Knowing",
       "Ep 18 · Whose Voice",
@@ -275,16 +275,16 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "bvc.coffee-project-synthesis",
-    claim: "Ships a graded 2–3 week research project requiring synthesis across sources.",
+    claim: "Ships a graded 2-3 week research project requiring synthesis across sources.",
     courseSlugs: ["coffee"],
-    lessons: ["Ep 1 · Assignment — all four options are 2–3 week research projects requiring synthesis across sources"],
+    lessons: ["Ep 1 · Assignment, all four options are 2-3 week research projects requiring synthesis across sources"],
   },
   {
     id: "bvc.coffee-project-argument-paper",
     claim: "Requires an argument paper with a counterargument section (project Option D).",
     courseSlugs: ["coffee"],
     lessons: [
-      "Ep 1 · Assignment, Option D — a 1,200–1,500 word research paper with a required counterargument section",
+      "Ep 1 · Assignment, Option D, a 1,200-1,500 word research paper with a required counterargument section",
     ],
   },
   {
@@ -292,8 +292,8 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Requires a real research process with peer-reviewed sources and APA citation.",
     courseSlugs: ["coffee"],
     lessons: [
-      "Ep 1 · Assignment, Option B — climate-vulnerability report, 3+ peer-reviewed sources, APA bibliography",
-      "Ep 1 · Assignment, Option D — primary-source research paper with an APA bibliography",
+      "Ep 1 · Assignment, Option B, climate-vulnerability report, 3+ peer-reviewed sources, APA bibliography",
+      "Ep 1 · Assignment, Option D, primary-source research paper with an APA bibliography",
     ],
   },
   {
@@ -301,8 +301,8 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Requires gathering authoritative sources and practicing interview ethics (project Options B/C).",
     courseSlugs: ["coffee"],
     lessons: [
-      "Ep 1 · Assignment, Option B — 3+ peer-reviewed sources and an APA bibliography",
-      "Ep 1 · Assignment, Option C — interview ethics: informed consent, right to review",
+      "Ep 1 · Assignment, Option B, 3+ peer-reviewed sources and an APA bibliography",
+      "Ep 1 · Assignment, Option C, interview ethics: informed consent, right to review",
     ],
   },
   {
@@ -314,7 +314,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Ep 3 · A Two-Degree Threat",
       "Ep 6 · Why Volcanic Soil Only",
       "Ep 10 · Karst Limestone and Bourbon",
-      "Ep 1 · Assignment, Option B — assess a producing country's climate viability and defend the assessment",
+      "Ep 1 · Assignment, Option B, assess a producing country's climate viability and defend the assessment",
     ],
   },
   {
@@ -346,7 +346,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "bvc.sugar-industry-impact",
-    claim: "Evaluates the sugar industry's impact on societies and individuals, 16th–18th centuries.",
+    claim: "Evaluates the sugar industry's impact on societies and individuals, 16th-18th centuries.",
     courseSlugs: ["sugar", "rum"],
     lessons: [
       "Ep 4 · The Sugar Islands",
@@ -401,7 +401,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.bill-of-rights-origin",
-    claim: "Teaches the Bill of Rights (Amendments I–X) as a document.",
+    claim: "Teaches the Bill of Rights (Amendments I-X) as a document.",
     courseSlugs: ["us-constitution-101"],
     lessons: ["US Constitution 101, Lesson 8 · The Bill of Rights (Amendments I to X)"],
   },
@@ -446,7 +446,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.federal-articles-i-iii",
-    claim: "Teaches Articles I–III and the branch relationships they create.",
+    claim: "Teaches Articles I-III and the branch relationships they create.",
     courseSlugs: ["us-constitution-101"],
     lessons: ["US Constitution 101, Lessons 3-6 · Articles I-III and checks & balances"],
   },
@@ -584,7 +584,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches the landmark rights cases as rules a student can apply: Tinker, Brandenburg, Mapp, Terry, T.L.O., Riley, Carpenter.",
     courseSlugs: ["know-your-rights"],
     lessons: [
-      "Know Your Rights, Lessons 2-5 · speech, religion, press, assembly — including at school and online",
+      "Know Your Rights, Lessons 2-5 · speech, religion, press, assembly, including at school and online",
       "Know Your Rights, Lessons 6-8 · the 4th Amendment: searches, stops, and your digital life",
     ],
   },
@@ -611,7 +611,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches supporting a campaign lawfully: volunteering, donating, canvassing, the guardrails.",
     courseSlugs: ["help-a-campaign"],
     lessons: [
-      "How to Help a Campaign · the whole course (volunteering, donating, canvassing — with the legal guardrails)",
+      "How to Help a Campaign · the whole course (volunteering, donating, canvassing, with the legal guardrails)",
     ],
   },
   {
@@ -700,7 +700,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.az-get-involved",
-    claim: "Teaches getting involved where you live, Arizona edition — including the direct-democracy tools.",
+    claim: "Teaches getting involved where you live, Arizona edition, including the direct-democracy tools.",
     courseSlugs: ["state-civics-az"],
     lessons: ["Arizona Civics, Lesson 8 · Get involved where you live in Arizona"],
   },
@@ -755,7 +755,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // (lawmaking, courts, local responsibilities) and direct democracy through 12.6.5.
   {
     id: "civics.ca-constitution-direct-democracy",
-    claim: "Teaches California's 1879 constitution and its Article II direct democracy — the initiative, referendum, and recall added in 1911 — in working detail, including the turnout-dependent signature thresholds.",
+    claim: "Teaches California's 1879 constitution and its Article II direct democracy, the initiative, referendum, and recall added in 1911, in working detail, including the turnout-dependent signature thresholds.",
     courseSlugs: ["state-civics-ca"],
     lessons: [
       "California Civics, Lesson 1 · California's constitution: the 1879 rulebook and direct democracy",
@@ -794,7 +794,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.ca-get-involved",
-    claim: "Teaches getting involved where you live, California edition — including the direct-democracy tools.",
+    claim: "Teaches getting involved where you live, California edition, including the direct-democracy tools.",
     courseSlugs: ["state-civics-ca"],
     lessons: ["California Civics, Lesson 8 · Get involved where you live in California"],
   },
@@ -855,7 +855,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.ny-get-involved",
-    claim: "Teaches getting involved where you live, New York edition — state legislators, county/city/town/village boards, and the statewide ballot proposals including the 20-year convention question.",
+    claim: "Teaches getting involved where you live, New York edition, state legislators, county/city/town/village boards, and the statewide ballot proposals including the 20-year convention question.",
     courseSlugs: ["state-civics-ny"],
     lessons: ["New York Civics, Lesson 8 · Get involved where you live in New York"],
   },
@@ -895,7 +895,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.pa-get-involved",
-    claim: "Teaches getting involved where you live, Pennsylvania edition — legislators, and especially the township supervisors, borough or city council, and county commissioners, because Pennsylvania has no citizen initiative.",
+    claim: "Teaches getting involved where you live, Pennsylvania edition, legislators, and especially the township supervisors, borough or city council, and county commissioners, because Pennsylvania has no citizen initiative.",
     courseSlugs: ["state-civics-pa"],
     lessons: ["Pennsylvania Civics, Lesson 7 · Get involved where you live in Pennsylvania"],
   },
@@ -943,7 +943,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.tx-get-involved",
-    claim: "Teaches getting involved where you live, Texas edition — mindful of the biennial legislative clock and the absence of a statewide citizen initiative.",
+    claim: "Teaches getting involved where you live, Texas edition, mindful of the biennial legislative clock and the absence of a statewide citizen initiative.",
     courseSlugs: ["state-civics-tx"],
     lessons: ["Texas Civics, Lesson 7 · Get involved where you live in Texas"],
   },
@@ -959,7 +959,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // data/fl.ts publishes that in its notClaimed list.
   {
     id: "civics.fl-state-structure",
-    claim: "Teaches Florida's 1968-revision constitution and its many amendment paths (including the once-every-20-years Constitution Revision Commission that places proposals directly on the ballot, and the 60% supermajority added in 2006); its plural executive (a Governor plus a separately-elected Cabinet — Attorney General, Chief Financial Officer, and Commissioner of Agriculture); a 120-member House and a 40-member Senate; and how a bill becomes a Florida law in a 60-day session, with a two-thirds veto override.",
+    claim: "Teaches Florida's 1968-revision constitution and its many amendment paths (including the once-every-20-years Constitution Revision Commission that places proposals directly on the ballot, and the 60% supermajority added in 2006); its plural executive (a Governor plus a separately-elected Cabinet, Attorney General, Chief Financial Officer, and Commissioner of Agriculture); a 120-member House and a 40-member Senate; and how a bill becomes a Florida law in a 60-day session, with a two-thirds veto override.",
     courseSlugs: ["state-civics-fl"],
     lessons: [
       "Florida Civics, Lesson 1 · Florida's constitution: the 1968 rewrite and its many amendment paths",
@@ -994,7 +994,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.fl-get-involved",
-    claim: "Teaches getting involved where you live, Florida edition — the Legislature's 60-day session, the ballot (initiatives and amendments), and county and municipal government.",
+    claim: "Teaches getting involved where you live, Florida edition, the Legislature's 60-day session, the ballot (initiatives and amendments), and county and municipal government.",
     courseSlugs: ["state-civics-fl"],
     lessons: ["Florida Civics, Lesson 9 · Get involved where you live in Florida"],
   },
@@ -1009,7 +1009,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // data/oh.ts notClaimed), so that content maps to Ohio social studies instead.
   {
     id: "civics.oh-constitution-direct-democracy",
-    claim: "Teaches Ohio's 1851 constitution and the strong direct democracy its 1912 amendments added — the citizen initiative and referendum, with a citizen constitutional amendment still passing on a simple majority after voters rejected the 2023 Issue 1 attempt to raise the bar to 60%.",
+    claim: "Teaches Ohio's 1851 constitution and the strong direct democracy its 1912 amendments added, the citizen initiative and referendum, with a citizen constitutional amendment still passing on a simple majority after voters rejected the 2023 Issue 1 attempt to raise the bar to 60%.",
     courseSlugs: ["state-civics-oh"],
     lessons: [
       "Ohio Civics, Lesson 1 · Ohio's constitution: the 1851 rulebook and its 1912 makeover (the initiative and referendum)",
@@ -1025,7 +1025,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.oh-courts",
-    claim: "Teaches Ohio's elected judiciary — Supreme Court and Court of Appeals judges chosen in popular elections — and the 2021 change (SB 80) that put party labels on the general-election ballot for the top courts starting in 2022.",
+    claim: "Teaches Ohio's elected judiciary, Supreme Court and Court of Appeals judges chosen in popular elections, and the 2021 change (SB 80) that put party labels on the general-election ballot for the top courts starting in 2022.",
     courseSlugs: ["state-civics-oh"],
     lessons: ["Ohio Civics, Lesson 3 · Ohio's courts: elected judges, and a 2021 ballot change"],
   },
@@ -1046,7 +1046,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.oh-elections",
-    claim: "Teaches Ohio's election specifics: photo voter ID since 2023 (HB 458), no-excuse early and absentee voting, a roughly 30-day registration deadline, and the citizen initiative/referendum — including the August 2023 Issue 1 that failed to raise the amendment bar to 60%.",
+    claim: "Teaches Ohio's election specifics: photo voter ID since 2023 (HB 458), no-excuse early and absentee voting, a roughly 30-day registration deadline, and the citizen initiative/referendum, including the August 2023 Issue 1 that failed to raise the amendment bar to 60%.",
     courseSlugs: ["state-civics-oh"],
     lessons: [
       "Ohio Civics, Lesson 6 · Elections in Ohio: photo ID (2023), early voting, and the ballot initiative",
@@ -1055,7 +1055,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.oh-get-involved",
-    claim: "Teaches getting involved where you live, Ohio edition — legislators and bill-tracking, the citizen initiative and referendum, county/city/village/township and special-district boards, and voting Ohio's now party-labeled judicial races.",
+    claim: "Teaches getting involved where you live, Ohio edition, legislators and bill-tracking, the citizen initiative and referendum, county/city/village/township and special-district boards, and voting Ohio's now party-labeled judicial races.",
     courseSlugs: ["state-civics-oh"],
     lessons: ["Ohio Civics, Lesson 8 · Get involved where you live in Ohio"],
   },
@@ -1069,7 +1069,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // Georgia has NO statewide citizen initiative — change runs through the legislature, then the voters.
   {
     id: "civics.ga-constitution-no-initiative",
-    claim: "Teaches Georgia's 1983 constitution and why Georgia has NO statewide citizen initiative — a constitutional amendment is proposed only by a two-thirds vote of each house of the General Assembly (or a constitutional convention) and then ratified by the voters, never by citizen petition.",
+    claim: "Teaches Georgia's 1983 constitution and why Georgia has NO statewide citizen initiative, a constitutional amendment is proposed only by a two-thirds vote of each house of the General Assembly (or a constitutional convention) and then ratified by the voters, never by citizen petition.",
     courseSlugs: ["state-civics-ga"],
     lessons: [
       "Georgia Civics, Lesson 1 · Georgia's constitution: the 1983 rulebook, and no citizen initiative",
@@ -1084,13 +1084,13 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.ga-courts",
-    claim: "Teaches Georgia's appellate courts — a nine-justice Supreme Court and a fifteen-judge Court of Appeals — chosen in NONPARTISAN statewide elections to six-year terms, with the Governor filling mid-term vacancies.",
+    claim: "Teaches Georgia's appellate courts, a nine-justice Supreme Court and a fifteen-judge Court of Appeals, chosen in NONPARTISAN statewide elections to six-year terms, with the Governor filling mid-term vacancies.",
     courseSlugs: ["state-civics-ga"],
     lessons: ["Georgia Civics, Lesson 3 · Georgia's courts: nonpartisan elections for the appellate bench"],
   },
   {
     id: "civics.ga-bill-process",
-    claim: "Teaches how a bill becomes a Georgia law — including the constitutional-majority floor vote and the two-thirds veto override — and that a constitutional amendment skips the Governor's desk and goes straight to the voters.",
+    claim: "Teaches how a bill becomes a Georgia law, including the constitutional-majority floor vote and the two-thirds veto override, and that a constitutional amendment skips the Governor's desk and goes straight to the voters.",
     courseSlugs: ["state-civics-ga"],
     lessons: ["Georgia Civics, Lesson 4 · How a bill becomes a Georgia law"],
   },
@@ -1113,7 +1113,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.ga-get-involved",
-    claim: "Teaches getting involved where you live, Georgia edition — because Georgia has no citizen initiative, persuading legislators is the key lever, alongside county commissions and city councils, the nonpartisan judicial races, and coming back to vote the runoff.",
+    claim: "Teaches getting involved where you live, Georgia edition, because Georgia has no citizen initiative, persuading legislators is the key lever, alongside county commissions and city councils, the nonpartisan judicial races, and coming back to vote the runoff.",
     courseSlugs: ["state-civics-ga"],
     lessons: ["Georgia Civics, Lesson 8 · Get involved where you live in Georgia"],
   },
@@ -1126,7 +1126,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // standard reaches past what one state's structure covers. See data/il.ts.
   {
     id: "civics.il-state-structure",
-    claim: "Teaches Illinois's modern Constitution of 1970 (in effect July 1, 1971); its plural executive of six separately elected statewide officers — uniquely BOTH a Comptroller and a Treasurer, plus a Governor and Lieutenant Governor who since 2014 run on a joint ticket; a General Assembly of 118 representatives and 59 senators; and the Governor's amendatory and line-item vetoes with a three-fifths override.",
+    claim: "Teaches Illinois's modern Constitution of 1970 (in effect July 1, 1971); its plural executive of six separately elected statewide officers, uniquely BOTH a Comptroller and a Treasurer, plus a Governor and Lieutenant Governor who since 2014 run on a joint ticket; a General Assembly of 118 representatives and 59 senators; and the Governor's amendatory and line-item vetoes with a three-fifths override.",
     courseSlugs: ["state-civics-il"],
     lessons: [
       "Illinois Civics, Lesson 1 · Illinois's modern Constitution of 1970",
@@ -1142,25 +1142,25 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.il-initiative",
-    claim: "Teaches Illinois's uniquely NARROW citizen initiative — usable only to amend the Legislative Article (the structure of the General Assembly), not ordinary laws or other amendments — and its model case, the 1980 Cutback Amendment that shrank the House from 177 to 118 and ended cumulative voting in multi-member districts.",
+    claim: "Teaches Illinois's uniquely NARROW citizen initiative, usable only to amend the Legislative Article (the structure of the General Assembly), not ordinary laws or other amendments, and its model case, the 1980 Cutback Amendment that shrank the House from 177 to 118 and ended cumulative voting in multi-member districts.",
     courseSlugs: ["state-civics-il"],
     lessons: ["Illinois Civics, Lesson 4 · The limited citizen initiative and the 1980 Cutback Amendment"],
   },
   {
     id: "civics.il-home-rule",
-    claim: "Teaches Illinois as one of the strongest HOME-RULE states — the deliberate opposite of Dillon's Rule, where units over 25,000 people are automatically home rule and start with broad power unless the state limits them — across 102 counties, including a home-rule Cook County, plus townships and among the most special districts of any state.",
+    claim: "Teaches Illinois as one of the strongest HOME-RULE states, the deliberate opposite of Dillon's Rule, where units over 25,000 people are automatically home rule and start with broad power unless the state limits them, across 102 counties, including a home-rule Cook County, plus townships and among the most special districts of any state.",
     courseSlugs: ["state-civics-il"],
     lessons: ["Illinois Civics, Lesson 5 · Home rule and local government (the opposite of Dillon's Rule)"],
   },
   {
     id: "civics.il-elections",
-    claim: "Teaches Illinois's expanded voter access — same-day (Election-Day) registration, automatic registration, no-excuse vote-by-mail with a permanent list, early voting, and online registration — administered locally by county clerks and some city election boards, with a standing flag to confirm current rules at elections.il.gov.",
+    claim: "Teaches Illinois's expanded voter access, same-day (Election-Day) registration, automatic registration, no-excuse vote-by-mail with a permanent list, early voting, and online registration, administered locally by county clerks and some city election boards, with a standing flag to confirm current rules at elections.il.gov.",
     courseSlugs: ["state-civics-il"],
     lessons: ["Illinois Civics, Lesson 6 · Elections and how to take part"],
   },
   {
     id: "civics.il-get-involved",
-    claim: "Teaches getting involved where you live, Illinois edition — registering and voting (even on Election Day), showing up at home-rule local meetings, contacting your Springfield legislators, using the state's one narrow initiative lever, and running for local office.",
+    claim: "Teaches getting involved where you live, Illinois edition, registering and voting (even on Election Day), showing up at home-rule local meetings, contacting your Springfield legislators, using the state's one narrow initiative lever, and running for local office.",
     courseSlugs: ["state-civics-il"],
     lessons: ["Illinois Civics, Lesson 6 · Elections and how to take part"],
   },
@@ -1183,19 +1183,19 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.mi-courts",
-    claim: "Teaches Michigan's distinctive judicial selection: a seven-justice Supreme Court elected to 8-year terms on a NONPARTISAN ballot, yet nominated by the political parties at their conventions — a 'partisan nomination, nonpartisan election' hybrid — with nonpartisan-ballot Court of Appeals and trial judges and gubernatorial appointment to fill mid-term vacancies.",
+    claim: "Teaches Michigan's distinctive judicial selection: a seven-justice Supreme Court elected to 8-year terms on a NONPARTISAN ballot, yet nominated by the political parties at their conventions, a 'partisan nomination, nonpartisan election' hybrid, with nonpartisan-ballot Court of Appeals and trial judges and gubernatorial appointment to fill mid-term vacancies.",
     courseSlugs: ["state-civics-mi"],
     lessons: ["Michigan Civics, Lesson 3 · How Michigan chooses its judges (the nonpartisan-ballot quirk)"],
   },
   {
     id: "civics.mi-redistricting",
-    claim: "Teaches Michigan's Independent Citizens Redistricting Commission — created by Proposal 2 of 2018 to draw the state House, state Senate, and U.S. Congressional maps — a body of 13 randomly selected citizens (four Democratic, four Republican, five affiliated with neither) that excludes politicians and lobbyists and works in public, a national first that moved map-drawing out of the Legislature.",
+    claim: "Teaches Michigan's Independent Citizens Redistricting Commission, created by Proposal 2 of 2018 to draw the state House, state Senate, and U.S. Congressional maps, a body of 13 randomly selected citizens (four Democratic, four Republican, five affiliated with neither) that excludes politicians and lobbyists and works in public, a national first that moved map-drawing out of the Legislature.",
     courseSlugs: ["state-civics-mi"],
     lessons: ["Michigan Civics, Lesson 5 · Redistricting: Michigan's Independent Citizens Redistricting Commission"],
   },
   {
     id: "civics.mi-direct-democracy",
-    claim: "Teaches Michigan's strong direct democracy — the constitutional initiative (including the quirk that a citizen 'initiated law' goes to the Legislature first, which may enact it as written before it would reach the ballot), the referendum to reject a statute, and the recall of most elected officials — as tools that make the voters themselves a lawmaking body.",
+    claim: "Teaches Michigan's strong direct democracy, the constitutional initiative (including the quirk that a citizen 'initiated law' goes to the Legislature first, which may enact it as written before it would reach the ballot), the referendum to reject a statute, and the recall of most elected officials, as tools that make the voters themselves a lawmaking body.",
     courseSlugs: ["state-civics-mi"],
     lessons: [
       "Michigan Civics, Lesson 1 · Michigan's Constitution of 1963 and its direct democracy",
@@ -1217,7 +1217,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.mi-get-involved",
-    claim: "Teaches getting involved where you live, Michigan edition — registering and voting with the state's full menu of options, contacting your legislators while bills are in committee, showing up at local boards, using citizen initiative/referendum/recall petitions, applying to serve on boards (including the redistricting commission), and running for local office.",
+    claim: "Teaches getting involved where you live, Michigan edition, registering and voting with the state's full menu of options, contacting your legislators while bills are in committee, showing up at local boards, using citizen initiative/referendum/recall petitions, applying to serve on boards (including the redistricting commission), and running for local office.",
     courseSlugs: ["state-civics-mi"],
     lessons: ["Michigan Civics, Lesson 8 · How to take part where you live"],
   },
@@ -1232,7 +1232,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // (the North Carolina half is taught; the federal half lives in the general civics catalog).
   {
     id: "civics.nc-constitution",
-    claim: "Teaches North Carolina's 1971 (third) constitution and its amendment path — the General Assembly proposes by a three-fifths vote of each house, then the voters ratify — and that North Carolina has no citizen initiative.",
+    claim: "Teaches North Carolina's 1971 (third) constitution and its amendment path, the General Assembly proposes by a three-fifths vote of each house, then the voters ratify, and that North Carolina has no citizen initiative.",
     courseSlugs: ["state-civics-nc"],
     lessons: [
       "North Carolina Civics, Lesson 1 · North Carolina's 1971 constitution, and no citizen initiative",
@@ -1240,7 +1240,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.nc-council-of-state",
-    claim: "Teaches North Carolina's plural elected executive — the Council of State, ten separately-elected statewide officers — and a General Assembly of a 120-member House and a 50-member Senate.",
+    claim: "Teaches North Carolina's plural elected executive, the Council of State, ten separately-elected statewide officers, and a General Assembly of a 120-member House and a 50-member Senate.",
     courseSlugs: ["state-civics-nc"],
     lessons: ["North Carolina Civics, Lesson 2 · The three branches, and the Council of State"],
   },
@@ -1272,7 +1272,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.nc-get-involved",
-    claim: "Teaches getting involved where you live, North Carolina edition — and why the General Assembly is the main lever for changing state law (no citizen initiative and a comparatively limited veto).",
+    claim: "Teaches getting involved where you live, North Carolina edition, and why the General Assembly is the main lever for changing state law (no citizen initiative and a comparatively limited veto).",
     courseSlugs: ["state-civics-nc"],
     lessons: ["North Carolina Civics, Lesson 8 · Get involved where you live in North Carolina"],
   },
@@ -1286,7 +1286,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // publishes the gaps.
   {
     id: "civics.va-constitution",
-    claim: "Teaches Virginia's Constitution of 1971 (its seventh), the meaning of 'Commonwealth,' and its deliberately slow amendment path — passage by two separately-elected General Assemblies then a voter referendum — with no citizen initiative.",
+    claim: "Teaches Virginia's Constitution of 1971 (its seventh), the meaning of 'Commonwealth,' and its deliberately slow amendment path, passage by two separately-elected General Assemblies then a voter referendum, with no citizen initiative.",
     courseSlugs: ["state-civics-va"],
     lessons: [
       "Virginia Civics, Lesson 1 · Virginia's constitution and 'the Commonwealth'",
@@ -1295,19 +1295,19 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.va-three-branches",
-    claim: "Teaches Virginia's General Assembly (a 100-member House of Delegates and a 40-member Senate, the oldest continuous law-making body in the New World) and its three separately-elected statewide executives — Governor, Lieutenant Governor, and Attorney General.",
+    claim: "Teaches Virginia's General Assembly (a 100-member House of Delegates and a 40-member Senate, the oldest continuous law-making body in the New World) and its three separately-elected statewide executives, Governor, Lieutenant Governor, and Attorney General.",
     courseSlugs: ["state-civics-va"],
     lessons: ["Virginia Civics, Lesson 2 · The three branches of Virginia government"],
   },
   {
     id: "civics.va-governor-one-term",
-    claim: "Teaches Virginia's unique rule that the Governor may not serve two consecutive terms — the only state with this bar — though a former Governor may return after sitting out.",
+    claim: "Teaches Virginia's unique rule that the Governor may not serve two consecutive terms, the only state with this bar, though a former Governor may return after sitting out.",
     courseSlugs: ["state-civics-va"],
     lessons: ["Virginia Civics, Lesson 3 · The Governor who cannot serve two terms in a row"],
   },
   {
     id: "civics.va-courts-legislature",
-    claim: "Teaches that Virginia's judges are elected by the General Assembly (the Legislature) — Supreme Court of Virginia justices to 12-year terms — one of only two states (with South Carolina) to choose judges this way.",
+    claim: "Teaches that Virginia's judges are elected by the General Assembly (the Legislature), Supreme Court of Virginia justices to 12-year terms, one of only two states (with South Carolina) to choose judges this way.",
     courseSlugs: ["state-civics-va"],
     lessons: ["Virginia Civics, Lesson 4 · How Virginia chooses its judges (elected by the Legislature)"],
   },
@@ -1331,7 +1331,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.va-get-involved",
-    claim: "Teaches getting involved where you live, Virginia edition — the short Richmond session, county boards of supervisors, city councils, and Dillon's-Rule advocacy at both the local and state levels.",
+    claim: "Teaches getting involved where you live, Virginia edition, the short Richmond session, county boards of supervisors, city councils, and Dillon's-Rule advocacy at both the local and state levels.",
     courseSlugs: ["state-civics-va"],
     lessons: ["Virginia Civics, Lesson 7 · Elections, redistricting, and how to take part"],
   },
@@ -1342,7 +1342,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // top-two-primary, plural-executive state; the flagship teaches all four.
   {
     id: "civics.wa-constitution-direct-democracy",
-    claim: "Teaches Washington's Constitution of 1889 and its strong direct democracy — the Initiative to the People and the Initiative to the Legislature (a distinction unique to a handful of states), the referendum, and the recall — as the through-line that makes voters a lawmaking body.",
+    claim: "Teaches Washington's Constitution of 1889 and its strong direct democracy, the Initiative to the People and the Initiative to the Legislature (a distinction unique to a handful of states), the referendum, and the recall, as the through-line that makes voters a lawmaking body.",
     courseSlugs: ["state-civics-wa"],
     lessons: [
       "Washington Civics, Lesson 1 · Washington's Constitution of 1889 and its direct democracy",
@@ -1358,7 +1358,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.wa-courts-legislature",
-    claim: "Teaches Washington's nonpartisan elected judiciary (a nine-justice Supreme Court elected to 6-year terms) and its Legislature — 49 senators and 98 representatives from 49 shared districts, each electing one senator and two representatives — plus the Governor's line-item veto and the two-thirds override.",
+    claim: "Teaches Washington's nonpartisan elected judiciary (a nine-justice Supreme Court elected to 6-year terms) and its Legislature, 49 senators and 98 representatives from 49 shared districts, each electing one senator and two representatives, plus the Governor's line-item veto and the two-thirds override.",
     courseSlugs: ["state-civics-wa"],
     lessons: ["Washington Civics, Lesson 3 · The courts and the Legislature"],
   },
@@ -1392,13 +1392,13 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // signature is a deliberately STRONG governor and the ABSENCE of direct democracy.
   {
     id: "civics.nj-constitution",
-    claim: "Teaches New Jersey's Constitution of 1947 — its third, after 1776 and 1844 — whose signature achievement was to streamline and strengthen the executive branch, the through-line of New Jersey civics.",
+    claim: "Teaches New Jersey's Constitution of 1947, its third, after 1776 and 1844, whose signature achievement was to streamline and strengthen the executive branch, the through-line of New Jersey civics.",
     courseSlugs: ["state-civics-nj"],
     lessons: ["New Jersey Civics, Lesson 1 · New Jersey's Constitution of 1947"],
   },
   {
     id: "civics.nj-strong-governor",
-    claim: "Teaches why New Jersey's Governor is considered one of the strongest in the nation — the Governor APPOINTS the Attorney General, Secretary of State, Treasurer, and most top officials (with Senate confirmation) rather than voters electing them — and why New Jersey had no Lieutenant Governor until 2010 (now a joint ticket).",
+    claim: "Teaches why New Jersey's Governor is considered one of the strongest in the nation, the Governor APPOINTS the Attorney General, Secretary of State, Treasurer, and most top officials (with Senate confirmation) rather than voters electing them, and why New Jersey had no Lieutenant Governor until 2010 (now a joint ticket).",
     courseSlugs: ["state-civics-nj"],
     lessons: [
       "New Jersey Civics, Lesson 2 · New Jersey's powerful Governor (and the 2010 Lieutenant Governor)",
@@ -1406,7 +1406,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.nj-legislature-courts",
-    claim: "Teaches New Jersey's Legislature (40 senators and 80 Assembly members from 40 shared districts, each electing one senator and two Assembly members, on the '2-year, 4-year, 4-year' Senate cycle) and its APPOINTED judiciary — Governor nominates, Senate confirms, an initial 7-year term then tenure to age 70 — with the seven-member Supreme Court and the 'senatorial courtesy' custom.",
+    claim: "Teaches New Jersey's Legislature (40 senators and 80 Assembly members from 40 shared districts, each electing one senator and two Assembly members, on the '2-year, 4-year, 4-year' Senate cycle) and its APPOINTED judiciary, Governor nominates, Senate confirms, an initial 7-year term then tenure to age 70, with the seven-member Supreme Court and the 'senatorial courtesy' custom.",
     courseSlugs: ["state-civics-nj"],
     lessons: ["New Jersey Civics, Lesson 3 · The Legislature and the appointed judiciary"],
   },
@@ -1435,7 +1435,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ma-constitution",
     claim:
-      "Teaches Massachusetts's Constitution of 1780 — the oldest functioning written constitution in the world, principally drafted by John Adams and still in force — and that the Commonwealth's own constitution (with its Article I Declaration of Rights) sits alongside the U.S. Constitution as a source of powers and rights.",
+      "Teaches Massachusetts's Constitution of 1780, the oldest functioning written constitution in the world, principally drafted by John Adams and still in force, and that the Commonwealth's own constitution (with its Article I Declaration of Rights) sits alongside the U.S. Constitution as a source of powers and rights.",
     courseSlugs: ["state-civics-ma"],
     lessons: [
       "Massachusetts Civics, Lesson 1 · The Constitution of 1780, the world's oldest functioning one",
@@ -1454,7 +1454,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ma-courts-appointed",
     claim:
-      "Teaches Massachusetts's distinctive judicial selection: the Governor nominates, the elected eight-member Governor's Council confirms, and a judge then serves until mandatory retirement at age 70 — with no judicial elections and no fixed re-appointment.",
+      "Teaches Massachusetts's distinctive judicial selection: the Governor nominates, the elected eight-member Governor's Council confirms, and a judge then serves until mandatory retirement at age 70, with no judicial elections and no fixed re-appointment.",
     courseSlugs: ["state-civics-ma"],
     lessons: [
       "Massachusetts Civics, Lesson 3 · The Governor's Council and how Massachusetts picks judges",
@@ -1463,7 +1463,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ma-local-government",
     claim:
-      "Teaches Massachusetts local government as Massachusetts's: the town-meeting tradition (open town meeting, where any registered voter votes directly on the town budget and bylaws), strong home rule, cities and towns, and the state's 14 counties — several of whose county governments were abolished around 1997–2000.",
+      "Teaches Massachusetts local government as Massachusetts's: the town-meeting tradition (open town meeting, where any registered voter votes directly on the town budget and bylaws), strong home rule, cities and towns, and the state's 14 counties, several of whose county governments were abolished around 1997-2000.",
     courseSlugs: ["state-civics-ma"],
     lessons: [
       "Massachusetts Civics, Lesson 5 · Local government: towns, cities, and Massachusetts's shrinking counties",
@@ -1484,7 +1484,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.tn-state-structure",
     claim:
-      "Teaches Tennessee's three branches as Tennessee's: the General Assembly (a 99-member House and a 33-member Senate); a highly unusual executive in which the Governor is the only statewide-elected official, the Senate Speaker holds the title “Lieutenant Governor,” the Secretary of State, Treasurer, and Comptroller are elected by the Legislature, and — uniquely in the nation — the Attorney General is appointed by the state Supreme Court; the weak simple-majority veto override; and the “Tennessee Plan” appointment-then-retention judiciary.",
+      "Teaches Tennessee's three branches as Tennessee's: the General Assembly (a 99-member House and a 33-member Senate); a highly unusual executive in which the Governor is the only statewide-elected official, the Senate Speaker holds the title “Lieutenant Governor,” the Secretary of State, Treasurer, and Comptroller are elected by the Legislature, and (uniquely in the nation) the Attorney General is appointed by the state Supreme Court; the weak simple-majority veto override; and the “Tennessee Plan” appointment-then-retention judiciary.",
     courseSlugs: ["state-civics-tn"],
     lessons: [
       "Tennessee Civics, Lesson 1 · Tennessee's Constitution of 1870 (and its hard-to-amend rule)",
@@ -1512,7 +1512,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.mo-missouri-plan",
     claim:
-      "Teaches the 'Missouri Plan' — Missouri's nationally-copied merit-selection-plus-retention method of choosing judges (a nonpartisan nominating commission sends the Governor a short list of the most qualified, the Governor appoints from that list, and the judge then faces voters in periodic nonpartisan yes/no retention elections), adopted by Missouri voters in 1940 and since copied in some form by many states.",
+      "Teaches the 'Missouri Plan', Missouri's nationally-copied merit-selection-plus-retention method of choosing judges (a nonpartisan nominating commission sends the Governor a short list of the most qualified, the Governor appoints from that list, and the judge then faces voters in periodic nonpartisan yes/no retention elections), adopted by Missouri voters in 1940 and since copied in some form by many states.",
     courseSlugs: ["state-civics-mo"],
     lessons: [
       "Missouri Civics, Lesson 1 · The 'Missouri Plan': merit selection plus retention (adopted 1940)",
@@ -1532,7 +1532,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.mo-direct-democracy",
     claim:
-      "Teaches Missouri's citizen tools of direct democracy — the initiative (used to place a statute OR a constitutional amendment on the ballot) and the referendum (used to reject a law the General Assembly passed) — as a real, regularly-used second lawmaking route beside the Legislature.",
+      "Teaches Missouri's citizen tools of direct democracy, the initiative (used to place a statute OR a constitutional amendment on the ballot) and the referendum (used to reject a law the General Assembly passed), as a real, regularly-used second lawmaking route beside the Legislature.",
     courseSlugs: ["state-civics-mo"],
     lessons: [
       "Missouri Civics, Lesson 3 · Initiative and referendum: the citizen's second lawmaking route",
@@ -1552,7 +1552,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.mo-elections",
     claim:
-      "Teaches Missouri's election specifics — a photo-ID requirement for in-person voting (with provisional-ballot fallbacks), in-person absentee/early voting, and absentee voting under certain conditions, all administered by county clerks and election boards — flagged as time-sensitive and pointing to sos.mo.gov for the current rules.",
+      "Teaches Missouri's election specifics, a photo-ID requirement for in-person voting (with provisional-ballot fallbacks), in-person absentee/early voting, and absentee voting under certain conditions, all administered by county clerks and election boards, flagged as time-sensitive and pointing to sos.mo.gov for the current rules.",
     courseSlugs: ["state-civics-mo"],
     lessons: [
       "Missouri Civics, Lesson 5 · Elections in Missouri: photo ID, absentee/early voting, county administration",
@@ -1561,7 +1561,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.mo-get-involved",
     claim:
-      "Teaches getting involved where you live, Missouri edition — registering and voting, circulating an initiative or referendum, showing up at county commissions, city councils, and school boards, contacting your one Representative and one Senator in Jefferson City, researching the judicial retention votes on your ballot, and running for local office.",
+      "Teaches getting involved where you live, Missouri edition, registering and voting, circulating an initiative or referendum, showing up at county commissions, city councils, and school boards, contacting your one Representative and one Senator in Jefferson City, researching the judicial retention votes on your ballot, and running for local office.",
     courseSlugs: ["state-civics-mo"],
     lessons: ["Missouri Civics, Lesson 5 · Elections and how to take part in Missouri"],
   },
@@ -1580,7 +1580,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.md-budget-power",
     claim:
-      "Teaches Maryland's most distinctive civic feature — the extraordinary budget power of its Governor, widely described as the strongest gubernatorial budget authority in the nation: under Maryland's executive-budget system (in the Constitution since 1916) the Governor proposes the budget and the General Assembly can generally only CUT or reduce items, not add new spending or move money to new purposes, which makes the Governor unusually dominant over state finances.",
+      "Teaches Maryland's most distinctive civic feature, the extraordinary budget power of its Governor, widely described as the strongest gubernatorial budget authority in the nation: under Maryland's executive-budget system (in the Constitution since 1916) the Governor proposes the budget and the General Assembly can generally only CUT or reduce items, not add new spending or move money to new purposes, which makes the Governor unusually dominant over state finances.",
     courseSlugs: ["state-civics-md"],
     lessons: [
       "Maryland Civics, Lesson 1 · Maryland's Governor: the strongest budget power in the nation",
@@ -1596,14 +1596,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.md-courts",
     claim:
-      "Teaches Maryland's courts as Maryland's, including the 2022 renaming voters approved: the highest court became the “Supreme Court of Maryland” (before 2022 the Court of Appeals) and the intermediate court the “Appellate Court of Maryland”; appellate judges are appointed by the Governor (advised by a nominating commission) with Senate confirmation and then face yes/no retention elections, while Circuit Court trial judges run in contested elections — a blend of merit appointment and election.",
+      "Teaches Maryland's courts as Maryland's, including the 2022 renaming voters approved: the highest court became the “Supreme Court of Maryland” (before 2022 the Court of Appeals) and the intermediate court the “Appellate Court of Maryland”; appellate judges are appointed by the Governor (advised by a nominating commission) with Senate confirmation and then face yes/no retention elections, while Circuit Court trial judges run in contested elections, a blend of merit appointment and election.",
     courseSlugs: ["state-civics-md"],
     lessons: ["Maryland Civics, Lesson 3 · Maryland's courts and a 2022 name change"],
   },
   {
     id: "civics.md-referendum",
     claim:
-      "Teaches Maryland's distinctive citizen check — the “petition to referendum,” by which voters gather signatures to suspend a law the General Assembly just passed and put it to a statewide vote — and that Maryland has NO citizen initiative to propose new laws, so the citizen power here is a veto (reject a law), not an initiative (start one); taught alongside how a bill becomes a Maryland law and the three-fifths veto override.",
+      "Teaches Maryland's distinctive citizen check, the “petition to referendum,” by which voters gather signatures to suspend a law the General Assembly just passed and put it to a statewide vote, and that Maryland has NO citizen initiative to propose new laws, so the citizen power here is a veto (reject a law), not an initiative (start one); taught alongside how a bill becomes a Maryland law and the three-fifths veto override.",
     courseSlugs: ["state-civics-md"],
     lessons: [
       "Maryland Civics, Lesson 4 · How a bill becomes law, and Maryland's referendum (but no initiative)",
@@ -1612,7 +1612,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.md-local-government",
     claim:
-      "Teaches Maryland local government as Maryland's: 23 counties (many of them home-rule “charter” counties like Montgomery and Baltimore County, with elected councils and county executives) PLUS the independent City of Baltimore, which belongs to no county and is a county-equivalent with its own government — so Baltimore City and Baltimore County are two separate governments.",
+      "Teaches Maryland local government as Maryland's: 23 counties (many of them home-rule “charter” counties like Montgomery and Baltimore County, with elected councils and county executives) PLUS the independent City of Baltimore, which belongs to no county and is a county-equivalent with its own government, so Baltimore City and Baltimore County are two separate governments.",
     courseSlugs: ["state-civics-md"],
     lessons: [
       "Maryland Civics, Lesson 5 · Local government, independent Baltimore, and how to take part",
@@ -1621,7 +1621,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.md-get-involved",
     claim:
-      "Teaches taking part where you live, Maryland edition — registering and voting with Maryland's early in-person voting, no-excuse mail-in ballots, and same-day registration; joining a petition to referendum to challenge a new law; showing up at county councils, city councils, and school boards; contacting your Annapolis Delegates and Senator; and running for local office — flagged as time-sensitive and pointing to elections.maryland.gov.",
+      "Teaches taking part where you live, Maryland edition, registering and voting with Maryland's early in-person voting, no-excuse mail-in ballots, and same-day registration; joining a petition to referendum to challenge a new law; showing up at county councils, city councils, and school boards; contacting your Annapolis Delegates and Senator; and running for local office, flagged as time-sensitive and pointing to elections.maryland.gov.",
     courseSlugs: ["state-civics-md"],
     lessons: [
       "Maryland Civics, Lesson 5 · Local government, independent Baltimore, and how to take part",
@@ -1643,7 +1643,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.co-direct-democracy",
     claim:
-      "Teaches Colorado as a state where the voters are themselves a lawmaking body: the Constitution of 1876 (Colorado is the “Centennial State,” admitted in the nation's 100th year) and the direct-democracy tools added in 1910 — the initiative (used to enact a statute OR a constitutional amendment straight at the ballot, making Colorado's constitution one of the most frequently amended in the nation), the referendum (to reject a law the Legislature passed), and the recall (to remove an elected official before the term ends).",
+      "Teaches Colorado as a state where the voters are themselves a lawmaking body: the Constitution of 1876 (Colorado is the “Centennial State,” admitted in the nation's 100th year) and the direct-democracy tools added in 1910, the initiative (used to enact a statute OR a constitutional amendment straight at the ballot, making Colorado's constitution one of the most frequently amended in the nation), the referendum (to reject a law the Legislature passed), and the recall (to remove an elected official before the term ends).",
     courseSlugs: ["state-civics-co"],
     lessons: [
       "Colorado Civics, Lesson 1 · Colorado's Constitution of 1876 and its direct democracy",
@@ -1652,7 +1652,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.co-tabor",
     claim:
-      "Teaches Colorado's signature constitutional rule, the Taxpayer's Bill of Rights (TABOR, passed by citizen initiative in 1992): state and local governments cannot raise a tax, impose a new tax, or increase a rate without a direct vote of the people, and revenue collected above a formula-based cap (roughly inflation plus population growth) must generally be refunded to taxpayers unless voters agree to keep it (“de-Brucing”) — making the voters the gatekeepers of taxation and spending.",
+      "Teaches Colorado's signature constitutional rule, the Taxpayer's Bill of Rights (TABOR, passed by citizen initiative in 1992): state and local governments cannot raise a tax, impose a new tax, or increase a rate without a direct vote of the people, and revenue collected above a formula-based cap (roughly inflation plus population growth) must generally be refunded to taxpayers unless voters agree to keep it (“de-Brucing”), making the voters the gatekeepers of taxation and spending.",
     courseSlugs: ["state-civics-co"],
     lessons: [
       "Colorado Civics, Lesson 4 · TABOR: the Taxpayer's Bill of Rights (Colorado's signature rule)",
@@ -1662,7 +1662,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.co-state-structure",
     claim:
-      "Teaches Colorado's three branches as Colorado's: a General Assembly of a 35-member Senate (4-year terms) and a 65-member House (2-year terms), each capped at 8 consecutive years, under the distinctive “GAVEL” amendment (1988) that guarantees every bill a committee hearing; a joint-ticket Governor and Lieutenant Governor with a separately elected Secretary of State, Attorney General, and Treasurer; a two-thirds veto override plus the line-item veto on appropriations; and how a bill becomes a Colorado law by two routes — the Legislature, or the voters directly.",
+      "Teaches Colorado's three branches as Colorado's: a General Assembly of a 35-member Senate (4-year terms) and a 65-member House (2-year terms), each capped at 8 consecutive years, under the distinctive “GAVEL” amendment (1988) that guarantees every bill a committee hearing; a joint-ticket Governor and Lieutenant Governor with a separately elected Secretary of State, Attorney General, and Treasurer; a two-thirds veto override plus the line-item veto on appropriations; and how a bill becomes a Colorado law by two routes, the Legislature, or the voters directly.",
     courseSlugs: ["state-civics-co"],
     lessons: [
       "Colorado Civics, Lesson 2 · The three branches of Colorado government",
@@ -1672,7 +1672,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.co-courts",
     claim:
-      "Teaches how Colorado chooses its judges — merit selection followed by retention (often called the “Missouri Plan”): a nonpartisan nominating commission sends the Governor a short list of the most qualified, the Governor must appoint from that list, and the judge then faces the voters in nonpartisan yes/no retention elections (Colorado Supreme Court justices on 10-year terms), blending professional vetting with public accountability and avoiding big-money contested judicial races.",
+      "Teaches how Colorado chooses its judges, merit selection followed by retention (often called the “Missouri Plan”): a nonpartisan nominating commission sends the Governor a short list of the most qualified, the Governor must appoint from that list, and the judge then faces the voters in nonpartisan yes/no retention elections (Colorado Supreme Court justices on 10-year terms), blending professional vetting with public accountability and avoiding big-money contested judicial races.",
     courseSlugs: ["state-civics-co"],
     lessons: [
       "Colorado Civics, Lesson 3 · How Colorado chooses its judges (merit selection + retention)",
@@ -1688,14 +1688,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.co-local-government",
     claim:
-      "Teaches Colorado local government as Colorado's: 64 counties governed by elected boards of county commissioners, home-rule cities and counties that write their own charters, the unusual consolidated city-and-county governments of Denver and Broomfield, and special districts (schools, water, fire, transit) — each of which, under TABOR, needs voter approval to raise taxes.",
+      "Teaches Colorado local government as Colorado's: 64 counties governed by elected boards of county commissioners, home-rule cities and counties that write their own charters, the unusual consolidated city-and-county governments of Denver and Broomfield, and special districts (schools, water, fire, transit), each of which, under TABOR, needs voter approval to raise taxes.",
     courseSlugs: ["state-civics-co"],
     lessons: ["Colorado Civics, Lesson 6 · Elections, local government, and how to take part"],
   },
   {
     id: "civics.co-get-involved",
     claim:
-      "Teaches taking part where you live, Colorado edition — voting the ballot mailed to you (tracking it at sos.state.co.us), signing, circulating, or filing an initiative or referendum, showing up at county commissions, city councils, and school boards (where TABOR tax questions come to you on the ballot), testifying on a bill the GAVEL rule guarantees will be heard, and running for local office.",
+      "Teaches taking part where you live, Colorado edition, voting the ballot mailed to you (tracking it at sos.state.co.us), signing, circulating, or filing an initiative or referendum, showing up at county commissions, city councils, and school boards (where TABOR tax questions come to you on the ballot), testifying on a bill the GAVEL rule guarantees will be heard, and running for local office.",
     courseSlugs: ["state-civics-co"],
     lessons: ["Colorado Civics, Lesson 6 · Elections, local government, and how to take part"],
   },
@@ -1734,14 +1734,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.mn-courts",
     claim:
-      "Teaches Minnesota's judiciary — district courts up through the Court of Appeals and a seven-justice Minnesota Supreme Court, with judges elected on a NONPARTISAN ballot to 6-year terms, yet in practice most first reach the bench by gubernatorial appointment to fill a vacancy and then run as incumbents.",
+      "Teaches Minnesota's judiciary, district courts up through the Court of Appeals and a seven-justice Minnesota Supreme Court, with judges elected on a NONPARTISAN ballot to 6-year terms, yet in practice most first reach the bench by gubernatorial appointment to fill a vacancy and then run as incumbents.",
     courseSlugs: ["state-civics-mn"],
     lessons: ["Minnesota Civics, Lesson 3 · The executive and the Legislature"],
   },
   {
     id: "civics.mn-lawmaking",
     claim:
-      "Teaches how a bill becomes a Minnesota law and that Minnesota has NO statewide citizen initiative — the Legislature and Governor make the law, and citizens only ratify amendments the Legislature refers, under Minnesota's strict rule that an amendment needs a majority of everyone voting in the election, so leaving the question blank effectively counts as a 'no.'",
+      "Teaches how a bill becomes a Minnesota law and that Minnesota has NO statewide citizen initiative, the Legislature and Governor make the law, and citizens only ratify amendments the Legislature refers, under Minnesota's strict rule that an amendment needs a majority of everyone voting in the election, so leaving the question blank effectively counts as a 'no.'",
     courseSlugs: ["state-civics-mn"],
     lessons: ["Minnesota Civics, Lesson 4 · How a bill becomes a Minnesota law"],
   },
@@ -1755,7 +1755,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.mn-elections",
     claim:
-      "Teaches Minnesota's election specifics — same-day (Election-Day) registration, no-excuse absentee/early voting, and (unlike some states) no strict photo-ID requirement — administered by county and city election officials, with a standing flag to confirm current rules at sos.mn.gov.",
+      "Teaches Minnesota's election specifics, same-day (Election-Day) registration, no-excuse absentee/early voting, and (unlike some states) no strict photo-ID requirement, administered by county and city election officials, with a standing flag to confirm current rules at sos.mn.gov.",
     courseSlugs: ["state-civics-mn"],
     lessons: [
       "Minnesota Civics, Lesson 1 · Why Minnesota leads the nation in voter turnout",
@@ -1765,7 +1765,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.mn-get-involved",
     claim:
-      "Teaches getting involved where you live, Minnesota edition — registering and voting even on Election Day, taking part in Minnesota's precinct caucuses, showing up at county boards, city councils, township meetings, and (in the Twin Cities) the Metropolitan Council, contacting your one Representative and one Senator in St. Paul, and running for local office.",
+      "Teaches getting involved where you live, Minnesota edition, registering and voting even on Election Day, taking part in Minnesota's precinct caucuses, showing up at county boards, city councils, township meetings, and (in the Twin Cities) the Metropolitan Council, contacting your one Representative and one Senator in St. Paul, and running for local office.",
     courseSlugs: ["state-civics-mn"],
     lessons: ["Minnesota Civics, Lesson 5 · Local government and how to take part"],
   },
@@ -1781,14 +1781,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wi-wisconsin-idea",
     claim:
-      "Teaches Wisconsin's Progressive-Era civic identity — a 'laboratory of democracy' under its Constitution of 1848 that pioneered reforms later copied nationwide (an early state income tax in 1911, workers' compensation, the direct primary) — and 'the Wisconsin Idea': the principle that the boundaries of the university are the boundaries of the state, so state government and the University of Wisconsin put expertise to work for all residents.",
+      "Teaches Wisconsin's Progressive-Era civic identity, a 'laboratory of democracy' under its Constitution of 1848 that pioneered reforms later copied nationwide (an early state income tax in 1911, workers' compensation, the direct primary), and 'the Wisconsin Idea': the principle that the boundaries of the university are the boundaries of the state, so state government and the University of Wisconsin put expertise to work for all residents.",
     courseSlugs: ["state-civics-wi"],
     lessons: ["Wisconsin Civics, Lesson 1 · The 'Wisconsin Idea': a laboratory of democracy"],
   },
   {
     id: "civics.wi-partial-veto",
     claim:
-      "Teaches Wisconsin's plural executive (a Governor and Lieutenant Governor, plus a separately elected Attorney General, Secretary of State, State Treasurer, and the nonpartisan Superintendent of Public Instruction) and its uniquely powerful PARTIAL (line-item) VETO, which historically let the Governor strike individual parts of spending items — even words, letters, or digits (the 'Frankenstein' / 'Vanna White' veto) — a power since narrowed by constitutional amendments.",
+      "Teaches Wisconsin's plural executive (a Governor and Lieutenant Governor, plus a separately elected Attorney General, Secretary of State, State Treasurer, and the nonpartisan Superintendent of Public Instruction) and its uniquely powerful PARTIAL (line-item) VETO, which historically let the Governor strike individual parts of spending items, even words, letters, or digits (the 'Frankenstein' / 'Vanna White' veto), a power since narrowed by constitutional amendments.",
     courseSlugs: ["state-civics-wi"],
     lessons: ["Wisconsin Civics, Lesson 2 · The executive and Wisconsin's uniquely powerful partial veto"],
   },
@@ -1802,7 +1802,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wi-lawmaking-recall",
     claim:
-      "Teaches how a bill becomes a Wisconsin law and Wisconsin's unusual mix of direct-democracy powers: NO statewide citizen initiative (amendments are proposed by the Legislature in two consecutive sessions, then ratified by voters), but a strong RECALL that lets voters petition to force a recall election of elected officials — used in a nationally famous 2012 gubernatorial recall.",
+      "Teaches how a bill becomes a Wisconsin law and Wisconsin's unusual mix of direct-democracy powers: NO statewide citizen initiative (amendments are proposed by the Legislature in two consecutive sessions, then ratified by voters), but a strong RECALL that lets voters petition to force a recall election of elected officials, used in a nationally famous 2012 gubernatorial recall.",
     courseSlugs: ["state-civics-wi"],
     lessons: ["Wisconsin Civics, Lesson 4 · How a bill becomes law, the strong recall, and no initiative"],
   },
@@ -1816,14 +1816,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wi-elections",
     claim:
-      "Teaches Wisconsin's election specifics — same-day (Election-Day) registration, early in-person absentee voting, and a photo-ID requirement — administered at the municipal level by more than 1,800 city, village, and town clerks, with a standing flag to confirm current rules at elections.wi.gov, and a reminder not to skip the consequential spring elections.",
+      "Teaches Wisconsin's election specifics, same-day (Election-Day) registration, early in-person absentee voting, and a photo-ID requirement, administered at the municipal level by more than 1,800 city, village, and town clerks, with a standing flag to confirm current rules at elections.wi.gov, and a reminder not to skip the consequential spring elections.",
     courseSlugs: ["state-civics-wi"],
     lessons: ["Wisconsin Civics, Lesson 5 · Local government and how to take part"],
   },
   {
     id: "civics.wi-get-involved",
     claim:
-      "Teaches getting involved where you live, Wisconsin edition — registering and voting (including on Election Day, with photo ID) and not skipping the spring elections where judicial and local races are decided, using Wisconsin's strong recall, showing up at county boards and city/village/town and school-board meetings, contacting your one Assembly member and one Senator in Madison, and running for local office.",
+      "Teaches getting involved where you live, Wisconsin edition, registering and voting (including on Election Day, with photo ID) and not skipping the spring elections where judicial and local races are decided, using Wisconsin's strong recall, showing up at county boards and city/village/town and school-board meetings, contacting your one Assembly member and one Senator in Madison, and running for local office.",
     courseSlugs: ["state-civics-wi"],
     lessons: ["Wisconsin Civics, Lesson 5 · Local government and how to take part"],
   },
@@ -1839,7 +1839,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ct-constitution-state",
     claim:
-      "Teaches Connecticut as 'The Constitution State' — the Fundamental Orders of 1639 (often called one of the first written constitutions to frame a government by the consent of the governed), the modern Constitution of 1965 (following the colonial charter and an 1818 constitution), and that Connecticut became the 5th state on January 9, 1788.",
+      "Teaches Connecticut as 'The Constitution State', the Fundamental Orders of 1639 (often called one of the first written constitutions to frame a government by the consent of the governed), the modern Constitution of 1965 (following the colonial charter and an 1818 constitution), and that Connecticut became the 5th state on January 9, 1788.",
     courseSlugs: ["state-civics-ct"],
     lessons: [
       "Connecticut Civics, Lesson 1 · 'The Constitution State' and the Fundamental Orders of 1639",
@@ -1866,7 +1866,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ct-courts-legislative-appointment",
     claim:
-      "Teaches Connecticut's distinctive judicial selection: judges are NOT elected in campaigns — a Judicial Selection Commission screens candidates, the Governor nominates from that list, and the General Assembly (the Legislature) appoints the judge to an 8-year renewable term, with a 7-justice Connecticut Supreme Court at the top.",
+      "Teaches Connecticut's distinctive judicial selection: judges are NOT elected in campaigns, a Judicial Selection Commission screens candidates, the Governor nominates from that list, and the General Assembly (the Legislature) appoints the judge to an 8-year renewable term, with a 7-justice Connecticut Supreme Court at the top.",
     courseSlugs: ["state-civics-ct"],
     lessons: [
       "Connecticut Civics, Lesson 4 · How Connecticut picks its judges, and how a bill becomes law",
@@ -1884,7 +1884,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ct-towns",
     claim:
-      "Teaches Connecticut local government as Connecticut's: because there are no counties, the TOWN is the workhorse — 169 towns, many small ones still governed by a town meeting and a board of selectmen, larger ones by mayor-council or council-manager forms, handling schools, police, roads, and zoning, with regional councils of governments coordinating some services but never acting as general-purpose governments.",
+      "Teaches Connecticut local government as Connecticut's: because there are no counties, the TOWN is the workhorse, 169 towns, many small ones still governed by a town meeting and a board of selectmen, larger ones by mayor-council or council-manager forms, handling schools, police, roads, and zoning, with regional councils of governments coordinating some services but never acting as general-purpose governments.",
     courseSlugs: ["state-civics-ct"],
     lessons: [
       "Connecticut Civics, Lesson 5 · Town government and how to take part",
@@ -1893,7 +1893,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ct-get-involved",
     claim:
-      "Teaches getting involved where you live, Connecticut edition — using Connecticut's newly expanded voting access (early in-person voting used starting in 2024 and no-excuse absentee voting, administered by town registrars), showing up at the town meeting, board of selectmen or town/city council and the local board of education, contacting your one Representative and one Senator in Hartford, weighing in on amendments and constitutional conventions, and running for local office.",
+      "Teaches getting involved where you live, Connecticut edition, using Connecticut's newly expanded voting access (early in-person voting used starting in 2024 and no-excuse absentee voting, administered by town registrars), showing up at the town meeting, board of selectmen or town/city council and the local board of education, contacting your one Representative and one Senator in Hartford, weighing in on amendments and constitutional conventions, and running for local office.",
     courseSlugs: ["state-civics-ct"],
     lessons: [
       "Connecticut Civics, Lesson 5 · Town government and how to take part",
@@ -1912,7 +1912,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.sc-legislative-state",
     claim:
-      "Teaches South Carolina as the classic 'legislative state': the Constitution of 1895 (its seventh) deliberately created a very weak Governor and concentrated authority in the General Assembly, a legacy still visible today — most strikingly that the Legislature elects the state's judges (South Carolina and Virginia are the only two states that do). South Carolina became the 8th state on May 23, 1788.",
+      "Teaches South Carolina as the classic 'legislative state': the Constitution of 1895 (its seventh) deliberately created a very weak Governor and concentrated authority in the General Assembly, a legacy still visible today, most strikingly that the Legislature elects the state's judges (South Carolina and Virginia are the only two states that do). South Carolina became the 8th state on May 23, 1788.",
     courseSlugs: ["state-civics-sc"],
     lessons: [
       "South Carolina Civics, Lesson 1 · The 'legislative state': where the General Assembly long ruled",
@@ -1930,7 +1930,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.sc-legislature-elects-judges",
     claim:
-      "Teaches South Carolina's defining judicial feature: the General Assembly ELECTS the state's judges (South Carolina and Virginia are the only two states that do) after a Judicial Merit Selection Commission screens candidates for qualifications, with a 5-justice South Carolina Supreme Court elected to 10-year terms — so South Carolina's judges answer to the legislators for re-election, not to the voters or the Governor.",
+      "Teaches South Carolina's defining judicial feature: the General Assembly ELECTS the state's judges (South Carolina and Virginia are the only two states that do) after a Judicial Merit Selection Commission screens candidates for qualifications, with a 5-justice South Carolina Supreme Court elected to 10-year terms, so South Carolina's judges answer to the legislators for re-election, not to the voters or the Governor.",
     courseSlugs: ["state-civics-sc"],
     lessons: [
       "South Carolina Civics, Lesson 3 · How South Carolina picks its judges (the Legislature elects them)",
@@ -1939,7 +1939,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.sc-lawmaking-no-initiative",
     claim:
-      "Teaches how a bill becomes a South Carolina law (introduction, committee, floor votes in both chambers — with the Senate's strong filibuster tradition — and the Governor's signature/veto/line-item veto with a two-thirds override), that the General Assembly is a 124-member House on 2-year terms and a 46-member Senate on 4-year terms, and that South Carolina has NO citizen initiative: amendments run through the General Assembly (proposed by a two-thirds vote), are ratified by voters, and then RE-RATIFIED by the Legislature, a distinctive extra step.",
+      "Teaches how a bill becomes a South Carolina law (introduction, committee, floor votes in both chambers, with the Senate's strong filibuster tradition, and the Governor's signature/veto/line-item veto with a two-thirds override), that the General Assembly is a 124-member House on 2-year terms and a 46-member Senate on 4-year terms, and that South Carolina has NO citizen initiative: amendments run through the General Assembly (proposed by a two-thirds vote), are ratified by voters, and then RE-RATIFIED by the Legislature, a distinctive extra step.",
     courseSlugs: ["state-civics-sc"],
     lessons: [
       "South Carolina Civics, Lesson 4 · How a bill becomes a South Carolina law",
@@ -1957,7 +1957,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.sc-get-involved",
     claim:
-      "Teaches getting involved where you live, South Carolina edition — registering and voting with photo ID, early in-person voting, and qualifying-reason absentee voting administered by county election offices (scvotes.gov), showing up at county councils, city councils, and school boards (which decide more locally since Home Rule), contacting your one Representative and one Senator in Columbia, watching the General Assembly's judicial elections, and running for local office.",
+      "Teaches getting involved where you live, South Carolina edition, registering and voting with photo ID, early in-person voting, and qualifying-reason absentee voting administered by county election offices (scvotes.gov), showing up at county councils, city councils, and school boards (which decide more locally since Home Rule), contacting your one Representative and one Senator in Columbia, watching the General Assembly's judicial elections, and running for local office.",
     courseSlugs: ["state-civics-sc"],
     lessons: [
       "South Carolina Civics, Lesson 5 · Local government and how to take part",
@@ -1982,7 +1982,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ky-plural-executive",
     claim:
-      "Teaches Kentucky's large plural executive: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State (who runs elections), the Attorney General, the State Treasurer, the State Auditor, and the Commissioner of Agriculture, each to 4-year terms — so, like many states, Kentucky can end up with a Governor of one party and other statewide officers of another, checking one another.",
+      "Teaches Kentucky's large plural executive: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State (who runs elections), the Attorney General, the State Treasurer, the State Auditor, and the Commissioner of Agriculture, each to 4-year terms, so, like many states, Kentucky can end up with a Governor of one party and other statewide officers of another, checking one another.",
     courseSlugs: ["state-civics-ky"],
     lessons: [
       "Kentucky Civics, Lesson 2 · The executive and the General Assembly",
@@ -1991,7 +1991,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ky-general-assembly",
     claim:
-      "Teaches the Kentucky General Assembly: a part-time citizen legislature meeting in Frankfort — a 100-member House on 2-year terms and a 38-member Senate on 4-year terms, with short annual sessions (a longer 60-day session in even years, a shorter 30-day session in odd years) — and Kentucky's comparatively WEAK gubernatorial veto, which the General Assembly can override with a simple majority (like Tennessee, Alabama, and West Virginia), plus the Governor's line-item veto on appropriations.",
+      "Teaches the Kentucky General Assembly: a part-time citizen legislature meeting in Frankfort, a 100-member House on 2-year terms and a 38-member Senate on 4-year terms, with short annual sessions (a longer 60-day session in even years, a shorter 30-day session in odd years), and Kentucky's comparatively WEAK gubernatorial veto, which the General Assembly can override with a simple majority (like Tennessee, Alabama, and West Virginia), plus the Governor's line-item veto on appropriations.",
     courseSlugs: ["state-civics-ky"],
     lessons: [
       "Kentucky Civics, Lesson 2 · The executive and the General Assembly",
@@ -2000,7 +2000,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ky-nonpartisan-judiciary",
     claim:
-      "Teaches how Kentucky picks its judges: on a NONPARTISAN ballot, with no party label next to their names (a contrast with, say, Alabama's partisan judicial elections) — the Supreme Court of Kentucky has 7 justices elected from districts to 8-year terms, and Court of Appeals, Circuit, and District judges are likewise elected nonpartisan; mid-term vacancies are filled by the Governor from a Judicial Nominating Commission's list, and that appointee then stands for election.",
+      "Teaches how Kentucky picks its judges: on a NONPARTISAN ballot, with no party label next to their names (a contrast with, say, Alabama's partisan judicial elections), the Supreme Court of Kentucky has 7 justices elected from districts to 8-year terms, and Court of Appeals, Circuit, and District judges are likewise elected nonpartisan; mid-term vacancies are filled by the Governor from a Judicial Nominating Commission's list, and that appointee then stands for election.",
     courseSlugs: ["state-civics-ky"],
     lessons: [
       "Kentucky Civics, Lesson 3 · How Kentucky picks its judges, and how a bill becomes law",
@@ -2018,7 +2018,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ky-local-government",
     claim:
-      "Teaches Kentucky local government as Kentucky's: 120 counties (the third-most of any state), each run by an elected county judge/executive and a fiscal court of magistrates or commissioners, plus other elected county officials (sheriff, clerk, jailer, property valuation administrator); size-classified cities providing municipal services; and Louisville's consolidation with Jefferson County into a single 'Louisville Metro' government — with so many counties, county government is unusually prominent in daily life.",
+      "Teaches Kentucky local government as Kentucky's: 120 counties (the third-most of any state), each run by an elected county judge/executive and a fiscal court of magistrates or commissioners, plus other elected county officials (sheriff, clerk, jailer, property valuation administrator); size-classified cities providing municipal services; and Louisville's consolidation with Jefferson County into a single 'Louisville Metro' government, with so many counties, county government is unusually prominent in daily life.",
     courseSlugs: ["state-civics-ky"],
     lessons: [
       "Kentucky Civics, Lesson 4 · Local government and how to take part",
@@ -2027,7 +2027,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ky-get-involved",
     claim:
-      "Teaches getting involved where you live, Kentucky edition — registering and voting (bringing photo ID with alternatives, using recently expanded early in-person voting, checking status at sos.ky.gov/elect.ky.gov, and remembering Kentucky's big statewide races fall in ODD years), showing up at the fiscal court, county judge/executive, city council, and school board (county government is especially reachable in Kentucky), contacting your one Representative and one Senator in Frankfort during the short session, and running for local office.",
+      "Teaches getting involved where you live, Kentucky edition, registering and voting (bringing photo ID with alternatives, using recently expanded early in-person voting, checking status at sos.ky.gov/elect.ky.gov, and remembering Kentucky's big statewide races fall in ODD years), showing up at the fiscal court, county judge/executive, city council, and school board (county government is especially reachable in Kentucky), contacting your one Representative and one Senator in Frankfort during the short session, and running for local office.",
     courseSlugs: ["state-civics-ky"],
     lessons: [
       "Kentucky Civics, Lesson 4 · Local government and how to take part",
@@ -2044,7 +2044,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.or-oregon-system",
     claim:
-      "Teaches 'the Oregon System': Oregon governs under its Constitution of 1859 (statehood February 14, 1859, the 33rd state) and in 1902 amended it to add the citizen INITIATIVE and REFERENDUM — the power for citizens to make and repeal laws directly at the ballot — a package so influential that states across the country copied it in the Progressive Era; Oregon's direct-democracy tools are the initiative (a statute or constitutional amendment), the referendum (reject a law the Legislature passed, or vote on one it refers), and the recall.",
+      "Teaches 'the Oregon System': Oregon governs under its Constitution of 1859 (statehood February 14, 1859, the 33rd state) and in 1902 amended it to add the citizen INITIATIVE and REFERENDUM, the power for citizens to make and repeal laws directly at the ballot, a package so influential that states across the country copied it in the Progressive Era; Oregon's direct-democracy tools are the initiative (a statute or constitutional amendment), the referendum (reject a law the Legislature passed, or vote on one it refers), and the recall.",
     courseSlugs: ["state-civics-or"],
     lessons: [
       "Oregon Civics, Lesson 1 · The 'Oregon System': how Oregon gave the nation direct democracy",
@@ -2062,7 +2062,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.or-executive-legislature",
     claim:
-      "Teaches Oregon's plural executive and Legislative Assembly: voters elect the Governor, Secretary of State, State Treasurer, and Attorney General separately, but Oregon has NO Lieutenant Governor, so the separately elected Secretary of State is first in line to succeed the Governor (and has become Governor on a vacancy); the Legislature is a citizen body meeting in Salem — a 60-member House on 2-year terms and a 30-member Senate on 4-year terms — and the Governor's veto (including a line-item veto on appropriations) is overridden by a two-thirds vote of each chamber.",
+      "Teaches Oregon's plural executive and Legislative Assembly: voters elect the Governor, Secretary of State, State Treasurer, and Attorney General separately, but Oregon has NO Lieutenant Governor, so the separately elected Secretary of State is first in line to succeed the Governor (and has become Governor on a vacancy); the Legislature is a citizen body meeting in Salem, a 60-member House on 2-year terms and a 30-member Senate on 4-year terms, and the Governor's veto (including a line-item veto on appropriations) is overridden by a two-thirds vote of each chamber.",
     courseSlugs: ["state-civics-or"],
     lessons: [
       "Oregon Civics, Lesson 3 · The executive (no Lieutenant Governor) and the Legislature",
@@ -2071,7 +2071,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.or-lawmaking-walkout",
     claim:
-      "Teaches that Oregon makes law two ways — through the Legislature (introduction, committee, floor votes in both chambers, and the Governor's signature or veto) or directly by the voters through the Oregon System (initiative and referendum) — and a distinctive Oregon wrinkle: because Oregon requires a two-thirds quorum to do business, a minority of legislators can block action by WALKING OUT and denying quorum, a high-profile tactic (a 2022 ballot measure now disqualifies legislators with many unexcused absences from re-election).",
+      "Teaches that Oregon makes law two ways, through the Legislature (introduction, committee, floor votes in both chambers, and the Governor's signature or veto) or directly by the voters through the Oregon System (initiative and referendum), and a distinctive Oregon wrinkle: because Oregon requires a two-thirds quorum to do business, a minority of legislators can block action by WALKING OUT and denying quorum, a high-profile tactic (a 2022 ballot measure now disqualifies legislators with many unexcused absences from re-election).",
     courseSlugs: ["state-civics-or"],
     lessons: [
       "Oregon Civics, Lesson 4 · How a bill becomes an Oregon law",
@@ -2089,7 +2089,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.or-get-involved",
     claim:
-      "Teaches getting involved where you live, Oregon edition — voting (a ballot is mailed to every registered voter, and most residents are already automatically registered, so participating means marking and returning the ballot by mail or drop box by Election Day), reading the many initiatives and referendums on each ballot, starting a measure by signing or circulating an initiative or referendum, showing up at county commissions, city councils, and school boards (land-use and growth decisions are especially active), contacting your one Representative and one Senator in Salem, and running for local office.",
+      "Teaches getting involved where you live, Oregon edition, voting (a ballot is mailed to every registered voter, and most residents are already automatically registered, so participating means marking and returning the ballot by mail or drop box by Election Day), reading the many initiatives and referendums on each ballot, starting a measure by signing or circulating an initiative or referendum, showing up at county commissions, city councils, and school boards (land-use and growth decisions are especially active), contacting your one Representative and one Senator in Salem, and running for local office.",
     courseSlugs: ["state-civics-or"],
     lessons: [
       "Oregon Civics, Lesson 6 · How to take part where you live",
@@ -2108,7 +2108,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ok-two-high-courts",
     claim:
-      "Teaches Oklahoma's most distinctive structural choice: it is one of only TWO states (with Texas) with two separate courts of last resort — the nine-justice Oklahoma Supreme Court is final for CIVIL cases and the five-judge Court of Criminal Appeals is final for CRIMINAL cases, with no appeal from one to the other — under Oklahoma's long, Progressive-Era Constitution of 1907 (Oklahoma became the 46th state on November 16, 1907).",
+      "Teaches Oklahoma's most distinctive structural choice: it is one of only TWO states (with Texas) with two separate courts of last resort, the nine-justice Oklahoma Supreme Court is final for CIVIL cases and the five-judge Court of Criminal Appeals is final for CRIMINAL cases, with no appeal from one to the other, under Oklahoma's long, Progressive-Era Constitution of 1907 (Oklahoma became the 46th state on November 16, 1907).",
     courseSlugs: ["state-civics-ok"],
     lessons: [
       "Oklahoma Civics, Lesson 1 · Two highest courts: Oklahoma's split top bench",
@@ -2117,7 +2117,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ok-plural-executive",
     claim:
-      "Teaches Oklahoma's large plural executive as a legacy of its Progressive-Era distrust of concentrated power: voters separately elect the Governor and Lieutenant Governor (who can be of different parties), the Attorney General, State Treasurer, State Auditor and Inspector, Superintendent of Public Instruction, Commissioner of Labor, Insurance Commissioner, and the three-member elected Corporation Commission that regulates utilities (and historically oil and gas) — so executive power is widely divided among independently elected officers, with the Secretary of State a notable Governor-appointed exception; statewide officers serve four-year terms with term limits.",
+      "Teaches Oklahoma's large plural executive as a legacy of its Progressive-Era distrust of concentrated power: voters separately elect the Governor and Lieutenant Governor (who can be of different parties), the Attorney General, State Treasurer, State Auditor and Inspector, Superintendent of Public Instruction, Commissioner of Labor, Insurance Commissioner, and the three-member elected Corporation Commission that regulates utilities (and historically oil and gas), so executive power is widely divided among independently elected officers, with the Secretary of State a notable Governor-appointed exception; statewide officers serve four-year terms with term limits.",
     courseSlugs: ["state-civics-ok"],
     lessons: [
       "Oklahoma Civics, Lesson 2 · One of the largest elected executives in the nation",
@@ -2144,7 +2144,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ok-tribal-nations",
     claim:
-      "Teaches that Oklahoma's civic landscape is inseparable from sovereign tribal nations: much of the state was 'Indian Territory' before statehood, it today includes 38+ federally recognized tribal nations with their own constitutions, courts, and laws, and — flagged as time-sensitive and still being worked out — the U.S. Supreme Court's McGirt v. Oklahoma (2020) held that a large part of eastern Oklahoma remains a tribal reservation for purposes of certain criminal jurisdiction, so tribal sovereignty is a central, active question of Oklahoma governance.",
+      "Teaches that Oklahoma's civic landscape is inseparable from sovereign tribal nations: much of the state was 'Indian Territory' before statehood, it today includes 38+ federally recognized tribal nations with their own constitutions, courts, and laws, and (flagged as time-sensitive and still being worked out) the U.S. Supreme Court's McGirt v. Oklahoma (2020) held that a large part of eastern Oklahoma remains a tribal reservation for purposes of certain criminal jurisdiction, so tribal sovereignty is a central, active question of Oklahoma governance.",
     courseSlugs: ["state-civics-ok"],
     lessons: [
       "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
@@ -2162,7 +2162,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ok-get-involved",
     claim:
-      "Teaches getting involved where you live, Oklahoma edition — registering and voting (early in-person and absentee voting with ID, administered by county election boards, flagged time-sensitive and pointing to elections.ok.gov), using Oklahoma's strong and frequently used initiative, showing up at county commissions, city councils, and school boards, learning tribal governance where a nation's boundaries reach, contacting legislators in Oklahoma City, and running for reachable local office.",
+      "Teaches getting involved where you live, Oklahoma edition, registering and voting (early in-person and absentee voting with ID, administered by county election boards, flagged time-sensitive and pointing to elections.ok.gov), using Oklahoma's strong and frequently used initiative, showing up at county commissions, city councils, and school boards, learning tribal governance where a nation's boundaries reach, contacting legislators in Oklahoma City, and running for reachable local office.",
     courseSlugs: ["state-civics-ok"],
     lessons: [
       "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
@@ -2181,7 +2181,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ut-dual-path",
     claim:
-      "Teaches Utah's most distinctive election feature: since 2014 a candidate reaches the party primary ballot by a 'dual path' — EITHER the traditional caucus-and-convention route (precinct caucuses elect delegates who vote at a party convention) OR by gathering a set number of voter signatures, or both — a compromise (the 'Count My Vote' citizen effort and the Legislature's SB54) that few states use and that has been litigated ever since, so the flagship points learners to vote.utah.gov for current rules.",
+      "Teaches Utah's most distinctive election feature: since 2014 a candidate reaches the party primary ballot by a 'dual path', EITHER the traditional caucus-and-convention route (precinct caucuses elect delegates who vote at a party convention) OR by gathering a set number of voter signatures, or both, a compromise (the 'Count My Vote' citizen effort and the Legislature's SB54) that few states use and that has been litigated ever since, so the flagship points learners to vote.utah.gov for current rules.",
     courseSlugs: ["state-civics-ut"],
     lessons: [
       "Utah Civics, Lesson 1 · Utah's dual-path ballot access: caucus-convention OR signatures",
@@ -2190,7 +2190,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ut-statehood-executive",
     claim:
-      "Teaches Utah's 1896 statehood (admitted only after its constitution permanently banned polygamy and affirmed separation of church and state, religious freedom, and — from the start — women's suffrage) and its plural executive: the Governor and Lieutenant Governor run together on a joint ticket (the Lieutenant Governor also serving as Utah's chief elections officer), with the Attorney General, State Auditor, and State Treasurer separately elected to four-year terms.",
+      "Teaches Utah's 1896 statehood (admitted only after its constitution permanently banned polygamy and affirmed separation of church and state, religious freedom, and (from the start) women's suffrage) and its plural executive: the Governor and Lieutenant Governor run together on a joint ticket (the Lieutenant Governor also serving as Utah's chief elections officer), with the Attorney General, State Auditor, and State Treasurer separately elected to four-year terms.",
     courseSlugs: ["state-civics-ut"],
     lessons: [
       "Utah Civics, Lesson 2 · Statehood, and Utah's plural executive",
@@ -2199,7 +2199,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ut-legislature",
     claim:
-      "Teaches Utah's part-time citizen Legislature — a 75-member House on two-year terms and a 29-member Senate on four-year terms that meets for a short annual session of just 45 calendar days — how a bill becomes a Utah law (introduction, committee, floor votes, and the Governor's signature, two-thirds override, or line-item veto of appropriations), and Utah's citizen initiative and referendum, whose balance with the Legislature is an active civic question.",
+      "Teaches Utah's part-time citizen Legislature, a 75-member House on two-year terms and a 29-member Senate on four-year terms that meets for a short annual session of just 45 calendar days, how a bill becomes a Utah law (introduction, committee, floor votes, and the Governor's signature, two-thirds override, or line-item veto of appropriations), and Utah's citizen initiative and referendum, whose balance with the Legislature is an active civic question.",
     courseSlugs: ["state-civics-ut"],
     lessons: [
       "Utah Civics, Lesson 3 · A 45-day citizen Legislature and how a bill becomes law",
@@ -2208,7 +2208,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ut-courts-merit",
     claim:
-      "Teaches how Utah chooses its judges: the 'Missouri Plan' merit selection in which a Judicial Nominating Commission sends the Governor a list, the Governor appoints, the Senate confirms, and the judge later faces a nonpartisan yes/no retention election — with Utah's distinctive Judicial Performance Evaluation Commission publishing evaluations to aid retention voters, and a five-justice Utah Supreme Court on ten-year terms.",
+      "Teaches how Utah chooses its judges: the 'Missouri Plan' merit selection in which a Judicial Nominating Commission sends the Governor a list, the Governor appoints, the Senate confirms, and the judge later faces a nonpartisan yes/no retention election, with Utah's distinctive Judicial Performance Evaluation Commission publishing evaluations to aid retention voters, and a five-justice Utah Supreme Court on ten-year terms.",
     courseSlugs: ["state-civics-ut"],
     lessons: [
       "Utah Civics, Lesson 4 · How Utah picks its judges, and its all-mail elections",
@@ -2217,7 +2217,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ut-elections-mail",
     claim:
-      "Teaches Utah's all-mail elections: every active registered voter is mailed a ballot, returnable by mail or drop box, with in-person options and same-day registration also available, administered by county clerks — flagged as time-sensitive and pointing to vote.utah.gov for current deadlines and rules.",
+      "Teaches Utah's all-mail elections: every active registered voter is mailed a ballot, returnable by mail or drop box, with in-person options and same-day registration also available, administered by county clerks, flagged as time-sensitive and pointing to vote.utah.gov for current deadlines and rules.",
     courseSlugs: ["state-civics-ut"],
     lessons: [
       "Utah Civics, Lesson 4 · How Utah picks its judges, and its all-mail elections",
@@ -2235,7 +2235,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ut-get-involved",
     claim:
-      "Teaches getting involved where you live, Utah edition — registering and voting by Utah's mailed ballot (with same-day registration), attending your neighborhood precinct caucus to become a delegate, gathering or signing nominating-petition signatures, using the initiative and referendum, showing up at county commissions, city councils, and school boards, contacting your one Representative and one Senator (timed to the short 45-day session), and running for reachable local office.",
+      "Teaches getting involved where you live, Utah edition, registering and voting by Utah's mailed ballot (with same-day registration), attending your neighborhood precinct caucus to become a delegate, gathering or signing nominating-petition signatures, using the initiative and referendum, showing up at county commissions, city councils, and school boards, contacting your one Representative and one Senator (timed to the short 45-day session), and running for reachable local office.",
     courseSlugs: ["state-civics-ut"],
     lessons: [
       "Utah Civics, Lesson 5 · Local government and how to take part",
@@ -2268,7 +2268,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ks-plural-executive",
     claim:
-      "Teaches Kansas's plural executive: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State (who runs elections), the Attorney General, the State Treasurer, and the Commissioner of Insurance — so Kansas can have a Governor of one party and other statewide officers of another, and they can check one another; statewide officers serve four-year terms.",
+      "Teaches Kansas's plural executive: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State (who runs elections), the Attorney General, the State Treasurer, and the Commissioner of Insurance, so Kansas can have a Governor of one party and other statewide officers of another, and they can check one another; statewide officers serve four-year terms.",
     courseSlugs: ["state-civics-ks"],
     lessons: [
       "Kansas Civics, Lesson 2 · The executive and the Legislature",
@@ -2277,7 +2277,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ks-legislature",
     claim:
-      "Teaches the Kansas Legislature — a part-time citizen body meeting in Topeka with a 125-member House (two-year terms) and a 40-member Senate (four-year terms) — and how a bill becomes a Kansas law (introduction, committee, floor votes in both chambers, and the Governor's signature, veto with a two-thirds override of each chamber, or line-item veto of appropriations).",
+      "Teaches the Kansas Legislature, a part-time citizen body meeting in Topeka with a 125-member House (two-year terms) and a 40-member Senate (four-year terms), and how a bill becomes a Kansas law (introduction, committee, floor votes in both chambers, and the Governor's signature, veto with a two-thirds override of each chamber, or line-item veto of appropriations).",
     courseSlugs: ["state-civics-ks"],
     lessons: [
       "Kansas Civics, Lesson 2 · The executive and the Legislature",
@@ -2287,7 +2287,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ks-courts-merit-selection",
     claim:
-      "Teaches how Kansas chooses its seven-justice Supreme Court: the 'Missouri Plan' merit selection, in which a Supreme Court Nominating Commission of lawyers and citizens sends the Governor a short list, the Governor appoints from it, and the justice later faces voters in a nonpartisan yes/no retention election — flagged as time-sensitive because Kansas has repeatedly debated changing the method (e.g., to Senate-confirmed appointments or partisan elections), with Court of Appeals judges appointed by the Governor with Senate confirmation and many district (trial) judges elected.",
+      "Teaches how Kansas chooses its seven-justice Supreme Court: the 'Missouri Plan' merit selection, in which a Supreme Court Nominating Commission of lawyers and citizens sends the Governor a short list, the Governor appoints from it, and the justice later faces voters in a nonpartisan yes/no retention election, flagged as time-sensitive because Kansas has repeatedly debated changing the method (e.g., to Senate-confirmed appointments or partisan elections), with Court of Appeals judges appointed by the Governor with Senate confirmation and many district (trial) judges elected.",
     courseSlugs: ["state-civics-ks"],
     lessons: [
       "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
@@ -2296,7 +2296,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ks-no-initiative",
     claim:
-      "Teaches Kansas's distinctive absence of direct democracy: unlike its plains and western neighbors (Colorado, Nebraska, the Dakotas), Kansas has NO statewide citizen initiative — citizens cannot put a statute or amendment on the ballot by petition; constitutional amendments are proposed by the Legislature (a two-thirds vote of each chamber) and then ratified by the voters, so the citizen role is ratification, not initiation, and the ballot questions Kansans see are ones the Legislature chose to refer.",
+      "Teaches Kansas's distinctive absence of direct democracy: unlike its plains and western neighbors (Colorado, Nebraska, the Dakotas), Kansas has NO statewide citizen initiative, citizens cannot put a statute or amendment on the ballot by petition; constitutional amendments are proposed by the Legislature (a two-thirds vote of each chamber) and then ratified by the voters, so the citizen role is ratification, not initiation, and the ballot questions Kansans see are ones the Legislature chose to refer.",
     courseSlugs: ["state-civics-ks"],
     lessons: [
       "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
@@ -2314,7 +2314,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ks-local-government",
     claim:
-      "Teaches Kansas local government as Kansas's own: 105 counties governed by elected boards of county commissioners (plus other elected county officials — sheriff, clerk, treasurer, register of deeds), cities classified by size providing municipal services under home rule, townships in rural areas, and school and special districts.",
+      "Teaches Kansas local government as Kansas's own: 105 counties governed by elected boards of county commissioners (plus other elected county officials, sheriff, clerk, treasurer, register of deeds), cities classified by size providing municipal services under home rule, townships in rural areas, and school and special districts.",
     courseSlugs: ["state-civics-ks"],
     lessons: [
       "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
@@ -2323,7 +2323,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ks-get-involved",
     claim:
-      "Teaches getting involved where you live, Kansas edition — registering and voting with photo ID and advance/early voting administered by county election officers (flagged time-sensitive, pointing to sos.ks.gov), showing up at the county commission, city council, and school board that home rule empowers to decide much without Topeka, reading the Legislature-referred amendments carefully (since Kansans cannot start ballot measures), contacting your one Representative and one Senator, and running for reachable local office.",
+      "Teaches getting involved where you live, Kansas edition, registering and voting with photo ID and advance/early voting administered by county election officers (flagged time-sensitive, pointing to sos.ks.gov), showing up at the county commission, city council, and school board that home rule empowers to decide much without Topeka, reading the Legislature-referred amendments carefully (since Kansans cannot start ballot measures), contacting your one Representative and one Senator, and running for reachable local office.",
     courseSlugs: ["state-civics-ks"],
     lessons: [
       "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
@@ -2344,7 +2344,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ne-unicameral",
     claim:
-      "Teaches the fact that defines Nebraska government: it has the ONLY unicameral (single-house) legislature in the United States, and the only OFFICIALLY NONPARTISAN one — its 49 members are called Senators (one per district, four-year terms, limited to two consecutive terms), they appear on the ballot with no party label, and leadership and committee chairs are chosen by the members rather than by party; Nebraskans adopted 'the Unicameral' by ballot initiative in 1934 (championed by U.S. Senator George W. Norris, who argued a single nonpartisan house would be cheaper, more transparent, and less prone to backroom deals), effective 1937.",
+      "Teaches the fact that defines Nebraska government: it has the ONLY unicameral (single-house) legislature in the United States, and the only OFFICIALLY NONPARTISAN one, its 49 members are called Senators (one per district, four-year terms, limited to two consecutive terms), they appear on the ballot with no party label, and leadership and committee chairs are chosen by the members rather than by party; Nebraskans adopted 'the Unicameral' by ballot initiative in 1934 (championed by U.S. Senator George W. Norris, who argued a single nonpartisan house would be cheaper, more transparent, and less prone to backroom deals), effective 1937.",
     courseSlugs: ["state-civics-ne"],
     lessons: [
       "Nebraska Civics, Lesson 1 · The Unicameral: one house, no party labels",
@@ -2353,7 +2353,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ne-lawmaking",
     claim:
-      "Teaches how a bill becomes law in a one-house legislature: a distinctive Nebraska rule guarantees EVERY bill introduced a public hearing where any citizen may testify; because there is no second chamber, each bill is debated in three separate stages (General File, Select File, Final Reading); there is no conference committee to reconcile two versions; and the Governor may sign, veto, or line-item veto appropriations, with the Unicameral overriding a veto by a three-fifths vote (30 of 49 senators) — single-house deliberation that replaces the role a second chamber would play.",
+      "Teaches how a bill becomes law in a one-house legislature: a distinctive Nebraska rule guarantees EVERY bill introduced a public hearing where any citizen may testify; because there is no second chamber, each bill is debated in three separate stages (General File, Select File, Final Reading); there is no conference committee to reconcile two versions; and the Governor may sign, veto, or line-item veto appropriations, with the Unicameral overriding a veto by a three-fifths vote (30 of 49 senators), single-house deliberation that replaces the role a second chamber would play.",
     courseSlugs: ["state-civics-ne"],
     lessons: [
       "Nebraska Civics, Lesson 2 · How a bill becomes law in a one-house legislature",
@@ -2371,7 +2371,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ne-executive",
     claim:
-      "Teaches Nebraska's executive branch: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State, Attorney General, State Treasurer, and State Auditor, and Nebraska also directly elects several boards — the Public Service Commission, the State Board of Education, and the University Board of Regents.",
+      "Teaches Nebraska's executive branch: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State, Attorney General, State Treasurer, and State Auditor, and Nebraska also directly elects several boards, the Public Service Commission, the State Board of Education, and the University Board of Regents.",
     courseSlugs: ["state-civics-ne"],
     lessons: [
       "Nebraska Civics, Lesson 3 · The executive and how Nebraska picks its judges",
@@ -2380,7 +2380,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ne-courts-merit-selection",
     claim:
-      "Teaches how Nebraska chooses its judges: the 'Missouri Plan' merit selection followed by retention — a nonpartisan judicial nominating commission vets applicants and sends the Governor a short list, the Governor appoints from it, and the judge later faces voters in a nonpartisan yes/no retention election; the Nebraska Supreme Court has seven members (a Chief Justice plus six justices from districts), keeping judges out of partisan campaigns.",
+      "Teaches how Nebraska chooses its judges: the 'Missouri Plan' merit selection followed by retention, a nonpartisan judicial nominating commission vets applicants and sends the Governor a short list, the Governor appoints from it, and the judge later faces voters in a nonpartisan yes/no retention election; the Nebraska Supreme Court has seven members (a Chief Justice plus six justices from districts), keeping judges out of partisan campaigns.",
     courseSlugs: ["state-civics-ne"],
     lessons: [
       "Nebraska Civics, Lesson 3 · The executive and how Nebraska picks its judges",
@@ -2389,7 +2389,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ne-public-power",
     claim:
-      "Teaches a Nebraska first: it is the ONLY state in the nation where ALL electricity is publicly owned — there are no private, for-profit electric utilities; power is delivered by public power districts, municipal utilities, and cooperatives governed by ELECTED boards (a legacy of Nebraska's early-20th-century public-power movement associated with George Norris), so a Nebraskan's electricity provider is a government or cooperative body whose board they can vote for, and rates and policy are set by boards they elect.",
+      "Teaches a Nebraska first: it is the ONLY state in the nation where ALL electricity is publicly owned, there are no private, for-profit electric utilities; power is delivered by public power districts, municipal utilities, and cooperatives governed by ELECTED boards (a legacy of Nebraska's early-20th-century public-power movement associated with George Norris), so a Nebraskan's electricity provider is a government or cooperative body whose board they can vote for, and rates and policy are set by boards they elect.",
     courseSlugs: ["state-civics-ne"],
     lessons: [
       "Nebraska Civics, Lesson 4 · Two more Nebraska firsts: public power and split electoral votes",
@@ -2398,7 +2398,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ne-split-electoral",
     claim:
-      "Teaches that Nebraska is one of only two states (with Maine) that SPLITS its presidential electoral votes by congressional district rather than winner-take-all: two electors go to the statewide winner and one elector goes to the winner of each congressional district, which is why Nebraska's Omaha-based 'blue dot' district can send a single electoral vote to a different candidate than the rest of the state — flagged time-sensitive because proposals to switch to winner-take-all surface periodically.",
+      "Teaches that Nebraska is one of only two states (with Maine) that SPLITS its presidential electoral votes by congressional district rather than winner-take-all: two electors go to the statewide winner and one elector goes to the winner of each congressional district, which is why Nebraska's Omaha-based 'blue dot' district can send a single electoral vote to a different candidate than the rest of the state, flagged time-sensitive because proposals to switch to winner-take-all surface periodically.",
     courseSlugs: ["state-civics-ne"],
     lessons: [
       "Nebraska Civics, Lesson 4 · Two more Nebraska firsts: public power and split electoral votes",
@@ -2416,7 +2416,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ne-get-involved",
     claim:
-      "Teaches getting involved where you live, Nebraska edition — registering and voting (including for the public-power and NRD boards that set electricity and water policy, with a voter photo-ID requirement added by initiative in 2022, flagged time-sensitive and pointing to sos.nebraska.gov), testifying at the Unicameral (where every bill gets a public hearing, an unusually open door), using the strong initiative and referendum, contacting your single state senator, and running for reachable local office (school board, city council, county board, NRD, and public-power boards).",
+      "Teaches getting involved where you live, Nebraska edition, registering and voting (including for the public-power and NRD boards that set electricity and water policy, with a voter photo-ID requirement added by initiative in 2022, flagged time-sensitive and pointing to sos.nebraska.gov), testifying at the Unicameral (where every bill gets a public hearing, an unusually open door), using the strong initiative and referendum, contacting your single state senator, and running for reachable local office (school board, city council, county board, NRD, and public-power boards).",
     courseSlugs: ["state-civics-ne"],
     lessons: [
       "Nebraska Civics, Lesson 5 · Local government and how to take part",
@@ -2439,7 +2439,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.id-legislature-executive",
-    claim: "Teaches Idaho's part-time citizen Legislature (35 districts, each electing one senator and two representatives — 35 senators and 70 representatives) and its plural executive: the Governor, a separately elected Lieutenant Governor, Secretary of State, State Controller, State Treasurer, Attorney General, and Superintendent of Public Instruction.",
+    claim: "Teaches Idaho's part-time citizen Legislature (35 districts, each electing one senator and two representatives, 35 senators and 70 representatives) and its plural executive: the Governor, a separately elected Lieutenant Governor, Secretary of State, State Controller, State Treasurer, Attorney General, and Superintendent of Public Instruction.",
     courseSlugs: ["state-civics-id"],
     lessons: ["Idaho Civics, Lesson 2 · The three branches and Idaho's plural executive"],
   },
@@ -2457,7 +2457,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.id-local-government",
-    claim: "Teaches Idaho local government as Idaho's: 44 counties under three-member Boards of County Commissioners, cities, and special districts — no township government.",
+    claim: "Teaches Idaho local government as Idaho's: 44 counties under three-member Boards of County Commissioners, cities, and special districts, no township government.",
     courseSlugs: ["state-civics-id"],
     lessons: [
       "Idaho Civics, Lesson 5 · Local government in Idaho: 44 counties, cities, special districts, no townships",
@@ -2472,7 +2472,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "civics.id-get-involved",
-    claim: "Teaches getting involved where you live, Idaho edition — including the direct-democracy tools.",
+    claim: "Teaches getting involved where you live, Idaho edition, including the direct-democracy tools.",
     courseSlugs: ["state-civics-id"],
     lessons: ["Idaho Civics, Lesson 8 · Get involved where you live in Idaho"],
   },
@@ -2491,7 +2491,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.hi-get-involved",
     claim:
-      "Teaches getting involved where you live, Hawaii edition, in the most centralized state government in the nation: voting the ballot mailed to you (Hawaii runs its elections by mail, with same-day registration at voter service centers), showing up at your COUNTY — essentially the only layer of local government there is (Honolulu, Hawaiʻi, Maui, or Kauaʻi, with no city or town councils below it) — contacting your one Representative and one Senator in Honolulu, and running for county council, the Board of Education, the Office of Hawaiian Affairs, or the Legislature.",
+      "Teaches getting involved where you live, Hawaii edition, in the most centralized state government in the nation: voting the ballot mailed to you (Hawaii runs its elections by mail, with same-day registration at voter service centers), showing up at your COUNTY, essentially the only layer of local government there is (Honolulu, Hawaiʻi, Maui, or Kauaʻi, with no city or town councils below it), contacting your one Representative and one Senator in Honolulu, and running for county council, the Board of Education, the Office of Hawaiian Affairs, or the Legislature.",
     courseSlugs: ["state-civics-hi"],
     lessons: [
       "Hawaii Civics, Lesson 5 · Elections, county government, and how to take part",
@@ -2513,7 +2513,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
-    claim: "Teaches the powers taxonomy by name: enumerated/delegated, implied (Necessary and Proper Clause), reserved (Tenth Amendment), and concurrent powers — with McCulloch v. Maryland.",
+    claim: "Teaches the powers taxonomy by name: enumerated/delegated, implied (Necessary and Proper Clause), reserved (Tenth Amendment), and concurrent powers, with McCulloch v. Maryland.",
     courseSlugs: ["state-vs-federal"],
     lessons: [
       "State vs Federal Power, Lesson 2 · Three kinds of power: enumerated, implied, reserved",
@@ -2536,11 +2536,11 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   },
   {
     id: "history.jim-crow-and-long-shadow",
-    claim: "Teaches the Jim Crow South — the denial of rights people fled — and its effects in future years.",
+    claim: "Teaches the Jim Crow South, the denial of rights people fled, and its effects in future years.",
     courseSlugs: ["great-migration"],
     lessons: [
       "The Great Migration, Lesson 2 · The Jim Crow South: what people were fleeing",
-      "The Great Migration, Lesson 12 · The long shadow — and the return",
+      "The Great Migration, Lesson 12 · The long shadow, and the return",
     ],
   },
   {
@@ -2557,7 +2557,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches Progressive-Era labor: the Triangle fire and Debs' socialist movement.",
     courseSlugs: ["history-of-unions"],
     lessons: [
-      "The History of Unions, Lesson 8 · The Triangle fire, 1911 — and what it actually changed",
+      "The History of Unions, Lesson 8 · The Triangle fire, 1911, and what it actually changed",
       "The History of Unions, Lesson 6 · Homestead, Pullman (Eugene Debs and the socialist movement)",
     ],
   },
@@ -2600,7 +2600,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches NAFTA→USMCA from the labor side, including the Rapid Response Mechanism and its limits.",
     courseSlugs: ["labor-mexico"],
     lessons: [
-      "Mexico, Lesson 7 · Mexico rewrites its labor law — and the 68-year gap that explains why",
+      "Mexico, Lesson 7 · Mexico rewrites its labor law, and the 68-year gap that explains why",
       "Mexico, Lesson 10 · The Rapid Response Mechanism: an international labor rule with teeth",
       "Mexico, Lesson 12 · The limits, honestly: the cases the United States lost",
     ],
@@ -2611,7 +2611,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["history-of-unions"],
     lessons: [
       "The History of Unions, Lesson 13 · Taft-Hartley, 1947: what the law took back",
-      "The History of Unions, Lesson 14 · PATCO, 1981 — and reading the decline honestly",
+      "The History of Unions, Lesson 14 · PATCO, 1981, and reading the decline honestly",
     ],
   },
   {
@@ -2649,7 +2649,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches oral-health behaviors tied to their measured effects, with the evidence graded honestly.",
     courseSlugs: ["dental-health-101"],
     lessons: [
-      "Dental Health 101, Lessons 2-5 · brushing, flossing, fluoride, and diet — each tied to its measured effect",
+      "Dental Health 101, Lessons 2-5 · brushing, flossing, fluoride, and diet, each tied to its measured effect",
     ],
   },
   {
@@ -2797,7 +2797,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.al-constitution-home-rule",
     claim:
-      "Teaches Alabama's Constitution of 1901 — which grew into the longest constitution in the world, with more than 900 (often local) amendments — and the 2022 recompiled 'Constitution of Alabama 2022' that removed racist language and reorganized the text, explaining that Alabama's weak-home-rule tradition centralized power in the Montgomery Legislature so that even local matters often required statewide constitutional amendments.",
+      "Teaches Alabama's Constitution of 1901, which grew into the longest constitution in the world, with more than 900 (often local) amendments, and the 2022 recompiled 'Constitution of Alabama 2022' that removed racist language and reorganized the text, explaining that Alabama's weak-home-rule tradition centralized power in the Montgomery Legislature so that even local matters often required statewide constitutional amendments.",
     courseSlugs: ["state-civics-al"],
     lessons: [
       "Alabama Civics, Lesson 1 · The longest constitution in the world (and the 2022 recompile)",
@@ -2807,7 +2807,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.al-plural-executive",
     claim:
-      "Teaches Alabama's large plural executive — the Governor, a separately elected Lieutenant Governor (who can be of a different party), Attorney General, Secretary of State, Treasurer, Auditor, and Commissioner of Agriculture and Industries, plus the elected Public Service Commission and State Board of Education — and its comparatively weak governor's veto, which the Legislature can override with only a simple majority.",
+      "Teaches Alabama's large plural executive, the Governor, a separately elected Lieutenant Governor (who can be of a different party), Attorney General, Secretary of State, Treasurer, Auditor, and Commissioner of Agriculture and Industries, plus the elected Public Service Commission and State Board of Education, and its comparatively weak governor's veto, which the Legislature can override with only a simple majority.",
     courseSlugs: ["state-civics-al"],
     lessons: [
       "Alabama Civics, Lesson 2 · Weak home rule and Alabama's large plural executive",
@@ -2825,7 +2825,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.al-lawmaking-amendments",
     claim:
-      "Teaches how a bill becomes an Alabama law (introduction, committee, floor votes in both chambers, then the Governor's signature or weak veto) and that Alabama has no statewide citizen initiative, so constitutional amendments are proposed by the Legislature and ratified by voters — which, given weak home rule, is why Alabamians vote on so many (often local) amendments.",
+      "Teaches how a bill becomes an Alabama law (introduction, committee, floor votes in both chambers, then the Governor's signature or weak veto) and that Alabama has no statewide citizen initiative, so constitutional amendments are proposed by the Legislature and ratified by voters, which, given weak home rule, is why Alabamians vote on so many (often local) amendments.",
     courseSlugs: ["state-civics-al"],
     lessons: [
       "Alabama Civics, Lesson 3 · The Legislature and Alabama's partisan-elected judiciary",
@@ -2834,7 +2834,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.al-local-government",
     claim:
-      "Teaches Alabama local government as Alabama's: 67 counties governed by elected county commissions (plus separately elected sheriff, probate judge, and tax officials), cities and towns, and school systems — but limited by weak home rule, so counties often need state legislative action or a constitutional amendment for many local decisions.",
+      "Teaches Alabama local government as Alabama's: 67 counties governed by elected county commissions (plus separately elected sheriff, probate judge, and tax officials), cities and towns, and school systems, but limited by weak home rule, so counties often need state legislative action or a constitutional amendment for many local decisions.",
     courseSlugs: ["state-civics-al"],
     lessons: [
       "Alabama Civics, Lesson 4 · Local government and how to take part",
@@ -2863,7 +2863,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.la-civil-law",
     claim:
-      "Teaches Louisiana's defining difference: it is the only U.S. state whose legal system is built on CIVIL LAW (the French and Spanish, ultimately Roman/Napoleonic, tradition organized in a Civil Code) rather than English common law, with distinctive vocabulary — parishes, usufruct, forced heirship — that traces to its French and Spanish colonial past. Louisiana became the 18th state on April 30, 1812.",
+      "Teaches Louisiana's defining difference: it is the only U.S. state whose legal system is built on CIVIL LAW (the French and Spanish, ultimately Roman/Napoleonic, tradition organized in a Civil Code) rather than English common law, with distinctive vocabulary, parishes, usufruct, forced heirship, that traces to its French and Spanish colonial past. Louisiana became the 18th state on April 30, 1812.",
     courseSlugs: ["state-civics-la"],
     lessons: [
       "Louisiana Civics, Lesson 1 · Louisiana's defining difference: a civil-law state",
@@ -2881,7 +2881,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.la-jungle-primary",
     claim:
-      "Teaches Louisiana's 'jungle primary' (the open primary): all candidates of every party appear on one ballot in the first round, a candidate who wins an outright majority takes the office with no runoff, and otherwise the top two finishers advance to a runoff even if they belong to the same party — unlike Washington's or California's top-two, where two candidates always advance.",
+      "Teaches Louisiana's 'jungle primary' (the open primary): all candidates of every party appear on one ballot in the first round, a candidate who wins an outright majority takes the office with no runoff, and otherwise the top two finishers advance to a runoff even if they belong to the same party, unlike Washington's or California's top-two, where two candidates always advance.",
     courseSlugs: ["state-civics-la"],
     lessons: [
       "Louisiana Civics, Lesson 3 · Louisiana's 'jungle primary' (the open primary)",
@@ -2890,7 +2890,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.la-lawmaking-amendments",
     claim:
-      "Teaches how a bill becomes a Louisiana law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto, or line-item veto, with a two-thirds override and even a veto-override session) and that Louisiana has no general citizen initiative, so only constitutional amendments — proposed by a two-thirds vote of each chamber — reach voters for ratification, which they do often.",
+      "Teaches how a bill becomes a Louisiana law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto, or line-item veto, with a two-thirds override and even a veto-override session) and that Louisiana has no general citizen initiative, so only constitutional amendments, proposed by a two-thirds vote of each chamber, reach voters for ratification, which they do often.",
     courseSlugs: ["state-civics-la"],
     lessons: [
       "Louisiana Civics, Lesson 4 · How a bill becomes a Louisiana law",
@@ -2926,7 +2926,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ia-caucuses",
     claim:
-      "Teaches Iowa's precinct caucuses — neighborhood party meetings (not ballot primaries) that traditionally opened the presidential nominating season 'first in the nation,' giving a small farm state outsized, face-to-face retail-campaign influence — while flagging that the nominating calendar has recently shifted, so exact 'first' status varies by party and year (confirm at sos.iowa.gov). Iowa governs under its Constitution of 1857 and became the 29th state on December 28, 1846.",
+      "Teaches Iowa's precinct caucuses, neighborhood party meetings (not ballot primaries) that traditionally opened the presidential nominating season 'first in the nation,' giving a small farm state outsized, face-to-face retail-campaign influence, while flagging that the nominating calendar has recently shifted, so exact 'first' status varies by party and year (confirm at sos.iowa.gov). Iowa governs under its Constitution of 1857 and became the 29th state on December 28, 1846.",
     courseSlugs: ["state-civics-ia"],
     lessons: [
       "Iowa Civics, Lesson 1 · The Iowa caucuses: going first in presidential politics",
@@ -2935,7 +2935,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ia-redistricting",
     claim:
-      "Teaches Iowa's nationally admired nonpartisan redistricting: the nonpartisan Legislative Services Agency (LSA) draws Iowa's legislative and congressional maps on neutral criteria (equal population, compact districts, respect for county and city lines) and is forbidden from considering past election results, incumbents' addresses, or party registration; the Legislature then votes the maps up or down — a model widely cited for reducing gerrymandering.",
+      "Teaches Iowa's nationally admired nonpartisan redistricting: the nonpartisan Legislative Services Agency (LSA) draws Iowa's legislative and congressional maps on neutral criteria (equal population, compact districts, respect for county and city lines) and is forbidden from considering past election results, incumbents' addresses, or party registration; the Legislature then votes the maps up or down, a model widely cited for reducing gerrymandering.",
     courseSlugs: ["state-civics-ia"],
     lessons: [
       "Iowa Civics, Lesson 2 · Iowa's nonpartisan redistricting: a national model",
@@ -2944,7 +2944,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ia-executive-legislature",
     claim:
-      "Teaches Iowa's plural executive (the Governor and Lieutenant Governor on a joint ticket, plus a separately elected Secretary of State, Attorney General, State Treasurer, State Auditor, and Secretary of Agriculture — a fitting office for a major farm state, all on 4-year terms) and the Iowa General Assembly (a 100-member House on 2-year terms and a 50-member Senate on 4-year terms), with the Governor's strong item veto on appropriations and a two-thirds override.",
+      "Teaches Iowa's plural executive (the Governor and Lieutenant Governor on a joint ticket, plus a separately elected Secretary of State, Attorney General, State Treasurer, State Auditor, and Secretary of Agriculture, a fitting office for a major farm state, all on 4-year terms) and the Iowa General Assembly (a 100-member House on 2-year terms and a 50-member Senate on 4-year terms), with the Governor's strong item veto on appropriations and a two-thirds override.",
     courseSlugs: ["state-civics-ia"],
     lessons: [
       "Iowa Civics, Lesson 3 · The executive and the General Assembly",
@@ -2962,7 +2962,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ia-lawmaking",
     claim:
-      "Teaches how a bill becomes an Iowa law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto with a two-thirds override, or item veto of appropriations) and that Iowa has NO statewide citizen initiative for general laws — an unusual gap: constitutional amendments must be passed by two consecutive General Assemblies and then ratified by the voters.",
+      "Teaches how a bill becomes an Iowa law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto with a two-thirds override, or item veto of appropriations) and that Iowa has NO statewide citizen initiative for general laws, an unusual gap: constitutional amendments must be passed by two consecutive General Assemblies and then ratified by the voters.",
     courseSlugs: ["state-civics-ia"],
     lessons: [
       "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
@@ -2980,7 +2980,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ia-elections",
     claim:
-      "Teaches Iowa's election specifics — early/absentee voting and a voter-ID requirement, administered by county auditors, with early-voting windows and deadlines adjusted in recent years — and a standing flag to confirm the current rules at sos.iowa.gov before voting.",
+      "Teaches Iowa's election specifics, early/absentee voting and a voter-ID requirement, administered by county auditors, with early-voting windows and deadlines adjusted in recent years, and a standing flag to confirm the current rules at sos.iowa.gov before voting.",
     courseSlugs: ["state-civics-ia"],
     lessons: [
       "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
@@ -2989,7 +2989,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ia-get-involved",
     claim:
-      "Teaches getting involved where you live, Iowa edition — attending your precinct caucus (a hands-on way to shape party business and, in presidential years, register a preference), registering and voting under current sos.iowa.gov rules, showing up at county boards of supervisors, city councils, and school boards, contacting your one Representative and one Senator in Des Moines, and running for local office.",
+      "Teaches getting involved where you live, Iowa edition, attending your precinct caucus (a hands-on way to shape party business and, in presidential years, register a preference), registering and voting under current sos.iowa.gov rules, showing up at county boards of supervisors, city councils, and school boards, contacting your one Representative and one Senator in Des Moines, and running for local office.",
     courseSlugs: ["state-civics-ia"],
     lessons: [
       "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
@@ -3017,7 +3017,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ms-executive",
     claim:
-      "Teaches Mississippi's large plural executive (a Governor and a separately elected Lieutenant Governor — who can be from a different party — plus a separately elected Secretary of State, Attorney General, Treasurer, Auditor, Insurance Commissioner, and Commissioner of Agriculture and Commerce, and the elected Public Service and Transportation Commissions) and that Mississippi's Lieutenant Governor is one of the most powerful in the nation, presiding over the state Senate and strongly controlling its committees, calendar, and which bills advance; statewide officers serve 4-year terms elected in odd-numbered years (for example 2023 and 2027).",
+      "Teaches Mississippi's large plural executive (a Governor and a separately elected Lieutenant Governor, who can be from a different party, plus a separately elected Secretary of State, Attorney General, Treasurer, Auditor, Insurance Commissioner, and Commissioner of Agriculture and Commerce, and the elected Public Service and Transportation Commissions) and that Mississippi's Lieutenant Governor is one of the most powerful in the nation, presiding over the state Senate and strongly controlling its committees, calendar, and which bills advance; statewide officers serve 4-year terms elected in odd-numbered years (for example 2023 and 2027).",
     courseSlugs: ["state-civics-ms"],
     lessons: [
       "Mississippi Civics, Lesson 2 · A large plural executive and an unusually powerful Lieutenant Governor",
@@ -3053,7 +3053,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ms-elections",
     claim:
-      "Teaches Mississippi's election specifics — a photo-ID requirement and comparatively limited early/absentee options (an excuse is generally required for absentee, and Mississippi has been slower than many states to adopt no-excuse early voting), administered by county election officials, with big elections falling in odd years — and a standing flag to confirm the current rules at sos.ms.gov before voting.",
+      "Teaches Mississippi's election specifics, a photo-ID requirement and comparatively limited early/absentee options (an excuse is generally required for absentee, and Mississippi has been slower than many states to adopt no-excuse early voting), administered by county election officials, with big elections falling in odd years, and a standing flag to confirm the current rules at sos.ms.gov before voting.",
     courseSlugs: ["state-civics-ms"],
     lessons: [
       "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
@@ -3062,7 +3062,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ms-get-involved",
     claim:
-      "Teaches getting involved where you live, Mississippi edition — registering and voting with photo ID (checking absentee eligibility and Mississippi's odd-year calendar at sos.ms.gov), showing up at your county board of supervisors, city council, and school board, contacting your one Representative and one Senator in Jackson, watching for a legislative fix that would restore the citizen initiative, and running for local office.",
+      "Teaches getting involved where you live, Mississippi edition, registering and voting with photo ID (checking absentee eligibility and Mississippi's odd-year calendar at sos.ms.gov), showing up at your county board of supervisors, city council, and school board, contacting your one Representative and one Senator in Jackson, watching for a legislative fix that would restore the citizen initiative, and running for local office.",
     courseSlugs: ["state-civics-ms"],
     lessons: [
       "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
@@ -3080,7 +3080,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nm-bilingual-constitution",
     claim:
-      "Teaches New Mexico's 1912 constitution and its special protections for Spanish-speaking citizens — the right to vote, hold office, serve on juries, and receive an equal education regardless of ability to read or write English or Spanish — making New Mexico effectively the most bilingual state.",
+      "Teaches New Mexico's 1912 constitution and its special protections for Spanish-speaking citizens, the right to vote, hold office, serve on juries, and receive an equal education regardless of ability to read or write English or Spanish, making New Mexico effectively the most bilingual state.",
     courseSlugs: ["state-civics-nm"],
     lessons: [
       "New Mexico Civics, Lesson 1 · New Mexico's bilingual constitution and its cultures",
@@ -3089,7 +3089,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nm-tribal-nations",
     claim:
-      "Teaches the sovereign tribal nations within New Mexico — 19 Pueblos plus the Navajo Nation and Apache tribes — as governments with their own laws and courts, an essential part of the state's civic landscape.",
+      "Teaches the sovereign tribal nations within New Mexico, 19 Pueblos plus the Navajo Nation and Apache tribes, as governments with their own laws and courts, an essential part of the state's civic landscape.",
     courseSlugs: ["state-civics-nm"],
     lessons: [
       "New Mexico Civics, Lesson 1 · New Mexico's bilingual constitution and its cultures",
@@ -3099,7 +3099,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nm-unpaid-legislature",
     claim:
-      "Teaches New Mexico's Legislature — the only fully volunteer (unpaid) state legislature in the nation — with a 70-member House and 42-member Senate that alternates a 60-day session in odd years and a 30-day budget session in even years.",
+      "Teaches New Mexico's Legislature, the only fully volunteer (unpaid) state legislature in the nation, with a 70-member House and 42-member Senate that alternates a 60-day session in odd years and a 30-day budget session in even years.",
     courseSlugs: ["state-civics-nm"],
     lessons: [
       "New Mexico Civics, Lesson 2 · The only unpaid legislature in the nation",
@@ -3117,7 +3117,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nm-courts",
     claim:
-      "Teaches New Mexico's distinctive hybrid judicial selection — a nominating commission and gubernatorial appointment, then a partisan election, then nonpartisan yes/no retention — and its 5-justice Supreme Court.",
+      "Teaches New Mexico's distinctive hybrid judicial selection, a nominating commission and gubernatorial appointment, then a partisan election, then nonpartisan yes/no retention, and its 5-justice Supreme Court.",
     courseSlugs: ["state-civics-nm"],
     lessons: [
       "New Mexico Civics, Lesson 3 · The executive and how New Mexico picks its judges",
@@ -3126,7 +3126,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nm-lawmaking",
     claim:
-      "Teaches how a bill becomes a New Mexico law, the Governor's line-item veto and the two-thirds override, and that New Mexico has no statewide citizen initiative — constitutional amendments are referred by the Legislature to the voters, with the language-rights provisions especially hard to amend.",
+      "Teaches how a bill becomes a New Mexico law, the Governor's line-item veto and the two-thirds override, and that New Mexico has no statewide citizen initiative, constitutional amendments are referred by the Legislature to the voters, with the language-rights provisions especially hard to amend.",
     courseSlugs: ["state-civics-nm"],
     lessons: [
       "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
@@ -3144,7 +3144,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nm-get-involved",
     claim:
-      "Teaches getting involved where you live, New Mexico edition — registering and voting (including same-day registration), serving in the unpaid Legislature as civic volunteering, and showing up at county commissions, councils, school boards, and tribal governments.",
+      "Teaches getting involved where you live, New Mexico edition, registering and voting (including same-day registration), serving in the unpaid Legislature as civic volunteering, and showing up at county commissions, councils, school boards, and tribal governments.",
     courseSlugs: ["state-civics-nm"],
     lessons: [
       "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
@@ -3162,7 +3162,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nv-none-of-these-candidates",
     claim:
-      "Teaches Nevada's “None of These Candidates” — a statewide-ballot protest option (since 1976) found in no other state, and the fact that it is non-binding: even if it wins the most votes, the highest-finishing actual candidate still takes office. Also teaches Nevada's Constitution of 1864 and the “Battle Born” story.",
+      "Teaches Nevada's “None of These Candidates”, a statewide-ballot protest option (since 1976) found in no other state, and the fact that it is non-binding: even if it wins the most votes, the highest-finishing actual candidate still takes office. Also teaches Nevada's Constitution of 1864 and the “Battle Born” story.",
     courseSlugs: ["state-civics-nv"],
     lessons: [
       "Nevada Civics, Lesson 1 · “None of These Candidates”: a ballot option found only in Nevada",
@@ -3171,7 +3171,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nv-gaming-taxes",
     claim:
-      "Teaches Nevada's gaming (casino) regulation — the Gaming Control Board and the Gaming Commission — and how gaming taxes and tourism revenue let Nevada operate with no state personal income tax.",
+      "Teaches Nevada's gaming (casino) regulation, the Gaming Control Board and the Gaming Commission, and how gaming taxes and tourism revenue let Nevada operate with no state personal income tax.",
     courseSlugs: ["state-civics-nv"],
     lessons: [
       "Nevada Civics, Lesson 2 · Gaming regulation and why Nevada has no income tax",
@@ -3180,7 +3180,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nv-executive-legislature",
     claim:
-      "Teaches Nevada's plural executive (a separately elected Governor and Lieutenant Governor, Secretary of State, Attorney General, Treasurer, and Controller) and its part-time, biennial Legislature — a 42-member Assembly and 21-member Senate that meets only in odd-numbered years for a constitutionally limited 120 days, with term limits.",
+      "Teaches Nevada's plural executive (a separately elected Governor and Lieutenant Governor, Secretary of State, Attorney General, Treasurer, and Controller) and its part-time, biennial Legislature, a 42-member Assembly and 21-member Senate that meets only in odd-numbered years for a constitutionally limited 120 days, with term limits.",
     courseSlugs: ["state-civics-nv"],
     lessons: [
       "Nevada Civics, Lesson 3 · The executive and a Legislature that meets every other year",
@@ -3189,7 +3189,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nv-courts",
     claim:
-      "Teaches Nevada's elected judiciary — judges chosen on a nonpartisan ballot to 6-year terms — with a Court of Appeals and a 7-justice Nevada Supreme Court.",
+      "Teaches Nevada's elected judiciary, judges chosen on a nonpartisan ballot to 6-year terms, with a Court of Appeals and a 7-justice Nevada Supreme Court.",
     courseSlugs: ["state-civics-nv"],
     lessons: [
       "Nevada Civics, Lesson 3 · The executive and a Legislature that meets every other year",
@@ -3207,7 +3207,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nv-lawmaking",
     claim:
-      "Teaches how a bill becomes a Nevada law in the biennial session — introduction, committee, floor votes, and the Governor's sign/veto with a two-thirds override — alongside the citizen initiative and referendum as a lawmaking backstop.",
+      "Teaches how a bill becomes a Nevada law in the biennial session, introduction, committee, floor votes, and the Governor's sign/veto with a two-thirds override, alongside the citizen initiative and referendum as a lawmaking backstop.",
     courseSlugs: ["state-civics-nv"],
     lessons: [
       "Nevada Civics, Lesson 4 · Direct democracy: the two-election rule for citizen amendments",
@@ -3225,7 +3225,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nv-get-involved",
     claim:
-      "Teaches getting involved where you live, Nevada edition — registering and voting (including same-day and automatic registration and mailed ballots to active voters), using the initiative and referendum, showing up at county commissions and city councils, and running for local office.",
+      "Teaches getting involved where you live, Nevada edition, registering and voting (including same-day and automatic registration and mailed ballots to active voters), using the initiative and referendum, showing up at county commissions and city councils, and running for local office.",
     courseSlugs: ["state-civics-nv"],
     lessons: [
       "Nevada Civics, Lesson 5 · Local government and how to take part",
@@ -3245,7 +3245,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nh-constitution",
     claim:
-      "Teaches New Hampshire as “Live Free or Die” — the Constitution of 1784 (the second-oldest U.S. state constitution still in effect, after Massachusetts), whose Part First is a Bill of Rights — and that New Hampshire was the 9th and DECIDING state to ratify the U.S. Constitution on June 21, 1788, the ratification that put the Constitution into effect.",
+      "Teaches New Hampshire as “Live Free or Die”, the Constitution of 1784 (the second-oldest U.S. state constitution still in effect, after Massachusetts), whose Part First is a Bill of Rights, and that New Hampshire was the 9th and DECIDING state to ratify the U.S. Constitution on June 21, 1788, the ratification that put the Constitution into effect.",
     courseSlugs: ["state-civics-nh"],
     lessons: [
       "New Hampshire Civics, Lesson 1 · “Live Free or Die”: the 1784 Constitution and the 9th state",
@@ -3254,7 +3254,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nh-general-court",
     claim:
-      "Teaches New Hampshire's Legislature — the General Court — as New Hampshire's: a 400-member House of Representatives (one of the largest legislative bodies in the English-speaking world, roughly one representative per 3,300 residents, the most accessible representation in the nation) and a 24-member Senate, with legislators paid $100 a year, making it a genuinely citizen, near-volunteer legislature; both chambers serve 2-year terms.",
+      "Teaches New Hampshire's Legislature, the General Court, as New Hampshire's: a 400-member House of Representatives (one of the largest legislative bodies in the English-speaking world, roughly one representative per 3,300 residents, the most accessible representation in the nation) and a 24-member Senate, with legislators paid $100 a year, making it a genuinely citizen, near-volunteer legislature; both chambers serve 2-year terms.",
     courseSlugs: ["state-civics-nh"],
     lessons: [
       "New Hampshire Civics, Lesson 2 · The 400-member House: a citizen Legislature",
@@ -3263,7 +3263,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nh-executive-council",
     claim:
-      "Teaches New Hampshire's distinctive executive: the Governor serves a 2-year term (one of only two states, with Vermont) and there is NO Lieutenant Governor (the Senate President is next in line), and the Governor SHARES executive power with an elected five-member Executive Council that must approve state contracts, gubernatorial nominations and appointments (including judges), and pardons — a check on the executive found in almost no other state.",
+      "Teaches New Hampshire's distinctive executive: the Governor serves a 2-year term (one of only two states, with Vermont) and there is NO Lieutenant Governor (the Senate President is next in line), and the Governor SHARES executive power with an elected five-member Executive Council that must approve state contracts, gubernatorial nominations and appointments (including judges), and pardons, a check on the executive found in almost no other state.",
     courseSlugs: ["state-civics-nh"],
     lessons: [
       "New Hampshire Civics, Lesson 3 · The Executive Council and how New Hampshire picks its judges",
@@ -3272,7 +3272,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nh-courts",
     claim:
-      "Teaches New Hampshire's judiciary as New Hampshire's: judges are NOT elected — the Governor nominates and the elected Executive Council confirms them, and they serve to a mandatory retirement age of 70 — with a 5-member New Hampshire Supreme Court at the top that also issues advisory opinions to the Legislature and Governor on the constitutionality of proposed action.",
+      "Teaches New Hampshire's judiciary as New Hampshire's: judges are NOT elected, the Governor nominates and the elected Executive Council confirms them, and they serve to a mandatory retirement age of 70, with a 5-member New Hampshire Supreme Court at the top that also issues advisory opinions to the Legislature and Governor on the constitutionality of proposed action.",
     courseSlugs: ["state-civics-nh"],
     lessons: [
       "New Hampshire Civics, Lesson 3 · The Executive Council and how New Hampshire picks its judges",
@@ -3281,7 +3281,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nh-first-primary",
     claim:
-      "Teaches New Hampshire's first-in-the-nation presidential primary — protected by a state law that directs the Secretary of State to set the date at least seven days before any similar contest — as the state's signature civic tradition and a central part of how the nation chooses its presidents.",
+      "Teaches New Hampshire's first-in-the-nation presidential primary, protected by a state law that directs the Secretary of State to set the date at least seven days before any similar contest, as the state's signature civic tradition and a central part of how the nation chooses its presidents.",
     courseSlugs: ["state-civics-nh"],
     lessons: [
       "New Hampshire Civics, Lesson 4 · How a bill becomes law, and the first-in-the-nation primary",
@@ -3299,7 +3299,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nh-town-meeting",
     claim:
-      "Teaches New Hampshire local government as New Hampshire's: the annual town meeting — direct democracy in which residents vote the town and school budgets and the warrant articles themselves (with the SB 2 official-ballot referendum as the alternative many towns have adopted) — alongside 10 counties with a limited role, plus cities and school districts, all funded heavily by the local property tax, since New Hampshire levies no broad-based personal income tax on wages and no general sales tax (the “New Hampshire Advantage”).",
+      "Teaches New Hampshire local government as New Hampshire's: the annual town meeting, direct democracy in which residents vote the town and school budgets and the warrant articles themselves (with the SB 2 official-ballot referendum as the alternative many towns have adopted), alongside 10 counties with a limited role, plus cities and school districts, all funded heavily by the local property tax, since New Hampshire levies no broad-based personal income tax on wages and no general sales tax (the “New Hampshire Advantage”).",
     courseSlugs: ["state-civics-nh"],
     lessons: [
       "New Hampshire Civics, Lesson 5 · Town meeting, local government, and how to take part",
@@ -3308,7 +3308,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nh-get-involved",
     claim:
-      "Teaches getting involved where you live, New Hampshire edition — registering to vote (including Election-Day registration) and voting in the first-in-the-nation primary, speaking and voting at your annual town meeting, showing up at the select board or city council and the school board, contacting your state representative (with 400 House members, among the easiest legislators in the country to reach), and running for the House yourself.",
+      "Teaches getting involved where you live, New Hampshire edition, registering to vote (including Election-Day registration) and voting in the first-in-the-nation primary, speaking and voting at your annual town meeting, showing up at the select board or city council and the school board, contacting your state representative (with 400 House members, among the easiest legislators in the country to reach), and running for the House yourself.",
     courseSlugs: ["state-civics-nh"],
     lessons: [
       "New Hampshire Civics, Lesson 5 · Town meeting, local government, and how to take part",
@@ -3332,7 +3332,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wv-origin-constitution",
     claim:
-      "Teaches West Virginia's singular origin — the ONLY U.S. state created by breaking away from another state, its pro-Union western counties splitting from Virginia and joining the Union on June 20, 1863, a birth out of the Civil War itself (the U.S. Constitution normally forbids carving a new state out of an existing one without its consent) — and that West Virginia governs today under its Constitution of 1872 (its second, replacing the 1863 founding constitution).",
+      "Teaches West Virginia's singular origin, the ONLY U.S. state created by breaking away from another state, its pro-Union western counties splitting from Virginia and joining the Union on June 20, 1863, a birth out of the Civil War itself (the U.S. Constitution normally forbids carving a new state out of an existing one without its consent), and that West Virginia governs today under its Constitution of 1872 (its second, replacing the 1863 founding constitution).",
     courseSlugs: ["state-civics-wv"],
     lessons: [
       "West Virginia Civics, Lesson 1 · The only state born by breaking away from another",
@@ -3341,7 +3341,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wv-executive",
     claim:
-      "Teaches West Virginia's plural executive as West Virginia's: voters elect several statewide officers to 4-year terms — the Governor, the Secretary of State (who runs elections), the Attorney General, the State Auditor, the State Treasurer, and the Commissioner of Agriculture — and there is NO Lieutenant Governor: by statute the President of the Senate carries that title and is first in line to succeed the Governor (as in Tennessee), and the Governor's veto is weak, overridden on most bills by a simple majority (budget and supplementary-appropriations bills require a two-thirds override).",
+      "Teaches West Virginia's plural executive as West Virginia's: voters elect several statewide officers to 4-year terms, the Governor, the Secretary of State (who runs elections), the Attorney General, the State Auditor, the State Treasurer, and the Commissioner of Agriculture, and there is NO Lieutenant Governor: by statute the President of the Senate carries that title and is first in line to succeed the Governor (as in Tennessee), and the Governor's veto is weak, overridden on most bills by a simple majority (budget and supplementary-appropriations bills require a two-thirds override).",
     courseSlugs: ["state-civics-wv"],
     lessons: [
       "West Virginia Civics, Lesson 2 · The executive and the Legislature",
@@ -3386,7 +3386,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wv-get-involved",
     claim:
-      "Teaches getting involved where you live, West Virginia edition — registering and voting (early in-person and absentee voting, with ID, administered by county clerks, so confirm current rules at sos.wv.gov), showing up at county commissions, city and town councils, and county boards of education, contacting your Delegate-district team and Senator in Charleston during the short 60-day session, researching candidates in the now-nonpartisan judicial elections where party labels no longer guide you, and running for county board of education, city council, or county commission.",
+      "Teaches getting involved where you live, West Virginia edition, registering and voting (early in-person and absentee voting, with ID, administered by county clerks, so confirm current rules at sos.wv.gov), showing up at county commissions, city and town councils, and county boards of education, contacting your Delegate-district team and Senator in Charleston during the short 60-day session, researching candidates in the now-nonpartisan judicial elections where party labels no longer guide you, and running for county board of education, city council, or county commission.",
     courseSlugs: ["state-civics-wv"],
     lessons: [
       "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
@@ -3418,7 +3418,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.me-executive",
     claim:
-      "Teaches Maine's distinctive executive: the Governor is the ONLY official Mainers elect statewide (a 4-year term limited to two consecutive terms), there is NO Lieutenant Governor (the President of the Senate is next in line to succeed), and the Attorney General, Secretary of State, and Treasurer — plus the State Auditor — are elected BY THE LEGISLATURE rather than by the voters, Maine being one of only a handful of states where the Legislature elects the Attorney General.",
+      "Teaches Maine's distinctive executive: the Governor is the ONLY official Mainers elect statewide (a 4-year term limited to two consecutive terms), there is NO Lieutenant Governor (the President of the Senate is next in line to succeed), and the Attorney General, Secretary of State, and Treasurer, plus the State Auditor, are elected BY THE LEGISLATURE rather than by the voters, Maine being one of only a handful of states where the Legislature elects the Attorney General.",
     courseSlugs: ["state-civics-me"],
     lessons: [
       "Maine Civics, Lesson 2 · Maine's executive: the Governor is the only statewide-elected official",
@@ -3427,7 +3427,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.me-ranked-choice",
     claim:
-      "Teaches ranked-choice voting as Maine's signature election reform: Maine was the FIRST state to adopt ranked-choice voting statewide (by citizen initiative in 2016), how it works (voters rank candidates; if no one has a majority of first choices the last-place candidate is eliminated and those ballots transfer to each voter's next choice, round by round, until a candidate has a majority), and the constitutional nuance that limits it — Maine's constitution requires a plurality for state general elections, so ranked-choice voting applies to all primaries and to federal general elections but NOT to the general election for Governor or the state Legislature.",
+      "Teaches ranked-choice voting as Maine's signature election reform: Maine was the FIRST state to adopt ranked-choice voting statewide (by citizen initiative in 2016), how it works (voters rank candidates; if no one has a majority of first choices the last-place candidate is eliminated and those ballots transfer to each voter's next choice, round by round, until a candidate has a majority), and the constitutional nuance that limits it, Maine's constitution requires a plurality for state general elections, so ranked-choice voting applies to all primaries and to federal general elections but NOT to the general election for Governor or the state Legislature.",
     courseSlugs: ["state-civics-me"],
     lessons: [
       "Maine Civics, Lesson 3 · Ranked-choice voting: Maine went first",
@@ -3436,7 +3436,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.me-direct-democracy",
     claim:
-      "Teaches Maine's two roads to law: through the Legislature — a part-time citizen legislature of a 151-member House and a 35-member Senate (2-year terms, limited to four consecutive terms), using joint standing committees shared by both chambers, with a two-thirds veto override — and directly by the voters, through the citizen initiative (an indirect initiative, since the Legislature gets first look and may enact it or offer a competing measure) and the “people's veto,” a citizen petition to suspend a law the Legislature just passed and send it to the voters to accept or reject.",
+      "Teaches Maine's two roads to law: through the Legislature, a part-time citizen legislature of a 151-member House and a 35-member Senate (2-year terms, limited to four consecutive terms), using joint standing committees shared by both chambers, with a two-thirds veto override, and directly by the voters, through the citizen initiative (an indirect initiative, since the Legislature gets first look and may enact it or offer a competing measure) and the “people's veto,” a citizen petition to suspend a law the Legislature just passed and send it to the voters to accept or reject.",
     courseSlugs: ["state-civics-me"],
     lessons: [
       "Maine Civics, Lesson 4 · How a bill becomes law, plus the initiative and 'people's veto'",
@@ -3445,7 +3445,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.me-courts",
     claim:
-      "Teaches how Maine picks its judges — appointment, not election: the Governor nominates, the Legislature confirms, and judges serve renewable 7-year terms (the New England pattern Maine shares with Massachusetts, keeping judges out of campaigns), with the Supreme Judicial Court at the top, called the “Law Court” when it hears appeals.",
+      "Teaches how Maine picks its judges, appointment, not election: the Governor nominates, the Legislature confirms, and judges serve renewable 7-year terms (the New England pattern Maine shares with Massachusetts, keeping judges out of campaigns), with the Supreme Judicial Court at the top, called the “Law Court” when it hears appeals.",
     courseSlugs: ["state-civics-me"],
     lessons: [
       "Maine Civics, Lesson 5 · Appointed judges, town meetings, and split electoral votes",
@@ -3454,7 +3454,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.me-local-electoral",
     claim:
-      "Teaches Maine local government and its split presidential vote as Maine's: a town-based state where many communities still govern by open town meeting (any registered voter may attend, speak, and vote on the town budget and ordinances), 16 counties that handle courts, jails, sheriffs, and registries, large stretches of “unorganized territory” with no municipal government where the state and county provide services directly, and Maine's practice (with Nebraska) of splitting its presidential electoral votes by congressional district — two electors to the statewide winner and one to the winner of each of Maine's two districts, so its electors can divide between candidates.",
+      "Teaches Maine local government and its split presidential vote as Maine's: a town-based state where many communities still govern by open town meeting (any registered voter may attend, speak, and vote on the town budget and ordinances), 16 counties that handle courts, jails, sheriffs, and registries, large stretches of “unorganized territory” with no municipal government where the state and county provide services directly, and Maine's practice (with Nebraska) of splitting its presidential electoral votes by congressional district, two electors to the statewide winner and one to the winner of each of Maine's two districts, so its electors can divide between candidates.",
     courseSlugs: ["state-civics-me"],
     lessons: [
       "Maine Civics, Lesson 5 · Appointed judges, town meetings, and split electoral votes",
@@ -3463,7 +3463,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.me-get-involved",
     claim:
-      "Teaches getting involved where you live, Maine edition — registering and voting (with same-day, Election-Day registration) and ranking candidates in the elections that use ranked-choice voting, going to open town meeting to vote directly on the budget and local ordinances, using Maine's direct-democracy levers (signing or circulating a citizen initiative or a people's veto petition), contacting your one Representative and one Senator in Augusta (a famously accessible citizen legislature), and running for select board, school board, town or city council, or county office.",
+      "Teaches getting involved where you live, Maine edition, registering and voting (with same-day, Election-Day registration) and ranking candidates in the elections that use ranked-choice voting, going to open town meeting to vote directly on the budget and local ordinances, using Maine's direct-democracy levers (signing or circulating a citizen initiative or a people's veto petition), contacting your one Representative and one Senator in Augusta (a famously accessible citizen legislature), and running for select board, school board, town or city council, or county office.",
     courseSlugs: ["state-civics-me"],
     lessons: [
       "Maine Civics, Lesson 6 · How to take part where you live",
@@ -3483,7 +3483,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ri-name-founding",
     claim:
-      "Teaches Rhode Island as the smallest state, founded by Roger Williams in 1636 as a haven for religious freedom and the separation of church and state, and the last of the original 13 colonies to ratify the U.S. Constitution (the 13th state, May 29, 1790), holding out until a Bill of Rights was assured; teaches that Rhode Island governs under a constitution first adopted in 1843 — which ended a property-restricted franchise after the Dorr Rebellion expanded suffrage — and that in 2020 its voters removed “and Providence Plantations” from the official name.",
+      "Teaches Rhode Island as the smallest state, founded by Roger Williams in 1636 as a haven for religious freedom and the separation of church and state, and the last of the original 13 colonies to ratify the U.S. Constitution (the 13th state, May 29, 1790), holding out until a Bill of Rights was assured; teaches that Rhode Island governs under a constitution first adopted in 1843, which ended a property-restricted franchise after the Dorr Rebellion expanded suffrage, and that in 2020 its voters removed “and Providence Plantations” from the official name.",
     courseSlugs: ["state-civics-ri"],
     lessons: [
       "Rhode Island Civics, Lesson 1 · The smallest state, its founding, and its 2020 name change",
@@ -3492,7 +3492,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ri-no-counties",
     claim:
-      "Teaches Rhode Island local government as Rhode Island's: 5 counties that exist only as geographic and judicial reference areas with NO county governments (no commissioners, councils, budgets, or services), so its 39 cities and towns are the workhorse of local government — schools, police, roads, zoning — with some smaller towns still using a town meeting or financial town meeting, a two-tier state-and-municipality structure shared with only a handful of New England states.",
+      "Teaches Rhode Island local government as Rhode Island's: 5 counties that exist only as geographic and judicial reference areas with NO county governments (no commissioners, councils, budgets, or services), so its 39 cities and towns are the workhorse of local government, schools, police, roads, zoning, with some smaller towns still using a town meeting or financial town meeting, a two-tier state-and-municipality structure shared with only a handful of New England states.",
     courseSlugs: ["state-civics-ri"],
     lessons: [
       "Rhode Island Civics, Lesson 2 · Counties on the map, but no county governments",
@@ -3501,7 +3501,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ri-separation-powers",
     claim:
-      "Teaches Rhode Island's long tradition of legislative supremacy — a General Assembly so dominant that legislators sat on and controlled the executive boards and commissions that ran state agencies — and the landmark 2004 constitutional “separation of powers” amendment that removed legislators from those boards and strengthened the Governor and the executive branch; teaches Rhode Island's plural executive (the Governor, a separately elected Lieutenant Governor, the Secretary of State, the Attorney General, and the General Treasurer, each on a 4-year term).",
+      "Teaches Rhode Island's long tradition of legislative supremacy, a General Assembly so dominant that legislators sat on and controlled the executive boards and commissions that ran state agencies, and the landmark 2004 constitutional “separation of powers” amendment that removed legislators from those boards and strengthened the Governor and the executive branch; teaches Rhode Island's plural executive (the Governor, a separately elected Lieutenant Governor, the Secretary of State, the Attorney General, and the General Treasurer, each on a 4-year term).",
     courseSlugs: ["state-civics-ri"],
     lessons: [
       "Rhode Island Civics, Lesson 3 · From legislative supremacy to the 2004 separation-of-powers reform",
@@ -3510,7 +3510,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ri-general-assembly",
     claim:
-      "Teaches Rhode Island's Legislature — the General Assembly — as Rhode Island's: a 75-member House of Representatives and a 38-member Senate on 2-year terms; how a bill becomes a Rhode Island law; the comparatively weak gubernatorial veto (overridden by only a three-fifths vote, with no line-item veto, a legacy of legislative supremacy); and that Rhode Island has NO statewide citizen initiative, so constitutional amendments are proposed by the General Assembly and ratified by the voters (as with the 2020 name change and the 2004 reform).",
+      "Teaches Rhode Island's Legislature, the General Assembly, as Rhode Island's: a 75-member House of Representatives and a 38-member Senate on 2-year terms; how a bill becomes a Rhode Island law; the comparatively weak gubernatorial veto (overridden by only a three-fifths vote, with no line-item veto, a legacy of legislative supremacy); and that Rhode Island has NO statewide citizen initiative, so constitutional amendments are proposed by the General Assembly and ratified by the voters (as with the 2020 name change and the 2004 reform).",
     courseSlugs: ["state-civics-ri"],
     lessons: [
       "Rhode Island Civics, Lesson 4 · The General Assembly and a Supreme Court that serves for life",
@@ -3519,7 +3519,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ri-life-tenure-court",
     claim:
-      "Teaches a genuine Rhode Island distinctive: its Supreme Court justices serve for LIFE (during good behavior) — the only state whose highest-court justices have life tenure, like federal judges — chosen by merit selection (a Judicial Nominating Commission sends names to the Governor, who appoints with legislative confirmation), keeping Rhode Island's judges entirely out of elections.",
+      "Teaches a genuine Rhode Island distinctive: its Supreme Court justices serve for LIFE (during good behavior), the only state whose highest-court justices have life tenure, like federal judges, chosen by merit selection (a Judicial Nominating Commission sends names to the Governor, who appoints with legislative confirmation), keeping Rhode Island's judges entirely out of elections.",
     courseSlugs: ["state-civics-ri"],
     lessons: [
       "Rhode Island Civics, Lesson 4 · The General Assembly and a Supreme Court that serves for life",
@@ -3528,7 +3528,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ri-get-involved",
     claim:
-      "Teaches getting involved where you live, Rhode Island edition — registering and voting (early in-person voting, mail ballots, online/automatic registration, and voter ID, with the current rules confirmed at the Secretary of State), showing up at your city or town council (or the town meeting / financial town meeting in smaller towns) and school committee, contacting your one Representative and one Senator at the State House in Providence, weighing in on the constitutional amendments Rhode Island voters ratify, and running for local office.",
+      "Teaches getting involved where you live, Rhode Island edition, registering and voting (early in-person voting, mail ballots, online/automatic registration, and voter ID, with the current rules confirmed at the Secretary of State), showing up at your city or town council (or the town meeting / financial town meeting in smaller towns) and school committee, contacting your one Representative and one Senator at the State House in Providence, weighing in on the constitutional amendments Rhode Island voters ratify, and running for local office.",
     courseSlugs: ["state-civics-ri"],
     lessons: [
       "Rhode Island Civics, Lesson 5 · How to take part where you live",
@@ -3549,7 +3549,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ak-constitution-boroughs",
     claim:
-      "Teaches Alaska's Constitution of 1959 — adopted as Alaska became the 49th state on January 3, 1959, and often praised as one of the best-designed modern state constitutions — and Alaska's most distinctive structural feature: it has NO counties but BOROUGHS (one of only two states, with Louisiana's parishes, that avoids the word “county”), divided into about 19 organized boroughs plus a single, gigantic Unorganized Borough covering roughly half the state, where there is no borough-level government and the STATE (with cities and census areas) provides the county-type services.",
+      "Teaches Alaska's Constitution of 1959, adopted as Alaska became the 49th state on January 3, 1959, and often praised as one of the best-designed modern state constitutions, and Alaska's most distinctive structural feature: it has NO counties but BOROUGHS (one of only two states, with Louisiana's parishes, that avoids the word “county”), divided into about 19 organized boroughs plus a single, gigantic Unorganized Borough covering roughly half the state, where there is no borough-level government and the STATE (with cities and census areas) provides the county-type services.",
     courseSlugs: ["state-civics-ak"],
     lessons: [
       "Alaska Civics, Lesson 1 · Alaska's 1959 Constitution, and boroughs instead of counties",
@@ -3558,7 +3558,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ak-executive-legislature",
     claim:
-      "Teaches Alaska's deliberately strong Governor and small, streamlined executive — Alaskans elect only two statewide officials, the Governor and Lieutenant Governor on a joint ticket, while the Attorney General and department heads are APPOINTED by the Governor (with legislative confirmation) — and Alaska's Legislature (a 40-member House on 2-year terms and a 20-member Senate on 4-year terms, meeting in Juneau, with no term limits and a habit of bipartisan coalitions), plus the Governor's strong veto, including a line-item veto, overridable only by two-thirds (three-quarters for appropriations), one of the highest override bars in the country.",
+      "Teaches Alaska's deliberately strong Governor and small, streamlined executive, Alaskans elect only two statewide officials, the Governor and Lieutenant Governor on a joint ticket, while the Attorney General and department heads are APPOINTED by the Governor (with legislative confirmation), and Alaska's Legislature (a 40-member House on 2-year terms and a 20-member Senate on 4-year terms, meeting in Juneau, with no term limits and a habit of bipartisan coalitions), plus the Governor's strong veto, including a line-item veto, overridable only by two-thirds (three-quarters for appropriations), one of the highest override bars in the country.",
     courseSlugs: ["state-civics-ak"],
     lessons: [
       "Alaska Civics, Lesson 2 · A strong Governor, a small executive, and the Legislature",
@@ -3567,7 +3567,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ak-top-four-rcv",
     claim:
-      "Teaches Alaska's distinctive election system — a “top-four” open primary paired with a ranked-choice general election, adopted by ballot measure in 2020 and first used in 2022 — in which all candidates of every party appear on one primary ballot and the top four advance, then voters rank the finalists in November and last-place candidates are eliminated until someone has a majority; distinguishes it from Washington's top-two, Louisiana's jungle primary, and Maine's plain ranked-choice, and flags it as new and contested (confirm at the Division of Elections).",
+      "Teaches Alaska's distinctive election system, a “top-four” open primary paired with a ranked-choice general election, adopted by ballot measure in 2020 and first used in 2022, in which all candidates of every party appear on one primary ballot and the top four advance, then voters rank the finalists in November and last-place candidates are eliminated until someone has a majority; distinguishes it from Washington's top-two, Louisiana's jungle primary, and Maine's plain ranked-choice, and flags it as new and contested (confirm at the Division of Elections).",
     courseSlugs: ["state-civics-ak"],
     lessons: [
       "Alaska Civics, Lesson 3 · Alaska's “top-four” primary and ranked-choice general election",
@@ -3585,7 +3585,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ak-courts",
     claim:
-      "Teaches how Alaska picks its judges — merit selection under the “Missouri Plan”: the nonpartisan Alaska Judicial Council screens applicants and sends the Governor a list of the most qualified, the Governor appoints from that list, and each judge later faces a nonpartisan yes/no retention election — with a 5-justice Alaska Supreme Court at the top, keeping judges out of partisan campaigns while preserving public accountability.",
+      "Teaches how Alaska picks its judges, merit selection under the “Missouri Plan”: the nonpartisan Alaska Judicial Council screens applicants and sends the Governor a list of the most qualified, the Governor appoints from that list, and each judge later faces a nonpartisan yes/no retention election, with a 5-justice Alaska Supreme Court at the top, keeping judges out of partisan campaigns while preserving public accountability.",
     courseSlugs: ["state-civics-ak"],
     lessons: [
       "Alaska Civics, Lesson 5 · Judges, direct democracy, and how to take part",
@@ -3594,7 +3594,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ak-direct-democracy-involved",
     claim:
-      "Teaches Alaska's strong tools of direct democracy — the citizen initiative (which can enact statutes but not directly amend the constitution; Alaska's own top-four/ranked-choice system came this way in 2020), the referendum, and the recall — and how to take part where you live, Alaska edition: registering and voting under the open top-four primary and ranked-choice general (with broad absentee/by-mail options given Alaska's geography), showing up at the borough assembly and city council (or, in the Unorganized Borough, the city and the state), contacting your one Representative and one Senator in Juneau, and running for local office.",
+      "Teaches Alaska's strong tools of direct democracy, the citizen initiative (which can enact statutes but not directly amend the constitution; Alaska's own top-four/ranked-choice system came this way in 2020), the referendum, and the recall, and how to take part where you live, Alaska edition: registering and voting under the open top-four primary and ranked-choice general (with broad absentee/by-mail options given Alaska's geography), showing up at the borough assembly and city council (or, in the Unorganized Borough, the city and the state), contacting your one Representative and one Senator in Juneau, and running for local office.",
     courseSlugs: ["state-civics-ak"],
     lessons: [
       "Alaska Civics, Lesson 5 · Judges, direct democracy, and how to take part",
@@ -3610,7 +3610,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.de-constitution-unique",
     claim:
-      "Teaches Delaware as “The First State” (first to ratify the U.S. Constitution, December 7, 1787), governed under its Constitution of 1897, and the ONLY state that can amend its constitution WITHOUT a public vote — the General Assembly alone amends it by a two-thirds vote of each chamber in two consecutive sessions (with an intervening legislative election) and no referendum, making the elected Legislature unusually powerful over the state's fundamental law.",
+      "Teaches Delaware as “The First State” (first to ratify the U.S. Constitution, December 7, 1787), governed under its Constitution of 1897, and the ONLY state that can amend its constitution WITHOUT a public vote, the General Assembly alone amends it by a two-thirds vote of each chamber in two consecutive sessions (with an intervening legislative election) and no referendum, making the elected Legislature unusually powerful over the state's fundamental law.",
     courseSlugs: ["state-civics-de"],
     lessons: [
       "Delaware Civics, Lesson 1 · The only state that amends its constitution without a public vote",
@@ -3619,42 +3619,42 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.de-chancery",
     claim:
-      "Teaches Delaware as the corporate capital of America — most of the Fortune 500 and a large share of publicly traded companies are incorporated in Delaware — and its distinctive Court of Chancery, a court of equity with NO juries whose Chancellor and Vice Chancellors are experts in corporate and business law, producing a deep body of precedent that resolves shareholder, merger, and governance disputes and gives a small state outsized influence over how American businesses are governed (and major incorporation-fee revenue).",
+      "Teaches Delaware as the corporate capital of America, most of the Fortune 500 and a large share of publicly traded companies are incorporated in Delaware, and its distinctive Court of Chancery, a court of equity with NO juries whose Chancellor and Vice Chancellors are experts in corporate and business law, producing a deep body of precedent that resolves shareholder, merger, and governance disputes and gives a small state outsized influence over how American businesses are governed (and major incorporation-fee revenue).",
     courseSlugs: ["state-civics-de"],
     lessons: ["Delaware Civics, Lesson 2 · The corporate capital of America and the Court of Chancery"],
   },
   {
     id: "civics.de-executive-legislature",
     claim:
-      "Teaches Delaware's plural executive (a Governor and separately elected Lieutenant Governor who may be of different parties, plus a separately elected Attorney General, Treasurer, Auditor, and Insurance Commissioner; the Governor serves a 4-year term limited to two) and its small, part-time bicameral General Assembly in Dover — a 41-member House on 2-year terms and a 21-member Senate on 4-year terms — with the Governor's veto overridden by a three-fifths vote of each chamber.",
+      "Teaches Delaware's plural executive (a Governor and separately elected Lieutenant Governor who may be of different parties, plus a separately elected Attorney General, Treasurer, Auditor, and Insurance Commissioner; the Governor serves a 4-year term limited to two) and its small, part-time bicameral General Assembly in Dover, a 41-member House on 2-year terms and a 21-member Senate on 4-year terms, with the Governor's veto overridden by a three-fifths vote of each chamber.",
     courseSlugs: ["state-civics-de"],
     lessons: ["Delaware Civics, Lesson 3 · The executive and the General Assembly"],
   },
   {
     id: "civics.de-courts",
     claim:
-      "Teaches Delaware's appointed judiciary — the Governor nominates and the Senate confirms judges for 12-year terms — with a rare constitutional “major-party balance” requirement that no more than a bare majority of judges on its major courts may belong to one political party and the rest must belong to the other major party, making the bench roughly bipartisan by constitution (a rule that has been litigated), topped by a 5-justice Delaware Supreme Court, and flags learners to confirm current details at courts.delaware.gov.",
+      "Teaches Delaware's appointed judiciary, the Governor nominates and the Senate confirms judges for 12-year terms, with a rare constitutional “major-party balance” requirement that no more than a bare majority of judges on its major courts may belong to one political party and the rest must belong to the other major party, making the bench roughly bipartisan by constitution (a rule that has been litigated), topped by a 5-justice Delaware Supreme Court, and flags learners to confirm current details at courts.delaware.gov.",
     courseSlugs: ["state-civics-de"],
     lessons: ["Delaware Civics, Lesson 4 · A politically balanced bench, and how a bill becomes law"],
   },
   {
     id: "civics.de-lawmaking",
     claim:
-      "Teaches how a bill becomes a Delaware law (introduction in the House or Senate, committee review, floor votes in both chambers, then the Governor's signature, veto with a three-fifths override, or passive enactment) and that Delaware has NO citizen initiative — Delawareans cannot petition a statute or amendment onto the ballot, and do not even vote on constitutional amendments — so lawmaking is channeled through the elected General Assembly more completely than almost anywhere else.",
+      "Teaches how a bill becomes a Delaware law (introduction in the House or Senate, committee review, floor votes in both chambers, then the Governor's signature, veto with a three-fifths override, or passive enactment) and that Delaware has NO citizen initiative, Delawareans cannot petition a statute or amendment onto the ballot, and do not even vote on constitutional amendments, so lawmaking is channeled through the elected General Assembly more completely than almost anywhere else.",
     courseSlugs: ["state-civics-de"],
     lessons: ["Delaware Civics, Lesson 4 · A politically balanced bench, and how a bill becomes law"],
   },
   {
     id: "civics.de-local-government",
     claim:
-      "Teaches Delaware local government as Delaware's: the fewest counties of any state — just three (New Castle, Kent, and Sussex), each governed by an elected county council or Levy Court handling land use, some services, and property assessment — plus cities and towns (such as Wilmington and Dover) providing municipal services and locally operated school districts, with much handled at the state level because Delaware is small and its state government strong.",
+      "Teaches Delaware local government as Delaware's: the fewest counties of any state, just three (New Castle, Kent, and Sussex), each governed by an elected county council or Levy Court handling land use, some services, and property assessment, plus cities and towns (such as Wilmington and Dover) providing municipal services and locally operated school districts, with much handled at the state level because Delaware is small and its state government strong.",
     courseSlugs: ["state-civics-de"],
     lessons: ["Delaware Civics, Lesson 5 · Local government (just three counties) and how to take part"],
   },
   {
     id: "civics.de-get-involved",
     claim:
-      "Teaches getting involved where you live, Delaware edition — registering and voting (with a standing flag to confirm current early-voting and same-day-registration rules, which have been litigated under Delaware's constitution, at elections.delaware.gov), attending county council/Levy Court, city or town council, and school-board meetings, contacting your one Representative and one Senator in Dover (whose power to amend the constitution alone gives such contact real weight), and running for local office.",
+      "Teaches getting involved where you live, Delaware edition, registering and voting (with a standing flag to confirm current early-voting and same-day-registration rules, which have been litigated under Delaware's constitution, at elections.delaware.gov), attending county council/Levy Court, city or town council, and school-board meetings, contacting your one Representative and one Senator in Dover (whose power to amend the constitution alone gives such contact real weight), and running for local office.",
     courseSlugs: ["state-civics-de"],
     lessons: ["Delaware Civics, Lesson 5 · Local government (just three counties) and how to take part"],
   },
@@ -3669,28 +3669,28 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.mt-constitution",
     claim:
-      "Teaches Montana's Constitution of 1972 — rewritten by an elected citizens' constitutional convention (not sitting politicians) from the 1889 constitution — and its distinctive guarantees: the right to a clean and healthful environment (one of the strongest environmental-rights clauses in any U.S. constitution, enforced in real cases), unusually strong individual privacy rights that go beyond the federal Constitution, and an express right to know and right of participation in government.",
+      "Teaches Montana's Constitution of 1972, rewritten by an elected citizens' constitutional convention (not sitting politicians) from the 1889 constitution, and its distinctive guarantees: the right to a clean and healthful environment (one of the strongest environmental-rights clauses in any U.S. constitution, enforced in real cases), unusually strong individual privacy rights that go beyond the federal Constitution, and an express right to know and right of participation in government.",
     courseSlugs: ["state-civics-mt"],
     lessons: ["Montana Civics, Lesson 1 · Montana's remarkable 1972 constitution"],
   },
   {
     id: "civics.mt-legislature",
     claim:
-      "Teaches Montana's citizen Legislature — 100 representatives on 2-year terms and 50 senators on 4-year terms — that meets only every other year, in odd-numbered years, for 90 legislative days, so lawmakers live and work in their communities most of the time; with voter-imposed term limits (generally 8 years in a 16-year period for an office) and a two-thirds veto override that can even be conducted by a mail poll of legislators after the session ends.",
+      "Teaches Montana's citizen Legislature, 100 representatives on 2-year terms and 50 senators on 4-year terms, that meets only every other year, in odd-numbered years, for 90 legislative days, so lawmakers live and work in their communities most of the time; with voter-imposed term limits (generally 8 years in a 16-year period for an office) and a two-thirds veto override that can even be conducted by a mail poll of legislators after the session ends.",
     courseSlugs: ["state-civics-mt"],
     lessons: ["Montana Civics, Lesson 2 · A citizen Legislature that meets 90 days every other year"],
   },
   {
     id: "civics.mt-executive-courts",
     claim:
-      "Teaches Montana's plural executive — a Governor and Lieutenant Governor on a joint ticket, plus a separately elected Secretary of State, Attorney General, State Auditor (who also serves as Commissioner of Securities and Insurance), and Superintendent of Public Instruction, all on 4-year terms with term limits — and its nonpartisan elected judiciary: a seven-justice Supreme Court elected to 8-year terms and district judges to 6-year terms, with the Governor filling mid-term vacancies from a Judicial Nomination Commission list (Senate-confirmed) before the appointee must stand for election.",
+      "Teaches Montana's plural executive, a Governor and Lieutenant Governor on a joint ticket, plus a separately elected Secretary of State, Attorney General, State Auditor (who also serves as Commissioner of Securities and Insurance), and Superintendent of Public Instruction, all on 4-year terms with term limits, and its nonpartisan elected judiciary: a seven-justice Supreme Court elected to 8-year terms and district judges to 6-year terms, with the Governor filling mid-term vacancies from a Judicial Nomination Commission list (Senate-confirmed) before the appointee must stand for election.",
     courseSlugs: ["state-civics-mt"],
     lessons: ["Montana Civics, Lesson 3 · The executive and how Montana picks its judges"],
   },
   {
     id: "civics.mt-direct-democracy",
     claim:
-      "Teaches Montana's strong direct democracy — the initiative (citizens gather signatures to put a statute OR a constitutional amendment on the ballot, as Montanans did for term limits) and the referendum to reject a law the Legislature passed — and how a bill becomes a Montana law in the biennial 90-day session (public committee hearings under the right to participate, floor votes, and the Governor's signature, a veto with a two-thirds override, or an amendatory veto returning a bill with suggested changes).",
+      "Teaches Montana's strong direct democracy, the initiative (citizens gather signatures to put a statute OR a constitutional amendment on the ballot, as Montanans did for term limits) and the referendum to reject a law the Legislature passed, and how a bill becomes a Montana law in the biennial 90-day session (public committee hearings under the right to participate, floor votes, and the Governor's signature, a veto with a two-thirds override, or an amendatory veto returning a bill with suggested changes).",
     courseSlugs: ["state-civics-mt"],
     lessons: ["Montana Civics, Lesson 4 · Direct democracy and how a bill becomes law"],
   },
@@ -3704,7 +3704,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.mt-get-involved",
     claim:
-      "Teaches getting involved where you live, Montana edition — registering and voting (absentee/mail voting, useful given Montana's distances, and ID rules to confirm at sosmt.gov, since they have changed and been litigated), signing or circulating an initiative or referendum, exercising the constitutional right to know to follow government documents and meetings, showing up at county commissions, city and town councils, and school boards, contacting your legislators in Helena, and running for local office.",
+      "Teaches getting involved where you live, Montana edition, registering and voting (absentee/mail voting, useful given Montana's distances, and ID rules to confirm at sosmt.gov, since they have changed and been litigated), signing or circulating an initiative or referendum, exercising the constitutional right to know to follow government documents and meetings, showing up at county commissions, city and town councils, and school boards, contacting your legislators in Helena, and running for local office.",
     courseSlugs: ["state-civics-mt"],
     lessons: ["Montana Civics, Lesson 5 · Local government and how to take part"],
   },
@@ -3723,21 +3723,21 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nd-no-registration",
     claim:
-      "Teaches North Dakota's singular election feature: it is the ONLY state in the nation with no voter registration (abolished 1951), so eligible residents just show up with acceptable ID proving identity and residence, and the ID rules — which have been litigated and adjusted — do the work of confirming eligibility (verify current rules at sos.nd.gov).",
+      "Teaches North Dakota's singular election feature: it is the ONLY state in the nation with no voter registration (abolished 1951), so eligible residents just show up with acceptable ID proving identity and residence, and the ID rules, which have been litigated and adjusted, do the work of confirming eligibility (verify current rules at sos.nd.gov).",
     courseSlugs: ["state-civics-nd"],
     lessons: ["North Dakota Civics, Lesson 1 · The only state with no voter registration"],
   },
   {
     id: "civics.nd-bank-mill-npl",
     claim:
-      "Teaches North Dakota's second national 'only': the state-owned Bank of North Dakota (the only state-owned bank in the U.S.) and the state-owned North Dakota Mill and Elevator, both created in 1919 by the farmer-populist Nonpartisan League — a distinctive answer to what government is for, holding that certain economic functions should be run by the public through elected accountability.",
+      "Teaches North Dakota's second national 'only': the state-owned Bank of North Dakota (the only state-owned bank in the U.S.) and the state-owned North Dakota Mill and Elevator, both created in 1919 by the farmer-populist Nonpartisan League, a distinctive answer to what government is for, holding that certain economic functions should be run by the public through elected accountability.",
     courseSlugs: ["state-civics-nd"],
     lessons: ["North Dakota Civics, Lesson 2 · The only state-owned bank (and a state-owned mill)"],
   },
   {
     id: "civics.nd-direct-democracy",
     claim:
-      "Teaches North Dakota's strong direct democracy — a Nonpartisan League legacy: the initiative (citizens put a statute OR a constitutional amendment on the ballot, at comparatively low signature thresholds so measures reach the ballot regularly), the referendum (voters reject a law the Legislature passed), and recall (North Dakota recalled its governor in 1921) — alongside one of the country's larger plural executives.",
+      "Teaches North Dakota's strong direct democracy, a Nonpartisan League legacy: the initiative (citizens put a statute OR a constitutional amendment on the ballot, at comparatively low signature thresholds so measures reach the ballot regularly), the referendum (voters reject a law the Legislature passed), and recall (North Dakota recalled its governor in 1921), alongside one of the country's larger plural executives.",
     courseSlugs: ["state-civics-nd"],
     lessons: [
       "North Dakota Civics, Lesson 3 · Strong direct democracy and a large plural executive",
@@ -3763,7 +3763,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.nd-get-involved",
     claim:
-      "Teaches getting involved where you live, North Dakota edition — voting with no registration (just show up with valid ID; early and absentee options), using North Dakota's low-threshold initiative and referendum, showing up at county commissions, city councils, township meetings, and school boards, contacting legislators in Bismarck (noting the Legislature meets mainly in odd years), and running for local office.",
+      "Teaches getting involved where you live, North Dakota edition, voting with no registration (just show up with valid ID; early and absentee options), using North Dakota's low-threshold initiative and referendum, showing up at county commissions, city councils, township meetings, and school boards, contacting legislators in Bismarck (noting the Legislature meets mainly in odd years), and running for local office.",
     courseSlugs: ["state-civics-nd"],
     lessons: ["North Dakota Civics, Lesson 5 · Local government and how to take part"],
   },
@@ -3782,49 +3782,49 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.vt-republic-constitution",
     claim:
-      "Teaches Vermont's singular origin — an INDEPENDENT REPUBLIC (the Vermont Republic, 1777-1791) before it joined the Union as the 14th state on March 4, 1791, the first state admitted after the original 13 — and that its 1777 constitution was the FIRST in what became the United States to prohibit adult slavery and did not limit voting to property owners; Vermont governs today under its Constitution of 1793.",
+      "Teaches Vermont's singular origin, an INDEPENDENT REPUBLIC (the Vermont Republic, 1777-1791) before it joined the Union as the 14th state on March 4, 1791, the first state admitted after the original 13, and that its 1777 constitution was the FIRST in what became the United States to prohibit adult slavery and did not limit voting to property owners; Vermont governs today under its Constitution of 1793.",
     courseSlugs: ["state-civics-vt"],
     lessons: ["Vermont Civics, Lesson 1 · The independent republic that banned adult slavery first"],
   },
   {
     id: "civics.vt-general-assembly",
     claim:
-      "Teaches Vermont's Legislature — the General Assembly — as Vermont's: a 150-member House of Representatives and a 30-member Senate, BOTH serving 2-year terms with NO term limits, a part-time citizen legislature that meets in Montpelier (the smallest state capital in the nation) and traditionally pauses for Town Meeting Day, so legislators live and work in their communities the rest of the year.",
+      "Teaches Vermont's Legislature, the General Assembly, as Vermont's: a 150-member House of Representatives and a 30-member Senate, BOTH serving 2-year terms with NO term limits, a part-time citizen legislature that meets in Montpelier (the smallest state capital in the nation) and traditionally pauses for Town Meeting Day, so legislators live and work in their communities the rest of the year.",
     courseSlugs: ["state-civics-vt"],
     lessons: ["Vermont Civics, Lesson 2 · A part-time citizen Legislature in the smallest capital"],
   },
   {
     id: "civics.vt-executive",
     claim:
-      "Teaches Vermont's plural executive and its unusually short terms: the Governor serves a 2-YEAR term (Vermont and New Hampshire are the only two states that still elect a governor every two years) with NO term limits, and voters separately elect the Lieutenant Governor (who may be of a different party than the Governor), the Secretary of State, the Treasurer, the Auditor of Accounts, and the Attorney General, each to 2-year terms; plus a rare constitutional provision — if no candidate for Governor, Lieutenant Governor, or Treasurer wins a MAJORITY of the popular vote, the General Assembly chooses the winner by joint ballot.",
+      "Teaches Vermont's plural executive and its unusually short terms: the Governor serves a 2-YEAR term (Vermont and New Hampshire are the only two states that still elect a governor every two years) with NO term limits, and voters separately elect the Lieutenant Governor (who may be of a different party than the Governor), the Secretary of State, the Treasurer, the Auditor of Accounts, and the Attorney General, each to 2-year terms; plus a rare constitutional provision, if no candidate for Governor, Lieutenant Governor, or Treasurer wins a MAJORITY of the popular vote, the General Assembly chooses the winner by joint ballot.",
     courseSlugs: ["state-civics-vt"],
     lessons: ["Vermont Civics, Lesson 3 · Two-year terms, a plural executive, and the majority rule"],
   },
   {
     id: "civics.vt-courts",
     claim:
-      "Teaches how Vermont picks its judges — appointment with a distinctive LEGISLATIVE retention: the Judicial Nominating Board screens candidates, the Governor appoints, and the Senate confirms, and then, at the end of each 6-year term, the GENERAL ASSEMBLY (not the voters) decides by joint ballot whether to retain each judge — with a 5-justice Vermont Supreme Court at the top, keeping Vermont's judges out of election campaigns.",
+      "Teaches how Vermont picks its judges, appointment with a distinctive LEGISLATIVE retention: the Judicial Nominating Board screens candidates, the Governor appoints, and the Senate confirms, and then, at the end of each 6-year term, the GENERAL ASSEMBLY (not the voters) decides by joint ballot whether to retain each judge, with a 5-justice Vermont Supreme Court at the top, keeping Vermont's judges out of election campaigns.",
     courseSlugs: ["state-civics-vt"],
     lessons: ["Vermont Civics, Lesson 4 · Appointed judges the Legislature votes to keep"],
   },
   {
     id: "civics.vt-lawmaking-no-initiative",
     claim:
-      "Teaches how a bill becomes a Vermont law in the General Assembly (introduction, committee, floor votes in both chambers, then the Governor's signature, a veto overridable by two-thirds of each chamber, or passage without signature) and that Vermont has NO statewide citizen initiative or referendum — Vermonters cannot petition a law or a constitutional amendment onto the ballot, so statewide lawmaking runs entirely through the elected General Assembly, while direct democracy lives at the LOCAL level in town meeting.",
+      "Teaches how a bill becomes a Vermont law in the General Assembly (introduction, committee, floor votes in both chambers, then the Governor's signature, a veto overridable by two-thirds of each chamber, or passage without signature) and that Vermont has NO statewide citizen initiative or referendum, Vermonters cannot petition a law or a constitutional amendment onto the ballot, so statewide lawmaking runs entirely through the elected General Assembly, while direct democracy lives at the LOCAL level in town meeting.",
     courseSlugs: ["state-civics-vt"],
     lessons: ["Vermont Civics, Lesson 5 · How a bill becomes law, and why there is no ballot initiative"],
   },
   {
     id: "civics.vt-town-meeting",
     claim:
-      "Teaches Vermont local government as Vermont's, built around TOWN MEETING: on Town Meeting Day (the first Tuesday in March) residents gather to debate and vote directly on the town budget, elect town officers, and decide local questions — one of the purest surviving forms of direct democracy in the country — with the TOWN as Vermont's primary unit of local government and its 14 counties reduced to a very limited role (mainly the courts, the sheriff, and the state's attorney, with no county-wide legislative body).",
+      "Teaches Vermont local government as Vermont's, built around TOWN MEETING: on Town Meeting Day (the first Tuesday in March) residents gather to debate and vote directly on the town budget, elect town officers, and decide local questions, one of the purest surviving forms of direct democracy in the country, with the TOWN as Vermont's primary unit of local government and its 14 counties reduced to a very limited role (mainly the courts, the sheriff, and the state's attorney, with no county-wide legislative body).",
     courseSlugs: ["state-civics-vt"],
     lessons: ["Vermont Civics, Lesson 6 · Town Meeting Day and the town as the unit of government"],
   },
   {
     id: "civics.vt-get-involved",
     claim:
-      "Teaches getting involved where you live, Vermont edition — registering and voting (Vermont offers same-day, Election-Day registration and, since 2021, mails a ballot to every active registered voter for general elections) and taking part in Town Meeting Day, showing up at the selectboard and the school board, contacting your representatives in Montpelier (with 150 House members, among the most accessible legislators in the country), and running for local office, including Vermont's elected Justices of the Peace.",
+      "Teaches getting involved where you live, Vermont edition, registering and voting (Vermont offers same-day, Election-Day registration and, since 2021, mails a ballot to every active registered voter for general elections) and taking part in Town Meeting Day, showing up at the selectboard and the school board, contacting your representatives in Montpelier (with 150 House members, among the most accessible legislators in the country), and running for local office, including Vermont's elected Justices of the Peace.",
     courseSlugs: ["state-civics-vt"],
     lessons: ["Vermont Civics, Lesson 6 · Town Meeting Day and the town as the unit of government"],
   },
@@ -3882,7 +3882,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.sd-tribal-governments",
     claim:
-      "Teaches the constitutions, structure, and function of the nine federally recognized tribal governments within South Dakota, and the historical and present relationship among federal, state, local, and tribal governments in the state — a distinctive South Dakota civics topic the 2023 standards single out.",
+      "Teaches the constitutions, structure, and function of the nine federally recognized tribal governments within South Dakota, and the historical and present relationship among federal, state, local, and tribal governments in the state, a distinctive South Dakota civics topic the 2023 standards single out.",
     courseSlugs: ["state-civics-sd"],
     lessons: [
       "South Dakota Civics, Lesson 5 · Local and tribal government in South Dakota: 66 counties, townships, and the nine tribes",
@@ -3891,7 +3891,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.sd-elections",
     claim:
-      "Teaches South Dakota's elections as South Dakota's: the first-in-the-nation citizen initiative and referendum, no-excuse absentee voting, and a photo-ID request at the polls with a signed-affidavit fallback — with the standing advice to confirm current rules and deadlines with the South Dakota Secretary of State, since election law changes.",
+      "Teaches South Dakota's elections as South Dakota's: the first-in-the-nation citizen initiative and referendum, no-excuse absentee voting, and a photo-ID request at the polls with a signed-affidavit fallback, with the standing advice to confirm current rules and deadlines with the South Dakota Secretary of State, since election law changes.",
     courseSlugs: ["state-civics-sd"],
     lessons: [
       "South Dakota Civics, Lesson 6 · Elections in South Dakota: the initiative and referendum, absentee voting, and voter ID",
@@ -3900,7 +3900,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.sd-get-involved",
     claim:
-      "Teaches getting involved where you live, South Dakota edition — registering and voting, signing or circulating an initiative or referendum (the tool South Dakotans invented), showing up at the county commission, city or town council, and school board, contacting your legislators in Pierre, and running for local office.",
+      "Teaches getting involved where you live, South Dakota edition, registering and voting, signing or circulating an initiative or referendum (the tool South Dakotans invented), showing up at the county commission, city or town council, and school board, contacting your legislators in Pierre, and running for local office.",
     courseSlugs: ["state-civics-sd"],
     lessons: ["South Dakota Civics, Lesson 8 · Get involved where you live in South Dakota"],
   },
@@ -3915,7 +3915,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wy-equality-state",
     claim:
-      "Teaches Wyoming as 'The Equality State' — the first place in America to grant women the vote (as a territory in 1869), the nation's first woman governor (Nellie Tayloe Ross, 1925), and the 1889 Constitution's equal-political-rights guarantee that Wyoming refused to drop to gain statehood in 1890.",
+      "Teaches Wyoming as 'The Equality State', the first place in America to grant women the vote (as a territory in 1869), the nation's first woman governor (Nellie Tayloe Ross, 1925), and the 1889 Constitution's equal-political-rights guarantee that Wyoming refused to drop to gain statehood in 1890.",
     courseSlugs: ["state-civics-wy"],
     lessons: [
       "Wyoming Civics, Lesson 1 · 'The Equality State': first to grant women the vote",
@@ -3933,7 +3933,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wy-legislature-tax",
     claim:
-      "Teaches Wyoming's part-time citizen Legislature — a 62-member House on 2-year terms and a 31-member Senate on 4-year terms, meeting in short general (odd-year) and budget (even-year) sessions — and its lack of a state personal income tax, funded heavily through mineral and energy revenue.",
+      "Teaches Wyoming's part-time citizen Legislature, a 62-member House on 2-year terms and a 31-member Senate on 4-year terms, meeting in short general (odd-year) and budget (even-year) sessions, and its lack of a state personal income tax, funded heavily through mineral and energy revenue.",
     courseSlugs: ["state-civics-wy"],
     lessons: [
       "Wyoming Civics, Lesson 3 · The part-time Legislature and how Wyoming picks its judges",
@@ -3942,7 +3942,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wy-courts",
     claim:
-      "Teaches Wyoming's merit-selection judiciary — the Missouri Plan: a judicial nominating commission sends the Governor a list, the Governor appoints, and the judge later faces a nonpartisan yes/no retention election — and the five-justice Wyoming Supreme Court.",
+      "Teaches Wyoming's merit-selection judiciary, the Missouri Plan: a judicial nominating commission sends the Governor a list, the Governor appoints, and the judge later faces a nonpartisan yes/no retention election, and the five-justice Wyoming Supreme Court.",
     courseSlugs: ["state-civics-wy"],
     lessons: [
       "Wyoming Civics, Lesson 3 · The part-time Legislature and how Wyoming picks its judges",
@@ -3951,7 +3951,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wy-bill-process",
     claim:
-      "Teaches how a bill becomes a Wyoming law across the biennial general and budget sessions, and the Governor's veto — overridden by a two-thirds vote of each chamber — and line-item veto on appropriations.",
+      "Teaches how a bill becomes a Wyoming law across the biennial general and budget sessions, and the Governor's veto, overridden by a two-thirds vote of each chamber, and line-item veto on appropriations.",
     courseSlugs: ["state-civics-wy"],
     lessons: [
       "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
@@ -3978,7 +3978,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.wy-get-involved",
     claim:
-      "Teaches getting involved where you live, Wyoming edition — registering and voting (Wyoming offers Election-Day registration and requires ID; rules are administered by county clerks and change, so verify at sos.wyo.gov), showing up at accessible county commissions, city and town councils, and school boards, contacting your one Representative and one Senator in Cheyenne, and running for local office.",
+      "Teaches getting involved where you live, Wyoming edition, registering and voting (Wyoming offers Election-Day registration and requires ID; rules are administered by county clerks and change, so verify at sos.wyo.gov), showing up at accessible county commissions, city and town councils, and school boards, contacting your one Representative and one Senator in Cheyenne, and running for local office.",
     courseSlugs: ["state-civics-wy"],
     lessons: [
       "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",

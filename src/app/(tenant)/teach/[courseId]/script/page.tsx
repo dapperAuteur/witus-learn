@@ -14,12 +14,14 @@ export const metadata: Metadata = { title: "Recording script" };
 // The course's narration script for recording the audio/video version. Owner/instructor-only
 // (private-aware). Generated from the lesson bodies at request time — always up to date.
 export default async function RecordingScriptPage({ params }: { params: Promise<{ courseId: string }> }) {
-  const { courseId } = await params;
+  // Slug or uuid — see getCourseByIdOrSlug.
+  const { courseId: courseParam } = await params;
   const session = await getSession();
   const sdb = await getScopedDb();
-  const course = await sdb.getCourseById(courseId);
+  const course = await sdb.getCourseByIdOrSlug(courseParam);
   if (!course) notFound();
   if (!(await canAccessCourse(session, sdb.tenantId, course))) notFound();
+  const courseId = course.id;
 
   const lessons = await listLessons(courseId);
   const script = courseToRecordingScript(
@@ -29,10 +31,10 @@ export default async function RecordingScriptPage({ params }: { params: Promise<
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href={`/teach/${course.id}`} className="text-sm underline print:hidden" style={{ color: "var(--accent)" }}>
+      <Link href={`/teach/${course.slug ?? course.id}`} className="text-sm underline print:hidden" style={{ color: "var(--accent)" }}>
         ← Back to manage
       </Link>
-      <h1 className="mt-4 text-2xl font-bold">Recording script — {course.title}</h1>
+      <h1 className="mt-4 text-2xl font-bold">Recording script, {course.title}</h1>
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400 print:hidden">
         Read this aloud to record the course. Citations and formatting are stripped; “[PAUSE]” marks a
         break between lessons. It regenerates from the current lessons each time you open it, so edits

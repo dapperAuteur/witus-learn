@@ -54,7 +54,7 @@ export default async function CivicsStatesPage() {
         </div>
       ) : (
         <p className="mt-6 text-sm text-neutral-500">
-          Per-state courses are coming soon — the national civics courses are available in the catalog now.
+          Per-state courses are coming soon, the national civics courses are available in the catalog now.
         </p>
       )}
     </main>

@@ -1,4 +1,4 @@
-import { and, asc, desc, eq, ilike, or, type SQL } from "drizzle-orm";
+import { and, asc, desc, eq, ilike, inArray, or, type SQL } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseCategories,
@@ -56,10 +56,55 @@ export async function getCourseById(tenantId: string, id: string): Promise<Cours
   return rows[0] ?? null;
 }
 
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/**
+ * Resolve a course from a URL segment that may be EITHER its uuid or its slug, so the authoring
+ * URLs can read `/teach/faa-part-107` instead of `/teach/<uuid>` while every existing uuid link
+ * and bookmark keeps working.
+ *
+ * Tenant-scoped like every other by-id/by-slug read: a foreign course returns null and the caller
+ * 404s (never redirects — a redirect would leak that the course exists on another brand).
+ *
+ * `courses.slug` is unique per (tenant, instructor), NOT per tenant, so two instructors in one
+ * brand may share a slug. When a slug is ambiguous we return null rather than guess: the uuid URL
+ * still works and is unambiguous. Callers must use the RESOLVED `course.id` for downstream
+ * queries, never the raw URL segment.
+ */
+export async function getCourseByIdOrSlug(tenantId: string, idOrSlug: string): Promise<Course | null> {
+  if (UUID_RE.test(idOrSlug)) return getCourseById(tenantId, idOrSlug);
+  const rows = await db
+    .select()
+    .from(courses)
+    .where(and(eq(courses.slug, idOrSlug), eq(courses.tenantId, tenantId)))
+    .limit(2); // 2 so an ambiguous slug is detectable rather than silently taking the first
+  return rows.length === 1 ? rows[0] : null;
+}
+
 export async function listCategories(tenantId: string): Promise<CourseCategory[]> {
   return db
     .select()
     .from(courseCategories)
     .where(eq(courseCategories.tenantId, tenantId))
     .orderBy(asc(courseCategories.sortOrder), asc(courseCategories.name));
+}
+
+/**
+ * Current `content_version` for the given course ids, tenant-scoped.
+ *
+ * Powers the "Update available" badge on /downloads: the learner's manifest holds the version it
+ * downloaded, this returns the version that is live now. Ids belonging to another brand are simply
+ * ABSENT from the result rather than erroring, which is both the tenant-isolation rule (never
+ * confirm a foreign course exists) and the behaviour the UI wants (unknown, so say nothing).
+ */
+export async function getContentVersions(
+  tenantId: string,
+  ids: string[],
+): Promise<Record<string, number>> {
+  if (ids.length === 0) return {};
+  const rows = await db
+    .select({ id: courses.id, contentVersion: courses.contentVersion })
+    .from(courses)
+    .where(and(eq(courses.tenantId, tenantId), inArray(courses.id, ids)));
+  return Object.fromEntries(rows.map((r) => [r.id, r.contentVersion]));
 }

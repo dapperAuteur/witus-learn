@@ -42,7 +42,7 @@ export default async function LoginPage() {
             {brandName(tenant)}
           </p>
           <h1 className="mt-1 text-2xl font-bold">Sign in</h1>
-          <p className="mt-1 text-sm text-neutral-500">No password — we email you a one-time link.</p>
+          <p className="mt-1 text-sm text-neutral-500">No password, we email you a one-time link.</p>
           <div className="mt-6">
             <MagicLinkForm />
           </div>

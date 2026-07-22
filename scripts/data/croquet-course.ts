@@ -47,7 +47,7 @@ const WCF_REPORT_2024 = "World Croquet Federation. (2025). *Management Committee
 export const CROQUET_COURSE: AuthoredCourse = {
   title: "Croquet: How to Play, How to Think, and How to Build in the Sport",
   description:
-    "Croquet is not a garden pastime with a mallet. It is a tactical game — closer to billiards or chess than to badminton — with one of the lowest barriers to entry and the most reachable competitive ladder in world sport. This course teaches you to actually play and think: the three codified games that share the name (Golf Croquet and Association Croquet under the World Croquet Federation; American Six-Wicket under the USCA), how a turn works in each, break-building, wiring, deadness, and the tactics that decide games. Then it does the part a normal croquet course skips: the history you can actually verify (and the beloved stories that fall apart when you check them), how leagues and handicaps work, and the genuine openings for an amateur or an entrepreneur — starting a club, coaching, courts and turf, equipment, tournaments, and a world championship whose entire field is under 100 players. Every rule cited comes from the governing body's own current rulebook. Where a rule number does not exist, this course says so instead of inventing one.",
+    "Croquet is not a garden pastime with a mallet. It is a tactical game, closer to billiards or chess than to badminton, with one of the lowest barriers to entry and the most reachable competitive ladder in world sport. This course teaches you to actually play and think: the three codified games that share the name (Golf Croquet and Association Croquet under the World Croquet Federation; American Six-Wicket under the USCA), how a turn works in each, break-building, wiring, deadness, and the tactics that decide games. Then it does the part a normal croquet course skips: the history you can actually verify (and the beloved stories that fall apart when you check them), how leagues and handicaps work, and the genuine openings for an amateur or an entrepreneur, starting a club, coaching, courts and turf, equipment, tournaments, and a world championship whose entire field is under 100 players. Every rule cited comes from the governing body's own current rulebook. Where a rule number does not exist, this course says so instead of inventing one.",
   lessons: [
     // ══════════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 — The game and its codes
@@ -58,9 +58,9 @@ export const CROQUET_COURSE: AuthoredCourse = {
       section: "1 · The game and its codes",
       body: `Most people picture croquet as something that happens at a garden party: a mallet, a few hoops stuck in a lawn, someone's uncle cheating. That version exists. It is not the sport.
 
-The sport is a **tactical game played on a flat, closely mown lawn**, and its closest relatives are billiards, snooker and chess — not badminton. You are not really trying to hit a ball through a hoop. You are trying to leave the four balls on the court in a position where *your* next turn is easy and your opponent's next turn is impossible.
+The sport is a **tactical game played on a flat, closely mown lawn**, and its closest relatives are billiards, snooker and chess, not badminton. You are not really trying to hit a ball through a hoop. You are trying to leave the four balls on the court in a position where *your* next turn is easy and your opponent's next turn is impossible.
 
-Here is the single fact that tells you what kind of game this is. In **Association Croquet**, one of the two games run by the World Croquet Federation, hitting another ball earns you extra strokes. Chain those extra strokes together and you get a **break** — the same idea as a break in snooker. The World Croquet Federation describes it on its own Association Croquet page: the game "is based on the concept of a 'break' (as in snooker, billiards and pool) in which the right may be earned to play a succession of extra strokes," and "it is possible to play a break of up to **91 strokes** in which the striker's ball will have been made to pass through twelve hoops and then strike the centre peg" (World Croquet Federation, n.d.).
+Here is the single fact that tells you what kind of game this is. In **Association Croquet**, one of the two games run by the World Croquet Federation, hitting another ball earns you extra strokes. Chain those extra strokes together and you get a **break**, the same idea as a break in snooker. The World Croquet Federation describes it on its own Association Croquet page: the game "is based on the concept of a 'break' (as in snooker, billiards and pool) in which the right may be earned to play a succession of extra strokes," and "it is possible to play a break of up to **91 strokes** in which the striker's ball will have been made to pass through twelve hoops and then strike the centre peg" (World Croquet Federation, n.d.).
 
 Ninety-one strokes. One turn. Your opponent stands and watches the whole thing. That is the game.
 
@@ -72,7 +72,7 @@ Ninety-one strokes. One turn. Your opponent stands and watches the whole thing. 
 
 **One warning before you go further, and it is the most important sentence in this course:** the word "croquet" names *several different games*, with different rulebooks, different courts, and different turn structures. A course that blurs them teaches you to be wrong confidently. The next lesson sorts them out.
 
-:::reveal What kind of game is competitive croquet actually closest to, and what is the tactical unit that makes it feel that way? ||| It is closest to billiards, snooker and pool. The tactical unit is the "break" — a chain of earned extra strokes in one turn. The World Croquet Federation's own Association Croquet page notes a break can run to 91 strokes, taking a ball through all twelve hoops and the peg in a single turn.
+:::reveal What kind of game is competitive croquet actually closest to, and what is the tactical unit that makes it feel that way? ||| It is closest to billiards, snooker and pool. The tactical unit is the "break", a chain of earned extra strokes in one turn. The World Croquet Federation's own Association Croquet page notes a break can run to 91 strokes, taking a ball through all twelve hoops and the peg in a single turn.
 
 ## Sources
 - ${WCF_AC_PAGE}`,
@@ -94,9 +94,9 @@ There is no such thing as "the rules of croquet." There are **several separate, 
 
 A few things fall out of that table immediately:
 
-- **The WCF publishes rulebooks for exactly two codes** — Association Croquet and Golf Croquet. That is worth being precise about, because plenty of other mallet games exist (Ricochet, gateball, and others) and are *not* WCF codes. The WCF's own links page says so bluntly of the variants it lists: "**Note: these games are not WCF recognised versions of Croquet**" (World Croquet Federation, n.d.-b).
-- **The USCA is not a WCF rival — it is a WCF member.** It runs the American code *and* national championships in the WCF's codes. In fact the USCA crowns national champions under **four** rule sets: American, Association, Golf Croquet, and Nine-Wicket (United States Croquet Association, n.d.).
-- **Garden croquet is a real thing and a fine thing.** It is just not a code. If someone hands you a nine-hoop set from a hardware store and says "the rules are on the box," that is not the sport this course teaches — and it is not "wrong," it is a different activity.
+- **The WCF publishes rulebooks for exactly two codes**, Association Croquet and Golf Croquet. That is worth being precise about, because plenty of other mallet games exist (Ricochet, gateball, and others) and are *not* WCF codes. The WCF's own links page says so bluntly of the variants it lists: "**Note: these games are not WCF recognised versions of Croquet**" (World Croquet Federation, n.d.-b).
+- **The USCA is not a WCF rival, it is a WCF member.** It runs the American code *and* national championships in the WCF's codes. In fact the USCA crowns national champions under **four** rule sets: American, Association, Golf Croquet, and Nine-Wicket (United States Croquet Association, n.d.).
+- **Garden croquet is a real thing and a fine thing.** It is just not a code. If someone hands you a nine-hoop set from a hardware store and says "the rules are on the box," that is not the sport this course teaches, and it is not "wrong," it is a different activity.
 
 **The rule this course enforces on itself, and that you should enforce on any croquet source you read:**
 
@@ -116,7 +116,7 @@ From here on, every lesson tells you in its first lines which code it teaches. I
         {
           prompt: "What is a 'break', and which code is it the centre of?",
           answer:
-            "A chain of earned extra strokes played in a single turn — the same idea as a break in snooker. It is the centre of Association Croquet, where a break can run to 91 strokes.",
+            "A chain of earned extra strokes played in a single turn, the same idea as a break in snooker. It is the centre of Association Croquet, where a break can run to 91 strokes.",
         },
         {
           prompt: "Why is the sentence 'in croquet, hitting another ball earns you extra strokes' a bad sentence?",
@@ -127,7 +127,7 @@ From here on, every lesson tells you in its first lines which code it teaches. I
     },
     {
       slug: "court-and-equipment",
-      title: "3 · The court and the kit — and where the codes diverge",
+      title: "3 · The court and the kit, and where the codes diverge",
       section: "1 · The game and its codes",
       body: `**Codes in this lesson: all three.** This is the one lesson that deliberately compares them side by side.
 
@@ -136,7 +136,7 @@ From here on, every lesson tells you in its first lines which code it teaches. I
 The good news for a beginner is that **Association Croquet and Golf Croquet use the same court**, and the American court is the same rectangle described in feet.
 
 - **AC (WCF):** "The standard court is a rectangle measuring **28 by 35 yards** (25.6 by 32.0 metres)" (World Croquet Federation, 2021, Law 4.1.1), with a tolerance of ±6 inches (Law 4.1.2).
-- **GC (WCF):** identical — 28 by 35 yards, ±6 inches (World Croquet Federation, 2022, Rules 2.1.1–2.1.2).
+- **GC (WCF):** identical, 28 by 35 yards, ±6 inches (World Croquet Federation, 2022, Rules 2.1.1-2.1.2).
 - **American Six-Wicket (USCA):** "The standard court is a rectangle, measuring **35 by 28 yards (105 by 84 feet)**" (United States Croquet Association, 2024, equipment section).
 
 ## Six hoops and a peg (or six wickets and a stake)
@@ -148,7 +148,7 @@ All three codes put **six** hoops on the court, plus a central peg. The layout i
 
 Vocabulary alert: the WCF says **hoop** and **peg**; the USCA says **wicket** and **stake**. Same objects.
 
-Both the WCF codes and the USCA code run each of those six hoops **twice**, in opposite directions, so a ball has **12 hoop (wicket) points** to score plus the peg (stake) point — **26 points for a side of two balls**. That much is genuinely common ground (World Croquet Federation, 2021, Law 1.1; United States Croquet Association, 2024, Rule 1.1(b)).
+Both the WCF codes and the USCA code run each of those six hoops **twice**, in opposite directions, so a ball has **12 hoop (wicket) points** to score plus the peg (stake) point, **26 points for a side of two balls**. That much is genuinely common ground (World Croquet Federation, 2021, Law 1.1; United States Croquet Association, 2024, Rule 1.1(b)).
 
 ## The kit
 
@@ -161,12 +161,12 @@ Both the WCF codes and the USCA code run each of those six hoops **twice**, in o
 
 Look at the hoop width against the ball width. A championship hoop can be **less than a tenth of an inch wider than the ball**. That is why "just hit it through the hoop" is not a plan.
 
-## You do not need a full-size court to start — and that is written into the rules
+## You do not need a full-size court to start, and that is written into the rules
 
 This is a genuinely important, genuinely under-known fact, and Section 8 turns it into a business.
 
 - **GC (WCF), Rule 2.4:** "If the available area is too small for a standard court, a smaller court may be laid out by **retaining the court proportions of five units long by four units wide** but using a unit shorter than the standard 7 yards" (World Croquet Federation, 2022).
-- **USCA:** the same idea — keep the proportions **5 units long by 4 wide**; with 10-foot units you get a **50 × 40 ft** court, which the rulebook calls "generally considered the minimum for this game" (United States Croquet Association, 2024).
+- **USCA:** the same idea, keep the proportions **5 units long by 4 wide**; with 10-foot units you get a **50 × 40 ft** court, which the rulebook calls "generally considered the minimum for this game" (United States Croquet Association, 2024).
 
 A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The rulebooks *anticipate* you not having a championship lawn.
 
@@ -197,7 +197,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
         questions: [
           {
             prompt: "How many separate codes of croquet does the World Croquet Federation publish rulebooks for?",
-            options: ["One — 'the rules of croquet'", "Two — Association Croquet and Golf Croquet", "Four — including American Six-Wicket and garden croquet", "Six, one per hoop"],
+            options: ["One, 'the rules of croquet'", "Two, Association Croquet and Golf Croquet", "Four, including American Six-Wicket and garden croquet", "Six, one per hoop"],
             correctIndex: 1,
             explanation:
               "The WCF publishes exactly two rulebooks: the Laws of Association Croquet (7th ed., 2021) and the Rules of Golf Croquet (6th ed., 2022). American Six-Wicket is the USCA's code; garden croquet has no governing body at all.",
@@ -205,7 +205,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           },
           {
             prompt: "Which body governs American Six-Wicket croquet?",
-            options: ["The World Croquet Federation", "The United States Croquet Association (USCA)", "Croquet England", "No one — it is an informal code"],
+            options: ["The World Croquet Federation", "The United States Croquet Association (USCA)", "Croquet England", "No one, it is an informal code"],
             correctIndex: 1,
             explanation:
               "The USCA publishes The Official Rules of American Six Wicket Croquet (revised 2024). The USCA is a member of the WCF, not a rival to it, and it also runs national championships in the WCF's codes.",
@@ -215,7 +215,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
             prompt: "Why is 'in croquet, hitting another ball earns you extra strokes' a bad sentence?",
             options: [
               "It is simply false in every code",
-              "It fails to name a code — it is true in Association Croquet and false in Golf Croquet",
+              "It fails to name a code, it is true in Association Croquet and false in Golf Croquet",
               "It confuses hoops with wickets",
               "It is true, but only on a full-size court",
             ],
@@ -250,7 +250,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
             ],
             correctIndex: 1,
             explanation:
-              "AC Law 4.4 and GC Rule 2.3.2: the two inner hoops sit 7 yards north and south of the peg; the four outer hoops sit 7 yards from their adjacent boundaries. The USCA describes the same layout as 21 feet — which is the same distance.",
+              "AC Law 4.4 and GC Rule 2.3.2: the two inner hoops sit 7 yards north and south of the peg; the four outer hoops sit 7 yards from their adjacent boundaries. The USCA describes the same layout as 21 feet, which is the same distance.",
             sourceLessonSlug: "court-and-equipment",
           },
           {
@@ -265,19 +265,19 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
             prompt: "A championship hoop's uprights are set how far apart, relative to the ball?",
             options: [
               "About twice the ball's width",
-              "Between 3 11/16 in and 4 in — barely wider than the 3⅝ in ball",
+              "Between 3 11/16 in and 4 in, barely wider than the 3⅝ in ball",
               "Exactly 5 inches",
               "It varies with no upper limit",
             ],
             correctIndex: 1,
             explanation:
-              "AC Law 5.2.1.3 sets the uprights between 3 11/16 in and 4 in apart, and the ball is 3⅝ in (Law 5.3.1). That margin can be under a tenth of an inch — which is why running a hoop is a skill, not a formality.",
+              "AC Law 5.2.1.3 sets the uprights between 3 11/16 in and 4 in apart, and the ball is 3⅝ in (Law 5.3.1). That margin can be under a tenth of an inch, which is why running a hoop is a skill, not a formality.",
             sourceLessonSlug: "court-and-equipment",
           },
           {
             prompt: "What does GC Rule 2.4 allow when the available space is too small for a standard court?",
             options: [
-              "Nothing — the game cannot be played",
+              "Nothing, the game cannot be played",
               "A smaller court keeping the proportions five units long by four units wide",
               "Removing two hoops",
               "Playing with two balls instead of four",
@@ -292,7 +292,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
             options: ["Up to 12 strokes", "Up to 26 strokes", "Up to 91 strokes", "There is no published figure"],
             correctIndex: 2,
             explanation:
-              "The WCF page states it is possible to play a break of up to 91 strokes, taking a ball through all twelve hoops and then the peg — in a single turn.",
+              "The WCF page states it is possible to play a break of up to 91 strokes, taking a ball through all twelve hoops and then the peg, in a single turn.",
             sourceLessonSlug: "what-croquet-actually-is",
           },
           {
@@ -300,7 +300,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
             options: ["Badminton", "Billiards, snooker and pool", "Sprinting", "Archery"],
             correctIndex: 1,
             explanation:
-              "The WCF makes the comparison itself: the game is built on the concept of a break, 'as in snooker, billiards and pool'. The tactical unit — chaining earned strokes — is the same idea.",
+              "The WCF makes the comparison itself: the game is built on the concept of a break, 'as in snooker, billiards and pool'. The tactical unit, chaining earned strokes, is the same idea.",
             sourceLessonSlug: "what-croquet-actually-is",
           },
           {
@@ -316,7 +316,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
             options: [
               "It is the WCF's beginner code",
               "It is governed by the USCA",
-              "It has no governing body and no rulebook — it is a different, informal activity",
+              "It has no governing body and no rulebook, it is a different, informal activity",
               "It is played on a standard 28 by 35 yard court",
             ],
             correctIndex: 2,
@@ -326,7 +326,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           },
           {
             prompt: "Under how many rule sets does the USCA crown national champions?",
-            options: ["One (American only)", "Two", "Four — American, Association, Golf Croquet and Nine-Wicket", "Six"],
+            options: ["One (American only)", "Two", "Four, American, Association, Golf Croquet and Nine-Wicket", "Six"],
             correctIndex: 2,
             explanation:
               "The USCA runs national championships in four codes. That is why 'the American body only plays the American code' is wrong.",
@@ -342,7 +342,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
             ],
             correctIndex: 1,
             explanation:
-              "The WCF's links page carries that note verbatim. Other mallet games exist and are governed elsewhere — do not attribute their rules to the WCF.",
+              "The WCF's links page carries that note verbatim. Other mallet games exist and are governed elsewhere, do not attribute their rules to the WCF.",
             sourceLessonSlug: "the-codes",
           },
         ],
@@ -358,7 +358,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
       section: "2 · Golf Croquet (WCF)",
       body: `**Code taught in this lesson: GOLF CROQUET (GC), governed by the World Croquet Federation.** Rulebook: *The WCF Rules of Golf Croquet*, 6th edition, February 2022.
 
-Golf Croquet is where nearly everyone starts, and it is not a watered-down version of the "real" game — it is a full WCF code with its own world championship. It is also the fastest-growing form of the sport (see Section 7).
+Golf Croquet is where nearly everyone starts, and it is not a watered-down version of the "real" game, it is a full WCF code with its own world championship. It is also the fastest-growing form of the sport (see Section 7).
 
 ## The whole engine, in three rules
 
@@ -368,23 +368,23 @@ That single sentence is why GC is easy to learn: there is no chain of earned str
 
 **2. The balls are played in a fixed colour sequence.** Rule 1.2.1: "The balls are to be played in the colour sequence **blue, red, black and yellow**." One side owns blue and black; the other owns red and yellow (Rule 1.1.3). In doubles, each player plays one ball for the whole game (Rule 1.1.2).
 
-Because the sequence is fixed, **you always know exactly who shoots next, and with which ball.** That turns GC into a game of "what can they do to me on their one stroke?" — which is why it is far more tactical than it first appears.
+Because the sequence is fixed, **you always know exactly who shoots next, and with which ball.** That turns GC into a game of "what can they do to me on their one stroke?", which is why it is far more tactical than it first appears.
 
 **3. All four balls contest the same hoop, and the first ball through scores it.** Rule 1.3.2: "A point is scored for the side whose ball **first** runs the hoop in order... **Both sides then contest the next hoop** in the specified order" (World Croquet Federation, 2022).
 
 That is the whole game. Everyone is fighting over hoop 1. Someone runs it. Now everyone is fighting over hoop 2.
 
-## What Golf Croquet does NOT have — and how we know
+## What Golf Croquet does NOT have, and how we know
 
 There is **no roquet** and **no croquet stroke** in Golf Croquet. Hitting an opponent's ball earns you nothing at all.
 
-Here is how careful sourcing works, and it is worth watching: the words "roquet" and "croquet stroke" **do not appear anywhere in the WCF Rules of Golf Croquet, 6th edition**. So the honest statement is not "GC Rule X bans the croquet stroke" — there is no such rule to cite. The honest statement is: **a turn is one stroke (Rule 1.1.1), and the rulebook contains no croquet stroke and no roquet.** If a source hands you a rule number for a rule that "bans" the croquet stroke in GC, that source made it up.
+Here is how careful sourcing works, and it is worth watching: the words "roquet" and "croquet stroke" **do not appear anywhere in the WCF Rules of Golf Croquet, 6th edition**. So the honest statement is not "GC Rule X bans the croquet stroke", there is no such rule to cite. The honest statement is: **a turn is one stroke (Rule 1.1.1), and the rulebook contains no croquet stroke and no roquet.** If a source hands you a rule number for a rule that "bans" the croquet stroke in GC, that source made it up.
 
 ## Where you start from
 
-Play begins from the **start area** — within one yard of corner IV (World Croquet Federation, 2022, Rule 5.2.1). All four balls enter from there, in colour sequence.
+Play begins from the **start area**, within one yard of corner IV (World Croquet Federation, 2022, Rule 5.2.1). All four balls enter from there, in colour sequence.
 
-:::reveal In Golf Croquet, you hit your opponent's ball hard and knock it off the court. What do you earn for that? ||| Nothing extra. A GC turn is a single stroke (Rule 1.1.1). There is no roquet and no croquet stroke in Golf Croquet — hitting another ball buys you no additional strokes. (It may still be a great tactical move, because you moved their ball away from the hoop.)
+:::reveal In Golf Croquet, you hit your opponent's ball hard and knock it off the court. What do you earn for that? ||| Nothing extra. A GC turn is a single stroke (Rule 1.1.1). There is no roquet and no croquet stroke in Golf Croquet, hitting another ball buys you no additional strokes. (It may still be a great tactical move, because you moved their ball away from the hoop.)
 
 ## Sources
 - ${WCF_GC}`,
@@ -403,19 +403,19 @@ Rule 1.4.1: "A game is a contest for the best of **7, 13 or 19 points**" (World 
 |---|---|---|
 | **7-point** | The first **six** hoops are contested in order, hoop 1 to hoop 6 (Rule 1.4.2) | "If required, the seventh point is scored by contesting **hoop 1 again**" |
 | **13-point** | The first **twelve** hoops are contested in order, hoop 1 to hoop 12 (Rule 1.4.3) | "If required, the 13th point is scored by contesting **hoop 3 again**" |
-| **19-point** | Hoops 1–12, then hoops **3, 4, 1, 2, 11, 12** as hoops 13–18 (Rule 1.4.4) | A 19th point is hoop 3 again |
+| **19-point** | Hoops 1-12, then hoops **3, 4, 1, 2, 11, 12** as hoops 13-18 (Rule 1.4.4) | A 19th point is hoop 3 again |
 
-Notice the design. The odd total means **there are no draws** — someone must reach 4, 7 or 10. And the deciding hoop is a *specific named hoop*, not "whatever comes next": hoop 1 in a 7-point game, hoop 3 in a 13-point game. If you are 3–3 in a 7-point game, you know exactly where the game will be decided before it happens. So does your opponent.
+Notice the design. The odd total means **there are no draws**, someone must reach 4, 7 or 10. And the deciding hoop is a *specific named hoop*, not "whatever comes next": hoop 1 in a 7-point game, hoop 3 in a 13-point game. If you are 3-3 in a 7-point game, you know exactly where the game will be decided before it happens. So does your opponent.
 
 ## Running a hoop
 
 Rule 7.1.1: to score a point, a ball "must move as the result of a stroke, either directly or indirectly... and pass through the hoop in order" (World Croquet Federation, 2022).
 
-Read "**indirectly**" carefully. Your ball does not have to be hit *by you, directly, through the hoop*. If your partner ball, or even an opponent's ball, cannons into your ball and knocks it through the hoop in order, **the point is scored for the side that owns the ball that went through**. This produces one of GC's best tactics — the **promotion**, where you deliberately hit one ball into another to send *that* one through the hoop.
+Read "**indirectly**" carefully. Your ball does not have to be hit *by you, directly, through the hoop*. If your partner ball, or even an opponent's ball, cannons into your ball and knocks it through the hoop in order, **the point is scored for the side that owns the ball that went through**. This produces one of GC's best tactics, the **promotion**, where you deliberately hit one ball into another to send *that* one through the hoop.
 
 That also means you can score a hoop *for your opponent* by accident. Be careful what you push around near a hoop.
 
-:::reveal You are playing a 13-point game and the score reaches 6–6. Which hoop decides the game, and why does knowing that matter? ||| Hoop 3, contested again (Rule 1.4.3). It matters because both players know in advance exactly where the decider will be played — so the positioning battle in the previous hoop is really a battle for good position at hoop 3.
+:::reveal You are playing a 13-point game and the score reaches 6-6. Which hoop decides the game, and why does knowing that matter? ||| Hoop 3, contested again (Rule 1.4.3). It matters because both players know in advance exactly where the decider will be played, so the positioning battle in the previous hoop is really a battle for good position at hoop 3.
 
 ## Sources
 - ${WCF_GC}`,
@@ -439,7 +439,7 @@ That also means you can score a hoop *for your opponent* by accident. Be careful
 
 This is the rule people get wrong most often, including people who have played for years. It is **Rule 8**, and it exists to stop a player from parking a ball at the *next* hoop while everyone else is still fighting over the current one.
 
-## The trigger — read it exactly
+## The trigger, read it exactly
 
 Rule 8.2.1: "a ball becomes an **offside ball** if **all of it is clearly beyond the halfway line for the hoop in order at the end of a turn in which a point is scored**" (World Croquet Federation, 2022).
 
@@ -450,11 +450,11 @@ Two things in that sentence are load-bearing, and both are usually misremembered
 
 ## The halfway lines
 
-Rule 8.1.1 defines a **halfway line** as "the line between each hoop and the next hoop in order." Rule 8.1.2 names four of them — lines **AF**, **BG**, **CH**, and **DE** (DE runs through the peg, perpendicular to the East and West boundaries).
+Rule 8.1.1 defines a **halfway line** as "the line between each hoop and the next hoop in order." Rule 8.1.2 names four of them, lines **AF**, **BG**, **CH**, and **DE** (DE runs through the peg, perpendicular to the East and West boundaries).
 
-Rule 8.1.3 then maps each hoop in order to its line. Rather than memorise the table, memorise the shape of it: **line DE — the line through the peg — is the default**, and it applies to "all others," including every deciding hoop (the 7th of a 7-point game, the 13th of a 13-point game, the 19th of a 19-point game). Only hoops 7/17 (line AF), 3/9/15 (line BG) and 5/11 (line CH) get a different line.
+Rule 8.1.3 then maps each hoop in order to its line. Rather than memorise the table, memorise the shape of it: **line DE, the line through the peg, is the default**, and it applies to "all others," including every deciding hoop (the 7th of a 7-point game, the 13th of a 13-point game, the 19th of a 19-point game). Only hoops 7/17 (line AF), 3/9/15 (line BG) and 5/11 (line CH) get a different line.
 
-## The exemptions — and they are generous
+## The exemptions, and they are generous
 
 Rule 8.3.1: a ball is **not** offside if it got to its position by:
 
@@ -466,11 +466,11 @@ In plain English: **you are never punished for being sent there by your opponent
 
 ## The penalty is not automatic
 
-This is the second thing people get wrong. Being offside does not automatically move your ball. Rule 8.4.1: the **opponent may give an offside direction** — that is, they may *choose* to direct that your ball be next played from **either penalty area**. A penalty area is "a semi-circular area on the court, with a **radius of one yard**" centred on the points D and E (Rule 17.1.1).
+This is the second thing people get wrong. Being offside does not automatically move your ball. Rule 8.4.1: the **opponent may give an offside direction**, that is, they may *choose* to direct that your ball be next played from **either penalty area**. A penalty area is "a semi-circular area on the court, with a **radius of one yard**" centred on the points D and E (Rule 17.1.1).
 
-They may also simply *not bother* — if your offside ball is somewhere useless to you, leaving it there is often better for them. And a ball stops being offside the moment the direction is given, or (if none is given) when the offside opponent plays a stroke (Rule 8.2.2).
+They may also simply *not bother*, if your offside ball is somewhere useless to you, leaving it there is often better for them. And a ball stops being offside the moment the direction is given, or (if none is given) when the offside opponent plays a stroke (Rule 8.2.2).
 
-:::reveal Your ball is sitting well beyond the halfway line when your opponent runs the hoop. Are you automatically offside, and are you automatically moved? ||| Not necessarily on either count. You are offside only if ALL of the ball is clearly beyond the halfway line at the end of a turn in which a point was scored (Rule 8.2.1) AND none of the exemptions in Rule 8.3.1 apply — you are exempt if you got there by the stroke just played, by a stroke of the opposing side, or by contact with an opponent ball in the last turn the ball moved. Even then, nothing moves automatically: the opponent MAY give an offside direction sending the ball to a penalty area (Rule 8.4.1), but they can also choose not to.
+:::reveal Your ball is sitting well beyond the halfway line when your opponent runs the hoop. Are you automatically offside, and are you automatically moved? ||| Not necessarily on either count. You are offside only if ALL of the ball is clearly beyond the halfway line at the end of a turn in which a point was scored (Rule 8.2.1) AND none of the exemptions in Rule 8.3.1 apply, you are exempt if you got there by the stroke just played, by a stroke of the opposing side, or by contact with an opponent ball in the last turn the ball moved. Even then, nothing moves automatically: the opponent MAY give an offside direction sending the ball to a penalty area (Rule 8.4.1), but they can also choose not to.
 
 ## Sources
 - ${WCF_GC}`,
@@ -482,7 +482,7 @@ They may also simply *not bother* — if your offside ball is somewhere useless 
         {
           prompt: "Can a ball score a hoop without you hitting it through directly?",
           answer:
-            "Yes. Rule 7.1.1 says the ball may pass through the hoop 'directly or indirectly' — so a ball knocked through by another ball scores for the side that owns it. That includes scoring for your opponent by accident.",
+            "Yes. Rule 7.1.1 says the ball may pass through the hoop 'directly or indirectly', so a ball knocked through by another ball scores for the side that owns it. That includes scoring for your opponent by accident.",
         },
       ],
     },
@@ -500,21 +500,21 @@ Now here is the part that matters more than the shot. **The word "jump" does not
 
 The accurate way to say it: **a jump shot is legal by omission.** Nothing forbids it, and it is bounded by the general **fault list in Rule 11.2** (World Croquet Federation, 2022). The three faults that most often catch a jump shot are:
 
-- **Rule 11.2.3** — striking the ball with any part of the mallet other than an **end-face**. (Scooping with the side of the mallet head is a fault.)
-- **Rule 11.2.6** — a **crush**: causing a ball, "while still in contact with the mallet, to touch a hoop, the peg or... another ball."
-- **Rule 11.2.10** — **damaging the court surface.** A jump shot driven into the turf gouges the lawn; that is a fault, and it is also how you get uninvited from a club.
+- **Rule 11.2.3**, striking the ball with any part of the mallet other than an **end-face**. (Scooping with the side of the mallet head is a fault.)
+- **Rule 11.2.6**, a **crush**: causing a ball, "while still in contact with the mallet, to touch a hoop, the peg or... another ball."
+- **Rule 11.2.10**, **damaging the court surface.** A jump shot driven into the turf gouges the lawn; that is a fault, and it is also how you get uninvited from a club.
 
 So the true sentence is: *you may jump, and you must do it cleanly, with the end-face of the mallet, without crushing and without wrecking the lawn.*
 
-(For contrast, the Association Croquet Laws *do* mention jumping once — Law 29.2.3.2 refers to "a single-ball stroke in which the striker is attempting to make the striker's ball **jump**", in the context of when court damage or mallet contact counts as a fault (World Croquet Federation, 2021). Two codes, two different treatments of the same shot. This is exactly why you always name the code.)
+(For contrast, the Association Croquet Laws *do* mention jumping once, Law 29.2.3.2 refers to "a single-ball stroke in which the striker is attempting to make the striker's ball **jump**", in the context of when court damage or mallet contact counts as a fault (World Croquet Federation, 2021). Two codes, two different treatments of the same shot. This is exactly why you always name the code.)
 
 ## The general lesson: rulebooks are not the whole law
 
-One more thing, and it will save you an argument one day. The 7th-edition AC Laws and the 6th-edition GC Rules are the current rulebooks — but they are **amended by Official Rulings** issued by the WCF's rules committees between editions. For example, an Association Croquet Laws Committee Official Ruling effective **1 November 2025** amended Law 48.4 (playing out of sequence in Alternate Stroke Doubles) (World Croquet Federation, 2025).
+One more thing, and it will save you an argument one day. The 7th-edition AC Laws and the 6th-edition GC Rules are the current rulebooks, but they are **amended by Official Rulings** issued by the WCF's rules committees between editions. For example, an Association Croquet Laws Committee Official Ruling effective **1 November 2025** amended Law 48.4 (playing out of sequence in Alternate Stroke Doubles) (World Croquet Federation, 2025).
 
 You do not need to know that ruling. You need to know the *pattern*: **the PDF plus the current rulings is the law, not the PDF alone.** Before you argue a fine point in a tournament, check the governing body's rulings page.
 
-:::reveal A player tells you "Golf Croquet Rule 11.4 permits jump shots." What is wrong with that sentence? ||| No such permission exists. The word "jump" does not appear anywhere in the WCF Rules of Golf Croquet, 6th edition. Jump shots are legal by OMISSION — nothing forbids them — and are bounded by the general fault list in Rule 11.2 (strike with an end-face, no crush, no damage to the court). Anyone quoting a rule number that "permits" jump shots in GC is inventing it.
+:::reveal A player tells you "Golf Croquet Rule 11.4 permits jump shots." What is wrong with that sentence? ||| No such permission exists. The word "jump" does not appear anywhere in the WCF Rules of Golf Croquet, 6th edition. Jump shots are legal by OMISSION, nothing forbids them, and are bounded by the general fault list in Rule 11.2 (strike with an end-face, no crush, no damage to the court). Anyone quoting a rule number that "permits" jump shots in GC is inventing it.
 
 ## Sources
 - ${WCF_GC}
@@ -524,7 +524,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
         {
           prompt: "In Golf Croquet, what triggers the check for whether a ball is offside?",
           answer:
-            "The end of a turn in which a point is scored (Rule 8.2.1). If no hoop is scored, nobody goes offside — it is not a 'beyond halfway at any time' rule.",
+            "The end of a turn in which a point is scored (Rule 8.2.1). If no hoop is scored, nobody goes offside, it is not a 'beyond halfway at any time' rule.",
         },
         {
           prompt: "Name two of the three exemptions that stop a ball being offside in Golf Croquet.",
@@ -542,7 +542,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
         questions: [
           {
             prompt: "How many strokes does a Golf Croquet turn contain?",
-            options: ["As many as you can earn", "One (Rule 1.1.1), with handicap extra strokes as the main exception", "Two", "Four — one per ball"],
+            options: ["As many as you can earn", "One (Rule 1.1.1), with handicap extra strokes as the main exception", "Two", "Four, one per ball"],
             correctIndex: 1,
             explanation:
               "Rule 1.1.1: each turn contains one stroke. This is the single biggest difference from Association Croquet, where earned extra strokes build breaks.",
@@ -550,10 +550,10 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           },
           {
             prompt: "In Golf Croquet, what do you earn by hitting an opponent's ball?",
-            options: ["An extra stroke", "A croquet stroke", "Nothing extra — there is no roquet and no croquet stroke in GC", "One point"],
+            options: ["An extra stroke", "A croquet stroke", "Nothing extra, there is no roquet and no croquet stroke in GC", "One point"],
             correctIndex: 2,
             explanation:
-              "The words 'roquet' and 'croquet stroke' do not appear anywhere in the WCF Rules of Golf Croquet. Hitting a ball can still be a strong tactical move — but it buys no strokes.",
+              "The words 'roquet' and 'croquet stroke' do not appear anywhere in the WCF Rules of Golf Croquet. Hitting a ball can still be a strong tactical move, but it buys no strokes.",
             sourceLessonSlug: "gc-how-a-turn-works",
           },
           {
@@ -561,7 +561,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
             options: ["Blue, black, red, yellow", "Blue, red, black, yellow", "Red, blue, yellow, black", "Whatever order the players agree"],
             correctIndex: 1,
             explanation:
-              "Rule 1.2.1. One side plays blue and black, the other red and yellow. Because the sequence is fixed, you always know who shoots next — which is what makes GC tactical.",
+              "Rule 1.2.1. One side plays blue and black, the other red and yellow. Because the sequence is fixed, you always know who shoots next, which is what makes GC tactical.",
             sourceLessonSlug: "gc-how-a-turn-works",
           },
           {
@@ -582,28 +582,28 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
             options: ["7 points", "13 points", "19 points", "26 points"],
             correctIndex: 3,
             explanation:
-              "Rule 1.4.1 allows best of 7, 13 or 19. Twenty-six is the point total of an Association Croquet or American Six-Wicket game — a different code entirely.",
+              "Rule 1.4.1 allows best of 7, 13 or 19. Twenty-six is the point total of an Association Croquet or American Six-Wicket game, a different code entirely.",
             sourceLessonSlug: "gc-scoring-and-hoop-order",
           },
           {
-            prompt: "In a 13-point Golf Croquet game that reaches 6–6, which hoop is contested for the deciding point?",
+            prompt: "In a 13-point Golf Croquet game that reaches 6-6, which hoop is contested for the deciding point?",
             options: ["Hoop 13", "Hoop 1 again", "Hoop 3 again", "Whichever hoop the winner of the toss chooses"],
             correctIndex: 2,
             explanation:
-              "Rule 1.4.3. In a 7-point game the decider is hoop 1 again (Rule 1.4.2). Both players know the venue of the decider in advance — so the previous hoop is really a fight for position at the decider.",
+              "Rule 1.4.3. In a 7-point game the decider is hoop 1 again (Rule 1.4.2). Both players know the venue of the decider in advance, so the previous hoop is really a fight for position at the decider.",
             sourceLessonSlug: "gc-scoring-and-hoop-order",
           },
           {
             prompt: "Can a ball score a Golf Croquet hoop point without being struck directly through it?",
             options: [
-              "No — only a direct strike scores",
-              "Yes — Rule 7.1.1 allows the ball to pass through 'directly or indirectly', so a ball knocked through by another ball scores",
+              "No, only a direct strike scores",
+              "Yes, Rule 7.1.1 allows the ball to pass through 'directly or indirectly', so a ball knocked through by another ball scores",
               "Only in handicap play",
               "Only if the referee agrees",
             ],
             correctIndex: 1,
             explanation:
-              "This is the basis of the 'promotion' tactic — and also of the horrible accident where you knock an opponent's ball through the hoop and score it for them.",
+              "This is the basis of the 'promotion' tactic, and also of the horrible accident where you knock an opponent's ball through the hoop and score it for them.",
             sourceLessonSlug: "gc-scoring-and-hoop-order",
           },
           {
@@ -637,7 +637,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
             options: [
               "It is automatically moved to a penalty area",
               "It is removed from the game",
-              "Nothing automatic — the opponent MAY give an offside direction, sending it to be played from a penalty area",
+              "Nothing automatic, the opponent MAY give an offside direction, sending it to be played from a penalty area",
               "Its side loses the hoop",
             ],
             correctIndex: 2,
@@ -662,7 +662,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
             options: [
               "They are banned by Rule 11.2",
               "They are expressly permitted by a named rule",
-              "The word 'jump' appears nowhere in the GC Rules — they are legal by omission, bounded by the fault list in Rule 11.2",
+              "The word 'jump' appears nowhere in the GC Rules, they are legal by omission, bounded by the fault list in Rule 11.2",
               "They are legal only in handicap play",
             ],
             correctIndex: 2,
@@ -680,12 +680,12 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
             ],
             correctIndex: 1,
             explanation:
-              "Rule 11.2.6 — the crush. Also on the list: striking with any part of the mallet other than an end-face (11.2.3) and damaging the court surface (11.2.10).",
+              "Rule 11.2.6, the crush. Also on the list: striking with any part of the mallet other than an end-face (11.2.3) and damaging the court surface (11.2.10).",
             sourceLessonSlug: "gc-faults-and-jump-shots",
           },
           {
             prompt: "Where does Golf Croquet play begin from?",
-            options: ["The centre peg", "Anywhere on the boundary", "The start area — within one yard of corner IV", "Corner I"],
+            options: ["The centre peg", "Anywhere on the boundary", "The start area, within one yard of corner IV", "Corner I"],
             correctIndex: 2,
             explanation: "Rule 5.2.1. All four balls enter from the start area, in the fixed colour sequence.",
             sourceLessonSlug: "gc-how-a-turn-works",
@@ -728,7 +728,7 @@ Read that word **both**. It is not enough to get one ball around. You must bring
 
 ## Sides and balls
 
-Law 2.3: "One side plays the **blue and black** balls and the other the **red and yellow** balls (or green and brown versus pink and white...)." Four balls, two per side. In singles you play **both** of your side's balls — and crucially, **you choose which one to play at the start of each turn.** That choice is a large part of the strategy.
+Law 2.3: "One side plays the **blue and black** balls and the other the **red and yellow** balls (or green and brown versus pink and white...)." Four balls, two per side. In singles you play **both** of your side's balls, and crucially, **you choose which one to play at the start of each turn.** That choice is a large part of the strategy.
 
 ## Twelve hoop points from six hoops
 
@@ -738,11 +738,11 @@ So the six physical hoops are each run twice, and the second circuit has its own
 
 ## The peg
 
-Law 2.5 and Law 22.1.1: only a **rover** ball may score the peg point, and it does so "by hitting the peg as a consequence of a stroke." It is then **pegged out** — removed from the game entirely.
+Law 2.5 and Law 22.1.1: only a **rover** ball may score the peg point, and it does so "by hitting the peg as a consequence of a stroke." It is then **pegged out**, removed from the game entirely.
 
 That creates a real strategic problem that has no equivalent in Golf Croquet: **pegging out your first ball takes it off the court.** Now you are playing one ball against your opponent's two. Strong players routinely leave a rover ball *on* the court rather than peg it out, because a ball is a tool, and removing your own tool to score a single point can lose you the game.
 
-:::reveal Your first ball is a rover, sitting next to the peg. Why might a strong player deliberately NOT peg it out? ||| Because pegging out removes that ball from the game (Laws 2.5, 22.1.1), leaving you playing one ball against your opponent's two. Balls are tools — you use them to build breaks. A side must peg out BOTH balls to win (Law 7.3.1), so the peg point can wait until the second ball is also ready.
+:::reveal Your first ball is a rover, sitting next to the peg. Why might a strong player deliberately NOT peg it out? ||| Because pegging out removes that ball from the game (Laws 2.5, 22.1.1), leaving you playing one ball against your opponent's two. Balls are tools, you use them to build breaks. A side must peg out BOTH balls to win (Law 7.3.1), so the peg point can wait until the second ball is also ready.
 
 ## Sources
 - ${WCF_AC}`,
@@ -755,25 +755,25 @@ That creates a real strategic problem that has no equivalent in Golf Croquet: **
 
 This is the engine of the game. Learn these four moves and you understand Association Croquet.
 
-## 1. The roquet — you hit another ball
+## 1. The roquet, you hit another ball
 
 Law 17.1: "The striker's ball makes a **roquet** when there is any contact between it and a **live** ball during and as a consequence of a stroke" (World Croquet Federation, 2021).
 
 Consequence (Law 17.3.4): your ball "becomes a ball in hand at the end of the stroke and the striker **must** take croquet." Not *may*. **Must.**
 
-"Live" matters. A ball you have already roqueted this turn is **dead** to you until you score a hoop — see the renewal rule in the next lesson.
+"Live" matters. A ball you have already roqueted this turn is **dead** to you until you score a hoop, see the renewal rule in the next lesson.
 
-## 2. The croquet stroke — you pick your ball up
+## 2. The croquet stroke, you pick your ball up
 
 Law 18.3: "The striker prepares for a croquet stroke by placing the striker's ball on the ground in any position **in contact with** the ball from which croquet will be taken."
 
 You physically pick your ball up and set it touching the ball you just hit. Then you strike **your** ball, and Law 18.5 requires that the stroke "must play into the croqueted ball and **move or shake it**." (If it does not move, you have faulted.)
 
-**This is the whole magic of the game.** Because your ball and their ball start in contact, one stroke moves *both of them*, and by changing the angle and the force you control roughly where each one ends up. You are not just advancing yourself — you are **placing another ball where you will want it three strokes from now.**
+**This is the whole magic of the game.** Because your ball and their ball start in contact, one stroke moves *both of them*, and by changing the angle and the force you control roughly where each one ends up. You are not just advancing yourself, you are **placing another ball where you will want it three strokes from now.**
 
 Law 18.6: the croqueted ball immediately becomes **dead** to you.
 
-## 3. The continuation stroke — you get one more
+## 3. The continuation stroke, you get one more
 
 Law 19.1: "After the striker's ball scores a hoop point for itself, **or after a croquet stroke**, the striker becomes entitled to play a continuation stroke."
 
@@ -791,7 +791,7 @@ That is the whole loop:
 
 Put the four laws together and you get a game where **every stroke has two jobs**: advance yourself, and arrange the furniture for the strokes after this one. A good player is not thinking about this hoop. They are thinking about where all four balls will sit when they arrive at the hoop after next.
 
-:::reveal In Association Croquet you roquet an opponent's ball. What are you now REQUIRED to do, and what does that let you do? ||| You MUST take croquet (Law 17.3.4). You pick your ball up and place it in contact with the ball you hit (Law 18.3), then strike your own ball so that it moves the croqueted ball (Law 18.5). Because one stroke moves both balls, you can place the other ball where you'll want it later — and you then get a continuation stroke (Law 19.1).
+:::reveal In Association Croquet you roquet an opponent's ball. What are you now REQUIRED to do, and what does that let you do? ||| You MUST take croquet (Law 17.3.4). You pick your ball up and place it in contact with the ball you hit (Law 18.3), then strike your own ball so that it moves the croqueted ball (Law 18.5). Because one stroke moves both balls, you can place the other ball where you'll want it later, and you then get a continuation stroke (Law 19.1).
 
 ## Sources
 - ${WCF_AC}`,
@@ -799,7 +799,7 @@ Put the four laws together and you get a game where **every stroke has two jobs*
         {
           prompt: "How many points must an Association Croquet side score to win, and what must happen to both of its balls?",
           answer:
-            "26 points — each of the two balls scores 12 hoop points plus the peg point (Law 1.1). The game is won by the side whose balls are BOTH pegged out (Law 7.3.1).",
+            "26 points, each of the two balls scores 12 hoop points plus the peg point (Law 1.1). The game is won by the side whose balls are BOTH pegged out (Law 7.3.1).",
         },
         {
           prompt: "What is a 'rover' ball in Association Croquet?",
@@ -815,7 +815,7 @@ Put the four laws together and you get a game where **every stroke has two jobs*
 
 Last lesson gave you a loop that ends as soon as you run out of live balls to hit. So how does anyone play a 91-stroke turn? One law.
 
-## The renewal rule — Law 2.6.10
+## The renewal rule, Law 2.6.10
 
 > "The striker's ball may take croquet **only once from each of the other balls** in play during a turn **unless it scores a hoop point for itself**, in which case the right to roquet and take croquet once from each of the other balls in play is **renewed**." (World Croquet Federation, 2021, Law 2.6.10)
 
@@ -830,7 +830,7 @@ So the loop is not "hit the balls until you run out." It is:
 
 That is a break. It is the same mechanism as a snooker break: score, and you buy the right to keep going.
 
-## "Break" is not a defined term — and that is worth knowing
+## "Break" is not a defined term, and that is worth knowing
 
 Here is another honesty check, and it is the kind of thing that separates a course you can trust from one you cannot.
 
@@ -852,7 +852,7 @@ But the Laws will not let you be *too* clever. Law 16.1 gives a **wiring lift**:
 
 So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a scalpel, not a hammer.
 
-:::reveal What single law makes a long Association Croquet break possible, and what does it say? ||| Law 2.6.10. You may take croquet only once from each of the other balls in a turn — UNLESS you score a hoop point for yourself, in which case your right to roquet and take croquet from each ball is renewed. Running your hoop brings all the other balls back to life, so you can keep going.
+:::reveal What single law makes a long Association Croquet break possible, and what does it say? ||| Law 2.6.10. You may take croquet only once from each of the other balls in a turn, UNLESS you score a hoop point for yourself, in which case your right to roquet and take croquet from each ball is renewed. Running your hoop brings all the other balls back to life, so you can keep going.
 
 ## Sources
 - ${WCF_AC}
@@ -881,7 +881,7 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
             prompt: "How does a side win a game of Association Croquet?",
             options: [
               "By scoring 13 points with one ball",
-              "By having BOTH of its balls score 12 hoop points and the peg point — 26 points — and both pegged out",
+              "By having BOTH of its balls score 12 hoop points and the peg point, 26 points, and both pegged out",
               "By running all six hoops first",
               "By reaching 7 points",
             ],
@@ -945,10 +945,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "What does Law 19.1 grant, and what does Law 19.3 forbid?",
             options: [
-              "A continuation stroke after a croquet stroke or a hoop point — and continuation strokes may NOT be accumulated",
-              "Two continuation strokes — which may be banked for later",
-              "A free lift — which may not be refused",
-              "An extra ball — which may not be pegged out",
+              "A continuation stroke after a croquet stroke or a hoop point, and continuation strokes may NOT be accumulated",
+              "Two continuation strokes, which may be banked for later",
+              "A free lift, which may not be refused",
+              "An extra ball, which may not be pegged out",
             ],
             correctIndex: 0,
             explanation:
@@ -971,14 +971,14 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "Which law makes a long break possible?",
             options: [
-              "Law 1.1 — the 26-point objective",
-              "Law 2.6.10 — you may take croquet once from each other ball per turn, UNLESS you score a hoop, which renews the right",
-              "Law 16.3 — the definition of wiring",
-              "Law 19.3 — continuation strokes may not be accumulated",
+              "Law 1.1, the 26-point objective",
+              "Law 2.6.10, you may take croquet once from each other ball per turn, UNLESS you score a hoop, which renews the right",
+              "Law 16.3, the definition of wiring",
+              "Law 19.3, continuation strokes may not be accumulated",
             ],
             correctIndex: 1,
             explanation:
-              "Running your hoop brings all the other balls back to life. Score, and you buy the right to keep going — exactly like a snooker break.",
+              "Running your hoop brings all the other balls back to life. Score, and you buy the right to keep going, exactly like a snooker break.",
             sourceLessonSlug: "ac-the-break",
           },
           {
@@ -986,7 +986,7 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
             options: [
               "It is defined in the Glossary of the 7th edition",
               "It is defined in Law 2.6",
-              "It is NOT a defined term — there is no law number to cite for it; the WCF's Association Croquet information page is the honest source",
+              "It is NOT a defined term, there is no law number to cite for it; the WCF's Association Croquet information page is the honest source",
               "It appears nowhere in the Laws at all",
             ],
             correctIndex: 2,
@@ -997,21 +997,21 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "How many balls are in play, and how are they divided?",
             options: [
-              "Four — blue and black against red and yellow (Law 2.3)",
-              "Two — one per player",
-              "Six — one per hoop",
+              "Four, blue and black against red and yellow (Law 2.3)",
+              "Two, one per player",
+              "Six, one per hoop",
               "Four, but each player owns one and plays alone",
             ],
             correctIndex: 0,
             explanation:
-              "Law 2.3 allocates the colours. In singles you play BOTH of your side's balls, and — once all four are in the game — you may play either one at the start of each turn (Law 2.6.1, 'Entitlement to play either ball'). That choice is a big part of the strategy.",
+              "Law 2.3 allocates the colours. In singles you play BOTH of your side's balls, and (once all four are in the game) you may play either one at the start of each turn (Law 2.6.1, 'Entitlement to play either ball'). That choice is a big part of the strategy.",
             sourceLessonSlug: "ac-objective-and-26-points",
           },
           {
             prompt: "What does Law 16.3 define?",
             options: [
               "The croquet stroke",
-              "Wiring — when a hoop or the peg impedes a ball's direct course to a target ball, or impedes the mallet swing, or the ball lies in a hoop's jaws",
+              "Wiring, when a hoop or the peg impedes a ball's direct course to a target ball, or impedes the mallet swing, or the ball lies in a hoop's jaws",
               "The peg point",
               "The order of play",
             ],
@@ -1023,8 +1023,8 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "What is the wiring lift (Law 16.1), and why does it make wiring risky?",
             options: [
-              "It lets you lift any ball at any time — so wiring is pointless",
-              "If the OPPONENT is responsible for a ball of yours being wired from all other balls and not touching another ball, you may lift it and play from either baulk-line — so wiring an opponent can hand them a free lift",
+              "It lets you lift any ball at any time, so wiring is pointless",
+              "If the OPPONENT is responsible for a ball of yours being wired from all other balls and not touching another ball, you may lift it and play from either baulk-line, so wiring an opponent can hand them a free lift",
               "It lets the referee reposition balls",
               "It only applies in handicap play",
             ],
@@ -1087,7 +1087,7 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
       section: "4 · Strategy: think like a break-builder",
       body: `**Code taught in this lesson: ASSOCIATION CROQUET (AC), World Croquet Federation.**
 
-**A vocabulary warning first, because it matters.** The words in this lesson — *break*, *pioneer*, *pivot*, *leave* — are **coaching vocabulary**, not Law vocabulary. They are used by every coach and commentator in the sport, and none of them is a defined term in the WCF Laws. So no lesson in this section will hand you a law number for a *tactic*. What each tactic exploits is a real, citable Law, and that is what gets cited.
+**A vocabulary warning first, because it matters.** The words in this lesson, *break*, *pioneer*, *pivot*, *leave*, are **coaching vocabulary**, not Law vocabulary. They are used by every coach and commentator in the sport, and none of them is a defined term in the WCF Laws. So no lesson in this section will hand you a law number for a *tactic*. What each tactic exploits is a real, citable Law, and that is what gets cited.
 
 ## The problem the break solves
 
@@ -1110,16 +1110,16 @@ Now the cycle, one hoop at a time:
 1. **Roquet** the ball at your current hoop.
 2. **Take croquet**, and use that stroke to do *two* jobs: put yourself in front of the hoop, and send that ball off to become the pioneer for a later hoop.
 3. **Run the hoop** with your continuation stroke. All three balls are now live again (Law 2.6.10).
-4. **Roquet the pivot** in the middle, take croquet off it, and use that stroke to travel to your next hoop — where your pioneer is already waiting.
+4. **Roquet the pivot** in the middle, take croquet off it, and use that stroke to travel to your next hoop, where your pioneer is already waiting.
 5. Repeat.
 
 The pivot near the peg is the trick that makes the whole thing stable: it is close to *everything*, so there is always a ball within reach from the middle of the court.
 
 ## Why this is the real skill
 
-Look at what step 2 asks of you. **One stroke, two outcomes.** You must land your own ball in front of a hoop *and* land the other ball twenty yards away next to a different hoop, with the same swing. That is a *croquet stroke* (Law 18.3: your ball starts in contact with theirs, so both move). Learning to control the ratio between the two balls — how far each travels, at what angle — is the single highest-leverage skill in Association Croquet.
+Look at what step 2 asks of you. **One stroke, two outcomes.** You must land your own ball in front of a hoop *and* land the other ball twenty yards away next to a different hoop, with the same swing. That is a *croquet stroke* (Law 18.3: your ball starts in contact with theirs, so both move). Learning to control the ratio between the two balls, how far each travels, at what angle, is the single highest-leverage skill in Association Croquet.
 
-Everything else — hitting long shots, running tight hoops — is secondary to this. Long straight shots are the *fallback* when your break falls apart.
+Everything else, hitting long shots, running tight hoops, is secondary to this. Long straight shots are the *fallback* when your break falls apart.
 
 ## The honest truth about breaks
 
@@ -1133,11 +1133,11 @@ Most beginners' breaks collapse at hoop 3 or 4, because they took the easy croqu
     },
     {
       slug: "leaves-and-wiring",
-      title: "15 · Strategy: the leave — winning while you are not playing",
+      title: "15 · Strategy: the leave, winning while you are not playing",
       section: "4 · Strategy: think like a break-builder",
       body: `**Code taught in this lesson: ASSOCIATION CROQUET (AC), World Croquet Federation.**
 
-Your break has to end eventually. What matters enormously — and what beginners never think about — is **what the court looks like when it does**.
+Your break has to end eventually. What matters enormously, and what beginners never think about, is **what the court looks like when it does**.
 
 The coaching word for that arrangement is a **leave**. (Again: coaching vocabulary, not a defined term in the Laws.) A good leave means your opponent's best available shot is still bad.
 
@@ -1145,34 +1145,34 @@ The coaching word for that arrangement is a **leave**. (Again: coaching vocabula
 
 1. **How far must my opponent shoot to hit anything?** Every extra yard is a bigger chance they miss.
 2. **If they miss, what do I get?** A miss should hand *you* an easy break, not just an ordinary turn.
-3. **Can they even see a target?** — which brings us to wiring.
+3. **Can they even see a target?**, which brings us to wiring.
 
 ## Wiring, used properly
 
 Law 16.3 defines a ball as **wired** from another if a hoop or the peg would impede its direct course to the target, or impede the mallet swing, or if it would have to pass through a hoop to hit the target, or if it lies in a hoop's jaws (World Croquet Federation, 2021).
 
-So you can hide behind a hoop. Excellent. But — and this is the bit that catches people — **Law 16.1 gives your opponent a wiring lift** if *you* are responsible for the position of one of their balls, it is not touching another ball, and it is wired from **all** other balls. They may then lift it and play from any unoccupied point on either baulk-line. Borderline cases are decided **as wired** (Law 16.5.3), which means the tie goes *against* the person who did the wiring.
+So you can hide behind a hoop. Excellent. But, and this is the bit that catches people, **Law 16.1 gives your opponent a wiring lift** if *you* are responsible for the position of one of their balls, it is not touching another ball, and it is wired from **all** other balls. They may then lift it and play from any unoccupied point on either baulk-line. Borderline cases are decided **as wired** (Law 16.5.3), which means the tie goes *against* the person who did the wiring.
 
 **The practical rule that falls out of this:**
 
-- Wiring an opponent's ball **from your own balls** (so they cannot shoot at you) is a strong idea — right up until you wire it from *everything*, at which point you may have given them a free lift to the baulk-line.
+- Wiring an opponent's ball **from your own balls** (so they cannot shoot at you) is a strong idea, right up until you wire it from *everything*, at which point you may have given them a free lift to the baulk-line.
 - The safer, more common leave is **distance plus angle**: put your two balls together, far away, so their only shot is a long one; and if they miss, their ball runs off somewhere useless while your two sit ready.
 
 ## The shot they have to take
 
-Here is why leaves decide games. If you leave your opponent a **13-yard shot**, they will miss it most of the time — and if they miss, you have two balls in position and a break waiting. If you leave them a **3-yard shot**, they hit it, and now *they* have the break and you are watching.
+Here is why leaves decide games. If you leave your opponent a **13-yard shot**, they will miss it most of the time, and if they miss, you have two balls in position and a break waiting. If you leave them a **3-yard shot**, they hit it, and now *they* have the break and you are watching.
 
 The difference between those two leaves is one croquet stroke played thoughtfully at the end of your turn. **That is the game.**
 
 ## Golf Croquet has leaves too
 
-In GC there is no croquet stroke, so you cannot arrange the court with a single stroke. But because the colour order is fixed (Rule 1.2.1), you always know exactly who plays next — so the "leave" question becomes: **what is the best thing my opponent can do with their one stroke, and can I make it worse?**
+In GC there is no croquet stroke, so you cannot arrange the court with a single stroke. But because the colour order is fixed (Rule 1.2.1), you always know exactly who plays next, so the "leave" question becomes: **what is the best thing my opponent can do with their one stroke, and can I make it worse?**
 
 Common GC answers, all of them tactics rather than rules:
 
 - **Block.** Put a ball in the line between their ball and the hoop.
-- **Clear.** Hit their ball away from the hoop. It earns you nothing (one stroke per turn — Rule 1.1.1), but their ball is now twenty yards from where it wanted to be.
-- **Promote.** Hit one ball into another to send *that* ball through the hoop — legal because Rule 7.1.1 allows a ball to run a hoop "directly or **indirectly**."
+- **Clear.** Hit their ball away from the hoop. It earns you nothing (one stroke per turn, Rule 1.1.1), but their ball is now twenty yards from where it wanted to be.
+- **Promote.** Hit one ball into another to send *that* ball through the hoop, legal because Rule 7.1.1 allows a ball to run a hoop "directly or **indirectly**."
 - **Jump.** Go over a blocking ball. Legal by omission, bounded by the fault list in Rule 11.2 (see Lesson 8).
 
 :::reveal Your Association Croquet break has ended. What is the single question that should decide where you leave the balls? ||| "What is the best shot my opponent now has, and what do I get when they miss it?" A good leave forces a long, low-percentage shot AND leaves your two balls arranged so that a miss hands you a break. Distance plus angle usually beats clever wiring, because wiring a ball from ALL other balls can hand them a free wiring lift (Law 16.1).
@@ -1184,7 +1184,7 @@ Common GC answers, all of them tactics rather than rules:
         {
           prompt: "What is the pivot in a four-ball break, and why is it placed near the peg?",
           answer:
-            "The pivot is the ball parked in the middle of the court. It sits near the peg because the centre is close to everything — so you can always reach a ball from the middle and travel on to your next hoop.",
+            "The pivot is the ball parked in the middle of the court. It sits near the peg because the centre is close to everything, so you can always reach a ball from the middle and travel on to your next hoop.",
         },
         {
           prompt: "Why is one croquet stroke expected to do two jobs?",
@@ -1197,17 +1197,17 @@ Common GC answers, all of them tactics rather than rules:
       slug: "practice-your-thinking",
       title: "16 · Practice: think it through",
       section: "4 · Strategy: think like a break-builder",
-      body: `Before the drill, one habit worth building — and it is the habit that actually makes people better at this game.
+      body: `Before the drill, one habit worth building, and it is the habit that actually makes people better at this game.
 
 ## Keep a match log
 
-Strong croquet players are not the ones with the best swing. They are the ones who **know why they lost**. After every game you play — even a garden game — write four lines:
+Strong croquet players are not the ones with the best swing. They are the ones who **know why they lost**. After every game you play, even a garden game, write four lines:
 
 | Field | What to write |
 |---|---|
 | **Code** | Golf Croquet, Association Croquet, American Six-Wicket, or garden. Always name it. |
-| **Where it turned** | The one moment the game changed hands. Be specific: "3–3 in a 7-point GC game, I was blocked at hoop 4 and cleared instead of jumping." |
-| **The stroke I got wrong** | Not the one you *missed* — the one you **chose** wrong. Those are different, and only one of them is fixable this week. |
+| **Where it turned** | The one moment the game changed hands. Be specific: "3-3 in a 7-point GC game, I was blocked at hoop 4 and cleared instead of jumping." |
+| **The stroke I got wrong** | Not the one you *missed*, the one you **chose** wrong. Those are different, and only one of them is fixable this week. |
 | **What I'll drill** | One thing. "Croquet stroke: send the other ball 15 yards while I travel 5." |
 
 Do that for ten games and you will have a written map of your own weaknesses. That is worth more than ten hours of hitting balls at nothing.
@@ -1215,7 +1215,7 @@ Do that for ten games and you will have a written map of your own weaknesses. Th
 Now the drill.`,
       exercise: {
         instructions:
-          "Fill in each blank with the term or number from this course. Spelling and capitalisation are forgiving. Every answer is stated somewhere in Sections 1–4.",
+          "Fill in each blank with the term or number from this course. Spelling and capitalisation are forgiving. Every answer is stated somewhere in Sections 1-4.",
         items: [
           {
             prompt: "In Association Croquet, hitting a live ball with your ball is called a ___.",
@@ -1225,7 +1225,7 @@ Now the drill.`,
           {
             prompt: "After a roquet you must pick your ball up and place it in contact with the ball you hit. That stroke is called the ___ stroke.",
             answer: "croquet",
-            explanation: "Law 18.3. Because both balls start in contact, one stroke moves both — which is how you arrange the court.",
+            explanation: "Law 18.3. Because both balls start in contact, one stroke moves both, which is how you arrange the court.",
           },
           {
             prompt: "After a croquet stroke, or after running a hoop, you get one ___ stroke.",
@@ -1246,7 +1246,7 @@ Now the drill.`,
             prompt: "Hiding a ball behind a hoop so it cannot shoot at another ball is called ___.",
             answer: "wiring",
             accept: ["wiring it", "to wire"],
-            explanation: "Defined in Law 16.3 — but beware the wiring lift in Law 16.1.",
+            explanation: "Defined in Law 16.3, but beware the wiring lift in Law 16.1.",
           },
           {
             prompt: "A side wins Association Croquet by scoring a total of ___ points.",
@@ -1268,12 +1268,12 @@ Now the drill.`,
           {
             prompt: "In Golf Croquet, a ball becomes ___ if all of it is clearly beyond the halfway line at the end of a turn in which a point is scored.",
             answer: "offside",
-            explanation: "Rule 8.2.1 — and the penalty is not automatic; the opponent may give an offside direction (Rule 8.4.1).",
+            explanation: "Rule 8.2.1, and the penalty is not automatic; the opponent may give an offside direction (Rule 8.4.1).",
           },
           {
             prompt: "The law that renews your right to use all the other balls when you score a hoop point is Law 2.6.___.",
             answer: "10",
-            explanation: "Law 2.6.10 — the one law that makes a long break possible.",
+            explanation: "Law 2.6.10, the one law that makes a long break possible.",
           },
           {
             prompt: "A standard WCF croquet court measures 28 by ___ yards.",
@@ -1292,7 +1292,7 @@ Now the drill.`,
         {
           prompt: "Name two Golf Croquet tactics that do not exist as named rules.",
           answer:
-            "Any two of: blocking (put a ball on their line to the hoop), clearing (hit their ball away), promoting (hit one ball into another to send it through the hoop — legal because Rule 7.1.1 allows 'indirect' running), and jumping (legal by omission, bounded by the fault list in Rule 11.2).",
+            "Any two of: blocking (put a ball on their line to the hoop), clearing (hit their ball away), promoting (hit one ball into another to send it through the hoop, legal because Rule 7.1.1 allows 'indirect' running), and jumping (legal by omission, bounded by the fault list in Rule 11.2).",
         },
       ],
     },
@@ -1326,7 +1326,7 @@ Now the drill.`,
             ],
             correctIndex: 1,
             explanation:
-              "The pivot is the stabiliser of the break — from the middle you can reach a ball and travel on to your next hoop.",
+              "The pivot is the stabiliser of the break, from the middle you can reach a ball and travel on to your next hoop.",
             sourceLessonSlug: "the-four-ball-break",
           },
           {
@@ -1347,7 +1347,7 @@ Now the drill.`,
             options: ["Roquet", "Croquet stroke", "Pioneer", "Continuation stroke"],
             correctIndex: 2,
             explanation:
-              "Roquet (Law 17.1), croquet stroke (Law 18.3) and continuation stroke (Law 19.1) are all defined in the Laws. Pioneer, pivot, leave and even 'break' are coaching terms — no law number exists for them.",
+              "Roquet (Law 17.1), croquet stroke (Law 18.3) and continuation stroke (Law 19.1) are all defined in the Laws. Pioneer, pivot, leave and even 'break' are coaching terms, no law number exists for them.",
             sourceLessonSlug: "the-four-ball-break",
           },
           {
@@ -1373,14 +1373,14 @@ Now the drill.`,
             ],
             correctIndex: 1,
             explanation:
-              "And Law 16.5.3 decides borderline cases AS WIRED — the tie goes against the player who did the wiring. Wiring is a scalpel, not a hammer.",
+              "And Law 16.5.3 decides borderline cases AS WIRED, the tie goes against the player who did the wiring. Wiring is a scalpel, not a hammer.",
             sourceLessonSlug: "leaves-and-wiring",
           },
           {
             prompt: "Which leave is generally safer than an all-out wiring leave?",
             options: [
               "Leaving both your balls in the middle of the court",
-              "Distance plus angle: your two balls together, far away, so their only shot is long — and a miss hands you a break",
+              "Distance plus angle: your two balls together, far away, so their only shot is long, and a miss hands you a break",
               "Leaving your balls on the boundary next to theirs",
               "Pegging out one of your balls",
             ],
@@ -1394,7 +1394,7 @@ Now the drill.`,
             options: [
               "An extra stroke",
               "A point",
-              "No extra strokes at all — a turn is one stroke — but their ball is now far from the hoop it wanted",
+              "No extra strokes at all, a turn is one stroke, but their ball is now far from the hoop it wanted",
               "A croquet stroke",
             ],
             correctIndex: 2,
@@ -1405,7 +1405,7 @@ Now the drill.`,
           {
             prompt: "What is a 'promotion' in Golf Croquet, and why is it legal?",
             options: [
-              "Hitting one ball into another so that the second ball runs the hoop — legal because Rule 7.1.1 allows a ball to run a hoop directly or INDIRECTLY",
+              "Hitting one ball into another so that the second ball runs the hoop, legal because Rule 7.1.1 allows a ball to run a hoop directly or INDIRECTLY",
               "Moving your ball up the colour sequence",
               "Being promoted to a lower handicap",
               "Running two hoops in one stroke",
@@ -1432,7 +1432,7 @@ Now the drill.`,
             prompt: "Which fixed feature of Golf Croquet makes its tactics calculable?",
             options: [
               "The offside rule",
-              "The fixed colour sequence (Rule 1.2.1) — you always know exactly who plays next and with which ball",
+              "The fixed colour sequence (Rule 1.2.1), you always know exactly who plays next and with which ball",
               "The 7-point game length",
               "The penalty areas",
             ],
@@ -1445,7 +1445,7 @@ Now the drill.`,
             prompt: "In your match log, which stroke should you record?",
             options: [
               "The one you physically missed",
-              "The one you CHOSE wrong — a different thing, and the one that is actually fixable",
+              "The one you CHOSE wrong, a different thing, and the one that is actually fixable",
               "Every stroke of the game",
               "Only strokes that scored",
             ],
@@ -1479,13 +1479,13 @@ Now the drill.`,
             prompt: "In a four-ball break, how many jobs does each of the other three balls have?",
             options: [
               "One each: two pioneers (next hoop and the hoop after) and one pivot near the peg",
-              "None — they are obstacles",
+              "None, they are obstacles",
               "They rotate randomly",
               "Two each",
             ],
             correctIndex: 0,
             explanation:
-              "The whole art is keeping those three jobs filled while you advance — which is what the croquet stroke is for.",
+              "The whole art is keeping those three jobs filled while you advance, which is what the croquet stroke is for.",
             sourceLessonSlug: "the-four-ball-break",
           },
         ],
@@ -1504,11 +1504,11 @@ Now the drill.`,
       section: "5 · American Six-Wicket (USCA)",
       body: `**Code taught in this lesson: AMERICAN SIX-WICKET, governed by the United States Croquet Association.** Rulebook: *The Official Rules of American Six Wicket Croquet*, **revised 2024**.
 
-If you play tournament croquet in the United States, this is the code you are most likely to meet first. It shares the roquet–croquet–continuation engine with Association Croquet, and it shares the 26-point objective. Then it does two things very differently, and both of them change how the game feels.
+If you play tournament croquet in the United States, this is the code you are most likely to meet first. It shares the roquet-croquet-continuation engine with Association Croquet, and it shares the 26-point objective. Then it does two things very differently, and both of them change how the game feels.
 
 ## Same objective, same court
 
-Rule 1.1(b): "The object of the game is for a side to make each ball on the side score the **12 wicket points and the stake point, a total of 26 points**, before the opponent" (United States Croquet Association, 2024). Rule 10.4 restates the win condition: score the 24 wicket points and **stake out both balls**, for 26 total — or, in a time-limited game, score the most points.
+Rule 1.1(b): "The object of the game is for a side to make each ball on the side score the **12 wicket points and the stake point, a total of 26 points**, before the opponent" (United States Croquet Association, 2024). Rule 10.4 restates the win condition: score the 24 wicket points and **stake out both balls**, for 26 total, or, in a time-limited game, score the most points.
 
 One side plays **blue and black**, the other **red and yellow** (Rule 1.1(a)). A **coin toss** decides who goes first (Rule 1.1(c)). The 26-point game may be shortened to a **14-point game** (Rule 16.1).
 
@@ -1516,13 +1516,13 @@ One side plays **blue and black**, the other **red and yellow** (Rule 1.1(a)). A
 
 Rule 1.3(a): "Play shall begin with the **blue ball followed by red, black, and yellow** (the order of colors descending on the center stake) and that shall be the proper order of play until the game ends or a ball stakes out."
 
-Compare that with Association Croquet, where **you choose which of your two balls to play at the start of each turn** — AC Law 2.6.1, "Entitlement to play either ball": "Once all of the balls have been played into the game, each turn may be played with either ball of the side until one of them has been pegged out" (World Croquet Federation, 2021). In the American game, you do not choose. The rotation tells you.
+Compare that with Association Croquet, where **you choose which of your two balls to play at the start of each turn**, AC Law 2.6.1, "Entitlement to play either ball": "Once all of the balls have been played into the game, each turn may be played with either ball of the side until one of them has been pegged out" (World Croquet Federation, 2021). In the American game, you do not choose. The rotation tells you.
 
-That single change reshapes the strategy. In AC, a huge part of the thinking is *"which of my balls has the better opportunity right now?"* In the American game that question does not exist — you play the ball whose turn it is, and you must plan **two turns ahead for each of your balls**, because you know exactly when each one comes up.
+That single change reshapes the strategy. In AC, a huge part of the thinking is *"which of my balls has the better opportunity right now?"* In the American game that question does not exist, you play the ball whose turn it is, and you must plan **two turns ahead for each of your balls**, because you know exactly when each one comes up.
 
-(The American rules do contain an **experimental** provision — Rule 17.1, "Option to Play Either Ball" — allowing a choice of ball in one narrow case: where a ball scores the 1-back and 4-back wickets **in the same turn**. It sits in Part 17, "Experimental Rules," and the rulebook says only one of the alternative experimental rules should be in effect in any given tournament. Do not describe ball choice as part of the standard American game.)
+(The American rules do contain an **experimental** provision, Rule 17.1, "Option to Play Either Ball", allowing a choice of ball in one narrow case: where a ball scores the 1-back and 4-back wickets **in the same turn**. It sits in Part 17, "Experimental Rules," and the rulebook says only one of the alternative experimental rules should be in effect in any given tournament. Do not describe ball choice as part of the standard American game.)
 
-## Difference 2: deadness — see the next lesson
+## Difference 2: deadness, see the next lesson
 
 That one is big enough to deserve its own lesson.
 
@@ -1531,14 +1531,14 @@ That one is big enough to deserve its own lesson.
 The American game is the most explicitly **timed** of the three codes, which is one reason it works on television and at clubs with a lot of members and few lawns.
 
 - **Rule 13.7:** a time limit may be set by the tournament director before the first game.
-- **Rule 13.8 ("Shot and Game Clocks"):** "**In a time limit game** the striker shall have a maximum of **45 seconds** to strike the striker ball following the completion of the previous shot." The timekeeper announces when 15 seconds remain. (Note the opening qualifier — the shot clock is a feature of *timed* games, not of every American game. Quoting this rule without those four words is exactly the kind of dropped hedge Section 6 takes apart.)
+- **Rule 13.8 ("Shot and Game Clocks"):** "**In a time limit game** the striker shall have a maximum of **45 seconds** to strike the striker ball following the completion of the previous shot." The timekeeper announces when 15 seconds remain. (Note the opening qualifier, the shot clock is a feature of *timed* games, not of every American game. Quoting this rule without those four words is exactly the kind of dropped hedge Section 6 takes apart.)
 - **Rule 13.9:** "Each side is allotted **three one-minute player time-outs**."
-- **Rule 13.10 / 13.11:** the timekeeper announces 15 minutes and 1 minute remaining, then calls **"match time"** — after which each remaining ball gets one **last turn**, in rotation. Then "the side scoring the most wicket and stake points is declared the winner"; if tied, play continues in full rounds.
+- **Rule 13.10 / 13.11:** the timekeeper announces 15 minutes and 1 minute remaining, then calls **"match time"**, after which each remaining ball gets one **last turn**, in rotation. Then "the side scoring the most wicket and stake points is declared the winner"; if tied, play continues in full rounds.
 - The rulebook notes games are "normally an hour ten minutes to two hours."
 
 A **45-second shot clock** in croquet. Remember that the next time someone calls this a slow game for retirees.
 
-:::reveal Name the single biggest structural difference between the American Six-Wicket code and Association Croquet in how a turn begins. ||| Order of play. In American Six-Wicket the rotation is FIXED — blue, red, black, yellow (USCA Rule 1.3(a)) — and you play whichever ball's turn it is. In Association Croquet you CHOOSE which of your side's two balls to play at the start of each turn.
+:::reveal Name the single biggest structural difference between the American Six-Wicket code and Association Croquet in how a turn begins. ||| Order of play. In American Six-Wicket the rotation is FIXED, blue, red, black, yellow (USCA Rule 1.3(a)), and you play whichever ball's turn it is. In Association Croquet you CHOOSE which of your side's two balls to play at the start of each turn.
 
 ## Sources
 - ${USCA_RULES}
@@ -1556,17 +1556,17 @@ Rule 7.1: "When the striker earns the croquet shot, the striker ball becomes '**
 
 Here is what makes the American game different, and it is one word: **deadness persists across turns.** It is not wiped clean when your turn ends. Your ball stays dead on that ball, sitting there, turn after turn, until it runs its next wicket.
 
-So a ball can be **dead on two, or even three, of the other balls** — which means that when its turn comes around, it may have almost nothing it is allowed to hit. A ball that is dead on everything is nearly useless, and your opponent knows it.
+So a ball can be **dead on two, or even three, of the other balls**, which means that when its turn comes around, it may have almost nothing it is allowed to hit. A ball that is dead on everything is nearly useless, and your opponent knows it.
 
-**Vocabulary warning, and this one is a good demonstration of how to read a rulebook.** Coaches and players call this "**carryover deadness**." The phrase is real and everyone uses it — but it appears **zero times in the official 2024 USCA rulebook**. There is no "carryover deadness rule." The concept is exactly what **Rule 7.1** describes. So: use the phrase in conversation, cite **Rule 7.1** when it matters, and never quote a rule number for the phrase itself.
+**Vocabulary warning, and this one is a good demonstration of how to read a rulebook.** Coaches and players call this "**carryover deadness**." The phrase is real and everyone uses it, but it appears **zero times in the official 2024 USCA rulebook**. There is no "carryover deadness rule." The concept is exactly what **Rule 7.1** describes. So: use the phrase in conversation, cite **Rule 7.1** when it matters, and never quote a rule number for the phrase itself.
 
 ## The deadness board
 
-Because deadness is invisible — you cannot look at a ball and see what it is dead on — the American game gives it a physical display. From the rulebook's equipment section:
+Because deadness is invisible, you cannot look at a ball and see what it is dead on, the American game gives it a physical display. From the rulebook's equipment section:
 
 > "In order to aid the contestants (and spectators) in identifying balls which have deadness, a board approximately **2' high x 3' wide** is used with the four ball colors permanently affixed in proper sequence vertically on the left side and **12 colored squares (three each of the four ball colors)**... The white squares can be moved so as to cover or uncover the colored squares to show a ball's deadness." (United States Croquet Association, 2024)
 
-Three squares per ball, because each ball can be dead on the other three. **The whole state of the game is on a board where everyone — including the crowd — can read it.** That is a genuinely thoughtful piece of sports design, and it is unique to this code.
+Three squares per ball, because each ball can be dead on the other three. **The whole state of the game is on a board where everyone, including the crowd, can read it.** That is a genuinely thoughtful piece of sports design, and it is unique to this code.
 
 ## Getting clean again
 
@@ -1576,7 +1576,7 @@ There are three ways out of deadness, and all three are cited:
 2. **The 1-back clearing (Rule 7.3).** "As each ball of both sides scores its 1-back wicket, the opposing side has the option of clearing the deadness from either of its balls that is eligible for a clearing." You must **declare** which ball before playing the first shot of your next turn, "or no relief shall be given," and Rule 7.3(c) adds that the first colour declared "shall be the one cleared and may not subsequently be changed." Say it once, say it right.
 3. **Blocking relief (Rule 9.2).** If a ball is blocked in a wicket (a stymie), there is deadness relief.
 
-And a fourth, for rover balls: **Rule 10.3.** A rover that is dead on two or more balls clears its deadness by running any wicket in either direction — but remains "last dead" on one ball.
+And a fourth, for rover balls: **Rule 10.3.** A rover that is dead on two or more balls clears its deadness by running any wicket in either direction, but remains "last dead" on one ball.
 
 ## Why this changes everything strategically
 
@@ -1584,7 +1584,7 @@ In Association Croquet, your break-building problem is *arranging* the balls. In
 
 The board tells your opponent exactly how poor you are. Play accordingly.
 
-:::reveal A friend cites "USCA carryover deadness rule" and gives you a rule number. What is wrong, and what is the correct citation? ||| The phrase "carryover deadness" appears ZERO times in the official 2024 USCA rulebook — there is no rule of that name and no rule number for it. The CONCEPT is real: deadness persists across turns until the ball scores its next wicket, and that is what Rule 7.1 says. Cite Rule 7.1; treat "carryover deadness" as coaching slang.
+:::reveal A friend cites "USCA carryover deadness rule" and gives you a rule number. What is wrong, and what is the correct citation? ||| The phrase "carryover deadness" appears ZERO times in the official 2024 USCA rulebook, there is no rule of that name and no rule number for it. The CONCEPT is real: deadness persists across turns until the ball scores its next wicket, and that is what Rule 7.1 says. Cite Rule 7.1; treat "carryover deadness" as coaching slang.
 
 ## Sources
 - ${USCA_RULES}`,
@@ -1592,7 +1592,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
         {
           prompt: "In American Six-Wicket, what is the order of play, and can you choose your ball?",
           answer:
-            "Blue, red, black, yellow — a fixed rotation (Rule 1.3(a)). You cannot choose; you play whichever ball's turn it is. (Association Croquet is the opposite: you choose.)",
+            "Blue, red, black, yellow, a fixed rotation (Rule 1.3(a)). You cannot choose; you play whichever ball's turn it is. (Association Croquet is the opposite: you choose.)",
         },
         {
           prompt: "How long does a striker have to play a shot in the American game?",
@@ -1611,10 +1611,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "Which body governs American Six-Wicket, and what is its current rulebook?",
             options: [
-              "The WCF — the Laws of Association Croquet, 7th ed.",
-              "The USCA — The Official Rules of American Six Wicket Croquet, revised 2024",
-              "Croquet England — the Golf Croquet Rules",
-              "No one — it is an informal code",
+              "The WCF, the Laws of Association Croquet, 7th ed.",
+              "The USCA, The Official Rules of American Six Wicket Croquet, revised 2024",
+              "Croquet England, the Golf Croquet Rules",
+              "No one, it is an informal code",
             ],
             correctIndex: 1,
             explanation:
@@ -1631,12 +1631,12 @@ The board tells your opponent exactly how poor you are. Play accordingly.
             ],
             correctIndex: 1,
             explanation:
-              "Rule 1.3(a) — the colours descend the centre stake in that order. Choosing your ball each turn is the ASSOCIATION code, not this one.",
+              "Rule 1.3(a), the colours descend the centre stake in that order. Choosing your ball each turn is the ASSOCIATION code, not this one.",
             sourceLessonSlug: "american-six-wicket",
           },
           {
             prompt: "How many points does a side need to win an American Six-Wicket game?",
-            options: ["13", "26 — 12 wicket points plus the stake point, for each of the side's two balls", "7", "24"],
+            options: ["13", "26, 12 wicket points plus the stake point, for each of the side's two balls", "7", "24"],
             correctIndex: 1,
             explanation:
               "Rule 1.1(b) and Rule 10.4. The side must stake out BOTH balls (or, in a time-limited game, score the most points).",
@@ -1652,7 +1652,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
             ],
             correctIndex: 0,
             explanation:
-              "And crucially, that deadness PERSISTS across turns — it is not wiped when your turn ends. That is the signature of the American code.",
+              "And crucially, that deadness PERSISTS across turns, it is not wiped when your turn ends. That is the signature of the American code.",
             sourceLessonSlug: "deadness",
           },
           {
@@ -1660,7 +1660,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
             options: [
               "It is USCA Rule 7.2",
               "It is a term defined in the rulebook's glossary",
-              "It appears ZERO times in the official 2024 rulebook — it is coaching slang for what Rule 7.1 describes",
+              "It appears ZERO times in the official 2024 rulebook, it is coaching slang for what Rule 7.1 describes",
               "It is an Association Croquet term",
             ],
             correctIndex: 2,
@@ -1671,21 +1671,21 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "Roughly how big is a deadness board, and what is on it?",
             options: [
-              "About 2 ft high by 3 ft wide, with the four ball colours down the left and 12 coloured squares — three per ball",
+              "About 2 ft high by 3 ft wide, with the four ball colours down the left and 12 coloured squares, three per ball",
               "A pocket-sized scorecard carried by the referee",
               "A digital screen required at every club",
               "A 6 ft square scoreboard with 26 squares",
             ],
             correctIndex: 0,
             explanation:
-              "Three squares per ball, because each ball can be dead on the other three. The full state of the game is public — spectators included.",
+              "Three squares per ball, because each ball can be dead on the other three. The full state of the game is public, spectators included.",
             sourceLessonSlug: "deadness",
           },
           {
             prompt: "What is the 1-back clearing (Rule 7.3)?",
             options: [
               "Deadness is cleared automatically for everyone at 1-back",
-              "As each ball scores its 1-back wicket, the OPPOSING side may clear the deadness from one of its eligible balls — and must declare which before playing its next first shot",
+              "As each ball scores its 1-back wicket, the OPPOSING side may clear the deadness from one of its eligible balls, and must declare which before playing its next first shot",
               "A ball at 1-back may roquet any ball twice",
               "It clears the deadness board at half time",
             ],
@@ -1699,7 +1699,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
             options: ["No limit", "45 seconds after the previous shot is completed", "10 seconds", "Two minutes"],
             correctIndex: 1,
             explanation:
-              "Rule 13.8 ('Shot and Game Clocks'), with the timekeeper announcing when 15 seconds remain. Note the rule's own qualifier — the shot clock applies 'in a time limit game', not to every American game. A 45-second shot clock is not a slow game.",
+              "Rule 13.8 ('Shot and Game Clocks'), with the timekeeper announcing when 15 seconds remain. Note the rule's own qualifier, the shot clock applies 'in a time limit game', not to every American game. A 45-second shot clock is not a slow game.",
             sourceLessonSlug: "american-six-wicket",
           },
           {
@@ -1725,7 +1725,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
             prompt: "How does a rover ball dead on two or more balls clear its deadness (Rule 10.3)?",
             options: [
               "It cannot",
-              "By running any wicket in either direction — though it remains 'last dead' on one ball",
+              "By running any wicket in either direction, though it remains 'last dead' on one ball",
               "By staking out",
               "By waiting one full rotation",
             ],
@@ -1736,8 +1736,8 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "Is choosing which of your two balls to play part of the standard American game?",
             options: [
-              "Yes — it is the core of American strategy",
-              "No — the rotation is fixed. A ball choice exists only as an EXPERIMENTAL rule (17.1) in one narrow case",
+              "Yes, it is the core of American strategy",
+              "No, the rotation is fixed. A ball choice exists only as an EXPERIMENTAL rule (17.1) in one narrow case",
               "Only in doubles",
               "Only in handicap play",
             ],
@@ -1749,7 +1749,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "Strategically, what does deadness add on top of Association Croquet's break-building problem?",
             options: [
-              "Nothing — it is cosmetic",
+              "Nothing, it is cosmetic",
               "A resource that runs out: every roquet spends something, and the board shows your opponent exactly how poor you are",
               "A time limit",
               "Extra points",
@@ -1770,8 +1770,8 @@ The board tells your opponent exactly how poor you are. Play accordingly.
             prompt: "May an American Six-Wicket game be shortened?",
             options: [
               "No",
-              "Yes — Rule 16.1 provides a 14-point game (6 wicket points plus the stake, per ball)",
-              "Yes — down to 7 points, as in Golf Croquet",
+              "Yes, Rule 16.1 provides a 14-point game (6 wicket points plus the stake, per ball)",
+              "Yes, down to 7 points, as in Golf Croquet",
               "Only in juniors' play",
             ],
             correctIndex: 1,
@@ -1792,24 +1792,24 @@ The board tells your opponent exactly how poor you are. Play accordingly.
     // ══════════════════════════════════════════════════════════════════════════════════════════
     {
       slug: "victorian-craze",
-      title: "21 · Where croquet came from — and what nobody can prove",
+      title: "21 · Where croquet came from, and what nobody can prove",
       section: "6 · History you can actually check",
       body: `Croquet's history is genuinely interesting. It is also **badly told almost everywhere**, because it is exactly the kind of history where a charming, uncited claim gets repeated until it sounds like a fact. This section separates the two.
 
 ## What can be said with confidence
 
-By the early 1860s croquet was a mass craze in Britain, and one man is at the centre of the documented record: **John Jaques II** (1820–1890), a London sports-equipment manufacturer. He is in the **World Croquet Federation's Hall of Fame** (inducted 2007), and the WCF's own citation says that "by the early 1860s he was recognized as the game's leading expert," and that in **1864** he "wrote and published *Croquet; the Laws and Regulations of the Game* **which is recognizably the foundation of the modern laws of Association Croquet**" (World Croquet Federation, n.d.).
+By the early 1860s croquet was a mass craze in Britain, and one man is at the centre of the documented record: **John Jaques II** (1820-1890), a London sports-equipment manufacturer. He is in the **World Croquet Federation's Hall of Fame** (inducted 2007), and the WCF's own citation says that "by the early 1860s he was recognized as the game's leading expert," and that in **1864** he "wrote and published *Croquet; the Laws and Regulations of the Game* **which is recognizably the foundation of the modern laws of Association Croquet**" (World Croquet Federation, n.d.).
 
 That is a strong, checkable claim from a governing body: the modern Association Croquet laws trace back to an 1864 rulebook published by a manufacturer who was also selling the sets.
 
-Hold that thought — a company that writes the rules *and* sells the equipment is a business model, and Section 8 comes back to it.
+Hold that thought, a company that writes the rules *and* sells the equipment is a business model, and Section 8 comes back to it.
 
 ## What is disputed, and should be presented as disputed
 
 **Where croquet actually came from is not settled.**
 
-- The most-repeated version is that croquet arrived in England **from Ireland around 1850–52**. **OxfordCroquet**, a long-standing croquet reference site, calls the standard telling — croquet "emerging from the mists of Ireland around 1850" — a "**somewhat dubious refusal to acknowledge a really foreign source**," and argues instead for descent from the French game *jeu de mail* (OxfordCroquet, n.d.).
-- The Jaques company's own marketing says it introduced croquet to Britain and exhibited at the **1851 Great Exhibition**, publishing the first English rulebook in **1857**. That claim is sourced chiefly to **the company's own blog** — and even that page concedes there is a rival claim (Jaques of London, n.d.). The WCF's Hall of Fame citation does **not** mention 1851 or 1857; it credits the **1864** rulebook.
+- The most-repeated version is that croquet arrived in England **from Ireland around 1850-52**. **OxfordCroquet**, a long-standing croquet reference site, calls the standard telling, croquet "emerging from the mists of Ireland around 1850", a "**somewhat dubious refusal to acknowledge a really foreign source**," and argues instead for descent from the French game *jeu de mail* (OxfordCroquet, n.d.).
+- The Jaques company's own marketing says it introduced croquet to Britain and exhibited at the **1851 Great Exhibition**, publishing the first English rulebook in **1857**. That claim is sourced chiefly to **the company's own blog**, and even that page concedes there is a rival claim (Jaques of London, n.d.). The WCF's Hall of Fame citation does **not** mention 1851 or 1857; it credits the **1864** rulebook.
 
 **So here is how this course handles it, and it is a rule you can use for the rest of your life:**
 
@@ -1819,9 +1819,9 @@ Load-bearing claim: **1864, Jaques, cited to the WCF.** The 1851 and 1857 claims
 
 ## The standard scholarly reference
 
-If you want to go deeper than any website, the accepted book-length history is **Prichard, D. M. C. (1981). *The History of Croquet*. London: Cassell.** It was written with the cooperation of the Croquet Association and is the work later historians cite. This course does not quote it, because this course did not read it — which is itself the point. **Do not cite what you have not read.**
+If you want to go deeper than any website, the accepted book-length history is **Prichard, D. M. C. (1981). *The History of Croquet*. London: Cassell.** It was written with the cooperation of the Croquet Association and is the work later historians cite. This course does not quote it, because this course did not read it, which is itself the point. **Do not cite what you have not read.**
 
-:::reveal What is the strongest, best-sourced claim about croquet's origins that this course will make — and what is the weakest claim it refuses to make? ||| Strongest: John Jaques II published "Croquet; the Laws and Regulations of the Game" in 1864, which the World Croquet Federation's own Hall of Fame citation calls "recognizably the foundation of the modern laws of Association Croquet." Weakest / refused: that croquet "came from Ireland around 1850," or that Jaques "introduced croquet to Britain" and won a medal at the 1851 Great Exhibition — those are disputed and are sourced mainly to the company's own marketing.
+:::reveal What is the strongest, best-sourced claim about croquet's origins that this course will make, and what is the weakest claim it refuses to make? ||| Strongest: John Jaques II published "Croquet; the Laws and Regulations of the Game" in 1864, which the World Croquet Federation's own Hall of Fame citation calls "recognizably the foundation of the modern laws of Association Croquet." Weakest / refused: that croquet "came from Ireland around 1850," or that Jaques "introduced croquet to Britain" and won a medal at the 1851 Great Exhibition, those are disputed and are sourced mainly to the company's own marketing.
 
 ## Sources
 - World Croquet Federation. (n.d.). *John Jaques II* [Hall of Fame citation]. https://worldcroquet.org/john-jaques-ii/
@@ -1833,13 +1833,13 @@ If you want to go deeper than any website, the accepted book-length history is *
       slug: "wimbledon-pivot",
       title: "22 · The croquet club that became Wimbledon",
       section: "6 · History you can actually check",
-      body: `This is the best-documented story in croquet, because the organisation it happened to is still around, is very rich, and publishes its own history. The source here is the **Wimbledon Compendium** — the All England Lawn Tennis Club's own official reference book (All England Lawn Tennis Club, 2025).
+      body: `This is the best-documented story in croquet, because the organisation it happened to is still around, is very rich, and publishes its own history. The source here is the **Wimbledon Compendium**, the All England Lawn Tennis Club's own official reference book (All England Lawn Tennis Club, 2025).
 
 ## The facts, from the club's own record
 
 > "The story begins on **23 July 1868** when John H. Walsh, Capt. R.F. Dalton, J. Hinde Hale, the Revd. A. Law, S.H. Clarke Maddock and Walter Jones Whitmore met in the offices of Herbert Cox, the publisher of *The Field*, at **346 Strand in London**, and the **All England Croquet Club** was founded." (All England Lawn Tennis Club, 2025)
 
-**Read the address.** The All England Croquet Club was founded **in central London, on the Strand** — *not* at Wimbledon. It **moved** to Wimbledon in **October 1869**, to a four-acre ground off Worple Road.
+**Read the address.** The All England Croquet Club was founded **in central London, on the Strand**, *not* at Wimbledon. It **moved** to Wimbledon in **October 1869**, to a four-acre ground off Worple Road.
 
 Almost every retelling you will find says "founded at Wimbledon in 1868." It is wrong, and the club's own book says so. This is a free, painless lesson in what happens when everyone copies everyone: **the error survives because nobody opens the primary source.**
 
@@ -1850,10 +1850,10 @@ Almost every retelling you will find says "founded at Wimbledon in 1868." It is 
 One lawn. That is how it starts.
 
 - **April 1877:** the club is re-named "The All England Croquet and Lawn Tennis Club."
-- **1877:** the first Championship is held — **22 entries, gentlemen only**.
+- **1877:** the first Championship is held, **22 entries, gentlemen only**.
 - **1881:** the club raises enough money to buy the Worple Road ground; "the following year **croquet ceased to be played**" and it became the **All England Lawn Tennis Club**.
 
-So: a croquet club, running out of money, rents out one lawn to a fashionable new game — and within seven years the new game has eaten it, and croquet is gone from the grounds entirely.
+So: a croquet club, running out of money, rents out one lawn to a fashionable new game, and within seven years the new game has eaten it, and croquet is gone from the grounds entirely.
 
 ## The postscript nobody tells you
 
@@ -1865,7 +1865,7 @@ That word "Croquet" in the name of the most famous tennis tournament on earth is
 
 Croquet's Victorian boom was enormous and **it ended fast**. Any story that treats croquet's decline as slow and dignified is not paying attention: the sport lost its own flagship club to a game that was three years old.
 
-:::reveal Where was the All England Croquet Club actually founded, and what did the club do in 1875 that changed sport forever? ||| It was founded on 23 July 1868 in central London — in a publisher's offices at 346 Strand — NOT at Wimbledon (it moved to Wimbledon in October 1869). In 1875, with croquet's popularity and the club's finances both fading, the committee set aside ONE croquet lawn for the new game of lawn tennis. By 1882 croquet had ceased to be played there and the club had become the All England Lawn Tennis Club.
+:::reveal Where was the All England Croquet Club actually founded, and what did the club do in 1875 that changed sport forever? ||| It was founded on 23 July 1868 in central London, in a publisher's offices at 346 Strand, NOT at Wimbledon (it moved to Wimbledon in October 1869). In 1875, with croquet's popularity and the club's finances both fading, the committee set aside ONE croquet lawn for the new game of lawn tennis. By 1882 croquet had ceased to be played there and the club had become the All England Lawn Tennis Club.
 
 ## Sources
 - All England Lawn Tennis Club. (2025). *The Wimbledon compendium 2025* (pp. 18–19; history section adapted from J. Barrett, *Wimbledon: The Official History*). https://www.wimbledon.com/pdf/2025_Wimbledon_Compendium_W_250617.pdf`,
@@ -1894,8 +1894,8 @@ The source throughout is **Olympedia**, the scholarly Olympic-history database m
 
 | | |
 |---|---|
-| **Venue and dates** | Cercle du Bois de Boulogne, Paris; 28 June – 22 July 1900 |
-| **Total competitors** | **10** — seven men and **three women** |
+| **Venue and dates** | Cercle du Bois de Boulogne, Paris; 28 June, 22 July 1900 |
+| **Total competitors** | **10**, seven men and **three women** |
 | **Nations** | **One.** France. Every medal went to France. |
 | **Events** | Three medal events (Singles One Ball; Singles Two Balls; Doubles), plus one non-medal handicap singles |
 | **Singles, One Ball** | Nine competitors, 28 June 1900. Gold **Gaston Aumoitte**; silver **Georges Johin**; bronze **Chrétien Waydelich** |
@@ -1912,33 +1912,33 @@ The three women were **Jeanne Filleul-Brohy**, **Marie Ohier**, and **Louise Ann
 
 Read what they did again, because it is easy to skim past. **They were not in a separate women's event.** There wasn't one. They entered the same competition as the men and played against them. In 1900. In a Europe where women could not vote almost anywhere.
 
-## Now the correction — and this is the lesson
+## Now the correction, and this is the lesson
 
 You will read, in many places, that **"the croquet women were the first female Olympians."**
 
-**That is false.** Olympedia's entry for **Hélène de Pourtalès** states that on **22 May 1900** she was part of the crew of the yacht *Lérina*, which won its class — "This made her **the first woman to compete at the Olympics and the first female Olympic medalist**" (Olympedia, n.d.-b).
+**That is false.** Olympedia's entry for **Hélène de Pourtalès** states that on **22 May 1900** she was part of the crew of the yacht *Lérina*, which won its class, "This made her **the first woman to compete at the Olympics and the first female Olympic medalist**" (Olympedia, n.d.-b).
 
 **22 May beats 28 June by five weeks.** Sailing was first. Croquet was close behind.
 
-And note who gets this wrong: not just random blogs. The **New-York Historical Society's own blog** states that "since the croquet match took place first, the women croquet players were the very first female Olympians" — and also says *two* women, not three (New-York Historical Society, n.d.).
+And note who gets this wrong: not just random blogs. The **New-York Historical Society's own blog** states that "since the croquet match took place first, the women croquet players were the very first female Olympians", and also says *two* women, not three (New-York Historical Society, n.d.).
 
 An institution with a research library published it. It is still wrong. **Check the primary source, even when the source that got it wrong is impressive.**
 
-**The defensible version — the one this course teaches:** croquet was **one of the first Olympic events in which women competed**, and — unusually, and much more interestingly — **the women competed directly against the men in the same competition.** That claim is true, it is sourced, and it is a better story than the false one.
+**The defensible version, the one this course teaches:** croquet was **one of the first Olympic events in which women competed**, and (unusually, and much more interestingly) **the women competed directly against the men in the same competition.** That claim is true, it is sourced, and it is a better story than the false one.
 
 ## Roque, 1904: the sequel nobody remembers
 
-Four years later, at the St. Louis Games, the Olympics held **roque** — the American hard-court variant, whose name Olympedia notes is croquet "with the initial 'c' and the trailing 't' dropped" (Olympedia, n.d.-c).
+Four years later, at the St. Louis Games, the Olympics held **roque**, the American hard-court variant, whose name Olympedia notes is croquet "with the initial 'c' and the trailing 't' dropped" (Olympedia, n.d.-c).
 
-- 3–8 August 1904, Francis Field, Washington University, St. Louis
-- **One event** (Singles, Men) and **four competitors — all American**
+- 3-8 August 1904, Francis Field, Washington University, St. Louis
+- **One event** (Singles, Men) and **four competitors, all American**
 - Gold **Charles Jacobus**, silver **Smith Streeter**, bronze **Charles Brown**
 
 Olympedia's verdict is flat: "**Croquet, or roque, has never again been contested at the Olympics**, and there are no plans for this in future."
 
 Two appearances. Fourteen athletes between them. Both times, one country won everything.
 
-:::reveal What is the accurate claim about women at the 1900 Olympic croquet event, and what is the popular claim that is false? ||| ACCURATE: croquet was one of the first Olympic events in which women competed (28 June 1900), and — unusually — the three women (Jeanne Filleul-Brohy, Marie Ohier and Louise Després) competed directly AGAINST the men in the same competition. FALSE: that they were "the first female Olympians." Hélène de Pourtalès competed in yachting on 22 May 1900, five weeks earlier, and is recorded as the first woman to compete at the Olympics and the first female Olympic medalist.
+:::reveal What is the accurate claim about women at the 1900 Olympic croquet event, and what is the popular claim that is false? ||| ACCURATE: croquet was one of the first Olympic events in which women competed (28 June 1900), and (unusually) the three women (Jeanne Filleul-Brohy, Marie Ohier and Louise Després) competed directly AGAINST the men in the same competition. FALSE: that they were "the first female Olympians." Hélène de Pourtalès competed in yachting on 22 May 1900, five weeks earlier, and is recorded as the first woman to compete at the Olympics and the first female Olympic medalist.
 
 ## Sources
 - Olympedia. (n.d.-a). *Croquet at the 1900 Summer Olympics*. http://www.olympedia.org/editions/2/sports/CQT
@@ -1949,7 +1949,7 @@ Two appearances. Fourteen athletes between them. Both times, one country won eve
         {
           prompt: "Where was the All England Croquet Club founded, and why does the usual answer get it wrong?",
           answer:
-            "At 346 Strand, in central London, on 23 July 1868 — not at Wimbledon. It moved to Wimbledon in October 1869. The error survives because retellings copy each other instead of opening the club's own Compendium.",
+            "At 346 Strand, in central London, on 23 July 1868, not at Wimbledon. It moved to Wimbledon in October 1869. The error survives because retellings copy each other instead of opening the club's own Compendium.",
         },
         {
           prompt: "What happened to croquet at the All England Croquet Club after 1875?",
@@ -1964,7 +1964,7 @@ Two appearances. Fourteen athletes between them. Both times, one country won eve
       section: "6 · History you can actually check",
       body: `Every course makes choices about what to leave out. Most courses do not tell you what they cut. This one does, because **the cuts are the lesson.**
 
-Here is every well-loved croquet claim that this course checked and then refused to state as fact — and what happened when it was checked.
+Here is every well-loved croquet claim that this course checked and then refused to state as fact, and what happened when it was checked.
 
 ## 1. "The croquet women were the first female Olympians"
 
@@ -1976,7 +1976,7 @@ Here is every well-loved croquet claim that this course checked and then refused
 
 **Verdict: half-true, and the popular version launders a hedge into a statistic.** This one is the most interesting cut in the whole course.
 
-It is not folklore. It really is in **the Official Report of the 1900 Games** — which is quoted at length by **Chris Hudson, then Secretary-General of the World Croquet Federation**, in *Croquet World Online Magazine* (Hudson, 1999). Here is the passage:
+It is not folklore. It really is in **the Official Report of the 1900 Games**, which is quoted at length by **Chris Hudson, then Secretary-General of the World Croquet Federation**, in *Croquet World Online Magazine* (Hudson, 1999). Here is the passage:
 
 > "One must admit that there were not many players; about a dozen... Spectators were not at all numerous; although I must mention an English lover of the game who made the journey from Nice to Paris to watch the first matches of the competition; **unless I am very much mistaken, however, this gentleman was the only paying spectator**." (Official Report of the 1900 Games, as quoted and translated by Hudson, 1999)
 
@@ -1984,21 +1984,21 @@ Look at what the writer actually wrote: ***"unless I am very much mistaken."*** 
 
 A hundred and twenty-six years of retelling turned "I think, but I'm not sure" into "**fact: one paying spectator**." Nothing was invented. A hedge was simply **dropped**, and the sentence hardened.
 
-**Two more honest notes.** First: this course verified the **English translation as published by the WCF**, not the French original — so the correct attribution is "the Official Report, as quoted and translated by the World Croquet Federation," not "the Official Report" flat. Second: Olympedia, the scholarly Olympic database, **does not mention the spectator claim at all**, and warns that "very little is known about croquet at the 1900 Olympics" and that "some Olympic historians will state that it was not an Olympic sport" (Olympedia, n.d.).
+**Two more honest notes.** First: this course verified the **English translation as published by the WCF**, not the French original, so the correct attribution is "the Official Report, as quoted and translated by the World Croquet Federation," not "the Official Report" flat. Second: Olympedia, the scholarly Olympic database, **does not mention the spectator claim at all**, and warns that "very little is known about croquet at the 1900 Olympics" and that "some Olympic historians will state that it was not an Olympic sport" (Olympedia, n.d.).
 
-The same Official Report also sneers that croquet "**has hardly any pretensions to athleticism**" — and then, remarkably, defends it: "One would be wrong, however, to disdain croquet. It develops a combinative mind — one has only to see it **transform young girls into reasoners, and from reasoners into reasonable people**" (as quoted by Hudson, 1999). Read that sentence twice. It is 1900 congratulating itself for noticing that women can think.
+The same Official Report also sneers that croquet "**has hardly any pretensions to athleticism**", and then, remarkably, defends it: "One would be wrong, however, to disdain croquet. It develops a combinative mind, one has only to see it **transform young girls into reasoners, and from reasoners into reasonable people**" (as quoted by Hudson, 1999). Read that sentence twice. It is 1900 congratulating itself for noticing that women can think.
 
 ## 3. "Croquet was banned in Boston by a clergyman"
 
 **Verdict: cannot verify a ban. Cut.**
 
-A clergyman **denouncing** something is not a ban. The USCA's own history says only that "the Boston clergy **spoke out against** the drinking, gambling, and licentious behavior" around croquet — no ban, and no citation. The vivid quote that always travels with this story (croquet as "the gaping jaw of Hades") circulates only through blogs and club pages, with no primary source attached.
+A clergyman **denouncing** something is not a ban. The USCA's own history says only that "the Boston clergy **spoke out against** the drinking, gambling, and licentious behavior" around croquet, no ban, and no citation. The vivid quote that always travels with this story (croquet as "the gaping jaw of Hades") circulates only through blogs and club pages, with no primary source attached.
 
 Denunciation is real and interesting. "Banned" is a stronger word than anybody can support, so this course does not use it.
 
 ## 4. "Jaques introduced croquet to Britain and won a medal at the 1851 Great Exhibition"
 
-**Verdict: sourced to the company's own marketing. Cut, or hedged.** See Lesson 21. The WCF's Hall of Fame citation credits the **1864** rulebook — that is what this course stands on.
+**Verdict: sourced to the company's own marketing. Cut, or hedged.** See Lesson 21. The WCF's Hall of Fame citation credits the **1864** rulebook, that is what this course stands on.
 
 ## 5. "Croquet came to England from Ireland around 1850"
 
@@ -2008,22 +2008,22 @@ Denunciation is real and interesting. "Banned" is a stronger word than anybody c
 
 **Verdict: false.** Founded at 346 Strand, London; moved to Wimbledon the following year. The club's own Compendium says so.
 
-## But the Victorian gender story is REAL — here is where to find it
+## But the Victorian gender story is REAL, here is where to find it
 
-None of this means the "croquet challenged Victorian gender roles" story is a myth. It is real, and it is **peer-reviewed** — which is exactly why it survives checking when the anecdotes do not.
+None of this means the "croquet challenged Victorian gender roles" story is a myth. It is real, and it is **peer-reviewed**, which is exactly why it survives checking when the anecdotes do not.
 
 - **Sterngass, J. (1998). Cheating, gender roles, and the nineteenth-century croquet craze. *Journal of Sport History*, 25(3), 398–418.** The argument: croquet's mixed-gender competition challenged Victorian ideas about womanhood; women frequently beat men, and were then **accused of cheating** — of using the "push shot," or of nudging the ball under their skirts.
 - **Beissel Heath, M. (2012). Not "all ridges and furrows" and "uncroquetable lawns": Croquet, female citizenship, and 1860s domestic chronicles. *Critical Survey*, 24(1), 43–56.**
 
-**An honesty note this course owes you:** it did **not** read the Sterngass article itself — the summary above follows *JSTOR Daily*'s account of it (JSTOR Daily, n.d.). That is why the article is named with full bibliographic detail: **so you can go and check, which is the entire point.** If you want the vivid period line about croquet as "a source of slumbering depravity, a veritable Frankenstein monster of recreation," it is quoted *in* Sterngass — go and read it there, and cite it as *quoted in Sterngass*, not as if you found it yourself.
+**An honesty note this course owes you:** it did **not** read the Sterngass article itself, the summary above follows *JSTOR Daily*'s account of it (JSTOR Daily, n.d.). That is why the article is named with full bibliographic detail: **so you can go and check, which is the entire point.** If you want the vivid period line about croquet as "a source of slumbering depravity, a veritable Frankenstein monster of recreation," it is quoted *in* Sterngass, go and read it there, and cite it as *quoted in Sterngass*, not as if you found it yourself.
 
 ## The transferable skill
 
-Six claims. Three false, two hedged into shape, one only half-checkable. Not one of them was *malicious* — every single one started as something true-ish and got worn smooth by repetition.
+Six claims. Three false, two hedged into shape, one only half-checkable. Not one of them was *malicious*, every single one started as something true-ish and got worn smooth by repetition.
 
 **That is what happens to claims. Check the ones you plan to repeat.**
 
-:::reveal The "only one paying spectator at the 1900 Olympic croquet" story turned out not to be folklore. So what exactly is wrong with the way it is usually told? ||| The claim IS in the Official Report of the 1900 Games — but the writer hedged it: "unless I am very much mistaken, however, this gentleman was the only paying spectator." Retelling dropped the hedge and turned "I think, but I'm not sure" into a hard statistic. Nothing was invented; a qualifier was simply lost. (Also: the verified text is the WCF's English translation, not the French original, and Olympedia does not mention the claim at all.)
+:::reveal The "only one paying spectator at the 1900 Olympic croquet" story turned out not to be folklore. So what exactly is wrong with the way it is usually told? ||| The claim IS in the Official Report of the 1900 Games, but the writer hedged it: "unless I am very much mistaken, however, this gentleman was the only paying spectator." Retelling dropped the hedge and turned "I think, but I'm not sure" into a hard statistic. Nothing was invented; a qualifier was simply lost. (Also: the verified text is the WCF's English translation, not the French original, and Olympedia does not mention the claim at all.)
 
 ## Sources
 - Hudson, C. (1999). *Croquet in the Olympics* [Quoting and translating the Official Report of the 2nd Olympic Games]. Croquet World Online Magazine. http://www.croquetworld.com/News/Olympics.asp
@@ -2037,12 +2037,12 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
         {
           prompt: "Who was the first woman to compete at the modern Olympics, and in what sport?",
           answer:
-            "Hélène de Pourtalès, in yachting, on 22 May 1900 — five weeks before croquet's event began on 28 June. Croquet's three women were among the first female Olympians, but not the first.",
+            "Hélène de Pourtalès, in yachting, on 22 May 1900, five weeks before croquet's event began on 28 June. Croquet's three women were among the first female Olympians, but not the first.",
         },
         {
           prompt: "What was genuinely unusual about the women in the 1900 Olympic croquet event?",
           answer:
-            "They competed directly against the men in the same competition — there was no separate women's event. Louise Després finished fifth.",
+            "They competed directly against the men in the same competition, there was no separate women's event. Louise Després finished fifth.",
         },
       ],
     },
@@ -2057,7 +2057,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             prompt: "What is the best-sourced claim about the foundation of the modern Association Croquet laws?",
             options: [
               "Jaques introduced croquet to Britain at the 1851 Great Exhibition",
-              "John Jaques II published 'Croquet; the Laws and Regulations of the Game' in 1864 — which the WCF's Hall of Fame calls 'recognizably the foundation of the modern laws of Association Croquet'",
+              "John Jaques II published 'Croquet; the Laws and Regulations of the Game' in 1864, which the WCF's Hall of Fame calls 'recognizably the foundation of the modern laws of Association Croquet'",
               "The rules came from Ireland in 1850",
               "The All England Croquet Club wrote them in 1868",
             ],
@@ -2070,7 +2070,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             prompt: "How does this course treat the claim that croquet came to England from Ireland around 1850?",
             options: [
               "As settled fact",
-              "As a disputed claim — OxfordCroquet calls it 'somewhat dubious' and argues for the French jeu de mail instead",
+              "As a disputed claim, OxfordCroquet calls it 'somewhat dubious' and argues for the French jeu de mail instead",
               "As deliberately invented",
               "As proven by the WCF",
             ],
@@ -2082,26 +2082,26 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             prompt: "Where and when was the All England Croquet Club founded?",
             options: [
               "At Wimbledon, in 1868",
-              "In central London, at 346 Strand, on 23 July 1868 — it moved to Wimbledon in October 1869",
+              "In central London, at 346 Strand, on 23 July 1868, it moved to Wimbledon in October 1869",
               "At Worple Road, in 1875",
               "In Paris, in 1900",
             ],
             correctIndex: 1,
             explanation:
-              "The club's own Wimbledon Compendium records the founding meeting in a publisher's offices on the Strand. 'Founded at Wimbledon' is the version everyone copies — and it is wrong.",
+              "The club's own Wimbledon Compendium records the founding meeting in a publisher's offices on the Strand. 'Founded at Wimbledon' is the version everyone copies, and it is wrong.",
             sourceLessonSlug: "wimbledon-pivot",
           },
           {
             prompt: "What did the All England Croquet Club do in 1875, and what did it lead to?",
             options: [
               "It banned croquet outright",
-              "With croquet's popularity and its finances fading, it set aside ONE lawn for lawn tennis — and by 1882 croquet had ceased to be played there",
+              "With croquet's popularity and its finances fading, it set aside ONE lawn for lawn tennis, and by 1882 croquet had ceased to be played there",
               "It moved to Paris",
               "It merged with the Croquet Association",
             ],
             correctIndex: 1,
             explanation:
-              "The first Championship followed in 1877 (22 entries, gentlemen only). Croquet returned to the club's name in 1899 and as a sport in 1957 — which is why the club is still the All England Lawn Tennis AND CROQUET Club.",
+              "The first Championship followed in 1877 (22 entries, gentlemen only). Croquet returned to the club's name in 1899 and as a sport in 1957, which is why the club is still the All England Lawn Tennis AND CROQUET Club.",
             sourceLessonSlug: "wimbledon-pivot",
           },
           {
@@ -2109,14 +2109,14 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             options: ["10 athletes, from 1 nation (France)", "72 athletes, from 12 nations", "4 athletes, from 1 nation", "22 athletes, from 3 nations"],
             correctIndex: 0,
             explanation:
-              "Ten competitors — seven men and three women — all French. Every medal went to France. That is croquet's entire Olympic history.",
+              "Ten competitors, seven men and three women, all French. Every medal went to France. That is croquet's entire Olympic history.",
             sourceLessonSlug: "women-and-the-1900-olympics",
           },
           {
             prompt: "What was genuinely unusual about the three women in the 1900 Olympic croquet event?",
             options: [
               "They were the first female Olympians",
-              "They competed directly against the men in the same competition — there was no separate women's event",
+              "They competed directly against the men in the same competition, there was no separate women's event",
               "They won all three medals",
               "They were the only competitors",
             ],
@@ -2129,7 +2129,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             prompt: "Why is 'the croquet women were the first female Olympians' false?",
             options: [
               "Because no women competed in 1900",
-              "Because Hélène de Pourtalès competed in yachting on 22 May 1900 — five weeks before croquet began on 28 June",
+              "Because Hélène de Pourtalès competed in yachting on 22 May 1900, five weeks before croquet began on 28 June",
               "Because croquet was not an Olympic sport",
               "Because they competed in a separate event",
             ],
@@ -2142,7 +2142,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             prompt: "What happened to roque at the 1904 St. Louis Olympics?",
             options: [
               "It drew 80 competitors from 12 nations",
-              "One event, four competitors, all American — gold to Charles Jacobus; croquet or roque has never been contested at the Olympics again",
+              "One event, four competitors, all American, gold to Charles Jacobus; croquet or roque has never been contested at the Olympics again",
               "It was cancelled",
               "Women competed against men again",
             ],
@@ -2156,7 +2156,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             options: [
               "Pure folklore with no source",
               "A hard statistic from the Official Report",
-              "Real but hedged — the Official Report says 'unless I am very much mistaken, however, this gentleman was the only paying spectator'; retelling dropped the hedge",
+              "Real but hedged, the Official Report says 'unless I am very much mistaken, however, this gentleman was the only paying spectator'; retelling dropped the hedge",
               "An invention of the WCF",
             ],
             correctIndex: 2,
@@ -2168,7 +2168,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             prompt: "Why does this course cite the 1900 spectator quote as 'the Official Report, as quoted and translated by the World Croquet Federation' rather than just 'the Official Report'?",
             options: [
               "Because the WCF wrote the report",
-              "Because the course verified the WCF's English translation, not the French original — so it says exactly what it checked",
+              "Because the course verified the WCF's English translation, not the French original, so it says exactly what it checked",
               "Because the report is secret",
               "Because the WCF disputes the report",
             ],
@@ -2180,8 +2180,8 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "What is wrong with the claim that croquet was 'banned in Boston' by the clergy?",
             options: [
-              "Nothing — it is well documented",
-              "A ban cannot be verified. The USCA's own history says only that the Boston clergy 'spoke out against' the behaviour around croquet — denouncing is not banning",
+              "Nothing, it is well documented",
+              "A ban cannot be verified. The USCA's own history says only that the Boston clergy 'spoke out against' the behaviour around croquet, denouncing is not banning",
               "It happened in New York, not Boston",
               "It was the police, not the clergy",
             ],
@@ -2208,7 +2208,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             options: [
               "It is out of print",
               "It is unreliable",
-              "Because the course did not read it — and you do not cite what you have not read",
+              "Because the course did not read it, and you do not cite what you have not read",
               "Because the WCF disputes it",
             ],
             correctIndex: 2,
@@ -2220,7 +2220,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             prompt: "What is the general rule this course applies when two sources disagree and one of them is selling something?",
             options: [
               "Average the two",
-              "Cite the one that isn't selling — and say out loud that the other exists",
+              "Cite the one that isn't selling, and say out loud that the other exists",
               "Cite whichever is more famous",
               "Cite neither",
             ],
@@ -2239,7 +2239,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             ],
             correctIndex: 1,
             explanation:
-              "A good source tells you the limits of what it knows. That is a feature, not a weakness — and it is why Olympedia is trustworthy on the parts it does document.",
+              "A good source tells you the limits of what it knows. That is a feature, not a weakness, and it is why Olympedia is trustworthy on the parts it does document.",
             sourceLessonSlug: "myths-we-cut",
           },
         ],
@@ -2257,7 +2257,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
       section: "7 · Clubs, leagues, and the ladder",
       body: `Croquet's handicap system is the most under-appreciated thing in the sport, and for a young player it is the whole reason the sport is worth entering.
 
-**Here is what it does.** It is designed so that, over time, **you win about half your games — against anybody.** Croquet England states the goal plainly: to "give each player an equal chance of winning half of the games he plays over a period of time" (Croquet England, n.d.-a).
+**Here is what it does.** It is designed so that, over time, **you win about half your games, against anybody.** Croquet England states the goal plainly: to "give each player an equal chance of winning half of the games he plays over a period of time" (Croquet England, n.d.-a).
 
 And it is honest about what it is *not*: "Bisques do not transform a poorer player into a better one, just as being given a start does not change a slower runner into a faster one" (Croquet England, n.d.-a). It equalises the *contest*, not the players.
 
@@ -2281,13 +2281,13 @@ This one bites people constantly, so read it twice.
 
 The USCA's own rankings page states: "**add two to your American Croquet handicap to determine your Association Croquet handicap**" (United States Croquet Association, n.d.-a). They are **not the same number**. A handicap range quoted for one code is meaningless in the other.
 
-For that reason this course will **not** quote you a numeric range for the American scale — the USCA does not publish a floor. What it does publish (Part 15) is: "**Handicaps from 20 to 5 change by whole numbers; below 5 handicaps change by half numbers**," and a "**scratch player**" is one with a zero handicap.
+For that reason this course will **not** quote you a numeric range for the American scale, the USCA does not publish a floor. What it does publish (Part 15) is: "**Handicaps from 20 to 5 change by whole numbers; below 5 handicaps change by half numbers**," and a "**scratch player**" is one with a zero handicap.
 
 Refusing to state a range is not a gap in this course. It is the course refusing to make one up.
 
-## How your handicap changes — the Automatic Handicap System
+## How your handicap changes, the Automatic Handicap System
 
-Croquet England runs an **Automatic Handicap System (AHS)** — "the principal method by which handicaps are changed" (Croquet England, n.d.-c). It works like a chess rating:
+Croquet England runs an **Automatic Handicap System (AHS)**, "the principal method by which handicaps are changed" (Croquet England, n.d.-c). It works like a chess rating:
 
 - Every player carries an **index** number.
 - In handicap play, **a win adds 10 to your index; a loss subtracts 10.** (In level play the swing depends on the gap between the handicaps.)
@@ -2301,11 +2301,11 @@ The USCA runs an equivalent: "When a player accumulates a plus or minus of **28 
 
 ## Why this matters more than it sounds
 
-A 15-year-old beginner can walk into a club and, in their **first tournament**, play a genuinely competitive game against a player with forty years of experience — and have a real chance of winning. Not a participation ribbon. A win, in a game where the maths was arranged so the contest would be close.
+A 15-year-old beginner can walk into a club and, in their **first tournament**, play a genuinely competitive game against a player with forty years of experience, and have a real chance of winning. Not a participation ribbon. A win, in a game where the maths was arranged so the contest would be close.
 
 Almost no other sport can do that. It is croquet's single best recruiting argument, and hardly anyone outside the sport knows it exists.
 
-:::reveal What is the goal of the croquet handicap system, and what does it explicitly NOT claim to do? ||| The goal is to give each player an equal chance of winning about half their games over time — an even contest against anyone. It explicitly does not claim to make a weaker player better: as Croquet England puts it, "Bisques do not transform a poorer player into a better one, just as being given a start does not change a slower runner into a faster one."
+:::reveal What is the goal of the croquet handicap system, and what does it explicitly NOT claim to do? ||| The goal is to give each player an equal chance of winning about half their games over time, an even contest against anyone. It explicitly does not claim to make a weaker player better: as Croquet England puts it, "Bisques do not transform a poorer player into a better one, just as being given a start does not change a slower runner into a faster one."
 
 ## Sources
 - Croquet England. (n.d.-a). *Handicapping: background*. https://www.croquet.org.uk/?p=games%2Fassociation%2Fhandicapping%2Fbackground
@@ -2324,7 +2324,7 @@ Almost no other sport can do that. It is croquet's single best recruiting argume
 
 ## Rung 1: a club
 
-**In England and Wales**, the national governing body is **Croquet England** (which is what the Croquet Association renamed itself to in January 2024). Its published scale: "more than **8,000 subscribers**"; "**200 clubs** are members"; **nine regional Federations** and **10 Federation Development Officers**; and — this is worth noticing — "more than **60 volunteer members** help run our organisation, which only employs **three staff**" (Croquet England, n.d.-a).
+**In England and Wales**, the national governing body is **Croquet England** (which is what the Croquet Association renamed itself to in January 2024). Its published scale: "more than **8,000 subscribers**"; "**200 clubs** are members"; **nine regional Federations** and **10 Federation Development Officers**; and (this is worth noticing) "more than **60 volunteer members** help run our organisation, which only employs **three staff**" (Croquet England, n.d.-a).
 
 **In the United States**, the **USCA** was organised in **1977** and is a 501(c)(3) nonprofit (United States Croquet Association, n.d.-a).
 
@@ -2335,9 +2335,9 @@ Almost no other sport can do that. It is croquet's single best recruiting argume
 | The **2024 rulebook**, p. 4 | "over **200** croquet clubs and **3,500** members" |
 | The **About Us** page | "nearly **300** member clubs and **3,000** members" |
 
-Both are official. They cannot both be exactly right. So the honest statement is: **roughly 200–300 clubs and roughly 3,000–3,500 members, and the USCA's own two sources differ.** If you see a course, a blog or an AI confidently state one of those numbers with no caveat, you now know something they didn't.
+Both are official. They cannot both be exactly right. So the honest statement is: **roughly 200-300 clubs and roughly 3,000-3,500 members, and the USCA's own two sources differ.** If you see a course, a blog or an AI confidently state one of those numbers with no caveat, you now know something they didn't.
 
-(One more, while we are here: a widely-ranked country-club blog claims the USCA has five regions including a "Northwest" and a "Southwest." The USCA's own management page lists **six** regions: **Northeast, Mid-Atlantic, Southeast, Florida, Midwest, Western** — and its districts extend to **Bermuda, Canada and Mexico**. The blog is simply wrong.)
+(One more, while we are here: a widely-ranked country-club blog claims the USCA has five regions including a "Northwest" and a "Southwest." The USCA's own management page lists **six** regions: **Northeast, Mid-Atlantic, Southeast, Florida, Midwest, Western**, and its districts extend to **Bermuda, Canada and Mexico**. The blog is simply wrong.)
 
 ## Rung 2: leagues, in tiers
 
@@ -2346,21 +2346,21 @@ England's structure is a beautifully explicit ladder, and it is public (Croquet 
 | Competition | Who it is for |
 |---|---|
 | **AC Tier 1** | Level advanced play, no handicap limit |
-| **AC Tier 2 — the Mary Rose** | Handicaps 0 and above |
-| **AC Inter-Club Handicap — the Longman Trophies** | Handicaps 3.5+, team aggregate ≥ 24 |
-| **GC Tier 1 / Tier 2 (Murphy Shield) / Tier 3 (the Bowl)** | Tier 3 requires a team handicap aggregate ≥ 20 — i.e. it is *for* higher-handicap players |
+| **AC Tier 2, the Mary Rose** | Handicaps 0 and above |
+| **AC Inter-Club Handicap, the Longman Trophies** | Handicaps 3.5+, team aggregate ≥ 24 |
+| **GC Tier 1 / Tier 2 (Murphy Shield) / Tier 3 (the Bowl)** | Tier 3 requires a team handicap aggregate ≥ 20, i.e. it is *for* higher-handicap players |
 | **The All-England Handicap** | Runs club → regional → **national final**, and is explicitly "designed for **newcomers and developing players**" |
 
 Read that last one again. There is a **national final**, played at a national venue, **for beginners**. That is a rung most sports simply do not have.
 
-## Rung 3: the world championship — and here is the number
+## Rung 3: the world championship, and here is the number
 
-The **World Croquet Federation** has **29 member countries** — 13 Full members, plus Associates and Recognised Croquet Organisations (World Croquet Federation, n.d.-b). The AC and GC World Championships are each held **every two years** (AC in odd years, GC in even years).
+The **World Croquet Federation** has **29 member countries**, 13 Full members, plus Associates and Recognised Croquet Organisations (World Croquet Federation, n.d.-b). The AC and GC World Championships are each held **every two years** (AC in odd years, GC in even years).
 
 Now the field sizes, from the WCF's own event pages:
 
-- **2025 Association Croquet World Championship** (National Croquet Center, West Palm Beach, 17–26 October 2025): **72 players** in the main event, plus 5 places from a qualifier. Entry fee **£189 per player**. Won by **Reg Bamford** of South Africa — his **sixth** AC world title — beating Mark Avery of England (World Croquet Federation, n.d.-c).
-- **2026 Golf Croquet World Championship** (Cairo, 21–29 November 2026): "**The event capacity is 80 players**." Entry fee **£189** (World Croquet Federation, n.d.-d).
+- **2025 Association Croquet World Championship** (National Croquet Center, West Palm Beach, 17-26 October 2025): **72 players** in the main event, plus 5 places from a qualifier. Entry fee **£189 per player**. Won by **Reg Bamford** of South Africa, his **sixth** AC world title, beating Mark Avery of England (World Croquet Federation, n.d.-c).
+- **2026 Golf Croquet World Championship** (Cairo, 21-29 November 2026): "**The event capacity is 80 players**." Entry fee **£189** (World Croquet Federation, n.d.-d).
 
 **Seventy-two players. Eighty players. In the world.**
 
@@ -2372,10 +2372,10 @@ Sit with that. A single regional qualifier in mainstream golf or tennis has a bi
 
 You do not enter a WCF world championship directly. You are entered **through your national federation**, and the places come in four flavours (World Croquet Federation, n.d.-d):
 
-1. **Federation / membership places** — allocated to member countries.
-2. **World ranking places** — the highest-ranked players over the previous 12 months.
-3. **Wild card places** — nominated by members.
-4. **Qualifier places** — won at a qualifying tournament immediately before the event.
+1. **Federation / membership places**, allocated to member countries.
+2. **World ranking places**, the highest-ranked players over the previous 12 months.
+3. **Wild card places**, nominated by members.
+4. **Qualifier places**, won at a qualifying tournament immediately before the event.
 
 Rankings are collected automatically from results posted on **Croquetscores.com** (World Croquet Federation, n.d.-e). Your results, from ordinary tournaments, feed the world ranking. There is no gatekeeper deciding whether you count.
 
@@ -2383,11 +2383,11 @@ Rankings are collected automatically from results posted on **Croquetscores.com*
 
 The WCF's own 2024 report does not flatter the sport, and that is why it is worth reading: "The number of ranked games in the AC Rankings has **declined by 11% in the past five years**. All Members are reporting a decline. There has been **no reported growth in AC during 2024**." The WCF launched an "**AC Regeneration**" working group in response (World Croquet Federation, 2025).
 
-Meanwhile **Golf Croquet is growing** — the same report notes Spain alone has "more than 2000+ GC players," and the European Club League's second year drew **29 teams from 9 member countries**.
+Meanwhile **Golf Croquet is growing**, the same report notes Spain alone has "more than 2000+ GC players," and the European Club League's second year drew **29 teams from 9 member countries**.
 
 If you are choosing where to put your effort, that is real, published, non-marketing information about which door is opening.
 
-:::reveal How many players are in the main draw of the Association Croquet World Championship, and what does the entry fee tell you? ||| 72 players (2025, West Palm Beach), and the Golf Croquet World Championship has a capacity of 80. The world's entire croquet elite is under a hundred people. The £189 entry fee tells you that at croquet's world championship the PLAYERS PAY TO ENTER — there is no prize-money economy pulling them in, which is exactly why the money in croquet is on the building side, not the winning side.
+:::reveal How many players are in the main draw of the Association Croquet World Championship, and what does the entry fee tell you? ||| 72 players (2025, West Palm Beach), and the Golf Croquet World Championship has a capacity of 80. The world's entire croquet elite is under a hundred people. The £189 entry fee tells you that at croquet's world championship the PLAYERS PAY TO ENTER, there is no prize-money economy pulling them in, which is exactly why the money in croquet is on the building side, not the winning side.
 
 ## Sources
 - ${CE_ABOUT}
@@ -2436,18 +2436,18 @@ Straight from the USCA's published membership rates (United States Croquet Assoc
 
 Read that list again and then reread the price. There is a national sports governing body offering a high-school student a ranked competitive pathway **for zero dollars**, and it is barely used.
 
-The USCA also runs a **Juniors Division** (K–12 clubs) and a **Collegiate Division** with "programs in a dozen colleges and universities" (United States Croquet Association, n.d.-b).
+The USCA also runs a **Juniors Division** (K-12 clubs) and a **Collegiate Division** with "programs in a dozen colleges and universities" (United States Croquet Association, n.d.-b).
 
 ## The real collegiate rung: the USCA Collegiate National Championship
 
 It exists, it is annual, and the results are published (United States Croquet Association, n.d.-c):
 
-- **2025:** held **26–27 April 2025** at the **Merion Cricket Club**, Haverford, Pennsylvania. **Oklahoma Wesleyan University won the team title.**
-- **2024:** Golf Croquet team — 1st **St. John's College**, 2nd Oklahoma Wesleyan, 3rd US Naval Academy, 4th Texas A&M.
+- **2025:** held **26-27 April 2025** at the **Merion Cricket Club**, Haverford, Pennsylvania. **Oklahoma Wesleyan University won the team title.**
+- **2024:** Golf Croquet team, 1st **St. John's College**, 2nd Oklahoma Wesleyan, 3rd US Naval Academy, 4th Texas A&M.
 
-Notice how few schools are in those results. **That is the opportunity, not the problem.** A high-school student who starts a college croquet club is not joining a crowded field — they are entering one with a national championship and single-digit competition.
+Notice how few schools are in those results. **That is the opportunity, not the problem.** A high-school student who starts a college croquet club is not joining a crowded field, they are entering one with a national championship and single-digit competition.
 
-## The Annapolis Cup — a tradition, and NOT a rung on the ladder
+## The Annapolis Cup, a tradition, and NOT a rung on the ladder
 
 The most famous croquet event in America is the **Annapolis Cup**: **St. John's College** against the **US Naval Academy**, in Annapolis, every spring, in front of a crowd, with a brass band and boaters and a Navy team in dress uniform.
 
@@ -2460,8 +2460,8 @@ From St. John's own official fact sheet (St. John's College, n.d.):
 
 Two honesty notes, both instructive:
 
-1. **It is played under NINE-WICKET rules** — a different code from everything in Sections 2, 3 and 5. It is a spectacle and a wonderful tradition, but it is **not** a step toward a WCF world championship. Both schools *also* play in the USCA Collegiate Nationals; those are two different things and it is worth not confusing them.
-2. **This course will not tell you the year of the first match.** St. John's own materials date the *origin legend* to 1982 ("according to legend...") but elsewhere describe the series as running "since 1983." When an institution's own page is internally inconsistent, the right move is to say "the early 1980s" and stop — not to pick the more satisfying number.
+1. **It is played under NINE-WICKET rules**, a different code from everything in Sections 2, 3 and 5. It is a spectacle and a wonderful tradition, but it is **not** a step toward a WCF world championship. Both schools *also* play in the USCA Collegiate Nationals; those are two different things and it is worth not confusing them.
+2. **This course will not tell you the year of the first match.** St. John's own materials date the *origin legend* to 1982 ("according to legend...") but elsewhere describe the series as running "since 1983." When an institution's own page is internally inconsistent, the right move is to say "the early 1980s" and stop, not to pick the more satisfying number.
 
 ## In England: schools are paired with clubs
 
@@ -2469,7 +2469,7 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
 
 **One rule you must know if you want to coach kids:** Croquet England requires that "**all coaches who coach children or lead coaching sessions must be CqE U18s Licensed Coaches**" (Croquet England, n.d.-c). Safeguarding is not optional and it is not paperwork theatre. If your plan involves under-18s, that licence is step one, not step five.
 
-:::reveal You are a full-time high-school student in the US. What does USCA membership cost you, and what does it get you? ||| Nothing — student membership is FREE (and school membership is free too). It brings a handicap, a national ranking, eligibility for sanctioned state/regional/national tournaments, US National Team eligibility, and access to referee and instructor training.
+:::reveal You are a full-time high-school student in the US. What does USCA membership cost you, and what does it get you? ||| Nothing, student membership is FREE (and school membership is free too). It brings a handicap, a national ranking, eligibility for sanctioned state/regional/national tournaments, US National Team eligibility, and access to referee and instructor training.
 
 ## Sources
 - United States Croquet Association. (n.d.-a). *Member benefits and rates*. https://www.croquetamerica.com/content.aspx?page_id=22&club_id=962311&module_id=481592
@@ -2481,7 +2481,7 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
 - Croquet England. (n.d.-c). *Coaching under-18s*. https://croquet.org.uk/?p=games%2Fcoaching%2Fu18`,
       recallContent: [
         {
-          prompt: "Why does this course say 'roughly 200–300 clubs and 3,000–3,500 members' for the USCA instead of one number?",
+          prompt: "Why does this course say 'roughly 200-300 clubs and 3,000-3,500 members' for the USCA instead of one number?",
           answer:
             "Because the USCA's own two official sources disagree: the 2024 rulebook says over 200 clubs and 3,500 members, while the About Us page says nearly 300 clubs and 3,000 members. When official sources conflict, report the conflict.",
         },
@@ -2524,7 +2524,7 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
             prompt: "What does the weaker player receive in HANDICAP Association Croquet?",
             options: [
               "Extra strokes",
-              "Bisques — extra turns; the number is the difference between the two handicaps (Law 42.2.1)",
+              "Bisques, extra turns; the number is the difference between the two handicaps (Law 42.2.1)",
               "A head start of six points",
               "The right to choose the code",
             ],
@@ -2536,14 +2536,14 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           {
             prompt: "Why can't you carry an American Six-Wicket handicap straight into Association Croquet?",
             options: [
-              "You can — they are the same scale",
-              "They are DIFFERENT scales — the USCA's own rankings page says to add two to your American handicap to get your Association handicap",
+              "You can, they are the same scale",
+              "They are DIFFERENT scales, the USCA's own rankings page says to add two to your American handicap to get your Association handicap",
               "Association Croquet has no handicaps",
               "Only the WCF may issue handicaps",
             ],
             correctIndex: 1,
             explanation:
-              "This is one of the easiest errors to make in croquet. A range quoted for one code is meaningless in the other — which is why this course refuses to quote a numeric range for the American scale at all.",
+              "This is one of the easiest errors to make in croquet. A range quoted for one code is meaningless in the other, which is why this course refuses to quote a numeric range for the American scale at all.",
             sourceLessonSlug: "handicaps-and-bisques",
           },
           {
@@ -2558,7 +2558,7 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
             prompt: "Which games count toward your Croquet England handicap?",
             options: [
               "Every game you play, including friendlies",
-              "Only qualifying singles games — calendar fixtures, federation leagues, inter-club contests and designated club competitions. Doubles, friendlies and ad-hoc games are excluded",
+              "Only qualifying singles games, calendar fixtures, federation leagues, inter-club contests and designated club competitions. Doubles, friendlies and ad-hoc games are excluded",
               "Only national championships",
               "Only doubles",
             ],
@@ -2579,7 +2579,7 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
             prompt: "What does the £189 entry fee at the croquet world championship tell you?",
             options: [
               "That the prize money is enormous",
-              "That the PLAYERS pay to enter — croquet has no prize-money economy, which is why the money in the sport is on the building side, not the winning side",
+              "That the PLAYERS pay to enter, croquet has no prize-money economy, which is why the money in the sport is on the building side, not the winning side",
               "That entry is restricted to sponsored professionals",
               "That the WCF is a for-profit company",
             ],
@@ -2591,20 +2591,20 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
             prompt: "How do you get into a WCF world championship?",
             options: [
               "You enter directly online",
-              "Through your national federation — via federation/membership places, world-ranking places, wild cards, or a qualifying tournament",
+              "Through your national federation, via federation/membership places, world-ranking places, wild cards, or a qualifying tournament",
               "By invitation from the reigning champion",
               "By winning a national title only",
             ],
             correctIndex: 1,
             explanation:
-              "And rankings are collected automatically from results posted on Croquetscores.com — your ordinary tournament results feed the world ranking.",
+              "And rankings are collected automatically from results posted on Croquetscores.com, your ordinary tournament results feed the world ranking.",
             sourceLessonSlug: "the-ladder",
           },
           {
             prompt: "What does the WCF's own 2024 report say about Association Croquet?",
             options: [
               "It is the fastest-growing code",
-              "Ranked AC games have declined by 11% in five years, with no reported growth in 2024 — prompting an 'AC Regeneration' working group",
+              "Ranked AC games have declined by 11% in five years, with no reported growth in 2024, prompting an 'AC Regeneration' working group",
               "It has been discontinued",
               "It has doubled in size",
             ],
@@ -2617,7 +2617,7 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
             prompt: "How does this course report the size of the USCA?",
             options: [
               "Exactly 300 clubs and 3,000 members",
-              "As a range — roughly 200–300 clubs and 3,000–3,500 members — because the USCA's own rulebook and About Us page give different figures",
+              "As a range, roughly 200-300 clubs and 3,000-3,500 members, because the USCA's own rulebook and About Us page give different figures",
               "It refuses to say anything",
               "Exactly 200 clubs and 3,500 members",
             ],
@@ -2644,20 +2644,20 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
             options: ["$75 each", "$25 each", "Both are FREE", "$125 for a school, $25 for a student"],
             correctIndex: 2,
             explanation:
-              "Free student and free school membership — bringing a handicap, a ranking, eligibility for sanctioned tournaments and US National Team eligibility. Barely anybody uses it.",
+              "Free student and free school membership, bringing a handicap, a ranking, eligibility for sanctioned tournaments and US National Team eligibility. Barely anybody uses it.",
             sourceLessonSlug: "school-and-college-croquet",
           },
           {
             prompt: "Why is the Annapolis Cup NOT a rung on the competitive ladder?",
             options: [
               "It is not a real event",
-              "It is played under NINE-WICKET rules — a different code — so it leads nowhere near a WCF world championship, however wonderful a tradition it is",
+              "It is played under NINE-WICKET rules, a different code, so it leads nowhere near a WCF world championship, however wonderful a tradition it is",
               "Only Navy may enter",
               "It has no crowd",
             ],
             correctIndex: 1,
             explanation:
-              "St. John's leads it 32–10 over 42 matches. Both schools ALSO play the USCA Collegiate Nationals — which is the real competitive rung. Do not conflate the two.",
+              "St. John's leads it 32-10 over 42 matches. Both schools ALSO play the USCA Collegiate Nationals, which is the real competitive rung. Do not conflate the two.",
             sourceLessonSlug: "school-and-college-croquet",
           },
           {
@@ -2697,7 +2697,7 @@ What *is* published:
 
 | Body | Published figure |
 |---|---|
-| **USCA** | roughly 200–300 clubs; roughly 3,000–3,500 members (its own two sources differ — Section 7) |
+| **USCA** | roughly 200-300 clubs; roughly 3,000-3,500 members (its own two sources differ, Section 7) |
 | **Croquet England** | "more than **8,000 subscribers**"; **200** member clubs |
 | **Spain** (via the WCF) | "more than **2000+** GC players" |
 | **WCF** | **29** member countries |
@@ -2719,21 +2719,21 @@ So if your plan was "get very good, win money," the plan does not exist. Not bec
 
 Every real economic opening in croquet is on the *supply* side of the sport:
 
-- **Equipment** — and the approved supply side of championship croquet is astonishingly small (Lesson 34).
-- **Coaching and refereeing** — with published qualification ladders and real rate cards (Lesson 33).
-- **Courts and turf** — a specialist greenkeeping niche with published specs (Lesson 32).
-- **Clubs** — which governing bodies will **lend you money** to start (Lesson 31).
-- **Venues and events** — resorts already charge hundreds of dollars an hour for croquet (Lesson 33).
+- **Equipment**, and the approved supply side of championship croquet is astonishingly small (Lesson 34).
+- **Coaching and refereeing**, with published qualification ladders and real rate cards (Lesson 33).
+- **Courts and turf**, a specialist greenkeeping niche with published specs (Lesson 32).
+- **Clubs**, which governing bodies will **lend you money** to start (Lesson 31).
+- **Venues and events**, resorts already charge hundreds of dollars an hour for croquet (Lesson 33).
 
 ## 4. What this course refuses to tell you
 
-**Nobody's income from croquet is published anywhere** — not a coach's, not a mallet-maker's, not a club manager's. So this course gives you **rate cards** (what businesses publicly charge) and **published grant figures** (what governing bodies say they have given), and it labels them as exactly that.
+**Nobody's income from croquet is published anywhere**, not a coach's, not a mallet-maker's, not a club manager's. So this course gives you **rate cards** (what businesses publicly charge) and **published grant figures** (what governing bodies say they have given), and it labels them as exactly that.
 
 If a source tells you "croquet coaches earn $X a year," ask them where they got it. There is no published dataset. There is no survey. That number was invented.
 
 **Rate cards and grant totals are evidence. Earnings claims are not.** Build your plan on the first kind.
 
-:::reveal Why is "get very good at croquet and win prize money" not a viable plan — and what does that fact tell you about where the opportunity IS? ||| Because there is essentially no prize-money economy. No prize fund is published for either world championship, and what IS published is the £189 entry fee — the players pay to compete. So the money in croquet is entirely on the BUILD side: equipment, coaching, courts and turf, club formation, venues and events.
+:::reveal Why is "get very good at croquet and win prize money" not a viable plan, and what does that fact tell you about where the opportunity IS? ||| Because there is essentially no prize-money economy. No prize fund is published for either world championship, and what IS published is the £189 entry fee, the players pay to compete. So the money in croquet is entirely on the BUILD side: equipment, coaching, courts and turf, club formation, venues and events.
 
 ## Sources
 - World Croquet Federation. (n.d.-a). *2025 AC World Championship*. https://worldcroquet.org/2025-ac-world-championship-usa/
@@ -2762,22 +2762,22 @@ Member clubs also get **free Public Liability Insurance**, and there are **10 Fe
 
 **The WCF does it internationally too.** Its Development page states that WCF Members "may **apply for loans or grants from the WCF** for the purpose of developing croquet in their domain," and that the WCF funds coaching and referee training courses and sends volunteer coaches abroad, with "**all transport costs paid via the WCF Development Programme**" (World Croquet Federation, n.d.).
 
-**The USCA has run a grant program too** — and here the course has to be careful with you. The page this course could verify is the **2022** program: a **$15,000** total pot, **up to $1,000 per applicant**, open to **clubs and schools**, funding member-recruitment events, with a USCA representative attending and **20% withheld** pending a final report (United States Croquet Association, n.d.-a). A 2023 round is referenced elsewhere. **A current round could not be confirmed.** So: those figures describe the 2022/2023 rounds, and **your first move is to ask the USCA whether a round is open now** — not to assume it.
+**The USCA has run a grant program too**, and here the course has to be careful with you. The page this course could verify is the **2022** program: a **$15,000** total pot, **up to $1,000 per applicant**, open to **clubs and schools**, funding member-recruitment events, with a USCA representative attending and **20% withheld** pending a final report (United States Croquet Association, n.d.-a). A 2023 round is referenced elsewhere. **A current round could not be confirmed.** So: those figures describe the 2022/2023 rounds, and **your first move is to ask the USCA whether a round is open now**, not to assume it.
 
 ## The starter pack already exists
 
 Croquet England publishes a **"Forming a Club"** page offering "advice about creating lawns, legal advice, contacts with other players in your area, **grants or loans**, publicity, [and a] **Starter Pack** (template club rules, membership forms etc.)" (Croquet England, n.d.-b).
 
-Its club-resources index carries **model constitutions** (including CASC and CIO forms — the legal structures a UK amateur sports club actually uses), insurance guidance, safeguarding policy, a communications toolkit, draft press releases, customisable leaflets, an accessibility guide, and a lawn-construction booklet (Croquet England, n.d.-c).
+Its club-resources index carries **model constitutions** (including CASC and CIO forms, the legal structures a UK amateur sports club actually uses), insurance guidance, safeguarding policy, a communications toolkit, draft press releases, customisable leaflets, an accessibility guide, and a lawn-construction booklet (Croquet England, n.d.-c).
 
 **Honesty note, and it is a useful one:** the "Forming a Club" page itself carries a banner reading *"This page has not been validated recently by its owner."* The governing body is telling you, on its own page, that the page may be stale. **Believe it, and confirm the current position by email before you rely on a figure.** A source that flags its own staleness is being *more* trustworthy, not less.
 
 ## How much lawn do you actually need? They published that too
 
-The **Croquet Facility Guide** — written by Croquet Victoria and published by the WCF as an advice sheet — gives real planning numbers (Croquet Victoria, 2019):
+The **Croquet Facility Guide**, written by Croquet Victoria and published by the WCF as an advice sheet, gives real planning numbers (Croquet Victoria, 2019):
 
 - **One court ≈ 1,066 m²** (a 25.6 × 32 m court plus a 4 m buffer).
-- **Two courts ≈ 2,132 m² (0.21 hectares)** — plus pavilion and parking, so realistically **half a hectare to a hectare** for a two-court venue.
+- **Two courts ≈ 2,132 m² (0.21 hectares)**, plus pavilion and parking, so realistically **half a hectare to a hectare** for a two-court venue.
 - **One court per 25 members** is the planning ratio; **one court can accommodate up to 8 players at a time**.
 - Their demand estimate: "one 2-court venue per **33,000 people aged over 15 years**."
 
@@ -2789,7 +2789,7 @@ Remember from Lesson 3: **GC Rule 2.4** explicitly allows a smaller court keepin
 
 **The realistic first version of "start a club" is therefore not "buy a hectare."** It is: *one small court, in a space you already have access to, with a school or community partner, playing Golf Croquet because it is the fastest to teach.*
 
-:::reveal Name three concrete forms of support a governing body publishes for people starting a croquet club. ||| Any three of: Croquet England grants (nearly £200,000 to 80 clubs in ten years) and interest-free loans (over £28,000 to 15 clubs); free Public Liability Insurance for member clubs; 10 Federation Development Officers; a "Forming a Club" Starter Pack with template club rules and membership forms; model constitutions and a lawn-construction booklet; WCF loans/grants to member federations plus volunteer coaches with transport costs paid; and the USCA's club/school grant program (verified for its 2022 round — check whether a current round is open).
+:::reveal Name three concrete forms of support a governing body publishes for people starting a croquet club. ||| Any three of: Croquet England grants (nearly £200,000 to 80 clubs in ten years) and interest-free loans (over £28,000 to 15 clubs); free Public Liability Insurance for member clubs; 10 Federation Development Officers; a "Forming a Club" Starter Pack with template club rules and membership forms; model constitutions and a lawn-construction booklet; WCF loans/grants to member federations plus volunteer coaches with transport costs paid; and the USCA's club/school grant program (verified for its 2022 round, check whether a current round is open).
 
 ## Sources
 - ${CE_ABOUT}
@@ -2804,12 +2804,12 @@ Remember from Lesson 3: **GC Rule 2.4** explicitly allows a smaller court keepin
         {
           prompt: "Why does this course refuse to give you a global croquet player count?",
           answer:
-            "Because no governing body publishes one. There is nowhere for such a number to have come from — so any confident 'X million players worldwide' figure was invented.",
+            "Because no governing body publishes one. There is nowhere for such a number to have come from, so any confident 'X million players worldwide' figure was invented.",
         },
         {
           prompt: "What is published about prize money at the croquet world championships?",
           answer:
-            "Nothing — no prize fund is published for either the AC or GC World Championship. What IS published is the £189 entry fee. The players pay to compete.",
+            "Nothing, no prize fund is published for either the AC or GC World Championship. What IS published is the £189 entry fee. The players pay to compete.",
         },
       ],
     },
@@ -2829,17 +2829,17 @@ The source throughout is the **Croquet Facility Guide** (2nd ed., 2019), written
 | **Court plus borders** | "each court should measure **39 by 32 yards minimum**" |
 | **Land per court** | ≈ **1,066 m²** (court + 4 m buffer) |
 | **Land per 2-court venue** | ≈ **2,132 m² (0.21 ha)** before pavilion and parking |
-| **Lighting** | **at least 150 lux** — and the guide is explicit that 100 lux (the minimum for bowls) "is insufficient for croquet" |
+| **Lighting** | **at least 150 lux**, and the guide is explicit that 100 lux (the minimum for bowls) "is insufficient for croquet" |
 | **Surface** | grass only: "**The sport is not currently played on synthetic surfaces**" |
-| **Grass type** | "a hard wearing, preferably drought tolerant grass such as **Santa Ana couch**" — *stated for Australian conditions; your climate will differ, and the guide is an Australian document* |
+| **Grass type** | "a hard wearing, preferably drought tolerant grass such as **Santa Ana couch**", *stated for Australian conditions; your climate will differ, and the guide is an Australian document* |
 
 Maintenance is a real job: **scarification and aeration at least once a year**, plus pest control, top dressing, weed control and rolling.
 
 ## ⚠️ A sourcing warning you can use on any technical question
 
-Search the web for "croquet lawn mowing height" and you will get answers like "½ to ¾ inch" or "¼ to 5/8 inch" — from **turf-retailer blogs and backyard-game sites**. They are not governing-body sources, and **they contradict each other**.
+Search the web for "croquet lawn mowing height" and you will get answers like "½ to ¾ inch" or "¼ to 5/8 inch", from **turf-retailer blogs and backyard-game sites**. They are not governing-body sources, and **they contradict each other**.
 
-This course uses **3–5 mm, from the Croquet Victoria/WCF guide, and tells you where it came from.** When a technical number matters, find the document that a governing body actually stands behind. The blogs are guessing.
+This course uses **3-5 mm, from the Croquet Victoria/WCF guide, and tells you where it came from.** When a technical number matters, find the document that a governing body actually stands behind. The blogs are guessing.
 
 ## The business insight hiding in one sentence
 
@@ -2849,22 +2849,22 @@ Here is the best entrepreneurial fact in the whole guide, and you have to read c
 
 **Croquet's turf requirement sits between tennis and bowls.** That means:
 
-- A croquet lawn **can share a site, and a greenkeeper, with a tennis or bowls club** — and the guide notes that new clubs commonly do exactly that, because "a new club will not have the resources or expertise to maintain its own lawns."
-- Which means the realistic route to a new court is often **not "buy land"** but **"partner with a facility that already has fine turf and a greenkeeper"** — a golf club, a bowls club, a school with a good field, a resort.
+- A croquet lawn **can share a site, and a greenkeeper, with a tennis or bowls club**, and the guide notes that new clubs commonly do exactly that, because "a new club will not have the resources or expertise to maintain its own lawns."
+- Which means the realistic route to a new court is often **not "buy land"** but **"partner with a facility that already has fine turf and a greenkeeper"**, a golf club, a bowls club, a school with a good field, a resort.
 
-That reframes the whole capital problem. The scarce thing is not grass. It is **flat, finely-mown, well-drained grass with someone competent already looking after it** — and those places already exist, under-used, in every town.
+That reframes the whole capital problem. The scarce thing is not grass. It is **flat, finely-mown, well-drained grass with someone competent already looking after it**, and those places already exist, under-used, in every town.
 
 ## What that makes you
 
 If you learn croquet turf properly, you are one of a very small number of people who can:
 
 - advise a club on building a court to specification,
-- keep a court to 3–5 mm through a season,
+- keep a court to 3-5 mm through a season,
 - and tell a resort or a school truthfully what it would cost.
 
 That is a trade skill with a published standard and almost no competition. It also pairs directly with groundskeeping and turf-management careers that exist regardless of croquet.
 
-:::reveal What mowing height does the WCF-published Croquet Facility Guide specify, and why is that number commercially interesting? ||| 3 mm to 5 mm, cut with a cylinder mower up to three times a week in the growing season. It is commercially interesting because croquet's ~3 mm sits between lawn tennis (~4 mm) and competitive bowls (~1 mm) — so a croquet court can share a site and a greenkeeper with an existing tennis or bowls facility. The scarce resource isn't land; it's finely-mown turf with someone competent already maintaining it.
+:::reveal What mowing height does the WCF-published Croquet Facility Guide specify, and why is that number commercially interesting? ||| 3 mm to 5 mm, cut with a cylinder mower up to three times a week in the growing season. It is commercially interesting because croquet's ~3 mm sits between lawn tennis (~4 mm) and competitive bowls (~1 mm), so a croquet court can share a site and a greenkeeper with an existing tennis or bowls facility. The scarce resource isn't land; it's finely-mown turf with someone competent already maintaining it.
 
 ## Sources
 - ${FACILITY_GUIDE}
@@ -2873,7 +2873,7 @@ That is a trade skill with a published standard and almost no competition. It al
         {
           prompt: "How much land does a two-court croquet venue need, before pavilion and parking?",
           answer:
-            "About 2,132 m² — roughly 0.21 hectares (each court is about 1,066 m² including a 4 m buffer). Realistically half a hectare to a hectare once you add a pavilion and parking.",
+            "About 2,132 m², roughly 0.21 hectares (each court is about 1,066 m² including a 4 m buffer). Realistically half a hectare to a hectare once you add a pavilion and parking.",
         },
         {
           prompt: "What is the planning ratio for courts to members, and how many players fit on one court?",
@@ -2892,7 +2892,7 @@ Croquet England publishes its whole coaching ladder (Croquet England, n.d.-a):
 
 | Level | What it takes |
 |---|---|
-| **Club-Level Coach** (yellow badge) | A **two-day course** — lecture plus practical, formal assessment indoors and on the lawn, and an **open-book test on both the GC Rules and the AC Laws**. Qualifies you to coach beginners and high-handicap players **at your own club**. |
+| **Club-Level Coach** (yellow badge) | A **two-day course**, lecture plus practical, formal assessment indoors and on the lawn, and an **open-book test on both the GC Rules and the AC Laws**. Qualifies you to coach beginners and high-handicap players **at your own club**. |
 | **Grade 1 Coach** (blue badge) | AC handicap **12 or better**; GC handicap **6 or better** |
 | **Grade 2 Coach** | AC handicap **6 or better** + a Silver merit award + Assistant Referee standard; GC handicap **3 or better** |
 | **Grade 3 Coach** | AC handicap **0 or better** *plus an AC Referee's qualification*; GC **minus handicap** *plus a GC Referee's qualification* |
@@ -2900,30 +2900,30 @@ Croquet England publishes its whole coaching ladder (Croquet England, n.d.-a):
 
 **A two-day course.** That is the entry qualification to coach croquet at a club in England.
 
-**In the United States**, the USCA has a **Referee & Instructor Committee** that sets testing, certification and re-certification standards, and runs **Croquet Schools** ("Learn From the Pros") at the National Croquet Center — Beginner, Intermediate and Advanced, with a **maximum 8:1 student-to-teacher ratio** and five hours a day on court (United States Croquet Association, n.d.-a, n.d.-b).
+**In the United States**, the USCA has a **Referee & Instructor Committee** that sets testing, certification and re-certification standards, and runs **Croquet Schools** ("Learn From the Pros") at the National Croquet Center, Beginner, Intermediate and Advanced, with a **maximum 8:1 student-to-teacher ratio** and five hours a day on court (United States Croquet Association, n.d.-a, n.d.-b).
 
 **And the WCF built an online route.** In December 2023 it launched **online Golf Croquet rules training and accreditation**, run with Ian Shore of the Chiltern Croquet Academy. The knock-on effect is quietly significant: because candidates arrive having done the pre-study pack, "some UK referee courses have now been reduced to a **one-day course**" (World Croquet Federation, 2025).
 
 **The hard requirement, again:** to coach under-18s in England you must be a **CqE U18s Licensed Coach** (Croquet England, n.d.-b). Do that first.
 
-## What venues already charge — real, public rate cards
+## What venues already charge, real, public rate cards
 
 These are **published prices from businesses' own websites**. They are *rate cards*, not anyone's income, and this course will not pretend otherwise.
 
 **The Greenbrier** (White Sulphur Springs, West Virginia) publishes (Greenbrier, n.d.):
 
 - Private croquet lesson: **$128** for one person
-- **$80 per person** for groups of 2–6
+- **$80 per person** for groups of 2-6
 - **$802** for groups larger than 6
-- Open play: **$27 per adult per hour**; **$14 per child (13–17) per hour**
+- Open play: **$27 per adult per hour**; **$14 per child (13-17) per hour**
 
 **Pinehurst Resort** (North Carolina) publishes, for sessions including instruction, equipment and lawn fees (Pinehurst Resort, n.d.):
 
-- **$100** — up to 3 people, 1 hour
-- **$175** — 4 people, 1.5 hours
-- **$275** — 5–8 people
-- **$550** — 9–16 people
-- **$750** — 17–32 people
+- **$100**, up to 3 people, 1 hour
+- **$175**, 4 people, 1.5 hours
+- **$275**, 5-8 people
+- **$550**, 9-16 people
+- **$750**, 17-32 people
 - **$20 per person** for experienced players who don't need instruction
 
 Pinehurst runs all of that on **two croquet courts**, and states that croquet there can handle up to **24 players**.
@@ -2936,9 +2936,9 @@ Pinehurst runs all of that on **two croquet courts**, and states that croquet th
 
 That is a very short distance between "I know this game" and "someone is paying me to teach it." Croquet is one of the few sports where the coaching qualification is measured in **days** rather than years.
 
-**The honest caveat, and it is the whole reason this course is trustworthy:** those are the *prices the venues charge*, not the money a coach takes home. **No croquet coach's earnings are published anywhere.** If you want to know what a coaching hour is worth in your area, the way to find out is to call three clubs and three resorts and ask — not to read a number off a website that invented it.
+**The honest caveat, and it is the whole reason this course is trustworthy:** those are the *prices the venues charge*, not the money a coach takes home. **No croquet coach's earnings are published anywhere.** If you want to know what a coaching hour is worth in your area, the way to find out is to call three clubs and three resorts and ask, not to read a number off a website that invented it.
 
-:::reveal What qualification does Croquet England require to coach beginners at your own club, and what do two US resorts publicly charge for a croquet session? ||| A Club-Level Coach badge — a TWO-DAY course with a practical assessment and an open-book test on both the GC Rules and the AC Laws. The Greenbrier publishes $128 for a private lesson ($80 per person for groups of 2–6); Pinehurst publishes $100 (up to 3 people, 1 hour) rising to $750 (17–32 people). Those are RATE CARDS, not anyone's earnings — no croquet coach's income is published anywhere.
+:::reveal What qualification does Croquet England require to coach beginners at your own club, and what do two US resorts publicly charge for a croquet session? ||| A Club-Level Coach badge, a TWO-DAY course with a practical assessment and an open-book test on both the GC Rules and the AC Laws. The Greenbrier publishes $128 for a private lesson ($80 per person for groups of 2-6); Pinehurst publishes $100 (up to 3 people, 1 hour) rising to $750 (17-32 people). Those are RATE CARDS, not anyone's earnings, no croquet coach's income is published anywhere.
 
 ## Sources
 - Croquet England. (n.d.-a). *Coaching*. https://croquet.org.uk/?p=games%2Fcoaching
@@ -2957,7 +2957,7 @@ That is a very short distance between "I know this game" and "someone is paying 
         {
           prompt: "What is the sourcing lesson in the 'croquet lawn mowing height' example?",
           answer:
-            "The numbers you find on turf-retailer and backyard-game blogs contradict each other and are not governing-body sources. Use the 3–5 mm figure from the WCF-published Croquet Facility Guide — and say where it came from.",
+            "The numbers you find on turf-retailer and backyard-game blogs contradict each other and are not governing-body sources. Use the 3-5 mm figure from the WCF-published Croquet Facility Guide, and say where it came from.",
         },
       ],
     },
@@ -2969,7 +2969,7 @@ That is a very short distance between "I know this game" and "someone is paying 
 
 The WCF publishes a list of **every approved ball and hoop in the world**. As of its 21 October 2024 list (World Croquet Federation, 2024):
 
-**Approved balls — three brands. In the world.**
+**Approved balls, three brands. In the world.**
 
 | Ball | Named supplier |
 |---|---|
@@ -2977,7 +2977,7 @@ The WCF publishes a list of **every approved ball and hoop in the world**. As of
 | Sunshiny CQ16 | Richard Wu (Taiwan) |
 | **Invictus X** (approved to Nov 2027) | **Robert Fletcher** |
 
-**Approved hoops — nine.** Omega Adjustable · **Jaques Championship** (approved from July 2005) · George Wood Championship (Wood Mallets Ltd) · Hopewell · Atkins Quadway (Michael McClure, NZ) · Aldridge · Holdfast · Ultra (Michael Moore, South Africa) · Cerrajería Artística Borrajo, Spain (approved March 2024).
+**Approved hoops, nine.** Omega Adjustable · **Jaques Championship** (approved from July 2005) · George Wood Championship (Wood Mallets Ltd) · Hopewell · Atkins Quadway (Michael McClure, NZ) · Aldridge · Holdfast · Ultra (Michael Moore, South Africa) · Cerrajería Artística Borrajo, Spain (approved March 2024).
 
 **And here is how you get on that list:** a manufacturer submits a set to the WCF Equipment Group **with a £100 fee**, and approval runs for a fixed term (World Croquet Federation, 2023).
 
@@ -2989,7 +2989,7 @@ The WCF publishes a list of **every approved ball and hoop in the world**. As of
 
 That same Robert Fletcher is the named supplier of the **WCF-approved Invictus X ball** and runs **Invictus Croquet**, which makes mallets (World Croquet Federation, 2024). And in 2025 he won the **USCA Association Croquet national singles title** (United States Croquet Association, n.d.).
 
-**A world champion who built an equipment company inside his own sport, and whose product is on the governing body's approved list.** Every step of that is checkable in governing-body documents. It is not a motivational anecdote — it is a documented path.
+**A world champion who built an equipment company inside his own sport, and whose product is on the governing body's approved list.** Every step of that is checkable in governing-body documents. It is not a motivational anecdote, it is a documented path.
 
 ## The oldest name in the sport, and the lesson it teaches
 
@@ -2997,9 +2997,9 @@ That same Robert Fletcher is the named supplier of the **WCF-approved Invictus X
 
 Now hold three facts together, because a lazy course would only tell you the first one:
 
-1. **The business dates itself to 1795** and calls itself the oldest games manufacturer in the world — *that is the company's own claim, on its own website*.
-2. **The registered company** — JOHN JAQUES AND SON LIMITED, company no. **00399667** — was **incorporated on 22 October 1945**, per the UK's Companies House register.
-3. As read on Companies House, its status was **"Voluntary Arrangement"** — a formal insolvency procedure, not simply "active" (Companies House, n.d.).
+1. **The business dates itself to 1795** and calls itself the oldest games manufacturer in the world, *that is the company's own claim, on its own website*.
+2. **The registered company**, JOHN JAQUES AND SON LIMITED, company no. **00399667**, was **incorporated on 22 October 1945**, per the UK's Companies House register.
+3. As read on Companies House, its status was **"Voluntary Arrangement"**, a formal insolvency procedure, not simply "active" (Companies House, n.d.).
 
 All three can be true at once. The romantic one is the one everybody repeats.
 
@@ -3008,7 +3008,7 @@ All three can be true at once. The romantic one is the one everybody repeats.
 ## Events and venues
 
 - **Equipment makers sponsor championships.** Oakley Woods Croquet (Ontario) is the title sponsor of the Oakley Woods Canadian National GC Championship. That is a business model in one sentence: make the equipment, sponsor the event that showcases it.
-- **A croquet venue can be an events business.** The **National Croquet Center** in West Palm Beach — home of the USCA and host of the 2025 AC World Championship — markets itself as an events venue: on its own site, **twelve full-sized championship lawns** on four acres, plus a **19,000 sq ft clubhouse** (built 2002) with a capacity of **600 guests** (National Croquet Center, n.d.).
+- **A croquet venue can be an events business.** The **National Croquet Center** in West Palm Beach, home of the USCA and host of the 2025 AC World Championship, markets itself as an events venue: on its own site, **twelve full-sized championship lawns** on four acres, plus a **19,000 sq ft clubhouse** (built 2002) with a capacity of **600 guests** (National Croquet Center, n.d.).
 
   **A discrepancy worth noticing:** the Palm Beach County Sports Commission describes the same venue as **10 acres with 19 lawns** (Palm Beach County Sports Commission, n.d.). The venue's own site says 4 acres and 12 lawns. This course reports both and picks neither, because it cannot resolve them. That is what you do with a conflict you cannot settle.
 
@@ -3021,12 +3021,12 @@ Put the section together:
 - Three approved ball makers in the world; nine approved hoops; **a £100 approval fee**.
 - A world championship whose **entire field is under 100 players** and whose players **pay to enter**.
 - Governing bodies that will **lend you money**, **insure your club**, and **send you a coach with the travel paid**.
-- Resorts already charging **$100–$750** a session for something they need a lawn and a teacher to deliver.
+- Resorts already charging **$100-$750** a session for something they need a lawn and a teacher to deliver.
 - A coaching qualification measured in **days**.
 
 **That is not a saturated market. It is an under-built one.** Which is a completely different problem, and a much better one to have.
 
-:::reveal How many ball brands are WCF-approved worldwide, what does approval cost, and who supplies one of them? ||| Three approved ball brands in the world (Dawson, Sunshiny, and Invictus X), and nine approved hoops. A manufacturer submits a set to the WCF Equipment Group with a £100 fee. The Invictus X is supplied by Robert Fletcher — who won the 2013 AC World Championship at age 20, the youngest ever, and runs Invictus Croquet. A world champion who built an equipment company inside his own sport.
+:::reveal How many ball brands are WCF-approved worldwide, what does approval cost, and who supplies one of them? ||| Three approved ball brands in the world (Dawson, Sunshiny, and Invictus X), and nine approved hoops. A manufacturer submits a set to the WCF Equipment Group with a £100 fee. The Invictus X is supplied by Robert Fletcher, who won the 2013 AC World Championship at age 20, the youngest ever, and runs Invictus Croquet. A world champion who built an equipment company inside his own sport.
 
 ## Sources
 - World Croquet Federation. (2024). *WCF approved balls and hoops (21 October 2024)*. https://worldcroquet.org/wp-content/uploads/2024/11/WCF-Approved-Balls-and-Hoops-21-October-2024.pdf
@@ -3045,7 +3045,7 @@ Put the section together:
         {
           prompt: "Name two published resort rate points for croquet instruction.",
           answer:
-            "Any two of: the Greenbrier's $128 private lesson, or $80 per person for groups of 2–6; Pinehurst's $100 for up to 3 people for an hour, $275 for 5–8 people, or $750 for 17–32 people.",
+            "Any two of: the Greenbrier's $128 private lesson, or $80 per person for groups of 2-6; Pinehurst's $100 for up to 3 people for an hour, $275 for 5-8 people, or $750 for 17-32 people.",
         },
       ],
     },
@@ -3055,19 +3055,19 @@ Put the section together:
       section: "8 · Opportunities: amateurs and entrepreneurs",
       body: `You now know more about croquet than almost anyone who has not played it. Here is what to actually do with that, in order, using only things this course has verified.
 
-## Weeks 1–2 — get on a lawn
+## Weeks 1-2, get on a lawn
 
-1. **Find your nearest club.** Both the USCA and Croquet England publish club finders. There are roughly 200–300 USCA clubs and 200 Croquet England member clubs.
+1. **Find your nearest club.** Both the USCA and Croquet England publish club finders. There are roughly 200-300 USCA clubs and 200 Croquet England member clubs.
 2. **Ask for Golf Croquet.** It is one stroke per turn (Rule 1.1.1), you will be playing a real game in twenty minutes, and it is the code that is actually **growing** (World Croquet Federation, 2025).
 3. **Name the code, every time.** "Which code do you play here?" is the sentence that tells a club you are serious.
 
-## Weeks 3–6 — get a handicap
+## Weeks 3-6, get a handicap
 
-4. **Join.** If you are a full-time student in the US, **USCA membership is free** — and it brings a handicap, a national ranking, and eligibility for sanctioned tournaments (United States Croquet Association, n.d.).
+4. **Join.** If you are a full-time student in the US, **USCA membership is free**, and it brings a handicap, a national ranking, and eligibility for sanctioned tournaments (United States Croquet Association, n.d.).
 5. **Get an initial handicap** and start a **handicap card**. Only qualifying games count (Croquet England, n.d.).
-6. **Enter one handicap tournament.** Not a level-play one. The system is *engineered* to give you an even contest — that is its stated purpose. Use it.
+6. **Enter one handicap tournament.** Not a level-play one. The system is *engineered* to give you an even contest, that is its stated purpose. Use it.
 
-## Weeks 7–12 — pick your lane
+## Weeks 7-12, pick your lane
 
 Now choose one, and go at it seriously:
 
@@ -3075,7 +3075,7 @@ Now choose one, and go at it seriously:
 |---|---|
 | **Play** | Drill the croquet stroke, not the long shot. Break-building is the game; hitting in is the fallback. Keep the match log from Lesson 16. |
 | **Coach** | Ask your club about the **Club-Level Coach** course (two days). If you want to coach under-18s in England, the **U18s licence comes first**. |
-| **Build a club** | Read the **Croquet Facility Guide** and Croquet England's **Forming a Club** starter pack. Find a site that already has fine turf and a greenkeeper — a school, a bowls club, a tennis club. Start with a **small court** (GC Rule 2.4 makes it legal). |
+| **Build a club** | Read the **Croquet Facility Guide** and Croquet England's **Forming a Club** starter pack. Find a site that already has fine turf and a greenkeeper, a school, a bowls club, a tennis club. Start with a **small court** (GC Rule 2.4 makes it legal). |
 | **Build a business** | Read the **WCF approved-equipment list** and the **Equipment Regulations** (£100 approval fee). Look at what the three approved ball makers and nine approved hoop makers *don't* cover. |
 | **Organise** | Start a school or college club. The **USCA Collegiate National Championship** exists, school membership is **free**, and the results pages show how few schools compete. |
 
@@ -3085,9 +3085,9 @@ Croquet's world championship has **fewer than a hundred players in it**, its gov
 
 Almost every sport tells young people the door is narrow. In this one, **the door is standing open and nobody is walking through it.**
 
-And you now have the one habit that matters more than any of it: **when someone tells you a fact about this sport — a rule, a number, a lovely story about Victorian ladies and hidden mallets — you ask which code, and you ask where they read it.**
+And you now have the one habit that matters more than any of it: **when someone tells you a fact about this sport, a rule, a number, a lovely story about Victorian ladies and hidden mallets, you ask which code, and you ask where they read it.**
 
-:::reveal What is the single most efficient first move for a US high-school student who wants to enter competitive croquet, and why? ||| Join the USCA as a student — it is FREE for full-time students, and it brings a handicap, a national ranking, and eligibility for sanctioned state, regional and national tournaments. Then get an initial handicap and enter a HANDICAP tournament, because the handicap system is explicitly designed to give you an even contest against anyone.
+:::reveal What is the single most efficient first move for a US high-school student who wants to enter competitive croquet, and why? ||| Join the USCA as a student, it is FREE for full-time students, and it brings a handicap, a national ranking, and eligibility for sanctioned state, regional and national tournaments. Then get an initial handicap and enter a HANDICAP tournament, because the handicap system is explicitly designed to give you an even contest against anyone.
 
 ## Sources
 - ${WCF_GC}
@@ -3104,7 +3104,7 @@ And you now have the one habit that matters more than any of it: **when someone 
         {
           prompt: "What three facts about Jaques must be held together, rather than repeating only the romantic one?",
           answer:
-            "(1) The business dates ITSELF to 1795 — its own claim. (2) The registered company, no. 00399667, was incorporated in 1945. (3) As read on Companies House, its status was 'Voluntary Arrangement' — a formal insolvency procedure. All three can be true at once, and the register is live, so re-check before repeating.",
+            "(1) The business dates ITSELF to 1795, its own claim. (2) The registered company, no. 00399667, was incorporated in 1945. (3) As read on Companies House, its status was 'Voluntary Arrangement', a formal insolvency procedure. All three can be true at once, and the register is live, so re-check before repeating.",
         },
       ],
     },
@@ -3119,7 +3119,7 @@ And you now have the one habit that matters more than any of it: **when someone 
             prompt: "What is published about prize money at the croquet world championships?",
             options: [
               "A £50,000 purse for the winner",
-              "Nothing — no prize fund is published for either world championship; what IS published is the £189 entry fee the players pay",
+              "Nothing, no prize fund is published for either world championship; what IS published is the £189 entry fee the players pay",
               "Prize money is shared among the top 8",
               "The WCF pays travel for all competitors",
             ],
@@ -3132,19 +3132,19 @@ And you now have the one habit that matters more than any of it: **when someone 
             prompt: "Why won't this course give you a worldwide croquet player count?",
             options: [
               "Because it is a secret",
-              "Because no governing body publishes one — so any confident figure was invented",
+              "Because no governing body publishes one, so any confident figure was invented",
               "Because it changes daily",
               "Because the WCF forbids publishing it",
             ],
             correctIndex: 1,
             explanation:
-              "An estimate dressed as a fact is a lie with a decimal point. What IS published: USCA ~200–300 clubs, Croquet England 8,000+ subscribers and 200 clubs, WCF 29 member countries.",
+              "An estimate dressed as a fact is a lie with a decimal point. What IS published: USCA ~200-300 clubs, Croquet England 8,000+ subscribers and 200 clubs, WCF 29 member countries.",
             sourceLessonSlug: "the-economics-of-croquet",
           },
           {
             prompt: "According to Croquet England's own published figures, what has it given clubs over the last decade?",
             options: [
-              "Nothing — clubs are self-funded",
+              "Nothing, clubs are self-funded",
               "Grants totalling nearly £200,000 to 80 member clubs, and interest-free loans of more than £28,000 to 15 clubs",
               "£5 million in prize money",
               "Free courts to every applicant",
@@ -3192,7 +3192,7 @@ And you now have the one habit that matters more than any of it: **when someone 
             ],
             correctIndex: 1,
             explanation:
-              "This reframes the capital problem: the scarce resource isn't land, it's finely-mown turf with someone competent already maintaining it — and those places already exist, under-used, in most towns.",
+              "This reframes the capital problem: the scarce resource isn't land, it's finely-mown turf with someone competent already maintaining it, and those places already exist, under-used, in most towns.",
             sourceLessonSlug: "courts-and-turf",
           },
           {
@@ -3205,7 +3205,7 @@ And you now have the one habit that matters more than any of it: **when someone 
             ],
             correctIndex: 1,
             explanation:
-              "Grass only — which is exactly why turf skill is a real and scarce trade in this sport.",
+              "Grass only, which is exactly why turf skill is a real and scarce trade in this sport.",
             sourceLessonSlug: "courts-and-turf",
           },
           {
@@ -3225,20 +3225,20 @@ And you now have the one habit that matters more than any of it: **when someone 
             prompt: "Pinehurst Resort's published croquet rate card runs from...",
             options: [
               "$5 to $20",
-              "$100 (up to 3 people, 1 hour) to $750 (17–32 people)",
+              "$100 (up to 3 people, 1 hour) to $750 (17-32 people)",
               "$1,000 to $5,000",
               "It does not publish prices",
             ],
             correctIndex: 1,
             explanation:
-              "The Greenbrier publishes $128 for a private lesson and $80 per person for groups of 2–6. These are RATE CARDS — what the venue charges — not anyone's earnings.",
+              "The Greenbrier publishes $128 for a private lesson and $80 per person for groups of 2-6. These are RATE CARDS, what the venue charges, not anyone's earnings.",
             sourceLessonSlug: "coaching-and-officiating",
           },
           {
             prompt: "Why does this course quote rate cards instead of coaches' salaries?",
             options: [
               "Because salaries are confidential by law",
-              "Because no croquet coach's, mallet-maker's or club manager's income is published anywhere — so any earnings figure you see was invented",
+              "Because no croquet coach's, mallet-maker's or club manager's income is published anywhere, so any earnings figure you see was invented",
               "Because coaches are unpaid",
               "Because the USCA forbids it",
             ],
@@ -3257,40 +3257,40 @@ And you now have the one habit that matters more than any of it: **when someone 
             ],
             correctIndex: 0,
             explanation:
-              "Nine hoops are approved as well. A £100 approval fee is not a moat — it is a doorstep. That is what an under-built supply side looks like.",
+              "Nine hoops are approved as well. A £100 approval fee is not a moat, it is a doorstep. That is what an under-built supply side looks like.",
             sourceLessonSlug: "equipment-and-events",
           },
           {
             prompt: "What makes Robert Fletcher the section's key example?",
             options: [
               "He is the richest player in croquet",
-              "He won the 2013 AC World Championship at 20 — the youngest ever — and is the named supplier of the WCF-approved Invictus X ball, running his own equipment company",
+              "He won the 2013 AC World Championship at 20, the youngest ever, and is the named supplier of the WCF-approved Invictus X ball, running his own equipment company",
               "He invented Golf Croquet",
               "He founded the WCF",
             ],
             correctIndex: 1,
             explanation:
-              "A world champion who built an equipment company inside his own sport — and every step of it is checkable in governing-body documents. Not an anecdote: a documented path.",
+              "A world champion who built an equipment company inside his own sport, and every step of it is checkable in governing-body documents. Not an anecdote: a documented path.",
             sourceLessonSlug: "equipment-and-events",
           },
           {
             prompt: "Which three facts about the Jaques company must be held together?",
             options: [
               "Only that the business dates itself to 1795",
-              "That the business dates ITSELF to 1795 (its own claim); that the registered company was incorporated in 1945; and that its Companies House status was read as 'Voluntary Arrangement' — a formal insolvency procedure",
+              "That the business dates ITSELF to 1795 (its own claim); that the registered company was incorporated in 1945; and that its Companies House status was read as 'Voluntary Arrangement', a formal insolvency procedure",
               "That it went bankrupt in 1864",
               "That it no longer makes croquet equipment",
             ],
             correctIndex: 1,
             explanation:
-              "All three can be true at once, and the romantic one is the one everybody repeats. Companies House is a LIVE register — re-check before repeating any of it.",
+              "All three can be true at once, and the romantic one is the one everybody repeats. Companies House is a LIVE register, re-check before repeating any of it.",
             sourceLessonSlug: "equipment-and-events",
           },
           {
             prompt: "What is the most efficient first move for a US high-school student who wants to compete?",
             options: [
               "Buy a championship mallet",
-              "Join the USCA — student membership is FREE and brings a handicap, a national ranking and eligibility for sanctioned tournaments — then get a handicap and enter a HANDICAP tournament",
+              "Join the USCA, student membership is FREE and brings a handicap, a national ranking and eligibility for sanctioned tournaments, then get a handicap and enter a HANDICAP tournament",
               "Enter the world championship qualifier",
               "Build a court",
             ],

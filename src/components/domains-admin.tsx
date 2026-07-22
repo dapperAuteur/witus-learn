@@ -154,11 +154,11 @@ export function DomainsAdmin({
         </div>
         {err ? <p className="text-sm text-red-600">{err}</p> : null}
         <p className="text-xs text-neutral-500">
-          A <code>&lt;name&gt;.learn.witus.online</code> subdomain goes live immediately — no DNS
+          A <code>&lt;name&gt;.learn.witus.online</code> subdomain goes live immediately, no DNS
           needed. {" "}
           {hasVercelDomains
-            ? "A custom domain (your own, e.g. school.example.com) is registered with Vercel automatically — we'll show you the DNS records to set at your registrar and a button to check when it verifies."
-            : "Custom domains still map here, but Vercel auto-registration isn't configured yet — point the domain at the generic DNS records shown below, and ask the platform owner to add it in the Vercel project."}
+            ? "A custom domain (your own, e.g. school.example.com) is registered with Vercel automatically, we'll show you the DNS records to set at your registrar and a button to check when it verifies."
+            : "Custom domains still map here, but Vercel auto-registration isn't configured yet, point the domain at the generic DNS records shown below, and ask the platform owner to add it in the Vercel project."}
           {" "}Up to {maxDomains} domains per school.
         </p>
       </form>
@@ -188,7 +188,7 @@ export function DomainsAdmin({
                         )}
                         {d.wildcardCovered ? (
                           <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs text-blue-800 dark:bg-blue-900 dark:text-blue-200">
-                            covered — no DNS needed, it&apos;s live
+                            covered, no DNS needed, it&apos;s live
                           </span>
                         ) : (
                           <>
@@ -213,7 +213,7 @@ export function DomainsAdmin({
                       </div>
                       {!d.wildcardCovered && hi?.vercelError ? (
                         <p className="mt-2 text-xs text-red-600">
-                          Vercel registration error: {hi.vercelError}. The domain is still mapped here —
+                          Vercel registration error: {hi.vercelError}. The domain is still mapped here,
                           try &quot;Check verification&quot;, or remove and re-add it to retry.
                         </p>
                       ) : null}
@@ -221,7 +221,7 @@ export function DomainsAdmin({
                         <div className="mt-2 rounded-md bg-neutral-50 p-3 dark:bg-neutral-900/60">
                           {hi.status ? (
                             <p className={hi.status.ok ? "text-green-700 dark:text-green-400" : "text-amber-700 dark:text-amber-400"}>
-                              {hi.status.ok ? "✓ Live — " : "⏳ Not set up yet — "}
+                              {hi.status.ok ? "✓ Live, " : "⏳ Not set up yet, "}
                               {hi.status.detail}
                             </p>
                           ) : null}
@@ -229,7 +229,7 @@ export function DomainsAdmin({
                             <div className="mt-2">
                               <p className="text-xs text-neutral-500">
                                 Add a record at your DNS provider (click a value to copy).{" "}
-                                {hi.records.length > 1 ? "An apex domain works with EITHER the A or the CNAME — " : ""}
+                                {hi.records.length > 1 ? "An apex domain works with EITHER the A or the CNAME, " : ""}
                                 use whatever your host (e.g. Vercel) shows for this domain.
                               </p>
                               <div className="mt-1 overflow-x-auto">

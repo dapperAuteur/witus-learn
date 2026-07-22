@@ -24,9 +24,9 @@ export default async function ApiKeysAdminPage() {
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
         Server-to-server read access for another app to embed {sdb.tenant.name}&rsquo;s published
         courses (e.g. WanderLearn). Each key only ever sees THIS school&rsquo;s published, public
-        content — never drafts, never another school&rsquo;s. The full key is shown once, right
+        content, never drafts, never another school&rsquo;s. The full key is shown once, right
         after you create it; after that, only a short prefix is kept for identification. Store it
-        somewhere safe (a secret manager on the consuming app&rsquo;s side) — it can&rsquo;t be
+        somewhere safe (a secret manager on the consuming app&rsquo;s side), it can&rsquo;t be
         retrieved again, only revoked and replaced.
       </p>
       <div className="mt-6">

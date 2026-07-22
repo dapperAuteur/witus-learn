@@ -4,7 +4,7 @@ import { requireTenant } from "@/lib/tenant";
 import { getSession } from "@/lib/session";
 import { listReviewQueue } from "@/db/queries/field-log";
 
-export const metadata: Metadata = { title: "Peer review — Field Log" };
+export const metadata: Metadata = { title: "Peer review, Field Log" };
 
 // The review queue: projects that peers have marked `in_review`. Reviewing others' work against the
 // Trusted Documentation Rubric is how learners earn the "verification-by-doing" muscle — and how the

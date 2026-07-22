@@ -1,4 +1,4 @@
-import { and, asc, desc, eq, inArray, ne, type SQL } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, ne, sql, type SQL } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseModules,
@@ -127,6 +127,7 @@ export async function createModule(
       isPublished: input.isPublished ?? false,
     })
     .returning();
+  await bumpCourseContentVersion(courseId);
   return row;
 }
 
@@ -140,6 +141,7 @@ export async function updateModule(
     .set(patch)
     .where(and(eq(courseModules.id, moduleId), eq(courseModules.courseId, courseId)))
     .returning();
+  if (row) await bumpCourseContentVersion(courseId);
   return row ?? null;
 }
 
@@ -148,6 +150,7 @@ export async function deleteModule(courseId: string, moduleId: string): Promise<
     .delete(courseModules)
     .where(and(eq(courseModules.id, moduleId), eq(courseModules.courseId, courseId)))
     .returning({ id: courseModules.id });
+  if (rows.length > 0) await bumpCourseContentVersion(courseId);
   return rows.length > 0;
 }
 
@@ -183,6 +186,30 @@ export async function getLessonById(tenantId: string, id: string): Promise<Lesso
   return rows[0] ?? null;
 }
 
+/**
+ * Bump a course's `content_version` — the signal /downloads uses to tell a learner their saved
+ * offline copy is out of date ("Update available").
+ *
+ * Called from the lesson/module mutation helpers below rather than from the API routes, so EVERY
+ * caller bumps: the authoring routes, the seed scripts, and anything added later. Putting it in
+ * the routes would mean a new write path could silently skip it and strand offline learners on
+ * stale content.
+ *
+ * Best-effort by design: a failed bump must never fail the edit the instructor actually asked for.
+ * The cost of a missed bump is one learner keeping a stale copy until the next edit, which is
+ * strictly better than a lost lesson edit.
+ */
+export async function bumpCourseContentVersion(courseId: string): Promise<void> {
+  try {
+    await db
+      .update(courses)
+      .set({ contentVersion: sql`${courses.contentVersion} + 1`, updatedAt: new Date() })
+      .where(eq(courses.id, courseId));
+  } catch {
+    // swallow: see above
+  }
+}
+
 export async function createLesson(
   tenantId: string,
   courseId: string,
@@ -206,6 +233,7 @@ export async function createLesson(
       slug: slugify(input.slug || input.title),
     })
     .returning();
+  await bumpCourseContentVersion(courseId);
   return row;
 }
 
@@ -219,6 +247,7 @@ export async function updateLesson(
     .set({ ...patch, updatedAt: new Date() })
     .where(and(eq(lessons.id, lessonId), eq(lessons.courseId, courseId)))
     .returning();
+  if (row) await bumpCourseContentVersion(courseId);
   return row ?? null;
 }
 
@@ -227,6 +256,7 @@ export async function deleteLesson(courseId: string, lessonId: string): Promise<
     .delete(lessons)
     .where(and(eq(lessons.id, lessonId), eq(lessons.courseId, courseId)))
     .returning({ id: lessons.id });
+  if (rows.length > 0) await bumpCourseContentVersion(courseId);
   return rows.length > 0;
 }
 

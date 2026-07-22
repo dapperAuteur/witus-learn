@@ -190,7 +190,7 @@ export default async function DashboardPage() {
         <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Manage your profile</h2>
         {learner?.isChild ? (
           <p className="mt-1 text-xs text-neutral-500">
-            This is your account — {learner.name ?? "the learner above"} is a managed profile.
+            This is your account, {learner.name ?? "the learner above"} is a managed profile.
           </p>
         ) : null}
         <div className="mt-3">

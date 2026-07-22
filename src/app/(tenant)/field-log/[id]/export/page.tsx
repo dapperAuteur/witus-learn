@@ -6,7 +6,7 @@ import { getSession } from "@/lib/session";
 import { getProjectBundle } from "@/db/queries/field-log";
 import { PrintButton } from "@/components/field-log/print-button";
 
-export const metadata: Metadata = { title: "Export — Field Log project" };
+export const metadata: Metadata = { title: "Export, Field Log project" };
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -41,7 +41,7 @@ export default async function FieldLogExportPage({ params }: Params) {
         <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm">
           {legs.map((l) => (
             <li key={l.id}>
-              {l.name}{l.siteType ? ` (${l.siteType})` : ""}{l.locationLabel ? ` — ${l.locationLabel}` : ""}{l.startDate ? ` · ${l.startDate}` : ""}
+              {l.name}{l.siteType ? ` (${l.siteType})` : ""}{l.locationLabel ? `, ${l.locationLabel}` : ""}{l.startDate ? ` · ${l.startDate}` : ""}
             </li>
           ))}
           {legs.length === 0 ? <li className="list-none text-neutral-500">None.</li> : null}
@@ -58,7 +58,7 @@ export default async function FieldLogExportPage({ params }: Params) {
             <tbody>
               {captures.map((c) => (
                 <tr key={c.id} className="border-t border-neutral-100 dark:border-neutral-800">
-                  <td className="py-1 pr-3">{c.subject ?? "—"}</td>
+                  <td className="py-1 pr-3">{c.subject ?? "-"}</td>
                   <td className="py-1 pr-3">{c.consentStatus}</td>
                   <td className="py-1 pr-3">{c.involvesMinor ? "yes" : ""}</td>
                   <td className="py-1 pr-3 text-xs text-neutral-500 whitespace-nowrap">{new Date(c.createdAt).toLocaleDateString()}</td>

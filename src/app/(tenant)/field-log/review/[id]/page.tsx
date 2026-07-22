@@ -7,7 +7,7 @@ import { getReviewBundle } from "@/db/queries/field-log";
 import { ReviewForm } from "@/components/field-log/review-form";
 import type { RubricState } from "@/lib/field-log-rubric";
 
-export const metadata: Metadata = { title: "Review a project — Field Log" };
+export const metadata: Metadata = { title: "Review a project, Field Log" };
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -32,7 +32,7 @@ export default async function ReviewProjectPage({ params }: Params) {
         <h2 className="font-semibold">Legs</h2>
         <ol className="mt-1 list-decimal space-y-0.5 pl-5">
           {legs.map((l) => (
-            <li key={l.id}>{l.name}{l.siteType ? ` (${l.siteType})` : ""}{l.locationLabel ? ` — ${l.locationLabel}` : ""}</li>
+            <li key={l.id}>{l.name}{l.siteType ? ` (${l.siteType})` : ""}{l.locationLabel ? `, ${l.locationLabel}` : ""}</li>
           ))}
           {legs.length === 0 ? <li className="list-none text-neutral-500">None.</li> : null}
         </ol>
@@ -44,7 +44,7 @@ export default async function ReviewProjectPage({ params }: Params) {
             <tbody>
               {captures.map((c) => (
                 <tr key={c.id} className="border-t border-neutral-100 dark:border-neutral-800">
-                  <td className="py-1 pr-3">{c.subject ?? "—"}</td>
+                  <td className="py-1 pr-3">{c.subject ?? "-"}</td>
                   <td className="py-1 pr-3">{c.consentStatus}</td>
                   <td className="py-1 pr-3">{c.involvesMinor ? "yes" : ""}</td>
                 </tr>

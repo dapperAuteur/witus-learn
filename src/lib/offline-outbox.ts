@@ -241,7 +241,7 @@ export async function flushOutbox(): Promise<void> {
               ? {
                   ...i,
                   failed: true,
-                  lastError: `Written on ${item.origin} — open that site to send it. It hasn't been saved here.`,
+                  lastError: `Written on ${item.origin}, open that site to send it. It hasn't been saved here.`,
                 }
               : i,
           ),
@@ -279,7 +279,7 @@ export async function flushOutbox(): Promise<void> {
       const retryable = res.status === 401 || res.status === 403 || res.status === 408 || res.status === 429 || res.status >= 500;
       const lastError =
         res.status === 401 || res.status === 403
-          ? "Sign in to save this — it's still here."
+          ? "Sign in to save this, it's still here."
           : retryable
             ? "The server couldn't take it just then. It'll try again."
             : `The server rejected this (${res.status}). It hasn't been saved.`;

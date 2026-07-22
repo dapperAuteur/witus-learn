@@ -66,6 +66,17 @@ export type OfflineLessonEntry = OfflineEntryBase & {
   /** The course module ("section") this lesson sits in, or null for a flat course. */
   sectionTitle: string | null;
   lessonTitle: string;
+  /**
+   * The course's uuid and its `content_version` AT THE MOMENT THIS WAS SAVED — how /downloads
+   * knows an offline copy has gone stale (the instructor edited the course since).
+   *
+   * Both are OPTIONAL on purpose: entries written before this shipped have neither, and the
+   * manifest is a hint layer that must keep working across upgrades rather than force a migration
+   * or drop the learner's rows. An entry missing them simply reports "unknown", never "stale" —
+   * we never cry wolf on data we don't have.
+   */
+  courseId?: string;
+  courseContentVersion?: number;
 };
 
 /**

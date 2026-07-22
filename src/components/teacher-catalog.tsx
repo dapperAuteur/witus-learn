@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 
 export interface CatalogCourse {
   id: string;
+  /** Readable URL segment for /teach/<slug>; falls back to the uuid when a course has no slug. */
+  slug: string | null;
   title: string;
   category: string | null;
   isPublished: boolean;
@@ -105,7 +107,7 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
       ),
     );
     setBusy(false);
-    setMsg(`${verb}: ${ok}/${ids.length} updated${ok < ids.length ? " (some blocked — e.g. on hold)" : ""}.`);
+    setMsg(`${verb}: ${ok}/${ids.length} updated${ok < ids.length ? " (some blocked, e.g. on hold)" : ""}.`);
     router.refresh();
   }
 
@@ -130,7 +132,7 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
         body: JSON.stringify(patch),
       });
       if (r.ok) setRows((prev) => prev.map((x) => (x.id === id ? { ...x, ...normalize(patch) } : x)));
-      else if (r.status === 409) setMsg(`“${c.title}” is on hold — can’t publish until the hold clears.`);
+      else if (r.status === 409) setMsg(`“${c.title}” is on hold, can’t publish until the hold clears.`);
     } finally {
       setBusy(false);
       router.refresh();
@@ -221,7 +223,7 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
                 aria-label={`Select ${c.title}`}
               />
               <span className="flex min-w-0 flex-1 flex-col">
-                <Link href={`/teach/${c.id}`} className="truncate font-medium hover:underline">
+                <Link href={`/teach/${c.slug ?? c.id}`} className="truncate font-medium hover:underline">
                   {c.title}
                 </Link>
                 {c.instructorLabel ? (
@@ -248,7 +250,7 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
               >
                 {c.isPublished ? "Published" : "Draft"}
               </button>
-              <Link href={`/teach/${c.id}`} className="shrink-0 text-sm underline" style={{ color: "var(--accent)" }}>
+              <Link href={`/teach/${c.slug ?? c.id}`} className="shrink-0 text-sm underline" style={{ color: "var(--accent)" }}>
                 Manage
               </Link>
             </li>

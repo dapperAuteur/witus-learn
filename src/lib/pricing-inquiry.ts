@@ -101,7 +101,7 @@ export async function submitPricingInquiry(
       // saved, so this is a notification problem, not a data-loss problem. Loudly logged so the
       // operator can fix the config; never surfaced to the visitor as a failure.
       console.error(
-        `[pricing-inquiry] Lead SAVED but the notification email FAILED for tenant ${tenant.slug}. Check /admin/leads — the enquiry is there. Cause:`,
+        `[pricing-inquiry] Lead SAVED but the notification email FAILED for tenant ${tenant.slug}. Check /admin/leads, the enquiry is there. Cause:`,
         err,
       );
     }

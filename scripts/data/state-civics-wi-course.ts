@@ -186,7 +186,7 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
 - **Contact your legislators** in Madison: you have one Assembly member and one Senator.
 - **Run**: town board, school board, city council, and county board are reachable local starting points.
 
-:::reveal Name one voting feature Wisconsin offers, and one reason spring elections deserve your attention. ||| Wisconsin offers Election-Day registration (with photo ID). Spring elections deserve your attention because that's when consequential judicial races — including the state Supreme Court — and many local offices are actually decided.
+:::reveal Name one voting feature Wisconsin offers, and one reason spring elections deserve your attention. ||| Wisconsin offers Election-Day registration (with photo ID). Spring elections deserve your attention because that's when consequential judicial races, including the state Supreme Court, and many local offices are actually decided.
 
 ## Sources
 - Wisconsin State Legislature. (n.d.). *Local government: counties, cities, villages, and towns*. legis.wisconsin.gov. https://legis.wisconsin.gov/

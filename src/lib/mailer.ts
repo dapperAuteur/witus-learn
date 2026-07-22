@@ -106,7 +106,7 @@ export async function sendEmail({
 
   if (!hasMailgun) {
     console.log(
-      `\n[mailer:dev] (Mailgun not configured — logging instead)\n  From: ${sender}\n  To: ${to}\n  Subject: ${subject}\n  ${text}\n`,
+      `\n[mailer:dev] (Mailgun not configured, logging instead)\n  From: ${sender}\n  To: ${to}\n  Subject: ${subject}\n  ${text}\n`,
     );
     await mirrorToInbox(input, sender, false, "mailgun-not-configured");
     return;
@@ -137,7 +137,7 @@ export async function sendEmail({
     console.error(
       `[mailer] Mailgun send FAILED (to=${to}, from=${sender ?? `no-reply@${env.MAILGUN_DOMAIN}`}, domain=${env.MAILGUN_DOMAIN}): ${detail}`,
     );
-    console.log(`\n[mailer:fallback] Email NOT delivered — content (copy any link here to continue):\n  Subject: ${subject}\n  To: ${to}\n  ${text}\n`);
+    console.log(`\n[mailer:fallback] Email NOT delivered, content (copy any link here to continue):\n  Subject: ${subject}\n  To: ${to}\n  ${text}\n`);
     // Record the FAILURE in the Inbox too — "we tried to email X and it bounced" is exactly the
     // kind of thing BAM should find in triage rather than only in a server log.
     await mirrorToInbox(input, sender, false, detail);

@@ -47,7 +47,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const LABOR_MEXICO_COURSE: AuthoredCourse = {
   title: "Mexico: The Protection Contract, and the Trade Deal That Came for It",
   description:
-    "The country course that teaches you to stop asking \"is there a union?\" and start asking \"whose union is it?\" Mexico put labor rights in its constitution in 1917 — eighteen years before the United States passed the Wagner Act — and then spent most of a century with a union movement built into the ruling party. Out of that grew the protection contract: a collective agreement signed between a company and a union the workers had never heard of, sometimes before the factory had hired anybody, which then legally blocked a real union from organizing. This course teaches exactly how that worked, how Mexico's own 2019 labor reform set out to kill it (every existing contract had to win a free, secret, personal vote by 1 May 2023 or die), and how the USMCA's Rapid Response Labor Mechanism became the one international labor tool anywhere that actually bites — a tariff penalty aimed at a single factory. Then it teaches the mechanism's limits, including the cases the United States lost. Cited to the treaty text, the Mexican Constitution, the Ley Federal del Trabajo, Mexico's STPS and Federal Labor Center, USTR, and the US Department of Labor.",
+    "The country course that teaches you to stop asking \"is there a union?\" and start asking \"whose union is it?\" Mexico put labor rights in its constitution in 1917, eighteen years before the United States passed the Wagner Act, and then spent most of a century with a union movement built into the ruling party. Out of that grew the protection contract: a collective agreement signed between a company and a union the workers had never heard of, sometimes before the factory had hired anybody, which then legally blocked a real union from organizing. This course teaches exactly how that worked, how Mexico's own 2019 labor reform set out to kill it (every existing contract had to win a free, secret, personal vote by 1 May 2023 or die), and how the USMCA's Rapid Response Labor Mechanism became the one international labor tool anywhere that actually bites, a tariff penalty aimed at a single factory. Then it teaches the mechanism's limits, including the cases the United States lost. Cited to the treaty text, the Mexican Constitution, the Ley Federal del Trabajo, Mexico's STPS and Federal Labor Center, USTR, and the US Department of Labor.",
   lessons: [
     // ───────────── SECTION 1 · RIGHTS ON PAPER, BEFORE ANYBODY ELSE HAD THEM ─────────────
     {
@@ -56,11 +56,11 @@ export const LABOR_MEXICO_COURSE: AuthoredCourse = {
       title: "1 · 1917: Mexico put labor rights in its constitution first",
       body: `Start with a fact that reorganizes the map.
 
-In the anchor course, *The History of Unions*, the great American turning point is **1935** — the year the **Wagner Act** made organizing a union a protected legal right in the United States.
+In the anchor course, *The History of Unions*, the great American turning point is **1935**, the year the **Wagner Act** made organizing a union a protected legal right in the United States.
 
 Mexico got there **eighteen years earlier**, and it did not use a statute. It used its **constitution**.
 
-The **Constitución Política de los Estados Unidos Mexicanos**, promulgated in **1917** out of the Mexican Revolution, contains **Article 123** — an entire article of the country's founding document devoted to labor. Not a law that a later Congress could quietly repeal. The constitution itself.
+The **Constitución Política de los Estados Unidos Mexicanos**, promulgated in **1917** out of the Mexican Revolution, contains **Article 123**, an entire article of the country's founding document devoted to labor. Not a law that a later Congress could quietly repeal. The constitution itself.
 
 Read what is actually in it (Constitución Política de los Estados Unidos Mexicanos [CPEUM], 1917/2015, art. 123, apartado A):
 
@@ -73,17 +73,17 @@ Read what is actually in it (Constitución Política de los Estados Unidos Mexic
 | **XVIII** | Strikes are lawful when their purpose is "to attain **equilibrium between the several factors of production**." |
 | **XXII** | If an employer fires a worker **for joining a union** or for taking part in a lawful strike, the employer must **reinstate them or pay three months' wages**. |
 
-Sit with the dates. **The eight-hour day. The right to form a union. The right to strike. Protection against being fired for organizing.** All of it, in a national constitution, in **1917** — while in the United States, federal courts were still routinely issuing injunctions to break strikes, and would keep doing so until the 1930s.
+Sit with the dates. **The eight-hour day. The right to form a union. The right to strike. Protection against being fired for organizing.** All of it, in a national constitution, in **1917**, while in the United States, federal courts were still routinely issuing injunctions to break strikes, and would keep doing so until the 1930s.
 
 **This is the fact that should break an assumption you probably didn't know you had.** A student in the US is quietly taught to sort countries into "advanced" and "developing," and to assume that worker protections flow *from* the first group *to* the second. On the specific question of when labor rights entered the supreme law of the land, **Mexico was first and the United States was late.**
 
-**And now the hard part, which is the whole course.** Having the best labor rights on paper in the world in 1917 did not give Mexican workers strong unions. For most of the century that followed, it gave them something else entirely — and the gap between what Article 123 promised and what a Mexican worker could actually do is the subject of the next four sections.
+**And now the hard part, which is the whole course.** Having the best labor rights on paper in the world in 1917 did not give Mexican workers strong unions. For most of the century that followed, it gave them something else entirely, and the gap between what Article 123 promised and what a Mexican worker could actually do is the subject of the next four sections.
 
-**One more clause, because it becomes a villain later.** The original Article 123 also set up *who decides* labor disputes — clause **XX** sent them to a **Junta de Conciliación y Arbitraje** (a Conciliation and Arbitration Board) made up of "an equal number of workers and employers, and one government representative" (CPEUM, 1917/2015, art. 123, apartado A, cl. XX). A **tripartite board**: labor, capital, government. It sounds fair. Hold onto it. In 2017 Mexico abolished those boards, and Section 3 explains why.
+**One more clause, because it becomes a villain later.** The original Article 123 also set up *who decides* labor disputes, clause **XX** sent them to a **Junta de Conciliación y Arbitraje** (a Conciliation and Arbitration Board) made up of "an equal number of workers and employers, and one government representative" (CPEUM, 1917/2015, art. 123, apartado A, cl. XX). A **tripartite board**: labor, capital, government. It sounds fair. Hold onto it. In 2017 Mexico abolished those boards, and Section 3 explains why.
 
 > **A note on how to read this table.** Clause XX as quoted is the **pre-2017** text. Mexico amended Article 123 on **24 February 2017** to replace the tripartite boards with real labor courts (Diario Oficial de la Federación [DOF], 2017). Always check which version of a constitution you are reading.
 
-:::reveal Mexico's constitution protected the right to form a union and to strike in 1917. The US Wagner Act did the same in 1935. What conclusion should you NOT draw from that? ||| That Mexican workers therefore had stronger unions than American workers. Rights on paper and power in a workplace are different things — and the whole point of this course is the distance between them. What you *should* conclude is narrower and still surprising: on the question of when labor rights entered the supreme law of the land, Mexico was eighteen years ahead of the United States, which should permanently complicate any "advanced vs. developing" sorting you were carrying around.
+:::reveal Mexico's constitution protected the right to form a union and to strike in 1917. The US Wagner Act did the same in 1935. What conclusion should you NOT draw from that? ||| That Mexican workers therefore had stronger unions than American workers. Rights on paper and power in a workplace are different things, and the whole point of this course is the distance between them. What you *should* conclude is narrower and still surprising: on the question of when labor rights entered the supreme law of the land, Mexico was eighteen years ahead of the United States, which should permanently complicate any "advanced vs. developing" sorting you were carrying around.
 
 ## Sources
 - Constitución Política de los Estados Unidos Mexicanos. (1917, as amended). Cámara de Diputados. https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf
@@ -96,44 +96,44 @@ Sit with the dates. **The eight-hour day. The right to form a union. The right t
       title: "2 · The CTM: when the union is part of the governing party",
       recallContent: [
         {
-          prompt: "In what year did labor rights — the eight-hour day, the right to unionize, the right to strike — enter Mexico's constitution? And what is the article called?",
+          prompt: "In what year did labor rights, the eight-hour day, the right to unionize, the right to strike, enter Mexico's constitution? And what is the article called?",
           answer: "1917, in Article 123 of the Constitución Política de los Estados Unidos Mexicanos. That is eighteen years before the US Wagner Act (1935).",
         },
         {
           prompt: "Under the original Article 123, who decided labor disputes?",
-          answer: "A Junta de Conciliación y Arbitraje — a tripartite board of equal numbers of workers and employers plus one government representative (clause XX). Mexico abolished these boards in the 2017 constitutional reform and replaced them with labor courts.",
+          answer: "A Junta de Conciliación y Arbitraje, a tripartite board of equal numbers of workers and employers plus one government representative (clause XX). Mexico abolished these boards in the 2017 constitutional reform and replaced them with labor courts.",
         },
       ],
       body: `The anchor course taught you two kinds of union.
 
-- The **free union** — an organization workers build themselves, which bargains against the employer, and which the state is supposed to leave alone (the US, Sweden, Germany).
-- The **state union** — an organization that is an arm of the government, which you may join but may not found (China's ACFTU).
+- The **free union**, an organization workers build themselves, which bargains against the employer, and which the state is supposed to leave alone (the US, Sweden, Germany).
+- The **state union**, an organization that is an arm of the government, which you may join but may not found (China's ACFTU).
 
 Mexico built a **third** kind, and it is genuinely distinct from both: a union that is a **constituent part of the governing political party**.
 
-**How it happened.** In **1936**, under President **Lázaro Cárdenas**, Mexico's fragmented labor movement was gathered into a single national confederation: the **Confederación de Trabajadores de México** — the **CTM**. Its first general secretary was **Vicente Lombardo Toledano**. Two years later, in **1938**, the CTM was formally incorporated as the **labor sector** of the governing party (then the PRM, which became the **PRI** — the *Partido Revolucionario Institucional*) (Confederación de Trabajadores de México [CTM], n.d.).
+**How it happened.** In **1936**, under President **Lázaro Cárdenas**, Mexico's fragmented labor movement was gathered into a single national confederation: the **Confederación de Trabajadores de México**, the **CTM**. Its first general secretary was **Vicente Lombardo Toledano**. Two years later, in **1938**, the CTM was formally incorporated as the **labor sector** of the governing party (then the PRM, which became the **PRI**, the *Partido Revolucionario Institucional*) (Confederación de Trabajadores de México [CTM], n.d.).
 
-And the PRI then governed Mexico, without interruption, for **about seventy-one years** — from 1929 until it lost the presidency in **2000**.
+And the PRI then governed Mexico, without interruption, for **about seventy-one years**, from 1929 until it lost the presidency in **2000**.
 
 **Look carefully at what that arrangement does.** The CTM is a union. It is also a *wing of the government*. Its long-serving leader, **Fidel Velázquez**, ran it for most of the second half of the century.
 
-So ask the anchor course's fourth question — *what happens to you if you try?* — and notice that in Mexico for most of the 20th century, the question had a strange answer. It wasn't that unions were **banned**. Mexico had unions. Mexico had *enormous* unions, with constitutional rights, the legal power to strike, and a seat inside the governing party.
+So ask the anchor course's fourth question, *what happens to you if you try?*, and notice that in Mexico for most of the 20th century, the question had a strange answer. It wasn't that unions were **banned**. Mexico had unions. Mexico had *enormous* unions, with constitutional rights, the legal power to strike, and a seat inside the governing party.
 
 **The problem was the opposite of a ban.** The problem was that the union might not be *yours*.
 
-**The word for this system is *corporatism*.** In a corporatist system, the state does not smash the workers' organization; it **absorbs** it. Workers get an official channel — a real one, with real dues, real contracts, real officials, and real access to power. What they do not get is a *choice of channel*. And a labor movement that is structurally part of the government has a permanent conflict of interest, because its ally across the table is also its ally in the cabinet.
+**The word for this system is *corporatism*.** In a corporatist system, the state does not smash the workers' organization; it **absorbs** it. Workers get an official channel, a real one, with real dues, real contracts, real officials, and real access to power. What they do not get is a *choice of channel*. And a labor movement that is structurally part of the government has a permanent conflict of interest, because its ally across the table is also its ally in the cabinet.
 
 **This is the setup for everything that follows.** A country with:
 
 1. The strongest labor rights on paper of any constitution in the hemisphere (1917), and
-2. A dominant labor confederation fused to the party that ran the country (1938–2000), and
-3. A **tripartite board** deciding every labor dispute — with the labor seat filled by that same confederation.
+2. A dominant labor confederation fused to the party that ran the country (1938-2000), and
+3. A **tripartite board** deciding every labor dispute, with the labor seat filled by that same confederation.
 
 Out of those three things, Mexican employers and Mexican union officials built a device that this course exists to explain. It is called a **protection contract**, and it is the single strangest object in the whole Workers' Rights track: **a union contract whose purpose is to prevent unionization.**
 
 > **Source note, and a habit worth keeping.** The CTM's founding dates here come partly from the CTM's own official history. The CTM is a **party to this story** — it is one of the organizations later accused of signing protection contracts, and it is the confederation whose contract workers voted out at General Motors Silao in 2021 (Section 4). Its own account of itself is useful for dates and names and should not be trusted for judgments. Label your sources; notice who is talking.
 
-:::reveal The anchor course taught the "free union" and the "state union." What third model does Mexico's CTM represent, and why is it dangerous in a way that is easy to miss? ||| Corporatist unionism — a union that is a constituent sector of the governing party (the CTM joined the PRM/PRI's structure in 1938, and the PRI ruled for about 71 years). It is easy to miss because nothing is banned: the union is real, large, legal, and powerful. The danger is structural, not prohibitive — the workers' organization is fused to the state it is supposed to bargain against, so a worker's problem is not that there is no union but that the union is not answerable to them.
+:::reveal The anchor course taught the "free union" and the "state union." What third model does Mexico's CTM represent, and why is it dangerous in a way that is easy to miss? ||| Corporatist unionism, a union that is a constituent sector of the governing party (the CTM joined the PRM/PRI's structure in 1938, and the PRI ruled for about 71 years). It is easy to miss because nothing is banned: the union is real, large, legal, and powerful. The danger is structural, not prohibitive, the workers' organization is fused to the state it is supposed to bargain against, so a worker's problem is not that there is no union but that the union is not answerable to them.
 
 ## Sources
 - Confederación de Trabajadores de México. (n.d.). *Nuestra historia*. https://ctmoficial.org/nuestra-historia-2/ [The CTM's own account of its founding — a party to the disputes described in this course.]
@@ -150,7 +150,7 @@ Out of those three things, Mexican employers and Mexican union officials built a
         shuffleOptions: true,
         questions: [
           {
-            prompt: "In what year did labor rights — including the eight-hour day and the right to strike — enter Mexico's constitution?",
+            prompt: "In what year did labor rights, including the eight-hour day and the right to strike, enter Mexico's constitution?",
             options: ["1917", "1935", "1936", "1994"],
             correctIndex: 0,
             explanation: "Article 123 of the Constitución Política de los Estados Unidos Mexicanos, promulgated in 1917 out of the Mexican Revolution. The US Wagner Act came eighteen years later, in 1935.",
@@ -191,18 +191,18 @@ Out of those three things, Mexican employers and Mexican union officials built a
             prompt: "Under Article 123, what is an employer required to do if it fires a worker for joining a union or for taking part in a lawful strike?",
             options: [
               "Reinstate the worker, or pay them three months' wages",
-              "Nothing — the constitution is silent on dismissals",
+              "Nothing, the constitution is silent on dismissals",
               "Pay a fine to the government",
               "Offer the worker a different job at the same company",
             ],
             correctIndex: 0,
-            explanation: "Clause XXII. The remedy — reinstatement or three months' pay — has been in the constitution since 1917.",
+            explanation: "Clause XXII. The remedy, reinstatement or three months' pay, has been in the constitution since 1917.",
             sourceLessonSlug: "mexico-article-123",
           },
           {
             prompt: "What is the correct conclusion to draw from the fact that Mexico constitutionalized labor rights in 1917 and the US passed the Wagner Act in 1935?",
             options: [
-              "That the ordinary 'advanced vs. developing' sorting is unreliable on this question — but NOT that Mexican workers therefore had stronger unions",
+              "That the ordinary 'advanced vs. developing' sorting is unreliable on this question, but NOT that Mexican workers therefore had stronger unions",
               "That Mexican unions were therefore stronger than American unions throughout the 20th century",
               "That the United States copied Article 123 when it wrote the Wagner Act",
               "That constitutional rights always produce strong unions",
@@ -214,7 +214,7 @@ Out of those three things, Mexican employers and Mexican union officials built a
           {
             prompt: "Under the ORIGINAL Article 123, who decided a dispute between a worker and an employer?",
             options: [
-              "A Junta de Conciliación y Arbitraje — a tripartite board of workers, employers, and one government representative",
+              "A Junta de Conciliación y Arbitraje, a tripartite board of workers, employers, and one government representative",
               "A federal labor court staffed by career judges",
               "The Supreme Court of Mexico",
               "The union's own internal tribunal",
@@ -226,7 +226,7 @@ Out of those three things, Mexican employers and Mexican union officials built a
           {
             prompt: "What does 'CTM' stand for, and what is it?",
             options: [
-              "The Confederación de Trabajadores de México — the dominant labor confederation, founded 1936",
+              "The Confederación de Trabajadores de México, the dominant labor confederation, founded 1936",
               "The Mexican labor ministry",
               "The federal body that registers unions and collective contracts",
               "The Mexican employers' federation",
@@ -244,7 +244,7 @@ Out of those three things, Mexican employers and Mexican union officials built a
               "It won the right to bargain nationally across all industries",
             ],
             correctIndex: 0,
-            explanation: "That incorporation is what makes Mexico's model a third kind — neither a free union nor a state union, but a union that is a constituent sector of the governing party.",
+            explanation: "That incorporation is what makes Mexico's model a third kind, neither a free union nor a state union, but a union that is a constituent sector of the governing party.",
             sourceLessonSlug: "mexico-ctm-corporatism",
           },
           {
@@ -263,7 +263,7 @@ Out of those three things, Mexican employers and Mexican union officials built a
               "A system in which every company must have a works council",
             ],
             correctIndex: 0,
-            explanation: "The workers get a real channel with real dues, contracts and access to power — what they don't get is a choice of channel. Nothing is banned, which is exactly what makes it easy to miss.",
+            explanation: "The workers get a real channel with real dues, contracts and access to power, what they don't get is a choice of channel. Nothing is banned, which is exactly what makes it easy to miss.",
             sourceLessonSlug: "mexico-ctm-corporatism",
           },
           {
@@ -281,19 +281,19 @@ Out of those three things, Mexican employers and Mexican union officials built a
           {
             prompt: "In 20th-century Mexico, what was the core problem facing a worker who wanted real representation?",
             options: [
-              "Not that unions were banned — but that the union might not be answerable to them",
+              "Not that unions were banned, but that the union might not be answerable to them",
               "That the constitution did not protect the right to strike",
               "That collective bargaining was illegal",
               "That there were no unions at all",
             ],
             correctIndex: 0,
-            explanation: "Mexico had unions — enormous ones, with constitutional rights and a seat inside the governing party. The problem was the opposite of a ban.",
+            explanation: "Mexico had unions, enormous ones, with constitutional rights and a seat inside the governing party. The problem was the opposite of a ban.",
             sourceLessonSlug: "mexico-ctm-corporatism",
           },
           {
             prompt: "Why does this course warn you to label the CTM's own official history as a source?",
             options: [
-              "Because the CTM is a party to the disputes the course describes — useful for dates, not for judgments",
+              "Because the CTM is a party to the disputes the course describes, useful for dates, not for judgments",
               "Because the CTM's website is written in Spanish",
               "Because the CTM no longer exists",
               "Because government sources are always more reliable than union sources",
@@ -311,7 +311,7 @@ Out of those three things, Mexican employers and Mexican union officials built a
               "A union with seats on the company board",
             ],
             correctIndex: 0,
-            explanation: "The protection contract — the subject of Section 2. The banned union, the Ghent system, and board co-determination belong to other courses in the track.",
+            explanation: "The protection contract, the subject of Section 2. The banned union, the Ghent system, and board co-determination belong to other courses in the track.",
             sourceLessonSlug: "mexico-ctm-corporatism",
           },
         ],
@@ -325,15 +325,15 @@ Out of those three things, Mexican employers and Mexican union officials built a
       title: "4 · The protection contract, explained precisely",
       body: `This is the lesson the course was built for. Read it slowly, because the object it describes is genuinely counter-intuitive and most people get it slightly wrong.
 
-**A protection contract — *contrato de protección* — is a real, legally registered collective bargaining agreement, signed between a company and a union, which the company's workers have never heard of.**
+**A protection contract, *contrato de protección*, is a real, legally registered collective bargaining agreement, signed between a company and a union, which the company's workers have never heard of.**
 
-Not a fake document. Not a forgery. A **valid, enforceable, registered union contract**, filed with the labor authorities, covering the workers at that workplace — negotiated *without their consent or their knowledge* (Gacek, 2019).
+Not a fake document. Not a forgery. A **valid, enforceable, registered union contract**, filed with the labor authorities, covering the workers at that workplace, negotiated *without their consent or their knowledge* (Gacek, 2019).
 
 Now the detail that turns this from "corrupt" into something genuinely new:
 
 > **It was frequently signed *before the company had hired anybody*.** As Gacek (2019) puts it, "in many cases, these agreements have been signed prior to a business commencing operations, even before the hiring of the workforce."
 
-**Think about what that sentence means.** A factory is being built. There are no workers yet — not one. And the company signs a *collective bargaining agreement on behalf of the workers it has not yet hired*, with a union those future workers will never meet, setting the wages and conditions they will be offered on their first day.
+**Think about what that sentence means.** A factory is being built. There are no workers yet, not one. And the company signs a *collective bargaining agreement on behalf of the workers it has not yet hired*, with a union those future workers will never meet, setting the wages and conditions they will be offered on their first day.
 
 The workers arrive. They have a union. They have a contract. **Nobody asked them anything.**
 
@@ -341,15 +341,15 @@ The workers arrive. They have a union. They have a contract. **Nobody asked them
 
 ## Why would a company want a union contract?
 
-This is the question that unlocks it. American students are trained to think a company's goal is *no union*. In Mexico, under this system, a company's goal was often **this union** — because a union contract you already have is the most effective possible defense against a union contract you don't want.
+This is the question that unlocks it. American students are trained to think a company's goal is *no union*. In Mexico, under this system, a company's goal was often **this union**, because a union contract you already have is the most effective possible defense against a union contract you don't want.
 
 Here is the logic, and it is airtight:
 
-1. Mexican law lets one collective bargaining agreement govern a workplace, held by one union — the *titularidad* (title) of the contract.
+1. Mexican law lets one collective bargaining agreement govern a workplace, held by one union, the *titularidad* (title) of the contract.
 2. So if the workplace **already has** a registered agreement, a real union that shows up later cannot simply organize the workers and demand to bargain. **The seat is taken.**
-3. To get in, the real union must first take the title *away* from the incumbent — a legal fight, against an opponent funded by the employer, in front of a tripartite board (remember clause XX) where the incumbent's confederation held the labor seat.
+3. To get in, the real union must first take the title *away* from the incumbent, a legal fight, against an opponent funded by the employer, in front of a tripartite board (remember clause XX) where the incumbent's confederation held the labor seat.
 
-So the employer buys **labor peace**, permanently and cheaply. The protection union collects **dues** from workers who never chose it. And the workers get a contract they didn't negotiate, defended by a union that is being paid — in effect — to make sure nothing changes.
+So the employer buys **labor peace**, permanently and cheaply. The protection union collects **dues** from workers who never chose it. And the workers get a contract they didn't negotiate, defended by a union that is being paid, in effect, to make sure nothing changes.
 
 Gacek (2019) describes the arrangement bluntly: it involves unions "that profit from them by **selling 'protection' to employers**," and it "fosters total employer interference and dominance, making any legitimate, authentic and independent collective expression of worker demands at the bargaining table impossible."
 
@@ -363,11 +363,11 @@ Mexico teaches you that the question is worthless, and that the real question is
 
 > ### **Whose union is it?**
 
-A workplace with 100% union coverage, a signed collective agreement, and dues deducted from every paycheck can be a workplace where the workers have **no voice whatsoever** — and where the union is one of the two things standing on the employer's side of the table.
+A workplace with 100% union coverage, a signed collective agreement, and dues deducted from every paycheck can be a workplace where the workers have **no voice whatsoever**, and where the union is one of the two things standing on the employer's side of the table.
 
 **This is why the protection contract belongs in a workers' rights course and not just a corruption course.** It is not simply that someone was bribed. It is that *the institutional form of worker power was turned inside out and used as an instrument against workers*. The anchor course showed you unions that were crushed by the state (Poland), unions that were absorbed by the state (China), and unions that were built by workers (the US, Sweden). This is the fourth thing: **a union deployed by the employer.**
 
-:::reveal A company signs a collective bargaining agreement before it has hired a single worker. Why would a company WANT a union contract? ||| Because a union contract it already holds is the best possible defense against one it doesn't want. Mexican law lets one registered agreement govern a workplace, held by one union — so if the seat is already taken by a friendly union, a real union that organizes the workers later cannot simply demand to bargain. It must first win the contract's title away from an incumbent funded by the employer. The company buys permanent labor peace; the protection union collects dues from workers who never chose it.
+:::reveal A company signs a collective bargaining agreement before it has hired a single worker. Why would a company WANT a union contract? ||| Because a union contract it already holds is the best possible defense against one it doesn't want. Mexican law lets one registered agreement govern a workplace, held by one union, so if the seat is already taken by a friendly union, a real union that organizes the workers later cannot simply demand to bargain. It must first win the contract's title away from an incumbent funded by the employer. The company buys permanent labor peace; the protection union collects dues from workers who never chose it.
 
 ## Sources
 - Gacek, S. A. (2019). Mexico's ratification of ILO Convention number 98 and the future of protection contracts. *Mexican Law Review, 12*(1), 157–178. https://doi.org/10.22201/iij.24485306e.2019.2.13642
@@ -377,26 +377,26 @@ A workplace with 100% union coverage, a signed collective agreement, and dues de
     {
       slug: "mexico-how-it-blocked-you",
       section: "Section 2 · The protection contract: a union that exists to prevent unions",
-      title: "5 · Why you couldn't just vote it out — and how many there were",
+      title: "5 · Why you couldn't just vote it out, and how many there were",
       recallContent: [
         {
           prompt: "Define a protection contract in one sentence.",
-          answer: "A real, legally registered collective bargaining agreement signed between a company and a union the workers have never heard of — often before the company has hired anyone — which then blocks a genuine union from bargaining, because the contract's seat is already taken.",
+          answer: "A real, legally registered collective bargaining agreement signed between a company and a union the workers have never heard of, often before the company has hired anyone, which then blocks a genuine union from bargaining, because the contract's seat is already taken.",
         },
         {
           prompt: "What is the question Mexico teaches you to ask, instead of 'is there a union?'",
           answer: "Whose union is it?",
         },
       ],
-      body: `The obvious objection, and every student raises it: *fine — but the workers outnumber everybody. Why didn't they just vote the fake union out?*
+      body: `The obvious objection, and every student raises it: *fine, but the workers outnumber everybody. Why didn't they just vote the fake union out?*
 
 Because of **how the vote worked**. And the cleanest way to prove what was wrong with the old procedure is to read what Mexico's reformers insisted on replacing it with.
 
 ## Read the fix, and you can infer the flaw
 
-When Mexico rewrote its labor law in 2019 — and when it committed to that rewrite in the USMCA — the demand was extremely specific. Every vote had to be, in the law's exact words, **personal, free, direct, and secret** (*voto personal, libre, directo y secreto*) (Ley Federal del Trabajo [LFT], 1970/2019).
+When Mexico rewrote its labor law in 2019, and when it committed to that rewrite in the USMCA, the demand was extremely specific. Every vote had to be, in the law's exact words, **personal, free, direct, and secret** (*voto personal, libre, directo y secreto*) (Ley Federal del Trabajo [LFT], 1970/2019).
 
-The United States and Mexico wrote the same requirement into the treaty. Under **USMCA Annex 23-A**, Mexico committed to legislate that before an initial collective agreement can be registered, an independent body must verify — by documents, direct consultation with workers, or **on-site inspection** — that:
+The United States and Mexico wrote the same requirement into the treaty. Under **USMCA Annex 23-A**, Mexico committed to legislate that before an initial collective agreement can be registered, an independent body must verify, by documents, direct consultation with workers, or **on-site inspection**, that:
 
 > **(A) the worksite is operational,**
 > (B) a copy of the collective bargaining agreement was made readily accessible to individual workers **prior to the vote**, and
@@ -406,23 +406,23 @@ The United States and Mexico wrote the same requirement into the treaty. Under *
 
 You do not write that sentence unless contracts were being registered for workplaces that were not operating. **Requirement (A) is the protection contract's fingerprint, preserved in treaty language.** And requirement (C) tells you, just as plainly, that the old vote was not secret.
 
-**That is the answer to "why didn't they just vote it out."** A vote where your employer and the incumbent union can see how you voted is not a vote. It is a list of people to fire — and Article 123 clause XXII, which says you cannot be fired for union activity, is worth exactly as much as your ability to prove *why* you were let go.
+**That is the answer to "why didn't they just vote it out."** A vote where your employer and the incumbent union can see how you voted is not a vote. It is a list of people to fire, and Article 123 clause XXII, which says you cannot be fired for union activity, is worth exactly as much as your ability to prove *why* you were let go.
 
 Add the rest of the machinery from Section 1: disputes went to a **tripartite board** on which the dominant confederation held the labor seat; a challenger union had to win the contract's title through that board; and delay is itself a weapon, because workers cannot outlast a lawsuit and an employer can.
 
 ---
 
-## So how many protection contracts were there? — an honest answer
+## So how many protection contracts were there?, an honest answer
 
 Here is where this course does something you should demand of every course you take.
 
 **Nobody knows, and this course is not going to make a number up.**
 
-Gacek (2019) — a peer-reviewed article in the *Mexican Law Review*, published by Mexico's national university — says protection contracts are "**believed to** … make up the overwhelming majority of collective agreements in Mexico." *Believed to.* He gives **no figure**, and he is right not to, because there was no honest way to count them. A protection contract does not announce itself. It looks, on paper, exactly like a real one. **That is the entire point of it.**
+Gacek (2019), a peer-reviewed article in the *Mexican Law Review*, published by Mexico's national university, says protection contracts are "**believed to** … make up the overwhelming majority of collective agreements in Mexico." *Believed to.* He gives **no figure**, and he is right not to, because there was no honest way to count them. A protection contract does not announce itself. It looks, on paper, exactly like a real one. **That is the entire point of it.**
 
-You will nonetheless see confident numbers quoted. Be careful with them. In Section 3 you will meet a genuinely startling official statistic — that around **139,000** collective agreements were on Mexico's register in January 2023, and that the overwhelming majority of them **died** in 2023 because nobody put them to a worker vote (Secretaría del Trabajo y Previsión Social [STPS], 2023).
+You will nonetheless see confident numbers quoted. Be careful with them. In Section 3 you will meet a genuinely startling official statistic, that around **139,000** collective agreements were on Mexico's register in January 2023, and that the overwhelming majority of them **died** in 2023 because nobody put them to a worker vote (Secretaría del Trabajo y Previsión Social [STPS], 2023).
 
-It is very tempting to say: *there — that's the count. That's how many protection contracts there were.*
+It is very tempting to say: *there, that's the count. That's how many protection contracts there were.*
 
 **Don't.** An agreement can fail to be legitimized for reasons that have nothing to do with protection:
 
@@ -430,11 +430,11 @@ It is very tempting to say: *there — that's the count. That's how many protect
 - the union **didn't bother**, or couldn't manage the process;
 - the workplace has **three employees** and nobody thought it mattered.
 
-The number of contracts that died is a **ceiling**, not a count. It tells you the scale of the problem was **enormous** — that is beyond dispute, and it is the honest conclusion. It does not tell you the figure, and anybody who converts it into one is doing arithmetic on an assumption.
+The number of contracts that died is a **ceiling**, not a count. It tells you the scale of the problem was **enormous**, that is beyond dispute, and it is the honest conclusion. It does not tell you the figure, and anybody who converts it into one is doing arithmetic on an assumption.
 
-**Hold two things at once, which is the skill this whole track is teaching:** the practice was pervasive enough that Mexico rewrote its constitution, its labor law, and part of a trade treaty to stop it — *and* the exact number is not knowable, so you should not cite one.
+**Hold two things at once, which is the skill this whole track is teaching:** the practice was pervasive enough that Mexico rewrote its constitution, its labor law, and part of a trade treaty to stop it, *and* the exact number is not knowable, so you should not cite one.
 
-:::reveal USMCA Annex 23-A requires an independent body to verify, before registering an initial collective agreement, that "the worksite is operational." What does the existence of that clause prove? ||| That collective agreements were being registered for workplaces that were not operating — i.e. contracts signed before the factory opened or hired anyone. It is the protection contract's fingerprint, preserved in the text of a trade agreement. (The clause requiring a "personal, free, and secret vote" tells you, just as plainly, that the old vote was not secret.)
+:::reveal USMCA Annex 23-A requires an independent body to verify, before registering an initial collective agreement, that "the worksite is operational." What does the existence of that clause prove? ||| That collective agreements were being registered for workplaces that were not operating, i.e. contracts signed before the factory opened or hired anyone. It is the protection contract's fingerprint, preserved in the text of a trade agreement. (The clause requiring a "personal, free, and secret vote" tells you, just as plainly, that the old vote was not secret.)
 
 ## Sources
 - Ley Federal del Trabajo. (1970, as amended by decree published May 1, 2019). Cámara de Diputados. https://www.diputados.gob.mx/LeyesBiblio/ref/lft/LFT_ref30_01may19.pdf
@@ -460,13 +460,13 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
               "A government contract guaranteeing a factory's workers a minimum wage",
             ],
             correctIndex: 0,
-            explanation: "The crucial point is that it is NOT a forgery. It is valid, enforceable and registered — negotiated without the workers' consent or knowledge (Gacek, 2019).",
+            explanation: "The crucial point is that it is NOT a forgery. It is valid, enforceable and registered, negotiated without the workers' consent or knowledge (Gacek, 2019).",
             sourceLessonSlug: "mexico-protection-contract",
           },
           {
             prompt: "What was frequently true about WHEN a protection contract was signed?",
             options: [
-              "Before the company had hired any workers at all — sometimes before it began operations",
+              "Before the company had hired any workers at all, sometimes before it began operations",
               "Only after a union had won a secret-ballot election",
               "Only after a strike had already begun",
               "Exactly five years after the factory opened",
@@ -478,7 +478,7 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
           {
             prompt: "Why would a company WANT to hold a union contract?",
             options: [
-              "Because a contract it already holds blocks the one it doesn't want — the seat is taken",
+              "Because a contract it already holds blocks the one it doesn't want, the seat is taken",
               "Because Mexican law gives tax breaks to unionized firms",
               "Because unions pay companies for the right to represent their workers",
               "Because it is required before a company can export goods",
@@ -488,10 +488,10 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
             sourceLessonSlug: "mexico-protection-contract",
           },
           {
-            prompt: "The Spanish term for holding the collective agreement — the thing a real union must take away from an incumbent — is:",
+            prompt: "The Spanish term for holding the collective agreement, the thing a real union must take away from an incumbent, is:",
             options: ["titularidad (the title of the contract)", "constancia (the certificate)", "recuento (the count)", "amparo (the injunction)"],
             correctIndex: 0,
-            explanation: "Because one union holds the title to the workplace's agreement, a challenger cannot simply organize and demand to bargain — it must win the title.",
+            explanation: "Because one union holds the title to the workplace's agreement, a challenger cannot simply organize and demand to bargain, it must win the title.",
             sourceLessonSlug: "mexico-protection-contract",
           },
           {
@@ -500,7 +500,7 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
               "The workers, through dues deducted from workers who never chose that union",
               "The government, from a labor fund",
               "The ILO",
-              "Nobody — protection unions are unpaid",
+              "Nobody, protection unions are unpaid",
             ],
             correctIndex: 0,
             explanation: "The employer buys labor peace; the union collects dues from workers who never selected it. Gacek describes unions 'that profit from them by selling protection to employers.'",
@@ -510,7 +510,7 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
             prompt: "What question does Mexico teach you to ask, in place of 'is there a union?'",
             options: ["Whose union is it?", "How big is the union?", "Is the union legal?", "How old is the union?"],
             correctIndex: 0,
-            explanation: "A workplace can have 100% coverage, a signed agreement and dues deducted from every paycheck — and workers with no voice at all.",
+            explanation: "A workplace can have 100% coverage, a signed agreement and dues deducted from every paycheck, and workers with no voice at all.",
             sourceLessonSlug: "mexico-protection-contract",
           },
           {
@@ -538,7 +538,7 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
             sourceLessonSlug: "mexico-how-it-blocked-you",
           },
           {
-            prompt: "USMCA Annex 23-A requires an independent body to verify, before an initial collective agreement is registered, that — among other things — what?",
+            prompt: "USMCA Annex 23-A requires an independent body to verify, before an initial collective agreement is registered, that, among other things, what?",
             options: [
               "That the worksite is operational",
               "That the company is profitable",
@@ -558,31 +558,31 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
               "Because workers cannot read the ballot",
             ],
             correctIndex: 0,
-            explanation: "Article 123, clause XXII bans firing a worker for union activity — but that protection is worth only as much as your ability to prove the reason for your dismissal.",
+            explanation: "Article 123, clause XXII bans firing a worker for union activity, but that protection is worth only as much as your ability to prove the reason for your dismissal.",
             sourceLessonSlug: "mexico-how-it-blocked-you",
           },
           {
             prompt: "How many protection contracts existed in Mexico?",
             options: [
-              "Nobody knows — there is no reliable count, and this course refuses to invent one",
+              "Nobody knows, there is no reliable count, and this course refuses to invent one",
               "Exactly 139,000",
               "Exactly 119,000",
               "Fewer than 5,000",
             ],
             correctIndex: 0,
-            explanation: "Gacek (2019) says they are 'believed to' make up the overwhelming majority of collective agreements and gives no figure — because a protection contract looks, on paper, exactly like a real one. That is the point of it.",
+            explanation: "Gacek (2019) says they are 'believed to' make up the overwhelming majority of collective agreements and gives no figure, because a protection contract looks, on paper, exactly like a real one. That is the point of it.",
             sourceLessonSlug: "mexico-how-it-blocked-you",
           },
           {
             prompt: "Around 139,000 collective agreements were on Mexico's register in January 2023, and the great majority died in 2023 for want of a worker vote. Why can't you call that the count of protection contracts?",
             options: [
-              "Because an agreement can also die if the company closed, the union didn't bother, or the workplace was tiny — so it is a ceiling, not a count",
+              "Because an agreement can also die if the company closed, the union didn't bother, or the workplace was tiny, so it is a ceiling, not a count",
               "Because the figure was never published",
               "Because protection contracts were all legitimized successfully",
               "Because the number is far too small",
             ],
             correctIndex: 0,
-            explanation: "The number tells you the scale was enormous — that is beyond dispute. It does not give you a figure, and converting it into one is doing arithmetic on an assumption.",
+            explanation: "The number tells you the scale was enormous, that is beyond dispute. It does not give you a figure, and converting it into one is doing arithmetic on an assumption.",
             sourceLessonSlug: "mexico-how-it-blocked-you",
           },
           {
@@ -600,7 +600,7 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
           {
             prompt: "Besides the open vote, what other feature of the old system made a protection contract hard to dislodge?",
             options: [
-              "Disputes went to a tripartite board on which the dominant confederation held the labor seat — and delay itself favors the employer",
+              "Disputes went to a tripartite board on which the dominant confederation held the labor seat, and delay itself favors the employer",
               "Challenger unions were illegal",
               "Only the president could authorize a union election",
               "Workers had no right to strike",
@@ -618,7 +618,7 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
               "A safety agreement covering hazardous workplaces",
             ],
             correctIndex: 0,
-            explanation: "That inversion — the form of worker power used as a tool against workers — is why Mexico earns its slot in this track.",
+            explanation: "That inversion, the form of worker power used as a tool against workers, is why Mexico earns its slot in this track.",
             sourceLessonSlug: "mexico-protection-contract",
           },
         ],
@@ -629,35 +629,35 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
     {
       slug: "mexico-2019-reform",
       section: "Section 3 · The 2019 reform, and who actually drove it",
-      title: "7 · Mexico rewrites its labor law — and the 68-year gap that explains why",
+      title: "7 · Mexico rewrites its labor law, and the 68-year gap that explains why",
       body: `Between 2017 and 2019, Mexico dismantled the machinery you just spent a section learning. This lesson is what changed. The next one is what it cost the protection contracts.
 
 ## First, a date that tells the whole story
 
-Mexico ratified **ILO Convention No. 87** — freedom of association — on **1 April 1950**. Early. Decades before many rich democracies.
+Mexico ratified **ILO Convention No. 87**, freedom of association, on **1 April 1950**. Early. Decades before many rich democracies.
 
-Mexico ratified **ILO Convention No. 98** — the right to organize and bargain collectively — on **23 November 2018** (International Labour Organization [ILO], 2018).
+Mexico ratified **ILO Convention No. 98**, the right to organize and bargain collectively, on **23 November 2018** (International Labour Organization [ILO], 2018).
 
-**A sixty-eight-year gap.** And it is not an accident of paperwork, because of what C98 specifically requires. Convention 87 protects your right to *form* a union. **Convention 98 is the one that prohibits *employer interference and domination* of workers' organizations** — the one that says an employer may not run, fund, or dominate the union that is supposed to bargain against it.
+**A sixty-eight-year gap.** And it is not an accident of paperwork, because of what C98 specifically requires. Convention 87 protects your right to *form* a union. **Convention 98 is the one that prohibits *employer interference and domination* of workers' organizations**, the one that says an employer may not run, fund, or dominate the union that is supposed to bargain against it.
 
 That is a precise legal description of a protection contract. Mexico could sign the convention about *forming* unions in 1950. It could not sign the convention about *employer-dominated* unions until it was ready to give them up. **The ratification date is the confession.**
 
 ## What actually changed
 
-**Step 1 — the constitution, 24 February 2017.** Mexico amended Articles 107 and 123 (DOF, 2017). The **Juntas de Conciliación y Arbitraje** — the tripartite boards of clause XX, the ones the dominant confederation sat on — were **abolished**. In their place:
+**Step 1, the constitution, 24 February 2017.** Mexico amended Articles 107 and 123 (DOF, 2017). The **Juntas de Conciliación y Arbitraje**, the tripartite boards of clause XX, the ones the dominant confederation sat on, were **abolished**. In their place:
 
 | Old | New |
 | --- | --- |
 | Tripartite Juntas de Conciliación y Arbitraje | **Labor courts**, inside the judiciary, staffed by judges |
 | Registration handled by those same boards | An **independent federal body** for registering unions and collective agreements |
-| — | Compulsory **conciliation** before you may go to court |
+|, | Compulsory **conciliation** before you may go to court |
 
-**Step 2 — the law, 1 May 2019.** The implementing rewrite of the **Ley Federal del Trabajo** was published in the *Diario Oficial de la Federación* on **1 May 2019** — Mexico's Labor Day — and took effect the next day (LFT, 1970/2019). It created:
+**Step 2, the law, 1 May 2019.** The implementing rewrite of the **Ley Federal del Trabajo** was published in the *Diario Oficial de la Federación* on **1 May 2019**, Mexico's Labor Day, and took effect the next day (LFT, 1970/2019). It created:
 
-- The **Centro Federal de Conciliación y Registro Laboral (CFCRL)** — the Federal Center for Conciliation and Labor Registration. One national body that registers every union and every collective agreement, and verifies that the votes were real.
-- The **personal, free, direct and secret vote** — for electing union leaders, for approving a first contract, for approving every revision, and (next lesson) for keeping the contract you already have.
-- The **constancia de representatividad** — before a union may even seek to negotiate an initial collective agreement, it must obtain a certificate from the CFCRL showing it has the support of at least **30%** of the workers it wants to cover (Procuraduría Federal de la Defensa del Trabajo [PROFEDET], n.d.).
-- A **public website** carrying every collective agreement in force — so that a worker can *read their own contract*, which is not a joke: under the old system, many could not.
+- The **Centro Federal de Conciliación y Registro Laboral (CFCRL)**, the Federal Center for Conciliation and Labor Registration. One national body that registers every union and every collective agreement, and verifies that the votes were real.
+- The **personal, free, direct and secret vote**, for electing union leaders, for approving a first contract, for approving every revision, and (next lesson) for keeping the contract you already have.
+- The **constancia de representatividad**, before a union may even seek to negotiate an initial collective agreement, it must obtain a certificate from the CFCRL showing it has the support of at least **30%** of the workers it wants to cover (Procuraduría Federal de la Defensa del Trabajo [PROFEDET], n.d.).
+- A **public website** carrying every collective agreement in force, so that a worker can *read their own contract*, which is not a joke: under the old system, many could not.
 
 **Look at what the 30% certificate does.** It attacks the protection contract at its root. You can no longer produce an agreement out of nowhere for a workforce that has not been consulted. You must first *demonstrate that actual workers want you there.*
 
@@ -678,11 +678,11 @@ The treaty text explicitly grounds the reform in **a Mexican electoral mandate**
 | 1 July 2018 | Mexican general election |
 | 23 Nov 2018 | Mexico ratifies ILO Convention 98 |
 | 24 Feb 2017 → 1 May **2019** | Mexico's constitutional reform, then its new labor law |
-| **1 July 2020** | **USMCA — and the enforcement mechanism — enters into force** |
+| **1 July 2020** | **USMCA, and the enforcement mechanism, enters into force** |
 
 **Mexico's labor law was rewritten more than a year before the trade agreement that supposedly forced it existed.** The reform came out of decades of work by Mexican independent unions, Mexican labor lawyers, Mexican courts and a Mexican election. It was passed by Mexico's Congress and published in Mexico's official gazette.
 
-**What the trade agreement added was not the law. It was a way to make somebody obey it.** Hold that distinction — the entire next section depends on it.
+**What the trade agreement added was not the law. It was a way to make somebody obey it.** Hold that distinction, the entire next section depends on it.
 
 :::reveal Mexico ratified ILO Convention 87 (freedom of association) in 1950 but Convention 98 in 2018. Why is that 68-year gap so revealing? ||| Because of what C98 specifically prohibits: employer interference in and domination of workers' organizations. That is a precise legal description of a protection contract. Mexico could ratify the convention about the right to *form* a union in 1950; it could not ratify the convention against *employer-dominated* unions until it was prepared to give them up. The ratification date is effectively a confession about what the system had been.
 
@@ -701,15 +701,15 @@ The treaty text explicitly grounds the reform in **a Mexican electoral mandate**
       recallContent: [
         {
           prompt: "What body did the 2019 reform create to register every union and every collective agreement, and to verify that votes were real?",
-          answer: "The Centro Federal de Conciliación y Registro Laboral (CFCRL) — the Federal Center for Conciliation and Labor Registration.",
+          answer: "The Centro Federal de Conciliación y Registro Laboral (CFCRL), the Federal Center for Conciliation and Labor Registration.",
         },
         {
-          prompt: "What must a union now obtain before it can even seek to negotiate an initial collective agreement — and what threshold does it require?",
+          prompt: "What must a union now obtain before it can even seek to negotiate an initial collective agreement, and what threshold does it require?",
           answer: "A constancia de representatividad from the CFCRL, showing support from at least 30% of the workers it wants to cover.",
         },
         {
-          prompt: "Which came first — Mexico's 2019 labor law, or the USMCA enforcement mechanism?",
-          answer: "Mexico's law. The Ley Federal del Trabajo rewrite was published 1 May 2019; USMCA entered into force 1 July 2020. The trade agreement did not author the right — it added a way to enforce it.",
+          prompt: "Which came first, Mexico's 2019 labor law, or the USMCA enforcement mechanism?",
+          answer: "Mexico's law. The Ley Federal del Trabajo rewrite was published 1 May 2019; USMCA entered into force 1 July 2020. The trade agreement did not author the right, it added a way to enforce it.",
         },
       ],
       body: `Reforming the law going forward is the easy half. Mexico then did the hard half, and it is one of the most remarkable things any country has done to its own labor system.
@@ -724,12 +724,12 @@ The 2019 reform gave existing agreements a **four-year deadline**. The commitmen
 
 Mexican law calls this **legitimation** (*legitimación*). The mechanics, in plain terms:
 
-1. Every collective agreement already on the books had to be **shown to the workers it covered** — the actual text, in advance.
+1. Every collective agreement already on the books had to be **shown to the workers it covered**, the actual text, in advance.
 2. The workers then voted on it, in a **personal, free, direct and secret** ballot, verified by the CFCRL.
 3. **Majority yes → the contract lives**, and the CFCRL issues a certificate of legitimation.
 4. **Majority no, or no vote at all → the contract dies.**
 
-The deadline was **1 May 2023** — four years to the day after the law took effect.
+The deadline was **1 May 2023**, four years to the day after the law took effect.
 
 **Understand how aggressive that is.** The Mexican state told every union in the country: *go and ask the workers whether they want you. If you can't, or won't, your contract is void.* No other country in this track has ever put its entire stock of collective agreements to a confidence vote of the workforce.
 
@@ -747,7 +747,7 @@ Then the clock ran out. The dated record:
 | --- | --- | --- |
 | **20 Jan 2023** (100 days left) | **12,641** contracts, via 23,845 consultations, out of **139,000** | STPS (official) |
 | **~27 Apr 2023** (4 days left) | **15,742** legitimized; **287** rejected by workers | *La Jornada* (newspaper, reporting the tally) |
-| **1 May 2023** | **Deadline.** | — |
+| **1 May 2023** | **Deadline.** |, |
 | **2 May 2023** | Every agreement without a certificate of legitimation is **terminated** | CFCRL, published in the DOF |
 
 Processes already under way on 1 May could be completed until **31 July 2023**, so the final figure is somewhat higher than the last column above (CFCRL, 2023).
@@ -762,11 +762,11 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
 
 *If my contract died, did I lose my wages?*
 
-**No — and the law is explicit about it.** When an agreement was not legitimized, the union lost the contract: its administration, its dues, its privileges. But the **workers keep the wages, benefits and conditions** they already had; those carry over into their individual employment terms (CFCRL, 2023; STPS, n.d.).
+**No, and the law is explicit about it.** When an agreement was not legitimized, the union lost the contract: its administration, its dues, its privileges. But the **workers keep the wages, benefits and conditions** they already had; those carry over into their individual employment terms (CFCRL, 2023; STPS, n.d.).
 
-**That design choice is worth admiring.** The reform was built so that killing a fake union could not be used to cut a real worker's pay — which is precisely the threat an employer would otherwise have made in the run-up to the vote. Remove that threat and the vote becomes free. **Good institutional design anticipates the retaliation.**
+**That design choice is worth admiring.** The reform was built so that killing a fake union could not be used to cut a real worker's pay, which is precisely the threat an employer would otherwise have made in the run-up to the vote. Remove that threat and the vote becomes free. **Good institutional design anticipates the retaliation.**
 
-:::reveal Roughly 139,000 collective agreements were on Mexico's register; only about 16,000 were legitimized by the deadline. What did NOT happen to the workers whose contracts died? ||| They did not lose their pay. The union lost the contract — its administration, its dues and its privileges — but the workers keep the wages, benefits and conditions they already had, which carry over into their individual employment terms. The reform was deliberately built that way, so that an employer could not campaign against legitimation by threatening workers that a "no" vote would cut their wages.
+:::reveal Roughly 139,000 collective agreements were on Mexico's register; only about 16,000 were legitimized by the deadline. What did NOT happen to the workers whose contracts died? ||| They did not lose their pay. The union lost the contract, its administration, its dues and its privileges, but the workers keep the wages, benefits and conditions they already had, which carry over into their individual employment terms. The reform was deliberately built that way, so that an employer could not campaign against legitimation by threatening workers that a "no" vote would cut their wages.
 
 ## Sources
 - Office of the United States Trade Representative. (n.d.). *USMCA Chapter 23 — Labor, Annex 23-A*. https://ustr.gov/sites/default/files/files/agreements/FTA/USMCA/Text/23-Labor.pdf
@@ -813,13 +813,13 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
               "The Confederación de Trabajadores de México",
             ],
             correctIndex: 0,
-            explanation: "The tripartite boards of clause XX — the ones the dominant confederation sat on — were replaced by judges, plus compulsory conciliation and an independent registration body.",
+            explanation: "The tripartite boards of clause XX, the ones the dominant confederation sat on, were replaced by judges, plus compulsory conciliation and an independent registration body.",
             sourceLessonSlug: "mexico-2019-reform",
           },
           {
             prompt: "What does CFCRL stand for, and what does it do?",
             options: [
-              "The Centro Federal de Conciliación y Registro Laboral — it registers every union and collective agreement and verifies that votes were real",
+              "The Centro Federal de Conciliación y Registro Laboral, it registers every union and collective agreement and verifies that votes were real",
               "The Mexican labor ministry",
               "The federal labor court of appeal",
               "The employers' conciliation council",
@@ -843,8 +843,8 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
           {
             prompt: "Which came FIRST?",
             options: [
-              "Mexico's 2019 labor law (1 May 2019) — USMCA entered into force 1 July 2020",
-              "USMCA's entry into force — Mexico legislated afterwards, under pressure",
+              "Mexico's 2019 labor law (1 May 2019), USMCA entered into force 1 July 2020",
+              "USMCA's entry into force, Mexico legislated afterwards, under pressure",
               "They took effect on the same day",
               "The USMCA Rapid Response Mechanism, by two years",
             ],
@@ -893,7 +893,7 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
           {
             prompt: "Roughly what share of Mexico's registered collective agreements survived legitimation?",
             options: [
-              "On the order of one in nine — the overwhelming majority were never put to a vote and ceased to exist",
+              "On the order of one in nine, the overwhelming majority were never put to a vote and ceased to exist",
               "About three quarters",
               "Almost all of them",
               "Exactly half",
@@ -905,19 +905,19 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
           {
             prompt: "If a worker's collective agreement was NOT legitimized, what happened to their pay and benefits?",
             options: [
-              "They kept them — the wages, benefits and conditions carry over into their individual employment terms",
+              "They kept them, the wages, benefits and conditions carry over into their individual employment terms",
               "They reverted to the statutory minimum wage",
               "They were frozen for four years",
               "They were cut by the same proportion as the union's dues",
             ],
             correctIndex: 0,
-            explanation: "The union lost the contract — its administration, dues and privileges. The worker did not lose their pay. That was deliberate.",
+            explanation: "The union lost the contract, its administration, dues and privileges. The worker did not lose their pay. That was deliberate.",
             sourceLessonSlug: "mexico-legitimation",
           },
           {
             prompt: "Why was it good institutional design to guarantee that workers keep their pay even if the contract dies?",
             options: [
-              "Because otherwise an employer could campaign against legitimation by threatening that a 'no' vote would cut wages — removing that threat makes the vote free",
+              "Because otherwise an employer could campaign against legitimation by threatening that a 'no' vote would cut wages, removing that threat makes the vote free",
               "Because it saved the government money",
               "Because the ILO required it",
               "Because it made the vote unnecessary",
@@ -929,10 +929,10 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
           {
             prompt: "What does it tell you that Mexico's state could not say how many collective agreements it had until it audited the register?",
             options: [
-              "Something about what many of those contracts were for — a register nobody maintained was a register nobody was using to represent anyone",
+              "Something about what many of those contracts were for, a register nobody maintained was a register nobody was using to represent anyone",
               "That Mexican record-keeping is uniquely bad",
               "That the agreements were all forged",
-              "Nothing — every country has this problem",
+              "Nothing, every country has this problem",
             ],
             correctIndex: 0,
             explanation: "The state's own ignorance of its register is evidence about the system it was registering.",
@@ -941,7 +941,7 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
           {
             prompt: "Under legitimation, what happened if the workers simply were never asked to vote at all?",
             options: [
-              "The contract died — no vote was the same as a lost vote",
+              "The contract died, no vote was the same as a lost vote",
               "The contract was automatically renewed",
               "The government held the vote on the union's behalf",
               "The employer could legitimize it unilaterally",
@@ -959,42 +959,42 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
       slug: "mexico-rrm-how-it-works",
       section: "Section 4 · The trade deal that came for it: the Rapid Response Mechanism",
       title: "10 · The Rapid Response Mechanism: an international labor rule with teeth",
-      body: `The anchor course, *The History of Unions*, ends on a bleak note. Its last big lesson is the **International Labour Organization** — the world's labor floor — and the punchline is that the floor **is made of paper**. The ILO can investigate, report, convene a Commission of Inquiry, and *name* what it found. What it cannot do is make anyone pay. It has no fines, no court, no tariffs, no police.
+      body: `The anchor course, *The History of Unions*, ends on a bleak note. Its last big lesson is the **International Labour Organization**, the world's labor floor, and the punchline is that the floor **is made of paper**. The ILO can investigate, report, convene a Commission of Inquiry, and *name* what it found. What it cannot do is make anyone pay. It has no fines, no court, no tariffs, no police.
 
-**This lesson is the exception to that bleakness — the one place in the whole Workers' Rights track where an international labor rule acquired teeth.** It is not a treaty about labor in the abstract. It is a clause in a **trade** agreement, and it bites a single factory in the wallet.
+**This lesson is the exception to that bleakness, the one place in the whole Workers' Rights track where an international labor rule acquired teeth.** It is not a treaty about labor in the abstract. It is a clause in a **trade** agreement, and it bites a single factory in the wallet.
 
 ## What it is
 
-When the United States, Mexico, and Canada replaced NAFTA with the **USMCA** (the *Tratado entre México, Estados Unidos y Canadá*, T-MEC — in force **1 July 2020**), they attached to the dispute-settlement chapter a new device: the **Facility-Specific Rapid-Response Labor Mechanism**, in **Annex 31-A** (USTR, n.d.).
+When the United States, Mexico, and Canada replaced NAFTA with the **USMCA** (the *Tratado entre México, Estados Unidos y Canadá*, T-MEC, in force **1 July 2020**), they attached to the dispute-settlement chapter a new device: the **Facility-Specific Rapid-Response Labor Mechanism**, in **Annex 31-A** (USTR, n.d.).
 
 Read the name slowly, because two words in it are the whole innovation:
 
 - **"Facility-Specific."** Every other international labor tool acts on a *country*. This one acts on **one factory**. It lets one government ask the other to review whether the workers at a **single named worksite** are being denied the right to **freedom of association and collective bargaining**.
 - **"Rapid."** A World Trade Organization case takes years. This is built to run in **weeks**.
 
-And one more thing the name does not say, which matters: **Annex 31-A binds only the United States and Mexico.** (There is a separate, parallel Annex 31-B between Canada and Mexico.) It is not a general treaty duty. It is a specific, bilateral lever aimed at Mexican workplaces — because the protection contract was a Mexican problem, and the leverage was designed for it.
+And one more thing the name does not say, which matters: **Annex 31-A binds only the United States and Mexico.** (There is a separate, parallel Annex 31-B between Canada and Mexico.) It is not a general treaty duty. It is a specific, bilateral lever aimed at Mexican workplaces, because the protection contract was a Mexican problem, and the leverage was designed for it.
 
 ## How the process actually runs
 
 Here is the sequence, with the timeframes the two governments actually operate under (Covington & Burling, 2024):
 
-1. **A petition.** A union, a worker, a labor NGO — or the U.S. Trade Representative on its own initiative — files a complaint that a covered facility is denying workers free association or collective bargaining.
-2. **The 30-day screen.** The USTR's interagency labor committee has **30 days** to decide whether there is *sufficient, credible evidence*. (This is a real filter, not a rubber stamp — the next lesson shows the United States both winning and losing on the merits.)
-3. **The request — and the freeze.** If the evidence clears the bar, the United States formally asks Mexico to **review** the facility. At the *same moment*, USTR can instruct the Treasury to **suspend liquidation** of customs on that facility's goods — i.e., freeze the tariff accounts, so the penalty is already loaded and waiting.
+1. **A petition.** A union, a worker, a labor NGO, or the U.S. Trade Representative on its own initiative, files a complaint that a covered facility is denying workers free association or collective bargaining.
+2. **The 30-day screen.** The USTR's interagency labor committee has **30 days** to decide whether there is *sufficient, credible evidence*. (This is a real filter, not a rubber stamp, the next lesson shows the United States both winning and losing on the merits.)
+3. **The request, and the freeze.** If the evidence clears the bar, the United States formally asks Mexico to **review** the facility. At the *same moment*, USTR can instruct the Treasury to **suspend liquidation** of customs on that facility's goods, i.e., freeze the tariff accounts, so the penalty is already loaded and waiting.
 4. **Mexico's clock.** Mexico then has **10 days** to decide whether to conduct a review, and **45 days** to carry it out.
-5. **Remediation, or a panel.** Most cases end in a **remediation plan** the two governments negotiate (a real re-vote, reinstatement of fired organizers, back pay). If they cannot agree, a **three-person Rapid Response panel** takes over — it can do an **on-site verification** at the plant and issue a binding determination.
+5. **Remediation, or a panel.** Most cases end in a **remediation plan** the two governments negotiate (a real re-vote, reinstatement of fired organizers, back pay). If they cannot agree, a **three-person Rapid Response panel** takes over, it can do an **on-site verification** at the plant and issue a binding determination.
 
-## The remedy — the part with teeth
+## The remedy, the part with teeth
 
-If a denial is found and not cured, the United States can **suspend preferential tariff treatment on the goods that specific facility exports** — and, for repeat offenders, block them. In plain terms: *a tariff penalty aimed at one factory's products.* Suddenly the company's exports to its largest market cost more than its law-abiding competitor's.
+If a denial is found and not cured, the United States can **suspend preferential tariff treatment on the goods that specific facility exports**, and, for repeat offenders, block them. In plain terms: *a tariff penalty aimed at one factory's products.* Suddenly the company's exports to its largest market cost more than its law-abiding competitor's.
 
 **That is the thing the ILO never had.** The ILO can tell the world your factory denies workers a union. The RRM can make your factory's goods **more expensive at the U.S. border** until it stops.
 
-## One limit, built into the definition — remember it for later
+## One limit, built into the definition, remember it for later
 
-A facility is only "covered" if it produces a good or supplies a service in a **Priority Sector** — defined as **manufacturing, services, and mining** (Covington & Burling, 2024). **Agriculture is not a Priority Sector.** The tool that finally put teeth into an international labor rule was pointed at the auto plant and the call center and the mine — and *not* at the farm, where some of the most vulnerable workers in North America are. Hold that; Section 4's third lesson comes back to it.
+A facility is only "covered" if it produces a good or supplies a service in a **Priority Sector**, defined as **manufacturing, services, and mining** (Covington & Burling, 2024). **Agriculture is not a Priority Sector.** The tool that finally put teeth into an international labor rule was pointed at the auto plant and the call center and the mine, and *not* at the farm, where some of the most vulnerable workers in North America are. Hold that; Section 4's third lesson comes back to it.
 
-:::reveal What are the two features in the phrase "Facility-Specific Rapid-Response Labor Mechanism" that make it different from every other international labor tool, and what is its remedy? ||| It is facility-specific (it acts on one named factory, not a whole country) and rapid (built to run in weeks, not the years a WTO case takes). Its remedy is the thing the ILO never had: the United States can suspend preferential tariff treatment on the goods that one facility exports — a tariff penalty aimed at a single factory's products, making them more expensive at the U.S. border until the denial of rights is cured.
+:::reveal What are the two features in the phrase "Facility-Specific Rapid-Response Labor Mechanism" that make it different from every other international labor tool, and what is its remedy? ||| It is facility-specific (it acts on one named factory, not a whole country) and rapid (built to run in weeks, not the years a WTO case takes). Its remedy is the thing the ILO never had: the United States can suspend preferential tariff treatment on the goods that one facility exports, a tariff penalty aimed at a single factory's products, making them more expensive at the U.S. border until the denial of rights is cured.
 
 ## Sources
 - Office of the United States Trade Representative. (n.d.). *Chapter 31 Annex A: Facility-Specific Rapid-Response Labor Mechanism*. https://ustr.gov/trade-topics/enforcement/dispute-settlement-proceedings/fta-dispute-settlement/usmca/chapter-31-annex-facility-specific-rapid-response-labor-mechanism
@@ -1009,46 +1009,46 @@ A facility is only "covered" if it produces a good or supplies a service in a **
         {
           prompt: "In one sentence, what does the USMCA Rapid Response Labor Mechanism do?",
           answer:
-            "It lets one government ask the other to review a single named factory for denying workers free association or collective bargaining, with the remedy being suspension of preferential tariff treatment on that facility's exports — a tariff penalty aimed at one plant.",
+            "It lets one government ask the other to review a single named factory for denying workers free association or collective bargaining, with the remedy being suspension of preferential tariff treatment on that facility's exports, a tariff penalty aimed at one plant.",
         },
         {
           prompt: "Which two countries does USMCA Annex 31-A bind, and what is the covered-sector limit?",
           answer:
-            "Only the United States and Mexico (Annex 31-B is the separate Canada–Mexico version). A facility is covered only if it is in a Priority Sector — manufacturing, services, or mining. Agriculture is not covered.",
+            "Only the United States and Mexico (Annex 31-B is the separate Canada-Mexico version). A facility is covered only if it is in a Priority Sector, manufacturing, services, or mining. Agriculture is not covered.",
         },
       ],
-      body: `The first time anyone used the Rapid Response Mechanism, it landed on the biggest possible target, and it worked. This is the case to know — and the case people most often tell wrong.
+      body: `The first time anyone used the Rapid Response Mechanism, it landed on the biggest possible target, and it worked. This is the case to know, and the case people most often tell wrong.
 
 ## What happened, dated
 
 | Date | Event |
 | --- | --- |
-| **April 2021** | A **legitimation vote** (Section 3) is held at **General Motors' pickup-truck plant in Silao, Guanajuato** — on the sitting **CTM** collective contract. Mexican federal labor inspectors detect **serious irregularities**, including **destroyed ballots**, and halt the count. |
+| **April 2021** | A **legitimation vote** (Section 3) is held at **General Motors' pickup-truck plant in Silao, Guanajuato**, on the sitting **CTM** collective contract. Mexican federal labor inspectors detect **serious irregularities**, including **destroyed ballots**, and halt the count. |
 | **12 May 2021** | The United States files the **first-ever RRM request**, asking Mexico to review whether Silao workers are being denied free association and collective bargaining. USTR instructs Treasury to suspend liquidation on the plant's goods. |
 | **8 July 2021** | The two governments announce a **remediation plan**. |
 | **August 2021** | The old CTM contract is put to a fresh **personal, free, secret vote**, with the **ILO** and Mexican authorities observing. **Workers reject it.** |
-| **1–2 Feb 2022** | A new **independent** union — **SINTTIA** (Sindicato Independiente Nacional de Trabajadores y Trabajadoras de la Industria Automotriz) — wins the representation vote with **about 76.5%**. |
+| **1-2 Feb 2022** | A new **independent** union, **SINTTIA** (Sindicato Independiente Nacional de Trabajadores y Trabajadoras de la Industria Automotriz), wins the representation vote with **about 76.5%**. |
 | **May 2022** | SINTTIA negotiates a new contract with GM: **raises above inflation**. |
 
 (Office of the United States Trade Representative, n.d.; Covington & Burling, 2024; Brookings Institution, 2024.)
 
-**Sit with what that chain produced.** At one of the largest auto plants in Mexico, a **protection-style incumbent contract** was voted out and a genuinely independent union voted in — and then that union won real money at the table. This is exactly the outcome the anchor course's ILO lesson said the international system could never deliver. Here it was delivered, at a named factory, in under a year.
+**Sit with what that chain produced.** At one of the largest auto plants in Mexico, a **protection-style incumbent contract** was voted out and a genuinely independent union voted in, and then that union won real money at the table. This is exactly the outcome the anchor course's ILO lesson said the international system could never deliver. Here it was delivered, at a named factory, in under a year.
 
-## Now the part people get wrong — and the reason this course exists
+## Now the part people get wrong, and the reason this course exists
 
 It is very tempting to tell this as: *the United States reached in and fixed a Mexican factory.* **Do not tell it that way. It is false, and it matters.**
 
 Look again at the chain, and notice who did each thing:
 
 - **Mexican labor inspectors** caught the ballot tampering and stopped the vote. That is what triggered everything.
-- The tampering was illegal under **Mexico's own 2019 labor law** (Section 3) — the personal, free, secret vote that **Mexico** had already legislated. There was a law to break because **Mexican workers, lawyers and legislators had passed it first.**
+- The tampering was illegal under **Mexico's own 2019 labor law** (Section 3), the personal, free, secret vote that **Mexico** had already legislated. There was a law to break because **Mexican workers, lawyers and legislators had passed it first.**
 - **The workers of Silao** organized SINTTIA, ran the campaign, and cast the votes. Nobody in Washington did that.
 
-So what did the RRM actually add? **A deadline and a price.** It took a violation that Mexican law already prohibited and attached a consequence — a tariff threat on GM's exports — that made resolving it urgent instead of eternal. Recall from Section 2 that *delay is the employer's weapon*: workers cannot outlast a lawsuit. The RRM's real contribution was to **put a clock and a cost on the other side of the table**, so that for once delay hurt the company more than the workers.
+So what did the RRM actually add? **A deadline and a price.** It took a violation that Mexican law already prohibited and attached a consequence, a tariff threat on GM's exports, that made resolving it urgent instead of eternal. Recall from Section 2 that *delay is the employer's weapon*: workers cannot outlast a lawsuit. The RRM's real contribution was to **put a clock and a cost on the other side of the table**, so that for once delay hurt the company more than the workers.
 
-That is leverage. **It is not authorship.** The right was Mexican; the enforcement pressure was shared. Keep that distinction sharp — the next lesson shows you three different ways the leverage runs out.
+That is leverage. **It is not authorship.** The right was Mexican; the enforcement pressure was shared. Keep that distinction sharp, the next lesson shows you three different ways the leverage runs out.
 
-:::reveal The GM Silao case is often told as "the United States fixed a Mexican factory." Why is that framing wrong, and what did the RRM actually contribute? ||| Because Mexicans did the substantive work: Mexican inspectors caught the ballot tampering and halted the vote, the tampering was illegal under Mexico's own 2019 labor law, and the workers of Silao organized the independent union (SINTTIA) and won the vote themselves. What the RRM added was not the right and not the union — it was a deadline and a price: a tariff threat on GM's exports that made resolving a violation Mexican law already prohibited urgent instead of eternal. That is leverage, not authorship.
+:::reveal The GM Silao case is often told as "the United States fixed a Mexican factory." Why is that framing wrong, and what did the RRM actually contribute? ||| Because Mexicans did the substantive work: Mexican inspectors caught the ballot tampering and halted the vote, the tampering was illegal under Mexico's own 2019 labor law, and the workers of Silao organized the independent union (SINTTIA) and won the vote themselves. What the RRM added was not the right and not the union, it was a deadline and a price: a tariff threat on GM's exports that made resolving a violation Mexican law already prohibited urgent instead of eternal. That is leverage, not authorship.
 
 ## Sources
 - Office of the United States Trade Representative. (n.d.). *Chapter 31 Annex A: Facility-Specific Rapid-Response Labor Mechanism* [case index]. https://ustr.gov/trade-topics/enforcement/dispute-settlement-proceedings/fta-dispute-settlement/usmca/chapter-31-annex-facility-specific-rapid-response-labor-mechanism
@@ -1068,36 +1068,36 @@ That is leverage. **It is not authorship.** The right was Mexican; the enforceme
       ],
       body: `A course that taught only GM Silao would be an advertisement. The mechanism has real limits, and the honest way to learn them is through the cases that went **badly**. There are four limits, and the first two each have a dated case attached.
 
-## Limit 1 — it enforces a right; it cannot create one (the San Martín loss)
+## Limit 1, it enforces a right; it cannot create one (the San Martín loss)
 
 **The case.** In **August 2023** the United States requested the **second-ever RRM dispute-settlement panel**, over the **San Martín mine** (owned by **Grupo México**) in **Zacatecas**, where the miners' union **Los Mineros** was in a long recognition fight. The panel did an **on-site verification** in **February 2024**, held a hearing, and made its determination public on **13 May 2024** (USTR, 2024; United Steelworkers, 2024).
 
-**The United States lost.** The panel agreed the mine was a *covered facility* — but found that the alleged denial of rights **was not brought under the specific Mexican labor laws that carry out Mexico's USMCA obligations**. In other words, the dispute did not fit the narrow legal channel the treaty enforces.
+**The United States lost.** The panel agreed the mine was a *covered facility*, but found that the alleged denial of rights **was not brought under the specific Mexican labor laws that carry out Mexico's USMCA obligations**. In other words, the dispute did not fit the narrow legal channel the treaty enforces.
 
-**This is the single most important limit, and it is the treaty working as written, not failing.** Go back to Section 3: the RRM enforces a right that **Mexican law already guarantees**. It is a lever bolted onto Mexican labor law — it can force Mexico to *apply* that law at a facility, but it **cannot reach a wrong that Mexican law does not already prohibit in the way the treaty specifies**. If you want the right itself changed, that is a job for Mexico's Congress, not a trade panel. The RRM is downstream of the reform, always.
+**This is the single most important limit, and it is the treaty working as written, not failing.** Go back to Section 3: the RRM enforces a right that **Mexican law already guarantees**. It is a lever bolted onto Mexican labor law, it can force Mexico to *apply* that law at a facility, but it **cannot reach a wrong that Mexican law does not already prohibit in the way the treaty specifies**. If you want the right itself changed, that is a job for Mexico's Congress, not a trade panel. The RRM is downstream of the reform, always.
 
-## Limit 2 — a tariff cannot keep a factory open (Manufacturas VU)
+## Limit 2, a tariff cannot keep a factory open (Manufacturas VU)
 
-**The case.** A petition in **December 2022** targeted **Manufacturas VU** (VU Manufacturing), an auto-parts plant in **Piedras Negras, Coahuila**. The two governments agreed a **remediation plan in March 2023**. But instead of remediating, the company began **laying off workers and moving out its machinery**, and on **10 October 2023** it **closed the plant entirely — about 400 workers terminated** (U.S. Department of Labor, 2023; USTR, 2023).
+**The case.** A petition in **December 2022** targeted **Manufacturas VU** (VU Manufacturing), an auto-parts plant in **Piedras Negras, Coahuila**. The two governments agreed a **remediation plan in March 2023**. But instead of remediating, the company began **laying off workers and moving out its machinery**, and on **10 October 2023** it **closed the plant entirely, about 400 workers terminated** (U.S. Department of Labor, 2023; USTR, 2023).
 
-**Read the limit precisely.** The RRM's whole threat is *"comply, or your goods get more expensive at the U.S. border."* But an owner always has a third option the threat cannot touch: **leave.** The mechanism can make a Mexican facility unprofitable to run badly; it cannot make anyone keep running it at all. The workers who organized at VU got the mechanism to work — and got a closed plant. **An enforcement tool that can win the case and still lose the jobs is a real tool with a real ceiling.**
+**Read the limit precisely.** The RRM's whole threat is *"comply, or your goods get more expensive at the U.S. border."* But an owner always has a third option the threat cannot touch: **leave.** The mechanism can make a Mexican facility unprofitable to run badly; it cannot make anyone keep running it at all. The workers who organized at VU got the mechanism to work, and got a closed plant. **An enforcement tool that can win the case and still lose the jobs is a real tool with a real ceiling.**
 
-## Limit 3 — it is bilateral, and it depends on a willing U.S. administration
+## Limit 3, it is bilateral, and it depends on a willing U.S. administration
 
 The RRM is not a neutral court a worker can walk into. It is a **lever held by the U.S. government**, which **chooses** whether to pull it. That has two edges:
 
-- The United States has a direct commercial interest — protecting its own workers from competition with rights-denying plants — so it is genuinely motivated to act. That is why the tool has bite at all.
+- The United States has a direct commercial interest, protecting its own workers from competition with rights-denying plants, so it is genuinely motivated to act. That is why the tool has bite at all.
 - But a lever that depends on political will can be set down. A different administration, a different trade mood, and the petitions simply stop being filed.
 
-**Be honest in both directions here.** As of 2026 the tool has **not** been abandoned: the United States filed a fresh RRM request over a **Faurecia** auto-parts plant in **Silao** on **18 May 2026**, under a different administration than the one that started the program (USTR, 2026a). So the mechanism has survived a change of government. But "it still gets used" is not the same as "it is guaranteed." Its use is discretionary, and **discretion is exactly the vulnerability** — the right belongs to Mexican workers, but the enforcement belongs to Washington's calendar.
+**Be honest in both directions here.** As of 2026 the tool has **not** been abandoned: the United States filed a fresh RRM request over a **Faurecia** auto-parts plant in **Silao** on **18 May 2026**, under a different administration than the one that started the program (USTR, 2026a). So the mechanism has survived a change of government. But "it still gets used" is not the same as "it is guaranteed." Its use is discretionary, and **discretion is exactly the vulnerability**, the right belongs to Mexican workers, but the enforcement belongs to Washington's calendar.
 
-## Limit 4 — it lasts only as long as the trade deal does
+## Limit 4, it lasts only as long as the trade deal does
 
-The RRM is a clause in the USMCA. Its life is the treaty's life. And the treaty's life is now an open question: at the **joint review on 1 July 2026**, the United States **declined to confirm the 16-year extension**, which under Article 34.7.4 triggers **annual reviews** for the rest of the term. The agreement **remains fully in force** — all rights and obligations, the RRM included, keep operating — and the extension is still available if the three governments later agree (USTR, 2026b; White & Case, 2026). **This course dates that fact and refuses to predict what happens next.** What you should take is structural: an enforcement tool attached to a trade deal is exactly as durable as the trade deal, and no more.
+The RRM is a clause in the USMCA. Its life is the treaty's life. And the treaty's life is now an open question: at the **joint review on 1 July 2026**, the United States **declined to confirm the 16-year extension**, which under Article 34.7.4 triggers **annual reviews** for the rest of the term. The agreement **remains fully in force**, all rights and obligations, the RRM included, keep operating, and the extension is still available if the three governments later agree (USTR, 2026b; White & Case, 2026). **This course dates that fact and refuses to predict what happens next.** What you should take is structural: an enforcement tool attached to a trade deal is exactly as durable as the trade deal, and no more.
 
 ## A note on sourcing, in this course's own spirit
 
-You will see confident aggregate claims about the RRM — "*N* cases, *X* workers helped." Treat them the way Section 2 taught you to treat the protection-contract count. The Brookings Institution (2024), reviewing the record, concluded only that "in at least a small handful of firms, workers appear to have benefitted economically" — a deliberately modest claim. This lesson teaches only the individual cases it could verify against **USTR** and the **U.S. Department of Labor** directly, and it declines to launder a tidy success statistic it cannot stand behind.
+You will see confident aggregate claims about the RRM, "*N* cases, *X* workers helped." Treat them the way Section 2 taught you to treat the protection-contract count. The Brookings Institution (2024), reviewing the record, concluded only that "in at least a small handful of firms, workers appear to have benefitted economically", a deliberately modest claim. This lesson teaches only the individual cases it could verify against **USTR** and the **U.S. Department of Labor** directly, and it declines to launder a tidy success statistic it cannot stand behind.
 
 :::reveal In the San Martín case the United States lost because the panel found the alleged denial "was not brought under" the Mexican labor laws that implement the USMCA. Why is that loss the clearest illustration of what the RRM fundamentally is? ||| Because it shows the RRM enforces a right rather than creating one. The mechanism is a lever bolted onto Mexican labor law: it can force Mexico to apply that law at a specific facility, but it cannot reach a wrong that Mexican law does not already prohibit in the way the treaty specifies. Changing the right itself is a job for Mexico's Congress; the RRM is always downstream of the domestic reform. The loss is the treaty working as written, not failing.
 
@@ -1133,7 +1133,7 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
             sourceLessonSlug: "mexico-rrm-how-it-works",
           },
           {
-            prompt: "What is the RRM's remedy — the thing that gives it 'teeth'?",
+            prompt: "What is the RRM's remedy, the thing that gives it 'teeth'?",
             options: [
               "Suspension of preferential tariff treatment on the goods that specific facility exports",
               "A public report naming the violation, with no financial consequence",
@@ -1141,13 +1141,13 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
               "Expulsion of the country from the United Nations",
             ],
             correctIndex: 0,
-            explanation: "A tariff penalty aimed at one factory's products — the thing the ILO never had. The ILO can only publicize; the RRM can raise a factory's costs at the U.S. border.",
+            explanation: "A tariff penalty aimed at one factory's products, the thing the ILO never had. The ILO can only publicize; the RRM can raise a factory's costs at the U.S. border.",
             sourceLessonSlug: "mexico-rrm-how-it-works",
           },
           {
             prompt: "Which countries does Annex 31-A bind?",
             options: [
-              "Only the United States and Mexico (Annex 31-B is the separate Canada–Mexico version)",
+              "Only the United States and Mexico (Annex 31-B is the separate Canada-Mexico version)",
               "All three USMCA countries equally",
               "The United States and Canada only",
               "Every WTO member",
@@ -1160,13 +1160,13 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
             prompt: "A facility is only 'covered' if it is in a Priority Sector. Which sector is NOT covered?",
             options: ["Agriculture", "Manufacturing", "Mining", "Services"],
             correctIndex: 0,
-            explanation: "Priority Sectors are manufacturing, services, and mining. Agriculture — where some of the most vulnerable workers in North America are — is not named.",
+            explanation: "Priority Sectors are manufacturing, services, and mining. Agriculture, where some of the most vulnerable workers in North America are, is not named.",
             sourceLessonSlug: "mexico-rrm-how-it-works",
           },
           {
             prompt: "Roughly how fast is the RRM designed to run, compared with an ordinary trade dispute?",
             options: [
-              "Weeks — a WTO case can take years; 'Rapid' is in the name",
+              "Weeks, a WTO case can take years; 'Rapid' is in the name",
               "It takes longer than a WTO case, by design",
               "Exactly one calendar year, fixed by treaty",
               "There is no time limit at all",
@@ -1178,7 +1178,7 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
           {
             prompt: "Who can start an RRM case?",
             options: [
-              "A union, a worker, or a labor NGO by petition — or the USTR on its own initiative",
+              "A union, a worker, or a labor NGO by petition, or the USTR on its own initiative",
               "Only the President of the United States",
               "Only the Mexican government",
               "Only a company that competes with the accused facility",
@@ -1208,25 +1208,25 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
               "The United States imposed permanent tariffs on all Mexican cars",
             ],
             correctIndex: 0,
-            explanation: "SINTTIA won the representation vote with about 76.5% in February 2022 and negotiated a new contract by May 2022 — the outcome the ILO lesson said the system could never deliver.",
+            explanation: "SINTTIA won the representation vote with about 76.5% in February 2022 and negotiated a new contract by May 2022, the outcome the ILO lesson said the system could never deliver.",
             sourceLessonSlug: "mexico-gm-silao",
           },
           {
             prompt: "Why is it WRONG to tell GM Silao as 'the United States fixed a Mexican factory'?",
             options: [
-              "Because Mexicans did the substantive work — inspectors caught the fraud, Mexican law made it illegal, and Silao's workers organized the new union themselves",
+              "Because Mexicans did the substantive work, inspectors caught the fraud, Mexican law made it illegal, and Silao's workers organized the new union themselves",
               "Because the United States was not involved at all",
               "Because GM was never actually unionized",
               "Because the case was decided by the ILO, not the RRM",
             ],
             correctIndex: 0,
-            explanation: "The RRM added a deadline and a price to a violation Mexican law already prohibited. That is leverage, not authorship — the distinction this whole course turns on.",
+            explanation: "The RRM added a deadline and a price to a violation Mexican law already prohibited. That is leverage, not authorship, the distinction this whole course turns on.",
             sourceLessonSlug: "mexico-gm-silao",
           },
           {
             prompt: "In the San Martín mine case (determination public 13 May 2024), what happened?",
             options: [
-              "The United States LOST — the panel found the alleged denial was not brought under the Mexican labor laws that implement the USMCA",
+              "The United States LOST, the panel found the alleged denial was not brought under the Mexican labor laws that implement the USMCA",
               "The United States won and imposed tariffs on all copper",
               "The mine was found not to be a covered facility",
               "The case is still pending with no decision",
@@ -1238,7 +1238,7 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
           {
             prompt: "What does the San Martín loss reveal about the fundamental nature of the RRM?",
             options: [
-              "It enforces a right rather than creating one — it is a lever on Mexican labor law, always downstream of the domestic reform",
+              "It enforces a right rather than creating one, it is a lever on Mexican labor law, always downstream of the domestic reform",
               "It proves the mechanism is broken and never works",
               "It shows the United States can rewrite Mexican law through a panel",
               "It means agriculture is secretly covered after all",
@@ -1248,7 +1248,7 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
             sourceLessonSlug: "mexico-rrm-limits",
           },
           {
-            prompt: "At Manufacturas VU (Piedras Negras), the remediation plan was agreed — and then what happened, on 10 October 2023?",
+            prompt: "At Manufacturas VU (Piedras Negras), the remediation plan was agreed, and then what happened, on 10 October 2023?",
             options: [
               "The company closed the plant entirely, terminating about 400 workers",
               "The company complied fully and the union thrived",
@@ -1268,7 +1268,7 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
               "Mexican law does not protect auto workers",
             ],
             correctIndex: 0,
-            explanation: "The RRM's threat is 'comply or your goods cost more at the border.' Closing the plant escapes that threat entirely — a real ceiling on a real tool.",
+            explanation: "The RRM's threat is 'comply or your goods cost more at the border.' Closing the plant escapes that threat entirely, a real ceiling on a real tool.",
             sourceLessonSlug: "mexico-rrm-limits",
           },
           {
@@ -1284,15 +1284,15 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
             sourceLessonSlug: "mexico-rrm-limits",
           },
           {
-            prompt: "As of 2026, is the RRM still in use — and what does that tell you?",
+            prompt: "As of 2026, is the RRM still in use, and what does that tell you?",
             options: [
-              "Yes — the U.S. filed a fresh RRM request over a Faurecia plant in Silao on 18 May 2026, under a different administration, so it has survived a change of government (though its use remains discretionary)",
-              "No — the mechanism was formally abolished in 2024",
+              "Yes, the U.S. filed a fresh RRM request over a Faurecia plant in Silao on 18 May 2026, under a different administration, so it has survived a change of government (though its use remains discretionary)",
+              "No, the mechanism was formally abolished in 2024",
               "It has never been used since GM Silao",
               "It was replaced by an ILO tribunal",
             ],
             correctIndex: 0,
-            explanation: "'It still gets used' is not the same as 'it is guaranteed.' The tool survived a change of administration, but its use is discretionary — and discretion is the vulnerability.",
+            explanation: "'It still gets used' is not the same as 'it is guaranteed.' The tool survived a change of administration, but its use is discretionary, and discretion is the vulnerability.",
             sourceLessonSlug: "mexico-rrm-limits",
           },
           {
@@ -1325,23 +1325,23 @@ You will see confident aggregate claims about the RRM — "*N* cases, *X* worker
         {
           prompt: "Name the three RRM cases this course teaches and what each shows.",
           answer:
-            "GM Silao (2021–22) — the win: a protection-style contract voted out, an independent union voted in. San Martín (lost, 13 May 2024) — the RRM enforces a right, it cannot create one. Manufacturas VU (closed 10 Oct 2023) — a tariff can't keep a factory open; you can win the case and lose the jobs.",
+            "GM Silao (2021-22), the win: a protection-style contract voted out, an independent union voted in. San Martín (lost, 13 May 2024), the RRM enforces a right, it cannot create one. Manufacturas VU (closed 10 Oct 2023), a tariff can't keep a factory open; you can win the case and lose the jobs.",
         },
       ],
       body: `You will not remember every date in this course five years from now. That is fine. **This is the lesson you keep.**
 
 ## Put the whole course in one line
 
-The anchor course, *The History of Unions*, ends on the ILO and a bleak verdict: the world's labor floor **is made of paper** — no fines, no court, no teeth. This course was the answer to that lesson. Mexico is where an international labor rule finally acquired teeth.
+The anchor course, *The History of Unions*, ends on the ILO and a bleak verdict: the world's labor floor **is made of paper**, no fines, no court, no teeth. This course was the answer to that lesson. Mexico is where an international labor rule finally acquired teeth.
 
 **But read carefully what kind of teeth, because the honest answer is the point.** The Rapid Response Mechanism is real, and it has bitten. And it is:
 
-- **Leverage, not authorship** — it enforces a right that *Mexican workers won for themselves* in the 2019 reform; it did not write that right.
-- **Downstream, not upstream** — it can make Mexico apply its own law (Silao), but it cannot supply a right the law lacks (San Martín).
-- **A lever, not a court** — it depends on a willing U.S. administration choosing to pull it.
-- **As durable as a trade deal** — no more (the 2026 joint review put the whole USMCA on annual review).
+- **Leverage, not authorship**, it enforces a right that *Mexican workers won for themselves* in the 2019 reform; it did not write that right.
+- **Downstream, not upstream**, it can make Mexico apply its own law (Silao), but it cannot supply a right the law lacks (San Martín).
+- **A lever, not a court**, it depends on a willing U.S. administration choosing to pull it.
+- **As durable as a trade deal**, no more (the 2026 joint review put the whole USMCA on annual review).
 
-An honest student holds both halves: **the RRM is the best piece of good news in the entire Workers' Rights track — *and* it is narrow, conditional, and borrowed.** Anyone who sells it as either a miracle or a fraud is selling you something.
+An honest student holds both halves: **the RRM is the best piece of good news in the entire Workers' Rights track, *and* it is narrow, conditional, and borrowed.** Anyone who sells it as either a miracle or a fraud is selling you something.
 
 ## The question this course actually gave you
 
@@ -1349,7 +1349,7 @@ Every other course in the track teaches you to ask *is there a union?* Mexico re
 
 > ### **Whose union is it?**
 
-A workplace with 100% coverage, a signed agreement, and dues on every paycheck can be a place where workers have **no voice at all** — where the union sits on the *employer's* side of the table. That is the protection contract, and once you have seen it you cannot un-see it. It is the most portable idea in this course: carry it into any country, any company, any headline about a "union deal," and ask *whose*.
+A workplace with 100% coverage, a signed agreement, and dues on every paycheck can be a place where workers have **no voice at all**, where the union sits on the *employer's* side of the table. That is the protection contract, and once you have seen it you cannot un-see it. It is the most portable idea in this course: carry it into any country, any company, any headline about a "union deal," and ask *whose*.
 
 ## The four questions, applied to Mexico
 
@@ -1357,18 +1357,18 @@ The track's reusable spine (from the anchor), answered for the country you just 
 
 | Question | Mexico's answer |
 | --- | --- |
-| **1. Who may organize?** | Anyone — since **1917**, in the constitution (Art. 123). On paper, early and generous. |
-| **2. Who is excluded?** | For most of a century, *effectively everyone*, by the protection contract — and today, from the RRM's reach, **agricultural workers** (not a Priority Sector). |
-| **3. Who bargains, at what level?** | Firm-level contracts — which is exactly what let a friendly union quietly hold the title to a workplace's agreement. |
-| **4. What happens if you try?** | Historically: an *open* vote your employer could watch — a list of people to fire. Since 2019: a personal, free, **secret** vote, and an independent union can now win (Silao). |
+| **1. Who may organize?** | Anyone, since **1917**, in the constitution (Art. 123). On paper, early and generous. |
+| **2. Who is excluded?** | For most of a century, *effectively everyone*, by the protection contract, and today, from the RRM's reach, **agricultural workers** (not a Priority Sector). |
+| **3. Who bargains, at what level?** | Firm-level contracts, which is exactly what let a friendly union quietly hold the title to a workplace's agreement. |
+| **4. What happens if you try?** | Historically: an *open* vote your employer could watch, a list of people to fire. Since 2019: a personal, free, **secret** vote, and an independent union can now win (Silao). |
 
 ## What you can actually do with this
 
-- **The RRM petition is open** — to unions, workers, and labor NGOs, not just governments. The disputes are public: you can read the actual cases at **USTR** and the **U.S. Department of Labor**. If you ever need to know whether a specific Mexican plant is under review, that is where you look.
+- **The RRM petition is open**, to unions, workers, and labor NGOs, not just governments. The disputes are public: you can read the actual cases at **USTR** and the **U.S. Department of Labor**. If you ever need to know whether a specific Mexican plant is under review, that is where you look.
 - **Follow the supply chain.** If you are a U.S. worker or consumer, the auto parts, electronics, and steel around you likely pass through exactly these plants. The RRM is one of the few places your government's trade policy and a Mexican worker's freedom of association are wired to the same switch.
-- **Take the companion course.** For what your *own* rights are on the job today — protected concerted activity, retaliation, at-will employment, reading a contract — take **Know Your Rights at Work**. This course told you how one country killed the fake union and borrowed teeth from a trade deal. That one tells you what to do on Monday.
+- **Take the companion course.** For what your *own* rights are on the job today, protected concerted activity, retaliation, at-will employment, reading a contract, take **Know Your Rights at Work**. This course told you how one country killed the fake union and borrowed teeth from a trade deal. That one tells you what to do on Monday.
 
-:::reveal After everything, what is the most honest one-sentence verdict on the USMCA Rapid Response Mechanism? ||| It is the best piece of good news in the Workers' Rights track — the one international labor rule with real teeth — but it is narrow, conditional, and borrowed: it enforces a right Mexican workers won for themselves rather than creating one, it can only make Mexico apply a law the law already contains, it depends on a willing U.S. administration choosing to use it, and it lasts only as long as the trade deal does.
+:::reveal After everything, what is the most honest one-sentence verdict on the USMCA Rapid Response Mechanism? ||| It is the best piece of good news in the Workers' Rights track, the one international labor rule with real teeth, but it is narrow, conditional, and borrowed: it enforces a right Mexican workers won for themselves rather than creating one, it can only make Mexico apply a law the law already contains, it depends on a willing U.S. administration choosing to use it, and it lasts only as long as the trade deal does.
 
 ## Sources
 - Office of the United States Trade Representative. (n.d.). *Chapter 31 Annex A: Facility-Specific Rapid-Response Labor Mechanism*. https://ustr.gov/trade-topics/enforcement/dispute-settlement-proceedings/fta-dispute-settlement/usmca/chapter-31-annex-facility-specific-rapid-response-labor-mechanism
@@ -1381,26 +1381,26 @@ The track's reusable spine (from the anchor), answered for the country you just 
       title: "15 · Practice: the facts you should be able to produce cold",
       body: `Fill in each blank, then check. Spelling and capitalization are forgiving.
 
-These are the specific, checkable facts this course wants in your head — the ones that let you catch an error in someone else's argument about Mexican labor or the USMCA. Everything else you can look up.`,
+These are the specific, checkable facts this course wants in your head, the ones that let you catch an error in someone else's argument about Mexican labor or the USMCA. Everything else you can look up.`,
       exercise: {
         instructions: "Fill in each blank, then check. Spelling and capitalization are forgiving.",
         items: [
           {
-            prompt: "Mexico put labor rights — the eight-hour day, the union, the strike — into its constitution in the year ___, in Article 123.",
+            prompt: "Mexico put labor rights, the eight-hour day, the union, the strike, into its constitution in the year ___, in Article 123.",
             answer: "1917",
-            explanation: "Eighteen years before the U.S. Wagner Act (1935). Rights on paper, first — the gap between that promise and real worker power is the whole course.",
+            explanation: "Eighteen years before the U.S. Wagner Act (1935). Rights on paper, first, the gap between that promise and real worker power is the whole course.",
           },
           {
             prompt: "Instead of asking 'is there a union?', Mexico teaches you to ask 'whose ___ is it?'",
             answer: "union",
             accept: ["union is it"],
-            explanation: "A workplace can have full coverage, a signed contract, and dues on every paycheck — and workers with no voice, because the union sits on the employer's side.",
+            explanation: "A workplace can have full coverage, a signed contract, and dues on every paycheck, and workers with no voice, because the union sits on the employer's side.",
           },
           {
-            prompt: "A collective agreement signed between a company and a union the workers never heard of — sometimes before anyone was hired — is called a ___ contract.",
+            prompt: "A collective agreement signed between a company and a union the workers never heard of, sometimes before anyone was hired, is called a ___ contract.",
             answer: "protection",
             accept: ["protection", "contrato de protección", "contrato de proteccion"],
-            explanation: "A real, registered, enforceable contract whose function is to prevent unionization. Not a forgery — that is what makes it dangerous.",
+            explanation: "A real, registered, enforceable contract whose function is to prevent unionization. Not a forgery, that is what makes it dangerous.",
           },
           {
             prompt: "Mexico's rewritten labor law was published on 1 May ___; every existing contract then had to win a free secret vote (legitimation) by 1 May 2023 or die.",
@@ -1408,7 +1408,7 @@ These are the specific, checkable facts this course wants in your head — the o
             explanation: "The law came first (1 May 2019); the USMCA and its enforcement mechanism entered into force more than a year later (1 July 2020).",
           },
           {
-            prompt: "The USMCA labor enforcement tool — a tariff penalty aimed at a single factory — is the Rapid ___ Labor Mechanism.",
+            prompt: "The USMCA labor enforcement tool, a tariff penalty aimed at a single factory, is the Rapid ___ Labor Mechanism.",
             answer: "response",
             accept: ["Response", "response"],
             explanation: "Annex 31-A, between the U.S. and Mexico only. 'Facility-specific' and 'rapid' are the two words that make it different from every other international labor tool.",
@@ -1421,7 +1421,7 @@ These are the specific, checkable facts this course wants in your head — the o
           {
             prompt: "The first-ever RRM case, in 2021, was at a General Motors plant in the city of ___, Guanajuato.",
             answer: "Silao",
-            explanation: "Workers rejected the old CTM contract and, in Feb 2022, voted in the independent union SINTTIA — the win the ILO lesson said the system could never produce.",
+            explanation: "Workers rejected the old CTM contract and, in Feb 2022, voted in the independent union SINTTIA, the win the ILO lesson said the system could never produce.",
           },
           {
             prompt: "In the San Martín mine case (2024), the United States ___ (won / lost) the panel.",
@@ -1438,7 +1438,7 @@ These are the specific, checkable facts this course wants in your head — the o
             prompt: "One-word answer: the sector NOT covered by the RRM's Priority Sectors (manufacturing, services, mining) is ___.",
             answer: "agriculture",
             accept: ["agriculture", "farming", "agricultural"],
-            explanation: "Some of the most vulnerable workers in North America are agricultural — and they sit outside the one international labor tool with teeth.",
+            explanation: "Some of the most vulnerable workers in North America are agricultural, and they sit outside the one international labor tool with teeth.",
           },
         ],
       },
@@ -1455,7 +1455,7 @@ These are the specific, checkable facts this course wants in your head — the o
           {
             prompt: "What is the single most portable idea in this course?",
             options: [
-              "Ask 'whose union is it?' — not merely 'is there a union?'",
+              "Ask 'whose union is it?', not merely 'is there a union?'",
               "All unions are corrupt",
               "Trade deals always help workers",
               "Constitutional rights guarantee strong unions",
@@ -1479,41 +1479,41 @@ These are the specific, checkable facts this course wants in your head — the o
           {
             prompt: "The RRM is best described as 'leverage, not authorship.' What does that mean?",
             options: [
-              "It attaches pressure to enforce a right that Mexican workers created in their own 2019 reform — it did not write that right",
+              "It attaches pressure to enforce a right that Mexican workers created in their own 2019 reform, it did not write that right",
               "The United States authored Mexico's labor law",
               "It creates brand-new rights that Mexican law never contained",
               "It has no effect on Mexican factories",
             ],
             correctIndex: 0,
-            explanation: "The reform came out of Mexican unions, lawyers, courts, and an election. The RRM added a deadline and a price — that is leverage on an existing right.",
+            explanation: "The reform came out of Mexican unions, lawyers, courts, and an election. The RRM added a deadline and a price, that is leverage on an existing right.",
             sourceLessonSlug: "mexico-leverage",
           },
           {
             prompt: "In what year did labor rights enter Mexico's constitution, and how does that compare with the U.S.?",
             options: [
-              "1917 — eighteen years before the U.S. Wagner Act (1935)",
-              "1935 — the same year as the U.S. Wagner Act",
-              "1994 — with NAFTA",
-              "1950 — with ILO Convention 87",
+              "1917, eighteen years before the U.S. Wagner Act (1935)",
+              "1935, the same year as the U.S. Wagner Act",
+              "1994, with NAFTA",
+              "1950, with ILO Convention 87",
             ],
             correctIndex: 0,
-            explanation: "Article 123. On the question of when labor rights entered the supreme law of the land, Mexico was early and the U.S. was late — but rights on paper are not power in a workplace.",
+            explanation: "Article 123. On the question of when labor rights entered the supreme law of the land, Mexico was early and the U.S. was late, but rights on paper are not power in a workplace.",
             sourceLessonSlug: "mexico-leverage",
           },
           {
             prompt: "Applying the track's four questions to Mexico: who is excluded from the RRM's reach today?",
             options: [
-              "Agricultural workers — agriculture is not a Priority Sector",
+              "Agricultural workers, agriculture is not a Priority Sector",
               "Auto workers",
               "Miners",
               "Call-center (service) workers",
             ],
             correctIndex: 0,
-            explanation: "Manufacturing, services, and mining are covered; agriculture is not. Someone is always excluded — Question 2 of the four questions.",
+            explanation: "Manufacturing, services, and mining are covered; agriculture is not. Someone is always excluded, Question 2 of the four questions.",
             sourceLessonSlug: "mexico-leverage",
           },
           {
-            prompt: "Which came first — Mexico's 2019 labor reform, or the USMCA enforcement mechanism?",
+            prompt: "Which came first, Mexico's 2019 labor reform, or the USMCA enforcement mechanism?",
             options: [
               "Mexico's reform (law published 1 May 2019); the USMCA entered into force 1 July 2020",
               "The USMCA mechanism, which then forced Mexico to legislate",
@@ -1527,7 +1527,7 @@ These are the specific, checkable facts this course wants in your head — the o
           {
             prompt: "What was a protection contract's defining function?",
             options: [
-              "To prevent unionization — a real union contract that blocked a genuine union from bargaining",
+              "To prevent unionization, a real union contract that blocked a genuine union from bargaining",
               "To protect workers from being fired",
               "To guarantee a minimum wage set by the president",
               "To insure a union against strike costs",
@@ -1540,7 +1540,7 @@ These are the specific, checkable facts this course wants in your head — the o
             prompt: "Where can a worker or NGO actually read the record of RRM disputes?",
             options: [
               "USTR and the U.S. Department of Labor publish the cases",
-              "Nowhere — they are secret",
+              "Nowhere, they are secret",
               "Only in the Mexican constitution",
               "Only through a paid legal database",
             ],
@@ -1563,19 +1563,19 @@ These are the specific, checkable facts this course wants in your head — the o
           {
             prompt: "How does the RRM answer the anchor course's bleak ILO lesson ('the floor is made of paper')?",
             options: [
-              "It shows an international labor rule CAN have teeth — a facility-specific tariff penalty — though narrow and conditional ones",
+              "It shows an international labor rule CAN have teeth, a facility-specific tariff penalty, though narrow and conditional ones",
               "It proves the ILO was right and nothing can ever be enforced",
               "It replaced the ILO entirely",
               "It gives the ILO the power to impose tariffs",
             ],
             correctIndex: 0,
-            explanation: "The ILO can only publicize; the RRM can make a factory's goods more expensive at the border. It is the track's one piece of good news — read honestly.",
+            explanation: "The ILO can only publicize; the RRM can make a factory's goods more expensive at the border. It is the track's one piece of good news, read honestly.",
             sourceLessonSlug: "mexico-leverage",
           },
           {
             prompt: "What is the correct lesson from the fact that ~139,000 registered contracts existed but only about one in nine survived legitimation?",
             options: [
-              "The scale of the problem was enormous — but that number is a ceiling, not an exact count of protection contracts",
+              "The scale of the problem was enormous, but that number is a ceiling, not an exact count of protection contracts",
               "Exactly 139,000 protection contracts existed",
               "Legitimation was a failure",
               "Most workers lost their wages",
@@ -1587,7 +1587,7 @@ These are the specific, checkable facts this course wants in your head — the o
           {
             prompt: "Since 2019, why can an independent union now realistically win a vote it could not have won before?",
             options: [
-              "The vote is now personal, free, direct, and secret — no longer an open ballot the employer could watch",
+              "The vote is now personal, free, direct, and secret, no longer an open ballot the employer could watch",
               "Strikes were made illegal",
               "The government now appoints union leaders",
               "Foreign unions were allowed to take over",

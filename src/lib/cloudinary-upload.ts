@@ -33,7 +33,7 @@ export function buildPublicId(...parts: (string | null | undefined)[]): string |
 export class UploadTooLargeError extends Error {
   constructor(public readonly size: number) {
     super(
-      `This recording is ${formatBytes(size)} — larger than the ${formatBytes(MAX_UPLOAD_BYTES)} limit on the current Cloudinary plan. ` +
+      `This recording is ${formatBytes(size)}, larger than the ${formatBytes(MAX_UPLOAD_BYTES)} limit on the current Cloudinary plan. ` +
         `Record shorter, per-lesson takes (or upgrade the plan).`,
     );
     this.name = "UploadTooLargeError";
@@ -89,7 +89,7 @@ function postChunk(
         reject(new Error(msg));
       }
     };
-    xhr.onerror = () => reject(new Error("Upload failed — check your connection (or a CORS/preset issue)."));
+    xhr.onerror = () => reject(new Error("Upload failed, check your connection (or a CORS/preset issue)."));
     xhr.send(form);
   });
 }

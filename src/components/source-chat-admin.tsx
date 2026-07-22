@@ -106,8 +106,8 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
           <label className="block text-sm">
             Grounding
             <select value={config.grounding} onChange={(e) => setConfig((c) => ({ ...c, grounding: e.target.value as "strict" | "mixed" }))} className={`mt-1 ${field}`}>
-              <option value="strict">Strict — answer only from the sources</option>
-              <option value="mixed">Mixed — sources + labeled general knowledge</option>
+              <option value="strict">Strict, answer only from the sources</option>
+              <option value="mixed">Mixed, sources + labeled general knowledge</option>
             </select>
           </label>
           <label className="block text-sm">
@@ -158,7 +158,7 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
           <div className="mt-4 space-y-3">
             <div className="whitespace-pre-wrap rounded-md bg-neutral-50 p-3 text-sm dark:bg-neutral-900">{result.answer}</div>
             <div className="text-xs text-neutral-500">
-              {result.usedChunks} chunk(s) retrieved · agents: {result.agents.join(", ") || "—"}
+              {result.usedChunks} chunk(s) retrieved · agents: {result.agents.join(", ") || "-"}
             </div>
             {result.citations.length ? (
               <ol className="space-y-1 text-xs text-neutral-500">

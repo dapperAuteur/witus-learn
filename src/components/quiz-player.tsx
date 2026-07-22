@@ -141,7 +141,7 @@ export function QuizPlayer({
     <form onSubmit={submit} className="space-y-6">
       {rotating ? (
         <p className="text-sm text-neutral-500">
-          Showing {served.length} of {total} questions — retries draw a fresh set.
+          Showing {served.length} of {total} questions, retries draw a fresh set.
         </p>
       ) : null}
 
@@ -233,7 +233,7 @@ export function QuizPlayer({
             role="status"
             className={result.passed ? "text-green-700 dark:text-green-400" : "text-red-600"}
           >
-            {result.correct}/{result.total} correct ({result.score}%) —{" "}
+            {result.correct}/{result.total} correct ({result.score}%),{" "}
             {result.passed ? "Passed!" : "Keep practicing."}
           </p>
           {!result.passed ? (

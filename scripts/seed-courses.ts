@@ -189,7 +189,7 @@ async function main() {
   // Education Leadership (Ed.L.D.) — on the Learn.WitUS school.
   const learnWitus = await tenantBySlug("learn-witus");
   if (!learnWitus) {
-    console.error("Learn.WitUS tenant missing — run `pnpm seed:tenants` first.");
+    console.error("Learn.WitUS tenant missing, run `pnpm seed:tenants` first.");
     process.exit(1);
   }
   // BAM is the instructor on Learn.WitUS courses (not a synthetic faculty account).
@@ -890,7 +890,7 @@ async function main() {
       isPublished: false,
       publishedAt: null,
       publishHoldReason:
-        "Hold for cultural review — do not publish until vetted by a knowledgeable member of the tradition.",
+        "Hold for cultural review, do not publish until vetted by a knowledgeable member of the tradition.",
     })
     .where(
       and(
@@ -905,7 +905,7 @@ async function main() {
       publishedAt: null,
       visibility: "private",
       publishHoldReason:
-        "Private / personal study — draws on copyrighted sources. Owner-only; not for publication.",
+        "Private / personal study, draws on copyrighted sources. Owner-only; not for publication.",
     })
     .where(and(eq(schema.courses.tenantId, learnWitus), eq(schema.courses.slug, "hoodoo-complete")));
   console.log("  hoodoo: held from publishing (v1 review-hold; v2 private, owner-only)");

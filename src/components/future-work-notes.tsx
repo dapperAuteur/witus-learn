@@ -127,9 +127,9 @@ export function FutureWorkNotes({ itemKey, initial }: { itemKey: string; initial
         });
       } else if (queue(body)) {
         setDraft("");
-        setStatus({ kind: "queued", msg: "Waiting to send — it'll save itself when you're back online." });
+        setStatus({ kind: "queued", msg: "Waiting to send, it'll save itself when you're back online." });
       } else {
-        setStatus({ kind: "err", msg: "Couldn't queue that note (storage is full). Your text is still here — copy it somewhere safe." });
+        setStatus({ kind: "err", msg: "Couldn't queue that note (storage is full). Your text is still here, copy it somewhere safe." });
       }
       setSaving(false);
       return;
@@ -151,16 +151,16 @@ export function FutureWorkNotes({ itemKey, initial }: { itemKey: string; initial
         { id: data.id!, body: data.body ?? body, status: data.status ?? "open", createdAt: data.createdAt ?? new Date().toISOString() },
       ]);
       setDraft("");
-      setStatus({ kind: "ok", msg: "Saved — readable with `pnpm future:list`." });
+      setStatus({ kind: "ok", msg: "Saved, readable with `pnpm future:list`." });
     } catch {
       // `navigator.onLine` said yes and the request still died — a flaky connection, a dropped
       // tunnel, the network going away mid-keystroke. Same answer: queue it. Losing the note here
       // is the failure this whole path exists to prevent.
       if (outboxSupported() && queue(body)) {
         setDraft("");
-        setStatus({ kind: "queued", msg: "Couldn't reach the server — queued. It'll send when the connection is back." });
+        setStatus({ kind: "queued", msg: "Couldn't reach the server, queued. It'll send when the connection is back." });
       } else {
-        setStatus({ kind: "err", msg: "Network error, and the note couldn't be queued. Your text is still here — copy it somewhere safe." });
+        setStatus({ kind: "err", msg: "Network error, and the note couldn't be queued. Your text is still here, copy it somewhere safe." });
       }
     } finally {
       setSaving(false);
@@ -235,7 +235,7 @@ export function FutureWorkNotes({ itemKey, initial }: { itemKey: string; initial
                 >
                   {item.failed
                     ? (item.lastError ?? "This note wasn't saved.")
-                    : (item.lastError ?? "Waiting to send — saves when you're back online")}
+                    : (item.lastError ?? "Waiting to send, saves when you're back online")}
                 </span>
                 <button
                   type="button"
@@ -281,7 +281,7 @@ export function FutureWorkNotes({ itemKey, initial }: { itemKey: string; initial
       {!online ? (
         <p className="mt-2 text-xs text-neutral-500">
           You&rsquo;re offline. Notes are held on this device and sent automatically when you
-          reconnect — you can keep writing.
+          reconnect, you can keep writing.
         </p>
       ) : null}
     </div>

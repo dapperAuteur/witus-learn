@@ -21,7 +21,7 @@ export const NGSS: SharedFramework = {
       text: "Construct an explanation based on evidence for how the availability of natural resources, occurrence of natural hazards, and changes in climate have influenced human activity.",
       claimIds: ["bvc.climate-resources-shape-humans"],
       coverage: "partial",
-      note: "Read this one carefully before you rely on it. This is NOT a science course — it has no laboratory work, no investigations and no scientific modelling. What it does have is precisely the content of HS-ESS3-1: resource availability and climate change shaping what humans do and where. The lessons supply the evidence; the STUDENT constructs the explanation only in the Coffee project (Option B). If your science requirement is assessed on the three-dimensional NGSS performance, this contributes to it — it does not discharge it.",
+      note: "Read this one carefully before you rely on it. This is NOT a science course, it has no laboratory work, no investigations and no scientific modelling. What it does have is precisely the content of HS-ESS3-1: resource availability and climate change shaping what humans do and where. The lessons supply the evidence; the STUDENT constructs the explanation only in the Coffee project (Option B). If your science requirement is assessed on the three-dimensional NGSS performance, this contributes to it, it does not discharge it.",
     },
   ],
 };

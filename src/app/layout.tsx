@@ -24,7 +24,7 @@ async function tenantForChrome() {
   try {
     return await resolveTenant();
   } catch (err) {
-    console.warn("[layout] tenant lookup failed — falling back to neutral branding", err);
+    console.warn("[layout] tenant lookup failed, falling back to neutral branding", err);
     return null;
   }
 }

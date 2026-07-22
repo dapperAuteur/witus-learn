@@ -226,10 +226,64 @@ export async function saveLesson(lesson: SavableLesson): Promise<void> {
     courseHref: lesson.meta.courseHref,
     sectionTitle: lesson.meta.sectionTitle,
     lessonTitle: lesson.meta.lessonTitle,
+    // Stamp WHICH version of the course this copy is, so /downloads can spot staleness later.
+    // Spread-style so an older call site that doesn't pass them stores nothing rather than
+    // `undefined` keys.
+    ...(lesson.meta.courseId ? { courseId: lesson.meta.courseId } : {}),
+    ...(typeof lesson.meta.courseContentVersion === "number"
+      ? { courseContentVersion: lesson.meta.courseContentVersion }
+      : {}),
     mediaUrl: lesson.mediaUrl ?? null,
     savedAt: Date.now(),
   });
   void ensureShellCached();
+}
+
+/**
+ * Re-download lessons whose course has been edited since they were saved, and re-stamp them with
+ * the version now live. This is what the "Update available" button on /downloads runs.
+ *
+ * The media delete is load-bearing. The service worker serves MEDIA_CACHE **cache-first**, so a
+ * plain re-save would hand back the very bytes we are trying to replace and silently "succeed".
+ * Evicting first turns the re-save into a real network fetch. Pages need no such help: they are
+ * network-first, so re-fetching them already gets the new content.
+ *
+ * Best-effort per lesson — one failed lesson (a deleted page, a dead media URL) must not abort the
+ * rest of the course. Whatever fails keeps its OLD cached copy and its old version stamp, so it is
+ * still readable offline and will simply be offered as updatable again next time. Returns how many
+ * failed so the UI can be honest instead of claiming a clean refresh.
+ */
+export async function refreshLessons(
+  entries: OfflineLessonEntry[],
+  newVersion?: number,
+): Promise<{ refreshed: number; failed: number }> {
+  if (unsupported()) return { refreshed: 0, failed: entries.length };
+  let refreshed = 0;
+  let failed = 0;
+  const media = await caches.open(MEDIA_CACHE);
+  for (const entry of entries) {
+    try {
+      if (entry.mediaUrl) await media.delete(entry.mediaUrl);
+      await saveLesson({
+        pagePath: entry.pagePath,
+        mediaUrl: entry.mediaUrl,
+        meta: {
+          courseTitle: entry.courseTitle,
+          courseSlug: entry.courseSlug,
+          courseHref: entry.courseHref,
+          sectionTitle: entry.sectionTitle,
+          lessonTitle: entry.lessonTitle,
+          courseId: entry.courseId,
+          // Only claim the new version once the re-save actually verified.
+          courseContentVersion: newVersion ?? entry.courseContentVersion,
+        },
+      });
+      refreshed += 1;
+    } catch {
+      failed += 1;
+    }
+  }
+  return { refreshed, failed };
 }
 
 /**

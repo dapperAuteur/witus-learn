@@ -60,31 +60,31 @@ const STREAMS: Stream[] = [
 const FEATURES: DestinationFeature[] = [
   {
     id: "chicago",
-    name: "Chicago — Bronzeville",
+    name: "Chicago, Bronzeville",
     lon: -87.6298,
     lat: 41.8781,
     tabs: {
       story: {
         label: "Story",
         title: "A one-way ticket, 1917",
-        body: "Illustrative vignette (a composite, not a documented individual): a young sharecropper's family sells what little they can carry, boards the Illinois Central at a Delta depot, and steps off two days later into the noise and cold of Chicago's 12th Street Station — the start of a new life in Bronzeville.",
+        body: "Illustrative vignette (a composite, not a documented individual): a young sharecropper's family sells what little they can carry, boards the Illinois Central at a Delta depot, and steps off two days later into the noise and cold of Chicago's 12th Street Station, the start of a new life in Bronzeville.",
       },
       event: {
         label: "Event",
         title: "The 1919 Chicago race riot",
-        body: "Red Summer's deadliest single episode: five days of violence (July 27–August 3, 1919) left 38 people dead — 23 Black, 15 white — about 537 injured, and 1,000–2,000 people, mostly Black, homeless after arson destroyed their housing.",
+        body: "Red Summer's deadliest single episode: five days of violence (July 27-August 3, 1919) left 38 people dead, 23 Black, 15 white, about 537 injured, and 1,000-2,000 people, mostly Black, homeless after arson destroyed their housing.",
         source: "Wikipedia, \"Chicago race riot of 1919\"",
       },
       figure: {
         label: "Figure",
-        title: "Robert S. Abbott (1870–1940)",
+        title: "Robert S. Abbott (1870-1940)",
         body: "Founded the Chicago Defender in May 1905; by 1917 it was the first Black newspaper with national circulation and 100,000 readers, smuggled South by Pullman porters and openly recruiting migrants north.",
         source: "BlackPast, \"Robert Sengstacke Abbott\"",
       },
       art: {
         label: "Art",
         title: "Gwendolyn Brooks, A Street in Bronzeville (1945)",
-        body: "Brooks's first poetry collection, published when she was 28, draws directly on Bronzeville street life — including \"kitchenette building,\" inspired by her own subdivided Chicago apartment.",
+        body: "Brooks's first poetry collection, published when she was 28, draws directly on Bronzeville street life, including \"kitchenette building,\" inspired by her own subdivided Chicago apartment.",
         source: "Poetry Foundation, \"Gwendolyn Brooks\"",
       },
     },
@@ -98,22 +98,22 @@ const FEATURES: DestinationFeature[] = [
       story: {
         label: "Story",
         title: "Arriving at Penn Station",
-        body: "Illustrative vignette (a composite, not a documented individual): a family from the Carolinas steps off the train at Penn Station and rides the subway uptown for the first time — the last leg of the Southeast → Northeast stream, ending in a rented room in Harlem.",
+        body: "Illustrative vignette (a composite, not a documented individual): a family from the Carolinas steps off the train at Penn Station and rides the subway uptown for the first time, the last leg of the Southeast → Northeast stream, ending in a rented room in Harlem.",
       },
       event: {
         label: "Event",
         title: "The New Negro (1925)",
-        body: "Philosopher Alain Locke's anthology gave the Harlem Renaissance its name and argument: that Black Americans were claiming a new, modern, urban self-image. The movement it named ran roughly 1918–1937, peaking in the 1920s.",
+        body: "Philosopher Alain Locke's anthology gave the Harlem Renaissance its name and argument: that Black Americans were claiming a new, modern, urban self-image. The movement it named ran roughly 1918-1937, peaking in the 1920s.",
         source: "Wikipedia, \"The New Negro\"; Britannica, \"Harlem Renaissance\"",
       },
       figure: {
         label: "Figure",
         title: "Langston Hughes",
-        body: "Poet at the center of the Harlem Renaissance, whose work repeatedly returned to migration, the North, and the search for a better life — themes drawn directly from the community the Migration built around him.",
+        body: "Poet at the center of the Harlem Renaissance, whose work repeatedly returned to migration, the North, and the search for a better life, themes drawn directly from the community the Migration built around him.",
       },
       art: {
         label: "Art",
-        title: "Jacob Lawrence, The Migration Series (1940–41)",
+        title: "Jacob Lawrence, The Migration Series (1940-41)",
         body: "60 tempera panels telling the Migration's story visually, begun in 1940 on a Rosenwald Foundation grant and completed in 1941. Lawrence grew up in a Migration-era Harlem household; the series is jointly held today by MoMA and the Phillips Collection.",
         source: "Wikipedia, \"The Migration Series\"",
       },
@@ -121,7 +121,7 @@ const FEATURES: DestinationFeature[] = [
   },
   {
     id: "detroit",
-    name: "Detroit — Paradise Valley",
+    name: "Detroit, Paradise Valley",
     lon: -83.0458,
     lat: 42.3314,
     tabs: {
@@ -133,19 +133,19 @@ const FEATURES: DestinationFeature[] = [
       event: {
         label: "Event",
         title: "Detroit's fastest decade",
-        body: "Detroit's Black population grew from 5,741 in 1910 to 40,838 in 1920 — about +611% in a single decade — as the auto industry hired aggressively for war and postwar production.",
+        body: "Detroit's Black population grew from 5,741 in 1910 to 40,838 in 1920, about +611% in a single decade, as the auto industry hired aggressively for war and postwar production.",
         source: "Wikipedia, \"Demographic history of Detroit\"",
       },
       figure: {
         label: "Figure",
         title: "Berry Gordy Jr.",
-        body: "Founder of Motown (Tamla Records, January 1959), born and raised in the Migration-built Black Detroit his parents' generation helped create — Motown's sound is, in a direct sense, a product of the Migration.",
+        body: "Founder of Motown (Tamla Records, January 1959), born and raised in the Migration-built Black Detroit his parents' generation helped create, Motown's sound is, in a direct sense, a product of the Migration.",
         source: "Wikipedia, \"Motown\"",
       },
       art: {
         label: "Art",
         title: "Paradise Valley's nightclubs",
-        body: "Known as the \"Harlem of Detroit,\" Paradise Valley's Black-owned nightclubs — the Flame Show Bar among them — booked major performers including Duke Ellington and Billie Holiday for mixed audiences.",
+        body: "Known as the \"Harlem of Detroit,\" Paradise Valley's Black-owned nightclubs, the Flame Show Bar among them, booked major performers including Duke Ellington and Billie Holiday for mixed audiences.",
         source: "Detroit Historical Society, \"Paradise Valley\"",
       },
     },
@@ -159,17 +159,17 @@ const FEATURES: DestinationFeature[] = [
       story: {
         label: "Story",
         title: "A welder's torch, 1943",
-        body: "Illustrative vignette (a composite, not a documented individual): a Black woman from Louisiana, newly trained as a welder, joins the night shift at a Kaiser shipyard — part of the Second Great Migration's wartime westward push, and of the wartime opening of industrial jobs to women.",
+        body: "Illustrative vignette (a composite, not a documented individual): a Black woman from Louisiana, newly trained as a welder, joins the night shift at a Kaiser shipyard, part of the Second Great Migration's wartime westward push, and of the wartime opening of industrial jobs to women.",
       },
       event: {
         label: "Event",
         title: "The Vanport flood (May 30, 1948)",
-        body: "A railroad-embankment levee never built to hold back floodwater collapsed on Memorial Day; the Columbia River submerged Oregon's second-largest city within hours. 15 people died, and sources commonly cite 17,000–18,000 left homeless.",
+        body: "A railroad-embankment levee never built to hold back floodwater collapsed on Memorial Day; the Columbia River submerged Oregon's second-largest city within hours. 15 people died, and sources commonly cite 17,000-18,000 left homeless.",
         source: "Wikipedia, \"1948 Columbia River flood\"",
       },
       figure: {
         label: "Figure",
-        title: "Quintard Taylor (1948–2025)",
+        title: "Quintard Taylor (1948-2025)",
         body: "The foundational historian of Black life in the Pacific Northwest; founder of BlackPast.org and longtime University of Washington professor, whose scholarship recovered this Second Great Migration thread.",
         source: "BlackPast, \"Quintard Taylor, Jr.\"",
       },
@@ -226,7 +226,7 @@ export function GreatMigrationMap({ initialFocus }: { initialFocus?: string }) {
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         className="w-full"
         role="img"
-        aria-label="The Great Migration — a map of the three migration streams and four destination cities. Select a city marker below the map, or tab to it, to open its story."
+        aria-label="The Great Migration, a map of the three migration streams and four destination cities. Select a city marker below the map, or tab to it, to open its story."
       >
         <defs>
           <marker id={arrowId} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -283,7 +283,7 @@ export function GreatMigrationMap({ initialFocus }: { initialFocus?: string }) {
                 tabIndex={0}
                 role="button"
                 aria-pressed={isSelected}
-                aria-label={`${f.name} — open story, event, figure, and art`}
+                aria-label={`${f.name}, open story, event, figure, and art`}
                 onClick={() => {
                   setSelectedId(f.id);
                   setActiveTab("story");
@@ -303,7 +303,7 @@ export function GreatMigrationMap({ initialFocus }: { initialFocus?: string }) {
                 }
               />
               <text x={x} y={y - 14} textAnchor="middle" className="pointer-events-none fill-current text-[11px] font-semibold">
-                {f.name.split(" — ")[0]}
+                {f.name.split(", ")[0]}
               </text>
             </g>
           );

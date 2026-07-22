@@ -284,7 +284,7 @@ export async function getExploreCopy(tenant: TenantRecord): Promise<ExploreCopy>
     headline: set.get(HEADLINE_KEY) ?? "The Commodity Map",
     subhead:
       set.get(SUBHEAD_KEY) ??
-      `A curriculum you enter through a map. Every course in ${brandName(tenant)} begins with a real thing from a real place — pick a pin, and the history, geography, science, and economics behind it unfold from there.`,
+      `A curriculum you enter through a map. Every course in ${brandName(tenant)} begins with a real thing from a real place, pick a pin, and the history, geography, science, and economics behind it unfold from there.`,
     intro: set.get(INTRO_KEY) ?? tenant.tagline,
     audience: set.get(AUDIENCE_KEY) ?? "Designed for high school students",
   };

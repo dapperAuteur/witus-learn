@@ -321,14 +321,14 @@ export function flattenAlignments(groups: ScopedFramework[]): MatrixRow[] {
 /** A plain-text rendering a reporting homeschooler can paste into a filing. */
 export function toPlainText(groups: ScopedFramework[], brand: string): string {
   const lines: string[] = [
-    `Standards alignment — ${brand}`,
+    `Standards alignment, ${brand}`,
     `Mapped by ${brand} against the published standards; each framework below shows the date its codes and text were retrieved from the publisher.`,
     `Standards are revised; confirm against your jurisdiction's current requirements.`,
     "",
   ];
 
   for (const { framework, alignments } of groups) {
-    lines.push(`${framework.jurisdiction} — ${framework.name} (${framework.version})`);
+    lines.push(`${framework.jurisdiction}, ${framework.name} (${framework.version})`);
     lines.push(`Publisher: ${framework.publisher}`);
     lines.push(`Source: ${framework.sourceUrl}`);
     lines.push(`Retrieved: ${framework.fetchedOn}`);

@@ -193,7 +193,7 @@ export function MediaPlayer({
       {resumedFrom != null ? (
         <p role="status" className="flex flex-wrap items-center gap-2 text-sm text-neutral-500">
           <span>
-            Picking up where you left off — <span className="tabular-nums">{fmt(resumedFrom)}</span>.
+            Picking up where you left off, <span className="tabular-nums">{fmt(resumedFrom)}</span>.
           </span>
           <button type="button" onClick={startOver} className="min-h-9 underline hover:no-underline" style={{ color: "var(--accent)" }}>
             Start over

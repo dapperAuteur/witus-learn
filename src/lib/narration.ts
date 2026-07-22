@@ -79,7 +79,7 @@ export function courseToRecordingScript(
   opts: NarrationOptions = {},
 ): string {
   const parts: string[] = [
-    `# Recording script — ${title}`,
+    `# Recording script: ${title}`,
     `\n(Read the plain text aloud. "[PAUSE]" marks a break between lessons. Citations and`,
     `formatting have been removed. Review before recording.)\n`,
   ];
@@ -91,7 +91,7 @@ export function courseToRecordingScript(
     }
     parts.push(`\n=== Lesson ${i + 1}: ${l.title} ===\n`);
     const narration = l.body ? markdownToNarration(l.body, opts) : "";
-    parts.push(narration || "[No narration — this lesson is a quiz or media-only. Skip or ad-lib.]");
+    parts.push(narration || "[No narration, this lesson is a quiz or media-only. Skip or ad-lib.]");
     parts.push("\n[PAUSE]");
   });
   return parts.join("\n") + "\n";

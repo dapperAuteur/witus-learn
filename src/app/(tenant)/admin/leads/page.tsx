@@ -29,7 +29,7 @@ export default async function LeadsPage() {
 
   return (
     <main className="max-w-3xl py-10">
-      <h1 className="text-2xl font-bold">Leads — {brandName(tenant)}</h1>
+      <h1 className="text-2xl font-bold">Leads, {brandName(tenant)}</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         {rows.length} captured
         {withInquiries > 0
@@ -48,7 +48,7 @@ export default async function LeadsPage() {
                 <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
                   <span className="break-all font-mono">{l.email}</span>
                   <span className="whitespace-nowrap text-neutral-500">
-                    {l.source ?? "—"} · {l.createdAt.toLocaleDateString()}
+                    {l.source ?? "-"} · {l.createdAt.toLocaleDateString()}
                   </span>
                 </div>
                 {l.name ? (
@@ -79,7 +79,7 @@ export default async function LeadsPage() {
                       <p className="mt-1.5 text-neutral-500">No message.</p>
                     )}
                     <a
-                      href={`mailto:${l.email}?subject=${encodeURIComponent(`${brandName(tenant)} — pricing`)}`}
+                      href={`mailto:${l.email}?subject=${encodeURIComponent(`${brandName(tenant)}, pricing`)}`}
                       className="mt-2 inline-block font-medium underline focus-visible:outline-2 focus-visible:outline-offset-2"
                       style={{ color: "var(--accent)" }}
                     >

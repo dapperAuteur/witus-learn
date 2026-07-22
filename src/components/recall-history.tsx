@@ -38,7 +38,7 @@ export function RecallHistoryView({ history }: { history: RecallHistory }) {
   if (history.totalAttempts === 0) {
     return (
       <p className="mt-2 text-sm text-neutral-500">
-        Grade yourself on the &ldquo;Check yourself&rdquo; and &ldquo;Quick recall&rdquo; cards inside lessons —
+        Grade yourself on the &ldquo;Check yourself&rdquo; and &ldquo;Quick recall&rdquo; cards inside lessons,
         your history shows up here, with the ones to review again.
       </p>
     );
@@ -50,7 +50,7 @@ export function RecallHistoryView({ history }: { history: RecallHistory }) {
         <div>
           <h3 className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Review again</h3>
           <p className="mt-1 text-xs text-neutral-500">
-            Checks you haven&apos;t recovered yet, or missed before and haven&apos;t retried in a while — testing
+            Checks you haven&apos;t recovered yet, or missed before and haven&apos;t retried in a while, testing
             yourself again after a gap is what makes them stick.
           </p>
           <ul className="mt-2 grid gap-2 sm:grid-cols-2">
@@ -61,7 +61,7 @@ export function RecallHistoryView({ history }: { history: RecallHistory }) {
         </div>
       ) : (
         <p className="text-sm text-neutral-500">
-          Nothing due for review — everything you&apos;ve missed has been recovered. Keep grading yourself as
+          Nothing due for review, everything you&apos;ve missed has been recovered. Keep grading yourself as
           you learn.
         </p>
       )}

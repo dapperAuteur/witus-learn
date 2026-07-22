@@ -242,8 +242,8 @@ export default async function CourseResultsPage({ params }: Params) {
                           const q =
                             questionByKey.get(r.questionKey ?? "") ?? questionByKey.get(String(r.questionIndex));
                           if (!q) return null;
-                          const chosen = q.options[r.optionIndex] ?? "—";
-                          const answer = q.options[q.correctIndex] ?? "—";
+                          const chosen = q.options[r.optionIndex] ?? "-";
+                          const answer = q.options[q.correctIndex] ?? "-";
                           return (
                             <li key={ri} className="rounded-md border border-neutral-200 p-2 dark:border-neutral-800">
                               <p className="font-medium text-neutral-800 dark:text-neutral-200">{q.prompt}</p>
