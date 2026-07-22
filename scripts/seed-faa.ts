@@ -573,21 +573,37 @@ function buildCourse(): { course: AuthoredCourse; stats: BuildStats } {
       review = { title, reveals: cleaned.reveals, recallCards: cleaned.recall.length };
     }
 
-    // Each module's quizzes: the imported ones where the CSV has them, our authored ones
-    // (scripts/data/faa-part-107-quizzes.ts) everywhere else. By default they all sit at the
-    // module end; a CSV quiz tagged with `after_lesson_order` interleaves after that lesson.
-    const fromCsv = csvQuizzes
-      .filter((q) => q.moduleOrder === m.moduleOrder)
-      .sort((a, b) => a.lessonOrder - b.lessonOrder);
-    const authored: ModuleQuiz[] = fromCsv.length
+    // Each module's quizzes. AUTHORED quizzes (scripts/data/faa-part-107-quizzes.ts) WIN over the
+    // CSV import for any module they cover; modules they don't cover fall back to the CSV (1, 3, 12).
+    //
+    // Authored-wins matters because the CSV lives under /content, which is GITIGNORED — it is a
+    // local-only artifact that does not travel with the repo. If precedence went the other way,
+    // authored quizzes would only take effect on a machine where someone had also hand-deleted that
+    // module's CSV rows, so the same commit would seed different quizzes on different machines.
+    // Authored content is tracked, so it is the honest source of truth.
+    //
+    // By default a quiz sits at the module end; it opts into mid-module placement with
+    // `afterLessonNumber` (authored) or the `after_lesson_order` column (CSV).
+    const authoredForModule = AUTHORED_FAA_QUIZZES.filter((q) => q.moduleOrder === m.moduleOrder);
+    const fromCsv = authoredForModule.length
       ? []
-      : AUTHORED_FAA_QUIZZES.filter((q) => q.moduleOrder === m.moduleOrder).map((q, i) => ({
+      : csvQuizzes
+          .filter((q) => q.moduleOrder === m.moduleOrder)
+          .sort((a, b) => a.lessonOrder - b.lessonOrder);
+    const authored: ModuleQuiz[] = authoredForModule.map((q, i) => ({
           moduleOrder: q.moduleOrder,
-          lessonOrder: 1000 + i,
+          lessonOrder: 1000 + i, // stable ordering among same-module authored quizzes
           title: q.title,
           origin: "authored" as const,
+          // A SECTION quiz opts in with `afterLessonNumber`; sequenceModuleItems then interleaves
+          // it after that lesson instead of stacking it at the module end.
+          ...(q.afterLessonNumber != null ? { afterLessonNumber: q.afterLessonNumber } : {}),
           quiz: {
             passingScore: q.passingScore ?? 80,
+            // Rotating-pool controls flow straight into the QuizContent so `toSafeQuiz` serves a
+            // fresh random subset (clamped to MAX_QUESTIONS_PER_ATTEMPT) and optionally shuffles.
+            ...(q.questionsPerAttempt != null ? { questionsPerAttempt: q.questionsPerAttempt } : {}),
+            ...(q.shuffleOptions != null ? { shuffleOptions: q.shuffleOptions } : {}),
             questions: q.questions.map((qq) => ({
               prompt: qq.prompt,
               options: qq.options,
