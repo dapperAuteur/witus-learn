@@ -98,7 +98,7 @@ async function main() {
     totalLeft += left;
   }
 
-  console.log(`\nTOTAL: ${totalConverted} converted, ${totalLeft} left for manual authoring.${write ? "" : "  (dry-run — add --write to apply)"}`);
+  console.log(`\nTOTAL: ${totalConverted} converted, ${totalLeft} left for manual authoring.${write ? "" : "  (dry-run, add --write to apply)"}`);
 }
 
 main().catch((err) => {

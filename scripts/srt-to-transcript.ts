@@ -51,7 +51,7 @@ async function main() {
   const first = segments[0];
   const last = segments[segments.length - 1];
   console.error(
-    `Parsed ${segments.length} cues from ${file} — first @ ${first.start}s, last @ ${last.end ?? last.start}s.`,
+    `Parsed ${segments.length} cues from ${file}, first @ ${first.start}s, last @ ${last.end ?? last.start}s.`,
   );
 
   // Auto-generate chapters too (the app lets you edit them after import).

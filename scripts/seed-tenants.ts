@@ -38,7 +38,7 @@ const TENANTS: SeedTenant[] = [
     slug: "learn-witus",
     name: "Learn.WitUS",
     tagline:
-      "The WitUS learning platform — host your courses under your own brand and domain.",
+      "The WitUS learning platform, host your courses under your own brand and domain.",
     requiresAgeGate: false,
     theme: {
       name: "Learn.WitUS",
@@ -60,7 +60,7 @@ const TENANTS: SeedTenant[] = [
   {
     slug: "better-vice-club",
     name: "Better Vice Club",
-    tagline: "A cited, audio-first history of the world's vices — coffee to khat.",
+    tagline: "A cited, audio-first history of the world's vices, coffee to khat.",
     // Season 1 is a high-school curriculum and stays OPEN; the age gate is enforced
     // PER COURSE (S2/S3 courses set requiresAgeGate) rather than across the whole brand.
     requiresAgeGate: false,
@@ -94,7 +94,7 @@ const TENANTS: SeedTenant[] = [
   {
     slug: "trade-school",
     name: "WitUS Trade School",
-    tagline: "Job-ready vocational training — cyber-security and FAA Part 107 drone licensing.",
+    tagline: "Job-ready vocational training, cyber-security and FAA Part 107 drone licensing.",
     requiresAgeGate: false,
     theme: {
       name: "WitUS Trade School",
@@ -109,7 +109,7 @@ const TENANTS: SeedTenant[] = [
   {
     slug: "elementary-mba",
     name: "ElementaryMBA",
-    tagline: "Business fundamentals, taught simply — from the ground up.",
+    tagline: "Business fundamentals, taught simply, from the ground up.",
     requiresAgeGate: false,
     theme: {
       name: "ElementaryMBA",
@@ -139,7 +139,7 @@ const TENANTS: SeedTenant[] = [
   {
     slug: "sex-with-the-lights-on",
     name: "Sex With the Lights On",
-    tagline: "Adult intimacy education with Professor girthBrooks — honest, evidence-based.",
+    tagline: "Adult intimacy education with Professor girthBrooks, honest, evidence-based.",
     requiresAgeGate: true,
     theme: {
       name: "Sex With the Lights On",

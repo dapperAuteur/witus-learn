@@ -82,7 +82,7 @@ async function main() {
     .where(tenantId ? and(eq(schema.courses.slug, slug), eq(schema.courses.tenantId, tenantId)) : eq(schema.courses.slug, slug));
   if (courseRows.length === 0) { console.error(`No course with slug "${slug}".`); await pool.end(); process.exit(1); }
   if (courseRows.length > 1) {
-    console.error(`Slug "${slug}" matches ${courseRows.length} courses across tenants — pass --tenant <slug>.`);
+    console.error(`Slug "${slug}" matches ${courseRows.length} courses across tenants, pass --tenant <slug>.`);
     await pool.end();
     process.exit(1);
   }
