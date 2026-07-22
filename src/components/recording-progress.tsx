@@ -50,7 +50,7 @@ export function RecordingProgress({
   return (
     <details className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800 print:hidden" open>
       <summary className="cursor-pointer font-medium">
-        Recording progress — {done}/{lessons.length} recorded
+        Recording progress, {done}/{lessons.length} recorded
       </summary>
       <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800">
         <div
@@ -88,7 +88,7 @@ export function RecordingProgress({
       </ul>
       <p className="mt-2 text-xs text-neutral-500">
         Record each lesson right here (audio), or tick it if you recorded elsewhere. Recordings are
-        saved on your device first and upload when you’re online — nothing is lost if you lose
+        saved on your device first and upload when you’re online, nothing is lost if you lose
         connection. Your progress persists across sittings.
       </p>
     </details>

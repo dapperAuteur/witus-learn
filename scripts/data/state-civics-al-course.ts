@@ -146,7 +146,7 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
 - **Show up locally.** County commissions, city councils, and school boards hold public meetings.
 - **Run**: school board, city council, and county commission are reachable local starting points.
 
-:::reveal Why is your state legislative delegation especially important for local matters in Alabama, and what does Alabama require to vote in person? ||| Because Alabama has weak home rule, your state legislators (your legislative delegation) decide many local matters that other states leave to local government — so following them closely is especially important. To vote in person, Alabama requires a photo ID (check absentee eligibility and deadlines at sos.alabama.gov).
+:::reveal Why is your state legislative delegation especially important for local matters in Alabama, and what does Alabama require to vote in person? ||| Because Alabama has weak home rule, your state legislators (your legislative delegation) decide many local matters that other states leave to local government, so following them closely is especially important. To vote in person, Alabama requires a photo ID (check absentee eligibility and deadlines at sos.alabama.gov).
 
 ## Sources
 - Alabama Legislature. (n.d.). *Local government and the role of legislative delegations*. legislature.state.al.us. https://legislature.state.al.us/

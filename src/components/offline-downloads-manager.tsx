@@ -182,7 +182,7 @@ export function OfflineDownloadsManager() {
     return (
       <p role="status" className="mt-6 rounded-xl border border-neutral-200 p-4 text-sm text-neutral-600 dark:border-neutral-800 dark:text-neutral-400">
         Offline downloads aren&rsquo;t supported in this browser, so there&rsquo;s nothing to manage
-        here. Try a recent version of Chrome, Edge, Firefox or Safari — and note that private /
+        here. Try a recent version of Chrome, Edge, Firefox or Safari, and note that private /
         incognito windows usually block offline storage.
       </p>
     );
@@ -208,7 +208,7 @@ export function OfflineDownloadsManager() {
           {storage ? (
             <p className="mt-0.5 text-xs text-neutral-500">
               {/* navigator.storage.estimate() is ORIGIN-wide — it counts everything this site has
-                  stored, not only your lessons — so the copy says "this site", not "your lessons". */}
+                  stored, not only your lessons, so the copy says "this site", not "your lessons". */}
               {formatBytes(storage.usage)} used by this site on your device
               {storage.quota > 0 ? ` (of about ${formatBytes(storage.quota)} available)` : ""}
             </p>
@@ -229,7 +229,7 @@ export function OfflineDownloadsManager() {
       {nothing ? (
         <p role="status" className="mt-6 text-sm text-neutral-500">
           You haven&rsquo;t saved anything for offline yet. Open a course while you&rsquo;re online,
-          tick the lessons you want, and tap &ldquo;Download selected&rdquo; — they&rsquo;ll be here
+          tick the lessons you want, and tap &ldquo;Download selected&rdquo; they&rsquo;ll be here
           when the network isn&rsquo;t.
         </p>
       ) : null}
@@ -240,7 +240,7 @@ export function OfflineDownloadsManager() {
             <div className="flex flex-wrap items-center justify-between gap-2 border-b border-neutral-200 px-4 py-3 dark:border-neutral-800">
               <div className="min-w-0">
                 {/* Real <a>, not next/link: offline, a hard navigation is what the service worker
-                    can serve from cache — a client-side RSC nav would just fail. */}
+                    can serve from cache, a client-side RSC nav would just fail. */}
                 <a href={course.courseHref} className="font-medium underline underline-offset-2">
                   {course.courseTitle}
                 </a>
@@ -345,7 +345,7 @@ export function OfflineDownloadsManager() {
                 </div>
                 {page.sensitive ? (
                   <p className="mt-2 text-xs text-amber-700 dark:text-amber-500">
-                    Private — this is a copy of a page from your account, stored on this device
+                    Private, this is a copy of a page from your account, stored on this device
                     without a password in front of it. It&rsquo;s deleted when you sign out.
                   </p>
                 ) : null}
@@ -356,7 +356,7 @@ export function OfflineDownloadsManager() {
       ) : null}
 
       {/* Honesty rows. A cached page the manifest can't name, or a media file no saved lesson
-          claims, still occupies the learner's storage — hiding them would be exactly the "misled
+          claims, still occupies the learner's storage, hiding them would be exactly the "misled
           about what's actually saved" failure this feature exists to fix. */}
       {orphanPages.length > 0 ? (
         <section className="mt-6 rounded-xl border border-amber-200 p-4 dark:border-amber-900/60">
@@ -367,7 +367,7 @@ export function OfflineDownloadsManager() {
             </button>
           </div>
           <p className="mt-1 text-xs text-neutral-500">
-            These pages are on your device but we couldn&rsquo;t match them to a course — usually
+            These pages are on your device but we couldn&rsquo;t match them to a course, usually
             because they were saved by an older version of the app, or the record of them was
             cleared. They still work offline; remove them if you don&rsquo;t need them.
           </p>
@@ -430,7 +430,7 @@ function OfflineDiagnostics({ savedPages, usage }: { savedPages: number; usage: 
   const rows: { label: string; value: string; bad?: boolean }[] = [
     {
       label: "Serving offline pages",
-      value: ready?.controlling ? "Yes" : "No — reload the page",
+      value: ready?.controlling ? "Yes" : "No, reload the page",
       bad: ready !== null && !ready.controlling,
     },
     {
@@ -460,7 +460,7 @@ function OfflineDiagnostics({ savedPages, usage }: { savedPages: number; usage: 
       </dl>
       <p className="px-4 pb-4 text-xs text-neutral-500">
         If &ldquo;Serving offline pages&rdquo; says No, saved lessons will NOT open without a
-        connection — reload this page to start the offline worker, then try again.
+        connection, reload this page to start the offline worker, then try again.
       </p>
     </details>
   );
@@ -513,7 +513,7 @@ export function OfflineDownloadsSummary() {
           {count === null
             ? "See and remove what you've saved for offline"
             : count === 0
-              ? "Nothing saved yet — tick lessons on any course page"
+              ? "Nothing saved yet, tick lessons on any course page"
               : /* "item", not "lesson" — the count now includes saved pages like /admin/future. */
               `${count} item${count === 1 ? "" : "s"} on this device${usage ? ` · ${formatBytes(usage)} used` : ""}`}
         </span>

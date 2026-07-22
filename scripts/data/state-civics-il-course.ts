@@ -220,7 +220,7 @@ The practical effect: Illinois pushes real power **down** to local governments, 
 - **Use the (narrow) initiative.** Remember your one direct lever: citizens can initiate changes to the **structure of the General Assembly**, the power that produced the Cutback Amendment.
 - **Run**: school board, city/village council, township, and county offices are reachable local starting points.
 
-:::reveal Name two ways Illinois makes registering and voting easier, and the one thing Illinois citizens can put on the ballot themselves. ||| Illinois offers Election-Day (same-day) registration and a permanent vote-by-mail list, on top of early voting. The one thing citizens can put on the ballot themselves is a change to the structure of the General Assembly — Illinois's narrow initiative power, the route that produced the Cutback Amendment.
+:::reveal Name two ways Illinois makes registering and voting easier, and the one thing Illinois citizens can put on the ballot themselves. ||| Illinois offers Election-Day (same-day) registration and a permanent vote-by-mail list, on top of early voting. The one thing citizens can put on the ballot themselves is a change to the structure of the General Assembly, Illinois's narrow initiative power, the route that produced the Cutback Amendment.
 
 ## Sources
 - Illinois State Board of Elections. (n.d.). *Registering and voting in Illinois: same-day registration, vote-by-mail, early voting*. elections.il.gov. https://www.elections.il.gov/

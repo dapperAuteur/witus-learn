@@ -71,7 +71,7 @@ export function StreamSettings({
         </label>
 
         <label className="block text-sm">
-          Embed code (optional — paste, then save; blank leaves the saved embed unless you clear it)
+          Embed code (optional, paste, then save; blank leaves the saved embed unless you clear it)
           <textarea
             value={embedCode}
             onChange={(e) => setEmbedCode(e.target.value)}

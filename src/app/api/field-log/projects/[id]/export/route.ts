@@ -16,7 +16,7 @@ export async function GET(_req: Request, { params }: Params) {
   const payload = {
     _about:
       "Your Field Log project export. `project` is the project + its checklist; `legs` are the sites/nodes; " +
-      "`captures` is the field bank (storage_url values are links to your own media — not hosted by us); " +
+      "`captures` is the field bank (storage_url values are links to your own media, not hosted by us); " +
       "`comments` is the journal. You own this data; re-import or cite it freely.",
     ...bundle,
   };

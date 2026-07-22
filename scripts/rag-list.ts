@@ -38,9 +38,9 @@ async function main() {
   for (const r of rows) if (r.slug) slugCount.set(r.slug, (slugCount.get(r.slug) ?? 0) + 1);
 
   const out: string[] = [];
-  out.push("# RAG index checklist — chat with the sources");
+  out.push("# RAG index checklist, chat with the sources");
   out.push("");
-  out.push("Build each course's retrieval index so its **Chat with the sources** works. Check off as you go —");
+  out.push("Build each course's retrieval index so its **Chat with the sources** works. Check off as you go");
   out.push("index only the courses you want; leave the rest for later. Needs `GOOGLE_GEMINI_API_KEY`.");
   out.push("");
   out.push("- Regenerate this list anytime: `pnpm rag:list > plans/rag-index-checklist.md`");
@@ -56,11 +56,11 @@ async function main() {
     }
     const pub = r.published ? "" : " _(unpublished)_";
     if (!r.slug) {
-      out.push(`- [ ] **${r.title}**${pub} — _(no slug set; give it a slug first)_`);
+      out.push(`- [ ] **${r.title}**${pub}, _(no slug set; give it a slug first)_`);
       continue;
     }
     const tenantFlag = (slugCount.get(r.slug) ?? 0) > 1 ? ` --tenant ${r.tenant}` : "";
-    out.push(`- [ ] **${r.title}**${pub} — \`pnpm rag:index --course ${r.slug}${tenantFlag}\``);
+    out.push(`- [ ] **${r.title}**${pub}, \`pnpm rag:index --course ${r.slug}${tenantFlag}\``);
   }
   out.push(`\n_${rows.length} courses._`);
 

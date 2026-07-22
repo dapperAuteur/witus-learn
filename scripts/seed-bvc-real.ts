@@ -109,7 +109,7 @@ function buildEpisode(file: string, episodeSlug: string): AuthoredCourse | null 
 
   const title = ordered[0]?.module_title?.replace(/^Episode\s*\d+:\s*/, "").trim() || episodeSlug;
   return {
-    title: `BVC — ${title}`,
+    title: `BVC: ${title}`,
     description: `Better Vice Club: a cited, audio-first history of ${title}.`,
     lessons,
   };
@@ -119,7 +119,7 @@ async function main() {
   const t = await db.select({ id: schema.tenants.id }).from(schema.tenants).where(eq(schema.tenants.slug, "better-vice-club")).limit(1);
   const tenantId = t[0]?.id;
   if (!tenantId) {
-    console.error("BVC tenant missing — run `pnpm seed:tenants` first.");
+    console.error("BVC tenant missing, run `pnpm seed:tenants` first.");
     process.exit(1);
   }
 
@@ -157,7 +157,7 @@ async function main() {
       requiresAgeGate: gated,
       replaceLessons: true,
     });
-    console.log(`  episode ${ep.n} (${ep.slug}) — S${season}${gated ? " [age-gated]" : ""}`);
+    console.log(`  episode ${ep.n} (${ep.slug}), S${season}${gated ? " [age-gated]" : ""}`);
   }
 
   // ── Share Season 1 (the caffeine/commodity origin stories — NOT age-gated) with the
@@ -192,12 +192,12 @@ async function main() {
     for (const ep of s1Files) {
       const course = buildEpisode(ep.file, ep.slug);
       if (!course) continue;
-      // ElementaryMBA drops the "BVC — " prefix + vice framing (neutral, kid-appropriate).
+      // ElementaryMBA drops the "BVC: " prefix + vice framing (neutral, kid-appropriate).
       const framed = share.keepBvcBranding
         ? course
         : {
             ...course,
-            title: course.title.replace(/^BVC — /, ""),
+            title: course.title.replace(/^BVC[:—-]\s*/, ""),
             description: course.description.replace(/^Better Vice Club: a cited/, "A cited"),
           };
       await seedAuthoredCourse(db, {

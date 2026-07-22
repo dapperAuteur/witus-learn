@@ -105,7 +105,7 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
       ),
     );
     setBusy(false);
-    setMsg(`${verb}: ${ok}/${ids.length} updated${ok < ids.length ? " (some blocked — e.g. on hold)" : ""}.`);
+    setMsg(`${verb}: ${ok}/${ids.length} updated${ok < ids.length ? " (some blocked, e.g. on hold)" : ""}.`);
     router.refresh();
   }
 
@@ -130,7 +130,7 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
         body: JSON.stringify(patch),
       });
       if (r.ok) setRows((prev) => prev.map((x) => (x.id === id ? { ...x, ...normalize(patch) } : x)));
-      else if (r.status === 409) setMsg(`“${c.title}” is on hold — can’t publish until the hold clears.`);
+      else if (r.status === 409) setMsg(`“${c.title}” is on hold, can’t publish until the hold clears.`);
     } finally {
       setBusy(false);
       router.refresh();

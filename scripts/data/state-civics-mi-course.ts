@@ -285,7 +285,7 @@ Because Michigan layers **county + township + city/village** together, "who do I
 
 **The habit to build:** pick **one** race or issue and follow it from proposal to decision. You'll learn more civics from tracking a single local zoning fight or ballot proposal than from any lecture.
 
-:::reveal Name two direct-democracy actions a Michigan citizen can start by petition. ||| Any two of: initiate a law, amend the state constitution, hold a referendum on a law, or recall an official — Michigan lets citizens start all of these by petition.
+:::reveal Name two direct-democracy actions a Michigan citizen can start by petition. ||| Any two of: initiate a law, amend the state constitution, hold a referendum on a law, or recall an official, Michigan lets citizens start all of these by petition.
 
 ## Sources
 - Michigan Department of State. (n.d.). *Get involved: voting, petitions, and boards and commissions*. michigan.gov/sos. https://www.michigan.gov/sos

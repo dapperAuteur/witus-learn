@@ -145,7 +145,7 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
 - **Show up locally.** County commissions, city/town councils, and school boards hold public meetings; if you live near or on tribal land, tribal governments are key.
 - **Contact your legislators** in Santa Fe: you have one Representative and one Senator; sessions are short, so timing matters.
 
-:::reveal Can New Mexico citizens start a law by initiative, and what does the state especially depend on given its unpaid Legislature? ||| No — New Mexico has no statewide citizen initiative to start a law. Because its Legislature is unpaid, the state especially depends on citizens willing to serve; running for the Legislature there is essentially civic volunteering.
+:::reveal Can New Mexico citizens start a law by initiative, and what does the state especially depend on given its unpaid Legislature? ||| No, New Mexico has no statewide citizen initiative to start a law. Because its Legislature is unpaid, the state especially depends on citizens willing to serve; running for the Legislature there is essentially civic volunteering.
 
 ## Sources
 - New Mexico Legislature. (n.d.). *How a bill becomes law; local government*. nmlegis.gov. https://www.nmlegis.gov/

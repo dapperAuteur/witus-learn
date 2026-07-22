@@ -77,7 +77,7 @@ async function main() {
       // fall through with empties
     }
     const done = Object.values(items).filter((i) => i.done).length;
-    console.log(`\n=== ${row.slug ?? "(no tenant)"} · ${done}/${META.size} done · updated ${row.updatedAt ? new Date(row.updatedAt).toISOString() : "—"} ===`);
+    console.log(`\n=== ${row.slug ?? "(no tenant)"} · ${done}/${META.size} done · updated ${row.updatedAt ? new Date(row.updatedAt).toISOString() : "-"} ===`);
     for (const [id, meta] of META) {
       const st = items[id];
       const box = st?.done ? "[x]" : "[ ]";

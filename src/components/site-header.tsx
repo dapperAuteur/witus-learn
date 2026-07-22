@@ -97,7 +97,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   return (
     <>
       {/* Sticky (StickyHeader, a client shell) so the nav is reachable from anywhere on a long
-          lesson page. Only the bar itself sticks — the acting-as banner below stays OUTSIDE it
+          lesson page. Only the bar itself sticks, the acting-as banner below stays OUTSIDE it
           on purpose: the parent it addresses already has a persistent "Studying as <child>"
           signal pinned in the bar (the ProfileSwitcher renders for exactly the people who see
           the banner), so pinning the banner too would only spend scarce vertical space on small

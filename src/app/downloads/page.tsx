@@ -29,7 +29,7 @@ export default function DownloadsPage() {
       </a>
       <h1 className="mt-6 text-2xl font-bold">Your downloads</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-        Lessons you&rsquo;ve saved to this device. They work with no connection — and you can remove
+        Lessons you&rsquo;ve saved to this device. They work with no connection, and you can remove
         anything you don&rsquo;t need any more to free up space. This list lives on your device, so
         it&rsquo;s different on each phone or computer you use.
       </p>

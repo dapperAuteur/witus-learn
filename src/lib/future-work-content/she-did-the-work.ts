@@ -4,17 +4,17 @@
 
 /** The full "She Did the Work" course-proposal document (9 proposed courses, the build order,
  *  the 14 factual errors in the source calendar, and the rights/permissions table). */
-export const SHE_DID_THE_WORK_PROPOSAL = `# She Did the Work — Course Proposals
+export const SHE_DID_THE_WORK_PROPOSAL = `# She Did the Work, Course Proposals
 
-**Source:** the *She Clocked In: Women Who Built the Work* year-long calendar (Episodes 35–64),
+**Source:** the *She Clocked In: Women Who Built the Work* year-long calendar (Episodes 35-64),
 \`gemini/witus/plans/social-media/Work_WitUS_SheClockedIn_YearLong_Calendar.md\`. Twenty-eight
 individual women, one institution, one synthesis episode.
 
 **What this document is.** The calendar is a social series. This is the argument for which parts of
 it are *courses*. The main value here is the judgment about **who carries a course alone and who
-is a chapter in someone else's** — plus an honest list of what doesn't work at all.
+is a chapter in someone else's**, plus an honest list of what doesn't work at all.
 
-There is one seed file per woman in this directory. **Read them before building anything** — they
+There is one seed file per woman in this directory. **Read them before building anything**, they
 carry the fact-checks, and there are a lot of fact-checks.
 
 ---
@@ -27,25 +27,25 @@ course about a living person. Full detail is in the individual seed files; here 
 
 | # | Claim in the calendar | Reality |
 |---|---|---|
-| 1 | Marlee Matlin is "the only deaf performer to ever win" an acting Oscar | **False since March 2022.** Troy Kotsur won Best Supporting Actor for *CODA* — the same film she was in. Publishing this in a disability course would erase a deaf actor. |
+| 1 | Marlee Matlin is "the only deaf performer to ever win" an acting Oscar | **False since March 2022.** Troy Kotsur won Best Supporting Actor for *CODA*, the same film she was in. Publishing this in a disability course would erase a deaf actor. |
 | 2 | Mary Bassett: "your zip code is a stronger predictor of life expectancy than your genetic code" | **Not her line.** No evidence she originated it. Usually attributed to **Dr. Anthony Iton** (Forbes, 2013). Attributing it to Bassett is a **fabricated quote about a living person.** |
 | 3 | "Reshmin Chaudhary" | **Wrong name.** It is **Reshmin Chowdhury.** No broadcaster exists under the other spelling. |
 | 4 | Amy Purdy is "based in Flagstaff, Arizona" | **No source anywhere.** Every trail leads to **Colorado**. This also collapses the premise of her "Arizona month" episode. |
-| 5 | Addie Wyatt was "Time magazine's Woman of the Year, 1975" | **Distortion.** Time's 1975 Person of the Year was **"American Women," collectively** — she was one of **twelve** on the cover. |
+| 5 | Addie Wyatt was "Time magazine's Woman of the Year, 1975" | **Distortion.** Time's 1975 Person of the Year was **"American Women," collectively**, she was one of **twelve** on the cover. |
 | 6 | Wyatt elected international VP of the **UFCW** in 1976 | **Anachronism.** UFCW didn't exist until 1979. It was the **Amalgamated Meat Cutters**. |
 | 7 | Crystal Lee Sutton's mill was in **Burlington**, NC | **Roanoke Rapids.** Burlington is where she later died. |
-| 8 | Beth Mowins was the "second woman to call an NFL game nationally" | **First**, actually — to call a *nationally televised* one. Second ever to call one *on TV* (Gayle Sierens, 1987, was regional). The error cuts both ways and almost everyone gets it wrong. |
+| 8 | Beth Mowins was the "second woman to call an NFL game nationally" | **First**, actually, to call a *nationally televised* one. Second ever to call one *on TV* (Gayle Sierens, 1987, was regional). The error cuts both ways and almost everyone gets it wrong. |
 | 9 | Doris Burke, first woman NBA Finals game analyst, **2020** | **2020 = ESPN Radio. 2024 = television.** Both are real firsts; the wording picks the year. |
-| 10 | Maia Chaka is an NFL "**referee**" | **Line judge.** "Referee" is a specific role (the white hat). She also **left the NFL after 2023** — the calendar treats her as current. |
+| 10 | Maia Chaka is an NFL "**referee**" | **Line judge.** "Referee" is a specific role (the white hat). She also **left the NFL after 2023**, the calendar treats her as current. |
 | 11 | Bianca Smith has a law degree from the **University of Cincinnati** | **Case Western Reserve** (J.D. + MBA). She also left the Red Sox in 2023 and now coaches in **Japan**. |
-| 12 | Jennifer King is with the **Carolina Panthers** | Carolina was a 2018–19 *internship*. She is at **North Carolina Central** (2025–). |
+| 12 | Jennifer King is with the **Carolina Panthers** | Carolina was a 2018-19 *internship*. She is at **North Carolina Central** (2025-present). |
 | 13 | Fran Drescher and Meredith Stiehm are the current SAG-AFTRA / WGAW presidents | **Both left office in September 2025.** |
-| 14 | Jayne Kennedy won an Emmy for Rose Bowl Parade coverage in **1977** | **Impossible** — that predates her CBS hire. Her own bio says early 1980s. Also: her "TNT *A Seat At The Table* (2025)" credit exists **only in speaker-bureau bios** and cannot be sourced. |
+| 14 | Jayne Kennedy won an Emmy for Rose Bowl Parade coverage in **1977** | **Impossible**, that predates her CBS hire. Her own bio says early 1980s. Also: her "TNT *A Seat At The Table* (2025)" credit exists **only in speaker-bureau bios** and cannot be sourced. |
 
-Also worth knowing: **Sara Nelson's "Time 100" credit could not be verified in any year** — drop
+Also worth knowing: **Sara Nelson's "Time 100" credit could not be verified in any year**, drop
 it. **Angela Duckworth's Character Lab closed in June 2024.** **Mellody Hobson stepped down as
 Starbucks board chair in September 2024.** And in a nice irony, *official* pages were often the
-stale ones — Penn's faculty page still calls Duckworth a CEO of a defunct org, and
+stale ones, Penn's faculty page still calls Duckworth a CEO of a defunct org, and
 denverbroncos.com still calls Hobson the Starbucks chair.
 
 **None of this reflects badly on the calendar as a calendar.** BAM's editorial angles are
@@ -68,14 +68,14 @@ story?** A story is a lesson. A system is a course.
 | Who | Why she clears the bar |
 |---|---|
 | **Gabriele Oettingen** | Her *research is the content*. A student finishes able to run WOOP/MCII on a real goal. Peer-reviewed, DOI-citable, with an honest meta-analysis. |
-| **Angela Duckworth** | Same — *if* the course teaches the argument about grit, not just grit. The critique is what makes it a course instead of a listicle. |
+| **Angela Duckworth** | Same, *if* the course teaches the argument about grit, not just grit. The critique is what makes it a course instead of a listicle. |
 | **Ava DuVernay** | ARRAY is a repeatable **method** (diagnose missing infrastructure → build the smallest thing that removes the excuse → make incumbents adopt it), and it is BAM's own product thesis executed at scale. |
 | **Haben Girma** | She has an *argument*, not just a biography: the barrier is in the environment, not the person. That reframes accessibility from compliance into design, and it yields real skills. |
-| **Mellody Hobson** | Capital and financial literacy for people with scattered 1099 income. The most directly monetizable idea here — **but see the sourcing problem in her file.** |
+| **Mellody Hobson** | Capital and financial literacy for people with scattered 1099 income. The most directly monetizable idea here, **but see the sourcing problem in her file.** |
 
 ### Chapters, not courses (22)
 
-Everyone else. This is not a demotion — several of them carry the *best single lessons* in the
+Everyone else. This is not a demotion, several of them carry the *best single lessons* in the
 whole set (Tatyana McFadden's is arguably the best lesson in this document). They just don't
 sustain eight to twelve lessons on their own without padding, and padding a biography is how you
 end up with a course that sounds like AI wrote it.
@@ -90,11 +90,11 @@ end up with a course that sounds like AI wrote it.
 
 ### A. *Wish, Outcome, Obstacle, Plan: The Science of Actually Doing It*
 **Covers:** Gabriele Oettingen (with Peter Gollwitzer's implementation intentions).
-**Student can afterward:** Run a correct WOOP on a real goal — and explain why each of the four
+**Student can afterward:** Run a correct WOOP on a real goal, and explain why each of the four
 steps is there, why positive visualization alone *reduces* the odds of success, and what the
 evidence actually supports.
-**Size:** 8–10 lessons.
-**Hard part:** **The "WOOP" name may be trademarked — I could not determine either way** (Oettingen,
+**Size:** 8-10 lessons.
+**Hard part:** **The "WOOP" name may be trademarked, I could not determine either way** (Oettingen,
 2014; woopmylife.org). The underlying science (mental contrasting, implementation intentions) is
 published literature and freely teachable with citations; the risk is around the *brand name* in a
 paid course. **BAM task: email info@woopmylife.org for written clarification.** Also note WOOP
@@ -102,14 +102,14 @@ collides commercially with WHOOP, the wearable.
 
 ### B. *Grit, and the Argument About Grit*
 **Covers:** Angela Duckworth.
-**Student can afterward:** Evaluate a famous scientific claim — find the original effect size, find
+**Student can afterward:** Evaluate a famous scientific claim, find the original effect size, find
 the meta-analysis, find the construct-validity objection, and spot inflation-in-translation. This is
 a **course in reading science**, wearing a self-improvement costume.
-**Size:** 8–10 lessons.
+**Size:** 8-10 lessons.
 **Hard part:** It has to be honest or it's worthless. The founding paper reports grit explaining
 **~4% of variance** (Duckworth et al., 2007). The meta-analysis (Credé et al., 2017; N = 66,807)
 finds grit largely redundant with conscientiousness. Duckworth's own 2016 NYT op-ed criticizes how
-her work has been used. All three of those are *assets*, not obstacles — but a course that ducks
+her work has been used. All three of those are *assets*, not obstacles, but a course that ducks
 them is a bad course.
 **Real IP constraint:** Duckworth's FAQ **prohibits commercial reproduction of the Grit Scale
 items.** Link out; don't embed. **BAM task if he wants them in-course: write for permission.**
@@ -120,50 +120,50 @@ Stiehm.
 **Student can afterward:** Read their own contract and find the clause that protects them; identify
 protected concerted activity and what retaliation looks like; understand where leverage actually
 comes from in a negotiation where they hold no obvious cards.
-**Size:** 12–14 lessons, six sections.
+**Size:** 12-14 lessons, six sections.
 **Why these six together:** They are one argument in six movements. Wyatt teaches *what a contract
 is* (the seniority clause that saved her job at seventeen). Huerta teaches *how you build power
 outside the room so you have something to say inside it*. Sutton teaches *what retaliation costs
-the person who absorbs it*. Nelson teaches *leverage* — find the seam in the system where your
+the person who absorbs it*. Nelson teaches *leverage*, find the seam in the system where your
 group's refusal stops everything. Drescher and Stiehm teach *the modern fight*: AI likeness,
 residuals, and what happens when the employer restructures the job so the old contract stops
 mapping onto it. Separately, each is a thin biography. Together they are a curriculum.
 **Fit:** Excellent. It is the direct sibling of the existing **Bill of Rights: Know Your Rights**
 course (\`scripts/data/know-your-rights-course.ts\`), and it is the educational layer under
 Work.WitUS.Online's Union Contract Chat.
-**Hard part:** Two living union presidents (both now *former* — fix that). One documented sourcing
-hole (Sutton's court case — see her file; it needs a law-database lookup, not a web search). One
+**Hard part:** Two living union presidents (both now *former*, fix that). One documented sourcing
+hole (Sutton's court case, see her file; it needs a law-database lookup, not a web search). One
 live sensitivity: **Huerta's 2026 accusations of abuse against Cesar Chavez are now public record**,
-and a course that tells the Huerta–Chavez story as an uncomplicated heroic partnership will read as
+and a course that tells the Huerta-Chavez story as an uncomplicated heroic partnership will read as
 evasive. That is BAM's editorial call to make deliberately, not to stumble into.
 
 ### D. *Your Face Is Not Public Domain: AI, Consent, and What You're Signing* (carve-out)
 **Covers:** Fran Drescher + Meredith Stiehm (a subset of course C).
 **Student can afterward:** Read an AI/likeness clause in a contract and know what they're giving
 away.
-**Size:** 4–6 lessons. Short course.
+**Size:** 4-6 lessons. Short course.
 **Why it's separate:** This is the most *contemporary* and most *sellable* content in the entire
 calendar, and it fits Learn.WitUS's **existing AI curriculum** (AI Literacy → Ethics → Privacy &
 Security) as naturally as it fits a labor course. The 2023 SAG-AFTRA and WGA agreements are public,
-readable documents about synthetic likeness — a real artifact to teach from.
+readable documents about synthetic likeness, a real artifact to teach from.
 **Recommendation:** Build course C first, then carve this out as a standalone. Don't build both from
 scratch.
 
 ### E. *She Took the Seat and Held the Door* (sports-media ensemble)
 **Covers:** Jayne Kennedy, Doris Burke, Hannah Storm, Robin Roberts, Pam Oliver, Beth Mowins,
-Jacqui Oatley, Carol Tshabalala, Reshmin Chowdhury — **plus a section on Maia Chaka, Jennifer King
+Jacqui Oatley, Carol Tshabalala, Reshmin Chowdhury, **plus a section on Maia Chaka, Jennifer King
 and Bianca Smith** (see below).
-**Student can afterward:** Understand how a closed profession actually opens — the trial contract,
-the pipeline program, the non-linear résumé, the credential stack — and how an itinerant broadcast
+**Student can afterward:** Understand how a closed profession actually opens, the trial contract,
+the pipeline program, the non-linear résumé, the credential stack, and how an itinerant broadcast
 contractor manages the road: venues, credentials, prep, mileage, and the institutional knowledge
 that vanishes when a person leaves the industry.
-**Size:** 14–18 lessons.
-**Structure:** Four sections. *(1) The Door* — Kennedy, Burke. *(2) The Road* — Storm, Oliver,
-Roberts, Mowins. *(3) The Job Has No Border* — Oatley, Tshabalala, Chowdhury. *(4) The Ladder
-Nobody Shows You* — Chaka, King, Smith.
+**Size:** 14-18 lessons.
+**Structure:** Four sections. *(1) The Door*, Kennedy, Burke. *(2) The Road*, Storm, Oliver,
+Roberts, Mowins. *(3) The Job Has No Border*, Oatley, Tshabalala, Chowdhury. *(4) The Ladder
+Nobody Shows You*, Chaka, King, Smith.
 **On section 4:** Chaka, King and Smith were a candidate for their own short course
 ("breaking into a closed profession"). **I recommend against it.** Three subjects is thin, the
-audience overlap with the rest of E is total, and the section is *stronger* embedded — because it's
+audience overlap with the rest of E is total, and the section is *stronger* embedded, because it's
 the honest counterweight. Chaka is out of the NFL. Smith left the Red Sox. King is at an HBCU. A
 course that shows only the hiring press release is lying to its students; a course that shows the
 first four sections and *then* section four is telling the truth.
@@ -177,14 +177,14 @@ her file). Jayne Kennedy is the hardest research subject in the set.
 **Covers:** Haben Girma, Marlee Matlin, Amy Purdy, Tatyana McFadden.
 **Student can afterward:** Evaluate whether a document, site or form is actually usable; understand
 what the ADA does and doesn't require; ask for an accommodation and know what to do when refused;
-and — the big one — understand the real relationship between litigation, publicity and legislation.
-**Size:** 10–12 lessons.
-**The spine:** Girma's own argument — *"the biggest barriers exist not in the person, but in the
+and (the big one) understand the real relationship between litigation, publicity and legislation.
+**Size:** 10-12 lessons.
+**The spine:** Girma's own argument, *"the biggest barriers exist not in the person, but in the
 physical, social, and digital environment"* (Girma, n.d.). Then Matlin on **captioning as
 infrastructure** (the 1990 Decoder Circuitry Act is the best example anywhere of an accessibility
 mandate that became universally useful). Then Purdy on **building the event and then winning it**
 (Adaptive Action Sports lobbied para snowboarding into the Paralympics, and then she medalled in
-it — same shape as DuVernay's ARRAY). Then McFadden.
+it, same shape as DuVernay's ARRAY). Then McFadden.
 **McFadden is the best lesson in this document, and the calendar tells it wrong.** The calendar
 says: she sued and won, and Maryland changed the law. The truth: she won a **preliminary
 injunction** in 2006, **lost** the broader ADA claim in 2007 (*McFadden v. Grasmick*, 485 F. Supp.
@@ -192,7 +192,7 @@ injunction** in 2006, **lost** the broader ADA claim in 2007 (*McFadden v. Grasm
 and won the statute.** That is how institutional change actually happens, and it is worth ten
 inspirational-athlete stories.
 **Hard part:** Girma is a living disability-rights lawyer who has litigated over exactly this
-subject matter. Get her framing, her spelling ("Deafblind"), and her *argument* right — and do not
+subject matter. Get her framing, her spelling ("Deafblind"), and her *argument* right, and do not
 flatten her into "accessibility is the law," which is the one thing she is explicitly arguing past.
 **Nice side effect:** A BVC course on accessible design would be self-demonstrating for
 Learn.WitUS.
@@ -201,30 +201,30 @@ Learn.WitUS.
 **Covers:** Ava DuVernay.
 **Student can afterward:** Diagnose the missing infrastructure in their own field, build the
 smallest artifact that removes the excuse, and get incumbents to adopt it.
-**Size:** 8–10 lessons.
+**Size:** 8-10 lessons.
 **Why it matters to BAM specifically:** **ARRAY Crew is a free below-the-line crew hiring database.**
-That is, structurally, the Work.WitUS.Online Job Board — built by someone who then got every major
+That is, structurally, the Work.WitUS.Online Job Board, built by someone who then got every major
 studio to adopt it. The tightest subject-to-product fit in the entire calendar, and BAM spotted it
 himself in Episode 51.
 **Hard part:** Her best quotes on crew hiring trace to a Feb 2021 press round behind paywalls I
-could not fetch. **They are leads, not confirmed quotations — someone must open them in a browser.**
+could not fetch. **They are leads, not confirmed quotations, someone must open them in a browser.**
 And her *films* are not usable as course media (see rights, below).
 
 ### H. *Color Brave* / *Know Your Numbers* (Mellody Hobson)
 **Covers:** Mellody Hobson.
-**Student can afterward:** Read their own year — earnings by client, 1099 vs. union income, where
+**Student can afterward:** Read their own year, earnings by client, 1099 vs. union income, where
 the money actually went. And: have the conversation about race and money that most financial
 education carefully avoids.
-**Size:** 8–10 lessons.
+**Size:** 8-10 lessons.
 **Hard part, and it's real:** **I could not find Hobson's own well-sourced words on financial
 literacy.** She is universally *associated* with it, but her verifiable, quotable public positions
-are overwhelmingly about **racial candor in business** — the "color brave" material (Hobson, 2014).
+are overwhelmingly about **racial candor in business**, the "color brave" material (Hobson, 2014).
 So BAM must choose: build on "color brave," where her voice is rock-solid, or commission a dig
 through Ariel's shareholder letters and the Ariel-Schwab Black Investor Survey. **What he must not
 do is manufacture a financial-literacy quote for a living asset manager.** That is the single most
 dangerous fabrication available in this project.
 
-### I. *Name It* (Mary Bassett) — **defer to a different vertical**
+### I. *Name It* (Mary Bassett), **defer to a different vertical**
 Her work is excellent and teachable, but it belongs in a **health-equity course**, which is a
 CentenarianOS/health product, not a labor or sports-media one. The calendar bridges her to the
 "Nomad Longevity Protocol" via City Guides, and that is the weakest connective tissue in the whole
@@ -235,12 +235,12 @@ is not hers.)
 
 ## Recommended build order
 
-**#1 — Course A, Oettingen (WOOP/MCII).** Build this first, and I'd defend it hard.
+**#1, Course A, Oettingen (WOOP/MCII).** Build this first, and I'd defend it hard.
 
 Everything else in this list requires you to be right about a living person's biography. **This one
 requires you to be right about a peer-reviewed paper**, and peer-reviewed papers have DOIs. There is
 essentially **zero biographical risk surface**. The sourcing is the strongest in the set. It is a
-*method*, so a student finishes able to do something — the highest teachability score here by a
+*method*, so a student finishes able to do something, the highest teachability score here by a
 distance. It slots straight in beside the existing **Learning How to Learn** course: same house
 style, same citation discipline, same audience, and the two cross-link naturally. It is the
 smallest build. And it proves the format works before you spend effort on the courses where the
@@ -248,54 +248,54 @@ research is expensive.
 
 The one thing to settle first is the **WOOP trademark question**, which is an email, not a project.
 
-**#2 — Course C, *Know Your Rights at Work*.** Strategically the most important course in this
-document, and the one BVC/Work.WitUS could *use* soonest — Work.WitUS.Online is literally a
+**#2, Course C, *Know Your Rights at Work*.** Strategically the most important course in this
+document, and the one BVC/Work.WitUS could *use* soonest, Work.WitUS.Online is literally a
 union-contract product, and this is the educational layer beneath it. It's #2 rather than #1 only
 because it's a six-subject build with two living subjects, one genuine sourcing hole, and one live
 editorial sensitivity. Do it second, with the confidence of a shipped course behind you.
 
-**#3 — Course B, Duckworth.** The sibling of #1. Ship them close together; they cross-sell, and
+**#3, Course B, Duckworth.** The sibling of #1. Ship them close together; they cross-sell, and
 they share a spine (how to read evidence honestly). Settle the Grit Scale permission question first.
 
-**#4 — Course E, sports-media ensemble.** The largest research lift (nine living figures, two of
+**#4, Course E, sports-media ensemble.** The largest research lift (nine living figures, two of
 them hard to source), but it's the natural companion to the existing *Break Into Sports & Media
 Broadcasting* course and it's the emotional heart of BAM's calendar. Worth doing properly rather
 than fast.
 
-**#5 — Course G, DuVernay.** Tightest fit with the WitUS product thesis. Held here only because the
+**#5, Course G, DuVernay.** Tightest fit with the WitUS product thesis. Held here only because the
 quote verification needs a human with a browser.
 
-**#6 — Course F, disability & access.** Genuinely valuable, and McFadden's lesson is superb. Ranked
-here because it demands the most care with living subjects — Girma in particular — and because it
+**#6, Course F, disability & access.** Genuinely valuable, and McFadden's lesson is superb. Ranked
+here because it demands the most care with living subjects, Girma in particular, and because it
 should be built *after* Learn.WitUS's own accessibility is good enough that the course isn't
 embarrassing.
 
-**#7 — Course D, the AI/likeness carve-out.** Only after C exists.
+**#7, Course D, the AI/likeness carve-out.** Only after C exists.
 
-**#8 — Course H, Hobson.** Gated on resolving the sourcing problem.
+**#8, Course H, Hobson.** Gated on resolving the sourcing problem.
 
 **Deferred:** Course I (Bassett) → health vertical.
 
 ---
 
-## Rights and permissions — BAM tasks, not blockers I can solve
+## Rights and permissions, BAM tasks, not blockers I can solve
 
-**The general rule.** Writing *about* a real person — their life, career, and public actions, cited
-to public sources, for educational purposes — is broadly fine. That is biography, and it is what
+**The general rule.** Writing *about* a real person, their life, career, and public actions, cited
+to public sources, for educational purposes, is broadly fine. That is biography, and it is what
 these courses are. What is **not** automatically fine:
 
 | Thing | Status |
 |---|---|
 | Her name, life story, public career, cited facts | ✅ Fine. This is what the courses are made of. |
 | **Photographs of her** | ⚠️ Almost never fine. Photos are owned by the *photographer* or a wire service (Getty, AP), not by the subject and not by you. Licence them, or use nothing. |
-| **Video clips** — her broadcasts, DuVernay's films, the *Marlee Matlin* documentary, TED talks | ⚠️ Owned by networks/studios/TED. **Link out; do not embed or re-host.** Teach *13th* by pointing students to Netflix. |
+| **Video clips**, her broadcasts, DuVernay's films, the *Marlee Matlin* documentary, TED talks | ⚠️ Owned by networks/studios/TED. **Link out; do not embed or re-host.** Teach *13th* by pointing students to Netflix. |
 | **Team/network/union logos** (NFL, ESPN, SAG-AFTRA, UFW) | ⚠️ Trademarks. Don't decorate a paid course with them. |
 | **Extended quotes** | ⚠️ Short quotes for comment/criticism are standard. Reproducing a whole speech or a book passage is not. |
 | **The Grit Scale** | 🔴 **Explicitly prohibited for commercial reproduction** by Duckworth's own FAQ. Link out or get written permission. |
 | **The WOOP name/branding** | 🔴 **Unresolved.** Email info@woopmylife.org before naming a paid course after it. |
 
-**Where I'd actually seek permission:** Duckworth (Grit Scale), Oettingen/WOOP (the name), and —
-if BAM wants a real quote rather than a public-record one — **Carol Tshabalala**, who is the one
+**Where I'd actually seek permission:** Duckworth (Grit Scale), Oettingen/WOOP (the name), and,
+if BAM wants a real quote rather than a public-record one, **Carol Tshabalala**, who is the one
 subject where the English-language record is so thin that a direct approach is the honest path.
 **All three are BAM tasks.** If he wants them, they should go in \`./plans/user-tasks/\`.
 
@@ -303,36 +303,36 @@ subject where the English-language record is so thin that a direct approach is t
 
 ## What doesn't work as a course (honest section)
 
-**Sage Steele — cut her.** She's in the calendar as an Indiana-pipeline story, and that angle is
+**Sage Steele, cut her.** She's in the calendar as an Indiana-pipeline story, and that angle is
 legitimate. But what she is now *known for* is a First Amendment / employment-speech lawsuit against
 her employer, and she is an active political figure appointed to a university board by a sitting
-governor. Putting her in a BVC course means either teaching the lawsuit — which drags BVC into a
-partisan fight it gains nothing from — or conspicuously not teaching it, which reads as evasive to
+governor. Putting her in a BVC course means either teaching the lawsuit, which drags BVC into a
+partisan fight it gains nothing from, or conspicuously not teaching it, which reads as evasive to
 anyone who knows the story. **Hannah Storm already carries the Indiana/Notre Dame pipeline lesson.**
 If BAM insists, the only defensible frame is a single media-literacy lesson on *off-duty speech and
 the freelancer*, which is genuinely useful and can be taught without endorsing or attacking her.
 
-**ASU Cronkite (Episode 58) — not a person, and not a course.** It's an *institution*, and it's in
+**ASU Cronkite (Episode 58), not a person, and not a course.** It's an *institution*, and it's in
 the calendar for a good reason: Phoenix is a five-league sports market and the Women Leaders in
 Sports Media programme is a real pipeline. But you cannot write a biography-shaped lesson about a
 degree programme, and a course *about* a university reads as a brochure. **Two better uses:** (1) a
-single lesson in Course E on **how pipeline programmes actually work** — pairing Cronkite WLSM with
+single lesson in Course E on **how pipeline programmes actually work**, pairing Cronkite WLSM with
 the NFL Officiating Development Programme that Maia Chaka came through, which turns it from a
-brochure into an actual teachable mechanism; or (2) **a distribution partner rather than a subject**
-— Cronkite WLSM students are precisely the audience for Course E and for Work.WitUS. That's a
+brochure into an actual teachable mechanism; or (2) **a distribution partner rather than a subject**,
+Cronkite WLSM students are precisely the audience for Course E and for Work.WitUS. That's a
 business-development conversation, not a curriculum one.
 
-**Episode 64, the synthesis — a great post, not a class.** "She Built the Whole System" is a
+**Episode 64, the synthesis, a great post, not a class.** "She Built the Whole System" is a
 year-end victory lap that only lands if you've read the other 29 episodes. As a course lesson it
 would be a summary of courses the student didn't take.
 
-**Robin Roberts — a great chapter, a thin course.** Her career is one of the most decorated in
+**Robin Roberts, a great chapter, a thin course.** Her career is one of the most decorated in
 American broadcasting and she is beloved, and neither of those is a transferable skill. Her real
-lesson — *a broadcast career is a portfolio, not a job* — is one strong lesson, and the illness
+lesson, *a broadcast career is a portfolio, not a job*, is one strong lesson, and the illness
 chapters, while moving, are not teachable professional content. A whole course on her would be
 hagiography, which is exactly what the citation rule exists to prevent.
 
-**Jayne Kennedy — indispensable, but be honest about the cost.** She's the origin story and she
+**Jayne Kennedy, indispensable, but be honest about the cost.** She's the origin story and she
 belongs in Course E. But the web's record of her is genuinely corrupted (the Emmy year alone has
 three mutually incompatible versions, none verifiable). Her 2025 memoir *Plain Jayne* is now the
 best primary source in existence. **If she's central, someone has to read the book.** That's a real
@@ -342,20 +342,20 @@ cost and BAM should know it before committing.
 
 ## Where the research is thin (so BAM knows the gaps)
 
-1. **Carol Tshabalala — the worst.** English-language coverage is speaker-bureau bios and celebrity
+1. **Carol Tshabalala, the worst.** English-language coverage is speaker-bureau bios and celebrity
    aggregators copying each other verbatim. Her calendar claim (commentating at the 2010 World Cup)
    is unsupported *and* she's a presenter, not a commentator. Cite her conservatively or contact her.
-2. **Jayne Kennedy** — see above. Conflicting Emmy years, an uncited Wikipedia page, and a swarm of
+2. **Jayne Kennedy**, see above. Conflicting Emmy years, an uncited Wikipedia page, and a swarm of
    SEO junk. The memoir is the fix.
-3. **Crystal Lee Sutton's court case** — I could not verify any case captioned *Sutton v. J.P.
+3. **Crystal Lee Sutton's court case**, I could not verify any case captioned *Sutton v. J.P.
    Stevens*. The reinstatement and back pay are solid; the *precedent* is not. Needs an NLRB /
    4th Circuit database lookup, not a web search.
-4. **Mellody Hobson on financial literacy** — the gap is real and it sits directly under the most
+4. **Mellody Hobson on financial literacy**, the gap is real and it sits directly under the most
    monetizable course idea in the set. See her file.
-5. **Ava DuVernay's crew-hiring quotes** — behind paywalls. Leads, not confirmations.
-6. **Sara Nelson's general-strike speech** — the substance is verified; no primary transcript
+5. **Ava DuVernay's crew-hiring quotes**, behind paywalls. Leads, not confirmations.
+6. **Sara Nelson's general-strike speech**, the substance is verified; no primary transcript
    retrieved. Don't quote her verbatim from a secondary source.
-7. **Fran Drescher's "all fields of labor" speech** — two orderings of the quote circulate. Verify
+7. **Fran Drescher's "all fields of labor" speech**, two orderings of the quote circulate. Verify
    against the Deadline video, not against articles about it.
 
 One meta-lesson from the verification pass, which is itself worth teaching: **Grokipedia and
@@ -368,36 +368,36 @@ cite them. Anywhere.
 ## References
 
 Credé, M., Tynan, M. C., & Harms, P. D. (2017). Much ado about grit: A meta-analytic synthesis of
-the grit literature. *Journal of Personality and Social Psychology, 113*(3), 492–511.
+the grit literature. *Journal of Personality and Social Psychology, 113*(3), 492-511.
 https://doi.org/10.1037/pspp0000102
 
 Duckworth, A. (2016, March 26). Don't grade schools on grit. *The New York Times.*
 
 Duckworth, A. L., Peterson, C., Matthews, M. D., & Kelly, D. R. (2007). Grit: Perseverance and
-passion for long-term goals. *Journal of Personality and Social Psychology, 92*(6), 1087–1101.
+passion for long-term goals. *Journal of Personality and Social Psychology, 92*(6), 1087-1101.
 https://doi.org/10.1037/0022-3514.92.6.1087
 
 Duckworth, A. L., Quirk, A., Gallop, R., Hoyle, R. H., Kelly, D. R., & Matthews, M. D. (2019).
 Cognitive and noncognitive predictors of success. *Proceedings of the National Academy of Sciences,
-116*(47), 23499–23504. https://doi.org/10.1073/pnas.1910510116
+116*(47), 23499-23504. https://doi.org/10.1073/pnas.1910510116
 
 Girma, H. (2019). *Haben: The Deafblind woman who conquered Harvard Law.* Twelve.
 
 Girma, H. (n.d.). *About Haben* [Personal website]. https://habengirma.com/
 
 Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. *American
-Psychologist, 54*(7), 493–503. https://doi.org/10.1037/0003-066X.54.7.493
+Psychologist, 54*(7), 493-503. https://doi.org/10.1037/0003-066X.54.7.493
 
 Hobson, M. (2014, March). *Color blind or color brave?* [Video]. TED.
 https://www.ted.com/talks/mellody_hobson_color_blind_or_color_brave
 
 *McFadden v. Grasmick*, 485 F. Supp. 2d 642 (D. Md. 2007).
 
-McDonald, B. A. (n.d.). *She Clocked In: Women Who Built the Work — Work.WitUS.Online year-long
-content calendar, Episodes 35–64* [Unpublished internal document]. WitUS.
+McDonald, B. A. (n.d.). *She Clocked In: Women Who Built the Work, Work.WitUS.Online year-long
+content calendar, Episodes 35-64* [Unpublished internal document]. WitUS.
 
 Oettingen, G. (2012). Future thought and behaviour change. *European Review of Social Psychology,
-23*(1), 1–63. https://doi.org/10.1080/10463283.2011.643698
+23*(1), 1-63. https://doi.org/10.1080/10463283.2011.643698
 
 Oettingen, G. (2014). *Rethinking positive thinking: Inside the new science of motivation.*
 Current/Penguin.
@@ -431,16 +431,16 @@ course about her writings and impact on the world, especially in politics
   {
     key: "addie-l-wyatt",
     name: "Addie L. Wyatt",
-    summary: "In 1941, at seventeen, she applied for a typist job at Armour & Company in Chicago. She was hired — and then told on arrival that Black women were not…",
+    summary: "In 1941, at seventeen, she applied for a typist job at Armour & Company in Chicago. She was hired, and then told on arrival that Black women were not…",
     body: `https://www.ufcw.org/ufcw-celebrates-black-history-month-addie-wyatt/
 https://www.chipublib.org/fa-rev-addie-and-rev-claude-wyatt-papers-1/
 https://www.dol.gov/general/aboutdol/hallofhonor/2012_wyatt
 https://en.wikipedia.org/wiki/Addie_L._Wyatt
 
-# Addie L. Wyatt (1924–2012)
+# Addie L. Wyatt (1924-2012)
 
 **Who she is.** In 1941, at seventeen, she applied for a typist job at Armour & Company in
-Chicago. She was hired — and then told on arrival that Black women were not permitted in clerical
+Chicago. She was hired, and then told on arrival that Black women were not permitted in clerical
 positions. She was sent to the canning department to pack stew for the Army. She joined the
 United Packinghouse Workers of America, and the contract's seniority clause is what stopped
 Armour from replacing her with a white woman. That is the origin of everything she did afterward:
@@ -457,22 +457,22 @@ Department of Labor's Hall of Honor in 2012.
 She is the **spine of a labor-organizing course**, not a chapter in one. Her career is the
 cleanest available answer to the question a course actually has to answer: *what does a union
 contract do, mechanically, and how does a person with no power get one?* The seniority-clause
-story is a perfect first lesson — it's concrete, it's small, and it teaches contract literacy
+story is a perfect first lesson, it's concrete, it's small, and it teaches contract literacy
 without a single abstraction.
 
 The transferable skill: **read the contract; find the clause that protects you; know that it got
 there because someone bargained for it.** That is directly usable by every freelancer and union
 member in BVC's audience, and it pairs with the existing *Know Your Rights* (Bill of Rights)
-course as a natural sibling — call it *Know Your Rights at Work.*
+course as a natural sibling, call it *Know Your Rights at Work.*
 
 **Proposed title:** *The Contract Was the Protection*
 
 ## Verified vs. confirm
 
-- ❌ **"Time magazine's Woman of the Year, 1975" is a distortion — do not print it.** Time's
+- ❌ **"Time magazine's Woman of the Year, 1975" is a distortion, do not print it.** Time's
   Person of the Year for 1975 was **"American Women," a collective award**, and Wyatt was one of
   **twelve** women on the cover (with Betty Ford, Barbara Jordan, Billie Jean King and others).
-  The safe wording — the one the DOL, the NPS and the UFCW all use — is: *"one of twelve women
+  The safe wording, the one the DOL, the NPS and the UFCW all use, is: *"one of twelve women
   named to Time's 1975 'Women of the Year' cover, when Time named American Women its Person of
   the Year."* **Wikipedia's phrasing on this is wrong and it is propagating into other sources.**
 - ❌ **"International VP of the UFCW in 1976" is an anachronism.** The **UFCW did not exist until
@@ -482,9 +482,9 @@ course as a natural sibling — call it *Know Your Rights at Work.*
 - ✅ CLUW co-founder (1974); CBTU founding member; DOL Hall of Honor (2012); the Armour story.
 - 📌 **Her papers are at the Chicago Public Library** (Rev. Addie & Rev. Claude Wyatt Papers).
   That's the primary archive and the right place to settle any exact date. Note that dol.gov
-  blocks automated fetching — it loads fine in a browser.
+  blocks automated fetching, it loads fine in a browser.
 
-## BAM's angle (SheClockedIn Ep 38 — keep this)
+## BAM's angle (SheClockedIn Ep 38, keep this)
 
 > "She went from being denied a typing job to becoming the highest-ranking Black woman in
 > organized American labor. And she did it by understanding that the contract was the protection."`,
@@ -502,9 +502,9 @@ https://en.wikipedia.org/wiki/Amy_Purdy
 
 **Who she is.** Born 1979 in Las Vegas. At **nineteen** she contracted bacterial meningitis, went
 into septic shock, and was given about a 2% chance of survival. She lost **both legs below the
-knee**, her **spleen**, hearing in her left ear, and **both kidneys** — her father donated one.
+knee**, her **spleen**, hearing in her left ear, and **both kidneys**, her father donated one.
 She took up snowboarding at twenty-five. In **2005 she co-founded Adaptive Action Sports**, which
-was instrumental in getting **para snowboarding onto the Paralympic programme for Sochi 2014** —
+was instrumental in getting **para snowboarding onto the Paralympic programme for Sochi 2014**,
 and then she won a **bronze medal** in that inaugural event. Two more medals at PyeongChang 2018
 (silver, snowboard cross; bronze, banked slalom). Runner-up on *Dancing with the Stars* season 18.
 TED talk, "Living Beyond Limits." Memoir, *On My Own Two Feet* (2014).
@@ -512,7 +512,7 @@ TED talk, "Living Beyond Limits." Memoir, *On My Own Two Feet* (2014).
 ## Course concept
 
 She is a chapter in the accessibility/adaptive course, and the one who carries the most
-underrated idea in it: **she didn't just compete in the event — she and her organization got the
+underrated idea in it: **she didn't just compete in the event, she and her organization got the
 event created.** Adaptive Action Sports lobbied para snowboarding into the Paralympics, and then
 she medalled in it. That's not an inspirational-athlete story, that's an **institution-building**
 story, and it's the same shape as Ava DuVernay founding ARRAY: *if the venue for your work doesn't
@@ -524,20 +524,20 @@ Framed that way she's teachable. Framed as "she overcame adversity," she's a pos
 
 ## Verified vs. confirm
 
-- ❌ **"Based in Flagstaff, Arizona" — NO SOURCE ANYWHERE. Treat as false.** Every trail leads to
+- ❌ **"Based in Flagstaff, Arizona", NO SOURCE ANYWHERE. Treat as false.** Every trail leads to
   **Colorado** (Breckenridge / Summit County); Adaptive Action Sports is Colorado-based. But no
   current primary source states her residence, so the most that should ever be published is
-  "**based in Colorado**" — and honestly, the detail adds nothing pedagogically. **Drop it.**
+  "**based in Colorado**", and honestly, the detail adds nothing pedagogically. **Drop it.**
   (This matters beyond Purdy: it is exactly the kind of confidently-wrong biographical detail that
   AI-generated reference sites invent and then everyone repeats. It also breaks the calendar's
-  whole "Arizona month" premise for her episode — BAM should know that.)
+  whole "Arizona month" premise for her episode, BAM should know that.)
 - ❌ **She did not win *Dancing with the Stars*.** She was **runner-up** in season 18; Meryl Davis
   won. She was the show's first double-amputee contestant.
 - ✅ Sochi 2014: **bronze**, women's snowboard cross, standing. ✅ Meningitis at 19; bilateral
   below-knee amputation; spleen removed; kidney transplant from her father. ✅ Adaptive Action
   Sports co-founded 2005 with Daniel Gale.
 - ⚠️ Career total is **3 Paralympic medals** (1 silver, 2 bronze). Her own bio says "a bronze and
-  a silver" without specifying events — use paralympic.org as the tiebreaker.`,
+  a silver" without specifying events, use paralympic.org as the tiebreaker.`,
   },
   {
     key: "angela-duckworth",
@@ -545,28 +545,28 @@ Framed that way she's teachable. Framed as "she overcame adversity," she's a pos
     summary: "Rosa Lee and Egbert Chang Professor of Psychology at the University of Pennsylvania. MacArthur Fellow, 2013. Author of Grit: The Power of Passion and…",
     body: `https://angeladuckworth.com/
 https://angeladuckworth.com/grit-scale/
-https://doi.org/10.1037/0022-3514.92.6.1087   (Duckworth et al., 2007 — the founding paper)
-https://doi.org/10.1037/pspp0000102           (Credé et al., 2017 — the meta-analytic critique)
+https://doi.org/10.1037/0022-3514.92.6.1087   (Duckworth et al., 2007, the founding paper)
+https://doi.org/10.1037/pspp0000102           (Credé et al., 2017, the meta-analytic critique)
 https://en.wikipedia.org/wiki/Angela_Duckworth
 
 # Dr. Angela Duckworth
 
 **Who she is.** Rosa Lee and Egbert Chang Professor of Psychology at the University of
 Pennsylvania. **MacArthur Fellow, 2013.** Author of *Grit: The Power of Passion and Perseverance*
-(Scribner, 2016), a #1 New York Times bestseller. Co-founder of Character Lab (2013) — **which
+(Scribner, 2016), a #1 New York Times bestseller. Co-founder of Character Lab (2013), **which
 closed in June 2024.** Co-hosts the *No Stupid Questions* podcast with Mike Maughan. Her claim:
-that **grit — passion plus perseverance for long-term goals — predicts achievement independently
+that **grit, passion plus perseverance for long-term goals, predicts achievement independently
 of talent.**
 
 ## Course concept
 
-**She can carry a full course, and it is the strongest single course idea in the calendar — but
+**She can carry a full course, and it is the strongest single course idea in the calendar, but
 ONLY if the course teaches the fight about grit, not just grit.**
 
 Here's the thing. A course that says "grit predicts success, here's how to be grittier" would be a
 bad course, because it isn't true in the strong form. But a course that says *"here is a famous
 psychological construct, here is the evidence for it, here is the serious scientific attack on it,
-here is how the researcher herself responded, now you decide"* — **that is a course in how to read
+here is how the researcher herself responded, now you decide"*, **that is a course in how to read
 science**, disguised as a self-improvement course. It's more valuable, it's more honest, and it's
 exactly the kind of thing Learn.WitUS already does well (see *Learning How to Learn*, which is
 built on primary sources and cites the original papers).
@@ -574,63 +574,63 @@ built on primary sources and cites the original papers).
 The three pillars, all of which are real, citable, and Duckworth's own:
 
 1. **Her founding paper says grit explains ~4% of the variance in success outcomes.** That is from
-   Duckworth et al. (2007) itself — not from a critic. Four percent is not nothing and it is not
+   Duckworth et al. (2007) itself, not from a critic. Four percent is not nothing and it is not
    destiny. Starting a course there is a devastating and completely fair opening move.
-2. **The West Point data (N = 11,258; Duckworth et al., 2019, PNAS) shows grit predicts *finishing*
-   — not *performing*.** Cognitive ability predicted grades; grit predicted completing Beast
+2. **The West Point data (N = 11,258; Duckworth et al., 2019, PNAS) shows grit predicts *finishing*,
+   not *performing*.** Cognitive ability predicted grades; grit predicted completing Beast
    Barracks and graduating. That distinction is the actual usable finding, and it is *more* useful
    than the pop version.
 3. **She has publicly criticized her own effect.** Her 2016 NYT op-ed **"Don't Grade Schools on
-   Grit"** says she worries she inadvertently contributed to an idea she vigorously opposes —
+   Grit"** says she worries she inadvertently contributed to an idea she vigorously opposes,
    high-stakes character assessment. That's a signed, byline-level self-correction from a living
    scientist. It is a gift to a teacher.
 
-The transferable skill a student walks away with: **how to evaluate a popular scientific claim** —
+The transferable skill a student walks away with: **how to evaluate a popular scientific claim**,
 find the original effect size, find the meta-analysis, find the construct-validity objection, and
 notice when a finding has been inflated in translation. That skill is worth more than grit.
 
-**Proposed title:** *Grit, and the Argument About Grit* — or, better: *How to Read a Famous Finding*
+**Proposed title:** *Grit, and the Argument About Grit*, or, better: *How to Read a Famous Finding*
 
 ## Verified vs. confirm
 
 - ✅ MacArthur 2013; *Grit* (Scribner, 2016); UPenn; *No Stupid Questions*.
 - ❌ **Character Lab is closed** (announced Feb 2024, closed June 2024). **Penn's own GSE faculty
-  page still calls her "Founder & CEO of Character Lab" — that page is stale.** Do not cite it for
+  page still calls her "Founder & CEO of Character Lab", that page is stale.** Do not cite it for
   current roles.
-- 🔴 **THE CRITIQUE — cite it precisely:**
+- 🔴 **THE CRITIQUE, cite it precisely:**
   > Credé, M., Tynan, M. C., & Harms, P. D. (2017). Much ado about grit: A meta-analytic synthesis
   > of the grit literature. *Journal of Personality and Social Psychology, 113*(3), 492–511.
   > https://doi.org/10.1037/pspp0000102
 
   88 samples, **N = 66,807**. Findings: grit is very highly correlated with **conscientiousness**
-  (the "jangle fallacy" — a new name for an old trait); its construct validity is in question;
+  (the "jangle fallacy", a new name for an old trait); its construct validity is in question;
   grit interventions likely have only weak effects; and most of the predictive power sits in the
   *perseverance* facet, with "consistency of interest" adding little. **A course that omits this is
   not honest.**
 - ⚠️ **The Spelling Bee finding (original N = 175) has not, as far as I can find, been
   independently replicated.** Do not claim it has been.
-- 🔴 **REAL IP PROBLEM — read this before building anything.** The Grit Scale is public at
+- 🔴 **REAL IP PROBLEM, read this before building anything.** The Grit Scale is public at
   angeladuckworth.com, but **her FAQ states that copyright prohibits reproduction "in books,
   magazines, or other outlets, and/or commercial use."** A **paid** Learn.WitUS course that
   reproduces the scale items is plausibly commercial use. **Link out to her site rather than
-  embedding the items — or write for permission.** This is a BAM task. (Her FAQ also notes there
+  embedding the items, or write for permission.** This is a BAM task. (Her FAQ also notes there
   are **no published norms** for any version of the scale, so "your score means X" framing is
   unsupported by the author herself.)
 - ⚠️ Quote her **from her own byline** (the NYT op-ed), not from secondary paraphrases of her
   reaction to Credé.
 
-## BAM's angle (SheClockedIn Ep 49 — keep this)
+## BAM's angle (SheClockedIn Ep 49, keep this)
 
 > "Grit isn't dramatic. It's completing the time entry. It's closing the job. It's doing the admin
 > when you'd rather not."
 
-This is good, and it survives the critique intact — arguably the critique *strengthens* it, since
+This is good, and it survives the critique intact, arguably the critique *strengthens* it, since
 the perseverance facet is the part that held up.`,
   },
   {
     key: "ava-duvernay",
     name: "Ava DuVernay",
-    summary: "A publicist until she was thirty-two, then a director. Won the Directing Award, U.S. Dramatic, at Sundance in 2012 for Middle of Nowhere — the first Black…",
+    summary: "A publicist until she was thirty-two, then a director. Won the Directing Award, U.S. Dramatic, at Sundance in 2012 for Middle of Nowhere, the first Black…",
     body: `https://arraynow.com/
 https://arraycrew.com/about-us/
 https://www.npr.org/2021/02/18/969151083/
@@ -639,14 +639,14 @@ https://en.wikipedia.org/wiki/Ava_DuVernay
 # Ava DuVernay
 
 **Who she is.** A publicist until she was thirty-two, then a director. Won the **Directing Award,
-U.S. Dramatic, at Sundance in 2012** for *Middle of Nowhere* — the first Black woman to do it.
+U.S. Dramatic, at Sundance in 2012** for *Middle of Nowhere*, the first Black woman to do it.
 Directed *Selma* (2014), the documentary *13th* (2016), the limited series *When They See Us*
 (2019), and *Origin* (2023). With *A Wrinkle in Time* (2018, ~$103M budget) she became the first
 Black woman to direct a **live-action** film with a production budget over $100 million.
 
-But the reason she's in this course list is **ARRAY** — the company she built because the
+But the reason she's in this course list is **ARRAY**, the company she built because the
 infrastructure she needed didn't exist: a distribution arm, a production arm, a nonprofit arm, a
-creative campus in downtown LA, and — critically — **ARRAY Crew**, a **free below-the-line crew
+creative campus in downtown LA, and (critically) **ARRAY Crew**, a **free below-the-line crew
 hiring database** launched in 2021 that grew from about 500 to 11,000+ professionals in under
 three years, backed by every major studio and streamer.
 
@@ -655,7 +655,7 @@ three years, backed by every major studio and streamer.
 **She can carry a full course, and it's the one with the most direct commercial value to BAM.**
 
 The course is not "the films of Ava DuVernay." It's **build the infrastructure your work needs
-when the industry won't provide it** — and it is, structurally, the same argument as Work.WitUS
+when the industry won't provide it**, and it is, structurally, the same argument as Work.WitUS
 itself. ARRAY Crew is *literally a job board for below-the-line crew*. That is BAM's own product
 thesis, executed at scale, by someone who then made the studios adopt it.
 
@@ -666,24 +666,24 @@ Teachable, transferable content:
 - **Build the smallest thing that removes the excuse.** ARRAY Crew is a *database*. That's it. Its
   entire power is that it makes "I don't know any" indefensible.
 - **Get the incumbents to adopt it.** The hard part, and the part nobody teaches.
-- **Run the production humanely and still on budget** — her stated approach to crew.
+- **Run the production humanely and still on budget**, her stated approach to crew.
 
 **Proposed title:** *Build the Thing That Doesn't Exist*
 
 ## Verified vs. confirm
 
-- ✅ Sundance Directing Award, U.S. Dramatic, 2012. ✅ *A Wrinkle in Time*, ~$103M — but **say
+- ✅ Sundance Directing Award, U.S. Dramatic, 2012. ✅ *A Wrinkle in Time*, ~$103M, but **say
   "live-action"**; drop the qualifier and the claim gets shakier. **And do not confuse budget with
-  box office** — several outlets have.
+  box office**, several outlets have.
 - ⚠️ **Category precision.** *13th* is a **documentary**. *When They See Us* is a **Netflix limited
   series**, not a film. Don't list them as "films."
-- ⚠️ **She was NOT nominated for the Best Director Oscar for *Selma*** — that omission was itself
+- ⚠️ **She was NOT nominated for the Best Director Oscar for *Selma***, that omission was itself
   the news story. Verify any awards line before printing it.
 - ⚠️ **ARRAY Crew lives on its own domain** (arraycrew.com) and is not listed as a division on
   arraynow.com. Describe it carefully.
-- 🔴 **QUOTE WARNING.** Her strongest lines about crew hiring — including *"you've got to show me
+- 🔴 **QUOTE WARNING.** Her strongest lines about crew hiring, including *"you've got to show me
   that for every single position on your crew... you have looked at someone else that you haven't
-  looked at before"* — trace to a February 2021 Deadline/NPR/Variety press round that I **could
+  looked at before"*, trace to a February 2021 Deadline/NPR/Variety press round that I **could
   not fetch** (Deadline and Variety now hard-paywall automated access; NPR timed out). **These are
   strong leads, NOT confirmed quotations.** Someone must open those URLs in a browser and confirm
   the exact wording before any of it is printed. The **one quote I verified by direct fetch** is
@@ -693,7 +693,7 @@ Teachable, transferable content:
   films, or extended clips, is not.** Teach *13th* by pointing students to it on Netflix; do not
   embed it. See the rights section of the proposal doc.
 
-## BAM's angle (SheClockedIn Ep 51 — keep this)
+## BAM's angle (SheClockedIn Ep 51, keep this)
 
 > "Ava DuVernay built an entire distribution company because the infrastructure she needed didn't
 > exist — so she built it herself... Work.WitUS.Online is the same philosophy."
@@ -714,7 +714,7 @@ https://en.wikipedia.org/wiki/Beth_Mowins
 
 **Who she is.** Lafayette College '89 (basketball captain), Syracuse Newhouse M.A. '90. Joined
 ESPN in 1994; started calling college football in 2005. On **September 11, 2017** she called the
-Chargers–Broncos *Monday Night Football* season opener — **the first woman to call a nationally
+Chargers-Broncos *Monday Night Football* season opener, **the first woman to call a nationally
 televised NFL game.** She has also been the Raiders' preseason play-by-play voice since 2015,
 called NFL games for CBS, and in 2021 became the first woman to call an NBA game on network TV.
 Long history with ASU and Arizona softball, which she helped push toward national visibility.
@@ -722,7 +722,7 @@ Long history with ASU and Arizona softball, which she helped push toward nationa
 ## Course concept
 
 A chapter in the sports-media ensemble, in the *play-by-play craft* module. The transferable
-skill here is **preparation as a discipline** — Mowins' whole reputation is that she arrives at
+skill here is **preparation as a discipline**, Mowins' whole reputation is that she arrives at
 every venue as a student: learn the load-in, learn the press box, learn the sight lines, learn
 the rosters cold. That's teachable and it generalizes to any freelance trade. There is real
 content in "what does a play-by-play prep sheet actually look like," and it would slot cleanly
@@ -734,18 +734,18 @@ against the existing *Break Into Sports & Media Broadcasting* course.
 
 - ❌ **The calendar says "second woman to call an NFL game nationally." That is wrong as worded,
   and the error is subtle.** She was the **FIRST** woman to call a **nationally televised** NFL
-  game (2017). She was the **second woman ever** to call an NFL regular-season game on TV — the
+  game (2017). She was the **second woman ever** to call an NFL regular-season game on TV, the
   first was **Gayle Sierens** (NBC, December 27, 1987), and that broadcast was **regional**, not
   national. The two facts get conflated constantly, in both directions. Correct framing:
   *"first woman to call a nationally televised NFL game; second woman ever to call an NFL
   regular-season game on television, thirty years after Gayle Sierens."*
-- ✅ "Second woman to do play-by-play for nationally televised college football" checks out — Pam
+- ✅ "Second woman to do play-by-play for nationally televised college football" checks out, Pam
   Ward (ESPN2, November 2000) was first; Mowins started in 2005. Cite Ward's record for the
   ordinal; ESPN's own bio doesn't use the word "second."
 - ✅ The Trisha Ford quote in the calendar ("She's not only a pioneer, but she has become a
-  mainstay...") — verify the exact wording against its original source before printing it.
+  mainstay..."), verify the exact wording against its original source before printing it.
 
-## BAM's angle (SheClockedIn Ep 59 — keep this)
+## BAM's angle (SheClockedIn Ep 59, keep this)
 
 > "Her preparation philosophy: arrive at every venue as a student."`,
   },
@@ -763,21 +763,21 @@ https://en.wikipedia.org/wiki/Bianca_Smith
 **Who she is.** Dartmouth '12 (sociology; played softball), then a **J.D. and an MBA from Case
 Western Reserve, 2017**, where she was also director of baseball operations. Internships in
 baseball ops, including with the Cincinnati Reds. In **January 2021** the Boston Red Sox hired her
-as a minor-league coach at their Fort Myers player development complex — **the first Black woman to
+as a minor-league coach at their Fort Myers player development complex, **the first Black woman to
 coach in professional baseball.** She **declined an offer to stay in 2023**. She now coaches in
 Japan (JET Programme sports exchange advisor, Hokkaido) and coaches the **Great Britain women's
 and U23 national baseball teams**. Her stated goal is to be an MLB manager.
 
 ## Course concept
 
-The third chapter of the **"breaking into a closed profession"** course — and the one that carries
+The third chapter of the **"breaking into a closed profession"** course, and the one that carries
 the **credential-stacking** lesson most explicitly, because she did it deliberately. A law degree
 and an MBA are not obvious tools for a baseball coach. She acquired them anyway, and BAM's read on
 why is correct and worth keeping: *she came in knowing what she was entitled to.*
 
 The transferable skill: **buying yourself leverage with credentials in a field where the rates,
 the roles and the rules are undocumented.** Minor-league and development-league work is exactly
-where pay is most informal and least written down — which is the point.
+where pay is most informal and least written down, which is the point.
 
 **Proposed title (as a module lesson):** *Come In Knowing What You're Owed*
 
@@ -791,10 +791,10 @@ where pay is most informal and least written down — which is the point.
   coached in the Red Sox **minor-league** system, not for the major-league club.
 - ⚠️ Sources describe the **Fort Myers player development complex**, not a named affiliate club.
   Safest: *"a minor-league coach in the Boston Red Sox organization."*
-- ❌ **She is not with the Red Sox anymore** — she declined an offer to stay in 2023 and is now
+- ❌ **She is not with the Red Sox anymore**, she declined an offer to stay in 2023 and is now
   coaching in Japan and for Great Britain. The calendar treats her as current.
 
-## BAM's angle (SheClockedIn Ep 63 — keep this)
+## BAM's angle (SheClockedIn Ep 63, keep this)
 
 > "The minor league and development pipeline in all major sports is where rate documentation is
 > weakest... that invisibility has a cost."
@@ -815,13 +815,13 @@ https://www.news24.com/truelove/celebrity/23-years-of-sportscaster-carol-tshabal
 SABC's *Sports Buzz*; SABC and radio (Kaya FM, Radio 2000) through 2011, then **SuperSport
 International from 2011**, where she hosts *Extra Time*. Since 2016 she has also been a live
 studio anchor for **Premier League Productions** (IMG) in the UK. South African media call her
-"the First Lady of Sport." She is a **presenter and anchor** — a studio host — which is a
+"the First Lady of Sport." She is a **presenter and anchor**, a studio host, which is a
 different craft from commentary, and the distinction matters.
 
 ## Course concept
 
 Honest read: **she is the weakest-sourced subject in the calendar, and I would not build a course
-around her without primary research.** The *idea* BAM has for her is good and I'd keep it — that
+around her without primary research.** The *idea* BAM has for her is good and I'd keep it, that
 sports broadcasting is a global trade, that the freelancer's problems (rates, contracts, venues,
 currencies, timezones) are the same in Johannesburg as in Indianapolis, and that a course written
 only for the American market is quietly parochial. That argument deserves a lesson.
@@ -837,13 +837,13 @@ and News24 will actually support.
 - ❌ **"Commentated on matches during the 2010 FIFA World Cup" is unsupported.** In 2010 she was
   still at the SABC, and I found no source showing her commentating or presenting match coverage
   at that tournament. Her documented 2010-World-Cup connection is the **Final Draw** (December
-  2009, Cape Town) — and even there, the on-stage hosts were Charlize Theron and Jérôme Valcke, so
+  2009, Cape Town), and even there, the on-stage hosts were Charlize Theron and Jérôme Valcke, so
   her role was almost certainly broadcast/stage-side presenting *around* the draw. **Do not assert
   she commentated at the 2010 World Cup.**
 - ❌ **Do not call her a commentator.** Every reliable source describes her as a presenter/anchor.
 - ⚠️ "First African to host the FIFA Ballon d'Or gala (Zurich, 2011)" is reasonably well attested
   but not nailed down. Treat as soft.
-- 🔴 **Sourcing difficulty: HIGH — the highest in this set alongside Jayne Kennedy.**
+- 🔴 **Sourcing difficulty: HIGH, the highest in this set alongside Jayne Kennedy.**
   English-language coverage of her is dominated by speaker-bureau bios and celebrity aggregators
   that copy each other verbatim, so a single unverified line propagates everywhere. Wikipedia is
   thin. If BAM wants her in a course with a real claim attached, the honest path is to **contact
@@ -858,7 +858,7 @@ https://www.washingtonpost.com/wp-dyn/content/article/2009/09/15/AR2009091503323
 https://apwu.org/news/real-norma-rae/
 https://en.wikipedia.org/wiki/Crystal_Lee_Sutton
 
-# Crystal Lee Sutton (1940–2009)
+# Crystal Lee Sutton (1940-2009)
 
 **Who she is.** A textile worker at the **J.P. Stevens mill in Roanoke Rapids, North Carolina**,
 making about $2.65 an hour. When the **Textile Workers Union of America** sent organizer Eli
@@ -887,7 +887,7 @@ Rights* course's structure.
 - ❌ **The calendar says Burlington. The mill was in ROANOKE RAPIDS.** Burlington is where she
   later lived, died, and where her papers are archived (Alamance Community College). This is the
   single most common error about her and it's in BAM's draft.
-- ❌ **The union in 1973–74 was the TWUA, not ACTWU.** ACTWU didn't exist until 1976. Many sources
+- ❌ **The union in 1973-74 was the TWUA, not ACTWU.** ACTWU didn't exist until 1976. Many sources
   (including Wikipedia and the APWU) retroactively credit ACTWU with the 1974 election win. Use
   **TWUA** for the mill years; ACTWU only for her later career as a paid organizer.
 - ⚠️ **Do not name a court case.** I could not verify any case captioned *Sutton v. J.P. Stevens*.
@@ -896,11 +896,11 @@ Rights* course's structure.
   findings against J.P. Stevens. If the legal precedent matters to the course, it needs a
   law-database lookup (NLRB decisions / 4th Circuit), not a web search. **This is the weakest-
   sourced item in the whole set.**
-- ⚠️ She was **Crystal Lee Jordan** at the time of the 1973 events — Sutton is a later married
+- ⚠️ She was **Crystal Lee Jordan** at the time of the 1973 events, Sutton is a later married
   name. Matters for archival searching.
 - ✅ Sally Field won the Best Actress Oscar for *Norma Rae* (awarded 1980, for the 1979 film).
 
-## BAM's angle (SheClockedIn Ep 43 — keep this)
+## BAM's angle (SheClockedIn Ep 43, keep this)
 
 > "Your Rate Card is not a negotiating tactic. It's a dignity document."`,
   },
@@ -917,20 +917,20 @@ https://en.wikipedia.org/wiki/Dolores_Huerta
 
 **Who she is.** Born April 10, 1930. **Ninety-six years old and living.** Co-founded the National
 Farm Workers Association with Cesar Chavez in 1962; it became the United Farm Workers. She was the
-UFW's chief contract negotiator — the person actually at the table, across four decades, at a
+UFW's chief contract negotiator, the person actually at the table, across four decades, at a
 time when neither Latinos nor women were in those rooms. Before that, lobbying in Sacramento
 alongside assemblyman Phillip Burton in the early 1960s, she helped win **disability insurance
 and public assistance for California farm workers regardless of citizenship.** She was
-instrumental in the 1975 California Agricultural Labor Relations Act — the first US law giving
+instrumental in the 1975 California Agricultural Labor Relations Act, the first US law giving
 farm workers collective bargaining rights. Presidential Medal of Freedom, 2012. Named to the
 2026 TIME100 at ninety-six, the oldest honoree on the list.
 
 ## Course concept
 
-**The organizing course's second spine, alongside Wyatt** — and the one that teaches *negotiation*
+**The organizing course's second spine, alongside Wyatt**, and the one that teaches *negotiation*
 specifically. Wyatt teaches what a contract is; Huerta teaches how you get one when you have no
 leverage: the boycott, the coalition, the legislature, the strike, and the long patience of
-sitting at a table for forty years. There is a genuinely teachable method in her career —
+sitting at a table for forty years. There is a genuinely teachable method in her career,
 **building power outside the room so you have something to say inside it.**
 
 **Proposed title (if she anchors the negotiation module):** *Sí, Se Puede: Building Leverage
@@ -938,7 +938,7 @@ Before You Sit Down*
 
 ## Verified vs. confirm
 
-- ✅ **She coined "Sí, se puede" — not Chavez.** Per the UFW's own history page, she created it in
+- ✅ **She coined "Sí, se puede", not Chavez.** Per the UFW's own history page, she created it in
   1972 during Chavez's 25-day fast in Phoenix, when local leaders kept telling her *"No, no se
   puede."* Crediting Chavez is a common error; the UFW itself corrects it.
 - ✅ NFWA 1962; Presidential Medal of Freedom 2012; the Burton lobbying work.
@@ -946,14 +946,14 @@ Before You Sit Down*
   came when. Safest framing: *"lobbying alongside assemblyman Phillip Burton in the early 1960s,
   she helped win disability insurance and public assistance for California farm workers regardless
   of citizenship."* Don't pin a year you can't source.
-- 🔴 **Living-subject sensitivity — BAM must decide how to handle this.** In March 2026, CNN
+- 🔴 **Living-subject sensitivity, BAM must decide how to handle this.** In March 2026, CNN
   reported that Huerta has **accused Cesar Chavez of abuse**. This is now part of the public
-  record. A course that tells the Huerta–Chavez story as an uncomplicated heroic partnership will
+  record. A course that tells the Huerta-Chavez story as an uncomplicated heroic partnership will
   read as either uninformed or evasive. This is a real editorial decision, not a footnote, and it
-  is BAM's call — not something to paper over.
+  is BAM's call, not something to paper over.
   https://www.cnn.com/2026/03/21/us/dolores-huerta-cesar-chavez-united-farm-workers
 
-## BAM's angle (SheClockedIn Ep 42 — keep this)
+## BAM's angle (SheClockedIn Ep 42, keep this)
 
 > "Knowing what your contract says? That's not a luxury. That's what Dolores Huerta fought 40
 > years to give workers."`,
@@ -961,7 +961,7 @@ Before You Sit Down*
   {
     key: "doris-burke",
     name: "Doris Burke",
-    summary: "Providence College point guard, then Providence assistant coach, then thirty years of basketball broadcasting — sideline, radio, color, analyst — before…",
+    summary: "Providence College point guard, then Providence assistant coach, then thirty years of basketball broadcasting, sideline, radio, color, analyst, before…",
     body: `https://espnpressroom.com/us/bios/burke_doris/
 https://www.nba.com/news/hall-fame-curt-gowdy-award-doris-burke
 https://money.cnn.com/2017/09/25/media/doris-burke-espn-nba-analyst/index.html
@@ -970,7 +970,7 @@ https://en.wikipedia.org/wiki/Doris_Burke
 # Doris Burke
 
 **Who she is.** Providence College point guard, then Providence assistant coach, then thirty
-years of basketball broadcasting — sideline, radio, color, analyst — before anyone called her a
+years of basketball broadcasting, sideline, radio, color, analyst, before anyone called her a
 "first." In 2000 she became the first woman to call a Knicks broadcast. In **2017** ESPN made her
 a national NBA game analyst, the first woman in a regular full-time national NBA analyst role.
 In **2018** she won the Naismith Hall of Fame's **Curt Gowdy Media Award**, the first woman to get
@@ -980,7 +980,7 @@ whole point.
 
 ## Course concept
 
-A chapter in the sports-media ensemble course — and the one that carries the **"your expertise is
+A chapter in the sports-media ensemble course, and the one that carries the **"your expertise is
 the negotiating position"** lesson. The transferable skill is *credentialing*: how you build a
 body of demonstrable competence so specific that the room has to hire you on merit, and how you
 price it. This pairs naturally with a rate-setting / know-your-worth module.
@@ -999,7 +999,7 @@ price it. This pairs naturally with a rate-setting / know-your-worth module.
   her "the current lead NBA Finals analyst" is stale. She still calls regular-season and playoff
   games.
 
-## BAM's angle (SheClockedIn Ep 36 — keep this)
+## BAM's angle (SheClockedIn Ep 36, keep this)
 
 > "She didn't negotiate from a position of 'I'm the first woman.' She negotiated from a position
 > of 'I'm the best analyst.'"
@@ -1009,7 +1009,7 @@ That line is the whole module. Don't lose it.`,
   {
     key: "fran-drescher",
     name: "Fran Drescher",
-    summary: "The actor from The Nanny, elected President of SAG-AFTRA in September 2021 (narrowly — 52.5% to 47.5% over Matthew Modine), re-elected in 2023, and…",
+    summary: "The actor from The Nanny, elected President of SAG-AFTRA in September 2021 (narrowly, 52.5% to 47.5% over Matthew Modine), re-elected in 2023, and…",
     body: `https://deadline.com/2023/07/fran-drescher-the-complete-sag-aftra-strike-speech-video-hollywood-1235437816/
 https://www.sagaftra.org/
 https://variety.com/2021/film/news/fran-drescher-president-sag-aftra-joely-fisher-1235054675/
@@ -1018,12 +1018,12 @@ https://en.wikipedia.org/wiki/2023_SAG-AFTRA_strike
 # Fran Drescher
 
 **Who she is.** The actor from *The Nanny*, elected **President of SAG-AFTRA in September 2021**
-(narrowly — 52.5% to 47.5% over Matthew Modine), re-elected in 2023, and **succeeded by Sean
-Astin in September 2025.** In 2023 she led the **118-day SAG-AFTRA strike** (July 14 – November 9),
+(narrowly, 52.5% to 47.5% over Matthew Modine), re-elected in 2023, and **succeeded by Sean
+Astin in September 2025.** In 2023 she led the **118-day SAG-AFTRA strike** (July 14, November 9),
 the longest actors' strike against the studios in Hollywood history, and the first time actors and
 writers were on strike simultaneously since 1960. The central issues were not glamorous: AI
 likeness capture without consent or payment, streaming residuals, and minimum wage for background
-performers — the lowest-paid members of the union.
+performers, the lowest-paid members of the union.
 
 ## Course concept
 
@@ -1033,7 +1033,7 @@ in BVC's audience is being asked right now to sign something that touches their 
 work product. The 2023 SAG-AFTRA agreement is a real, readable, public document about what
 consent and compensation for a synthetic likeness look like.
 
-She anchors the **"what are you actually signing"** module of a labor course — or, honestly, could
+She anchors the **"what are you actually signing"** module of a labor course, or, honestly, could
 carry a **short standalone course on AI, consent, and your likeness**, which would slot straight
 into Learn.WitUS's existing AI curriculum (AI Literacy → Ethics → Privacy & Security) and is
 arguably more sellable than anything else here.
@@ -1042,10 +1042,10 @@ arguably more sellable than anything else here.
 
 ## Verified vs. confirm
 
-- ❌ **She is NOT the current SAG-AFTRA president.** She served **2021–2025**. Sean Astin was
+- ❌ **She is NOT the current SAG-AFTRA president.** She served **2021-2025**. Sean Astin was
   elected in September 2025. The calendar (written before that) implies she's still in office.
-- ✅ 118 days (July 14 – Nov 9, 2023); first simultaneous actors+writers strike since 1960 (when
-  SAG was led by Ronald Reagan). **Do not confuse this with the 1980 SAG/AFTRA strike** — that
+- ✅ 118 days (July 14, Nov 9, 2023); first simultaneous actors+writers strike since 1960 (when
+  SAG was led by Ronald Reagan). **Do not confuse this with the 1980 SAG/AFTRA strike**, that
   was actors alone.
 - ⚠️ **The famous quote needs a video check before printing.** Two orderings circulate. The version
   I could trace to a fetched source (TheWrap), from her July 13, 2023 press conference:
@@ -1053,11 +1053,11 @@ arguably more sellable than anything else here.
   > contributors that make the machine run, we have a problem. And we are experiencing that right
   > at this moment. What's happening to us is happening across all fields of labor."
   Other outlets render it in the reverse order. **Verify against the Deadline full-speech video
-  before quoting.** It's a headline quote from a living person — get it exactly right or don't use it.
+  before quoting.** It's a headline quote from a living person, get it exactly right or don't use it.
 - ⚠️ **Do not cross the strike numbers.** SAG-AFTRA = **118 days**. WGA = **148 days**. They are
   routinely swapped.
 
-## BAM's angle (SheClockedIn Ep 45 — keep this)
+## BAM's angle (SheClockedIn Ep 45, keep this)
 
 > "Those minimums exist because Fran Drescher and 160,000 members held the line for 118 days."`,
   },
@@ -1068,8 +1068,8 @@ arguably more sellable than anything else here.
     body: `https://as.nyu.edu/faculty/gabriele-oettingen.html
 https://woopmylife.org/
 https://wp.nyu.edu/motivationlab/publications/gabriele-oettingen/
-https://doi.org/10.3389/fpsyg.2021.565202   (Wang, Wang & Gai, 2021 — the MCII meta-analysis)
-https://doi.org/10.1080/10463283.2011.643698 (Oettingen, 2012 — fantasy realization theory)
+https://doi.org/10.3389/fpsyg.2021.565202   (Wang, Wang & Gai, 2021, the MCII meta-analysis)
+https://doi.org/10.1080/10463283.2011.643698 (Oettingen, 2012, fantasy realization theory)
 
 # Dr. Gabriele Oettingen
 
@@ -1077,9 +1077,9 @@ https://doi.org/10.1080/10463283.2011.643698 (Oettingen, 2012 — fantasy realiz
 Motivation Lab. Her finding is genuinely counterintuitive and it is the reason she belongs in this
 list: **positively fantasizing about a goal makes you *less* likely to achieve it.** Indulging in
 the imagined outcome discharges the energy you needed to pursue it. What works instead is **mental
-contrasting** — imagining the outcome *and then* the obstacle in yourself that stands in the way —
+contrasting**, imagining the outcome *and then* the obstacle in yourself that stands in the way,
 combined with an **implementation intention** ("if X, then I will Y," from Peter Gollwitzer, her
-frequent collaborator and spouse). Together: **MCII**, packaged for the public as **WOOP** — Wish,
+frequent collaborator and spouse). Together: **MCII**, packaged for the public as **WOOP**, Wish,
 Outcome, Obstacle, Plan.
 
 ## Course concept
@@ -1091,10 +1091,10 @@ Outcome, Obstacle, Plan.
    else in this calendar clears that bar so cleanly.
 2. **The evidence is better than grit's.** MCII is an *intervention* with randomized trials behind
    it, not just a correlational trait. The meta-analysis (Wang et al., 2021; 21 studies, N =
-   15,907) finds **g ≈ 0.34** — small-to-medium, and real.
+   15,907) finds **g ≈ 0.34**, small-to-medium, and real.
 3. **It is honest to teach.** Those same authors **explicitly flag publication bias** and say the
    true effect "may be smaller." And a 2021 comparison study suggests MCII may not clearly beat
-   plausible alternative planning methods. A good course teaches that too — and that's the same
+   plausible alternative planning methods. A good course teaches that too, and that's the same
    "read the evidence honestly" spine as the Duckworth course.
 4. **It slots directly into the existing Learn.WitUS catalog.** *Learning How to Learn* already
    teaches the cognitive science of studying from primary sources. This is its sibling: the
@@ -1111,24 +1111,24 @@ Outcome, Obstacle, Plan.
   free WOOP app at woopmylife.org.
 - ✅ Real, verified citations with DOIs:
   - Oettingen, G. (2012). Future thought and behaviour change. *European Review of Social
-    Psychology, 23*(1), 1–63. https://doi.org/10.1080/10463283.2011.643698
+    Psychology, 23*(1), 1-63. https://doi.org/10.1080/10463283.2011.643698
   - Gollwitzer, P. M. (1999). Implementation intentions. *American Psychologist, 54*(7), 493–503.
     https://doi.org/10.1037/0003-066X.54.7.493
   - Wang, G., Wang, Y., & Gai, X. (2021). A meta-analysis of the effects of MCII on goal
     attainment. *Frontiers in Psychology, 12*, 565202. https://doi.org/10.3389/fpsyg.2021.565202
-  - **Bonus — a Duckworth/Oettingen co-authored paper exists**: Duckworth, Grant, Loew, Oettingen &
-    Gollwitzer (2011), *Educational Psychology, 31*(1), 17–26.
-    https://doi.org/10.1080/01443410.2010.506003 — a natural bridge if BAM builds both courses.
-- 🔴 **IP QUESTION — UNRESOLVED, and it is a BAM task, not a research task.** I could not confirm
+  - **Bonus, a Duckworth/Oettingen co-authored paper exists**: Duckworth, Grant, Loew, Oettingen &
+    Gollwitzer (2011), *Educational Psychology, 31*(1), 17-26.
+    https://doi.org/10.1080/01443410.2010.506003, a natural bridge if BAM builds both courses.
+- 🔴 **IP QUESTION, UNRESOLVED, and it is a BAM task, not a research task.** I could not confirm
   whether **"WOOP" is a registered trademark**, and woopmylife.org does not publish licensing
   terms. **Do not assert either way.** The practical read: the underlying *science* (mental
   contrasting, implementation intentions, MCII) is published literature and freely teachable with
-  citations — nobody can stop that. The risk surface is around the **"WOOP" brand name and their
+  citations, nobody can stop that. The risk surface is around the **"WOOP" brand name and their
   materials/app assets** in a paid course. **Recommend BAM email info@woopmylife.org for written
   clarification before naming a paid course "WOOP."** (Separate reason to be careful: "WOOP"
   collides commercially with **WHOOP**, the fitness wearable.)
 
-## BAM's angle (SheClockedIn Ep 50 — keep this, it's the best feature-to-science mapping in the calendar)
+## BAM's angle (SheClockedIn Ep 50, keep this, it's the best feature-to-science mapping in the calendar)
 
 > "*Wish* = get paid. *Outcome* = invoice sent. *Obstacle* = never logging the hours. *Plan* = log
 > every day."
@@ -1149,7 +1149,7 @@ https://en.wikipedia.org/wiki/Haben_Girma
 **Who she is.** Born 1988 in Oakland to Eritrean/Ethiopian immigrant parents. **The first
 DeafBlind person to graduate from Harvard Law School** (J.D. 2013). As a staff attorney at
 Disability Rights Advocates she was counsel for the **National Federation of the Blind** in
-*NFB v. Scribd* — where, in March 2015, a federal court in Vermont held that **the ADA covers
+*NFB v. Scribd*, where, in March 2015, a federal court in Vermont held that **the ADA covers
 web-only businesses**, rejecting Scribd's argument that the law reaches only physical places.
 The case then settled; Scribd agreed to make its content accessible. She left litigation in 2016.
 She is now an author (*Haben: The Deafblind Woman Who Conquered Harvard Law*, Twelve, 2019),
@@ -1158,7 +1158,7 @@ speaker, and accessibility consultant to organizations including Apple, Google a
 ## Course concept
 
 **She can carry a course alone, and it's one of the best ideas in the whole calendar.** Not
-"Haben Girma: A Life" — a course on **accessibility and self-advocacy** with her framing as the
+"Haben Girma: A Life", a course on **accessibility and self-advocacy** with her framing as the
 spine.
 
 The reason she's teachable where most biography subjects aren't: she has an **argument**, and it's
@@ -1167,13 +1167,13 @@ a specific, contrarian, operational one. In her own words:
 > "The biggest barriers exist not in the person, but in the physical, social, and digital
 > environment."
 
-That reframes accessibility from a compliance chore into a **design problem** — and she pushes it
+That reframes accessibility from a compliance chore into a **design problem**, and she pushes it
 further, into disability as a *driver of innovation* rather than a cost centre. A course built on
 that can teach real skills: how to evaluate whether a document/site/form is actually usable, what
 the ADA does and doesn't require, how to ask for an accommodation and what to do when you're
 refused, and how to build something accessible from the start instead of retrofitting it.
 
-That is genuinely useful to Learn.WitUS's own students *and* to Learn.WitUS itself — a BVC course
+That is genuinely useful to Learn.WitUS's own students *and* to Learn.WitUS itself, a BVC course
 on accessible course design would be self-demonstrating.
 
 **Proposed title:** *The Barrier Is Not the Person*
@@ -1189,12 +1189,12 @@ on accessible course design would be self-demonstrating.
 - ⚠️ **She does not practice law now.** Speaker, author, consultant. Don't call her "a disability
   rights lawyer" in the present tense without qualification.
 - ⚠️ **Use her own spelling and her own framing.** Her site uses "Deafblind"/"DeafBlind" (the book
-  title is *Deafblind*). And do not flatten her into "accessibility is the law" — she deliberately
+  title is *Deafblind*). And do not flatten her into "accessibility is the law", she deliberately
   argues past compliance and into innovation. Flattening her is the specific failure mode here.
 - 📌 Quote her from **habengirma.com** and long-form interviews, with attribution. She is a living
   lawyer who has litigated over exactly this kind of thing. Get it right.
 
-## BAM's angle (SheClockedIn Ep 53 — keep this)
+## BAM's angle (SheClockedIn Ep 53, keep this)
 
 > "Accessibility isn't a bonus feature. It's the baseline."`,
   },
@@ -1211,15 +1211,15 @@ https://en.wikipedia.org/wiki/Hannah_Storm
 
 **Who she is.** Notre Dame '83 (communications and political science). First woman to host *CNN
 Sports Tonight* (1989). At NBC from roughly 1992 to 2002 she became the first woman in American
-television to **solo-host a broadcast network's national sports series** — NBC's MLB coverage,
-including three World Series — plus the NBA on NBC and four Olympics. On **June 21, 1997** she
+television to **solo-host a broadcast network's national sports series**, NBC's MLB coverage,
+including three World Series, plus the NBA on NBC and four Olympics. On **June 21, 1997** she
 called the **WNBA's first-ever game** on play-by-play. Then CBS, then ESPN from 2008. Later did
 play-by-play for an entire NFL season on Amazon's *Thursday Night Football* with Andrea Kremer.
 Founded Brainstormin' Productions and the Hannah Storm Foundation in 2008.
 
 ## Course concept
 
-A chapter in the sports-media ensemble — and the strongest candidate to carry the **"the job is
+A chapter in the sports-media ensemble, and the strongest candidate to carry the **"the job is
 the road"** module: the working life of an itinerant broadcast contractor, and the institutional
 knowledge (venues, credentials, load-in, travel) that lives in notebooks and disappears when a
 person leaves the industry. That's BAM's own framing from the calendar and it is a genuinely
@@ -1229,16 +1229,16 @@ teachable, non-obvious idea: *knowledge capture as a professional discipline.*
 
 ## Verified vs. confirm
 
-- ✅ Notre Dame 1983, communications + political science (cite Notre Dame's own FTT page — ESPN's
-  bio omits the year and degree). Called the WNBA's first game, June 21, 1997 — **play-by-play,
+- ✅ Notre Dame 1983, communications + political science (cite Notre Dame's own FTT page, ESPN's
+  bio omits the year and degree). Called the WNBA's first game, June 21, 1997, **play-by-play,
   not studio host.** The calendar got this right.
 - ⚠️ **Word the "first" precisely.** The defensible claim, used by ESPN and by her own site, is
   "first woman in American television history to **solo host a broadcast network's sports
   series**" (NBC, MLB, mid-1990s). Say "national sports show" and someone will produce a
-  counterexample — Andrea Joyce preceded her but **co-**hosted. The load-bearing word is *solo*.
-- ✅ Still active — returned to ESPN WNBA studio coverage in 2026.
+  counterexample, Andrea Joyce preceded her but **co-**hosted. The load-bearing word is *solo*.
+- ✅ Still active, returned to ESPN WNBA studio coverage in 2026.
 
-## BAM's angle (SheClockedIn Ep 37 — keep this)
+## BAM's angle (SheClockedIn Ep 37, keep this)
 
 > "She spent decades accumulating venue knowledge — the kind that lives in notebooks and locker
 > room conversations that nobody writes down."`,
@@ -1246,7 +1246,7 @@ teachable, non-obvious idea: *knowledge capture as a professional discipline.*
   {
     key: "jacqui-oatley",
     name: "Jacqui Oatley",
-    summary: "On 21 April 2007 she commentated on Fulham v Blackburn Rovers for the BBC's Match of the Day — the first woman to commentate on the programme in its 43-year…",
+    summary: "On 21 April 2007 she commentated on Fulham v Blackburn Rovers for the BBC's Match of the Day, the first woman to commentate on the programme in its 43-year…",
     body: `https://en.wikipedia.org/wiki/Jacqui_Oatley
 https://www.foxsports.com/personalities/jacqui-oatley/bio
 https://www.yorkshirepost.co.uk/sport/football/jacqui-oatley-on-her-passion-for-football-getting-an-mbe-and-her-first-match-of-the-day-commentary-1794882
@@ -1254,7 +1254,7 @@ https://www.yorkshirepost.co.uk/sport/football/jacqui-oatley-on-her-passion-for-
 # Jacqui Oatley MBE
 
 **Who she is.** On **21 April 2007** she commentated on Fulham v Blackburn Rovers for the BBC's
-*Match of the Day* — the **first woman to commentate on the programme in its 43-year history.**
+*Match of the Day*, the **first woman to commentate on the programme in its 43-year history.**
 The reaction was ugly and public; she kept working. Two years earlier she had been the first woman
 to commentate on football for British network radio (BBC Radio 5 Live). She was appointed **MBE in
 the 2016 New Year Honours** "for services to broadcasting and diversity in sport." She now
@@ -1263,8 +1263,8 @@ commentates for TNT Sports, anchors darts for ITV, and is CBS Sports' lead NWSL 
 
 ## Course concept
 
-A chapter in the international module of the sports-media ensemble. What she uniquely teaches —
-and it's a real skill, not a sentiment — is **how to keep working while the reaction to you is
+A chapter in the international module of the sports-media ensemble. What she uniquely teaches,
+and it's a real skill, not a sentiment, is **how to keep working while the reaction to you is
 the story.** She did not answer the abuse; she out-prepared it, and then she went and got a
 second career in a second country. That's a durable professional lesson about *not litigating
 your own legitimacy*, and it's more honest and more useful than "she broke a barrier."
@@ -1275,14 +1275,14 @@ your own legitimacy*, and it's more honest and more useful than "she broke a bar
 
 - ✅ 21 April 2007, Fulham v Blackburn, BBC *Match of the Day*. ✅ 2005 BBC Radio 5 Live first.
   ✅ MBE, 2016 New Year Honours. ✅ Current work: TNT Sports, ITV (darts), CBS Sports (NWSL).
-- ⚠️ "Her own podcast" — she has hosted for The Athletic and appears on the Guardian's *Football
+- ⚠️ "Her own podcast", she has hosted for The Athletic and appears on the Guardian's *Football
   Weekly*, but confirm the exact current title before naming one.
 - ✅ Sourcing is easy and clean. She is the safest of the three international subjects.`,
   },
   {
     key: "jayne-kennedy",
     name: "Jayne Kennedy",
-    summary: "Born 1951 in Washington, D.C., raised in Ohio. Won Miss Ohio USA in 1970. From 1978 to 1980 she co-anchored CBS's The NFL Today, succeeding Phyllis George —…",
+    summary: "Born 1951 in Washington, D.C., raised in Ohio. Won Miss Ohio USA in 1970. From 1978 to 1980 she co-anchored CBS's The NFL Today, succeeding Phyllis George…",
     body: `https://nationalsportsmedia.org/news/jayne-kennedy-overton-bio
 https://andscape.com/features/jayne-kennedy-memoir-plain-jayne/
 https://www.wlrn.org/arts-culture/2025-09-10/jayne-kennedy-nfl-cbs-muhammad-ali
@@ -1291,18 +1291,18 @@ https://en.wikipedia.org/wiki/Jayne_Kennedy
 # Jayne Kennedy
 
 **Who she is.** Born 1951 in Washington, D.C., raised in Ohio. Won Miss Ohio USA in 1970.
-From 1978 to 1980 she co-anchored CBS's *The NFL Today*, succeeding Phyllis George — the first
+From 1978 to 1980 she co-anchored CBS's *The NFL Today*, succeeding Phyllis George, the first
 Black woman to co-anchor a national network sports show. She got there on a six-week trial
 contract and made it permanent by landing an exclusive Muhammad Ali interview after the
-Ali–Spinks rematch two weeks in. She was also the only woman to host the syndicated *Greatest
+Ali-Spinks rematch two weeks in. She was also the only woman to host the syndicated *Greatest
 Sports Legends*, and did ringside color for men's pro boxing. Received the NSMA Roone Arledge
 Award for Innovation in 2022. Published a memoir, *Plain Jayne* (Andscape Books), in September
-2025 — that book is now the best primary source on her that exists.
+2025, that book is now the best primary source on her that exists.
 
 ## Course concept
 
 She is a **chapter, not a course**. There isn't a transferable *method* in her career the way
-there is with Duckworth or Hobson — what she has is a canonical origin story. Her real
+there is with Duckworth or Hobson, what she has is a canonical origin story. Her real
 teachable content is the *access* story: how the first person into a closed room actually gets
 in (a trial contract and one interview nobody else could get), and what she did with the room
 once she was in it. That belongs inside a multi-subject sports-media course.
@@ -1311,9 +1311,9 @@ once she was in it. That belongs inside a multi-subject sports-media course.
 
 ## Verified vs. confirm
 
-- ✅ Miss Ohio USA 1970; CBS *The NFL Today* 1978–80; the Ali interview; NSMA Roone Arledge
+- ✅ Miss Ohio USA 1970; CBS *The NFL Today* 1978-80; the Ali interview; NSMA Roone Arledge
   Award 2022; *Plain Jayne* memoir (Sept 2025).
-- ⚠️ **Say "first Black woman to co-anchor a national network sports show" — not "first woman."**
+- ⚠️ **Say "first Black woman to co-anchor a national network sports show", not "first woman."**
   Phyllis George preceded her on that desk.
 - ❌ **The calendar's "Emmy for the Rose Bowl Parade, 1977" is wrong.** 1977 predates her CBS
   hire. Her own bio and the NSMA say the Emmy was for **Rose Parade coverage in the early
@@ -1326,7 +1326,7 @@ once she was in it. That belongs inside a multi-subject sports-media course.
 - 🔴 **She is the hardest subject in this whole set to source.** The web is full of SEO junk bios
   that garble her Emmy. If she's central to a course, someone has to read *Plain Jayne*.
 
-## BAM's angle (SheClockedIn Ep 35 — keep this)
+## BAM's angle (SheClockedIn Ep 35, keep this)
 
 > "She didn't just take the job. She held the door open after she walked through."
 
@@ -1335,7 +1335,7 @@ That's the thesis of the whole sports-media course, and it's his.`,
   {
     key: "jennifer-king",
     name: "Jennifer King",
-    summary: "Guilford College (2002–06), then a decade playing quarterback and receiver in the Women's Football Alliance — Carolina Phoenix, New York Sharks, DC Divas.…",
+    summary: "Guilford College (2002-06), then a decade playing quarterback and receiver in the Women's Football Alliance, Carolina Phoenix, New York Sharks, DC Divas.…",
     body: `https://nccueaglepride.com/staff-directory/jennifer-king/503
 https://andscape.com/features/jennifer-king-first-made-history-in-the-nfl-then-made-more-at-north-carolina-central/
 https://www.chicagobears.com/news/jennifer-king-makes-history-as-bears-first-female-coach
@@ -1343,37 +1343,37 @@ https://en.wikipedia.org/wiki/Jennifer_King_(American_football)
 
 # Jennifer King
 
-**Who she is.** Guilford College (2002–06), then a decade playing quarterback and receiver in the
-Women's Football Alliance — Carolina Phoenix, New York Sharks, DC Divas. She won a USCAA national
+**Who she is.** Guilford College (2002-06), then a decade playing quarterback and receiver in the
+Women's Football Alliance, Carolina Phoenix, New York Sharks, DC Divas. She won a USCAA national
 title as a women's college basketball head coach at Johnson & Wales in 2018. Coaching internships
-with the Carolina Panthers (2018–19) and the AAF, an offensive assistant job at Dartmouth, then a
+with the Carolina Panthers (2018-19) and the AAF, an offensive assistant job at Dartmouth, then a
 2020 internship with Washington that became, in **January 2021**, an **assistant running backs
-coach** job — making her **the first Black woman to be a full-time NFL coach.** She was in
-Washington 2021–23, spent 2024 as an offensive assistant with the Chicago Bears, and since **2025
+coach** job, making her **the first Black woman to be a full-time NFL coach.** She was in
+Washington 2021-23, spent 2024 as an offensive assistant with the Chicago Bears, and since **2025
 has been an offensive analyst at North Carolina Central**, an HBCU.
 
 ## Course concept
 
 A chapter in the **"breaking into a closed profession"** course, alongside Chaka and Smith. What
-she uniquely teaches is the **ladder itself** — and it's a strange, non-obvious ladder: women's
+she uniquely teaches is the **ladder itself**, and it's a strange, non-obvious ladder: women's
 semi-pro football, a college basketball head-coaching job, an internship, another internship,
 another internship, then a full-time NFL role at thirty-six. Most people looking at "first Black
 woman full-time NFL coach" imagine a straight line. There wasn't one.
 
-The transferable skill: **how to build a credential stack in a field with no defined entry path**
-— take the adjacent job, take the unpaid job, take the job in the smaller league, and keep the
+The transferable skill: **how to build a credential stack in a field with no defined entry path**,
+take the adjacent job, take the unpaid job, take the job in the smaller league, and keep the
 résumé pointing in one direction.
 
 **Proposed title (as a module lesson):** *The Non-Linear Résumé*
 
 ## Verified vs. confirm
 
-- ❌ **"Currently with the Carolina Panthers" is wrong on two counts.** Carolina was a **2018–19
+- ❌ **"Currently with the Carolina Panthers" is wrong on two counts.** Carolina was a **2018-19
   internship**, years *before* Washington. She is **not** there now.
-- ❌ **She is not with the Chicago Bears either** — that was 2024 only; she was not retained.
+- ❌ **She is not with the Chicago Bears either**, that was 2024 only; she was not retained.
 - ✅ **Current (2025 →): offensive analyst, North Carolina Central Eagles** (MEAC, HBCU), working
   with wide receivers. Reported as the only Black woman analyst at a Division I HBCU. Verify
-  against NCCU's staff directory before publishing — this is the kind of fact that moves.
+  against NCCU's staff directory before publishing, this is the kind of fact that moves.
 - ✅ First Black woman full-time NFL coach, Washington, January 2021.`,
   },
   {
@@ -1388,19 +1388,19 @@ https://en.wikipedia.org/wiki/Maia_Chaka
 # Maia Chaka
 
 **Who she is.** Norfolk State (HBCU) graduate, 2006. Taught health and PE at Renaissance Academy
-in Virginia Beach for about fifteen years while officiating football on the side — high school,
+in Virginia Beach for about fifteen years while officiating football on the side, high school,
 then the Pac-12 (regular-season games from 2018), then the XFL. She entered the **NFL Officiating
 Development Program in 2014**. In **March 2021** the NFL hired her, and on **September 12, 2021**
-she worked Jets–Panthers: **the first Black woman to officiate an NFL game.** She worked three
+she worked Jets-Panthers: **the first Black woman to officiate an NFL game.** She worked three
 seasons, **2021 through 2023**, and did not return for 2024.
 
 ## Course concept
 
 She belongs in a **"breaking into a closed profession"** course with Jennifer King and Bianca
-Smith — and she is the one who makes that course honest, because her story does not end in
+Smith, and she is the one who makes that course honest, because her story does not end in
 triumph. She got in through a **pipeline program that was deliberately built** (the NFL's
 Officiating Development Program, seven years of it), she did the job at the highest level for
-three seasons, and then she was out — and nobody has publicly said why.
+three seasons, and then she was out, and nobody has publicly said why.
 
 That is the real shape of breaking into a closed field, and a course that only shows the hiring
 press release is lying to its students. The transferable content: **how pipeline programs
@@ -1411,18 +1411,18 @@ actually work, how long they take, what the qualification ladder looks like (hig
 
 ## Verified vs. confirm
 
-- ❌ **She was a LINE JUDGE, not a "referee."** "Referee" is a specific on-field role — the white
-  hat, the crew chief — and she never held it. The calendar (and a lot of headlines, including
+- ❌ **She was a LINE JUDGE, not a "referee."** "Referee" is a specific on-field role, the white
+  hat, the crew chief, and she never held it. The calendar (and a lot of headlines, including
   major outlets) says referee. The NFL's own release says **official**. Say "on-field official" or
   "line judge."
 - ❌ **"She is a middle school teacher" is stale.** She moved to a Student Success Coordinator role
   at An Achievable Dream Academy in 2021. She has not been a classroom teacher since.
-- ❌ **She is no longer in the NFL.** Three seasons, 2021–23; not back for 2024. Football Zebras
+- ❌ **She is no longer in the NFL.** Three seasons, 2021-23; not back for 2024. Football Zebras
   reports no public word on whether the separation was voluntary. **This is the biggest stale fact
-  in BAM's draft — and it also happens to be the most interesting one.**
+  in BAM's draft, and it also happens to be the most interesting one.**
 - ✅ Norfolk State 2006; NFL Officiating Development Program from 2014; first game Sept 12, 2021.
 
-## BAM's angle (SheClockedIn Ep 41 — keep this, it survives the correction)
+## BAM's angle (SheClockedIn Ep 41, keep this, it survives the correction)
 
 > "The program she came through exists because someone created access where there was none."`,
   },
@@ -1438,18 +1438,18 @@ https://kinolorber.com/press/kino-lorber-acquires-u-s-rights-to-shoshannah-stern
 # Marlee Matlin
 
 **Who she is.** Deaf since eighteen months old. At **twenty-one**, in her **film debut**, she won
-the **Academy Award for Best Actress** for *Children of a Lesser God* (59th Oscars, March 1987) —
+the **Academy Award for Best Actress** for *Children of a Lesser God* (59th Oscars, March 1987),
 still the **youngest Best Actress winner in Academy history**, and the **first deaf performer to
 win an acting Oscar**. Nearly forty years of continuous work since, as an openly Deaf performer.
 Played Jackie Rossi in ***CODA*** (2021), which won Best Picture. She testified before the Senate
-and campaigned for closed captioning — work associated with the **Television Decoder Circuitry Act
+and campaigned for closed captioning, work associated with the **Television Decoder Circuitry Act
 of 1990**, which is why your TV has captions. A 2025 documentary about her, *Marlee Matlin: Not
 Alone Anymore*, was directed by Shoshannah Stern (herself deaf) and aired on PBS *American Masters*.
 
 ## Course concept
 
 A chapter in the accessibility course, and specifically the one about **captioning and access as
-infrastructure** — the Decoder Circuitry Act is the single best example available of an
+infrastructure**, the Decoder Circuitry Act is the single best example available of an
 accessibility mandate that quietly became universally useful (captions are now used by a large
 majority of people who aren't deaf). That's a real lesson about how access design works.
 
@@ -1461,24 +1461,24 @@ and a course about her would be a course about an Oscar.
 ## Verified vs. confirm
 
 - ❌ **"The only deaf performer to ever win the award" is FALSE, and it's the single worst error
-  in the calendar.** **Troy Kotsur won Best Supporting Actor for *CODA* in March 2022** — the same
+  in the calendar.** **Troy Kotsur won Best Supporting Actor for *CODA* in March 2022**, the same
   film Matlin was in. Publishing "only deaf performer to ever win" in a disability-focused course
   would be factually wrong *and* would erase a deaf actor. Correct framings:
-  - "the **first** deaf performer to win an Academy Award — and for thirty-five years the only
+  - "the **first** deaf performer to win an Academy Award, and for thirty-five years the only
     one, until her *CODA* co-star Troy Kotsur won in 2022," or
   - "the only deaf performer to win a **lead** acting Oscar."
-- ✅ **Youngest Best Actress winner** — verified, and **still true** as of the 98th Academy Awards
+- ✅ **Youngest Best Actress winner**, verified, and **still true** as of the 98th Academy Awards
   (March 2026). No one younger than 21 has won the category since 1987.
 - ✅ *Children of a Lesser God* (film 1986, award March 1987), age 21, film debut.
 - ✅ *Marlee Matlin: Not Alone Anymore* (2025) — Sundance premiere Jan 2025, PBS *American Masters*
-  October 2025. This is a strong, current, licensable-adjacent teaching artifact — see rights note
+  October 2025. This is a strong, current, licensable-adjacent teaching artifact, see rights note
   in the proposal doc.`,
   },
   {
     key: "mary-bassett",
     name: "Mary Bassett",
-    summary: "Physician and public-health scholar. Spent about seventeen years in Zimbabwe on the medical faculty at the University of Zimbabwe — that's the part everyone…",
-    body: `https://doi.org/10.1056/NEJMp1500529   (Bassett, 2015 — #BlackLivesMatter, NEJM)
+    summary: "Physician and public-health scholar. Spent about seventeen years in Zimbabwe on the medical faculty at the University of Zimbabwe, that's the part everyone…",
+    body: `https://doi.org/10.1056/NEJMp1500529   (Bassett, 2015, #BlackLivesMatter, NEJM)
 https://hsph.harvard.edu/news/mary-bassett-racism-public-health/
 https://www.publichealth.columbia.edu/news/mary-bassett-we-must-name-racism-cause-poor-health
 https://en.wikipedia.org/wiki/Mary_T._Bassett
@@ -1486,13 +1486,13 @@ https://en.wikipedia.org/wiki/Mary_T._Bassett
 # Dr. Mary T. Bassett
 
 **Who she is.** Physician and public-health scholar. Spent about seventeen years in **Zimbabwe** on
-the medical faculty at the University of Zimbabwe — that's the part everyone omits and it's the
-foundation of everything else. **New York City Health Commissioner, January 2014 – August 2018.**
-**New York State Health Commissioner, December 2021 – December 2022.** Director of Harvard's FXB
+the medical faculty at the University of Zimbabwe, that's the part everyone omits and it's the
+foundation of everything else. **New York City Health Commissioner, January 2014, August 2018.**
+**New York State Health Commissioner, December 2021, December 2022.** Director of Harvard's FXB
 Center for Health and Human Rights from 2018; **removed from that role effective January 9, 2026**
 (see below). She remains **Professor of the Practice** at the Harvard T.H. Chan School.
 
-Her actual, published, single-authored argument — this is the one to build on:
+Her actual, published, single-authored argument, this is the one to build on:
 
 > Bassett, M. T. (2015). #BlackLivesMatter — A challenge to the medical and public health
 > communities. *New England Journal of Medicine, 372*(12), 1085–1087.
@@ -1504,7 +1504,7 @@ In it she documents that over the preceding decade **only 14 NEJM articles conta
 
 Honest read: **she does not fit this course family, and I'd hold her.**
 
-Her work is superb and teachable — structural determinants of health, why "personal responsibility"
+Her work is superb and teachable, structural determinants of health, why "personal responsibility"
 framings fail, what a health department can and cannot do. But it belongs in a **health-equity
 course**, which is a CentenarianOS/health-vertical product, not a "women who built the work" /
 labor / sports-media product. Shoehorning her in to bridge to the Nomad Longevity Protocol is the
@@ -1525,18 +1525,18 @@ as a Health Diagnosis*
   (Forbes named it the #1 healthcare quote of 2013 and attributed it to him: *"When it comes to
   health, your zip code matters more than your genetic code"*) and with **Dr. Risa
   Lavizzo-Mourey** of RWJF. **Putting it in Bassett's mouth would be a fabricated quote about a
-  living person.** Attribute it to Iton, or present it unattributed as a commonplace — and note the
+  living person.** Attribute it to Iton, or present it unattributed as a commonplace, and note the
   origin is contested.
-- ❌ **"Director of the Harvard FXB Center" is now WRONG — and it's a live political minefield.** On
+- ❌ **"Director of the Harvard FXB Center" is now WRONG, and it's a live political minefield.** On
   December 9, 2025 she was asked to resign as FXB director, effective **January 9, 2026**; the
   dean said the centre would "pivot." The removal followed an April 2025 Harvard antisemitism task
   force report criticizing the FXB Center's Palestine Program, and **400+ Harvard affiliates
   petitioned for her reinstatement**, calling the removal politically motivated. **Safe, accurate,
   neutral phrasing: "Professor of the Practice of Health and Human Rights at the Harvard T.H. Chan
-  School of Public Health; former director of the FXB Center (2018–2026)."**
-- ⚠️ **The calendar omits her New York STATE commissionership entirely** (Dec 2021 – Dec 2022, under
-  Gov. Hochul). It's real — add it. But note it was ~13 months, not "2021–2023."
-- ✅ Verified quotes in her own voice exist and are far better than the fabricated one — e.g. her
+  School of Public Health; former director of the FXB Center (2018-2026)."**
+- ⚠️ **The calendar omits her New York STATE commissionership entirely** (Dec 2021, Dec 2022, under
+  Gov. Hochul). It's real, add it. But note it was ~13 months, not "2021-2023."
+- ✅ Verified quotes in her own voice exist and are far better than the fabricated one, e.g. her
   2016 Calderone Prize speech urging colleagues to *"explicitly and unapologetically name racism in
   our work to protect and promote health."* Confirm exact wording against the source before
   printing.`,
@@ -1544,16 +1544,16 @@ as a Health Diagnosis*
   {
     key: "mellody-hobson",
     name: "Mellody Hobson",
-    summary: "Co-CEO and President of Ariel Investments (with founder John W. Rogers, Jr.) — one of the largest Black-owned asset managers in the United States. She…",
+    summary: "Co-CEO and President of Ariel Investments (with founder John W. Rogers, Jr.), one of the largest Black-owned asset managers in the United States. She…",
     body: `https://www.arielinvestments.com/person/mellody-hobson/
 https://www.ted.com/talks/mellody_hobson_color_blind_or_color_brave
 https://en.wikipedia.org/wiki/Mellody_Hobson
 
 # Mellody Hobson
 
-**Who she is.** **Co-CEO and President of Ariel Investments** (with founder John W. Rogers, Jr.) —
+**Who she is.** **Co-CEO and President of Ariel Investments** (with founder John W. Rogers, Jr.),
 one of the largest Black-owned asset managers in the United States. She joined in 1991 and became
-President in 2000. She was the **first Black woman to chair an S&P 500 company** (Starbucks) —
+President in 2000. She was the **first Black woman to chair an S&P 500 company** (Starbucks),
 **though she stepped down as chair in September 2024** and is now lead independent director. She's
 a co-owner (limited partner) of the **Denver Broncos** via the Walton-Penner group that bought the
 team in 2022 for $4.65 billion. Her 2014 TED talk, **"Color Blind or Color Brave?"**, has been
@@ -1562,7 +1562,7 @@ the only way through is to be *color brave* rather than color blind.
 
 ## Course concept
 
-**She can carry a full course** — on **capital**: what it is, who has it, how it compounds, and why
+**She can carry a full course**, on **capital**: what it is, who has it, how it compounds, and why
 financial literacy is not a personal-virtue story but an infrastructure story. For BVC's audience
 of contractors and freelancers with income scattered across five to ten clients, some 1099, some
 union, this is arguably the **most immediately monetizable** course in the whole set. Nobody
@@ -1571,13 +1571,13 @@ teaches a freelancer how to read their own year.
 **But there's a real problem BAM needs to know about, and I'm not going to paper over it:**
 
 The financial-literacy angle is the one place where **I could not find her own well-sourced words.**
-She is *widely associated* with financial-literacy advocacy — Ariel's work, the Ariel-Schwab Black
-Investor Survey, her old ABC/*Good Morning America* segments — but I could not verify a specific,
+She is *widely associated* with financial-literacy advocacy, Ariel's work, the Ariel-Schwab Black
+Investor Survey, her old ABC/*Good Morning America* segments, but I could not verify a specific,
 quotable, primary-source position on financial literacy in this pass. Where her words are abundant
 and rock-solid is **racial candor in business and hiring** (the "color brave" material).
 
 So BAM has a choice:
-- **(a)** Build the course on **"color brave"** — the material where her voice is verifiable —
+- **(a)** Build the course on **"color brave"**, the material where her voice is verifiable,
   and let the capital/literacy content be taught in her orbit but not put in her mouth; or
 - **(b)** Commission a proper dig through Ariel's shareholder letters and the Black Investor Survey
   to find her actual documented positions on financial literacy. That's where they'll be, if
@@ -1591,32 +1591,32 @@ the single most dangerous fabrication available in this entire project.
 
 ## Verified vs. confirm
 
-- ✅ **Co-CEO** of Ariel — **not** sole CEO. Also President, and chairman of the Ariel Investment
+- ✅ **Co-CEO** of Ariel, **not** sole CEO. Also President, and chairman of the Ariel Investment
   Trust board.
 - ❌ **She is NOT the Starbucks board chair.** She **stepped down as chair effective September 9,
   2024** when Brian Niccol took the role; she is now **lead independent director**. Ariel's own bio
   calls her "former chair." **Note: denverbroncos.com's page for her is STALE and still says she
   "currently serves as Chair of the Board of Starbucks."** Official pages are not automatically
-  current — that's a lesson in itself.
+  current, that's a lesson in itself.
 - ⚠️ Sources disagree on whether she became Starbucks chair in **2020** or **2021**. Check a
   Starbucks proxy statement before printing a year.
 - ✅ Denver Broncos: **co-owner / limited partner** (more precise: limited partner) in the
   Walton-Penner group. She is not the majority owner. Fellow LPs include Condoleezza Rice.
-- ⚠️ TED view count changes — say "over five million" rather than a number.
+- ⚠️ TED view count changes, say "over five million" rather than a number.
 
-## BAM's angle (SheClockedIn Ep 60 — keep this)
+## BAM's angle (SheClockedIn Ep 60, keep this)
 
 > "Most people with money problems don't have income problems; they have visibility problems. They
 > don't know where their money is or where it went."
 
-⚠️ Careful — **in the calendar this reads as if it's her argument, and I could not source it to
+⚠️ Careful, **in the calendar this reads as if it's her argument, and I could not source it to
 her.** The *idea* is sound and it's a good course thesis. Present it as **BAM's** framing, not as
 Hobson's, unless and until someone finds her actually saying it.`,
   },
   {
     key: "meredith-stiehm",
     name: "Meredith Stiehm",
-    summary: "Screenwriter and showrunner — creator of Cold Case (CBS, 2003–2010), co-creator of The Bridge (FX), writer/EP on Homeland, earlier a writer on NYPD Blue and…",
+    summary: "Screenwriter and showrunner, creator of Cold Case (CBS, 2003-2010), co-creator of The Bridge (FX), writer/EP on Homeland, earlier a writer on NYPD Blue and…",
     body: `https://www.wga.org/the-guild/about-us/history/past-presidents/meredith-stiehm
 https://deadline.com/2023/09/meredith-stiehm-reelected-wga-west-president-1235550447/
 https://en.wikipedia.org/wiki/2023_Writers_Guild_of_America_strike
@@ -1624,17 +1624,17 @@ https://en.wikipedia.org/wiki/Meredith_Stiehm
 
 # Meredith Stiehm
 
-**Who she is.** Screenwriter and showrunner — **creator of *Cold Case*** (CBS, 2003–2010),
+**Who she is.** Screenwriter and showrunner, **creator of *Cold Case*** (CBS, 2003-2010),
 co-creator of ***The Bridge*** (FX), writer/EP on ***Homeland***, earlier a writer on *NYPD Blue*
 and *ER*. Elected **President of the Writers Guild of America West in September 2021**, re-elected
 in 2023, and **termed out in September 2025** (succeeded by Michele Mulroney). She led the WGAW
-through the **148-day 2023 strike** (May 2 – September 27), which produced the biggest gains for
+through the **148-day 2023 strike** (May 2, September 27), which produced the biggest gains for
 writers in decades: AI protections, mini-room staffing minimums, and streaming residual
 transparency.
 
 ## Course concept
 
-She is a **chapter, not a course** — and she pairs so tightly with Fran Drescher that separating
+She is a **chapter, not a course**, and she pairs so tightly with Fran Drescher that separating
 them would be artificial. Together they are the 2023 dual strike. Where Drescher carries the
 *likeness/consent* thread, Stiehm carries the **structural** one: what happens to a profession when
 the employer restructures the work itself (mini-rooms, shortened orders, opaque streaming data) so
@@ -1648,16 +1648,16 @@ lesson of its own inside the labor course.
 
 ## Verified vs. confirm
 
-- ❌ **She is NOT the current WGAW president.** She served **2021–2025** and was termed out.
+- ❌ **She is NOT the current WGAW president.** She served **2021-2025** and was termed out.
 - ❌ ***Bosch* is not her credit.** It appears in some drafts; drop it. Her credits are *Cold Case*
-  (creator), *The Bridge* (co-creator), *Homeland* (writer/EP — **not** creator; Homeland was
+  (creator), *The Bridge* (co-creator), *Homeland* (writer/EP, **not** creator; Homeland was
   developed by Howard Gordon and Alex Gansa), plus *NYPD Blue* and *ER*.
 - ✅ **148 days** for the WGA strike, tied with 1960 as the guild's second-longest, behind 1988
   (153 days). Do not swap it with SAG-AFTRA's 118.
-- ✅ The 2023 MBA's AI provisions are public and readable. That's the teachable artifact — use the
+- ✅ The 2023 MBA's AI provisions are public and readable. That's the teachable artifact, use the
   document, not the anecdote.
 
-## BAM's angle (SheClockedIn Ep 52 — keep this)
+## BAM's angle (SheClockedIn Ep 52, keep this)
 
 > "Meredith Stiehm spent 148 days on the picket line so that what's in your agreement is worth
 > understanding."`,
@@ -1665,7 +1665,7 @@ lesson of its own inside the labor course.
   {
     key: "pam-oliver",
     name: "Pam Oliver",
-    summary: "Florida A&M — AIAW All-American in the 400m, part of FAMU's first women's national championship team. Local news in Georgia, then ESPN, then FOX Sports from…",
+    summary: "Florida A&M, AIAW All-American in the 400m, part of FAMU's first women's national championship team. Local news in Georgia, then ESPN, then FOX Sports from…",
     body: `https://www.foxsports.com/presspass/bios/on-air/pam-oliver
 https://www.sportsbroadcastinghalloffame.org/inductees/pam-oliver/
 https://andscape.com/features/pam-oliver-of-fox-sports-has-been-holding-it-down-for-30-years/
@@ -1673,18 +1673,18 @@ https://en.wikipedia.org/wiki/Pam_Oliver
 
 # Pam Oliver
 
-**Who she is.** Florida A&M — AIAW All-American in the 400m, part of FAMU's first women's national
+**Who she is.** Florida A&M, AIAW All-American in the 400m, part of FAMU's first women's national
 championship team. Local news in Georgia, then ESPN, then **FOX Sports from 1995**, starting on
 the network's number-one NFL crew alongside Pat Summerall and John Madden. Thirty years later she
 is **still working NFL sidelines** (through the 2025 season), and FOX bills her as the
 longest-tenured NFL sideline reporter in the business, 500-plus games. Gracie Award (2018), WISE
-Woman of the Year (2008), AWSM Mary Garber Pioneer Award, NABJ Hall of Fame (2020), and — new —
+Woman of the Year (2008), AWSM Mary Garber Pioneer Award, NABJ Hall of Fame (2020), and new,
 **Sports Broadcasting Hall of Fame, inducted December 2025.**
 
 ## Course concept
 
 A chapter, in the same module as Hannah Storm: the road. Thirty NFL Sundays a year in thirty
-different buildings is the purest version of the itinerant-contractor problem — the parking, the
+different buildings is the purest version of the itinerant-contractor problem, the parking, the
 credential, the load-in, the mileage, the deductible. The teachable skill is **treating road
 knowledge and road cost as tracked, ownable assets** rather than as friction you absorb.
 
@@ -1703,7 +1703,7 @@ misses it. That's worth its own lesson.
   it is a live subject's career grievance. Either research it properly or leave it alone. Do not
   gesture at it vaguely.
 
-## BAM's angle (SheClockedIn Ep 40 — keep this)
+## BAM's angle (SheClockedIn Ep 40, keep this)
 
 > "Pam Oliver knows every tunnel at every NFL stadium... That knowledge has dollar value — but only
 > if someone records it."`,
@@ -1732,7 +1732,7 @@ interviews in Spanish and French. Covering the 2026 Milan-Cortina Winter Olympic
 
 ## Course concept
 
-A chapter in the international module — and the one that carries the **multi-market freelancer**
+A chapter in the international module, and the one that carries the **multi-market freelancer**
 lesson: working in several languages, across several employers, in several countries, with
 different currencies and contract structures. That's not a diversity talking point, it's an
 operational skill set, and almost nobody teaches it.
@@ -1742,19 +1742,19 @@ operational skill set, and almost nobody teaches it.
 ## Verified vs. confirm
 
 - ❌ **The name.** Chowdhury, not Chaudhary. See above.
-- ⚠️ **The calendar says Al Jazeera. Likely wrong.** Wikipedia lists **beIN Sports** — which was
+- ⚠️ **The calendar says Al Jazeera. Likely wrong.** Wikipedia lists **beIN Sports**, which was
   spun out of Al Jazeera Sport, which is almost certainly the source of the confusion. Verify
   before printing either.
 - ⚠️ **No clean, sourceable "first" exists for her.** She is not documented as e.g. "the first
   British Asian woman to..." anything. If a course needs a headline, use the verifiable
-  distinctions — the Champions League draw run and the FIFA Awards hosting — not an invented first.
+  distinctions, the Champions League draw run and the FIFA Awards hosting, not an invented first.
 - ⚠️ Much of the UK coverage of her is tabloid. Stick to Wikipedia, TNT/FourFourTwo line-ups, and
   her own LinkedIn/X.`,
   },
   {
     key: "robin-roberts",
     name: "Robin Roberts",
-    summary: "Southeastern Louisiana University, cum laude 1983 — and one of only three women in school history with 1,000 career points and 1,000 rebounds. Local sports…",
+    summary: "Southeastern Louisiana University, cum laude 1983, and one of only three women in school history with 1,000 career points and 1,000 rebounds. Local sports…",
     body: `https://abcnews.com/GMA/robin-roberts-biography/story?id=128237
 https://www.sportsbroadcastinghalloffame.org/inductees/robin-roberts/
 https://mississippiencyclopedia.org/entries/robin-roberts/
@@ -1762,19 +1762,19 @@ https://en.wikipedia.org/wiki/Robin_Roberts_(newscaster)
 
 # Robin Roberts
 
-**Who she is.** Southeastern Louisiana University, cum laude 1983 — and one of only three women
+**Who she is.** Southeastern Louisiana University, cum laude 1983, and one of only three women
 in school history with 1,000 career points and 1,000 rebounds. Local sports radio and TV in
 Mississippi, Tennessee and Georgia, then **ESPN from 1990 to 2005**: *SportsCenter* anchor, first
 woman to co-host *NFL PrimeTime*. Disney describes her as the first Black woman sports journalist
 at ESPN. Moved to *Good Morning America* as full-time co-anchor in 2005 and is **still
-co-anchoring it in 2026** — a forty-plus-year on-air career. Peabody (2012), Women's Basketball
+co-anchoring it in 2026**, a forty-plus-year on-air career. Peabody (2012), Women's Basketball
 Hall of Fame (2012), Arthur Ashe Courage Award (2013), Disney Legend (2019). She went through
 breast cancer (2007) and MDS (2012) in public, on air.
 
 ## Course concept
 
 Honest read: **thin as a standalone course, essential as a chapter.** Her career doesn't hand you
-a method — it hands you a *shape*: a broadcast career is not one job, it's a portfolio of hundreds
+a method, it hands you a *shape*: a broadcast career is not one job, it's a portfolio of hundreds
 of assignments across decades and employers, and the people who last are the ones who manage it
 like a portfolio. That's a real lesson for a contractor and it's BAM's angle from the calendar.
 The illness chapters are moving but they are not a teachable professional skill, and a course
@@ -1784,13 +1784,13 @@ that leans on them tips into hagiography.
 
 ## Verified vs. confirm
 
-- ✅ SLU 1983; ESPN 1990–2005; GMA 2005–present; the awards above.
-- ⚠️ "First female African American sports journalist at ESPN" is a **Disney/D23** claim — i.e.
+- ✅ SLU 1983; ESPN 1990-2005; GMA 2005-present; the awards above.
+- ⚠️ "First female African American sports journalist at ESPN" is a **Disney/D23** claim, i.e.
   her own employer. Fine to use, but attribute it rather than stating it flat.
 - ⚠️ The calendar's catchphrase quote ("Go on with your bad self") is widely attributed to her; I
   did not verify a primary source for it. Low stakes, but don't build a lesson on it.
 
-## BAM's angle (SheClockedIn Ep 39 — keep this)
+## BAM's angle (SheClockedIn Ep 39, keep this)
 
 > "She didn't have one job at ESPN. She had hundreds of assignments, every one demanding different
 > prep, different travel, different clients."`,
@@ -1807,8 +1807,8 @@ https://en.wikipedia.org/wiki/Sage_Steele
 # Sage Steele
 
 **Who she is.** Indiana University, B.S. in Sport Communication, 1995; grew up partly in Carmel,
-Indiana. Local TV in South Bend, Indianapolis, Tampa and Baltimore. **ESPN from 2007 to 2023** —
-*SportsCenter* anchor, host of *NBA Countdown* (2013–17), *SportsCenter on the Road*. In 2021 she
+Indiana. Local TV in South Bend, Indianapolis, Tampa and Baltimore. **ESPN from 2007 to 2023**,
+*SportsCenter* anchor, host of *NBA Countdown* (2013-17), *SportsCenter on the Road*. In 2021 she
 made podcast comments criticizing Disney's COVID-19 vaccine mandate and questioning Barack Obama's
 racial self-identification; ESPN pulled her from assignments. In **April 2023 she sued ESPN and
 Disney**, alleging retaliation and breach of contract. In **August 2023** she announced she had
@@ -1820,7 +1820,7 @@ University Board of Trustees** by Governor Mike Braun.
 
 **My honest recommendation: cut her, or use her only as a one-lesson case study with a very tight
 frame.** She is in the calendar as an Indiana-pipeline story, and the Indiana pipeline is a
-legitimate and useful angle — but she is now primarily a **political figure**, and the thing she
+legitimate and useful angle, but she is now primarily a **political figure**, and the thing she
 is famous for is a First Amendment / employment-speech fight, not a broadcasting method. Putting
 her in a course about women who built the work means either (a) teaching the lawsuit, which drags
 BVC into a partisan argument it gains nothing from, or (b) not teaching the lawsuit, which reads
@@ -1829,7 +1829,7 @@ as evasive to anyone who knows the story. Neither is good.
 If the Indiana-pipeline lesson matters to BAM, **Hannah Storm (Notre Dame) already carries it**,
 and IU's media school has other alumni. If BAM wants her in anyway, the only defensible frame is
 a media-literacy lesson: *what happens when a contractor's off-hours speech collides with an
-employer's conduct policy* — which is genuinely teachable, genuinely relevant to freelancers, and
+employer's conduct policy*, which is genuinely teachable, genuinely relevant to freelancers, and
 can be taught without endorsing or attacking her views.
 
 **Proposed title (only if used, as a single lesson):** *Your Contract and Your Mouth: Off-Duty
@@ -1837,7 +1837,7 @@ Speech and the Freelancer*
 
 ## Verified vs. confirm
 
-- ✅ IU 1995; ESPN 2007–2023; the 2023 suit and settlement; IU Board of Trustees, June 2025.
+- ✅ IU 1995; ESPN 2007-2023; the 2023 suit and settlement; IU Board of Trustees, June 2025.
 - ❌ **Do not write "ESPN fired her."** Do not write "she won her lawsuit." The accurate phrasing
   is: *settled, then mutually parted ways; terms undisclosed.* Getting this wrong about a living
   person who has already sued a media company over how she was treated is the worst possible
@@ -1861,7 +1861,7 @@ of the **Association of Flight Attendants-CWA** in June 2014, and has been re-el
 **January 20, 2019**, thirty days into the federal government shutdown, she stood up at an AFL-CIO
 dinner and **called for a general strike.** Five days later, after air traffic controller
 sick-outs began disrupting flights, the 35-day shutdown ended. It is the most consequential
-strike threat in recent American labor history, and it was never actually executed — which is
+strike threat in recent American labor history, and it was never actually executed, which is
 precisely what makes it teachable.
 
 ## Course concept
@@ -1872,7 +1872,7 @@ in a system where your group's refusal to work stops everything, and then making
 legible to the other side.* Flight attendants are not powerful. Aviation safety is. She found the
 seam.
 
-That is a real, transferable skill — it applies to a freelance camera operator, a contractor, a
+That is a real, transferable skill, it applies to a freelance camera operator, a contractor, a
 small vendor, anyone negotiating from a weak nominal position. It is far more useful to a student
 than "unions are good."
 
@@ -1883,20 +1883,20 @@ None*
 
 - ✅ United flight attendant since 1996; AFA-CWA International President since June 2014;
   re-elected 2018 and 2022; the January 20, 2019 general-strike call.
-- ❌ **"Named to Time's 100 Most Influential People multiple times" — I could find NO evidence of
+- ❌ **"Named to Time's 100 Most Influential People multiple times", I could find NO evidence of
   this in any year.** Drop it unless BAM finds a primary cite. What *is* substantiable: the *New
   York Times* called her "America's most powerful flight attendant."
 - ⚠️ **Don't publish a membership number without checking.** AFA's own 2026 copy says "over
   55,000 flight attendants at 20 airlines"; older bios (and the calendar) say "nearly 50,000 at
   19 airlines." The number is actively moving as Delta and SkyWest flight attendants organize.
-  afacwa.org blocks automated fetching — someone has to look at it in a browser.
+  afacwa.org blocks automated fetching, someone has to look at it in a browser.
 - ⚠️ **Do not quote her verbatim from a secondary source.** Her most-circulated general-strike
   lines are widely paraphrased and I could not retrieve a primary transcript. The *substance* is
   solid; the exact words are not.
-- ⚠️ "Sara Nelson" is a badly ambiguous search string — there is also a Seattle city
+- ⚠️ "Sara Nelson" is a badly ambiguous search string, there is also a Seattle city
   councilmember and a book editor by that name. Always qualify with "AFA."
 
-## BAM's angle (SheClockedIn Ep 44 — keep this)
+## BAM's angle (SheClockedIn Ep 44, keep this)
 
 > "Knowing your contract is the beginning of all labor power."`,
   },
@@ -1914,7 +1914,7 @@ https://www.wrightslaw.com/blog/athlete-sues-for-right-to-compete-state-passes-a
 **Who she is.** Born 1989 in Leningrad with spina bifida; spent her first six years in Orphanage
 13, where she got around by **walking on her hands** because there was no wheelchair. Adopted at
 six by Deborah McFadden, then the US Commissioner of Disabilities, and raised in Maryland. **22
-Paralympic medals across seven Games** (Athens 2004 → Paris 2024) — the most decorated US
+Paralympic medals across seven Games** (Athens 2004 → Paris 2024), the most decorated US
 track-and-field Paralympian ever. In **2013 she won the Boston, London, Chicago and New York
 marathons in the same year**, the first person of any kind to sweep all four majors in a single
 season.
@@ -1927,37 +1927,37 @@ At **sixteen** her high school refused to let her race with her chair. She and h
 tells.** The calendar says: *she sued and won, and Maryland changed its law.* The truth is better
 and much more teachable:
 
-- **2006:** she won a **preliminary injunction** — the right to race on the track at the same time
+- **2006:** she won a **preliminary injunction**, the right to race on the track at the same time
   as non-disabled runners.
 - **2007:** she **lost** the broader claim. Judge Davis held that while the athletic association's
   point-scoring rules were unfair to her, they were **not discriminatory under the ADA**. A
   contemporaneous headline read: *"Wheelchair athlete loses court battle."*
 - **2008:** the Maryland legislature passed the **Fitness and Athletics Equity for Students with
-  Disabilities Act** — known as **"Tatyana's Law."**
+  Disabilities Act**, known as **"Tatyana's Law."**
 
 So: **she partly lost the case and then won the statute.** That is how change actually happens,
 and it's a far more useful thing to teach a student than a clean courtroom triumph. It teaches the
-real relationship between litigation, publicity and legislation — which is exactly the skill any
+real relationship between litigation, publicity and legislation, which is exactly the skill any
 person trying to change an institution needs.
 
-**Proposed title (as a module — and it could anchor the whole course):** *Lose the Case, Win the Law*
+**Proposed title (as a module, and it could anchor the whole course):** *Lose the Case, Win the Law*
 
 ## Verified vs. confirm
 
-- ✅ **22 Paralympic medals** (Team USA: 8 gold, 9 silver, 5 bronze) — **current as of the close of
+- ✅ **22 Paralympic medals** (Team USA: 8 gold, 9 silver, 5 bronze), **current as of the close of
   Paris 2024**, and still standing in July 2026. **Always publish the as-of date.**
 - ⚠️ **The medal breakdown is contested.** Team USA says 8-9-5; Wikipedia's infobox says 11-7-4.
   Both agree on 22 total. **Cite Team USA's split** (it's the official NPC) and don't publish a
-  per-Games breakdown without reading the IPC results table directly — the aggregator summaries do
+  per-Games breakdown without reading the IPC results table directly, the aggregator summaries do
   not reconcile with each other.
-- ✅ *McFadden v. Grasmick*, 485 F. Supp. 2d 642 (D. Md. 2007) — a real, citable opinion; the full
+- ✅ *McFadden v. Grasmick*, 485 F. Supp. 2d 642 (D. Md. 2007), a real, citable opinion; the full
   text is linked above. Sued the **Howard County** Board of Education, then state education
   officials. Legal basis: **Section 504** of the Rehabilitation Act and **Title II** of the ADA.
 - ✅ 2008 Maryland Fitness and Athletics Equity for Students with Disabilities Act. Confirmed on
   her Team USA profile.
 - ❌ **Don't tell it as "she sued and won."** See above. The nuance *is* the lesson.
 
-## BAM's angle (SheClockedIn Ep 56 — keep this, it gets stronger with the correction)
+## BAM's angle (SheClockedIn Ep 56, keep this, it gets stronger with the correction)
 
 > "She didn't just compete. She changed the law so others could."`,
   },

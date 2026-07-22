@@ -524,7 +524,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 3,
         explanation:
-          "Per 14 CFR 107.21, after deviating you must send a written report explaining the deviation only upon request from the Administrator. No request, no report required — the trap is thinking you must file after every emergency.",
+          "Per 14 CFR 107.21, after deviating you must send a written report explaining the deviation only upon request from the Administrator. No request, no report required, the trap is thinking you must file after every emergency.",
         sourceLessonNumber: 5,
       },
       {
@@ -649,7 +649,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Per 14 CFR 107.37, your drone gives way to all other aircraft, every time. You have no right-of-way priority — the trap answers suggest you can hold position if you saw them first or that the lower aircraft yields.",
+          "Per 14 CFR 107.37, your drone gives way to all other aircraft, every time. You have no right-of-way priority, the trap answers suggest you can hold position if you saw them first or that the lower aircraft yields.",
         sourceLessonNumber: 8,
       },
       {
@@ -662,7 +662,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 2,
         explanation:
-          "Per 14 CFR 107.36, a small unmanned aircraft system may not carry hazardous material. There is no 'small amount' allowance — that is the trap. The answer is no carriage of hazardous material at all.",
+          "Per 14 CFR 107.36, a small unmanned aircraft system may not carry hazardous material. There is no 'small amount' allowance, that is the trap. The answer is no carriage of hazardous material at all.",
         sourceLessonNumber: 8,
       },
       {
@@ -688,7 +688,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 3,
         explanation:
-          "Per 14 CFR 107.37, you may not pass over, under, or ahead of another aircraft unless you are well clear of it — meaning you are not forcing that aircraft to change where it was going.",
+          "Per 14 CFR 107.37, you may not pass over, under, or ahead of another aircraft unless you are well clear of it, meaning you are not forcing that aircraft to change where it was going.",
         sourceLessonNumber: 8,
       },
     ],
@@ -848,7 +848,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: ["11 foot-pounds", "25 foot-pounds", "55 foot-pounds", "There is no energy limit for Category 3"],
         correctIndex: 1,
         explanation:
-          "Per 14 CFR 107.125, a Category 3 aircraft must not transfer more than 25 foot-pounds of kinetic energy on impact. The 11 foot-pound cap is the Category 2 limit — that is the trap.",
+          "Per 14 CFR 107.125, a Category 3 aircraft must not transfer more than 25 foot-pounds of kinetic energy on impact. The 11 foot-pound cap is the Category 2 limit, that is the trap.",
         sourceLessonNumber: 9,
       },
       {
@@ -987,7 +987,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Your drone yields, always. Manned aircraft have the right of way and you may not operate so close as to create a collision hazard, so stay well clear of the traffic pattern and especially the final approach path — that low straight line where planes come in to land.\n\nReference: 14 CFR § 107.37 (operation near aircraft; right-of-way rules).",
+          "Your drone yields, always. Manned aircraft have the right of way and you may not operate so close as to create a collision hazard, so stay well clear of the traffic pattern and especially the final approach path, that low straight line where planes come in to land.\n\nReference: 14 CFR § 107.37 (operation near aircraft; right-of-way rules).",
         sourceLessonNumber: 6,
       },
       {
@@ -995,7 +995,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: ["Alpha", "November", "Uniform"],
         correctIndex: 1,
         explanation:
-          "Every U.S. tail number starts with the letter N, spoken 'November' — for example November 342 Sierra Alpha. The tail number is the aircraft's registration, like a license plate, and the pilot uses it as their call sign.",
+          "Every U.S. tail number starts with the letter N, spoken 'November', for example November 342 Sierra Alpha. The tail number is the aircraft's registration, like a license plate, and the pilot uses it as their call sign.",
         sourceLessonNumber: 5,
       },
       {
@@ -1023,7 +1023,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         sourceLessonNumber: 4,
       },
       {
-        prompt: "Why does a pilot say the airport name twice — at the start AND the end of a position report?",
+        prompt: "Why does a pilot say the airport name twice, at the start AND the end of a position report?",
         options: [
           "Because one CTAF frequency can be shared by several airports, so listeners need to know which airport the call is about",
           "Because FAA regulations require the airport name to bracket every transmission",
@@ -1062,7 +1062,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "A controller first calls an aircraft 'November three four two Sierra Alpha', then later just '2 Sierra Alpha'. What happened?",
         options: [
           "A second, different aircraft entered the frequency",
-          "The controller shortened the call sign after first contact — same aircraft",
+          "The controller shortened the call sign after first contact, same aircraft",
           "The aircraft switched from its tail number to its airline flight number",
         ],
         correctIndex: 1,
@@ -1172,7 +1172,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
           "You are flying over flat ground, then cross a 200-foot hill. What happens to your legal altitude ceiling?",
         options: [
           "It stays fixed at 400 feet above your takeoff point",
-          "It rises with the hill — the 400-foot limit is measured above the ground beneath you",
+          "It rises with the hill, the 400-foot limit is measured above the ground beneath you",
           "It drops to 200 feet to keep you clear of the terrain",
         ],
         correctIndex: 1,
@@ -1213,7 +1213,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Class B's top is given in MSL — measured from sea level, not from the dirt — and generally sits around 10,000 feet MSL, though plenty of airports run lower (Phoenix tops at 9,000). Class B is the most restrictive controlled airspace there is: even a manned pilot needs a clearance to enter it.",
+          "Class B's top is given in MSL, measured from sea level, not from the dirt, and generally sits around 10,000 feet MSL, though plenty of airports run lower (Phoenix tops at 9,000). Class B is the most restrictive controlled airspace there is: even a manned pilot needs a clearance to enter it.",
         sourceLessonNumber: 6,
       },
       {
@@ -1225,14 +1225,14 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Airports outside LAANC take a manual request through FAA DroneZone. The page warns it can take up to 90 days (in practice usually a week or two), so plan ahead. LAANC covers a bit over 700 airports — roughly 80 percent of controlled airspace — and returns approval in seconds when you stay at or below the grid number.",
+          "Airports outside LAANC take a manual request through FAA DroneZone. The page warns it can take up to 90 days (in practice usually a week or two), so plan ahead. LAANC covers a bit over 700 airports, roughly 80 percent of controlled airspace, and returns approval in seconds when you stay at or below the grid number.",
         sourceLessonNumber: 8,
       },
       {
         prompt: "A TFR is active over a wildfire. Where would you have found out about it, given that no printed chart shows it?",
         options: [
           "On the sectional chart, marked with a blue comb line",
-          "As a NOTAM — check tfr.faa.gov or call 1-800-WX-BRIEF before every flight",
+          "As a NOTAM, check tfr.faa.gov or call 1-800-WX-BRIEF before every flight",
           "On the UAS Facility Map grid, as a square marked zero",
         ],
         correctIndex: 1,
@@ -1249,7 +1249,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "An MOA is where military jets train — nothing is exploding, but jets and helicopters fly low and fast. You are permitted in, even when it is active, but use extreme caution. That makes it different from a restricted area (contact the controlling agency) and a prohibited area (never). On the chart an MOA wears a magenta comb line; prohibited, restricted, and warning areas wear a blue one.",
+          "An MOA is where military jets train, nothing is exploding, but jets and helicopters fly low and fast. You are permitted in, even when it is active, but use extreme caution. That makes it different from a restricted area (contact the controlling agency) and a prohibited area (never). On the chart an MOA wears a magenta comb line; prohibited, restricted, and warning areas wear a blue one.",
         sourceLessonNumber: 7,
       },
     ],
@@ -1405,7 +1405,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: ["A terminal area chart", "A world aeronautical chart", "A UAS Facility Map"],
         correctIndex: 0,
         explanation:
-          "A terminal area chart is the zoomed-in version: same symbols, more detail, smaller area. A sectional is drawn at 1 to 500,000 (about 7 miles per inch), so it covers a wide area but cannot show fine detail. (The UAS Facility Map is a different tool entirely — it shows LAANC approval ceilings, not chart symbology.)",
+          "A terminal area chart is the zoomed-in version: same symbols, more detail, smaller area. A sectional is drawn at 1 to 500,000 (about 7 miles per inch), so it covers a wide area but cannot show fine detail. (The UAS Facility Map is a different tool entirely, it shows LAANC approval ceilings, not chart symbology.)",
         sourceLessonNumber: 1,
       },
       {
@@ -1541,7 +1541,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "A high turns clockwise and pushes air OUTWARD, shoving the weather out of the way — usually clear skies. A low turns counterclockwise and pulls air INWARD and up, and that lifting brings clouds, rough air, and worse weather. Do not swap the two.",
+          "A high turns clockwise and pushes air OUTWARD, shoving the weather out of the way, usually clear skies. A low turns counterclockwise and pulls air INWARD and up, and that lifting brings clouds, rough air, and worse weather. Do not swap the two.",
         sourceLessonNumber: 3,
       },
       {
@@ -1553,7 +1553,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Broken is five to seven eighths. The full ladder: clear (0), few (1 to 2), scattered (3 to 4), broken (5 to 7), overcast (8 of 8). This is what makes the ceiling definition work — only BROKEN or OVERCAST counts as a ceiling.",
+          "Broken is five to seven eighths. The full ladder: clear (0), few (1 to 2), scattered (3 to 4), broken (5 to 7), overcast (8 of 8). This is what makes the ceiling definition work, only BROKEN or OVERCAST counts as a ceiling.",
         sourceLessonNumber: 6,
       },
       {
@@ -1565,7 +1565,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Visibility is always reported in STATUTE miles — the regular road mile, not the nautical mile — and a report tops out at 10 statute miles. That matters because the Part 107 minimum of 3 miles is also in statute miles. Ceiling looks up; visibility looks sideways.",
+          "Visibility is always reported in STATUTE miles, the regular road mile, not the nautical mile, and a report tops out at 10 statute miles. That matters because the Part 107 minimum of 3 miles is also in statute miles. Ceiling looks up; visibility looks sideways.",
         sourceLessonNumber: 6,
       },
       {
@@ -1577,7 +1577,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "A microburst punches air straight down at up to 6,000 feet per minute and swings the wind by 30 to 90 knots, and it is over in 5 to 15 minutes. That is far more than enough to slam a small drone into the ground — and you cannot see it. This is why you never fly with thunderstorms anywhere in the area. (The test may offer a smaller downdraft figure to fool you.)",
+          "A microburst punches air straight down at up to 6,000 feet per minute and swings the wind by 30 to 90 knots, and it is over in 5 to 15 minutes. That is far more than enough to slam a small drone into the ground, and you cannot see it. This is why you never fly with thunderstorms anywhere in the area. (The test may offer a smaller downdraft figure to fool you.)",
         sourceLessonNumber: 7,
       },
       {
@@ -1589,19 +1589,19 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "A thunderstorm needs three things: water vapor, unstable air that wants to rise, and something to lift it (like surface heating). The unstable air keeps climbing and builds the tall cumulonimbus — the cloud with the strongest turbulence in the sky. Inside it the air rushes up hard and then crashes down hard.",
+          "A thunderstorm needs three things: water vapor, unstable air that wants to rise, and something to lift it (like surface heating). The unstable air keeps climbing and builds the tall cumulonimbus, the cloud with the strongest turbulence in the sky. Inside it the air rushes up hard and then crashes down hard.",
         sourceLessonNumber: 7,
       },
       {
         prompt: "You fly through a cloud on a day when the temperature is at freezing. What is the danger?",
         options: [
-          "Structural icing — ice builds on the props, adding weight, killing lift, and causing heavy vibration",
+          "Structural icing, ice builds on the props, adding weight, killing lift, and causing heavy vibration",
           "Nothing. A drone is too small and fast for ice to form on it",
           "The battery loses charge, but the airframe is unaffected",
         ],
         correctIndex: 0,
         explanation:
-          "Visible moisture (cloud or fog) plus a temperature at or below freezing equals structural icing. Ice changes the shape and weight of the props, so they make less lift and shake hard — that breaks props, kills motors, and drops the drone. Moisture also wrecks the electronics. In cold, wet air, stay out of the visible moisture.",
+          "Visible moisture (cloud or fog) plus a temperature at or below freezing equals structural icing. Ice changes the shape and weight of the props, so they make less lift and shake hard, that breaks props, kills motors, and drops the drone. Moisture also wrecks the electronics. In cold, wet air, stay out of the visible moisture.",
         sourceLessonNumber: 8,
       },
     ],
@@ -1688,7 +1688,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "Flight Service, at 1-800-WX-BRIEF (it spells 'weather brief'), puts a real human on the line who will brief you and answer questions. The three main aviation weather sources are that phone line, the free aviationweather.gov website, and an aviation app (Aloft, Kitty Hawk, Aeroweather) — never your phone's ordinary forecast, which averages the whole city at ground level.",
+          "Flight Service, at 1-800-WX-BRIEF (it spells 'weather brief'), puts a real human on the line who will brief you and answer questions. The three main aviation weather sources are that phone line, the free aviationweather.gov website, and an aviation app (Aloft, Kitty Hawk, Aeroweather), never your phone's ordinary forecast, which averages the whole city at ground level.",
         sourceLessonNumber: 1,
       },
       {
@@ -1732,7 +1732,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Temperature and dew point are always in CELSIUS, split by a slash, and an M in front means MINUS. So 19/M15 is 19 degrees with a dew point of minus 15 — a huge spread, meaning very dry air. (12/11 would be the dangerous one: a one-degree spread, near saturation, fog likely.)",
+          "Temperature and dew point are always in CELSIUS, split by a slash, and an M in front means MINUS. So 19/M15 is 19 degrees with a dew point of minus 15, a huge spread, meaning very dry air. (12/11 would be the dangerous one: a one-degree spread, near saturation, fog likely.)",
         sourceLessonNumber: 3,
       },
       {
@@ -1744,7 +1744,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "FM ('from') is a light switch flipped at an exact minute — the whole forecast flips to new conditions. BECMG ('becoming') is a dimmer turning up gradually over a window. TEMPO is someone flicking the porch light on and off, then leaving it as it was: a brief change that does not last.",
+          "FM ('from') is a light switch flipped at an exact minute, the whole forecast flips to new conditions. BECMG ('becoming') is a dimmer turning up gradually over a window. TEMPO is someone flicking the porch light on and off, then leaving it as it was: a brief change that does not last.",
         sourceLessonNumber: 4,
       },
       {
@@ -1756,7 +1756,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "First two digits are the direction (240), next two are the speed in knots (20), and the signed number is the temperature in Celsius. Like a METAR and a TAF, winds aloft are given in TRUE direction — only a control tower on the radio gives you magnetic. (Quirk: if the speed is 100 knots or more, 50 is added to the direction so it still fits.)",
+          "First two digits are the direction (240), next two are the speed in knots (20), and the signed number is the temperature in Celsius. Like a METAR and a TAF, winds aloft are given in TRUE direction, only a control tower on the radio gives you magnetic. (Quirk: if the speed is 100 knots or more, 50 is added to the direction so it still fits.)",
         sourceLessonNumber: 5,
       },
       {
@@ -1764,12 +1764,12 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
           "Your METAR looks fine, but the TAF reads 'FM012100 ... 2SM BKN008' and your job runs past 2100 Zulu. What is the call?",
         options: [
           "Go. The current observation is what governs the flight",
-          "Go now, but land before 2100 — the forecast drops visibility to 2 statute miles, below the 3-mile minimum",
+          "Go now, but land before 2100, the forecast drops visibility to 2 statute miles, below the 3-mile minimum",
           "No go at all. A TAF that forecasts any change grounds the whole day",
         ],
         correctIndex: 1,
         explanation:
-          "A METAR tells you NOW; a TAF tells you SOON. You need both. From 2100 the forecast visibility falls to 2 statute miles — under the 3-statute-mile minimum — so the flight is legal now and illegal after 2100. Fly the window and land before it closes. (P6SM, by contrast, means visibility greater than 6 statute miles: comfortably legal.)\n\nReference: 14 CFR § 107.51 (minimum flight visibility of 3 statute miles from the control station).",
+          "A METAR tells you NOW; a TAF tells you SOON. You need both. From 2100 the forecast visibility falls to 2 statute miles, under the 3-statute-mile minimum, so the flight is legal now and illegal after 2100. Fly the window and land before it closes. (P6SM, by contrast, means visibility greater than 6 statute miles: comfortably legal.)\n\nReference: 14 CFR § 107.51 (minimum flight visibility of 3 statute miles from the control station).",
         sourceLessonNumber: 6,
       },
     ],
@@ -1881,15 +1881,15 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          'The danger here is the rush itself — doing something fast instead of doing it right. That is impulsivity ("Do something quickly, anything"), and the antidote is "Not so fast. Think first."',
+          'The danger here is the rush itself, doing something fast instead of doing it right. That is impulsivity ("Do something quickly, anything"), and the antidote is "Not so fast. Think first."',
         sourceLessonNumber: 2,
       },
       {
         prompt: 'Your drone drifts behind a hill and the signal drops. You think, "It is gone. Nothing I can do." What is that, and what should you do?',
         options: [
-          'Resignation — and the antidote is "I am not helpless. I can make a difference." Walk up the hill and try to regain line of sight',
-          "Invulnerability — accept the loss and file an accident report",
-          "Sound judgment — once the link is lost, the aircraft is unrecoverable by definition",
+          'Resignation, and the antidote is "I am not helpless. I can make a difference." Walk up the hill and try to regain line of sight',
+          "Invulnerability, accept the loss and file an accident report",
+          "Sound judgment, once the link is lost, the aircraft is unrecoverable by definition",
         ],
         correctIndex: 0,
         explanation:
@@ -1905,7 +1905,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "DECIDE spells itself: Detect the change, Estimate whether you must react, Choose the outcome you want, Identify the actions that get you there, Do them, Evaluate whether it worked. Like 3P, it ends by looking again — if the hazard is still there, you run the loop from the top.",
+          "DECIDE spells itself: Detect the change, Estimate whether you must react, Choose the outcome you want, Identify the actions that get you there, Do them, Evaluate whether it worked. Like 3P, it ends by looking again, if the hazard is still there, you run the loop from the top.",
         sourceLessonNumber: 5,
       },
       {
@@ -1937,7 +1937,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "CRM is the effective use of ALL available resources — human, hardware, and information — before and during flight. In plain words: use everyone and everything you have got. That phrasing is exactly how the FAA words the question.",
+          "CRM is the effective use of ALL available resources, human, hardware, and information, before and during flight. In plain words: use everyone and everything you have got. That phrasing is exactly how the FAA words the question.",
         sourceLessonNumber: 6,
       },
       {
@@ -1949,7 +1949,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "A visual observer extends your eyes: their only job is to watch the drone and the surroundings so you can stay on the controller and the shot. The sterile cockpit rule, borrowed from manned aviation, means that when you are flying, the conversation is about the flight — full stop. No dinner plans. Distraction is what lets the deer step onto the road.",
+          "A visual observer extends your eyes: their only job is to watch the drone and the surroundings so you can stay on the controller and the shot. The sterile cockpit rule, borrowed from manned aviation, means that when you are flying, the conversation is about the flight, full stop. No dinner plans. Distraction is what lets the deer step onto the road.",
         sourceLessonNumber: 6,
       },
     ],
@@ -2045,7 +2045,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "Cones do color, fine detail, and your sharp central daytime vision, and they are packed into the center back of the eye — but they need good light. That is exactly why the center of your view becomes a BLIND SPOT at night: the cones there go nearly blind and there are few rods in the middle to cover for them. (Rods are the low-light, peripheral sensors, about 10,000 times more light-sensitive.)",
+          "Cones do color, fine detail, and your sharp central daytime vision, and they are packed into the center back of the eye, but they need good light. That is exactly why the center of your view becomes a BLIND SPOT at night: the cones there go nearly blind and there are few rods in the middle to cover for them. (Rods are the low-light, peripheral sensors, about 10,000 times more light-sensitive.)",
         sourceLessonNumber: 1,
       },
       {
@@ -2057,7 +2057,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "There is a chemical in your rods that bright white light bleaches out — one look at a phone at full brightness, a headlight, or a strobe and your dark adaptation is back near zero, costing you another ~30 minutes. Red light does not bleach the rods nearly as much. Dim your screens all the way down too.",
+          "There is a chemical in your rods that bright white light bleaches out, one look at a phone at full brightness, a headlight, or a strobe and your dark adaptation is back near zero, costing you another ~30 minutes. Red light does not bleach the rods nearly as much. Dim your screens all the way down too.",
         sourceLessonNumber: 2,
       },
       {
@@ -2082,37 +2082,37 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "You take an over-the-counter allergy pill the morning of a job. Can you fly?",
         options: [
           "Yes. The rules only cover illegal drugs and alcohol",
-          "Not if it affects your ability to fly safely — read the label; 'do not operate heavy machinery' means do not operate your drone",
+          "Not if it affects your ability to fly safely, read the label; 'do not operate heavy machinery' means do not operate your drone",
           "Yes, as long as you wait 8 hours after taking it",
         ],
         correctIndex: 1,
         explanation:
-          "The rule is not just about illegal drugs. Over-the-counter and prescription medication can ground you just as hard: antihistamines and decongestants cause drowsiness and slow your thinking. The plain test is the label — if it says do not operate heavy machinery, do not fly. When in doubt, check the FAA's approved-medication list or ask an aviation medical examiner.\n\nReference: 14 CFR § 91.17 (alcohol and drugs), which Part 107 applies to remote pilots.",
+          "The rule is not just about illegal drugs. Over-the-counter and prescription medication can ground you just as hard: antihistamines and decongestants cause drowsiness and slow your thinking. The plain test is the label, if it says do not operate heavy machinery, do not fly. When in doubt, check the FAA's approved-medication list or ask an aviation medical examiner.\n\nReference: 14 CFR § 91.17 (alcohol and drugs), which Part 107 applies to remote pilots.",
         sourceLessonNumber: 4,
       },
       {
         prompt:
           "Halfway through a long, hot field mission you get a headache, your legs cramp, and you feel dizzy. What is most likely happening?",
         options: [
-          "Dehydration — stop and drink water before you fly again",
-          "Hypoxia — descend to a lower elevation",
-          "Flicker vertigo — look away from your screen",
+          "Dehydration, stop and drink water before you fly again",
+          "Hypoxia, descend to a lower elevation",
+          "Flicker vertigo, look away from your screen",
         ],
         correctIndex: 0,
         explanation:
-          "Headaches, cramps, and dizziness are dehydration. Heat, dry wind, and low humidity pull water out of you — and so do coffee, tea, soda, and alcohol, because they make you urinate more. Drink water, and do not wait until you feel thirsty. A dizzy, unfocused pilot cannot safely control an aircraft.",
+          "Headaches, cramps, and dizziness are dehydration. Heat, dry wind, and low humidity pull water out of you, and so do coffee, tea, soda, and alcohol, because they make you urinate more. Drink water, and do not wait until you feel thirsty. A dizzy, unfocused pilot cannot safely control an aircraft.",
         sourceLessonNumber: 5,
       },
       {
         prompt: "What is the anti-collision light actually FOR, and does a downward landing light satisfy the rule?",
         options: [
           "It is so YOU can see your drone in the dark; a landing light counts as long as it is bright",
-          "It is so MANNED aircraft can see your drone and stay away; a landing light does NOT count — it must be the strobe visible for 3 statute miles",
+          "It is so MANNED aircraft can see your drone and stay away; a landing light does NOT count, it must be the strobe visible for 3 statute miles",
           "It is a Remote ID broadcast device; a landing light is unrelated",
         ],
         correctIndex: 1,
         explanation:
-          "The anti-collision light is not for you — it is so manned aircraft can spot your drone and steer clear, like a blinking light on a bicycle at night. A landing light pointing at the ground does not satisfy it. It must be visible for at least 3 statute miles and flash fast enough to help others avoid a collision.\n\nReference: 14 CFR § 107.29 (operation at night).",
+          "The anti-collision light is not for you, it is so manned aircraft can spot your drone and steer clear, like a blinking light on a bicycle at night. A landing light pointing at the ground does not satisfy it. It must be visible for at least 3 statute miles and flash fast enough to help others avoid a collision.\n\nReference: 14 CFR § 107.29 (operation at night).",
         sourceLessonNumber: 6,
       },
       {
@@ -2124,7 +2124,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "There are two paths and you only need one. If you took your INITIAL knowledge test after the rule took effect (April 6, 2021), it already contained night questions and you are covered. If you were certified before that, you complete the FAA's free online recurrent training. Either path counts — and no waiver is required for night flight anymore.",
+          "There are two paths and you only need one. If you took your INITIAL knowledge test after the rule took effect (April 6, 2021), it already contained night questions and you are covered. If you were certified before that, you complete the FAA's free online recurrent training. Either path counts, and no waiver is required for night flight anymore.",
         sourceLessonNumber: 6,
       },
     ],
@@ -2221,7 +2221,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 0,
         explanation:
-          "Scheduled maintenance is the oil change: planned, on a set interval, done before anything goes wrong. Unscheduled maintenance is the pothole: a hard landing, a crash, a broken part, a swollen battery — you did not plan it, the aircraft made you do it.",
+          "Scheduled maintenance is the oil change: planned, on a set interval, done before anything goes wrong. Unscheduled maintenance is the pothole: a hard landing, a crash, a broken part, a swollen battery, you did not plan it, the aircraft made you do it.",
         sourceLessonNumber: 2,
       },
       {
@@ -2229,12 +2229,12 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
           "You land hard after a gust pushes you into the grass. The drone still powers on and looks fine, and the manufacturer's schedule says nothing is due. Can you launch again right away?",
         options: [
           "Yes. Nothing is due and the aircraft powers on normally",
-          "No. A hard landing calls for unscheduled maintenance — inspect the props, motors, arms, and battery first",
+          "No. A hard landing calls for unscheduled maintenance, inspect the props, motors, arms, and battery first",
           "Yes, but only for one more short flight to confirm it handles normally",
         ],
         correctIndex: 1,
         explanation:
-          "A hard landing is exactly when hidden damage shows up. Inspect before the next flight, because a small unmanned aircraft that is not in a condition for safe operation must not be flown — and the manufacturer's calendar has no idea you just hit the ground.\n\nReference: 14 CFR § 107.15 (condition for safe operation).",
+          "A hard landing is exactly when hidden damage shows up. Inspect before the next flight, because a small unmanned aircraft that is not in a condition for safe operation must not be flown, and the manufacturer's calendar has no idea you just hit the ground.\n\nReference: 14 CFR § 107.15 (condition for safe operation).",
         sourceLessonNumber: 2,
       },
       {
@@ -2246,7 +2246,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Log every overhaul, repair, inspection, modification, part replacement, and software update — and note each part's age and the time since its last repair. Those dates and hour counts are what reveal a trend (props cracking around 50 hours) so you can replace a part BEFORE it snaps mid-flight. A simple logbook or spreadsheet is enough.",
+          "Log every overhaul, repair, inspection, modification, part replacement, and software update, and note each part's age and the time since its last repair. Those dates and hour counts are what reveal a trend (props cracking around 50 hours) so you can replace a part BEFORE it snaps mid-flight. A simple logbook or spreadsheet is enough.",
         sourceLessonNumber: 3,
       },
       {
@@ -2254,7 +2254,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: ["Thermal runaway", "Voltage sag", "Cell balancing"],
         correctIndex: 0,
         explanation:
-          "Thermal runaway: one cell overheats and ignites, and that heat sets off the next cell, and the next. It is the reason a swollen battery never flies and never charges — and why heat is the one thing you keep batteries away from. (Voltage sag is a different problem: what a COLD battery does under load.)",
+          "Thermal runaway: one cell overheats and ignites, and that heat sets off the next cell, and the next. It is the reason a swollen battery never flies and never charges, and why heat is the one thing you keep batteries away from. (Voltage sag is a different problem: what a COLD battery does under load.)",
         sourceLessonNumber: 4,
       },
       {
@@ -2266,7 +2266,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Cool, partly charged, out of the blazing window — like a houseplant that is neither parched nor drowning. A battery left at full charge for weeks, or left baking in a hot car, ages fast and is more likely to swell. Heat is the trigger for thermal runaway.",
+          "Cool, partly charged, out of the blazing window, like a houseplant that is neither parched nor drowning. A battery left at full charge for weeks, or left baking in a hot car, ages fast and is more likely to swell. Heat is the trigger for thermal runaway.",
         sourceLessonNumber: 4,
       },
       {
@@ -2284,25 +2284,25 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "What does a crew and site briefing cover before anyone touches a control?",
         options: [
-          "Each person's job, the plan, and what to do in an emergency — plus an assessment of the launch and landing area",
+          "Each person's job, the plan, and what to do in an emergency, plus an assessment of the launch and landing area",
           "The client's shot list and the invoice terms",
           "Only the weather forecast and the airspace class",
         ],
         correctIndex: 0,
         explanation:
-          "If other people are part of the operation, you tell them their jobs, the plan, and the emergency procedures. Then you assess the launch and landing area for obstacles, people who should not be there, and anything that could block your signal — metal structures, power lines.",
+          "If other people are part of the operation, you tell them their jobs, the plan, and the emergency procedures. Then you assess the launch and landing area for obstacles, people who should not be there, and anything that could block your signal, metal structures, power lines.",
         sourceLessonNumber: 5,
       },
       {
         prompt: "Why do a low hover check before climbing to altitude?",
         options: [
           "To warm the battery up to its operating temperature",
-          "To confirm the drone is stable, the sticks respond, and the link is clean — while you are still two feet up, not two hundred",
+          "To confirm the drone is stable, the sticks respond, and the link is clean, while you are still two feet up, not two hundred",
           "It is a regulatory requirement under 14 CFR 107.49",
         ],
         correctIndex: 1,
         explanation:
-          "Lift a foot or two, confirm the aircraft is stable, the sticks respond, and the control link is solid — THEN climb. A pilot who took off inside a parking garage found the rebar had killed his link at two feet instead of two hundred. A shifted camera mount shows up the same way. It is a best practice, not a listed regulation, and it costs you seconds.",
+          "Lift a foot or two, confirm the aircraft is stable, the sticks respond, and the control link is solid, THEN climb. A pilot who took off inside a parking garage found the rebar had killed his link at two feet instead of two hundred. A shifted camera mount shows up the same way. It is a best practice, not a listed regulation, and it costs you seconds.",
         sourceLessonNumber: 1,
       },
     ],
@@ -2389,7 +2389,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         options: ["IACRA", "FAA DroneZone", "FAASafety.gov"],
         correctIndex: 1,
         explanation:
-          "DroneZone registers the drone. IACRA is where you apply for your pilot certificate, and FAASafety.gov is where you take the free recurrent training. Three sites, three purposes, three separate accounts — the FAA does not connect them for you.",
+          "DroneZone registers the drone. IACRA is where you apply for your pilot certificate, and FAASafety.gov is where you take the free recurrent training. Three sites, three purposes, three separate accounts, the FAA does not connect them for you.",
         sourceLessonNumber: 1,
       },
       {

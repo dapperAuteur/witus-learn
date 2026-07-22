@@ -117,7 +117,7 @@ export function GrowingBeltsMap({ belts }: { belts: MapBelt[] }) {
           <span className="-ml-2 h-5 w-5 rounded-full" style={{ backgroundColor: "#4E7A3A", mixBlendMode: "multiply" }} />
         </span>
         <span>
-          Where belts overlap, their colors <strong>blend</strong> — a darker zone means more commodities
+          Where belts overlap, their colors <strong>blend</strong>, a darker zone means more commodities
           share that latitude. The map starts with {PREPOPULATE} commodities; toggle the rest below.
         </span>
       </div>

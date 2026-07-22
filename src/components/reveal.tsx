@@ -84,7 +84,7 @@ export function RevealAnswerPanel({
           <Link href="/login" className="underline">
             Sign in
           </Link>{" "}
-          to track which checks you get right — they show up in your dashboard history.
+          to track which checks you get right, they show up in your dashboard history.
         </p>
       ) : null}
     </div>
@@ -135,7 +135,7 @@ export function RevealGrade({
         setGraded(gotIt);
         setQueued(true);
       } else {
-        setError("You're offline and this couldn't be queued — it wasn't saved.");
+        setError("You're offline and this couldn't be queued, it wasn't saved.");
       }
     } finally {
       setBusy(false);
@@ -145,7 +145,7 @@ export function RevealGrade({
   if (graded !== null) {
     return (
       <p role="status" className="mt-3 text-sm font-medium" style={{ color: graded ? "var(--accent)" : undefined }}>
-        {graded ? "Nice — logged as recalled." : "Logged — review this one before the quiz."}
+        {graded ? "Nice, logged as recalled." : "Logged, review this one before the quiz."}
         {queued ? <span className="font-normal text-neutral-500"> Saved offline; it&apos;ll sync when you&apos;re back online.</span> : null}
       </p>
     );

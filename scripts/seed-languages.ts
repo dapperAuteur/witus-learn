@@ -142,7 +142,7 @@ async function main() {
     .limit(1);
   const tenantId = t[0]?.id;
   if (!tenantId) {
-    console.error("Learn.WitUS tenant missing — run `pnpm seed:tenants` first.");
+    console.error("Learn.WitUS tenant missing, run `pnpm seed:tenants` first.");
     process.exit(1);
   }
   const instructorId = await ensureInstructor(tenantId);
@@ -176,7 +176,7 @@ async function main() {
       }
     }
 
-    const title = lang.authored?.title ?? `${lang.name} — the Curb Appeall Story`;
+    const title = lang.authored?.title ?? `${lang.name}, the Curb Appeall Story`;
     const description =
       lang.authored?.description ??
       `Learn ${lang.name} through one continuous story about Curb Appeall and friends learning healthy-living habits. Communication-first, with the verbs and patterns you need to produce sentences yourself.`;

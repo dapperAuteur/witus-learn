@@ -30,7 +30,7 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
     title: "Develop & ship",
     commands: [
       { cmd: "pnpm dev", desc: "Start the local dev server (Next + webpack) on http://localhost:3040.", impact: "build" },
-      { cmd: "pnpm build", desc: "Production build — exactly what deploys. Run before pushing anything non-trivial.", impact: "build" },
+      { cmd: "pnpm build", desc: "Production build, exactly what deploys. Run before pushing anything non-trivial.", impact: "build" },
       { cmd: "pnpm start", desc: "Serve the production build locally on :3040 (after pnpm build).", impact: "build" },
       { cmd: "pnpm lint", desc: "Run ESLint across the repo.", impact: "read" },
       { cmd: "pnpm typecheck", desc: "Next typegen + tsc --noEmit (full type check).", impact: "read" },
@@ -43,8 +43,8 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
     commands: [
       { cmd: "pnpm db:generate", desc: "Generate a new migration from schema changes (offline diff → writes src/db/migrations/NNNN_*.sql). Run after editing src/db/schema/*.", impact: "read" },
       { cmd: "pnpm db:migrate", desc: "Apply pending migrations to your LOCAL/dev DB (uses .env.local). Additive + safe.", impact: "write-dev" },
-      { cmd: "pnpm db:migrate:prod", desc: "Apply pending migrations to PRODUCTION (ambient env, no .env.local). ⚠️ Run right after merging a branch/bundle that adds a migration — otherwise the next deploy 500s on the missing column/table.", impact: "write-prod" },
-      { cmd: "pnpm db:push", desc: "Push the schema straight to the DB with NO migration file (dev convenience only — no history; don't use on prod).", impact: "write-dev" },
+      { cmd: "pnpm db:migrate:prod", desc: "Apply pending migrations to PRODUCTION (ambient env, no .env.local). ⚠️ Run right after merging a branch/bundle that adds a migration, otherwise the next deploy 500s on the missing column/table.", impact: "write-prod" },
+      { cmd: "pnpm db:push", desc: "Push the schema straight to the DB with NO migration file (dev convenience only, no history; don't use on prod).", impact: "write-dev" },
       { cmd: "pnpm db:studio", desc: "Open Drizzle Studio to browse/edit the DB in a browser.", impact: "read" },
     ],
   },
@@ -55,7 +55,7 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
       { cmd: "pnpm feedback:list", desc: "Learner curriculum feedback (comments/corrections/questions on lessons), with course › lesson titles. Flags: --tenant <slug> · --status open|reviewed|resolved · --kind correction|comment|question · --limit N.", impact: "read" },
       { cmd: "pnpm reports:list", desc: "In-app 'Report a problem' submissions (bug/feedback/idea) for triage. Flags: --tenant <slug> · --status new|triaged|closed · --limit N.", impact: "read" },
       { cmd: "pnpm tracker:show", desc: "Print the Documentarian program build tracker (checkboxes + notes + comments) from /admin/documentarian. Flags: --tenant <slug>.", impact: "read" },
-      { cmd: "pnpm future:list", desc: "Print the notes left on Future classes & features items at /admin/future — the feedback channel Claude reads instead of copy-paste. Flags: --tenant <slug> · --status open|done|all (default open) · --item <key> · --limit N.", impact: "read" },
+      { cmd: "pnpm future:list", desc: "Print the notes left on Future classes & features items at /admin/future, the feedback channel Claude reads instead of copy-paste. Flags: --tenant <slug> · --status open|done|all (default open) · --item <key> · --limit N.", impact: "read" },
     ],
   },
   {
@@ -66,7 +66,7 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
       { cmd: "pnpm reveal:convert <course…>", desc: "Convert a course's \"Check yourself\" prompts to :::reveal, reusing each lesson's answer from the next lesson's matching recall cards. Dry-run by default; add --write. Prompts with no clear recall match are left for manual authoring. Reseed after (pnpm seed:courses).", impact: "read" },
       { cmd: "pnpm srt:transcript", desc: "Convert an .srt caption file into a lesson's synced transcript_content.", impact: "read" },
       { cmd: "pnpm course:script", desc: "Export a course to a flat teleprompter script (for recording).", impact: "read" },
-      { cmd: "pnpm gen:future-work", desc: "Regenerate the committed Future classes & features content (src/lib/future-work-content/*) from the local plans/future-courses/ notes. Run after editing those notes, then commit the result — /admin/future never reads plans/ at runtime.", impact: "read" },
+      { cmd: "pnpm gen:future-work", desc: "Regenerate the committed Future classes & features content (src/lib/future-work-content/*) from the local plans/future-courses/ notes. Run after editing those notes, then commit the result, /admin/future never reads plans/ at runtime.", impact: "read" },
     ],
   },
   {

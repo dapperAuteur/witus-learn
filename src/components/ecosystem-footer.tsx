@@ -189,7 +189,7 @@ function RiseWellnessCallout() {
             <br />
             Indianapolis, IN 46204
             <br />
-            Mon–Sat by appointment · Sun closed
+            Mon-Sat by appointment · Sun closed
           </address>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 pt-2 text-xs">
             <a

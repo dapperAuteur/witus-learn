@@ -122,7 +122,7 @@ export function LiveAdmin({
           </label>
         </div>
         <input value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Player embed URL (from your RTMP/streaming service)" className={field} />
-        <label className="block text-sm">Course (optional — shows this session on that course page)
+        <label className="block text-sm">Course (optional, shows this session on that course page)
           <select value={courseId} onChange={(e) => setCourseId(e.target.value)} className={`mt-1 ${field}`}>
             <option value="">Not tied to a course (this school only)</option>
             {courses.map((c) => (
@@ -132,7 +132,7 @@ export function LiveAdmin({
         </label>
         {courseId ? (
           <p className="text-xs text-neutral-500">
-            The course belongs to this school, so it only attaches here — other selected schools get the session without a course link.
+            The course belongs to this school, so it only attaches here, other selected schools get the session without a course link.
           </p>
         ) : null}
         <fieldset>

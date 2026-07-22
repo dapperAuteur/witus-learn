@@ -33,7 +33,7 @@ export const DOCUMENTARIAN_PLAN: PlanSection[] = [
   {
     key: "archives",
     title: "Archives & Records (standalone)",
-    blurb: "Its own course, taken early — the backbone of trust: capture + preserve primary material properly.",
+    blurb: "Its own course, taken early, the backbone of trust: capture + preserve primary material properly.",
     items: [
       { id: "arch-outline", label: "Outline the Archives & Records course (metadata, storage, provenance)" },
       { id: "arch-build", label: "Build Archives & Records in-app" },
@@ -72,11 +72,11 @@ export const DOCUMENTARIAN_PLAN: PlanSection[] = [
   },
   {
     key: "ghana",
-    title: "Ghana capture ⏳ (time-sensitive — the trip won’t repeat)",
+    title: "Ghana capture ⏳ (time-sensitive, the trip won’t repeat)",
     blurb: "Bank raw material NOW for the later courses, even before they’re built.",
     items: [
       { id: "ghana-notes", label: "Field notes + photo sequences (what / where / who / why it matters)" },
-      { id: "ghana-audio", label: "Ambient sound + 2–3 consented interviews (audio, phone quality is fine)" },
+      { id: "ghana-audio", label: "Ambient sound + 2-3 consented interviews (audio, phone quality is fine)" },
       { id: "ghana-video", label: "Steady b-roll per scene + one on-camera interview" },
       { id: "ghana-archive", label: "Originals saved + metadata log (date / place / who / consent) per file" },
       { id: "ghana-consent", label: "Recorded or written consent from anyone identifiable" },

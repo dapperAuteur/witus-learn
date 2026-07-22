@@ -82,7 +82,7 @@ export function ManageChildren({ initialChildren }: { initialChildren: ManagedCh
     <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
       <h2 className="text-lg font-semibold">Manage children</h2>
       <p className="mt-1 text-sm text-neutral-500">
-        For young kids without their own email — add a profile, then &quot;study as&quot; it to browse
+        For young kids without their own email, add a profile, then &quot;study as&quot; it to browse
         and complete courses on their behalf. Their progress shows up below just like a linked child.
       </p>
 
@@ -308,7 +308,7 @@ function ChildLoginSettings({
       ) : null}
       {classCode ? (
         <p className="text-sm">
-          Class code: <span className="font-mono font-semibold">{classCode}</span> — share this with{" "}
+          Class code: <span className="font-mono font-semibold">{classCode}</span>, share this with{" "}
           {child.displayName} so they can sign in at <span className="font-mono">/kids</span>.
         </p>
       ) : null}

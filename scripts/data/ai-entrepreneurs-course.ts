@@ -160,7 +160,7 @@ The honest framing comes straight from NIST's AI Risk Management Framework: trus
 
 > **Trust DNA:** an MVP's job is to *get you real information* as cheaply as possible. AI helps you build it faster; it doesn't excuse you from testing it on real people or from reviewing what it generated.
 
-:::reveal What is the actual goal of an MVP, and why might a landing page sometimes teach you more than a finished app? ||| The goal of an MVP is to LEARN — to test the riskiest assumption with the least work, not to ship a polished product. A landing page can teach you more because it measures real demand (do people sign up or pay?) in days, before you spend months building something no one wants.
+:::reveal What is the actual goal of an MVP, and why might a landing page sometimes teach you more than a finished app? ||| The goal of an MVP is to LEARN, to test the riskiest assumption with the least work, not to ship a polished product. A landing page can teach you more because it measures real demand (do people sign up or pay?) in days, before you spend months building something no one wants.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Test your concept against real demand before scaling. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis
@@ -265,7 +265,7 @@ A feature that's "basically free" while you test it can become a real monthly bi
 
 **And always: privacy.** Don't paste customers' personal data into public AI tools (it may be stored or used to train the model), and tell customers honestly how you use their data.
 
-:::reveal A friend offers to post a glowing review of your product in exchange for a free unit. Name two FTC problems with treating that as an ordinary "real" review. ||| First, the material connection (the free product, plus the friendship) must be clearly disclosed. Second, the review must reflect the reviewer's honest experience — a paid-for glowing review presented as independent is deceptive, and the FTC holds the business responsible for undisclosed incentivized endorsements.
+:::reveal A friend offers to post a glowing review of your product in exchange for a free unit. Name two FTC problems with treating that as an ordinary "real" review. ||| First, the material connection (the free product, plus the friendship) must be clearly disclosed. Second, the review must reflect the reviewer's honest experience, a paid-for glowing review presented as independent is deceptive, and the FTC holds the business responsible for undisclosed incentivized endorsements.
 
 ## Sources
 - Federal Trade Commission. (2023). *Keep your AI claims in check*. AI claims must be truthful and substantiated. https://www.ftc.gov/business-guidance/blog/2023/02/keep-your-ai-claims-check
@@ -332,7 +332,7 @@ A feature that's "basically free" while you test it can become a real monthly bi
 
 **Beware the productivity illusion.** Generating ten drafts feels busy, but if you spend longer fixing AI mistakes than you saved, you've lost. And a tool that's fast but lowers quality can cost you customers, the most expensive kind of "savings." NIST's framework frames this as continuously **measuring and managing** the AI you've deployed rather than assuming it helps (NIST, 2023).
 
-:::reveal Why isn't "I generated a lot of stuff quickly" proof that an AI tool is worth it, and what should you compare it against instead? ||| Volume and speed aren't value — generating a lot fast can just create more to review and fix. Compare it against the outcome: did it save net time or money, or improve quality, versus not using it (or a cheaper alternative), after you account for the time spent checking and correcting the output?
+:::reveal Why isn't "I generated a lot of stuff quickly" proof that an AI tool is worth it, and what should you compare it against instead? ||| Volume and speed aren't value, generating a lot fast can just create more to review and fix. Compare it against the outcome: did it save net time or money, or improve quality, versus not using it (or a cheaper alternative), after you account for the time spent checking and correcting the output?
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*. The "Measure" and "Manage" functions. https://www.nist.gov/itl/ai-risk-management-framework

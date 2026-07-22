@@ -154,7 +154,7 @@ export function DocumentarianTracker({ initial }: { initial: TrackerState }) {
       <div className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
         <h2 className="font-semibold">Comments</h2>
         <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-          A running log for anything not tied to a single item — questions, decisions, things for
+          A running log for anything not tied to a single item, questions, decisions, things for
           Claude to pick up next session (readable with <span className="font-mono">pnpm tracker:show</span>).
         </p>
         {comments.length ? (

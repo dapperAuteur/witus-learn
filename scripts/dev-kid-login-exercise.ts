@@ -150,7 +150,7 @@ async function main() {
   const crossBody = await crossOrigin.json().catch(() => ({}));
   const crossCookies = getSetCookie(crossOrigin);
   console.log("cross-origin correct PIN:", crossOrigin.status, JSON.stringify(crossBody));
-  console.log("cross-origin Set-Cookie count:", crossCookies.length, "(must be 0 — no session leaked)");
+  console.log("cross-origin Set-Cookie count:", crossCookies.length, "(must be 0, no session leaked)");
   const crossAttempts = await pool.query(
     "select attempts from kid_login_attempts where child_user_id=$1",
     [childId],
@@ -173,7 +173,7 @@ async function main() {
   // But an admin-gated GET must REJECT the child (403), proving low privilege — a kid
   // can't reach brand-admin surfaces even with a valid session.
   const adminGated = await fetch(`${BASE}/api/admin/promo-codes`, { method: "GET", headers: authH });
-  console.log("GET /api/admin/promo-codes as child →", adminGated.status, "(expect 403 — isTenantAdmin rejects the child)");
+  console.log("GET /api/admin/promo-codes as child →", adminGated.status, "(expect 403, isTenantAdmin rejects the child)");
 
   // Corroborate in the DB: the child is neither platform owner nor a brand admin.
   const priv = await pool.query(

@@ -39,7 +39,7 @@ export function ServiceWorkerRegister() {
       navigator.serviceWorker.register("/sw.js").catch((err) => {
         // Never silent again: a failed registration means offline downloads cannot work, and the
         // download UI keys off navigator.serviceWorker.controller to refuse to claim otherwise.
-        console.warn("[sw] registration failed — offline downloads will not work", err);
+        console.warn("[sw] registration failed, offline downloads will not work", err);
       });
     };
 

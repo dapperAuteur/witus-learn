@@ -94,7 +94,7 @@ async function main() {
     .limit(1);
   const tenantId = t[0]?.id;
   if (!tenantId) {
-    console.error(`Tenant "${TARGET_SLUG}" missing — run \`pnpm seed:tenants\` first.`);
+    console.error(`Tenant "${TARGET_SLUG}" missing, run \`pnpm seed:tenants\` first.`);
     process.exit(1);
   }
 

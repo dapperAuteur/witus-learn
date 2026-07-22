@@ -43,7 +43,7 @@ async function main() {
       username: "bam",
       displayName: "BAM",
       isPlatformOwner: true,
-      bio: "Brand Anthony McDonald (BAM) — founder and instructor across the WitUS schools.",
+      bio: "Brand Anthony McDonald (BAM), founder and instructor across the WitUS schools.",
       links: { website: "https://brandanthonymcdonald.com", custom: [] },
     })
     .onConflictDoUpdate({

@@ -178,7 +178,7 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
       <form onSubmit={add} className="mt-4 space-y-2 rounded-md border border-dashed border-neutral-300 p-3 dark:border-neutral-700">
         <h3 className="text-sm font-medium">Add a lesson</h3>
         <input value={newTitle} onChange={(e) => setNewTitle(e.target.value)} placeholder="Lesson title" maxLength={200} className="min-h-10 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
-        <MarkdownEditor value={newBody} onChange={setNewBody} rows={4} placeholder="Lesson body — write or format with the toolbar, then Preview." />
+        <MarkdownEditor value={newBody} onChange={setNewBody} rows={4} placeholder="Lesson body, write or format with the toolbar, then Preview." />
         <button type="submit" disabled={busy || newTitle.trim().length < 1} className="min-h-10 rounded-md px-3 text-sm font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           Add lesson
         </button>
@@ -217,9 +217,9 @@ function LessonEditor({
       }
       setTranscript(segs);
       setChapters(chaptersFromSegments(segs));
-      setSrtInfo(`Imported ${segs.length} transcript lines and auto-generated chapters — edit them below, then Save.`);
+      setSrtInfo(`Imported ${segs.length} transcript lines and auto-generated chapters, edit them below, then Save.`);
     } catch {
-      setSrtInfo("Couldn't read that file — is it a .srt/.vtt?");
+      setSrtInfo("Couldn't read that file, is it a .srt/.vtt?");
     }
   }
 

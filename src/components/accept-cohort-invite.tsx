@@ -31,7 +31,7 @@ export function AcceptCohortInvite({ token }: { token: string }) {
       } catch {
         if (alive) {
           setStatus("error");
-          setMessage("Network error — please try again.");
+          setMessage("Network error, please try again.");
         }
       }
     }

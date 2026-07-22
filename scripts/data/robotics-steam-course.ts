@@ -213,7 +213,7 @@ Put it together and a line-following robot is just: **loop forever { IF I see th
 
 **Try this (unplugged).** Be the robot. A partner gives you a tiny program out loud, like: "Loop 4 times: take one step; IF you reach the wall, stop." Act it out *literally*. Then make the rule trickier and see if the program still works. Spotting where it breaks is exactly what programmers do.
 
-:::reveal What does a **loop** do, and what does a **conditional** (if/else) do? Give one real robot behavior that needs both. ||| A loop repeats a section of code over and over; a conditional (if/else) runs one section only when something is true, otherwise another. A line-following robot needs both: loop forever { IF I see the line, go straight; ELSE steer back toward it } — sense, decide, move, repeated.
+:::reveal What does a **loop** do, and what does a **conditional** (if/else) do? Give one real robot behavior that needs both. ||| A loop repeats a section of code over and over; a conditional (if/else) runs one section only when something is true, otherwise another. A line-following robot needs both: loop forever { IF I see the line, go straight; ELSE steer back toward it }, sense, decide, move, repeated.
 
 ## Sources
 Code.org. (n.d.). *Computer science fundamentals curriculum*. https://code.org/en-US/curriculum/computer-science-fundamentals`,
@@ -403,7 +403,7 @@ None of these have one easy answer, and that's the point. The best engineers are
 
 The future of robotics isn't only about smarter machines. It's about wise people choosing to build the *right* things, the *right* way, for the *right* reasons, and that future includes **you.**
 
-:::reveal Pick one concern from this lesson (jobs, safety, responsibility, or fairness). Explain it in your own words and give one thing an engineer could do to handle it responsibly. ||| There's no single right answer — e.g. jobs: automation can replace some work, so an engineer could design tools that assist people and support retraining rather than simply cutting them. Whichever you pick, the point is that good engineers ask "should we?" alongside "can we?" — thinking about who benefits, who's left out, and who could be harmed.
+:::reveal Pick one concern from this lesson (jobs, safety, responsibility, or fairness). Explain it in your own words and give one thing an engineer could do to handle it responsibly. ||| There's no single right answer, e.g. jobs: automation can replace some work, so an engineer could design tools that assist people and support retraining rather than simply cutting them. Whichever you pick, the point is that good engineers ask "should we?" alongside "can we?", thinking about who benefits, who's left out, and who could be harmed.
 
 ## Sources
 FDA. (n.d.). *Computer-assisted surgical systems*. U.S. Food and Drug Administration. https://www.fda.gov/medical-devices/surgery-devices/computer-assisted-surgical-systems

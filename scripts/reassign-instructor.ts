@@ -33,7 +33,7 @@ async function main() {
     .where(eq(schema.users.email, OWNER_EMAIL))
     .limit(1);
   if (!owner) {
-    console.error(`Owner ${OWNER_EMAIL} not found — has BAM logged in? Set PLATFORM_OWNER_EMAIL if different.`);
+    console.error(`Owner ${OWNER_EMAIL} not found, has BAM logged in? Set PLATFORM_OWNER_EMAIL if different.`);
     await pool.end();
     process.exit(1);
   }
@@ -112,10 +112,10 @@ async function main() {
     }
     console.log(`Moved ${moved} course(s) into learn-witus.`);
     if (dupes.length) {
-      console.log(`SKIPPED ${dupes.length} stranded duplicate(s) — the same slug already lives on learn-witus:`);
+      console.log(`SKIPPED ${dupes.length} stranded duplicate(s), the same slug already lives on learn-witus:`);
       for (const d of dupes) console.log(`  - ${d.slug} (stranded course id ${d.id})`);
       console.log(
-        "These are stale leftovers from the old per-tenant seeds. Verify each has no enrollments you care about, then delete by id — this script deliberately never deletes courses.",
+        "These are stale leftovers from the old per-tenant seeds. Verify each has no enrollments you care about, then delete by id, this script deliberately never deletes courses.",
       );
     }
   }
@@ -147,7 +147,7 @@ async function main() {
   }
   console.log(`Reassigned ${fixed} course(s) to ${OWNER_EMAIL}.`);
   if (instructorDupes.length) {
-    console.log(`SKIPPED ${instructorDupes.length} duplicate(s) — ${OWNER_EMAIL} already owns a course with the same slug:`);
+    console.log(`SKIPPED ${instructorDupes.length} duplicate(s), ${OWNER_EMAIL} already owns a course with the same slug:`);
     for (const d of instructorDupes) console.log(`  - ${d.slug} (course id ${d.id})`);
   }
   console.log("Done.");

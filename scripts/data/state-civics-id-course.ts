@@ -159,7 +159,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
 - **Contact your three legislators**, you have one senator and two representatives from your shared district.
 - **Run**: school board, city council, and county commission are reachable local starting points.
 
-:::reveal How are Idaho's judges chosen, and how many legislators can you contact from your district? ||| Idaho chooses judges through nonpartisan elections (with the governor appointing to fill mid-term vacancies, followed by an election). You can contact three legislators from your district — one senator and two representatives, who share the same district.
+:::reveal How are Idaho's judges chosen, and how many legislators can you contact from your district? ||| Idaho chooses judges through nonpartisan elections (with the governor appointing to fill mid-term vacancies, followed by an election). You can contact three legislators from your district, one senator and two representatives, who share the same district.
 
 ## Sources
 - Idaho Supreme Court. (n.d.). *Nonpartisan judicial elections; the Idaho Judicial Council*. isc.idaho.gov. https://isc.idaho.gov/

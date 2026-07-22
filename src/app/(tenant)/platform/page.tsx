@@ -21,13 +21,13 @@ const FEATURES: Feature[] = [
     icon: "🌐",
     title: "Your own brand, your own domain",
     body:
-      "Attach your own domain from the admin dashboard — the platform verifies it and handles DNS automatically. Learners never see \"WitUS\"; they see your school.",
+      "Attach your own domain from the admin dashboard, the platform verifies it and handles DNS automatically. Learners never see \"WitUS\"; they see your school.",
   },
   {
     icon: "📚",
     title: "Cited, media-rich courses",
     body:
-      "Every claim ties to a real source with an in-line citation and a bibliography. Lessons carry audio, video, and rich media — not just text.",
+      "Every claim ties to a real source with an in-line citation and a bibliography. Lessons carry audio, video, and rich media, not just text.",
   },
   {
     icon: "🔴",
@@ -39,19 +39,19 @@ const FEATURES: Feature[] = [
     icon: "👨‍👩‍👧",
     title: "A parent view, built in",
     body:
-      "Parents get read-only access to their child's progress, grades, credentials, and attendance — no separate app, no spreadsheet.",
+      "Parents get read-only access to their child's progress, grades, credentials, and attendance, no separate app, no spreadsheet.",
   },
   {
     icon: "🧒",
     title: "Kid-friendly login",
     body:
-      "Young learners without an email sign in with a class code, an avatar, and a PIN — no password, no account for a parent to manage.",
+      "Young learners without an email sign in with a class code, an avatar, and a PIN, no password, no account for a parent to manage.",
   },
   {
     icon: "🤖",
     title: "An AI tutor, grounded in your content",
     body:
-      "A built-in tutor answers questions using only what's actually taught in your courses — not the open internet.",
+      "A built-in tutor answers questions using only what's actually taught in your courses, not the open internet.",
   },
 ];
 
@@ -72,7 +72,7 @@ export default async function PlatformPage() {
         </p>
         <h1 className="mt-2 text-4xl font-bold sm:text-5xl">Run your own cited, media-rich school</h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-600 dark:text-neutral-400">
-          Learn.WitUS is a multi-tenant learning platform. You teach; we host — under your own brand,
+          Learn.WitUS is a multi-tenant learning platform. You teach; we host, under your own brand,
           on your own domain, strictly isolated from every other school on the platform.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -113,8 +113,8 @@ export default async function PlatformPage() {
       <section className="rounded-lg border-2 p-6 text-center" style={{ borderColor: "var(--accent)" }}>
         <h2 className="text-xl font-semibold">See it before you commit to anything</h2>
         <p className="mx-auto mt-2 max-w-xl text-neutral-600 dark:text-neutral-400">
-          The Acme Academy demo school lets you try every teacher and admin feature — authoring, live
-          classes, cohorts, the dashboard — with a shared demo account. No signup required.
+          The Acme Academy demo school lets you try every teacher and admin feature, authoring, live
+          classes, cohorts, the dashboard, with a shared demo account. No signup required.
         </p>
         <div className="mt-5 flex flex-wrap items-center justify-center gap-4">
           <Link

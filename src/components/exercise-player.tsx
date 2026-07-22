@@ -107,7 +107,7 @@ function Item({
         <p className="mt-2 text-sm text-green-700 dark:text-green-400">✓ Correct!</p>
       ) : verdict === "close" ? (
         <p className="mt-2 text-sm text-amber-700 dark:text-amber-400">
-          Almost — watch the spelling/accent: <strong>{item.answer}</strong>
+          Almost, watch the spelling/accent: <strong>{item.answer}</strong>
         </p>
       ) : verdict === "incorrect" ? (
         <div className="mt-2 text-sm text-red-700 dark:text-red-400">

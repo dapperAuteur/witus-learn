@@ -37,7 +37,7 @@ export default async function AnnounceCoursesPage() {
       <h1 className="mt-4 text-2xl font-bold">Announce courses</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
         Send new-course announcements to the WitUS Outbox as drafts. Review each draft and choose the
-        social profiles there before it publishes — nothing goes out automatically.
+        social profiles there before it publishes, nothing goes out automatically.
       </p>
       <div className="mt-6">
         <AnnounceManager courses={rows} outboxConfigured={hasOutbox} />

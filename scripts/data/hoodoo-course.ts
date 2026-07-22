@@ -368,10 +368,10 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Are Hoodoo and 'Voodoo' two names for exactly the same thing?",
             options: [
-              "No — Vodou/Vodun are organized religions, while Hoodoo is a distinct African American folk practice",
+              "No, Vodou/Vodun are organized religions, while Hoodoo is a distinct African American folk practice",
               "Yes, they are identical",
               "Yes, but only in Louisiana",
-              "No — Hoodoo is the clergy branch of Vodou",
+              "No, Hoodoo is the clergy branch of Vodou",
             ],
             correctIndex: 0,
             explanation:

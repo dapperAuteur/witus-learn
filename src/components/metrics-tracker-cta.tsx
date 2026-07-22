@@ -7,11 +7,11 @@ export function MetricsTrackerCta() {
       <p className="font-semibold">Your metrics tracker</p>
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
         Log and review your daily body data in the CentenarianOS tracker. You&rsquo;ll be signed in
-        automatically with your Learn.WitUS account — no separate login. Your metrics are stored in
+        automatically with your Learn.WitUS account, no separate login. Your metrics are stored in
         CentenarianOS.
       </p>
       {/* A real <a>, not next/link: this navigates to our API route, which mints a fresh
-          token and 302s to an external host — a client-side <Link> can't follow that. */}
+          token and 302s to an external host, a client-side <Link> can't follow that. */}
       {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
       <a
         href="/api/integrations/centos/metrics"

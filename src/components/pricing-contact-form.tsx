@@ -81,7 +81,7 @@ export function PricingContactForm() {
         className="rounded-xl border-2 p-5"
         style={{ borderColor: "var(--accent)" }}
       >
-        <h3 className="text-lg font-semibold">Got it — thank you.</h3>
+        <h3 className="text-lg font-semibold">Got it, thank you.</h3>
         <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
           Your message is with us and a human will read it. We&apos;ll reply to the email address you
           gave us with pricing for the number of students you have in mind.
@@ -198,7 +198,7 @@ export function PricingContactForm() {
             className={field}
           />
           <p id={`${id}-students-hint`} className="mt-1 text-xs text-neutral-500">
-            One child or a whole district — both are fine.
+            One child or a whole district, both are fine.
           </p>
           {errors.students ? (
             <p id={`${id}-students-err`} className={errClass}>
@@ -230,7 +230,7 @@ export function PricingContactForm() {
 
       {/* Honeypot. Hidden from people and from assistive tech; a bot fills it and gets binned
           server-side. tabIndex -1 + aria-hidden so a keyboard or screen-reader user never lands
-          on it — which is what makes it safe to treat as "only a bot could have done this". */}
+          on it, which is what makes it safe to treat as "only a bot could have done this". */}
       <div aria-hidden className="absolute left-[-9999px] h-0 w-0 overflow-hidden">
         <label htmlFor={`${id}-company`}>Company (leave this empty)</label>
         <input id={`${id}-company`} name="company" type="text" tabIndex={-1} autoComplete="off" />

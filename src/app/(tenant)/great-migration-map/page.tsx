@@ -5,7 +5,7 @@ import { requireTenant } from "@/lib/tenant";
 import { listCourses } from "@/db/queries/catalog";
 import { GreatMigrationMap } from "@/components/great-migration-map";
 
-export const metadata: Metadata = { title: "The Great Migration — Interactive Map" };
+export const metadata: Metadata = { title: "The Great Migration, Interactive Map" };
 
 const VALID_FOCUS = new Set(["chicago", "harlem", "detroit", "vanport"]);
 
@@ -28,10 +28,10 @@ export default async function GreatMigrationMapPage({ searchParams }: SP) {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-10">
-      <h1 className="text-2xl font-bold">The Great Migration — interactive map</h1>
+      <h1 className="text-2xl font-bold">The Great Migration, interactive map</h1>
       <p className="mt-1 text-neutral-600 dark:text-neutral-400">
-        Trace the three migration streams and click a destination — Chicago, Harlem, Detroit, or
-        Vanport, Oregon — for a short story, a historical event, a figure, and a work of art tied
+        Trace the three migration streams and click a destination, Chicago, Harlem, Detroit, or
+        Vanport, Oregon, for a short story, a historical event, a figure, and a work of art tied
         to that place. Pairs with{" "}
         <Link href={`/course/${course.id}`} className="underline" style={{ color: "var(--accent)" }}>
           {course.title}

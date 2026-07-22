@@ -84,7 +84,7 @@ async function main() {
     .limit(1);
   const tenantId = t[0]?.id;
   if (!tenantId) {
-    console.error("BVC tenant missing — run `pnpm seed:tenants` first.");
+    console.error("BVC tenant missing, run `pnpm seed:tenants` first.");
     process.exit(1);
   }
 
@@ -269,7 +269,7 @@ async function main() {
         lon: -86.2,
         color: SEASON_COLOR.home,
         isHome: true,
-        summary: "WitUS home base — where the story is told.",
+        summary: "WitUS home base, where the story is told.",
         sortOrder: 99,
       });
     }

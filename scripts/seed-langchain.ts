@@ -101,7 +101,7 @@ function assertNoAiTells(course: AuthoredCourse): void {
 async function main() {
   const learnWitus = await tenantBySlug("learn-witus");
   if (!learnWitus) {
-    console.error("Learn.WitUS tenant missing — run `pnpm seed:tenants` first.");
+    console.error("Learn.WitUS tenant missing, run `pnpm seed:tenants` first.");
     process.exit(1);
   }
   // BAM is the instructor on Learn.WitUS courses (matches seed-courses.ts).

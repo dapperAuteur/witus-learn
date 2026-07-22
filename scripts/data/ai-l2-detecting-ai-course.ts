@@ -244,7 +244,7 @@ A 30-second gut-check, drawn from everything above:
 
 That's it. You will not catch every fake: **nobody can, and no tool can; detection is genuinely imperfect.** But you don't need perfection. By trading "spot the pixel flaw" for **provenance, lateral reading, and a callback for anything urgent**, you become dramatically harder to fool *and* you stop being a vector that fools others. That's the empowering truth this course is built on: you can't control what gets generated, but you fully control whether you verify before you believe, and before you share.
 
-:::reveal What's the single most effective habit against misinformation, and what should you do when you genuinely can't tell if something is real? ||| The single most effective habit is to verify before you believe or share — check provenance and read laterally, especially for anything urgent. When you genuinely can't tell, don't share it: "I'm not sure this is real" is reason enough to hold (and don't declare it fake without checking either).
+:::reveal What's the single most effective habit against misinformation, and what should you do when you genuinely can't tell if something is real? ||| The single most effective habit is to verify before you believe or share, check provenance and read laterally, especially for anything urgent. When you genuinely can't tell, don't share it: "I'm not sure this is real" is reason enough to hold (and don't declare it fake without checking either).
 
 ## Sources
 - News Literacy Project. RumorGuard (tips before you share). https://www.rumorguard.org/

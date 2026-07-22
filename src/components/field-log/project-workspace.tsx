@@ -15,14 +15,14 @@ import { patchJson, postJson } from "./client";
 
 // Education, not legal advice — jurisdiction varies (see plans/future/15-field-log-safety-legal.md).
 const CONSENT_DISCLAIMER =
-  "Trust starts with consent. Log who's in each capture and whether they agreed. If someone declines, don't publish them. For anyone under 18, get a parent/guardian's yes. Laws vary by place — this is guidance, not legal advice.";
+  "Trust starts with consent. Log who's in each capture and whether they agreed. If someone declines, don't publish them. For anyone under 18, get a parent/guardian's yes. Laws vary by place, this is guidance, not legal advice.";
 
 const CONSENT_OPTIONS = [
   { v: "na", label: "No identifiable person" },
   { v: "verbal_recorded", label: "Verbal (recorded)" },
   { v: "written", label: "Written" },
   { v: "on_record", label: "On the record" },
-  { v: "declined", label: "Declined — do not publish" },
+  { v: "declined", label: "Declined, do not publish" },
 ] as const;
 const CAPTURE_KINDS = ["photo", "audio", "video", "document", "interview", "artifact", "note"] as const;
 const SITE_TYPES = ["farm", "factory", "office", "market", "home", "public-space", "archive", "other"] as const;
@@ -107,13 +107,13 @@ export function ProjectWorkspace({
     const out: string[] = [];
     const now = new Date();
     const noLink = captures.filter((c) => !c.storageUrl).length;
-    if (noLink) out.push(`${noLink} capture(s) have no media link yet — back up your files and add the link.`);
+    if (noLink) out.push(`${noLink} capture(s) have no media link yet, back up your files and add the link.`);
     const naWithSubject = captures.filter((c) => c.consentStatus === "na" && c.subject).length;
-    if (naWithSubject) out.push(`${naWithSubject} capture(s) have a subject but no consent logged — double-check any people are covered.`);
+    if (naWithSubject) out.push(`${naWithSubject} capture(s) have a subject but no consent logged, double-check any people are covered.`);
     const declined = captures.filter((c) => c.consentStatus === "declined").length;
-    if (declined) out.push(`${declined} subject(s) declined — don't publish them.`);
+    if (declined) out.push(`${declined} subject(s) declined, don't publish them.`);
     const overdue = legs.filter((l) => l.startDate && !l.visited && new Date(l.startDate) < now).length;
-    if (overdue) out.push(`${overdue} planned leg(s) are past their date — revisit or mark visited.`);
+    if (overdue) out.push(`${overdue} planned leg(s) are past their date, revisit or mark visited.`);
     return out;
   }, [captures, legs]);
 
@@ -243,7 +243,7 @@ export function ProjectWorkspace({
       ) : null}
       {pending.length ? (
         <p className="mt-3 rounded-md bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:bg-amber-950 dark:text-amber-300">
-          {pending.length} capture(s) saved offline — they’ll sync when you’re back online.
+          {pending.length} capture(s) saved offline, they’ll sync when you’re back online.
         </p>
       ) : null}
       {reminders.length ? (
@@ -297,7 +297,7 @@ function ReviewsTab({ reviews, project }: { reviews: ProjectReview[]; project: D
           Endorsements: <strong>{endorsements}/{CREDENTIAL_ENDORSEMENTS_REQUIRED}</strong> · self-attested: <strong>{selfAttested ? "yes" : "no"}</strong>
         </p>
         <p className={`mt-1 ${meets ? "text-emerald-600 dark:text-emerald-400" : "text-neutral-500"}`}>
-          {meets ? "✓ Meets the credential bar" : "Not yet — needs self-attest + 2 endorsements."}
+          {meets ? "✓ Meets the credential bar" : "Not yet, needs self-attest + 2 endorsements."}
         </p>
         {project.visibility === "private" ? (
           <p className="mt-1 text-xs text-neutral-500">Use “Self-attest &amp; request review” above to open this to peer reviewers.</p>
@@ -406,7 +406,7 @@ function LegsTab({
     <div className="space-y-4">
       <label className="flex items-center gap-2 text-sm">
         <input type="checkbox" checked={chainMode} onChange={(e) => onChainMode(e.target.checked)} className="h-4 w-4" />
-        Chain mode — view legs as the nodes of a chain (grower → factory → boardroom)
+        Chain mode, view legs as the nodes of a chain (grower → factory → boardroom)
       </label>
 
       <ol className="space-y-2">
@@ -511,7 +511,7 @@ function CapturesTab({
               {legs.map((l) => <option key={l.id} value={l.id}>{l.name}</option>)}
             </select>
           ) : null}
-          <input value={storageUrl} onChange={(e) => setStorageUrl(e.target.value)} placeholder="Media link (Drive/YouTube/…) — link only" className={`${field} text-sm sm:col-span-2`} />
+          <input value={storageUrl} onChange={(e) => setStorageUrl(e.target.value)} placeholder="Media link (Drive/YouTube/…), link only" className={`${field} text-sm sm:col-span-2`} />
           <input value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Notes" className={`${field} text-sm sm:col-span-2`} />
         </div>
         <label className="mt-2 flex items-center gap-2 text-sm">
@@ -540,9 +540,9 @@ function CapturesTab({
           <tbody>
             {rows.map((r) => (
               <tr key={r.id} className="border-t border-neutral-100 dark:border-neutral-800">
-                <td className="py-1 pr-3">{r.subject || <span className="text-neutral-400">—</span>}{r.pending ? <span className="ml-2 text-xs text-amber-600">pending</span> : null}</td>
+                <td className="py-1 pr-3">{r.subject || <span className="text-neutral-400">-</span>}{r.pending ? <span className="ml-2 text-xs text-amber-600">pending</span> : null}</td>
                 <td className="py-1 pr-3">{ledger ? r.consentStatus : r.kind}</td>
-                <td className="py-1 pr-3 text-xs text-neutral-500">{r.createdAt ? new Date(r.createdAt).toLocaleString() : "—"}</td>
+                <td className="py-1 pr-3 text-xs text-neutral-500">{r.createdAt ? new Date(r.createdAt).toLocaleString() : "-"}</td>
               </tr>
             ))}
             {rows.length === 0 ? (

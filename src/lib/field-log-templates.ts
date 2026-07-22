@@ -48,7 +48,7 @@ export const FIELD_LOG_TEMPLATES: FieldLogTemplate[] = [
         { id: "consent-minors", label: "Handle any minors (parent/guardian consent)" },
       ] },
       { key: "capture", title: "Capture", items: [
-        { id: "capture-gather", label: "Gather material — log each capture with its consent status" },
+        { id: "capture-gather", label: "Gather material, log each capture with its consent status" },
         { id: "capture-ambient", label: "Get ambient + at least one interview" },
       ] },
       { key: "verify", title: "Verify", items: [
