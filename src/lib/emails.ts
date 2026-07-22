@@ -88,14 +88,14 @@ export async function sendPricingInquiryEmail(opts: {
   adminUrl: string;
 }): Promise<void> {
   const brand = brandName(opts.tenant);
-  const role = opts.inquiry.role ? (ROLE_LABELS[opts.inquiry.role] ?? opts.inquiry.role) : "—";
-  const students = opts.inquiry.students != null ? String(opts.inquiry.students) : "—";
+  const role = opts.inquiry.role ? (ROLE_LABELS[opts.inquiry.role] ?? opts.inquiry.role) : "-";
+  const students = opts.inquiry.students != null ? String(opts.inquiry.students) : "-";
   const who = opts.fromName?.trim() || opts.fromEmail;
 
   const lines = [
     `New pricing enquiry for ${brand}.`,
     "",
-    `Name:     ${opts.fromName?.trim() || "—"}`,
+    `Name:     ${opts.fromName?.trim() || "-"}`,
     `Email:    ${opts.fromEmail}`,
     `Role:     ${role}`,
     `Students: ${students}`,

@@ -86,7 +86,7 @@ export async function checkDomainDns(host: string): Promise<DnsStatus> {
       return { ok: true, detail: cname[0] ? `CNAME → ${cname[0]}` : `A → ${a.join(", ")}` };
     }
     if (a.length || cname.length) {
-      return { ok: false, detail: `resolves to ${cname[0] ?? a.join(", ")} — not the app yet (DNS may still be propagating)` };
+      return { ok: false, detail: `resolves to ${cname[0] ?? a.join(", ")}, not the app yet (DNS may still be propagating)` };
     }
     return { ok: false, detail: "no DNS record found yet" };
   } catch {

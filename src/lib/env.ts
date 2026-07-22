@@ -152,7 +152,7 @@ if (!parsed.success) {
     `Invalid environment variables:\n${JSON.stringify(fields, null, 2)}\n` +
       "On Vercel, set these in Project → Settings → Environment Variables for the deployed " +
       "environment (Production/Preview). DATABASE_URL may instead arrive as POSTGRES_URL from " +
-      "the Neon integration — both are accepted; if neither is present this error is shown.",
+      "the Neon integration, both are accepted; if neither is present this error is shown.",
   );
 }
 

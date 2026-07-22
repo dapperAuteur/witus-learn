@@ -16,7 +16,7 @@ export interface RubricCriterion {
 }
 
 export const RUBRIC_CRITERIA: RubricCriterion[] = [
-  { id: "question", label: "Focused question", pillar: "Planning", bar: "developing", naAllowed: false, hint: "A specific, researchable question — not a vague topic." },
+  { id: "question", label: "Focused question", pillar: "Planning", bar: "developing", naAllowed: false, hint: "A specific, researchable question, not a vague topic." },
   { id: "sourced", label: "Sourced & corroborated", pillar: "Seek truth", bar: "met", naAllowed: false, hint: "Central claims tie to sources; important claims corroborated." },
   { id: "verified", label: "Verified & flagged", pillar: "Seek truth", bar: "met", naAllowed: false, hint: "Media/facts checked; uncertain things flagged, not asserted." },
   { id: "consent", label: "Consent & fair representation", pillar: "Minimize harm", bar: "met", naAllowed: true, hint: "Consent logged; nothing declined published; minors handled; fair portrayal." },

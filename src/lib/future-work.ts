@@ -28,7 +28,7 @@ export type FutureWorkStatus =
 
 export const FUTURE_WORK_STATUS_LABEL: Record<FutureWorkStatus, string> = {
   proposed: "Proposed",
-  recommended: "Recommended — carries a course",
+  recommended: "Recommended, carries a course",
   researching: "Researching",
   building: "Building now",
   chapter: "Chapter, not a course",
@@ -75,12 +75,12 @@ function subjectStatus(key: string): FutureWorkStatus {
 const SHE_DID_THE_WORK: FutureWorkItem[] = [
   {
     key: "she-did-the-work",
-    title: "She Did the Work — course proposals",
+    title: "She Did the Work, course proposals",
     kind: "course",
     status: "proposed",
     group: "She Did the Work",
     summary:
-      "Nine proposed courses (A–I) with a recommended build order, the 14 factual errors found in the source calendar, and the rights/permissions table.",
+      "Nine proposed courses (A-I) with a recommended build order, the 14 factual errors found in the source calendar, and the rights/permissions table.",
     body: SHE_DID_THE_WORK_PROPOSAL,
     provenance: "plans/future-courses/she-did-the-work/00-course-proposals.md",
   },
@@ -89,7 +89,7 @@ const SHE_DID_THE_WORK: FutureWorkItem[] = [
     title: s.name,
     kind: "course",
     status: subjectStatus(s.key),
-    group: "She Did the Work — subject research",
+    group: "She Did the Work, subject research",
     summary: s.summary,
     body: s.body,
     provenance: `plans/future-courses/she-did-the-work/${s.name}.md`,
