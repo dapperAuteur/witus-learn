@@ -43,7 +43,7 @@ describe("courseToRecordingScript", () => {
       { title: "Intro", body: "Welcome.", section: "Start" },
       { title: "Quiz", body: null, section: "Start" },
     ]);
-    expect(script).toContain("Recording script — Test Course");
+    expect(script).toContain("Recording script: Test Course");
     expect(script).toContain("----- SECTION: Start -----");
     expect(script).toContain("=== Lesson 1: Intro ===");
     expect(script).toContain("Welcome.");

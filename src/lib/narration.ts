@@ -79,7 +79,7 @@ export function courseToRecordingScript(
   opts: NarrationOptions = {},
 ): string {
   const parts: string[] = [
-    `# Recording script, ${title}`,
+    `# Recording script: ${title}`,
     `\n(Read the plain text aloud. "[PAUSE]" marks a break between lessons. Citations and`,
     `formatting have been removed. Review before recording.)\n`,
   ];
