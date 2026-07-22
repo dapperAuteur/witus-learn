@@ -99,7 +99,7 @@ function GuardianInvite({ cohortId, studentUserId }: { cohortId: string; student
             <p className="text-xs text-green-700 dark:text-green-400">✓ Invite emailed. Link to share:</p>
           ) : (
             <p className="text-xs text-amber-700 dark:text-amber-400">
-              Email delivery isn&apos;t set up yet — copy and share this link directly:
+              Email delivery isn&apos;t set up yet, copy and share this link directly:
             </p>
           )}
           <div className="mt-1">
@@ -177,7 +177,7 @@ export function CohortRoster({ cohortId, members }: { cohortId: string; members:
               <p className="text-green-700 dark:text-green-400">✓ Invite emailed. You can also share the link:</p>
             ) : (
               <p className="text-amber-700 dark:text-amber-400">
-                Email delivery isn&apos;t set up yet — copy and share this link directly:
+                Email delivery isn&apos;t set up yet, copy and share this link directly:
               </p>
             )}
             <div className="mt-1">
@@ -208,7 +208,7 @@ export function CohortRoster({ cohortId, members }: { cohortId: string; members:
               </div>
             </li>
           ))}
-          {members.length === 0 ? <li className="py-2 text-sm text-neutral-500">No students yet — invite one above.</li> : null}
+          {members.length === 0 ? <li className="py-2 text-sm text-neutral-500">No students yet, invite one above.</li> : null}
         </ul>
       </div>
     </div>

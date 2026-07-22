@@ -42,7 +42,7 @@ export function CourseSourceChat({ courseId, courseTitle }: { courseId: string; 
       <h2 className="font-semibold">Chat with the sources</h2>
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
         Ask about <span className="font-medium">{courseTitle}</span>. Answers come only from this
-        course&apos;s cited sources — if it&apos;s not in them, it&apos;ll say so.
+        course&apos;s cited sources, if it&apos;s not in them, it&apos;ll say so.
       </p>
       <textarea
         value={question}

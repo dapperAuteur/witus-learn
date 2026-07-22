@@ -80,7 +80,7 @@ export function EpisodeDetail({
       id={id}
       tabIndex={-1}
       role="group"
-      aria-label={`${pin.name} — episode detail`}
+      aria-label={`${pin.name}, episode detail`}
       className={`rounded-xl border-2 p-4 focus-visible:outline-2 focus-visible:outline-offset-2 sm:p-5 ${className ?? ""}`}
       style={{ borderColor: pin.color ?? "var(--accent)" }}
     >

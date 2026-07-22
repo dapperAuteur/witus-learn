@@ -70,7 +70,7 @@ export function LearnerDashboardView({
           className="mt-6 flex items-center justify-between gap-3 rounded-xl border-2 p-4 transition hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2"
           style={{ borderColor: "var(--accent)" }}
         >
-          <span className="font-semibold">🗺️ Explore the Commodity Map — where every story begins</span>
+          <span className="font-semibold">🗺️ Explore the Commodity Map, where every story begins</span>
           <span aria-hidden className="text-xl" style={{ color: "var(--accent)" }}>→</span>
         </Link>
       ) : null}

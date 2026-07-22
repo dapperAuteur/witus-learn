@@ -52,7 +52,7 @@ export function NewProject() {
           Template
           <select value={templateKey} onChange={(e) => setTemplateKey(e.target.value)} className={`mt-1 ${field}`}>
             {FIELD_LOG_TEMPLATES.map((t) => (
-              <option key={t.key} value={t.key}>{t.title} — {t.description}</option>
+              <option key={t.key} value={t.key}>{t.title}, {t.description}</option>
             ))}
           </select>
         </label>
@@ -61,7 +61,7 @@ export function NewProject() {
           <input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="e.g. Ghana chocolate — field collection"
+            placeholder="e.g. Ghana chocolate, field collection"
             className={`mt-1 ${field}`}
             autoFocus
           />

@@ -1983,7 +1983,7 @@ The population that clears all of this, living primarily on playing income, is, 
       slug: "chess-coaching-scholastic",
       title: "30 · Coaching and the scholastic pipeline: chess's biggest real labor market",
       section: "Section 6 · The economy around the board: amateurs and entrepreneurs",
-      body: `If you want to see where chess money actually changes hands in America, skip the grandmaster invitational and walk into a school cafeteria on a Saturday morning: hundreds of kids, paid coaches, an organizer who rented the space, a TD running pairings, and parents who wrote checks for lessons, club dues, and entry fees. **Scholastic chess is the load-bearing floor of the U.S. chess economy**, and US Chess's own calendar says so the federation sanctions over twenty national championships a year, a large share of them scholastic (US Chess, n.d.).
+      body: `If you want to see where chess money actually changes hands in America, skip the grandmaster invitational and walk into a school cafeteria on a Saturday morning: hundreds of kids, paid coaches, an organizer who rented the space, a TD running pairings, and parents who wrote checks for lessons, club dues, and entry fees. **Scholastic chess is the load-bearing floor of the U.S. chess economy**, and US Chess's own calendar says so: the federation sanctions over twenty national championships a year, a large share of them scholastic (US Chess, n.d.).
 
 **The coaching market, honestly described.** Chess coaching runs from a college student running a lunchtime club program, through after-school enrichment companies that place coaches in dozens of schools, up to titled players charging premium rates for private lessons online. Three honest facts about it:
 

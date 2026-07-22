@@ -46,7 +46,7 @@ export function AgeGate({ brand, hasSafety }: { brand: string; hasSafety: boolea
           className="min-h-12 rounded-md px-5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60"
           style={{ backgroundColor: "var(--accent)" }}
         >
-          {pending ? "Entering…" : "I am 18 or older — enter"}
+          {pending ? "Entering…" : "I am 18 or older, enter"}
         </button>
         <a
           href="https://www.google.com"

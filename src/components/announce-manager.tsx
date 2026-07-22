@@ -84,7 +84,7 @@ export function AnnounceManager({
         }. Review and pick social profiles in the Outbox.`,
       });
     } catch {
-      setMsg({ kind: "err", text: "Network error — please try again." });
+      setMsg({ kind: "err", text: "Network error, please try again." });
     } finally {
       setBusy(false);
     }
@@ -101,7 +101,7 @@ export function AnnounceManager({
       ) : null}
 
       <p className="mb-4 text-sm text-neutral-600 dark:text-neutral-400">
-        {announcedCount} of {rows.length} courses announced. Drafts go to the Outbox for your review —
+        {announcedCount} of {rows.length} courses announced. Drafts go to the Outbox for your review,
         nothing publishes automatically. Announce a batch at a time.
       </p>
 

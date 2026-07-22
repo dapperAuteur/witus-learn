@@ -1948,7 +1948,7 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "In a contract, what does \"in any media now known or hereafter devised\" do?",
             options: [
-              "Extends the licence to technologies that do not exist yet it is how an old signature ends up training a new model",
+              "Extends the licence to technologies that do not exist yet, it is how an old signature ends up training a new model",
               "Limits the licence to current technology only",
               "Requires renegotiation when technology changes",
               "Restricts the licence to broadcast television",

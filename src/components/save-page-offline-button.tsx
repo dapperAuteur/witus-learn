@@ -67,8 +67,8 @@ export function SavePageOfflineButton({
         {!ready.storage || !ready.serviceWorkerApi
           ? "This browser can’t store pages for offline. (Private / incognito windows usually block the storage it needs.)"
           : ready.registered
-            ? "Offline mode is still starting up — reload the page to finish enabling it."
-            : "Offline mode isn’t running on this page yet — reload the page to enable it."}
+            ? "Offline mode is still starting up, reload the page to finish enabling it."
+            : "Offline mode isn’t running on this page yet, reload the page to enable it."}
       </p>
     );
   }
@@ -81,7 +81,7 @@ export function SavePageOfflineButton({
       {state === "saved" ? (
         <>
           <p className="text-sm font-medium text-green-700 dark:text-green-400">
-            ✓ Saved to this device — this page opens with no connection
+            ✓ Saved to this device, this page opens with no connection
           </p>
           <p className="mt-1 text-xs text-neutral-500">
             Every proposal on it, as it reads right now. Save it again after new proposals land to
@@ -120,8 +120,8 @@ export function SavePageOfflineButton({
               saying WHAT gets stored, and WHERE, would be the lie. */}
           {meta.sensitive ? (
             <p className="mt-2 max-w-prose text-xs text-neutral-500">
-              Read the proposals on a plane. This stores a copy of this page —{" "}
-              <strong className="font-medium">including the notes on it</strong> — in this
+              Read the proposals on a plane. This stores a copy of this page,{" "}
+              <strong className="font-medium">including the notes on it</strong>, in this
               browser&rsquo;s storage on this device, where it isn&rsquo;t behind a password.
               Anyone who can use this device could read it. It&rsquo;s deleted automatically when
               you sign out, and you can remove it any time from Downloads.
@@ -131,7 +131,7 @@ export function SavePageOfflineButton({
       )}
       {state === "error" ? (
         <p className="mt-2 text-xs text-red-600 dark:text-red-400">
-          Couldn&rsquo;t save this page — nothing was stored. Check your connection and try again.
+          Couldn&rsquo;t save this page, nothing was stored. Check your connection and try again.
         </p>
       ) : null}
     </div>

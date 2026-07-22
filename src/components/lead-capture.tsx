@@ -20,7 +20,7 @@ export function LeadCapture({ source, label }: { source?: string; label?: string
   }
 
   if (state === "done") {
-    return <p className="mt-6 text-sm text-green-700 dark:text-green-400">Thanks — we&apos;ll be in touch.</p>;
+    return <p className="mt-6 text-sm text-green-700 dark:text-green-400">Thanks, we&apos;ll be in touch.</p>;
   }
 
   return (

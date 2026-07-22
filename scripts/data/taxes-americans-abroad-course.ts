@@ -231,7 +231,7 @@ This lesson is about a **completely separate obligation** that trips people up c
 
 **If you don't have to file a U.S. tax return for the year, you don't have to file Form 8938 either**, no matter how large your foreign assets are, the obligation attaches to the return (Internal Revenue Service, n.d.-p).
 
-**The FBAR and Form 8938 are not either/or many people owe both, for the same accounts, in the same year**, because they measure different things (accounts vs. a broader asset category) and go to different places (FinCEN vs. the IRS with your return). Filing one does not satisfy the other (Internal Revenue Service, n.d.-o, n.d.-r).
+**The FBAR and Form 8938 are not either/or: many people owe both, for the same accounts, in the same year**, because they measure different things (accounts vs. a broader asset category) and go to different places (FinCEN vs. the IRS with your return). Filing one does not satisfy the other (Internal Revenue Service, n.d.-o, n.d.-r).
 
 :::reveal If you already filed an FBAR for your foreign bank accounts this year, does that satisfy Form 8938 too? ||| No. They're separate requirements with different thresholds and different filing destinations (FBAR to FinCEN, Form 8938 with your IRS return), many people who cross both thresholds must file both.
 

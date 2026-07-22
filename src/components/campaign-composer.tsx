@@ -72,7 +72,7 @@ export function CampaignComposer({
           <button type="submit" disabled={busy || !subject.trim() || !body.trim()} className="min-h-11 rounded-md px-5 font-medium disabled:opacity-60" style={{ backgroundColor: "var(--accent)", color: "var(--accent-fg, #fff)" }}>
             {busy ? "Saving…" : "Save draft"}
           </button>
-          <button type="button" disabled title="Sending needs sign-off — see the note below" className="min-h-11 cursor-not-allowed rounded-md border border-neutral-300 px-5 font-medium text-neutral-400 dark:border-neutral-700">
+          <button type="button" disabled title="Sending needs sign-off, see the note below" className="min-h-11 cursor-not-allowed rounded-md border border-neutral-300 px-5 font-medium text-neutral-400 dark:border-neutral-700">
             Send (disabled)
           </button>
         </div>

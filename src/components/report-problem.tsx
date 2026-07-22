@@ -87,7 +87,7 @@ export function ReportProblem({ defaultEmail }: { defaultEmail?: string }) {
         setState("queued");
       } else {
         setState("error");
-        setError("Couldn't hold that report (storage is full). Your text is still here — copy it somewhere safe.");
+        setError("Couldn't hold that report (storage is full). Your text is still here, copy it somewhere safe.");
       }
       return;
     }
@@ -111,7 +111,7 @@ export function ReportProblem({ defaultEmail }: { defaultEmail?: string }) {
         // The server answered and said no. That is not an offline problem, and queueing it would
         // just fail again on every flush — show it instead.
         setState("error");
-        setError("Couldn't send — please try again.");
+        setError("Couldn't send, please try again.");
         return;
       }
       setState("sent");
@@ -126,7 +126,7 @@ export function ReportProblem({ defaultEmail }: { defaultEmail?: string }) {
         setState("queued");
       } else {
         setState("error");
-        setError("Network error, and the report couldn't be held. Your text is still here — copy it somewhere safe.");
+        setError("Network error, and the report couldn't be held. Your text is still here, copy it somewhere safe.");
       }
     }
   }
@@ -164,7 +164,7 @@ export function ReportProblem({ defaultEmail }: { defaultEmail?: string }) {
                     >
                       {item.failed
                         ? (item.lastError ?? "This report wasn't sent.")
-                        : "Waiting to send — goes out when you're back online"}
+                        : "Waiting to send, goes out when you're back online"}
                     </span>
                     <button
                       type="button"
@@ -227,7 +227,7 @@ export function ReportProblem({ defaultEmail }: { defaultEmail?: string }) {
           </button>
           {state === "queued" ? (
             <p role="status" className="mt-1 text-xs text-amber-700 dark:text-amber-500">
-              Saved on this device — it&rsquo;ll send itself when you&rsquo;re back online. You can close this.
+              Saved on this device, it&rsquo;ll send itself when you&rsquo;re back online. You can close this.
             </p>
           ) : null}
           {state === "error" && error ? (

@@ -24,7 +24,7 @@ export function RecallPlayer({
     <section className="my-6 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800" aria-label="Quick recall">
       <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Quick recall</h2>
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-        Try to answer from memory first — then reveal and grade yourself. Testing yourself here makes
+        Try to answer from memory first, then reveal and grade yourself. Testing yourself here makes
         it stick better than re-reading.
       </p>
       <ol className="mt-4 space-y-4">
@@ -93,7 +93,7 @@ function RecallCard({
             </div>
           ) : (
             <p className="mt-3 text-sm font-medium" style={{ color: graded ? "var(--accent)" : undefined }}>
-              {graded ? "Nice — logged as recalled." : "Logged — review this one before the quiz."}
+              {graded ? "Nice, logged as recalled." : "Logged, review this one before the quiz."}
             </p>
           )}
         </div>

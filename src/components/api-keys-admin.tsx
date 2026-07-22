@@ -83,7 +83,7 @@ export function ApiKeysAdmin({ keys }: { keys: ApiKeyRow[] }) {
       {justCreated ? (
         <div className="rounded-lg border border-amber-300 bg-amber-50 p-4 dark:border-amber-800 dark:bg-amber-950/40">
           <p className="text-sm font-semibold text-amber-900 dark:text-amber-200">
-            &ldquo;{justCreated.name}&rdquo; created — copy this key now
+            &ldquo;{justCreated.name}&rdquo; created, copy this key now
           </p>
           <p className="mt-1 text-xs text-amber-800 dark:text-amber-300">
             This is the only time the full key is shown. It will not be recoverable after you leave
@@ -158,7 +158,7 @@ export function ApiKeysAdmin({ keys }: { keys: ApiKeyRow[] }) {
             {revoked.map((k) => (
               <li key={k.id} className="py-2 text-sm text-neutral-500">
                 <span className="font-medium">{k.name}</span>{" "}
-                <span className="font-mono text-xs">{k.keyPrefix}…</span> — revoked {fmt(k.revokedAt)}
+                <span className="font-mono text-xs">{k.keyPrefix}…</span>, revoked {fmt(k.revokedAt)}
               </li>
             ))}
           </ul>

@@ -333,7 +333,7 @@ Now the detail that turns this from "corrupt" into something genuinely new:
 
 > **It was frequently signed *before the company had hired anybody*.** As Gacek (2019) puts it, "in many cases, these agreements have been signed prior to a business commencing operations, even before the hiring of the workforce."
 
-**Think about what that sentence means.** A factory is being built. There are no workers yet not one. And the company signs a *collective bargaining agreement on behalf of the workers it has not yet hired*, with a union those future workers will never meet, setting the wages and conditions they will be offered on their first day.
+**Think about what that sentence means.** A factory is being built. There are no workers yet, not one. And the company signs a *collective bargaining agreement on behalf of the workers it has not yet hired*, with a union those future workers will never meet, setting the wages and conditions they will be offered on their first day.
 
 The workers arrive. They have a union. They have a contract. **Nobody asked them anything.**
 
