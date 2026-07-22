@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
 import {
   getCourseById,
+  getCourseByIdOrSlug,
   listCategories,
   listCourses,
   type CatalogQuery,
@@ -49,6 +50,12 @@ export class ScopedDb {
   /** Course by id, scoped to this tenant (null → caller 404s; never cross-tenant). */
   getCourseById(id: string) {
     return getCourseById(this.tenantId, id);
+  }
+
+  /** Course by uuid OR slug, scoped to this tenant, for the readable /teach/<slug> URLs.
+   *  Callers must use the resolved `course.id` downstream, not the raw URL segment. */
+  getCourseByIdOrSlug(idOrSlug: string) {
+    return getCourseByIdOrSlug(this.tenantId, idOrSlug);
   }
 
   listCategories() {

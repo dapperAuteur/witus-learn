@@ -445,6 +445,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`:::reveal\` click-to-reveal, and the 180 recall beats became self-graded recall cards.
   Authored explanations cite 14 CFR only where a real rule governs. Re-run \`pnpm seed:faa\`
   (\`--dry-run\` prints the breakdown without touching the DB).
+- ✅ **Readable authoring URLs** (\`feat/teach-readable-urls\`). The instructor pages were
+  \`/teach/<uuid>\`, which is impossible to read, say out loud, or recognise in a browser history.
+  They now accept the course **slug**: \`/teach/faa-part-107\`, \`/teach/faa-part-107/script\`,
+  \`/teach/faa-part-107/submissions\`. **Every existing uuid link still works**, so nothing bookmarked
+  breaks. No migration: \`courses.slug\` already existed for the public
+  \`/{instructor}/{slug}\` URLs. Resolution is tenant-scoped like every other by-slug read (a foreign
+  course 404s, never redirects), and because a slug is unique per instructor rather than per brand,
+  an ambiguous slug deliberately resolves to nothing so the uuid stays the unambiguous way in.
 - ✅ **Section quizzes can sit WITHIN a module** (\`fix/faa-section-quizzes\`). The FAA importer no
   longer forces every quiz to the module end: a quiz row in \`quizzes-import.csv\` may opt in with an
   \`after_lesson_order\` = the lesson \`n\` it should follow, and \`seed-faa.ts\` interleaves it right
