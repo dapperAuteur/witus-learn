@@ -8,6 +8,10 @@
 // win). Every content lesson is cited (APA 7 in-line + a `## Sources` bibliography)
 // to INDIANA'S OWN OFFICIAL SOURCES: the state portal (in.gov), the Indiana General
 // Assembly (iga.in.gov), the Secretary of State / elections (in.gov/sos), and the
+// VERIFIED 2026-07-23: BAM opened https://iga.in.gov/legislative/2019/bills/house/1005
+// in a browser and confirmed it renders House Bill 1005. The SPA caveat above still stands for
+// any FUTURE iga.in.gov link (a 200 there proves nothing, so a human has to look), but this
+// particular citation is confirmed.
 // state courts (in.gov/courts), plus the U.S. Supreme Court for Crawford v. Marion
 // County (the case that upheld Indiana's voter-ID law).
 //

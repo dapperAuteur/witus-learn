@@ -665,8 +665,10 @@ for young students without email._`,
   {
     key: "metro-paths",
     title: "Metro paths: cities that can carry an Indianapolis-style spine",
-    summary: "> The ask (BAM):",
+    summary: "Eighteen candidate cities triaged by drive time from Indianapolis, each with its candidate spine named. Louisville is the strongest and closest: a 2003…",
     body: `# Metro paths: cities that can carry an Indianapolis-style spine
+
+Eighteen candidate cities triaged by drive time from Indianapolis, each with its candidate spine named. Louisville is the strongest and closest: a 2003 city-county merger that is a direct Unigov sibling, plus Buchanan v. Warley and the Ninth Street Divide. Detroit is the highest-value pairing, because Milliken v. Bradley is the legal twin of the Unigov school carve-out. San Diego's Chicano Park is the one clear victory in the catalogue.
 
 > **The ask (BAM):**
 > make list of cities to create metro learning paths like the Indianapolis Spine
