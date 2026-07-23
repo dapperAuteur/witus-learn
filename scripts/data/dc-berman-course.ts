@@ -1016,6 +1016,694 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Now  (beat 4: observation and evidence)
+    //
+    // The 360 tour of the Southwest waterfront does not have a Wanderlearn embed URL yet, and a
+    // tour URL is authoritative external data that must never be guessed
+    // (plans/future/04-wanderlearn-360-boundary.md). So this lesson ships as `virtual_tour` with
+    // NO contentUrl: the player renders the "no media yet" notice above the body, and the body is
+    // the observation brief the learner uses when the tour lands. Drop the URL in and re-seed.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "dc-now-tour",
+      title: "15 · Now: walk the waterfront (360 tour, forthcoming)",
+      section: "Section 4 · Now",
+      lessonType: "virtual_tour",
+      body: `**The 360 tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is telling you the truth rather than reporting a fault. This course was written before the tour was captured, on purpose: the site template treats beat 4 as a drop-in, so a course is complete and teachable without it and the tour is added later without restructuring anything.
+
+**Read this lesson now anyway.** It is your observation brief. Beat 4 asks one question, "what is actually there today", and the difference between a tourist looking at Southwest and a researcher looking at Southwest is entirely a matter of knowing what to look for before you arrive. **Work through this list now, then run it against the tour when it lands.**
+
+## What to look for, in order
+
+**1. Read the grain of the streets.** Section 2 taught the difference between a fine grain of small lots and many owners and a coarse grain of superblocks and few owners. **Look for the seam where one becomes the other.** In much of Southwest the through-streets give way to large blocks with buildings set back behind lawns and internal courts. **Every place the old grid does not continue is a place a superblock replaced it**, and that is a decision with a date.
+
+**2. Find the survivors, and notice they do not match.** Wheat Row and the Thomas Law House are Federal-era brick houses from the 1790s, folded into or standing beside modernist superblocks. **When you find them, ask the lesson 7 question out loud: why did these survive when a whole neighbourhood did not?** The answer is on the plaque and in the date, and it is not flattering to the idea that preservation saves what matters most.
+
+**3. Look up, and look for the freeway.** The Southeast and Southwest Freeway runs through the quadrant. **Where the tour shows an overpass, an embankment, a wall, or a street that stops at the edge of the roadway, note it.** Lesson 12 established that in Southwest the highway was part of the clearance, not a separate later insult. A street that ends at the freeway is right-of-way, and right-of-way is on a map you can request.
+
+**4. Walk the water, and ask who it is for now.** The Southwest waterfront has been rebuilt again in this century as The Wharf, a large private development you will study in lesson 17. **Look at how you reach the water: through a public promenade, or between private buildings, or past a security desk.** The most important civic question about a waterfront is whether an ordinary person can stand at its edge without buying anything, and a tour can show you the answer.
+
+**5. Count the markers and read who wrote them.** Historical markers are a public record with an author, a date, and a sponsor. **Note the sponsor's name every time.** A marker tells you what a community and an agency agreed to say in public, in a particular year, about a neighbourhood most of whose residents were removed.
+
+**6. Look for what is being built right now.** Construction fencing, a zoning notice, a public-hearing sign, a leasing banner. **Every one of those is a live document with a case number**, and Section 5 teaches you how to look them up in the District's own records.
+
+**7. Look at who is on the street.** This is a working part of the city, with residents, workers, and visitors. **Describe them as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours.
+
+## What the tour cannot show you
+
+- **It cannot show you a date.** Every change you notice happened at a time, and the tour has no clock. Beat 3 gave you the dates; beat 5 gives you the record.
+- **It cannot show you an owner.** A building's occupant is not its owner, and neither is on the facade. The parcel record has it.
+- **It cannot show you the neighbourhood that was here.** You cannot photograph a demolished alley community. **Almost everything this course is about is, by definition, not in the tour**, which is the truest thing beat 4 can teach about a place cleared this completely.
+
+**Write down your five most confident observations before the tour arrives, based on this brief and on the map lesson that follows. Then check them.** Being wrong on the record about a place you had not yet seen is a better teacher than being right about one you had.
+
+## Sources
+- Docomomo US. (n.d.). *The Southwest urban renewal area in Washington, D.C.* https://docomomo-us.org/news/the-southwest-urban-renewal-area-in-washington-d-c
+- Boundary Stones (WETA). (2022, July 21). *The cost of urban renewal in Southwest DC*. https://boundarystones.weta.org/2022/07/21/cost-urban-renewal-southwest-dc
+- Wheat Row. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Wheat_Row`,
+      recallContent: [
+        {
+          prompt: "Why is this lesson published before its 360 tour exists?",
+          answer: "Because the site template treats beat 4 as a drop-in: a course is complete and teachable with the other five beats, and the tour is added later without restructuring anything. The body is the observation brief in the meantime.",
+        },
+        {
+          prompt: "What does a change in the grain of the streets tell you to look for?",
+          answer: "The seam where a fine grid of small lots gives way to coarse superblocks set behind lawns and courts. Every place the old grid does not continue is a place a superblock replaced it, which is a dated decision.",
+        },
+        {
+          prompt: "What is the most important civic question to ask at the rebuilt waterfront?",
+          answer: "Whether an ordinary person can stand at the water's edge without buying anything: reach it through a public promenade, or only between private buildings or past a security desk. A tour can show the answer.",
+        },
+        {
+          prompt: "What is the truest thing beat 4 can teach about a place cleared this completely?",
+          answer: "That almost everything the course is about is, by definition, not in the tour. You cannot photograph a demolished alley community, so the absence is the evidence.",
+        },
+      ],
+    },
+    {
+      slug: "dc-map",
+      title: "16 · Map: one opinion, and the cities it reached",
+      section: "Section 4 · Now",
+      body: `**Read this before you touch the map, because the map's limits are a lesson in themselves.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, which means two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **A cleared quadrant is far smaller than one dot.** So this map cannot show you Southwest block by block, and pretending otherwise would be a worse lesson than admitting it.
+
+**That limitation is the most useful thing on this page.** The right map for a parcel question is not a world map. It is the District's own geographic information system and the Office of Tax and Revenue's real-property tools, which lesson 18 puts you to work in. **Choosing the right scale of map for your question is a research skill.**
+
+**So this map does the job it can do well.** It marks Southwest, and then it marks the places the *Berman* holding reached, because the argument of this course is that a single opinion decided in one small quadrant travelled across the country.
+
+**Blue: Southwest Washington itself**, plotted at an approximate point on the cleared ground.
+
+**Amber: four places the instrument was used or authorised.** Indiana Avenue is the sibling course, where the blight tool did the work; New London and Detroit are where the *Berman* standard of deference travelled in *Kelo* and *Poletown*; Overtown is a clearance-and-highway district of the kind the Indiana Avenue map already taught you to read. **These are here to show that Southwest is not a local misfortune but the origin point of a national doctrine.**
+
+**Green: two archives.** The federal record of *Berman*, the National Register, and the Historic American Buildings Survey documentation of Southwest all live in the federal collections in Washington; the District's own Redevelopment Land Agency photographs and the freeway-revolt records live in the DC Public Library's People's Archive. **Knowing where a record physically lives is part of knowing that it exists.**
+
+**Coordinates on this map are approximate points, not surveyed locations.** Do not use them to find an address. Use them to see the shape of the pattern, and use the District's parcel tools when you need a lot.
+
+**What this map cannot show, and neither could the Indiana Avenue map.** It cannot show absence. Every marker exists because something was recorded. **How many districts were cleared under the doctrine this opinion blessed, and never written up, is a question this course cannot answer and will not guess at.**
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Kelo v. City of New London, 545 U.S. 469 (2005). https://www.law.cornell.edu/supremecourt/text/04-108
+- Boundary Stones (WETA). (2022, July 21). *The cost of urban renewal in Southwest DC*. https://boundarystones.weta.org/2022/07/21/cost-urban-renewal-southwest-dc`,
+      mapContent: {
+        markers: [
+          {
+            id: "dc-southwest",
+            lat: 38.878,
+            lng: -77.021,
+            title: "Southwest Washington, D.C.",
+            color: "#1d4ed8",
+            description:
+              "The subject of this course. A majority-Black working quadrant, 69 percent African American in 1950, cleared under the District of Columbia Redevelopment Act of 1945: by the most cited estimate about 99 percent of buildings on roughly 560 acres, displacing about 23,000 residents and 1,500 businesses. The clearance was upheld in Berman v. Parker (1954), the decision that made blight-designation clearance constitutionally safe across the country. What replaced it: modernist superblocks, a freeway, and, in this century, The Wharf. What survived: a handful of 1790s houses folded into Harbour Square, and the Maine Avenue fish market.",
+          },
+          {
+            id: "dc-indiana-avenue",
+            lat: 39.7745,
+            lng: -86.1665,
+            title: "Indiana Avenue, Indianapolis, Indiana",
+            color: "#b45309",
+            description:
+              "The prerequisite course, and the reason this one exists. The blight designation and land assembly, not the highway, cleared Indiana Avenue. Berman did not cause that clearance (Indiana's 1945 statute and 1948 demolition predate the 1954 decision), but it settled the constitutional question that made the tool Indianapolis was already using safe from a Fifth Amendment challenge anywhere.",
+          },
+          {
+            id: "dc-new-london",
+            lat: 41.348,
+            lng: -72.093,
+            title: "Fort Trumbull, New London, Connecticut",
+            color: "#b45309",
+            description:
+              "Where the Berman standard arrived in 2005. In Kelo v. City of New London the Court, citing Berman and Midkiff, allowed the taking of well-maintained, non-blighted homes for a private economic-development plan. The tool that began as slum clearance in Southwest had reached sound houses taken for growth. The public backlash led many states to amend their eminent-domain laws.",
+          },
+          {
+            id: "dc-poletown",
+            lat: 42.377,
+            lng: -83.049,
+            title: "Poletown, Detroit, Michigan",
+            color: "#b45309",
+            description:
+              "In 1981 the Michigan Supreme Court let Detroit condemn an entire working neighbourhood for a General Motors plant, in the deferential spirit Berman had established. Michigan later overruled the decision in 2004, but for two decades it was a model other cities studied. A state application of the doctrine this course traces from Southwest.",
+          },
+          {
+            id: "dc-overtown",
+            lat: 25.7877,
+            lng: -80.198,
+            title: "Overtown, Miami, Florida",
+            color: "#b45309",
+            description:
+              "The district once known as the Harlem of the South, cut by Interstate 95 in a clearance-and-highway operation like the ones both prerequisite courses taught. It is here to place Southwest in the national pattern of Black districts cleared under the renewal and highway instruments, not as an isolated case.",
+          },
+          {
+            id: "dc-federal-archives",
+            lat: 38.8893,
+            lng: -77.023,
+            title: "Federal records, Washington, D.C.",
+            color: "#15803d",
+            description:
+              "Where the reported opinion in Berman, the National Register nominations, and the Historic American Buildings Survey documentation of the Southwest urban renewal area are kept. Every quotation from the opinion in Section 3 can be checked against the U.S. Reports held here.",
+          },
+          {
+            id: "dc-peoples-archive",
+            lat: 38.9007,
+            lng: -77.025,
+            title: "The People's Archive, DC Public Library",
+            color: "#15803d",
+            description:
+              "Where the District's own memory of this story lives: the Redevelopment Land Agency photograph collection recording Southwest before and during clearance, and the records of the Emergency Committee on the Transportation Crisis that fought the freeways. A local archive holds what the federal record does not.",
+          },
+        ],
+      },
+      recallContent: [
+        {
+          prompt: "Why is this course's map national rather than block by block?",
+          answer: "Because the lesson map draws the whole world, so points need roughly two degrees of separation to be distinguishable, and a cleared quadrant is far smaller than one dot. For a parcel question the right tools are the District's own GIS and real-property records.",
+        },
+        {
+          prompt: "What do the amber markers on this map have in common?",
+          answer: "They are places the Berman holding reached: Indiana Avenue where the blight tool did the work, New London and Detroit where the deference standard travelled in Kelo and Poletown, and Overtown as part of the national clearance-and-highway pattern. Southwest is the origin point of a national doctrine.",
+        },
+        {
+          prompt: "What do the two green markers represent, and why include them?",
+          answer: "The federal records (the Berman opinion, National Register, and HABS documentation) and the DC Public Library People's Archive (the RLA photographs and the freeway-revolt records). Knowing where a record physically lives is part of knowing it exists.",
+        },
+        {
+          prompt: "What can this map, like the Indiana Avenue map, not show?",
+          answer: "Absence. Every marker exists because something was recorded. How many districts were cleared under this doctrine and never written up is a question the course cannot answer and will not guess at.",
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Next  (beat 5: live civics. who governs this ground now, and a real parcel)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "dc-next-adopted-plan",
+      title: "17 · Who governs this ground now",
+      section: "Section 5 · Next",
+      body: `Beat 5 turns a history course into a civics course. **Every site has a present legal status and a plan being written for it right now**, and finding those is a research skill. In Washington the answer carries the same asterisk Section 3 established, and it is a live one.
+
+**Start with the four questions, in this order.** They work for any American parcel.
+1. **What does the comprehensive plan say this land should become?**
+2. **What does the zoning permit today?**
+3. **Is there an area-specific plan or a live development, and who approved it?**
+4. **Who is the decision-making body, when does it meet, and is the agenda public?**
+
+**Question 1: the comprehensive plan.** The District has a **Comprehensive Plan**, maintained by the **DC Office of Planning** and adopted by the **Council of the District of Columbia**, with its federal elements written by the **National Capital Planning Commission** (NCPC). **A comprehensive plan is not zoning.** It is the policy statement that rezonings are judged against, which is why a zoning hearing so often turns into an argument about what the plan says.
+
+**Question 2: zoning, and here is the DC-specific twist that ties directly to Section 3.** Zoning in the District is set by the **Zoning Commission**, and its membership is not what you would expect of a self-governing city. **The Zoning Commission has five members: three District residents appointed by the Mayor and confirmed by the Council, and two federal officials, the Architect of the Capitol and the Director of the National Park Service, or their representatives** (DC Office of Zoning, n.d.). **Read that against lesson 13.** The body that decides what may be built on this ground still, by law, seats two members whom no District voter chose and no District official appoints. The federal hand that cleared Southwest without a local vote has never fully left the zoning of it. The District's nonvoting delegate has introduced legislation to remove the federal members; as of the most recent action it had not become law, which makes it a live civics question and not a settled one (Norton, n.d.).
+
+**Question 3: what is actually happening on the ground.** The Southwest waterfront has been redeveloped again in this century as **The Wharf**, by the developer partnership **Hoffman-Madison Waterfront**, selected by the District in 2006. Its first phase opened in **October 2017** and its second phase in **October 2022** (Hoffman-Madison Waterfront, 2017; The Wharf, n.d.). **Notice the shape of the story: public land assembled by a redevelopment agency, conveyed to a private developer, rebuilt at large scale.** That is the *Berman* pattern from lesson 10 running again, in the same quadrant, seventy years later, this time for a waterfront of restaurants and hotels rather than modernist housing. **Whether that is renewal or displacement in a new key is exactly the kind of question beat 5 wants you to ask with the records open, not to answer from a slogan.**
+
+**Question 4: who decides, and where you stand.** For a Southwest parcel the bodies are the **Zoning Commission** (zoning and large planned-unit developments), the **Office of Planning** (the comprehensive plan and long-range planning), and, at the neighbourhood scale, the **Advisory Neighborhood Commission**. Southwest sits in **Ward 6**, and its ANC, **6D**, is made up of elected local commissioners whose single-member districts cover a few blocks each. **An ANC's recommendations are advisory, but agencies must give them great weight, and its meetings are the cheapest civic act there is**, which is where a resident's leverage is highest and the cost of showing up is lowest.
+
+**The honest limits of this lesson.** Plans are amended, developers change, and contracts are extended. **Every date and body above has a source and a date attached, and you should re-check all of them before you rely on any of them.** That instruction is not a disclaimer. It is the method, and in a city whose zoning still answers partly to Congress, it is also a reminder that "who governs this ground" has a longer answer here than almost anywhere else in the country.
+
+## Sources
+- DC Office of Zoning. (n.d.). *About the Zoning Commission*. https://dcoz.dc.gov/page/about-zoning-commission
+- Hoffman-Madison Waterfront. (2017, October). *Hoffman-Madison Waterfront opens The Wharf to the public on October 12*. https://www.prnewswire.com/news-releases/hoffman-madison-waterfront-opens-the-wharf-to-the-public-on-october-12-300535489.html
+- Norton, E. H. (n.d.). *DC Zoning Commission Home Rule Act* [legislation]. Office of Congresswoman Eleanor Holmes Norton. https://norton.house.gov/
+- The Wharf. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/The_Wharf_(Washington,_D.C.)`,
+      recallContent: [
+        {
+          prompt: "What are the four questions to ask about any parcel's future, in order?",
+          answer: "What the comprehensive plan says it should become; what the zoning permits today; whether there is an area plan or live development and who approved it; and who decides, when they meet, and whether the agenda is public.",
+        },
+        {
+          prompt: "What is unusual about the membership of the DC Zoning Commission, and why does it matter to this course?",
+          answer: "It has five members: three District residents appointed by the Mayor and confirmed by the Council, and two federal officials, the Architect of the Capitol and the Director of the National Park Service. The body that decides what may be built still seats members no District voter chose, echoing the absent franchise of Section 3.",
+        },
+        {
+          prompt: "How does The Wharf redevelopment repeat the Berman pattern?",
+          answer: "Public land assembled by a redevelopment agency and conveyed to a private developer (Hoffman-Madison Waterfront), rebuilt at large scale, with phases opening in 2017 and 2022. It is the public-taking-then-private-rebuilding design Berman blessed, running again in the same quadrant seventy years later.",
+        },
+        {
+          prompt: "At the neighbourhood scale, what body governs Southwest, and how much power does it have?",
+          answer: "The Advisory Neighborhood Commission; Southwest is in Ward 6 and ANC 6D. Its recommendations are advisory, but agencies must give them great weight, and its public meetings are where a resident's leverage is highest and cost lowest.",
+        },
+        {
+          prompt: "Why does this lesson tell you to re-check every date and body it gives?",
+          answer: "Because plans are amended, developers change, and contracts are extended, and in a city whose zoning still answers partly to Congress the answer to who governs this ground keeps moving. Re-checking is the method, not a disclaimer.",
+        },
+      ],
+    },
+    {
+      slug: "dc-next-exercise-parcel",
+      title: "18 · Practice: look up a real DC parcel",
+      section: "Section 5 · Next",
+      lessonType: "exercise",
+      body: `**This drill is the whole of beat 5 in miniature, and you should do it with the real tools open in another tab.** Everything below is free and public.
+
+**The two tools.**
+- **The DC Office of Tax and Revenue real property database**: https://otr.cfo.dc.gov/page/real-property-tax-database-search . Search by address or by the parcel identifier and read the owner of record, the assessed value, the use code, and the lot size.
+- **The District's real-property mapping application**, reached through the same Office of Tax and Revenue GIS pages, which lets you view a parcel with its boundaries and turn on administrative layers such as Wards and Advisory Neighborhood Commissions.
+
+**A DC-specific thing to learn first, because it is the local version of the Indiana Avenue "carry the city" trap.** The District does not identify a parcel by a single lot number. It uses **Square, Suffix, and Lot**, written **SSL**: the "Square" is the historic city block from the L'Enfant plan, and the "Lot" is the parcel within it. **A DC address without its SSL is only half-located**, exactly as a Green Book listing without its city was only half-located. Learn to read the SSL and you can find any parcel in the District.
+
+**Your target: Arena Stage, a public theatre in Southwest Washington.** It is a safe address to practise on: it is a public arts institution, its location is published by the organisation that occupies it, and you are not exposing anybody's home. **Do not guess its street number.** Part of the exercise is finding it.
+
+**Work through these, then answer the questions below.**
+1. Find **Arena Stage in Southwest Washington** and read off its street address from the institution's own listing, then locate it in the District's real-property map.
+2. Read off the parcel's **Square, Suffix, and Lot (SSL)**. Write it down exactly.
+3. Open the property record and find the **owner of record**, the **assessed value**, and the **use code**. Compare the owner of record to the name of the organisation that operates the building. **They may not match, and if they do not, that is normal and it is a finding.**
+4. Turn on administrative layers and note which **Ward**, which **Advisory Neighborhood Commission**, and which **ANC single-member district** the parcel sits in. **Section 3 explained why, in this city, the body above all of them still seats federal members.**
+5. Walk the map a block in each direction and count how many neighbouring parcels are **institutionally or federally owned**. Southwest holds a great deal of both.
+
+**The habits this builds, which transfer to any American jurisdiction.** Every jurisdiction has an assessor or a tax office and most have a GIS. **The names of the tools change and the four facts do not: the parcel identifier, the owner of record, the assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
+
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a database. Practise on institutional, commercial, and public addresses. This is the same rule the method course applied to tourist homes and the Indiana Avenue course applied to residential parcels.
+
+## Sources
+- DC Office of Tax and Revenue. (n.d.). *Real property tax database search*. https://otr.cfo.dc.gov/page/real-property-tax-database-search
+- DC Office of Tax and Revenue. (n.d.). *Real property geographic information systems (GIS) program*. https://otr.cfo.dc.gov/page/real-property-geographic-information-systems-gis-program
+- DC Office of Zoning. (n.d.). *About the Zoning Commission*. https://dcoz.dc.gov/page/about-zoning-commission`,
+      exercise: {
+        instructions:
+          "Type the missing term, name, number, body or year, then check. Close answers (spelling, capitalization) count as 'close', not wrong.",
+        items: [
+          {
+            prompt: "The District identifies a parcel not by a single lot number but by Square, Suffix, and ___.",
+            answer: "Lot",
+            accept: ["lot", "ssl", "square suffix and lot"],
+            explanation: "SSL: the Square is the historic city block from the L'Enfant plan, and the Lot is the parcel within it. A DC address without its SSL is only half-located.",
+          },
+          {
+            prompt: "The DC office that publishes a public property record for a parcel is the Office of Tax and ___.",
+            answer: "Revenue",
+            accept: ["revenue", "otr", "office of tax and revenue"],
+            explanation: "The OTR real property database is searchable by address or SSL for owner, assessed value and use code.",
+          },
+          {
+            prompt: "The four facts to pull for any parcel are the parcel identifier, the owner of record, the assessed value, and which overlapping ___ it sits in.",
+            answer: "jurisdictions",
+            accept: ["jurisdiction", "boundaries", "districts"],
+            explanation: "In DC that means the Ward, the Advisory Neighborhood Commission, and the ANC single-member district, three shapes over the same ground.",
+          },
+          {
+            prompt: "The public institution you practise on in this drill is ___ Stage, a theatre in Southwest.",
+            answer: "Arena",
+            accept: ["arena", "arena stage"],
+            explanation: "A public arts institution whose location is published by the organisation itself, so no one's home is exposed.",
+          },
+          {
+            prompt: "The plan a rezoning petition is judged against is the ___ Plan.",
+            answer: "Comprehensive",
+            accept: ["comprehensive", "comprehensive plan", "general", "master"],
+            explanation: "The DC Comprehensive Plan, maintained by the Office of Planning and adopted by the Council, with federal elements written by the National Capital Planning Commission.",
+          },
+          {
+            prompt: "The body that adopts DC's zoning and has two federal members is the ___ Commission.",
+            answer: "Zoning",
+            accept: ["zoning", "zoning commission"],
+            explanation: "Three mayoral appointees plus the Architect of the Capitol and the Director of the National Park Service.",
+          },
+          {
+            prompt: "The two federal officials on the Zoning Commission are the Architect of the Capitol and the Director of the National ___ Service.",
+            answer: "Park",
+            accept: ["park", "national park service", "nps"],
+            explanation: "Their seats are why the body that governs what is built in Southwest still answers partly to the federal government.",
+          },
+          {
+            prompt: "At the neighbourhood scale, Southwest is governed by Advisory Neighborhood Commission 6___.",
+            answer: "D",
+            accept: ["d", "6d", "6-d"],
+            explanation: "ANC 6D covers Southwest, in Ward 6. Its recommendations are advisory but agencies must give them great weight.",
+          },
+          {
+            prompt: "The statute under which Southwest was cleared was the District of Columbia ___ Act of 1945.",
+            answer: "Redevelopment",
+            accept: ["redevelopment", "redevelopment act"],
+            explanation: "60 Stat. 790, which created the Redevelopment Land Agency and empowered it to acquire blighted land.",
+          },
+          {
+            prompt: "The legal conclusion a redevelopment body must reach before it may acquire and clear an area is that the area is ___.",
+            answer: "blighted",
+            accept: ["blight", "blighted", "substandard"],
+            explanation: "A legal conclusion reached on a record against statutory criteria, not a description. Start there when you research a demolition.",
+          },
+          {
+            prompt: "The 1954 Supreme Court case that upheld the Southwest clearance was Berman v. ___.",
+            answer: "Parker",
+            accept: ["parker", "berman v parker"],
+            explanation: "348 U.S. 26 (1954), decided unanimously, which made blight-designation clearance constitutionally safe nationwide.",
+          },
+          {
+            prompt: "The plaintiff in Berman owned a ___ store, not a dwelling, at 712 Fourth Street S.W.",
+            answer: "department",
+            accept: ["department", "department store"],
+            explanation: "The case that authorised clearing homes was won against a going business whose property was not itself a slum.",
+          },
+          {
+            prompt: "The amendment guaranteeing just compensation for a taking is the ___ Amendment.",
+            answer: "Fifth",
+            accept: ["5th", "5", "five"],
+            explanation: "In the District the Fifth Amendment applies directly, because the District is federal ground.",
+          },
+          {
+            prompt: "The 1973 Act that restored an elected DC mayor and council, with Congress keeping a veto, is the ___ Rule Act.",
+            answer: "Home",
+            accept: ["home", "home rule", "home rule act"],
+            explanation: "Signed December 1973 and approved by DC voters in 1974. DC still has no voting representation in Congress.",
+          },
+          {
+            prompt: "The 2017-and-2022 private redevelopment of the Southwest waterfront is called The ___.",
+            answer: "Wharf",
+            accept: ["wharf", "the wharf"],
+            explanation: "By Hoffman-Madison Waterfront: public land assembled and conveyed to a private developer, the Berman pattern running again.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "dc-quiz-next",
+      title: "19 · Quiz: finding the live record",
+      section: "Section 5 · Next",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why is this course's map national rather than block by block?",
+            options: [
+              "Because Southwest's coordinates are unknown",
+              "Because the lesson map draws the whole world, so points need roughly two degrees of separation, and a cleared quadrant is smaller than one dot",
+              "Because block maps are copyrighted",
+              "Because the course avoids maps of Washington",
+            ],
+            correctIndex: 1,
+            explanation: "Matching the scale of the map to the question is the skill. For a parcel you use the District's own GIS and real-property tools.",
+            sourceLessonSlug: "dc-map",
+          },
+          {
+            prompt: "What do the amber markers on the map have in common?",
+            options: [
+              "They are the four largest US cities",
+              "They have Green Book listings",
+              "They are places the Berman holding reached or was applied",
+              "They were chosen at random",
+            ],
+            correctIndex: 2,
+            explanation: "Indiana Avenue, New London, Detroit and Overtown show Southwest as the origin point of a national doctrine, not a local misfortune.",
+            sourceLessonSlug: "dc-map",
+          },
+          {
+            prompt: "In the District, how is a parcel identified?",
+            options: [
+              "By Square, Suffix, and Lot (SSL)",
+              "By a single nationwide parcel number",
+              "By its ZIP code",
+              "By the owner's name only",
+            ],
+            correctIndex: 0,
+            explanation: "The Square is the historic city block; the Lot is the parcel within it. An address without its SSL is only half-located, the DC version of \"carry the city.\"",
+            sourceLessonSlug: "dc-next-exercise-parcel",
+          },
+          {
+            prompt: "Which four facts should you pull for any parcel in any jurisdiction?",
+            options: [
+              "Paint colour, roof age, square footage, and street name",
+              "Architect, contractor, original cost, and current tenant",
+              "The zoning code only",
+              "The parcel identifier, the owner of record, the assessed value, and the overlapping jurisdictions",
+            ],
+            correctIndex: 3,
+            explanation: "The names of the tools change from place to place; those four facts do not.",
+            sourceLessonSlug: "dc-next-exercise-parcel",
+          },
+          {
+            prompt: "What is unusual about the DC Zoning Commission's membership?",
+            options: [
+              "It has two federal members, the Architect of the Capitol and the Director of the National Park Service, alongside three mayoral appointees",
+              "It is elected entirely by DC voters",
+              "It is appointed by the President alone",
+              "It has no members from the District",
+            ],
+            correctIndex: 0,
+            explanation: "The body that decides what may be built in Southwest still seats members no District voter chose, echoing the absent franchise of Section 3.",
+            sourceLessonSlug: "dc-next-adopted-plan",
+          },
+          {
+            prompt: "How does The Wharf redevelopment repeat the Berman pattern?",
+            options: [
+              "It restored the alley dwellings",
+              "Public land assembled by a redevelopment agency and conveyed to a private developer, rebuilt at large scale",
+              "It was built entirely by the federal government",
+              "It required a citywide referendum",
+            ],
+            correctIndex: 1,
+            explanation: "Public taking followed by private rebuilding, the design Berman blessed, running again in the same quadrant with phases opening in 2017 and 2022.",
+            sourceLessonSlug: "dc-next-adopted-plan",
+          },
+          {
+            prompt: "A comprehensive plan differs from zoning because:",
+            options: [
+              "It binds every owner immediately",
+              "It covers only federal land",
+              "It is the policy statement rezonings are judged against, while zoning is the enforceable rule about what may be built today",
+              "It is written by the developer",
+            ],
+            correctIndex: 2,
+            explanation: "That is why a zoning hearing so often becomes an argument about what the comprehensive plan says.",
+            sourceLessonSlug: "dc-next-adopted-plan",
+          },
+          {
+            prompt: "At the neighbourhood scale, which body governs Southwest, and what is the weight of its recommendations?",
+            options: [
+              "The Zoning Commission, whose word is final",
+              "Congress, which votes on each parcel",
+              "The National Park Service, which owns all of it",
+              "Advisory Neighborhood Commission 6D, whose recommendations are advisory but which agencies must give great weight",
+            ],
+            correctIndex: 3,
+            explanation: "Southwest is in Ward 6; ANC 6D's meetings are the cheapest civic act there is and where a resident's leverage is highest.",
+            sourceLessonSlug: "dc-next-adopted-plan",
+          },
+          {
+            prompt: "Why does this course tell you to practise parcel lookups on institutional or public addresses?",
+            options: [
+              "Because publishing a current occupant's name with their home address is a different act from a public record sitting in a database",
+              "Because residential records are secret",
+              "Because homes have no parcel identifier",
+              "Because assessors refuse residential requests",
+            ],
+            correctIndex: 0,
+            explanation: "The same rule the method course applied to tourist homes: a house someone lives in is somebody's home first.",
+            sourceLessonSlug: "dc-next-exercise-parcel",
+          },
+          {
+            prompt: "Which level of designation normally regulates whether a building can be demolished?",
+            options: [
+              "National Historic Landmark",
+              "A local historic landmark or district under the District's own preservation law and review board",
+              "National Register of Historic Places",
+              "State register listing",
+            ],
+            correctIndex: 1,
+            explanation: "Federal listing is recognition plus review leverage on federally funded or permitted work. The local law is what requires a permit before demolition.",
+            sourceLessonSlug: "dc-built-what-survived",
+          },
+          {
+            prompt: "When you find the street grid replaced by superblocks set behind lawns, what have you found?",
+            options: [
+              "A natural feature",
+              "A federal park that was always there",
+              "A place where a superblock replaced the old fine-grained neighbourhood, which is a dated decision",
+              "Nothing checkable",
+            ],
+            correctIndex: 2,
+            explanation: "Every place the old grid does not continue is a place a superblock replaced it, and the change has a date and a record.",
+            sourceLessonSlug: "dc-now-tour",
+          },
+          {
+            prompt: "What is the most important civic question to ask at the rebuilt waterfront?",
+            options: [
+              "Which restaurant is best",
+              "How tall the buildings are",
+              "What year the piers were painted",
+              "Whether an ordinary person can stand at the water's edge without buying anything",
+            ],
+            correctIndex: 3,
+            explanation: "Whether the public can reach the water freely is the deepest civic fact about a waterfront, and a tour can show the answer.",
+            sourceLessonSlug: "dc-now-tour",
+          },
+          {
+            prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
+            options: [
+              "Because beat 4 is a drop-in: the course is complete with the other five beats, and the body serves as the observation brief meanwhile",
+              "Because the tour was cancelled",
+              "Because the platform requires a placeholder",
+              "Because the tour will never be added",
+            ],
+            correctIndex: 0,
+            explanation: "A tour embed URL is authoritative external data and is never guessed, so the lesson ships with the notice and the brief and the URL drops in on a re-seed.",
+            sourceLessonSlug: "dc-now-tour",
+          },
+          {
+            prompt: "What does the map lesson say about its markers being approximate points?",
+            options: [
+              "The map is unreliable and should be ignored",
+              "Do not use them to find an address; use them to see the pattern, and use the District's parcel tools for a lot",
+              "The coordinates should be averaged",
+              "The markers are fictional",
+            ],
+            correctIndex: 1,
+            explanation: "Approximate points at world scale are fine for a pattern and useless for a lot line. Match the tool to the question.",
+            sourceLessonSlug: "dc-map",
+          },
+          {
+            prompt: "Why should you re-check every date and body given in the \"who governs this ground\" lesson?",
+            options: [
+              "Because they are probably wrong",
+              "Because the sources are secret",
+              "Because plans are amended, developers change, and in a city whose zoning still answers partly to Congress the answer keeps moving",
+              "Because the parcels move",
+            ],
+            correctIndex: 2,
+            explanation: "Re-checking is the method, not a disclaimer, and DC's federal oversight makes \"who governs this ground\" an unusually long answer.",
+            sourceLessonSlug: "dc-next-adopted-plan",
+          },
+        ],
+      },
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Write  (beat 6: ELA and creative nonfiction, grounded in the place)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "dc-write-assignment",
+      title: "20 · Your assignment: write one address",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `Beat 6 asks a question no other beat can: **what can only be said about this place?** Answering it is a writing problem, and this assignment is a real one.
+
+## The assignment
+Write **900 to 1,300 words** of creative nonfiction about **one block, one building, or one address** in or near Southwest Washington. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is the one Section 3 used on a Supreme Court opinion.**
+
+## Step 1 · Choose one address, and choose small
+Pick from the survivors in lesson 7 (Wheat Row, the Thomas Law House), from the *Berman* record (the department store at 712 Fourth Street S.W.), from the Southwest waterfront and The Wharf, or from a parcel you found in lesson 18. **Smaller is better.** "Southwest" is not a subject, it is a topic. **712 Fourth Street S.W., where a department store owner took the clearance of a neighbourhood to the Supreme Court and lost, is a subject.**
+
+If you do not live in Washington and cannot visit, that is not a disqualification. **It is a constraint you disclose in the piece**, and it changes what you can honestly claim.
+
+## Step 2 · Build the four-column chronology before you write a sentence
+Lesson 11 weakened a good argument with a table. Build your own, with these columns: **date, event, instrument, source**. If the instrument column is empty for an event, you have a story and not yet a decision. **The table is the outline.**
+
+## Step 3 · Decide what kind of piece this is
+Pick one and commit, because mixing them is what makes place writing mushy.
+- **A biography of a building.** Its plan, its uses, its owners, its end or its survival.
+- **A history of a decision.** One designation, one taking, one opinion, one vote, followed to the document.
+- **A report on a present.** What is there now, who uses it, what the current plan proposes, what a public meeting or an ANC 6D agenda actually said.
+- **A piece about the record itself.** What you could and could not find, and what the gap means.
+
+**The fourth is the hardest and often the best**, and it is the only one that can be written honestly with thin sources.
+
+## Step 4 · Write it, under these craft rules
+1. **Lead with a specific.** A street number, a percentage from the survey, a date on a document. Not a mood.
+2. **Name the instrument every time you name a loss.** "The neighbourhood was cleared" is weak. "The Redevelopment Land Agency acquired it under the 1945 Act, and Berman v. Parker held the taking lawful" is strong, if you can source it.
+3. **Give a figure its owner.** Not "23,000 people were displaced" but "the local histories compiled by WETA's Boundary Stones put displacement from the Southwest renewal at about 23,000 residents."
+4. **Attribute an argument as an argument.** James Baldwin called urban renewal "Negro removal" (WTTW, n.d.). **You may quote and engage that. You may not launder it into your own narration as though it were a finding.** The distinction between a documented chronology and an interpretive frame is the most important thing in this section.
+5. **Quote the opinion exactly, or not at all.** If you use *Berman*, use its real words. Douglas wrote that public welfare is "broad and inclusive." **Do not improve the quotation, and do not attribute to the Court a holding it did not reach**, which lesson 9 spelled out.
+6. **Use the present tense for the present.** Southwest is a working part of a living city with a rebuilt waterfront and a live planning process, not a ruin. Write it that way.
+7. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+1. **No invented detail.** Not a date, a name, a quotation, a street number, or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the alley smelled like.
+2. **No composite or imagined characters.** Real, cited people only. The record gives you A'Lelia Walker's counterpart here in the founders whose houses survived, the department-store owner who sued, and the scattered families Daniel Thursz counted. **That is more than enough material.**
+3. **No invented dialogue**, including "he might have said."
+4. **Living communities describe themselves.** Southwest has residents and descendants now. Use the names and terms the people who live and work there use, and say where you got them.
+5. **No ruin porn, and no lost golden age.** A neighbourhood that lacked indoor plumbing was not a paradise, and its clearance was not a natural death or a simple rescue. **Both of those framings flatter the writer and cheat the subject.** The Thursz study is your guard against both.
+6. **Credit what was built.** The congregations, the businesses, the fish market that outlived the bulldozers, the freeway revolt that saved other neighbourhoods. **A piece that only inventories loss is an incomplete report.**
+7. **Private homes are private.** Do not publish a current resident's name with their address, do not photograph into windows, and do not knock uninvited. Wheat Row is somebody's home today.
+8. **Say what you did to a number.** If you adjusted a 1950s dollar figure for inflation, say so and say how.
+
+## What good looks like
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** A store owner who lost at the Supreme Court and gave his name to the case that cleared a neighbourhood he did not live in; a 1790s row house saved because it was old while the living blocks around it were not; a survey of percentages a court read aloud before a bulldozer moved: **none of that needs decorating.**
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Boundary Stones (WETA). (2022, July 21). *The cost of urban renewal in Southwest DC*. https://boundarystones.weta.org/2022/07/21/cost-urban-renewal-southwest-dc
+- Thursz, D. (1966). *Where are they now? A study of the impact of relocation on former residents of southwest Washington*. Health and Welfare Council of the National Capital Area.
+- WTTW. (n.d.). *Southwest Washington, DC*. https://www.wttw.com/ten/towns/southwest-washington-dc`,
+      recallContent: [
+        {
+          prompt: "What is the difference between a topic and a subject in this assignment?",
+          answer: "\"Southwest\" is a topic. \"712 Fourth Street S.W., where a department store owner took the clearance to the Supreme Court and lost\" is a subject. Smaller is better.",
+        },
+        {
+          prompt: "What are the four columns of the chronology you build before writing, and what does an empty instrument column mean?",
+          answer: "Date, event, instrument, source. An empty instrument column means you have a story rather than a documented decision.",
+        },
+        {
+          prompt: "How must you handle James Baldwin's \"Negro removal\" framing?",
+          answer: "Quote it and engage it as an argument with an author. Do not launder it into your own narration as though it were a documented finding.",
+        },
+        {
+          prompt: "What are the two rules about quoting Berman v. Parker?",
+          answer: "Use its real words exactly, and do not attribute to the Court a holding it did not reach. Lesson 9 spelled out what it did and did not hold.",
+        },
+        {
+          prompt: "Why does the assignment ban both ruin porn and the lost-golden-age frame, and what guards against both?",
+          answer: "Because a neighbourhood without indoor plumbing was not a paradise, and its clearance was not a natural death or a simple rescue. Both framings flatter the writer and cheat the subject. The Thursz study, which measured real outcomes, is the guard.",
+        },
+      ],
+    },
+    {
+      slug: "dc-what-comes-next",
+      title: "21 · What this course set up, and what it left out",
+      section: "Section 6 · Write",
+      body: `You have now run the six-beat site template a second time, on the place where the central instrument of the whole series was made constitutionally safe. **If the Indiana Avenue course taught you the method, this course showed you the document behind it.**
+
+| Beat | What you did here | What you can now do anywhere |
+|---|---|---|
+| **1. Then** | Read Southwest from a 1950 census share, a survey of percentages, and a 1966 relocation study | Establish what a place was, and what happened to its people, from named sources |
+| **2. Built** | Read superblock typology and asked what preservation chose to save | Tell what a building type does, and read a survivor as evidence about the era that spared it |
+| **3. Powers** | Read a Supreme Court opinion in its own words and traced its holding across the country | Read the law itself, quote it exactly, and say what it did and did not hold |
+| **4. Now** | Built an observation brief for a place mostly no longer there | Look at a cleared site with questions instead of nostalgia |
+| **5. Next** | Found the plan, the commission, the parcel, and the federal members still on the zoning board | Participate in a live decision, and spot when a city does not fully govern itself |
+| **6. Write** | Wrote grounded nonfiction under an evidence standard | Publish something the next researcher can build on |
+
+**What you can do that you could not do before.**
+- Read the actual opinion behind a doctrine, rather than a summary of it, and quote it accurately.
+- Separate what a case held from what it is popularly said to have held. **Berman held that an area may be taken as a whole and conveyed to a private developer. It did not hold that any particular building was a slum**, and it was brought by a store owner, not a displaced family.
+- Test a cross-city link against a chronology and report the weaker, true version. **Berman did not cause Indiana Avenue's clearance; it backstopped the tool nationwide.**
+- Recognise the *Berman* pattern, public taking then private rebuilding, when it runs again, as it does at The Wharf.
+- Ask who holds the vote over a piece of ground, and notice when the answer is "not the people who live on it."
+
+**What this course deliberately did not cover, and why.**
+- **The full history of DC statehood and representation.** It appears here only where it touches the clearance and the zoning. **The franchise is a course of its own**, and this one used only the part the ground required.
+- **A named, documented individual displaced family.** The Indiana Avenue course could follow the Temple family through a condemnation record. For Southwest this course used the Thursz cohort in aggregate rather than inventing or overclaiming a single household, because **a real aggregate study beats a decorated individual story you cannot fully source.**
+- **A judgment on whether Southwest should have been renewed.** The course establishes what was done, under which instrument, on what record, and by a legislature the residents could not vote for. **The judgment is the learner's, and it should be made on the documents.**
+- **A corridor-level displacement total presented as exact.** The circulating figures are compiled, and this course carries their owner rather than laundering them into a single hard number.
+
+**The unopened sources, which are the next real work.** The Redevelopment Land Agency's project files and its photograph collection in the DC Public Library People's Archive. The National Capital Planning Commission's Southwest plan documents. The Historic American Buildings Survey documentation of the renewal area. The full trial record behind *Berman*, and the Emergency Committee on the Transportation Crisis papers. **None of those has been read into this course.** They are public or requestable, and they are where an original contribution would start.
+
+**Where this sits in the series, and where it points.** This is the courthouse of the route-course cluster. From here the planned metro courses each take up a different stage in the life of the same instruments: **Pittsburgh**, where the postwar renewal playbook was written; **Philadelphia**, where a university assembled land through a redevelopment authority exactly as on Indiana Avenue; **Baltimore**, where the whole chain from racial zoning to an unfinished highway sits in one city; and **Seattle**, where a later Supreme Court turned back a district trying to integrate voluntarily. **You now hold the opinion that licensed the tool. The rest of the series is what people did with it.**
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Boundary Stones (WETA). (2022, July 21). *The cost of urban renewal in Southwest DC*. https://boundarystones.weta.org/2022/07/21/cost-urban-renewal-southwest-dc
+- Thursz, D. (1966). *Where are they now? A study of the impact of relocation on former residents of southwest Washington*. Health and Welfare Council of the National Capital Area.`,
+      recallContent: [
+        {
+          prompt: "What is the actual product of this course?",
+          answer: "A second run of the six-beat site template, this time on the place where the central instrument was made constitutionally safe. Where Indiana Avenue taught the method, this course showed the document (Berman v. Parker) behind it.",
+        },
+        {
+          prompt: "State precisely what Berman held and what it did not.",
+          answer: "It held that an area may be taken as a whole and conveyed to a private developer. It did not hold that any particular building was a slum, and it was brought by a department store owner, not a displaced family.",
+        },
+        {
+          prompt: "Why did this course use the Thursz cohort in aggregate rather than a single named displaced family?",
+          answer: "Because a real aggregate study beats a decorated individual story you cannot fully source. The Indiana Avenue course had a documented condemnation record for one family; for Southwest the honest material was the aggregate relocation study.",
+        },
+        {
+          prompt: "Name three unopened sources that would advance this story.",
+          answer: "The Redevelopment Land Agency project files and photographs in the People's Archive, the National Capital Planning Commission's Southwest plan documents, the HABS documentation of the renewal area, the full Berman trial record, and the ECTC papers.",
+        },
+        {
+          prompt: "How does this course point to the rest of the metro-course series?",
+          answer: "It is the courthouse of the cluster. Pittsburgh is where the renewal playbook was written, Philadelphia is the university-land-assembly parallel to Indiana Avenue, Baltimore holds the whole instrument chain in one city, and Seattle is the later school-integration bookend.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
