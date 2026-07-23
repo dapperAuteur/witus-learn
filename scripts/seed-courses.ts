@@ -99,6 +99,7 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { GREAT_MIGRATION_AND_THE_WORLD_COURSE } from "./data/great-migration-and-the-world-course";
+import { GREEN_BOOK_READ_A_ROUTE_COURSE } from "./data/green-book-read-a-route-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
 import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
@@ -660,6 +661,20 @@ async function main() {
     // file, and export; cross-links Hoodoo, History of Unions, and Pan-Africanism. NO migration
     // — pnpm seed:courses.
     { slug: "great-migration-and-the-world", course: GREAT_MIGRATION_AND_THE_WORLD_COURSE, category: "Culture & History" },
+    // The Green Book: How to Read a Route — Phase 1, course 1 of the route-courses series
+    // (plans/37-green-book-route-courses.md), and the prerequisite for every later site course.
+    // Deliberately a METHOD course, not a site tour: read an edition, read a listing (the four-level
+    // hierarchy, the 1940 "does not imply recommended" disclaimer vs the 1956 star), read a GAP as
+    // evidence (refusal vs absence vs reporting silence), chain listings into a route, then research
+    // an address forward to today. The route worked example is Chicago to Los Angeles on U.S. 66 in
+    // the 1940 edition, where the chain breaks after Amarillo because New Mexico's entire section is
+    // ONE tourist home in Deming, off the corridor. 7 sections, 20 lessons (13 teaching, 5 quizzes
+    // with 15-question banks, 1 map lesson, 1 exercise). Primary sources read directly from the
+    // digitized 1940 and 1956 editions (Schomburg Center, NYPL); framing from NPS, the Civil Rights
+    // Act Title II statute text, the National Archives, Taylor (2020), Sorin (2020), Loewen (2005).
+    // Survival-rate figures are attributed with owner + date + scope and never averaged: no complete
+    // national survey exists and the course says so. NO migration — pnpm seed:courses.
+    { slug: "green-book-how-to-read-a-route", course: GREEN_BOOK_READ_A_ROUTE_COURSE, category: "Culture & History" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:
