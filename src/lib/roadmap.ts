@@ -617,6 +617,28 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   hedged, and the Philadelphia "500%" flagged as a verify, do not repeat moment. \`pnpm seed:courses\`
   picks it up. Distinct slug (\`great-migration-and-the-world\`), file, and export from the course
   above; cross-links Hoodoo, History of Unions, and Pan-Africanism.
+- 🔧 **The Green Book: How to Read a Route** (Culture & History,
+  \`content/green-book-read-a-route\`). **Opens the route-courses series**
+  (\`plans/37-green-book-route-courses.md\`, Phase 1, course 1) and is the **prerequisite for every
+  later site course** in it. Deliberately a METHOD course, not a site tour: high-school-and-up
+  learners finish able to open a digitized edition, read a listing, chain listings into a real
+  route, read a GAP as evidence, and research an address forward to what stands there today.
+  7 sections, 20 lessons (13 teaching, 5 quizzes with 15-question banks, 1 map lesson with 22
+  markers, 1 exercise), recall cards throughout. Teaches the four-level listing hierarchy
+  (state, city, category, entry), the 1940 "under no circumstances do these listings imply that
+  the place is recommended" disclaimer against the 1956 star legend, the 1956 category cut, and the
+  three live readings of a gap (refusal vs absence vs reporting silence). Route worked example:
+  Chicago to Los Angeles on U.S. 66 in the 1940 edition, where the chain breaks after Amarillo
+  because New Mexico's entire section that year is ONE tourist home in Deming, off the corridor.
+  Primary sources read directly from the digitized 1940 and 1956 editions (Schomburg Center,
+  NYPL); framing from NPS (historic context, the 20 National Register Green Book properties,
+  Route 66, Latimore Tourist Home), Title II read from 42 U.S.C. 2000a incl. the five-room
+  owner-occupied exemption that describes a tourist home, the National Archives, Taylor (2020),
+  Sorin (2020), Loewen (2005). The three circulating survival figures are given with owner, date
+  and scope and explicitly NOT averaged, and the course states plainly that no complete national
+  survey exists. A genuine source disagreement (which edition first carried the Latimore) is kept
+  and taught rather than smoothed. Closes with a research assignment on a real address.
+  \`pnpm seed:courses\` picks it up; no migration.
 - 🔧 **Training the Colonizer: The Knowledge That Was Taken** (Culture & History,
   \`content/training-the-colonizer\`). What enslaved and colonized people taught their enslavers, for
   high school students. 6 sections: rice and the **Black Rice debate** (Carney 2001 taught AS a debate
