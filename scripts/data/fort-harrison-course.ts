@@ -445,6 +445,227 @@ This is the part that most writing about military posts leaves out, and it is th
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 2 · Built  (beat 2: architecture, building typology, and site planning)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "fh-built-plan",
+      title: "5 · How a post is laid out, and what the plan is saying",
+      section: "Section 2 · Built",
+      body: `Beat 2 asks: **why does it look like that?** On Indiana Avenue the answer began with a diagonal drawn on an 1821 plat. Here it begins with an office in Washington that drew the same buildings for the whole country.
+
+**Who designed it.** The National Register nomination names the architect on the form: **Army Quartermaster Corps** (McGillem et al., 1993, sec. 8). The overall layout and the buildings both came from **standardised plans used nationwide during the first decade of the twentieth century** (McGillem et al., 1993, sec. 8, p. 2). **There is no signature architect and that is the finding**, not a gap. The nomination says so directly: "Their architects were unknown members of a large organization, and their designs were duplicated at numerous installations throughout the United States" (McGillem et al., 1993, sec. 8, p. 4).
+
+**Hold onto the consequence.** The nomination goes on to say that because of this, the individual buildings "lack the architectural significance necessary for inclusion, individually, in the National Register." **They qualify as a group and not one at a time.** That is a specific, transferable idea: **significance can live in a pattern rather than in an object**, and a district listing is the instrument that recognises it.
+
+**The plan, in one sentence from a 1907 newspaper.** A contemporary account described a "military city housed in thirty beautiful buildings of brick and stone, set on a horseshoe curve, with a parade ground in the center" (*Indianapolis Star*, 14 July 1907, as cited in Fife & Salmon, n.d., pp. 3-4). **Horseshoe curve, parade ground in the centre.** That is the plan, and everything else hangs off it.
+
+**The parade ground is the organ that does the work.** It sits in the western part of the district, surrounded by large trees that shade the officers' residences on its edge, and it is ringed by **Lawton Road**. **Kent Road** crosses it on a diagonal, on a concrete bridge built as part of the original complex. A **bandstand added in 1939** completes the picture (McGillem et al., 1993, sec. 7, p. 2). The HABS documentation makes the comparison explicit: the parade ground's plan "is evocative of the type of configuration made popular by Olmsted and his successors in town and city planning" (Fife & Salmon, n.d., p. 8).
+
+**Read that comparison carefully, because it contains the whole argument of this section.** A parade ground is a **drill field**: a flat, open, controlled space for formations and inspections. A park designed in the Olmsted tradition is a **picturesque landscape**: curving drives, grouped trees, deliberate views. **This post got both at once**, and the HABS surveyors noticed. **The military purpose and the residential amenity are the same piece of ground**, which is why, ninety years later, a state park could inherit the layout without redrawing it.
+
+**Three functional zones, and they are not mixed.** The nomination divides the district by location and function (McGillem et al., 1993, sec. 7, p. 2):
+
+| Zone | Where | What is in it |
+|---|---|---|
+| **A. Residential and administrative** | Around the parade ground, the Lawton Road area | Officers' family quarters, the commanding officer's residence, bachelor officers' quarters, enlisted men's barracks, the original administrative building, guardhouse, fire station, post exchange and NCO club, bakery, and the interurban railway depot |
+| **B. Service and utility** | East and southeast of the parade ground, on Greene Avenue and Otis Avenue | Commissary, quartermaster storehouse and office, blacksmith shop, stables, wagon sheds, and the post's own water tower, pump house and power plant |
+| **C. Hospital** | East of the parade ground on Greene Avenue | The original post hospital, later the Soldier Support Center headquarters, plus four officers' residences |
+
+**A self-contained community is a literal description, not a metaphor.** The original complex included "quarters for married and single officers, enlisted men's barracks, an administrative office building, Provost Marshall's Office and stockade, an interurban station, bakery and commissary facilities, warehouse, stables, gun sheds, blacksmith shop, hospital, and an independent water and power system" (McGillem et al., 1993, sec. 8, p. 2). **Its own water. Its own power. Its own jail. Its own rail station.** Section 3 asks you to notice what that means for a county that has to provide none of those things and also cannot tax any of it.
+
+**The land beyond the buildings was doing a job too.** The built complex went on level ground in the southern part of the old farmland. "The original large expanse of wooded rolling hills to the north was used as a training area" (McGillem et al., 1993, sec. 8, p. 2). **That sentence is the seed of the state park.** A training area is land deliberately left unbuilt, and land deliberately left unbuilt for ninety years inside a growing metropolitan county becomes something no planner could have assembled on purpose.
+
+**Two later residential additions, which show the post growing without breaking its own rules.** Between **1929 and 1945**, thirteen brick and stone duplex residences for non-commissioned officers went up west of the parade loop, known as **Sergeant's Row**, all built from uniform plans. **Harrison House**, originally quarters for nurses, and further single residences went in to the northeast. The **Officers Club**, built of stone, dates to **1945** and stands south of the golf course (Fife & Salmon, n.d., p. 10). **New buildings kept quoting the old ones**, which is exactly why the district reads as a whole.
+
+**And one thing on this ground is older than the post.** A **nineteenth-century cemetery predates the fort's establishment** and is counted as a contributing site in the district (McGillem et al., 1993, sec. 8, p. 1). The HABS documentation identifies it as **Spring Valley Cemetery**, containing the earliest graves in Lawrence Township, and records that **Elisha Reddick** had bought 132 acres here in **1823** (Fife & Salmon, n.d., pp. 2-3). **Nothing is ever the first thing on a piece of ground**, and beat 2 is where you find the layer underneath.
+
+## Sources
+- Fife, C. B., & Salmon, T. W., II. (n.d.). *Fort Benjamin Harrison* (HABS No. IN-289) [Written historical and descriptive data]. Historic American Buildings Survey, National Park Service. https://tile.loc.gov/storage-services/master/pnp/habshaer/in/in0400/in0407/data/in0407data.pdf
+- McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text
+- National Park Service. (n.d.). *National Register of Historic Places*. https://www.nps.gov/subjects/nationalregister/index.htm`,
+      recallContent: [
+        {
+          prompt: "Who is named as the architect of this post, and why does that matter for how it was listed?",
+          answer: "The Army Quartermaster Corps, working from standardised plans used nationwide. The nomination says the buildings lack the architectural significance for individual listing, so they qualify as a district. Significance can live in a pattern rather than an object.",
+        },
+        {
+          prompt: "Describe the plan in the terms a 1907 newspaper used, and name the road that rings it.",
+          answer: "A military city in thirty brick and stone buildings set on a horseshoe curve with a parade ground in the centre. Lawton Road follows the perimeter of the parade ground; Kent Road crosses it on a diagonal on an original concrete bridge.",
+        },
+        {
+          prompt: "Why did the HABS surveyors compare the parade ground to Olmsted-style planning, and what does that tell you?",
+          answer: "Because it combines a flat drill field with curving drives and grouped trees, so the military purpose and a residential landscape amenity are the same ground. It is why a state park could later inherit the layout without redrawing it.",
+        },
+        {
+          prompt: "Name the three functional zones of the historic district.",
+          answer: "Residential and administrative around the parade ground on Lawton Road; service and utility east and southeast on Greene and Otis avenues; and the hospital unit east of the parade ground with four officers' residences.",
+        },
+        {
+          prompt: "What was the wooded land north of the built complex used for, and why does that matter to the rest of this course?",
+          answer: "It was the training area, land deliberately left unbuilt. Ninety years of that inside a growing county produced a forest no planner could have assembled, which is the ground that became the state park.",
+        },
+        {
+          prompt: "What on this site is older than the post itself?",
+          answer: "A nineteenth-century cemetery, identified in the HABS documentation as Spring Valley Cemetery with the earliest graves in Lawrence Township. Elisha Reddick bought 132 acres here in 1823.",
+        },
+      ],
+    },
+    {
+      slug: "fh-built-hierarchy",
+      title: "6 · Rank you can read from the street",
+      section: "Section 2 · Built",
+      body: `**This is the best lesson in the course for a reader who wants to learn to look at buildings, because the code is written down and the key is published.**
+
+**The claim, from the nomination, in its own words:** the layout and the original buildings "form a planned, architecturally and functionally integrated community whose social hierarchy is reflected by building location and stylistic detailing" (McGillem et al., 1993, sec. 8, p. 1). And more precisely: "Social/military hierarchy within the original community is expressed both in residential pattern and stylistic detail. Officer quarters are separated clearly from enlisted men's housing and service areas. Ornamentation differentiates senior officers from subordinates, married from bachelor, administrative from service/utility" (McGillem et al., 1993, sec. 8, p. 2).
+
+**Unpack that into a ladder you can walk down, from most ornament to least** (McGillem et al., 1993, sec. 8, pp. 2-3; Fife & Salmon, n.d., p. 9):
+
+1. **Senior officers' family quarters.** The most elaborate detail on the post, on the **north and west sides of the parade ground** in the Lawton Loop area. Detail varies again **within** this group according to rank inside the officer system.
+2. **Bachelor officers' quarters.** Less individualised, simpler trim, less ornate porches. Positioned so they **separate the officers' quarters from the administrative buildings**.
+3. **Hospital complex and administrative buildings.** At the same stylistic level as the bachelor quarters.
+4. **Married non-commissioned officers' housing.** Similar to married officers' quarters but more modest.
+5. **Enlisted men's barracks.** Large buildings with "little ornamentation except for their columned porches and stylized brick work above the windows."
+6. **Service buildings.** Warehouse, stables, commissary, utility buildings. "At the lowest end of the spectrum," with only the basic structure and materials shared by everything else on the post.
+
+**Now the part that turns this from an observation into a research method.** The nomination lists the **actual stock plan numbers** from the Office of the Quartermaster General, and once you have plan numbers you can find the same buildings at other posts (McGillem et al., 1993, sec. 7, p. 1):
+
+| What | How many | O.Q.M.G. plan |
+|---|---|---|
+| Officers' family residences on the Lawton Road loop | 6 | **120-F** (duplex) |
+| Officers' family residences on the Lawton Road loop | 8 | **142-B** (duplex) |
+| Officers' family residences on the Lawton Road loop | 4 | **145-D** (single family) |
+| Large enlisted men's barracks, east side of the loop | 6 | **75-G** |
+| Fourplexes near the hospital | 2 | **85-B** |
+| Duplex near the hospital | 1 | **85** |
+| Stables | 2 | **139** |
+| Wagon sheds (now one building) | 2 | **60H** |
+
+**Eighteen officers' houses drawn from three plans.** That is the federal government building housing at scale, and it is the same logic that produced standardised post offices, lighthouses and federal courthouses. **If you find plan 75-G at another post, you are looking at a sibling of the barracks here**, which is a genuinely powerful research handle and one almost nobody uses.
+
+**The shared material vocabulary, which is how a district holds together.** Every original building uses the same kit (McGillem et al., 1993, sec. 7, p. 1; Fife & Salmon, n.d., pp. 8-9):
+
+- **Foundations**: poured concrete faced with coursed limestone up to a dressed limestone water table
+- **Walls**: common bond brick
+- **Openings**: dressed limestone lug sills, with flat or arched voussoirs above
+- **Roofs**: gabled and hipped, **originally slate**, since replaced with asphalt
+- **Porches**: large open verandas with rounded wood columns and balusters
+- **Ornament**: confined to eaves and cornices, gables, windows, doors, and residential interior fireplaces
+
+**Style: Colonial Revival**, which the nomination reads as expressing "the country's nostalgic/nationalistic attitude of the time and its need to re-establish fundamentals after a chaotic period of great economic, industrial and artistic growth" (McGillem et al., 1993, sec. 8, p. 2). **That is an interpretation, not a measurement.** It is a reasonable and conventional reading of Colonial Revival, and you should attribute it to the nomination rather than repeat it as fact.
+
+**One street-name fact that is a dating tool.** The post's streets were originally **named for heroes of the Spanish-American War**, and in **1939** they were renamed to honour commanders and men who had been stationed here and distinguished themselves in action (McGillem et al., 1993, sec. 8, p. 2; Fife & Salmon, n.d., pp. 5-6). **A street name on a map is evidence of when the map was made**, and a post that renames its streets is telling you which past it wants to remember. **Lawton, Otis, Greene, Shafter, Aultman, Kent, Birtz, Walker, Glenn: those names are a document.** Who each one was, and which of the two naming rounds each belongs to, is a research task this course leaves to you and does not guess at.
+
+**What ornament will not tell you.** The nomination reads rank off these buildings in fine detail and **never asks who was permitted to hold which rank.** Lesson 3 already showed you that the same document is silent on race. **Put those two observations together and you have the single most important habit in architectural research: a building records the distinctions its builders chose to encode, and is silent about the ones they took for granted.**
+
+## Sources
+- Fife, C. B., & Salmon, T. W., II. (n.d.). *Fort Benjamin Harrison* (HABS No. IN-289) [Written historical and descriptive data]. Historic American Buildings Survey, National Park Service. https://tile.loc.gov/storage-services/master/pnp/habshaer/in/in0400/in0407/data/in0407data.pdf
+- McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text`,
+      recallContent: [
+        {
+          prompt: "Walk the ornament ladder from most decorated to least.",
+          answer: "Senior officers' family quarters on the north and west sides of the parade ground; bachelor officers' quarters; hospital and administrative buildings; married non-commissioned officers' housing; enlisted men's barracks; and service buildings such as warehouses, stables and the commissary at the bottom.",
+        },
+        {
+          prompt: "Why are the Office of the Quartermaster General plan numbers a research handle?",
+          answer: "Eighteen officers' houses here came from just three plans, 120-F, 142-B and 145-D, and the barracks from plan 75-G. The same numbered plans were used at other posts, so a plan number lets you find sibling buildings nationwide.",
+        },
+        {
+          prompt: "Name the shared material vocabulary of the original buildings.",
+          answer: "Poured concrete foundations faced with coursed limestone up to a dressed limestone water table, common bond brick walls, dressed limestone lug sills with flat or arched voussoirs, gabled and hipped roofs originally slate, and large open verandas with rounded wood columns.",
+        },
+        {
+          prompt: "The nomination reads Colonial Revival as nostalgic and nationalistic. How should you handle that claim?",
+          answer: "As an interpretation rather than a measurement. It is a conventional reading, and you should attribute it to the nomination rather than repeat it as an established fact.",
+        },
+        {
+          prompt: "What happened to the post's street names in 1939, and why is that useful?",
+          answer: "Streets originally named for Spanish-American War heroes were renamed for commanders and men stationed here who distinguished themselves in action. A street name dates a map and tells you which past the post chose to commemorate.",
+        },
+        {
+          prompt: "State the habit this lesson wants you to carry to any building.",
+          answer: "A building records the distinctions its builders chose to encode, and is silent about the ones they took for granted. This nomination reads rank in fine detail and never asks who was permitted to hold which rank.",
+        },
+      ],
+    },
+    {
+      slug: "fh-built-what-survives",
+      title: "7 · Two districts, and what a listing on federal land actually does",
+      section: "Section 2 · Built",
+      body: `Course 1 taught you the difference between federal listing and local designation, and concluded that **local designation is what normally stops a demolition.** On federal land that conclusion changes shape, and this lesson is where you learn how.
+
+## The two districts
+
+**1. The Fort Benjamin Harrison Historic District.** The nomination was prepared in **1993** by D. E. McGillem and Associates with Jare R. Cardinal and David R. Bush, for the Indiana Department of Natural Resources, and was accepted in **1995** (Fife & Salmon, n.d., p. 7; McGillem et al., 1993). The form itself records:
+
+- **Approximately 340 acres**, in the south-central portion of the post
+- **94 buildings, 6 structures and 2 sites**, of which **75 buildings, 1 site and 3 structures contribute** and the rest do not
+- **49 buildings and structures from the original 1906-1910 construction period**, including a bridge, a water tower and the parade ground itself
+- **1 building from the First World War era; 9 from the interwar period; 17 buildings and a bandstand from 1939-1945; 19 buildings and 3 structures from after the war**
+- **Areas of significance: Military; Community Planning and Development; Architecture**
+- **Periods of significance: 1906-1910, 1920-1937, 1938-1945.** Significant date: **1908**
+- **Ownership at the time of nomination: public, federal**
+
+**Look at the "areas of significance" line again.** *Community Planning and Development* is on there beside *Military* and *Architecture*. **The people who wrote this nomination understood that this post is a planning artifact**, and that is your licence to teach it as one.
+
+**2. Camp Edwin F. Glenn.** A separate district, listed **1 December 1995**, National Register reference number **95001360**. Its nomination form lists two other names for it that tell you its whole history in six words: **Citizens' Military Training Camp** and **Fort Harrison Prisoner of War Camp**. The form counts **19 buildings and 360 structures, 379 resources in total**, and records the property as **publicly owned by the federal government**. The National Park Service's supplementary listing record notes an amendment: the nomination had not indicated a level of significance, and the state historic preservation office said **state significance** was appropriate, so the form was amended to add it (Indiana Division of Historic Preservation and Archaeology, 1995).
+
+**That amendment is a small, perfect illustration of how listing works.** A nomination is a **negotiated document**. A consultant writes it, a state office reviews it, a federal agency comments, the Keeper of the National Register acts, and corrections get made on continuation sheets that stay in the file forever. **All of it is public and all of it is readable**, which is why this course quotes the forms rather than paraphrasing summaries of them.
+
+**3. And one building listed by itself, first.** The post's **interurban railway station**, Building 616, built in **1908**, was already listed on the National Register before either district, as a good example of an early twentieth-century local interurban station (McGillem et al., 1993, sec. 7, p. 2; the HABS documentation dates the individual nomination to **1984**, Fife & Salmon, n.d., p. 8). **A commuter rail station on an Army post is worth pausing on.** It means the post was connected to Indianapolis by scheduled public transport from the year it opened, which is a fact about labour, supply and daily life that no photograph of a parade ground will tell you.
+
+## What listing does when the landowner is the United States
+
+Here is the mechanism, and it is genuinely different from the private-owner case.
+
+| Situation | What National Register listing does |
+|---|---|
+| **Private owner, no federal money or permit** | Recognition and some tax credits. **It does not stop demolition.** |
+| **Local historic district under a local ordinance** | Usually the real regulator: certificates of appropriateness, review of exterior change and demolition |
+| **Federal agency owns or funds the undertaking** | **Section 106 of the National Historic Preservation Act applies.** The agency must take into account the effect of its undertaking on historic properties and consult with the state historic preservation officer before it acts. |
+
+**Section 106 is the instrument that mattered here**, and you can see it operating in the paperwork. Look at who signed the two nomination forms in this lesson: the **Indiana Department of Natural Resources** as the state authority, and a **Deputy Assistant Secretary of the Army** for environment, safety and occupational health as the federal agency (McGillem et al., 1993, sec. 3; Indiana Division of Historic Preservation and Archaeology, 1995, sec. 3). **The Army was a signatory to the listing of its own post, in the years it was closing that post.** That is not a coincidence and it is not goodwill. **It is a legal process producing documents on a schedule.**
+
+**Say plainly what Section 106 is and is not.** It is a **consultation and consideration requirement**, not a veto. **An agency that follows the process may still demolish a listed building.** What the process guarantees is a **record**: a determination of effect, a consultation, and usually a memorandum of agreement with mitigation attached. **The HABS documentation you have been reading all course is itself a classic piece of that mitigation.** When a federal agency is going to change or dispose of historic property, one common agreed measure is to document it to Historic American Buildings Survey standards and deposit the record with the Library of Congress. **That is why this course has a 19-page architectural description of a post that was closing, written in 1996, freely downloadable today.** The paperwork is the point.
+
+**The timing lesson, which mirrors course 1 and reverses it.** On Indiana Avenue, designation arrived **after** the decisions that emptied the corridor. Here, designation arrived **because** of the decision that closed the post: the base was listed for closure in **1991**, the nomination was prepared in **1993**, and both districts were listed in **1995**, the year before the park opened. **Closure produced the listing.** A researcher who found only the listing dates would conclude the community suddenly valued the post in the mid-1990s. **The truth is that a federal disposal process compelled the documentation**, which is a completely different story and one you would miss without the statute.
+
+**What none of it protected.** Reporting on the redevelopment records that **more than one million square feet of buildings were demolished** during the conversion (Sample, 2005). **Listed districts, a federal consultation requirement, and a million square feet of demolition are all true at once.** Hold all three, and never write that a National Register listing saved this post.
+
+## Sources
+- Fife, C. B., & Salmon, T. W., II. (n.d.). *Fort Benjamin Harrison* (HABS No. IN-289) [Written historical and descriptive data]. Historic American Buildings Survey, National Park Service. https://tile.loc.gov/storage-services/master/pnp/habshaer/in/in0400/in0407/data/in0407data.pdf
+- Indiana Division of Historic Preservation and Archaeology. (1995). *Camp Edwin F. Glenn* [National Register of Historic Places registration form, reference number 95001360]. National Park Service. https://npgallery.nps.gov/GetAsset/a9430be3-0acd-4d90-8f7b-470014c6dbd3
+- McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text
+- National Historic Preservation Act, 54 U.S.C. § 306108 (Section 106). https://www.achp.gov/protecting-historic-properties
+- National Park Service. (n.d.). *National Register of Historic Places: Frequently asked questions*. https://www.nps.gov/subjects/nationalregister/faqs.htm
+- Sample, D. (2005, June 15). *Indiana city flourishes after "Fort Ben" closure*. American Forces Press Service. https://www.dvidshub.net/news/538075/indiana-city-flourishes-after-fort-ben-closure`,
+      recallContent: [
+        {
+          prompt: "Give the Fort Benjamin Harrison Historic District's size, resource count and areas of significance.",
+          answer: "About 340 acres; 94 buildings, 6 structures and 2 sites, of which 75 buildings, 1 site and 3 structures contribute. Areas of significance are Military, Community Planning and Development, and Architecture, with periods 1906-1910, 1920-1937 and 1938-1945.",
+        },
+        {
+          prompt: "What two other names does the Camp Edwin F. Glenn nomination list, and what do they tell you?",
+          answer: "Citizens' Military Training Camp and Fort Harrison Prisoner of War Camp. Two names give you the district's whole history: interwar civilian training, then a wartime prison.",
+        },
+        {
+          prompt: "What is Section 106, and what does it not do?",
+          answer: "It requires a federal agency to take into account the effect of its undertaking on historic properties and to consult the state historic preservation officer. It is a consultation and consideration requirement, not a veto; an agency that follows it may still demolish.",
+        },
+        {
+          prompt: "Why does a 19-page HABS architectural description of this post exist?",
+          answer: "Documenting a property to Historic American Buildings Survey standards and depositing the record with the Library of Congress is a common mitigation measure agreed under the Section 106 process when a federal agency changes or disposes of historic property.",
+        },
+        {
+          prompt: "How does the timing of designation here reverse the pattern from the Indiana Avenue course?",
+          answer: "On Indiana Avenue designation came after the decisions that emptied the corridor. Here closure produced the listing: the base was listed for closure in 1991, the nomination was prepared in 1993, and both districts were listed in 1995.",
+        },
+        {
+          prompt: "What did listing not prevent?",
+          answer: "More than one million square feet of buildings were demolished during the conversion. Listed districts, a federal consultation requirement and mass demolition are all true at once.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
