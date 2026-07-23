@@ -1925,6 +1925,184 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Write  (beat 6: ELA and creative nonfiction, grounded in one room)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gcl-write-assignment",
+      title: "20 · Your assignment: one gym, and the line that decides who is in it",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `Beat 6 asks a question no other beat can: **what can only be said about this place?** Answering it is a writing problem, and this is a real assignment with a real evidence standard.
+
+## The assignment
+
+Write **900 to 1,300 words** of creative nonfiction **set in a gymnasium**. One room. It may be Crispus Attucks, Hinkle, New Castle, Muncie, a township gym in Marion County, or **the gym in your own town**, which is often the better choice. Every factual sentence must be checkable against a source you name. **The form is literary. The standard of evidence is the one Section 3 used on a federal opinion.**
+
+## Step 1 · Choose one room, and choose small
+
+"Indiana basketball" is a topic, not a subject. **A subject is one room on one date.** The 1955 final at Butler Fieldhouse. A Tuesday sectional in a town of 4,000. The 1938 addition at Attucks, or the second gym built there in 1966. The 2,400-seat gym arriving at Attucks in 2028, which does not exist yet and therefore can only be written about as a plan with a budget and a completion date.
+
+**If you cannot visit, that is a constraint you disclose in the piece**, and it changes what you may honestly claim.
+
+## Step 2 · Build the four-column chronology before you write a sentence
+
+Lesson 13 tested an argument with a table and got a different answer than course 1 did. Build your own, with these columns: **date, event, instrument, source.**
+
+**If the instrument column is empty for an event, you have a story and not yet a decision.** Section 2 already gave you a worked example for Attucks: 1911 tournament, 1922 resolution, 1927 opening, 1938 gym, 1942 IHSAA admission, 1949 statute, 1955 championship, 1966 second gym, 1973 first football tournament, 2028 new gym. **Ten dates, all cited.**
+
+## Step 3 · Find the line. This step is required, and it is what makes this a civics assignment
+
+**Your piece must name three things:**
+1. **Which school district the room is in**, from the NCES School and District Navigator or your state's equivalent.
+2. **Where that district's boundary runs**, and what is on the other side of it.
+3. **One dated decision that put the boundary there**, or a clear statement that you could not find one and where you looked.
+
+**That third item is the whole course.** In Indianapolis the decision is a 1969 statute and two acts before it. In your town it may be a township line nobody has revisited since the nineteenth century, a 1960s consolidation, a secession vote, or a merger. **In some places the honest answer is "no single decision, and here is the search I ran."** That is a finding and it is publishable.
+
+## Step 4 · Decide what kind of piece this is
+
+Pick one and commit, because mixing them is what makes place writing mushy.
+- **A biography of a room.** Its span, its uses, its additions, its capacity across years, its end or its survival.
+- **A history of a decision.** One resolution, one waiver, one rezoning, one boundary change, one vote, followed to the document.
+- **A report on a present.** What is there now, who uses it, what is being built, what a public meeting sounded like.
+- **A piece about the record itself.** What you could and could not find, and what the gap means.
+
+**The fourth is the hardest and often the best**, and it is the only one that can be written honestly with thin sources.
+
+## Step 5 · Write it, under these craft rules
+
+1. **Lead with a specific.** A capacity with a year, a footnote in an opinion, an acreage. Not a mood, and not the crowd noise.
+2. **Name the instrument every time you name an outcome.** "The school was overcrowded" is weak. "The site was 8.4 acres, the State Board granted a waiver capped at 2,200 students, and the school enrolled 2,394" is strong, and it is a footnote you can cite.
+3. **Give every figure its owner and its year.** Not "the largest high school gym in the world" but "Indiana's state tourism office describes New Castle Fieldhouse as the largest high school arena in the world."
+4. **Attribute an argument as an argument.** Sports Illustrated titled its account "The real Hoosiers tale." **That is a framing with an author. You may quote it and engage it. You may not launder it into your own narration as a finding.**
+5. **Use the present tense for the present.** Crispus Attucks is an open, competing, expanding school with about 1,200 students. Write it that way.
+6. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+
+1. **No invented detail.** Not a score, an attendance figure, a quotation, a street number, a coach, a player, or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the floor smelled like in 1955.
+2. **No composite or imagined characters.** Real, cited people only. Matthias Nolcox, Ray Crowe, Bill Garrett, Archie Greathouse, Judge S. Hugh Dillin, Richard Lugar, Landrum Shields. **That is more than enough material.**
+3. **No invented dialogue**, including "he might have said."
+4. **Living people describe themselves.** Attucks alumni are alive. **Their memoir is theirs to write.** Quote a published interview with a citation, or interview somebody and say that you did. Do not put words, feelings or motives into a living person.
+5. **No ruin porn and no lost golden age**, and one more that this subject needs specifically: **no triumph-only version either.** Three state championships won by a school that was built to segregate a city, on a site a third the size the state's own formula required, is not a happy ending. **A community winning inside a constraint is not the constraint being justified.** Hold both facts in the same paragraph or you have not written the piece.
+6. **Credit what was built.** A faculty recruited from Black colleges across the South. Coaches who won and then coached again. A community that filled a building the city had capped. Championships in 1955, 1956, 1959 and 2017. **A piece that inventories only what was done to people is an incomplete report.**
+7. **Students are not public figures.** Never attach a named current student to a school assignment, an address or a demographic figure. **A school is a public body. A child is not.**
+8. **Say what you did to a number.** If you converted a capacity, adjusted a dollar figure for inflation, or combined two sources, say so and say how.
+
+## What good looks like
+
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, **and in which the prose is still good.** Those two standards do not conflict. **A school on 8.4 acres holding 2,394 students under a waiver capped at 2,200. A team playing its home games in somebody else's 15,000-seat building. A judge writing that the City's sense of priorities struck the Court as curious.** None of that needs decorating.
+
+## Sources
+- Bamberger, M. (2016, February 23). *The real Hoosiers tale: Crispus Attucks*. Sports Illustrated. https://www.si.com/nba/2016/02/23/crispus-attucks-oscar-robertson-hoosiers-pacers-indiana-high-school
+- Chalkbeat Indiana. (2026a, May 6). *Crispus Attucks High School is getting a $44 million upgrade. Here's what's in store.* https://www.chalkbeat.org/indiana/2026/05/06/crispus-attucks-high-school-gets-new-health-lab-and-gym/
+- Encyclopedia of Indianapolis. (n.d.-a). *Crispus Attucks High School*. https://indyencyclopedia.org/crispus-attucks-high-school/
+- National Center for Education Statistics. (n.d.-a). *School and district navigator*. https://nces.ed.gov/ccd/schoolmap/
+- United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/`,
+      recallContent: [
+        {
+          prompt: "What three things must your piece name about the district line?",
+          answer: "Which school district the room is in, where that district's boundary runs and what is on the other side of it, and one dated decision that put the boundary there, or a clear statement that you could not find one and where you looked.",
+        },
+        {
+          prompt: "What are the four columns of the chronology you build before writing, and what does an empty column mean?",
+          answer: "Date, event, instrument, source. An empty instrument column means you have a story rather than a documented decision.",
+        },
+        {
+          prompt: "How must you handle Sports Illustrated's 'the real Hoosiers tale' framing?",
+          answer: "As an argument with an author. Quote it and engage it. Do not launder it into your own narration as though it were a documented finding.",
+        },
+        {
+          prompt: "Why does this assignment ban the triumph-only version as well as ruin porn?",
+          answer: "Because three championships won by a school built to segregate a city, on a site a third the size the state's own formula required, is not a happy ending. A community winning inside a constraint is not the constraint being justified, and both facts belong in the same paragraph.",
+        },
+        {
+          prompt: "What is the rule about living people and about students?",
+          answer: "Living people describe themselves: quote a published interview with a citation or interview somebody and say you did, and never assign words, feelings or motives. Never attach a named current student to a school assignment, an address or a demographic figure. A school is a public body; a child is not.",
+        },
+      ],
+    },
+    {
+      slug: "gcl-what-comes-next",
+      title: "21 · What this course set up, and what it left out",
+      section: "Section 6 · Write",
+      body: `You have now run the six-beat site template a second time, on a second subject in the same metro. **Running it twice is the point.** Once is a story. Twice, with different results, is a method.
+
+| Beat | What you did here | What you can now do anywhere |
+|---|---|---|
+| **1. Then** | Read a school out of a tournament timeline, a membership history and a board resolution | Establish what an institution was, from the records the institution itself keeps |
+| **2. Built** | Read a building type by its span and its seating, then read a school by its acreage | Tell what a community chose to spend on, and what the parcel would not allow |
+| **3. Powers** | Learned the attendance zone, the district line, a lawsuit and a Supreme Court rule, each traced to a body and a date | Ask "who decided, under what statute, on what record" about any school |
+| **4. Now** | Built an observation brief, and learned that the decisive object is invisible | Look at a building with questions instead of impressions, and know what looking cannot answer |
+| **5. Next** | Found the boundary file, the funding split, the statute for moving a line, and the body deciding this year | Participate in a live decision rather than commenting on a finished one |
+| **6. Write** | Wrote grounded nonfiction under an evidence standard, with the line named | Publish something the next researcher can build on |
+
+## What you can do that you could not do before
+
+- **Name the instrument behind a school's population** rather than describing the population.
+- **Test a thesis against a chronology and report the result either way.** Course 1 ran this test and reported a failure. This course ran it and reported a hold. **The test is only worth having because it can do both.**
+- **Distinguish a claim about a document from a claim about the world.** "The court found more than 90 percent of about 350 boundary changes promoted segregation" is the first. "Indianapolis schools were segregated by accident" is the second, and the record contradicts it.
+- **Read a funding formula as a boundary question.** Rate multiplied by assessed value inside the line.
+- **Find any school's district, and any district's boundary file**, in any state.
+- **Recognise that a proposal not yet adopted is where a citizen has the most leverage**, whether it is a redevelopment plan or a boundary change.
+
+## What this course deliberately did not cover, and why
+
+- **The Attucks athletic record in any depth.** The team, the players, the seasons, and Oscar Robertson's career are a sports history this course touches only where it meets the boundary. **They deserve their own treatment and this is not it.**
+- **The IHSAA's own institutional history.** The 1941 resolution and the 1942 admission are stated with dates; **why the association changed its rule when it did is not established here.**
+- **What actually stood on the 8.4 acres.** Section 2 says so in the text. The 1989 National Register nomination and the Sanborn maps would settle it and neither has been read.
+- **Any judgment about whether the busing remedy was worth it.** The record here does not settle it, and the assessments in circulation disagree. **Section 3 reports the disagreement and names its owner.**
+- **The dissents in Milliken v. Bradley.** Lesson 12 explains exactly why: the full-text sources read did not carry them, so quoting them would have meant quoting something this course had not seen.
+- **The parochial and Catholic school systems in Marion County**, which are a large part of who is in which building and are outside a course about public district lines.
+
+## The unopened sources, which are the next real work
+
+**None of these has been read into this course.** All are public or requestable:
+- **The Board of School Commissioners' minutes, 1954 to 1971**, where roughly 350 boundary changes live as ordinary agenda items.
+- **The General Assembly's committee record for the 1961 act and the 1969 Unigov bill**, which would show who asked for the Marion County carve-out.
+- **The township school boards' minutes**, where remonstrances would appear.
+- **The Indianapolis Recorder, 1922 to 1981**, which covered the founding of Attucks, the championships, and the case, for the community they were about.
+- **The 1989 National Register nomination for Crispus Attucks High School**, and the Sanborn fire insurance maps.
+- **The Indianapolis Star and the Indianapolis Recorder for 20 March 1955**, which would settle the parade disagreement in lesson 3.
+
+**If you want to make an original contribution to this story rather than restate it, that is the list.**
+
+## One last thing about the place
+
+**This is not a story about a school that was done to.** A city was asked by its chamber of commerce to build a segregated high school, and did. A lawsuit was filed against it at the time, in public, by named people, and lost. The building went up on a third of the land the state's own formula asked for. **And then a faculty recruited from Black colleges across the South taught in it, and its teams won the state in 1955, 1956 and 1959, in a state that until 1942 would not let them enter the tournament, and again in 2017, and the school is being expanded right now with a new gym due in 2028.**
+
+**Both halves are true and neither cancels the other.** The buildings are the evidence. **The line is the argument.** And the line is still there, still deciding, still amendable by a resolution, a remonstrance or an act of a legislature. **That is why this is a civics course wearing a fieldhouse.**
+
+## Sources
+- Chalkbeat Indiana. (2026a, May 6). *Crispus Attucks High School is getting a $44 million upgrade. Here's what's in store.* https://www.chalkbeat.org/indiana/2026/05/06/crispus-attucks-high-school-gets-new-health-lab-and-gym/
+- Encyclopedia of Indianapolis. (n.d.-a). *Crispus Attucks High School*. https://indyencyclopedia.org/crispus-attucks-high-school/
+- Encyclopedia of Indianapolis. (n.d.-e). *U.S. v. Board of School Commissioners*. https://indyencyclopedia.org/u-s-v-board-of-school-commissioners/
+- Indiana High School Athletic Association. (n.d.-b). *Membership history, 1903 to present*. https://www.ihsaa.org/sites/default/files/documents/Membership%20History.pdf
+- United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/`,
+      recallContent: [
+        {
+          prompt: "Why does this course insist that running the six-beat template twice is the point?",
+          answer: "Because once is a story and twice, with different results, is a method. Course 1 ran the chronology test and reported a failure; this course ran it and reported a hold. A test is only worth having because it can do both.",
+        },
+        {
+          prompt: "Give the difference between a claim about a document and a claim about the world, using this course's example.",
+          answer: "'The court found more than 90 percent of about 350 boundary changes promoted segregation' is a claim about a document and is supported by it. 'Indianapolis schools were segregated by accident' is a claim about the world and the record contradicts it.",
+        },
+        {
+          prompt: "Name four things this course deliberately left out.",
+          answer: "The Attucks athletic record in depth, the IHSAA's own institutional reasons for changing its rule in 1941, what actually stood on the 8.4 acres, whether the busing remedy was worth it, the dissents in Milliken, and the parochial school systems in Marion County.",
+        },
+        {
+          prompt: "List the unopened sources that would advance this story.",
+          answer: "The Board of School Commissioners' minutes from 1954 to 1971, the General Assembly's committee record for the 1961 act and the 1969 Unigov bill, the township school boards' minutes, the Indianapolis Recorder from 1922 to 1981, the 1989 National Register nomination and the Sanborn maps, and the Star and Recorder for 20 March 1955.",
+        },
+        {
+          prompt: "State the closing claim of the course in one line.",
+          answer: "The buildings are the evidence and the line is the argument, and the line is still there, still deciding, and still amendable by a resolution, a remonstrance or an act of a legislature.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
