@@ -851,6 +851,186 @@ Judge Dillin, in the 1973 remedy phase, considered whether the surrounding distr
         },
       ],
     },
+    {
+      slug: "gcl-powers-the-lawsuit",
+      title: "11 · Instrument three: the lawsuit, and the case that outlived the children in it",
+      section: "Section 3 · Powers",
+      body: `**A lawsuit is an instrument too**, and it fits the definition exactly: a specific legal power (a federal court's remedial authority), exercised by a specific body (the Southern District of Indiana), under a specific statute (Title IV of the Civil Rights Act of 1964, 42 U.S.C. section 2000c-6, and the Fourteenth Amendment), leaving a specific document (a published opinion you can read tonight).
+
+**It is also the slowest instrument in this course.** The United States filed on **31 May 1968**. Court-ordered busing between districts ended in **2016**. A child who started kindergarten the week the complaint was filed could have retired before the remedy did.
+
+## The chronology, and every line of it is dated
+
+| Date | What happened |
+|---|---|
+| **31 May 1968** | The United States sues the Board of School Commissioners under Title IV of the Civil Rights Act of 1964 |
+| **12 to 21 July 1971** | First trial before Judge S. Hugh Dillin |
+| **18 August 1971** | Dillin finds IPS guilty of unlawful segregation: **de jure**, not de facto. Orders Crispus Attucks High School desegregated, and orders the State of Indiana and the other Marion County districts added as defendants |
+| **1 February 1973** | The Seventh Circuit affirms |
+| **20 July 1973** | After a second trial, Dillin imputes the violation to **the State of Indiana** and holds that a remedy requires crossing district lines. Orders each defendant district to receive Black students equal to **5 percent** of its prior-year enrolment |
+| **25 July 1974** | **Milliken v. Bradley** is decided. Lesson 12 is about that day |
+| **21 August 1974** | The Seventh Circuit reverses the remedy **beyond** the Uni-Gov line, vacates and remands the remedy **inside** it, and affirms everything else |
+| **1 August 1975** | On remand, Dillin holds Milliken does **not** bar a Marion County remedy, because Unigov, by not extending IPS boundaries when it extended the city's, inhibited desegregation |
+| **16 July 1976** | The Seventh Circuit affirms |
+| **25 January 1977** | The Supreme Court vacates and remands in light of *Washington v. Davis* and *Arlington Heights*: the plaintiffs must now prove discriminatory **intent**, not just effect |
+| **11 July 1978** | Dillin finds the intent behind Unigov's restriction of IPS boundaries "perfectly obvious," and finds public housing siting kept Black families inside IPS, depriving **at least 7,000 pupils** of a desegregated education |
+| **9 July 1979** | The court adopts **Plan A**: transfer of approximately **6,125** Black students |
+| **25 April 1980** | The Seventh Circuit affirms the county-wide remedy and authorises transfers **into** IPS as well as out |
+| **6 October 1980** | The Supreme Court declines further review |
+| **17 July 1981** | The court holds **the State of Indiana** must pay for the whole remedy, because the State alone bore the liability |
+| **19 August 1981** | Busing begins. Approximately **5,500** Black students to six township districts |
+| **1984** | Parents of bused students win the right to **vote and run** in the township school board elections that now govern their children |
+| **25 June 1998** | Dillin approves a settlement: a **13-year phase-out** starting 1999 for some townships and 2004 for others |
+| **2016** | Inter-district busing ends |
+
+(Encyclopedia of Indianapolis, n.d.-e; *United States v. Board of School Commissioners*, 1971, 1974.)
+
+## Four things in that table that most retellings get wrong
+
+**1. The finding was against the STATE, not only the city.** Dillin imputed the violation to Indiana in July 1973, and in 1981 held Indiana liable for the cost of the entire county-wide remedy. **When a school board is a creature of a state, a state can be the defendant**, and who pays is a finding in its own right.
+
+**2. The busing that actually ran went ONE WAY.** Black students were transported **out** of IPS to township districts. The Seventh Circuit did not authorise transfers **into** IPS until **April 1980**, and the buses that started in August 1981 carried Black children outward (Encyclopedia of Indianapolis, n.d.-e). **A remedy can be lawful, effective on its own terms, and asymmetric in who bears its inconvenience, all at once.** Say all three.
+
+**3. The 1984 voting ruling is the civics lesson hiding in the docket.** Children were assigned to township districts. Their parents did not live in those townships, so they could not vote for the boards that ran their children's schools. **A court had to fix that separately, three years after the buses started.** Representation does not travel with a student automatically. It has to be granted, and somebody has to ask.
+
+**4. The case cost IPS buildings and teachers.** Meeting the intra-district orders required closing **ten elementary schools and Shortridge High School**, with **525 teachers** dismissed (Encyclopedia of Indianapolis, n.d.-e). **A remedy has a budget and a payroll**, and pretending otherwise is how the argument about desegregation gets conducted badly by everyone.
+
+## The sentence a federal appellate judge wrote in 1997
+
+Twenty-nine years into the case, the Seventh Circuit summarised the whole thing in one sentence:
+
+> "in 1969, when by a law known as 'Uni-Gov' the Indiana legislature extended the boundaries of the City of Indianapolis to make them coterminous with those of Marion County, **the boundaries of IPS were deliberately not extended, in order to prevent black public schoolchildren from being in the same school district as white ones**." (*United States v. Board of School Commissioners*, 1997, p. 509.)
+
+**That is a United States Court of Appeals stating it as settled fact.** Not an advocate, not a documentary, not this course. **When you can cite a court's own recital instead of a characterisation, do.**
+
+The same opinion records the district judge's estimate that but for the violations, "**7,000 more black schoolchildren would today live in the suburbs to which they are being bused and 7,000 fewer in the inner city**" (1997, p. 510). **Notice what kind of number that is.** It is a counterfactual: an estimate of a world that did not happen. **Counterfactual estimates are legitimate and they are not measurements**, and you label them.
+
+## What the case did not do
+
+**It did not merge the districts.** Marion County still has eleven school corporations. **It did not survive its own success**: enrolment in IPS fell from about **108,000 students in 1971** to about **47,000 by the early 1990s** and to roughly **21,000** in district-run schools today (Chalkbeat Indiana, 2025b). **And it did not settle the argument**, which is why Section 5 sends you to a decision being taken about these same boundaries this year.
+
+**One judgment this course will not make.** Whether the remedy was worth it is a question about values, and the record here does not settle it. The Encyclopedia's own summary reports an assessment that bused students received improved educational opportunities while "the neighborhoods and schools from which they were bused suffered as a result" (Encyclopedia of Indianapolis, n.d.-e). **That is a contested assessment with an owner, and it is reported here as one.**
+
+## Sources
+- Chalkbeat Indiana. (2025b, December 19). *Why the fractured Indianapolis school system faces a power shakeup*. https://www.chalkbeat.org/indiana/2025/12/19/how-desegregation-and-charters-led-to-indianapolis-local-education-alliance/
+- Encyclopedia of Indianapolis. (n.d.-e). *U.S. v. Board of School Commissioners*. https://indyencyclopedia.org/u-s-v-board-of-school-commissioners/
+- United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/
+- United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). https://www.courtlistener.com/opinion/321692/united-states-of-america-donny-brurell-buckley-intervening-v-board-of/
+- United States v. Board of School Commissioners of the City of Indianapolis, 128 F.3d 507 (7th Cir. 1997). https://caselaw.findlaw.com/court/us-7th-circuit/1233296.html`,
+      recallContent: [
+        {
+          prompt: "Why does this course call a lawsuit an instrument, and how long did this one run?",
+          answer: "Because it fits the definition: a specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. It was filed 31 May 1968 and the inter-district busing it produced ended in 2016.",
+        },
+        {
+          prompt: "Who was ultimately held liable, and who paid for the remedy?",
+          answer: "The State of Indiana. Dillin imputed the violation to the State in July 1973, and in July 1981 held that Indiana must fund the entire Marion County-wide remedy because the State alone bore the liability.",
+        },
+        {
+          prompt: "In which direction did the busing actually run, and when was the other direction authorised?",
+          answer: "One way, out of IPS to the township districts, beginning 19 August 1981 with about 5,500 Black students. The Seventh Circuit did not authorise transfers into IPS until April 1980, and the implemented remedy still ran outward.",
+        },
+        {
+          prompt: "What did the 1984 ruling about township school board elections establish, and why does it matter?",
+          answer: "That parents of bused students could vote and run in the township school board elections governing their children's schools. Representation does not follow a student automatically; it had to be granted, three years after the buses started.",
+        },
+        {
+          prompt: "Quote the Seventh Circuit's 1997 one-sentence summary of what Unigov did.",
+          answer: "That in 1969, when the Uni-Gov law extended the City of Indianapolis boundaries to be coterminous with Marion County, the boundaries of IPS were deliberately not extended, in order to prevent Black public schoolchildren from being in the same school district as white ones.",
+        },
+      ],
+    },
+    {
+      slug: "gcl-powers-milliken",
+      title: "12 · Milliken v. Bradley: the day the district line became a wall",
+      section: "Section 3 · Powers",
+      body: `**On 25 July 1974 the Supreme Court of the United States decided a Detroit case, 5 to 4, and changed what a school district boundary means everywhere in the country.** This lesson is about that decision, because you cannot understand the Indianapolis result without it.
+
+## The facts, briefly and without embellishment
+
+Detroit's schools were found by the district court to be unlawfully segregated, and the State of Michigan was implicated in it. The district court concluded that a remedy confined to Detroit could not work, and ordered a metropolitan plan covering Detroit **plus 53 of the 85 outlying suburban school districts.** Detroit's own enrolment in 1970 was roughly **63.6 percent** Black and **34.8 percent** white, out of about **289,763** students (*Milliken v. Bradley*, 1974).
+
+**Hold that structure in your head, because it is the Indianapolis structure.** One central district, heavily Black, with a ring of separate, heavily white districts around it, and a judge who concludes that the ring is the reason a remedy inside the centre cannot work.
+
+## What the Court held, in its own words
+
+> "**Before the boundaries of separate and autonomous school districts may be set aside by consolidating the separate units for remedial purposes or by imposing a cross-district remedy, it must first be shown that there has been a constitutional violation within one district that produces a significant segregative effect in another district.**" (*Milliken v. Bradley*, 1974, pp. 744-745.)
+
+> "**Specifically it must be shown that racially discriminatory acts of the state or local school districts, or of a single school district have been a substantial cause of inter-district segregation. Thus an inter-district remedy might be in order where the racially discriminatory acts of one or more school districts caused racial segregation in an adjacent district, or where district lines have been deliberately drawn on the basis of race.**" (*Milliken v. Bradley*, 1974, p. 745, as quoted in *United States v. Board of School Commissioners*, 1974, p. 82.)
+
+And the reason the Court gave for the rule:
+
+> "**No single tradition in public education is more deeply rooted than local control over the operation of schools; local autonomy has long been thought essential both to the maintenance of community concern and support for public schools and to quality of the educational process.**" (*Milliken v. Bradley*, 1974.)
+
+## What that actually does, stated without spin
+
+**Before Milliken**, a federal court that found unlawful segregation in a city system could, at least in principle, reach for the whole metropolitan area to fix it. **After Milliken**, it cannot, unless the plaintiffs prove something specific: that the segregation crossed the line **because somebody made it cross**, by an act, in one or more districts, or by drawing the line itself on the basis of race.
+
+**The district boundary becomes the default limit of the remedy.** Not a formality. **A wall.** And the wall is defended by a value the Court names explicitly and that most Americans do in fact hold: local control of schools.
+
+**This course will not caricature that.** Local control is a real good. Small districts are more answerable to the people in them, and a parent can attend a school board meeting in a way she cannot attend a federal court hearing. **The question Milliken settles is not whether local control is valuable. It is what happens when a local boundary and a constitutional violation are the same object**, and the Court's answer was that the boundary presumptively wins.
+
+## A quotation this course does not have, and says so
+
+You will find the closing lines of Justice Marshall's dissent quoted everywhere, and they are moving. **This course does not quote them, because the full-text sources read for this lesson did not carry the dissents in full, and a quotation you have not seen in the document you actually read is a quotation you do not have.** The opinions consulted show separate dissents by Justices Douglas, White and Marshall. **If you want the dissent, read the United States Reports at volume 418, page 717, and quote it from there with a page number.** Doing that yourself is a better exercise than accepting it from this course.
+
+## Why this course puts Milliken next to Unigov
+
+**Because Milliken's own escape clause names exactly what Indianapolis had.** Read the standard again: an inter-district remedy might be in order "**where district lines have been deliberately drawn on the basis of race.**"
+
+In most American metropolitan areas, a plaintiff cannot show that. District lines are old, they follow townships and counties, and the record for why they run where they do is thin or absent. **Indianapolis is different, and the difference is a dated statute.** In 1969 the General Assembly moved the city line and expressly left the school line where it was, and the mayor and the school board president explained why at the time (lesson 10).
+
+**So the Indianapolis plaintiffs had the one thing Milliken demands: a decision, on the record, about the line itself.** That is why the Seventh Circuit, applying Milliken in **August 1974**, did two different things in one paragraph:
+
+> "In accordance with **Milliken v. Bradley**, we **reverse** the district court's findings, conclusions, orders and rulings insofar as they pertain to a metropolitan remedy **beyond** the Uni-Gov boundaries; insofar as they pertain to a remedy **within** the boundaries of Uni-Gov, we **vacate** those rulings and **remand** for further proceedings consistent with that decision. **The district court should determine whether the establishment of the Uni-Gov boundaries without a like reestablishment of IPS boundaries warrants an inter-district remedy within Uni-Gov** in accordance with Milliken." (*United States v. Board of School Commissioners*, 1974, p. 84.)
+
+**Read the geography of that ruling.** The nine adjacent-county districts are out, because nothing was shown about them. **The eight townships and two cities inside Uni-Gov stay in play, because the Uni-Gov line itself is the alleged act.** The wall Milliken built has a door in it, and Indiana's own legislature had left the key in the lock.
+
+## The outcome, and the honest scale of it
+
+On remand Dillin held that Milliken did not bar a Marion County remedy, precisely because Unigov had not extended IPS boundaries when it extended the city's (Encyclopedia of Indianapolis, n.d.-e). After a further trip to the Supreme Court on the question of **intent**, he found that intent "perfectly obvious" in 1978, and buses ran from 1981 to 2016.
+
+**Indianapolis is one of a small number of American metropolitan areas where an inter-district school desegregation remedy survived Milliken and was actually carried out.** The others usually named are **New Castle County, Delaware** (*Evans v. Buchanan*), where a three-judge court ordered an inter-district plan for Wilmington and its suburbs, and **Jefferson County, Kentucky**, where the Louisville city and county systems merged in 1975 under state board action and a federal court order. **Do not read that list as long.** Detroit's plan covered 53 suburban districts and was struck down. **The general rule is Milliken. Indianapolis is the exception, and it is an exception only because a legislature wrote the evidence down.**
+
+## The transferable lesson, which is the point of this section
+
+**A boundary is only a wall until somebody produces the minutes of the meeting where it was drawn.** Milliken did not make district lines untouchable. It made them **presumptively** untouchable, and told plaintiffs exactly what would rebut the presumption. **Then it made that proof extremely hard to assemble**, which is a different thing from making it impossible, and the difference is a research problem.
+
+**That is the skill this whole course is teaching.** Find the act. Find the date. Find the body. Find the document.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-e). *U.S. v. Board of School Commissioners*. https://indyencyclopedia.org/u-s-v-board-of-school-commissioners/
+- Evans v. Buchanan, 447 F. Supp. 982 (D. Del. 1978). https://law.justia.com/cases/federal/district-courts/FSupp/447/982/1620310/
+- Milliken v. Bradley, 418 U.S. 717 (1974). https://caselaw.findlaw.com/court/us-supreme-court/418/717.html
+- Newburg Area Council, Inc. v. Board of Education of Jefferson County, 583 F.2d 827 (6th Cir. 1978). https://openjurist.org/583/f2d/827/newburg-area-council-inc-v-board-of-education-of-jefferson-county-kentucky
+- United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). https://www.courtlistener.com/opinion/321692/united-states-of-america-donny-brurell-buckley-intervening-v-board-of/`,
+      recallContent: [
+        {
+          prompt: "What did the district court order in the Detroit case, and what did the Supreme Court do about it?",
+          answer: "It ordered a metropolitan desegregation plan covering Detroit plus 53 of the 85 outlying suburban districts. On 25 July 1974 the Supreme Court, 5 to 4, held that remedy impermissible.",
+        },
+        {
+          prompt: "State Milliken's threshold for a cross-district remedy.",
+          answer: "Before the boundaries of separate and autonomous school districts may be set aside, it must first be shown that there has been a constitutional violation within one district that produces a significant segregative effect in another district, and specifically that racially discriminatory acts of the state or local districts were a substantial cause of inter-district segregation.",
+        },
+        {
+          prompt: "Which clause of the Milliken standard did Indianapolis satisfy, and what supplied the proof?",
+          answer: "The clause allowing an inter-district remedy where district lines have been deliberately drawn on the basis of race. The proof was the 1969 Unigov statute, which moved the city line and expressly left the school line, explained on the record at the time.",
+        },
+        {
+          prompt: "Break down what the Seventh Circuit did in August 1974.",
+          answer: "It reversed the remedy beyond the Uni-Gov boundaries, vacated and remanded the remedy inside them so the district court could decide whether establishing Uni-Gov boundaries without reestablishing IPS boundaries warranted an inter-district remedy, and affirmed everything else.",
+        },
+        {
+          prompt: "Why does this course refuse to quote Justice Marshall's dissent?",
+          answer: "Because the full-text sources read for the lesson did not carry the dissents in full, and a quotation you have not seen in the document you read is a quotation you do not have. The course sends you to volume 418 of the United States Reports to quote it yourself with a page number.",
+        },
+        {
+          prompt: "Name two other metropolitan areas where an inter-district remedy survived Milliken.",
+          answer: "New Castle County, Delaware, in Evans v. Buchanan, covering Wilmington and its suburbs; and Jefferson County, Kentucky, where the Louisville city and county systems merged in 1975.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
