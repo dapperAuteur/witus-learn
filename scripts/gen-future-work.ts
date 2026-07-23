@@ -14,6 +14,30 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
+/**
+ * Strip em-dashes and en-dashes from generated prose.
+ *
+ * The SOURCE for this generator is `plans/future-courses/`, which is GITIGNORED and therefore was
+ * never touched by the repo-wide em-dash sweep. The modules it writes under `src/lib/` ARE tracked
+ * and WERE swept, so regenerating without this would silently undo the sweep and fail
+ * `pnpm lint` (which runs scripts/check-em-dashes.ts). That is exactly what happened the first time
+ * this ran after the sweep: 862 violations, all reintroduced by one generator pass.
+ *
+ * Same approach as scripts/gen-health-data.ts: fix it in the generator, not in the artifact, so it
+ * survives the next regeneration. Year and number ranges become hyphens; a spaced dash becomes a
+ * comma; a tight one becomes a hyphen.
+ */
+function deDash(text: string): string {
+  let out = text;
+  out = out.replace(/(\d)\s*[\u2013\u2014]\s*(\d)/g, "$1-$2");
+  out = out.replace(/\s+[\u2013\u2014]\s+/g, ", ");
+  out = out.replace(/([A-Za-z0-9'")])[\u2013\u2014](?=[A-Za-z0-9'"(])/g, "$1-");
+  out = out.replace(/\s*[\u2013\u2014]\s*/g, ", ");
+  out = out.replace(/,\s*([.,;:!?])/g, "$1");
+  out = out.replace(/,\s+,/g, ",");
+  return out;
+}
+
 const ROOT = join(import.meta.dirname, "..");
 const OUT_DIR = join(ROOT, "src", "lib", "future-work-content");
 
@@ -77,14 +101,14 @@ function main() {
   mkdirSync(OUT_DIR, { recursive: true });
 
   // ── She Did The Work: the proposal + one seed file per subject ───────────────────────────────
-  const proposal = readFileSync(join(sdtw, "00-course-proposals.md"), "utf8").trim();
+  const proposal = deDash(readFileSync(join(sdtw, "00-course-proposals.md"), "utf8").trim());
   const subjectFiles = readdirSync(sdtw)
     .filter((f) => f.endsWith(".md") && !f.startsWith("00-"))
     .sort();
 
   const subjects = subjectFiles.map((f) => {
     const name = f.replace(/\.md$/, "");
-    const body = readFileSync(join(sdtw, f), "utf8").trim();
+    const body = deDash(readFileSync(join(sdtw, f), "utf8").trim());
     return { key: slugify(name), name, summary: summarize(body), body };
   });
 
@@ -113,7 +137,7 @@ function main() {
   out2 += `export interface ProposalDoc {\n  /** Stable key: the filename without .md. Used as the /admin/future item key. */\n  key: string;\n  /** Human title: the doc's first \`# heading\`, else the de-slugged filename. */\n  title: string;\n  /** First real line of prose, for the card. */\n  summary: string;\n  body: string;\n  provenance: string;\n}\n\n`;
   out2 += `export const PROPOSAL_DOCS: ProposalDoc[] = [\n`;
   for (const f of proposalFiles) {
-    const body = readFileSync(join(dir, f), "utf8").trim();
+    const body = deDash(readFileSync(join(dir, f), "utf8").trim());
     if (!body) continue;
     const key = f.replace(/\.md$/, "");
     // Title: prefer the doc's own H1; fall back to the filename, de-slugged.
@@ -141,7 +165,7 @@ function main() {
       .filter((f) => f.endsWith(".md") && !f.endsWith("-FULL.md"))
       .sort();
     for (const f of files) {
-      const body = readFileSync(join(dir, sub, f), "utf8").trim();
+      const body = deDash(readFileSync(join(dir, sub, f), "utf8").trim());
       if (!body) continue;
       const key = `${sub}-${f.replace(/\.md$/, "").replace(/^\d+-/, "")}`;
       const h1 = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
