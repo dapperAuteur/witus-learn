@@ -479,6 +479,450 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Powers  (beat 3, the load-bearing section: who decided, under what statute,
+    // on what record. Four instruments taken as one lineage, each VERIFIED rather than assumed.)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "bc-powers-zoning",
+      title: "8 · The first instrument: racial zoning, and the chain of four",
+      section: "Section 3 · Powers",
+      body: `Beat 3 asks the question the whole course is built around: **who decided what happened to this ground, under what power, leaving what record?** Baltimore's answer begins with the instrument Section 1 promised you, and the first thing to do with a famous instrument is check whether the famous version is the true one. **It is not, and the way it is wrong is the lesson.**
+
+**The headline.** In 1910 Baltimore passed what is **widely described as the first residential racial segregation ordinance in the United States** (Power, 1983). That sentence is true, and it is also a compression of a much messier seven-year fight, so hold the headline lightly until you have read the record under it.
+
+**The trigger, which you already met.** The ordinance was a direct response to the McCulloh Street purchase in Section 1: a Black lawyer moved his Yale-educated law partner onto a white block, the white neighbours organised, and the City Council answered with a law. **The instrument was aimed at a Black professional buying a good house, not at anyone's poverty.**
+
+**What the ordinance actually said.** The original measure, Ordinance No. 610, barred any Black resident from moving onto a block where most residents were white, and any white resident from moving onto a block where most residents were Black, and it reached churches and schools as well as homes (Power, 1983). It did not desegregate anything or create anything. **It froze the colour of a block as of the day it passed**, and made moving across that line a criminal act.
+
+**Now the part the headline hides: it was not one law, it was four.** The ordinances of 1910 to 1913 are a **chain**, because the courts kept striking them and the Council kept redrafting (Power, 1983; Baltimore Heritage, n.d.).
+1. **Ordinance No. 610, signed in December 1910.** Struck down as defectively drafted.
+2. **A second ordinance, April 1911.** Also found badly drawn.
+3. **A third ordinance, May 15, 1911**, retitled as a measure "for preserving peace, preventing conflict and ill feeling between the white and colored races."
+4. **A fourth ordinance, in 1913**, redrafted after a court loss described below.
+
+**A worked example of verifying, not assuming.** Popular retellings disagree about the exact date of the first ordinance and even about which mayor signed it, and at least one heritage source attributes the December 1910 signing to a mayor who did not take office until 1911. **When accounts disagree, you go to the scholarship that read the primary records.** Power's law-review reconstruction is that authority, and it credits the signing to **Mayor J. Barry Mahool**, a Progressive reformer remembered for backing women's suffrage and "social justice" (Power, 1983). **The man who signed the nation's first residential segregation law was a self-described reformer.** That irony is Power's whole point, and you only reach it by checking the record instead of the summary.
+
+**Where the chain was broken, twice.** The instrument failed in court, and the two cases are worth naming because they are the record.
+- **State v. Gurry (1913).** W. Ashbie Hawkins, the same lawyer whose house purchase triggered the ordinance, defended the Reverend John H. Gurry, whose congregation had taken a building on a block the police called white. The Maryland Court of Appeals voided the ordinance as applied, on the ground that it stripped an owner of **vested property rights** the person had held before the block was declared segregated (Power, 1983). The city's fourth ordinance was an attempt to answer exactly this defect.
+- **Buchanan v. Warley (1917).** This one is not even a Baltimore case. The United States Supreme Court struck down **Louisville's** version, holding that a racial zoning ordinance violated the Fourteenth Amendment because it interfered with an owner's right to sell property (Buchanan v. Warley, 1917). **That decision ended the whole class of laws nationally**, and Baltimore's ordinances died with it, not by repeal but by becoming unenforceable.
+
+**What to carry forward.** The zoning link is real, it is first, and it is Baltimore's. **And it was never one clean statute standing for decades.** It was four laws in three years, each struck, finally ended by a case from another state, all inside seven years. A course that told you "Baltimore, 1910, the first racial zoning law" and stopped would be accurate in the headline and false in the substance. **The next instrument exists precisely because this one kept breaking.**
+
+## Sources
+- Baltimore Heritage. (n.d.). *1885-1929: Segregation and the Fourteenth Amendment*. Baltimore's Civil Rights Heritage. https://baltimoreheritage.github.io/civil-rights-heritage/1885-1929/
+- Buchanan v. Warley, 245 U.S. 60 (1917). https://supreme.justia.com/cases/federal/us/245/60/
+- Maryland Center for History and Culture. (n.d.). *Baltimore's pursuit of fair housing: A brief history*. https://www.mdhistory.org/baltimores-pursuit-of-fair-housing-a-brief-history/
+- Power, G. (1983). Apartheid Baltimore style: The residential segregation ordinances of 1910-1913. *Maryland Law Review, 42*(2), 289-329. https://digitalcommons.law.umaryland.edu/mlr/vol42/iss2/4/`,
+      recallContent: [
+        {
+          prompt: "What is the headline claim about Baltimore's 1910 ordinance, and why must it be held lightly?",
+          answer: "That it was the first residential racial segregation ordinance in the United States. It is true, but it compresses a seven-year fight into one date: the ordinance was actually a chain of four laws, each struck and redrafted, not one clean statute.",
+        },
+        {
+          prompt: "What did the original Ordinance No. 610 actually do?",
+          answer: "It barred a Black resident from moving onto a majority-white block and a white resident from moving onto a majority-Black block, reaching churches and schools too. It did not create anything; it froze each block's colour as of the day it passed and criminalised crossing that line.",
+        },
+        {
+          prompt: "Who signed the first ordinance, and why is that a lesson in verifying?",
+          answer: "Mayor J. Barry Mahool, a Progressive reformer who backed women's suffrage and social justice, per Power's reading of the primary records. Popular accounts disagree on the date and even the mayor, so you go to the scholarship that read the record rather than to the summary.",
+        },
+        {
+          prompt: "How were the ordinances finally stopped?",
+          answer: "State v. Gurry (1913) voided one as applied because it stripped owners of vested property rights, and Buchanan v. Warley (1917), a Louisville case, had the Supreme Court end racial zoning nationally under the Fourteenth Amendment. Baltimore's ordinances became unenforceable rather than being repealed.",
+        },
+      ],
+    },
+    {
+      slug: "bc-powers-covenants",
+      title: "9 · The second instrument: when the private contract took over",
+      section: "Section 3 · Powers",
+      body: `The first instrument kept breaking in court. **The second instrument was built to be unbreakable, because it was not a law at all.** It was a private contract written into the deed, and following how and when it appeared teaches you more about the chain than any single date.
+
+**What a racial covenant is.** A **restrictive covenant** is a promise attached to the land itself: a clause in the deed under which the owner agrees that the property will never be sold to or occupied by members of a named group. Because it rides in the deed, it binds every future owner, and it lives in exactly the same land records as the ground rent you read in Section 2. **The skill transfers directly: if you can read a ground lease, you can read a covenant.**
+
+**Baltimore's canonical example, and its careful timing.** The **Roland Park Company**, developer of the affluent north-side suburbs, is the case study. Its general manager **Edward H. Bouton** considered a racial deed restriction as early as **1893**, and the company's own attorneys advised against it, warning it was probably unconstitutional and that it would affect "a whole race of people, who are in Maryland numbered in the thousands" (*The Baltimore Sun*, 2015). **The company waited about twenty years.** When it opened its **Guilford** development in **1913**, it began writing the racial covenant into the deeds. Filed under a clause headed "Nuisances," the Guilford restriction provided that no part of the tract could be "occupied by any Negro or person of Negro extraction," with an exception carved out for Black domestic servants of white households (*The Baltimore Sun*, 2015; Maryland Center for History and Culture, n.d.). The company used the same device in Homeland and Original Northwood, and developers across the country copied it.
+
+**Now test the tidy story, because this is where the sequence stops being tidy.** The clean version of this course says: first zoning, **then** covenants. Line up the dates and it does not hold.
+- Guilford's covenant is **1913**, the same year as the fourth zoning ordinance, and **four years before** Buchanan v. Warley ended the ordinances in 1917.
+- So the covenants did not wait for the zoning to be exhausted. **They ran in parallel.**
+- And the reason they appeared when they did is the finding: the Roland Park Company reached for a private, permanent instrument **because the public one was proving fragile** in court. When the ordinance kept getting struck, the deed restriction offered the same result with no city council and no judge to lose in front of. **The lineage is one of purpose, not a clean baton pass in time.**
+
+**Who this instrument aimed at, which rhymes with the last one.** The ordinance was triggered by a Black lawyer buying a good house. The covenant was written to keep Black families out of the **best new suburbs** in the region. **Both instruments were aimed at Black success**, at the family with the means to buy on a nice block or in a new development, not at anyone's poverty. That is a pattern worth naming every time you see it.
+
+**How this instrument ended, and how it did not.** In **Shelley v. Kraemer (1948)**, the Supreme Court held that a court could not **enforce** a racial covenant, because using state power to do so would itself violate the Fourteenth Amendment (Shelley v. Kraemer, 1948). Read that holding precisely, because it is narrower than people remember: **the covenants were not erased.** They remained written in the deeds; courts simply could no longer be used to enforce them. Many Baltimore deeds still carry the dead language today, which is why Maryland later created a process for a homeowner to strike it. **An instrument can be disabled and still leave its fingerprints in the record**, and a researcher who knows that will go looking for the clause rather than assuming it was cleaned up.
+
+## Sources
+- Maryland Center for History and Culture. (n.d.). *Baltimore's pursuit of fair housing: A brief history*. https://www.mdhistory.org/baltimores-pursuit-of-fair-housing-a-brief-history/
+- Shelley v. Kraemer, 334 U.S. 1 (1948). https://supreme.justia.com/cases/federal/us/334/1/
+- *The Baltimore Sun*. (2015, March 27). *1893 letter details racially restrictive covenants in city neighborhoods*. https://www.baltimoresun.com/2015/03/27/1893-letter-details-racially-restrictive-covenants-in-city-neighborhoods/`,
+      recallContent: [
+        {
+          prompt: "What is a racial restrictive covenant, and why is it in the same records as ground rent?",
+          answer: "A promise written into the deed that the property will never be sold to or occupied by a named group; because it rides in the deed it binds every later owner. It lives in the land records, the same place as the ground lease, so the record-reading skill from Section 2 transfers directly.",
+        },
+        {
+          prompt: "What did the Roland Park Company do in 1893 versus 1913, and why does the timing matter?",
+          answer: "In 1893 its attorneys advised against a racial covenant as probably unconstitutional. About twenty years later, when Guilford opened in 1913, it began writing the covenant into deeds. The 1913 date is the same year as the fourth zoning ordinance and four years before Buchanan, so covenants ran parallel to zoning, not after it.",
+        },
+        {
+          prompt: "Why did the private covenant appear when the zoning ordinance was still in force?",
+          answer: "Because the public instrument was fragile: the ordinance kept being struck in court. A deed restriction gave the same result permanently, with no council vote or judge to lose in front of. The chain is a lineage of purpose, not a clean sequence in time.",
+        },
+        {
+          prompt: "What exactly did Shelley v. Kraemer (1948) do to covenants, and what did it not do?",
+          answer: "It held that courts could not enforce racial covenants, because state enforcement would violate the Fourteenth Amendment. It did not erase them: the language stayed in the deeds and simply became unenforceable, which is why many Baltimore deeds still carry the dead clause.",
+        },
+      ],
+    },
+    {
+      slug: "bc-powers-redlining",
+      title: "10 · The third instrument: the map, the manual, and the disputed link",
+      section: "Section 3 · Powers",
+      body: `The third instrument is the one everybody has heard of and the one this course is most careful about, because **the popular story is stronger than the evidence for it, and the honest version is more useful anyway.**
+
+**The famous object.** In **1937** the federal **Home Owners' Loan Corporation (HOLC)** produced a "Residential Security Map" of Baltimore, grading neighbourhoods from **A (green, "best")** through **B (blue)** and **C (yellow)** down to **D (red, "hazardous")** (Nelson et al., n.d.). Baltimore is a canonical map city: the covenant suburbs of the last lesson, Roland Park, Guilford and Homeland, are green and blue, and the confined neighbourhoods of Old West Baltimore are yellow and red. The written "area descriptions" behind the colours name race directly, treating the presence of Black residents as a lending hazard (Nelson et al., n.d.). **This is why the map is such powerful teaching evidence: the government wrote its mindset down and coloured it in.**
+
+**Now the disputed part, which most retellings skip.** The tidy claim is: **the HOLC map redlined Baltimore and caused its decline.** Scholars who read the lending records dispute the direct causal step (Hillier, 2003). Three findings sit against the tidy story:
+1. **The HOLC maps were largely confidential.** They were internal federal documents, not circulars handed to every corner bank, so a simple "lenders used this map to deny loans" story is hard to support (Hillier, 2003).
+2. **HOLC's own lending went into red areas.** The agency that drew the red actually made refinancing loans inside it, which is not what a pure redlining account predicts (Hillier, 2003).
+3. **The private-market damage is better traced to a different federal body**, the Federal Housing Administration, discussed below.
+
+**But do not overcorrect into "the map did nothing."** Later quantitative work comparing the graded boundaries finds they carried **some independent, long-run effect** on segregation and disinvestment, even after accounting for what neighbourhoods were like beforehand (Aaronson et al., 2021). **So the map is real evidence with real downstream correlation.** What it is not is a proven single cause. Teach it as the clearest surviving picture of official attitude, and as a boundary that mattered, without claiming it single-handedly emptied West Baltimore.
+
+**The instrument whose own words settle the question: the FHA manual.** If the HOLC map is a picture, the **Federal Housing Administration Underwriting Manual** is a confession, and it is the better-documented instrument because it tells you in federal print exactly what it required. The FHA insured a huge share of the private mortgage market, so its rules shaped where capital flowed nationwide. Its 1938 manual states plainly:
+- "If a neighborhood is to retain stability, it is necessary that properties shall continue to be occupied by the same social and racial classes" (Federal Housing Administration, 1938, section 937).
+- It lists among the "adverse influences" a valuator must guard against the "infiltration of business and industrial uses, lower class occupancy, and inharmonious racial groups" (Federal Housing Administration, 1938, section 937).
+- And it recommends that deed restrictions include "prohibition of the occupancy of properties except by the race for which they are intended" (Federal Housing Administration, 1938, section 980).
+
+**Read that last line against the last lesson.** The federal government's underwriting manual **recommended the very racial covenants** the Roland Park Company was writing. The instruments are not four separate stories; here the federal instrument endorses the private one in writing. **That is a documented link, not an inferred one**, which is exactly why this course leans on the manual's words rather than on the map's popular reputation.
+
+**The method, stated once so it outlasts the facts.** When you have a vivid instrument whose causal role is disputed (the map) and a duller instrument whose words are undisputed (the manual), **build your argument on the words.** A picture persuades; a quotation proves. **Prefer the instrument you can quote.**
+
+## Sources
+- Aaronson, D., Hartley, D., & Mazumder, B. (2021). The effects of the 1930s HOLC "redlining" maps. *American Economic Journal: Economic Policy, 13*(4), 355-392. https://www.aeaweb.org/articles?id=10.1257/pol.20190414
+- Federal Housing Administration. (1938). *Underwriting manual: Underwriting and valuation procedure under Title II of the National Housing Act*. U.S. Government Printing Office.
+- Hillier, A. E. (2003). Redlining and the Home Owners' Loan Corporation. *Journal of Urban History, 29*(4), 394-420. https://doi.org/10.1177/0096144203029004002
+- Nelson, R. K., Winling, L., Marciano, R., Connolly, N. D. B., et al. (n.d.). *Mapping inequality: Redlining in New Deal America*. Digital Scholarship Lab, University of Richmond. https://dsl.richmond.edu/panorama/redlining/
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
+      recallContent: [
+        {
+          prompt: "What was the 1937 HOLC map of Baltimore, and why is it strong teaching evidence?",
+          answer: "A federal Residential Security Map grading neighbourhoods A (green) to D (red), with the covenant suburbs green and blue and Old West Baltimore yellow and red. Its written area descriptions name race as a lending hazard, so it is the government's own mindset written down and coloured in.",
+        },
+        {
+          prompt: "Why do scholars dispute the tidy claim that the HOLC map caused Baltimore's decline?",
+          answer: "Because the maps were largely confidential internal documents rather than circulars to lenders, and HOLC's own lending went into red areas. Later work does find the boundaries carried some independent long-run effect, so the map is real evidence with real correlation, but not a proven single cause.",
+        },
+        {
+          prompt: "Why does this course lean on the FHA Underwriting Manual rather than the map?",
+          answer: "Because the manual is a documented federal instrument whose own words are undisputed. It required properties to stay occupied by the same racial classes, listed inharmonious racial groups as an adverse influence, and recommended deed restrictions prohibiting occupancy except by the intended race, endorsing the private covenants in writing.",
+        },
+        {
+          prompt: "State the method lesson about a disputed instrument versus a documented one.",
+          answer: "When a vivid instrument's causal role is disputed and a duller instrument's words are undisputed, build the argument on the words. A picture persuades; a quotation proves. Prefer the instrument you can quote.",
+        },
+      ],
+    },
+    {
+      slug: "bc-powers-highway",
+      title: "11 · The fourth instrument: the highway that was left unfinished",
+      section: "Section 3 · Powers",
+      body: `The fourth instrument is the one you can still stand in, and it is why Baltimore is the best single city for this course. **The zoning was struck by courts. The covenants were disabled by Shelley. The highway was actually built, and then abandoned halfway, so it is the one link in the chain that is still physically open.**
+
+**What was built.** In the late 1960s and early 1970s the city cut a **1.4-mile** sunken expressway, the **Franklin-Mulberry** section of **US 40**, through West Baltimore, in the neighbourhoods around **Rosemont, Harlem Park and Franklin Square** (Congress for the New Urbanism, n.d.; Baltimore City Department of Transportation, 2022). It was meant to be one leg of a downtown expressway system linking Interstate 70 to the harbour. **That system was never finished.** Organised community and environmental opposition stopped the larger plan, and the leg that was built simply ends, carrying local traffic into a trench and back out. The nickname is the finding: the **"Highway to Nowhere."**
+
+**The human cost, with its owner and its uncertainty attached.** The commonly reported demolition and displacement figures for the corridor are **about 971 homes, 62 businesses, and one school**, with roughly **1,500 residents** displaced (Baltimore City Department of Transportation, 2022; Congress for the New Urbanism, n.d.). **Handle these numbers the way Section 1 handled the Green Book listings: give them their owner and do not smooth them.** Two honest cautions:
+- **The block count varies by source.** Some accounts describe roughly **twenty** demolished blocks; others count about **fourteen** contiguous blocks. The difference is not an error to resolve by averaging; it is what happens when different tellings count the demolition footprint versus the built corridor length. **Report the range and its cause.**
+- **These are demolition and displacement counts, not a survey of everything the corridor was.** They tell you how much was cleared. They do not tell you what was lost in a fuller sense, and no such census has been read into this course.
+
+**Why this instrument is different from the other three.** The ordinance and the covenants were tools that aimed at Black neighbourhoods and, in law, failed: struck down and disabled. The highway is the tool that **succeeded at the clearance and then failed at its own stated purpose.** It displaced 1,500 people to build a road that was supposed to carry traffic downtown, and it never carried that traffic, because the rest of the road was never built. **A cleared neighbourhood and no working highway to show for it** is a specific kind of harm, and it is the reason the trench reads today as an unusually legible absence. You will look straight at it in Section 4.
+
+**The instrument's authors, so you can name them.** A highway is not a natural feature. Its route was chosen by transportation officials and adopted through a planning and right-of-way process, and that process left records: alignment studies, right-of-way maps, condemnation filings. **When you can name the body that chose the line, the highway stops being a disaster that happened and becomes a decision that somebody made**, which is the whole posture of beat 3. Those right-of-way maps are public, and they are on the list of sources this course has not yet fully read.
+
+**Why the chain ends here, and why beat 5 begins here.** Four instruments, one city, one purpose, and the last of them is still an open trench with an active plan being written for it right now. **That is the rare gift of Baltimore: the final link is not a monument or a memory, it is a hole in the ground with a live civic proceeding attached.** Section 5 sends you into that proceeding.
+
+## Sources
+- Baltimore City Department of Transportation. (2022, October 21). *Giving back what was taken: The West Baltimore United Project seeks to heal 50 years of infrastructure damage*. https://transportation.baltimorecity.gov/news/press-releases/2022-10-21-giving-back-what-was-taken-west-baltimore-united-project-seeks-heal
+- Congress for the New Urbanism. (n.d.). *Baltimore: US 40 Expressway*. Highways to Boulevards. https://www.cnu.org/highways-boulevards/campaign-cities/baltimore-us-40
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
+      recallContent: [
+        {
+          prompt: "What is the Highway to Nowhere, and why was it left unfinished?",
+          answer: "A 1.4-mile sunken section of US 40 (Franklin-Mulberry) cut through West Baltimore around Rosemont, Harlem Park and Franklin Square in the late 1960s and early 1970s. It was meant to link Interstate 70 to the harbour, but community and environmental opposition stopped the larger system, so the built leg just ends in a trench.",
+        },
+        {
+          prompt: "What are the reported displacement figures, and how should you handle them?",
+          answer: "About 971 homes, 62 businesses and one school demolished, and roughly 1,500 residents displaced. Give them their owner, note that the block count varies (about fourteen contiguous blocks versus about twenty demolished) because sources count different things, and remember they are demolition counts, not a full survey of what was lost.",
+        },
+        {
+          prompt: "How is the highway instrument different from the zoning and covenant instruments?",
+          answer: "The ordinance and covenants aimed at Black neighbourhoods and then failed in law, struck down and disabled. The highway succeeded at the clearance and then failed at its own purpose: it displaced 1,500 people for a road that never carried the downtown traffic, because the rest of it was never built.",
+        },
+        {
+          prompt: "What turns the highway from a disaster that happened into a decision someone made?",
+          answer: "Naming the body that chose the route. The alignment was selected by transportation officials through a planning and right-of-way process that left alignment studies, right-of-way maps and condemnation filings, which are public records this course has not yet fully read.",
+        },
+      ],
+    },
+    {
+      slug: "bc-powers-test-the-chain",
+      title: "12 · Testing the chain against the chronology",
+      section: "Section 3 · Powers",
+      body: `Here is the argument this whole course rests on, stated at its strongest. **This lesson tests it, because the thing you are proudest of is the thing you should test hardest.**
+
+**The argument, as proposed.** Baltimore lets you see one clean sequence without leaving town: racial zoning first, **then** restrictive covenants, **then** redlining, **then** the highway, each instrument handing off to the next like a baton, all aimed at one end. If it holds, a learner can walk four blocks and watch a fifty-year machine run in order.
+
+**The test is a chronology, and it is the cheapest test there is.** Line the dates up and ask whether the story survives them.
+
+| Date | Event | Instrument |
+|---|---|---|
+| December 1910 | Ordinance No. 610 signed by Mayor Mahool | Zoning |
+| April 1911 | Second ordinance (first redraft) | Zoning |
+| May 1911 | Third ordinance | Zoning |
+| 1913 | Roland Park Company writes the racial covenant as Guilford opens | Covenant |
+| June 1913 | State v. Gurry voids the ordinance on vested-property grounds | Zoning struck |
+| 1913 | Fourth ordinance, redrafted to answer Gurry | Zoning |
+| 1917 | Buchanan v. Warley ends racial zoning nationally | Zoning struck |
+| 1934, 1938 | FHA created; Underwriting Manual codifies racial underwriting | Redlining |
+| 1937 | HOLC Residential Security Map of Baltimore | Redlining |
+| 1948 | Shelley v. Kraemer makes covenants unenforceable | Covenant disabled |
+| late 1960s to mid 1970s | Highway to Nowhere built through West Baltimore | Highway |
+
+**The verdict, stated plainly. The chain holds as a lineage of purpose and fails as a clean baton pass in time, and this course reports the failure as a result rather than hiding it.**
+
+**Where the argument holds, and needs no softening.** These were **successive tools aimed at one end**, every one traceable to a named body, a date and a document, and every one present in a single city. Zoning gave way to a private contract when the courts closed it. Federal underwriting and a graded map governed where mortgage capital went. A highway cleared what remained. **That much is the record, and it is a real and defensible claim.** Baltimore genuinely does hold the whole toolkit inside its own limits, which no other city in this series does as completely.
+
+**Where the argument fails, and this is the interesting part.**
+1. **Zoning and covenants overlap; they do not sequence.** Guilford's covenant is **1913**, contemporaneous with the ordinances and four years before Buchanan. The covenant did not wait for zoning to be spent. It appeared **because** zoning was failing in court. "First zoning, then covenants" is wrong on the dates.
+2. **The redlining link is causally disputed.** The map is evidence of the mindset and the FHA manual is the documented instrument, but "the red map caused the decline" is contested, and this course refuses to assert it. **A disputed link stated as a fact would poison the whole chain.**
+3. **There is no single hand.** A city council, a private development company, a federal corporation, the FHA, and a state highway department each used a different power across sixty years. Calling it "the chain" is a useful shorthand for a shared purpose, but it must not smuggle in a single planner who does not exist in the record. **The purpose was shared. The authorship was plural.**
+
+**Three lessons about method, which outlast every fact in this course.**
+1. **Build the chronology before you build the argument.** A table of dates costs an hour and it caught the overlap that the tidy story hides.
+2. **A weakened claim that survives is worth more than a strong claim that does not.** "Four instruments, one purpose, one city" survives the dates. "A clean four-step sequence run by one hand" does not.
+3. **Report the weakening.** You tested the course's own thesis and part of it did not hold. **That is a finding, and it belongs in the course**, because a chain you can check is worth more than a story you cannot.
+
+**What is still open, and would settle it.** The Baltimore City Council's ordinance files and the mayor's papers for 1910 to 1913; the Roland Park Company's corporate records and its full covenant geography; the HOLC area-description sheets for Baltimore, digitized in Mapping Inequality but not read line by line here; and the Maryland State Roads Commission right-of-way maps for the Franklin-Mulberry corridor. **None of those has been fully read into this course.** They are public or requestable, and they are the next real work on this question.
+
+## Sources
+- Aaronson, D., Hartley, D., & Mazumder, B. (2021). The effects of the 1930s HOLC "redlining" maps. *American Economic Journal: Economic Policy, 13*(4), 355-392. https://www.aeaweb.org/articles?id=10.1257/pol.20190414
+- Hillier, A. E. (2003). Redlining and the Home Owners' Loan Corporation. *Journal of Urban History, 29*(4), 394-420. https://doi.org/10.1177/0096144203029004002
+- Nelson, R. K., Winling, L., Marciano, R., Connolly, N. D. B., et al. (n.d.). *Mapping inequality: Redlining in New Deal America*. Digital Scholarship Lab, University of Richmond. https://dsl.richmond.edu/panorama/redlining/
+- Power, G. (1983). Apartheid Baltimore style: The residential segregation ordinances of 1910-1913. *Maryland Law Review, 42*(2), 289-329. https://digitalcommons.law.umaryland.edu/mlr/vol42/iss2/4/
+- *The Baltimore Sun*. (2015, March 27). *1893 letter details racially restrictive covenants in city neighborhoods*. https://www.baltimoresun.com/2015/03/27/1893-letter-details-racially-restrictive-covenants-in-city-neighborhoods/`,
+      recallContent: [
+        {
+          prompt: "State the argument this course rests on, and the one-line verdict of the chronology test.",
+          answer: "That Baltimore shows one clean sequence, zoning then covenants then redlining then the highway, each handing off to the next toward one end. Verdict: the chain holds as a lineage of purpose and fails as a clean baton pass in time.",
+        },
+        {
+          prompt: "Give the strongest way the chain fails the chronology test.",
+          answer: "Zoning and covenants overlap rather than sequence. Guilford's covenant is 1913, contemporaneous with the ordinances and four years before Buchanan, and it appeared because the zoning was failing in court, not after it was spent. 'First zoning, then covenants' is wrong on the dates.",
+        },
+        {
+          prompt: "Why does the course refuse to say 'the red map caused the decline' or 'one hand ran the chain'?",
+          answer: "Because the redlining causal link is disputed, and stating a disputed link as fact would poison the chain. And because a council, a private company, a federal corporation, the FHA and a state highway department each used a different power over sixty years: the purpose was shared, but the authorship was plural.",
+        },
+        {
+          prompt: "Name the three method lessons from testing the chain.",
+          answer: "Build the chronology before the argument; a weakened claim that survives beats a strong claim that does not; and report the weakening, because a chain you can check is worth more than a story you cannot.",
+        },
+      ],
+    },
+    {
+      slug: "bc-quiz-powers",
+      title: "13 · Quiz: the four instruments",
+      section: "Section 3 · Powers",
+      quiz: {
+        passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options, so a retake is a different quiz.
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "The claim that Baltimore's 1910 ordinance was 'the first residential racial segregation law in the US' is best described as:",
+            options: [
+              "A myth with no basis",
+              "A claim about a single statute that stood for decades",
+              "True, but a compression of a chain of four ordinances passed and struck between 1910 and 1913",
+              "A claim invented by later historians",
+            ],
+            correctIndex: 2,
+            explanation: "The headline is accurate but hides a seven-year fight: four laws in three years, each struck and redrafted, ended by a case from another state.",
+            sourceLessonSlug: "bc-powers-zoning",
+          },
+          {
+            prompt: "Who signed the original December 1910 ordinance, according to the scholarship that read the primary records?",
+            options: [
+              "Mayor J. Barry Mahool, a Progressive reformer",
+              "A mayor who did not take office until 1911",
+              "The Roland Park Company",
+              "The Home Owners' Loan Corporation",
+            ],
+            correctIndex: 0,
+            explanation: "Power credits the signing to Mahool, remembered for backing women's suffrage and social justice. Popular accounts disagree on date and mayor, which is why you go to the record.",
+            sourceLessonSlug: "bc-powers-zoning",
+          },
+          {
+            prompt: "How did the racial zoning ordinances finally end?",
+            options: [
+              "Baltimore's City Council repealed them",
+              "A referendum overturned them",
+              "They were never enforced in the first place",
+              "Buchanan v. Warley (1917), a Louisville case, had the Supreme Court end racial zoning nationally, and Baltimore's died with it",
+            ],
+            correctIndex: 3,
+            explanation: "State v. Gurry (1913) voided one on vested-property grounds; Buchanan ended the whole class under the Fourteenth Amendment, so Baltimore's became unenforceable rather than repealed.",
+            sourceLessonSlug: "bc-powers-zoning",
+          },
+          {
+            prompt: "A racial restrictive covenant differs from a zoning ordinance because it is:",
+            options: [
+              "A federal law",
+              "A private promise written into the deed that binds every future owner",
+              "A tax on the property",
+              "A map grading the neighbourhood",
+            ],
+            correctIndex: 1,
+            explanation: "It rides in the deed, so it lives in the same land records as the ground rent from Section 2, and the record-reading skill transfers.",
+            sourceLessonSlug: "bc-powers-covenants",
+          },
+          {
+            prompt: "Why does the 1913 date of the Guilford covenant matter to the chain argument?",
+            options: [
+              "It is the same year as the fourth zoning ordinance and four years before Buchanan, so covenants ran parallel to zoning rather than after it",
+              "It proves covenants came long after zoning ended",
+              "It shows the covenant was illegal",
+              "It has nothing to do with the ordinances",
+            ],
+            correctIndex: 0,
+            explanation: "The Roland Park Company reached for a permanent private instrument because the public one was failing in court. The lineage is one of purpose, not a clean sequence in time.",
+            sourceLessonSlug: "bc-powers-covenants",
+          },
+          {
+            prompt: "What did Shelley v. Kraemer (1948) actually do to racial covenants?",
+            options: [
+              "It erased the covenant language from all deeds",
+              "It made writing new covenants a crime",
+              "It held that courts could not enforce them, while the dead language stayed in the deeds",
+              "It upheld them as constitutional",
+            ],
+            correctIndex: 2,
+            explanation: "State enforcement would violate the Fourteenth Amendment, so covenants became unenforceable but not erased. Many Baltimore deeds still carry the clause, which is why researchers go looking for it.",
+            sourceLessonSlug: "bc-powers-covenants",
+          },
+          {
+            prompt: "The 1937 HOLC 'Residential Security Map' of Baltimore is best taught as:",
+            options: [
+              "The single proven cause of West Baltimore's decline",
+              "The clearest surviving picture of official attitude and a boundary that mattered, but not a proven sole cause",
+              "A private real estate advertisement",
+              "A map with no racial content",
+            ],
+            correctIndex: 1,
+            explanation: "Its area descriptions name race as a hazard, and later work finds the boundaries had some independent effect, but the direct causal story is disputed.",
+            sourceLessonSlug: "bc-powers-redlining",
+          },
+          {
+            prompt: "Which findings make scholars dispute the tidy 'the HOLC map redlined Baltimore' story?",
+            options: [
+              "The map was never actually drawn",
+              "The map only covered white neighbourhoods",
+              "Baltimore had no HOLC map at all",
+              "The maps were largely confidential, and HOLC's own lending went into red areas",
+            ],
+            correctIndex: 3,
+            explanation: "A simple 'lenders used this map to deny loans' account is hard to support when the maps were internal and the agency lent inside the red. The FHA is the better-documented private-market instrument.",
+            sourceLessonSlug: "bc-powers-redlining",
+          },
+          {
+            prompt: "Why does this course lean on the FHA Underwriting Manual rather than the HOLC map?",
+            options: [
+              "Because the manual's own words are undisputed: it required racial stability and recommended deed restrictions prohibiting occupancy except by the intended race",
+              "Because the manual is more colourful",
+              "Because the map does not exist",
+              "Because the FHA had no influence on lending",
+            ],
+            correctIndex: 0,
+            explanation: "The manual endorsed the private covenants in writing. A picture persuades; a quotation proves. Prefer the instrument you can quote.",
+            sourceLessonSlug: "bc-powers-redlining",
+          },
+          {
+            prompt: "The Highway to Nowhere is the 'unusually legible absence' of this course because it:",
+            options: [
+              "Was never built at all",
+              "Is a fully working interstate today",
+              "Was built and then abandoned halfway, so it is the one link in the chain still physically open",
+              "Was demolished after completion",
+            ],
+            correctIndex: 2,
+            explanation: "The zoning was struck and the covenants disabled, but the highway trench is still there, an open cut with a live civic proceeding attached.",
+            sourceLessonSlug: "bc-powers-highway",
+          },
+          {
+            prompt: "How should the highway's displacement figures be handled?",
+            options: [
+              "Averaged into a single round number",
+              "Given their owner, with the varying block count reported rather than smoothed, and understood as demolition counts not a full survey",
+              "Presented as a corridor-level census of everything lost",
+              "Dropped, because they are unknowable",
+            ],
+            correctIndex: 1,
+            explanation: "About 971 homes, 62 businesses, one school and roughly 1,500 residents. The block count runs from about fourteen to about twenty because sources count different things.",
+            sourceLessonSlug: "bc-powers-highway",
+          },
+          {
+            prompt: "What makes the highway a decision rather than a disaster that simply happened?",
+            options: [
+              "Nothing; highways are natural features",
+              "It appeared overnight with no planning",
+              "The weather determined its route",
+              "Its route was chosen by transportation officials through a process that left alignment studies, right-of-way maps and condemnation filings",
+            ],
+            correctIndex: 3,
+            explanation: "Naming the body that chose the line is the whole posture of beat 3, and those right-of-way maps are public records this course has not yet fully read.",
+            sourceLessonSlug: "bc-powers-highway",
+          },
+          {
+            prompt: "The one-line verdict of testing the chain against the chronology is:",
+            options: [
+              "The chain holds as a lineage of purpose and fails as a clean baton pass in time",
+              "The chain is entirely false",
+              "The chain is a flawless four-step sequence",
+              "The chronology cannot be built",
+            ],
+            correctIndex: 0,
+            explanation: "Successive tools aimed at one end in one city is defensible; a clean four-step sequence run by one hand is not.",
+            sourceLessonSlug: "bc-powers-test-the-chain",
+          },
+          {
+            prompt: "Why does the course insist there was no single hand behind the chain?",
+            options: [
+              "Because the instruments were imaginary",
+              "Because only one body was ever involved",
+              "Because a city council, a private company, a federal corporation, the FHA and a state highway department each used a different power across sixty years",
+              "Because nobody made any decisions",
+            ],
+            correctIndex: 2,
+            explanation: "The purpose was shared, but the authorship was plural. 'The chain' must not smuggle in a single planner the record does not show.",
+            sourceLessonSlug: "bc-powers-test-the-chain",
+          },
+          {
+            prompt: "The method lesson 'a weakened claim that survives beats a strong claim that does not' means, here:",
+            options: [
+              "Always make the boldest possible claim",
+              "'Four instruments, one purpose, one city' survives the dates, while 'a clean sequence run by one hand' does not, so you keep the first",
+              "Never test your own thesis",
+              "Suppress any finding that weakens your argument",
+            ],
+            correctIndex: 1,
+            explanation: "Report the weakening rather than hiding it. A chain you can check is worth more than a story you cannot.",
+            sourceLessonSlug: "bc-powers-test-the-chain",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
