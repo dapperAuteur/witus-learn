@@ -1251,6 +1251,615 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Now  (beat 4: observation and evidence)
+    //
+    // The owner's 360 tour of the Indianapolis Motor Speedway exists, but its Wanderlearn embed
+    // URL does not yet, and a tour URL is authoritative external data that must never be guessed
+    // (plans/future/04-wanderlearn-360-boundary.md). So this lesson ships as `virtual_tour` with
+    // NO contentUrl: the player renders the "no media yet" notice above the body, and the body is
+    // the observation brief the learner uses when the tour lands. Drop the URL in and re-seed.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "tr-now-tour",
+      title: "14 · Now: walk the Speedway (360 tour, forthcoming)",
+      section: "Section 4 · Now",
+      lessonType: "virtual_tour",
+      body: `**The 360 tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is telling you the truth rather than reporting a fault. The site template this series uses treats beat 4 as a drop-in, so a course is complete and teachable without it and the tour is added later without restructuring anything.
+
+**Read this lesson now anyway. It is your observation brief.** Beat 4 asks one question, "what is actually there today", and the difference between a spectator looking at a racetrack and a researcher looking at one is entirely a matter of knowing what to look for before you arrive.
+
+**A warning specific to this site.** The Speedway is enormously photogenic and its own image is highly managed. **A 360 tour of a famous stadium will hand you an experience, and an experience is not evidence.** Everything below is designed to make you look at the parts nobody photographs.
+
+## What to look for, in order
+
+**1. Look at the ground before you look at anything built on it.** The primary structure here is the surface. **Where does it bank, and where is it flat? Where does it drain? Where does the pavement change?** You know the oval is 2.5 miles and rectangular, and that 3.2 million bricks went down in 1909 under what is there now (Encyclopedia of Indianapolis, n.d.-a). **The engineered ground is the building.**
+
+**2. Find the Yard of Bricks, and then ask the token question.** One yard is exposed at the start and finish line; the rest is under asphalt (Cultural Landscape Foundation, n.d.). **Ask what proportion of the original fabric that represents, and then ask the same question about every preserved fragment you have ever been shown.** This is the same skill you used on eleven buildings standing for a nine-block corridor in course 1.
+
+**3. Date the structures against 1987.** The Speedway became a National Historic Landmark in **1987** (Cultural Landscape Foundation, n.d.). **Every structure you can see is either older than that designation or newer than it**, and the Pagoda, built 1998 to 2000, is newer. **Sort what you see into those two piles.** The pile of newer things is the proof that a federal landmark designation is not a freeze.
+
+**4. Look at the infield, and count the uses.** A golf course has been inside and around this track since 1929 (Encyclopedia of Indianapolis, n.d.-a). **What else is in there?** Garages, medical facilities, media buildings, museum, parking, roads. **An infield is a small town's worth of land use, and it exists because of a shape.**
+
+**5. Look outward at the town, and read it as peak-day infrastructure.** Wide approaches, lots and lawns that are lots for a few days a year, businesses whose sign copy assumes race week, and a residential street grid platted in 1912 by a developer working for the track's owners (Encyclopedia of Indianapolis, n.d.-e). **Ask of each thing you see: is this sized for a Tuesday, or for one day in May?**
+
+**6. Find the boundary between the track and the Town of Speedway.** Somewhere the private property ends and a municipality of about 4.2 square miles begins. **That line separates two completely different legal regimes**, which Section 5 spells out, and it is invisible in a photograph. **Note where you think it runs, then check it on a parcel map and see how wrong you were.**
+
+**7. Read every marker, plaque, name and honour roll, and note who put it there.** Who is commemorated, in what medium, and by which sponsor? **Then note who is not.** This course has given you names that belong to this sport in this city: Charlie Wiggins, Malcolm Hannon, Bill Carson, Sumner "Red" Oliver, Joie Ray, Willy T. Ribbs, George Mack. **Look for them. Record what you find and what you do not, precisely, without adjectives.**
+
+**8. Look at the people, and describe them the way they would describe themselves.** This is a working venue with employees, members, residents and visitors. A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours.
+
+## What this tour cannot show you, and where the other track is
+
+- **It cannot show you the second racetrack.** The Indiana State Fairgrounds mile is about seven miles away, and its racing surface no longer exists (Encyclopedia of Indianapolis, n.d.-b). **A tour of the surviving site cannot document the vanished one. That asymmetry is the course's subject, and you should feel it here.**
+- **It cannot show you a rule.** Everything Section 3 established about admission is invisible on any surface.
+- **It cannot show you a decision or a date.** Beat 3 gave you the dates; beat 5 gives you the records.
+- **It cannot show you absence.** You cannot photograph the drivers who were not admitted. **Everything the tour does not contain is a question for Section 5, not an answer.**
+
+**Write down your five most confident observations before the tour arrives, based on this brief and the map lesson that follows. Then check them.** Being wrong on the record about a place you had not yet seen is a better teacher than being right about one you had.
+
+## Sources
+- Cultural Landscape Foundation. (n.d.). *Indianapolis Motor Speedway*. https://www.tclf.org/landscapes/indianapolis-motor-speedway
+- Encyclopedia of Indianapolis. (n.d.-a). *Indianapolis Motor Speedway*. https://indyencyclopedia.org/indianapolis-motor-speedway/
+- Encyclopedia of Indianapolis. (n.d.-b). *Indiana State Fair and Fairgrounds*. https://indyencyclopedia.org/indiana-state-fair-and-fairgrounds/
+- Encyclopedia of Indianapolis. (n.d.-e). *Speedway*. https://indyencyclopedia.org/speedway/`,
+      recallContent: [
+        {
+          prompt: "Why is this lesson published before its 360 tour exists?",
+          answer: "Because the site template treats beat 4 as a drop-in: a course is complete and teachable with the other five beats, and the tour is added later without restructuring anything. A tour embed URL is authoritative external data and is never guessed.",
+        },
+        {
+          prompt: "What is the warning specific to touring a famous stadium?",
+          answer: "It is enormously photogenic and its own image is highly managed, so a 360 tour will hand you an experience, and an experience is not evidence. The brief is designed to make you look at the parts nobody photographs.",
+        },
+        {
+          prompt: "What should you do with the 1987 date while touring?",
+          answer: "Sort every visible structure into older or newer than the National Historic Landmark designation. The pile of newer things, including the Pagoda built 1998 to 2000, is the proof that a federal designation is not a freeze.",
+        },
+        {
+          prompt: "What question should you ask about the Yard of Bricks?",
+          answer: "What proportion of the original fabric one exposed yard represents out of 3.2 million bricks, and then the same question about every preserved fragment you have ever been shown.",
+        },
+        {
+          prompt: "Name three things this tour cannot show you.",
+          answer: "The second racetrack seven miles away whose racing surface no longer exists; a rule, since everything about admission is invisible on any surface; a decision or a date; and absence, since you cannot photograph the drivers who were not admitted.",
+        },
+      ],
+    },
+    {
+      slug: "tr-map",
+      title: "15 · Map: a circuit, not a site",
+      section: "Section 4 · Now",
+      body: `**Read this before you touch the map, because the map's limits are a lesson in themselves.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, so two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **The two racetracks in this course's title are about seven miles apart.** At world scale they are the same dot, and pretending otherwise would be a worse lesson than admitting it.
+
+**So this map does a different job, and it is the right one for this subject.** The Indianapolis Motor Speedway is a **site**. The Gold and Glory Sweepstakes was a **circuit**: an organisation that rented tracks, drew fields from an eight-state region, and was covered by a national newspaper published in another city. **You cannot map a circuit with one pin, and every time somebody tells you this story as "a race at the fairgrounds" they have quietly shrunk it to a site.**
+
+**Blue and violet: the two subjects**, plotted at approximate points about seven miles apart. Their details carry the comparison this whole course is built on.
+
+**Amber: four other places this story actually happened.** A borrowed track in a small town, a birthplace and the marker that stands there, the track where a licence finally turned into a start, and a speedway in another state where an entry was refused for want of a registration. **Take those four away and you have a local anecdote instead of a circuit.**
+
+**Green: two archives.** Indianapolis, where the state library and the state historical marker programme sit, and Chicago, where the newspaper that named the race was published. **Knowing where a record physically lives is part of knowing that it exists.**
+
+**Coordinates on this map are approximate points, not surveyed locations.** Do not use them to find an address. Use them to see the shape of the circuit, and use a county GIS or an assessor's property card when you need a parcel.
+
+**One thing to notice about the county GIS, because it is a genuine subtlety.** The Town of Speedway is an independent municipality with its own council, and it is **still inside Marion County**, so the county's parcel and boundary layers cover it even though the county's government does not run it. **A mapping jurisdiction and a governing jurisdiction are different things, and confusing them is how researchers lose an afternoon.**
+
+**What this map cannot show, and neither could course 1's.** It cannot show absence. Every marker exists because something was recorded. **The Sweepstakes cities the Encyclopedia mentions but does not name are not on this map**, and how many there were is a question this course cannot answer and will not guess at.
+
+## Sources
+- City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
+- Encyclopedia of Indianapolis. (n.d.-b). *Indiana State Fair and Fairgrounds*. https://indyencyclopedia.org/indiana-state-fair-and-fairgrounds/
+- Encyclopedia of Indianapolis. (n.d.-c). *Gold and Glory Sweepstakes*. https://indyencyclopedia.org/gold-and-glory-sweepstakes/
+- Encyclopedia of Indianapolis. (n.d.-e). *Speedway*. https://indyencyclopedia.org/speedway/
+- PBS. (n.d.-b). *For gold and glory: History*. https://www.pbs.org/forgoldandglory/history/`,
+      mapContent: {
+        markers: [
+          {
+            id: "tr-ims",
+            lat: 39.795,
+            lng: -86.2347,
+            title: "Indianapolis Motor Speedway, Speedway, Indiana",
+            color: "#1d4ed8",
+            description:
+              "Track one. A 2.5-mile rectangular oval opened in 1909 on farmland northwest of Indianapolis by Carl Fisher, James Allison, Arthur Newby and Frank Wheeler, repaved that September with 3.2 million ten-pound bricks laid in 63 days, first host of a 500-mile race in 1911, holder of more than 250,000 permanent seats, listed on the National Register in 1975 and designated a National Historic Landmark in 1987. No Black driver started its 500-mile race until Willy T. Ribbs in 1991, eighty years and seventy-five runnings after the first. Owned since January 6, 2020 by Penske Entertainment Corp., which also owns the series that sanctions the race.",
+          },
+          {
+            id: "tr-fairgrounds",
+            lat: 39.8266,
+            lng: -86.1364,
+            title: "Indiana State Fairgrounds mile, Indianapolis, Indiana",
+            color: "#7c3aed",
+            description:
+              "Track two, about seven miles from track one. A one-mile dirt oval that opened with the fairgrounds on September 19, 1892, alongside 72 buildings and a 6,000-seat grandstand on 214 acres. Between 1924 and 1936 it carried the Gold and Glory Sweepstakes, the Colored Speedway Association's 100-mile championship and the largest annually staged Black sporting event in the country. In 2019 the track was converted to an all-weather crushed-limestone harness training surface, auto racing ended after the 64th Hoosier Hundred on May 23, and the infield became parking. The ground is public; the racing surface is gone.",
+          },
+          {
+            id: "tr-mooresville",
+            lat: 39.6137,
+            lng: -86.3744,
+            title: "Walnut Gardens Speedway, Mooresville, Indiana",
+            color: "#b45309",
+            description:
+              "The borrowed track. The 1931 Gold and Glory Sweepstakes was run here on July 4 rather than at the fairgrounds, at 50 miles instead of 100, because of Depression finances; the companion site to the For Gold and Glory documentary records that the owner, Harry Earl, who was also one of the Colored Speedway Association's seven founders, offered the facility for one dollar. Charlie Wiggins won at an average of 58.2 miles per hour. This pin is why 'the fairgrounds race' is the wrong shorthand.",
+          },
+          {
+            id: "tr-evansville",
+            lat: 37.9716,
+            lng: -87.5711,
+            title: "Evansville, Indiana",
+            color: "#b45309",
+            description:
+              "Charles Edwin 'Charlie' Wiggins was born here on July 15, 1897, in the Baptisttown neighbourhood, and moved to Indianapolis in 1923. A historical marker was erected in Evansville in 2018 by the Indiana Racing Memorial Association, a private organisation rather than a state body. Read the sponsor of a marker as carefully as you read its text: who paid for the sign is part of what the sign says.",
+          },
+          {
+            id: "tr-salem",
+            lat: 38.6056,
+            lng: -86.1011,
+            title: "Salem Speedway, Salem, Indiana",
+            color: "#b45309",
+            description:
+              "Where a licence turned into a start. Joie Ray drove his first race under AAA sanction here on June 26, 1949, qualifying thirteenth and finishing eighth. Accounts disagree about the year of his first licence and about which association issued it, which is a resolvable question nobody in this course has resolved. Note the distance in time from this pin to 1991, when a Black driver first started the Indianapolis 500: the permission gate opened roughly forty-two years before the outcome changed.",
+          },
+          {
+            id: "tr-dayton",
+            lat: 39.7589,
+            lng: -84.1916,
+            title: "Dayton, Ohio",
+            color: "#b45309",
+            description:
+              "Where the mechanism is visible in one sentence. The Indianapolis Recorder, as cited by Paul Mullins, reported that Charlie Wiggins and Sumner 'Red' Oliver tried to enter a car at Dayton Speedway and were rejected because they lacked AAA registration, with officials indicating they could register for dirt track races the following summer. Nobody in that account mentions race. A refusal that turns on paperwork you could not obtain looks identical, in the record, to a refusal that turns on paperwork you failed to obtain.",
+          },
+          {
+            id: "tr-state-library",
+            lat: 39.769,
+            lng: -86.1628,
+            title: "Indiana State Library and Indiana Historical Bureau, Indianapolis",
+            color: "#15803d",
+            description:
+              "Where the state's own record lives, and where the state historical marker programme is administered. A public petition asks the Indiana Historical Bureau to commemorate the Gold and Glory Sweepstakes at the fairgrounds; a petition is a request rather than a decision, and confirming its outcome is real homework. Indiana newspaper runs, including the Indianapolis Recorder, are also where the 1947 AAA statement in lesson 10 can be checked against the paper itself rather than against a quotation of it.",
+          },
+          {
+            id: "tr-chicago",
+            lat: 41.8781,
+            lng: -87.6298,
+            title: "Chicago, Illinois",
+            color: "#15803d",
+            description:
+              "Home of the Chicago Defender, whose sportswriter Frank A. 'Fay' Young gave the Gold and Glory Sweepstakes its name. The Defender is the reason a race at a state fairgrounds became a national event, and its full run is where the Colored Speedway Association's other cities, which the Encyclopedia of Indianapolis mentions without naming, would be found. Chicago also supplied drivers to the first field in 1924 and the winner of the last race in 1936.",
+          },
+        ],
+      },
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Next  (beat 5: live civics. three grounds, three governance regimes, and a
+    // real records exercise)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "tr-next-who-governs",
+      title: "16 · Who governs each of these grounds now",
+      section: "Section 5 · Next",
+      body: `Beat 5 is the beat that turns a history course into a civics course. Course 1 asked "what is the current adopted plan for this parcel." **This course asks a harder version, because its three grounds sit under three completely different regimes**, and telling them apart is the most useful thing in this section.
+
+**The four questions, in this order, for any site anywhere.**
+1. **Who owns it?**
+2. **Which government's jurisdiction is the ground in?**
+3. **Is there an adopted plan, and who adopted it?**
+4. **Who decides, when do they meet, and is the agenda public?**
+
+## Ground A · The Indianapolis Motor Speedway: private property
+
+**Owner.** On **January 6, 2020**, **Penske Entertainment Corp.** completed the acquisition of the Indianapolis Motor Speedway, the NTT IndyCar Series and IMS Productions from Hulman and Company (Indianapolis Motor Speedway, 2020).
+
+**What that means for a citizen, stated without sentiment.** **There is no public meeting, no published agenda, no comment period and no records request** for a private company's decisions about its own property and its own sanctioning rules. **A citizen's leverage over a private owner is commercial and reputational, not civic.** That is not a complaint. It is the correct description of the regime, and mistaking it for a civic one wastes your time.
+
+**Where public process does touch this ground.** Anything requiring a permit, a rezoning, a variance, a road closure, a liquor licence or public money runs through a government, and **that government is the Town of Speedway**, not the City of Indianapolis. **The National Historic Landmark designation adds federal review only where federal money or a federal permit is involved** (National Park Service, n.d.).
+
+## Ground B · The Town of Speedway: a municipality of about 4.2 square miles
+
+**Jurisdiction.** Speedway incorporated in **1926**, is governed by an **elected five-member town council**, runs its own police, fire, library, water and wastewater, and is one of the four **excluded cities** the 1969 Unigov statute left outside the consolidated city, along with Beech Grove, Lawrence and Southport (Encyclopedia of Indianapolis, n.d.-e; Wachter, 2014).
+
+**The instrument you already know, alive in this town today.** Indiana municipalities may create a **redevelopment commission** under **Indiana Code chapter 36-7-14**, titled *Redevelopment of Areas Needing Redevelopment Generally; Redevelopment Commissions*. Under that chapter a five-member commission may **find that an area in its jurisdiction is an area needing redevelopment**, designate it a redevelopment project area, and **acquire property by purchase, exchange, gift, grant, condemnation or lease**, then hold, sell, lease or dispose of it (Ind. Code § 36-7-14).
+
+**Read those two words: "condemnation" and "needing redevelopment."** **Condemnation is eminent domain**, which was instrument two in course 1. **"Area needing redevelopment" is where the word "blighted" went.** The vocabulary softened; **the power did not change.** If you learn one thing from this lesson, learn that a statute can be renamed without being weakened, and that reading the current text of the chapter is the only way to know which happened.
+
+**In this town.** The **Speedway Redevelopment Commission** is described by the town and in trade coverage as established under state authorisation in **2005**, with a mission that includes restoring economic growth, **eliminating urban blight**, and redeveloping the Main Street corridor beside the track (Town of Speedway, n.d.-a; Business View Magazine, n.d.). **This course could not open the town's own pages directly and is reporting them at second hand.** Verify the establishment date, the exact mission language and the current membership against the town's own site and the commission's minutes before you rely on any of it. **That instruction is the method, not a disclaimer.**
+
+**And notice the symmetry with course 1, because it is uncomfortable and it is real.** The same family of statutory powers that cleared a Black commercial corridor in Indianapolis between 1948 and the 1960s is the family of powers a majority of Indiana towns now use to build streetscapes, restaurants and mixed-use blocks. **A tool is not moral. Who points it, at what, on whose record, is the entire question**, and it is why beat 3 teaches instruments rather than villains.
+
+**The plan.** The town publishes a **comprehensive plan** (Town of Speedway, n.d.-b). **That plan, and not the Marion County comprehensive plan you met in course 1, is the document a rezoning here is judged against.**
+
+## Ground C · The Indiana State Fairgrounds: public ground, public process
+
+**Owner and governing body.** The fairgrounds is state ground governed by the **Indiana State Fair Commission**, established in **1990** (Encyclopedia of Indianapolis, n.d.-b). The Indiana Code establishes the commission as **"a separate body, corporate and politic,"** states that it **"is not a state agency,"** and says it **"performs essential governmental functions."** The commission has **eight members, five of them appointed by the governor**, with the others being the presiding officer of the state fair board, the director of the department of agriculture or a designee, and the presiding officer of the trustees or a designee (Ind. Code § 15-13-2).
+
+**Stop on that middle phrase, because it is a whole civics lesson.** **"A separate body, corporate and politic" that "is not a state agency" but "performs essential governmental functions"** is a hybrid, and hybrids exist precisely because they sit between regimes. **Which public-records and open-meetings obligations attach to a body like this is a specific legal question with a specific answer, and this course does not answer it for you.** Finding out is exactly the kind of question beat 5 exists to teach you to ask.
+
+**The live process.** The Indiana General Assembly's **State Fair Advisory Committee** reviewed the fair, a **master plan update**, a **strategic plan update** and the annual financial report at its meeting of **October 30, 2025**, and issued a final report through the Legislative Services Agency (Indiana Legislative Services Agency, 2025).
+
+**And here is beat 5's finding for this course, which is the mirror image of course 1's.** In course 1, the honest answer was that **no area plan had been adopted yet**, and "not adopted yet" was the finding that gave a citizen the most leverage. **Here, the ground with the deepest Black sporting history is the one with the most public process attached: a state commission, a legislative advisory committee, published reports, a master plan under revision.** The process is open. **What this course cannot tell you is whether anybody who cares about the Gold and Glory Sweepstakes has ever spoken at it.**
+
+## The comparison, in one table
+
+| | Speedway (the track) | Town of Speedway | State Fairgrounds |
+|---|---|---|---|
+| **Owner** | Penske Entertainment Corp. | Public streets and facilities | The state, through a commission |
+| **Public meetings** | None | Town council, redevelopment commission | Commission, plus a legislative advisory committee |
+| **Adopted plan** | Not a public document | Town comprehensive plan | Master plan under revision |
+| **Your leverage** | Commercial and reputational | Vote, comment, attend, run | Comment, attend, contact a legislator |
+
+**The habit this builds.** **Before you campaign about a place, find out which of those three columns it is in.** People spend years addressing the wrong body about the wrong ground, and it is almost always because they never asked question 1.
+
+## The honest limits of this lesson
+
+**Every date, dollar figure and officeholder in beat 5 decays.** Contracts are extended, commissions are reconstituted, plans are adopted and superseded, and owners change; this ground changed hands in 2020 and its sanctioning body has changed three times since 1955. **Re-check all of it before you rely on any of it.**
+
+## Sources
+- Business View Magazine. (n.d.). *Speedway, Indiana: Marion County*. https://businessviewmagazine.com/speedway-indiana-marion-county/
+- Encyclopedia of Indianapolis. (n.d.-b). *Indiana State Fair and Fairgrounds*. https://indyencyclopedia.org/indiana-state-fair-and-fairgrounds/
+- Encyclopedia of Indianapolis. (n.d.-e). *Speedway*. https://indyencyclopedia.org/speedway/
+- Ind. Code § 15-13-2 (State Fair Commission). https://law.justia.com/codes/indiana/title-15/article-13/chapter-2/
+- Ind. Code § 36-7-14 (Redevelopment of areas needing redevelopment generally; redevelopment commissions). https://law.justia.com/codes/indiana/title-36/article-7/chapter-14/
+- Indiana Legislative Services Agency. (2025). *State Fair Advisory Committee final report*. Indiana General Assembly. https://iga.in.gov/publications/committee_report/State-Fair-Advisory-Committee-Final-Report-2025.pdf
+- Indianapolis Motor Speedway. (2020, January 5). *Penske Corporation completes acquisition of the Indianapolis Motor Speedway, the NTT IndyCar Series and IMS Productions*. https://www.indianapolismotorspeedway.com/news-multimedia/news/2020/01/05/penske-corporation-completes-acquisition-of-the-ims-indycar-and-imsproductions
+- National Park Service. (n.d.). *National Register of Historic Places: Frequently asked questions*. https://www.nps.gov/subjects/nationalregister/faqs.htm
+- Town of Speedway. (n.d.-a). *Redevelopment Commission*. https://www.speedwayin.gov/redevelopment-commission/redevelopment-commission
+- Town of Speedway. (n.d.-b). *Speedway comprehensive plan*. https://www.speedwayin.gov/sites/g/files/vyhlif8506/f/uploads/speedway_comprehensive_plan_-compressed_file.pdf
+- Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
+      recallContent: [
+        {
+          prompt: "Give the four questions to ask about any site, in order.",
+          answer: "Who owns it; which government's jurisdiction the ground is in; whether there is an adopted plan and who adopted it; and who decides, when they meet, and whether the agenda is public.",
+        },
+        {
+          prompt: "Who owns the Indianapolis Motor Speedway, and what does that mean for a citizen?",
+          answer: "Penske Entertainment Corp., which acquired the track, the IndyCar Series and IMS Productions on January 6, 2020. There is no public meeting, agenda, comment period or records request for a private company's decisions about its own property. A citizen's leverage there is commercial and reputational, not civic.",
+        },
+        {
+          prompt: "What does Indiana Code chapter 36-7-14 allow a town redevelopment commission to do?",
+          answer: "Find that an area in its jurisdiction is an area needing redevelopment, designate it a redevelopment project area, and acquire property by purchase, exchange, gift, grant, condemnation or lease, then hold, sell, lease or dispose of it.",
+        },
+        {
+          prompt: "What happened to the word 'blighted', and what is the lesson?",
+          answer: "It became 'area needing redevelopment', and 'condemnation' is eminent domain. The vocabulary softened and the power did not change. A statute can be renamed without being weakened, and reading the current text is the only way to know which happened.",
+        },
+        {
+          prompt: "How does the Indiana Code describe the State Fair Commission, and why is that phrasing interesting?",
+          answer: "As a separate body, corporate and politic, which is not a state agency but performs essential governmental functions, with eight members, five appointed by the governor. It is a hybrid, and which open-meetings and public-records obligations attach to a hybrid is a specific legal question this course does not answer.",
+        },
+        {
+          prompt: "State beat 5's finding for this course, and how it mirrors course 1's.",
+          answer: "Course 1 found that no area plan had been adopted yet, which is where a citizen has the most leverage. Here the ground with the deepest Black sporting history has the most public process attached: a state commission, a legislative advisory committee that met October 30, 2025, published reports and a master plan under revision. The process is open. Whether anyone who cares about the Sweepstakes has spoken at it is unknown.",
+        },
+      ],
+    },
+    {
+      slug: "tr-next-exercise",
+      title: "17 · Practice: find the body, the record and the meeting",
+      section: "Section 5 · Next",
+      lessonType: "exercise",
+      body: `**This drill is beat 5 in miniature, and you should do it with the real tools open in another tab.** Everything below is free and public.
+
+**The tools.**
+- **MapIndy**, the official GIS for the Consolidated City of Indianapolis and Marion County: https://maps.indy.gov/MapIndy/ . Its parcel and boundary layers cover the whole county, **including the excluded cities**, so the Town of Speedway is on it even though the county does not govern it.
+- **The Marion County Assessor's property cards**: https://maps.indy.gov/AssessorPropertyCards/ .
+- **The National Park Service's National Register and National Historic Landmark records**, where a nomination document for a designated property can be read: https://www.nps.gov/subjects/nationalregister/index.htm .
+- **The Indiana General Assembly's site**, for the current text of a code chapter and for legislative committee reports: https://iga.in.gov/ .
+- **The Town of Speedway's site**, for the town council, the redevelopment commission, agendas and the comprehensive plan: https://www.speedwayin.gov/ .
+
+**Your two targets, both institutional and both safe to publish about.**
+1. **4790 W. 16th Street**, the Indianapolis Motor Speedway.
+2. **1202 East 38th Street**, the Indiana State Fairgrounds.
+
+**Work through these, then answer the fill-in questions below.**
+1. Find each address in **MapIndy**. Turn on political boundaries. **Which one is inside the Town of Speedway, and which is inside the consolidated city?** Write down where the line runs.
+2. Read off the **state parcel number** for each, exactly, including punctuation.
+3. Open the **Assessor's property card** for each and find the **owner of record**. **For the fairgrounds, ask whether the owner of record is the state, a commission, or something else, and note exactly what it says.**
+4. Find the **National Historic Landmark nomination** for the Indianapolis Motor Speedway. **Read the boundary description and the period of significance.** Note anything that surprises you: nominations frequently designate less ground, or fewer features, than people assume.
+5. On the Town of Speedway's site, find **the redevelopment commission's page**. Note **when it meets, whether agendas and minutes are posted, and how many members it has.**
+6. On the Indiana General Assembly's site, open **Indiana Code chapter 36-7-14** and find the section on **the powers of the commission**. Note the list of ways property may be acquired.
+7. Find the most recent **State Fair Advisory Committee** report. Note **the meeting dates it lists** and whether a master plan has been adopted or is still in progress.
+
+**The habits this builds, which transfer to any American county.** **Ownership, jurisdiction, adopted plan, deciding body, meeting schedule.** The names of the tools change from state to state; those five facts do not.
+
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** Practise on institutional and commercial addresses. A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different act from a public record sitting in a county database. This is the same rule the method course applied to tourist homes and course 1 applied to the Avenue.
+
+## Sources
+- City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
+- Ind. Code § 36-7-14 (Redevelopment of areas needing redevelopment generally; redevelopment commissions). https://law.justia.com/codes/indiana/title-36/article-7/chapter-14/
+- Indiana General Assembly. (n.d.). *Indiana Code*. https://iga.in.gov/
+- Marion County Assessor. (n.d.). *Assessor property cards*. https://maps.indy.gov/AssessorPropertyCards/
+- National Park Service. (n.d.). *National Register of Historic Places*. https://www.nps.gov/subjects/nationalregister/index.htm
+- Town of Speedway. (n.d.-c). *Town of Speedway, Indiana*. https://www.speedwayin.gov/`,
+      exercise: {
+        instructions:
+          "Type the missing term, name, number, body or year, then check. Close answers (spelling, capitalization) count as 'close', not wrong.",
+        items: [
+          {
+            prompt: "The private company that has owned the Indianapolis Motor Speedway and the IndyCar Series since January 2020 is ___ Entertainment Corp.",
+            answer: "Penske",
+            accept: ["penske", "penske entertainment", "penske corporation"],
+            explanation: "The acquisition of the track, the NTT IndyCar Series and IMS Productions from Hulman and Company completed on January 6, 2020.",
+          },
+          {
+            prompt: "A private association that writes the rulebook, licenses competitors and approves entries is called a ___ body.",
+            answer: "sanctioning",
+            accept: ["sanctioning body", "sanction"],
+            explanation: "Its authority comes from contract and event ownership rather than from a statute, which is why it need not leave a public record.",
+          },
+          {
+            prompt: "The AAA disbanded its Contest Board in 1955 and Tony Hulman established the United States Auto Club, abbreviated ___.",
+            answer: "USAC",
+            accept: ["usac", "united states auto club"],
+            explanation: "Established September 16, 1955; it sanctioned the Indianapolis 500 from 1956 until the Indy Racing League took over in 1997.",
+          },
+          {
+            prompt: "The Colored Speedway Association's annual 100-mile race was nicknamed the Gold and ___ Sweepstakes.",
+            answer: "Glory",
+            accept: ["glory", "gold and glory"],
+            explanation: "Named by Frank A. 'Fay' Young, a sportswriter at the Chicago Defender. First run August 2, 1924; last run September 20, 1936.",
+          },
+          {
+            prompt: "The four-time Gold and Glory winner who built his own car and owned a garage in Indianapolis was Charlie ___.",
+            answer: "Wiggins",
+            accept: ["wiggins", "charles wiggins", "charlie wiggins"],
+            explanation: "Born Evansville, July 15, 1897; died March 11, 1979. He lost his right leg in the 1936 crash and kept working on cars for the rest of his life.",
+          },
+          {
+            prompt: "The first Black driver to start the Indianapolis 500 did so in the year ___.",
+            answer: "1991",
+            accept: ["91"],
+            explanation: "Willy T. Ribbs qualified on May 19, 1991 at a four-lap average of 217.358 mph and started 29th in the 75th running.",
+          },
+          {
+            prompt: "That was ___ years after the first 500-mile race in 1911.",
+            answer: "eighty",
+            accept: ["80", "80 years", "eighty years"],
+            explanation: "Eighty years and seventy-five runnings, since the race was not held during two world wars.",
+          },
+          {
+            prompt: "Indiana Code chapter 36-7-14 is titled 'Redevelopment of Areas ___ Redevelopment Generally'.",
+            answer: "Needing",
+            accept: ["needing", "in need of"],
+            explanation: "This is where the word 'blighted' went. The vocabulary softened; the power did not change.",
+          },
+          {
+            prompt: "Under that chapter, one of the ways a redevelopment commission may acquire property is by ___, which is the statutory word for eminent domain.",
+            answer: "condemnation",
+            accept: ["condemn", "condemnation", "eminent domain"],
+            explanation: "The full list is purchase, exchange, gift, grant, condemnation or lease. Course 1 taught eminent domain as instrument two.",
+          },
+          {
+            prompt: "The Indiana Code describes the State Fair Commission as a separate body, corporate and ___.",
+            answer: "politic",
+            accept: ["politic", "corporate and politic"],
+            explanation: "The same provision says the commission is not a state agency but performs essential governmental functions. It is a hybrid, and hybrids sit between regimes on purpose.",
+          },
+          {
+            prompt: "Of the State Fair Commission's eight members, ___ are appointed by the governor.",
+            answer: "five",
+            accept: ["5", "five members"],
+            explanation: "The others are the presiding officer of the state fair board, the director of the department of agriculture or a designee, and the presiding officer of the trustees or a designee.",
+          },
+          {
+            prompt: "The Town of Speedway is one of the four ___ cities that the 1969 Unigov statute left outside the consolidated city.",
+            answer: "excluded",
+            accept: ["excluded", "excluded cities"],
+            explanation: "The others are Beech Grove, Lawrence and Southport. Course 1 met that list while learning the boundary instrument.",
+          },
+          {
+            prompt: "The Town of Speedway is governed by an elected ___-member town council.",
+            answer: "five",
+            accept: ["5", "five member"],
+            explanation: "It also runs its own police, fire, library, water and wastewater services across about 4.2 square miles.",
+          },
+          {
+            prompt: "In 2019 the Indiana State Fairgrounds mile was resurfaced with crushed ___ for harness training, and the infield became parking.",
+            answer: "limestone",
+            accept: ["limestone", "crushed limestone"],
+            explanation: "Auto racing on the mile ended after the 64th Hoosier Hundred on May 23, 2019. The ground where the Gold and Glory Sweepstakes ran is public; the surface is not there.",
+          },
+          {
+            prompt: "The Indianapolis Motor Speedway was designated a National Historic ___ in 1987, having been listed on the National Register in 1975.",
+            answer: "Landmark",
+            accept: ["landmark", "nhl"],
+            explanation: "It has been substantially rebuilt since, including the Pagoda of 1998 to 2000, which proves that a federal designation is recognition plus review leverage rather than a freeze.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "tr-quiz-next",
+      title: "18 · Quiz: the ground, the body and the record",
+      section: "Section 5 · Next",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why is this course's map national rather than block by block?",
+            options: [
+              "Because the tracks' locations are secret",
+              "Because block-level maps are copyrighted",
+              "Because the platform cannot display Indiana",
+              "Because the lesson map draws the whole world, so points need roughly two degrees to separate, and the two tracks are about seven miles apart",
+            ],
+            correctIndex: 3,
+            explanation: "The map instead shows the circuit: the borrowed track, the birthplace, the first sanctioned start, the refused entry, and the two archives.",
+            sourceLessonSlug: "tr-map",
+          },
+          {
+            prompt: "What is the difference between a site and a circuit, in this course's terms?",
+            options: [
+              "A circuit is longer than a site",
+              "The Speedway is a site; the Gold and Glory Sweepstakes was a circuit that rented tracks, drew fields from eight states and was named by a newspaper in another city",
+              "There is no difference",
+              "A site is public and a circuit is private",
+            ],
+            correctIndex: 1,
+            explanation: "You cannot map a circuit with one pin. Telling this story as 'a race at the fairgrounds' quietly shrinks it to a site.",
+            sourceLessonSlug: "tr-map",
+          },
+          {
+            prompt: "The Town of Speedway is an independent municipality. What follows for a county GIS?",
+            options: [
+              "The county GIS does not cover it at all",
+              "The town has to publish its own competing GIS",
+              "The county's parcel and boundary layers still cover it, because it is inside Marion County even though the county does not govern it",
+              "The parcels there have no numbers",
+            ],
+            correctIndex: 2,
+            explanation: "A mapping jurisdiction and a governing jurisdiction are different things, and confusing them is how researchers lose an afternoon.",
+            sourceLessonSlug: "tr-map",
+          },
+          {
+            prompt: "Who owns the Indianapolis Motor Speedway, and since when?",
+            options: [
+              "The Town of Speedway, since 1926",
+              "The Indiana State Fair Commission, since 1990",
+              "Hulman and Company, since 1945 to the present day",
+              "Penske Entertainment Corp., since January 6, 2020",
+            ],
+            correctIndex: 3,
+            explanation: "The same acquisition took in the NTT IndyCar Series and IMS Productions, so one company owns the venue and the sanctioning series.",
+            sourceLessonSlug: "tr-next-who-governs",
+          },
+          {
+            prompt: "What kind of leverage does a citizen have over a privately owned venue's own decisions?",
+            options: [
+              "Commercial and reputational, not civic: there is no public meeting, agenda, comment period or records request",
+              "The same as over a city council",
+              "A statutory right of appeal",
+              "None of any kind, ever, in any respect",
+            ],
+            correctIndex: 0,
+            explanation: "Public process touches the ground only where a permit, rezoning, road closure or public money is involved, and that runs through the Town of Speedway.",
+            sourceLessonSlug: "tr-next-who-governs",
+          },
+          {
+            prompt: "Indiana Code chapter 36-7-14 is titled 'Redevelopment of Areas Needing Redevelopment'. What is the significance?",
+            options: [
+              "It repealed eminent domain for towns",
+              "It applies only to counties, not towns",
+              "It is where the word 'blighted' went: the vocabulary softened while the power, including acquisition by condemnation, did not change",
+              "It was struck down as unconstitutional",
+            ],
+            correctIndex: 2,
+            explanation: "A five-member commission may find an area needing redevelopment, designate a project area, and acquire property by purchase, exchange, gift, grant, condemnation or lease.",
+            sourceLessonSlug: "tr-next-who-governs",
+          },
+          {
+            prompt: "How does the Indiana Code characterise the Indiana State Fair Commission?",
+            options: [
+              "As a department of the governor's office",
+              "As a private nonprofit corporation",
+              "As a county agency of Marion County",
+              "As a separate body, corporate and politic, which is not a state agency but performs essential governmental functions",
+            ],
+            correctIndex: 3,
+            explanation: "Eight members, five appointed by the governor. It is a hybrid, and which open-meetings and public-records obligations attach to a hybrid is a specific legal question worth asking.",
+            sourceLessonSlug: "tr-next-who-governs",
+          },
+          {
+            prompt: "What is beat 5's finding for this course?",
+            options: [
+              "That no public process exists for either track",
+              "That the ground with the deepest Black sporting history has the most public process attached, and the open question is whether anyone who cares about the Sweepstakes has ever spoken at it",
+              "That the Speedway holds public hearings before every race",
+              "That the fairgrounds is privately owned",
+            ],
+            correctIndex: 1,
+            explanation: "A state commission, a legislative advisory committee that met October 30, 2025, published reports and a master plan under revision. The process is open.",
+            sourceLessonSlug: "tr-next-who-governs",
+          },
+          {
+            prompt: "Which five facts transfer to researching any site in any American county?",
+            options: [
+              "Ownership, jurisdiction, adopted plan, deciding body, and meeting schedule",
+              "Square footage, roof age, paint colour, street name, and zip code",
+              "Architect, contractor, original cost, current tenant, and insurer",
+              "Only the zoning code",
+            ],
+            correctIndex: 0,
+            explanation: "The names of the tools change from state to state; those five facts do not.",
+            sourceLessonSlug: "tr-next-exercise",
+          },
+          {
+            prompt: "Why does the exercise send you to read the National Historic Landmark nomination itself?",
+            options: [
+              "Because nominations are the only proof a site exists",
+              "Because the nomination sets the property's market value",
+              "Because it states the boundary, the period of significance and the contributing features, all of which people assume they know and almost nobody has checked",
+              "Because reading it is legally required before visiting",
+            ],
+            correctIndex: 2,
+            explanation: "Nominations frequently designate less ground, or fewer features, than the public assumes.",
+            sourceLessonSlug: "tr-next-exercise",
+          },
+          {
+            prompt: "What should you do when a source cannot be opened directly, as with the Town of Speedway's own pages here?",
+            options: [
+              "Report it at second hand, say so plainly, and instruct the reader to verify against the primary source",
+              "Assert it anyway, since it is probably right",
+              "Delete the claim and pretend the question never arose",
+              "Substitute a similar town's figures",
+            ],
+            correctIndex: 0,
+            explanation: "The course reports the Speedway Redevelopment Commission's 2005 establishment and mission at second hand and tells you to check the town's site and the commission's minutes.",
+            sourceLessonSlug: "tr-next-who-governs",
+          },
+          {
+            prompt: "What is the warning attached to touring a famous, highly photogenic venue?",
+            options: [
+              "That the tour will be inaccurate",
+              "That its image is highly managed, so the tour will hand you an experience, and an experience is not evidence",
+              "That photography is forbidden",
+              "That the site has no history",
+            ],
+            correctIndex: 1,
+            explanation: "The observation brief is built to send you to the parts nobody photographs: the ground, the boundary, the dates, and who is and is not commemorated.",
+            sourceLessonSlug: "tr-now-tour",
+          },
+          {
+            prompt: "How should a researcher use the 1987 National Historic Landmark date while touring?",
+            options: [
+              "To confirm that nothing has been altered since",
+              "To date the bricks",
+              "To calculate the site's acreage",
+              "To sort every visible structure into older or newer than the designation, which shows that federal designation is not a freeze",
+            ],
+            correctIndex: 3,
+            explanation: "The Pagoda, built 1998 to 2000, is on the newer side of that line.",
+            sourceLessonSlug: "tr-now-tour",
+          },
+          {
+            prompt: "What can the Speedway tour NOT show you?",
+            options: [
+              "The banking of the turns",
+              "The size of the grandstands",
+              "The second racetrack seven miles away whose racing surface no longer exists, a rule, a date, or an absence",
+              "The infield",
+            ],
+            correctIndex: 2,
+            explanation: "You cannot photograph the drivers who were not admitted. Everything the tour does not contain is a question for Section 5, not an answer.",
+            sourceLessonSlug: "tr-now-tour",
+          },
+          {
+            prompt: "Why does the course tell you to practise parcel lookups on institutional and commercial addresses?",
+            options: [
+              "Because residential parcel records are not public",
+              "Because publishing a current occupant's name attached to their home address is a different act from a public record sitting in a county database",
+              "Because homes have no parcel numbers",
+              "Because assessors refuse residential requests",
+            ],
+            correctIndex: 1,
+            explanation: "It is the same rule the method course applied to tourist homes and course 1 applied to the Avenue.",
+            sourceLessonSlug: "tr-next-exercise",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
