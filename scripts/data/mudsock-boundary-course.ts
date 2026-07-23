@@ -452,6 +452,185 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 2 · Built  (beat 2: architecture, building typology, and what a form assumes)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ms-built-subdivision",
+      title: "5 · The subdivision: the unit a suburb is actually made of",
+      section: "Section 2 · Built",
+      body: `Beat 2 asks: **why does it look like that?** Course 1 answered that question for a commercial corridor by starting with typology, the study of what kind of building a building is before you get to style. **Do the same here and you get a surprise: the basic unit of a suburb is not a building at all. It is a drawing.**
+
+**The instrument is the subdivision plat.** A plat is a surveyed drawing, recorded with the county, that cuts one parcel into many and dedicates the streets, easements and common areas. **Until it is recorded, none of those lots legally exist.** Everything that follows, the houses, the addresses, the mail routes, the school bus stops, is downstream of a document filed with a recorder.
+
+**So the first research move in a suburb is the same as the first research move on Indiana Avenue: find the document, not the building.** Course 1 said start with the blight designation rather than the demolition. **Here, start with the plat rather than the house.** It is dated, it names the developer, it shows the original lot lines, and it is public.
+
+**What a plat carries with it, and what it does not.**
+
+| On the plat | Not on the plat, but recorded alongside it |
+|---|---|
+| Lot lines and lot numbers | The covenants, conditions and restrictions |
+| Street layout and right of way widths | Utility service agreements |
+| Drainage and utility easements | Any waiver of the right to remonstrate against annexation |
+| Common areas and their ownership | Homeowners association bylaws |
+
+**That last item in the right column is the one to remember.** It looks like paperwork. **Section 3 shows it deciding the political future of 710 households**, and it is signed decades before anyone in those households learns what it does.
+
+**The form itself, read as a type.** Fishers grew past 3,000 residents in the mid-1980s "following the Sunblest Farms development" (Encyclopedia of Indianapolis, n.d.-a). That is the pattern: a farm, a plat, a name that keeps the farm in it, and a street network of a very particular shape. **Three features of that shape are worth naming, because each one is a decision that somebody could have made differently.**
+
+**1. The hierarchy of streets.** Arterial, collector, local, cul de sac. Traffic is funnelled from small streets into progressively bigger ones. **The consequence is that adjacent subdivisions often do not connect to each other**, so a trip between two houses a quarter mile apart can run a mile and a half out to the arterial and back. **That is not an accident of terrain. It is a street standard**, adopted by a local body, in a written ordinance you can read.
+
+**2. Separation of uses.** Houses here, shops there, schools somewhere else, each on its own zoning classification. **This is the default in American zoning and it is a choice**, and it is the direct opposite of the corridor course 1 described, where a 1916 survey found 33 restaurants, 26 grocery stores, 14 cobblers, and the offices of lawyers and doctors inside eight blocks. **One place put everything within walking distance because its residents had no alternative. The other put nothing within walking distance because its residents had cars.** Both forms answer the same question, which is what a household needs and how it gets there.
+
+**3. The lot, the setback and the frontage.** Minimum lot width, minimum front setback, minimum square footage. These numbers live in a zoning ordinance. **Change one number and you change what can be built, who can afford it, and how many households fit on an acre.** A minimum lot size is a price floor with a survey attached.
+
+**Now the national context, because none of this was invented in Hamilton County.** Richard Rothstein's account of government produced segregation documents how federal underwriting practice, subdivision covenants and public policy shaped who could buy into new suburban development across the twentieth century (Rothstein, 2017). **Course 1 used the same book to explain why a neighbourhood measured as blighted.** It is the same book because it is the same system seen from the other end: **the policies that made one place uninsurable made another place financeable**, and both effects are documented in the same literature.
+
+**What that does and does not license you to say.** It licenses you to say that American suburban development happened inside a national policy framework with documented racial effects. **It does not license you to assert anything about the covenants on any specific Hamilton County subdivision that you have not read.** Recorded covenants are public documents held by the county recorder. **If you want to make a claim about one, go read it.** That is a real research assignment and this course is not going to do it for you or pretend it has.
+
+**One thing the suburban form gets right, said plainly.** The subdivision is a machine for producing a large number of individually owned, financeable, roughly equivalent houses very quickly. **That is a genuine achievement**, and it is why the form spread. The interesting question is never whether it works. It is **who it works for, at what density, and who pays for the pipes.** The pipes are lesson 7 and lesson 9.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Fishers*. https://indyencyclopedia.org/fishers/
+- Encyclopedia of Indianapolis. (n.d.-c). *Hamilton County*. https://indyencyclopedia.org/hamilton-county/
+- Hamilton County, Indiana. (n.d.). *Property records*. https://secure2.hamiltoncounty.in.gov/PropertyReports/
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
+      recallContent: [
+        {
+          prompt: "What is the basic unit of a suburb, and why is it not a building?",
+          answer: "The recorded subdivision plat: a surveyed drawing that cuts one parcel into many and dedicates streets and easements. Until it is recorded the lots do not legally exist, so every house is downstream of a document.",
+        },
+        {
+          prompt: "Name the item recorded alongside a plat that this course says decides a political future.",
+          answer: "A waiver of the right to remonstrate against annexation. It looks like paperwork and it is signed decades before anyone learns what it does.",
+        },
+        {
+          prompt: "Why can two houses a quarter mile apart require a mile and a half of driving?",
+          answer: "Because of the street hierarchy: arterial, collector, local, cul de sac. Adjacent subdivisions often do not connect, which is a written street standard adopted by a local body, not a fact of terrain.",
+        },
+        {
+          prompt: "Contrast the Indiana Avenue corridor's answer to 'what does a household need' with the subdivision's answer.",
+          answer: "The Avenue put a complete economy inside eight blocks because its residents could be refused service elsewhere. The subdivision separates uses and puts almost nothing within walking distance because its residents have cars. Both forms answer the same question.",
+        },
+        {
+          prompt: "What does Rothstein's work license you to say, and what does it not?",
+          answer: "It licenses saying American suburban development happened inside a national policy framework with documented racial effects. It does not license asserting anything about the covenants on a specific Hamilton County subdivision you have not read. Those are public county records.",
+        },
+      ],
+    },
+    {
+      slug: "ms-built-campus",
+      title: "6 · The campus high school, and what its acreage assumes",
+      section: "Section 2 · Built",
+      body: `The most consequential building in a suburb is usually the high school, and its most consequential feature is not the building. **It is the land under it.**
+
+**Start with the number that drives everything.** For most of the twentieth century American school planning ran on a site size formula built into state guidance and professional standards: **a minimum acreage plus an additional acre for every hundred students of ultimate enrollment.** Ten acres plus one per hundred is the version most often quoted for an elementary school, with substantially larger base figures for a high school. The formula is written into state facility guidance in many places; **the standards were not written with compact development in mind**, which is precisely the critique.
+
+**Do the arithmetic on a real enrollment and the consequence appears immediately.** Fishers High School reported **3,664 students** in 2023-24. Under a formula of that shape, a school of that size needs a site measured in tens of acres before you add a stadium, practice fields, tennis courts and parking for a student body that mostly drives. **A site that large is not available in a built up area at a price a school board will pay.** So it gets bought at the edge, where land is cheap, which is where the next subdivision is going anyway.
+
+**The US Environmental Protection Agency's smart growth programme states the downstream effect plainly**: "As new development often occurs around key destinations, such as schools, decisions about where schools will be located are likely to impact an area's future land use, transportation patterns, and infrastructure investments," and "School location can affect how far students, parents, teachers, and staff have to travel to and from school" (U.S. Environmental Protection Agency, n.d.).
+
+**Read that as an instrument, in the sense course 1 defined.** A school siting standard is a rule, adopted by a body, that produces a predictable result: **large peripheral campuses reachable mainly by car.** Nobody in that chain voted for sprawl. **They voted for an acreage standard**, which is how most land use outcomes actually happen.
+
+**Now the second consequence, and it is the one this course is named after.** A district that can afford large sites and large buildings tends to build **a small number of very large high schools** rather than a large number of small ones. Hamilton Southeastern Schools reported **21,299 students** across the district in 2023-24, in a structure of thirteen elementary schools, four intermediate schools, four junior high schools and **two high schools**.
+
+**Two.** Which means that when the district finally outgrew one high school in 2006, the result was not a town versus town rivalry. It was **a rivalry between two halves of one community**, which had to be given a name, and the name available was the town's oldest nickname. **The Mudsock trophy is a direct product of a school siting economics that produced exactly two campuses**, and if the same enrollment had been housed in six schools of 3,500 the rivalry would not exist in this form.
+
+**Compare the two building types in this cluster, side by side, because this is beat 2 doing its actual job.**
+
+| | Indiana Avenue, course 1 | Fishers campus, this course |
+|---|---|---|
+| **Geometry it obeys** | A diagonal on Ralston's 1821 plat, which produced triangular lots and a flatiron building | The rectangular section line grid of the federal land survey, which produces square parcels and mile roads |
+| **Relationship to the street** | Buildings meet the sidewalk; the entrance is on the street | Buildings sit back behind lawns and parking; the entrance faces a lot |
+| **How you arrive** | On foot, from the surrounding blocks | By car or bus, from an arterial |
+| **What one building holds** | A "city within a city": manufacturing, pharmacy, salon, school, restaurant, theatre | One use, at large scale, on a large site |
+| **What the form assumes about the household** | That it cannot rely on being served elsewhere | That it owns at least one vehicle |
+
+**Neither column is a verdict.** Both are descriptions of what a form takes for granted. **The reason to put them next to each other is that the same state, the same decades and in several cases the same public bodies produced both**, and a learner who can read one can read the other.
+
+**One live detail, cited carefully.** The Mudsock basketball game has in recent years been played at the **Fishers Event Center**, a venue the city opened, rather than in either school's gymnasium (Hamilton Southeastern High School Athletics, 2024). **That is a beat 2 fact and a beat 3 fact at once.** A municipal arena hosting an intra district high school game tells you the city has capital projects of a scale a school gym cannot match, **and capital projects are financed by instruments Section 3 is about to teach you.**
+
+## Sources
+- American Planning Association. (n.d.). *School site selection* (PAS Report 175). https://www.planning.org/pas/reports/report175.htm
+- Hamilton Southeastern High School Athletics. (2024). *Mudsock basketball at the Fishers Event Center*. https://hseathletics.com/Article/46745
+- Hamilton Southeastern Schools. (n.d.). *Schools*. https://www.hseschools.org/schools
+- U.S. Environmental Protection Agency. (n.d.). *Smart growth and school siting*. https://www.epa.gov/smartgrowth/smart-growth-and-school-siting`,
+      recallContent: [
+        {
+          prompt: "What is the school site size formula that drove twentieth century American school siting?",
+          answer: "A minimum acreage plus an additional acre for every hundred students of ultimate enrollment. Ten acres plus one per hundred is the commonly quoted elementary version, with larger base figures for high schools.",
+        },
+        {
+          prompt: "Why does an acreage standard produce peripheral campuses?",
+          answer: "A site that large is not available in a built up area at a price a school board will pay, so it is bought at the edge where land is cheap. Nobody voted for sprawl; they voted for an acreage standard.",
+        },
+        {
+          prompt: "How does school siting economics explain the existence of the Mudsock rivalry?",
+          answer: "A district that can afford large sites builds a small number of very large high schools. Hamilton Southeastern houses about 21,299 students in two high schools, so outgrowing one school in 2006 produced a rivalry between two halves of one community rather than between two towns.",
+        },
+        {
+          prompt: "Give two of the ways the Indiana Avenue building type and the Fishers campus type differ in what they assume.",
+          answer: "The Avenue obeys a 1821 diagonal and meets the sidewalk, and assumes a household that cannot rely on being served elsewhere. The campus obeys the rectangular section line grid, sits back behind lawns and parking, and assumes a household with a vehicle.",
+        },
+        {
+          prompt: "Why is the Mudsock basketball game at the Fishers Event Center both a beat 2 and a beat 3 fact?",
+          answer: "It shows the city has capital projects at a scale a school gymnasium cannot match, and capital projects are financed by the instruments Section 3 teaches.",
+        },
+      ],
+    },
+    {
+      slug: "ms-built-reservoir",
+      title: "7 · Geist: infrastructure for one city, built in another county",
+      section: "Section 2 · Built",
+      body: `Before the subdivisions, before the campuses, one piece of built infrastructure changed this ground permanently. **It was not built by anyone who lived here, and it was not built for anyone who lived here.**
+
+**The facts, from the record.** The **Indianapolis Water Company** built it "because the White River could not continue to meet the growing city's water demands." **In 1941 the company built a dam across Fall Creek**, and the reservoir "began supplying Indianapolis with water in 1943." It covers **1,900 acres**, stores **6.9 billion gallons**, and lies across "northern Marion, southeastern Hamilton, and northwestern Hancock counties." The dam "covered 535 acres of woodland and 45 homesteads including the small village of Germantown" and "backed up water for 7.5 miles." It is named for **Clarence H. Geist**, president of the Indianapolis Water Company from 1913 to 1938 (Encyclopedia of Indianapolis, n.d.-d).
+
+**Stop on the two numbers in the middle of that paragraph, because they are the ones nobody repeats.** **535 acres of woodland. 45 homesteads. One village, Germantown.** Removed by a private utility, to supply a city twenty miles away, in the years around 1941.
+
+**Now put that next to course 1 without collapsing the two.** Both stories contain households removed so that a larger project could proceed. **They are not the same story and this course will not pretend they are.** The instruments differ, the scale differs, the record differs, and above all this course has not read who owned those 45 homesteads, what they were paid, or whether they had any legal recourse. **What is the same is the shape of the question**: who decided, under what authority, on whose land, for whose benefit, and where is that written down. **That question travels. That is the entire point of the six-beat template.**
+
+**What the reservoir did next, which is a lesson in delay.** Nothing, for decades. Then:
+- **1970.** Shorewood, the development arm, "was made an independent, private corporation."
+- **1980.** Shorewood "finally began construction of its first two housing developments, Beamreach and Masthead."
+- **Early 2000s.** "There were around 2,200 up-scale homes lining the reservoir's banks."
+- **January 2, 2010.** Fishers annexed the area.
+- **2011.** Citizens Energy Group acquired the water utility (Encyclopedia of Indianapolis, n.d.-d).
+
+**Read that timeline as a built environment argument.** A public water supply project created, as a by product, **twelve miles of high value shoreline in a county with no city on it.** Forty years later that shoreline was some of the most valuable residential property in Indiana, and it was **unincorporated**, meaning it paid no municipal tax to any city and received county services. **Lesson 9 is about what happened when a city noticed.**
+
+**One caution, stated because it is the kind of claim that gets manufactured.** This course does **not** assert that the Indianapolis Water Company built Geist Reservoir in order to create suburban lakefront property. There is no evidence of that here, the stated purpose was drinking water for a growing city, and the housing came four decades later under a separate corporate entity. **What the record supports is a consequence, not an intention.** Course 1 made exactly this distinction about blight designations, and it is the single most abused distinction in local history writing: **you can document what a decision produced without claiming to know why it was made.**
+
+**And the transferable observation.** Large public infrastructure creates land value somewhere, and **the somewhere is rarely where the cost was borne.** A reservoir, a highway interchange, a transit stop, a university campus: each one raises the value of nearby land and lowers it elsewhere, and **almost none of that value flows back to whoever paid for the infrastructure.** That sentence is the whole of urban public finance in one line, and Section 3 turns it into instruments.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Fishers*. https://indyencyclopedia.org/fishers/
+- Encyclopedia of Indianapolis. (n.d.-d). *Geist Reservoir*. https://indyencyclopedia.org/geist-reservoir/
+- Citizens Energy Group. (n.d.). *About us*. https://www.citizensenergygroup.com/About
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
+      recallContent: [
+        {
+          prompt: "Who built Geist Reservoir, when, and why?",
+          answer: "The Indianapolis Water Company. It dammed Fall Creek in 1941 and the reservoir began supplying Indianapolis with water in 1943, because the White River could not meet the growing city's demand.",
+        },
+        {
+          prompt: "What was removed to make the reservoir?",
+          answer: "535 acres of woodland and 45 homesteads, including the small village of Germantown. The water backed up 7.5 miles.",
+        },
+        {
+          prompt: "How does this course compare Geist to Indiana Avenue, and what does it refuse to do?",
+          answer: "It notes that both contain households removed so a larger project could proceed, and refuses to call them the same story. The instruments, scale and record differ, and this course has not read who owned the 45 homesteads or what they were paid. What travels is the shape of the question.",
+        },
+        {
+          prompt: "Trace the reservoir's shoreline from 1943 to 2010.",
+          answer: "Nothing for decades; Shorewood became an independent private corporation in 1970; first housing developments Beamreach and Masthead in 1980; around 2,200 upscale homes by the early 2000s; annexed by Fishers on January 2, 2010; Citizens Energy Group acquired the utility in 2011.",
+        },
+        {
+          prompt: "What does this course refuse to claim about the reservoir's purpose, and why does the distinction matter?",
+          answer: "It refuses to claim the reservoir was built to create lakefront property. The stated purpose was drinking water and the housing came four decades later under a separate entity. The record supports a consequence, not an intention, and confusing the two is the most abused move in local history writing.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
