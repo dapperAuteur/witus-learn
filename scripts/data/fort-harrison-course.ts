@@ -1208,6 +1208,182 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Now  (beat 4: observation and evidence)
+    //
+    // The owner has an existing Fort Harrison tour, but its embed URL has NOT been supplied yet,
+    // and a tour URL is authoritative external data that must never be guessed
+    // (plans/future/04-wanderlearn-360-boundary.md). So this lesson ships as `virtual_tour` with
+    // NO contentUrl: the player renders the "no media yet" notice above the body, and the body is
+    // the observation brief the learner uses when the tour lands. Drop the URL in and re-seed.
+    // Same pattern as `ia-now-tour` in scripts/data/indiana-avenue-course.ts.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "fh-now-tour",
+      title: "13 · Now: walk the post (virtual tour, forthcoming)",
+      section: "Section 4 · Now",
+      lessonType: "virtual_tour",
+      body: `**The virtual tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is reporting the truth rather than a fault. The site template this series uses treats beat 4 as a **drop-in**: a course is complete and teachable without it, and the tour is added later without restructuring anything.
+
+**Read this lesson now anyway, because it is your observation brief.** Beat 4 asks one question, "what is actually there today," and the difference between a visitor looking at a place and a researcher looking at a place is entirely a matter of knowing what to look for before you arrive. **Work this list now, then run it against the tour when it lands.**
+
+## What to look for, in order
+
+**1. Find the parade ground, and stand in the middle of it.** You know it is the organising element of the whole plan: a horseshoe of buildings around an open centre, ringed by **Lawton Road**, crossed on a diagonal by **Kent Road** on an original concrete bridge, with a **bandstand added in 1939** (McGillem et al., 1993, sec. 7, p. 2). **Ask the beat-2 question from the middle: which side has the most ornament?** The answer should be the north and west sides, where the senior officers lived. **If the tour lets you turn, you can read a rank hierarchy in a single rotation.** Almost nothing else in this course is that directly observable.
+
+**2. Count porch columns and window heads.** The ornament ladder from lesson 6 is legible from outside every building: elaborate verandas and detail on senior officers' quarters, simpler trim on bachelor officers' quarters, "little ornamentation except for their columned porches and stylized brick work above the windows" on the enlisted barracks, and nothing at all on the warehouses and stables. **Rank the buildings you see before you look up what they were, then check yourself.**
+
+**3. Look for the roofs, and for what replaced them.** Original roofs were **slate** and are now **asphalt**; original **6 over 6 wooden sash windows** have largely been replaced with vinyl-clad aluminium thermal panes; original wooden porch floors are now concrete (McGillem et al., 1993, sec. 7, p. 2). **Every one of those substitutions is a maintenance decision by a landlord**, and the nomination records them because they bear on integrity. **A building can keep its shape and lose its surfaces.**
+
+**4. Find the line where the historic post stops.** The district is about **340 acres** inside a post of roughly **2,500**. Somewhere the Colonial Revival brick gives way to something else: post-1952 concrete block garages the nomination calls intrusive, modern barracks, or new construction from the redevelopment. **That edge is a date, and it is also a decision about what was worth keeping.**
+
+**5. Look for the biggest building on the site, and notice it is not historic.** The finance building on the old **Schoen Field** is enormous. Sources give it as **966 or 996 feet long by 612 feet wide**, holding around **1.5 million square feet**, built for about **$19 million** and dedicated in **October 1953** (Encyclopedia of Indianapolis, n.d.-a, n.d.-b). **It is outside the historic district**, and it is the single clearest piece of evidence that a post's twentieth-century purpose changed from housing infantry to processing paper. **Note the two different lengths in the two Encyclopedia entries and do not average them.**
+
+**6. Find where the forest starts.** The training area to the north was **never built on**, and what is now the state park is roughly **1,700 acres** of it (Indiana Department of Natural Resources, n.d.). **The transition from mown parade ground to closed-canopy forest is the physical form of a fiscal fact**: land that pays no property tax feels no pressure to be subdivided. **Note exactly where that transition happens, because it is a boundary somebody drew in 1992.**
+
+**7. Read every sign, and note who paid for it.** State historical markers, park interpretive panels, National Register plaques, reuse authority signage and city of Lawrence signage will all be present, and **they are different institutions saying different things about the same ground.** The Indiana state historical marker here was installed in **1996**, marker number **49.1996.1** (Indiana Historical Bureau, 1996). **Note the sponsor every time. A marker is a public statement with an author and a date.**
+
+**8. Look for the CCC's work, which you cannot see.** Lesson 3 documented an all-African American CCC company that cut and cleared timber to allow new growth and straightened waterways to prevent erosion here from 1936. **That labour is inside the forest you are looking at and is invisible in it.** The park's own interpretation is thin on this point: Hankins found that the Camp Glenn area, which preserves the parade ground, the Citizens' Military Training Camp and the CCC headquarters, "does not address or interpret the military's role in inadvertently reforesting and saving the land that became a state park" (2020, p. 49). **When you find an interpretive panel, ask what it leaves out. That gap is a finding you can report to the agency that owns the sign.**
+
+## What the tour cannot show you
+
+- **It cannot show you jurisdiction.** Three different landlords hold parts of this ground and none of them has a colour. Lesson 15 tells you how to find the line.
+- **It cannot show you a tax status.** A parcel that pays and a parcel that does not look identical.
+- **It cannot show you what was demolished.** More than a million square feet came down in the conversion (Sample, 2005). **You cannot photograph an absence.**
+- **It cannot show you who was allowed where.** The buildings encode rank and are silent on race, exactly as lesson 6 warned.
+
+**Write down five confident observations before the tour arrives, based on this brief and the map that follows. Then check them.** Being wrong on the record about a place you had not yet seen is a better teacher than being right about one you had.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Fort Benjamin Harrison*. https://indyencyclopedia.org/fort-benjamin-harrison/
+- Encyclopedia of Indianapolis. (n.d.-b). *Major General Emmett J. Bean Federal Center*. https://indyencyclopedia.org/bean-federal-center/
+- Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
+- Indiana Department of Natural Resources. (n.d.). *Fort Harrison State Park*. https://www.in.gov/dnr/state-parks/parks-lakes/fort-harrison-state-park/
+- Indiana Historical Bureau. (1996). *Fort Benjamin Harrison* [State historical marker 49.1996.1]. Indiana Historical Bureau. https://www.in.gov/history/state-historical-markers/find-a-marker/fort-benjamin-harrison/
+- McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text
+- Sample, D. (2005, June 15). *Indiana city flourishes after "Fort Ben" closure*. American Forces Press Service. https://www.dvidshub.net/news/538075/indiana-city-flourishes-after-fort-ben-closure`,
+      recallContent: [
+        {
+          prompt: "Why is this lesson published before its tour exists?",
+          answer: "Because the site template treats beat 4 as a drop-in: a course is complete and teachable with the other five beats, and a tour embed URL is authoritative external data that is never guessed. The body serves as the observation brief until the URL is supplied.",
+        },
+        {
+          prompt: "What should you be able to read from a single rotation in the middle of the parade ground?",
+          answer: "The rank hierarchy. The most elaborate ornament is on the senior officers' family quarters on the north and west sides, with simpler trim on bachelor officers' quarters, minimal ornament on enlisted barracks and none on service buildings.",
+        },
+        {
+          prompt: "Name three substitutions the nomination records on the original buildings.",
+          answer: "Slate roofs replaced with asphalt, 6 over 6 wooden sash windows replaced with vinyl-clad aluminium thermal panes, and wooden porch floors replaced with concrete. A building can keep its shape and lose its surfaces.",
+        },
+        {
+          prompt: "What is the physical meaning of the line where mown ground becomes closed-canopy forest?",
+          answer: "It is the form of a fiscal fact. Land that paid no property tax and was needed undeveloped for training felt no pressure to be subdivided. It is also a boundary somebody drew in 1992 when about 1,700 acres were set aside.",
+        },
+        {
+          prompt: "What did Hankins find about the park's interpretation of Camp Glenn?",
+          answer: "That it preserves the parade ground, the Citizens' Military Training Camp and the CCC headquarters but does not address or interpret the military's role in inadvertently reforesting and saving the land that became the state park.",
+        },
+        {
+          prompt: "Name four things the tour cannot show you.",
+          answer: "Jurisdiction, tax status, what was demolished, and who was allowed where. Buildings encode rank and are silent on race, and you cannot photograph an absence.",
+        },
+      ],
+    },
+    {
+      slug: "fh-map",
+      title: "14 · Map: this post, and the national pattern it belongs to",
+      section: "Section 4 · Now",
+      body: `**Read this before you touch the map, because the map's limits are the lesson.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, so two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **A 2,500-acre post is smaller than one dot.** This map cannot show you Lawton Loop, the district edge, or where the forest begins, and pretending otherwise would be a worse lesson than admitting it.
+
+**That limitation is the most useful thing on this page.** The right map for a parcel question is **MapIndy**, the official geographic information system for the Consolidated City of Indianapolis and Marion County, where you can enter an address, an intersection or a parcel number and see parcel boundaries, political boundaries, street centrelines and aerial imagery (City of Indianapolis and Marion County, n.d.). The right map for the park's trails and boundaries is the **Indiana DNR's own property map**. **Choosing the scale of map that matches your question is a research skill**, and lesson 16 puts you to work in MapIndy directly.
+
+**So this map does the job it can do well.** It places this post inside the national pattern it belongs to.
+
+**Blue: Fort Benjamin Harrison itself**, plotted at an approximate point. Its detail carries the whole arc in a paragraph.
+
+**Amber: four other American military installations that closed and were converted**, each of which used some part of the same toolkit you learned in Section 3: a closure commission, a local redevelopment authority, environmental cleanup, historic districts, and public benefit conveyances. **These are here to stop you reading this post as a local story.** Base closure and conversion is a national programme that reshaped dozens of American communities across four commission rounds in the 1980s and 1990s, and it happened to each of them under the same statutes.
+
+**Green: two record repositories.** Washington is where the National Register and the Historic American Buildings Survey records live, and where the base closure commission reported. **Knowing where a record physically lives is part of knowing it exists.**
+
+**Coordinates on this map are approximate points, not surveyed boundaries.** Do not use them to find an address or a property line. Use them to see the shape of the pattern, and use MapIndy or the assessor's property cards when you need a parcel.
+
+**One honest limit, the same one course 1 flagged.** Every marker on this map exists because something was recorded and written about. **How many converted installations are not on this map is a question this course cannot answer and will not guess at.** The Department of Defense's own base closure records are the place to count them properly, and they were not read here.
+
+## Sources
+- City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
+- Indiana Department of Natural Resources. (n.d.). *Fort Harrison State Park*. https://www.in.gov/dnr/state-parks/parks-lakes/fort-harrison-state-park/
+- McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text
+- National Park Service. (n.d.). *Reuse of closed military bases (BRAC)*. https://www.nps.gov/orgs/1508/base-realignment-and-closure.htm`,
+      mapContent: {
+        markers: [
+          {
+            id: "fh-fort-harrison",
+            lat: 39.8598,
+            lng: -86.0169,
+            title: "Fort Benjamin Harrison, Lawrence, Marion County, Indiana",
+            color: "#1d4ed8",
+            description:
+              "The subject of this course. Roughly 2,400 acres of Lawrence Township farmland bought by the United States around 1903 to 1908, built out from Quartermaster Corps stock plans between 1906 and 1910, and held by the federal government for most of the twentieth century. Officer and engineer training in the First World War, a midwest induction centre, three specialist schools and a prisoner of war camp in the Second, then forty years as the Army's finance and administration centre. Annexed by the City of Lawrence in 1970. Listed for closure by the 1991 base realignment commission. Today the same ground carries a 1,700-acre state park, a redevelopment district under a state reuse authority, and a federal finance centre that never left.",
+          },
+          {
+            id: "fh-fort-sheridan",
+            lat: 42.2136,
+            lng: -87.8145,
+            title: "Fort Sheridan, Lake County, Illinois",
+            color: "#b45309",
+            description:
+              "Closed under an earlier round of the same programme, and directly connected to this post: the 1991 commission revised a 1988 recommendation that had moved U.S. Army Recruiting Command from Fort Sheridan to Fort Benjamin Harrison, sending it to Fort Knox instead. Its lakefront historic district and its conversion to housing and open space make it the closest structural sibling to the case in this course. Same statutes, different market.",
+          },
+          {
+            id: "fh-fort-ord",
+            lat: 36.6547,
+            lng: -121.7861,
+            title: "Fort Ord, Monterey County, California",
+            color: "#b45309",
+            description:
+              "A far larger closure from the same programme, whose reuse produced a university campus and a national monument on former training land. It is the best comparison for the central mechanism of this course, because most of Fort Ord's conserved land, like Fort Harrison's forest, survived development only because a federal owner needed it empty and paid no property tax on it.",
+          },
+          {
+            id: "fh-fort-mcclellan",
+            lat: 33.7215,
+            lng: -85.8005,
+            title: "Fort McClellan, Calhoun County, Alabama",
+            color: "#b45309",
+            description:
+              "Another Army post closed under the base realignment programme and handed to a local redevelopment authority. It is the case to read when you want to see how far environmental cleanup obligations can govern the pace of a conversion, which is the step lesson 11 covers in a single paragraph and which in practice can run for decades.",
+          },
+          {
+            id: "fh-presidio",
+            lat: 37.7989,
+            lng: -122.4662,
+            title: "Presidio of San Francisco, California",
+            color: "#b45309",
+            description:
+              "The opposite outcome to Fort Harrison's, and the reason lesson 11's August 1992 decision matters. Here the National Park Service determined the land was not suitable as a national park and said state or local government should hold it. At the Presidio the federal government reached the other conclusion and kept the ground in federal hands under a park trust. Same question, same era, different answer.",
+          },
+          {
+            id: "fh-washington",
+            lat: 38.8977,
+            lng: -77.0365,
+            title: "National Register, HABS and the closure commission, Washington, D.C.",
+            color: "#15803d",
+            description:
+              "Where the records in this course are kept. The Keeper of the National Register listed both districts on this post in 1995; the Historic American Buildings Survey documentation quoted throughout was deposited with the Library of Congress; and the base closure commission reported to the President here on 1 July 1991. Every date in Section 3 is a decision recorded in this city, on a document you can read.",
+          },
+          {
+            id: "fh-indianapolis",
+            lat: 39.7745,
+            lng: -86.1665,
+            title: "Indiana Avenue, Indianapolis, Indiana",
+            color: "#15803d",
+            description:
+              "Course 1 of this cluster, nine miles southwest, for contrast rather than comparison. There a city redevelopment commission and a state university took a Black commercial corridor using blight designation and eminent domain. Here the federal government held ground for ninety years and then gave most of it back as forest. Two courses, one metropolitan area, two completely different sets of instruments, and the same question: who decided.",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
