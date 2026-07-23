@@ -639,6 +639,49 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   survey exists. A genuine source disagreement (which edition first carried the Latimore) is kept
   and taught rather than smoothed. Closes with a research assignment on a real address.
   \`pnpm seed:courses\` picks it up; no migration.
+- 🔧 **Indiana Avenue: A District and What Replaced It** (Culture & History,
+  \`content/indiana-avenue\`). **The PILOT SITE COURSE of the route-courses series**
+  (\`plans/37-green-book-route-courses.md\` §1) and course 1 of the Indianapolis cluster
+  (\`plans/39-indianapolis-pilot-cluster.md\`). It is the first course to run the **six-beat site
+  template** end to end, one beat per section (Then, Built, Powers, Now, Next, Write), so it is the
+  pattern every later site course copies. Prerequisite: the Green Book method course above, which
+  teaches HOW to read a route; this one APPLIES that method to one nine-block corridor.
+  6 sections, 21 lessons (14 teaching, 3 quizzes with 15-question banks, 1 map lesson, 1 exercise,
+  1 \`virtual_tour\` lesson), recall cards throughout. **Its 360 tour is PENDING:** beat 4 ships as
+  a \`virtual_tour\` lesson with **no \`contentUrl\`**, because the Wanderlearn embed URL does not
+  exist yet and a tour URL is authoritative external data that is never guessed. The player renders
+  the "no media yet" notice above the authored body, so the lesson reads as pending rather than
+  broken, and the body is the learner's observation brief for when the tour lands. Dropping the URL
+  in later is a one-line edit plus \`pnpm seed:courses\`.
+  **Section 3 (Powers) is the load-bearing one** and is the civics, planning and taxes curriculum:
+  five named INSTRUMENTS, each tied to a body, a statute and a document. The blight designation
+  (the 1945 Indiana act, Pat Ward's Bottom, clearance from 1948, the 1956 declaration of almost
+  38 acres for the IU Medical Center); eminent domain (the documented Temple family condemnation,
+  23,000 dollars offered 1965 to 50,000 dollars settled 1979); the highway alignment decision
+  (1956 Federal-Aid Highway Act, the 1957 state announcement, I-65 built 1968 to 1971, the inner
+  loop opened 1975); a university as land assembler (the 1958 joint IU and Purdue campus plan,
+  Hoosier Realty Corporation formed 1962, 401 parcels bought July 1964 to August 1966, about 300
+  acres); and jurisdictional redrawing (Unigov, passed 1969, effective January 1, 1970, the only
+  major postwar consolidation done without a referendum, schools and four municipalities excluded).
+  **Lesson 13 TESTS plan 39's proposed Unigov spine against a date table and reports that it partly
+  FAILS**, which is the finding rather than a problem: every instrument that took the Avenue's
+  buildings predates Unigov, so the course ships the weaker, checkable claim (Unigov did not clear
+  the Avenue, it changed who governs the ground afterwards, with the Black share of the city
+  falling from 27 to 17 percent overnight). The popular "the interstate destroyed Indiana Avenue"
+  line is softened for the same reason, and the widely repeated 17,000 displaced figure is
+  attributed to its owner (an Indianapolis Star article of October 15, 1976, per WRTV) and marked
+  city-wide rather than adopted. Beat 5 is live civics: comprehensive plan vs zoning, the
+  Metropolitan Development Commission, and the Indiana Avenue Certified Strategic Plan whose honest
+  status is "announced February 2023, still unadopted, completion expected autumn 2026", plus an
+  exercise that has the learner look up a real parcel in MapIndy and the Marion County Assessor's
+  property cards. Green Book listings for the corridor are transcribed from Table 6 of the 2025
+  Indiana DNR and NPS multiple property documentation form (Borland & Linebarger, Gray & Pape),
+  never asserted from memory; framing from the Encyclopedia of Indianapolis, Wachter (2014) for the
+  Abell Foundation, SAVI, Chalkbeat, Archer (2020) and Rothstein (2017). A genuine source
+  disagreement (Lockefield's 748 vs 798 units) is kept and taught. The map lesson is deliberately
+  NATIONAL and says so: the lesson map renders a world projection, so a nine-block corridor is
+  smaller than one marker, and the limitation becomes the beat-5 lesson about matching map scale to
+  question. \`pnpm seed:courses\` picks it up; no migration.
 - 🔧 **Training the Colonizer: The Knowledge That Was Taken** (Culture & History,
   \`content/training-the-colonizer\`). What enslaved and colonized people taught their enslavers, for
   high school students. 6 sections: rice and the **Black Rice debate** (Carney 2001 taught AS a debate
