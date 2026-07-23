@@ -100,6 +100,7 @@ import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { GREAT_MIGRATION_AND_THE_WORLD_COURSE } from "./data/great-migration-and-the-world-course";
 import { GREEN_BOOK_READ_A_ROUTE_COURSE } from "./data/green-book-read-a-route-course";
+import { INDIANA_AVENUE_COURSE } from "./data/indiana-avenue-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
 import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
@@ -675,6 +676,24 @@ async function main() {
     // Survival-rate figures are attributed with owner + date + scope and never averaged: no complete
     // national survey exists and the course says so. NO migration — pnpm seed:courses.
     { slug: "green-book-how-to-read-a-route", course: GREEN_BOOK_READ_A_ROUTE_COURSE, category: "Culture & History" },
+    // Indiana Avenue: A District and What Replaced It, the PILOT SITE COURSE of the route-courses
+    // series (plans/37-green-book-route-courses.md) and course 1 of the Indianapolis cluster
+    // (plans/39-indianapolis-pilot-cluster.md). It is the first course to run the six-beat site
+    // template end to end, one beat per section: Then, Built, Powers, Now, Next, Write. Prerequisite
+    // is `green-book-how-to-read-a-route` above, which teaches the METHOD; this one applies it to
+    // one nine-block corridor. 6 sections, 21 lessons (14 teaching, 3 quizzes with 15-question
+    // banks, 1 map lesson, 1 exercise, 1 `virtual_tour` beat-4 lesson published WITHOUT a
+    // contentUrl because its Wanderlearn embed URL does not exist yet). Section 3 (Powers) is the
+    // load-bearing one and teaches five instruments: blight designation (1945 act, Pat Ward's
+    // Bottom, 1948 clearance, the 1956 38-acre declaration), eminent domain (the documented Temple
+    // family condemnation), the highway alignment decision, a university as land assembler (Hoosier
+    // Realty Corp 1962, 401 parcels 1964-66), and jurisdictional redrawing (Unigov 1969/1970).
+    // Lesson 13 TESTS plan 39's proposed Unigov spine against a date table and reports that it
+    // fails for the district and holds for the schools and suburbs. Green Book listings are
+    // transcribed from Table 6 of the 2025 Indiana DNR / NPS multiple property documentation form
+    // (Borland & Linebarger), not asserted from memory. NO migration, run pnpm seed:courses. The 360
+    // tour URL drops in later via `contentUrl` on `ia-now-tour` plus a re-seed.
+    { slug: "indiana-avenue-a-district-and-what-replaced-it", course: INDIANA_AVENUE_COURSE, category: "Culture & History" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

@@ -1083,6 +1083,684 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Now  (beat 4: observation and evidence)
+    //
+    // The 360 tour of the corridor has been captured but its Wanderlearn embed URL does not exist
+    // yet, and a tour URL is authoritative external data that must never be guessed
+    // (plans/future/04-wanderlearn-360-boundary.md). So this lesson ships as `virtual_tour` with
+    // NO contentUrl: the player renders the "no media yet" notice above the body, and the body is
+    // the observation brief the learner uses when the tour lands. Drop the URL in and re-seed.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ia-now-tour",
+      title: "15 · Now: walk the corridor (360 tour, forthcoming)",
+      section: "Section 4 · Now",
+      lessonType: "virtual_tour",
+      body: `**The 360 tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is telling you the truth rather than reporting a fault. This course was written before the tour was published, on purpose: the site template this series uses treats beat 4 as a drop-in, so a course is complete and teachable without it and the tour is added later without restructuring anything.
+
+**Read this lesson now anyway.** It is your observation brief. Beat 4 asks one question, "what is actually there today", and the difference between a tourist looking at a street and a researcher looking at a street is entirely a matter of knowing what to look for before you arrive. **Work through this list now, then come back and run it against the tour when it lands.**
+
+## What to look for, in order
+
+**1. Count the historic buildings, and locate the gaps.** You know the listed district is about 3 acres and eleven buildings in the 500 block, and that the Green Book entries run from 233 to 1005 Indiana Avenue (Borland & Linebarger, 2025; Encyclopedia of Indianapolis, n.d.-a). **Ask of every stretch between those numbers: is there a pre-1935 building here, and if not, what is?** The four answers that matter are a newer building, a parking lot or surface lot, a lawn or plaza, and a road. **Each one is a different decision.**
+
+**2. Find the flatiron, and look at what is beside it.** The Walker Building's triangular plan is the 1821 plat still visible in 1927 brick. Then look at its neighbours on both sides. **A landmark with no context is a different kind of evidence than a landmark in a block**, and which one you are looking at is the single most informative thing in the tour.
+
+**3. Look for the boundary between the corridor and the campus.** Somewhere the fabric changes from street-fronting commercial buildings to institutional buildings set back behind lawns and plazas. **That boundary is a land-assembly line, and it has a date.** Note where it runs.
+
+**4. Look up, and look for the highway.** Interstates 65 and 70 were built through this part of the city between the late 1960s and 1975. **Where the tour shows an overpass, an embankment, a sound wall, or a street that stops, note it.** A street that ends where it once continued is right-of-way, and right-of-way is on a map you can request.
+
+**5. Count the markers and plaques, and read who wrote them.** Historical markers are a public record with an author, a date and a sponsor. **A marker tells you what a community and an agency agreed to say in public, in a particular year.** Note the sponsor's name every time.
+
+**6. Look for what is being built right now.** Construction fencing, a rezoning notice, a public hearing sign, a leasing banner. **Every one of those is a live document with a case number**, and Section 5 teaches you how to look them up.
+
+**7. Look at who is on the street.** This is a working district with residents, students, workers and visitors. **Describe them as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours.
+
+## What the tour cannot show you
+
+- **It cannot show you a date.** Every change you notice happened at a time, and the tour has no clock. Beat 3 gave you the dates; beat 5 gives you the record.
+- **It cannot show you an owner.** A building's occupant is not its owner, and neither is on the facade. The parcel record has it.
+- **It cannot show you an intention.** A parking lot is not evidence about anyone's motives. It is evidence that there is no building.
+- **It cannot show you absence.** You cannot photograph a demolished restaurant. **Everything the tour does not contain is a question for Section 5, not an answer.**
+
+**Write down your five most confident observations before the tour arrives, based on this brief and on the map lesson that follows. Then check them.** Being wrong on the record about a place you had not yet seen is a better teacher than being right about one you had.
+
+## Sources
+- Borland, A., & Linebarger, E. (2025). *Green Book sites in Indiana, 1936-1967* [National Register of Historic Places multiple property documentation form]. Gray & Pape, Inc., for the Indiana Department of Natural Resources, Division of Historic Preservation and Archaeology. https://www.in.gov/dnr/historic-preservation/files/hp-Green-Book-Sites-in-Indiana.pdf
+- Encyclopedia of Indianapolis. (n.d.-a). *Indiana Avenue*. https://indyencyclopedia.org/indiana-avenue/
+- Encyclopedia of Indianapolis. (n.d.-f). *Madam Walker Legacy Center*. https://indyencyclopedia.org/madam-walker-legacy-center/`,
+      recallContent: [
+        {
+          prompt: "Why is this lesson published before its 360 tour exists?",
+          answer: "Because the site template treats beat 4 as a drop-in: a course is complete and teachable with the other five beats, and the tour is added later without restructuring anything. The body is the observation brief in the meantime.",
+        },
+        {
+          prompt: "When you find a gap where a historic building should be, what four answers matter?",
+          answer: "A newer building, a parking or surface lot, a lawn or plaza, or a road. Each one is a different decision with a different record behind it.",
+        },
+        {
+          prompt: "What does a street that stops where it once continued tell you?",
+          answer: "That it is right-of-way, taken for a highway or another project, which means there is a right-of-way map you can request.",
+        },
+        {
+          prompt: "Name three things a 360 tour cannot show you.",
+          answer: "A date, an owner, an intention, and absence. You cannot photograph a demolished building, so everything missing from the tour is a question rather than an answer.",
+        },
+      ],
+    },
+    {
+      slug: "ia-map",
+      title: "16 · Map: one corridor, and the pattern it belongs to",
+      section: "Section 4 · Now",
+      body: `**Read this before you touch the map, because the map's limits are a lesson in themselves.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, which means two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **A nine-block corridor is smaller than one dot.** So this map cannot show you Indiana Avenue block by block, and pretending otherwise would be a worse lesson than admitting it.
+
+**That limitation is the most useful thing on this page.** The right map for a parcel question is not a world map. It is **MapIndy**, the official geographic information system for the Consolidated City of Indianapolis and Marion County, where you can enter an address, an intersection or a parcel number and see parcel boundaries, political boundaries, street centrelines and aerial imagery (City of Indianapolis and Marion County, n.d.). **Choosing the right scale of map for your question is a research skill**, and Section 5 puts you to work in MapIndy directly.
+
+**So this map does the job it can do well.** It places Indiana Avenue in the national pattern it belongs to, and it marks the two archives where the underlying records live.
+
+**Blue: Indiana Avenue itself**, plotted at an approximate point on the corridor. Its detail carries the before and after in one paragraph.
+
+**Amber: four other American Black districts** where the same instruments were used. Highway construction displaced Black households and destroyed homes, churches, schools and businesses in cities across the country, and in some places a highway was used deliberately as a barrier between white and Black communities (Archer, 2020; Rothstein, 2017). **These four are here to stop you reading Indianapolis as a local misfortune.** It is a local instance of a national method.
+
+**Green: two archives.** The Schomburg Center in New York holds the digitized Green Book editions. Washington is where the National Register and National Historic Landmark records are kept. **Both are places, and knowing where a record physically lives is part of knowing that it exists.**
+
+**Coordinates on this map are approximate points, not surveyed building locations.** Do not use them to find an address. Use them to see the shape of the pattern, and use MapIndy or the Assessor's property cards when you need a parcel.
+
+**What this map cannot show, and neither could the last one.** It cannot show absence. Every marker exists because something was recorded. **The four amber cities are the ones that have been written about, which is a fact about scholarship as well as about highways.** How many districts are not on this map is a question this course cannot answer and will not guess at.
+
+## Sources
+- Archer, D. N. (2020). "White men's roads through Black men's homes": Advancing racial equity through highway reconstruction. *Vanderbilt Law Review, 73*(5). https://scholarship.law.vanderbilt.edu/vlr/vol73/iss5/1/
+- City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
+- Encyclopedia of Indianapolis. (n.d.-a). *Indiana Avenue*. https://indyencyclopedia.org/indiana-avenue/
+- New York Public Library. (n.d.). *Green Book research guide*. https://libguides.nypl.org/greenbook
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
+      mapContent: {
+        markers: [
+          {
+            id: "ia-indianapolis",
+            lat: 39.7745,
+            lng: -86.1665,
+            title: "Indiana Avenue, Indianapolis, Indiana",
+            color: "#1d4ed8",
+            description:
+              "The subject of this course. A diagonal on Ralston's 1821 plat that became the Black commercial and cultural centre of Indianapolis, 77 percent Black by 1920, holding more than 180 businesses in eight blocks in 1916 and about 30 Green Book listings between 233 and 1005 Indiana Avenue. What survives on the National Register is the 3-acre, eleven-building Indiana Avenue Historic District listed in 1987, plus the Walker Building (National Historic Landmark, 1991), Ransom Place (listed 1992) and seven of Lockefield Gardens' original 24 buildings. Most of the rest went to blight designation and to university land assembly between 1948 and the 1980s.",
+          },
+          {
+            id: "ia-rondo",
+            lat: 44.9483,
+            lng: -93.1272,
+            title: "Rondo, Saint Paul, Minnesota",
+            color: "#b45309",
+            description:
+              "The alignment instrument. Interstate 94 was routed through the Rondo neighbourhood, Saint Paul's Black centre. Reporting on the neighbourhood's displacement is the reason Rondo is the most cited American case of a highway taking a Black district, and the community's own reconnection campaign is active today. Same instrument as lesson 10, different city.",
+          },
+          {
+            id: "ia-overtown",
+            lat: 25.7877,
+            lng: -80.198,
+            title: "Overtown, Miami, Florida",
+            color: "#b45309",
+            description:
+              "Interstate 95 was built through Overtown, the district known then as the Harlem of the South. Rothstein's account of government-produced segregation uses Overtown as a worked example of highway displacement at scale. Read the population figures for it the way lesson 10 taught you to read the 17,000 figure: with an owner, a date and a scope.",
+          },
+          {
+            id: "ia-treme",
+            lat: 29.97,
+            lng: -90.07,
+            title: "Tremé and Claiborne Avenue, New Orleans, Louisiana",
+            color: "#b45309",
+            description:
+              "The Interstate 10 Claiborne Expressway was built over Claiborne Avenue, the Black commercial spine of Tremé, in the late 1960s. Claiborne is the standard example of a highway built ON a business street rather than through a residential one, which is the closest structural parallel to a corridor course like this one.",
+          },
+          {
+            id: "ia-jackson-ward",
+            lat: 37.547,
+            lng: -77.437,
+            title: "Jackson Ward, Richmond, Virginia",
+            color: "#b45309",
+            description:
+              "Another district called both Black Wall Street and the Harlem of the South before the Second World War. Interstate 95 and the I-64 and I-95 interchange were built through it in the 1960s. Note how often the same two nicknames recur across these cities: it tells you these districts saw themselves as part of a national network, not as isolated local scenes.",
+          },
+          {
+            id: "ia-schomburg",
+            lat: 40.8146,
+            lng: -73.941,
+            title: "Schomburg Center, New York Public Library, New York",
+            color: "#15803d",
+            description:
+              "Where the digitized Green Book editions live, and therefore where every listing claim in lesson 2 can be checked. The Indiana DNR's own documentation form did its Green Book research against this collection. Knowing where a record physically lives is part of knowing it exists.",
+          },
+          {
+            id: "ia-washington",
+            lat: 38.8977,
+            lng: -77.0365,
+            title: "National Register and National Historic Landmarks, Washington, D.C.",
+            color: "#15803d",
+            description:
+              "The Keeper of the National Register lists properties on state nominations, and the Secretary of the Interior designates National Historic Landmarks. Every designation date in Section 2 (1980 and 1991 for the Walker Building, 1987 for the Indiana Avenue Historic District, 1992 for Ransom Place) is a decision recorded here, on a nomination document you can read.",
+          },
+        ],
+      },
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Next  (beat 5: live civics. the current adopted plan, and a real parcel)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ia-next-adopted-plan",
+      title: "17 · What is the current adopted plan for this ground?",
+      section: "Section 5 · Next",
+      body: `Beat 5 is the beat that turns a history course into a civics course. **Every site has a present legal status and a plan being written for it right now**, and finding those is a research skill rather than an opinion.
+
+**Start with the four questions, in this order.** They work for any American parcel, not just this one.
+1. **What does the comprehensive plan say this land should become?**
+2. **What does the zoning permit today?**
+3. **Is there an area-specific plan, and has it been adopted?**
+4. **Who is the decision-making body, when does it meet, and is the agenda public?**
+
+**Question 1: the comprehensive plan.** In Indianapolis the relevant document is the **Comprehensive Plan for Indianapolis and Marion County**, and the land-use element of it is the **Marion County Land Use Plan**, which consists of a written **Pattern Book** and a **Land Use Map**. It is **adopted by the Metropolitan Development Commission** (Encyclopedia of Indianapolis, n.d.-i; City of Indianapolis and Marion County, n.d.-b). **A comprehensive plan is not zoning.** It is the policy statement that rezonings are judged against, which is why a rezoning hearing so often turns into an argument about what the plan says.
+
+**Question 2: zoning.** The Metropolitan Development Commission also adopts zoning ordinances and decides variance and rezoning petitions, and it approves contracts and the sale of property for redevelopment (Encyclopedia of Indianapolis, n.d.-i). **One body, three different kinds of power.** Learn to notice when a body that writes the rules also decides the exceptions to them and sells the land.
+
+**Question 3: the area plan, and this is where it gets live.** Indiana Avenue has an area-specific planning process running **right now**, and its status as of the most recent reporting is the most instructive part of this lesson.
+
+- On **February 23, 2023**, Mayor Joe Hogsett announced the **Indiana Avenue Certified Strategic Plan**, covering an area running north to 16th Street, east to Capitol Avenue, south to Military Park and west to the White River, as a partnership between the city's **Department of Metropolitan Development (DMD)**, **Reclaim Indiana Avenue** and the **Urban Legacy Lands Initiative** (WFYI, 2023).
+- A public kickoff followed in **April 2024**. The first consultant, the New York firm **EKLA**, held a contract worth up to **356,000 dollars** that expired at the end of **2024**.
+- A second phase is now under a **125,000 dollar** contract with the Columbus, Ohio firm **MKSK**, running through the end of **2026**, with completion expected in **autumn 2026**. The city's deputy director of planning, preservation and design, **Carmen Lethig**, told a public meeting on **November 5, 2025**: "I know this has been a long and silent pause in the planning process" (WFYI, 2025).
+- **As of that reporting, no results or recommendations had been published, and nothing had been adopted** (WFYI, 2025).
+
+**Read that carefully, because it is the honest answer to beat 5's question.** The current adopted plan for the ground-specific future of Indiana Avenue **is that there is not one yet.** There is a comprehensive plan and a zoning ordinance that apply, and there is a strategic plan in progress that has been running for more than two and a half years and has not produced an adopted document. **"Not adopted yet" is a finding, and it is the finding that gives a citizen the most leverage**, because an unadopted plan is still open to comment.
+
+**Question 4: who decides, and when.** The **Metropolitan Development Commission** adopts the comprehensive plan and the zoning ordinance and decides rezonings. Its meetings and agendas are public. The **Department of Metropolitan Development** runs the planning process. **A plan in progress means public meetings are still happening**, and a public meeting is the cheapest civic act there is.
+
+**One more status to check, and it is the one that stops a demolition.** Section 2 taught the difference between federal listing and local designation. **Whether a specific building on this corridor is inside a locally regulated historic area, and therefore whether a demolition needs a local certificate before it can proceed, is a parcel-by-parcel question.** The next lesson has you look one up.
+
+**The honest limits of this lesson.** Planning documents change, contracts get extended, and consultants get replaced, all of which has already happened once here. **Every date and dollar figure above has a source and a date attached, and you should re-check all of them before you rely on any of them.** That instruction is not a disclaimer. It is the method.
+
+## Sources
+- City of Indianapolis and Marion County. (n.d.-b). *Marion County land use plan: Pattern book*. https://citybase-cms-prod.s3.amazonaws.com/d55349b00251489ea6744d4a06826f95.pdf
+- Encyclopedia of Indianapolis. (n.d.-i). *Metropolitan Development Commission*. https://indyencyclopedia.org/metropolitan-development-commission/
+- WFYI. (2023, February 24). *What's next for Indiana Avenue? Indianapolis aims to revive the historic block*. https://www.wfyi.org/wfyi-news/2023-02-24/whats-next-for-indiana-avenue
+- WFYI. (2025, December 22). *After "long and silent pause," what's next for Indiana Ave development plan?* https://www.wfyi.org/wfyi-news/2025-12-22/after-long-and-silent-pause-whats-next-for-indiana-ave-development-plan`,
+      recallContent: [
+        {
+          prompt: "What are the four questions to ask about any parcel's future, in order?",
+          answer: "What does the comprehensive plan say it should become; what does the zoning permit today; is there an area-specific plan and has it been adopted; and who decides, when do they meet, and is the agenda public.",
+        },
+        {
+          prompt: "What is the difference between a comprehensive plan and zoning?",
+          answer: "The comprehensive plan is the policy statement about what land should become; zoning is the enforceable rule about what may be built today. Rezoning petitions are judged against the plan.",
+        },
+        {
+          prompt: "Which body adopts the comprehensive plan and the zoning ordinance in Indianapolis, and what else does it do?",
+          answer: "The Metropolitan Development Commission. It also decides variance and rezoning petitions and approves contracts and the sale of property for redevelopment.",
+        },
+        {
+          prompt: "What is the status of the Indiana Avenue Certified Strategic Plan, as of the latest reporting?",
+          answer: "Announced February 2023, public kickoff April 2024, first consultant EKLA's contract expired end of 2024, a second phase runs with MKSK through 2026 with completion expected autumn 2026. Nothing had been published or adopted.",
+        },
+        {
+          prompt: "Why is 'not adopted yet' a useful finding rather than a dead end?",
+          answer: "Because an unadopted plan is still open to public comment, and public meetings are still happening. That is where a citizen has the most leverage.",
+        },
+      ],
+    },
+    {
+      slug: "ia-next-exercise-parcel",
+      title: "18 · Practice: look up a real parcel",
+      section: "Section 5 · Next",
+      lessonType: "exercise",
+      body: `**This drill is the whole of beat 5 in miniature, and you should do it with the real tools open in another tab.** Everything below is free and public.
+
+**The two tools.**
+- **MapIndy**, the official GIS for the Consolidated City of Indianapolis and Marion County: https://maps.indy.gov/MapIndy/ . Enter an address, an intersection or a parcel number and read parcel boundaries, political boundaries, street centrelines and aerial imagery.
+- **The Marion County Assessor's property cards**: https://maps.indy.gov/AssessorPropertyCards/ . Search by state parcel number, owner name or address and read the public property card.
+
+**Your target: 617 Indiana Avenue, Indianapolis, the Madam C. J. Walker Building.** It is a National Historic Landmark, so it is a safe address to practise on: it is a public building, its address is published by the institution that occupies it, and you are not exposing anybody's home.
+
+**Work through these, then answer the questions below.**
+1. Find **617 Indiana Avenue** in MapIndy and look at the parcel outline. **Is it triangular?** Compare it against lesson 6's explanation of why.
+2. Read off the **state parcel number**. Write it down exactly, including punctuation.
+3. Open the Assessor's property card for that parcel and find the **owner of record**, the **year built** if the card gives one, and the **assessed value**.
+4. Compare the **owner of record** to the name of the organisation that operates the building. **They may not match, and if they do not, that is normal and it is a finding.**
+5. In MapIndy, turn on political boundaries and note which **township**, **council district** and **school district** the parcel is in. **Section 3 explained why those three boundaries are not the same shape.**
+6. Walk the parcel outline a block in each direction along the Avenue and count how many neighbouring parcels are **institutionally owned**.
+
+**The habits this builds, which transfer to any American county.** Every county has an assessor and most have a GIS. **The names of the tools change and the four facts do not: parcel number, owner of record, assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
+
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a county database. Practise on institutional and commercial addresses. This is the same rule the method course applied to tourist homes.
+
+## Sources
+- City of Indianapolis and Marion County. (n.d.-a). *MapIndy*. https://maps.indy.gov/MapIndy/
+- Marion County Assessor. (n.d.). *Assessor property cards*. https://maps.indy.gov/AssessorPropertyCards/
+- Encyclopedia of Indianapolis. (n.d.-f). *Madam Walker Legacy Center*. https://indyencyclopedia.org/madam-walker-legacy-center/`,
+      exercise: {
+        instructions:
+          "Type the missing term, name, number, body or year, then check. Close answers (spelling, capitalization) count as 'close', not wrong.",
+        items: [
+          {
+            prompt: "The official GIS for the Consolidated City of Indianapolis and Marion County is called ___.",
+            answer: "MapIndy",
+            accept: ["map indy", "mapindy"],
+            explanation: "At maps.indy.gov/MapIndy/. Enter an address, intersection or parcel number.",
+          },
+          {
+            prompt: "The county office that publishes public property cards for a parcel is the ___.",
+            answer: "assessor",
+            accept: ["county assessor", "marion county assessor", "assessor's office"],
+            explanation: "The Marion County Assessor's property cards are searchable by parcel number, owner name or address.",
+          },
+          {
+            prompt: "The four facts to pull for any parcel are parcel number, owner of record, assessed value, and which overlapping ___ it sits in.",
+            answer: "jurisdictions",
+            accept: ["jurisdiction", "boundaries", "districts"],
+            explanation: "Township, council district and school district are three different shapes over the same ground, for reasons Section 3 explained.",
+          },
+          {
+            prompt: "The building you practise on in this drill is at ___ Indiana Avenue.",
+            answer: "617",
+            accept: ["617 indiana avenue", "617 indiana ave"],
+            explanation: "The Madam C. J. Walker Building, a National Historic Landmark and a safe public address to practise on.",
+          },
+          {
+            prompt: "The plan a rezoning petition is judged against is the ___ plan.",
+            answer: "comprehensive",
+            accept: ["comprehensive plan", "general", "master"],
+            explanation: "In Indianapolis it is the Comprehensive Plan for Indianapolis and Marion County, whose land-use element is the Marion County Land Use Plan.",
+          },
+          {
+            prompt: "The Indianapolis body that adopts the comprehensive plan, adopts zoning, and decides rezonings is the ___ ___ Commission.",
+            answer: "Metropolitan Development",
+            accept: ["metropolitan development", "mdc"],
+            explanation: "One body writing the rules, deciding the exceptions, and approving property sales for redevelopment.",
+          },
+          {
+            prompt: "The city department running the Indiana Avenue planning process is the Department of ___ ___ (two words, abbreviated DMD).",
+            answer: "Metropolitan Development",
+            accept: ["metropolitan development", "dmd"],
+            explanation: "DMD partnered with Reclaim Indiana Avenue and the Urban Legacy Lands Initiative on the Indiana Avenue Certified Strategic Plan.",
+          },
+          {
+            prompt: "As of the latest reporting, the number of adopted recommendations from the Indiana Avenue Certified Strategic Plan is ___.",
+            answer: "zero",
+            accept: ["0", "none"],
+            explanation: "Announced February 2023, kicked off April 2024, and still unpublished as of late 2025, with completion expected in autumn 2026.",
+          },
+          {
+            prompt: "The designation level that normally regulates demolition is ___, not federal.",
+            answer: "local",
+            accept: ["local designation", "municipal", "city"],
+            explanation: "National Register listing is recognition plus review leverage on federally funded or permitted projects. A local ordinance and commission is what can require a certificate before demolition.",
+          },
+          {
+            prompt: "The legal conclusion a redevelopment body must reach before it can acquire and clear an area is that the area is ___.",
+            answer: "blighted",
+            accept: ["blight", "blighted and substandard", "substandard"],
+            explanation: "Reached on a record against statutory criteria, with a dated boundary and public minutes. Start there when you research a demolition.",
+          },
+          {
+            prompt: "The constitutional amendment requiring just compensation for a taking is the ___ Amendment.",
+            answer: "Fifth",
+            accept: ["5th", "5", "five"],
+            explanation: "Applied to the states through the Fourteenth Amendment.",
+          },
+          {
+            prompt: "The nonprofit corporation Indiana University formed in 1962 to acquire land was ___ Realty Corporation.",
+            answer: "Hoosier",
+            accept: ["hoosier realty", "hoosier realty corporation"],
+            explanation: "It acquired more than 2,000 houses and lots. Follow the corporate entity, not the institution's name, when you read deeds.",
+          },
+          {
+            prompt: "Unigov took effect on January 1 of ___.",
+            answer: "1970",
+            accept: ["70"],
+            explanation: "Passed by the Indiana General Assembly in 1969, effective January 1, 1970, and the only major postwar consolidation done without a referendum.",
+          },
+          {
+            prompt: "The Black share of the city's population fell from 27 percent of the old city to ___ percent of the consolidated city.",
+            answer: "17",
+            accept: ["17 percent", "seventeen"],
+            explanation: "It did not recover to pre-Unigov proportions until the 2010 census.",
+          },
+          {
+            prompt: "The Walker Building became a National Historic ___ in 1991.",
+            answer: "Landmark",
+            accept: ["landmark", "nhl"],
+            explanation: "Indiana Register 1979, National Register 1980, National Historic Landmark 1991, all after the decisions that emptied the corridor.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "ia-quiz-next",
+      title: "19 · Quiz: finding the live record",
+      section: "Section 5 · Next",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why is this course's map lesson national rather than block by block?",
+            options: [
+              "Because Indiana Avenue's coordinates are unknown",
+              "Because the lesson map draws the whole world, so points need roughly two degrees of separation to be distinguishable, and a nine-block corridor is smaller than one dot",
+              "Because block-level maps are copyrighted",
+              "Because the course avoids maps of Indianapolis",
+            ],
+            correctIndex: 1,
+            explanation: "Choosing the right scale of map for the question is the actual skill. For a parcel question the right map is MapIndy.",
+            sourceLessonSlug: "ia-map",
+          },
+          {
+            prompt: "What is MapIndy?",
+            options: [
+              "A private real estate listing site",
+              "The official GIS for the Consolidated City of Indianapolis and Marion County",
+              "A historical atlas of 1930s Indianapolis",
+              "A transit planning app",
+            ],
+            correctIndex: 1,
+            explanation: "It shows parcel boundaries, political boundaries, street centrelines and aerial imagery by address, intersection or parcel number.",
+            sourceLessonSlug: "ia-next-exercise-parcel",
+          },
+          {
+            prompt: "Which four facts should you pull for any parcel in any American county?",
+            options: [
+              "Square footage, paint colour, roof age, and street name",
+              "Parcel number, owner of record, assessed value, and the overlapping jurisdictions it sits in",
+              "Architect, contractor, original cost, and current tenant",
+              "Zoning code only",
+            ],
+            correctIndex: 1,
+            explanation: "The names of the tools change from county to county; those four facts do not.",
+            sourceLessonSlug: "ia-next-exercise-parcel",
+          },
+          {
+            prompt: "In Indianapolis, which body adopts the comprehensive plan AND the zoning ordinance AND decides rezoning petitions?",
+            options: [
+              "The City-County Council",
+              "The Metropolitan Development Commission",
+              "The Indianapolis Redevelopment Commission",
+              "The Indiana General Assembly",
+            ],
+            correctIndex: 1,
+            explanation: "One body writing the rules, deciding the exceptions, and approving property sales for redevelopment. Notice when that happens anywhere.",
+            sourceLessonSlug: "ia-next-adopted-plan",
+          },
+          {
+            prompt: "A comprehensive plan differs from zoning because:",
+            options: [
+              "It is legally binding on every owner immediately",
+              "It is the policy statement that rezoning petitions are judged against, while zoning is the enforceable rule about what may be built today",
+              "It only covers publicly owned land",
+              "It is written by the state rather than the city",
+            ],
+            correctIndex: 1,
+            explanation: "That is why rezoning hearings so often become arguments about what the plan says.",
+            sourceLessonSlug: "ia-next-adopted-plan",
+          },
+          {
+            prompt: "What is the Indiana Avenue Certified Strategic Plan's status in the most recent reporting used by this course?",
+            options: [
+              "Adopted in 2023 and being implemented",
+              "Announced February 2023, kicked off April 2024, consultant replaced after 2024, second phase running through 2026, with nothing published or adopted",
+              "Cancelled",
+              "Adopted by the Indiana General Assembly",
+            ],
+            correctIndex: 1,
+            explanation: "MKSK holds a 125,000 dollar contract through the end of 2026 with completion expected in autumn 2026. The city's planning deputy director publicly acknowledged the pause in November 2025.",
+            sourceLessonSlug: "ia-next-adopted-plan",
+          },
+          {
+            prompt: "Why is 'no adopted area plan yet' a useful finding for a citizen?",
+            options: [
+              "Because it means nothing will be built",
+              "Because an unadopted plan is still open to public comment and public meetings are still being held",
+              "Because it invalidates the zoning",
+              "Because it triggers automatic historic protection",
+            ],
+            correctIndex: 1,
+            explanation: "That is the point in a process where a member of the public has the most leverage and the lowest cost of participation.",
+            sourceLessonSlug: "ia-next-adopted-plan",
+          },
+          {
+            prompt: "Which level of designation normally regulates whether a building can be demolished?",
+            options: [
+              "National Historic Landmark",
+              "National Register of Historic Places",
+              "Local historic district or landmark designation under a local ordinance",
+              "State register listing",
+            ],
+            correctIndex: 2,
+            explanation: "Federal listing is recognition plus review leverage on federally funded or permitted work. The local ordinance is what requires a certificate before demolition.",
+            sourceLessonSlug: "ia-built-what-survives",
+          },
+          {
+            prompt: "Why does this course tell you to practise parcel lookups on institutional and commercial addresses?",
+            options: [
+              "Because residential records are not public",
+              "Because publishing a current occupant's name attached to their home address is a different act from a public record sitting in a county database",
+              "Because homes have no parcel numbers",
+              "Because assessors refuse residential requests",
+            ],
+            correctIndex: 1,
+            explanation: "It is the same rule the method course applied to tourist homes: a house someone lives in is somebody's home first.",
+            sourceLessonSlug: "ia-next-exercise-parcel",
+          },
+          {
+            prompt: "When you find a gap in the corridor where a historic building should be, the four meaningful answers are:",
+            options: [
+              "Brick, wood, stone, or steel",
+              "A newer building, a parking or surface lot, a lawn or plaza, or a road",
+              "Public, private, institutional, or vacant",
+              "Demolished, moved, burned, or collapsed",
+            ],
+            correctIndex: 1,
+            explanation: "Each of the four points to a different decision with a different record behind it.",
+            sourceLessonSlug: "ia-now-tour",
+          },
+          {
+            prompt: "What does a street that stops where it once continued tell a researcher?",
+            options: [
+              "That the street was renamed",
+              "That it is right-of-way taken for a project, and there is a right-of-way map to request",
+              "That the census tract changed",
+              "Nothing checkable",
+            ],
+            correctIndex: 1,
+            explanation: "Right-of-way maps are held by the state highway agency and are public records.",
+            sourceLessonSlug: "ia-now-tour",
+          },
+          {
+            prompt: "Name three things a 360 tour of a place cannot show you.",
+            options: [
+              "Colour, texture, and scale",
+              "A date, an owner, an intention, and absence",
+              "Buildings, streets, and signs",
+              "Weather, season, and time of day",
+            ],
+            correctIndex: 1,
+            explanation: "You cannot photograph a demolished restaurant, so everything missing from the tour is a question for the records rather than an answer.",
+            sourceLessonSlug: "ia-now-tour",
+          },
+          {
+            prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
+            options: [
+              "Because the tour was cancelled",
+              "Because beat 4 is a drop-in: a site course is complete and teachable with the other five beats, and the body serves as the observation brief meanwhile",
+              "Because the platform requires a placeholder",
+              "Because the tour is optional and will never be added",
+            ],
+            correctIndex: 1,
+            explanation: "A tour embed URL is authoritative external data and is never guessed, so the lesson ships with the notice and the brief and the URL drops in on a re-seed.",
+            sourceLessonSlug: "ia-now-tour",
+          },
+          {
+            prompt: "Why do the amber markers on the map include four other cities?",
+            options: [
+              "To pad the map",
+              "To stop the reader treating Indianapolis as a local misfortune rather than a local instance of a national method",
+              "Because those cities have Green Book listings",
+              "Because they are the four largest US cities",
+            ],
+            correctIndex: 1,
+            explanation: "Archer's study and Rothstein's account both document the same instruments being used across the country.",
+            sourceLessonSlug: "ia-map",
+          },
+          {
+            prompt: "The map lesson says its markers are approximate points. What follows from that?",
+            options: [
+              "The map is unreliable and should be ignored",
+              "Do not use them to find an address; use them to see the pattern, and use MapIndy or the assessor's cards for a parcel",
+              "The coordinates should be averaged",
+              "The markers are fictional",
+            ],
+            correctIndex: 1,
+            explanation: "Approximate points at world scale are fine for a pattern and useless for a lot line. Matching the tool to the question is the skill.",
+            sourceLessonSlug: "ia-map",
+          },
+        ],
+      },
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Write  (beat 6: ELA and creative nonfiction, grounded in the place)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ia-write-assignment",
+      title: "20 · Your assignment: write one block",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `Beat 6 asks a question no other beat can: **what can only be said about this place?** Answering it is a writing problem, and this assignment is a real one.
+
+## The assignment
+Write **900 to 1,300 words** of creative nonfiction about **one block, one building, or one address** on or near Indiana Avenue. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is the same one Section 3 used.**
+
+## Step 1 · Choose one address, and choose small
+Pick from the Green Book table in lesson 2, or from the surviving fabric in lesson 7, or from a parcel you found in lesson 18. **Smaller is better.** "The Avenue" is not a subject, it is a topic. **793 Indiana Avenue, listed as Perkins Restaurant every year from 1950 to 1967, is a subject.**
+
+If you do not live in Indianapolis and cannot visit, that is not a disqualification. **It is a constraint you disclose in the piece**, and it changes what you can honestly claim.
+
+## Step 2 · Build the four-column chronology before you write a sentence
+Lesson 13 killed a good argument with a table. Build your own, with these columns: **date, event, instrument, source**. If the instrument column is empty for an event, you have a story and not yet a decision. **The table is the outline.**
+
+## Step 3 · Decide what kind of piece this is
+Pick one and commit, because mixing them is what makes place writing mushy.
+- **A biography of a building.** Its plan, its uses, its owners, its end or its survival.
+- **A history of a decision.** One designation, one taking, one alignment, one vote, followed to the document.
+- **A report on a present.** What is there now, who uses it, what the pending plan proposes, what a public meeting sounded like.
+- **A piece about the record itself.** What you could and could not find, and what the gap means.
+
+**The fourth is the hardest and often the best**, and it is the only one that can be written honestly with thin sources.
+
+## Step 4 · Write it, under these craft rules
+1. **Lead with a specific.** A street number, a category heading, a date on a document. Not a mood.
+2. **Name the instrument every time you name a loss.** "The block was cleared" is weak. "The Redevelopment Commission designated it, and clearance followed" is strong, if you can source it.
+3. **Give a figure its owner.** Not "17,000 people were displaced" but "an Indianapolis Star article of October 15, 1976 put displacement from interstate construction across the city at 17,000."
+4. **Attribute an argument as an argument.** Wildstyle Paschall's New America essay calls what happened to Indiana Avenue ethnic cleansing (Paschall, 2020). **You may quote and engage that. You may not launder it into your own narration as though it were a finding.** The distinction between a documented chronology and an interpretive frame is the most important thing in this section.
+5. **Use the present tense for the present.** The Avenue is a working district with a live planning process, not a ruin. Write it that way.
+6. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+1. **No invented detail.** Not a date, a name, a quotation, a street number, or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the room smelled like.
+2. **No composite or imagined characters.** Real, cited people only. The Green Book table gives you real proprietors; the Walker Building gives you A'Lelia Walker and Freeman Ransom; the Temple family case gives you a documented condemnation. **That is more than enough material.**
+3. **No invented dialogue**, including "he might have said."
+4. **Living communities describe themselves.** Use the names and terms the people who live and work there use, and say where you got them. **Ransom Place is somebody's neighbourhood today.**
+5. **No ruin porn, and no lost golden age.** A district that ran a complete economy under segregation was not a paradise, and its removal was not a natural death. **Both of those framings flatter the writer and cheat the subject.**
+6. **Credit what was built.** Walker's building, Ransom's law practice, the Flanner House self-help houses, the musicians who came up in the jam sessions, the Indianapolis Recorder. **A piece that only inventories loss is an incomplete report.**
+7. **Private homes are private.** Do not publish a current resident's name with their address, do not photograph into windows, and do not knock uninvited.
+8. **Say what you did to a number.** If you adjusted for inflation, say so and say how.
+
+## What good looks like
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** The Temple family holding out for fourteen years, a triangular building finished eight years after its founder died, a restaurant appearing in a travel guide every single year from 1950 to 1967: **none of that needs decorating.**
+
+## Sources
+- Borland, A., & Linebarger, E. (2025). *Green Book sites in Indiana, 1936-1967* [National Register of Historic Places multiple property documentation form]. Gray & Pape, Inc., for the Indiana Department of Natural Resources, Division of Historic Preservation and Archaeology. https://www.in.gov/dnr/historic-preservation/files/hp-Green-Book-Sites-in-Indiana.pdf
+- Mirror Indy, & Open Campus. (2024, October 1). *Indy's lost Black neighborhood: How IUPUI displaced thousands*. https://mirrorindy.org/iupui-black-wall-street-indianapolis-displacement-indiana-avenue/
+- Paschall, W. (2020). *Indiana Avenue: The ethnic cleansing of Black Indianapolis*. New America. https://www.newamerica.org/indianapolis/blog/indiana-avenue-ethnic-cleansing-black-indianapolis/
+- WRTV Indianapolis. (n.d.). *"Under the highway": How interstates divided Indianapolis neighborhoods and displaced 17,000 people*. https://www.wrtv.com/news/local-news/indianapolis/under-the-highway-how-interstates-divided-indianapolis-neighborhoods-and-displaced-17-000-people`,
+      recallContent: [
+        {
+          prompt: "What is the difference between a topic and a subject in this assignment?",
+          answer: "'The Avenue' is a topic. '793 Indiana Avenue, listed as Perkins Restaurant every year from 1950 to 1967' is a subject. Smaller is better.",
+        },
+        {
+          prompt: "What are the four columns of the chronology you build before writing, and what does an empty column mean?",
+          answer: "Date, event, instrument, source. An empty instrument column means you have a story rather than a documented decision.",
+        },
+        {
+          prompt: "How must you handle an interpretive frame such as Paschall's 'ethnic cleansing'?",
+          answer: "Quote it and engage it as an argument with an author. Do not launder it into your own narration as though it were a documented finding.",
+        },
+        {
+          prompt: "Why does the assignment ban both ruin porn and the 'lost golden age' frame?",
+          answer: "Because a district that ran a complete economy under segregation was not a paradise, and its removal was not a natural death. Both framings flatter the writer and cheat the subject.",
+        },
+        {
+          prompt: "Which paragraph is required in every submission?",
+          answer: "At least one paragraph on what you could not establish.",
+        },
+      ],
+    },
+    {
+      slug: "ia-what-comes-next",
+      title: "21 · What this course set up, and what it left out",
+      section: "Section 6 · Write",
+      body: `You have now run the six-beat site template once, end to end, on a real place. **That template is the product of this course, more than the Indiana Avenue material is.**
+
+| Beat | What you did here | What you can now do anywhere |
+|---|---|---|
+| **1. Then** | Read a corridor out of a 1916 business count and a National Register documentation form | Establish what a place was, from institutional sources rather than memory |
+| **2. Built** | Read typology, then designation status and its dates | Tell what kind of building a building is, and what protects it |
+| **3. Powers** | Learned five instruments and traced each to a named body and date | Ask "who decided, under what statute, on what record" about any block |
+| **4. Now** | Built an observation brief before seeing the place | Look at a street with questions instead of impressions |
+| **5. Next** | Found the plan, the body, the parcel and the meeting | Participate in a live decision rather than commenting on a finished one |
+| **6. Write** | Wrote grounded nonfiction under an evidence standard | Publish something the next researcher can build on |
+
+**What you can do that you could not do before.**
+- Name the instrument behind a demolition rather than describing the demolition.
+- Test a historical thesis against a chronology, and report it when the thesis loses.
+- Distinguish a claim about a document from a claim about the world. **"The Green Book lists 30 Avenue businesses" is the first. "There were 30 Black businesses on the Avenue" is the second, and it is false.**
+- Find the four facts about any parcel in any American county.
+- Recognise that a plan not yet adopted is where a citizen has the most leverage.
+
+**What this course deliberately did not cover, and why.**
+- **Crispus Attucks High School** appears here as a neighbour and as the school the NAACP fought to prevent and then took pride in. **It gets its own course**, because a segregated school, a 1955 state championship, and what the building is today is more than a paragraph can carry.
+- **The Walker Building's interior and the Walker company's own business history** are named here only as far as they touch the corridor. Also a course of its own.
+- **The Indianapolis school desegregation case** appears only where it touches Unigov and Lockefield. **The school and suburb pair is the next pair of courses in this cluster**, because that is where the surviving half of the argument in lesson 13 actually closes.
+- **Any total for how many buildings the Avenue lost.** No such survey has been read into this course. **The three figures in circulation for city-wide displacement disagree because they count different things, and this course refuses to manufacture a corridor-level number from them.**
+- **The intent behind any specific designation.** The commission minutes have not been read. **Section 3 says so in the text**, which is a better outcome than an assertion.
+
+**The unopened sources, which are the next real work.** The Indianapolis Redevelopment Commission's minutes and project files. The Indiana University Board of Trustees minutes, 1962 to 1968. The state highway department's right-of-way maps for I-65. The Indianapolis Recorder across the whole period. **All public or requestable, and none of them read here.** If you want to make an original contribution to this story rather than restate it, that is the list.
+
+**One last thing about the place.** The people who built Indiana Avenue built a complete economy inside a country that would not serve them, and they did it well enough that a segregated city's white residents came to visit. Most of the buildings are gone. **The record of who built them is not**, and it is sitting in a documentation form, a census, a business survey, a travel guide, a parcel database and a newspaper, waiting for somebody to read it properly. **That is the whole method, and it is why this course exists.**
+
+## Sources
+- Borland, A., & Linebarger, E. (2025). *Green Book sites in Indiana, 1936-1967* [National Register of Historic Places multiple property documentation form]. Gray & Pape, Inc., for the Indiana Department of Natural Resources, Division of Historic Preservation and Archaeology. https://www.in.gov/dnr/historic-preservation/files/hp-Green-Book-Sites-in-Indiana.pdf
+- Encyclopedia of Indianapolis. (n.d.-a). *Indiana Avenue*. https://indyencyclopedia.org/indiana-avenue/
+- Encyclopedia of Indianapolis. (n.d.-h). *School desegregation*. https://indyencyclopedia.org/school-desegregation/
+- Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
+      recallContent: [
+        {
+          prompt: "What is the actual product of this course?",
+          answer: "The six-beat site template, run once end to end on a real place: Then, Built, Powers, Now, Next, Write. The Indiana Avenue material is the worked example.",
+        },
+        {
+          prompt: "Give the difference between a claim about a document and a claim about the world, using this course's example.",
+          answer: "'The Green Book lists about 30 Indiana Avenue businesses' is about the document and is supported by it. 'There were 30 Black businesses on the Avenue' is about the world and is false: a 1916 count found more than 180 in eight blocks.",
+        },
+        {
+          prompt: "Why does this course refuse to give a total for how many buildings the Avenue lost?",
+          answer: "Because no such survey has been read into it, and the circulating city-wide displacement figures count different things over different scopes. Manufacturing a corridor-level number from them would invent a statistic.",
+        },
+        {
+          prompt: "Name the four unopened sources that would advance this story.",
+          answer: "The Indianapolis Redevelopment Commission's minutes and project files, the IU Board of Trustees minutes 1962 to 1968, the state highway right-of-way maps for I-65, and the Indianapolis Recorder across the period.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
