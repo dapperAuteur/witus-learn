@@ -20,6 +20,15 @@
 //     of Education (effective 2021), but the CONSTITUTION still names the office.
 //   • The State Auditor was renamed State COMPTROLLER (effective July 1, 2023).
 //
+// Learner-feedback pass (2026-07-23): every bare `courts.in.gov` / `in.gov/sos` mention is
+// now a hyperlink; the superintendent change carries a SECOND, independently checkable
+// official citation (IDOE's own leadership page naming Indiana's "first Secretary of
+// Education", a cabinet appointee); and the 29-day registration deadline is no longer an
+// approximation. It is quoted from the Indiana Election Division's 2026 Voter Registration
+// Guidebook (p. 18, citing IC 3-7-13-10) and paired with "start months earlier" guidance.
+// NOTE for future edits: iga.in.gov is a client-rendered SPA that returns HTTP 200 for ANY
+// path, so a 200 there proves nothing. Verify IGA links by their rendered title, not status.
+//
 // The course is organized into sections (course modules) and ends with a practice
 // quiz + a final quiz whose every question links back to the lesson that teaches
 // the answer.
@@ -113,14 +122,14 @@ Compare that to the U.S. Congress, which needs a **two-thirds** vote to override
 
 This "merit selection + retention" system was adopted by constitutional amendment in **1970**. Its goal is to keep the highest courts insulated from ordinary campaign politics while still giving voters a periodic say.
 
-**Not every Indiana court works this way.** Many **trial-court** judges (in the counties) are chosen differently, often in local elections whose rules vary by county. So the "merit selection" rule you just learned applies to the **appellate** courts, not automatically to every judge on every bench. (When you want the rule for a *specific* court, the authoritative source is the Indiana Judicial Branch, [courts.in.gov](https://courts.in.gov).)
+**Not every Indiana court works this way.** Many **trial-court** judges (in the counties) are chosen differently, often in local elections whose rules vary by county. So the "merit selection" rule you just learned applies to the **appellate** courts, not automatically to every judge on every bench. (When you want the rule for a *specific* court, the authoritative source is the Indiana Judicial Branch, [courts.in.gov](https://www.in.gov/courts/).)
 
-**Why this matters civically:** on your ballot you may see appellate justices listed for a **yes/no retention vote**. That's not a throwaway line; it's your direct check on the judges who interpret Indiana law. Knowing what a retention vote *is* means you can cast it thoughtfully instead of skipping it.
+**Why this matters civically:** on your ballot you may see appellate justices listed for a **yes/no retention vote**. That's not a throwaway line; it's your direct check on the judges who interpret Indiana law. Knowing what a retention vote *is* means you can cast it thoughtfully instead of skipping it. Your county's trial-court judges are on that same ballot under whatever rule your county uses, and [courts.in.gov](https://www.in.gov/courts/) is where you look that rule up.
 
 :::reveal Describe Indiana's three-step way of selecting Supreme Court and Court of Appeals justices, and explain what a "retention vote" asks you to decide. ||| Merit selection: a nominating commission sends the governor a short list, the governor appoints, then justices face yes/no retention votes. A simple yes/no on whether to keep a sitting justice; there is no opponent, it is a performance check.
 
 ## Sources
-- State of Indiana, Judicial Branch. (n.d.). *About the Indiana Supreme Court / selection of justices*. Courts.in.gov. https://www.in.gov/courts/supreme/about/
+- State of Indiana, Judicial Branch. (n.d.). *About the Indiana Supreme Court / selection of justices*. [courts.in.gov](https://www.in.gov/courts/). https://www.in.gov/courts/supreme/about/
 - Indiana Historical Bureau. (n.d.). *Constitution of 1851, Article 7 - Judicial*. IN.gov. https://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/indiana-documents-leading-to-statehood/constitution-of-1851/`,
     },
 
@@ -209,22 +218,24 @@ The practical payoff is the same as everywhere: **who provides your service depe
           answer: "Townships, about 1,008 active ones, covering every acre of the state.",
         },
       ],
-      body: `Elections are run by each state, so Indiana's rules are specifically Indiana's, and several of them are notably **strict**. (Because rules like these change, the authoritative and current source is always the Indiana Secretary of State's elections division at [in.gov/sos](https://in.gov/sos).)
+      body: `Elections are run by each state, so Indiana's rules are specifically Indiana's, and several of them are notably **strict**. (Because rules like these change, the authoritative and current source is always the Indiana Secretary of State's elections division at [in.gov/sos](https://www.in.gov/sos/elections/).)
 
-**Strict photo voter ID, and the Supreme Court case that upheld it.** To vote in person in Indiana, you generally must show a government-issued **photo ID**. Indiana's law was one of the first strict photo-ID laws in the country, and it was challenged all the way to the U.S. Supreme Court. In **Crawford v. Marion County Election Board, 553 U.S. 181 (2008)**, the Court **upheld** Indiana's photo-ID requirement, making it a landmark decision that other states pointed to (Indiana Election Division, n.d.; Crawford v. Marion County Election Board, 2008).
+**Strict photo voter ID, and the Supreme Court case that upheld it.** To vote in person in Indiana, you generally must show a government-issued **photo ID**. Indiana's law was one of the first strict photo-ID laws in the country, and it was challenged all the way to the U.S. Supreme Court. In **Crawford v. Marion County Election Board, 553 U.S. 181 (2008)**, the Court **upheld** Indiana's photo-ID requirement, making it a landmark decision that other states pointed to (Indiana Election Division, n.d.; Crawford v. Marion County Election Board, 2008). The current list of acceptable IDs lives at [in.gov/sos](https://www.in.gov/sos/elections/voter-information/).
 
-**Mail (absentee) voting requires an excuse.** Indiana is **not** a no-excuse mail-voting state. To vote absentee **by mail**, you generally must qualify under one of the state's listed **excuses** (for example, being absent from the county on Election Day, a disability, being an elderly voter, or certain work/scheduling conflicts). If you don't meet an excuse, you vote in person (Indiana Election Division, n.d.).
+**Mail (absentee) voting requires an excuse.** Indiana is **not** a no-excuse mail-voting state. To vote absentee **by mail**, you generally must qualify under one of the state's listed **excuses** (for example, being absent from the county on Election Day, a disability, being an elderly voter, or certain work/scheduling conflicts). If you don't meet an excuse, you vote in person. The current excuse list is published at [in.gov/sos](https://www.in.gov/sos/elections/voter-information/) (Indiana Election Division, n.d.).
 
-**Registration closes about 29 days before the election.** Indiana does **not** offer same-day registration. You must be registered roughly **29 days before Election Day** to vote in it, so the deadline lands about four weeks out. Miss it, and you can't vote in that election (Indiana Election Division, n.d.).
+**Registration closes 29 days before the election.** Indiana does **not** offer same-day registration. The Indiana Election Division puts the rule plainly: "As a general rule, the voter registration period closes in Indiana twenty-nine (29) days before each primary, general, municipal, or special election" (Indiana Election Division, 2026, p. 18, citing IC 3-7-13-10). That is the statutory rule, not a rounding: for the 2026 elections the state lists the deadlines as **April 6, 2026** for the May primary and **October 5, 2026** for the November general election, each exactly 29 days out (Indiana Election Division, n.d.). A mailed registration must be **postmarked** on or before that day. Miss it, and you can't vote in that election. Check your own registration at [in.gov/sos](https://www.in.gov/sos/elections/voter-information/register-to-vote/).
 
 **No statewide citizen initiative.** Here's a big structural fact for ballot access: **Indiana has NO statewide citizen-initiated ballot measures.** In many Western states, ordinary citizens can gather signatures to put a law or constitutional amendment directly on the ballot. **In Indiana, they can't**: the 1851 constitution gives the power to propose amendments **only to the General Assembly** (Indiana Historical Bureau, n.d.). So in Indiana, "changing the law" means electing legislators and lobbying them, not launching a petition drive.
 
-⚠️ **Confirm the current details.** ID lists, excuse categories, and the exact registration deadline are set by state law and can be adjusted. Verify the current rules at **[in.gov/sos](https://in.gov/sos)** before relying on a specific one.
+⚠️ **Confirm the current details.** ID lists, excuse categories, and the exact registration deadline are set by state law and can be adjusted. Verify the current rules at **[in.gov/sos](https://www.in.gov/sos/elections/)** before relying on a specific one.
 
 :::reveal Name Indiana's ID requirement to vote in person and the case that upheld it; explain what "absentee by mail requires an excuse" means; and state whether an Indiana citizen can put a new law on the ballot by petition. ||| A government-issued photo ID, upheld in Crawford v. Marion County Election Board (2008). No. Indiana has no statewide citizen initiative; only the General Assembly can propose amendments.
 
 ## Sources
-- Indiana Election Division / Secretary of State. (n.d.). *Voter information - ID, absentee, registration*. IN.gov. https://www.in.gov/sos/elections/
+- Indiana Election Division / Secretary of State. (n.d.). *Voter information - ID, absentee, registration*. [in.gov/sos](https://www.in.gov/sos/). https://www.in.gov/sos/elections/
+- Indiana Election Division / Secretary of State. (n.d.). *Voter registration*. [in.gov/sos](https://www.in.gov/sos/). https://www.in.gov/sos/elections/voter-information/register-to-vote/
+- Indiana Election Division. (2026). *2026 Indiana voter registration guidebook* (p. 18). [in.gov/sos](https://www.in.gov/sos/). https://www.in.gov/sos/elections/files/2026-Voter-Registration-Guidebook.FINAL.pdf
 - Indiana Historical Bureau. (n.d.). *Constitution of 1851, Article 16 - Amendments*. IN.gov. https://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/indiana-documents-leading-to-statehood/constitution-of-1851/article-16-amendments/
 - Crawford v. Marion County Election Board, 553 U.S. 181 (2008). https://www.supremecourt.gov/`,
     },
@@ -244,9 +255,11 @@ The practical payoff is the same as everywhere: **who provides your service depe
       ],
       body: `This lesson exists because of the course's core honesty rule: **state facts change**, and two Indiana executive offices changed recently enough that older sources, and even the constitution's own text, can mislead you. Both are flagged here so you check the current name rather than trusting a stale one.
 
-**1) Superintendent of Public Instruction → appointed Secretary of Education (effective 2021).** For most of Indiana's history, the state's top K-12 education official, the **Superintendent of Public Instruction**, was **elected** statewide. Indiana changed this: the legislature passed **[House Enrolled Act 1005 (2019)](https://iga.in.gov/legislative/2019/bills/house/1005/details)**, making the position an **appointed Secretary of Education** chosen by the Governor, **effective in 2021** (Indiana General Assembly, 2019; Ballotpedia, n.d.-a).
+**1) Superintendent of Public Instruction → appointed Secretary of Education (effective 2021).** For most of Indiana's history, the state's top K-12 education official, the **Superintendent of Public Instruction**, was **elected** statewide. Indiana changed this: the legislature passed **[House Bill 1005 (2019)](https://iga.in.gov/legislative/2019/bills/house/1005)**, titled "State superintendent of public instruction," which moved up the date the elected office is abolished and provided for a **Secretary of Education appointed by the Governor** beginning **January 11, 2021** (Indiana General Assembly, 2019; Ballotpedia, n.d.-a).
 
-⚠️ **The subtle part to flag:** the *constitution* still names the office of **"Superintendent of Public Instruction."** So the working, appointed job is the **Secretary of Education**, while the older constitutional title lingers in the document. If you read the constitution and then read a news story, you may see **two different names for what is now one appointed office.** Don't assume the elected superintendent still exists; confirm the current structure at [in.gov](https://in.gov).
+**How you can check that for yourself.** The state's own education department is the tiebreaker, and it settles the question: the Indiana Department of Education's leadership page describes Dr. Katie Jenner as "Indiana's first Secretary of Education" and "one of eight secretaries in Governor Mike Braun's cabinet" ([in.gov/doe](https://www.in.gov/doe/about/secretary-jenner/); Indiana Department of Education, n.d.). A cabinet secretary is appointed, not elected. If Indiana still had an elected superintendent, there would be no "first Secretary of Education" to name.
+
+⚠️ **The subtle part to flag:** the *constitution* still names the office of **"Superintendent of Public Instruction."** So the working, appointed job is the **Secretary of Education**, while the older constitutional title lingers in the document. If you read the constitution and then read a news story, you may see **two different names for what is now one appointed office.** Don't assume the elected superintendent still exists; confirm the current structure at [in.gov/doe](https://www.in.gov/doe/).
 
 **2) State Auditor → State Comptroller (effective July 1, 2023).** The statewide elected officer long called the **State Auditor**, the state's chief financial/accounting officer, was **renamed the State Comptroller**, effective **July 1, 2023** (WFYI Public Media, 2023). It's the **same office and the same elected position**; only the name changed, to better match what the office actually does. Sources written before mid-2023 will call it "Auditor"; sources after call it "Comptroller."
 
@@ -255,7 +268,8 @@ The practical payoff is the same as everywhere: **who provides your service depe
 :::reveal What changed about Indiana's top K-12 education office in 2021, why can the constitution's text still confuse you about it, and what was the State Auditor renamed to (and when)? ||| The elected Superintendent of Public Instruction became an appointed Secretary of Education, though the constitution still names the old title. State Comptroller, effective July 1, 2023; it is the same elected office, only the name changed.
 
 ## Sources
-- Indiana General Assembly. (2019). *House Enrolled Act 1005 (2019)*. IGA.in.gov. https://iga.in.gov/legislative/2019/bills/house/1005/details
+- Indiana General Assembly. (2019). *House Bill 1005 (2019): State superintendent of public instruction*. IGA.in.gov. https://iga.in.gov/legislative/2019/bills/house/1005
+- Indiana Department of Education. (n.d.). *Secretary Jenner*. [in.gov/doe](https://www.in.gov/doe/). https://www.in.gov/doe/about/secretary-jenner/
 - Ballotpedia. (n.d.-a). *Indiana Secretary of Education*. https://ballotpedia.org/Indiana_Secretary_of_Education
 - WFYI Public Media. (2023, May 8). *Indiana state auditor changing title to state comptroller*. https://www.wfyi.org/public-affairs/2023-05-08/indiana-state-auditor-changing-title-to-state-comptroller
 - State of Indiana. (n.d.). *State of Indiana - agencies and officials*. IN.gov. https://www.in.gov/`,
@@ -278,17 +292,25 @@ The practical payoff is the same as everywhere: **who provides your service depe
       ],
       body: `Knowing how Indiana works only pays off when you **show up**. Because Indiana concentrates power in its legislature and its local boards, that's exactly where an engaged Hoosier has leverage. Here are concrete ways to get involved:
 
-1. **Register and vote, and don't wait until the last minute.** Register (and check your registration) **at least ~29 days before** any election you want to vote in, since Indiana has no same-day registration. Better still, start **months ahead** so you have time to gather the proper forms and documents (proof of residence, an accepted photo ID) and to fix any problem with your registration before the deadline closes. Bring your **photo ID** to the polls. If you need to vote by mail, confirm you qualify under an **excuse** first. Start at the Secretary of State's elections site (Indiana Election Division, n.d.).
+1. **Register and vote, and don't wait until the last minute.** Indiana's registration period closes **29 days before** each primary, general, municipal, or special election, and the state has no same-day registration (Indiana Election Division, 2026, p. 18, citing IC 3-7-13-10). Treat those 29 days as the *last* day, not the plan: start **months ahead**. Registering online needs an Indiana driver's license or state ID number; on the paper form you can instead give the last four digits of your Social Security number, and some voters registering by paper have to supply residence documentation as well (Indiana Election Division, 2026). Getting a replacement ID, digging up a utility bill, or fixing a registration the county rejected all take weeks, and none of that is possible once the deadline closes. Register or check your status at [in.gov/sos](https://www.in.gov/sos/elections/voter-information/register-to-vote/). Bring your **photo ID** to the polls, and if you want to vote by mail, confirm you qualify under an **excuse** first at [in.gov/sos](https://www.in.gov/sos/elections/voter-information/).
 2. **Contact your state legislators: they're the center of gravity.** You have **one state representative** and **one state senator** in the General Assembly, on top of your members of Congress. Because Indiana's legislature can override the governor and there's **no citizen initiative**, lobbying your legislators is *the* way to change state law here. Look them up and track bills at **[iga.in.gov](https://iga.in.gov)**, where you can also find committee schedules and read bills (Indiana General Assembly, n.d.).
 3. **Testify or submit comment on a bill.** Indiana's committee hearings are where most bills live or die. Watch a committee's calendar on [iga.in.gov](https://iga.in.gov), and submit written comment or testify on a bill you care about; comment carries the most weight *before* the committee vote.
 4. **Show up locally: county, township, city.** Your **County Council** and **Board of Commissioners** meetings, your **Township** meetings, and your **city/town council** meetings are public and set your local taxes and services. These smaller rooms are where one person's comment moves things most, and remember Indiana's extra township layer means there may be one more local board than you'd expect.
 5. **Cast your retention votes thoughtfully.** When appellate justices appear on your ballot for a **yes/no retention vote** (Lesson 3), that's a real decision; read up before you fill it in rather than leaving it blank.
 
-:::reveal Name three specific ways to get involved in Indiana government, and explain why contacting your state legislators is especially important in Indiana given its weak governor and lack of a citizen initiative. ||| Three ways: track bills and submit comment or testify before committee votes (iga.in.gov), show up at your County Council, township, and city/town council meetings, and cast your judicial retention votes thoughtfully. Contacting legislators is especially important because Indiana has a relatively weak governor and no citizen initiative, so the Legislature is where state law is actually made or changed.
+**The three that move the most, in order.** If you only do three things, do these:
+
+1. **Register early and vote every time**, including the primary and the municipal elections nobody talks about. The deadline is 29 days before Election Day; start months earlier.
+2. **Track a bill and speak on it before the committee vote** at [iga.in.gov](https://iga.in.gov). Committee is where most bills die, so that is where your comment counts.
+3. **Show up at one local meeting a month**: County Council, Board of Commissioners, township, or city/town council. These rooms are small, and your local taxes and services are decided in them.
+
+:::reveal Name three specific ways to get involved in Indiana government, and explain why contacting your state legislators is especially important in Indiana given its weak governor and lack of a citizen initiative. ||| (1) Register early and vote in every election, including primaries and municipal elections. (2) Track a bill at iga.in.gov and submit comment or testify before the committee votes. (3) Show up at your County Council, Board of Commissioners, township, and city or town council meetings. Contacting legislators is especially important because Indiana has a relatively weak governor and no citizen initiative, so the Legislature is where state law is actually made or changed.
 
 ## Sources
 - Indiana General Assembly. (n.d.). *Find your legislators / track legislation*. IGA.in.gov. https://iga.in.gov/
-- Indiana Election Division / Secretary of State. (n.d.). *Voter information*. IN.gov. https://www.in.gov/sos/elections/`,
+- Indiana Election Division / Secretary of State. (n.d.). *Voter information*. [in.gov/sos](https://www.in.gov/sos/). https://www.in.gov/sos/elections/
+- Indiana Election Division / Secretary of State. (n.d.). *Voter registration*. [in.gov/sos](https://www.in.gov/sos/). https://www.in.gov/sos/elections/voter-information/register-to-vote/
+- Indiana Election Division. (2026). *2026 Indiana voter registration guidebook* (p. 18). [in.gov/sos](https://www.in.gov/sos/). https://www.in.gov/sos/elections/files/2026-Voter-Registration-Guidebook.FINAL.pdf`,
     },
 
     // ── Section 7: Practice ──────────────────────────────────────────────
