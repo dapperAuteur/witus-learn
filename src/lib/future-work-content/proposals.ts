@@ -763,6 +763,83 @@ Drive times are approximate and worth checking against your own routing.
 
 ---
 
+---
+
+## 3b. Owner request, 2026-07-23: five more cities
+
+Washington DC, Seattle, Baltimore, Philadelphia, Pittsburgh. All are outside day-trip range from
+Indianapolis (Pittsburgh is closest, roughly five and a half hours; Seattle is a flight), so these
+are trips taken for a reason rather than for proximity. **They earn it.** Each supplies a different
+stage in the life of the same instruments the Indianapolis cluster teaches, which makes them a
+sequence rather than five more cities.
+
+**As always these are leads to verify, not findings.** The Indianapolis spine partly failed under
+research and it was the city we knew best.
+
+### Washington, DC, where the instrument was blessed
+- **Spine candidate: *Berman v. Parker* (1954).** The Supreme Court case that upheld clearing land as
+  "blighted" arose from **Southwest DC**, and it is the decision that made the blight-designation
+  instrument constitutionally safe nationwide. **Indianapolis used that tool on Indiana Avenue.
+  Washington is where it was authorised.** A learner who has taken course 1 can read the opinion that
+  licensed what happened to the Avenue. That is the single strongest cross-city link available.
+- Southwest DC was among the most complete clearances in the country, so the \`ABSENCE\` is total.
+- **A rare victory:** DC's freeway revolt stopped most of its planned freeways, under the banner
+  "white men's roads through black men's homes". Pairs with Chicano Park as the other win.
+- **A civics anchor no other city has:** a jurisdiction without voting representation in Congress,
+  with Congress retaining a veto over local law. The Home Rule Act is the document.
+- U Street and Shaw, plus Ben's Chili Bowl, already appear in \`plans/38\`.
+
+### Pittsburgh, PA (~5.5h, the closest of the five), where the model was made
+- **Spine candidate: the Lower Hill District clearance** for the Civic Arena, one of the most-cited
+  urban renewal displacements in the country, and the Hill District of August Wilson's cycle.
+- **Why it matters beyond itself:** the postwar "Pittsburgh Renaissance" was the template other
+  cities copied. Indianapolis did not invent its playbook. **Pittsburgh is where the playbook came
+  from**, so this course explains the origin of course 1's instruments.
+- **Rare double absence:** the arena that replaced the neighbourhood was itself demolished around
+  2011-12. You can stand on ground that has now been cleared twice.
+
+### Philadelphia, PA, the university parallel
+- **Spine candidate: the Black Bottom clearance in West Philadelphia** for university expansion.
+  This is Indiana Avenue's closest twin anywhere: **a university assembling land through a
+  redevelopment authority**, which is exactly the instrument course 1 found actually did the work
+  (rather than the highway, which the record did not support).
+- **The MOVE bombing, 1985.** A city dropped an explosive on a residential block and 61 homes burned.
+  There is an official commission report, so it is documentable rather than merely remembered. Handle
+  with Theme I care: survivors and neighbours are living.
+- Society Hill as the contrast case: renewal that preserved rather than cleared, and who got which.
+- Girard College, and what desegregating an institution by protest looks like.
+
+### Baltimore, MD, the whole instrument chain in one city
+- **Spine candidate: the 1910 racial zoning ordinance**, widely described as the first in the United
+  States (already listed in \`plans/40\`). Baltimore then supplies **every later link in the chain**:
+  racial zoning, then restrictive covenants, then redlining (it is the canonical HOLC map city), then
+  the **"Highway to Nowhere"**, a highway driven partway through Rosemont and Franklin-Mulberry and
+  then abandoned.
+- Verdict: **the best single city for teaching that these were successive tools for one purpose**,
+  because you do not have to leave town to show the sequence. The unfinished highway is an unusually
+  legible \`ABSENCE\`.
+
+### Seattle, WA, the modern bookend
+- **Spine candidate: *Parents Involved in Community Schools v. Seattle School District No. 1* (2007)**,
+  which limited voluntary race-conscious school assignment. **This is the bookend to course 2**: the
+  Indianapolis cluster teaches Milliken (1974) stopping a remedy at the district line; Seattle shows
+  what happened when a district tried to integrate **voluntarily** decades later. Two opinions, one
+  argument, thirty-three years apart.
+- Plus the **restrictive covenants** research (extensively catalogued by the University of Washington),
+  the Central District, and I-5 through the Central District and the Chinatown-International District.
+- **Bainbridge Island** was the site of the first forced removal of Japanese Americans in 1942, with a
+  memorial. Theme I, and it makes Seattle the one city here carrying that thread.
+
+### Suggested order for these five
+1. **Pittsburgh**, closest, and it explains where the playbook came from.
+2. **Washington DC**, *Berman v. Parker* is the highest-value single document in this whole list.
+3. **Baltimore**, pairs naturally with DC on one trip, and carries the full instrument chain.
+4. **Philadelphia**, the university parallel closes the loop with course 1.
+5. **Seattle**, the flight, taken for *Parents Involved* and the covenants archive.
+
+DC, Baltimore and Philadelphia are close enough to each other to be **one trip**, which is the
+practical argument for doing them as a block.
+
 ## 4. Recommended order
 
 1. **Louisville**, closest, and the only city with a consolidation sibling *and* a landmark case *and* a standable divide.
