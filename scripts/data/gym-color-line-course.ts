@@ -1337,6 +1337,174 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Now  (beat 4: observation and evidence)
+    //
+    // Same handling as course 1's `ia-now-tour`. The 360 tour of the gyms and fields exists as a
+    // capture plan, but its Wanderlearn embed URL does not exist yet, and a tour URL is
+    // authoritative external data that must never be guessed
+    // (plans/future/04-wanderlearn-360-boundary.md). So this lesson ships as `virtual_tour` with
+    // NO contentUrl: the player renders the "no media yet" notice above the body, and the body is
+    // the observation brief the learner uses when the tour lands. Drop the URL in and re-seed.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gcl-now-tour",
+      title: "15 · Now: stand in the room (360 tour, forthcoming)",
+      section: "Section 4 · Now",
+      lessonType: "virtual_tour",
+      body: `**The 360 tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is telling you the truth rather than reporting a fault. The site template this series uses treats beat 4 as a drop-in: a course is complete and teachable without it, and the tour is added later without restructuring anything.
+
+**Read this lesson now anyway, because it is your observation brief.** Beat 4 asks one question, "what is actually there today," and the difference between a visitor looking at a gym and a researcher looking at a gym is entirely a matter of knowing what to look for before you arrive.
+
+## What to look for, in order
+
+**1. Count the seats, then ask what year the count is from.** Lesson 5 taught you that a capacity is a measurement and measurements get redone: a 2019 recount reordered the three largest high school gyms in Indiana, and a 2020 renovation reordered them again. **When you write down a capacity, write down the year and the source in the same breath.** New Castle is reported at 8,424 today and at 9,325 in 1959-60, and both can be right.
+
+**2. Look up at the structure, because that is where the money went.** A gym is a clear span: a floor with no columns in it. **Find how the roof is held up.** Trusses, arches, a barrel vault, a modern steel frame. **The span is the expensive decision**, and everything else in the room is seating wrapped around it.
+
+**3. Read the banners and the record boards as documents.** A championship banner has a year on it, and a wall of them is a chronology somebody chose to display. **Note which years are up, which sports are up, and which are not.** Then ask: who decided what goes on this wall, and when was it last updated? **A banner is a record with an author.**
+
+**4. Read the lobby.** Trophy cases, portraits, dedication plaques, donor walls, named rooms. **Every plaque has a sponsor and a date.** Note both, every time. A plaque tells you what an institution agreed to say in public in a particular year, which is not the same as what happened.
+
+**5. Look at the site, not just the room.** Where does the parcel end? Is there a football field, a track, tennis courts, a parking lot? **How far is the nearest street, and what is on the other side of it?** Lesson 6 turned on 8.4 acres and a waiver. **Land is the variable this course cares about most**, and a 360 tour is one of the few ways to feel a parcel's size without a survey.
+
+**6. Look for what is being built right now.** Construction fence, a site sign, a rendering on a board, a crane. Crispus Attucks has a 44 million dollar expansion under way with a new IHSAA-standard gym seating roughly 2,400, expected in 2028. **A construction sign carries a contractor, an architect, an owner and often a permit number**, and Section 5 teaches you what to do with those.
+
+**7. Look at the people, and be careful.** These are working schools with students, teachers, coaches and families in them. **Describe people as they would describe themselves, or do not describe them.** Attucks alumni are living people with their own accounts of these rooms, and their accounts outrank yours.
+
+## What the tour cannot show you, and the first one is the whole course
+
+**1. It cannot show you the district line.** **The single most important object in this course is invisible in every frame of every tour.** You cannot photograph a school district boundary. It has no physical existence: no fence, no sign, no change in the pavement. **It exists only as a description in a record**, and it decides which of these buildings a given child may enter. **That is why beats 5 and 6 exist**, and it is the sharpest possible argument for reading records instead of only looking.
+
+**2. It cannot show you a date.** Every addition, every renovation, every closed wing happened at a time, and the tour has no clock.
+
+**3. It cannot show you who paid.** A gym built on a 2015 bond, a gym built on a 1938 federal works programme and a gym built on a 2026 hospital donation look identical from the floor.
+
+**4. It cannot show you who is not there.** You cannot photograph the students assigned to a different building. **Everything the tour does not contain is a question for Section 5, not an answer.**
+
+**Write down your five most confident observations before the tour arrives, using this brief and the map that follows. Then check them against the record.** Being wrong on paper about a room you have not entered is a better teacher than being right about one you have.
+
+## Sources
+- Chalkbeat Indiana. (2026a, May 6). *Crispus Attucks High School is getting a $44 million upgrade. Here's what's in store.* https://www.chalkbeat.org/indiana/2026/05/06/crispus-attucks-high-school-gets-new-health-lab-and-gym/
+- Indiana Department of Natural Resources, Division of Historic Preservation and Archaeology. (2024, May). *Preservation at the crossroads* [Newsletter]. https://www.in.gov/dnr/historic-preservation/files/hp_Legeman-Article-Layout.pdf
+- Visit Indiana. (n.d.). *High school gyms: Basketball, best of Indiana*. https://visitindiana.in.gov/blog/post/high-school-gyms-basketball-best-of-indiana/`,
+      recallContent: [
+        {
+          prompt: "Why is this lesson published before its 360 tour exists?",
+          answer: "Because the site template treats beat 4 as a drop-in: a course is complete and teachable with the other five beats, and the tour is added later without restructuring anything. The body is the observation brief in the meantime.",
+        },
+        {
+          prompt: "What two things must you record alongside any gym capacity, and why?",
+          answer: "The year and the source. A 2019 recount reordered Indiana's three largest high school gyms and a 2020 renovation reordered them again, and New Castle is reported at 8,424 today and 9,325 in 1959-60.",
+        },
+        {
+          prompt: "What is the single most important object in this course, and why can no tour show it?",
+          answer: "The school district boundary. It has no physical existence: no fence, no sign, no change in the pavement. It exists only as a description in a record, and it decides which building a child may enter.",
+        },
+        {
+          prompt: "Name three things besides the district line that a 360 tour cannot show you.",
+          answer: "A date, who paid for the building, and who is not there. Gyms funded in 1938, 2015 and 2026 look identical from the floor, and you cannot photograph the students assigned elsewhere.",
+        },
+        {
+          prompt: "How should you treat a banner, a plaque or a trophy case in the tour?",
+          answer: "As a document with an author, a sponsor and a date. Note who decided what goes on the wall and when it was last updated. It records what an institution agreed to say in public in a particular year.",
+        },
+      ],
+    },
+    {
+      slug: "gcl-map",
+      title: "16 · Map: schools, district lines, and where the line has been fought over",
+      section: "Section 4 · Now",
+      body: `**Read this before you touch the map, because the map's limits are the lesson.**
+
+**This platform's lesson map draws the whole world on a single fixed projection.** A marker is a fixed-size dot, so two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **Marion County is about 25 kilometres across.** Its eleven school districts, and every school in them, collapse into a single dot. **This map physically cannot plot Crispus Attucks against the IPS boundary**, and pretending otherwise would be a worse lesson than saying so.
+
+**Which is itself the point of this course.** A district line is not a thing you can see at any scale without the right instrument. **You need a boundary file.** Here are the three tools that actually work, and Section 5 puts you into them:
+
+- **The NCES School and District Navigator** (https://nces.ed.gov/ccd/schoolmap/), the federal map of public schools and school district boundaries.
+- **NCES EDGE school district boundary files** (https://nces.ed.gov/programs/edge/Geographic/DistrictBoundaries), the composite geographic datasets behind it, published for school years from 1989-90 through 2024-25. **You can watch a boundary change across decades in these files**, which is as close to time-lapse civics as this subject gets.
+- **MapIndy** (https://maps.indy.gov/MapIndy/), the official geographic information system for the Consolidated City of Indianapolis and Marion County, where a parcel, a township, a council district and a school district can be turned on as separate layers over the same ground.
+
+**So this map does the job it can do well.** It plots the places where **the district line itself** has been the thing in dispute. Every marker is a real case with a citation, and together they are the national argument this course is a local instance of.
+
+**Blue: Indianapolis**, the subject.
+
+**Red: Detroit**, the rule. *Milliken v. Bradley* is the decision that made every other marker on this map harder.
+
+**Amber: four places where somebody tried to move a district line, and the outcomes differ.** Two remedies that crossed lines and survived, one state-constitutional route around Milliken entirely, and two secession fights, one blocked and one completed. **Read them as a set.** The instrument is the same everywhere. The results are not, and the difference is always a record.
+
+**Coordinates on this map are approximate city points, not surveyed locations.** Do not use them to find an address. Use them to see the shape of the argument, and use the boundary files when you need a line.
+
+**Two cases are named here but not marked, because at this scale they would sit on top of their neighbours.** **Louisville and Jefferson County, Kentucky**, where the city and county systems merged in 1975 under state board action and a federal court order, is four degrees from Indianapolis and would collide with it. **Richmond, Virginia**, where a district judge ordered Richmond consolidated with Henrico and Chesterfield counties in January 1972, the Fourth Circuit reversed in June 1972, and an equally divided Supreme Court left that reversal standing in 1973, would collide with Wilmington. **A map that hides two of its best examples is telling you to go get a better map.**
+
+## Sources
+- Bradley v. School Board of the City of Richmond, 462 F.2d 1058 (4th Cir. 1972). https://law.justia.com/cases/federal/appellate-courts/F2/462/1058/280802/
+- City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
+- Evans v. Buchanan, 447 F. Supp. 982 (D. Del. 1978). https://law.justia.com/cases/federal/district-courts/FSupp/447/982/1620310/
+- Milliken v. Bradley, 418 U.S. 717 (1974). https://caselaw.findlaw.com/court/us-supreme-court/418/717.html
+- National Center for Education Statistics. (n.d.-a). *School and district navigator*. https://nces.ed.gov/ccd/schoolmap/
+- National Center for Education Statistics. (n.d.-b). *EDGE: School district boundaries*. https://nces.ed.gov/programs/edge/Geographic/DistrictBoundaries
+- Sheff v. O'Neill, 238 Conn. 1 (1996). https://law.justia.com/cases/connecticut/supreme-court/1996/15255.html
+- Stout v. Jefferson County Board of Education, 882 F.3d 988 (11th Cir. 2018). https://law.justia.com/cases/federal/appellate-courts/ca11/17-12338/17-12338-2018-02-13.html`,
+      mapContent: {
+        markers: [
+          {
+            id: "gcl-indianapolis",
+            lat: 39.7684,
+            lng: -86.1581,
+            title: "Indianapolis and Marion County, Indiana",
+            color: "#1d4ed8",
+            description:
+              "The subject of this course. Indiana's historic rule made a city's boundary and its school district's boundary the same shape, recognised by statute in 1931. A 1961 act, applying to Marion County only, made school annexation merely prima facie and subject to remonstrance. The 1969 Unigov statute then expanded the city to nearly the whole county while expressly leaving the school district where it was. Eleven school corporations remain inside one consolidated city: Indianapolis Public Schools, eight township corporations, Beech Grove and Speedway. A federal court found in 1975 and again in 1978 that this arrangement inhibited desegregation, and inter-district busing ran from 1981 to 2016.",
+          },
+          {
+            id: "gcl-detroit",
+            lat: 42.3314,
+            lng: -83.0458,
+            title: "Detroit, Michigan: Milliken v. Bradley (1974)",
+            color: "#b91c1c",
+            description:
+              "The rule that governs every other marker here. A district court ordered a metropolitan desegregation plan covering Detroit plus 53 of the 85 outlying suburban districts. On 25 July 1974 the Supreme Court held, 5 to 4, that before the boundaries of separate and autonomous school districts may be set aside, it must first be shown that a violation in one district produced a significant segregative effect in another. Detroit's 1970 enrolment was about 63.6 percent Black and 34.8 percent white out of roughly 289,763 students. Milliken is why an inter-district remedy is rare, and its own exception for lines deliberately drawn on the basis of race is the door Indianapolis went through.",
+          },
+          {
+            id: "gcl-wilmington",
+            lat: 39.7459,
+            lng: -75.5466,
+            title: "Wilmington and New Castle County, Delaware: Evans v. Buchanan",
+            color: "#b45309",
+            description:
+              "A remedy that crossed district lines and survived Milliken. Litigation that began in 1957 over Delaware's dual system reached a three-judge court which found the state had not dismantled de jure segregation, ordered inter-district plans covering Wilmington and its suburban districts, and was affirmed on appeal in 1978. Alongside Indianapolis and Jefferson County, Kentucky, it is one of the small number of metropolitan remedies that were actually carried out after 1974.",
+          },
+          {
+            id: "gcl-hartford",
+            lat: 41.7658,
+            lng: -72.6734,
+            title: "Hartford, Connecticut: Sheff v. O'Neill (1996)",
+            color: "#b45309",
+            description:
+              "The route around Milliken. Milliken is a federal constitutional decision, so it does not control what a STATE constitution requires. On 9 July 1996 the Connecticut Supreme Court held 4 to 3 that the state had an affirmative constitutional obligation to provide substantially equal educational opportunity, that Hartford's schools were racially and ethnically isolated, and that districting based on town and city boundary lines was unconstitutional. If a federal court will not cross a district line, ask what your state's own constitution says about it. That question has fifty different answers.",
+          },
+          {
+            id: "gcl-gardendale",
+            lat: 33.66,
+            lng: -86.81,
+            title: "Gardendale, Alabama: Stout v. Jefferson County (2018)",
+            color: "#b45309",
+            description:
+              "A district line somebody tried to draw in living memory, and a court stopped. Residents of the mostly white city of Gardendale moved from 2012 to form a separate municipal school system, splitting off from a Jefferson County district still under a desegregation order. In 2018 the Eleventh Circuit held the district court had not clearly erred in finding the board moved to secede for a racially discriminatory purpose, or in finding the secession would impede the county board's desegregation, and it reversed the partial secession the district court had allowed, ordering the motion denied. Reading this beside Unigov shows how much turns on whether a desegregation order is already in force.",
+          },
+          {
+            id: "gcl-memphis",
+            lat: 35.1495,
+            lng: -90.049,
+            title: "Memphis and Shelby County, Tennessee: merger, then six new districts",
+            color: "#b45309",
+            description:
+              "A district line erased and then redrawn inside four years. Memphis City Schools and Shelby County Schools merged on 1 July 2013. Six suburban municipalities then formed their own districts, opening in August 2014 in Arlington, Bartlett, Collierville, Germantown, Lakeland and Millington. The first enabling statute was struck down by a federal judge because it applied only to Shelby County, which is the same one-county carve-out technique Indiana used in its 1961 act. Tennessee's constitution treats such local legislation differently than Indiana's did. When a statute names one county, ask what your state constitution says about that.",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
