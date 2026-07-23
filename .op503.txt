@@ -1,0 +1,909 @@
+
+Legal Research AI. Understand the law
+Sign In
+Understand the law with legal research AI
+United States of America, Donny Brurell Buckley, Intervening v. Board of School Commissioners of the City of Indianapolis, Indiana
+Court
+: 
+Court of Appeals for the Seventh Circuit
+Date filed
+: 
+1974-10-03
+Citations
+: 
+503 F.2d 68
+Copy Citations
+32 Citing Cases
+Download DOCX
+Summarize
+Check Treatment
+Draft a Document
+Combined Opinion
+503 F.2d 68
+UNITED STATES of America, Plaintiff-Appellee, Donny Brurell
+Buckley et al., Intervening Plaintiffs-Appellees,
+v.
+BOARD OF SCHOOL COMMISSIONERS OF the CITY OF INDIANAPOLIS,
+INDIANA, et al., Defendants-Appellants.
+Nos. 73-1968 through 73-1984.
+United States Court of Appeals, Seventh Circuit.
+Argued Feb. 20, 1974.
+Decided Aug. 21, 1974, Rehearing Denied Oct. 3, 1974.
+William C. Graves and Brian K. Landsberg, Attys.  U.S. Dept. of Justice, Washington, D.C., Stanley B. Miller, U.S. Atty., Donald P. Bogard, Deputy Atty. Gen., Donald A. Schabel, Fred S. White, Richard D. Wagner, William M. Evans, William F. Harvey, Indianapolis, Ind., for appellant.
+John O. Moss, John Preston Ward, Indianapolis, Ind., for appellee.
+Craig Eldon Pinkus, R. Davy Eaglesfield, III, Indianapolis, Ind., for amicus curiae.
+Before SWYGERT, Chief Judge, KILEY, Senior Circuit Judge, and SPRECHER, Circuit Judge.
+SPRECHER, Circuit Judge.
+1
+This is a school desegregation case originally brought by the United States against the Board of School Commissioners of Indianapolis, Indiana, but later expanded to include as defendants school districts located in the surrounding metropolitan area.  These 17 separate appeals raise a host of divergent issues.
+2
+* THE BACKGROUND
+3
+The United States initiated this action on May 31, 1968, pursuant to section 407(a) and (b) of Title IV, of the Civil Rights Act of 1964 (42 U.S.C. 2000c-6(a) and (b)).  The complaint charged the Board of School Commissioners for the City of Indianapolis with racial discrimination in the assignment of faculty and students.
+4
+The faculty portion of the charge was resolved first.  On August 5, 1968, the district court concluded (pursuant to stipulation by the parties that racial factors had been considered in the assignment of teachers and staff members) that racial composition of faculty and staff deprived students of equal protection in violation of the Fourteenth Amendment.  The court entered a consent decree ordering remedial injunctive relief commencing with the school year of 1968-69.  Faculty and staff desegregation is one 'important aspect of the basic task of achieving a public school system wholly free from racial discrimination.'  United States v. Montgomery County Board of Education, 
+395 U.S. 225
+, 232, 
+89 S.Ct. 1670
+, 1674, 
+23 L.Ed.2d 263
+ (1969).
+5
+Public school teachers in Indianapolis then brought a class action in an Indiana state court and obtained a temporary restraining order to prevent transfers of teachers and staff without the consent of the teachers involved.  Defendant school board and its members removed the case to the federal district court, which promptly dissolved the restraining order.  Burns v. Board of School Commissioners, 
+302 F.Supp. 309
+ (S.D.Ind.1969), aff'd, 
+437 F.2d 1143
+ (7th Cir. 1971).
+6
+The student portion of the 1968 case was tried before the court on July 12-21, 1971.  In accordance with Brown v. Board of Education (Brown I), 
+347 U.S. 483
+, 
+74 S.Ct. 686
+, 
+98 L.Ed. 873
+ (1954), the court found that the Indianapolis school board was deliberately operating a de jure dual school system on May 17, 1954 (the date of Brown I), and had not changed its policies in order to eliminate de jure segregation on or before May 31, 1968 (the date of the government's complaint). Pursuant to Brown v. Board of Education (Brown II), 
+349 U.S. 294
+, 
+75 S.Ct. 753
+, 
+99 L.Ed. 1083
+ (1955), the court on August 18, 1971 ordered interim relief, retained jurisdiction to order further relief and directed the school board to file plans of affirmative action for the school year 1971-72 as required by Green v. County School Board, 
+391 U.S. 430
+, 437-438, 
+88 S.Ct. 1689
+, 
+20 L.Ed.2d 716
+ (1968).  ('School board(s) . . . (were) . . . clearly charged with the affirmative duty to take whatever steps might be necessary to convert to a unitary system in which racial discrimination (would) be eliminated root and branch.')  United States v. Board of School Commissioners (Indianapolis I), 
+332 F.Supp. 655
+ (S.D.Ind. 1971), aff'd, 
+474 F.2d 81
+ (7th Cir.), cert. denied, 
+413 U.S. 920
+, 
+93 S.Ct. 3066
+, 
+37 L.Ed.2d 1041
+ (1973).
+7
+In Indianapolis I, the court concluded that the common law of Indiana was that the boundaries of a school district and of a civil city were coterminous, a rule finally recognized by statute in 1931.
+1
+  Statutes passed in 1961
+2
+ and in 1969
+3
+ provided that, if Indianapolis' boundaries were extended, those of its school district could likewise be expanded.  Such expansion, however, would be subject to a separate remonstrance or veto by a specified percentage of persons affected.
+8
+In 1969, after this suit had been commenced, the civil governments of the City of Indianapolis and of Marion County were consolidated into a unified, metropolitan city government by the socalled Uni-Gov Act, which expressly provides that the Indianapolis school district would not be affected by the expansion of the city.
+4
+  In other words, the school district (or School City) of Indianapolis was confined to an area in the central part of the new Uni-Gov, where it is surrounded by eight township school systems and by two additional city school corporations (Beech Grove and Speedway City), all operating independently within the new unified City of Indianapolis and within Marion County.
+9
+The district court concluded that 'the easy way out . . . would be to order a massive 'fruit basket' scrambling of students within the School City,' but 'it won't work.'  Resegregation would rapidly occur because of a white exodus from what would be substantially black schools.  The resegregation problem 'would pale into insignificance if the (school) Board's jurisdiction were coterminous with that of Uni-Gov' and 'would be minimized still further if extended to . . . Beech Grove and Speedway City, and to certain parts of the adjoining counties practically indistinguishable from the City of Indianapolis . . ..'  The court ordered the United States as plaintiff to join as additional parties defendant the municipal corporations and school corporations which would have an interest in the court's intended consideration of the entire metropolitan area.  
+332 F.Supp. at 678-680
+.
+10
+On September 7, 1971, the United States moved to add as parties defendant all school corporations in Marion County (eight townships and two city corporations).  A few days later, the court permitted the Buckley plaintiffs (Donny Brurell Buckley and Aylcia Marquese Buckley by their parents and next friend, Ruby L. Buckley) to intervene in their own right and as representatives of a class consisting of 'all Negro school age children residing in the area served by' the Indianapolis school board.  The intervening plaintiffs, in turn, joined as additional parties defendant the Governor and Attorney General of Indiana, the state Superintendent of Public Instruction, the state Board of Education and 19 school corporations (including the ten within Marion County which had been joined by the United states, plus nine in the adjoining counties of Boone, Hamilton, Hancock, Johnson, Morgan and Hendricks).
+11
+Citizens of Indianapolis for Quality Schools, Inc., a not-for-profit corporation, was permitted to intervene as a defendant.  See United States v. Board of School Commissioners, 
+466 F.2d 573
+ (7th Cir. 1972), cert. denied. 
+410 U.S. 909
+, 
+93 S.Ct. 964
+, 
+35 L.Ed.2d 271
+ (1973).  Coalition for Integrated Education, an unincorporated association favoring a metropolitan plan of desegregation, was granted leave to file briefs as amicus curiae in both the district court and in this court.
+12
+The intervening plaintiffs filed an amended complaint in intervention in two counts.  The first count alleged that the Indiana statutes effecting a governmental reorganization in Indianapolis were unconstitutional as racially discriminatory because schools were excluded from the consolidated metropolitan government, and prayed for an order consolidating the defendant school systems.  The second count alleged and sought relief from racial discrimination by the state and by local school authorities in the operation of the public schools of Indianapolis and the surrounding school corporations.
+13
+The additional defendants filed various motions attacking their joinder, the complaint in intervention and the court's jurisdiction on a variety of grounds.  All these motions were overruled by the district court.  Several of the added defendants subsequently applied unsuccessfully to this court for writs of prohibition or mandamus to vacate the joinder and intervention orders;
+5
+ to compel the convening of a three-judge district court;
+6
+ and to compel the recusation of the district judge.
+7
+14
+On September 28, 1972, the court for the first time ordered the development and submission of comprehensive plans for the desegregation of the Indianapolis district.
+8
+  In response, the Indianapolis board on February 8, 1973 submitted a plan, denominated the 'Stabilization Plan.'  The 'Stabilization Plan' was subsequently rejected by the court on June 11, 1973.
+15
+The remedy phase (Indianapolis II) was tried before the court from June 12 to July 6 and on July 18, 1973.  On July 20, 1973, the court entered its decision, concluding that (1) desegregation promising a reasonable degree of permanence could not be accomplished within the present boundaries of the Indianapolis school district; (2) the State of Indiana, its officials and agencies, had by various acts and omissions promoted segregation and inhibited desegregation within the Indianapolis district, so that the state, as the agency ultimately charged under Indiana law with the operation of the public schools, has a continuing affirmative duty to desegregate the Indianapolis system; (3) the system could be effectively desegregated either by combining its territory with all or part of the territory served by the 19 surrounding school corporations in and adjacent to Marion County into a metropolitan system and then reassigning students within the expanded system or by transferring black students from the Indianapolis district to the 19 others, either on a one-way or exchange basis; and (4) the state, through its General Assembly, should first be afforded the opportunity to select its own plan; but if it failed to do so, the court would promulgate a plan.  The court ordered interim relief in the form of student assignments for the 1973-74 school year sufficient to bring the number of black students in each Indianapolis elementary school up to approximately 15 percent, which was accomplished.
+9
+  United States v. Board of School Commissioners (Indianapolis II), 
+368 F.Supp. 1191
+ (S.D.Ind. 1973).
+16
+Meanwhile, the Indiana General Assembly was organized in November, 1973 for a session to begin in January, 1974.  On December 6, 1973, the court issued a supplemental memorandum of decision, consisting principally of suggestions and recommendations for the General Assembly to implement Indianapolis II with an affirmative plan.  United States v. Board of School Commissioners (Indianapolis III), III), 
+368 F.Supp. 1223
+ (S.D.Ind. 1973).
+17
+The General Assembly held its scheduled session.  The only ligislation it passed relating to this case was Senate Enrolled Act No. 119, which was signed into law by the Governor of Indiana on February 20, 1974.  The statute provides for the adjustment of tuition among transferor and transferee schools and for the reimbursement of transportation costs by the state and is rigidly limited in its application:
+18
+This chapter applies solely in a situation where a court of the United States or of the State of Indiana in a suit to which the transferor or transferee corporation or corporations are parties has found the following: (a) a transferor corporation has violated the equal protection clause of the Fourteenth Amendment to the Constitution of the United States by practicing de jure racial segregation of the students within its borders; (b) a unitary school system within the meaning of such Amendment cannot be implemented within the boundaries of the transferor corporation; and (c) the Fourteenth Amendment compels the Court to order a transferor corporation to transfer its students for education to one or more transferee corporations to effect a plan of desegregation in the transferor corporation which is acceptable within the meaning of such Amendment.  This chapter shall not apply until all appeals from such order, whether taken by the transferor corporation, any transferee corporation or any party to the action, have been exhausted or the time for taking such appeals has expired, except where all stays of a transfer order pending appeal or further court action have been denied.
+II
+19
+INTERIM RELIEF WITHIN THE INDIANAPOLIS PUBLIC SCHOOL SYSTEM
+20
+In Indianapolis II, the district court directed the Indianapolis public school system (which the court referred to as IPS) to rearrange the enrollment patterns in its elementary schools, effective with the 1973-74 school year, so that each school would have a minimum black enrollment 'in the area of 15%.'  IPS was directed to pair or cluster schools in close proximity and to realign school assignment zones in order to expand the neighborhood or community school concept and to reduce the necessity for busing.  If, after utilizing these procedures, certain schools did not meet the required percentages of black enrollment, pairing or clustering of schools in noncontiguous zones would be required.  
+368 F.Supp. at 1209
+.
+21
+The unanimous Court in Swann v. Charlotte-Mecklenburg Board of Education, 
+402 U.S. 1
+, 27, 
+91 S.Ct. 1267
+, 1282, 
+28 L.Ed.2d 554
+ (1971), discussed these precise remedies and concluded that, even if paired or grouped zones for transferring blacks out of and whites into formerly segregated black schools were 'on opposite ends of the city,' nevertheless 'as an interim corrective measure, this cannot be said to be beyond the broad remedial powers of a court.'
+22
+In response to Indianapolis II, IPS submitted a plan which proposed to close four predominantly black schools and to distribute the displaced students to white schools with excess unused capacity.  After an evidentiary hearing on August 20, 1973 on the IPS plan, the district court found on August 27 that it (1) did not readjust the percentage of minority students in the elementary schools to approximately 15 percent; (2) did not provide for reducing the percentage of minority students at Shortridge High School nor for increasing the percentage of minority students at Thomas Carr Howe High School, as previously ordered; and (3) did not provide for the use of any of the attendance zone, pairing or clustering devices required by the court.  The court, concluding that 'the Board is unable or unwilling to comply with the orders of this court,' appointed a two-man commission to develop desegregation plans, temporarily assigned the IPS planning staff to assist the commissioners, and required that application be made for available federal funds to assist in desegregation.
+10
+23
+The Board of School Commissioners of IPS in the present appeal attacks the district court's order insofar as it (1) held the board in default; (2) appointed the two-man commission to prepare plans of desegregation; (3) assigned the professional planning staff of IPS to the temporary service of the commission; and (4) ordered IPS to apply for all available federal funds.
+24
+IPS alleges that the commission's plan for interim relief, which reassigned some 9,200 students as opposed to the IPS plan reassigning approximately 4,500 students, 'in large part was copied from the earlier (IPS) plan.'  IPS Brief, p. 27.
+25
+We fail to perceive how desegregation and dismantlement of the IPS dual school system would be advanced by discarding the court's interim plan, which has been in effect for an entire school year, and by substituting a similar plan that goes only half as far as the adopted plan in achieving desegregation.
+26
+' The measure of any desegregation plan is its effectiveness.'  Davis v. Board of School Commissioners, 
+402 U.S. 33
+, 37, 
+91 S.Ct. 1289
+, 1290, 
+28 L.Ed.2d 577
+ (1971).  '(A) school authority's remedial plan or a district court's remedial decree is to be judged by its effectiveness.'  Swann v. Charlotte-Mecklenburg Board of Education, 
+402 U.S. 1
+, 25, 
+91 S.Ct. 1267
+, 1280, 
+28 L.Ed.2d 554
+ (1971).  'The obligation of the district courts, as it always has been, is to assess the effectiveness of a proposed plan in achieving desegregation.'  Green v. County School Board, 
+391 U.S. 430
+, 439, 
+88 S.Ct. 1689
+, 1695, 
+20 L.Ed.2d 716
+ (1968).
+27
+Here the court's interim plan, although concededly only a temporary measure, was at least twice as effective in each school.  The commission (court-adopted)
+28
+The percentage of nonwhite enrollment in IPS grew from 18.9 percent in 1950 to 26 percent in 1960 and to 35.9 percent in 1970.  At the time of trial, the percentage of black enrollment was 41.1 percent.  The IPS interim plan affected 30 of the approximately 100 elementary schools and brought nonwhite enrollment to approximately 15 percent in each school.  The commission (courtadopted) interim plan affected significantly 61 elementary schools and tended to bring both predominantly white and black schools closer to 41 percent black enrollment per school.
+29
+The 1972 enrollment, the IPS-planned enrollment for 1973 and the commission-planned enrollment for 1973 compare as follows (N.C. refers to 'no change' and-- indicates a discontinued school):
+Percentage
+Non-White Enrollment
+30
+School  1972    IPS   Comm.
+---------------------------
+   1     98.6  N.C.   N.C.
+   2     23.
+7  N.C.   21
+.5
+   3      0.7  14.5   27.5
+   4     99.5   --    39.8
+   5     47.7  N.C.   N.C.
+   6     --     --     --
+   7     38.8  N.C.   N.C.
+   8      1.
+7  N.C.   15
+.2
+   9     32.1  N.C.    --
+  10     --     --     --
+  11     40.7  N.C.   N.C.
+  12     30.
+7  N.C.   20
+.8
+  13     --     --     --
+  14      6.9  15.2   15.1
+  15      0.
+6  N.C.   27
+.5
+  16     11.8  16.1    --
+  17     --     --     --
+  18      0.
+7  N.C.   19
+.2
+  19      3.8  15.0   20.4
+  20     11.8  15.0   20.1
+  21      9.9  15.0   20.2
+  22      9.1  15.0   15.0
+  23     --     --     --
+  24     --     --     --
+  25     --     --     --
+  26     93.
+0  N.C.   38
+.0
+  27     86.5  N.C.   N.C.
+  28      3.0  15.0   20.4
+  29    100.0   --     --
+  30      0.7  15.0   30.8
+  31      0.
+0  N.C.   19
+.1
+  32     94.1   --     --
+  33      7.7  15.1   27.4
+  34      0.6  14.9   19.6
+  35      0.
+0  N.C.   19
+.2
+  36    100.0  N.C.    --
+  37     99.
+0  N.C.   34
+.9
+  38     94.
+2  N.C.   35
+.0
+  39      4.2  15.1   20.1
+  40     --     --     --
+  41     99.6  N.C.   N.C.
+  42    100.0  N.C.   N.C.
+  43     99.8  N.C.   N.C.
+  44     99.6  N.C.   N.C.
+  45     98.4  N.C.   N.C.
+  46      8.9  15.0   24.7
+  47      0.0  15.0   24.8
+  48    100.0  N.C.   N.C.
+  49      5.4  15.0   24.7
+  50      0.
+0  N.C.   31
+.0
+  51     88.
+2  N.C.   39
+.9
+  52     77.
+2  N.C.   31
+.0
+  53     44.9  N.C.   N.C.
+  54      0.
+0  N.C.   22
+.0
+  55     14.7  N.C.   N.C.
+  56    100.0  N.C.   N.C.
+  57      5.0  15.0   23.1
+  58      0.6  15.0   23.2
+  59     18.7  N.C.   N.C.
+  60    100.0  N.C.   N.C.
+  61      1.9  15.0   19.9
+  62      1.
+6  N.C.   15
+.3
+  63     99.7  N.C.   N.C.
+  64     99.
+4  N.C.   37
+.9
+  65      4.
+2  N.C.   19
+.7
+  66     95.1   --    N.C.
+  67     36.
+6  N.C.   31
+.6
+  68      0.
+3  N.C.   18
+.02
+  69     99.
+2  N.C.   38
+.0
+  70     41.
+0  N.C.   34
+.7
+  71     96.7  N.C.   N.C.
+  72     20.1  N.C.   N.C.
+  73     81.
+9  N.C.   84
+.72
+  74     23.2  N.C.   N.C.
+  75     84.6  N.C.   N.C.
+  76     99.7  N.C.   N.C.
+  77      1.
+2  N.C.   23
+.0
+  78      0.0  15.0   22.1
+  79      0.4  15.0   20.0
+  80     13.0  N.C.   N.C.
+  81      2.
+5  N.C.   20
+.0
+  82      0.
+0  N.C.   20
+.2
+  83     63.1  N.C.   N.C.
+  84      6.8  15.0   15.2
+  85     12.7  N.C.   N.C.
+  86     53.2  N.C.   N.C.
+  87    100.
+0  N.C.   29
+.9
+  88      0.
+5  N.C.   15
+.8
+  89      3.
+7  N.C.   18
+.89
+  90      8.0  15.1   15.0
+  91     18.7  N.C.   N.C.
+  92      4.
+0  N.C.   23
+.18
+  93      1.
+0  N.C.   25
+.7
+  94      0.6  15.0   25.7
+  95      1.
+7  N.C.   22
+.4
+  96      0.8  15.1   16.4
+  97     25.4  N.C.   N.C.
+  98      0.2  14.5   19.8
+  99     39.7  N.C.   N.C.
+ 100      4.4  15.1   15.1
+ 101     36.2  N.C.   N.C.
+ 102      1.2  15.0   19.9
+ 103      3.
+3  N.C.   19
+.8
+ 104     45.
+8  N.C.   22
+.4
+ 105      0.4  15.0   19.8
+ 106     24.0  N.C.   N.C.
+ 107      6.1  15.1   21.5
+ 108      1.
+8  N.C.   17
+.7
+ 109      0.
+9  N.C.   19
+.8
+ 110     99.2  N.C.   N.C.
+ 111     37.
+3  N.C.   34
+.3
+ 112     68.
+2  N.C.   38
+.0
+ 113      6.5  15.0   25.7
+ 114     52.
+5  N.C.   34
+.0
+31
+The district court properly rejected the IPS plan, which, two years after the finding of de jure segregation by IPS, went a relatively short distance toward desegregation.  'The burden on a school board today is to come forward with a plan that promises realistically to work, and promises realistically to work now.'  Green v. County School Board, supra at 439, 
+88 S.Ct. at 1695
+.
+32
+Faced with a totally unacceptable plan a few days before the beginning of the 1973-74 school term, the court turned to two independent commissioners to perform a herculean task within a miniscule period of time.  The court said 'in sorrow and with regret' that 'never, since this thing started on the complaint of the United States in 1968 . . . has any (IPS) Board . . . gone very far to do anything, really, unless they were pushed and ordered' and then 'when they are ordered, they usually . . . come up with an alternative idea that doesn't go quite as far as the order, or you want a stay or something-- anything to put it off.'
+33
+In appointing the two commissioners to formulate a plan, the district court followed the procedure approved in Swann v. Charlotte-Mecklenburg Board of Education, supra at 16, 25, 91 S.Ct. at 1276, 1280:
+34
+In default by the school authorities of their obligation to proffer acceptable remedies a district court has broad power to fashion a remedy that will assure a unitary school system.
+35
+It was because of this total failure of the school board that the District Court was obliged to turn to other qualified sources, and Dr. Finger (a court-appointed expert) was designated to assist the District Court to do what the board should have done.
+36
+The commission adhered to the district court's guidelines as approved in Swann by altering attendance zones, by contiguous and non-contiguous pairing and clustering, by 'ungerrymandering' and by creating larger 'neighborhood schools.'  The commission presented its recommended plan, entitled 'The Quest for Human Dignity' within ten days of its appointment.  This could not have been accomplished without the temporary use of the IPS planning staff.  If in fact the commission made use of planning staff material, it obviously made much more effective use of that material than IPS had done.
+37
+We conclude that the district court acted properly in rejecting the IPS plan, in holding the IPS board in default, in appointing the commission and in temporarily assigning the planning staff of IPS to the commission.
+11
+38
+Finally, in regard to the IPS board's attacks on the district court's orders, we hold that the court did not abuse its discretion in ordering IPS to seek available federal funds to expedite desegregation.  This method of implementation of a decree intended to eliminate a dual school system has been approved by several courts.  United States v. Texas, 
+342 F.Supp. 24
+, 29 (E.D.Tex.1971), aff'd, 
+466 F.2d 518
+ (5th Cir. 1972); Whittenberg v. Greenville County School Dist., 
+298 F.Supp. 784
+, 790 (D.S.C.1969) (three-judge panel).  In Plaquemines Parish School Board v. United States, 
+415 F.2d 817
+, 833 (5th Cir. 1969), the court of appeals found a 'broadly written' order requiring application for federal aid unjustified, but added:
+39
+This direction is without prejudice to the right of the district court in the future in a specific situation as to specific funds to require that application be made when it is shown that the board has failed to apply for such funds as part of a plan or scheme to impede the end of the dual system of schools, or to discriminate against Negro children.
+40
+In the last analysis, we must look to Swann, where the Supreme Court said (402 U.S. at 28, 91 S.Ct. at 1282):
+41
+The remedy for such (de jure) segregation may be administratively awkward, inconvenient, and even bizarre in some situations and may impose burdens on some; but all awkwardness and inconvenience cannot be avoided in the interim period when remedial adjustments are being made to eliminate the dual school systems.
+42
+We believe that in this case the district court properly requested the defendants to seek federal funds.
+III
+43
+RACIAL BALANCE WITHIN THE METROPOLITAN INDIANAPOLIS AREA
+44
+Even the Board of School Commissioners of IPS concedes that 'it appears clear from the cases heretofore decided by the Supreme Court of the United States that the . . . obligation imposed by the Constitution of the United States upon IPS is the duty to dismantle the dual school system which was found to exist within its present boundaries.'  Brief, pp. 12-13.
+45
+The district court's opposition to a final desegregation plan within IPS was on the basis that 'in the long haul, it won't work.' 
+332 F.Supp. at 678
+.  The court's theory was restated in Indianapolis II (
+368 F.Supp. at 1197
+):
+46
+The Court in its original opinion expressed some doubts as to whether or not a stable desegregation plan could be established within the confines of IPS, based upon the evidence adduced at that trial, which was all to the effect that when the percentage of Negro pupils in a given school approaches 40%, more or less, the exodus of white pupils from such a school becomes accelerated and irreversible, resulting in resegregation.  However, additional evidence on this issue was adduced at the recent trial, and the Court bases its findings exclusively upon such latter evidence.
+47
+Having considered such evidence, the Court finds it to be a fact that when the percentage of Negro pupils in a given school approaches 25% To 30%, more or less, in the area served by IPS, the white exodus from such a school district becomes accelerated and continues . . ..  All witnesses agreed that once a school becomes identifiably black, it never reverses to white, in the absence of redistricting.  Therefore, progressions from white to black are irreversible once the critical percentage has been reached in the absence of intervention through redistricting.  Below the critical percentage, however, schools tend to remain stable . . ..
+48
+The district court then concluded that the most effective method of realistically accomplishing desegregation of IPS would be either by combining IPS territory with that of all or part of the territory served by the ten Marion County (Uni-Gov) school districts and possibly also with that of some or all of the nine school districts in counties adjacent to Marion County, and then reassigning students within the metropolitan area thus created, or by transferring black students from IPS to the other districts, either on a one-way or an exchange basis.
+49
+Having found IPS guilty of de jure segregation, the court then proceeded to consider upon evidentiary hearing the situation in the remaining school districts.  He concluded (
+368 F.Supp. at 1203
+):
+50
+There was no evidence that any of the added defendant school corporations have committed acts of de jure segregation directed against Negro students living within their respective borders.  In fact, the evidence shows that, with a few exceptions, none of the added defendants have had the opportunity to commit such overt acts because the Negro population residing within the borders of such defendants ranges from slight to none . . ..
+51
+In Milliken v. Bradley, 
+418 U.S. 717
+, 
+94 S.Ct. 3112
+, 
+41 L.Ed.2d 1069
+ (July 25, 1974), where the lower courts had found a de jure segregated public school system in operation in Detroit (Bradley v. Milliken, 
+338 F.Supp. 582
+, 594 (E.D.Mich.1971), aff'd, 
+484 F.2d 215
+, 258 (6th Cir. 1973)), but with 'no showing of significant violation by the 53 outlying school districts and no evidence of any inter-district violation or effect,' the majority of the Supreme Court said 
+418 U.S. at 745
+, 
+94 S.Ct. at 
+3127-3128:
+52
+To approve the remedy ordered by the court would impose on the outlying districts, not shown to have committed any constitutional violation, a wholly impermissible remedy . . ..  Disparate treatment of White and Negro students occurred within the Detroit school system, and not elsewhere, and on the record the remedy must be limited to that system.
+53
+The Supreme Court further concluded that, even if state agencies participated in the maintenance of the Detroit system, as the lower courts had held, it did not follow that an interdistrict remedy would be constitutionally justified or required.
+54
+In the present case based upon the district court's comprehensive and detailed recital of the history of Indiana law and procedure pertaining to Indiana schools, appearing in 
+332 F.Supp. at 
+658-677 and in 
+368 F.Supp. at 1199-1205
+, we conclude, as the district court did, that the state officials have, by various acts and omissions, promoted segregation and inhibited desegregation within IPS, so that the state, as the agency ultimately charged under Indiana law with the operation of the public schools, has an affirmative duty to assist the IPS Board in desegregating IPS within its boundaries (see Part IV hereof).
+55
+On the other hand, the district court's findings, rulings, orders and discussion relating to a metropolitan remedy beyond the Uni-Gov boundaries are reversed.  Those relating to a metropolitan remedy within Uni-Gov are vacated and remanded (see last section of this opinion).
+IV
+56
+DISMANTLING THE DUAL SYSTEM WITHIN THE INDIANAPOLIS PUBLIC SCHOOLS
+57
+So-called 'white flight' is not an acceptable reason for failing to dismantle a dual school system.  'It cannot . . . be accepted as a reason for achieving anything less than complete uprooting of the dual school system.'  United States v. Scotland Neck City Board of Education, 
+407 U.S. 484
+, 491, 
+92 S.Ct. 2214
+, 2218, 
+33 L.Ed.2d 75
+ (1970).  See also Monroe v. Board of Commissioners,  
+391 U.S. 450
+, 459, 
+88 S.Ct. 1700
+, 
+20 L.Ed.2d 733
+ (1968).
+58
+Where system-wide dualism has been found, as here, '. . . (the) School Board has the affirmative duty to desegregate the entire system 'root and branch," and 'the District Court must . . . decree all-out desegregation . . ..'  Keyes v. School District No. 1, 
+413 U.S. 189
+, 213, 214, 
+93 S.Ct. 2686
+, 2700, 
+37 L.Ed.2d 548
+ (1973).  We must guard against permitting the 'white flight' considerations unduly to delay complete desegregation within IPS now that Milliken v. Bradley has disposed of the metropolitan remedy.
+59
+Subsequent to oral argument in these appeals, the record has been supplemented to include an order entered by the district court on July 3, 1974, whereby IPS has been directed to continue for the 1974-75 school year the interim plan in effect for the 1973-74 school year, except that feeder assignments to Thomas Carr Howe High School are to be arranged 'to insure that the freshman class at such school for the coming school year will include a minority race enrollment of not less than 15%.'
+60
+Obviously many steps have been taken to dismantle the IPS dual school system within its boundaries, but more steps must be taken.  The Supreme Court's mandate to us to develop a plan of desegregation that 'promises realistically to work now' (Green v. County School Board, 391 U.S. at 439, 
+88 S.Ct. 1689
+), requires us to remand the case 'for further proceedings consistent with (Milliken v. Bradley) leading to prompt formulation of a decree directed to eliminating the segregation found to exist' within IPS.
+V
+MISCELLANEOUS ISSUES ON APPEAL
+61
+Recusation of District Judge.  The state officials (Governor, Attorney General, State Superintendent of Public Instruction and State Board of Education) moved to recuse the district judge by filing an affidavit of alleged personal bias or prejudice under 28 U.S.C. 144.  The affidavit stated that on December 27, 1972 the judge submitted to an interview which was published in six weekly newspapers and which allegedly evinced an attitude of prejudgment on the liability of the state officials.
+62
+The portion of the interview to which the state officials objected read as follows:
+63
+The judge explained that he had involved the city's peripheral districts in the suit because the racial imbalance that is seen in the schools of the Indianapolis Public Schools system exists because of housing patterns in the city.
+64
+In Indianapolis I, which had been decided 16 months prior to the interview, the judge had found after hearing that 'low-rent housing projects within the School City have significantly affected the racial composition of the schools.'  
+332 F.Supp. at 673
+.
+12
+65
+' The remarks were derived from proceedings had before the court, and not on attitudes or conceptions that were formed outside the courtroom, so as to constitute disqualifying personal bias or prejudice.'  Hanger v. United States, 
+398 F.2d 91
+, 101 (8th Cir. 1968), cert. denied, 
+393 U.S. 1119
+, 
+89 S.Ct. 995
+, 
+22 L.Ed.2d 124
+ (1969).
+66
+Furthermore, comments, rulings or questions propounded to witnesses by the judge during the subsequent trial in which the state officials participated as defendants, and views expressed concerning the applicable law during that trial, do not establish personal bias or prejudice.  Nor did the state officials file any subsequent affidavit covering trial events.
+13
+  We have examined the record and have found that the judge was necessarily firm at times particularly when it appeared that the defendants were foot-dragging and stalling, but never did he exhibit personal bias or prejudice, nor go beyond the bounds of an ordinary and reasonable trier of fact attempting to solve a difficult and lengthy school desegregation case.
+67
+Adding Parties-Defendant While Appeal Pending.  The state officials argue that IPS appealed from Indianapolis I on September 10, 1971 and that everything that transpired in the district court between that date and February 1, 1973, when this court affirmed Indianapolis I (
+474 F.2d 81
+), is null and void.  They point particularly to the addition of the state officials as parties-defendant on September 14, 1971, the filing of the amended complaint and complaint in intervention and the trial of Indianapolis II.
+68
+We disposed of this contention in an earlier appeal in this case, United States v. Board of School Commissioners, No. 72-1948 (Aug. 10, 1973), where we said (p. 3):
+14
+69
+Defendants also contend that all jurisdiction passed from the district court when the notice to appeal was filed.
+70
+Certainly the district court had the power to enforce its earlier order while the appeal was pending.  The Fifth Circuit addressed defendants' jurisdictional contention in Plaquemines Parish Commission Council v. United States, 
+416 F.2d 952
+, 954 (5th Cir. 1969):
+71
+'The district court did not lose jurisdiction of the parties merely because an appeal was pending from the desegregation order.  Appellants cite no school case authority to support their view that the district court lacks jurisdiction to promulgate additional orders to maintain the status quo and to insure the enforcement of its previous orders.  Generally, a district court retains jurisdiction to enforce its prior orders, and this is particularly true with respect to desegregation cases.  United States v. Swift & Co., 
+286 U.S. 106
+, 
+52 S.Ct. 460
+, 
+76 L.Ed. 999
+ (1932); Brown v. Board of Education, 
+349 U.S. 294
+, 
+75 S.Ct. 753
+, 
+99 L.Ed. 1083
+ (1955) (Brown II); Green v. School Board of New Kent County, 
+391 U.S. 430
+, 
+88 S.Ct. 1689
+, 
+20 L.Ed.2d 716
+ (1968).'
+72
+Eleventh Amendment.  The state officials and one of the Marion County defendants, Perry Township, contended that the Eleventh Amendment
+15
+ bars prosecution of an action 'in essence against the State of Indiana
+16
+ without the State's consent or waiver of consent.'
+73
+In Scheuer v. Rhodes, 
+416 U.S. 232
+, 237, 
+94 S.Ct. 1683
+, 1687, 
+40 L.Ed.2d 90
+ (1974), Mr. Chief Justice Burger said for a unanimous court (Mr. Justice Douglas took no part):
+74
+However, since Ex parte Young, 
+209 U.S. 123
+ (
+28 S.Ct. 441
+, 
+52 L.Ed. 714
+) (1907), it has been settled that the Eleventh Amendment provides no shield for a state official confronted by a claim that he had deprived another of a federal right under the color of state law.  Ex parte Young teaches that when a state officer acts under a state law in a manner violative of the Federal Constitution, he 'comes into conflict with the superior authority of that Constitution and he is in that case stripped of his official or representative character and is subjected in his person to the consequences of his individual conduct.  The State has no power to impart to him any immunity from responsibility to the supreme authority of the United States.  
+209 U.S. at 159-160
+ (28 S.Ct.  (441), at 454).'
+75
+In Cooper v. Aaron, 
+358 U.S. 1
+, 4, 19-20, 
+78 S.Ct. 1401
+, 1403, 1410, 
+3 L.Ed.2d 5
+ (1958), the Supreme Court said:
+76
+As this case reaches us it raises questions of the highest importance to the maintenance of our federal system of government.  It necessarily involves a claim by the Governor and Legislature of a State that there is no duty on state officials to obey federal court orders resting on this Court's considered interpretation of the United States Constitution.  Specifically it involves actions by the Governor and Legislature of Arkansas upon the premise that they are not bound by our holding in Brown v. Board of Education, 
+347 U.S. 483
+ (
+74 S.Ct. 686
+, 
+98 L.Ed. 873
+).
+77
+The principles announced in that decision and the obedience of the States to them, according to the command of the Constitution, are indispensable for the protection of the freedom guaranteed by our fundamental charter for all of us.  Our constitutional ideal of equal justice under law is thus made a living truth.
+78
+The Eleventh Amendment does not prevent enforcement of the Fourteenth Amendment, which commands that no state shall 'deny to any person within its jurisdiction the equal protection of the laws.'
+79
+Res Judicata.  Several of the school boards outside of IPS territory contend that they were deprived of due process of law by the district court's decision to make a portion of its prior holding in Indianapolis I res judicata, although these other school boards had not become parties to the litigation until after Indianapolis I had been decided.
+80
+On June 11, 1973, the court ruled that its previous judgment 'to the effect that the School City of Indianapolis maintains a school system which is segregated by operation of law is res judicata . . ..'  In Indianapolis II the judge reiterated what part of Indianapolis I he considered binding on the parties.  He said that the issue 'that IPS was unlawfully segregating the public schools within its boundaries' was res judicata.  This issue had been vigorously fought by IPS in the district court and had been affirmed by this court after equally spirited opposition by IPS here.  United States v. Board of School Commissioners, 
+332 F.Supp. 655
+ (S.D.Ind.1971), aff'd, 
+474 F.2d 81
+ (7th Cir.), cert. denied, 
+413 U.S. 920
+, 
+93 S.Ct. 3066
+, 
+37 L.Ed.2d 1041
+ (1973).
+81
+In Indianapolis II, the district court did 'not consider its conclusions in (regard to metropolitan desegregation) as res judicata.'  
+368 F.Supp. at 1195
+.
+82
+The outside school boards made no attempt to attack the issue of de jure segregation within IPS.  In fact most of them, as well as the state officials, have argued in this appeal that IPS should be desegregated within its own boundaries.
+83
+In Bradley v. Milliken, 
+338 F.Supp. 582
+, 594 (E.D.Mich.1971), the district court found a de jure segregated public school system in operation in the City of Detroit.  The Court of Appeals for the Sixth Circuit, after noting that the 53 school districts outside of Detroit which the district court included in the desegregation area should be made parties and be given an opportunity to be heard, added that 'the District Court will not be required to receive any additional evidence as to the matters contained in its Ruling . . . reported at 
+338 F.Supp. 582
+, or its Findings of Fact and Conclusions of Law on the 'Detroit-only' plans of desegregation . . ..'  
+484 F.2d 215
+, 252, reversed on other grounds, Milliken v. Bradley, 
+418 U.S. 717
+, 
+94 S.Ct. 3112
+, 
+41 L.Ed.2d 1069
+ (1974).
+84
+This is precisely what the district court did in the Indianapolis case.  We hold that its rulings in this regard were proper.
+85
+Three-Judge Court.  The school boards, outside IPS contend that the district court violated Indiana statutes by purporting to order the transfer of school children from IPS to outside school districts without seeking to convene a three-judge court under 28 U.S.C. 2281.
+86
+The district judge found that the Indiana statutes alleged to have been violated applied only to school corporations within Marion County, Indiana, and he therefore denied the motion for a three-judge court on the ground that the statutes were not of the requisite general, state-wide application.  Griffin v. County School Board, 
+377 U.S. 218
+, 227-228, 
+84 S.Ct. 1226
+, 
+12 L.Ed.2d 256
+ (1964).
+87
+This court denied a petition by the school boards for a writ of mandamus or prohibition and adopted the district court's memorandum of disposition of the three-judge question in Metropolitan School District v. Dillin, No. 73-1101 (Apr. 2, 1973), and certiorari was denied at 
+412 U.S. 953
+, 
+93 S.Ct. 3007
+, 
+37 L.Ed.2d 1006
+ (1973).
+88
+In the Detroit school case, the Sixth Circuit denied applications for writs of mandamus or prohibition against the district judge for 'failing to convene three judge courts . . . in spite of the fact that . . . (certain school) Districts were not parties to the desegregation proceedings and had not been found to have committed any act of de jure segregation.'  Bradley v. Milliken, 
+484 F.2d 215
+, 217-218 (6th Cir. 1973).  The Supreme Court denied certiorari in the Detroit mandamus and prohibition cases at 
+410 U.S. 954
+, 
+93 S.Ct. 1418
+, 
+35 L.Ed.2d 687
+ (1973).
+89
+Exclusion of Sociological Evidence.  The outside school boards appealed the court's exclusion of the testimony of two expert sociological witnesses. Dr. David J. Armor would have testified that 'mandatory busing programs could result in adverse sociological and psychological effects on the children involved . . ., that prejudice, racial identity, solidarity and desire for separatism was usually enhanced rather than diminished, and that over the short run busing for purposes of integration did not lead to significant gains in student achievement or interracial harmony.'
+17
+ Dr. Ernest van den Haag would have testified: '(a) Contact between the races does not reduce prejudice; and (b) Integration (as distinguished from desegregation) may heighten racial identity and reduces the opportunity for actual contact between the races.'
+18
+90
+In Brown I, Brown v. Board of Education, 
+347 U.S. 483
+, 
+74 S.Ct. 686
+, 
+98 L.Ed. 873
+ (1954), Mr. Chief Justice Warren buttressed his conclusion that the 'separate but equal' doctrine of Plessy v. Ferguson, 
+163 U.S. 537
+, 
+16 S.Ct. 1138
+, 
+41 L.Ed. 256
+ (1896), deprived minority children of equal educational opportunities, with a footnote citing some sociological and psychological authority to that effect.  
+347 U.S. at 
+494 n. 11, 
+74 S.Ct. 686
+.  This reliance on supportive sociological material by the Supreme Court has led to a number of abortive attempts to overrule Brown and reinstate Plessy through reliance on sociological and psychological material which purports to show that minority children thrive when segregated.  Needless to say, these attempts have all failed.
+91
+In Mapp v. Board of Education, the district court approved and implemented a plan of desegregation for the Chattanooga, Tennessee public schools at 
+329 F.Supp. 1374
+ (E.D.Tenn.1971), and 
+341 F.Supp. 193
+ (1972).  The majority opinion of a three-judge panel remanded the case to the district court for further consideration, particularly of recent sociological findings, in evaluating the impact of induced busing upon educational achievement and race relations.  Cause No. 71-2006 (6th Cir., Oct. 11, 1972).  Judge Edwards dissented on the basis that any reevaluation of the sociological underpinnings of Brown was improper and misleading, and that counter-evidence was available in any event.
+19
+  Describing the majority's reference to Armor's article as 'completely irrelevant to our legal problems,' he appended to his dissent another article criticizing it.  On December 14, 1972, the panel opinion was withdrawn and the case heard en banc.  On April 30, 1973, the Sixth Circuit decided eight-to-two to affirm the district court in Mapp v. Board of Education, 
+477 F.2d 851
+ (6th Cir.), cert. denied, 
+414 U.S. 1022
+, 
+94 S.Ct. 445
+, 
+38 L.Ed.2d 313
+ (1973).
+92
+In Northcross v. Board of Education, 
+466 F.2d 890
+, 894 (6th Cir. 1972), the court said:
+93
+. . . In short, the School Board argues, busing for the purposes of desegregation 'is wrong.'
+94
+The Supreme Court has, of course, come to the opposite conclusion in a recent unanimous decision, holding that 'bus transportation' is one 'tool of desegregation' which school authorities may be required to use.  Swann, 
+supra,
+402 U.S. 1
+, 30, 
+91 S.Ct. 1267
+ (
+28 L.Ed.2d 554
+).  Recognizing this to be the holding of Swann, defendants nevertheless suggest that we come to a contrary conclusion on the basis of a single piece of much criticized sociological research, the conclusions of which are, by its own terms, inapplicable to the Southern school pattern.  It would be presumptuous in the extreme for us to refuse to follow a Supreme Court decision on the basis of such meager evidence.  Swann is controlling and requires us to sanction the use of bus transportation as a tool of desegregation when, as here, such busing is necessary to accomplish the dismantling of the dual system and its use does not pose intolerable practical problems.
+95
+The 'much criticized sociological research' is Armor's article cited supra in footnote 17
+20
+ and criticized in Judge Edwards' dissent in the original Mapp decision.
+21
+96
+In Stell v. Savannah-Chatham County Board of Education, 
+220 F.Supp. 667
+, 673 (S.D.Ga.1963), the district court as early as 1963 relied upon a great volume of sociological and psychological material, including the testimony of Dr. van den Haag, in refusing to dismantle a dual school system.  The Court of Appeals for the Fifth Circuit promptly entered an injunction requiring desegregation pending appeal on the merits at 
+318 F.2d 425
+ (5th Cir. 1963) and reversed the district court at 
+333 F.2d 55
+ (5th Cir.), cert. denied, 
+379 U.S. 933
+, 
+85 S.Ct. 332
+, 
+13 L.Ed.2d 344
+ (1964).
+97
+If this sort of sociological and psychological material were fully valid and if Brown I vitally depended upon it, even then only the Supreme Court itself could overruld Brown.
+98
+But, as we have seen, the validity of the material is in grave doubt and Brown is not dependent upon it.  As Judge Sobeloff so aptly put it in Brunson v. Board of Trustees, 
+429 F.2d 820
+, 824, 826 (4th Cir. 1970) (Judge Sobeloff concurring and responding to a dissent which relied in part upon the sociological theories of Dr. Thomas F. Pettigrew):
+99
+. . . There have always been those who believed that segregation of the races in the schools was sound educational policy, but since Brown their reasoning has not been permitted to withstand the constitutional command.
+100
+This idea, then, is no more than a resurrection of the axiom of black inferiority as justification for separation of the races, and no less than a return to the spirit of Dred Scott.  The inventors and proponents of this theory grossly misapprehend the philosophical basis for desegregation.  It is not founded upon the concept that white children are a precious resource which should be fairly apportioned.  It is not, as Pettigrew suggests, because black children will be improved by association with their betters.  Certainly it is hoped that under integregation members of each race will benefit from unfettered contact with their peers.  But school segregation is forbidden simply because its perpetuation is a living insult to the black children and immeasurably taints the education they receive.  This is the precise lesson of Brown.  Were a court to adopt the Pettigrew rationale it would do explicitly what compulsory segregation laws did implicitly.
+101
+The district court in Indianapolis was acting well within its discretion in excluding the testimony of Drs. Armor and van den Haag since neither the district court nor this court can overrule Brown.
+102
+Attorneys' Fees.  The district court's decision in Indianapolis II included a finding that 'attorneys for intervening plaintiffs and their class . . . are entitled to recover their reasonable attorneys fees and expenses, and intervening plaintiffs are entitled to recover their costs.'  
+368 F.Supp. at 1210
+.
+103
+In Northcross v. Board of Education, 
+412 U.S. 427
+, 428, 
+93 S.Ct. 2201
+, 2202, 
+37 L.Ed.2d 48
+ (1973), the Supreme Court held that under section 718 of Title VII of the Emergency School Aid Act, 20 U.S.C. 1617, 'the successful plaintiff (in a school desegregation case) 'should ordinarily recover an attorney's fee unless special circumstances would render such an award unjust."
+104
+Section 718 did not become effective until July 1, 1972, whereas the intervening plaintiffs became parties to the case on September 14, 1971.  However, in Bradley v. School Board, 
+416 U.S. 696
+, 724, 
+94 S.Ct. 2006
+, 2022, 
+40 L.Ed.2d 476
+ (1974), the Supreme Court held that 'the District Court in its discretion may allow petitioners a reasonable attorneys' fee for services rendered' prior to July 1, 1972.
+105
+Section 718 provides in part that in a school desegregation case 'the court, in its discretion, upon a finding that the proceedings were necessary to bring about compliance, may allow the prevailing party, other than the United States, a reasonable attorney's fee as part of the costs.'
+106
+It is our understanding from the record that the district court has not awarded any specific fees to the intervening plaintiffs' attorneys; the court has the discretion to do so if the attorneys' services fall within the limitations set forth in section 718.  Particularly, the court will be required to determine whether the intervening plaintiffs are 'the prevailing party' under all the circumstances.  We express no opinion on this issue inasmuch as the solution involves the intimate knowledge of this lengthy proceeding possessed only by the district court, whose discretion is called for by the statute.
+107
+In accordance with Milliken v. Bradley, 
+418 U.S. 717
+, 
+94 S.Ct. 3112
+, 
+41 L.Ed.2d 1069
+ (1974), we reverse the district court's findings, conclusions, orders and rulings insofar as they pertain to a metropolitan remedy beyond the Uni-Gov boundaries; insofar as they pertain to a remedy within the boundaries of Uni-Gov, we vacate those rulings and remand for further proceedings consistent with that decision.  The district court should determine whether the establishment of the Uni-Gov boundaries without a like reestablishment of IPS boundaries
+22
+ warrants an inter-district remedy within Uni-Gov in accordance with Milliken.
+23
+108
+In all other respects, the findings, conclusions, orders and rulings of the district court are affirmed and the case is remanded for a prompt formulation of a decree directed to eliminating the segregation found to exist in IPS schools.
+109
+Reversed in part, affirmed in part, and remanded.
+1
+ Acts 1931, Ch. 94, 1, p. 291; Burns Ind.Stat.Ann. 28-2301 (1948 Repl.), I.C.1971, 20-3-11-1
+2
+ Acts 1961, Ch. 186, 1, 9, 10; Burns Ind.Stat.Ann. 28-2338, 28-2346, 28-2347 (1968 Cum.Supp.), I.C.1971, 20-3-14-1, 20-3-14-10
+3
+ Acts 1969, Ch. 52, 3, p. 57; Burns Ind.Stat.Ann. 28-2346a (1970 Cum.Supp.), I.C.1971, 20-3-14-9
+4
+ Acts 1969, Ch. 173, 314, p. 357; Burns Ind.Stat.Ann. 48-9213 (1970 Cum.Supp.), I.C.1971, 18-4-3-14
+5
+ This court ruled on three such applications: Avon Community School Corp. v. Dillin, No. 71-1695 (Sept. 27, 1971); carmel-Clay Schools v. Dillin, No. 71-1702 (Oct. 1, 1971): and School Town of Speedway v. Dillin, No. 72-1063 (Feb. 2, 1972), cert. denied, 
+407 U.S. 920
+, 
+92 S.Ct. 2457
+, 
+32 L.Ed.2d 805
+ (1972)
+6
+ Metropolitan School District v. Dillin, No. 73-1101 (Apr. 2, 1973), cert. denied, 
+412 U.S. 953
+, 
+93 S.Ct. 3007
+, 
+37 L.Ed.2d 1006
+ (1973)
+7
+ Sendak v. Dillin, No. 73-1144 (Feb. 22, 1973), cert. denied, 
+412 U.S. 949
+, 
+93 S.Ct. 3011
+, 
+37 L.Ed.2d 1001
+ (1973); a motion for stay of a June 11, 1973 trial date pending the ruling on the petition for a writ of certiorari was denied by this court on May 23, 1973 and by the Supreme Court at 
+412 U.S. 937
+, 
+93 S.Ct. 2777
+, 
+37 L.Ed.2d 396
+ (1973)
+8
+ A study of the school system, with interim recommendations for desegregation, was prepared at the request of the board by a team of representatives from t e Office of Education, Department of Health, Education and Welfare.  Its recommendations were rejected by the board on June 17, 1969.  See United States v. Board of School Commissioners, 
+332 F.Supp. 655
+, 670-671 (S.D.Ind. 1971).  A federally funded study by two 'advisory specialists' employed by the school board resulted in a series of desegregation recommendations which were also rejected shortly before trial in 1971.  See 
+332 F.Supp. at 
+672
+9
+ On August 20, 1973, an additional hearing was conducted, after which the court ruled that a plan submitted by the Indianapolis board failed to comply with the interim relief order and that circumstances justified the appointment, as officers of the court, of a two-man commission to accomplish the task.  On August 30, 1973, a plan formulated by the commissioners was approved.  Applications by the Indianapolis board for a stay of implementation of the orders entered on August 20 and 30 were denied by this court, Misc.  No. 73-8170 (Sept. 10, 1973), and by a Justice of the Supreme Court, Board of School Commissioners v. United States, No. A-278 (Sept. 14 and Sept. 21, 1973) (Rehnquist, J.).  The plan has now been implemented.  The commissioners were discharged on December 10, 1973
+10
+ In an order entered on August 27, 1973, and expanded by an order denying stay entered December 18, 1973, the court ordered the Indianapolis board to apply 'for Federal funds in all of the various categories available to school systems operating under orders of desegregation.'
+11
+ See Bradley v. Milliken, 
+484 F.2d 215
+, 252 (6th Cir.), vacated on other grounds, U.S.  ,  
+94 S.Ct. 3112
+, 
+41 L.Ed.2d 1069
+ (1974): 'The defendants and school districts involved will continue to supply administrative and staff assistance to the (courtappointed) panel upon its request.'
+12
+ See also 
+332 F.Supp. at 
+676: 'Resegregation rapidly occurs, and the entire central core of the involved city develops into a virtually all-Negro city within a city when, as in Indianapolis, the Negro residential area is largely confined to a portion of the central city in the first place.'
+13
+ 28 U.S.C. 144 provides that '(a) party may file only one such affidavit in any case,' but it also provides that the affidavit 'shall state the facts and the reasons for the belief that bias or prejudice exists.'
+14
+ The prior appeal was disposed of by an unpublished order, which under our Circuit Rule 28 'shall not be cited as precedent . . . except to support a claim of . . . law of the case.'  That is the reason for citing it here
+15
+ The Eleventh Amendment to the Constitution of the United States provides: 'The Judicial power of the United States shall not be construed to extend to any suit in law or equity, commenced or prosecuted against one of the United States by Citizens of another State, or by Citizens of any Foreign State.'  The Eleventh Amendment applies to suits against a state by citizens of that state.  Fitts v. McGhee, 
+172 U.S. 516
+, 
+19 S.Ct. 269
+, 
+43 L.Ed. 535
+ (1899)
+16
+ The amendment bars suits not only against the state when it is named a party but when it is the party in fact.  Edelman v. Jordan, 
+415 U.S. 651
+, 
+94 S.Ct. 1347
+, 
+39 L.Ed.2d 662
+ (1974)
+17
+ See also Armor, 'The Evidence on Busing,' Pub. Interest 91 (Summer 1972)
+18
+ See also van den Haag, 'Social Science Testimony in the Desegregation Cases,' 6 Vill.L.Rev. 69 (1960); van den Haag, 'The Tortured Search for the Cause of Inequality,' Nat.Rev., Feb. 16, 1973, at 200
+19
+ Note, 'Busing as a Judicial Remedy: A Socio-Legal Reappraisal,' 6 Ind.L.Rev. 710, 736-38 (1973)
+20
+ 'It was agreed among all parties and the court below t at Dr. Armor would have testified at the trial to the facts and conclusions stated in such article . . ..'  Brief for Carmel-Clay Schools, et al. in the present case at 42
+21
+ Armor's article is also criticized in: Editorial, 'Dangerous Orthodoxy,' N.Y. Times, July 5, 1972, at 38, cols. 1-2; Farber, 'Lawyers' Group Fears an Overreliance on Educational Studies,' N.Y. Times, June 11, 1972, at 37, cols. 1-5; Hodgson, 'Do Schools Make a Difference,' Atlantic, Mar. 1973, at 40-41; Pettigrew, Useem, Normand, & Smith, 'Busing: A Review of 'The Evidence," Pub. Interest, Winter 1973, at 88; Pettigrew, Useem, Normand, & Smith, 'Pierced Armor,' Integrated Educ., Nov.-Dec. 1972, at 3; Reinhold, 'Study Critical of Busing Scored,' N.Y. Times, June 8, 1972, at 40, cols. 1-3; Strickman, 'The Trouble with Armor,' 6 Urban Rev., Sept.-Oct. 1972, at 20
+22
+ In Milliken v. Bradley, 
+418 U.S. 717
+, 
+94 S.Ct. 3112
+, 
+41 L.Ed.2d 1069
+ (1974), 'The boundaries of the Detroig School District, . . . are coterminous with the boundaries of the city of Detroit, . . . established over a century ago by neutral legislation when the city was incorporated . . ..'
+23
+ 'Specifically it must be shown that racially discriminatory acts of the state or local school districts, or of a single school district have been a substantial cause of inter-district segregation.  Thus an inter-district remedy might be in order where the racially discriminatory acts of one or more school districts caused racial segregation in an adjacent district, or where district lines have been deliberately drawn on the basis of race.'  
+418 U.S. at 745
+, 94 S.Ct. at 3127.  Cf. Mr. Justice Stewart's concurring opinion: 'Were it to be shown . . . that state officials had contributed to the separation of the races by drawing or redrawing school district lines . . .; or by purposeful, racially discriminatory use of state housing or zoning laws, then a decree calling for transfer of pupils across district lines or for restructuring of district lines might well be appropriate.'
+Understand legal concepts and procedures, draft documents, and conduct in-depth analysis.
+Try Cetient legal research AI for free
+No signup required.
+Cetient is not a law firm and does not provide legal advice. It can make mistakes. Check important info.
+© 
+2026
+ Cetient, Inc.
+Support
+Terms
+Privacy
+US Courts & Case Law
+United States of America, Donny Brurell Buckley, Intervening v. Board of School Commissioners of the City of Indianapolis, Indiana - Case Law

@@ -399,6 +399,212 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 2 · Built  (beat 2: architecture and building typology)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gcl-built-fieldhouse",
+      title: "5 · The fieldhouse: a building type, and what a town spent on it",
+      section: "Section 2 · Built",
+      body: `Beat 2 of the site template asks **why does it look like that?** For a school gymnasium the answer is not style. It is **capacity**, and capacity is a budget decision made by a community about itself.
+
+**Start with the type.** A gymnasium is a clear-span room: a playing floor with no columns in it, which is structurally the expensive part, wrapped in as much seating as the builder will pay for. **A "fieldhouse" is what you call it when the seating stops being an afterthought.** The evolution is legible: early Indiana gyms were rooms attached to the school building with little or no spectator space, and they became free-standing buildings as crowds grew, at which point the structural problem of spanning a large room without columns blocking sightlines became the design problem (Indiana Department of Natural Resources, 2024).
+
+**Two 1928 buildings set the ceiling.**
+- **Butler Fieldhouse**, now **Hinkle Fieldhouse**, Indianapolis. Designed by the Indianapolis architect **Fermor Spencer Cannon**, opened **1928**, seating **15,000**. It was **the largest basketball arena in the United States until 1950**. Listed on the National Register of Historic Places in **1983**. The IHSAA played its state finals there from **1928** and, with wartime interruptions, through **1971**; sectionals continued there until **1994**. A renovation of **36.2 million dollars** ran from **2009 to 2014** (Encyclopedia of Indianapolis, n.d.-c).
+- **Muncie Fieldhouse**, also **1928**, which nearly a century later is still among the largest high school gyms in the United States.
+
+**Hold Hinkle for a moment, because it is about to matter.** A high school with no adequate gym of its own played its biggest home games in a **15,000-seat** building on a private university campus. That is lesson 6.
+
+**Now the scale question, and how to ask it honestly.** You will read that Indiana holds almost all of the largest high school gyms in the country. The compiled ranking most often quoted puts **ten of the twelve largest high school gyms in the United States in Indiana**, with **New Castle Fieldhouse** (1959) first at **8,424** and **Seymour's Lloyd E. Scott Gymnasium** (1970) second at **8,228**. Indiana's state tourism office describes New Castle as "the largest high school arena in the world" and Seymour's as "the second-largest high school gym in the country" (Visit Indiana, n.d.).
+
+**Three cautions before you use any of those numbers, and they are the transferable part of this lesson.**
+
+**1. A capacity is a measurement, and measurements get redone.** The rankings rest on research by the **Indiana High School Basketball Historical Society**, done by on-site seat counts, interviews, and reading architectural blueprints. **A 2019 recount reordered the top three**, moving Seymour's gym to first and New Castle's to third. **Then a 2020 renovation raised New Castle's capacity from 7,829 to 8,424**, and it went back to first. **The building did not change rank because the building changed. It changed rank because somebody counted again, and then because somebody rebuilt.**
+
+**2. The historical figure and the current figure are different numbers about the same room.** New Castle Fieldhouse is reported to have seated **9,325** in its first season, **1959-60**, which is more than its current capacity. **Both figures can be right.** Seats get wider, aisles get added, codes change. **If you quote a capacity, quote the year with it**, exactly as course 1 made you do with displacement figures.
+
+**3. "Largest in the world" is a claim about everywhere.** Nobody in this course has surveyed the world's high school gymnasiums. **Attribute it to the state tourism office and the historical society, and let them own it.**
+
+## What a fieldhouse is evidence of
+
+**Ask the beat 2 question in its blunt form: what did this community choose to spend on, and what does the choice tell you?**
+
+A high school gym seating eight thousand people in a town far smaller than eight thousand is not irrational, and calling it that misses the point. **It is a public building that a community uses for the thing it does together.** Graduations, revivals, concerts, funerals, political meetings and, in 1959 and after, everything from the Harlem Globetrotters to a service band have used New Castle's floor. **A fieldhouse is a town hall that happens to have a basketball court in it.**
+
+**And that is exactly why the next lesson lands.** If the fieldhouse is where a community assembles, then **the size of a school's gym is a public statement about whose assembly the community is funding.** Section 3 shows you the mechanism that decides which community a school belongs to. Lesson 6 shows you what that mechanism produced on one 8.4-acre site.
+
+**A research note you will need in beat 4.** Several Indiana high school gyms are individually listed on the National Register of Historic Places, and course 1 taught you what listing does and does not do: federal listing is recognition plus review leverage when federal money or a federal permit is involved, and **local designation under a local ordinance is what actually regulates a demolition.** A gym is a large, single-purpose, expensive-to-heat building, which makes it a standing demolition candidate the moment a district consolidates. **When you look at a gym, ask what protects it, and check whether the answer is federal or local.**
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-c). *Hinkle Fieldhouse*. https://indyencyclopedia.org/hinkle-fieldhouse/
+- Indiana Department of Natural Resources, Division of Historic Preservation and Archaeology. (2024, May). *Preservation at the crossroads* [Newsletter]. https://www.in.gov/dnr/historic-preservation/files/hp_Legeman-Article-Layout.pdf
+- Indiana High School Athletic Association. (n.d.-a). *Boys basketball tournament timeline*. https://ihsaapublic.blob.core.windows.net/archive/b-basketball/TournamentTimeline.htm
+- National Park Service. (n.d.). *National Register of Historic Places: Frequently asked questions*. https://www.nps.gov/subjects/nationalregister/faqs.htm
+- Visit Indiana. (n.d.). *High school gyms: Basketball, best of Indiana*. https://visitindiana.in.gov/blog/post/high-school-gyms-basketball-best-of-indiana/`,
+      recallContent: [
+        {
+          prompt: "What structurally distinguishes a gymnasium as a building type, and what makes it a 'fieldhouse'?",
+          answer: "A clear-span room: a playing floor with no columns in it, which is the expensive part, wrapped in seating. It becomes a fieldhouse when the seating stops being an afterthought and the building goes free-standing.",
+        },
+        {
+          prompt: "Give Hinkle Fieldhouse's architect, date, capacity, and how long it was the largest basketball arena in the country.",
+          answer: "Fermor Spencer Cannon, opened 1928, seating 15,000, the largest basketball arena in the United States until 1950. National Register listed 1983; IHSAA finals from 1928 through 1971; sectionals until 1994.",
+        },
+        {
+          prompt: "Why did New Castle Fieldhouse change rank twice among the largest high school gyms?",
+          answer: "A 2019 recount by the Indiana High School Basketball Historical Society reordered the top three and moved it to third; a 2020 renovation raised its capacity from 7,829 to 8,424 and moved it back to first. A ranking is a measurement, and measurements get redone.",
+        },
+        {
+          prompt: "New Castle is reported to have seated 9,325 in 1959-60 and 8,424 today. How do you handle that?",
+          answer: "Both can be right. Seats widen, aisles get added, codes change. Quote the year with the capacity, the same discipline course 1 required for displacement figures.",
+        },
+        {
+          prompt: "What is a fieldhouse evidence of, in the beat 2 sense?",
+          answer: "What a community chose to spend on. It is a public building for the thing the town does together, effectively a town hall with a basketball court in it, which makes its size a statement about whose assembly is being funded.",
+        },
+      ],
+    },
+    {
+      slug: "gcl-built-8-acres",
+      title: "6 · Eight point four acres: reading a school by its land",
+      section: "Section 2 · Built",
+      body: `**This is the lesson where the building type stops being charming.**
+
+**The state had a formula, and it is in the record.** Judge Dillin's 1971 findings note that Indiana's **State Superintendent of Public Instruction had established minimum acreage requirements of seven acres for the first 200 students and one acre for each additional 100 students** (*United States v. Board of School Commissioners*, 1971, p. 685 n.60).
+
+**Do the arithmetic yourself, because that is the exercise.** Take a school of **2,394** students. Seven acres covers the first 200. The remaining 2,194 students, at one acre per hundred, ask for roughly **21.9** more. **The state's own minimum for a school that size is therefore about 29 acres.**
+
+**Now the finding.** "Because of the small size of the Attucks site (**8.4 acres**), a waiver had to be secured from the State Board of Education. This waiver was obtained, **with the proviso that no more than 2,200 students attend Attucks**; nevertheless, **in 1967-68 Attucks enrolled 2,394 students, 2,393 Negro and one white**" (*United States v. Board of School Commissioners*, 1971, p. 686 n.67).
+
+**Read that footnote three times.** It contains, in one paragraph:
+1. **A site under a third of the state's own minimum for its enrolment.**
+2. **A waiver, meaning the state knew and signed off.**
+3. **A cap attached to the waiver, at 2,200.**
+4. **An enrolment 194 students over that cap.**
+5. **A racial composition of 2,393 to 1.**
+
+**None of that is an inference. It is a footnote in a federal opinion, and you can read it in five minutes.**
+
+**Attucks was not a badly sited school. It was a school the city knew was undersized and filled anyway.** And the same opinion records that when a new, desegregated Attucks was finally being planned, the city would not release a **54-acre** tract at 38th Street and White River that it owned and could have transferred free or for a nominal price, "on the ground that it is needed for use as a nursery for the Department of Parks and Recreation." Dillin's response is one of the driest sentences in the opinion: **"The City's sense of priorities strikes the Court as curious"** (*United States v. Board of School Commissioners*, 1971, p. 674).
+
+**And when the school board found another site, a different body stopped it.** The board took an option on a tract at **30th Street and Guion Road** and applied to have it rezoned for school use, "only to have its application denied by **The Metropolitan Development Commission** of Marion County, which asserts the right to control the use of all land in the county, including that proposed to be dedicated for public purposes" (*United States v. Board of School Commissioners*, 1971, p. 674).
+
+**Stop and notice what just happened, because it is the single best cross-course link in this cluster.** The Metropolitan Development Commission is the body course 1 introduced in beat 5: the one that **adopts the comprehensive plan, adopts the zoning ordinance, decides rezonings, and approves property sales for redevelopment.** In course 1 it is the body a citizen goes to about a parcel on Indiana Avenue. Here it is **the body that refused a school board the land for a desegregated high school.** Same commission, same county, same decade. **A zoning decision is a school decision when it is made about a school site.**
+
+## What Attucks had, and what this course will not claim it lacked
+
+**Documented.** The main building opened **1927**. A three-story addition and a two-story gymnasium were built in **1938**. A second gymnasium was built in **1966** (Encyclopedia of Indianapolis, n.d.-a; and see the school's National Register listing, 1989).
+
+**Also documented, and it is the sentence to carry.** The Encyclopedia of Indianapolis states: "**At no time as a segregated high school did Crispus Attucks have space and facilities to accommodate its student body and faculty**, despite additions to the structure in 1938 and 1966" (Encyclopedia of Indianapolis, n.d.-a).
+
+**Documented about the gym specifically, and attributed rather than adopted.** *Sports Illustrated* writes that "Attucks's tiny gym was inadequate for organized basketball, meaning the Tigers always played on the road" (Bamberger, 2016), and other accounts describe the team playing "home" games at Butler Fieldhouse. **This course reports that as a characterisation with an author.** What is independently solid is the land: 8.4 acres, a waiver, and a cap the school exceeded.
+
+**What this course does NOT claim, and you should not either.** That Attucks had no gymnasium at all. **It had one from 1938 and a second from 1966**, and the popular version of this story ("the school had no gym") is imprecise. **The accurate version is harder and better: it had gyms, on a site a third the size the state's own formula asked for, and it played its biggest games in someone else's building.** If you find yourself repeating the simpler version, you have stopped checking.
+
+**What is still open.** Exactly what stood on those 8.4 acres, and whether the site ever held a football field, a track, or outdoor practice space, is a question for the **National Register nomination** (the school was listed in **1989**), the **Sanborn fire insurance maps**, and the **school district's own facilities records**. **None of those has been read into this course.** Beat 4 sends you to look, and beat 5 sends you to the records.
+
+## The present, which is why this is not a lament
+
+In **May 2026**, Indianapolis Public Schools announced a **44 million dollar** expansion of the Crispus Attucks campus: about **25 million dollars** donated by **Indiana University Health** and about **20 million dollars** from IPS bonds. It includes a **new gym meeting IHSAA standards, seating roughly 2,400**, with home and visitor locker rooms, indoor concessions and a weight room, plus a healthcare lab, a technology lab, and an atrium connecting the original building to the new south-campus addition. **Attucks is currently the only IPS high school with just one gym.** Completion is expected in **2028**, just over a century after the school opened. Enrolment is about **1,200**, roughly **65 percent Black and 28 percent Hispanic** (Chalkbeat Indiana, 2026a; WFYI, 2026a).
+
+**Put the two numbers side by side and you have this section.** A state whose largest high school gym seats **8,424**. A school that in 1967-68 held **2,394** students on **8.4 acres**. And a **2,400-seat** gym arriving in **2028**. **Those are not rhetorical numbers. They are all cited, and the comparison is yours to make.**
+
+## Sources
+- Bamberger, M. (2016, February 23). *The real Hoosiers tale: Crispus Attucks*. Sports Illustrated. https://www.si.com/nba/2016/02/23/crispus-attucks-oscar-robertson-hoosiers-pacers-indiana-high-school
+- Chalkbeat Indiana. (2026a, May 6). *Crispus Attucks High School is getting a $44 million upgrade. Here's what's in store.* https://www.chalkbeat.org/indiana/2026/05/06/crispus-attucks-high-school-gets-new-health-lab-and-gym/
+- Encyclopedia of Indianapolis. (n.d.-a). *Crispus Attucks High School*. https://indyencyclopedia.org/crispus-attucks-high-school/
+- United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/
+- WFYI. (2026a, May 6). *Indy's Crispus Attucks High School to receive new healthcare lab and gym via $44 million expansion*. https://www.wfyi.org/education/2026-05-06/indys-crispus-attucks-high-school-to-receive-new-healthcare-lab-and-gym-via-44-million-expansion`,
+      recallContent: [
+        {
+          prompt: "What was Indiana's minimum acreage formula for a school site, and what does it require for 2,394 students?",
+          answer: "Seven acres for the first 200 students plus one acre for each additional 100. For 2,394 students that is roughly 29 acres: 7 for the first 200 and about 21.9 for the remaining 2,194.",
+        },
+        {
+          prompt: "Give the five facts in the court's footnote about the Attucks site.",
+          answer: "The site was 8.4 acres; a waiver was needed from the State Board of Education; the waiver carried a cap of no more than 2,200 students; in 1967-68 the school enrolled 2,394; and those students were 2,393 Black and one white.",
+        },
+        {
+          prompt: "What happened to the two sites proposed for a new, desegregated Attucks?",
+          answer: "The City refused to release a 54-acre tract it owned at 38th and White River because Parks wanted it as a nursery, prompting Dillin's line that the City's sense of priorities struck the Court as curious. The board's option at 30th and Guion Road was blocked when the Metropolitan Development Commission denied the rezoning.",
+        },
+        {
+          prompt: "Why is the Metropolitan Development Commission's refusal the best cross-course link in this cluster?",
+          answer: "It is the same body course 1 introduced in beat 5, which adopts the comprehensive plan and the zoning ordinance and decides rezonings. Here it is the body that denied a school board the land for a desegregated high school. A zoning decision is a school decision when it is made about a school site.",
+        },
+        {
+          prompt: "Correct the popular claim that Attucks had no gymnasium.",
+          answer: "It had a gymnasium from the 1938 addition and a second from 1966. The accurate version is that it had gyms on a site about a third of the state's own minimum for its enrolment, and played its biggest games in Butler Fieldhouse.",
+        },
+      ],
+    },
+    {
+      slug: "gcl-built-football",
+      title: "7 · The football field, and what a state does not build first",
+      section: "Section 2 · Built",
+      body: `**A gymnasium and a football field are both places a school assembles. They are not the same kind of decision, and Indiana's own dates show it.**
+
+**Two dates, one state.**
+- **Basketball.** The IHSAA records its first state tournament in **1911** (IHSAA, n.d.-a).
+- **Football.** The IHSAA held its **first football state tournament in 1973**, in three classes, with championship games played at one of the two opponents' home fields. It went to four classes in **1983**, five in **1985**, and six in **2013**. Championship games moved to a single central site in **1984** (IHSAA, n.d.-d; State Line Sports Network, 2022).
+
+**Sixty-two years.** A state that had crowned a basketball champion since before the First World War did not crown a football champion until the year Judge Dillin ordered a remedy in the case you are about to read. **That gap is a fact about what Indiana built and when.**
+
+**Why the building types diverge, in terms you can check.**
+
+| | Gymnasium | Football field |
+|---|---|---|
+| **Land** | A footprint, usually under two acres including the building | A regulation field plus end zones is over one and a half acres of playing surface alone, before a track, stands, lighting or parking |
+| **Season** | Indoor, all winter, weather-proof | Outdoor, autumn, weather-dependent |
+| **Other uses** | Graduations, concerts, assemblies, elections, funerals | Fewer, and mostly outdoors |
+| **Revenue nights** | Many, in a state with a winter tournament since 1911 | Fewer, in a state with no football tournament until 1973 |
+
+**So the incentive ran one way**, and it ran that way hardest for the schools with the least land. **This is where beat 2 stops being about architecture and becomes about civics.**
+
+**Now apply it to lesson 6's number.** Attucks held **2,394** students on **8.4 acres**. **A regulation football field with any spectator provision is a meaningful fraction of that entire site.** A school on 8.4 acres in a dense city is making a choice about outdoor athletic space that a township school on forty acres never has to make. **The choice is not made by the school. It is made by whoever decided where the school would be and how much land it would get**, which in this case was a school board acting on a 1922 resolution, a state board granting a waiver, a city refusing 54 acres, and a zoning commission refusing a rezoning.
+
+**A rule to carry into any town.** When you look at a school and ask why the athletic plant looks the way it does, **ask about the parcel before you ask about the program.** A school with a stadium had land. A school without one usually did not, and the reason it did not is in a record with a date on it.
+
+## The honest limits of this lesson
+
+**1. This course has not established what athletic facilities Attucks had outdoors.** The site size and the state's formula are documented; the field is not. **Do not fill that gap with an assumption in either direction.** Section 5 tells you which records would settle it.
+
+**2. The 1911-to-1973 gap is real, and its cause is not established here.** It is tempting to say Indiana loved basketball more and therefore built gyms first. That is a plausible reading and it is **not** something this course has sourced to a study. **A dated gap is evidence; a motive is an argument.** Course 1's lesson 13 made exactly this distinction and it applies here.
+
+**3. Football fields are not neutral ground either.** The exclusion story in this course is documented for **IHSAA membership**, which covered all sports, not basketball alone. **When schools were barred from the association until 1942, they were barred from the football tournament that did not yet exist and every other sanctioned competition that did.**
+
+**One thing that is not a limit.** You already know how to test this. Build the chronology. **1911 tournament. 1922 resolution. 1927 opening. 1938 gym. 1942 IHSAA admission. 1949 statute. 1955 championship. 1966 second gym. 1973 first football tournament. 2028 new gym.** Ten dates, one school and one state, and every one of them is cited in this section. **That table is the outline of the essay Section 6 asks you to write.**
+
+## Sources
+- Indiana High School Athletic Association. (n.d.-a). *Boys basketball tournament timeline*. https://ihsaapublic.blob.core.windows.net/archive/b-basketball/TournamentTimeline.htm
+- Indiana High School Athletic Association. (n.d.-d). *Football state championship records book*. https://www.ihsaa.org/sites/default/files/documents/Football%20Records%20Book_0.pdf
+- Indiana High School Athletic Association. (n.d.-b). *Membership history, 1903 to present*. https://www.ihsaa.org/sites/default/files/documents/Membership%20History.pdf
+- State Line Sports Network. (2022, October 18). *IHSAA celebrates 50 years of football playoffs: A look back in time*. https://statelinesportsnetwork.net/2022/10/18/ihsaa-celebrates-50-years-of-football-playoffs-a-look-back-in-time/
+- United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/`,
+      recallContent: [
+        {
+          prompt: "Give Indiana's two tournament start dates and the gap between them.",
+          answer: "The IHSAA records its first state basketball tournament in 1911 and held its first football state tournament in 1973, in three classes. Sixty-two years.",
+        },
+        {
+          prompt: "Name three ways a gymnasium and a football field differ as investments.",
+          answer: "Land (a gym footprint versus over an acre and a half of playing surface before track, stands and parking), season and weather dependence, and the number of other community uses and revenue nights the building supports.",
+        },
+        {
+          prompt: "Who actually made the choice about Attucks's outdoor athletic space?",
+          answer: "Not the school. A school board acting on a 1922 resolution, a state board granting an acreage waiver, a city refusing to release 54 acres, and a zoning commission refusing a rezoning.",
+        },
+        {
+          prompt: "State the rule for reading any school's athletic plant.",
+          answer: "Ask about the parcel before you ask about the program. A school with a stadium had land; a school without one usually did not, and the reason is in a dated record.",
+        },
+        {
+          prompt: "Why will this course not say Indiana built gyms first because it loved basketball more?",
+          answer: "Because a dated gap is evidence and a motive is an argument. The 1911 to 1973 gap is sourced; the reason for it is not sourced here.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
