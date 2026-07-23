@@ -224,6 +224,9 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Why is Wyoming called 'The Equality State'?",

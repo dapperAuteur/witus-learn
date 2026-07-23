@@ -279,6 +279,9 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What was Maine before it became a state in 1820?",

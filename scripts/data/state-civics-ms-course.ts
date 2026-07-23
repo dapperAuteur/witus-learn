@@ -218,6 +218,9 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What did Mississippi voters remove from the constitution in 2020?",

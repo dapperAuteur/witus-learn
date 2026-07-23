@@ -251,6 +251,9 @@ Because Delaware is small and the state government is strong, much is handled at
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is unique about how Delaware amends its constitution?",

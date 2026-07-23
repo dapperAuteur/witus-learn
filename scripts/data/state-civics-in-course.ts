@@ -403,6 +403,9 @@ The practical payoff is the same as everywhere: **who provides your service depe
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is distinctive about Indiana's strict state-debt clause (Article 10, §5)?",

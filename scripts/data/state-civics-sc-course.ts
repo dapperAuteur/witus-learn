@@ -267,6 +267,9 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What does it mean that South Carolina is a 'legislative state'?",

@@ -228,6 +228,9 @@ So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is unusual about Oklahoma's highest courts?",

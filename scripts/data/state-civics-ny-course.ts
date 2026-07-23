@@ -351,6 +351,9 @@ You use **one or the other** for a given election: a voter issued an early mail 
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What question is New York required to put on the ballot every 20 years?",
