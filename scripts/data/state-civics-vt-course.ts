@@ -260,6 +260,9 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What was Vermont before it became a state in 1791?",

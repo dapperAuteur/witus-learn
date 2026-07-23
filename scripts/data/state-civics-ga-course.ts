@@ -395,6 +395,9 @@ The practical payoff: **who provides your service depends on where you live**: i
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "When did Georgia's current constitution take effect, and how can it be amended?",

@@ -632,6 +632,9 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How is Hoodoo best described, and how does it differ from Vodou/'Voodoo'?",

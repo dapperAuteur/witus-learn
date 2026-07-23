@@ -258,6 +258,9 @@ The practical effect: in most of Missouri your county is a key unit, but if you 
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is the 'Missouri Plan'?",

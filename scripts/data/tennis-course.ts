@@ -609,6 +609,10 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
       section: "Section 2 · Hitting the ball",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "On the bevel system (right-hander), where does the index knuckle sit for a Continental grip?",

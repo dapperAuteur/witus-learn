@@ -194,6 +194,10 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
       section: "1 · The game and its codes",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How many separate codes of croquet does the World Croquet Federation publish rulebooks for?",
@@ -876,6 +880,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
       section: "3 · Association Croquet (WCF)",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How does a side win a game of Association Croquet?",
@@ -1607,6 +1615,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
       section: "5 · American Six-Wicket (USCA)",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Which body governs American Six-Wicket, and what is its current rulebook?",
@@ -2052,6 +2064,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
       section: "6 · History you can actually check",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is the best-sourced claim about the foundation of the modern Association Croquet laws?",
@@ -2498,6 +2514,10 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
       section: "7 · Clubs, leagues, and the ladder",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is the stated goal of the croquet handicap system?",
@@ -3114,6 +3134,10 @@ And you now have the one habit that matters more than any of it: **when someone 
       section: "8 · Opportunities: amateurs and entrepreneurs",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is published about prize money at the croquet world championships?",

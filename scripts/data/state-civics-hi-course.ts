@@ -244,6 +244,9 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What makes Hawaii's government the most centralized in the U.S.?",

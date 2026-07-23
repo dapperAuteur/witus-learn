@@ -232,6 +232,9 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How are Idaho's 35 legislative districts represented?",

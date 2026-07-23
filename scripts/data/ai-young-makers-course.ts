@@ -365,6 +365,9 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
       section: "Part 4: Make Something!",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Which is the best way to describe what AI really is?",

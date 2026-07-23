@@ -311,6 +311,9 @@ The bottom line: know that tiers exist and that alcohol/tobacco are separate and
       title: "10 · Check your understanding",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "When landing back in the U.S. with a connecting domestic flight, when must you clear CBP?",

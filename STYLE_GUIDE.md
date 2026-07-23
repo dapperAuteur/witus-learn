@@ -72,6 +72,16 @@ Every customer-facing surface must pass before it can merge:
   verbatim quotations, reference entries whose cited title contains a dash, verbatim
   state-standard text in `src/lib/standards/data/`, and code (comments, regex literals).
 - Age-gate + per-tenant legal pages where `tenants.requires_age_gate` is set.
+- **Quiz banks must not leak the answer by position.** Any bank of 8+ questions sets
+  `shuffleOptions: true`, which makes the stored `correctIndex` unreachable as a fixed screen slot
+  (scoring is by identity, so nothing about the answers changes). Without it, a bank that parks
+  most correct answers at one index lets a learner score 100% by clicking one letter, and every
+  score and dashboard average from that course means nothing. `pnpm check:quiz-balance` (part of
+  `pnpm lint`) fails when over 60% of a bank's answers share an index and it does not shuffle.
+  Fix it by adding the flag, never by reordering options or editing prompts:
+  `quiz_attempts.questionKey` is derived from the prompt text, so an edited prompt silently resets
+  every learner's history for that question. On a bank of 15 or more, add `questionsPerAttempt: 8`
+  so a retake draws a fresh subset (never above the bank size, never below 5).
 
 ---
 

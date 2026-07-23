@@ -361,6 +361,9 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
       section: "Iterating, constraining, and knowing the limits",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What gives you the biggest improvement in AI answers?",

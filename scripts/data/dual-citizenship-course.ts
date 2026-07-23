@@ -316,6 +316,9 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Does U.S. law require a U.S. citizen to choose between U.S. citizenship and a second nationality?",

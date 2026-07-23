@@ -297,6 +297,9 @@ The practical effect: in Tennessee, the **county** is a major unit of government
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Which constitution governs Tennessee today, and can citizens initiate laws?",

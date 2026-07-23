@@ -374,6 +374,9 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Most first-time candidates run for which kind of office, and why?",

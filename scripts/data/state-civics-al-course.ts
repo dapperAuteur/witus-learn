@@ -215,6 +215,9 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is Alabama's constitution famous for?",

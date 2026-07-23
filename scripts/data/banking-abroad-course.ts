@@ -341,6 +341,9 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
       title: "10 · Check your understanding",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What federal law is the main reason some foreign banks are reluctant to open accounts for U.S. citizens?",

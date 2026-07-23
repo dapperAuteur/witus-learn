@@ -227,6 +227,9 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What can Nevada voters do that no other state's voters can?",

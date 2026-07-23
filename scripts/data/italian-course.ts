@@ -913,6 +913,9 @@ _Platypus: Perfect! I'm very happy to meet you._
       section: "Dialogues",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Al bar, come ordina Curb con cortesia?",

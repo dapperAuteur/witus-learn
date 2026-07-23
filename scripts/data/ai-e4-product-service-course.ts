@@ -460,6 +460,9 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
       section: "Launch & Protect",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What's the right order when turning a validated need into an AI product?",

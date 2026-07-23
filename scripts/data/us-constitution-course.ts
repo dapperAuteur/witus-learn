@@ -388,6 +388,9 @@ Together these show the design at work: a fixed framework, changed only by broad
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What governed the United States before the Constitution?",
