@@ -404,6 +404,190 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 2 · Built  (beat 2: architecture, and what a preserved house chooses to show)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ph-built-typology",
+      title: "5 · What kind of house this is",
+      section: "Section 2 · Built",
+      body: `Beat 2 of the site template asks: **why does it look like that?** For a house the answer starts with **typology**, which is what kind of building a building is, and then with the far more interesting question of **what the fabric cost and who it took**.
+
+**The building, from the record.** The Benjamin Harrison house is a **16-room, three-storey brick Italianate residence with a basement**, roughly **10,000 square feet**, designed by the Indianapolis architect **Herman T. Brandt**, with **Petrie and Cummings** as excavators. It has **a three-storey bay window and the bracketed cornices typical of the style**, **parquet floors, butternut woodwork, and a walnut staircase with oak trim**. The basement is **two feet of Indiana limestone**, and **380,550 bricks** completed the house. It was begun in **1874** and finished in the spring of **1875** (Encyclopedia of Indianapolis, n.d.-a; Benjamin Harrison Presidential Site, n.d.-a).
+
+**Italianate, defined so you can recognise it anywhere.** It is the dominant American domestic style of roughly the 1850s through the 1870s: low-pitched roof, tall narrow windows often paired, heavy **bracketed cornices** under wide eaves, and frequently a bay or a tower. The Old Northside around this house also holds **Gothic Revival, Second Empire, Queen Anne, Eastlake and Stick style** examples from the same decades (Encyclopedia of Indianapolis, n.d.-b). **Standing on that street you are looking at a catalogue of what money built in an American city between 1870 and 1914**, which is exactly what the Encyclopedia gives as the range for the neighbourhood's houses.
+
+**Now the part that tells you more than the style does: the systems.** The site's own account lists three conveniences "not enjoyed by most Victorians": **running water in the kitchen, washroom and second-floor bathroom; a coal-fed furnace; and 23 working gaslight fixtures**, under **12-foot ceilings** (Benjamin Harrison Presidential Site, n.d.-a).
+
+**Read that as a class statement, because that is what it is.** Every item on that list is a purchase of something a poorer household supplied with labour.
+1. **Running water replaces carrying water.**
+2. **A coal furnace replaces tending several fires.**
+3. **Gas fixtures replace filling, trimming and cleaning lamps.**
+4. **Twelve-foot ceilings buy air and light, and they cost fuel to heat.**
+
+**A building's plumbing is a truer statement of its owner's position than its cornice is.** Style is a taste choice available at several price points. **A second-floor bathroom in 1875 Indianapolis is not.**
+
+**And the labour did not disappear, it moved.** The original **carriage house had upstairs quarters for the coachman** (Benjamin Harrison Presidential Site, n.d.-a). **Somebody lived over the horses.** That single sentence in a museum's building description is the thread you pull if you want to know who else this house contained, and it is the sort of thread that the interpretation lesson in Section 5 asks you to follow.
+
+**The three cost figures, and why this course will not average them.** The record gives three different numbers for what the house cost, and they are not the same measurement.
+
+| Figure | Source | What it appears to count |
+|---|---|---|
+| **$24,008.59** | Encyclopedia of Indianapolis (n.d.-a) | The house, finished spring 1875 |
+| **$24,818.67** | The Wikipedia article on the site, a TERTIARY source with its own footnote to check | The house, finished 1874-1875 |
+| **about $29,000** | Benjamin Harrison Presidential Site (n.d.-a) | Everything from the empty lot's purchase through the last room painted |
+
+**The third one is explicitly a different scope**, since it includes the land, and that is probably most of the gap. **The first two differ by about 810 dollars and this course cannot tell you why.** Note also that one of the three is a **tertiary** source: an encyclopaedia article summarising other people's work. **A tertiary source is a finding aid, not a citation.** When you use one, follow its footnote to the thing it is summarising and cite that instead. So the rule from course 1 applies unchanged: **give a figure its owner, say what it counts, and do not average two numbers you do not understand.** If you write about this house, name your figure's source in the sentence.
+
+**The lot date disagrees too.** One account has Harrison buying the double lot at auction in **1867**; the site's own account says he purchased the empty lot in **1868**. **A one-year disagreement in a purchase date is settled in a deed record**, which is a Marion County document, which is exactly the kind of lookup Section 5 of course 1 taught you to do.
+
+## Sources
+- Benjamin Harrison Presidential Site. (n.d.-a). *The house*. https://bhpsite.org/learn/the-house/
+- Encyclopedia of Indianapolis. (n.d.-a). *Benjamin Harrison Presidential Site*. https://indyencyclopedia.org/benjamin-harrison-presidential-site/
+- Encyclopedia of Indianapolis. (n.d.-b). *Old Northside*. https://indyencyclopedia.org/old-northside/
+- National Park Service. (n.d.-a). *National Register of Historic Places*. https://www.nps.gov/subjects/nationalregister/index.htm
+- Wikipedia. (n.d.). *Benjamin Harrison Presidential Site*. Cited here only as the tertiary source of a competing cost figure; follow its footnote before using the number. https://en.wikipedia.org/wiki/Benjamin_Harrison_Presidential_Site`,
+      recallContent: [
+        {
+          prompt: "Describe the house as a survey form would: style, size, architect, materials.",
+          answer: "A 16-room, three-storey brick Italianate residence with a basement, roughly 10,000 square feet, by architect Herman T. Brandt, with a three-storey bay window, bracketed cornices, parquet floors, butternut woodwork, a walnut staircase with oak trim, a two-foot Indiana limestone basement and 380,550 bricks. Begun 1874, finished spring 1875.",
+        },
+        {
+          prompt: "Name the three conveniences the site lists and explain what each one really bought.",
+          answer: "Running water, a coal-fed furnace, and 23 gaslight fixtures, under 12-foot ceilings. Each replaces labour a poorer household supplied by hand: carrying water, tending fires, filling and trimming lamps. Ceiling height buys air and light and costs fuel.",
+        },
+        {
+          prompt: "Why is plumbing a better class indicator than a cornice?",
+          answer: "Style is a taste choice available at several price points, but a second-floor bathroom in 1875 Indianapolis is not. Systems tell you the owner's position more reliably than ornament does.",
+        },
+        {
+          prompt: "What does the carriage house tell you, and why does it matter?",
+          answer: "It had upstairs quarters for the coachman, so somebody lived over the horses. The labour the house required did not disappear, it moved, and that sentence is the thread to pull when you ask who else this house contained.",
+        },
+        {
+          prompt: "Three sources give three costs for the house. What is the rule?",
+          answer: "Give a figure its owner and say what it counts. $24,008.59 and $24,818.67 are both offered for the house itself; about $29,000 is the site's figure covering the lot purchase through the last room painted, which is a different scope. Do not average numbers you do not understand.",
+        },
+      ],
+    },
+    {
+      slug: "ph-built-the-porch",
+      title: "6 · The porch problem: reading a building against a story",
+      section: "Section 2 · Built",
+      body: `Here is a small fact that will change how you look at every restored building you ever visit.
+
+**The story.** Benjamin Harrison won the presidency in 1888 with a **front porch campaign**, delegation after delegation coming to the house on Delaware Street to hear him speak (Miller Center, n.d.-b).
+
+**The building.** The two most accessible published accounts of the house both date the front porch to **after** the presidency. The Encyclopedia of Indianapolis says "a front porch was added by Harrison in 1895." The site's own description places it in an **1896** round of changes that also brought **electricity and updated plumbing**, and calls it an **English Regency front porch** (Encyclopedia of Indianapolis, n.d.-a; Benjamin Harrison Presidential Site, n.d.-a).
+
+**So the famous front porch campaign of 1888 was not run from the porch that is famous.** Work carefully through what that does and does not prove, because this is the exact skill beat 2 exists to teach.
+
+1. **It does not prove there was no porch in 1888.** Neither source says what stood at the front door in 1888. **This course does not assert that the 1888 house had no porch, because the sources read here do not say.**
+2. **It does prove that the visible fabric a visitor sees today postdates the event the house is famous for.** Whatever the campaign happened on, **it was not this.**
+3. **It means "front porch campaign" is a description of a campaign method, not a claim about carpentry.** The phrase names a strategy: the candidate stays home and the country comes to him. **The porch in the phrase is a metaphor that happens to also be a building part**, and confusing the two is how people end up asserting things about wood that the record is silent on.
+4. **It gives you a research question with a known answer somewhere.** Photographs of the 1888 delegations exist in collections; so do insurance maps and the building's own restoration files. **A question like this is settled by looking, and you now know exactly what to look at.**
+
+**The general rule, which is worth more than the Harrison example.** **A historic building is not a photograph of the year it is famous for.** It is the sum of everything done to it, including everything done to it by the people who preserved it. Every restored house you visit contains at least four layers:
+- **What was originally built.**
+- **What the original owners changed while they lived there**, which here includes an 1895 or 1896 porch, electricity and plumbing.
+- **What later owners changed for a completely different use**, which here means the years it held music students.
+- **What restorers removed, replaced or invented to return it to a chosen date.**
+
+**That fourth layer is the one visitors never see and never think about, and it is the subject of the next lesson.**
+
+**Two more disagreements in the record, kept rather than smoothed.**
+- **When the porch was added: 1895 or 1896**, depending on which of two sources you read. Both agree it was after the presidency.
+- **When Mary Lord Harrison sold the house: 1937 or 1939.** The National Park Service's own summary of the property says the Arthur Jordan Foundation purchased it in **1937**; the Encyclopedia of Indianapolis and the site's account of the sale to the Arthur Jordan School of Music give **1939** (National Park Service, n.d.-b; Encyclopedia of Indianapolis, n.d.-a). **A two-year gap in the transfer date of a National Historic Landmark is a deed question**, and the deed is in Marion County.
+
+**Why a course insists on this level of fuss about a porch.** Because the habit generalises. **If you will accept "the front porch campaign was run from that porch" without checking, you will accept much larger claims the same way.** The corridor course in this series killed an entire thesis with a table of dates. **This is the same move at the scale of a piece of a building.**
+
+## Sources
+- Benjamin Harrison Presidential Site. (n.d.-a). *The house*. https://bhpsite.org/learn/the-house/
+- Encyclopedia of Indianapolis. (n.d.-a). *Benjamin Harrison Presidential Site*. https://indyencyclopedia.org/benjamin-harrison-presidential-site/
+- Miller Center. (n.d.-b). *Benjamin Harrison: Campaigns and elections*. University of Virginia. https://millercenter.org/president/bharrison/campaigns-and-elections
+- National Park Service. (n.d.-b). *Benjamin Harrison Home* [National Historic Landmark listing]. https://www.nps.gov/subjects/nationalhistoriclandmarks/index.htm`,
+      recallContent: [
+        {
+          prompt: "State the porch problem in one sentence.",
+          answer: "The house is famous for an 1888 front porch campaign, but both published accounts date the front porch a visitor sees to 1895 or 1896, after the presidency.",
+        },
+        {
+          prompt: "What does the porch date prove, and what does it NOT prove?",
+          answer: "It proves the visible fabric postdates the event the house is famous for. It does not prove there was no porch in 1888, because neither source says what stood at the front door then.",
+        },
+        {
+          prompt: "What does the phrase 'front porch campaign' actually name?",
+          answer: "A campaign method: the candidate stays home and the country comes to him. The porch in the phrase is a metaphor that happens to also be a building part, and confusing the two produces claims about wood the record does not support.",
+        },
+        {
+          prompt: "Name the four layers present in any restored historic house.",
+          answer: "What was originally built; what the original owners changed while living there; what later owners changed for a different use; and what restorers removed, replaced or invented to return it to a chosen date. The fourth is the layer visitors never see.",
+        },
+        {
+          prompt: "Give the two dating disagreements this lesson keeps rather than smooths.",
+          answer: "The porch was added in 1895 or 1896 depending on the source, and Mary Lord Harrison's sale is dated 1937 by the National Park Service summary and 1939 by the Encyclopedia of Indianapolis and the site. Both are deed questions answerable in Marion County records.",
+        },
+      ],
+    },
+    {
+      slug: "ph-built-what-a-museum-shows",
+      title: "7 · What a preserved house chooses to show",
+      section: "Section 2 · Built",
+      body: `A house museum is not a house. **It is an argument about a house, built out of a house**, and every argument has an author, a date, and things it leaves out. This lesson teaches you to see the argument.
+
+**This building's own second life, with dates.**
+- **1937 or 1939** (the sources disagree, see lesson 6): **Mary Lord Harrison sold the house to the Arthur Jordan School of Music**, with the condition that it would always serve as a memorial to Benjamin Harrison (Encyclopedia of Indianapolis, n.d.-a).
+- **After the sale**: the school **turned the first floor into a museum and used the second and third floors as student housing**, a dormitory for the school's students (Encyclopedia of Indianapolis, n.d.-a).
+- **1964, January 29**: designated a **National Historic Landmark**.
+- **1966, October 15**: listed on the **National Register of Historic Places**, reference number **66000010**. In the same year **a not-for-profit operating foundation was established** to run the house as a historic site open to the public (Benjamin Harrison Presidential Site, n.d.-b).
+- **1974**: after a renovation by the **Arthur Jordan Foundation**, **the entire house opened as a museum for regular daily tours** (Encyclopedia of Indianapolis, n.d.-a).
+- **2003**: the museum earned **accreditation from the American Alliance of Museums** (Benjamin Harrison Presidential Site, n.d.-b).
+- **2021 to 2022**: a major renovation following a **$6 million capital campaign** (Encyclopedia of Indianapolis, n.d.-a).
+- **Today**: the Encyclopedia records the site receiving **up to 35,000 people annually** (Encyclopedia of Indianapolis, n.d.-a).
+
+**Look at the shape of that list.** For roughly thirty five years, the second and third floors of a president's house were **student bedrooms**. **That is not a failure of preservation, it is the reason there is anything to preserve**: a use that pays for a roof is what keeps a building standing long enough for anyone to decide it is important. Whenever you find a landmark that survived, ask what it was doing for a living in the decades before anybody called it a landmark.
+
+**Now the decision that governs everything a visitor sees: the restoration date.** Every house museum picks a moment to represent. The site describes preserving "the Victorian time period as Harrison and his family might have experienced it" (Benjamin Harrison Presidential Site, n.d.-b). **Notice the two hedges in that sentence, "time period" and "might have," and respect them: they are honest.** But the choice still has consequences, and they are the same everywhere:
+1. **Everything after the chosen date becomes clutter to be removed**, including the dormitory years, which were a third of the building's life.
+2. **Everything before it that was already gone cannot come back**, so the earliest layers are represented by inference.
+3. **Rooms get assigned to a purpose the family may have used flexibly.** A period room is a claim.
+4. **Absent people stay absent unless somebody decides otherwise.** A coachman's quarters over a carriage house is the sort of space that gets used for storage, and the person who lived there is not represented by furniture.
+
+**What designation does here, since it is the same law course 1 taught.** The Harrison house is a **National Historic Landmark**, the highest federal recognition, and it is on the **National Register**. Carry the rule forward without changing it: **federal listing is recognition plus review leverage when there is federal money or a federal permit, and it is not by itself a demolition veto for a private owner.** The regulation that can stop a demolition is normally **local**. And this house has that too: the **Old Northside** was listed on the National Register in **1978** and **designated an official Indianapolis historic district by the Indianapolis Historic Preservation Commission in the same year** (Encyclopedia of Indianapolis, n.d.-b).
+
+**One geographic fact about that district you should not skip past.** The Encyclopedia gives the Old Northside's boundaries as **16th Street, Bellefontaine Street, I-65, and Pennsylvania Street** (Encyclopedia of Indianapolis, n.d.-b). **An interstate highway is one of the four sides of the neighbourhood a president's house stands in.** Course 1 of this cluster taught the alignment decision as an instrument. **Here it is again, on the other side of town, as a property line.**
+
+**And the neighbourhood's own arc, which is the ordinary American one.** After the First World War residents moved north. During the Second World War large houses were subdivided into apartments and rooming houses. **"By the 1960s and 1970s, the neighbourhood suffered from poverty, neglect, and commercial intrusion."** Homeowners founded **Old Northside, Inc. in 1975**, and the district was listed and locally designated in **1978** (Encyclopedia of Indianapolis, n.d.-b). **The president's house was in a distressed neighbourhood during the same decades that Indiana Avenue was being cleared and Unigov was being written.** Those are different stories with different outcomes, and putting them on one timeline is what Section 3 does next.
+
+## Sources
+- Benjamin Harrison Presidential Site. (n.d.-b). *About*. https://bhpsite.org/about/
+- Encyclopedia of Indianapolis. (n.d.-a). *Benjamin Harrison Presidential Site*. https://indyencyclopedia.org/benjamin-harrison-presidential-site/
+- Encyclopedia of Indianapolis. (n.d.-b). *Old Northside*. https://indyencyclopedia.org/old-northside/
+- National Park Service. (n.d.-c). *National Historic Landmarks program*. https://www.nps.gov/subjects/nationalhistoriclandmarks/index.htm
+- National Park Service. (n.d.-d). *National Register of Historic Places: Frequently asked questions*. https://www.nps.gov/subjects/nationalregister/faqs.htm`,
+      recallContent: [
+        {
+          prompt: "What did the upper floors of the president's house hold for roughly thirty five years, and why is that not a failure?",
+          answer: "Student housing for the Arthur Jordan School of Music. A use that pays for a roof is what keeps a building standing long enough for anyone to decide it is important.",
+        },
+        {
+          prompt: "Give the designation dates for the house and the neighbourhood.",
+          answer: "National Historic Landmark January 29, 1964; National Register October 15, 1966, reference 66000010. The Old Northside was listed on the National Register in 1978 and designated an official Indianapolis historic district by the city's preservation commission in the same year.",
+        },
+        {
+          prompt: "Name the four consequences of choosing a restoration date.",
+          answer: "Everything after the date becomes clutter to remove; the earliest layers can only be inferred; rooms get assigned a single purpose the family may have used flexibly; and absent people stay absent unless somebody decides otherwise.",
+        },
+        {
+          prompt: "Restate the designation rule this course carries from the Indiana Avenue course.",
+          answer: "Federal listing, including National Historic Landmark status, is recognition plus review leverage when federal money or a permit is involved. It is not a demolition veto for a private owner. Local designation under a local ordinance is what regulates.",
+        },
+        {
+          prompt: "What are the Old Northside's boundaries, and which one should stop you?",
+          answer: "16th Street, Bellefontaine Street, I-65, and Pennsylvania Street. An interstate is one of the four sides of the neighbourhood, which is the alignment instrument from course 1 reappearing as a property line.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
