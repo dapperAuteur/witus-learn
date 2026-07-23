@@ -1248,6 +1248,732 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Now  (beat 4: observation and evidence)
+    //
+    // The owner's existing Mudsock / Hamilton County rivalry tour is the beat 4 asset, but its
+    // embed URL DOES NOT EXIST YET, and a tour URL is authoritative external data that must never
+    // be guessed (plans/future/04-wanderlearn-360-boundary.md). So this lesson ships as
+    // `virtual_tour` with NO contentUrl, exactly like `ia-now-tour` in the Indiana Avenue course:
+    // the player renders the "no media yet" notice above the body, and the body is the observation
+    // brief the learner uses when the tour lands. Drop the URL in and re-seed.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ms-now-tour",
+      title: "14 · Now: walk the boundary (virtual tour, forthcoming)",
+      section: "Section 4 · Now",
+      lessonType: "virtual_tour",
+      body: `**The virtual tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is telling you the truth rather than reporting a fault. This course was written before the tour's embed URL existed, on purpose: the site template this series uses treats beat 4 as a drop-in, so **a course is complete and teachable without it** and the tour is added later without restructuring anything.
+
+**Read this lesson now anyway.** It is your observation brief. Beat 4 asks one question, "what is actually there today," and **the difference between a visitor looking at a suburb and a researcher looking at a suburb is entirely a matter of knowing what to look for before you arrive.** Work through this list now, then run it against the tour when it lands.
+
+## What to look for, in order
+
+**1. Find an edge and ask which edge it is.** The single most useful habit in this course. Every time the built environment changes character, ask **which of the four boundaries you are standing on**: a municipal limit, a township line, a school corporation line, or a taxing district. **Usually it is none of them**, because most visible edges are the edge of a subdivision, which is a private plat rather than a jurisdiction. **Learning to be disappointed by an edge is the skill.**
+
+**2. Count the connections between subdivisions.** Stand at the boundary between two neighbourhoods and count how many streets cross it. **Often the answer is zero, or one.** That is the street hierarchy from lesson 5, and it is written into an ordinance. Note where a street stubs out at a treeline, because **a stub is a future connection somebody drew and has not built.**
+
+**3. Look for the age of the road, not the age of the houses.** Section line roads on a mile grid are the oldest thing in view, older than every building around them, and they came from the federal land survey. **Where a road bends off the grid, something made it bend**, usually water, a railroad, or a reservoir.
+
+**4. Find the sewer.** Manhole covers, lift stations, the boundary between a neighbourhood on municipal sewer and one on septic. **You are looking at the line that lesson 9 said decides annexations.** A sewer boundary is a political boundary with a twenty year fuse.
+
+**5. Look at the school sites and estimate the acreage.** How much of the campus is building, how much is parking, how much is field. **Then ask how a fourteen year old without a car reaches it.** That is not a rhetorical question. It has an answer, and the answer is a bus route with a published map.
+
+**6. Read the signs that are documents.** A rezoning notice, a public hearing sign, a plat marker, a "future site of" board, an annexation notice. **Every one of those has a case number, a hearing date and a deciding body**, and Section 5 teaches you to look them up. Photograph the whole sign including the small print.
+
+**7. Look at the reservoir edge, if the tour reaches it.** Where does public access end and private frontage begin? **Who owns the water, who owns the bank, and who is allowed on it** are three separate questions with three separate answers, and lesson 7 gave you the entity that once held all three.
+
+**8. Look at who is on the street, and describe them as they would describe themselves, or not at all.** A tour is a photograph of strangers in a public place. **The ethics of writing about it are the ethics of writing about neighbours**, and they do not change because the neighbourhood is affluent.
+
+## What the tour cannot show you
+
+- **It cannot show you a boundary.** This is the hardest one and the most important. **Not one of the four jurisdictional lines in lesson 10 is visible from the ground.** There is no sign at the school district line. You can stand on it and see nothing.
+- **It cannot show you a rate.** Two identical houses on opposite sides of a taxing district line pay different bills, and nothing about them looks different.
+- **It cannot show you a waiver.** The document that settled the annexation of 710 parcels is a piece of paper in a county recorder's office.
+- **It cannot show you a decision.** A subdivision is evidence that a plat was recorded. **It is not evidence about anybody's motive**, and lesson 7 spent a paragraph on why that distinction matters.
+
+**Write down your five most confident observations before the tour arrives, based on this brief and the map lesson that follows. Then check them.** Being wrong on the record about a place you had not yet seen is a better teacher than being right about one you had.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Fishers*. https://indyencyclopedia.org/fishers/
+- Encyclopedia of Indianapolis. (n.d.-d). *Geist Reservoir*. https://indyencyclopedia.org/geist-reservoir/
+- U.S. Environmental Protection Agency. (n.d.). *Smart growth and school siting*. https://www.epa.gov/smartgrowth/smart-growth-and-school-siting`,
+      recallContent: [
+        {
+          prompt: "Why is this lesson published before its tour exists?",
+          answer: "Because the site template treats beat 4 as a drop-in: a course is complete and teachable with the other five beats, and the tour is added later without restructuring anything. A tour embed URL is authoritative external data and is never guessed.",
+        },
+        {
+          prompt: "When you find a visible edge in a suburb, what is usually true about it?",
+          answer: "That it is none of the four jurisdictional boundaries. Most visible edges are the edge of a subdivision, which is a private plat rather than a jurisdiction. Learning to be disappointed by an edge is the skill.",
+        },
+        {
+          prompt: "Why is a sewer boundary a political boundary?",
+          answer: "Because connection to municipal sewer is when a remonstrance waiver is signed. It is a political boundary with roughly a twenty year fuse.",
+        },
+        {
+          prompt: "Name the four things a tour of this ground cannot show you.",
+          answer: "A boundary, because none of the four jurisdictional lines is visible from the ground; a tax rate; a recorded remonstrance waiver; and a decision, since a subdivision proves a plat was recorded and proves nothing about motive.",
+        },
+      ],
+    },
+    {
+      slug: "ms-map",
+      title: "15 · Map: one county, and the national pattern it belongs to",
+      section: "Section 4 · Now",
+      body: `**Read this before you touch the map, because the map's limits are the lesson.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed size dot on a world projection, so two points need to be roughly two degrees apart, on the order of two hundred kilometres, before they separate visually. **Fishers and downtown Indianapolis are about a fifth of a degree apart.** On this map they will crowd into nearly the same dot, **which is a completely accurate rendering of the problem this course is about**: at national scale, a city and its suburb are one place, and every difference that matters between them is invisible.
+
+**So use the right tool for the right question.** For a parcel, a taxing district or a boundary, the right maps are the county's and the state's, and Section 5 sends you to both:
+- **Hamilton County's property records**, searchable by parcel number, state parcel number, property address or mailing address, giving ownership, deductions, transfer history and assessed values (Hamilton County, Indiana, n.d.).
+- **Indiana Gateway for Government Units**, "an open door into local government finance," operated as a partnership between the State of Indiana and the Indiana Business Research Center at Indiana University's Kelley School of Business, publishing budgets, levies, tax rates and referendum information for every local unit in the state (Indiana Gateway, n.d.).
+
+**Choosing the right scale of map for your question is a research skill.** Course 1 said the same thing and sent its learners to MapIndy for Marion County. **This is the Hamilton County version of that instruction.**
+
+**So this map does the job a world map can do well.** It puts this county in the national pattern of instruments it belongs to, and marks where the records live.
+
+**Blue: the two ends of this cluster's argument.** Fishers and Geist Reservoir on one side, Indiana Avenue on the other. **Twenty miles apart, same metropolitan area, same decades, opposite instruments.** Read their two descriptions back to back and you have both courses in a paragraph each.
+
+**Amber: three American places where these exact instruments were litigated.** These are here to stop you reading Hamilton County as a local peculiarity. **Incorporation, annexation and the school district line are a national method with a national case law**, and in each of these places a court wrote down what the instrument does.
+
+**Green: two records offices.** Noblesville, the Hamilton County seat, holds the recorder's office where every plat and every remonstrance waiver in this course physically lives, and it is the courthouse where the 1925 Klan trial was held. Indianapolis holds the state library, the state archives and the agencies that run Gateway and the property tax caps. **Knowing where a record physically lives is part of knowing that it exists.**
+
+**Coordinates on this map are approximate points, not surveyed locations.** Do not use them to find an address. Use them to see the shape of the pattern, and use the county's property records when you need a parcel.
+
+**What this map cannot show, and neither could course 1's.** It cannot show a boundary, which is the entire problem. **Every marker here is a point, and every subject of this course is a line.** If you want to see the lines, you need a county GIS layer, and getting one is the assignment in lesson 17.
+
+## Sources
+- Hamilton County, Indiana. (n.d.). *Property records*. https://secure2.hamiltoncounty.in.gov/PropertyReports/
+- Indiana Gateway for Government Units. (n.d.). *An open door into local government finance*. https://gateway.ifionline.org/
+- Milliken v. Bradley, 418 U.S. 717 (1974). https://supreme.justia.com/cases/federal/us/418/717/
+- United States v. City of Black Jack, 508 F.2d 1179 (8th Cir. 1974). https://law.justia.com/cases/federal/appellate-courts/F2/508/1179/366846/
+- Chalkbeat Tennessee. (2015, July 16). *Municipal superintendents cite challenges, benefits of split from Shelby County Schools*. https://www.chalkbeat.org/tennessee/2015/7/16/21101643/municipal-superintendents-cite-challenges-benefits-of-split-from-shelby-county-schools/`,
+      mapContent: {
+        markers: [
+          {
+            id: "ms-fishers",
+            lat: 39.9568,
+            lng: -86.0139,
+            title: "Fishers, Hamilton County, Indiana",
+            color: "#1d4ed8",
+            description:
+              "The subject of this course. A railroad switch platted in 1872, nicknamed Mudsock for its swampy soil, incorporated as a town in 1891, and holding 344 residents in 1960. It reached 98,977 in the 2020 census and became a second class city on January 1, 2015 after a two question referendum in which voters rejected merging with Fall Creek Township 62 to 38 and approved city status 55 to 45. It annexed the Geist area in 2010 and 994 acres in the southeast in 2025. Its two public high schools, Fishers and Hamilton Southeastern, contest the Mudsock trophy across all varsity sports, and both sit inside one school corporation, one city and one county.",
+          },
+          {
+            id: "ms-geist",
+            lat: 39.921,
+            lng: -85.937,
+            title: "Geist Reservoir, Indiana (approximate point)",
+            color: "#1d4ed8",
+            description:
+              "Infrastructure for one city, built in another county. The Indianapolis Water Company dammed Fall Creek in 1941 and began supplying Indianapolis with water in 1943. The reservoir covers 1,900 acres across northern Marion, southeastern Hamilton and northwestern Hancock counties, stores 6.9 billion gallons, and covered 535 acres of woodland and 45 homesteads including the village of Germantown. Housing began in 1980; by the early 2000s about 2,200 upscale homes lined the banks, and Fishers annexed them on January 2, 2010 after a four year legal fight.",
+          },
+          {
+            id: "ms-indiana-avenue",
+            lat: 39.7745,
+            lng: -86.1665,
+            title: "Indiana Avenue, Indianapolis, Indiana",
+            color: "#7c3aed",
+            description:
+              "The other end of this cluster's argument, and the subject of the companion course. A Black commercial and cultural corridor, 77 percent Black by 1920, holding more than 180 businesses in eight blocks in 1916. Most of it went to blight designation, university land assembly and eminent domain between 1948 and the 1980s. Twenty miles from the marker to the north, over the same decades, under the opposite set of instruments. Neither course makes sense without the other.",
+          },
+          {
+            id: "ms-detroit-milliken",
+            lat: 42.3314,
+            lng: -83.0458,
+            title: "Detroit, Michigan: Milliken v. Bradley",
+            color: "#b45309",
+            description:
+              "Where the school district line became nearly untouchable. In Milliken v. Bradley, 418 U.S. 717, decided July 25, 1974 by a 5 to 4 vote, the Supreme Court set aside a metropolitan desegregation remedy spanning Detroit and outlying districts, holding that a cross district remedy required a showing of an interdistrict violation or effect. Read it beside lesson 10: an Indiana county committee drew a line in the early 1960s, and a decade later the federal courts made lines of that kind far harder to cross.",
+          },
+          {
+            id: "ms-black-jack",
+            lat: 38.7909,
+            lng: -90.2712,
+            title: "Black Jack, Missouri: incorporation as an instrument",
+            color: "#b45309",
+            description:
+              "Incorporation used on its own, and then found unlawful. Black Jack incorporated in 1970 and adopted a zoning ordinance barring new multifamily construction while a church backed group was assembling land there for low income housing. In United States v. City of Black Jack, 508 F.2d 1179, decided December 27, 1974, the Eighth Circuit held the ordinance violated Title VIII of the Civil Rights Act of 1968 and ordered it enjoined. Lesson 8 taught incorporation as a neutral instrument. This is the case where a court examined what one was used for.",
+          },
+          {
+            id: "ms-shelby-county",
+            lat: 35.0868,
+            lng: -89.8101,
+            title: "Germantown and Shelby County, Tennessee: districts that split",
+            color: "#b45309",
+            description:
+              "The modern version of lesson 10, running in reverse and inside living memory. Memphis voters surrendered their city school district's charter in 2011 and it merged with Shelby County Schools effective July 1, 2013. Six suburban municipalities, Arlington, Bartlett, Collierville, Germantown, Lakeland and Millington, then formed their own municipal school districts, which opened in August 2014 after litigation including claims that their creation was racially motivated. School district lines are not a settled historical artifact; they are still being drawn.",
+          },
+          {
+            id: "ms-noblesville",
+            lat: 40.0456,
+            lng: -86.0086,
+            title: "Noblesville, Indiana: the Hamilton County seat and its records",
+            color: "#15803d",
+            description:
+              "Where the documents in this course physically live. The county recorder holds every subdivision plat and every recorded remonstrance waiver, including the 710 that settled the 2025 southeast annexation before it began. The auditor applies the circuit breaker credits. The assessor produces the property record cards. And the Hamilton County courthouse is where the murder trial of D. C. Stephenson, Grand Dragon of the Indiana Ku Klux Klan, was held from October 28 to November 14, 1925, on a change of venue out of Indianapolis.",
+          },
+          {
+            id: "ms-indianapolis-state",
+            lat: 39.7684,
+            lng: -86.1622,
+            title: "Indianapolis: the state records and the agencies",
+            color: "#15803d",
+            description:
+              "Where the state half of this course is kept. The Indiana General Assembly passed the 1959 School Reorganization Act, the 1969 Unigov statute with its bar on annexation into neighbouring counties, Senate Enrolled Act 330 of 2015 on remonstrance, and Senate Enrolled Act 1 of 2025 on property taxes. The Department of Local Government Finance administers the constitutional tax caps and publishes the historic school referenda list, and Indiana Gateway publishes every local unit's budget, levy and rate.",
+          },
+        ],
+      },
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Next  (beat 5: live civics. a referendum on the ballot right now, and a parcel)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ms-next-live",
+      title: "16 · What is on the ballot and in the fiscal plan right now",
+      section: "Section 5 · Next",
+      body: `Beat 5 is the beat that turns a history course into a civics course. **Every place has a decision pending on it right now**, and finding that decision is a research skill rather than an opinion. **This ground has an unusually good one, because it is a school funding referendum that has not been voted on yet.**
+
+## The live item: a school operating referendum, November 3, 2026
+
+**The Hamilton Southeastern Board of School Trustees approved a resolution on June 10, 2026, by a vote of 6 to 0 with one abstention, to place an operating referendum on the November 2026 ballot** (Current Publishing, 2026; The Reporter, 2026).
+
+**The terms, from the district's own referendum page.** "Up to $0.36 per $100 of assessed property value over eight years," on the **November 3, 2026** ballot, with the district projecting "a $3 per month increase to their 2027 tax bill" for the median homeowner. The stated purposes are "teacher compensation, school safety, student behavioral health services, and educational programs," and the district describes the measure as necessitated by "recent changes to Indiana property tax law" (Hamilton Southeastern Schools, n.d.-a).
+
+**The stated reason, in the officials' own words.** Board President **Tiffany Pascoe**: "In response to SEA-1, the Board has referred this measure to voters. This referendum would help sustain the district's long-term financial outlook." Superintendent **Dr. Matt Kegley**: "This recommendation takes a pragmatic approach by seeking to recover a portion of the revenue lost through SEA-1." The district also reported identifying **7 million dollars in ongoing reductions** (The Reporter, 2026).
+
+**Reporting adds a detail the district page does not.** Coverage of the June resolution described a plan to **start at a rate of about 22 cents and escalate about 6 percent a year to roughly 33 cents by 2034**, under a 36 cent ceiling, and described the measure as replacing the referendum voters approved in 2023 (Current Publishing, 2026). **Notice what just happened: the maximum rate on the ballot and the rate the district intends to levy are two different numbers.** That is normal, legal and worth understanding, and **it is the sort of thing you can only learn by reading past the headline number.**
+
+## Why this is happening: Senate Enrolled Act 1 of 2025
+
+Lesson 11 explained the constitutional caps. **SEA 1, passed in the 2025 session, is the next move in the same game.** Published summaries describe a package that phases in over roughly six years through 2031: the standard homestead deduction begins to phase out, the supplemental homestead deduction rises, a new homestead tax credit is introduced with a dollar cap, levy growth is constrained unless a fiscal body affirmatively adopts an increase after a separate public hearing, and **property tax referenda may appear only on general election ballots.**
+
+**Read that last provision as an instrument.** A rule about **when** a question may be asked is a rule about **who will be in the room to answer it.** A general election electorate is larger and differently composed than a primary or special election electorate. **The 2016 Hamilton Southeastern referendum was decided in a May primary. The 2026 one must be decided in November.** Neither is more legitimate. **They are different electorates, and somebody chose which one gets the question.** That is the same class of decision as Unigov's threshold of 250,000 residents, which course 1 showed writing a law for one city while appearing to write a general rule.
+
+**And the district has already published what the caps cost it**: a 4.6 million dollar reduction from the 2025 property tax caps and an estimated 4.5 million dollar impact from the Supplemental Homestead Credit beginning in 2026 (Hamilton Southeastern Schools, n.d.-b).
+
+## The other live document: the comprehensive plan
+
+**Fishers adopted its comprehensive plan, Fishers 2040, in June 2016, with amendments published in June 2021**, and the city describes it as covering future land use, quality of life, parks and open space, transportation and housing, updated on a five year cycle (City of Fishers, n.d.).
+
+**A caution about how this course cites that plan, and it is a method note.** The city's web server refused automated requests while this course was written, so **the plan's adoption dates here are taken from the title pages of the documents as the city publishes them, and the plan's contents have not been read into this course.** That is a limit, it is stated rather than hidden, and **it is also your first assignment: open the plan yourself.** The URLs are in the sources below.
+
+## The four questions, localised
+
+Course 1 gave four questions that work for any American parcel. **Here is what each one resolves to on this ground.**
+
+1. **What does the comprehensive plan say this land should become?** In Fishers, the Fishers 2040 plan. In unincorporated territory, the county's comprehensive plan.
+2. **What does the zoning permit today?** Fishers administers a Unified Development Ordinance. **A comprehensive plan is not zoning**; it is the policy statement a rezoning is judged against.
+3. **Is there an area specific plan or a pending annexation, and has it been adopted?** For an annexation, Indiana requires a written **fiscal plan** adopted before the ordinance, spelling out services, costs, revenue and the tax effect. The southeast annexation's fiscal plan is dated **September 5, 2024** and is published on the city's website.
+4. **Who decides, when do they meet, and is the agenda public?** For land use, the plan commission and the city council. For annexation, the city council. For the school referendum, **the voters**, on November 3, 2026, after a school board that has already voted.
+
+**Two habits to carry.**
+
+**First, find the document with the number in it.** A fiscal plan, a budget, a levy certification, a referendum resolution. **A number without a document is a rumour**, and every number in this lesson has a document behind it.
+
+**Second, re-check everything above before you rely on it.** Referendum rates get amended. Plans get updated. Contracts get extended. **Every date and figure in this lesson has a source and a date attached, and you should verify all of them.** That instruction is not a disclaimer. It is the method.
+
+## Sources
+- City of Fishers. (n.d.). *Fishers 2040 plan*. https://fishersin.gov/departments/planning-zoning/fishers-2040-plan/
+- City of Fishers. (2024, September 5). *Southeast annexation fiscal plan 2.0*. https://fishersin.gov/wp-content/uploads/2024/09/City-of-Fishers-Southeast-Annexation-Fiscal-Plan-2.0.pdf
+- Current Publishing. (2026, June 11). *Hamilton Southeastern school board OKs referendum resolution*. https://youarecurrent.com/2026/06/11/hamilton-southeastern-school-board-oks-referendum-resolution/
+- Hamilton Southeastern Schools. (n.d.-a). *Referendum 2026*. https://www.hseschools.org/community/referendum-2026
+- Hamilton Southeastern Schools. (n.d.-b). *Revenue sources*. https://www.hseschools.org/community/finances/revenue-sources
+- Indiana General Assembly. (2025). *Senate Bill 1: Local government finance*. https://iga.in.gov/legislative/2025/bills/senate/1
+- The Reporter. (2026). *HSE Board approves placing operating referendum on November ballot*. https://readthereporter.com/hse-board-approves-placing-operating-referendum-on-november-ballot/`,
+      recallContent: [
+        {
+          prompt: "What is on the November 3, 2026 ballot for Hamilton Southeastern Schools, and on what terms?",
+          answer: "An operating referendum of up to 0.36 dollars per 100 dollars of assessed value over eight years, approved by the school board 6 to 0 with one abstention on June 10, 2026. The district projects a 3 dollar per month increase on the median homeowner's 2027 bill.",
+        },
+        {
+          prompt: "Why are the maximum rate on the ballot and the rate the district intends to levy different numbers?",
+          answer: "The ballot sets a ceiling. Coverage of the resolution described a plan to start near 22 cents and escalate about 6 percent a year to roughly 33 cents by 2034, under a 36 cent maximum. That is normal and legal, and you only learn it by reading past the headline number.",
+        },
+        {
+          prompt: "Why does the district say it is asking, and who said so?",
+          answer: "Senate Enrolled Act 1 of 2025. Board President Tiffany Pascoe said the board referred the measure in response to SEA-1 to sustain the district's long-term outlook, and Superintendent Dr. Matt Kegley described it as seeking to recover a portion of revenue lost through SEA-1. The district also identified 7 million dollars in ongoing reductions.",
+        },
+        {
+          prompt: "Why is 'referenda may appear only on general election ballots' an instrument rather than a technicality?",
+          answer: "Because a rule about when a question may be asked is a rule about who will be in the room to answer it. The 2016 referendum was decided in a May primary; the 2026 one must go to a November general electorate. Neither is more legitimate, but somebody chose which electorate gets the question.",
+        },
+        {
+          prompt: "How does this course cite the Fishers 2040 plan, and why does it say so out loud?",
+          answer: "By its published adoption dates, June 2016 with amendments published in June 2021, taken from the documents' title pages. The city's server refused automated requests, so the plan's contents have not been read into this course. The limit is stated rather than hidden, and opening the plan is the learner's assignment.",
+        },
+      ],
+    },
+    {
+      slug: "ms-next-exercise",
+      title: "17 · Practice: find a parcel, a taxing district and a levy",
+      section: "Section 5 · Next",
+      lessonType: "exercise",
+      body: `**This drill is the whole of beat 5 in miniature, and you should do it with the real tools open in another tab.** Everything below is free and public.
+
+**The three tools.**
+- **Hamilton County property records**: https://secure2.hamiltoncounty.in.gov/PropertyReports/ . Search by county (duplicate) number, state parcel number, property address or mailing address. It returns ownership, deductions, transfer history, assessed values and printable tax statements (Hamilton County, Indiana, n.d.).
+- **Indiana Gateway for Government Units**: https://gateway.ifionline.org/ . Operated as a partnership between the State of Indiana and the Indiana Business Research Center at IU's Kelley School of Business. Its Taxpayer Portal shows assessed values, tax bills and referendum calculators, and its report search and data download reach every local unit's budget, levy and rate (Indiana Gateway, n.d.).
+- **The Department of Local Government Finance's historic school tax levy referenda list**: https://www.in.gov/dlgf/referendum-information/historic-school-tax-levy-referenda/ . Every Indiana school referendum, with its findings, resolution, revenue spending plan and certified result.
+
+**Your target: a public building, not a home.** Pick a school, a library, a city hall, a fire station or a park building in Fishers or Noblesville. **Do not run this drill on somebody's house and publish the result.** A parcel record is public; a current occupant's name attached to their address in a piece of writing is a different act. **This is the same rule course 1 applied to the Green Book tourist homes, and it does not relax because the neighbourhood is affluent.**
+
+**Work through these, then answer the questions below.**
+1. Find the parcel in Hamilton County property records. Write down the **state parcel number** exactly, including punctuation.
+2. Read off the **owner of record** and the **assessed value**. Compare the owner of record to the name of the organisation that occupies the building. **If they differ, that is normal and it is a finding.**
+3. Find the **taxing district** the parcel sits in. Then list every unit that levies on it: county, township, city or town if any, school corporation, library, and any special district. **Count them.** Course 1 noted that Marion County has more than 61 taxing districts; **find out how many Hamilton County has, from Gateway.**
+4. In Gateway, pull **Hamilton Southeastern Schools' certified levy and rate** for the most recent year available. Compare the referendum rate to the total rate. **What share of the bill is the referendum?**
+5. Look up the **circuit breaker credit** on the parcel, if any. That is the dollar figure the caps are removing from a local unit's revenue.
+6. In the DLGF referenda list, find **every Hamilton Southeastern referendum** and note the year, the rate asked and the result. Then find one **neighbouring district's** referenda and compare.
+7. Ask the boundary question: **is this parcel inside the city limits? Which township? Which school corporation? Which council district?** Write down all four and notice that they are four different shapes.
+
+**The habits this builds, which transfer to any American county.** Every county has an assessor, a recorder and an auditor, and most have a GIS and an online property search. **The names of the tools change and the facts do not: parcel number, owner of record, assessed value, taxing district, and the list of units that levy on it.** Learn to find those five and you can research any address in the country.
+
+**One rule you do not get to break.** Public buildings and commercial addresses only for anything you publish. **The tools do not care and you should.**
+
+## Sources
+- Hamilton County, Indiana. (n.d.). *Property records*. https://secure2.hamiltoncounty.in.gov/PropertyReports/
+- Indiana Department of Local Government Finance. (n.d.). *Historic school tax levy referenda*. https://www.in.gov/dlgf/referendum-information/historic-school-tax-levy-referenda/
+- Indiana Department of Local Government Finance. (2024, April). *Property tax caps / circuit breaker credits fact sheet*. https://www.in.gov/dlgf/files/240429-Fact-Sheet-Circuit-Breaker-Caps.pdf
+- Indiana Gateway for Government Units. (n.d.). *An open door into local government finance*. https://gateway.ifionline.org/`,
+      exercise: {
+        instructions:
+          "Type the missing term, name, number, body or year, then check. Close answers (spelling, capitalization) count as 'close', not wrong.",
+        items: [
+          {
+            prompt: "The state's public database of every Indiana local unit's budget, levy and rate is called Indiana ___.",
+            answer: "Gateway",
+            accept: ["gateway", "indiana gateway", "gateway for government units"],
+            explanation: "At gateway.ifionline.org, run as a partnership between the State of Indiana and the Indiana Business Research Center at IU's Kelley School of Business.",
+          },
+          {
+            prompt: "The recorded document by which a landowner permanently gives up the right to object to a future annexation is a remonstrance ___.",
+            answer: "waiver",
+            accept: ["waivers", "remonstrance waiver"],
+            explanation: "It is typically signed when a property connects to municipal sewer, and it runs with the land, so later buyers inherit it.",
+          },
+          {
+            prompt: "In the Fishers southeast annexation, ___ of the 960 parcels carried recorded remonstrance waivers.",
+            answer: "710",
+            accept: ["710 parcels", "seven hundred ten"],
+            explanation: "About 74 percent. Since 65 percent opposition would end an annexation under SEA 330, the outcome was settled when the sewer went in.",
+          },
+          {
+            prompt: "Indiana's annual property tax bill on an owner-occupied homestead is capped at ___ percent of gross assessed value.",
+            answer: "1",
+            accept: ["one", "1 percent", "1%"],
+            explanation: "Two percent applies to other residential, long-term care property and agricultural land; three percent to nonresidential and personal property.",
+          },
+          {
+            prompt: "In most Indiana counties the only exemption from the property tax caps is a levy approved by voters in a public ___.",
+            answer: "referendum",
+            accept: ["referenda", "referendum vote", "vote"],
+            explanation: "That is the whole reason school referenda exist in Indiana: a referendum is the only legal door in a constitutional wall.",
+          },
+          {
+            prompt: "The caps entered the Indiana Constitution after voters approved them in November of ___.",
+            answer: "2010",
+            accept: ["10"],
+            explanation: "Senate Joint Resolution 1 passed the General Assembly in 2008 and again in 2010 before going to the voters, adding the caps to Article 10, Section 1.",
+          },
+          {
+            prompt: "Indiana's municipally initiated annexation, commonly miscalled involuntary, is at IC 36-4-3-___.",
+            answer: "3",
+            accept: ["three", "36-4-3-3"],
+            explanation: "IC 36-4-3-5 is owner initiated with 51 percent of owners or 75 percent of assessed value, and IC 36-4-3-5.1 requires 100 percent consent.",
+          },
+          {
+            prompt: "Under Senate Enrolled Act 330 of 2015, remonstrance at ___ percent ends an annexation.",
+            answer: "65",
+            accept: ["sixty five", "65 percent"],
+            explanation: "51 percent gets a court hearing. Before 2015, 65 percent was needed merely to get into court.",
+          },
+          {
+            prompt: "The Indiana School ___ Act of 1959 is why school district lines in this state were drawn where they are.",
+            answer: "Reorganization",
+            accept: ["reorganisation", "reorganization act", "school reorganization"],
+            explanation: "It required a plan in every county, set a 1,000-student standard, and cut Indiana's districts from 966 to 402.",
+          },
+          {
+            prompt: "Unigov barred Indianapolis from annexing into ___ counties, which is why Hamilton County was out of reach.",
+            answer: "neighbouring",
+            accept: ["neighboring", "adjacent", "other", "surrounding"],
+            explanation: "The restriction was needed to get the votes. The same statute that erased municipal boundaries inside Marion County fixed the county line as a limit.",
+          },
+          {
+            prompt: "Fishers became a second class ___ on January 1, 2015.",
+            answer: "city",
+            accept: ["city of the second class"],
+            explanation: "Voters approved the change 20,052 to 16,169 while rejecting a merger with Fall Creek Township 23,483 to 14,097.",
+          },
+          {
+            prompt: "The Hamilton Southeastern operating referendum on the November 3, 2026 ballot asks for a maximum rate of ___ cents per 100 dollars of assessed value.",
+            answer: "36",
+            accept: ["thirty six", "0.36", "$0.36"],
+            explanation: "Over eight years. The board approved the resolution 6 to 0 with one abstention on June 10, 2026, citing Senate Enrolled Act 1 of 2025.",
+          },
+          {
+            prompt: "Hamilton Southeastern Schools states that it ranks in the bottom ___ percent of Indiana districts in state tuition support per student.",
+            answer: "2",
+            accept: ["two", "2 percent", "bottom 2"],
+            explanation: "State formulas direct additional funding toward student need, so a district in the state's highest income county receives among the least state money per student.",
+          },
+          {
+            prompt: "A private water utility dammed Fall Creek in 1941, flooding 535 acres and 45 homesteads including the village of ___.",
+            answer: "Germantown",
+            accept: ["germantown village"],
+            explanation: "The reservoir began supplying Indianapolis with water in 1943 and is named for Clarence H. Geist, president of the Indianapolis Water Company from 1913 to 1938.",
+          },
+          {
+            prompt: "The line between Fishers High School and Hamilton Southeastern High School is an ___ boundary, not a jurisdictional one.",
+            answer: "attendance",
+            accept: ["attendance area", "school attendance"],
+            explanation: "Both schools are in one school corporation, one city and one county, under one board, one set of rates, one referendum and one ballot.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "ms-quiz-next",
+      title: "18 · Quiz: finding the live record",
+      section: "Section 5 · Next",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why is this course's map lesson national rather than block by block?",
+            options: [
+              "Because Hamilton County's coordinates are unknown",
+              "Because the lesson map draws the whole world, so points need roughly two degrees of separation to separate visually, and Fishers is about a fifth of a degree from downtown Indianapolis",
+              "Because county maps are copyrighted",
+              "Because the course avoids maps of Indiana",
+            ],
+            correctIndex: 1,
+            explanation: "That crowding is an accurate rendering of the problem: at national scale a city and its suburb are one place, and every difference that matters between them is invisible.",
+            sourceLessonSlug: "ms-map",
+          },
+          {
+            prompt: "What is Indiana Gateway for Government Units?",
+            options: [
+              "A private real estate listing site",
+              "The state's online voter registration portal",
+              "The state's public database of local government budgets, levies, tax rates and referendum information, run with the Indiana Business Research Center",
+              "A historical atlas of Indiana townships",
+            ],
+            correctIndex: 2,
+            explanation: "Its Taxpayer Portal shows assessed values, tax bills and referendum calculators, and its report search reaches every local unit in the state.",
+            sourceLessonSlug: "ms-next-exercise",
+          },
+          {
+            prompt: "Which five facts should you pull for any parcel in any American county?",
+            options: [
+              "Parcel number, owner of record, assessed value, taxing district, and the list of units that levy on it",
+              "Square footage, roof age, paint colour, street name and school",
+              "Architect, contractor, original cost, current tenant and zoning",
+              "Purchase price, mortgage lender, insurer, and two neighbours' names",
+            ],
+            correctIndex: 0,
+            explanation: "The names of the tools change from county to county; those five facts do not.",
+            sourceLessonSlug: "ms-next-exercise",
+          },
+          {
+            prompt: "What is on the Hamilton Southeastern ballot on November 3, 2026?",
+            options: [
+              "A bond issue for a third high school",
+              "An operating referendum of up to 0.36 dollars per 100 dollars of assessed value over eight years",
+              "A proposal to merge with Noblesville schools",
+              "A question on annexing the district into Fishers",
+            ],
+            correctIndex: 1,
+            explanation: "The board approved the resolution 6 to 0 with one abstention on June 10, 2026, and the district projects a 3 dollar per month increase for the median homeowner's 2027 bill.",
+            sourceLessonSlug: "ms-next-live",
+          },
+          {
+            prompt: "Why do the maximum rate on a referendum ballot and the rate a district intends to levy differ?",
+            options: [
+              "Because the county auditor sets the actual rate",
+              "Because the ballot rate is adjusted for inflation each year",
+              "Because the maximum is a ceiling, and the district may plan to levy below it and escalate over the term",
+              "Because the state caps referendum rates at half the ballot figure",
+            ],
+            correctIndex: 2,
+            explanation: "Coverage of the June 2026 resolution described starting near 22 cents and escalating about 6 percent a year to roughly 33 cents by 2034 under a 36 cent ceiling. You only learn that by reading past the headline number.",
+            sourceLessonSlug: "ms-next-live",
+          },
+          {
+            prompt: "Senate Enrolled Act 1 of 2025 restricted property tax referenda to general election ballots. Why does this course call that an instrument?",
+            options: [
+              "Because it saves counties money on special elections",
+              "Because a rule about when a question may be asked is a rule about who will be in the room to answer it",
+              "Because it makes referenda unconstitutional",
+              "Because general elections have lower turnout",
+            ],
+            correctIndex: 1,
+            explanation: "The 2016 Hamilton Southeastern referendum was decided in a May primary and the 2026 one must go to a November electorate. Neither is more legitimate; somebody chose which electorate gets the question.",
+            sourceLessonSlug: "ms-next-live",
+          },
+          {
+            prompt: "How does this course handle the Fishers 2040 comprehensive plan?",
+            options: [
+              "It summarises the plan's land use recommendations in detail",
+              "It ignores the plan entirely",
+              "It asserts the plan's contents from memory",
+              "It cites the published adoption dates from the documents' title pages and states plainly that the plan's contents were not read, because the city's server refused automated requests",
+            ],
+            correctIndex: 3,
+            explanation: "The limit is stated rather than hidden, and opening the plan is left as the learner's assignment. The URLs are in the lesson's sources.",
+            sourceLessonSlug: "ms-next-live",
+          },
+          {
+            prompt: "What does Indiana require a municipality to adopt before an annexation ordinance?",
+            options: [
+              "A written fiscal plan spelling out services, costs, revenue and the tax effect",
+              "A referendum of the annexed residents",
+              "A county council resolution",
+              "A comprehensive plan amendment",
+            ],
+            correctIndex: 0,
+            explanation: "The Fishers southeast annexation's fiscal plan is dated September 5, 2024 and is published on the city's website. A number without a document is a rumour.",
+            sourceLessonSlug: "ms-next-live",
+          },
+          {
+            prompt: "Why does this course tell you to practise parcel lookups on public and commercial buildings?",
+            options: [
+              "Because residential records are not public in Indiana",
+              "Because homes are not assigned parcel numbers",
+              "Because publishing a current occupant's name with their home address is a different act from a public record sitting in a county database",
+              "Because the assessor refuses residential requests",
+            ],
+            correctIndex: 2,
+            explanation: "It is the same rule course 1 applied to the Green Book tourist homes, and it does not relax because the neighbourhood is affluent.",
+            sourceLessonSlug: "ms-next-exercise",
+          },
+          {
+            prompt: "When you find a visible edge between two neighbourhoods, what is it most likely to be?",
+            options: [
+              "A school district line",
+              "A township line",
+              "A city limit",
+              "The edge of a subdivision, which is a private plat rather than a jurisdiction",
+            ],
+            correctIndex: 3,
+            explanation: "Learning to be disappointed by an edge is the skill. None of the four jurisdictional lines in lesson 10 is visible from the ground.",
+            sourceLessonSlug: "ms-now-tour",
+          },
+          {
+            prompt: "Why does the observation brief tell you to find the sewer?",
+            options: [
+              "Because sewer lines follow historic property boundaries",
+              "Because sewer maps show the original plats",
+              "Because sewers determine school attendance areas",
+              "Because the boundary between municipal sewer and septic is where remonstrance waivers get signed, making it a political boundary with a twenty year fuse",
+            ],
+            correctIndex: 3,
+            explanation: "The city extends a pipe and the owner signs away a political right. Lesson 9 showed that settling an annexation of 960 parcels.",
+            sourceLessonSlug: "ms-now-tour",
+          },
+          {
+            prompt: "Name the four things a virtual tour of this ground cannot show you.",
+            options: [
+              "A boundary, a tax rate, a recorded waiver, and a decision",
+              "Colour, texture, scale and season",
+              "Buildings, streets, signs and vehicles",
+              "Weather, time of day, traffic and noise",
+            ],
+            correctIndex: 0,
+            explanation: "A subdivision proves a plat was recorded. It is not evidence about anybody's motive, and none of the four jurisdictional lines has a sign on it.",
+            sourceLessonSlug: "ms-now-tour",
+          },
+          {
+            prompt: "Why is Milliken v. Bradley on this course's map?",
+            options: [
+              "Because it concerned Indiana schools",
+              "Because it invalidated the 1959 Reorganization Act",
+              "Because the Supreme Court set aside a cross district desegregation remedy in 1974, holding that crossing a district line required a showing of an interdistrict violation or effect",
+              "Because it upheld a suburban annexation",
+            ],
+            correctIndex: 2,
+            explanation: "An Indiana county committee drew a school district line in the early 1960s, and a decade later the federal courts made lines of that kind far harder to cross.",
+            sourceLessonSlug: "ms-map",
+          },
+          {
+            prompt: "Why is Black Jack, Missouri on this course's map?",
+            options: [
+              "Because the Eighth Circuit held in 1974 that a zoning ordinance adopted after the city's 1970 incorporation violated the Fair Housing Act",
+              "Because it was the first city in America to use remonstrance waivers",
+              "Because it merged with St. Louis",
+              "Because it has a rivalry like Mudsock",
+            ],
+            correctIndex: 0,
+            explanation: "Lesson 8 taught incorporation as a neutral instrument. Black Jack is the case where a court examined what one was used for.",
+            sourceLessonSlug: "ms-map",
+          },
+          {
+            prompt: "What do the Shelby County, Tennessee municipal school districts add to this course?",
+            options: [
+              "A second example of a high school rivalry",
+              "Evidence that school district lines are still being drawn: six suburban municipalities formed their own districts, opening in 2014 after litigation, following a 2013 merger",
+              "Proof that consolidation always fails",
+              "An example of a successful county-wide district",
+            ],
+            correctIndex: 1,
+            explanation: "The lines are not a settled historical artifact. Lesson 10's instrument is in use right now.",
+            sourceLessonSlug: "ms-map",
+          },
+        ],
+      },
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Write  (beat 6: ELA and creative nonfiction, grounded in the place)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ms-write-assignment",
+      title: "19 · Your assignment: write one boundary",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `Beat 6 asks a question no other beat can: **what can only be said about this place?** Answering it is a writing problem, and this assignment is a real one.
+
+## The assignment
+Write **900 to 1,300 words** of creative nonfiction about **one boundary, one parcel, or one decision** on or near this ground. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is the one Section 3 used.**
+
+## Step 1 · Choose one line, and choose small
+Pick from the four boundaries in lesson 10, or from a parcel you found in lesson 17, or from one of the documented decisions in Section 3. **Smaller is better.** "The suburbs" is not a subject, it is a topic. **"994 acres, 960 parcels, 710 of them already waived" is a subject.** So is one plat, one referendum, one fiscal plan, or the 45 homesteads under Geist Reservoir.
+
+If you do not live in Hamilton County and cannot visit, that is not a disqualification. **It is a constraint you disclose in the piece**, and it changes what you can honestly claim.
+
+## Step 2 · Build the four column chronology before you write a sentence
+Lesson 12 killed this course's own title with a table. Build your own, with these columns: **date, event, instrument, source.** If the instrument column is empty for an event, you have a story and not yet a decision. **The table is the outline.**
+
+## Step 3 · Decide what kind of piece this is
+Pick one and commit, because mixing them is what makes place writing mushy.
+- **A biography of a boundary.** When it was drawn, by which body, under which statute, and what has and has not moved it since.
+- **A history of a decision.** One ordinance, one referendum, one court ruling, one fiscal plan, followed to the document.
+- **A report on a present.** What is on the ballot now, who is campaigning, what a public meeting sounded like, what the fiscal plan projects.
+- **A piece about the record itself.** What you could and could not find, and what the gap means.
+
+**The fourth is the hardest and often the best**, and it is the only one that can be written honestly with thin sources.
+
+## Step 4 · Write it, under these craft rules
+1. **Lead with a specific.** A parcel number, a vote total, a rate, a date on a resolution. Not a mood, and not a helicopter shot of cul de sacs.
+2. **Name the instrument every time you name an outcome.** "The suburb grew" is weak. "The council adopted an annexation ordinance under IC 36-4-3-3, and 710 of 960 parcels had already waived remonstrance" is strong, and it is sourced.
+3. **Give a figure its owner.** Not "Hamilton County is rich" but "the American Community Survey 2024 one year estimate put Hamilton County's median household income at 125,509 dollars, plus or minus 5,196."
+4. **Separate a mechanism from a flow.** You may describe how a system routes money. **You may not claim to have measured where money went** unless you have read a study that measured it. Lesson 12 refused this claim in public and so should you.
+5. **Separate a consequence from an intention.** A reservoir produced expensive shoreline. **That is not evidence about why it was built.** This is the most abused distinction in local history writing.
+6. **Use the present tense for the present.** Fishers is a working city with a live referendum, not a specimen. Write it that way.
+7. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+1. **No invented detail.** Not a date, a name, a quotation, a parcel number, a vote total, or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what anyone in a 1971 subdivision was thinking.
+2. **No composite or imagined characters.** Real, cited people only. This course gives you Salathiel Fisher, Clarence H. Geist, Judge Steven Nation, Mayor Scott Fadness, Board President Tiffany Pascoe, Superintendent Matt Kegley, Fortville Council President Tonya Davis, and a resident named Diana Callahan who is quoted saying she does not expect much to change. **That is more than enough material.**
+3. **No invented dialogue**, including "he might have said."
+4. **Private homes are private.** Do not publish a current resident's name with their address, do not photograph into windows, and do not knock uninvited. **Affluence is not consent.**
+5. **No suburb bashing, and no suburb flattering.** A subdivision is where roughly a hundred thousand people live. **Contempt for it is as lazy as sentimentality about it**, and both save the writer the trouble of reading an ordinance.
+6. **Credit what was built.** A school district that educates 21,000 students, a city that grew from 344 people to the fourth largest in Indiana, a community that fills a stadium for a game between two of its own schools, and a Quaker town two counties' worth of people passed through on the way north. **A piece that only inventories mechanisms is an incomplete report.**
+7. **Do not import course 1's moral conclusions.** The two courses share a metropolitan area and a method. **They do not share a verdict**, and pasting one onto the other is exactly the analytic laziness both courses were built to prevent.
+8. **Say what you did to a number.** If you adjusted for inflation, converted a rate to a dollar figure, or combined two sources, say so and say how.
+
+## What good looks like
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** A town that took its identity from the mud, a family holding out four years against an annexation and losing on a rule from 1874, 710 signatures collected one sewer connection at a time, a district in the richest county in the state ranked in the bottom two percent for state aid: **none of that needs decorating.**
+
+## Sources
+- Hamilton County, Indiana. (2012). *2012 general election results summary*. https://secure2.hamiltoncounty.in.gov/Elections/2012G/results/ElectionSummary.htm
+- Indianapolis Business Journal. (2024, August 2). *Fishers looks to annex 994 acres, add up to 3,000 residents*. https://www.ibj.com/articles/fishers-looks-to-annex-994-acres-add-up-to-3000-residents
+- Encyclopedia of Indianapolis. (n.d.-d). *Geist Reservoir*. https://indyencyclopedia.org/geist-reservoir/
+- Hamilton Southeastern Schools. (n.d.-b). *Revenue sources*. https://www.hseschools.org/community/finances/revenue-sources`,
+      recallContent: [
+        {
+          prompt: "What is the difference between a topic and a subject in this assignment?",
+          answer: "'The suburbs' is a topic. '994 acres, 960 parcels, 710 of them already waived' is a subject. So is one plat, one referendum, one fiscal plan, or the 45 homesteads under Geist Reservoir.",
+        },
+        {
+          prompt: "What are the four columns of the chronology you build before writing, and what does an empty column mean?",
+          answer: "Date, event, instrument, source. An empty instrument column means you have a story rather than a documented decision.",
+        },
+        {
+          prompt: "State the two distinctions the craft rules insist on.",
+          answer: "Separate a mechanism from a flow: you may describe how a system routes money but not claim to have measured where money went. And separate a consequence from an intention: a reservoir produced expensive shoreline, which is not evidence about why it was built.",
+        },
+        {
+          prompt: "Why does the assignment ban both suburb bashing and suburb flattering?",
+          answer: "Because a subdivision is where roughly a hundred thousand people live, and contempt for it is as lazy as sentimentality about it. Both save the writer the trouble of reading an ordinance.",
+        },
+        {
+          prompt: "Which paragraph is required in every submission, and which of course 1's habits must not be imported?",
+          answer: "At least one paragraph on what you could not establish. And course 1's moral conclusions: the two courses share a metropolitan area and a method, not a verdict.",
+        },
+      ],
+    },
+    {
+      slug: "ms-what-comes-next",
+      title: "20 · What this course set up, and what it left out",
+      section: "Section 6 · Write",
+      body: `You have now run the six-beat site template on a suburb. **Course 1 ran it on a cleared district. That the same six questions work on both is the finding**, and it is worth more than any single fact in either course.
+
+| Beat | What you did here | What you can now do anywhere |
+|---|---|---|
+| **1. Then** | Treated a nickname as a lead, and read a county's growth out of the decennial census | Establish what a place was from institutional sources, and refuse a claim a source does not carry |
+| **2. Built** | Read the plat, the street hierarchy, the school site formula and a reservoir | Tell what a built form assumes about the household that lives in it |
+| **3. Powers** | Learned four instruments and traced each to a named body, statute and date | Ask "who decided, under what statute, on what record" about any boundary |
+| **4. Now** | Built an observation brief before seeing the place, and learned that the boundaries are invisible | Look at a street with questions instead of impressions |
+| **5. Next** | Found a referendum on a ballot that has not been voted on yet | Participate in a live decision rather than commenting on a finished one |
+| **6. Write** | Wrote grounded nonfiction under an evidence standard | Publish something the next researcher can build on |
+
+**What you can do that you could not do before.**
+- Name four different jurisdictional boundaries over one piece of ground, and say which body moves each one.
+- Explain why a school district line almost never moves when a city limit does.
+- Read a remonstrance waiver as the thing that decides an annexation twenty years before it happens.
+- Explain why a constitutional tax cap produces school referenda, and why a wealthy district still needs one.
+- Test a claim, including one of your own, against a chronology and a jurisdiction check, **and report it when the claim loses.**
+
+**What this course deliberately did not cover, and why.**
+- **The Crispus Attucks and high school gymnasium story.** It is course 2 of this cluster, and it is where the segregation half of the school district argument actually lives. **This course carries the boundary mechanics; that one carries the schools.**
+- **The Speedway and the exclusion story attached to it.** Course 3.
+- **Benjamin Harrison and federal voting rights.** Course 5. **Fort Harrison and the federal government as landowner.** Course 6.
+- **The interior politics of Hamilton Southeastern Schools.** Board elections, curriculum disputes and personnel are live local issues with organised participants on several sides, and **a course about boundary instruments has no business narrating them from a distance.**
+- **Any claim about the intent behind a specific plat, covenant, annexation or district line.** The recorded documents exist; **none has been read into this course**, and lesson 12 says so in the text.
+- **Any claim that a tax base moved from one county to another.** Refused in lesson 11 and again in lesson 12. **No longitudinal study was found, so no such claim is made.**
+
+**The unopened sources, which are the next real work.** The Hamilton County school reorganization committee's plan and minutes from the early 1960s. The recorded remonstrance waivers on those 710 southeast parcels. The Fishers southeast annexation fiscal plan of September 5, 2024, and the Geist annexation fiscal plan before it. The Fishers 2040 comprehensive plan itself. The Hamilton Superior Court file in the Geist litigation. **All public or requestable, and none of them read here.** If you want to make an original contribution to this story rather than restate it, that is the list.
+
+**Two closing observations, one about each end of this cluster.**
+
+**About this place.** A muddy railroad switch with 344 people in 1960 became, within one lifetime, the fourth largest city in Indiana, with a school district of 21,000 students and a stadium that fills for a game between two of its own high schools. **That is a real achievement by real people**, and nothing in Section 3 is a reason to think otherwise. The instruments are the subject because the instruments are **public, checkable, and still in use**, which makes them the part of the story a citizen can actually do something about.
+
+**About the pair.** Twenty miles and thirty years apart, the same state legislature wrote the statutes that cleared one place and enabled another. **The blight designation and the remonstrance waiver are both instruments. The eminent domain filing and the annexation ordinance are both public records. The Redevelopment Commission and the City Council are both bodies with minutes.** Learn to read either one and you can read both, **and reading both is the only way to see that they were never two stories.**
+
+**That is the whole method, and it is why these courses exist.**
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Fishers*. https://indyencyclopedia.org/fishers/
+- Encyclopedia of Indianapolis. (n.d.-c). *Hamilton County*. https://indyencyclopedia.org/hamilton-county/
+- Hamilton Southeastern Schools. (n.d.-b). *Revenue sources*. https://www.hseschools.org/community/finances/revenue-sources
+- Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
+      recallContent: [
+        {
+          prompt: "What is the actual product of this course?",
+          answer: "The six-beat site template, proved to work on a suburb as well as on a cleared district. Course 1 ran it on Indiana Avenue; this ran it on Fishers and Hamilton County, and that the same six questions work on both is the finding.",
+        },
+        {
+          prompt: "Name three things you can do after this course that you could not do before.",
+          answer: "Name four jurisdictional boundaries over one piece of ground and say which body moves each; explain why a school district line almost never moves when a city limit does; read a remonstrance waiver as deciding an annexation decades in advance; and explain why a constitutional tax cap produces school referenda.",
+        },
+        {
+          prompt: "Which two claims does this course explicitly refuse to make?",
+          answer: "Any claim about the intent behind a specific plat, covenant, annexation or district line, because the recorded documents have not been read here; and any claim that a tax base moved from Marion County to Hamilton County, because no longitudinal study was found.",
+        },
+        {
+          prompt: "Name the unopened sources that would advance this story.",
+          answer: "The Hamilton County school reorganization committee's plan and minutes, the recorded remonstrance waivers on the 710 southeast parcels, the September 5, 2024 southeast annexation fiscal plan and the earlier Geist one, the Fishers 2040 plan itself, and the Hamilton Superior Court file in the Geist litigation.",
+        },
+        {
+          prompt: "What is the closing observation about the pair of courses?",
+          answer: "The same state legislature wrote the statutes that cleared one place and enabled another. Blight designation and remonstrance waiver are both instruments; eminent domain filings and annexation ordinances are both public records; the Redevelopment Commission and the City Council are both bodies with minutes. Reading both is the only way to see they were never two stories.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
