@@ -1777,6 +1777,157 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Write  (beat 6: ELA and creative nonfiction, grounded in the record)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ph-write-assignment",
+      title: "21 · Your assignment: write the failure",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `Beat 6 asks a question no other beat can: **what can only be said about this subject?** For this course the answer is unusual, because **the central event is a thing that did not happen.** A bill did not pass. That is genuinely hard to write, and learning to write it is the skill.
+
+## The assignment
+Write **900 to 1,300 words** of creative nonfiction about **one decision, one document, one room, or one person** connected to this course. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is the one Section 3 used.**
+
+## Step 1 · Choose one subject, and choose small
+**"Benjamin Harrison" is not a subject, it is a topic.** These are subjects:
+- **January 22, 1891**, one day in the Senate.
+- **One provision of H.R. 11045**, the petition threshold or the certification clause, followed from bill text to debate to death.
+- **One paragraph of the December 6, 1892 message**, read against what happened in the year that followed it.
+- **The front porch**, and what a 1895 or 1896 porch is doing on an 1888 story.
+- **The coachman's quarters over the carriage house**, and the limits of what you can establish about who lived there.
+- **The Old Northside between 1940 and 1978**, from subdivided rooming houses to a designated historic district.
+- **One room in the museum**, and the interpretive choice it represents.
+
+If you cannot visit Indianapolis, that is not a disqualification. **This is a document-heavy subject and almost all of it is online.** Say in the piece that you worked from documents.
+
+## Step 2 · Build the four-column chronology before you write a sentence
+Lesson 10 killed a comfortable story with a table. Build your own, with columns **date, event, instrument, source**. If the instrument column is empty, you have a story and not yet a decision. **The table is the outline.**
+
+## Step 3 · Decide what kind of piece this is
+Pick one and commit, because mixing them is what makes political writing mushy.
+- **An anatomy of a failure.** One bill, one chamber, one procedural motion, followed to the document.
+- **A close reading.** One passage of one primary source, read slowly, in context.
+- **A biography of an object or a room.** What it is, what it was for, what it has been made to mean.
+- **A report on a present.** How the site is governed today, who decides what it says, what the public record shows.
+- **A piece about the record itself.** What you could and could not find, and what the gap means.
+
+**The last one is the hardest and often the best**, and it is the only one that can be written honestly with thin sources.
+
+## Step 4 · Write it, under these craft rules
+1. **Lead with a specific.** A date, a vote count, a line of statutory text. Not a mood.
+2. **Name the mechanism every time you name a failure.** "The bill failed" is weak. **"The Senate voted 35 to 34 to take up other business, and the Congress expired six weeks later" is strong**, and it is checkable.
+3. **Give a figure its owner.** Not "the house cost $24,000" but "the Encyclopedia of Indianapolis gives $24,008.59 for the finished house, while the site's own account gives about $29,000 including the lot."
+4. **Distinguish a claim about a document from a claim about the world.** **"Harrison asked Congress to protect the ballot in four separate messages" is the first, and it is provable. "Harrison fought hard for Black voting rights" is the second**, and it requires an argument about effort that the messages alone do not settle.
+5. **Attribute an interpretation as an interpretation.** The "Compromise of 1890" reading has authors. **Name them, engage them, and do not launder their argument into your own narration as though it were a finding.**
+6. **Write the parts that do not fit.** If your piece is about Harrison and the ballot, the Geary Act and Wounded Knee belong in it. **Omitting them is a choice, and in a piece about a man's record on rights it is a dishonest one.**
+7. **Use the present tense for the present.** The house is an operating accredited museum with a board and a budget, not a relic.
+8. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+1. **No invented detail.** Not a date, a name, a quotation, a vote count, or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the Senate chamber smelled like in January 1891.
+2. **No composite or imagined characters.** Real, cited people only. **You have Harrison, Lodge, Hoar, Dudley, Douglass, Bruce, Morton, Brandt and a coachman whose name you would have to find.** That is more than enough.
+3. **No invented dialogue**, including "he might have said." If you want speech, use the messages and the *Congressional Record*, which are full of it.
+4. **Do not turn one case into a rate.** One documented circular is not a measurement of how many votes were bought.
+5. **No hero and no villain.** Section 3 gave you a list rather than a verdict, and your piece should be able to survive a reader who admires Harrison and a reader who does not.
+6. **Living institutions get the present tense and a fair reading.** The museum is run by people with budgets and constraints. **Criticism that ignores constraints is cheap, and praise that ignores choices is empty.**
+7. **Private homes are private.** The Old Northside is full of houses people live in. Do not publish a current resident's name with their address.
+8. **Say what you did to a number.** If you converted an 1875 dollar amount to today's money, say so and say how.
+
+## What good looks like
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** A one-vote procedural motion ending federal protection of the ballot for seventy-four years; a president writing about lynching in the same message in which he lost his job; a famous front porch that was built after the campaign it is famous for. **None of that needs decorating.**
+
+## Sources
+- Harrison, B. (1889a, March 4). *Inaugural address*. The Avalon Project, Yale Law School. https://avalon.law.yale.edu/19th_century/harris.asp
+- Harrison, B. (1892, December 6). *Fourth annual message*. The American Presidency Project, University of California, Santa Barbara. https://www.presidency.ucsb.edu/documents/fourth-annual-message-13
+- McConarty, C. (2020). The Federal Elections Bill of 1890: The continuation of Reconstruction in America. *The Journal of the Gilded Age and Progressive Era, 19*(3), 390-405. https://doi.org/10.1017/S1537781420000067
+- U.S. Congress. (n.d.). *Congressional Record*. https://www.congress.gov/congressional-record
+- U.S. Senate. (n.d.). *About filibusters and cloture: Historical overview*. https://www.senate.gov/about/powers-procedures/filibusters-cloture/overview.htm`,
+      recallContent: [
+        {
+          prompt: "Why is this assignment unusual, and what makes it hard?",
+          answer: "The central event is a thing that did not happen. A bill did not pass, and writing an absence well is the skill the assignment teaches.",
+        },
+        {
+          prompt: "Give the difference between a topic and a subject here.",
+          answer: "'Benjamin Harrison' is a topic. 'January 22, 1891, one day in the Senate' or 'one provision of H.R. 11045 followed from bill text to debate to death' is a subject. Smaller is better.",
+        },
+        {
+          prompt: "How should you write a failure, in one sentence?",
+          answer: "Name the mechanism. Not 'the bill failed' but 'the Senate voted 35 to 34 to take up other business, and the Congress expired six weeks later,' which is checkable.",
+        },
+        {
+          prompt: "Give the difference between a claim about a document and a claim about the world, using this course's example.",
+          answer: "'Harrison asked Congress to protect the ballot in four separate messages' is about documents and is provable. 'Harrison fought hard for Black voting rights' is about the world and requires an argument about effort the messages alone do not settle.",
+        },
+        {
+          prompt: "Which paragraph is required in every submission, and which parts of the record may not be omitted?",
+          answer: "At least one paragraph on what you could not establish. If the piece is about Harrison and the ballot, the Geary Act and Wounded Knee belong in it.",
+        },
+      ],
+    },
+    {
+      slug: "ph-what-comes-next",
+      title: "22 · What this course set up, and what it left out",
+      section: "Section 6 · Write",
+      body: `You have now run the six-beat site template on a subject that is half a building and half a bill. **The template is the product of this course, more than the Harrison material is.**
+
+| Beat | What you did here | What you can now do anywhere |
+|---|---|---|
+| **1. Then** | Built a person and an era out of institutional biography and primary text, and complicated it immediately | Establish who somebody was without deciding in advance what they were |
+| **2. Built** | Read a house as typology, as systems, and as a set of restoration decisions | Tell what a building is, what it cost, and which of its parts are arguments |
+| **3. Powers** | Read the Constitution's actual grants, the bill's actual provisions, and the six ways a bill can die | Answer "what could this office do" before answering "why did it fail" |
+| **4. Now** | Built an observation brief for a curated space | Look at an arranged room and see the arranging |
+| **5. Next** | Found the entity, the money, the board and the interpretive decision | Research any nonprofit that holds a piece of public memory |
+| **6. Write** | Wrote about something that did not happen, under an evidence standard | Publish an account of a failure that the next researcher can build on |
+
+**What you can do that you could not do before.**
+- **Ask which row of the table a "failed" bill died in**, and refuse the word "rejected" until somebody tells you.
+- **Read a president's power correctly**: he can ask, veto, execute and appoint, and he cannot introduce, schedule, or close debate.
+- **Separate a documented sequence from an interpretation of it**, which is what lesson 11 does to the Compromise of 1890.
+- **Hold a mixed record without averaging it into a verdict.**
+- **Find who governs a museum and what its filings say.**
+- **See two instruments as members of one family without claiming one caused the other.**
+
+**What this course deliberately did not cover, and why.**
+- **The rest of Harrison's presidency.** The Sherman Antitrust Act, the McKinley Tariff, the admission of new western states, the naval build-up and foreign policy including Hawaii are all real subjects and none of them is this course's question. **A course that covers everything teaches nothing.**
+- **The Blair Education Bill**, named once in lesson 12, which deserves its own treatment. It is the other half of the domestic civil rights programme of that Congress and it also failed.
+- **The full text of H.R. 11045.** **This course has read descriptions of the bill's provisions, not the bill.** It says so in lesson 9 and it hands you the archive that holds it. **That is the single largest open item here.**
+- **The Congressional Record debate itself**, which is thousands of pages and is where the real argument was made, by people including the Black members of Congress of that era.
+- **Hoar's papers, Lodge's papers, and Harrison's papers.** McConarty read 202 letters to Hoar and got an article out of them. **The correspondence is not exhausted.**
+- **The interior life of this household**, including the people who worked in it. The building record gives you a coachman's quarters and nothing else. **Somebody should follow that.**
+- **Any verdict on Benjamin Harrison.** Not withheld out of delicacy. **Withheld because a verdict is not a research output**, and because you now have enough of the file to form your own and to say what it rests on.
+
+**The unopened sources, which are the next real work.** The *Congressional Record* of the 51st Congress. The Harrison papers. Hoar's and Lodge's correspondence. The site's own interpretive plan and its Form 990 board list. The National Historic Landmark nomination for the house. **All public or requestable, and none of them read into this course.**
+
+**One last thing about the question.** In four documents across four years, a president wrote down that the ballot was the condition of national life, that Black Americans were being deprived of it by various devices, and that the chief danger to the country was the overthrow of majority control by the suppression or perversion of the popular suffrage. **He was the head of state, his party held both chambers, and none of it was enough, because the office he held could ask and could not act, and the chamber that could act had no way to stop a minority from talking.** Seventy-four years later a different Congress passed a different bill, after a cloture rule existed. **The gap between those two dates is not a gap in anybody's sincerity. It is a gap in procedure**, and procedure is a thing citizens can read, learn and change. **That is the whole method, and it is why this course exists.**
+
+## Sources
+- Harrison, B. (1891, December 9). *Third annual message*. The American Presidency Project, University of California, Santa Barbara. https://www.presidency.ucsb.edu/documents/third-annual-message-14
+- Harrison, B. (1892, December 6). *Fourth annual message*. The American Presidency Project, University of California, Santa Barbara. https://www.presidency.ucsb.edu/documents/fourth-annual-message-13
+- McConarty, C. (2020). The Federal Elections Bill of 1890: The continuation of Reconstruction in America. *The Journal of the Gilded Age and Progressive Era, 19*(3), 390-405. https://doi.org/10.1017/S1537781420000067
+- U.S. Congress. (n.d.). *Congressional Record*. https://www.congress.gov/congressional-record
+- U.S. Senate. (n.d.). *About filibusters and cloture: Historical overview*. https://www.senate.gov/about/powers-procedures/filibusters-cloture/overview.htm`,
+      recallContent: [
+        {
+          prompt: "What is the actual product of this course?",
+          answer: "The six-beat site template run on a subject that is half a building and half a bill: Then, Built, Powers, Now, Next, Write. The Harrison material is the worked example.",
+        },
+        {
+          prompt: "Name the single largest open item this course admits to.",
+          answer: "It has read descriptions of H.R. 11045's provisions, not the bill itself. The text is in the Congressional Record of the 51st Congress, digitised and public.",
+        },
+        {
+          prompt: "Why does this course refuse to deliver a verdict on Harrison?",
+          answer: "Because a verdict is not a research output, and because the learner now has enough of the file to form one and to say what it rests on.",
+        },
+        {
+          prompt: "State the closing argument about the gap between 1891 and 1965.",
+          answer: "A president wrote the right sentences and his party held both chambers, and it was not enough, because the office could ask and not act and the Senate had no way to stop a minority from talking. The gap is a gap in procedure, not in sincerity, and procedure can be read, learned and changed.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
