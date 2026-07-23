@@ -637,6 +637,620 @@ The Encyclopedia entry describes Speedway as a middle-class town and **does not 
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Powers  (beat 3: the rules, the sanctioning body, and how exclusion was
+    // written and enforced. THE LOAD-BEARING SECTION. Lesson 10 is the correction lesson.)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "tr-powers-sanctioning-body",
+      title: "8 · Instrument one: the sanctioning body",
+      section: "Section 3 · Powers",
+      body: `**This is the section the whole course exists for.** Course 1 taught you that a building does not disappear, it is removed by somebody with an instrument, and that an instrument is a specific legal power exercised by a specific body under a specific statute, leaving a specific document. **Section 3 of this course teaches the version of that idea that most people never learn, because it operates entirely outside government.**
+
+**A sport does not run itself.** Somebody writes the rulebook, licenses the drivers and the officials, approves the entries, sanctions the event, times it, and certifies the result. That somebody is called a **sanctioning body**, and inside its sport its authority is close to total.
+
+**Now the four differences from a government body, because they are the whole lesson.**
+
+| | A city redevelopment commission | A racing sanctioning body |
+|---|---|---|
+| **Source of power** | A statute passed by a legislature | A contract you sign to compete, and ownership of the event |
+| **Who may attend** | Public meetings, usually required by open-meetings law | Nobody. It is a private association |
+| **What is on the record** | Minutes, boundary maps, published findings | Whatever the association chooses to keep |
+| **How you contest a decision** | Appeal, judicial review, a public comment period | Its own internal process, if it has one |
+
+**Read the right-hand column again.** **A private association can exclude you without writing anything down.** There is no statute to cite, no minute to request, no hearing to attend, and no boundary map with a legal description. **In course 1 the instruments left documents. That was the whole reason the research worked.** Here, the instrument's defining feature is that it need not leave one, and Section 3 is going to make you deal with that.
+
+## The chain of sanctioning bodies at this track, with dates
+
+**1. The AAA Contest Board.** The Encyclopedia of Indianapolis records that the Contest Board of the American Automobile Association "had been the nation's leading auto-racing sanctioning body **since 1902**," and that it governed the Indianapolis 500-Mile Race as part of its National Championships (Encyclopedia of Indianapolis, n.d.-f). **So for the whole period the Gold and Glory Sweepstakes existed, and for decades either side of it, the body that decided who could compete in the premier American race was a committee of a motor club.**
+
+**2. USAC.** The AAA "abruptly announced it would dissolve its Contest Board at year's end" in 1955, after the Le Mans disaster and the death of driver Bill Vukovich. Indianapolis Motor Speedway president **Anton "Tony" Hulman Jr.**, who had owned the track since November 1945, unveiled a replacement at a private meeting on **August 5, 1955**, announced it publicly five days later, and the **United States Auto Club was established on September 16, 1955**. **USAC sanctioned the Indianapolis 500 beginning in 1956** (Encyclopedia of Indianapolis, n.d.-a, n.d.-f).
+
+**Stop and look at what just happened structurally.** **The owner of the racetrack created the organisation that sanctions the race at his racetrack.** That is not an accusation, it is the documented sequence, and the Encyclopedia states it in a paragraph about an emergency. **Notice how quickly authority over a sport can be reconstituted, and by whom, when the previous holder walks away.**
+
+**3. The Indy Racing League.** USAC's role at the 500 "ended in 1997 when the Indy Racing League took control following its 1996 founding by IMS owner **Tony George**" (Encyclopedia of Indianapolis, n.d.-f). **Same structure, second time: the track's owner founds the sanctioning body.**
+
+**4. Today.** On **January 6, 2020**, **Penske Entertainment Corp.** completed the acquisition of the **Indianapolis Motor Speedway, the NTT IndyCar Series, and IMS Productions** from Hulman and Company (Indianapolis Motor Speedway, 2020; Encyclopedia of Indianapolis, n.d.-a). **One company owns the venue, the series, and the production arm.**
+
+## The transferable rule
+
+**When you want to know who decides admission to anything, ask two questions, in this order.**
+1. **Who owns the venue?** A private owner can refuse entry to their own property, and that power needs no rule and generates no record.
+2. **Who writes and enforces the rulebook?** Licensing, entry approval, and certification are separate powers from ownership, and historically they have sometimes sat in different hands and sometimes in the same hands.
+
+**At this track the answer to both questions has been the same entity for most of the last seventy years**, and it is a nameable company with a headquarters and a chief executive. **That is not a scandal. It is a fact about where the power sits**, and knowing where power sits is the entire point of beat 3.
+
+**One thing this lesson does not do.** It does not tell you what the AAA Contest Board's rules said about race, because that is lesson 10, and lesson 10 does not go the way you expect.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Indianapolis Motor Speedway*. https://indyencyclopedia.org/indianapolis-motor-speedway/
+- Encyclopedia of Indianapolis. (n.d.-f). *United States Auto Club*. https://indyencyclopedia.org/united-states-auto-club/
+- Indianapolis Motor Speedway. (2020, January 5). *Penske Corporation completes acquisition of the Indianapolis Motor Speedway, the NTT IndyCar Series and IMS Productions*. https://www.indianapolismotorspeedway.com/news-multimedia/news/2020/01/05/penske-corporation-completes-acquisition-of-the-ims-indycar-and-imsproductions`,
+      recallContent: [
+        {
+          prompt: "Define a sanctioning body and list what it controls.",
+          answer: "A private association that writes the rulebook, licenses drivers and officials, approves entries, sanctions and officiates events, and certifies results. Inside its sport its authority is close to total.",
+        },
+        {
+          prompt: "Name the four differences between a sanctioning body and a government body like a redevelopment commission.",
+          answer: "Its power comes from a contract and from owning the event rather than from a statute; its meetings are not public; it keeps only what it chooses to keep; and you contest a decision through its own internal process rather than by appeal or judicial review.",
+        },
+        {
+          prompt: "Why does that difference matter to a researcher?",
+          answer: "Because a private association can exclude someone without writing anything down. There is no statute to cite, no minute to request and no boundary map. Course 1's instruments all left documents; this one need not.",
+        },
+        {
+          prompt: "Give the chain of sanctioning bodies for the Indianapolis 500 with dates.",
+          answer: "The AAA Contest Board, the leading national sanctioning body since 1902; USAC, established September 16, 1955 by IMS president Tony Hulman Jr. after the AAA dissolved its Contest Board, sanctioning the 500 from 1956; the Indy Racing League from 1997, founded 1996 by IMS owner Tony George; and today Penske Entertainment Corp., which acquired the track and the IndyCar Series on January 6, 2020.",
+        },
+        {
+          prompt: "What structural pattern repeats in that chain?",
+          answer: "The owner of the racetrack founds or owns the body that sanctions the race at the racetrack. It happened with Hulman in 1955, with Tony George in 1996, and it is the situation today under one owner of venue, series and production arm.",
+        },
+        {
+          prompt: "What two questions should you ask about admission to anything?",
+          answer: "Who owns the venue, because a private owner can refuse entry with no rule and no record; and who writes and enforces the rulebook, because licensing and entry approval are separate powers that may or may not sit in the same hands.",
+        },
+      ],
+    },
+    {
+      slug: "tr-powers-four-gates",
+      title: "9 · Instrument two: the gates a driver has to pass",
+      section: "Section 3 · Powers",
+      body: `To start a race you must pass several separate gates, each held by a different party, each with its own record or lack of one. **Exclusion does not need all of them. It needs one.**
+
+## Gate 1 · The competition licence
+
+**A sanctioning body licenses the people who compete under its rules.** The Encyclopedia of Indianapolis lists licensing among USAC's core functions, alongside rules, sanctioning and safety standards (Encyclopedia of Indianapolis, n.d.-f), and the AAA Contest Board did the same work before it.
+
+**A licence is the cleanest gate there is, because it is issued or it is not, and either way somebody knows.** The documented turning point is late: sources place **Joie Ray's first licence in the late 1940s**, and his first race under AAA sanction on **June 26, 1949, at Salem Speedway** (African Americans in Motorsports, n.d.). **Before that, this course found no Black driver holding a competition licence from the body that sanctioned the Indianapolis 500.**
+
+**Note the shape of that sentence.** "This course found no record of X" is not the same claim as "X did not happen." **It is a claim about a search.** Say which one you are making, every time.
+
+## Gate 2 · Registration and entry approval
+
+Even with a licence, an entry has to be accepted. **This gate has a documented instance and it is the best single piece of evidence in Section 3.**
+
+Paul Mullins, writing on the Indianapolis colour line and citing the ***Indianapolis Recorder***, records that **Charlie Wiggins and Sumner "Red" Oliver attempted to enter a car at Dayton Speedway and were rejected because they lacked AAA registration**, and that officials indicated they could register for dirt track races the following summer (Mullins, 2015).
+
+**Read that carefully, because it is subtle and it is the whole mechanism.** Nobody in that account says a word about race. **The refusal is procedural.** The men lacked a registration; the registration is issued by the body; the body sets the terms; and the outcome is that two Black competitors do not race. **A gate that turns on paperwork you were not able to obtain looks, in the record, exactly like a gate that turns on paperwork you failed to obtain.** That ambiguity is not a bug in the system. It is what the system is for.
+
+## Gate 3 · Membership in the association
+
+A contest board is an organ of a membership organisation. **Whether membership in that organisation was a formal prerequisite to competing, and whether membership rules restricted applicants by race, is a question this course could not answer from its sources.** Do not fill that in from what you assume. **The membership rules of a national motor club in the 1920s are a document, and if somebody finds it, this lesson gets better.**
+
+## Gate 4 · The venue's own gate
+
+**The last gate is the simplest one, and it needs no association at all.** A racetrack is private property. **A private owner may refuse a private person entry**, and no rule, minute or explanation is required.
+
+The Encyclopedia of Indianapolis states it as a fact about people rather than a fact about rules: "**Indianapolis Motor Speedway officials** did not allow African Americans to participate in the Indianapolis 500-Mile Race," and, in the Wiggins entry, that officials "did not allow African American drivers and mechanics" (Encyclopedia of Indianapolis, n.d.-c, n.d.-d). The Speedway's own website in 2021 put the same period this way: "1920s America was racially segregated, and the Indy 500, like all major league sports during the era, was whites only" (Indianapolis Motor Speedway, 2021).
+
+**Both sources describe an outcome and an actor. Neither describes an instrument.** That is a finding about the sources, and lesson 10 takes it seriously.
+
+## Gate 5 · Money, which never closed
+
+The four gates above are permission gates. **The fifth is capital, and it applies to everyone.** You need a car, an engine programme, a crew, entry fees, transport, insurance, and something to sell a sponsor. **Charlie Wiggins built his car, the Wiggins Special, out of parts, in the shop where he worked** (Encyclopedia of Indianapolis, n.d.-d), and the field he raced in used hand-me-down machinery. **Sixty years later, Willy T. Ribbs qualified for the 1991 race on his last attempt after blowing engines on a tight budget** (Motorsport Magazine, n.d.), and **George Mack made the 2002 field on his final Bump Day run** (RACER, 2021).
+
+**Three drivers, three eras, three finishes decided partly by money.** Section 3 will not tell you that money is the same thing as a colour bar, because it is not, and pretending otherwise would let a real and separate barrier hide behind a metaphor. **What it will tell you is that when a permission gate closes, the capital gate is still there behind it**, and a course that only counts the first one will declare victory too early.
+
+## The research move
+
+**When you want to know why somebody was not admitted, do not start with the outcome. Enumerate the gates, name the holder of each, and ask what record each one generates.** For this sport the answer is: a licence register, an entry list, a membership roll, and nothing at all. **Three of those four are documents somebody keeps.** That is your search.
+
+## Sources
+- African Americans in Motorsports. (n.d.). *Joie Ray*. https://aaim1.com/african-american-racing-history-joie-ray
+- Encyclopedia of Indianapolis. (n.d.-c). *Gold and Glory Sweepstakes*. https://indyencyclopedia.org/gold-and-glory-sweepstakes/
+- Encyclopedia of Indianapolis. (n.d.-d). *Charles Edwin "Charlie" Wiggins*. https://indyencyclopedia.org/charles-edwin-charlie-wiggins/
+- Encyclopedia of Indianapolis. (n.d.-f). *United States Auto Club*. https://indyencyclopedia.org/united-states-auto-club/
+- Indianapolis Motor Speedway. (2021, July 13). *Black racing legend Wiggins drives to big screen with new movie "Eraced"*. https://www.indianapolismotorspeedway.com/news-multimedia/news/2021/07/13/black-racing-legend-wiggins-drives-to-big-screen-with-new-movie-eraced
+- Motorsport Magazine. (n.d.). *Willy T Ribbs on becoming the first black driver in Indy 500*. https://www.motorsportmagazine.com/articles/us-scene/indycar/willy-t-ribbs-on-becoming-the-first-black-driver-in-indy-500-the-pressure-was-unbelievable/
+- Mullins, P. R. (2015, May 16). *Racing along the color line*. Archaeology and Material Culture. https://paulmullins.wordpress.com/2015/05/16/racing-along-the-color-line/
+- RACER. (2021, February 25). *Retro: Mack's dizzyingly unlikely Indy 500 run*. https://racer.com/2021/02/25/retro-macks-dizzyingly-unlikely-indy-500-run/`,
+      recallContent: [
+        {
+          prompt: "Name the five gates a driver has to pass, and who holds each.",
+          answer: "The competition licence and registration or entry approval, both held by the sanctioning body; membership in the association; the venue's own gate, held by the private owner; and capital, which is held by nobody and closes on everyone.",
+        },
+        {
+          prompt: "What is the documented entry-approval instance in this lesson?",
+          answer: "Charlie Wiggins and Sumner 'Red' Oliver tried to enter a car at Dayton Speedway and were rejected for lacking AAA registration, and were told they could register for dirt track races the following summer, per the Indianapolis Recorder as cited by Paul Mullins.",
+        },
+        {
+          prompt: "Why is that procedural refusal the key to the whole mechanism?",
+          answer: "Because nobody in the account mentions race. A gate that turns on paperwork you were not able to obtain looks in the record exactly like a gate that turns on paperwork you failed to obtain. The ambiguity is what the system is for.",
+        },
+        {
+          prompt: "What is the difference between 'this course found no record of X' and 'X did not happen'?",
+          answer: "The first is a claim about a search; the second is a claim about the world. Say which one you are making, every time.",
+        },
+        {
+          prompt: "What does the course refuse to say about association membership?",
+          answer: "Whether membership was a formal prerequisite to competing, and whether membership rules restricted applicants by race. The sources used do not answer it, and the membership rules of a national motor club are a document somebody could find.",
+        },
+        {
+          prompt: "Why does the course insist on separating the capital gate from the colour bar?",
+          answer: "Because they are different barriers, and letting one hide behind the other lets a real barrier escape measurement. When a permission gate opens, the capital gate is still behind it, and a course that counts only the first declares victory too early.",
+        },
+      ],
+    },
+    {
+      slug: "tr-powers-the-written-rule",
+      title: "10 · Testing the claim: was there a written rule?",
+      section: "Section 3 · Powers",
+      body: `**Here is the claim this course was commissioned to teach.** It came from the plan for this course cluster, and it is the version most people carry: **Black drivers were barred from the premier race by the sanctioning body's policy, and a separate championship was run in response.**
+
+**Course 1 ended by testing an inherited argument against a chronology and reporting that half of it failed.** This lesson does the same job with a different test. **The test here is documentary rather than chronological: does the document the claim depends on exist, and has anyone in this course's source set read it?**
+
+## The claim, taken apart into checkable pieces
+
+| Piece of the claim | Verdict | On what evidence |
+|---|---|---|
+| An alternative championship existed | **Holds** | The Colored Speedway Association, founded 1924 by seven named men; the Gold and Glory Sweepstakes, first run 2 August 1924, last run 20 September 1936 |
+| It ran at the Indiana State Fairgrounds mile | **Holds, with a correction** | The 1931 running was at Walnut Gardens Speedway, Mooresville, at half distance |
+| Named drivers were involved | **Holds** | Wiggins, Hannon, Simmons, Carson, Oliver, Wallace and others, with dated results |
+| Black drivers did not race the Indianapolis 500 | **Holds** | No Black starter until Willy T. Ribbs in 1991, eighty years and seventy-five runnings after the first race |
+| The Speedway excluded them | **Holds** | Stated by the Encyclopedia of Indianapolis and by the Speedway's own website |
+| **A sanctioning body's written policy did it** | **NOT VERIFIED** | See below |
+
+## What this course looked for, and did not find
+
+**It looked for a published AAA Contest Board rule barring Black drivers**: a rulebook clause, a minuted resolution, a bulletin, a licence application with a race question on it. **It did not find one in any source it read.**
+
+**And it found something stronger about a weaker claim.** Paul Mullins, writing on the Indianapolis colour line, quotes the ***Indianapolis Recorder*** of **October 1947** reporting that AAA officials stated **"there has never before been anytime that the A.A.A. has ever barred any contestant by reason of race, creed or any other cause."** Mullins reads that statement as exposing what the paper called a "gentleman's agreement" against Black participation, rather than a formal code (Mullins, 2015).
+
+**Now handle that quotation properly, because how you handle it is the lesson.**
+
+1. **It is a statement by an interested party.** The AAA is describing its own conduct, in public, in 1947, to a Black newspaper that was asking pointed questions. **A denial from the accused is evidence about what the accused was willing to say, not proof of what happened.**
+2. **It is also not nothing.** If the association had a published rule, that answer would have been an obvious lie easily rebutted by producing the rulebook. **The fact that officials chose "there was never a rule" as their defence is itself weak evidence that there was never a rule.**
+3. **And both of those can be true while the exclusion was total.** Look back at lesson 9. **Four separate gates could each produce a refusal without anyone writing "no Black drivers" anywhere.**
+
+## The verdict, stated plainly
+
+**The exclusion is established. The written policy is not.** This course therefore says the following, and no more:
+
+- **Black drivers did not start the Indianapolis 500 for eighty years, and the Speedway and the Encyclopedia of Indianapolis both attribute that to exclusion by Speedway officials.**
+- **The mechanism appears to have run through licensing, registration, entry approval and private admission rather than through a published rule, and the one direct statement in the record from the sanctioning body denies that a rule ever existed.**
+- **Whether a written policy existed somewhere this course did not look remains open.**
+
+**That is a weaker claim than the one this course started with, and it is a better one**, for the same reason course 1's weakened Unigov claim was better: **it is checkable, and the strong version is not.**
+
+## Why the weaker version teaches more
+
+**A written rule is the easiest kind of discrimination to attack.** You can print it, quote it, sue over it, and repeal it, and the day it is repealed you can measure whether anything changed.
+
+**An unwritten one is the hardest.** There is nothing to print, nothing to repeal, no defendant, and no date. **Every individual refusal has an innocent procedural explanation, and the pattern only appears when you count outcomes across decades.** That is exactly why the eighty-year number in lesson 3 does more work than any quotation could: **when the mechanism leaves no document, the outcome is the evidence.**
+
+**And notice that you already met this shape in course 1.** A blight designation is a legal conclusion reached against criteria that measure the effects of earlier policy. Here, a procedural refusal for want of a registration is a decision reached against a requirement the same body controls. **In both cases, the paperwork is impeccable and the result is the point.**
+
+## One more weakness, and it is about this course's sources
+
+**Three of the strongest sources in Sections 1 and 3 lead back to one scholar.** The Encyclopedia of Indianapolis entries on the Gold and Glory Sweepstakes and on Charlie Wiggins are both credited to **Todd Gould**, who also wrote the book *For Gold and Glory* (Indiana University Press, 2002) and the documentary of the same name whose companion site supplies this course's race results. **That is an authority. It is also a single point of failure.** Where the Encyclopedia and the PBS site disagree, as they do on the number of runnings, **you are not watching two independent sources disagree.** Say so, as this course just did.
+
+## What would settle the open question
+
+**None of these has been read into this course. All of them exist somewhere.**
+- **AAA Contest Board rulebooks, bulletins and minutes** for the 1910s through the 1950s.
+- **Licence registers and entry lists** for the Indianapolis 500 in that period, including rejected entries.
+- **The full runs of the *Indianapolis Recorder* and the *Chicago Defender***, which covered both tracks and asked the questions nobody else asked.
+- **USAC's founding bylaws of 1955**, which would show what the successor body wrote down at the moment it was free to write anything.
+
+**If you want to make an original contribution to this story rather than repeat it, that is the list.**
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-c). *Gold and Glory Sweepstakes*. https://indyencyclopedia.org/gold-and-glory-sweepstakes/
+- Encyclopedia of Indianapolis. (n.d.-d). *Charles Edwin "Charlie" Wiggins*. https://indyencyclopedia.org/charles-edwin-charlie-wiggins/
+- Gould, T. (2002). *For gold and glory: Charlie Wiggins and the African-American racing car circuit*. Indiana University Press.
+- Indianapolis Motor Speedway. (2021, July 13). *Black racing legend Wiggins drives to big screen with new movie "Eraced"*. https://www.indianapolismotorspeedway.com/news-multimedia/news/2021/07/13/black-racing-legend-wiggins-drives-to-big-screen-with-new-movie-eraced
+- Mullins, P. R. (2015, May 16). *Racing along the color line*. Archaeology and Material Culture. https://paulmullins.wordpress.com/2015/05/16/racing-along-the-color-line/
+- PBS. (n.d.-b). *For gold and glory: History*. https://www.pbs.org/forgoldandglory/history/`,
+      recallContent: [
+        {
+          prompt: "Which piece of the inherited claim failed verification, and which pieces held?",
+          answer: "The sanctioning body's written policy is NOT VERIFIED. The alternative championship, its drivers, its venue with a correction for 1931, the absence of Black starters until 1991, and exclusion by Speedway officials all hold.",
+        },
+        {
+          prompt: "What did the AAA say in 1947, and where is it recorded?",
+          answer: "AAA officials said there had never been a time when the association barred any contestant by reason of race, creed or any other cause, as reported by the Indianapolis Recorder in October 1947 and quoted by Paul Mullins, who reads it as exposing a gentleman's agreement rather than a formal code.",
+        },
+        {
+          prompt: "Give the three ways to handle that quotation correctly.",
+          answer: "It is a denial from an interested party and so is evidence about what they were willing to say; choosing 'there was never a rule' as a defence is itself weak evidence that there was no rule to produce; and both can be true while the exclusion was total, because four separate gates can each refuse without anyone writing it down.",
+        },
+        {
+          prompt: "State the three-sentence verdict this course adopts.",
+          answer: "Black drivers did not start the race for eighty years, and the Speedway and the Encyclopedia both attribute that to exclusion by Speedway officials. The mechanism appears to have run through licensing, registration, entry approval and private admission rather than a published rule, and the one direct statement in the record denies a rule existed. Whether a written policy existed somewhere unexamined remains open.",
+        },
+        {
+          prompt: "Why does an unwritten exclusion teach more than a written one?",
+          answer: "Because a written rule can be printed, quoted, repealed and measured, while an unwritten one has no document, no date and no defendant. Every individual refusal has an innocent procedural explanation, and the pattern only appears when you count outcomes across decades. When the mechanism leaves no document, the outcome is the evidence.",
+        },
+        {
+          prompt: "What is the weakness in this course's own sources?",
+          answer: "Three of the strongest sources lead back to one scholar, Todd Gould, who wrote both Encyclopedia entries, the book and the documentary. Where the Encyclopedia and the PBS site disagree, that is not two independent sources disagreeing.",
+        },
+      ],
+    },
+    {
+      slug: "tr-powers-parallel-institution",
+      title: "11 · Instrument three: building a parallel institution",
+      section: "Section 3 · Powers",
+      body: `Exclusion is one instrument. **The response to it is another**, and it is the one this course wants you to be able to see, because it is routinely described as a consolation and it is nothing of the kind.
+
+**Course 1 taught you this move already.** When the Indianapolis Redevelopment Commission cleared Pat Ward's Bottom, the Flanner House agency answered with a self-help home ownership programme: roughly 300 dollars down and about 1,200 hours of labour to earn equity in a house. **A community answering a taking by building an institution is a documented pattern, not a sentiment**, and the Colored Speedway Association is the same pattern applied to a sport.
+
+## What it costs to build a racing championship from nothing
+
+Work down this list and notice that **every line is a real acquisition somebody had to make.**
+
+| What you need | What they did | Source |
+|---|---|---|
+| **An organisation** | Founded the Colored Speedway Association in 1924, with seven named principals | Encyclopedia of Indianapolis, n.d.-c |
+| **A venue you do not own** | Rented the one-mile dirt track at the Indiana State Fairgrounds | Encyclopedia of Indianapolis, n.d.-c |
+| **A fallback venue** | In 1931, Walnut Gardens Speedway in Mooresville, offered by founder Harry Earl for one dollar | PBS, n.d.-c |
+| **A date** | An annual summer fixture, at times on the July 4 holiday | PBS, n.d.-c |
+| **A field** | 27 entrants in the first race, drawn from Indianapolis, Chicago and St. Louis; later fields drew from an eight-state region | PBS, n.d.-a, n.d.-c |
+| **Cars** | Fronty Fords, Duesenbergs, hand-built specials, and Wiggins's own car built at his shop | PBS, n.d.-a; Encyclopedia of Indianapolis, n.d.-d |
+| **A name and an audience** | Named by a *Chicago Defender* sportswriter, Frank A. "Fay" Young; a reported crowd of 12,000 at the first race | Encyclopedia of Indianapolis, n.d.-c; Sheldon, 2021 |
+| **Medical provision** | The 1936 race was cut in half partly to let crews reach injured drivers | PBS, n.d.-d |
+
+**That is a working sports promotion.** Governance, a venue, a calendar, an entry list, machinery, publicity and medical cover. **The people who did it are named, and naming them is the point of this lesson.**
+
+## What a parallel institution can and cannot match
+
+**It can match the event.** A 100-mile championship with a field, a purse, a national name and a crowd is a championship.
+
+**It cannot match the capital.** Put the two tracks side by side one more time, using only numbers from Section 2:
+
+| | Indianapolis Motor Speedway | Indiana State Fairgrounds mile |
+|---|---|---|
+| Surface | 3.2 million paving bricks laid in 1909 | Dirt |
+| Length | 2.5 miles | 1 mile |
+| Seating | more than 250,000 permanent seats today | a 6,000-seat grandstand in 1892 |
+| Ownership | Owned by the people who ran the race | Rented from a state fair |
+
+**That is the honest shape of "separate."** Not equal facilities under different management, but **a purpose-built industrial plant on one side and a rented agricultural exhibition ground on the other.** And the difference is not a matter of ambition or competence, because the Colored Speedway Association's organisers demonstrably had both. **It is a matter of who could raise capital in 1924**, which is the subject of the redlining and credit material in course 1.
+
+## Why it ended, and how to say so
+
+The Encyclopedia attributes the end of the Sweepstakes to **Depression finances combined with the 1936 accident** (Encyclopedia of Indianapolis, n.d.-c). **Both halves matter, and neither is a moral.**
+
+**An enterprise running on rented ground, second-hand machinery and gate receipts has no reserve.** One catastrophic race, in the middle of the worst economic contraction in American history, is enough. **The 500-mile race also missed years, in 1917 and 1918 and again from 1942 to 1945, and it came back, because it had a plant, an owner and a balance sheet.** The difference in survival is a difference in capital structure, and it is measurable.
+
+## The rule to carry out of Section 3
+
+**When you find a parallel institution in any field, read it as evidence about the main institution.** A separate league, a separate hospital, a separate bank, a separate school, a separate travel guide: **each one is a functioning organisation, built by named people at real cost, and each one exists because a door was held shut.** The Green Book itself, in the prerequisite course, is the purest example: **a publishing business whose entire product was a workaround.**
+
+**And credit the builders.** Seven men incorporated a racing association in 1924. A mechanic built a car in the shop where he worked and won with it four times. A national newspaper named the race and carried it to eight states. **None of that is consolation. All of it is construction**, and a course that files it under loss has misread its own evidence.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-c). *Gold and Glory Sweepstakes*. https://indyencyclopedia.org/gold-and-glory-sweepstakes/
+- Encyclopedia of Indianapolis. (n.d.-d). *Charles Edwin "Charlie" Wiggins*. https://indyencyclopedia.org/charles-edwin-charlie-wiggins/
+- Indianapolis Motor Speedway. (n.d.-a). *About the track*. https://www.indianapolismotorspeedway.com/history/about-the-track
+- PBS. (n.d.-a). *For gold and glory: 1924*. https://www.pbs.org/forgoldandglory/history/1924.html
+- PBS. (n.d.-c). *For gold and glory: 1931*. https://www.pbs.org/forgoldandglory/history/1931.html
+- PBS. (n.d.-d). *For gold and glory: 1936*. https://www.pbs.org/forgoldandglory/history/1936.html
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.
+- Sheldon, A. (2021, February 12). *Charlie Wiggins and the Gold and Glory Sweepstakes*. AAA Northeast. https://magazine.northeast.aaa.com/daily/life/cars-trucks/charlie-wiggins-and-the-gold-and-glory-sweepstakes/`,
+      recallContent: [
+        {
+          prompt: "Which course 1 example is the same pattern as the Colored Speedway Association?",
+          answer: "The Flanner House self-help home ownership programme, which answered the clearance of Pat Ward's Bottom with about 300 dollars down and roughly 1,200 hours of labour toward equity. A community answering a taking by building an institution is a documented pattern.",
+        },
+        {
+          prompt: "List five things the Colored Speedway Association had to acquire to run a championship.",
+          answer: "An organisation with named principals, a venue it did not own, a fallback venue, a fixed date, a field of entrants, cars, a name and audience through the Black press, and medical provision.",
+        },
+        {
+          prompt: "What can a parallel institution match, and what can it not?",
+          answer: "It can match the event: a 100-mile championship with a field, a purse, a national name and a crowd. It cannot match the capital: a purpose-built plant with 3.2 million bricks and a quarter of a million seats against a rented dirt mile with a 6,000-seat grandstand.",
+        },
+        {
+          prompt: "Why did the Sweepstakes end and the Indianapolis 500 survive its own interruptions?",
+          answer: "The Sweepstakes ran on rented ground, second-hand machinery and gate receipts with no reserve, so Depression finances plus the 1936 crash finished it. The 500 missed 1917-1918 and 1942-1945 and returned because it had a plant, an owner and a balance sheet. The difference in survival is a difference in capital structure.",
+        },
+        {
+          prompt: "State the rule about parallel institutions.",
+          answer: "Read a parallel institution as evidence about the main one. A separate league, hospital, bank, school or travel guide is a functioning organisation built by named people at real cost, and it exists because a door was held shut. Credit the construction rather than filing it under loss.",
+        },
+      ],
+    },
+    {
+      slug: "tr-powers-what-opened-the-gate",
+      title: "12 · What actually opened the gate, and what replaced it",
+      section: "Section 3 · Powers",
+      body: `The last lesson of beat 3 asks the question that beat 3 always ends on: **what changed, when, and how would you know?**
+
+## The chronology of admission
+
+| Date | Event |
+|---|---|
+| 1902 onward | The AAA Contest Board is the leading national sanctioning body |
+| 1911 | First 500-mile race at the Indianapolis Motor Speedway |
+| 1924 to 1936 | The Colored Speedway Association runs the Gold and Glory Sweepstakes |
+| April 6, 1947 | Joie Ray races alongside white drivers in a sanctioned sprint car race at Mitchell, Indiana |
+| October 1947 | AAA officials tell the *Indianapolis Recorder* the association never barred anyone by race or creed |
+| June 26, 1949 | Ray's first AAA-sanctioned race, at Salem Speedway |
+| Sept 16, 1955 | The AAA dissolves its Contest Board; Tony Hulman establishes USAC |
+| 1956 | USAC sanctions the Indianapolis 500 for the first time |
+| 1996 to 1997 | Tony George founds the Indy Racing League, which takes over sanctioning the race |
+| **May 19, 1991** | **Willy T. Ribbs qualifies for the Indianapolis 500** |
+| 2002 | George Mack qualifies and finishes 17th |
+| January 6, 2020 | Penske Entertainment acquires the track and the series |
+
+**Now read the two rows that matter and notice the gap.**
+
+**Licensing and sanctioned competition opened in the late 1940s. A Black driver started the Indianapolis 500 in 1991.** That is roughly **forty-two years** between the permission gate opening and the outcome changing at this track.
+
+**A rule repealed is not a barrier removed.** If you take one sentence out of Section 3, take that one, and notice how much work it does outside racing. **The interval between a formal opening and a measurable change is itself a measurement, and it is usually the most interesting number in the story.**
+
+## What this course can and cannot say about that gap
+
+**It cannot name a cause.** Forty-two years is a gap, not a mechanism. This course has not read team budgets, sponsorship contracts, junior series entry lists, or licensing records, and **it will not manufacture an explanation out of plausibility.**
+
+**It can name the candidates**, each of which is checkable by somebody willing to do the work:
+- **Capital and sponsorship.** A ride costs money that has to come from somewhere.
+- **The pipeline.** Drivers arrive at this level through years of junior racing that has its own costs and its own gates.
+- **Team access.** Somebody has to hire you, and hiring is private.
+- **Residual informal exclusion**, which by definition leaves the same absence of documents that lesson 10 described.
+
+**All four could be operating at once**, and separating them requires data this course does not have. **Naming your candidates and admitting you cannot rank them is a legitimate finding.** Pretending to rank them is not.
+
+## How you would measure it today
+
+**The great advantage of a sport is that it counts everything.** Starters, entries, qualifying attempts, finishing positions and prize money are all published, every year, by the sanctioning body itself.
+
+**So the civic question this course opened with is unusually measurable.** "Who is admitted to a sport" has a number attached, published annually, for over a century. **Compare that with course 1**, where the question "how many buildings did the Avenue lose" has no answer at all because no survey was ever run. **When a field publishes its own counts, use them, and hold it to them.**
+
+**One present-day fact, offered as a fact and not as an evaluation.** In 2021 the Speedway's own website quoted **Jimmie McMillian, chief diversity officer of Penske Entertainment**, on Charlie Wiggins (Indianapolis Motor Speedway, 2021). **That an organisation has an officer with that title is a documented fact. Whether the outcomes have changed is a separate, countable question**, and the count is the only thing that can answer it. **Do not accept a job title as a result, and do not dismiss one either. Count.**
+
+## The three method lessons of Section 3
+
+1. **Enumerate the gates before you assign a cause.** Licence, entry, membership, venue, capital. Each has a holder and a record, or a documented lack of one.
+2. **Distinguish an outcome from an instrument.** Eighty years without a Black starter is an outcome. A rule is an instrument. **This course established the first and could not establish the second, and said so.**
+3. **Measure the interval between the opening and the change.** It is where the real barrier usually lives.
+
+## Sources
+- African Americans in Motorsports. (n.d.). *Joie Ray*. https://aaim1.com/african-american-racing-history-joie-ray
+- Encyclopedia of Indianapolis. (n.d.-f). *United States Auto Club*. https://indyencyclopedia.org/united-states-auto-club/
+- Indianapolis Motor Speedway. (2020, January 5). *Penske Corporation completes acquisition of the Indianapolis Motor Speedway, the NTT IndyCar Series and IMS Productions*. https://www.indianapolismotorspeedway.com/news-multimedia/news/2020/01/05/penske-corporation-completes-acquisition-of-the-ims-indycar-and-imsproductions
+- Indianapolis Motor Speedway. (2021, July 13). *Black racing legend Wiggins drives to big screen with new movie "Eraced"*. https://www.indianapolismotorspeedway.com/news-multimedia/news/2021/07/13/black-racing-legend-wiggins-drives-to-big-screen-with-new-movie-eraced
+- Motorsport Magazine. (n.d.). *Willy T Ribbs on becoming the first black driver in Indy 500*. https://www.motorsportmagazine.com/articles/us-scene/indycar/willy-t-ribbs-on-becoming-the-first-black-driver-in-indy-500-the-pressure-was-unbelievable/
+- Mullins, P. R. (2015, May 16). *Racing along the color line*. Archaeology and Material Culture. https://paulmullins.wordpress.com/2015/05/16/racing-along-the-color-line/`,
+      recallContent: [
+        {
+          prompt: "How long was the gap between the permission gate opening and a Black driver starting the Indianapolis 500?",
+          answer: "About forty-two years. Licensing and sanctioned competition opened in the late 1940s; Willy T. Ribbs qualified on May 19, 1991.",
+        },
+        {
+          prompt: "State the sentence that generalises that gap.",
+          answer: "A rule repealed is not a barrier removed. The interval between a formal opening and a measurable change is itself a measurement, and it is usually the most interesting number in the story.",
+        },
+        {
+          prompt: "Name the four candidate explanations for the gap, and what the course does with them.",
+          answer: "Capital and sponsorship, the junior racing pipeline, private team hiring, and residual informal exclusion. All four could operate at once. The course names them, admits it cannot rank them, and refuses to manufacture an explanation from plausibility.",
+        },
+        {
+          prompt: "Why is this course's civic question unusually measurable compared with course 1's?",
+          answer: "Because a sport counts everything and publishes it: starters, entries, qualifying attempts, finishes and prize money, every year, by the sanctioning body itself. Course 1's question of how many buildings the Avenue lost has no answer because no survey was run.",
+        },
+        {
+          prompt: "How should you treat the existence of a chief diversity officer at Penske Entertainment?",
+          answer: "As a documented fact about an organisation, not as a result. Whether outcomes changed is a separate countable question. Do not accept a job title as a result and do not dismiss one either. Count.",
+        },
+      ],
+    },
+    {
+      slug: "tr-quiz-powers",
+      title: "13 · Quiz: who decides admission",
+      section: "Section 3 · Powers",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is a sanctioning body, and what does it control?",
+            options: [
+              "A government agency that regulates motorsport safety",
+              "A spectator club that votes on race results",
+              "A private association that writes the rulebook, licenses competitors and officials, approves entries, sanctions events and certifies results",
+              "The company that builds the cars",
+            ],
+            correctIndex: 2,
+            explanation: "Inside its sport its authority is close to total, and it derives from contract and event ownership rather than from a statute.",
+            sourceLessonSlug: "tr-powers-sanctioning-body",
+          },
+          {
+            prompt: "Why is a private sanctioning body harder to research than a city redevelopment commission?",
+            options: [
+              "Its meetings are not public, it keeps only what it chooses to keep, and there is no statute, minute or boundary map to request",
+              "Its records are classified by the federal government",
+              "It has no records at all, ever",
+              "Its decisions are always made by a single person",
+            ],
+            correctIndex: 0,
+            explanation: "Course 1's instruments all left documents, which is why that research worked. This instrument's defining feature is that it need not leave one.",
+            sourceLessonSlug: "tr-powers-sanctioning-body",
+          },
+          {
+            prompt: "Put the sanctioning bodies of the Indianapolis 500 in order.",
+            options: [
+              "USAC, then the AAA Contest Board, then Penske Entertainment",
+              "The Indy Racing League from 1911, then USAC, then the AAA",
+              "One body has sanctioned it continuously since 1911",
+              "The AAA Contest Board, then USAC from 1956, then the Indy Racing League from 1997, then IndyCar under Penske Entertainment from 2020",
+            ],
+            correctIndex: 3,
+            explanation: "The AAA had been the leading national body since 1902; USAC was established September 16, 1955 after the AAA dissolved its Contest Board.",
+            sourceLessonSlug: "tr-powers-sanctioning-body",
+          },
+          {
+            prompt: "What structural pattern repeats in the chain of sanctioning bodies at this track?",
+            options: [
+              "The state legislature appoints the sanctioning body",
+              "The owner of the racetrack founds or owns the body that sanctions the race there",
+              "The drivers elect the sanctioning body",
+              "Each body was created by a court order",
+            ],
+            correctIndex: 1,
+            explanation: "Tony Hulman established USAC in 1955, Tony George founded the Indy Racing League in 1996, and Penske Entertainment has owned both track and series since January 6, 2020.",
+            sourceLessonSlug: "tr-powers-sanctioning-body",
+          },
+          {
+            prompt: "Name the five gates a driver must pass, in this course's framing.",
+            options: [
+              "Qualifying speed, car weight, engine size, fuel type, and tyre choice",
+              "The competition licence, registration and entry approval, association membership, the venue's own gate, and capital",
+              "A driving test, a medical, an interview, a fee, and a sponsor",
+              "The state, the county, the town, the track, and the series",
+            ],
+            correctIndex: 1,
+            explanation: "Exclusion does not need all of them. It needs one, and each has a different holder and a different record or lack of one.",
+            sourceLessonSlug: "tr-powers-four-gates",
+          },
+          {
+            prompt: "What happened when Charlie Wiggins and Sumner 'Red' Oliver tried to enter a car at Dayton Speedway?",
+            options: [
+              "They were admitted and finished second",
+              "The race was cancelled",
+              "They were rejected because they lacked AAA registration, and were told they could register for dirt track races the following summer",
+              "They were rejected by a written rule quoted to them at the gate",
+            ],
+            correctIndex: 2,
+            explanation: "The refusal is procedural and mentions no race at all, which is exactly what makes it hard to attack and easy to run. Reported by the Indianapolis Recorder as cited by Mullins.",
+            sourceLessonSlug: "tr-powers-four-gates",
+          },
+          {
+            prompt: "Which claim did this course fail to verify?",
+            options: [
+              "That the Colored Speedway Association existed",
+              "That no Black driver started the Indianapolis 500 before 1991",
+              "That Speedway officials excluded African Americans",
+              "That a sanctioning body's written policy barred Black drivers",
+            ],
+            correctIndex: 3,
+            explanation: "The course looked for a rulebook clause, a minuted resolution, a bulletin or a licence application with a race question and found none in any source it read.",
+            sourceLessonSlug: "tr-powers-the-written-rule",
+          },
+          {
+            prompt: "In October 1947 the Indianapolis Recorder reported AAA officials saying what?",
+            options: [
+              "That the rule barring Black drivers had just been repealed",
+              "That the association had never barred any contestant by reason of race, creed or any other cause",
+              "That Black drivers had to qualify twice",
+              "That the decision belonged to the Speedway alone",
+            ],
+            correctIndex: 1,
+            explanation: "Mullins reads that statement as exposing a gentleman's agreement rather than a formal code. It is a denial from an interested party, and it is also weak evidence that there was no rulebook to produce.",
+            sourceLessonSlug: "tr-powers-the-written-rule",
+          },
+          {
+            prompt: "What is the difference between an outcome and an instrument, in this course's terms?",
+            options: [
+              "There is none; they are two words for the same thing",
+              "An instrument is anything a historian believes happened",
+              "An outcome is what can be counted, such as eighty years without a Black starter; an instrument is the specific power that produced it, such as a rule",
+              "An outcome is always more reliable than a document",
+            ],
+            correctIndex: 2,
+            explanation: "This course established the outcome and could not establish the instrument, and says so rather than papering over the gap.",
+            sourceLessonSlug: "tr-powers-the-written-rule",
+          },
+          {
+            prompt: "Why does an unwritten exclusion teach more than a written one?",
+            options: [
+              "A written rule can be printed, quoted, repealed and measured, while an unwritten one leaves no document, no date and no defendant, and every refusal has an innocent procedural explanation",
+              "Unwritten rules are always fairer",
+              "Written rules are usually forgeries",
+              "Because historians prefer oral history",
+            ],
+            correctIndex: 0,
+            explanation: "The pattern appears only when you count outcomes across decades, which is why the eighty-year number does more work than any quotation could.",
+            sourceLessonSlug: "tr-powers-the-written-rule",
+          },
+          {
+            prompt: "What weakness does this course identify in its own sources?",
+            options: [
+              "All of its sources are anonymous",
+              "It relies only on newspapers",
+              "Three of its strongest sources trace back to one scholar, Todd Gould, who wrote both Encyclopedia entries, the book and the documentary",
+              "None of its sources are published",
+            ],
+            correctIndex: 2,
+            explanation: "Where the Encyclopedia and the PBS companion site disagree on the number of runnings, that is not two independent sources disagreeing.",
+            sourceLessonSlug: "tr-powers-the-written-rule",
+          },
+          {
+            prompt: "Which course 1 example is the same pattern as founding the Colored Speedway Association?",
+            options: [
+              "The 1956 blight declaration of 38 acres",
+              "The Unigov population threshold",
+              "Hoosier Realty Corporation's land purchases",
+              "The Flanner House self-help home ownership programme",
+            ],
+            correctIndex: 3,
+            explanation: "A community answering a taking by building an institution is a documented pattern rather than a sentiment.",
+            sourceLessonSlug: "tr-powers-parallel-institution",
+          },
+          {
+            prompt: "What can a parallel institution match, and what can it not?",
+            options: [
+              "It can match the capital but not the talent",
+              "It can match the event, but not the capital: a rented dirt mile with a 6,000-seat grandstand against a purpose-built plant with 3.2 million bricks and a quarter of a million seats",
+              "It can match everything given enough time",
+              "It can match neither, which is why it is not worth studying",
+            ],
+            correctIndex: 1,
+            explanation: "The difference is not ambition or competence, both of which the organisers demonstrably had. It is who could raise capital in 1924.",
+            sourceLessonSlug: "tr-powers-parallel-institution",
+          },
+          {
+            prompt: "How long was the gap between the permission gate opening and a Black driver starting the Indianapolis 500, and what is the lesson?",
+            options: [
+              "About forty-two years, and the lesson is that a rule repealed is not a barrier removed",
+              "Two years, and the lesson is that reform works quickly",
+              "There was no gap",
+              "About a century, and the lesson is that nothing ever changes",
+            ],
+            correctIndex: 0,
+            explanation: "Licensing and sanctioned competition opened in the late 1940s; Ribbs qualified on May 19, 1991. The interval is itself a measurement.",
+            sourceLessonSlug: "tr-powers-what-opened-the-gate",
+          },
+          {
+            prompt: "Why is this course's civic question unusually measurable?",
+            options: [
+              "Because the state keeps a register of every driver",
+              "Because the census counts race car drivers",
+              "Because a sport counts and publishes everything: starters, entries, qualifying attempts, finishes and prize money, every year, by the sanctioning body itself",
+              "Because the answer has already been settled",
+            ],
+            correctIndex: 2,
+            explanation: "Contrast course 1, where 'how many buildings did the Avenue lose' has no answer because no survey was ever run.",
+            sourceLessonSlug: "tr-powers-what-opened-the-gate",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
