@@ -1166,6 +1166,175 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Now  (beat 4: observation and evidence)
+    //
+    // The owner has an existing Benjamin Harrison House tour, but its embed URL does not exist
+    // yet, and a tour URL is authoritative external data that must never be guessed
+    // (plans/future/04-wanderlearn-360-boundary.md). So this lesson ships as `virtual_tour` with
+    // NO contentUrl: the player renders the "no media yet" notice above the body, and the body is
+    // the observation brief the learner uses when the tour lands. Drop the URL in and re-seed.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ph-now-tour",
+      title: "15 · Now: walk the house (360 tour, forthcoming)",
+      section: "Section 4 · Now",
+      lessonType: "virtual_tour",
+      body: `**The 360 tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is telling you the truth rather than reporting a fault. This course was written before the tour was published, on purpose: the site template this series uses treats beat 4 as a drop-in, so a course is complete and teachable without it and the tour is added later without restructuring anything.
+
+**Read this lesson now anyway.** It is your observation brief, and for a house museum the brief matters more than it does for a street, **because a house museum has been arranged for you.** Somebody chose every object in every room. The difference between a visitor and a researcher is that the researcher can see the choosing.
+
+## What to look for, in order
+
+**1. Find the restoration date, and then find its edges.** The site describes preserving "the Victorian time period as Harrison and his family might have experienced it" (Benjamin Harrison Presidential Site, n.d.-b). **Look for the seams.** Where does a room stop being one period and start being another? **A house that was a dormitory for roughly thirty five years has been un-dormitoried**, and undoing something always leaves a mark.
+
+**2. Count the rooms you are shown against the sixteen the record says exist.** **The rooms not on the tour are the most interesting rooms.** Service stairs, the kitchen and its passages, storage, the basement, the attic, the carriage house. **A house museum's route is an argument about which parts of a household mattered.**
+
+**3. Look for the people who worked here.** The record notes upstairs quarters for the coachman over the carriage house (Benjamin Harrison Presidential Site, n.d.-a). **Ask of every room: whose labour kept this room working, where did that person sleep, and are they named anywhere on the tour?** If they are not, that is not a criticism, it is an observation with a date: **interpretation changes, and you are seeing the interpretation as it stands when the tour was captured.**
+
+**4. Look at the front of the house and think about lesson 6.** The porch you are looking at is dated by both published accounts to 1895 or 1896. **The campaign the house is famous for was 1888.** Note what is actually there, and note that you cannot tell from looking what was there before.
+
+**5. Look for the objects that are documents.** Campaign memorabilia, photographs, correspondence. **An object in a case is a primary source someone selected.** Note what the label says, note what it does not say, and note who wrote the label.
+
+**6. Look out of the windows.** The Old Northside is bounded on one side by Interstate 65 (Encyclopedia of Indianapolis, n.d.-b). **A house museum sits in a neighbourhood that has its own century**, and the view out is evidence about the second half of that century in a way the parlour is not.
+
+**7. Look for how the site talks about the presidency itself.** This site runs education programmes with names like **Future Presidents of America** and **Project POTUS** (Benjamin Harrison Presidential Site, n.d.-c). **Note whether the tour presents Harrison mainly as a Hoosier, mainly as a president, or mainly as a man with a specific record on specific questions.** All three are defensible framings and they are not the same framing.
+
+## What the tour cannot show you
+
+- **It cannot show you a vote.** Nothing in this building records what the Senate did on January 22, 1891. **The building is where the man lived, not where the question was decided.**
+- **It cannot show you an absence.** You cannot photograph a bill that did not pass, or a person who is not in the interpretation.
+- **It cannot show you a governance decision.** Who sits on the board, what the budget is, and what the interpretive plan says are not visible in a room. **Section 5 sends you to find all three.**
+- **It cannot date itself.** Every 360 capture is a photograph of one moment in an institution's life. **Ask when it was taken, because the answer changes what it is evidence of.**
+
+**Write down five observations from this brief before the tour arrives, then check them against it.** Being wrong on the record about a house you have not yet seen is a better teacher than being right about one you have.
+
+## Sources
+- Benjamin Harrison Presidential Site. (n.d.-a). *The house*. https://bhpsite.org/learn/the-house/
+- Benjamin Harrison Presidential Site. (n.d.-b). *About*. https://bhpsite.org/about/
+- Benjamin Harrison Presidential Site. (n.d.-c). *Learn*. https://bhpsite.org/learn/
+- Encyclopedia of Indianapolis. (n.d.-b). *Old Northside*. https://indyencyclopedia.org/old-northside/`,
+      recallContent: [
+        {
+          prompt: "Why is this lesson published before its 360 tour exists?",
+          answer: "Because the site template treats beat 4 as a drop-in: a course is complete and teachable with the other five beats, and the tour is added later without restructuring anything. The body is the observation brief in the meantime.",
+        },
+        {
+          prompt: "What is the difference between a visitor and a researcher in a house museum?",
+          answer: "A house museum has been arranged. Somebody chose every object in every room, and the researcher can see the choosing.",
+        },
+        {
+          prompt: "Which rooms are the most interesting ones, and why?",
+          answer: "The rooms not on the tour: service stairs, kitchen passages, storage, basement, attic, carriage house. A museum's route is an argument about which parts of a household mattered.",
+        },
+        {
+          prompt: "Name four things a 360 tour of this house cannot show you.",
+          answer: "A vote, an absence, a governance decision, and its own date. Nothing in the building records what the Senate did on January 22, 1891, and the board, budget and interpretive plan are not visible in a room.",
+        },
+      ],
+    },
+    {
+      slug: "ph-map",
+      title: "16 · Map: one house, and the rooms where the question was decided",
+      section: "Section 4 · Now",
+      body: `**Read this before you touch the map, because the map's limits are the lesson.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, so two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **Everything in Indianapolis is therefore one dot.** The Harrison house, the Indiana Statehouse about a mile and a half south of it, Indiana Avenue about a mile and a half southwest, and the Marion County township lines that carry the Unigov story are **all inside a single marker on this map**. Pretending otherwise would be a worse lesson than saying it.
+
+**So this map does the job it can do well: it plots the ROOMS.** This course is about a question that was decided in specific buildings by specific bodies, and those buildings are hundreds of miles apart. **Seeing the distance between the house and the rooms is the point.**
+
+**Blue: the house.** Where the man lived, campaigned and died, and where none of the decisions in Section 3 were taken.
+
+**Amber: the three rooms where the question was actually decided.** The **United States Capitol**, where H.R. 11045 passed one chamber and was set aside in the other. **Jackson, Mississippi**, where a state convention wrote disfranchisement into a constitution in the same year. And **Boston**, standing for Massachusetts, because both men who carried the bill represented that state. **A bill aimed at the South was written and carried by two New Englanders**, which tells you something real about whose political capital was and was not being spent.
+
+**Green: the parts of the record that do not fit.** **Wounded Knee Creek** in South Dakota, and **San Francisco** for the Geary Act, whose sponsor represented California and whose certificate-of-residence system fell on Chinese communities concentrated on the Pacific coast. **These two markers exist so that this map cannot be read as a monument.**
+
+**Coordinates on this map are approximate points, not surveyed locations.** Do not use them to find an address. For a parcel question in Marion County the right tool is **MapIndy**, the official geographic information system for the Consolidated City of Indianapolis and Marion County, exactly as course 1 of this cluster taught (City of Indianapolis and Marion County, n.d.).
+
+**What this map cannot show, and it is the same limit every map in this series has.** **It cannot show absence.** There is no marker for a district that never got federal supervisors, because there is no event to plot. **The map shows where decisions were made, not where their consequences landed**, and the gap between those two is most of American civics.
+
+## Sources
+- City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
+- Encyclopedia of Indianapolis. (n.d.-a). *Benjamin Harrison Presidential Site*. https://indyencyclopedia.org/benjamin-harrison-presidential-site/
+- Mississippi Encyclopedia. (n.d.). *Mississippi Constitutional Convention of 1890*. Center for Study of Southern Culture, University of Mississippi. https://mississippiencyclopedia.org/entries/mississippi-constitutional-convention-of-1890/
+- U.S. Senate. (n.d.). *About filibusters and cloture: Historical overview*. https://www.senate.gov/about/powers-procedures/filibusters-cloture/overview.htm`,
+      mapContent: {
+        markers: [
+          {
+            id: "ph-harrison-house",
+            lat: 39.7853,
+            lng: -86.1556,
+            title: "Benjamin Harrison house, 1230 North Delaware Street, Indianapolis, Indiana",
+            color: "#1d4ed8",
+            description:
+              "The subject of this course. A 16-room brick Italianate house by Herman T. Brandt, begun 1874 and finished in spring 1875, where Harrison ran the 1888 front porch campaign and where he died in 1901. National Historic Landmark January 29, 1964; National Register October 15, 1966, reference 66000010. At this map's scale the Indiana Statehouse about a mile and a half south, Indiana Avenue about a mile and a half southwest, and every Marion County township line are all inside this same dot.",
+          },
+          {
+            id: "ph-us-capitol",
+            lat: 38.8899,
+            lng: -77.0091,
+            title: "United States Capitol, Washington, D.C.",
+            color: "#b45309",
+            description:
+              "Where the question was actually decided. H.R. 11045 passed the House 155 to 149 on July 2, 1890 with no Democratic votes, was filibustered in the Senate from December 2, 1890, and was set aside by a vote of 35 to 34 on January 22, 1891. The Senate had no cloture rule until 1917. Three years later Congress repealed most of what remained of the 1870 and 1871 enforcement statutes.",
+          },
+          {
+            id: "ph-jackson-ms",
+            lat: 32.2996,
+            lng: -90.181,
+            title: "Old Capitol, Jackson, Mississippi",
+            color: "#b45309",
+            description:
+              "The other room, in the same year. Mississippi's constitutional convention of 1890 wrote disfranchisement into a state constitution using a literacy test with an understanding clause and a poll tax. Other southern states copied the design over the following two decades, and the Supreme Court upheld it in Williams v. Mississippi, 170 U.S. 213 (1898). Two governments moved in opposite directions in the same twelve months, and the one that acted decisively won.",
+          },
+          {
+            id: "ph-boston-ma",
+            lat: 42.3601,
+            lng: -71.0589,
+            title: "Massachusetts (Boston), the state both sponsors represented",
+            color: "#b45309",
+            description:
+              "Representative Henry Cabot Lodge drafted the bill and Senator George Frisbie Hoar carried it in the Senate. Both represented Massachusetts. A bill whose purpose was to reach southern disfranchisement was written and carried by two New Englanders, which is a fact about whose political capital was being spent and whose was not.",
+          },
+          {
+            id: "ph-wounded-knee",
+            lat: 43.1428,
+            lng: -102.3691,
+            title: "Wounded Knee Creek, Pine Ridge, South Dakota",
+            color: "#15803d",
+            description:
+              "A part of the record that does not fit. On November 13, 1890 Harrison ordered that a body of troops sufficiently large to be impressive be sent to the Lakota reservations. On December 29, 1890 the Seventh Cavalry killed Lakota men, women and children here. Casualty estimates vary substantially across sources and this course adopts none. Five weeks separate this from the Senate vote that killed the elections bill.",
+          },
+          {
+            id: "ph-san-francisco",
+            lat: 37.7749,
+            lng: -122.4194,
+            title: "San Francisco, California, and the Geary Act",
+            color: "#15803d",
+            description:
+              "The other part of the record that does not fit. Harrison signed the Geary Act on May 5, 1892. Introduced by Representative Thomas J. Geary of California, it extended Chinese exclusion for ten years and required Chinese residents of the United States to obtain and carry a certificate of residence, with deportation or a year of hard labour for those found without one. It became law nineteen months after the elections bill died.",
+          },
+        ],
+      },
+      recallContent: [
+        {
+          prompt: "Why can this map not show Indianapolis in detail?",
+          answer: "The lesson map draws the whole world, so points need roughly two degrees of separation to be distinguishable. The Harrison house, the Statehouse, Indiana Avenue and every Marion County township line are all inside one dot. For a parcel question the right tool is MapIndy.",
+        },
+        {
+          prompt: "What do the amber markers stand for, and what does the Boston marker teach?",
+          answer: "The rooms where the question was decided: the United States Capitol, the Mississippi convention at Jackson, and Massachusetts. The Boston marker records that both sponsors of a bill aimed at southern disfranchisement represented Massachusetts, which tells you whose political capital was being spent.",
+        },
+        {
+          prompt: "Why are Wounded Knee and San Francisco on this map?",
+          answer: "So the map cannot be read as a monument. They mark the two parts of Harrison's record that do not fit a flattering story: the November 1890 troop order preceding the December 29, 1890 massacre, and the Geary Act signed May 5, 1892.",
+        },
+        {
+          prompt: "What can this map, like every map in this series, not show?",
+          answer: "Absence. There is no marker for a district that never got federal supervisors, because there is no event to plot. The map shows where decisions were made, not where their consequences landed.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
