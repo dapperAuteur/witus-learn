@@ -45,7 +45,14 @@ export const lessonProgress = pgTable(
     watchSeconds: integer("watch_seconds").notNull().default(0),
     quizScore: numeric("quiz_score", { precision: 5, scale: 2 }),
     quizAnswers: jsonb("quiz_answers"),
-    tourProgress: jsonb("tour_progress"),
+    // NOTE: there is deliberately no `tour_progress` column here. The extracted CentOS spec
+    // (docs/spec/dedicated-lms/DATA_MODEL.md) defined one as `{visited_hotspot_ids: []}`, but that
+    // shape belongs to the tour ENGINE, which this LMS does not own: plans/future/04 assigns 360
+    // tours to Wanderlearn, and the sibling tour_scenes / tour_hotspots / tour_scene_links tables
+    // were dropped for the same reason. A hotspot id is Wanderlearn's primary key, not ours, and a
+    // cross-origin embedded tour cannot report visits without a postMessage integration that does
+    // not exist. The column shipped unused in migration 0002 and was removed in 0038. If per-scene
+    // progress is ever wanted, design it against Wanderlearn's real API rather than this guess.
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [
