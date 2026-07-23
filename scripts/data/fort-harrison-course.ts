@@ -818,6 +818,204 @@ Here is where this post gets genuinely interesting, and where it links to the re
         },
       ],
     },
+    {
+      slug: "fh-powers-brac",
+      title: "10 · Instrument three: a commission built so that nobody could save one base",
+      section: "Section 3 · Powers",
+      body: `**Closing a military base in the United States is close to politically impossible, and Congress knew it.** The instrument in this lesson exists specifically to defeat the politics, and understanding its design is worth more than any fact about this post.
+
+## The problem the instrument was built to solve
+
+A base is a district's largest employer. Every member of Congress has an overwhelming incentive to protect the ones at home and no incentive to close anyone else's. **Ordinary legislation therefore cannot close bases**, because any bill naming a base attracts an amendment removing it, and enough of those amendments make the bill pointless.
+
+**The solution was procedural, and it has three moving parts:**
+1. **An independent commission** reviews a list of closures and realignments proposed by the Secretary of Defense against published selection criteria.
+2. The commission sends **one package** to the President, who accepts or rejects it **as a whole**.
+3. Congress may reject the package **in its entirety** within a set period, or it takes effect. **There is no vote on any individual base.**
+
+**That third part is the whole design.** A member of Congress cannot trade a vote to save one installation, because there is no vote to trade. **When you meet a policy problem where everyone agrees something must be cut and nobody will cut theirs, look for a mechanism that removes the item-by-item vote.** Base closure is the classic American example, and the same architecture shows up wherever a legislature wants to bind itself.
+
+**The statute for the round that closed this post is the Defense Base Closure and Realignment Act of 1990**, enacted as part of that year's defense authorisation legislation, which set up the commission rounds of 1991, 1993 and 1995 (Defense Base Closure and Realignment Act of 1990). The Encyclopedia of Indianapolis refers to it as the "Base Realignment and Closure Act of 1990" (Encyclopedia of Indianapolis, n.d.-a). **Same statute, looser name.**
+
+## What happened to this post, in order
+
+**1988: the round that made it stronger.** An earlier commission operated in **1988**, and its effect here ran the other way. **BRAC 1988 brought new jobs to Fort Harrison** and proposed moving additional functions in, and the post came out of it looking like "a financially viable installation and a major contribution to Lawrence Township and Marion County's" economy (Hankins, 2020, pp. 25-26). **A base that survives one round is not safe; it is simply not yet on the next list.** That is a genuinely important thing to understand about any recurring review process.
+
+**1991: the list.** Secretary of Defense **Dick Cheney's** recommendations put the post on the closure list, and the announcement "shocked the communities of Indianapolis and Lawrence" (Hankins, 2020, p. 29). The specialisation that had kept the post alive for forty years, administration and finance training, was also what made it look consolidatable.
+
+**The campaign to save it, which is the civics.** It was serious and it involved everyone you would expect: the mayors of Indianapolis and Lawrence, the Indiana congressional delegation, the Indiana chapter of the Association of the United States Army, and a study by the **General Accounting Office** suggesting there was no suitable reason to close the post. A BRAC commissioner visited the fort on **29 May 1991** before the public hearing, and a public meeting followed at the Indiana Government Center (Hankins, 2020, pp. 30-34).
+
+**It did not work.** Hankins's assessment is worth quoting for its restraint: the efforts had "seemingly little to no effect on the BRAC 91 decision," and "despite the publicity and efforts of the mayors of Indianapolis and Lawrence and other voices of protest, most Hoosiers did not passionately respond" (2020, p. 32). **Continual defense budget cuts and troop reductions at the end of the Cold War outweighed local concerns** (Hankins, 2020, pp. 31-32).
+
+**An unintended coalition, which you should notice.** Environmental groups wanted the fort's forest turned into a park, and community groups in Lawrence Township wanted to prevent future residential development on it. Their preferences **pleased environmentalists enough to gain their support for the decision to close** (Hankins, 2020, p. 32, citing Indianapolis Star reporting of 29 May 1991). **A closure some people fought was a closure other people wanted, for reasons that had nothing to do with defense policy.** Lesson 11 shows that this second group got most of what it asked for.
+
+**1 July 1991: the recommendation itself.** The commission recommended to President Bush:
+
+> the closure of Benjamin Harrison; the realignment of the Soldier Support Center to Fort Jackson, South Carolina; and the retention of the Department of the Defense Finance and Accounting Service, Indianapolis Center. We also recommend the revision on Base Realignment and Closure 1988 recommendation relocating U.S. Army Recruiting Command from Fort Sheridan to Fort Knox rather than Fort Benjamin Harrison. The Commission also recommends an adjustment in the DoD recommendation. We find the Secretary deviated substantially from criterion 2, the availability and condition of land and facilities at both the existing and potential receiving locations. Because of this, the Commission also recommends to the President the closure of Building 1.
+>
+> (Defense Base Closure and Realignment Commission, 1991, p. 5-4, as quoted in Hankins, 2020, pp. 32-33)
+
+**Take that paragraph apart, because it is the single most instructive document in this course.**
+
+- **"The closure of Benjamin Harrison."** The headline.
+- **"The realignment of the Soldier Support Center to Fort Jackson, South Carolina."** Closing a base does not delete its work. **The work goes somewhere else, and somewhere else is a different congressional delegation.**
+- **"The retention of the Department of the Defense Finance and Accounting Service, Indianapolis Center."** **The post closed and a major federal employer stayed.** Lesson 15 shows you where it sits today. **"Closed" is not a synonym for "the federal government left."**
+- **"The revision on Base Realignment and Closure 1988 recommendation..."** A 1991 commission **amending a 1988 commission's decision**, because the earlier one had directed a command to a base now being closed. **Instruments interact, and later instruments clean up after earlier ones.**
+- **"We find the Secretary deviated substantially from criterion 2..."** This is the commission **overruling the Secretary of Defense on the record, citing a numbered selection criterion.** It is the mechanism working exactly as designed: published criteria that an independent body can hold the department to.
+
+**Read that last bullet again if you are tempted to think of BRAC as a rubber stamp.** The commission both closed the post **and** told the Secretary he had misapplied a criterion, and specified a further closure as a result.
+
+## Closure, in stages, with figures attributed
+
+**Closure was phased.** The Encyclopedia of Indianapolis gives **1992 to 1997** (n.d.-a); the HABS documentation, written in 1996, says the base "is scheduled for closure by 1997" (Fife & Salmon, n.d., p. 7); reporting elsewhere gives an official closure date of **30 September 1996**. **Use the range, name the source, and note that "closed" is itself a staged process rather than a day.**
+
+**The job figures, attributed.** The American Forces Press Service reported that closure displaced approximately **3,300 military and 1,050 civilian positions** (Sample, 2005). The Encyclopedia of Indianapolis separately gives a loss of **1,050 civilian positions** (n.d.-a). **Those two agree on the civilian number and only one gives the military one.** Attribute both; adopt neither as "the" figure.
+
+**And note what a base closure is, in the vocabulary of this course.** It is **a federal decision, taken by a federal commission, under a federal statute, about federal land, whose entire local consequence falls on a city, a township, a school district and a county that had no vote in it.** Whether that is good policy is a question this course leaves to you. **That it is the structure is not in dispute.**
+
+## Sources
+- Defense Base Closure and Realignment Act of 1990, Pub. L. No. 101-510, tit. XXIX, 104 Stat. 1808. https://www.govinfo.gov/app/collection/uscode
+- Defense Base Closure and Realignment Commission. (1991). *Report to the President 1991*. As quoted in Hankins (2020), pp. 32-33.
+- Encyclopedia of Indianapolis. (n.d.-a). *Fort Benjamin Harrison*. https://indyencyclopedia.org/fort-benjamin-harrison/
+- Fife, C. B., & Salmon, T. W., II. (n.d.). *Fort Benjamin Harrison* (HABS No. IN-289) [Written historical and descriptive data]. Historic American Buildings Survey, National Park Service. https://tile.loc.gov/storage-services/master/pnp/habshaer/in/in0400/in0407/data/in0407data.pdf
+- Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
+- Sample, D. (2005, June 15). *Indiana city flourishes after "Fort Ben" closure*. American Forces Press Service. https://www.dvidshub.net/news/538075/indiana-city-flourishes-after-fort-ben-closure`,
+      recallContent: [
+        {
+          prompt: "Why can ordinary legislation not close military bases, and what are the three parts of the mechanism that can?",
+          answer: "Because every member protects the base at home and any bill naming bases attracts amendments removing them. The mechanism is an independent commission reviewing the Secretary of Defense's list against published criteria, a single package sent to the President for all-or-nothing acceptance, and a congressional power to reject only the entire package. There is no vote on any individual base.",
+        },
+        {
+          prompt: "What happened to this post in the 1988 round, and what does that teach?",
+          answer: "The 1988 round brought new jobs here and made the post look financially viable. A base that survives one round is not safe; it is simply not yet on the next list.",
+        },
+        {
+          prompt: "Name three things the 1 July 1991 recommendation did besides closing the post.",
+          answer: "It realigned the Soldier Support Center to Fort Jackson, South Carolina; it retained the Defense Finance and Accounting Service, Indianapolis Center; it revised a 1988 recommendation so U.S. Army Recruiting Command went to Fort Knox instead; and it found the Secretary had deviated substantially from selection criterion 2 and recommended closing Building 1.",
+        },
+        {
+          prompt: "Why is 'closed' not a synonym for 'the federal government left'?",
+          answer: "Because the same recommendation that closed the post explicitly retained the Defense Finance and Accounting Service, Indianapolis Center. A major federal employer stayed on the same ground.",
+        },
+        {
+          prompt: "What unintended coalition appeared during the closure fight?",
+          answer: "Environmental groups wanted the forest turned into a park and Lawrence Township community groups wanted to prevent future residential development, so the closure some people fought was a closure others supported for reasons unrelated to defense policy.",
+        },
+        {
+          prompt: "Summarise a base closure in this course's vocabulary.",
+          answer: "A federal decision, taken by a federal commission, under a federal statute, about federal land, whose entire local consequence falls on a city, township, school district and county that had no vote in it.",
+        },
+      ],
+    },
+    {
+      slug: "fh-powers-conveyance",
+      title: "11 · Instrument four: who decided the afterlife of the ground",
+      section: "Section 3 · Powers",
+      body: `**The closure decision was made in Washington. The decision about what the land would become was not.** This lesson is the answer to the course's civic question, and it is the reason this site is worth teaching at all.
+
+## The problem, stated fairly
+
+In 1991 roughly **2,500 acres** inside a growing metropolitan county were about to stop being federal. **That is the largest single land-use decision anyone in Marion County would make that decade**, and there was no obvious body to make it. **Instrument four is really a set of instruments, and they run in a sequence.**
+
+## Step 1: a local body to write the plan
+
+The first move was **the Fort Benjamin Harrison Transition Task Force**, with Lawrence's Mayor **Thomas Schneider** as executive director. It was formed quickly and deliberately: Schneider wanted it stood up by **December 1991** to qualify for a **$100,000 grant from the Defense Office of Economic Adjustment** (Hankins, 2020, p. 33). **Notice that the deadline was a funding deadline.** Federal money for reuse planning is available on a schedule, and communities that organise fast get it.
+
+**By February 1992** the task force had a strategic plan, a timeline and **five subcommittees**: natural and historic resources and environment; economic impact; social and human services; neighbourhood operations and services; and education. They reported to the full task force monthly, and the whole effort ran on **seven sequential steps** aiming at a finished redevelopment plan by **May 1994** (Hankins, 2020, pp. 33-34). **Most military reuse plans take years longer** (Hankins, 2020, p. 35).
+
+**Who sat on the environmental subcommittee is the most instructive membership list in this course**, because it shows exactly whose interests were represented when the land's future was decided. It included the Indiana DNR Division of Nature Preserves, the Indianapolis Department of Metropolitan Development and Planning, the U.S. Department of Agriculture's soil conservation division, U.S. Fish and Wildlife, Groups Advocating Urban Greenspace Environments, neighbourhood associations of Lawrence Township, the Indiana chapter of the Nature Conservancy, the U.S. Army, the Hoosier Environmental Council, the City of Lawrence's park board, the fort's own natural resource management division, the Sierra Club, the Audubon Society, and Mayor Schneider (Hankins, 2020, pp. 35-36).
+
+**Count the sovereigns in that room: federal, state, county, city, township, plus non-governmental organisations.** That is what it takes to decide the future of a piece of federal ground, and **every one of them was there because somebody put them there.**
+
+## Step 2: prove the land is worth keeping
+
+Between **April and June 1992** the subcommittee inventoried what was there. The findings, from studies compiled before the closure decision: **about 1,700 acres of nearly continuous reforested land, 155 plant species including 4 rare plants, tributaries of Fall Creek, 42 species of fish, 21 species of reptiles and amphibians, 185 species of birds**, and mammals including the endangered Indiana bat (Hankins, 2020, pp. 36-37).
+
+**And here is the sentence that explains everything.** An Indiana DNR study concluded: "The forested natural communities found at Fort Ben comprise the largest tract of forest, approximately 1,100 acres remaining in central Indiana. A forested tract of this size is extremely significant, especially in Central Indiana" (Hedge et al., 1992, p. 2, as quoted in Hankins, 2020, p. 37).
+
+**Now connect it to lesson 8.** That forest exists because **for ninety years the land was owned by an entity that paid no property tax on it, needed it undeveloped for training, and restricted access to it.** Hankins puts the mechanism plainly: military land use created **de facto protected areas** by limiting human, industrial and agricultural use (2020, p. 16). **The single largest conservation outcome in central Indiana was an unintended by-product of federal ownership.** Nobody planned it. **That is the answer to this course's civic question, and it is not a comfortable one**, because the same ownership that produced the forest also removed the ground from the tax base for ninety years and closed it to the public.
+
+## Step 3: the conveyance instrument
+
+**Federal surplus property does not simply go on the market.** Under the **Federal Property and Administrative Services Act of 1949**, before disposal the government must consider **public benefit conveyances**, including conveyances for park, recreation and natural resource protection purposes (Hankins, 2020, p. 38). For a park conveyance the **Department of the Interior** assesses the land, and the transfer runs through what was then the National Park Service's **Federal Surplus Real Estate Property Program**, known today as **Federal Lands to Parks** (Hankins, 2020, pp. 38-39; National Park Service, n.d.).
+
+**The alternative, if Interior said no, was disposal at fair market value by public auction or negotiated sale** (Hankins, 2020, p. 39). **Two paths, one decision, and the decision belonged to a federal department.**
+
+**The subcommittee stopped planning and started lobbying**, encouraging members and the public to write to the Department of the Interior and the National Park Service in support (Hankins, 2020, p. 39). **In August 1992 the National Park Service announced support for a public benefit conveyance**, having determined two things: that the land was **not suitable as a national park**, and that **preservation and protection should be accomplished by local or state government** (Hankins, 2020, pp. 39-40). **That is a federal agency deciding it should not be the owner and naming who should be.**
+
+## Step 4: the state says yes, and the transfer happens
+
+**Governor Evan Bayh announced that Indiana would take the land as a state park.** And here you get a source-checking exercise for free. **Hankins's text says the announcement came on 30 August 1994. The footnote on that same sentence cites an Indianapolis Star article dated 31 August 1993, titled "Bayh proposes using Fort Ben as a state park"** (2020, p. 41 and n.97). **The sentence and its own footnote are a year apart.**
+
+**Do not treat that as a gotcha.** Treat it as the ordinary condition of research. **A body-text year and a footnote year that disagree is a signal to go to the footnote's source**, because the footnote points at a dated newspaper you can pull. **This course reports the discrepancy and does not pick a year.** Bayh's quoted words survive either way: "The best use we can make of this property would be to hold it in trust for future generations. Fifty years from now, thousands of our citizens will be able to enjoy this" (as quoted in Hankins, 2020, p. 41).
+
+**The transfer, in 1995, was a lease and not a gift.** The Army transferred **1,700 of the 2,500 acres** to the Indiana Department of Natural Resources under an **interim lease at a recurring lease price**, renewable in **four-year periods**, with covenants protecting the land against **deforestation, mining, soil erosion and pollution** and requiring **historic preservation and archaeological work** (Hankins, 2020, pp. 44-45, citing the Army's interim lease document). **Read the covenants as the instrument.** The conditions on the land were written by the party giving it up, and they bind the state that took it.
+
+**The park opened in October 1996**, and its interpretive centre opened in **1999** (Hankins, 2020, pp. 47-48, 52). The Indiana DNR describes **Fort Harrison State Park** today as a **1,700-acre** park containing **two national historic districts** (Indiana Department of Natural Resources, n.d.).
+
+## Step 5: the other 800 acres, and a taxing district
+
+The remaining roughly **800 acres**, mostly the already-developed part, went to redevelopment. The reuse plan set out residential, office and light industrial options, and marketed a residential conversion as **Harrison Village**, reusing **46 buildings from the 1960s containing 232 apartment units** (Hankins, 2020, p. 45).
+
+**The body that did it is the fourth instrument.** The **Fort Harrison Reuse Authority** was established in **1995 under Indiana Code 36-7-30**, the state's chapter on the **reuse of federal military bases**. The statute's premise is that preparing a military base for reuse is "a public and governmental function that cannot be accomplished through the ordinary operations of private enterprise." The authority's property lies in **a special taxing district** for the purpose of levying and collecting **special benefit taxes** for reuse purposes, and unlike an ordinary tax increment district this one is **indefinite**. The authority **purchased approximately 800 acres for $9 million** (Fort Harrison Reuse Authority, n.d.; Ind. Code § 36-7-30).
+
+**Put that beside lesson 8 and the circle closes.** Ground that paid **no** property tax for ninety years came back under a body whose whole financial design is a **special taxing district that never expires**. **The tax base did not simply return. It returned inside a new instrument, purpose-built by the state legislature, with its own boundary and its own revenue stream.**
+
+**Two more things that had to happen first, and they are not decoration.**
+
+**Environmental cleanup.** A **BRAC Cleanup Team** was formed in **1994** with a BRAC environmental coordinator and representatives of the **Environmental Protection Agency** and the **Indiana Department of Environmental Management**. It coordinated an ordnance and explosives search, because one site had been a **grenade range**, and a **24-acre landfill** west of the Camp Glenn area was **closed and sealed in 1991** with continued EPA monitoring (Hankins, 2020, pp. 42-43). **You cannot convey what you have not cleaned**, and cleanup schedules routinely govern the pace of a base conversion.
+
+**Demolition and investment.** More than **one million square feet of buildings were demolished**, and the American Forces Press Service reported that the **City of Lawrence invested $250 million in the 550-acre main post area**, with **more than 100 new companies and civic organisations** arriving within four years (Sample, 2005). **Treat those as attributed figures from a Defense Department news outlet writing a success story.** They are worth reporting and worth labelling.
+
+## The chain, in one table
+
+| Step | Instrument | Who decided | Document it left |
+|---|---|---|---|
+| Close the base | Defense Base Closure and Realignment Act of 1990 | An independent commission, then the President and Congress on an all-or-nothing basis | The commission's 1991 report to the President |
+| Plan the reuse | A local transition task force funded by the Office of Economic Adjustment | City, county, state, federal and non-governmental members | The Fort Harrison Reuse Plan, 1995 |
+| Keep the forest public | Federal Property and Administrative Services Act of 1949, public benefit conveyance via Federal Lands to Parks | The Department of the Interior and the National Park Service | The 1992 NPS determination; the 1995 interim lease |
+| Redevelop the rest | Indiana Code 36-7-30 | The Indiana General Assembly, then the Fort Harrison Reuse Authority | The authority's charter and its special taxing district |
+
+**Learn that table and you can read any closed base in the country.**
+
+## Sources
+- Fort Harrison Reuse Authority. (n.d.). *About*. https://www.fhra.org/about/
+- Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
+- Ind. Code § 36-7-30 (Reuse of federal military bases). https://law.justia.com/codes/indiana/title-36/article-7/chapter-30/
+- Indiana Department of Natural Resources. (n.d.). *Fort Harrison State Park*. https://www.in.gov/dnr/state-parks/parks-lakes/fort-harrison-state-park/
+- National Park Service. (n.d.). *Reuse of closed military bases (BRAC)*. https://www.nps.gov/orgs/1508/base-realignment-and-closure.htm
+- Sample, D. (2005, June 15). *Indiana city flourishes after "Fort Ben" closure*. American Forces Press Service. https://www.dvidshub.net/news/538075/indiana-city-flourishes-after-fort-ben-closure`,
+      recallContent: [
+        {
+          prompt: "Why was the transition task force formed by December 1991 specifically?",
+          answer: "To qualify for a $100,000 grant from the Defense Office of Economic Adjustment. The deadline was a funding deadline, and communities that organise fast get the reuse planning money.",
+        },
+        {
+          prompt: "What did the 1992 inventory find, and what explains it?",
+          answer: "About 1,700 acres of nearly continuous reforested land including roughly 1,100 acres that a DNR study called the largest tract of forest remaining in central Indiana, plus 155 plant species, 42 fish species, 185 bird species and the endangered Indiana bat. It exists because ninety years of federal ownership meant no property tax, a need for undeveloped training land, and restricted access.",
+        },
+        {
+          prompt: "What is a public benefit conveyance, and who decides?",
+          answer: "Under the Federal Property and Administrative Services Act of 1949 the government must consider conveyances for park, recreation and natural resource protection before disposal. For a park the Department of the Interior assesses it and the transfer runs through the National Park Service programme now called Federal Lands to Parks. The alternative is sale at fair market value.",
+        },
+        {
+          prompt: "What did the National Park Service decide in August 1992?",
+          answer: "It supported a public benefit conveyance, having determined that the land was not suitable as a national park and that preservation and protection should be accomplished by local or state government. A federal agency decided it should not be the owner and named who should be.",
+        },
+        {
+          prompt: "What is the discrepancy in the account of Governor Bayh's announcement, and how should you handle it?",
+          answer: "Hankins's text gives 30 August 1994 while the footnote on the same sentence cites an Indianapolis Star article dated 31 August 1993. Go to the footnote's source rather than picking a year. This course reports the discrepancy and does not resolve it.",
+        },
+        {
+          prompt: "Describe the 1995 transfer of the park land.",
+          answer: "The Army transferred 1,700 of 2,500 acres to the Indiana DNR under an interim lease at a recurring price, renewable in four-year periods, with covenants against deforestation, mining, soil erosion and pollution and requirements for historic preservation and archaeology.",
+        },
+        {
+          prompt: "What is the Fort Harrison Reuse Authority, and why does its financing close the circle of this section?",
+          answer: "A body established in 1995 under Indiana Code 36-7-30 for the reuse of federal military bases, which bought about 800 acres for $9 million and sits in an indefinite special taxing district levying special benefit taxes. Ground that paid no property tax for ninety years came back inside a purpose-built taxing instrument.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
