@@ -1384,6 +1384,227 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Next  (beat 5: live civics. who governs this ground today, and a real parcel)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "fh-next-who-governs",
+      title: "15 · Who governs this ground today, and how you find out",
+      section: "Section 5 · Next",
+      body: `Beat 5 turns a history course into a civics course. **Every site has a present legal status and a body currently making decisions about it**, and finding those is research rather than opinion.
+
+## Start by counting the landlords
+
+The most striking thing about this post today is that **one former installation carries at least three different kinds of owner at once**, and they are not the same kind of thing.
+
+**1. The state park.** The **Indiana Department of Natural Resources** runs **Fort Harrison State Park**, described by the agency as a **1,700-acre** park with walking and jogging trails, picnic sites, fishing access to Fall Creek, a nature centre, a dog park, a golf course and **two national historic districts** (Indiana Department of Natural Resources, n.d.). Lesson 11 showed you that the land arrived under an interim lease with covenants attached. **A state park is a state agency answering to a state legislature, and its planning documents are state documents.**
+
+**2. The redevelopment district.** The **Fort Harrison Reuse Authority**, created in **1995** under **Indiana Code 36-7-30**, bought roughly **800 acres for $9 million** and operates within an **indefinite special taxing district** levying special benefit taxes for reuse purposes (Fort Harrison Reuse Authority, n.d.). **This is a creature of state statute doing local development**, and it has its own governing board, its own budget and its own meetings.
+
+**3. The federal tenant that never left.** The **Major General Emmett J. Bean Federal Center** on **East 56th Street** houses the **Defense Finance and Accounting Service**. The Encyclopedia of Indianapolis traces its names in order: Finance Center, U.S. Army (1953-1972); U.S. Army Finance Support Agency (1972-1974); U.S. Army Finance and Accounting Center (1975-1991); Defense Finance and Accounting Service Indianapolis Center (1991 onward); and Major General Emmett J. Bean Federal Center (1987 onward). It records **roughly 5,000 employees there by 2021** (Encyclopedia of Indianapolis, n.d.-b). **Lesson 10 told you the closure recommendation explicitly retained this.** **The base closed and the largest federal employer on it stayed.**
+
+**Notice the name history for its own sake.** A building whose official designation changed five times in seventy years is a research trap: **a search on any one of those names will miss four decades of records.** That is the same lesson course 1 taught about following a corporate entity rather than an institution's name.
+
+**4. And the city.** All of this sits inside the **City of Lawrence**, a **Unigov excluded city** with its own mayor, city council, police and fire departments, water company and parks department (Encyclopedia of Indianapolis, n.d.-c), inside **Marion County**, whose assessor values property and whose consolidated city-county government provides much of the rest.
+
+## Now the four questions, adapted for this kind of ground
+
+Course 1 gave you four questions for any American parcel. **On a former federal installation they need a fifth put in front of them.**
+
+**Question 0: who owns it now, and how did they get it?** Federal, state, municipal, reuse authority or private, and by what instrument: a public benefit conveyance, an economic development sale, a lease, or an ordinary transaction. **The answer changes every other answer**, and the deed and the reuse plan are where it lives.
+
+**Question 1: what does the comprehensive plan say this land should become?** For most of Marion County that is the **Comprehensive Plan for Indianapolis and Marion County**, adopted by the **Metropolitan Development Commission**. **Do not assume it governs here without checking**, for the reason in question 4.
+
+**Question 2: what does the zoning permit today?** Zoning is the enforceable rule; the comprehensive plan is the policy statement a rezoning is judged against.
+
+**Question 3: is there an area-specific plan, and has it been adopted?** For the park, the relevant documents are the DNR's property and interpretive plans. For the redevelopment area, the **Fort Harrison Reuse Plan** and whatever has amended it since. **An unadopted plan is where a member of the public has the most leverage**, because it is still open to comment.
+
+**Question 4: who decides, when do they meet, and is the agenda public?** **This is where an excluded city changes the answer, and it is the trap in this lesson.**
+
+## The zoning question, handled honestly
+
+**Here is what this course can tell you, and what it cannot.**
+
+The City of Lawrence's own municipal code contains a section titled **Cooperation with Marion County**, which provides that the Lawrence planning staff, the **Lawrence Plan Commission**, the **Lawrence Board of Zoning Appeals** and other applicable Lawrence officials shall cooperate with the Marion County metropolitan planning department to ensure continuous coverage of planning and zoning functions in and around Lawrence, and that no gaps exist (City of Lawrence, n.d., § 3-5-1-6).
+
+**Read what that section implies rather than what you want it to say.** It tells you that **Lawrence has its own plan commission and its own board of zoning appeals**, and that the ordinance itself anticipates a coordination problem with the county. **It does not tell you which body will hear a petition on a specific parcel**, and this course did not verify that. **Do not assume the Metropolitan Development Commission handles a Lawrence parcel simply because it handles most of Marion County.**
+
+**That is not a dodge. It is the assignment.** The instruction for beat 5 is: **before you write a sentence about who decides, call or read the ordinance and confirm which body has jurisdiction over your parcel, and confirm it again if the parcel is inside a special district.** On this post a parcel may sit inside a state park, inside a reuse authority's taxing district, inside an excluded city, inside a consolidated county, and inside a National Register district all at once. **Five overlapping authorities is not an exaggeration. It is the ordinary condition of American land.**
+
+## What is actually happening on this ground now
+
+**The park is heavily used and growing more so.** Annual visitation rose from **653,889 in 2008** to **973,599 in 2017** (Indiana Division of State Parks statistics, as cited in Hankins, 2020, p. 46). **A number with an owner and a method beats an impression**, and those two figures come from the agency's own counts.
+
+**The redevelopment worked, by the measures its promoters chose.** The American Forces Press Service reported that **more than 100 new companies and civic organisations** arrived within four years, that the **City of Lawrence invested $250 million in the 550-acre main post area**, and that **more than one million square feet of buildings were demolished** (Sample, 2005). **Read those as attributed claims in a Defense Department success story**, which is exactly what they are, and go to the reuse authority's own annual reports if you want audited figures.
+
+**And the interpretation is contested, which is the live question.** Hankins's central criticism, from a public history thesis, is that the park "carries its military past in its name, and military history is a key component of that place; yet, the current layout of the park and available interpretation means that visitors often do not encounter or learn about its military history," and that the Camp Glenn area "does not address or interpret the military's role in inadvertently reforesting and saving the land that became a state park" (2020, pp. 48-49). **That is an argument with an author**, and it is the most actionable thing in this lesson: **an interpretive gap in a state park is a comment you can make to a state agency**, and interpretive plans get revised.
+
+**The honest limits of this lesson.** Ownership changes, statutes are amended, boards are reconstituted and plans are adopted. **Every figure and every governing arrangement above has a source and a date attached, and you should re-check all of them before you rely on any of them.** That instruction is not a disclaimer. **It is the method.**
+
+## Sources
+- City of Lawrence, Indiana. (n.d.). *Municipal code § 3-5-1-6: Cooperation with Marion County*. American Legal Publishing. https://codelibrary.amlegal.com/codes/lawrence/latest/lawrence_in/0-0-0-19528
+- Encyclopedia of Indianapolis. (n.d.-b). *Major General Emmett J. Bean Federal Center*. https://indyencyclopedia.org/bean-federal-center/
+- Encyclopedia of Indianapolis. (n.d.-c). *Lawrence*. https://indyencyclopedia.org/lawrence/
+- Fort Harrison Reuse Authority. (n.d.). *About*. https://www.fhra.org/about/
+- Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
+- Ind. Code § 36-7-30 (Reuse of federal military bases). https://law.justia.com/codes/indiana/title-36/article-7/chapter-30/
+- Indiana Department of Natural Resources. (n.d.). *Fort Harrison State Park*. https://www.in.gov/dnr/state-parks/parks-lakes/fort-harrison-state-park/
+- Sample, D. (2005, June 15). *Indiana city flourishes after "Fort Ben" closure*. American Forces Press Service. https://www.dvidshub.net/news/538075/indiana-city-flourishes-after-fort-ben-closure`,
+      recallContent: [
+        {
+          prompt: "Name the three different kinds of owner on this former post today.",
+          answer: "The Indiana Department of Natural Resources, which runs the 1,700-acre state park; the Fort Harrison Reuse Authority, a state-statute body holding about 800 acres in an indefinite special taxing district; and the federal government, whose Defense Finance and Accounting Service occupies the Bean Federal Center.",
+        },
+        {
+          prompt: "Why is the Bean Federal Center's name history a research trap?",
+          answer: "Its official designation changed five times between 1953 and 1991, so a search on any single name will miss four decades of records. Follow the entity, not the current name.",
+        },
+        {
+          prompt: "What extra question does a former federal installation require before the usual four?",
+          answer: "Who owns it now and how did they get it: federal, state, municipal, reuse authority or private, and by what instrument such as a public benefit conveyance, an economic development sale, a lease or an ordinary transaction. The answer changes every other answer.",
+        },
+        {
+          prompt: "What does the City of Lawrence's municipal code section on cooperation with Marion County tell you, and what does it not?",
+          answer: "It tells you Lawrence has its own plan commission and board of zoning appeals and that the ordinance anticipates a coordination problem with the county. It does not tell you which body hears a petition on a specific parcel, and this course did not verify that.",
+        },
+        {
+          prompt: "How many overlapping authorities can claim one parcel on this post?",
+          answer: "At least five: a state park, a reuse authority's special taxing district, an excluded city, a consolidated county, and a National Register historic district. Overlapping authority is the ordinary condition of American land.",
+        },
+        {
+          prompt: "What is the live interpretive argument about the park, and why is it actionable?",
+          answer: "Hankins argues that visitors often do not encounter the park's military history and that the Camp Glenn area does not interpret the military's role in inadvertently reforesting the land. Interpretive plans get revised, so a gap in a state park is a comment you can make to a state agency.",
+        },
+      ],
+    },
+    {
+      slug: "fh-next-exercise-parcel",
+      title: "16 · Practice: find the owner, the district and the body",
+      section: "Section 5 · Next",
+      lessonType: "exercise",
+      body: `**Do this drill with the real tools open in another tab.** Everything below is free and public.
+
+**The tools.**
+- **MapIndy**, the official GIS for the Consolidated City of Indianapolis and Marion County: https://maps.indy.gov/MapIndy/ . Enter an address, an intersection or a parcel number and read parcel boundaries, political boundaries, street centrelines and aerial imagery.
+- **The Marion County Assessor's property cards**: https://maps.indy.gov/AssessorPropertyCards/ . Search by state parcel number, owner name or address.
+- **The National Register nomination and the HABS documentation** for this post, both linked in the sources of lessons 5 through 7. **Read a primary document alongside a database and you will catch things neither shows alone.**
+
+**Your target: the Major General Emmett J. Bean Federal Center, 8899 East 56th Street, Indianapolis.** It is a safe address to practise on for the same reason the Walker Building was safe in course 1: **it is a public institutional building whose address is published by the agency that occupies it, and nobody's home is exposed.**
+
+**Work through these, then answer the questions below.**
+1. Find the address in **MapIndy** and look at the parcel outline. **Note its size relative to its neighbours.** Compare what you see with the dimensions in lesson 13.
+2. Read off the **state parcel number**, exactly, including punctuation.
+3. Open the **Assessor's property card** for that parcel. **Look for the owner of record and the assessed value, and expect at least one of them to behave differently from a commercial parcel.** Whatever you find, write down what the record actually says rather than what you predicted.
+4. In MapIndy, turn on political boundaries and note which **township**, **city**, **council district** and **school district** the parcel sits in. **You should end up with more boundaries than you expected. That is the point of lesson 15.**
+5. Now move a few hundred metres north into the state park and repeat steps 2 and 3 on a park parcel. **Compare the two owners of record.**
+6. Finally, open the **National Register nomination** and check whether your parcel is inside the historic district boundary. **A parcel database and a district boundary are two different maps, and only one of them triggers a federal review.**
+
+**The habits this builds, which transfer to any American county.** Every county has an assessor and most have a GIS. **The names of the tools change and the facts do not: parcel number, owner of record, assessed value, which overlapping jurisdictions the parcel sits in, and whether it is inside a designated district.** Learn to find those five and you can research any address in the country.
+
+**The rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** Much of the former post is now housing, and a current occupant's name attached to their address in a piece of writing is a different act from a public record sitting in a county database. **Practise on institutional and commercial addresses.** This is the same rule the method course applied to tourist homes and course 1 applied to the Avenue.
+
+## Sources
+- City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
+- Encyclopedia of Indianapolis. (n.d.-b). *Major General Emmett J. Bean Federal Center*. https://indyencyclopedia.org/bean-federal-center/
+- Marion County Assessor. (n.d.). *Assessor property cards*. https://maps.indy.gov/AssessorPropertyCards/
+- McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text`,
+      exercise: {
+        instructions:
+          "Type the missing term, name, number, body or year, then check. Close answers (spelling, capitalization) count as 'close', not wrong.",
+        items: [
+          {
+            prompt: "The official GIS for the Consolidated City of Indianapolis and Marion County is called ___.",
+            answer: "MapIndy",
+            accept: ["map indy", "mapindy"],
+            explanation: "At maps.indy.gov/MapIndy/. Enter an address, intersection or parcel number.",
+          },
+          {
+            prompt: "The constitutional provision giving Congress authority over places purchased for forts, magazines and arsenals is the ___ Clause.",
+            answer: "Enclave",
+            accept: ["enclave clause", "federal enclave"],
+            explanation: "Article I, Section 8, Clause 17. It does not mean every federal property is an exclusive-jurisdiction enclave.",
+          },
+          {
+            prompt: "The 1819 Supreme Court case behind the rule that a state may not tax a federal instrumentality is McCulloch v. ___.",
+            answer: "Maryland",
+            accept: ["maryland", "state of maryland"],
+            explanation: "It is why federal property does not appear on a county's tax rolls, which is why Impact Aid exists.",
+          },
+          {
+            prompt: "The Impact Aid limb that compensates a district for the lost tax base is Section ___.",
+            answer: "7002",
+            accept: ["seven thousand two", "section 7002"],
+            explanation: "Section 7003 is basic support for federally connected children. Section 7002 is payments for federal property, and it counts only acquisitions since 1938.",
+          },
+          {
+            prompt: "Property acquired by the federal government before ___ does not generate a Section 7002 claim.",
+            answer: "1938",
+            accept: ["38"],
+            explanation: "This post's land was bought around 1903 to 1908, so whether its district ever qualified is a question to research rather than assume.",
+          },
+          {
+            prompt: "The City of ___ annexed the fort in 1970, adding about 5,000 people and 26 miles of roads.",
+            answer: "Lawrence",
+            accept: ["lawrence indiana", "city of lawrence"],
+            explanation: "It did not make the land taxable. It did determine who had jurisdiction when the ground came back twenty-one years later.",
+          },
+          {
+            prompt: "Lawrence is a Unigov ___ city, with its own mayor, council, police, fire, water and parks.",
+            answer: "excluded",
+            accept: ["excluded town", "exclusion"],
+            explanation: "Unigov took effect 1 January 1970, the same year as the annexation. Course 4 of this cluster takes Unigov directly.",
+          },
+          {
+            prompt: "The commission that recommended closing this post reported to the President on 1 July ___.",
+            answer: "1991",
+            accept: ["91"],
+            explanation: "It also realigned the Soldier Support Center to Fort Jackson, retained the Defense Finance and Accounting Service Indianapolis Center, and found the Secretary had deviated from selection criterion 2.",
+          },
+          {
+            prompt: "Congress may reject a base closure commission's package only in its ___, so there is no vote on any individual base.",
+            answer: "entirety",
+            accept: ["whole", "entire", "totality"],
+            explanation: "That single design feature is what makes closing bases politically possible.",
+          },
+          {
+            prompt: "Before selling surplus land at fair market value, the government must consider a public ___ conveyance.",
+            answer: "benefit",
+            accept: ["benefit conveyance", "public benefit"],
+            explanation: "Under the Federal Property and Administrative Services Act of 1949, including conveyances for park, recreation and natural resource protection purposes.",
+          },
+          {
+            prompt: "The National Park Service programme that transfers surplus federal land for public parks is called Federal Lands to ___.",
+            answer: "Parks",
+            accept: ["parks", "park"],
+            explanation: "Formerly the Federal Surplus Real Estate Property Program. It provided technical assistance to the transition task force here.",
+          },
+          {
+            prompt: "Of roughly 2,500 acres, about ___ acres went to the Indiana Department of Natural Resources as a state park.",
+            answer: "1700",
+            accept: ["1,700", "seventeen hundred"],
+            explanation: "Under an interim lease with covenants against deforestation, mining, soil erosion and pollution, renewable in four-year periods.",
+          },
+          {
+            prompt: "The Fort Harrison Reuse Authority was established in 1995 under Indiana Code 36-7-___.",
+            answer: "30",
+            accept: ["thirty", "36-7-30"],
+            explanation: "The chapter on reuse of federal military bases. The authority's land sits in an indefinite special taxing district.",
+          },
+          {
+            prompt: "The federal agency that stayed on this ground after the base closed is the Defense ___ and Accounting Service.",
+            answer: "Finance",
+            accept: ["finance", "dfas"],
+            explanation: "In the Major General Emmett J. Bean Federal Center on East 56th Street. Closed is not a synonym for the federal government left.",
+          },
+          {
+            prompt: "The federal review triggered when an agency's undertaking affects a listed historic property is Section ___ of the National Historic Preservation Act.",
+            answer: "106",
+            accept: ["one hundred six", "section 106"],
+            explanation: "It is a consultation and consideration requirement, not a veto. The HABS documentation quoted all course is a classic piece of Section 106 mitigation.",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
