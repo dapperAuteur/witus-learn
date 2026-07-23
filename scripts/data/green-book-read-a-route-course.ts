@@ -135,6 +135,9 @@ That sentence is not decoration. It is the publisher telling you that the book w
       section: "Section 1 · What the book was",
       quiz: {
         passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options, so a retake is a
+        // different quiz rather than the same list (the repo standard, src/lib/quiz.ts).
+        questionsPerAttempt: 8,
         shuffleOptions: true,
         questions: [
           {
@@ -378,6 +381,9 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
       section: "Section 2 · Why it existed",
       quiz: {
         passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options, so a retake is a
+        // different quiz rather than the same list (the repo standard, src/lib/quiz.ts).
+        questionsPerAttempt: 8,
         shuffleOptions: true,
         questions: [
           {
@@ -697,6 +703,9 @@ The publisher is telling you directly that the gaps in his book are partly a gap
       section: "Section 3 · How to read a listing",
       quiz: {
         passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options, so a retake is a
+        // different quiz rather than the same list (the repo standard, src/lib/quiz.ts).
+        questionsPerAttempt: 8,
         shuffleOptions: true,
         questions: [
           {
@@ -995,6 +1004,9 @@ The first sentence is a claim about the world that you have not proved. The seco
       section: "Section 4 · How to trace a route",
       quiz: {
         passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options, so a retake is a
+        // different quiz rather than the same list (the repo standard, src/lib/quiz.ts).
+        questionsPerAttempt: 8,
         shuffleOptions: true,
         questions: [
           {
@@ -1488,6 +1500,9 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
       section: "Section 6 · What happened next",
       quiz: {
         passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options, so a retake is a
+        // different quiz rather than the same list (the repo standard, src/lib/quiz.ts).
+        questionsPerAttempt: 8,
         shuffleOptions: true,
         questions: [
           {
