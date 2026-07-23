@@ -99,12 +99,14 @@ export async function seedAuthoredCourse(
     moduleId: l.section ? moduleBySection.get(l.section) ?? null : null,
     title: l.title,
     slug: l.slug,
-    lessonType: (l.quiz ? "quiz" : l.exercise ? "exercise" : l.mapContent ? "map" : "text") as
-      | "quiz"
-      | "exercise"
-      | "map"
-      | "text",
+    // An explicit `lessonType` wins: it is the only way to author a MEDIA lesson (audio, video,
+    // virtual_tour), whose payload is a `contentUrl` rather than its own content field, so it
+    // cannot be inferred. Otherwise infer from whichever content field is set, exactly as before,
+    // leaving every previously authored course unchanged.
+    lessonType:
+      l.lessonType ?? (l.quiz ? "quiz" : l.exercise ? "exercise" : l.mapContent ? "map" : "text"),
     contentFormat: "markdown" as const,
+    contentUrl: l.contentUrl ?? null,
     textContent: l.body ?? null,
     quizContent: l.quiz ?? null,
     exerciseContent: l.exercise ?? null,
@@ -132,6 +134,10 @@ export async function seedAuthoredCourse(
           moduleId: sql`excluded.module_id`,
           isFreePreview: sql`excluded.is_free_preview`,
           lessonType: sql`excluded.lesson_type`,
+          // Load-bearing for the route-course series: a site course ships WITHOUT its 360 tour and
+          // gains it later (plans/37 §1). Without this line the re-seed would keep the old NULL
+          // url, so adding a tour to an already-seeded lesson would silently do nothing.
+          contentUrl: sql`excluded.content_url`,
           contentFormat: sql`excluded.content_format`,
           isPublished: sql`excluded.is_published`,
           updatedAt: new Date(),

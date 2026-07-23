@@ -160,11 +160,33 @@ export function LessonPlayer({
     default: {
       // slides / virtual_tour — embed. Google Slides links are normalized to /embed; PDFs
       // and any other URL render in an iframe.
-      if (!lesson.contentUrl) {
-        return <p className="text-neutral-500">This lesson type ({lesson.lessonType}) has no media yet.</p>;
-      }
-      const embed = toEmbed(lesson.contentUrl);
-      return embed ? <MediaEmbed src={embed.src} title={lesson.title} /> : <Empty />;
+      //
+      // The body renders EITHER WAY. A 360 site lesson is written to ship before its tour exists
+      // (plans/37 §1: the tour is a drop-in), and its body is the context that tells the learner
+      // what to look for. Returning early on a missing url would hide that authored text and leave
+      // the lesson looking empty rather than pending.
+      const embed = lesson.contentUrl ? toEmbed(lesson.contentUrl) : null;
+      return (
+        <div>
+          {embed ? (
+            <MediaEmbed src={embed.src} title={lesson.title} />
+          ) : (
+            <p className="text-neutral-500">
+              This lesson type ({lesson.lessonType}) has no media yet.
+            </p>
+          )}
+          {lesson.textContent ? (
+            <div className="mt-4">
+              <LessonBody
+                text={lesson.textContent}
+                courseId={lesson.courseId}
+                lessonId={lesson.id}
+                trackRecall={trackRecall}
+              />
+            </div>
+          ) : null}
+        </div>
+      );
     }
   }
 }
