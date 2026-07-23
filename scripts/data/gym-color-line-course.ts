@@ -605,6 +605,252 @@ In **May 2026**, Indianapolis Public Schools announced a **44 million dollar** e
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Powers  (beat 3: civics, planning, taxes, politics. THE LOAD-BEARING SECTION)
+    //
+    // Lessons 8 to 13 are built on the PRIMARY OPINIONS, quoted directly:
+    //   * United States v. Board of School Commissioners, 332 F. Supp. 655 (S.D. Ind. 1971)
+    //   * United States v. Board of School Commissioners, 503 F.2d 68 (7th Cir. 1974)
+    //   * Milliken v. Bradley, 418 U.S. 717 (1974)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gcl-powers-attendance-zone",
+      title: "8 · Instrument one: the attendance zone, and the optional zone",
+      section: "Section 3 · Powers",
+      body: `**This is the section the course exists for.** Course 1 taught five instruments that take buildings: designation, eminent domain, the highway alignment, institutional land assembly, and the redrawing of a jurisdiction. **This section teaches the instruments that take a population.** They are quieter, cheaper, and they leave just as much paper.
+
+**Definition, unchanged from course 1.** An **instrument** is a specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. **The last clause is what makes history researchable.**
+
+**Instrument one is the smallest one, and it does the most work: the attendance zone.** A district decides which addresses feed which school. That decision is a line on a map, adopted by a board, in a meeting, with minutes. **It is not a law. It is an administrative act, which is exactly why it is used.** Changing a state statute is hard and public. Redrawing a feeder boundary is a routine agenda item.
+
+## The number that should end most arguments
+
+Judge S. Hugh Dillin, sitting in the Southern District of Indiana, made this finding on **18 August 1971**:
+
+> "According to the evidence, there have been approximately **350 boundary changes** in the system since 1954. **More than 90% of these promoted segregation**." (*United States v. Board of School Commissioners*, 1971, p. 668.)
+
+**Sit with that.** Not "the schools remained segregated." Not "outcomes were unequal." **A federal judge, after trial, found that in seventeen years a school system made about 350 boundary changes and more than nine in ten of them made segregation worse.** Segregation on that record is not weather. It is a work product.
+
+**A correction this course owes you, and it is a lesson in itself.** You will see this finding quoted as "**90 percent of 360** boundary changes," including in the Encyclopedia of Indianapolis's entry on school desegregation (Encyclopedia of Indianapolis, n.d.-b). **The opinion says "approximately 350."** The difference is trivial to the argument and it is not trivial to your method. **A secondary source rounded, or transcribed, or was working from a different passage, and the primary document is right there to check.** Quote the opinion. Cite the page. **When a good source and a better source disagree, use the better one and say that you did.**
+
+## The move to learn by name: the optional attendance zone
+
+**An "optional zone" is an area whose students may choose between two schools.** It sounds like freedom. Dillin's findings show what it actually did.
+
+> "In some instances **optional attendance zones** between white and Negro schools were adopted in racially integrated neighborhoods." (1971, p. 664.)
+
+> "During the post-1954 period, the Board perpetuated segregation through the use of optional attendance zones. Specifically, in areas of racially mixed residential patterns students were given options between predominantly Negro and predominantly white elementary schools, and where entire elementary districts covered both Negro and white neighborhoods, graduates were given options between predominantly Negro and predominantly white high schools." (1971, p. 666.)
+
+> "Students in Negro elementary schools were given options to Crispus Attucks when other, predominantly white high schools were closer and more accessible. **White students in optional zones almost always attended white schools**." (1971, p. 666.)
+
+**That is the mechanism in three sentences.** Draw an optional zone precisely where the neighbourhoods mix. Offer a choice. **Individual choices then do the sorting that an assignment rule would have had to do openly**, and the district's hands look clean because it assigned nobody.
+
+**A rule that transfers to any district, any decade.** **When a rule is optional, ask who exercises the option and in which direction.** A policy that is facially neutral and statistically one-directional is doing work, and the direction is the evidence.
+
+## The transfer policy, which is the same trick in a different file
+
+Two findings from the same opinion, both in footnotes, both devastating:
+
+> One reason for a transfer to be given "special consideration" was **if a pupil had an older sibling attending the preferred high school. This operated as a grandfather clause permitting white students to escape Attucks, and remained in effect through March, 1970.** (1971, p. 685 n.52.)
+
+> "Furthermore, **proximity per se was not a legitimate reason for transfer, unless a student lived more than two miles from the assigned high school; this prevented Negro students who lived within two miles of Attucks from transferring** to other high schools which were closer to their residences." (1971, p. 685 n.52.)
+
+**Read those two rules together.** A sibling rule lets you out. A distance rule keeps you in. **Neither mentions race. Both are race policy**, and the court said so.
+
+## The rest of the toolkit, in the court's own list
+
+Dillin catalogued the techniques the board used after 1954: "attendance zone boundary changes, the construction of additions, the construction of new schools, the provision of transportation or the adjustment of existing transportation, alteration in grade structures, and the location or relocation of special education classes in elementary schools. **Often these techniques were combined**" (1971, p. 665).
+
+**Six instruments, and the sixth is special education class placement.** The court found the board "has shifted these classes in some instances and failed to shift them in other instances, **always with a resulting increase in racial segregation**" (1971, p. 666).
+
+**And one more, which is beat 2 again.** Attucks lost high school students in the 1950s as Black students were finally permitted to attend closer schools, with no offsetting assignment of white students in. The building emptied. **So the board filled it with elementary students** from overcrowded all-Black elementary schools, and the court names them: Schools 63, 17, 23, 24, 40 and 4, "none of which have ever been less than 96.5% Negro" (1971, p. 666). **A high school building used as an overflow annex for segregated elementary schools is an architecture decision and an assignment decision at the same time.**
+
+## What the numbers did
+
+> "Since 1954 the percentage of Negro students in the system has increased from **20 to 36**, and the segregation has likewise increased. The number of **90% or more Negro schools has risen from thirteen to twenty-five**. In 1954-55, **85.9%** of the Negro elementary students were in majority Negro schools; in 1968-69, the percentage had risen to **88.2**. In 1968-69 **Crispus Attucks was 99.8% Negro**." (1971, p. 668.)
+
+**A system that got more diverse got more segregated.** Those are not in tension. They are the same finding, and the instrument that produced it is a line on a map.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-b). *School desegregation*. https://indyencyclopedia.org/school-desegregation/
+- United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/`,
+      recallContent: [
+        {
+          prompt: "Quote Dillin's 1971 finding about boundary changes, and note the correction this course makes.",
+          answer: "'According to the evidence, there have been approximately 350 boundary changes in the system since 1954. More than 90% of these promoted segregation.' The widely repeated version says 360; the opinion says approximately 350. Use the primary source and say you did.",
+        },
+        {
+          prompt: "What is an optional attendance zone, and what did the court find it did?",
+          answer: "An area whose students may choose between two schools. Drawn precisely where neighbourhoods mixed, it let individual choices do the sorting: white students in optional zones almost always attended white schools, and Black students were given options to Attucks even when whiter schools were closer.",
+        },
+        {
+          prompt: "Give the two transfer rules the court found, and why neither mentions race.",
+          answer: "A sibling preference operated as a grandfather clause letting white students escape Attucks, in effect through March 1970. Proximity was not a legitimate reason for transfer unless a student lived more than two miles away, which kept Black students within two miles of Attucks from transferring. A rule that lets you out and a rule that keeps you in, both facially neutral.",
+        },
+        {
+          prompt: "Name the six techniques the court catalogued for post-1954 segregation.",
+          answer: "Attendance zone boundary changes, construction of additions, construction of new schools, provision or adjustment of transportation, alteration of grade structures, and the location or relocation of special education classes. Often combined.",
+        },
+        {
+          prompt: "What is the rule to carry from the optional zone finding?",
+          answer: "When a rule is optional, ask who exercises the option and in which direction. A policy that is facially neutral and statistically one-directional is doing work, and the direction is the evidence.",
+        },
+      ],
+    },
+    {
+      slug: "gcl-powers-district-line",
+      title: "9 · Instrument two: the district line, and Indiana's coterminous rule",
+      section: "Section 3 · Powers",
+      body: `**An attendance zone moves students inside a district. A district line decides which students a district has at all.** It is the bigger instrument by an order of magnitude, and it is the one this course is named for.
+
+**Indiana's default rule was elegant, and it is the thing to understand first.** Dillin's findings:
+
+> "Historically, it was well established by the common law of the State that whenever an incorporated city or town expanded its corporate limits, the school city or town succeeded to the powers and duties of the township trustee with respect to the administration of the public schools. **In other words, the boundaries of a school city and of a civil city were coterminous.**" (*United States v. Board of School Commissioners*, 1971, p. 675.)
+
+The Seventh Circuit records that this rule was "finally recognized by statute in **1931**" (*United States v. Board of School Commissioners*, 1974, p. 71).
+
+**Say what that means in plain terms.** In Indiana, historically, **the city and its school district were the same shape.** Annex land into the city and the school district followed automatically. **One boundary, one electorate, one tax base, one school system.** A city could not grow its tax base and leave its schools behind, because the law did not let the two come apart.
+
+## Then the law let them come apart, and it did it for one county
+
+> "However, in **1961** the General Assembly crippled this policy by an Act which provided that, **with respect only to Marion County**, the extension of the boundaries of a civil city by a civil annexation would work only **a prima facie extension** of the boundaries of the school city, and render such school city extension **subject to a separate remonstrance** by the losing school corporation." (1971, p. 676.)
+
+**Three things in that sentence deserve their own line.**
+1. **"With respect only to Marion County."** A statewide legislature wrote a rule for one county. You saw this technique in course 1, where the Unigov bill applied to any Indiana city of 250,000 or more, which in 1969 meant exactly one. **A jurisdictional carve-out is how you write a law for one place while appearing to write a general rule.**
+2. **"Prima facie."** The school extension is now presumed rather than automatic, which means it can be rebutted.
+3. **"Subject to a separate remonstrance."** **A remonstrance is a formal objection filed by affected parties that can block or delay an action.** Adding a remonstrance right to a step that used to be automatic does not forbid anything. **It just makes the thing stoppable, by whoever shows up.**
+
+**Then a 1969 act tightened it further**, limiting the School City of Indianapolis to enlarging its territory by agreement with the losing school corporation or by unilateral annexation, **both subject to remonstrance**, and cancelling pending annexations by legislative fiat (1971, pp. 676-677).
+
+**And here is the court's conclusion about the pair of them:**
+
+> "the effect of the **1961 and 1969** Acts of the General Assembly referred to in this section **may well have been to retard desegregation and to promote segregation**. In other words, **under previous Indiana law, which still applies to all cities except Indianapolis**, civil annexation would automatically carry school annexation with it ... Under the present law, if valid, the ability of the Board to expand its jurisdiction coterminous with the consolidated city, or for that matter to expand it at all, **is likewise virtually nil**, as a practical matter." (1971, p. 677.)
+
+**Read the hedge, because it is a model.** The judge wrote "**may well have been**." He is stating an effect he considers probable and declining to assert it as a finding of intent. **You should write like that.** Course 1's lesson 13 made the same demand: distinguish what the record establishes from what it suggests.
+
+## Why this is the course's civic question
+
+The question this course carries is: **how do school district lines make a school's population?**
+
+**The Indiana answer, in one paragraph, all cited.** Under the old rule, a city's growth carried its schools with it, so a growing city's schools grew with it and stayed one system. In 1961 and 1969 the legislature broke that link, **for Marion County only**. Then in 1969 the Unigov statute expanded the city of Indianapolis to nearly the whole county **while expressly leaving the school district where it was**. The result is the thing you can still see on a map: **a city boundary and a school boundary that are different shapes, with different electorates, over the same ground.**
+
+**Every consequence in the rest of this course follows from those two shapes not matching.** Who votes for the school board. Which property is inside which taxing district. Which children a district must educate. Which children a court may order it to educate. **All of it.**
+
+**The transferable move.** In any American metropolitan area, ask: **is the school district boundary the same as the municipal boundary? If not, when did they diverge, under what act, and who was inside each one on that date?** That question has an answer in every state, it is usually a statute you can look up, and it explains more than any single school's history will.
+
+## Sources
+- United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/
+- United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). https://www.courtlistener.com/opinion/321692/united-states-of-america-donny-brurell-buckley-intervening-v-board-of/`,
+      recallContent: [
+        {
+          prompt: "What was Indiana's historic coterminous rule, and when was it recognised by statute?",
+          answer: "When a city expanded its corporate limits, the school city succeeded to the township trustee's school powers, so the boundaries of a school city and a civil city were the same. The Seventh Circuit records the rule as finally recognised by statute in 1931.",
+        },
+        {
+          prompt: "What did the 1961 Act do, and to which county did it apply?",
+          answer: "With respect only to Marion County, it made a civil annexation only a prima facie extension of the school city boundary, and made that extension subject to a separate remonstrance by the losing school corporation.",
+        },
+        {
+          prompt: "What is a remonstrance, and why does adding one matter so much?",
+          answer: "A formal objection filed by affected parties that can block or delay an action. It forbids nothing; it makes an automatic step stoppable by whoever shows up.",
+        },
+        {
+          prompt: "Quote the court's conclusion about the 1961 and 1969 acts, including its hedge.",
+          answer: "That their effect 'may well have been to retard desegregation and to promote segregation,' and that under previous Indiana law, which still applied to every city except Indianapolis, civil annexation would automatically carry school annexation with it. The hedge states a probable effect without asserting intent.",
+        },
+        {
+          prompt: "What is the transferable question to ask about any American metro area?",
+          answer: "Is the school district boundary the same shape as the municipal boundary? If not, when did they diverge, under what act, and who was inside each one on that date?",
+        },
+      ],
+    },
+    {
+      slug: "gcl-powers-unigov-carveout",
+      title: "10 · The carve-out: what Unigov merged, and what it deliberately did not",
+      section: "Section 3 · Powers",
+      body: `**Course 1 introduced Unigov as instrument five and then showed it could not have caused the Avenue's clearance, because every instrument that took those buildings predates 1 January 1970. This is the lesson where Unigov does its actual work.**
+
+**The statute, and the court's description of it.** The Seventh Circuit, in 1974:
+
+> "In **1969**, after this suit had been commenced, the civil governments of the City of Indianapolis and of Marion County were consolidated into a unified, metropolitan city government by the so-called **Uni-Gov Act, which expressly provides that the Indianapolis school district would not be affected by the expansion of the city**." (*United States v. Board of School Commissioners*, 1974, p. 71.)
+
+> "In other words, **the school district (or School City) of Indianapolis was confined to an area in the central part of the new Uni-Gov, where it is surrounded by eight township school systems and by two additional city school corporations (Beech Grove and Speedway City), all operating independently within the new unified City of Indianapolis and within Marion County**." (1974, p. 71.)
+
+**That second passage is the whole course.** Read it slowly and picture it. **A city grew to fill a county. Its school district stayed a hole in the middle of the county, ringed by ten independent school systems that are inside the same city.**
+
+**The facts course 1 established, which you need here.** Unigov was passed by the Indiana General Assembly in **1969**, took effect **1 January 1970**, and is "the only major post-war consolidation to be accomplished without a voter referendum." The statute applied to any Indiana city of **250,000 or more**, which in 1969 meant exactly one; the threshold has since been raised to **600,000**, preventing any other Indiana city doing the same thing. The Black share of the city population fell immediately **from about 27 percent of the old city to about 17 percent of the consolidated city**, and did not recover to pre-Unigov proportions **until the 2010 census** (Wachter, 2014).
+
+## Why the schools were left out, in the participants' own words
+
+**This is not inference. The people who did it said so at the time.**
+
+Mayor **Richard Lugar** said the 162-page bill would die in the General Assembly if schools were included, and acknowledged that "a good number of people really wanted to keep at least their particular school segregated" (Chalkbeat Indiana, 2016).
+
+**Landrum Shields**, the president of the Indianapolis school board, said: "to have included schools in Unigov would have raised the spectre of racial integration...and would have meant instant death for the plan. **We cooperated with the Mayor by not killing Unigov**" (Owen & Willbern, as cited in Wachter, 2014, p. 98).
+
+**The exclusion was the price of passage, stated at the time, by the people who paid it.**
+
+## The numbers on each side of the line in 1969
+
+| | Black share of enrolment, 1969 |
+|---|---|
+| **Township school districts** | about **2.6 percent** |
+| **Indianapolis Public Schools** | **more than one third** |
+
+(Chalkbeat Indiana, 2016.)
+
+**And the trend inside IPS, from the Seventh Circuit's own recital:** nonwhite enrolment was **18.9 percent in 1950**, **26 percent in 1960**, **35.9 percent in 1970**, and **41.1 percent** at the time of the 1973 trial (*United States v. Board of School Commissioners*, 1974, p. 74).
+
+## The finding that makes this a mechanism rather than a coincidence
+
+Judge Dillin, in the 1973 remedy phase, considered whether the surrounding districts had themselves discriminated. His answer, quoted by the Seventh Circuit:
+
+> "**There was no evidence that any of the added defendant school corporations have committed acts of de jure segregation directed against Negro students living within their respective borders. In fact, the evidence shows that, with a few exceptions, none of the added defendants have had the opportunity to commit such overt acts because the Negro population residing within the borders of such defendants ranges from slight to none**." (368 F. Supp. at 1203, as quoted in *United States v. Board of School Commissioners*, 1974, p. 78.)
+
+**Read that twice.** The townships had not discriminated against Black students **because they had almost no Black students to discriminate against.** The boundary had already done the work. **A district line can produce a segregated system without a single discriminatory act inside any district**, and that sentence is the cleanest statement of it in American law.
+
+**This is the answer to the course's civic question.** How do school district lines make a school's population? **By deciding, before anyone is assigned to anything, who is inside.** Every downstream policy is then applied to a population the line already selected.
+
+## What else Unigov did not merge
+
+- **The school districts.** Not consolidated.
+- **Incorporated cities and towns over 5,000**, leaving **Beech Grove, Lawrence, Southport and Speedway** independent.
+- **The nine townships**, which continue as separate governments and are the territorial basis for eight of the county's eleven school districts.
+- Several municipal corporations, and the county court system.
+- The act also **barred annexation into neighbouring counties**, a restriction needed to get the votes.
+
+**Fifty separate and overlapping governmental units remain within Marion County, with more than 61 taxing districts** (Wachter, 2014; Encyclopedia of Indianapolis, n.d.-d).
+
+**Marion County still has eleven school districts today:** Indianapolis Public Schools, the eight township corporations (Decatur, Franklin, Lawrence, Perry, Pike, Warren, Washington and Wayne), plus Beech Grove and Speedway. **That is the same eleven the Seventh Circuit described in 1974**, which is a remarkable thing for a boundary to survive: fifty-six years, one Supreme Court decision, a federal desegregation order, thirty-five years of busing, and it is still the same eleven.
+
+## Sources
+- Chalkbeat Indiana. (2016, August 3). *How racial bias helped turn Indianapolis into one city with 11 school districts*. https://www.chalkbeat.org/indiana/2016/8/3/21098810/how-racial-bias-helped-turn-indianapolis-into-one-city-with-11-school-districts/
+- Encyclopedia of Indianapolis. (n.d.-d). *Structure of Unigov*. https://indyencyclopedia.org/structure-of-unigov/
+- United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). https://www.courtlistener.com/opinion/321692/united-states-of-america-donny-brurell-buckley-intervening-v-board-of/
+- Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
+      recallContent: [
+        {
+          prompt: "Quote the Seventh Circuit's description of what Unigov did to the school district.",
+          answer: "The Uni-Gov Act 'expressly provides that the Indianapolis school district would not be affected by the expansion of the city,' so the school district 'was confined to an area in the central part of the new Uni-Gov, where it is surrounded by eight township school systems and by two additional city school corporations (Beech Grove and Speedway City), all operating independently within the new unified City of Indianapolis and within Marion County.'",
+        },
+        {
+          prompt: "In the participants' own words, why were schools excluded from Unigov?",
+          answer: "Mayor Lugar said the bill would die if schools were included and acknowledged that many people wanted to keep their particular school segregated. Board president Landrum Shields said including schools would have raised the spectre of racial integration and meant instant death for the plan, adding 'We cooperated with the Mayor by not killing Unigov.'",
+        },
+        {
+          prompt: "What were the Black enrolment shares on each side of the line in 1969?",
+          answer: "The township school districts were about 2.6 percent Black; Indianapolis Public Schools enrolled more than one third Black students.",
+        },
+        {
+          prompt: "What did Judge Dillin find about whether the surrounding districts had themselves discriminated, and why is it the key sentence?",
+          answer: "That there was no evidence any added defendant had committed acts of de jure segregation, and that with few exceptions none had had the opportunity because the Black population inside their borders ranged from slight to none. A district line can produce a segregated system without a single discriminatory act inside any district.",
+        },
+        {
+          prompt: "How many school districts does Marion County have today, and how does that compare with 1974?",
+          answer: "Eleven: IPS, eight township corporations (Decatur, Franklin, Lawrence, Perry, Pike, Warren, Washington, Wayne), plus Beech Grove and Speedway. The same eleven the Seventh Circuit described in 1974.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
