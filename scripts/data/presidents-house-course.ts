@@ -1335,6 +1335,448 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Next  (beat 5: live civics. who governs and funds the site, and who decides
+    // what it says)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ph-next-governance",
+      title: "17 · Who owns a president's house, and who pays for it?",
+      section: "Section 5 · Next",
+      body: `Beat 5 is the beat that turns a history course into a civics course. **The question is not what happened to this house, it is who controls it now**, and the answer is documented, public, and almost never asked by visitors.
+
+**A common wrong assumption, worth killing immediately.** Most people assume a president's house is a federal property, run by the National Park Service, paid for by taxes. **This one is not.**
+
+**What it actually is.** The Benjamin Harrison Presidential Site describes itself as **"a not-for-profit, tax-exempt organization,"** established in **1966** as **"a not-for-profit operating foundation"** to run the house as a historic site open to the public, with the stated mission **"to maintain and preserve the Harrison home, collections and grounds as a museum and memorial to the only president of the United States elected from Indiana"** and to **"promote patriotism and citizenship through appropriate educational activities"** (Benjamin Harrison Presidential Site, n.d.-b). It is a **National Historic Landmark** and, since **2003**, an **accredited museum of the American Alliance of Museums** (Benjamin Harrison Presidential Site, n.d.-b).
+
+**So the ownership chain runs: private family, then a music school, then a private foundation.** Mary Lord Harrison sold to the Arthur Jordan School of Music, the school used the upper floors as a dormitory and the ground floor as a museum, the **Arthur Jordan Foundation** renovated it, and a not-for-profit operating foundation has run it since 1966 (Encyclopedia of Indianapolis, n.d.-a). **A National Historic Landmark can be entirely privately owned and privately funded**, which is the same rule course 1 of this cluster taught about federal designation: **listing is recognition, not ownership and not control.**
+
+## The four questions to ask about any museum or historic site
+
+**These work anywhere, on any nonprofit, in any state.**
+
+**1. What legal entity owns and operates it?** Look for the exact legal name, which is often not the name on the sign. **The name on the sign is branding; the name on the filing is the entity.**
+
+**2. Where does the money come from?** For a nonprofit museum the usual mix is admissions, memberships, individual gifts, foundation grants, endowment income, event rentals, and sometimes a government grant or a capital campaign. **This site ran a capital campaign of about $6 million behind its 2021 to 2022 renovation** (Encyclopedia of Indianapolis, n.d.-a). **A capital campaign is a public fact with named donors**, and donors are a governance question as well as a funding one.
+
+**3. Who governs it?** A nonprofit is run by a **board of directors or trustees**. **Ask who they are, how they are chosen, how long they serve, and who they answer to.** For a private foundation the answer to that last one is usually: **themselves, plus the attorney general of the state, plus the IRS.** That is a much shorter accountability chain than an elected body has, and it cuts both ways: **it is faster, and it is less answerable to the public whose history the site interprets.**
+
+**4. What is on the public record?** For an American tax-exempt organisation, a great deal.
+- **IRS Form 990.** Most tax-exempt organisations must file an annual information return, and **it is a public document**. It shows total revenue and expenses, the largest programme areas, the highest-paid staff and contractors, and it lists the board. **You can read it for free** through the **IRS Tax Exempt Organization Search** or through **ProPublica's Nonprofit Explorer**, both of which search by organisation name.
+- **State registration.** Indiana, like most states, has a business entity search for incorporated entities.
+- **Accreditation.** Museum accreditation involves a self-study and a peer review, and the accrediting body publishes who is accredited.
+
+**Why any of this belongs in a course about a bill from 1890.** Because the whole course is about **who decides**, and the site is a live instance of the same question. **The people who choose what the Harrison house says about Harrison are a board of a private nonprofit, and how they were chosen is a matter of public record that most visitors never look at.** Section 3 asked you to find out who was in the room in 1891. **Beat 5 asks you to find out who is in the room now.**
+
+**One caution about numbers, which is this cluster's standard.** Third-party sites republish nonprofit financial figures with varying dates and definitions. **Do not quote a revenue figure from an aggregator.** Open the actual Form 990, note the tax year on its cover, and quote from that. **This course deliberately gives you no dollar figure for the site's budget**, because the right figure is the one you read yourself, on a filing whose year you can state.
+
+## Sources
+- Benjamin Harrison Presidential Site. (n.d.-b). *About*. https://bhpsite.org/about/
+- Encyclopedia of Indianapolis. (n.d.-a). *Benjamin Harrison Presidential Site*. https://indyencyclopedia.org/benjamin-harrison-presidential-site/
+- Internal Revenue Service. (n.d.). *Tax exempt organization search*. https://apps.irs.gov/app/eos/
+- National Park Service. (n.d.-c). *National Historic Landmarks program*. https://www.nps.gov/subjects/nationalhistoriclandmarks/index.htm
+- ProPublica. (n.d.). *Nonprofit Explorer*. https://projects.propublica.org/nonprofits/`,
+      recallContent: [
+        {
+          prompt: "Who owns and runs the Benjamin Harrison house, and who does not?",
+          answer: "A not-for-profit, tax-exempt operating foundation established in 1966. It is not a federal property and not run by the National Park Service, even though it is a National Historic Landmark. Listing is recognition, not ownership and not control.",
+        },
+        {
+          prompt: "Trace the ownership chain from the family to today.",
+          answer: "Mary Lord Harrison sold to the Arthur Jordan School of Music, which used the upper floors as a dormitory and the ground floor as a museum; the Arthur Jordan Foundation renovated it; a not-for-profit operating foundation has run it since 1966, and the museum has been accredited by the American Alliance of Museums since 2003.",
+        },
+        {
+          prompt: "State the four questions to ask about any museum or historic site.",
+          answer: "What legal entity owns and operates it; where the money comes from; who governs it and how they are chosen; and what is on the public record.",
+        },
+        {
+          prompt: "What does an IRS Form 990 show, and where can you read one?",
+          answer: "Total revenue and expenses, the largest programme areas, the highest-paid staff and contractors, and the board. It is a public document, searchable free through the IRS Tax Exempt Organization Search or ProPublica's Nonprofit Explorer.",
+        },
+        {
+          prompt: "Why does this course refuse to give a budget figure for the site?",
+          answer: "Because third-party aggregators republish nonprofit financials with varying dates and definitions. The right figure is the one you read yourself on an actual Form 990 whose tax year you can state.",
+        },
+      ],
+    },
+    {
+      slug: "ph-next-interpretation",
+      title: "18 · Who decides what a historic house says?",
+      section: "Section 5 · Next",
+      body: `A house museum has to answer a question every single day that a book can dodge: **out of everything that is true about this place, what will we say out loud, in these rooms, to whoever walks in?** That is called **interpretation**, and it is decided by people with names.
+
+**The mechanics of the decision, so you know what you are looking for.**
+
+| Decision | What it is | Where it is written down |
+|---|---|---|
+| **Period of significance** | The span the site claims to represent | The National Register or Landmark nomination |
+| **Restoration date** | The year the rooms are furnished to look like | Restoration and curatorial files |
+| **Interpretive themes** | The handful of ideas every tour is supposed to carry | An interpretive plan |
+| **Tour script** | What a guide actually says | Staff training documents |
+| **Label copy** | What an object's card claims | Exhibit files |
+| **Programmes** | What the site teaches beyond the tour | Published programme descriptions |
+
+**Note the shape of that table.** **Only the last row is normally visible from outside.** The Harrison site publishes programme names including **Youth Leadership Programs**, **Future Presidents of America**, **Project POTUS**, **23rd in the 21st**, and materials **For Educators** (Benjamin Harrison Presidential Site, n.d.-c). **The rest of the table exists and can be asked for**, and asking for it politely, in writing, is a normal thing for a researcher, a student or a neighbour to do.
+
+**The hard interpretive question this particular house carries.** Harrison's record is exactly the sort that a house museum has to make a decision about, because **it will not fit on a label**. Section 3 gave you: repeated public demands for federal protection of the ballot; a bill that died on a procedural vote; the Geary Act; Wounded Knee; and an election shadowed by a vote-buying circular. **A single sentence of label copy can hold about one of those.** So somebody chooses. **The right posture for you is not to demand a particular choice but to be able to see that a choice was made**, and to ask what it was and when it was last revisited.
+
+**A national example that shows this fight is real, and recent.** At **Montpelier**, James Madison's estate, the governing foundation amended its bylaws in **June 2021** to commit to a board with at least half its directors recommended or endorsed by the **Montpelier Descendants Committee**, a body representing descendants of the people enslaved there. **In March 2022 the board voted to rescind that commitment**, which produced a national backlash from the Descendants Committee, most of the site's own full-time staff, and the **National Trust for Historic Preservation**. **On May 16, 2022 the board elected a slate of directors recommended by the Descendants Committee, achieving what both sides called "structural parity"** (National Trust for Historic Preservation, 2022; Montpelier, n.d.).
+
+**Read that sequence as governance, not as sentiment.** **A commitment in bylaws was made, rescinded, and restored within eleven months, by votes of a private board.** The public pressure worked because **the decision was visible**: bylaws are documents, board votes are minuted, and a national organisation with standing said so publicly. **That is beat 5 in its purest form.** The lesson generalises to every site in this cluster and to whichever site is nearest to you.
+
+**Four questions to ask about interpretation at any historic site**, and they are polite, answerable questions rather than accusations.
+1. **What period does this site interpret, and when was that decision last reviewed?**
+2. **Whose lives are represented in the rooms, and whose are named only in passing or not at all?**
+3. **Is there a written interpretive plan, and may I read it?**
+4. **Who is on the board, how were they selected, and is there a descendant or community body with a formal role?**
+
+**The honest closing note.** **A small nonprofit museum operates under real constraints**: a building that always needs work, a staff smaller than the visitor sees, and a budget that depends on admissions and donors. **Criticism that ignores those constraints is cheap.** But the constraints explain why a choice is hard; **they do not make the choice invisible, and they do not make it unaskable.** The point of this lesson is not to grade anybody. **It is that you now know these decisions exist, that they have documents, and that a member of the public may ask.**
+
+## Sources
+- Benjamin Harrison Presidential Site. (n.d.-c). *Learn*. https://bhpsite.org/learn/
+- Montpelier. (n.d.). *"Structural parity" in unprecedented board restructuring*. The Montpelier Foundation. https://www.montpelier.org/learn/montpelier-board-restructure-parity/
+- National Trust for Historic Preservation. (2022, May 16). *National Trust congratulates TMF board on achieving structural parity*. https://savingplaces.org/press-center/media-resources/statement-from-the-national-trust-20220516
+- National Trust for Historic Preservation. (n.d.). *Statement on the recent conflict between The Montpelier Foundation and The Montpelier Descendants Committee*. https://savingplaces.org/press-center/media-resources/statement-conflict-montpelier-foundation-and-montpelier-descendants-committee`,
+      recallContent: [
+        {
+          prompt: "What is interpretation, and what are the six decisions behind it?",
+          answer: "Deciding what a site says out loud in its rooms. The decisions are the period of significance, the restoration date, the interpretive themes, the tour script, the label copy, and the programmes. Only the programmes are normally visible from outside.",
+        },
+        {
+          prompt: "Why is Harrison's record a hard interpretive problem for this house?",
+          answer: "Because it will not fit on a label. Repeated public demands for ballot protection, a bill killed on a procedural vote, the Geary Act, Wounded Knee, and a vote-buying circular in his own election cannot all sit in one sentence, so somebody must choose.",
+        },
+        {
+          prompt: "Summarise the Montpelier governance sequence and its dates.",
+          answer: "June 2021, the foundation's bylaws commit to at least half the board being recommended or endorsed by the Montpelier Descendants Committee. March 2022, the board rescinds it, producing national backlash including from staff and the National Trust. May 16, 2022, the board elects the Descendants Committee's slate, achieving structural parity.",
+        },
+        {
+          prompt: "Why did public pressure work at Montpelier?",
+          answer: "Because the decision was visible. Bylaws are documents, board votes are minuted, and a national organisation with standing said so publicly. That is beat 5 in its purest form.",
+        },
+        {
+          prompt: "List the four questions to ask about interpretation at any site.",
+          answer: "What period does the site interpret and when was that last reviewed; whose lives are represented and whose are not; is there a written interpretive plan you may read; and who is on the board, how were they selected, and does a descendant or community body have a formal role.",
+        },
+      ],
+    },
+    {
+      slug: "ph-next-exercise",
+      title: "19 · Practice: find the record for yourself",
+      section: "Section 5 · Next",
+      lessonType: "exercise",
+      body: `**This drill is beat 5 in miniature, and you should do it with the real tools open in another tab.** Everything below is free and public.
+
+**The five tools.**
+- **congress.gov**, for the *Congressional Record*: https://www.congress.gov/congressional-record . The 51st Congress volumes are digitised. **This is where the text of H.R. 11045 and the debate on it actually live.**
+- **The American Presidency Project**: https://www.presidency.ucsb.edu/ . Every presidential annual message, searchable.
+- **The IRS Tax Exempt Organization Search**: https://apps.irs.gov/app/eos/ , and **ProPublica's Nonprofit Explorer**: https://projects.propublica.org/nonprofits/ . Search a museum by name and read its Form 990.
+- **The National Register and National Historic Landmark records**, through the National Park Service: https://www.nps.gov/subjects/nationalregister/index.htm .
+- **MapIndy**, for anything about a Marion County parcel: https://maps.indy.gov/MapIndy/ .
+
+**Work through these before you answer the items below.**
+1. In the *Congressional Record* for the **51st Congress**, find the House proceedings for **late June and early July 1890** and locate the debate on the federal elections bill. **Find the section that sets the petition threshold and settle for yourself whether it is one hundred or five hundred.** Write down the volume, part and page you read it on.
+2. In the American Presidency Project, open Harrison's **fourth annual message of December 6, 1892** and find the lynching passage quoted in lesson 12. **Confirm the wording.**
+3. In ProPublica's Nonprofit Explorer or the IRS search, find the entity that operates the Benjamin Harrison Presidential Site. **Note the exact legal name and the most recent tax year available**, then open that Form 990 and find the board list.
+4. Find the **National Register** record for the property and note the reference number and the listing date.
+5. In MapIndy, find **1230 North Delaware Street** and note the parcel number and which **township, council district and school district** it sits in. **Section 3 explained why those three boundaries are not the same shape.**
+
+**One rule you do not get to break.** **Do not run the parcel drill on somebody's home and publish the result.** Practise on institutional and commercial addresses. A public building whose address is published by the institution that occupies it is a safe target; a house somebody lives in is somebody's home first. **This is the same rule the prerequisite course applied to tourist homes.**
+
+## Sources
+- Internal Revenue Service. (n.d.). *Tax exempt organization search*. https://apps.irs.gov/app/eos/
+- ProPublica. (n.d.). *Nonprofit Explorer*. https://projects.propublica.org/nonprofits/
+- U.S. Congress. (n.d.). *Congressional Record*. https://www.congress.gov/congressional-record
+- University of California, Santa Barbara. (n.d.). *The American Presidency Project*. https://www.presidency.ucsb.edu/`,
+      exercise: {
+        instructions:
+          "Type the missing term, name, number, body or year, then check. Close answers (spelling, capitalization) count as 'close', not wrong.",
+        items: [
+          {
+            prompt: "The 1890 federal elections bill's House number was H.R. ___.",
+            answer: "11045",
+            accept: ["hr 11045", "h.r. 11045"],
+            explanation: "51st Congress. Drafted and introduced by Representative Henry Cabot Lodge of Massachusetts.",
+          },
+          {
+            prompt: "The senator who carried the bill in the Senate was George Frisbie ___.",
+            answer: "Hoar",
+            accept: ["hoar", "george hoar", "senator hoar"],
+            explanation: "Republican of Massachusetts. McConarty's 2020 article reads 202 letters sent to him during the bill's nine months.",
+          },
+          {
+            prompt: "Opponents renamed the bill the ___ Bill, and that name is the one that survived.",
+            answer: "Force",
+            accept: ["force bill", "lodge force"],
+            explanation: "A slur borrowed from Reconstruction. Whoever names a bill has already half-argued it.",
+          },
+          {
+            prompt: "The House passed the bill on July 2, 1890 by a vote of 155 to ___.",
+            answer: "149",
+            accept: ["one hundred forty nine"],
+            explanation: "No Democrats voted in favour. The bill's fatal problem was in the Senate, where it never got a vote on the merits.",
+          },
+          {
+            prompt: "On January 22, 1891 the Senate voted 35 to ___ to set the bill aside.",
+            answer: "34",
+            accept: ["thirty four"],
+            explanation: "A one-vote margin, and not a vote on whether to enact the bill. It was a vote about what the Senate would spend its time on.",
+          },
+          {
+            prompt: "The Senate's first cloture rule, Rule 22, was adopted in ___.",
+            answer: "1917",
+            accept: ["nineteen seventeen"],
+            explanation: "Twenty-six years after this bill died. In 1891 nobody in the chamber could end a filibuster at all.",
+          },
+          {
+            prompt: "The constitutional clause letting Congress make or alter state regulations for congressional elections is Article I, Section ___.",
+            answer: "4",
+            accept: ["four", "iv", "section 4"],
+            explanation: "States run elections by default; Congress may override for congressional elections. It is a power of Congress, not of the president.",
+          },
+          {
+            prompt: "Under Article I, Section 5, each house is the ___ of the elections, returns and qualifications of its own members.",
+            answer: "judge",
+            accept: ["the judge", "sole judge"],
+            explanation: "Which is why a supervisor's certified count mattered: it was evidence for the chamber that decides who gets seated.",
+          },
+          {
+            prompt: "Harrison signed the ___ Act on May 5, 1892, requiring Chinese residents to carry a certificate of residence.",
+            answer: "Geary",
+            accept: ["geary act", "the geary act"],
+            explanation: "Introduced by Representative Thomas J. Geary of California. It extended Chinese exclusion for ten years.",
+          },
+          {
+            prompt: "The massacre at Wounded Knee Creek took place on December 29, ___.",
+            answer: "1890",
+            accept: ["eighteen ninety"],
+            explanation: "Harrison had ordered troops to the Lakota reservations on November 13, 1890. Five weeks separate the massacre from the Senate vote that killed the elections bill.",
+          },
+          {
+            prompt: "The Harrison house was designated a National Historic ___ on January 29, 1964.",
+            answer: "Landmark",
+            accept: ["landmark", "nhl"],
+            explanation: "It was listed on the National Register on October 15, 1966, reference number 66000010. Neither designation transfers ownership or control.",
+          },
+          {
+            prompt: "The annual public filing that shows a tax-exempt organisation's revenue, top staff and board is IRS Form ___.",
+            answer: "990",
+            accept: ["form 990", "irs 990"],
+            explanation: "Searchable free through the IRS Tax Exempt Organization Search and ProPublica's Nonprofit Explorer. Read the filing, not an aggregator's summary.",
+          },
+          {
+            prompt: "The Harrison house museum has been accredited since 2003 by the American Alliance of ___.",
+            answer: "Museums",
+            accept: ["museums", "aam"],
+            explanation: "Accreditation involves a self-study and a peer review, and the accrediting body publishes who is accredited.",
+          },
+          {
+            prompt: "At Montpelier in May 2022 the board achieved what both sides called structural ___ with the Descendants Committee.",
+            answer: "parity",
+            accept: ["parity", "structural parity"],
+            explanation: "Committed in bylaws in June 2021, rescinded in March 2022, restored on May 16, 2022. Bylaws are documents and board votes are minuted, which is why public pressure could work.",
+          },
+          {
+            prompt: "The Old Northside historic district is bounded on one side by Interstate ___.",
+            answer: "65",
+            accept: ["i-65", "i 65", "sixty five"],
+            explanation: "The alignment instrument from course 1 of this cluster, reappearing as a property line for the neighbourhood a president's house stands in.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "ph-quiz-next",
+      title: "20 · Quiz: finding the live record",
+      section: "Section 5 · Next",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who owns and operates the Benjamin Harrison house today?",
+            options: [
+              "The National Park Service",
+              "The City of Indianapolis",
+              "The State of Indiana",
+              "A not-for-profit, tax-exempt operating foundation established in 1966",
+            ],
+            correctIndex: 3,
+            explanation: "A National Historic Landmark can be entirely privately owned and privately funded. Listing is recognition, not ownership and not control.",
+            sourceLessonSlug: "ph-next-governance",
+          },
+          {
+            prompt: "What are the four questions to ask about any museum or historic site?",
+            options: [
+              "Ticket price, opening hours, parking, and gift shop",
+              "What legal entity owns and operates it; where the money comes from; who governs it; and what is on the public record",
+              "Architect, style, date, and square footage",
+              "Visitor numbers only",
+            ],
+            correctIndex: 1,
+            explanation: "They work anywhere, on any nonprofit, in any state, and every one of them has a document behind it.",
+            sourceLessonSlug: "ph-next-governance",
+          },
+          {
+            prompt: "An IRS Form 990 is:",
+            options: [
+              "A public annual information return showing a tax-exempt organisation's revenue, expenses, top staff and board",
+              "A confidential document available only to donors",
+              "A state property tax assessment",
+              "A federal grant application",
+            ],
+            correctIndex: 0,
+            explanation: "Searchable free through the IRS Tax Exempt Organization Search or ProPublica's Nonprofit Explorer. Read the filing itself and state its tax year.",
+            sourceLessonSlug: "ph-next-governance",
+          },
+          {
+            prompt: "Why does this course refuse to quote a budget figure for the site?",
+            options: [
+              "The figures are secret",
+              "Museums are exempt from disclosure",
+              "Third-party aggregators republish nonprofit financials with varying dates and definitions, so the right figure is the one you read on an actual filing whose year you can state",
+              "The number changes daily",
+            ],
+            correctIndex: 2,
+            explanation: "It is the same rule course 1 applied to the 17,000 displacement figure: give a number its owner, its date and its scope, or do not use it.",
+            sourceLessonSlug: "ph-next-governance",
+          },
+          {
+            prompt: "Which of these interpretive decisions is normally visible from outside a site?",
+            options: [
+              "The published programme descriptions",
+              "The tour script",
+              "The interpretive plan",
+              "The curatorial restoration files",
+            ],
+            correctIndex: 0,
+            explanation: "The rest of the table exists and can be asked for. Asking politely, in writing, is a normal thing for a researcher, a student or a neighbour to do.",
+            sourceLessonSlug: "ph-next-interpretation",
+          },
+          {
+            prompt: "Why is Harrison's record a hard interpretive problem for a house museum?",
+            options: [
+              "Because no primary sources survive",
+              "Because the house is too small for exhibits",
+              "Because the record is entirely positive",
+              "Because it will not fit on a label: the ballot messages, the failed bill, the Geary Act, Wounded Knee and the 1888 circular cannot all sit in one sentence",
+            ],
+            correctIndex: 3,
+            explanation: "The right posture is not to demand a particular choice but to see that a choice was made, and to ask what it was and when it was last revisited.",
+            sourceLessonSlug: "ph-next-interpretation",
+          },
+          {
+            prompt: "What happened at Montpelier between June 2021 and May 2022?",
+            options: [
+              "The site closed permanently",
+              "A bylaw commitment to descendant parity on the board was made, rescinded in March 2022, and restored on May 16, 2022 after national backlash",
+              "The federal government took over the property",
+              "The board was replaced by a court order",
+            ],
+            correctIndex: 1,
+            explanation: "Public pressure worked because the decision was visible: bylaws are documents and board votes are minuted.",
+            sourceLessonSlug: "ph-next-interpretation",
+          },
+          {
+            prompt: "Which body recommended the directors whose election achieved 'structural parity' at Montpelier?",
+            options: [
+              "The National Park Service",
+              "The Virginia General Assembly",
+              "The Montpelier Descendants Committee",
+              "The American Alliance of Museums",
+            ],
+            correctIndex: 2,
+            explanation: "The National Trust for Historic Preservation, which had condemned the March 2022 rescission, publicly congratulated the board on May 16, 2022.",
+            sourceLessonSlug: "ph-next-interpretation",
+          },
+          {
+            prompt: "Where does the actual text of H.R. 11045 live, so that the petition-threshold disagreement can be settled?",
+            options: [
+              "It has been lost",
+              "Only in a private collection",
+              "In state archives in Mississippi",
+              "In the Congressional Record of the 51st Congress, digitised and public at congress.gov",
+            ],
+            correctIndex: 3,
+            explanation: "Anyone who tells you the number without telling you where they read it is repeating a summary, and this course says the same about itself.",
+            sourceLessonSlug: "ph-powers-the-bill",
+          },
+          {
+            prompt: "Why is this course's map national rather than block by block?",
+            options: [
+              "Because the lesson map draws the whole world, so points need roughly two degrees of separation, and everything in Indianapolis is one dot",
+              "Because the house's location is unknown",
+              "Because Indianapolis maps are copyrighted",
+              "Because the course avoids maps",
+            ],
+            correctIndex: 0,
+            explanation: "Matching the scale of the map to the question is the skill. For a Marion County parcel the right tool is MapIndy.",
+            sourceLessonSlug: "ph-map",
+          },
+          {
+            prompt: "What do the Wounded Knee and San Francisco markers do on this course's map?",
+            options: [
+              "They mark where Harrison campaigned",
+              "They keep the map from being read as a monument, by plotting the two parts of the record that do not fit",
+              "They show where the bill was debated",
+              "They mark archives",
+            ],
+            correctIndex: 1,
+            explanation: "The November 1890 troop order preceding the December 29, 1890 massacre, and the Geary Act signed May 5, 1892.",
+            sourceLessonSlug: "ph-map",
+          },
+          {
+            prompt: "On a 360 tour of a house museum, which rooms are usually the most informative?",
+            options: [
+              "The parlour and the dining room",
+              "The bedrooms",
+              "The rooms not on the tour: service stairs, kitchen passages, storage, basement, attic, carriage house",
+              "The gift shop",
+            ],
+            correctIndex: 2,
+            explanation: "A museum's route is an argument about which parts of a household mattered.",
+            sourceLessonSlug: "ph-now-tour",
+          },
+          {
+            prompt: "A 360 tour of this house cannot show you which of the following?",
+            options: [
+              "The colour of the woodwork",
+              "The shape of the staircase",
+              "A vote, an absence, a governance decision, or its own capture date",
+              "The furniture in the parlour",
+            ],
+            correctIndex: 2,
+            explanation: "Nothing in the building records what the Senate did on January 22, 1891, and the board, budget and interpretive plan are not visible in a room.",
+            sourceLessonSlug: "ph-now-tour",
+          },
+          {
+            prompt: "What did the front porch on the house today turn out to be, relative to the campaign it is famous for?",
+            options: [
+              "Original to 1875 and unchanged",
+              "Built after the presidency, in 1895 or 1896 depending on which source you read",
+              "Added by the museum in 1974",
+              "Removed entirely in 1896",
+            ],
+            correctIndex: 1,
+            explanation: "Which does not prove there was no porch in 1888. Neither source says what stood at the front door then, and this course does not assert what it cannot source.",
+            sourceLessonSlug: "ph-built-the-porch",
+          },
+          {
+            prompt: "Restate the designation rule this cluster teaches.",
+            options: [
+              "Federal listing is recognition plus review leverage when federal money or a permit is involved; local designation under a local ordinance is what regulates",
+              "National Historic Landmark status transfers a property to the federal government",
+              "Only state registers regulate demolition",
+              "Federal listing prevents any change to a building",
+            ],
+            correctIndex: 0,
+            explanation: "The Old Northside carries both: National Register listing in 1978 and an Indianapolis historic district designation the same year.",
+            sourceLessonSlug: "ph-built-what-a-museum-shows",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
