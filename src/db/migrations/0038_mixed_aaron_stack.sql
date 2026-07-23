@@ -1,0 +1,1 @@
+ALTER TABLE "lesson_progress" DROP COLUMN "tour_progress";
