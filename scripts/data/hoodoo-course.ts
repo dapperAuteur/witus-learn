@@ -12,6 +12,15 @@
 // Long, Raboteau, and Anderson, and to public-domain field studies (Puckett, 1926). The provided
 // library (incl. the Hyatt Rootwork volumes) is treated as reference / Further Reading, not
 // reproduced.
+//
+// ASSESSMENT SHAPE (do not regress it). A cited history course is graded with multiple choice,
+// never a typed fill-in: an open-answer drill is a LANGUAGE-course widget (src/lib/exercise.ts)
+// and cannot grade a history answer fairly. Both quiz lessons therefore follow the repo standard
+// (see scripts/data/indiana-avenue-course.ts): a bank larger than one attempt, passingScore 70,
+// questionsPerAttempt 8 so retries rotate, shuffleOptions, every question carrying `explanation`
+// + `sourceLessonSlug`, and the correct answer spread evenly across the four positions so the
+// bank cannot be passed by always picking the same slot. Every teaching lesson closes with a
+// `:::reveal question ||| answer` check, which stays hidden until the learner reveals it.
 
 import type { AuthoredCourse } from "./authored-course";
 
@@ -303,12 +312,15 @@ This is why the tradition is often described, in the title of one study in the p
       section: "Practice",
       quiz: {
         passingScore: 70,
+        // Bank of 12, 8 served per attempt, so a retry draws a fresh subset.
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt:
               "Hoodoo is an African American folk-spiritual practice also known by which other name?",
-            options: ["Rootwork (or conjure)", "Vodou", "Santería", "Obeah"],
-            correctIndex: 0,
+            options: ["Vodou", "Santería", "Rootwork (or conjure)", "Obeah"],
+            correctIndex: 2,
             explanation:
               "Hoodoo, conjure, and rootwork name the same African American folk-spiritual tradition of healing, protection, and power.",
             sourceLessonSlug: "hoodoo-what-it-is",
@@ -316,8 +328,8 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt:
               "Hoodoo is often confused with, but is DISTINCT from, which organized religion?",
-            options: ["Vodou/Vodun", "Methodism", "Catholicism", "Buddhism"],
-            correctIndex: 0,
+            options: ["Methodism", "Catholicism", "Buddhism", "Vodou/Vodun"],
+            correctIndex: 3,
             explanation:
               "Vodou/Vodun are organized religions with deities and clergy; Hoodoo is an African American folk PRACTICE, a common but important distinction.",
             sourceLessonSlug: "hoodoo-what-it-is",
@@ -326,12 +338,12 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Scholars trace the Hoodoo mojo bag to which Central African (Kongo) power object?",
             options: [
-              "The nkisi/minkisi",
               "The ankh",
+              "The nkisi/minkisi",
               "The scarab amulet",
               "The rosary",
             ],
-            correctIndex: 0,
+            correctIndex: 1,
             explanation:
               "The nkisi/minkisi, Kongo consecrated power objects, are considered likely ancestors of the mojo bag.",
             sourceLessonSlug: "hoodoo-african-roots",
@@ -340,12 +352,12 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Under slavery, the community healer and herbalist who also worked conjure was known as the…",
             options: [
-              "Root (or conjure) doctor",
               "Circuit preacher",
               "Overseer",
+              "Root (or conjure) doctor",
               "Field driver",
             ],
-            correctIndex: 0,
+            correctIndex: 2,
             explanation:
               "The root (or conjure) doctor healed, delivered babies, and worked conjure, a figure of real authority in the quarters.",
             sourceLessonSlug: "hoodoo-resistance",
@@ -368,15 +380,97 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Are Hoodoo and 'Voodoo' two names for exactly the same thing?",
             options: [
-              "No, Vodou/Vodun are organized religions, while Hoodoo is a distinct African American folk practice",
               "Yes, they are identical",
+              "No, Vodou/Vodun are organized religions, while Hoodoo is a distinct African American folk practice",
               "Yes, but only in Louisiana",
               "No, Hoodoo is the clergy branch of Vodou",
             ],
-            correctIndex: 0,
+            correctIndex: 1,
             explanation:
               "Vodou/Vodun are organized religions; Hoodoo is a distinct African American folk practice. Conflating them is a category error.",
             sourceLessonSlug: "hoodoo-what-it-is",
+          },
+          {
+            prompt:
+              "Hoodoo has no formal church, no clergy, no pantheon of deities, and no required initiation. What does the course conclude from that?",
+            options: [
+              "That it was invented by the spiritual-supply companies",
+              "That it is a practice rather than a religion",
+              "That it is a branch of Vodou",
+              "That it stopped being practiced in the 19th century",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Those four absences are why the course calls Hoodoo a practice and not a religion. Most practitioners were Christians who saw no conflict.",
+            sourceLessonSlug: "hoodoo-what-it-is",
+          },
+          {
+            prompt:
+              "Alongside African knowledge, which strands did enslaved people blend into what became Hoodoo?",
+            options: [
+              "Ancient Egyptian temple ritual and Greek philosophy",
+              "Norse rune lore and Celtic druidry",
+              "Hindu ritual and Buddhist meditation",
+              "European folk magic, Native American herb lore, and Protestant Christianity",
+            ],
+            correctIndex: 3,
+            explanation:
+              "African belief survived in memory, practice, and disguise, and combined with what the enslaved met in America. The result was new and distinctly African American.",
+            sourceLessonSlug: "hoodoo-african-roots",
+          },
+          {
+            prompt: "Why did the root doctor hold real authority in the quarters?",
+            options: [
+              "Enslaved communities had little or no access to medical care, and the root doctor healed, delivered babies, and eased pain",
+              "Enslavers appointed root doctors to supervise the work gangs",
+              "Root doctors were ordained by the churches that enslavers attended",
+              "Root doctors owned the land they worked",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Plant knowledge partly inherited from Africa made the root doctor the community's healer and midwife when no doctor would come.",
+            sourceLessonSlug: "hoodoo-resistance",
+          },
+          {
+            prompt:
+              "Which small bag of roots, curios, and personal items is the tradition's signature charm?",
+            options: [
+              "The reliquary",
+              "The censer",
+              "The mojo bag, also called a hand or toby",
+              "The phylactery",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The mojo bag (hand, toby, or gris-gris) is the signature Hoodoo charm, and scholars compare it to the Kongo nkisi.",
+            sourceLessonSlug: "hoodoo-materia",
+          },
+          {
+            prompt:
+              "Using hair, a written name, or a photograph on the belief that a connection to the person carries the working is what anthropologists call…",
+            options: [
+              "Divination",
+              "Ancestral reverence",
+              "Iconoclasm",
+              "Contagious or sympathetic magic",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Puckett (1926) records these personal concerns. Anthropologists call the underlying idea contagious or sympathetic magic, and it appears in folk traditions worldwide.",
+            sourceLessonSlug: "hoodoo-materia",
+          },
+          {
+            prompt: "How did enslavers respond to conjure, according to the historical record?",
+            options: [
+              "They genuinely feared conjure and poisoning, and laws and testimony reflect that fear",
+              "They ignored it entirely",
+              "They paid conjure doctors to work on their behalf",
+              "They required every enslaved person to practice it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Anderson (2005) notes that enslavers' fear of conjure and poisoning shows up in the laws and the testimony, one of the ways conjure intersected with resistance.",
+            sourceLessonSlug: "hoodoo-resistance",
           },
         ],
       },
@@ -389,6 +483,9 @@ This is why the tradition is often described, in the title of one study in the p
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Bank of 15, 8 served per attempt, so a retry draws a fresh subset.
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How is Hoodoo best described?",
@@ -407,11 +504,11 @@ This is why the tradition is often described, in the title of one study in the p
             prompt: "How does Hoodoo differ from Vodou/'Voodoo'?",
             options: [
               "They are identical",
-              "Vodou/Vodun are organized religions with deities and clergy; Hoodoo is a distinct African American folk practice",
               "Hoodoo is older than all African religions",
+              "Vodou/Vodun are organized religions with deities and clergy; Hoodoo is a distinct African American folk practice",
               "Voodoo is practiced only in the U.S.",
             ],
-            correctIndex: 1,
+            correctIndex: 2,
             explanation:
               "Conflating Hoodoo with Vodou is the most common error; they are related but distinct.",
             sourceLessonSlug: "hoodoo-what-it-is",
@@ -419,12 +516,12 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "Which African tradition is a likely ancestor of the Hoodoo mojo bag?",
             options: [
-              "The Egyptian pyramid",
               "The Central African (Kongo) nkisi/minkisi power object",
+              "The Egyptian pyramid",
               "The Roman amulet",
               "None, it is purely European",
             ],
-            correctIndex: 1,
+            correctIndex: 0,
             explanation:
               "Scholars link the mojo bag to Kongo minkisi, part of Hoodoo's strong Central African heritage.",
             sourceLessonSlug: "hoodoo-african-roots",
@@ -433,11 +530,11 @@ This is why the tradition is often described, in the title of one study in the p
             prompt: "Under slavery, the root/conjure doctor most often also served as a…",
             options: [
               "Tax collector",
-              "Healer, herbalist, and midwife",
               "Plantation owner",
               "Ship captain",
+              "Healer, herbalist, and midwife",
             ],
-            correctIndex: 1,
+            correctIndex: 3,
             explanation:
               "Denied medical care, communities relied on the root doctor for healing, births, and conjure.",
             sourceLessonSlug: "hoodoo-resistance",
@@ -459,11 +556,11 @@ This is why the tradition is often described, in the title of one study in the p
             prompt: "What does 'rootwork' refer to?",
             options: [
               "Gardening for food",
-              "The tradition's use of roots, herbs, and natural materials believed to hold spiritual power",
               "Tree surgery",
+              "The tradition's use of roots, herbs, and natural materials believed to hold spiritual power",
               "Genealogy research",
             ],
-            correctIndex: 1,
+            correctIndex: 2,
             explanation:
               "The name reflects the centrality of roots and herbs (e.g., High John the Conqueror) in the practice.",
             sourceLessonSlug: "hoodoo-materia",
@@ -471,12 +568,12 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "What did the Great Migration do to Hoodoo?",
             options: [
-              "Ended it entirely",
               "Carried it into Northern and Western cities, where it met the cash economy and spiritual-supply shops",
+              "Ended it entirely",
               "Confined it to Africa",
               "Made it a federal religion",
             ],
-            correctIndex: 1,
+            correctIndex: 0,
             explanation:
               "Millions of Black Southerners brought Hoodoo north, where it commercialized and adapted.",
             sourceLessonSlug: "hoodoo-regions-migration",
@@ -485,11 +582,11 @@ This is why the tradition is often described, in the title of one study in the p
             prompt: "What tension does commercialization raise for Hoodoo?",
             options: [
               "It makes the practice illegal",
-              "Outsiders often package, sell, and teach a Black tradition stripped of its history, an appropriation concern",
               "It has no effect on the tradition",
               "It turns Hoodoo into a sport",
+              "Outsiders often package, sell, and teach a Black tradition stripped of its history, an appropriation concern",
             ],
-            correctIndex: 1,
+            correctIndex: 3,
             explanation:
               "Scholars note that a practice created by African Americans was widely commercialized by outsiders, raising appropriation concerns.",
             sourceLessonSlug: "hoodoo-commerce-appropriation",
@@ -511,14 +608,84 @@ This is why the tradition is often described, in the title of one study in the p
             prompt: "Why does this course present Hoodoo as cultural history rather than a how-to?",
             options: [
               "Because Hoodoo is fake",
-              "To respect a living Black tradition, centering its communities and scholarship, and avoiding appropriation and unsafe instruction",
               "Because it is illegal to describe",
+              "To respect a living Black tradition, centering its communities and scholarship, and avoiding appropriation and unsafe instruction",
               "Because no sources exist",
             ],
-            correctIndex: 1,
+            correctIndex: 2,
             explanation:
               "The cultural-history framing honors the tradition's origins, is grounded in scholarship, and avoids the harms of appropriation and how-to instruction.",
             sourceLessonSlug: "hoodoo-commerce-appropriation",
+          },
+          {
+            prompt:
+              "Hoodoo ideas about the crossroads, the spirit world, and graveyard dirt echo which body of thought?",
+            options: [
+              "Ancient Roman state religion",
+              "Scandinavian folk belief",
+              "Polynesian navigation lore",
+              "Central African (Kongo) cosmology",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Scholars trace these ideas, along with the mojo bag's resemblance to the minkisi, to Kongo thought carried across the Atlantic.",
+            sourceLessonSlug: "hoodoo-african-roots",
+          },
+          {
+            prompt:
+              "Which two areas of the Deep South does the course name as places where Hoodoo took especially deep root?",
+            options: [
+              "The Mississippi Delta and the Low Country of coastal South Carolina and Georgia",
+              "New England and the Great Lakes",
+              "The Pacific Northwest and the Rocky Mountains",
+              "The Rio Grande Valley and the Ozarks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Low Country is home to the Gullah Geechee, whose relative isolation preserved unusually strong African retentions.",
+            sourceLessonSlug: "hoodoo-regions-migration",
+          },
+          {
+            prompt:
+              "In Hoodoo's scriptural work, which part of the Bible is tied to particular needs such as protection, justice, and favor?",
+            options: [
+              "The genealogies",
+              "The Book of Revelation only",
+              "Particular Psalms",
+              "The Gospels only",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Specific Psalms are associated with specific needs, which is why the tradition's use of scripture is sometimes called Psalms work.",
+            sourceLessonSlug: "hoodoo-christianity",
+          },
+          {
+            prompt:
+              "Which root does the tradition most associate with strength, luck, and mastering hardship?",
+            options: [
+              "Sassafras",
+              "High John the Conqueror",
+              "Ginseng",
+              "Mandrake",
+            ],
+            correctIndex: 1,
+            explanation:
+              "High John the Conqueror is the tradition's most famous root, and the trickster-hero folklore attached to the name carried hope through slavery.",
+            sourceLessonSlug: "hoodoo-materia",
+          },
+          {
+            prompt:
+              "Whose interviews of the 1930s and 1940s, published as the five-volume Hoodoo-Conjuration-Witchcraft-Rootwork, are the largest field record of the practices' range?",
+            options: [
+              "Zora Neale Hurston",
+              "Carolyn Morrow Long",
+              "Katrina Hazzard-Donald",
+              "Harry Middleton Hyatt",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Hyatt's five volumes, with Puckett's earlier 1926 study, are the documentary base scholars still work from. This course treats them as reference, not instruction.",
+            sourceLessonSlug: "hoodoo-materia",
           },
         ],
       },
