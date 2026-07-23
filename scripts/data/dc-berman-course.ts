@@ -519,6 +519,503 @@ The eventual redevelopment drew on both, and the built result is the physical ar
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Powers  (beat 3: civics, planning, law, politics. THE LOAD-BEARING SECTION)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "dc-powers-blight",
+      title: "8 · Instrument one: the statute and the designation",
+      section: "Section 3 · Powers",
+      body: `**This is the section the whole course exists for.** Everything before it establishes what was here and what replaced it. This section teaches the tools, because, as the Indiana Avenue course put it, **a building does not disappear; it is removed by somebody with an instrument.** In Southwest the first instrument is a federal statute, and it is the reason this city, not Indianapolis, is where the series stops to read the law.
+
+**An instrument, in this course's sense, is a specific legal power, exercised by a specific body, under a specific statute, leaving a specific document.** That last clause is what makes history researchable: if a power was used, a record exists and it has a name.
+
+**Instrument one is designation under a statute.** In 1945 Congress passed the **District of Columbia Redevelopment Act of 1945** (60 Stat. 790, approved August 2, 1946). It established the purpose of urban renewal in the capital and created the **Redevelopment Land Agency (RLA)**, the body empowered to acquire land (District of Columbia Redevelopment Act of 1945; Docomomo US, n.d.).
+
+**Why Congress and not a city council.** Here is the fact that makes DC different from every other city in this series, and you will meet its full weight in lesson 13. **The District of Columbia had no home rule.** In 1945 Washington had no elected mayor and no elected council; **Congress legislated for the city directly.** So the statute that authorised clearing Southwest was passed by a national legislature in which the people of Southwest had no vote at all. Hold that; it is not a detail.
+
+**How the statute ran.** The Act authorised the RLA to acquire land in accordance with a comprehensive plan prepared by the **National Capital Planning Commission (NCPC)**, for "the redevelopment of blighted territory... and the prevention, reduction, or elimination of blighting factors or causes of blight" (District of Columbia Redevelopment Act of 1945). The NCPC and RLA surveyed the city for "slum or blighted areas," and **Southwest was the first area designated. By the end of 1952 the first official urban renewal plan for Southwest, designated "Area B," had been approved** (Docomomo US, n.d.).
+
+**Now the transferable part, which is the same lesson the Indiana Avenue course taught about the word "blighted."**
+1. **"Blighted" is a legal conclusion, not a description.** A body reaches it, on a record, against criteria written into a statute. Once reached, it unlocks powers that do not otherwise exist: acquisition, clearance, and resale to a redeveloper.
+2. **The criteria are about physical condition**, and physical condition follows from decades of refused lending and withheld investment, which is the circularity lesson 2 established. **The finding and its cause can be the same policy at two dates.**
+3. **A designation is public.** There is a plan, a boundary, a commission, and a record. **All of it can be requested.**
+
+**What makes Southwest the pivot of this whole series.** In Indianapolis the blight tool was used, but its constitutional validity was never fought all the way up. In Washington it was, because a property owner in Area B sued, arguing that taking his land violated the Fifth Amendment. **That lawsuit is the next lesson, and its answer is the reason the blight designation became safe to use in every city in the country.**
+
+## Sources
+- District of Columbia Redevelopment Act of 1945, 60 Stat. 790 (1946). https://www.law.cornell.edu/topn/district_of_columbia_redevelopment_act_of_1945
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Docomomo US. (n.d.). *The Southwest urban renewal area in Washington, D.C.* https://docomomo-us.org/news/the-southwest-urban-renewal-area-in-washington-d-c`,
+      recallContent: [
+        {
+          prompt: "Define an 'instrument' as this course uses the word.",
+          answer: "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. The last part is what makes it researchable.",
+        },
+        {
+          prompt: "What statute authorised clearing Southwest, and what body did it create?",
+          answer: "The District of Columbia Redevelopment Act of 1945 (60 Stat. 790, approved August 2, 1946), which created the Redevelopment Land Agency to acquire land under a comprehensive plan prepared by the National Capital Planning Commission.",
+        },
+        {
+          prompt: "Why was the statute passed by Congress rather than a city council?",
+          answer: "Because the District had no home rule: in 1945 Washington had no elected mayor or council, and Congress legislated for the city directly. The people of Southwest had no vote in the legislature that authorised clearing their neighbourhood.",
+        },
+        {
+          prompt: "When was Southwest's Area B plan approved, and what was its status among DC renewal areas?",
+          answer: "By the end of 1952. Southwest was the first area designated for renewal in the District.",
+        },
+        {
+          prompt: "Why is Southwest the pivot of this whole series rather than just another cleared district?",
+          answer: "Because a property owner in Area B sued, arguing the taking violated the Fifth Amendment, and the case went to the Supreme Court. Its answer made the blight-designation tool constitutionally safe to use in every city in the country.",
+        },
+      ],
+    },
+    {
+      slug: "dc-powers-berman",
+      title: "9 · Instrument two: Berman v. Parker, read closely",
+      section: "Section 3 · Powers",
+      body: `**Read the opinion, not a summary of it.** *Berman v. Parker*, 348 U.S. 26, was decided on **November 22, 1954**, by a unanimous Court, in an opinion by Justice **William O. Douglas**. It is the single most important document in this entire course, and its exact words are worth more than any paraphrase.
+
+**Who actually sued, which almost every retelling gets wrong.** The plaintiff was not a displaced family. The opinion states: **"Appellants own property in Area B at 712 Fourth Street, S.W. It is not used as a dwelling or place of habitation. A department store is located on it"** (Berman v. Parker, 1954). The challenger was the owner of a going commercial business, and his argument was pointed: **my property is not a slum, so you may not take it to cure a slum.** Keep that in view. **The case that made it constitutional to clear homes as blighted was won against a store owner whose building was not blighted.**
+
+**The Court's answer, in its own language.** Douglas swept the objection aside with a definition of public purpose so broad that it governed American takings for the next half-century.
+
+- On what counts as a public purpose: **"The concept of the public welfare is broad and inclusive... The values it represents are spiritual as well as physical, aesthetic as well as monetary. It is within the power of the legislature to determine that the community should be beautiful as well as healthy, spacious as well as clean, well-balanced as well as carefully patrolled"** (Berman v. Parker, 1954).
+- On beauty as a legitimate public end: **"If those who govern the District of Columbia decide that the Nation's Capital should be beautiful as well as sanitary, there is nothing in the Fifth Amendment that stands in the way"** (Berman v. Parker, 1954).
+- On the role of the courts: the Court said that **"when the legislature has spoken, the public interest has been declared in terms well-nigh conclusive"** and that **the legislature, not the judiciary, is "the main guardian of the public needs to be served by social legislation"** (Berman v. Parker, 1954).
+
+**Why the store owner lost, which is the actual holding.** The Court held that redevelopment may treat an area as a **whole**. It reasoned that community redevelopment programs **"need not, by force of the Constitution, be on a piecemeal basis,"** so an owner cannot defeat an area-wide plan by pointing to his own individual lot (Berman v. Parker, 1954). And it held that the government may then convey the cleared land to a private redeveloper, because **"the public end may be as well or better served through an agency of private enterprise than through a department of government"** (Berman v. Parker, 1954). Read those two moves together and you have the entire machine: **the whole area may be taken as a unit, and it may be handed to a private developer afterward.**
+
+**Now say honestly what the case did NOT hold.**
+1. **It did not hold that 712 Fourth Street was a slum.** It held that it did not need to be, so long as it sat inside an area designated for redevelopment as a whole.
+2. **It did not decide what anyone should be paid.** Compensation is a separate question, litigated case by case.
+3. **It did not rule on whether the plan was wise.** The Court expressly said, in the same opinion, that it does not sit to judge whether a particular project is desirable.
+4. **It was not brought by the people it most affected.** The 23,000 displaced residents of Southwest were not the plaintiffs. **The named party was a business, and the decision that authorised removing a neighbourhood turned on a store.**
+
+**What the beauty language really licensed.** The line about the capital being "beautiful as well as sanitary" is often quoted as an inspiring defence of civic design. Read in place, it does harder work: **it says a government may take your property because the area could look and function better, not only because your building is unsafe.** That is the doctrine that made "blight" elastic, and lesson 11 follows it forward to the day it reached ordinary, well-kept homes.
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- U.S. Const. amend. V.
+- District of Columbia Redevelopment Act of 1945, 60 Stat. 790 (1946). https://www.law.cornell.edu/topn/district_of_columbia_redevelopment_act_of_1945`,
+      recallContent: [
+        {
+          prompt: "Who was the plaintiff in Berman v. Parker, and what was his property?",
+          answer: "Not a displaced resident. The appellants owned property at 712 Fourth Street, S.W., in Area B, which was not a dwelling; a department store stood on it. Their argument was that a non-slum property could not be taken to cure a slum.",
+        },
+        {
+          prompt: "Quote the Court's core statement about the scope of public welfare.",
+          answer: "\"The concept of the public welfare is broad and inclusive... The values it represents are spiritual as well as physical, aesthetic as well as monetary,\" and it is within the legislature's power to decide the community should be beautiful as well as healthy.",
+        },
+        {
+          prompt: "What did the Court say about beauty and the Fifth Amendment?",
+          answer: "\"If those who govern the District of Columbia decide that the Nation's Capital should be beautiful as well as sanitary, there is nothing in the Fifth Amendment that stands in the way.\"",
+        },
+        {
+          prompt: "What was the actual holding that made the store owner lose?",
+          answer: "That redevelopment may treat an area as a whole and need not proceed piecemeal, so an owner cannot defeat an area-wide plan by pointing to his own lot; and that the cleared land may be conveyed to a private redeveloper, because the public end may be as well served through private enterprise.",
+        },
+        {
+          prompt: "Name two things Berman did NOT hold.",
+          answer: "It did not hold that 712 Fourth Street was itself a slum; it did not decide what anyone should be paid; and it did not rule on whether the plan was wise. It was also not brought by the displaced residents, but by a business.",
+        },
+      ],
+    },
+    {
+      slug: "dc-powers-eminent-domain",
+      title: "10 · Instrument three: eminent domain, and who ends up with the land",
+      section: "Section 3 · Powers",
+      body: `The designation makes land takeable and *Berman* made the designation safe. **Eminent domain is the power that does the taking.**
+
+**What it is.** The government's authority to take private property for public use on payment of just compensation. The constitutional text is the last clause of the **Fifth Amendment**: "nor shall private property be taken for public use, without just compensation." The Fourteenth Amendment applies the requirement to the states, though in the District the Fifth applies directly because the District is federal ground.
+
+**Three things learners usually have wrong, and Berman settled two of them.**
+
+**1. The owner does not have to agree.** The dispute in a condemnation case is normally about **price**, not about whether the taking happens. Refusing an offer sends the matter to a court that sets the number; it does not stop the project.
+
+**2. The taker is usually not who ends up with the land.** Under a redevelopment statute a public body acquires and clears, then conveys the cleared land to a **private developer**. Before *Berman*, it was genuinely arguable that handing condemned land to a private company was not a "public use" at all. **Berman closed that argument**: the Court said the public end may be served as well through private enterprise, so the government could take Southwest and give it to the developers who built the superblocks in Section 2 (Berman v. Parker, 1954). **The design of urban renewal, public taking followed by private rebuilding, is not an abuse of the doctrine. Berman made it the doctrine.**
+
+**3. It leaves a paper trail.** Offers, appraisals, condemnation filings, and settlements are court and agency records. **This is the most checkable instrument in the section**, which is why lesson 18 has you look up a real parcel.
+
+**The honest asymmetry, which Berman did not touch.** *Berman* resolved whether the taking was lawful. It said nothing about whether the compensation made anyone whole, and the Thursz study in lesson 3 is the answer it left blank: **owners were paid for buildings, but tenants, who were most of Southwest, owned no building to be paid for**, and the relocation they received did not preserve the community or hold their housing costs down. **A lawful taking with just compensation for the owner can still shatter a neighbourhood of renters**, and that gap between "the owner was paid" and "the residents were made whole" is where the human cost of this instrument actually sits.
+
+**A note on comparison across time.** Relocation standards for federally funded projects were later raised by the **Uniform Relocation Assistance and Real Property Acquisition Policies Act of 1970**. Most of the Southwest clearance predates it. **When you compare a 1950s taking to a 1970s one, you are comparing two legal regimes**, and saying so is part of getting the history right, exactly as the Indiana Avenue course insisted.
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- U.S. Const. amend. V.
+- Uniform Relocation Assistance and Real Property Acquisition Policies Act of 1970, 42 U.S.C. § 4601 et seq. https://www.govinfo.gov/app/collection/uscode
+- Thursz, D. (1966). *Where are they now? A study of the impact of relocation on former residents of southwest Washington*. Health and Welfare Council of the National Capital Area.`,
+      recallContent: [
+        {
+          prompt: "What does the Fifth Amendment require when property is taken?",
+          answer: "That private property not be taken for public use without just compensation. In the District the Fifth applies directly because the District is federal ground.",
+        },
+        {
+          prompt: "In a condemnation case, what is normally in dispute?",
+          answer: "The price, not whether the taking happens. Refusing an offer leads to a court setting compensation rather than stopping the project.",
+        },
+        {
+          prompt: "How did Berman change the rule about conveying condemned land to a private developer?",
+          answer: "Before Berman it was arguable that handing condemned land to a private company was not a public use. Berman said the public end may be served as well through private enterprise, so public taking followed by private rebuilding became the doctrine of urban renewal, not an abuse of it.",
+        },
+        {
+          prompt: "What did Berman NOT touch, and how does the Thursz study fill that blank?",
+          answer: "Berman decided the taking was lawful, not whether compensation made anyone whole. Thursz showed owners were paid for buildings but tenants, who were most of Southwest, owned nothing to be paid for, and their relocation did not preserve the community or hold housing costs down.",
+        },
+        {
+          prompt: "Why does comparing a 1950s taking to a 1970s one require care?",
+          answer: "Because the Uniform Relocation Act of 1970 later raised relocation standards for federally funded projects, and most of the Southwest clearance predates it. The two takings happened under different legal regimes.",
+        },
+      ],
+    },
+    {
+      slug: "dc-powers-travels",
+      title: "11 · How the holding travelled, and testing the link to Indiana Avenue",
+      section: "Section 3 · Powers",
+      body: `*Berman* was a District of Columbia case about one cleared quadrant. **Its importance is that it did not stay there.** This lesson follows the holding forward to other cities and then back to Indiana Avenue, and it applies the same test the pilot course used on its own argument: **line up the dates and see whether the proposed cause comes before its effect.**
+
+**Forward: three stops on the road from Berman.**
+- **Hawaii Housing Authority v. Midkiff, 467 U.S. 229 (1984).** A unanimous Court upheld Hawaii's law forcing large landowners to sell to their tenants, relying on *Berman* for the proposition that the public-use requirement is satisfied whenever the taking is "rationally related to a conceivable public purpose" (Kelo v. New London, 2005, discussing Midkiff and Berman).
+- **Poletown, 1981.** The Michigan Supreme Court let Detroit condemn an entire working neighbourhood for a General Motors plant, in the deferential spirit *Berman* had established. It was a state case, and Michigan later overruled it in 2004, but for two decades it was a model other cities studied.
+- **Kelo v. City of New London, 545 U.S. 469 (2005).** This is the destination. The Court, citing *Berman* and *Midkiff*, allowed New London to condemn **well-maintained, non-blighted homes** for a private economic-development plan. **The tool that started as slum clearance in Southwest had travelled all the way to taking sound houses for economic growth.** Justice O'Connor's dissent warned that under this logic "nothing is to prevent the State from replacing any Motel 6 with a Ritz-Carlton," and public backlash led many states to amend their eminent-domain laws (Kelo v. New London, 2005).
+
+**That is the honest measure of Berman's reach.** It did not merely bless one clearance. **It set the standard of deference that made "public use" almost impossible to lose on**, and fifty years later that standard reached ordinary homeowners in Connecticut.
+
+**Now back to Indiana Avenue, and here the course weakens its own most attractive claim, on purpose.** It is tempting to say: *Berman* (1954) authorised the blight tool, and Indianapolis then used that tool on Indiana Avenue, so Washington is where Indiana Avenue's clearance was licensed. **Test it against the chronology.**
+
+| Date | Event |
+|---|---|
+| 1945 | Indiana General Assembly identifies Pat Ward's Bottom (near Indiana Avenue) as blighted |
+| 1948 | Demolition begins there |
+| 1952 | Southwest DC "Area B" plan approved |
+| **November 22, 1954** | **Berman v. Parker decided** |
+| 1954, 1956 | Further Indianapolis blight designations; IU Medical Center expansion |
+| 1958 | The joint IU and Purdue campus plan proposed |
+
+**The verdict, stated plainly. The link is real but it is a constitutional backstop, not a cause, and this course reports the weaker, true version.**
+
+**Where the simple claim fails.** **Berman did not cause Indiana Avenue's clearance.** Indiana had its **own** state blight statute in 1945 and had already begun demolishing homes near the Avenue in 1948, six years before *Berman* was decided. **A cause cannot postdate the effects that were already under way.** Indianapolis was not waiting for Washington's permission.
+
+**Where the claim holds, in its accurate form.** *Berman* resolved, for the whole country, the **constitutional** question that a challenger anywhere might have raised: does taking non-blighted property inside a designated area, and handing it to a private developer, violate the Fifth Amendment? After November 1954 the answer was settled: **no.** So the tool Indianapolis was already using could no longer be struck down on public-use grounds, in Indiana or anywhere else. **Berman did not start the machine. It guaranteed the machine could not be stopped by that particular argument.** That is a smaller claim than "Washington licensed Indiana Avenue," it is defensible, and it is the one this course makes.
+
+**The method, which outlasts every fact here.** Build the chronology before the argument. A weaker claim that survives a date check beats a stronger claim that fails one. And when your favourite thesis partly breaks, **report the break**: that is the finding, not a failure, and it is exactly what the Indiana Avenue course did to its own proposed spine.
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Kelo v. City of New London, 545 U.S. 469 (2005). https://www.law.cornell.edu/supremecourt/text/04-108
+- Hawaii Housing Authority v. Midkiff, 467 U.S. 229 (1984). https://www.law.cornell.edu/supremecourt/text/467/229`,
+      recallContent: [
+        {
+          prompt: "Name the three cases the Berman holding travelled through, and what each allowed.",
+          answer: "Midkiff (1984) upheld Hawaii forcing landowners to sell to tenants; Poletown (1981, Michigan) let Detroit condemn a neighbourhood for a GM plant; and Kelo (2005) allowed New London to take well-maintained, non-blighted homes for private economic development.",
+        },
+        {
+          prompt: "What was the significance of Kelo relative to Berman's origin?",
+          answer: "The tool that began as slum clearance in Southwest had travelled to taking sound, non-blighted houses for economic growth. Kelo cited Berman and Midkiff, and O'Connor's dissent warned the logic could replace any modest use with a fancier one.",
+        },
+        {
+          prompt: "Why does the simple claim that Berman caused Indiana Avenue's clearance fail?",
+          answer: "Because Indiana had its own 1945 state blight statute and had begun demolishing homes near the Avenue in 1948, six years before Berman was decided in November 1954. A cause cannot postdate effects already under way.",
+        },
+        {
+          prompt: "State the accurate, weaker version of the link between Berman and Indiana Avenue.",
+          answer: "Berman did not start the clearance; it resolved the constitutional public-use question nationwide, so the blight tool Indianapolis was already using could not be struck down on Fifth Amendment grounds. It guaranteed the machine could not be stopped by that argument.",
+        },
+        {
+          prompt: "What is the method lesson from testing this link?",
+          answer: "Build the chronology before the argument; a weaker claim that survives a date check beats a stronger one that fails it; and when a favourite thesis partly breaks, report the break, because that is the finding, not a failure.",
+        },
+      ],
+    },
+    {
+      slug: "dc-powers-freeway-revolt",
+      title: "12 · Instrument four: the highway, and the revolt that stopped it",
+      section: "Section 3 · Powers",
+      body: `The fourth instrument is the one the Indiana Avenue course examined at length: the **alignment decision**, the choice of where to run an urban interstate. In Washington it produced both a clearance and, unusually for this series, a **victory**.
+
+**First, the clearance.** The Southwest renewal did not only build superblocks. It also built a **freeway**. The Southeast and Southwest Freeway was driven through the cleared quadrant, and it is counted among the outcomes of the Southwest project along with the relocation of Maine Avenue and the waterfront parks (Docomomo US, n.d.). **So in Southwest the highway and the renewal were the same operation.** The freeway that carries commuters over the old neighbourhood today is part of what replaced it. **Do not file DC under "the city that beat the highways" without this asterisk**: Southwest itself did not beat them.
+
+**Then, the plan for the rest of the city.** In the 1950s and 1960s planners proposed a complete freeway network threaded through the District, including the **North Central Freeway**, the **Northeast Freeway**, and the **Three Sisters Bridge** across the Potomac. As documented in the Indiana Avenue course through Deborah Archer's study, urban interstates were repeatedly routed through Black neighbourhoods, and these DC routes ran toward predominantly Black communities including Takoma and Brookland (Archer, 2020; Federal Highway Administration, n.d.).
+
+**Then, the revolt, which is the rare win.** A grassroots coalition, the **Emergency Committee on the Transportation Crisis (ECTC)**, fought the freeways through the 1960s and early 1970s. **Reginald Booker** chaired it and **Sammie Abbott** served as its strategist and spokesman (Federal Highway Administration, n.d.; Boundary Stones, 2018). Abbott's poster gave the movement, and this whole series, its sharpest phrase: **"White men's roads through black men's homes"** (Archer, 2020; Boundary Stones, 2018). The coalition combined direct action, including a sit-in at the Three Sisters Bridge construction site, with lawsuits and studies, and it promoted rail transit as the alternative.
+
+**What the revolt actually won, stated exactly.**
+- **The Three Sisters Bridge was defeated**, and most of the planned inner-city freeway network was never built (Boundary Stones, 2018).
+- The money and political energy shifted toward the **Metro** rail system, which the coalition had championed as the alternative.
+- The fight helped move national transportation policy away from an inflexible insistence on urban freeways (Federal Highway Administration, n.d.).
+
+**Now hold the victory honestly, because that is the discipline of this series.** The revolt saved Brookland, Takoma, Shaw, and other neighbourhoods from the roads that were still on the drawing board. **It did not save Southwest, because Southwest's freeway was built first, in the same operation that cleared the quadrant.** DC is genuinely a rare victory in this catalogue, alongside places like Chicano Park in San Diego, and the victory came for the neighbourhoods whose fight came late enough to win. **A win that arrives after your own block is gone is still a win for the next block, and both halves of that sentence are true.**
+
+## Sources
+- Archer, D. N. (2020). "White men's roads through Black men's homes": Advancing racial equity through highway reconstruction. *Vanderbilt Law Review, 73*(5). https://scholarship.law.vanderbilt.edu/vlr/vol73/iss5/1/
+- Boundary Stones (WETA). (2018, November 7). *No bridge for Three Sisters*. https://boundarystones.weta.org/2018/11/07/no-bridge-three-sisters
+- Docomomo US. (n.d.). *The Southwest urban renewal area in Washington, D.C.* https://docomomo-us.org/news/the-southwest-urban-renewal-area-in-washington-d-c
+- Federal Highway Administration. (n.d.). *The D.C. freeway revolt and the coming of Metro*. https://www.fhwa.dot.gov/highwayhistory/dcrevolt/`,
+      recallContent: [
+        {
+          prompt: "Why should DC not be filed simply as \"the city that beat the highways\"?",
+          answer: "Because the Southeast and Southwest Freeway was built through the cleared Southwest quadrant as part of the renewal itself. Southwest did not beat the highway; its freeway and its clearance were the same operation.",
+        },
+        {
+          prompt: "What was the ECTC, and who led it?",
+          answer: "The Emergency Committee on the Transportation Crisis, a grassroots coalition that fought DC's freeway plans in the 1960s and 1970s. Reginald Booker chaired it and Sammie Abbott was its strategist and spokesman.",
+        },
+        {
+          prompt: "What phrase did Sammie Abbott's poster give the movement?",
+          answer: "\"White men's roads through black men's homes,\" which is also the title of Deborah Archer's later study of highways and racial equity.",
+        },
+        {
+          prompt: "What did the freeway revolt actually win?",
+          answer: "It defeated the Three Sisters Bridge and most of the planned inner-city freeway network, shifted resources toward the Metro rail system, and helped move national transportation policy away from insisting on urban freeways.",
+        },
+        {
+          prompt: "How should the victory be held honestly?",
+          answer: "The revolt saved Brookland, Takoma, Shaw and others from roads still being planned, but it did not save Southwest, whose freeway was already built. A win that arrives after your own block is gone is still a win for the next block.",
+        },
+      ],
+    },
+    {
+      slug: "dc-powers-home-rule",
+      title: "13 · Instrument five: who was allowed to vote on any of it",
+      section: "Section 3 · Powers",
+      body: `The first four instruments take buildings and route roads. The fifth is quieter and, in Washington, it is the one no other city in this series can teach: **it is the question of who held the vote while all of this was done.**
+
+**The fact, stated first.** Through the entire period of the Southwest clearance, **the residents of Washington could not vote for the government that governed them.**
+- They had **no elected mayor or city council**; Congress legislated for the District directly, which is why the 1945 Redevelopment Act in lesson 8 is a federal statute.
+- Until 1961 they could not even vote for **President**. The **Twenty-third Amendment**, ratified in 1961, gave District residents presidential electors for the first time, and they first voted for President in 1964 (U.S. Const. amend. XXIII).
+- They had **no vote in Congress**, the very body writing their laws.
+
+**Read that against Section 3's other instruments.** The blight designation, the eminent-domain takings, the freeway alignment, and the redevelopment plan were all approved by, or under statutes passed by, a Congress in which **the 23,000 people of Southwest had not one representative who owed them a vote.** In every other city in this series the residents could at least, in principle, vote out the mayor or council who cleared them. **In Washington they could not, and that is not a footnote to the clearance; it is a condition of it.**
+
+**What changed, and how little.** The **District of Columbia Home Rule Act**, passed by Congress and signed December 24, 1973, and approved by District voters in 1974, restored an elected mayor and council (District of Columbia Home Rule Act, 1973; Smithsonian Magazine, 2023). But it was home rule with a leash:
+- **Congress kept the power to review and overturn the District's local laws**, and to intervene in its budget.
+- **District residents still have no voting representation in Congress.** Since 1971 they have had a single **nonvoting delegate** in the House (Congress.gov, n.d.).
+
+**Why this belongs in a course about a demolished neighbourhood.** Beat 5, next section, asks who governs this ground today, and the honest answer for Washington has a permanent asterisk that Indianapolis does not: **the ground is governed, in the last instance, by a Congress the governed cannot vote for.** The Zoning Commission you will meet in lesson 17 still, by law, seats federal members. **The instrument here is not a bulldozer. It is the franchise, or its absence**, and it is the deepest reason Southwest could be cleared so completely with so little a resident could do about it.
+
+**A caution about causation, kept in the spirit of lesson 11.** Do not overclaim. **Cities with full voting rights cleared Black neighbourhoods too**, as the Indiana Avenue course documented in a city whose residents could vote. The absence of the franchise did not, by itself, cause the Southwest clearance, and asserting that it did would be exactly the kind of tidy, unproven spine this series is built to resist. **What is true, and checkable, is narrower and still damning: the people of Southwest bore a clearance authorised by a legislature they had no vote in, and they had no ballot with which to answer it.** That is the claim the record supports.
+
+## Sources
+- District of Columbia Home Rule Act, Pub. L. No. 93-198, 87 Stat. 774 (1973). https://dccouncil.gov/dc-home-rule/
+- U.S. Const. amend. XXIII.
+- Congress.gov. (n.d.). *Governing the District of Columbia: Overview and timeline*. https://www.congress.gov/crs-product/IF12577
+- Smithsonian Magazine. (2023). *How the 1973 D.C. Home Rule Act enabled the nation's capital to govern itself, with congressional oversight*. https://www.smithsonianmag.com/history/how-the-1973-dc-home-rule-act-enabled-the-nations-capital-to-govern-itself-with-congressional-oversight-180987180/`,
+      recallContent: [
+        {
+          prompt: "During the Southwest clearance, what representation did Washington residents have?",
+          answer: "Almost none. They had no elected mayor or city council, no vote in Congress which legislated for the District directly, and until the Twenty-third Amendment in 1961 they could not even vote for President.",
+        },
+        {
+          prompt: "What did the Twenty-third Amendment do, and when did DC residents first use it?",
+          answer: "Ratified in 1961, it gave District residents presidential electors for the first time, and they first voted for President in 1964.",
+        },
+        {
+          prompt: "What did the 1973 Home Rule Act grant, and what did Congress keep?",
+          answer: "It restored an elected mayor and council, approved by DC voters in 1974. Congress kept the power to review and overturn the District's local laws and to intervene in its budget, and DC still has no voting representation in Congress, only a nonvoting House delegate since 1971.",
+        },
+        {
+          prompt: "Why does the franchise belong in a course about a demolished neighbourhood?",
+          answer: "Because beat 5 asks who governs this ground, and for Washington the answer has a permanent asterisk: the ground is governed in the last instance by a Congress the governed cannot vote for, and the Zoning Commission still seats federal members by law.",
+        },
+        {
+          prompt: "What is the honest, checkable claim about the franchise and the clearance, and what would be overclaiming?",
+          answer: "Checkable: the people of Southwest bore a clearance authorised by a legislature they had no vote in and had no ballot to answer it with. Overclaiming: that the lack of the franchise caused the clearance, since cities whose residents could vote cleared Black neighbourhoods too.",
+        },
+      ],
+    },
+    {
+      slug: "dc-quiz-powers",
+      title: "14 · Quiz: who decided, and what the Court said",
+      section: "Section 3 · Powers",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "This course defines an 'instrument' as:",
+            options: [
+              "A tool used in demolition",
+              "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document",
+              "Any historical cause",
+              "A newspaper account of a decision",
+            ],
+            correctIndex: 1,
+            explanation: "The last clause is what makes it researchable: if a power was used, a named record exists.",
+            sourceLessonSlug: "dc-powers-blight",
+          },
+          {
+            prompt: "Which statute authorised clearing Southwest, and what body did it create?",
+            options: [
+              "The Home Rule Act of 1973, which created the DC Council",
+              "The Federal-Aid Highway Act of 1956, which created the Bureau of Public Roads",
+              "The District of Columbia Redevelopment Act of 1945, which created the Redevelopment Land Agency",
+              "The Twenty-third Amendment, which created the Zoning Commission",
+            ],
+            correctIndex: 2,
+            explanation: "The 1945 Act (60 Stat. 790) created the RLA, which acquired land under a plan by the National Capital Planning Commission.",
+            sourceLessonSlug: "dc-powers-blight",
+          },
+          {
+            prompt: "Why was the statute that cleared Southwest passed by Congress, not a city council?",
+            options: [
+              "Because the District had no home rule and Congress legislated for the city directly",
+              "Because the project crossed state lines",
+              "Because the city council refused to act",
+              "Because the President ordered it",
+            ],
+            correctIndex: 0,
+            explanation: "Washington had no elected mayor or council in 1945, so the people of Southwest had no vote in the legislature that authorised the clearance.",
+            sourceLessonSlug: "dc-powers-blight",
+          },
+          {
+            prompt: "Who was the plaintiff in Berman v. Parker?",
+            options: [
+              "A displaced family from an alley dwelling",
+              "The Redevelopment Land Agency",
+              "A tenants' union",
+              "The owner of a department store at 712 Fourth Street, S.W., which was not a dwelling",
+            ],
+            correctIndex: 3,
+            explanation: "The challenger owned a going business, not a slum, and argued a non-slum property could not be taken to cure a slum. The case that authorised clearing homes turned on a store.",
+            sourceLessonSlug: "dc-powers-berman",
+          },
+          {
+            prompt: "Which phrase is from the Berman opinion?",
+            options: [
+              "\"The concept of the public welfare is broad and inclusive\"",
+              "\"Separate but equal has no place\"",
+              "\"With all deliberate speed\"",
+              "\"A living Constitution\"",
+            ],
+            correctIndex: 0,
+            explanation: "Justice Douglas wrote that public welfare is broad and inclusive, its values spiritual as well as physical, aesthetic as well as monetary.",
+            sourceLessonSlug: "dc-powers-berman",
+          },
+          {
+            prompt: "What was the actual holding that made the store owner lose?",
+            options: [
+              "That his building was proven to be a slum",
+              "That redevelopment may treat an area as a whole and need not be piecemeal, so an owner cannot defeat an area plan by pointing to his own lot",
+              "That department stores are never protected",
+              "That the Fifth Amendment does not apply in the District",
+            ],
+            correctIndex: 1,
+            explanation: "The Court also held the cleared land could be conveyed to a private developer, since the public end may be served as well through private enterprise.",
+            sourceLessonSlug: "dc-powers-berman",
+          },
+          {
+            prompt: "Which of these did Berman NOT decide?",
+            options: [
+              "That the area could be taken as a whole",
+              "That cleared land could go to a private redeveloper",
+              "How much any owner should be paid, or whether the plan was wise",
+              "That the legislature's judgment of public interest is well-nigh conclusive",
+            ],
+            correctIndex: 2,
+            explanation: "Compensation is litigated case by case, and the Court said it does not sit to judge whether a particular project is desirable.",
+            sourceLessonSlug: "dc-powers-berman",
+          },
+          {
+            prompt: "In a typical eminent-domain proceeding, what is normally in dispute?",
+            options: [
+              "Whether the taking will happen",
+              "The identity of the owner",
+              "Whether the statute is constitutional",
+              "The price",
+            ],
+            correctIndex: 3,
+            explanation: "Refusing an offer sends the matter to a court that sets compensation; it does not stop the project.",
+            sourceLessonSlug: "dc-powers-eminent-domain",
+          },
+          {
+            prompt: "How did Berman change the rule about giving condemned land to a private developer?",
+            options: [
+              "It held the public end may be served as well through private enterprise, making public taking followed by private rebuilding the doctrine",
+              "It banned the practice",
+              "It required a second vote of Congress each time",
+              "It left the question entirely to the states",
+            ],
+            correctIndex: 0,
+            explanation: "Before Berman it was arguable this was not a public use. After Berman it was the design of urban renewal.",
+            sourceLessonSlug: "dc-powers-eminent-domain",
+          },
+          {
+            prompt: "The Thursz study fills a blank Berman left. What blank?",
+            options: [
+              "Whether the taking was lawful",
+              "Whether the compensation actually made residents whole, especially the tenants who owned no building",
+              "Who designed the superblocks",
+              "When the freeway opened",
+            ],
+            correctIndex: 1,
+            explanation: "Berman decided lawfulness. Thursz measured outcomes: owners were paid for buildings, but most of Southwest were renters, and relocation raised their costs and scattered them.",
+            sourceLessonSlug: "dc-powers-eminent-domain",
+          },
+          {
+            prompt: "Where did the Berman standard eventually travel, in Kelo v. New London (2005)?",
+            options: [
+              "It was overruled entirely",
+              "It was limited to the District of Columbia",
+              "It allowed taking well-maintained, non-blighted homes for a private economic-development plan",
+              "It applied only to farmland",
+            ],
+            correctIndex: 2,
+            explanation: "Kelo cited Berman and Midkiff; the tool that began as slum clearance had reached sound houses taken for economic growth. O'Connor dissented.",
+            sourceLessonSlug: "dc-powers-travels",
+          },
+          {
+            prompt: "Why does the claim that Berman \"caused\" Indiana Avenue's clearance fail the chronology test?",
+            options: [
+              "Because Indiana Avenue was never cleared",
+              "Because Berman was decided in 1970",
+              "Because Indianapolis is not in the United States",
+              "Because Indiana had its own 1945 blight statute and began demolition in 1948, before Berman was decided in November 1954",
+            ],
+            correctIndex: 3,
+            explanation: "A cause cannot postdate effects already under way. The accurate, weaker claim is that Berman made the tool Indianapolis was already using safe from a Fifth Amendment challenge.",
+            sourceLessonSlug: "dc-powers-travels",
+          },
+          {
+            prompt: "Why should DC not be filed simply as the city that beat the highways?",
+            options: [
+              "Because the Southeast and Southwest Freeway was built through the cleared Southwest quadrant as part of the renewal",
+              "Because no freeways were ever proposed",
+              "Because the revolt failed completely",
+              "Because Metro was never built",
+            ],
+            correctIndex: 0,
+            explanation: "Southwest's freeway and its clearance were the same operation. The revolt saved other neighbourhoods, not Southwest.",
+            sourceLessonSlug: "dc-powers-freeway-revolt",
+          },
+          {
+            prompt: "What did the Emergency Committee on the Transportation Crisis achieve?",
+            options: [
+              "It built the North Central Freeway",
+              "It defeated the Three Sisters Bridge and most of the inner-city freeway network and shifted resources toward Metro",
+              "It repealed the Home Rule Act",
+              "It designed the superblocks",
+            ],
+            correctIndex: 1,
+            explanation: "Reginald Booker chaired it and Sammie Abbott, whose poster read \"white men's roads through black men's homes,\" was its spokesman.",
+            sourceLessonSlug: "dc-powers-freeway-revolt",
+          },
+          {
+            prompt: "What is the honest, checkable claim about the franchise and the Southwest clearance?",
+            options: [
+              "The lack of the vote single-handedly caused the clearance",
+              "DC residents controlled Congress",
+              "The people of Southwest bore a clearance authorised by a legislature they had no vote in, and had no ballot to answer it with",
+              "The clearance restored voting rights",
+            ],
+            correctIndex: 2,
+            explanation: "Overclaiming that the lack of a vote caused the clearance would fail, since cities whose residents could vote cleared Black neighbourhoods too. The narrower claim is checkable and still damning.",
+            sourceLessonSlug: "dc-powers-home-rule",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
