@@ -343,6 +343,9 @@ None of these exceptions apply to the situation this course is about: living in 
       title: "10 · Check your understanding",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "As a U.S. citizen, does moving abroad generally stop your Social Security payments?",

@@ -317,6 +317,9 @@ Several concrete checks back that up:
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How many U.S. district courts and courts of appeals make up the federal trial and first-appeal system?",

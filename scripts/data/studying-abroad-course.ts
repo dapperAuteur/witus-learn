@@ -371,6 +371,9 @@ Whichever program you choose, your campus study-abroad office (not a third-party
       title: "10 · Check your understanding",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What mainly distinguishes an exchange program from direct enrollment?",

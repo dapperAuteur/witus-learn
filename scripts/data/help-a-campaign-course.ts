@@ -427,6 +427,9 @@ The throughline of this whole course: **the skills are universal; the rules are 
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Which of these is a way an ordinary person can help a campaign without running for office?",

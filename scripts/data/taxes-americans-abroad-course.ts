@@ -336,6 +336,9 @@ This lesson is about a **completely separate obligation** that trips people up c
       title: "10 · Check your understanding",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How does the U.S. decide whether to tax a citizen's or green card holder's income, even if they've lived abroad for years?",

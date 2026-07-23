@@ -288,6 +288,9 @@ This closes the loop on the whole course: plan ahead (Lessons 1-8), stay safe an
       title: "11 · Check your understanding",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "According to the State Department's own International Travel Checklist, which of these is one of its five recommended steps?",
