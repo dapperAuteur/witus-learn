@@ -77,7 +77,7 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 
 **The shape and the surface.** A **2.5-mile rectangular oval**. The first surface was crushed rock and tar and proved dangerous, so in **September 1909** the oval was repaved with **3.2 million ten-pound paving bricks**, laid in **63 days**, which is where the nickname the Brickyard comes from (Encyclopedia of Indianapolis, n.d.-a; Indianapolis Motor Speedway, n.d.-a).
 
-**The race.** The first **500-mile race was run in 1911** (Encyclopedia of Indianapolis, n.d.-a). It has been run at this track ever since, with interruptions for two world wars.
+**The race.** The first **500-mile race was run in 1911** (Encyclopedia of Indianapolis, n.d.-a). It has been run at this track ever since, with interruptions: the same entry records that the track "deteriorated dreadfully during **four years of total inactivity during World War II**" (Encyclopedia of Indianapolis, n.d.-a).
 
 ## Track two: the Indiana State Fairgrounds mile
 
@@ -222,9 +222,11 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 
 **George Mack qualified for the 2002 race**, the 86th running, on his last attempt on Bump Day at a four-lap average of **227.150 miles per hour**, and **finished 17th** (RACER, 2021).
 
-**Now the number, and it is the most important number in this course.** **The first 500-mile race was run in 1911. The first Black driver started one in 1991.** That is **eighty years**, and because the race was not held during two world wars, it is **seventy-five runnings** (Encyclopedia of Indianapolis, n.d.-a; Motorsport Magazine, n.d.).
+**Now the number, and it is the most important number in this course.** **The first 500-mile race was run in 1911. The first Black driver started one in 1991.** That is **eighty calendar years**, and the 1991 race was the **75th running** (Encyclopedia of Indianapolis, n.d.-a; Motorsport Magazine, n.d.).
 
-**Do not round that off into a slogan.** Eighty years is a measurement, and like every measurement in this course it has a definition attached: it counts **starters in the 500-mile race at this track**, not entries attempted, not licences held, not other events at other tracks. **Say what you counted.** Section 3 is about what filled those eighty years, and it is not a rule.
+**Do the subtraction yourself, because it teaches something.** Eighty calendar years and seventy-five runnings means **the race was not held in six of them.** The Encyclopedia of Indianapolis accounts for four, recording that the track "deteriorated dreadfully during four years of total inactivity during World War II" (Encyclopedia of Indianapolis, n.d.-a). **This course has not confirmed the other missing years, and you should look them up before you cite them.** A number that does not reconcile is a question, not an error.
+
+**And do not round the eighty off into a slogan.** It is a measurement, and like every measurement in this course it has a definition attached: it counts **starters in the 500-mile race at this track**, not entries attempted, not licences held, not other events at other tracks. **Say what you counted.** Section 3 is about what filled those eighty years, and it is not a rule.
 
 ## Sources
 - African Americans in Motorsports. (n.d.). *Joie Ray*. https://aaim1.com/african-american-racing-history-joie-ray
@@ -256,7 +258,7 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
         },
         {
           prompt: "Give the headline number, and its definition.",
-          answer: "Eighty years and seventy-five runnings between the first 500-mile race in 1911 and Willy T. Ribbs starting the 1991 race. The definition counts starters in the 500-mile race at this track, not entries attempted or licences held.",
+          answer: "Eighty calendar years between the first 500-mile race in 1911 and Willy T. Ribbs starting the 1991 race, which was the 75th running. The definition counts starters in the 500-mile race at this track, not entries attempted or licences held. The six missing years are a question: the Encyclopedia accounts for four as total inactivity during the Second World War, and this course has not confirmed the rest.",
         },
       ],
     },
@@ -934,7 +936,7 @@ Work down this list and notice that **every line is a real acquisition somebody 
 
 The Encyclopedia attributes the end of the Sweepstakes to **Depression finances combined with the 1936 accident** (Encyclopedia of Indianapolis, n.d.-c). **Both halves matter, and neither is a moral.**
 
-**An enterprise running on rented ground, second-hand machinery and gate receipts has no reserve.** One catastrophic race, in the middle of the worst economic contraction in American history, is enough. **The 500-mile race also missed years, in 1917 and 1918 and again from 1942 to 1945, and it came back, because it had a plant, an owner and a balance sheet.** The difference in survival is a difference in capital structure, and it is measurable.
+**An enterprise running on rented ground, second-hand machinery and gate receipts has no reserve.** One catastrophic race, in the middle of the worst economic contraction in American history, is enough. **The 500-mile race missed years too**, including what the Encyclopedia of Indianapolis calls "four years of total inactivity during World War II," during which the track "deteriorated dreadfully" (Encyclopedia of Indianapolis, n.d.-a). **It came back, because it had a plant, an owner and a balance sheet.** The difference in survival is a difference in capital structure, and it is measurable.
 
 ## The rule to carry out of Section 3
 
@@ -943,6 +945,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 **And credit the builders.** Seven men incorporated a racing association in 1924. A mechanic built a car in the shop where he worked and won with it four times. A national newspaper named the race and carried it to eight states. **None of that is consolation. All of it is construction**, and a course that files it under loss has misread its own evidence.
 
 ## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Indianapolis Motor Speedway*. https://indyencyclopedia.org/indianapolis-motor-speedway/
 - Encyclopedia of Indianapolis. (n.d.-c). *Gold and Glory Sweepstakes*. https://indyencyclopedia.org/gold-and-glory-sweepstakes/
 - Encyclopedia of Indianapolis. (n.d.-d). *Charles Edwin "Charlie" Wiggins*. https://indyencyclopedia.org/charles-edwin-charlie-wiggins/
 - Indianapolis Motor Speedway. (n.d.-a). *About the track*. https://www.indianapolismotorspeedway.com/history/about-the-track
@@ -966,7 +969,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
         },
         {
           prompt: "Why did the Sweepstakes end and the Indianapolis 500 survive its own interruptions?",
-          answer: "The Sweepstakes ran on rented ground, second-hand machinery and gate receipts with no reserve, so Depression finances plus the 1936 crash finished it. The 500 missed 1917-1918 and 1942-1945 and returned because it had a plant, an owner and a balance sheet. The difference in survival is a difference in capital structure.",
+          answer: "The Sweepstakes ran on rented ground, second-hand machinery and gate receipts with no reserve, so Depression finances plus the 1936 crash finished it. The 500 also missed years, including four of total inactivity during the Second World War in which the track deteriorated dreadfully, and it returned because it had a plant, an owner and a balance sheet. The difference in survival is a difference in capital structure.",
         },
         {
           prompt: "State the rule about parallel institutions.",
@@ -1615,7 +1618,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
             prompt: "That was ___ years after the first 500-mile race in 1911.",
             answer: "eighty",
             accept: ["80", "80 years", "eighty years"],
-            explanation: "Eighty years and seventy-five runnings, since the race was not held during two world wars.",
+            explanation: "Eighty calendar years, and the 1991 race was the 75th running. The six missing years are a question this course leaves open, having confirmed only the four of wartime inactivity the Encyclopedia records.",
           },
           {
             prompt: "Indiana Code chapter 36-7-14 is titled 'Redevelopment of Areas ___ Redevelopment Generally'.",
