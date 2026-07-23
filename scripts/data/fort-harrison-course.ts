@@ -1797,6 +1797,178 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Write  (beat 6: ELA and creative nonfiction, grounded in the place)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "fh-write-assignment",
+      title: "18 · Your assignment: write one decision",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `Beat 6 asks the question no other beat can: **what can only be said about this place?** Answering it is a writing problem, and this assignment is a real one.
+
+## The assignment
+Write **900 to 1,300 words** of creative nonfiction about **one decision, one building, or one boundary** on or around this former post. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is the one Section 3 used.**
+
+## Step 1 · Choose one thing, and choose small
+**"Fort Harrison" is not a subject. It is a topic.** These are subjects:
+- **One building type.** The six enlisted barracks built from Office of the Quartermaster General plan 75-G, and what a stock plan number lets you find.
+- **One boundary.** The line where the historic district stops, or the line where the state park begins, or the 1970 city limit.
+- **One decision.** The August 1992 National Park Service determination that this land was not suitable as a national park and should be held by state or local government.
+- **One document.** The 1 July 1991 recommendation, read clause by clause.
+- **One silence.** What the National Register nomination does not say, and what would fill it.
+- **One worker.** Lester Cain, named in *The Fort Ben Banner* on 30 April 1938 as having the best workers and most outstanding detail in the company, and what can and cannot be established about him.
+
+**Smaller is better, every time.**
+
+If you do not live in Indianapolis and cannot visit, that is not a disqualification. **It is a constraint you disclose in the piece**, and it changes what you may honestly claim.
+
+## Step 2 · Build the four-column table before you write a sentence
+Columns: **date, event, instrument, source.** If the instrument column is empty, **you have a story and not yet a decision.** The table is the outline. Section 3 is a worked example of exactly this table.
+
+## Step 3 · Decide what kind of piece this is
+Pick one and commit, because mixing them makes place writing mushy.
+- **A biography of a building.** Its plan number, its uses, its alterations, its survival or its demolition.
+- **A history of a decision.** One vote, one determination, one lease, one ordinance, followed to the document.
+- **A report on a present.** Who owns and governs this ground now, what is being planned, what a public meeting sounded like.
+- **A piece about the record itself.** What you could and could not find, and what the gap means.
+
+**The fourth is the hardest and often the best**, and on this site it is unusually available: lesson 3 handed you a documented, specific, unresolved question about segregation at this post, and named the archives that would answer it.
+
+## Step 4 · Write it, under these craft rules
+1. **Lead with a specific.** A plan number, a date on a recommendation, an acreage with an owner. Not a mood.
+2. **Name the instrument every time you name a change.** "The base closed" is weak. "An independent commission recommended closure to the President on 1 July 1991 under the Defense Base Closure and Realignment Act of 1990, and Congress could reject the package only in its entirety" is strong, and it is sourced.
+3. **Give a figure its owner.** Not "the fort covered 2,417 acres" but "the HABS documentation gives 2,417 acres, combining a 1903 to 1904 purchase of 1,994 with 423 acres added by 1908; the Encyclopedia of Indianapolis gives 1,994."
+4. **Report a disagreement as a disagreement.** This course found six worth keeping: the establishment year, the acreage, the prisoner of war camp dates, the CCC company number, the Finance Center's length, and whether the Army approved or objected to the 1970 annexation. **You may resolve one if you do the work. You may not quietly pick.**
+5. **Distinguish a claim about a document from a claim about the world.** "The nomination does not mention race" is the first and is true. "There was no segregation here" is the second and is unsupported.
+6. **Use the present tense for the present.** This is a working state park, a working redevelopment district and a working federal office building, not a ruin.
+7. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+1. **No invented detail.** Not a date, a name, a quotation, a unit designation, a street number or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the barracks smelled like in 1918.
+2. **No composite or imagined characters, and no invented dialogue**, including "he might have said." The real record already gives you Russell B. Harrison, Earl J. Schoen, Lester Cain, Mayor Morris Settles, Mayor Thomas Schneider, subcommittee chairman Robert Baker and Governor Evan Bayh. **That is more than enough material.**
+3. **Military history gets no adventure framing.** The men who trained here went to two wars and many did not come back. **Veterans and their descendants are living**, and some of them are in Lawrence right now. Write about training, supply, money and land, which is what this post actually did, and do not borrow drama the record does not supply.
+4. **The prisoners of war were people.** Italian and German prisoners were held and worked here. Write them as documented labour under confinement, not as colour.
+5. **The segregation material is handled at the standard of lesson 3 or not at all.** Two documented items about this post and an honest list of what is missing. **Do not import a paragraph about the segregated wartime Army and let a reader think it describes this ground.** If you want to write about segregation here, **go to the archives lesson 3 named**, and then you will have something new.
+6. **Private homes are private.** Much of the former post is now housing. Do not publish a current resident's name with their address.
+7. **Say what you did to a number.** If you converted acreage, adjusted for inflation, or combined figures from two sources, say so and say how.
+8. **Credit the labour.** The forest people admire today was cut, cleared and drained in part by a segregated CCC company whose members were not free to serve in an integrated one. **A piece that praises the park without naming who worked it is an incomplete report.**
+
+## What good looks like
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** Eighteen officers' houses drawn from three government plans; a commission that closed a base and in the same paragraph told the Secretary of Defense he had misapplied his own criterion; a forest that survived because nobody had to pay tax on it: **none of that needs decorating.**
+
+## Sources
+- Fife, C. B., & Salmon, T. W., II. (n.d.). *Fort Benjamin Harrison* (HABS No. IN-289) [Written historical and descriptive data]. Historic American Buildings Survey, National Park Service. https://tile.loc.gov/storage-services/master/pnp/habshaer/in/in0400/in0407/data/in0407data.pdf
+- Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
+- McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text`,
+      recallContent: [
+        {
+          prompt: "What is the difference between a topic and a subject in this assignment?",
+          answer: "'Fort Harrison' is a topic. 'The six enlisted barracks built from Office of the Quartermaster General plan 75-G' or 'the August 1992 National Park Service determination' is a subject. Smaller is better every time.",
+        },
+        {
+          prompt: "Name the six documented disagreements this course found.",
+          answer: "The establishment year, the acreage and price, the prisoner of war camp dates, the CCC company number, the Finance Center's length, and whether the Army approved or objected to the 1970 annexation.",
+        },
+        {
+          prompt: "Give the difference between a claim about a document and a claim about the world, using this course's example.",
+          answer: "'The National Register nomination does not mention race' is about the document and is true. 'There was no segregation here' is about the world and is unsupported by anything read for this course.",
+        },
+        {
+          prompt: "How must the segregation material be handled in a submission?",
+          answer: "At the standard of lesson 3 or not at all: the two documented items specific to this post plus an honest list of what is missing. Do not import a paragraph about the segregated wartime Army and let a reader think it describes this ground.",
+        },
+        {
+          prompt: "Why does the assignment ban adventure framing for military history?",
+          answer: "Because the men who trained here went to two wars and many did not return, veterans and their descendants are living, and the post's actual work was training, supply, money and land. Do not borrow drama the record does not supply.",
+        },
+        {
+          prompt: "Which paragraph is required in every submission?",
+          answer: "At least one paragraph on what you could not establish.",
+        },
+      ],
+    },
+    {
+      slug: "fh-what-comes-next",
+      title: "19 · What this course set up, and what it left out",
+      section: "Section 6 · Write",
+      body: `You have run the six-beat site template on a piece of ground whose owner was the federal government. **That is the product of this course, more than the Fort Harrison material is.**
+
+| Beat | What you did here | What you can now do anywhere |
+|---|---|---|
+| **1. Then** | Read a post's history out of a HABS narrative, a National Register nomination, a state marker and an encyclopaedia, and found them disagreeing | Establish what a place was from institutional sources, and report a disagreement rather than smoothing it |
+| **2. Built** | Read rank off ornament, and read a district's coherence out of stock plan numbers | Tell what kind of building a building is, and what a federal listing does and does not do |
+| **3. Powers** | Learned four instruments specific to federal land, each with a body, a statute and a document | Ask who decided, under what authority, on what record, about any federal installation in the country |
+| **4. Now** | Built an observation brief before seeing the place | Look at a site with questions instead of impressions |
+| **5. Next** | Counted the landlords, found the overlapping jurisdictions, and refused to guess at the zoning body | Participate in a live decision rather than commenting on a finished one |
+| **6. Write** | Wrote grounded nonfiction under an evidence standard | Publish something the next researcher can build on |
+
+**What you can do that you could not do before.**
+- Explain why federal land pays no property tax, and name the two programmes that partly compensate for it.
+- Explain the one design feature that makes base closure politically possible, and recognise the same architecture in other policy.
+- Distinguish a **public benefit conveyance** from a sale at fair market value, and say who decides between them.
+- Recognise that a **National Register listing on federal land** triggers Section 106 consultation rather than a demolition veto, and that the HABS record you read is itself a product of that process.
+- Say why the largest tract of forest in central Indiana exists, in one sentence about taxation.
+- Report the limits of a record instead of filling them.
+
+## The two threads this course carried alone
+
+**The federal government as a city-shaper.** Course 1 showed a corridor taken by a city commission and a state university. This course showed the opposite instrument set: an owner that **removed land from the tax rolls for ninety years, employed more people than anyone else in the city, provided its own water, power, hospital and jail, and then left in a process nobody local could vote on.** **Both are answers to "who decided."** Neither is available without reading the statutes.
+
+**Segregation on federal land.** Lesson 3 verified two things and reported the rest as missing. **That is the outcome the brief asked for and it is not a consolation prize.** A course that had written a confident paragraph from national policy would have been more satisfying to read and would have taught the opposite habit.
+
+## What this course deliberately did not cover, and why
+
+- **Combat history.** Units trained here and fought elsewhere. **Their campaigns belong to their own histories**, and this course is about ground.
+- **The Benjamin Harrison presidency**, which is course 5 of this cluster and where a president's actual record on federal protection of Black voting rights belongs.
+- **Unigov as a governing change**, which is courses 2 and 4. This course touched it only where the 1970 annexation required it.
+- **The jurisdictional status of this post.** Exclusive, concurrent, partial or proprietary: **not read, not asserted.**
+- **Whether the school district serving this post ever received Impact Aid Section 7002 payments.** **Not read, not asserted**, and easily findable.
+- **A total for what the closure cost the local economy.** The two figures in circulation come from a Defense Department news outlet and an encyclopaedia entry, and they count different things. **This course will not manufacture a third.**
+
+## The unopened sources, which are the next real work
+
+- **CCC company rosters and camp inspection reports** in the National Archives, which would settle the 3350 versus 3550 question and tell you who the men were.
+- **The 1917 Officer Training Camp rosters**, which would answer whether Black candidates were present at, excluded from, or routed away from this post.
+- **Stephen E. Bower's Army command history of the post**, quoted throughout this course only at second hand through the HABS documentation and Hankins.
+- **The Fort Harrison Transition Task Force records** and the **Robert Baker collection** in the Fort Harrison State Park archive, which Hankins used and which contain the minutes of the meetings where this land's future was decided.
+- **The Army's Environmental Impact Statement for disposal and reuse (1995)**, and the interim lease itself.
+- **The Indianapolis Recorder** across the whole period, for the Black civilian workforce and the city's reading of this post.
+- **The Lawrence annexation ordinance of 1970** and the Army's correspondence about it.
+
+**All public or requestable. None of them read here.** If you want to make an original contribution to this story rather than restate it, that is the list.
+
+**One last thing about the ground.** A thousand acres of hardwood forest sit inside a metropolitan county of a million people, and almost a million visits a year happen on them. **They exist because the United States Army needed empty land, paid no property tax on it, and would not let anyone in.** Some of that forest was shaped by a work company of Black men who were assigned to it because they could not be assigned anywhere else. **Nobody planned any of this, and all of it is documented.** **That is the whole method, and it is why this course exists.**
+
+## Sources
+- Fife, C. B., & Salmon, T. W., II. (n.d.). *Fort Benjamin Harrison* (HABS No. IN-289) [Written historical and descriptive data]. Historic American Buildings Survey, National Park Service. https://tile.loc.gov/storage-services/master/pnp/habshaer/in/in0400/in0407/data/in0407data.pdf
+- Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
+- Indiana Department of Natural Resources. (n.d.). *Fort Harrison State Park*. https://www.in.gov/dnr/state-parks/parks-lakes/fort-harrison-state-park/
+- McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text
+- U.S. Department of Education. (n.d.). *Impact Aid Section 7002: Payments for federal property*. https://www.ed.gov/grants-and-programs/formula-grants/impact-aid/impact-aid-section-7002--payments-for-federal-property`,
+      recallContent: [
+        {
+          prompt: "What is the actual product of this course?",
+          answer: "The six-beat site template run on ground whose owner was the federal government: Then, Built, Powers, Now, Next, Write. The Fort Harrison material is the worked example.",
+        },
+        {
+          prompt: "In one sentence about taxation, why does the largest tract of forest in central Indiana exist?",
+          answer: "Because for ninety years it was owned by an entity that paid no property tax on it, needed it undeveloped for training, and restricted access to it, so it faced none of the pressure to subdivide that a private owner would have faced.",
+        },
+        {
+          prompt: "How does this course's instrument set differ from course 1's?",
+          answer: "Course 1 showed a corridor taken by a city redevelopment commission and a state university using blight designation and eminent domain. This course showed a federal owner that removed land from the tax rolls, employed more people than anyone else in the city, and then left through a process no local voter could reach.",
+        },
+        {
+          prompt: "Name four things this course deliberately did not assert.",
+          answer: "The post's jurisdictional status; whether the local school district ever received Impact Aid Section 7002 payments; a total economic cost of the closure; and any account of segregation here beyond the two documented items in lesson 3.",
+        },
+        {
+          prompt: "Name four of the unopened sources that would advance this story.",
+          answer: "CCC company rosters and camp inspection reports; the 1917 Officer Training Camp rosters; Bower's Army command history of the post; the Fort Harrison Transition Task Force records and the Robert Baker collection; the 1995 Environmental Impact Statement and interim lease; the Indianapolis Recorder; and the 1970 annexation ordinance.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
