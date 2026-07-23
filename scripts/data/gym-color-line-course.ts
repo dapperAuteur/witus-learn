@@ -1031,6 +1031,312 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
         },
       ],
     },
+    {
+      slug: "gcl-powers-test-the-spine",
+      title: "13 · Testing the same argument against a different chronology",
+      section: "Section 3 · Powers",
+      body: `**Course 1 ended by killing an argument with a table. This lesson runs the identical test on the identical argument, and gets the opposite result.** That is not an inconsistency. **It is the reason tests are worth running.**
+
+**The argument, exactly as it was proposed for this whole cluster.** Indianapolis offers a single, dated, city-scale decision that ties the Black cultural district, the schools, the suburbs and the tax base together: the **1969 Unigov consolidation**, effective **1 January 1970**. A learner can stand at two ends of one decision.
+
+**Course 1's verdict on that argument: FAILS.** Every documented instrument that took Indiana Avenue's buildings was already running before Unigov existed. The 1945 blight identification, the 1948 demolition, the 1954 and 1956 designations, the 1957 freeway announcement, the 1958 campus plan, the 1964 to 1966 parcel purchases. **A cause cannot postdate its effect.**
+
+**This lesson asks the same question about schools.**
+
+## The chronology
+
+| Date | Event | Source |
+|---|---|---|
+| **1869** | Indiana provides for the education of Black children, organised into separate schools | 1971 opinion, pp. 661-662 |
+| **1874** | *Cory v. Carter*: Black children not entitled to admission to the common schools for white students | 1971 opinion, p. 662 |
+| **22 December 1922** | Board resolution authorising a "Colored High School," on a Chamber of Commerce petition | 1971 opinion, p. 663 |
+| **September 1927** | Attucks opens; all Black high school students compelled to attend regardless of residence | 1971 opinion, p. 663 |
+| **1931** | The coterminous rule (civil city boundary equals school city boundary) recognised by statute | 1974 opinion, p. 71 |
+| **1935** | Transportation required for Black students travelling farther "by reason of its segregation policies" | 1971 opinion, p. 663 |
+| **15 August 1942** | IHSAA admits Black, parochial, private and institutional schools | IHSAA, n.d.-b |
+| **1949** | Chapter 186 declares segregated schools and school districts abolished | 1971 opinion, pp. 674-675 |
+| **1954 to 1971** | Approximately **350** boundary changes, **more than 90 percent** promoting segregation | 1971 opinion, p. 668 |
+| **1961** | For **Marion County only**, civil annexation becomes a mere prima facie school annexation, subject to remonstrance | 1971 opinion, p. 676 |
+| **31 May 1968** | The United States sues IPS | Encyclopedia of Indianapolis, n.d.-e |
+| **1968-69** | Crispus Attucks is **99.8 percent** Black; township districts about **2.6 percent** Black in 1969 | 1971 opinion, p. 668; Chalkbeat Indiana, 2016 |
+| **1969** | A further act limits IPS expansion; the Unigov statute passes, expressly leaving the school district unaffected | 1971 opinion, pp. 676-677; 1974 opinion, p. 71 |
+| **1 January 1970** | **Unigov takes effect** | Wachter, 2014 |
+| **18 August 1971** | Dillin finds de jure segregation in IPS | 1971 opinion |
+| **25 July 1974** | *Milliken v. Bradley* | Milliken, 1974 |
+| **21 August 1974** | Seventh Circuit: reverse beyond Uni-Gov, vacate and remand within it | 1974 opinion, p. 84 |
+| **1 August 1975** | Dillin: Unigov, by not extending IPS boundaries when it extended the city's, inhibited desegregation | Encyclopedia of Indianapolis, n.d.-e |
+| **11 July 1978** | Dillin: the discriminatory intent behind that restriction is "perfectly obvious" | Encyclopedia of Indianapolis, n.d.-e |
+| **1981 to 2016** | Inter-district busing runs | Encyclopedia of Indianapolis, n.d.-e |
+
+## Run the test, effect by effect
+
+**Effect 1: Attucks was a segregated school.** Cause proposed: Unigov. **Attucks opened in 1927, forty-three years earlier. FAILS.**
+
+**Effect 2: IPS was internally segregated.** Cause proposed: Unigov. **The boundary changes run from 1954, and the 1961 act is nine years earlier. FAILS.**
+
+**Effect 3: the metro pattern of a Black city district ringed by white township districts.** Cause proposed: Unigov. **In 1969, before Unigov took effect, the townships were about 2.6 percent Black and IPS was more than one third Black. The pattern already existed. FAILS as a cause.**
+
+**Effect 4: that pattern became a permanent jurisdictional fact instead of a temporary one.** Cause proposed: Unigov. **HOLDS, and this is where it pays.**
+
+**Effect 5: the shape, limit and eventual expiry of the federal remedy.** Cause proposed: Unigov. **HOLDS COMPLETELY.** Every ruling from August 1974 to 1981 turns on the Uni-Gov line: what is inside it, what is outside it, and whether drawing it was itself the discriminatory act. A federal judge said so in 1975 and again, under a stricter intent standard, in 1978.
+
+## The claim that survives, stated as precisely as the record allows
+
+**Unigov did not segregate the Indianapolis schools. It made an existing segregation permanent, at the one moment when Indiana's own default rule would have dissolved it.**
+
+**That sentence has a counterfactual in it, and the counterfactual is a statute rather than a guess.** Under the Indiana common law rule recognised by statute in 1931, a civil annexation carried school annexation with it automatically. **Unigov was the largest civil annexation in the state's history.** Under the old rule, the school district would have grown to the county with the city. The 1961 act, for Marion County alone, made school annexation stoppable. The 1969 acts made it, in Dillin's words, "virtually nil." **And then the city grew anyway, without its schools.**
+
+**So the honest formulation is not weaker than the one proposed. It is sharper**, and it survives every date in the table above.
+
+## Same test, opposite answer, and that is the lesson
+
+**Course 1 ran this test and reported a failure. This course runs it and reports a hold.** If the test had returned "confirmed" both times, it would not be a test. It would be a ritual. **A method you only ever use to agree with yourself is not a method.**
+
+**And notice what the two results together produce.** Not "Unigov ruined Indianapolis," which is false, and not "Unigov did nothing," which is also false, but a specific division of labour between instruments: **designation, eminent domain and land assembly took the buildings; the attendance zone, the district line and a statutory carve-out took the children.** Different tools, different bodies, different records, one metro.
+
+## Three corrections this course makes to claims in circulation
+
+**Correction 1. It is "approximately 350," not 360, and the periods differ.** The 1971 opinion says: "there have been approximately 350 boundary changes in the system since 1954. More than 90% of these promoted segregation" (1971, p. 668). The Encyclopedia of Indianapolis says school leaders "shifted the schools' boundary lines 360 times" between 1949 and 1968 (Encyclopedia of Indianapolis, n.d.-e). **Two different counts over two different periods.** Neither is dishonest. **Quote the opinion, give the page, and give the period, and the problem disappears.**
+
+**Correction 2. The Seventh Circuit did NOT hold that Unigov fostered segregation.** In August 1974 that court **reversed** the remedy beyond the Uni-Gov boundaries and **vacated and remanded** the question inside them. **The finding that Unigov inhibited desegregation is Judge Dillin's, on remand, on 1 August 1975**, and the finding of discriminatory **intent** is Dillin's, on **11 July 1978**, made only after the Supreme Court sent the case back in January 1977 because effect alone was no longer enough. **Attributing a trial court's finding to an appellate court, or a 1978 intent finding to a 1974 opinion, is not a rounding error.** It is the difference between a holding and a fact-finding, and between two different legal standards.
+
+**Correction 3. The plan that produced this course cluster said "Judge Dillin's 1971 ruling found Unigov fostered segregation." That is the right judge and the wrong year.** The 1971 opinion is careful and hedged, and it is about the **1961 and 1969 annexation acts**, not the Unigov statute: their effect "**may well have been** to retard desegregation and to promote segregation" (1971, p. 677). **"May well have been" is not a finding.** The finding arrived four years later and the intent finding seven years after that. **This course reports the correction rather than quietly using the stronger version**, which is the entire point of lesson 13 in both courses.
+
+## What would settle what is still open
+
+**None of the following has been read into this course.** They are public or requestable, and they are the next real work:
+- **The Board of School Commissioners' own minutes, 1954 to 1971**, which are where the roughly 350 boundary changes actually live, one agenda item at a time.
+- **The Indiana General Assembly's committee record for the 1961 act and for the 1969 Unigov bill**, which would show who asked for the Marion County carve-out.
+- **The township school boards' minutes**, which are where the remonstrances would appear.
+- **The Indianapolis Recorder, 1968 to 1981**, which covered this case for the community it was about.
+- **The 1989 National Register nomination for Crispus Attucks High School** and the **Sanborn fire insurance maps**, which would settle what actually stood on the 8.4 acres.
+
+**A course that names its unopened sources is telling you where its own edge is.** Section 5 sends you past that edge on purpose.
+
+## Sources
+- Chalkbeat Indiana. (2016, August 3). *How racial bias helped turn Indianapolis into one city with 11 school districts*. https://www.chalkbeat.org/indiana/2016/8/3/21098810/how-racial-bias-helped-turn-indianapolis-into-one-city-with-11-school-districts/
+- Encyclopedia of Indianapolis. (n.d.-e). *U.S. v. Board of School Commissioners*. https://indyencyclopedia.org/u-s-v-board-of-school-commissioners/
+- Indiana High School Athletic Association. (n.d.-b). *Membership history, 1903 to present*. https://www.ihsaa.org/sites/default/files/documents/Membership%20History.pdf
+- Milliken v. Bradley, 418 U.S. 717 (1974). https://caselaw.findlaw.com/court/us-supreme-court/418/717.html
+- United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/
+- United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). https://www.courtlistener.com/opinion/321692/united-states-of-america-donny-brurell-buckley-intervening-v-board-of/
+- Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
+      recallContent: [
+        {
+          prompt: "Why does the Unigov argument fail in course 1 and hold in this one?",
+          answer: "Because the test is chronological. Every instrument that took Indiana Avenue's buildings predates 1 January 1970, so Unigov cannot have caused them. The shape and limit of the school remedy, from 1974 to 2016, all postdate Unigov and turn on its boundary.",
+        },
+        {
+          prompt: "State the surviving claim about Unigov and schools as precisely as the record allows.",
+          answer: "Unigov did not segregate the schools. It made an existing segregation permanent at the one moment Indiana's own default rule would have dissolved it, because under the rule recognised by statute in 1931 a civil annexation carried school annexation automatically, and Unigov was the largest civil annexation in the state's history.",
+        },
+        {
+          prompt: "Which three effects fail the test, and why?",
+          answer: "Attucks being segregated (1927, forty-three years earlier), IPS being internally segregated (boundary changes from 1954 and the 1961 act), and the metro pattern of a Black city district ringed by white township districts (the townships were already about 2.6 percent Black in 1969). All predate Unigov.",
+        },
+        {
+          prompt: "Give the three corrections this lesson makes.",
+          answer: "The opinion says approximately 350 boundary changes since 1954, not 360 between 1949 and 1968. The Seventh Circuit did not find Unigov fostered segregation; Dillin did, on remand, on 1 August 1975, with the intent finding on 11 July 1978. And the cluster plan's attribution of that finding to Dillin's 1971 ruling names the right judge and the wrong year, because the 1971 opinion only says the 1961 and 1969 acts 'may well have been' to promote segregation.",
+        },
+        {
+          prompt: "Name three records that would settle what is still open here.",
+          answer: "The Board of School Commissioners' minutes from 1954 to 1971 where the boundary changes live, the General Assembly's committee record for the 1961 act and the 1969 Unigov bill, and the Indianapolis Recorder's coverage from 1968 to 1981. Also the township school boards' minutes and the 1989 National Register nomination for Attucks.",
+        },
+      ],
+    },
+    {
+      slug: "gcl-quiz-powers",
+      title: "14 · Quiz: who decided",
+      section: "Section 3 · Powers",
+      quiz: {
+        passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options (the repo standard).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Quote Judge Dillin's 1971 finding about boundary changes in the Indianapolis system.",
+            options: [
+              "Approximately 350 boundary changes since 1954, more than 90 percent of which promoted segregation",
+              "Exactly 360 changes, all of which promoted segregation",
+              "About 100 changes, half of which promoted segregation",
+              "No boundary changes were found to be segregative",
+            ],
+            correctIndex: 0,
+            explanation: "The widely repeated 'ninety percent of 360' comes from a secondary account counting a different period. Quote the opinion, cite the page, and give the period.",
+            sourceLessonSlug: "gcl-powers-attendance-zone",
+          },
+          {
+            prompt: "What did the court find optional attendance zones actually did?",
+            options: [
+              "They equalised enrolment between crowded and empty schools",
+              "They were drawn where neighbourhoods mixed, and white students in them almost always chose white schools, so individual choices did the sorting",
+              "They were never used in Indianapolis",
+              "They applied only to students living more than two miles from school",
+            ],
+            correctIndex: 1,
+            explanation: "A policy that is facially neutral and statistically one-directional is doing work, and the direction is the evidence.",
+            sourceLessonSlug: "gcl-powers-attendance-zone",
+          },
+          {
+            prompt: "The transfer rules the court found operated how?",
+            options: [
+              "Both rules made transfers easier for everyone",
+              "Both rules were struck down before Attucks opened",
+              "A sibling preference let white students escape Attucks, while a two-mile proximity rule kept Black students within two miles of Attucks from transferring out",
+              "Transfers were decided by lottery",
+            ],
+            correctIndex: 2,
+            explanation: "The court called the sibling preference a grandfather clause; it remained in effect through March 1970. Neither rule mentions race and both are race policy.",
+            sourceLessonSlug: "gcl-powers-attendance-zone",
+          },
+          {
+            prompt: "What was Indiana's historic coterminous rule, and when was it recognised by statute?",
+            options: [
+              "School districts had to match county lines, from 1869",
+              "School districts were drawn by the state board, from 1949",
+              "Attendance zones had to match ward lines, from 1922",
+              "When a city extended its corporate limits the school city's boundaries followed, so the two were the same shape; recognised by statute in 1931",
+            ],
+            correctIndex: 3,
+            explanation: "One boundary, one electorate, one tax base, one school system. A city could not grow its tax base and leave its schools behind, because the law did not let the two come apart.",
+            sourceLessonSlug: "gcl-powers-district-line",
+          },
+          {
+            prompt: "The 1961 Act of the Indiana General Assembly applied to which territory, and what did it change?",
+            options: [
+              "Marion County only; it made a civil annexation merely a prima facie school annexation, subject to a separate remonstrance by the losing school corporation",
+              "The whole state; it abolished school district boundaries",
+              "Marion and Hamilton counties; it merged their school systems",
+              "Indianapolis only; it required a referendum before any annexation",
+            ],
+            correctIndex: 0,
+            explanation: "A jurisdictional carve-out is how you write a law for one place while appearing to write a general rule. The same technique appears in the 1969 Unigov threshold.",
+            sourceLessonSlug: "gcl-powers-district-line",
+          },
+          {
+            prompt: "What is a remonstrance, and why does adding one to a process matter?",
+            options: [
+              "A public hearing required before any vote; it slows decisions down",
+              "A tax appeal; it reduces the amount owed",
+              "A formal objection by affected parties that can block or delay an action; it forbids nothing but makes an automatic step stoppable by whoever shows up",
+              "A court injunction; it ends the process entirely",
+            ],
+            correctIndex: 2,
+            explanation: "Before 1961 school annexation followed civil annexation automatically in Indiana. After it, in Marion County, somebody could stop it.",
+            sourceLessonSlug: "gcl-powers-district-line",
+          },
+          {
+            prompt: "How did the Seventh Circuit describe what Unigov did to the Indianapolis school district?",
+            options: [
+              "It merged the district with the eight township systems",
+              "It dissolved the district and replaced it with a county board",
+              "It required the district to expand with the city",
+              "The Act expressly provided the school district would not be affected by the expansion of the city, leaving it confined to the central part of the new Uni-Gov, surrounded by eight township systems and two additional city school corporations",
+            ],
+            correctIndex: 3,
+            explanation: "A city grew to fill a county. Its school district stayed a hole in the middle of that county, ringed by ten independent systems inside the same city.",
+            sourceLessonSlug: "gcl-powers-unigov-carveout",
+          },
+          {
+            prompt: "In the participants' own words, why were schools excluded from Unigov?",
+            options: [
+              "Including schools would have raised the spectre of racial integration and meant instant death for the plan, and Mayor Lugar said the bill would die if schools were included",
+              "The school board asked to be included and was refused by the state",
+              "Federal law forbade including schools in a city-county consolidation",
+              "There was no time to draft the school provisions",
+            ],
+            correctIndex: 0,
+            explanation: "Board president Landrum Shields added, 'We cooperated with the Mayor by not killing Unigov.' The exclusion was the price of passage, stated at the time by the people who paid it.",
+            sourceLessonSlug: "gcl-powers-unigov-carveout",
+          },
+          {
+            prompt: "Judge Dillin found the surrounding township districts had not committed acts of de jure segregation. Why?",
+            options: [
+              "Because they had adopted voluntary integration plans",
+              "Because they had, with few exceptions, no opportunity to, since the Black population within their borders ranged from slight to none",
+              "Because they were governed by the same board as IPS",
+              "Because the evidence against them was excluded at trial",
+            ],
+            correctIndex: 1,
+            explanation: "A district line can produce a segregated system without a single discriminatory act inside any district. The boundary had already done the work.",
+            sourceLessonSlug: "gcl-powers-unigov-carveout",
+          },
+          {
+            prompt: "Who was ultimately held liable for funding the Marion County-wide desegregation remedy?",
+            options: [
+              "Indianapolis Public Schools alone",
+              "The eight township districts, in proportion to enrolment",
+              "The federal government, under Title IV",
+              "The State of Indiana, because the State alone bore liability for the constitutional violations",
+            ],
+            correctIndex: 3,
+            explanation: "Dillin imputed the violation to the State in July 1973 and held the State responsible for the cost in July 1981. When a school board is a creature of a state, the state can be the defendant.",
+            sourceLessonSlug: "gcl-powers-the-lawsuit",
+          },
+          {
+            prompt: "In which direction did the inter-district busing that began in August 1981 actually run?",
+            options: [
+              "Both directions equally from the first day",
+              "One way, out of IPS: about 5,500 Black students to six township districts",
+              "Into IPS only, from the townships",
+              "Between the townships, bypassing IPS",
+            ],
+            correctIndex: 1,
+            explanation: "The Seventh Circuit did not authorise transfers into IPS until April 1980, and the implemented remedy still ran outward. A remedy can be lawful and asymmetric in who bears its inconvenience.",
+            sourceLessonSlug: "gcl-powers-the-lawsuit",
+          },
+          {
+            prompt: "What did a court have to establish separately in 1984, three years after busing began?",
+            options: [
+              "That the buses met state safety standards",
+              "That the State would reimburse transport costs",
+              "That parents of bused students could vote and run in the township school board elections governing their children's schools",
+              "That bused students could play on township athletic teams",
+            ],
+            correctIndex: 2,
+            explanation: "Representation does not follow a student automatically. It had to be granted, and somebody had to ask.",
+            sourceLessonSlug: "gcl-powers-the-lawsuit",
+          },
+          {
+            prompt: "State the threshold Milliken v. Bradley set for a cross-district desegregation remedy.",
+            options: [
+              "Any statewide racial imbalance justifies consolidating districts",
+              "A cross-district remedy is available whenever a central district is majority Black",
+              "District lines may never be crossed for any reason",
+              "It must first be shown that a constitutional violation within one district produces a significant segregative effect in another, and specifically that discriminatory acts of the state or local districts were a substantial cause of inter-district segregation",
+            ],
+            correctIndex: 3,
+            explanation: "Decided 25 July 1974, 5 to 4. The district boundary becomes the presumptive limit of the remedy, defended by the value the Court names: local control of schools.",
+            sourceLessonSlug: "gcl-powers-milliken",
+          },
+          {
+            prompt: "Which clause of the Milliken standard did the Indianapolis plaintiffs satisfy, and with what evidence?",
+            options: [
+              "The clause allowing a remedy where district lines have been deliberately drawn on the basis of race; the evidence was the 1969 Unigov statute, which moved the city line and expressly left the school line, explained on the record at the time",
+              "The clause about statewide financial disparities; the evidence was per-pupil spending",
+              "The clause about faculty assignment; the evidence was teacher transfers",
+              "No clause; the Indianapolis remedy was struck down entirely",
+            ],
+            correctIndex: 0,
+            explanation: "In most metros a plaintiff cannot show a decision about the line itself. Indiana's legislature had written one down and dated it.",
+            sourceLessonSlug: "gcl-powers-milliken",
+          },
+          {
+            prompt: "This course corrects the claim that 'the Seventh Circuit found Unigov fostered segregation.' What is the accurate version?",
+            options: [
+              "No court ever made such a finding",
+              "The Supreme Court made the finding in Milliken",
+              "The Seventh Circuit reversed the remedy beyond the Uni-Gov line and remanded the question inside it; Judge Dillin made the finding on remand on 1 August 1975, and found discriminatory intent 'perfectly obvious' on 11 July 1978",
+              "The Seventh Circuit made the finding, but in 1976 rather than 1974",
+            ],
+            correctIndex: 2,
+            explanation: "Attributing a trial court's fact-finding to an appellate court, or a 1978 intent finding to a 1974 opinion, changes the meaning. The intent finding was only required after the Supreme Court remanded in January 1977.",
+            sourceLessonSlug: "gcl-powers-test-the-spine",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
