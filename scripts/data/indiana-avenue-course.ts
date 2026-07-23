@@ -548,6 +548,541 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Powers  (beat 3: civics, planning, taxes, politics. THE LOAD-BEARING SECTION)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ia-powers-blight",
+      title: "8 · Instrument one: the blight designation",
+      section: "Section 3 · Powers",
+      body: `**This is the section the whole course exists for.** Everything before it establishes what was here. Everything after it asks what happens next. This section teaches the tools, because **a building does not disappear, it is removed by somebody with an instrument.** Learn the instruments and you can read any American city.
+
+**An instrument, in this sense, is a specific legal power exercised by a specific body under a specific statute, leaving a specific document.** That last clause is the one that turns history into research: if a power was exercised, a record exists, and the record has a name.
+
+**Instrument one is designation.** Before a government can clear an area, it usually has to declare the area to be something. In Indiana the word was **blighted**, and the machinery was set up by the **Indiana General Assembly in 1945**.
+
+**How it ran here.** The neighbourhood behind Crispus Attucks High School was known as **Pat Ward's Bottom**, a Black community of small, tightly packed houses. It was **identified as blighted by the Indiana General Assembly in 1945**, and the **Indianapolis Redevelopment Commission** chose it for its first slum clearance project. **Demolition of homes began there in 1948** (Encyclopedia of Indianapolis, n.d.-e).
+
+**Then it ran again, and larger.** In **1956**, Indiana University's Medical Center expansion prompted the **Indianapolis Redevelopment Commission to declare almost 38 acres of neighbourhoods blighted and substandard** (Paschall, 2020, citing the commission's action; the same 1956 figure appears in local reporting on the Avenue). The Encyclopedia of Indianapolis separately records properties designated as blighted in **1954 and 1956** in this area (Encyclopedia of Indianapolis, n.d.-a).
+
+**Now look at what the word does, because this is the transferable part.**
+
+1. **"Blighted" is a legal conclusion, not a description.** It is reached by a body, on a record, using criteria written into a statute. Once reached, it unlocks powers that do not otherwise exist: acquisition, clearance, resale to a redeveloper.
+2. **The criteria are usually about physical condition**, things like age, overcrowding, plumbing, fire risk. **Those criteria correlate strongly with where a city has refused to lend, insure, or invest.** A neighbourhood denied mortgage capital for thirty years will measure as deteriorated, and then the measurement becomes the justification. **The finding and the cause can be the same policy at two different dates.**
+3. **A designation is appealable and it is public.** Somebody voted. There are minutes. There is a boundary map with a legal description. **All of it is a public record you can request.**
+
+**The research move.** If you want to know why a block is gone, do not start with the demolition. **Start with the designation**, because the designation is dated, bounded, and minuted, and everything else follows from it. Ask: who declared it, under what statute, on what date, with what boundary, on what evidence, and who was in the room.
+
+**What this course will not claim.** It will not tell you that every blight designation in Indianapolis was made in bad faith, because that is a claim about intent and this course has not read the commission's minutes. **It will tell you that the power existed, that it was used on this ground in 1948 and again in the 1950s, and that the record is public and has not been read into this course.** That is an honest place to stop, and it is also an invitation: the minutes are the best unopened source in this story.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Indiana Avenue*. https://indyencyclopedia.org/indiana-avenue/
+- Encyclopedia of Indianapolis. (n.d.-e). *Midtown*. https://indyencyclopedia.org/midtown/
+- Paschall, W. (2020). *Indiana Avenue: The ethnic cleansing of Black Indianapolis*. New America. https://www.newamerica.org/indianapolis/blog/indiana-avenue-ethnic-cleansing-black-indianapolis/
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
+      recallContent: [
+        {
+          prompt: "Define an 'instrument' as this course uses the word.",
+          answer: "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. The last part is what makes it researchable.",
+        },
+        {
+          prompt: "What was Pat Ward's Bottom, and what happened to it?",
+          answer: "A Black neighbourhood of small tightly packed houses behind Crispus Attucks High School. Identified as blighted by the Indiana General Assembly in 1945, chosen by the Indianapolis Redevelopment Commission for its first slum clearance, with demolition beginning in 1948.",
+        },
+        {
+          prompt: "Why is 'blighted' a legal conclusion rather than a description?",
+          answer: "It is reached by a body, on a record, against statutory criteria, and it unlocks powers of acquisition, clearance and resale that do not otherwise exist.",
+        },
+        {
+          prompt: "What is the circularity problem with physical blight criteria?",
+          answer: "The criteria measure deterioration, and deterioration follows from decades of refused mortgage credit, insurance and investment. The finding and its cause can be the same policy at two dates.",
+        },
+        {
+          prompt: "If you want to know why a block is gone, where do you start, and why?",
+          answer: "With the designation, not the demolition. A designation is dated, bounded, minuted and public, and the clearance follows from it.",
+        },
+      ],
+    },
+    {
+      slug: "ia-powers-eminent-domain",
+      title: "9 · Instrument two: eminent domain, and who is allowed to use it",
+      section: "Section 3 · Powers",
+      body: `Designation unlocks the power. **Eminent domain is the power.**
+
+**What it is.** The government's authority to take private property for a public use, on payment of just compensation. In the United States the constitutional text is the last clause of the **Fifth Amendment**: "nor shall private property be taken for public use, without just compensation." The Fourteenth Amendment applies the requirement to the states.
+
+**Three things a learner usually has wrong about it.**
+
+**1. The owner does not have to agree.** The dispute in a condemnation case is normally about **price**, not about whether the taking happens. A property owner who refuses an offer is not blocking the project; they are usually heading toward a court that will set the number.
+
+**2. The taker is often not the party that ends up with the land.** Under redevelopment statutes, a public body acquires and clears, and then conveys the cleared land to a private or institutional developer. **That is the design of urban renewal, not an abuse of it**, and it is the reason "public use" became a contested phrase in American law.
+
+**3. It leaves a paper trail with your name on it.** Offers, appraisals, condemnation filings, court judgments and settlement amounts are civil court records. **This is the most checkable instrument in the whole section.**
+
+**A documented case on this ground.** Reporting by Mirror Indy and Open Campus followed the **Temple family**, whose house stood at **550 Minerva Street** along with three rental properties. Indiana University's initial offer in **1965** was **23,000 dollars**. Governor **Edgar Whitcomb** granted permission for eminent domain against the family in **December 1972** and again in **January 1976**. The matter settled in **June 1979** at **50,000 dollars**. The land became **University Tower**, a residence hall for about 600 students (Mirror Indy & Open Campus, 2024).
+
+**Do not read that as a happy ending because the number went up.** Read the **dates**. The first offer is 1965 and the settlement is 1979. **A family held out for fourteen years against an institution with a state government willing to sign.** The asymmetry of time and money is the substance of the story, and it is documented rather than inferred.
+
+**Two limits on this lesson that you must keep.**
+- **One case is one case.** The Temple settlement tells you what happened to the Temples. It does not establish an average, a pattern, or a rate. Do not turn it into a statistic.
+- **The 1965 dollar figure is not comparable to a 1979 one** without adjusting for inflation, and this course does not do that adjustment for you. **If you use the numbers, say what you did to them.**
+
+**Federal relocation law changed midway through this story, and the date matters.** The **Uniform Relocation Assistance and Real Property Acquisition Policies Act of 1970** set relocation assistance and acquisition standards for federally funded projects. **Most of the clearance discussed in this course predates it.** When you compare a 1950s taking to a 1980s one, you are comparing two different legal regimes, and saying so is part of getting the history right.
+
+## Sources
+- Mirror Indy, & Open Campus. (2024, October 1). *Indy's lost Black neighborhood: How IUPUI displaced thousands*. https://mirrorindy.org/iupui-black-wall-street-indianapolis-displacement-indiana-avenue/
+- U.S. Const. amend. V.
+- Uniform Relocation Assistance and Real Property Acquisition Policies Act of 1970, 42 U.S.C. § 4601 et seq. https://www.govinfo.gov/app/collection/uscode
+- Archer, D. N. (2020). "White men's roads through Black men's homes": Advancing racial equity through highway reconstruction. *Vanderbilt Law Review, 73*(5). https://scholarship.law.vanderbilt.edu/vlr/vol73/iss5/1/`,
+      recallContent: [
+        {
+          prompt: "What does the Fifth Amendment require when property is taken?",
+          answer: "Private property shall not be taken for public use without just compensation. The Fourteenth Amendment applies the requirement to the states.",
+        },
+        {
+          prompt: "In a condemnation case, what is normally in dispute?",
+          answer: "The price, not whether the taking happens. Refusing an offer usually leads to a court setting the number rather than stopping the project.",
+        },
+        {
+          prompt: "Give the documented Temple family timeline and figures.",
+          answer: "House at 550 Minerva Street plus three rentals. IU's initial offer 23,000 dollars in 1965; Governor Whitcomb granted eminent domain permission in December 1972 and January 1976; settled June 1979 at 50,000 dollars. The site became University Tower.",
+        },
+        {
+          prompt: "Why should you not turn the Temple settlement into a statistic?",
+          answer: "One case is one case. It documents what happened to one family and establishes no average, pattern or rate. The 1965 and 1979 dollar figures are also not comparable without an inflation adjustment you would have to state.",
+        },
+        {
+          prompt: "Why does the 1970 Uniform Relocation Act matter to this chronology?",
+          answer: "It set relocation assistance and acquisition standards for federally funded projects, and most of the clearance in this course predates it. A 1950s taking and a 1980s taking happened under different legal regimes.",
+        },
+      ],
+    },
+    {
+      slug: "ia-powers-alignment",
+      title: "10 · Instrument three: the alignment decision",
+      section: "Section 3 · Powers",
+      body: `An interstate highway is not weather. **Somebody drew the line.** The choice of route is called the **alignment decision**, and it is an instrument like any other.
+
+**How the American interstate system worked, in the terms that matter here.** The **Federal-Aid Highway Act of 1956** created the National System of Interstate and Defense Highways and funded it at roughly 90 percent federal money against 10 percent state money. **The alignment inside a city was proposed by the state highway department, in negotiation with local officials, and approved federally.** Two consequences follow, and you need both:
+1. **The overwhelming majority of the money was federal, so the incentive to build was enormous** and the local cost of building was small.
+2. **The line itself was largely a state and local choice.** Blaming "the federal government" for a specific route skips the people who actually drew it.
+
+**Why routes went where they did.** Deborah N. Archer's study of highway construction and racial equity documents both patterns: highways were run through Black neighbourhoods, displacing households and destroying homes, churches, schools and businesses, and in other places the highway itself was used as a barrier to separate white and Black communities (Archer, 2020). **Cheap land, low political resistance, and land already designated blighted are the three things that made a route attractive**, and all three describe segregated Black districts by design.
+
+**Indianapolis, with the dates that are documented.**
+- **1957.** The state announced it would plan freeways connecting downtown Indianapolis to the outer belt system, the road that became I-465 (Historic Indianapolis, n.d.).
+- **Early 1960s.** The state began purchasing homes and commercial buildings in the highway right of way (Historic Indianapolis, n.d.).
+- **Late 1960s to early 1970s.** I-65 and I-70 were built through the city. Historic Indianapolis dates the I-65 work to **1968 to 1971** (Historic Indianapolis, n.d.).
+- **1975.** The **inner loop**, the roughly 4.5-mile downtown ring formed by I-65 and I-70, opened (WRTV, n.d.; Indianapolis Monthly, 2020).
+- Neighbourhoods named in reporting as cut by the two interstates include the Southside, Fountain Square, Fletcher Place, Martindale-Brightwood, the Old Northside, St. Joseph, and **Ransom Place** (WRTV, n.d.; Historic Indianapolis, n.d.).
+
+**The figure everyone quotes, handled properly.** You will see "17,000 residents displaced and 8,000 buildings demolished" attached to Indianapolis interstate construction. **WRTV attributes that figure to an Indianapolis Star article of October 15, 1976** (WRTV, n.d.). Three cautions before you use it:
+1. **It is city-wide**, covering roughly 31 miles of interstate inside I-465 including the inner loop. **It is not an Indiana Avenue figure.**
+2. **It is a contemporaneous newspaper figure**, not a published survey with a stated method. That does not make it wrong. It makes it a figure with an owner and a date, which is how you should cite it.
+3. **This course has not seen the underlying count.** Neither, probably, have most of the people repeating it. **Attribute it, do not adopt it.**
+
+**One local measurement that is method-transparent.** Census data for the tract closest to I-70 on the Southside shows population falling from **4,225 residents in 1960 to 1,661 in 1970** (WRTV, n.d.). That is a decennial census count for a defined tract, so you know exactly what it measures. **A smaller, well-defined number beats a large, unsourced one every time.**
+
+**Now the hard part, and the reason this lesson is here.** The popular account of Indiana Avenue says the interstate destroyed it. **That is not what the sources this course could verify actually say.** The Encyclopedia of Indianapolis entry on Indiana Avenue does not name highway construction among the causes of the Avenue's loss at all; it names the 1958 campus plan, the blight designations, Indiana University's parcel purchases, and the Lockefield demolition (Encyclopedia of Indianapolis, n.d.-a). **The interstate is documented as taking neighbourhoods around the Avenue, including Ransom Place, and as changing the district's setting. The Avenue's own commercial fabric is documented as going to designation and to campus assembly.** The next lesson takes the campus, and lesson 13 tests the whole argument.
+
+## Sources
+- Archer, D. N. (2020). "White men's roads through Black men's homes": Advancing racial equity through highway reconstruction. *Vanderbilt Law Review, 73*(5). https://scholarship.law.vanderbilt.edu/vlr/vol73/iss5/1/
+- Encyclopedia of Indianapolis. (n.d.-a). *Indiana Avenue*. https://indyencyclopedia.org/indiana-avenue/
+- Historic Indianapolis. (n.d.). *Flats lost: I-65 construction*. https://historicindianapolis.com/flats-lost-i-65-construction/
+- Indianapolis Monthly. (2020). *Fruits of the loop: An unsung milestone in Indy's downtown development*. https://www.indianapolismonthly.com/arts-and-culture/circle-city/i-65-i-70-inner-loop-anniversary/
+- WRTV Indianapolis. (n.d.). *"Under the highway": How interstates divided Indianapolis neighborhoods and displaced 17,000 people*. https://www.wrtv.com/news/local-news/indianapolis/under-the-highway-how-interstates-divided-indianapolis-neighborhoods-and-displaced-17-000-people`,
+      recallContent: [
+        {
+          prompt: "What is an alignment decision, and who made it for an urban interstate?",
+          answer: "The choice of route. It was proposed by the state highway department in negotiation with local officials, and approved federally, under the Federal-Aid Highway Act of 1956 which funded roughly 90 percent federal to 10 percent state.",
+        },
+        {
+          prompt: "What three qualities made a route attractive to a highway planner, and why did that fall on Black districts?",
+          answer: "Cheap land, low political resistance, and land already designated blighted. Segregated Black districts had all three, by the design of earlier policy.",
+        },
+        {
+          prompt: "Where does the '17,000 displaced, 8,000 buildings' figure come from, and what are its three limits?",
+          answer: "WRTV attributes it to an Indianapolis Star article of October 15, 1976. It is city-wide rather than Avenue-specific, it is a contemporaneous newspaper figure with no published method, and this course has not seen the underlying count. Attribute it, do not adopt it.",
+        },
+        {
+          prompt: "Give the census example and say why it is better evidence than the 17,000 figure.",
+          answer: "The tract closest to I-70 on the Southside fell from 4,225 residents in 1960 to 1,661 in 1970. It is a decennial census count for a defined tract, so you know exactly what it measures.",
+        },
+        {
+          prompt: "What does the popular account say destroyed Indiana Avenue, and what do the verifiable sources say?",
+          answer: "The popular account says the interstate did. The Encyclopedia of Indianapolis entry on Indiana Avenue does not name highways among the causes at all; it names the 1958 campus plan, blight designations, IU's parcel purchases and the Lockefield demolition. The interstate is documented as taking surrounding neighbourhoods including Ransom Place.",
+        },
+      ],
+    },
+    {
+      slug: "ia-powers-campus",
+      title: "11 · Instrument four: a university as a land assembler",
+      section: "Section 3 · Powers",
+      body: `The instrument that the record most strongly ties to the Avenue's own blocks is a university acquiring land.
+
+**The plan.** In **1958**, the Encyclopedia of Indianapolis records, "Indianapolis' most ambitious postwar urban development plan proposed the creation of a joint undergraduate campus of the state's two largest universities, Indiana and Purdue, neighboring the Indiana University School of Medicine campus" (Encyclopedia of Indianapolis, n.d.-a). That campus became **IUPUI**, Indiana University Purdue University Indianapolis.
+
+**The acquisitions, with the record's own dates.**
+- **1954 and 1956.** Properties in the area designated blighted (Encyclopedia of Indianapolis, n.d.-a). **1956** is also the year IU's Medical Center expansion prompted the Redevelopment Commission to declare almost 38 acres blighted and substandard (Paschall, 2020).
+- **March 1962.** Indiana University formed **Hoosier Realty Corporation**, a nonprofit real estate entity that went on to acquire **more than 2,000 houses and lots** (Mirror Indy & Open Campus, 2024).
+- **June 1965.** The **IU Board of Trustees** passed a resolution to expand campus boundaries, including by eminent domain (Mirror Indy & Open Campus, 2024).
+- **October 1965.** "The University's first purchase of property on Indiana Avenue may have been in October 1965, when IU purchased Ruth McArthur's home at 802-810 Indiana Avenue" (Encyclopedia of Indianapolis, n.d.-a). **Note the hedge in the source: "may have been."** Keep it when you repeat it.
+- **July 1964 to August 1966.** "The University purchased 401 parcels" (Encyclopedia of Indianapolis, n.d.-a).
+- **February 1968.** The first building site was fully acquired, bounded by Michigan, Blake, New York, and Agnes streets (Mirror Indy & Open Campus, 2024).
+- **1960s to 1980s.** Around **300 acres** assembled in total (Mirror Indy & Open Campus, 2024).
+
+**Why a nonprofit realty corporation, and not the university's own name on the deeds?** Because **land assembly gets more expensive the moment the seller knows who is buying and why.** A buyer that appears to be an ordinary private company pays ordinary prices. This is a standard technique, it is legal, and **it is also the single most useful thing in this lesson**, because it tells you that the deed records will not always say what you expect. **Follow the corporate entity, not the institution's name.**
+
+**Now put the two instruments in the right order.** A blight designation makes land acquirable and clearable. A university with a state charter, a nonprofit acquisition vehicle, a trustees' resolution, and a governor willing to authorise condemnation can then assemble it. **Designation plus assembly is the mechanism.** The highway is a separate instrument operating on the surrounding neighbourhoods over an overlapping period.
+
+**What is on that ground now.** Reporting describes the area around the Avenue today as "sprawling lawns, concrete plazas and gargantuan buildings" for the university, with a few historical markers (Mirror Indy & Open Campus, 2024). And the institution itself has changed again: **on July 1, 2024, IUPUI was realigned into two separate campuses, IU Indianapolis and Purdue University in Indianapolis**, following a definitive agreement signed by both boards of trustees on **June 14, 2023** (Indiana University Indianapolis, n.d.). **The entity that assembled the land no longer exists under that name**, which is exactly the kind of fact that breaks a naive records search and which you now know to expect.
+
+**A note on fairness that is also a note on accuracy.** Nothing here says a public university should not have built a campus in Indianapolis, and this course does not have the record to argue that question either way. What the record does establish is **which ground was chosen, under which designation, using which acquisition vehicle, on which dates, and who lived there first.** Those are the facts. The judgment is the learner's, and it should be made on the documents.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Indiana Avenue*. https://indyencyclopedia.org/indiana-avenue/
+- Indiana University Indianapolis. (n.d.). *About the transition from IUPUI to IU Indianapolis*. https://indianapolis.iu.edu/about/iupui-transition/
+- Mirror Indy, & Open Campus. (2024, October 1). *Indy's lost Black neighborhood: How IUPUI displaced thousands*. https://mirrorindy.org/iupui-black-wall-street-indianapolis-displacement-indiana-avenue/
+- Paschall, W. (2020). *Indiana Avenue: The ethnic cleansing of Black Indianapolis*. New America. https://www.newamerica.org/indianapolis/blog/indiana-avenue-ethnic-cleansing-black-indianapolis/`,
+      recallContent: [
+        {
+          prompt: "What did the 1958 plan propose, and what did it become?",
+          answer: "A joint undergraduate campus of Indiana University and Purdue University next to the IU School of Medicine campus. It became IUPUI.",
+        },
+        {
+          prompt: "What was Hoosier Realty Corporation, when was it formed, and what did it acquire?",
+          answer: "A nonprofit real estate entity formed by Indiana University in March 1962. It acquired more than 2,000 houses and lots.",
+        },
+        {
+          prompt: "Why would an institution buy land through a separate corporation?",
+          answer: "Because prices rise once sellers know who is buying and why. It is legal and standard, and it means the deed records will not always carry the institution's name. Follow the entity, not the institution.",
+        },
+        {
+          prompt: "Give three dated acquisition facts from the record.",
+          answer: "IU purchased 401 parcels between July 1964 and August 1966; the trustees resolved in June 1965 to expand the boundaries including by eminent domain; the first Indiana Avenue purchase may have been Ruth McArthur's home at 802-810 Indiana Avenue in October 1965. About 300 acres were assembled from the 1960s to the 1980s.",
+        },
+        {
+          prompt: "What happened to IUPUI on July 1, 2024, and why does it matter to a researcher?",
+          answer: "It was realigned into IU Indianapolis and Purdue University in Indianapolis, after a definitive agreement signed June 14, 2023. The entity that assembled the land no longer exists under that name, which breaks a naive records search.",
+        },
+      ],
+    },
+    {
+      slug: "ia-powers-unigov",
+      title: "12 · Instrument five: redrawing the jurisdiction",
+      section: "Section 3 · Powers",
+      body: `The four instruments so far take buildings. The fifth takes something less visible and more durable: **it changes who gets a vote on the ground.**
+
+**What happened.** The Indiana General Assembly **approved the Unigov bill in 1969**, and **Indianapolis and Marion County were officially consolidated on January 1, 1970**, creating the Consolidated City of Indianapolis. It was driven by Mayor **Richard Lugar** and Marion County Republican chairman **Keith Bulen**, with State Senator Borst sponsoring the legislation. Unigov consolidated 31 city departments and 11 agencies into six new executive departments (Wachter, 2014).
+
+**The procedural fact that does the most work.** Unigov "stands out as the only major post-war consolidation to be accomplished without a voter referendum" (Wachter, 2014). Nashville and Jacksonville, the other two large postwar consolidations, went to their voters. **Indianapolis did not.** A referendum was discussed by the mayor's task force and was overwhelmingly opposed (Wachter, 2014).
+
+**How the statute picked its target without naming it.** The legislation applied to **any Indiana city with a population of 250,000 or more**. In 1969 that meant exactly one city. **The threshold has since been raised to 600,000**, which prevents other Indiana cities from doing the same thing (Wachter, 2014). **A population threshold is a way of writing a law for one place while appearing to write a general rule**, and once you have seen the technique you will see it everywhere.
+
+**What was left out, which is the part that matters.**
+- **The school districts.** Not consolidated.
+- **Incorporated cities and towns over 5,000 people**, leaving **Beech Grove, Lawrence, Southport and Speedway** independent (Wachter, 2014).
+- **The nine townships**, which continue as separate governments and are the territorial basis for eight of the county's eleven school districts (Encyclopedia of Indianapolis, n.d.-g).
+- Several municipal corporations, and the county court system.
+- The law also **barred annexation into neighbouring counties**, a restriction needed to get the votes (Wachter, 2014).
+
+**Fifty separate and overlapping governmental units remain within Marion County, with more than 61 taxing districts** (Wachter, 2014). Consolidation is a word that does far less than it sounds like.
+
+**Why the schools were left out, in the participants' own words.** Mayor Lugar said the 162-page bill would die in the General Assembly if schools were included, and acknowledged that "a good number of people really wanted to keep at least their particular school segregated" (Chalkbeat Indiana, 2016). The Reverend **Landrum Shields**, the school board's president, said: "to have included schools in Unigov would have raised the spectre of racial integration...and would have meant instant death for the plan. We cooperated with the Mayor by not killing Unigov" (Owen & Willbern, as cited in Wachter, 2014, p. 98). **The exclusion was not an oversight. It was the price of passage, stated at the time by the people who paid it.**
+
+**The numbers on both sides of that boundary in 1969.** Township school districts were about **2.6 percent Black**. Indianapolis Public Schools enrolled **more than one third Black students** (Chalkbeat Indiana, 2016).
+
+**What consolidation did to the electorate.** "Consolidation immediately decreased the proportion of African Americans in Indianapolis rather significantly, from **27 percent of the old city to only 17 percent of the consolidated city**. The share of African American residents would not recover to pre-Unigov proportions until the 2010 census" (Owen & Willbern, as cited in Wachter, 2014, p. 180). Ebony magazine, naming Indianapolis one of the ten best American cities for Black residents in 1978, noted in the same article that "Black political power has been substantially diluted by a new regional government" (Ebony, 1978, as cited in Wachter, 2014). **Both of those things were said by the same source in the same year**, and a course that quotes only one of them is choosing a story over a record.
+
+**And what a court found about it.** The Justice Department sued the Indianapolis Board of School Commissioners on **May 31, 1968**. On **August 18, 1971**, Judge **S. Hugh Dillin** found that the district had continued to operate a de jure segregated system, noting that **90 percent of 360 school boundary changes since 1954 had supported racial segregation**. A later ruling found that **Unigov fostered segregation by expanding the city limits to take in the predominantly white townships while leaving the school district boundaries where they were.** Dillin did not invalidate Unigov. **In 1981 the busing of 5,600 Black students to schools in Perry, Wayne, Franklin, Decatur, Lawrence and Warren townships began**, phased out from 1998 and ending as scheduled in **2016** (Encyclopedia of Indianapolis, n.d.-h; Wachter, 2014; *United States v. Board of School Commissioners*, 1974).
+
+**The instrument, stated plainly.** Where the first four instruments change what is on the ground, **a boundary decision changes the electorate that governs the ground.** It is slower, quieter, cheaper, and it lasts longer than any demolition. If you learn one thing from Section 3, learn to look for it.
+
+## Sources
+- Chalkbeat Indiana. (2016, August 3). *How racial bias helped turn Indianapolis into one city with 11 school districts*. https://www.chalkbeat.org/indiana/2016/8/3/21098810/how-racial-bias-helped-turn-indianapolis-into-one-city-with-11-school-districts/
+- Encyclopedia of Indianapolis. (n.d.-g). *Structure of Unigov*. https://indyencyclopedia.org/structure-of-unigov/
+- Encyclopedia of Indianapolis. (n.d.-h). *School desegregation*. https://indyencyclopedia.org/school-desegregation/
+- United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). http://openjurist.org/503/f2d/68/united-states-v-board-of-school-commissioners-of-city-of-indianapolis-indiana
+- Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
+      recallContent: [
+        {
+          prompt: "When was Unigov passed and when did it take effect, and what is procedurally unusual about it?",
+          answer: "Passed by the Indiana General Assembly in 1969, effective January 1, 1970. It is the only major postwar city-county consolidation accomplished without a voter referendum.",
+        },
+        {
+          prompt: "How did the Unigov statute target one city without naming it?",
+          answer: "It applied to any Indiana city of 250,000 or more, which in 1969 meant only Indianapolis. The threshold was later raised to 600,000 to stop other cities doing the same.",
+        },
+        {
+          prompt: "List what Unigov left out.",
+          answer: "The school districts; incorporated cities and towns over 5,000, leaving Beech Grove, Lawrence, Southport and Speedway independent; the nine townships; several municipal corporations; and the county courts. Fifty overlapping governmental units and more than 61 taxing districts remain.",
+        },
+        {
+          prompt: "In the participants' own words, why were schools excluded?",
+          answer: "Lugar said the bill would die if schools were included and acknowledged that many people wanted to keep their particular school segregated. Board president Landrum Shields said including schools would have raised the spectre of racial integration and meant instant death for the plan.",
+        },
+        {
+          prompt: "What did consolidation do to the Black share of the city's population, and what did a court later find about Unigov?",
+          answer: "It fell immediately from 27 percent of the old city to 17 percent of the consolidated city, not recovering until the 2010 census. Judge Dillin later found that Unigov fostered segregation by expanding the city limits into white townships while leaving school district boundaries unchanged, though he did not invalidate the law.",
+        },
+      ],
+    },
+    {
+      slug: "ia-powers-test-the-spine",
+      title: "13 · Testing an argument against a chronology",
+      section: "Section 3 · Powers",
+      body: `Here is an argument that sounds excellent. **This lesson takes it apart, because that is what you are supposed to do to an argument that sounds excellent.**
+
+**The argument, as it was proposed.** Indianapolis offers a single, dated, city-scale decision that ties the Black cultural district, the schools, the suburbs and the tax base together: **the 1970 Unigov consolidation.** If it holds, a learner can stand on Indiana Avenue, then in a suburban township, and see two ends of one decision.
+
+**The test is chronology, and it is the cheapest test in history.** Line the dates up and ask whether the proposed cause comes before its proposed effects.
+
+| Date | Event |
+|---|---|
+| 1945 | Indiana General Assembly identifies Pat Ward's Bottom as blighted |
+| 1948 | Demolition begins there |
+| 1954, 1956 | Properties in the area designated blighted; the Redevelopment Commission declares almost 38 acres blighted for the IU Medical Center |
+| 1957 | The state announces downtown freeway planning |
+| 1958 | The joint IU and Purdue campus plan is proposed |
+| March 1962 | IU forms Hoosier Realty Corporation |
+| July 1964 to August 1966 | IU purchases 401 parcels |
+| June 1965 | IU trustees resolve to expand the campus, including by eminent domain |
+| October 1965 | Possible first IU purchase on Indiana Avenue itself |
+| 1968 to 1971 | I-65 construction |
+| **January 1, 1970** | **Unigov takes effect** |
+| 1971 to 1983 | Lockefield exodus, decision to raze, demolition |
+
+**The verdict, stated plainly. The spine is thinner than proposed, and this course reports that as a result rather than hiding it.**
+
+**Where the argument fails.** **Unigov cannot be the cause of what happened to Indiana Avenue's buildings.** Every documented instrument that took them was already running, and most of the clearance decisions were already made, before Unigov took effect. **A cause cannot postdate its effect.** Any account that says Unigov destroyed Indiana Avenue is wrong on the dates, and you can check that in five minutes with the table above.
+
+**Where the argument holds completely.** **Unigov links the schools and the suburbs, and it does so on the record.** The exclusion of school districts was deliberate, was explained at the time by the mayor and the school board president, and was later found by a federal judge to have fostered segregation. The excluded cities and townships are named in the statute's design. **That half needs no softening at all.**
+
+**Where the argument holds in a weaker and more interesting form.** Unigov is not what happened **to** the Avenue. It is what happened **around** it, immediately afterwards, and it governs what happens **next**. From January 1, 1970, decisions about this ground, its zoning, its comprehensive plan, its redevelopment and its budget, are made by a government elected by a county-wide electorate in which the Black share had just fallen from 27 percent to 17 percent (Wachter, 2014). **The district was cleared under one electorate and has been planned, ever since, under another.** That is a real and defensible claim, it is smaller than the one proposed, and it is the one this course makes.
+
+**Three lessons about method, which outlast every fact in this course.**
+1. **Build the chronology before you build the argument.** A table of dates costs an hour and kills bad theses cheaply.
+2. **A weakened claim that survives is worth more than a strong claim that does not.** "Unigov changed who governs this ground" is checkable. "Unigov destroyed the Avenue" is not, and it is false.
+3. **Report the weakening.** If you tested a thesis and it partly failed, that is a finding and it belongs in your write-up. **Suppressing it is the actual error**, not having had the idea in the first place.
+
+**What is still open, and would settle it.** The minutes and project files of the Indianapolis Redevelopment Commission, the Indiana University Board of Trustees minutes from 1962 to 1968, the state highway department's right-of-way maps for the I-65 alignment, and the Indianapolis Recorder's coverage across the whole period. **None of those has been read into this course.** They are public or requestable, and they are the next real work on this question.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-a). *Indiana Avenue*. https://indyencyclopedia.org/indiana-avenue/
+- Encyclopedia of Indianapolis. (n.d.-e). *Midtown*. https://indyencyclopedia.org/midtown/
+- Historic Indianapolis. (n.d.). *Flats lost: I-65 construction*. https://historicindianapolis.com/flats-lost-i-65-construction/
+- Mirror Indy, & Open Campus. (2024, October 1). *Indy's lost Black neighborhood: How IUPUI displaced thousands*. https://mirrorindy.org/iupui-black-wall-street-indianapolis-displacement-indiana-avenue/
+- Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
+      recallContent: [
+        {
+          prompt: "What was the proposed spine for this course cluster, and what is the verdict?",
+          answer: "That the 1970 Unigov consolidation is one decision tying the district, the schools and the suburbs together. Verdict: the spine is thinner than proposed. It holds for schools and suburbs and fails for the district's buildings.",
+        },
+        {
+          prompt: "Why can Unigov not be the cause of the Avenue's demolition?",
+          answer: "Because it took effect on January 1, 1970, and the blight designations, campus plan, freeway announcement and IU's parcel purchases all predate it. A cause cannot postdate its effect.",
+        },
+        {
+          prompt: "State the weaker claim that survives the chronology test.",
+          answer: "Unigov did not clear the Avenue; it changed who governs the ground afterwards. The district was cleared under one electorate and has been planned ever since under another, in which the Black share fell immediately from 27 to 17 percent.",
+        },
+        {
+          prompt: "Name the three method lessons from this test.",
+          answer: "Build the chronology before the argument; a weakened claim that survives beats a strong claim that does not; and report the weakening, because suppressing it is the actual error.",
+        },
+        {
+          prompt: "Which records would settle the open questions, and have they been read into this course?",
+          answer: "The Redevelopment Commission minutes and project files, IU trustee minutes 1962 to 1968, the state highway right-of-way maps for I-65, and the Indianapolis Recorder's coverage. None of them has been read here. They are public or requestable.",
+        },
+      ],
+    },
+    {
+      slug: "ia-quiz-powers",
+      title: "14 · Quiz: who decided",
+      section: "Section 3 · Powers",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "This course defines an 'instrument' as:",
+            options: [
+              "Any historical cause",
+              "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document",
+              "A tool used in construction",
+              "A newspaper account of a decision",
+            ],
+            correctIndex: 1,
+            explanation: "The last clause is what makes history researchable: if a power was exercised, a named record exists.",
+            sourceLessonSlug: "ia-powers-blight",
+          },
+          {
+            prompt: "Which body chose Pat Ward's Bottom for the city's first slum clearance, and when did demolition begin?",
+            options: [
+              "The Metropolitan Development Commission, 1970",
+              "The Indianapolis Redevelopment Commission, with demolition beginning in 1948",
+              "The Indiana Department of Highways, 1957",
+              "The IU Board of Trustees, 1965",
+            ],
+            correctIndex: 1,
+            explanation: "The General Assembly identified it as blighted in 1945; the Redevelopment Commission chose it, and homes came down starting in 1948.",
+            sourceLessonSlug: "ia-powers-blight",
+          },
+          {
+            prompt: "Why is a blight designation described as a legal conclusion rather than a description?",
+            options: [
+              "Because it is written by lawyers",
+              "Because a body reaches it on a record against statutory criteria, and it unlocks acquisition and clearance powers",
+              "Because it can never be challenged",
+              "Because it only applies to vacant land",
+            ],
+            correctIndex: 1,
+            explanation: "The designation is the hinge: before it, the powers do not exist; after it, they do.",
+            sourceLessonSlug: "ia-powers-blight",
+          },
+          {
+            prompt: "The circularity problem in physical blight criteria is that:",
+            options: [
+              "The criteria are too strict",
+              "Deterioration measured by the criteria is produced by the same policies of refused credit and investment that preceded it",
+              "The criteria change every year",
+              "Only old buildings can qualify",
+            ],
+            correctIndex: 1,
+            explanation: "A neighbourhood denied mortgage capital for decades measures as deteriorated, and the measurement then justifies clearance.",
+            sourceLessonSlug: "ia-powers-blight",
+          },
+          {
+            prompt: "In a typical eminent domain proceeding, what is normally in dispute?",
+            options: [
+              "Whether the taking will happen",
+              "The price",
+              "The identity of the owner",
+              "Whether the statute is constitutional",
+            ],
+            correctIndex: 1,
+            explanation: "The owner's refusal usually leads to a court setting compensation, not to the project stopping.",
+            sourceLessonSlug: "ia-powers-eminent-domain",
+          },
+          {
+            prompt: "In the documented Temple family case, what were the first offer and the final settlement, and how far apart in time?",
+            options: [
+              "23,000 dollars in 1965 and 50,000 dollars in June 1979, fourteen years apart",
+              "50,000 dollars in 1962 and 75,000 dollars in 1968",
+              "10,000 dollars in 1970 and 12,000 dollars in 1972",
+              "The case was never settled",
+            ],
+            correctIndex: 0,
+            explanation: "Governor Whitcomb authorised eminent domain against the family in December 1972 and again in January 1976. The site became University Tower.",
+            sourceLessonSlug: "ia-powers-eminent-domain",
+          },
+          {
+            prompt: "Why should the Temple settlement NOT be turned into a statistic?",
+            options: [
+              "Because the family asked for privacy",
+              "Because one case establishes no average, pattern or rate, and the 1965 and 1979 dollar amounts are not comparable without a stated inflation adjustment",
+              "Because the figures are disputed",
+              "Because eminent domain was not used",
+            ],
+            correctIndex: 1,
+            explanation: "One documented case is evidence about that case. Generalising from it manufactures a rate nobody measured.",
+            sourceLessonSlug: "ia-powers-eminent-domain",
+          },
+          {
+            prompt: "Under the Federal-Aid Highway Act of 1956, who chose an interstate's route through a city?",
+            options: [
+              "Congress, by statute for each city",
+              "The state highway department, in negotiation with local officials, subject to federal approval",
+              "The Bureau of the Census",
+              "The affected neighbourhoods, by referendum",
+            ],
+            correctIndex: 1,
+            explanation: "Roughly 90 percent of the money was federal, but the line itself was largely a state and local choice, which is why the alignment decision has identifiable authors.",
+            sourceLessonSlug: "ia-powers-alignment",
+          },
+          {
+            prompt: "The figure '17,000 residents displaced and 8,000 buildings demolished' should be used how?",
+            options: [
+              "As the Indiana Avenue displacement total",
+              "Attributed to its owner and date (an Indianapolis Star article of October 15, 1976, per WRTV) and understood as a city-wide figure",
+              "Averaged with other published estimates",
+              "Not mentioned at all",
+            ],
+            correctIndex: 1,
+            explanation: "It covers roughly 31 miles of interstate inside I-465, not one corridor, and it is a contemporaneous newspaper figure with no published method.",
+            sourceLessonSlug: "ia-powers-alignment",
+          },
+          {
+            prompt: "The Encyclopedia of Indianapolis entry on Indiana Avenue names which causes of the Avenue's loss?",
+            options: [
+              "Interstate highway construction only",
+              "The 1958 joint campus plan, blight designations, Indiana University's parcel purchases, and the Lockefield demolition",
+              "Population loss and changing taste",
+              "A single 1970 consolidation law",
+            ],
+            correctIndex: 1,
+            explanation: "That entry does not name highway construction among the Avenue's causes at all, which is why this course separates the corridor's fabric from the surrounding neighbourhoods.",
+            sourceLessonSlug: "ia-powers-alignment",
+          },
+          {
+            prompt: "What was Hoosier Realty Corporation, and why was it used?",
+            options: [
+              "A city agency that condemned property",
+              "A nonprofit real estate entity Indiana University formed in March 1962, which acquired more than 2,000 houses and lots; buying under a separate name keeps prices from rising",
+              "A private developer that opposed the campus",
+              "The state highway department's land arm",
+            ],
+            correctIndex: 1,
+            explanation: "Land assembly gets more expensive once sellers know the buyer and the plan, so the deed records will not always carry the institution's name.",
+            sourceLessonSlug: "ia-powers-campus",
+          },
+          {
+            prompt: "How many parcels did Indiana University purchase between July 1964 and August 1966?",
+            options: ["41", "401", "2,000", "300"],
+            correctIndex: 1,
+            explanation: "401 parcels in that 25-month window, per the Encyclopedia of Indianapolis. About 300 acres were assembled overall from the 1960s to the 1980s.",
+            sourceLessonSlug: "ia-powers-campus",
+          },
+          {
+            prompt: "Unigov was approved in 1969 and took effect January 1, 1970. What is procedurally unusual about it?",
+            options: [
+              "It passed by a two-thirds referendum",
+              "It is the only major postwar city-county consolidation accomplished without a voter referendum",
+              "It was imposed by a federal court",
+              "It required approval from every township",
+            ],
+            correctIndex: 1,
+            explanation: "Nashville and Jacksonville went to their voters. Indianapolis did not; a referendum was discussed by the mayor's task force and overwhelmingly opposed.",
+            sourceLessonSlug: "ia-powers-unigov",
+          },
+          {
+            prompt: "What did Unigov leave OUT of the consolidation?",
+            options: [
+              "Nothing; it merged all local government",
+              "School districts, incorporated cities and towns over 5,000 (Beech Grove, Lawrence, Southport, Speedway), the nine townships, several municipal corporations, and the county courts",
+              "Only the police and fire departments",
+              "Only the school districts",
+            ],
+            correctIndex: 1,
+            explanation: "Fifty separate governmental units and more than 61 taxing districts remain in Marion County.",
+            sourceLessonSlug: "ia-powers-unigov",
+          },
+          {
+            prompt: "Testing the proposed Unigov spine against the chronology shows that:",
+            options: [
+              "Unigov caused the demolition of Indiana Avenue",
+              "Unigov cannot have caused the Avenue's clearance, because the blight designations, campus plan, freeway announcement and parcel purchases all predate January 1, 1970",
+              "The chronology is unknowable",
+              "The Avenue was cleared entirely after 1970",
+            ],
+            correctIndex: 1,
+            explanation: "The surviving, weaker claim is that Unigov changed who governs the ground afterwards, with the Black share of the city falling from 27 to 17 percent.",
+            sourceLessonSlug: "ia-powers-test-the-spine",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
