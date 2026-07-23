@@ -436,6 +436,9 @@ The defense against all three is the loop you've now built: a **versioned eval s
       section: "Operate Responsibly",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What does LLMOps add that ordinary DevOps doesn't have to worry about?",

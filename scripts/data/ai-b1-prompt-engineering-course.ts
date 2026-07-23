@@ -433,6 +433,9 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
       section: "Prompts in Production",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt:

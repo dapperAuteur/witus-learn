@@ -396,6 +396,9 @@ The decisions that matter:
       section: "Failure Modes & When Not To",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What does Retrieval-Augmented Generation (RAG) fundamentally do?",

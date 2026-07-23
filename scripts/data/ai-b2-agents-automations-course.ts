@@ -503,6 +503,9 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
       section: "Evaluate & Ship",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is the dividing line between a workflow and an agent?",

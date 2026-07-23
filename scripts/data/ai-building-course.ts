@@ -438,6 +438,9 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
       section: "Ship & Evaluate",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What's the safest way to think of an AI model inside a system you're building?",
