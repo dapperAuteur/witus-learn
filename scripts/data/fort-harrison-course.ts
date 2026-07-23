@@ -666,6 +666,158 @@ Here is the mechanism, and it is genuinely different from the private-owner case
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Powers  (beat 3: civics, planning, taxes, politics. THE LOAD-BEARING SECTION)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "fh-powers-enclave",
+      title: "8 · Instrument one: land the county cannot tax and does not govern",
+      section: "Section 3 · Powers",
+      body: `**This is the section the course exists for.** Course 1 taught five instruments a city uses on its own ground. **This section teaches what happens when the landowner is not a city, a company or a university, but the United States.** Learn these four instruments and you can read any military town, any federal campus, any national laboratory, and any base that has closed or is going to.
+
+**Keep the definition from course 1:** an instrument is **a specific legal power, exercised by a specific body, under a specific statute, leaving a specific document.** The last clause is what makes history researchable.
+
+## Instrument one has two halves: jurisdiction and taxation
+
+**Half one: another sovereign on the ground.** The Constitution provides for it explicitly. **Article I, Section 8, Clause 17** gives Congress power to exercise authority "over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings" (U.S. Const. art. I, § 8, cl. 17). **That is called the Enclave Clause**, and it is the constitutional basis for the idea that a piece of ground inside a state can be governed under federal rather than state authority.
+
+**Two cautions before you use it, because this is where amateur accounts go wrong.**
+1. **Not every federal property is an exclusive-jurisdiction enclave.** Jurisdiction over a given installation can be exclusive, concurrent, partial or merely proprietary, and it depends on **what the state ceded and what the United States accepted, at the time of acquisition**. **This course has not read the jurisdictional history of this specific post and does not assert one.** If you need it, the answer lives in Indiana's cession statutes and the Army's real property records.
+2. **"Federal land" is a legal status, not a fence.** The practical experience of it changes with each of those categories, which is exactly why you have to look it up rather than assume.
+
+**Half two, and this one is simple and enormous: the local government cannot tax it.** The principle is as old as *McCulloch v. Maryland* (1819), in which the Supreme Court held that a state may not tax an instrumentality of the federal government. **Federal property does not appear on a county's tax rolls.** The U.S. Department of Education says it in one plain sentence when explaining why a school aid programme exists: "Because federally owned property does not generate taxes, the revenue for the school district is dramatically reduced, but the school district is required to educate the same number of students as before the Federal property was acquired" (U.S. Department of Education, n.d.).
+
+## Now do the arithmetic that this course is really about
+
+Put the numbers from Section 1 next to that rule.
+
+- **Roughly 2,400 acres** in Lawrence Township, Marion County, held by the United States from the early 1900s.
+- A built complex with **its own water system, its own power plant, its own hospital, its own bakery, its own stockade and its own rail station** (McGillem et al., 1993, sec. 8, p. 2).
+- By **1982**, over **10,000 civilian and military personnel** working there, with the Soldier Support and Finance Center carrying a combined budget of **$180 million**, making the post the **fifth largest employer in Indianapolis** (Hankins, 2020, p. 21, citing Indianapolis News reporting).
+- In the early 1990s the fort was **the largest employer in Lawrence with nearly 10,000 civilian and military employees** (Encyclopedia of Indianapolis, n.d.-c).
+
+**Read those four bullets together and you have the civic question of this course in a single shape.** A landowner that is **the largest employer in the city** and **one of the largest in the county** contributes **nothing to the property tax base**, while **generating no demand at all for several services** the local government would otherwise have to provide, and **enormous demand for others**: roads to it, houses around it, and **schools for the children of the people who work there.**
+
+**That is not an accusation.** It is a description of a real and permanent fiscal asymmetry that every community hosting a federal installation lives with, and Congress has legislated about it more than once. Lesson 9 takes the legislation.
+
+## Three consequences you can see on the ground
+
+**1. The service boundary and the tax boundary are different shapes.** You already know from course 1 that a township, a council district and a school district are three different outlines over the same ground. **A federal reservation adds a fourth kind of line**: one that a map will draw, an assessor will not bill, and a police department may or may not enter. **When you look up a parcel in Section 5, notice how many different boundaries claim it.**
+
+**2. Land that pays no tax is also land under no pressure to earn.** A private owner holding 1,700 wooded acres inside a growing metropolitan county pays property tax on them every year, which is a standing incentive to subdivide and sell. **The United States pays no such tax to Marion County and felt no such pressure.** Lesson 11 shows you what ninety years of that produced, and it is the single most consequential fact about this ground.
+
+**3. When federal land comes back, it arrives on the tax rolls all at once.** A parcel that has never been assessed suddenly has to be. **Somebody has to value it, zone it, serve it and collect on it**, and there is a whole Indiana statute about who. That is instrument four.
+
+**The research move for this lesson.** If you want to know what a federal installation costs and gives a local government, do not start with an opinion piece. **Start with three documents: the school district's Impact Aid application, the county assessor's exempt-property roll, and the installation's own real property records.** All three exist. **All three are more informative than any argument about them, and none of them were read for this course.**
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-c). *Lawrence*. https://indyencyclopedia.org/lawrence/
+- Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
+- McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text
+- McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316 (1819).
+- U.S. Const. art. I, § 8, cl. 17.
+- U.S. Department of Education. (n.d.). *Impact Aid Section 7002: Payments for federal property*. https://www.ed.gov/grants-and-programs/formula-grants/impact-aid/impact-aid-section-7002--payments-for-federal-property`,
+      recallContent: [
+        {
+          prompt: "What is the Enclave Clause, and what must you not assume from it?",
+          answer: "Article I, Section 8, Clause 17 lets Congress exercise authority over places purchased with a state legislature's consent for forts, magazines, arsenals, dockyards and other needful buildings. Do not assume every federal property is an exclusive-jurisdiction enclave: jurisdiction may be exclusive, concurrent, partial or proprietary depending on what the state ceded and the United States accepted.",
+        },
+        {
+          prompt: "Why does federal property not appear on a county's tax rolls?",
+          answer: "Because a state may not tax an instrumentality of the federal government, a principle running back to McCulloch v. Maryland in 1819. The Department of Education states plainly that federally owned property does not generate taxes.",
+        },
+        {
+          prompt: "State the fiscal asymmetry this post created for Lawrence and Marion County.",
+          answer: "It was the largest employer in Lawrence with nearly 10,000 civilian and military employees and the fifth largest in Indianapolis by 1982, and it contributed nothing to the property tax base, while creating demand for roads, housing and above all schools for workers' children.",
+        },
+        {
+          prompt: "Why is untaxed land also land under no pressure to earn?",
+          answer: "A private owner of 1,700 wooded acres in a growing county pays property tax annually, which is a standing incentive to subdivide and sell. The United States paid no such tax and felt no such pressure, which is why the forest survived.",
+        },
+        {
+          prompt: "Name the three documents to start with if you want to know what a federal installation costs and gives a local government.",
+          answer: "The school district's Impact Aid application, the county assessor's exempt-property roll, and the installation's own real property records. None of them were read for this course.",
+        },
+      ],
+    },
+    {
+      slug: "fh-powers-tax-base",
+      title: "9 · Instrument two: what a community gets instead of taxes",
+      section: "Section 3 · Powers",
+      body: `Congress knows what lesson 8 described, and has legislated about it. **The substitutes are the instrument, and knowing their names is the difference between complaining about a problem and reading the file on it.**
+
+## Impact Aid, the oldest federal K-12 programme
+
+**What it is.** Impact Aid sits in **Title VII of the Elementary and Secondary Education Act** and pays school districts affected by a federal presence. It has two limbs that people constantly confuse, and the distinction is the lesson.
+
+| Limb | What it compensates | Trigger |
+|---|---|---|
+| **Section 7003, basic support** | The cost of educating **federally connected children**: children living on federal property, children of uniformed service members, and others | A count of eligible children |
+| **Section 7002, payments for federal property** | The **lost tax base itself** | The federal government has acquired, **since 1938**, real property with an assessed valuation of at least **10 percent** of all real property in the district at the time of acquisition |
+
+**Section 7002 is the one that matters for this course**, and its eligibility test is worth reading twice. The Department of Education describes it as assisting districts "that have lost a portion of their local tax base because of Federal ownership of property," reimbursing for land removed from the rolls **after 1938**, and it notes that roughly **200 school districts** receive Section 7002 funds each year (U.S. Department of Education, n.d.).
+
+**Two research warnings before you go looking.**
+1. **The 1938 cut-off does real work.** Property the federal government acquired **before 1938** does not generate a Section 7002 claim. **This post's land was bought around 1903 to 1908.** Whether the school district serving it ever qualified under Section 7002, and on what basis, is a **question this course did not answer and you should not assume either way.** The applications are filed annually and are public.
+2. **Eligibility is not payment.** These are **formula grants subject to appropriation**, which is a phrase you should learn to notice. **A district can be eligible for a full entitlement and receive a fraction of it**, every year, for decades. Anyone writing about federal impact on a school district must distinguish **what the formula says is owed** from **what Congress actually appropriated**.
+
+**The transferable point.** When a government exempts something from tax, **it usually creates a programme to compensate the loser, and that programme is almost always smaller, later, and more conditional than the exemption.** You will find the same pattern behind payments in lieu of taxes for federal public lands, behind non-profit hospital and university host agreements, and behind every tax abatement a city grants a developer. **Find the exemption, then find the compensation, then compare their sizes. That is a whole method.**
+
+## The annexation of 1970, which is the local twist
+
+Here is where this post gets genuinely interesting, and where it links to the rest of this cluster.
+
+**In 1970 the City of Lawrence annexed the fort.** The U.S. Army approved the annexation in **July 1970**, and the Indianapolis Star reported it complete in **August 1970**. It added roughly **5,000 people, 26 miles of roads and 2,500 acres** to the city (Hankins, 2020, p. 19, citing Indianapolis Star reporting). The Encyclopedia of Indianapolis records the same event more tersely and adds an important qualifier: the fort "was annexed in 1970, despite objections from the U.S. Army" (Encyclopedia of Indianapolis, n.d.-c).
+
+**Notice the two sources disagree about the Army's posture.** Hankins describes an Army that approved it; the Encyclopedia describes an annexation carried out over Army objections. **Both can be partly right if approval followed objection**, which is ordinary in intergovernmental negotiation. **Do not resolve it by choosing the version you like.** The annexation ordinance and the Army's correspondence would settle it, and neither was read here.
+
+**Now the timing, which is not a coincidence.** Indiana's **Unigov** consolidation of Indianapolis and Marion County took effect on **1 January 1970**. Lawrence is one of the municipalities Unigov did not absorb: the Encyclopedia of Indianapolis describes it as **"a Unigov excluded town" with its own mayor, city council, police and fire departments, municipal water company and parks department** (Encyclopedia of Indianapolis, n.d.-c). **In the same year that the region consolidated, an excluded city annexed the largest federal landholding in the county.** Course 4 of this cluster takes Unigov and the suburbs directly. **This is where the two courses touch: a boundary decision at the metropolitan scale, and a boundary decision at the municipal scale, in the same twelve months.**
+
+**And here is the sting, which is the actual civics.** **Annexing federal land does not make it taxable.** Lesson 8's rule does not bend for a city ordinance. So what did Lawrence get?
+
+- **Population for census and formula purposes**, which drives distributions of many kinds
+- **Twenty-six miles of roads** and the obligations attached to them
+- **Jurisdictional standing** over the ground, whatever its precise extent, for the day the federal government eventually left
+- The mayor at the time, **Morris Settles**, put the civic side of it in a sentence a reporter kept: "We thought it would be nice, kind of prestigious to have them as an official part of the city. Besides, how many other mayors can brag that that they have their own Army?" (Indianapolis News, 11 November 1982, as cited in Hankins, 2020, p. 20)
+
+**Read that quotation for what it is.** It is a real, sourced, published remark by a named mayor, and it is charming. **It is also not a fiscal analysis**, and a careful writer quotes it as personality rather than as evidence about municipal finance.
+
+**What the annexation bought, in hindsight.** Twenty-one years later the base closed. **When roughly 2,500 acres of federal ground came back onto the market, it came back inside the corporate limits of the City of Lawrence**, because of a decision taken in 1970. **Whether anyone intended that is not documented in any source read here.** What is documented is the sequence, and the sequence is the point: **a jurisdictional decision made when land is worthless to you determines who benefits when it becomes valuable.** That single sentence is the most portable thing in this course.
+
+**The relationship was not only fiscal, and the record shows it.** The post ran a "Partners in Education" programme with the Lawrence Township School District that put high school computer science students on the fort's computer system, and by the early 1980s roughly **ten percent of Lawrence High School students were connected to the military through activities at the fort** (Hankins, 2020, pp. 20-21). Soldiers coached and umpired in Lawrence's Little League. **A base is a neighbour as well as a landowner**, and any account that keeps only the ledger is missing most of the relationship.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-c). *Lawrence*. https://indyencyclopedia.org/lawrence/
+- Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
+- U.S. Department of Education. (n.d.). *Impact Aid Section 7002: Payments for federal property*. https://www.ed.gov/grants-and-programs/formula-grants/impact-aid/impact-aid-section-7002--payments-for-federal-property
+- U.S. Department of Education. (n.d.). *Impact Aid grants*. https://www.ed.gov/grants-and-programs/formula-grants/impact-aid-grants`,
+      recallContent: [
+        {
+          prompt: "What is the difference between Impact Aid Section 7003 and Section 7002?",
+          answer: "Section 7003 pays basic support for the cost of educating federally connected children. Section 7002 compensates for the lost tax base itself, and requires that the federal government acquired property since 1938 worth at least 10 percent of all real property in the district at the time.",
+        },
+        {
+          prompt: "Why can this course not tell you whether the district serving this post qualified under Section 7002?",
+          answer: "Because the land was bought around 1903 to 1908 and Section 7002 only counts property acquired after 1938, and because the annual applications are public but were not read here. Assume nothing either way.",
+        },
+        {
+          prompt: "What does the phrase 'formula grants subject to appropriation' warn you about?",
+          answer: "That eligibility is not payment. A district can be eligible for a full entitlement and receive a fraction of it for decades, so always separate what the formula says is owed from what Congress actually appropriated.",
+        },
+        {
+          prompt: "What happened in 1970, and what did it not accomplish?",
+          answer: "The City of Lawrence annexed the fort, adding about 5,000 people, 26 miles of roads and 2,500 acres. It did not make the land taxable, because a city ordinance cannot override the rule that a state may not tax federal property.",
+        },
+        {
+          prompt: "Why is 1970 a significant year for this annexation beyond the annexation itself?",
+          answer: "Unigov took effect on 1 January 1970 and Lawrence is a Unigov excluded city with its own mayor, council, police, fire, water and parks. A metropolitan boundary decision and a municipal boundary decision happened in the same twelve months.",
+        },
+        {
+          prompt: "State the portable lesson of the 1970 annexation.",
+          answer: "A jurisdictional decision made when land is worthless to you determines who benefits when it becomes valuable. When roughly 2,500 acres came back after 1991, they came back inside the City of Lawrence because of a 1970 decision.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
