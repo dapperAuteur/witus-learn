@@ -101,6 +101,11 @@ import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { GREAT_MIGRATION_AND_THE_WORLD_COURSE } from "./data/great-migration-and-the-world-course";
 import { GREEN_BOOK_READ_A_ROUTE_COURSE } from "./data/green-book-read-a-route-course";
 import { INDIANA_AVENUE_COURSE } from "./data/indiana-avenue-course";
+import { GYM_COLOR_LINE_COURSE } from "./data/gym-color-line-course";
+import { TWO_RACETRACKS_COURSE } from "./data/two-racetracks-course";
+import { MUDSOCK_BOUNDARY_COURSE } from "./data/mudsock-boundary-course";
+import { PRESIDENTS_HOUSE_COURSE } from "./data/presidents-house-course";
+import { FORT_HARRISON_COURSE } from "./data/fort-harrison-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
 import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
@@ -694,6 +699,16 @@ async function main() {
     // (Borland & Linebarger), not asserted from memory. NO migration, run pnpm seed:courses. The 360
     // tour URL drops in later via `contentUrl` on `ia-now-tour` plus a re-seed.
     { slug: "indiana-avenue-a-district-and-what-replaced-it", course: INDIANA_AVENUE_COURSE, category: "Culture & History" },
+    // The rest of the Indianapolis cluster (plans/39). Each applies the six-beat site template to
+    // one place in the same metro, so together they teach the civic instruments from several angles:
+    // clearance, school district lines, admission to a sport, suburban formation, federal land, and a
+    // presidency. Each ships WITHOUT its 360 tour; the Wanderlearn embed URL drops into the
+    // `*-now-tour` lesson's contentUrl later and a re-seed picks it up (see plans/37 section 1).
+    { slug: "the-gym-and-the-color-line", course: GYM_COLOR_LINE_COURSE, category: "Culture & History" },
+    { slug: "two-racetracks", course: TWO_RACETRACKS_COURSE, category: "Culture & History" },
+    { slug: "mudsock-how-a-rivalry-marks-a-boundary", course: MUDSOCK_BOUNDARY_COURSE, category: "Culture & History" },
+    { slug: "the-presidents-house", course: PRESIDENTS_HOUSE_COURSE, category: "Culture & History" },
+    { slug: "fort-harrison-the-federal-footprint", course: FORT_HARRISON_COURSE, category: "Culture & History" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

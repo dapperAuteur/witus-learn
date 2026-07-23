@@ -502,6 +502,9 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
       section: "Decide",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What does Steve Blank's 'there are no facts inside your building' mean for validating an idea?",

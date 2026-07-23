@@ -287,6 +287,9 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Which constitution governs Washington today?",

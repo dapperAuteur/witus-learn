@@ -345,6 +345,9 @@ A projection is a *story about the future*, and the future doesn't read your spr
       section: "Risk, Honesty & Capstone",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "A business made $300 in revenue and spent $180. What's its profit, and what does revenue NOT tell you?",

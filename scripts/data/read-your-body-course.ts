@@ -265,6 +265,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
       "section": "Module 2: Wearable Tech and Data Collection",
       "quiz": {
         "passingScore": 80,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         "questions": [
           {
             "prompt": "Which number on your tracker is the most accurate, with an error under about two percent in good devices?",

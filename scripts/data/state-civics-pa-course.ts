@@ -371,6 +371,9 @@ The practical payoff: **who provides your service depends on where you live**. I
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "When was Pennsylvania's current constitution adopted, and how is it amended?",

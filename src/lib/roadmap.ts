@@ -445,6 +445,28 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`:::reveal\` click-to-reveal, and the 180 recall beats became self-graded recall cards.
   Authored explanations cite 14 CFR only where a real rule governs. Re-run \`pnpm seed:faa\`
   (\`--dry-run\` prints the breakdown without touching the DB).
+- ✅ **The Indianapolis cluster: five more site courses** (\`bundle/indy-cluster-2026-07-23\`). The
+  route-course series now has its full first metro: **The Gym and the Color Line**, **Two Racetracks**,
+  **Mudsock**, **The President's House** and **Fort Harrison**, joining the Indiana Avenue pilot. Each
+  applies the same six-beat template to one place, so the metro teaches clearance, school district
+  lines, admission to a sport, suburban formation, federal land and a presidency as six views of the
+  same civic machinery. Every one ships **without its 360 tour**: the Wanderlearn embed URL drops into
+  the \`*-now-tour\` lesson later and a re-seed picks it up.
+  The research changed the plan more than once, which is the point. The proposed Unigov spine was cut
+  as a cause of Indiana Avenue's clearance because every instrument predates it. Course 2 refined what
+  survives: Unigov did not segregate the schools, it made an existing segregation permanent at the one
+  moment Indiana's own rule would have dissolved it. Course 3 could find no published rule barring
+  Black drivers from the premier race, and a 1947 newspaper statement cuts the other way, so the claim
+  became the documented mechanism of licensing and entry approval. Course 4 refused "where the tax base
+  went" for lack of a longitudinal study. Course 5 declined to resolve Harrison into a hero. Where
+  accounts disagree, these courses teach the disagreement.
+- ✅ **Quiz answer positions are balanced, and guarded** (\`fix/quiz-answer-balance\`). A catalogue-wide
+  audit found **118 quiz banks** where more than 60 percent of correct answers sat at one option index
+  with no shuffling, roughly 1,250 questions a learner could pass by always picking the same letter.
+  All 118 now shuffle, so the stored index never reaches the screen as a fixed slot, and scoring is
+  unaffected because it is by identity. **No prompt, option, correct answer or explanation changed**,
+  so per-question history survives. \`pnpm check:quiz-balance\` runs inside \`pnpm lint\` and fails
+  the build if a skewed unshuffled bank ever returns.
 - ✅ **Saved offline courses know when they are out of date** (\`feat/offline-content-version\`,
   migration 0037). BAM asked the honest question: do offline courses sync when the professor updates
   them? The answer was half yes. Lesson PAGES are network-first, so an online learner always sees

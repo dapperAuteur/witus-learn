@@ -49,6 +49,10 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
   {
     moduleOrder: 0,
     title: "Start Here Quiz",
+    // Options shuffle per attempt so a fixed answer position cannot be gamed;
+    // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+    questionsPerAttempt: 8,
+    shuffleOptions: true,
     questions: [
       {
         prompt: "How many questions are on the FAA Part 107 (UAG) knowledge test, and how long do you get?",
@@ -904,6 +908,10 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
   {
     moduleOrder: 4,
     title: "Radio Communications Quiz",
+    // Options shuffle per attempt so a fixed answer position cannot be gamed;
+    // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+    questionsPerAttempt: 8,
+    shuffleOptions: true,
     questions: [
       {
         prompt:
@@ -1076,6 +1084,10 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
   {
     moduleOrder: 5,
     title: "Airspace Quiz",
+    // Options shuffle per attempt so a fixed answer position cannot be gamed;
+    // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+    questionsPerAttempt: 8,
+    shuffleOptions: true,
     questions: [
       {
         prompt:
@@ -2311,6 +2323,10 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
   {
     moduleOrder: 13,
     title: "Apply for Your Certificate Quiz",
+    // Options shuffle per attempt so a fixed answer position cannot be gamed;
+    // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+    questionsPerAttempt: 8,
+    shuffleOptions: true,
     questions: [
       {
         prompt: "Which system do you use to apply for the remote pilot certificate, and what do you need from it first?",

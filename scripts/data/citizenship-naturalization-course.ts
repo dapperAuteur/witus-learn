@@ -291,6 +291,9 @@ Because naturalization applications involve money, deadlines, and immigration st
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Under the 14th Amendment, who is a U.S. citizen at birth?",

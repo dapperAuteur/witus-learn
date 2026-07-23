@@ -345,6 +345,9 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
       section: "Part 4 · AI & society",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt:

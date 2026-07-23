@@ -224,6 +224,9 @@ Statewide officers serve **4-year terms.**
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How is an Iowa caucus different from a primary?",

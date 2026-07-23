@@ -354,6 +354,9 @@ Because Michigan layers **county + township + city/village** together, "who do I
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Which constitution governs Michigan today, and when did it take effect?",

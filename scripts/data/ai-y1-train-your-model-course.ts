@@ -459,6 +459,9 @@ You've gone from "AI is magic" to training, testing, and thinking hard about a m
       section: "Part 3: Use It Wisely",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is the core idea behind machine learning?",

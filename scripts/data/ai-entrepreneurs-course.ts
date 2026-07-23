@@ -395,6 +395,9 @@ A feature that's "basically free" while you test it can become a real monthly bi
       section: "Trust & Decide",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What's the most honest way for a founder to think about AI in their business?",

@@ -317,6 +317,9 @@ If you can't trace a claim back to a verified source, it isn't ready to publish.
       section: "Writing it up",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is the single biggest risk when using AI for research?",

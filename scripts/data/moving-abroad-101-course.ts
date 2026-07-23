@@ -340,6 +340,9 @@ No country will score perfectly on all six. The point of the framework is to com
       title: "10 · Check your understanding",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is the key legal difference between residency and citizenship in a destination country?",

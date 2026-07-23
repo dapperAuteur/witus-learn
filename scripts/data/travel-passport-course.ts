@@ -304,6 +304,9 @@ Once reported, the passport is **permanently invalid**, even if you find it late
       title: "10 · Check your understanding",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Can a U.S. passport card be used to fly internationally?",

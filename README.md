@@ -135,8 +135,17 @@ see [OPERATING.md](OPERATING.md), mirrored in-app at `/help` → "Keeping course
 
 ```bash
 pnpm typecheck   # next typegen && tsc --noEmit
-pnpm lint
+pnpm lint        # eslint + check:em-dashes + check:quiz-balance
 pnpm test        # Vitest, unit + the isolation suite
+```
+
+The two content guards inside `pnpm lint` can also be run on their own:
+
+```bash
+pnpm check:em-dashes     # no em/en dashes in user-visible copy (--list shows protected hits)
+pnpm check:quiz-balance  # no quiz bank of 8+ questions parks over 60% of its correct answers at
+                         #   one option index without `shuffleOptions: true` (--list prints every
+                         #   bank). The fix is always the flag, never reordering options.
 ```
 
 ## Future classes & features (`/admin/future`)

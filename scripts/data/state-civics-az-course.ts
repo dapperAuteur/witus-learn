@@ -381,6 +381,9 @@ And thanks to the **Voter Protection Act**, a measure you help pass is hard for 
       section: "Final Quiz",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is the defining feature of Arizona's constitution emphasized in this course?",

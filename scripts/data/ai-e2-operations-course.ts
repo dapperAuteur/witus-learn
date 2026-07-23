@@ -419,6 +419,9 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
       section: "Decide & Plan",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Which task is the BEST candidate to automate in a small business?",

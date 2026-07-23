@@ -328,6 +328,9 @@ Practical habits: **keep records** (screenshots, receipts, the ad itself, order 
       section: "Verify & act",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Which statement is legal \"puffery\" rather than a claim that needs proof?",

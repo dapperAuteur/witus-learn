@@ -1325,6 +1325,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
       section: "Strategy",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What does \"play to your miss\" mean?",
@@ -2000,6 +2004,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
       section: "History",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What did the Scottish Parliament's 1457 Act actually do about golf?",
@@ -2376,6 +2384,10 @@ That third question is the one this course keeps asking. **You would find out th
       section: "Tours & Leagues",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "Which organization owns the PGA Championship and the Ryder Cup?",
@@ -2996,6 +3008,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
       section: "Opportunities",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How many ways are there to lose your amateur status under the current Rules?",
