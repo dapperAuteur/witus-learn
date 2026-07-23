@@ -242,6 +242,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
       body: "A graded quiz on Section 1. The bank is larger than any single attempt, so a retry draws a fresh set of questions. Passing score is 70%. Every answer links back to the lesson that teaches it.",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "How does the Onondaga Nation itself describe lacrosse?",
@@ -1062,6 +1066,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
       body: "A graded quiz on Section 3. Passing score is 70%.",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What are the five fundamentals of lacrosse?",
@@ -1751,6 +1759,10 @@ Some things that have happened:
       body: "A graded quiz on Section 5. Note that several answers here are dated, if you're reading this well after July 2026, verify the Olympic status yourself. Passing score is 70%.",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "When may NCAA Division I lacrosse coaches first contact a recruit?",
@@ -2284,6 +2296,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
       body: "The final graded quiz. Passing score is 70%.",
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
         questions: [
           {
             prompt: "What is the minimum age for a USA Lacrosse Junior Coach certification?",

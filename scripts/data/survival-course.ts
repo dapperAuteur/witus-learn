@@ -719,6 +719,9 @@ Fill in each blank from the cited lessons. This is *formative* practice. Check y
 A ten-question check on the course's core, cited principles. Passing score is 70%. Each question links back to the lesson that teaches it. Review the source for anything you miss. Remember: passing this quiz is *not* training. For life-safety skills, take a hands-on course and follow official guidance.`,
       quiz: {
         passingScore: 70,
+        // Options shuffle per attempt so a fixed answer position cannot be gamed;
+        // scoring is by identity, so no answer changes (src/lib/quiz.ts).
+        shuffleOptions: true,
         questions: [
           {
             prompt:
