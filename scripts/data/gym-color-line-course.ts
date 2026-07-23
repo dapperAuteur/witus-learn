@@ -1505,6 +1505,426 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Next  (beat 5: live civics. where the lines are now, who pays, how one moves)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gcl-next-live-civics",
+      title: "17 · Where the lines are today, who pays for the building, and how a district line is actually moved",
+      section: "Section 5 · Next",
+      body: `Beat 5 is the beat that turns a history course into a civics course. **The boundary you spent Section 3 reading about is still there, it still decides things, and somebody is deciding something about it this year.**
+
+## 1. Where the lines are
+
+**Marion County still has eleven school corporations**: Indianapolis Public Schools, eight township corporations (Decatur, Franklin, Lawrence, Perry, Pike, Warren, Washington and Wayne), plus the city corporations of Beech Grove and Speedway. **The same eleven the Seventh Circuit described in 1974.**
+
+**Here is the detail that surprises almost everybody, and it is the single most useful fact in this lesson.** The IPS boundary is **not** a township boundary and it is **not** the old city limit. **Seven townships have land inside the IPS boundary**: Lawrence, Wayne, Washington, Warren, Pike, Decatur and Perry (Chalkbeat Indiana, 2025a). **The line is a fossil.** It is roughly where the City of Indianapolis stopped growing its schools, frozen by the 1961 and 1969 acts and by Unigov, and it now cuts across seven separate townships without matching any of them.
+
+**How many children are inside it.** Roughly **49,000** K-12 public school students live within IPS boundaries. About **40 percent** of them attend charter schools, and IPS-run schools enrol about **21,000** (Chalkbeat Indiana, 2025b). **Note the disagreement in circulation**: coverage of the 2026 legislation describes the system as serving "nearly 43,000 students" (WFYI, n.d.). **Those two numbers are not a contradiction, they are two different counts**: students who live inside the line, versus students actually enrolled in schools the arrangement covers. **When two figures for "how many kids" differ, the first question is always what each one counted.**
+
+**The trend, for scale.** IPS enrolled about **108,000** students in 1971, about **47,000** by the early 1990s, and roughly **21,000** in district-run schools today (Chalkbeat Indiana, 2025b).
+
+## 2. Who pays for what, and why gyms are a boundary story
+
+**Indiana splits school money in a way that catches people out.** Classroom operations are paid mainly through **state tuition support**, appropriated in the state budget and distributed by a formula: a **foundation amount** for every student, plus **complexity** dollars that go to students from low-income backgrounds, plus targeted categories (Appleton, 2025). The two-year budget proposed in February 2025 put tuition support at about **9.4 billion dollars** for 2025-26 and **9.6 billion** for 2026-27 (Appleton, 2025).
+
+**So does the district line still decide the money? Yes, but through the property tax side, which is exactly the side that builds gyms.**
+
+**Local property tax supports the funds that pay for buildings and buses.** A school corporation levies for its **operations fund**, for **debt service** on bonds and leases, and, if voters approve one, for an **operating referendum levy** under **Indiana Code section 20-46-1** or a **school safety referendum levy** under **section 20-46-9** (Indiana Department of Local Government Finance, 2023).
+
+**Now do the arithmetic that this whole course has been building toward.** A property tax levy raises **rate multiplied by assessed value inside the line**. **Two districts with identical rates and identical children raise different amounts of money if different parcels are inside them.** A district with a shopping centre, a hospital campus and high-value housing inside its boundary can build a fieldhouse. A district without them cannot, at the same rate, no matter how much its community wants one. **That is not a metaphor for the argument in Section 3. It is the same argument, in the present tense, with a tax bill attached.**
+
+**Three live changes, all dated.**
+
+- **2023.** Senate Enrolled Act 391 requires school corporations in **Lake, Marion, St. Joseph and Vanderburgh counties** to share operating and safety referendum revenue with participating charter schools, for referendum resolutions adopted after **10 May 2023** (Indiana Department of Local Government Finance, 2023). **Read the county list again.** A statute that applies to four named counties is the **1961 technique**, running in 2023.
+- **2025.** Senate Enrolled Act 1 raised homestead deductions. The Indiana Fiscal Policy Institute projects districts will lose about **338 million dollars** in anticipated revenue by 2028. Referendum questions were restricted to **November general elections in even-numbered years**, so a district now gets **one chance every two years**. From **2028**, referendum revenue must be shared with charter schools statewide, phased in over four years for operations fund revenue. **IPS faces an estimated 97 million dollar cost between 2026 and 2032** (Beck, 2026).
+- **2026.** Experts estimated **40 to 50 Indiana districts** could put a referendum on the November 2026 ballot (Beck, 2026). **That is a live election about school property tax, happening now, in a state where the district line decides who votes in it.**
+
+**One vocabulary item you now need.** Indiana law calls the tie between a child and a district **legal settlement**. The DLGF's own guidance counts "students in kindergarten through grade 12 who have legal settlement in the school corporation but attend a charter school" (Indiana Department of Local Government Finance, 2023). **A district line does not only draw a school. It assigns a legal status to a child**, and that status is what follows the money.
+
+## 3. How a district line is actually moved
+
+**Three routes, and Indiana has used all three.**
+
+**Route 1: annexation between school corporations, Indiana Code article 20-23, chapter 5.** The statute defines the word plainly: "'Annex', 'annexing', 'annexation', and 'school annexation' mean **any action whereby the boundaries of a school corporation are changed** so that additional territory, constituting all or a part of any one (1) or more other school corporations, is transferred to the school corporation" (Ind. Code section 20-23-5-2). Reporting on the 2025 Indianapolis discussion describes the process as requiring **a resolution adopted by both the district losing territory and the district gaining it**, with **voters in the district losing territory able to file a remonstrance**, and the annexing district assuming the obligations for buildings in the acquired territory (Chalkbeat Indiana, 2025a). **The remonstrance from lesson 9 is still in the statute, sixty-five years after it was put there.**
+
+**Route 2: reorganisation, Indiana Code article 20-23, chapter 4.** Forming new school corporations, altering the boundaries of existing ones, or dissolving them, by uniting corporations, subdividing them, transferring part of a territory, attaching territory, or any combination.
+
+**Route 3: the legislature, which is what Indiana actually does.** The 1961 act. The 1969 acts. Unigov. And, in the last two years, twice more:
+- **2025: House Enrolled Act 1515** created the **Indianapolis Local Education Alliance**, a task force required to report on governance, facilities and transportation for all schools inside the IPS boundary by **31 December 2025**. On **17 December 2025** it voted **8 to 1** to recommend a new independent authority (Chalkbeat Indiana, 2025c).
+- **2026: House Enrolled Act 1423** created the **Indianapolis Public Education Corporation**, a municipal corporation with a **nine-member board appointed by the mayor of Indianapolis**, taking over budgets and tax levies, school property, a unified transportation system and a unified school performance system, with full implementation delayed to the **2028-29 school year** (Indiana State Teachers Association, 2026).
+
+**Stop and look at what route 3 did, because it is Unigov's move run on the other axis.** **The 2026 law does not move the IPS boundary at all.** It moves the **power inside** it, from an elected school board to a board appointed by a mayor. **A boundary can stay exactly where it is while everything about who governs inside it changes**, and vice versa. **Ask both questions about any district, always: where is the line, and who holds the power inside it?**
+
+**And there is a live boundary proposal too.** In **November 2025**, IPS board members floated shrinking the district to **Center Township alone**, bounded by 38th Street on the north, Emerson Avenue on the east, Troy Avenue on the south and Belmont Avenue on the west. It would remove **47 district and charter schools** from IPS borders and affect **more than 10,000 students**. A Lawrence Township spokesperson said the township "has not been part of any conversation, committee work, or formal discussion regarding this matter" (Chalkbeat Indiana, 2025a). **Nothing has been adopted.** As in course 1, **"not adopted yet" is the finding, and it is where a citizen has the most leverage**, because an unadopted proposal is still open to comment and a resolution has not been voted.
+
+## 4. The four questions, for any district in any state
+
+1. **Where is the boundary, and where is the authoritative file?** Not a news graphic. The federal boundary file or the county GIS.
+2. **Which fund pays for what here, and which of them is local property tax?** Find out whether the classroom and the building are paid for from the same place. In Indiana they are not.
+3. **What is the legal procedure to change this boundary, and who has to agree?** Name the statute. Find out whether a remonstrance, a referendum or a legislative act is required, and who may file.
+4. **Who is deciding something about this district right now?** A board, a task force, a legislature, a court. **When do they meet, and is the agenda public?**
+
+**The honest limits of this lesson.** Every dollar figure, every projection and every proposal above carries a date and a source, and **all of them will move.** A bill gets amended, a proposal is dropped, a projection is revised. **Re-check every one before you rely on it.** That instruction is not a disclaimer. It is the method.
+
+## Sources
+- Appleton, A. (2025, February 20). *See how Indiana education funding proposals have changed*. Chalkbeat Indiana. https://www.chalkbeat.org/indiana/2025/02/20/bills-affecting-education-funding-pass/
+- Beck, C. (2026, June 9). *Why Indiana school districts are rushing to put tax referendums on the November ballot*. WFYI, via WVPE. https://www.wvpe.org/indiana-news/2026-06-09/why-indiana-school-districts-are-rushing-to-put-tax-referendums-on-the-november-ballot
+- Chalkbeat Indiana. (2025a, November 14). *IPS board members float shrinking district's boundaries, but getting buy-in could be tricky*. https://www.chalkbeat.org/indiana/2025/11/14/changing-indianapolis-public-schools-boundaries-draws-concerns-from-parents/
+- Chalkbeat Indiana. (2025b, December 19). *Why the fractured Indianapolis school system faces a power shakeup*. https://www.chalkbeat.org/indiana/2025/12/19/how-desegregation-and-charters-led-to-indianapolis-local-education-alliance/
+- Chalkbeat Indiana. (2025c, December 18). *ILEA recommends independent authority to oversee IPS, charter schools*. https://www.chalkbeat.org/indiana/2025/12/18/indianapolis-local-education-alliance-recommends-new-independent-authority/
+- Indiana Department of Local Government Finance. (2023, October 10). *Legislation affecting school funding matters* [Memorandum]. https://www.in.gov/dlgf/files/2023-memos/231010-Shackle-Memo-Legislation-Affecting-School-Funding-Matters.pdf
+- Indiana State Teachers Association. (2026). *2026 legislative review*. https://www.ista-in.org/our-advocacy/2026-legislative-review
+- Ind. Code section 20-23-5-2 (definition of annexation). https://codes.findlaw.com/in/title-20-education/in-code-sect-20-23-5-2/
+- WFYI. (n.d.). *Mayor-appointed board to assume control of IPS and charter school facilities, finances*. https://www.wfyi.org/news/articles/indiana-senate-passes-hb1423-ips-charters-ipec-2026`,
+      recallContent: [
+        {
+          prompt: "How many townships have land inside the IPS boundary, and why does that matter?",
+          answer: "Seven: Lawrence, Wayne, Washington, Warren, Pike, Decatur and Perry. The IPS line is not a township line and not the current city limit. It is roughly where the school district stopped growing, frozen by the 1961 and 1969 acts and by Unigov.",
+        },
+        {
+          prompt: "In Indiana, which parts of a school budget come from the state and which from local property tax?",
+          answer: "Classroom operations come mainly from state tuition support, distributed by a formula with a foundation amount plus complexity dollars for students from low-income backgrounds. Local property tax supports the operations fund, debt service on bonds and leases, and any referendum levy under Indiana Code 20-46-1 or 20-46-9.",
+        },
+        {
+          prompt: "Why does a district boundary still decide whether a community can build a gym?",
+          answer: "Because a property tax levy raises rate multiplied by the assessed value inside the line. Two districts with identical rates and identical children raise different amounts if different parcels are inside them, and buildings are paid for from the property tax side.",
+        },
+        {
+          prompt: "Give the three routes by which a school district line can be moved in Indiana.",
+          answer: "Annexation between school corporations under Indiana Code 20-23-5, which needs a resolution from both the losing and the gaining district and is subject to remonstrance by voters in the losing district; reorganisation under 20-23-4; and an act of the General Assembly, which is what Indiana actually used in 1961, 1969, 2025 and 2026.",
+        },
+        {
+          prompt: "What did the 2026 law do to the IPS boundary, and what did it do instead?",
+          answer: "Nothing to the boundary. House Enrolled Act 1423 created the Indianapolis Public Education Corporation, a nine-member board appointed by the mayor, which takes over budgets and tax levies, property, transportation and school performance, with full implementation in 2028-29. A boundary can stay put while everything about who governs inside it changes.",
+        },
+        {
+          prompt: "What is 'legal settlement' and why does the term matter here?",
+          answer: "Indiana's statutory term for the tie between a student and a school corporation. A district line does not only draw a school, it assigns a legal status to a child, and that status is what the money follows.",
+        },
+      ],
+    },
+    {
+      slug: "gcl-next-exercise-district",
+      title: "18 · Practice: look up a real school, its district, and its boundary",
+      section: "Section 5 · Next",
+      lessonType: "exercise",
+      body: `**Do this drill with the real tools open in another tab.** Everything below is free and public, and it works for any public school in the United States.
+
+**The tools.**
+- **NCES School and District Navigator**, the federal map of public schools and school district boundaries: https://nces.ed.gov/ccd/schoolmap/
+- **NCES EDGE school district boundary files**, the geographic datasets behind it, published for school years from **1989-90 through 2024-25**: https://nces.ed.gov/programs/edge/Geographic/DistrictBoundaries
+- **Indiana Graduates Prepared to Succeed (GPS)**, the Indiana Department of Education's public dashboard for enrolment, demographics and performance by school and corporation: https://indianagps.doe.in.gov/
+- **MapIndy**, the official geographic information system for the Consolidated City of Indianapolis and Marion County: https://maps.indy.gov/MapIndy/
+
+**Your target: Crispus Attucks High School, Indianapolis.** It is a public institutional building, its location is published by the district that runs it, and you are not exposing anybody's home.
+
+## Work through these, then answer the items below
+
+1. Find **Crispus Attucks High School** in the NCES School and District Navigator. **Read off the school district it belongs to** and note the **NCES identification number** for both the school and the district. Write them down exactly.
+2. Turn on the **district boundary** layer. **Find the nearest point where the district boundary runs, and note which district is on the other side of it.** How far is it from the school?
+3. In **MapIndy**, enter the school's location and turn on **township**, **city council district** and **school district** as separate layers. **Confirm for yourself that those three boundaries are three different shapes over the same ground.** Section 3 explained why.
+4. Identify **which township the school physically sits in**, and confirm that this is **not** the same thing as which school corporation it belongs to. **Seven townships have land inside the IPS boundary.**
+5. In **Indiana GPS**, pull enrolment and demographic figures for this school. Then pull the same figures for **one township high school** in Marion County. **Put the two side by side.** Do not draw a conclusion yet. Write down what each number is a count of, and for what year.
+6. In the **EDGE boundary files**, download the composite file for a recent school year and one from the 1990s. **Compare the district boundary across those years.** If it did not move, that is a finding: this line has now survived a Supreme Court decision, a federal desegregation order and thirty-five years of busing.
+7. Find out whether the district has held an **operating referendum**, when, and what the result was. Then check whether the resolution was adopted before or after **10 May 2023**, because that date decides whether charter schools share the revenue in Marion County.
+8. Find the **next public meeting** of the body that governs this district, and check whether the agenda is posted. **Attending one is the cheapest civic act there is.**
+
+**The habits this builds, which transfer to any American district.** The tool names change from state to state and the four facts do not: **which district a school is in, where that district's boundary runs, which overlapping jurisdictions cover the same ground, and which fund pays for the building.** Learn to find those four and you can research any school in the country.
+
+**One rule you do not get to break.** **Do not run this drill on a child.** Do not attach a named student to an address, a school assignment or a demographic figure in anything you publish. Practise on institutions, boundaries and public bodies. **A school is a public body. A student is not.**
+
+## Sources
+- City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
+- Indiana Department of Education. (n.d.). *Indiana Graduates Prepared to Succeed (GPS)*. https://indianagps.doe.in.gov/
+- Indiana Department of Local Government Finance. (2023, October 10). *Legislation affecting school funding matters* [Memorandum]. https://www.in.gov/dlgf/files/2023-memos/231010-Shackle-Memo-Legislation-Affecting-School-Funding-Matters.pdf
+- National Center for Education Statistics. (n.d.-a). *School and district navigator*. https://nces.ed.gov/ccd/schoolmap/
+- National Center for Education Statistics. (n.d.-b). *EDGE: School district boundaries*. https://nces.ed.gov/programs/edge/Geographic/DistrictBoundaries`,
+      exercise: {
+        instructions:
+          "Type the missing term, number, body or year, then check. Close answers (spelling, capitalization) count as 'close', not wrong.",
+        items: [
+          {
+            prompt: "The federal agency that publishes school district boundary files is the National Center for ___ Statistics.",
+            answer: "Education",
+            accept: ["education", "nces"],
+            explanation: "Its EDGE programme publishes composite district boundary files for school years from 1989-90 through 2024-25.",
+          },
+          {
+            prompt: "The NCES public map for finding a school and its district is the School and District ___.",
+            answer: "Navigator",
+            accept: ["navigator", "school and district navigator"],
+            explanation: "At nces.ed.gov/ccd/schoolmap/. Start there for any public school in the country.",
+          },
+          {
+            prompt: "The official GIS for the Consolidated City of Indianapolis and Marion County is called ___.",
+            answer: "MapIndy",
+            accept: ["map indy", "mapindy"],
+            explanation: "Turn on township, council district and school district as separate layers and watch three different shapes appear over the same ground.",
+          },
+          {
+            prompt: "Marion County contains ___ school corporations today.",
+            answer: "eleven",
+            accept: ["11"],
+            explanation: "IPS, eight township corporations, plus Beech Grove and Speedway. The same eleven the Seventh Circuit described in 1974.",
+          },
+          {
+            prompt: "___ townships have land inside the IPS boundary, which is why the school district line is not a township line.",
+            answer: "Seven",
+            accept: ["7"],
+            explanation: "Lawrence, Wayne, Washington, Warren, Pike, Decatur and Perry. The IPS line is a fossil of where the school district stopped growing.",
+          },
+          {
+            prompt: "Indiana's statutory term for the tie between a student and the school corporation they belong to is legal ___.",
+            answer: "settlement",
+            accept: ["legal settlement"],
+            explanation: "A district line does not only draw a school. It assigns a legal status to a child, and the money follows that status.",
+          },
+          {
+            prompt: "Classroom operations in Indiana are paid mainly from state ___ support, distributed by a formula.",
+            answer: "tuition",
+            accept: ["tuition support"],
+            explanation: "A foundation amount for every student plus complexity dollars for students from low-income backgrounds, plus targeted categories.",
+          },
+          {
+            prompt: "The part of the funding formula that adds money for students from low-income backgrounds is the ___ index.",
+            answer: "complexity",
+            accept: ["complexity index"],
+            explanation: "Foundation dollars follow every student; complexity dollars follow poverty.",
+          },
+          {
+            prompt: "Buildings, buses and utilities are paid from the ___ fund, which is supported by local property tax.",
+            answer: "operations",
+            accept: ["operations fund", "operating"],
+            explanation: "Along with debt service on bonds and leases. That is why a gym is a boundary question: the levy raises rate multiplied by the assessed value inside the line.",
+          },
+          {
+            prompt: "A school corporation may ask voters to raise a property tax rate for operating costs through an operating ___ levy.",
+            answer: "referendum",
+            accept: ["referendum levy", "operating referendum"],
+            explanation: "Under Indiana Code section 20-46-1. School corporations are the local governments that use this route.",
+          },
+          {
+            prompt: "Under Senate Enrolled Act 391 of 2023, referendum revenue is shared with charter schools in four named counties: Lake, ___, St. Joseph and Vanderburgh.",
+            answer: "Marion",
+            accept: ["marion county"],
+            explanation: "A statute that applies to four named counties is the 1961 technique running in 2023. Applies to resolutions adopted after 10 May 2023.",
+          },
+          {
+            prompt: "Moving territory from one school corporation to another under Indiana Code 20-23-5 is called ___.",
+            answer: "annexation",
+            accept: ["annex", "school annexation"],
+            explanation: "Defined as any action whereby the boundaries of a school corporation are changed so that territory of another corporation is transferred to it.",
+          },
+          {
+            prompt: "Voters in the district losing territory can block or delay that annexation by filing a ___.",
+            answer: "remonstrance",
+            accept: ["remonstrance petition"],
+            explanation: "The same instrument the 1961 act inserted into Marion County school annexations. It forbids nothing; it makes an automatic step stoppable.",
+          },
+          {
+            prompt: "The 2026 body that took over IPS budgets, levies, property and transportation is the Indianapolis Public ___ Corporation.",
+            answer: "Education",
+            accept: ["education", "ipec"],
+            explanation: "Created by House Enrolled Act 1423, with a nine-member board appointed by the mayor and full implementation in the 2028-29 school year. It changed who governs inside the line, not the line.",
+          },
+          {
+            prompt: "In November 2025, IPS board members floated shrinking the district to ___ Township alone.",
+            answer: "Center",
+            accept: ["center township", "centre"],
+            explanation: "Bounded by 38th Street, Emerson Avenue, Troy Avenue and Belmont Avenue. It would remove 47 schools and affect more than 10,000 students. Nothing has been adopted.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "gcl-quiz-next",
+      title: "19 · Quiz: the line in the present tense",
+      section: "Section 5 · Next",
+      quiz: {
+        passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options (the repo standard).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why can no 360 tour ever show you the most important object in this course?",
+            options: [
+              "Because the cameras are not high enough",
+              "Because a school district boundary has no physical existence: no fence, no sign, no change in the pavement. It exists only as a description in a record",
+              "Because district boundaries are confidential",
+              "Because boundaries change too often to photograph",
+            ],
+            correctIndex: 1,
+            explanation: "That invisible line decides which building a child may enter, which is the strongest possible argument for reading records rather than only looking.",
+            sourceLessonSlug: "gcl-now-tour",
+          },
+          {
+            prompt: "When you record a gym's seating capacity, what must you record with it?",
+            options: [
+              "The architect's name",
+              "The number of championships won there",
+              "The year and the source",
+              "The size of the parking lot",
+            ],
+            correctIndex: 2,
+            explanation: "A 2019 recount reordered Indiana's largest high school gyms and a 2020 renovation reordered them again. New Castle is reported at 8,424 today and 9,325 in 1959-60, and both can be right.",
+            sourceLessonSlug: "gcl-now-tour",
+          },
+          {
+            prompt: "How should you treat a championship banner or a dedication plaque in a school lobby?",
+            options: [
+              "As decoration, not evidence",
+              "As proof that the events happened as described",
+              "As a source that needs no citation",
+              "As a document with an author, a sponsor and a date, recording what an institution agreed to say in public in a particular year",
+            ],
+            correctIndex: 3,
+            explanation: "Note which years are up and which are not, and who decides what goes on the wall.",
+            sourceLessonSlug: "gcl-now-tour",
+          },
+          {
+            prompt: "Why does the lesson map plot other cities rather than Marion County's eleven districts?",
+            options: [
+              "Because Marion County data is unavailable",
+              "Because a fixed world projection needs points roughly two degrees apart to separate them, and Marion County is about 25 kilometres across, so it collapses into one dot",
+              "Because the other cities are more important",
+              "Because the map cannot display markers in Indiana",
+            ],
+            correctIndex: 1,
+            explanation: "Choosing the right scale of map for your question is a research skill. For a boundary you need a boundary file, not a world map.",
+            sourceLessonSlug: "gcl-map",
+          },
+          {
+            prompt: "What did the Connecticut Supreme Court hold in Sheff v. O'Neill in 1996, and why is it on this map?",
+            options: [
+              "That Milliken applied to state courts as well",
+              "That Hartford's schools were adequately integrated",
+              "That the state had an affirmative constitutional obligation to provide substantially equal educational opportunity, and that districting based on town and city boundary lines was unconstitutional",
+              "That school districts could secede from their counties",
+            ],
+            correctIndex: 2,
+            explanation: "Milliken is a federal constitutional decision and does not control what a state constitution requires. That question has fifty different answers.",
+            sourceLessonSlug: "gcl-map",
+          },
+          {
+            prompt: "In the Memphis and Shelby County case, why was the first statute allowing suburban municipalities to form their own districts struck down?",
+            options: [
+              "Because a federal judge found the state legislation violated the state constitution because it applied only to Shelby County",
+              "Because the municipalities failed to hold referenda",
+              "Because the districts were too small to be viable",
+              "Because the merger had not yet taken effect",
+            ],
+            correctIndex: 0,
+            explanation: "That is the same one-county carve-out technique Indiana used in 1961. Tennessee's constitution treats such local legislation differently than Indiana's did.",
+            sourceLessonSlug: "gcl-map",
+          },
+          {
+            prompt: "How many townships have land inside the Indianapolis Public Schools boundary?",
+            options: ["One, Center Township", "Three", "Seven", "All nine"],
+            correctIndex: 2,
+            explanation: "Lawrence, Wayne, Washington, Warren, Pike, Decatur and Perry. The IPS line is not a township line and not the current city limit. It is a fossil of where the school district stopped growing.",
+            sourceLessonSlug: "gcl-next-live-civics",
+          },
+          {
+            prompt: "In Indiana, which money pays for classroom operations and which pays for buildings and buses?",
+            options: [
+              "Both come from local property tax",
+              "Both come from the state budget",
+              "Classrooms are funded by federal grants and buildings by the county",
+              "Classroom operations come mainly from state tuition support distributed by formula; buildings and buses come from local property tax through the operations fund, debt service and any referendum levy",
+            ],
+            correctIndex: 3,
+            explanation: "Which is why a gym is a boundary question even in a state that pays for teaching centrally.",
+            sourceLessonSlug: "gcl-next-live-civics",
+          },
+          {
+            prompt: "Why does a district boundary still determine what a community can build, even where the state pays for teaching?",
+            options: [
+              "Because a property tax levy raises rate multiplied by the assessed value inside the line, so two districts with identical rates and identical children raise different amounts",
+              "Because the state gives extra money to wealthy districts",
+              "Because building codes vary by district",
+              "Because construction contracts are awarded by school boards",
+            ],
+            correctIndex: 0,
+            explanation: "A district with high-value property inside its line can build a fieldhouse at a rate that raises nothing like as much next door.",
+            sourceLessonSlug: "gcl-next-live-civics",
+          },
+          {
+            prompt: "Senate Enrolled Act 391 of 2023 required referendum revenue sharing with charter schools in which counties?",
+            options: [
+              "All 92 Indiana counties",
+              "Lake, Marion, St. Joseph and Vanderburgh",
+              "Marion County only",
+              "No counties; it was statewide from 2028",
+            ],
+            correctIndex: 1,
+            explanation: "A statute naming four counties is the 1961 technique running in 2023. It applies to referendum resolutions adopted after 10 May 2023.",
+            sourceLessonSlug: "gcl-next-live-civics",
+          },
+          {
+            prompt: "What did Senate Enrolled Act 1 of 2025 change about school referendums?",
+            options: [
+              "It abolished school referendums",
+              "It required a two-thirds majority to pass one",
+              "It raised homestead deductions, restricted referendum questions to November general elections in even-numbered years, and required referendum revenue to be shared with charter schools statewide from 2028",
+              "It transferred referendum authority to county councils",
+            ],
+            correctIndex: 2,
+            explanation: "The Indiana Fiscal Policy Institute projects districts will lose about 338 million dollars in anticipated revenue by 2028, and IPS an estimated 97 million between 2026 and 2032. A district now gets one ballot chance every two years.",
+            sourceLessonSlug: "gcl-next-live-civics",
+          },
+          {
+            prompt: "Under Indiana Code 20-23-5, what does it take to move territory from one school corporation to another?",
+            options: [
+              "A resolution adopted by both the losing and the gaining district, with voters in the losing district able to file a remonstrance",
+              "A single vote of the state board of education",
+              "A county-wide referendum",
+              "An order of the Department of Local Government Finance",
+            ],
+            correctIndex: 0,
+            explanation: "The remonstrance the 1961 act inserted into Marion County school annexations is still in the statute sixty-five years later.",
+            sourceLessonSlug: "gcl-next-live-civics",
+          },
+          {
+            prompt: "What did House Enrolled Act 1423 of 2026 do?",
+            options: [
+              "It merged IPS with the eight township districts",
+              "It shrank the IPS boundary to Center Township",
+              "It abolished the IPS school board outright",
+              "It created the Indianapolis Public Education Corporation, a nine-member board appointed by the mayor that takes over budgets and levies, property, transportation and school performance, with full implementation in 2028-29",
+            ],
+            correctIndex: 3,
+            explanation: "Note what it did NOT do: it did not move the boundary. It moved the power inside it. Ask both questions about any district: where is the line, and who holds power inside it?",
+            sourceLessonSlug: "gcl-next-live-civics",
+          },
+          {
+            prompt: "The November 2025 proposal to shrink IPS to Center Township would have done what, and what is its status?",
+            options: [
+              "Removed 47 district and charter schools and affected more than 10,000 students; nothing has been adopted",
+              "Added three townships to IPS; it was adopted in December 2025",
+              "Merged IPS with Beech Grove and Speedway; it is before a court",
+              "Dissolved IPS entirely; it takes effect in 2028",
+            ],
+            correctIndex: 0,
+            explanation: "Bounded by 38th Street, Emerson Avenue, Troy Avenue and Belmont Avenue. 'Not adopted yet' is the finding, and it is where a citizen has the most leverage.",
+            sourceLessonSlug: "gcl-next-live-civics",
+          },
+          {
+            prompt: "The exercise ends with one rule you do not get to break. What is it?",
+            options: [
+              "Never criticise a school board in writing",
+              "Do not run the drill on a child: never attach a named student to an address, a school assignment or a demographic figure in anything you publish",
+              "Never download the boundary files",
+              "Do not attend a public meeting without permission",
+            ],
+            correctIndex: 1,
+            explanation: "Practise on institutions, boundaries and public bodies. A school is a public body. A student is not.",
+            sourceLessonSlug: "gcl-next-exercise-district",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
