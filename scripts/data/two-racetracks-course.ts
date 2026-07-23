@@ -1239,12 +1239,12 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
           {
             prompt: "Why is this course's civic question unusually measurable?",
             options: [
+              "Because a sport counts and publishes everything: starters, entries, qualifying attempts, finishes and prize money, every year, by the sanctioning body itself",
               "Because the state keeps a register of every driver",
               "Because the census counts race car drivers",
-              "Because a sport counts and publishes everything: starters, entries, qualifying attempts, finishes and prize money, every year, by the sanctioning body itself",
               "Because the answer has already been settled",
             ],
-            correctIndex: 2,
+            correctIndex: 0,
             explanation: "Contrast course 1, where 'how many buildings did the Avenue lose' has no answer because no survey was ever run.",
             sourceLessonSlug: "tr-powers-what-opened-the-gate",
           },
@@ -1859,6 +1859,181 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
           },
         ],
       },
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Write  (beat 6: ELA and creative nonfiction, grounded in the place)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "tr-write-assignment",
+      title: "19 · Your assignment: write one race, or one refusal",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `Beat 6 asks a question no other beat can: **what can only be said about this place?** Answering it is a writing problem, and this assignment is a real one.
+
+## The assignment
+Write **900 to 1,300 words** of creative nonfiction about **one race, one driver, one decision, or one piece of ground** connected to these two tracks. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is the one Section 3 used.**
+
+## Step 1 · Choose one, and choose small
+"Racing and race in America" is not a subject, it is a topic. **These are subjects:**
+- **The 1931 Gold and Glory Sweepstakes at Walnut Gardens Speedway**, a 50-mile race on a track lent for one dollar by a man who sat on the organising board.
+- **One entry refusal at Dayton Speedway**, and the word "registration."
+- **The 1936 race, cut from 100 miles to 50**, and the thirteen cars on the fourth turn of the second lap.
+- **One yard of brick**, and the 3.2 million it stands for.
+- **The gap between June 26, 1949 and May 19, 1991.**
+- **The 2019 conversion of a dirt mile into a limestone training surface and a parking lot.**
+
+If you do not live in Indianapolis and cannot visit, that is not a disqualification. **It is a constraint you disclose in the piece**, and it changes what you can honestly claim.
+
+## Step 2 · Build the four-column table before you write a sentence
+Course 1's lesson 13 killed a good argument with a table of dates. **This course's lesson 10 killed a good argument with a table of documents.** Build your own with these columns: **claim, source, what kind of source it is, and what would settle it.** That last column is the one most writers skip and the one that will make your piece worth reading.
+
+## Step 3 · Decide what kind of piece this is
+Pick one and commit, because mixing them is what makes place writing mushy.
+- **A biography of an event.** One race, from entry list to finishing order.
+- **A biography of a builder.** A person who made something: a car, an association, a garage, a newspaper column.
+- **A history of a gate.** One licence, one registration, one entry approval, one refusal, followed to whatever document exists.
+- **A report on a present.** What is on the ground now, who governs it, what plan is being written, what a public meeting sounded like.
+- **A piece about the record itself.** What you could and could not find, and what the gap means.
+
+**The last one is the hardest and often the best**, and in this subject it may be the most honest, because lesson 10 showed you that the central document may not exist.
+
+## Step 4 · Write it, under these craft rules
+1. **Lead with a specific.** A date, a speed, a street number, a line from a rulebook. Not a mood, and not an engine noise.
+2. **Name the gate every time you name an exclusion.** "He was not allowed to race" is weak. "Their entry was refused because they lacked AAA registration, which the AAA issued" is strong, and it is sourced.
+3. **Give a figure its owner.** Not "he won four times" but "the Encyclopedia of Indianapolis records wins in 1926, 1931, 1932 and 1933, while an article published by AAA says three."
+4. **Distinguish an outcome from an instrument, out loud, in the piece.** Eighty years without a Black starter is an outcome. A rule is an instrument. **This is the single skill this course exists to teach, and a piece that blurs it has not learned it.**
+5. **Say "no record was found," never "there was no rule."** One is a claim about your search; the other is a claim about the world.
+6. **Use the present tense for the present.** Both tracks are working facilities under active management today. Neither is a ruin, and writing either as one is false.
+7. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+1. **No invented detail.** Not a date, a name, a quotation, a speed, a finishing position or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: **you do not know what the dirt smelled like, what the crowd shouted, or what anybody was thinking.**
+2. **No composite or imagined characters.** Real, cited people only. This course has given you Charlie and Roberta Wiggins, William Rucker and six named co-founders, Malcolm Hannon, John Simmons, Bill Carson, Sumner "Red" Oliver, Bobby Wallace, Harry Earl, Frank A. "Fay" Young, Joie Ray, Willy T. Ribbs and George Mack. **That is more than enough material.**
+3. **No invented dialogue**, including "he might have said."
+4. **Do not novelise the crash.** The 1936 pileup injured real people whose descendants are living, and the sources give you a turn, a lap, a car count and a consequence. **Write those. Do not write the flames.** A writer who reaches for spectacle at the exact moment the evidence runs out has told you what the piece is really for.
+5. **Credit what was built.** Seven men founded an association. A mechanic bought the shop he was hired into and built a winning car in it. A newspaper named a race and carried it to eight states. **A piece that inventories only refusal is an incomplete report.**
+6. **No ruin porn and no lost golden age.** The Gold and Glory Sweepstakes was a working promotion with thin margins, not a paradise, and its end has a documented double cause: Depression finances and one crash.
+7. **Handle living organisations fairly.** The Speedway, its current owner, the Town of Speedway and the Indiana State Fair Commission all exist today and all have positions. **Quote what they say, cite where they said it, and separate what an organisation says from what its records show.**
+8. **Say what you did to a number.** Averaged, converted, adjusted for inflation, or rounded: say so and say how.
+
+## What good looks like
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** A man who built his car in the shop where he worked and won a national championship four times, a race shortened by half so ambulances could reach the fourth turn, a track lent for one dollar, a single yard of brick standing for 3.2 million, and forty-two years between a licence and a start: **none of that needs decorating.**
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-c). *Gold and Glory Sweepstakes*. https://indyencyclopedia.org/gold-and-glory-sweepstakes/
+- Encyclopedia of Indianapolis. (n.d.-d). *Charles Edwin "Charlie" Wiggins*. https://indyencyclopedia.org/charles-edwin-charlie-wiggins/
+- Gould, T. (2002). *For gold and glory: Charlie Wiggins and the African-American racing car circuit*. Indiana University Press.
+- Mullins, P. R. (2015, May 16). *Racing along the color line*. Archaeology and Material Culture. https://paulmullins.wordpress.com/2015/05/16/racing-along-the-color-line/
+- PBS. (n.d.-b). *For gold and glory: History*. https://www.pbs.org/forgoldandglory/history/`,
+      recallContent: [
+        {
+          prompt: "What is the difference between a topic and a subject in this assignment?",
+          answer: "'Racing and race in America' is a topic. 'The 1931 Gold and Glory Sweepstakes at Walnut Gardens Speedway, a 50-mile race on a track lent for one dollar by a man on the organising board' is a subject. Smaller is better.",
+        },
+        {
+          prompt: "What are the four columns of the table you build before writing, and which one matters most?",
+          answer: "Claim, source, what kind of source it is, and what would settle it. The last column is the one most writers skip and the one that makes a piece worth reading.",
+        },
+        {
+          prompt: "Give the craft rule about outcomes and instruments.",
+          answer: "Distinguish them out loud in the piece. Eighty years without a Black starter is an outcome; a rule is an instrument. A piece that blurs them has not learned the course.",
+        },
+        {
+          prompt: "Why must you write 'no record was found' rather than 'there was no rule'?",
+          answer: "Because the first is a claim about your search and the second is a claim about the world. Lesson 10 could establish the first and not the second.",
+        },
+        {
+          prompt: "Why does the assignment forbid novelising the 1936 crash?",
+          answer: "Because real people were injured and have living descendants, and the sources give a turn, a lap, a car count and a consequence. Reaching for spectacle at the exact moment the evidence runs out tells you what the piece is really for.",
+        },
+      ],
+    },
+    {
+      slug: "tr-what-comes-next",
+      title: "20 · What this course set up, and what it left out",
+      section: "Section 6 · Write",
+      body: `You have now run the six-beat site template on a subject that does not look like a planning story, and watched it work anyway. **That transfer is the product of this course, more than the racing material is.**
+
+| Beat | What you did here | What you can now do anywhere |
+|---|---|---|
+| **1. Then** | Established two institutions with dates before comparing them | Refuse to compare things you have not yet defined |
+| **2. Built** | Read engineered ground as architecture, and a preserved yard as a token | See land use and preservation as decisions rather than scenery |
+| **3. Powers** | Enumerated five gates, found the central document missing, and reported it | Ask who holds each gate, and what record each one leaves |
+| **4. Now** | Built an observation brief for a venue that manages its own image | Look past a managed image at the parts nobody photographs |
+| **5. Next** | Sorted three grounds into three governance regimes | Find out which body to address before you address anybody |
+| **6. Write** | Wrote grounded nonfiction under an evidence standard | Publish something the next researcher can build on |
+
+## What you can do that you could not do before
+
+- **Recognise a sanctioning body** as an instrument, and know that its defining feature is that it need not leave a record.
+- **Tell an outcome from an instrument**, and say which one your evidence supports.
+- **Read a parallel institution as evidence about the main one**, and credit its builders by name.
+- **Notice a statute renamed rather than repealed.** "Area needing redevelopment" is where "blighted" went, and condemnation is still on the list of acquisition methods.
+- **Measure the interval between a formal opening and a real change**, which in this story is about forty-two years.
+- **Say "this course found no record of X" instead of "X did not happen."**
+
+## What this course deliberately did not cover, and why
+
+- **NASCAR, Formula One, and integration in motorsport generally.** This is a site course about two grounds in one city. **A national or global history of race and motorsport is a different course** and would need a different source base.
+- **Any claim about the racial composition of the Town of Speedway.** The source used does not address it, so this course says nothing, and lesson 6 points you at the census tables instead.
+- **The intent of any individual official at either track.** No minutes have been read. **Section 3 says so in the text**, which is better than an assertion.
+- **A ranking of the causes of the forty-two-year gap** between licensing and a start. Four candidates were named; none was ranked, because ranking would need budgets, contracts and entry lists this course has not seen.
+- **Women's admission to the same race**, which is a real and separate question with its own dates, its own gates and its own sources. **It deserves a course rather than a paragraph borrowed to decorate this one.**
+- **The Fairgrounds beyond its mile track.** The State Fair is a large institution with its own history of who was admitted to what, and this course used only the track.
+
+## The unopened sources, which are the next real work
+
+**None of these has been read into this course. All of them exist somewhere.**
+- **AAA Contest Board rulebooks, bulletins and minutes**, and **USAC's founding bylaws of 1955**.
+- **Indianapolis 500 entry lists and licence registers**, including refused entries.
+- **The full runs of the *Indianapolis Recorder* and the *Chicago Defender***, which is also where the unnamed Sweepstakes cities would be found.
+- **The Indiana State Fair Commission's minutes**, including whatever was said when the mile was resurfaced in 2019.
+- **The Indianapolis Motor Speedway's National Historic Landmark nomination**, for its boundary, period of significance and contributing features.
+- **The Speedway Redevelopment Commission's enabling record and minutes**, which this course reported at second hand and could not open.
+
+**If you want to make an original contribution to this story rather than restate it, that is the list.**
+
+## Where this sits in the Indianapolis cluster
+
+**Course 1** took a corridor and named five instruments that removed it, then tested a proposed argument against a chronology and reported that half of it failed. **Course 2** took the school district line. **This course** took a private association's gate, and reported that the document everyone assumes is behind it could not be found.
+
+**Three courses, three tests, two partial failures reported rather than hidden.** That is not a run of bad luck. **It is what happens when you check**, and a series that never reported a failed test would be telling you something about its authors rather than about Indianapolis.
+
+## One last thing about the two tracks
+
+**One of them is a National Historic Landmark that still runs its race, rebuilt around a preserved yard of brick, owned by a company that also owns the rulebook.** **The other is a mile of ground where an association founded by seven named men ran the largest annually staged Black sporting event in the country for a decade, and where the racing surface is now crushed limestone and parking.**
+
+**Both of those are outcomes of decisions, and the decisions have holders and dates.** The people who ran the second track built something real out of a refusal, and the record of what they built survives in race results, average speeds, a newspaper's coverage, a documentary, a book, two historical markers and a hall of fame election. **Most of that record has still not been read properly.** That is the whole method, and it is why this course exists.
+
+## Sources
+- Encyclopedia of Indianapolis. (n.d.-b). *Indiana State Fair and Fairgrounds*. https://indyencyclopedia.org/indiana-state-fair-and-fairgrounds/
+- Encyclopedia of Indianapolis. (n.d.-c). *Gold and Glory Sweepstakes*. https://indyencyclopedia.org/gold-and-glory-sweepstakes/
+- Encyclopedia of Indianapolis. (n.d.-f). *United States Auto Club*. https://indyencyclopedia.org/united-states-auto-club/
+- Gould, T. (2002). *For gold and glory: Charlie Wiggins and the African-American racing car circuit*. Indiana University Press.
+- Ind. Code § 36-7-14 (Redevelopment of areas needing redevelopment generally; redevelopment commissions). https://law.justia.com/codes/indiana/title-36/article-7/chapter-14/
+- Mullins, P. R. (2015, May 16). *Racing along the color line*. Archaeology and Material Culture. https://paulmullins.wordpress.com/2015/05/16/racing-along-the-color-line/`,
+      recallContent: [
+        {
+          prompt: "What is the actual product of this course?",
+          answer: "The six-beat site template transferred to a subject that does not look like a planning story: Then, Built, Powers, Now, Next, Write. The racing material is the worked example.",
+        },
+        {
+          prompt: "Name three things you can do now that you could not before.",
+          answer: "Recognise a sanctioning body as an instrument whose defining feature is leaving no record; tell an outcome from an instrument and say which your evidence supports; notice a statute renamed rather than repealed, as with 'area needing redevelopment'; and measure the interval between a formal opening and a real change.",
+        },
+        {
+          prompt: "Why does this course say nothing about the racial composition of the Town of Speedway?",
+          answer: "Because the source used does not address it. The course points at decennial census and American Community Survey tables for incorporated places instead of guessing.",
+        },
+        {
+          prompt: "Name four unopened sources that would advance this story.",
+          answer: "AAA Contest Board rulebooks and minutes plus USAC's 1955 bylaws; Indianapolis 500 entry lists and licence registers including refused entries; the full runs of the Indianapolis Recorder and the Chicago Defender; the State Fair Commission's minutes including the 2019 resurfacing; the Speedway's National Historic Landmark nomination; and the Speedway Redevelopment Commission's record.",
+        },
+        {
+          prompt: "What do the first three courses of the Indianapolis cluster have in common?",
+          answer: "Each tested an inherited argument and two reported partial failures rather than hiding them. That is what happens when you check, and a series that never reported a failed test would be telling you about its authors rather than about Indianapolis.",
+        },
+      ],
     },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
