@@ -36,10 +36,10 @@
 //          literature, not a settled finding. Lesson 11 says so and names the literature.
 //       2. Harrison's record does not resolve into a hero. He signed the Geary Act on 5 May 1892,
 //          extending Chinese exclusion and requiring Chinese residents to carry a certificate of
-//          residence. He ordered troops to Pine Ridge in November 1890, five weeks before the
-//          Wounded Knee massacre. And he reached the presidency through an 1888 Indiana campaign
-//          shadowed by a documented vote-buying circular, in a state whose city he did not carry.
-//          Lessons 3 and 12 teach all of it.
+//          residence. He ordered the army into the Sioux reservations on 13 November 1890, and the
+//          Wounded Knee massacre followed on 29 December. And he reached the presidency through an
+//          1888 Indiana campaign shadowed by a documented vote-buying circular, in a state whose
+//          city he did not carry. Lessons 3 and 12 teach all of it.
 //   * THE CLUSTER CONNECTION, stated with its limit. Lesson 13 puts the failed federal remedy of
 //     1891 next to the Unigov boundary decision of 1970 (courses 2 and 4): national power and
 //     local boundaries are two levers on one question, who can effectively vote. It does NOT claim
@@ -870,7 +870,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 
 **1. He signed the Geary Act.** On **May 5, 1892**, Harrison signed legislation extending Chinese exclusion for ten years and **requiring Chinese residents of the United States to obtain and carry a certificate of residence**, with deportation or a year of hard labour for those found without one. **A president who spent four years asking Congress to protect one group's political rights signed a law that stripped another group's ordinary liberty and made them carry papers.** Both things are true and they were nineteen months apart.
 
-**2. Wounded Knee happened on his watch, after an order he gave.** On **November 13, 1890**, Harrison ordered that a "body of troops sufficiently large to be impressive" be sent to the Lakota reservations. On **December 29, 1890**, the Seventh Cavalry killed Lakota men, women and children at Wounded Knee Creek. **Casualty estimates vary substantially across sources and this course does not adopt a number.** Soldiers of the Seventh Cavalry subsequently received the Medal of Honor for the engagement, an award that remains contested today. **Five weeks separate that massacre from the Senate vote that killed the elections bill.**
+**2. Wounded Knee happened on his watch, after an order he gave.** **On November 13, 1890, Harrison ordered the army into the Sioux reservations**, to prevent, in the order's words, "any outbreak that may put in peril the lives and homes of the settlers." It became the largest military campaign since Appomattox. On **December 29, 1890**, the Seventh Cavalry opened fire on Lakota people at Wounded Knee Creek. **On the death toll, do exactly what this course keeps telling you to do: take the figure with its definition.** The gravediggers buried **84 men, 44 women and 18 children**, which is **146 documented burials**, and the same account states plainly that **more had died**, because relatives removed bodies and others died elsewhere (PBS American Experience, n.d.). **A burial count is a count of burials.** It is not a casualty total, and this course does not supply one. **Twenty-four days separate that massacre from the Senate vote that killed the elections bill.**
 
 **3. His own election.** Lesson 3 covered it. **The "blocks of five" circular was written by his campaign's treasurer, in his home state, in the election he won**, and he did not carry his own city.
 
@@ -889,9 +889,9 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - Harrison, B. (1889b, December 3). *First annual message*. Miller Center, University of Virginia. https://millercenter.org/the-presidency/presidential-speeches/december-3-1889-first-annual-message
 - Harrison, B. (1891, December 9). *Third annual message*. The American Presidency Project, University of California, Santa Barbara. https://www.presidency.ucsb.edu/documents/third-annual-message-14
 - Harrison, B. (1892, December 6). *Fourth annual message*. The American Presidency Project, University of California, Santa Barbara. https://www.presidency.ucsb.edu/documents/fourth-annual-message-13
-- Geary Act, ch. 60, 27 Stat. 25 (1892). https://immigrationhistory.org/item/geary-act/
+- Geary Act, ch. 60, 52d Cong., 1st Sess. (1892). Immigration History, University of Texas at Austin. https://immigrationhistory.org/item/geary-act/
 - Miller Center. (n.d.-c). *Benjamin Harrison: Domestic affairs*. University of Virginia. https://millercenter.org/president/bharrison/domestic-affairs
-- National Museum of the American Indian. (n.d.). *Wounded Knee*. Smithsonian Institution. https://americanindian.si.edu/`,
+- PBS American Experience. (n.d.). *The Lakota Ghost Dance and the massacre at Wounded Knee*. WGBH. https://www.pbs.org/wgbh/americanexperience/features/american-oz-lakota-ghost-dance-massacre-wounded-knee/`,
       recallContent: [
         {
           prompt: "Quote Harrison's inaugural line about the ballot and give its date.",
@@ -907,7 +907,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
         },
         {
           prompt: "Name the three parts of the record that do not fit a flattering story.",
-          answer: "He signed the Geary Act on May 5, 1892, extending Chinese exclusion and requiring Chinese residents to carry certificates of residence; he ordered troops to the Lakota reservations in November 1890, five weeks before the Wounded Knee massacre; and his own 1888 election carried the 'blocks of five' vote-buying circular written by his campaign treasurer.",
+          answer: "He signed the Geary Act on May 5, 1892, extending Chinese exclusion and requiring Chinese residents to carry certificates of residence; he ordered the army into the Sioux reservations on November 13, 1890, and the Wounded Knee massacre followed on December 29; and his own 1888 election carried the 'blocks of five' vote-buying circular written by his campaign treasurer.",
         },
         {
           prompt: "What is the test of whether you have understood this lesson?",
@@ -1148,7 +1148,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
               "He signed the Geary Act on May 5, 1892, extending Chinese exclusion and requiring Chinese residents to carry certificates of residence",
             ],
             correctIndex: 3,
-            explanation: "He also ordered troops to the Lakota reservations in November 1890, five weeks before the Wounded Knee massacre. A record is a list, not a score.",
+            explanation: "He also ordered the army into the Sioux reservations on November 13, 1890, and the Wounded Knee massacre followed on December 29. A record is a list, not a score.",
             sourceLessonSlug: "ph-powers-the-record",
           },
           {
@@ -1303,7 +1303,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             title: "Wounded Knee Creek, Pine Ridge, South Dakota",
             color: "#15803d",
             description:
-              "A part of the record that does not fit. On November 13, 1890 Harrison ordered that a body of troops sufficiently large to be impressive be sent to the Lakota reservations. On December 29, 1890 the Seventh Cavalry killed Lakota men, women and children here. Casualty estimates vary substantially across sources and this course adopts none. Five weeks separate this from the Senate vote that killed the elections bill.",
+              "A part of the record that does not fit. On November 13, 1890 Harrison ordered the army into the Sioux reservations, to prevent any outbreak that might put in peril the lives and homes of the settlers. On December 29, 1890 the Seventh Cavalry opened fire on Lakota people here. The gravediggers buried 84 men, 44 women and 18 children, and the same account says plainly that more had died. A burial count is a count of burials, not a casualty total, and this course supplies no total. Twenty-four days separate this from the Senate vote that killed the elections bill.",
           },
           {
             id: "ph-san-francisco",
@@ -1550,7 +1550,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             prompt: "The massacre at Wounded Knee Creek took place on December 29, ___.",
             answer: "1890",
             accept: ["eighteen ninety"],
-            explanation: "Harrison had ordered troops to the Lakota reservations on November 13, 1890. Five weeks separate the massacre from the Senate vote that killed the elections bill.",
+            explanation: "Harrison ordered the army into the Sioux reservations on November 13, 1890. Twenty-four days separate the massacre from the Senate vote that killed the elections bill.",
           },
           {
             prompt: "The Harrison house was designated a National Historic ___ on January 29, 1964.",
