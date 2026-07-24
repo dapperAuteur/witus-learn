@@ -1714,6 +1714,485 @@ Here is why the evidence does not carry it.
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 7 · Now
+    //
+    // The 360 tour for this course has not been captured, and a Wanderlearn embed URL is
+    // authoritative external data that must never be guessed
+    // (plans/future/04-wanderlearn-360-boundary.md). So this lesson ships as `virtual_tour` with
+    // NO contentUrl: the player renders the "no media yet" notice above the body, and the body is
+    // the observation brief the learner uses when a tour lands. Drop the URL in and re-seed.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wwr-now-tour",
+      title: "17 · Now: what to look for on the ground (360 tour, forthcoming)",
+      section: "Section 7 · Now",
+      lessonType: "virtual_tour",
+      body: `**The 360 tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is telling you the truth rather than reporting a fault. **Read the lesson anyway**, because it is an observation brief and its whole value is in being read before you arrive anywhere.
+
+**One thing to settle before the list starts.** Four of these five places are **residential communities where people live right now**, and one is a working county facility with a city park next to it. **This is not a ruins tour.** Everything below assumes you are looking at somebody's street.
+
+## What to look for, in order
+
+**1. Find the lot lines, because the lot is the product.** Section 2 taught you that four of these communities were sold lot by lot. **So look for the evidence of the plat in what you can see**: fence lines, hedges, driveway cuts, the rhythm of house spacing, the width of a street.
+
+A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak Bluffs Highlands parcel produce visibly different streets. **Ask of any block: how wide is a lot here, and does every house sit on one lot or on three?** A house sitting on three lots means somebody bought out their neighbours, and that is a transaction with a date.
+
+**2. Find the boundary, and name what is on the other side of it.** Every community in this course has an edge where it stops and something else begins: a resort, a national forest, a state park, a subdivision built later, a county facility. **The boundary is where the interesting decisions happened.** Note whether the change is gradual or abrupt, because abrupt means a line was drawn.
+
+**3. Find the commercial building, and ask whether it is still commercial.** Idlewild had clubs. American Beach has Evans' Rendezvous, which the Park Service says is not available for touring. Highland Beach prohibits commercial establishments outright. **A former nightclub in a residential street is a governance fact standing up in brick.**
+
+**4. Look for the water, and for what protects it.** At American Beach, **8.5 acres of dune are federally owned and the rest is not** (National Park Service, n.d.-b). **Where does public land stop?** In most of these places the answer is a line you cannot see, which is exactly why the parcel map in lesson 18 matters more than the view.
+
+**5. Count the markers and read who sponsored them.** At American Beach, Florida Heritage Site plaques carry the names of the **American Beach Property Owners Association**, **Friends of American Beach, Inc.** and the **Florida Department of State**. At Idlewild there is a **Michigan Historical Commission** marker. **A marker records what a community and an agency agreed to say in public, in a particular year, and the sponsor list is half the information.**
+
+**6. Look for what is being decided right now.** A rezoning notice, a hearing sign, construction fencing, a survey stake, a public meeting flyer. **American Beach has a county planning process running and a National Historic Landmark study under way** (Nassau County, n.d.; National Park Service, n.d.-c). **Every one of those has a docket and a comment period.**
+
+**7. Look at who is there, and then stop looking.** These are working communities. **Describe people as they would describe themselves, or do not describe them.** The ethics of writing about a 360 tour of a residential street are the ethics of writing about your neighbours.
+
+## What a tour cannot show you, which is most of this course
+
+- **It cannot show you a deed.** Ownership is not visible. A well-kept house says nothing about who holds title.
+- **It cannot show you a price.** Not what a lot cost in 1915 and not what it costs now.
+- **It cannot show you a legal shape.** You cannot photograph the difference between an incorporated town and an unincorporated community, and that difference is the argument of lesson 10.
+- **It cannot show you what is gone.** There is nothing to photograph at Lots 8 and 9 of Block 5 except a county building. **Absence does not appear in a panorama; it appears in a plat compared to a photograph.**
+- **It cannot show you consent.** A camera in a public street records people who did not agree to be recorded.
+
+## Before you look, write down five predictions
+
+**Write five specific, falsifiable observations you expect to make**, based on this course and on the map lesson that follows. Then check them against the tour when it lands, or against a visit, or against aerial imagery in a county GIS.
+
+**Being wrong on the record about a place you had not seen is a better teacher than being right about one you had.**
+
+## Sources
+- Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
+- National Park Service. (n.d.-b). *Visiting American Beach*. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/historyculture/ambch_visiting.htm
+- National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
+      recallContent: [
+        {
+          prompt: "What was returned on July 20, 2022, and what was not?",
+          answer: "Lots 8 and 9 of Block 5, the county-owned land holding the Lifeguard Administration Building and its parking lot. Block 12, the city park that carries the name Bruce's Beach, is owned by Manhattan Beach and was not returned.",
+        },
+        {
+          prompt: "Why did the return require an act of the California Legislature?",
+          answer: "Because when the State took ownership in 1948 it imposed a condition that the land be used only as a public beach or park. SB 796, signed September 30, 2021, lifted that restriction. A city ordinance was enough to take it; a state statute was needed to return it.",
+        },
+        {
+          prompt: "What does the 1929 award table explain about how the taking worked?",
+          answer: "Most of the condemned lots were white-owned and the largest single award went to three white owners. A taking aimed at five Black families was executed as a taking of two whole blocks, which is what made public park purposes usable as a stated purpose.",
+        },
+        {
+          prompt: "What are the four complications reported about the return?",
+          answer: "The returned parcels are not the park; four other Black families condemned in 1924 have had nothing returned; the land went back into public ownership within about seven months when the family sold; and it took a city ordinance to take it and a state statute to give it back.",
+        },
+      ],
+    },
+    {
+      slug: "wwr-map",
+      title: "18 · Map: five states, forty-two years, no coordination",
+      section: "Section 7 · Now",
+      body: `**Read this before you touch the map, because the map's limits are half the lesson.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, so two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **Two of the markers below are going to overlap**: Washington, D.C. sits about 55 kilometres from Highland Beach, and at this scale they are one dot.
+
+**That overlap is a fact about the map, not about the places**, and it is exactly why lesson 19 sends you to five different county systems instead. **A 33 foot lot line is roughly five million times smaller than the distance between two of these markers.** No single map does both jobs.
+
+## What this map is for
+
+**It carries one argument: these five communities were separate business decisions, in five states, across forty-two years, mostly by people who did not know each other.** Seeing them spread from Michigan to Florida to California is the cheapest possible cure for the instinct to treat them as a movement.
+
+**Blue: the five communities.** Each marker's detail carries the founding, the instrument and the present legal shape.
+
+**Amber: two market cities.** Chicago and Detroit are where Idlewild's buyers came from and where the newspapers that advertised the lots were read. **A resort is a catchment area, and the catchment is the business.**
+
+**Green: Washington, D.C.**, where the National Register and National Historic Landmark records are kept. Three of these five places carry a National Register listing, and every listing is a decision recorded on a nomination document you can read.
+
+**Coordinates on this map are approximate community points, not surveyed locations.** Do not use them to find an address. Use them to see the spread.
+
+## The right map for a parcel question is a county map
+
+**When your question is about a lot, use the system that holds the lot.** Each of these communities has a different one, and finding the right office is itself the research skill:
+
+- **Highland Beach:** the **Anne Arundel County** land records, Maryland.
+- **Idlewild:** the **Lake County** Register of Deeds, Michigan, which holds the 1915 plat.
+- **American Beach:** the **Nassau County** property appraiser and clerk, Florida.
+- **Oak Bluffs:** the **Dukes County Registry of Deeds**, Massachusetts, which is what Jeffrey Burnett's Highlands map was built from.
+- **Bruce's Beach:** the **Los Angeles County Registrar-Recorder and County Clerk**, plus the Superior Court file in **City of Manhattan Beach v. B. H. Dyer et al., No. 157,573**.
+
+**Five communities, five counties, five different websites, and the same four questions each time:** who owns it, what is it zoned, what is it assessed at, and what has been recorded against it.
+
+## What this map cannot show, and neither could any map
+
+**It cannot show absence.** Every marker here exists because a community survived well enough to be documented. **How many Black resort and beach communities existed and left no institution behind is a question this course cannot answer and will not guess at.** The five here are the ones with museums, associations, historic districts and county reports. **That is a fact about who kept records, as much as about who built things.**
+
+## Sources
+- Burnett, J. (n.d.). *Oak Bluffs historic Highlands map*. https://historic-highlands.oakbluffsarchaeology.org/
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- The Cultural Landscape Foundation. (n.d.). *Idlewild Historic District*. https://www.tclf.org/idlewild-historic-district
+- Maryland Historical Trust. (n.d.). *Douglass Summer House* [National Register properties in Maryland, NRID 1097]. https://apps.mht.maryland.gov/nr/NRDetail.aspx?NRID=1097
+- National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160`,
+      mapContent: {
+        markers: [
+          {
+            id: "wwr-highland-beach",
+            lat: 38.9336,
+            lng: -76.4539,
+            title: "Highland Beach, Anne Arundel County, Maryland",
+            color: "#1d4ed8",
+            description:
+              "Founded 1893 by Major Charles Remond Douglass and his wife Laura after they were refused service at a Chesapeake Bay resort, on land bought from Daniel Brashears, a free Black farmer and waterman. Sources disagree on the size: the town says 26 and two-thirds acres, others say 40 acres with 500 feet of beachfront. Douglass laid out the streets and sold lots. Twin Oaks, built 1894 to 1895 for Frederick Douglass, who died before it was finished, was listed on the National Register on February 20, 1992 and is now the Frederick Douglass Museum and Cultural Center. Incorporated May 12, 1922, the first African American incorporated municipality in Maryland. About 80 homes today, an all-volunteer government, and no commercial establishments permitted.",
+          },
+          {
+            id: "wwr-idlewild",
+            lat: 43.8881,
+            lng: -85.7947,
+            title: "Idlewild, Yates Township, Lake County, Michigan",
+            color: "#1d4ed8",
+            description:
+              "The Idlewild Resort Company was formed in 1912 by four white couples to sell lots on roughly 2,700 acres of cutover timberland to Black buyers in Detroit and Chicago, a fact the community states plainly on its own website. First plat surveyed 1915; clubhouse on the island 1916. In August 1921 the developers turned ownership and management over to the Idlewild Lot Owners Association, run by the Black property owners, which still exists. Nightlife at the Flamingo, the Paradise and the El Morocco, promoted by Phil Giles and Arthur Braggs. Peak visitor figures in circulation are 25,000 and 20,000 on a weekend and almost 25,000 a year, which are three different quantities. National Register district listed June 7, 1979, reference 79001160, with a later boundary increase that sources date to either 2010 or 2015. Unincorporated: the township and county govern.",
+          },
+          {
+            id: "wwr-american-beach",
+            lat: 30.5745,
+            lng: -81.4444,
+            title: "American Beach, Amelia Island, Nassau County, Florida",
+            color: "#1d4ed8",
+            description:
+              "Founded 1935 when the Pension Bureau of the Afro-American Life Insurance Company, headquartered in Jacksonville and founded in 1901 to insure Black Floridians, bought 33 acres of oceanfront. Company president Abraham Lincoln Lewis named it American Beach on the argument that beach access in the United States should be open to everyone. Subdivided and sold to Black-owned companies and shareholders; accounts of its greatest extent range from about 200 to 216 acres. Evans' Rendezvous still stands and is not open for touring. Hurricane Dora landed near St. Augustine on September 10, 1964, ten weeks after the Civil Rights Act. Historic district listed on the National Register in 2002; NaNa dune, 8.5 acres, entered the National Park System through the Timucuan boundary revision act of 2004; the A. L. Lewis Museum opened September 6, 2014. Unincorporated: Nassau County holds the zoning, and a National Historic Landmark study is under way.",
+          },
+          {
+            id: "wwr-oak-bluffs",
+            lat: 41.4544,
+            lng: -70.5622,
+            title: "Oak Bluffs and the Inkwell, Dukes County, Massachusetts",
+            color: "#1d4ed8",
+            description:
+              "No founder and no founding date. The Vineyard Grove Company platted the Highlands into roughly 700 parcels of about 70 by 30 feet around 1870 for a Methodist summer community; when that faltered a Baptist organisation held revivals there and a tabernacle went up in 1877, and Black vacationers began buying. Jeffrey Burnett's deed-based Highlands map identifies 129 deeds in which people of African descent bought or sold land across 22 properties, from Dr. Samuel T. Brimingham in August 1870 onward. Shearer Cottage opened as a 12-room inn in 1912, after Henrietta Shearer ran a laundry for ten years, was listed in the Green Book, and is still owned by Shearer descendants. The Inkwell is the town beach, named as an insult and taken up as a name of pride. The Cottagers, Inc., 100 African American women homeowners, was founded in 1956 and marked seventy years in 2026. Black owners hold property in a town they do not govern, so the institution is voluntary rather than municipal.",
+          },
+          {
+            id: "wwr-bruces-beach",
+            lat: 33.8925,
+            lng: -118.413,
+            title: "Bruce's Beach, Manhattan Beach, Los Angeles County, California",
+            color: "#1d4ed8",
+            description:
+              "Willa Bruce bought Lot 8 of Block 5, Peck's Manhattan Beach Tract, on February 19, 1912 for 1,225 dollars, a parcel 33 and one-third by 105 feet, and opened selling soda pop, lunches, rented bathing suits, showers and dressing tents. A two-storey building with a kitchen and dance floor followed in 1916, and lot 9 in 1920. Four other Black families bought in Block 12 between 1919 and 1923. On June 5, 1924 the Board of Trustees passed Ordinance 276 declaring the intention to condemn both blocks, and ordinances 273 to 275 restricting bath houses and beach changing. Final judgment June 10, 1929 awarded the Bruces 14,500 dollars; most of the condemned lots were white-owned and the largest award went to three white owners. The State took the land in 1948 for public beach or park use only; the County acquired it in 1995. SB 796 was signed September 30, 2021 and the Board returned Lots 8 and 9 to the heirs on July 20, 2022. The family sold back to the County for nearly 20 million dollars in 2023. The park that carries the name is Block 12 and is still the city's.",
+          },
+          {
+            id: "wwr-chicago",
+            lat: 41.8781,
+            lng: -87.6298,
+            title: "Chicago, Illinois",
+            color: "#b45309",
+            description:
+              "One of the two cities Idlewild was sold into. The Idlewild Resort Company advertised its lots in Black newspapers including the Chicago Defender, and the Chicago surgeon Dr. Daniel Hale Williams, who founded Provident Hospital, was among the early buyers whose names made the sales pitch work. A resort is a catchment area, and the catchment is the business.",
+          },
+          {
+            id: "wwr-detroit",
+            lat: 42.3314,
+            lng: -83.0458,
+            title: "Detroit, Michigan",
+            color: "#b45309",
+            description:
+              "The other city Idlewild was sold into, and one terminus of the Pere Marquette Railway line that connected the resort to Chicago, Detroit, Cleveland and St. Louis. Promoter Phil Giles came out of Detroit. Distance from a market is a cost input, and a resort on a rail line has a catchment while a resort off one has a driveway.",
+          },
+          {
+            id: "wwr-washington",
+            lat: 38.8977,
+            lng: -77.0365,
+            title: "National Register and National Historic Landmarks, Washington, D.C.",
+            color: "#15803d",
+            description:
+              "Where the National Register and National Historic Landmark records live. Three of the five communities carry listings: Idlewild's district on June 7, 1979, the Douglass Summer House on February 20, 1992, and the American Beach historic district in 2002, with a National Historic Landmark study of American Beach under way. Every one of those is a decision recorded on a nomination document you can read. This marker will very nearly overlap Highland Beach at this scale, because the two are about 55 kilometres apart, which is the map's limitation rather than the places'.",
+          },
+        ],
+      },
+      recallContent: [
+        {
+          prompt: "Name three things a 360 tour of these communities cannot show you.",
+          answer: "A deed, a price, a legal shape, what is gone, and consent. Ownership is invisible, you cannot photograph the difference between an incorporated town and an unincorporated community, and absence appears in a plat compared to a photograph rather than in a panorama.",
+        },
+        {
+          prompt: "Why does the observation brief tell you to read the sponsor on every historical marker?",
+          answer: "Because a marker records what a community and an agency agreed to say in public in a particular year, and the sponsor list is half the information. At American Beach the plaques carry the Property Owners Association, Friends of American Beach and the Florida Department of State.",
+        },
+        {
+          prompt: "What is the first thing the brief tells you to look for, and why?",
+          answer: "The lot lines, because the lot was the product. Fence lines, hedges, driveway cuts and house spacing are the visible evidence of a plat, and a house sitting on three lots means somebody bought out their neighbours on a date you can find.",
+        },
+        {
+          prompt: "What assumption does the whole brief run on?",
+          answer: "That you are looking at somebody's street. Four of the five are residential communities where people live now, so this is not a ruins tour.",
+        },
+      ],
+    },
+    {
+      slug: "wwr-visiting",
+      title: "19 · What survives, who stewards it, and how to visit without doing harm",
+      section: "Section 7 · Now",
+      body: `**Every one of these places has somebody responsible for it, and the single most useful thing this lesson can do is tell you who.**
+
+## Highland Beach, Maryland
+
+**What is there:** a small incorporated town of about 80 homes with an all-volunteer government, many houses owned by descendants of the original settlers, and **no commercial establishments**, because the town prohibits them (Town of Highland Beach, n.d.; Preservation Maryland, n.d.).
+
+**What you can visit:** **Twin Oaks**, restored in 1986, listed on the National Register on February 20, 1992, and operating as the **Frederick Douglass Museum and Cultural Center** (Maryland Historical Trust, n.d.; Preservation Maryland, n.d.).
+
+**The honest advice:** **there is no visitor economy here.** No hotel, no restaurant, no shop, because the town decided that. **Contact the museum, go to the museum, and do not drive around looking at houses.**
+
+## Idlewild, Michigan
+
+**What is there:** an unincorporated community in Yates Township with a **National Register historic district listed in 1979**, a **Lot Owners Association dating to August 1921**, an **African American Chamber of Commerce founded in 2000**, a **Michigan Historical Commission marker**, and residents the community describes as year-round residents, fourth and fifth generation Idlewilders, seasonal visitors and newcomers (Idlewild Michigan, n.d.; National Park Service, n.d.-e; The Historical Marker Database, n.d.).
+
+**What you can visit:** the **Idlewild Historic and Cultural Center**, plus summer events and festivals the community runs. **Two sources disagree about the Center's date**: the Terry Wantz Historical Research Center says it was established in 2003, and the community's own site says it opened in 2019 (Terry Wantz Historical Research Center, n.d.; Idlewild Michigan, n.d.). **That is very likely an organisation founded in one year and a building opened in another, and the Center itself is the place to confirm it.**
+
+## American Beach, Florida
+
+**What is there:** a residential community that is **mostly privately owned**, in unincorporated Nassau County (National Park Service, n.d.-b).
+
+**What you can visit:** the **A. L. Lewis Museum at American Beach**, open since September 6, 2014. **NaNa dune**, 8.5 acres owned by the National Park Service within the Timucuan Ecological and Historic Preserve. **Burney Beachfront Park**, where the Park Service notes restrooms are available (National Park Service, n.d.-b).
+
+**What you cannot visit: Evans' Rendezvous is not available for touring** (National Park Service, n.d.-b).
+
+**The stewards, by name:** the **American Beach Property Owners Association**, **Friends of American Beach, Inc.**, the **Florida Department of State** (which co-sponsors the Florida Heritage Site plaques), the **National Park Service**, and **Nassau County** planning staff, who have worked with the community since 2018 (Nassau County, n.d.).
+
+**The Park Service's own instruction is the one to follow:** the majority of land at American Beach is held by private landholders, and visitors are asked to **respect their privacy** (National Park Service, n.d.-b).
+
+## Oak Bluffs, Massachusetts
+
+**What is there:** a town of Massachusetts with a long-standing Black summer and year-round community.
+
+**What you can visit:** the **African American Heritage Trail of Martha's Vineyard**, established in 1998, which is the interpretive route. **The Inkwell** is a public town beach on Beach Road, busiest in July and August, with a dawn swimming group. **Cottagers' Corner** is the Cottagers' building. **Shearer Cottage is a working guest house owned by Shearer descendants**, which means the correct way to see the inside of it is to book a room (National Trust for Historic Preservation, n.d.; Martha's Vineyard African American Heritage Trail, n.d.).
+
+## Bruce's Beach, California
+
+**What is there:** a **city park** in Manhattan Beach between 26th and 27th Streets, renamed Bruce's Beach by the City Council in 2006 and dedicated in 2007, with a plaque acknowledging the park's history commissioned in 2003. **Below and to the west sits the Los Angeles County Lifeguard Administration Building**, on the parcels returned to the Bruce heirs in 2022 and sold back to the County in 2023 (City of Manhattan Beach History Advisory Board, 2021; Los Angeles County Chief Executive Office, n.d.).
+
+**What to notice while standing there:** **the park is Block 12 and the lifeguard building is Block 5.** The four other Black families condemned in 1924 owned in Block 12. **The park carrying the Bruce name is not the land the Bruces got back**, and you are standing on the difference.
+
+## Five rules for visiting any of these places
+
+1. **Assume it is somebody's home until you have evidence otherwise.** Most of what you can see is private property, and in four of the five that is the majority of the community.
+2. **Contact the stewarding organisation before you arrive.** Every place above has a named museum, association or agency. **Ask them what they want visitors to do.**
+3. **Spend money.** These were businesses and several still are. **A museum admission, a room at Shearer Cottage, a meal: the economics of preservation are not abstract.**
+4. **Photograph buildings from public ground. Do not photograph people without asking.** A residential street is not a set.
+5. **Read the sponsor on every plaque and write it down.** It tells you who was in the room when the wording was agreed.
+
+## Sources
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- The Historical Marker Database. (n.d.). *Idlewild historical marker*. https://www.hmdb.org/m.asp?m=182804
+- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Los Angeles County Chief Executive Office, Anti-Racism, Diversity and Inclusion Initiative. (n.d.). *Bruce's Beach*. https://ceo.lacounty.gov/ardi/bruces-beach/
+- Martha's Vineyard African American Heritage Trail. (n.d.). *Town of Oak Bluffs*. https://mvafricanamericanheritagetrail.org/trail-sites/town-of-oak-bluffs/
+- Maryland Historical Trust. (n.d.). *Douglass Summer House* [National Register properties in Maryland, NRID 1097]. https://apps.mht.maryland.gov/nr/NRDetail.aspx?NRID=1097
+- Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
+- National Park Service. (n.d.-b). *Visiting American Beach*. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/historyculture/ambch_visiting.htm
+- National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
+- National Trust for Historic Preservation. (n.d.). *Shearer Cottage and the rich African American heritage of Martha's Vineyard*. https://savingplaces.org/stories/shearer-cottage-and-the-rich-african-american-heritage-of-marthas-vineyard
+- Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
+- Terry Wantz Historical Research Center. (n.d.). *Idlewild*. https://www.twhistoricalresearchcenter.com/idlewild
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
+      recallContent: [
+        {
+          prompt: "Why will Washington, D.C. and Highland Beach appear as one dot on the lesson map?",
+          answer: "Because they are about 55 kilometres apart and a world projection needs roughly two degrees, on the order of 200 kilometres, before two markers separate. That is a limitation of the map, not a fact about the places.",
+        },
+        {
+          prompt: "What single argument does the map carry?",
+          answer: "That these were five separate business decisions, in five states, across forty-two years, mostly by people who did not know each other. Seeing the spread cures the instinct to treat them as a movement.",
+        },
+        {
+          prompt: "Name the five county-level record offices this course sends you to.",
+          answer: "Anne Arundel County land records in Maryland; the Lake County Register of Deeds in Michigan; the Nassau County property appraiser and clerk in Florida; the Dukes County Registry of Deeds in Massachusetts; and the Los Angeles County Registrar-Recorder and County Clerk, plus the Superior Court file in No. 157,573.",
+        },
+        {
+          prompt: "What can no map in this course show, and why?",
+          answer: "Absence. Every marker exists because a community survived well enough to be documented, so the five here are the ones with museums, associations, historic districts and county reports. That is a fact about who kept records as much as about who built things.",
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 8 · Write
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wwr-write-assignment",
+      title: "20 · Your assignment: write one property",
+      section: "Section 8 · Write",
+      lessonType: "assignment",
+      body: `**Write 900 to 1,300 words about one property.** Not a community, not a movement, not a summer. **One parcel, one building, or one transaction.** Every factual sentence must be checkable against a source you name.
+
+## Step 1 · Pick something small enough to finish
+
+**Good subjects from this course, any of which is already narrower than it sounds:**
+- **Lot 8, Block 5, Peck's Manhattan Beach Tract**, from Henry Willard's hands to Willa Bruce's to the County's and back.
+- **Twin Oaks**, from a son building a house for a father who died before it was finished, to a museum.
+- **Three lots on Myrtle Avenue, Oak Bluffs**, bought by Luella Barnett Coleman and her husband from Manuel Gonsalves for 800 dollars in 1944.
+- **The 8.5 acres of NaNa dune**, from a resort company's development plan to a line in a 2004 public law.
+- **A single Idlewild lot** you find in the Lake County records, traced from the Resort Company to a buyer to whoever holds it now.
+
+**"Idlewild" is a topic. "A 25 by 100 foot lot sold in 1916 to a Chicago buyer" is a subject.**
+
+**If you cannot travel, that is not a disqualification.** It is a constraint you disclose in the piece, and it changes what you may honestly claim.
+
+## Step 2 · Build the chronology before you write a sentence
+
+**Four columns: date, event, instrument, source.** If the instrument column is empty for a row, you have a story on that line and not yet a decision. **The table is the outline.**
+
+## Step 3 · Build the co-occurrence column
+
+**Add a fifth column: what else was happening.** Same years. Use lesson 12's calendar as a starting point and add whatever your own research turns up.
+
+**Then obey the rule.** You are showing that two things happened at once. **You are not showing that one balances the other, and you may not write a sentence that implies it.**
+
+## Step 4 · Choose what kind of piece this is, and commit
+
+- **A biography of a parcel.** Every recorded transfer, in order, with the price where the record gives one.
+- **A history of one decision.** One ordinance, one plat, one incorporation, one statute, followed to the document.
+- **A report on a present.** What is there now, who stewards it, what is pending, what a meeting sounded like.
+- **A piece about the record itself.** What you could and could not find, and what the gap means. **This is the hardest and often the best, and it is the only one you can write honestly with thin sources.**
+
+## Step 5 · Craft rules
+
+1. **Lead with a specific.** A lot number, a price, a date on an instrument. Not a mood and not the weather.
+2. **Name the instrument every time you name a change.** "The community declined" is weak. "The State took ownership in 1948 on condition of public beach or park use only" is strong, and sourced.
+3. **Give every figure an owner, a date and a scope.** Not "25,000 visitors" but "25,000 visitors on a weekend in the 1950s, a figure from Ronald Stephens, reported in the press."
+4. **An award is not a price. A listing is not a sale. A community history is not a deed.**
+5. **Write the present in the present tense.** Highland Beach has a government. Shearer Cottage takes bookings. The Cottagers had a seventieth anniversary. **These are not ruins.**
+6. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+
+1. **The co-occurrence rule.** **You may not use your subject's success as a rebuttal to somebody else's harm.** No "but," no "on the other hand," no "despite it all." If your last paragraph resolves the tension, delete your last paragraph.
+2. **No invented detail.** Not a date, a name, a quotation, a price, a lot number or a statistic. **This includes atmospheric invention: you do not know what the dance floor sounded like.**
+3. **No composite or imagined characters.** The record here is generous: Willa and Charles Bruce, the Prioleaus, Elizabeth Patterson, Mary Sanders, the Johnsons, the Slaughters, Elizabeth Catley, Dr. H. C. Hudson, Hugh Macbeth, Charles and Laura Douglass, Haley Douglass, Daniel Brashears, Charles and Henrietta Shearer, Luella Barnett Coleman, Thelma Garland Smith, A. L. Lewis, MaVynee Betsch. **Every one of them is cited in this course. Use them.**
+4. **No invented dialogue**, including "she might have said." The Bessonette cross-examination is real and transcribed; nothing you make up will be better.
+5. **Living communities describe themselves.** Use the terms residents use and say where you got them. **If a community's own website says its resort was founded by white land developers, your piece says that too.**
+6. **No ruin porn and no lost golden age.** These were businesses with seasons, debts and bad years, not a paradise, and their decline was not a natural death.
+7. **Private homes are private.** Do not publish a current resident's name with their address. Do not knock uninvited. **Historical addresses in public reports may be cited; people's front doors may not be visited.**
+8. **Say what you did to a number.** Inflation adjustment, unit conversion, rounding: name it.
+
+## What good looks like
+
+**A short piece in which every sentence is either something you read in a named source or something you have clearly marked as unresolved, and in which the prose is still good.** Those two standards do not conflict.
+
+**Consider what is already in the record and needs no decoration.** A woman bought a beach lot in February and opened in June. A laundress ran a laundry for ten years and then opened a twelve-room inn. A land company gave its salesmen lots instead of wages and lost the town to them in nine years. An insurance company put its reserves in a shoreline its own policyholders could use. A city passed an ordinance against changing your clothes on the beach on the same day it moved to condemn the beach. **None of that needs a single adjective from you.**
+
+## Sources
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- Burnett, J. (n.d.). *Oak Bluffs historic Highlands map*. https://historic-highlands.oakbluffsarchaeology.org/
+- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Martha's Vineyard Magazine. (2016, August 1). *Life in the Highlands*. https://mvmagazine.com/news/2016/08/01/life-highlands
+- Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004, H.R. 3768, 108th Cong. (2004). https://www.congress.gov/bill/108th-congress/house-bill/3768/text
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
+      recallContent: [
+        {
+          prompt: "Which of these places has no visitor economy at all, and why?",
+          answer: "Highland Beach. It is a small residential incorporated town of about 80 homes with an all-volunteer government, and it prohibits commercial establishments. Contact the Frederick Douglass Museum and Cultural Center at Twin Oaks and do not drive around looking at houses.",
+        },
+        {
+          prompt: "What is the correct way to see the inside of Shearer Cottage?",
+          answer: "Book a room. It is a working guest house still owned by Shearer descendants.",
+        },
+        {
+          prompt: "What should you notice while standing at the park called Bruce's Beach?",
+          answer: "That the park is Block 12, owned by the City of Manhattan Beach, while the parcels returned to the heirs are Lots 8 and 9 of Block 5, below and to the west, holding the county lifeguard building. The four other Black families condemned in 1924 owned in Block 12.",
+        },
+        {
+          prompt: "State three of the five rules for visiting.",
+          answer: "Assume it is somebody's home; contact the stewarding organisation before you arrive; spend money, because the economics of preservation are not abstract; photograph buildings from public ground and not people without asking; and read and record the sponsor on every plaque.",
+        },
+      ],
+    },
+    {
+      slug: "wwr-what-comes-next",
+      title: "21 · What this course set up, what it cut, and what is still unopened",
+      section: "Section 8 · Write",
+      body: `**The product of this course is a method, and it is worth stating plainly what you can now do that you could not do before.**
+
+| You can now | Which lesson gave it to you |
+|---|---|
+| Tell a subdivision from a hotel, and ask for the plat | 2 |
+| Say who sold a piece of ground to whom, and where the deed is recorded | 3 to 6 |
+| Name a community's legal shape and say what powers that gives and denies | 10 |
+| Put two true things on one calendar without netting them | 12 |
+| Read a single season at full resolution and refuse to resolve it | 13 |
+| Handle a win and a loss produced by the same statute | 14 |
+| Read a land return as a sequence of instruments rather than a headline | 15 |
+| Match the scale of your map to the scale of your question | 18 |
+| Visit a living community without treating it as a ruin | 19 |
+
+## The rule, one last time
+
+**Never use a positive to soften a negative.** You have now watched that rule do real work: in 1927, when a boarding house opened and a house was set on fire in the same season; in 1964, when a statute freed people and closed their businesses; and in 2022, when a county returned land it had to get a state law to give back, and the family sold it seven months later.
+
+**In none of those cases does one fact answer the other.** **They co-occurred. That is the whole claim, and it is enough.**
+
+## What was cut, and why
+
+**This course reports its own failures, because a course that hides them teaches you to hide yours.**
+
+- **The Idlewild lot terms.** The reported 35 dollars, 6 dollars down and 1 dollar a week, and the practice of paying sales agents in lots, come from secondary accounts and **were not checked against the recorded 1915 plat or any deed**.
+- **The Highland Beach acreage.** **26 and two-thirds acres or 40 acres, unresolved.** The town's own history and the preservation literature disagree, and the deed was not read.
+- **MaVynee Betsch's exact relation to A. L. Lewis.** The National Park Service says great-granddaughter; another widely read source says granddaughter. **Unresolved here.**
+- **The Idlewild boundary increase year.** 2010 or 2015 depending on the source. **The National Register file was not opened.**
+- **The closing date of the 2023 Bruce's Beach sale.** Announced January 3 and 4, 2023; one outlet gives January 30, 2023; **the County's own page as read here records no completion date.** The deed record has it.
+- **The outcome of Elizabeth Catley's 1928 lawsuit**, which the City of Manhattan Beach's own report could not obtain and had requested.
+- **The season economics of every single one of these businesses.** No room rate, no occupancy, no payroll, no season length. **None of it was read into this course, and none of it was guessed at.**
+- **Green Book listings for these specific communities.** Shearer Cottage is documented as listed; the rest were not researched here. **The prerequisite course teaches you exactly how to check, and the digitized editions are at the Schomburg Center.**
+- **Any national count of Black resort and beach communities.** **No survey has been read here, and this course will not manufacture a number.** The five taught are the five that left institutions behind.
+
+## The unopened sources, which are the next real work
+
+**All of these are public or requestable, and none of them was read for this course.**
+
+1. **Anne Arundel County land records, Maryland.** The 1893 Douglass deed, which settles the acreage.
+2. **Lake County Register of Deeds, Michigan.** The 1915 Idlewild plat and early lot deeds, which settle the price and terms.
+3. **The National Register nomination files** for the Idlewild Historic District (1979 and its boundary increase) and the American Beach Historic District (2002), plus the **National Historic Landmark study record** for American Beach at the National Park Service planning site.
+4. **Nassau County, Florida** property and corporate records, and whatever survives of the **Afro-American Life Insurance Company's** own books, which would turn the American Beach story from a founding into an investment history.
+5. **Dukes County Registry of Deeds, Massachusetts.** Partly mapped already by Jeffrey Burnett; the other properties are not.
+6. **Los Angeles County Superior Court, No. 157,573**, the full condemnation file, and the **Registrar-Recorder** deeds for the 1948, 1995, 2022 and 2023 transfers.
+7. **The Black press.** The **Chicago Defender** for the Idlewild advertisements, and the **California Eagle**, which reported the Manhattan Beach summer of 1927 week by week and is the reason we know what Bessonette said under oath.
+
+**If you want to make an original contribution to this history rather than restate it, that list is where it is.**
+
+## What comes next in the series
+
+- **The Green Book: How to Read a Route** is the prerequisite. If you skipped it, the listings method in it applies directly to Shearer Cottage and to every lodging business named here.
+- **The site courses in the route series** teach the other half of the calendar: the clearance, the alignments, the designations and the demolitions. **This course was built to run beside them, not to answer them.**
+
+## The last thing
+
+**Five sets of people bought ground in a country that would not sell them a hotel room, and then they platted it, sold it, built on it, governed it and kept it, or lost it, on the record.** Four of the five are still there. The fifth has a date attached to its return and a set of complications attached to the date.
+
+**None of that softens anything. It was never supposed to.** **It is simply the other half of the same calendar, and it has been sitting in county deed books, township minutes, National Register nominations, community websites and a city's own report on itself, waiting for somebody to read it properly.**
+
+## Sources
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- Los Angeles County Chief Executive Office, Anti-Racism, Diversity and Inclusion Initiative. (n.d.). *Bruce's Beach*. https://ceo.lacounty.gov/ardi/bruces-beach/
+- National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
+- National Park Service. (n.d.-d). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm
+- National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
+      recallContent: [
+        {
+          prompt: "What is the maximum length of the writing assignment, and what is its unit of subject?",
+          answer: "900 to 1,300 words about one property: one parcel, one building or one transaction. A community is a topic; a lot with a number is a subject.",
+        },
+        {
+          prompt: "What are the five columns of the table you build before writing?",
+          answer: "Date, event, instrument, source, and what else was happening. The fifth column is the co-occurrence column, and it may not be used to balance anything.",
+        },
+        {
+          prompt: "What does the assignment tell you to do if your last paragraph resolves the tension?",
+          answer: "Delete your last paragraph. You may not use your subject's success as a rebuttal to somebody else's harm.",
+        },
+        {
+          prompt: "Why is a piece about the record itself often the best option?",
+          answer: "Because it is the only one of the four that can be written honestly with thin sources. What you could and could not find, and what the gap means, is a real finding.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
