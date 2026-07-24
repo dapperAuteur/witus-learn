@@ -1474,6 +1474,377 @@ Take any subject in the route series and build the table: **a year column, a "wh
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Now
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "sn-now-tour",
+      title: "14 · Now: stand in the room (360 tour, forthcoming)",
+      section: "Section 5 · Now",
+      lessonType: "virtual_tour",
+      body: `**The 360 tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is reporting the truth rather than a fault. This course was written before a tour was captured, on purpose: the tour is a drop-in, so the course is complete and teachable without it and it can be added later without restructuring anything.
+
+**Read this lesson now anyway, because it is your observation brief.** The difference between a visitor looking at an old schoolhouse and a researcher looking at one is entirely a matter of knowing what to look for before you arrive. **Work through this list now. Run it against the tour when it lands, and against any Rosenwald school you can get to.**
+
+## What to look for, in order
+
+**1. Find the light.** This is the first thing and the most diagnostic. **Which wall carries the windows?** Are they grouped in a bank rather than spaced evenly? Are they tall double-hung sash? **Is there glass on the opposite wall?** If there is not, you are looking at the anti-cross-lighting rule from lesson 10, built.
+
+**2. Work out the orientation on the ground.** Use the sun, or a compass, or the shadows in the image. **The plans called for a north-south or east-west orientation to catch light from one direction.** If the long window wall faces roughly east or west, that is the specification standing in front of you.
+
+**3. Look for the high band.** Small windows tucked under the eaves on an exterior wall, or a row above where a blackboard would have been on an interior wall. **Those are Smith's breeze windows**, and they are the detail that most reliably separates a Community School Plans building from a generic rural school.
+
+**4. Look at what the building is standing on.** Brick piers or a raised masonry foundation, put there to limit rising damp. **A building sitting flat on a slab has either been altered or is not what you think it is.**
+
+**5. Find the partition.** Between two classrooms, look for a wider-than-usual opening, a seam in the wall, a track in the floor or ceiling, or a pair of doors that fold. **The room becoming a hall is the community centre thesis of lesson 1, and it leaves physical evidence.**
+
+**6. Find the industrial room, and think about it.** Usually a distinct room with its own character. **Lesson 10 gave you three readings of what that room was for. Standing in it does not settle which reading is right**, and you should notice the pull to let a nice room settle an argument.
+
+**7. Measure the lot with your eyes.** Two acres was the recommended minimum, with the building in a corner. **Is there a corner? Is there room for a playground, a garden plot, two privies and a well?** If the building now sits tight against a road with no land, ask what happened to the land, and go find the deed.
+
+**8. Read every sign, plaque and marker, and record who wrote it.** A historical marker is a public document with an author, a date and a sponsor. **It tells you what a community and an agency agreed to say in public, in a particular year.** Note the sponsor's name every time.
+
+**9. Look for who is using the building now.** A church, a community centre, a museum, a private home, a barn, a storage shed, nothing. **Each of those is a different chapter and a different set of records.**
+
+**10. Look for the restoration work itself.** New sills, new sash, replaced siding, a new roof, a fundraising sign, scaffolding. **A building being repaired is a live civic project with a budget, a committee and usually a website**, and that is the thing lesson 15 sends you to find.
+
+## What the tour cannot show you
+
+- **It cannot show you the budget.** You cannot photograph 100 dollars raised at a box party. **The card at Fisk has it. The building does not.**
+- **It cannot show you a school year.** Term length, enrolment, how far children walked, whether there was a bus. **Those are in the state's education reports.**
+- **It cannot show you the teacher.** Names, training, salary and tenure are in county and state school records and in the Black press.
+- **It cannot show you who is not in the room.** Children who could not attend because the term was short, the walk was long, or the family needed the labour. **Absence is not photographable and it is not therefore absent from the history.**
+- **It cannot show you the other column.** **Nothing in a well-restored schoolhouse tells you what the state was spending per child that year.** Lesson 12 is the reason you carry that number with you.
+
+## The tone instruction, which is a research instruction
+
+**These buildings are not ruins and they are not shrines.** Many are actively used. Many are being restored right now by alumni associations, descendant families, churches and county historical societies. **They are the people who kept the record when nobody else wanted it, and they are the ones to ask.**
+
+**Two rules follow.**
+1. **Do not trespass.** A large share of surviving Rosenwald schools are privately owned. **Ask.**
+2. **Let people describe themselves.** If you write about a restoration, quote the people doing it, with a citation, or interview them and say you did. **Do not narrate anyone's feelings about their grandmother's school.**
+
+**Write down your five most confident observations before you see a tour or visit a building. Then check them.** Being wrong on the record about a place you had not yet seen teaches more than being right about one you had.
+
+## Sources
+- National Trust for Historic Preservation. (n.d.-a). *Rosenwald schools*. https://savingplaces.org/places/rosenwald-schools
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf
+- National Park Service. (n.d.). *The Rosenwald schools: Progressive Era philanthropy in the segregated South* [Teaching with Historic Places]. https://www.nps.gov/articles/the-rosenwald-schools-progressive-era-philanthropy-in-the-segregated-south-teaching-with-historic-places.htm`,
+      recallContent: [
+        {
+          prompt: "Why does this map carry one Alabama marker rather than two, and what does that tell you about the map?",
+          answer: "Because Loachapoka is about twenty kilometres from Tuskegee and the platform's map needs roughly two degrees, on the order of 200 kilometres, before two dots separate. The map cannot plot individual schools at all, so use the Fisk card file and the National Register for buildings.",
+        },
+        {
+          prompt: "What do the three marker colours mean, and what do they deliberately not mean?",
+          answer: "Blue is the program's own places, red is the other record on the same calendar, and amber is one state where both records are documented in the same years. The colours imply no ordering and no arithmetic: three blue and two red do not make anything three to two.",
+        },
+        {
+          prompt: "Why are the amber markers the ones that make the point?",
+          answer: "Because they cannot be read as two separate stories about two separate places. North Carolina's contributions and its per-pupil spending sit in one budget, and Florida's 140 buildings and Rosewood sit in one state inside the same years.",
+        },
+        {
+          prompt: "What does the Washington, D.C. marker actually mark, and why the Capitol?",
+          answer: "Gong Lum v. Rice, decided 21 November 1927, the legal frame the buildings stood inside. The Supreme Court sat in the Capitol in 1927 because its own building did not open until 1935.",
+        },
+      ],
+    },
+    {
+      slug: "sn-what-survives",
+      title: "15 · What survives, what is listed, and how to find one near you",
+      section: "Section 5 · Now",
+      body: `**Start with the number, because it is the one that governs everything else in this lesson.** The National Trust for Historic Preservation estimates that **of the 5,357 schools, shops and teacher homes constructed, only 10 to 12 percent survive today** (National Trust for Historic Preservation, n.d.-a).
+
+**That is roughly five hundred to six hundred and fifty buildings out of five thousand three hundred and fifty-seven.**
+
+## Why they closed, and the knot in the middle of it
+
+The buildings did not fail. **The school system they were built inside was dismantled, and they went with it.**
+
+After **Brown v. Board of Education** in 1954, and through the school consolidation of the 1950s and the desegregation of the 1960s and 1970s, counties closed their Rosenwald schools. Some buildings were folded into desegregation plans. Most were not. **Many were abandoned; others became community centres, churches, private homes, barns and storage sheds** (National Park Service, n.d.; National Trust for Historic Preservation, n.d.-a).
+
+**This is a knot and you should feel it as one.** A legal victory against segregated schooling is why a network of community-built schools was closed, and in many places why Black principals and teachers lost their positions and Black communities lost the institution at their centre. **That is not an argument against desegregation and this course is not making one.** It is the observation that **a remedy and a loss can be the same event**, which is a fact about how institutional change actually lands, and it is the exact structural twin of the design rule you have been working with. **Do not simplify it in either direction.**
+
+## What preservation has done, and the instrument it used
+
+In **2002** the National Trust for Historic Preservation placed Rosenwald Schools on its list of **America's 11 Most Endangered Historic Places**, and the Trust has since run workshops, conferences, technical assistance and a **grant program** through its African American Cultural Heritage Action Fund (National Trust for Historic Preservation, n.d.-a, n.d.-b).
+
+**Notice the mechanism.** The Trust's preservation grants are **matching grants**. **The instrument that built these schools is the instrument now being used to save them**, which is worth stating plainly and worth not making cute. **A matching grant still asks a community for money it may not have, a hundred years later, for a building the community already paid for once.**
+
+## What a listing does, and what a multiple property form is
+
+Several states have prepared **National Register of Historic Places multiple property documentation forms** for their Rosenwald schools, including **North Carolina, approved by the Keeper of the National Register in 2015** (Obenauer & Brown, 2015) and **South Carolina in 2008** (Weathers, 2008).
+
+**A multiple property documentation form is not a listing.** It is a cover document: it establishes the historic context and the registration requirements once, so that each later individual nomination can reference it instead of rebuilding the argument from scratch. **It makes the next nomination cheaper.** If your state has one, **it is the single best free reading on Rosenwald schools in your state**, and it will contain a county-by-county list.
+
+**And remember the limit from the route series.** National Register listing is recognition plus review leverage when federal money or a federal permit is involved, plus access to some tax credits. **It does not stop a private owner from demolishing a building.** Local designation under a local ordinance is normally the thing that regulates demolition.
+
+## The federal picture, stated carefully
+
+**What has happened:** the **Julius Rosenwald and the Rosenwald Schools Act of 2020**, Public Law 116-336, was approved on **13 January 2021**. It directs the Secretary of the Interior to conduct a **special resource study** of sites associated with Julius Rosenwald's life and legacy, to evaluate national significance, determine suitability and feasibility of designating the study area as a unit of the National Park System including an interpretive centre in or near Chicago, consider other preservation alternatives, consult interested parties, and identify cost estimates. The report is due **not later than three years after funds are first made available** for the study (Pub. L. No. 116-336, 2021, sec. 2).
+
+**What has not happened:** **a study authorisation is not a park.** As this course is written, a **Julius Rosenwald and Rosenwald Schools National Historical Park has not been established.** Bills to establish one, **S. 3925 and H.R. 8887 in the 119th Congress**, were introduced in 2026 and the National Trust's own updates page describes them as pending legislation it is asking the public to support (National Trust for Historic Preservation, n.d.-b; U.S. Congress, 2026a, 2026b).
+
+**Check the status yourself before you repeat any of this**, at congress.gov. **Legislative status is exactly the kind of external value that changes after a course is written**, and a course that asserted a park exists would be wrong on the day it happened to become true.
+
+## Fourteen buildings named in federal law
+
+The 2020 Act names specific sites for special emphasis in the study. **This is a starting list with legal provenance, which is unusual and useful** (Pub. L. No. 116-336, 2021, sec. 2(b)(1)):
+
+| Site | Where |
+|---|---|
+| Sears Administration Building at Homan Square | Chicago, Illinois |
+| Rosenwald Court Apartments | Chicago, Illinois |
+| Museum of Science and Industry | Chicago, Illinois |
+| Rosenwald House, formerly the Lyon Home, at Lincoln Home National Historic Site | Springfield, Illinois |
+| Cairo Rosenwald School, one-teacher | Sumner County, Tennessee |
+| Shady Grove School, one-teacher | Louisa County, Virginia |
+| Noble Hill School, two-teacher | Bartow County, Georgia |
+| Ridgeley School, two-teacher | Prince Georges County, Maryland |
+| Bay Springs School, two-teacher | Forest County, Mississippi |
+| Russell School, two-teacher | Durham County, North Carolina |
+| Shiloh Rosenwald School, three-teacher | Macon County, Alabama |
+| San Domingo School, four-teacher | Wicomico County, Maryland |
+| Elmore County Training School, seven-teacher | Elmore County, Alabama |
+| Dunbar Junior High, Senior High and Junior College | Little Rock, Arkansas |
+
+**Read the teacher-type column.** The statute records it because it identifies the plan. **One-teacher, two-teacher, three-teacher, four-teacher, seven-teacher: that is the plan book, written into United States law.**
+
+**And check the county spellings against your state's own list before you cite them.** County names in a statute are transcribed by people, and the authoritative source for a county name is the state, not the bill.
+
+## How to find one near you
+
+**Six steps, in this order.**
+
+1. **Fisk University's Rosenwald Fund collection** (https://rosenwald.fisk.edu/). Search the school fund database by **state and county**. This is the primary record and it has the money.
+2. **Your state historic preservation office.** Ask whether a **Rosenwald multiple property documentation form** exists for your state. If it does, it has a county list.
+3. **The National Register of Historic Places**, searchable through the National Park Service, for individually listed schools and their nominations. **A nomination is a free, detailed, footnoted monograph about one building.**
+4. **The National Trust's Rosenwald Schools program** (https://savingplaces.org/places/rosenwald-schools), for current preservation projects and who is running them.
+5. **Local stewards.** County historical societies, alumni associations, churches and descendant family groups. **Many surviving schools are being restored by exactly these organisations, and they know things no archive holds.**
+6. **County records.** Deed books for the two acres, school board minutes for the closure, and the local Black newspaper for the campaign that raised the money.
+
+**Then write down, before you go any further, the three things you now know and the three things you do not.** That list is the beginning of the assignment in Section 6.
+
+## Sources
+- Julius Rosenwald and the Rosenwald Schools Act of 2020, Pub. L. No. 116-336, 134 Stat. 5118 (2021). https://www.govinfo.gov/content/pkg/PLAW-116publ336/html/PLAW-116publ336.htm
+- National Park Service. (n.d.). *The Rosenwald schools: Progressive Era philanthropy in the segregated South* [Teaching with Historic Places]. https://www.nps.gov/articles/the-rosenwald-schools-progressive-era-philanthropy-in-the-segregated-south-teaching-with-historic-places.htm
+- National Trust for Historic Preservation. (n.d.-a). *Rosenwald schools*. https://savingplaces.org/places/rosenwald-schools
+- National Trust for Historic Preservation. (n.d.-b). *Rosenwald schools updates*. https://savingplaces.org/places/rosenwald-schools/updates
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf
+- U.S. Congress. (2026a). *S. 3925, Julius Rosenwald and Rosenwald Schools National Historical Park Act*, 119th Cong. https://www.congress.gov/bill/119th-congress/senate-bill/3925
+- U.S. Congress. (2026b). *H.R. 8887, Julius Rosenwald and Rosenwald Schools National Historical Park Act*, 119th Cong. https://www.congress.gov/bill/119th-congress/house-bill/8887
+- Weathers, L. C. M. (2008). *The Rosenwald school building program in South Carolina, 1917-1932* [National Register of Historic Places multiple property documentation form]. University of South Carolina Public History Program. http://www.nationalregister.sc.gov/MPS/MPS050.pdf`,
+      recallContent: [
+        {
+          prompt: "What is the first and most diagnostic thing to look for at a Rosenwald school?",
+          answer: "The light. Which wall carries the windows, whether they are grouped in a bank of tall double-hung sash rather than spaced evenly, and whether there is glass on the opposite wall. No glass opposite means you are looking at the anti-cross-lighting rule built.",
+        },
+        {
+          prompt: "What are breeze windows and why do they matter for identification?",
+          answer: "Small windows tucked high under the eaves on an exterior wall, or a row above where a blackboard would have been on an interior wall, designed to pull air across the room. They are the detail that most reliably separates a Community School Plans building from a generic rural school.",
+        },
+        {
+          prompt: "Name three things a 360 tour of a schoolhouse cannot show you.",
+          answer: "The budget, since you cannot photograph 100 dollars raised at a box party; the school year, meaning term length, enrolment and how far children walked; the teacher's name, training and salary; who is not in the room; and what the state was spending per child that year.",
+        },
+        {
+          prompt: "State the two rules that follow from these buildings being live places rather than ruins.",
+          answer: "Do not trespass, because a large share of surviving Rosenwald schools are privately owned, so ask. And let people describe themselves: quote the people doing a restoration with a citation, or interview them and say you did, and never narrate anyone's feelings about their grandmother's school.",
+        },
+      ],
+    },
+    {
+      slug: "sn-quiz-now",
+      title: "16 · Quiz: the building, the people, the calendar, and what is left",
+      section: "Section 5 · Now",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who drafted the 1915 Tuskegee plan book, and what is notable about the lead author?",
+            options: [
+              "Samuel L. Smith, who later directed the Fund's southern office in Nashville and issued Community School Plans from it",
+              "Fletcher B. Dresslar of Peabody College, whose inspection report prompted the move to Nashville in 1920",
+              "Robert R. Taylor with W. A. Hazel; Taylor was the first known Black student to graduate from MIT, in 1892",
+              "J. E. Crain and E. M. Tisdale, the draughtsmen who redrew Tennessee's state plans for the Rosenwald Fund",
+            ],
+            correctIndex: 2,
+            explanation: "The standardised plan that shaped thousands of schools for Black children in the segregated South was drawn by a Black architect at a Black institution.",
+            sourceLessonSlug: "sn-built-the-plans",
+          },
+          {
+            prompt: "Why does a second plan book, Community School Plans, exist?",
+            options: [
+              "Because Dresslar inspected forty-seven schools in 1919 and reported construction problems",
+              "Because Tuskegee refused to license its 1915 designs to the Fund after Washington's death in 1915",
+              "Because the fifteen participating states each required plans conforming to their own building codes",
+              "Because the earlier designs did not include teacherages, which the Fund began to grant aid for in 1922",
+            ],
+            correctIndex: 0,
+            explanation: "His report, and Tuskegee's small staff being overburdened, contributed to the move to Nashville, where Smith issued the new plans from 1921.",
+            sourceLessonSlug: "sn-built-the-plans",
+          },
+          {
+            prompt: "If a surviving building does not match any published Rosenwald plan, what follows?",
+            options: [
+              "It cannot have received Fund aid, since strict conformity to one of the published plans was a stated grant condition",
+              "It must be a later replacement built after the original burned or was damaged by storm",
+              "It was probably built under Tuskegee before the 1915 plan book was published and circulated",
+              "Nothing on its own, because the Fund required only an approved plan and local craftsmen modified designs",
+            ],
+            correctIndex: 3,
+            explanation: "Some schools used state Department of Public Instruction designs. Check the card file and county records before ruling a building out.",
+            sourceLessonSlug: "sn-built-the-plans",
+          },
+          {
+            prompt: "Why were classroom windows placed on the pupils' left in every Rosenwald floor plan?",
+            options: [
+              "So that their writing arms would not cast shadows on their desk tops",
+              "So that the teacher at the front of the room would never be looking directly into the sun",
+              "So that the blackboard wall could run the full length of the room without interruption",
+              "So that prevailing summer winds would enter the room from the side rather than the rear",
+            ],
+            correctIndex: 0,
+            explanation: "That single specification tells you the Fund was thinking about a right-handed child's hand at the moment of writing.",
+            sourceLessonSlug: "sn-built-the-light",
+          },
+          {
+            prompt: "How many interior paint treatments did the Fund permit, and why?",
+            options: [
+              "One, to reduce cost and to make bulk purchasing possible for the counties administering grants",
+              "Two, both chosen to maximise interior light, with paint chips posted out from 1922",
+              "Three, matching the three exterior schemes specified in the same edition of the plan book",
+              "None, since interior finishes were left entirely to the local school board and its contractor",
+            ],
+            correctIndex: 1,
+            explanation: "A cream ceiling with buff walls, or an ivory cream ceiling with light gray walls, both with walnut-stained wainscoting or dado.",
+            sourceLessonSlug: "sn-built-the-light",
+          },
+          {
+            prompt: "How does this course treat the industrial room found in most Community School Plans designs?",
+            options: [
+              "As evidence that the Fund's designers were ahead of contemporary white school architecture",
+              "As proof that Anderson's critique of industrial philanthropy is correct about this program",
+              "As a curriculum question outside the scope of a course about buildings and their budgets",
+              "As one room with three documented readings, none of which the good daylighting settles",
+            ],
+            correctIndex: 3,
+            explanation: "Progressive-era pedagogy, Anderson's subordination argument, and the documentation form's own quotation about local boards wanting a trained workforce on the farm.",
+            sourceLessonSlug: "sn-built-the-light",
+          },
+          {
+            prompt: "What did George E. Davis say in 1927, and how should it be used?",
+            options: [
+              "That the Fund's grants were too small, and it should be quoted whenever the discussion turns to the size of the matching formula and its effect on the poorest counties",
+              "'White people in our state are not asked to sweat blood' so their children may be helped through the schools, and it names what the campaign measures",
+              "That the churches were the only reliable partner, and it should be quoted in any account of Black institutional life",
+              "That North Carolina would lead the South in construction, and it should be quoted alongside the state's building totals",
+            ],
+            correctIndex: 1,
+            explanation: "Do not quote it as inspiration. It is the course's design rule, written in 1927 by the man doing the fundraising.",
+            sourceLessonSlug: "sn-who-built-and-taught",
+          },
+          {
+            prompt: "What was a Jeanes Supervising Industrial Teacher, and who was the first?",
+            options: [
+              "A supervisor of other teachers in a system with no other supervision; Virginia Estelle Randolph, from October 1908 in Henrico County",
+              "A travelling instructor employed by the Rosenwald Fund to inspect newly completed school buildings and to certify each of them as fit for grant payment",
+              "A county officer appointed under state law to allocate Jeanes Fund money between Black and white rural schools",
+              "A teacher trained at Tuskegee and placed in a one-teacher Rosenwald school for a fixed term of three years",
+            ],
+            correctIndex: 0,
+            explanation: "Her approach became the Henrico Plan and a thousand copies were distributed to supervisors across the South. She died on 16 March 1958.",
+            sourceLessonSlug: "sn-who-built-and-taught",
+          },
+          {
+            prompt: "The carpenters who built these schools are almost entirely absent from the Rosenwald archive. What kind of statement is that?",
+            options: [
+              "A statement that the buildings were largely erected by contractors hired from well outside the communities that paid for them",
+              "A statement about the archive, pointing toward deed books, church minutes, the Black press and descendants",
+              "A statement that the historical record on this program is too thin to support serious research",
+              "A statement that the Fund deliberately suppressed the names of local Black builders in its records",
+            ],
+            correctIndex: 1,
+            explanation: "The plan books carry Taylor, Hazel, Dresslar, Smith, Crain, Tisdale and McCormick. The cards carry a county and four dollar figures.",
+            sourceLessonSlug: "sn-who-built-and-taught",
+          },
+          {
+            prompt: "Both halves of which pair appear on the same page of the North Carolina documentation form?",
+            options: [
+              "Alabama's per-pupil spending in 1909, and the cost of the very first Rosenwald school built at Loachapoka in March 1913",
+              "The destruction of Greenwood in 1921, and Oklahoma's 198 Rosenwald buildings in 44 counties",
+              "Nineteen counties holding money in the bank for schools in 1932, and the Fund closing the program that year",
+              "Florida's 140 Rosenwald buildings, and the destruction of the Rosewood community in January 1923",
+            ],
+            correctIndex: 2,
+            explanation: "The record contains its own co-occurrence, and most retellings print only one half of it.",
+            sourceLessonSlug: "sn-co-occurrence",
+          },
+          {
+            prompt: "Which co-occurrence pair in this course is causal rather than merely simultaneous?",
+            options: [
+              "The North Carolina contributions and the state's per-pupil spending gap, which is double taxation",
+              "The Tulsa race massacre of 1921 and Oklahoma's Rosenwald school building program running from 1920 to 1932",
+              "Gong Lum v. Rice in 1927 and the Fund's approval of ten-teacher plans in the same year",
+              "The Rosewood destruction in 1923 and Florida's Rosenwald construction between 1921 and 1932",
+            ],
+            correctIndex: 0,
+            explanation: "A community raised money because the state was not paying. The others share a calendar and nothing in the record read here makes them causal.",
+            sourceLessonSlug: "sn-co-occurrence",
+          },
+          {
+            prompt: "Which of these is one of the four failure modes the co-occurrence lesson names?",
+            options: [
+              "Citing a secondary account when the primary record is available in a digitised archive",
+              "Reporting a contested figure without naming the source that produced it and its date",
+              "Any sentence built on the word 'but', because 'but' is the word doing the softening",
+              "Placing a table of dates in a lesson before the narrative that explains what the dates mean",
+            ],
+            correctIndex: 2,
+            explanation: "The other three are the redemption arc, the tragedy arc, and the moral about resilience.",
+            sourceLessonSlug: "sn-co-occurrence",
+          },
+          {
+            prompt: "What share of the 5,357 buildings does the National Trust estimate survives today?",
+            options: [
+              "Between a third and a half, mostly the larger masonry schools built after the 1928 revisions",
+              "About 10 to 12 percent",
+              "Rather more than half, though most have been altered beyond recognition since the 1960s",
+              "An unknown share, because no organisation has attempted a comprehensive survey since 1932",
+            ],
+            correctIndex: 1,
+            explanation: "That is roughly five hundred to six hundred and fifty buildings out of five thousand three hundred and fifty-seven.",
+            sourceLessonSlug: "sn-what-survives",
+          },
+          {
+            prompt: "How does this course describe the relationship between desegregation and the closure of these schools?",
+            options: [
+              "As an argument against desegregation, which cost these communities the institution that stood at their centre",
+              "As an unrelated coincidence, since consolidation would have closed the schools in any case",
+              "As a knot: a remedy and a loss can be the same event, and it must not be simplified either way",
+              "As outside the scope of the course, which ends with the Fund's building program in 1932",
+            ],
+            correctIndex: 2,
+            explanation: "A legal victory against segregated schooling is why a network of community-built schools closed, and in many places why Black principals and teachers lost their positions.",
+            sourceLessonSlug: "sn-what-survives",
+          },
+          {
+            prompt: "What is the current federal status of a Julius Rosenwald and Rosenwald Schools National Historical Park?",
+            options: [
+              "Established by Public Law 116-336 in January 2021, with the special resource study completed and the unit designated",
+              "Established by the Secretary of the Interior on the recommendation of the special resource study",
+              "Rejected by Congress, after the special resource study found the sites lacked national significance",
+              "Not established. The 2021 law authorised a study; bills to create a park were pending in the 119th Congress",
+            ],
+            correctIndex: 3,
+            explanation: "A study authorisation is not a park. Check congress.gov before repeating any legislative status, because it changes after a course is written.",
+            sourceLessonSlug: "sn-what-survives",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
