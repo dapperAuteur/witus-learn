@@ -688,6 +688,454 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · The businesses and the seasons
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wwr-the-businesses",
+      title: "8 · What was actually sold: a bed, a meal, a changing room, a dance floor, a lot",
+      section: "Section 3 · The businesses and the seasons",
+      body: `**Stop thinking about these places as destinations for a moment and look at the product line.** Across five states and fifty years the same five things were sold, and each one existed because it could not be bought elsewhere.
+
+## 1. A bed
+
+**Shearer Cottage, Oak Bluffs, 1912.** A **12-room wooden inn** opened by Charles and Henrietta Shearer specifically for African Americans, who were excluded from other island lodging (National Trust for Historic Preservation, n.d.). Other Oak Bluffs guest houses are named in the record too: **Aunt Georgia's House**, run by Mrs. Georgia O'Brien and Ms. Louisa Izett, and the **Maxwell House** (Martha's Vineyard African American Heritage Trail, n.d.; Martha's Vineyard Magazine, 2016).
+
+**The Slaughter boarding house, Manhattan Beach, 1927.** Mr. and Mrs. James Slaughter opened a **modern ten-room boarding house at 120 26th Street**, outside the area the city had condemned, with a grand opening advertised in the California Eagle for Memorial Day, **Monday, May 30, 1927** (City of Manhattan Beach History Advisory Board, 2021).
+
+**Idlewild and American Beach both ran hotels.** Idlewild's own account lists hotels, clubhouses, entertainment venues and places of worship around Idlewild Lake and Paradise Lake (Idlewild Michigan, n.d.). American Beach carried hotels, restaurants and nightclubs alongside its houses (Wikipedia, n.d.-a).
+
+**A standing rule before you go looking.** **120 26th Street is an address in a public municipal history report, not an invitation.** Some of these addresses are people's homes today. Read them in the record; do not knock on them.
+
+## 2. A meal
+
+Willa Bruce's very first operation at Manhattan Beach, advertised in the Liberator for **June 17, 1912**, was **a small portable cottage with a stand that sold soda pop and lunches** (City of Manhattan Beach History Advisory Board, 2021). Shearer Cottage grew to seat **upwards of fifty people** at communal meals (National Trust for Historic Preservation, n.d.).
+
+## 3. A changing room, which is the least romantic and most important item on this list
+
+**Read this slowly, because it explains what segregation actually cost people.**
+
+Willa Bruce's guests in 1912 arrived to find that she **rented bathing suits and provided access to bathing showers and dressing tents** (City of Manhattan Beach History Advisory Board, 2021). By **1916** the Bruces had built a **two-storey frame building with a kitchen, a dance floor and other amenities**, and by **1923** there were three buildings across their two lots (City of Manhattan Beach History Advisory Board, 2021).
+
+**You cannot swim if you cannot change.** A public beach with no bath house you are allowed to use is not a public beach. **So the first product of a Black beach business was a room with a door on it**, and the second was the towel.
+
+**Now look at what the city did about it.** On **June 5, 1924**, the same day the Board of Trustees passed Ordinance 276 declaring its intention to acquire Blocks 5 and 12 by condemnation, it passed **ordinances 273 to 275**, which prohibited new or additional bath houses and commercialised amusements near the Strand without Trustee approval, and prohibited dressing or undressing in any vehicle or temporary structure on the beach (City of Manhattan Beach History Advisory Board, 2021).
+
+**Read those two facts as one decision.** The city moved against the land and against the business model on the same day, and the business model was a place to change your clothes. **When you can name the product, you can recognise the instrument aimed at it.**
+
+## 4. A dance floor
+
+**Idlewild's nightlife was the draw and the promoters have names.** **Phil Giles** and **Arthur Braggs** brought major entertainers to the **Flamingo**, the **Paradise** and the **El Morocco** (Idlewild Michigan, n.d.). A **clubhouse went up on the island in 1916**, followed by an electrical plant, cottages and venues (The Cultural Landscape Foundation, n.d.).
+
+**American Beach's is Evans' Rendezvous**, a nightclub on the ocean, still standing and, the Park Service notes, **not available for touring** (National Park Service, n.d.-b).
+
+**And the Bruces had a dance floor in 1916**, inside a two-storey building on 33 and one-third feet of beach frontage.
+
+## 5. The lot itself
+
+**In three of the five communities the primary product was land, and everything else was an amenity that made land sell.** Highland Beach: Charles Douglass subdivided and sold lots to family and friends. Idlewild: the Resort Company platted in 1915 and sold lots, reportedly for 35 dollars on weekly terms. American Beach: the Afro-American Life Insurance Company subdivided its 33 acres and sold parcels to Black-owned companies and shareholders.
+
+**A hotel earns a room-night at a time. A lot company earns once, and then the buyer builds the town for you.** That is why the lot model recurs in this course and the pure hotel model does not.
+
+## The parent business, in one case
+
+**American Beach is the only community here whose developer had a completely different main line of business.** The Afro-American Life Insurance Company sold **insurance**, and the beach was an investment of company money plus a benefit for executives and a sales incentive for staff (National Park Service, n.d.-c; Wikipedia, n.d.-a). **The resort was a line item on somebody else's balance sheet**, which is a very different kind of business risk from a family inn.
+
+## And one community that mostly refused to sell anything
+
+**Highland Beach is the outlier and stays one.** It began as a summer retreat of private cottages, and **the town today prohibits commercial establishments** (Town of Highland Beach, n.d.). **A municipality can do that to itself.** Lesson 10 explains why that sentence is a governance fact and not a preference.
+
+## Sources
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- The Cultural Landscape Foundation. (n.d.). *Idlewild Historic District*. https://www.tclf.org/idlewild-historic-district
+- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Martha's Vineyard African American Heritage Trail. (n.d.). *Town of Oak Bluffs*. https://mvafricanamericanheritagetrail.org/trail-sites/town-of-oak-bluffs/
+- Martha's Vineyard Magazine. (2016, August 1). *Life in the Highlands*. https://mvmagazine.com/news/2016/08/01/life-highlands
+- National Park Service. (n.d.-b). *Visiting American Beach*. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/historyculture/ambch_visiting.htm
+- National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
+- National Trust for Historic Preservation. (n.d.). *Shearer Cottage and the rich African American heritage of Martha's Vineyard*. https://savingplaces.org/stories/shearer-cottage-and-the-rich-african-american-heritage-of-marthas-vineyard
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
+- Wikipedia. (n.d.-a). *American Beach, Florida*. https://en.wikipedia.org/wiki/American_Beach,_Florida`,
+      recallContent: [
+        {
+          prompt: "Why is Oak Bluffs in this course when it has no founder and no founding year?",
+          answer: "Because it shows the other shape the same achievement can take: Black families bought property one deed at a time inside a town they did not govern. The unit of analysis is the transaction, not the subdivision.",
+        },
+        {
+          prompt: "What did Jeffrey Burnett's Oak Bluffs Highlands project actually do, and with what records?",
+          answer: "It spatialised nineteenth and twentieth century deeds from the Dukes County Registry of Deeds, identifying 129 deeds in which people of African descent bought or sold land across 22 properties, supported by census records and community interviews.",
+        },
+        {
+          prompt: "Where does the name the Inkwell come from, and how should a writer handle it?",
+          answer: "White people applied it as an insult about the skin colour of the swimmers, and the swimmers took it up as a name of pride. Use it, because the community uses it, and say where the name came from.",
+        },
+        {
+          prompt: "What do the Cottagers, the Idlewild Lot Owners Association and the American Beach Property Owners Association have in common?",
+          answer: "All three are associations of property owners. Three communities in three different legal shapes had the same instinct: if you own the ground, form the body.",
+        },
+      ],
+    },
+    {
+      slug: "wwr-the-season",
+      title: "9 · The season, the capital, and what the record will and will not tell you",
+      section: "Section 3 · The businesses and the seasons",
+      body: `**This is the lesson where a lot of writing about these communities goes soft, so this one is going to be blunt about its own limits first.**
+
+## What this course does not know
+
+**No season's books for any of these businesses has been read into this course.** Not a room rate, not an occupancy figure, not a payroll, not a night's take at the Flamingo. **So this course will not tell you how many weeks a season ran or what a cottage rented for.** Any writer who gives you those numbers owes you a source, and if the source is a memoir, the number is a memory.
+
+**What is documented is the season's rough shape and where the money came from.** That is enough to teach the economics honestly.
+
+## The shape of a season
+
+The Martha's Vineyard African American Heritage Trail describes the Inkwell as one of the most popular spots for the community **in July and August** (Martha's Vineyard African American Heritage Trail, n.d.). Highland Beach began as a **summer retreat**, and the house Charles Douglass built for his father is called a **summer home** (Town of Highland Beach, n.d.). **A Michigan lake and a Massachusetts island earn in a short window. A Florida beach does not have the same constraint.**
+
+**That difference matters more than it sounds.** A business with a ten-week earning window and a twelve-month cost base has to price like one, and it is fragile to exactly one bad summer. **Hold that thought until lesson 14, where a hurricane and a statute arrive in the same season.**
+
+## Where the capital came from, which is the actual lesson
+
+**Five communities, five completely different sources of money.** This is the table to remember.
+
+| Community | The capital | What that implies |
+|---|---|---|
+| **Highland Beach** | A federal employee's savings and his family's, buying from a Black farmer | Small, personal, and answerable to nobody. Also small enough to stay residential |
+| **Idlewild** | A white land company's capital first, then thousands of instalment payments from Black buyers | The developers took the early risk and the buyers took the town, formally, in 1921 |
+| **American Beach** | An insurance company's invested reserves | Professional capital, a board, and a resort that is a line item |
+| **Oak Bluffs** | Individual household savings, deed by deed | No single point of failure, and no single body that can act |
+| **Bruce's Beach** | A railroad dining-car chef's wages and a woman running the business on site | One family, no partners, no association, no municipality |
+
+**Charles Bruce worked as a dining-car chef on the train running between Salt Lake City and Los Angeles while the business operated** (City of Manhattan Beach History Advisory Board, 2021). **Read the last row against the first four and you have the argument of the next lesson.**
+
+## Transport is a cost and a constraint
+
+The **Pere Marquette Railway** connected Idlewild to Chicago, Detroit, Cleveland and St. Louis (Idlewild Michigan, n.d.). **A resort on a rail line has a catchment; a resort off one has a driveway.** The Green Book course taught what the automobile changed about who could travel and how; these communities sat on the receiving end of that change.
+
+## The prices that ARE in the record
+
+**Four, and every one of them has a caveat attached by the source itself.**
+
+| Price | What it bought | The caveat |
+|---|---|---|
+| **1,225 dollars**, February 19, 1912 | Lot 8, Block 5, Peck's Manhattan Beach Tract, a parcel of 33 and one-third by 105 feet, bought by Willa Bruce from Henry Willard | The Los Angeles Times called it "a high price compared to the cost of nearby lots." **The city's own History Advisory Board could not obtain deeds for comparable properties to confirm that, said so in the report, and was still trying** (City of Manhattan Beach History Advisory Board, 2021) |
+| **35 dollars**, from 1915 | A 25 by 100 foot lot at Idlewild, reportedly 6 dollars down and 1 dollar a week | Secondary accounts only. **Not checked here against the recorded plat or a deed** |
+| **800 dollars**, 1944 | Three lots on Myrtle Avenue, Oak Bluffs, bought by Luella Barnett Coleman and her husband from Manuel Gonsalves | Read out of the deed record (Martha's Vineyard Magazine, 2016) |
+| **14,500 dollars**, June 10, 1929 | The court's award to the Bruces for Lots 8 and 9 in the condemnation judgment | An award, not a sale price. The Bruces had asked for more (City of Manhattan Beach History Advisory Board, 2021) |
+
+**One more figure, and it is here to be thought about rather than resolved.** The History Advisory Board's report notes that in the market for ocean frontage between Santa Monica and Long Beach at the time, a **66 and two-thirds by 100 foot ocean-facing lot could be purchased for 12,500 dollars, or 187 dollars per foot** (City of Manhattan Beach History Advisory Board, 2021).
+
+**Do not turn that into a verdict.** The Bruces' two lots and the comparison lot are different sizes in different places in different years, and the report presents the comparison without computing an answer. **The honest sentence is: here are both figures, here is who produced them, and here is what would be needed to compare them properly.** A verdict you cannot support is worse than no verdict.
+
+## The method rules for money in this course
+
+1. **Give every figure an owner, a date and a scope.** Lesson 4's three Idlewild visitor numbers exist because somebody skipped this step.
+2. **Say what you did to a number.** If you adjust for inflation, say so, say which index, and say which year you converted to.
+3. **An award is not a price. An asking price is not a sale. A listing is not a transaction.**
+4. **When a source attaches its own caveat, carry the caveat.** The Manhattan Beach report's admission that it could not get comparable deeds is one of the most useful sentences in it.
+5. **A missing number is a finding.** "No season's accounts survive in an accessible archive" is a real result, and it tells the next researcher where to dig.
+
+## Sources
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Martha's Vineyard African American Heritage Trail. (n.d.). *Town of Oak Bluffs*. https://mvafricanamericanheritagetrail.org/trail-sites/town-of-oak-bluffs/
+- Martha's Vineyard Magazine. (2016, August 1). *Life in the Highlands*. https://mvmagazine.com/news/2016/08/01/life-highlands
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
+      recallContent: [
+        {
+          prompt: "What were the five things these communities sold?",
+          answer: "A bed, a meal, a changing room, a dance floor, and the lot itself. Each existed because it could not be bought elsewhere.",
+        },
+        {
+          prompt: "Why is the changing room the most important item on that list?",
+          answer: "Because you cannot swim if you cannot change, so a public beach with no bath house you may use is not a public beach. Willa Bruce's first product in 1912 was rented bathing suits, showers and dressing tents.",
+        },
+        {
+          prompt: "What did Manhattan Beach pass on June 5, 1924, besides Ordinance 276?",
+          answer: "Ordinances 273 to 275, prohibiting new bath houses and commercialised amusements near the Strand without Trustee approval and prohibiting dressing or undressing in any vehicle or temporary structure on the beach. The city moved against the land and the business model on the same day.",
+        },
+        {
+          prompt: "Why does the lot model recur in this course and the pure hotel model does not?",
+          answer: "A hotel earns a room-night at a time. A lot company earns once and then the buyer builds the town, so three of the five communities sold land as the primary product.",
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Governance
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wwr-governance",
+      title: "10 · Who ran things: five legal shapes, and what each one can actually do",
+      section: "Section 4 · Governance",
+      body: `**This is the load-bearing lesson of the course, and it is the one most writing about these places skips entirely.**
+
+Everything so far has been property and business. **Now ask the question that decides what happens to property and business: who governs the ground, and what powers do they hold?**
+
+## The five shapes
+
+**1. An incorporated municipality. Highland Beach, Maryland, since May 12, 1922.**
+Residents created a municipal government, the first African American incorporated municipality in Maryland (Town of Highland Beach, n.d.). Preservation Maryland describes it as an **all-volunteer government** (Preservation Maryland, n.d.). **The town prohibits commercial establishments** (Town of Highland Beach, n.d.).
+
+**Read that last sentence again as a governance fact.** A town can restrict land use inside its own limits because a municipality holds the **police power** delegated by the state. **A homeowners association cannot do that. A town can.**
+
+**2. An unincorporated community, a township, and a lot owners association. Idlewild, Michigan.**
+Idlewild is unincorporated and sits in **Yates Township, Lake County**, so the township and county provide public funding and administrative oversight. The **Idlewild Lot Owners Association**, incorporated in **August 1921**, has provided homeowner governance and preservation advocacy ever since, and an **Idlewild African American Chamber of Commerce** was founded in **2000** by John O. Meeks (Idlewild Michigan, n.d.).
+
+**Two bodies, neither of them a city.** One is a unit of Michigan government the residents vote in; the other is a private corporation the property owners run.
+
+**3. An unincorporated community, a county, and a property owners association. American Beach, Florida.**
+American Beach is unincorporated in **Nassau County**. There is an **American Beach Property Owners Association**, and since **2018** county planning staff have worked with the community on identifying and preserving its character, including zoning updates and an explored **Community Redevelopment Area** designation (Nassau County, n.d.).
+
+**Notice who holds the pen.** The zoning is the county's. The community participates. **Participation and authority are different things, and knowing which one you have is the whole skill.**
+
+**4. Property owners inside a town they do not control. Oak Bluffs, Massachusetts.**
+Oak Bluffs is a town of Massachusetts with its own government, and Black property owners there have never claimed to run it. **So the institution they built is voluntary: The Cottagers, Inc., founded in 1956 by Thelma Garland Smith with friends, a philanthropic organisation of 100 African American women homeowners** (Vineyard Gazette, 2016).
+
+**5. Private lots inside a city governed by other people. Bruce's Beach, California.**
+The Bruces held two lots. There was no township of theirs, no association, no municipality of theirs. **Every relevant power sat with the Manhattan Beach Board of Trustees**, and in 1923 a real estate agent named George Lindsey and, in the minutes' phrase, several civic leaders, petitioned that board to purchase Blocks 5 and 12 (City of Manhattan Beach History Advisory Board, 2021).
+
+**Note the counter-petition, because it is easy to miss.** On **December 6, 1923** a petition was submitted to the Board by property owners of Blocks 5 and 12 protesting Lindsey's petition (City of Manhattan Beach History Advisory Board, 2021). **People objected on the record. It did not stop the ordinance.**
+
+## What an association can do, and what only a government can do
+
+| Power | Association | Township or county | Municipality |
+|---|---|---|---|
+| Hold and maintain common property | Yes | Yes | Yes |
+| Set covenants binding its own members | Yes | No | No |
+| Fundraise, advocate, preserve, interpret | Yes | Yes | Yes |
+| **Levy taxes** | No | Yes | Yes |
+| **Zone land** | No | Yes | Yes |
+| **Take property by eminent domain** | No | Yes | Yes |
+| **Police the streets** | No | Yes | Yes |
+
+**Every power in the bottom half of that table is a power somebody can use on you.** An association is a way of speaking. A government is a way of deciding.
+
+## The pattern, stated at exactly the strength the evidence supports
+
+**Here is what these five cases show.** The community with a municipal charter still exists as a town with a government. The two with associations inside townships and counties still exist as communities, and their zoning is decided by a township or a county in which they are a minority. The one with individual deeds inside a town keeps its property and none of the authority. **The one with neither a charter nor an association nor a friendly government was condemned by ordinance in 1924 and was gone by 1927.**
+
+**Now here is what these five cases do NOT show, and you must not let a good pattern run past its evidence.**
+
+- **Five cases are not a sample.** You cannot derive a rule about American municipalities from five communities selected because they are well documented.
+- **Incorporation is not armour.** Highland Beach incorporated in **1922** and Bruce's Beach was condemned in **1924**, and nothing about the first prevented the second, because they are in different states and unrelated. More to the point, the rest of this route series is full of incorporated places whose Black districts were taken anyway, by states, counties and highway departments that outrank a city.
+- **The causation runs the other way as often as not.** A community that could organise a charter was already a community with money, lawyers and time.
+
+**The claim that survives all of that is narrower and still worth having: legal shape determines who has to be persuaded, and which instrument they must use to move you.** It does not determine whether they succeed. **Knowing which body has the power is how you know which meeting to attend**, and that is the difference between a history course and a civics course.
+
+## Sources
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
+- Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
+- Vineyard Gazette. (2016, August 2). *The Cottagers: Sixty years of community and philanthropy*. https://vineyardgazette.com/news/2016/08/02/cottagers-sixty-years-community-and-philanthrophy`,
+      recallContent: [
+        {
+          prompt: "What does this course refuse to tell you about these businesses, and why?",
+          answer: "Room rates, occupancy, payroll, season length and a night's take, because no season's books for any of them has been read into the course. A writer who gives you those numbers owes you a source.",
+        },
+        {
+          prompt: "Name the five different sources of capital behind the five communities.",
+          answer: "A federal employee's savings (Highland Beach), a white land company then instalment payments from Black buyers (Idlewild), an insurance company's invested reserves (American Beach), individual household savings deed by deed (Oak Bluffs), and a railroad dining-car chef's wages with his wife running the business on site (Bruce's Beach).",
+        },
+        {
+          prompt: "What did the Los Angeles Times say about the 1,225 dollars Willa Bruce paid, and what caveat did the city's own report attach?",
+          answer: "The Times called it a high price compared to the cost of nearby lots. The History Advisory Board reported that it could not obtain deeds for comparable properties to confirm that and was still trying.",
+        },
+        {
+          prompt: "State three of the five method rules for money in this course.",
+          answer: "Give every figure an owner, a date and a scope; say what you did to a number; an award is not a price; carry a source's own caveat; and a missing number is a finding.",
+        },
+      ],
+    },
+    {
+      slug: "wwr-quiz-business-governance",
+      title: "11 · Quiz: the businesses, the money, and who governed",
+      section: "Section 4 · Governance",
+      quiz: {
+        passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options, so a retake is a different
+        // quiz rather than the same list (the repo standard, src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What did Willa Bruce's operation actually sell when it opened on June 17, 1912?",
+            options: [
+              "Building lots, sold on weekly instalment terms to buyers",
+              "Soda pop and lunches, plus suits, showers and dressing tents",
+              "Life insurance policies underwritten for Black policyholders in Florida",
+              "Nothing at all. It was a private family cottage with no trade",
+            ],
+            correctIndex: 1,
+            explanation: "A portable cottage with a stand, and the changing facilities. Her first product was a room with a door on it.",
+            sourceLessonSlug: "wwr-the-businesses",
+          },
+          {
+            prompt: "Why does this course call the changing room the most important product on the list?",
+            options: [
+              "Because you cannot swim if you cannot change",
+              "Because it was the most profitable line by a wide margin",
+              "Because the buildings were architecturally significant and survive",
+              "Because it was the only service the Green Book editors would list",
+            ],
+            correctIndex: 0,
+            explanation: "A public beach with no bath house you are allowed to use is not a public beach, which is why a Black beach business began with a place to change.",
+            sourceLessonSlug: "wwr-the-businesses",
+          },
+          {
+            prompt: "Besides Ordinance 276, what did the Manhattan Beach Board of Trustees pass on June 5, 1924?",
+            options: [
+              "Ordinances 273 to 275, restricting bath houses and beach changing",
+              "A resolution renaming the beachfront park after the Bruce family",
+              "A bond issue to build a municipal pier at the foot of 26th Street",
+              "An ordinance requiring all lodging houses to register their guests",
+            ],
+            correctIndex: 0,
+            explanation: "The city moved against the land and against the business model on the same day, and the business model was a place to change your clothes.",
+            sourceLessonSlug: "wwr-the-businesses",
+          },
+          {
+            prompt: "Shearer Cottage in Oak Bluffs opened in 1912 as what, and after what earlier business?",
+            options: [
+              "A 40-room hotel, after a successful island real estate brokerage",
+              "A restaurant, after a bakery the Shearers had run in Boston",
+              "A nightclub, after a dance hall the family operated at the Highlands",
+              "A 12-room inn, after Henrietta Shearer ran a laundry for ten years",
+            ],
+            correctIndex: 3,
+            explanation: "The laundry came first. A laundry became an inn became a family asset held by descendants for more than a century.",
+            sourceLessonSlug: "wwr-the-businesses",
+          },
+          {
+            prompt: "Which community's developer had a completely different main line of business?",
+            options: [
+              "Highland Beach, whose founder ran a Chesapeake steamboat line",
+              "American Beach, developed by an insurance company",
+              "Oak Bluffs, developed by a Baptist publishing house",
+              "Idlewild, developed by a Michigan lumber and sawmill partnership",
+            ],
+            correctIndex: 1,
+            explanation: "The Afro-American Life Insurance Company sold insurance. The beach was an investment of company money and a staff benefit, a line item on somebody else's balance sheet.",
+            sourceLessonSlug: "wwr-the-businesses",
+          },
+          {
+            prompt: "What does this course say it does NOT know about these businesses?",
+            options: [
+              "Who owned the land, because the deeds were destroyed by fire",
+              "Which states they were located in, because the records conflict badly",
+              "Room rates, occupancy, payroll and season length",
+              "Whether Black Americans were in fact excluded from other beaches",
+            ],
+            correctIndex: 2,
+            explanation: "No season's books have been read into the course, so it refuses to supply those figures. A writer who gives them to you owes you a source.",
+            sourceLessonSlug: "wwr-the-season",
+          },
+          {
+            prompt: "Charles Bruce earned the family's outside income how?",
+            options: [
+              "As a dining-car chef on the railroad",
+              "As a Los Angeles County lifeguard",
+              "As a real estate agent selling Manhattan Beach lots",
+              "As a postal carrier working a Los Angeles delivery route",
+            ],
+            correctIndex: 0,
+            explanation: "He cooked on the train running between Salt Lake City and Los Angeles while Willa ran the business on site.",
+            sourceLessonSlug: "wwr-the-season",
+          },
+          {
+            prompt: "Luella Barnett Coleman and her husband bought three lots on Myrtle Avenue in Oak Bluffs in 1944 for how much?",
+            options: ["35 dollars", "800 dollars", "1,225 dollars", "14,500 dollars"],
+            correctIndex: 1,
+            explanation: "Read out of the deed record. A deed gives you a price, a seller, a street and a year, which a memoir cannot.",
+            sourceLessonSlug: "wwr-the-season",
+          },
+          {
+            prompt: "The 14,500 dollars associated with the Bruces in 1929 was what, exactly?",
+            options: [
+              "The price at which they voluntarily sold the property to a buyer",
+              "The assessed value entered by the Los Angeles County assessor",
+              "The amount they had originally paid for the two beachfront lots",
+              "The court's award in the condemnation judgment",
+            ],
+            correctIndex: 3,
+            explanation: "An award, not a price. They had asked for more. An award is not a sale and an asking price is not a transaction.",
+            sourceLessonSlug: "wwr-the-season",
+          },
+          {
+            prompt: "Which power does a property owners association NOT have?",
+            options: [
+              "Taking property by eminent domain",
+              "Holding and maintaining common property it owns",
+              "Setting covenants that bind its own members",
+              "Raising money, advocating, and interpreting local history",
+            ],
+            correctIndex: 0,
+            explanation: "Taxing, zoning, condemning and policing are government powers. An association is a way of speaking; a government is a way of deciding.",
+            sourceLessonSlug: "wwr-governance",
+          },
+          {
+            prompt: "Idlewild is unincorporated. Which unit of Michigan government does it sit in?",
+            options: [
+              "The City of Baldwin, which annexed it in the 1920s",
+              "Yates Township, in Lake County",
+              "No unit at all. It is federal land inside a national forest",
+              "The Idlewild Lot Owners Association, which is a public body",
+            ],
+            correctIndex: 1,
+            explanation: "The township and county provide public funding and administrative oversight. The Lot Owners Association is a private corporation, not a government.",
+            sourceLessonSlug: "wwr-governance",
+          },
+          {
+            prompt: "Who decides zoning at American Beach?",
+            options: [
+              "The American Beach Property Owners Association, by member vote",
+              "The National Park Service, under the Timucuan preserve legislation",
+              "The community itself, through a town meeting held each summer",
+              "Nassau County",
+            ],
+            correctIndex: 3,
+            explanation: "The community is unincorporated, so the county holds the pen. County planning staff have worked with residents since 2018, but participation and authority are different things.",
+            sourceLessonSlug: "wwr-governance",
+          },
+          {
+            prompt: "On December 6, 1923, what appeared in the Manhattan Beach Board of Trustees minutes?",
+            options: [
+              "The final judgment awarding compensation to the condemned owners",
+              "An ordinance leasing the beachfront to Oscar Bessonette for a dollar",
+              "A petition from Blocks 5 and 12 owners protesting the purchase",
+              "A grand jury report naming the city officials involved in the arson investigation",
+            ],
+            correctIndex: 2,
+            explanation: "People objected on the record, three weeks after Lindsey's petition. It did not stop the ordinance, and a record of objection is still evidence.",
+            sourceLessonSlug: "wwr-governance",
+          },
+          {
+            prompt: "What is the strongest claim the five governance cases actually support?",
+            options: [
+              "Incorporating as a municipality protects a Black community from ever being taken",
+              "Legal shape determines who must be persuaded and which instrument they must use",
+              "Property owners associations are more effective than municipal governments",
+              "Communities that organised early always kept their land and their businesses",
+            ],
+            correctIndex: 1,
+            explanation: "It does not determine whether they succeed. Five well-documented cases are not a sample, and incorporation is not armour.",
+            sourceLessonSlug: "wwr-governance",
+          },
+          {
+            prompt: "Highland Beach prohibits commercial establishments. Why is that a governance fact rather than a preference?",
+            options: [
+              "Because the county rather than the town enforces the restriction",
+              "Because the National Register listing forbids commercial use of the land",
+              "Because a municipality holds police power delegated by the state",
+              "Because the original 1893 deeds carried a covenant against any trade",
+            ],
+            correctIndex: 2,
+            explanation: "A town can restrict land use inside its own limits. A homeowners association cannot, which is exactly the difference the lesson is teaching.",
+            sourceLessonSlug: "wwr-governance",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
