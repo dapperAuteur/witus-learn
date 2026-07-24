@@ -923,6 +923,150 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Now  (beat 4: observation and evidence)
+    //
+    // The 360 tour of the Franklin-Mulberry trench has not been captured yet, and a Wanderlearn
+    // embed URL is authoritative external data that must never be guessed
+    // (plans/future/04-wanderlearn-360-boundary.md). So this lesson ships as `virtual_tour` with NO
+    // contentUrl: the player renders the "no media yet" notice above the body, and the body is the
+    // observation brief the learner uses when the tour lands. Drop the URL in and re-seed.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "bc-now-tour",
+      title: "14 · Now: stand in the trench (360 tour, forthcoming)",
+      section: "Section 4 · Now",
+      lessonType: "virtual_tour",
+      body: `**The 360 tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is telling you the truth rather than reporting a fault. This course was written before the tour was captured, on purpose: the site template treats beat 4 as a drop-in, so the course is complete and teachable without it, and the tour is added later without restructuring anything.
+
+**Read this lesson now anyway.** It is your observation brief. Beat 4 asks one question, "what is actually there today", and the difference between a tourist looking at a street and a researcher looking at a street is entirely a matter of knowing what to look for before you arrive. The subject of this tour is unusual, and it is the reason Baltimore closes this series: **the fourth instrument in this city is not a monument or a cleared lot, it is an open trench you can stand beside.** The Franklin-Mulberry section of US 40, the "Highway to Nowhere," is a 1.4-mile sunken road that was built and then abandoned, and an abandoned public work is the most legible absence in the whole chain.
+
+## What to look for, in order
+
+**1. Look down into the trench first.** The road is a sunken expressway, roughly 300 feet across, carrying six lanes that mostly end where the never-built downtown system was supposed to begin (WYPR, 2023). **Ask the beat-3 question of it: who chose this line, and where does it stop?** A road that stops is right-of-way, and right-of-way is on a map you can request.
+
+**2. Read the two walls of the cut as an edge.** On each side of the trench the city resumes as rowhouse blocks in Rosemont, Harlem Park and Franklin Square. **The trench is a seam, and a seam has two dates**: when the houses on each side were built, and when the ground between them was taken. You met both in Section 3.
+
+**3. Count the rowhouses, and find the marble and the Formstone.** You can now read a Baltimore block as a document (Section 2). Look for the scrubbed marble stoops, the Formstone facing, and the narrow interior alleys behind the street. **Each is evidence about who was meant to live here and how much room they were given**, and none of it needs a plaque to start reading.
+
+**4. Find where the corridor meets Pennsylvania Avenue.** Somewhere north of the trench the fabric changes toward The Avenue, with the Arch Social Club still operating and the Royal Theatre surviving only as a monument (Section 1). **A survivor and a monument are different kinds of evidence**, and knowing which one you are looking at is the single most useful thing you can carry.
+
+**5. Look for what is being built right now.** Construction fencing, a public hearing sign, a rendering of a "cap" over the road, a leasing banner, a rail survey stake. **Every one of those is a live document with a case number**, and Section 5 teaches you how to look them up. Baltimore is the rare corridor where beat 4 and beat 5 overlap in the same field of view: the harm and its repair are being built on the same ground.
+
+**6. Count the markers and plaques, and read who wrote them.** A historical marker is a public record with an author, a date and a sponsor. **A marker tells you what a community and an agency agreed to say in public, in a particular year.** Note the sponsor's name every time.
+
+**7. Look at who is on the street.** This is a working district with residents, students, workers and visitors. **Describe them as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours.
+
+## What the tour cannot show you
+
+- **It cannot show you a date.** Every change you notice happened at a time, and the tour has no clock. Beat 3 gave you the dates; beat 5 gives you the record.
+- **It cannot show you an owner.** A building's occupant is not its owner, and neither is on the facade. The parcel record has it.
+- **It cannot show you an intention.** An empty trench is not evidence about anyone's motives. It is evidence that a road was built and a road was stopped.
+- **It cannot show you what stood here.** You cannot photograph 971 demolished homes. **Everything the trench does not contain is a question for Section 5, not an answer.**
+
+**Write down your five most confident observations before the tour arrives, based on this brief and on the map that follows. Then check them.** Being wrong on the record about a place you had not yet seen is a better teacher than being right about one you had.
+
+## Sources
+- Baltimore City Department of Transportation. (2022, October 21). *Giving back what was taken: The West Baltimore United Project seeks to heal 50 years of infrastructure damage*. https://transportation.baltimorecity.gov/news/press-releases/2022-10-21-giving-back-what-was-taken-west-baltimore-united-project-seeks-heal
+- Congress for the New Urbanism. (n.d.). *Baltimore: US 40 Expressway*. Highways to Boulevards. https://www.cnu.org/highways-boulevards/campaign-cities/baltimore-us-40
+- WYPR. (2023, September 28). *Maryland releases three potential Red Line routes, each with rail and bus options*. https://www.wypr.org/the-baltimore-banner/2023-09-28/maryland-releases-three-potential-red-line-routes-each-with-rail-and-bus-options`,
+    },
+    {
+      slug: "bc-now-map",
+      title: "15 · Map: one trench, and the pattern it belongs to",
+      section: "Section 4 · Now",
+      body: `**Read this before you touch the map, because the map's limits are a lesson in themselves.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, so two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **A 1.4-mile trench is far smaller than one dot**, and Annapolis, plotted below, sits so close to Baltimore that the two markers may merge. So this map cannot show you Franklin-Mulberry block by block, and pretending otherwise would be a worse lesson than admitting it.
+
+**That limitation is the most useful thing on this page.** The right map for a Baltimore parcel question is not a world map. It is the state's **Real Property Data Search**, run by the Maryland State Department of Assessments and Taxation, where you enter an address, an owner name or an account number and read the parcel record (Maryland State Department of Assessments and Taxation, n.d.), and the **Baltimore City GIS** maintained by the Department of Planning, where you can see parcel boundaries and city layers (Baltimore City Department of Planning, n.d.-b). **Choosing the right scale of map for your question is a research skill**, and Section 5 puts you to work in those tools directly.
+
+**So this map does the job it can do well.** It places the Highway to Nowhere in the national pattern it belongs to, and it marks the archives where the underlying records live.
+
+**Blue: the Franklin-Mulberry Highway to Nowhere**, plotted at an approximate point on the West Baltimore corridor.
+
+**Amber: four other American Black districts** cut by a highway. In cities across the country, highway construction displaced Black households and destroyed homes, churches, schools and businesses, and in some places a road was used deliberately as a barrier between white and Black neighbourhoods (Archer, 2020; Rothstein, 2017). **These four are here to stop you reading Baltimore as a local misfortune.** It is a local instance of a national method, and Baltimore's own case even carries the same two nicknames, "Black Wall Street" and "the Harlem of the South," that recur across these places.
+
+**Green: two archives.** The Maryland State Archives in Annapolis holds land records, plats and state papers, the same class of record where the ground rents of Section 2 and the covenants of Section 3 physically live. The Digital Scholarship Lab at the University of Richmond hosts Mapping Inequality, where the 1937 HOLC "Residential Security Map" of Baltimore from Section 3 is digitized (Nelson et al., n.d.). **Knowing where a record physically lives is part of knowing that it exists.**
+
+**Coordinates on this map are approximate points, not surveyed locations.** Do not use them to find an address. Use them to see the shape of the pattern, and use the state and city tools when you need a parcel.
+
+**What this map cannot show, and neither could a world map of anything.** It cannot show absence. Every marker exists because something was recorded, and the four amber cities are the ones that have been written about, which is a fact about scholarship as well as about highways. **How many Black districts were cut by roads and never studied is a question this course cannot answer and will not guess at.**
+
+## Sources
+- Archer, D. N. (2020). "White men's roads through Black men's homes": Advancing racial equity through highway reconstruction. *Vanderbilt Law Review, 73*(5). https://scholarship.law.vanderbilt.edu/vlr/vol73/iss5/1/
+- Baltimore City Department of Planning. (n.d.-b). *GIS and mapping*. https://planning.baltimorecity.gov/maps-data/gis
+- Maryland State Department of Assessments and Taxation. (n.d.). *Real property data search*. https://sdat.dat.maryland.gov/RealProperty/
+- Nelson, R. K., Winling, L., Marciano, R., Connolly, N. D. B., et al. (n.d.). *Mapping inequality: Redlining in New Deal America*. Digital Scholarship Lab, University of Richmond. https://dsl.richmond.edu/panorama/redlining/
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
+      mapContent: {
+        markers: [
+          {
+            id: "bc-franklin-mulberry",
+            lat: 39.293,
+            lng: -76.645,
+            title: "Highway to Nowhere (Franklin-Mulberry, US 40), West Baltimore",
+            color: "#1d4ed8",
+            description:
+              "The subject of this course, plotted at an approximate point. A 1.4-mile sunken section of US 40 cut through Rosemont, Harlem Park and Franklin Square in the late 1960s and early 1970s and then abandoned when community and environmental opposition stopped the larger downtown expressway system. The commonly reported clearance is about 971 homes, 62 businesses and one school, with roughly 1,500 residents displaced (see lesson 11 for how to handle those figures and why the block count varies). It is the one link in Baltimore's chain that is still physically open, and it now has an active reconnection project attached, which Section 5 sends you into.",
+          },
+          {
+            id: "bc-rondo",
+            lat: 44.948,
+            lng: -93.127,
+            title: "Rondo, Saint Paul, Minnesota",
+            color: "#b45309",
+            description:
+              "Interstate 94 was routed through Rondo, Saint Paul's Black centre. It is the most cited American case of a highway taking a Black neighbourhood, and the community's own reconnection campaign is active today. Same instrument as lesson 11, a different city.",
+          },
+          {
+            id: "bc-overtown",
+            lat: 25.788,
+            lng: -80.198,
+            title: "Overtown, Miami, Florida",
+            color: "#b45309",
+            description:
+              "Interstate 95 was built through Overtown, the district known then as the Harlem of the South. Rothstein uses Overtown as a worked example of highway displacement at scale. Read its population figures the way lesson 11 taught you to read the 1,500 figure: with an owner, a date and a scope.",
+          },
+          {
+            id: "bc-treme",
+            lat: 29.97,
+            lng: -90.07,
+            title: "Tremé and Claiborne Avenue, New Orleans, Louisiana",
+            color: "#b45309",
+            description:
+              "The Interstate 10 Claiborne Expressway was built over Claiborne Avenue, the Black commercial spine of Tremé, in the late 1960s. Claiborne is the standard example of a highway built on a business street, the closest structural parallel to a corridor built through a commercial district.",
+          },
+          {
+            id: "bc-hayti",
+            lat: 35.994,
+            lng: -78.899,
+            title: "Hayti, Durham, North Carolina",
+            color: "#b45309",
+            description:
+              "The Durham Freeway (NC 147) was cut through Hayti, a self-sufficient Black district often called a Black Wall Street, in the late 1960s and early 1970s under urban renewal. It pairs the highway instrument of lesson 11 with the blight-and-clearance instrument you saw in the Indiana Avenue prerequisite.",
+          },
+          {
+            id: "bc-md-archives",
+            lat: 38.978,
+            lng: -76.492,
+            title: "Maryland State Archives, Annapolis, Maryland",
+            color: "#15803d",
+            description:
+              "Just south of Baltimore, so close on a world map that it may merge with the blue marker. It holds land records, plats and state papers: the class of record where the ground leases of Section 2 and the racial covenants of Section 3 physically live, and where the ordinance files behind lesson 8 can be requested.",
+          },
+          {
+            id: "bc-mapping-inequality",
+            lat: 37.577,
+            lng: -77.54,
+            title: "Mapping Inequality, University of Richmond, Virginia",
+            color: "#15803d",
+            description:
+              "The Digital Scholarship Lab hosts Mapping Inequality, where the 1937 HOLC Residential Security Map of Baltimore from lesson 10 is digitized with its area descriptions. It is where you can read, in the government's own words, the racial grading the popular redlining story compresses.",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
