@@ -890,6 +890,159 @@ Deborah Archer's study of highways and racial equity documents that urban inters
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Source to Use, Worked  (Berman, and then the chronology that weakens the edge)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "htt-berman-the-source",
+      title: "10 · The source: what Berman v. Parker authorised",
+      section: "Section 3 · Source to Use, Worked",
+      body: `**Source to use is the strongest kind of connection, and this section works one all the way through, both to show you how it is done and to show you what it looks like when a favourite edge partly breaks.** This lesson is the source end. The next lesson is the test.
+
+**The instrument.** *Berman v. Parker*, **348 U.S. 26**, decided **November 22, 1954**, by a **unanimous** Court, in an opinion by Justice **William O. Douglas**. It came out of the clearance of Southwest Washington under the District of Columbia Redevelopment Act of 1945, and the prerequisite DC course reads it lesson by lesson (Berman v. Parker, 1954).
+
+**Who sued, because it decides what the case is about.** Not a displaced family. The opinion records that the appellants owned property in Area B at 712 Fourth Street, S.W., which was not a dwelling: a department store stood on it (Berman v. Parker, 1954). **Their argument was that a property which is not a slum may not be taken to cure a slum.**
+
+## What the opinion authorised, in three moves
+
+**Move one: the public purpose is as broad as the legislature says it is.**
+
+> "The concept of the public welfare is broad and inclusive... The values it represents are spiritual as well as physical, aesthetic as well as monetary. It is within the power of the legislature to determine that the community should be beautiful as well as healthy, spacious as well as clean, well-balanced as well as carefully patrolled." (Berman v. Parker, 1954.)
+
+**Move two: the area may be taken as a whole.** The Court held that community redevelopment programmes **"need not, by force of the Constitution, be on a piecemeal basis,"** so an owner cannot defeat an area-wide plan by pointing at his own lot (Berman v. Parker, 1954).
+
+**Move three: the cleared land may go to a private company.** The Court held that **"the public end may be as well or better served through an agency of private enterprise than through a department of government"** (Berman v. Parker, 1954).
+
+**Read those three together and you have the machine the whole route series keeps meeting.** Designate an area. Take all of it, including the parts that are fine. Hand it to a developer. **Before November 1954 the third move was genuinely arguable. After it, it was the design of the programme rather than an abuse of it.**
+
+## Why this is a source node and not just a local ruling
+
+**A source node is a place where a tool is made available to other places.** *Berman* qualifies on the plainest evidence there is: **later courts cite it.**
+
+| Later decision | What it allowed | Relation to Berman |
+|---|---|---|
+| **Poletown**, Michigan Supreme Court, 1981 | Detroit condemning an entire working neighbourhood for a General Motors plant | A state application in the deferential spirit Berman established; Michigan overruled it in 2004 |
+| **Hawaii Housing Authority v. Midkiff**, 467 U.S. 229 (1984) | Hawaii compelling large landowners to sell to their tenants | Relied on Berman for a public-use test satisfied by any rational relation to a conceivable public purpose |
+| **Kelo v. City of New London**, 545 U.S. 469 (2005) | New London taking well-maintained, non-blighted homes for a private economic-development plan | Cited Berman and Midkiff; the tool that began as slum clearance reached sound houses |
+
+**Notice what makes those three edges strong, and remember it.** **They are citations.** A later court naming an earlier case is the cleanest documented line that exists: it is a piece of paper in which the receiving place says, in its own words, where it got the tool. **You do not have to infer transmission when a judge writes it down.**
+
+**So the strongest single edge running out of Washington in this whole catalogue is not the one you would expect.** It is not DC to Indianapolis, the pairing this series was built around. **It is DC to New London**, because *Kelo* cites *Berman* by name and the Indianapolis record, as far as this course has read it, does not.
+
+**Hold that thought for exactly one lesson.** The next one takes the DC-to-Indianapolis edge, which is the reason both those courses exist, and runs the four-question test on it in public.
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Hawaii Housing Authority v. Midkiff, 467 U.S. 229 (1984). https://www.law.cornell.edu/supremecourt/text/467/229
+- Kelo v. City of New London, 545 U.S. 469 (2005). https://www.law.cornell.edu/supremecourt/text/04-108
+- District of Columbia Redevelopment Act of 1945, 60 Stat. 790 (1946). https://www.law.cornell.edu/topn/district_of_columbia_redevelopment_act_of_1945`,
+      recallContent: [
+        {
+          prompt: "Give the 1956 Act's citation, its date, the federal share it set, and what Title II created.",
+          answer: "Public Law 84-627, 70 Stat. 374, signed June 29, 1956. It set the federal share of project cost at 90 percent and raised the system to 41,000 miles. Title II, the Highway Revenue Act of 1956, created the Highway Trust Fund.",
+        },
+        {
+          prompt: "Where does the defence rationale for the Interstate system first appear, and how?",
+          answer: "In the Federal-Aid Highway Act of 1944, which called for a National System of Interstate Highways of up to 40,000 miles so located as to connect the principal metropolitan areas, cities and industrial centers \"to serve the National Defense.\" The first 37,700 miles, announced in 1947, were reviewed by the Department of Defense.",
+        },
+        {
+          prompt: "What was the Yellow Book, and what does its date prove?",
+          answer: "General Location of National System of Interstate Highways Including All Additional Routes at Urban Areas, published in September 1955, with maps showing where the urban Interstates would run. It proves the routes existed on paper before the 1956 money did.",
+        },
+        {
+          prompt: "State the sourceable version and the unsourced version of the highway claim.",
+          answer: "Sourceable: a federal Act made urban highway construction cheap, a federal publication mapped urban routes in 1955, and the alignments chosen fell disproportionately on Black neighbourhoods across many cities. Not sourced here: that the 1956 statute directed or contemplated that outcome. Its text does not, and intent needs the records of the bodies that drew the lines.",
+        },
+        {
+          prompt: "Why does a 90 percent federal share matter to a city's choice?",
+          answer: "Because a state or city choosing an urban Interstate alignment was spending roughly ten cents on the dollar of construction cost, and a dedicated trust fund meant the money did not have to be fought for annually.",
+        },
+      ],
+    },
+    {
+      slug: "htt-berman-tested",
+      title: "11 · The test, run in public: Berman and Indiana Avenue",
+      section: "Section 3 · Source to Use, Worked",
+      body: `**Here is the claim this whole series was arranged around, stated at its most attractive:** Washington authorised the blight-clearance instrument in *Berman v. Parker*, and Indianapolis used it on Indiana Avenue. **Source and use. The model edge.**
+
+**Now run the four questions on it, in order, and do not flinch at the answer.**
+
+## Question 1. Chronology
+
+| Date | Event | Place |
+|---|---|---|
+| **1945** | Indiana General Assembly identifies Pat Ward's Bottom, near Indiana Avenue, as blighted | Indianapolis |
+| 1945 | District of Columbia Redevelopment Act; Redevelopment Land Agency created | Washington |
+| **1948** | **Demolition of homes begins at Pat Ward's Bottom** | Indianapolis |
+| 1949 | Housing Act of 1949, Title I | Federal |
+| 1952 | Southwest "Area B" renewal plan approved | Washington |
+| August 2, 1954 | Housing Act of 1954 | Federal |
+| **November 22, 1954** | ***Berman v. Parker* decided** | Washington |
+| 1954, 1956 | Further Indianapolis blight designations; medical centre expansion | Indianapolis |
+| 1958 | The joint university campus plan proposed | Indianapolis |
+
+**The strong claim fails here, and it fails badly.** Indiana had its **own** blight machinery in **1945** and was demolishing homes near the Avenue in **1948**, **six years before** *Berman* was decided (Encyclopedia of Indianapolis, n.d.; Berman v. Parker, 1954). **A cause cannot postdate effects that were already under way.** Indianapolis was not waiting for Washington's permission, because Indianapolis already had Indiana's.
+
+## Question 2. Mechanism
+
+**This one passes.** The channel is **law**: a Supreme Court decision changes what arguments can be made against a practice everywhere, immediately, without anybody travelling anywhere. That is a real and well-understood route of transmission.
+
+## Question 3. Document
+
+**Partly.** The opinion exists and can be quoted exactly, which is one end. **The other end is missing from this course:** no document has been read here in which an Indianapolis body cites *Berman*. **The Indianapolis Redevelopment Commission's minutes are public and have not been read into this series**, which the pilot course said plainly about itself. **Until somebody reads them, the receiving end of this edge is an assumption.**
+
+## Question 4. Alternative cause
+
+**And here the edge nearly disappears.** Two better explanations are sitting in plain view.
+- **Indiana's own 1945 statute** authorised the designation, and it is a state instrument that owes nothing to *Berman*.
+- **Title I money** from 1949 paid for the kind of project the Avenue's clearance became, and it was available to every city in the country at once.
+
+**Between them, Indiana Avenue's clearance is fully accounted for without Washington's opinion.**
+
+## The verdict, and it is not "no connection"
+
+**Berman did not cause Indiana Avenue's clearance. It insured it.**
+
+Here is the accurate claim, and it is smaller and better than the one we started with. **Before November 1954 an owner anywhere could argue that taking non-blighted property inside a designated area, and handing it to a private developer, violated the constitutional public-use requirement.** After *Berman* that argument was gone. **The tool Indianapolis was already using could no longer be beaten with it.**
+
+**So re-classify the edge rather than deleting it.** It is still **source to use**. What changes is **what was used**. The use is not the clearance, which was already running. **The use is the legal security of the clearance**, and that is a real thing that a court gave to every redevelopment agency in the country on one day in November 1954.
+
+## The three sentences worth carrying out of this course
+
+1. **An instrument that arrives after a practice is not its cause. It is its insurance.** That sentence will save you from a large fraction of the bad transmission claims you will meet.
+2. **The most famous edge in a catalogue is often the one most loosely stated**, precisely because everyone already believes it and nobody re-tests it.
+3. **A weakened claim that survives is worth more than a strong claim that does not**, and reporting the weakening is what makes the rest of your work believable.
+
+**One comparison to close on.** The DC-to-New London edge from lesson 10 passes all four questions, because *Kelo* cites *Berman* in writing. The DC-to-Indianapolis edge, the one this series is built around, **passes three and fails one, and needs a trip to the Indianapolis Redevelopment Commission's minutes to close the third.** **The edge everybody cares about is weaker than the edge nobody mentions.** That is normal, it is worth saying out loud, and it is why you run the test on the claims you like best rather than only on the ones you doubt.
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Encyclopedia of Indianapolis. (n.d.). *Midtown*. https://indyencyclopedia.org/midtown/
+- Housing Act of 1949, Pub. L. No. 81-171, 63 Stat. 413 (1949). https://www.govinfo.gov/content/pkg/STATUTE-63/pdf/STATUTE-63-Pg413.pdf
+- Kelo v. City of New London, 545 U.S. 469 (2005). https://www.law.cornell.edu/supremecourt/text/04-108`,
+      recallContent: [
+        {
+          prompt: "Who was the plaintiff in Berman v. Parker, and what was his argument?",
+          answer: "Not a displaced family. The appellants owned property at 712 Fourth Street, S.W., in Area B, which was not a dwelling; a department store stood on it. Their argument was that a property which is not a slum may not be taken to cure a slum.",
+        },
+        {
+          prompt: "Name the three moves the Berman opinion made.",
+          answer: "The public purpose is as broad as the legislature says it is; the area may be taken as a whole, because redevelopment need not be piecemeal; and the cleared land may be conveyed to a private company, because the public end may be as well or better served through private enterprise.",
+        },
+        {
+          prompt: "What makes the edges from Berman to Poletown, Midkiff and Kelo strong?",
+          answer: "They are citations. A later court naming an earlier case is the cleanest documented line there is: the receiving place says in its own words where it got the tool, so transmission does not have to be inferred.",
+        },
+        {
+          prompt: "Which single edge running out of Washington is the strongest in this catalogue, and why is that surprising?",
+          answer: "Washington to New London, because Kelo cites Berman by name. It is surprising because the pairing the series was built around is Washington to Indianapolis, and the Indianapolis record, as far as this course has read it, contains no such citation.",
+        },
+        {
+          prompt: "What did Kelo allow, and what does it show about the tool's travel?",
+          answer: "It allowed New London to take well-maintained, non-blighted homes for a private economic-development plan, citing Berman and Midkiff. The tool that began as slum clearance had reached sound houses taken for growth.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
