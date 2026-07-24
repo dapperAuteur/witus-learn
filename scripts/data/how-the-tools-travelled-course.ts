@@ -426,6 +426,470 @@ A cause needs a channel. **Name it.** For a claim about cities, the plausible ch
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 2 · The Federal Upstream  (the spine: the statutes and the manual, read directly)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "htt-act-1949",
+      title: "5 · The Housing Act of 1949: the money that paid for the clearance",
+      section: "Section 2 · The Federal Upstream",
+      body: `**Section 1 told you not to draw a line without a mechanism. This section is the mechanism.** Before you can grade any claim that one city influenced another, you have to know what both cities were being offered from above, because **a shared offer explains a shared behaviour without either city ever hearing of the other.** That is the fourth question of the test, and this whole section is the answer to it.
+
+**The instrument.** The **Housing Act of 1949**, Public Law 81-171, **63 Stat. 413**, approved **July 15, 1949**. **Title I** is the one this series keeps running into: it is captioned slum clearance and community development and redevelopment, and it created the national money for what everybody would soon call urban renewal (Housing Act of 1949).
+
+## Read the declaration of policy, because both halves of the century are in one sentence
+
+The Act opens with a **declaration of national housing policy**, now codified at 42 U.S.C. § 1441:
+
+> "The Congress hereby declares that the general welfare and security of the Nation and the health and living standards of its people require housing production and related community development sufficient to remedy the serious housing shortage, the elimination of substandard and other inadequate housing through the clearance of slums and blighted areas, and the realization as soon as feasible of the goal of a decent home and a suitable living environment for every American family, thus contributing to the development and redevelopment of communities and to the advancement of the growth, wealth, and security of the Nation." (Housing Act of 1949; 42 U.S.C. § 1441.)
+
+**Take that sentence apart slowly, because it is the most quoted line in American housing law and it is usually quoted in halves.**
+
+1. **"A decent home and a suitable living environment for every American family."** This is the promise, and it is a genuine one. It is the sentence housing advocates have cited for seventy-five years, and it is why the 1949 Act is remembered by some people as a landmark of the welfare state.
+2. **"The elimination of substandard and other inadequate housing through the clearance of slums and blighted areas."** This is the method, and the operative word is **"through."** The statute does not treat clearance as a regrettable side effect of the goal. **Clearance is written into the goal as the way it will be reached.**
+3. **The two halves are one sentence.** No reader has to choose between the generous reading and the destructive one. **The Act said both things at once, in one breath, and both things happened.**
+
+**This is why the word "blighted" appears in every Powers section in this series.** It is not local jargon that eleven cities happened to invent. **It is the term of art in the federal statute the money came from.**
+
+## The mechanism, in the order it ran
+
+| Step | Who does it | What it produces |
+|---|---|---|
+| **1. Designate** | A local public agency, under state law, finds an area slum or blighted | A designation, a boundary, and a record |
+| **2. Acquire** | The same agency buys or condemns the land inside the boundary | Offers, appraisals, condemnation filings |
+| **3. Clear** | Buildings come down | Demolition contracts |
+| **4. Write down** | The cleared land is sold to a redeveloper for **less** than the agency paid | A disposition agreement |
+| **5. Reimburse** | The federal government pays most of the loss | A capital-grant contract |
+
+**Step 4 is the one to understand, because it is the whole invention.** Cleared inner-city land generally could not be sold for what it cost to assemble and clear. **The gap between those two numbers is the "net project cost,"** and the federal capital grant covered up to **two thirds** of it, with the locality supplying local grants-in-aid worth at least **one third** of aggregate net project costs (Housing Act of 1949).
+
+**Now say what that meant to a city council.** For every three dollars of loss on the deal, **the city found one and Washington found two.** No city in this series had to invent that arrangement, argue for it, or borrow it from a neighbour. **It was a standing federal offer, open in every state at once, from 1949.**
+
+## What this does to your grading of claims
+
+**This is the single most useful fact in the course for testing a connection**, and it cuts against most of the exciting ones.
+
+- **It is a funding stream**, which lesson 2 listed as one of the four things that make a documented line. So a city taking Title I money is connected to the federal programme by a document. **That connection is easy and real.**
+- **It is also the alternative cause.** If two cities cleared two Black districts within a few years of each other, **the shared federal cheque is a complete explanation of the timing**, and you need something more to argue that either city influenced the other. **The Pittsburgh course reached exactly this conclusion about its own headline.**
+
+**The transferable habit.** When two places do the same thing at the same time, **look for the shared cheque before you look for the shared idea.** Money leaves better records than influence does, and it is usually the true answer.
+
+## The half of this Act that this series talks about less
+
+**The 1949 Act had two halves.** Title I paid for clearance. **Title III authorised a large public housing programme, on the order of 810,000 units over six years.** How many of those units were actually built, how quickly, and how well they matched what clearance removed, is a real historical question with a literature behind it, and **this course has not answered it** (von Hoffman, 2000). **Naming the other half is not a defence of the Act. It is a refusal to describe a statute by only the part that fits the argument.**
+
+## Sources
+- Housing Act of 1949, Pub. L. No. 81-171, 63 Stat. 413 (1949). https://www.govinfo.gov/content/pkg/STATUTE-63/pdf/STATUTE-63-Pg413.pdf
+- 42 U.S.C. § 1441 (Congressional declaration of national housing policy). https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section1441&num=0&edition=prelim
+- von Hoffman, A. (2000). A study in contradictions: The origins and legacy of the Housing Act of 1949. *Housing Policy Debate, 11*(2), 299-326. https://www.tandfonline.com/doi/abs/10.1080/10511482.2000.9521370`,
+      recallContent: [
+        {
+          prompt: "Name the four questions of the test, in order.",
+          answer: "Chronology (does the cause come before the effect), mechanism (by what route would influence have travelled), document (where is the paper), and alternative cause (what else would produce the same result).",
+        },
+        {
+          prompt: "Which four channels can a mechanism run through?",
+          answer: "Money (a grant programme, a matching formula, a trust fund), law (an opinion, a statute, a regulation, a model code), paper (a plan, a manual, a report, a journal), and people (a planner, an official, a consultant, a delegation).",
+        },
+        {
+          prompt: "If a claim passes mechanism, document and alternative cause but fails chronology, what may you write?",
+          answer: "That the later thing did not cause the earlier one, and then what it actually did do. Often the honest answer is that the later instrument made the earlier practice safe rather than starting it.",
+        },
+        {
+          prompt: "Why is a common upstream the alternative explanation for most city-to-city resemblances here?",
+          answer: "Because if a shared federal statute funded both places, both places doing the same thing is exactly what you would expect whether or not either had heard of the other. Parallel invention and common professional training work the same way.",
+        },
+        {
+          prompt: "What should you do when your own claim fails a test?",
+          answer: "Report the failure in the write-up, because the failure is a finding. Every course in this series has published one, and the catalogue is more trustworthy for it.",
+        },
+      ],
+    },
+    {
+      slug: "htt-act-1954",
+      title: "6 · The Housing Act of 1954: the year the word changed",
+      section: "Section 2 · The Federal Upstream",
+      body: `Five years later Congress rewrote the programme, and the rewrite matters for two reasons: **it changed what the money could be spent on, and it changed what the thing was called.** Both changes travelled to every city in this series.
+
+**The instrument.** The **Housing Act of 1954**, Public Law 83-560, **68 Stat. 590**, approved **August 2, 1954** (Housing Act of 1954).
+
+**Hold that date next to one you already know.** *Berman v. Parker* was decided on **November 22, 1954** (Berman v. Parker, 1954). **The statute that rebuilt the programme and the opinion that made the programme constitutionally safe are three and a half months apart in the same year.** 1954 is the hinge of this entire series, and Section 3 is about the second half of it.
+
+## Change one: the name
+
+The 1949 programme was **urban redevelopment**: find a slum, clear it, rebuild. The 1954 Act reoriented federal intervention away from that narrower clearance-and-public-housing mandate toward a broader strategy, **urban renewal**, which added **rehabilitation and conservation** of existing neighbourhoods to demolition, and which leaned harder on **private** redevelopers to do the building (Housing Act of 1954).
+
+**A change of name is not cosmetic when the name is in a statute.** After 1954 the local agency in almost every city in this series is an **urban renewal** agency, applying for **urban renewal** funds, under an **urban renewal** plan. **When you find that vocabulary in a local record, you have found a federal programme, and you can date the document from the word alone.** That is a small, genuinely useful research skill.
+
+## Change two: the workable program
+
+The 1954 Act attached a condition. To receive federal urban renewal aid, a locality had to submit and maintain a **"workable program"** for community improvement, a package of local commitments that typically had to include such things as a comprehensive community plan for land use and public improvements, a zoning ordinance and map, subdivision regulations, and housing-code enforcement (Housing Act of 1954; Rhyne, 1960).
+
+**Read what that condition actually does, because it is the cleanest example of transmission in the whole course.** Washington did not order any city to adopt a zoning ordinance. **It made federal money conditional on having one.** A city that wanted the grant produced the plan, the map, the code and the enforcement machinery, and produced them to a federal specification.
+
+**That is a mechanism with a name.** It is **money, converted into law, at a distance.** If you are hunting for how a practice spread across hundreds of American cities in the same decade without any city copying any other, **the conditional grant is very often the answer**, and it leaves an application file behind in each city that took it.
+
+## Change three: the insurance
+
+The Act also put the **Federal Housing Administration** to work inside renewal areas. **Section 220** provided FHA mortgage insurance for housing built or rehabilitated in urban renewal areas, and **Section 221** provided insurance aimed at housing for families displaced by government action (Housing Act of 1954).
+
+**Notice the shape of that.** The same federal agency whose underwriting rules helped make those neighbourhoods unlendable in the first place, which is lesson 7, was now insuring the mortgages on what replaced them. **Both facts are about the same agency, and a course that reports only one of them is reporting half an instrument.**
+
+## What this lesson is NOT claiming
+
+**It is not claiming that the 1954 Act caused any particular clearance.** Indianapolis had been demolishing near Indiana Avenue since 1948, six years earlier, under Indiana's own 1945 machinery. **The 1954 Act reshaped and re-funded a programme that was already running.** What it gives you is a mechanism and a vocabulary, and lesson 3 warned you to keep those separate from causation.
+
+## Sources
+- Housing Act of 1954, Pub. L. No. 83-560, 68 Stat. 590 (1954).
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Rhyne, C. S. (1960). The workable program: A challenge for community improvement. *Law and Contemporary Problems, 25*(4), 685-704. https://scholarship.law.duke.edu/lcp/vol25/iss4/
+- von Hoffman, A. (2000). A study in contradictions: The origins and legacy of the Housing Act of 1949. *Housing Policy Debate, 11*(2), 299-326. https://www.tandfonline.com/doi/abs/10.1080/10511482.2000.9521370`,
+      recallContent: [
+        {
+          prompt: "Give the citation and date of the Housing Act of 1949, and what Title I did.",
+          answer: "Public Law 81-171, 63 Stat. 413, approved July 15, 1949. Title I created the national money for slum clearance and urban redevelopment, the programme everyone soon called urban renewal.",
+        },
+        {
+          prompt: "What is the operative word in the 1949 declaration of policy, and why?",
+          answer: "\"Through.\" The statute promises a decent home and a suitable living environment for every American family, and it names the elimination of substandard housing \"through the clearance of slums and blighted areas.\" Clearance is written into the goal as the way it will be reached.",
+        },
+        {
+          prompt: "Explain the write-down, and who paid for it.",
+          answer: "Cleared land was sold to a redeveloper for less than the agency paid to assemble and clear it. The gap is the net project cost, and the federal capital grant covered up to two thirds of it, with the locality supplying local grants-in-aid worth at least one third of aggregate net project costs.",
+        },
+        {
+          prompt: "Why does the 1949 Act cut against exciting city-to-city claims?",
+          answer: "Because it is the alternative cause. If two cities cleared two districts within a few years of each other, a standing federal offer open in every state explains the timing completely, and you need something more to argue that either influenced the other.",
+        },
+        {
+          prompt: "What was the other half of the 1949 Act, and what does this course say about it?",
+          answer: "Title III authorised a large public housing programme, on the order of 810,000 units over six years. How many were built, how fast, and how well they matched what clearance removed is a real question this course has not answered. Naming the other half is a refusal to describe a statute by only the part that fits the argument.",
+        },
+      ],
+    },
+    {
+      slug: "htt-fha-manual",
+      title: "7 · The manual: the instrument you can quote",
+      section: "Section 2 · The Federal Upstream",
+      body: `The two statutes paid for the clearance. **This lesson is about the document that helped produce the conditions the clearance was justified by**, and it is the best-behaved piece of evidence in the entire series, because it says what it means in federal print.
+
+**The instrument.** The **Federal Housing Administration Underwriting Manual**, the rulebook FHA valuators applied when deciding whether a mortgage was insurable. Because the FHA insured an enormous share of the private mortgage market, **its rules shaped where private capital would and would not go**, nationwide, at once.
+
+## Its own words
+
+The 1938 manual states plainly:
+
+- **"If a neighborhood is to retain stability, it is necessary that properties shall continue to be occupied by the same social and racial classes"** (Federal Housing Administration, 1938, section 937).
+- It lists among the **"adverse influences"** a valuator must guard against the **"infiltration of business and industrial uses, lower class occupancy, and inharmonious racial groups"** (Federal Housing Administration, 1938, section 937).
+- And it recommends that deed restrictions include **"prohibition of the occupancy of properties except by the race for which they are intended"** (Federal Housing Administration, 1938, section 980).
+
+**Read the third one twice.** The federal government's own underwriting manual **recommended the racial covenant** that private developers were already writing into deeds. **That is not an inference about federal attitudes. It is the federal instrument endorsing the private one, in writing, in a document with a section number.**
+
+## Why this course leans on the manual and is careful with the map
+
+**The famous object in this story is the other one:** the Home Owners' Loan Corporation "Residential Security" maps of the late 1930s, with their green, blue, yellow and red neighbourhoods. They are vivid, they are online, and their written area descriptions name race directly.
+
+**The Baltimore course, which had to teach both, found the tidy causal story about the maps is disputed.** Scholars who read the lending records point out that the maps were largely confidential internal documents and that HOLC itself lent inside the red areas, which is not what a simple redlining account predicts (Hillier, 2003). **Later quantitative work does find the graded boundaries carried some independent long-run effect** (Aaronson et al., 2021). So the map is real evidence with real downstream correlation, and it is **not** a proven single cause.
+
+**The manual has no such problem.** It is not confidential, it is not disputed, and it does not require an inference. **The rule for the rest of your research life is the one Baltimore stated: when you have a vivid instrument whose causal role is contested and a duller instrument whose words are undisputed, build the argument on the words. A picture persuades; a quotation proves.**
+
+## What the manual explains that nothing else in this course does
+
+**Go back to the surveys the Berman opinion recited**: 64.3 percent of dwellings beyond repair, 60.3 percent with no baths, 83.8 percent lacking central heating (Berman v. Parker, 1954). **Those measurements were real.** The DC course's central idea is that **the condition and its cause can be the same policy at two different dates**: a neighbourhood is starved of mortgage capital for a generation, its housing decays, and the decay is then the legal basis for clearing the people who lived through it.
+
+**The manual is the paper trail for the first half of that circle.** It is the federal document instructing that capital should avoid exactly the neighbourhoods that Title I money would later be spent clearing. **Both instruments are federal, they run twenty years apart, and they point at the same blocks.**
+
+**Be precise about what that is and is not.** It is a documented, quotable federal policy of racial underwriting, and it is a genuine common upstream. **It is not a proof that any specific parcel in any specific city was denied a specific loan**, which would need that city's lending records, and no such record has been read into this course.
+
+## Sources
+- Aaronson, D., Hartley, D., & Mazumder, B. (2021). The effects of the 1930s HOLC "redlining" maps. *American Economic Journal: Economic Policy, 13*(4), 355-392. https://www.aeaweb.org/articles?id=10.1257/pol.20190414
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Federal Housing Administration. (1938). *Underwriting manual: Underwriting and valuation procedure under Title II of the National Housing Act*. U.S. Government Printing Office.
+- Hillier, A. E. (2003). Redlining and the Home Owners' Loan Corporation. *Journal of Urban History, 29*(4), 394-420. https://doi.org/10.1177/0096144203029004002
+- Nelson, R. K., Winling, L., Marciano, R., Connolly, N. D. B., et al. (n.d.). *Mapping inequality: Redlining in New Deal America*. Digital Scholarship Lab, University of Richmond. https://dsl.richmond.edu/panorama/redlining/`,
+      recallContent: [
+        {
+          prompt: "Give the citation and date of the Housing Act of 1954, and why the date matters.",
+          answer: "Public Law 83-560, 68 Stat. 590, approved August 2, 1954. Berman v. Parker was decided on November 22, 1954, so the statute that rebuilt the programme and the opinion that made it constitutionally safe are three and a half months apart in the same year.",
+        },
+        {
+          prompt: "What changed about the name in 1954, and why is that useful to a researcher?",
+          answer: "Urban redevelopment became urban renewal, adding rehabilitation and conservation to demolition and leaning harder on private redevelopers. After 1954 the vocabulary in a local record tells you that you have found a federal programme, and you can date the document from the word alone.",
+        },
+        {
+          prompt: "What was the workable program, and what kind of mechanism is it?",
+          answer: "A package of local commitments a city had to submit and maintain to receive urban renewal aid, typically including a comprehensive plan, a zoning ordinance and map, subdivision regulations and housing-code enforcement. It is money converted into law at a distance: the conditional grant.",
+        },
+        {
+          prompt: "What did Sections 220 and 221 of the 1954 Act do, and what is the irony in them?",
+          answer: "Section 220 provided FHA mortgage insurance for housing built or rehabilitated in urban renewal areas, and Section 221 aimed insurance at housing for families displaced by government action. The same agency whose underwriting rules helped make those neighbourhoods unlendable was now insuring the mortgages on what replaced them.",
+        },
+        {
+          prompt: "What is lesson 6 careful NOT to claim?",
+          answer: "That the 1954 Act caused any particular clearance. Indianapolis had been demolishing near Indiana Avenue since 1948 under Indiana's own 1945 machinery. The Act reshaped and re-funded a programme already running, and a mechanism is not the same thing as a cause.",
+        },
+      ],
+    },
+    {
+      slug: "htt-highway-1956",
+      title: "8 · The Federal-Aid Highway Act of 1956, and the word \"Defense\"",
+      section: "Section 2 · The Federal Upstream",
+      body: `The last piece of the upstream is the one every city course in this series has to handle carefully, because it is the instrument the popular story most often over-credits. **The Indiana Avenue course found the highway was not what cleared the Avenue.** So read this lesson for what the Act actually did, which is enormous, and not for what it is usually blamed for.
+
+## The instrument, and its full name
+
+The **Federal-Aid Highway Act of 1956**, Public Law 84-627, **70 Stat. 374**, signed **June 29, 1956**. The Act **changed the system's name to the "National System of Interstate and Defense Highways,"** set the **federal share of project cost at 90 percent**, and **increased the proposed length of the system to 41,000 miles**. **Title II of the Act, the Highway Revenue Act of 1956, created the Highway Trust Fund** as a dedicated source of money for it (Federal Highway Administration, n.d.-a; Federal-Aid Highway Act of 1956).
+
+## The Defense point, which is the bridge to the war material
+
+**The word "Defense" in that name is not decoration, and it did not start in 1956.** The **Federal-Aid Highway Act of 1944** had already called for the designation of a **National System of Interstate Highways**, up to **40,000 miles**, described in the Act's own terms as
+
+> "so located, as to connect by routes, direct as practical, the principal metropolitan areas, cities, and industrial centers, to serve the National Defense" (Federal Highway Administration, n.d.-a).
+
+And when the first routes were selected, the process was not purely civilian: on **August 2, 1947**, Commissioner MacDonald and Federal Works Administrator Philip B. Fleming announced the selection of the first **37,700 miles**, routes proposed by the state highway agencies and **reviewed by the Department of Defense** (Federal Highway Administration, n.d.-a).
+
+**This is the documented hinge between two halves of this catalogue.** The war courses in this series describe a country organised for national defence; the city courses describe neighbourhoods cut by roads. **The Interstate system is where those two subjects are the same subject**, and you do not have to infer it from atmosphere: the defence rationale is in the 1944 Act's language, in the 1947 review by the Defense Department, and in the 1956 name.
+
+**Now hold it honestly, which is the discipline of this whole course.** The defence rationale is **real and documented**. It is also **not** a proof that any particular route was chosen for defence reasons, and there are famous folk claims about the system (that a fixed fraction of it had to be straight enough to land aircraft, for example) that this course has not verified and therefore does not repeat. **Cite the name and the statute. Do not decorate them.**
+
+## What the 1956 Act actually did to cities, and what it did not
+
+**What it did: it changed the price.** Under a **90 percent federal share**, a state or city choosing an urban Interstate alignment was spending roughly **ten cents on the dollar** of the construction cost. **A dedicated trust fund meant the money did not have to be fought for annually.** If you want a single sentence for why so much urban highway got built so fast after 1956, it is that one, and it is a funding stream, which lesson 2 counts as a documented line.
+
+**What it did not do: choose anybody's route.** **Alignments were proposed by state highway agencies**, and in **September 1955** the Bureau of Public Roads published *General Location of National System of Interstate Highways Including All Additional Routes at Urban Areas*, known as **"the Yellow Book" for the colour of its cover**, containing maps showing where the urban Interstates would go (Federal Highway Administration, n.d.-b). **So the routes existed on paper before the money did.** Nothing in the 1956 statute names a neighbourhood in Indianapolis, Baltimore or Washington.
+
+**That distinction is the entire reason this lesson exists.** The Act is a **funding and framework instrument**. The **alignment decision** is a separate instrument, taken locally and at the state level, and the city courses in this series are where you go to read one.
+
+## The pattern in the alignments, and how to state it
+
+Deborah Archer's study of highways and racial equity documents that urban interstates were **repeatedly routed through Black neighbourhoods**, and takes its title from the placard carried in the Washington freeway revolt, "white men's roads through black men's homes" (Archer, 2020). **That pattern is documented and it is not in dispute here.**
+
+**But say it in the right order, or you will have made a claim you cannot carry.**
+- **Sourceable:** a federal Act made urban highway construction cheap for states, a federal publication mapped urban routes in 1955, and the alignments that were then chosen fell disproportionately on Black neighbourhoods across many cities (Archer, 2020; Federal Highway Administration, n.d.-a, n.d.-b).
+- **Not sourced here:** that the 1956 statute directed, required or contemplated that outcome. **The Act's text does not do that**, and a claim about intent needs the records of the bodies that actually drew the lines.
+
+**The method, which is the same one you met in lesson 3.** A common upstream that made a choice cheap is not the same as the choice. **Name the upstream, then go find who chose.**
+
+## Sources
+- Archer, D. N. (2020). "White men's roads through Black men's homes": Advancing racial equity through highway reconstruction. *Vanderbilt Law Review, 73*(5). https://scholarship.law.vanderbilt.edu/vlr/vol73/iss5/1/
+- Federal-Aid Highway Act of 1956, Pub. L. No. 84-627, 70 Stat. 374 (1956). https://www.govinfo.gov/content/pkg/STATUTE-70/pdf/STATUTE-70-Pg374.pdf
+- Federal Highway Administration. (n.d.-a). *Interstate system: Design*. U.S. Department of Transportation. https://www.fhwa.dot.gov/programadmin/interstate.cfm
+- Federal Highway Administration. (n.d.-b). *Designating the urban Interstates*. U.S. Department of Transportation. https://highways.dot.gov/highway-history/interstate-system/designating-urban-interstates`,
+      recallContent: [
+        {
+          prompt: "Quote the FHA Underwriting Manual's rule about neighbourhood stability.",
+          answer: "\"If a neighborhood is to retain stability, it is necessary that properties shall continue to be occupied by the same social and racial classes\" (Federal Housing Administration, 1938, section 937).",
+        },
+        {
+          prompt: "What did the manual recommend that deed restrictions include, and why is that a documented rather than an inferred link?",
+          answer: "\"Prohibition of the occupancy of properties except by the race for which they are intended\" (section 980). It is documented because the federal instrument endorses the private racial covenant in writing, in a document with a section number, rather than leaving it to inference.",
+        },
+        {
+          prompt: "Why does this course lean on the manual rather than the HOLC map?",
+          answer: "Because the map's tidy causal story is disputed: the maps were largely confidential and HOLC lent inside the red areas, though later work finds the boundaries carried some independent long-run effect. The manual is not confidential, not disputed, and needs no inference. A picture persuades; a quotation proves.",
+        },
+        {
+          prompt: "How does the manual explain the survey figures Berman recited?",
+          answer: "It is the paper trail for the first half of the circle. Federal policy instructed capital to avoid the very neighbourhoods Title I money would later clear, so a neighbourhood starved of mortgage capital decayed, and the decay became the legal basis for clearing the people who lived through it.",
+        },
+        {
+          prompt: "What does the manual NOT prove?",
+          answer: "That any specific parcel in any specific city was denied a specific loan. That would need that city's lending records, and none has been read into this course.",
+        },
+      ],
+    },
+    {
+      slug: "htt-quiz-upstream",
+      title: "9 · Quiz: the federal upstream",
+      section: "Section 2 · The Federal Upstream",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Give the citation and date of the Housing Act of 1949.",
+            options: [
+              "Public Law 83-560, 68 Stat. 590, approved on the second day of August in the year 1954",
+              "Public Law 84-627, 70 Stat. 374, signed on the twenty-ninth day of June in the year 1956",
+              "Public Law 81-171, 63 Stat. 413, approved July 15, 1949",
+              "Public Law 93-198, 87 Stat. 774, signed on the twenty-fourth day of December in 1973",
+            ],
+            correctIndex: 2,
+            explanation: "Title I of that Act created the national money for slum clearance and urban redevelopment, the programme soon called urban renewal.",
+            sourceLessonSlug: "htt-act-1949",
+          },
+          {
+            prompt: "In the 1949 declaration of national housing policy, what is the operative word this course points to?",
+            options: [
+              "\"Through,\" because clearance is written into the goal as the way it will be reached",
+              "\"Decent,\" because the standard of a decent home was never defined anywhere in the statute itself",
+              "\"Feasible,\" because it gave every locality an unlimited amount of time to reach the stated goal",
+              "\"Welfare,\" because it placed the whole programme under the general welfare clause of the Constitution",
+            ],
+            correctIndex: 0,
+            explanation: "The Act promises a decent home and a suitable living environment, and names elimination of substandard housing \"through the clearance of slums and blighted areas.\" Both halves are one sentence.",
+            sourceLessonSlug: "htt-act-1949",
+          },
+          {
+            prompt: "What is the \"write-down\" in a Title I project?",
+            options: [
+              "A reduction in the assessed value of nearby parcels once the clearance work has been completed",
+              "The written record a redevelopment commission must keep of each demolition it carries out",
+              "A discount on federal income tax offered to the private developer who purchased the cleared site",
+              "Cleared land sold to a redeveloper for less than the agency paid to assemble and clear it",
+            ],
+            correctIndex: 3,
+            explanation: "The gap between those two numbers is the net project cost, and the federal capital grant covered up to two thirds of it.",
+            sourceLessonSlug: "htt-act-1949",
+          },
+          {
+            prompt: "How was the net project cost split between Washington and the locality?",
+            options: [
+              "Up to two thirds federal, with local grants-in-aid worth at least one third",
+              "Evenly, half and half, with the state government contributing whatever remained after the split",
+              "Entirely federal, since a local agency could not lawfully contribute to a federal grant programme",
+              "Ninety percent federal and ten percent local, the same formula the highway programme later used",
+            ],
+            correctIndex: 0,
+            explanation: "For every three dollars of loss on the deal the city found one and Washington found two, as a standing offer open in every state from 1949.",
+            sourceLessonSlug: "htt-act-1949",
+          },
+          {
+            prompt: "Why does the 1949 Act make many exciting city-to-city claims harder to sustain?",
+            options: [
+              "Because the Act expressly forbade one locality from consulting another locality's redevelopment plan",
+              "It is the alternative cause: a standing federal offer explains simultaneous clearances",
+              "Because the records generated by Title I projects were sealed for fifty years after each project closed",
+              "Because most cities in this series declined the federal money and paid for clearance out of local funds",
+            ],
+            correctIndex: 1,
+            explanation: "When two places do the same thing at the same time, look for the shared cheque before you look for the shared idea.",
+            sourceLessonSlug: "htt-act-1949",
+          },
+          {
+            prompt: "What did the Housing Act of 1954 change about the name of the programme?",
+            options: [
+              "Urban redevelopment became urban renewal, adding rehabilitation and conservation to demolition",
+              "Slum clearance became blight elimination, which is why the word blight enters the local records after 1954",
+              "Public housing became assisted housing, which is the vocabulary every later federal statute uses",
+              "Community development became community improvement, a change of wording with no legal consequence at all",
+            ],
+            correctIndex: 0,
+            explanation: "It also leaned harder on private redevelopers. When you find that vocabulary in a local record you have found a federal programme, and you can date the document from the word.",
+            sourceLessonSlug: "htt-act-1954",
+          },
+          {
+            prompt: "What was the \"workable program\" required by the 1954 Act?",
+            options: [
+              "A schedule setting out the order in which a city would demolish the buildings inside a project area",
+              "A federal review of every local condemnation filing before the taking could proceed to a court",
+              "A package of local commitments: a plan, a zoning ordinance and map, and code enforcement",
+              "An agreement between two or more neighbouring cities to coordinate their renewal programmes regionally",
+            ],
+            correctIndex: 2,
+            explanation: "It is money converted into law at a distance. A city that wanted the grant produced the plan, the map, the code and the enforcement machinery, to a federal specification.",
+            sourceLessonSlug: "htt-act-1954",
+          },
+          {
+            prompt: "Why are the dates August 2, 1954 and November 22, 1954 taught together?",
+            options: [
+              "They are the dates on which Congress and the Court respectively considered the District of Columbia's budget",
+              "The Housing Act of 1954 and Berman v. Parker are three and a half months apart in the same year",
+              "They mark the beginning and the end of the first full federal fiscal year of the renewal programme",
+              "They are the dates the Indianapolis Redevelopment Commission designated two separate blighted areas",
+            ],
+            correctIndex: 1,
+            explanation: "The statute that rebuilt the programme and the opinion that made it constitutionally safe fall in the same year. 1954 is the hinge of the series.",
+            sourceLessonSlug: "htt-act-1954",
+          },
+          {
+            prompt: "What did Sections 220 and 221 of the Housing Act of 1954 do?",
+            options: [
+              "Provided FHA mortgage insurance in renewal areas, and for families displaced by government action",
+              "Created two new federal agencies to administer the clearance and the rehousing halves of the programme",
+              "Set the maximum percentage of a project area that could be devoted to non-residential redevelopment uses",
+              "Required each locality to prove that displaced families had been rehoused before any grant was paid out",
+            ],
+            correctIndex: 0,
+            explanation: "The same agency whose underwriting rules helped make those neighbourhoods unlendable was now insuring the mortgages on what replaced them.",
+            sourceLessonSlug: "htt-act-1954",
+          },
+          {
+            prompt: "Which sentence is from the FHA Underwriting Manual?",
+            options: [
+              "\"The concept of the public welfare is broad and inclusive, and the values it represents are spiritual as well as physical, aesthetic as well as monetary\"",
+              "\"If a neighborhood is to retain stability, it is necessary that properties shall continue to be occupied by the same social and racial classes\"",
+              "\"No single tradition in public education is more deeply rooted than local control over the operation of schools\"",
+              "\"So located, as to connect by routes, direct as practical, the principal metropolitan areas, cities, and industrial centers\"",
+            ],
+            correctIndex: 1,
+            explanation: "Section 937 of the 1938 manual. The other three come from Berman, Milliken and the Federal-Aid Highway Act of 1944 respectively.",
+            sourceLessonSlug: "htt-fha-manual",
+          },
+          {
+            prompt: "Why does this course build its redlining argument on the manual rather than on the HOLC maps?",
+            options: [
+              "Because the maps were destroyed and the manual is the only surviving document from that programme",
+              "Because the manual was published in every major newspaper while the maps were never made public at all",
+              "The manual's words are undisputed, while the maps' direct causal role is contested by scholars",
+              "Because the maps covered only a handful of cities and none of the cities studied in this course series",
+            ],
+            correctIndex: 2,
+            explanation: "The maps were largely confidential and HOLC lent inside red areas, though later work finds the boundaries carried some independent effect. A picture persuades; a quotation proves.",
+            sourceLessonSlug: "htt-fha-manual",
+          },
+          {
+            prompt: "What does the manual explain about the housing survey figures the Berman opinion recited?",
+            options: [
+              "It is the paper trail for the first half of the circle: capital was steered away from those blocks",
+              "It shows that the surveys were taken by valuators employed directly by the Federal Housing Administration",
+              "It proves that the specific buildings measured in the Southwest survey had been refused mortgages by name",
+              "It establishes that the survey categories were written by Congress rather than by the local housing agency",
+            ],
+            correctIndex: 0,
+            explanation: "A neighbourhood starved of mortgage capital decayed, and the decay became the legal basis for clearing the people who lived through it. The condition and its cause are the same policy at two dates.",
+            sourceLessonSlug: "htt-fha-manual",
+          },
+          {
+            prompt: "What did the Federal-Aid Highway Act of 1956 change about the system's name and its funding?",
+            options: [
+              "It renamed it the Eisenhower System and moved all funding from the states to the federal government",
+              "It renamed it the National Defense Highway Network and set the federal share of each project's cost at one half",
+              "It kept the 1944 name and created a trust fund financed entirely by state motor fuel tax revenues",
+              "It renamed it the National System of Interstate and Defense Highways and set the federal share at 90 percent",
+            ],
+            correctIndex: 3,
+            explanation: "It also raised the proposed length to 41,000 miles, and Title II, the Highway Revenue Act of 1956, created the Highway Trust Fund.",
+            sourceLessonSlug: "htt-highway-1956",
+          },
+          {
+            prompt: "Where does the defence rationale for the Interstate system first appear in the record?",
+            options: [
+              "In the 1944 Act, which described routes located to serve the National Defense",
+              "In the 1956 Act alone, since no earlier highway legislation mentioned national defence in any form",
+              "In a 1961 executive order issued after the system was already substantially under construction nationally",
+              "In the Yellow Book of 1955, which was prepared jointly by the Bureau of Public Roads and the Army",
+            ],
+            correctIndex: 0,
+            explanation: "The 1944 Act called for a National System of Interstate Highways of up to 40,000 miles, and the first 37,700 miles selected in 1947 were reviewed by the Department of Defense.",
+            sourceLessonSlug: "htt-highway-1956",
+          },
+          {
+            prompt: "What did the 1956 Act NOT do?",
+            options: [
+              "Create a dedicated trust fund as a continuing source of money for the Interstate System's construction",
+              "Choose any city's route, since alignments were proposed by state highway agencies",
+              "Change the federal share of project cost for construction on the Interstate System to ninety percent",
+              "Raise the proposed total length of the Interstate System from 40,000 miles to 41,000 miles nationwide",
+            ],
+            correctIndex: 1,
+            explanation: "The Yellow Book had already mapped urban routes in September 1955. The Act is a funding and framework instrument; the alignment decision is separate, and the city courses are where you read one.",
+            sourceLessonSlug: "htt-highway-1956",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
