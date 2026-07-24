@@ -483,6 +483,36 @@ create a set of courses designed to use the 360 tour of WanderLearn. First is ab
     provenance: "plans/future-courses/green-book.md",
   },
   {
+    key: "guides-for-a-hostile-geography",
+    title: "Guides for a Hostile Geography: Green Book analogues worldwide",
+    summary: "Are there Green Book type tools elsewhere in the world? Yes, and comparing them separates the",
+    body: `# Guides for a Hostile Geography: Green Book analogues worldwide
+
+Are there Green Book type tools elsewhere in the world? Yes, and comparing them separates the
+ARTIFACT (a travel guide for people at risk) from the CONDITION (a society that makes ordinary travel
+dangerous for an identified group). All leads to verify.
+
+South Africa's pass laws and the dompas are the inverse artifact: the Green Book was self-published
+and told you where you COULD go; the pass book was state-issued and told you where you could not.
+Teaching them together is the sharpest available lesson in who holds the pen.
+
+WWII escape lines and safe-house networks (the Comet Line) are the Green Book's structural twin:
+vetted helpers, safe addresses, coded knowledge of where you may stop. The Soviet internal passport
+and propiska governed where a citizen could live and travel. Britain's colour bar produced informal
+knowledge networks among Windrush-era arrivals about which landlords and pubs would serve them, and
+whether any of that was ever PUBLISHED as a guide is the interesting open question. Jewish lodging
+guides need care: the line between a religious-observance guide and a safety guide is real and should
+not be blurred.
+
+The move that makes this land for a teenager: contemporary guides and apps for LGBTQ travellers, for
+disabled travellers, and for women travelling alone. The Green Book was not a quaint object, it was a
+technology for surviving a hostile geography, and people still build them.
+
+Proposed as one course sitting beside the Green Book method course, a natural global-path entry
+needing no new engineering. Full plan: plans/44-parallel-history-and-timelines.md.`,
+    provenance: "plans/future-courses/guides-for-a-hostile-geography.md",
+  },
+  {
     key: "history-of-unions",
     title: "History of unions",
     summary: "create a course on the history of history-of-unions",
@@ -1169,6 +1199,40 @@ political courses don't depend on them.
   precolonial-Africa track to follow the anchor+series pattern.
 - Seed task: \`plans/user-tasks/107-seed-pan-africanism.md\`.`,
     provenance: "plans/future-courses/pan-africanism-track-proposal.md",
+  },
+  {
+    key: "parallel-history",
+    title: "Parallel history: what was built while it was being taken",
+    summary: "The route series now teaches clearance, exclusion and demolition across twelve courses, each of them",
+    body: `# Parallel history: what was built while it was being taken
+
+The route series now teaches clearance, exclusion and demolition across twelve courses, each of them
+sourced and careful. But a learner who takes six in a row could reasonably conclude that Black
+American history IS a history of things done to people. That is false, and the shape of the catalogue
+still argues it.
+
+The fix is structural, not tonal: a second track that runs in parallel, plus a visual device that
+makes the simultaneity impossible to miss. Two things were true at once.
+
+The positive track (all leads to verify): Black Wall Streets taught as achievements with their own
+business records, not only as things later destroyed; Black-owned banks and insurers as capital
+formation under exclusion; the Green Book itself as a network built to defeat exclusion rather than a
+record of it; Rosenwald Schools, HBCUs, Freedom Schools; the Chicago Defender and the Pullman porters
+who carried it; Idlewild, American Beach, Highland Beach and Oak Bluffs as going concerns; the Harlem
+Renaissance, Motown, Stax, the Chitlin Circuit as an economy; Gold and Glory as an institution built
+in answer to exclusion. Wins with dates: Buchanan v. Warley, Shelley v. Kraemer, the 1964 Civil Rights
+Act (which is why the Green Book ended), Chicano Park, Bruce's Beach returned in 2022, the DC freeway
+revolt. Globally: Timbuktu's manuscript libraries, Great Zimbabwe, the Kingdom of Benin, the Swahili
+coast, Qhapaq Nan, Polynesian wayfinding, several of which already have shipped courses, so this is a
+linking job rather than new authoring.
+
+The design rule that keeps it honest: never use a positive to soften a negative. "Greenwood
+prospered" is not a counterweight to "Greenwood was destroyed". The claim is narrower and stronger:
+both were happening, at the same time, in the same country, often to the same people. The timeline
+shows co-occurrence; the prose must not editorialise it into balance.
+
+Full plan: plans/44-parallel-history-and-timelines.md.`,
+    provenance: "plans/future-courses/parallel-history.md",
   },
   {
     key: "precolonial-asia-track-proposal",
@@ -2035,6 +2099,37 @@ USCIS, SSA), all stressing "verify current rules/fees at the official source" si
 The tax/legal/immigration courses must be firmly framed as **educational, not professional advice**
 (the new site-wide disclaimer already covers this) and point to IRS/USCIS/a licensed professional.`,
     provenance: "plans/future-courses/travel-abroad-proposal.md",
+  },
+  {
+    key: "visual-timelines",
+    title: "Visual timelines: three options for showing two tracks at once",
+    summary: "The platform has no timeline component. Three distinct options, differing in cost, in what they can",
+    body: `# Visual timelines: three options for showing two tracks at once
+
+The platform has no timeline component. Three distinct options, differing in cost, in what they can
+express, and all of them offline-safe.
+
+Option A, the parallel-band timeline (a new \`timeline\` lesson type): two or three bands sharing one
+time axis, "what was built" above and "what was done" below, events clickable through to their
+citation and their lesson or tour. It is the only option that makes the parallel-history argument by
+FORM rather than by assertion. Cost: a new lesson type plus a renderer, with the existing map lesson
+(\`mapContent\` + \`MapLessonContent\`) as the precedent to copy. Strongest fit, most work.
+
+Option B, timeline as a map layer: add an optional year to each existing map marker plus a slider, so
+pins appear over time. Expresses diffusion across space and time, which is exactly what the
+cross-city-connections capstone argues. Watching blight designations light up city by city after the
+1949 and 1954 Housing Acts would teach the federal-upstream point in fifteen seconds. Moderate cost,
+because the renderer and marker shape already exist. Best value for effort.
+
+Option C, markdown timeline blocks: a \`:::timeline\` fenced block parsed the way \`:::reveal\` already
+is, rendering a dated vertical list with optional two-lane parallelism. Less powerful, but it drops
+into any existing lesson with no schema change and no seeding change. Lowest cost by a wide margin.
+
+Recommendation: ship C first and learn what authors actually write, then B, and build A only if the
+parallel-band framing proves itself. Building A first risks a large component nobody authors for.
+
+Full plan: plans/44-parallel-history-and-timelines.md.`,
+    provenance: "plans/future-courses/visual-timelines.md",
   },
   {
     key: "workers-rights-track-proposal",
