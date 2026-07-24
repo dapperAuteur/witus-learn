@@ -1476,6 +1476,124 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Write  (beat 6: ELA and creative nonfiction, grounded in the place)
+    //
+    // The assignment ships as `lessonType: "assignment"` and, per the recall-placement convention,
+    // carries NO recallContent (recall lives on teaching lessons). The closing lesson is a teaching
+    // lesson and recalls the prior teaching lesson (16), skipping the assignment and the quizzes.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "pgh-write-assignment",
+      title: "19 · Your assignment: write one block",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `Beat 6 asks a question no other beat can: **what can only be said about this place?** Answering it is a writing problem, and this assignment is a real one.
+
+## The assignment
+Write **900 to 1,300 words** of creative nonfiction about **one block, one building, or one address** on or near the Hill District. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is the one Section 3 used.**
+
+## August Wilson is a legitimate way in, with one hard rule
+The Hill produced the playwright **August Wilson**, who set nine of the ten plays in his American Century Cycle in the neighbourhood (August Wilson House, n.d.). Writing your way into this ground through Wilson is not only allowed, it is one of the best routes, because he mapped the Hill's streets, jobs, boarding houses and music into literature more completely than any archive did. **But here is the rule you do not get to break: Wilson wrote plays, and a play is art, not a deed.** You may write about what Wilson made of a place. You may not quote a line of his dialogue as though it were a historical record of a real address, and you may not borrow one of his characters and set them down in your nonfiction as a real person. **Cite the record for the record, and cite Wilson for Wilson.** Keeping those two apart is the whole discipline of this section.
+
+## Step 1 · Choose one address, and choose small
+Pick from the institutions named in lesson 3 (the Crawford Grill, Bethel AME, the Pittsburgh Courier), or the surviving fabric in lesson 7 (the August Wilson House, the one Green Book building), or a parcel you found in lesson 17. **Smaller is better.** "The Hill" is not a subject, it is a topic. **The August Wilson House at 1727 Bedford Avenue, or the corner of Crawford and Centre where the clearance stopped, is a subject.**
+
+If you do not live in Pittsburgh and cannot visit, that is not a disqualification. **It is a constraint you disclose in the piece**, and it changes what you can honestly claim.
+
+## Step 2 · Build the four-column chronology before you write a sentence
+Lesson 12 killed a strong argument with a table. Build your own, with these columns: **date, event, instrument, source.** If the instrument column is empty for an event, you have a story and not yet a decision. **The table is the outline.**
+
+## Step 3 · Decide what kind of piece this is
+Pick one and commit, because mixing them is what makes place writing mushy.
+- **A biography of a building.** Its plan, its uses, its owners, its end or its survival.
+- **A history of a decision.** One designation, one taking, one plan, one reversion, followed to the document.
+- **A report on a present.** What is there now, who uses it, what the current redevelopment proposes, what a public meeting sounded like.
+- **A piece about the record itself.** What you could and could not find, and what the gap means. **This is the hardest and often the best**, and it is the only one that can be written honestly with thin sources.
+
+## Step 4 · Write it, under these craft rules
+1. **Lead with a specific.** A street number, a date on a document, a figure with its source. Not a mood.
+2. **Name the instrument every time you name a loss.** "The block was cleared" is weak. "The URA designated it blighted, and clearance followed under the 1949 Act" is strong, if you can source it.
+3. **Give a figure its owner.** Not "8,000 people were displaced" but "the Heinz History Center reports more than 8,000 residents were displaced." When counts disagree, say so.
+4. **Attribute an argument as an argument.** The claim that Pittsburgh "wrote the playbook" is exactly the kind of frame you engage rather than launder. **You tested it in lesson 12; write what survived, not the slogan.** The distinction between a documented chronology and an interpretive frame is the most important thing in this section.
+5. **Use the present tense for the present.** The Hill is a living neighbourhood with a community development corporation and a redevelopment underway, not a ruin. Write it that way.
+6. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+1. **No invented detail.** Not a date, a name, a quotation, a street number, or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the room smelled like or what the music sounded like on a particular night.
+2. **No composite or imagined characters, and no fictional ones on loan.** Real, cited people only. Gus Greenlee, Robert Lee Vann, the congregation of Bethel AME and August Wilson himself are real and documented. **His character Troy Maxson is not, and does not belong in your nonfiction.**
+3. **No invented dialogue**, including "he might have said."
+4. **Living communities describe themselves.** Use the names and terms the people who live and work on the Hill use, and say where you got them. The Hill District documents itself; **Freedom Corner, the Hill CDC and the August Wilson House are the neighbourhood's own voice, and you should read it before you write over it.**
+5. **No ruin porn, and no lost golden age.** A district that ran a complete economy under segregation, produced the country's leading Black newspaper and fed the birth of bebop was not a paradise, and its clearance was not a natural death. **Both of those framings flatter the writer and cheat the subject.**
+6. **Credit what was built.** The Courier, the Crawford Grill, the Pittsburgh Crawfords, Bethel AME, the musicians who came up in the jam sessions, and the residents who held the line at Freedom Corner. **A piece that only inventories loss is an incomplete report.**
+7. **Private homes are private.** Do not publish a current resident's name with their address, do not photograph into windows, and do not knock uninvited. Practise on institutional and commercial addresses.
+8. **Say what you did to a number.** If you adjusted for inflation, say so and say how.
+
+## What good looks like
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, and in which the prose is still good. **Those two standards do not conflict.** A neighbourhood cleared for a cultural centre that was mostly never built, an arena demolished half a century after it replaced homes, a community that stopped the bulldozers at one corner and then wrote its demands into an agreement decades later: **none of that needs decorating.**
+
+## Sources
+- August Wilson House. (n.d.). *Project overview*. Daisy Wilson Artist Community. https://augustwilsonhouse.org/project-overview.html
+- Heinz History Center. (n.d.-a). *Crossroads of the world: How urban renewal changed the Hill*. Senator John Heinz History Center. https://www.heinzhistorycenter.org/blog/crossroads-of-the-world-how-urban-renewal-changed-the-hill/
+- Hill District Digital History. (n.d.-b). *Freedom Corner: A rallying point for Pittsburgh activism*. https://hillhistory.org/items/show/7`,
+    },
+    {
+      slug: "pgh-what-comes-next",
+      title: "20 · What this course set up, and what it left out",
+      section: "Section 6 · Write",
+      body: `You have now run the six-beat site template a second time, on a second real place. **That template is the product of this series, more than any single neighbourhood's material is.**
+
+| Beat | What you did here | What you can now do anywhere |
+|---|---|---|
+| **1. Then** | Read the Hill out of the Green Book and the Pittsburgh Courier | Establish what a place was, from institutional sources rather than memory |
+| **2. Built** | Read a superblock and a domed arena, then a double absence | Tell what replaced a fabric, and read a building as an argument |
+| **3. Powers** | Named the law, the authority, the designation, eminent domain and the partnership, then tested the export of the model | Ask "who decided, under what statute, on what record," and test a thesis against a chronology |
+| **4. Now** | Built an observation brief before seeing the place | Look at a street with questions instead of impressions |
+| **5. Next** | Found the redevelopment, the owners, the benefits agreement and the parcel | Participate in a live decision rather than commenting on a finished one |
+| **6. Write** | Wrote grounded nonfiction under an evidence standard | Publish something the next researcher can build on |
+
+**What this course added that the Indiana Avenue course could not.** Indianapolis showed you five instruments and stopped. Pittsburgh let you ask where the instruments came from, and the answer turned out to be more honest and more interesting than the title's first promise. **The playbook that was written in Pittsburgh is the public-private partnership, assembled early and shown off to more than seventy visiting delegations. The clearance itself spread through the federal Housing Act of 1949 and parallel state laws, upheld for every city by Berman v. Parker.** You did not take the course's own headline on faith. You tested it, weakened it, and kept the part that survived. **That is the transferable skill, and it matters more than any fact in this file.**
+
+**What you can do that you could not do before.**
+- Name the enabling law and the authority behind a clearance, not just the clearance.
+- Test a city's proudest story about itself against a table of dates, and report the result when the story loses.
+- Tell a claim about a document from a claim about the world. **"Pittsburgh was visited by seventy delegations who admired its partnership" is the first. "Seventy cities copied Pittsburgh's clearance of the Hill" is the second, and it is not supported.**
+- Find the four facts about any parcel in any American county.
+- Recognise that ground being re-decided right now is where a citizen has the most leverage.
+
+**What this course deliberately did not cover, and why.**
+- **The wider Pittsburgh Renaissance.** Gateway Center, the smoke-control and flood-control programs, and the Point State Park development are the projects the delegations actually came to see. **They are the other half of the URA's story and they get their own treatment**, because a course that folded them in would lose the Hill in the celebration, which is exactly the substitution lesson 12 warned against.
+- **The Negro League and the numbers economy.** Gus Greenlee, the Pittsburgh Crawfords and the money that funded the Crawford Grill are named here only as far as they touch the corridor. Each is a course of its own.
+- **August Wilson's plays as literature.** The Century Cycle is referenced here as evidence that the Hill became a setting for major American art, not read as drama. **The plays are their own study**, and this course was careful not to treat them as a historical record of real addresses.
+- **The individual condemnations.** No single displaced household's dated offers and settlement have been read into this course, unlike the Temple family in the Indiana Avenue course. **Section 3 says so in the text**, which is a better outcome than an invented case.
+
+**The unopened sources, which are the next real work.** The URA's Lower Hill project files. The Allegheny Conference on Community Development records. The individual condemnation and acquisition files in Allegheny County. The Pittsburgh Courier's own run, readable on microfilm, which covered the clearance of its own neighbourhood as it happened. **All public or requestable, and none of them read into this course.** If you want to make an original contribution to this story rather than restate it, that is the list, and the Courier is the place to start, because the paper watched the machine come for the Hill and wrote it down.
+
+**One last thing about the place.** The people who built the Hill District built a jazz foundry, the country's leading Black newspaper, a Negro League ball club and a set of anchor churches, inside a country that would not serve them, and they did it well enough that a Harlem Renaissance poet called their neighbourhood the Crossroads of the World. The Lower Hill of it was cleared for a cultural centre that was mostly never built, and the arena that replaced it is gone too. **But the neighbourhood did not end at the arena's edge, the record of who built the Hill is not gone, and the people who held the line at Freedom Corner are still holding it, now in writing.** That record is sitting in a travel guide, a newspaper run, a redevelopment file, a parcel database and a community's own archive, waiting for somebody to read it properly. **That is the whole method, and it is why this course exists.**
+
+## Sources
+- August Wilson House. (n.d.). *Project overview*. Daisy Wilson Artist Community. https://augustwilsonhouse.org/project-overview.html
+- Heinz History Center. (n.d.-a). *Crossroads of the world: How urban renewal changed the Hill*. Senator John Heinz History Center. https://www.heinzhistorycenter.org/blog/crossroads-of-the-world-how-urban-renewal-changed-the-hill/
+- Neumann, T. (2016, February 1). *The "spiritual capital" of the Rust Belt: Pittsburgh and the postindustrial transformation of North Atlantic cities*. Global Urban History. https://globalurbanhistory.com/2016/02/01/the-spiritual-capital-of-the-rust-belt-pittsburgh-and-the-postindustrial-transformation-of-north-atlantic-cities/`,
+      recallContent: [
+        {
+          prompt: "What are the four questions to ask about any parcel's future, in order?",
+          answer: "What does the current plan say this land should become; what is actually being built and by whom; is there a community benefits agreement and what did the community demand; and who is the decision-making body, and is the process public.",
+        },
+        {
+          prompt: "What is the current status of the Lower Hill redevelopment, and why is 'being re-decided' good news for a citizen?",
+          answer: "PAR, the Penguins subsidiary, held development rights for 18 years; they expired in October 2025 and reverted to the URA and SEA, leaving about 21 acres being re-evaluated through a public process. A decision still open is one a citizen can speak into at a public meeting.",
+        },
+        {
+          prompt: "What is the 2014 CCIP, and how does it connect to Freedom Corner?",
+          answer: "The Community Collaboration and Implementation Plan, a Hill District benefits agreement covering affordable housing, Greater Hill investment, arts preservation, job access and MBE participation. It is the written descendant of Freedom Corner: in 1969 a physical line against clearance, in 2014 a signed agreement over what redevelopment owes the neighbourhood.",
+        },
+        {
+          prompt: "How should you treat the jobs-and-dollars figures the redevelopment's developers publish?",
+          answer: "Attribute them to the developer and re-check them against an independent source before repeating them. The authoritative-values rule applies to good news too; a flattering number is not more reliable than any other.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
