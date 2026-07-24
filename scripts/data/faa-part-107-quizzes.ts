@@ -468,7 +468,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
           "A coworker without a remote pilot certificate wants to do the actual flying on a paid job. You hold the certificate. Can the job go ahead legally?",
         options: [
           "No, only the certificate holder may touch the controls",
-          "Yes, as long as you directly supervise and can take over the controls immediately",
+          "Yes, if you directly supervise and can take over immediately",
           "Yes, but only if the coworker is at least 18",
           "No, everyone who flies must hold their own certificate",
         ],
@@ -481,10 +481,10 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt:
           "Besides being at least 16 and passing the FAA knowledge test, which is required to be eligible to apply for a remote pilot certificate?",
         options: [
-          "Hold a valid driver's license",
-          "Own a registered drone",
+          "Hold a valid state-issued driver's license or ID",
+          "Own a drone that is already registered with the FAA",
           "Complete 20 hours of documented flight training",
-          "Be able to read, speak, write, and understand English, and be in a safe physical and mental condition",
+          "Be able to read, speak, write, and understand English",
         ],
         correctIndex: 3,
         explanation:
@@ -508,10 +508,10 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "A sudden in-flight emergency requires immediate action. What may the remote pilot in command do?",
         options: [
-          "Deviate from any Part 107 rule, but only to the extent needed to meet the emergency",
+          "Deviate from any Part 107 rule, only as needed for the emergency",
           "Nothing; every Part 107 rule must be followed at all times",
-          "Deviate from any rule for the rest of the day",
-          "Only deviate from the 400-foot altitude limit",
+          "Deviate from any Part 107 rule for the remainder of that day",
+          "Only deviate from the 400-foot altitude limit, nothing else",
         ],
         correctIndex: 0,
         explanation:
@@ -521,9 +521,9 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "After you deviate from a rule to handle an in-flight emergency, when must you send the FAA a written report?",
         options: [
-          "After every emergency, within 10 days",
-          "Within 24 hours of landing",
-          "Never; no report is ever required",
+          "After every emergency, within 10 days of the flight",
+          "Within 24 hours of landing the aircraft safely",
+          "Never; no written report is required at any time",
           "Only upon request from the Administrator (the FAA)",
         ],
         correctIndex: 3,
@@ -548,10 +548,10 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "May you operate a small drone from a moving vehicle?",
         options: [
-          "Never, under any circumstances",
-          "Yes, over a sparsely populated area and not carrying property for hire",
+          "Never, under any circumstances anywhere in the country",
+          "Yes, over a sparsely populated area, not for hire",
           "Yes, anywhere as long as you keep the drone in sight",
-          "Only from a boat, never a car",
+          "Only from a boat or a ship, and never from a car",
         ],
         correctIndex: 1,
         explanation:
@@ -598,9 +598,9 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "Is a visual observer required under Part 107?",
         options: [
           "Yes, every Part 107 flight requires a visual observer",
-          "No, a visual observer is optional, but if you use one the conditions of 107.33 apply",
-          "Yes, but only at night",
-          "Only when flying over people",
+          "No, it is optional, but if you use one 107.33 applies",
+          "Yes, but only for operations conducted at night",
+          "Only when flying over people or moving vehicles",
         ],
         correctIndex: 1,
         explanation:
@@ -618,7 +618,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "When a visual observer is used, what does 14 CFR 107.33 require of the crew?",
         options: [
-          "Effective communication among the RPIC, the person flying, and the observer at all times",
+          "Effective communication among the RPIC, flyer, and observer",
           "The observer must hold a remote pilot certificate",
           "The observer must stand at least 100 feet from the pilot",
           "The observer may use binoculars to watch the aircraft",
@@ -633,9 +633,9 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
           "Mid-flight, your visual observer offers to also keep an eye on another pilot's drone nearby. Is that allowed?",
         options: [
           "Yes, as long as both drones are close together",
-          "Yes, if the observer uses binoculars",
-          "Only if the observer is certificated",
-          "No, a visual observer may serve only one aircraft and one remote pilot in command at a time",
+          "Yes, if the observer uses binoculars to see both",
+          "Only if the observer holds a remote pilot certificate",
+          "No, an observer may serve only one aircraft at a time",
         ],
         correctIndex: 3,
         explanation:
@@ -659,10 +659,10 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "May a small unmanned aircraft system carry a small amount of hazardous material?",
         options: [
-          "Yes, a small amount is allowed",
-          "Yes, if it is properly labeled",
-          "No, a small unmanned aircraft system may not carry hazardous material at all",
-          "Only over a sparsely populated area",
+          "Yes, a small quantity is allowed if it is declared",
+          "Yes, if it is properly labeled and securely mounted",
+          "No, it may not carry any hazardous material at all",
+          "Only over a sparsely populated area with no people",
         ],
         correctIndex: 2,
         explanation:
@@ -685,10 +685,10 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "Under the right-of-way rule, when may your drone pass over, under, or ahead of another aircraft?",
         options: [
-          "Whenever you have visual line of sight on it",
-          "Never, under any circumstances",
-          "Only if your drone is below 400 feet",
-          "Only when you are well clear and not forcing the other aircraft to change course",
+          "Whenever you have visual line of sight on both aircraft",
+          "Never, under any circumstance and at any altitude",
+          "Only if your drone is flying below 400 feet AGL",
+          "Only when you are well clear of the other aircraft",
         ],
         correctIndex: 3,
         explanation:
@@ -933,9 +933,9 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "When may a Part 107 remote pilot transmit on an aviation radio frequency?",
         options: [
-          "Any time, to announce the drone's position like any other pilot",
+          "Any time, to announce the drone's position the way any other pilot would",
           "Only in a true emergency, such as the drone being about to hit an aircraft",
-          "Any time, as long as the airport is non-towered",
+          "Any time, as long as the airport you are near is a non-towered field",
         ],
         correctIndex: 1,
         explanation:
@@ -966,7 +966,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "At a non-towered airport, are pilots required to make position reports on the CTAF?",
         options: [
           "Yes, every aircraft in the pattern must self-announce",
-          "No, position reports are recommended but optional, so silence does not mean the sky is clear",
+          "No, position reports are recommended but optional",
           "Only aircraft without a transponder must self-announce",
         ],
         correctIndex: 1,
@@ -978,8 +978,8 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "On a sectional chart, how is the CTAF marked?",
         options: [
           "A bold letter C inside a circle next to the frequency",
-          "A star next to the frequency",
-          "The frequency is printed in bold magenta",
+          "A five-pointed star printed next to the frequency",
+          "The frequency is printed in bold magenta lettering",
         ],
         correctIndex: 0,
         explanation:
@@ -989,9 +989,9 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "A manned aircraft is inbound to land while you are flying nearby. Who yields?",
         options: [
-          "The manned aircraft, because your drone is smaller and less maneuverable",
-          "Your drone. Manned aircraft have the right of way, and you must not interfere with their operation",
-          "Whoever saw the other one first",
+          "The manned aircraft, since your drone is the more maneuverable one",
+          "Your drone. Manned aircraft always have the right of way",
+          "Whoever spotted the other aircraft first has the right of way",
         ],
         correctIndex: 1,
         explanation:
@@ -1022,7 +1022,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "A self-announce position report at a non-towered airport follows a fixed five-part order. What is it?",
         options: [
           "Call sign, airport name, altitude, intention, call sign again",
-          "Airport name, who they are, where they are, what they intend to do, airport name again",
+          "Airport name, who they are, where they are, intentions, airport name",
           "Airport name, runway in use, wind, who they are, where they are",
         ],
         correctIndex: 1,
@@ -1033,9 +1033,9 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "Why does a pilot say the airport name twice, at the start AND the end of a position report?",
         options: [
-          "Because one CTAF frequency can be shared by several airports, so listeners need to know which airport the call is about",
-          "Because FAA regulations require the airport name to bracket every transmission",
-          "Because the first call is for the tower and the second is for other pilots",
+          "Because one CTAF frequency can be shared by several nearby airports",
+          "Because FAA rules require the name to bracket every transmission",
+          "Because the first call is for the tower, the second for other pilots",
         ],
         correctIndex: 0,
         explanation:
@@ -1795,8 +1795,8 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "What is aeronautical decision making (ADM)?",
         options: [
           "A systematic approach to consistently determining the best course of action",
-          "A maintenance program that prevents mechanical failure",
-          "The FAA's procedure for reporting an accident",
+          "A maintenance program designed to prevent mechanical failure in flight",
+          "The FAA's required procedure for reporting an accident to the agency",
         ],
         correctIndex: 0,
         explanation:
@@ -1807,8 +1807,8 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "What are the five hazardous attitudes?",
         options: [
           "Anti-authority, impulsivity, invulnerability, macho, resignation",
-          "Illness, medication, stress, alcohol, fatigue",
-          "Perceive, process, perform, evaluate, repeat",
+          "Illness, medication, stress, alcohol, fatigue, and emotion",
+          "Perceive, process, perform, evaluate, and repeat as needed",
         ],
         correctIndex: 0,
         explanation:
@@ -1863,8 +1863,8 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: "Who decides whether the remote pilot is fit to fly a particular flight?",
         options: [
-          "An aviation medical examiner",
-          "The client or employer who hired the flight",
+          "An aviation medical examiner during a required medical exam",
+          "The client or employer who hired and scheduled the flight",
           "The remote pilot in command, using the IMSAFE checklist",
         ],
         correctIndex: 2,
@@ -1899,8 +1899,8 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       {
         prompt: 'Your drone drifts behind a hill and the signal drops. You think, "It is gone. Nothing I can do." What is that, and what should you do?',
         options: [
-          'Resignation, and the antidote is "I am not helpless. I can make a difference." Walk up the hill and try to regain line of sight',
-          "Invulnerability, accept the loss and file an accident report",
+          'Resignation, and the antidote is "I am not helpless. I can make a difference."',
+          "Invulnerability, so accept the loss and file an accident report with the FAA",
           "Sound judgment, once the link is lost, the aircraft is unrecoverable by definition",
         ],
         correctIndex: 0,
@@ -1934,7 +1934,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
       },
       {
         prompt: 'Your client keeps calling: "Hurry up, we are losing daylight." Which part of PAVE flags that?',
-        options: ["The P, Pilot", "The A, Aircraft", "The E, External pressures"],
+        options: ["The P, Pilot fitness", "The A, Aircraft condition", "The E, External pressures"],
         correctIndex: 2,
         explanation:
           "External pressures are the outside forces pushing you to fly when you maybe should not: a pushy client, a tight deadline, a friend daring you. PAVE makes you NAME them out loud before they steer your decision.",
@@ -1944,8 +1944,8 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "What is crew resource management (CRM)?",
         options: [
           "The effective use of all available resources: human, hardware, and information",
-          "The FAA requirement to fly with at least one visual observer",
-          "The maintenance program that keeps a fleet of drones airworthy",
+          "The FAA requirement to fly with at least one trained visual observer present",
+          "The maintenance program that keeps an entire fleet of drones airworthy",
         ],
         correctIndex: 0,
         explanation:
@@ -1956,7 +1956,7 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         prompt: "What is a visual observer's job, and what is the 'sterile cockpit' rule?",
         options: [
           "The VO flies the drone while the pilot watches the sky; the sterile cockpit means the crew stays silent",
-          "The VO's only job is to watch (the drone, other aircraft, people, birds, airspace); the sterile cockpit means that while flying, the crew talks only about the operation",
+          "The VO's only job is to watch; the sterile cockpit means the crew talks only about the operation while flying",
           "The VO handles the client and the paperwork; the sterile cockpit means no one may stand near the control station",
         ],
         correctIndex: 1,

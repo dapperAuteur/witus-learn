@@ -59,6 +59,27 @@ for detail. **An unmapped course renders nothing** rather than "0 standards", be
 and never assert a standard the lessons do not actually teach: `src/lib/standards/claims.ts` states
 the rule and the isolation suite guards the verbatim state text.
 
+## Quiz-integrity rule — a quiz must not be passable without reading it
+
+Two guards in `pnpm lint` protect the same thing from two directions, and a quiz that fails either is
+measuring test-taking rather than learning (which also corrupts every dashboard average built on it):
+
+- `check-quiz-balance.ts` — the **position** tell. Fix by adding `shuffleOptions: true`. Cheap and
+  content-preserving.
+- `check-longest-option.ts` — the **length** tell: the right answer collects the qualifier and the
+  "because" clause while the distractors stay short, so a learner can click the longest option
+  without reading. **`shuffleOptions` does NOT fix this** — length travels with the option text.
+
+The length guard is a **ratchet** like the standards one: 138 pre-existing files sit in
+`GRANDFATHERED` with their measured score and may not get *worse*; any file not on that list fails.
+When you fix a file, delete its line. Never add a line to make new content pass.
+
+**When fixing either, edit option TEXT in place.** Never reorder options or move `correctIndex`
+(stored attempts keep the chosen index, so a reorder rewrites what past learners answered on the
+results replay), and **never edit the prompt** — `questionKey` hashes the prompt alone, so a reword
+resets per-question history for every learner who already answered. Give distractors real, checkable,
+and definitively *wrong* specificity; padding them with filler just trades one tell for another.
+
 ## App-improvements review rule — check `./plans/app-improvements/` at both ends of a task
 
 `./plans/app-improvements/` is BAM's live product backlog — he drops feature notes and bug reports

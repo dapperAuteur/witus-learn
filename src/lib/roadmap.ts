@@ -491,6 +491,30 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   These courses also **cut** load-bearing claims rather than repeat them: Rosenwald's ubiquitous
   "$18.1 million in public funds" and Greenwood's "a dollar circulated 19 times", both cut on method,
   the second turned into the worked example of a claim to refuse. **Re-run \`pnpm seed:courses\`.**
+- 🔧 **The "longest option" tell: measured, guarded, and FAA fixed** (\`fix/longest-option-tell\`).
+  The sibling of the answer-position tell below, and the same defect from the other direction: the
+  right answer collects the qualifier and the "because" clause while the distractors stay short, so a
+  learner can **click the longest option without reading the prompt**. \`shuffleOptions\` does NOT
+  fix it, because length travels with the option text wherever the shuffle moves it.
+  Measured properly for the first time, and the number is uncomfortable: **307 of 355 quiz banks**
+  are over the limit, about 155 of them at 90-100 percent, across **138 files** and roughly 4,000
+  questions. It is a house authoring habit, worst in the generated courses (the AI, labor and
+  precolonial series sit at or near 100 percent) and absent from the hand-authored route series,
+  which measures 0. The metric scores what a learner actually gets from "always pick the longest",
+  against the **visibly** longest set (a one-character edge is not a tell), so a balanced bank scores
+  the same as guessing.
+  **FAA Part 107 is fully fixed**, first, because it is the highest-stakes content here: a learner
+  who passes by length is told they are ready for a **real FAA knowledge test** they will then fail.
+  All 13 banks are now under the limit and the largest, 20 questions, sits at 26 percent, which is
+  guessing. About 117 edits, every one to option TEXT only: no prompt touched (\`questionKey\` hashes
+  the prompt alone, so an edit would reset every learner's history), no option reordered and no
+  \`correctIndex\` moved (stored attempts keep the chosen index). Verified mechanically across all
+  203 questions. Distractors were checked to stay **wrong** under 14 CFR, not merely longer, and the
+  best of them now teach: the alcohol question offers 4 hours/0.08 and 24 hours in parallel phrasing
+  against the correct 8 hours/0.04, so it tests whether you know the number.
+  \`pnpm check:longest-option\` runs inside \`pnpm lint\` as a **ratchet**: the 138 pre-existing files
+  carry their measured score, may not get worse, and anything not on that list fails. The remaining
+  sweep is planned in \`plans/47\`, AI series first.
 - ✅ **Quiz answer positions are balanced, and guarded** (\`fix/quiz-answer-balance\`). A catalogue-wide
   audit found **118 quiz banks** where more than 60 percent of correct answers sat at one option index
   with no shuffling, roughly 1,250 questions a learner could pass by always picking the same letter.
