@@ -1109,6 +1109,373 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Next  (beat 5: live civics. the current redevelopment, and a real parcel)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "pgh-next-live-civics",
+      title: "16 · What is the current plan for this ground?",
+      section: "Section 5 · Next",
+      body: `Beat 5 is the beat that turns a history course into a civics course. **The cleared ground of the Lower Hill is not a memorial. It is an active redevelopment site with a plan being written for it right now**, and finding the plan, the body and the agreement is a research skill rather than an opinion. On this ground beat 5 is unusually live, because the future of the twice-cleared land is being re-decided in the years you are reading this.
+
+**Start with the four questions, in this order. They work for any American parcel.**
+1. **What does the current plan say this land should become?**
+2. **What is actually being built, and by whom?**
+3. **Is there a community benefits agreement, and what did the community demand?**
+4. **Who is the decision-making body, and is the process public?**
+
+**Question 1: the current plan, and its status is the most instructive part.** The cleared Lower Hill is the site of the **Lower Hill redevelopment**, a roughly 28-acre project. For 18 years, development rights to the site were held by **Pittsburgh Arena Real Estate Redevelopment (PAR)**, a subsidiary of the **Pittsburgh Penguins** (Urban Redevelopment Authority of Pittsburgh, n.d.-b). **Then, in October 2025, PAR's development rights expired and reverted to the two public owners of the land, the Urban Redevelopment Authority and the Sports & Exhibition Authority of Pittsburgh and Allegheny County (SEA), leaving about 21 acres of developable land whose future the authorities are now re-evaluating through a public process** (Urban Redevelopment Authority of Pittsburgh, n.d.-b). Read that carefully. **The honest answer to "what is the plan" is that the plan is being re-decided right now**, which is the finding that gives a citizen the most leverage, because a decision still open is a decision you can speak into.
+
+**Question 2: what is actually being built.** The first major building on the cleared ground is the **FNB Financial Center**, a mixed-use office tower that opened in **February 2025** on Block G-1, the first commercial development on the former Civic Arena site (Urban Redevelopment Authority of Pittsburgh, n.d.-b). **So the ground now holds one new tower, an active redevelopment site, and the same public authorities that cleared it seventy years ago.** The double absence from lesson 12 is not settled history; it is a construction site.
+
+**Question 3: the community benefits agreement, and here is where Section 3 connects to today.** In **2014**, the Hill District community reached a **Community Collaboration and Implementation Plan (CCIP)**, a benefits agreement whose priorities include affordable housing, investment in the Greater Hill, arts and cultural preservation, job access, investment in youth and families, and participation for minority-owned and women-owned businesses (Urban Redevelopment Authority of Pittsburgh, n.d.-b). **The CCIP is the direct descendant of Freedom Corner.** In 1969 the community held a physical line at Crawford and Centre against further clearance (Hill District Digital History, n.d.-b); in 2014 it negotiated a written agreement over what redevelopment owes the neighbourhood. **The instrument the community built is not a demolition. It is a demand with signatures on it**, and it is as much a part of this ground's record as any URA resolution.
+
+**A caution about the numbers you will see, because the authoritative-values rule applies to good news too.** The project's developers and partners publish specific figures for jobs created and dollars invested in the Greater Hill. **Those are the developer's own reported figures, and you should attribute them to the developer and re-check them against an independent source before you repeat them**, exactly as lesson 10 told you to attribute a displacement figure to its owner. A number that flatters the party that published it is not more reliable than one that does not.
+
+**Question 4: who decides, and is it public.** The land is owned by the **URA** and the **SEA**, both public authorities with boards that meet in public. With PAR's rights expired and the remaining acreage back in public hands, **the decisions about what the ground becomes are being made in meetings you can attend and agendas you can read.** A public meeting is the cheapest civic act there is, and on this ground it is happening now.
+
+**The honest limits of this lesson.** Development rights change hands, agreements get amended, and the status above was current as of the most recent public reporting and will move. **Every date and body named here has a source attached, and you should re-check all of them before you rely on any of them.** That instruction is not a disclaimer. It is the method, and on a site being re-decided in real time it is the whole method.
+
+## Sources
+- Hill District Digital History. (n.d.-b). *Freedom Corner: A rallying point for Pittsburgh activism*. https://hillhistory.org/items/show/7
+- Urban Redevelopment Authority of Pittsburgh. (n.d.-b). *Lower Hill*. https://www.ura.org/pages/lower-hill`,
+      recallContent: [
+        {
+          prompt: "State the strong 'playbook' thesis and the weaker claim that survives the chronology test.",
+          answer: "Strong: Pittsburgh invented the redevelopment machine and other cities copied it, which is what emptied Black districts nationally. Surviving: Pittsburgh assembled and showcased the public-private partnership early and visibly and was genuinely emulated as a model of that partnership, one prominent early reference case rather than the sole origin.",
+        },
+        {
+          prompt: "Why does the 'other cities copied Pittsburgh' chain fail against the dates?",
+          answer: "Indianapolis and Washington ran their own state machinery on the same 1940s timeline, not downstream of Pittsburgh; Washington's enabling law is the same year, 1945. The clearance instruments spread through the federal Housing Act of 1949 and state laws, upheld by Berman v. Parker. What travelled was a partnership reputation, not a clearance manual.",
+        },
+        {
+          prompt: "What is the 'rare double absence,' with dates?",
+          answer: "The Lower Hill was cleared in 1955 for the Civic Arena, and the arena itself was demolished between September 26, 2011 and March 31, 2012. The ground at the edge of downtown has been cleared twice in one lifetime.",
+        },
+        {
+          prompt: "Name the three method lessons from the thesis test.",
+          answer: "Build the chronology before the argument; a weakened claim that survives beats a strong claim that does not; and report the weakening, because suppressing it is the actual error.",
+        },
+      ],
+    },
+    {
+      slug: "pgh-next-exercise-parcel",
+      title: "17 · Practice: look up a real parcel",
+      section: "Section 5 · Next",
+      lessonType: "exercise",
+      body: `**This drill is the whole of beat 5 in miniature, and you should do it with the real tools open in another tab.** Everything below is free and public.
+
+**The two tools, both official and county-run.**
+- The **Allegheny County Real Estate Portal**: https://realestate.alleghenycounty.us/ . Search by address, owner name or parcel number and read the owner of record, assessed value, building information and sale history.
+- The **Allegheny County GIS Viewer**: https://experience.arcgis.com/experience/68f5e4ae2f5b47b78cefcdf019e154bd . Enter an address or parcel and see parcel boundaries, aerial imagery and the political and municipal boundaries the parcel sits inside.
+
+**Your target: the August Wilson House, 1727 Bedford Avenue, Pittsburgh.** It is a safe address to practise on: it is a public nonprofit arts centre, its address is published by the institution that runs it, it was added to the National Register of Historic Places on April 30, 2013, and you are not exposing anybody's home. It also sits in the Middle Hill, the part of the neighbourhood that survived, which makes it a useful contrast to the cleared Lower Hill.
+
+**Work through these, then answer the questions below.**
+1. Find **1727 Bedford Avenue** in the Real Estate Portal and read off the **parcel identification number**. Write it down exactly, including punctuation.
+2. Find the **owner of record**, the **year built** if the record gives one, and the **assessed value**.
+3. Compare the **owner of record** to the **Daisy Wilson Artist Community**, the nonprofit that operates the house. **They may not match, and if they do not, that is normal and it is a finding**, because a building's operator and its titled owner are two different facts.
+4. In the GIS Viewer, look at the **parcel outline and the aerial image**. Is this a small residential lot on a street grid, unlike the large cleared parcels of the Lower Hill? Compare it to lesson 5's account of superblocking.
+5. Turn on municipal and political boundaries and note which **city, council district and school district** the parcel is in. Lesson 8 explained why an enabling law and an authority sit above all of those.
+6. Now, if you want the double absence directly, search the **FNB Financial Center on the former Civic Arena site** and read that parcel too. **Compare its assessed value and its lot size to the August Wilson House's.** One number is the ground that was cleared; the other is the ground that survived.
+
+**The habits this builds, which transfer to any American county.** Every county has an assessor or its equivalent and most have a GIS. **The names of the tools change and the four facts do not: parcel number, owner of record, assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
+
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a county database. Practise on institutional and commercial addresses. This is the same rule the method course applied to tourist homes.
+
+## Sources
+- Allegheny County. (n.d.-a). *Allegheny County GIS viewer*. https://experience.arcgis.com/experience/68f5e4ae2f5b47b78cefcdf019e154bd
+- Allegheny County. (n.d.-b). *Real estate portal*. https://realestate.alleghenycounty.us/
+- August Wilson House. (n.d.). *Project overview*. Daisy Wilson Artist Community. https://augustwilsonhouse.org/project-overview.html`,
+      exercise: {
+        instructions:
+          "Type the missing term, name, number, body or year, then check. Close answers (spelling, capitalization) count as 'close', not wrong.",
+        items: [
+          {
+            prompt: "The official county tool for reading a parcel's owner of record and assessed value is the Allegheny County Real Estate ___.",
+            answer: "Portal",
+            accept: ["real estate portal", "portal"],
+            explanation: "At realestate.alleghenycounty.us. Search by address, owner name or parcel number.",
+          },
+          {
+            prompt: "The official tool for seeing parcel boundaries and municipal boundaries on a map is the Allegheny County ___ Viewer.",
+            answer: "GIS",
+            accept: ["gis", "g.i.s."],
+            explanation: "GIS stands for geographic information system. It shows the parcel outline, aerial imagery and overlapping jurisdictions.",
+          },
+          {
+            prompt: "The four facts to pull for any parcel are parcel number, owner of record, assessed value, and which overlapping ___ it sits in.",
+            answer: "jurisdictions",
+            accept: ["jurisdiction", "boundaries", "districts"],
+            explanation: "City, council district and school district are different shapes over the same ground.",
+          },
+          {
+            prompt: "The safe public building you practise on in this drill is the ___ ___ House at 1727 Bedford Avenue.",
+            answer: "August Wilson",
+            accept: ["august wilson", "august wilson house"],
+            explanation: "A nonprofit arts centre, on the National Register since April 30, 2013, in the Middle Hill that survived.",
+          },
+          {
+            prompt: "The nonprofit that operates the house, whose name may not match the titled owner of record, is the Daisy Wilson ___ Community.",
+            answer: "Artist",
+            accept: ["artist", "artists"],
+            explanation: "Operator and titled owner are two different facts. A mismatch is normal and it is a finding.",
+          },
+          {
+            prompt: "The redevelopment authority that holds the legal powers to designate, clear and convey Lower Hill land is the ___ (three-letter abbreviation).",
+            answer: "URA",
+            accept: ["u.r.a.", "urban redevelopment authority"],
+            explanation: "The Urban Redevelopment Authority of Pittsburgh, incorporated November 18, 1946.",
+          },
+          {
+            prompt: "The public authority that co-owns the Lower Hill land with the URA is the Sports & ___ Authority (SEA).",
+            answer: "Exhibition",
+            accept: ["exhibition", "sports and exhibition authority"],
+            explanation: "The Sports & Exhibition Authority of Pittsburgh and Allegheny County. PAR's development rights reverted to the URA and the SEA in October 2025.",
+          },
+          {
+            prompt: "The subsidiary of the Pittsburgh Penguins that held development rights to the 28-acre site for 18 years was ___ (three-letter abbreviation).",
+            answer: "PAR",
+            accept: ["p.a.r.", "pittsburgh arena real estate redevelopment"],
+            explanation: "Pittsburgh Arena Real Estate Redevelopment. Its rights expired and reverted to the public owners in October 2025.",
+          },
+          {
+            prompt: "The 2014 Hill District community benefits agreement is the Community Collaboration and ___ Plan (CCIP).",
+            answer: "Implementation",
+            accept: ["implementation"],
+            explanation: "Its priorities include affordable housing, investment in the Greater Hill, arts preservation, job access and MBE participation.",
+          },
+          {
+            prompt: "The monument at Crawford and Centre marking the line where residents stopped the clearance is ___ Corner.",
+            answer: "Freedom",
+            accept: ["freedom", "freedom corner"],
+            explanation: "The direct ancestor of the CCIP: in 1969 a physical line, in 2014 a written agreement.",
+          },
+          {
+            prompt: "The federal law that funded slum clearance nationally, which Pittsburgh 'took advantage of,' was the Housing Act of ___.",
+            answer: "1949",
+            accept: ["49"],
+            explanation: "Title I of the 1949 Act, not a Pittsburgh copy-chain, is what spread the clearance instruments across the country.",
+          },
+          {
+            prompt: "The 1954 Supreme Court case that upheld condemning property for urban renewal was Berman v. ___.",
+            answer: "Parker",
+            accept: ["parker"],
+            explanation: "It became the legal ground the whole national program stood on, decided the year before the Lower Hill plan was approved.",
+          },
+          {
+            prompt: "The legal conclusion the URA must reach before it can acquire and clear an area is that the area is ___.",
+            answer: "blighted",
+            accept: ["blight", "blighted and substandard", "substandard"],
+            explanation: "Reached on a record against statutory criteria under the Pennsylvania Urban Redevelopment Law of 1945.",
+          },
+          {
+            prompt: "The constitutional amendment requiring just compensation for a taking is the ___ Amendment.",
+            answer: "Fifth",
+            accept: ["5th", "5", "five"],
+            explanation: "Applied to the states through the Fourteenth Amendment.",
+          },
+          {
+            prompt: "The first major building on the cleared ground, opened in February 2025, is the ___ Financial Center.",
+            answer: "FNB",
+            accept: ["f.n.b.", "fnb"],
+            explanation: "On Block G-1, the first commercial development on the former Civic Arena site.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "pgh-quiz-next",
+      title: "18 · Quiz: finding the live record",
+      section: "Section 5 · Next",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why is this course's map lesson national rather than block by block?",
+            options: [
+              "Because the Lower Hill's coordinates are unknown",
+              "Because the lesson map draws the whole world, so points need roughly two degrees of separation to be distinguishable, and a 95-acre neighbourhood is smaller than one dot",
+              "Because block-level maps of Pittsburgh are copyrighted",
+              "Because the course avoids maps of Pennsylvania",
+            ],
+            correctIndex: 1,
+            explanation: "Choosing the right scale of map for the question is the actual skill. For a parcel question the right map is the county GIS viewer.",
+            sourceLessonSlug: "pgh-map",
+          },
+          {
+            prompt: "The four amber districts on the map (Indiana Avenue, Southwest DC, the Fillmore, Black Bottom) are placed there to show that:",
+            options: [
+              "Pittsburgh's clearance was the largest in the country",
+              "Only four other cities ever used urban renewal",
+              "The Hill District was cleared later than any of them",
+              "The Lower Hill was a local instance of a national program, not a local misfortune",
+            ],
+            correctIndex: 3,
+            explanation: "The same instrument kit, a redevelopment authority plus blight designation plus federal money, ran in cities across the country.",
+            sourceLessonSlug: "pgh-map",
+          },
+          {
+            prompt: "As of the most recent reporting, what is the status of the Lower Hill redevelopment?",
+            options: [
+              "The Penguins subsidiary PAR's development rights expired in October 2025 and reverted to the URA and SEA, leaving about 21 acres whose future is being re-decided through a public process",
+              "The entire 28 acres has been fully built out",
+              "The land was returned to the descendants of the displaced",
+              "The Civic Arena was rebuilt on the site",
+            ],
+            correctIndex: 0,
+            explanation: "A plan being re-decided right now is the finding that gives a citizen the most leverage, because an open decision can be spoken into.",
+            sourceLessonSlug: "pgh-next-live-civics",
+          },
+          {
+            prompt: "What is the first major building constructed on the cleared Lower Hill ground?",
+            options: [
+              "A rebuilt Crawford Grill",
+              "A new Pittsburgh Courier headquarters",
+              "The FNB Financial Center, a mixed-use tower that opened in February 2025 on the former Civic Arena site",
+              "A replacement for Bethel AME Church",
+            ],
+            correctIndex: 2,
+            explanation: "The double absence is not settled history; the twice-cleared ground is an active construction site.",
+            sourceLessonSlug: "pgh-next-live-civics",
+          },
+          {
+            prompt: "What is the 2014 Community Collaboration and Implementation Plan (CCIP)?",
+            options: [
+              "A URA demolition schedule for the Middle Hill",
+              "A Hill District community benefits agreement whose priorities include affordable housing, Greater Hill investment, arts preservation, job access and MBE participation",
+              "The original 1955 redevelopment plan",
+              "A federal grant application",
+            ],
+            correctIndex: 1,
+            explanation: "The CCIP is a demand with signatures on it, the written descendant of Freedom Corner's physical line.",
+            sourceLessonSlug: "pgh-next-live-civics",
+          },
+          {
+            prompt: "The CCIP is described as the 'direct descendant of Freedom Corner' because:",
+            options: [
+              "Both were designed by the same architect",
+              "Both were funded by the Penguins",
+              "Both are located on the exact same parcel",
+              "In 1969 the community held a physical line against clearance at Crawford and Centre, and in 2014 it negotiated a written agreement over what redevelopment owes the neighbourhood",
+            ],
+            correctIndex: 3,
+            explanation: "The instrument the community built is a demand, not a demolition, and it is part of the ground's record.",
+            sourceLessonSlug: "pgh-next-live-civics",
+          },
+          {
+            prompt: "How should you treat the jobs-and-dollars figures the redevelopment's own developers publish?",
+            options: [
+              "Attribute them to the developer and re-check them against an independent source before repeating them",
+              "Adopt them directly, because good-news numbers do not need checking",
+              "Ignore all figures about the project",
+              "Assume they are deliberately false",
+            ],
+            correctIndex: 0,
+            explanation: "The authoritative-values rule applies to good news too. A number that flatters the party that published it is not more reliable than one that does not.",
+            sourceLessonSlug: "pgh-next-live-civics",
+          },
+          {
+            prompt: "What are the two official Allegheny County tools this course sends you to for a parcel?",
+            options: [
+              "A private real estate listing site and a transit app",
+              "A historical atlas and a phone book",
+              "The Allegheny County Real Estate Portal and the Allegheny County GIS Viewer",
+              "The URA website and the Penguins website",
+            ],
+            correctIndex: 2,
+            explanation: "The Portal gives owner of record and assessed value; the GIS Viewer gives the parcel outline and the overlapping jurisdictions.",
+            sourceLessonSlug: "pgh-next-exercise-parcel",
+          },
+          {
+            prompt: "The four facts to pull for any parcel, in any American county, are:",
+            options: [
+              "Square footage, paint colour, roof type and window count",
+              "Parcel number, owner of record, assessed value, and which overlapping jurisdictions it sits in",
+              "The architect, the builder, the first tenant and the last tenant",
+              "The zoning, the mortgage, the insurer and the utility provider",
+            ],
+            correctIndex: 1,
+            explanation: "The names of the tools change from county to county; those four facts do not.",
+            sourceLessonSlug: "pgh-next-exercise-parcel",
+          },
+          {
+            prompt: "Why is the August Wilson House a safe and useful parcel to practise on?",
+            options: [
+              "Because it is a private home whose owner has agreed to be studied",
+              "Because it has no owner of record",
+              "Because it is on the cleared Lower Hill",
+              "Because it is a public nonprofit arts centre with a published address, on the National Register, sitting in the Middle Hill that survived",
+            ],
+            correctIndex: 3,
+            explanation: "You are not exposing anybody's home, and it contrasts the surviving Middle Hill with the cleared Lower Hill.",
+            sourceLessonSlug: "pgh-next-exercise-parcel",
+          },
+          {
+            prompt: "If the parcel's owner of record does not match the Daisy Wilson Artist Community that runs the house, that is:",
+            options: [
+              "Normal, and a finding: a building's operator and its titled owner are two different facts",
+              "Proof the record is wrong",
+              "A reason to stop the research",
+              "Evidence of fraud",
+            ],
+            correctIndex: 0,
+            explanation: "Operator and titled owner are distinct; noting the gap is exactly the kind of fact a parcel search is for.",
+            sourceLessonSlug: "pgh-next-exercise-parcel",
+          },
+          {
+            prompt: "In this course's beat 5, 'the plan is being re-decided right now' is treated as:",
+            options: [
+              "A dead end that makes research impossible",
+              "A reason to give up on the parcel",
+              "The finding that gives a citizen the most leverage, because an open decision can be spoken into at a public meeting",
+              "A sign the project has been cancelled",
+            ],
+            correctIndex: 2,
+            explanation: "A public meeting is the cheapest civic act there is, and on this ground it is happening now.",
+            sourceLessonSlug: "pgh-next-live-civics",
+          },
+          {
+            prompt: "Who owns the Lower Hill redevelopment land now that PAR's rights have expired?",
+            options: [
+              "The Pittsburgh Penguins outright",
+              "Two public authorities, the URA and the Sports & Exhibition Authority (SEA), each with boards that meet in public",
+              "The federal government",
+              "A private consortium with no public accountability",
+            ],
+            correctIndex: 1,
+            explanation: "Public ownership means the decisions are made in meetings you can attend and agendas you can read.",
+            sourceLessonSlug: "pgh-next-live-civics",
+          },
+          {
+            prompt: "What does a parcel's assessed value on the county Real Estate Portal let you compare?",
+            options: [
+              "The building's architectural quality",
+              "The number of people who have visited it",
+              "The political opinions of its owner",
+              "One piece of ground against another, such as the cleared Lower Hill against the surviving Middle Hill",
+            ],
+            correctIndex: 3,
+            explanation: "Comparing the FNB Financial Center parcel to the August Wilson House parcel puts the double absence and the survival side by side in numbers.",
+            sourceLessonSlug: "pgh-next-exercise-parcel",
+          },
+          {
+            prompt: "The instruction to 're-check every date and body before you rely on it' is described in this course as:",
+            options: [
+              "The method, not a disclaimer, especially on a site being re-decided in real time",
+              "An optional courtesy",
+              "A legal requirement imposed by the county",
+              "A reason not to write about the site at all",
+            ],
+            correctIndex: 0,
+            explanation: "Development rights change hands and agreements get amended, so verification is the work, not a footnote to it.",
+            sourceLessonSlug: "pgh-next-live-civics",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
