@@ -467,10 +467,10 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
           {
             prompt: "What's the right order when turning a validated need into an AI product?",
             options: [
-              "Pick a cool AI tool first, then find a use for it",
-              "Need first, AI second: aim AI at the job it can do reliably, with you accountable",
-              "Build the biggest version possible to look impressive",
-              "Skip the customer and trust the model",
+              "Pick a cool AI tool first, then find some use for it",
+              "Need first, AI second: aim it at what it does reliably",
+              "Build the biggest version you can to look impressive",
+              "Skip the customer entirely and just trust the model",
             ],
             correctIndex: 1,
             explanation:
@@ -480,10 +480,10 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
           {
             prompt: "Your idea is 'when a request comes in, summarize it and draft a reply.' Which build path fits the first version best?",
             options: [
-              "Build a custom model from scratch",
-              "No-code / low-code with an AI step in the middle",
-              "Hire an engineering team immediately",
-              "Nothing, it can't be built",
+              "Build a custom model from scratch in-house",
+              "No-code or low-code with an AI step in the middle",
+              "Hire a full engineering team immediately",
+              "Nothing at all, because it cannot be built",
             ],
             correctIndex: 1,
             explanation:
@@ -493,10 +493,10 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
           {
             prompt: "Why does 'just a text box on a model' usually fail as an AI product?",
             options: [
-              "Models are too cheap to run",
-              "Because the product is what you wrap around the model: expectations, control, sources, and a graceful failure",
-              "Because users prefer no instructions",
-              "Because AI is always right",
+              "Because models are far too cheap to run",
+              "Because the product is what you wrap around the model",
+              "Because users would prefer to have no instructions",
+              "Because an AI model is always right anyway",
             ],
             correctIndex: 1,
             explanation:
@@ -506,10 +506,10 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
           {
             prompt: "What does 'human-in-the-loop' mean, and when is it most required?",
             options: [
-              "A human writes everything; AI is never used",
-              "A person checks/approves AI before it ships, most required for anything a customer relies on or that's irreversible",
-              "The AI supervises the human",
-              "It only applies to big companies",
+              "A human writes everything and the AI is never used",
+              "A person approves AI output before it ships to a customer",
+              "The AI supervises the human doing the work",
+              "It only ever applies to much bigger companies",
             ],
             correctIndex: 1,
             explanation:
@@ -519,10 +519,10 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
           {
             prompt: "Why can an AI feature that's 'free' in testing become a real bill at scale?",
             options: [
-              "APIs charge a one-time fee",
-              "You pay per token (input + output) on every call, for every customer, so cost grows with usage",
-              "Testing always costs more than production",
-              "AI tools never charge for usage",
+              "Because APIs charge only a one-time flat fee",
+              "You pay per token on every call, for every customer",
+              "Because testing always costs more than production",
+              "Because AI tools never charge you for usage",
             ],
             correctIndex: 1,
             explanation:
@@ -532,10 +532,10 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
           {
             prompt: "In pricing an AI product, what sets the floor and what sets the ceiling?",
             options: [
-              "The floor is whatever competitors charge; the ceiling is unlimited",
-              "Your cost-to-serve sets the floor; the value you deliver to the customer sets the ceiling",
-              "There is no floor; price as low as possible",
-              "The model's name sets both",
+              "The floor is what competitors charge; the ceiling is unlimited",
+              "Your cost-to-serve sets the floor; delivered value sets the ceiling",
+              "There is no floor at all; price it as low as you possibly can",
+              "The name of the model you chose sets both of them",
             ],
             correctIndex: 1,
             explanation:
@@ -545,10 +545,10 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
           {
             prompt: "Which approach to a possible AI wrong answer BUILDS trust?",
             options: [
-              "Always answer confidently, even when unsure",
-              "Make uncertainty visible, verify what matters before it ships, and let customers correct/report it",
-              "Hide that AI was involved",
-              "Remove all ways to reach a human",
+              "Always answer confidently, even when you are unsure",
+              "Make uncertainty visible and let customers correct it",
+              "Hide the fact that AI was involved at all",
+              "Remove every way of reaching an actual human",
             ],
             correctIndex: 1,
             explanation:
@@ -558,10 +558,10 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
           {
             prompt: "What does the FTC say about claims that your product 'uses AI' or about what your AI can do?",
             options: [
-              "You can say anything as long as it sounds impressive",
-              "AI performance claims must be truthful and substantiated; 'the AI said so' is not a defense",
-              "Only claims about price are regulated",
-              "Claims don't matter for small businesses",
+              "You can say anything so long as it sounds impressive",
+              "AI claims must be truthful and substantiated, like any claim",
+              "Only the claims you make about price are regulated",
+              "Claims do not matter at all for a small business",
             ],
             correctIndex: 1,
             explanation:
@@ -572,9 +572,9 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
             prompt: "Can you copyright a logo you got from a single AI prompt, according to the U.S. Copyright Office?",
             options: [
               "Yes, anything AI makes for you is automatically yours",
-              "Purely AI-generated output isn't protected; copyright needs human authorship, and prompting alone isn't enough",
-              "Yes, if the prompt was detailed",
-              "Only if you paid for the AI tool",
+              "Purely AI-generated output is not protected; it needs a human",
+              "Yes, so long as the prompt you wrote was detailed",
+              "Only if you actually paid to use that AI tool",
             ],
             correctIndex: 1,
             explanation:
@@ -584,10 +584,10 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
           {
             prompt: "What's the goal of a small first launch of an AI product?",
             options: [
-              "To go viral immediately",
-              "To learn fast and cheap with real users whether it solves the problem, then scale what's proven",
-              "To avoid ever talking to customers",
-              "To ship the most polished version possible before anyone uses it",
+              "To go completely viral almost immediately",
+              "To learn cheaply from real users whether it solves the problem",
+              "To avoid ever having to talk to any customers",
+              "To ship the most polished version before anyone uses it",
             ],
             correctIndex: 1,
             explanation:

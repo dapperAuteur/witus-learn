@@ -368,10 +368,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "What gives you the biggest improvement in AI answers?",
             options: [
-              "Finding the right 'magic words'",
+              "Finding exactly the right set of 'magic words' to unlock it",
               "Giving the prompt clear structure: role, context, task, format",
-              "Using a longer, more elaborate vocabulary",
-              "Being polite to the model",
+              "Using a longer and more elaborate vocabulary throughout",
+              "Being consistently polite to the model in every single turn",
             ],
             correctIndex: 1,
             explanation: "Structure beats clever wording: state the audience, goal, length, and format so the model isn't guessing.",
@@ -381,7 +381,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             prompt: "In the role/context/task/format frame, which piece is usually where accuracy is won or lost?",
             options: [
               "Role",
-              "Context, including the source material you paste in",
+              "Context",
               "Format",
               "Tone",
             ],
@@ -392,10 +392,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "When is showing one or two examples (few-shot) most worth it?",
             options: [
-              "When you want to make a claim true",
-              "When the shape or style of a good answer is hard to describe in words",
-              "Only when writing code",
-              "Never: examples confuse the model",
+              "When you want to make a shaky claim look more true",
+              "When a good answer's shape is hard to describe in words",
+              "Only when you are asking the model to write code",
+              "Never, since examples only confuse the model more",
             ],
             correctIndex: 1,
             explanation: "Demonstrate finicky formats, a specific voice, or edge cases. Examples teach the pattern, but don't verify facts.",
@@ -404,10 +404,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "Why ask a model to 'show its reasoning step by step'?",
             options: [
-              "It guarantees the answer is correct",
-              "It improves multi-step answers AND gives you a trail you can audit",
-              "It makes the answer shorter",
-              "It hides the model's mistakes",
+              "It guarantees that the final answer will be correct",
+              "It improves multi-step answers and gives you an audit trail",
+              "It makes the answer shorter and much easier to read",
+              "It hides the model's mistakes from the reader entirely",
             ],
             correctIndex: 1,
             explanation: "Chain-of-thought (Wei et al., 2022) improves stepwise problems and makes the answer inspectable, but isn't proof it's right.",
@@ -416,10 +416,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "You ask the AI for sources and it gives you three. What makes them trustworthy?",
             options: [
-              "They have official-looking URLs",
-              "The model sounded confident",
+              "They all have official-looking URLs attached to them",
+              "The model sounded very confident when giving them",
               "You opened each one and confirmed it says what's claimed",
-              "There are three of them",
+              "There are three of them rather than only a single one",
             ],
             correctIndex: 2,
             explanation: "Models can invent real-looking citations. Asking for sources is only half the job, opening and confirming them is on you.",
@@ -428,10 +428,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "An answer comes back too long and too generic. What's the fastest fix?",
             options: [
-              "Start over with a brand-new tool",
-              "Add the missing frame pieces (a length format + an audience) and change one thing at a time",
-              "Tell it 'make it better' and re-run",
-              "Accept it, that's just how AI writes",
+              "Start over again with a completely different AI tool",
+              "Add the missing frame pieces and change one thing at a time",
+              "Just tell it to 'make it better' and then run it again",
+              "Accept it, because that is simply how AI always writes",
             ],
             correctIndex: 1,
             explanation: "The prompt-debug loop: trace the gap to a missing piece of the frame, change one variable, re-run, and compare.",
@@ -440,10 +440,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "Which constraint best reduces made-up facts on an 'answer from this document' task?",
             options: [
-              "Ask for a longer answer",
-              "Ask it to be more confident",
-              "\"Answer only from the pasted text; write 'not stated' if it isn't there\"",
-              "Ask it to add extra background it knows",
+              "Ask the model to give a considerably longer full answer",
+              "Ask it to sound a great deal more confident about its answer",
+              "\"Answer only from the pasted text; say 'not stated' if absent\"",
+              "Ask it to add any extra background information it knows",
             ],
             correctIndex: 2,
             explanation: "A grounding constraint plus an explicit 'out' (let it say it doesn't know) sharply cuts invented facts.",
@@ -452,10 +452,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "A step-by-step answer that also passed its own self-check, what does that prove?",
             options: [
-              "That the answer is definitely true",
-              "Nothing on its own; the reasoning and the self-check are also generated text and can be confidently wrong",
-              "That you don't need to verify it",
-              "That the sources must be real",
+              "That the final answer is definitely and reliably true",
+              "Nothing on its own; both are generated text and can be wrong",
+              "That you do not need to verify any of it yourself at all",
+              "That the sources it cited must therefore all be real",
             ],
             correctIndex: 1,
             explanation: "Reasoning ≠ truth. Visible reasoning and self-checks make answers easier to inspect, not automatically correct, you still verify.",
@@ -464,10 +464,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "Which situation should push your skepticism the HIGHEST?",
             options: [
-              "Brainstorming names for a party",
-              "A high-stakes legal, medical, or financial claim you plan to act on",
-              "Rewriting a sentence to be friendlier",
-              "Asking for a fictional story",
+              "Brainstorming a long list of names for a birthday party",
+              "A high-stakes legal, medical or financial claim you will act on",
+              "Rewriting a single sentence so that it sounds friendlier",
+              "Asking the model for a short piece of fictional writing",
             ],
             correctIndex: 1,
             explanation: "Raise scrutiny on facts, recent events, high-stakes decisions, and anything you want to be true.",
@@ -476,10 +476,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "What do the reusable patterns (tutor, decision brief, editor) all share?",
             options: [
-              "They're only useful for developers",
-              "A role, pasted context when accuracy matters, a precise task, a format/constraint, and a built-in verify step",
-              "They avoid giving the model any instructions",
-              "They rely on secret magic words",
+              "They are only ever useful to working software developers",
+              "A role, context, a precise task, a format, and a verify step",
+              "They avoid giving the model any explicit instructions",
+              "They all rely on secret magic words in order to work",
             ],
             correctIndex: 1,
             explanation: "Every good pattern is the whole course compressed: frame + examples/reasoning + constraints + verification.",

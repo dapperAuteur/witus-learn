@@ -453,10 +453,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "What's the most common reason AI capstone projects fail, and the first thing you should do instead?",
             options: [
-              "Choosing the wrong model; pick the biggest one available",
-              "Building before scoping; start from a real user need and a measurable success metric",
-              "Writing too few prompts; write more prompts",
-              "Using RAG; avoid retrieval entirely",
+              "Choosing the wrong model; pick the biggest one available now",
+              "Building before scoping; start from a real need and a metric",
+              "Writing too few prompts; simply write a great many more",
+              "Using RAG at all; avoid retrieval entirely from the start",
             ],
             correctIndex: 1,
             explanation:
@@ -466,10 +466,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "Why must you measure a baseline of the current (non-AI) workaround before building?",
             options: [
-              "To make the project take longer",
-              "So you can prove the tool actually helped: without a before-number you can't tell if it worked",
-              "Baselines are only needed for fine-tuning",
-              "To choose the temperature setting",
+              "To make the whole project take a good deal longer",
+              "So you can prove it helped; with no before-number you cannot",
+              "Baselines are only ever needed for fine-tuning work",
+              "To choose the right temperature setting for the model",
             ],
             correctIndex: 1,
             explanation:
@@ -479,10 +479,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "You need answers grounded in your own documents, kept fresh, and citable. Which approach fits best, before reaching for anything heavier?",
             options: [
-              "Fine-tune a model on the documents",
-              "RAG: retrieve the relevant passages and put them in the prompt",
-              "An autonomous multi-tool agent",
-              "A larger context window only",
+              "Fine-tune a model on all of the documents each week",
+              "RAG: retrieve the passages and put them in the prompt",
+              "An autonomous multi-tool agent with planning",
+              "A larger context window and nothing else at all",
             ],
             correctIndex: 1,
             explanation:
@@ -492,10 +492,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "Anthropic's core guidance for choosing how complex to build is:",
             options: [
-              "Always build a full agent for maximum capability",
-              "Find the simplest solution possible, and only increase complexity when needed",
-              "Fine-tune first, then simplify",
-              "Add as many tools as possible up front",
+              "Always build a full agent for the maximum capability",
+              "Find the simplest solution, and add complexity only when needed",
+              "Fine-tune the model first, and then simplify it later",
+              "Add as many tools as you possibly can right up front",
             ],
             correctIndex: 1,
             explanation:
@@ -505,10 +505,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "When designing the UX, how should your tool behave when the model returns a wrong or low-confidence answer?",
             options: [
-              "Hide the failure and show the answer anyway",
-              "Design graceful failure: a fallback, retry, or path to a human; never dead-end the user",
-              "Crash so the user knows something went wrong",
-              "Silently retry forever",
+              "Hide the failure and show the user the answer anyway",
+              "Design graceful failure: a fallback, a retry, or a human",
+              "Crash loudly so the user knows something went wrong",
+              "Silently retry the same call forever in the background",
             ],
             correctIndex: 1,
             explanation:
@@ -518,10 +518,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "Which action most clearly requires an explicit human-in-the-loop approval gate?",
             options: [
-              "Drafting text for the user to read",
-              "Sending an email, charging a card, or deleting data (irreversible/consequential)",
-              "Showing a confidence score",
-              "Logging the request",
+              "Drafting some text for the user to read over later",
+              "Sending an email, charging a card, or deleting data",
+              "Showing the user a confidence score for the answer",
+              "Logging the request and its response for later",
             ],
             correctIndex: 1,
             explanation:
@@ -531,10 +531,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "What should you do on the very first day of building the MVP?",
             options: [
-              "Add every planned feature at once",
-              "Hard-wire one real input to one useful output, log every call, and keep secrets server-side",
-              "Fine-tune a custom model",
-              "Skip validation to move faster",
+              "Add every single planned feature all at once on day one",
+              "Hard-wire one real input to one useful output, and log it",
+              "Fine-tune a custom model on your own collected data",
+              "Skip output validation entirely so you can move faster",
             ],
             correctIndex: 1,
             explanation:
@@ -544,10 +544,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "What's the OWASP #1 LLM risk, and the habit that defends against it?",
             options: [
-              "Slow responses; add caching",
-              "Prompt injection; treat all model input and output as untrusted and validate it before any sensitive action",
-              "High cost; use a smaller model",
-              "Bias; retrain the model",
+              "Slow responses; add a caching layer in front of it",
+              "Prompt injection; treat input and output as untrusted",
+              "High cost; switch to a smaller and cheaper model",
+              "Bias; retrain the model on a broader dataset",
             ],
             correctIndex: 1,
             explanation:
@@ -557,10 +557,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "How do you estimate what your AI tool will cost at scale?",
             options: [
-              "Lines of code × developers",
-              "Tokens per request × requests per day × the model's per-token price",
-              "Number of users × subscription fee",
-              "Prompts × temperature",
+              "Lines of code multiplied by the number of developers",
+              "Tokens per request, times requests per day, times price",
+              "Number of users multiplied by your subscription fee",
+              "Number of prompts multiplied by the temperature",
             ],
             correctIndex: 1,
             explanation:
@@ -570,10 +570,10 @@ Do the writing offline, then run the confirmation drill below, and finish with t
           {
             prompt: "Why pin the model version and prompt as versioned config before you ship?",
             options: [
-              "It makes the model deterministic",
-              "So when a provider updates a model and behavior shifts, you can re-run your evals before adopting the change, not after a user finds the regression",
-              "It lowers the token price",
-              "It removes the need for a kill switch",
+              "It makes the model's behaviour fully deterministic",
+              "So you can re-run evals before adopting a provider's update",
+              "It lowers the per-token price you are charged",
+              "It removes any need to build a kill switch at all",
             ],
             correctIndex: 1,
             explanation:

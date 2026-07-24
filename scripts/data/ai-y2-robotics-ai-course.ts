@@ -533,10 +533,10 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "When you add AI to a robot, which part of the sense → think → act loop mainly changes?",
             options: [
-              "The sense step: it needs new sensors",
-              "The think step: it can use a model that learned from examples instead of only typed-in rules",
-              "The act step: it needs new motors",
-              "Nothing changes",
+              "The sense step: it needs a whole new set of better sensors",
+              "The think step: it can learn from examples, not just typed rules",
+              "The act step: it needs brand new and much stronger motors",
+              "Nothing in the loop changes at all when you add AI to it",
             ],
             correctIndex: 1,
             explanation:
@@ -547,10 +547,10 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "What is the difference between programmed rules and learned behavior?",
             options: [
-              "Rules are written by a person in advance; learned behavior finds the pattern from examples",
-              "They are exactly the same thing",
-              "Learned behavior is always more predictable than rules",
-              "Rules can only run on Mars rovers",
+              "Rules are written by a person; learned behaviour finds patterns",
+              "They are in truth exactly the same thing as one another",
+              "Learned behaviour is always more predictable than rules",
+              "Rules can only ever be run on board an actual Mars rover",
             ],
             correctIndex: 0,
             explanation:
@@ -561,10 +561,10 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "A robot uses 'computer vision' to do what?",
             options: [
-              "Charge its battery from sunlight",
-              "Make sense of images and video (like recognizing a stop sign) by matching learned patterns",
-              "Store its program",
-              "Talk to other robots over radio",
+              "Charge up its own battery directly from the sunlight",
+              "Make sense of images and video by matching learned patterns",
+              "Store its own program and all of its working memory",
+              "Talk to other nearby robots over a shared radio link",
             ],
             correctIndex: 1,
             explanation:
@@ -575,10 +575,10 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "Why might a voice-controlled robot understand the person who set it up but struggle with a friend?",
             options: [
-              "Robots can only ever hear one person",
-              "The model learned from examples that may have missed other accents or noisy rooms",
-              "Microphones stop working for new people",
-              "It is choosing to ignore the friend on purpose",
+              "Robots can only ever hear one single person speak",
+              "The model learned from examples that missed other accents",
+              "Microphones simply stop working for any new person",
+              "It is deliberately choosing to ignore that friend",
             ],
             correctIndex: 1,
             explanation:
@@ -589,10 +589,10 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "Why does a Mars rover need to drive itself, when a sidewalk delivery robot could be watched by a human?",
             options: [
-              "Mars rovers are cheaper",
-              "Mars is so far away that a person can't steer it in real time, so it must make its own routine decisions",
-              "Delivery robots have no sensors",
-              "Rovers don't actually move",
+              "Mars rovers are a great deal cheaper to build and run",
+              "Mars is too far away to steer in real time, so it decides",
+              "Sidewalk delivery robots have no sensors on them at all",
+              "Rovers do not actually move around on the surface",
             ],
             correctIndex: 1,
             explanation:
@@ -603,9 +603,9 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "In a tool like micro:bit CreateAI, how do you teach the robot a new skill?",
             options: [
-              "Write hundreds of if/else rules",
-              "Collect labeled example movements, then train, test, and improve a model on that data",
-              "Buy a more expensive board",
+              "Write many hundreds of if/else rules out by hand",
+              "Collect labelled examples, then train, test and improve",
+              "Buy a more expensive and considerably faster board",
               "Wait for the robot to learn on its own with no examples",
             ],
             correctIndex: 1,
@@ -617,10 +617,10 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "What is 'sensor fusion,' and why is it useful?",
             options: [
-              "Melting two sensors together",
-              "Blending several sensors so the AI makes one better decision, covering each sensor's blind spots",
-              "Turning a sensor into an actuator",
-              "Using only one sensor to save power",
+              "Melting two separate sensors together into a single part",
+              "Blending several sensors so the AI makes one better decision",
+              "Turning a sensor into an actuator instead of a sensor",
+              "Using only a single sensor in order to save on power",
             ],
             correctIndex: 1,
             explanation:
@@ -631,10 +631,10 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "For the highest-stakes action a robot can take, what do careful engineers often do?",
             options: [
-              "Leave it entirely to the learned AI's guess",
-              "Use a plain, readable hard rule (and/or keep a human in the loop), because a learned guess can be confidently wrong",
-              "Remove all the sensors",
-              "Let the robot decide with no testing",
+              "Leave it entirely to the learned AI's own guess",
+              "Use a plain hard rule, or keep a human in the loop",
+              "Remove all of the robot's sensors beforehand",
+              "Let the robot decide with no testing at all",
             ],
             correctIndex: 1,
             explanation:
@@ -645,9 +645,9 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "Which is a fair concern about automation and jobs?",
             options: [
-              "Robots never change any jobs at all",
-              "Automation can remove some jobs while creating new ones, so we should help people whose jobs change and keep new opportunities open to everyone",
-              "Only robots can have jobs now",
+              "Robots never change any jobs at all, ever, anywhere",
+              "Automation can remove some jobs while creating new ones",
+              "Only robots are able to hold down real jobs now",
               "Automation always helps everyone equally with no effort",
             ],
             correctIndex: 1,
@@ -659,10 +659,10 @@ Arduino. (n.d.). *About Arduino* (on-device ML with TensorFlow Lite). https://ww
             prompt:
               "When your trained model keeps confusing two movements, the engineer's fix is to…",
             options: [
-              "Give up: the model can't improve",
-              "Iterate: add better, more varied training examples and test again",
-              "Write a thousand if/else rules instead",
-              "Buy a faster computer and change nothing else",
+              "Give up, because the model simply cannot improve",
+              "Iterate: add better, more varied examples and test again",
+              "Write out a thousand if/else rules by hand instead",
+              "Buy a much faster computer and change nothing else",
             ],
             correctIndex: 1,
             explanation:

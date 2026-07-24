@@ -427,9 +427,9 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
             prompt: "Which task is the BEST candidate to automate in a small business?",
             options: [
               "Deciding whether to give an angry customer a refund",
-              "Sending the same order-confirmation reminder you send for every order",
-              "Signing a legal contract",
-              "Handling a sensitive customer complaint",
+              "Sending the same order-confirmation you send every time",
+              "Signing a legal contract on the company's behalf",
+              "Handling a sensitive complaint from an upset customer",
             ],
             correctIndex: 1,
             explanation:
@@ -439,10 +439,10 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
           {
             prompt: "Why should you map a workflow before buying an automation tool?",
             options: [
-              "Because tools are cheaper on weekends",
-              "Because you can't automate a process you can't describe, and automating a messy process just gives you a faster mess",
-              "Because mapping replaces the need for any tool",
-              "You shouldn't; buy the tool first",
+              "Because automation tools are always cheaper at weekends",
+              "Because automating a mess just gives you a faster mess",
+              "Because mapping removes the need for any tool at all",
+              "You should not; buy the tool first and map it later",
             ],
             correctIndex: 1,
             explanation:
@@ -452,10 +452,10 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
           {
             prompt: "In an automated workflow, what's the division of labor between a no-code tool and an AI assistant?",
             options: [
-              "They do the exact same thing",
-              "The no-code tool handles the 'when X, do Y' plumbing; the AI assistant handles language (writing, summarizing)",
-              "The AI assistant does the plumbing; the tool writes the emails",
-              "Neither needs a human to approve anything",
+              "They both do the exact same thing as each other",
+              "The no-code tool does the plumbing; the AI does language",
+              "The AI does the plumbing; the tool writes all the emails",
+              "Neither of them needs a human to approve anything",
             ],
             correctIndex: 1,
             explanation:
@@ -465,10 +465,10 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
           {
             prompt: "When should an AI support bot automatically hand off to a human?",
             options: [
-              "Never, that's the point of a bot",
-              "Only after midnight",
-              "When the customer is upset, asks twice, asks for a person, or the issue involves money or something sensitive",
-              "Only for questions about store hours",
+              "Never at all, because that is the whole point of a bot",
+              "Only after midnight when no staff are working",
+              "When the customer is upset, asks twice, or asks for a person",
+              "Only for questions about the store's opening hours",
             ],
             correctIndex: 2,
             explanation:
@@ -478,10 +478,10 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
           {
             prompt: "AI cleaned up your inventory spreadsheet in seconds. What should you do before relying on it?",
             options: [
-              "Nothing, AI doesn't make mistakes on data",
-              "Spot-check the result, because a wrong count means a missed sale or a stockout and a wrong number in your books is a real problem",
-              "Delete your original data immediately",
-              "Publish it as your official records unread",
+              "Nothing at all, because AI does not make mistakes on data",
+              "Spot-check it, because a wrong count is a missed sale",
+              "Delete your original data immediately to save space",
+              "Publish it as your official records without reading it",
             ],
             correctIndex: 1,
             explanation:
@@ -491,10 +491,10 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
           {
             prompt: "When an automation calls an AI model's API, what do you actually pay for?",
             options: [
-              "A one-time flat fee forever",
-              "Per token, both your input and the model's output, so a busy automation can run up a real bill",
-              "Per customer only",
-              "Nothing; AI APIs are free",
+              "A one-time flat fee that covers you forever",
+              "Per token, for your input and the model's output alike",
+              "Per customer only, no matter how much they ask",
+              "Nothing at all, because AI APIs are free to use",
             ],
             correctIndex: 1,
             explanation:
@@ -504,10 +504,10 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
           {
             prompt: "What does it mean to design an automation for the fact that AI will sometimes be wrong?",
             options: [
-              "Assume AI is always right and skip checks",
-              "Keep AI off the high-stakes path alone, route low-confidence cases to a human, test on real cases, and build a working fallback",
-              "Turn off all monitoring once it works once",
-              "Let the bot decide refunds without review",
+              "Assume the AI is always right and skip all the checks",
+              "Keep AI off the high-stakes path and build a fallback",
+              "Turn off all of the monitoring once it works one time",
+              "Let the bot decide on refunds without any human review",
             ],
             correctIndex: 1,
             explanation:
@@ -517,10 +517,10 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
           {
             prompt: "Which is a responsible way to handle customer data, per the FTC?",
             options: [
-              "Collect everything 'just in case' and keep it forever",
-              "Take stock of what you collect, keep only what you need, lock it down, delete what you don't need, and don't paste it into public AI tools",
+              "Collect everything 'just in case' and then keep it forever",
+              "Keep only what you need, lock it down, and delete the rest",
               "Paste customer details into any free AI tool to save time",
-              "Assume your automation tools handle security so you don't have to think about it",
+              "Assume your automation tools handle all of the security",
             ],
             correctIndex: 1,
             explanation:
@@ -530,10 +530,10 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
           {
             prompt: "Your automation sent a customer a wrong charge. Who is accountable?",
             options: [
-              "The tool: 'the AI did it' settles it",
-              "Nobody, because it was automated",
-              "You: a named human owns the automation, fixes the mistake, and makes it right; 'the AI did it' is not a defense",
-              "The customer, for trusting a bot",
+              "The tool itself, because 'the AI did it' settles the matter",
+              "Nobody at all, because the whole thing was automated",
+              "You: a named human owns it, fixes it, and makes it right",
+              "The customer, for having trusted a bot in the first place",
             ],
             correctIndex: 2,
             explanation:
@@ -543,10 +543,10 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
           {
             prompt: "What's the honest one-line goal of automating your operations?",
             options: [
-              "Remove every human from the business",
-              "Automate the boring, repetitive work so you have more time for what matters, while a human maps, checks, and stays accountable for it",
-              "Use as many AI tools as possible",
-              "Hide that you use AI from customers",
+              "Remove every single human being from the business",
+              "Automate the boring work; a human stays accountable for it",
+              "Use just as many different AI tools as you possibly can",
+              "Hide the fact that you use AI from all of your customers",
             ],
             correctIndex: 1,
             explanation:

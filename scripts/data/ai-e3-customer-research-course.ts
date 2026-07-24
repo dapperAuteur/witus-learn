@@ -509,10 +509,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "What does Steve Blank's 'there are no facts inside your building' mean for validating an idea?",
             options: [
-              "Spend more time refining the idea in your head",
-              "Real evidence comes from getting out and talking to real customers, not from your imagination or a chatbot",
-              "Build the full product first, then ask people",
-              "Ask an AI to confirm your idea is good",
+              "Spend more time refining the idea inside your own head",
+              "Real evidence comes from getting out and talking to customers",
+              "Build the full product first, and then go ask people",
+              "Ask an AI model to confirm that your idea is a good one",
             ],
             correctIndex: 1,
             explanation:
@@ -522,10 +522,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "Which research job can AI genuinely help with, and which can it NEVER do?",
             options: [
-              "It can be a real customer; it can't draft questions",
-              "It can prep questions and summarize answers; it can never BE a customer or tell you who'll pay",
-              "It can do everything, so you can skip interviews",
-              "It can only invent personas, nothing else",
+              "It can be a real customer, but it cannot draft questions",
+              "It can prep questions and summarise, but never BE a customer",
+              "It can do everything, so you can skip the interviews",
+              "It can only ever invent personas and nothing else at all",
             ],
             correctIndex: 1,
             explanation:
@@ -535,10 +535,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "Why is 'Would you use an app that does this?' a weak interview question?",
             options: [
-              "It's too long",
-              "It's hypothetical: people are bad at predicting future behavior and tend to be polite; ask what they actually did instead",
-              "It's illegal to ask",
-              "It uses the word 'app'",
+              "It is far too long a question to ask out loud",
+              "It is hypothetical; ask what they actually did instead",
+              "It is actually illegal to ask a question like that",
+              "It uses the word 'app', which puts people off",
             ],
             correctIndex: 1,
             explanation:
@@ -548,10 +548,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "Your survey only got responses from your friends and followers. What's the problem?",
             options: [
-              "Nothing: supportive people are the best sample",
-              "Sampling bias: your fan club isn't your real target market, so the results are skewed and unreliable",
-              "You should add leading questions to balance it",
-              "Friends always give the most honest answers",
+              "Nothing at all, supportive people are the best sample",
+              "Sampling bias: your fan club is not your target market",
+              "You should add some leading questions to balance it out",
+              "Friends will always give you the most honest answers",
             ],
             correctIndex: 1,
             explanation:
@@ -561,10 +561,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "AI summarizes your 12 interviews and reports '73% of users are frustrated by X,' but you never recorded any percentages. What should you do?",
             options: [
-              "Use the number: it sounds authoritative",
-              "Delete the invented statistic; a number that isn't in your real data is a fabrication, not a finding",
-              "Round it up to 80% to be safe",
-              "Put it in your investor pitch",
+              "Use the number anyway, since it sounds authoritative",
+              "Delete it; a number not in your data is a fabrication",
+              "Round it up to 80 percent just to be on the safe side",
+              "Put it straight into your investor pitch deck as is",
             ],
             correctIndex: 1,
             explanation:
@@ -574,10 +574,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "Why does asking an AI 'isn't my idea great?' make confirmation bias WORSE?",
             options: [
-              "It doesn't: AI removes bias completely",
-              "Models tend to be agreeable and tell you what you want to hear, and automation bias makes 'the AI agreed' feel like real proof when it isn't",
-              "Because AI always says no",
-              "Because the question is too short",
+              "It does not; AI removes the bias completely for you",
+              "Models tend to agree with you, and 'the AI agreed' feels like proof",
+              "Because an AI model will always simply say no to you",
+              "Because that question is much too short to answer well",
             ],
             correctIndex: 1,
             explanation:
@@ -587,10 +587,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "What's the most honest way to size your market?",
             options: [
-              "Claim the biggest possible TAM and say you'll get 1% of it",
-              "Lead with a realistic SOM built bottom-up: real customers × price × frequency, from sources you can verify",
-              "Let AI generate a confident number and use it as-is",
-              "Pick whatever number impresses investors",
+              "Claim the biggest TAM and say you will take 1 percent",
+              "Lead with a realistic SOM built bottom-up from real numbers",
+              "Let an AI generate a confident number and use it as-is",
+              "Pick whatever number happens to impress your investors",
             ],
             correctIndex: 1,
             explanation:
@@ -600,10 +600,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "Why can a simple landing page sometimes validate demand better than a finished product, and what rule must it follow?",
             options: [
-              "It's prettier; it can say anything to get sign-ups",
-              "It tests whether real strangers ACT (sign up / pre-order) cheaply and early, and every claim on it must stay truthful and substantiated",
-              "It doesn't need traffic to work",
-              "It only works if you exaggerate the features",
+              "It is prettier, and it can say anything to get sign-ups",
+              "It tests whether strangers ACT, and every claim must be true",
+              "It does not need any traffic at all in order to work",
+              "It only ever works if you exaggerate all the features",
             ],
             correctIndex: 1,
             explanation:
@@ -613,10 +613,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "Rank these as proof of demand: 100 likes, 10 email sign-ups, 3 paid pre-orders. Which is strongest and why?",
             options: [
-              "100 likes: biggest number wins",
-              "3 paid pre-orders: money is the most honest signal; weight each signal by what it cost the person",
-              "10 email sign-ups: likes and payments don't count",
-              "They're all equal proof",
+              "100 likes, because the biggest number always wins",
+              "3 paid pre-orders: money is the most honest signal there is",
+              "10 email sign-ups; likes and payments do not count at all",
+              "They are all exactly equal proof of real demand",
             ],
             correctIndex: 1,
             explanation:
@@ -626,10 +626,10 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
           {
             prompt: "When is killing a startup idea early actually a WIN?",
             options: [
-              "Never: you should always persevere no matter what",
-              "When honest signals show the need isn't there (people won't act or pay, market too small): you saved months by validating cheaply instead of building blindly",
-              "Only if an AI tells you to stop",
-              "Whenever the first week gets hard",
+              "Never; you should always persevere no matter what happens",
+              "When honest signals show the need is not there at all",
+              "Only if an AI model actually tells you to stop now",
+              "Whenever the very first week starts to get a bit hard",
             ],
             correctIndex: 1,
             explanation:
