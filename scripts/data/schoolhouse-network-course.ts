@@ -1845,6 +1845,204 @@ The 2020 Act names specific sites for special emphasis in the study. **This is a
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Write
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "sn-write-assignment",
+      title: "17 · Your assignment: one schoolhouse, and the budget line that raised it",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `**This is a real assignment with a real evidence standard, and it has one requirement no other writing assignment in this series has: you must build the co-occurrence table before you write a sentence, and it must survive into the finished piece.**
+
+## The assignment
+
+Write **900 to 1,300 words** of creative nonfiction about **one Rosenwald school building**, or the site where one stood. Every factual sentence must be checkable against a source you name. **The form is literary. The standard of evidence is the one Section 2 used on a budget.**
+
+## Step 1 · Choose one building, and choose small
+
+"Rosenwald schools" is a topic. **A subject is one building in one county with one card.** Use lesson 15's six steps to find one. **A school near you is almost always the better choice**, because you can go and stand in front of it and because the local records are reachable.
+
+**If you cannot find one near you, use one of the fourteen named in Public Law 116-336.** They have federal provenance, published documentation and, in several cases, active stewardship organisations.
+
+**If you cannot visit, that is a constraint you disclose in the piece**, and it changes what you may honestly claim.
+
+## Step 2 · Build the budget table before you write a sentence
+
+Four columns: **source, amount, share of total, citation.** Get the amounts from the school's card in the Rosenwald Fund card file at Fisk (https://rosenwald.fisk.edu/), and copy the **item number and application number** so the next researcher can find it.
+
+**Then answer these three questions in your notes.**
+1. **What share did the Black community pay?** Compare it to the national figure of about 16.5 percent and to your state's figure if one is published.
+2. **What is in the Whites column?** If it is zero, say so, and remember from lesson 5 that a required column coming in empty is evidence about the requirement.
+3. **What does the card not say?** How the money was raised, over what period, by how many households, at what cost. **That list is the part of your research that is not yet done.**
+
+**If you cannot find a card, that is a finding.** Write the search you ran.
+
+## Step 3 · Build the co-occurrence table. This step is required and it is the course
+
+Two columns, one calendar, a source in every cell.
+
+**Column one: the building record.** The year the school was funded, the year it opened, the plan type, the cost, the community share, the term length if you can find it, the enrolment, the teachers, the closure, what happened to the building afterward.
+
+**Column two: the other record, in the same county or the same state, in the same years.** **Your first stop is the per-pupil spending figures**, which most states published by race in this period and which state archives hold. Then: the school term length for white and Black schools, transport provision, teacher salaries, and whatever else your state's own education reports separated by race.
+
+**Then classify every row: causal, responsive, or simultaneous only.** Lesson 12 gives you the test.
+
+**Your finished piece must contain at least two dated pairs from this table**, and it must not use a connective between them.
+
+## Step 4 · Decide what kind of piece this is
+
+Pick one and commit.
+- **A biography of a building.** Its funding year, its plan, its span, its uses, its closure, its afterlife, its present condition.
+- **A history of one budget line.** Follow a single number, such as the community contribution, to whatever raised it, and stop honestly where the record stops.
+- **A report on a present.** Who owns it now, who is restoring it, what a fundraising meeting sounds like, what the next step is.
+- **A piece about the record itself.** What you could and could not find, and what the gap means.
+
+**The fourth is the hardest and often the best**, and it is the only one that can be written honestly on thin sources. **For this subject it is also the most useful**, because the archive's silence about the builders, named in lesson 11, is a real and interesting subject.
+
+## Step 5 · Craft rules
+
+1. **Lead with a specific.** A dollar figure, an acreage, a teacher-type, a compass orientation. Not a mood, and not a description of light through a window.
+2. **Name the source of every figure in the sentence that carries it**, or in a citation attached to it.
+3. **Give every figure its owner and its year.** Not "about five thousand schools" but "5,357 schools and related buildings, as Public Law 116-336 defines the term."
+4. **Attribute an argument as an argument.** Anderson's double taxation is an interpretation with an author. The documentation form's "unparalleled level of interracial cooperation" is a characterisation with a purpose. **You may quote and engage either. You may not launder either into your own narration as a finding.**
+5. **Use the present tense for the present.** If the building stands, if a group is restoring it, if a bill is pending, write it in the present and date it.
+6. **One paragraph, minimum, on what you could not establish.** Required.
+
+## The rules you do not get to break
+
+1. **No invented detail.** Not a figure, a name, a date, an address, a quotation, a school, a plan number or a county. **If a source does not say it, you do not write it.** This includes atmospheric invention: **you do not know what the room smelled like, how the floor sounded, or what the children felt.**
+2. **No composite or imagined characters.** Real, cited people only. Booker T. Washington, Julius Rosenwald, Robert R. Taylor, W. A. Hazel, Fletcher Dresslar, Samuel L. Smith, J. E. Crain, E. M. Tisdale, Clinton J. Calloway, Margaret Murray Washington, Nathan Carter Newbold, Charles H. Moore, William Frontis Credle, George E. Davis, Marie G. Davis, George T. Rouson, Virginia Estelle Randolph, Edwin Embree. **That is more than enough material.**
+3. **No invented dialogue**, including "she might have said."
+4. **Living people describe themselves.** The grandchildren of the people who built these schools are alive, and many of them are the ones restoring the buildings. **Quote a published interview with a citation, or interview somebody and say that you did.** Never assign words, feelings or motives to a living person.
+5. **Children are not public figures.** If the building is a school today, or a community centre used by children, **no named child, no photograph tied to a name, no address**.
+6. **No ruin porn and no lost golden age.** A collapsing schoolhouse is not a metaphor. It is a building with an owner, a condition assessment and, sometimes, a fundraising target.
+7. **And the rule this course exists for: no triumph-only version either.** **A community paying twice for one school is not a story about resilience.** You may not close on the lumber, the box party, the acre of cotton or the restoration ribbon. **If your last paragraph makes a reader feel better than your fourth paragraph did, go back and check whether you moved a fact or only moved it later.**
+8. **No "but" between the two records.** Say both. Date both. Cite both. Stop.
+9. **Credit what was built, in the same piece.** A course that inventories only what was done to people is an incomplete report. **Name the plan, name the builder if the record names one, name the teachers, name the fundraiser, name the people restoring it now.**
+10. **Say what you did to a number.** Adjusted for inflation, combined two sources, computed a share, rounded. **Say so and say how.**
+11. **Do not trespass.** Ask.
+
+## What good looks like
+
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, **and in which the prose is still good.** Those two standards do not conflict.
+
+**A two-teacher school on exactly two acres in Charles County, Maryland, built for 2,850 dollars, of which the Black community put in 100 and the county put in 2,350. A state spending 44 dollars 48 cents on one child and 14 dollars 30 cents on another in the same year. Nineteen counties with 6,000 dollars in the bank in the year the program closed.** None of that needs decorating, and none of it needs a moral.
+
+## Sources
+- Fisk University. (n.d.-a). *Rosenwald Fund collection*. John Hope and Aurelia E. Franklin Library. https://rosenwald.fisk.edu/
+- Julius Rosenwald and the Rosenwald Schools Act of 2020, Pub. L. No. 116-336, 134 Stat. 5118 (2021). https://www.govinfo.gov/content/pkg/PLAW-116publ336/html/PLAW-116publ336.htm
+- National Trust for Historic Preservation. (n.d.-a). *Rosenwald schools*. https://savingplaces.org/places/rosenwald-schools
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf`,
+      recallContent: [
+        {
+          prompt: "What is the estimated survival rate of the 5,357 buildings, and what closed them?",
+          answer: "The National Trust estimates 10 to 12 percent survive, roughly five hundred to six hundred and fifty buildings. They closed with school consolidation in the 1950s and desegregation in the 1960s and 1970s after Brown v. Board of Education, and most were abandoned or repurposed as community centres, churches, homes, barns and storage.",
+        },
+        {
+          prompt: "What is a National Register multiple property documentation form, and what is it not?",
+          answer: "It is a cover document that establishes historic context and registration requirements once so later individual nominations can reference it instead of rebuilding the argument. It is not itself a listing. If your state has one it is the best free reading on Rosenwald schools in your state, and it will contain a county list.",
+        },
+        {
+          prompt: "State the federal position on a Rosenwald national historical park, precisely.",
+          answer: "Public Law 116-336, approved 13 January 2021, directs a special resource study with a report due not later than three years after funds are first made available. No park has been established. Bills S. 3925 and H.R. 8887 in the 119th Congress would establish one and were pending. Check congress.gov before repeating any of it.",
+        },
+        {
+          prompt: "Give the six steps for finding a Rosenwald school near you, in order.",
+          answer: "Fisk's card file searched by state and county; your state historic preservation office and its multiple property form; the National Register and its individual nominations; the National Trust's program for current projects; local stewards such as county historical societies, alumni associations, churches and descendant families; and county records including deed books, school board minutes and the local Black newspaper.",
+        },
+        {
+          prompt: "What is the uncomfortable observation about how these buildings are now being preserved?",
+          answer: "The preservation grants are matching grants. The instrument that built the schools is the instrument now being used to save them, and a matching grant still asks a community for money it may not have, a hundred years later, for a building it already paid for once.",
+        },
+      ],
+    },
+    {
+      slug: "sn-what-comes-next",
+      title: "18 · What this course established, and what it left open",
+      section: "Section 6 · Write",
+      body: `This course was built to do one job the rest of the route series could not do on its own: **teach something that was made, at the same evidence standard used for things that were taken, without letting the first soften the second.**
+
+## What you can do now that you could not before
+
+| What you did here | What you can do anywhere |
+|---|---|
+| Checked five famous numbers and found four disagreements | Ask, of any repeated statistic, which object it dates and who copied it from whom |
+| Read a matching grant as a four-column budget | Work out who actually paid for anything built under a philanthropic program |
+| Divided 4.7 by 28.5 | Test a credit claim against a ledger instead of against a reputation |
+| Opened two cards in an archive | Find the primary record behind a summary figure, and see how far the average is from any real case |
+| Read a plan book's light rules | Explain why a building looks the way it does from its constraints rather than its style |
+| Built a two-column calendar | Report co-occurrence without turning it into balance, redemption or tragedy |
+| Named which pairs are causal | Distinguish "at the same time" from "because", which are different claims with different evidence bars |
+| Checked a bill's status instead of asserting one | Refuse to state an external value you have not read from its authoritative source |
+
+## The relationship to the rest of the series
+
+**This course is the counterpart to *The Gym and the Color Line*.** That course takes a school district boundary and shows what a line does to schooling. This one takes a construction program and shows what communities built inside the same system. **Neither is an answer to the other, and reading them as answer and question is exactly the error both courses are written to prevent.**
+
+**And it depends on the method course.** *The Green Book: How to Read a Route* taught you to read a listing down to its silences, to treat a gap as evidence, and to research a place forward to what stands there now. **A Rosenwald card is a listing. Its blank Whites column is a silence. The building it names is a place you can research forward.** Same method, different record.
+
+## What this course deliberately did not cover, and why
+
+- **Mary Hoffschwelle's scholarship on its own terms.** Both documentation forms this course leans on cite her repeatedly, and this course read the forms rather than the book. **Every figure traceable to her here is traceable at one remove, and the course says so where it matters.** Her work is the obvious next read.
+- **The Julius Rosenwald Fund's other programs.** Fellowships, libraries, health work, teacher training, industrial high schools. The Fund's own expenditure table in lesson 6 shows construction was 4.2 million of 5.4 million, and **the remaining 1.2 million is a whole history this course does not touch.**
+- **The other philanthropies.** Peabody, Slater, the General Education Board and the Anna T. Jeanes Fund are named and not examined. **The Jeanes program in particular deserves its own course**, and Virginia Randolph is the door into it.
+- **The internal history of Tuskegee** after Washington's death in 1915, and what the 1920 move to Nashville meant institutionally for a Black college that had originated the program.
+- **The Aaronson and Mazumder method.** Lesson 2 reports their finding and flags it as an estimate with an arguable method. **This course did not evaluate the method.**
+- **What happened to Black teachers and principals at desegregation.** Lesson 15 names it as a knot and goes no further. **It is a large, documented and painful subject and it needs its own treatment, not a paragraph in somebody else's course.**
+- **The thirteen states this course did not quote from.** Alabama, Arkansas, Georgia, Kentucky, Louisiana, Mississippi, Missouri, Texas and Virginia all have their own records and several have their own multiple property forms. **This course quoted North Carolina, South Carolina, Tennessee, Oklahoma and Florida because those documents were read.**
+
+## The unopened sources, which are the next real work
+
+**None of these has been read into this course. All are public or requestable.**
+- **The Rosenwald Fund card file itself, at scale.** Two cards were read here. There are roughly five thousand. **Anyone who reads a county's worth and publishes the four columns has made an original contribution.**
+- **State education department annual reports**, which published per-pupil spending, term length and teacher salaries by race for exactly these years.
+- **County deed books**, for the two acres and who conveyed them.
+- **Church minute books**, where the campaigns were organised.
+- **The Black press**, which covered rallies, box parties, openings and closures for the communities they were about.
+- **School improvement league records**, if any survive.
+- **The other states' National Register multiple property documentation forms**, several of which are free PDFs.
+- **The special resource study directed by Public Law 116-336**, when its report reaches the House Committee on Natural Resources and the Senate Committee on Energy and Natural Resources.
+
+**If you want to make an original contribution to this story rather than restate it, that is the list.**
+
+## One last thing, and it is the rule again
+
+**Five thousand three hundred and fifty-seven buildings went up. A third of the rural Black schoolchildren of an entire region were in them by 1928. The communities that used them were the second largest funder of them, ahead of the man they are named after, out of the smallest incomes in the country. Teachers were trained, terms were lengthened, and the measured effects on literacy and years of schooling were large.**
+
+**And the same communities were paying taxes into systems that spent a third as much on their children, in states that had just written segregation into their constitutions, in years when Greenwood burned and Rosewood burned and the Supreme Court reaffirmed that a schoolhouse could be assigned by race. In 1932 the program closed on the reasoning that it had become a crutch, in the same year nineteen North Carolina counties had money in the bank saved for the next school.**
+
+**Both paragraphs are true. Neither is the ending. There is no "but" between them, and if you feel one forming, that is the thing this course was written to stop.**
+
+## Sources
+- Aaronson, D., & Mazumder, B. (2011). The impact of Rosenwald schools on Black achievement. *Journal of Political Economy, 119*(5), 821-888. https://www.journals.uchicago.edu/doi/10.1086/662962
+- Anderson, J. D. (1988). *The education of Blacks in the South, 1860-1935*. University of North Carolina Press.
+- Julius Rosenwald and the Rosenwald Schools Act of 2020, Pub. L. No. 116-336, 134 Stat. 5118 (2021). https://www.govinfo.gov/content/pkg/PLAW-116publ336/html/PLAW-116publ336.htm
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf
+- Weathers, L. C. M. (2008). *The Rosenwald school building program in South Carolina, 1917-1932* [National Register of Historic Places multiple property documentation form]. University of South Carolina Public History Program. http://www.nationalregister.sc.gov/MPS/MPS050.pdf`,
+      recallContent: [
+        {
+          prompt: "What is the one step in this assignment that no other writing assignment in the series requires?",
+          answer: "Building the two-column co-occurrence table before writing a sentence, classifying every row as causal, responsive or simultaneous only, and carrying at least two dated pairs from it into the finished piece with no connective between them.",
+        },
+        {
+          prompt: "What three questions must you answer in your notes after building the budget table?",
+          answer: "What share the Black community paid, compared to the national figure of about 16.5 percent and to your state's figure. What is in the Whites column, and whether a zero there is evidence about the requirement. And what the card does not say, which is the part of the research that is not yet done.",
+        },
+        {
+          prompt: "State the rule about how the piece may end.",
+          answer: "No triumph-only version. You may not close on the lumber, the box party, the acre of cotton or the restoration ribbon. If the last paragraph makes a reader feel better than the fourth paragraph did, check whether you moved a fact or only moved it later.",
+        },
+        {
+          prompt: "What must a piece do besides naming what was taken?",
+          answer: "Credit what was built, in the same piece: name the plan, the builder if the record names one, the teachers, the fundraiser, and the people restoring the building now. A piece that inventories only what was done to people is an incomplete report.",
+        },
+        {
+          prompt: "What are the rules about living people and about children?",
+          answer: "Living people describe themselves: quote a published interview with a citation or interview somebody and say you did, never assigning words, feelings or motives. And children are not public figures: no named child, no photograph tied to a name, no address, even if the building is a school or community centre today.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
