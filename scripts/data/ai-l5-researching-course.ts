@@ -324,10 +324,10 @@ If you can't trace a claim back to a verified source, it isn't ready to publish.
           {
             prompt: "What is the single biggest risk when using AI for research?",
             options: [
-              "It writes too slowly",
-              "It can fabricate real-looking citations to sources that don't exist",
-              "It refuses to answer questions",
-              "It uses too many big words",
+              "It writes a great deal too slowly to be of any use in research",
+              "It can fabricate real-looking citations to sources that do not exist",
+              "It simply refuses to answer any of the questions that you ask",
+              "It uses far too many long and difficult words in every answer",
             ],
             correctIndex: 1,
             explanation:
@@ -337,10 +337,10 @@ If you can't trace a claim back to a verified source, it isn't ready to publish.
           {
             prompt: "Can a hallucinated citation have a valid-looking DOI?",
             options: [
-              "No, a DOI proves a source is real",
-              "Yes, and it may resolve to a completely different article",
-              "Only for very old papers",
-              "Only if the AI is offline",
+              "No, because a DOI proves that a source must be real",
+              "Yes, and it may resolve to a different article entirely",
+              "Only ever for genuinely very old academic papers",
+              "Only if the AI model happens to be running offline",
             ],
             correctIndex: 1,
             explanation:
@@ -350,10 +350,10 @@ If you can't trace a claim back to a verified source, it isn't ready to publish.
           {
             prompt: "What's the one action that catches most fake AI citations?",
             options: [
-              "Ask the AI if it's sure",
-              "Open the link and confirm it shows the claimed title, authors, and content",
-              "Count the references",
-              "Reword the citation",
+              "Ask the AI whether it is quite sure about them",
+              "Open the link and confirm the title and authors match",
+              "Count up the total number of references it gave",
+              "Reword the citation into some other citation style",
             ],
             correctIndex: 1,
             explanation:
@@ -371,10 +371,10 @@ If you can't trace a claim back to a verified source, it isn't ready to publish.
           {
             prompt: "What is \"lateral reading\"?",
             options: [
-              "Reading a source twice",
-              "Opening new tabs to see what independent sources say about a source",
-              "Skimming only the abstract",
-              "Reading from the bottom up",
+              "Reading through the very same source twice over again",
+              "Opening new tabs to see what other sources say about it",
+              "Skimming through only the abstract of the article",
+              "Reading the whole article from the bottom upwards",
             ],
             correctIndex: 1,
             explanation:
@@ -392,10 +392,10 @@ If you can't trace a claim back to a verified source, it isn't ready to publish.
           {
             prompt: "Why can't you safely use an AI to verify its own answer?",
             options: [
-              "It costs extra",
-              "The tool that may have hallucinated can't reliably catch its own hallucination",
-              "It's against the law",
-              "It always says yes",
+              "It costs a good deal of extra money to do it that way",
+              "The tool that hallucinated cannot reliably catch itself",
+              "It is actually against the law to do it that way",
+              "It will always simply say yes to whatever you ask",
             ],
             correctIndex: 1,
             explanation:
@@ -405,10 +405,10 @@ If you can't trace a claim back to a verified source, it isn't ready to publish.
           {
             prompt: "Even when nothing is fabricated, an AI summary can mislead by…",
             options: [
-              "Being too short to read",
-              "Dropping caveats like 'small,' 'preliminary,' or 'correlation, not causation'",
-              "Using a different font",
-              "Citing too many sources",
+              "Being far too short for anyone to be worth reading",
+              "Dropping caveats like 'small' or 'preliminary' from it",
+              "Using a completely different typeface throughout",
+              "Citing far too many different sources all at once",
             ],
             correctIndex: 1,
             explanation:
@@ -418,10 +418,10 @@ If you can't trace a claim back to a verified source, it isn't ready to publish.
           {
             prompt: "In APA Style, who is listed as the author when you cite ChatGPT?",
             options: [
-              "ChatGPT",
-              "The company that made it (e.g., OpenAI)",
-              "Yourself",
-              "No author is needed",
+              "ChatGPT, the tool itself",
+              "The company that made it, such as OpenAI",
+              "Yourself, as the person prompting",
+              "No author at all is needed here",
             ],
             correctIndex: 1,
             explanation:
@@ -431,10 +431,10 @@ If you can't trace a claim back to a verified source, it isn't ready to publish.
           {
             prompt: "What is a \"source trail,\" and why keep one?",
             options: [
-              "A list of AI prompts you used",
-              "A record of where each claim came from (URL/DOI, date, what it says) so you can prove how you know it",
-              "The browser history",
-              "A bibliography of books you own",
+              "A list of all of the AI prompts that you have used",
+              "A record of where each claim came from, and what it says",
+              "The browser history left over from your research",
+              "A bibliography of all of the books that you own",
             ],
             correctIndex: 1,
             explanation:

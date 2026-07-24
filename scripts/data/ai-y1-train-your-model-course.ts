@@ -478,10 +478,10 @@ You've gone from "AI is magic" to training, testing, and thinking hard about a m
           {
             prompt: "In ML terms, what is a \"label\"?",
             options: [
-              "A clue the model looks at, like color",
-              "The right-answer category you're teaching, like 'apple'",
-              "A bug in the model",
-              "The webcam button",
+              "A clue the model looks at, such as the colour",
+              "The right-answer category you are teaching it",
+              "A bug found inside the trained model",
+              "The button that turns the webcam on",
             ],
             correctIndex: 1,
             explanation: "A label is the correct answer/category. A feature is a clue the model looks at. You supply both while training.",
@@ -490,10 +490,10 @@ You've gone from "AI is magic" to training, testing, and thinking hard about a m
           {
             prompt: "\"Garbage in, garbage out\" means…",
             options: [
-              "A faster computer always makes a smarter model",
-              "A model is only as good as the examples you train it on",
-              "You should delete your training data when done",
-              "Models work better with no examples",
+              "A faster computer always makes for a smarter model",
+              "A model is only as good as the examples you give it",
+              "You should delete your training data once you are done",
+              "Models always work better with no examples at all",
             ],
             correctIndex: 1,
             explanation: "Messy, lopsided, or wrong training data makes a bad model. Good, balanced, varied data makes a better one.",
@@ -502,10 +502,10 @@ You've gone from "AI is magic" to training, testing, and thinking hard about a m
           {
             prompt: "Using Teachable Machine, what do you need to start training an image model?",
             options: [
-              "A paid account and a coding background",
-              "Nothing but a browser: it's free, no code, and no account needed",
-              "Special hardware you have to buy",
-              "Permission from Google for each project",
+              "A paid account and a background in coding",
+              "Nothing but a browser; it is free and needs no code",
+              "Some special hardware that you have to buy",
+              "Permission from Google for every single project",
             ],
             correctIndex: 1,
             explanation: "Teachable Machine is free and runs in your browser with no coding or account; your data stays on your device.",
@@ -533,10 +533,10 @@ You've gone from "AI is magic" to training, testing, and thinking hard about a m
           {
             prompt: "Why might a face-recognition model work worse for some groups of people?",
             options: [
-              "The model dislikes them on purpose",
-              "Its training data didn't include enough examples of them (bias)",
-              "Faces are impossible for any model",
-              "It ran out of battery",
+              "The model dislikes those people on purpose",
+              "Its training data did not include enough of them",
+              "Faces are simply impossible for any model",
+              "It had simply run out of battery power",
             ],
             correctIndex: 1,
             explanation: "Bias comes from lopsided or non-inclusive training data, not malice. Fair, inclusive examples reduce it.",
@@ -546,9 +546,9 @@ You've gone from "AI is magic" to training, testing, and thinking hard about a m
             prompt: "Which of these is a real-world example of a trained model, 'features in, label out'?",
             options: [
               "A spam filter sorting junk from real email",
-              "A light switch turning on",
-              "A calculator adding two numbers",
-              "A printed paper map",
+              "A light switch being turned on and off",
+              "A calculator adding two numbers together",
+              "A printed paper map of the local area",
             ],
             correctIndex: 0,
             explanation: "A spam filter is trained on example emails to classify junk vs. real: the same idea as your image model, scaled up.",
@@ -557,10 +557,10 @@ You've gone from "AI is magic" to training, testing, and thinking hard about a m
           {
             prompt: "A model gives a confident guess. Confidence means…",
             options: [
-              "It is definitely correct",
-              "How sure the model is, which is NOT the same as being right",
-              "The model is broken",
-              "It has finished training",
+              "It is definitely correct in every case",
+              "How sure it is, which is not the same as right",
+              "The model itself is broken somehow",
+              "It has finished all of its training",
             ],
             correctIndex: 1,
             explanation: "Confidence is how sure the model is, shown as a percent. A model can be 99% confident and still wrong.",
@@ -569,10 +569,10 @@ You've gone from "AI is magic" to training, testing, and thinking hard about a m
           {
             prompt: "Which is the most responsible, honest way to share a model you trained?",
             options: [
-              "Say 'my AI is never wrong' to impress people",
-              "Be honest about its accuracy and limits, and respect people's data and consent",
+              "Say 'my AI is never wrong' so as to impress people",
+              "Be honest about its accuracy and limits, and get consent",
               "Use it to secretly decide who looks 'trustworthy'",
-              "Train it on classmates' photos without asking",
+              "Train it on your classmates' photos without asking",
             ],
             correctIndex: 1,
             explanation: "Honest about accuracy and limits, used where it helps not harms, and respectful of people's data and consent.",

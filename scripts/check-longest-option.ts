@@ -109,12 +109,6 @@ function longestStrategyValue(lens: number[], correct: number): { value: number;
 const GRANDFATHERED: Record<string, number> = {
   "scripts/data/africa-before-colonization-course.ts": 1.00,
   "scripts/data/afrocentricity-course.ts": 1.00,
-  "scripts/data/ai-building-course.ts": 0.85,
-  "scripts/data/ai-l3-ethics-course.ts": 0.86,
-  "scripts/data/ai-l4-privacy-security-course.ts": 0.80,
-  "scripts/data/ai-l5-researching-course.ts": 0.85,
-  "scripts/data/ai-y1-train-your-model-course.ts": 0.78,
-  "scripts/data/ai-young-makers-course.ts": 0.86,
   "scripts/data/asia-before-european-colonization-course.ts": 1.00,
   "scripts/data/baltimore-chain-course.ts": 0.97,
   "scripts/data/banking-abroad-course.ts": 1.00,

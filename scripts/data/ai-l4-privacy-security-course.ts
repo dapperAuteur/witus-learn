@@ -316,10 +316,10 @@ You won't be invisible, and that's not the goal. The goal is **control and resil
           {
             prompt: "Which best describes \"personal data\"?",
             options: [
-              "Only your name and Social Security number",
-              "Any information that can be tied to you, directly or by combining clues",
-              "Only data marked 'confidential'",
-              "Only data you posted publicly",
+              "Only your name and your Social Security number",
+              "Any information that can be tied back to you at all",
+              "Only the data that is marked 'confidential'",
+              "Only the data that you posted publicly online",
             ],
             correctIndex: 1,
             explanation: "Personal data is broad: identifiers, sensitive data, and the quiet trails (searches, location, device IDs) that together identify you.",
@@ -352,10 +352,10 @@ You won't be invisible, and that's not the goal. The goal is **control and resil
           {
             prompt: "The OWASP Top 10 risk about PII, credentials, and confidential data leaking through an LLM is called…",
             options: [
-              "Prompt Injection",
+              "Prompt Injection of untrusted text",
               "Sensitive Information Disclosure",
-              "Model Theft",
-              "Denial of Service",
+              "Model Theft by an outside party",
+              "Denial of Service against the model",
             ],
             correctIndex: 1,
             explanation: "LLM02:2025 Sensitive Information Disclosure: data can leak both into a model and out through its answers.",
@@ -376,10 +376,10 @@ You won't be invisible, and that's not the goal. The goal is **control and resil
           {
             prompt: "Why can \"anonymized\" data still be traced back to a person?",
             options: [
-              "Anonymizing is illegal",
-              "Stripped data can be re-identified by combining it with other data",
-              "Companies always keep a secret name list",
-              "It can't: anonymized means untraceable",
+              "Anonymising the data is actually illegal",
+              "Stripped data can be re-identified from other data",
+              "Companies always keep a secret list of the names",
+              "It cannot be; anonymised means wholly untraceable",
             ],
             correctIndex: 1,
             explanation: "Re-identification: a few location points or an overlaid dataset can single you out. 'Anonymized' is not 'untraceable.'",
@@ -388,10 +388,10 @@ You won't be invisible, and that's not the goal. The goal is **control and resil
           {
             prompt: "What is a \"data broker\"?",
             options: [
-              "A bank that trades stocks",
-              "A company that collects and sells profiles built from your data, often without your knowledge",
-              "A government privacy office",
-              "A type of password manager",
+              "A kind of bank that trades in stocks",
+              "A company that collects and sells profiles of you",
+              "A government office that handles privacy",
+              "A particular type of password manager",
             ],
             correctIndex: 1,
             explanation: "The FTC found data brokers hold billions of data elements on nearly every household, largely behind the scenes.",
@@ -400,10 +400,10 @@ You won't be invisible, and that's not the goal. The goal is **control and resil
           {
             prompt: "Why is a REUSED password especially dangerous?",
             options: [
-              "It's harder to remember",
-              "One site's breach lets attackers log into all your other accounts with the same password",
-              "It expires faster",
-              "It can't be used with MFA",
+              "It is a good deal harder to remember",
+              "One site's breach opens every other account you own",
+              "It expires a great deal faster than others",
+              "It cannot be used together with MFA at all",
             ],
             correctIndex: 1,
             explanation: "Credential stuffing: a unique password per account (via a password manager) contains the damage to one site.",
@@ -412,10 +412,10 @@ You won't be invisible, and that's not the goal. The goal is **control and resil
           {
             prompt: "Someone 'from your bank' calls and asks you to read back the code they just texted. You should…",
             options: [
-              "Read it back quickly so they can verify you",
-              "Refuse, hang up, and call the bank back on a number you already have",
-              "Text the code to be safe",
-              "Give them only half the code",
+              "Read it back quickly so that they can verify you",
+              "Refuse, hang up, and call back on a number you have",
+              "Text the code over to them just to be safe",
+              "Give them only the first half of the code",
             ],
             correctIndex: 1,
             explanation: "A request to share an MFA code is the scam. Verify on a trusted channel: hang up and call back. Pressure is the attack.",

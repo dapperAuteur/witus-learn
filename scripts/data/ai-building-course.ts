@@ -445,10 +445,10 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
           {
             prompt: "What's the safest way to think of an AI model inside a system you're building?",
             options: [
-              "A reliable database you can trust",
-              "A probabilistic component you wrap in validation and fallbacks",
-              "A source of verified facts",
-              "A deterministic function",
+              "A reliable database that you can simply trust",
+              "A probabilistic component wrapped in validation",
+              "A dependable source of verified facts",
+              "A plain deterministic function call",
             ],
             correctIndex: 1,
             explanation:
@@ -474,10 +474,10 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
           {
             prompt: "What's the key difference between an automation (workflow) and an agent?",
             options: [
-              "Agents are always cheaper",
-              "An automation follows a fixed, predefined path; an agent lets the model decide which steps/tools to use",
-              "Automations can't call AI",
-              "Agents never make mistakes",
+              "Agents are always a good deal cheaper to run than one",
+              "An automation follows a fixed path; an agent decides its own",
+              "Automations are not able to call an AI model at all",
+              "Agents never make any mistakes at all, ever, anywhere",
             ],
             correctIndex: 1,
             explanation:
@@ -487,10 +487,10 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
           {
             prompt: "Why does giving an agent more autonomy and broader tools increase risk?",
             options: [
-              "It uses fewer tokens",
-              "More autonomy means more ways to go wrong; OWASP names 'excessive agency' as a risk, apply least privilege",
-              "It makes the model deterministic",
-              "It removes the need for validation",
+              "Because it ends up using rather fewer tokens per run",
+              "More autonomy means more ways to go wrong; least privilege",
+              "Because it makes the model's output fully deterministic",
+              "Because it removes any need for output validation",
             ],
             correctIndex: 1,
             explanation:
@@ -500,10 +500,10 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
           {
             prompt: "What does RAG (Retrieval-Augmented Generation) let you do?",
             options: [
-              "Retrain the model on your data each time",
-              "Retrieve relevant passages and put them in the prompt so the model answers grounded in your content, citably",
-              "Make the model deterministic",
-              "Remove the need for evaluation",
+              "Retrain the model on all of your data each time",
+              "Retrieve relevant passages and put them into the prompt",
+              "Make the model completely deterministic",
+              "Remove the need for any evaluation at all",
             ],
             correctIndex: 1,
             explanation:
@@ -513,10 +513,10 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
           {
             prompt: "Which is the OWASP #1 risk for LLM applications, and the habit that defends against it?",
             options: [
-              "Slow responses; add caching",
-              "Prompt injection; treat all model input/output as untrusted and validate it",
-              "High cost; use a smaller model",
-              "Bias; retrain the model",
+              "Slow responses; add a caching layer to fix it",
+              "Prompt injection; treat input and output as untrusted",
+              "High cost; switch to a smaller and cheaper model",
+              "Bias; retrain the model on better data",
             ],
             correctIndex: 1,
             explanation:
@@ -526,10 +526,10 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
           {
             prompt: "Why build a test set (eval set) for an AI feature?",
             options: [
-              "Models are deterministic, so one test is enough",
-              "Because output is probabilistic, an eval set catches regressions when you change the prompt or model",
-              "It eliminates the need for guardrails",
-              "It lowers token cost",
+              "Models are deterministic, so one single test is enough",
+              "Because output is probabilistic, it catches regressions",
+              "It eliminates any need for guardrails at all",
+              "It lowers the token cost of every call",
             ],
             correctIndex: 1,
             explanation:
@@ -539,10 +539,10 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
           {
             prompt: "Where should your model API key live when you deploy?",
             options: [
-              "In the client-side code",
-              "Committed to git for the team",
-              "In server-side environment variables, never in client code or git history",
-              "In the prompt",
+              "Inside the client-side application code itself",
+              "Committed into git so the whole team can use it",
+              "In server-side environment variables, never in git",
+              "Inside the prompt text that you send each time",
             ],
             correctIndex: 2,
             explanation:
@@ -552,10 +552,10 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
           {
             prompt: "You're estimating what an AI feature will cost at scale. What do you multiply?",
             options: [
-              "Lines of code × developers",
-              "Tokens per request × requests per day × the model's per-token price",
-              "Number of users × subscription fee",
-              "Prompts × temperature",
+              "Lines of code times the total number of developers",
+              "Tokens per request, times requests per day, times price",
+              "Number of users times your monthly subscription fee",
+              "Number of prompts times the sampling temperature",
             ],
             correctIndex: 1,
             explanation:
