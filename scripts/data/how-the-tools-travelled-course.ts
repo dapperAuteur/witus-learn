@@ -1522,6 +1522,386 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · The Federal Footprint  (the same upstream acting as OWNER, not as funder)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "htt-federal-footprint",
+      title: "17 · Fort Harrison: the same upstream, a different mechanism",
+      section: "Section 5 · The Federal Footprint",
+      body: `Everything so far has shown the federal government in four postures: **funder** of clearance under Title I, **lawmaker** in the Housing and Highway Acts, **rule-writer** in the Underwriting Manual, and **court** in *Berman*, *Milliken* and *Buchanan*. **This lesson adds the fifth, and it is the one people forget: landowner and employer.**
+
+**The site is Fort Benjamin Harrison** in Lawrence, Marion County, Indiana, and the prerequisite Fort Harrison course reads it in full. **Here it is used for one purpose: to show the same upstream working through a completely different set of instruments on the same kind of local ground.**
+
+## Instrument one: another sovereign, and no tax bill
+
+**The constitutional basis.** Article I, Section 8, Clause 17 gives Congress power to exercise authority **"over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings"** (U.S. Const. art. I, § 8, cl. 17). **That is the Enclave Clause.**
+
+**One caution the sibling course insists on and this one repeats.** **Not every federal property is an exclusive-jurisdiction enclave.** Jurisdiction can be exclusive, concurrent, partial or merely proprietary, depending on what the state ceded and what the United States accepted at acquisition. **Neither course has read this post's jurisdictional history, and neither asserts one.**
+
+**The taxation half is simple and enormous.** A state may not tax an instrumentality of the federal government, a principle running back to *McCulloch v. Maryland* (1819). **Federal property does not appear on a county's tax rolls.** The U.S. Department of Education puts the consequence in one sentence when explaining why a school aid programme exists: **"Because federally owned property does not generate taxes, the revenue for the school district is dramatically reduced, but the school district is required to educate the same number of students as before the Federal property was acquired"** (U.S. Department of Education, n.d.).
+
+**Now the arithmetic.** By **1982** the post had over **10,000 civilian and military personnel** and was the **fifth largest employer in Indianapolis**; in the early 1990s it was **the largest employer in Lawrence** with nearly 10,000 employees (Hankins, 2020; Encyclopedia of Indianapolis, n.d.). **The largest employer in the city contributed nothing to the property tax base while generating demand for roads, housing and schools.**
+
+## Instrument two: what a community gets instead of taxes
+
+**Impact Aid**, in Title VII of the Elementary and Secondary Education Act, has two limbs that get confused constantly. **Section 7003** pays for the cost of educating federally connected children. **Section 7002** compensates for the **lost tax base itself**, and only where the federal government acquired the property **since 1938** (U.S. Department of Education, n.d.).
+
+**Read the 1938 cut-off against this post's dates.** The land was bought around **1903 to 1908**. **Whether the district serving it ever qualified under Section 7002 is a question neither course answered, and you should not assume either way.** The applications are filed annually and are public.
+
+## Instruments three and four: closing, and conveying
+
+**Closing.** The **Defense Base Closure and Realignment Act of 1990** built a procedure specifically to defeat the politics of base closure: an independent commission reviews the Secretary of Defense's list against published criteria, sends **one package** to the President, and Congress may reject it **only in its entirety.** **There is no vote on any individual base**, so there is no vote to trade. **When you meet a policy problem where everybody agrees something must be cut and nobody will cut theirs, look for a mechanism that removes the item-by-item vote.**
+
+**Conveying.** Federal surplus property does not simply go on the market. Under the **Federal Property and Administrative Services Act of 1949**, the government must consider **public benefit conveyances**, including for park and natural-resource purposes. In **August 1992** the National Park Service supported a public benefit conveyance here, determining that the land was not suitable as a national park and that preservation should be accomplished by state or local government. In **1995** the Army transferred **1,700 of the roughly 2,500 acres** to the Indiana Department of Natural Resources under an **interim lease** carrying covenants against deforestation, mining, erosion and pollution (Hankins, 2020; National Park Service, n.d.). The remaining ground went to the **Fort Harrison Reuse Authority**, established in 1995 under **Indiana Code 36-7-30**, whose property sits in a **special taxing district** that, unlike an ordinary increment district, is **indefinite** (Fort Harrison Reuse Authority, n.d.; Ind. Code § 36-7-30).
+
+**Ground that paid no property tax for ninety years came back inside a purpose-built taxing instrument.** The tax base did not simply return. **It returned wearing a new legal shape, written by a state legislature.**
+
+## Now grade this against the taxonomy, because that is what this course is for
+
+**Claim A: the Federal Property and Administrative Services Act of 1949 and the Housing Act of 1949 are connected because they are the same year.** **Verdict: rhyme.** Two statutes in one busy postwar Congress is a shared moment, not a documented line between them. **Nothing in this course shows one referring to the other.** It is a genuinely interesting coincidence and it is still a coincidence until somebody produces the paper.
+
+**Claim B: Fort Harrison connects to Indiana Avenue because both are federal decisions imposed on people with no vote in them.** **Verdict: rhyme, and a sharp one.** The DC course made exactly this observation about Southwest, whose residents had no vote in the Congress that authorised their clearance, and it warned against overclaiming, because cities whose residents could vote cleared Black neighbourhoods too. **A shared structural feature across three sites is a pattern worth naming, and it is not transmission.**
+
+**Claim C: the same federal government acted on Lawrence and on Indianapolis, through different instruments.** **Verdict: true, documented, and not a city-to-city connection at all.**
+
+## The distinction this lesson exists to teach
+
+**There are two directions of connection, and this course has been quietly about the difference the whole time.**
+
+- **A horizontal connection runs city to city.** Louisville to Baltimore. Detroit to Indianapolis. Washington to New London. **These are the rare ones, and every one that survived the test in Section 4 survived because a court wrote a citation.**
+- **A vertical connection runs from the upstream to a place.** Title I money to a redevelopment commission. The Underwriting Manual to a valuator. BRAC to a township. **These are everywhere, and they are the true shape of this catalogue.**
+
+**Here is the payoff of the whole course.** **Most of what looks like city-to-city transmission is two vertical lines from the same source, seen edge-on.** Two cities that both took Title I money and both cleared a Black district are not connected to each other. **They are each connected to Washington**, and the resemblance between them is the shadow that casts.
+
+**Fort Harrison is the cleanest possible demonstration**, because it shares no instrument with Indiana Avenue at all. Different statute, different agency, different mechanism, no clearance, no blight designation. **And it is still the same government, doing something decisive to the same county, under law, with local consequences and no local vote.** When two sites that share **nothing** horizontally still look related, **you have found the upstream.**
+
+## One reversal worth keeping
+
+**On Indiana Avenue, historic designation arrived after the decisions that emptied the corridor.** At Fort Harrison the order flips: **the base was listed for closure in 1991, the National Register nomination was prepared in 1993, and the districts were listed in 1995.** **Closure produced the listing.** Preservation follows the decision either way; **only the direction of the following changes.**
+
+## Sources
+- Defense Base Closure and Realignment Act of 1990, Pub. L. No. 101-510, tit. XXIX, 104 Stat. 1808. https://www.govinfo.gov/app/collection/uscode
+- Encyclopedia of Indianapolis. (n.d.). *Lawrence*. https://indyencyclopedia.org/lawrence/
+- Fort Harrison Reuse Authority. (n.d.). *About*. https://www.fhra.org/about/
+- Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
+- Ind. Code § 36-7-30 (Reuse of federal military bases). https://law.justia.com/codes/indiana/title-36/article-7/chapter-30/
+- McCulloch v. Maryland, 17 U.S. (4 Wheat.) 316 (1819).
+- National Park Service. (n.d.). *Reuse of closed military bases (BRAC)*. https://www.nps.gov/orgs/1508/base-realignment-and-closure.htm
+- U.S. Const. art. I, § 8, cl. 17.
+- U.S. Department of Education. (n.d.). *Impact Aid Section 7002: Payments for federal property*. https://www.ed.gov/grants-and-programs/formula-grants/impact-aid/impact-aid-section-7002--payments-for-federal-property`,
+      recallContent: [
+        {
+          prompt: "What two documents does the person-to-place category demand?",
+          answer: "The individual documented in both places with dates, and the practice documented in their hands. A career summary is not enough: \"he worked in city A and later in city B\" tells you he moved, not that anything moved with him.",
+        },
+        {
+          prompt: "What is documented about Harland Bartholomew?",
+          answer: "That he produced some 500 plans for cities, counties, regions and states across more than 6,000 projects, and that in 1953 President Eisenhower appointed him chairman of the National Capital Planning Commission. His firm's reports at Cornell cover twenty states plus the District of Columbia, including Indiana and Kentucky.",
+        },
+        {
+          prompt: "Which date kills the Bartholomew edge to Southwest DC?",
+          answer: "The Area B renewal plan for Southwest was approved by the end of 1952, and he was appointed to chair the National Capital Planning Commission in 1953. He cannot be the author of a plan approved before he arrived.",
+        },
+        {
+          prompt: "What survives of the Bartholomew claim, stated narrowly?",
+          answer: "That for seven years one man chaired the federal planning commission for the national capital while running a firm writing comprehensive plans for hundreds of jurisdictions across at least twenty states. That is a real channel through which planning practice moved, and a channel is a road, not proof that a particular vehicle drove down it.",
+        },
+        {
+          prompt: "What is the warning about famous names?",
+          answer: "A famous name is the most seductive evidence there is, because the career is easy to verify and the causation is not, and a reader will accept the second because you demonstrated the first. Verify the biography, then test the link separately. They are two different jobs.",
+        },
+      ],
+    },
+    {
+      slug: "htt-map",
+      title: "18 · Map: the graph, drawn once",
+      section: "Section 5 · The Federal Footprint",
+      body: `**Plan 42 asked for this map in one sentence: the connections are a graph, not a list.** This lesson draws it, and the drawing itself makes an argument you can see faster than you can read it.
+
+**Read the limits first, because they are part of the lesson.** This platform's lesson map draws the whole world, so two points need roughly two degrees of separation, on the order of 200 kilometres, before they look like two points. **A cleared district is far smaller than one dot.** So nothing here is a site map. **For a parcel, use the jurisdiction's own assessor and geographic information system**, as the city courses taught you to.
+
+## How to read it
+
+**Purple, at the Capitol: the upstream.** One marker stands for the whole of Section 2: the Housing Acts of 1949 and 1954, the FHA Underwriting Manual, the Federal-Aid Highway Act of 1956, and the Court that decided *Berman*.
+
+**Blue: source nodes.** Places where a tool was authorised or, in Pittsburgh's case, claimed to have been. **Pittsburgh is drawn in the same colour as the others and it does not have the same standing**, which lesson 14 explained and this map cannot show, so read the description before you believe the colour.
+
+**Amber: use nodes.** Places where a tool was applied.
+
+**Green: the federal footprint, and an unopened archive.** Fort Benjamin Harrison, where the upstream owned the ground rather than funding it, and the Cornell collection that could close the person-to-place category.
+
+## The lines, and what a line means here
+
+**A dashed line on this map is a documented edge and nothing else is drawn.** Every line below survived all four questions in a lesson of this course.
+
+**Teal, horizontal, city to city. There are only three, and that is the finding.**
+- **Louisville to Baltimore**, because *Buchanan* ended a class of ordinances and Baltimore's died with it.
+- **Detroit to Indianapolis**, because the Seventh Circuit named *Milliken* and reversed in accordance with it.
+- **Washington to New London and to Honolulu**, because *Kelo* and *Midkiff* cite *Berman* in writing.
+
+**Purple, vertical, upstream to place.** Title I money, the Underwriting Manual, the highway match and the base-closure statute reached every marker on this map, and six of those lines are drawn so you can see the shape.
+
+**Now look at the picture and say what it is.** **It is a star, not a web.** The dense part of this graph is not the cities talking to each other. **It is one hub reaching all of them.** Every horizontal line on this map exists because a judge wrote a citation, and there are three of them. **Everything else that looks like a link between two cities is two spokes of the same wheel, seen from the side.**
+
+## What this map cannot show, and will not pretend to
+
+- **It cannot show a rhyme**, and it deliberately does not try. Indiana Avenue and the Hill District rhyme powerfully and there is no line between them, because none is documented. **The absence of a line is a claim, and it is the claim this course spent six sections earning.**
+- **It cannot show absence.** Every marker exists because something was recorded. **How many districts were cleared under these instruments and never written up is a question this course cannot answer and will not guess at.**
+- **Coordinates here are approximate points, not surveyed locations.** Do not use them to find an address.
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Buchanan v. Warley, 245 U.S. 60 (1917). https://supreme.justia.com/cases/federal/us/245/60/
+- Kelo v. City of New London, 545 U.S. 469 (2005). https://www.law.cornell.edu/supremecourt/text/04-108
+- Milliken v. Bradley, 418 U.S. 717 (1974). https://www.law.cornell.edu/supremecourt/text/418/717
+- United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). https://www.courtlistener.com/opinion/321692/united-states-of-america-donny-brurell-buckley-intervening-v-board-of/`,
+      mapContent: {
+        markers: [
+          {
+            id: "htt-upstream",
+            lat: 38.8899,
+            lng: -77.0091,
+            title: "The federal upstream, Washington, D.C.",
+            color: "#7e22ce",
+            description:
+              "One marker for the whole of Section 2. The Housing Act of 1949 (63 Stat. 413) created the national money for clearance and paid up to two thirds of net project cost. The Housing Act of 1954 (68 Stat. 590) renamed the programme urban renewal and made aid conditional on a workable program. The FHA Underwriting Manual set the terms on which private mortgage capital would and would not enter a neighbourhood. The Federal-Aid Highway Act of 1956 renamed the system the National System of Interstate and Defense Highways, set the federal share at 90 percent and created the Highway Trust Fund. And the Court that decided Berman v. Parker sat here. Nearly every resemblance between the other markers on this map runs through this one.",
+          },
+          {
+            id: "htt-southwest-dc",
+            lat: 38.878,
+            lng: -77.021,
+            title: "Southwest Washington, D.C.: the source of Berman",
+            color: "#1d4ed8",
+            description:
+              "Where the blight-clearance instrument was made constitutionally safe. Berman v. Parker, 348 U.S. 26, decided 22 November 1954 by a unanimous Court, held that a redevelopment area may be taken as a whole rather than piecemeal and that the cleared land may be conveyed to a private developer. The plaintiff owned a department store at 712 Fourth Street S.W., not a home. Prerequisite course: Washington, DC: Where the Instrument Was Blessed.",
+          },
+          {
+            id: "htt-detroit",
+            lat: 42.3314,
+            lng: -83.0458,
+            title: "Detroit, Michigan: the source of Milliken",
+            color: "#1d4ed8",
+            description:
+              "Milliken v. Bradley, 418 U.S. 717, decided 25 July 1974, held that before school district boundaries may be set aside for a cross-district remedy it must be shown that a violation in one district produced a significant segregative effect in another. Its own escape clause, for lines deliberately drawn on the basis of race, is the door Indianapolis went through. This is the source node with the cleanest documented use in the whole catalogue.",
+          },
+          {
+            id: "htt-louisville",
+            lat: 38.2527,
+            lng: -85.7585,
+            title: "Louisville, Kentucky: the source of Buchanan",
+            color: "#1d4ed8",
+            description:
+              "Buchanan v. Warley, 245 U.S. 60 (1917), struck down Louisville's racial zoning ordinance under the Fourteenth Amendment because it interfered with an owner's right to sell property, and ended the whole class of laws nationally. Plan 42 predicted that Louisville and Baltimore would be a pair before either course existed, and the edge survived the test. Harland Bartholomew's firm also wrote the 1957 Louisville-Jefferson County comprehensive plan, which is where the person-to-place hunt in lesson 15 starts.",
+          },
+          {
+            id: "htt-pittsburgh",
+            lat: 40.4419,
+            lng: -79.9846,
+            title: "Lower Hill District, Pittsburgh: the contested model node",
+            color: "#1d4ed8",
+            description:
+              "Read the description before you believe the colour. Pittsburgh assembled the public-private redevelopment machine early (Allegheny Conference 1944, Pennsylvania law 1945, URA incorporated November 1946) and more than seventy delegations came to study the Renaissance. But the sibling course found that what they came for was the partnership and the downtown clean-up, and that the clearance instruments spread through the federal Housing Act of 1949 and parallel state laws instead. True as to emulation, false as to a copy-chain. No line is drawn from this marker.",
+          },
+          {
+            id: "htt-indiana-avenue",
+            lat: 39.7745,
+            lng: -86.1665,
+            title: "Indiana Avenue, Indianapolis, Indiana",
+            color: "#b45309",
+            description:
+              "The pilot course's corridor, and the use node this series was built around. A blight designation and land assembly, not the highway, emptied it. Indiana's own blight machinery dates from 1945 and demolition near the Avenue began in 1948, so Berman did not cause the clearance; it removed the constitutional argument against it in November 1954. The one line drawn to this marker comes from Detroit, because the Seventh Circuit applied Milliken here by name in August 1974.",
+          },
+          {
+            id: "htt-baltimore",
+            lat: 39.293,
+            lng: -76.645,
+            title: "Old West Baltimore and the Highway to Nowhere",
+            color: "#b45309",
+            description:
+              "The city that holds every link of the chain inside its own limits: four racial zoning ordinances between 1910 and 1913, restrictive covenants from 1913, a canonical redlining map, and an expressway driven partway through West Baltimore and abandoned. The line from Louisville is real: Buchanan made these ordinances unenforceable. The line people expect, from zoning to covenants, is not drawn, because Guilford's covenant is four years older than Buchanan.",
+          },
+          {
+            id: "htt-seattle",
+            lat: 47.6069,
+            lng: -122.3009,
+            title: "Central District, Seattle, Washington",
+            color: "#b45309",
+            description:
+              "The other end of a doctrine pair, and deliberately not joined to Detroit by a line. Parents Involved in Community Schools v. Seattle School District No. 1 (2007) limited what a district may voluntarily choose to do with race in assignment, in a district the opinion records had never operated legally separate schools nor been subject to court-ordered desegregation. Milliken limits compulsion; this limits choice. Reading them together is illuminating, and this course did not verify a citation chain, so no edge is drawn.",
+          },
+          {
+            id: "htt-new-london",
+            lat: 41.348,
+            lng: -72.093,
+            title: "Fort Trumbull, New London, Connecticut",
+            color: "#b45309",
+            description:
+              "Where the Berman standard arrived in 2005. Kelo v. City of New London allowed the taking of well-maintained, non-blighted homes for a private economic-development plan, citing Berman and Midkiff. This is the cleanest documented edge running out of Washington in the whole catalogue, and it is cleaner than the DC-to-Indianapolis edge the series was built around, because the receiving court wrote the citation down.",
+          },
+          {
+            id: "htt-honolulu",
+            lat: 21.3069,
+            lng: -157.8583,
+            title: "Honolulu, Hawaii",
+            color: "#b45309",
+            description:
+              "Hawaii Housing Authority v. Midkiff, 467 U.S. 229 (1984), upheld a state law compelling large landowners to sell to their tenants, relying on Berman for a public-use requirement satisfied whenever a taking is rationally related to a conceivable public purpose. A second citation edge out of Southwest Washington, and a reminder that the instrument travelled to uses very unlike slum clearance.",
+          },
+          {
+            id: "htt-philadelphia",
+            lat: 39.956,
+            lng: -75.1935,
+            title: "Black Bottom and University City, Philadelphia, Pennsylvania",
+            color: "#b45309",
+            description:
+              "A use node where a university assembled land through a redevelopment authority, the same three-part mechanism of designation, condemnation and conveyance the Section 2 statutes paid for. No horizontal line is drawn to this marker. That is the point of the map: the connection is vertical, to the upstream, not sideways to another city.",
+          },
+          {
+            id: "htt-fort-harrison",
+            lat: 39.8598,
+            lng: -86.0169,
+            title: "Fort Benjamin Harrison, Lawrence, Marion County, Indiana",
+            color: "#15803d",
+            description:
+              "The same upstream acting as landowner and employer rather than funder. Roughly 2,400 acres off the tax rolls under the Enclave Clause and McCulloch v. Maryland, the largest employer in Lawrence, closed by a commission designed so that no member of Congress could vote on any individual base, and conveyed under the Federal Property and Administrative Services Act of 1949 into a state park and a reuse authority with an indefinite special taxing district. It shares no instrument with Indiana Avenue and is still the same government acting on the same county.",
+          },
+          {
+            id: "htt-cornell-archive",
+            lat: 42.4475,
+            lng: -76.4844,
+            title: "Harland Bartholomew and Associates reports, Cornell University Library",
+            color: "#15803d",
+            description:
+              "The unopened box. Collection 6400, 6.4 cubic feet of planning reports from 1944 to 1990, documenting the firm's work across twenty states plus the District of Columbia, including Indiana and Kentucky. It has not been read into this course. The person-to-place category in the taxonomy is open, and this is the nearest place a researcher could go to close it.",
+          },
+        ],
+        lines: [
+          {
+            id: "htt-edge-louisville-baltimore",
+            color: "#0f766e",
+            title: "Buchanan v. Warley (1917): Louisville to Baltimore",
+            description: "Source to use. A Louisville case ended the class of racial zoning ordinances nationally, and Baltimore's four ordinances became unenforceable rather than repealed.",
+            coords: [
+              [38.2527, -85.7585],
+              [39.293, -76.645],
+            ],
+          },
+          {
+            id: "htt-edge-detroit-indianapolis",
+            color: "#0f766e",
+            title: "Milliken v. Bradley (1974): Detroit to Indianapolis",
+            description: "Source to use, and the strongest edge in the course. The Seventh Circuit named Milliken and reversed the metropolitan remedy beyond Uni-Gov in accordance with it, weeks after it was decided.",
+            coords: [
+              [42.3314, -83.0458],
+              [39.7745, -86.1665],
+            ],
+          },
+          {
+            id: "htt-edge-dc-new-london",
+            color: "#0f766e",
+            title: "Berman v. Parker (1954): Southwest Washington to New London",
+            description: "Source to use. Kelo v. City of New London cited Berman and Midkiff in allowing the taking of well-maintained, non-blighted homes for a private economic-development plan.",
+            coords: [
+              [38.878, -77.021],
+              [41.348, -72.093],
+            ],
+          },
+          {
+            id: "htt-edge-dc-honolulu",
+            color: "#0f766e",
+            title: "Berman v. Parker (1954): Southwest Washington to Honolulu",
+            description: "Source to use. Hawaii Housing Authority v. Midkiff relied on Berman for a public-use requirement satisfied by any rational relation to a conceivable public purpose.",
+            coords: [
+              [38.878, -77.021],
+              [21.3069, -157.8583],
+            ],
+          },
+          {
+            id: "htt-vertical-indianapolis",
+            color: "#7e22ce",
+            title: "The upstream to Indianapolis",
+            description: "Title I money from 1949, the FHA Underwriting Manual before it, and the highway match after it. A vertical line, and the reason Indianapolis needed no city's example.",
+            coords: [
+              [38.8899, -77.0091],
+              [39.7745, -86.1665],
+            ],
+          },
+          {
+            id: "htt-vertical-pittsburgh",
+            color: "#7e22ce",
+            title: "The upstream to Pittsburgh",
+            description: "The Lower Hill clearance rode Title I federal grants like everyone else's, which is why the sibling course concluded that what spread nationally was federal rather than Pittsburgh's example.",
+            coords: [
+              [38.8899, -77.0091],
+              [40.4419, -79.9846],
+            ],
+          },
+          {
+            id: "htt-vertical-baltimore",
+            color: "#7e22ce",
+            title: "The upstream to Baltimore",
+            description: "The FHA Underwriting Manual's racial underwriting rules, Title I renewal money, and the highway programme that paid for the trench through West Baltimore.",
+            coords: [
+              [38.8899, -77.0091],
+              [39.293, -76.645],
+            ],
+          },
+          {
+            id: "htt-vertical-seattle",
+            color: "#7e22ce",
+            title: "The upstream to Seattle",
+            description: "Federal underwriting rules that endorsed the racial covenant, and the federal courts that later bounded what a school district could compel and what it could choose.",
+            coords: [
+              [38.8899, -77.0091],
+              [47.6069, -122.3009],
+            ],
+          },
+          {
+            id: "htt-vertical-philadelphia",
+            color: "#7e22ce",
+            title: "The upstream to Philadelphia",
+            description: "Designation, condemnation and conveyance to a redeveloper, the three-part mechanism Title I paid two thirds of and Berman made constitutionally safe.",
+            coords: [
+              [38.8899, -77.0091],
+              [39.956, -75.1935],
+            ],
+          },
+          {
+            id: "htt-vertical-fort-harrison",
+            color: "#7e22ce",
+            title: "The upstream to Fort Harrison",
+            description: "A different set of instruments entirely: the Enclave Clause, the tax exemption, base closure under the 1990 Act, and conveyance under the Federal Property and Administrative Services Act of 1949.",
+            coords: [
+              [38.8899, -77.0091],
+              [39.8598, -86.0169],
+            ],
+          },
+        ],
+      },
+      recallContent: [
+        {
+          prompt: "Name the fifth federal posture this course adds, and the four that came before it.",
+          answer: "Landowner and employer. The earlier four are funder of clearance under Title I, lawmaker in the Housing and Highway Acts, rule-writer in the Underwriting Manual, and court in Berman, Milliken and Buchanan.",
+        },
+        {
+          prompt: "State the Enclave Clause and the caution that goes with it.",
+          answer: "Article I, Section 8, Clause 17 lets Congress exercise authority over places purchased with a state legislature's consent for forts, magazines, arsenals, dockyards and other needful buildings. The caution is that not every federal property is an exclusive-jurisdiction enclave: jurisdiction may be exclusive, concurrent, partial or proprietary, and neither course has read this post's jurisdictional history.",
+        },
+        {
+          prompt: "Why is base closure structured so that Congress may only reject the whole package?",
+          answer: "Because a member cannot trade a vote to save one installation when there is no vote on any individual base. Ordinary legislation cannot close bases, since any bill naming one attracts an amendment removing it.",
+        },
+        {
+          prompt: "Give the verdicts on the three claims tested in this lesson.",
+          answer: "That the two 1949 statutes are connected by their shared year: rhyme. That Fort Harrison and Indiana Avenue are connected because both were federal decisions imposed on people with no vote in them: rhyme, and a sharp one. That the same federal government acted on Lawrence and on Indianapolis through different instruments: true, documented, and not a city-to-city connection at all.",
+        },
+        {
+          prompt: "State the difference between a horizontal and a vertical connection, and the payoff.",
+          answer: "A horizontal connection runs city to city and is rare; each one that survived did so because a court wrote a citation. A vertical connection runs from the upstream to a place and is everywhere. The payoff: most of what looks like city-to-city transmission is two vertical lines from the same source, seen edge-on.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
