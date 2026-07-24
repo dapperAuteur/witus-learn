@@ -1529,6 +1529,390 @@ Use this on any claim, in any subject.
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Co-occurrence  (the payoff of lesson 1's rule, on one calendar)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wtb-co-occurrence",
+      title: "17 · Same country, same calendar",
+      section: "Section 5 · Co-occurrence",
+      body: `Lesson 1 gave you a rule and asked you to hold it for sixteen lessons. **Here is what it was for.**
+
+## The rule again, before the table, because the table is dangerous without it
+
+**Never use a positive to soften a negative.** The table below is **not** a ledger. **The columns do not cancel.** Nothing on the left side subtracts anything from the right side, and if you read it that way you have read it exactly backwards.
+
+**What the table does is much simpler and much harder to argue with. It shows you two things happening at once.** That is the whole claim. **Co-occurrence, not balance.**
+
+## The calendar
+
+Every line on both sides is sourced in this course.
+
+| Date | What was being built | What was being done |
+|---|---|---|
+| **1888 to 1889** | The True Reformers bank is chartered March 2, 1888 and opens April 3, 1889 in Richmond | |
+| **1899 to 1910** | North Carolina Mutual grows from under 1,000 dollars of business to 250,000 dollars of income, with 200,000 members | |
+| **1903 to 1905** | Walker charters St. Luke Penny Savings on July 28, 1903 and opens the Saint Luke Emporium in April 1905 | Georgia raises capital requirements, wrecking small mutual aid associations, which is why Herndon can buy one in 1905 |
+| **1905 to 1911** | Atlanta Mutual grows from 5,000 dollars of assets | The Saint Luke Emporium closes in 1911, under organised white retailer opposition and Black consumer reluctance |
+| **1906 to 1907** | Gurley buys 40 acres in Tulsa and sells to Black buyers; Mechanics and Farmers is chartered February 25, 1907 | Oklahoma's Senate Bill One, the state's first legislative act, formalises segregation |
+| **1921** | Greenwood holds 108 businesses, 33 professionals, 24 craftspeople and 26 service workers; Citizens Trust opens on Auburn Avenue August 16; Binga takes a state charter | Greenwood is destroyed; roughly 1,400 suits for over 4 million dollars follow, and insurers decline under riot clauses |
+| **1922** | Atlanta Life reaches legal reserve status with over 400,000 dollars of assets; Overton commissions his building on South State Street | |
+| **1929 to 1932** | Supreme Life is formed by merger in 1929 and survives the Depression | Binga State Bank is closed by Illinois auditors July 31, 1930; Douglass National and Victory Life close about 1932 |
+| **1942** | Greenwood holds 242 Black-owned business establishments | |
+| **Late 1950s to late 1960s** | | Interstate 95 through Jackson Ward; the Downtown Connector across Auburn Avenue; NC 147 through Hayti; urban renewal in Bronzeville and Greenwood |
+| **1962 to the 1970s** | | Durham's project ends with 4,057 households and 502 businesses demolished |
+| **1976 to 1998** | Sweet Auburn designated 1976; Jackson Ward listed July 30, 1976 and designated a landmark June 2, 1978; nine Bronzeville properties designated September 9, 1998 | |
+| **2022 and 2026** | M&F Bancorp and Optus Financial announce a merger on July 22, 2026 that would create the largest Black-owned bank in the country | North Carolina Mutual's liquidation is ordered October 11, 2022 |
+
+## Six things to notice, in order of how uncomfortable they are
+
+**1. The columns overlap in the same years, not in different eras.** 1921 has both. 1905 to 1911 has both. **This is not a story of a good period followed by a bad one.** Anyone who teaches it that way has imposed a shape the calendar does not support.
+
+**2. Often the same people.** Maggie Walker opened the Emporium and Maggie Walker closed it. The men who chartered Mechanics and Farmers were the men who ran North Carolina Mutual. **Achievement and loss were not happening to two different populations.**
+
+**3. Designation arrives after demolition, every time.** Look at the 1976 to 1998 row and the row above it. **Sweet Auburn was designated twenty years after the highway. Jackson Ward was listed roughly two decades after the turnpike. Bronzeville's nine properties were designated in 1998.** **Preservation is what a country does to the remainder**, and that is a fact about how designation works, not an accusation against preservationists.
+
+**4. Some of the losses were internal.** The True Reformers bank fell to an embezzlement. Binga was charged with embezzlement. **A course that puts every failure in the right-hand column is lying.** Put them where the evidence puts them.
+
+**5. Some of the achievements are in the present tense.** The last row is 2026. **This is not a closed subject.**
+
+**6. The blank cells are not silence.** Where the right column is empty in this table, the fourteen other courses in this series have it full. **This course did not run out of material; it ran out of its own scope.** Every blank cell has a course behind it.
+
+## Why co-occurrence is a stronger claim than balance, argued properly
+
+**Balance says: the good and the bad averaged out to something.** That claim is false, it is unfalsifiable, and it insults everyone involved.
+
+**Co-occurrence says: at the moment somebody was assembling a legal reserve insurance company, somebody else was writing a riot exclusion into a policy, and both of those were ordinary American commercial activity in the same year.** That claim is **checkable**, it is **specific**, and it does something balance can never do: **it removes the excuse of ignorance.** Nobody in 1921 had to imagine what a Black business district looked like. There was one, it was in the city directory, and its 108 businesses were listed.
+
+**That is why this course exists as a separate course rather than as a paragraph inside the others.** A paragraph would be softening. **A whole course, at the same evidence standard, on the same calendar, is co-occurrence.**
+
+## What you now do differently
+
+- **You never write "but" between an achievement and a harm.** You write "and", or you write two sentences, or you write a date.
+- **You never let an achievement close a paragraph about a loss**, or the reverse. Both of those are the same rhetorical move and both are dishonest.
+- **You put the two columns on one timeline** and let the dates do the work, because dates do not editorialise.
+
+## Sources
+- Encyclopedia Virginia. (n.d.-a). *Grand Fountain of the United Order of True Reformers*. https://encyclopediavirginia.org/entries/grand-fountain-of-the-united-order-of-true-reformers/
+- Encyclopedia Virginia. (n.d.-b). *Maggie Lena Walker (1864-1934)*. https://encyclopediavirginia.org/entries/walker-maggie-lena-1864-1934/
+- Justice for Greenwood. (n.d.). *Denial of insurance claims*. https://www.justiceforgreenwood.org/denial-of-insurance-claims/
+- New Georgia Encyclopedia. (n.d.-a). *Auburn Avenue (Sweet Auburn)*. https://www.georgiaencyclopedia.org/articles/counties-cities-neighborhoods/auburn-avenue-sweet-auburn/
+- Oklahoma Historical Society. (n.d.). *Tulsa and Black Wall Street*. https://www.okhistory.org/learn/trm1
+- Tulsa City-County Library. (n.d.). *Black Wall Street*. https://www.tulsalibrary.org/black-wall-street
+- Virginia Department of Historic Resources. (n.d.). *Jackson Ward Historic District (127-0237)*. https://www.dhr.virginia.gov/historic-registers/127-0237/`,
+      recallContent: [
+        {
+          prompt: "Why is the Greenwood dollar-circulation figure cut rather than hedged?",
+          answer: "No primary source is offered by any popular version, the versions differ by a factor of five, and neighbourhood money velocity was not measurable by any method available in 1921. A number with no source, no method and a fivefold spread should not appear at all.",
+        },
+        {
+          prompt: "What do you lose by cutting it, and what replaces it?",
+          answer: "Nothing. The 1921 directory gives 108 businesses, 33 professionals, 24 craftspeople and 26 service workers in a district of about 11,000 people. A verifiable fact always beats an impressive one.",
+        },
+        {
+          prompt: "State the difference between a claim about a document and a claim about the world, using the Fortune quotation.",
+          answer: "'Fortune called Auburn Avenue the richest Negro street in the world in 1956' is defensible. 'Auburn Avenue was the richest Negro street in the world' is not, because nobody ever measured it.",
+        },
+        {
+          prompt: "The highway and urban renewal claim holds in all five districts. What must you still do?",
+          answer: "Cite each case separately, and name the instrument, because a turnpike, a connector, a freeway, an urban renewal area and a university land assembly are five different legal mechanisms with different bodies and different minutes.",
+        },
+        {
+          prompt: "Which step of the checking routine do people skip, and why does it matter?",
+          answer: "Recording what you cut and why. A research file that records rejections is worth more than one that records only what was kept, because the next researcher will meet the same bad claim.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-map",
+      title: "18 · Map: seven places on one calendar",
+      section: "Section 5 · Co-occurrence",
+      body: `**Read this before you touch the map, because the map's limits are part of the lesson.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, which means two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **Richmond and Washington sit closer than that, and so do Washington and Philadelphia.** Those three will crowd, and this course tells you so rather than pretending otherwise.
+
+**A district is also smaller than one dot.** Four blocks of Parrish Street, nineteen acres of Sweet Auburn and thirty-five acres of Greenwood are all far below the resolution of a world map. **So do not use these coordinates to find an address.** They are approximate points placed to show a pattern.
+
+**The right map for a parcel question is a county or city geographic information system**, and every one of these five cities publishes one. **Choosing the right scale of map for your question is a research skill**, and lesson 20 puts you to work in the right kind of record.
+
+## What this map is actually for
+
+**Blue: the five districts.** Each marker's detail carries what the district held, in its own numbers, and the date on which it was designated if it was.
+
+**Amber: two places that show the network was wider than five cities.** Philadelphia carries the building and loan association, which is the capital instrument most often left out of this story. Washington carries both the bank that opened first in 1888 and the five-storey building a Richmond fraternal order put up there in 1902. **Amber is here to stop you reading these five districts as five isolated local scenes.** They were nodes.
+
+**What this map cannot show.** **Absence.** Every marker exists because something was recorded and somebody later wrote it up. **How many districts are not on this map is a question this course cannot answer and will not guess at**, and the honest version of that sentence is that the five here are the five that have been written about most, which is a fact about scholarship as well as about business.
+
+**One more thing the map cannot show, and it is the point of the section you just finished.** **A map has no time axis.** Every dot on it is simultaneous, and this history is not. **Greenwood in 1921 and Greenwood in 1942 and Greenwood in 1969 are three different places at one coordinate.** Hold lesson 17's table in your head while you read this map, and you will be doing what a timeline would do for you if this platform had one.
+
+## Sources
+- City of Chicago. (n.d.). *Supreme Life Building* [Chicago landmark record]. https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1431
+- Encyclopedia Virginia. (n.d.-a). *Grand Fountain of the United Order of True Reformers*. https://encyclopediavirginia.org/entries/grand-fountain-of-the-united-order-of-true-reformers/
+- National Park Service. (n.d.). *Chicago's Black metropolis: Understanding history through a historic place* [Teaching with Historic Places]. https://www.nps.gov/articles/chicago-s-black-metropolis-understanding-history-through-a-historic-place-teaching-with-historic-places.htm
+- New Georgia Encyclopedia. (n.d.-a). *Auburn Avenue (Sweet Auburn)*. https://www.georgiaencyclopedia.org/articles/counties-cities-neighborhoods/auburn-avenue-sweet-auburn/
+- Presbyterian Historical Society. (n.d.). *The whole gospel for the whole community: The legacy of Matthew Anderson*. https://pcusa.org/news-storytelling/blogs/historical-society-blog/whole-gospel-whole-community-legacy-matthew-anderson
+- Tulsa City-County Library. (n.d.). *Black Wall Street*. https://www.tulsalibrary.org/black-wall-street
+- Virginia Department of Historic Resources. (n.d.). *Jackson Ward Historic District (127-0237)*. https://www.dhr.virginia.gov/historic-registers/127-0237/`,
+      mapContent: {
+        markers: [
+          {
+            id: "wtb-durham",
+            lat: 35.994,
+            lng: -78.901,
+            title: "Parrish Street and Hayti, Durham, North Carolina",
+            color: "#1d4ed8",
+            description:
+              "Two districts, not one. Parrish Street held North Carolina Mutual, incorporated February 28, 1899, and Mechanics and Farmers Bank, chartered February 25, 1907 and opened August 1, 1908. Du Bois counted fifteen grocery stores, eight barber shops, seven meat and fish dealers, two drug stores and five manufacturing establishments here in 1912, with the bank holding 11,000 dollars of paid-in capital and 17,000 dollars deposited by 500 different persons. Hayti, immediately south, was the residential and cultural district. The freeway and urban renewal project ended with 4,057 households and 502 businesses demolished. Mechanics and Farmers still trades and its holding company announced a merger on July 22, 2026.",
+          },
+          {
+            id: "wtb-richmond",
+            lat: 37.547,
+            lng: -77.437,
+            title: "Jackson Ward, Richmond, Virginia",
+            color: "#1d4ed8",
+            description:
+              "Where the fraternal order model reached its fullest form. The Savings Bank of the Grand Fountain of the United Order of True Reformers was chartered March 2, 1888 and opened April 3, 1889, the first Black-owned bank chartered in the United States and the second to open. Maggie Lena Walker chartered the Saint Luke Penny Savings Bank on July 28, 1903, the first bank in the country chartered by a Black woman, and ran the Independent Order of St. Luke to about 100,000 members in 24 states. Listed on the National Register July 30, 1976 and designated a National Historic Landmark June 2, 1978. Interstate 95 was built through it in the late 1950s.",
+          },
+          {
+            id: "wtb-atlanta",
+            lat: 33.7554,
+            lng: -84.373,
+            title: "Sweet Auburn, Atlanta, Georgia",
+            color: "#1d4ed8",
+            description:
+              "Named by John Wesley Dobbs, and called the richest Negro street in the world by Fortune magazine in 1956, a quotation and not a measurement. Alonzo Herndon bought a failing mutual aid association in 1905, incorporated it with 5,000 dollars of assets, and by 1922 had over 400,000 dollars and legal reserve status as the Atlanta Life Insurance Company, one of only five Black-owned insurers then to hold it. Citizens Trust Bank opened here August 16, 1921 and the Atlanta Daily World from August 5, 1928. Designated a national historic landmark district in 1976, covering about 19 acres. The Downtown Connector bisects the street.",
+          },
+          {
+            id: "wtb-tulsa",
+            lat: 36.1608,
+            lng: -95.9853,
+            title: "Greenwood, Tulsa, Oklahoma",
+            color: "#1d4ed8",
+            description:
+              "Founded on 40 acres O. W. Gurley bought along the Frisco tracks in 1906 and sold to Black buyers, inside a city that grew from 1,390 people in 1900 to 72,075 in 1920. In 1921 the district held about 11,000 residents, 108 businesses including 41 grocery and meat markets and 30 restaurants, 33 professionals including 15 physicians and surgeons, 24 skilled craftspeople and 26 service workers. Destroyed in 1921; roughly 1,400 suits for over 4 million dollars followed and insurers declined under standard riot clauses. Rebuilt to 242 Black-owned business establishments by 1942, which offsets nothing about 1921. Highway construction and urban renewal took much of it in the late 1960s.",
+          },
+          {
+            id: "wtb-chicago",
+            lat: 41.8309,
+            lng: -87.627,
+            title: "Bronzeville and the Black Metropolis, Chicago, Illinois",
+            color: "#1d4ed8",
+            description:
+              "The largest of the five, built on a population that ran 30,050 in 1900 and 109,548 in 1920 inside a strip about five miles long. Jesse Binga opened a private bank in 1908 and took a state charter in 1921; Anthony Overton commissioned his building on South State Street in 1922 and ran a cosmetics manufacturer, a bank, an insurer and a newspaper. Binga State Bank was closed by Illinois auditors July 31, 1930 and Douglass National closed about 1932. Supreme Life, formed by merger in 1929, survived the Depression and re-skinned its headquarters in 1950. Nine properties were designated a Chicago landmark district on September 9, 1998.",
+          },
+          {
+            id: "wtb-philadelphia",
+            lat: 39.969,
+            lng: -75.172,
+            title: "Berean Building and Loan Association, Philadelphia, Pennsylvania",
+            color: "#b45309",
+            description:
+              "The instrument most often left out of this history. Founded in 1888 at Berean Presbyterian Church by the Reverend Matthew Anderson, it managed more than 150,000 dollars of stock for 700 members by 1909, helped more than 300 families buy homes, had an integrated board and came through the Depression. Read it as the capital chain running its full length inside one congregation: a church produces a building and loan, which produces home ownership, which produces collateral, which produces the ability to borrow for a business. Du Bois's 1912 Durham list includes a building and loan association too. Assume every district had one and go looking in the church records.",
+          },
+          {
+            id: "wtb-washington",
+            lat: 38.9169,
+            lng: -77.0285,
+            title: "Washington, D.C.: Capital Savings Bank and the True Reformer Building",
+            color: "#b45309",
+            description:
+              "Two reasons this city belongs on a map of Black business districts. The Capital Savings Bank of Washington opened on October 17, 1888, which is why Richmond's True Reformers bank is described as the first chartered rather than the first to open. And in 1902 that same Richmond fraternal order completed a five-storey building here, which tells you the order thought of itself as operating in more than one city. Note the crowding: this marker, Richmond and Philadelphia sit closer together than this map can cleanly separate, which is a limitation the lesson names rather than hides.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "wtb-quiz-money",
+      title: "19 · Quiz: the money question and the calendar",
+      section: "Section 5 · Co-occurrence",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "This course's one-sentence answer to the money question is:",
+            options: [
+              "They worked harder than their competitors and reinvested every dollar of profit",
+              "They built the institution before they needed the loan",
+              "They borrowed from Northern banks",
+              "They relied on philanthropy from outside the community",
+            ],
+            correctIndex: 1,
+            explanation: "Organise a society, collect small regular payments from many people, accumulate a reserve, get it chartered and regulated, then lend it to yourselves.",
+            sourceLessonSlug: "wtb-money-problem",
+          },
+          {
+            prompt: "Du Bois's three Durham founders were a minister, a physician and a barber. Read as roles, the barber supplies:",
+            options: [
+              "Cash, because a barbershop is a daily-receipts business with almost no inventory",
+              "A member list",
+              "Professional standing before a regulator",
+              "An understanding of mortality tables, which is what life insurance actually prices",
+            ],
+            correctIndex: 0,
+            explanation: "The minister supplies distribution and reputation, the physician supplies credibility and mortality knowledge, the barber supplies working capital. That is a correctly assembled founding team.",
+            sourceLessonSlug: "wtb-money-problem",
+          },
+          {
+            prompt: "Which is NOT one of the five capital strategies this course names?",
+            options: [
+              "Mutual aid and fraternal dues",
+              "Industrial insurance",
+              "A federal small business loan guarantee",
+              "Direct land purchase and subdivision, as O. W. Gurley did in Tulsa in 1906",
+            ],
+            correctIndex: 2,
+            explanation: "The five are fraternal dues, industrial insurance, the chartered bank, the building and loan association, and direct land purchase.",
+            sourceLessonSlug: "wtb-money-problem",
+          },
+          {
+            prompt: "The structural limit a segregated bank cannot buy its way out of is:",
+            options: [
+              "Higher interest rates",
+              "A shortage of qualified staff",
+              "Diversification, because its depositors share employers, property market and shocks",
+              "A lack of demand for loans among the people who live and work inside its own market area",
+            ],
+            correctIndex: 2,
+            explanation: "Concentrated risk is inherent to a neighbourhood bank, and no amount of effort removes it.",
+            sourceLessonSlug: "wtb-money-problem",
+          },
+          {
+            prompt: "In the industrial insurance mechanism, which step turns the company into a source of district capital?",
+            options: [
+              "The agent collecting premiums weekly in person",
+              "Policyholders dying",
+              "The company opening branch offices in more than one state during its first decade",
+              "Regulators requiring reserves, which must then be invested somewhere",
+            ],
+            correctIndex: 3,
+            explanation: "Reserves are compulsory saving at company scale, and a company that must invest will invest in the market it knows, which is property in its own district.",
+            sourceLessonSlug: "wtb-industrial-insurance",
+          },
+          {
+            prompt: "Du Bois reported in 1912 that North Carolina Mutual owned its office buildings in three cities. The significance is:",
+            options: [
+              "It shows the company was overextended",
+              "It proves the company had no cash",
+              "Step 5 of the mechanism, capital returning to property, visible by 1912",
+              "It shows the company had begun writing policies outside North Carolina by that date",
+            ],
+            correctIndex: 2,
+            explanation: "Eleven years in, the reserves were already in real estate. That is the mechanism working.",
+            sourceLessonSlug: "wtb-industrial-insurance",
+          },
+          {
+            prompt: "When researching one of these insurance firms, this course says to look first at:",
+            options: [
+              "Total assets",
+              "The chief executive's biography",
+              "The number of shareholders on the register at incorporation",
+              "The agent count and the agency territory",
+            ],
+            correctIndex: 3,
+            explanation: "The whole system runs on somebody walking a route. That network is harder to replicate than the capital is.",
+            sourceLessonSlug: "wtb-industrial-insurance",
+          },
+          {
+            prompt: "The honest criticism of industrial insurance as a product is that it was:",
+            options: [
+              "Sold only to Black customers",
+              "Expensive per dollar of coverage, across the whole industry and for all customers",
+              "Illegal in most states",
+              "Never actually paid out when a policyholder died, according to the state regulators of the period",
+            ],
+            correctIndex: 1,
+            explanation: "Collecting weekly in person costs money and small policies do not spread fixed costs. It is why the product eventually disappeared, and you should say so before a reader notices you left it out.",
+            sourceLessonSlug: "wtb-industrial-insurance",
+          },
+          {
+            prompt: "A building and loan association underwrites on:",
+            options: [
+              "Members' knowledge of each other, which substitutes for credit files and appraisals",
+              "A federal guarantee",
+              "The borrower's employer",
+              "An independent valuation commissioned from a licensed outside appraiser for every single loan",
+            ],
+            correctIndex: 0,
+            explanation: "That substitution is precisely what an excluded borrower cannot otherwise supply.",
+            sourceLessonSlug: "wtb-building-and-loan",
+          },
+          {
+            prompt: "The single most important difference between a building and loan and a bank is:",
+            options: [
+              "Size",
+              "Ownership",
+              "Whether the institution is permitted to hold real estate on its own balance sheet",
+              "Withdrawal: members withdraw slowly under rules, depositors withdraw on demand",
+            ],
+            correctIndex: 3,
+            explanation: "A frightened building and loan has a difficult meeting. A frightened bank has a queue, and a bank that cannot pay the queue is closed by an examiner that afternoon.",
+            sourceLessonSlug: "wtb-building-and-loan",
+          },
+          {
+            prompt: "The figure of 134 Black-owned banks organised between 1888 and 1934 should be cited to:",
+            options: [
+              "Abram L. Harris's 1936 study The Negro as Capitalist",
+              "The FDIC",
+              "W. E. B. Du Bois",
+              "The Federal Reserve's Partnership for Progress minority banking timeline",
+            ],
+            correctIndex: 0,
+            explanation: "Cite Harris rather than the article that repeated him, and note that banks organised is not banks operating at any one moment.",
+            sourceLessonSlug: "wtb-building-and-loan",
+          },
+          {
+            prompt: "To establish how many Black-owned banks exist today, you should:",
+            options: [
+              "Use the number in the most recent news article you can find",
+              "Download the current quarter's FDIC Minority Depository Institutions list and count it",
+              "Average the figures given by several reputable sources",
+              "Ask a trade association, since bank regulators do not publish ownership categories at all",
+            ],
+            correctIndex: 1,
+            explanation: "Read it from the authority, date your reading, and never assert a number you have not personally checked. The sector consolidates.",
+            sourceLessonSlug: "wtb-building-and-loan",
+          },
+          {
+            prompt: "The Greenwood dollar-circulation figure is cut rather than hedged because:",
+            options: [
+              "It is too small to be interesting",
+              "It contradicts the city directory",
+              "No primary source is offered, versions differ by a factor of five, and it was not measurable in 1921",
+              "It was first published after the year 2000 and therefore cannot describe conditions in Greenwood in 1921",
+            ],
+            correctIndex: 2,
+            explanation: "A number with no source, no method and a fivefold spread should not appear in your writing at all, not even with a hedge.",
+            sourceLessonSlug: "wtb-what-fails-checking",
+          },
+          {
+            prompt: "In lesson 17's calendar, what is true of the 1976 to 1998 designation row?",
+            options: [
+              "It shows designation arriving after the demolitions in every case",
+              "It shows designation preventing demolition",
+              "It shows the districts being rebuilt",
+              "It shows that federal listing and local landmark status were granted in the same year",
+            ],
+            correctIndex: 0,
+            explanation: "Preservation is what a country does to the remainder. That is a fact about how designation works, not an accusation against preservationists.",
+            sourceLessonSlug: "wtb-co-occurrence",
+          },
+          {
+            prompt: "Why is co-occurrence a stronger claim than balance?",
+            options: [
+              "Because it is kinder to the reader",
+              "Because it is checkable and specific, and it removes the excuse of ignorance",
+              "Because it avoids naming anyone",
+              "Because it allows a writer to give equal space to achievement and to harm in every paragraph",
+            ],
+            correctIndex: 1,
+            explanation: "Nobody in 1921 had to imagine what a Black business district looked like. There was one, it was in the city directory, and its 108 businesses were listed.",
+            sourceLessonSlug: "wtb-co-occurrence",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
