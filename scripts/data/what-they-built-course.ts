@@ -1913,6 +1913,304 @@ Every line on both sides is sourced in this course.
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · What survives  (standing fabric, designation status, and the live decision)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wtb-what-survives",
+      title: "20 · What is standing, what is designated, and what is live right now",
+      section: "Section 6 · What survives",
+      body: `Three different questions that people run together, and they have three different answers and three different sets of records.
+
+## Question 1: what is standing?
+
+**Standing means the building exists.** It does not mean the firm operates, the use is unchanged, the interior survives, or the community is intact. **A survey measures fabric.**
+
+**The best documented case is Chicago.** On **September 9, 1998** the City of Chicago designated nine properties as the **Black Metropolis-Bronzeville District** (City of Chicago, n.d.):
+
+| Property | Why it is in this course |
+|---|---|
+| **Overton Hygienic Building** | Anthony Overton's manufacturing, banking and publishing base |
+| **Chicago Bee Building** | Overton's newspaper |
+| **Chicago Defender Building** | The Defender's home from 1920 to 1960 |
+| **Supreme Life Building** | The insurer that survived the Depression |
+| **Wabash Avenue YMCA** | Opened 1914, supported by Julius Rosenwald |
+| **Eighth Regiment Armory** | The Illinois National Guard regiment |
+| **Unity Hall** | Institutional and political space |
+| **Sunset Cafe** | Entertainment |
+| **Victory Monument** | Commemoration, not commerce |
+
+**Eight buildings and one monument had been nominated to the National Register in the mid-1980s**, described by the National Park Service as among the most significant landmarks of Black urban history in the United States (National Park Service, n.d.).
+
+**In Durham, the Mechanics and Farmers Bank building on Parrish Street is standing and in use**, and the state's highway marker **G-116**, cast in **2003**, stands on **US 15/501 South Business at Parrish Street** (North Carolina Department of Natural and Cultural Resources, 2023). **A marker is a public record with an author, a date and a sponsor. Note the sponsor every time.**
+
+## Question 2: what is designated, and by whom?
+
+**These are different instruments with different consequences, and the difference is the single most practical thing in this lesson.**
+
+| Instrument | Who does it | What it actually does |
+|---|---|---|
+| **National Register listing** | The Keeper of the National Register, on a state nomination | Recognition, tax credit eligibility, and review of federally funded projects. **It does not stop a private owner demolishing a building.** |
+| **National Historic Landmark** | The Secretary of the Interior | The highest federal recognition. Still not a demolition ban. |
+| **Local landmark or historic district** | A city commission, under a local ordinance | **This is the one with teeth.** Typically requires a certificate before exterior alteration or demolition. |
+
+**The designations in this course, with their dates.**
+- **Jackson Ward:** National Register **July 30, 1976**; National Historic Landmark **June 2, 1978**; three boundary expansions since, most recently **2008** (Virginia Department of Historic Resources, n.d.).
+- **Sweet Auburn:** national historic landmark district **1976**, about **19 acres** (New Georgia Encyclopedia, n.d.-a).
+- **Black Metropolis-Bronzeville:** **Chicago landmark** designation **September 9, 1998**, which is the local instrument, the one with teeth (City of Chicago, n.d.).
+
+**Read those dates against lesson 17's calendar and the pattern is unmistakable.** Designation follows demolition. **If you want to know what a district was, do not read only what is designated**, because designation is a record of the remainder.
+
+## Question 3: what is live right now?
+
+**This is the beat that turns a history course into something usable, and this course has an unusually good example of it, because it is happening this quarter.**
+
+**On July 22, 2026, Optus Financial Corporation and M&F Bancorp announced a merger.** The reported terms: a deal valued at roughly **105 million dollars**, a combined entity with about **1.27 billion dollars in total assets** based on results as of **March 31, 2026**, **ten banking locations across North and South Carolina**, **James Sills** of M&F to serve as chief executive of the combined bank, and closing expected in the **fourth quarter of 2026**, subject to M&F Bancorp shareholder approval and required regulatory approvals (Banking Dive, 2026; WIS-TV, 2026).
+
+**Mechanics and Farmers Bank was chartered on February 25, 1907 by men who also ran North Carolina Mutual, four blocks from where Du Bois counted fifteen grocery stores in 1912.** It is in the middle of a corporate transaction right now. **That is not a historical footnote. It is the same institution, still trading, and its next chapter is a matter of public record before it happens.**
+
+**Here is how you follow it, which is a transferable skill.**
+1. **A bank merger requires regulatory approval.** Applications to bank regulators are public, and comment periods exist.
+2. **A bank holding company shareholder vote requires a proxy statement**, which is a public filing with the terms in it.
+3. **"Announced" is not "completed."** A deal with conditions on it can fail. **Check whether it closed, and date your reading.**
+
+**That is the same discipline the whole course has been teaching**, applied to a document that has not been written yet.
+
+## What to go see, and how to behave when you get there
+
+**All five districts are places you can visit, and four of the five are functioning neighbourhoods with residents.**
+
+- **Durham:** Parrish Street, the M&F building, marker G-116, and the Hayti area south of downtown.
+- **Richmond:** Jackson Ward, its cast-iron porches, Second Street, and the **Maggie L. Walker National Historic Site**, operated by the National Park Service (National Park Service, n.d.-b).
+- **Atlanta:** Auburn Avenue, the Sweet Auburn landmark district, and the offices of institutions still on the street.
+- **Tulsa:** the Greenwood district, and the **Oklahoma Commission to Study the Tulsa Race Riot of 1921** report, submitted **February 28, 2001**, as the document to read before you go.
+- **Chicago:** the nine designated properties listed above, which can be walked in an afternoon.
+
+**Four rules for visiting, and they are not optional.**
+1. **These are neighbourhoods, not exhibits.** People live in them. Do not photograph into windows and do not knock uninvited.
+2. **Read what the community publishes about itself first.** Neighbourhood associations, heritage centres and business districts all publish, and their account is the one to start from.
+3. **Do not narrate a place as ruined.** A street with vacancies on it is a street with a market condition, and a resident hearing you call their neighbourhood a ruin will correctly conclude you are a tourist.
+4. **Name what is operating.** If a firm on that street is open today, that is the most interesting fact available to you, and it is the one visitors most reliably miss.
+
+## Sources
+- Banking Dive. (2026, July 22). *Black-owned banks Optus, M&F to merge*. https://www.bankingdive.com/news/optus-mf-carolina-black-owned-banks-merge-105-million-mdi-cdfi/826017/
+- City of Chicago. (n.d.). *Supreme Life Building* [Chicago landmark record]. https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1431
+- National Park Service. (n.d.). *Chicago's Black metropolis: Understanding history through a historic place* [Teaching with Historic Places]. https://www.nps.gov/articles/chicago-s-black-metropolis-understanding-history-through-a-historic-place-teaching-with-historic-places.htm
+- National Park Service. (n.d.-b). *Maggie L. Walker National Historic Site*. https://www.nps.gov/mawa/index.htm
+- New Georgia Encyclopedia. (n.d.-a). *Auburn Avenue (Sweet Auburn)*. https://www.georgiaencyclopedia.org/articles/counties-cities-neighborhoods/auburn-avenue-sweet-auburn/
+- North Carolina Department of Natural and Cultural Resources. (2023, December 20). *Black Wall Street (G-116)*. https://www.dncr.nc.gov/blog/2023/12/20/black-wall-street-g-116
+- Virginia Department of Historic Resources. (n.d.). *Jackson Ward Historic District (127-0237)*. https://www.dhr.virginia.gov/historic-registers/127-0237/
+- WIS-TV. (2026, July 23). *Optus Bank, M&F Bank announce merger that would create nation's largest Black-owned bank*. https://www.wistv.com/2026/07/23/optus-bank-mf-bank-announce-merger-that-would-create-nations-largest-black-owned-bank/`,
+      recallContent: [
+        {
+          prompt: "State the course's rule again and say what the lesson 17 calendar is and is not.",
+          answer: "Never use a positive to soften a negative. The calendar is a demonstration that two things were happening at once. It is not a ledger, and the columns do not cancel.",
+        },
+        {
+          prompt: "Give two years in which both columns of the calendar are full.",
+          answer: "1921, when Greenwood held 108 businesses and 33 professionals, Citizens Trust opened and Binga took a state charter, and Greenwood was destroyed. And 1905 to 1911, when Atlanta Mutual was growing and the Saint Luke Emporium opened and then closed.",
+        },
+        {
+          prompt: "What does the map lesson say it cannot show, and what does the fact that a map has no time axis mean here?",
+          answer: "It cannot show absence, because every marker exists because something was recorded. And every dot on a map is simultaneous, while Greenwood in 1921, 1942 and 1969 are three different places at one coordinate.",
+        },
+        {
+          prompt: "Why are Philadelphia and Washington on the map at all?",
+          answer: "Philadelphia carries the Berean Building and Loan Association, the capital instrument most often left out. Washington carries the Capital Savings Bank that opened first in 1888 and the five-storey building a Richmond fraternal order put up there in 1902. They stop you reading the five districts as isolated local scenes.",
+        },
+        {
+          prompt: "What must you never write between an achievement and a harm?",
+          answer: "'But'. Write 'and', or two sentences, or a date. And never let an achievement close a paragraph about a loss, or the reverse.",
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 7 · Write  (a real assignment, at the same evidence standard, aimed at ONE FIRM)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wtb-write-assignment",
+      title: "21 · Your assignment: write one firm",
+      section: "Section 7 · Write",
+      lessonType: "assignment",
+      body: `Every other course in this series asks you to write about a place. **This one asks you to write about a business**, because a business is harder and because almost nobody does it.
+
+## The assignment
+Write **900 to 1,300 words** about **one firm** in one of these five districts, or in a Black business district near you. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is Section 4's.**
+
+## Step 1 · Choose one firm, and choose small
+
+**A firm, not a district.** "Greenwood" is a topic. **"The Blue Eagle at 648, listed as a tavern and restaurant from 1946 to 1962" is a subject.** So is one grocery store in Du Bois's count of fifteen. So is one building and loan association in one church.
+
+**Good sources of a firm to choose.**
+- **A city directory** for any of these cities, in any year. Pick a trade and pick a name.
+- **The advertising pages of a Black newspaper**, which lesson 6 told you to read before the articles.
+- **A National Register nomination**, whose bibliography will hand you three more sources.
+- **A firm that still exists.** Mechanics and Farmers, Citizens Trust and Atlanta Life all have present-day successors or histories they publish themselves.
+
+**If you cannot visit the city, that is not a disqualification. It is a constraint you disclose in the piece**, and it changes what you can honestly claim.
+
+## Step 2 · Build the firm's balance sheet before you write a sentence
+
+Not a literal balance sheet. **A five-column table**, and you fill in what the record supports and leave the rest blank.
+
+| Column | What goes in it |
+|---|---|
+| **Date** | Every dated event you can source |
+| **Event** | Founded, chartered, opened, moved, expanded, merged, closed |
+| **Money** | Capital, deposits, premiums, assets, sale price, anything with a currency sign |
+| **People** | Named, with roles. No composites |
+| **Source** | Where each row came from |
+
+**The blanks are the finding.** If your money column is empty, say so in the piece. **"I could not establish this firm's capital from any available record" is a sentence a professional writes and an amateur hides.**
+
+## Step 3 · Answer the money question for your firm
+
+**This is the requirement that makes this assignment different from every other place-writing assignment you have been given.** Somewhere in your piece, answer: **where did this firm's start-up money come from?**
+
+Use Section 4's five strategies as your checklist: **savings, family, retained profit from another business, a fraternal or insurance pool, a bank or building and loan, or land bought outright.** If the record does not say, **say that it does not say, and say which record would settle it.**
+
+## Step 4 · Decide what kind of piece this is, and commit
+
+- **A biography of a firm.** Founding, product, market, staff, end or survival.
+- **A history of one transaction.** One charter, one purchase, one merger, one closure, followed to the document.
+- **A report on a present.** A firm operating today, its history and its current situation.
+- **A piece about the record itself.** What you could and could not find, and what the gap means.
+
+**The fourth is the hardest and often the best**, and it is the only one that can be written honestly with thin sources.
+
+## Step 5 · Write it, under these craft rules
+
+1. **Lead with a specific.** A charter date, a line in a directory, a dollar figure. Not a mood.
+2. **Give every figure an owner, a date and a scope.** Every single one.
+3. **Name the instrument.** Not "they raised money" but "they organised a mutual benefit association and chartered a bank against its reserves", if you can source it.
+4. **Attribute an argument as an argument.** Du Bois's explanation of Durham is a case being made in 1912. **Quote it and engage it. Do not launder it into your own narration.**
+5. **Use the present tense for the present.** If the firm or its successor operates today, that is present-tense material.
+6. **One paragraph, minimum, on what you could not establish.** Required, not optional.
+
+## Rules you do not get to break
+
+1. **No invented detail.** Not a date, a name, a quotation, a street number or a statistic. **If a source does not say it, you do not write it.** This includes atmospheric invention: you do not know what the shop smelled like.
+2. **No composite or imagined characters.** Real, cited people only. **You have Merrick, Moore, Spaulding, Fitzgerald, Walker, Browne, Herndon, Perry, Scott, Gurley, Binga, Overton, Gillespie, Abbott and Anderson. That is more than enough material.**
+3. **No invented dialogue**, including "he might have said."
+4. **Never use a positive to soften a negative.** The rule from lesson 1 applies to your writing exactly as it applies to this course. **No "but" between an achievement and a harm.**
+5. **No triumphalism.** A firm that succeeded is not a lesson about anything. It is a firm that succeeded, and the interesting part is how.
+6. **No tragedy framing.** A firm that closed did not have a fated ending. It had a cause, and the cause has a document.
+7. **No resilience moral.** **If your closing paragraph is about the human spirit, delete it and put a number there instead.**
+8. **Living communities describe themselves.** Use the terms the people who live and work there use, and say where you got them.
+9. **Say what you did to a number.** If you adjusted for inflation, say so and say how.
+
+## What good looks like
+
+A short, checkable piece in which every sentence is either something you read in a named source or something you clearly mark as unresolved, **and in which the prose is still good.** Those two standards do not conflict.
+
+**Consider what you already have.** A barber who bought a failing insurance association with his own cash because a regulator had just raised the capital requirement. A bank holding 17,000 dollars deposited by 500 different people. A woman who stood up in 1901 and named three institutions she intended to build, and built all three, and closed one of them six years later for two reasons at once. Forty acres bought along a railroad and sold to people who could not buy land anywhere else. **None of that needs decorating.**
+
+## Sources
+- Du Bois, W. E. B. (1912, January). The upbuilding of black Durham: The success of the Negroes and their value to a tolerant and helpful Southern city. *The World's Work, 23*, 334-338. https://docsouth.unc.edu/nc/dubois/dubois.html
+- Encyclopedia Virginia. (n.d.-b). *Maggie Lena Walker (1864-1934)*. https://encyclopediavirginia.org/entries/walker-maggie-lena-1864-1934/
+- Federal Deposit Insurance Corporation. (n.d.). *Minority depository institutions list*. https://www.fdic.gov/minority-depository-institutions-program/minority-depository-institutions-list
+- New Georgia Encyclopedia. (n.d.-b). *Alonzo Herndon (1858-1927)*. https://www.georgiaencyclopedia.org/articles/business-economy/alonzo-herndon-1858-1927/
+- Walker, J. E. K. (2009). *The history of Black business in America: Capitalism, race, entrepreneurship* (2nd ed.). University of North Carolina Press.`,
+      recallContent: [
+        {
+          prompt: "Name the three preservation instruments and say which one actually restricts demolition.",
+          answer: "National Register listing by the Keeper, National Historic Landmark designation by the Secretary of the Interior, and local landmark or historic district designation by a city commission. Only the local one typically requires a certificate before exterior alteration or demolition.",
+        },
+        {
+          prompt: "What is the pattern when you read the designation dates against the calendar?",
+          answer: "Designation follows demolition. Jackson Ward was listed in 1976 and designated in 1978, after the turnpike; Sweet Auburn in 1976, after the Downtown Connector; Bronzeville's nine properties in 1998. Designation is a record of the remainder.",
+        },
+        {
+          prompt: "What is the live decision this course points you at, and what are the three steps for following it?",
+          answer: "The Optus Financial and M&F Bancorp merger announced July 22, 2026. Bank merger applications to regulators are public with comment periods; a holding company shareholder vote requires a public proxy statement; and 'announced' is not 'completed', so check whether it closed and date your reading.",
+        },
+        {
+          prompt: "Give the four rules for visiting one of these districts.",
+          answer: "They are neighbourhoods and not exhibits, so no photographing into windows and no uninvited knocking. Read what the community publishes about itself first. Do not narrate the place as ruined. And name what is operating today.",
+        },
+        {
+          prompt: "Name four of the nine properties in the Black Metropolis-Bronzeville District.",
+          answer: "Any four of: the Overton Hygienic Building, the Chicago Bee Building, the Chicago Defender Building, the Supreme Life Building, the Wabash Avenue YMCA, the Eighth Regiment Armory, Unity Hall, the Sunset Cafe, and the Victory Monument.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-what-this-left-out",
+      title: "22 · What this course left out, and the next real work",
+      section: "Section 7 · Write",
+      body: `**The method is the product of this course, more than the five districts are.** Here is what you can now do, what was deliberately left out, and where the unread records are.
+
+## What you can do that you could not do before
+
+| Skill | What it looks like in practice |
+|---|---|
+| **Read a district as an economy** | Four layers, and the completeness test rather than the fame test |
+| **Answer the money question** | Name which of five capital strategies financed a given firm, or say the record does not settle it |
+| **Separate a document claim from a world claim** | "Fortune called it the richest street" versus "it was the richest street" |
+| **Kill a bad statistic** | The dollar-circulation figure, cut on method rather than on taste |
+| **Carry a disagreement** | Two founding dates, two merger accounts, two nickname origins, all reported with owners |
+| **Read designation correctly** | Which instrument, whose decision, what year, and what it actually restricts |
+| **Hold co-occurrence** | Two columns, one calendar, no "but" |
+
+## What this course deliberately did not cover, and why
+
+- **The legal instruments of clearance.** Blight designation, eminent domain, highway alignment, urban renewal areas and university land assembly are named here and taught nowhere in this course. **They are the subject of the route series**, and the Indiana Avenue course teaches them one at a time with the statute attached. **Splitting them out is deliberate: putting the instruments in this course would have turned a course about building into a course about demolition, which is the failure mode the whole plan was written to avoid.**
+- **The 1921 Tulsa Race Massacre.** Named, dated, sourced to the Oklahoma Commission's report of February 28, 2001, and not summarised. **A paragraph would be an insult to the scholarship.**
+- **Every other district.** There were many more than five. **The five here are the five with the most written about them**, which is a fact about scholarship and not about business.
+- **Black business outside districts.** Farms, funeral homes, contractors and professional practices existed everywhere, including in places with no district at all. **A district is one form of Black enterprise, not the form.**
+- **Women's businesses as a subject in their own right.** Maggie Walker is here because she chartered a bank. **The beauty industry, boarding houses, restaurants and dressmaking were overwhelmingly women's businesses and this course names them only in passing.** That is a real gap and it is the most obvious next course.
+- **Any national total.** No count of Black-owned businesses at any date appears in this course, because the census categories changed repeatedly and this course refuses to manufacture a comparable series.
+
+## The unread records, which are the next real work
+
+**None of these has been opened for this course. All of them are public or requestable.**
+
+1. **State insurance department annual statements** for North Carolina Mutual, Atlanta Life, Standard Life, Supreme Liberty Life and Victory Life. **These carry the investment schedules**, which is where you would find out what the reserves actually financed. **This is the single biggest unopened source in the subject.**
+2. **Bank examination reports and receivership files** for Binga State Bank, Douglass National Bank, the Savings Bank of the Grand Fountain, and the North Carolina Mutual liquidation docket.
+3. **City directories**, year by year, for all five cities. **The counts in this course come from other people's readings of directories. Nobody has to take their word for it, including you.**
+4. **National Register nominations** for Jackson Ward, Sweet Auburn and the Black Metropolis properties. **Each is a document with a bibliography, and almost nobody reads them.**
+5. **Building and loan association records**, which mostly sit in church archives and have barely been touched.
+6. **The advertising pages**, not the news pages, of the *Chicago Defender*, the *Atlanta Daily World*, the *Reformer* and the *St. Luke Herald*.
+
+**If you want to make an original contribution to this subject rather than restate it, that is the list**, and item 1 is the one that would change what people know.
+
+## One last thing, and it is the reason the course exists
+
+**People who were locked out of the credit system built an insurance company, capitalised a bank with it, lent the money to each other, printed a newspaper to advertise the results, and did it in at least five cities at roughly the same time without a shared plan.** That is not a story about spirit. **It is a solved problem in finance**, and the solution is written down in charters, annual statements and directories that are sitting in archives right now.
+
+**At the same time, in the same country, often to the same people, the things the other fourteen courses in this series document were happening.** Both are on the calendar. **Neither one is a comment on the other.**
+
+**That is co-occurrence, it is the hardest thing to hold, and holding it is the whole point.**
+
+## Sources
+- Baradaran, M. (2017). *The color of money: Black banks and the racial wealth gap*. Belknap Press of Harvard University Press.
+- Du Bois, W. E. B. (Ed.). (1907). *Economic co-operation among Negro Americans*. Atlanta University Press. https://docsouth.unc.edu/church/dubois07/dubois.html
+- Harris, A. L. (1936). *The Negro as capitalist: A study of banking and business among American Negroes*. American Academy of Political and Social Science.
+- Walker, J. E. K. (2009). *The history of Black business in America: Capitalism, race, entrepreneurship* (2nd ed.). University of North Carolina Press.
+- Weare, W. B. (1993). *Black business in the New South: A social history of the North Carolina Mutual Life Insurance Company*. University of North Carolina Press.`,
+      recallContent: [
+        {
+          prompt: "What is the one requirement that makes this assignment different from other place-writing assignments?",
+          answer: "You must answer the money question for your firm: where did its start-up money come from, checked against the five strategies, and if the record does not say, say so and say which record would settle it.",
+        },
+        {
+          prompt: "What are the five columns of the table you build before writing?",
+          answer: "Date, event, money, people and source. The blanks are the finding, and an empty money column belongs in the piece rather than hidden.",
+        },
+        {
+          prompt: "Which craft rule from lesson 1 applies directly to your own writing here?",
+          answer: "Never use a positive to soften a negative. No 'but' between an achievement and a harm, and no letting an achievement close a paragraph about a loss or the reverse.",
+        },
+        {
+          prompt: "What does the assignment say to do if your closing paragraph is about the human spirit?",
+          answer: "Delete it and put a number there instead. No triumphalism, no tragedy framing, no resilience moral.",
+        },
+        {
+          prompt: "Name two firms whose founding you could write about from the material already in this course.",
+          answer: "Any two of: Atlanta Life, bought as a failing mutual aid association in 1905 for its 5,000 dollars of assets; Mechanics and Farmers, chartered February 25, 1907; the Saint Luke Penny Savings Bank, chartered July 28, 1903; the Savings Bank of the Grand Fountain, chartered March 2, 1888; Citizens Trust, opened August 16, 1921; or the Berean Building and Loan, founded 1888.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
