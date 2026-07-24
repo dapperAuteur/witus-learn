@@ -513,7 +513,38 @@ field going forward, NOT by hand-tagging seventeen courses. The capstone's conne
 already a hand-built entity map to seed from.
 
 Every new table is tenant-scoped and by-id reads 404 across tenants. No entity page ships without its
-citations. Full plan: plans/45-explore-map-timeline-and-entities.md.`,
+citations. Full plan: plans/45-explore-map-timeline-and-entities.md.
+
+DECIDED 2026-07-24: build all three timeline ideas, plus a rotating globe. Both asks have better
+answers than building three separate things.
+
+THE GLOBE IS A PROJECTION SWAP, not a new component. Verified against installed packages rather than
+assumed: d3-geo 3.1.1 is already a dependency and exports geoOrthographic with .rotate(), geoPath is
+projection-agnostic so the existing renderer draws a globe by changing one line, and geoDistance,
+geoCircle and geoGraticule are all present, which covers the sphere outline, the graticule, and the
+test for culling pins on the far side. world-atlas topojson is already loaded. No new dependency.
+MapLessonContent gains a projection prop; flat Natural Earth stays the default for LESSON maps, where
+a static printable image is right, and the globe is for the explore page where exploring is the point.
+Drag rotates, wheel zooms, and it all runs on data already in the browser so it still works offline.
+
+Accessibility is the real cost and is not optional: a flat-view toggle, keyboard rotation and zoom,
+and the pin list rendered as real text beside the globe. That text list is also the no-JS and offline
+fallback, and it doubles as the event rail.
+
+Zoom should control pin DENSITY, not dot size: far out, one pin per place cluster with a count; mid,
+one pin per course primary place; close in, every place a course touches plus tour pins. That is why
+course_places carries a role: it is the level-of-detail key.
+
+ALL THREE TIMELINES WITHOUT CLUTTER, because they are ONE control at three zooms, mirroring what zoom
+does to the map. Era stepper is the coarse grip (continent view), the brushed range is the medium grip
+(country view), the event rail is the fine grip (street view). They compose: clicking an era sets the
+brush, the brush filters the rail, the rail highlights pins. One instrument, three grips, not three
+features. The app then has ONE mental model on both axes: zoom out for the shape, zoom in for the
+detail. Space is the globe, time is the panel, and learning one teaches the other.
+
+Progressive disclosure keeps it calm: default is globe at continent zoom, era chips, collapsed rail,
+so only two controls are visible. Zooming or clicking an era densifies pins and fills the rail.
+Expanding the rail reveals the brush. The brush is never the first thing a newcomer meets.`,
     provenance: "plans/future-courses/explore-map-and-entities.md",
   },
   {
