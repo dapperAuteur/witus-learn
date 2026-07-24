@@ -1136,6 +1136,584 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · Co-occurrence
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wwr-co-occurrence-rule",
+      title: "12 · Co-occurrence: how to put two true things on one calendar",
+      section: "Section 5 · Co-occurrence",
+      body: `**Lesson 1 gave you the rule. This lesson gives you the procedure, because a rule you cannot execute is a slogan.**
+
+## The rule, restated
+
+**Never use a positive to soften a negative.** The claim the evidence supports is that **both were happening, at the same time, in the same country, often to the same people.**
+
+## The five-step procedure
+
+**Step 1. Build one calendar with two columns.** Left column: **what was built or owned**. Right column: **what was done**. Same dates, same page. Do not give the two tracks separate chapters, because separate chapters are how a reader ends up reading only one.
+
+**Step 2. Name the instrument on both sides.** This is the step that keeps it honest. **A deed is an instrument. A plat is an instrument. A municipal charter is an instrument. So is an ordinance, a lease, a condemnation complaint and an arrest.** If either column has an entry with no instrument behind it, you have a story on that line and not yet a decision.
+
+**Step 3. Do not net.** There is no operation that subtracts one column from the other. **A calendar is not a balance sheet.** If a sentence of yours could be rewritten as "on the other hand," delete it.
+
+**Step 4. Watch for the two failure modes.**
+- **The travelogue.** Only the left column. Produces a charming piece about summer cottages and jazz that leaves a reader with no idea why any of it had to exist.
+- **The martyrology.** Only the right column. Produces a piece in which Black Americans appear exclusively as people things were done to, which is the failure this whole positive track was built to fix.
+
+**Step 5. State the claim you are entitled to, and no larger one.** Co-occurrence. Same years, same country, often the same people.
+
+## Three sentences that are banned in this course, and why
+
+| Sentence | Why it fails |
+|---|---|
+| "But it wasn't all bad." | It nets. It is Step 3 violated in six words |
+| "Out of that suffering came great achievement." | It makes exclusion productive, which is an argument for exclusion |
+| "They thrived despite it all." | It converts a business with capital, staff and a season into a character trait, which erases the work |
+
+## Three constructions that are allowed, and why
+
+| Construction | Why it works |
+|---|---|
+| "In the same year that X, Y." | Pure co-occurrence. Asserts simultaneity and nothing else |
+| "The same board that did X also did Y." | Names one decision-maker doing two things. This is the strongest form available |
+| "This happened to the same people." | Identity of subject. The most under-used sentence in this kind of writing |
+
+## The calendar, worked across this course
+
+**Every line below has a source in an earlier lesson. Read it as one page, not as two.**
+
+| Year | What was built or owned | What was done |
+|---|---|---|
+| **1890** | | Charles and Laura Douglass refused service at a Chesapeake Bay resort |
+| **1893 to 1895** | Highland Beach bought, laid out and sold as lots; the first cottage and Twin Oaks built | |
+| **Feb 1912** | Willa Bruce buys Lot 8, Block 5, for 1,225 dollars | |
+| **June 17, 1912** | Bruce Beach Front opens: soda pop, lunches, bathing suits, showers, dressing tents | The arrival of Black guests causes agitation among some white property owners, and confrontation with guests reaching the ocean |
+| **1912** | The Idlewild Resort Company is formed to sell lots to Black buyers | The Los Angeles City Attorney's opinion in the Caleb Holden matter guts the state civil rights bill in practice |
+| **1913** | | Segregation approved in federal government offices |
+| **1915 to 1916** | Idlewild's first plat surveyed; Idlewild clubhouse built; the Bruces build a two-storey building with a kitchen and dance floor | |
+| **1919 to 1923** | The Prioleaus, Elizabeth Patterson, Mary Sanders and the Johnsons buy lots in Block 12 | 1921: Lindsey approaches the Board of Trustees about the increasing number of Black people in Manhattan Beach |
+| **Aug 1921** | The Idlewild Lot Owners Association is incorporated and takes over the resort | The federal Advisory Committee on Zoning is organised and its manual distributed nationwide |
+| **May 12, 1922** | Highland Beach incorporates as a municipality | |
+| **Nov to Dec 1923** | | Lindsey and civic leaders petition to purchase Blocks 5 and 12; owners of Blocks 5 and 12 petition against it |
+| **1924** | | The realtors' national code of ethics adopted; a Klan lecture advertised in January; Ordinance 276 and ordinances 273 to 275 passed June 5; Ordinance 282; the city files its condemnation suit in November |
+| **May 30, 1927** | The Slaughters open a ten-room boarding house | May: the Bruces surrender the land. June: the buildings are demolished |
+| **June 10, 1929** | | Final judgment in the condemnation |
+| **1935** | American Beach founded on 33 acres bought by an insurance company's Pension Bureau. MaVynee Betsch born on January 13 | |
+| **1956** | The Cottagers, Inc. founded at Oak Bluffs | |
+| **1964** | | The Civil Rights Act desegregates public accommodations. Hurricane Dora lands near St. Augustine on September 10 |
+| **1979, 1992, 2002** | Idlewild, Twin Oaks and American Beach listed on the National Register | |
+| **2004** | NaNa dune enters the National Park System by act of Congress | |
+| **July 20, 2022** | Two Manhattan Beach parcels returned to the Bruces' heirs | |
+
+**Look at 1921 and 1922 side by side.** In August 1921 Black property owners took ownership of a Michigan resort. In May 1922 Black residents of Maryland chartered a town. In the same eighteen months, the federal government was distributing a zoning manual and a Los Angeles real estate agent was starting the process that ended Bruce's Beach.
+
+**Do not write a sentence that connects those.** They are not connected. **Write the calendar and let the learner see the two columns fill at the same time**, which is the only thing this evidence lets you claim and, done properly, is far more disturbing than any sentence you could write about it.
+
+## Sources
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- National Oceanic and Atmospheric Administration, Atlantic Oceanographic and Meteorological Laboratory. (2014). *50th anniversary of Hurricane Dora's St. Augustine landfall*. https://www.aoml.noaa.gov/hurricane_blog/50th-anniversary-of-hurricane-doras-st-augustine-landfall/
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
+      recallContent: [
+        {
+          prompt: "Which powers separate a government from a property owners association?",
+          answer: "Taxing, zoning, taking property by eminent domain, and policing. An association can hold common property, bind its own members by covenant, fundraise and advocate, but it cannot do any of the four.",
+        },
+        {
+          prompt: "Who decides zoning at American Beach and at Idlewild, and who decides it at Highland Beach?",
+          answer: "Nassau County at American Beach and Yates Township and Lake County at Idlewild, because both are unincorporated. Highland Beach decides its own, because it is an incorporated municipality holding police power delegated by the state.",
+        },
+        {
+          prompt: "What is the strongest claim the five governance cases support, and what do they not support?",
+          answer: "That legal shape determines who must be persuaded and which instrument they must use. They do not support the claim that incorporation protects a community, because five well-documented cases are not a sample and incorporation is not armour.",
+        },
+        {
+          prompt: "What appeared in the Manhattan Beach minutes on December 6, 1923?",
+          answer: "A petition from property owners of Blocks 5 and 12 protesting Lindsey's petition to purchase them. People objected on the record and the ordinance passed anyway.",
+        },
+      ],
+    },
+    {
+      slug: "wwr-1927-manhattan-beach",
+      title: "13 · One summer, one town: Manhattan Beach, 1927",
+      section: "Section 5 · Co-occurrence",
+      body: `**This lesson is the procedure from lesson 12 run at the highest resolution the evidence allows: one town, one summer, both columns.** Every entry comes from the City of Manhattan Beach's own History Advisory Board report, which worked from the Board of Trustees minutes, the Superior Court file, county deeds and the California Eagle (City of Manhattan Beach History Advisory Board, 2021).
+
+## The summer, in order
+
+| Date, 1927 | What happened |
+|---|---|
+| **May 16** | The Bruces write to the City surrendering their property and consenting that the City wreck, tear down and remove the buildings on the lots |
+| **May 19** | The Board of Trustees agrees the first of a series of beachfront leases to a local businessman, **Oscar C. Bessonette**, allowing him to treat the beach as private property and have unwanted visitors arrested |
+| **May 20** | The Slaughters advertise in the California Eagle: "Come, bring your family and spend the day at Manhattan Beach, formerly Bruce's Beach" |
+| **May 30, Memorial Day** | The Slaughters open a modern ten-room boarding house at 120 26th Street. **The same day, the Manhattan Beach police take the names and addresses of some 25 bathers**, in what the Eagle called a bulldozing attempt in disguise |
+| **June** | The Bruces' buildings are demolished. The Manhattan Beach News headline: "Housewreckers Clear Park Site of Old Buildings" |
+| **June 17** | Ordinance 311 imposes 15-minute parking limits on the streets surrounding Blocks 5 and 12 |
+| **June 26** | Officials run some 40 or 50 people off the beach until they threaten **Walter Gordon, Sr.** with arrest. He explains some fine points of law and, the Eagle reports, they beat a hasty retreat |
+| **July 4** | **Elizabeth Catley**, a 19-year-old Black UCLA student, is arrested for swimming and held five hours in a Redondo cell in a wet bathing suit |
+| **July 17** | **Dr. Henry C. Hudson**, president of the Los Angeles NAACP, with **John McCaskill**, **J. H. Conley** and **Romalious Johnson**, is arrested. Bail is 10 dollars each |
+| **August 2** | The four are tried in Manhattan Beach City Hall, represented by **Hugh Macbeth**, a Harvard Law graduate of 1908. The court finds for the City and fines them |
+| **August 12** | **The appeal succeeds** |
+| **September 1 to 2** | The City Council repeals the Bessonette lease and overturns the parking restrictions |
+| **October 18 to 19** | Hooded individuals put oil-soaked waste, accelerant and cotton over the gas meter under the Slaughters' house at night and light it. The Slaughters wake to smoke and put the fire out before the fire department arrives. A cross is burned across the street. The Eagle reports that the Slaughters are "not the running kind" |
+
+## The cross-examination, verbatim
+
+**At the August 2 trial, Macbeth questioned Bessonette about the "No Trespassing" sign.** This is reproduced as the report reproduces it, from the California Eagle of August 5, 1927. **The language is 1927's, in a courtroom, under oath.**
+
+> Macbeth: Did you have a sign posted?
+> Bessonette: Yes, "No Trespassing".
+> Macbeth: Did this sign mean no trespassing by Colored people?
+> Bessonette: It meant no trespassing by undesirables.
+> Macbeth: On July 17, when these four defendants seated here were arrested and lodged in jail were there any other people sitting in the same spot?
+> Bessonette: Yes.
+> Macbeth: Were they arrested?
+> Bessonette: No.
+> Macbeth: Then your sign was posted for colored peoples only?
+> Bessonette: For undesirables.
+> Macbeth: You consider colored people undesirables?
+> Bessonette: Yes.
+
+Officer **Haddock** then testified that Bessonette had given him specific orders to keep Black people off the beach. **The local court found for the City anyway** (City of Manhattan Beach History Advisory Board, 2021).
+
+## Read the summer with the procedure
+
+**Left column, what was built or owned:** a ten-room boarding house opened and advertised; a legal defence organised and won on appeal; a beach lease repealed and a parking ordinance overturned by the same council that passed it; a family that stayed after an arson attempt.
+
+**Right column, what was done:** a business surrendered and demolished; a public beach leased to a private man so that swimmers could be arrested; twenty-five people's names taken; a student jailed in a wet swimsuit; four men convicted; a house set on fire; a cross burned.
+
+**Both columns fill between May and October, in one town, to overlapping groups of people.** The Slaughters are in both columns. **That is what co-occurrence looks like at full resolution, and there is nothing to net.**
+
+**Notice also what a win looks like in practice.** The appeal succeeded on **August 12**. The council repealed the lease on **September 1**. **Three weeks later somebody tried to burn the Slaughters' house down.** A legal victory changed the law in that town and did not change the danger. **Write both. Neither one is the ending.**
+
+## What the record does not say, and the report says so
+
+**The City's own report states that, because of COVID restrictions, it could not access the records showing the outcome of Elizabeth Catley's lawsuit**, which she filed on June 2, 1928 in Los Angeles County Superior Court seeking 35,000 dollars in damages against the arresting officer and members of the Board of Trustees. **The report says the records had been requested** (City of Manhattan Beach History Advisory Board, 2021).
+
+**A report that tells you what it could not obtain is a better report than one that does not.** Copy that habit. **The Catley case outcome is an open question with a case file and a courthouse attached, which means it is findable.**
+
+The report also notes that it had **requested the 1929 Grand Jury report** and was still investigating the outcome of the arson and intimidation investigations (City of Manhattan Beach History Advisory Board, 2021).
+
+## Sources
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf`,
+      recallContent: [
+        {
+          prompt: "What are the five steps of the co-occurrence procedure?",
+          answer: "One calendar with two columns; name the instrument on both sides; do not net; watch for the travelogue and the martyrology; and state only the claim you are entitled to.",
+        },
+        {
+          prompt: "Why is \"out of that suffering came great achievement\" banned?",
+          answer: "Because it makes exclusion productive, which is an argument for exclusion.",
+        },
+        {
+          prompt: "Which three constructions are allowed, and why is the second the strongest?",
+          answer: "In the same year that X, Y; the same board that did X also did Y; and this happened to the same people. The second is strongest because it names one decision-maker doing two things.",
+        },
+        {
+          prompt: "What is the difference between a calendar and a balance sheet, in this method?",
+          answer: "A balance sheet nets. A calendar does not. There is no operation that subtracts one column from the other, so any sentence that could be rewritten as \"on the other hand\" gets deleted.",
+        },
+      ],
+    },
+    {
+      slug: "wwr-1964",
+      title: "14 · 1964: the law that opened the country and closed the businesses",
+      section: "Section 5 · Co-occurrence",
+      body: `**This is the hardest lesson in the course to write without lying, and the difficulty is worth naming before the facts arrive.**
+
+## The two facts
+
+**Fact one.** The **Civil Rights Act of 1964** barred discrimination in public accommodations. The prerequisite course teaches that this Act is **why the Green Book ended**: a directory of places that would serve you becomes unnecessary when refusing to serve you is illegal (National Park Service, n.d.-d).
+
+**Fact two.** In every account of these communities that names a cause of decline, **1964 is the year named**.
+
+- The Michigan historical marker at Idlewild, as recorded by the Historical Marker Database, says the 1964 passage of the Civil Rights Act **opened doors for Black Americans to stay at previously whites-only resorts** (The Historical Marker Database, n.d.).
+- Idlewild's own account puts its peak from the 1920s into the early 1960s and dates significant population decline to after 1964 (Idlewild Michigan, n.d.; Terry Wantz Historical Research Center, n.d.).
+- The Cultural Landscape Foundation records visitation declining after the 1964 Act (The Cultural Landscape Foundation, n.d.).
+- At American Beach, after the Act desegregated Florida's beaches, **many African American Jacksonvillians turned to locations closer to home** (Wikipedia, n.d.-a).
+
+## The sentence you must not write
+
+**"Civil rights hurt Black business" is not what this evidence says, and it is an argument with a political career that this course will not lend it support.**
+
+Here is why the evidence does not carry it.
+
+1. **The Act did not close anything. It removed a restriction.** What changed was the market: a business whose customers had nowhere else to go now had customers with somewhere else to go. **A captive market is not a competitive advantage anybody should have to keep.**
+2. **The counterfactual is not testable.** Nobody can tell you what Idlewild's 1975 season would have looked like in a country that had not passed the Act, because that country does not exist.
+3. **The accounts converge on the Act because it is the most visible date, not because anybody ran the analysis.** Convergence of secondary accounts is weak evidence about causation. **It tells you what people believe about the cause.**
+4. **There are confounders sitting in plain sight in this course.** American Beach was hit by **Hurricane Dora on September 10, 1964**, ten weeks after the Act, losing homes and buildings (National Oceanic and Atmospheric Administration, 2014; Wikipedia, n.d.-a). Idlewild's business was substantially a **live entertainment** business, and the American live entertainment economy changed enormously in the same period. Rail travel declined. **Nobody in this course's sources has separated those effects.**
+
+## The sentence you may write
+
+**A law that removed a restriction also removed a captive market, and the people who lost businesses are the same people the law freed.**
+
+**Both halves are true. Neither cancels the other. And the people are the same people**, which is the third allowed construction from lesson 12 doing exactly the work it was built for.
+
+**One more thing worth saying plainly.** These communities existed because of segregation and were harmed by its removal, **and that is an indictment of the arrangement, not of the remedy.** A business model that depends on your customers being barred from everywhere else is a business model built on a wrong. **The wrong is the wrong. Ending it was right. And the cost of ending it landed on the people who had built the workaround.** That is a real thing that happened to real families, and it is allowed to be reported without a moral attached.
+
+## What survived, in the present tense
+
+**These are living communities, so the survival column is written in the present tense, and it is not a consolation prize.**
+
+- **Highland Beach** is still an incorporated town with an all-volunteer government, about 80 homes, and residents who are descendants of the original settlers. **Twin Oaks is the Frederick Douglass Museum and Cultural Center** (Town of Highland Beach, n.d.; Preservation Maryland, n.d.).
+- **Idlewild** is still an unincorporated community in Yates Township, with a **Lot Owners Association dating to 1921**, an **African American Chamber of Commerce founded in 2000**, a National Register historic district, and residents the community describes as year-round residents, fourth and fifth generation Idlewilders, seasonal visitors and newcomers (Idlewild Michigan, n.d.).
+- **American Beach** is mostly privately owned, has a **Property Owners Association**, has had the **A. L. Lewis Museum since September 6, 2014**, holds an **8.5-acre federally owned dune**, and is **under study by the National Park Service for National Historic Landmark designation** (National Park Service, n.d.-b, n.d.-c; Nassau County, n.d.).
+- **Oak Bluffs**: **Shearer Cottage is still owned by Shearer descendants**, the Inkwell is a working town beach with a dawn swimming group, and **The Cottagers, Inc. marked seventy years in 2026** (National Trust for Historic Preservation, n.d.; Martha's Vineyard African American Heritage Trail, n.d.; Vineyard Gazette, 2026).
+- **Bruce's Beach** is the exception, and it gets the next lesson to itself.
+
+## Sources
+- The Cultural Landscape Foundation. (n.d.). *Idlewild Historic District*. https://www.tclf.org/idlewild-historic-district
+- The Historical Marker Database. (n.d.). *Idlewild historical marker*. https://www.hmdb.org/m.asp?m=182804
+- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Martha's Vineyard African American Heritage Trail. (n.d.). *Town of Oak Bluffs*. https://mvafricanamericanheritagetrail.org/trail-sites/town-of-oak-bluffs/
+- Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
+- National Oceanic and Atmospheric Administration, Atlantic Oceanographic and Meteorological Laboratory. (2014). *50th anniversary of Hurricane Dora's St. Augustine landfall*. https://www.aoml.noaa.gov/hurricane_blog/50th-anniversary-of-hurricane-doras-st-augustine-landfall/
+- National Park Service. (n.d.-b). *Visiting American Beach*. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/historyculture/ambch_visiting.htm
+- National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
+- National Park Service. (n.d.-d). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm
+- National Trust for Historic Preservation. (n.d.). *Shearer Cottage and the rich African American heritage of Martha's Vineyard*. https://savingplaces.org/stories/shearer-cottage-and-the-rich-african-american-heritage-of-marthas-vineyard
+- Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
+- Terry Wantz Historical Research Center. (n.d.). *Idlewild*. https://www.twhistoricalresearchcenter.com/idlewild
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
+- Vineyard Gazette. (2026, July 1). *Cottagers celebrate 70 years of service*. https://vineyardgazette.com/news/2026/07/01/cottagers-celebrate-70-years-service
+- Wikipedia. (n.d.-a). *American Beach, Florida*. https://en.wikipedia.org/wiki/American_Beach,_Florida`,
+      recallContent: [
+        {
+          prompt: "Name four things that happened in Manhattan Beach in the summer of 1927 on the built or owned side of the calendar.",
+          answer: "The Slaughters advertised and opened a ten-room boarding house; Walter Gordon Sr. faced down officials on the beach; the four arrested men won their appeal on August 12; the council repealed the Bessonette lease and the parking restrictions on September 1 and 2; and the Slaughters stayed after the arson attempt.",
+        },
+        {
+          prompt: "What did Bessonette testify his No Trespassing sign meant, and what did he concede under questioning?",
+          answer: "That it meant no trespassing by undesirables. Under Hugh Macbeth's questioning he agreed that white people in the same spot were not arrested and that he considered Black people undesirable. Officer Haddock testified he had orders to keep Black people off the beach. The local court still found for the City.",
+        },
+        {
+          prompt: "What happened three weeks after the appeal succeeded and the lease was repealed?",
+          answer: "Hooded men set a fire under the Slaughters' house on October 18 and burned a cross across the street the next night. A legal victory changed the law in that town and did not change the danger.",
+        },
+        {
+          prompt: "Which two questions did the City's own report say it could not answer, and why is that a virtue?",
+          answer: "The outcome of Elizabeth Catley's 1928 lawsuit, blocked by COVID restrictions on records access, and the outcome of the 1929 grand jury investigation, which it had requested. A report that says what it could not obtain tells the next researcher exactly where to dig.",
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Bruce's Beach, and what return looks like
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wwr-bruces-beach-return",
+      title: "15 · Bruce's Beach: taken by ordinance in 1924, returned on July 20, 2022, sold back in 2023",
+      section: "Section 6 · Bruce's Beach, and what return looks like",
+      body: `**This is the one place in this course where the taking and the reclamation both belong on the page, and it is a win with a date on it. It is also more complicated than the headline, in four specific ways that matter.**
+
+## Part 1. The taking, in instruments
+
+| Date | Instrument | What it did |
+|---|---|---|
+| **Feb 19, 1912** | Deed | Willa Bruce buys **Lot 8, Block 5**, Peck's Manhattan Beach Tract, from Henry Willard for **1,225 dollars**. The parcel is 33 and one-third by 105 feet |
+| **June 17, 1912** | Advertisement in the Liberator | "Bruce Beach Front" opens |
+| **1916** | Building | A two-storey frame building with a kitchen and dance floor |
+| **1919 to 1923** | Deeds | **Major George and Ethel Prioleau** buy the southern half of lot 4, Block 12; **Elizabeth Patterson** the northern half; **Mary Sanders** lot 6; **Milton B. and Anna Johnson** lot 1. **Four more Black-owned properties, all in Block 12** |
+| **1920** | Deed | Willa Bruce buys lot 9 of Block 5 |
+| **Nov 15, 1923** | Petition to the Board of Trustees | George Lindsey and civic leaders ask the city to purchase Blocks 5 and 12 |
+| **Dec 6, 1923** | Counter-petition | Owners of Blocks 5 and 12 protest |
+| **June 5, 1924** | **Ordinance 276** | Declares the intention to acquire Blocks 5 and 12 by condemnation. **Ordinances 273 to 275**, same day, restrict bath houses and beach changing |
+| **1924** | **Ordinance 282** | Initiates proceedings for acquisition by condemnation **for public park purposes** |
+| **Nov 1924** | Complaint | The city files **City of Manhattan Beach v. B. H. Dyer et al.**, Superior Court No. 157,573 |
+| **May 16, 1927** | Letter | The Bruces surrender the property and consent to demolition |
+| **June 1927** | Demolition | The buildings come down |
+| **June 10, 1929** | **Final judgment** | Awards set |
+
+**The awards in the 1929 judgment, as printed in the Board of Trustees minutes** (City of Manhattan Beach History Advisory Board, 2021):
+
+| Owner | Property | Award |
+|---|---|---|
+| B. H. Dyer, R. L. Rice and H. M. Eichelberger | Fourteen lots across Blocks 5 and 12 | **21,147.31 dollars** |
+| George W. Yarrow | Lots 4 and 6, Block 5; lot 11, Block 12 | **6,461.13 dollars** |
+| **W. A. Bruce** | **Lots 8 and 9, Block 5** | **14,500.00 dollars** |
+| Mary R. Sanders | Lot 6, Block 12 | **4,129.09 dollars** |
+| Milton B. and Anna E. Johnson; Emma K. Barnett | Lot 1, Block 12 | **3,888.16 dollars** |
+| Ethel and George W. Prioleau | Southerly half of lot 4, Block 12 | **1,874.37 dollars** |
+| Elizabeth Patterson | Northerly half of lot 4, Block 12 | **1,865.66 dollars** |
+| C. W. Stone | Lot 3, Block 5 | **1,325.71 dollars** |
+
+**Read that table carefully, because it explains the mechanism.** **Most of the condemned lots were white-owned**, and the largest single award went to three white owners. **That is precisely why "public park purposes" was a usable pretext**: a taking aimed at five Black families was executed as a taking of two whole blocks. **The instrument is race-neutral on its face and the record around it is not.** In 1930 the Manhattan Beach News praised councilman John F. Jones, who had made it his particular aim to force the Black residents from Blocks 5 and 12 because their settlement had depreciated property values and cost sales (City of Manhattan Beach History Advisory Board, 2021).
+
+## Part 2. What the land actually did next, which is not the folklore
+
+**The story that the land sat empty for thirty years is wrong in detail, and the city's own report corrects it from the minutes.**
+
+- **July 21, 1932.** The City petitions the County for help funding a City Park between the Strand and Highland, using County Welfare and Stabilization Program labour.
+- **February 1933.** The City files plans to use **Reconstruction Finance Corporation** funds for a beachfront park, requesting thousands of "man days" of relief labour block by block.
+- **August 11, 1933.** The Manhattan Beach News reports the Beach Front Park has been graded and its terraced surface planted.
+- **1938 and 1940.** A volleyball court is approved; residents argue about tennis courts that are not level.
+- **1945.** A children's story hour runs at the playground at Highland and 26th.
+- **1948.** **The State takes ownership of the property condemned in 1929, on the condition that the land be accepted for use as a public beach or park only.** In the same period a sewage pumping station goes in between 26th and 27th.
+- **1956 and 1959.** The area is landscaped into a terraced park.
+- **1962.** A Kiwanis Club and City Council contest renames it **Bayview Terrace Park**.
+- **1974.** It is renamed **Parque Culiacán** for Manhattan Beach's sister city.
+- **2003.** A rename to "Friendship Park" is denied, but a plaque acknowledging the park's history is commissioned.
+- **2006.** The Council votes to rename it **Bruce's Beach**, with a dedication in 2007.
+
+**Note the 1948 condition, because it is the reason 2021 needed a state statute.** The land carried a **public-use restriction imposed by the State**. **A city could take this ground in 1924 with an ordinance. Giving it back required an act of the California Legislature.** Hold that asymmetry; it is the civics lesson of the whole course.
+
+**In 1995**, Los Angeles County acquired the land the Bruces had owned, through transfers from the City of Manhattan Beach and the State of California (Los Angeles County Chief Executive Office, n.d.).
+
+## Part 3. The return, in dates
+
+| Date | What happened |
+|---|---|
+| **April 20, 2021** | The County Board of Supervisors votes to develop a return plan and to sponsor **Senate Bill 796** to lift the state restrictions |
+| **September 30, 2021** | **Governor Newsom signs SB 796**, enabling the return |
+| **October 5, 2021** | The Board approves steps to return the property |
+| **June 28, 2022** | The Board approves the transfer of ownership to the Bruce family entity |
+| **July 20, 2022** | **The Board officially returns Bruce's Beach to the closest living legal heirs of Charles and Willa Bruce** |
+
+(Los Angeles County Chief Executive Office, n.d.; Los Angeles County Library, n.d.)
+
+**The lease-back terms.** The County's own account says the agreement has the County **renting the land on which the Lifeguard Administration Building operates**, gives the Bruce family the **right to require the County to acquire the property** within a timeframe, gives the County the **right to require a sale** within a timeframe **not to exceed 20 million dollars**, and sets an annual rent supported by an economic analysis (Los Angeles County Chief Executive Office, n.d.). **Press reporting of the June 2022 agreement describes a 24-month lease at an annual rent of 413,000 dollars plus all operation and maintenance costs.**
+
+**The sale.** On **January 3 and 4, 2023**, the family's decision to sell the property back to the County for nearly 20 million dollars was announced by Board Chair **Janice Hahn** and State Senator **Steven Bradford**. Hahn's statement said the seizure was an injustice inflicted on generations of descendants "who almost certainly would have been millionaires," and called the outcome "what reparations look like" and "a model that I hope governments across the country will follow" (Hahn, 2023).
+
+**Whether and exactly when the sale closed is where this course stops asserting.** Press accounts place the completed sale in early 2023 and at least one outlet gives **January 30, 2023**. **The County's own ARDI page, as read for this course, records no completion date.** **The deed record at the Los Angeles County Registrar-Recorder and County Clerk is where the closing date lives, and this course has not read it.**
+
+## Part 4. The four complications, none of which cancels the win
+
+**Complication 1. What came back is not the park.** The parcels returned were **Lots 8 and 9 of Block 5**, the land the County owned, which holds the **Los Angeles County Lifeguard Administration Building and its parking lot**. **Block 12, the open space that today carries the name Bruce's Beach Park, is owned by the City of Manhattan Beach and was not returned.** **The park named for the Bruces is not the land the Bruces got back.**
+
+**Complication 2. Four other Black families have had nothing returned.** The Prioleaus, Elizabeth Patterson, Mary Sanders and the Johnsons all owned in **Block 12**, which is the city's park. **Their descendants are not part of the 2022 transfer.** Every award in the 1929 table above is a claim that has not been revisited.
+
+**Complication 3. The land went back into public ownership within about seven months.** The family sold. **Their reasoning was stated publicly and is worth taking at face value:** you cannot operate a beach resort on the site of a county lifeguard headquarters, and converting a returned asset into money is what rebuilding wealth looks like when the asset cannot be used. The family's attorney has also argued publicly that **if the return is reparations, it is an inadequate form**, because it addresses neither the wider Black community's loss of a place of refuge nor the lost economic opportunity. **Organisers who campaigned for the return, including Kavon Ward, were publicly disappointed by the sale.** **Report all three positions. Do not adjudicate among them.**
+
+**Complication 4. The asymmetry of instruments.** A **city ordinance** in 1924 was enough to start taking the land. **A state statute** in 2021 was required to give it back, because of a **1948 state condition**. **It is easier to take than to return, and the difference is measured in which legislature has to act.**
+
+## What to do with all of that
+
+**Do not let the complications erase the date, and do not let the date erase the complications.**
+
+**July 20, 2022 is a win with a date.** A county government returned condemned land to the heirs of the family it was taken from, and it needed a state law to do it. **That happened. It is the only one of its kind in this course.**
+
+**And the park is still the city's, four families are still uncompensated a second time, the land is public again, and it took ninety-eight years.** **Both paragraphs. Same page. No netting.** That is the procedure from lesson 12, applied to the hardest case it has.
+
+## Sources
+- City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- Hahn, J. (2023, January 4). *Hahn releases statement on Bruce family's decision to sell Bruce's Beach*. Office of Supervisor Janice Hahn, County of Los Angeles. https://hahn.lacounty.gov/hahn-releases-statement-on-bruce-familys-decision-to-sell-bruces-beach/
+- Los Angeles County Chief Executive Office, Anti-Racism, Diversity and Inclusion Initiative. (n.d.). *Bruce's Beach*. https://ceo.lacounty.gov/ardi/bruces-beach/
+- Los Angeles County Library. (n.d.). *Bruce's Beach*. https://lacountylibrary.org/bruces-beach/`,
+      recallContent: [
+        {
+          prompt: "What is the one sentence this course refuses to write about 1964, and why?",
+          answer: "That civil rights hurt Black business. The Act removed a restriction rather than closing anything, the counterfactual is not testable, the accounts converge on the Act because it is the most visible date, and confounders such as Hurricane Dora and the changing live entertainment economy have not been separated.",
+        },
+        {
+          prompt: "What is the sentence this course does write about 1964?",
+          answer: "A law that removed a restriction also removed a captive market, and the people who lost businesses are the same people the law freed. Both halves are true, neither cancels the other, and the people are the same people.",
+        },
+        {
+          prompt: "Why is a business model built on a captive market an indictment of the arrangement rather than of the remedy?",
+          answer: "Because a model that depends on your customers being barred from everywhere else is built on a wrong. Ending the wrong was right, and the cost of ending it landed on the people who had built the workaround. Both can be reported without a moral attached.",
+        },
+        {
+          prompt: "Name three things that survive in the present tense at these communities.",
+          answer: "Highland Beach is still an incorporated town with an all-volunteer government and Twin Oaks is a museum; Idlewild still has its 1921 Lot Owners Association and a Chamber of Commerce founded in 2000; Shearer Cottage is still owned by Shearer descendants; American Beach has the A. L. Lewis Museum, a federally owned dune and a National Historic Landmark study under way; and the Cottagers marked seventy years in 2026.",
+        },
+      ],
+    },
+    {
+      slug: "wwr-quiz-return",
+      title: "16 · Quiz: co-occurrence, 1964, and the return",
+      section: "Section 6 · Bruce's Beach, and what return looks like",
+      quiz: {
+        passingScore: 70,
+        // 15-question bank served 8 at a time with shuffled options, so a retake is a different
+        // quiz rather than the same list (the repo standard, src/lib/quiz.ts).
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Step 3 of the co-occurrence procedure is \"do not net.\" What does that mean in practice?",
+            options: [
+              "Delete any sentence that could be rewritten as \"on the other hand\"",
+              "Put the two tracks in separate chapters so each gets its full weight",
+              "Weight each column by the number of people it affected in that year",
+              "Include only events for which a formal legal instrument can be produced",
+            ],
+            correctIndex: 0,
+            explanation: "A calendar is not a balance sheet. There is no operation that subtracts one column from the other.",
+            sourceLessonSlug: "wwr-co-occurrence-rule",
+          },
+          {
+            prompt: "Which of these is a BANNED sentence in this course?",
+            options: [
+              "In the same year that the association incorporated, the ordinance passed",
+              "Out of that suffering came great achievement",
+              "The same board that leased the beach also repealed the lease",
+              "This happened to the same people, in the same town, in the same summer",
+            ],
+            correctIndex: 1,
+            explanation: "It makes exclusion productive, which is an argument for exclusion. The other three are the allowed constructions.",
+            sourceLessonSlug: "wwr-co-occurrence-rule",
+          },
+          {
+            prompt: "What are the two failure modes the procedure watches for?",
+            options: [
+              "Anachronism and presentism",
+              "Over-citation and under-citation of a single archival source",
+              "Writing in the past tense and writing in the present tense",
+              "The travelogue and the martyrology",
+            ],
+            correctIndex: 3,
+            explanation: "One column only, either way. The travelogue leaves out why any of it had to exist; the martyrology is the failure the positive track was built to fix.",
+            sourceLessonSlug: "wwr-co-occurrence-rule",
+          },
+          {
+            prompt: "Why does Step 2 insist you name an instrument on BOTH sides of the calendar?",
+            options: [
+              "Because instruments are easier to date than events are",
+              "Because a deed and a charter are instruments, just as an ordinance is",
+              "Because readers trust legal documents more than they trust newspapers",
+              "Because only instruments can be cited in APA style without a page number given",
+            ],
+            correctIndex: 1,
+            explanation: "If either column has an entry with no instrument behind it, you have a story on that line and not yet a decision.",
+            sourceLessonSlug: "wwr-co-occurrence-rule",
+          },
+          {
+            prompt: "In Manhattan Beach in 1927, what did the Slaughters do on Memorial Day, May 30?",
+            options: [
+              "Filed suit in Superior Court against the arresting officer and trustees",
+              "Sold their property to the city and moved to Los Angeles",
+              "Opened a ten-room boarding house",
+              "Petitioned the Board of Trustees to repeal the Bessonette beach lease",
+            ],
+            correctIndex: 2,
+            explanation: "The same day, Manhattan Beach police took the names and addresses of some 25 bathers. Both columns filled on one Memorial Day.",
+            sourceLessonSlug: "wwr-1927-manhattan-beach",
+          },
+          {
+            prompt: "Under Hugh Macbeth's questioning on August 2, 1927, Oscar Bessonette said his sign was posted against whom?",
+            options: [
+              "Undesirables, and he agreed that meant Black people",
+              "Nobody in particular. He said the sign had been left by a previous tenant",
+              "Anybody without a bathing permit issued by the Manhattan Beach police",
+              "Only those swimmers who had been warned by an officer on a previous day",
+            ],
+            correctIndex: 0,
+            explanation: "He also agreed white people in the same spot were not arrested, and Officer Haddock testified he had orders to keep Black people off the beach. The local court found for the City anyway.",
+            sourceLessonSlug: "wwr-1927-manhattan-beach",
+          },
+          {
+            prompt: "The four men convicted on August 2, 1927 won their appeal on August 12, and the council repealed the lease on September 1. What happened on October 18 and 19?",
+            options: [
+              "The Bruces returned to Manhattan Beach and reopened their resort",
+              "The condemnation suit was dismissed by the Superior Court",
+              "The state took ownership of the condemned land as a public park",
+              "Hooded men set a fire under the Slaughters' house",
+            ],
+            correctIndex: 3,
+            explanation: "A legal victory changed the law in that town and did not change the danger. Write both; neither one is the ending.",
+            sourceLessonSlug: "wwr-1927-manhattan-beach",
+          },
+          {
+            prompt: "The City of Manhattan Beach's own 2021 report said it could not obtain which record?",
+            options: [
+              "The outcome of Elizabeth Catley's 1928 damages suit",
+              "The 1924 minutes recording Ordinance 276",
+              "The deed by which Willa Bruce acquired Lot 8 of Block 5",
+              "The final judgment issued in the condemnation case on June 10, 1929",
+            ],
+            correctIndex: 0,
+            explanation: "COVID restrictions blocked access; the report said the records had been requested. A report that says what it could not obtain tells you where to dig.",
+            sourceLessonSlug: "wwr-1927-manhattan-beach",
+          },
+          {
+            prompt: "Which sentence about 1964 does this course refuse to write?",
+            options: [
+              "The Civil Rights Act is the reason the Green Book stopped being published",
+              "Many Jacksonville residents began going to beaches closer to home",
+              "Accounts of these communities name 1964 as the year the decline begins",
+              "Civil rights hurt Black business",
+            ],
+            correctIndex: 3,
+            explanation: "The Act removed a restriction rather than closing anything, the counterfactual is untestable, and confounders such as Hurricane Dora have not been separated out.",
+            sourceLessonSlug: "wwr-1964",
+          },
+          {
+            prompt: "What confounder sits ten weeks after the Civil Rights Act in American Beach's own history?",
+            options: [
+              "The National Register listing of the historic district",
+              "The sale of Amelia Island Plantation to an out-of-state developer",
+              "Hurricane Dora, which landed near St. Augustine on September 10, 1964",
+              "The closure of the Afro-American Life Insurance Company's pension bureau",
+            ],
+            correctIndex: 2,
+            explanation: "Winds estimated around 115 miles per hour, heavy damage across northeast Florida, and homes and buildings lost at American Beach. No source in this course separates the two effects.",
+            sourceLessonSlug: "wwr-1964",
+          },
+          {
+            prompt: "What did Manhattan Beach Ordinance 282 say it was acquiring Blocks 5 and 12 for?",
+            options: [
+              "A municipal parking structure serving the Strand",
+              "A sewage pumping plant and the associated easements",
+              "Public park purposes",
+              "Right of way for a coastal highway through the two city blocks",
+            ],
+            correctIndex: 2,
+            explanation: "A taking aimed at five Black families was executed as a taking of two whole blocks, most of them white-owned. That is what made the stated purpose usable.",
+            sourceLessonSlug: "wwr-bruces-beach-return",
+          },
+          {
+            prompt: "In the 1929 final judgment, the largest single award went to whom?",
+            options: [
+              "Dyer, Rice and Eichelberger, for fourteen lots",
+              "Willa and Charles Bruce, for lots 8 and 9 of Block 5",
+              "Mary R. Sanders, for lot 6 of Block 12",
+              "Ethel and George W. Prioleau, for the southerly half of lot 4",
+            ],
+            correctIndex: 0,
+            explanation: "21,147.31 dollars. The Bruces received 14,500 dollars. Most of the condemned lots were white-owned, which is exactly why the stated public purpose worked as cover.",
+            sourceLessonSlug: "wwr-bruces-beach-return",
+          },
+          {
+            prompt: "Why did returning the land in 2021 require an act of the California Legislature?",
+            options: [
+              "Because the County had bought the land at a tax sale in 1995",
+              "Because the 1929 judgment barred any transfer of the two parcels",
+              "Because federal park funds had been used to landscape the site",
+              "Because a 1948 state condition allowed park or beach use only",
+            ],
+            correctIndex: 3,
+            explanation: "SB 796, signed September 30, 2021, lifted that restriction. A city ordinance was enough to take the land; a state statute was needed to give it back.",
+            sourceLessonSlug: "wwr-bruces-beach-return",
+          },
+          {
+            prompt: "What was actually returned to the Bruce heirs on July 20, 2022?",
+            options: [
+              "The entirety of Blocks 5 and 12, including the city park",
+              "Lots 8 and 9 of Block 5, the county lifeguard building site",
+              "Block 12 only, which is the open space that carries the Bruce name",
+              "A cash settlement equal to the appraised value of the two original lots",
+            ],
+            correctIndex: 1,
+            explanation: "The park that carries the name Bruce's Beach is Block 12, owned by the City of Manhattan Beach, and it was not returned. The park named for the Bruces is not the land the Bruces got back.",
+            sourceLessonSlug: "wwr-bruces-beach-return",
+          },
+          {
+            prompt: "Which of these is NOT one of the four complications this course reports about the return?",
+            options: [
+              "The four other Black families condemned in 1924 have had nothing returned",
+              "The land went back into public ownership within about seven months",
+              "The heirs were later found not to be related to Charles and Willa Bruce",
+              "It took a city ordinance to take the land and a state statute to give it back",
+            ],
+            correctIndex: 2,
+            explanation: "No source in this course reports any such finding. The County returned the property to the closest living legal heirs of Charles and Willa Bruce.",
+            sourceLessonSlug: "wwr-bruces-beach-return",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
