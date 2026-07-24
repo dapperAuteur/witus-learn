@@ -108,6 +108,8 @@ import { PRESIDENTS_HOUSE_COURSE } from "./data/presidents-house-course";
 import { FORT_HARRISON_COURSE } from "./data/fort-harrison-course";
 import { DC_BERMAN_COURSE } from "./data/dc-berman-course";
 import { SEATTLE_BOOKEND_COURSE } from "./data/seattle-bookend-course";
+import { BALTIMORE_CHAIN_COURSE } from "./data/baltimore-chain-course";
+import { PITTSBURGH_PLAYBOOK_COURSE } from "./data/pittsburgh-playbook-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
@@ -719,6 +721,8 @@ async function main() {
     { slug: "dc-where-the-instrument-was-blessed", course: DC_BERMAN_COURSE, category: "Culture & History" },
     { slug: "philadelphia-the-university-and-the-block", course: PHILADELPHIA_UNIVERSITY_COURSE, category: "Culture & History" },
     { slug: "seattle-the-modern-bookend", course: SEATTLE_BOOKEND_COURSE, category: "Culture & History" },
+    { slug: "baltimore-the-whole-chain", course: BALTIMORE_CHAIN_COURSE, category: "Culture & History" },
+    { slug: "pittsburgh-where-the-playbook-was-written", course: PITTSBURGH_PLAYBOOK_COURSE, category: "Culture & History" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

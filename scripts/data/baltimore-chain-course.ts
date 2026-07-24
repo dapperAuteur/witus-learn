@@ -75,24 +75,6 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - Maryland Center for History and Culture. (n.d.). *Baltimore's pursuit of fair housing: A brief history*. https://www.mdhistory.org/baltimores-pursuit-of-fair-housing-a-brief-history/
 - Maryland Historical Trust. (n.d.). *Old West Baltimore Historic District*. Maryland Inventory of Historic Properties. https://mht.maryland.gov/
 - Power, G. (1983). Apartheid Baltimore style: The residential segregation ordinances of 1910-1913. *Maryland Law Review, 42*(2), 289-329. https://digitalcommons.law.umaryland.edu/mlr/vol42/iss2/4/`,
-      recallContent: [
-        {
-          prompt: "What is Old West Baltimore, and why was the Black community concentrated there?",
-          answer: "A cluster of west-side neighbourhoods (Upton, Harlem Park, Sandtown-Winchester, Druid Heights, Marble Hill and the Pennsylvania and Druid Hill Avenue blocks) that formed the historic centre of Black Baltimore. It was concentrated because Black Baltimoreans were confined there by custom, law, contract and the mortgage market. The density is the product of the confinement.",
-        },
-        {
-          prompt: "Name three people who came out of Old West Baltimore.",
-          answer: "Thurgood Marshall, who grew up on Division Street before arguing Brown v. Board and joining the Supreme Court; the composer Eubie Blake; and the singer Billie Holiday, who spent much of her childhood in Baltimore. The Baltimore Afro-American newspaper also grew up there.",
-        },
-        {
-          prompt: "What happened at 1834 McCulloh Street in the summer of 1910?",
-          answer: "The Black lawyer W. Ashbie Hawkins bought the house and had his law partner George W. F. McMechen, a Yale Law graduate, move into it on a white block. The white neighbours organised and pushed City Hall to pass a segregation ordinance. The trigger was a Black professional on a good street.",
-        },
-        {
-          prompt: "Which two prerequisite courses does this one build on, and what does each teach?",
-          answer: "The Green Book: How to Read a Route teaches the method. Indiana Avenue: A District and What Replaced It teaches the six-beat site template and the idea of an instrument: a legal power, a body, a statute, a document.",
-        },
-      ],
     },
     {
       slug: "bc-pennsylvania-avenue",
@@ -120,20 +102,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - Visit Baltimore. (n.d.). *A tour of Pennsylvania Avenue Black Arts & Entertainment District*. https://baltimore.org/neighborhoods/a-tour-of-pennsylvania-avenue-black-arts-entertainment-district/`,
       recallContent: [
         {
-          prompt: "What was Pennsylvania Avenue to Black Baltimore, and what did Maryland designate it in 2019?",
-          answer: "The commercial and entertainment spine of Black Baltimore, known as The Avenue. In 2019 Maryland designated the area around it as the state's first Black Arts District.",
+          prompt: "What is Old West Baltimore, and why was the Black community concentrated there?",
+          answer: "A cluster of west-side neighbourhoods (Upton, Harlem Park, Sandtown-Winchester, Druid Heights, Marble Hill and the Pennsylvania and Druid Hill Avenue blocks) that formed the historic centre of Black Baltimore. It was concentrated because Black Baltimoreans were confined there by custom, law, contract and the mortgage market. The density is the product of the confinement.",
         },
         {
-          prompt: "What was the Royal Theatre, and what happened to it?",
-          answer: "It opened in 1922 as the Black-owned Douglass Theatre at 1329 Pennsylvania Avenue and became the Baltimore stop on the circuit of major Black theatres (with the Apollo, Howard, Regal and Earle). The city demolished it in 1971 and a monument now marks the site.",
+          prompt: "Name three people who came out of Old West Baltimore.",
+          answer: "Thurgood Marshall, who grew up on Division Street before arguing Brown v. Board and joining the Supreme Court; the composer Eubie Blake; and the singer Billie Holiday, who spent much of her childhood in Baltimore. The Baltimore Afro-American newspaper also grew up there.",
         },
         {
-          prompt: "Why does the Arch Social Club count as a different kind of evidence than the Royal Theatre?",
-          answer: "The Arch Social Club, founded in 1905 at 2426 Pennsylvania Avenue, is a surviving institution still operating on The Avenue. A survivor is different evidence than a monument, which marks an absence.",
+          prompt: "What happened at 1834 McCulloh Street in the summer of 1910?",
+          answer: "The Black lawyer W. Ashbie Hawkins bought the house and had his law partner George W. F. McMechen, a Yale Law graduate, move into it on a white block. The white neighbours organised and pushed City Hall to pass a segregation ordinance. The trigger was a Black professional on a good street.",
         },
         {
-          prompt: "What is the trap when making a Green Book claim about Baltimore?",
-          answer: "Asserting a street number and year from memory. You read it out of a digitized edition and carry the city with the street, because more than one American city has a Pennsylvania Avenue and Baltimore has more than one Avenue.",
+          prompt: "Which two prerequisite courses does this one build on, and what does each teach?",
+          answer: "The Green Book: How to Read a Route teaches the method. Indiana Avenue: A District and What Replaced It teaches the six-beat site template and the idea of an instrument: a legal power, a body, a statute, a document.",
         },
       ],
     },
@@ -157,16 +139,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - Power, G. (1983). Apartheid Baltimore style: The residential segregation ordinances of 1910-1913. *Maryland Law Review, 42*(2), 289-329. https://digitalcommons.law.umaryland.edu/mlr/vol42/iss2/4/`,
       recallContent: [
         {
-          prompt: "What is the Baltimore Afro-American, and why does it matter to a researcher?",
-          answer: "A Black weekly founded in 1892 by John H. Murphy Sr., a formerly enslaved man, that became one of the most influential Black newspapers in the country and still publishes. It is an archive of what Black Baltimore said about decisions at the time they were made.",
+          prompt: "What was Pennsylvania Avenue to Black Baltimore, and what did Maryland designate it in 2019?",
+          answer: "The commercial and entertainment spine of Black Baltimore, known as The Avenue. In 2019 Maryland designated the area around it as the state's first Black Arts District.",
         },
         {
-          prompt: "How was Old West Baltimore a base of resistance, not only a target?",
-          answer: "W. Ashbie Hawkins and others fought the segregation ordinances in court and won cases against them, and the Baltimore NAACP branch became one of the most active in the country. People organised and litigated rather than only having things done to them.",
+          prompt: "What was the Royal Theatre, and what happened to it?",
+          answer: "It opened in 1922 as the Black-owned Douglass Theatre at 1329 Pennsylvania Avenue and became the Baltimore stop on the circuit of major Black theatres (with the Apollo, Howard, Regal and Earle). The city demolished it in 1971 and a monument now marks the site.",
         },
         {
-          prompt: "Why does this course put 'what the community built' before the instruments in Section 3?",
-          answer: "Because a course that is only a catalogue of harm is both incomplete and inaccurate. The people confined here built a lasting press, a winning legal campaign and a cultural corridor, and that material keeps a Write piece from becoming ruin porn.",
+          prompt: "Why does the Arch Social Club count as a different kind of evidence than the Royal Theatre?",
+          answer: "The Arch Social Club, founded in 1905 at 2426 Pennsylvania Avenue, is a surviving institution still operating on The Avenue. A survivor is different evidence than a monument, which marks an absence.",
+        },
+        {
+          prompt: "What is the trap when making a Green Book claim about Baltimore?",
+          answer: "Asserting a street number and year from memory. You read it out of a digitized edition and carry the city with the street, because more than one American city has a Pennsylvania Avenue and Baltimore has more than one Avenue.",
         },
       ],
     },
@@ -381,20 +367,16 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - Maryland Historical Trust. (n.d.). *Old West Baltimore Historic District*. Maryland Inventory of Historic Properties. https://mht.maryland.gov/`,
       recallContent: [
         {
-          prompt: "Why did the rowhouse fill Baltimore between the 1790s and the 1930s?",
-          answer: "It was cheap to build in quantity, efficient to heat, and it put homeownership within reach of working people. Baltimore is more a rowhouse city than almost any other in the country.",
+          prompt: "What is the Baltimore Afro-American, and why does it matter to a researcher?",
+          answer: "A Black weekly founded in 1892 by John H. Murphy Sr., a formerly enslaved man, that became one of the most influential Black newspapers in the country and still publishes. It is an archive of what Black Baltimore said about decisions at the time they were made.",
         },
         {
-          prompt: "What does a scrubbed white marble stoop encode?",
-          answer: "A public statement of care and respectability made by people the wider city refused to respect. It is evidence that a confined community took pride in its ground, not a quaint decoration.",
+          prompt: "How was Old West Baltimore a base of resistance, not only a target?",
+          answer: "W. Ashbie Hawkins and others fought the segregation ordinances in court and won cases against them, and the Baltimore NAACP branch became one of the most active in the country. People organised and litigated rather than only having things done to them.",
         },
         {
-          prompt: "What is Formstone, and why do preservationists argue about it?",
-          answer: "A moulded cement facing imitating stone, patented in 1937 and applied to many rowhouses; John Waters called it the polyester of brick. Removing it to expose original brick can erase a working-class, mid-century Black and immigrant history, so the original surface is a choice about which past to keep.",
-        },
-        {
-          prompt: "How does the alley house carry the segregation story?",
-          answer: "Alley houses on narrow interior alleys were the cheapest housing in the city and disproportionately where the poorest residents, including many Black families, were pushed. A block could hold a hierarchy, and the overcrowding the city later measured and used to justify clearance was partly the alley houses it had allowed.",
+          prompt: "Why does this course put 'what the community built' before the instruments in Section 3?",
+          answer: "Because a course that is only a catalogue of harm is both incomplete and inaccurate. The people confined here built a lasting press, a winning legal campaign and a cultural corridor, and that material keeps a Write piece from becoming ruin porn.",
         },
       ],
     },
@@ -418,20 +400,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - Hayward, M., & Belfoure, C. (2001). *The Baltimore rowhouse*. Princeton Architectural Press.`,
       recallContent: [
         {
-          prompt: "What is a Baltimore ground rent?",
-          answer: "An arrangement where the homeowner owns the house but not the land, which is held on a 99-year lease renewable forever, and pays an annual ground rent to the owner of the ground. It came from English colonial practice.",
+          prompt: "Why did the rowhouse fill Baltimore between the 1790s and the 1930s?",
+          answer: "It was cheap to build in quantity, efficient to heat, and it put homeownership within reach of working people. Baltimore is more a rowhouse city than almost any other in the country.",
         },
         {
-          prompt: "Why did developers use ground rent, and how common is it?",
-          answer: "Separating land from house cut the purchase price and was presented as a way to make homeownership affordable to working-class buyers. As many as roughly 100,000 or more Baltimore properties have carried a ground rent.",
+          prompt: "What does a scrubbed white marble stoop encode?",
+          answer: "A public statement of care and respectability made by people the wider city refused to respect. It is evidence that a confined community took pride in its ground, not a quaint decoration.",
         },
         {
-          prompt: "Why did ground rent become a hazard, and what changed in 2007?",
-          answer: "If the small annual rent went unpaid, the ground owner could use ejectment to take the whole house, and a 2006 Baltimore Sun investigation found homeowners losing houses over tiny debts. Maryland reformed the system in 2007 so a missed ground rent produces a lien but not a forfeiture.",
+          prompt: "What is Formstone, and why do preservationists argue about it?",
+          answer: "A moulded cement facing imitating stone, patented in 1937 and applied to many rowhouses; John Waters called it the polyester of brick. Removing it to expose original brick can erase a working-class, mid-century Black and immigrant history, so the original surface is a choice about which past to keep.",
         },
         {
-          prompt: "What is the point of teaching ground rent before Section 3, given it was not a racial instrument?",
-          answer: "It shows that the ground under a Baltimore house already carries a stack of legal claims before segregation instruments arrive. The zoning line, covenant, mortgage grade and highway taking act on ground that is already a dense legal object, and the record-reading skill transfers.",
+          prompt: "How does the alley house carry the segregation story?",
+          answer: "Alley houses on narrow interior alleys were the cheapest housing in the city and disproportionately where the poorest residents, including many Black families, were pushed. A block could hold a hierarchy, and the overcrowding the city later measured and used to justify clearance was partly the alley houses it had allowed.",
         },
       ],
     },
@@ -462,20 +444,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - National Park Service. (n.d.). *National Register of Historic Places: Frequently asked questions*. https://www.nps.gov/subjects/nationalregister/faqs.htm`,
       recallContent: [
         {
-          prompt: "Read a Baltimore block as a document. What do the rowhouse, the alley house, the marble steps and the ground rent each tell you?",
-          answer: "The rowhouse: the city was built for working people at scale. The alley house: a hierarchy inside the district, with the poorest, many Black, given the least room. The marble steps: residents refused to be read as their conditions. The ground rent: the land was a layered legal object before any segregation instrument touched it.",
+          prompt: "What is a Baltimore ground rent?",
+          answer: "An arrangement where the homeowner owns the house but not the land, which is held on a 99-year lease renewable forever, and pays an annual ground rent to the owner of the ground. It came from English colonial practice.",
         },
         {
-          prompt: "What does survival on this ground correlate with?",
-          answer: "Organisation, ownership and timing, not importance. The Royal Theatre was one of the most important buildings on The Avenue and it is gone, because designation arrived too late.",
+          prompt: "Why did developers use ground rent, and how common is it?",
+          answer: "Separating land from house cut the purchase price and was presented as a way to make homeownership affordable to working-class buyers. As many as roughly 100,000 or more Baltimore properties have carried a ground rent.",
         },
         {
-          prompt: "Does National Register listing stop a private owner from demolishing a building, and what does in Baltimore?",
-          answer: "No. Federal listing is recognition plus review leverage when federal money or a permit is involved, plus some tax credits. Local designation by Baltimore's Commission for Historical and Architectural Preservation (CHAP) is what can slow or stop a demolition.",
+          prompt: "Why did ground rent become a hazard, and what changed in 2007?",
+          answer: "If the small annual rent went unpaid, the ground owner could use ejectment to take the whole house, and a 2006 Baltimore Sun investigation found homeowners losing houses over tiny debts. Maryland reformed the system in 2007 so a missed ground rent produces a lien but not a forfeiture.",
         },
         {
-          prompt: "State the timing rule that shapes the whole course.",
-          answer: "The instruments did their work between 1910 and the 1970s, and most preservation protections came later. Preservation law arrived after the clearance, which is why beat 3 is about instruments rather than regret.",
+          prompt: "What is the point of teaching ground rent before Section 3, given it was not a racial instrument?",
+          answer: "It shows that the ground under a Baltimore house already carries a stack of legal claims before segregation instruments arrive. The zoning line, covenant, mortgage grade and highway taking act on ground that is already a dense legal object, and the record-reading skill transfers.",
         },
       ],
     },
@@ -516,20 +498,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - Power, G. (1983). Apartheid Baltimore style: The residential segregation ordinances of 1910-1913. *Maryland Law Review, 42*(2), 289-329. https://digitalcommons.law.umaryland.edu/mlr/vol42/iss2/4/`,
       recallContent: [
         {
-          prompt: "What is the headline claim about Baltimore's 1910 ordinance, and why must it be held lightly?",
-          answer: "That it was the first residential racial segregation ordinance in the United States. It is true, but it compresses a seven-year fight into one date: the ordinance was actually a chain of four laws, each struck and redrafted, not one clean statute.",
+          prompt: "Read a Baltimore block as a document. What do the rowhouse, the alley house, the marble steps and the ground rent each tell you?",
+          answer: "The rowhouse: the city was built for working people at scale. The alley house: a hierarchy inside the district, with the poorest, many Black, given the least room. The marble steps: residents refused to be read as their conditions. The ground rent: the land was a layered legal object before any segregation instrument touched it.",
         },
         {
-          prompt: "What did the original Ordinance No. 610 actually do?",
-          answer: "It barred a Black resident from moving onto a majority-white block and a white resident from moving onto a majority-Black block, reaching churches and schools too. It did not create anything; it froze each block's colour as of the day it passed and criminalised crossing that line.",
+          prompt: "What does survival on this ground correlate with?",
+          answer: "Organisation, ownership and timing, not importance. The Royal Theatre was one of the most important buildings on The Avenue and it is gone, because designation arrived too late.",
         },
         {
-          prompt: "Who signed the first ordinance, and why is that a lesson in verifying?",
-          answer: "Mayor J. Barry Mahool, a Progressive reformer who backed women's suffrage and social justice, per Power's reading of the primary records. Popular accounts disagree on the date and even the mayor, so you go to the scholarship that read the record rather than to the summary.",
+          prompt: "Does National Register listing stop a private owner from demolishing a building, and what does in Baltimore?",
+          answer: "No. Federal listing is recognition plus review leverage when federal money or a permit is involved, plus some tax credits. Local designation by Baltimore's Commission for Historical and Architectural Preservation (CHAP) is what can slow or stop a demolition.",
         },
         {
-          prompt: "How were the ordinances finally stopped?",
-          answer: "State v. Gurry (1913) voided one as applied because it stripped owners of vested property rights, and Buchanan v. Warley (1917), a Louisville case, had the Supreme Court end racial zoning nationally under the Fourteenth Amendment. Baltimore's ordinances became unenforceable rather than being repealed.",
+          prompt: "State the timing rule that shapes the whole course.",
+          answer: "The instruments did their work between 1910 and the 1970s, and most preservation protections came later. Preservation law arrived after the clearance, which is why beat 3 is about instruments rather than regret.",
         },
       ],
     },
@@ -558,20 +540,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - *The Baltimore Sun*. (2015, March 27). *1893 letter details racially restrictive covenants in city neighborhoods*. https://www.baltimoresun.com/2015/03/27/1893-letter-details-racially-restrictive-covenants-in-city-neighborhoods/`,
       recallContent: [
         {
-          prompt: "What is a racial restrictive covenant, and why is it in the same records as ground rent?",
-          answer: "A promise written into the deed that the property will never be sold to or occupied by a named group; because it rides in the deed it binds every later owner. It lives in the land records, the same place as the ground lease, so the record-reading skill from Section 2 transfers directly.",
+          prompt: "What is the headline claim about Baltimore's 1910 ordinance, and why must it be held lightly?",
+          answer: "That it was the first residential racial segregation ordinance in the United States. It is true, but it compresses a seven-year fight into one date: the ordinance was actually a chain of four laws, each struck and redrafted, not one clean statute.",
         },
         {
-          prompt: "What did the Roland Park Company do in 1893 versus 1913, and why does the timing matter?",
-          answer: "In 1893 its attorneys advised against a racial covenant as probably unconstitutional. About twenty years later, when Guilford opened in 1913, it began writing the covenant into deeds. The 1913 date is the same year as the fourth zoning ordinance and four years before Buchanan, so covenants ran parallel to zoning, not after it.",
+          prompt: "What did the original Ordinance No. 610 actually do?",
+          answer: "It barred a Black resident from moving onto a majority-white block and a white resident from moving onto a majority-Black block, reaching churches and schools too. It did not create anything; it froze each block's colour as of the day it passed and criminalised crossing that line.",
         },
         {
-          prompt: "Why did the private covenant appear when the zoning ordinance was still in force?",
-          answer: "Because the public instrument was fragile: the ordinance kept being struck in court. A deed restriction gave the same result permanently, with no council vote or judge to lose in front of. The chain is a lineage of purpose, not a clean sequence in time.",
+          prompt: "Who signed the first ordinance, and why is that a lesson in verifying?",
+          answer: "Mayor J. Barry Mahool, a Progressive reformer who backed women's suffrage and social justice, per Power's reading of the primary records. Popular accounts disagree on the date and even the mayor, so you go to the scholarship that read the record rather than to the summary.",
         },
         {
-          prompt: "What exactly did Shelley v. Kraemer (1948) do to covenants, and what did it not do?",
-          answer: "It held that courts could not enforce racial covenants, because state enforcement would violate the Fourteenth Amendment. It did not erase them: the language stayed in the deeds and simply became unenforceable, which is why many Baltimore deeds still carry the dead clause.",
+          prompt: "How were the ordinances finally stopped?",
+          answer: "State v. Gurry (1913) voided one as applied because it stripped owners of vested property rights, and Buchanan v. Warley (1917), a Louisville case, had the Supreme Court end racial zoning nationally under the Fourteenth Amendment. Baltimore's ordinances became unenforceable rather than being repealed.",
         },
       ],
     },
@@ -607,20 +589,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
       recallContent: [
         {
-          prompt: "What was the 1937 HOLC map of Baltimore, and why is it strong teaching evidence?",
-          answer: "A federal Residential Security Map grading neighbourhoods A (green) to D (red), with the covenant suburbs green and blue and Old West Baltimore yellow and red. Its written area descriptions name race as a lending hazard, so it is the government's own mindset written down and coloured in.",
+          prompt: "What is a racial restrictive covenant, and why is it in the same records as ground rent?",
+          answer: "A promise written into the deed that the property will never be sold to or occupied by a named group; because it rides in the deed it binds every later owner. It lives in the land records, the same place as the ground lease, so the record-reading skill from Section 2 transfers directly.",
         },
         {
-          prompt: "Why do scholars dispute the tidy claim that the HOLC map caused Baltimore's decline?",
-          answer: "Because the maps were largely confidential internal documents rather than circulars to lenders, and HOLC's own lending went into red areas. Later work does find the boundaries carried some independent long-run effect, so the map is real evidence with real correlation, but not a proven single cause.",
+          prompt: "What did the Roland Park Company do in 1893 versus 1913, and why does the timing matter?",
+          answer: "In 1893 its attorneys advised against a racial covenant as probably unconstitutional. About twenty years later, when Guilford opened in 1913, it began writing the covenant into deeds. The 1913 date is the same year as the fourth zoning ordinance and four years before Buchanan, so covenants ran parallel to zoning, not after it.",
         },
         {
-          prompt: "Why does this course lean on the FHA Underwriting Manual rather than the map?",
-          answer: "Because the manual is a documented federal instrument whose own words are undisputed. It required properties to stay occupied by the same racial classes, listed inharmonious racial groups as an adverse influence, and recommended deed restrictions prohibiting occupancy except by the intended race, endorsing the private covenants in writing.",
+          prompt: "Why did the private covenant appear when the zoning ordinance was still in force?",
+          answer: "Because the public instrument was fragile: the ordinance kept being struck in court. A deed restriction gave the same result permanently, with no council vote or judge to lose in front of. The chain is a lineage of purpose, not a clean sequence in time.",
         },
         {
-          prompt: "State the method lesson about a disputed instrument versus a documented one.",
-          answer: "When a vivid instrument's causal role is disputed and a duller instrument's words are undisputed, build the argument on the words. A picture persuades; a quotation proves. Prefer the instrument you can quote.",
+          prompt: "What exactly did Shelley v. Kraemer (1948) do to covenants, and what did it not do?",
+          answer: "It held that courts could not enforce racial covenants, because state enforcement would violate the Fourteenth Amendment. It did not erase them: the language stayed in the deeds and simply became unenforceable, which is why many Baltimore deeds still carry the dead clause.",
         },
       ],
     },
@@ -648,20 +630,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
       recallContent: [
         {
-          prompt: "What is the Highway to Nowhere, and why was it left unfinished?",
-          answer: "A 1.4-mile sunken section of US 40 (Franklin-Mulberry) cut through West Baltimore around Rosemont, Harlem Park and Franklin Square in the late 1960s and early 1970s. It was meant to link Interstate 70 to the harbour, but community and environmental opposition stopped the larger system, so the built leg just ends in a trench.",
+          prompt: "What was the 1937 HOLC map of Baltimore, and why is it strong teaching evidence?",
+          answer: "A federal Residential Security Map grading neighbourhoods A (green) to D (red), with the covenant suburbs green and blue and Old West Baltimore yellow and red. Its written area descriptions name race as a lending hazard, so it is the government's own mindset written down and coloured in.",
         },
         {
-          prompt: "What are the reported displacement figures, and how should you handle them?",
-          answer: "About 971 homes, 62 businesses and one school demolished, and roughly 1,500 residents displaced. Give them their owner, note that the block count varies (about fourteen contiguous blocks versus about twenty demolished) because sources count different things, and remember they are demolition counts, not a full survey of what was lost.",
+          prompt: "Why do scholars dispute the tidy claim that the HOLC map caused Baltimore's decline?",
+          answer: "Because the maps were largely confidential internal documents rather than circulars to lenders, and HOLC's own lending went into red areas. Later work does find the boundaries carried some independent long-run effect, so the map is real evidence with real correlation, but not a proven single cause.",
         },
         {
-          prompt: "How is the highway instrument different from the zoning and covenant instruments?",
-          answer: "The ordinance and covenants aimed at Black neighbourhoods and then failed in law, struck down and disabled. The highway succeeded at the clearance and then failed at its own purpose: it displaced 1,500 people for a road that never carried the downtown traffic, because the rest of it was never built.",
+          prompt: "Why does this course lean on the FHA Underwriting Manual rather than the map?",
+          answer: "Because the manual is a documented federal instrument whose own words are undisputed. It required properties to stay occupied by the same racial classes, listed inharmonious racial groups as an adverse influence, and recommended deed restrictions prohibiting occupancy except by the intended race, endorsing the private covenants in writing.",
         },
         {
-          prompt: "What turns the highway from a disaster that happened into a decision someone made?",
-          answer: "Naming the body that chose the route. The alignment was selected by transportation officials through a planning and right-of-way process that left alignment studies, right-of-way maps and condemnation filings, which are public records this course has not yet fully read.",
+          prompt: "State the method lesson about a disputed instrument versus a documented one.",
+          answer: "When a vivid instrument's causal role is disputed and a duller instrument's words are undisputed, build the argument on the words. A picture persuades; a quotation proves. Prefer the instrument you can quote.",
         },
       ],
     },
@@ -713,20 +695,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - *The Baltimore Sun*. (2015, March 27). *1893 letter details racially restrictive covenants in city neighborhoods*. https://www.baltimoresun.com/2015/03/27/1893-letter-details-racially-restrictive-covenants-in-city-neighborhoods/`,
       recallContent: [
         {
-          prompt: "State the argument this course rests on, and the one-line verdict of the chronology test.",
-          answer: "That Baltimore shows one clean sequence, zoning then covenants then redlining then the highway, each handing off to the next toward one end. Verdict: the chain holds as a lineage of purpose and fails as a clean baton pass in time.",
+          prompt: "What is the Highway to Nowhere, and why was it left unfinished?",
+          answer: "A 1.4-mile sunken section of US 40 (Franklin-Mulberry) cut through West Baltimore around Rosemont, Harlem Park and Franklin Square in the late 1960s and early 1970s. It was meant to link Interstate 70 to the harbour, but community and environmental opposition stopped the larger system, so the built leg just ends in a trench.",
         },
         {
-          prompt: "Give the strongest way the chain fails the chronology test.",
-          answer: "Zoning and covenants overlap rather than sequence. Guilford's covenant is 1913, contemporaneous with the ordinances and four years before Buchanan, and it appeared because the zoning was failing in court, not after it was spent. 'First zoning, then covenants' is wrong on the dates.",
+          prompt: "What are the reported displacement figures, and how should you handle them?",
+          answer: "About 971 homes, 62 businesses and one school demolished, and roughly 1,500 residents displaced. Give them their owner, note that the block count varies (about fourteen contiguous blocks versus about twenty demolished) because sources count different things, and remember they are demolition counts, not a full survey of what was lost.",
         },
         {
-          prompt: "Why does the course refuse to say 'the red map caused the decline' or 'one hand ran the chain'?",
-          answer: "Because the redlining causal link is disputed, and stating a disputed link as fact would poison the chain. And because a council, a private company, a federal corporation, the FHA and a state highway department each used a different power over sixty years: the purpose was shared, but the authorship was plural.",
+          prompt: "How is the highway instrument different from the zoning and covenant instruments?",
+          answer: "The ordinance and covenants aimed at Black neighbourhoods and then failed in law, struck down and disabled. The highway succeeded at the clearance and then failed at its own purpose: it displaced 1,500 people for a road that never carried the downtown traffic, because the rest of it was never built.",
         },
         {
-          prompt: "Name the three method lessons from testing the chain.",
-          answer: "Build the chronology before the argument; a weakened claim that survives beats a strong claim that does not; and report the weakening, because a chain you can check is worth more than a story you cannot.",
+          prompt: "What turns the highway from a disaster that happened into a decision someone made?",
+          answer: "Naming the body that chose the route. The alignment was selected by transportation officials through a planning and right-of-way process that left alignment studies, right-of-way maps and condemnation filings, which are public records this course has not yet fully read.",
         },
       ],
     },
@@ -1109,24 +1091,20 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 - WYPR. (2023, September 28). *Maryland releases three potential Red Line routes, each with rail and bus options*. https://www.wypr.org/the-baltimore-banner/2023-09-28/maryland-releases-three-potential-red-line-routes-each-with-rail-and-bus-options`,
       recallContent: [
         {
-          prompt: "What are the four questions to ask about any parcel's future, in order?",
-          answer: "What does the comprehensive plan say it should become; what does the zoning permit today; is there an area-specific plan and where does it stand; and who decides, when do they meet, and is the agenda public.",
+          prompt: "State the argument this course rests on, and the one-line verdict of the chronology test.",
+          answer: "That Baltimore shows one clean sequence, zoning then covenants then redlining then the highway, each handing off to the next toward one end. Verdict: the chain holds as a lineage of purpose and fails as a clean baton pass in time.",
         },
         {
-          prompt: "What is Baltimore's comprehensive plan, and what is its current zoning code?",
-          answer: "The Comprehensive Master Plan, prepared by the Department of Planning and adopted by the Planning Commission. The zoning code is TransForm Baltimore, Ordinance 16-581, in effect since June 5, 2017, replacing the 1971 code. The plan is policy; the zoning is the enforceable rule.",
+          prompt: "Give the strongest way the chain fails the chronology test.",
+          answer: "Zoning and covenants overlap rather than sequence. Guilford's covenant is 1913, contemporaneous with the ordinances and four years before Buchanan, and it appeared because the zoning was failing in court, not after it was spent. 'First zoning, then covenants' is wrong on the dates.",
         },
         {
-          prompt: "What is West Baltimore United, and what two federal grants are attached to it?",
-          answer: "A Baltimore City Department of Transportation effort to retrofit the US 40 corridor and reconnect the divided neighbourhoods. A first Reconnecting Communities grant on the order of two million dollars paid for a planning and concept study, and on January 7, 2025 the delegation announced about 85.5 million dollars from the USDOT Reconnecting Communities Program for the first construction phase: a cap over one block, ramp removal and safety work.",
+          prompt: "Why does the course refuse to say 'the red map caused the decline' or 'one hand ran the chain'?",
+          answer: "Because the redlining causal link is disputed, and stating a disputed link as fact would poison the chain. And because a council, a private company, a federal corporation, the FHA and a state highway department each used a different power over sixty years: the purpose was shared, but the authorship was plural.",
         },
         {
-          prompt: "How does the course treat the Red Line's connection to the trench, and why?",
-          answer: "As proposed, not settled. Governor Moore relaunched the Red Line in 2023 and light rail was named the recommended mode on June 28, 2024, but the alignment was still being defined and the preferred route not yet chosen. You separate what is decided and funded (the cap, ramps, safety) from what is proposed (the exact Red Line route).",
-        },
-        {
-          prompt: "Why is Baltimore's beat-5 answer different from the Indianapolis prerequisite's?",
-          answer: "In Indianapolis the area plan had run for years and adopted nothing, so 'not adopted yet' was the finding. On Franklin-Mulberry there is awarded federal money and a construction phase underway, so the finding is a funded, moving project on the same ground the history taught you to read.",
+          prompt: "Name the three method lessons from testing the chain.",
+          answer: "Build the chronology before the argument; a weakened claim that survives beats a strong claim that does not; and report the weakening, because a chain you can check is worth more than a story you cannot.",
         },
       ],
     },
@@ -1477,6 +1455,28 @@ The essay, plus a short **source list** in APA 7: every date, dollar figure, gra
       slug: "bc-what-comes-next",
       title: "What this course set up, and where the chain runs next",
       section: "Section 6 · Write",
+      recallContent: [
+        {
+          prompt: "What are the four questions to ask about any parcel's future, in order?",
+          answer: "What does the comprehensive plan say it should become; what does the zoning permit today; is there an area-specific plan and where does it stand; and who decides, when do they meet, and is the agenda public.",
+        },
+        {
+          prompt: "What is Baltimore's comprehensive plan, and what is its current zoning code?",
+          answer: "The Comprehensive Master Plan, prepared by the Department of Planning and adopted by the Planning Commission. The zoning code is TransForm Baltimore, Ordinance 16-581, in effect since June 5, 2017, replacing the 1971 code. The plan is policy; the zoning is the enforceable rule.",
+        },
+        {
+          prompt: "What is West Baltimore United, and what two federal grants are attached to it?",
+          answer: "A Baltimore City Department of Transportation effort to retrofit the US 40 corridor and reconnect the divided neighbourhoods. A first Reconnecting Communities grant on the order of two million dollars paid for a planning and concept study, and on January 7, 2025 the delegation announced about 85.5 million dollars from the USDOT Reconnecting Communities Program for the first construction phase: a cap over one block, ramp removal and safety work.",
+        },
+        {
+          prompt: "How does the course treat the Red Line's connection to the trench, and why?",
+          answer: "As proposed, not settled. Governor Moore relaunched the Red Line in 2023 and light rail was named the recommended mode on June 28, 2024, but the alignment was still being defined and the preferred route not yet chosen. You separate what is decided and funded (the cap, ramps, safety) from what is proposed (the exact Red Line route).",
+        },
+        {
+          prompt: "Why is Baltimore's beat-5 answer different from the Indianapolis prerequisite's?",
+          answer: "In Indianapolis the area plan had run for years and adopted nothing, so 'not adopted yet' was the finding. On Franklin-Mulberry there is awarded federal money and a construction phase underway, so the finding is a funded, moving project on the same ground the history taught you to read.",
+        },
+      ],
       body: `You came in with a city and you leave with a method. Baltimore was the right place to learn it because you did not have to travel to see the whole sequence: **racial zoning, then restrictive covenants, then redlining, then the road**, four tools reaching for one end, all within one set of neighborhoods.
 
 ## What held, and what did not
