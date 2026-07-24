@@ -1043,6 +1043,485 @@ Here is the accurate claim, and it is smaller and better than the one we started
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · The Other Strong Lines  (each TESTED, and one whole category left open)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "htt-milliken-line",
+      title: "12 · Detroit: a boundary case that two other courses hang on",
+      section: "Section 4 · The Other Strong Lines",
+      body: `Section 3 worked one edge. **This section works three more and one whole category, and every one of them gets a verdict in writing.** Start with the case that turned a line on a map into a wall.
+
+**The instrument.** *Milliken v. Bradley*, **418 U.S. 717**, decided **July 25, 1974**. A district court had found Detroit's schools unlawfully segregated with the State of Michigan implicated, concluded that a remedy confined to Detroit could not work, and ordered a metropolitan plan covering **Detroit plus 53 of the 85 outlying suburban school districts** (*Milliken v. Bradley*, 1974).
+
+**The Supreme Court's threshold, in its own words:**
+
+> "Before the boundaries of separate and autonomous school districts may be set aside by consolidating the separate units for remedial purposes or by imposing a cross-district remedy, it must first be shown that there has been a constitutional violation within one district that produces a significant segregative effect in another district." (*Milliken v. Bradley*, 1974, pp. 744-745.)
+
+**And the escape clause, which is the part that matters most here:**
+
+> "Thus an interdistrict remedy might be in order where the racially discriminatory acts of one or more school districts caused racial segregation in an adjacent district, **or where district lines have been deliberately drawn on the basis of race**." (*Milliken v. Bradley*, 1974, p. 745.)
+
+## Edge A. Detroit to Indianapolis: the cleanest connection in this course
+
+**The claim:** the Detroit decision governed what happened to the Indianapolis school desegregation case.
+
+| Question | Result |
+|---|---|
+| **1. Chronology** | **Passes.** Milliken is decided July 25, 1974; the Seventh Circuit applies it in August 1974 |
+| **2. Mechanism** | **Passes.** Law, and the most binding kind: a lower federal court must follow the Supreme Court |
+| **3. Document** | **Passes, in writing.** The Seventh Circuit opinion names Milliken and reverses in accordance with it |
+| **4. Alternative cause** | **Passes.** There is no alternative: a court of appeals applying a two-week-old Supreme Court decision is not a coincidence |
+
+The Seventh Circuit's own sentence does the work:
+
+> "In accordance with *Milliken v. Bradley*, we reverse the district court's findings, conclusions, orders and rulings insofar as they pertain to a metropolitan remedy beyond the Uni-Gov boundaries; insofar as they pertain to a remedy within the boundaries of Uni-Gov, we vacate those rulings and remand for further proceedings consistent with that decision." (*United States v. Board of School Commissioners of the City of Indianapolis*, 1974, p. 84.)
+
+**Verdict: source to use, all four questions passed.** This is the strongest edge in the course, stronger even than Berman to Kelo, because the receiving court both names the source and changes its own judgment on the same page.
+
+**And the interesting half, which the gym course established.** Indianapolis then went through **Milliken's own escape clause**. Because the 1969 Unigov statute had extended the city's boundaries without extending the school district's, the plaintiffs had the one thing Milliken demands: **a decision, on the record, about the line itself.** An inter-district remedy inside Uni-Gov survived, and buses ran from 1981 to 2016. **Indianapolis is one of a small number of American metropolitan areas where a cross-district remedy survived Milliken and was actually carried out**, alongside New Castle County, Delaware and Jefferson County, Kentucky. **The general rule is Milliken; Indianapolis is the exception, and it is an exception only because a legislature wrote the evidence down.**
+
+## Edge B. Detroit and Seattle: a pair, not a line
+
+**The claim, as it is usually put:** *Milliken* and *Parents Involved in Community Schools v. Seattle School District No. 1* (2007) are the two ends of one argument.
+
+**That is true, and it is a different kind of truth.** *Milliken* limits what a **court may compel** across a district line. *Parents Involved* limits what a **district may voluntarily choose** to do with race in student assignment, in a district the opinion records had **"never operated legally separate schools for students of different races, nor has it ever been subject to court-ordered desegregation"** (*Parents Involved*, 2007). **Compulsion at one end, choice at the other, thirty-three years apart.**
+
+**Now grade it honestly.** Reading the two together is genuinely illuminating and the Seattle course is built on it. **But this course did not verify a citation chain from one to the other**, and it will not assert one it has not read. So the classification is **doctrine pair**, rank 3, not source to use.
+
+**Say the difference out loud, because it is the point of the whole section.** **The gym course and the Seattle course both hang on Milliken, and only one of them hangs on it by a documented line.** Indianapolis is bound to Detroit by a citation in a federal opinion. Seattle is related to Detroit by a shared question. **Both relationships are worth teaching. They are not the same relationship, and using one word for both would be the exact error lesson 2 was written to prevent.**
+
+## Sources
+- Milliken v. Bradley, 418 U.S. 717 (1974). https://www.law.cornell.edu/supremecourt/text/418/717
+- Parents Involved in Community Schools v. Seattle School District No. 1, 551 U.S. 701 (2007). https://www.law.cornell.edu/supremecourt/text/551/701
+- United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). https://www.courtlistener.com/opinion/321692/united-states-of-america-donny-brurell-buckley-intervening-v-board-of/`,
+      recallContent: [
+        {
+          prompt: "Why does the Berman-to-Indiana-Avenue edge fail the chronology test?",
+          answer: "Because Indiana's own blight machinery dates from 1945 and demolition of homes near the Avenue began in 1948, six years before Berman was decided in November 1954. A cause cannot postdate effects already under way.",
+        },
+        {
+          prompt: "What is missing at the receiving end of that edge?",
+          answer: "A document. No record has been read in this series in which an Indianapolis body cites Berman. The Indianapolis Redevelopment Commission's minutes are public and unread, so the receiving end is currently an assumption.",
+        },
+        {
+          prompt: "What are the two alternative causes that nearly account for Indiana Avenue's clearance without Berman?",
+          answer: "Indiana's own 1945 blight statute, which owes nothing to Berman, and Title I money from the Housing Act of 1949, which was available to every city in the country at once.",
+        },
+        {
+          prompt: "State the verdict and the reclassified edge.",
+          answer: "Berman did not cause the clearance; it insured it. The edge stays source-to-use, but what was used is not the clearance, which was already running. What travelled is the legal security of the clearance: after November 1954 the tool could no longer be beaten on public-use grounds.",
+        },
+        {
+          prompt: "Give the sentence about instruments that arrive late.",
+          answer: "An instrument that arrives after a practice is not its cause; it is its insurance.",
+        },
+      ],
+    },
+    {
+      slug: "htt-buchanan-line",
+      title: "13 · Louisville: one case, one surviving edge, one downgraded lineage",
+      section: "Section 4 · The Other Strong Lines",
+      body: `This lesson contains **two claims about the same 1917 case**. One passes the test cleanly. **The other is the most popular story in American housing history and it does not survive contact with Baltimore's dates.**
+
+**The instrument.** *Buchanan v. Warley*, **245 U.S. 60 (1917)**. The Supreme Court struck down **Louisville's** racial zoning ordinance, holding that it violated the Fourteenth Amendment because it interfered with an owner's right to sell property (Buchanan v. Warley, 1917).
+
+## Edge A. Louisville to Baltimore: survives
+
+**The claim:** a Louisville case ended Baltimore's racial zoning.
+
+**What Baltimore had.** Not one ordinance but **a chain of four**, in **1910**, twice in **1911**, and **1913**, each struck by state courts on drafting or vested-property grounds, including *State v. Gurry* in 1913. **The 1910 ordinance is widely described as the first residential racial segregation law in the United States**, and the Baltimore course establishes that it was triggered by a Black lawyer buying a house on a white block.
+
+**What Buchanan did to it.** *Buchanan* ended the whole class of laws nationally, and **Baltimore's ordinances died with it, not by repeal but by becoming unenforceable.**
+
+| Question | Result |
+|---|---|
+| **1. Chronology** | Passes. The ordinances run 1910 to 1913; Buchanan is 1917 |
+| **2. Mechanism** | Passes. Law: a Fourteenth Amendment holding binds every state |
+| **3. Document** | Passes. The opinion, and the ordinances ceasing to be enforceable |
+| **4. Alternative cause** | Passes. Nothing else ends a class of state and municipal laws nationwide |
+
+**Verdict: source to use.** One city's lawsuit disabled another city's statute book. **Louisville and Baltimore are a pair, and neither city's story is complete without the other**, which is what plan 42 predicted before either course was written.
+
+## Edge B. The lineage claim: downgraded, and here is why
+
+**The claim, in its familiar form:** *Buchanan* struck down explicit racial zoning, so the same goal was **pushed** into private restrictive covenants, and then into administrative redlining. **Zoning, then covenants, then redlining, then highways.** A relay race with four legs.
+
+**It is a wonderful story. Run question 1 on it.**
+
+| Date | Event |
+|---|---|
+| 1910 to 1913 | Baltimore's four racial zoning ordinances |
+| **1913** | **The Roland Park Company writes a racial covenant into Guilford deeds** |
+| **1917** | ***Buchanan v. Warley* ends racial zoning** |
+| 1938 | The FHA Underwriting Manual recommends the racial deed restriction |
+| 1948 | *Shelley v. Kraemer* makes covenants judicially unenforceable |
+
+**Guilford's covenant is 1913. Buchanan is 1917.** **The covenant is four years earlier than the decision it is supposed to be a response to.** The Baltimore course found this in its own primary material and reported it: **"first zoning, then covenants" is wrong on the dates.**
+
+**And the real mechanism turns out to be more interesting than the myth.** The covenant did not appear **because** zoning had been struck down federally. It appeared **while** the zoning was failing repeatedly **in state court**. A deed restriction gave the same result permanently, with no council vote to lose and no judge to lose in front of. **The private instrument was adopted as insurance against the public one's fragility, before the public one was finally killed.**
+
+**Verdict: not an instrument lineage in the baton-pass sense. A lineage of purpose.** Four instruments aimed at one end, **overlapping in time rather than succeeding one another**, some public and some private, some local and some federal. **That is a weaker-sounding claim and a truer one, and it is the one the sibling course made, so this course carries it forward unchanged.**
+
+**The transferable rule, and it is short.** **When a lineage story requires a clean handover, check whether the next instrument was already running.** In American housing it usually was.
+
+## Sources
+- Buchanan v. Warley, 245 U.S. 60 (1917). https://supreme.justia.com/cases/federal/us/245/60/
+- Federal Housing Administration. (1938). *Underwriting manual: Underwriting and valuation procedure under Title II of the National Housing Act*. U.S. Government Printing Office.
+- Shelley v. Kraemer, 334 U.S. 1 (1948). https://www.law.cornell.edu/supremecourt/text/334/1
+- Maryland Historical Trust. (n.d.). *Old West Baltimore historic district*. https://mht.maryland.gov/`,
+      recallContent: [
+        {
+          prompt: "Why is Detroit to Indianapolis the cleanest edge in this course?",
+          answer: "Because it passes all four questions and the document is explicit: Milliken was decided July 25, 1974, and in August 1974 the Seventh Circuit reversed the metropolitan remedy beyond Uni-Gov \"in accordance with Milliken v. Bradley,\" naming the source and changing its own judgment on the same page.",
+        },
+        {
+          prompt: "What is Milliken's escape clause, and how did Indianapolis fit through it?",
+          answer: "An inter-district remedy might be in order where district lines have been deliberately drawn on the basis of race. The 1969 Unigov statute extended the city's boundaries without extending the school district's, so the plaintiffs had a decision on the record about the line itself, and a remedy inside Uni-Gov survived.",
+        },
+        {
+          prompt: "How is the Milliken and Parents Involved relationship classified, and why not higher?",
+          answer: "As a doctrine pair, rank 3. Milliken limits what a court may compel across a district line; Parents Involved limits what a district may voluntarily choose. This course did not verify a citation chain between them and will not assert one it has not read.",
+        },
+        {
+          prompt: "State the difference between how the gym course and the Seattle course hang on Milliken.",
+          answer: "Indianapolis is bound to Detroit by a citation in a federal opinion, a documented line. Seattle is related to Detroit by a shared question, a doctrine pair. Both are worth teaching, and using one word for both would be the error the taxonomy exists to prevent.",
+        },
+        {
+          prompt: "What does the Parents Involved opinion record about Seattle's history?",
+          answer: "That the district \"has never operated legally separate schools for students of different races, nor has it ever been subject to court-ordered desegregation.\" That fact is what makes it a case about voluntary choice rather than compulsion.",
+        },
+      ],
+    },
+    {
+      slug: "htt-pittsburgh-model-line",
+      title: "14 · Pittsburgh: true as to emulation, false as to a copy-chain",
+      section: "Section 4 · The Other Strong Lines",
+      body: `**Model to copy is rank 2 in the taxonomy, and this catalogue has exactly one serious candidate for it.** The Pittsburgh course tested that candidate on itself and published the result. **This lesson carries that result forward without improving it, which is the harder discipline and the reason this course can be trusted about anything else.**
+
+## What is documented, and it is a lot
+
+**Pittsburgh was early.** The **Allegheny Conference on Community Development** formed in **1944**, the **Pennsylvania Urban Redevelopment Law** passed in **1945**, the **Urban Redevelopment Authority** of Pittsburgh was incorporated on **November 18, 1946**, and **Gateway Center was underway by the start of the 1950s**, all **before** the federal Housing Act of 1949 created the national programme (Neumann, 2016; Urban Redevelopment Authority of Pittsburgh, n.d.).
+
+**Pittsburgh was studied.** The historian Tracy Neumann documents that **"in the 1950s and 1960s, more than seventy national and international delegations of urban policy tourists who hoped to replicate the Renaissance arrived in Pittsburgh,"** including visitors from Dayton and Detroit and officials from Canada, Australia, Brazil, Belgium, Germany and Scotland, and concludes that Pittsburgh's postwar renewal programme **"made it a popular model for other aging industrial cities in the 1950s and 1960s"** (Neumann, 2016).
+
+**So "Pittsburgh was celebrated and visited as a model" is not a guess. It is documented, by a named historian, with a number attached.**
+
+## Now run the test on the bigger claim
+
+**The bigger claim:** other cities copied Pittsburgh, and that copying is what emptied Black districts across the country.
+
+**Question 1, chronology.** Indianapolis identified Pat Ward's Bottom as blighted in **1945** and began demolishing in **1948**, on the same timeline as Pittsburgh's rather than after it. Washington's enabling statute is **1945**, the same year as Pennsylvania's. **These are parallel state adoptions, not a chain with Pittsburgh at the head of it.**
+
+**Question 2, mechanism.** The delegations are a real channel: people, and the reports they took home. **But look at what they came for.** Neumann's own sentence says they came to see **"how Democratic mayors and Republican businessmen had worked together to scrub clean the streets and skies of the dirty, polluted, and flood-prone city"** (Neumann, 2016). **They came for the partnership and the clean-up: smoke control, flood control, Gateway Center.**
+
+**Question 3, document.** Admiration is documented. **A copied plan in another city's file is not**, in anything this course or its sibling could verify. **A delegation admiring Gateway Center is not a city carrying home a manual for clearing a Black neighbourhood.**
+
+**Question 4, alternative cause.** And here is the finishing blow, and it is Section 2 of this course. **The Housing Act of 1949 funded the clearance instruments nationally and Berman upheld them nationally in 1954.** Cities did not need Pittsburgh's example. **They needed federal money and their own state law, and they had both.**
+
+## The verdict, in the sibling course's own words
+
+**True as to emulation. False as to a copy-chain.**
+
+Pittsburgh **assembled and showcased the public-private redevelopment machine early and visibly, and was genuinely emulated as a model of that partnership.** It is one of the prominent early reference cases for elite business power and elected government running a city's rebuilding together. **The playbook written in Pittsburgh is the partnership playbook**, not a step-by-step manual every later city followed to empty its Black district.
+
+**What travelled city to city was a reputation. What travelled to every city at once was a federal programme.**
+
+## Why this lesson is a test of the capstone rather than of Pittsburgh
+
+**A capstone has a structural temptation.** It is assembling other people's courses into one argument, and the strong version of every claim makes a better argument. **The strong version of this one would say the playbook was written in Pittsburgh and copied everywhere, which is a superb sentence and is not true.**
+
+**A sibling course weakened this claim in public. The capstone's job is to carry the weakened version forward.** If a summary is allowed to restore strength that the detailed work removed, **then every weakening any course in this series performed is temporary, and the whole citation discipline is decorative.**
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Heinz History Center. (n.d.). *Crossroads of the world: How urban renewal changed the Hill*. Senator John Heinz History Center. https://www.heinzhistorycenter.org/blog/crossroads-of-the-world-how-urban-renewal-changed-the-hill/
+- Housing Act of 1949, Pub. L. No. 81-171, 63 Stat. 413 (1949). https://www.govinfo.gov/content/pkg/STATUTE-63/pdf/STATUTE-63-Pg413.pdf
+- Neumann, T. (2016, February 1). *The "spiritual capital" of the Rust Belt: Pittsburgh and the postindustrial transformation of North Atlantic cities*. Global Urban History. https://globalurbanhistory.com/2016/02/01/the-spiritual-capital-of-the-rust-belt-pittsburgh-and-the-postindustrial-transformation-of-north-atlantic-cities/
+- Urban Redevelopment Authority of Pittsburgh. (n.d.). *History of the Urban Redevelopment Authority of Pittsburgh (URA)*. https://www.ura.org/pages/history-of-the-urban-redevelopment-authority-of-pittsburgh-ura`,
+      recallContent: [
+        {
+          prompt: "What did Buchanan v. Warley hold, and what did it do to Baltimore?",
+          answer: "That Louisville's racial zoning ordinance violated the Fourteenth Amendment because it interfered with an owner's right to sell property. It ended the whole class of laws nationally, and Baltimore's four ordinances died with it, not by repeal but by becoming unenforceable.",
+        },
+        {
+          prompt: "Why does the familiar zoning-then-covenants sequence fail?",
+          answer: "Because the Roland Park Company wrote its racial covenant into Guilford deeds in 1913, four years before Buchanan was decided in 1917. The covenant is earlier than the decision it is supposed to be a response to.",
+        },
+        {
+          prompt: "What was the covenant actually a response to, and what does that make the chain?",
+          answer: "To the zoning ordinances failing repeatedly in state court. A deed restriction gave the same result permanently with no council vote to lose. That makes it a lineage of purpose, four overlapping instruments aimed at one end, rather than a baton pass.",
+        },
+        {
+          prompt: "State the transferable rule from this lesson.",
+          answer: "When a lineage story requires a clean handover, check whether the next instrument was already running. In American housing it usually was.",
+        },
+        {
+          prompt: "How is the Louisville-to-Baltimore edge classified, and why does plan 42 matter here?",
+          answer: "Source to use, passing all four questions: one city's lawsuit disabled another city's statute book. Plan 42 predicted that Louisville and Baltimore would be a pair before either course was written.",
+        },
+      ],
+    },
+    {
+      slug: "htt-person-to-place",
+      title: "15 · Person to place: the category this course could not close",
+      section: "Section 4 · The Other Strong Lines",
+      body: `**Rank 4 in the taxonomy is the one a reader wants most.** Structures are abstract; a person has a name, a career and a set of dates, and a reader can look all of it up. Plan 42 called person-carried links "the most concrete connection a learner can hold" and told this series to hunt for them. **This lesson reports the hunt, including that it did not succeed.**
+
+## The standard this category demands
+
+**Two documents, not one.** You need the individual documented **in both places, with dates**, and you need the **practice documented in their hands**. A career summary is not enough. **"He worked in city A and later in city B" tells you he moved. It does not tell you anything moved with him.**
+
+## The candidate: Harland Bartholomew
+
+**Why he is the obvious place to look.** Bartholomew is often called the dean of American comprehensive city planning. The Cultural Landscape Foundation records that he **"worked on more than 6,000 projects during his prodigious career, producing 500 plans for cities, counties, regions, and states,"** and that **"in 1953 President Dwight Eisenhower appointed Bartholomew as chairman of the National Capital Planning Commission in Washington, D.C."** (The Cultural Landscape Foundation, n.d.).
+
+**Read that second fact against the DC course.** The National Capital Planning Commission is the body that prepared the comprehensive plan the Redevelopment Land Agency acquired land under. **The same man chaired the federal planning body for the capital while his firm sold comprehensive plans to cities across the country.** If a person carried practice between these places, he is the candidate.
+
+**And his firm's reach is documented.** Cornell University Library holds the **Harland Bartholomew and Associates planning reports, 1944-1990** (collection 6400, 6.4 cubic feet), documenting planning work across **twenty states plus the District of Columbia, including Indiana and Kentucky** (Division of Rare and Manuscript Collections, n.d.). The firm prepared, for example, *A Report Upon Comprehensive Plan: A Part of the Louisville-Jefferson County Comprehensive Plan* for the Louisville and Jefferson County Planning and Zoning Commission in **1957** (Harland Bartholomew & Associates, 1957).
+
+## Now run the test, on the edge you most want to draw
+
+**The tempting claim:** Bartholomew carried renewal practice from his firm's client cities into the clearance of Southwest Washington.
+
+**Question 1, chronology. It fails, and it fails on a date this series already knows.** The DC course established that **the first official urban renewal plan for Southwest, Area B, had been approved by the end of 1952.** **Bartholomew was appointed to chair the National Capital Planning Commission in 1953.** **He cannot be the author of the plan that cleared Southwest, because the plan was approved before he arrived.**
+
+**That is the whole edge, gone, on one date.** Notice how quickly it went, and notice that nothing about his career was wrong. **Everything in the biography checked out. The link still failed.** That is the ordinary experience of this category and the reason it is rank 4 rather than rank 1.
+
+## What survives, stated narrowly
+
+**This much is documented and worth teaching.** For seven years one man chaired the federal planning commission for the national capital while running a firm that wrote comprehensive plans for hundreds of American jurisdictions, across at least twenty states. **That is a real channel through which planning practice moved**, and it is exactly the sort of thing lesson 3 means by the "paper" and "people" mechanisms.
+
+**What it is not.** It is **not** evidence that Bartholomew caused any clearance in this catalogue, and this course does not say he did. **A channel is a road. It is not proof that a particular vehicle drove down it.**
+
+## The honest finding, and it is the most useful thing in this lesson
+
+**This course did not find a documented individual who carried a specific clearance decision from one city in this series to another.** Not a planner, not a commissioner, not a consultant. **It looked, and it is reporting an absence.**
+
+**An absence is a finding when you can say where you looked and where you did not.** So: **the Harland Bartholomew and Associates planning reports at Cornell have not been read into this course**, and they cover Indiana and Kentucky among twenty states. Neither have the project files of the redevelopment agencies in any of these cities, nor the membership rolls and conference programmes of the professional planning bodies whose meetings these officials attended. **Any of those could close this category, and one afternoon in the right box could do it.**
+
+**One last warning, because this is where careful people get careless.** **A famous name is the most seductive evidence there is**, because the career is easy to verify and the causation is not, and a reader will accept the second because you demonstrated the first. **Verify the biography, and then test the link separately.** They are two different jobs.
+
+## Sources
+- Division of Rare and Manuscript Collections. (n.d.). *Guide to the Harland Bartholomew and Associates planning reports, 1944-1990* (Collection 6400). Cornell University Library. http://rmc.library.cornell.edu/EAD/htmldocs/RMM06400.html
+- Harland Bartholomew & Associates. (1957). *A report upon comprehensive plan: A part of the Louisville-Jefferson County comprehensive plan*. Louisville and Jefferson County Planning and Zoning Commission.
+- The Cultural Landscape Foundation. (n.d.). *Harland Bartholomew*. https://www.tclf.org/pioneer/harland-bartholomew
+- Docomomo US. (n.d.). *The Southwest urban renewal area in Washington, D.C.* https://docomomo-us.org/news/the-southwest-urban-renewal-area-in-washington-d-c`,
+      recallContent: [
+        {
+          prompt: "What about the Pittsburgh model claim is documented, and by whom?",
+          answer: "That Pittsburgh was early (Allegheny Conference 1944, Pennsylvania law 1945, URA incorporated November 18 1946, Gateway Center by the early 1950s, all before the 1949 federal Act) and that it was studied: Tracy Neumann documents more than seventy national and international delegations arriving to replicate the Renaissance.",
+        },
+        {
+          prompt: "What did those delegations actually come to replicate?",
+          answer: "The public-private partnership and the downtown clean-up: how Democratic mayors and Republican businessmen worked together, plus smoke control, flood control and Gateway Center. Not a manual for clearing a Black neighbourhood.",
+        },
+        {
+          prompt: "State the verdict on the Pittsburgh model claim.",
+          answer: "True as to emulation, false as to a copy-chain. Pittsburgh assembled and showcased the public-private machine early and visibly and was genuinely emulated as a model of that partnership. The playbook written there is the partnership playbook. What travelled city to city was a reputation; what travelled to every city at once was a federal programme.",
+        },
+        {
+          prompt: "Why is this lesson described as a test of the capstone rather than of Pittsburgh?",
+          answer: "Because a capstone is tempted to restore the strong version of every claim, since the strong version makes a better argument. If a summary may restore strength the detailed work removed, then every weakening in the series is temporary and the citation discipline is decorative.",
+        },
+        {
+          prompt: "Which two things did Pittsburgh's cities not need, according to question 4?",
+          answer: "They did not need Pittsburgh's example. They needed federal money from the Housing Act of 1949 and their own state redevelopment law, and they had both, with Berman upholding the takings nationally in 1954.",
+        },
+      ],
+    },
+    {
+      slug: "htt-quiz-lines",
+      title: "16 · Quiz: the lines, tested",
+      section: "Section 4 · The Other Strong Lines",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which three later decisions cite Berman, making those edges documented lines?",
+            options: [
+              "Shelley v. Kraemer, Buchanan v. Warley and Milliken v. Bradley, the three great property decisions of the century",
+              "Poletown, Hawaii Housing Authority v. Midkiff and Kelo v. City of New London",
+              "Brown v. Board of Education, Parents Involved and United States v. Board of School Commissioners of Indianapolis",
+              "Washington v. Seattle School District No. 1, Evans v. Buchanan and Sheff v. O'Neill, the desegregation remedy cases",
+            ],
+            correctIndex: 1,
+            explanation: "A later court naming an earlier case is the cleanest documented line there is: the receiving place says in writing where it got the tool.",
+            sourceLessonSlug: "htt-berman-the-source",
+          },
+          {
+            prompt: "Which of Berman's three moves had been genuinely arguable before November 1954?",
+            options: [
+              "That the legislature rather than the judiciary is the main guardian of the public needs served by social legislation",
+              "That a housing survey may be used as evidence about the physical condition of buildings in an area",
+              "That cleared land could be conveyed to a private company and still count as a public use",
+              "That the government may exercise eminent domain at all within the boundaries of the District of Columbia",
+            ],
+            correctIndex: 2,
+            explanation: "The Court held the public end may be as well or better served through an agency of private enterprise. After Berman, public taking followed by private rebuilding was the design of the programme rather than an abuse of it.",
+            sourceLessonSlug: "htt-berman-the-source",
+          },
+          {
+            prompt: "Why does the DC-to-Indiana-Avenue edge fail the chronology test?",
+            options: [
+              "Because Berman was decided in 1970, long after all the Indianapolis clearance work had been completed",
+              "Because Indiana Avenue was cleared by a highway alignment rather than by any blight designation at all",
+              "Because the Housing Act of 1949 postdates the Indianapolis demolition and therefore cannot have funded it",
+              "Indiana's blight machinery is 1945 and demolition began in 1948, before the November 1954 decision",
+            ],
+            correctIndex: 3,
+            explanation: "A cause cannot postdate effects already under way. Indianapolis was not waiting for Washington's permission, because it already had Indiana's.",
+            sourceLessonSlug: "htt-berman-tested",
+          },
+          {
+            prompt: "What is the accurate, reclassified version of the Berman-to-Indianapolis edge?",
+            options: [
+              "Berman insured the clearance rather than causing it, and what travelled was legal security",
+              "There is no relationship of any kind between the two, and the two courses should not be taught together",
+              "Berman was decided because of what had already happened in Indianapolis during the preceding decade",
+              "Indianapolis officials attended the argument in Berman and returned home to begin the clearance work",
+            ],
+            correctIndex: 0,
+            explanation: "The edge stays source to use. What changes is what was used: not the clearance, which was already running, but the fact that after November 1954 the tool could not be beaten on public-use grounds.",
+            sourceLessonSlug: "htt-berman-tested",
+          },
+          {
+            prompt: "Which sentence does this course offer about instruments that arrive after a practice?",
+            options: [
+              "An instrument that arrives late has no legal significance for anything that happened before it",
+              "An instrument that arrives after a practice is not its cause; it is its insurance",
+              "An instrument that arrives after a practice should be treated as evidence of an earlier unwritten rule",
+              "An instrument that arrives after a practice always indicates that the practice had become controversial",
+            ],
+            correctIndex: 1,
+            explanation: "That sentence will save you from a large fraction of the bad transmission claims you will meet.",
+            sourceLessonSlug: "htt-berman-tested",
+          },
+          {
+            prompt: "What makes Detroit to Indianapolis the strongest edge in this course?",
+            options: [
+              "The two cities are close enough that officials and lawyers moved between them frequently in that era",
+              "Both cities were governed by consolidated metropolitan arrangements adopted within a few years of each other",
+              "The Seventh Circuit named Milliken and changed its own judgment in accordance with it, weeks after it was decided",
+              "Indiana and Michigan adopted nearly identical school district boundary statutes during the same legislative session",
+            ],
+            correctIndex: 2,
+            explanation: "Milliken was decided July 25, 1974, and the court of appeals applied it in August 1974. The receiving court both names the source and changes its judgment on the same page.",
+            sourceLessonSlug: "htt-milliken-line",
+          },
+          {
+            prompt: "What is Milliken's escape clause?",
+            options: [
+              "That a district may be excused from a remedy if it can show that compliance would impose an unreasonable financial burden on its own taxpayers",
+              "That an inter-district remedy might be in order where district lines have been deliberately drawn on the basis of race",
+              "That a state may substitute its own remedy for a federal one whenever its constitution provides a broader right",
+              "That a court may order consolidation of school districts once a violation has continued for more than ten years",
+            ],
+            correctIndex: 1,
+            explanation: "Indianapolis fitted through it because the 1969 Unigov statute extended the city's boundaries without extending the school district's, leaving a decision about the line itself on the record.",
+            sourceLessonSlug: "htt-milliken-line",
+          },
+          {
+            prompt: "How does this course classify the relationship between Milliken and Parents Involved?",
+            options: [
+              "A doctrine pair, not a source-to-use line",
+              "A source-to-use line, because the later decision expressly adopts the reasoning of the earlier one",
+              "An instrument lineage, because the school district boundary evolved into a different tool between them",
+              "A model-to-copy relationship, because Seattle deliberately imitated the arrangements that Detroit had used",
+            ],
+            correctIndex: 0,
+            explanation: "Milliken limits what a court may compel; Parents Involved limits what a district may voluntarily choose. This course did not verify a citation chain between them and will not assert one it has not read.",
+            sourceLessonSlug: "htt-milliken-line",
+          },
+          {
+            prompt: "What did Buchanan v. Warley do to Baltimore's racial zoning ordinances?",
+            options: [
+              "It ordered Baltimore to repeal them within a fixed period and to compensate the owners they had affected",
+              "It upheld them, on the ground that a municipality may regulate the use of land within its own boundaries",
+              "It left them untouched, because the decision applied only to the Commonwealth of Kentucky and its cities",
+              "They became unenforceable rather than repealed, because it ended the whole class of laws",
+            ],
+            correctIndex: 3,
+            explanation: "Baltimore had a chain of four ordinances, in 1910, twice in 1911 and 1913. A Louisville lawsuit disabled another city's statute book, which is source to use.",
+            sourceLessonSlug: "htt-buchanan-line",
+          },
+          {
+            prompt: "Why does the sequence \"first zoning, then covenants\" fail?",
+            options: [
+              "Because Guilford's racial covenant is 1913, four years before Buchanan was decided in 1917",
+              "Because covenants were never used in Baltimore, only in the surrounding counties of the state of Maryland",
+              "Because the Supreme Court expressly held in 1917 that covenants could not be substituted for zoning laws",
+              "Because racial zoning ordinances remained fully enforceable in Baltimore until the Fair Housing Act of 1968",
+            ],
+            correctIndex: 0,
+            explanation: "The covenant is earlier than the decision it is supposed to be a response to. The Baltimore course found this in its own material and reported it.",
+            sourceLessonSlug: "htt-buchanan-line",
+          },
+          {
+            prompt: "What was the racial covenant actually a response to, and what does the chain become?",
+            options: [
+              "To the Fair Housing Act, and the chain becomes a story about private evasion of a federal statute",
+              "To the FHA Underwriting Manual, and the chain becomes a purely federal instrument lineage over time",
+              "To the zoning ordinances failing in state court, and the chain becomes a lineage of purpose",
+              "To the arrival of the Home Owners' Loan Corporation maps, and the chain becomes a lending-market story",
+            ],
+            correctIndex: 2,
+            explanation: "A deed restriction gave the same result permanently, with no council vote to lose. Four instruments aimed at one end, overlapping in time rather than succeeding one another.",
+            sourceLessonSlug: "htt-buchanan-line",
+          },
+          {
+            prompt: "State the verdict on the claim that other cities copied Pittsburgh.",
+            options: [
+              "True in every respect, because more than seventy delegations came to Pittsburgh to study the Renaissance",
+              "False in every respect, because no evidence exists that Pittsburgh's programme was noticed elsewhere",
+              "Unresolvable, because the records that would settle it were destroyed when the Civic Arena was demolished",
+              "True as to emulation, false as to a copy-chain",
+            ],
+            correctIndex: 3,
+            explanation: "Pittsburgh was genuinely emulated as a model of the public-private partnership. The clearance instruments spread through the 1949 Act and parallel state laws instead.",
+            sourceLessonSlug: "htt-pittsburgh-model-line",
+          },
+          {
+            prompt: "Why is the Pittsburgh lesson described as a test of the capstone rather than of Pittsburgh?",
+            options: [
+              "Because a summary that may restore strength the detailed work removed makes the whole discipline decorative",
+              "Because Pittsburgh is the only city in the series whose course was written after this capstone was planned",
+              "Because the capstone had to choose between two sibling courses that reached incompatible conclusions",
+              "Because the Pittsburgh course was the last of the twelve and therefore had the least time to check its claims",
+            ],
+            correctIndex: 0,
+            explanation: "The strong version of the claim makes a better argument and is not true. A sibling course weakened it in public, and the capstone's job is to carry the weakened version forward.",
+            sourceLessonSlug: "htt-pittsburgh-model-line",
+          },
+          {
+            prompt: "Why does the Harland Bartholomew person-to-place edge fail?",
+            options: [
+              "Because no records survive of the firm's work and its client list cannot now be reconstructed at all",
+              "Because he never held any federal position and his practice was confined entirely to the state of Missouri",
+              "Southwest's Area B plan was approved by the end of 1952, and he was appointed to chair the NCPC in 1953",
+              "Because the National Capital Planning Commission had no role in the clearance of Southwest Washington",
+            ],
+            correctIndex: 2,
+            explanation: "He cannot be the author of the plan that cleared Southwest, because the plan was approved before he arrived. Everything in the biography checked out and the link still failed.",
+            sourceLessonSlug: "htt-person-to-place",
+          },
+          {
+            prompt: "What is the honest finding of the person-to-place lesson?",
+            options: [
+              "That person-carried links are impossible to establish and the category should be dropped from the taxonomy",
+              "That every planner of the era worked in several of these cities, so the category is too crowded to be useful",
+              "That the category is fully closed by Bartholomew's chairmanship of the National Capital Planning Commission",
+              "That no documented individual was found carrying a specific clearance decision between these cities",
+            ],
+            correctIndex: 3,
+            explanation: "An absence is a finding when you can say where you looked and where you did not. The Bartholomew firm's reports at Cornell, covering twenty states including Indiana and Kentucky, have not been read.",
+            sourceLessonSlug: "htt-person-to-place",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
