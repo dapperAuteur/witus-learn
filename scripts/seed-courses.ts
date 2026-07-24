@@ -112,6 +112,8 @@ import { BALTIMORE_CHAIN_COURSE } from "./data/baltimore-chain-course";
 import { PITTSBURGH_PLAYBOOK_COURSE } from "./data/pittsburgh-playbook-course";
 import { HOW_THE_TOOLS_TRAVELLED_COURSE } from "./data/how-the-tools-travelled-course";
 import { JIM_CROW_EXPORT_COURSE } from "./data/jim-crow-export-course";
+import { SCHOOLHOUSE_NETWORK_COURSE } from "./data/schoolhouse-network-course";
+import { WHERE_WE_RESTED_COURSE } from "./data/where-we-rested-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
@@ -732,6 +734,12 @@ async function main() {
     // footings, and states in its own text that it does not equate outcomes.
     { slug: "how-the-tools-travelled", course: HOW_THE_TOOLS_TRAVELLED_COURSE, category: "Culture & History" },
     { slug: "exported-how-others-studied-american-race-law", course: JIM_CROW_EXPORT_COURSE, category: "Culture & History" },
+    // The POSITIVE track (plans/44 Part 1). The catalogue teaches clearance and exclusion across
+    // sixteen courses; its SHAPE could leave a learner thinking this history is only things done
+    // to people. These teach what was built, on its own terms. Governing rule, stated in each
+    // course: never use a positive to soften a negative. The claim is co-occurrence, not balance.
+    { slug: "the-schoolhouse-network", course: SCHOOLHOUSE_NETWORK_COURSE, category: "Culture & History" },
+    { slug: "where-we-rested", course: WHERE_WE_RESTED_COURSE, category: "Culture & History" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

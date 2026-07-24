@@ -45,6 +45,8 @@ const BACKLOG: Record<string, string> = {
   "exported-how-others-studied-american-race-law": "route series capstone, unmapped",
 
   // History and culture courses that predate the standards work.
+  "where-we-rested": "positive track, unmapped; property/civics content when mapped",
+  "the-schoolhouse-network": "positive track, unmapped; strong civics/economics content when mapped",
   "great-migration-and-the-world": "unmapped",
   "africa-before-colonization": "unmapped",
   "asia-before-european-colonization": "unmapped",
