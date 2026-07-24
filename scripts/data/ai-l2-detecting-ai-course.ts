@@ -361,10 +361,10 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
           {
             prompt: "Why do \"count the fingers / check the teeth\" tips stop working?",
             options: [
-              "They were always a hoax",
-              "Generators are trained to fix every visible tell, so each tip expires",
-              "Only experts could ever see the flaws",
-              "Cameras got better",
+              "They were always a hoax right from the very beginning",
+              "Generators are trained to fix each visible tell, so tips expire",
+              "Only properly trained experts could ever see those flaws",
+              "Cameras themselves simply got a great deal better than before",
             ],
             correctIndex: 1,
             explanation:
@@ -374,10 +374,10 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
           {
             prompt: "An AI-detector website rates an image \"98% real.\" How much should that settle it?",
             options: [
-              "It's proof the image is real",
-              "Not much: NIST finds detectors can fall toward 50% on real-world content",
-              "It's proof only if the score is above 95%",
-              "It depends on the file size",
+              "It is outright proof that the image is real",
+              "Not much; NIST finds detectors fall toward 50 percent",
+              "It is proof only if the score is above 95 percent",
+              "It depends entirely on the size of the file",
             ],
             correctIndex: 1,
             explanation:
@@ -387,10 +387,10 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
           {
             prompt: "What is the durable skill that survives better AI models?",
             options: [
-              "Memorizing a longer list of visual artifacts",
-              "Provenance + lateral reading: who made it, where it came from, who independently confirms it",
-              "Trusting whichever detector scores highest",
-              "Only believing video, never photos",
+              "Memorising an ever longer list of the visual artifacts",
+              "Provenance and lateral reading: who made it and who confirms it",
+              "Trusting whichever detector happens to give the highest score",
+              "Only ever believing video footage, and never any photographs",
             ],
             correctIndex: 1,
             explanation:
@@ -400,10 +400,10 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
           {
             prompt: "Why does the ABSENCE of a Content Credential (C2PA) or SynthID watermark NOT prove media is real?",
             options: [
-              "Credentials are always fake",
-              "Most media carries none, and screenshots/uploads can strip them; absence is not a test you fail",
-              "Only video can carry credentials",
-              "It does prove it: no credential means real",
+              "Content credentials are always fake anyway",
+              "Most media carries none, and uploads can strip them out",
+              "Only video files are able to carry credentials",
+              "It does prove it, since no credential means real",
             ],
             correctIndex: 1,
             explanation:
@@ -413,10 +413,10 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
           {
             prompt: "What everyday deception does a reverse-image search catch with no AI analysis at all?",
             options: [
-              "A perfect deepfake video",
-              "A real, old photo reused with a false caption",
-              "A cloned voice on a phone call",
-              "A watermark removal",
+              "A completely perfect deepfake video of someone",
+              "A real but old photo reused with a false caption",
+              "A cloned voice used during a phone call",
+              "A watermark removed from a photograph",
             ],
             correctIndex: 1,
             explanation:
@@ -426,10 +426,10 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
           {
             prompt: "A caller has your relative's exact voice and demands urgent money. What's the right move?",
             options: [
-              "Trust it: you recognized the voice",
-              "Hang up and call back on a number you already have, and use a family code word",
-              "Send a small amount to be safe",
-              "Stay on the line and ask security questions",
+              "Trust it, because you recognised the voice",
+              "Hang up and call back on a number you already have",
+              "Send a small amount of money to be safe",
+              "Stay on the line and ask them security questions",
             ],
             correctIndex: 1,
             explanation:
@@ -439,10 +439,10 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
           {
             prompt: "What is the \"liar's dividend\"?",
             options: [
-              "Money made selling deepfakes",
-              "A person dismissing REAL footage as fake because deepfakes exist",
-              "A discount on detection software",
-              "The profit from undisclosed AI ads",
+              "Money made from selling deepfake videos to people",
+              "A person dismissing real footage as fake because fakes exist",
+              "A discount offered on some detection software",
+              "The profit made from running undisclosed AI ads",
             ],
             correctIndex: 1,
             explanation:
@@ -465,10 +465,10 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
           {
             prompt: "What's the single most effective habit against misinformation?",
             options: [
-              "Run every image through a detector",
-              "Pause before you share: verify provenance first, and don't share what you can't confirm",
-              "Assume everything is fake",
-              "Only follow verified accounts",
+              "Run every single image you see through a detector",
+              "Pause before sharing; verify provenance and confirm it first",
+              "Assume that absolutely everything you see is fake",
+              "Only ever follow the accounts that are verified",
             ],
             correctIndex: 1,
             explanation:

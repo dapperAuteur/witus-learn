@@ -352,10 +352,10 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "A business made $300 in revenue and spent $180. What's its profit, and what does revenue NOT tell you?",
             options: [
-              "Profit is $300; revenue already includes costs",
-              "Profit is $120 (revenue − costs); revenue alone doesn't tell you what's left after expenses",
-              "Profit is $480; you add revenue and costs",
-              "There's no way to know without AI",
+              "Profit is $300, because revenue already includes the costs",
+              "Profit is $120; revenue alone hides what is left over",
+              "Profit is $480, because you add revenue and costs together",
+              "There is no way at all to know this without using AI",
             ],
             correctIndex: 1,
             explanation:
@@ -365,10 +365,10 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "Why can a profitable business still run out of money?",
             options: [
-              "Profit and cash are the same thing",
-              "Because cash flow is about TIMING: money can be owed to you later than your bills are due",
-              "Because profit isn't real",
-              "It can't; profit guarantees cash",
+              "Profit and cash are exactly the same thing as each other",
+              "Because cash flow is about timing, and bills come first",
+              "Because profit is not really a real thing at all",
+              "It cannot happen, because profit guarantees you cash",
             ],
             correctIndex: 1,
             explanation:
@@ -378,10 +378,10 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "An AI tidies your expenses and reports a monthly total. What should you do?",
             options: [
-              "Trust it. AI is good at math",
-              "Re-add the totals yourself (or in the spreadsheet); AI text predictors can be confidently wrong on arithmetic",
-              "Delete your receipts since the AI organized it",
-              "Paste in your full bank account number so it can double-check",
+              "Trust it, because AI is very good at doing maths",
+              "Re-add the totals yourself; a text predictor can be wrong",
+              "Delete your receipts, since the AI has organised it",
+              "Paste your full bank account number in so it can check",
             ],
             correctIndex: 1,
             explanation:
@@ -391,10 +391,10 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "You spent $50 on ads and got 10 new customers. What is your CAC, and what should you compare it to?",
             options: [
-              "CAC is $50; compare it to your follower count",
-              "CAC is $5 ($50 ÷ 10); compare it to LTV: the value of a customer must beat the cost to get one",
-              "CAC is $500; compare it to revenue only",
-              "CAC can't be calculated without AI",
+              "CAC is $50; compare that to your follower count",
+              "CAC is $5; compare it to LTV, which must beat it",
+              "CAC is $500; compare that to your revenue only",
+              "CAC cannot be calculated at all without AI",
             ],
             correctIndex: 1,
             explanation:
@@ -417,10 +417,10 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "You ask AI to 'project my first year' and it gives a polished forecast. What's the main danger?",
             options: [
-              "It's always too pessimistic",
-              "It can invent optimistic assumptions and make math errors: the made-up inputs, not reality, drive the forecast",
-              "Projections are illegal",
-              "Nothing; AI knows your customers",
+              "It is nearly always far too pessimistic",
+              "It can invent optimistic assumptions that drive the whole thing",
+              "Financial projections are actually illegal",
+              "Nothing at all, because AI knows your customers",
             ],
             correctIndex: 1,
             explanation:
@@ -430,10 +430,10 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "Fixed costs are $120/month and your unit margin is $9. What's your break-even in units?",
             options: [
-              "About 14 units ($120 ÷ $9 ≈ 13.3, so you must sell 14 to cover costs)",
-              "About 9 units",
-              "About 120 units",
-              "You can't break even with those numbers",
+              "About 14 units, since $120 divided by $9 is 13.3",
+              "About 9 units, one for each dollar of margin",
+              "About 120 units, one for each dollar of cost",
+              "You cannot break even at all with those numbers",
             ],
             correctIndex: 0,
             explanation:
@@ -443,10 +443,10 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "If your unit costs $6 to make and you price it at $5, what happens as you sell more?",
             options: [
-              "You make more profit the more you sell",
-              "You lose money on every sale, and selling more makes the loss bigger",
-              "You break even instantly",
-              "Volume fixes a negative margin",
+              "You make more profit the more of them that you sell",
+              "You lose money on every sale, so volume grows the loss",
+              "You break even almost instantly on the first sale",
+              "Volume eventually fixes a negative margin for you",
             ],
             correctIndex: 1,
             explanation:
@@ -456,10 +456,10 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "You get an urgent invoice demanding payment by gift card for something you don't remember ordering. What's the right move?",
             options: [
-              "Pay immediately so you don't miss the deadline",
-              "Slow down, verify through a known channel that you actually ordered it, don't pay, and report the scam to the FTC",
-              "Click the link to see the details",
-              "Ask the AI in the email to confirm it's legitimate",
+              "Pay it immediately so you do not miss the deadline",
+              "Slow down, verify through a known channel, and do not pay",
+              "Click the link in it to see all of the details",
+              "Ask the AI in the email to confirm it is legitimate",
             ],
             correctIndex: 1,
             explanation:
@@ -469,10 +469,10 @@ A projection is a *story about the future*, and the future doesn't read your spr
           {
             prompt: "A chatbot confidently answers your business-tax question. How should you treat it?",
             options: [
-              "As final: 'the chatbot told me' is a valid defense to the IRS",
-              "As possibly wrong or out of date; use AI to learn vocabulary, but keep good records and rely on a qualified human for real tax decisions",
-              "Ignore taxes until you're big",
-              "Trust it because it sounded sure",
+              "As final, since 'the chatbot told me' is a defence",
+              "As possibly wrong or out of date; ask a qualified human",
+              "Ignore taxes entirely until you are much bigger",
+              "Trust it, because it certainly sounded very sure",
             ],
             correctIndex: 1,
             explanation:

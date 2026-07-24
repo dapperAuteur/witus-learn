@@ -510,10 +510,10 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
           {
             prompt: "What is the dividing line between a workflow and an agent?",
             options: [
-              "Agents are always more accurate",
-              "A workflow runs through predefined code paths you wrote; an agent lets the model dynamically direct its own process and tool use",
-              "Workflows can't call tools",
-              "Agents are always cheaper to run",
+              "Agents are always more accurate than a workflow is",
+              "A workflow follows code paths you wrote; an agent directs itself",
+              "Workflows are not able to call any tools at all",
+              "Agents are always a great deal cheaper to run",
             ],
             correctIndex: 1,
             explanation:
@@ -523,10 +523,10 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
           {
             prompt: "What is the 'augmented LLM': the building block under every agent and workflow?",
             options: [
-              "A model fine-tuned on your data",
-              "A model enhanced with retrieval, tools, and memory",
-              "A faster, cheaper model",
-              "A model with a bigger context window",
+              "A model fine-tuned on your own private data",
+              "A model enhanced with retrieval, tools and memory",
+              "A faster and appreciably cheaper model",
+              "A model with a considerably bigger context window",
             ],
             correctIndex: 1,
             explanation:
@@ -549,10 +549,10 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
           {
             prompt: "Why must you put a hard cap on an agent's loop iterations?",
             options: [
-              "To make the model deterministic",
-              "Because an unbounded loop is OWASP LLM10 (Unbounded Consumption): runaway tokens, cost, and actions",
-              "Caps make the agent more accurate",
-              "It removes the need for tracing",
+              "To make the model's behaviour fully deterministic",
+              "Because an unbounded loop is OWASP LLM10, runaway cost",
+              "Because caps make the agent considerably more accurate",
+              "Because it removes the need for any tracing at all",
             ],
             correctIndex: 1,
             explanation:
@@ -562,10 +562,10 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
           {
             prompt: "In a tool/function definition, what makes the 'description' field load-bearing?",
             options: [
-              "It's only for human documentation and the model ignores it",
-              "It's the model's instruction manual for when and how to use the tool: vague descriptions cause wrong calls",
-              "It sets the model's temperature",
-              "It validates the arguments automatically",
+              "It is only human documentation and the model ignores it",
+              "It is the model's manual for when and how to use the tool",
+              "It quietly sets the model's sampling temperature",
+              "It validates all of the arguments automatically for you",
             ],
             correctIndex: 1,
             explanation:
@@ -583,10 +583,10 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
           {
             prompt: "Why must an automation's triggers be idempotent, and what does putting the model work behind a queue buy you?",
             options: [
-              "Idempotency makes the model faster; queues add temperature control",
-              "Networks retry, so a duplicate event must not run the work twice; a queue buys retries-with-backoff, backpressure, and durability",
-              "Idempotency removes the need for validation; queues remove the need for a model",
-              "Both are only needed for chatbots",
+              "Idempotency makes the model faster; queues control temperature",
+              "Networks retry, so a duplicate event must not run work twice",
+              "Idempotency removes validation; queues remove the model",
+              "Both of them are only ever needed for chatbots",
             ],
             correctIndex: 1,
             explanation:
@@ -596,10 +596,10 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
           {
             prompt: "Where should an agent's long-term memory live, and why not just keep it all in the prompt?",
             options: [
-              "All in the prompt: bigger context is always better",
-              "Outside the model (a database / vector store), retrieved into context as needed: the context window is a budget, not a backpack",
-              "In the model's weights via fine-tuning each turn",
-              "It doesn't matter; models remember across sessions",
+              "All in the prompt, since bigger context is always better",
+              "Outside the model, retrieved into context only as needed",
+              "In the model's weights, by fine-tuning on every turn",
+              "It does not matter; models remember across sessions",
             ],
             correctIndex: 1,
             explanation:
@@ -609,10 +609,10 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
           {
             prompt: "An agent can take real actions. Which OWASP risk names over-granting it tools/permissions/autonomy, and what counters it?",
             options: [
-              "LLM01 Prompt Injection; counter with caching",
-              "LLM06 Excessive Agency; counter with least privilege (minimum functionality, permissions, autonomy)",
+              "LLM01 Prompt Injection; counter it with more caching",
+              "LLM06 Excessive Agency; counter it with least privilege",
               "LLM05 Improper Output Handling; counter with a bigger model",
-              "LLM10 Unbounded Consumption; counter with fine-tuning",
+              "LLM10 Unbounded Consumption; counter it with fine-tuning",
             ],
             correctIndex: 1,
             explanation:
@@ -622,10 +622,10 @@ Shipping is the start of the loop, not the end of it: **measure → manage → i
           {
             prompt: "What is a 'trace,' and why is it the first thing to instrument when building an agent?",
             options: [
-              "A stack trace shown only on crashes; it's optional",
-              "The full ordered record of a run: every plan, tool call, observation, and per-step cost, which makes most failure modes obvious on inspection",
-              "The model's temperature log",
-              "A list of API keys used in the run",
+              "A stack trace shown only on crashes, and it is optional",
+              "The ordered record of a run: plans, calls, and per-step cost",
+              "The model's own sampling temperature log",
+              "A list of all the API keys used during the run",
             ],
             correctIndex: 1,
             explanation:
