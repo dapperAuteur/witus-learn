@@ -69,24 +69,6 @@ export const PITTSBURGH_PLAYBOOK_COURSE: AuthoredCourse = {
 ## Sources
 - Heinz History Center. (n.d.-a). *Crossroads of the world: How urban renewal changed the Hill*. Senator John Heinz History Center. https://www.heinzhistorycenter.org/blog/crossroads-of-the-world-how-urban-renewal-changed-the-hill/
 - Heinz History Center. (n.d.-b). *Western Pennsylvania history: The Crawford Grill*. Senator John Heinz History Center. https://www.heinzhistorycenter.org/blog/western-pennsylvania-history-the-crawford-grill/`,
-      recallContent: [
-        {
-          prompt: "Which two prerequisite courses does this one build on, and what does each teach?",
-          answer: "The Green Book: How to Read a Route (the method: read a listing, chain a route, research an address forward) and Indiana Avenue: A District and What Replaced It (the six-beat site template and five instruments of clearance).",
-        },
-        {
-          prompt: "Where is the Hill District, and what nickname did Claude McKay give it?",
-          answer: "Just east of downtown Pittsburgh, above the confluence of the Allegheny and Monongahela rivers. The Harlem Renaissance poet Claude McKay called it the Crossroads of the World during its 1930s to 1950s heyday.",
-        },
-        {
-          prompt: "Why is it wrong to describe the Hill as only one community?",
-          answer: "It was majority Black and also genuinely mixed, holding Italian and Eastern European Jewish communities and others in the same blocks, each with its own businesses and institutions.",
-        },
-        {
-          prompt: "What is the one extra question this course asks that the Indiana Avenue course could not ask about itself?",
-          answer: "Where the instruments of clearance came from. Pittsburgh ran the public-private redevelopment machine early and publicly enough that its downtown rebuild was called a national model, which is the claim lesson 12 tests.",
-        },
-      ],
     },
     {
       slug: "pgh-green-book-and-courier",
@@ -117,20 +99,20 @@ Read that second clause slowly, because it is the whole course in one sentence. 
 - Urban Redevelopment Authority of Pittsburgh. (n.d.). *Lower Hill*. https://www.ura.org/pages/lower-hill`,
       recallContent: [
         {
-          prompt: "How many Hill District businesses were listed in the Green Book, and how many of those buildings survive?",
-          answer: "The Heinz History Center reports more than 30 Black-owned Hill District businesses were listed in the Green Book, and only one of those buildings still stands today.",
+          prompt: "Which two prerequisite courses does this one build on, and what does each teach?",
+          answer: "The Green Book: How to Read a Route (the method: read a listing, chain a route, research an address forward) and Indiana Avenue: A District and What Replaced It (the six-beat site template and five instruments of clearance).",
         },
         {
-          prompt: "Why is 'more than 30 Green Book businesses, one surviving building' a two-gap statement?",
-          answer: "There is a gap between what the Green Book listed and the district's true inventory, and a second gap on top of it between what was listed and what still physically stands.",
+          prompt: "Where is the Hill District, and what nickname did Claude McKay give it?",
+          answer: "Just east of downtown Pittsburgh, above the confluence of the Allegheny and Monongahela rivers. The Harlem Renaissance poet Claude McKay called it the Crossroads of the World during its 1930s to 1950s heyday.",
         },
         {
-          prompt: "What was the Pittsburgh Courier, and why does it matter to a route course?",
-          answer: "A Hill District newspaper founded in 1907 that under Robert Lee Vann became the largest and most influential Black newspaper in the country. It was one of the engines that pulled Great Migration travelers north, so the Hill both received travelers and told others where to travel.",
+          prompt: "Why is it wrong to describe the Hill as only one community?",
+          answer: "It was majority Black and also genuinely mixed, holding Italian and Eastern European Jewish communities and others in the same blocks, each with its own businesses and institutions.",
         },
         {
-          prompt: "What is the difference between measuring fabric and measuring reach here?",
-          answer: "Fabric is the buildings that still stand, which beat 2 measures. Reach is influence: the Courier, the Crawford Grill's role in bebop and August Wilson's plays all outlived the buildings. A survey of fabric misses reach entirely.",
+          prompt: "What is the one extra question this course asks that the Indiana Avenue course could not ask about itself?",
+          answer: "Where the instruments of clearance came from. Pittsburgh ran the public-private redevelopment machine early and publicly enough that its downtown rebuild was called a national model, which is the claim lesson 12 tests.",
         },
       ],
     },
@@ -159,20 +141,20 @@ Notice what that one paragraph contains: a baseball team, a music that changed A
 - Hill District Digital History. (n.d.). *The Civic Arena: A mid-twentieth century transformation of the Hill District*. https://hillhistory.org/items/show/75`,
       recallContent: [
         {
-          prompt: "Who founded the Crawford Grill, and what else did he own?",
-          answer: "William Gus Greenlee, in 1930. He ran the numbers game and owned the Pittsburgh Crawfords, a leading Negro League baseball team.",
+          prompt: "How many Hill District businesses were listed in the Green Book, and how many of those buildings survive?",
+          answer: "The Heinz History Center reports more than 30 Black-owned Hill District businesses were listed in the Green Book, and only one of those buildings still stands today.",
         },
         {
-          prompt: "Why is a club described here as more than nightlife?",
-          answer: "In a segregated city it was a stage a Black community owned and controlled, and control was what urban renewal took. The Hill's jam sessions are also credited among the settings where bebop took shape.",
+          prompt: "Why is 'more than 30 Green Book businesses, one surviving building' a two-gap statement?",
+          answer: "There is a gap between what the Green Book listed and the district's true inventory, and a second gap on top of it between what was listed and what still physically stands.",
         },
         {
-          prompt: "What kind of evidence is Bethel AME Church, and why does it matter for beat 5?",
-          answer: "A congregation outlives its building. Bethel AME lost its 1908 Lower Hill building to the clearance and its congregation has publicly sought reparations, so the displaced are named parties in a present argument, not a historical abstraction.",
+          prompt: "What was the Pittsburgh Courier, and why does it matter to a route course?",
+          answer: "A Hill District newspaper founded in 1907 that under Robert Lee Vann became the largest and most influential Black newspaper in the country. It was one of the engines that pulled Great Migration travelers north, so the Hill both received travelers and told others where to travel.",
         },
         {
-          prompt: "How should you handle a source that calls Pittsburgh 'the greatest' jazz city?",
-          answer: "Treat superlatives as arguments, not measurements. Quote the source and let the claim belong to it. The checkable facts are narrower: the Crawford Grill was a documented centre of the Hill's jazz life.",
+          prompt: "What is the difference between measuring fabric and measuring reach here?",
+          answer: "Fabric is the buildings that still stand, which beat 2 measures. Reach is influence: the Courier, the Crawford Grill's role in bebop and August Wilson's plays all outlived the buildings. A survey of fabric misses reach entirely.",
         },
       ],
     },
@@ -391,20 +373,20 @@ Put those two paragraphs side by side, because the distance between them is the 
 - Urban Redevelopment Authority of Pittsburgh. (n.d.). *Lower Hill*. https://www.ura.org/pages/lower-hill`,
       recallContent: [
         {
-          prompt: "What did the published plan for the cleared Lower Hill call for, and how much of it was built?",
-          answer: "A cultural centre with an opera house, playhouse, art gallery, upscale hotel and apartments. By 1966 only the Civic Arena, one apartment building and one apartment and hotel complex stood; the opera house, playhouse and art gallery were never built, and much of the land became surface parking.",
+          prompt: "Who founded the Crawford Grill, and what else did he own?",
+          answer: "William Gus Greenlee, in 1930. He ran the numbers game and owned the Pittsburgh Crawfords, a leading Negro League baseball team.",
         },
         {
-          prompt: "What is superblocking?",
-          answer: "The land-use move of replacing many small lots and through-streets with a few very large single-use parcels, erasing the old street grid. It is the signature move of postwar urban renewal.",
+          prompt: "Why is a club described here as more than nightlife?",
+          answer: "In a segregated city it was a stage a Black community owned and controlled, and control was what urban renewal took. The Hill's jam sessions are also credited among the settings where bebop took shape.",
         },
         {
-          prompt: "Why are the Lower Hill's surface parking lots evidence about the plan, not just about the present?",
-          answer: "They are the physical footprint of the cultural centre that was promised to justify the clearance and then largely not built, and they are the same ground being redeveloped now.",
+          prompt: "What kind of evidence is Bethel AME Church, and why does it matter for beat 5?",
+          answer: "A congregation outlives its building. Bethel AME lost its 1908 Lower Hill building to the clearance and its congregation has publicly sought reparations, so the displaced are named parties in a present argument, not a historical abstraction.",
         },
         {
-          prompt: "What does this lesson deliberately NOT yet tell you?",
-          answer: "Who decided, and under what legal power. That is Section 3. 'The neighbourhood was cleared' is a description, not an instrument.",
+          prompt: "How should you handle a source that calls Pittsburgh 'the greatest' jazz city?",
+          answer: "Treat superlatives as arguments, not measurements. Quote the source and let the claim belong to it. The checkable facts are narrower: the Crawford Grill was a documented centre of the Hill's jazz life.",
         },
       ],
     },
@@ -432,20 +414,20 @@ Put those two paragraphs side by side, because the distance between them is the 
 - Hill District Digital History. (n.d.). *The Civic Arena: A mid-twentieth century transformation of the Hill District*. https://hillhistory.org/items/show/75`,
       recallContent: [
         {
-          prompt: "Give the Civic Arena's opening date, architect, cost and defining feature.",
-          answer: "Opened September 17, 1961; designed by the Pittsburgh firm Mitchell and Ritchey; about 22 million dollars; a stainless-steel dome about 415 feet across with the first retractable roof of its kind in the world, clad in nearly 3,000 tons of Pittsburgh steel.",
+          prompt: "What did the published plan for the cleared Lower Hill call for, and how much of it was built?",
+          answer: "A cultural centre with an opera house, playhouse, art gallery, upscale hotel and apartments. By 1966 only the Civic Arena, one apartment building and one apartment and hotel complex stood; the opera house, playhouse and art gallery were never built, and much of the land became surface parking.",
         },
         {
-          prompt: "How does this course read the arena 'as a statement'?",
-          answer: "A gleaming, engineered, singular steel dome that opens to the sky, set on ground cleared of an old neighbourhood, argues that the future replaced the past as progress. A steel city built a monument from its own product on the Hill.",
+          prompt: "What is superblocking?",
+          answer: "The land-use move of replacing many small lots and through-streets with a few very large single-use parcels, erasing the old street grid. It is the signature move of postwar urban renewal.",
         },
         {
-          prompt: "How should you handle a source that calls the arena a 'marvel'?",
-          answer: "Treat the superlative as the source's claim, not a measurement. The checkable facts are narrower: first retractable roof of its kind, an engineering achievement, and opened only rarely in practice.",
+          prompt: "Why are the Lower Hill's surface parking lots evidence about the plan, not just about the present?",
+          answer: "They are the physical footprint of the cultural centre that was promised to justify the clearance and then largely not built, and they are the same ground being redeveloped now.",
         },
         {
-          prompt: "What is the contrast with beat 2 in the Indiana Avenue course?",
-          answer: "There beat 2 found a surviving flatiron whose shape preserved an 1821 street plan; here beat 2 finds a single building that erased a street plan and announced the erasure as progress. Both are beat 2 done correctly.",
+          prompt: "What does the 'what replaced the neighbourhood' lesson deliberately NOT yet tell you?",
+          answer: "Who decided, and under what legal power. That is Section 3. 'The neighbourhood was cleared' is a description, not an instrument.",
         },
       ],
     },
@@ -484,20 +466,20 @@ Put those two paragraphs side by side, because the distance between them is the 
 - Urban Redevelopment Authority of Pittsburgh. (n.d.). *Lower Hill*. https://www.ura.org/pages/lower-hill`,
       recallContent: [
         {
-          prompt: "What is the difference between 'the Hill District' and 'the Lower Hill', and why does it matter?",
-          answer: "The Lower Hill is the roughly 95 acres closest to downtown that were cleared. The Middle and Upper Hill were not cleared the same way and remain a living neighbourhood. Saying 'the Hill was destroyed' is wrong on the geography and unfair to the people who still live there.",
+          prompt: "Give the Civic Arena's opening date, architect, cost and defining feature.",
+          answer: "Opened September 17, 1961; designed by the Pittsburgh firm Mitchell and Ritchey; about 22 million dollars; a stainless-steel dome about 415 feet across with the first retractable roof of its kind in the world, clad in nearly 3,000 tons of Pittsburgh steel.",
         },
         {
-          prompt: "What is the August Wilson House, and why is it evidence of survival rather than loss?",
-          answer: "August Wilson's restored childhood home at 1727 Bedford Avenue in the Middle Hill, now a nonprofit arts centre run by the Daisy Wilson Artist Community. Nine of his ten Century Cycle plays are set in the Hill. A house that runs programmes today is the neighbourhood still speaking for itself.",
+          prompt: "How does this course read the arena 'as a statement'?",
+          answer: "A gleaming, engineered, singular steel dome that opens to the sky, set on ground cleared of an old neighbourhood, argues that the future replaced the past as progress. A steel city built a monument from its own product on the Hill.",
         },
         {
-          prompt: "Does National Register listing stop an owner from demolishing a building?",
-          answer: "No. Federal listing is recognition plus review leverage when federal money or a permit is involved, plus some tax credits. Local designation under a city ordinance is what normally regulates demolition, and only when a commission enforces it.",
+          prompt: "How should you handle a source that calls the arena a 'marvel'?",
+          answer: "Treat the superlative as the source's claim, not a measurement. The checkable facts are narrower: first retractable roof of its kind, an engineering achievement, and opened only rarely in practice.",
         },
         {
-          prompt: "What happened when preservationists tried to save the Civic Arena itself around 2010?",
-          answer: "It failed. The reviewing bodies declined to grant it historic status and the courts declined to stop the demolition. The designation tool that could not save the neighbourhood could not save the building that replaced it either.",
+          prompt: "What is the contrast with beat 2 in the Indiana Avenue course?",
+          answer: "There beat 2 found a surviving flatiron whose shape preserved an 1821 street plan; here beat 2 finds a single building that erased a street plan and announced the erasure as progress. Both are beat 2 done correctly.",
         },
       ],
     },
@@ -784,10 +766,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "This course defines an 'instrument' as:",
             options: [
-              "Any historical cause of a neighbourhood's decline",
-              "A newspaper account of a public decision",
-              "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document",
-              "A tool used to demolish a building",
+              "Any broad historical cause that gradually contributed to a neighbourhood's long decline",
+              "A journalist's account of a public decision, usually written well after it was made",
+              "A named legal power a named body wields under a named statute, leaving a named record",
+              "A heavy machine such as a wrecking ball or bulldozer, brought in to demolish a building",
             ],
             correctIndex: 2,
             explanation: "The last clause is what makes history researchable: if a power was exercised, a named record exists.",
@@ -796,10 +778,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "What did the Pennsylvania Urban Redevelopment Law of 1945 do?",
             options: [
-              "It authorised municipalities to create Redevelopment Authorities that could designate blighted areas, acquire and clear them, and contract with redevelopers",
-              "It built the Civic Arena directly",
-              "It merged Pittsburgh with surrounding Allegheny County",
-              "It banned racial covenants in Pittsburgh housing",
+              "It let cities charter Redevelopment Authorities to designate, acquire, clear and convey land",
+              "It appropriated the specific public funds that later paid to build the Civic Arena downtown",
+              "It merged the City of Pittsburgh with the surrounding county of Allegheny into one government",
+              "It outlawed the racial covenants that had kept Black families out of many city neighbourhoods",
             ],
             correctIndex: 0,
             explanation: "The law creates a new legal body with powers no ordinary city department has: to designate, acquire, clear and convey.",
@@ -808,10 +790,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "How does the URA describe its own place in redevelopment history, and how should you repeat it?",
             options: [
-              "As the first redevelopment authority in the world",
-              "As the first redevelopment authority in the United States",
-              "As having no claim to being early at all",
-              "As 'one of the first redevelopment authorities in Pennsylvania,' which is the version to repeat rather than inflate",
+              "As the single earliest redevelopment authority to be founded anywhere in the world",
+              "As the first redevelopment authority ever established in the entire United States",
+              "As a body with no genuine claim to having been early in any respect at all",
+              "As 'one of the first redevelopment authorities in Pennsylvania,' the version to repeat",
             ],
             correctIndex: 3,
             explanation: "When you repeat an institution's claim about itself, repeat the version it actually makes. The URA says 'one of the first in Pennsylvania.'",
@@ -820,10 +802,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "The Allegheny Conference on Community Development was:",
             options: [
-              "A federal agency created by the Housing Act of 1949",
-              "An organisation of Pittsburgh business leaders formed in 1944, around Richard King Mellon, that worked with city hall to direct redevelopment",
-              "A neighbourhood group from the Hill District",
-              "The URA's in-house demolition contractor",
+              "A federal agency that the Housing Act of 1949 created to run urban renewal",
+              "A body of Pittsburgh business leaders formed in 1944 around Richard King Mellon",
+              "A grassroots residents' association based in the Hill District neighbourhood itself",
+              "The in-house demolition and site-clearing contractor employed directly by the URA",
             ],
             correctIndex: 1,
             explanation: "Business elites plus elected officials, pulling together, is the public-private machine this section takes apart.",
@@ -832,10 +814,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "In September 1955, what happened to the Lower Hill?",
             options: [
-              "The Civic Arena opened to the public",
-              "The neighbourhood was added to the National Register of Historic Places",
-              "The federal government approved the Lower Hill redevelopment plan, slating about 95 acres for clearance, and clearance began",
-              "The Allegheny Conference was first formed",
+              "The Civic Arena first opened its doors to the ticket-buying hockey and concert public",
+              "The whole Lower Hill was formally added to the National Register of Historic Places",
+              "The federal government approved the Lower Hill plan, slating 95 acres for clearance",
+              "The Allegheny Conference on Community Development was convened and first formed",
             ],
             correctIndex: 2,
             explanation: "The designation and federal approval are the hinge; the clearance follows from them.",
@@ -844,10 +826,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "Why is 'blighted' called a legal conclusion rather than a description?",
             options: [
-              "A body reaches it on a record against statutory criteria, and it unlocks acquisition and clearance powers that do not otherwise exist",
-              "Because only lawyers are allowed to use the word",
-              "Because it can never be appealed or challenged",
-              "Because it applies only to empty land with no buildings",
+              "A body reaches it on a record against statutory criteria, unlocking clearance powers",
+              "Because only licensed attorneys are permitted to use the word in official documents",
+              "Because once it is entered it can never afterward be appealed or challenged in court",
+              "Because it can only ever apply to vacant land that holds no standing buildings at all",
             ],
             correctIndex: 0,
             explanation: "Before the designation the powers do not exist; after it, they do. That is why you start research at the designation.",
@@ -856,10 +838,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "The varying Lower Hill counts (about 1,300 buildings, 413 businesses, 1,600 families, over 8,000 people) should be handled how?",
             options: [
-              "Pick the largest figure in every category",
-              "Average all the published figures together into one number",
-              "Ignore them because they disagree",
-              "Carry the source with each number, because sources count different things, and suspect a stray zero when a figure is ten times its neighbours",
+              "Always pick the single largest published figure available in each category",
+              "Average every published figure together into one blended composite number",
+              "Ignore all of the counts entirely, because the sources disagree with each other",
+              "Carry the source with each number, and suspect a stray zero when a figure is ten times its neighbours",
             ],
             correctIndex: 3,
             explanation: "'Thirteen thousand buildings' is a transcription slip for 1,300. Attribute figures; do not adopt or blend them.",
@@ -868,10 +850,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "What did Berman v. Parker (1954) establish?",
             options: [
-              "That urban renewal was unconstitutional",
-              "That a government may condemn property for urban renewal even where a building is not itself run down and the cleared land goes to private redevelopers",
-              "That only the federal government could use eminent domain",
-              "That Pittsburgh could annex Allegheny County",
+              "That urban renewal and all of its property takings were entirely unconstitutional across the nation",
+              "That a government may condemn property for renewal and convey it to private redevelopers",
+              "That only the federal government, never a state or city, could ever use eminent domain",
+              "That the City of Pittsburgh was legally entitled to annex all of Allegheny County",
             ],
             correctIndex: 1,
             explanation: "Berman is the legal ground the national urban-renewal program stood on, decided the year before the Lower Hill plan was approved.",
@@ -880,10 +862,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "The three-part mechanism this course says you can find in any renewal-era city is:",
             options: [
-              "Designation, condemnation, and a public-private partnership that directs and finances redevelopment",
-              "A referendum, a bond issue, and a groundbreaking ceremony",
-              "A highway, a stadium, and a parking garage",
-              "A census, a zoning map, and a tax abatement",
+              "Designation, condemnation, and a public-private partnership that directs and finances it",
+              "A public referendum, a large municipal bond issue, and a ceremonial public groundbreaking",
+              "A new highway, a sports stadium, and a multi-storey structured parking garage",
+              "A decennial census, a revised zoning map, and a negotiated property tax abatement",
             ],
             correctIndex: 0,
             explanation: "Designation makes land clearable, eminent domain acquires it, and the partnership supplies direction and the redeveloper the land is conveyed to.",
@@ -892,10 +874,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "What individual record does this course honestly admit it has NOT read into itself?",
             options: [
-              "The date the Civic Arena opened",
-              "An individual Lower Hill condemnation file with one household's dated offers and settlement, of the kind the Indiana Avenue course had for the Temple family",
-              "The acreage of the Lower Hill",
-              "The name of the Pittsburgh Courier",
+              "The calendar date on which the Civic Arena first opened to the public",
+              "An individual Lower Hill condemnation file with one household's offers and settlement",
+              "The total acreage of the Lower Hill that was designated and then fully cleared",
+              "The founding year, the long-time editor, and the complete name of the Pittsburgh Courier",
             ],
             correctIndex: 1,
             explanation: "Those files exist in Allegheny County's records and the URA's project files. Reporting the gap is more accurate than borrowing a number.",
@@ -904,10 +886,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "Historian Tracy Neumann documents that in the 1950s and 1960s Pittsburgh was visited by:",
             options: [
-              "A single delegation from Washington, D.C.",
-              "No outside delegations at all",
-              "Only delegations from within Pennsylvania",
-              "More than seventy national and international delegations who hoped to replicate the Renaissance",
+              "A single visiting delegation that travelled up from Washington, D.C.",
+              "No outside delegations whatsoever ever came to look at the city",
+              "Only delegations from other cities within Pennsylvania itself",
+              "More than seventy national and international delegations hoping to replicate the Renaissance",
             ],
             correctIndex: 3,
             explanation: "Visitors came from Dayton, Detroit, Canada, Australia, Brazil, Belgium, Germany and Scotland. Pittsburgh as a studied model is documented, not guessed.",
@@ -916,10 +898,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "What did those delegations actually come to Pittsburgh to replicate?",
             options: [
-              "A manual for clearing a Black neighbourhood, block by block",
-              "The public-private partnership and the downtown clean-up: smoke control, flood control and Gateway Center",
-              "The design of the Civic Arena's retractable roof",
-              "The Pittsburgh Courier's newspaper business model",
+              "A detailed step-by-step manual explaining how to clear an entire Black neighbourhood block by block",
+              "The public-private partnership and the downtown clean-up: smoke, floods, Gateway Center",
+              "The specific engineering design of the Civic Arena's famous retractable roof",
+              "The Pittsburgh Courier's national newspaper circulation and its business model",
             ],
             correctIndex: 1,
             explanation: "A delegation admiring Gateway Center and the smoke ordinance is not a city carrying home a clearance manual. Keep the two apart.",
@@ -928,10 +910,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "What actually spread the clearance instruments across the country, rather than cities copying Pittsburgh?",
             options: [
-              "A private consulting firm based in Pittsburgh",
-              "The Pittsburgh Courier's national circulation",
-              "The federal Housing Act of 1949 and parallel state redevelopment laws, upheld for every city by Berman v. Parker",
-              "The Allegheny Conference's membership dues",
+              "A private urban-renewal consulting firm, headquartered in Pittsburgh, that other cities hired",
+              "The wide national circulation of the Pittsburgh Courier newspaper",
+              "The federal Housing Act of 1949 and parallel state laws, upheld by Berman v. Parker",
+              "The annual membership dues collected by the Allegheny Conference",
             ],
             correctIndex: 2,
             explanation: "Pittsburgh's own Lower Hill clearance rode the same Title I federal money as everyone else. The kit was national.",
@@ -940,10 +922,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "Testing the 'other cities copied Pittsburgh' thesis against the chronology shows that:",
             options: [
-              "It fails as a copy-chain, because Indianapolis and Washington ran their own machinery on the same 1940s timeline, and what Pittsburgh exported was a partnership reputation, not a clearance manual",
-              "Pittsburgh single-handedly caused every later clearance",
-              "No American city ever cleared a Black neighbourhood",
-              "The chronology is unknowable, so the thesis cannot be tested",
+              "It fails as a copy-chain: other cities ran their own machinery on the same 1940s timeline",
+              "Pittsburgh single-handedly caused every later urban clearance that happened in the country",
+              "No American city other than Pittsburgh ever cleared a Black neighbourhood",
+              "The chronology is simply unknowable, so the thesis cannot be tested at all",
             ],
             correctIndex: 0,
             explanation: "The surviving, weaker claim is that Pittsburgh was an early, emulated model of the partnership, one prominent reference case rather than the sole origin.",
@@ -952,10 +934,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "The 'rare double absence' at the heart of this course is:",
             options: [
-              "That two different neighbourhoods were cleared on the same day",
-              "That both the Pittsburgh Courier and the Crawford Grill closed in the same year",
-              "That the Lower Hill appears in neither the Green Book nor the census",
-              "That the neighbourhood was cleared in 1955 for the Civic Arena, and the arena itself was then demolished between September 2011 and March 2012",
+              "That two entirely different neighbourhoods happened to be cleared on the very same day",
+              "That both the Pittsburgh Courier and the Crawford Grill shut down in the same single year",
+              "That the Lower Hill appears in neither the Green Book nor the federal census",
+              "That the 1955 clearance was followed by the arena's own demolition in 2011 to 2012",
             ],
             correctIndex: 3,
             explanation: "The ground at the edge of downtown has been cleared twice in one lifetime, and it is a redevelopment site again today.",
@@ -1296,10 +1278,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "Why is this course's map lesson national rather than block by block?",
             options: [
-              "Because the Lower Hill's coordinates are unknown",
-              "Because the lesson map draws the whole world, so points need roughly two degrees of separation to be distinguishable, and a 95-acre neighbourhood is smaller than one dot",
-              "Because block-level maps of Pittsburgh are copyrighted",
-              "Because the course avoids maps of Pennsylvania",
+              "Because the exact geographic coordinates of the Lower Hill are simply not known to the platform's software",
+              "Because the world map needs points two degrees apart, and a 95-acre neighbourhood is smaller than a dot",
+              "Because all block-level maps of the city of Pittsburgh are under copyright",
+              "Because the course deliberately avoids showing any maps of Pennsylvania",
             ],
             correctIndex: 1,
             explanation: "Choosing the right scale of map for the question is the actual skill. For a parcel question the right map is the county GIS viewer.",
@@ -1308,10 +1290,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "The four amber districts on the map (Indiana Avenue, Southwest DC, the Fillmore, Black Bottom) are placed there to show that:",
             options: [
-              "Pittsburgh's clearance was the largest in the country",
-              "Only four other cities ever used urban renewal",
-              "The Hill District was cleared later than any of them",
-              "The Lower Hill was a local instance of a national program, not a local misfortune",
+              "Because Pittsburgh's own clearance happened to be the single largest of any anywhere in the country",
+              "Because only four other American cities ever made any use of urban renewal at all",
+              "Because the Hill District was cleared later in time than any of the other four",
+              "Because the Lower Hill was a local instance of a national program, not a local misfortune",
             ],
             correctIndex: 3,
             explanation: "The same instrument kit, a redevelopment authority plus blight designation plus federal money, ran in cities across the country.",
@@ -1320,10 +1302,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "As of the most recent reporting, what is the status of the Lower Hill redevelopment?",
             options: [
-              "The Penguins subsidiary PAR's development rights expired in October 2025 and reverted to the URA and SEA, leaving about 21 acres whose future is being re-decided through a public process",
-              "The entire 28 acres has been fully built out",
-              "The land was returned to the descendants of the displaced",
-              "The Civic Arena was rebuilt on the site",
+              "PAR's rights expired in October 2025 and reverted to the URA and SEA, leaving 21 acres re-decided",
+              "The entire 28-acre site has already been completely built out with new office towers, housing and shops",
+              "The cleared land was handed back to the descendants of the families who were displaced",
+              "The old Civic Arena was rebuilt on exactly the same footprint it stood on before",
             ],
             correctIndex: 0,
             explanation: "A plan being re-decided right now is the finding that gives a citizen the most leverage, because an open decision can be spoken into.",
@@ -1332,10 +1314,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "What is the first major building constructed on the cleared Lower Hill ground?",
             options: [
-              "A rebuilt Crawford Grill",
-              "A new Pittsburgh Courier headquarters",
-              "The FNB Financial Center, a mixed-use tower that opened in February 2025 on the former Civic Arena site",
-              "A replacement for Bethel AME Church",
+              "A faithfully rebuilt version of the original Crawford Grill jazz club",
+              "A brand-new national headquarters building for the Pittsburgh Courier",
+              "The FNB Financial Center, a mixed-use tower opened in February 2025 on the arena site",
+              "A large replacement sanctuary specially built for the displaced Bethel AME congregation",
             ],
             correctIndex: 2,
             explanation: "The double absence is not settled history; the twice-cleared ground is an active construction site.",
@@ -1344,10 +1326,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "What is the 2014 Community Collaboration and Implementation Plan (CCIP)?",
             options: [
-              "A URA demolition schedule for the Middle Hill",
-              "A Hill District community benefits agreement whose priorities include affordable housing, Greater Hill investment, arts preservation, job access and MBE participation",
-              "The original 1955 redevelopment plan",
-              "A federal grant application",
+              "A detailed URA schedule setting out the planned future demolition of the Middle and Upper Hill",
+              "A Hill District benefits agreement covering housing, arts, jobs and MBE participation",
+              "The original redevelopment plan that was drawn up for the Lower Hill back in 1955",
+              "A federal grant application submitted for money to fund the redevelopment",
             ],
             correctIndex: 1,
             explanation: "The CCIP is a demand with signatures on it, the written descendant of Freedom Corner's physical line.",
@@ -1356,10 +1338,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "The CCIP is described as the 'direct descendant of Freedom Corner' because:",
             options: [
-              "Both were designed by the same architect",
-              "Both were funded by the Penguins",
-              "Both are located on the exact same parcel",
-              "In 1969 the community held a physical line against clearance at Crawford and Centre, and in 2014 it negotiated a written agreement over what redevelopment owes the neighbourhood",
+              "Because both of them were designed by the very same architect",
+              "Because both of them were funded entirely by the Pittsburgh Penguins",
+              "Because both of them are located on the exact same parcel of land",
+              "Because a physical line held at Crawford and Centre in 1969 became a written agreement in 2014",
             ],
             correctIndex: 3,
             explanation: "The instrument the community built is a demand, not a demolition, and it is part of the ground's record.",
@@ -1368,10 +1350,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "How should you treat the jobs-and-dollars figures the redevelopment's own developers publish?",
             options: [
-              "Attribute them to the developer and re-check them against an independent source before repeating them",
-              "Adopt them directly, because good-news numbers do not need checking",
-              "Ignore all figures about the project",
-              "Assume they are deliberately false",
+              "Attribute them to the developer and re-check them against an independent source first",
+              "Adopt them directly, because cheerful good-news numbers never really need any checking",
+              "Ignore every figure that anyone publishes about the project entirely",
+              "Assume from the outset that all of them are deliberately and knowingly false",
             ],
             correctIndex: 0,
             explanation: "The authoritative-values rule applies to good news too. A number that flatters the party that published it is not more reliable than one that does not.",
@@ -1380,10 +1362,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "What are the two official Allegheny County tools this course sends you to for a parcel?",
             options: [
-              "A private real estate listing site and a transit app",
-              "A historical atlas and a phone book",
+              "A private real-estate listing website and a public transit trip-planning app",
+              "A printed historical atlas from the archives and an old telephone directory",
               "The Allegheny County Real Estate Portal and the Allegheny County GIS Viewer",
-              "The URA website and the Penguins website",
+              "The URA's official website and the Pittsburgh Penguins' official team website",
             ],
             correctIndex: 2,
             explanation: "The Portal gives owner of record and assessed value; the GIS Viewer gives the parcel outline and the overlapping jurisdictions.",
@@ -1392,10 +1374,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "The four facts to pull for any parcel, in any American county, are:",
             options: [
-              "Square footage, paint colour, roof type and window count",
-              "Parcel number, owner of record, assessed value, and which overlapping jurisdictions it sits in",
-              "The architect, the builder, the first tenant and the last tenant",
-              "The zoning, the mortgage, the insurer and the utility provider",
+              "Square footage, exterior paint colour, roof type and total window count",
+              "Parcel number, owner of record, assessed value, and overlapping jurisdictions",
+              "The original architect, the builder, the first tenant and the very last tenant",
+              "The current zoning, the mortgage holder, the insurer and the utility provider",
             ],
             correctIndex: 1,
             explanation: "The names of the tools change from county to county; those four facts do not.",
@@ -1404,10 +1386,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "Why is the August Wilson House a safe and useful parcel to practise on?",
             options: [
-              "Because it is a private home whose owner has agreed to be studied",
-              "Because it has no owner of record",
-              "Because it is on the cleared Lower Hill",
-              "Because it is a public nonprofit arts centre with a published address, on the National Register, sitting in the Middle Hill that survived",
+              "Because it is a private family home whose owner has agreed to be studied",
+              "Because the property has no owner of record listed anywhere at all",
+              "Because it sits on the cleared ground of the Lower Hill itself",
+              "Because it is a public nonprofit arts centre with a published address, on the National Register",
             ],
             correctIndex: 3,
             explanation: "You are not exposing anybody's home, and it contrasts the surviving Middle Hill with the cleared Lower Hill.",
@@ -1417,9 +1399,9 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
             prompt: "If the parcel's owner of record does not match the Daisy Wilson Artist Community that runs the house, that is:",
             options: [
               "Normal, and a finding: a building's operator and its titled owner are two different facts",
-              "Proof the record is wrong",
-              "A reason to stop the research",
-              "Evidence of fraud",
+              "Conclusive proof that the county's official public record for the parcel must simply be wrong",
+              "A perfectly good reason to stop the research on that parcel right there",
+              "Clear evidence of some kind of deliberate fraud by the operating nonprofit",
             ],
             correctIndex: 0,
             explanation: "Operator and titled owner are distinct; noting the gap is exactly the kind of fact a parcel search is for.",
@@ -1428,10 +1410,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "In this course's beat 5, 'the plan is being re-decided right now' is treated as:",
             options: [
-              "A dead end that makes research impossible",
-              "A reason to give up on the parcel",
-              "The finding that gives a citizen the most leverage, because an open decision can be spoken into at a public meeting",
-              "A sign the project has been cancelled",
+              "A frustrating dead end that makes any further citizen research effectively impossible to carry out",
+              "A perfectly clear reason to give up on researching the parcel altogether",
+              "The finding that gives a citizen the most leverage, since an open decision can be spoken into",
+              "A quiet sign that the whole redevelopment project has already been cancelled",
             ],
             correctIndex: 2,
             explanation: "A public meeting is the cheapest civic act there is, and on this ground it is happening now.",
@@ -1440,10 +1422,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "Who owns the Lower Hill redevelopment land now that PAR's rights have expired?",
             options: [
-              "The Pittsburgh Penguins outright",
-              "Two public authorities, the URA and the Sports & Exhibition Authority (SEA), each with boards that meet in public",
-              "The federal government",
-              "A private consortium with no public accountability",
+              "The Pittsburgh Penguins hockey organisation, owning the whole site outright and entirely on its own",
+              "Two public authorities, the URA and the SEA, each with boards that meet in public",
+              "The United States federal government, through one of its national housing agencies",
+              "A private consortium of developers with no real public accountability at all",
             ],
             correctIndex: 1,
             explanation: "Public ownership means the decisions are made in meetings you can attend and agendas you can read.",
@@ -1452,9 +1434,9 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "What does a parcel's assessed value on the county Real Estate Portal let you compare?",
             options: [
-              "The building's architectural quality",
-              "The number of people who have visited it",
-              "The political opinions of its owner",
+              "The overall architectural quality and beauty of the building",
+              "The total number of people who have ever visited the property",
+              "The private political opinions and affiliations of the current owner",
               "One piece of ground against another, such as the cleared Lower Hill against the surviving Middle Hill",
             ],
             correctIndex: 3,
@@ -1464,10 +1446,10 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
           {
             prompt: "The instruction to 're-check every date and body before you rely on it' is described in this course as:",
             options: [
-              "The method, not a disclaimer, especially on a site being re-decided in real time",
-              "An optional courtesy",
-              "A legal requirement imposed by the county",
-              "A reason not to write about the site at all",
+              "The method itself, not a disclaimer, especially on a site being re-decided in real time",
+              "A purely optional courtesy that a careful researcher may freely skip whenever pressed for time",
+              "A strict legal requirement that is formally imposed on researchers by the county",
+              "A perfectly good reason not to bother writing about the contested site at all",
             ],
             correctIndex: 0,
             explanation: "Development rights change hands and agreements get amended, so verification is the work, not a footnote to it.",
