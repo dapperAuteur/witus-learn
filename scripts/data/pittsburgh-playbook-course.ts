@@ -964,6 +964,151 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Now  (beat 4: observation and evidence)
+    //
+    // The 360 tour of the Lower Hill has been PLANNED but not captured, and its Wanderlearn embed
+    // URL does not exist yet. A tour URL is authoritative external data that must never be guessed
+    // (plans/future/04-wanderlearn-360-boundary.md), so this lesson ships as `virtual_tour` with NO
+    // contentUrl: the player renders the "no media yet" notice above the body, and the body is the
+    // observation brief the learner uses when the tour lands. Drop the URL in and re-seed. Per the
+    // recall-placement convention this tour lesson carries NO recallContent (recall belongs on
+    // teaching lessons only).
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "pgh-now-tour",
+      title: "14 · Now: walk the Hill (360 tour, forthcoming)",
+      section: "Section 4 · Now",
+      lessonType: "virtual_tour",
+      body: `**The 360 tour for this lesson is forthcoming.** It is not here yet, and the notice above this text is telling you the truth rather than reporting a fault. This course was written before the tour was captured, on purpose: the site template treats beat 4 as a drop-in, so the course is complete and teachable without it, and the tour is added later without restructuring anything.
+
+**Read this lesson now anyway.** It is your observation brief. Beat 4 asks one question, "what is actually there today," and the difference between a tourist looking at a street and a researcher looking at a street is entirely a matter of knowing what to look for before you arrive. **Work through this list now, then run it against the tour when it lands.**
+
+## What to look for, in order
+
+**1. Find the cleared ground, and read what is on it now.** The Lower Hill is the roughly 95 acres closest to downtown. On it today you will find the **FNB Financial Center**, a new tower that opened in February 2025 on part of the former Civic Arena site, and, around it, **open redevelopment land and surface parking** where the arena and its lots stood (Urban Redevelopment Authority of Pittsburgh, n.d.-b). **Ask of every stretch: is this a new building, an old survivor, cleared ground waiting, or a parking lot? Each one is a different decision**, and on this ground each is a different chapter of the double absence from lesson 12.
+
+**2. Stand at Freedom Corner and look both ways.** At the intersection of **Crawford Street and Centre Avenue** is Freedom Corner, the monument marking the line where residents stopped the clearance from moving further up the slope (Hill District Digital History, n.d.-b). **Look downhill toward downtown: that is the Lower Hill that was taken. Look uphill: that is the Middle and Upper Hill that organised and survived.** One corner holds both halves of this course. Note which direction the new construction faces.
+
+**3. Look for the boundary between what was cleared and what stands.** Somewhere the fabric changes from redevelopment parcels and a new tower back to street-fronting rowhouses, churches and small commercial buildings. **That boundary is not natural. It is the edge of the 1955 redevelopment area**, and it has a legal description on a map you can request.
+
+**4. Find the one Green Book building.** Section 1 established that more than 30 Hill District businesses were listed in the Green Book and that only one of those buildings still stands (Heinz History Center, n.d.-a). **A lone survivor is evidence about itself, not proof the district endures.** When the tour lets you see it, look at what is on either side of it, because a survivor in a block reads differently than a survivor alone.
+
+**5. Count the markers, monuments and plaques, and read who sponsored them.** Freedom Corner, the August Wilson House, historical markers along Centre Avenue: each is a public statement with an author, a date and a sponsor. **A marker tells you what a community and an agency agreed to say in public, in a particular year.** Note the sponsor every time.
+
+**6. Look for what is being built right now.** Construction fencing, a rezoning sign, a public-meeting notice, a leasing banner on the new tower. **Every one of those is a live document with a case number**, and Section 5 teaches you how to look them up. On this ground the redevelopment is not history; it is this year's news.
+
+**7. Look at who is on the street.** This is a living neighbourhood with residents, workers, worshippers and visitors, and a community development corporation that speaks for it. **Describe the people as they would describe themselves, or do not describe them.** A 360 tour is a photograph of strangers in a public place, and the ethics of writing about it are the ethics of writing about neighbours. The Hill District documents itself; read what it says about itself before you say anything about it.
+
+## What the tour cannot show you
+
+- **It cannot show you a date.** Every change you notice happened at a time, and the tour has no clock. Beat 3 gave you the dates; beat 5 gives you the record.
+- **It cannot show you an owner.** A building's occupant is not its owner, and neither is printed on the facade. The parcel record has it.
+- **It cannot show you an intention.** A parking lot is not evidence about anyone's motives. It is evidence that there is no building.
+- **It cannot show you a double absence.** You cannot photograph the neighbourhood that was cleared in 1955, and you cannot photograph the arena that was cleared in 2011. **Both removals are invisible in a present-day image**, which is exactly why this course spent Section 3 on the record instead of the view. Everything the tour does not contain is a question for Section 5, not an answer.
+
+**Write down your five most confident observations before the tour arrives, based on this brief and the map lesson that follows. Then check them.** Being wrong on the record about a place you had not yet seen is a better teacher than being right about one you had.
+
+## Sources
+- Heinz History Center. (n.d.-a). *Crossroads of the world: How urban renewal changed the Hill*. Senator John Heinz History Center. https://www.heinzhistorycenter.org/blog/crossroads-of-the-world-how-urban-renewal-changed-the-hill/
+- Hill District Digital History. (n.d.-b). *Freedom Corner: A rallying point for Pittsburgh activism*. https://hillhistory.org/items/show/7
+- Urban Redevelopment Authority of Pittsburgh. (n.d.-b). *Lower Hill*. https://www.ura.org/pages/lower-hill`,
+    },
+    {
+      slug: "pgh-map",
+      title: "15 · Map: one hill, and the pattern it belongs to",
+      section: "Section 4 · Now",
+      body: `**Read this before you touch the map, because the map's limits are a lesson in themselves.**
+
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, which means two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **A 95-acre neighbourhood is far smaller than one dot.** So this map cannot show you the Lower Hill block by block, and pretending otherwise would be a worse lesson than admitting it.
+
+**That limitation is the most useful thing on this page.** The right map for a parcel question is not a world map. It is the **Allegheny County GIS Viewer** and the county's **Real Estate Portal**, where you can enter an address or a parcel number and see parcel boundaries, ownership, assessed values and aerial imagery (Allegheny County, n.d.-a; Allegheny County, n.d.-b). **Choosing the right scale of map for your question is a research skill**, and Section 5 puts you to work in the county tools directly.
+
+**So this map does the job it can do well.** It places the Lower Hill in the national pattern it belongs to, and it marks two archives where the underlying records live.
+
+**Blue: the Lower Hill itself**, plotted at an approximate point on the cleared ground. Its detail carries the double absence in one paragraph.
+
+**Amber: four other American Black districts** cleared by the same instrument kit, the redevelopment authority plus blight designation plus federal Housing Act of 1949 money. Urban renewal razed Black neighbourhoods in cities across the country, and studies of the program find Black districts were far more likely than white ones to be chosen for clearance (Rothstein, 2017). **These four are here to stop you reading Pittsburgh as a local misfortune. It is a local instance of a national program.** Note that one of them, Indiana Avenue, is the subject of this course's sibling, so you can walk the same six beats there.
+
+**Green: two archives.** The Heinz History Center's Detre Library and Archives and the University of Pittsburgh's archives hold the URA, Allegheny Conference and Renaissance records this course leans on. **Both are places, and knowing where a record physically lives is part of knowing that it exists.**
+
+**Coordinates on this map are approximate points, not surveyed locations.** Do not use them to find an address. Use them to see the shape of the pattern, and use the Allegheny County tools when you need a parcel.
+
+**What this map cannot show, and neither could a closer one.** It cannot show absence. Every marker exists because something was recorded and written about. **The four amber cities are the ones that have been documented, which is a fact about scholarship as well as about clearance.** How many districts are not on this map is a question this course cannot answer and will not guess at.
+
+## Sources
+- Allegheny County. (n.d.-a). *Allegheny County GIS viewer*. https://experience.arcgis.com/experience/68f5e4ae2f5b47b78cefcdf019e154bd
+- Allegheny County. (n.d.-b). *Real estate portal*. https://realestate.alleghenycounty.us/
+- Neumann, T. (2016, February 1). *The "spiritual capital" of the Rust Belt: Pittsburgh and the postindustrial transformation of North Atlantic cities*. Global Urban History. https://globalurbanhistory.com/2016/02/01/the-spiritual-capital-of-the-rust-belt-pittsburgh-and-the-postindustrial-transformation-of-north-atlantic-cities/
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
+      mapContent: {
+        markers: [
+          {
+            id: "pgh-lower-hill",
+            lat: 40.4419,
+            lng: -79.9846,
+            title: "Lower Hill District, Pittsburgh, Pennsylvania",
+            color: "#1d4ed8",
+            description:
+              "The subject of this course. The roughly 95 acres of the Hill District closest to downtown, majority Black and genuinely mixed, cleared beginning in 1955 under the Urban Redevelopment Authority: about 1,300 buildings, over 400 businesses and more than 8,000 people removed for a promised cultural centre that was mostly never built. What replaced it was the Civic Arena and a great deal of parking. The arena itself was demolished between September 2011 and March 2012, a rare double absence. Today the ground holds the new FNB Financial Center and an active redevelopment site.",
+          },
+          {
+            id: "pgh-indiana-avenue",
+            lat: 39.7745,
+            lng: -86.1665,
+            title: "Indiana Avenue, Indianapolis, Indiana",
+            color: "#b45309",
+            description:
+              "The subject of this course's sibling. The Black commercial and cultural centre of Indianapolis, emptied between 1948 and the 1980s by blight designation and university land assembly. Indianapolis identified its first clearance area as blighted in 1945 and began demolishing it in 1948, on the same 1940s timeline as Pittsburgh and under its own state's machinery. That parallel is the evidence lesson 12 uses to weaken the claim that later cities simply copied Pittsburgh.",
+          },
+          {
+            id: "pgh-southwest-dc",
+            lat: 38.879,
+            lng: -77.017,
+            title: "Southwest Washington, D.C.",
+            color: "#b45309",
+            description:
+              "A largely Black Southwest neighbourhood cleared beginning in 1954 under the District of Columbia Redevelopment Act of 1945, the same year Pennsylvania passed its own redevelopment law. The clearance gave rise to Berman v. Parker (1954), the unanimous Supreme Court decision that upheld condemning property for urban renewal and became the legal ground the whole national program stood on, including the Lower Hill.",
+          },
+          {
+            id: "pgh-fillmore",
+            lat: 37.784,
+            lng: -122.433,
+            title: "Fillmore / Western Addition, San Francisco, California",
+            color: "#b45309",
+            description:
+              "A Black cultural district and jazz centre once called the Harlem of the West, cleared over two decades by the San Francisco Redevelopment Agency. Reporting on the project describes thousands of households displaced and hundreds of businesses closed. Same instrument kit as Pittsburgh, a redevelopment authority using blight designation and federal urban-renewal money, on the opposite coast.",
+          },
+          {
+            id: "pgh-black-bottom",
+            lat: 42.343,
+            lng: -83.037,
+            title: "Black Bottom / Paradise Valley, Detroit, Michigan",
+            color: "#b45309",
+            description:
+              "A Black neighbourhood and business district, home to a jazz scene that drew Duke Ellington and Ella Fitzgerald, razed for urban renewal beginning in the late 1940s and replaced by the Chrysler Freeway and Lafayette Park, a Mies van der Rohe development billed as a model neighbourhood. Detroit began its clearance authority work in 1946, the same year the URA was incorporated.",
+          },
+          {
+            id: "pgh-heinz-archives",
+            lat: 40.4468,
+            lng: -79.993,
+            title: "Detre Library & Archives, Heinz History Center, Pittsburgh",
+            color: "#15803d",
+            description:
+              "Where much of the record this course leans on physically lives, including materials on the Hill District and Pittsburgh's postwar redevelopment. The Heinz History Center's Crossroads of the World work is the source for several figures in Sections 1 and 3. Knowing where a record lives is part of knowing it exists.",
+          },
+          {
+            id: "pgh-pitt-archives",
+            lat: 40.4428,
+            lng: -79.954,
+            title: "University of Pittsburgh Archives & Special Collections, Oakland",
+            color: "#15803d",
+            description:
+              "Where the Allegheny Conference and Renaissance-era records and much of Historic Pittsburgh's digitized collection are held. The URA project files, the Allegheny Conference papers and the individual condemnation records named as unopened sources in Section 3 are the kind of material that lives in archives like this one. They are the next real work on this story.",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
