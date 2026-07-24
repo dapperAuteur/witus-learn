@@ -1445,6 +1445,55 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
         ],
       },
     },
+    {
+      slug: "bc-write-assignment",
+      title: "Your assignment: write one address on the chain",
+      section: "Section 6 · Write",
+      lessonType: "assignment",
+      body: `Beat 6 asks the question no other beat can: **what can only be said about this place?** In this course the answer has a particular shape, because Baltimore's whole argument is that four instruments (zoning, covenants, redlining, the road) were aimed at one end. Your job is to make that argument stand on a single address.
+
+## The assignment
+Write **900 to 1,300 words** of creative nonfiction about **one block, one rowhouse, or one address** in Baltimore. Every factual sentence must be checkable against a source you name. **The form is literary; the standard of evidence is the one Section 3 used on a hundred-year-old ordinance.**
+
+## Step 1 · Pick one address, and pick small
+Choose from the ground this course already covered: a block along the Franklin-Mulberry ditch (the Highway to Nowhere), a street in a ward the 1910 ordinance reached, a parcel you pulled in the Section 5 exercise, or a house you can place on a HOLC sheet. **Smaller is better.** "Baltimore" is a topic, not a subject. One doorway is a subject.
+
+## Step 2 · Find which instruments touched it, in order
+This is the research, and it is the point. For your one address, establish what you can and admit what you cannot:
+1. **Zoning.** Was it in a block the 1910 ordinance (or a later version) reached? Cite the ordinance or a study that maps it.
+2. **Covenants.** Does a deed in its chain of title carry a racial covenant? Say so only if you have seen the language or a source that quotes it.
+3. **Redlining.** Which HOLC grade did its neighborhood receive, and what did the area description say? Quote it.
+4. **The road, or renewal.** Was it taken, cleared, cut off, or left stranded beside the unfinished highway?
+
+Some links will be present and some absent. **An honest "the covenant record for this block I could not find" is worth more than a confident guess**, and it is truer to how the chain actually worked: the instruments overlapped, they did not march in a neat line.
+
+## Step 3 · Write the place, not the thesis
+Do not open with "systemic racism." Open with the address. Let the reader stand on the sidewalk, then let the documents arrive one at a time, in the order they hit the block. The argument is strongest when the reader assembles it, because they watched you assemble it from the record.
+
+## What you hand in
+The essay, plus a short **source list** in APA 7: every date, dollar figure, grade, and quotation tied to where you got it. If two sources disagree, name both and say which you trusted and why. That move, not a flourish, is the mark of the work.`,
+    },
+    {
+      slug: "bc-what-comes-next",
+      title: "What this course set up, and where the chain runs next",
+      section: "Section 6 · Write",
+      body: `You came in with a city and you leave with a method. Baltimore was the right place to learn it because you did not have to travel to see the whole sequence: **racial zoning, then restrictive covenants, then redlining, then the road**, four tools reaching for one end, all within one set of neighborhoods.
+
+## What held, and what did not
+The course tried to earn the word "chain" rather than assert it, and it did not all survive. The 1910 ordinance is real and documented, and it is fair to call it among the first of its kind, but it went through several versions and was undercut by *Buchanan v. Warley* in 1917, so "the first racial zoning law, full stop" overstates it. The HOLC maps are real, and the area descriptions are specific and ugly, but scholars disagree about how much the maps *caused* versus *recorded* a segregation that redlining then hardened, and this course kept those two claims apart on purpose. The Highway to Nowhere is the least ambiguous link: a road begun, driven partway through Rosemont and Franklin-Mulberry, and stopped, leaving a trench you can still stand beside.
+
+## Where the same chain runs
+Baltimore is one instance of a national method, which is why the map lesson set four other cities beside it. The instruments you learned to name here recur, in different order and under different local names, in the sibling courses:
+- **Washington, DC** is where blight clearance was made constitutionally safe (*Berman v. Parker*), the legal backstop behind the road and renewal links you just studied.
+- **Philadelphia** shows a university, rather than a highway department, assembling the land.
+- **Seattle** carries the covenant instrument into a searchable archive and then into the modern school-assignment fight.
+- **Indianapolis** shows a boundary decision (Unigov) doing to representation and schooling what the road did to a neighborhood.
+
+Read any two of them together and Baltimore stops looking like a local misfortune. It looks like what it was: a place where a national toolkit left an unusually complete paper trail.
+
+## The tour is coming
+The 360 tour of the Highway to Nowhere corridor is not attached to this course yet. When it is, the "Now" lesson stops describing an absence and lets you stand in it. Until then, the observation brief there tells you exactly what to look for, so the course is complete without it.`,
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
