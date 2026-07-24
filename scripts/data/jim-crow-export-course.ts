@@ -467,6 +467,481 @@ export const JIM_CROW_EXPORT_COURSE: AuthoredCourse = {
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Germany studied it
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ex-june-1934",
+      title: "7 · The room: 5 June 1934",
+      section: "Section 3 · Germany studied it",
+      body: `**This is the document the German half of the course rests on, so read the description of it before you read anything about it.**
+
+**The meeting.** On 5 June 1934, about a year and a half after Adolf Hitler became Chancellor, the leading lawyers of Nazi Germany met to plan what became the Nuremberg Laws. **It was chaired by Franz Gürtner, the Reich Minister of Justice.** Among those present were **Bernhard Lösener**, whom Whitman describes as "one of the principal draftsmen of the Nuremberg Laws," and **Roland Freisler**, later President of the Nazi People's Court and "a man whose name has endured as a byword for twentieth-century judicial savagery" (Whitman, 2017, p. 1). The body was the Commission on Criminal Law Reform.
+
+**Why the document exists.** "The meeting was an important one, and a stenographer was present to record a verbatim transcript, to be preserved by the ever-diligent Nazi bureaucracy" (Whitman, 2017, p. 1). **A regime that took minutes of its own drafting meetings left a record of how it argued.** That is the whole reason this claim can be handled to an evidence standard rather than as provocation.
+
+**What is in it.** "In the opening minutes, Justice Minister Gürtner presented a memo on American race law, which had been carefully prepared by the officials of the ministry for purposes of the gathering; and the participants returned repeatedly to the American models of racist legislation in the course of their discussions" (Whitman, 2017, p. 2). Gürtner told the room it was "naturally very attractive to look around in the world to see how this problem has been attacked by other Völker," and, on Whitman's account, the United States supplied the only model the Justice Ministry found to investigate (Whitman, 2017).
+
+**The single most quoted line, and the one that shows you the shape of the whole problem.** Freisler, at that meeting:
+
+> This jurisprudence would suit us perfectly, with a single exception. Over there they have in mind, practically speaking, only coloreds and half-coloreds, which includes mestizos and mulattoes; but the Jews, who are also of interest to us, are not reckoned among the coloreds. (Freisler, 5 June 1934, as quoted in Whitman, 2017, p. 1)
+
+**Read that twice.** A leading Nazi lawyer says American race jurisprudence would suit Germany perfectly, and in the same breath names the reason it cannot be lifted: **American law did not classify Jews as non-white.** That single sentence contains both the evidence of study and the reason copying was impossible. **Anyone who quotes the first half without the second is misusing the source.**
+
+**A second exchange, from the same transcript, which Whitman uses as the epigraph to his chapter on the Blood Law.**
+
+> Dr. Möbius: I am reminded of something an American said to us recently. He explained, "We do the same thing you are doing. But why do you have to say it so explicitly in your laws?" State Secretary Freisler: But the Americans put it in their own laws even more explicitly! (5 June 1934, as quoted in Whitman, 2017)
+
+**The finding that surprises people most.** "It is particularly startling to discover that the most radical Nazis present were the most ardent champions of the lessons that American approaches held for Germany" (Whitman, 2017, p. 2). **The American material was the radicals' argument, not the moderates'.** Freisler wanted broad criminalisation and could point out that in the United States racial mixing was actually prosecuted as a crime; Gürtner and Lösener tried to slow him with legal objections (Stolleis, 2018).
+
+**That last point matters more than it looks.** The transcript is not a record of agreement. **It is a record of a fight**, between a conservative nationalist Justice Minister who braked and a radical State Secretary who pushed, and the American material was a weapon in that fight. **A source that captures an argument is more useful than one that captures a conclusion, and it is also easier to misquote**, because you can pick whichever speaker suits you.
+
+**One earlier document, because the transcript is not the first.** American law was expressly invoked in the **Prussian Memorandum**, the radical Nazi document of 1933 that set the initial framework for the Blood Law, and which spoke not only of Jews but of "Jews, Negroes or other coloreds" (Whitman, 2017). **So the interest predates the meeting.**
+
+**Where this sits on the ladder from lesson 2.** Rung 2: documented study inside a policy-making process. **Not propaganda for foreigners.** Whitman's argument for that is a physical one about the documents: this was a closed meeting recorded for the ministry's own files, and the published Nazi legal literature that fed it was printed in dense German Fraktur type for a domestic professional readership (Whitman, 2017). **Ask of any source: who was the audience? A memo written for the people in the room is different evidence from a pamphlet written for the world.**
+
+## Sources
+- Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "How many American states had criminal anti-miscegenation regimes in the early 1930s, and how many remained in 1967?",
+          answer: "About thirty in the early 1930s, many of them outside the South. Sixteen remained when Loving v. Virginia struck them down on 12 June 1967.",
+        },
+        {
+          prompt: "Why does Whitman say the criminal character of American marriage bans is the technically interesting part?",
+          answer: "Many legal systems have voided marriages they disapproved of, but very few have imprisoned people for contracting one. German drafters framed their problem as whether marriage could be a subject of criminal law at all, and American law was the only Western example they could find.",
+        },
+        {
+          prompt: "What does Whitman mean by \"Segregation is not what counts most\"?",
+          answer: "The Nuremberg Laws said nothing about segregation. The Nazi concern lay in citizenship and in sex and reproduction, so scholars looking for a Jim Crow influence on Nazi segregation are asking the wrong question.",
+        },
+        {
+          prompt: "What did a 1934 official Nazi handbook article say about American segregation, and why is that striking?",
+          answer: "It listed American statutes separating school children, requiring race on birth, marriage and death certificates, and separating waiting rooms, rail cars, buses, steamships and even prisons, plus separate voter and tax rolls in Arkansas. The author found it excessive.",
+        },
+      ],
+    },
+    {
+      slug: "ex-krieger-and-kier",
+      title: "8 · The researchers: who actually read the American statutes",
+      section: "Section 3 · Germany studied it",
+      body: `A ministry memo does not write itself. **Two named researchers stand behind the American material in the German record, and knowing who they were is the difference between a rumour and a citation.**
+
+**Heinrich Krieger, the man who went and looked.** Krieger was a young Nazi lawyer who spent two semesters as an exchange student at the University of Arkansas Law School in 1933 and 1934. He was immersed enough in American law to publish an English-language article, "Principles of the Indian Law," in the *George Washington Law Review* in 1935 (Whitman, 2017). Returning to Germany, he became a fellow at an institute in Düsseldorf under the Interior Ministry, and it was there that his work came to the attention of Gürtner's Justice Ministry (Whitman, 2017). **The material Gürtner quoted at the 5 June 1934 meeting most likely came from Krieger's article "Das Rassenrecht in den Vereinigten Staaten," published in mid-1934 in the technical administrative-law journal *Verwaltungsarchiv*** (Whitman, 2017; Stolleis, 2018). He expanded it into a book of the same title in 1936, backed by roughly 350 pages of study of American statutes and case law (Whitman, 2017; Stolleis, 2018).
+
+**What Krieger told German readers about American law.** Two passages, quoted by Whitman, are worth reading because they show the level of detail.
+
+On penalties: "Violations of these marriage prohibitions are threatened with both fines and imprisonment," with the offence graded differently by state, "for example misdemeanor in Nevada, felony in Tennessee, felony (infamous crime) in Maryland," and with "[i]n several states imprisonment of up to ten years" possible (Krieger, as quoted in Whitman, 2017).
+
+On classification: some states counted descent "for up to three generations," five states used "1/8 or more negro blood," two used one quarter, and other states let outward facts decide, including "former slave status (North Carolina), the fact of regular social association with one or another group (ditto) or, in the case of a second marriage, the racial identity of the first marital partner (Texas)" (Krieger, as quoted in Whitman, 2017).
+
+**Whitman's assessment of Krieger is the uncomfortable part, and he does not soften it.** He calls Krieger's *Race Law in the United States* "a work of real learning and numerous insights," writes that "Heinrich Krieger was, as it were, the Nazi Gunnar Myrdal," and adds that "[i]t may sound grating to speak of 'first-rate Nazi scholarship,' but that is what Heinrich Krieger's Race Law in the United States represented" (Whitman, 2017). **Krieger's heroes in that book were Thomas Jefferson and Abraham Lincoln**, and his diagnosis of American law was that it was torn between what he called formalistic liberal egalitarianism and realistic racism, with the second, he hoped, winning (Whitman, 2017). **Note the shape of that argument. He was not reading America as an enemy. He was reading it as a country whose race law had been sabotaged by its own constitution.**
+
+**Herbert Kier, the man who was commissioned.** Kier (1900 to 1973) was a young Austrian National Socialist whom Viktor Bruns, director of the Kaiser Wilhelm Institute for Foreign Public Law and International Law, brought in on a research stipend in 1933. **He was tasked with compiling material on the race legislation of the United States, South Africa and Australia**, apparently in answer to a request from the Reich Justice Ministry (Stolleis, 2018). His article "Volk, Rasse und Staat" appeared in the official *Nationalsozialistisches Handbuch für Recht und Gesetzgebung*, edited by Hans Frank (Munich, 1935), pages 17 to 28 (Stolleis, 2018).
+
+**What Kier printed.** After a passage expressing astonishment that a country whose "dominant political ideology" was "entirely liberal and democratic" had such extensive race legislation, **Kier printed a two-page alphabetical table giving the anti-miscegenation legislation of all thirty American states with exact citations** (Whitman, 2017). Whitman notes that this table matches the description of American law that Gürtner and Freisler gave the previous June, and that it very likely was the "list" Freisler referred to at the meeting. The same table went on circulating, reappearing in a standard 1937 commentary on the Blood Law (Whitman, 2017).
+
+**Three things a careful reader should take from this lesson, in order of weight.**
+
+**1. The research was commissioned, specific and traceable.** A named institute, a named director, a named researcher, a named journal, a named handbook, page numbers. **This is not "the Nazis admired Jim Crow." It is a paper trail.**
+
+**2. It was written for Germans.** Whitman argues Kier's chapter "cannot have been meant for a foreign audience," being a dense Fraktur text with limited foreign circulation and intended "to guide and inspire domestic Nazi deliberations" (Whitman, 2017). **That is the argument that separates study from propaganda, and it is an argument about the physical document, which is the strongest kind.**
+
+**3. South Africa is in the brief, and it is ranked second.** Kier's commission covered the United States, South Africa and Australia. Krieger later joined the National Socialist Office of Race Policy, travelled to South-West Africa, and gathered material for a monograph on South Africa (Whitman, 2017). **And Krieger's own summary judgement, as Stolleis reports it, was that there were only two real centres of race law in the world, the United States and Germany, with South Africa at the margin (Stolleis, 2018).** Hold that. **It is the honest bridge to section 4, and it points the opposite way from the popular version of this story.**
+
+## Sources
+- Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "Give the date, the chair, and two named attendees of the meeting the German half of this course rests on.",
+          answer: "5 June 1934, chaired by Franz Gürtner, Reich Minister of Justice. Bernhard Lösener, a principal draftsman of the Nuremberg Laws, and Roland Freisler, later President of the People's Court, were present.",
+        },
+        {
+          prompt: "What did Gürtner do in the opening minutes of that meeting?",
+          answer: "He presented a memo on American race law that officials of the Justice Ministry had prepared for the gathering, and the participants returned to American models repeatedly.",
+        },
+        {
+          prompt: "Quote Freisler's line about American jurisprudence, and say what its second half proves.",
+          answer: "\"This jurisprudence would suit us perfectly, with a single exception.\" The exception was that American law did not reckon Jews among the coloreds. The second half proves that copying was impossible, which is why quoting only the first half misuses the source.",
+        },
+        {
+          prompt: "Which faction in the room championed the American material, and why is that surprising?",
+          answer: "The most radical Nazis present were the most ardent champions of the American example. Freisler could point out that racial mixing was prosecuted as a crime in the United States, while Gürtner and Lösener tried to slow him with legal objections.",
+        },
+        {
+          prompt: "Why does Whitman argue the transcript is study rather than propaganda?",
+          answer: "It was a closed meeting recorded for the ministry's own files, and the Nazi legal literature feeding it was printed in dense Fraktur for a domestic professional readership. The audience for a document is evidence about what the document is.",
+        },
+      ],
+    },
+    {
+      slug: "ex-too-harsh",
+      title: "9 · Where they said the American model was too harsh",
+      section: "Section 3 · Germany studied it",
+      body: `**This is the load-bearing lesson of the course.** If you remember one thing, remember this one, because it is the finding that makes the whole subject safe to teach and the finding that gets stripped out every time the subject is abused.
+
+**Whitman's sentence, in full.** "[T]he ironic truth is that when Nazis rejected the American example, it was sometimes because they thought that American practices were overly harsh: for Nazis of the early 1930s, even radical ones, American race law sometimes looked too racist" (Whitman, 2017, p. 5).
+
+**The specific thing they balked at was the one-drop rule.** In American practice, and increasingly in American case law, a person with any traceable African ancestry counted as Black. Whitman reports German commentary recoiling from it.
+
+- A **1934 German book written as a guide for teachers** on how to present Nazi race policy to pupils praised American seriousness about racial purity while noting that it led "in certain cases to human hardness," the illustration being a person of predominantly white appearance who was nonetheless classified as Black. (The original passage uses a racial slur at that point; it is omitted here, and the omission is deliberate rather than an accident of quotation.) (Whitman, 2017)
+- A **1936 article written for German teachers of English** likewise praised the American commitment to legislating racial purity but blanched at "the unforgiving hardness of the social usage" that counted anyone with a drop of African ancestry as Black (Whitman, 2017).
+
+**Whitman's verdict on what that meant for the borrowing.** "The one-drop rule was too harsh for the Nazis," he writes, with the qualification that at least one fanatic, Achim Gercke, favoured something like it, and he draws the consequence: "for that reason alone the influence of American classification schemes was inevitably limited" (Whitman, 2017).
+
+**Now the sentence that should stop you from misreading this as a compliment to the United States.** Whitman writes that scholars who see parallels between American and Nazi racial classification schemes are wrong, and gives the reason: **"only because they understate the relative severity of American law"** (Whitman, 2017). **The Nazis did not settle on a milder rule because America was cruel and they were kind. They settled on a different rule because their target population was different and because a rule that harsh was, in their judgement, unworkable for it.** That is a statement about Nazi cost-benefit reasoning, not about American mercy, and treating it as exoneration is the second-commonest abuse of this material after the first.
+
+**The second reason unmodified borrowing was impossible: the targets did not match.** Nazi authors argued that American law could rely on what one anonymous 1935 writer called "mostly clear color lines," while German Jews were not visually distinguishable in the same way and maintained identity through culture rather than colour (Whitman, 2017). **From this the Nazi literature drew a conclusion that should turn your stomach and that you should still record accurately**, namely that the German "problem" was therefore harder and more insidious than the American one.
+
+**Whitman's bottom line, which is the sentence to memorise for the quiz and for arguments.**
+
+> The bottom line is that the Nazis regarded American classification schemes as too harsh, and the American race problem as too different, for any unmodified borrowing to have taken place. But what ultimately matters is that they knew that there was an American example, and indeed the example that they turned to first, and over and over again. (Whitman, 2017)
+
+**Both halves of that sentence are the finding.** The first half is the limit on the claim. The second half is the claim. **A course that gives you only the first half is minimising. A course that gives you only the second half is agitating. This course gives you the sentence.**
+
+**A test you can apply to any writing you meet on this subject.** Ask: does it contain the words *too harsh*, or any equivalent? **If a piece asserts that the Nazis modelled their race law on America and never mentions that they rejected the American classification rule as excessive, the writer either has not read the book or is not telling you what is in it.** That test is cheap, it is fast, and it works.
+
+## Sources
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "Who was Heinrich Krieger and what did he write?",
+          answer: "A young Nazi lawyer who spent two semesters as an exchange student at the University of Arkansas Law School in 1933 and 1934. He published an article on American race law in Verwaltungsarchiv in 1934 and expanded it into a book in 1936, backed by roughly 350 pages of study.",
+        },
+        {
+          prompt: "What did Whitman call Krieger, and why is the comparison uncomfortable?",
+          answer: "He called Krieger \"the Nazi Gunnar Myrdal\" and said the book represented first-rate Nazi scholarship. It is uncomfortable because it means the research was competent, not crude, and it cannot be dismissed as ignorance.",
+        },
+        {
+          prompt: "Who was Herbert Kier, who commissioned him, and what was his brief?",
+          answer: "A young Austrian National Socialist brought into the Kaiser Wilhelm Institute for Foreign Public Law and International Law by its director Viktor Bruns in 1933. He was asked to compile material on the race legislation of the United States, South Africa and Australia.",
+        },
+        {
+          prompt: "What did Kier print in the official National Socialist handbook, and why does it corroborate the transcript?",
+          answer: "A two-page alphabetical table giving the anti-miscegenation legislation of all thirty American states with exact citations. It matches the description Gürtner and Freisler gave the previous June, and was very likely the list Freisler referred to.",
+        },
+        {
+          prompt: "Where did South Africa sit in the German research, according to Krieger's own summary?",
+          answer: "At the margin. Krieger judged that there were only two real centres of race law in the world, the United States and Germany, with South Africa peripheral, even though he later travelled to South-West Africa and gathered material on South Africa.",
+        },
+      ],
+    },
+    {
+      slug: "ex-nuremberg-laws",
+      title: "10 · What the Nuremberg Laws actually said",
+      section: "Section 3 · Germany studied it",
+      body: `**Read the statutes before the argument about the statutes.** Two laws were announced at the Nazi Party rally on **15 September 1935** (United States Holocaust Memorial Museum, n.d.-a).
+
+**1. The Reich Citizenship Law.** It reserved citizenship for those "of German or related blood," stripping Jews of full citizenship and eliminating their political rights (United States Holocaust Memorial Museum, n.d.-a). **Compare lesson 4.** This is the second-class citizenship technique: a person remains a subject of the state without holding the political rights of a citizen. **The technique is the parallel, and the technique is what the German researchers had written up.**
+
+**2. The Law for the Protection of German Blood and German Honor**, usually called the Blood Law. Whitman quotes its operative provisions:
+
+> § 1 (1) Marriages between Jews and nationals of German blood or racially related blood are forbidden. If such marriages are nevertheless entered into they are null and void, even if they are concluded abroad in order to evade this law.
+> § 5 (1) Any person who violates the prohibition of § 1 shall be punished by imprisonment at hard labor. (Law on the Protection of German Blood and German Honor, as quoted in Whitman, 2017)
+
+**Look at what that pair of clauses does: civil invalidity plus criminal penalty, with an anti-evasion rule for marriages contracted abroad.** That is structurally the American anti-miscegenation package from lesson 5. **And here is Whitman being scrupulous about exactly that point:** "The language of this law was certainly not directly copied from some American statute; but that is not the point" (Whitman, 2017). **He is not claiming a copied text. He is claiming a borrowed conceptual framework, which is rung 1 of the ladder softened into rung 2.**
+
+**3. The definition, which came two months later, and which is where the one-drop story lands.** The First Regulation under the Reich Citizenship Law, of **14 November 1935**, provided that a person was a Jew if descended from at least three racially full-Jewish grandparents, and that a person with two Jewish grandparents counted as a Jew if he belonged to the Jewish religious community at the time of the law or joined it afterwards, or was married to a Jew at that time or married one afterwards (First Regulation, as quoted in Whitman, 2017). Those with one or two Jewish grandparents who did not meet those conditions fell into the category of *Mischlinge* (United States Holocaust Memorial Museum, n.d.-a).
+
+**Now put the numbers side by side, because this is the whole argument in one table.**
+
+| | Threshold used | Source |
+|---|---|---|
+| **American states, as reported to German readers** | One eighth in five states, one quarter in two, any traceable ancestry in some case law | Krieger, as quoted in Whitman (2017) |
+| **What Nazi radicals wanted** | One Jewish grandparent, the equivalent of one quarter | Whitman (2017) |
+| **What the 14 November 1935 regulation settled on** | Three or four Jewish grandparents, with a religion-and-marriage test for those with two | First Regulation, as quoted in Whitman (2017) |
+
+**The radicals lost that fight, and they lost it in the direction of leniency.** Lösener defended the compromise on the ground that life choices revealed the "inclinations" of the person in question (Whitman, 2017). **The regime that produced the Holocaust adopted a narrower racial definition than the one its own radicals proposed and than the one several American states used.** Both halves of that sentence are true, and neither of them is a mitigation of anything.
+
+**The marriage test, and Whitman at his most careful.** Notice that the November regulation makes legal status turn partly on whom you married. Krieger had reported that Texas courts looked at the racial identity of a first marital partner, and the Nazi literature on American immigration law had praised the Cable Act rule from lesson 4 (Whitman, 2017). **So there is a possible American echo here.** Whitman raises it, and then writes: **"In the end though we do not know. We cannot say what part if any this aspect of the American model played in German thinking"** (Whitman, 2017).
+
+**That sentence is why this book can be taught.** He had a striking parallel, he had a plausible transmission route, and he wrote *we do not know*. **When you write about this subject, that is the standard.**
+
+**The postscript that keeps the story from ending tidily.** A week after the Nuremberg Laws were proclaimed, an official delegation of German lawyers, forty-five people, sailed for the United States. In New York they met large protests, which the delegation read as confirmation that its enemies had understood the challenge (Stolleis, 2018; Williams, 2017). **What they did on the rest of that trip is not in the record**, and Whitman's reviewers have noted the gap (Williams, 2017). **An absent source is a finding. Report it as one.**
+
+**One more thing that belongs here and not in section 5, because it is a claim about 1935 rather than a moral framing.** Whitman writes: "It is simply not the case that the drafters of the Nuremberg laws were already aiming at the annihilation of the Jews in 1935. The concern of early Nazi policy was to drive the Jewish population into exile, or at the very least to marginalize it within the borders of the Reich" (Whitman, 2017, p. 13). **He says this while arguing against critics who use the Holocaust to rule out any comparison. It is a claim about what the 1935 drafters intended, and it is not a claim about what the regime became.**
+
+## Sources
+- Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
+- United States Holocaust Memorial Museum. (n.d.-a). *The Nuremberg Race Laws*. Holocaust Encyclopedia. https://encyclopedia.ushmm.org/content/en/article/the-nuremberg-race-laws
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.
+- Williams, T. C. (2017, August 16). Long read review: *Hitler's American Model* by James Q. Whitman. *LSE Review of Books*. https://blogs.lse.ac.uk/lsereviewofbooks/2017/08/16/long-read-review-hitlers-american-model-the-united-states-and-the-making-of-nazi-race-law-by-james-q-whitman/`,
+      recallContent: [
+        {
+          prompt: "Quote Whitman's sentence about why the Nazis sometimes rejected the American example.",
+          answer: "\"[T]he ironic truth is that when Nazis rejected the American example, it was sometimes because they thought that American practices were overly harsh: for Nazis of the early 1930s, even radical ones, American race law sometimes looked too racist\" (Whitman, 2017, p. 5).",
+        },
+        {
+          prompt: "Which specific American rule did German commentators recoil from, and how did they describe it?",
+          answer: "The one-drop rule. A 1934 Nazi teachers' guide said American racial separation led in certain cases to human hardness, and a 1936 article for teachers of English called it the unforgiving hardness of the social usage.",
+        },
+        {
+          prompt: "Why is \"the Nazis found American law too harsh\" not a compliment to the United States?",
+          answer: "Whitman says scholars who see parallels are wrong only because they understate the relative severity of American law. The Nazis chose a different rule because their target population was different and the American rule was unworkable for it, not out of mercy.",
+        },
+        {
+          prompt: "State Whitman's bottom line on the one-drop rule in both its halves.",
+          answer: "The Nazis regarded American classification schemes as too harsh and the American race problem as too different for any unmodified borrowing. But what ultimately matters is that they knew there was an American example, and it was the one they turned to first and repeatedly.",
+        },
+        {
+          prompt: "What cheap test can you run on any piece of writing about this subject?",
+          answer: "Check whether it contains the words too harsh or an equivalent. If a piece says the Nazis modelled their race law on America and never mentions that they rejected the American classification rule as excessive, the writer has not read the book or is not reporting it.",
+        },
+      ],
+    },
+    {
+      slug: "ex-the-argument-against",
+      title: "11 · The scholars who think this is overstated",
+      section: "Section 3 · Germany studied it",
+      body: `**A course that presents a contested thesis as settled has misinformed you even when the thesis is right.** Whitman is arguing **against** a scholarly position, not into empty space, and that position has names.
+
+**The prior consensus, in its own words.** All four of these are quoted here from Whitman's own introduction, which is both the honest way to get them and a limitation you should notice; more on that below.
+
+| Scholar | Position | Source |
+|---|---|---|
+| **Andreas Rethmeier**, 1995 dissertation on the Nuremberg Laws | Conceded America was for the Nazis the "classic example" of racist legislation, but insisted the idea of American influence on the Nuremberg Laws was "not just off-base, but plain wrong," because American law classified Jews as "Caucasian" | Whitman (2017, p. 4) |
+| **Richard Bernstein**, American legal historian | "[T]he few and fleeting references by Nazi polemicists and 'jurists' to Jim Crow laws" were "simply attempts to cite vaguely relevant precedents for home-grown statutes and policies to deflect criticism, not actual sources of intellectual influence" | Whitman (2017, p. 4) |
+| **Marcus Hanke**, University of Salzburg | "[T]he segregation law of the states has not been of any important influence" | Whitman (2017, p. 4) |
+| **Jens-Uwe Guettel**, 2012 book | The "astonishing insignificance of American segregation laws" for Nazi policy; the Nazis saw America as mired in an outdated liberal outlook | Whitman (2017, p. 4) |
+
+**Their shared argument, stated fairly.** Nazi references to American law were **rhetorical**, not formative. They were there to embarrass foreign critics, and they were reaching for a handy parallel rather than a source. **On that reading, the transcript shows a regime looking for cover, not for a model.**
+
+**Whitman's answer, stated fairly.** He makes two moves. First, he says they are answering the wrong question, because they ask about segregation and "[t]he Nuremberg Laws said nothing about segregation" (Whitman, 2017, p. 11). Second, he says the audience for the documents rules out the propaganda reading, as lesson 7 set out. **Notice that the first move is a concession as much as a rebuttal: Whitman agrees that American segregation law was not the important influence.** On the narrow question his critics asked, he substantially grants their answer and then changes the question. **Whether changing the question is a legitimate move or a rescue is exactly what the argument is about, and it is your call to make, not this course's.**
+
+**The objection Whitman raises against himself, which is the strongest one.** "Skeptics may retort that Nazi radicals would have succeeded in criminalizing racially mixed marriages even if they had not had an American example to cite. That is perfectly possible; we will never know" (Whitman, 2017). **A cause that was not necessary is a weaker cause. He concedes it in his own text.**
+
+**The sharpest published qualifier comes from a friendly reviewer, which is why it is worth more.** Michael Stolleis, one of Germany's leading legal historians, reviewed the book in *Rechtsgeschichte* in 2018 and largely accepted its findings. His summing-up sentence is the one to keep: **"Gewiss hätte es für die Nationalsozialisten dieses Modells nicht bedurft, aber da es vorhanden war, wurde es auch genutzt"** (Stolleis, 2018, p. 492), which reads in English as: certainly the National Socialists would not have needed this model, but since it was there, it was used as well. **That is a precise statement of a modest claim, and it is compatible with everything in section 3.** Stolleis also notices the political shape of the book's American reception, suggesting the enthusiasm carried an implication that American society should examine its own past and present rather than only pointing at Nazi Germany (Stolleis, 2018).
+
+**The limitation you should have spotted three paragraphs ago.** **Every critic quoted in the table above is quoted from Whitman.** He chose the sentences, he set them up, and he answers them on the next page. **That is normal scholarly practice and it is still a one-sided window.** If this question matters to you, the honest next step is to read Guettel's 2012 book and Rethmeier's dissertation yourself, and to read the published reviews rather than only the book. Three you can start with: S. J. Wiesen in the *American Historical Review* (2018), K. F. Ledford in *Holocaust and Genocide Studies* (2019), and Stolleis (2018). **This course has read Stolleis in full and characterises only Stolleis. The other two are named as places to go, not summarised second hand.**
+
+**What a live disagreement looks like, and how to hold one.**
+1. **The documentary claims are not in dispute.** Nobody argues that the transcript is a forgery or that Kier's table is not in the handbook. **Both sides agree about the documents.**
+2. **The dispute is about what the documents mean.** Were the American references formative or decorative? **That is an interpretive question, and interpretive questions do not get settled by producing one more document.**
+3. **Both sides have a motivated reading available to them**, and you should notice yours. If you want America implicated, Whitman is convenient. If you want America exonerated, Guettel is. **Preferring the conclusion you wanted is the failure mode; naming it in advance is the defence.**
+4. **The safest formulations are the specific ones.** "Nazi lawyers studied American race law in detail while drafting the Nuremberg Laws" is defensible on any reading. "American race law caused the Nuremberg Laws" is not. **Write the first.**
+
+## Sources
+- Ledford, K. F. (2019). Review of *Hitler's American model: The United States and the making of Nazi race law*, by J. Q. Whitman. *Holocaust and Genocide Studies*, *33*(2), 277. https://academic.oup.com/hgs/article-abstract/33/2/277/5607388
+- Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.
+- Wiesen, S. J. (2018). Review of *Hitler's American model: The United States and the making of Nazi race law*, by J. Q. Whitman. *The American Historical Review*, *123*(3), 917 to 918. https://academic.oup.com/ahr/article-abstract/123/3/917/5025408`,
+      recallContent: [
+        {
+          prompt: "Give the date the Nuremberg Laws were announced and name the two laws.",
+          answer: "15 September 1935. The Reich Citizenship Law and the Law for the Protection of German Blood and German Honor.",
+        },
+        {
+          prompt: "What did the Blood Law's sections 1 and 5 do, and which American package do they resemble structurally?",
+          answer: "Section 1 forbade marriages between Jews and nationals of German or related blood, made them null and void even if concluded abroad to evade the law, and section 5 punished violation with imprisonment at hard labour. That is civil invalidity plus criminal penalty, the American anti-miscegenation package.",
+        },
+        {
+          prompt: "What threshold did the 14 November 1935 regulation settle on, and what had the radicals wanted?",
+          answer: "Three or four Jewish grandparents, with a religion and marriage test for those with two. The radicals had wanted a single Jewish grandparent, the equivalent of the one-quarter rule used in two American states.",
+        },
+        {
+          prompt: "What does Whitman say about whether the American marital-status rule shaped the German definition?",
+          answer: "He raises the parallel with Texas and the Cable Act and then writes that in the end we do not know, and cannot say what part if any this aspect of the American model played in German thinking.",
+        },
+        {
+          prompt: "What happened a week after the Nuremberg Laws were proclaimed, and what is missing from the record?",
+          answer: "An official delegation of forty-five German lawyers sailed for the United States and met large protests in New York. What they did for the rest of the trip is not documented, and reviewers have noted the gap.",
+        },
+      ],
+    },
+    {
+      slug: "ex-quiz-germany",
+      title: "12 · Quiz: what the German record shows, and what it does not",
+      section: "Section 3 · Germany studied it",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the document at the centre of the German half of this course?",
+            options: [
+              "A verbatim stenographic transcript of a meeting held on 5 June 1934",
+              "A pamphlet the Nazi regime published in English for readers in the United States and Britain",
+              "A letter from Hitler to the government of the state of Virginia",
+              "The minutes of the 1935 Nazi Party rally at Nuremberg",
+            ],
+            correctIndex: 0,
+            explanation: "A stenographer recorded the Commission on Criminal Law Reform meeting and the Nazi bureaucracy preserved the transcript. That is why the claim can be handled to an evidence standard.",
+            sourceLessonSlug: "ex-june-1934",
+          },
+          {
+            prompt: "Who chaired the 5 June 1934 meeting?",
+            options: [
+              "Roland Freisler, later President of the People's Court",
+              "Franz Gürtner, Reich Minister of Justice",
+              "Bernhard Lösener, a draftsman of the Nuremberg Laws",
+              "Hans Frank, editor of the National Socialist legal handbook",
+            ],
+            correctIndex: 1,
+            explanation: "Gürtner chaired and opened by presenting a ministry memo on American race law. Freisler and Lösener were both present but did not chair.",
+            sourceLessonSlug: "ex-june-1934",
+          },
+          {
+            prompt: "Freisler said American jurisprudence would suit Germany perfectly \"with a single exception.\" What was the exception?",
+            options: [
+              "American penalties for mixed marriage were far too light for German purposes",
+              "American law was written in English and could not be translated accurately",
+              "American law did not reckon Jews among the coloreds",
+              "American law was made by judges rather than by an elected legislature",
+            ],
+            correctIndex: 2,
+            explanation: "That half of the sentence is the reason copying was impossible, and quoting only the first half misuses the source.",
+            sourceLessonSlug: "ex-june-1934",
+          },
+          {
+            prompt: "Which faction at the meeting pushed hardest for using the American example?",
+            options: [
+              "The conservative nationalists around Gürtner, who wanted to restrain the radicals",
+              "The foreign ministry, which wanted material for use against critics abroad",
+              "Nobody; the American material was raised once and dropped",
+              "The most radical Nazis present",
+            ],
+            correctIndex: 3,
+            explanation: "Whitman calls it particularly startling that the most radical Nazis were the most ardent champions of the American lessons. Gürtner and Lösener braked.",
+            sourceLessonSlug: "ex-june-1934",
+          },
+          {
+            prompt: "Why does Whitman argue the Nazi engagement with American law was study rather than propaganda?",
+            options: [
+              "The documents were closed-door records and dense domestic legal texts, not material aimed at foreigners",
+              "Because Nazi officials said under oath at Nuremberg after the war that they had never intended propaganda",
+              "Because the American press reported on the meeting at the time",
+              "Because propaganda was illegal under German law in 1934",
+            ],
+            correctIndex: 0,
+            explanation: "The argument is about the physical document and its intended audience, which is the strongest kind of argument available here.",
+            sourceLessonSlug: "ex-june-1934",
+          },
+          {
+            prompt: "Where did Heinrich Krieger study American law?",
+            options: [
+              "At Harvard Law School as a visiting professor of comparative law",
+              "At the University of Arkansas Law School as an exchange student",
+              "At the Kaiser Wilhelm Institute in Berlin, without leaving Germany",
+              "At the Reich Ministry of Justice library in Berlin",
+            ],
+            correctIndex: 1,
+            explanation: "Two semesters in 1933 and 1934, after which he published an article on American race law that most likely supplied the memo Gürtner brought to the June meeting.",
+            sourceLessonSlug: "ex-krieger-and-kier",
+          },
+          {
+            prompt: "Whitman calls Krieger \"the Nazi Gunnar Myrdal.\" What is the uncomfortable implication?",
+            options: [
+              "That Krieger secretly opposed the regime he served throughout the whole of the Nazi period",
+              "That Krieger's work was too obscure to have reached any German policy maker",
+              "That Krieger's research was competent scholarship, not crude ignorance",
+              "That Krieger later emigrated to the United States and changed his views",
+            ],
+            correctIndex: 2,
+            explanation: "Whitman writes that it may sound grating to speak of first-rate Nazi scholarship, but that is what the book represented. Competence is what makes it hard to dismiss.",
+            sourceLessonSlug: "ex-krieger-and-kier",
+          },
+          {
+            prompt: "Herbert Kier was commissioned to compile material on the race legislation of which countries?",
+            options: [
+              "Only the United States, because no other country had comparable statutes on its books",
+              "The United States, Brazil and Canada",
+              "The United States and Britain",
+              "The United States, South Africa and Australia",
+            ],
+            correctIndex: 3,
+            explanation: "The brief was wider than the United States, which matters for section 4. Krieger nonetheless judged South Africa marginal next to the United States and Germany.",
+            sourceLessonSlug: "ex-krieger-and-kier",
+          },
+          {
+            prompt: "What did Kier print in the official National Socialist handbook of law and legislation?",
+            options: [
+              "A two-page table of the anti-miscegenation statutes of all thirty American states",
+              "A photograph of the Reich Minister of Justice meeting a delegation of American lawyers in Berlin",
+              "A translation of the full text of the American Constitution",
+              "A map showing the American states with the largest Jewish populations",
+            ],
+            correctIndex: 0,
+            explanation: "Whitman notes the table matches the description Gürtner and Freisler gave the previous June, and that it kept circulating into a 1937 commentary on the Blood Law.",
+            sourceLessonSlug: "ex-krieger-and-kier",
+          },
+          {
+            prompt: "Which American rule did German commentators describe as leading to \"human hardness\"?",
+            options: [
+              "The requirement that race be stated on a birth certificate",
+              "The one-drop rule",
+              "The ten-year maximum sentence for mixed marriage in several states",
+              "The exclusion of Chinese labourers under the 1882 Act",
+            ],
+            correctIndex: 1,
+            explanation: "A 1934 German teachers' guide and a 1936 article for teachers of English both praised American racial legislation and recoiled from the one-drop rule.",
+            sourceLessonSlug: "ex-too-harsh",
+          },
+          {
+            prompt: "Why is \"the Nazis found American law too harsh\" NOT a point in America's favour?",
+            options: [
+              "Because the Nazis were lying about their real view in order to embarrass American diplomats at the League of Nations",
+              "Because Whitman later withdrew the claim in the paperback edition of his book",
+              "Because it reflects Nazi judgement about workability, and understating American severity is the error",
+              "Because no German source actually says it, and the whole passage is a later invention",
+            ],
+            correctIndex: 2,
+            explanation: "Whitman says scholars who see parallels are wrong only because they understate the relative severity of American law. The Nazis picked a different rule for their own reasons, not out of mercy.",
+            sourceLessonSlug: "ex-too-harsh",
+          },
+          {
+            prompt: "The First Regulation of 14 November 1935 defined a Jew as a person descended from how many racially full-Jewish grandparents?",
+            options: [
+              "One, which the radicals had proposed and which matched the American quarter-blood rule",
+              "Any traceable Jewish ancestry, mirroring the American one-drop rule exactly",
+              "Two, in every case regardless of religion or marriage",
+              "At least three",
+            ],
+            correctIndex: 3,
+            explanation: "Three or four grandparents, with a religion and marriage test for those with two. The radicals had wanted one, and lost.",
+            sourceLessonSlug: "ex-nuremberg-laws",
+          },
+          {
+            prompt: "Whitman notes that the November 1935 definition turned partly on whom a person had married, and that Texas and the Cable Act did something similar. What does he then conclude?",
+            options: [
+              "That we do not know what part, if any, the American model played here",
+              "That the German drafters certainly took the rule from Texas case law reported by Krieger",
+              "That the parallel is a coincidence with no possible route of transmission at all",
+              "That the Cable Act was itself modelled on an earlier German statute",
+            ],
+            correctIndex: 0,
+            explanation: "He had a striking parallel and a plausible route, and he wrote that we do not know. That is the standard this course asks you to write to.",
+            sourceLessonSlug: "ex-nuremberg-laws",
+          },
+          {
+            prompt: "Which scholar wrote of the \"astonishing insignificance of American segregation laws\" for Nazi policy?",
+            options: [
+              "Michael Stolleis, reviewing the book in the journal Rechtsgeschichte in 2018",
+              "Jens-Uwe Guettel",
+              "Bernhard Lösener, in his own postwar memoir of the drafting process",
+              "George M. Fredrickson, in his comparative study of white supremacy",
+            ],
+            correctIndex: 1,
+            explanation: "Guettel's 2012 book is one of four positions Whitman argues against, alongside Rethmeier, Bernstein and Hanke. All four are quoted here from Whitman's own introduction.",
+            sourceLessonSlug: "ex-the-argument-against",
+          },
+          {
+            prompt: "What is the limitation in how this course presents Whitman's critics?",
+            options: [
+              "Their books are all out of print and cannot be consulted by anyone today",
+              "They wrote only in German, so their arguments cannot be checked by an English-speaking reader",
+              "Every one of them is quoted from Whitman, who chose the sentences and answers them",
+              "They published after Whitman's book and so could not have been read by him",
+            ],
+            correctIndex: 2,
+            explanation: "That is normal scholarly practice and still a one-sided window. The honest next step is to read Guettel and Rethmeier directly, and the published reviews.",
+            sourceLessonSlug: "ex-the-argument-against",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
