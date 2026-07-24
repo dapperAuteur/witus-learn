@@ -1251,6 +1251,229 @@ The North Carolina form describes the before and after directly. Previously teac
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · At the same time  (the design rule applied; the point of the whole course)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "sn-co-occurrence",
+      title: "12 · At the same time: two records, one calendar",
+      section: "Section 4 · At the same time",
+      body: `**Everything so far has been one record.** A program, a budget, a plan book, a set of people. **This lesson puts a second record beside it, on the same dates, and refuses to let either one resolve the other.** That refusal is the whole method, and it is harder to do than to describe.
+
+**Restate the rule before you read the table.**
+
+> **Never use a positive to soften a negative.** The claim is **co-occurrence**: both were happening, at the same time, in the same states, often to the same people.
+
+## The table
+
+Two columns, one calendar. **Neither column is a comment on the other. Read down, not across.**
+
+| Years | The building record | The other record on the same calendar |
+|---|---|---|
+| **1909 and 1913** | March 1913: the first Rosenwald school opens at Loachapoka, Alabama, for 942 dollars 50 cents, of which local Black residents contributed 292.50 including labour valued at 142.50 (Obenauer & Brown, 2015, p. 6) | Four years earlier, Alabama's public spending is recorded by the National Park Service at about 20 dollars per white student against 67 cents per Black student (National Park Service, n.d.) |
+| **1920 to 1932** | Oklahoma builds 198 Rosenwald buildings in 44 counties: 176 schoolhouses, 16 teacherages, 6 shops (Oklahoma Historical Society, n.d.-a) | 31 May and 1 June 1921: over eighteen hours the Greenwood district of Tulsa is destroyed, more than a thousand homes and businesses burned, credible death estimates ranging from fifty to three hundred, the vast majority of Tulsa's Black population made homeless, thousands living in tents through the winter of 1921 to 1922 (Oklahoma Historical Society, n.d.-b) |
+| **1921 to 1932** | Florida builds 140 Rosenwald funded schools and auxiliary buildings (Florida Department of State, n.d.-a) | January 1923: the Black community at Rosewood, Levy County, Florida is destroyed. Seventy years later the Florida Board of Regents commissions a documented history, submitted 22 December 1993, and the legislature passes Chapter 94-359 compensating survivors and descendants (Florida Department of State, n.d.-b; Jones et al., 1993) |
+| **1927** | Community School Plans now includes teacherage designs of four, five and six rooms, and ten-teacher plans and larger are being approved (Obenauer & Brown, 2015, pp. 12, 16) | 21 November 1927: in *Gong Lum v. Rice* the Supreme Court holds that a Chinese American child, a United States citizen, is not denied equal protection by being classed among the races assigned to schools separate from those provided for whites (Gong Lum v. Rice, 1927) |
+| **1929 to 1932** | By 1 July 1932 Black residents of North Carolina have contributed more than 666,000 dollars toward Rosenwald buildings (Obenauer & Brown, 2015, p. 28) | In 1929 to 1930 North Carolina spends 44 dollars 48 cents per white student and 14 dollars 30 cents per Black student (Obenauer & Brown, 2015, p. 28) |
+| **1932** | Black North Carolinians in nineteen counties have earmarked more than 6,000 dollars in bank deposits for future Rosenwald schools, gathered, the state agent wrote, "at great personal sacrifice and hard work" (Obenauer & Brown, 2015, p. 28) | The same year, Edwin Embree discontinues the Rosenwald Fund's School Building Program, reasoning that it had become "a crutch rather than a stimulus" (quoted in Obenauer & Brown, 2015, p. 28) |
+
+## Read the last two rows again
+
+**The final row is the one to sit with.** Nineteen counties had money in the bank, saved for schools, and the program was closed on the reasoning that it had become a crutch. **Both halves of that row are in the same paragraph of the same document.** Nobody had to assemble them from opposing sources. **The record contains its own co-occurrence and most retellings print only one half of it.**
+
+**And the row above it is the same shape.** A community contributing 666,000 dollars and a state spending a third as much per Black child are the same people, the same years, the same budget, in the same document. **The contribution is not a response to the disparity. It is a consequence of it.**
+
+## Which pairs are causal and which are only simultaneous
+
+**This distinction is essential, and getting it wrong is how co-occurrence turns back into bad history.**
+
+- **The North Carolina rows are causally linked.** The reason a community raised money for a school is that the state was not paying for one. That is double taxation, named in lesson 6, and you can say the word "because."
+- **The Tulsa row is not causally linked to the Oklahoma schoolhouses.** Nothing in the record read for this course says the massacre caused the schools or the schools prevented anything. **They are on the same calendar in the same state, and that is the whole claim.** Do not upgrade it.
+- **The Gong Lum row is a legal frame, not a cause.** The Court did not order a Rosenwald school built or unbuilt. It restated, in 1927, the legal condition inside which every one of these buildings existed.
+
+**Say which kind of link you are claiming, every time.** "At the same time" is a strong, defensible claim. "Because" needs a mechanism. "In response to" needs somebody's stated reason. **Three different claims, three different evidence bars.**
+
+## The four ways this lesson goes wrong
+
+**1. The redemption arc.** Put the negative first and the positive last, and the reader files the whole thing as a story with a happy ending. **Order is argument.**
+
+**2. The tragedy arc.** Put the positive first and the negative last, and you have written a story about people who never had a chance, which is equally false and more condescending.
+
+**3. The counterweight.** Any sentence of the form "yes, but they built X." **The word "but" is doing the softening. Delete it and the sentence usually still works, and means something more accurate.**
+
+**4. The moral about resilience.** "It shows what people can do when they come together." **That is a compliment paid to the people who were harmed, in place of an account of who harmed them.** It also quietly implies that the harm was survivable enough to be worth it. **Do not write it.**
+
+## What to write instead
+
+**Two columns, one calendar, no connective.** State both. Date both. Cite both. **Then stop, and let the reader hold them.**
+
+**Here is the form, using this course's own material.**
+
+> In 1932 the Rosenwald Fund closed its school building program, its director reasoning that it had become a crutch rather than a stimulus. In the same year, Black residents of nineteen North Carolina counties held more than 6,000 dollars in bank deposits earmarked for schools they intended to build. Both facts appear on the same page of the National Register documentation form for Rosenwald schools in North Carolina.
+
+**Two sentences and a citation. No "but," no "yet," no "despite," no lesson.** The reader can do the rest, and what the reader does with it is not your job to arrange.
+
+## Build your own
+
+Take any subject in the route series and build the table: **a year column, a "what was built" column, a "what else was on the calendar" column, and a source for every cell.** Then apply three tests.
+1. **Is every cell independently cited?** If a cell has no source, delete the row.
+2. **Have you named the link type for each row?** Causal, responsive, or simultaneous only.
+3. **Would the table read the same if you reversed the two columns?** **If reversing them changes the argument, you have written an argument and called it a chronology.**
+
+## Sources
+- Florida Department of State, Division of Historical Resources. (n.d.-a). *Okahumpka Rosenwald School*. https://dos.fl.gov/historical/preservation/national-register/recent-national-register-listings/okahumpka-rosenwald-school/
+- Florida Department of State, Division of Library and Information Services. (n.d.-b). *Rosewood*. https://dos.fl.gov/library-archives/research/explore-our-resources/florida-history-culture-and-heritage/rosewood/
+- Gong Lum v. Rice, 275 U.S. 78 (1927). https://www.loc.gov/item/usrep275078/
+- Jones, M. D., Colburn, D. R., Dye, R. T., Rivers, L. E., & Rogers, W. W. (1993). *A documented history of the incident which occurred at Rosewood, Florida, in January 1923*. Florida Board of Regents.
+- National Park Service. (n.d.). *The Rosenwald schools: Progressive Era philanthropy in the segregated South* [Teaching with Historic Places]. https://www.nps.gov/articles/the-rosenwald-schools-progressive-era-philanthropy-in-the-segregated-south-teaching-with-historic-places.htm
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf
+- Oklahoma Historical Society. (n.d.-a). *Rosenwald schools*. The Encyclopedia of Oklahoma History and Culture. https://www.okhistory.org/publications/enc/entry?entry=RO029
+- Oklahoma Historical Society. (n.d.-b). *Tulsa race massacre*. The Encyclopedia of Oklahoma History and Culture. https://www.okhistory.org/publications/enc/entry?entry=TU013`,
+      recallContent: [
+        {
+          prompt: "Who was George E. Davis, and what did he do?",
+          answer: "A Howard University graduate and Biddle University's first Black professor, who became North Carolina's Supervisor of Rosenwald Buildings after retiring from teaching in 1920. He crossed the state's 500-mile length by automobile raising matching funds community by community, and by 1921 had identified the local church as the decisive ally.",
+        },
+        {
+          prompt: "Quote Davis in 1927, and say how the course instructs you to use it.",
+          answer: "'White people in our state are not asked to sweat blood [so] that their children may be helped through the schools to be good citizens.' Do not quote it as inspiration. He is not celebrating the campaign; he is naming what the campaign measures.",
+        },
+        {
+          prompt: "Who was Virginia Estelle Randolph, and what was the Henrico Plan?",
+          answer: "Born May 1870 in Richmond, she became the first countywide Jeanes Supervising Industrial Teacher in the South in October 1908, in Henrico County, Virginia, travelling weekly to more than twenty Black schools. Her approach became the Henrico Plan and a thousand copies were distributed to supervisors across the South. She died 16 March 1958.",
+        },
+        {
+          prompt: "What two cautions does the course attach to the claim that Rosenwald schools had better-trained teachers?",
+          answer: "First, 'wholly unqualified' is the preservation document's characterisation of people teaching without training because the state would not train or pay them, so cite it as the form's judgment. Second, a better-trained teacher on a longer term is a real improvement and does not close the spending gap, and both belong in the same paragraph.",
+        },
+        {
+          prompt: "Whom does this archive fail to name, and what kind of finding is that?",
+          answer: "The carpenters, the teamsters, the women whose labour had to be corrected back into the record, the children, and the households that gave a week's wages. That is a finding about the archive, and it points to county deed books, church minute books, Black newspapers, school improvement league records and descendant communities.",
+        },
+      ],
+    },
+    {
+      slug: "sn-map",
+      title: "13 · Map: the program's places, and the same calendar elsewhere",
+      section: "Section 4 · At the same time",
+      body: `**Read this before you touch the map, because the map's limits and its colour scheme are both part of the lesson.**
+
+## What this map can and cannot do
+
+**This platform's lesson map draws the world on a single fixed projection, and a marker is a fixed-size dot.** Two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **That rules out plotting individual schools.** Loachapoka is about twenty kilometres from Tuskegee and the two would land on top of each other, so this map carries one Alabama marker that describes both places.
+
+**Every coordinate here is an approximate town or city point, not a surveyed building location.** Do not use them to find an address. **Use the Fisk card file for the school and the National Register for the building**, which is what lesson 15 teaches.
+
+**And 5,357 buildings cannot be mapped as dots on a world projection at all.** A distributed construction program across fifteen states is not a set of pins. **If you want the real geography, you want a state-by-state count and a county list**, and lesson 2 gave you four states' worth to start from.
+
+## The colour scheme, which is the argument
+
+**Blue: the program's own places.** Where the money came from, where the plans were drawn, where the archive is.
+
+**Red: the other record, on the same calendar.** Not a counterweight and not a corrective. **The second column of lesson 12's table, given coordinates.**
+
+**Amber: one state, both records.** Two markers where the building record and the other record are documented in the same state within the same years. **These are the markers that make the point, because they cannot be read as two separate stories about two separate places.**
+
+**There is no ordering implied by the colours and no arithmetic between them.** Three blue markers and two red markers do not mean anything is three to two. **A map cannot weigh a record and this one is not trying to.**
+
+## Sources
+- Florida Department of State, Division of Historical Resources. (n.d.-a). *Okahumpka Rosenwald School*. https://dos.fl.gov/historical/preservation/national-register/recent-national-register-listings/okahumpka-rosenwald-school/
+- Florida Department of State, Division of Library and Information Services. (n.d.-b). *Rosewood*. https://dos.fl.gov/library-archives/research/explore-our-resources/florida-history-culture-and-heritage/rosewood/
+- Gong Lum v. Rice, 275 U.S. 78 (1927). https://www.loc.gov/item/usrep275078/
+- Julius Rosenwald and the Rosenwald Schools Act of 2020, Pub. L. No. 116-336, 134 Stat. 5118 (2021). https://www.govinfo.gov/content/pkg/PLAW-116publ336/html/PLAW-116publ336.htm
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf
+- Oklahoma Historical Society. (n.d.-b). *Tulsa race massacre*. The Encyclopedia of Oklahoma History and Culture. https://www.okhistory.org/publications/enc/entry?entry=TU013
+- Tennessee Encyclopedia. (n.d.). *Julius Rosenwald Fund*. https://tennesseeencyclopedia.net/entries/julius-rosenwald-fund/`,
+      mapContent: {
+        markers: [
+          {
+            id: "sn-chicago",
+            lat: 41.8781,
+            lng: -87.6298,
+            title: "Chicago, Illinois: where the money was",
+            color: "#1d4ed8",
+            description:
+              "Julius Rosenwald was president of Sears, Roebuck and Company here, and the Julius Rosenwald Fund was incorporated in 1917 and operated until 1948. In 1912 he gave away 687,500 dollars to mark his fiftieth birthday, of which 25,000 went to Tuskegee Institute and 2,800 was left unappropriated, which is the money Booker T. Washington asked to spend on six schools. Public Law 116-336 names the Sears Administration Building at Homan Square, the Rosenwald Court Apartments and the Museum of Science and Industry here as study sites. Approximate city point.",
+          },
+          {
+            id: "sn-tuskegee",
+            lat: 32.4243,
+            lng: -85.6919,
+            title: "Tuskegee and Loachapoka, Alabama: where it started",
+            color: "#1d4ed8",
+            description:
+              "Booker T. Washington wrote to Rosenwald from Tuskegee Normal and Industrial Institute on 12 June 1912 proposing six schools, and enclosed a five-point outline whose fourth point is the origin of the matching requirement. Tuskegee administered the program from 1912 to 1920 and published the first plan book, The Negro Rural School and Its Relation to the Community, in 1915, drafted by staff architect Robert R. Taylor and W. A. Hazel. The first Rosenwald school was completed in March 1913 at Loachapoka, about twenty kilometres north west of here, for 942 dollars 50 cents. Public Law 116-336 names the Shiloh Rosenwald School in Macon County as a study site. Approximate city point covering both places, because at this map's resolution they cannot be separated.",
+          },
+          {
+            id: "sn-nashville",
+            lat: 36.1627,
+            lng: -86.7816,
+            title: "Nashville, Tennessee: the plans and the archive",
+            color: "#1d4ed8",
+            description:
+              "The Fund's southern office opened here in 1920 under Samuel L. Smith, after Fletcher B. Dresslar of Peabody College inspected forty-seven schools in 1919 and reported construction problems. Community School Plans was published from here from 1921 to 1931, drawn by J. E. Crain and E. M. Tisdale. The office closed in 1937. The Julius Rosenwald Fund Archives, 1918-1948, including the school card file, are held at Fisk University's John Hope and Aurelia E. Franklin Library in this city: 585 archival boxes and an estimated 674,000 items. Tennessee itself built 354 schools, 9 teachers' homes and 10 shops, and its published ledger shows Black Tennesseans contributing 296,388 dollars against the Fund's 291,250. Approximate city point.",
+          },
+          {
+            id: "sn-raleigh",
+            lat: 35.7796,
+            lng: -78.6382,
+            title: "Raleigh, North Carolina: both records in one budget",
+            color: "#b45309",
+            description:
+              "One state, both columns, same years. By 1 July 1932 Black residents of North Carolina had contributed more than 666,000 dollars toward Rosenwald buildings, and in 1929 to 1930 the state spent 44 dollars 48 cents per white student and 14 dollars 30 cents per Black student. In 1932 Black North Carolinians in nineteen counties held more than 6,000 dollars in bank deposits earmarked for future schools, and in the same year the Fund closed the building program on the reasoning that it had become a crutch rather than a stimulus. Both halves of that pair are on the same page of the state's National Register documentation form. Approximate city point for the state office and the state record.",
+          },
+          {
+            id: "sn-okahumpka",
+            lat: 28.7186,
+            lng: -81.8945,
+            title: "Okahumpka and Rosewood, Florida: both records in one state",
+            color: "#b45309",
+            description:
+              "Florida built 140 Rosenwald funded schools and auxiliary buildings between 1921 and 1932. The Okahumpka Rosenwald School, a two-room wood frame building constructed in 1929 to one of the Fund's plans, is one of two surviving examples of eight built in Lake County, and it was listed in the National Register recently enough to appear on the state's recent-listings page. In January 1923, inside the same window, the Black community at Rosewood in Levy County was destroyed. The Florida Board of Regents commissioned a documented history of it, submitted on 22 December 1993, and the legislature passed Chapter 94-359 compensating survivors and descendants. Approximate town point for Okahumpka.",
+          },
+          {
+            id: "sn-tulsa",
+            lat: 36.154,
+            lng: -95.9928,
+            title: "Tulsa, Oklahoma: 31 May and 1 June 1921",
+            color: "#b91c1c",
+            description:
+              "The Oklahoma Historical Society records eighteen terrible hours in which the Greenwood district was destroyed, more than a thousand homes and businesses burned, credible estimates of deaths ranging from fifty to three hundred, the vast majority of Tulsa's African American population made homeless, and thousands forced to spend the winter of 1921 to 1922 living in tents. Between 1920 and 1932 the same state recorded 198 Rosenwald education buildings in 44 counties. Those two facts share a calendar and a state. Nothing in the record read for this course makes either one the cause or the answer to the other, and the claim stops there. Approximate city point.",
+          },
+          {
+            id: "sn-washington-dc",
+            lat: 38.8899,
+            lng: -77.0091,
+            title: "Washington, D.C.: Gong Lum v. Rice, 21 November 1927",
+            color: "#b91c1c",
+            description:
+              "The legal frame the buildings stood inside. Gong Lum, a taxpaying resident of the Rosedale school district in Bolivar County, Mississippi, sought to enrol his daughter Martha, a nine-year-old United States citizen of Chinese descent, in Rosedale's school for white children. The Supreme Court held that she was not denied equal protection by being classed among the races assigned to schools separate from those provided for whites. Submitted 12 October and decided 21 November 1927, the same year the Fund's plan books added four, five and six-room teacherages and began approving ten-teacher schools. The Court sat in the Capitol in 1927; its own building did not open until 1935. Approximate point for the Capitol.",
+          },
+        ],
+      },
+      recallContent: [
+        {
+          prompt: "State the design rule again, and say what claim it licenses.",
+          answer: "Never use a positive to soften a negative. It licenses the claim of co-occurrence: both were happening at the same time, in the same states, often to the same people. It does not license balance.",
+        },
+        {
+          prompt: "Give the 1932 row of the co-occurrence table, both halves.",
+          answer: "Black North Carolinians in nineteen counties held more than 6,000 dollars in bank deposits earmarked for future Rosenwald schools, gathered at great personal sacrifice, and in the same year Edwin Embree discontinued the Fund's building program reasoning it had become a crutch rather than a stimulus. Both halves are on the same page of the same document.",
+        },
+        {
+          prompt: "Which pairs in the table are causal and which are only simultaneous?",
+          answer: "The North Carolina rows are causal: a community raised money because the state was not paying, which is double taxation. The Tulsa row is only simultaneous, same state and same calendar, and must not be upgraded. Gong Lum is a legal frame rather than a cause: it restated the condition inside which the buildings existed.",
+        },
+        {
+          prompt: "Name the four ways this kind of writing goes wrong.",
+          answer: "The redemption arc, which puts the positive last so the reader files a happy ending; the tragedy arc, which puts the negative last; the counterweight, which is any sentence built on the word 'but'; and the moral about resilience, which compliments the people who were harmed instead of accounting for who harmed them.",
+        },
+        {
+          prompt: "What are the three tests for a co-occurrence table you build yourself?",
+          answer: "Is every cell independently cited, and if not delete the row. Have you named the link type for each row as causal, responsive or simultaneous only. And would the table read the same if the two columns were reversed, because if reversing changes the argument you have written an argument and called it a chronology.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
