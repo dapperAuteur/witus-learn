@@ -1189,6 +1189,346 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · The money question  (capital formation under exclusion: the actual economics)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wtb-money-problem",
+      title: "13 · The money question, stated properly",
+      section: "Section 4 · The money question",
+      body: `This is the centre of the course. **If you take one thing away from all twenty-two lessons, take this one**, because it is a real economics problem, it was solved, and almost nobody is taught how.
+
+## State the problem the way a banker would
+
+**You want to open a grocery store.** You need money to buy the first stock, the fixtures and three months of rent before revenue arrives. **That money has to come from somewhere, and there are only ever five somewheres:**
+
+1. **Your own savings.**
+2. **Your family and friends.**
+3. **A retained profit from another business you already own.**
+4. **A loan.**
+5. **Investors who buy a share of the business.**
+
+**Options 4 and 5 both require an institution that will lend to you or invest in you.** Take those away and you are left with 1, 2 and 3, all of which depend on somebody in your circle already having capital. **That is the definition of a poverty trap, and it is a machine rather than a misfortune.**
+
+**Now add the constraint these districts actually faced.** Banks would not lend. Insurers would not write policies, or wrote them at higher prices. Wholesale suppliers would not extend trade credit. **And the properties you might have pledged as collateral sat in neighbourhoods whose values the lending industry had already decided to discount.** Each one of those is a separate closed door, and closing any one of them is enough to stop most businesses from starting.
+
+**So how did more than a hundred banks, several substantial insurance companies and thousands of firms come into existence anyway?**
+
+## The answer, in one sentence
+
+**They built the institution BEFORE they needed the loan.**
+
+That is the whole trick, and it is worth staring at, because it inverts the order everybody assumes. **The usual sequence is: have a business idea, then go to the bank.** The sequence in this course is: **organise a society, collect small regular payments from a large number of people, accumulate a reserve, get the reserve chartered and regulated, and then lend it to yourselves.**
+
+**Read the Durham founders again with that sequence in mind.** Du Bois names them as "a minister with college training, a physician with professional training, and a barber who saved his money" (Du Bois, 1912). **Read the roles rather than the men.**
+- **The minister** has a congregation, which is a member list and a reputation.
+- **The physician** has professional standing, which is what a regulator and a policyholder both need to see, and he understands mortality, which is literally what life insurance prices.
+- **The barber** has cash, because a barbershop is a daily-receipts business with almost no inventory.
+
+**That is not a coincidence and it is not a charming anecdote. It is a correctly assembled founding team for an insurance company under exclusion:** distribution, credibility and working capital. **The same three roles recur across these districts.**
+
+## The five strategies, named
+
+Section 4 works each of these. Learn the list now.
+
+| # | Strategy | What it converts | Example in this course |
+|---|---|---|---|
+| **1** | **Mutual aid and fraternal dues** | Many small payments into one pool | True Reformers; Independent Order of St. Luke |
+| **2** | **Industrial insurance** | A pool into regulated, investable reserves | North Carolina Mutual; Atlanta Life |
+| **3** | **The chartered bank** | Reserves and deposits into loans | Mechanics and Farmers; St. Luke Penny Savings; Citizens Trust |
+| **4** | **The building and loan** | Members' monthly subscriptions into houses | Berean, Philadelphia; Durham's building and loan association |
+| **5** | **Direct land purchase** | Cash into subdividable ground | O. W. Gurley's 40 acres; Herndon's 100-plus houses |
+
+## And the honest counterweight, which belongs here rather than buried at the end
+
+**These strategies worked, and they had structural limits that no amount of effort could overcome.** Naming those limits is not pessimism, it is the second half of the economics.
+
+- **A neighbourhood bank carries concentrated risk.** Its depositors work for the same employers, own property in the same market, and are hit by the same shocks at the same time. **Diversification is the one thing a segregated bank cannot buy.**
+- **Deposits leak.** Money deposited in a district gets spent outside it, at firms that bank elsewhere. Mehrsa Baradaran's *The Color of Money* argues that this makes the multiplier work against a segregated community rather than for it (Baradaran, 2017). **That is an argument by a named scholar and you should engage it as one.**
+- **Regulatory thresholds are expensive.** Only five Black-owned insurers held legal reserve status by 1922 (New Georgia Encyclopedia, n.d.-b). **A capital requirement is neutral on its face and brutal in effect on anyone starting from zero.**
+- **The customer is not captive in the way people assume.** The Saint Luke Emporium closed in 1911 partly because Black consumers did not shop there (Encyclopedia Virginia, n.d.-b). **A shared identity is not a business model.**
+
+**Hold both halves.** The strategies were ingenious and they were operating against a structure that was designed, whether by intention or by accumulation, to stop exactly what they were doing. **Neither sentence softens the other. That is the rule, applied to economics.**
+
+## Sources
+- Baradaran, M. (2017). *The color of money: Black banks and the racial wealth gap*. Belknap Press of Harvard University Press.
+- Du Bois, W. E. B. (1912, January). The upbuilding of black Durham: The success of the Negroes and their value to a tolerant and helpful Southern city. *The World's Work, 23*, 334-338. https://docsouth.unc.edu/nc/dubois/dubois.html
+- Encyclopedia Virginia. (n.d.-b). *Maggie Lena Walker (1864-1934)*. https://encyclopediavirginia.org/entries/walker-maggie-lena-1864-1934/
+- New Georgia Encyclopedia. (n.d.-b). *Alonzo Herndon (1858-1927)*. https://www.georgiaencyclopedia.org/articles/business-economy/alonzo-herndon-1858-1927/
+- Walker, J. E. K. (2009). *The history of Black business in America: Capitalism, race, entrepreneurship* (2nd ed.). University of North Carolina Press.`,
+      recallContent: [
+        {
+          prompt: "What did Chicago's 148 percent Black population growth from 1910 to 1920, inside a five-mile strip, do to the local business structure?",
+          answer: "It created rapidly growing demand inside a fixed boundary, which made real estate rather than merchandising the dominant business, and made real estate men the district's biggest figures.",
+        },
+        {
+          prompt: "What happened to Jesse Binga's bank and to Anthony Overton's, and when?",
+          answer: "Illinois bank auditors closed the Binga State Bank on July 31, 1930. Douglass National Bank and Overton's Victory Life Insurance Company closed around 1932.",
+        },
+        {
+          prompt: "Which Bronzeville firm survived the Depression, and what small architectural fact shows what surviving looked like?",
+          answer: "Supreme Life, formed in 1929 from the merger of Liberty Life, Supreme Life and Northeastern Life. In 1950 it covered its building's classical facade with porcelain-metal panels, which is a firm behaving like any other mid-century American corporation.",
+        },
+        {
+          prompt: "Name four of the nine properties in the Black Metropolis-Bronzeville District designated on September 9, 1998.",
+          answer: "Any four of: the Overton Hygienic Building, the Chicago Bee Building, the Wabash Avenue YMCA, the Chicago Defender Building, Unity Hall, the Eighth Regiment Armory, the Sunset Cafe, the Victory Monument, and the Supreme Life Building.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-industrial-insurance",
+      title: "14 · Industrial insurance, the machine that made the capital",
+      section: "Section 4 · The money question",
+      body: `Every large Black-owned financial institution in this course either was an insurance company or was founded by one. **That is not a coincidence about preference. It is a fact about how insurance works**, and once you see the mechanism you cannot unsee it.
+
+## What industrial insurance actually was
+
+**Industrial insurance** is a small life policy, usually enough to cover a funeral, sold to wage earners, **with premiums collected weekly or monthly in person by an agent who walks a route**. It was not invented by these companies. It was the standard product for working-class Americans of every background in this period.
+
+**Now look at what it does mechanically.**
+
+| Step | What happens | Why it matters |
+|---|---|---|
+| 1 | An agent collects small premiums, in cash, every week, from hundreds of households | **Distribution.** The agent network is the company's real asset |
+| 2 | Most policyholders do not die this year | **Float.** The company holds money it does not yet owe |
+| 3 | Regulators require reserves against future claims | **Compulsory saving, at company scale** |
+| 4 | Reserves must be invested somewhere | **The company becomes an investor** |
+| 5 | The company invests in what it knows: property and mortgages in its own market | **Capital returns to the district** |
+
+**Step 5 is the answer to the whole money question.** An insurance company is a legally mandated pool of long-term capital, and **a company whose reserves are large enough will end up in the mortgage business whether it intends to or not.** So the question "how do you finance a district when banks will not lend?" has an answer that is almost funny in its directness: **you become the institution that has to invest.**
+
+## The growth curve, in real numbers
+
+**North Carolina Mutual.** Du Bois, writing in 1912, reports the company's business increasing "from less than a thousand dollars in 1899 to an income of a quarter of a million in 1910," with **200,000 members**, **half a million dollars paid in benefits**, and **office buildings owned in three cities** (Du Bois, 1912).
+
+**Read the last clause.** By 1912 the company already owned real estate in three cities. **That is step 5, eleven years in.**
+
+Later figures from the same company: **by 1945 it was worth 14 million dollars with a 1 million dollar surplus, and in 1971 it became the first Black-managed company to reach 1 billion dollars of insurance in force** (NCpedia, n.d.-a).
+
+**Atlanta Life.** Assets of **5,000 dollars** in 1905, over **400,000 dollars** by 1922 (New Georgia Encyclopedia, n.d.-b).
+
+**Heman Perry's Atlanta group**, including Standard Life, Citizens Trust and the Service Company, held **22 million dollars in insurance and 2 million dollars in assets by 1922** (New Georgia Encyclopedia, n.d.-a).
+
+**The Independent Order of St. Luke**, running the same mechanism as a fraternal order rather than a stock company: **about 100,000 members in 24 states, nearly 3.5 million dollars collected and 100,000 dollars of reserves over roughly 25 years** (Encyclopedia Virginia, n.d.-b).
+
+**The Grand Fountain of the United Order of True Reformers**: certificates at **1 dollar 50 cents**, paying **100 dollars** and later **50 dollars**, with **more than one million dollars paid in death benefits by the early 1900s** (Encyclopedia Virginia, n.d.-a).
+
+## Two things this teaches that no other subject teaches as well
+
+**1. Why the founders were who they were.** An insurance company needs someone who understands mortality, someone people trust, and someone with cash. **Doctors, ministers and cash-business owners are the three roles**, and you now know why the Durham triumvirate looked the way it did.
+
+**2. Why the agent matters more than the executive.** The whole system runs on somebody walking a route and collecting a nickel. **A company with a thousand agents has a thousand relationships and a thousand collection points**, and that network is far harder to replicate than the capital is. **When you research one of these firms, look for the agent count and the agency territory before you look at the assets.**
+
+## And the limit, stated in the same voice
+
+**Industrial insurance is expensive per dollar of coverage**, because collecting weekly in person costs money and small policies do not spread fixed costs. **This was a criticism of the product across the entire industry, for all customers, not a criticism of these companies**, and it is why the product eventually disappeared. **You should know that before you write about it, because a reader who knows it and finds it missing from your account will stop trusting you.**
+
+**And the strategy has a documented endpoint.** North Carolina Mutual, the largest and longest running of them, **had its liquidation ordered by the courts on October 11, 2022**, with liabilities exceeding assets by at least **78 million dollars**. **Check that against the North Carolina Department of Insurance's own filings before you publish it**, because a receivership is a legal proceeding with a public docket and you should cite the docket rather than a summary.
+
+**A 123-year run ending in liquidation is one sentence, and "the largest Black-owned business in the United States for most of the twentieth century" is another. Both are true. Neither edits the other.**
+
+## Sources
+- Du Bois, W. E. B. (1912, January). The upbuilding of black Durham: The success of the Negroes and their value to a tolerant and helpful Southern city. *The World's Work, 23*, 334-338. https://docsouth.unc.edu/nc/dubois/dubois.html
+- Encyclopedia Virginia. (n.d.-a). *Grand Fountain of the United Order of True Reformers*. https://encyclopediavirginia.org/entries/grand-fountain-of-the-united-order-of-true-reformers/
+- Encyclopedia Virginia. (n.d.-b). *Maggie Lena Walker (1864-1934)*. https://encyclopediavirginia.org/entries/walker-maggie-lena-1864-1934/
+- NCpedia. (n.d.-a). *North Carolina Mutual Life Insurance Company*. https://www.ncpedia.org/north-carolina-mutual-life-insuranc
+- New Georgia Encyclopedia. (n.d.-a). *Auburn Avenue (Sweet Auburn)*. https://www.georgiaencyclopedia.org/articles/counties-cities-neighborhoods/auburn-avenue-sweet-auburn/
+- New Georgia Encyclopedia. (n.d.-b). *Alonzo Herndon (1858-1927)*. https://www.georgiaencyclopedia.org/articles/business-economy/alonzo-herndon-1858-1927/
+- Weare, W. B. (1993). *Black business in the New South: A social history of the North Carolina Mutual Life Insurance Company*. University of North Carolina Press.`,
+      recallContent: [
+        {
+          prompt: "State the money problem and the one-sentence answer this course gives.",
+          answer: "Capital comes from savings, family, retained profit, a loan or investors, and the last two require an institution that will lend to or invest in you. The answer: they built the institution before they needed the loan.",
+        },
+        {
+          prompt: "Read Du Bois's three Durham founders as roles rather than men. What does each supply?",
+          answer: "The minister supplies a congregation, which is a member list and a reputation. The physician supplies professional standing and an understanding of mortality. The barber supplies cash, because a barbershop is a daily-receipts business with almost no inventory. Distribution, credibility and working capital.",
+        },
+        {
+          prompt: "Name the five capital strategies in this section.",
+          answer: "Mutual aid and fraternal dues; industrial insurance; the chartered bank; the building and loan association; and direct land purchase.",
+        },
+        {
+          prompt: "Name three structural limits these strategies could not overcome.",
+          answer: "Any three of: a neighbourhood bank cannot diversify its risk; deposits leak out of the district, which Baradaran argues turns the multiplier against a segregated community; regulatory capital thresholds are brutal for anyone starting from zero; and a shared identity is not a business model, as the Saint Luke Emporium showed.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-building-and-loan",
+      title: "15 · The building and loan, and the bank",
+      section: "Section 4 · The money question",
+      body: `Two institutions, routinely lumped together, doing genuinely different jobs. **Get the difference right and the housing history of every one of these districts becomes legible.**
+
+## The building and loan association
+
+**A building and loan is a club for buying houses.** Members subscribe to shares and pay a fixed amount every month. The pooled money is lent out so that a member can buy or build a house, and that member then repays into the same pool. When everyone's shares are paid up, the association can wind up.
+
+**Three features make it the right instrument for an excluded community.**
+
+1. **It creates its own capital.** No outside depositor is needed, because members' monthly payments are the funding.
+2. **It underwrites on knowledge, not on paper.** Members know whether you pay your debts, which substitutes for the credit files and appraisals a bank would use, and which is precisely what an excluded borrower cannot supply.
+3. **The collateral problem is smaller.** The association lends against a house it will happily take back and re-lend on inside its own community, so a lender's discount on neighbourhood property matters less.
+
+**A worked example.** The **Berean Building and Loan Association** was founded in **1888** at the Berean Presbyterian Church in Philadelphia by the **Reverend Matthew Anderson**. **By 1909 it managed more than 150,000 dollars of stock on behalf of 700 members**, it helped **more than 300 families** buy homes, it had an integrated board, and it came through the Depression (Presbyterian Historical Society, n.d.).
+
+**Look at the pattern in that sentence and match it to lesson 5.** A **church** produces a **building and loan**, which produces **home ownership**, which produces **collateral**, which produces **the ability to borrow for a business**. **That is the capital chain running its full length in one Philadelphia congregation.**
+
+**And this was not exotic.** Du Bois's 1912 Durham list includes "a building and loan association" as one of the town's Black financial institutions alongside the bank and three insurance companies (Du Bois, 1912), and his 1907 Atlanta University study documents institutions of the same kind, including the North Baltimore Permanent Building and Loan Association (Du Bois, 1907). **Assume every district in this course had one and go looking for it. You will usually find it in the church records.**
+
+## The bank
+
+A bank is a different animal in three specific ways, and each difference has a consequence.
+
+| | Building and loan | Bank |
+|---|---|---|
+| **Funding** | Members' monthly share payments | Deposits from the general public |
+| **Purpose** | Housing, mostly | Commerce, payments, credit of all kinds |
+| **Withdrawal** | Slow and rule bound | On demand |
+| **Regulator** | Lighter, often state level | State or federal, with capital rules |
+| **Risk** | Members' patience | **A run** |
+
+**That last row is the whole difference.** A building and loan whose members are frightened has a difficult meeting. **A bank whose depositors are frightened has a queue outside the door**, and a bank that cannot pay the queue is closed by an examiner that afternoon. **Binga State Bank was closed by Illinois auditors on July 31, 1930.** The **True Reformers bank closed on October 20, 1910** after an embezzlement and a set of defaulted unsecured loans (Encyclopedia Virginia, n.d.-a).
+
+**Do not read those two closures as a moral about Black banking.** Read them as what they are: **two of the ordinary ways banks fail everywhere**, one a liquidity and solvency failure in the worst banking year in American history, the other an internal fraud. **The interesting question is not why some failed. It is why the base was so small that each failure removed such a large share of it.**
+
+## The national picture, and how to check it yourself
+
+The figure you will see quoted everywhere is that **134 Black-owned banks were organised between 1888 and 1934**, a count that traces back to **Abram L. Harris's 1936 study *The Negro as Capitalist***. **Cite Harris, not the blog that repeated him**, and note that a count of banks organised is not a count of banks operating at any one moment.
+
+**For the present, do not take a number from a secondary source at all.** **The FDIC publishes a quarterly list of Minority Depository Institutions with an ownership category for each**, and that list is the authority (Federal Deposit Insurance Corporation, n.d.). **Download the current quarter and count it yourself.** Any number you read in an article is a snapshot of the quarter its author downloaded, and this sector consolidates: **the July 2026 announcement that Optus Financial and M&F Bancorp intend to merge would, if it closes, reduce the count by one and produce the largest institution in the category** (Banking Dive, 2026).
+
+**That is the correct way to handle a live external value**, and it generalises well beyond this course: **read it from the authority, date your reading, and never assert a number you have not personally checked.**
+
+## Sources
+- Banking Dive. (2026, July 22). *Black-owned banks Optus, M&F to merge*. https://www.bankingdive.com/news/optus-mf-carolina-black-owned-banks-merge-105-million-mdi-cdfi/826017/
+- Du Bois, W. E. B. (Ed.). (1907). *Economic co-operation among Negro Americans*. Atlanta University Press. https://docsouth.unc.edu/church/dubois07/dubois.html
+- Du Bois, W. E. B. (1912, January). The upbuilding of black Durham: The success of the Negroes and their value to a tolerant and helpful Southern city. *The World's Work, 23*, 334-338. https://docsouth.unc.edu/nc/dubois/dubois.html
+- Encyclopedia Virginia. (n.d.-a). *Grand Fountain of the United Order of True Reformers*. https://encyclopediavirginia.org/entries/grand-fountain-of-the-united-order-of-true-reformers/
+- Federal Deposit Insurance Corporation. (n.d.). *Minority depository institutions list*. https://www.fdic.gov/minority-depository-institutions-program/minority-depository-institutions-list
+- Harris, A. L. (1936). *The Negro as capitalist: A study of banking and business among American Negroes*. American Academy of Political and Social Science.
+- Presbyterian Historical Society. (n.d.). *The whole gospel for the whole community: The legacy of Matthew Anderson*. https://pcusa.org/news-storytelling/blogs/historical-society-blog/whole-gospel-whole-community-legacy-matthew-anderson`,
+      recallContent: [
+        {
+          prompt: "Describe the five-step mechanism by which an insurance company becomes a source of capital for a district.",
+          answer: "Agents collect small premiums weekly from many households; most policyholders do not die this year, so the company holds float; regulators require reserves against future claims; reserves must be invested; and the company invests in the market it knows, which is property and mortgages in its own district.",
+        },
+        {
+          prompt: "Give North Carolina Mutual's growth figures as Du Bois reported them in 1912.",
+          answer: "Business increased from less than a thousand dollars in 1899 to an income of a quarter of a million in 1910, with 200,000 members, half a million dollars paid in benefits, and office buildings owned in three cities.",
+        },
+        {
+          prompt: "When researching one of these insurance firms, what should you look for before the asset total?",
+          answer: "The agent count and the agency territory. The whole system runs on somebody walking a route and collecting a nickel, and that network is harder to replicate than the capital.",
+        },
+        {
+          prompt: "What is the honest criticism of industrial insurance as a product, and whose criticism was it?",
+          answer: "It was expensive per dollar of coverage, because collecting weekly in person costs money and small policies do not spread fixed costs. That was a criticism of the product across the entire industry, for all customers, and it is why the product eventually disappeared.",
+        },
+        {
+          prompt: "How should North Carolina Mutual's October 11, 2022 liquidation be reported?",
+          answer: "As one sentence beside another. A 123-year run ending in liquidation, and the largest Black-owned business in the United States for most of the twentieth century. Both true, neither editing the other. Cite the Department of Insurance docket rather than a summary.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-what-fails-checking",
+      title: "16 · Four claims about this history, and which ones survive",
+      section: "Section 4 · The money question",
+      body: `This lesson is a workshop. **Four claims you will meet constantly, run through the checking process, with the verdict stated.** Two survive with conditions, one survives only as an attributed opinion, and one does not survive at all.
+
+## Claim 1: "A dollar circulated 19 times inside Greenwood before leaving." VERDICT: CUT
+
+**You will see this everywhere.** You will also see 36 times, and 100 times, and "19 to 36", and "36 to 100", depending on which retelling you land on.
+
+**Run the check.**
+- **Who says it?** Popular articles, business blogs and some educational material.
+- **What is the citation?** Overwhelmingly "historians estimate", "reports suggest", or nothing at all.
+- **Is there a primary source?** **No primary source is offered by any of the popular versions.**
+- **Do the versions agree?** **They differ by a factor of five.** A figure quoted as 19 in one place and 100 in another is not a measurement, it is a rumour with a number attached.
+- **Is it even measurable?** Money velocity within a neighbourhood is extraordinarily hard to measure in a modern economy with electronic payments. **In 1921, with cash, no serious method existed.**
+
+**Verdict: cut it. Do not soften it to "some sources say." Do not use it with a hedge.** A number with no source, no method and a fivefold spread should not appear in your writing at all.
+
+**And notice what you lose by cutting it, which is nothing.** The 1921 directory gives you 108 businesses, 33 professionals, 24 craftspeople and 26 service workers in a district of about 11,000 people (Tulsa City-County Library, n.d.; Oklahoma Historical Society, n.d.). **Those are real numbers from a real record, and they make the same point better.** **A verifiable fact always beats an impressive one.**
+
+## Claim 2: "Booker T. Washington called Greenwood the Negro Wall Street of America." VERDICT: ATTRIBUTE THE HEDGE
+
+**Run the check.**
+- **The Oklahoma Historical Society writes "Booker T. Washington may have given Greenwood its nickname"** (Oklahoma Historical Society, n.d.). **A state historical society hedging in print is a strong signal.**
+- **The Tulsa City-County Library attributes the account to the author and educator Eddie Faye Gates** (Tulsa City-County Library, n.d.). **That gives the claim a named source, which is progress, and it is still an attribution rather than a document.**
+- **Durham has a competing origin story for the same phrase**, and some North Carolina accounts date the nickname to the **1950s** (NCpedia, n.d.-c).
+
+**Verdict: write "is often attributed to" and cite the hedge.** Never write "Washington named it" flatly. **And treat the competing Durham claim as the more interesting finding**, because a phrase claimed by two cities tells you something about how these districts saw themselves that a settled etymology would not.
+
+## Claim 3: "Auburn Avenue was the richest Negro street in the world." VERDICT: TRUE AS A QUOTATION, NOT AS A MEASUREMENT
+
+**Run the check.**
+- **Who said it?** *Fortune* magazine, in **1956** (New Georgia Encyclopedia, n.d.-a).
+- **Is the quotation real?** Yes, and the New Georgia Encyclopedia carries it.
+- **Is the underlying claim measured?** **No.** There is no ranking of streets by wealth, and no method is given.
+
+**Verdict: quote it, attribute it to *Fortune* and to 1956, and never restate it in your own voice as a fact about relative wealth.** The sentence "Fortune called Auburn Avenue the richest Negro street in the world in 1956" is entirely defensible. The sentence "Auburn Avenue was the richest Negro street in the world" is not.
+
+**This distinction, between a claim about a document and a claim about the world, is the single most transferable skill in this series.**
+
+## Claim 4: "Black business districts were destroyed by highways and urban renewal." VERDICT: TRUE IN SPECIFIC CASES, WITH SPECIFIC DOCUMENTS, AND NOT A GENERAL LAW
+
+**Run the check.**
+- **Durham:** documented. **The freeway and urban renewal project ended with 4,057 households and 502 businesses demolished** (Facing South, 2020).
+- **Richmond:** documented. **The Richmond-Petersburg Turnpike, now Interstate 95, was built through Jackson Ward in the late 1950s.**
+- **Atlanta:** documented. **The Downtown Connector bisected Auburn Avenue** (New Georgia Encyclopedia, n.d.-a).
+- **Tulsa:** documented. **Highway construction and urban renewal in the late 1960s took much of the rebuilt district** (Smithsonian Magazine, 2021).
+- **Chicago:** documented, with a different instrument. **Urban renewal in the 1950s and 1960s demolished blocks for public housing and for the Illinois Institute of Technology campus** (National Park Service, n.d.).
+
+**Verdict: the claim holds in each case, and you must still cite each case separately.** Five documented instances is not a law, it is five documented instances. **And note that the instruments differ**: a turnpike, a connector, a freeway, an urban renewal area and a university land assembly are five different legal mechanisms with five different decision-making bodies and five different sets of minutes.
+
+**This course does not teach those instruments.** The route series does, and the Indiana Avenue course teaches them one at a time with the statute attached. **If the mechanism is what you want, that is where it is.**
+
+## The checking routine, extracted
+
+Use this on any claim, in any subject.
+
+1. **Who says it, by name?**
+2. **What is their source, and is it primary?**
+3. **Do independent versions of the claim agree on the number?**
+4. **Is the thing being claimed measurable at all, by any method available at the time?**
+5. **Is this a claim about a document or a claim about the world?**
+6. **If it fails, cut it, and say in your notes that you cut it and why.**
+
+**Step 6 is the one people skip.** A research file that records what you rejected is worth more than one that records only what you kept, **because the next researcher will meet the same bad claim and you can save them the afternoon.**
+
+## Sources
+- Facing South. (2020, June 10). *The bitter history behind the highways occupied by protesters*. https://www.facingsouth.org/2020/06/bitter-history-behind-highways-occupied-protesters
+- National Park Service. (n.d.). *Chicago's Black metropolis: Understanding history through a historic place* [Teaching with Historic Places]. https://www.nps.gov/articles/chicago-s-black-metropolis-understanding-history-through-a-historic-place-teaching-with-historic-places.htm
+- NCpedia. (n.d.-c). *Black Wall Street, Durham, North Carolina*. https://www.ncpedia.org/black-wall-street-durham-north-carolina
+- New Georgia Encyclopedia. (n.d.-a). *Auburn Avenue (Sweet Auburn)*. https://www.georgiaencyclopedia.org/articles/counties-cities-neighborhoods/auburn-avenue-sweet-auburn/
+- Oklahoma Historical Society. (n.d.). *Tulsa and Black Wall Street*. https://www.okhistory.org/learn/trm1
+- Smithsonian Magazine. (2021). *Decades after the Tulsa race massacre, urban renewal sparked Black Wall Street's second destruction*. https://www.smithsonianmag.com/history/black-wall-streets-second-destruction-180977871/
+- Tulsa City-County Library. (n.d.). *Black Wall Street*. https://www.tulsalibrary.org/black-wall-street`,
+      recallContent: [
+        {
+          prompt: "What is a building and loan association, and what are its three advantages for an excluded community?",
+          answer: "A club for buying houses: members subscribe to shares, pay monthly, and the pool lends so members can buy or build. It creates its own capital, it underwrites on members' knowledge of each other rather than on credit files, and its collateral problem is smaller because it can take a house back and re-lend inside the community.",
+        },
+        {
+          prompt: "Give the Berean Building and Loan Association's figures.",
+          answer: "Founded 1888 at Berean Presbyterian Church in Philadelphia by the Reverend Matthew Anderson. By 1909 it managed more than 150,000 dollars of stock for 700 members, and it helped more than 300 families buy homes.",
+        },
+        {
+          prompt: "State the single most important difference between a building and loan and a bank.",
+          answer: "Withdrawal. A building and loan's members withdraw slowly under rules; a bank's depositors withdraw on demand, so a bank faces a run and can be closed by an examiner the same afternoon.",
+        },
+        {
+          prompt: "Where does the figure of 134 Black-owned banks organised between 1888 and 1934 come from, and what is its limit?",
+          answer: "Abram L. Harris's 1936 study The Negro as Capitalist. Cite Harris rather than the article that repeated him, and note that banks organised is not the same as banks operating at any one moment.",
+        },
+        {
+          prompt: "How should you establish how many Black-owned banks exist today?",
+          answer: "Download the current quarter's Minority Depository Institutions list from the FDIC and count it yourself. Any number in an article is a snapshot of the quarter its author downloaded, and the sector consolidates.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
