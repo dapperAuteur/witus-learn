@@ -38,6 +38,27 @@ handoff, spell out the exact ordered list of new migrations + `pnpm db:migrate:p
 conventions are in the managed block below; durable committed planning lives in `docs/`, e.g.
 `docs/BUILD_PLAN.md`.)
 
+## Standards-coverage rule — a new course declares its standards or says why not
+
+Educators shop on **standards coverage**, so it must not rot. `pnpm lint` runs
+`scripts/check-standards-coverage.ts`, a **ratchet**: it compares every course registered in
+`scripts/seed-courses.ts` against the alignments in `src/lib/standards/`, and **fails on any course
+that has neither an alignment nor an entry in that script's `BACKLOG` map**. The 35 courses unmapped
+as of 2026-07-24 are grandfathered there with a reason each; the list shrinking is the progress bar.
+
+So when you ship a course, do one of two things:
+1. **Map it** — add or extend a claim in `src/lib/standards/claims.ts` and reference it from the
+   jurisdiction files, then delete its `BACKLOG` line, or
+2. **Excuse it** — add a one-line reason to `BACKLOG` (practical/vocational courses with no academic
+   standard to claim are legitimately permanent entries).
+
+Standards a course meets render **on the course page, under the description**, as a collapsed
+`<details>` summarising the count and jurisdictions, linking to `/academic-standards?course=<slug>`
+for detail. **An unmapped course renders nothing** rather than "0 standards", because zero reads as
+"meets none" when it means "not analysed yet". Never widen a claim to make a standard look fuller,
+and never assert a standard the lessons do not actually teach: `src/lib/standards/claims.ts` states
+the rule and the isolation suite guards the verbatim state text.
+
 ## App-improvements review rule — check `./plans/app-improvements/` at both ends of a task
 
 `./plans/app-improvements/` is BAM's live product backlog — he drops feature notes and bug reports

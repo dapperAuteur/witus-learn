@@ -36,6 +36,7 @@ import { CourseAdminTools } from "@/components/course-admin-tools";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { brandName } from "@/lib/branding";
+import { standardsForCourse } from "@/lib/standards";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -119,6 +120,8 @@ export default async function CourseBySlugPage({ params }: Params) {
   // Series membership: which learning path(s) this course sits in, so the learner is told it's part
   // of an ordered track (and where). Empty for a standalone course, so the banner just doesn't show.
   const coursePaths = await getPathsForCourse(view.tenant.id, course.id);
+  // Pure lookup over committed standards data; no query, no await.
+  const courseStandards = standardsForCourse(courseSlug);
   // Every lesson the learner may save for offline: page path, direct-media file (when applicable),
   // and the metadata the offline manifest needs so /downloads can name it with no network (a
   // cached URL alone can't tell you its course, section or title — see src/lib/offline-manifest.ts).
@@ -271,6 +274,49 @@ export default async function CourseBySlugPage({ params }: Params) {
       ) : null}
       {course.description ? (
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
+      ) : null}
+
+      {/* Standards met, directly under the description, because standards coverage is what an
+          educator actually shops on and a separate page they must know about is not discoverable.
+          Collapsed by default so the course page stays clean: the summary line carries the numbers,
+          and the detail lives at /academic-standards?course=<slug>. An unmapped course renders
+          NOTHING rather than "0 standards", which would read as "meets none" when it means "not
+          analysed yet". scripts/check-standards-coverage.ts is the guard on that backlog. */}
+      {courseStandards.total > 0 ? (
+        <details className="mt-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
+          <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 px-4 text-sm font-medium pointer-coarse:min-h-12">
+            <span aria-hidden="true">🎓</span>
+            <span>
+              Meets <strong>{courseStandards.total}</strong> academic standard
+              {courseStandards.total === 1 ? "" : "s"} across{" "}
+              <strong>{courseStandards.jurisdictions.length}</strong>{" "}
+              {courseStandards.jurisdictions.length === 1 ? "jurisdiction" : "jurisdictions"}
+            </span>
+            <span className="ml-auto text-xs text-neutral-500">show</span>
+          </summary>
+          <div className="px-4 pb-4">
+            <ul className="mt-2 flex flex-wrap gap-2">
+              {courseStandards.jurisdictions.map((j) => (
+                <li key={j.state}>
+                  <Link
+                    href={`/academic-standards?state=${j.state.toLowerCase()}&course=${courseSlug}`}
+                    className="inline-flex items-center gap-1 rounded-full border border-neutral-300 px-3 py-1 text-xs hover:underline dark:border-neutral-700"
+                  >
+                    {j.jurisdiction}
+                    <span className="text-neutral-500">{j.count}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link
+              href={`/academic-standards?course=${courseSlug}`}
+              className="mt-3 inline-block text-sm underline underline-offset-2"
+              style={{ color: "var(--accent)" }}
+            >
+              See the full standards detail for this course
+            </Link>
+          </div>
+        </details>
       ) : null}
 
       {coursePaths.map((p) => {
