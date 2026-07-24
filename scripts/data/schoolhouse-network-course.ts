@@ -976,6 +976,281 @@ From the digitised card (Fisk University, n.d.-b):
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Built
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "sn-built-the-plans",
+      title: "9 · Two plan books, and why the second one exists",
+      section: "Section 3 · Built",
+      body: `**A plan book is a technology for shipping expertise to places that cannot hire it.** That is the whole idea, and it is why this program produced thousands of buildings that resemble each other across fifteen states without a single architect ever visiting most of the sites.
+
+**Two plan books did the work, and the second one exists because the first was audited.**
+
+## Book one: The Negro Rural School and Its Relation to the Community (1915)
+
+Published by **Tuskegee Normal and Industrial Institute**, drafted by Tuskegee's staff architect **Robert R. Taylor** and **W. A. Hazel** (Obenauer & Brown, 2015, p. 7).
+
+**Taylor is worth knowing about.** He enrolled at the Massachusetts Institute of Technology in 1888 and graduated with the class of 1892, the first known Black student to attend and graduate from MIT, and he is regarded as the first academically trained African American architect. He was recruited to Tuskegee by Booker T. Washington and spent a forty-year career there (MIT Black History, n.d.). **The standardised plan that shaped thousands of schools for Black children in the segregated South was drawn by a Black architect at a Black institution.** That is a fact about authorship and it belongs in any account of this program.
+
+**What the book contained** (Obenauer & Brown, 2015, p. 7):
+- Designs for a **one-teacher school**, two variations of a **five-teacher school**, a **central school** and a **training school**
+- An **industrial building**, a **privy**, and **two homes for teachers**
+- Windows **grouped into batteries** to maximise natural light
+- Buildings **raised on short piers** for ventilation and moisture control
+- **Folding doors** in the one-teacher plan between workroom and classroom, so the space could open up for events, and a provision for a **future classroom addition**
+
+**Read that last item as design thinking, not as a detail.** A plan that anticipates its own extension is a plan for a community expected to grow. Booker T. Washington believed most rural schools would be the one-teacher type (Obenauer & Brown, 2015, p. 53), and the plan still made room for the second classroom.
+
+## The audit that produced book two
+
+In August and September 1919, **Fletcher B. Dresslar**, professor at Peabody College for Teachers in Nashville, inspected **forty-seven newly constructed Rosenwald schools**. His report cited construction problems, and the North Carolina documentation form notes that Tuskegee's small staff running the program "were simply overburdened" (Obenauer & Brown, 2015, pp. 12-13).
+
+**Dresslar's 1920 Report on the Rosenwald School Buildings contributed to the decision to move the program to Nashville** (Obenauer & Brown, 2015, p. 13). Lesson 3 covered what that move meant for who ran the work. **This lesson covers what it meant for the buildings, which is a genuinely different question with a genuinely different answer: the buildings improved.**
+
+## Book two: Community School Plans (1921 to 1931)
+
+**Origin.** Plans drafted by Dresslar were first published by **Tennessee's Department of Education in 1921** as a bulletin called *Community School Plans*, then brought to Nashville by **Samuel L. Smith** and redrawn for the Rosenwald Fund by **J. E. Crain** and **E. M. Tisdale**, issued one at a time in four-page pamphlets and "made available upon request to black and white schools alike" (Obenauer & Brown, 2015, p. 11).
+
+**Hold that last clause.** The plan books drawn for Black schools in the segregated South were distributed to white schools too. **A standard that was good enough to be used across the colour line, in a system built to keep the schools unequal, is a fact worth stating without decorating.**
+
+**The editions, and what each one changed** (Obenauer & Brown, 2015, pp. 11-14, 53-54):
+
+| Edition | What changed |
+|---|---|
+| **Fall 1921** | First Fund edition, issued as separate four-page pamphlets |
+| **1924** | An entirely new booklet, **seventeen plans**, one to seven classrooms, for grades one through seven or eight, plus contractor specifications for teacherages |
+| **By 1927** | Teacherage designs of four, five and six rooms in Colonial Revival or Craftsman style |
+| **1928** | Smith called Crain and Tisdale back to emphasise **larger** schools: a new ten-teacher plan, and all three-teacher and larger plans drafted with brick facades |
+| **1931** | Final revision by **Walter R. McCormick** with Crain: larger, more permanent buildings, mostly Georgian Colonial Revival, room arrangements standardised at three-teacher and above, every plan including a **community room** for meetings, health clinics and home economics, and every plan designed to make future additions easier |
+
+**The 1931 edition is the program describing its own future and getting it wrong.** It was drawn for urban schools and for rural consolidation. **The Fund ended the building program the next year.**
+
+## What the plan book bought with its conditions
+
+Grant amounts under the Nashville regime were **based on the number of teachers**, ranging from **500 dollars for a one-teacher building to a maximum of 2,100 dollars for a school with ten teachers or more**, with an additional **50 dollars per room** for permanent materials such as masonry, and **200 dollars per classroom** for additions to existing Rosenwald schools between 1921 and 1931. From 1927 the Fund also offered to support replacing buildings damaged by fire or natural disaster (Obenauer & Brown, 2015, pp. 11-12).
+
+To receive a grant a community had to meet **minimum standards for site size and length of school term**, and provide **new blackboards and desks for every classroom and two sanitary privies** (Obenauer & Brown, 2015, p. 11).
+
+**Read the school-term condition again.** A building grant conditioned on term length is a grant buying school days. **The Fund used construction money to move an operating variable it had no other way to reach.**
+
+## The rule that keeps you honest about identification
+
+**Not every Rosenwald school followed either plan book.** To qualify for assistance the Fund required only "an approved plan." Some North Carolina schools used designs from the state Department of Public Instruction, and **local craftsmen who built a county's school often slightly modified or embellished the original plans** (Obenauer & Brown, 2015, p. 25). The Pleasant Plains School in Hertford County, built under Tuskegee, has an unusual T-shaped roof form.
+
+**Two consequences for research.**
+1. **A building that does not match a published plan is not thereby not a Rosenwald school.** Check the card file and the county records before you rule anything out.
+2. **The variations are where the local builders are visible.** The plan books carry the names of Taylor, Hazel, Dresslar, Smith, Crain, Tisdale and McCormick. **The carpenters who changed the plans on site are, in this record, almost entirely anonymous.** Lesson 11 comes back to that, because it is a fact about the archive and not about the work.
+
+## Scale, and the fifteen states by name
+
+Through the 1920s the program aided the construction of **more than four hundred schoolhouses a year** across fifteen states: **Alabama, Arkansas, Florida, Georgia, Kentucky, Louisiana, Maryland, Mississippi, Missouri, North Carolina, Oklahoma, South Carolina, Tennessee, Texas and Virginia** (Obenauer & Brown, 2015, p. 12).
+
+**Read the list for what is on it.** Maryland and Missouri are there. **The geography of American school segregation was wider than the phrase "the Deep South" suggests**, which is exactly the point the Green Book method course made about sundown towns and route planning.
+
+## Sources
+- MIT Black History. (n.d.). *Robert R. Taylor, 1892*. Massachusetts Institute of Technology. https://www.blackhistory.mit.edu/archive/robert-r-taylor-1892
+- National Park Service. (n.d.). *The Rosenwald schools: Progressive Era philanthropy in the segregated South* [Teaching with Historic Places]. https://www.nps.gov/articles/the-rosenwald-schools-progressive-era-philanthropy-in-the-segregated-south-teaching-with-historic-places.htm
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf
+- Weathers, L. C. M. (2008). *The Rosenwald school building program in South Carolina, 1917-1932* [National Register of Historic Places multiple property documentation form]. University of South Carolina Public History Program. http://www.nationalregister.sc.gov/MPS/MPS050.pdf`,
+      recallContent: [
+        {
+          prompt: "Where is the Rosenwald Fund card file, and how big is the collection?",
+          answer: "The Julius Rosenwald Fund Archives, 1918-1948, at Fisk University's John Hope and Aurelia E. Franklin Library in Nashville: 585 archival boxes and an estimated 674,000 items, being digitised and published online.",
+        },
+        {
+          prompt: "Give the Oak Grove School card's key figures and the community share they imply.",
+          answer: "Charles County, Maryland, item Md 3911, 1930-31, two-teacher, two acres. Total cost 2,850 with 100 from the Black community, 2,350 public and 400 Rosenwald. That is a community share of about 3.5 percent, far below the national average of about 16.5 percent.",
+        },
+        {
+          prompt: "Why does a national percentage tell you nothing reliable about a particular school?",
+          answer: "Because no school was the average school. Oak Grove's community share was about 3.5 percent and Capitol Heights' about 10.5 percent, against a national figure of about 16.5 percent. Describe whichever one you actually mean.",
+        },
+        {
+          prompt: "Name four things a Rosenwald school card does not record.",
+          answer: "How the money was raised, over how long, by how many households, and who refused. It also does not say whether a blank labour column means no labour was given or that nobody wrote it down. A budget line is the shadow a campaign leaves, not the campaign.",
+        },
+        {
+          prompt: "Why does this course reproduce the card's column headings rather than paraphrasing them?",
+          answer: "Because 'Negroes' and 'Whites' are the form's own printed headings, and they show that the program's accounting was organised by race at the level of the paperwork. That is evidence about the administrative world these buildings were raised in.",
+        },
+      ],
+    },
+    {
+      slug: "sn-built-the-light",
+      title: "10 · The light: orientation, window banks, paint, and two acres",
+      section: "Section 3 · Built",
+      body: `**The design problem was daylight, and everything else follows from it.** Most rural areas where these schools were built had **no electricity** (Obenauer & Brown, 2015, p. 54). A classroom therefore had to be lit by the sun, all day, in every season, or children could not read in it. **The Fund treated that as an engineering requirement, and the specifications it wrote are the best design history in this course.**
+
+## The light rules
+
+From the North Carolina documentation form's description of Community School Plans (Obenauer & Brown, 2015, pp. 53-55):
+
+1. **Orientation.** Plans were of **north-south or east-west orientation to provide maximum lighting of the classrooms**, and the Fund's plans were "oriented in a way to catch only east-west light." **The building was turned on its lot to suit the sun. The lot did not decide the building.**
+2. **Window banks.** Groupings of **tall double-hung sash windows**, which also allowed ample air circulation in summer.
+3. **Windows on the pupils' left.** Floor plans **always showed seating arrangements with the windows at the pupils' left side, so that their writing arms would not cast shadows on their desk tops.** That single specification tells you the Fund was thinking about a right-handed child's hand at the moment of writing.
+4. **No cross lighting.** Windows were deliberately confined so that light did not come from two opposing directions.
+5. **Breeze windows.** For some plans Smith added windows **high under the eaves of exterior walls**, placed there to avoid cross lighting, or **above the blackboard on interior walls**, designed to pull air across the room and into an adjacent hallway or classroom.
+6. **Window shades specified.** Shade **arrangements, colours and translucence** were specified to maximise interior illumination.
+
+## The paint rules, which are stricter than you expect
+
+**The Fund permitted only two interior paint treatments**, chosen to maximise interior light (Obenauer & Brown, 2015, p. 54):
+- a **cream ceiling with buff walls** and walnut-stained wainscoting or dado, or
+- an **ivory cream ceiling with light gray walls** and walnut-stained wainscoting or dado.
+
+**By 1922 the Fund was sending paint chips with its plan books.** For exteriors, three schemes were specified: "white trimmed in gray or gray trimmed in white would be attractive. If it is desired to use a wood preservative stain, a nut brown trimmed in white or cream would be satisfactory" (quoted in Obenauer & Brown, 2015, p. 54).
+
+**A foundation mailing paint chips to rural counties is a serious fact about how standardisation actually travels.** The plan is not the drawing. The plan is the drawing plus the colour plus the shade fabric plus the instruction to pay "careful attention to window framing, double flooring, and the building's underpinnings" (quoted in Obenauer & Brown, 2015, p. 54).
+
+## The building's body
+
+- **Raised masonry foundations, often brick piers**, to limit rising damp and moisture (Obenauer & Brown, 2015, p. 54).
+- **Simple weatherboarding or German siding**, hipped or gable roofs, interior chimney flues, wide overhanging eaves with exposed brackets (Obenauer & Brown, 2015, p. 53).
+- **Movable partitions** between adjacent classrooms in two-teacher plans and larger, so the school could serve as a meeting house, community space or auditorium outside school hours (Obenauer & Brown, 2015, p. 53).
+
+## The site
+
+Smith recommended school sites of **at least two acres**, with the building **in a corner of the parcel**, leaving the rest for a playground, a garden or agricultural plot, the two sanitary privies and a well (Obenauer & Brown, 2015, p. 54). **The two-acre minimum is why the acreage field appears on the card you read in lesson 7.** A card showing "2" is a card showing a community that met the floor exactly.
+
+## The industrial room, and the argument built into the floor plan
+
+Most designs in *Community School Plans* included an **industrial room**, intended for practical skills: the documentation form records these as **sewing and cooking for girls and farming and tool work for boys** (Obenauer & Brown, 2015, p. 54).
+
+**This room is where the architecture stops being neutral, and you should notice it rather than admire the windows and move on.**
+
+- **One reading:** the industrial room is progressive-era pedagogy, common in white schools of the period too, reuniting school with what reformers called real life.
+- **Another reading, which is James D. Anderson's:** northern industrial philanthropy pushed the children of the formerly enslaved into a schooling designed around Black political and economic subordination, against what those families actually wanted for their children (Anderson, 1988).
+- **And a third, from a research report quoted in the documentation form itself:** local school boards and county commissions seeking these grants "did not necessarily concur with the visions of black self-help and advancement that moved Washington and Rosenwald. They were generally more interested in lessening their share of education costs for African American children and in keeping a sufficiently satisfied black workforce trained in domestic care, mechanics, and agriculture down on the farm" (Brown, 2007, quoted in Obenauer & Brown, 2015, p. 23).
+
+**All three readings are about the same room on the same drawing.** This course does not choose between them, and it does not let the good daylighting settle the argument. **A building can be well designed and be an argument you disagree with. Those are two separate findings and the design rule requires you to write both.**
+
+## What to do with all of this in front of an actual building
+
+**Stand where the sun is and ask the plan's questions.**
+- Which way does the long window wall face?
+- Are the windows grouped, and are they on one side only?
+- Is there a high band of small windows under the eaves or above where a blackboard would have been?
+- Is the building on piers?
+- Is there a seam in the wall where a partition folded, or a wider-than-usual door opening between two rooms?
+- Is the building in a corner of its lot, and how much lot is there?
+
+**Six questions, all answerable by looking, all traceable to a specification you can cite.** That is what beat 4 is for, and the next section builds it into an observation brief.
+
+## Sources
+- Anderson, J. D. (1988). *The education of Blacks in the South, 1860-1935*. University of North Carolina Press.
+- National Park Service. (n.d.). *The Rosenwald schools: Progressive Era philanthropy in the segregated South* [Teaching with Historic Places]. https://www.nps.gov/articles/the-rosenwald-schools-progressive-era-philanthropy-in-the-segregated-south-teaching-with-historic-places.htm
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf`,
+      recallContent: [
+        {
+          prompt: "Who drew the first Rosenwald plan book, and what is notable about the lead author?",
+          answer: "The Negro Rural School and Its Relation to the Community, published by Tuskegee in 1915 and drafted by Tuskegee's staff architect Robert R. Taylor with W. A. Hazel. Taylor was the first known Black student to attend and graduate from MIT, class of 1892, and is regarded as the first academically trained African American architect.",
+        },
+        {
+          prompt: "Why does a second plan book exist at all?",
+          answer: "Because Fletcher B. Dresslar inspected forty-seven newly built Rosenwald schools in August and September 1919 and reported construction problems, with Tuskegee's small staff overburdened. His report contributed to the move to Nashville, where Samuel L. Smith issued Community School Plans from 1921.",
+        },
+        {
+          prompt: "How were grant amounts set under the Nashville regime, and what conditions came attached?",
+          answer: "By the number of teachers, from 500 dollars for a one-teacher building to a maximum of 2,100 for ten teachers or more, plus 50 dollars per room for permanent materials and 200 per classroom for additions. Communities had to meet minimum standards for site size and school-term length and provide new blackboards, desks and two sanitary privies.",
+        },
+        {
+          prompt: "If a building does not match a published Rosenwald plan, what follows?",
+          answer: "Nothing, on its own. The Fund required only an approved plan, some schools used state Department of Public Instruction designs, and local craftsmen often modified or embellished the plans on site. Check the card file and county records before ruling a building out.",
+        },
+        {
+          prompt: "Name the fifteen states, or at least say what the list tells you.",
+          answer: "Alabama, Arkansas, Florida, Georgia, Kentucky, Louisiana, Maryland, Mississippi, Missouri, North Carolina, Oklahoma, South Carolina, Tennessee, Texas and Virginia. Maryland and Missouri are on it, so the geography of American school segregation was wider than the phrase 'the Deep South' suggests.",
+        },
+      ],
+    },
+    {
+      slug: "sn-who-built-and-taught",
+      title: "11 · Who raised the money, who built them, who taught in them",
+      section: "Section 3 · Built",
+      body: `A plan book does not raise a dollar, drive a nail or teach a child. **This lesson is about the people the record does name, and about the much larger group it does not.**
+
+## The state agents, and the man who did the asking
+
+**Nathan Carter Newbold**, a white educator, became North Carolina's state agent for Negro rural schools and directed the state's Division of Negro Education. He persuaded legislators and local communities to allocate funds and disbursed the state's early Rosenwald money (Obenauer & Brown, 2015, pp. 20-22).
+
+**Charles H. Moore** of Greensboro became Newbold's **first African American assistant in 1918** and organised **school improvement leagues** across the state, which ran competitive money-raising campaigns (Obenauer & Brown, 2015, pp. 21, 23).
+
+**William Frontis Credle** ran schoolhouse planning for both Black and white communities and was successful enough that Smith recruited him to Nashville in 1929 to help administer the whole southern program. The form records Rosenwald joking, "Go ahead and employ him. He is building so many schools in North Carolina we will save money by bringing him into our office" (quoted in Obenauer & Brown, 2015, p. 22).
+
+**And then there is George E. Davis, who is the person this lesson is really about.**
+
+- A **Howard University** graduate, and **Biddle University's first Black professor**. Biddle is now **Johnson C. Smith University**.
+- He came to public instruction through his wife, **Marie G. Davis**, principal of Charlotte's Black **Fairview School**, where he helped train young elementary teachers in his spare time.
+- After retiring from teaching in **1920** he became North Carolina's **Supervisor of Rosenwald Buildings**.
+- He crossed the state's **500-mile length by automobile**, sometimes away from home for weeks, generating support community by community. Historian Thomas W. Hanchett's assessment, quoted in the form, is that Davis "almost single-handedly" generated the support for Rosenwald schools across North Carolina (Obenauer & Brown, 2015, pp. 22-23).
+- **By 1921 he had worked out that the local church was the decisive ally**, because in a region where white residents discouraged Black participation in nearly any organised activity, "churches provided the single strong institutional framework for Afro-American endeavors" (quoted in Obenauer & Brown, 2015, p. 23). In many communities the church donated the two acres.
+
+**Davis in 1927, quoted in the documentation form:** "White people in our state are not asked to sweat blood [so] that their children may be helped through the schools to be good citizens" (quoted in Obenauer & Brown, 2015, p. 23).
+
+**That sentence is the design rule of this course, written in 1927 by the man doing the fundraising.** He is not celebrating the campaign. He is naming what the campaign measures. **Do not quote it as inspiration.**
+
+## One named organiser at parish level
+
+**George T. Rouson**, pastor of the First Baptist Church in **Murfreesboro, North Carolina**, and principal of its Black school, **handed out slips to participants in a local campaign soliciting donations to build a teacherage** (Obenauer & Brown, 2015, p. 24).
+
+**One pastor, one set of slips, one teacherage.** Multiply by five thousand buildings and you have the program. **The Fund's card file records the total. It does not record the slips.**
+
+## The teachers, and the Jeanes supervisors
+
+The Rosenwald program did not stand alone. It ran alongside the **Peabody Education Fund**, the **John F. Slater Fund**, the **General Education Board** and the **Anna T. Jeanes Fund** (Obenauer & Brown, 2015, p. 4; Weathers, 2008). In South Carolina the sequence was **first Jeanes teachers in 1909, first county training school in 1913, first state Negro agent in 1917**, and then the school building program (Weathers, 2008, p. 10).
+
+**The Jeanes teacher is the role most worth knowing, and it has a founder with a name.**
+
+**Virginia Estelle Randolph** was born in Richmond in **May 1870** and began teaching at the Mountain Road School in **Henrico County, Virginia**. In **October 1908 she became the first countywide Jeanes Supervising Industrial Teacher in the South**, travelling weekly to more than twenty Black schools in the county, sharing teaching methods, establishing school improvement leagues and drawing communities into the classroom. Her approach became known as **the Henrico Plan**, and a thousand copies of it were distributed to supervisors across the South. She died on **16 March 1958**. The **Virginia Randolph Home Economics Cottage**, built in 1937, became a museum in her memory and was designated a **National Historic Landmark in 1974** (Encyclopedia Virginia, n.d.).
+
+**A Jeanes teacher was a supervisor of other teachers, in a system that did not otherwise supervise them.** That is a professional infrastructure, built inside an exclusion, and it is the reason the Rosenwald buildings had anybody trained to put in them.
+
+## What changed inside the rooms
+
+The North Carolina form describes the before and after directly. Previously teachers "had typically been older students with minimal if any training who were wholly unqualified to instruct and often could barely read or write." Rosenwald schools "were staffed by better-trained teachers who instructed for longer school terms" (Obenauer & Brown, 2015, p. 29).
+
+**By the program's end, just over 38 percent of all teachers in Black schools in North Carolina taught in Rosenwald schools, and approximately 38 percent of the state's Black students attended them** (Brown, 2007, cited in Obenauer & Brown, 2015, p. 28).
+
+**Two cautions on that paragraph, and they matter.**
+1. **"Wholly unqualified" is a judgment written into a preservation document**, not a neutral measurement, and it describes people who were teaching without training because the state would not train or pay them. **Cite it as the form's characterisation.**
+2. **A better-trained teacher on a longer term is a real improvement, and it does not close the gap the lesson 6 spending table measured.** Both go in the same paragraph.
+
+## The people the record does not name
+
+**The plan books carry their authors: Taylor, Hazel, Dresslar, Smith, Crain, Tisdale, McCormick.** The state offices carry Newbold, Moore, Credle and Davis. The cards carry a county, an application number and four dollar figures.
+
+**The carpenters do not appear.** Neither do the teamsters who hauled the lumber at Lumber Bridge, the women whose labour Hoffschwelle had to correct the record to include, the children who worked on the sites, or the households that gave a week's wages. **Between five thousand buildings and a card file, the names of nearly everyone who built them are missing from this particular archive.**
+
+**That is a finding about the archive, not a gap in the history**, and it points at where the real work is: county deed books, church minute books, Black newspapers, school improvement league records, and the memories held by descendant communities and alumni associations who are, right now, the people restoring these buildings. **Section 5 sends you to them.**
+
+## Sources
+- Encyclopedia Virginia. (n.d.). *Virginia Estelle Randolph (1870-1958)*. Virginia Humanities. https://encyclopediavirginia.org/entries/randolph-virginia-estelle-1870-1958/
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf
+- Weathers, L. C. M. (2008). *The Rosenwald school building program in South Carolina, 1917-1932* [National Register of Historic Places multiple property documentation form]. University of South Carolina Public History Program. http://www.nationalregister.sc.gov/MPS/MPS050.pdf`,
+      recallContent: [
+        {
+          prompt: "What was the design problem these buildings were solving, and give three rules that follow from it.",
+          answer: "Daylight, because most rural areas had no electricity. The plans specified a north-south or east-west orientation to catch light from one direction, grouped banks of tall double-hung sash windows, no cross lighting, seating with the windows on the pupils' left so writing arms cast no shadow, breeze windows high under the eaves or above the blackboard, and specified window shade colours and translucence.",
+        },
+        {
+          prompt: "How many interior paint treatments did the Fund permit, and what did it start posting in 1922?",
+          answer: "Exactly two: a cream ceiling with buff walls, or an ivory cream ceiling with light gray walls, both with walnut-stained wainscoting or dado. By 1922 the Fund was sending paint chips out with its plan books.",
+        },
+        {
+          prompt: "What did Samuel L. Smith recommend for the site, and how does that connect to the card you read in lesson 7?",
+          answer: "At least two acres, with the building in one corner so the rest could hold a playground, a garden or agricultural plot, two sanitary privies and a well. That two-acre minimum is why the acreage field is on the card, and a card reading 2 shows a community that met the floor exactly.",
+        },
+        {
+          prompt: "Give the three readings of the industrial room, and say what this course does with them.",
+          answer: "Progressive-era pedagogy common in white schools too; Anderson's argument that industrial philanthropy pushed Black children into schooling built around subordination; and the documentation form's own quotation that local boards wanted to lessen their costs and keep a trained workforce on the farm. The course names all three and does not let the good daylighting settle the argument.",
+        },
+        {
+          prompt: "Name three of the six questions you can answer about a Rosenwald school by looking at it.",
+          answer: "Which way the long window wall faces; whether the windows are grouped and on one side only; whether there is a high band of small windows under the eaves or above where a blackboard would have been; whether the building is on piers; whether there is a seam or wide opening where a partition folded; and whether the building sits in a corner of its lot.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
