@@ -474,6 +474,49 @@ causation and must be sourced to that standard. Full plan: plans/42-cross-city-c
     provenance: "plans/future-courses/cross-city-connections.md",
   },
   {
+    key: "explore-map-and-entities",
+    title: "The explore surface: a course map, a timeline panel, and cross-course entities",
+    summary: "Three asks answered as one surface, because all three let a learner ask a question the app cannot",
+    body: `# The explore surface: a course map, a timeline panel, and cross-course entities
+
+Three asks answered as one surface, because all three let a learner ask a question the app cannot
+answer today: show me how this all connects. Seventeen courses now share people, statutes and places,
+and the only way to discover that is to take all of them.
+
+THE MAP. Reuse the existing map lesson renderer (Natural Earth projection, markers with lat/lng plus
+lines and polygons) rather than building anything new. The one missing piece is that courses have no
+coordinates: add a course_places table (course_id, lat, lng, label, role) rather than lat/lng columns
+on courses, because a course is often about several places and one point would lie. Most route-series
+courses already have a map lesson whose markers ARE those coordinates, so the data largely exists and
+simply is not queryable. The category/track toggle should be a lens, not a filter: by category colours
+pins by subject; by track colours by learning path AND DRAWS THE PATH ORDER AS CONNECTING LINES, which
+is where the map earns its keep, since a path is inherently a route and nobody has drawn one yet.
+Wanderlearn destination pins are a third, independent layer; getting that list is the one external
+dependency, the same blocker as the outstanding tour URLs.
+
+THE TIMELINE PANEL, three ideas, refined now that it must sit beside the map so the two drive each
+other. (1) A brushed timeline: drag a range and the pins filter, with two stacked bands, what was
+built above and what was done below. It answers the parallel-history problem and the diffusion
+question with one control. Largest cost, biggest payoff. (2) An event rail: a scrollable dated list
+beside the map, hover to highlight a pin. Mostly layout over existing data; the right first shipment.
+(3) An era stepper: named periods as tabs that re-centre the map. Most teachable for a classroom and
+it forces a useful editorial decision about periodisation. Ship 2, then 1, then 3.
+
+CROSS-COURSE ENTITIES, the most valuable idea here. Berman v. Parker appears in the DC course, the
+capstone, and by implication in Indiana Avenue; Milliken runs through three courses; the Housing Act
+of 1949 sits under half the catalogue, and none of it is visible. Model it as entities (person, case,
+law, place, event, organization) joined to courses and lessons. Surface it as an entity page listing
+every course that touches it, as its own result type in search, as a quiet "also discussed in" line on
+lesson pages, and as an entity index at /teach so a teacher can ask what else covers the same case.
+Populate it by extracting from the Sources blocks the courses already carry plus an author-declared
+field going forward, NOT by hand-tagging seventeen courses. The capstone's connection graph is
+already a hand-built entity map to seed from.
+
+Every new table is tenant-scoped and by-id reads 404 across tenants. No entity page ships without its
+citations. Full plan: plans/45-explore-map-timeline-and-entities.md.`,
+    provenance: "plans/future-courses/explore-map-and-entities.md",
+  },
+  {
     key: "green-book",
     title: "Green book",
     summary: "Green Book",
