@@ -2175,6 +2175,145 @@ The tax/legal/immigration courses must be firmly framed as **educational, not pr
     provenance: "plans/future-courses/travel-abroad-proposal.md",
   },
   {
+    key: "types-of-business-path",
+    title: "How a Business Is Formed: a path on entity types, US and worldwide",
+    summary: "A seven-course path on business forms: sole proprietorships and partnerships, the LLC, C-corps and",
+    body: `# How a Business Is Formed: a path on entity types, US and worldwide
+
+A seven-course path on business forms: sole proprietorships and partnerships, the LLC, C-corps and
+the S-corp election, nonprofits, benefit corporations, cooperatives, and how other countries form
+businesses. Series slug proposal: \`business-forms\`.
+
+The hook is that the catalogue already taught this once, as a case study. What They Built teaches that
+Black communities excluded from banks financed themselves through fraternal orders, industrial
+insurance companies and building and loan associations. Those are not colour in the story. They are
+entity types, chosen because of what the law let each one do. This path is the general theory of which
+that course is the worked example, which means a learner finishing What They Built has somewhere
+specific to go next.
+
+The organising idea is that an entity is a bundle of four decisions: liability, taxation, ownership
+and transfer, and governance. Every form on earth is a different answer to those four, so a learner
+who holds the four questions can read a form they have never seen, including a foreign one.
+
+The seven courses. 1, What a Business Entity Actually Is, the method course: the four decisions, and
+reading formation documents as primary sources, articles, operating agreement, bylaws, the state's own
+filing portal. 2, The US Forms: sole proprietorship, general and limited partnership, LLP, LLC, C-corp,
+and the S-corp, which is a tax election and not an entity type at all, the single most common
+misunderstanding in the subject and worth a full lesson. Also 501(c)(3) versus (c)(4) versus (c)(6),
+and benefit corporation, a legal form, versus Certified B Corp, a private certification, two different
+things that most content blurs. 3, Cooperatives: worker, consumer, producer, housing and purchasing,
+the Rochdale Principles, Mondragon, the rural electric co-ops that are the reason much of rural
+America has power, and credit unions, the co-op most Americans belong to without knowing it. 4,
+Financing Without Access, the bridge course, historical and global at once: fraternal benefit
+societies, industrial and burial insurance, building and loan associations, rotating savings and
+credit associations worldwide including susu, tanda, chit fund and tontine, and Islamic finance
+structures where interest is prohibited. The through-line is that when the capital system excludes
+you, you invent an entity. 5, How Other Countries Form Businesses: the UK's Ltd, PLC and community
+interest company; Germany's GmbH and AG and its mandatory worker representation on supervisory boards,
+which connects straight to the unions track; France's SARL and SAS; Japan's KK; Nordic co-op density;
+China's state-owned enterprises and the VIE structure; India's private limited and Section 8 company.
+The point is that the American set is not universal and the differences are policy choices with
+consequences. 6, Governance, or Who Actually Decides: boards, shareholders versus stakeholders,
+fiduciary duty, dual-class shares, the German two-tier board, and the difference that defines
+cooperatives, one share one vote versus one member one vote. 7, the capstone, Choose a Form and
+Defend It, against the four decisions and against a named alternative.
+
+The path says plainly and repeatedly that it is not legal advice. It teaches you what to ask a lawyer.
+No legal or tax value is asserted from memory: statutes, filings and agency pages, or nothing.
+
+Maps and timelines. The timeline here is the best hook in either structural path, because limited
+liability was invented, and recently. The beats, all to be verified and dated precisely before
+authoring: chartered trading companies, the Rochdale Pioneers in 1844, the UK Limited Liability Act in
+1855, the S-corp election in 1958, Wyoming's LLC statute in 1977 and the IRS rulings that made it
+usable, the check-the-box regulations in 1997, and benefit corporation statutes from 2010 onward. The
+line that lands with a teenager is that the LLC, the default form for a new American small business, is
+younger than the Rubik's Cube, which reframes business structure from natural law to recent and
+revisable policy. This needs only the cheapest timeline option, a markdown block, so the path is not
+blocked on engineering. The two-band timeline device is also a direct fit for course 4: forms available
+to everyone on the top band, forms Black communities used because banks would not lend on the bottom,
+one shared axis. The rule from the positive track still binds there: co-occurrence is the claim,
+balance is not. For maps, the path wants a choropleth of entity availability, where a co-op has
+statutory recognition, where codetermination is mandatory, where the LLC has a functional equivalent,
+plus a point map of the historical institutions in course 4 that can reuse What They Built's markers.
+
+Suggested build order across both structural paths: this path's courses 1 and 4 first, because they
+have a live hook and need no new engineering, then the government path's method and local-government
+courses, then the polygon map layer once two courses are waiting to use it.
+
+Full plan, including the government-forms path it pairs with: \`plans/46\`.`,
+    provenance: "plans/future-courses/types-of-business-path.md",
+  },
+  {
+    key: "types-of-government-path",
+    title: "Who Has the Power? A path on how governments are formed, from the block to the globe",
+    summary: "A nine-course path on the forms of government at every level: countries, regions and states, cities",
+    body: `# Who Has the Power? A path on how governments are formed, from the block to the globe
+
+A nine-course path on the forms of government at every level: countries, regions and states, cities
+and towns, tribal nations, and self-governing communities, plus how other countries constitute
+themselves. Series slug proposal: \`power-structures\`.
+
+This is not a generic civics unit. It is the general theory of which the route series is fourteen
+worked examples. Every one of those courses turns on finding the instrument, a 1910 ordinance, a
+blight designation, a school-district line, an annexation, and every one of those is a question about
+which body had the power to do that and where the power came from. A learner who holds the general
+rule can transfer what those courses taught to a place the courses never covered. So every general
+rule in this path is introduced from a case already in the catalogue, generalised, then tested
+somewhere new.
+
+The organising idea is the vertical stack of authority, and the fact most adults get wrong: in the
+United States, cities are creatures of the state. Dillon's Rule versus home rule explains why a city
+could pass a segregation ordinance in 1910 and why state preemption kills local ordinances today, and
+almost no civics course teaches it. The second thing generic civics gets wrong is bigger: tribal
+nations are not a rung on that ladder at all. They are a separate sovereign, with a
+government-to-government relationship to the federal government and sovereignty that predates the
+United States rather than being delegated by it.
+
+The nine courses. 1, Who Has the Power to Do This, the method course: given any government action,
+find the body, its enabling authority, the document that grants it, and who can overturn it. 2, Forms
+of Government, Honestly: classification as a contested exercise rather than a vocabulary quiz, taught
+through the fact that V-Dem, Freedom House, the EIU Democracy Index and Polity rank the same
+countries differently on published methodologies. 3, How Countries Constitute Themselves: presidential
+versus parliamentary versus semi-presidential, written versus uncodified constitutions, federal
+versus unitary, and how constitutions actually get made, by constituent assembly, negotiated
+transition or imposition after defeat. 4, The Middle Layer: federalism versus devolution is the whole
+lesson, because a US state's powers are constitutionally entrenched while Scotland's come from an Act
+of Parliament. 5, The Local Layer: Dillon's Rule and home rule, council-manager versus strong mayor,
+town meeting, Unigov as the case study already taught in the Indianapolis cluster, and special
+districts, which outnumber municipalities in the United States and whose elections nearly nobody
+votes in. 6, Tribal Nations and Indigenous Governance, its own course rather than a lesson. 7,
+Governments Without States: the EU, the UN and AU, unrecognised states, and self-governing
+communities including HOAs, housing co-ops, unions and mutual aid networks. 8, How Power Changes
+Hands: election systems as machines that produce different results from identical votes, then coups,
+revolutions, negotiated transitions and term limits. 9, the capstone, Map Your Own Stack, in which the
+learner documents every government with authority over the block they live on, from the primary
+record. Most people find six to twelve and are surprised by half.
+
+Course 6 carries the restraint rule the lacrosse course used and got right: teach that traditional
+governance exists, whose it is and why it matters, then stop, reproducing no ceremonial procedure or
+restricted internal detail, and telling the learner the silence is deliberate. Lead with nations' own
+words and with Indigenous scholarship. Treat the several hundred federally recognised tribes as
+several hundred distinct governments, not one.
+
+Maps and timelines. This path is the first content in the catalogue that genuinely needs a polygon
+map layer rather than more pins, because a form of government is an area and not a dot. The raw
+material is already installed: the world-atlas topojson ships country, US state and US county
+polygons, so a choropleth is a renderer change rather than a new dependency. The payoff is that the
+map becomes the argument. The rotating-globe idea of zoom controlling density maps exactly onto the
+vertical stack: zoomed out, countries filled by form; zoom in, states and provinces; zoom in further,
+municipalities and then the special districts almost nobody can see. Tribal nations need a separate,
+differently styled polygon layer, including current reservations, the McGirt boundaries in eastern
+Oklahoma, and Alaska Native corporation regions, which are corporate rather than reservations.
+Rendering them as one more shade of the same ladder would be a factual error, not a style choice. For
+timelines, this path is a diffusion story and wants the map time-slider option: put an adoption year
+on each country and watch constitutional adoption sweep the twentieth century in waves,
+decolonisation and then the post-Soviet transitions. That is mechanically the same slider the
+cross-city-connections capstone wants, so one component serves two series.
+
+Full plan, including the business-forms path it pairs with: \`plans/46\`.`,
+    provenance: "plans/future-courses/types-of-government-path.md",
+  },
+  {
     key: "visual-timelines",
     title: "Visual timelines: three options for showing two tracks at once",
     summary: "The platform has no timeline component. Three distinct options, differing in cost, in what they can",

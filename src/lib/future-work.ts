@@ -127,6 +127,12 @@ const PROPOSAL_META: Record<
       "pittsburgh-where-the-playbook-was-written",
     ],
   },
+  // The positive track. Part 1 of the parallel-history note is built; its timeline half is not, so
+  // `visual-timelines` deliberately stays open below rather than riding this one to "shipped".
+  "parallel-history": {
+    status: "shipped",
+    courseSlugs: ["the-schoolhouse-network", "where-we-rested", "what-they-built"],
+  },
   "training-the-colonizer": { status: "shipped", courseSlugs: ["training-the-colonizer"] },
   "pan-africanism-track-proposal": { status: "shipped", courseSlugs: ["pan-africanism"] },
   "afrocentricity-track-proposal": { status: "shipped", courseSlugs: ["afrocentricity"] },
@@ -144,6 +150,13 @@ const PROPOSAL_META: Record<
   // Dropped in while the union work was building — and picked up with no code change, which is the
   // whole point of auto-discovery. Under the old hardcoded generator it would have been invisible.
   world: { group: "World History" },
+  // The two STRUCTURAL paths (plans/46). Grouped together because they are one idea: each is the
+  // general theory of a case the catalogue already teaches. Government forms generalise the route
+  // series (every course there turns on "which body had the power, and where did it come from");
+  // business forms generalise What They Built (fraternal orders and building-and-loans were entity
+  // choices, not colour). Both are `recommended` rather than `proposed` for that reason.
+  "types-of-government-path": { group: "Structures", status: "recommended" },
+  "types-of-business-path": { group: "Structures", status: "recommended" },
   // Not course proposals — a live sales asset and the market research behind it. They're `feature`
   // so they don't clutter the course list, but they stay visible: BAM asked for one place for
   // "this type of stuff", and pricing is exactly the kind of thing that goes stale unseen.
