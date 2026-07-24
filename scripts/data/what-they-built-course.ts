@@ -568,6 +568,627 @@ When you research any firm in any of these districts, **go to the local Black ne
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Five districts  (each on its own terms, with its own firms and numbers)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wtb-durham",
+      title: "7 · Durham: Parrish Street and Hayti",
+      section: "Section 3 · Five districts",
+      body: `Durham gets taught first because it has the best documentation, and because the best of that documentation is a primary source you can read in ten minutes.
+
+## The four blocks and the neighbourhood
+
+Two distinct places, routinely confused, and you should keep them apart.
+- **Parrish Street**, four blocks in downtown Durham, was the **financial and office district**: insurance, banking, professional offices.
+- **Hayti**, immediately south, was the **residential, retail, religious and cultural district** (North Carolina Department of Natural and Cultural Resources, 2023).
+
+**Parrish Street held the balance sheets. Hayti held the people.** Any account that merges them will get the urban renewal history wrong, because the two were taken by different processes.
+
+## What was on Parrish Street
+
+**North Carolina Mutual.** The founding date is contested and you should carry both versions. **NCpedia records the company as incorporated on February 28, 1899 as the North Carolina Mutual and Provident Association**, while the company and many accounts date the founding to a meeting in **1898** (NCpedia, n.d.-a). **Give the date with its source and say which event you mean: the meeting or the incorporation.**
+
+Three men carried it, known collectively as **the Triumvirate**: **John Merrick**, president; **Aaron M. Moore**, medical director and treasurer; and **Charles C. Spaulding**, general manager (NCpedia, n.d.-a). Merrick was a barber. Moore was a physician. **That combination matters and lesson 13 explains why.**
+
+**Mechanics and Farmers Bank**, chartered by the North Carolina General Assembly on **February 25, 1907** and opened **August 1, 1908**. Its charter members included **Richard Fitzgerald, John Merrick, Aaron M. Moore, William G. Pearson, J. C. Scarborough, Charles C. Spaulding, J. A. Dodson and Stanford L. Warren** (NCpedia, n.d.-b). **Read that list against the insurance company's officers and you will see the overlap immediately.** Same men, second institution. That is not nepotism, it is **how a small capital base gets used twice**.
+
+## Now read the primary source, because it is extraordinary
+
+In January 1912 **W. E. B. Du Bois** published *The Upbuilding of Black Durham* in *The World's Work*. Here is what he counted.
+
+| What Du Bois counted | Figure |
+|---|---|
+| Grocery stores | 15 |
+| Barber shops | 8 |
+| Meat and fish dealers | 7 |
+| Drug stores | 2 |
+| Shoe store, haberdashery, undertaking establishment | 1 each |
+| Manufacturing establishments (mattresses, hosiery, brick, iron, dressed lumber) | 5 |
+| Professional men | "a couple of dozen" |
+| School teachers | 20 |
+| Churches | 20 |
+
+(Du Bois, 1912.)
+
+**And the finances, which are the part almost nobody quotes.**
+- **Mechanics and Farmers Bank:** "It has a paid-in capital of $11,000 and it has $17,000 deposited by 500 different persons" (Du Bois, 1912).
+- **North Carolina Mutual and Provident Association:** "The company's business has increased from less than a thousand dollars in 1899 to an income of a quarter of a million in 1910. It has 200,000 members, has paid a half million dollars in benefits, and owns its office buildings in three cities" (Du Bois, 1912).
+- **The brick yard**, run by **R. B. Fitzgerald**, could turn out **30,000 bricks a day**; the **hosiery mill**, managed by **C. C. Amey**, ran **thirteen knitting and ribbing machines at seventy dollars apiece** with a capacity of **sixty dozen men's socks a day** (Du Bois, 1912).
+
+**Stop on the bank line, because it is the most instructive number in this course.** **17,000 dollars deposited by 500 different persons is an average of 34 dollars a person.** That is not a rich man's bank. **It is five hundred people of modest means, pooling.** The paid-in capital of 11,000 dollars is the shareholders' own money at risk. **Those two figures together are the entire economics of Section 4 in one sentence.**
+
+## Du Bois's explanation, which is an argument and must be labelled as one
+
+Du Bois credits three founders: "a minister with college training, a physician with professional training, and a barber who saved his money" (Du Bois, 1912). But he says the greatest factor was something else: **the disposition of ordinary white Durham to leave Black enterprise alone**, which he renders as "Hands off" and "give them a chance," and he credits the influence of Trinity College in making white Durham willing to see black Durham rise (Du Bois, 1912).
+
+**Treat that as an interpretive frame with an author and a date, not as a finding.** It is Du Bois in 1912, writing for a white national magazine, making a case. **You may quote it and engage it. You may not launder it into your own narration as though it were established.** This is exactly the distinction the Indiana Avenue course drew about a different essay, and it is the most important habit in this whole series.
+
+## What happened to Hayti, in the register this course uses
+
+The **Durham Freeway**, originally the East-West Expressway and now **North Carolina Highway 147**, opened in parts from **1962** and moved slowly into the late 1960s. **By the end of the freeway and urban renewal project, 4,057 households and 502 businesses had been demolished** (Facing South, 2020).
+
+**Read 502 as an inventory, which is how this course uses it.** It is a count of Black Durham business at the moment of taking, produced by the agency that took it. **The size of what was built is legible in the size of the record of its removal**, and both facts belong in the same paragraph without either one softening the other.
+
+## And the present tense, because two of these institutions are still in the news
+
+- **North Carolina Mutual.** After more than a century, **liquidation was ordered by the courts on October 11, 2022**, with liabilities exceeding assets by at least **78 million dollars** (Wikipedia contributors, 2026, as summarised from the North Carolina Department of Insurance proceedings). **Verify this one against the North Carolina Department of Insurance's own filings before you publish it.**
+- **Mechanics and Farmers Bank** survived the Great Depression without closing and is still trading. On **July 22, 2026**, **Optus Financial Corporation and M&F Bancorp announced a merger** that the parties say would create the largest African American owned financial institution in the United States: roughly **1.27 billion dollars in total assets** as of **March 31, 2026**, **ten locations across North and South Carolina**, a deal valued at about **105 million dollars**, with **James Sills** of M&F to lead the combined bank and closing expected in the **fourth quarter of 2026**, subject to shareholder and regulatory approval (Banking Dive, 2026; WIS-TV, 2026).
+
+**That is a live transaction, not a settled fact.** A merger that has been announced is a proposal with conditions on it. **Say "announced" and "expected to close", and check whether it did.**
+
+## Sources
+- Banking Dive. (2026, July 22). *Black-owned banks Optus, M&F to merge*. https://www.bankingdive.com/news/optus-mf-carolina-black-owned-banks-merge-105-million-mdi-cdfi/826017/
+- Du Bois, W. E. B. (1912, January). The upbuilding of black Durham: The success of the Negroes and their value to a tolerant and helpful Southern city. *The World's Work, 23*, 334-338. https://docsouth.unc.edu/nc/dubois/dubois.html
+- Facing South. (2020, June 10). *The bitter history behind the highways occupied by protesters*. https://www.facingsouth.org/2020/06/bitter-history-behind-highways-occupied-protesters
+- NCpedia. (n.d.-a). *North Carolina Mutual Life Insurance Company*. https://www.ncpedia.org/north-carolina-mutual-life-insuranc
+- NCpedia. (n.d.-b). *Mechanics and Farmers Bank*. https://www.ncpedia.org/mechanics-and-farmers-bank
+- North Carolina Department of Natural and Cultural Resources. (2023, December 20). *Black Wall Street (G-116)*. https://www.dncr.nc.gov/blog/2023/12/20/black-wall-street-g-116
+- WIS-TV. (2026, July 23). *Optus Bank, M&F Bank announce merger that would create nation's largest Black-owned bank*. https://www.wistv.com/2026/07/23/optus-bank-mf-bank-announce-merger-that-would-create-nations-largest-black-owned-bank/`,
+      recallContent: [
+        {
+          prompt: "Why should you read a Black newspaper's advertisements before its articles when researching a firm?",
+          answer: "The articles tell you what the editor thought was important. The advertisements tell you who had money to spend on being seen, which is a better proxy for what was actually operating on the street. A canvasser may miss a firm; an advertiser paid.",
+        },
+        {
+          prompt: "What does the Chicago Defender's two-thirds out-of-town sales figure prove about the business?",
+          answer: "That it was not a local paper but a national distribution business run out of one district, with Pullman porters carrying bundles on the trains as the supply chain.",
+        },
+        {
+          prompt: "When an owner's newspaper covers the owner's bank, how do you read it?",
+          answer: "As useful for facts the owner had no reason to falsify, and unusable for judgments. It is a reading instruction, not a criticism.",
+        },
+        {
+          prompt: "What may you conclude from a firm buying a display advertisement, and what may you not?",
+          answer: "You may conclude the firm existed and had cash for advertising. You may not conclude it was successful or that it was Black owned.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-richmond",
+      title: "8 · Richmond: Jackson Ward and the Order of St. Luke",
+      section: "Section 3 · Five districts",
+      body: `Richmond is where the fraternal order model reached its most complete form, and it is where the best documented single act of capital formation in this course happened.
+
+## The district
+
+**Jackson Ward** was listed on the National Register of Historic Places on **July 30, 1976** and designated a **National Historic Landmark on June 2, 1978**, with three boundary expansions since, most recently in **2008** (Virginia Department of Historic Resources, n.d.). The Virginia Department of Historic Resources describes it as holding "one of the nation's most thriving Black business communities," with "fraternal organizations, banks, insurance companies, and other institutions, all founded and run by Blacks," and notes the district's three-bay, side-passage town houses and **the state's richest display of ornamental ironwork** in its locally manufactured cast-iron porches (Virginia Department of Historic Resources, n.d.).
+
+**Note the architectural detail and do not skip past it.** Cast-iron porches were **manufactured locally**, which means foundries, patterns, moulders and a delivery trade. **Ornament is evidence of a supply chain.**
+
+## The first bank, and the disagreement you must carry
+
+**The Savings Bank of the Grand Fountain of the United Order of True Reformers was chartered on March 2, 1888 by the Virginia General Assembly and opened for business on April 3, 1889** (Encyclopedia Virginia, n.d.-a).
+
+**Encyclopedia Virginia calls it "the first black-owned, black-operated financial institution to be chartered in the United States" and the second to begin operations** (Encyclopedia Virginia, n.d.-a). The reason for that careful two-part phrasing is that **the Capital Savings Bank of Washington, D.C. opened on October 17, 1888**, five months before the True Reformers bank opened its doors, although it was chartered later.
+
+**So which was first?** **Both, depending on what you are measuring**, and the honest sentence names the measure: **first chartered** is one bank, **first to open** is the other. **This is not a technicality. It is the difference between a legal fact and an operational fact**, and Section 1 warned you that these get confused.
+
+## Maggie Lena Walker, and the most checkable act of capital formation in this course
+
+**Maggie Lena Walker** was born in Richmond on **July 15, 1864** and died **December 15, 1934**. She joined the Independent Order of St. Luke in **1881**, established its juvenile branch in **1895**, and was elected **Right Worthy Grand Secretary in 1899**, a post she held until her death (Encyclopedia Virginia, n.d.-b).
+
+**She took over an order facing bankruptcy.** Over roughly 25 years, the order reached about **100,000 members across 24 states**, collected nearly **3.5 million dollars**, and built reserves of about **100,000 dollars** (Encyclopedia Virginia, n.d.-b).
+
+**On August 20, 1901 she announced the plan: a bank, a newspaper and a department store.** Then she executed it.
+
+| The plan | What she built | Dates |
+|---|---|---|
+| A newspaper | The *St. Luke Herald* | Began operating 1902 |
+| A bank | The Saint Luke Penny Savings Bank | Chartered July 28, 1903; opened November 1903 |
+| A department store | The Saint Luke Emporium | Opened April 1905; closed 1911 |
+
+(Encyclopedia Virginia, n.d.-b.)
+
+**Walker was the first Black woman to charter a bank in the United States** and served as its president until **1929** (Library of Congress, n.d.). Some accounts add that the bank took in more than **9,000 dollars in deposits on its first day**; carry that figure with its source rather than as common knowledge.
+
+## The store that closed, which is the most honest paragraph in this course
+
+**The Saint Luke Emporium opened in April 1905 and closed in 1911, and Encyclopedia Virginia gives two causes at once: organised opposition from white retailers, and reluctance among Black consumers to shop there** (Encyclopedia Virginia, n.d.-b).
+
+**Both halves. Write both halves.** A course that reports only the white retailers' campaign is telling a comfortable story about an external enemy. A course that reports only the consumer reluctance is telling an uglier and equally incomplete one. **The record says both, and a six-year run that ended for two reasons at once is exactly the kind of fact this course exists to teach properly.**
+
+## What happened to the bank, and the second disagreement
+
+The bank merged with other Richmond Black banks to form the **Consolidated Bank and Trust Company**. **Encyclopedia Virginia dates the merger to 1930 and describes it as a merger with two other banks** (Encyclopedia Virginia, n.d.-b). **Other accounts describe a two-stage process: St. Luke merged with Second Street Savings in late 1929, and Commercial Bank and Trust folded into the consolidated entity about two years later.**
+
+**Neither version is obviously wrong and this course does not pick one.** When you write about it, say which version you used and where you got it.
+
+Consolidated was, at the time of its purchase in **2005**, the oldest continuously African American operated bank in the United States (Encyclopedia Virginia, n.d.-b).
+
+## And the district itself
+
+**In the late 1950s the Richmond-Petersburg Turnpike, now Interstate 95, was built through Jackson Ward.** That is the taking, it is documented, and it belongs on the calendar in lesson 17 next to the 1888 charter and the 1903 bank. **It does not cancel them and they do not cancel it.**
+
+## Sources
+- Encyclopedia Virginia. (n.d.-a). *Grand Fountain of the United Order of True Reformers*. https://encyclopediavirginia.org/entries/grand-fountain-of-the-united-order-of-true-reformers/
+- Encyclopedia Virginia. (n.d.-b). *Maggie Lena Walker (1864-1934)*. https://encyclopediavirginia.org/entries/walker-maggie-lena-1864-1934/
+- Library of Congress. (n.d.). *Maggie L. Walker, first Black woman to charter a bank* [Research guide]. https://guides.loc.gov/this-month-in-business-history/november/maggie-l-walker-first-black-woman-to-charter-a-bank
+- National Park Service. (n.d.). *Maggie L. Walker National Historic Site*. https://www.nps.gov/mawa/index.htm
+- Virginia Department of Historic Resources. (n.d.). *Jackson Ward Historic District (127-0237)*. https://www.dhr.virginia.gov/historic-registers/127-0237/`,
+      recallContent: [
+        {
+          prompt: "What were the two distinct districts in Durham, and why must you keep them apart?",
+          answer: "Parrish Street, four downtown blocks of insurance, banking and professional offices, and Hayti immediately south, the residential, retail, religious and cultural district. They were taken by different processes, so merging them gets the urban renewal history wrong.",
+        },
+        {
+          prompt: "Quote or paraphrase Du Bois's 1912 figures for Mechanics and Farmers Bank, and say what they show.",
+          answer: "A paid-in capital of 11,000 dollars and 17,000 dollars deposited by 500 different persons. That is an average of 34 dollars a person, so it is not a rich man's bank but five hundred people of modest means pooling.",
+        },
+        {
+          prompt: "Who were Durham's Triumvirate, and what did each do?",
+          answer: "John Merrick, a barber, president; Aaron M. Moore, a physician, medical director and treasurer; and Charles C. Spaulding, general manager.",
+        },
+        {
+          prompt: "How should Du Bois's explanation for Durham's success be handled?",
+          answer: "As an interpretive frame with an author and a date, not as a finding. He credits three founders and then credits ordinary white Durham for leaving Black enterprise alone. Quote it and engage it; do not launder it into your own narration.",
+        },
+        {
+          prompt: "What is the current status of the two Durham institutions in this lesson?",
+          answer: "North Carolina Mutual's liquidation was ordered on October 11, 2022. Mechanics and Farmers Bank is still trading, and on July 22, 2026 its holding company announced a merger with Optus Financial expected to close in the fourth quarter of 2026, subject to approvals.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-atlanta",
+      title: "9 · Atlanta: Sweet Auburn",
+      section: "Section 3 · Five districts",
+      body: `Auburn Avenue is the district with the best single sentence attached to it and the most interesting founding transaction.
+
+## The name and the claim
+
+**"Sweet Auburn" was coined by John Wesley Dobbs**, a civic leader and the neighbourhood's unofficial mayor, to mark the avenue's standing as a national centre of African American commerce (New Georgia Encyclopedia, n.d.-a).
+
+**In 1956, *Fortune* magazine described Auburn Avenue as "the richest Negro street in the world"** (New Georgia Encyclopedia, n.d.-a). **That is a quotation from a business magazine, in a year, and it is a claim about relative wealth that nobody has ever rigorously tested.** Use it the way you would use any trade-press superlative: **as evidence of reputation, not of measured wealth.** Attribute it every time.
+
+## The founding transaction, which is worth studying on its own
+
+**Alonzo Franklin Herndon** was born **June 26, 1858** in Walton County, Georgia and was emancipated at the age of seven in **1865**. He opened his first barbershop in Jonesboro around **1878**, arrived in Atlanta in early **1883**, and by **1904** owned three Atlanta shops, the Peachtree Street one fitted with crystal chandeliers and gold fixtures (New Georgia Encyclopedia, n.d.-b).
+
+**Then, in 1905, he bought a failing mutual aid association.** The New Georgia Encyclopedia is precise about the circumstance: **the state of Georgia had raised capital requirements for such businesses**, which is what put the association in trouble and what made it available (New Georgia Encyclopedia, n.d.-b). Herndon incorporated it as the **Atlanta Mutual Insurance Association with assets of 5,000 dollars**.
+
+**Read that as a business school case and it is remarkable.** A regulatory change destroys a category of small mutual aid associations. **A barber with cash buys one of the casualties and runs it as a real insurance company.** He is not a beneficiary of the rule and he is not a victim of it. **He is the person who was liquid at the moment the rule bit**, and that is a repeatable observation about how ownership changes hands under regulation.
+
+**By 1922 the association's assets had grown to over 400,000 dollars**, and in that year it was reorganised as the **Atlanta Life Insurance Company**, achieving **legal reserve status**, one of just five Black-owned insurance companies then to hold it (New Georgia Encyclopedia, n.d.-b).
+
+**Legal reserve status is the technical heart of this lesson.** A legal reserve company must hold assets calculated against its future obligations, on terms a state regulator enforces. **It is expensive, it is a barrier to entry, and it is a certificate of solvency.** Only five Black-owned insurers had cleared it by 1922. **That number is small because the barrier is high, not because ambition was scarce**, and Section 4 works the point properly.
+
+**Herndon also owned real estate: over 100 houses, a large commercial block on Auburn Avenue and an estate in Tavares, Florida, with his real estate assessed at nearly 325,000 dollars at his death on July 21, 1927.** His only child, **Norris**, succeeded him as chief executive (New Georgia Encyclopedia, n.d.-b).
+
+## The three-legged stool
+
+Historian **Gary Pomerantz** called Atlanta's Black finance sector a "three-legged stool," and the New Georgia Encyclopedia names the legs: **Atlanta Life**, founded by Herndon in **1905**; **Standard Life**, formed by **Heman Perry**; and **Citizens Trust Bank**, which extended credit to Black homeowners and entrepreneurs (New Georgia Encyclopedia, n.d.-a).
+
+**Standard Life's date is disputed.** The New Georgia Encyclopedia gives **1911**; other accounts give **1913** and describe it as the first Black-owned legal reserve insurance company in Atlanta. **Carry both.**
+
+**Citizens Trust Bank opened on Auburn Avenue on August 16, 1921**, founded by **Heman E. Perry, James A. Robinson, Thomas J. Ferguson, W. H. King and Henry Dugas**, a group known as the Fervent Five (Georgia Historical Society, n.d.). **By 1922 Perry's group of enterprises, including Standard Life, Citizens Trust and the Service Company, held 22 million dollars in insurance and 2 million dollars in assets.**
+
+## The press and the rest of layer 4
+
+The ***Atlanta Daily World*** was founded as the *Atlanta World* by **W. A. Scott II on August 5, 1928** and became a daily in **1932**, with offices on Auburn Avenue (New Georgia Encyclopedia, n.d.-c). **Ebenezer Baptist Church** and **Big Bethel African Methodist Episcopal Church** anchored the religious layer, and the **NAACP, the Odd Fellows, the Masons and the National Urban League** all kept offices on the avenue (New Georgia Encyclopedia, n.d.-a). Entertainment ran through the **Royal Peacock**, formerly the Top Hat Club (New Georgia Encyclopedia, n.d.-a).
+
+**Notice that the fraternal orders kept OFFICES here rather than owning the whole district**, which is a real difference from Richmond. **The same five institutions, arranged differently.** That is what it looks like when a pattern is real rather than copied.
+
+## Designation and the highway
+
+**Auburn Avenue was designated a national historic landmark district in 1976**, covering about **19 acres**, and **the Downtown Connector highway bisected the street**, contributing to its decline after the civil rights era (New Georgia Encyclopedia, n.d.-a).
+
+**Nineteen acres.** Hold that number against the avenue that *Fortune* called the richest Negro street in the world twenty years earlier. **The designated district and the working district are not the same size**, and Section 1 told you to ask who drew the line and when.
+
+## Sources
+- Georgia Historical Society. (n.d.). *Citizens Trust Bank* [Historical marker]. https://www.georgiahistory.com/ghmi_marker_updated/citizens-trust-bank/
+- New Georgia Encyclopedia. (n.d.-a). *Auburn Avenue (Sweet Auburn)*. https://www.georgiaencyclopedia.org/articles/counties-cities-neighborhoods/auburn-avenue-sweet-auburn/
+- New Georgia Encyclopedia. (n.d.-b). *Alonzo Herndon (1858-1927)*. https://www.georgiaencyclopedia.org/articles/business-economy/alonzo-herndon-1858-1927/
+- New Georgia Encyclopedia. (n.d.-c). *Atlanta Daily World*. https://www.georgiaencyclopedia.org/articles/arts-culture/atlanta-daily-world/`,
+      recallContent: [
+        {
+          prompt: "Which Richmond bank was chartered first, and which opened first?",
+          answer: "The Savings Bank of the Grand Fountain of the United Order of True Reformers was chartered first, on March 2, 1888, and opened April 3, 1889. The Capital Savings Bank of Washington, D.C. opened first, on October 17, 1888. First chartered and first to open are different measures.",
+        },
+        {
+          prompt: "What three things did Maggie Lena Walker build after her August 20, 1901 announcement, and what happened to each?",
+          answer: "The St. Luke Herald newspaper, from 1902. The Saint Luke Penny Savings Bank, chartered July 28, 1903 and opened that November, which merged into Consolidated Bank and Trust around 1929 to 1930. The Saint Luke Emporium, opened April 1905 and closed 1911.",
+        },
+        {
+          prompt: "Why did the Saint Luke Emporium close, and why must both causes be reported?",
+          answer: "Organised opposition from white retailers and reluctance among Black consumers to shop there. Reporting only the first tells a comfortable story about an external enemy; reporting only the second tells an uglier and equally incomplete one. The record says both.",
+        },
+        {
+          prompt: "Jackson Ward's cast-iron porches are described as the richest display of ornamental ironwork in Virginia. What does that prove about the local economy?",
+          answer: "That the ironwork was manufactured locally, which implies foundries, patterns, moulders and a delivery trade. Ornament is evidence of a supply chain.",
+        },
+        {
+          prompt: "What are the two competing accounts of the Consolidated Bank and Trust merger?",
+          answer: "Encyclopedia Virginia dates it to 1930 as a merger of three banks. Other accounts describe two stages: St. Luke merging with Second Street Savings in late 1929, with Commercial Bank and Trust folding in about two years later. The course reports both.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-tulsa",
+      title: "10 · Tulsa: Greenwood",
+      section: "Section 3 · Five districts",
+      body: `Greenwood is the district everybody has heard of, which is exactly why it is the hardest one to teach honestly. **Almost everything you already know about it came to you attached to what happened in 1921.** This lesson does what the course promised: **it reads Greenwood as an economy first**, from the directory, and it names the year 1921 in its proper place rather than as a frame around everything.
+
+## The city Greenwood grew inside
+
+Tulsa was small and then it was not. **Its population ran 1,390 in 1900, 18,182 in 1910 and 72,075 in 1920**, and by 1920 the city hosted **over 400 petroleum companies** (Oklahoma Historical Society, n.d.). **The Greenwood District held about 11,000 residents in 1920** (Oklahoma Historical Society, n.d.).
+
+**That is an oil boom town, and a boom town is a specific economic environment**: wages are high, labour is short, housing is scarce, and money moves. **Greenwood was not built in a quiet place. It was built inside one of the fastest growing local economies in the country**, which is part of why it grew as fast as it did.
+
+**The legal environment was equally specific.** Oklahoma's first legislative action upon statehood, **Senate Bill One**, formalised segregation between African Americans and whites throughout the state (Oklahoma Historical Society, n.d.). **Both facts at once: a boom, and a statute.**
+
+## The founder, and the land transaction
+
+**O. W. Gurley** came to Oklahoma during the **1889 Land Run**, moved to Tulsa in **1906**, and **purchased 40 acres along the Frisco railroad tracks in north Tulsa**, where he built a rooming house and other structures (Oklahoma Historical Society, n.d.). He sold to Black buyers.
+
+**Forty acres, bought and subdivided, is the origin of the district**, and it is the plainest example in this course of the fifth capital strategy in Section 4: **when you cannot borrow to build, buy the land and sell it to people who cannot buy land anywhere else.**
+
+## The 1921 directory, read as an economy
+
+The Tulsa City-County Library's Black Wall Street exhibit publishes a breakdown of Greenwood in **1921**. **Read it as layers, the way lesson 2 taught you.**
+
+| Layer | Count | Detail |
+|---|---|---|
+| **Businesses** | **108** | 41 grocery and meat markets, 30 restaurants, 11 boarding and rooming houses, 9 billiard halls, 5 hotels |
+| **Professionals** | **33** | 15 physicians and surgeons, 6 real estate, loan and insurance agents, 4 pharmacists, 3 lawyers, 2 dentists |
+| **Skilled crafts** | **24** | 10 tailors, 5 building contractors and painters, 4 shoemakers |
+| **Service workers** | **26** | 12 barbers, 6 shoe shiners, 5 clothes cleaning shops |
+
+(Tulsa City-County Library, n.d.)
+
+**Three observations a careful reader gets from that table.**
+
+**1. Forty-one grocery and meat markets for about 11,000 people is a high density.** That is layer 1 saturated. **A resident could buy food without leaving.**
+
+**2. Six real estate, loan and insurance agents is the layer 4 signal.** Not a bank on this list, but **agents**: people writing insurance and arranging loans. **That is a district connected to outside capital markets through intermediaries**, which is a different structure from Durham's, where the capital institutions were locally chartered and locally owned.
+
+**3. Fifteen physicians and surgeons is a lot for 11,000 people.** Doctors go where they can be paid. **Fifteen of them is a statement about disposable income.**
+
+## The name, and why it needs a hedge
+
+**"Black Wall Street" is usually attributed to Booker T. Washington**, who is said to have called Greenwood "the Negro Wall Street of America" during a visit. **The Oklahoma Historical Society hedges: "Booker T. Washington may have given Greenwood its nickname"** (Oklahoma Historical Society, n.d.), and the Tulsa City-County Library attributes the account to the author and educator **Eddie Faye Gates** (Tulsa City-County Library, n.d.).
+
+**When two institutional sources hedge, you hedge.** Write "is often attributed to" and cite the hedge. **Do not write "Booker T. Washington named it" as though it were established**, because the sources closest to the material decline to say so.
+
+**And note that Durham has a competing origin story for the same phrase.** North Carolina accounts date the Durham nickname to the district's national reputation, and some date the phrase itself to the **1950s** (NCpedia, n.d.-c). **Two cities, one phrase, contested attribution in both. That is a finding, and it is more interesting than either origin story.**
+
+## 1921, named plainly and in one place
+
+On May 31 and June 1, 1921, a white mob destroyed the district. **This course is not the course that teaches that event**, and it will not summarise it in a paragraph, because a paragraph would be an insult to the scholarship. **The Oklahoma Commission to Study the Tulsa Race Riot of 1921 was authorised by the state legislature in 1997 and submitted its report on February 28, 2001.** Read the report.
+
+**Two business facts from the aftermath belong in this course, because they are about capital.**
+
+1. **Tulsans filed roughly 1,400 lawsuits for over 4 million dollars in property loss**, and between **June 14, 1921 and June 6, 1922** filed riot-related claims against the city for over **1.8 million dollars**. **The city commission disallowed most of them** (Justice for Greenwood, n.d.; Tulsa Reparations Coalition, n.d.).
+2. **Most insurance policies carried a riot clause excluding losses from riot and civil commotion, and insurers refused to pay** (Justice for Greenwood, n.d.).
+
+**Read the second one as an insurance lesson, because that is what it is.** A riot exclusion is standard commercial language. **The clause was not written for Greenwood, and it destroyed Greenwood's ability to recapitalise anyway.** That is how ordinary contract terms produce extraordinary outcomes when applied to a group that ordinary institutions have already sorted out, and it is a better lesson than any amount of adjectives.
+
+## And then it was rebuilt, which is a fact and not a consolation
+
+**By 1942 Greenwood held 242 Black-owned and Black-operated business establishments** (Philadelphia Tribune, n.d.). That is **more than the 108 counted in 1921**.
+
+**Say what that does and does not mean.** It means people rebuilt a district, without meaningful insurance payment or city compensation, and made it larger than before. **It does not mean the loss was made good.** The rule from lesson 1 applies at full force here: **242 in 1942 does not offset anything at all about 1921.** It is a separate fact about a later decade, and it is a real achievement that deserves to be stated as one.
+
+**In the late 1960s, highway construction and urban renewal took much of what had been rebuilt** (Smithsonian Magazine, 2021). **That is the third thing on the same calendar.**
+
+## Sources
+- Justice for Greenwood. (n.d.). *Denial of insurance claims*. https://www.justiceforgreenwood.org/denial-of-insurance-claims/
+- NCpedia. (n.d.-c). *Black Wall Street, Durham, North Carolina*. https://www.ncpedia.org/black-wall-street-durham-north-carolina
+- Oklahoma Historical Society. (n.d.). *Tulsa and Black Wall Street*. https://www.okhistory.org/learn/trm1
+- Philadelphia Tribune. (n.d.). *Greenwood rebuilt: Why then did it collapse?* https://www.phillytrib.com/special_sections/black_history/greenwood-rebuilt-why-then-did-it-collapse/article_fdc3ff8d-485b-5871-ab5a-3da41208794e.html
+- Smithsonian Magazine. (2021). *Decades after the Tulsa race massacre, urban renewal sparked Black Wall Street's second destruction*. https://www.smithsonianmag.com/history/black-wall-streets-second-destruction-180977871/
+- Tulsa City-County Library. (n.d.). *Black Wall Street*. https://www.tulsalibrary.org/black-wall-street
+- Tulsa Reparations Coalition. (n.d.). *Riot property loss*. https://tulsareparations.z19.web.core.windows.net/Property.htm`,
+      recallContent: [
+        {
+          prompt: "What was the founding transaction of Atlanta Life, and why is it worth studying?",
+          answer: "In 1905 Alonzo Herndon bought a failing mutual aid association that Georgia's raised capital requirements had put in trouble, and incorporated it as the Atlanta Mutual Insurance Association with assets of 5,000 dollars. He was the person who was liquid at the moment the rule bit.",
+        },
+        {
+          prompt: "What is legal reserve status and why does it matter that only five Black-owned insurers held it by 1922?",
+          answer: "A legal reserve company must hold assets calculated against future obligations on terms a state regulator enforces. It is expensive, a barrier to entry, and a certificate of solvency. Five is small because the barrier is high, not because ambition was scarce.",
+        },
+        {
+          prompt: "How should the 1956 Fortune quotation about Auburn Avenue be used?",
+          answer: "As evidence of reputation, not of measured wealth. It is a trade-press superlative from a named magazine in a named year, and it should be attributed every time.",
+        },
+        {
+          prompt: "Name the three legs of Atlanta's three-legged stool of Black finance, and the date dispute in one of them.",
+          answer: "Atlanta Life, founded by Herndon in 1905; Standard Life, formed by Heman Perry, dated 1911 by the New Georgia Encyclopedia and 1913 by other accounts; and Citizens Trust Bank, opened August 16, 1921.",
+        },
+        {
+          prompt: "Auburn Avenue's national historic landmark district covers about 19 acres. What should that prompt you to ask?",
+          answer: "Who drew the line, and when. The designated district and the working district are not the same size, and the designation came in 1976, after the Downtown Connector bisected the street.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-chicago",
+      title: "11 · Chicago: Bronzeville and the Black Metropolis",
+      section: "Section 3 · Five districts",
+      body: `Chicago is the largest of the five and the one where the capital institutions grew biggest, failed hardest, and left the most standing.
+
+## The demand side, which is where a Northern district differs from a Southern one
+
+**Chicago's Black population ran 323 in 1850, 955 in 1860, 3,691 in 1870, 30,050 in 1900 and 109,548 in 1920, with 148 percent growth in the single decade from 1910 to 1920** (National Park Service, n.d.). By 1930 it stood at **233,903**.
+
+**Read those numbers as a business would.** A district whose customer base grows 148 percent in ten years has a demand problem and a supply problem at once: **enough new customers to support any number of new firms, and nowhere legal to put them.** The National Park Service describes the Black Belt as a narrow strip **from Van Buren Street to Thirty-ninth Street, nearly five miles long**, hemmed by rail yards and industrial property on the west (National Park Service, n.d.).
+
+**A rapidly growing population inside a fixed boundary is the single most profitable and most exploitative condition in real estate**, and it is why real estate men, rather than merchants, became the biggest figures in this district. **That is a structural observation, not a character judgment.**
+
+## Jesse Binga
+
+**Jesse Binga founded Chicago's first Black-owned bank in 1908**, which the National Park Service places at **3633 South State Street** and other accounts place at the southeast corner of State and 36th (National Park Service, n.d.). **It began as a private bank and obtained a state charter in 1921**, becoming the **Binga State Bank**. He also built the **Binga Arcade** later in the 1920s.
+
+**On July 31, 1930, Illinois bank auditors closed the Binga State Bank**, alleging insolvency and accounting irregularities; by that July the bank had suspended lending. Binga was later charged with embezzlement.
+
+## Anthony Overton
+
+**Anthony Overton commissioned the Overton Hygienic Building in 1922 at 3619 to 3627 South State Street**, described by the National Park Service as intended as "a monument to Negro thrift and industry" (National Park Service, n.d.). **He ran a cosmetics manufacturer, a bank, an insurance company and a newspaper**, several of them from that building.
+
+**The Douglass National Bank** operated out of it and **claimed about 64,000 depositors residing in 30 states** and to be the largest Black-owned bank in America (National Park Service, n.d.). **Note the word "claimed", which is the source's own word.**
+
+**Three disagreements about Douglass National, and you should carry all three.**
+1. **Founding year: 1922 or 1923**, depending on the account.
+2. **Whether it was the first or the second nationally chartered Black-owned bank.** Some sources say first; BlackPast describes it as the second.
+3. **Its end.** Accounts place its closure in **1932**, alongside Overton's **Victory Life Insurance Company**.
+
+**What is NOT in dispute and is the point:** **a national charter is a federal instrument, and holding one put a Black-owned bank inside the national banking system rather than only a state one.** That is a structural fact worth more than the first-or-second argument.
+
+## Supreme Life, the one that lasted
+
+**Frank L. Gillespie incorporated the Liberty Life Insurance Company in Chicago in 1919.** It moved in **1921** into the second floor of a building at **3501 South Dr. Martin Luther King Jr. Drive** designed by architect **Albert Anis** and originally built for the Roosevelt State Bank, and **bought the whole building in 1924**. In **1929** it merged with **Supreme Life and Northeastern Life** to form the **Supreme Life Insurance Company of America**, and it was **one of the few major Black Metropolis businesses to survive the Great Depression** (City of Chicago, n.d.).
+
+**In 1950 the company modernised the building by covering its original classical facade with porcelain-metal panels** (City of Chicago, n.d.).
+
+**That last sentence is a small gift to a careful reader.** A firm that spends money re-skinning its headquarters in the fashionable material of its decade is a firm **behaving like every other mid-century American corporation**. **That is what "it survived" actually looks like on a building**, and it is a better piece of evidence than any adjective.
+
+## What is designated, and it is a lot
+
+**On September 9, 1998 the City of Chicago designated nine properties as the Black Metropolis-Bronzeville District:** the **Overton Hygienic Building**, the **Chicago Bee Building**, the **Wabash Avenue YMCA**, the **Chicago Defender Building**, **Unity Hall**, the **Eighth Regiment Armory**, the **Sunset Cafe**, the **Victory Monument** and the **Supreme Life Building** (City of Chicago, n.d.). **Eight buildings and one monument had been nominated to the National Register in the mid-1980s** as, in the National Park Service's words, among the most significant landmarks of Black urban history in the United States (National Park Service, n.d.).
+
+**The Wabash Avenue YMCA opened in 1914 with support from Julius Rosenwald of Sears** (National Park Service, n.d.). **That is outside philanthropy inside the capital chain**, and it is worth noticing that it appears here and not in the Southern districts in this course.
+
+## What happened to the rest
+
+**Urban renewal in the 1950s and 1960s demolished significant blocks for public housing and for the Illinois Institute of Technology campus** (National Park Service, n.d.).
+
+**Set that beside the Indiana Avenue course's finding about a university assembling land in Indianapolis and you have two cities, two universities and the same instrument.** This course does not teach that instrument. It teaches the thing the instrument was applied to. **Both courses are describing one calendar.**
+
+## Sources
+- City of Chicago. (n.d.). *Supreme Life Building* [Chicago landmark record]. https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1431
+- Drake, S. C., & Cayton, H. R. (1945). *Black metropolis: A study of Negro life in a Northern city*. Harcourt, Brace.
+- National Park Service. (n.d.). *Chicago's Black metropolis: Understanding history through a historic place* [Teaching with Historic Places]. https://www.nps.gov/articles/chicago-s-black-metropolis-understanding-history-through-a-historic-place-teaching-with-historic-places.htm`,
+      recallContent: [
+        {
+          prompt: "Give the 1921 Greenwood counts by layer.",
+          answer: "108 businesses including 41 grocery and meat markets, 30 restaurants, 11 boarding and rooming houses, 9 billiard halls and 5 hotels; 33 professionals including 15 physicians and surgeons; 24 skilled craftspeople; and 26 service workers.",
+        },
+        {
+          prompt: "Why must the attribution of 'Black Wall Street' to Booker T. Washington be hedged?",
+          answer: "The Oklahoma Historical Society writes that he 'may have' given Greenwood the nickname, and the Tulsa City-County Library attributes the account to the author and educator Eddie Faye Gates. Durham has a competing origin story for the same phrase, with some accounts dating it to the 1950s.",
+        },
+        {
+          prompt: "What did the riot clause in Greenwood property insurance policies do, and why is it an insurance lesson?",
+          answer: "It excluded losses from riot and civil commotion, so insurers refused to pay. The clause was standard commercial language, not written for Greenwood, and it destroyed the district's ability to recapitalise anyway.",
+        },
+        {
+          prompt: "Greenwood held 242 Black-owned businesses by 1942. State what that does and does not mean.",
+          answer: "It means people rebuilt the district without meaningful insurance payment or city compensation and made it larger than before, which is a real achievement. It does not offset anything at all about 1921. It is a separate fact about a later decade.",
+        },
+        {
+          prompt: "What was O. W. Gurley's founding transaction, and which capital strategy does it illustrate?",
+          answer: "He moved to Tulsa in 1906 and bought 40 acres along the Frisco tracks, then sold to Black buyers. When you cannot borrow to build, buy the land and sell it to people who cannot buy land anywhere else.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-quiz-districts",
+      title: "12 · Quiz: the five districts",
+      section: "Section 3 · Five districts",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Parrish Street and Hayti in Durham should be kept apart because:",
+            options: [
+              "One was in Durham County and the other was not",
+              "Parrish Street was Black owned and Hayti was not",
+              "They were designated as historic districts in different decades, by different agencies, under different criteria",
+              "Parrish Street was the financial and office district; Hayti was the residential, retail and cultural one",
+            ],
+            correctIndex: 3,
+            explanation: "They were taken by different processes, so merging them gets the urban renewal history wrong.",
+            sourceLessonSlug: "wtb-durham",
+          },
+          {
+            prompt: "Du Bois reported Mechanics and Farmers Bank holding $17,000 deposited by 500 different persons. The point of that figure is:",
+            options: [
+              "The bank was undercapitalised and about to fail",
+              "An average of about 34 dollars a person, so it was people of modest means pooling",
+              "The deposits were mostly from outside Durham",
+              "Five hundred was an unusually large number of depositors for a Southern bank of that period",
+            ],
+            correctIndex: 1,
+            explanation: "Alongside a paid-in capital of 11,000 dollars, that is the entire economics of Section 4 in one line.",
+            sourceLessonSlug: "wtb-durham",
+          },
+          {
+            prompt: "Durham's Triumvirate were John Merrick, Aaron M. Moore and Charles C. Spaulding. Merrick's trade was:",
+            options: ["Physician", "Barber", "Lawyer", "Undertaker and funeral director"],
+            correctIndex: 1,
+            explanation: "Merrick was a barber and president; Moore was a physician, medical director and treasurer; Spaulding was general manager.",
+            sourceLessonSlug: "wtb-durham",
+          },
+          {
+            prompt: "The correct handling of Du Bois's explanation for Durham's success is to:",
+            options: [
+              "Repeat it as the established cause",
+              "Ignore it, since Du Bois was not an economist",
+              "Treat it as an interpretive frame with an author and a date, quote it, and engage it",
+              "Replace it with a modern scholarly explanation without mentioning that Du Bois said anything",
+            ],
+            correctIndex: 2,
+            explanation: "He credits three founders and then credits ordinary white Durham for leaving Black enterprise alone. That is a case being made in 1912, not a finding.",
+            sourceLessonSlug: "wtb-durham",
+          },
+          {
+            prompt: "The True Reformers bank was chartered March 2, 1888 and opened April 3, 1889; Capital Savings Bank of Washington, D.C. opened October 17, 1888. Which was the first Black-owned bank?",
+            options: [
+              "True Reformers, because a charter is what creates a bank",
+              "Capital Savings, because opening is what makes a bank real",
+              "Both, depending on whether you measure chartering or opening",
+              "Neither claim can be checked because the records of both institutions were destroyed",
+            ],
+            correctIndex: 2,
+            explanation: "First chartered and first to open are different measures, and the honest sentence names which one it means.",
+            sourceLessonSlug: "wtb-richmond",
+          },
+          {
+            prompt: "On August 20, 1901 Maggie Lena Walker announced she would build:",
+            options: [
+              "A hospital, a school and a library",
+              "A bank, a newspaper and a department store",
+              "A bank, a hotel and an insurance company",
+              "A newspaper, a printing plant and a chain of neighbourhood grocery stores",
+            ],
+            correctIndex: 1,
+            explanation: "She built all three: the St. Luke Herald from 1902, the Saint Luke Penny Savings Bank chartered July 28, 1903, and the Saint Luke Emporium from April 1905.",
+            sourceLessonSlug: "wtb-richmond",
+          },
+          {
+            prompt: "Encyclopedia Virginia gives two causes for the Saint Luke Emporium closing in 1911. They are:",
+            options: [
+              "A fire and an uninsured loss",
+              "The 1907 financial panic and a rent increase",
+              "Organised white retailer opposition, and Black consumer reluctance to shop there",
+              "Competition from a larger department store that opened two blocks away in 1909 and undercut its prices",
+            ],
+            correctIndex: 2,
+            explanation: "Both halves belong in the account. Reporting only one tells an incomplete story in either direction.",
+            sourceLessonSlug: "wtb-richmond",
+          },
+          {
+            prompt: "Alonzo Herndon was able to buy the mutual aid association that became Atlanta Life in 1905 because:",
+            options: [
+              "Georgia had raised capital requirements for such businesses, which put it in trouble",
+              "Its founder had died without an heir",
+              "He won a lawsuit against its directors",
+              "The state insurance commissioner ordered it sold to a Black owner as a condition of its licence",
+            ],
+            correctIndex: 0,
+            explanation: "He was the person who was liquid at the moment the rule bit. He incorporated it with assets of 5,000 dollars, grown to over 400,000 by 1922.",
+            sourceLessonSlug: "wtb-atlanta",
+          },
+          {
+            prompt: "Legal reserve status, which Atlanta Life gained in 1922, means:",
+            options: [
+              "The company was legally required to reserve seats on its board for policyholders",
+              "The company was exempt from state insurance regulation",
+              "The company had reserved the legal right to refuse claims from outside its home state",
+              "Assets held against future obligations, enforced by a state regulator",
+            ],
+            correctIndex: 3,
+            explanation: "It is expensive, it is a barrier to entry and it is a certificate of solvency. Only five Black-owned insurers held it by 1922.",
+            sourceLessonSlug: "wtb-atlanta",
+          },
+          {
+            prompt: "Fortune magazine called Auburn Avenue 'the richest Negro street in the world' in 1956. This should be used as evidence of:",
+            options: [
+              "Reputation",
+              "Measured wealth",
+              "Per capita income on the avenue",
+              "The total assessed value of property inside the district boundary",
+            ],
+            correctIndex: 0,
+            explanation: "It is a trade-press superlative from a named magazine in a named year, and nobody has rigorously tested the comparison. Attribute it every time.",
+            sourceLessonSlug: "wtb-atlanta",
+          },
+          {
+            prompt: "In the 1921 Greenwood breakdown, the entry that most clearly signals layer 4 is:",
+            options: [
+              "41 grocery and meat markets",
+              "6 real estate, loan and insurance agents",
+              "5 hotels",
+              "15 physicians and surgeons practising in the district",
+            ],
+            correctIndex: 1,
+            explanation: "Agents writing insurance and arranging loans mean a district connected to outside capital markets through intermediaries, a different structure from Durham's locally chartered institutions.",
+            sourceLessonSlug: "wtb-tulsa",
+          },
+          {
+            prompt: "Why does this course hedge the attribution of 'Black Wall Street' to Booker T. Washington?",
+            options: [
+              "Because the Oklahoma Historical Society itself writes that he 'may have' given Greenwood the nickname",
+              "Because Washington never visited Oklahoma",
+              "Because the phrase is offensive",
+              "Because the phrase does not appear in any printed source published before the year 2000, according to the library",
+            ],
+            correctIndex: 0,
+            explanation: "The Tulsa City-County Library attributes the account to the educator Eddie Faye Gates, and Durham has a competing origin story for the same phrase.",
+            sourceLessonSlug: "wtb-tulsa",
+          },
+          {
+            prompt: "Greenwood property owners were largely unable to recover their 1921 losses because:",
+            options: [
+              "They had no insurance at all",
+              "Oklahoma had no insurance regulator",
+              "The federal government assumed responsibility for the claims and then declined to process any of them",
+              "Most policies carried a riot clause excluding riot and civil commotion, so insurers refused to pay",
+            ],
+            correctIndex: 3,
+            explanation: "A riot exclusion is standard commercial language. It was not written for Greenwood and it destroyed Greenwood's ability to recapitalise anyway.",
+            sourceLessonSlug: "wtb-tulsa",
+          },
+          {
+            prompt: "Greenwood held 242 Black-owned business establishments by 1942, more than in 1921. The correct reading is:",
+            options: [
+              "The rebuilding shows the loss was eventually made good",
+              "The 1921 figures must have been undercounted",
+              "A separate achievement in a later decade, which offsets nothing about 1921",
+              "The district recovered because the city eventually paid the disallowed claims",
+            ],
+            correctIndex: 2,
+            explanation: "People rebuilt without meaningful insurance payment or city compensation and made the district larger. That is a real achievement and it is not a consolation.",
+            sourceLessonSlug: "wtb-tulsa",
+          },
+          {
+            prompt: "Chicago's Black population grew 148 percent between 1910 and 1920 inside a narrow strip about five miles long. The business consequence was:",
+            options: [
+              "Rapidly growing demand inside a fixed boundary, which made real estate the dominant business",
+              "A shortage of customers",
+              "An oversupply of housing",
+              "A collapse in rents, as landlords competed for a limited number of newly arriving tenants each year",
+            ],
+            correctIndex: 0,
+            explanation: "That condition is the most profitable and most exploitative in real estate, and it is why real estate men rather than merchants became the biggest figures in the district.",
+            sourceLessonSlug: "wtb-chicago",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
