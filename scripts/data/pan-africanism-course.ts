@@ -174,8 +174,8 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "Pan-Africanism bundles two distinct claims. Which pair states them correctly?",
             options: [
-              "The solidarity claim (Black people everywhere share each other's concerns) and the unity project (that solidarity should be organized, up to united African states)",
-              "The scholarship claim (re-center analysis on Africa) and the paradigm claim (lenses are debatable)",
+              "The solidarity claim (Black people everywhere share concerns) and the unity project (organized unity of states)",
+              "The scholarship claim (re-center all analysis on Africa) and the paradigm claim (the lens itself is debatable)",
               "The emigration claim (everyone must return to Africa) and the theology claim (redemption is divinely scheduled)",
               "The trade claim (Africa should industrialize) and the border claim (colonial borders must be redrawn immediately)",
             ],
@@ -187,10 +187,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "Why does the course say the pan-African idea was largely invented OUTSIDE Africa?",
             options: [
-              "The slave trade's captives were Asante, Kongo, Yoruba, Wolof, 'African' as an identity was forged in the diaspora, where origin-differences had been erased, and then traveled back",
-              "Because no one on the continent was interested in politics before 1900",
-              "Because European colonizers invented the idea and exported it",
-              "Because the word 'Africa' did not exist until the twentieth century",
+              "'African' as an identity was forged in the diaspora, where origin-differences were erased, then traveled back",
+              "Because nobody on the African continent took any interest in politics or in organization before the year 1900",
+              "Because European colonizers invented the idea at the Berlin Conference and exported it to their own colonies",
+              "Because the word 'Africa' did not exist in any language until the opening decades of the twentieth century",
             ],
             correctIndex: 0,
             explanation:
@@ -200,10 +200,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "How is Pan-Africanism different from Afrocentricity?",
             options: [
-              "Pan-Africanism is a political project of organized unity; Afrocentricity is a specific, contested scholarly paradigm (taught separately on this platform)",
-              "They are two spellings of the same movement",
-              "Afrocentricity is the older, broader political movement; Pan-Africanism is a branch of it",
-              "Pan-Africanism concerns only ancient history; Afrocentricity only modern politics",
+              "Pan-Africanism is a political project of organized unity; Afrocentricity is a contested scholarly paradigm",
+              "They are simply two spellings of the same single movement, one British usage and one American usage",
+              "Afrocentricity is the older and broader political movement; Pan-Africanism is one small branch of it",
+              "Pan-Africanism concerns only ancient African history; Afrocentricity concerns only modern party politics",
             ],
             correctIndex: 0,
             explanation:
@@ -213,10 +213,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "What distinguished Paul Cuffe's 1815-16 voyage from the American Colonization Society's project?",
             options: [
-              "Cuffe's was emigration chosen and financed by a Black shipowner; the ACS was a white-led scheme many of whose backers wanted free Black people removed from the US",
-              "Cuffe worked for the ACS as its first sea captain",
-              "The ACS project was run entirely by Black churches",
-              "There was no difference; both were branches of the same organization",
+              "Cuffe's was emigration chosen and financed by a Black shipowner; the ACS was a white-led removal scheme",
+              "Cuffe sailed as the American Colonization Society's first sea captain and recruited its early settlers",
+              "The American Colonization Society's project was run entirely by Black churches in Philadelphia",
+              "There was no difference; both voyages were branches of the same Rhode Island shipping organization",
             ],
             correctIndex: 0,
             explanation:
@@ -226,10 +226,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "What happened at Richard Allen's Bethel AME Church in Philadelphia in January 1817?",
             options: [
-              "Some three thousand free Black people rejected ACS colonization, resolving never to 'separate ourselves voluntarily from the slave population in this country'",
-              "The first Pan-African Conference was held there",
-              "The congregation voted to fund the ACS's first ship",
-              "Martin Delany announced his Niger Valley expedition",
+              "Some three thousand free Black people rejected ACS colonization, refusing to leave the enslaved behind",
+              "The first Pan-African Conference met there before moving on to Westminster Town Hall in London",
+              "The congregation voted to fund the American Colonization Society's first ship to Sierra Leone",
+              "Martin Delany announced his Niger Valley expedition there and signed the Abeokuta agreement",
             ],
             correctIndex: 0,
             explanation:
@@ -239,10 +239,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "Which honest complication does the course attach to Liberia (settled 1822, independent 1847)?",
             options: [
-              "The Americo-Liberian settler class dominated the territory's indigenous peoples for more than a century, the returnees built their own hierarchy",
-              "Liberia was never actually settled by anyone from the Americas",
-              "Liberia immediately joined the British Empire",
-              "The settlers all returned to the United States by 1850",
+              "The Americo-Liberian settler class dominated the territory's indigenous peoples for a century",
+              "Liberia was never actually settled by anyone from the Americas, despite what the name suggests",
+              "Liberia immediately joined the British Empire as a protectorate governed from Freetown",
+              "The settlers all returned to the United States by 1850, leaving the coastal colony abandoned",
             ],
             correctIndex: 0,
             explanation:
@@ -252,10 +252,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "What is Ethiopianism?",
             options: [
-              "The conviction, anchored on Psalm 68:31, that Africa had a divinely appointed redemption coming and the diaspora would help deliver it",
-              "The foreign policy of the Ethiopian empire in the nineteenth century",
-              "A scholarly paradigm coined by Molefi Kete Asante",
-              "The doctrine that all Black churches must relocate to Ethiopia",
+              "The conviction, anchored on Psalm 68:31, that Africa had a divinely appointed redemption coming",
+              "The foreign policy doctrine the Ethiopian empire pursued through the whole nineteenth century",
+              "A scholarly paradigm coined by Molefi Kete Asante at Temple University in the 1980s",
+              "The doctrine that every Black church was obliged to relocate its congregation to Ethiopia",
             ],
             correctIndex: 0,
             explanation:
@@ -265,10 +265,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "Edward Wilmot Blyden's signature idea was:",
             options: [
-              "The 'African personality', a distinct African civilizational character, meaning development must grow from African institutions rather than imported ones",
-              "That Africans should assimilate completely into European culture",
-              "That emigration to Africa should be banned",
-              "That the Bible should not be read in African churches",
+              "The 'African personality', a distinct African civilizational character to build upon",
+              "That Africans should assimilate completely into European culture and abandon their own",
+              "That emigration to Africa should be banned and the diaspora should stay where it was",
+              "That the Bible should never be read or preached inside African churches in any language",
             ],
             correctIndex: 0,
             explanation:
@@ -278,10 +278,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "Which documented flaw in Blyden does the course teach alongside his contribution?",
             options: [
-              "His writings disparaged mixed-race elites with a race-purity edge (while he also admired Islam's reach despite serving Christian institutions)",
-              "He fabricated his Liberian diplomatic career",
+              "His writings disparaged mixed-race elites with a race-purity edge that he never dropped",
+              "He fabricated his entire Liberian diplomatic career and never held any office there",
               "He secretly worked for the American Colonization Society's removal agenda his whole life",
-              "He opposed all education for Africans",
+              "He opposed all formal education for Africans and campaigned to close the mission schools",
             ],
             correctIndex: 0,
             explanation:
@@ -291,10 +291,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "Who convened the first Pan-African Conference, and when and where did it meet?",
             options: [
-              "Henry Sylvester Williams, a Trinidadian law student, 23-25 July 1900, Westminster Town Hall, London",
-              "W. E. B. Du Bois, February 1919, Paris",
+              "Henry Sylvester Williams, July 1900, Westminster Town Hall, London",
+              "W. E. B. Du Bois, February 1919, the Grand Hotel, Paris, France",
               "Marcus Garvey, August 1920, Madison Square Garden, New York",
-              "Kwame Nkrumah, October 1945, Manchester",
+              "Kwame Nkrumah, October 1945, Chorlton Town Hall, Manchester",
             ],
             correctIndex: 0,
             explanation:
@@ -304,10 +304,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "What role did W. E. B. Du Bois play at the 1900 conference?",
             options: [
-              "He chaired the committee that drafted the closing 'Address to the Nations of the World,' with its warning that 'the problem of the Twentieth Century is the problem of the colour line'",
-              "He presided over the whole conference as its bishop",
-              "He funded the conference from his shipping fortune",
-              "He refused to attend and denounced it in print",
+              "He chaired the committee that drafted the closing 'Address to the Nations of the World'",
+              "He presided over the entire conference as its bishop and closed it with a long sermon",
+              "He funded the whole conference out of his shipping fortune and chartered the London hall",
+              "He refused to attend and denounced the whole gathering in print for years afterwards",
             ],
             correctIndex: 0,
             explanation:
@@ -317,10 +317,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "Which woman addressed the 1900 Pan-African Conference, a presence the retelling routinely forgets?",
             options: [
-              "Anna Julia Cooper, author of A Voice from the South (1892)",
-              "Amy Ashwood Garvey",
-              "Paulette Nardal",
-              "Ida B. Wells",
+              "Anna Julia Cooper, author of A Voice from the South",
+              "Amy Ashwood Garvey, co-founder of the UNIA in 1914",
+              "Paulette Nardal, host of the Clamart literary salon",
+              "Ida B. Wells, author of Southern Horrors, 1892",
             ],
             correctIndex: 0,
             explanation:
@@ -330,10 +330,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "Measured by immediate institutional results, the 1900 conference failed, its committees withered within two years. Why does the course teach it as a founding moment anyway?",
             options: [
-              "It created the name, the congress method (the diaspora addressing the powers as one body), and the succession, Du Bois carried the tool forward",
-              "Because it secretly governed Britain's colonies for a decade",
-              "Because Queen Victoria granted all of its petitions",
-              "Because it immediately triggered decolonization",
+              "It created the name, the congress method, and the line Du Bois carried on",
+              "Because it secretly governed Britain's African colonies for a whole decade",
+              "Because Queen Victoria received it and then granted all of its petitions",
+              "Because it immediately triggered decolonization across the whole empire",
             ],
             correctIndex: 0,
             explanation:
@@ -343,10 +343,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "What became of Henry Sylvester Williams after 1900?",
             options: [
-              "He practiced law in Cape Town, won election as a Marylebone borough councillor in 1906, returned to Trinidad, and died in 1911, aged 42, largely unremembered",
-              "He led Ghana to independence in 1957",
-              "He became the first president of Liberia",
-              "He organized the 1945 Manchester Congress",
+              "He practiced law in Cape Town, sat as a Marylebone councillor, and died in 1911",
+              "He led the Gold Coast to independence as Ghana in March 1957 and ruled it",
+              "He became the first president of the new Republic of Liberia back in 1848",
+              "He organized the 1945 Manchester Congress alongside Kwame Nkrumah there",
             ],
             correctIndex: 0,
             explanation:
@@ -356,10 +356,10 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
           {
             prompt: "Martin Delany's contribution to the emigrationist current was:",
             options: [
-              "Arguing (1852) that Black Americans were 'a nation within a nation' and leading the 1859-60 Niger Valley expedition, which signed a later-disavowed settlement agreement at Abeokuta",
-              "Founding the American Colonization Society",
-              "Serving as Liberia's first secretary of state",
-              "Writing the 'Address to the Nations of the World'",
+              "Calling Black Americans 'a nation within a nation', and the Niger Valley expedition",
+              "Founding the American Colonization Society and serving as its first paid agent",
+              "Serving as the Republic of Liberia's first secretary of state under Roberts",
+              "Writing the 1900 'Address to the Nations of the World' for the conference",
             ],
             correctIndex: 0,
             explanation:
@@ -482,10 +482,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Why did Du Bois convene the First Pan-African Congress in Paris in February 1919?",
             options: [
-              "The Versailles peace conference was redrawing the world, and he wanted the world's Black people represented in the city where it was happening",
+              "Versailles was redrawing the world and he wanted Black people represented there",
               "The French government invited the NAACP to help draft the Treaty of Versailles",
-              "It was the scheduled follow-up to the 1900 London conference",
-              "He was barred from the United States and had to meet abroad",
+              "It was the scheduled follow-up to Henry Sylvester Williams's 1900 conference",
+              "He had been barred from the United States and had to meet his delegates abroad",
             ],
             correctIndex: 0,
             explanation:
@@ -495,10 +495,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What did the 1919 Paris resolutions conspicuously NOT demand?",
             options: [
-              "Independence, they asked for international supervision of former German colonies and gradual participation in government 'as fast as their development permits'",
-              "Protection of Africans in land and labor",
-              "International supervision of the former German colonies",
-              "African participation in education",
+              "Independence; they asked for supervision and gradual participation",
+              "Protection of Africans in matters of land and of labor conditions",
+              "International supervision of the former German colonies in Africa",
+              "African participation in education and in the colonial civil service",
             ],
             correctIndex: 0,
             explanation:
@@ -508,10 +508,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Who was Blaise Diagne, and what tension did he embody by 1921?",
             options: [
-              "The Senegalese deputy in the French parliament who authorized and presided over the 1919 congress, and whose loyalty to French colonial policy put him at odds with Du Bois's radicals",
-              "A Jamaican shipping magnate who funded the Black Star Line",
-              "The bishop who presided over the 1900 London conference",
-              "The founder of the International African Service Bureau",
+              "The Senegalese deputy who presided over the 1919 Paris congress",
+              "The Jamaican shipping magnate who financed the Black Star Line",
+              "The AME bishop who presided over the 1900 London conference",
+              "The Trinidadian founder of the International African Service Bureau",
             ],
             correctIndex: 0,
             explanation:
@@ -521,9 +521,9 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "The course's honest audit of the 1919-1927 congresses concludes:",
             options: [
-              "Four congresses freed no colony and largely excluded the African masses they spoke for, but they kept the instrument alive, built the address book, and trained the argument for 1945",
-              "They achieved immediate independence for several colonies",
-              "They were secretly funded by the colonial powers",
+              "They freed no colony, but kept the instrument alive for 1945",
+              "They achieved immediate independence for several African colonies",
+              "They were secretly funded by the colonial powers themselves",
               "They had no effect of any kind and are taught only as trivia",
             ],
             correctIndex: 0,
@@ -534,10 +534,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Why did Italy's 1935 invasion of Ethiopia teach the movement that petitioning was a dead end?",
             options: [
-              "The League of Nations failed to stop Mussolini, proving the international system would not protect even an independent African state, so power had to be built, not requested",
-              "The League of Nations expelled all African members in response",
-              "Ethiopia had never been an independent state",
-              "The invasion succeeded because the diaspora ignored it",
+              "The League failed to stop Mussolini, so power had to be built, not requested",
+              "The League of Nations expelled all of its African members in response",
+              "Ethiopia had never actually been an independent African state before 1935",
+              "The invasion succeeded only because the diaspora ignored it entirely",
             ],
             correctIndex: 0,
             explanation:
@@ -547,10 +547,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Haile Selassie's June 1936 Geneva appeal is remembered for the warning 'It is us today. It will be you tomorrow.' How does the course handle that quote?",
             options: [
-              "As the standard English rendering of an address delivered in Amharic, quoted with that caveat stated",
-              "As a verbatim English sentence Selassie spoke on the BBC",
-              "As a fabrication invented decades later",
-              "As a quote from Marcus Garvey that was misattributed to Selassie",
+              "As the standard English rendering of an address delivered in Amharic",
+              "As a verbatim English sentence Selassie spoke live on the BBC in 1936",
+              "As a fabrication invented decades later by his admirers in Jamaica",
+              "As a line from Marcus Garvey that was later misattributed to Selassie",
             ],
             correctIndex: 0,
             explanation:
@@ -560,10 +560,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which set of people founded the International African Friends of Abyssinia (1935) in London?",
             options: [
-              "C. L. R. James, Amy Ashwood Garvey, T. Ras Makonnen, and Jomo Kenyatta, among others",
-              "W. E. B. Du Bois, Booker T. Washington, and Frederick Douglass",
-              "Kwame Nkrumah, Hastings Banda, and Léopold Senghor",
-              "Henry Sylvester Williams and Alexander Walters",
+              "C. L. R. James, Amy Ashwood Garvey, T. Ras Makonnen, and Jomo Kenyatta",
+              "W. E. B. Du Bois, Booker T. Washington, and Frederick Douglass in London",
+              "Kwame Nkrumah, Hastings Banda, Léopold Senghor, and Nnamdi Azikiwe",
+              "Henry Sylvester Williams, Alexander Walters, and Anna Julia Cooper",
             ],
             correctIndex: 0,
             explanation:
@@ -573,10 +573,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Why did George Padmore break with the Communist International in 1934?",
             options: [
-              "Soviet foreign policy downgraded anti-imperialism to court alliances with the colonial powers, convincing him Black liberation must be self-organized, never subordinate to Moscow",
-              "He was offered a colonial governorship by Britain",
-              "He converted to the American Colonization Society's program",
-              "He objected to the Comintern's support for African independence",
+              "Moscow downgraded anti-imperialism to court the colonial powers as allies",
+              "He was offered a colonial governorship by Britain and accepted it in 1935",
+              "He converted to the American Colonization Society's emigration program",
+              "He objected to the Comintern's early support for African independence",
             ],
             correctIndex: 0,
             explanation:
@@ -586,9 +586,9 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What did colonial subjects hear in the Atlantic Charter (1941), and what was Churchill's position?",
             options: [
-              "They heard that peoples have the right to choose their own governments and applied it to themselves; Churchill assured Parliament it was meant for Nazi-occupied Europe, not the Empire",
-              "They heard a promise of immediate independence that was honored in 1942",
-              "Nothing, the Charter was kept secret until 1960",
+              "They heard a right to choose their own government; Churchill said it meant Europe",
+              "They heard a promise of immediate independence that was duly honored in 1942",
+              "Nothing at all; the text of the Charter was kept secret until the year 1960",
               "They heard that the Empire would be expanded, and Churchill denied saying so",
             ],
             correctIndex: 0,
@@ -599,10 +599,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "When and where did the Fifth Pan-African Congress meet, and who were its joint political secretaries?",
             options: [
-              "15-21 October 1945, Chorlton-on-Medlock Town Hall, Manchester, George Padmore and Kwame Nkrumah",
-              "February 1919, Paris, Du Bois and Diagne",
-              "July 1900, Westminster Town Hall, Williams and Walters",
-              "May 1963, Addis Ababa, Nkrumah and Selassie",
+              "October 1945, Chorlton-on-Medlock Town Hall, Padmore and Nkrumah",
+              "February 1919, the Grand Hotel, Paris, Du Bois and Blaise Diagne",
+              "July 1900, Westminster Town Hall, London, Williams and Walters",
+              "May 1963, Africa Hall, Addis Ababa, Nkrumah and Haile Selassie",
             ],
             correctIndex: 0,
             explanation:
@@ -612,10 +612,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What made the COMPOSITION of the Manchester Congress revolutionary?",
             options: [
-              "Its delegates were trade unionists, party organizers, students, and farmers' representatives, a congress deliberately built on workers' organizations, not professionals in evening dress",
-              "Every delegate was a sitting head of state",
-              "It was the first congress with no African delegates",
-              "Delegates were chosen by the colonial governments",
+              "Its delegates were trade unionists, party organizers, students, and farmers",
+              "Every single delegate present was already a sitting African head of state",
+              "It was the first congress held with no African delegates present at all",
+              "Its delegates were chosen for it by the colonial governments themselves",
             ],
             correctIndex: 0,
             explanation:
@@ -625,10 +625,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How did Manchester's demands break with the earlier congresses?",
             options: [
-              "It demanded independence outright and endorsed mass organization, strikes, and boycotts, dropping the petition for the theory that rights are taken by organized peoples",
-              "It petitioned the new United Nations for gradual reform",
-              "It asked only for better colonial education budgets",
-              "It demanded that the League of Nations administer all colonies",
+              "It demanded independence outright and endorsed strikes and boycotts",
+              "It petitioned the new United Nations for gradual colonial reform only",
+              "It asked only for larger colonial education and public health budgets",
+              "It demanded that the League of Nations administer all of the colonies",
             ],
             correctIndex: 0,
             explanation:
@@ -638,8 +638,8 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which trio of Manchester participants later led their countries as heads of state or government?",
             options: [
-              "Kwame Nkrumah (Ghana), Jomo Kenyatta (Kenya), Hastings Banda (Malawi)",
-              "C. L. R. James (Trinidad), Peter Abrahams (South Africa), George Padmore (Ghana)",
+              "Kwame Nkrumah (Ghana), Jomo Kenyatta (Kenya), and Hastings Banda (Malawi)",
+              "C. L. R. James (Trinidad), Peter Abrahams (South Africa), Padmore (Ghana)",
               "Marcus Garvey (Jamaica), W. E. B. Du Bois (Ghana), Blaise Diagne (Senegal)",
               "Haile Selassie (Ethiopia), Sékou Touré (Guinea), Patrice Lumumba (Congo)",
             ],
@@ -651,10 +651,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which honest footnotes does the course attach to Manchester before the legend sets?",
             options: [
-              "It didn't cause decolonization single-handedly; francophone Africa was barely represented and only a handful of delegates were women; and its organizers went home to jails before palaces",
-              "Its resolutions were written by the Colonial Office",
-              "No one who attended ever held office anywhere",
-              "It met in secret and left no documents",
+              "It did not cause decolonization alone, and few delegates were women",
+              "Its resolutions were written for it by the British Colonial Office",
+              "No one who attended it ever held elected office anywhere afterwards",
+              "It met entirely in secret and left behind no documents at all",
             ],
             correctIndex: 0,
             explanation:
@@ -664,10 +664,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Who presided over key sessions at Manchester at age seventy-seven, linking 1945 back to 1900?",
             options: [
-              "W. E. B. Du Bois",
-              "Marcus Garvey",
-              "Henry Sylvester Williams",
-              "Edward Wilmot Blyden",
+              "W. E. B. Du Bois of the NAACP",
+              "Marcus Garvey, founder of the UNIA",
+              "Henry Sylvester Williams of Trinidad",
+              "Edward Wilmot Blyden of Liberia",
             ],
             correctIndex: 0,
             explanation:
@@ -795,10 +795,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What did the UNIA's August 1920 convention in New York produce?",
             options: [
-              "The Declaration of the Rights of the Negro Peoples of the World, the red-black-green flag, and Garvey's title 'Provisional President of Africa', after an opening rally at Madison Square Garden with a reported 25,000",
-              "The founding charter of the NAACP",
-              "The resolutions of the Fifth Pan-African Congress",
-              "The incorporation papers of the Firestone Rubber Company",
+              "The Declaration of the Rights of the Negro Peoples of the World",
+              "The founding charter of the NAACP and the Springfield call of 1909",
+              "The resolutions of the Fifth Pan-African Congress at Manchester",
+              "The Liberian incorporation papers of the Firestone Rubber Company",
             ],
             correctIndex: 0,
             explanation:
@@ -808,10 +808,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How does the course handle the question of how many members the UNIA had?",
             options: [
-              "As contested, Garvey claimed millions (up to six million circulated by 1923), skeptical historians count far fewer paid members; what stands is that it was the largest Black mass movement the world had yet seen",
-              "It asserts exactly six million members as verified fact",
-              "It asserts the UNIA had almost no members",
-              "It refuses to discuss membership at all",
+              "As contested: Garvey claimed millions, historians count far fewer",
+              "It asserts exactly six million paid members as verified historical fact",
+              "It asserts that the UNIA had almost no real members outside Harlem",
+              "It refuses to discuss the question of membership numbers at all",
             ],
             correctIndex: 0,
             explanation:
@@ -821,10 +821,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What was the Black Star Line designed to prove and to do?",
             options: [
-              "To knit the Black Atlantic together commercially and prove Black people could run the machinery of the modern world, a Black-owned steamship line selling $5 shares only to Black buyers",
-              "To transport the entire US Black population to Liberia within one year",
-              "To carry mail for the US Post Office under federal contract",
-              "To compete with the Cunard Line for white passengers",
+              "A Black-owned steamship line selling five-dollar shares only to Black buyers",
+              "To transport the whole US Black population to Liberia within a single year",
+              "To carry mail for the US Post Office under a federal government contract",
+              "To compete with the Cunard Line for wealthy white transatlantic passengers",
             ],
             correctIndex: 0,
             explanation:
@@ -834,10 +834,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What is the significance of J. Edgar Hoover's October 1919 memo on Garvey?",
             options: [
-              "It called him a 'notorious negro agitator' and lamented that he had not yet violated any federal law, four years BEFORE the conviction, evidence the prosecution was sought before any crime existed",
-              "It cleared Garvey of all suspicion",
-              "It was written after the 1923 trial as a justification",
-              "It praised the Black Star Line's management",
+              "It called him a 'notorious negro agitator' who had broken no federal law",
+              "It cleared Garvey of all suspicion and closed the Bureau's file on him",
+              "It was written after the 1923 trial as a public justification for it",
+              "It praised the Black Star Line's management and its shipping record",
             ],
             correctIndex: 0,
             explanation:
@@ -847,10 +847,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "On what was Garvey convicted in June 1923?",
             options: [
-              "A single count of mail fraud, centered on promotional material for the Phyllis Wheatley, a ship the Black Star Line never acquired",
-              "Treason against the United States",
-              "Tax evasion on UNIA convention revenue",
-              "Sedition for the Negro World's editorials",
+              "One count of mail fraud over a ship the line never acquired",
+              "Treason against the United States over his Liberia plan",
+              "Tax evasion on the UNIA's August 1920 convention revenue",
+              "Sedition over the editorials printed in the Negro World",
             ],
             correctIndex: 0,
             explanation:
@@ -860,10 +860,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Why does the course reject teaching Garvey's conviction as 'nothing but persecution'?",
             options: [
-              "Because the wreckage was real: promotions misrepresented the line's condition, and the money of tens of thousands of poor Black investors was really gone",
-              "Because Garvey confessed to inventing the UNIA's membership rolls",
-              "Because the FBI had no interest in Garvey",
-              "Because the jury was composed entirely of UNIA members",
+              "Because the wreckage was real: poor investors' money was really gone",
+              "Because Garvey confessed to inventing the UNIA's whole membership roll",
+              "Because the Bureau of Investigation had no interest in Garvey at all",
+              "Because the trial jury was composed entirely of loyal UNIA members",
             ],
             correctIndex: 0,
             explanation:
@@ -873,10 +873,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What was Garvey's stated logic for meeting KKK leader Edward Young Clarke in June 1922, and what did it cost him?",
             options: [
-              "Separatist realism, the Klan was 'honest' about white intentions and the UNIA wasn't competing for integration; it cost him a united 'Garvey Must Go' campaign across Black leadership",
-              "He was infiltrating the Klan for the Bureau of Investigation",
+              "Separatist realism: the Klan was 'honest' and was not a competitor",
+              "He was infiltrating the Klan on behalf of the Bureau of Investigation",
               "He sought Klan investment in the Black Star Line, which he received",
-              "There is no evidence the meeting occurred",
+              "There is no evidence at all that the meeting between them occurred",
             ],
             correctIndex: 0,
             explanation:
@@ -886,10 +886,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What ended Garvey's American career, and where did he die?",
             options: [
-              "Atlanta penitentiary from February 1925, sentence commuted by Coolidge in November 1927, deportation to Jamaica, he died in London in June 1940, never having set foot in Africa",
+              "Atlanta from 1925, commuted 1927, deported, he died in London in 1940",
               "He was acquitted on appeal and retired to Harlem, dying there in 1960",
               "He escaped to Liberia and governed the UNIA colony until his death",
-              "He was assassinated at the 1927 Pan-African Congress",
+              "He was assassinated during the 1927 Pan-African Congress in New York",
             ],
             correctIndex: 0,
             explanation:
@@ -899,10 +899,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What happened to Garvey's Liberia plan?",
             options: [
-              "Monrovia repudiated the UNIA in 1924 under diplomatic and commercial pressure, and within two years leased a vast concession to the Firestone Rubber Company instead",
-              "It succeeded, and the UNIA governed Liberia until 1945",
-              "The League of Nations formally adopted and funded it",
-              "Garvey canceled it personally after visiting Monrovia",
+              "Monrovia repudiated the UNIA in 1924, then leased land to Firestone",
+              "It succeeded, and the UNIA effectively governed Liberia until 1945",
+              "The League of Nations formally adopted the plan and then funded it",
+              "Garvey canceled the plan himself after visiting Monrovia in 1923",
             ],
             correctIndex: 0,
             explanation:
@@ -912,10 +912,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Who kept the UNIA's message alive during Garvey's imprisonment, publishing Philosophy and Opinions of Marcus Garvey?",
             options: [
-              "Amy Jacques Garvey, his wife, the movement's under-credited second engine",
+              "Amy Jacques Garvey, his wife and second engine",
               "W. E. B. Du Bois, as a gesture of reconciliation",
-              "J. Edgar Hoover, to use as evidence",
-              "Booker T. Washington",
+              "J. Edgar Hoover, who used the paper as evidence",
+              "Booker T. Washington, from Tuskegee Institute",
             ],
             correctIndex: 0,
             explanation:
@@ -925,10 +925,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What did Du Bois write about Garvey in The Crisis in May 1924?",
             options: [
-              "That Garvey was 'without doubt, the most dangerous enemy of the Negro race in America and in the world', in an essay titled 'A Lunatic or a Traitor'",
-              "That Garvey deserved the Nobel Peace Prize",
-              "That the Black Star Line was a sound investment",
-              "Nothing, Du Bois never mentioned Garvey in print",
+              "That he was 'the most dangerous enemy of the Negro race'",
+              "That Garvey deserved the Nobel Peace Prize for his work",
+              "That the Black Star Line was a sound investment for all",
+              "Nothing; Du Bois never once mentioned Garvey in print",
             ],
             correctIndex: 0,
             explanation:
@@ -938,10 +938,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How does the course handle Garvey's attacks on Du Bois, per its quote policy?",
             options: [
-              "It paraphrases them (mulatto elitist, beggar at white philanthropy's table, ashamed of his African blood) with citation to Hill's Garvey Papers, rather than reconstructing exact insults",
-              "It quotes them verbatim from memory",
-              "It denies Garvey ever attacked Du Bois",
-              "It invents representative quotes and labels them authentic",
+              "It paraphrases them with a citation rather than inventing insults",
+              "It quotes them verbatim from the course author's own memory",
+              "It denies that Garvey ever attacked Du Bois anywhere in print",
+              "It invents representative quotations and labels them authentic",
             ],
             correctIndex: 0,
             explanation:
@@ -951,10 +951,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which pair correctly states the strategic disagreement beneath the Du Bois-Garvey feud?",
             options: [
-              "Du Bois: full citizenship inside multiracial states, organized through credentialed elites; Garvey: a separate Black destiny anchored in Africa, organized through the masses",
-              "Du Bois: armed revolution; Garvey: strict pacifism",
-              "Du Bois: African emigration for all; Garvey: total assimilation",
-              "They had no actual disagreement, the feud was purely personal",
+              "Du Bois: citizenship in multiracial states; Garvey: a separate destiny",
+              "Du Bois: armed revolution at once; Garvey: strict and total pacifism",
+              "Du Bois: African emigration for all; Garvey: complete assimilation",
+              "They had no actual disagreement; the feud was purely a personal one",
             ],
             correctIndex: 0,
             explanation:
@@ -964,10 +964,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What 'converging irony' does the course ask you to sit with at the end of the feud?",
             options: [
-              "Du Bois the integrationist died a citizen of Ghana, having renounced America; Garvey the African redemptionist died in London, never having seen Africa",
-              "Both men ended their lives as officers of the same organization",
-              "Both men retired from politics in 1930 and reconciled publicly",
-              "Both men were deported from the United States in 1927",
+              "Du Bois died a citizen of Ghana; Garvey died in London, never seeing Africa",
+              "Both men ended their lives as officers of the very same organization",
+              "Both men retired from politics in 1930 and then reconciled publicly",
+              "Both men were deported from the United States in the same year, 1927",
             ],
             correctIndex: 0,
             explanation:
@@ -977,10 +977,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What financial asymmetry made the two men's failures cut differently?",
             options: [
-              "Garvey's movement ran on the five-dollar shares of the Black poor (so his business failures betrayed his own base); Du Bois's work ran on white philanthropy and NAACP budgets (a leash his critics never let him forget)",
-              "Both movements were funded by the same foundation",
-              "Garvey was independently wealthy; Du Bois was penniless",
-              "Neither movement handled any money",
+              "Garvey ran on the shares of the Black poor; Du Bois on philanthropy",
+              "Both movements were funded by the same white philanthropic foundation",
+              "Garvey was independently wealthy; Du Bois was penniless throughout",
+              "Neither movement ever handled any money of its own at any point",
             ],
             correctIndex: 0,
             explanation:
@@ -1110,10 +1110,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What is the documented chain from Manchester 1945 to Accra 1957?",
             options: [
-              "Manchester's co-secretary Nkrumah went home in 1947, founded the mass-based CPP (1949), launched Positive Action (1950), was jailed, won the 1951 election from prison, and led Ghana to independence on 6 March 1957",
+              "Nkrumah went home in 1947, founded the CPP, won from prison, led Ghana in 1957",
               "Manchester's resolutions were adopted verbatim by the British Parliament in 1946",
               "Nkrumah was appointed governor of the Gold Coast by the Colonial Office in 1948",
-              "Ghana's independence was granted spontaneously with no local organizing",
+              "Ghana's independence was granted spontaneously with no local organizing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1123,10 +1123,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How does the course present Nkrumah's famous midnight-speech line?",
             options: [
-              "Quoted per the recorded speech, 'our independence is meaningless unless it is linked up with the total liberation of Africa', with the note that transcriptions vary slightly in the final phrase",
-              "As a sentence invented by later biographers",
-              "As a line Nkrumah borrowed word-for-word from Du Bois's 1900 address",
-              "It refuses to mention the speech at all",
+              "'Our independence is meaningless unless linked to Africa's total liberation'",
+              "As a sentence invented by his later biographers and never actually spoken",
+              "As a line Nkrumah borrowed word-for-word from Du Bois's address of 1900",
+              "It refuses to mention the midnight speech at all, calling it unverifiable",
             ],
             correctIndex: 0,
             explanation:
@@ -1136,10 +1136,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which precision does the course attach to 'Ghana was first'?",
             options: [
-              "First sub-Saharan African colony to win independence from a European empire in the postwar wave, with Sudan (1956), technically an Anglo-Egyptian condominium, noted as the earlier case",
-              "First African territory ever to be independent in any era",
-              "First member of the United Nations",
-              "First colony to gain independence anywhere in the world",
+              "First sub-Saharan colony to win independence in the postwar wave",
+              "First African territory ever to be independent in any era at all",
+              "The first African member state ever admitted to the United Nations",
+              "The first colony anywhere in the world to gain its independence",
             ],
             correctIndex: 0,
             explanation:
@@ -1149,10 +1149,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What were the two Accra conferences of 1958?",
             options: [
-              "April: the Conference of Independent African States (eight flags, first such gathering on African soil); December: the All-African People's Conference (liberation movements, Mboya chairing, Fanon for the FLN, Lumumba among those electrified)",
-              "Both were meetings of the British Commonwealth",
-              "April: the founding of the OAU; December: the founding of the AU",
-              "Two sessions of the Fifth Pan-African Congress",
+              "April: eight independent states met; December: the liberation movements",
+              "Both were regional meetings of the British Commonwealth held in Accra",
+              "April: the founding of the OAU; December: the founding of the AU there",
+              "Two successive sessions of the Fifth Pan-African Congress in Accra",
             ],
             correctIndex: 0,
             explanation:
@@ -1162,10 +1162,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What did the Casablanca Group want that the Monrovia Group refused?",
             options: [
-              "Political union NOW, continental government with real powers, before the new states hardened; Monrovia wanted cooperation among sovereign states with no surrender of sovereignty",
+              "Political union now, a continental government with real powers",
               "The restoration of colonial rule under international supervision",
-              "A single African monarchy under Haile Selassie",
-              "Immediate war against all former colonial powers",
+              "A single African monarchy under Emperor Haile Selassie in Addis",
+              "Immediate war against all of the former colonial powers at once",
             ],
             correctIndex: 0,
             explanation:
@@ -1175,10 +1175,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What happened on 25 May 1963 in Addis Ababa?",
             options: [
-              "Thirty-two African states signed the OAU Charter, hosted by Haile Selassie, enshrining sovereign equality and non-interference, and rejecting Nkrumah's union government",
-              "The African Union was launched, replacing the OAU",
-              "The Fifth Pan-African Congress convened",
-              "The AfCFTA agreement was signed",
+              "Thirty-two states signed the OAU Charter, rejecting union",
+              "The African Union was formally launched, replacing the OAU",
+              "The Fifth Pan-African Congress convened there in Manchester",
+              "The AfCFTA trade agreement was signed by fifty-four states",
             ],
             correctIndex: 0,
             explanation:
@@ -1188,10 +1188,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What did the OAU's 1964 Cairo resolution pledge, and why?",
             options: [
-              "That members 'respect the borders existing on their achievement of national independence', keeping the colonial lines, because opening one border question would open them all",
+              "That members respect the borders existing at independence",
               "That all colonial-era borders would be redrawn within ten years",
-              "That the OAU would administer all border disputes as a supreme court",
-              "That borders would be abolished entirely by 1970",
+              "That the OAU would judge all border disputes as a supreme court",
+              "That all African borders would be abolished entirely by 1970",
             ],
             correctIndex: 0,
             explanation:
@@ -1201,10 +1201,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What is the OAU's strongest documented credit entry?",
             options: [
-              "Its Liberation Committee (HQ Dar es Salaam) channeled money, training, and diplomatic standing to the movements fighting Portuguese rule, Rhodesia, and apartheid, making those wars a continental cause until they were won",
-              "It abolished poverty across the continent by 1980",
-              "It successfully created a single African currency",
-              "It prevented all wars between African states",
+              "Its Liberation Committee funded the wars against colonial rule",
+              "It abolished poverty across the whole continent by the year 1980",
+              "It successfully created and issued a single African currency",
+              "It prevented every war between African states after its founding",
             ],
             correctIndex: 0,
             explanation:
@@ -1214,10 +1214,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Why did critics call the OAU a 'dictators' club'?",
             options: [
-              "Non-interference meant whatever a member government did inside its borders was constitutionally none of the OAU's business, its summits seated and honored perpetrators",
-              "Because its charter required members to be military governments",
-              "Because it was headquartered in a former prison",
-              "The label was invented by colonial powers with no basis",
+              "Non-interference made a member's internal conduct nobody's business",
+              "Because its charter required all members to be military governments",
+              "Because it was headquartered in a former colonial prison building",
+              "The label was invented by the former colonial powers and has no basis",
             ],
             correctIndex: 0,
             explanation:
@@ -1227,10 +1227,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How does the course score Nkrumah's 'Africa must unite now or perish' argument?",
             options: [
-              "Right on much of the diagnosis (dependence, frozen weakness, later integration crept back toward his proposals); weaker on prescription, since 'trust a strong center' came from a man building one-man rule at home",
-              "Entirely right in every respect",
-              "Entirely wrong in every respect",
-              "The course refuses to evaluate it",
+              "Right on the diagnosis, weaker on the cure",
+              "Entirely right in every respect it made",
+              "Entirely wrong in every respect it made",
+              "The course refuses to evaluate it at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1240,10 +1240,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What role did Muammar Gaddafi play in the AU's creation, and how does the course teach it?",
             options: [
-              "He hosted and drove the September 1999 Sirte summit, campaigned for a 'United States of Africa,' and bankrolled the process, taught plainly as an authoritarian seeking a continental stage, since patronage and Pan-Africanism have never been strangers",
-              "He opposed the AU's creation and boycotted it",
-              "He had no involvement whatsoever",
-              "He founded the OAU in 1963",
+              "He hosted the 1999 Sirte summit and bankrolled the process",
+              "He opposed the AU's creation and boycotted the Durban launch",
+              "He had no involvement whatsoever in the founding of the AU",
+              "He founded the OAU in Addis Ababa in May 1963 and led it",
             ],
             correctIndex: 0,
             explanation:
@@ -1253,10 +1253,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What does Article 4(h) of the AU Constitutive Act assert?",
             options: [
-              "The Union's right to intervene in a Member State, by Assembly decision, in respect of grave circumstances: war crimes, genocide and crimes against humanity",
-              "The permanent inviolability of all member governments",
+              "A right to intervene in grave circumstances: war crimes, genocide",
+              "The permanent inviolability of all member governments and rulers",
               "The Union's right to collect taxes directly from African citizens",
-              "The abolition of all national armies",
+              "The abolition of all national armies in favour of one AU force",
             ],
             correctIndex: 0,
             explanation:
@@ -1266,10 +1266,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which AU-era instruments and dates are correctly matched?",
             options: [
-              "AfCFTA signed Kigali March 2018, trading begun 1 January 2021; Agenda 2063 adopted 2015; AU launched Durban July 2002",
-              "AfCFTA signed 1963; Agenda 2063 adopted 1900; AU launched 1945",
-              "AfCFTA signed at Manchester 1945; AU launched at Addis Ababa 1963",
-              "All three were created by the OAU Charter in 1963",
+              "AfCFTA signed 2018, trading from 2021; AU launched at Durban in 2002",
+              "AfCFTA signed in 1963; Agenda 2063 adopted 1900; AU launched in 1945",
+              "AfCFTA signed at Manchester in 1945; AU launched at Addis in 1963",
+              "All three were created together by the OAU Charter of May 1963",
             ],
             correctIndex: 0,
             explanation:
@@ -1279,10 +1279,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which items appear in the course's honest audit of the AU?",
             options: [
-              "Heavy reliance on external donor funding; 4(h) never used to force entry against a sitting government; suspensions punish coups more reliably than stolen elections; intra-African trade still a modest share",
-              "The AU has no headquarters, no members, and no treaties",
-              "The AU has achieved full continental federation",
-              "The AU abolished all African borders in 2005",
+              "Donor funding; 4(h) never used; modest intra-African trade",
+              "The AU has no headquarters, no members, and no treaties at all",
+              "The AU has achieved full continental federation and one currency",
+              "The AU abolished all African borders in the year 2005 by treaty",
             ],
             correctIndex: 0,
             explanation:
@@ -1292,10 +1292,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "In the course's one-line arc, 1900, 1945, 1957, 1963, 2002, what does each date stand for?",
             options: [
-              "A petition; a demand; a state; a club of states (union rejected); a union in name with one revolutionary clause",
-              "A war; a treaty; a currency; a passport; a railway",
-              "Five successive Pan-African Congresses in London",
-              "Five failed attempts at continental government",
+              "A petition; a demand; a state; a club of states; a union in name",
+              "A war; a treaty; a currency; a passport; and a trans-Africa railway",
+              "Five successive Pan-African Congresses, all of them held in London",
+              "Five failed attempts at building a continental federal government",
             ],
             correctIndex: 0,
             explanation:
@@ -1392,10 +1392,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What role did the Nardal sisters play in the origin of Négritude?",
             options: [
-              "Their Clamart salon and the bilingual La Revue du monde noir (1931-32) put the Harlem Renaissance into French circulation for the students who founded the movement",
-              "They wrote the Cahier d'un retour au pays natal under a pseudonym",
-              "They funded the Black Star Line",
-              "They organized the Manchester Congress",
+              "Their Clamart salon and La Revue du monde noir brought Harlem into French",
+              "They wrote the Cahier d'un retour au pays natal under a shared pseudonym",
+              "They funded the Black Star Line's purchase of its first steamship",
+              "They organized the 1945 Manchester Congress alongside George Padmore",
             ],
             correctIndex: 0,
             explanation:
@@ -1405,10 +1405,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which Harlem Renaissance novel did the future Négritude founders treat almost as a manifesto?",
             options: [
-              "Claude McKay's Banjo (1929)",
-              "Ralph Ellison's Invisible Man",
-              "Richard Wright's Native Son",
-              "Zora Neale Hurston's Their Eyes Were Watching God",
+              "Claude McKay's novel Banjo (1929)",
+              "Ralph Ellison's Invisible Man (1952)",
+              "Richard Wright's Native Son (1940)",
+              "Hurston's Their Eyes Were Watching God",
             ],
             correctIndex: 0,
             explanation:
@@ -1418,10 +1418,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Who were Négritude's three founders, and what did each contribute first?",
             options: [
-              "Césaire (coined the word; the 1939 Cahier), Senghor (the civilizational formulation; later Senegal's presidency), Damas (struck first in verse with Pigments, 1937, banned in 1939)",
-              "Fanon, Sartre, and Camus",
-              "Du Bois, Garvey, and Padmore",
-              "Hughes, Cullen, and McKay",
+              "Césaire (the word), Senghor (the philosophy), Damas (Pigments, 1937)",
+              "Frantz Fanon, Jean-Paul Sartre, and Albert Camus, all writing in Paris",
+              "W. E. B. Du Bois, Marcus Garvey, and George Padmore of the congresses",
+              "Langston Hughes, Countee Cullen, and Claude McKay of the Renaissance",
             ],
             correctIndex: 0,
             explanation:
@@ -1431,10 +1431,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What was Césaire's argument in Discourse on Colonialism (1950)?",
             options: [
-              "That colonization 'decivilizes' the colonizer, turning the poetry into prosecution",
-              "That colonization should be extended to more territories",
-              "That literature must never address politics",
-              "That France had no colonies",
+              "That colonization 'decivilizes' the colonizer who practises it",
+              "That colonization should be extended to more African territories",
+              "That literature must never address politics of any kind at all",
+              "That France had never held any colonies in Africa or elsewhere",
             ],
             correctIndex: 0,
             explanation:
@@ -1444,10 +1444,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What happened at the Sorbonne in September 1956?",
             options: [
-              "Présence Africaine convened the First International Congress of Black Writers and Artists, Césaire, Senghor, Fanon, Wright, and Baldwin present; Du Bois, passport withheld, could only send a message",
-              "The OAU was founded",
-              "The first Pan-African Conference met",
-              "Senghor was elected president of France",
+              "The First International Congress of Black Writers and Artists met",
+              "The Organization of African Unity was founded at the Sorbonne",
+              "The first Pan-African Conference met there, chaired by Williams",
+              "Léopold Senghor was elected president of the French Republic",
             ],
             correctIndex: 0,
             explanation:
@@ -1457,10 +1457,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which set of facts about Senghor does the course teach TOGETHER, per its both-hands rule?",
             options: [
-              "First president of Senegal (1960), Dakar festival host (1966), first African in the Académie française (1983), voluntary retirement (1980), AND years of effective single-party rule with his prime minister Mamadou Dia imprisoned over a decade",
-              "Only his literary honors, since his politics are irrelevant",
-              "Only the Dia imprisonment, since his honors are propaganda",
-              "That he led Ghana to independence",
+              "Senegal's first president and academician, AND single-party rule",
+              "Only his literary honours, since his politics are quite irrelevant",
+              "Only the Dia imprisonment, since all his honours were propaganda",
+              "That he led the Gold Coast to independence as Ghana in March 1957",
             ],
             correctIndex: 0,
             explanation:
@@ -1470,10 +1470,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How does the course present Soyinka's famous 'tigritude' remark?",
             options: [
-              "Paraphrased, a tiger does not proclaim its nature, it acts, because the remark survives in several near-identical versions from the 1962 Makerere gathering, so no single wording is fixed as verbatim",
-              "As an exact verbatim sentence with a page citation",
-              "As a remark by Senghor about Soyinka",
-              "The course denies the remark was ever made",
+              "Paraphrased, because several near-identical versions survive",
+              "As an exact verbatim sentence with a page citation attached",
+              "As a remark made by Senghor about Soyinka at the Makerere meeting",
+              "The course denies that the remark was ever made by anyone at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1483,10 +1483,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What did Sartre's 'Black Orpheus' (1948) call Négritude, and why did the compliment trouble some readers?",
             options: [
-              "An 'anti-racist racism', a dialectical stage destined to dissolve into universal struggle, which read to some as a burial dressed as praise",
-              "A permanent and complete philosophy needing no development",
-              "A plagiarism of French symbolism",
-              "A movement with no political significance",
+              "An 'anti-racist racism', a stage destined to dissolve away",
+              "A permanent, complete philosophy needing no further development",
+              "A plagiarism of nineteenth-century French symbolist poetry",
+              "A literary movement with no political significance whatever",
             ],
             correctIndex: 0,
             explanation:
@@ -1496,10 +1496,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which pieces were already in place BEFORE 1930 that let Selassie's coronation ignite a religion in Jamaica?",
             options: [
-              "A century of Ethiopianism (Psalm 68:31), Ethiopia's standing as Adwa's victor, and Jamaica saturated with Garveyism's African redemption",
-              "A Vatican decree, a UN resolution, and a BBC documentary",
-              "Nothing, the movement began without any prior context",
-              "The founding of the OAU and the AU",
+              "Ethiopianism, Ethiopia's standing after Adwa, and Garveyism",
+              "A Vatican decree, a UN resolution, and a BBC radio documentary",
+              "Nothing at all; the movement began with no prior context whatever",
+              "The founding of the OAU in 1963 and then of the AU in 2002",
             ],
             correctIndex: 0,
             explanation:
@@ -1509,10 +1509,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What does the course's quote-audit find about the 'Look to Africa, where a black king shall be crowned' prophecy?",
             options: [
-              "It appears in none of Garvey's located writings; researchers trace 'black king' preaching to others in the period, notably James Morris Webb",
+              "It appears in none of Garvey's located writings anywhere",
               "It is verbatim from Philosophy and Opinions of Marcus Garvey",
-              "Garvey delivered it at the 1920 Madison Square Garden rally, on film",
-              "It was written by Haile Selassie about himself",
+              "Garvey delivered it at the 1920 Madison Square Garden rally",
+              "It was written by Haile Selassie about himself in the 1930s",
             ],
             correctIndex: 0,
             explanation:
@@ -1522,10 +1522,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What did Garvey actually write about Selassie in 1937?",
             options: [
-              "An essay in his London journal The Black Man attacking the emperor as a 'great coward' who abandoned his country after Italy's invasion",
-              "A hymn proclaiming Selassie's divinity",
-              "Nothing, Garvey died before Selassie was crowned",
-              "A formal apology for earlier criticism",
+              "An essay in The Black Man calling the emperor a 'great coward'",
+              "A hymn proclaiming the divinity of Selassie and of his line",
+              "Nothing; Garvey had died before Selassie was ever crowned",
+              "A formal apology for his earlier criticism of the emperor",
             ],
             correctIndex: 0,
             explanation:
@@ -1535,10 +1535,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which facts about Haile Selassie does the course put in the 'fact' ledger against the symbol?",
             options: [
-              "Absolute monarch over a feudal empire; formal abolition of slavery in Ethiopia only in 1942; never claimed divinity (he remained Ethiopian Orthodox and deflected the question)",
+              "An absolute monarch who never claimed divinity himself",
               "He was elected democratically and served two four-year terms",
-              "He founded the Rastafari movement personally in Kingston",
-              "He was never actually emperor of Ethiopia",
+              "He founded the Rastafari movement personally, in Kingston",
+              "He was never actually the emperor of Ethiopia at any point",
             ],
             correctIndex: 0,
             explanation:
@@ -1548,10 +1548,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What is Shashamane?",
             options: [
-              "Land in Ethiopia, commonly dated to a 1948 grant of some 500 acres via the Ethiopian World Federation, set aside for diaspora settlers, where a small Rastafari community lives to this day",
-              "The prison where Marcus Garvey was held",
-              "The hall where the OAU Charter was signed",
-              "A ship of the Black Star Line",
+              "Land in Ethiopia set aside for diaspora settlers from 1948",
+              "The Jamaican prison where Marcus Garvey was held in 1929",
+              "The hall in Addis Ababa where the OAU Charter was signed",
+              "A ship of the Black Star Line, sold for scrap in the 1920s",
             ],
             correctIndex: 0,
             explanation:
@@ -1561,10 +1561,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How did Haile Selassie's reign end, and how does the course date and hedge it?",
             options: [
-              "The Derg deposed him in September 1974; he died in custody in August 1975, the official 'natural causes' widely disbelieved and the circumstances taught as contested; his remains were found years later on the palace grounds",
-              "He reigned until a peaceful retirement in 1990",
-              "He was restored to the throne in 1980",
-              "He abdicated to become secretary-general of the OAU",
+              "Deposed by the Derg in 1974; died in custody in 1975, contested",
+              "He reigned until a peaceful retirement in 1990, dying at home",
+              "He was restored to the Ethiopian throne in 1980 by the Derg",
+              "He abdicated in order to become secretary-general of the OAU",
             ],
             correctIndex: 0,
             explanation:
@@ -1574,10 +1574,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What 'two ledgers' does the course ask you to keep on Rastafari, the transferable skill of the lesson?",
             options: [
-              "Documented fact (a mortal autocrat; an unverified prophecy; no redemption by coronation) AND documented function (dignity, discipline, a homeland of the mind, a global culture for the colonized poor), read both, worship neither, debunk neither into dust",
-              "One ledger for believers and one for police files",
-              "Assets and liabilities of the Ethiopian treasury",
-              "The course asks you to pick one ledger and discard the other",
+              "Documented fact AND documented function: read both, worship neither",
+              "One ledger for the believers and one for the police case files",
+              "Assets and liabilities of the Ethiopian imperial treasury books",
+              "The course asks you to pick one ledger and discard the other one",
             ],
             correctIndex: 0,
             explanation:
@@ -1670,10 +1670,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which five structural tensions does the course identify inside Pan-Africanism, all predating independence?",
             options: [
-              "Diaspora vs continent; communism vs self-organization; anglophone vs francophone; elites vs masses; men vs the movement's women",
-              "North vs South America; cricket vs football; print vs radio; poetry vs prose; tea vs coffee",
-              "Only one tension: rich vs poor",
-              "The course says the movement had no internal tensions",
+              "Diaspora vs continent; communism vs self-organization; elites vs masses",
+              "North vs South America; cricket vs football; tea vs coffee; print vs radio",
+              "Only one tension throughout: the rich against the poor, in every country",
+              "The course says the movement had no internal tensions at all worth naming",
             ],
             correctIndex: 0,
             explanation:
@@ -1683,10 +1683,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What was Ghana's Preventive Detention Act (1958), and who is its most famous victim?",
             options: [
-              "A law allowing imprisonment without trial for up to five years, J. B. Danquah, the nationalist who had invited Nkrumah home in 1947, died detained in Nsawam prison in February 1965",
-              "A law abolishing the death penalty, with no victims",
-              "A British colonial law repealed at independence",
-              "A trade regulation on cocoa exports",
+              "A law allowing imprisonment without trial; Danquah died detained",
+              "A law abolishing the death penalty, which had no victims at all",
+              "A British colonial law that was repealed at independence in 1957",
+              "A trade regulation on the licensing of Ghana's cocoa export crop",
             ],
             correctIndex: 0,
             explanation:
@@ -1696,10 +1696,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How does the course report Ghana's January 1964 referendum?",
             options: [
-              "An official yes-vote of 99.9 percent that no serious historian treats as a real count, making Ghana a one-party state with Nkrumah empowered to dismiss judges",
-              "A narrow, internationally certified free vote",
-              "A referendum that Nkrumah lost and accepted",
-              "The course does not mention it",
+              "An official 99.9 percent yes vote no historian treats as real",
+              "A narrow but internationally certified free and fair ballot",
+              "A referendum that Nkrumah lost and then publicly accepted",
+              "The course does not mention the 1964 referendum at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1709,10 +1709,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What is the documented arc of Sékou Touré taught in this course?",
             options: [
-              "The real courage of 1958 (the only 'No' to de Gaulle, 'poverty in freedom' over 'riches in slavery,' in the standard translation) AND Camp Boiro, where his opponents disappeared for a quarter century, with contested death estimates running into the thousands and beyond",
-              "Only the 1958 heroism, since the rest is disputed",
-              "Only Camp Boiro, since the 1958 vote is a myth",
-              "That he was a Belgian colonial governor",
+              "The 1958 'No' to de Gaulle AND Camp Boiro's disappearances",
+              "Only the 1958 heroism, since all of the rest is disputed",
+              "Only Camp Boiro, since the 1958 vote is itself a pure myth",
+              "That he served as a Belgian colonial governor in the Congo",
             ],
             correctIndex: 0,
             explanation:
@@ -1722,10 +1722,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Why does the course say Diallo Telli's fate 'is the whole problem in one man's fate'?",
             options: [
-              "The OAU's own first secretary-general died of enforced starvation in a member state's detention camp (Camp Boiro, 1977), and non-interference made even that constitutionally nobody's business",
-              "He embezzled the OAU's treasury and fled",
-              "He was the last colonial governor of Guinea",
-              "He founded Camp Boiro himself",
+              "The OAU's first secretary-general died in a member's camp",
+              "He embezzled the OAU's whole treasury and then fled to Guinea",
+              "He was the last colonial governor of French Guinea, to 1958",
+              "He founded Camp Boiro himself and ran it for Sékou Touré",
             ],
             correctIndex: 0,
             explanation:
@@ -1735,10 +1735,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How does the course handle the death toll of Idi Amin's regime, the ruler the OAU made its 1975 chairman?",
             options: [
-              "As a range, roughly 100,000 to 500,000, with the figures attributed (International Commission of Jurists, Amnesty International) and no single count asserted",
-              "As exactly 250,000, asserted as fact",
-              "It denies there were any deaths",
-              "It refuses to name Amin at all",
+              "As a range, roughly 100,000 to 500,000, figures attributed",
+              "As exactly 250,000 dead, asserted flatly as settled fact",
+              "It denies that there were any deaths at all under Amin's rule",
+              "It refuses to name Idi Amin anywhere in the entire course",
             ],
             correctIndex: 0,
             explanation:
@@ -1748,10 +1748,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What does the course say Mobutu's authenticité campaign demonstrates?",
             options: [
-              "That the movement's cultural language could be worn as a costume, Congo renamed Zaire (1971), European names banned, while the state was looted on a scale estimated in billions (taught as estimates)",
-              "That Mobutu was Pan-Africanism's most faithful practitioner",
-              "That cultural policy always produces good government",
-              "That Zaire achieved the union government Nkrumah wanted",
+              "The movement's language could be worn as a costume: Zaire, 1971",
+              "That Mobutu was Pan-Africanism's single most faithful practitioner",
+              "That cultural policy always produces good and clean government",
+              "That Zaire achieved the union government that Nkrumah wanted",
             ],
             correctIndex: 0,
             explanation:
@@ -1761,10 +1761,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "State the course's three rules for holding the strongman record.",
             options: [
-              "The crimes don't un-free the continent; the rhetoric doesn't excuse the crimes; the critics were African all along, honesty is the tradition's own dissident half",
-              "Never criticize heroes; never cite numbers; never name names",
-              "All independence was a mistake; all rhetoric was sincere; all critics were foreign",
-              "Only foreigners may judge; only leaders may speak; only silence is safe",
+              "Crimes don't un-free the continent; rhetoric doesn't excuse crimes",
+              "Never criticize the heroes; never cite numbers; never name names",
+              "All independence was a mistake; and all the critics were foreign",
+              "Only foreigners may judge; only leaders speak; silence is safe",
             ],
             correctIndex: 0,
             explanation:
@@ -1774,10 +1774,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What did Malcolm X's Organization of Afro-American Unity (1964) demonstrate about the movement's direction of travel?",
             options: [
-              "The current reversed: he named and modeled the OAAU on the OAU and flew to Cairo to petition the OAU summit, the diaspora borrowing the continent's institution back",
-              "That the diaspora had abandoned Africa entirely by 1964",
-              "That the OAU was founded in Harlem",
-              "Nothing, the OAAU had no connection to Africa",
+              "The current reversed: he modeled the OAAU on the OAU itself",
+              "That the diaspora had wholly abandoned Africa by the year 1964",
+              "That the OAU was actually founded in Harlem, New York, in 1964",
+              "Nothing; the OAAU had no connection to Africa or to the OAU",
             ],
             correctIndex: 0,
             explanation:
@@ -1787,10 +1787,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which entries stand in the course's WINS column?",
             options: [
-              "Decolonization (Manchester's alumni + the Liberation Committee's wars won), working institutions (AU, AfCFTA, coup suspensions), and a global culture (Négritude, Rastafari/reggae, the red-black-green and black star)",
-              "A completed union government and a single African currency",
+              "Decolonization, working institutions, and a global culture",
+              "A completed union government and one single African currency",
               "The permanent elimination of all African political conflict",
-              "Nothing, the course concludes the movement achieved nothing",
+              "Nothing; the course concludes the movement achieved nothing",
             ],
             correctIndex: 0,
             explanation:
@@ -1800,10 +1800,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Which entries stand in the course's UNBUILT-AND-BETRAYED column?",
             options: [
-              "No union government (Nkrumah's question still open); frozen borders freezing weakness; non-interference shielding strongmen; modest intra-African trade; donor-funded AU; a 'sixth region' with no vote",
-              "The failure to invent the telephone",
-              "The absence of any African literature",
-              "The lack of any African flags",
+              "No union government; frozen borders; a donor-funded Union",
+              "The failure to invent the telephone or the printing press",
+              "The absence of any African literature written before 1960",
+              "The lack of any African national flags anywhere on earth",
             ],
             correctIndex: 0,
             explanation:
@@ -1813,10 +1813,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "What is the transferable method this course claims to have taught?",
             options: [
-              "Audit quotes, hold two documented truths at once, hedge contested numbers, and keep symbol and fact in separate ledgers, a posture under which real achievements survive the archive",
-              "Trust every inspiring quote, since checking is disloyal",
-              "Reject all symbols as lies",
-              "Prefer slogans to documents when the cause is good",
+              "Audit quotes, hold two truths at once, hedge contested numbers",
+              "Trust every inspiring quote, since checking is plainly disloyal",
+              "Reject every symbol as a lie told to the credulous and the poor",
+              "Prefer slogans to documents whenever the cause is a good one",
             ],
             correctIndex: 0,
             explanation:
@@ -1826,10 +1826,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "How does this anchor course relate to the two shipped sibling courses it names?",
             options: [
-              "Africa Before Colonization teaches the deep history the movement invoked (and how we know it); Afrocentricity teaches the contested scholarly paradigm, this course cross-links both and re-teaches neither",
-              "It replaces both of them",
-              "It contradicts both of them",
-              "It has no relationship to them",
+              "It cross-links both sibling courses and re-teaches neither",
+              "It completely replaces both of the two sibling courses",
+              "It flatly contradicts both of the two sibling courses",
+              "It has no relationship at all to the two sibling courses",
             ],
             correctIndex: 0,
             explanation:
@@ -1839,10 +1839,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "Why does the course insist that naming the strongmen is NOT an attack on Pan-Africanism?",
             options: [
-              "Because African writers, lawyers, and exiles, Soyinka jailed, Ngũgĩ detained, Guinean survivors' memoirs, named these crimes first and paid for it: honesty is the pan-African tradition's own dissident half",
-              "Because the strongmen were not really African",
-              "Because the crimes were invented by colonial propaganda",
-              "The course does in fact treat it as an attack",
+              "African writers and exiles named these crimes first, and paid",
+              "Because the strongmen were not really African leaders at all",
+              "Because the crimes were invented by later colonial propaganda",
+              "The course does in fact treat this as an attack on Africa",
             ],
             correctIndex: 0,
             explanation:
@@ -1852,10 +1852,10 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
           {
             prompt: "The course's closing frame: what happened 'within one long lifetime, Du Bois's own, 1868 to 1963'?",
             options: [
-              "The movement went from a petition nobody answered (London 1900) to the petitioners' heirs governing a continent, with real, dissident-documented failures carried in the same ledger",
-              "Nothing changed between 1868 and 1963",
-              "The movement achieved a full continental federation",
-              "The movement dissolved permanently in 1945",
+              "From a petition nobody answered to its heirs governing states",
+              "Nothing at all changed between the years 1868 and 1963 anywhere",
+              "The movement achieved a full continental federation by 1963",
+              "The movement dissolved itself permanently at Manchester in 1945",
             ],
             correctIndex: 0,
             explanation:

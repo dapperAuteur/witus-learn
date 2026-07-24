@@ -163,8 +163,8 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
             prompt: "What was Hugh Trevor-Roper's position when he called African history 'largely darkness'?",
             options: [
               "Regius Professor of Modern History at Oxford",
-              "Director of the British Museum",
-              "Colonial governor of Rhodesia",
+              "Director of the British Museum in London",
+              "Colonial governor of Southern Rhodesia",
               "An amateur broadcaster with no academic post",
             ],
             correctIndex: 0,
@@ -175,10 +175,10 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
           {
             prompt: "Why does the course say Trevor-Roper's 1963 claim was 'a choice' in a way Hegel's 1820s claim partly was not?",
             options: [
-              "By 1963 the refuting evidence (Caton-Thompson 1931, radiocarbon dating, published Arabic sources) already existed",
+              "By 1963 the refuting evidence already existed in print",
               "Trevor-Roper had personally visited Africa and Hegel had not",
-              "Hegel later retracted his claim",
-              "Television made claims more official than books",
+              "Hegel had retracted the claim in a later published lecture",
+              "Television made a claim more official than a printed book",
             ],
             correctIndex: 0,
             explanation:
@@ -188,10 +188,10 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
           {
             prompt: "Stripped to its skeleton, Trevor-Roper's argument was:",
             options: [
-              "History requires documents; Africa produced none; therefore Africa has no history",
+              "History requires documents; Africa produced none; so it has no history",
               "History requires kings; Africa had none; therefore Africa has no history",
-              "African history exists but is too dangerous to teach",
-              "Only economic history counts as history",
+              "African history exists but is politically too dangerous to teach",
+              "Only economic and military history count as history worth writing",
             ],
             correctIndex: 0,
             explanation:
@@ -201,10 +201,10 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
           {
             prompt: "What is the 'Hamitic hypothesis'?",
             options: [
-              "The claim that anything impressive in Africa was built by outsiders or non-African 'Hamites'",
-              "The theory that all African languages descend from one ancestor",
-              "The claim that Egypt was culturally African",
-              "A hypothesis about Saharan climate change",
+              "The claim that impressive African work was built by outside 'Hamites'",
+              "The theory that all African languages descend from a single ancestor",
+              "The claim that Egypt's culture was fundamentally African in origin",
+              "A hypothesis about Saharan climate change drying the grasslands",
             ],
             correctIndex: 0,
             explanation:
@@ -227,10 +227,10 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
           {
             prompt: "Why does the course argue that romantic myth ultimately HELPS the deniers?",
             options: [
-              "One debunked invented claim makes the whole documented record look fake",
-              "It doesn't; the course says romance is harmless",
-              "Because myths are copyrighted",
-              "Because deniers prefer flattering stories",
+              "One debunked invented claim makes the real record look fake",
+              "It does not; the course treats romance as harmless flattery",
+              "Because myths are copyrighted by their original tellers",
+              "Because deniers secretly prefer the flattering stories",
             ],
             correctIndex: 0,
             explanation:
@@ -240,10 +240,10 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
           {
             prompt: "What is the UNESCO General History of Africa?",
             options: [
-              "An eight-volume history (published 1981-1993) drafted mostly by African scholars, launched as a project in 1964",
-              "A colonial-era encyclopedia of African tribes",
-              "A museum catalog of looted objects",
-              "A UN resolution condemning Hegel",
+              "An eight-volume history drafted mostly by African scholars",
+              "A colonial-era encyclopedia of African tribes and customs",
+              "A museum catalog of objects looted during the Scramble",
+              "A UN resolution condemning Hegel's remarks on Africa",
             ],
             correctIndex: 0,
             explanation:
@@ -253,10 +253,10 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
           {
             prompt: "What is the anti-flattening rule?",
             options: [
-              "Every claim must name a region, a people, and a period, never just 'Africa'",
-              "Never mention colonization before Section 4",
-              "Always compare Africa to Europe",
-              "Use only African-authored sources",
+              "Every claim must name a region, a people, and a period",
+              "Never mention colonization until Section 4 begins",
+              "Always compare an African state to a European one",
+              "Use only sources written by African authors themselves",
             ],
             correctIndex: 0,
             explanation:
@@ -268,8 +268,8 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
             options: [
               "Great Zimbabwe: ancestors of the Shona, c. 1100-1450 CE",
               "Great Zimbabwe: the Soninke, eleventh century CE",
-              "Kush: the Edo, sixteenth century CE",
-              "Benin: the Kushites, eighth century BCE",
+              "Kush: the Edo people of Benin, sixteenth century CE",
+              "Benin: the Kushites of Nubia, eighth century BCE",
             ],
             correctIndex: 0,
             explanation:
@@ -279,10 +279,10 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
           {
             prompt: "Roughly how large is the African continent?",
             options: [
-              "About 30 million square kilometers, the second-largest continent",
-              "About the size of Western Europe",
-              "About 5 million square kilometers",
-              "Larger than Asia",
+              "About 30 million square kilometers, second-largest",
+              "About the size of Western Europe and India combined",
+              "About 5 million square kilometers, sixth-largest",
+              "Larger than Asia, making it the largest continent",
             ],
             correctIndex: 0,
             explanation:
@@ -292,10 +292,10 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
           {
             prompt: "Frobenius's 1911 explanation of the Ife heads is cited in this section as an example of what?",
             options: [
-              "The erasure pattern: crediting African work to outsiders (in his case, Atlantis)",
-              "Early scientific rigor",
-              "The romance trap",
-              "A correct attribution later confirmed",
+              "The erasure pattern: crediting African work to outsiders",
+              "An early example of careful archaeological rigor",
+              "The romance trap, in its most familiar Atlantis form",
+              "A correct attribution later confirmed by excavation",
             ],
             correctIndex: 0,
             explanation:
@@ -306,9 +306,9 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
             prompt: "What does the course promise to do when a claim is shaky?",
             options: [
               "Label it contested or estimated rather than assert it",
-              "Omit it entirely, always",
-              "Assert it if it favors the course's thesis",
-              "Put it in a footnote without comment",
+              "Omit the claim entirely, in every case it appears",
+              "Assert it anyway if it favors the course's thesis",
+              "Put it in a closing footnote without any comment",
             ],
             correctIndex: 0,
             explanation:
@@ -319,9 +319,9 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
             prompt: "Which figure is named in this section as ruling Egypt from outside it?",
             options: [
               "Kings from Kush, as the 25th Dynasty (c. 747-656 BCE)",
-              "Mansa Musa of Mali, in 1324",
-              "Ezana of Aksum, around 340 CE",
-              "The Oba of Benin, in 1485",
+              "Mansa Musa of Mali, who ruled Egypt from 1324",
+              "Ezana of Aksum, who ruled Egypt from about 340 CE",
+              "The Oba of Benin, who ruled Egypt from about 1485",
             ],
             correctIndex: 0,
             explanation:
@@ -331,10 +331,10 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
           {
             prompt: "Why does the course teach African participation in the slave trades at all (Section 5) in a course refuting anti-African myths?",
             options: [
-              "Because a history with the uncomfortable parts removed is advertising, not history, and omission is its own distortion",
-              "Because it makes the course longer",
-              "To argue colonization was justified",
-              "Because no other course covers slavery",
+              "Because omitting the uncomfortable parts is its own distortion",
+              "Because it makes the course longer and more marketable",
+              "To argue that colonization was therefore justified later",
+              "Because no other course covers slavery in Africa at all",
             ],
             correctIndex: 0,
             explanation:
@@ -431,10 +431,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "What was Kerma?",
             options: [
-              "The center of the early Kushite state in present-day Sudan, a major city by c. 2500 BCE",
-              "An Egyptian colony founded by Ramesses II",
-              "A Roman fort on the Nile",
-              "A medieval Swahili port",
+              "The center of the early Kushite state in present-day Sudan",
+              "An Egyptian colony on the Nile founded by Ramesses II",
+              "A Roman frontier garrison on the Nile south of Aswan",
+              "A medieval Swahili trading port on the Indian Ocean",
             ],
             correctIndex: 0,
             explanation:
@@ -444,10 +444,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "Who was Piye?",
             options: [
-              "The Kushite king who conquered Egypt in the 720s BCE and founded the 25th Dynasty",
-              "The last pharaoh of the New Kingdom",
-              "An Assyrian general",
-              "The first Christian king of Aksum",
+              "The Kushite king who conquered Egypt in the 720s BCE",
+              "The last pharaoh of Egypt's New Kingdom period",
+              "An Assyrian general who sacked Thebes in 663 BCE",
+              "The first Christian king of the kingdom of Aksum",
             ],
             correctIndex: 0,
             explanation:
@@ -465,10 +465,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "Where does Taharqa appear outside Egyptian and Kushite sources?",
             options: [
-              "In the Hebrew Bible, as 'Tirhakah king of Cush' (2 Kings 19:9; Isaiah 37:9)",
-              "In Homer's Iliad",
-              "In the Qur'an by name",
-              "In Norse sagas",
+              "In the Hebrew Bible, as 'Tirhakah king of Cush'",
+              "In Homer's Iliad, as a king of the Ethiopians",
+              "In the Qur'an, named among the righteous kings",
+              "In Norse sagas, as a distant southern king",
             ],
             correctIndex: 0,
             explanation:
@@ -478,10 +478,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "What is the state of Meroitic script today?",
             options: [
-              "Transliterated (sound values known since Griffith, 1909-1911) but the language is still largely unread",
-              "Fully translated since the 1950s",
-              "Completely undeciphered, even the sounds",
-              "Proven to be a dialect of Egyptian",
+              "Transliterated since Griffith, but the language is still unread",
+              "Fully translated and read fluently since the 1950s excavations",
+              "Completely undeciphered, even the sound values of its signs",
+              "Proven to be a late dialect of the Egyptian language itself",
             ],
             correctIndex: 0,
             explanation:
@@ -491,10 +491,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "The bronze head of Augustus in the British Museum was found where, and why is it significant?",
             options: [
-              "Buried beneath temple steps at Meroë: physical evidence of Kush's war with Rome in the 20s BCE",
+              "Buried beneath temple steps at Meroë: Kush's war with Rome",
               "In a shipwreck off Alexandria: evidence of Roman trade",
               "At Great Zimbabwe: evidence of Roman contact with the Shona",
-              "In Rome: evidence Meroë never fought Rome",
+              "In Rome itself: evidence that Meroë never fought Rome",
             ],
             correctIndex: 0,
             explanation:
@@ -504,10 +504,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "Which is the accurate statement about pyramids?",
             options: [
-              "The royal cemeteries of Kush hold more pyramids than all of Egypt, commonly counted at roughly 200 or more",
+              "Kush's royal cemeteries hold more pyramids than all Egypt",
               "Egypt has about ten times more pyramids than Sudan",
               "Nubian pyramids were built by Egyptian colonists",
-              "There are no pyramids south of Egypt",
+              "There are no pyramids anywhere south of Egypt's border",
             ],
             correctIndex: 0,
             explanation:
@@ -518,9 +518,9 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
             prompt: "Who demolished the tops of more than forty Kushite pyramids in the 1830s?",
             options: [
               "Giuseppe Ferlini, an Italian treasure hunter",
-              "The Assyrian army",
+              "The Assyrian army under king Ashurbanipal",
               "British archaeologists in an official excavation",
-              "Local farmers quarrying stone",
+              "Local farmers quarrying the stone for houses",
             ],
             correctIndex: 0,
             explanation:
@@ -538,10 +538,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "What contemporary, physical evidence documents King Ezana's conversion to Christianity around the 340s CE?",
             options: [
-              "His coins switch mid-reign from disc-and-crescent to the cross, and his inscriptions shift to a single God",
-              "A papal letter congratulating him",
-              "A mosaic portrait in Constantinople",
-              "Nothing; it is only legend",
+              "His coins switch mid-reign from the crescent to the cross",
+              "A letter from the pope in Rome congratulating him",
+              "A mosaic portrait of him in a Constantinople church",
+              "Nothing survives; the conversion is only later legend",
             ],
             correctIndex: 0,
             explanation:
@@ -551,10 +551,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "What was Adulis?",
             options: [
-              "Aksum's Red Sea port, described in the first-century Periplus of the Erythraean Sea",
-              "The capital of Kush",
-              "A Roman colony in Ethiopia",
-              "The name of Aksum's coinage",
+              "Aksum's Red Sea port, described in the first-century Periplus",
+              "The inland capital city of the kingdom of Kush on the Nile",
+              "A Roman colony planted on the Ethiopian highland plateau",
+              "The name given to Aksum's gold, silver, and copper coinage",
             ],
             correctIndex: 0,
             explanation:
@@ -565,9 +565,9 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
             prompt: "Which states issued their own GOLD coinage in Aksum's era, per the course?",
             options: [
               "Rome, Persia, the Kushan realm, and Aksum",
-              "Rome only",
-              "Every Mediterranean city-state",
-              "Aksum and Great Zimbabwe",
+              "Rome alone, and no other state then",
+              "Every Mediterranean city-state of the day",
+              "Great Zimbabwe, Kilwa, and Aksum only",
             ],
             correctIndex: 0,
             explanation:
@@ -577,10 +577,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "What is Ge'ez today?",
             options: [
-              "The liturgical language of the Ethiopian Orthodox Tewahedo Church, with a script ancestral to modern Ethiopian and Eritrean scripts",
-              "A dead language with no surviving texts",
-              "The official language of modern Sudan",
-              "A trade pidgin invented by Portuguese sailors",
+              "The liturgical language of the Ethiopian Orthodox Church",
+              "A dead language with no surviving manuscripts at all",
+              "The official spoken language of modern Sudan today",
+              "A trade pidgin invented by Portuguese sailors in 1500",
             ],
             correctIndex: 0,
             explanation:
@@ -590,10 +590,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "What happened to the 24-meter Aksum stele?",
             options: [
-              "Looted to Rome on Mussolini's orders in 1937; returned by Italy in 2005 and re-erected at Aksum",
-              "It was destroyed by the Assyrians",
-              "It still lies in a Rome warehouse",
-              "It was sold to the British Museum in 1897",
+              "Looted to Rome in 1937; returned by Italy in 2005",
+              "It was destroyed by the Assyrian army in 663 BCE",
+              "It still lies in pieces in a warehouse in Rome today",
+              "It was sold to the British Museum in London in 1897",
             ],
             correctIndex: 0,
             explanation:
@@ -603,10 +603,10 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
           {
             prompt: "How does the course handle the third-century Manichaean text ranking Aksum among the world's great kingdoms?",
             options: [
-              "As evidence of contemporary PERCEPTION of Aksum's stature, not as a modern league table",
-              "As proof Aksum was the strongest state on Earth",
-              "It dismisses the text as a forgery",
-              "As evidence Mani visited Aksum personally",
+              "As evidence of contemporary PERCEPTION, not a league table",
+              "As proof Aksum was the strongest state on Earth then",
+              "It dismisses the text as a later Persian forgery entirely",
+              "As evidence that Mani himself visited Aksum in person",
             ],
             correctIndex: 0,
             explanation:
@@ -746,7 +746,12 @@ One deliberate correction before the quiz: these three states were succession IN
         questions: [
           {
             prompt: "What flowed SOUTH across the Sahara in the caravan trade, above all?",
-            options: ["Salt, mined in slabs at desert sites like Taghaza", "Gold", "Ivory", "Manuscripts"],
+            options: [
+              "Salt, cut in slabs at desert mines like Taghaza",
+              "Gold, from the Bure and Bambuk river fields",
+              "Ivory, from the elephant herds of the savanna",
+              "Manuscripts, copied in the book markets of Fez",
+            ],
             correctIndex: 0,
             explanation:
               "Salt was the great southbound cargo (a physiological necessity in the savanna, and in places near-money); gold, ivory, and enslaved people moved north.",
@@ -755,10 +760,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "The kingdom of Ghana described by al-Bakri in 1068 was:",
             options: [
-              "A Soninke state in present-day Mauritania and Mali, unrelated territorially to the modern country of Ghana",
+              "A Soninke state in present-day Mauritania and Mali",
               "Located in the territory of the modern Republic of Ghana",
-              "A Berber colony",
-              "A province of Mali",
+              "A Berber colony ruled from the Moroccan Atlantic coast",
+              "A tributary province of the later Mali empire, c. 1300",
             ],
             correctIndex: 0,
             explanation:
@@ -768,10 +773,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "Which administrative detail does al-Bakri record about Ghana's customs system?",
             options: [
-              "One gold dinar tax per donkey-load of salt entering, two per load leaving",
-              "A flat 10% tithe on all goods",
-              "No taxation at all",
-              "Taxes payable only in cowrie shells",
+              "One gold dinar per donkey-load of salt in, two out",
+              "A flat ten per cent tithe on all goods entering",
+              "No taxation at all on any caravan traffic",
+              "Taxes payable only in cowrie shells from the coast",
             ],
             correctIndex: 0,
             explanation:
@@ -781,10 +786,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "How does this course teach the '1076 Almoravid sack of Ghana'?",
             options: [
-              "As contested: Conrad and Fisher (1982) argued the evidence for a conquest is thin",
-              "As established fact",
-              "As a myth invented in the twentieth century",
-              "It does not mention it",
+              "As contested: Conrad and Fisher (1982) found it thin",
+              "As an established fact confirmed by al-Bakri's own account",
+              "As a myth invented in the twentieth century by nationalists",
+              "It does not mention the Almoravids or the sack at all",
             ],
             correctIndex: 0,
             explanation:
@@ -794,10 +799,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "How is the founding of Mali (Sundiata, c. 1235) primarily known?",
             options: [
-              "Through the oral epic of the jeliw (griots), recorded in modern times and cross-checked against Ibn Khaldun's king lists",
-              "Through a contemporary Malian royal archive",
-              "Through Roman records",
-              "Through Portuguese chronicles",
+              "Through the oral epic of the jeliw, checked with Ibn Khaldun",
+              "Through a contemporary Malian royal archive kept at Niani",
+              "Through Roman administrative records from the Sahara",
+              "Through Portuguese royal chronicles compiled in the 1230s",
             ],
             correctIndex: 0,
             explanation:
@@ -807,10 +812,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What did Ibn Battuta praise most in his eyewitness account of Mali (1352-53)?",
             options: [
-              "The security of the roads: travelers had nothing to fear from robbers",
-              "The gold mines, which he toured",
-              "The emperor's navy",
-              "The university enrollment",
+              "The security of the roads: travelers feared no robbers",
+              "The gold mines at Bure, which he toured in person",
+              "The emperor's large war fleet on the Niger river",
+              "The recorded university enrollment at Timbuktu",
             ],
             correctIndex: 0,
             explanation:
@@ -820,10 +825,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What ended the Songhai empire in 1591?",
             options: [
-              "A Moroccan force that crossed the Sahara with firearms and won at Tondibi",
-              "A Portuguese naval invasion up the Niger",
-              "The Almoravid conquest",
-              "A succession war with Mali",
+              "A Moroccan force that crossed the Sahara and won at Tondibi",
+              "A Portuguese naval invasion sailing up the Niger river",
+              "The Almoravid conquest of the whole middle Niger valley",
+              "A long succession war with the neighbouring Mali empire",
             ],
             correctIndex: 0,
             explanation:
@@ -833,10 +838,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What is the documentary basis of the 'Mansa Musa crashed Egypt's gold market' story?",
             options: [
-              "Al-Umari's report that the mithqal fell from 25 to about 22 dirhams and stayed depressed about twelve years",
-              "Mali's own treasury records",
-              "A Venetian banker's ledger",
-              "Egyptian tax rolls listing Musa by name",
+              "Al-Umari's report that the mithqal fell from 25 to 22 dirhams",
+              "Mali's own treasury records, still preserved at Timbuktu",
+              "A Venetian banker's ledger kept at his Cairo branch office",
+              "Egyptian tax rolls that list Musa and his caravan by name",
             ],
             correctIndex: 0,
             explanation:
@@ -846,10 +851,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "Why does the course refuse the claim that Mansa Musa was 'the richest person in history'?",
             options: [
-              "No source records Mali's revenues or reserves, so no net-worth figure is computable; the viral number traces to a 2012 pop listicle",
-              "Because he was actually poor",
-              "Because other African kings were provably richer",
-              "Because wealth comparisons across time are always exact but forbidden",
+              "No source records Mali's revenues, so no net worth is computable",
+              "Because he was in fact a comparatively poor ruler of Mali",
+              "Because several other African kings were provably richer",
+              "Because wealth comparisons across time are always exact ones",
             ],
             correctIndex: 0,
             explanation:
@@ -859,10 +864,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What did Schultz (2006) conclude about the Cairo gold 'crash'?",
             options: [
-              "The reported price swing falls within the normal fluctuation of Mamluk exchange rates, so the strongest 'wrecked economy' versions exceed the evidence",
-              "That al-Umari invented the entire visit",
-              "That the crash lasted fifty years, not twelve",
-              "That Musa paid in silver, not gold",
+              "The swing falls within normal Mamluk exchange-rate fluctuation",
+              "That al-Umari invented the entire Cairo visit and crash",
+              "That the price crash lasted fifty years and not twelve",
+              "That Musa's caravan paid in silver rather than in gold",
             ],
             correctIndex: 0,
             explanation:
@@ -872,10 +877,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What does the Catalan Atlas of 1375 show, and why does the course cite it?",
             options: [
-              "A crowned West African king holding gold, labeled lord of the gold of Guinea: Mali's wealth on Europe's best maps within fifty years of the hajj",
-              "The first accurate coastline of southern Africa",
-              "A portrait of Ibn Battuta",
-              "The route of the Moroccan invasion of 1591",
+              "A crowned West African king holding gold, lord of Guinea's gold",
+              "The first accurate coastline of the whole southern Africa",
+              "A portrait of Ibn Battuta on his crossing of the Sahara",
+              "The route taken by the Moroccan invasion of Songhai, 1591",
             ],
             correctIndex: 0,
             explanation:
@@ -885,10 +890,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "Which caravan statistics does the course label 'reported, not established'?",
             options: [
-              "The head-counts like 60,000 people, 12,000 slaves, and 80-100 camel-loads of gold, which come from later compilations that disagree",
-              "The existence of the hajj itself",
-              "The year 1324",
-              "The route through Cairo",
+              "The head-counts (60,000 people, 12,000 slaves, 80-100 loads)",
+              "The existence of the 1324 pilgrimage to Mecca itself",
+              "The year 1324, as reported in several Arabic sources",
+              "The caravan's route through Cairo on the way to Mecca",
             ],
             correctIndex: 0,
             explanation:
@@ -899,9 +904,9 @@ One deliberate correction before the quiz: these three states were succession IN
             prompt: "What did Leo Africanus single out about Timbuktu's market (c. 1510s, published 1550)?",
             options: [
               "Books sold better than any other merchandise",
-              "Gold was worthless there",
-              "No foreigners were admitted",
-              "Only salt was traded",
+              "Gold was worthless in the city's market",
+              "No foreign merchants were admitted there",
+              "Only salt and cowrie shells were traded",
             ],
             correctIndex: 0,
             explanation:
@@ -911,10 +916,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "How does the course handle the phrase 'the University of Sankore'?",
             options: [
-              "As an anachronistic frame: real, documented scholarship (ijaza system, Ahmad Baba, the chronicles) but no chartered university, and no reliable enrollment figures",
-              "As literally accurate, with 25,000 enrolled students",
-              "As a colonial invention with no scholarship behind it",
-              "It does not discuss Sankore",
+              "An anachronism: real scholarship (ijaza, Ahmad Baba), no charter",
+              "As literally accurate, with exactly 25,000 enrolled students",
+              "As a colonial invention with no real scholarship behind it",
+              "It does not discuss Sankore or Timbuktu's scholars at all",
             ],
             correctIndex: 0,
             explanation:
@@ -924,10 +929,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What was the ICC's 2016 al-Mahdi judgment about?",
             options: [
-              "Directing attacks on Timbuktu's protected mausoleums and buildings in 2012: the ICC's first conviction centered on cultural destruction as a war crime",
-              "The theft of the Benin bronzes",
-              "The 1591 Moroccan invasion",
-              "Manuscript forgery",
+              "Attacks on Timbuktu's mausoleums in 2012: an ICC first",
+              "The 1897 theft of the Benin bronzes from the palace",
+              "The 1591 Moroccan invasion of the Songhai empire",
+              "The forgery of Timbuktu manuscripts for sale abroad",
             ],
             correctIndex: 0,
             explanation:
@@ -937,10 +942,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "Why is the Great Mosque of Djenné a caption-check exercise?",
             options: [
-              "The current building dates to 1907 (in a deep local tradition, on a site whose mosque tradition dates to the thirteenth century), so calling the photo 'medieval' is false",
-              "It is actually in Timbuktu",
+              "The present building dates to 1907, so 'medieval' is false",
+              "The mosque actually stands in Timbuktu, not Djenné",
               "It is a colonial French design with no local tradition",
-              "It is built of granite",
+              "It is built of quarried granite blocks, not mud brick",
             ],
             correctIndex: 0,
             explanation:
@@ -1107,7 +1112,7 @@ One deliberate correction before the quiz: these three states were succession IN
               "Ancestors of the Shona, c. 1100-1450 CE",
               "Phoenician colonists, c. 900 BCE",
               "The Queen of Sheba's court, c. 950 BCE",
-              "Portuguese traders, c. 1550 CE",
+              "Portuguese traders, c. 1550-1600 CE",
             ],
             correctIndex: 0,
             explanation:
@@ -1117,10 +1122,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What did the Rhodesian government do about Great Zimbabwe from 1970?",
             options: [
-              "Censored official publications from stating the African origin as fact, and forced out the Inspector of Monuments who insisted on it",
-              "Funded the largest excavation in African history",
-              "Returned the soapstone birds to the Shona",
-              "Nothing; the site was ignored",
+              "Censored publications stating the African origin as fact",
+              "Funded the largest excavation in African history then",
+              "Returned all the soapstone birds to the Shona people",
+              "Nothing at all; the site was left entirely ignored",
             ],
             correctIndex: 0,
             explanation:
@@ -1130,10 +1135,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "Which finds at Great Zimbabwe prove its place in world trade?",
             options: [
-              "Chinese celadon, Persian glazed ware, glass beads, and a Kilwa coin",
-              "Roman legionary equipment",
-              "Viking silver",
-              "Aztec obsidian",
+              "Chinese celadon, Persian ware, glass beads, a Kilwa coin",
+              "Roman legionary equipment and imperial silver coins",
+              "Viking silver hoards and carved Norse rune stones",
+              "Aztec obsidian blades and turquoise mosaic work",
             ],
             correctIndex: 0,
             explanation:
@@ -1143,10 +1148,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What is the Swahili language, linguistically?",
             options: [
-              "A Bantu language of the coast's own Sabaki group, with Arabic loanwords",
-              "A dialect of Arabic",
-              "A Persian creole",
-              "A Portuguese trade pidgin",
+              "A Bantu language of the coast, with Arabic loanwords",
+              "A dialect of Arabic carrying Bantu loanwords",
+              "A Persian creole spoken by coastal merchants",
+              "A Portuguese trade pidgin dating from the 1500s",
             ],
             correctIndex: 0,
             explanation:
@@ -1156,10 +1161,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What did Ibn Battuta call Kilwa in 1331?",
             options: [
-              "One of the most beautiful and well-constructed towns in the world",
-              "A miserable village of fishermen",
-              "The capital of Prester John",
-              "A Portuguese fort",
+              "One of the most beautiful towns in the world",
+              "A miserable village of poor fishermen",
+              "The capital city of Prester John's realm",
+              "A small Portuguese fort on the ocean coast",
             ],
             correctIndex: 0,
             explanation:
@@ -1169,10 +1174,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What powered the sailing rhythm of Indian Ocean trade?",
             options: [
-              "The seasonal monsoon winds, out one part of the year and back the other",
-              "Steam power",
-              "Constant westerlies",
-              "River currents",
+              "The seasonal monsoon winds, out one season and back",
+              "Steam power from the earliest coal engines",
+              "Constant westerly winds blowing all year round",
+              "River currents running down to the open sea",
             ],
             correctIndex: 0,
             explanation:
@@ -1182,10 +1187,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What happened to Kilwa in 1505?",
             options: [
-              "A Portuguese fleet sacked it, part of forcing the coast's trade into Portuguese control",
-              "Zheng He's fleet burned it",
-              "An earthquake destroyed it",
-              "It conquered Great Zimbabwe",
+              "A Portuguese fleet sacked it and seized the coast's trade",
+              "Zheng He's treasure fleet burned the whole town down",
+              "An earthquake destroyed the whole city and its port",
+              "It conquered Great Zimbabwe on the inland plateau",
             ],
             correctIndex: 0,
             explanation:
@@ -1195,10 +1200,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "The Kingdom of Benin (of the bronzes) is located in:",
             options: [
-              "Present-day southern Nigeria (the Edo people; Benin City)",
-              "The modern Republic of Benin",
-              "Ghana",
-              "Ethiopia",
+              "Present-day southern Nigeria (the Edo; Benin City)",
+              "The modern Republic of Benin, west of Nigeria",
+              "Ghana, on the Atlantic coast of West Africa",
+              "Ethiopia, in the northern highland plateau",
             ],
             correctIndex: 0,
             explanation:
@@ -1208,10 +1213,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What did Leo Frobenius claim in 1910 when he encountered the naturalistic heads of Ife?",
             options: [
-              "That he had found art of the lost civilization of Atlantis",
-              "That the Yoruba were master portraitists",
-              "That the heads were modern forgeries",
-              "That the heads were Roman imports",
+              "That he had found the art of lost Atlantis",
+              "That the Yoruba were master portrait sculptors",
+              "That the heads were modern European forgeries",
+              "That the heads were Roman imports from Italy",
             ],
             correctIndex: 0,
             explanation:
@@ -1221,10 +1226,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What are the Benin 'Bronzes,' materially and technically?",
             options: [
-              "Mostly leaded brass, cast by the lost-wax process, much of the metal traced to European manilla trade rings (2023 isotope study)",
-              "Solid gold castings",
-              "Carved and painted wood",
-              "Bronze imported ready-made from Portugal",
+              "Mostly leaded brass, cast by the lost-wax process",
+              "Solid gold castings, hammered and polished",
+              "Carved and painted hardwood, not metal at all",
+              "Finished bronzes imported ready-made from Portugal",
             ],
             correctIndex: 0,
             explanation:
@@ -1234,10 +1239,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "How does the course state the size of the 1897 Benin loot?",
             options: [
-              "Thousands of objects, commonly estimated 3,000-5,000, with no complete inventory ever made",
+              "Thousands of objects, commonly estimated 3,000-5,000",
               "Exactly 5,000 objects, per the official inventory",
-              "A few dozen items",
-              "The number is known precisely from Admiralty records: 3,127",
+              "A few dozen items only, according to the Museum",
+              "Known precisely from Admiralty records: 3,127 items",
             ],
             correctIndex: 0,
             explanation:
@@ -1247,10 +1252,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "Why has the British Museum returned none of its Benin holdings, on its own stated account?",
             options: [
-              "Its trustees are barred from deaccessioning by the British Museum Act 1963",
-              "Nigeria has never asked",
-              "The objects were proven not to come from Benin",
-              "It returned everything in 2022",
+              "Its trustees are barred from deaccessioning by a 1963 Act",
+              "Nigeria has never formally asked for their return",
+              "The objects were proven not to come from Benin at all",
+              "It quietly returned everything to Nigeria in 2022",
             ],
             correctIndex: 0,
             explanation:
@@ -1260,10 +1265,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What are the Lalibela churches?",
             options: [
-              "Eleven churches carved top-down out of living volcanic rock (c. 12th-13th century tradition, with construction phases debated), still in liturgical use",
-              "Ruined stone towers built by the Portuguese",
-              "Cave churches painted but not carved",
-              "Nineteenth-century reconstructions",
+              "Eleven churches carved top-down from living rock, still in use",
+              "Ruined stone towers built by Portuguese missionaries there",
+              "Cave churches painted inside but not carved from the rock",
+              "Nineteenth-century reconstructions of much older chapels",
             ],
             correctIndex: 0,
             explanation:
@@ -1273,10 +1278,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "How does this course present the Ark of the Covenant at Aksum?",
             options: [
-              "As a foundational church tradition, central to Ethiopian identity, and not a verified artifact",
-              "As archaeologically confirmed",
-              "As a proven medieval forgery",
-              "It does not mention it",
+              "As a foundational church tradition, not a verified artifact",
+              "As archaeologically confirmed by a recent excavation",
+              "As a forgery proven medieval by carbon dating at Aksum",
+              "It does not mention the Ark or its Aksum chapel at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1286,10 +1291,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What caused the Wuchale Treaty crisis that led to Adwa?",
             options: [
-              "Article 17 differed between texts: the Italian version imposed a protectorate, the Amharic version offered an option",
-              "A dispute over gold mines",
-              "Ethiopia's refusal to pay an indemnity",
-              "A succession dispute in Italy",
+              "Article 17 differed: the Italian text imposed a protectorate",
+              "A dispute over gold mines along the Eritrean border",
+              "Ethiopia's refusal to pay the agreed war indemnity in gold",
+              "A disputed succession within the Italian royal house",
             ],
             correctIndex: 0,
             explanation:
@@ -1299,10 +1304,10 @@ One deliberate correction before the quiz: these three states were succession IN
           {
             prompt: "What is the course's precise formulation about Ethiopia and colonization?",
             options: [
-              "Never colonized in the Scramble; invaded and occupied by Italy 1936-41; sovereignty restored in 1941",
-              "Never touched by any European army",
-              "Colonized by Italy from 1889 to 1941",
-              "Colonized briefly by Britain in 1868",
+              "Never colonized in the Scramble; occupied by Italy 1936-41",
+              "Never touched by any European army at any point at all",
+              "Colonized outright by Italy from 1889 through to 1941",
+              "Colonized briefly by Britain between 1868 and 1889",
             ],
             correctIndex: 0,
             explanation:
@@ -1397,10 +1402,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Why does this course teach African slavery at full depth rather than minimizing it?",
             options: [
-              "One evidentiary standard applied everywhere is the course's claim to credibility; a sanitized version is the romance trap and collapses against the sources",
-              "To argue colonization was deserved",
-              "Because European slavery was worse and needs contrast",
-              "United Nations rules require it",
+              "One evidentiary standard everywhere is the course's credibility",
+              "To argue that colonization was in the end fully deserved",
+              "Because European slavery was worse and needs the contrast",
+              "Because United Nations rules require such coverage today",
             ],
             correctIndex: 0,
             explanation:
@@ -1410,9 +1415,9 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What does 'wealth in people' describe?",
             options: [
-              "Societies where land was abundant and labor scarce, so power was measured in people, including enslaved dependents",
-              "A tax system based on head-counts",
-              "A modern development metric",
+              "Societies where land was abundant and labor scarce",
+              "A tax system based on household head-counts",
+              "A modern development metric for population",
               "The idea that slaves were always treated as kin",
             ],
             correctIndex: 0,
@@ -1423,10 +1428,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Which named example does the course give of harsh, large-scale slavery WITHIN Africa?",
             options: [
-              "The nineteenth-century Sokoto Caliphate's slave-worked estates",
-              "The kingdom of Aksum's coin mints",
-              "Great Zimbabwe's cattle herds",
-              "The Kilwa fish markets",
+              "The nineteenth-century Sokoto Caliphate's estates",
+              "The kingdom of Aksum's coin mints and quarries",
+              "Great Zimbabwe's royal cattle herding camps",
+              "The fish markets on the Kilwa waterfront",
             ],
             correctIndex: 0,
             explanation:
@@ -1436,10 +1441,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "How should Austen's figure for the trans-Saharan slave trade be treated?",
             options: [
-              "As a 'tentative census' (his own word): an order-of-magnitude reconstruction from thin evidence, in the several millions over roughly twelve centuries",
-              "As an exact count from customs archives",
-              "As propaganda with no evidentiary basis",
-              "As covering only the twentieth century",
+              "A 'tentative census' (his word): millions over twelve centuries",
+              "An exact count taken from Saharan customs house archives",
+              "Propaganda with no evidentiary basis whatsoever behind it",
+              "A figure covering only the trade of the twentieth century",
             ],
             correctIndex: 0,
             explanation:
@@ -1450,9 +1455,9 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
             prompt: "What was demand in the Saharan and eastern trades primarily for, per the sources?",
             options: [
               "Domestic service, concubinage, soldiers, and eunuchs",
-              "Plantation field labor exclusively",
-              "Mine labor exclusively",
-              "Galley rowers exclusively",
+              "Plantation field labor in the oases exclusively",
+              "Mine labor in the Saharan salt pits exclusively",
+              "Galley rowers for Mediterranean fleets exclusively",
             ],
             correctIndex: 0,
             explanation:
@@ -1462,10 +1467,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What are the SlaveVoyages headline estimates for the Atlantic trade, 1501-1866?",
             options: [
-              "About 12.5 million embarked; about 10.7 million landed alive",
-              "About 1 million embarked",
-              "About 100 million embarked",
-              "The database refuses to estimate",
+              "About 12.5 million embarked; 10.7 million landed",
+              "About 1 million embarked; 900,000 landed alive",
+              "About 100 million embarked; 90 million landed",
+              "The database declines to publish any estimate",
             ],
             correctIndex: 0,
             explanation:
@@ -1475,10 +1480,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Why did Europeans rarely capture slaves inland themselves for most of the trade's four centuries?",
             options: [
-              "Disease killed Europeans inland at catastrophic rates, and African military strength confined them to ships and coastal forts, often rented from African rulers",
-              "European law forbade it",
-              "They had no interest in the interior",
-              "African coasts had no harbors",
+              "Disease inland and African military strength held them to the coast",
+              "European law forbade traders from any travel inland at all",
+              "They had no commercial interest in the African interior at all",
+              "The African coasts had no harbors deep enough for their ships",
             ],
             correctIndex: 0,
             explanation:
@@ -1488,10 +1493,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Which of these is a correctly NAMED participation example, per the course?",
             options: [
-              "Dahomey and Asante rose in the seventeenth-eighteenth centuries as major suppliers whose royal revenues ran substantially on captives",
-              "Great Zimbabwe supplied captives to Portugal in the twelfth century",
-              "Aksum sold captives to Rome in 1897",
-              "The Almoravids ran the Middle Passage",
+              "Dahomey and Asante rose as major suppliers in the 1600s-1700s",
+              "Great Zimbabwe supplied captives to Portugal in the 1100s CE",
+              "The kingdom of Aksum sold captives to Rome in the 1890s",
+              "The Almoravids ran the Middle Passage out of Kilwa port",
             ],
             correctIndex: 0,
             explanation:
@@ -1501,10 +1506,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What is the 'tell' that 'Africans sold their own people' is rhetoric rather than history?",
             options: [
-              "It applies a pan-African identity backward to Africans while never applying pan-European identity backward to Europeans selling Slavic and Circassian captives",
-              "It uses a passive verb",
-              "It cites no date",
-              "Nothing; the course endorses the sentence",
+              "It applies pan-African identity backward, never pan-European",
+              "It uses only passive verbs throughout the whole sentence",
+              "It cites no date at all for any of the events it names",
+              "Nothing at all; the course endorses that exact sentence",
             ],
             correctIndex: 0,
             explanation:
@@ -1514,10 +1519,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What do Afonso I of Kongo's 1526 letters show?",
             options: [
-              "Documented African criticism of the trade from inside and in real time: protests that merchants were taking his freeborn subjects, with demands for controls",
-              "That Kongo never touched the slave trade",
+              "African criticism of the trade from inside, in real time",
+              "That Kongo never took any part in the slave trade",
               "The first abolitionist manifesto in the modern sense",
-              "That Portugal ended the trade in 1526",
+              "That Portugal ended the whole trade in the year 1526",
             ],
             correctIndex: 0,
             explanation:
@@ -1527,10 +1532,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What is the 'gun-slave cycle' debate about?",
             options: [
-              "Whether European demand created the wars that produced captives or paid a bounty on wars that would have happened anyway",
-              "Whether guns were traded at all",
-              "Whether Africans manufactured firearms before 1500",
-              "Naval gunnery tactics",
+              "Whether European demand created the wars or only paid for them",
+              "Whether guns were traded into Africa at all before 1800",
+              "Whether African smiths manufactured firearms before 1500",
+              "Naval gunnery tactics used in the Atlantic slave trade",
             ],
             correctIndex: 0,
             explanation:
@@ -1540,10 +1545,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "How does the course handle the long-run consequences of the trades for African societies?",
             options: [
-              "Direction broadly negative, magnitudes genuinely contested (demography, militarization, econometrics like Nunn 2008), reported as a live debate rather than a picked number",
-              "As fully settled: exactly 30% population loss",
-              "As having no measurable effects",
-              "It skips the question",
+              "Direction negative, magnitudes contested and reported as debate",
+              "As fully settled: exactly 30% of the population was lost",
+              "As having no measurable long-run effects on Africa at all",
+              "It skips the question of long-run consequences entirely",
             ],
             correctIndex: 0,
             explanation:
@@ -1553,9 +1558,9 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Which statement about the timing of slavery in Africa is correct?",
             options: [
-              "Enslavement of outsiders predates Atlantic demand by centuries, and internal slavery outlasted Atlantic abolition, tolerated for decades by colonial powers",
-              "Slavery in Africa began with the Portuguese in 1444",
-              "Slavery in Africa ended everywhere in 1807",
+              "Enslavement predates Atlantic demand and outlasted abolition",
+              "Slavery in Africa began with the Portuguese only in 1444",
+              "Slavery across Africa ended everywhere in the year 1807",
               "The Sahara trades began after the Atlantic trades ended",
             ],
             correctIndex: 0,
@@ -1566,10 +1571,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Roughly how many people died at sea in the Middle Passage, per SlaveVoyages?",
             options: [
-              "Nearly two million (the gap between ~12.5M embarked and ~10.7M landed)",
-              "About ten thousand",
-              "About seven million",
-              "The database shows no deaths",
+              "Nearly two million (12.5M embarked vs 10.7M landed)",
+              "About ten thousand, spread over four centuries",
+              "About seven million, more than half of those taken",
+              "The database records no deaths at sea at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1579,10 +1584,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What does the course say the Atlantic buyers did to the existing supply system?",
             options: [
-              "Plugged it into a new, insatiable, and different kind of demand: racialized, hereditary, industrial-scale plantation chattel slavery",
-              "Left it entirely unchanged",
-              "Abolished it immediately",
-              "Replaced it with wage labor",
+              "Plugged it into insatiable racialized plantation chattel slavery",
+              "Left the existing African supply system entirely unchanged",
+              "Abolished the existing African supply system immediately",
+              "Replaced the existing African system with paid wage labor",
             ],
             correctIndex: 0,
             explanation:
@@ -1687,9 +1692,9 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What is the catch with al-Fazari's eighth-century mention of Ghana?",
             options: [
-              "His original work is lost; the line survives only as quotations inside later writers",
-              "He wrote in a cipher never solved",
-              "He described the wrong continent",
+              "His original work is lost; it survives only in quotations",
+              "He wrote in a numerical cipher never since solved",
+              "He was describing an entirely different continent",
               "There is no catch; the manuscript survives complete",
             ],
             correctIndex: 0,
@@ -1700,10 +1705,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Why does this course cite the Arabic sources via Levtzion & Hopkins' Corpus?",
             options: [
-              "Translation is interpretation: a critical scholarly edition documents its choices, where colonial-era translations sometimes tilted hard",
-              "Because the Arabic originals are illegal to quote",
-              "Because it is the only translation ever made",
-              "For copyright reasons only",
+              "Translation is interpretation; a critical edition documents it",
+              "Because the Arabic originals are illegal to quote today",
+              "Because it is the only translation ever made of the corpus",
+              "For copyright reasons alone, and for no scholarly reason",
             ],
             correctIndex: 0,
             explanation:
@@ -1713,10 +1718,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What source-criticism caution applies even to Ibn Battuta's eyewitness account?",
             options: [
-              "He dictated it years later to the editor Ibn Juzayy, and scholars debate whether every leg of the itinerary is firsthand",
-              "He could not write at all",
-              "He never existed",
-              "He visited only Europe",
+              "He dictated it years later to Ibn Juzayy, an editor",
+              "He could not write at all, in any language he knew",
+              "He never existed; the traveler is a later invention",
+              "He visited only Europe, and never Africa or Asia",
             ],
             correctIndex: 0,
             explanation:
@@ -1726,10 +1731,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Which of these belongs to the INSIDER African written record?",
             options: [
-              "The Tarikh al-Sudan, an African-written history of Songhai, plus Ge'ez manuscripts and ajami traditions",
-              "Al-Umari's encyclopedia",
-              "The Catalan Atlas",
-              "The Periplus of the Erythraean Sea",
+              "The Tarikh al-Sudan, an African-written history of Songhai",
+              "Al-Umari's Cairo encyclopedia of all the known world",
+              "The Catalan Atlas, drawn on Majorca in the year 1375",
+              "The Periplus of the Erythraean Sea, written in Greek",
             ],
             correctIndex: 0,
             explanation:
@@ -1739,10 +1744,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Why is the Kilwa Chronicle's double survival (Arabic version and Portuguese rendering) methodologically useful?",
             options: [
-              "Historians can watch two transmissions of one tradition diverge, exposing how texts change in the telling",
-              "It proves the Portuguese wrote Swahili history first",
-              "It makes the chronicle twice as long",
-              "It settles Kilwa's foundation date exactly",
+              "Two transmissions of one tradition can be watched diverging",
+              "It proves the Portuguese wrote Swahili history down first",
+              "It makes the surviving chronicle twice as long to read",
+              "It settles Kilwa's foundation date exactly, to a year",
             ],
             correctIndex: 0,
             explanation:
@@ -1752,10 +1757,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "How does the course use Benin to argue 'absence of writing is not absence of history'?",
             options: [
-              "Benin's royal history is cast in brass plaques, carried by professional court remembrancers, and cross-checkable against four centuries of European trade records",
-              "Benin actually had a secret alphabet",
-              "Benin's history is unknowable",
-              "Benin's history comes only from British sources",
+              "Cast in brass plaques and carried by court remembrancers",
+              "Benin actually kept a secret alphabet in the palace",
+              "Benin's history is simply unknowable to historians",
+              "Benin's history comes only from British trade sources",
             ],
             correctIndex: 0,
             explanation:
@@ -1765,10 +1770,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Why was radiocarbon dating 'quietly revolutionary' for African history?",
             options: [
-              "It dates sites without documents, dissolving the premise that history requires written records",
-              "It made excavation unnecessary",
-              "It works only in deserts",
-              "It reads inscriptions chemically",
+              "It dates sites without documents, dissolving the premise",
+              "It made any further excavation entirely unnecessary",
+              "It works only in dry desert conditions, not forests",
+              "It reads worn stone inscriptions chemically for us",
             ],
             correctIndex: 0,
             explanation:
@@ -1778,10 +1783,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What did Thurstan Shaw's excavations at Igbo-Ukwu establish?",
             options: [
-              "Technically dazzling leaded-bronze casting and long-distance trade in southeastern Nigeria by the ninth-tenth century CE, dates so surprising they were re-tested for years and held",
-              "The first Portuguese fort in Nigeria",
-              "That the bronzes were cast in Egypt",
-              "A Roman settlement on the Niger",
+              "Dazzling bronze casting and long-distance trade by the 900s CE",
+              "The site of the first Portuguese fort built in Nigeria",
+              "That the bronzes were in fact cast in Egypt and shipped",
+              "A Roman trading settlement on the lower Niger, c. 200 CE",
             ],
             correctIndex: 0,
             explanation:
@@ -1791,10 +1796,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "In Vansina's method, what is 'telescoping'?",
             options: [
-              "Oral chronology compressing over generations, with middle generations dropping out",
-              "Using lenses to read manuscripts",
-              "Combining two traditions into one",
-              "Extending a king list to flatter a patron",
+              "Oral chronology compressing, with middle generations dropped",
+              "Using ground glass lenses to read faded old manuscripts",
+              "Combining two separate oral traditions into a single one",
+              "Extending a king list further in order to flatter a patron",
             ],
             correctIndex: 0,
             explanation:
@@ -1804,10 +1809,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What is 'feedback' as a limit of oral tradition?",
             options: [
-              "Written accounts leaking back into oral traditions and masquerading as independent confirmation",
-              "Audience applause changing a performance",
-              "Microphone interference in recordings",
-              "Griots correcting each other",
+              "Written accounts leaking back into oral tradition",
+              "Audience applause changing a griot's performance",
+              "Microphone interference in field recordings",
+              "Griots correcting each other in performance",
             ],
             correctIndex: 0,
             explanation:
@@ -1817,10 +1822,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What does the Epic of Sundiata reliably evidence, per the course?",
             options: [
-              "Mali's founding tradition, dynastic sequence, and institutions, anchored by Ibn Khaldun's lists; NOT precise chronology, which is why Kirina is dated 'traditionally c. 1235'",
+              "Mali's founding tradition and dynastic sequence, not chronology",
               "The exact date and casualty count of the Battle of Kirina",
-              "Nothing; epics are not evidence",
-              "The gold output of the Bure fields",
+              "Nothing whatsoever; epics can never be historical evidence",
+              "The annual gold output of the Bure fields in the empire",
             ],
             correctIndex: 0,
             explanation:
@@ -1830,10 +1835,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "How is the Bantu expansion primarily reconstructed?",
             options: [
-              "From historical linguistics (language family trees and loanwords for crops, iron, cattle), cross-checked against archaeology",
-              "From Roman travel diaries",
-              "From a medieval Bantu chronicle",
-              "From colonial census records",
+              "From historical linguistics, cross-checked against archaeology",
+              "From Roman travel diaries describing the deep interior",
+              "From a medieval Bantu chronicle kept on the coast there",
+              "From colonial census records taken in the 1920s and 1930s",
             ],
             correctIndex: 0,
             explanation:
@@ -1843,10 +1848,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "What is the convergence rule?",
             options: [
-              "Confidence comes when INDEPENDENT lines of evidence agree; any single method can mislead",
-              "The majority of historians voting settles a question",
-              "Newer sources always beat older ones",
-              "Physical evidence always beats writing",
+              "Confidence comes when INDEPENDENT lines of evidence agree",
+              "The majority of historians voting settles the question",
+              "Newer sources always beat older ones on any point",
+              "Physical evidence always beats any written source",
             ],
             correctIndex: 0,
             explanation:
@@ -1869,10 +1874,10 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
           {
             prompt: "Who were the jeliw?",
             options: [
-              "Professional, formally trained oral historians and praise-singers of the Mande world (griots)",
-              "Songhai cavalry officers",
-              "Swahili ship pilots",
-              "Aksumite coin engravers",
+              "Professional trained oral historians of the Mande world",
+              "Songhai cavalry officers under the Askia dynasty",
+              "Swahili ship pilots working the monsoon sea routes",
+              "Aksumite coin engravers working in gold and silver",
             ],
             correctIndex: 0,
             explanation:
@@ -2028,10 +2033,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "What is this course's sharpest overall finding about the 'Africa has no history' claim?",
             options: [
-              "The 'darkness' was manufactured: denial was sustained institutional work, documentable in the deniers' own publications and laws",
-              "The claim was true until 1960",
-              "The claim was an innocent error corrected as soon as evidence appeared",
-              "The claim was never actually made by anyone",
+              "The 'darkness' was manufactured: denial was institutional work",
+              "The claim was straightforwardly true until the year 1960",
+              "An innocent error corrected as soon as evidence appeared",
+              "The claim was never actually made by any serious scholar",
             ],
             correctIndex: 0,
             explanation:
@@ -2041,10 +2046,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "Which sequence of corrective institutions is right?",
             options: [
-              "Journal of African History (1960); UNESCO General History of Africa launched (1964), its 8 volumes published 1981-1993",
-              "UNESCO GHA (1837); JAH (1897)",
-              "Both were founded in the 1990s",
-              "Neither exists",
+              "Journal of African History (1960); UNESCO GHA launched (1964)",
+              "UNESCO GHA (1837); the Journal of African History (1897)",
+              "Both of these institutions were founded in the early 1990s",
+              "Neither institution has ever existed in any form at all",
             ],
             correctIndex: 0,
             explanation:
@@ -2054,10 +2059,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "How does the course handle Cheikh Anta Diop?",
             options: [
-              "Credits him with forcing open questions (ancient Egypt's African context) a generation early, while labeling some of his specific claims contested",
-              "Endorses every claim he made",
-              "Dismisses him entirely",
-              "Does not mention him",
+              "Credits him with forcing questions open; some claims contested",
+              "Endorses every single claim he ever made in all his books",
+              "Dismisses him entirely as an unserious and popular writer",
+              "Does not mention him or any of his work at any point at all",
             ],
             correctIndex: 0,
             explanation:
@@ -2067,8 +2072,8 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "Which pairing of evidence to claim is correct?",
             options: [
-              "Ezana's conversion: contemporary coins switching to the cross mid-reign",
-              "Mansa Musa's exact net worth: al-Umari's ledgers",
+              "Ezana's conversion: contemporary coins switching to the cross",
+              "Mansa Musa's exact net worth: al-Umari's Cairo ledgers",
               "Great Zimbabwe's Phoenician origin: Caton-Thompson 1931",
               "The Ark of the Covenant at Aksum: radiocarbon-verified",
             ],
@@ -2080,10 +2085,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "A blog post says: 'Africans never developed writing.' Which single lesson-fact most efficiently falsifies it?",
             options: [
-              "The Ge'ez tradition: an African script in continuous use from Aksum's fourth-century inscriptions to today's liturgy",
-              "The monsoon winds",
-              "The 1505 sack of Kilwa",
-              "The Battle of Tondibi",
+              "The Ge'ez tradition: an African script in use since the 300s",
+              "The monsoon winds that powered the Indian Ocean trade",
+              "The 1505 Portuguese sack of Kilwa on the Swahili coast",
+              "The Battle of Tondibi and the fall of Songhai in 1591",
             ],
             correctIndex: 0,
             explanation:
@@ -2093,10 +2098,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "A different post says: 'Precolonial Africa was a paradise without war or slavery.' What is the course's response?",
             options: [
-              "That is the romance trap: African states fought wars and held and sold slaves (Section 5 teaches it plainly), and sanitizing the record concedes the deniers' premise",
-              "Correct, and the course proves it",
-              "Unknowable either way",
-              "True for the whole continent except Egypt",
+              "The romance trap: African states fought wars and sold slaves",
+              "Correct, and the course proves the point at some length",
+              "Unknowable either way from the surviving evidence today",
+              "True across the whole continent apart from Egypt alone",
             ],
             correctIndex: 0,
             explanation:
@@ -2119,10 +2124,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "Which three-part chain correctly connects Great Zimbabwe to China?",
             options: [
-              "Plateau gold to Sofala; Sofala's trade controlled by Kilwa; Kilwa in the monsoon network that carried Chinese porcelain (found in Great Zimbabwe's ruins)",
-              "A Chinese fleet sailed up the Zambezi to the city",
-              "Zheng He built the Great Enclosure",
-              "There is no connection; the porcelain finds are fake",
+              "Plateau gold to Sofala; Sofala to Kilwa; Kilwa to the monsoon",
+              "A Chinese fleet sailed up the Zambezi to the city walls",
+              "Zheng He's crews built the Great Enclosure at the site",
+              "There is no connection; the porcelain finds are all fake",
             ],
             correctIndex: 0,
             explanation:
@@ -2132,10 +2137,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "What made Adwa (1896) diplomatically unique in the Scramble era?",
             options: [
-              "The victory was converted into treaty recognition of full independence, and European powers opened embassies",
-              "It was the only battle Africans won",
-              "It ended colonialism continent-wide",
-              "It was fought without weapons",
+              "The victory became treaty recognition of full independence",
+              "It was the only battle that any African army ever won",
+              "It ended colonial rule across the entire continent",
+              "It was fought entirely without any modern weaponry",
             ],
             correctIndex: 0,
             explanation:
@@ -2145,10 +2150,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "Which of these is a correct application of the five-part audit?",
             options: [
-              "'The bronzes were cast by the Edo casters' guild of Benin City, mostly 16th-17th centuries, per court tradition, trade records, and the 2023 isotope study, which converge'",
-              "'Africa made bronzes at some point'",
-              "'Bronzes prove Atlantis traded with Africa'",
-              "'All African art is anonymous and undatable'",
+              "'Cast by Edo guild casters of Benin City, 16th-17th centuries'",
+              "'Africa made some bronzes at some point in its long past'",
+              "'The bronzes prove that Atlantis once traded with Africa'",
+              "'All African art is anonymous and quite impossible to date'",
             ],
             correctIndex: 0,
             explanation:
@@ -2158,10 +2163,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "Why does the course insist on naming individuals (Caton-Thompson, Garlake, Vansina, Hunwick, Diop, Haidara) in its closing lesson?",
             options: [
-              "Because the record survived through people's documented work and risk, and naming them is the same precision the course applies to kings",
-              "To pad the bibliography",
-              "Because they were all African",
-              "Because institutions played no role",
+              "Because the record survived through named people's work and risk",
+              "To pad out the course bibliography with additional names",
+              "Because every single one of them was born in Africa itself",
+              "Because institutions played no part whatsoever in the work",
             ],
             correctIndex: 0,
             explanation:
@@ -2172,8 +2177,8 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
             prompt: "Which claim below would this course label 'tradition, not verified fact'?",
             options: [
               "The Ark of the Covenant rests in the chapel at Aksum",
-              "Kilwa minted copper coins",
-              "Meroitic can be sounded out but not read",
+              "Kilwa minted its own copper coinage on the Swahili coast",
+              "Meroitic can be sounded out but not read as a language",
               "The Great Mosque of Djenne standing today was built in 1907",
             ],
             correctIndex: 0,
@@ -2184,10 +2189,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "What, per the course, is the correct one-sentence response to Trevor-Roper's 'history requires documents'?",
             options: [
-              "The documents existed (Ge'ez, the chronicles, the Arabic corpus), and documents were never the only admissible evidence (radiocarbon, oral tradition with rules, linguistics)",
-              "Documents are colonial constructs",
-              "He was right, but Africa is an exception",
-              "Oral tradition is superior to writing",
+              "The documents existed, and documents were never the only evidence",
+              "Documents are merely colonial constructs of that whole era",
+              "He was right in general, but Africa is a special exception",
+              "Oral tradition is inherently superior to any written record",
             ],
             correctIndex: 0,
             explanation:
@@ -2197,10 +2202,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "Which reading list does the course recommend as the starting shelf?",
             options: [
-              "UNESCO General History of Africa; Fauvelle's Golden Rhinoceros; Thornton, Green, and Gomez",
-              "Hegel, Trevor-Roper, and Seligman",
-              "Only nineteenth-century travel diaries",
-              "Social media threads, curated for engagement",
+              "UNESCO's General History of Africa; Fauvelle; Thornton",
+              "Hegel, Trevor-Roper, Seligman, and also Frobenius",
+              "Only nineteenth-century European travellers' diaries",
+              "Social media threads, curated for engagement only",
             ],
             correctIndex: 0,
             explanation:
@@ -2210,10 +2215,10 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
           {
             prompt: "The final habit this course wants you to keep is:",
             options: [
-              "Run the audit (people, place, century, sources, convergence) on every historical claim, especially the ones you want to believe",
-              "Trust museum labels",
-              "Prefer the most dramatic version of any story",
-              "Assume all old sources are worthless",
+              "Run the audit on every claim, especially ones you want to believe",
+              "Trust the museum labels and whatever the wall captions say",
+              "Always prefer the most dramatic version of any story told",
+              "Assume that every old source is worthless and skip them all",
             ],
             correctIndex: 0,
             explanation:

@@ -166,9 +166,9 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "In Asante's definition, being 'Afrocentric' primarily means:",
             options: [
-              "Placing African people and interests at the CENTER of the analysis, as subjects and agents",
-              "Proving that African civilizations were superior to European ones",
-              "Studying Africa using standard European historical methods",
+              "Placing African people at the center of analysis, as subjects and agents",
+              "Proving that African civilizations were superior to all European ones",
+              "Studying Africa with the standard methods of European historiography",
               "Uniting all people of African descent into one political movement",
             ],
             correctIndex: 0,
@@ -179,9 +179,9 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "Why does this course spend a whole lesson on Hegel and Trevor-Roper before criticizing any Afrocentric claim?",
             options: [
-              "To establish that the Eurocentric erasure Afrocentricity reacts against was real, so its corrective impulse is legitimate",
-              "To prove that all European scholarship is worthless",
-              "To show that Afrocentricity's specific claims are all correct",
+              "To establish that the Eurocentric erasure it reacts against was real",
+              "To prove that all European scholarship on Africa is worthless",
+              "To show in advance that Afrocentricity's specific claims all hold",
               "Because Hegel and Trevor-Roper were themselves Afrocentric scholars",
             ],
             correctIndex: 0,
@@ -192,10 +192,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "Which pair correctly matches each founder to his main contribution?",
             options: [
-              "Diop = the founding historical claim about Egypt (argued from evidence); Asante = the named method and movement",
-              "Diop = the method and movement; Asante = the Egypt claim",
-              "Both Diop and Asante focused only on the melanin theory",
-              "Diop = a critic of Afrocentricity; Asante = a critic of Diop",
+              "Diop = the founding Egypt claim; Asante = the named method and movement",
+              "Diop = the named method and movement; Asante = the founding Egypt claim",
+              "Both Diop and Asante built their main case on the melanin theory",
+              "Diop = an early critic of Afrocentricity; Asante = a critic of Diop",
             ],
             correctIndex: 0,
             explanation:
@@ -205,10 +205,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "'Afrocentricity is a paradigm.' What does calling it a paradigm imply about why it can be argued about?",
             options: [
-              "A paradigm is a proposed lens for how to do scholarship, and reasonable people can disagree about lenses",
+              "A paradigm is a proposed lens for scholarship, and lenses are debatable",
               "A paradigm is a proven fact, so disagreement means the critic is simply wrong",
               "A paradigm is a political party, so the debate is really about elections",
-              "A paradigm cannot be argued about at all",
+              "A paradigm is a settled method of research that cannot be argued about",
             ],
             correctIndex: 0,
             explanation:
@@ -218,10 +218,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "How does the course distinguish Afrocentricity (Asante's paradigm) from Pan-Africanism?",
             options: [
-              "Afrocentricity is a scholarly paradigm/lens; Pan-Africanism is a political project of unity among people of African descent",
-              "They are two names for exactly the same thing",
+              "Afrocentricity is a scholarly lens; Pan-Africanism is a political project of unity",
+              "They are two different names for exactly the same scholarly and political project",
               "Pan-Africanism is about ancient Egypt; Afrocentricity is about modern elections",
-              "Afrocentricity rejects Africa; Pan-Africanism centers it",
+              "Afrocentricity rejects Africa as a center, while Pan-Africanism restores it",
             ],
             correctIndex: 0,
             explanation:
@@ -231,10 +231,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "In the 'enslaved people were brought to the Americas' example, what point is Asante's approach making?",
             options: [
-              "The same events can be re-centered to foreground African agency (what African people DID), not just what was done to them",
-              "The events never happened",
-              "Grammar has nothing to do with how history is told",
-              "Europeans should be removed from all historical accounts",
+              "The same events can be re-centered to foreground African agency",
+              "The passive phrasing is the only historically accurate way to say it",
+              "Grammar and word choice have nothing to do with how history gets told",
+              "Europeans should be deleted from all accounts of the Atlantic trade",
             ],
             correctIndex: 0,
             explanation:
@@ -244,10 +244,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "Which statement best captures the 'dual hold' this course keeps returning to?",
             options: [
-              "'Eurocentric scholarship distorted Africa' and 'not every Afrocentric claim is supported' can both be true at once",
+              "Both are true at once: Eurocentrism distorted Africa; not every claim holds",
               "If Eurocentrism was biased, then every Afrocentric claim must be correct",
-              "If any Afrocentric claim is wrong, then the whole grievance is invalid",
-              "Contested paradigms should simply be ignored",
+              "If any one Afrocentric claim is wrong, then the whole grievance is invalid",
+              "Contested paradigms should simply be ignored until the experts agree",
             ],
             correctIndex: 0,
             explanation:
@@ -257,10 +257,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "The reclassification of Great Zimbabwe's ruins to 'outside builders' is used in the course as an example of:",
             options: [
-              "A real Eurocentric distortion, attributing African achievements to non-Africans",
-              "A modern Afrocentric myth with no basis",
-              "A settled debate with no controversy",
-              "An achievement of nineteenth-century archaeology",
+              "A real Eurocentric distortion of African achievement",
+              "A modern Afrocentric myth with no archaeological basis",
+              "A settled debate that has never drawn controversy",
+              "A triumph of careful nineteenth-century archaeology",
             ],
             correctIndex: 0,
             explanation:
@@ -270,10 +270,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "What does it mean that this course represents Diop and Asante 'through their own books'?",
             options: [
-              "It presents the strongest version of their case from primary sources before presenting critics, steelmanning, not caricaturing",
+              "It presents their strongest case from primary sources first",
               "It only quotes what critics say Diop and Asante believed",
-              "It treats their books as automatically correct",
-              "It avoids citing them at all",
+              "It treats their published books as automatically correct",
+              "It avoids citing their own writing, using summaries instead",
             ],
             correctIndex: 0,
             explanation:
@@ -283,10 +283,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "Which of these is NOT the same thing as Afrocentricity in Asante's academic sense?",
             options: [
-              "Simply studying Africa, which scholars of every background do",
-              "Placing African agency at the center of analysis",
-              "Treating Africans as subjects rather than objects",
-              "A named paradigm with a defined method",
+              "Studying Africa, which scholars of every background do",
+              "Placing African agency at the center of the analysis",
+              "Treating African people as subjects rather than objects",
+              "A named paradigm with its own clearly defined method",
             ],
             correctIndex: 0,
             explanation:
@@ -296,10 +296,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "Diop's single most consequential and most contested claim, examined later in the course, is that:",
             options: [
-              "Ancient Egypt (Kemet) was a Black African civilization and a source of later Mediterranean culture",
-              "Africa has no history worth studying",
+              "Ancient Egypt (Kemet) was a Black African civilization",
+              "Africa south of the Sahara has no history worth studying",
               "Greek philosophy was invented independently of Egypt",
-              "The Afrocentric paradigm should be abandoned",
+              "The Afrocentric paradigm should now be abandoned entirely",
             ],
             correctIndex: 0,
             explanation:
@@ -309,10 +309,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "What is the best reason to state an idea 'in the words of the people who hold it' before evaluating it?",
             options: [
-              "Fair evaluation requires the strongest, accurate version of a view, not a version its opponents built to knock down",
-              "It guarantees the idea is correct",
-              "It lets you skip reading the critics",
-              "It is required only for ideas you already agree with",
+              "Fair evaluation needs the strongest accurate version of a view",
+              "Quoting a thinker exactly guarantees the idea is correct",
+              "Doing so lets you skip reading any of the critics afterwards",
+              "It is required only for the ideas you already agree with",
             ],
             correctIndex: 0,
             explanation:
@@ -322,10 +322,10 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "Which best describes the relationship the course draws between Diop and Asante?",
             options: [
-              "Diop is the intellectual root; Asante named and systematized the paradigm decades later",
+              "Diop is the root; Asante named the paradigm decades later",
               "They co-wrote the founding book of Afrocentricity together",
-              "Asante preceded and taught Diop",
-              "They were rivals who rejected each other's work",
+              "Asante came first and taught the young Diop the paradigm",
+              "They were rivals who rejected each other's published work",
             ],
             correctIndex: 0,
             explanation:
@@ -335,8 +335,8 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
           {
             prompt: "A classmate says: 'Afrocentricity just means Black people are better than everyone else.' Using Lesson 1, the most accurate correction is:",
             options: [
-              "No, in Asante's definition it is about centering African agency, not asserting superiority",
-              "Yes, that is exactly Asante's definition",
+              "No, it is about centering African agency, not superiority",
+              "Yes, that is very close to Asante's own stated definition",
               "Afrocentricity has no definition, so any description is fine",
               "That is the definition of Pan-Africanism, not Afrocentricity",
             ],
@@ -470,9 +470,9 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "What is the course's stated rule for teaching the Kemet debate?",
             options: [
-              "Present the strongest version of each side, attributed to who argued it, and declare no winner",
-              "Prove that ancient Egypt was a Black African civilization",
-              "Prove that ancient Egypt was not African at all",
+              "Present each side's strongest case, attributed, and declare no winner",
+              "Prove that ancient Egypt was a Black African civilization outright",
+              "Prove that ancient Egypt was not an African civilization at all",
               "Avoid the debate because it is too controversial for students",
             ],
             correctIndex: 0,
@@ -484,8 +484,8 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
             prompt: "Which of these was one of Diop's actual lines of evidence?",
             options: [
               "Melanin-dosage tests he ran on samples of mummy skin",
-              "Modern DNA sequencing of living Egyptians",
-              "Satellite imaging of the pyramids",
+              "Modern DNA sequencing of living Egyptian populations",
+              "Satellite radar imaging of the Giza pyramid complex",
               "A signed census from the Old Kingdom recording skin color",
             ],
             correctIndex: 0,
@@ -496,10 +496,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "Diop and Obenga presented the 'Black hypothesis' at a formal 1974 gathering. What was it, and how did it go?",
             options: [
-              "The UNESCO Cairo symposium, most specialists in the room did not accept the strong thesis",
-              "A UNESCO symposium at which every expert agreed with Diop",
-              "A secret meeting whose results were never published",
-              "A Temple University seminar Asante organized",
+              "The UNESCO Cairo symposium; most specialists did not accept it",
+              "A UNESCO symposium at which every expert present agreed with Diop",
+              "A closed meeting whose results were never published anywhere",
+              "A Temple University seminar that Asante himself organized",
             ],
             correctIndex: 0,
             explanation:
@@ -509,10 +509,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "When UNESCO published Diop's chapter in the General History of Africa, editor Gamal Mokhtar added a note. What did it say, and why does the course praise it?",
             options: [
-              "That the views 'have not been accepted by all the experts', modeling transparency by publishing the dispute alongside the claim",
+              "That the views 'have not been accepted by all the experts'",
               "That Diop's views were now the official UNESCO position",
-              "That Diop should be removed from the volume",
-              "That no disagreement existed among scholars",
+              "That Diop's chapter should be removed from the volume",
+              "That no disagreement existed among the experts at all",
             ],
             correctIndex: 0,
             explanation:
@@ -522,10 +522,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "What is the CENTRAL move of the mainstream Egyptological response to 'was Egypt Black or white?'",
             options: [
-              "That 'race' as a Black/white binary is a modern category the ancient Egyptians did not use as we do",
-              "That ancient Egypt was obviously a European civilization",
+              "That the Black/white racial binary is a modern category, not theirs",
+              "That ancient Egypt was obviously a European civilization instead",
               "That ancient Egypt had no connection to the African continent",
-              "That the question can be settled by a single DNA test",
+              "That the question can be settled outright by a single DNA test",
             ],
             correctIndex: 0,
             explanation:
@@ -535,10 +535,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "How do the two sides read the word 'Kemet' differently?",
             options: [
-              "Diop reads it as 'land of the Black people' (self-description); mainstream Egyptology reads it as 'the Black Land', the dark fertile Nile soil",
-              "Both sides agree it means 'the White Land'",
+              "Diop: 'land of the Black people'; mainstream: 'the Black Land', the soil",
+              "Both sides now agree the word means 'the White Land' of the desert",
               "Diop says it means the desert; the mainstream says it means the river",
-              "Neither side thinks the word means anything",
+              "Neither side thinks the word 'Kemet' carries any real meaning at all",
             ],
             correctIndex: 0,
             explanation:
@@ -548,10 +548,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "The course says mainstream Egyptology does NOT respond to Diop by reasserting a 'white Egypt.' Why not?",
             options: [
-              "Because that old racist picture is dead, and helping to kill it was partly Diop's achievement",
-              "Because Egyptologists secretly agree Egypt was European",
-              "Because the topic is banned from scholarship",
-              "Because no one has studied ancient Egypt since 1974",
+              "Because that old racist picture is dead, partly thanks to Diop",
+              "Because Egyptologists secretly agree that Egypt was European",
+              "Because the topic has been banned from academic scholarship",
+              "Because no one has studied ancient Egypt since 1974 at all",
             ],
             correctIndex: 0,
             explanation:
@@ -561,10 +561,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "Why do critics say Diop's melanin-dosage tests are unreliable?",
             options: [
-              "Embalming chemicals, decomposition, and millennia of time alter mummified skin",
-              "Melanin does not exist in human skin",
-              "The tests were never actually performed by anyone",
-              "Diop refused to publish his methods",
+              "Embalming chemicals and millennia of time alter the skin",
+              "Melanin is not actually present in living human skin",
+              "The tests were never actually performed on any mummy",
+              "Diop refused to publish his methods or his samples",
             ],
             correctIndex: 0,
             explanation:
@@ -574,10 +574,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "What did the 2017 Schuenemann et al. ancient-DNA study actually find?",
             options: [
-              "Mummies from one northern site were most closely related to ancient Near Eastern/Levantine populations, and modern Egyptians carry more sub-Saharan ancestry than those samples did",
+              "Mummies from one northern site clustered with Near Eastern populations",
               "Ancient Egyptians were genetically identical to modern West Africans",
-              "Ancient Egyptians were genetically European",
-              "No DNA could be recovered from any Egyptian remains",
+              "Ancient Egyptians were genetically European across every sample tested",
+              "No usable DNA could be recovered from any of the Egyptian remains",
             ],
             correctIndex: 0,
             explanation:
@@ -587,10 +587,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "Name a reason the 2017 DNA study does NOT settle the Kemet debate.",
             options: [
-              "It is one northern site, over a late/narrow time window, with genome-wide data from only three individuals",
-              "It sampled every Egyptian who ever lived",
-              "It covered the Predynastic and Old Kingdom in detail",
-              "It proved that race is written directly in DNA",
+              "One northern site, a late time window, three genome-wide samples",
+              "It sampled every Egyptian who ever lived, at every period",
+              "It covered the Predynastic and the Old Kingdom in full detail",
+              "It proved that racial identity is written directly into DNA",
             ],
             correctIndex: 0,
             explanation:
@@ -600,9 +600,9 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "The course argues that 'even a perfect genome cannot tell you whether a person counts as Black.' Why?",
             options: [
-              "Because 'Black' is a social category, not a strand of DNA, genetics can describe ancestry, not adjudicate a modern racial label",
-              "Because DNA is fictional",
-              "Because all humans have identical genomes",
+              "Because 'Black' is a social category, not a strand of DNA",
+              "Because DNA evidence is an entirely fictional construct",
+              "Because all living humans have completely identical genomes",
               "Because ancestry and race are exactly the same thing",
             ],
             correctIndex: 0,
@@ -613,10 +613,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "A student says: 'The DNA study proves Diop was wrong, case closed.' The best correction from this section is:",
             options: [
-              "One limited study complicates both extremes but can't close a question that is partly about a modern social category",
-              "Agree, one study always settles a historical debate",
-              "The study proves Diop was completely right",
-              "DNA evidence should never be discussed in history",
+              "One limited study complicates both extremes, closing nothing",
+              "Agree, since one study always settles a historical debate",
+              "The study actually proves that Diop was completely right",
+              "DNA evidence should never be discussed in history at all",
             ],
             correctIndex: 0,
             explanation:
@@ -626,7 +626,7 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "What durable, transferable habit does the DNA lesson teach for any 'new science meets old debate' moment?",
             options: [
-              "Ask what the study sampled, how much of it there is, and what question it can and cannot answer, before letting a headline decide",
+              "Ask what was sampled, how much, and what it can answer",
               "Trust whichever headline was published most recently",
               "Assume the newest study overturns everything before it",
               "Ignore all genetic evidence in historical questions",
@@ -639,10 +639,10 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "Why does the course insist Diop's Egypt claim be weighed 'as scholarship, not waved away'?",
             options: [
-              "Because Diop argued it with the tools of science and classical scholarship, not with slogans",
-              "Because Diop was a politician, not a scholar",
-              "Because the claim is obviously correct",
-              "Because no one has ever disagreed with it",
+              "Because he argued it with the tools of science, not slogans",
+              "Because Diop was really a politician and not a scholar",
+              "Because the claim is obviously and provably correct",
+              "Because no serious scholar has ever disagreed with it",
             ],
             correctIndex: 0,
             explanation:
@@ -652,8 +652,8 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
           {
             prompt: "Which statement best captures the section's overall conclusion about the Kemet question?",
             options: [
-              "Good-faith experts reading the same evidence reach different conclusions; the evidence underdetermines the answer, so the course declares no winner",
-              "The debate was definitively won by Diop in 1974",
+              "The evidence underdetermines the answer, so the course declares no winner",
+              "The debate was definitively won by Diop at the 1974 Cairo symposium",
               "The debate was definitively won by mainstream Egyptology in 2017",
               "The question has an easy yes-or-no answer that students should memorize",
             ],
@@ -795,10 +795,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "Who was Martin Bernal, and what was Black Athena (1987)?",
             options: [
-              "A Cornell scholar (trained in Chinese political history) whose book argued Greek civilization owed a suppressed debt to Egypt and Phoenicia",
+              "A Cornell scholar who argued Greece owed a debt to Egypt",
               "An Egyptologist who proved ancient Egypt was European",
-              "A classicist who wrote Not Out of Africa",
-              "The author of Stolen Legacy (1954)",
+              "A Wellesley classicist who wrote Not Out of Africa",
+              "The author of Stolen Legacy, first published in 1954",
             ],
             correctIndex: 0,
             explanation:
@@ -808,10 +808,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "In Bernal's terms, what is the difference between the 'Ancient Model' and the 'Aryan Model'?",
             options: [
-              "Ancient Model = the Greeks' own belief they were indebted to Egypt/Phoenicia; Aryan Model = a later European recasting of Greece as essentially Indo-European",
-              "Ancient Model = the modern DNA view; Aryan Model = Herodotus's view",
-              "They are two names for the same idea",
-              "Ancient Model = Nazi race science; Aryan Model = Greek mythology",
+              "Ancient Model = the Greeks' debt to Egypt; Aryan Model = a later recasting",
+              "Ancient Model = the modern DNA consensus; Aryan Model = Herodotus's view",
+              "They are two different names Bernal gave to one and the same idea",
+              "Ancient Model = Nazi race science; Aryan Model = classical Greek myth",
             ],
             correctIndex: 0,
             explanation:
@@ -821,10 +821,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "Bernal's most provocative claim wasn't only about antiquity. What else was it about?",
             options: [
-              "That the switch to the Aryan Model was driven partly by 19th-century racism and anti-Semitism among scholars",
-              "That the Greeks never existed",
-              "That Egypt never influenced anyone",
-              "That all etymology is worthless",
+              "That the switch to the Aryan Model was driven partly by racism",
+              "That the classical Greeks never existed as a distinct people",
+              "That Egypt never influenced any of its neighboring cultures",
+              "That all etymology is worthless as historical evidence",
             ],
             correctIndex: 0,
             explanation:
@@ -834,10 +834,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "Lefkowitz's two 1996 books had different targets. Which pairing is correct?",
             options: [
-              "'Not Out of Africa' = popular, aimed at the 'stolen legacy' curriculum claim; 'Black Athena Revisited' = scholarly, engaging Bernal's specifics (co-edited with Guy MacLean Rogers)",
-              "Both books were about DNA evidence",
+              "'Not Out of Africa' = popular; 'Black Athena Revisited' = scholarly, on Bernal",
+              "Both books were arguments about the ancient-DNA evidence from Egyptian mummies",
               "'Not Out of Africa' engaged only Bernal; 'Black Athena Revisited' engaged only James",
-              "Both were written by Bernal",
+              "Both of the 1996 books were written by Martin Bernal himself, in reply to critics",
             ],
             correctIndex: 0,
             explanation:
@@ -847,9 +847,9 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "Did the Bernal-Lefkowitz exchange end with one side surrendering?",
             options: [
-              "No, Bernal replied in 'Black Athena Writes Back' (2001) and the debate ran for years in the journals",
-              "Yes, Bernal publicly retracted the book",
-              "Yes, Lefkowitz withdrew her criticism",
+              "No, Bernal replied in 'Black Athena Writes Back' (2001)",
+              "Yes, Bernal publicly retracted the book in 2001",
+              "Yes, Lefkowitz publicly withdrew her criticism in 2001",
               "There was never actually any response to Black Athena",
             ],
             correctIndex: 0,
@@ -860,10 +860,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "What is the 'dual answer' on how Bernal's thesis fared in scholarship?",
             options: [
-              "Most classicists rejected his specific etymologies and colonization chronology, but the field moved toward his broad point about Near Eastern influence and 19th-century bias",
-              "Everything Bernal wrote was accepted",
-              "Everything Bernal wrote was rejected",
-              "Scholars ignored the book entirely",
+              "Classicists rejected his etymologies; the field moved toward his broad point",
+              "Everything that Bernal wrote was accepted by classicists within a decade",
+              "Everything that Bernal wrote was rejected by classicists within a decade",
+              "Scholars ignored the book entirely and never reviewed it in the journals",
             ],
             correctIndex: 0,
             explanation:
@@ -886,10 +886,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "What is the single clearest reason Stolen Legacy's 'Aristotle looted the Library of Alexandria' claim fails?",
             options: [
-              "Aristotle died in 322 BCE, but the Library was founded later (c. 285 BCE), he could not loot a library that did not yet exist",
-              "Aristotle never visited any library",
-              "The Library never actually existed",
-              "Aristotle wrote nothing down",
+              "Aristotle died in 322 BCE; the Library was founded c. 285 BCE",
+              "Aristotle never visited any library during his own lifetime",
+              "The Library of Alexandria never actually existed at all",
+              "Aristotle himself never wrote any of his own works down",
             ],
             correctIndex: 0,
             explanation:
@@ -899,10 +899,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "Scholars who traced James's 'Egyptian Mystery System' found that it actually derives largely from:",
             options: [
-              "Later Greco-Roman and Masonic/Rosicrucian writings about Egypt, not ancient Egyptian texts",
-              "Original hieroglyphic temple records",
-              "Diop's melanin tests",
-              "The Library of Alexandria's surviving catalog",
+              "Later Greco-Roman and Masonic writings, not Egyptian texts",
+              "Original hieroglyphic records from Egyptian temples",
+              "Diop's own melanin-dosage tests on samples of mummy skin",
+              "The Library of Alexandria's surviving shelf catalog",
             ],
             correctIndex: 0,
             explanation:
@@ -912,10 +912,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "The course says rejecting Stolen Legacy is NOT an anti-African move. Why?",
             options: [
-              "Because careful scholars sympathetic to Afrocentricity's aims also reject it, it fails on chronology and sources, not on politics",
-              "Because Africa has no history",
-              "Because James was not African",
-              "Because the Library of Alexandria was unimportant",
+              "Because scholars sympathetic to its aims reject it on the evidence",
+              "Because rejecting a bad book is always a political act anyway",
+              "Because George G. M. James was not himself an African scholar",
+              "Because the Library of Alexandria was historically unimportant",
             ],
             correctIndex: 0,
             explanation:
@@ -925,10 +925,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "What documented truth must NOT be erased when debunking Stolen Legacy?",
             options: [
-              "That Egypt genuinely influenced Greece, the Greeks themselves credited Egyptian learning, and transmission of math, art, and myth is documented",
-              "That Aristotle looted the Library after all",
-              "That Greek philosophy was 100% Egyptian",
-              "That Greece and Egypt never had contact",
+              "That Egypt genuinely influenced Greece, as the Greeks said",
+              "That Aristotle looted the Library of Alexandria after all",
+              "That Greek philosophy was entirely Egyptian in origin",
+              "That Greece and Egypt never had any contact at all",
             ],
             correctIndex: 0,
             explanation:
@@ -938,10 +938,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "Which pair of sentences correctly separates 'supported' from 'not supported'?",
             options: [
-              "Supported: 'Greeks studied in and borrowed from Egypt.' Not supported: 'Aristotle stole Greek philosophy intact by looting the Library.'",
+              "Supported: 'Greeks borrowed from Egypt.' Not supported: 'Aristotle looted the Library.'",
               "Supported: 'Aristotle looted the Library.' Not supported: 'Greeks ever visited Egypt.'",
-              "Both sentences are equally supported",
-              "Both sentences are equally unsupported",
+              "Both of these sentences are equally well supported by all the surviving evidence",
+              "Both of these sentences are equally unsupported by any of the surviving evidence",
             ],
             correctIndex: 0,
             explanation:
@@ -951,10 +951,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "Why does the course insist you keep Bernal and James in separate boxes?",
             options: [
-              "Because Bernal is a heavily-cited scholarly argument and James's 'stolen' thesis fails on specifics, treating them as the same discredits the careful work by association",
-              "Because they lived in different countries",
-              "Because Bernal agreed with everything James wrote",
-              "Because both were classicists at Wellesley",
+              "Because Bernal's is cited scholarship and James's fails on specifics",
+              "Because the two men lived and worked in different countries entirely",
+              "Because Bernal agreed with everything that James had written",
+              "Because both men were trained classicists teaching at Wellesley",
             ],
             correctIndex: 0,
             explanation:
@@ -964,10 +964,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "The 'orientalizing revolution' scholarship (e.g. Burkert, West) is cited to show what?",
             options: [
-              "That mainstream classicists independently recognize deep Near Eastern influence on early Greece, the direction Bernal's broad point pushed",
-              "That Bernal's etymologies were all correct",
-              "That Greece had no outside influences",
-              "That Stolen Legacy was vindicated",
+              "That classicists independently recognize Near Eastern influence",
+              "That Bernal's proposed Egyptian etymologies were all correct",
+              "That early Greece had no outside influences of any kind",
+              "That Stolen Legacy was vindicated by the same scholarship",
             ],
             correctIndex: 0,
             explanation:
@@ -977,10 +977,10 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
           {
             prompt: "A classmate says: 'Since Stolen Legacy is debunked, Egypt clearly had zero influence on Greece.' The best correction is:",
             options: [
-              "That's an overcorrection, the specific 'theft' story fails, but documented Egyptian influence on Greece is real and separate",
-              "Correct, a debunked book means the whole topic is false",
-              "Correct, Greece influenced Egypt, never the reverse",
-              "The question can't be evaluated",
+              "That's an overcorrection; Egyptian influence on Greece is real",
+              "Correct, a debunked book means the whole topic is false too",
+              "Correct, Greece influenced Egypt and never the other way",
+              "The question can't be evaluated with the evidence we have",
             ],
             correctIndex: 0,
             explanation:
@@ -1071,10 +1071,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "The section says two very different things travel under the word 'Afrocentrism.' What are they?",
             options: [
-              "A scholarly paradigm argued from evidence, and a body of pop-myth/pseudoscience rejected even by serious Afrocentric scholars",
-              "Two identical political parties",
-              "A religion and a language",
-              "A DNA study and a court case",
+              "A scholarly paradigm argued from evidence, and pop-myth",
+              "Two nearly identical modern political movements",
+              "An organized religion and a widely spoken language",
+              "A famous DNA study and a long-running court case",
             ],
             correctIndex: 0,
             explanation:
@@ -1084,10 +1084,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "What does pop 'melanin theory' claim?",
             options: [
-              "That melanin gives Black people superior intellectual, physical, spiritual, or even extrasensory capacities",
+              "That melanin gives Black people superior mental powers",
               "That melanin protects skin from ultraviolet light",
-              "That melanin is found only in Europeans",
-              "That melanin is a made-up substance",
+              "That melanin is found only in people of European descent",
+              "That melanin is an entirely made-up chemical substance",
             ],
             correctIndex: 0,
             explanation:
@@ -1097,9 +1097,9 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "Why is pop melanin theory classified as pseudoscience?",
             options: [
-              "Melanin is a pigment with no evidence of producing intelligence or morality; the claims confuse correlation with causation and are untestable or false",
+              "Melanin is a pigment; no evidence links it to intelligence",
               "Because all theories about biology are pseudoscience",
-              "Because melanin has never been studied",
+              "Because melanin has never actually been studied at all",
               "Because only physicists are allowed to study pigment",
             ],
             correctIndex: 0,
@@ -1123,10 +1123,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "Why does the course call 'Sun People / Ice People' a MIRROR of what Afrocentricity set out to oppose?",
             options: [
-              "It is racial essentialism, assigning fixed moral traits by ancestry, the same structure as scientific racism, with the valuations flipped",
-              "Because it praises Europeans",
-              "Because it uses the word 'people' twice",
-              "Because it is based on careful evidence",
+              "It is racial essentialism with the valuations flipped",
+              "Because it praises Europeans instead of Africans",
+              "Because it uses the word 'people' twice in one phrase",
+              "Because it is based on careful anthropological evidence",
             ],
             correctIndex: 0,
             explanation:
@@ -1136,10 +1136,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "Is melanin pseudoscience the view of Diop and Asante?",
             options: [
-              "No, Diop argued from physical/linguistic/textual evidence, and Asante's paradigm is about centering, not pigment superpowers",
-              "Yes, it is the core of Diop's work",
-              "Yes, Asante invented the Sun People framework",
-              "Only Asante endorsed it",
+              "No, Diop argued from evidence; Asante's is about centering",
+              "Yes, melanin theory is the very core of Diop's own work",
+              "Yes, Asante himself invented the Sun People framework",
+              "Only Asante endorsed melanin theory, never Diop himself",
             ],
             correctIndex: 0,
             explanation:
@@ -1149,10 +1149,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "A student worries: 'Isn't separating scholarship from pop-myth just cherry-picking the parts you like?' What is the section's answer?",
             options: [
-              "No, Afrocentrism's own serious scholars and its sharpest critics draw the line in the same place, which shows it's real, not a trick",
-              "Yes, it is pure cherry-picking",
-              "The line can never be drawn by anyone",
-              "Only the government can draw the line",
+              "No, its own scholars and its critics draw the same line",
+              "Yes, it is pure cherry-picking by hostile outsiders",
+              "The line can never honestly be drawn by anyone at all",
+              "Only university review committees can draw that line",
             ],
             correctIndex: 0,
             explanation:
@@ -1162,10 +1162,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "According to the section, the test for a claim is NOT 'whose team is it on?' but:",
             options: [
-              "'How is the claim built?', is it argued from checkable evidence, is it falsifiable, does it survive specialists, is it attributed and dated?",
-              "'Is it about Africa?'",
-              "'Is it popular?'",
-              "'Does it feel true?'",
+              "'How is the claim built?', is it checkable and dated?",
+              "'Is the claim about Africa, or is it about Europe?'",
+              "'Is the claim popular with a wide enough audience?'",
+              "'Does the claim feel true to most of its readers?'",
             ],
             correctIndex: 0,
             explanation:
@@ -1175,10 +1175,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "Even Stephen Howe, a thorough critic of Afrocentrism, does what in his 1998 book?",
             options: [
-              "Distinguishes the serious strands from the mythic ones, he does not treat Diop and Welsing as the same kind of thinker",
-              "Claims all Afrocentric work is pseudoscience",
-              "Endorses melanin theory",
-              "Argues Egypt had no history",
+              "Distinguishes the serious strands from the mythic ones",
+              "Claims that all Afrocentric work is pseudoscience",
+              "Endorses melanin theory as basically sound science",
+              "Argues that Egypt had no history worth studying",
             ],
             correctIndex: 0,
             explanation:
@@ -1188,10 +1188,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "Applying the build-tests: how does Diop's Egypt argument fare compared to melanin superpowers?",
             options: [
-              "Diop's argument passes as scholarship (you can weigh his evidence and disagree); melanin superpowers fail as pseudoscience (untestable, science against them)",
-              "Both pass equally",
-              "Both fail equally",
-              "Diop fails and melanin theory passes",
+              "Diop passes as weighable scholarship; melanin fails as pseudoscience",
+              "Both pass the build-tests equally well as careful scholarship",
+              "Both fail the build-tests equally badly, as plain pseudoscience",
+              "Diop fails the build-tests, and melanin theory passes them all",
             ],
             correctIndex: 0,
             explanation:
@@ -1201,10 +1201,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "Why does letting pop-myth 'stand in for the whole tradition' hurt the serious scholarship?",
             options: [
-              "It hands critics a free win and buries Diop's actual arguments under claims he never made",
-              "It makes the scholarship more popular",
-              "It has no effect at all",
-              "It proves the melanin theory correct",
+              "It hands critics a free win and buries Diop's arguments",
+              "It makes the underlying scholarship more popular",
+              "It has no real effect on the scholarship at all",
+              "It proves the melanin theory correct by association",
             ],
             correctIndex: 0,
             explanation:
@@ -1214,10 +1214,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "'Falsifiable' means a claim:",
             options: [
-              "Could in principle be shown wrong by evidence, as opposed to being built so nothing could ever count against it",
-              "Is definitely false",
-              "Has already been proven false",
-              "Cannot be tested by anyone",
+              "Could in principle be shown wrong by evidence",
+              "Is definitely and demonstrably false already",
+              "Has already been proven false by someone",
+              "Cannot be tested by anyone, ever, at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1227,10 +1227,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "The section says naming the scholarship/pop-myth difference is NOT picking a side. Why?",
             options: [
-              "Because it refuses to let the debate be conducted at its worst, it protects the serious work rather than endorsing or attacking the paradigm",
-              "Because sides do not exist",
-              "Because pop-myth is actually correct",
-              "Because it always favors the critics",
+              "Because it refuses to let the debate run at its worst",
+              "Because sides do not really exist in scholarship",
+              "Because the pop-myth is actually correct after all",
+              "Because it always favors the critics in the end",
             ],
             correctIndex: 0,
             explanation:
@@ -1240,10 +1240,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "Who documented the 'melanist' pseudoscience specifically, by name?",
             options: [
-              "Anthropologist Bernard Ortiz de Montellano (1993)",
-              "Herodotus",
-              "Guy MacLean Rogers",
-              "George G. M. James",
+              "Bernard Ortiz de Montellano (1993)",
+              "Herodotus, writing about 430 BCE",
+              "Guy MacLean Rogers, in 1996",
+              "George G. M. James, in 1954",
             ],
             correctIndex: 0,
             explanation:
@@ -1253,10 +1253,10 @@ Run those tests and the seam appears on its own. Diop's Egypt argument **passes 
           {
             prompt: "Which best states the section's takeaway?",
             options: [
-              "Same tradition can contain different levels of rigor; sort by how a claim is built, not by which side it seems to help",
+              "One tradition can hold different levels of rigor",
               "Everything labeled Afrocentric is scholarship",
               "Everything labeled Afrocentric is pseudoscience",
-              "Rigor cannot be judged at all",
+              "Rigor cannot be judged from outside a tradition",
             ],
             correctIndex: 0,
             explanation:
@@ -1353,10 +1353,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "What kind of objection is this section about (as opposed to Sections 2-4)?",
             options: [
-              "Whole-paradigm objections, 'the framework itself has a problem', not 'this specific fact is wrong'",
-              "Objections about grammar and spelling",
-              "Objections to teaching Afrocentrism at all",
-              "Objections only from politicians",
+              "Whole-paradigm objections, not single-fact corrections",
+              "Objections about grammar, spelling, and citation style",
+              "Objections to teaching Afrocentrism in schools at all",
+              "Objections raised only by politicians, not scholars",
             ],
             correctIndex: 0,
             explanation:
@@ -1366,10 +1366,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Stephen Howe's objection is best described as:",
             options: [
-              "Empirical, much of what circulates as Afrocentric history is myth-making that outruns the evidence",
-              "That Africa never had any history",
-              "That race is a coherent scientific category",
-              "That Egypt was European",
+              "Empirical, much of what circulates outruns the evidence",
+              "That Africa never had any history worth writing about",
+              "That race is a perfectly coherent scientific category",
+              "That ancient Egypt was really a European civilization",
             ],
             correctIndex: 0,
             explanation:
@@ -1379,10 +1379,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Kwame Anthony Appiah's objection targets:",
             options: [
-              "The idea of a single 'African essence,' which he argues revives the 19th-century biological race concept",
-              "The specific dating of the Library of Alexandria",
-              "Diop's melanin tests only",
-              "The Nordic bargaining model",
+              "The idea of a single 'African essence' behind the paradigm",
+              "The specific dating of the Library of Alexandria's founding",
+              "Diop's melanin-dosage tests on mummy skin, and nothing else",
+              "The Nordic collective-bargaining model of labor relations",
             ],
             correctIndex: 0,
             explanation:
@@ -1392,10 +1392,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Paul Gilroy criticizes Afrocentrism from what position, and on what grounds?",
             options: [
-              "From within anti-racist Black cultural studies, he favors hybrid Atlantic 'routes' over pure African 'roots' and rejects 'ethnic absolutism'",
-              "From the political right, defending European superiority",
-              "As an Egyptologist defending the Aryan Model",
-              "As a proponent of melanin theory",
+              "From within anti-racist Black cultural studies: 'routes' over 'roots'",
+              "From the political right, openly defending European superiority",
+              "As an Egyptologist defending the Aryan Model of Greek origins",
+              "As a leading proponent of melanin theory and racial essentialism",
             ],
             correctIndex: 0,
             explanation:
@@ -1405,9 +1405,9 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Why does the course stress that the three critics offer different KINDS of objection?",
             options: [
-              "Because you can accept one and reject the others, engaging a paradigm means weighing distinct questions, not one thumbs-up or thumbs-down",
-              "Because only one of them can be right",
-              "Because they secretly all agree",
+              "Because you can accept one and reject the others",
+              "Because only one of the three of them can be right",
+              "Because the three of them secretly all agree",
               "Because their objections cancel each other out",
             ],
             correctIndex: 0,
@@ -1418,10 +1418,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "It would be a mistake to file all the critics as conservatives because:",
             options: [
-              "Gilroy criticizes Afrocentrism from within Black cultural studies and is strongly anti-racist",
-              "All critics are in fact conservatives",
-              "None of the critics have political views",
-              "The critics never published anything",
+              "Gilroy criticizes it from within anti-racist Black studies",
+              "All of the named critics are in fact conservatives",
+              "None of the named critics hold any political views",
+              "The named critics never published anything on this",
             ],
             correctIndex: 0,
             explanation:
@@ -1431,10 +1431,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Proponents' reply to Howe is essentially:",
             options: [
-              "'You're attacking the pop-myth, not the paradigm', the method of centering survives even if specific popular claims fall",
-              "'The facts don't matter'",
-              "'Howe endorses melanin theory'",
-              "'History cannot be checked'",
+              "'You're attacking the pop-myth, not the paradigm'",
+              "'The facts of the case simply don't matter'",
+              "'Howe himself endorses the melanin theory'",
+              "'History cannot be checked against evidence'",
             ],
             correctIndex: 0,
             explanation:
@@ -1444,10 +1444,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Proponents' reply to Appiah is essentially:",
             options: [
-              "'Centering is a chosen vantage point/location, not a biological essence', a methodological move, not a genetic claim",
-              "'Race is biologically real after all'",
-              "'Appiah is not really a philosopher'",
-              "'Essence is the whole point of the paradigm'",
+              "'Centering is a chosen location, not a biological essence'",
+              "'Race turns out to be biologically real after all'",
+              "'Appiah is not really a philosopher of race at all'",
+              "'Racial essence is the whole point of the paradigm'",
             ],
             correctIndex: 0,
             explanation:
@@ -1457,10 +1457,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "The course says a fair reply is 'not automatically a winning one.' What's the contested response to the 'you're attacking the pop-myth' reply?",
             options: [
-              "Critics answer that some of the SERIOUS work also has evidentiary problems, so the reply can't cover everything",
-              "Critics concede the reply completely",
-              "Critics say pop-myth is actually rigorous",
-              "There is no response",
+              "Critics answer that the serious work also has problems",
+              "Critics concede the entire reply completely, at once",
+              "Critics say the pop-myth is actually rigorous work",
+              "There is no published response from the critics",
             ],
             correctIndex: 0,
             explanation:
@@ -1470,10 +1470,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "What is the contested response to the 'centering is a location, not an essence' reply?",
             options: [
-              "Critics note that in practice much Afrocentric writing does slide into essentialist language about racial character",
-              "Critics agree the reply is airtight",
-              "Critics say location and essence are identical",
-              "Critics abandon the objection",
+              "Critics note much Afrocentric writing does slide into essentialism",
+              "Critics agree that the reply is entirely airtight and complete",
+              "Critics say that location and essence are simply identical",
+              "Critics abandon the essentialism objection altogether here",
             ],
             correctIndex: 0,
             explanation:
@@ -1483,10 +1483,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "How does the course resolve the critics-vs-defenders exchange?",
             options: [
-              "It declares no winner and teaches you to track which objections were answered fully, partly, or not",
-              "It declares the critics the winners",
-              "It declares the defenders the winners",
-              "It refuses to describe the exchange",
+              "It declares no winner and tracks what was answered",
+              "It declares the critics to be the clear winners",
+              "It declares the defenders to be the clear winners",
+              "It refuses to describe the exchange to students",
             ],
             correctIndex: 0,
             explanation:
@@ -1496,10 +1496,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Why must the course steelman the proponents' REPLY, not just the critics?",
             options: [
-              "Because a paradigm is not refuted by objections it can answer, fairness requires the strongest version of both moves",
-              "Because proponents are always right",
-              "Because critics are always wrong",
-              "Because replies are more important than objections",
+              "Because a paradigm isn't refuted by objections it can answer",
+              "Because the proponents turn out to be right in the end",
+              "Because the critics always turn out to be wrong in the end",
+              "Because replies are always more important than objections",
             ],
             correctIndex: 0,
             explanation:
@@ -1509,10 +1509,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Which best describes the intellectual skill this section models?",
             options: [
-              "Holding a paradigm's strongest case, its strongest objections, AND its answers to them in view at once, without collapsing them into a verdict",
-              "Deciding quickly which side to root for",
-              "Memorizing the critics' names and nothing else",
-              "Ignoring objections you find uncomfortable",
+              "Holding the best case, the objections, and the answers at once",
+              "Deciding quickly which of the two sides you should root for",
+              "Memorizing the critics' names and their dates, nothing else",
+              "Ignoring whichever objections you happen to find uncomfortable",
             ],
             correctIndex: 0,
             explanation:
@@ -1522,10 +1522,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "A student says: 'Appiah destroyed Afrocentricity by showing race isn't biological.' The most precise response is:",
             options: [
-              "Appiah's essentialism critique is serious, but defenders argue the careful paradigm centers a chosen vantage point, not a racial essence, so whether the critique lands depends on which version you mean",
-              "Correct, the paradigm is finished",
-              "Wrong, race is biologically real",
-              "The point can't be discussed",
+              "Appiah's critique is serious, but it depends which version you mean",
+              "Correct, Appiah's argument finished off the paradigm for good",
+              "Wrong, because race really is a biological category after all",
+              "The point can't usefully be discussed without picking a side",
             ],
             correctIndex: 0,
             explanation:
@@ -1535,10 +1535,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Gilroy's 'routes not roots' and the defenders' reply illustrate what possibility?",
             options: [
-              "That you can foreground African origins/agency AND study the hybrid Atlantic world, the two need not be enemies",
-              "That origins and diaspora are the same thing",
-              "That Gilroy secretly rejected anti-racism",
-              "That hybridity disproves all history",
+              "That you can foreground origins and still study hybridity",
+              "That origins and diaspora are exactly the same thing",
+              "That Gilroy secretly rejected anti-racist politics",
+              "That hybridity disproves any history of origins at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1640,10 +1640,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "What is the FIRST move in the evaluation toolkit?",
             options: [
-              "State the paradigm in its proponents' own words first (steelman from primary sources)",
-              "Decide immediately whether you agree",
-              "Find the weakest version and attack it",
-              "Look up what your friends think",
+              "State the paradigm in its proponents' own words first",
+              "Decide immediately whether you agree with it",
+              "Find the weakest version of it and attack that",
+              "Look up what your friends already think of it",
             ],
             correctIndex: 0,
             explanation:
@@ -1653,10 +1653,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Move 2 is 'separate the levels of claim.' What are the three levels?",
             options: [
-              "The corrective impulse, specific empirical claims, and pop-myth",
-              "Past, present, and future",
-              "Left, right, and center",
-              "Introduction, body, and conclusion",
+              "The corrective impulse, empirical claims, and pop-myth",
+              "The distant past, the recent present, and the future",
+              "The left, the right, and the moderate political center",
+              "The introduction, the main body, and the conclusion",
             ],
             correctIndex: 0,
             explanation:
@@ -1666,10 +1666,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Why is 'attribute every contested claim to who makes it' (Move 3) important?",
             options: [
-              "It keeps you honest about what is established versus one scholar's contested position, and stops you smuggling a contested claim in as settled fact",
-              "It makes essays longer",
-              "It lets you avoid reading the sources",
-              "It proves whichever side you prefer",
+              "It keeps established fact separate from contested claims",
+              "It makes your essays noticeably longer and denser",
+              "It lets you avoid reading any of the primary sources",
+              "It proves whichever side you already happen to prefer",
             ],
             correctIndex: 0,
             explanation:
@@ -1679,10 +1679,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "When new science bears on an old debate, Move 4 says to ask:",
             options: [
-              "What it sampled, how much of it there is, and what question it can answer, then date it",
-              "Whether it agrees with your side",
-              "Whether it was published this week",
-              "Nothing, new science always settles the debate",
+              "What it sampled, how much there is, and what it can answer",
+              "Whether it happens to agree with the side you are on",
+              "Whether it happens to have been published this week",
+              "Nothing, since new science always settles the debate",
             ],
             correctIndex: 0,
             explanation:
@@ -1692,10 +1692,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Move 5 asks 'corrective, or overcorrection?' What does an overcorrection look like?",
             options: [
-              "It flips into the mirror image of the thing it opposed, e.g. 'Sun People / Ice People' reproducing racial essentialism",
-              "It fixes a real distortion perfectly",
-              "It ignores all evidence equally",
-              "It is always better than a corrective",
+              "It flips into the mirror image of the thing it opposed",
+              "It fixes a real distortion perfectly and stops",
+              "It ignores all of the available evidence equally",
+              "It is always better than a merely modest corrective",
             ],
             correctIndex: 0,
             explanation:
@@ -1705,10 +1705,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Move 6, 'refuse the false binary,' means the adult verdict is usually:",
             options: [
-              "'This part is a real contribution; this part is unproven; this part is false', three verdicts, not one",
-              "A single thumbs-up or thumbs-down",
-              "Whatever the majority believes",
-              "Silence, because judgment is impossible",
+              "'Real contribution; unproven; false', three verdicts",
+              "A single overall thumbs-up or thumbs-down verdict",
+              "Whatever the majority of scholars happens to believe",
+              "Silence, because judgment is simply impossible here",
             ],
             correctIndex: 0,
             explanation:
@@ -1718,10 +1718,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "The 'one rule under all six moves' is:",
             options: [
-              "Assert only what is settled; attribute and leave open everything contested",
-              "Always side with the proponents",
-              "Always side with the critics",
-              "Never cite any sources",
+              "Assert only what is settled; attribute what is contested",
+              "Always side with the proponents of the newer paradigm",
+              "Always side with the critics of the newer paradigm",
+              "Never cite any of your sources by name, date, or page",
             ],
             correctIndex: 0,
             explanation:
@@ -1731,10 +1731,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "The course insists that declining to declare a winner is NOT the same as 'having no standards.' Why?",
             options: [
-              "Because it holds every claim to the same test regardless of which side it helps, that is more rigorous, not less",
-              "Because standards don't matter in history",
-              "Because it secretly favors one side",
-              "Because no claim can ever be judged",
+              "Because it holds every claim to the very same test",
+              "Because standards don't really matter in history",
+              "Because it secretly favors one of the sides",
+              "Because no claim can ever really be judged",
             ],
             correctIndex: 0,
             explanation:
@@ -1744,9 +1744,9 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "In the worked evaluation of Afrocentricity, which claim is sorted as a 'real contribution'?",
             options: [
-              "The recentering method and forcing fields to confront Eurocentric bias",
-              "Melanin superpowers",
-              "Aristotle looting the Library of Alexandria",
+              "The recentering method and the pressure on Eurocentric bias",
+              "The claim of melanin-based intellectual superpowers",
+              "Aristotle looting the Library of Alexandria in 332 BCE",
               "The strong claim that ancient Egypt was definitively Black",
             ],
             correctIndex: 0,
@@ -1758,9 +1758,9 @@ You can agree with one and reject the others. A student might accept Howe's fact
             prompt: "In the worked evaluation, which is sorted as 'unproven/contested' rather than false?",
             options: [
               "The strong Kemet thesis and Bernal's specific etymologies",
-              "Melanin superpowers",
-              "The claim that Aristotle looted the Library",
-              "That Eurocentrism distorted African history",
+              "The pop claim that melanin confers mental superpowers",
+              "The claim that Aristotle looted the Alexandria Library",
+              "That Eurocentric scholarship distorted African history",
             ],
             correctIndex: 0,
             explanation:
@@ -1770,10 +1770,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "The 'education system is completely rigged, so credentials are meaningless' example is used to show:",
             options: [
-              "That the same six moves transfer to any contested claim, not just Afrocentricity",
-              "That all education is worthless",
-              "That credentials are in fact meaningless",
-              "That only history can be evaluated this way",
+              "That the same six moves transfer to any contested claim",
+              "That all formal education is basically worthless",
+              "That credentials really are in fact meaningless",
+              "That only history can be evaluated in this careful way",
             ],
             correctIndex: 0,
             explanation:
@@ -1783,10 +1783,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Running the toolkit on the 'rigged education' claim, how should you handle the grievance versus the sweeping conclusion?",
             options: [
-              "Separate them, a real, documented grievance about inequity is not the same as the sweeping claim that all credentials are meaningless",
-              "Accept both together as one package",
-              "Reject both together as one package",
-              "Refuse to evaluate either",
+              "Separate them; a real grievance isn't the sweeping claim",
+              "Accept both of them together as a single package",
+              "Reject both of them together as a single package",
+              "Refuse to evaluate either of the two claims at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1796,9 +1796,9 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "What is the course's final call on an overall winner for Afrocentricity?",
             options: [
-              "No overall winner is declared, contested pieces are attributed and left open because the evidence is genuinely divided",
-              "Afrocentricity wins on every point",
-              "The critics win on every point",
+              "No overall winner; contested pieces are left open",
+              "Afrocentricity wins outright on nearly every point",
+              "The critics win outright on nearly every point",
               "The question is meaningless and not worth studying",
             ],
             correctIndex: 0,
@@ -1809,10 +1809,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "According to the closing thought, what is the 'temptation' the course asks you to resist?",
             options: [
-              "Picking a team and inheriting its whole package of beliefs",
-              "Reading primary sources",
-              "Citing your claims",
-              "Changing your mind when evidence changes",
+              "Picking a team and inheriting its whole package",
+              "Reading all of the primary sources carefully",
+              "Citing every one of your claims to a source",
+              "Changing your mind when the evidence changes",
             ],
             correctIndex: 0,
             explanation:
@@ -1822,10 +1822,10 @@ You can agree with one and reject the others. A student might accept Howe's fact
           {
             prompt: "Which sentence best captures what the whole course was really teaching?",
             options: [
-              "How to evaluate a contested paradigm, hold a real contribution and a real error in the same hand, asserting only what's settled",
-              "That Afrocentricity is correct",
-              "That Afrocentricity is a fraud",
-              "That contested topics should be avoided",
+              "How to hold a real contribution and a real error together",
+              "That Afrocentricity is correct in every single respect",
+              "That Afrocentricity is a fraud from start to finish",
+              "That contested topics should always simply be avoided",
             ],
             correctIndex: 0,
             explanation:

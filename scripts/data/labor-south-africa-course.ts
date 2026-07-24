@@ -144,10 +144,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "When and where was COSATU launched, and at roughly what size?",
             options: [
-              "Johannesburg, 1994, with about 50,000 members",
-              "Durban, 1 December 1985, with 33 unions and about 460,000 members",
-              "Cape Town, 1973, with 12 unions",
-              "Pretoria, 1979, with about 1 million members",
+              "Johannesburg, 16 June 1994, 12 unions, about 50,000 members",
+              "Durban, 1 December 1985, 33 unions, about 460,000 members",
+              "Cape Town, 9 January 1973, 12 unions, about 61,000 members",
+              "Pretoria, 1 May 1979, 20 unions, about 1 million members",
             ],
             correctIndex: 1,
             explanation:
@@ -157,10 +157,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "What happened at Marikana on 16 August 2012?",
             options: [
-              "Miners won a court case against Lonmin",
-              "Police shot dead 34 striking miners at Lonmin's platinum mine in a single afternoon",
-              "A mine collapse killed 34 workers",
-              "The government nationalised the mine",
+              "Miners won a Labour Court case forcing Lonmin to raise wages",
+              "Police shot dead 34 striking miners at Lonmin's platinum mine",
+              "An underground rockfall at the Lonmin mine killed 34 workers",
+              "The government nationalised Lonmin's platinum operations",
             ],
             correctIndex: 1,
             explanation:
@@ -170,10 +170,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "Why does the course open by pairing COSATU's 1985 launch with Marikana 2012?",
             options: [
-              "To show the union movement never mattered",
-              "Because the distance between them, a union that helped free the country, and a massacre under the government its alliance helped elect, is the paradox the whole course must explain",
-              "Because both events happened in Durban",
-              "To prove apartheid never really ended",
+              "To show that the union movement never really mattered to the ending of apartheid rule",
+              "Because the distance between the two, liberation and a massacre under the government it elected",
+              "Because both events happened in Durban, in the same month of two different decades",
+              "To prove that apartheid never really ended and that the 1994 election changed nothing",
             ],
             correctIndex: 1,
             explanation:
@@ -183,10 +183,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "What two 'easy versions' of the South African story does the course refuse?",
             options: [
-              "The economic version and the political version",
-              "The triumph story (end in 1994, roll credits) and the betrayal story (read Marikana backwards and call the struggle a fraud)",
-              "The rural version and the urban version",
-              "The union version and the employer version",
+              "The economic version (wages only) and the political version (votes and parties only)",
+              "The triumph story (end at 1994, roll credits) and the betrayal story (a fraud all along)",
+              "The rural version (farm labour only) and the urban version (mines and factories only)",
+              "The union version (workers only) and the employer version (owners and managers only)",
             ],
             correctIndex: 1,
             explanation:
@@ -209,10 +209,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "What are the anchor course's four questions?",
             options: [
-              "Who profits? Who pays? Who votes? Who rules?",
-              "Who is allowed to organise? Who is excluded? Who bargains with whom, and at what level? What happens to you if you try?",
-              "What is the minimum wage? What is the strike rate? What is union density? What is coverage?",
-              "Who owns the mines? Who owns the farms? Who owns the banks? Who owns the press?",
+              "Who profits? Who pays? Who votes? Who rules? And who writes the history up afterwards?",
+              "Who is allowed to organise? Who is excluded? Who bargains, at what level? What if you try?",
+              "What is the minimum wage? What is the strike rate? What is density? What is coverage?",
+              "Who owns the mines? Who owns the farms? Who owns the banks? Who owns the newspapers?",
             ],
             correctIndex: 1,
             explanation:
@@ -222,10 +222,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "Under apartheid, who was allowed into the registered union system?",
             options: [
-              "Everyone, regardless of race",
-              "White, coloured and Indian workers, African workers were excluded by statute",
-              "Only mine workers",
-              "No one; all unions were banned",
+              "Everyone, regardless of race, once the industrial councils were set up",
+              "White, coloured and Indian workers; African workers were excluded by statute",
+              "Only mine workers, since mining was the one industry with its own statute",
+              "No one; every trade union in the country was banned outright by 1953",
             ],
             correctIndex: 1,
             explanation:
@@ -235,10 +235,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "What makes South Africa's apartheid-era exclusion the most explicit version of the track's 'put them outside the category' move?",
             options: [
-              "It was done by informal custom",
-              "It was written into statute, by race, African workers excluded from the legal definition of 'employee' itself",
-              "It only applied to farm workers",
-              "It was imposed by foreign companies",
+              "It was done by informal custom, with no statute of the era ever mentioning race",
+              "It was written into statute: African workers fell outside the definition of 'employee'",
+              "It applied only to farm workers, who were the one group left outside the councils",
+              "It was imposed by foreign mining companies rather than by the South African state",
             ],
             correctIndex: 1,
             explanation:
@@ -261,10 +261,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "Run Question 4 ('what happens to you if you try?') across South Africa's dates. Which sequence is correct?",
             options: [
-              "1946: strikers promoted · 1973: strikers arrested · 2012: strikers paid off",
-              "1946: at least nine strikers killed · 1973: strikers elect no leaders so none can be arrested · 1987: tens of thousands dismissed · 2012: thirty-four shot dead under democracy",
-              "1946: nothing · 1973: nothing · 2012: nothing",
-              "Strikes have always been legal and safe in South Africa",
+              "1946: strikers promoted · 1973: strikers arrested · 2012: strikers quietly paid off",
+              "1946: at least nine strikers killed · 1973: no leaders to arrest · 2012: thirty-four dead",
+              "1946: nothing · 1973: nothing · 2012: nothing; no striker anywhere was ever harmed",
+              "Strikes have always been legal and safe in South Africa, both in law and in practice",
             ],
             correctIndex: 1,
             explanation:
@@ -274,10 +274,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "When did South Africa ratify ILO Conventions 87 and 98?",
             options: [
-              "1948, at the ILO's founding era",
-              "February 1996, within two years of democracy, the apartheid state never had",
-              "It has never ratified them",
-              "1985, when COSATU launched",
+              "1948, in the ILO's founding era, before the National Party took office",
+              "February 1996, within two years of democracy; the apartheid state never had",
+              "It has never ratified either convention, and is not an ILO member state",
+              "1985, the year COSATU launched, as a condition of the Wiehahn reforms",
             ],
             correctIndex: 1,
             explanation:
@@ -287,10 +287,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "What is the Tripartite Alliance?",
             options: [
-              "A trade agreement between South Africa, Botswana and Namibia",
-              "The formal political alliance of the ANC, the South African Communist Party and COSATU",
-              "A mining industry cartel",
-              "The three branches of the South African government",
+              "A trade agreement between South Africa, Botswana, Namibia and Lesotho",
+              "The formal political alliance of the ANC, the Communist Party and COSATU",
+              "A mining industry cartel that fixed African wages through the 1950s",
+              "The three branches of the South African government under the 1996 text",
             ],
             correctIndex: 1,
             explanation:
@@ -300,10 +300,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "Why, under apartheid, was the strike 'the ballot of the voteless'?",
             options: [
-              "Because strikes were the only legal form of protest",
-              "Because Black South Africans could not vote, so withdrawing labour was the political power they had, which made the union the political vehicle",
-              "Because ballots were printed at union offices",
-              "Because employers allowed workers time off to vote",
+              "Because strikes were the only form of public protest the apartheid state left legal",
+              "Because Black South Africans could not vote, so withdrawing labour was the power they had",
+              "Because ballots for the whites-only parliament were printed at the union's own offices",
+              "Because employers gave African workers paid time off in order to go and cast a vote",
             ],
             correctIndex: 1,
             explanation:
@@ -313,10 +313,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "Who stands outside South Africa's bargaining system today, however progressive its paper?",
             options: [
-              "Nobody, coverage is universal",
-              "Workers whose paper employer is a labour broker, and the roughly one in three South Africans with no job at all (32.9% official unemployment, Q1 2025, Stats SA)",
-              "Only foreign nationals",
-              "Only farm workers, by statute",
+              "Nobody: coverage is universal, and every working person sits inside some council",
+              "Workers whose paper employer is a labour broker, and the third of the country with no job",
+              "Only foreign nationals, who are barred by statute from joining a registered union",
+              "Only farm workers, whom the 1995 Act still leaves outside the bargaining system",
             ],
             correctIndex: 1,
             explanation:
@@ -326,10 +326,10 @@ Here are South Africa's answers in advance, and notice that they move **three ti
           {
             prompt: "How does this course promise to teach Marikana?",
             options: [
-              "From social media posts of the time",
-              "From the published findings of the Farlam Commission plus reputable reporting, separating what the commission found from what it did not find, with open litigation dated and left open",
-              "From the police's press statements only",
-              "From the striking miners' statements only",
+              "From social media posts and from photographs taken by strikers on the day itself",
+              "From the Farlam Commission's findings plus reputable reporting, with litigation dated",
+              "From the police's own press statements, treated as the only sworn account available",
+              "From the striking miners' statements alone, on the view that the state cannot be trusted",
             ],
             correctIndex: 1,
             explanation:
@@ -424,10 +424,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "How did the Industrial Conciliation Act 11 of 1924 exclude African workers from collective bargaining?",
             options: [
-              "It banned all trade unions in South Africa",
-              "It defined 'employee' to exclude pass-bearing workers, so African unions could not register, sit on industrial councils, or sign enforceable agreements",
-              "It required unions to charge unaffordable fees",
-              "It only applied to farms",
+              "It banned every trade union in South Africa and made strike organising a crime",
+              "It defined 'employee' to exclude pass-bearing workers, so African unions could not register",
+              "It required every registered union to charge fees African workers could not afford",
+              "It applied only to farms and mines, leaving factory and shop workers outside the Act",
             ],
             correctIndex: 1,
             explanation:
@@ -450,10 +450,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "Why does the course say the apartheid state 'let the definitions do the work'?",
             options: [
-              "Because the state never passed labour laws",
-              "Because instead of writing 'Africans may not organise,' it wrote categories, 'employee,' 'pass-bearer,' 'works committee', whose boundaries produced the exclusion",
-              "Because judges wrote the statutes",
-              "Because employers drafted the definitions",
+              "Because the state never passed labour statutes at all and left it to the employers",
+              "Because it wrote categories, 'employee', 'pass-bearer', whose edges produced the exclusion",
+              "Because judges rather than parliament decided which workers counted as employees",
+              "Because employers drafted the definitions and the state simply enacted what they wrote",
             ],
             correctIndex: 1,
             explanation:
@@ -463,10 +463,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "How does South Africa's exclusion move compare with the US version the anchor taught?",
             options: [
-              "They are unrelated",
-              "The US carve-out (agricultural/domestic workers) was facially neutral but racially targeted; South Africa wrote the race directly into the statute, the same move, with the disguise dropped",
-              "The US version was harsher",
-              "South Africa copied the NLRA word for word",
+              "They are unrelated: the US statute was about wages, South Africa's about work permits",
+              "The US carve-out was facially neutral but racially targeted; South Africa wrote race in",
+              "The US version was harsher, since the Wagner Act excluded Black workers by name",
+              "South Africa copied the Wagner Act word for word, farm and domestic carve-out included",
             ],
             correctIndex: 1,
             explanation:
@@ -476,10 +476,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What were 'works committees' under the 1953 Act?",
             options: [
-              "Democratically elected mini-unions with bargaining power",
-              "Toothless in-workplace bodies offered in place of union rights, a shadow system designed so that using it changed nothing",
-              "Employer boards of directors",
-              "Government wage tribunals",
+              "Democratically elected mini-unions with the power to bargain wages at industry level",
+              "Toothless in-workplace bodies offered in place of union rights, designed to change nothing",
+              "Employer boards of directors on which two elected African workers were given seats",
+              "Government wage tribunals that set minimum rates for African workers in each industry",
             ],
             correctIndex: 1,
             explanation:
@@ -489,10 +489,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What did the Mines and Works Amendment Act of 1926, the 'Colour Bar Act', do?",
             options: [
-              "Abolished racial restrictions in mining",
+              "Abolished the racial restrictions on skilled mine work set out by the 1911 statute",
               "Reserved certificates of competency for skilled mine work for white and coloured workers",
-              "Nationalised the gold mines",
-              "Set the first minimum wage",
+              "Nationalised the gold mines and moved certification into the hands of the state",
+              "Set the first statutory minimum wage for African workers on the country's gold mines",
             ],
             correctIndex: 1,
             explanation:
@@ -502,10 +502,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What does section 77 of the Industrial Conciliation Act 28 of 1956 illustrate?",
             options: [
-              "The end of job reservation",
-              "That the minister could reserve whole classes of work for a specified race, in any industry, job reservation as ordinary administration",
-              "That unions could veto ministerial decisions",
-              "That the colour bar applied only underground",
+              "That job reservation ended in 1956 and skilled work was thrown open to all races",
+              "That the minister could reserve whole classes of work for a specified race, in any industry",
+              "That unions could veto any ministerial decision that reserved work by race",
+              "That the colour bar reached underground mine work only, never factories or offices",
             ],
             correctIndex: 1,
             explanation:
@@ -515,10 +515,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "Who demanded the statutory colour bar of 1926?",
             options: [
-              "Mine owners, to cut costs",
-              "Organised white labour, after the armed Rand Revolt of 1922 against the substitution of cheaper Black workers",
-              "The British colonial office",
-              "African unions, as a compromise",
+              "Mine owners, in order to cut costs by fixing the rate for all certificated work",
+              "Organised white labour, after the armed 1922 Rand Revolt against cheaper Black substitutes",
+              "The British colonial office, as one of the conditions of the 1910 Union settlement",
+              "African unions, as a compromise in exchange for recognition on the new councils",
             ],
             correctIndex: 1,
             explanation:
@@ -528,10 +528,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What banner from the 1922 Rand Revolt does the course cite, and why?",
             options: [
-              "'Bread and Roses', showing international solidarity",
-              "'Workers of the World, Unite and Fight for a White South Africa', showing a union movement aimed at the workers outside it",
-              "'One Industry, One Union', showing industrial unionism",
-              "'Pass Laws Must Fall', showing anti-pass politics",
+              "'Bread and Roses', showing white and African strikers marching on a single demand",
+              "'Workers of the World, Unite and Fight for a White South Africa', aimed at those outside",
+              "'One Industry, One Union', showing the industrial unionism that COSATU later took up",
+              "'Pass Laws Must Fall', showing the white strikers' anti-pass politics in 1922",
             ],
             correctIndex: 1,
             explanation:
@@ -541,10 +541,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What was the 'dompas'?",
             options: [
-              "A mining safety certificate",
-              "The reference book of the pass system (consolidated by the 1952 Act), controlling where an African worker could live, travel and take work",
-              "A union membership card",
-              "A tax receipt",
+              "A mining safety certificate that every underground worker carried on shift",
+              "The reference book of the pass system, controlling where a worker could live and work",
+              "A union membership card issued to African workers by the industrial councils",
+              "A tax receipt proving the poll tax was paid before a worker could be hired",
             ],
             correctIndex: 1,
             explanation:
@@ -554,10 +554,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "Why does the course call the mine compound 'a labour-control technology'?",
             options: [
-              "Because it was expensive to build",
-              "Because the employer was also the landlord, a strike was also an eviction, and migrant contracts kept families dependent and distant",
-              "Because it improved productivity",
-              "Because it was run by unions",
+              "Because it was expensive to build and only the largest houses could afford it",
+              "Because the employer was also the landlord, so a strike was also an eviction",
+              "Because it raised productivity by housing workers minutes from the shaft",
+              "Because it was run by the unions, which allocated the beds to members",
             ],
             correctIndex: 1,
             explanation:
@@ -567,10 +567,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What did Francis Wilson's classic study (1972) find about African gold miners' wages?",
             options: [
-              "They doubled every decade",
+              "Real cash wages roughly doubled every decade between 1911 and 1969",
               "Real cash wages were no higher in 1969 than they had been in 1911",
-              "They matched white wages by 1960",
-              "They were the highest in Africa",
+              "Real cash wages had matched white miners' wages by the end of the 1960s",
+              "Real cash wages were the highest paid anywhere on the African continent",
             ],
             correctIndex: 1,
             explanation:
@@ -580,10 +580,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What happened to the 1946 African mineworkers' strike?",
             options: [
-              "It won the ten-shilling demand",
-              "Police broke it within a week, at least nine workers dead, more than 1,200 injured (SAHO), and the union was effectively destroyed",
-              "It was settled by arbitration",
-              "It lasted a year and ended in a draw",
+              "It won the ten-shilling-a-day demand and the union kept its recognition",
+              "Police broke it within a week: at least nine dead, more than 1,200 injured",
+              "It was settled by arbitration at the industrial council within about a month",
+              "It lasted a year and ended in a draw, with wages frozen at the 1946 rate",
             ],
             correctIndex: 1,
             explanation:
@@ -593,10 +593,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What lesson did a generation of African unionists draw from the 1946 defeat?",
             options: [
-              "That strikes always fail",
-              "That workplace power alone could not beat a state like this, organised labour would need political alliance",
-              "That wages did not matter",
-              "That mining should be avoided",
+              "That strikes always fail against any state that is willing to use its police",
+              "That workplace power alone could not beat this state; labour would need allies",
+              "That wages mattered far less than housing, transport and the pass laws did",
+              "That mining was a lost cause and that organising should move to the factories",
             ],
             correctIndex: 1,
             explanation:
@@ -607,9 +607,9 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
             prompt: "The course says: 'A right belongs to a category, and whoever writes the category decides who has the right.' Which pair of apartheid categories best illustrates this?",
             options: [
               "'Employee' (excluding pass-bearers) and 'works committee' (substituting for a union)",
-              "'Employer' and 'shareholder'",
-              "'Citizen' and 'taxpayer'",
-              "'Skilled' and 'unskilled'",
+              "'Employer' (the mining house) and 'shareholder' (its London-registered parent)",
+              "'Citizen' (the enfranchised) and 'taxpayer' (whoever had paid the poll tax)",
+              "'Skilled' (certificated men) and 'unskilled' (everyone else working underground)",
             ],
             correctIndex: 0,
             explanation:
@@ -730,9 +730,9 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
             prompt: "Where and when did the 1973 strike wave begin?",
             options: [
               "At the Coronation Brick and Tile works outside Durban, on 9 January 1973",
-              "At a Johannesburg gold mine in 1976",
-              "At the Cape Town docks in 1970",
-              "At a Pretoria steel plant in 1979",
+              "At the City Deep gold mine outside Johannesburg, on 12 August 1976",
+              "At the Cape Town docks, on 3 February 1970, among the stevedores",
+              "At the Iscor steel plant in Pretoria, on 1 May 1979, during Wiehahn",
             ],
             correctIndex: 0,
             explanation:
@@ -742,10 +742,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "How many workers struck in the 1973 wave?",
             options: [
-              "Exactly 12,000",
-              "About 61,000 in and around Durban (Jan-Mar, Institute for Industrial Education) and around 100,000 nationally through 1973 (SAHO), the course reports the documented range",
-              "Over a million",
-              "The number is unknowable",
+              "Exactly 12,000, the figure the Department of Labour published at the time",
+              "About 61,000 around Durban and roughly 100,000 nationally through 1973",
+              "Over a million, more than the whole registered workforce of Natal",
+              "The number is unknowable, because no 1973 strike was ever counted",
             ],
             correctIndex: 1,
             explanation:
@@ -755,10 +755,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "Why did the Durban strikers elect no leaders?",
             options: [
-              "They could not agree on candidates",
-              "Because under the 1953 strike ban a named leader could be arrested, victimised or prosecuted, a crowd bargaining by roar gave the state no head to cut off",
-              "The law required anonymous bargaining",
-              "Employers refused to meet leaders",
+              "They could not agree on candidates, since the workforce spoke several languages",
+              "Because a named leader could be arrested, and a crowd bargaining by roar had no head",
+              "The 1953 Act required anonymous bargaining through the elected works committees",
+              "Employers refused to meet any leader who did not sit on the industrial council",
             ],
             correctIndex: 1,
             explanation:
@@ -768,10 +768,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What made Durban 1973 a turning point rather than another 1946?",
             options: [
-              "The army refused to deploy",
-              "It won, employers raised wages, dismissals were few, and the strikes left behind unregistered unions, proving mass action inside the workplace could succeed",
-              "The government fell immediately",
-              "The United Nations intervened",
+              "The army refused to deploy against the strikers, as it had done in 1946",
+              "It won: wages rose, dismissals were few, and it left unregistered unions behind",
+              "The government fell within weeks and the pass laws were repealed that year",
+              "The United Nations intervened and ordered the employers to open negotiations",
             ],
             correctIndex: 1,
             explanation:
@@ -781,10 +781,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What did the Wiehahn Commission (1979) recommend, and why?",
             options: [
-              "Banning African unions permanently, for security",
-              "Admitting African workers to the registered union system, because unregistered unions were growing anyway and a registered union can be regulated",
-              "Abolishing all unions",
-              "Handing the mines to the unions",
+              "Banning African unions permanently, on the grounds of internal state security",
+              "Admitting African workers to the registered union system, since it can be regulated",
+              "Abolishing all unions, white and African alike, in favour of works committees",
+              "Handing the mines over to the unions to run under state and army supervision",
             ],
             correctIndex: 1,
             explanation:
@@ -794,10 +794,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What was FOSATU's signature organisational design?",
             options: [
-              "Power concentrated in a charismatic president",
-              "Shop-floor democracy, elected, mandated, recallable shop stewards holding power, with paid officials on a short leash",
-              "Control by international federations",
-              "Government-appointed administrators",
+              "Power concentrated in a charismatic president who spoke for the whole federation",
+              "Shop-floor democracy: elected, mandated, recallable stewards, officials on a short leash",
+              "Control by international federations, which funded and directed the local affiliates",
+              "Administration by government-appointed officials under the terms of the 1953 Act",
             ],
             correctIndex: 1,
             explanation:
@@ -807,10 +807,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "In his 1982 address, Joe Foster argued that workers should…",
             options: [
-              "stay out of the anti-apartheid struggle entirely",
-              "fight apartheid with the popular movement but keep an independent workers' organisation, lest workers be spoken for and set aside after victory",
-              "merge the unions into the ANC immediately",
-              "focus only on wages and never on politics",
+              "stay out of the anti-apartheid struggle and bargain over factory wages alone",
+              "fight apartheid with the popular movement but keep an independent workers' body",
+              "merge the unions into the ANC at once and accept its political discipline",
+              "focus only on factory wages and never on national politics of any kind at all",
             ],
             correctIndex: 1,
             explanation:
@@ -820,10 +820,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What was the rival position to Foster's 'workerism' in the 1980s union debates?",
             options: [
-              "'Populism' (its critics' tag): the factory cannot be separated from the township, and standing apart from the national struggle was absurd while people were being shot",
-              "'Monetarism': unions should focus on inflation",
-              "'Legalism': unions should only litigate",
-              "'Isolationism': unions should leave South Africa",
+              "'Populism': the factory cannot be separated from the township, so standing apart was absurd",
+              "'Monetarism': unions should bargain over inflation and leave apartheid to the parties",
+              "'Legalism': unions should litigate in the industrial court and never call a strike",
+              "'Isolationism': unions should quit South Africa entirely until apartheid had ended",
             ],
             correctIndex: 0,
             explanation:
@@ -833,10 +833,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "Which principles did COSATU launch on in December 1985?",
             options: [
-              "One industry, one union; one country, one federation; worker control; open political engagement",
-              "Craft unionism and political neutrality",
-              "Company unions and works councils",
-              "State charters and compulsory dues",
+              "One industry, one union; one country, one federation; worker control; political engagement",
+              "Craft unionism; political neutrality; officials appointed for life; the closed shop",
+              "Company unions; works councils; no strikes at all; wage rates set by the employer",
+              "State charters; compulsory dues; ministerial approval of every union office-bearer",
             ],
             correctIndex: 0,
             explanation:
@@ -854,10 +854,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "Why was the stayaway so hard for the emergency state to suppress?",
             options: [
-              "It was constitutionally protected",
-              "You can detain organisers, but you cannot arrest an absence, a coordinated no-show has no head and no crowd to disperse",
-              "The police supported it",
-              "It only happened on Sundays",
+              "It was constitutionally protected, so the emergency regulations did not reach it",
+              "You can detain organisers, but you cannot arrest an absence; a no-show has no crowd",
+              "The police supported it, because a stayaway kept the townships quiet for a day",
+              "It only happened on Sundays, when the security forces were mostly stood down",
             ],
             correctIndex: 1,
             explanation:
@@ -867,10 +867,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "How does the course report the size of the August 1987 miners' strike?",
             options: [
-              "Exactly 500,000, per the government",
-              "NUM's figure (~340,000) alongside the Chamber of Mines' lower count, both sides' numbers, since they disagree",
-              "It refuses to give any number",
-              "Ten thousand",
+              "Exactly 500,000, the figure the government's own labour department gave at the time",
+              "NUM's figure (~340,000) alongside the Chamber of Mines' lower count, since they disagree",
+              "It refuses to give any number, since neither side kept records of the 1987 strike",
+              "Ten thousand, the one figure the Chamber of Mines and NUM both agreed on that year",
             ],
             correctIndex: 1,
             explanation:
@@ -880,10 +880,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What happened to COSATU House in May 1987, and how do we know who did it?",
             options: [
-              "It burned down accidentally; insurance records show it",
-              "It was bombed; security police later confessed in amnesty proceedings before the Truth and Reconciliation Commission",
-              "It was sold to developers; deeds show it",
-              "Nothing happened to it",
+              "It burned down accidentally, as the insurance assessors' records still show",
+              "It was bombed; security police later confessed in Truth and Reconciliation hearings",
+              "It was sold to developers, as the Johannesburg deeds office records still show",
+              "Nothing happened to it; it stayed COSATU's head office right through to 1994",
             ],
             correctIndex: 1,
             explanation:
@@ -893,10 +893,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "What is the Tripartite Alliance, and when did it take its lasting shape?",
             options: [
-              "ANC-SACP-COSATU, formalised after the unbannings of 2 February 1990, contesting the 1994 election as one bloc",
-              "A 1950s pact between mining houses",
-              "A UN oversight body from 1994",
-              "COSATU-FOSATU-NUM, formed in 1985",
+              "ANC-SACP-COSATU, formalised after the unbannings of February 1990",
+              "A 1950s pact between the mining houses and the white craft unions",
+              "A United Nations oversight body created for the 1994 election",
+              "COSATU-FOSATU-NUM, the federation merger agreed in December 1985",
             ],
             correctIndex: 0,
             explanation:
@@ -906,10 +906,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
           {
             prompt: "With the vote won in 1994, what new version of Question 1 did COSATU carry into democracy?",
             options: [
-              "Whether strikes would remain legal",
-              "What a workers' independent voice costs and buys inside a multi-class alliance that now holds state power",
-              "Whether to admit white workers",
-              "Whether to register with the ILO",
+              "Whether strikes would stay legal once the new constitution had been written",
+              "What a workers' independent voice costs and buys inside an alliance that holds power",
+              "Whether to admit white workers to the affiliates that had once excluded them",
+              "Whether to register with the ILO now that South Africa was able to rejoin it",
             ],
             correctIndex: 1,
             explanation:
@@ -1044,10 +1044,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is NEDLAC?",
             options: [
-              "A mining safety regulator",
-              "A statutory council where labour, business, government and community negotiate social and economic legislation before it reaches parliament",
-              "South Africa's largest labour broker",
-              "The ANC's economics committee",
+              "A mining safety regulator created under the 1996 constitution's labour clause",
+              "A statutory council where labour, business, government and community negotiate laws",
+              "South Africa's largest labour broker, licensed by the national Department of Labour",
+              "The ANC's economics committee, which drafts the governing party's labour policy",
             ],
             correctIndex: 1,
             explanation:
@@ -1057,10 +1057,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is constitutionally unusual about section 23 of South Africa's 1996 Constitution?",
             options: [
-              "It sets a numerical minimum wage",
+              "It sets a numerical minimum wage in the text of the constitution itself",
               "It entrenches the right to strike itself, rare among the world's constitutions",
-              "It bans trade unions in essential services",
-              "It requires arbitration of all disputes",
+              "It bans trade unions in the essential services, mining and transport included",
+              "It requires compulsory arbitration of every dispute of interest in the economy",
             ],
             correctIndex: 1,
             explanation:
@@ -1070,10 +1070,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "How did the LRA 66 of 1995 answer the US Wagner Act's farm/domestic carve-out?",
             options: [
-              "It copied the carve-out",
-              "It refused the move: nearly all employees are covered, farm and domestic workers included, drafters who had lived the 1924 exclusion did not repeat it",
-              "It excluded mineworkers instead",
-              "It left coverage to the provinces",
+              "It copied the carve-out, leaving farm and domestic workers outside the LRA",
+              "It refused the move: nearly all employees are covered, farm and domestic included",
+              "It excluded mineworkers instead, leaving them to the Chamber of Mines to handle",
+              "It left coverage to the provinces, so each set its own list of covered employees",
             ],
             correctIndex: 1,
             explanation:
@@ -1083,10 +1083,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is the CCMA?",
             options: [
-              "A commission that licenses mines",
-              "The Commission for Conciliation, Mediation and Arbitration, a free, fast disputes tribunal handling on the order of 150,000+ referrals a year (its annual reports)",
-              "COSATU's internal court",
-              "A wage-setting board for agriculture",
+              "A commission that licenses mines and certifies their underground safety officers",
+              "The Commission for Conciliation, Mediation and Arbitration, a free disputes tribunal",
+              "COSATU's internal court, which hears disputes between its own affiliated unions",
+              "A wage-setting board for agriculture, domestic work and the retail trade sector",
             ],
             correctIndex: 1,
             explanation:
@@ -1097,9 +1097,9 @@ The same building the LRA built, with a side door that lets the work in while le
             prompt: "What were South Africa's unemployment rates in Q1 2025 (Stats SA QLFS)?",
             options: [
               "32.9% official; 43.1% expanded; roughly 62% official for ages 15-24",
-              "12% official; 15% expanded",
-              "50% official; 70% expanded",
-              "8% official; 10% expanded",
+              "12.4% official; 15.1% expanded; roughly 20% official for ages 15-24",
+              "50.2% official; 70.3% expanded; roughly 85% official for ages 15-24",
+              "8.1% official; 10.4% expanded; roughly 14% official for ages 15-24",
             ],
             correctIndex: 0,
             explanation:
@@ -1109,10 +1109,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What does the 'expanded' unemployment definition add to the official one?",
             options: [
-              "Part-time workers",
-              "People who want work but have given up actively searching (discouraged work-seekers)",
-              "Students and pensioners",
-              "Informal traders",
+              "Part-time workers who want more hours than their employer offers",
+              "People who want work but have given up actively searching for it",
+              "Students and pensioners who are not looking for paid work at all",
+              "Informal traders who earn outside any registered firm or payroll",
             ],
             correctIndex: 1,
             explanation:
@@ -1122,10 +1122,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Why does mass unemployment shadow every protection in the LRA?",
             options: [
-              "Because the LRA expires in a recession",
-              "Because every LRA mechanism, council, protected strike, CCMA, attaches to a person who has a job; roughly one in three who wants work stands outside all of it",
-              "Because unemployed people cannot vote",
-              "Because the CCMA charges fees",
+              "Because the LRA suspends all of its protections whenever a recession is declared",
+              "Because every LRA mechanism attaches to a person who has a job, and many have none",
+              "Because unemployed people cannot vote, so no political party has to represent them",
+              "Because the CCMA charges filing fees that the unemployed cannot afford to pay",
             ],
             correctIndex: 1,
             explanation:
@@ -1135,10 +1135,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "State the insider/outsider critique fairly.",
             options: [
-              "Unions cause inflation by striking",
-              "Extended bargaining agreements and strong protections raise costs for firms that never sat at the table and make hiring risky, protecting employed insiders while pricing unemployed outsiders out of a first job",
-              "The unemployed are insufficiently educated to deserve jobs",
-              "The LRA is unconstitutional",
+              "Unions cause inflation by striking, and inflation destroys jobs across the economy",
+              "Extended agreements and strong protections raise costs and make hiring risky for firms",
+              "The unemployed are insufficiently educated to deserve the jobs that already exist",
+              "The LRA is unconstitutional, since it limits every worker's right to choose a trade",
             ],
             correctIndex: 1,
             explanation:
@@ -1148,10 +1148,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "State COSATU's rebuttal to the insider/outsider critique fairly.",
             options: [
-              "Unemployment statistics are fabricated",
-              "Unemployment tracks apartheid's education and spatial legacies and the economy's structure, not the LRA; bottom wages are too low to live on, and cheapening jobs would not create them",
-              "The unemployed should join unions to get jobs",
-              "Only foreign competition matters",
+              "Unemployment statistics are fabricated by Stats SA to embarrass its own government",
+              "Unemployment tracks apartheid's education and spatial legacies and the economy, not the LRA",
+              "The unemployed should simply join unions, which would then find the jobs for them",
+              "Only foreign competition matters, and tariffs alone would bring the crisis to an end",
             ],
             correctIndex: 1,
             explanation:
@@ -1161,10 +1161,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What do both sides of the insider/outsider fight concede?",
             options: [
-              "That the LRA should be repealed",
-              "That the queue is real and enormous, and that the unemployed stand outside the bargaining system, and largely outside the federation whose alliance governs",
-              "That unemployment is falling fast",
-              "That bargaining councils set perfect wages",
+              "That the LRA should be repealed and bargaining left entirely to individual firms",
+              "That the queue is real and enormous, and the unemployed stand outside the system",
+              "That unemployment is falling fast and that the dispute will resolve itself soon",
+              "That bargaining councils already set wages at exactly the right level for growth",
             ],
             correctIndex: 1,
             explanation:
@@ -1174,10 +1174,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Under LRA s 198, who is a placed worker's employer on paper?",
             options: [
-              "The client company whose work she does",
+              "The client company whose work she does and whose supervisor directs her",
               "The temporary employment service, the labour broker, not the client",
-              "The bargaining council",
-              "The Department of Labour",
+              "The bargaining council for the sector in which she has been placed",
+              "The Department of Labour, which registers every placed worker",
             ],
             correctIndex: 1,
             explanation:
@@ -1187,10 +1187,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Which four devices make up the track's outside-the-category rhyme?",
             options: [
-              "US misclassification, Mexico's protection contract, Poland's junk contract, South Africa's labour broking",
-              "Germany's works council, Sweden's Ghent fund, Poland's MKS, COSATU's stayaway",
-              "The NLRA, the LRA, the CLT, the Labour Code",
-              "Strikes, boycotts, stayaways, go-slows",
+              "US misclassification, Mexico's protection contract, Poland's junk contract, SA's broking",
+              "Germany's works council, Sweden's Ghent fund, Poland's MKS, COSATU's mass stayaway",
+              "The Wagner Act, the LRA, Brazil's CLT and the French Labour Code of the 1970s",
+              "Strikes, boycotts, stayaways and go-slows, the four great weapons of the 1980s",
             ],
             correctIndex: 0,
             explanation:
@@ -1200,10 +1200,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What did section 198A (Labour Relations Amendment Act 6 of 2014) provide?",
             options: [
-              "A total ban on labour broking",
-              "That a placed worker earning below a statutory threshold who works for a client more than three months is deemed the client's employee",
-              "That brokers must pay double wages",
-              "That broking is limited to mining",
+              "A total ban on labour broking, with a two-year phase-out for the existing contracts",
+              "That a placed worker below the earnings threshold becomes the client's employee at three months",
+              "That brokers must pay double the wage the client company pays its own permanent staff",
+              "That labour broking is limited to mining, construction and commercial farming alone",
             ],
             correctIndex: 1,
             explanation:
@@ -1213,10 +1213,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What did the Constitutional Court hold in Assign Services v NUMSA (2018)?",
             options: [
-              "That labour broking is unconstitutional",
-              "That after three months the client is the SOLE employer of a deemed worker, not a dual employer alongside the broker",
-              "That the CCMA lacks jurisdiction over brokers",
-              "That the earnings threshold is invalid",
+              "That labour broking is unconstitutional and that section 198 is invalid",
+              "That after three months the client is the SOLE employer, not a dual employer",
+              "That the CCMA has no jurisdiction over disputes involving labour brokers",
+              "That the earnings threshold is invalid because the minister set it alone",
             ],
             correctIndex: 1,
             explanation:
@@ -1226,10 +1226,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "How does the course handle the question 'how many workers are placed by labour brokers?'",
             options: [
-              "It gives an exact count of 1,032,000",
-              "It refuses to invent a number: early-2010s estimates ranged from several hundred thousand to around a million, the count was itself a weapon in the political fight, and the biggest estimates came from the industry's own consultants",
-              "It says the number is zero since 2018",
-              "It cites the CCMA's official census",
+              "It gives an exact count of 1,032,000 placed workers, taken from a 2015 survey",
+              "It refuses to invent one: estimates ran from several hundred thousand to a million",
+              "It says the number fell to zero after the 2018 Constitutional Court ruling",
+              "It cites the CCMA's official census of every registered labour broker in 2016",
             ],
             correctIndex: 1,
             explanation:
@@ -1330,10 +1330,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What sourcing rule governs this course's Marikana lessons?",
             options: [
-              "Teach from the strikers' statements only",
-              "Teach from the Farlam Commission's published findings and named contemporaneous reporting; name disputes; date open litigation; adjudicate nothing beyond the record",
-              "Teach from the police press releases",
-              "Avoid the topic entirely",
+              "Teach from the strikers' own statements and from nothing else on the record",
+              "Teach from the Farlam Commission's findings and named reporting; date the litigation",
+              "Teach from the police press releases issued in the week after the shooting itself",
+              "Avoid the topic entirely, on the ground that the litigation has not finished",
             ],
             correctIndex: 1,
             explanation:
@@ -1343,10 +1343,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Who began the Marikana strike, and what was the demand?",
             options: [
-              "AMCU's national office, demanding recognition",
-              "The rock drill operators themselves, a wildcat strike outside both unions, demanding R12,500 a month take-home",
-              "NUM, demanding a closed shop",
-              "Lonmin management, locking workers out",
+              "AMCU's national office, demanding recognition as the new majority union at Lonmin",
+              "The rock drill operators themselves, outside both unions, demanding R12,500 a month",
+              "NUM, demanding a closed shop covering every worker on the whole platinum belt",
+              "Lonmin management, locking the rock drill operators out in a dispute over pay rates",
             ],
             correctIndex: 1,
             explanation:
@@ -1356,10 +1356,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What was the union situation at Lonmin in August 2012?",
             options: [
-              "No unions were present",
-              "NUM was the recognised majority union but had lost standing with the lowest-paid underground workers; the rival AMCU was recruiting hard; within a year AMCU displaced NUM across much of the platinum belt",
-              "AMCU held a closed-shop agreement",
-              "COSATU had expelled NUM",
+              "No unions were present at Lonmin, which had never recognised any union at all",
+              "NUM was the recognised majority union but had lost standing with the lowest-paid workers",
+              "AMCU held a closed-shop agreement covering the whole of the platinum belt by 2012",
+              "COSATU had expelled NUM, leaving the platinum shafts without any union at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1369,10 +1369,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What happened between 10 and 15 August 2012, before the massacre?",
             options: [
-              "Nothing, 16 August came without warning",
-              "Ten people were killed, including two police officers and two Lonmin security guards; after shots near the NUM office wounded two strikers on 11 August, many strikers armed themselves and gathered on the koppie",
-              "Lonmin agreed to the wage demand and then reneged",
-              "The army occupied the mine",
+              "Nothing at all; 16 August came without any warning or any earlier violence",
+              "Ten people were killed, including two police officers and two Lonmin security guards",
+              "Lonmin agreed to the R12,500 demand and then reneged on the written agreement",
+              "The army occupied the mine and disarmed the strikers gathered on the koppie",
             ],
             correctIndex: 1,
             explanation:
@@ -1382,10 +1382,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What was the police 'tactical option'?",
             options: [
-              "A negotiation strategy",
-              "The forcible disarming and dispersal of the gathered strikers, decided on the evening of 15 August for execution on the 16th if strikers did not comply",
-              "A plan to arrest union leaders only",
-              "Aerial surveillance of the koppie",
+              "A negotiation strategy the police offered the strikers gathered on the koppie",
+              "The forcible disarming and dispersal of the strikers, decided on the evening before",
+              "A plan to arrest the AMCU and NUM leaders and to leave the strikers themselves alone",
+              "Aerial surveillance of the koppie by police helicopters through the night of the 15th",
             ],
             correctIndex: 1,
             explanation:
@@ -1396,9 +1396,9 @@ The same building the LRA built, with a side door that lets the work in while le
             prompt: "State the toll of 16 August 2012 as the commission's report records it.",
             options: [
               "34 strikers killed (17 at scene 1, 17 at scene 2), at least 78 wounded, about 270 arrested",
-              "10 killed, 20 wounded",
-              "50 killed, all at one scene",
-              "34 police officers killed",
+              "10 strikers killed (5 at scene 1, 5 at scene 2), at least 20 wounded, about 40 arrested",
+              "50 strikers killed, all of them at scene 1, at least 78 wounded, about 40 arrested",
+              "34 police officers killed at scene 2, at least 78 wounded, about 270 strikers arrested",
             ],
             correctIndex: 0,
             explanation:
@@ -1408,10 +1408,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Why does the course refuse to state whether the scene 1 strikers were attacking the police line?",
             options: [
-              "Because no one has ever asked",
-              "Because that question was disputed before the commission, advancing versus channelled toward police by wire and gas, and the course does not resolve what the record could not",
-              "Because the commission proved they were attacking",
-              "Because the commission proved they were fleeing",
+              "Because no one has ever put that question to the surviving strikers themselves",
+              "Because it was disputed before the commission, and the record could not resolve it",
+              "Because the commission proved the scene 1 strikers were attacking the police",
+              "Because the commission proved the scene 1 strikers were fleeing from the police",
             ],
             correctIndex: 1,
             explanation:
@@ -1421,10 +1421,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What happened to the roughly 270 arrested strikers immediately after the massacre?",
             options: [
-              "They were released with compensation",
-              "Prosecutors initially charged them with the murder of their own colleagues under the apartheid-era 'common purpose' doctrine, charges provisionally withdrawn within days after widespread condemnation (September 2012)",
-              "They were deported",
-              "They were rehired at higher wages",
+              "They were released within days and paid compensation by the state for the arrest",
+              "Prosecutors charged them with their colleagues' murder under 'common purpose'",
+              "They were deported to Lesotho and the Eastern Cape as illegal migrant workers",
+              "They were rehired at higher wages once the strike settlement had been signed",
             ],
             correctIndex: 1,
             explanation:
@@ -1434,10 +1434,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "How did the strike itself end?",
             options: [
-              "It collapsed with no gains",
-              "On 18 September 2012, with a settlement including increases of up to around 22% (BBC, 2012)",
-              "With nationalisation of Lonmin",
-              "It never ended",
+              "It collapsed in October 2012 with no gains and with mass dismissals",
+              "On 18 September 2012, with a settlement including increases of up to 22%",
+              "With the nationalisation of Lonmin's platinum shafts in early 2013",
+              "It never ended; the rock drill operators have been out ever since",
             ],
             correctIndex: 1,
             explanation:
@@ -1447,10 +1447,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What did the Farlam Commission find about the police operation?",
             options: [
-              "That it was well planned and lawfully executed",
-              "That the decision to proceed was defective and improperly planned, and that the police account afterwards was in material respects untruthful, with evidence withheld and in part constructed",
-              "That the police never fired",
-              "That the operation was ordered by parliament",
+              "That it was well planned and lawfully executed in every material respect",
+              "That the decision to proceed was defective and the later police account untruthful",
+              "That the police never fired at all and the deaths were caused by the strikers",
+              "That the operation was ordered by parliament's own police committee that week",
             ],
             correctIndex: 1,
             explanation:
@@ -1460,10 +1460,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What did the commission find regarding Lonmin?",
             options: [
-              "That it bore no responsibility",
-              "That it failed to use its best endeavours to resolve the dispute, failed to respond appropriately to the danger, and had not met housing commitments under its social and labour plan",
-              "That it ordered the police operation",
-              "That it paid the strikers' wage demand secretly",
+              "That it bore no responsibility of any kind at all for what happened that day",
+              "That it failed to use its best endeavours to resolve the dispute or the danger",
+              "That it ordered the police operation and paid for the ammunition that was used",
+              "That it secretly paid the R12,500 demand while the strike was continuing",
             ],
             correctIndex: 1,
             explanation:
@@ -1473,10 +1473,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What did the commission conclude about Cyril Ramaphosa's role?",
             options: [
-              "It found him guilty of murder",
-              "It rejected the accusation that he procured the massacre as groundless on the evidence, reading his 'concomitant action' emails as pressure on the authorities to prevent further deaths, a finding his critics continue to contest politically",
-              "It made no mention of him",
-              "It recommended his prosecution",
+              "It found him guilty of murder and referred the case for prosecution",
+              "It rejected as groundless, on the evidence, the claim that he procured it",
+              "It made no mention of him, since he held no position at Lonmin in 2012",
+              "It recommended his prosecution and left the decision with the NPA",
             ],
             correctIndex: 1,
             explanation:
@@ -1486,10 +1486,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Which of these is something the commission did NOT do?",
             options: [
-              "Criticise the police operation",
-              "Convict individuals or award compensation, a commission of inquiry is not a court; it referred criminal questions and recommended claims processes",
-              "Recommend an inquiry into the National Commissioner's fitness",
-              "Make findings about NUM and AMCU",
+              "Criticise the police operation and the planning behind the deployment",
+              "Convict individuals or award compensation; an inquiry is not a court",
+              "Recommend an inquiry into the National Commissioner's fitness for office",
+              "Make findings about the conduct of NUM and AMCU during the strike",
             ],
             correctIndex: 1,
             explanation:
@@ -1499,10 +1499,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What was the accountability position when this course was written (2026)?",
             options: [
-              "All officers involved had been convicted",
-              "Phiyega found unfit for office; many family civil claims settled from 2018 onward, others continuing; no one convicted of any August 2012 killing, and no officer tried for 16 August itself",
-              "The state refused to pay any claims",
-              "The commission's report remains secret",
+              "All of the officers involved had been convicted and sentenced by the year 2020",
+              "Phiyega found unfit for office; many claims settled from 2018; no one convicted",
+              "The state refused to pay any claim, and every family's case was dismissed",
+              "The commission's report remains secret and has still never been published",
             ],
             correctIndex: 1,
             explanation:
@@ -1512,10 +1512,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Why does the course teach 'found' and 'did not find' as separate lists?",
             options: [
-              "To make the lesson longer",
-              "Because citing only the findings that fit a politics, the operation's defects without the Ramaphosa exoneration, or the reverse, edits the record into a slogan; holding both lists is how to read any official inquiry",
-              "Because the commission required it",
-              "Because the lists are identical",
+              "To make the lesson longer than the other lessons in this section",
+              "Because citing only the findings that fit a politics edits the record",
+              "Because the commission required its findings to be published in two lists",
+              "Because the two lists are identical, and repeating them aids memory",
             ],
             correctIndex: 1,
             explanation:
@@ -1608,10 +1608,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What was GEAR, and why does it matter to the alliance story?",
             options: [
-              "A mining safety code COSATU wrote",
-              "The market-oriented macroeconomic strategy government adopted in 1996 without alliance consensus, which COSATU publicly opposed, fighting its own government from inside the alliance",
-              "A COSATU recruitment drive",
-              "A 2018 wage law",
+              "A mining safety code COSATU wrote and government adopted in 1996",
+              "The market-oriented macroeconomic strategy of 1996, which COSATU opposed",
+              "A COSATU recruitment drive aimed at public-sector members after 1994",
+              "A 2018 wage law negotiated through NEDLAC by the alliance partners",
             ],
             correctIndex: 1,
             explanation:
@@ -1621,10 +1621,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What did NUMSA resolve in December 2013?",
             options: [
-              "To merge with NUM",
-              "Not to campaign for the ANC in 2014, to call on COSATU to break from the alliance, and to build a united front",
-              "To dissolve itself",
-              "To support the Democratic Alliance",
+              "To merge with NUM and form a single union for mining and metals",
+              "Not to campaign for the ANC in 2014 and to call on COSATU to leave",
+              "To dissolve itself and hand its members to the public-sector unions",
+              "To support the Democratic Alliance in the 2014 national election",
             ],
             correctIndex: 1,
             explanation:
@@ -1634,10 +1634,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "How and when was NUMSA expelled from COSATU?",
             options: [
-              "By a court order in 2016",
+              "By a Labour Court order that COSATU's leadership obtained in 2016",
               "By a central executive committee vote of 33 to 24 on 8 November 2014",
-              "By presidential decree in 2013",
-              "It left voluntarily in 2017",
+              "By presidential decree at the 2013 alliance summit held in Pretoria",
+              "It was never expelled at all; it left voluntarily in November 2017",
             ],
             correctIndex: 1,
             explanation:
@@ -1647,10 +1647,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is SAFTU?",
             options: [
-              "A government department",
-              "The rival federation launched in April 2017 by NUMSA, Vavi and others, roughly 700,000 claimed members, about two dozen unions, declaring itself 'independent but not apolitical'",
-              "COSATU's youth wing",
-              "An employers' association",
+              "A government department created in 2017 to register South Africa's trade unions",
+              "The rival federation launched in April 2017 by NUMSA and Vavi, 700,000 members",
+              "COSATU's youth wing, launched in 2017 to recruit younger workers into affiliates",
+              "An employers' association formed in 2017 to bargain with NUMSA in the metal sector",
             ],
             correctIndex: 1,
             explanation:
@@ -1660,10 +1660,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is COSATU's strongest exhibit for staying in the alliance?",
             options: [
-              "The GEAR strategy",
-              "The National Minimum Wage Act 9 of 2018, in force 1 January 2019 at R20/hour, reaching some six million workers, negotiated through NEDLAC from inside",
-              "The 1987 miners' strike",
-              "The Marikana settlement",
+              "The GEAR strategy, which COSATU negotiated with its own government in 1996",
+              "The National Minimum Wage Act of 2018, at R20/hour, negotiated through NEDLAC",
+              "The 1987 miners' strike, which the alliance settled on the union's terms",
+              "The Marikana settlement, which COSATU negotiated on behalf of the strikers",
             ],
             correctIndex: 1,
             explanation:
@@ -1673,10 +1673,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is NUMSA/SAFTU's strongest exhibit for leaving?",
             options: [
-              "The 2018 minimum wage",
-              "Marikana, a massacre of striking mineworkers under an ANC-led government, read as proof of what an alliance federation could not say or stop",
-              "The Durban strikes",
-              "The Wiehahn Commission",
+              "The 2018 minimum wage, set well below any measure of a living wage",
+              "Marikana, a massacre of striking mineworkers under an ANC-led government",
+              "The Durban strikes of 1973, which the ANC directed from exile abroad",
+              "The Wiehahn Commission, which the alliance forced on the apartheid state",
             ],
             correctIndex: 1,
             explanation:
@@ -1686,10 +1686,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What compositional shift inside COSATU do its critics point to?",
             options: [
-              "A shift toward farm workers",
-              "A shift toward public-sector unions, members whose employer is the state the alliance runs, while the platinum belt, the brokered and the unemployed drifted outside",
-              "A shift toward foreign members",
-              "A shift toward managers",
+              "A shift toward farm workers, organised after the 2012 Western Cape strikes",
+              "A shift toward public-sector unions, whose employer is the state the alliance runs",
+              "A shift toward foreign members recruited across the whole SADC region",
+              "A shift toward managers, who joined the affiliates in numbers after 1994",
             ],
             correctIndex: 1,
             explanation:
@@ -1699,10 +1699,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "How does the course adjudicate the alliance debate?",
             options: [
-              "It rules for COSATU",
-              "It rules for SAFTU",
-              "It doesn't: it steelmans both cases from their own documents, notes both exhibits are genuine, and leaves the verdict to the student and to South Africans",
-              "It says the debate is meaningless",
+              "It rules for COSATU: the 2018 minimum wage settles the argument outright",
+              "It rules for SAFTU: Marikana alone settles the whole argument outright",
+              "It doesn't: it steelmans both cases and leaves the verdict to the student",
+              "It says the debate is meaningless, since both federations are shrinking",
             ],
             correctIndex: 2,
             explanation:
@@ -1712,10 +1712,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is 'the Poland question' as applied to South Africa?",
             options: [
-              "Whether South Africa should join the EU",
-              "Whether a union movement that helped win the state has, like Solidarność's Poland, lost the workplace, offered as an open question, not a verdict",
-              "Whether Poland should adopt the LRA",
-              "Whether martial law could happen in South Africa",
+              "Whether South Africa should copy Poland's post-1989 privatisation programme",
+              "Whether a movement that helped win the state has, like Poland's, lost the workplace",
+              "Whether Poland should adopt the LRA and South Africa's bargaining councils",
+              "Whether martial law of the kind Poland declared could happen in South Africa",
             ],
             correctIndex: 1,
             explanation:
@@ -1725,10 +1725,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Which fact most complicates the claim that South Africa rhymes with Poland?",
             options: [
-              "South Africa has no constitution",
-              "Measured union density of roughly a quarter to three in ten employees (survey-varying; ILO/OECD-AIAS), several times Poland's ~9%, plus living sectoral councils, NEDLAC and the 2018 minimum wage",
-              "Poland never had a union",
-              "South African strikes are illegal",
+              "South Africa has no constitutional protection for the right to strike",
+              "Union density of a quarter to three in ten employees, several times Poland's",
+              "Poland never had a mass union movement of the kind that COSATU built",
+              "South African strikes are illegal unless a bargaining council agrees",
             ],
             correctIndex: 1,
             explanation:
@@ -1738,10 +1738,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "How does the course handle South African union density figures?",
             options: [
-              "It states 31.45% exactly",
-              "It gives the documented range (roughly a quarter to three in ten employees since the 1990s), names the sources (ILO, OECD/AIAS), and flags that figures vary by survey and year",
-              "It says density cannot be measured",
-              "It uses Poland's figure as a proxy",
+              "It states union density at exactly 31.45%, the figure Stats SA published",
+              "It gives the documented range, names the sources, and flags that surveys vary",
+              "It says union density cannot be measured in a country as unequal as this",
+              "It uses Poland's density figure as a proxy for South Africa's own density",
             ],
             correctIndex: 1,
             explanation:
@@ -1751,10 +1751,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Run Question 4 for democratic South Africa, as the course leaves it.",
             options: [
-              "Strikes are banned",
-              "Protected strikes on paper, and Marikana on the record; the course says to watch this question hardest of all",
-              "Strikers are always compensated",
-              "The question no longer applies",
+              "Strikes are banned outright under the post-1994 constitutional order",
+              "Protected strikes on paper, and Marikana on the record; watch it hardest",
+              "Strikers are always compensated by the CCMA for the wages they lose",
+              "The question no longer applies once workers have the vote and a union",
             ],
             correctIndex: 1,
             explanation:
@@ -1764,10 +1764,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What is the 'bluntest lesson about categories' this course adds to the track?",
             options: [
-              "Categories never matter",
-              "A right belongs to a category, and whoever writes the category decides who has the right, from 'not pass-bearing' (1924) to 'below the threshold, after three months' (2015)",
-              "All categories are unconstitutional",
-              "Only judges may write categories",
+              "Categories never matter; what matters is only which party holds power",
+              "A right belongs to a category, and whoever writes the category decides",
+              "All statutory categories are unconstitutional under section 23 of 1996",
+              "Only judges, never legislators, may write the categories that hold rights",
             ],
             correctIndex: 1,
             explanation:
@@ -1777,10 +1777,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Which companion courses does the final lesson point to, and for what?",
             options: [
-              "No other courses exist",
-              "Know Your Rights at Work (your own job, Monday), the anchor (the four-questions frame), and Poland (the mirror case)",
-              "Only the Germany course",
-              "A course on South African cuisine",
+              "No other courses exist; this is the only labour history course here",
+              "Know Your Rights at Work, the anchor's four-questions frame, and Poland",
+              "Only the Germany course, for its works councils and codetermination",
+              "A course on South African cuisine and the mining compound kitchens",
             ],
             correctIndex: 1,
             explanation:
@@ -1790,10 +1790,10 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "What discipline does the course say to apply when a movement's history is still being fought over?",
             options: [
-              "Wait fifty years before teaching it",
-              "Teach the record, date the claims, steelman the sides, and leave the verdict to the people who must live it",
-              "Teach only the government's version",
-              "Teach only the opposition's version",
+              "Wait fifty years before teaching it, when the participants are all gone",
+              "Teach the record, date the claims, steelman the sides, leave the verdict",
+              "Teach only the government's version, since the state keeps the records",
+              "Teach only the opposition's version, since the state cannot be trusted",
             ],
             correctIndex: 1,
             explanation:

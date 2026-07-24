@@ -177,11 +177,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "What kind of thing is 'Mesoamerica'?",
             options: [
-              "A culture area defined by shared traits across many unrelated languages, proposed by Paul Kirchhoff in 1943",
-              "The ancient name of the Aztec empire",
-              "A synonym for modern Mexico",
-              "A single ancient nation with one language",
-            ],
+                       "A culture area defined by shared traits across many unrelated languages",
+                       "The ancient name the Aztec empire's own rulers used for their state",
+                       "A synonym for the modern Mexican republic within its present borders",
+                       "A single ancient nation speaking one language under a single dynasty",
+                     ],
             correctIndex: 0,
             explanation:
               "Kirchhoff (1943) defined it by the shared package, maize/beans/squash, the 260+365-day calendars, screenfold books, the ballgame, stepped pyramids, across peoples from central Mexico to western Honduras.",
@@ -190,11 +190,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "Maize was domesticated from teosinte…",
             options: [
-              "in the Balsas River valley of southern Mexico, roughly 9,000 years ago",
-              "in the Andes, about 2,000 years ago",
-              "in the Mississippi valley, roughly 4,000 years ago",
-              "nowhere, maize grows wild",
-            ],
+                       "in the Balsas River valley of southern Mexico, roughly 9,000 years ago",
+                       "in the Andes of highland Peru, roughly 2,000 years ago, from wild rye",
+                       "in the Mississippi valley of North America, roughly 4,000 years ago",
+                       "nowhere at all, since maize still grows wild throughout Mesoamerica",
+                     ],
             correctIndex: 0,
             explanation:
               "Genetic (Matsuoka et al., 2002) and microbotanical (Piperno et al., 2009) evidence converge on the Balsas valley around the ninth millennium BP. Turning finger-sized teosinte spikes into cobs was millennia of Indigenous plant breeding.",
@@ -203,11 +203,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "Which of these did Mesoamerican builders have available?",
             options: [
-              "Organized human labor, but no draft animals, no wheeled transport, and no metal tools for most of the sequence",
-              "Oxen and carts from about 1500 BCE",
-              "Iron chisels from the Olmec period onward",
-              "Horses, which are native to the Americas",
-            ],
+                       "Organized human labor, but no draft animals, wheels, or metal tools",
+                       "Teams of oxen and wooden carts, in general use from about 1500 BCE",
+                       "Iron chisels and saws, in general use from the Olmec period onward",
+                       "Horses and mules, native to the Americas and bred for heavy haulage",
+                     ],
             correctIndex: 0,
             explanation:
               "There were no horses, oxen, or mules in the pre-contact Americas; wheels appear only on figurines; metallurgy arrives c. 600-800 CE in West Mexico and stays mostly ornamental. The pyramids are organized muscle and engineering.",
@@ -216,11 +216,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "The conventional Preclassic/Classic/Postclassic timeline should be treated as…",
             options: [
-              "archaeologists' filing labels with fuzzy, regional boundaries, nothing 'ended' on a date",
-              "precise political eras declared by Mesoamerican states themselves",
-              "a calendar the Maya carved on stelae",
-              "obsolete and no longer used by anyone",
-            ],
+                       "archaeologists' filing labels with fuzzy, region-by-region boundaries",
+                       "precise political eras that Mesoamerican states declared for themselves",
+                       "a three-part calendar cycle the Maya carved onto their dated stelae",
+                       "an obsolete nineteenth-century scheme that no archaeologist now uses",
+                     ],
             correctIndex: 0,
             explanation:
               "The labels organize evidence (c. 2000 BCE-250 CE; c. 250-900; c. 900-1521) but the transitions are gradual and vary by region.",
@@ -229,11 +229,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "Per the course, what does the 'ancient aliens built the pyramids' move actually do?",
             options: [
-              "Reassigns engineering that Indigenous people demonstrably did to imaginary outsiders, erasure wearing a costume",
-              "Harmlessly entertains without affecting anyone",
-              "Correctly flags genuine gaps in the evidence",
-              "Honors Indigenous builders by making them famous",
-            ],
+                       "Reassigns documented Indigenous engineering to imaginary outsiders",
+                       "Harmlessly entertains viewers without affecting anyone's understanding",
+                       "Correctly flags the genuine gaps that remain in the excavated record",
+                       "Honors the Indigenous builders by making their monuments world-famous",
+                     ],
             correctIndex: 0,
             explanation:
               "We have the quarries, tool marks, unfinished monuments, and in some cases written records of the builders. Crediting aliens deletes documented Indigenous achievement, the same failure as the erasure trap.",
@@ -242,11 +242,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "Where does the name 'Olmec' come from?",
             options: [
-              "It is a Nahuatl exonym ('rubber people') applied by the Aztecs to later Gulf Coast inhabitants; the builders' own name is unknown",
-              "It is what the builders of San Lorenzo called themselves",
-              "It is a Maya word for 'stone head'",
-              "It was invented by Cortés",
-            ],
+                       "A Nahuatl exonym, 'rubber people'; the builders' own name is unknown",
+                       "The name the builders of San Lorenzo are known to have used themselves",
+                       "A Classic Maya word meaning 'stone head,' read from the colossal heads",
+                       "A label that Cortés invented for the Gulf Coast peoples he met in 1519",
+                     ],
             correctIndex: 0,
             explanation:
               "Archaeologists borrowed the Aztec-era name. The San Lorenzo builders' self-name and language are unidentified, a pattern repeated at Teotihuacan.",
@@ -255,11 +255,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "The two great Olmec centers, in order, are…",
             options: [
-              "San Lorenzo (c. 1400-1000 BCE), then La Venta (c. 1000-400 BCE)",
-              "La Venta (c. 2000 BCE), then San Lorenzo (c. 500 BCE)",
-              "Tikal, then Teotihuacan",
-              "Monte Albán, then Tula",
-            ],
+                       "San Lorenzo (c. 1400-1000 BCE), then La Venta (c. 1000-400 BCE)",
+                       "La Venta (c. 2000-1500 BCE), then San Lorenzo (c. 500-100 BCE)",
+                       "Tikal (c. 250-900 CE), then Teotihuacan (c. 100-550 CE), in Petén",
+                       "Monte Albán (c. 500 BCE-800 CE), then Tula (c. 950-1150 CE)",
+                     ],
             correctIndex: 0,
             explanation:
               "San Lorenzo, on an engineered plateau in Veracruz, is plausibly Mesoamerica's first city; as it declined, La Venta rose in the Tabasco wetlands with its ~30 m earthen pyramid and buried serpentine offerings.",
@@ -268,11 +268,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "What is the consensus scholarly reading of the seventeen Olmec colossal heads?",
             options: [
-              "Individualized portraits of rulers, carved from basalt moved tens of kilometers without wheels or draft animals",
-              "Portraits of African visitors, proving transatlantic contact",
-              "Images of a single god, all identical",
-              "Natural boulders mistaken for sculpture",
-            ],
+                       "Individualized ruler portraits, carved from basalt hauled without wheels",
+                       "Portraits of African visitors, proving repeated transatlantic contact",
+                       "Images of a single god, all seventeen carved to one identical pattern",
+                       "Natural basalt boulders that early surveyors mistook for sculpture",
+                     ],
             correctIndex: 0,
             explanation:
               "Each face is distinct and several were defaced or buried, politics, not vandalism. The Van Sertima 'African' claim is rejected by Mesoamericanists (Ortiz de Montellano et al., 1997): the heads sit in a continuous local sculptural tradition.",
@@ -281,11 +281,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "What did the waterlogged shrine of El Manatí preserve?",
             options: [
-              "Rubber balls in contexts dating as early as c. 1600 BCE, Mesoamerican materials chemistry millennia before vulcanization",
-              "The oldest maize cobs in the Americas",
-              "Iron tools traded from the Andes",
-              "A fleet of Olmec canoes",
-            ],
+                       "Rubber balls in waterlogged contexts dating as early as c. 1600 BCE",
+                       "The oldest maize cobs yet found in the Americas, dated to c. 7000 BCE",
+                       "Iron tools traded north from the Andes in the first millennium BCE",
+                       "A fleet of Olmec seagoing canoes, sunk and preserved in lake mud",
+                     ],
             correctIndex: 0,
             explanation:
               "Processing latex with morning-glory juice yields bouncing rubber (Ortíz & Rodríguez, 1999), the material behind the ballgame on Kirchhoff's trait list, and the accidental truth in the 'rubber people' nickname.",
@@ -294,11 +294,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "The 'mother culture' vs. 'sister cultures' argument is best described as…",
             options: [
-              "a live scholarly debate, Coe and Diehl for radiation from the Gulf, Flannery and Marcus for co-evolving regional siblings, with mixed evidence and no declared winner",
-              "settled in favor of the mother culture since the 1960s",
-              "settled in favor of sister cultures since 2000",
-              "a dispute about whether the Olmec existed at all",
-            ],
+                       "a live debate: Coe and Diehl for radiation, Flannery and Marcus against",
+                       "a debate settled for the mother culture by Coe's 1960s excavations",
+                       "a debate settled for sister cultures by a 2000 consensus conference",
+                       "a dispute over whether the Olmec ever existed as a distinct culture",
+                     ],
             correctIndex: 0,
             explanation:
               "Olmec-style objects travel far, but influence also flows toward the Gulf, and new discoveries (Aguada Fénix) keep moving the 'firsts.' The course teaches the debate as a debate.",
@@ -307,11 +307,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "What is the honest label for the Cascajal Block?",
             options: [
-              "Possible earliest writing in the Americas; unprovenienced; contested",
-              "Confirmed Maya writing of 900 BCE",
-              "A proven modern forgery",
-              "An undeciphered Spanish colonial document",
-            ],
+                       "Possible earliest writing in the Americas; unprovenienced; contested",
+                       "Confirmed Maya writing of c. 900 BCE, excavated in a sealed context",
+                       "A proven modern forgery, exposed by laboratory testing in the 1990s",
+                       "An undeciphered Spanish colonial document from the Veracruz archives",
+                     ],
             correctIndex: 0,
             explanation:
               "Published in Science (2006) as Olmec writing of c. 900 BCE, but recovered by villagers from a bulldozed lot, no excavated context, so date and authenticity stay debated.",
@@ -320,11 +320,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "What is Aguada Fénix?",
             options: [
-              "An artificial platform c. 1.4 km long in Tabasco, built c. 1000-800 BCE, the largest and oldest known monumental construction in the Maya area, announced in 2020",
-              "The tallest stone pyramid at Tikal",
-              "An Aztec fortress on Lake Texcoco",
-              "A natural hill once mistaken for a ruin",
-            ],
+                       "An artificial platform 1.4 km long in Tabasco, built c. 1000-800 BCE",
+                       "The tallest stone pyramid at Tikal, raised c. 700 CE in the Petén",
+                       "An Aztec island fortress on Lake Texcoco, built in the 1450s CE",
+                       "A natural limestone hill that early surveyors mistook for a ruin",
+                     ],
             correctIndex: 0,
             explanation:
               "Found via airborne LiDAR (Inomata et al., 2020, Nature); by construction volume it exceeds later Maya pyramids, and from the ground it reads as landscape.",
@@ -333,11 +333,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "Why does Aguada Fénix upend the 'societies start small and build up to their biggest works' intuition?",
             options: [
-              "The oldest known Maya monumental construction is also the largest, the earliest chapter came first AND biggest",
-              "It was built by the Aztecs long after the Maya",
-              "It is small but very old",
-              "It proves monumental building began in Europe",
-            ],
+                       "The oldest known Maya monumental construction is also the largest",
+                       "It was built by the Aztecs centuries after the Maya cities fell",
+                       "It is a strikingly small platform that happens to be unusually old",
+                       "It proves monumental building began in Europe and spread westward",
+                     ],
             correctIndex: 0,
             explanation:
               "Radiocarbon puts main construction c. 1000-800 BCE, before the Classic cities, yet nothing later in the Maya area exceeds its volume. Follow-up survey found nearly 500 formally similar complexes across the region.",
@@ -346,11 +346,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "What does the near-absence of ruler portraits, royal tombs, and palaces at Aguada Fénix suggest, per its excavators?",
             options: [
-              "That massive coordinated labor did not require a king, collective, seasonal organization could build at this scale (offered as an argument, not settled fact)",
-              "That the site was never finished",
-              "That its kings were buried elsewhere, which is proven",
-              "That the platform was built by a small family",
-            ],
+                       "That massive coordinated labor did not require a king to command it",
+                       "That the site was abandoned long before construction was finished",
+                       "That its kings were buried elsewhere, which excavation has proven",
+                       "That the platform was built by a single small family over decades",
+                     ],
             correctIndex: 0,
             explanation:
               "Inomata et al. (2020) read the site as evidence of collective labor without entrenched rulership. The course hedges it appropriately: a published argument from a partially excavated site.",
@@ -359,11 +359,11 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
           {
             prompt: "The course lists Aguada Fénix (2020), the Huei Tzompantli excavation (2015-), and the Petén LiDAR census (2018) to make what point?",
             options: [
-              "Mesoamerican studies is a field moving under your feet, expect older books (and some sentence here) to be revised, which is the method working",
-              "That archaeology finished its work in 2020",
-              "That nothing was known before 2015",
-              "That only discoveries after 2000 count as evidence",
-            ],
+                       "Mesoamerican studies is a field moving under your feet; expect revisions",
+                       "That archaeology essentially finished its work in the region by 2020",
+                       "That almost nothing at all was known about Mesoamerica before 2015",
+                       "That only discoveries made after the year 2000 should count as evidence",
+                     ],
             correctIndex: 0,
             explanation:
               "The biggest recent findings are years, not centuries, old. Treating revision as normal is part of the course's method: evidence, ranges, and named disagreements.",
@@ -469,11 +469,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "How does the course state Teotihuacan's peak population, and why that phrasing?",
             options: [
-              "Commonly estimated at 100,000 or more, among the largest cities on Earth at the time, a hedged range, because the figures are estimates, not censuses",
-              "Exactly 250,000, per the city's own records",
-              "About 5,000, it was a ceremonial center, not a city",
-              "Unknown to the nearest million",
-            ],
+                       "Commonly estimated at 100,000 or more, because these are estimates",
+                       "Exactly 250,000, a figure recorded in the city's own census rolls",
+                       "About 5,000: a ceremonial center staffed by priests, never a real city",
+                       "Unknown to within a million in either direction, so never stated at all",
+                     ],
             correctIndex: 0,
             explanation:
               "Population figures come from mapped residential area and density assumptions (Millon 1973; Cowgill 2015). The course's method: ranges and attribution, not false precision.",
@@ -482,11 +482,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "Which feature of Teotihuacan's urban form was nearly unique at its scale in the premodern world?",
             options: [
-              "A planned grid city where most residents lived in ~2,000 masonry apartment compounds, very many painted with murals",
-              "Stone skyscrapers of ten stories",
-              "A defensive wall circuit twenty kilometers long",
-              "Suburbs connected by canals with locks",
-            ],
+                       "A planned grid city where most residents lived in masonry compounds",
+                       "Stone skyscrapers ten stories high lining the Avenue of the Dead",
+                       "A defensive wall circuit some twenty kilometers long ringing the city",
+                       "Outer suburbs linked to the center by canals fitted with stone locks",
+                     ],
             correctIndex: 0,
             explanation:
               "From c. 200 CE the housing stock was rebuilt into planned multi-family compounds with patios, drains, and plastered, painted walls, an urban standard of living for ordinary residents with few ancient parallels.",
@@ -495,11 +495,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "What event plausibly fed Teotihuacan's early growth?",
             options: [
-              "The Xitle eruption devastating rival Cuicuilco around the turn of the era (eruption dating itself debated), concentrating the Basin's population",
-              "The fall of the Olmec heartland",
-              "A gold rush in the Basin of Mexico",
-              "The arrival of Cortés",
-            ],
+                       "The Xitle eruption devastating rival Cuicuilco near the turn of the era",
+                       "The collapse of the Olmec heartland at San Lorenzo shortly before 900 BCE",
+                       "A gold and turquoise rush in the Basin of Mexico in the first century",
+                       "The arrival of Cortés and his Tlaxcalan allies in the Basin of Mexico",
+                     ],
             correctIndex: 0,
             explanation:
               "With Cuicuilco crippled, Teotihuacan absorbed population on an unprecedented scale (Cowgill, 2015).",
@@ -508,11 +508,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "The evidence for Teotihuacan as a multiethnic city includes…",
             options: [
-              "a Oaxaca barrio with Zapotec-style tombs, a merchants' barrio with Gulf and Maya ceramics, and isotope studies showing migrants raised elsewhere",
-              "a census carved on the Pyramid of the Sun",
-              "Spanish colonial tax rolls",
-              "nothing, the claim is speculative",
-            ],
+                       "a Oaxaca barrio, a merchants' barrio, and isotope studies of migrants",
+                       "a full household census carved onto the face of the Pyramid of the Sun",
+                       "Spanish colonial tax rolls listing the city's foreign quarters by ward",
+                       "nothing at all, since the claim rests on nineteenth-century speculation",
+                     ],
             correctIndex: 0,
             explanation:
               "Whole neighborhoods kept foreign burial customs for generations, and bone chemistry (Manzanilla, 2015) confirms in-migration. People moved to Teotihuacan the way people move to capitals.",
@@ -521,11 +521,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "What did Sugiyama and Cabrera's excavations at the Feathered Serpent Pyramid establish?",
             options: [
-              "A dedicatory mass sacrifice of more than 200 individuals c. 200 CE, ritual killing centuries before the Aztecs existed",
-              "That the pyramid was a tomb for a named king",
-              "That no sacrifice ever occurred at Teotihuacan",
-              "That the victims were Spanish prisoners",
-            ],
+                       "A dedicatory mass sacrifice of more than 200 individuals c. 200 CE",
+                       "That the pyramid was built as the tomb of a named Teotihuacan king",
+                       "That no human sacrifice ever took place anywhere in Teotihuacan's core",
+                       "That the victims were Spanish prisoners of war taken in the 1520s",
+                     ],
             correctIndex: 0,
             explanation:
               "Many were young men with warrior regalia, hands positioned as if bound (Sugiyama, 2005). The course states it plainly: sacrifice is archaeologically real and is not an Aztec invention or Spanish slander.",
@@ -534,11 +534,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "The city's economic reach is traced in part through…",
             options: [
-              "green Pachuca obsidian, worked in city workshops and distributed across Mesoamerica",
-              "silver coinage stamped with the city's emblem",
-              "iron ingots from state foundries",
-              "wheat exports to the Maya lowlands",
-            ],
+                       "green Pachuca obsidian, worked in city workshops and traded widely",
+                       "silver coinage stamped with the city's emblem and found region-wide",
+                       "iron ingots cast in state foundries and shipped to the Gulf Coast",
+                       "wheat and barley exported in bulk to the Maya lowland city-states",
+                     ],
             correctIndex: 0,
             explanation:
               "Teotihuacan controlled the Pachuca source; its blades and cores, plus its architectural style and imagery, appear from northern Mexico to the Maya area.",
@@ -547,11 +547,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "Who named 'Teotihuacan,' and when?",
             options: [
-              "The Aztecs (in Nahuatl), roughly eight centuries after the city's fall, when they knew it as ruins",
-              "The city's own founders, in their records",
-              "The Spanish, in 1521",
-              "Archaeologists, in 1905",
-            ],
+                       "The Aztecs, in Nahuatl, centuries after the city already lay in ruins",
+                       "The city's own founders, in records kept from its earliest decades",
+                       "The Spanish, in 1521, while marching on the Basin's northern towns",
+                       "Archaeologists, in 1905, at the start of the first state excavations",
+                     ],
             correctIndex: 0,
             explanation:
               "The name, translated along the lines of 'where the gods were made' (translation debated), and every monument label on the map are later Nahuatl. The builders' own name for the city is unknown.",
@@ -560,11 +560,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "What is the state of knowledge about Teotihuacan's language?",
             options: [
-              "Unknown, Nahua, Totonac, and other candidates are argued, but the city left no long readable texts, and its signs may or may not be writing",
-              "Proven to be an early form of Nahuatl",
-              "Proven to be Zapotec",
-              "Deciphered in 1952 from a bilingual stone",
-            ],
+                       "Unknown: Nahua, Totonac and others are argued, with no long texts",
+                       "Proven to be an early form of Nahuatl, from bilingual inscriptions",
+                       "Proven to be Zapotec, from long texts found in the Oaxaca barrio",
+                       "Deciphered in 1952 from a bilingual stone found near the Moon Pyramid",
+                     ],
             correctIndex: 0,
             explanation:
               "No Rosetta-equivalent exists; scholars debate whether the painted/carved signs are script, notation, or emblem code (Cowgill, 2015).",
@@ -573,11 +573,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "How does Teotihuacan's rulership record compare with the Maya cities'?",
             options: [
-              "Maya cities blanket themselves in named, dated ruler portraits; Teotihuacan has yielded no securely identified image or tomb of any named ruler",
-              "Both are equally rich in royal portraits",
-              "Teotihuacan's king list is complete; the Maya kept none",
-              "Neither region ever depicted rulers",
-            ],
+                       "Maya cities name and date their kings, while Teotihuacan names none",
+                       "Both regions are equally rich in named and dated royal portraits",
+                       "Teotihuacan's king list is complete, while the Maya kept no records",
+                       "Neither region ever depicted its rulers in stone or in painted murals",
+                     ],
             correctIndex: 0,
             explanation:
               "Hence the live debate: unrecognized kings vs. collective/corporate governance (Millon; Manzanilla). For one of antiquity's great cities, 'monarchy or not?' is unanswered.",
@@ -586,11 +586,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "What happened at Tikal in January 378 CE, per the Maya inscriptions as read by Stuart?",
             options: [
-              "Sihyaj K'ahk' ('Fire Is Born') arrived; Tikal's king died the same day; a new dynasty tied to Teotihuacan-flavored 'Spearthrower Owl' was installed, the entrada",
-              "Tikal conquered Teotihuacan",
-              "The city was abandoned to drought",
-              "The first Long Count date was carved",
-            ],
+                       "Sihyaj K'ahk' arrived, Tikal's king died, and a new dynasty took power",
+                       "Tikal conquered Teotihuacan and installed a king in the Basin of Mexico",
+                       "The city was abandoned to drought and its whole population moved north",
+                       "The first Long Count date in the Maya lowlands was carved on a stela",
+                     ],
             correctIndex: 0,
             explanation:
               "Stuart (2000) read the entrada texts; the Teotihuacan-connected intervention is now the mainstream account (with debate about how direct the control was).",
@@ -599,11 +599,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "What is the 'epistemological irony' of the 378 entrada?",
             options: [
-              "The clearest dated political event in Teotihuacan's history is known only because the literate Maya wrote it down",
-              "It happened on a leap day",
-              "Teotihuacan recorded it but the Maya did not",
-              "It was discovered by accident",
-            ],
+                       "The clearest dated event in Teotihuacan's history was written by Maya",
+                       "The entrada fell on a leap day that no Mesoamerican calendar records",
+                       "Teotihuacan recorded the entrada in detail while the Maya did not",
+                       "It was discovered by accident during roadworks in the Basin of Mexico",
+                     ],
             correctIndex: 0,
             explanation:
               "Teotihuacan's own signs can't be read; readable Maya glyphs supply Teotihuacan's political biography, the lesson's point about writing giving a civilization a voice.",
@@ -612,11 +612,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "What does the burn pattern at Teotihuacan's fall look like?",
             options: [
-              "Selective: temples and elite structures along the Avenue of the Dead burned and sculptures smashed, while most apartment compounds show no destruction",
-              "Total: every structure in the city leveled",
-              "There is no evidence of burning at all",
-              "Only the apartment compounds burned",
-            ],
+                       "Selective: temples along the Avenue burned, apartment compounds did not",
+                       "Total: every structure in the city was leveled in one single episode",
+                       "There is no evidence at all of burning anywhere in the excavated city",
+                       "Only the outlying apartment compounds burned, while the temples stood",
+                     ],
             correctIndex: 0,
             explanation:
               "That selectivity is why targeted destruction of the symbols of authority (uprising/civil conflict) is argued, though external attack and drought stress remain in play. Cause: contested.",
@@ -625,11 +625,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "When did Teotihuacan's ceremonial core burn?",
             options: [
-              "Around the mid-500s CE, with cited dates running c. 550-650",
-              "Exactly 476 CE",
-              "In 1521, during the Spanish siege",
-              "Around 100 BCE, before the city's rise",
-            ],
+                       "Around the mid-500s CE, with cited dates running c. 550-650",
+                       "Exactly 476 CE, the same year the western Roman empire ended",
+                       "In 1521 CE, during the Spanish siege of the Basin of Mexico",
+                       "Around 100 BCE, before the city's rise, per obsidian dating",
+                     ],
             correctIndex: 0,
             explanation:
               "The course gives the range rather than a false-precision year; the population dispersed over decades and the area was never wholly abandoned.",
@@ -638,11 +638,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "Why does the course devote a full lesson to what is NOT known about Teotihuacan?",
             options: [
-              "Because calibrated ignorance is a skill: 'unknown' is a finding earned by excavation, and stating it honestly is what blocks aliens-and-Atlantis pseudo-history",
-              "Because nothing at all is known about the city",
-              "To discourage students from studying it",
-              "Because the unknowns will never be resolved",
-            ],
+                       "Because calibrated ignorance is a skill; 'unknown' is a real finding",
+                       "Because nothing whatsoever is known about the city or its builders",
+                       "To discourage students from studying a hopelessly obscure ruined site",
+                       "Because the remaining unknowns can never in principle be resolved",
+                     ],
             correctIndex: 0,
             explanation:
               "Pseudo-history rushes into vacuums. The honest 'unknown, and here is what would settle it' is the discipline that Section 7's decipherment story shows succeeding.",
@@ -651,11 +651,11 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
           {
             prompt: "How did the Aztecs relate to Teotihuacan's ruins?",
             options: [
-              "With reverence: they named the site in Nahuatl, set their Fifth Sun creation story there, and their kings left offerings",
-              "They demolished them for building stone and left nothing",
-              "They never knew the ruins existed",
-              "They rebuilt the city and lived in it",
-            ],
+                       "With reverence: they named it and set their creation story there",
+                       "They quarried the ruins for building stone and left nothing standing",
+                       "They never knew that the ruined city existed, being too far north",
+                       "They rebuilt the city and lived in it right up to the Spanish arrival",
+                     ],
             correctIndex: 0,
             explanation:
               "Eight centuries after the fall, the Mexica treated the city as the place 'where the gods were made', which is why our map labels are Aztec, not Teotihuacano.",
@@ -806,11 +806,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "The political structure of the Classic Maya world was…",
             options: [
-              "dozens of rival city-states under 'holy lords,' sharing a civilization but never a single government",
-              "one centralized Maya empire ruled from Tikal",
-              "a democracy of village councils with no kings",
-              "a province of Teotihuacan throughout",
-            ],
+                       "dozens of rival city-states under 'holy lords,' never one government",
+                       "a single centralized Maya empire ruled from Tikal for six centuries",
+                       "a wide democracy of village councils that recognized no kings at all",
+                       "a single province of Teotihuacan throughout the entire Classic period",
+                     ],
             correctIndex: 0,
             explanation:
               "'Maya empire' is a myth: the shared script, calendar, and religion spanned polities that warred and allied like Renaissance Italian states (Martin & Grube, 2008).",
@@ -819,11 +819,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "What long geopolitical arc did decipherment reveal in the Classic inscriptions?",
             options: [
-              "A centuries-long superpower rivalry between Tikal and Calakmul's snake dynasty, fought largely through client kings",
-              "A single war against the Olmec",
-              "Peaceful centuries with no recorded conflict",
-              "Annual wars against the Aztecs",
-            ],
+                       "A centuries-long rivalry of Tikal and Calakmul, fought via client kings",
+                       "A single long war fought against the Olmec centers of the Gulf Coast",
+                       "Peaceful centuries with no conflict recorded between any two cities",
+                       "Annual wars fought against the Aztecs of the distant Basin of Mexico",
+                     ],
             correctIndex: 0,
             explanation:
               "Calakmul engineered Tikal's defeat in 562; Tikal's Jasaw Chan K'awiil I struck back in 695, history reconstructed from the cities' own monuments.",
@@ -832,11 +832,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "Why can the course give Pakal's dates (acceded 615, died 683) without hedging?",
             options: [
-              "Because Maya stelae record royal biographies against Long Count dates precise to the day, and the script is deciphered",
-              "Because Spanish chroniclers interviewed him",
-              "Because radiocarbon dating is precise to the year",
-              "It can't, those dates are guesses",
-            ],
+                       "Because Maya stelae date royal lives to the day, and are deciphered",
+                       "Because Spanish chroniclers interviewed Pakal and his descendants",
+                       "Because radiocarbon dating of the tomb is precise to the single year",
+                       "It cannot: those two dates are modern guesses drawn from tomb pottery",
+                     ],
             correctIndex: 0,
             explanation:
               "Readable dated texts make the Maya the one pre-Columbian civilization with named, day-dated political history, the contrast with anonymous Teotihuacan.",
@@ -845,11 +845,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "The 2018 PACUNAM LiDAR survey of northern Guatemala found…",
             options: [
-              "about 61,480 structures in 2,144 km², implying roughly 7-11 million people in the Late Classic central lowlands",
-              "that the jungle was mostly empty of ruins",
-              "about 600 structures, confirming small populations",
-              "only ceremonial centers, no houses",
-            ],
+                       "About 61,480 structures in 2,144 km², implying 7-11 million people",
+                       "That the jungle was largely empty of ruins outside the known centers",
+                       "About 600 structures in 2,144 km², confirming very small populations",
+                       "Only ceremonial centers, with no ordinary houses anywhere between them",
+                     ],
             correctIndex: 0,
             explanation:
               "Canuto et al. (2018, Science): house platforms, terraces, wetland fields, causeways, and fortifications under the canopy, a day's flying rewrote a century of settlement estimates.",
@@ -858,11 +858,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "How did Petén cities like Tikal survive four-to-five-month dry seasons?",
             options: [
-              "City-scale water engineering: plastered catchments feeding reservoirs",
-              "They relocated to the coast every winter",
-              "Deep wells drilled with metal tools",
-              "They didn't, cities emptied each dry season",
-            ],
+                       "City-scale water engineering: plastered catchments feeding reservoirs",
+                       "They relocated their whole populations to the coast every dry season",
+                       "Deep wells drilled through the limestone with iron-tipped drill bits",
+                       "They did not; the cities emptied out entirely every single dry season",
+                     ],
             correctIndex: 0,
             explanation:
               "Reservoir systems stored a city's water across the dry months; agriculture ran on terraces, raised wetland fields, and orchards, an engineered countryside now regrown as forest.",
@@ -871,11 +871,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "Maya writing is best described as…",
             options: [
-              "a full logosyllabic system, hundreds of signs mixing word-signs and syllables, able to record anything its users could say",
-              "simple pictures with guessable meanings",
-              "an alphabet borrowed from Phoenician traders",
-              "pure decoration with no linguistic content",
-            ],
+                       "a logosyllabic system of word-signs and syllables, able to record speech",
+                       "simple pictures whose meanings any modern reader can simply guess at",
+                       "an alphabet borrowed from Phoenician traders in the first millennium",
+                       "pure decoration carrying no linguistic content of any kind whatever",
+                     ],
             correctIndex: 0,
             explanation:
               "It is the only demonstrated full writing system of the pre-Columbian Americas: prose with names, verbs, dates, and quotations (Coe & Houston, 2022).",
@@ -884,11 +884,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "What makes the Mesoamerican zero historically remarkable?",
             options: [
-              "Positional zero was independently invented, one of the rarest events in intellectual history, centuries before the India-derived zero reached European arithmetic",
-              "It was the first zero anywhere on Earth, full stop",
-              "It was borrowed from Roman numerals",
-              "It was purely decorative and never used in math",
-            ],
+                       "Positional zero was invented independently, among history's rarest events",
+                       "It was the very first zero anywhere on Earth, predating all others",
+                       "It was borrowed from Roman numerals carried west by Norse voyagers",
+                       "It was purely decorative and never once used in actual calculation",
+                     ],
             correctIndex: 0,
             explanation:
               "Bar-and-dot vigesimal notation used a shell-sign zero as a true placeholder. The course claims independence, not absolute priority, Babylonian placeholders and the Indian zero have their own histories.",
@@ -897,11 +897,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "The earliest surviving Long Count dates (36 and 32 BCE) appear…",
             options: [
-              "at Chiapa de Corzo and Tres Zapotes, on the western edge of the Maya area, so the system predates its Maya florescence and its inventors are uncertain",
-              "at Tikal, proving Maya invention",
-              "at Tenochtitlan",
-              "in the Dresden Codex",
-            ],
+                       "at Chiapa de Corzo and Tres Zapotes, west of the Maya area proper",
+                       "at Tikal, on stelae proving that the system was a Maya invention",
+                       "at Tenochtitlan, on a carved monument in the Templo Mayor precinct",
+                       "in the Dresden Codex, the oldest dated book in the whole hemisphere",
+                     ],
             correctIndex: 0,
             explanation:
               "An honest attribution: the Maya elaborated the Long Count most richly, but the earliest monuments carrying it sit outside the heartland.",
@@ -910,11 +910,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "Which set correctly lists the Maya calendar components?",
             options: [
-              "Tzolk'in (260-day), haab (365-day), Calendar Round (52-year mesh), Long Count (running day-tally from a 3114 BCE era base)",
-              "A 300-day year, a 700-day cycle, and a week of 13 days",
-              "Only the Long Count, the Maya had no other cycles",
-              "The Julian and Gregorian calendars",
-            ],
+                       "Tzolk'in (260 days), haab (365), Calendar Round (52 years), Long Count",
+                       "A 300-day year, a 700-day round, and a ritual week of thirteen days",
+                       "Only the Long Count; the Maya kept no other calendar cycles at all",
+                       "The Julian and Gregorian calendars, adopted from the Spanish friars",
+                     ],
             correctIndex: 0,
             explanation:
               "The Long Count's positional day-count is why Maya events can be fixed to a single day; conversion to our calendar runs through the GMT correlation (itself a documented scholarly argument).",
@@ -923,11 +923,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "What does the Dresden Codex's Venus table demonstrate?",
             options: [
-              "Maya astronomers tracked the 584-day Venus cycle with correction mechanisms accurate over centuries, plus eclipse-warning tables",
-              "That the Maya believed Venus was the Sun",
-              "That the codex is a modern forgery",
-              "That Maya astronomy never used numbers",
-            ],
+                       "Maya astronomers tracked the 584-day Venus cycle with corrections",
+                       "That Maya astronomers held Venus and the Sun to be one single body",
+                       "That the codex is a modern forgery, exposed by chemical ink analysis",
+                       "That Maya astronomy worked without numbers or recorded intervals",
+                     ],
             correctIndex: 0,
             explanation:
               "Arithmetic in service of the sky (Aveni, 2001), in one of only four surviving pre-conquest Maya books.",
@@ -936,11 +936,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "The complete ancient evidentiary basis for the 2012 'Maya apocalypse' was…",
             options: [
-              "one damaged inscription, Tortuguero Monument 6, commemorating a 7th-century building dedication and projecting ahead to the 13th-b'ak'tun period ending, prophesying no ending",
-              "dozens of prophecy texts across many cities",
-              "a warning in the Popol Vuh",
-              "an Aztec codex describing the world's end in 2012",
-            ],
+                       "One damaged inscription, Tortuguero Monument 6, prophesying no ending",
+                       "Dozens of prophecy texts carved across many of the lowland Maya cities",
+                       "A dated warning in the Popol Vuh, the K'iche' council book of creation",
+                       "An Aztec codex describing the end of the world in the year 2012 CE",
+                     ],
             correctIndex: 0,
             explanation:
               "The passage mentions Bolon Yokte' in some connection with the calendar station (Stuart, 2011). A period ending is an odometer rollover, celebrated, not feared; Palenque texts schedule dates to 4772 CE.",
@@ -949,11 +949,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "Which statement about the Classic collapse is accurate?",
             options: [
-              "In the southern lowlands, c. 760-910 CE, the divine-king institution shut down city by city, while northern Yucatán (Chichén Itzá, later Mayapán) flourished",
-              "All Maya everywhere died out around 900 CE",
-              "It happened in a single year",
-              "Archaeologists deny anything happened",
-            ],
+                       "In the southern lowlands, c. 760-910 CE, divine kingship shut down",
+                       "All Maya everywhere died out simultaneously around the year 900 CE",
+                       "It happened within one single year right across the entire Maya area",
+                       "Archaeologists now deny that anything at all happened in the period",
+                     ],
             correctIndex: 0,
             explanation:
               "Real and regional: last stelae at Tikal 869, Toniná 909; steep southern depopulation over generations, and simultaneous northern boom. 'Institutions collapsed; a people adapted' (McAnany & Yoffee, 2010).",
@@ -962,11 +962,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "What does the paleoclimate record contribute to the collapse debate?",
             options: [
-              "Replicated evidence (Chichancanab lake cores; a Belize stalagmite) of severe multi-year 9th-century droughts tracking the staggered political failures, with weight still debated, since the dry north boomed",
-              "Proof that climate alone caused everything",
-              "Evidence that the period was unusually wet",
-              "Nothing, no climate data exists for the period",
-            ],
+                       "Replicated evidence of severe 9th-century droughts, weight still debated",
+                       "Proof that climate change alone caused the collapse in every region",
+                       "Evidence that the ninth century was unusually wet across the lowlands",
+                       "Nothing at all; no climate data exists for the period anywhere nearby",
+                     ],
             correctIndex: 0,
             explanation:
               "Hodell et al. (1995) and Kennett et al. (2012) anchor the drought case; the mainstream reads collapse as a conjunction, drought + warfare + overshoot + a brittle royal institution, with argued weights.",
@@ -975,11 +975,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "Which Maya polities did the Spanish actually encounter, centuries after the Classic collapse?",
             options: [
-              "Thriving coastal towns like Tulum (1517-1519) and the expanding K'iche' and Kaqchikel highland kingdoms (attacked 1524), among others",
-              "None, the land was uninhabited",
-              "Only Tikal, still at full power",
-              "Teotihuacan's successor state",
-            ],
+                       "Thriving coastal towns like Tulum and the K'iche' highland kingdoms",
+                       "None at all; the land they entered had been empty for six centuries",
+                       "Only Tikal, still standing at the full height of its Classic power",
+                       "A single successor state ruled from Teotihuacan's rebuilt city core",
+                     ],
             correctIndex: 0,
             explanation:
               "Six centuries of continued Maya history separate Tikal's last stela from Alvarado's invasion, the plainest refutation of 'they vanished.'",
@@ -988,11 +988,11 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
           {
             prompt: "Why does the course say 'mysteriously vanished' is worse than wrong?",
             options: [
-              "It erases both the rich evidence trail (dates, cores, walls, last stelae) and the ~7 million Maya alive today, preparing the ground for lost-race fantasies",
-              "Because the collapse never happened at all",
-              "Because the truth is that aliens intervened",
-              "Because mystery makes for boring television",
-            ],
+                       "It erases both the evidence trail and the ~7 million Maya alive today",
+                       "Because the Classic collapse never actually happened in any region",
+                       "Because the true explanation is a well-documented alien intervention",
+                       "Because mystery makes for boring and unwatchable documentary television",
+                     ],
             correctIndex: 0,
             explanation:
               "'Specific and debated' is the opposite of 'mysterious.' A political system died in one region; the people continued, and continue.",
@@ -1142,11 +1142,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "Which naming statement is correct?",
             options: [
-              "The people of Tenochtitlan called themselves Mexica; 'Aztec' (from legendary Aztlan) was popularized as an ethnic label mainly by 19th-century writers",
-              "'Aztec' was the people's own everyday name for themselves",
-              "'Mexica' was invented by the Spanish",
-              "Nahuatl is a city, not a language",
-            ],
+                       "They called themselves Mexica; 'Aztec' was popularized in the 1800s",
+                       "'Aztec' was the people's own everyday name for themselves in Nahuatl",
+                       "'Mexica' was a label that the Spanish invented for them after 1521",
+                       "Nahuatl was the name of their capital city, not of any language",
+                     ],
             correctIndex: 0,
             explanation:
               "'Mexica' survives in 'Mexico'; Nahuatl was their language. 'Aztec' is standard and usable, but the course flags its history.",
@@ -1155,11 +1155,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "How does the course treat the 1325 founding date and eagle-on-cactus story?",
             options: [
-              "As the Mexica's own sacred tradition, their annals' date, not GPS-verified fact, while what they demonstrably built is documented from every direction",
-              "As archaeologically proven to the day",
-              "As Spanish fabrication",
-              "As irrelevant legend not worth teaching",
-            ],
+                       "As the Mexica's own sacred tradition, their annals' date, not GPS fact",
+                       "As proven archaeologically to the exact day by excavated deposits",
+                       "As a Spanish fabrication with no Indigenous source standing behind it",
+                       "As an irrelevant legend that is not worth teaching to any student",
+                     ],
             correctIndex: 0,
             explanation:
               "Origin story labeled as tradition; the engineered city labeled as evidence. That division of labels is the course's method in miniature.",
@@ -1168,11 +1168,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "What are chinampas?",
             options: [
-              "Raised field-plots built from lake mud between canal grids, anchored by willows, extraordinarily productive, and not actually floating",
-              "Rafts of flowers that drifted around the lake",
-              "Fishing platforms with no agricultural role",
-              "Spanish-introduced gardens of the 1530s",
-            ],
+                       "Raised field-plots of lake mud between canals, not actually floating",
+                       "Rafts planted with flowers that drifted freely around the lakeshore",
+                       "Fishing platforms that had no agricultural role of any kind at all",
+                       "Spanish-introduced kitchen gardens first laid out in the 1530s CE",
+                     ],
             correctIndex: 0,
             explanation:
               "The 'floating gardens' misnomer persists, but the plots are anchored constructions; a remnant survives at Xochimilco (UNESCO, 1987).",
@@ -1181,11 +1181,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "The course reads Cortés's 60,000-person market claim and Díaz's Rome/Constantinople comparison as…",
             options: [
-              "hostile witnesses conceding magnificence, attributed claims (a self-justifying letter; an old man's memoir), yet testimony against interest on the city's order and scale",
-              "exact censuses to be repeated as fact",
-              "worthless because all Spaniards lied about everything",
-              "descriptions of Chichén Itzá, not Tenochtitlan",
-            ],
+                       "hostile witnesses conceding magnificence, testimony against interest",
+                       "exact censuses that can safely be repeated as an established fact",
+                       "worthless, because every Spaniard lied about everything that he saw",
+                       "descriptions of Chichén Itzá that were later moved to Tenochtitlan",
+                     ],
             correctIndex: 0,
             explanation:
               "Men who came to take the city had motive to praise the prize, none to invent its street-sweepers, sewers, and price courts. The course attributes their numbers instead of asserting them.",
@@ -1194,11 +1194,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "Which infrastructure list for Tenochtitlan is accurate?",
             options: [
-              "Three causeways with removable bridges; canal-streets; a twin-channeled aqueduct from Chapultepec; the long dike separating brackish from fresh water",
-              "A stone bridge to Spain; windmills; a subway",
-              "No fresh water source, residents drank lake water untreated",
-              "City walls forty meters high",
-            ],
+                       "Causeways with removable bridges, canal-streets, an aqueduct, a dike",
+                       "A stone bridge to the mainland, windmills, and a covered rail line",
+                       "No fresh water source at all; residents drank untreated lake water",
+                       "City walls forty meters high, ringed by a moat cut down into bedrock",
+                     ],
             correctIndex: 0,
             explanation:
               "The twin aqueduct channels alternated for cleaning; the dike attributed to Nezahualcoyotl managed salinity at landscape scale (Smith, 2012).",
@@ -1207,11 +1207,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "What was the Triple Alliance?",
             options: [
-              "The 1428 pact of Tenochtitlan, Texcoco, and Tlacopan, formed by overthrowing Azcapotzalco, that became the 'Aztec Empire,' with Tenochtitlan increasingly dominant",
-              "An alliance of Maya city-states against Spain",
-              "A trade league with the Inca",
-              "A trio of gods in the Mexica pantheon",
-            ],
+                       "The 1428 pact of Tenochtitlan, Texcoco, and Tlacopan, the 'empire'",
+                       "An alliance of Maya city-states formed against Spain in the 1520s CE",
+                       "A long-distance trade league joining the Mexica with the Andean Inca",
+                       "A trio of creator gods standing at the head of the Mexica pantheon",
+                     ],
             correctIndex: 0,
             explanation:
               "Only 91 years old when Cortés landed, younger than the printing press, still expanding, with unhealed enemies.",
@@ -1220,11 +1220,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "The Aztec empire's characteristic form of control was…",
             options: [
-              "hegemonic tribute-taking: subject towns kept rulers, gods, and laws but owed scheduled tribute, with few garrisons and compliance resting on the threat of returning armies",
-              "direct territorial administration with imperial governors everywhere",
-              "religious conversion of all subjects to Huitzilopochtli alone",
-              "mass enslavement and deportation of all conquered peoples",
-            ],
+                       "hegemonic tribute-taking: subject towns kept their rulers but paid",
+                       "direct territorial rule, with imperial governors posted everywhere",
+                       "compulsory religious conversion of every subject to Huitzilopochtli",
+                       "mass enslavement and deportation of every one of the conquered peoples",
+                     ],
             correctIndex: 0,
             explanation:
               "Cheap to run, quick to shatter: it banked obedience, not loyalty, leaving organized, armed, resentful subjects. The design is legible in the Codex Mendoza's tribute rolls.",
@@ -1233,11 +1233,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "What is the Codex Mendoza?",
             options: [
-              "A colonial compilation (c. 1541) copying imperial tribute lists town by painted town, cloaks, cacao, feathers, warrior costumes owed to the Alliance",
-              "A pre-conquest Maya astronomy book",
-              "Moctezuma's private diary",
-              "A Spanish law code for the colonies",
-            ],
+                       "A colonial compilation of c. 1541 copying the imperial tribute lists",
+                       "A pre-conquest Maya astronomy book from the northern Yucatán peninsula",
+                       "Moctezuma II's private diary, kept in Nahuatl right up to his death",
+                       "A Spanish royal law code written for the American colonies in 1542",
+                     ],
             correctIndex: 0,
             explanation:
               "Berdan & Anawalt's edition makes the empire's fiscal machinery readable item by item, the primary window on how tribute empire actually worked.",
@@ -1246,11 +1246,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "Which is the accurate, honestly-labeled account of the 'flower wars'?",
             options: [
-              "Arranged battles with Tlaxcala and others whose purpose is contested, religious captive-taking per the sources, low-cost attrition/containment per Hassig, with the cultivated enmity not contested at all",
-              "Fully understood ceremonial games with no casualties",
-              "A Spanish invention with no Indigenous sources",
-              "Battles fought with flowers instead of weapons",
-            ],
+                       "Arranged battles with Tlaxcala whose purpose is genuinely contested",
+                       "Fully understood ceremonial games that produced no casualties at all",
+                       "A Spanish invention with no support at all in any Indigenous source",
+                       "Battles that were fought using flowers in place of any real weapons",
+                     ],
             correctIndex: 0,
             explanation:
               "Period informants themselves conflict. The course labels the purpose contested and banks the consequence: Tlaxcala's enmity, which 1519 weaponized.",
@@ -1259,11 +1259,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "Why does the course mention Nezahualcoyotl's poetry with the label 'attributed'?",
             options: [
-              "The poems survive in colonial-era compilations like the Cantares Mexicanos, and scholars debate how much is truly his versus later attribution",
-              "Because he certainly wrote every line",
-              "Because no Nahuatl poetry exists",
-              "Because poetry was illegal in the empire",
-            ],
+                       "The poems survive in colonial compilations; authorship is debated",
+                       "Because he is certainly known to have written every surviving line",
+                       "Because no Nahuatl poetry at all survives from before the conquest",
+                       "Because the writing of poetry was illegal throughout the Aztec empire",
+                     ],
             correctIndex: 0,
             explanation:
               "'Attributed' is the honest label (León-Portilla, 1992), and the tradition itself, in xochitl in cuicatl, corrects the barracks caricature of Nahua culture either way.",
@@ -1272,11 +1272,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "What did the excavations beginning in 2015 beneath Guatemala Street uncover?",
             options: [
-              "The Huei Tzompantli, the great skull rack's platform and towers of mortared skulls, hundreds documented, confirming the substance of Spanish descriptions",
-              "Proof that no skull rack ever existed",
-              "The tomb of Moctezuma II",
-              "A Roman coin hoard",
-            ],
+                       "The Huei Tzompantli: the skull rack's platform and towers of skulls",
+                       "Proof that no skull rack ever stood anywhere in the sacred precinct",
+                       "The intact tomb of Moctezuma II, with his regalia and grave offerings",
+                       "A hoard of Roman coins buried underneath the Templo Mayor's steps",
+                     ],
             correctIndex: 0,
             explanation:
               "INAH's Programa de Arqueología Urbana (Barrera Rodríguez team) settled the existence question archaeologically: real, public, architectural, state-organized.",
@@ -1285,11 +1285,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "Why does the course teach the Fifth Sun 'debt-payment' cosmology behind sacrifice?",
             options: [
-              "Because understanding a practice's internal logic is not endorsing it, it is the difference between history and a horror movie",
-              "To argue that the practice was justified",
-              "Because the cosmology is the course's own belief",
-              "To prove the Mexica had no reasons at all",
-            ],
+                       "Because understanding a practice's internal logic is not endorsing it",
+                       "To argue that the practice was justified by the cosmology behind it",
+                       "Because the Fifth Sun cosmology is the course's own religious belief",
+                       "To prove that the Mexica had no reasons of any kind for the practice",
+                     ],
             correctIndex: 0,
             explanation:
               "Gods' self-sacrifice set the sun moving; humans repay in kind (nextlahualli). Explanation is a tool of accuracy, not apology, and the practice also did visible political work as imperial theater.",
@@ -1298,11 +1298,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "The honest label for the 80,400-victims figure (1487 rededication) is…",
             options: [
-              "'reported, not established', a later-chronicle number with impossible implied logistics, to be studied as rhetoric rather than recited as a body count",
-              "an eyewitness census, reliable as stated",
-              "an archaeological count from excavated remains",
-              "a number invented by 20th-century historians",
-            ],
+                       "'Reported, not established': a chronicle number, logistically impossible",
+                       "An eyewitness census, reliable exactly as the chroniclers stated it",
+                       "An archaeological count taken directly from excavated skeletal remains",
+                       "A number invented outright by twentieth-century historians of Mexico",
+                     ],
             correctIndex: 0,
             explanation:
               "The same audit cuts against Tapia's 136,000-skull claim, unverifiable testimony from men whose case for conquest required Mexica tyranny. Real scale: substantial, and honestly uncertain.",
@@ -1311,11 +1311,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "How does the course use the comparison with 16th-century European public killing?",
             options: [
-              "As context without exoneration: it dissolves the claim that ritualized public killing made Mesoamericans uniquely other, while excusing nothing",
-              "To argue the conquest was therefore justified",
-              "To argue sacrifice was therefore acceptable",
-              "To claim Europe never practiced public execution",
-            ],
+                       "As context without exoneration: it dissolves the uniquely-other claim",
+                       "To argue that the Spanish conquest was therefore entirely justified",
+                       "To argue that human sacrifice was therefore morally acceptable then",
+                       "To claim that Europe itself never once practiced public execution",
+                     ],
             correctIndex: 0,
             explanation:
               "Heretic-burnings and the wheel were public, ritualized, state-sanctioned killing framed as cosmic necessity ('justice,' 'salvation'). The honest position holds all four clauses at once.",
@@ -1324,11 +1324,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "What happened to Michael Harner's theory that sacrifice existed to supply dietary protein?",
             options: [
-              "It was dismantled in detail by Ortiz de Montellano (1978), the numbers, nutrition, and ethnography all fail",
-              "It became the scholarly consensus",
-              "It was confirmed by the Huei Tzompantli dig",
-              "It was never evaluated",
-            ],
+                       "It was dismantled in detail by Ortiz de Montellano's 1978 critique",
+                       "It became the settled scholarly consensus during the early 1980s",
+                       "It was confirmed by the Huei Tzompantli excavations begun in 2015",
+                       "It was never evaluated by anyone and it still stands wholly untested",
+                     ],
             correctIndex: 0,
             explanation:
               "A cautionary specimen of numbers-driven pseudo-explanation, exactly the genre the course's auditing method exists to catch.",
@@ -1337,11 +1337,11 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
           {
             prompt: "Sacrifice in Mesoamerica is best described chronologically as…",
             options: [
-              "ancient and widespread, documented at Teotihuacan's Feathered Serpent Pyramid (c. 200 CE), in Classic Maya captive rituals, and back into the Preclassic, with the Mexica state scaling it up, not inventing it",
-              "invented by the Mexica in the 1400s",
-              "invented by Spanish propagandists in the 1520s",
-              "practiced only at Tenochtitlan and nowhere else",
-            ],
+                       "ancient and widespread, back into the Preclassic; the Mexica scaled it up",
+                       "invented by the Mexica in the 1400s and quite unknown before that time",
+                       "invented by Spanish propagandists writing during the 1520s and 1530s",
+                       "practiced only at Tenochtitlan and nowhere else in the whole region",
+                     ],
             correctIndex: 0,
             explanation:
               "Sugiyama's FSP burials and centuries of Maya evidence predate the Mexica by a millennium. Neither an Aztec invention nor a Spanish slander, the course's whole point.",
@@ -1443,11 +1443,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "What is Monte Albán?",
             options: [
-              "The Zapotec capital founded c. 500 BCE on a leveled mountaintop over the Valley of Oaxaca, one of the Americas' earliest cities, dominant for over a millennium",
-              "An Aztec fortress built in the 1400s",
-              "A Maya port on the Caribbean",
-              "A Spanish colonial mining town",
-            ],
+                       "The Zapotec capital, founded c. 500 BCE atop a leveled mountaintop",
+                       "An Aztec hilltop fortress built in the 1400s above the Oaxaca valley",
+                       "A Maya port on the Caribbean coast, at its height around 1400 CE",
+                       "A Spanish colonial silver-mining town first founded in the 1550s",
+                     ],
             correctIndex: 0,
             explanation:
               "Marcus & Flannery (1996) trace urban state formation there from c. 500 BCE to its decline c. 700-900 CE.",
@@ -1456,11 +1456,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "The current consensus reading of Monte Albán's 'Danzantes' reliefs is…",
             options: [
-              "slain or sacrificed captives, some labeled with name-glyphs, a war memorial, replacing the romantic 'dancers' reading",
-              "dancers at a festival, as the name says",
-              "portraits of Zapotec kings at leisure",
-              "gods of the underworld",
-            ],
+                       "Slain or sacrificed captives, a number labeled with name-glyphs",
+                       "Dancers at a seasonal festival, exactly as the modern name says",
+                       "Portraits of Zapotec kings at leisure within their palace gardens",
+                       "Gods of the underworld, arranged in their ritual descending order",
+                     ],
             correctIndex: 0,
             explanation:
               "The charming first reading was wrong; the evidence-driven one is grimmer and better supported, the lesson's point about revisable readings.",
@@ -1469,11 +1469,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "What is the honest status of Oaxaca's 'earliest writing' candidates (San José Mogote Monument 3)?",
             options: [
-              "Candidate, debated, the glyphs may predate everything in the hemisphere, but the monument's dating is contested (possible reuse)",
-              "Confirmed as the hemisphere's first writing",
-              "Proven to be Spanish-era graffiti",
-              "Never seriously proposed as writing",
-            ],
+                       "Candidate and debated: the monument's dating is contested (reuse)",
+                       "Confirmed as the very earliest writing anywhere in the hemisphere",
+                       "Proven to be Spanish-colonial graffiti cut into a much older stone",
+                       "Never once seriously proposed as writing by any specialist at all",
+                     ],
             correctIndex: 0,
             explanation:
               "Same label as the Cascajal Block: the 'first writing' race has multiple contested runners, and honesty requires saying so.",
@@ -1482,11 +1482,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "Lord Eight Deer Jaguar Claw is known from…",
             options: [
-              "Mixtec screenfold codices like the Zouche-Nuttall, which track his 11th-century career of conquests scene by scene",
-              "Maya stelae at Tikal",
-              "The Florentine Codex",
-              "Aztec tribute rolls",
-            ],
+                       "Mixtec screenfold codices such as the Zouche-Nuttall, scene by scene",
+                       "Carved Maya stelae at Tikal, all dated to the eleventh century CE",
+                       "The Florentine Codex, compiled in Nahuatl by Sahagún and students",
+                       "Aztec tribute rolls listing the towns he conquered for the empire",
+                     ],
             correctIndex: 0,
             explanation:
               "The Mixtec painted books are the closest thing to narrative political history in Indigenous hands outside the Maya inscriptions (Boone, 2000).",
@@ -1495,11 +1495,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "What did Alfonso Caso find in Tomb 7 at Monte Albán (1932)?",
             options: [
-              "A Zapotec tomb reused by Mixtec nobles, holding gold, turquoise, jade, and carved bone, among the richest burials ever excavated in the Americas",
-              "The sarcophagus of Pakal",
-              "An empty chamber",
-              "Olmec colossal heads",
-            ],
+                       "A Zapotec tomb reused by Mixtec nobles, holding gold, jade, and bone",
+                       "The carved sarcophagus of Pakal, carried north from Palenque in 683",
+                       "An empty chamber, robbed out in antiquity and left holding nothing",
+                       "Two Olmec colossal heads, hauled inland from the Gulf Coast lowlands",
+                     ],
             correctIndex: 0,
             explanation:
               "Mixtec lost-wax goldwork was the standard even the Aztecs prized.",
@@ -1508,11 +1508,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "Which pair of facts makes the Purépecha 'doubly anomalous' in Mesoamerica?",
             options: [
-              "A language isolate unrelated to anything in Mesoamerica, and the region's most advanced metallurgy, copper/bronze tools and weapons",
-              "They had no cities and no farming",
-              "They spoke Nahuatl and rejected all technology",
-              "They were a Maya colony with a Maya script",
-            ],
+                       "A language isolate, and the region's most advanced metalworking",
+                       "They had neither cities nor farming, living entirely by hunting",
+                       "They spoke Nahuatl and rejected every technology from the outside",
+                       "They were a Maya colony that wrote in the Maya hieroglyphic script",
+                     ],
             correctIndex: 0,
             explanation:
               "Contested language proposals point to South America, as does the maritime route by which metallurgy apparently arrived (Pollard, 1993; Hosler, 1994).",
@@ -1521,11 +1521,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "What happened when Axayacatl's Aztec army invaded Michoacán in the 1470s?",
             options: [
-              "The Purépecha crushed it, sources report catastrophic Aztec losses (reported, not established), and the Aztecs permanently switched to a fortified frontier",
-              "The Aztecs conquered the Purépecha easily",
-              "The two empires merged peacefully",
-              "The battle never happened; it is legend",
-            ],
+                       "The Purépecha crushed it; the Aztecs switched to a fortified frontier",
+                       "The Aztecs conquered the Purépecha easily and then annexed Michoacán",
+                       "The two empires merged peacefully into one single tributary state",
+                       "The battle never happened at all; it is a legend from colonial annals",
+                     ],
             correctIndex: 0,
             explanation:
               "Empire met empire and the famous one lost, the clearest single proof that 1519 Mesoamerica was polycentric, not an Aztec monolith.",
@@ -1534,11 +1534,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "The Purépecha capital and its signature architecture were…",
             options: [
-              "Tzintzuntzan ('place of hummingbirds') on Lake Pátzcuaro, with round-cornered yácata pyramids",
-              "Tulum, with cliff-edge temples",
-              "Teotihuacan, with the Pyramid of the Sun",
-              "Copán, with its hieroglyphic stairway",
-            ],
+                       "Tzintzuntzan on Lake Pátzcuaro, with round-cornered yácata pyramids",
+                       "Tulum on the Caribbean coast, with cliff-edge temples above the sea",
+                       "Teotihuacan in the Basin of Mexico, with its great Pyramid of the Sun",
+                       "Copán on the Motagua river, with its long carved hieroglyphic stairway",
+                     ],
             correctIndex: 0,
             explanation:
               "The second-largest empire in Mesoamerica at contact, ruling from the Pátzcuaro basin (Pollard, 1993).",
@@ -1547,11 +1547,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "How does the course describe Mesoamerica's southern boundary?",
             options: [
-              "A gradient: Mesoamerican-tied peoples in Pacific Nicaragua/Nicoya shading into the different, Chibchan-dominated Isthmo-Colombian sphere oriented toward Colombia",
-              "A fortified wall at the Guatemalan border",
-              "The Panama Canal",
-              "An empty uninhabited buffer zone",
-            ],
+                       "A gradient shading into the Chibchan-dominated Isthmo-Colombian sphere",
+                       "A long fortified wall running along what is now the Guatemalan border",
+                       "The line of the Panama Canal, cut through the isthmus back in 1914",
+                       "An empty, uninhabited buffer zone several hundred kilometers wide",
+                     ],
             correctIndex: 0,
             explanation:
               "Culture areas are analytic tools with gradient edges, not nations with walls, and 'not Mesoamerican' meant different, not backward (Hoopes & Fonseca, 2003).",
@@ -1560,11 +1560,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "What happened at Joya de Cerén around 600 CE?",
             options: [
-              "The Loma Caldera eruption buried a Maya farming village in ash, apparently after the villagers fled (no bodies found), preserving ordinary daily life",
-              "An earthquake destroyed a royal palace",
-              "The village was sacked by Teotihuacan",
-              "Nothing, the site is a natural formation",
-            ],
+                       "The Loma Caldera eruption buried a Maya farming village under ash",
+                       "An earthquake destroyed a royal palace and its attached workshops",
+                       "The village was sacked and then burned by an army from Teotihuacan",
+                       "Nothing; the mounds are a natural volcanic formation, not a site",
+                     ],
             correctIndex: 0,
             explanation:
               "Found by a bulldozer crew in 1976, excavated by Sheets's team, UNESCO-inscribed 1993: houses, sweat bath, gardens, maize fields, manioc beds, the Pompeii of the Americas.",
@@ -1573,11 +1573,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "Why is Cerén uniquely valuable to archaeology?",
             options: [
-              "It preserves commoner daily life, the majority that stone monuments and books render invisible, and shows farmers living better than excavators expected",
-              "It contains the richest royal tomb in the Americas",
-              "It has the oldest writing in the hemisphere",
-              "It proves villages had no possessions",
-            ],
+                       "It preserves commoner daily life, which monuments render invisible",
+                       "It contains the single richest royal tomb known in all the Americas",
+                       "It has the oldest writing yet recovered anywhere in the hemisphere",
+                       "It proves that ordinary villages owned almost no possessions at all",
+                     ],
             correctIndex: 0,
             explanation:
               "Everything else in the course is disproportionately elite evidence; Cerén is the corrective snapshot of the seventy-odd percent.",
@@ -1586,11 +1586,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "Which statement about the Diquís spheres is accurate?",
             options: [
-              "Hundreds of stone spheres, up to ~2.5 m and many tons, made roughly 500-1500 CE per UNESCO documentation, purpose honestly unknown; World Heritage 2014",
-              "They were made by Atlantean refugees, per UNESCO",
-              "They are natural formations, not artifacts",
-              "Exactly twelve exist, all in museums",
-            ],
+                       "Hundreds of stone spheres, c. 500-1500 CE, purpose honestly unknown",
+                       "The work of Atlantean refugees, as UNESCO's own citation documents",
+                       "Natural concretions, not artifacts at all, formed by river weathering",
+                       "Exactly twelve of them exist, and all are now held inside museums",
+                     ],
             correctIndex: 0,
             explanation:
               "Local granodiorite, known pecking/grinding techniques, dated cultural sequence, but original contexts were largely wrecked by plantation clearing, so purpose readings (rank, alignments) stay arguments.",
@@ -1599,11 +1599,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "Why are the spheres a 'pseudo-archaeology magnet,' and what defuses the mystery-mongering?",
             options: [
-              "Unknown purpose invites Atlantis/'impossible precision' claims; the sober record, local stone, excavated workshops, known techniques, dated sequence, needs no lost continents",
-              "Because archaeologists themselves endorse Atlantis",
-              "Because the stone is extraterrestrial",
-              "Nothing defuses it; the mystery is total",
-            ],
+                       "Unknown purpose invites Atlantis claims; the sober record defuses it",
+                       "Because working archaeologists themselves endorse the Atlantis story",
+                       "Because the stone they are carved from is extraterrestrial in origin",
+                       "Nothing defuses it at all, because the mystery is genuinely total",
+                     ],
             correctIndex: 0,
             explanation:
               "Same pattern as the pyramids: a genuine unknown (purpose) gets inflated into a fake unknown (makers), erasing documented Indigenous craftsmanship.",
@@ -1612,11 +1612,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "What characterizes the Isthmo-Colombian 'gold country'?",
             options: [
-              "Lost-wax cast gold pendants (frogs, eagles, composites) in a style world from Costa Rica through Panama to Colombia, e.g., the Coclé burials at Sitio Conte (c. 700-1000 CE)",
-              "Iron smelting and steel swords",
-              "A total absence of metalwork",
-              "Silver coinage minted for trade with Spain",
-            ],
+                       "Lost-wax cast gold pendants in a shared Costa Rica-Colombia style",
+                       "Iron smelting and pattern-welded steel swords traded up the coast",
+                       "A total absence of metalwork of any kind before the Spanish came",
+                       "Silver coinage minted there for long-distance trade well before 1492",
+                     ],
             correctIndex: 0,
             explanation:
               "Columbus met gold-wearing chiefdoms on this coast in 1502, the wealth that convinced Spain the isthmus mattered (Quilter & Hoopes, 2003).",
@@ -1625,11 +1625,11 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
           {
             prompt: "The direction of metallurgy's spread in the Americas was…",
             options: [
-              "from South America northward, reaching West Mexico by sea late (c. 600-800 CE), where the Purépecha pushed bronze furthest",
-              "from Mexico southward to Peru",
-              "from Europe westward before Columbus",
-              "invented independently in Yucatán first",
-            ],
+                       "from South America northward, reaching West Mexico c. 600-800 CE",
+                       "from central Mexico southward, reaching coastal Peru c. 200 BCE",
+                       "from Europe westward, arriving well before Columbus's first crossing",
+                       "invented independently in Yucatán first, then spreading southward",
+                     ],
             correctIndex: 0,
             explanation:
               "Technology flows along existing routes in whatever direction, the hemisphere's deepest metalworking traditions were southern (Hosler, 1994).",
@@ -1735,11 +1735,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "What is Restall's Seven Myths of the Spanish Conquest, as this course uses it?",
             options: [
-              "A checklist correcting how the conquest is popularly misremembered, not a defense of it, but an insistence on getting the mechanism right",
-              "A defense arguing the conquest was justified and benign",
-              "A novel dramatizing Cortés's campaign",
-              "A denial that any conquest occurred",
-            ],
+                       "A checklist correcting how the conquest is popularly misremembered",
+                       "A defense arguing that the conquest was both justified and benign",
+                       "A historical novel dramatizing Cortés's march upon Tenochtitlan",
+                       "A denial that any conquest of Mesoamerica ever occurred at all",
+                     ],
             correctIndex: 0,
             explanation:
               "Restall (2003) corrects flattering distortions while affirming the conquest was a catastrophe, accuracy in service of, not against, the gravity of events.",
@@ -1748,11 +1748,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "Why is 'a few hundred Spaniards conquered an empire of millions' a myth?",
             options: [
-              "It deletes the tens of thousands of Indigenous allies, above all Tlaxcala, who supplied the armies; it was closer to a Mesoamerican civil war with the Spanish as one faction's catalyst",
-              "Because there were actually thousands of Spaniards",
-              "Because no Spaniards were present at all",
-              "Because the Aztecs willingly surrendered",
-            ],
+                       "It deletes tens of thousands of Indigenous allies, above all Tlaxcala",
+                       "Because there were in fact many thousands of Spanish troops present",
+                       "Because no Spaniards at all were present at the siege of the city",
+                       "Because the Aztecs willingly surrendered without any fighting at all",
+                     ],
             correctIndex: 0,
             explanation:
               "The Lienzo de Tlaxcala and Nahua accounts show allied warriors everywhere; never-conquered, Alliance-hating Tlaxcala did the fighting (Restall, 2003; Townsend, 2019).",
@@ -1761,11 +1761,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "What actually took Tenochtitlan?",
             options: [
-              "A months-long siege of an island city, cutting its water, controlling the lake with brigantines, starving it, waged by a largely Indigenous army",
-              "A single cavalry charge that scattered the defenders",
-              "Cannon fire that leveled the city in a day",
-              "A negotiated peaceful handover",
-            ],
+                       "A months-long siege by a largely Indigenous army, starving the city",
+                       "One single cavalry charge that scattered the defenders within an hour",
+                       "Cannon fire that leveled the entire city in the course of a single day",
+                       "A peaceful negotiated handover, with no fighting at all on either side",
+                     ],
             correctIndex: 0,
             explanation:
               "Steel and horses gave tactical edges, but alliances, siege, and disease were decisive, not a technology gap (Restall, 2003).",
@@ -1774,11 +1774,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "How should the 'Moctezuma mistook Cortés for Quetzalcoatl' story be treated?",
             options: [
-              "As contested at best, probably a colonial-era elaboration serving Spanish self-flattery and a Nahua after-the-fact theodicy, not as the reason an empire fell",
-              "As well-documented eyewitness fact",
-              "As proven false by archaeology alone",
-              "As irrelevant and never claimed by anyone",
-            ],
+                       "Contested at best, probably a colonial-era elaboration after the fact",
+                       "As a well-documented eyewitness fact, reported alike by both sides",
+                       "As proven false by archaeology alone, without a single written source",
+                       "As irrelevant, since no source of any kind has ever actually claimed it",
+                     ],
             correctIndex: 0,
             explanation:
               "The full returning-god narrative crystallizes in later sources written under Spanish influence (Restall, 2003; Townsend, 2019). Contested, probably post-hoc.",
@@ -1787,11 +1787,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "Which event shows the Mexica were NOT passive victims?",
             options: [
-              "The Noche Triste (June 1520), when they drove the Spanish out of the city with heavy losses, before a roughly three-month final siege led by Cuauhtémoc to the end",
-              "Their immediate surrender on first contact",
-              "Their conversion to Christianity before any fighting",
-              "Their abandonment of Tenochtitlan without a fight",
-            ],
+                       "The Noche Triste of June 1520, when they drove the Spanish out",
+                       "Their immediate surrender to Cortés on the day of first contact",
+                       "Their conversion to Christianity before any fighting took place",
+                       "Their abandonment of Tenochtitlan without a fight in June 1520",
+                     ],
             correctIndex: 0,
             explanation:
               "House-to-house defense, a Spanish expulsion, and resistance to the last ruler, the course's most-insisted point against the passivity myth.",
@@ -1800,11 +1800,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "What was Nojpetén (Tayasal), and when did it fall?",
             options: [
-              "The Itza Maya island capital, the last independent Maya kingdom, which fell to a Spanish assault on March 13, 1697, 176 years after Tenochtitlan",
-              "The Aztec capital, which fell in 1521",
-              "A Spanish fort built in 1600",
-              "A Purépecha city that never fell",
-            ],
+                       "The Itza Maya island capital, the last Maya kingdom, fell in 1697",
+                       "The Aztec capital, which fell to a Spanish siege in August 1521",
+                       "A Spanish fort in the Petén, built and garrisoned around 1600 CE",
+                       "A Purépecha lake city that was never taken by any outside force",
+                     ],
             correctIndex: 0,
             explanation:
               "Jones (1998): nearly the whole colonial period ran with a sovereign Maya state on the map, 'the conquest' was a centuries-long, resisted process, not a 1521 event.",
@@ -1813,11 +1813,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "Why does the Nojpetén date (1697) matter for how students think about 'the conquest'?",
             options: [
-              "It breaks the reflex that 1521 = the end of Indigenous America and reframes conquest as scattered, resisted, and centuries-long",
-              "It proves the Maya were conquered before the Aztecs",
-              "It shows the Spanish never reached Guatemala",
-              "It has no significance beyond trivia",
-            ],
+                       "It breaks the reflex that 1521 marked the end of Indigenous America",
+                       "It proves that the Maya were all conquered before the Aztecs were",
+                       "It shows that the Spanish never once reached Guatemala or the Petén",
+                       "It has no significance beyond trivia about a remote jungle frontier",
+                     ],
             correctIndex: 0,
             explanation:
               "The last independent Maya kingdom outlived Tenochtitlan by 176 years, a single date that dismantles the tidy end-of-history story.",
@@ -1826,11 +1826,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "Why did Old World diseases kill Indigenous Americans on such a scale?",
             options: [
-              "Millennia of separation from Afro-Eurasian populations left no immunity to smallpox, measles, influenza, and typhus, crowd diseases co-evolved with Old World cities and livestock",
-              "Because Indigenous people had weaker constitutions",
-              "Because the diseases were deliberately engineered",
-              "Because the Americas had no prior diseases of any kind",
-            ],
+                       "Millennia of separation left no immunity to Old World crowd diseases",
+                       "Because Indigenous people had constitutionally weaker immune systems",
+                       "Because the diseases were deliberately engineered by Spanish physicians",
+                       "Because the Americas had no infectious diseases of any kind before 1492",
+                     ],
             correctIndex: 0,
             explanation:
               "Smallpox reached central Mexico in 1520, devastating Tenochtitlan before the final siege; epidemic waves rolled on for a century (Cook, 1998).",
@@ -1839,11 +1839,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "What is the 'germs were the mechanism, colonialism was the context' point?",
             options: [
-              "Disease was the primary killer, but it did its work inside war, enslavement, forced labor, and displacement that shattered societies and made each epidemic deadlier, neither alone explains the scale",
-              "That colonialism, not disease, killed almost everyone",
-              "That it was 'nobody's fault, just germs'",
-              "That the epidemics were a myth",
-            ],
+                       "Disease was the primary killer, but it worked inside war and coercion",
+                       "That colonialism, and not disease at all, killed almost every person",
+                       "That it was nobody's fault, since it was just germs doing the work",
+                       "That the epidemics were a myth invented long after the events themselves",
+                     ],
             correctIndex: 0,
             explanation:
               "The synergy is the honest account (Cook, 1998; Restall, 2003), it resists both 'blameless germs' and 'germs were irrelevant.'",
@@ -1852,11 +1852,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "How does the course state central Mexico's pre-contact population?",
             options: [
-              "As a contested range commonly cited around 15-30 million, high reconstructions from Cook & Borah, lower from critics, never a single confident number",
-              "As exactly 25 million, a settled figure",
-              "As exactly 1 million",
-              "As unknowable to any order of magnitude",
-            ],
+                       "A contested range commonly cited at 15-30 million, never one number",
+                       "Exactly 25 million, a figure settled by demographers decades ago",
+                       "Exactly 1 million, a figure settled directly by colonial tax rolls",
+                       "Unknowable even to the nearest order of magnitude, so never given",
+                     ],
             correctIndex: 0,
             explanation:
               "The pre-contact figure is reconstructed from tribute records, colonial estimates, and models with large error bars; the discipline has not resolved Cook-Borah vs. critics (Cook, 1998; Denevan, 1992).",
@@ -1865,11 +1865,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "On what do sources converge, even while absolute numbers stay contested?",
             options: [
-              "The collapse ratio: central Mexico's Indigenous population fell by roughly 90%, toward 1-2 million, over the sixteenth century",
-              "The exact starting population",
-              "The precise pathogen of every epidemic",
-              "That the population actually grew",
-            ],
+                       "The collapse ratio: roughly a 90% fall over the sixteenth century",
+                       "The exact starting population of central Mexico just before contact",
+                       "The precise pathogen responsible for every single recorded epidemic",
+                       "That the Indigenous population actually grew across the century",
+                     ],
             correctIndex: 0,
             explanation:
               "Whatever the starting number, the ~90% proportion is among the worst demographic catastrophes in recorded history.",
@@ -1878,11 +1878,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "How does the course answer someone who cites the LOWEST population estimates to minimize the catastrophe?",
             options: [
-              "Even the low reconstructions describe a ~90% collapse, a civilizational cataclysm on any accounting",
-              "By agreeing the catastrophe was minor",
-              "By switching to the highest possible figure",
-              "By refusing to discuss numbers at all",
-            ],
+                       "Even the lowest reconstructions still describe a roughly 90% collapse",
+                       "By agreeing that the whole catastrophe was a comparatively minor one",
+                       "By switching instead to the highest figure that anyone has proposed",
+                       "By refusing to discuss any population numbers with anyone at all",
+                     ],
             correctIndex: 0,
             explanation:
               "Minimizers and maximizers both distort; the catastrophe can neither be honestly deflated nor needs inflating.",
@@ -1891,11 +1891,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "How does the course answer a MAXIMIZER who states the single highest death toll as established fact?",
             options: [
-              "Inventing false precision hands critics an easy target and (per the course's first rule) treats the already-staggering real record as insufficient",
-              "By agreeing that the highest number is proven",
-              "By denying any deaths occurred",
-              "By citing the lowest estimate instead",
-            ],
+                       "False precision hands critics a target and slights the real record",
+                       "By agreeing that the very highest figure has now been proven true",
+                       "By denying that any excess deaths occurred in the sixteenth century",
+                       "By citing the very lowest estimate available instead of that one",
+                     ],
             correctIndex: 0,
             explanation:
               "Same discipline as Mansa Musa's 'richest ever' or the 80,400 sacrifices: refuse false precision; teach the range and the dispute.",
@@ -1904,11 +1904,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "What was cocoliztli, per the lesson?",
             options: [
-              "The name contemporaries gave catastrophic Mexican epidemics (notably 1545 and 1576) whose exact pathogen is debated, a 2018 aDNA study implicated a Salmonella strain in one 1545 cemetery",
-              "A Nahuatl word for smallpox specifically, now fully identified",
-              "An Aztec festival of the dead",
-              "A Spanish tax on Indigenous towns",
-            ],
+                       "The name contemporaries gave to the 1545 and 1576 Mexican epidemics",
+                       "A Nahuatl word for smallpox alone, now identified with full certainty",
+                       "An Aztec festival of the dead, held at the close of every solar year",
+                       "A Spanish head tax levied on Indigenous towns throughout the 1540s",
+                     ],
             correctIndex: 0,
             explanation:
               "Vågene et al. (2018) found Salmonella enterica in Oaxaca victims, evidence, honestly hedged, that not every great epidemic was a simple Old World import.",
@@ -1917,11 +1917,11 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
           {
             prompt: "What is the 'Great Dying → 1610 CO2 drop' argument, and how does the course frame it?",
             options: [
-              "A proposed link between mass reforestation of abandoned Indigenous farmland and a measured atmospheric CO2 dip around 1610, offered as a striking indicator of scale, whatever one makes of the geology",
-              "A proven fact that ends all debate about the death toll",
-              "A claim that the epidemics were caused by climate change",
-              "A debunked hoax with no scientific basis",
-            ],
+                       "A proposed link between farmland reforestation and a 1610 CO2 dip",
+                       "A proven fact that has ended all debate over the total death toll",
+                       "A claim that the epidemics were themselves caused by climate change",
+                       "A debunked hoax with no scientific basis of any kind standing behind it",
+                     ],
             correctIndex: 0,
             explanation:
               "Koch et al. (2019) proposed it as an Anthropocene marker. The course uses it to convey scale, the loss was large enough to be a candidate signal in the air's composition, while flagging it as an argument.",
@@ -2126,11 +2126,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "What happened at Maní on July 12, 1562?",
             options: [
-              "Diego de Landa's auto-da-fé: Maya codices and thousands of ritual objects destroyed, amid interrogations and torture, by Landa's own account, 'we burned them all'",
-              "The founding of the first Maya printing press",
-              "The fall of the last Maya kingdom",
-              "The signing of a Spanish-Maya peace treaty",
-            ],
+                       "Landa's auto-da-fé: Maya codices and ritual objects were destroyed",
+                       "The founding of the first Maya-language printing press in Yucatán",
+                       "The fall of the last independent Maya kingdom to Spanish soldiers",
+                       "The signing of a lasting Spanish-Maya peace treaty for all Yucatán",
+                     ],
             correctIndex: 0,
             explanation:
               "Landa's Relación records the burning and the Maya's 'amazing' grief, the indictment is in the arsonist's own hand (Tozzer translation, 1941).",
@@ -2139,11 +2139,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "How many pre-conquest Maya codices survive, and which are they?",
             options: [
-              "Four: Dresden, Madrid, Paris, and the Maya Codex of Mexico (ex-Grolier), authenticated by INAH in 2018",
-              "Four hundred, held in Guatemala City",
-              "None, all were burned",
-              "Forty, all in Mexico",
-            ],
+                       "Four: the Dresden, the Madrid, the Paris, and the Maya Codex of Mexico",
+                       "Four hundred, almost all of them held in Guatemala City museums today",
+                       "None at all, since every last one of them was burned in the 1560s",
+                       "Forty, all of them held in collections in Mexico City to this day",
+                     ],
             correctIndex: 0,
             explanation:
               "Three carry the names of the European cities that hold them, itself a lesson. Four books are the surviving pre-conquest literature of a civilization of scribes.",
@@ -2152,11 +2152,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "What is 'Landa's paradox'?",
             options: [
-              "The man who burned the Maya books also recorded the garbled 'alphabet', real sign-sound pairings, that became the key to decipherment",
-              "That Landa was secretly Maya",
-              "That the codices were never actually burned",
-              "That Landa deciphered the script himself",
-            ],
+                       "The man who burned the books also recorded the key to decipherment",
+                       "That Landa was himself secretly of Maya descent on his mother's side",
+                       "That the codices at Maní were never in fact burned by anybody at all",
+                       "That Landa deciphered the whole Maya script himself in the 1560s",
+                     ],
             correctIndex: 0,
             explanation:
               "His informants wrote syllable signs for Spanish letter-names; the 'error' preserved phonetic evidence Knorozov exploited in 1952 (Coe, 1992).",
@@ -2165,11 +2165,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "What did Knorozov (1952) and Proskouriakoff (1960) respectively establish?",
             options: [
-              "Knorozov: the script is syllabic-phonetic (via Landa's 'alphabet'); Proskouriakoff: the monuments record human history, rulers' births, accessions, wars, deaths",
-              "Knorozov: the script is pure pictures; Proskouriakoff: the texts are only astronomy",
-              "Both proved the script unreadable",
-              "Both worked under Thompson's direction",
-            ],
+                       "Knorozov: syllabic-phonetic script; Proskouriakoff: dynastic history",
+                       "Knorozov: the script is pure pictures; Proskouriakoff: pure astronomy",
+                       "Both concluded that the Maya script was permanently unreadable text",
+                       "Both worked under Thompson's direction at Carnegie in Washington",
+                     ],
             correctIndex: 0,
             explanation:
               "The syllabic principle plus the historical hypothesis (from Piedras Negras date patterns) are the decipherment's two hinges.",
@@ -2178,11 +2178,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "What role does J. Eric S. Thompson play in the decipherment story, as the course tells it?",
             options: [
-              "The cautionary one: the field's dominant figure insisted the script was non-phonetic and history-free, ridiculed Knorozov, and delayed the truth roughly a generation",
-              "The hero who cracked the code in 1935",
-              "A minor figure with no influence",
-              "The discoverer of the Dresden Codex",
-            ],
+                       "The cautionary one: he insisted the script was non-phonetic for decades",
+                       "The hero of the story, who cracked the whole Maya code back in 1935",
+                       "A minor figure with no real influence on the field in either direction",
+                       "The discoverer of the Dresden Codex in a German royal library in 1739",
+                     ],
             correctIndex: 0,
             explanation:
               "After his death in 1975 the dam broke (Schele, Lounsbury, Mathews, Stuart). Method lesson: authority is not evidence; fields self-correct on evidence, eventually.",
@@ -2191,11 +2191,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "Why does the course treat decipherment and LiDAR as the same kind of event?",
             options: [
-              "Each made evidence that was always there readable, texts spoke, then the landscape spoke (PACUNAM 2018: ~61,480 structures), and the field rebuilt its picture around it",
-              "Both were achieved by the same person",
-              "Both happened in 1952",
-              "Neither changed anything important",
-            ],
+                       "Each made evidence that was always there readable, text then landscape",
+                       "Both were achieved by the same researcher within one single decade",
+                       "Both happened in 1952 and were announced at the very same conference",
+                       "Neither one changed anything important in the field's basic picture",
+                     ],
             correctIndex: 0,
             explanation:
               "Instrument revolutions are epistemological events: what 'we know' expands when a new class of evidence opens.",
@@ -2204,11 +2204,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "The course's transferable three-question method for any historical claim is…",
             options: [
-              "What kinds of evidence stand behind it? Who asserts it, with what motive? What would change it?",
-              "Is it exciting? Is it old? Is it famous?",
-              "Does it flatter my side? Can it go viral? Is it simple?",
-              "Was it on television? Is the source confident? Is it long?",
-            ],
+                       "What evidence stands behind it? Who asserts it? What would change it?",
+                       "Is it exciting? Is it genuinely ancient? Is the site already famous?",
+                       "Does it flatter my own side? Can it go viral? Is it simple enough?",
+                       "Was it on television? Does the source sound confident? Is it long?",
+                     ],
             correctIndex: 0,
             explanation:
               "Knowledge built that way bends when new evidence lands, and that bending is what being right in the long run looks like.",
@@ -2217,11 +2217,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "Which set of present-tense numbers does the course insist on?",
             options: [
-              "~7 million Maya; ~6 million speakers of ~30 Mayan languages; Maya >40% of Guatemala (2018 census); ~1.65 million Nahuatl speakers (INEGI 2020)",
-              "About 50,000 Maya total, all in Belize",
-              "Zero, the peoples are extinct",
-              "Exactly 12 million Maya, a census figure",
-            ],
+                       "~7 million Maya; ~6 million speakers of ~30 Mayan languages today",
+                       "About 50,000 Maya in total, all of them living inside Belize today",
+                       "Zero, since the Maya peoples all went extinct several centuries ago",
+                       "Exactly 12 million Maya, a precise figure from a recent full census",
+                     ],
             correctIndex: 0,
             explanation:
               "Plus the practices: daykeepers still keep the 260-day count in highland Guatemala; Xochimilco's chinampas still grow food. Not heritage in a case, Tuesday.",
@@ -2230,11 +2230,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "What was the Caste War of Yucatán?",
             options: [
-              "One of the hemisphere's largest sustained Indigenous risings (from 1847): Yucatec Maya rebels nearly took the peninsula, then held the autonomous Chan Santa Cruz polity until the army took its capital in 1901",
-              "A brief tax riot of 1847, over in weeks",
-              "A war between Spain and Mexico",
-              "A fictional event from a novel",
-            ],
+                       "A Maya rising from 1847, whose Chan Santa Cruz polity held to 1901",
+                       "A brief tax riot of 1847, put down in Yucatán within a few weeks",
+                       "A war fought between Spain and Mexico over Yucatán during the 1840s",
+                       "A fictional event invented for a nineteenth-century adventure novel",
+                     ],
             correctIndex: 0,
             explanation:
               "Reed (2001): a half-century of Maya sovereignty in eastern Yucatán, within the modern era, the passivity myth's post-colonial refutation.",
@@ -2243,11 +2243,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "What did Guatemala's UN-sponsored truth commission (CEH, 1999) conclude?",
             options: [
-              "Some 200,000 dead or disappeared across the 1960-96 conflict (commission estimate), 83% of identified victims Maya, and state forces committed 'acts of genocide' against Maya groups",
-              "That no violence occurred in Guatemala",
-              "That the conflict had no ethnic dimension",
-              "That the death toll was under 1,000",
-            ],
+                       "Some 200,000 dead across 1960-96, 83% of them Maya: 'acts of genocide'",
+                       "That no political violence at all occurred in Guatemala after 1960",
+                       "That the long conflict had no ethnic dimension of any kind at all",
+                       "That the total death toll over the whole conflict was under 1,000",
+                     ],
             correctIndex: 0,
             explanation:
               "Within living memory, the course cites the commission's own findings and labels the figures as its estimates.",
@@ -2256,11 +2256,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "How does the course handle Rigoberta Menchú's 1992 Nobel Peace Prize?",
             options: [
-              "It reports the award (pointedly given on the Columbus quincentennial) AND the documented Stoll controversy over her memoir's details, telling you rather than airbrushing",
-              "It omits the controversy as inconvenient",
-              "It claims the Nobel was revoked",
-              "It presents the memoir as error-free",
-            ],
+                       "It reports both the 1992 award and the documented Stoll controversy",
+                       "It omits the Stoll controversy entirely as inconvenient to the story",
+                       "It claims the Nobel committee later revoked her 1992 peace prize",
+                       "It presents her memoir as entirely error-free from start to finish",
+                     ],
             correctIndex: 0,
             explanation:
               "The course's standard applies to figures it admires: report the record, including the dispute, and note the Nobel committee stood by the award.",
@@ -2269,11 +2269,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "Which twentieth-century event gave the Guna of Panama territorial autonomy?",
             options: [
-              "The 1925 Guna revolution, leading to the autonomous Comarca Guna Yala, a rare outright Indigenous political victory of its era",
-              "A 1925 Spanish royal decree",
-              "The Panama Canal treaty",
-              "No such autonomy exists",
-            ],
+                       "The 1925 Guna revolution, which produced the autonomous Guna Yala",
+                       "A Spanish royal decree of 1925 recognizing all their island lands",
+                       "The 1977 Panama Canal treaty, which set aside their whole territory",
+                       "No such autonomy exists, since the Guna hold no recognized lands",
+                     ],
             correctIndex: 0,
             explanation:
               "Indigenous Central America is present tense: comarcas, litigation, land defense, not museum exhibits.",
@@ -2282,11 +2282,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "Who was Berta Cáceres?",
             options: [
-              "A Lenca environmental leader in Honduras, 2015 Goldman Prize winner for fighting the Agua Zarca dam, assassinated in 2016, with dam-company employees among those convicted",
-              "A 16th-century Maya queen",
-              "A Spanish colonial governor",
-              "A fictional character in the Popol Vuh",
-            ],
+                       "A Lenca environmental leader in Honduras, assassinated back in 2016",
+                       "A sixteenth-century Maya ruler of a kingdom in highland Guatemala",
+                       "A Spanish colonial governor of Honduras during the early 1540s CE",
+                       "A fictional character who appears in the K'iche' book Popol Vuh",
+                     ],
             correctIndex: 0,
             explanation:
               "This decade's news, not history: the lesson's point that Indigenous Central Americans are litigants, legislators, land defenders, and casualties, now.",
@@ -2295,11 +2295,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "What specific harms does the 'vanished civilization' trope do, per the course?",
             options: [
-              "It licenses archaeology-without-descendants, frames Indigenous lands as empty stages, underwrote dispossession premised on extinction, and feeds pseudo-history that a living people could answer back",
-              "None, it is a harmless romantic flourish",
-              "It only affects museum labeling",
-              "It harms only tourists",
-            ],
+                       "It licenses archaeology without descendants and excused dispossession",
+                       "None at all, since it is a harmless, purely romantic literary flourish",
+                       "It affects only the wording of museum labels and gallery wall texts",
+                       "It harms only the tourists who visit the sites and expect much more",
+                     ],
             correctIndex: 0,
             explanation:
               "A 'mysteriously vanished' people can be assigned any origin a crank prefers; seven million living Maya, including Maya epigraphers reading Classic glyphs, cannot.",
@@ -2308,11 +2308,11 @@ Now connect this lesson to everything before it, because the connection is the p
           {
             prompt: "The closing sentence the course asks you to carry out the door is…",
             options: [
-              "'The civilizations of Mesoamerica are not lost; parts were stolen, parts were burned, parts were buried, and the people are still here.'",
-              "'The Maya vanished mysteriously, and that is their charm.'",
-              "'Nothing can be known about the pre-Columbian past.'",
-              "'The conquest ended everything in 1521.'",
-            ],
+                       "'The civilizations of Mesoamerica are not lost, and the people are still here.'",
+                       "'The Maya vanished mysteriously, and that mystery is their whole charm.'",
+                       "'Nothing whatever can really be known about the pre-Columbian American past.'",
+                       "'The conquest ended absolutely everything in Mesoamerica in the year 1521.'",
+                     ],
             correctIndex: 0,
             explanation:
               "Every clause is load-bearing: stolen (looted objects, seized land), burned (Maní, 1562), buried (excavations from the FSP to the Huei Tzompantli), and present-tense survival.",
