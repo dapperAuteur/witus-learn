@@ -942,6 +942,443 @@ On classification: some states counted descent "for up to three generations," fi
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · South Africa: parallel, parent, and mutual sight
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ex-different-evidence",
+      title: "13 · A different kind of evidence, and why that matters",
+      section: "Section 4 · South Africa: parallel, parent, and mutual sight",
+      body: `**Nothing in section 3 is evidence about South Africa.** Whitman's book is about Germany. **This section is sourced independently, and this lesson exists so that you can see the join rather than being walked across it.**
+
+**What people expect this section to say.** The popular version of this story runs: apartheid was Jim Crow with a different accent, and South Africa copied the American South. **The sources do not support that**, and the section will end up somewhere more interesting.
+
+**What the sources support instead, stated up front so the rest of the section is checkable against it.**
+1. **A shared parent.** South African segregation law and American segregation law both descend, in part, from the same imperial legal world, and South Africa's own segregation framework was legislated under British dominion government decades before the word apartheid existed. **Lesson 14.**
+2. **Documented mutual observation, running in both directions.** Named people travelled, watched and published, and at least one important current ran from South Africa **to** the American South rather than the other way. **Lesson 15.**
+3. **Explicit cross-citation between the freedom movements**, which is a different phenomenon again and is the best documented thing in the whole section. **Lesson 16.**
+
+**Why the evidence is different in kind, not just weaker.** In section 3 there was a room, a date, a stenographer and a ministry memo. **There is no equivalent single document here, and the honest thing is to say so plainly rather than to hunt for a substitute.** What there is instead is a body of comparative legal history and a set of biographies. Two books define the field:
+
+- **George M. Fredrickson, *White Supremacy: A Comparative Study in American and South African History* (1981).** Fredrickson finds real parallels, including that both countries had a colonial frontier phase in which a settler population displaced or subjugated indigenous peoples, and that both later had imperial or neo-imperial governments trying to limit white territorial expansion. **He is equally firm that the two differ in origin, in legal form, and in the ideas used to justify them.**
+- **John W. Cell, *The Highest Stage of White Supremacy: The Origins of Segregation in South Africa and the American South* (1982).** Cell's argument is that segregation was **distinctively modern**, tied to urbanisation, industrialisation and modern state formation, and that it crystallised in South Africa as a system and ideology only after 1900. **He also argues that it was first advocated by moderates and liberals rather than by the fanatics later identified with it**, which is one of the more uncomfortable findings in the comparative literature.
+
+**Read what those two books are doing.** Neither is a transmission study. **Both are comparisons**, which is rung 4 and rung 5 territory on the ladder from lesson 2: parallel development from partly shared conditions and a partly shared legal ancestor. **That is a real finding. It is just not the finding people arrive expecting.**
+
+**One piece of evidence from section 3 that legitimately crosses over, and its exact weight.** Herbert Kier's commission at the Kaiser Wilhelm Institute covered "the United States, South Africa and Australia" (Stolleis, 2018), and Heinrich Krieger later travelled to South-West Africa for the National Socialist Office of Race Policy and gathered material for a monograph on South Africa (Whitman, 2017). **So Nazi researchers did look at South Africa.** And Krieger's own conclusion, as Stolleis reports it, was that the world had **two** real centres of race law, the United States and Germany, with South Africa at the margin (Stolleis, 2018).
+
+**Notice how little that gets you, and notice it in both directions.** It tells you a German researcher's ranking in the 1930s. **It is not evidence that South Africa borrowed from anybody, and it is not evidence that it did not.** It is evidence about what one Nazi comparativist thought. **Treating a third party's ranking as a finding about the country ranked is a mistake worth naming, because it is easy to make and hard to see.**
+
+**The standing rule for this section.** Every claim from here to lesson 16 is cited to a source about **South Africa**, not to Whitman. **If you catch this course leaning on the German material to carry a South African claim, it has broken its own rule, and you should say so.**
+
+## Sources
+- Cell, J. W. (1982). *The highest stage of white supremacy: The origins of segregation in South Africa and the American South*. Cambridge University Press.
+- Fredrickson, G. M. (1981). *White supremacy: A comparative study in American and South African history*. Oxford University Press.
+- Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "Name the four scholars whose positions Whitman argues against, and summarise their shared claim.",
+          answer: "Andreas Rethmeier, Richard Bernstein, Marcus Hanke and Jens-Uwe Guettel. Their shared claim is that Nazi references to American law were rhetorical rather than formative, meant to deflect foreign criticism rather than to supply a model.",
+        },
+        {
+          prompt: "What does Whitman concede in his own answer to those critics?",
+          answer: "He concedes that American segregation law was not the important influence, and argues that his critics are answering the wrong question because the Nuremberg Laws said nothing about segregation. Whether changing the question is legitimate is what the argument is about.",
+        },
+        {
+          prompt: "What is the strongest objection Whitman raises against himself?",
+          answer: "That the Nazi radicals would probably have succeeded in criminalising racially mixed marriages even without an American example to cite. He writes that this is perfectly possible and that we will never know.",
+        },
+        {
+          prompt: "Give Stolleis's summing-up qualifier in English.",
+          answer: "Certainly the National Socialists would not have needed this model, but since it was there, it was used as well. It is a precise statement of a modest claim.",
+        },
+        {
+          prompt: "What are the two safest and least safe ways to state the German claim?",
+          answer: "Safe: Nazi lawyers studied American race law in detail while drafting the Nuremberg Laws. Not safe: American race law caused the Nuremberg Laws.",
+        },
+      ],
+    },
+    {
+      slug: "ex-colonial-parent",
+      title: "14 · The shared parent: colonial native administration",
+      section: "Section 4 · South Africa: parallel, parent, and mutual sight",
+      body: `**If you want to know where South Africa's segregation law came from, look up, not sideways.** The framework apartheid was built on was legislated in a British dominion, by dominion governments, decades before 1948.
+
+**The Union, and then the three statutes that built the frame.** The Union of South Africa was formed in 1910 out of British colonies and former Boer republics. Within twenty years its parliament had passed the structural core of segregation.
+
+| Statute | Year | What it did |
+|---|---|---|
+| **Natives Land Act** (Act No. 27 of 1913) | 1913 | Defined less than one tenth of the country as African reserves and prohibited African purchase or lease of land outside them |
+| **Natives (Urban Areas) Act** (Act No. 21 of 1923) | 1923 | Segregated urban residential space by race and created influx control over African movement into towns |
+| **Native Administration Act** (Act No. 38 of 1927) | 1927 | Made the Governor-General "supreme chief" of all Africans, with power to govern them by proclamation |
+
+**The 1923 Act had a commission behind it, and the commission's principle is the thing to remember.** The Stallard Commission of 1922 held that Africans should be in the urban industrial areas only in order to work, and should leave when the work was done (South African History Online, n.d.-a). **That is a principle about labour and residence, not about seating or drinking fountains.** It is the ancestor of the pass laws, and its lineage is the colonial administration of a labouring population, not the American colour line in public accommodation.
+
+**Now the 1927 Act, which is the giveaway.** A statute that names the **Governor-General** as supreme chief of all Africans and lets him legislate for them by proclamation is not an American instrument at all. **The United States had no Governor-General.** This is indirect rule: the classic technique of British colonial native administration, in which a colonial authority governs a subject population through a separate legal channel. **When you see that in the statute book, you are looking at the parent.**
+
+**Then apartheid, from 1948, built on top of that frame.** The National Party won the 1948 election and legislated fast.
+
+| Statute | Year |
+|---|---|
+| Prohibition of Mixed Marriages Act | 1949 |
+| Immorality Amendment Act | 1950 |
+| Population Registration Act | 1950 |
+| Group Areas Act | 1950 |
+| Natives (Abolition of Passes and Co-ordination of Documents) Act | 1952 |
+| Reservation of Separate Amenities Act | 1953 |
+| Bantu Education Act | 1953 |
+
+**Look at that list beside lesson 5 and you will feel the pull of the easy conclusion.** A marriage ban, a sex ban, a compulsory racial register, residential zoning by race, and separate public amenities. **It looks like Jim Crow with the volume turned up.**
+
+**Three reasons to resist the easy conclusion, in order of strength.**
+
+**1. The chronology is wrong for a simple copy.** The land, urban-areas and administration statutes came first, in 1913, 1923 and 1927, and the 1948 laws were built on them. **A system whose frame was already thirty-five years old is not a system that was imported in 1949.** This is the same test that section 3 applied to Germany and the same test the Indiana Avenue course applied to Unigov: **put the dates in a column and see whether the proposed cause precedes the effect.**
+
+**2. Some of the instruments have no American counterpart at all.** A national population register assigning every person to a racial category by law, and a supreme chief governing by proclamation, are not American techniques. **Where an instrument has no American analogue, the American model cannot be its source.**
+
+**3. The comparative historians who studied this most closely reached a different conclusion.** Cell's argument is that segregation in both places was a distinctively modern response to urbanisation and industrialisation that crystallised after 1900, and that it was first advocated by moderates and liberals rather than by fanatics (Cell, 1982). Fredrickson finds parallels in the settler frontier phase and in the later friction with imperial government, and differences "in origin, legal form, and ideological rationalizations" (Fredrickson, 1981). **Neither concluded that one country copied the other.**
+
+**So what is the honest formulation?** **Parallel development from a shared colonial parent, with a partly shared vocabulary and a partly shared set of pressures.** Not derivation. **And once you have said that, lesson 15 gets a great deal more interesting, because parallel development did not stop the people involved from watching each other.**
+
+## Sources
+- Britannica. (n.d.). *Native Lands Act*. https://www.britannica.com/topic/Native-Lands-Act
+- Cell, J. W. (1982). *The highest stage of white supremacy: The origins of segregation in South Africa and the American South*. Cambridge University Press.
+- Fredrickson, G. M. (1981). *White supremacy: A comparative study in American and South African history*. Oxford University Press.
+- South African History Online. (n.d.-a). *The history of separate development in South Africa*. https://sahistory.org.za/article/history-separate-development-south-africa
+- South African History Online. (n.d.-b). *The Natives Land Act of 1913*. https://sahistory.org.za/article/natives-land-act-1913`,
+      recallContent: [
+        {
+          prompt: "Why is nothing in section 3 evidence about South Africa?",
+          answer: "Whitman's book is about Germany. Section 4 is sourced independently, and the standing rule is that every claim in it must cite a source about South Africa rather than leaning on the German material.",
+        },
+        {
+          prompt: "What three things do the sources actually support about South Africa?",
+          answer: "A shared colonial legal parent, documented mutual observation running in both directions, and explicit cross-citation between the freedom movements, which is the best documented of the three.",
+        },
+        {
+          prompt: "Name the two books that define the comparative field, and say what kind of studies they are.",
+          answer: "Fredrickson's White Supremacy (1981) and Cell's The Highest Stage of White Supremacy (1982). Neither is a transmission study. Both are comparisons, which sit on rungs 4 and 5 of the ladder.",
+        },
+        {
+          prompt: "What was Cell's argument about the origins of segregation?",
+          answer: "That segregation was distinctively modern, tied to urbanisation, industrialisation and modern state formation, that it crystallised in South Africa only after 1900, and that it was first advocated by moderates and liberals rather than by the fanatics later identified with it.",
+        },
+        {
+          prompt: "Where did Krieger rank South Africa, and what does that ranking prove?",
+          answer: "At the margin, behind the United States and Germany as the two real centres of race law. It proves what one Nazi comparativist thought. It is not evidence that South Africa borrowed from anybody, in either direction.",
+        },
+      ],
+    },
+    {
+      slug: "ex-mutual-sight",
+      title: "15 · Mutual sight: who travelled, who watched, and which way it ran",
+      section: "Section 4 · South Africa: parallel, parent, and mutual sight",
+      body: `Parallel development did not mean mutual ignorance. **People crossed the ocean on purpose to look, and the traffic is documented by name.**
+
+**Maurice Smethurst Evans, who went the other way.** Evans was a British immigrant to South Africa in 1875, described by his American republisher as a founder of the Union of South Africa in 1910, and by then a leading authority on racial policy in colonial Africa. **In 1914 he travelled through the American South to study race relations there**, and in 1915 he published the results as *Black and White in the Southern States: A Study of the Race Problem in the United States from a South African Point of View* (University of South Carolina Press, n.d.).
+
+**Read the subtitle again.** *From a South African point of view.* **The observer is South African and the object of study is the United States.** The book is "one of the earliest studies in comparative race relations" and was "the first to connect the experience of the American South" to South African conditions, and it was reissued with an introduction by George M. Fredrickson (University of South Carolina Press, n.d.).
+
+**What Evans concluded, which is not what a copyist would conclude.** He judged that the American South, unable to achieve physical separation of the races, had put up legal and cultural barriers instead, and he treated that as an **inadequate** model and a cautionary example for South Africa (University of South Carolina Press, n.d.). **A South African segregationist studied the American South and came home unimpressed.** That is a documented fact about a published book, and it is very hard to square with "South Africa copied Jim Crow."
+
+**Now the current that ran the other way, which is the finding most people have never heard.** In 1913 **Clarence Hamilton Poe**, editor of the agricultural journal *Progressive Farmer*, launched a campaign to segregate the North Carolina countryside. It failed. **And Poe "had been introduced to the notion that the countryside could be segregated by Maurice Smethurst Evans"** (Herbin-Triant, 2013, p. 170). Herbin-Triant's argument is that rural segregationist thinking in the American South had international roots and was quite different from the urban strain of Jim Crow that historians have mostly studied (Herbin-Triant, 2013).
+
+**Sit with that for a second.** **On the best-documented single line of influence between these two countries in this period, the direction runs from South Africa to the American South.** Not the reverse. **If your model of this history only has one arrow, and it points west to east, the model is wrong.**
+
+**A third figure, and a third domain: education.** **Charles Templeman Loram** took his doctorate at Columbia University in 1917 and published the dissertation as *The Education of the South African Native*, long the standard work on the subject. He was strongly influenced by the vogue for the Hampton and Tuskegee model of Black American education, and he went on to serve on the **Phelps-Stokes Commissions** on education in Africa in the early and mid 1920s (South African History Online, n.d.-c; Davis, 1976). The Phelps-Stokes Fund, founded in 1911 with Thomas Jesse Jones as its educational director, took the schooling of Black Americans as a template for the schooling of Africans (Davis, 1976).
+
+**This is the closest thing in the section to an American export**, and notice its shape. It is not a statute. **It is a curriculum model, carried by a South African who studied in New York, into a colonial education policy.** Davis titled his article "Charles T. Loram and an American Model for African Education in South Africa," and the word *model* is doing the same job it does in Whitman's title: something studied and adapted, not something copied.
+
+**What the whole lesson adds up to, put carefully.**
+
+| Line | Direction | Domain | Evidence |
+|---|---|---|---|
+| Evans, 1914 to 1915 | South Africa observes the United States | Rural and urban segregation | A published book with a stated point of view |
+| Evans to Poe, from 1913 | South Africa to the American South | Rural segregation ideology | A peer-reviewed article tracing the introduction |
+| Loram and Phelps-Stokes, 1917 to the mid 1920s | The United States to South Africa | Education | A doctorate, a standard work, commission service |
+| Kier and Krieger, 1933 onward | Germany observes South Africa | Race law generally | A commission brief and a research trip |
+
+**Four lines, three directions, no copying.** **That is what mutual sight looks like, and it is a more accurate picture of how legal and policy ideas actually move than any single arrow could be.**
+
+**One thing this course looked for and could not source to its standard.** There is material in circulation about apartheid-era South African officials publicly invoking the American example to defend their own policy. **The best evidence found for it was a magazine cartoon reproduced in a journalistic article, which is not a sourcing floor this course will build on**, and no peer-reviewed treatment of the specific claim was located. **It is therefore left out.** If you want a real research project out of this course, that is one: the United Nations records of the South African delegation's speeches in the 1950s are public.
+
+## Sources
+- Davis, R. H., Jr. (1976). Charles T. Loram and an American model for African education in South Africa. *African Studies Review*, *19*(2), 87 to 99. https://www.cambridge.org/core/journals/african-studies-review/article/abs/charles-t-loram-and-an-american-model-for-african-education-in-south-africa/1729041BFCCE192553CFF79F75306187
+- Herbin-Triant, E. A. (2013). Southern segregation South Africa style: Maurice Evans, Clarence Poe, and the ideology of rural segregation. *Agricultural History*, *87*(2), 170 to 187. https://read.dukeupress.edu/agricultural-history/article/87/2/170/296896/Southern-Segregation-South-Africa-Style-Maurice
+- South African History Online. (n.d.-c). *Charles Templeman Loram*. https://sahistory.org.za/people/charles-templeman-loram
+- University of South Carolina Press. (n.d.). *Black and white in the Southern states* [Publisher's description of the Southern Classics edition of Evans, 1915]. https://uscpress.com/Black-and-White-in-the-Southern-States`,
+      recallContent: [
+        {
+          prompt: "Name the three statutes that built South Africa's segregation frame before apartheid, with their years.",
+          answer: "The Natives Land Act 1913, the Natives (Urban Areas) Act 1923, and the Native Administration Act 1927.",
+        },
+        {
+          prompt: "What principle did the Stallard Commission of 1922 lay down, and what did it produce?",
+          answer: "That Africans should be in the urban industrial areas only in order to work, and should leave when the work was done. It is the ancestor of influx control and the pass laws.",
+        },
+        {
+          prompt: "Why is the Native Administration Act of 1927 the giveaway about the parent system?",
+          answer: "It made the Governor-General supreme chief of all Africans with power to legislate for them by proclamation. That is British indirect rule. The United States had no Governor-General, so the instrument cannot be American in origin.",
+        },
+        {
+          prompt: "Give the three reasons to resist the conclusion that apartheid copied Jim Crow.",
+          answer: "The chronology is wrong, because the frame was legislated from 1913. Several instruments, such as a national population register and a supreme chief governing by proclamation, have no American counterpart. And the comparative historians who studied it closely concluded parallel development, not derivation.",
+        },
+        {
+          prompt: "What is the honest formulation this course uses for the South African case?",
+          answer: "Parallel development from a shared colonial parent, with a partly shared vocabulary and a partly shared set of pressures. Not derivation.",
+        },
+      ],
+    },
+    {
+      slug: "ex-cross-citation",
+      title: "16 · The other direction: freedom movements citing each other",
+      section: "Section 4 · South Africa: parallel, parent, and mutual sight",
+      body: `**The best documented transnational traffic in this entire course is not between governments. It is between the movements that fought them.** And it is documented for a structural reason worth naming: **movements cite their forebears on purpose, in public, because citing them is part of the work. Governments borrowing a technique do not.** That asymmetry is why this lesson has better sources than every other lesson in section 4 combined.
+
+**1957: the first joint act.** More than a hundred leaders from every continent issued a Declaration of Conscience calling on South Africa to bring its policies into line with the Universal Declaration of Human Rights, and Martin Luther King Jr. was among the sponsors of a Day of Protest on 10 December 1957 against the jailing of 156 South African political activists, Albert Luthuli among them (Martin Luther King, Jr. Research and Education Institute, n.d.).
+
+**1962: the joint appeal.** On **10 December 1962**, Chief Albert Luthuli and the Reverend Martin Luther King Jr. issued a joint statement, **"Appeal for Action Against Apartheid,"** through the American Committee on Africa (South African History Online, n.d.-d). It recalled the 1957 declaration, noting that "[t]he non-whites took heart in learning that they were not alone." It set out the record of repression, including "March 21, 1960 - 72 Africans killed and 186 wounded at Sharpeville by police." And it asked readers to hold meetings and demonstrations on Human Rights Day, to press their governments to support economic sanctions, and not to buy South African products, trade with South Africa or invest there, until "AN EFFECTIVE INTERNATIONAL QUARANTINE OF APARTHEID IS ESTABLISHED" (Luthuli & King, 1962, as archived by South African History Online, n.d.-d).
+
+**Notice the frame the appeal actually uses.** Its case is built on the **Universal Declaration of Human Rights** and on international action, sanctions and boycott. **It is not built on an argument that the two national struggles were the same struggle.** That is a small point and it is the kind of small point this course exists to make: **two leaders can act together without asserting an equivalence, and reading the equivalence into the document is a thing you would be doing, not a thing they did.**
+
+**1986: American law changes because of South Africa.** Congress passed the **Comprehensive Anti-Apartheid Act of 1986** over President Reagan's veto. Reagan vetoed the bill on 26 September 1986; the House voted to override on 29 September; the Senate override on 2 October made it **Public Law 99-440** (Reagan Library, n.d.; United States House of Representatives, n.d.).
+
+**A small honesty note about that paragraph.** Published sources this course consulted give **different vote tallies** for the House override. **Rather than pick one, the tallies are omitted and the dates and the public law number, on which the sources agree, are given instead.** If you need the tallies, the *Congressional Record* has them, and going to it is the assignment. **Reporting a disagreement between sources is a finding; splitting the difference is a fabrication.**
+
+**1990: the citation made explicit, by name.** On **26 June 1990**, four months after his release, Nelson Mandela addressed a joint meeting of the United States Congress. He said:
+
+> We could not have made an acquaintance through literature with human giants such as George Washington, Abraham Lincoln and Thomas Jefferson, and not been moved to act as they were moved to act. We could not have heard of and admired John Brown, Sojourner Truth, Frederick Douglass, W.E.B. DuBois, Marcus Garvey, Martin Luther King, Jr. and others, we could not have heard of these and not be moved to act as they were moved to act. (Mandela, 1990)
+
+**That is a citation.** It is public, it is deliberate, it names its sources, and it was delivered in the legislature of the country being cited. **Compare it with the evidence in lesson 7: a closed meeting, a stenographer, and a memo nobody outside the ministry was meant to read.** Both are real evidence of transnational influence. **They are opposite in kind, and the difference tells you something about the two phenomena.** A regime borrowing a technique of exclusion has no reason to advertise it. **A movement borrowing courage has every reason to.**
+
+**Where to go next, and why this course stops here.** Three of the names in that passage, **Du Bois, Garvey and King**, are the spine of other courses in this catalogue, and summarising them here would do them badly.
+- ***Pan-Africanism*** carries the organised political movement across borders, including Garvey and Du Bois and the congresses. **The transnational Black political thread is that course's job.**
+- ***Afrocentricity*** carries the intellectual and cultural frame.
+- **This course carries the legal-technique thread and stops at the edge of theirs.** When Mandela names Garvey in the United States Capitol, you have arrived at the border between this course and those. **Cross it.**
+
+## Sources
+- Martin Luther King, Jr. Research and Education Institute. (n.d.). *Apartheid*. Stanford University. https://kinginstitute.stanford.edu/apartheid
+- Mandela, N. (1990, June 26). *Address to a joint meeting of the United States Congress*. African Activist Archive, Michigan State University. https://africanactivist.msu.edu/document_metadata.php?objectid=32-130-2D2
+- Reagan Library. (n.d.). *Anti-Apartheid Act of 1986, The Comprehensive (H.R. 4868): Veto and override*. https://www.reaganlibrary.gov/archives/topic-guide/anti-apartheid-act-1986-comprehensive-hr-4868-vetooverride
+- South African History Online. (n.d.-d). *Appeal for action against apartheid: Statement issued jointly by Chief Albert Luthuli and Reverend Martin Luther King, Jr., 10 December 1962*. https://sahistory.org.za/archive/appeal-action-against-apartheid-statement-issued-jointly-chief-albert-luthuli-and-reverend
+- United States House of Representatives, History, Art & Archives. (n.d.). *The Comprehensive Anti-Apartheid Act*. https://history.house.gov/Historical-Highlights/1951-2000/The-Comprehensive-Apartheid-Act/`,
+      recallContent: [
+        {
+          prompt: "Who was Maurice Evans, what did he do in 1914, and what did he publish?",
+          answer: "A British immigrant to South Africa in 1875 and a figure in the founding of the Union in 1910. He travelled the American South in 1914 and published Black and White in the Southern States in 1915, subtitled a study from a South African point of view.",
+        },
+        {
+          prompt: "What did Evans conclude about the American South, and why does it matter?",
+          answer: "That the South, unable to achieve physical separation of the races, had put up legal and cultural barriers instead, which he judged an inadequate model and a cautionary example. A South African segregationist came home unimpressed, which is hard to square with copying.",
+        },
+        {
+          prompt: "Which way does the best documented single line of influence between the two countries run?",
+          answer: "From South Africa to the American South. Clarence Poe, who launched a campaign in 1913 to segregate the North Carolina countryside, had been introduced to the idea by Maurice Evans.",
+        },
+        {
+          prompt: "Who was C.T. Loram and what did he carry in which direction?",
+          answer: "A South African who took his doctorate at Columbia in 1917 and published The Education of the South African Native. He carried the Hampton and Tuskegee model of Black American education into South African and colonial African education policy, and served on the Phelps-Stokes commissions.",
+        },
+        {
+          prompt: "What did this course look for in section 4 and refuse to print?",
+          answer: "Claims that apartheid-era officials publicly invoked the American example to defend their policy. The best evidence found was a magazine cartoon reproduced in a journalistic article, which is below this course's sourcing floor, so the claim was left out.",
+        },
+      ],
+    },
+    {
+      slug: "ex-quiz-south-africa",
+      title: "17 · Quiz: parallel, parent, and mutual sight",
+      section: "Section 4 · South Africa: parallel, parent, and mutual sight",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why can Whitman's book not be used as evidence about South Africa?",
+            options: [
+              "Because Whitman was writing before the South African archives were opened to researchers",
+              "Because his book is a study of Germany",
+              "Because South Africa was not a country when he wrote",
+              "Because Whitman says in his introduction that comparative legal history is impossible",
+            ],
+            correctIndex: 1,
+            explanation: "Rule 4 of the sourcing standard. Section 4 cites sources about South Africa and says so at the top.",
+            sourceLessonSlug: "ex-different-evidence",
+          },
+          {
+            prompt: "What kind of studies are Fredrickson (1981) and Cell (1982)?",
+            options: [
+              "Transmission studies tracing statutes as they moved between the two countries",
+              "Legal casebooks compiled for the use of practising attorneys in both jurisdictions",
+              "Comparisons, sitting on the parallel-development rungs of the ladder",
+              "Memoirs written by participants in the events they describe",
+            ],
+            correctIndex: 2,
+            explanation: "Neither book is a transmission study. Both compare, and both find parallels alongside real differences of origin, legal form and justification.",
+            sourceLessonSlug: "ex-different-evidence",
+          },
+          {
+            prompt: "Cell argued that segregation was first advocated by which group?",
+            options: [
+              "Moderates and liberals, rather than the fanatics later identified with it",
+              "Mining companies acting through their representatives in the Union parliament",
+              "The Nazi Party's Office of Race Policy in the 1930s",
+              "American advisers sent to South Africa after the First World War",
+            ],
+            correctIndex: 0,
+            explanation: "Cell (1982) treats segregation as a distinctively modern system tied to urbanisation and industrialisation, which crystallised in South Africa only after 1900.",
+            sourceLessonSlug: "ex-different-evidence",
+          },
+          {
+            prompt: "Krieger judged South Africa marginal beside the United States and Germany. What does that judgement establish?",
+            options: [
+              "That South Africa's race law was in fact less severe than American race law in the same period",
+              "That South Africa had not yet passed any segregation statutes by the 1930s",
+              "That South African officials had rejected the American model",
+              "What one Nazi comparativist thought, and nothing more",
+            ],
+            correctIndex: 3,
+            explanation: "Treating a third party's ranking as a finding about the country ranked is an easy mistake to make and a hard one to see.",
+            sourceLessonSlug: "ex-different-evidence",
+          },
+          {
+            prompt: "Which three statutes built South Africa's segregation frame before apartheid?",
+            options: [
+              "The Group Areas Act, the Population Registration Act and the Bantu Education Act",
+              "The Land Act 1913, the Urban Areas Act 1923 and the Native Administration Act 1927",
+              "The Prohibition of Mixed Marriages Act, the Immorality Amendment Act and the Separate Amenities Act",
+              "The Glen Grey Act, the Suppression of Communism Act and the Pass Laws Act",
+            ],
+            correctIndex: 1,
+            explanation: "All three predate the National Party's 1948 victory. A frame already thirty-five years old was not imported in 1949.",
+            sourceLessonSlug: "ex-colonial-parent",
+          },
+          {
+            prompt: "What principle did the Stallard Commission of 1922 lay down?",
+            options: [
+              "That racial classification should be recorded on every birth, marriage and death certificate in the Union",
+              "That schools for African children should follow the American industrial-education model",
+              "That Africans should be in the urban areas only to work, and should leave when the work was done",
+              "That mixed marriages should be void and criminally punishable throughout South Africa",
+            ],
+            correctIndex: 2,
+            explanation: "It is a principle about labour and residence, and it is the ancestor of influx control and the pass laws, not of the American colour line in public accommodation.",
+            sourceLessonSlug: "ex-colonial-parent",
+          },
+          {
+            prompt: "Why is the Native Administration Act of 1927 evidence about the parent system?",
+            options: [
+              "It made the Governor-General supreme chief of all Africans, governing by proclamation",
+              "It copied the wording of the American Indian Citizenship Act passed in the same decade",
+              "It was drafted by lawyers who had studied in the United States",
+              "It was the first South African statute to use the word apartheid in its title",
+            ],
+            correctIndex: 0,
+            explanation: "That is British indirect rule. The United States had no Governor-General, so the instrument cannot have an American source.",
+            sourceLessonSlug: "ex-colonial-parent",
+          },
+          {
+            prompt: "Which test does lesson 14 apply to the claim that apartheid copied Jim Crow?",
+            options: [
+              "Whether the two systems used identical vocabulary in their statutes and regulations",
+              "Whether South African lawyers were able to read English-language American law reports",
+              "Whether any American official ever visited South Africa before 1948",
+              "Whether the proposed cause precedes the effect in the chronology",
+            ],
+            correctIndex: 3,
+            explanation: "The same chronology test the German section applies and that the Indiana Avenue course applies to Unigov. Put the dates in a column and look.",
+            sourceLessonSlug: "ex-colonial-parent",
+          },
+          {
+            prompt: "Maurice Evans travelled through the American South in 1914. What was the subtitle of the book he published in 1915?",
+            options: [
+              "A study of the race problem in the United States from a South African point of view",
+              "An American guide to the government of native populations in the colonies of southern Africa",
+              "The origins of segregation in South Africa and the American South",
+              "A comparative study in American and South African history",
+            ],
+            correctIndex: 0,
+            explanation: "The observer is South African and the object of study is the United States. The other two subtitles belong to Cell (1982) and Fredrickson (1981).",
+            sourceLessonSlug: "ex-mutual-sight",
+          },
+          {
+            prompt: "What did Evans conclude about the American South's approach to race?",
+            options: [
+              "That it was the most advanced racial legislation in the world and should be adopted at once",
+              "That it was an inadequate model, since legal barriers had replaced physical separation",
+              "That it was too lenient and needed a criminal marriage ban of the South African kind",
+              "That it could not be assessed, because the United States kept no reliable statistics",
+            ],
+            correctIndex: 1,
+            explanation: "A South African segregationist studied the American South and came home unimpressed. That is hard to square with copying.",
+            sourceLessonSlug: "ex-mutual-sight",
+          },
+          {
+            prompt: "In the best documented single line of influence between the two countries in this period, which way does it run?",
+            options: [
+              "From the American South to South Africa, through the Progressive Farmer",
+              "In neither direction, since no contact between the two countries has been documented at all",
+              "From South Africa to the American South, from Evans to Clarence Poe",
+              "From Germany to both countries, through the National Socialist Office of Race Policy",
+            ],
+            correctIndex: 2,
+            explanation: "Herbin-Triant (2013) traces Poe's 1913 campaign to segregate the North Carolina countryside to an idea he got from Evans. If your model has one arrow, it is wrong.",
+            sourceLessonSlug: "ex-mutual-sight",
+          },
+          {
+            prompt: "What did C.T. Loram carry, and in which direction?",
+            options: [
+              "A South African population-register technique, from South Africa into American state law",
+              "A Nazi race-classification scheme, from Germany into South African statute",
+              "A British indirect-rule statute, from London into the Union parliament",
+              "The Hampton and Tuskegee education model, from the United States into South Africa",
+            ],
+            correctIndex: 3,
+            explanation: "Loram took his doctorate at Columbia in 1917 and served on the Phelps-Stokes commissions. The nearest thing to an American export here is a curriculum model, not a statute.",
+            sourceLessonSlug: "ex-mutual-sight",
+          },
+          {
+            prompt: "Who issued the Appeal for Action Against Apartheid on 10 December 1962, and what did it ask for?",
+            options: [
+              "Albert Luthuli and Martin Luther King Jr., asking for demonstrations, sanctions and a boycott",
+              "The United Nations General Assembly, asking member states to expel South Africa from the organisation",
+              "The American Committee on Africa alone, asking Congress to impose a trade embargo at once",
+              "Nelson Mandela and John F. Kennedy, asking for an arms embargo on the South African government",
+            ],
+            correctIndex: 0,
+            explanation: "Issued through the American Committee on Africa. Its case was built on the Universal Declaration of Human Rights rather than on an assertion that the two national struggles were the same.",
+            sourceLessonSlug: "ex-cross-citation",
+          },
+          {
+            prompt: "Why does this course give the dates and public law number of the 1986 Anti-Apartheid Act but not the override vote tallies?",
+            options: [
+              "Because the tallies were never recorded anywhere in the congressional documentation of the period",
+              "Because roll-call votes on veto overrides are constitutionally secret in the United States",
+              "Because published sources consulted disagreed on the tallies",
+              "Because the tallies are irrelevant to whether the statute took effect as law",
+            ],
+            correctIndex: 2,
+            explanation: "Reporting a disagreement between sources is a finding. Splitting the difference is a fabrication. The Congressional Record is where you would settle it.",
+            sourceLessonSlug: "ex-cross-citation",
+          },
+          {
+            prompt: "Mandela named Du Bois, Garvey and King before Congress in 1990. How does that evidence differ in kind from the 1934 transcript?",
+            options: [
+              "It is a private letter, whereas the transcript was published by the German government at the time",
+              "It is public and deliberate, whereas the transcript is a closed record never meant for outsiders",
+              "It is a secondary source, whereas the transcript is a primary source",
+              "It concerns economics, whereas the transcript concerns law",
+            ],
+            correctIndex: 1,
+            explanation: "A movement borrowing courage advertises its sources. A regime borrowing a technique of exclusion does not. Both are real evidence of transnational influence, and they are opposite in kind.",
+            sourceLessonSlug: "ex-cross-citation",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
