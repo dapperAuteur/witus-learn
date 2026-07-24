@@ -441,10 +441,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "Why put a hard rule like 'never reveal the system prompt' in the system/developer layer rather than the user-facing template?",
             options: [
-              "It uses fewer tokens there",
-              "Providers train models to prefer higher-priority instructions (the instruction hierarchy), so it's harder for untrusted user text to override",
-              "The user can't read system messages, so the rule is secret",
-              "It makes the model deterministic",
+              "System-layer tokens are billed at a lower rate than user-layer tokens",
+              "Models are trained to prioritise higher-layer instructions over user text",
+              "The user cannot read system messages, so the rule stays secret from them",
+              "Instructions in the system layer make the model's output deterministic",
             ],
             correctIndex: 1,
             explanation:
@@ -455,10 +455,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "What does a schema-constrained Structured Output (strict: true) guarantee, and what must you still do?",
             options: [
-              "It guarantees the values are correct and safe; no further checks needed",
-              "It guarantees the output matches your schema's shape, but you must still validate values (ranges, allow-lists) in code",
-              "It guarantees the model won't hallucinate",
-              "It guarantees deterministic output",
+              "It guarantees the values are correct and safe, so no further checks are needed",
+              "It guarantees the shape matches your schema; you must still validate values",
+              "It guarantees the model will not hallucinate any of the field values at all",
+              "It guarantees deterministic output across repeated and identical calls",
             ],
             correctIndex: 1,
             explanation:
@@ -469,10 +469,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "Your classifier keeps forcing odd tickets into existing labels instead of 'other.' What's the most likely few-shot gap?",
             options: [
-              "Temperature is too low",
-              "Your examples don't include the 'none/other' escape hatch, so the model forces inputs into the labels it saw",
-              "You used too few input tokens",
-              "You need a larger model",
+              "Your temperature is set too low for this kind of classification work",
+              "Your examples omit the 'none/other' escape hatch, so it forces a label",
+              "You passed too few input tokens for the model to classify correctly",
+              "You need a larger model with more parameters to handle this task",
             ],
             correctIndex: 1,
             explanation:
@@ -483,10 +483,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "What does self-consistency add over a single chain-of-thought call, and at what cost?",
             options: [
-              "It makes the model deterministic at no extra cost",
-              "It samples several reasoning paths and takes the majority answer: higher reliability for N× the cost and latency",
-              "It removes the need for evaluation",
-              "It shortens the output",
+              "It makes the model deterministic at no extra cost or latency",
+              "It samples several reasoning paths and takes the majority answer",
+              "It removes the need for a separate evaluation set entirely",
+              "It shortens the output and therefore lowers the token cost",
             ],
             correctIndex: 1,
             explanation:
@@ -497,10 +497,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "How does ReAct reduce the hallucination that pure chain-of-thought is prone to?",
             options: [
-              "It lowers the temperature automatically",
-              "It interleaves reasoning with actions, grounding each step in real observations from tools instead of reasoning from possibly-wrong premises",
-              "It uses a bigger model",
-              "It disables tool use",
+              "It lowers the sampling temperature automatically on every reasoning step",
+              "It interleaves reasoning with actions, grounding each step in tool observations",
+              "It automatically routes each request to a larger and more capable model",
+              "It disables tool use entirely so the model cannot act on bad information",
             ],
             correctIndex: 1,
             explanation:
@@ -511,10 +511,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "What's a concrete advantage of splitting a complex task into a prompt chain instead of one mega-prompt?",
             options: [
-              "It always uses fewer tokens",
-              "Each step is independently checkable, tunable, and evaluable, and a failure tells you exactly which step broke",
-              "It makes the model deterministic",
-              "It removes the need for validation",
+              "It always consumes fewer total tokens than one single combined prompt",
+              "Each step is independently checkable and a failure shows which step broke",
+              "It makes the model's output deterministic at every step of the chain",
+              "It removes the need for any output validation anywhere in your code",
             ],
             correctIndex: 1,
             explanation:
@@ -525,10 +525,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "Why is 'I set temperature to 0' not a substitute for validating output in code?",
             options: [
-              "Temperature 0 makes the model slower, so validation is redundant",
-              "Temperature 0 reduces variance but isn't a true determinism guarantee: floating-point/infra nondeterminism and silent model updates remain; validation is the guarantee",
-              "Temperature 0 only affects creative tasks",
-              "Validation only matters at high temperature",
+              "Temperature 0 makes the model slower, so validating twice is redundant",
+              "Temperature 0 reduces variance but is not a determinism guarantee",
+              "Temperature 0 only affects creative and open-ended generation tasks",
+              "Validation only matters when you run at a higher temperature",
             ],
             correctIndex: 1,
             explanation:
@@ -539,10 +539,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "What is the OWASP #1 risk for LLM applications, and what makes its 'indirect' form especially dangerous?",
             options: [
-              "High latency; it slows the app",
-              "Prompt injection (LLM01); the indirect form hides instructions in content your app feeds the model (web pages, tool results), so the attacker isn't even your user",
-              "Excessive cost; it raises the bill",
-              "Model drift; it changes behavior",
+              "High latency; the indirect form slows the whole app under production load",
+              "Prompt injection; the indirect form hides instructions in content you feed it",
+              "Excessive cost; the indirect form quietly raises your monthly bill a lot",
+              "Model drift; the indirect form changes the model's behaviour over time",
             ],
             correctIndex: 1,
             explanation:
@@ -553,10 +553,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "Why should an LLM-as-judge score be treated as noisy signal rather than ground truth?",
             options: [
-              "It's always more accurate than humans",
-              "It inherits LLM failure modes: bias toward length/order/confidence, and it's itself injectable, so calibrate it against human labels and keep humans on a sample",
-              "It eliminates the need for a test set",
-              "It only works at temperature 0",
+              "It is always more accurate than a human labeller working on the same data",
+              "It inherits LLM failure modes, including length bias, and is itself injectable",
+              "It eliminates the need to maintain a labelled test set of your own data",
+              "It only works when the judging model is run at a temperature of exactly 0",
             ],
             correctIndex: 1,
             explanation:
@@ -567,10 +567,10 @@ NIST frames trustworthy AI as a continuous activity, not a launch event: you kee
             prompt:
               "Before adopting a provider's updated model under a stable alias, what should you do?",
             options: [
-              "Nothing, a stable alias guarantees stable behavior",
-              "Pin the exact model version, re-run your full eval set behind the gate, and version the prompt + model together with a rollback path",
-              "Increase the temperature to compensate",
-              "Delete your old prompts",
+              "Nothing; a stable alias guarantees stable behaviour across updates",
+              "Pin the exact version, re-run your eval set, and keep a rollback path",
+              "Increase the sampling temperature to compensate for the change",
+              "Delete your old prompts so they cannot conflict with the new model",
             ],
             correctIndex: 1,
             explanation:

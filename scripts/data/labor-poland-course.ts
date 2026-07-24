@@ -152,10 +152,10 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
           {
             prompt: "The course says the fall from 10 million members to ~9% density should NOT be explained by saying 'the union failed.' Why?",
             options: [
-              "Because the union never really had 10 million members",
-              "Because the union succeeded at its historic task, it won the country in 1989, and what collapsed afterwards was the ordinary workplace function of unions",
-              "Because density is not a real measure",
-              "Because the government banned all unions permanently",
+              "Because the ten-million figure counted households, not members",
+              "Because it won the country in 1989 and lost only the workplace",
+              "Because density is a Western metric that misreads post-1989 Poland",
+              "Because the 1982 ban on unions was never actually lifted in law",
             ],
             correctIndex: 1,
             explanation:
@@ -178,10 +178,10 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
           {
             prompt: "In communist Poland in 1980, why were 'who is allowed to organise?' and 'who governs?' the same question?",
             options: [
-              "Because unions set tax policy",
-              "Because the state was a one-party state that allowed only Party-run unions, so an independent union was a centre of power outside the Party's control",
-              "Because workers elected the head of state directly",
-              "Because the constitution banned all elections",
+              "Because factory councils, not the Party, chose the prime minister",
+              "Because only Party-run unions were legal, so a free union rivalled it",
+              "Because shipyard workers directly elected Poland's head of state",
+              "Because the 1952 constitution banned unions from all politics",
             ],
             correctIndex: 1,
             explanation:
@@ -192,9 +192,9 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
             prompt: "What did Solidarność demand that made it a threat to the communist state, rather than an ordinary pay dispute?",
             options: [
               "A trade union INDEPENDENT of the Communist Party",
-              "A 10% pay rise",
-              "Longer holidays",
-              "Cheaper bread",
+              "A 10% pay rise, backdated to January 1980",
+              "Longer holidays for shipyard workers only",
+              "Cheaper bread and a freeze on meat prices",
             ],
             correctIndex: 0,
             explanation:
@@ -204,10 +204,10 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
           {
             prompt: "How does Poland answer Question 3 (who bargains, at what level) differently from Germany?",
             options: [
-              "Poland bargains at the national level for the whole economy",
-              "Poland bargains company by company, and sectoral agreements have nearly vanished, so coverage tracks membership rather than exceeding it",
-              "Poland has no collective bargaining laws at all",
-              "Poland bargains only through the government",
+              "Poland bargains at one national table for the whole economy",
+              "Poland bargains company by company, so coverage tracks membership",
+              "Poland has no collective bargaining law; Germany invented it",
+              "Poland bargains only through the government, never through firms",
             ],
             correctIndex: 1,
             explanation:
@@ -217,10 +217,10 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
           {
             prompt: "In Poland, who is now most likely to be 'excluded' (Question 2) from labour-law protection and bargaining?",
             options: [
-              "Agricultural and domestic workers, by an old statute",
-              "Workers on civil-law 'junk contracts,' who are not technically employees",
-              "Anyone earning above the median wage",
-              "Public-sector workers",
+              "Agricultural and domestic workers, under an old statute",
+              "Workers on civil-law 'junk contracts', not legally employees",
+              "Anyone earning above the national median wage in Poland",
+              "Public-sector workers, barred from bargaining by statute",
             ],
             correctIndex: 1,
             explanation:
@@ -230,10 +230,10 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
           {
             prompt: "In 1981, what was Poland's answer to Question 4 ('what happens to you if you try?')?",
             options: [
-              "A modest fine",
-              "Martial law, the union banned, thousands interned, and nine miners shot dead at the Wujek colliery",
-              "Nothing; organising was always legal",
-              "Automatic promotion for organisers",
+              "A modest fine and a formal warning from the factory Party cell",
+              "Martial law, the union banned, thousands interned, miners shot dead",
+              "Nothing; organising outside the Party had always been legal",
+              "Automatic promotion and a state medal for strike organisers",
             ],
             correctIndex: 1,
             explanation:
@@ -264,10 +264,10 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
           {
             prompt: "Why does the course insist this is 'not a victory lap'?",
             options: [
-              "Because Solidarność never actually won anything",
-              "Because the honest arc includes the collapse that followed the victory, and that collapse is the real lesson",
-              "Because Poland is not a democracy today",
-              "Because the union still runs the government",
+              "Because Solidarność never actually won anything it demanded",
+              "Because the arc includes the collapse that followed the victory",
+              "Because Poland is not counted as a full democracy today",
+              "Because the union still runs the Polish government today",
             ],
             correctIndex: 1,
             explanation:
@@ -290,9 +290,9 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
           {
             prompt: "What should a student watch 'move' across this whole course?",
             options: [
-              "The price of Polish exports",
-              "The four questions' answers, from a one-party state, through revolution, to a democracy where the right to organise is secure but barely used",
-              "The number of shipyards in Gdańsk",
+              "The price of Polish coal exports on world markets after 1989",
+              "The four questions' answers, from one-party rule to unused rights",
+              "The number of working shipyards in Gdańsk, Gdynia and Szczecin",
               "The exchange rate of the złoty",
             ],
             correctIndex: 1,
@@ -303,9 +303,9 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
           {
             prompt: "Why can't Poland's coverage rate 'outrun' its membership the way Germany's does?",
             options: [
-              "Because Poland has no employers' associations at all",
-              "Because Polish bargaining is company-level and a company agreement generally needs a union inside that firm, so there is no sectoral mechanism to spread coverage beyond members",
-              "Because Polish law bans collective agreements",
+              "Because Poland has no employers' associations of any kind",
+              "Because company-level bargaining needs a union inside each firm",
+              "Because Polish law bans multi-employer collective deals",
               "Because every Polish worker is automatically a union member",
             ],
             correctIndex: 1,
@@ -445,10 +445,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "What tactic did the August 1980 strikers use to avoid a repeat of the December 1970 street massacre?",
             options: [
-              "They marched at night to avoid the army",
-              "They held an occupation strike, staying inside the workplace and controlling the gates rather than marching in the streets",
-              "They fought the militia with improvised weapons",
-              "They fled the country and organised from abroad",
+              "They marched at night through Gdańsk to avoid the army patrols",
+              "They held an occupation strike, staying inside and holding the gates",
+              "They fought the ZOMO riot militia with improvised petrol bombs",
+              "They fled the country and organised from Sweden and West Germany",
             ],
             correctIndex: 1,
             explanation:
@@ -458,10 +458,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "In communist Poland, whose interests did the only legal (Party-run) unions actually serve?",
             options: [
-              "The workers', against management",
-              "The Party's, they transmitted decisions downward rather than representing workers upward",
-              "Foreign investors'",
-              "The Catholic Church's",
+              "The workers', bargaining hard against factory management",
+              "The Party's, they transmitted decisions downward, not upward",
+              "Foreign investors' and Western hard-currency creditors'",
+              "The Catholic Church's, through its factory chaplains",
             ],
             correctIndex: 1,
             explanation:
@@ -471,10 +471,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "What was KOR, formed after the 1976 Radom and Ursus strikes?",
             options: [
-              "A secret police unit",
-              "The Workers' Defence Committee, intellectuals and activists who gave legal and financial help to persecuted workers, linking workers to the dissident intelligentsia",
-              "A Party-run union federation",
-              "A NATO advisory body",
+              "A secret police unit that infiltrated the shipyards",
+              "The Workers' Defence Committee, aiding persecuted workers",
+              "A Party-run union federation set up in Radom in 1976",
+              "A NATO advisory body on Eastern European labour law",
             ],
             correctIndex: 1,
             explanation:
@@ -497,10 +497,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "What was the Inter-factory Strike Committee (MKS), and why did it matter?",
             options: [
-              "A management body that ended the strike",
-              "A committee that bargained on behalf of hundreds of striking workplaces at once, instead of each settling separately, solidarity across factories, which gave the union its name",
-              "A court that registered the union",
-              "A Party commission investigating the strike",
+              "A joint management body set up to negotiate an end to the strike",
+              "A committee that bargained for hundreds of workplaces at once",
+              "A court in Warsaw that registered the union in early November 1980",
+              "A Party commission sent to investigate the strike's leaders",
             ],
             correctIndex: 1,
             explanation:
@@ -510,9 +510,9 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "What was the FIRST of the 21 Demands posted at the Gdańsk shipyard?",
             options: [
-              "A large pay rise",
-              "The acceptance of free trade unions independent of the Party and employers",
-              "Cheaper food",
+              "A large pay rise, indexed to the rising cost of living",
+              "Free trade unions independent of the Party and employers",
+              "Cheaper food and an immediate end to meat rationing",
               "Free national elections",
             ],
             correctIndex: 1,
@@ -523,10 +523,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "Why is it significant that Demand 1 cited ILO Convention No. 87?",
             options: [
-              "Because Poland had never heard of the ILO",
-              "Because Poland had already ratified Convention 87 in 1957 and then ignored it, so the workers were demanding the state obey a treaty it had signed 23 years earlier",
-              "Because the ILO ordered Poland to create the union",
-              "Because Convention 87 bans all strikes",
+              "Because Poland had never joined or heard of the ILO at all",
+              "Because Poland had ratified Convention 87 in 1957, then ignored it",
+              "Because the ILO had ordered Poland to legalise the free union",
+              "Because Convention 87 bans strikes in all essential services",
             ],
             correctIndex: 1,
             explanation:
@@ -536,10 +536,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "What UNESCO recognition do the 21 Demands hold?",
             options: [
-              "World Heritage Site",
-              "Inscription on the Memory of the World register (2003), making them a citable primary artifact",
-              "Intangible Cultural Heritage",
-              "None, they were destroyed",
+              "World Heritage Site status, granted to Gdańsk in 2003",
+              "Inscription on the Memory of the World register (2003)",
+              "Intangible Cultural Heritage of Humanity listing",
+              "None, the original boards were destroyed in 1981",
             ],
             correctIndex: 1,
             explanation:
@@ -550,9 +550,9 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
             prompt: "What did the Gdańsk Agreement of 31 August 1980 concede?",
             options: [
               "Free national elections",
-              "The right to form independent, self-governing trade unions, the first in the Soviet bloc",
-              "Poland's exit from the Warsaw Pact",
-              "The abolition of the Communist Party",
+              "The right to form independent, self-governing unions",
+              "Poland's full exit from the Warsaw Pact, agreed in 1980",
+              "The abolition of the Communist Party's leading role",
             ],
             correctIndex: 1,
             explanation:
@@ -562,10 +562,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "Why did the strike committees merge into a SINGLE national union on 17 September 1980?",
             options: [
-              "Because the law required exactly one union",
-              "So the state could not pick off a scatter of small regional unions one by one, one union, one name, one card",
-              "Because Wałęsa demanded personal control",
-              "To qualify for foreign funding",
+              "Because the 1980 law required exactly one union per trade",
+              "So the state could not pick off small regional unions one by one",
+              "Because Wałęsa demanded personal control of every region",
+              "To qualify for foreign funding from Western trade unions",
             ],
             correctIndex: 1,
             explanation:
@@ -575,10 +575,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "In the October 1980 registration case, what did the Warsaw court try to do?",
             options: [
-              "Ban the union outright",
-              "Insert a clause into the union's OWN statute acknowledging the Communist Party's 'leading role'",
-              "Rename the union",
-              "Force Wałęsa to resign",
+              "Ban the union outright and jail its founding committee",
+              "Insert the Party's 'leading role' into the union's OWN statute",
+              "Rename the union and confiscate its membership register",
+              "Force Wałęsa to resign as the union's national chairman",
             ],
             correctIndex: 1,
             explanation:
@@ -588,10 +588,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "How did the Supreme Court resolve the registration fight on 10 November 1980?",
             options: [
-              "It upheld the inserted clause",
-              "It struck the clause out of the statute and moved the reference into a harmless appendix quoting the Gdańsk Agreement, registering the union with its own text intact",
-              "It dissolved the union",
-              "It ordered new strike-committee elections",
+              "It upheld the inserted clause and registered the union",
+              "It struck the clause out and moved it into a harmless appendix",
+              "It dissolved the union and ordered a fresh application",
+              "It ordered fresh strike-committee elections nationwide",
             ],
             correctIndex: 1,
             explanation:
@@ -602,9 +602,9 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
             prompt: "The firing of which activist helped spark the August 1980 shipyard strike?",
             options: [
               "Anna Walentynowicz, a crane operator",
-              "Karol Wojtyła",
-              "Mieczysław Jagielski",
-              "Wojciech Jaruzelski",
+              "Karol Wojtyła, a shipyard electrician",
+              "Mieczysław Jagielski, a shipyard welder",
+              "Wojciech Jaruzelski, a dock foreman",
             ],
             correctIndex: 0,
             explanation:
@@ -614,10 +614,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "How did the June 1979 papal pilgrimage of John Paul II contribute to the climate of 1980?",
             options: [
-              "It funded the strike directly",
-              "Millions organised themselves peacefully for open-air Masses the regime could not match, making a mass movement independent of the Party feel thinkable",
-              "It ordered Catholics to strike",
-              "It had no effect at all",
+              "It funded the 1980 strike directly from Vatican funds",
+              "Millions organised themselves peacefully for open-air Masses",
+              "It ordered Polish Catholics to strike the following summer",
+              "It had no measurable effect on the August 1980 strikes",
             ],
             correctIndex: 1,
             explanation:
@@ -627,10 +627,10 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
           {
             prompt: "Why does the course say the shipyard workers 'refused to settle alone'?",
             options: [
-              "They wanted more money for themselves",
-              "Rather than take their own raise and go home, they bargained on behalf of every striking workplace through the MKS, solidarity between factories was the whole idea",
-              "They distrusted their own leaders",
-              "The government forbade separate deals",
+              "They wanted more money for themselves than for others",
+              "Rather than take their own raise, they bargained for everyone",
+              "They distrusted their own elected strike-committee leaders",
+              "The government had forbidden separate factory-level deals",
             ],
             correctIndex: 1,
             explanation:
@@ -723,7 +723,7 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
         questions: [
           {
             prompt: "Roughly how long did Solidarność exist LEGALLY before martial law?",
-            options: ["About sixteen months (September 1980 to December 1981)", "About ten years", "A few weeks", "It was never legal"],
+            options: ["About sixteen months (Sept 1980 to Dec 1981)", "About ten years (Sept 1980 to Dec 1990)", "About seven weeks (Aug 1980 to Oct 1980)", "It was never legal, at any point before 1989"],
             correctIndex: 0,
             explanation:
               "From the Gdańsk Agreement / registration to 13 December 1981, the only window in which the union got to operate openly in a communist state.",
@@ -732,10 +732,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "What is meant by the 'carnival of Solidarity'?",
             options: [
-              "A music festival the union sponsored",
-              "The 1980-81 burst of free self-organisation, independent presses, open debate, democratic elections, that made Solidarność a parallel society",
-              "The celebrations after the 1989 election",
-              "A Party propaganda campaign",
+              "A music festival the union sponsored in Gdańsk each summer",
+              "The 1980-81 burst of free self-organisation and open debate",
+              "The street celebrations that followed the 1989 election",
+              "A Party propaganda campaign mocking the shipyard strikers",
             ],
             correctIndex: 1,
             explanation:
@@ -758,10 +758,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "Why did the threat of Soviet intervention shape Solidarność's caution?",
             options: [
-              "Because the USSR funded the union",
-              "Because the USSR had crushed independent movements with tanks in Hungary (1956) and Czechoslovakia (1968), and Poland was a Warsaw Pact country",
-              "Because the union wanted to join the USSR",
-              "Because Moscow controlled the Polish courts directly",
+              "Because the USSR quietly funded the union through Moscow",
+              "Because the USSR had crushed Hungary (1956) and Prague (1968)",
+              "Because the union wanted Poland to join the USSR itself",
+              "Because Moscow directly controlled the Polish courts and press",
             ],
             correctIndex: 1,
             explanation:
@@ -771,10 +771,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "Who declared martial law in Poland, and when?",
             options: [
-              "Lech Wałęsa, August 1980",
+              "Chairman Lech Wałęsa, 31 August 1980",
               "General Wojciech Jaruzelski, 13 December 1981",
-              "Pope John Paul II, June 1979",
-              "Mieczysław Jagielski, October 1980",
+              "Pope John Paul II, in Warsaw, June 1979",
+              "Deputy PM Mieczysław Jagielski, October 1980",
             ],
             correctIndex: 1,
             explanation:
@@ -784,10 +784,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "What happened at the Wujek coal mine on 16 December 1981?",
             options: [
-              "The miners won a pay rise",
-              "Police and army opened fire on striking miners, killing nine unarmed men",
-              "The mine was closed permanently",
-              "Wałęsa was arrested there",
+              "The miners won a pay rise and went back to work",
+              "Police fired on striking miners, killing nine men",
+              "The mine was closed permanently by the junta",
+              "Wałęsa was arrested there and flown to Warsaw",
             ],
             correctIndex: 1,
             explanation:
@@ -797,10 +797,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "Roughly how many Solidarity activists were interned under martial law, and was Wałęsa among them?",
             options: [
-              "About 100; no",
-              "About ten thousand, including Wałęsa and most of the national leadership",
-              "None, they all fled abroad",
-              "About a million",
+              "About one hundred, not including Wałęsa",
+              "About ten thousand, including Wałęsa",
+              "None; the leadership all fled abroad in time",
+              "About one million, including Wałęsa himself",
             ],
             correctIndex: 1,
             explanation:
@@ -810,10 +810,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "When was Solidarność formally outlawed by statute?",
             options: [
-              "13 December 1981",
-              "8 October 1982, when a new trade-union law dissolved it",
-              "4 June 1989",
-              "It was never formally banned",
+              "13 December 1981, by a decree of the Sejm",
+              "8 October 1982, by a new trade-union law",
+              "4 June 1989, by the Round Table accords",
+              "It was never formally banned by statute",
             ],
             correctIndex: 1,
             explanation:
@@ -844,10 +844,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "What happened to Father Jerzy Popiełuszko in October 1984?",
             options: [
-              "He became head of Solidarność",
-              "He was abducted and murdered by the secret police, a priest closely associated with the movement",
-              "He was elected to parliament",
-              "He emigrated to Rome",
+              "He became the underground head of Solidarność",
+              "He was abducted and murdered by the secret police",
+              "He was elected to the underground union's council",
+              "He emigrated to Rome and worked for the Vatican",
             ],
             correctIndex: 1,
             explanation:
@@ -857,10 +857,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "The course says Solidarność 'did not win in a straight line.' What is the honest shape of the story?",
             options: [
-              "It was never defeated",
-              "It was crushed first and spent roughly seven years (1982-1989) banned and underground, it won by surviving defeat while the state ran out of money and options",
-              "It won within a year of forming",
-              "It was defeated permanently",
+              "It was never defeated, only briefly driven underground",
+              "It was crushed and spent seven years (1982-1989) underground",
+              "It won outright within a year of forming, in autumn 1981",
+              "It was defeated permanently and never revived after 1982",
             ],
             correctIndex: 1,
             explanation:
@@ -870,10 +870,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "Which body governed Poland during martial law?",
             options: [
-              "The Sejm",
+              "The Sejm, sitting in permanent emergency session",
               "The Military Council of National Salvation (WRON)",
-              "The Supreme Court",
-              "The European Union",
+              "The Supreme Court, under emergency powers",
+              "The European Union's Council of Ministers",
             ],
             correctIndex: 1,
             explanation:
@@ -891,10 +891,10 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
           {
             prompt: "Why can a union not simply 'bargain its way out' of the 1981 Polish economy?",
             options: [
-              "Because bargaining was illegal",
-              "Because the economy was collapsing into shortages and rationing, you cannot negotiate goods onto empty shelves",
-              "Because the union had no members",
-              "Because wages were already the highest in Europe",
+              "Because collective bargaining was illegal until 1989",
+              "Because the economy was collapsing into shortages and queues",
+              "Because the union had no members outside the shipyards",
+              "Because Polish wages were already the highest in the bloc",
             ],
             correctIndex: 1,
             explanation:
@@ -992,10 +992,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "Why did the Polish regime agree to negotiate with Solidarność in 1989?",
             options: [
-              "It had defeated the union and wanted to celebrate",
-              "The economy was exhausted and broke, and a 1988 strike wave showed repression had bought time, not peace",
-              "The Soviet Union ordered it to hand over power",
-              "The union had won an election already",
+              "It had defeated the union and wanted a public celebration",
+              "The economy was broke and the 1988 strike wave proved it",
+              "The Soviet Union ordered it to hand over power in 1989",
+              "The union had already won the 1988 parliamentary election",
             ],
             correctIndex: 1,
             explanation:
@@ -1005,10 +1005,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "Who was the communist state's negotiating partner at the 1989 Round Table?",
             options: [
-              "A foreign government",
+              "A foreign government acting as an outside mediator",
               "The still-technically-illegal trade union Solidarność",
-              "The army",
-              "The Catholic Church alone",
+              "The army's general staff, headed by Jaruzelski",
+              "The Catholic Church alone, without the union",
             ],
             correctIndex: 1,
             explanation:
@@ -1018,10 +1018,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "How were the June 1989 elections deliberately limited in the Party's favour?",
             options: [
-              "Only men could vote",
-              "Only 35% of the Sejm's seats were openly contested; the Party reserved 65% for itself (though the new Senate was fully free)",
-              "Solidarność candidates were banned",
-              "The results were secret",
+              "Only men over 21 and Party members were allowed to vote",
+              "Only 35% of Sejm seats were contested; the Party kept 65%",
+              "Solidarność candidates were banned from the Senate",
+              "The results were kept secret for almost two years",
             ],
             correctIndex: 1,
             explanation:
@@ -1031,10 +1031,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "What was the result of the 4 June 1989 election?",
             options: [
-              "The communists won comfortably",
-              "Solidarity won every contestable Sejm seat and 99 of 100 Senate seats, a landslide that became a referendum communism lost",
-              "A narrow Solidarity win in one region",
-              "The election was cancelled",
+              "The communists won comfortably, taking both new chambers",
+              "Solidarity won every contestable Sejm seat and 99 Senate seats",
+              "A narrow Solidarity win in the Gdańsk and Warsaw regions",
+              "The election was cancelled after the first round of voting",
             ],
             correctIndex: 1,
             explanation:
@@ -1044,10 +1044,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "Who became prime minister in August 1989, and why was it historic?",
             options: [
-              "Wojciech Jaruzelski, he kept power",
-              "Tadeusz Mazowiecki, the first non-communist head of government in the Soviet bloc in over four decades",
-              "Leszek Balcerowicz, the first union president",
-              "Lech Wałęsa, immediately after the election",
+              "Wojciech Jaruzelski, who kept power as party leader",
+              "Tadeusz Mazowiecki, the first non-communist PM in the bloc",
+              "Leszek Balcerowicz, the first economist to hold it",
+              "Lech Wałęsa, immediately after the June 1989 election",
             ],
             correctIndex: 1,
             explanation:
@@ -1057,10 +1057,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "In the vocabulary of the four questions, what did Poland 1989 uniquely demonstrate?",
             options: [
-              "That unions should stay out of politics",
-              "That a trade union could be the primary vehicle that negotiates a state out of power and forms the next government, Question 1 at national scale",
-              "That co-determination works",
-              "That the Ghent system raises density",
+              "That unions should always stay out of national politics",
+              "That a union could negotiate a state out of power",
+              "That co-determination works best after a revolution",
+              "That the Ghent system alone raises union density",
             ],
             correctIndex: 1,
             explanation:
@@ -1070,10 +1070,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "What was the 'Balcerowicz Plan'?",
             options: [
-              "A plan to nationalise all industry",
-              "The 'shock therapy' package (in force 1 January 1990) that freed prices, cut subsidies, tightened money and opened the economy all at once",
-              "A Soviet aid programme",
-              "A plan to ban private business",
+              "A plan to nationalise all heavy industry in 1990",
+              "The 'shock therapy' package of 1 January 1990",
+              "A Soviet aid programme agreed in January 1990",
+              "A plan to ban private business after 1990",
             ],
             correctIndex: 1,
             explanation:
@@ -1083,10 +1083,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "How did registered unemployment change in Poland after 1989 (GUS)?",
             options: [
-              "It stayed at zero",
-              "It rose from an official zero to 6.5% within 1990 and to 16.4% by 1993",
-              "It fell steadily",
-              "It reached 50%",
+              "It stayed at zero through 1990 and 1993 alike",
+              "It rose from zero to 6.5% in 1990 and 16.4% by 1993",
+              "It fell steadily from 6.5% in 1990 to 1.4% by 1993",
+              "It rose from zero to 50% by 1993, then fell",
             ],
             correctIndex: 1,
             explanation:
@@ -1096,10 +1096,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "Why is the shock-therapy chapter the 'most uncomfortable' part of the Poland story?",
             options: [
-              "Because the union refused to govern",
-              "Because the government the union formed imposed reforms whose pain fell hardest on the industrial workers who had built Solidarność",
-              "Because the reforms failed completely",
-              "Because foreign powers imposed the plan",
+              "Because the union refused to govern after winning",
+              "Because the union's own government made its own base pay",
+              "Because the reforms failed completely within three years",
+              "Because the IMF and foreign banks imposed the plan",
             ],
             correctIndex: 1,
             explanation:
@@ -1109,10 +1109,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "What does the course mean by 'the workplace and the country are different battlefields'?",
             options: [
-              "Unions should never enter politics",
-              "Winning national political power (the country) and maintaining a dense, organised bargaining movement (the workplace) are separate achievements, and winning one can cost you the other",
-              "Factories and parliaments are in different cities",
-              "Strikes are illegal in Poland",
+              "Unions should never enter national politics of any kind",
+              "Winning national power and holding workplace power are separate",
+              "Factories and parliaments are simply in different cities",
+              "Strikes are illegal in Poland outside registered unions",
             ],
             correctIndex: 1,
             explanation:
@@ -1122,10 +1122,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "What was the 'war at the top' (wojna na górze)?",
             options: [
-              "A Soviet invasion",
-              "A 1990 feud between the Wałęsa and Mazowiecki wings, as the moral authority of 'Solidarity' fractured into competing camps",
-              "A miners' strike",
-              "A dispute with the Catholic Church",
+              "A Soviet invasion scare in the winter of 1990",
+              "A 1990 feud between the Wałęsa and Mazowiecki wings",
+              "A miners' strike against the Balcerowicz Plan",
+              "A dispute with the Catholic Church over abortion",
             ],
             correctIndex: 1,
             explanation:
@@ -1135,9 +1135,9 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "Did shock therapy ultimately 'work,' by its designers' measure?",
             options: [
-              "No, hyperinflation continued forever",
-              "Broadly yes, it broke hyperinflation and Poland later became a growth success story, though economists still debate whether a gentler path was possible and the transitional pain was severe",
-              "It was never actually implemented",
+              "No; hyperinflation continued right through the 1990s",
+              "Broadly yes; it broke hyperinflation, at severe cost",
+              "No; the package was never actually implemented",
               "It made Poland the poorest country in Europe",
             ],
             correctIndex: 1,
@@ -1169,10 +1169,10 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
           {
             prompt: "Why does the course stress that Solidarność 'was not corrupt and was not stupid' about shock therapy?",
             options: [
-              "To excuse the union of any responsibility",
-              "To make clear the harm came not from bad faith but from a genuinely broken economy with no painless options, the tragedy is structural, not a moral failing",
-              "Because the union opposed the plan entirely",
-              "Because the plan was secretly designed by Moscow",
+              "To excuse the union of all responsibility for the pain",
+              "To show the harm came from a broken economy, not bad faith",
+              "Because the union opposed the plan from the very start",
+              "Because the plan was secretly designed in Moscow in 1989",
             ],
             correctIndex: 1,
             explanation:
@@ -1285,10 +1285,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "Poland and Germany have similar union density but very different coverage. What explains the gap?",
             options: [
-              "Germans are more loyal to unions",
-              "The LEVEL of bargaining, Germany bargains sectorally (binding whole industries), Poland bargains company by company with almost no sectoral agreements",
-              "Poland has no collective bargaining law",
-              "Germany forces every worker to join a union",
+              "Germans are simply more loyal to their unions than Poles",
+              "The LEVEL of bargaining: Germany sectoral, Poland company-level",
+              "Poland has no collective bargaining law at national level",
+              "Germany forces every worker in industry to join a union",
             ],
             correctIndex: 1,
             explanation:
@@ -1298,10 +1298,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "Poland's employer-organisation density is 56.3% (2022), fairly high. Why doesn't that produce high coverage as it does in Germany?",
             options: [
-              "Because Polish employers refuse to sign anything",
-              "Because Poland lacks the sectoral bargaining that turns employer organisation into coverage, bargaining is company-level",
-              "Because the figure is fake",
-              "Because employers' associations are banned",
+              "Because Polish employers refuse to sign any agreement",
+              "Because Poland has no sectoral bargaining to convert it",
+              "Because the 56.3% figure counts only state firms",
+              "Because employers' associations are banned by statute",
             ],
             correctIndex: 1,
             explanation:
@@ -1311,10 +1311,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "Why does company-level bargaining have a built-in ceiling in Poland?",
             options: [
-              "Companies are forbidden to bargain",
-              "A company agreement generally needs a union inside that firm, but ~70% of workers are in SMEs too small to have one",
-              "Only the government can sign agreements",
-              "Workers must pay to bargain",
+              "Companies are forbidden to bargain without the state",
+              "A company deal needs a union inside, and ~70% work in SMEs",
+              "Only the government may sign binding wage agreements",
+              "Workers must pay a statutory fee to bargain at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1324,10 +1324,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "How has Polish bargaining coverage changed since the 1990s (ETUI)?",
             options: [
-              "It rose from 12% to 30%",
-              "It fell from around 30% in the 1990s to roughly 12-13% today",
-              "It has stayed flat at 50%",
-              "It reached 80%",
+              "It rose from about 12% to about 30%",
+              "It fell from about 30% to about 12-13%",
+              "It has stayed flat at about 50%",
+              "It rose from about 30% to about 80%",
             ],
             correctIndex: 1,
             explanation:
@@ -1337,10 +1337,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "What is the honest ending the course draws from Poland's numbers?",
             options: [
-              "That unions always win in the end",
-              "That a movement can win the state and still lose the workplace, winning the first does not guarantee keeping the second",
-              "That democracy makes unions strong automatically",
-              "That Poland has the strongest unions in the EU",
+              "That unions always win in the end if they hold together",
+              "That a movement can win the state and still lose the workplace",
+              "That democracy makes unions strong automatically over time",
+              "That Poland now has the strongest unions in the whole EU",
             ],
             correctIndex: 1,
             explanation:
@@ -1363,10 +1363,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "What is the irony about OPZZ, Poland's second-largest confederation?",
             options: [
-              "It was founded by the Catholic Church",
-              "It was created in 1984 by the communist regime as an official alternative after Solidarność was banned, and is now a legitimate independent confederation",
-              "It is secretly controlled by Solidarność",
-              "It represents only managers",
+              "It was founded in 1989 by the Catholic Church in Gdańsk",
+              "It was created in 1984 by the regime to replace Solidarność",
+              "It has been secretly controlled by Solidarność since 2002",
+              "It represents only managers and senior state officials",
             ],
             correctIndex: 1,
             explanation:
@@ -1376,10 +1376,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "How does the course describe NSZZ 'Solidarność's' contemporary politics?",
             options: [
-              "As strictly non-political",
-              "As openly aligned since the 1990s with the national-catholic right, having backed PiS candidates (e.g. Lech Kaczyński in 2005), stated as dated fact, with the course taking no side",
-              "As a branch of the Communist Party",
-              "As allied with the political left",
+              "As strictly non-political and party-neutral by statute",
+              "As aligned since the 1990s with the national-catholic right",
+              "As a direct successor branch of the Communist Party",
+              "As allied since the 1990s with the post-communist left",
             ],
             correctIndex: 1,
             explanation:
@@ -1389,10 +1389,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "How does the course handle the dispute over Lech Wałęsa's alleged 1970s security-service file?",
             options: [
-              "It declares him guilty",
-              "It declares him innocent",
-              "It names the dispute, notes the allegations are contested and that he denies them, and declines to adjudicate",
-              "It ignores the subject entirely",
+              "It declares him guilty on the strength of the archive files",
+              "It declares him innocent and the archive files forged",
+              "It names the dispute, notes he denies it, and does not rule",
+              "It ignores the subject entirely as far too contested",
             ],
             correctIndex: 2,
             explanation:
@@ -1402,10 +1402,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "Why does the fragmentation into three confederations matter for worker power?",
             options: [
-              "It makes unions stronger by competition",
-              "Bargaining power that might be concentrated is instead divided among rival federations that do not always cooperate",
-              "It has no effect",
-              "It is required by EU law",
+              "It makes unions stronger through open competition",
+              "Power that might be concentrated is divided among rivals",
+              "It has no measurable effect on bargaining power today",
+              "It is required by the EU social-dialogue directives",
             ],
             correctIndex: 1,
             explanation:
@@ -1415,10 +1415,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "What editorial rule does this lesson borrow from the anchor course (Hoffa, Marikana)?",
             options: [
-              "Always take the union's side",
-              "State what is documented, date it, and do not adjudicate what is genuinely disputed",
-              "Avoid all contemporary politics",
-              "Only cite government sources",
+              "Always take the union's side in a disputed case",
+              "State what is documented, date it, do not adjudicate",
+              "Avoid all contemporary political questions entirely",
+              "Only cite official government and academic sources",
             ],
             correctIndex: 1,
             explanation:
@@ -1428,10 +1428,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "Why might some Poles who revere the 1980 movement feel estranged from today's NSZZ 'Solidarność'?",
             options: [
-              "Because it grew too large",
-              "Because a movement founded as a broad, cross-ideological front of the whole society has become a partisan actor identified with one side of a divided politics",
-              "Because it merged with OPZZ",
-              "Because it left Poland",
+              "Because it grew far too large to represent anyone",
+              "Because a broad, cross-ideological front became partisan",
+              "Because it merged with OPZZ and lost its own name",
+              "Because it left Poland for Brussels in the 1990s",
             ],
             correctIndex: 1,
             explanation:
@@ -1454,10 +1454,10 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
           {
             prompt: "What is the single best summary of Poland's answer to 'who bargains, at what level?' today?",
             options: [
-              "The whole economy, at national level",
+              "The whole economy, at a single national level",
               "Mostly no one, at the level of the single firm",
-              "Every sector, by ministerial decree",
-              "Only the government, for all workers",
+              "Every sector, by ministerial decree each year",
+              "Only the government, on behalf of all workers",
             ],
             correctIndex: 1,
             explanation:
@@ -1683,10 +1683,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "What is a Polish 'junk contract' (umowa śmieciowa)?",
             options: [
-              "A contract for hazardous waste disposal",
-              "A civil-law contract used to hire employee-like workers so the employer escapes the Labour Code and the bargaining system",
+              "A contract for hazardous waste disposal at a plant",
+              "A civil-law contract used to hire employee-like workers",
               "A short-term employment contract with full benefits",
-              "A collective agreement",
+              "A collective agreement covering a single factory",
             ],
             correctIndex: 1,
             explanation:
@@ -1696,10 +1696,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "What single structural move do Polish junk contracts, US misclassification, and Mexican protection contracts share?",
             options: [
-              "They all raise wages",
-              "In each, an employer uses a legal form to place a worker OUTSIDE the category that carries the protections",
-              "They are all illegal everywhere",
-              "They all require a union election",
+              "They all raise wages for most of the workers involved",
+              "An employer uses a legal form to put the worker OUTSIDE",
+              "They are all outright illegal wherever they appear",
+              "They all require a supervised union election first",
             ],
             correctIndex: 1,
             explanation:
@@ -1708,7 +1708,7 @@ These are the specific, checkable facts this course wants in your head, the ones
           },
           {
             prompt: "The US version of this move, taught in the anchor course, is called…",
-            options: ["co-determination", "misclassification (calling an employee an 'independent contractor')", "the Ghent system", "sectoral extension"],
+            options: ["co-determination (workers seated on the company board)", "misclassification (an employee called a 'contractor')", "the Ghent system (unions administer unemployment funds)", "sectoral extension (a deal extended across an industry)"],
             correctIndex: 1,
             explanation:
               "Misclassification puts a worker outside the NLRA, minimum wage and overtime, the American door to the same escape Poland reaches through civil-law contracts.",
@@ -1716,7 +1716,7 @@ These are the specific, checkable facts this course wants in your head, the ones
           },
           {
             prompt: "The Mexican version of the move, from that country's course, is the…",
-            options: ["works council", "protection contract (a friendly/phantom union's agreement that blocks a real union)", "enterprise union", "minimum-service law"],
+            options: ["works council (elected staff body inside the firm)", "protection contract (a phantom union's blocking deal)", "enterprise union (one union per single company)", "minimum-service law (a strike floor in essentials)"],
             correctIndex: 1,
             explanation:
               "A legal form that leaves the worker outside genuine protection while appearing to be inside it, the same family as junk contracts and misclassification.",
@@ -1725,10 +1725,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "Why does the exclusion-move question matter more than 'is there a union/protection here?'",
             options: [
-              "Because protections never matter",
-              "Because a protection is worthless to a worker who has been defined, on paper, as outside the category it attaches to",
-              "Because unions are always illegal",
-              "Because every worker is automatically covered",
+              "Because written protections never matter much in practice",
+              "Because a protection is worthless to a worker defined outside",
+              "Because unions are always illegal in such workplaces anyway",
+              "Because every worker is automatically covered by statute",
             ],
             correctIndex: 1,
             explanation:
@@ -1738,10 +1738,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "Running Question 1 across Poland: what is the striking pairing in the answer 'today'?",
             options: [
-              "Organising is banned, and density is high",
-              "Everyone may organise, yet density is only ~9%, the right can be secure and barely used at once",
-              "Only farmers may organise",
-              "Organising requires Party approval",
+              "Organising is banned, yet density is above 30%",
+              "Everyone may organise, yet density is only about 9%",
+              "Only farmers may organise, and density is ~30%",
+              "Organising still requires Party approval today",
             ],
             correctIndex: 1,
             explanation:
@@ -1751,10 +1751,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "What is the transferable habit the course adds on top of the four questions?",
             options: [
-              "Judge a labour movement by its rhetoric",
-              "When a labour movement looks weak, look for the legal form that moves workers out of the protected category, and look for the LEVEL at which bargaining happens",
-              "Assume culture explains everything",
-              "Count only strike days",
+              "Judge a labour movement by its rhetoric and slogans",
+              "Look for the exclusion move and the LEVEL of bargaining",
+              "Assume national culture explains most of the outcome",
+              "Count only the number of strike days lost each year",
             ],
             correctIndex: 1,
             explanation:
@@ -1764,10 +1764,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "In one sentence, what is Poland's unique place in the whole track?",
             options: [
-              "A country where workers sit on company boards",
-              "A movement can win the entire state and still, through the structures that come afterward, lose the workplace",
+              "A country where workers sit on every company board",
+              "A movement can win the entire state and lose the workplace",
               "A country where the union runs the unemployment fund",
-              "A country with no labour law at all",
+              "A country with almost no labour law worth the name",
             ],
             correctIndex: 1,
             explanation:
@@ -1790,10 +1790,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "Why should any single 'the junk-contract problem is fixed now' claim be treated with caution?",
             options: [
-              "Because junk contracts don't exist",
-              "Because reforms (e.g. giving inspectors power to reclassify disguised employment) have been staged and debated into the mid-2020s and the status keeps moving, so check the date",
-              "Because Poland has no government",
-              "Because the EU banned the topic",
+              "Because junk contracts have never really existed in law",
+              "Because reforms have been staged and debated into the 2020s",
+              "Because Poland has no labour ministry to enforce it",
+              "Because the EU has banned the topic from public debate",
             ],
             correctIndex: 1,
             explanation:
@@ -1803,10 +1803,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "How does 'find the bargaining level' help you read a country you have never studied?",
             options: [
-              "It tells you the country's GDP",
-              "Whether bargaining is sectoral or firm-level caps how far coverage can spread beyond union membership, a structural fact that predicts real worker power",
-              "It tells you the strike frequency",
-              "It reveals the minimum wage",
+              "It tells you the country's GDP per worker each year",
+              "Sectoral or firm-level caps how far coverage can spread",
+              "It tells you how often strikes happen each year",
+              "It reveals the statutory minimum wage level",
             ],
             correctIndex: 1,
             explanation:
@@ -1824,10 +1824,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "What does the term 'dual labour market' describe in the Polish context?",
             options: [
-              "Two currencies",
-              "A split between workers on protected Labour Code contracts and those on unprotected civil-law 'junk' contracts",
-              "Public vs private sectors",
-              "Two competing minimum wages",
+              "Two parallel currencies circulating in the same economy",
+              "A split between Labour Code and civil-law contract workers",
+              "A split between the public and the private sectors",
+              "Two competing minimum wages, one urban and one rural",
             ],
             correctIndex: 1,
             explanation:
@@ -1837,10 +1837,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "If you forgot every date in this course, what would still be worth keeping?",
             options: [
-              "The names of the shipyards",
-              "The METHOD, the four questions plus the two structural facts (the exclusion move and the bargaining level)",
+              "The names of the shipyards and the towns they sit in",
+              "The METHOD: the four questions plus two structural facts",
               "The exchange rate of the złoty",
-              "Nothing",
+              "Nothing at all, once you have finished the course",
             ],
             correctIndex: 1,
             explanation:

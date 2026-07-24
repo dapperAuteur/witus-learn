@@ -402,10 +402,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "What's the most honest way for a founder to think about AI in their business?",
             options: [
-              "A magic founder that runs the business for you",
-              "A fast, sometimes-wrong assistant: AI drafts, you decide",
-              "A guaranteed source of true facts and prices",
-              "A replacement for talking to customers",
+              "A magic co-founder that runs the whole business for you",
+              "A fast, sometimes-wrong assistant: it drafts, you decide",
+              "A guaranteed source of true facts, figures and prices",
+              "A straight replacement for talking to real customers",
             ],
             correctIndex: 1,
             explanation:
@@ -415,10 +415,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "Which is the right way to START looking for a business idea?",
             options: [
-              "\"I have a cool AI tool, what can I build?\"",
-              "Copy whatever startup is trending",
-              "\"People keep complaining about X, can I solve a problem they'll pay to remove?\"",
-              "Ask AI to invent a guaranteed winner",
+              "'I have a cool AI tool, so what could I build with it?'",
+              "Copy whatever startup happens to be trending right now",
+              "'People keep complaining about X, would they pay to fix it?'",
+              "Ask an AI model to invent a guaranteed winning idea",
             ],
             correctIndex: 2,
             explanation:
@@ -428,10 +428,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "What's the one thing customer research must establish that no AI persona can give you?",
             options: [
-              "A list of survey questions",
-              "Whether real people will actually pay",
-              "A summary of themes",
-              "A catchy product name",
+              "A tidy list of survey questions to ask",
+              "Whether real people will actually pay for it",
+              "A short summary of the common themes",
+              "A catchy and memorable product name",
             ],
             correctIndex: 1,
             explanation:
@@ -441,10 +441,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "What's the fix for generic AI marketing 'slop'?",
             options: [
-              "Publish more of it, faster",
-              "Feed AI your own voice and rewrite the draft in your own words, with specifics you've verified",
-              "Use a longer prompt and ship it unedited",
-              "Add more buzzwords",
+              "Publish a great deal more of it, much faster",
+              "Feed it your voice and rewrite the draft in your own words",
+              "Use a much longer prompt and ship the result unedited",
+              "Add a good many more industry buzzwords to it",
             ],
             correctIndex: 1,
             explanation:
@@ -454,10 +454,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "What is the actual goal of a minimum viable product (MVP)?",
             options: [
-              "To be a finished, perfect product",
-              "To impress investors with polish",
-              "To learn fast and cheap whether the idea works, by testing the riskiest assumption",
-              "To use as much AI as possible",
+              "To be a finished and completely perfect product",
+              "To impress your investors with sheer polish",
+              "To learn cheaply whether the idea works, by testing the risk",
+              "To use just as much AI as you possibly can",
             ],
             correctIndex: 2,
             explanation:
@@ -467,10 +467,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "When you build with a model's API, what do you actually pay for?",
             options: [
-              "A one-time flat fee forever",
-              "Per token (both your input and the model's output), so long prompts and answers cost more",
-              "Per user only",
-              "Nothing; APIs are free",
+              "A one-time flat fee that lasts forever",
+              "Per token, for your input and the model's output alike",
+              "Per user only, however much they use it",
+              "Nothing at all, because model APIs are free",
             ],
             correctIndex: 1,
             explanation:
@@ -480,10 +480,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "Your friend will post a 5-star review if you give them a free product. What does FTC guidance require / prohibit?",
             options: [
-              "Nothing: it's a real person, so it's fine",
-              "You must disclose the material connection clearly and conspicuously; and fabricated/undisclosed reviews can be illegal",
-              "You can post it as an independent review if it's positive",
-              "Only big companies have to disclose",
+              "Nothing, because they are a real person, so it is fine",
+              "You must disclose the material connection clearly and plainly",
+              "You can post it as an independent review if it is positive",
+              "Only much bigger companies actually have to disclose it",
             ],
             correctIndex: 1,
             explanation:
@@ -493,10 +493,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "According to the U.S. Copyright Office, can you copyright a logo you got from a single AI prompt?",
             options: [
-              "Yes: whatever AI makes for you is automatically yours",
-              "Purely AI-generated output isn't protected; copyright needs human authorship, and prompting alone isn't enough",
-              "Yes, if the prompt was very detailed",
-              "Only if you paid for the AI tool",
+              "Yes, whatever AI makes for you is automatically yours",
+              "Purely AI-generated output is not protected; it needs a human",
+              "Yes, so long as the prompt you wrote was very detailed",
+              "Only if you actually paid to use that AI tool",
             ],
             correctIndex: 1,
             explanation:
@@ -506,10 +506,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "Which AI use BUILDS customer trust rather than destroying it?",
             options: [
-              "A bot that pretends to be a human with no way to reach a person",
-              "Telling customers when they're talking to AI and giving a clear path to a human",
-              "Posting AI-written fake reviews to look popular",
-              "Letting a chatbot invent your return policy",
+              "A bot that pretends to be human, with no route to a person",
+              "Telling customers they are talking to AI, with a path to a human",
+              "Posting AI-written fake reviews so you look more popular",
+              "Letting a chatbot invent your returns policy on the spot",
             ],
             correctIndex: 1,
             explanation:
@@ -519,10 +519,10 @@ A feature that's "basically free" while you test it can become a real monthly bi
           {
             prompt: "Why isn't 'I generated a lot of stuff quickly' proof that an AI tool is worth it?",
             options: [
-              "Speed always equals value",
-              "Because you must compare it to a baseline (time, cost, and quality), or fixing AI mistakes can cost more than you saved",
-              "Because AI tools are always free",
-              "Because quality never matters",
+              "Because sheer speed always equals real value",
+              "Because without a baseline, fixing its mistakes can cost more",
+              "Because the AI tools themselves are always free",
+              "Because the quality of the output never matters",
             ],
             correctIndex: 1,
             explanation:

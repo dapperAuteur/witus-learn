@@ -372,10 +372,10 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
           {
             prompt: "Which is the best way to describe what AI really is?",
             options: [
-              "A living creature with feelings",
-              "Magic that knows everything",
-              "A computer program, a tool that's good at finding patterns",
-              "A real friend who knows you",
+              "A living creature that has real feelings too",
+              "Magic that already knows about everything",
+              "A computer program that is good at finding patterns",
+              "A real friend who knows all about you",
             ],
             correctIndex: 2,
             explanation: "AI is a computer program, a tool. It's not alive, not magic, and doesn't truly know you.",
@@ -384,10 +384,10 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
           {
             prompt: "How does an AI mainly \"learn\" to do something?",
             options: [
-              "It is born knowing it",
-              "It learns patterns from lots of examples (training data)",
-              "It guesses with no help at all",
-              "A wizard teaches it",
+              "It is simply born already knowing how",
+              "It learns patterns from lots and lots of examples",
+              "It guesses at it with no help at all",
+              "A clever wizard teaches it how to",
             ],
             correctIndex: 1,
             explanation: "AI finds patterns in many examples (training data), then makes a smart guess about something new.",
@@ -396,10 +396,10 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
           {
             prompt: "What is a \"prompt\"?",
             options: [
-              "A mistake the AI makes",
-              "The message you give the AI, what you ask it",
-              "A kind of robot",
-              "A password",
+              "A mistake that the AI has made",
+              "The message you give the AI when you ask it",
+              "A special kind of robot helper",
+              "A password for the AI tool",
             ],
             correctIndex: 1,
             explanation: "A prompt is what you ask. A clear prompt (Who / What / How) gets a better answer.",
@@ -408,10 +408,10 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
           {
             prompt: "An AI tells you a fact for your report and sounds very sure. What should you do?",
             options: [
-              "Believe it right away, it sounded sure",
-              "Check it in a trusted book or with a grown-up before trusting it",
-              "Never use AI again",
-              "Ask the AI if it's really, really sure",
+              "Believe it right away, because it sounded so sure",
+              "Check it in a trusted book or with a grown-up first",
+              "Never use any AI ever again after that",
+              "Ask the AI whether it is really, really sure",
             ],
             correctIndex: 1,
             explanation: "AI can be wrong even when it sounds sure (a hallucination). Always check important facts.",
@@ -427,10 +427,10 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
           {
             prompt: "Why can an AI sometimes be unfair (biased)?",
             options: [
-              "It is trying to be mean on purpose",
-              "It learned from examples that were unfair or left some people out",
-              "It is broken",
-              "It doesn't like certain kids",
+              "It is deliberately trying to be mean on purpose",
+              "It learned from examples that left some people out",
+              "It is simply broken and needs fixing",
+              "It does not happen to like certain kids",
             ],
             correctIndex: 1,
             explanation: "Bias comes from unfair or missing examples, not from the AI choosing to be mean. Notice it and speak up.",
@@ -451,10 +451,10 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
           {
             prompt: "Which is the honest, smart way to use AI for schoolwork?",
             options: [
-              "Have it do the whole worksheet and copy it",
-              "Ask it to explain a step so you understand, then do the work yourself",
-              "Turn in its work and say you did it all alone",
-              "Use it to write mean messages",
+              "Have it do the whole worksheet and then copy it",
+              "Ask it to explain a step, then do the work yourself",
+              "Turn in its work and say you did it all on your own",
+              "Use it to write mean messages to other people",
             ],
             correctIndex: 1,
             explanation: "Use AI to learn, not to cheat, and tell your teacher how you used it. Honesty is the brave choice.",
@@ -463,10 +463,10 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
           {
             prompt: "Before you make a project with an AI tool, the very first step is to…",
             options: [
-              "Type in your home address",
-              "Do it with a trusted grown-up using a safe tool",
-              "Believe everything it makes",
-              "Keep it a secret from your parents",
+              "Type your home address into it first",
+              "Do it with a trusted grown-up, using a safe tool",
+              "Believe every single thing that it makes",
+              "Keep the whole thing a secret from your parents",
             ],
             correctIndex: 1,
             explanation: "A grown-up picks a safe tool and stays nearby, that keeps you safe while you create.",
@@ -475,10 +475,10 @@ That's it, you used AI the **Young Maker way**: curious, careful, kind, and hone
           {
             prompt: "After an AI helps you make a quiz about dinosaurs, the most important next step is to…",
             options: [
-              "Share it before checking it",
+              "Share it around before you have checked it",
               "Check each answer in a real book or with a grown-up",
-              "Trust it because it sounded smart",
-              "Add your address so people know it's yours",
+              "Trust it, because the whole thing sounded smart",
+              "Add your home address so people know it is yours",
             ],
             correctIndex: 1,
             explanation: "Be a fact detective! AI can be wrong, so check the answers before you trust them.",

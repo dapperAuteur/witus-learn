@@ -353,10 +353,10 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "Treating AI as a \"socio-technical system\" means an AI harm is best understood as coming from…",
             options: [
-              "The math alone (algorithms are objective)",
-              "The whole system: data, people, institutions, and incentives, not just the code",
-              "Bad luck that can't be predicted",
-              "The user, every time",
+              "The maths alone, because the algorithms are objective",
+              "The whole system: data, people, institutions and incentives",
+              "Bad luck of a kind that simply cannot be predicted",
+              "The user of the system, in every single case",
             ],
             correctIndex: 1,
             explanation:
@@ -367,10 +367,10 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "A model with no \"race\" field still produces racially biased outcomes. The most likely reason is…",
             options: [
-              "The math is broken",
-              "It learned from historical/institutional data that already encoded discrimination (systemic bias)",
-              "Someone hacked it",
-              "AI can't be biased without that field",
+              "The underlying maths of the model is simply broken",
+              "It learned from historical data that already encoded bias",
+              "Someone outside must have hacked into the model",
+              "AI cannot be biased at all without such a field",
             ],
             correctIndex: 1,
             explanation:
@@ -390,10 +390,10 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "Two engineers each call their model \"fair\" and both are telling the truth. How?",
             options: [
-              "One of them is lying",
-              "\"Fair\" has multiple valid, sometimes mathematically incompatible definitions",
-              "Fairness is impossible to define at all",
-              "They used different programming languages",
+              "One of the two of them must be lying",
+              "'Fair' has several valid but incompatible definitions",
+              "Fairness is quite impossible to define at all",
+              "They each used different programming languages",
             ],
             correctIndex: 1,
             explanation:
@@ -418,10 +418,10 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "What's the difference between transparency and explainability?",
             options: [
-              "They're the same thing",
-              "Transparency is about disclosing the system; explainability is giving a human-understandable reason for a specific decision",
-              "Transparency is for engineers; explainability is for lawyers",
-              "Explainability means the model is open-source",
+              "They are both exactly the same thing",
+              "Transparency discloses the system; explainability gives a reason",
+              "Transparency is for engineers, explainability for lawyers",
+              "Explainability just means the model is open-source",
             ],
             correctIndex: 1,
             explanation:
@@ -432,10 +432,10 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "When an AI system causes harm, ethics frameworks say accountability should rest with…",
             options: [
-              "The algorithm itself",
-              "No one (it's automated)",
-              "A human or organization; ultimate responsibility stays with people",
-              "The end user only",
+              "The algorithm itself, entirely on its own",
+              "No one at all, since the whole thing is automated",
+              "A human or an organisation; responsibility stays with people",
+              "The end user of the system, and nobody else",
             ],
             correctIndex: 2,
             explanation:
@@ -446,10 +446,10 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "The EU AI Act places government social scoring and (mostly) real-time public biometric ID in which tier?",
             options: [
-              "Minimal risk",
-              "Limited risk",
-              "High risk",
-              "Unacceptable risk (banned)",
+              "Minimal risk under the Act",
+              "Limited risk under the Act",
+              "High risk under the Act",
+              "Unacceptable risk, and banned",
             ],
             correctIndex: 3,
             explanation:
@@ -460,10 +460,10 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "Which is a real, often-overlooked cost behind large AI models?",
             options: [
-              "Nothing (AI is weightless)",
-              "Significant electricity/water use and low-paid human data/labeling work",
-              "Only the price of the subscription",
-              "Just slower internet",
+              "Nothing much, because AI is essentially weightless",
+              "Large electricity and water use, and low-paid labelling work",
+              "Only the price of your monthly subscription fee",
+              "Just a very slightly slower internet connection",
             ],
             correctIndex: 1,
             explanation:
@@ -474,10 +474,10 @@ The goal isn't fear or refusal, it's **responsible use**: use AI's power while p
             prompt:
               "A manager says \"the hiring AI is objective, so it's fair.\" The best response is to…",
             options: [
-              "Agree (machines are neutral)",
-              "Treat \"objective\" as a red flag and ask: trained on what data, fair by which definition, who checked, can it be appealed?",
-              "Refuse to use any AI ever",
-              "Ask for a faster computer",
+              "Agree with them, because machines really are neutral",
+              "Treat 'objective' as a red flag and ask what data trained it",
+              "Refuse to use any AI at all, now or ever again",
+              "Ask them for a much faster computer to run it on",
             ],
             correctIndex: 1,
             explanation:

@@ -531,10 +531,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
           {
             prompt: "What is the scientific method, in plain words?",
             options: [
-              "A way to make AI do your whole project for you",
-              "A careful, step-by-step way to ask a question and find a trustworthy answer",
-              "A rule that science projects must use a robot",
-              "A trick to always get the result you hoped for",
+              "A way to make AI do your entire project for you",
+              "A careful, step-by-step way to find a trustworthy answer",
+              "A rule saying science projects must use a robot",
+              "A trick to always get the result that you hoped for",
             ],
             correctIndex: 1,
             explanation:
@@ -544,10 +544,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
           {
             prompt: "Which of these is a good, testable hypothesis for an AI project?",
             options: [
-              "AI is really cool and helpful.",
-              "The model will be right at least 8 out of 10 times on new photos.",
-              "I hope my project wins.",
-              "Robots are the future.",
+              "AI is really very cool and helpful to people.",
+              "The model will be right at least 8 times out of 10.",
+              "I very much hope that my project wins a prize.",
+              "Robots are quite clearly the future for us.",
             ],
             correctIndex: 1,
             explanation:
@@ -557,10 +557,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
           {
             prompt: "What does Google Teachable Machine let you do?",
             options: [
-              "Write your essay for you",
-              "Train an image, sound, or pose model in your browser by giving it examples, no coding",
-              "Find someone's home address",
-              "Grade your science fair automatically",
+              "Write your whole science fair essay for you",
+              "Train an image, sound or pose model from your examples",
+              "Find out somebody else's home address for you",
+              "Grade your whole science fair project automatically",
             ],
             correctIndex: 1,
             explanation:
@@ -570,10 +570,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
           {
             prompt: "Why must you test your model on examples it has NEVER seen before?",
             options: [
-              "To make the score look as high as possible",
-              "Because testing on the training examples just shows it memorized them, not that it learned the pattern",
-              "Because new examples are easier",
-              "There is no reason, any test is fine",
+              "To make the final score look as high as it possibly can",
+              "Because testing on training examples only shows memorising",
+              "Because brand new examples are always much easier",
+              "There is no reason at all, since any test will do fine",
             ],
             correctIndex: 1,
             explanation:
@@ -584,10 +584,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
             prompt:
               "Your hypothesis was '8 out of 10,' but the model scored 7 out of 10. What's the right thing to do?",
             options: [
-              "Quietly remove the photos it got wrong so the score hits 8/10",
-              "Report the real 7/10 honestly, a guess being wrong is a valid result",
-              "Pretend you never made a hypothesis",
-              "Say the AI cheated",
+              "Quietly remove the photos it got wrong so it hits 8/10",
+              "Report the real 7/10; a wrong guess is a valid result",
+              "Pretend that you never made a hypothesis at all",
+              "Say that the AI must have cheated somehow",
             ],
             correctIndex: 1,
             explanation:
@@ -597,10 +597,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
           {
             prompt: "Which project is the SAFEST and simplest choice for data ethics?",
             options: [
-              "Collecting photos of your classmates' faces",
-              "Recording strangers' voices at the store",
-              "Sorting photos of objects (like ripe vs. unripe fruit) or your own poses",
-              "Using people's names and addresses",
+              "Collecting photographs of your classmates' faces",
+              "Recording strangers' voices while at the shops",
+              "Sorting photos of objects, or of your own poses",
+              "Using other people's names and home addresses",
             ],
             correctIndex: 2,
             explanation:
@@ -610,10 +610,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
           {
             prompt: "What does 'consent' mean in your project plan?",
             options: [
-              "Asking first and getting a clear yes before involving anyone or anything that isn't yours",
-              "Letting the AI decide everything",
-              "Keeping your project a secret",
-              "Copying another student's idea",
+              "Asking first and getting a clear yes before you start",
+              "Letting the AI decide absolutely everything for you",
+              "Keeping your whole project a complete and total secret",
+              "Copying another student's science project idea",
             ],
             correctIndex: 0,
             explanation:
@@ -623,10 +623,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
           {
             prompt: "Your model got 'ripe' right far more than 'unripe.' What likely caused this bias?",
             options: [
-              "The model dislikes unripe fruit",
-              "You probably gave it many more 'ripe' examples than 'unripe' ones",
-              "Bias is impossible in AI",
-              "The fruit was too colorful",
+              "The model simply dislikes unripe fruit for some reason",
+              "You gave it many more 'ripe' examples than 'unripe' ones",
+              "Bias is completely impossible in any AI model at all",
+              "The fruit itself was simply much too colourful",
             ],
             correctIndex: 1,
             explanation:
@@ -636,10 +636,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
           {
             prompt: "When you do background research and an AI helper gives you a 'fact,' what should you do?",
             options: [
-              "Paste it straight into your project and cite the AI",
-              "Check it in a trusted source and cite that trusted source, never invent a citation",
-              "Always believe it because it sounded sure",
-              "Skip citations entirely",
+              "Paste it into your project and then cite the AI",
+              "Check it in a trusted source and cite that source",
+              "Always believe it, because it sounded so sure",
+              "Skip all of your citations entirely",
             ],
             correctIndex: 1,
             explanation:
@@ -649,10 +649,10 @@ Record your real numbers and your "why did it miss?" notes in your notebook. You
           {
             prompt: "Why put your sources and limitations right on your science-fair poster?",
             options: [
-              "To fill up empty space",
-              "Because showing your sources and limits makes your project MORE trustworthy: judges can check your work",
-              "To hide your real results",
-              "Because the rules say to use big words",
+              "To fill up the empty space on the board",
+              "Because showing sources and limits lets judges check it",
+              "To hide your real results from the judges",
+              "Because the rules say you must use big words",
             ],
             correctIndex: 1,
             explanation:

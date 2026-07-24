@@ -150,10 +150,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "Why is Korea's 2021 ratification date such a striking fact?",
             options: [
-              "Because Korea was too poor to ratify earlier",
-              "Because a rich OECD democracy took until the 2020s to sign the basic freedom-of-association floor that even communist Poland had ratified in 1957",
-              "Because the ILO only invited Korea in 2020",
-              "Because ratification is meaningless everywhere",
+              "Because Korea stayed too poor to afford the treaty until the 2010s",
+              "Because a rich OECD democracy signed the basic floor only in the 2020s",
+              "Because the ILO admitted Korea as a member state only in late 2020",
+              "Because ratifying a labor convention changes nothing in any country",
             ],
             correctIndex: 1,
             explanation:
@@ -171,10 +171,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "Korea's union density is roughly 13% (2022, Ministry of Employment and Labor). What is its bargaining coverage, and why so close to density?",
             options: [
-              "About 49%, sectoral agreements extend coverage",
-              "About 14.8% (2018, OECD/AIAS), bargaining is enterprise-level with no extension mechanism, so agreements stop at the company gate",
-              "About 90%, the state extends all agreements",
-              "Zero, collective bargaining is illegal",
+              "About 49% (2018), sectoral deals extended across each industry",
+              "About 14.8% (2018), enterprise bargaining with no extension rule",
+              "About 90% (2018), the state extends every signed deal by law",
+              "Near zero (2018), collective bargaining is illegal in Korea",
             ],
             correctIndex: 1,
             explanation:
@@ -184,10 +184,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "What repression mechanism does the course say no other country course in this track has?",
             options: [
-              "Mass imprisonment of strikers",
-              "Civil damages suits and provisional seizure of wages and homes brought against individual strikers",
-              "Deportation of union leaders",
-              "A ban on all union meetings",
+              "Mass imprisonment of strike leaders in dedicated labor camps",
+              "Civil damages suits and wage seizure against individual strikers",
+              "Deportation of elected union leaders to remote inland provinces",
+              "A blanket ban on union meetings of more than three workers",
             ],
             correctIndex: 1,
             explanation:
@@ -205,10 +205,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "What happened in Korea in the same season workers won their independent unions?",
             options: [
-              "The country joined the OECD",
-              "The country won its democracy, the 1987 Great Workers' Struggle broke out as the dictatorship cracked",
-              "The IMF bailout was signed",
-              "The chaebol were dissolved",
+              "The country joined the OECD and opened its capital markets",
+              "The country won its democracy as the dictatorship cracked",
+              "The IMF bailout was signed and the won was floated freely",
+              "The chaebol were dissolved and their assets sold at auction",
             ],
             correctIndex: 1,
             explanation:
@@ -218,10 +218,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "Why does the course say Korea 'corrects' an American student's assumption about Question 4?",
             options: [
-              "Because Korea proves repression only happens in poor countries",
-              "Because Korea shows that 'what happens to you if you try?' can stay sharp inside a wealthy capitalist democracy with elections, courts and a free press",
-              "Because Korean workers never faced repression",
-              "Because Question 4 does not apply in Asia",
+              "Because Korea proves repression only happens in poor states",
+              "Because 'what happens if you try?' stays sharp in a rich democracy",
+              "Because Korean workers have never faced serious repression",
+              "Because Question 4 applies only to poor dictatorships, not Korea",
             ],
             correctIndex: 1,
             explanation:
@@ -232,9 +232,9 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
             prompt: "Which anchor-course lesson does this course call the 'nearest relative' of Korean chaebol unionism?",
             options: [
               "The Japan lesson on enterprise unions",
-              "The Gulf kafala lesson",
-              "The Nordic Ghent-system lesson",
-              "The Haymarket lesson",
+              "The Gulf lesson on kafala sponsorship",
+              "The Nordic lesson on the Ghent system",
+              "The Haymarket lesson on the eight-hour day",
             ],
             correctIndex: 0,
             explanation:
@@ -244,10 +244,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "Under the dictatorship, what was the formal status of unions?",
             options: [
-              "All unions were banned outright at all times",
-              "Unions existed in form, one legal federation kept close to the state, while independent organising was treated as subversion",
-              "Unions ran the government",
-              "Only foreign workers could unionize",
+              "Every union was banned outright throughout the whole Park era",
+              "One state-tied federation was legal, independent unions were not",
+              "Unions ran the government through the ruling party's labor wing",
+              "Only workers at foreign-owned firms were allowed to unionize",
             ],
             correctIndex: 1,
             explanation:
@@ -257,10 +257,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "Which categories make up Korea's 'non-regular' workforce?",
             options: [
-              "Only foreign guest workers",
-              "Fixed-term, part-time, dispatched, in-house subcontracted, and 'specially employed' workers who are legally self-employed",
-              "Only workers under age 25",
-              "Government employees",
+              "Foreign guest workers on short-term factory visas, and no others",
+              "Fixed-term, part-time, dispatched, subcontracted, specially employed",
+              "Workers under age 25 and over 60, on youth or senior contracts",
+              "Government employees and public-corporation staff, and no others",
             ],
             correctIndex: 1,
             explanation:
@@ -270,10 +270,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "What does the Korean constitution guarantee workers, on paper, since democratization?",
             options: [
-              "Nothing about labor",
-              "The rights to independent association, collective bargaining and collective action",
-              "A guaranteed job for life",
-              "Union membership as a legal duty",
+              "Nothing about labor, the text is silent on workers' rights",
+              "Rights to association, collective bargaining and collective action",
+              "A guaranteed job for life at the firm that first hires you",
+              "Union membership as a legal duty for every Korean wage earner",
             ],
             correctIndex: 1,
             explanation:
@@ -283,10 +283,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "The course promises not to tell Korea's story as a pure 'martyrology.' What two honest facts does it commit to keeping in view?",
             options: [
-              "Korea has no labor martyrs and no unions",
-              "Union density is only about 13% despite world-famous militancy, and the movement itself long fenced out the irregular workers who most needed it",
-              "All Korean workers are union members and all are regular employees",
-              "The dictatorship never repressed anyone",
+              "Korea has no labor martyrs and no unions worth the name today",
+              "Density near 13%, and the movement fenced out irregular workers",
+              "All Korean workers are union members and all hold regular jobs",
+              "The dictatorship never repressed anyone who organized a union",
             ],
             correctIndex: 1,
             explanation:
@@ -304,10 +304,10 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
           {
             prompt: "Why should you 'watch the fine print of who counts as a worker' in Korea?",
             options: [
-              "Because the definition decides who gets the constitutional labor rights, and workers defined out of the category (like self-employed truckers) lose legal strike protection entirely",
-              "Because the definition changes the minimum wage only",
-              "Because only civil servants are workers in Korea",
-              "Because the term is purely ceremonial",
+              "Because workers defined out of the category lose strike protection",
+              "Because the definition changes only which minimum wage applies",
+              "Because only civil servants count as workers under Korean law",
+              "Because the term is purely ceremonial and carries no legal force",
             ],
             correctIndex: 0,
             explanation:
@@ -441,10 +441,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Why does the course call cheap labor a 'load-bearing component' of Park Chung-hee's development model?",
             options: [
-              "Because Korea's exports sold on price, the price advantage was the wage bill, and the state actively organized workers' quiet to protect it",
-              "Because Korea had abundant oil wealth to fund wages",
-              "Because unions set national wage policy",
-              "Because labor costs were irrelevant to exports",
+              "Because exports sold on price, and the price was the wage bill",
+              "Because Korea had oil wealth enough to fund high factory wages",
+              "Because unions set national wage policy through the state's FKTU",
+              "Because labor costs were irrelevant to Korea's export prices",
             ],
             correctIndex: 0,
             explanation:
@@ -454,10 +454,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "How did Park Chung-hee come to power, and what was the Yushin system?",
             options: [
-              "He won a free election in 1961; Yushin was a welfare program",
-              "He seized power in a military coup on 16 May 1961; the 1972 Yushin Constitution ended direct presidential elections and gave him effectively unlimited rule",
-              "He inherited power from his father; Yushin was a trade treaty",
-              "He was appointed by the UN; Yushin was a union federation",
+              "He won a free election in 1961; Yushin was a rural welfare program",
+              "He seized power in the 16 May 1961 coup; Yushin ended elections in 1972",
+              "He inherited power from his father; Yushin was a Japan trade treaty",
+              "He was appointed by the UN command; Yushin was a union federation",
             ],
             correctIndex: 1,
             explanation:
@@ -467,10 +467,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Were unions banned outright under the developmental dictatorship?",
             options: [
-              "Yes, no union existed legally until 1987",
-              "No, the FKTU existed legally throughout, kept close to the state, while independent organizing was treated as subversion and 1971 emergency law suspended effective bargaining and strikes",
-              "No, all unions operated freely",
-              "Yes, union membership was a capital crime",
+              "Yes, no union existed legally anywhere in the country until 1987",
+              "No, the FKTU was legal throughout while independent unions were not",
+              "No, all unions operated freely under the Labor Standards Act",
+              "Yes, union membership was a capital crime under the Yushin rules",
             ],
             correctIndex: 1,
             explanation:
@@ -480,10 +480,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Who were the 'sida' of the Peace Market?",
             options: [
-              "Factory owners' sons in management training",
-              "Teenage assistant seamstresses, girls of roughly 14 to 16 working thirteen-to-fifteen-hour days in attic workshops",
-              "Government labor inspectors",
-              "Union shop stewards",
+              "Factory owners' sons doing a year of management training",
+              "Teenage assistant seamstresses working 13-15 hour days in attics",
+              "Government labor inspectors assigned to the garment district",
+              "Union shop stewards elected by the garment workers themselves",
             ],
             correctIndex: 1,
             explanation:
@@ -493,10 +493,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What legal discovery reorganized Jeon Tae-il's life in 1968?",
             options: [
-              "That strikes were legal under the constitution",
-              "That the Labor Standards Act of 1953 already guaranteed on paper the hours, rest and protections the Peace Market denied, the law existed but went unenforced",
-              "That the Peace Market was foreign-owned",
-              "That minors could not legally work at all",
+              "That strikes were fully legal under the 1948 constitution",
+              "That the 1953 Labor Standards Act already promised those rights",
+              "That the Peace Market was owned by a Japanese trading house",
+              "That minors under sixteen could not lawfully be employed at all",
             ],
             correctIndex: 1,
             explanation:
@@ -506,10 +506,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What happened on 13 November 1970?",
             options: [
-              "The Peace Market burned down in an accidental fire",
-              "Jeon Tae-il, 22, self-immolated at the Peace Market beside a burning copy of the Labor Standards Act, dying that evening",
-              "Park Chung-hee was assassinated",
-              "The FKTU was founded",
+              "The Peace Market burned down in an accidental attic fire",
+              "Jeon Tae-il self-immolated at the Peace Market, dying that night",
+              "Park Chung-hee was assassinated by his intelligence chief",
+              "The FKTU was founded as the country's sole legal federation",
             ],
             correctIndex: 1,
             explanation:
@@ -519,10 +519,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "How does the course source Jeon Tae-il's famous last words ('We are not machines!')?",
             options: [
-              "From a police audio recording",
-              "As witness-remembered cries passed down through fellow workers' accounts, assembled in Cho Young-rae's clandestinely written biography (published 1983), with wording varying slightly across tellings",
-              "From Jeon's own published memoir",
-              "From a live television broadcast",
+              "From a police audio recording made at the scene that day",
+              "As witness-remembered cries in Cho Young-rae's 1983 biography",
+              "From Jeon Tae-il's own memoir, published shortly before 1970",
+              "From a live national television broadcast of the protest",
             ],
             correctIndex: 1,
             explanation:
@@ -532,10 +532,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What was the 'Fools' Society' (Babohoe)?",
             options: [
-              "A government propaganda troupe",
-              "Jeon Tae-il's small group of fellow tailors, 'fools' for having worked years without knowing their legal rights, who surveyed Peace Market workers and petitioned officials",
-              "A student drama club",
-              "An employers' association",
+              "A government propaganda troupe touring the export factories",
+              "Jeon's small group of tailors who surveyed Peace Market workers",
+              "A student drama club at Seoul National University in the 1960s",
+              "An employers' association of Peace Market workshop owners",
             ],
             correctIndex: 1,
             explanation:
@@ -545,10 +545,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What did Jeon Tae-il's death fuse together that the dictatorship had kept apart?",
             options: [
-              "The army and the police",
-              "Workers and students, a generation of students turned toward factories and labor organizing, citing a 'debt to Jeon Tae-il'",
-              "The two Koreas",
-              "Business and government",
+              "The army and the national police into one security command",
+              "Workers and students, a generation turned toward the factories",
+              "The two Koreas, briefly, in joint mourning for a young worker",
+              "Business and government, in the new export planning councils",
             ],
             correctIndex: 1,
             explanation:
@@ -558,10 +558,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Who founded the Cheonggye Garment Workers' Union, and when?",
             options: [
-              "The government, in 1953",
-              "Peace Market workers with Jeon Tae-il's mother Lee So-sun presiding, within about two weeks of his November 1970 death",
-              "The FKTU, in 1961",
-              "Foreign missionaries, in 1980",
+              "The government, in 1953, together with the Labor Standards Act",
+              "Peace Market workers with Lee So-sun presiding, in November 1970",
+              "The FKTU, in 1961, on orders from the new military government",
+              "Foreign missionaries, in 1980, at the Yeongdeungpo urban mission",
             ],
             correctIndex: 1,
             explanation:
@@ -571,10 +571,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Which workers kept independent unionism alive through the 1970s, per the course?",
             options: [
-              "Heavy-industry men in Ulsan",
-              "The young women of the textile, garment, electronics and wig factories",
-              "Civil servants",
-              "Bank clerks",
+              "Heavy-industry men in the Ulsan shipyards and auto plants",
+              "Young women in the textile, garment and electronics factories",
+              "Civil servants in the ministries and the provincial offices",
+              "Bank clerks in the Seoul financial district's head offices",
             ],
             correctIndex: 1,
             explanation:
@@ -584,10 +584,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What happened at Dongil Textile on 22 February 1978?",
             options: [
-              "The union won a landmark wage agreement",
-              "Company-side men attacked women unionists arriving to vote, smearing them with human excrement; over a hundred resisters were later fired and blacklisted",
-              "The factory closed for renovation",
-              "The women's union merged with the FKTU by choice",
+              "The union won a landmark wage agreement after a short strike",
+              "Company-side men smeared women unionists with human excrement",
+              "The factory closed for renovation and never reopened its doors",
+              "The women's union voted freely to merge into the state's FKTU",
             ],
             correctIndex: 1,
             explanation:
@@ -597,10 +597,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Who was Kim Kyung-suk?",
             options: [
-              "Park Chung-hee's intelligence chief",
-              "A 21-year-old YH Trading union officer who fell to her death during the 11 August 1979 police raid on the opposition party headquarters sit-in",
-              "Korea's first female labor minister",
-              "The founder of the FKTU",
+              "Park Chung-hee's intelligence chief through the Yushin years",
+              "A young YH Trading unionist who died in the 1979 police raid",
+              "Korea's first female labor minister, appointed in the 1980s",
+              "The founder of the FKTU and its president through the 1960s",
             ],
             correctIndex: 1,
             explanation:
@@ -611,9 +611,9 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
             prompt: "How does the course handle the claim that the YH strike 'toppled the dictator'?",
             options: [
               "It asserts the strike single-handedly caused the assassination",
-              "It teaches the documented sequence, sit-in, raid, death, expulsion, uprising, assassination, while noting historians debate the exact causal weights",
-              "It denies any connection between the events",
-              "It says the CIA organized the strike",
+              "It teaches the documented sequence while noting debated weights",
+              "It denies any connection between the sit-in and the shooting",
+              "It says the American CIA organized and funded the YH strike",
             ],
             correctIndex: 1,
             explanation:
@@ -623,10 +623,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Why does the course insist on placing the women's history of the 1970s at the center rather than the edge?",
             options: [
-              "Because no men worked in Korean factories",
-              "Because the movement's founding generation was female, and that inheritance becomes the measuring stick for judging the movement's later treatment of today's disproportionately female non-regular workforce",
-              "Because the government mandated gender quotas in unions",
-              "Because women's wages were higher than men's",
+              "Because no men worked in Korean factories before the 1980s",
+              "Because the founding generation was female, and sets the yardstick",
+              "Because the government mandated gender quotas inside all unions",
+              "Because women's factory wages were higher than men's until 1987",
             ],
             correctIndex: 1,
             explanation:
@@ -720,10 +720,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What did the June 29 Declaration of 1987 concede?",
             options: [
-              "Korea's exit from the UN",
-              "Direct presidential elections and restored civil liberties, capitulating to the June Democratic Uprising",
-              "The dissolution of the chaebol",
-              "An immediate 30% national wage rise",
+              "Korea's withdrawal from the United Nations and the Olympics",
+              "Direct presidential elections and restored civil liberties",
+              "The dissolution of the chaebol and sale of their subsidiaries",
+              "An immediate 30% national wage rise for all factory workers",
             ],
             correctIndex: 1,
             explanation:
@@ -733,10 +733,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What are the commonly cited tallies of the Great Workers' Struggle?",
             options: [
-              "About 100 strikes involving 10,000 workers",
-              "More than 3,300 labor disputes involving roughly 1.2 million workers in about three months (July-September 1987)",
-              "One general strike lasting one day",
-              "Ten thousand strikes over ten years",
+              "About 100 strikes involving some 10,000 workers over two years",
+              "Over 3,300 disputes and 1.2 million workers in three months",
+              "One general strike of a single day involving 50,000 workers",
+              "About 10,000 strikes spread evenly across the entire 1980s",
             ],
             correctIndex: 1,
             explanation:
@@ -746,10 +746,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Where did the 1987 strike wave ignite?",
             options: [
-              "The Peace Market in Seoul",
-              "The Hyundai complexes of Ulsan, the dictatorship's showcase heavy-industry city",
-              "Jeju Island's tourist hotels",
-              "The Busan fish markets",
+              "The Peace Market garment workshops in the center of Seoul",
+              "The Hyundai complexes of Ulsan, the heavy-industry city",
+              "The tourist hotels and resorts of Jeju Island's south coast",
+              "The Busan fish markets and the docks along the south harbor",
             ],
             correctIndex: 1,
             explanation:
@@ -759,10 +759,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Besides wage rises of commonly 25-30%, what did 1987's strikers win that the course weights most heavily?",
             options: [
-              "Stock options",
-              "The union itself, thousands of new plant-level unions, plus the end of military-style factory discipline",
-              "A four-day work week",
-              "Free housing",
+              "Stock options in the chaebol's newly listed subsidiaries",
+              "The union itself, thousands of new unions at plant level",
+              "A four-day working week written into the labor statute",
+              "Free company housing for every married factory employee",
             ],
             correctIndex: 1,
             explanation:
@@ -772,10 +772,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "How do the causal arrows of Poland 1980 and Korea 1987 differ?",
             options: [
-              "They are identical",
-              "Poland: union first, democratization followed (1989). Korea: democratic opening first (June 1987), then workers poured through it within weeks",
-              "Poland: democracy first; Korea: union first",
-              "Neither involved unions",
+              "They are identical, both had the union arrive years first",
+              "Poland: union first, then democracy. Korea: democracy first",
+              "Poland: democracy first in 1980; Korea: union first in 1987",
+              "Neither involved unions in the democratic breakthrough at all",
             ],
             correctIndex: 1,
             explanation:
@@ -785,10 +785,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What happened between Park's assassination (1979) and the 1987 breakthrough?",
             options: [
-              "Immediate democratization",
-              "Another general, Chun Doo-hwan, seized power, crushed the May 1980 Gwangju uprising, and continued the labor regime of the 1970s",
-              "A decade of union-led government",
-              "Korea left the export economy behind",
+              "Immediate democratization under a civilian caretaker government",
+              "Another general, Chun Doo-hwan, seized power and crushed Gwangju",
+              "A decade of union-led coalition governments based in Seoul",
+              "Korea abandoned its export economy for domestic demand alone",
             ],
             correctIndex: 1,
             explanation:
@@ -798,10 +798,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What is a chaebol?",
             options: [
-              "A government ministry",
-              "A family-controlled conglomerate spanning dozens of legally separate subsidiaries, Samsung, Hyundai, LG, SK, deliberately built by the developmental state",
-              "A type of labor union",
-              "A Buddhist monastery",
+              "A government ministry that plans and finances export industry",
+              "A family-controlled conglomerate of dozens of separate firms",
+              "A type of labor union organized across an entire industry",
+              "A Buddhist monastery order that owns commercial property",
             ],
             correctIndex: 1,
             explanation:
@@ -811,10 +811,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Which anchor-course pattern is the Korean chaebol enterprise union closest to?",
             options: [
-              "The Nordic sectoral union",
-              "The Japanese enterprise union, but on bigger, more confrontational firms without Japan's accommodation tradition",
-              "The German works council",
-              "The Polish inter-factory committee",
+              "The Nordic sectoral union bargaining for a whole industry",
+              "The Japanese enterprise union, on bigger and harsher firms",
+              "The German works council elected by a plant's whole staff",
+              "The Polish inter-factory strike committee of August 1980",
             ],
             correctIndex: 1,
             explanation:
@@ -832,10 +832,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "Why was the KCTU illegal from its founding in 1995 until 1999?",
             options: [
-              "Its leaders were foreign nationals",
-              "Korean law then permitted only one national labor center, and the FKTU held the slot",
-              "It refused to register paperwork",
-              "It advocated the violent overthrow of the state",
+              "Its leaders were foreign nationals barred from holding office",
+              "Korean law then allowed only one national center, the FKTU's",
+              "It refused to file the registration paperwork with the ministry",
+              "It advocated the violent overthrow of the constitutional state",
             ],
             correctIndex: 1,
             explanation:
@@ -845,10 +845,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "How do the FKTU and KCTU compare in size and character today?",
             options: [
-              "The FKTU is ten times larger and more militant",
-              "They are nearly equal, each roughly 1.1 million members (KCTU: 1,086,618 at end-2023, MOEL), with the FKTU more moderate and the KCTU more militant and political",
-              "The KCTU absorbed the FKTU in 2005",
-              "Both dissolved in the 1997 crisis",
+              "The FKTU is ten times larger and by far the more militant",
+              "Nearly equal, about 1.1 million each, FKTU the more moderate",
+              "The KCTU absorbed the FKTU in a 2005 unification congress",
+              "Both dissolved during the 1997 crisis and never re-formed",
             ],
             correctIndex: 1,
             explanation:
@@ -858,10 +858,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What was 'eoyong' unionism?",
             options: [
-              "A militant strike tactic",
-              "The militants' term for state-tamed, 'kept' company unionism, the charge long aimed at the dictatorship-era FKTU",
-              "A form of profit-sharing",
-              "A Japanese management import",
+              "A militant strike tactic of occupying the plant overnight",
+              "The militants' term for state-tamed, 'kept' company unionism",
+              "A form of profit-sharing paid as an annual factory bonus",
+              "A Japanese management import for quality-control circles",
             ],
             correctIndex: 1,
             explanation:
@@ -871,10 +871,10 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
           {
             prompt: "What provoked the winter 1996-97 general strike, and what came of it?",
             options: [
-              "A pay dispute at one bakery; nothing changed",
-              "The government rammed labor-law revisions (including easier layoffs) through a dawn session with no opposition present; the biggest strike wave since 1987 forced renegotiation, and the laws were re-passed in March 1997 as TULRAA",
-              "An oil shock; the government fell",
-              "A soccer defeat; a national holiday was created",
+              "A pay dispute at one bakery chain, and nothing at all changed",
+              "The government rammed labor-law revisions through a dawn session",
+              "An oil shock that emptied the refineries; the government fell",
+              "An away World Cup defeat, which created a new national holiday",
             ],
             correctIndex: 1,
             explanation:
@@ -898,9 +898,9 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
             prompt: "Why does the course say 1987 'planted the seed' of the problem taught in Section 4?",
             options: [
               "Because 1987's unions banned women from membership by statute",
-              "Because the movement was rebuilt around the strongest workers of the biggest firms, chaebol enterprise unions, and would one day have to answer for everyone outside those gates",
-              "Because the strikes bankrupted the country",
-              "Because the unions abolished the minimum wage",
+              "Because it rebuilt the movement around the biggest firms' workers",
+              "Because the strike wave bankrupted the country's export sector",
+              "Because the new unions abolished the statutory minimum wage",
             ],
             correctIndex: 1,
             explanation:
@@ -1039,10 +1039,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "What happened on 3 December 1997?",
             options: [
-              "Korea hosted the Olympics",
-              "Korea signed its letter of intent for an IMF-led rescue package of roughly $58 billion, then the largest ever assembled, with labor-flexibility conditions attached",
-              "The KCTU was founded",
-              "Korea left the OECD",
+              "Korea hosted the Olympics and opened its economy to imports",
+              "Korea signed its letter of intent for a $58 billion IMF rescue",
+              "The KCTU was founded at a congress in Seoul that same December",
+              "Korea left the OECD after less than two years of membership",
             ],
             correctIndex: 1,
             explanation:
@@ -1052,10 +1052,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "What two legal tools did the February 1998 tripartite bargain hand employers?",
             options: [
-              "Layoffs for 'urgent managerial necessity' and legalized dispatch (temp-agency) work",
-              "A strike ban and wage controls",
-              "Import tariffs and tax cuts",
-              "Nothing, employers got no concessions",
+              "Layoffs for 'urgent managerial necessity' and dispatch work",
+              "A total strike ban and centrally administered wage controls",
+              "Import tariffs on consumer goods and deep corporate tax cuts",
+              "Nothing at all, since employers won no concessions in the pact",
             ],
             correctIndex: 0,
             explanation:
@@ -1065,10 +1065,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "How did the KCTU's rank and file respond to their leadership signing the 1998 pact?",
             options: [
-              "With a celebration rally",
-              "They revolted, voted the pact down, and forced the leadership's resignation, though the deal stood and the laws passed",
-              "They ignored it",
-              "They defected to the FKTU en masse",
+              "With a celebration rally held outside the National Assembly",
+              "They revolted, voted it down, and forced leaders to resign",
+              "They ignored it and carried on with plant-level bargaining",
+              "They defected to the FKTU en masse over the following year",
             ],
             correctIndex: 1,
             explanation:
@@ -1078,10 +1078,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "Why does the course rate the post-1997 restructuring as more effective against worker power than the dictatorship's police?",
             options: [
-              "It wasn't, the police were more effective",
-              "Because it never attacked the 1987 unions frontally: it grew a second, cheaper workforce around them, outside their walls, with no one beaten or jailed",
-              "Because it abolished unions by statute",
-              "Because it deported union leaders",
+              "It wasn't, the dictatorship's police were far more effective",
+              "Because it grew a cheaper second workforce outside their walls",
+              "Because it abolished the enterprise unions by statute in 1998",
+              "Because it deported the union leadership to remote provinces",
             ],
             correctIndex: 1,
             explanation:
@@ -1092,9 +1092,9 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
             prompt: "What share and number of Korean wage workers were non-regular in August 2025?",
             options: [
               "38.2%, 8.57 million (Statistics Korea)",
-              "10%, 2 million",
-              "62%, 14 million",
-              "25%, 5 million",
+              "10.4%, 2.31 million (Statistics Korea)",
+              "62.5%, 14.0 million (Statistics Korea)",
+              "25.1%, 5.62 million (Statistics Korea)",
             ],
             correctIndex: 0,
             explanation:
@@ -1104,10 +1104,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "What rhythm did Korea's 2007 two-year conversion rule for fixed-term contracts create in practice?",
             options: [
-              "Automatic permanent conversion for everyone",
-              "Terminations clustering around month 23, just before conversion would be owed",
-              "Ten-year contracts",
-              "The abolition of fixed-term work",
+              "Automatic permanent conversion for nearly every fixed-term hire",
+              "Terminations clustering at month 23, just before conversion",
+              "Ten-year contracts became the standard in export manufacturing",
+              "The gradual abolition of fixed-term work in the public sector",
             ],
             correctIndex: 1,
             explanation:
@@ -1117,10 +1117,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "What is distinctive about 'specially employed' workers like owner-operator truck drivers?",
             options: [
-              "They earn the highest wages in Korea",
-              "They are treated in law as self-employed businesses, no employer to bargain with by definition, and collective action that may not legally count as a strike",
-              "They are all foreign nationals",
-              "They are automatically union members",
+              "They earn the highest hourly wages of any group in the country",
+              "They are treated in law as self-employed businesses, not workers",
+              "They are almost all foreign nationals holding work-permit visas",
+              "They are enrolled in a union automatically when they register",
             ],
             correctIndex: 1,
             explanation:
@@ -1130,10 +1130,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "What have Korean courts repeatedly found about major manufacturers' in-house subcontracting?",
             options: [
-              "That it is always lawful",
-              "That much of it amounts to disguised illegal dispatch, contractor crews working inside the principal's plant under its direction",
-              "That it does not exist",
-              "That it only occurs in agriculture",
+              "That it is always lawful, whoever directs the contractor's crew",
+              "That much of it amounts to disguised illegal dispatch of labor",
+              "That it does not exist in Korea's shipyards and auto plants",
+              "That it occurs only in agriculture and seasonal food work",
             ],
             correctIndex: 1,
             explanation:
@@ -1145,7 +1145,7 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
             options: [
               "Mid-career male chaebol engineers",
               "Women, the young, and the old",
-              "Government ministers",
+              "Senior civil servants and judges",
               "It is distributed perfectly evenly",
             ],
             correctIndex: 1,
@@ -1156,10 +1156,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "Why does the course say 'no conspiracy is needed' to explain the unions' role in the divide?",
             options: [
-              "Because there was a proven conspiracy",
-              "Because the enterprise-union form itself makes defending the regular core rational, subcontract and fixed-term workers simply aren't in the bargaining unit",
-              "Because unions had no role at all",
-              "Because the government ordered unions to exclude the non-regular workforce",
+              "Because a documented conspiracy between unions and employers",
+              "Because the enterprise-union form makes defending the core pay",
+              "Because the unions had no role at all in building the divide",
+              "Because the government ordered unions to exclude those workers",
             ],
             correctIndex: 1,
             explanation:
@@ -1169,10 +1169,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "How did the KTX attendants' twelve-year fight end?",
             options: [
-              "In defeat, with no jobs recovered",
-              "With a 2018 agreement returning the dismissed women to direct employment",
-              "With criminal convictions of the attendants",
-              "With the abolition of Korea's railways",
+              "In defeat, with none of the dismissed women getting jobs back",
+              "With a 2018 deal returning the dismissed women to direct hire",
+              "With criminal convictions and suspended sentences for the women",
+              "With the sale of the KTX line to a private operating company",
             ],
             correctIndex: 1,
             explanation:
@@ -1182,10 +1182,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "What organizational forms have irregular and specially-employed workers used to organize, and why?",
             options: [
-              "Enterprise unions, because the form suited them",
-              "Direct-membership, industrial and regional unions, because the enterprise-union form had no room for workers whose employer is absent, temporary or nominal",
-              "Political parties only",
-              "They have never organized",
+              "Enterprise unions, because that form suited their workplaces",
+              "Direct-membership, industrial and regional unions, of necessity",
+              "Political parties alone, since the unions were closed to them",
+              "None at all, they have never organized in any form to date",
             ],
             correctIndex: 1,
             explanation:
@@ -1195,10 +1195,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "How does the course characterize the federations' turn toward irregular workers?",
             options: [
-              "Complete and finished decades ago",
-              "Real but partial and recent, union density among non-regular workers remains far below that of regular workers, and the change was forced substantially from below",
-              "Nonexistent",
-              "Imposed by the employers",
+              "Complete and finished decades ago, back in the early 1990s",
+              "Real but partial and recent, forced substantially from below",
+              "Nonexistent, the federations have never addressed the issue",
+              "Imposed by the employers as a condition of the 1998 pact",
             ],
             correctIndex: 1,
             explanation:
@@ -1208,10 +1208,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "Which anchor-course chapter does Korea's blind-spot lesson parallel?",
             options: [
-              "The anchor's lesson on American unions' own exclusion history, Black workers, women, the 1935 carve-outs",
-              "The anchor's Haymarket lesson",
-              "The anchor's ILO lesson",
-              "The anchor's PATCO lesson",
+              "The anchor's chapter on US unions' own exclusion history",
+              "The anchor's Haymarket chapter on the eight-hour movement",
+              "The anchor's ILO chapter on the floor that is made of paper",
+              "The anchor's PATCO chapter on the air controllers' strike",
             ],
             correctIndex: 0,
             explanation:
@@ -1221,10 +1221,10 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
           {
             prompt: "What single sentence does the course offer as the summary of Section 4?",
             options: [
-              "When a labor system looks strong but four workers in ten stand outside its walls, the walls are the story",
-              "Non-regular work is a myth",
-              "The IMF saved Korean unions",
-              "Enterprise unions cover everyone eventually",
+              "When four workers in ten stand outside, the walls are the story",
+              "Non-regular work is a myth invented by the KCTU's economists",
+              "The IMF's 1997 rescue saved Korean unions from a worse fate",
+              "Enterprise unions end up covering everyone in the country anyway",
             ],
             correctIndex: 0,
             explanation:
@@ -1358,10 +1358,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "How did the 77-day Ssangyong plant occupation of 2009 end?",
             options: [
-              "With a negotiated win for the union",
-              "With police commandos rappelling from helicopters onto the factory roof in August 2009, the occupation broken, the ~2,600 layoffs standing",
-              "With the government nationalizing the company",
-              "With the strike simply fading out",
+              "With a negotiated win for the union and no compulsory layoffs",
+              "With police commandos landing on the roof, the layoffs standing",
+              "With the government nationalizing the whole company that autumn",
+              "With the strike simply fading out over the following winter",
             ],
             correctIndex: 1,
             explanation:
@@ -1371,10 +1371,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "Who sued the Ssangyong strikers after 2009?",
             options: [
-              "No one, the matter ended with the strike",
-              "The company, its insurer, AND the state (police damages, including a helicopter), against the union and individual workers",
-              "Only foreign shareholders",
-              "Only the city of Pyeongtaek",
+              "No one at all, since the matter ended when the occupation broke",
+              "The company, its insurer, and the state, including the police",
+              "Only the foreign shareholders of the Shanghai parent company",
+              "Only the city of Pyeongtaek, for damage to public property",
             ],
             correctIndex: 1,
             explanation:
@@ -1384,10 +1384,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "What is provisional seizure (gapryu)?",
             options: [
-              "A criminal sentence after conviction",
-              "A court order freezing wages, severance and homes while litigation runs, before any final judgment",
-              "A tax audit",
-              "A form of workplace suspension",
+              "A criminal sentence imposed after a conviction for rioting",
+              "A court order freezing wages and homes before final judgment",
+              "A tax audit of a union's accounts ordered by the finance ministry",
+              "A form of workplace suspension pending an internal inquiry",
             ],
             correctIndex: 1,
             explanation:
@@ -1397,10 +1397,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "What human toll did Korean media count among Ssangyong's laid-off workers and families by 2018?",
             options: [
-              "None",
-              "Around thirty deaths, suicides prominent among them, alongside stress-linked illness (counts vary with period and definition)",
-              "Three injuries",
-              "Exactly one hundred deaths, officially certified",
+              "None at all, according to every count published since 2009",
+              "Around thirty deaths, suicides prominent among them by 2018",
+              "Three injuries and no deaths in the decade after the strike",
+              "Exactly one hundred deaths, officially certified by the state",
             ],
             correctIndex: 1,
             explanation:
@@ -1410,10 +1410,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "What did Korea's Supreme Court do in June 2023 regarding Ssangyong?",
             options: [
-              "It increased the damages award tenfold",
-              "It overturned the award against the metalworkers' union, ruling payments to returning workers couldn't count as strike losses, cutting the principal by about a third, thirteen-plus years after the strike",
-              "It jailed the union's leadership",
-              "It abolished damages suits entirely",
+              "It increased the damages award against the union tenfold again",
+              "It overturned the damages award against the metalworkers' union",
+              "It jailed the union's national leadership for eighteen months",
+              "It abolished anti-strike damages suits throughout Korean law",
             ],
             correctIndex: 1,
             explanation:
@@ -1423,10 +1423,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "Why are Korea's owner-operator truckers outside TULRAA's protections?",
             options: [
-              "Because trucking is a state secret",
-              "Because they are legally classed as self-employed businesses, not 'workers', so their collective action is not legally a strike",
-              "Because they refused to register their union",
-              "Because they are mostly foreign nationals",
+              "Because trucking routes are classified as a national secret",
+              "Because they are classed in law as self-employed businesses",
+              "Because they refused to register their union with the ministry",
+              "Because they are mostly foreign nationals on temporary visas",
             ],
             correctIndex: 1,
             explanation:
@@ -1436,10 +1436,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "What was the Safe Trucking Freight Rates System?",
             options: [
-              "A speed-limit law",
-              "A 2020 minimum freight-rate scheme for container and cement haulage, so drivers needn't overload and overdrive to survive, with a three-year sunset at end-2022",
-              "A fuel subsidy",
-              "A truck-safety inspection regime",
+              "A speed-limit law for heavy goods vehicles on the expressways",
+              "A 2020 minimum freight-rate scheme with a sunset at end-2022",
+              "A diesel fuel subsidy paid to every owner-operator trucker",
+              "A truck-safety inspection regime run by the transport ministry",
             ],
             correctIndex: 1,
             explanation:
@@ -1449,10 +1449,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "What unprecedented step did the government take on 29 November 2022?",
             options: [
-              "It nationalized the ports",
-              "It issued the first-ever return-to-work orders under the Trucking Transport Business Act (on the books since 2004), ~2,500 cement haulers, with up to 3 years' prison or a 30 million won fine for defiance",
-              "It granted all the strikers' demands",
-              "It dissolved the KCTU",
+              "It nationalized the container ports and the rail freight yards",
+              "It issued the first-ever return-to-work orders under the 2004 Act",
+              "It granted the strikers' demands and made the rates permanent",
+              "It dissolved the KCTU and seized the federation's bank accounts",
             ],
             correctIndex: 1,
             explanation:
@@ -1462,10 +1462,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "How does the course present the ILO dispute over the truckers' return-to-work orders?",
             options: [
-              "As settled in the government's favor",
-              "As settled in the unions' favor",
-              "Both positions stated, union complaints under the newly ratified conventions vs. the government's 'regulation of business operators' defense, with the matter live before ILO bodies as of mid-2026, status to be checked",
-              "As a hoax",
+              "As settled in the government's favor by ILO bodies in 2023",
+              "As settled in the unions' favor by ILO bodies during 2023",
+              "Both positions stated, with the matter live as of mid-2026",
+              "As a hoax circulated by the foreign trade-union federations",
             ],
             correctIndex: 2,
             explanation:
@@ -1475,10 +1475,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "Where does the name 'yellow envelope law' come from?",
             options: [
-              "The color of the National Assembly's voting slips",
-              "A 2013-14 campaign in which citizens, starting with one 47,000-won donation in a yellow pay envelope, gave ~1.5 billion won to help Ssangyong workers pay court-ordered damages",
-              "A postal regulation",
-              "The uniform color of delivery riders",
+              "The color of the National Assembly's printed voting slips",
+              "A 2013-14 donation drive, cash sent in yellow pay envelopes",
+              "A postal regulation on how legal notices must be delivered",
+              "The uniform color worn by Korea's platform delivery riders",
             ],
             correctIndex: 1,
             explanation:
@@ -1488,10 +1488,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "Which THREE changes make up the yellow envelope law's core package?",
             options: [
-              "A minimum wage rise, a pension reform, and a tax credit",
-              "Broadened 'employer' (substantial control test), broadened lawful dispute scope, and individualized apportionment of strike damages ending blanket joint-and-several liability",
-              "A strike ban, a union subsidy, and a tariff",
-              "Nationalization of subcontractors",
+              "A minimum wage rise, a pension reform and a payroll tax credit",
+              "Broader 'employer', broader lawful disputes, and split damages",
+              "A strike ban, a union subsidy and a tariff on imported steel",
+              "Nationalization of subcontractors in shipbuilding and autos",
             ],
             correctIndex: 1,
             explanation:
@@ -1501,10 +1501,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "What is the dated legislative history of the yellow envelope law?",
             options: [
-              "Passed once in 1997 and never contested",
-              "Passed Nov 2023 (vetoed), passed Aug 2024 (vetoed), passed 24 Aug 2025 by 183-3 after Korea's political crisis and change of government, signed, effective March 2026",
-              "Rejected by every National Assembly vote to date",
-              "Adopted by referendum in 2010",
+              "Passed once in 1997 and never seriously contested since then",
+              "Passed Nov 2023 and Aug 2024 (both vetoed), then 24 Aug 2025",
+              "Rejected at every National Assembly vote taken to this day",
+              "Adopted by national referendum in 2010 and in force since",
             ],
             correctIndex: 1,
             explanation:
@@ -1514,10 +1514,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "What does the course assert about the yellow envelope law's real-world effects?",
             options: [
-              "That it destroyed the Korean economy",
-              "That it ended all labor disputes",
-              "Nothing, as of mid-2026 the law had been in force only months, courts had barely begun interpreting it, and the course states text and dates while refusing predictions",
-              "That it was repealed immediately",
+              "That it has already destroyed Korea's export manufacturing",
+              "That it has ended labor disputes at the chaebol altogether",
+              "Nothing yet, it is months old and its effects are untested",
+              "That it was repealed within weeks of taking effect in 2026",
             ],
             correctIndex: 2,
             explanation:
@@ -1527,10 +1527,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "How do Korea's two modern repression mechanisms bracket the workforce, per the course?",
             options: [
-              "Both apply only to civil servants",
-              "A 'worker' striking illegally faces the damages suit (Ssangyong); a 'non-worker' striking faces criminalized defiance of administrative orders (truckers), the legal category selects the weapon",
-              "Neither mechanism still exists",
-              "Both were invented by the dictatorship in 1972",
+              "Both apply only to civil servants and public-sector workers",
+              "A 'worker' faces the damages suit; a 'non-worker' faces orders",
+              "Neither mechanism still exists after the 2021 ratification",
+              "Both were invented by the dictatorship's 1972 emergency law",
             ],
             correctIndex: 1,
             explanation:
@@ -1540,10 +1540,10 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
           {
             prompt: "Why does the course call the damages suit 'a colder instrument' than the dictatorship's policeman, and harder to abolish?",
             options: [
-              "Because it is faster than a police raid",
-              "Because it ruins without jailing and wears the clothes of ordinary civil law, 'who could object to a company recovering its losses?', so dismantling it took a decade-long political fight",
-              "Because judges are colder people than police officers",
-              "Because it only applies in winter",
+              "Because it works faster than a police raid on a picket line",
+              "Because it ruins without jailing, dressed as ordinary civil law",
+              "Because judges are colder people than ordinary police officers",
+              "Because it applies only during the winter bargaining season",
             ],
             correctIndex: 1,
             explanation:
@@ -1649,7 +1649,7 @@ Three readings, and then the skill.
           {
             prompt: "Under Article 6(1) of Korea's constitution, what legal force do the ratified ILO conventions carry?",
             options: [
-              "None, they are symbolic",
+              "None, they are purely symbolic",
               "The same effect as domestic statute",
               "They override the constitution itself",
               "They apply only to foreign companies",
@@ -1662,10 +1662,10 @@ Three readings, and then the skill.
           {
             prompt: "What rule long made firing a Korean union organizer doubly effective?",
             options: [
-              "Organizers had to repay their training costs",
-              "Union members had to be employees, so a dismissed worker lost union membership, and firing an organizer expelled him from the union he led",
-              "Organizers were banned from re-employment for life",
-              "Unions had to disband if any member was fired",
+              "Organizers had to repay their union's training costs if fired",
+              "Only current employees could be members, so firing expelled him",
+              "Organizers were banned from re-employment anywhere for ten years",
+              "A union had to disband if any of its own members was dismissed",
             ],
             correctIndex: 1,
             explanation:
@@ -1675,10 +1675,10 @@ Three readings, and then the skill.
           {
             prompt: "What did the early-2021 TULRAA amendments change?",
             options: [
-              "They abolished the minimum wage",
-              "Dismissed and unemployed workers may join unions, with loosened restrictions on union office and public-sector organizing, aligning the law enough to ratify the ILO conventions",
-              "They banned enterprise unions",
-              "They privatized the railways",
+              "They abolished the statutory minimum wage at the small firms",
+              "Dismissed and unemployed workers may now join a trade union",
+              "They banned enterprise unions in favor of industrial ones",
+              "They privatized the railways and split up the rail union",
             ],
             correctIndex: 1,
             explanation:
@@ -1688,10 +1688,10 @@ Three readings, and then the skill.
           {
             prompt: "How does the course read Korea's thirty-year ratification delay?",
             options: [
-              "As bureaucratic forgetfulness",
-              "As proof the paper floor matters: states don't spend three decades avoiding meaningless documents, ratifying meant dismantling defended features of Korean law",
-              "As an ILO clerical error",
-              "As irrelevant trivia",
+              "As bureaucratic forgetfulness inside a busy foreign ministry",
+              "As proof the paper floor matters, since states defend real law",
+              "As an ILO clerical error that was discovered only in 2021",
+              "As irrelevant trivia with no bearing at all on Korean law",
             ],
             correctIndex: 1,
             explanation:
@@ -1702,9 +1702,9 @@ Three readings, and then the skill.
             prompt: "What is Korea's union density, dated and sourced?",
             options: [
               "13.1% (2022, Ministry of Employment and Labor)",
-              "38.2% (2025, Statistics Korea)",
-              "49% (2024, OECD)",
-              "65% (2022, ILO)",
+              "38.2% (2025, Statistics Korea labor survey)",
+              "49.0% (2024, OECD Employment Outlook series)",
+              "65.0% (2022, ILO industrial relations data)",
             ],
             correctIndex: 0,
             explanation:
@@ -1714,10 +1714,10 @@ Three readings, and then the skill.
           {
             prompt: "Korea and Germany have similar union density. Why is Korea's bargaining coverage (~14.8%, 2018, OECD/AIAS) a third of Germany's?",
             options: [
-              "Korean unions refuse to bargain",
-              "Enterprise-level bargaining plus no extension mechanism: every agreement stays inside the company that signed it",
-              "German workers strike more often",
-              "Korea has no written labor law",
+              "Korean unions refuse on principle to bargain at sector level",
+              "Enterprise bargaining plus no extension mechanism in the law",
+              "German workers strike far more often than Korean workers do",
+              "Korea has no written labor law covering private employment",
             ],
             correctIndex: 1,
             explanation:
@@ -1727,10 +1727,10 @@ Three readings, and then the skill.
           {
             prompt: "Why does Korea, unlike the Nordic countries, fight a national statutory minimum-wage battle every year?",
             options: [
-              "Because Korean unions demanded the abolition of contracts",
-              "Because agreements can't spread beyond the signing firm, so the wage floor for everyone outside must be statutory",
-              "Because the IMF sets Korean wages",
-              "Because the constitution forbids collective agreements",
+              "Because Korean unions have demanded the abolition of contracts",
+              "Because agreements can't spread, so the floor must be statutory",
+              "Because the IMF still sets Korean wage levels every December",
+              "Because the constitution forbids collective wage agreements",
             ],
             correctIndex: 1,
             explanation:
@@ -1740,10 +1740,10 @@ Three readings, and then the skill.
           {
             prompt: "What does the course mean by 'a movement can be loud and small at the same time'?",
             options: [
-              "Korean unions have no members at all",
-              "The OECD's most strike-prone movement organizes about one worker in eight, headline militancy is the mobilization of a concentrated minority in chaebol plants and the public sector",
-              "Korean strikes are silent",
-              "Density is above 60%",
+              "Korean unions have no members at all outside the public sector",
+              "A strike-prone movement that organizes about one worker in eight",
+              "Korean strikes are silent, by long-standing legal requirement",
+              "Density is above 60%, the highest anywhere in the whole OECD",
             ],
             correctIndex: 1,
             explanation:
@@ -1753,10 +1753,10 @@ Three readings, and then the skill.
           {
             prompt: "What is Korea's 'signature,' per the course's final answer to the four questions?",
             options: [
-              "Every answer runs through a definition, worker, employer, lawful dispute, fought over sentence by sentence",
-              "Every answer runs through the monarchy",
-              "Every answer runs through foreign treaties alone",
-              "The four questions don't apply to Korea",
+              "Every answer runs through a legal definition of who counts",
+              "Every answer runs through the ruling party's labor committee",
+              "Every answer runs through foreign treaties and nothing else",
+              "The four questions do not apply to Korea's labor system at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1766,10 +1766,10 @@ Three readings, and then the skill.
           {
             prompt: "What third diagnostic tool does Korea add to the track's toolkit?",
             options: [
-              "Count the strike days per year",
-              "Find out what happens AFTER the strike ends, the lawsuits, liability rules, seizures, and whether the strikers were legally 'workers' at all",
-              "Measure the size of rallies",
-              "Read only the union's press releases",
+              "Count the strike days lost per thousand workers every year",
+              "Ask what happens AFTER the strike ends: suits and seizures",
+              "Measure the size of the rallies each federation can call out",
+              "Read only the union federations' own published press releases",
             ],
             correctIndex: 1,
             explanation:
@@ -1779,10 +1779,10 @@ Three readings, and then the skill.
           {
             prompt: "Which post-ratification disputes went to ILO supervisory bodies under the newly binding conventions?",
             options: [
-              "None, all disputes ended in 2021",
-              "The 2022 truckers' return-to-work orders and the anti-strike damages machinery, with proceedings still unfolding as of mid-2026",
-              "A dispute over K-pop royalties",
-              "A dispute over rice tariffs",
+              "None at all, since every dispute ended at ratification in 2021",
+              "The 2022 truckers' orders and the anti-strike damages suits",
+              "A dispute over K-pop royalties owed to backing musicians",
+              "A dispute over rice tariffs and farm-import quota levels",
             ],
             correctIndex: 1,
             explanation:
@@ -1792,10 +1792,10 @@ Three readings, and then the skill.
           {
             prompt: "Roughly how has Korean union density moved since 1989?",
             options: [
-              "Steadily up to 50%",
-              "From just under one in five (1989 peak) to below one in ten around 2010, then a partial recovery to 13.1% by 2022 (MOEL series)",
-              "Flat at 40% throughout",
-              "Down to 1%",
+              "Steadily upward from about 20% in 1989 to some 50% by 2022",
+              "From just under 20% in 1989 to below 10%, then 13.1% by 2022",
+              "Flat at roughly 40% throughout the whole period since 1989",
+              "Downward without pause, from about 20% in 1989 to near 1%",
             ],
             correctIndex: 1,
             explanation:
@@ -1805,10 +1805,10 @@ Three readings, and then the skill.
           {
             prompt: "The course says Korea's labor question in the 2020s is not 'will the unions win?' What is it?",
             options: [
-              "'Who is inside the category?', which is why the yellow envelope law aimed first at the definition of employer",
-              "'Which federation has the better logo?'",
-              "'Will strikes be replaced by robots?'",
-              "'Should Korea leave the ILO?'",
+              "'Who is inside the category?', the fight over definitions",
+              "'Which of the two federations has the better public logo?'",
+              "'Will strikes be replaced by robots on the assembly line?'",
+              "'Should Korea leave the ILO now that it has ratified C87?'",
             ],
             correctIndex: 0,
             explanation:
@@ -1818,10 +1818,10 @@ Three readings, and then the skill.
           {
             prompt: "Which courses does this one point you toward next, and why?",
             options: [
-              "The anchor's Japan lesson (Korea's enterprise-union family), Poland (democratization twin, arrow reversed), Germany (the coverage machine Korea lacks), and Know Your Rights at Work (your own workplace, today)",
-              "Only courses about East Asia",
-              "No other courses, Korea stands alone",
-              "The golf course",
+              "The Japan lesson, Poland, Germany, and Know Your Rights at Work",
+              "Only the other courses covering East Asian labor economies",
+              "No other course at all, since Korea's system stands alone",
+              "The Gulf kafala course and nothing else in the whole track",
             ],
             correctIndex: 0,
             explanation:
@@ -1831,10 +1831,10 @@ Three readings, and then the skill.
           {
             prompt: "What does the course assert about the March 2026 damages-law reform's effect on Question 4?",
             options: [
-              "It has already ended all damages suits",
-              "It curbs the weapon on paper, but its real effect is unproven as of this course's writing, dated, to be checked",
-              "It was repealed in April 2026",
-              "It doubled the damages available",
+              "It has already ended every damages suit brought against strikers",
+              "It curbs the weapon on paper, but its real effect is unproven",
+              "It was repealed in April 2026, only weeks after taking effect",
+              "It doubled the damages employers may claim after any strike",
             ],
             correctIndex: 1,
             explanation:

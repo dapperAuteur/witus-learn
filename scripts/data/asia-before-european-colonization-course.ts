@@ -145,10 +145,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "Where does the word 'Asia' come from?",
             options: [
-              "It is a Greek-derived term for lands east of the Aegean, later stretched to cover the whole continent; it was never a self-description",
-              "It is the ancient Chinese name for the lands west of the Pacific",
-              "It was coined by Mughal geographers in the 1500s",
-              "It comes from the Sanskrit word for 'sunrise'",
+              "A Greek term for the lands east of the Aegean; never a self-description",
+              "It is the ancient Chinese court name for the lands west of the Pacific",
+              "It was coined by Mughal geographers mapping the Deccan in the 1590s",
+              "It comes from the Sanskrit word for 'sunrise' recorded in the Rigveda",
             ],
             correctIndex: 0,
             explanation:
@@ -159,9 +159,9 @@ So here is the course's claim, stated with the discipline it will demand of ever
             prompt: "What is the one rule this course applies to every historical claim?",
             options: [
               "Name the civilization, the period, and the region; never say 'Asia did X'",
-              "Prefer the oldest available source",
-              "Trust population figures over trade figures",
-              "Always cite at least one European observer",
+              "Prefer the oldest available source over later scholarly reconstructions",
+              "Trust population figures over trade figures whenever the two conflict",
+              "Always cite at least one European observer to confirm an Asian source",
             ],
             correctIndex: 0,
             explanation:
@@ -171,10 +171,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "Why does the course insist that West Asia (the 'Middle East') belongs in Asian history?",
             options: [
-              "Because relabeling it out of Asia is a modern habit, and Baghdad's translation movement is part of this story",
-              "Because the Abbasids ruled China",
-              "Because Europe had no contact with it",
-              "Because it was the only literate zone of Asia",
+              "Because relabeling it out of Asia is modern, and Baghdad is part of this story",
+              "Because the Abbasids ruled China from Baghdad for most of the ninth century",
+              "Because Europe had no contact with it at all before the Crusades of 1096",
+              "Because it was the only literate zone of Asia before the Mongol conquests",
             ],
             correctIndex: 0,
             explanation:
@@ -185,9 +185,9 @@ So here is the course's claim, stated with the discipline it will demand of ever
             prompt: "Which zone does the course call 'the chapter most world-history surveys skip'?",
             options: [
               "Southeast Asia (Angkor, Srivijaya, Majapahit)",
-              "East Asia",
-              "South Asia",
-              "West Asia",
+              "East Asia (Tang China, Heian Japan, Goryeo Korea)",
+              "South Asia (Maurya, Gupta, Chola, Mughal states)",
+              "West Asia (Abbasid Baghdad, Ottoman Anatolia)",
             ],
             correctIndex: 0,
             explanation:
@@ -198,9 +198,9 @@ So here is the course's claim, stated with the discipline it will demand of ever
             prompt: "When did European territorial colonization of Asia's heartlands begin, on the usual dating?",
             options: [
               "With the East India Company's victory at Plassey in Bengal, 1757",
-              "With Vasco da Gama's arrival in 1498",
-              "With the fall of Constantinople in 1453",
-              "With the Opium War in 1839",
+              "With Vasco da Gama's landing at Calicut in Kerala in May 1498",
+              "With the Ottoman capture of Constantinople in 1453 closing the routes",
+              "With the First Opium War of 1839 and the treaty ports that followed",
             ],
             correctIndex: 0,
             explanation:
@@ -210,10 +210,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "Which of these Asian countries was colonized by a European power?",
             options: [
-              "None of these: Japan, Siam (Thailand), and Korea were never European colonies",
-              "Japan, by Portugal",
-              "Siam (Thailand), by France",
-              "Korea, by Britain",
+              "None of these: Japan, Siam, and Korea were never European colonies",
+              "Japan, by Portugal, which held Nagasaki as a colony from 1571 to 1639",
+              "Siam (Thailand), by France, which annexed it as a protectorate in 1893",
+              "Korea, by Britain, which ruled it from Port Hamilton after 1885",
             ],
             correctIndex: 0,
             explanation:
@@ -236,10 +236,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "How does the course say you should read Maddison's GDP figures?",
             options: [
-              "As attributed reconstructions with wide error bars, built from tax rolls and assumptions, and still being revised",
-              "As exact measurements from period surveys",
-              "As propaganda with no evidentiary value",
-              "As accurate for Europe but invented for Asia",
+              "As attributed reconstructions with wide error bars, still being revised",
+              "As exact measurements taken from surviving period government surveys",
+              "As pure propaganda with no evidentiary value for economic historians",
+              "As accurate for Europe but invented wholesale for the Asian figures",
             ],
             correctIndex: 0,
             explanation:
@@ -249,10 +249,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "What did Pomeranz (2000) argue in The Great Divergence?",
             options: [
-              "Advanced Chinese regions were broadly comparable to England as late as about 1750, and Europe's breakout was contingent on coal and New World resources",
-              "Europe had led the world economy since the Roman Empire",
-              "China never had market institutions",
-              "The divergence is a myth and never happened",
+              "Advanced Chinese regions were comparable to England as late as 1750",
+              "Europe had led the world economy continuously since the Roman Empire",
+              "China never developed market institutions or long-distance trade",
+              "The divergence is a myth that European statistics invented after 1900",
             ],
             correctIndex: 0,
             explanation:
@@ -262,10 +262,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "What is the main published challenge to Pomeranz's late dating taught in this course?",
             options: [
-              "Broadberry, Guan, and Li (2018) rebuilt the historical national accounts and place the divergence substantially earlier than 1750",
-              "There is none; the question is settled",
-              "Maddison (2007) proved the divergence began in 1492",
-              "Abu-Lughod (1989) showed Europe led by 1250",
+              "Broadberry, Guan, and Li (2018) date the divergence well before 1750",
+              "There is none; the question was settled by Maddison's 2007 revisions",
+              "Maddison (2007) proved the divergence began with Columbus in 1492",
+              "Abu-Lughod (1989) showed Europe already led the system by 1250",
             ],
             correctIndex: 0,
             explanation:
@@ -275,10 +275,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "Which direction did silver overwhelmingly flow in the early modern world economy, and why?",
             options: [
-              "Toward Asia, because Indian textiles, Chinese silk and porcelain, and Southeast Asian spices were what the world wanted to buy",
-              "Toward Europe, because Asia bought European manufactures",
-              "It circulated only inside the Americas",
-              "Toward Africa, to pay for gold",
+              "Toward Asia, because Indian textiles and Chinese silk were what sold",
+              "Toward Europe, because Asia bought European woolens and manufactures",
+              "It circulated only inside the Americas and never crossed the Pacific",
+              "Toward Africa, to pay for the gold that minted Europe's coinage",
             ],
             correctIndex: 0,
             explanation:
@@ -288,10 +288,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "What did Abu-Lughod (1989) map in Before European Hegemony?",
             options: [
-              "A thirteenth-century world system of interlocking trade circuits from Flanders to the South China Sea, with no single hegemon",
-              "The complete road network of the Mongol Empire",
-              "The GDP of every medieval state",
-              "The spread of the Black Death",
+              "A thirteenth-century world system of trade circuits with no hegemon",
+              "The complete road and relay network of the Mongol Empire after 1260",
+              "The GDP of every medieval state from Flanders to the South China Sea",
+              "The spread of the Black Death along the Eurasian caravan routes",
             ],
             correctIndex: 0,
             explanation:
@@ -301,10 +301,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "Which of these is an example of 'false precision' as the course defines it?",
             options: [
-              "'China produced exactly 28.4 percent of world GDP in the year 1000,' quoted with no author attached",
+              "'China produced exactly 28.4 percent of world GDP in the year 1000,' unsourced",
               "'Maddison's estimate puts China at roughly a third of world output in 1820'",
-              "'The timing of the divergence is contested among economic historians'",
-              "'Asia has held a large majority of world population for as long as demographers can reconstruct'",
+              "'The timing of the divergence is still contested among economic historians'",
+              "'Asia has held a large majority of world population for a very long time'",
             ],
             correctIndex: 0,
             explanation:
@@ -314,10 +314,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "Which part of the course's central claim does it call 'the sturdy part'?",
             options: [
-              "Asia's population majority: a large majority of the world's people, for as long as demographers can reconstruct",
-              "The exact GDP percentages",
-              "The claim that no Asian state ever declined",
-              "The claim that Europe was always poor",
+              "Asia's population majority, for as long as demographers can reconstruct",
+              "The exact GDP percentages Maddison assigns to each century and region",
+              "The claim that no Asian state ever declined or lost a war of conquest",
+              "The claim that Europe was always poor until the Industrial Revolution",
             ],
             correctIndex: 0,
             explanation:
@@ -327,10 +327,10 @@ So here is the course's claim, stated with the discipline it will demand of ever
           {
             prompt: "Why does the course teach the Pomeranz-Broadberry disagreement instead of picking a side?",
             options: [
-              "Because it is a live scholarly debate, and the course's own voice asserts only what is settled",
+              "Because it is a live scholarly debate the course cannot settle for you",
               "Because both sides are equally likely to be wrong about everything",
-              "Because students are not allowed to see disagreements",
-              "Because the debate was resolved in 2018",
+              "Because students are not allowed to see scholarly disagreements",
+              "Because the debate was resolved in 2018 and only the date remains",
             ],
             correctIndex: 0,
             explanation:
@@ -509,10 +509,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "What is the current scholarly status of the Indus script?",
             options: [
-              "Undeciphered, with no accepted reading; scholars even dispute whether it encodes language at all",
-              "Deciphered in 1837 by James Prinsep",
-              "Readable but only partially translated",
-              "Proven to be an early form of Sanskrit",
+              "Undeciphered, with no accepted reading and no agreed language behind it",
+              "Deciphered in 1837 by James Prinsep, working from bilingual coin legends",
+              "Readable but only partially translated, since the corpus is very short",
+              "Proven to be an early form of Sanskrit written in a syllabic script",
             ],
             correctIndex: 0,
             explanation:
@@ -522,10 +522,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "Which feature is the Indus cities' engineering signature?",
             options: [
-              "Municipal water infrastructure: covered street drains, house connections, bathing platforms, the Great Bath",
-              "Stone pyramids over royal tombs",
-              "Massive city walls with chariot gates",
-              "Aqueducts on arched bridges",
+              "Municipal water works: covered street drains, baths, the Great Bath",
+              "Stone pyramids raised over royal tombs at Harappa and Mohenjo-daro",
+              "Massive city walls with chariot gates facing the four directions",
+              "Aqueducts carried on arched stone bridges from the Indus tributaries",
             ],
             correctIndex: 0,
             explanation:
@@ -535,10 +535,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "What happened to the old claim that invading 'Aryans' destroyed the Indus cities?",
             options: [
-              "It is rejected: the claimed massacre evidence did not withstand re-examination, and the urban decline predates the migration period",
-              "It was confirmed by radiocarbon dating",
-              "It remains the leading explanation",
-              "It was replaced by proof of a volcanic eruption",
+              "It is rejected: the massacre evidence did not survive re-examination",
+              "It was confirmed by radiocarbon dating of the Mohenjo-daro skeletons",
+              "It remains the leading explanation among archaeologists in India",
+              "It was replaced by proof of a volcanic eruption in the Rann of Kutch",
             ],
             correctIndex: 0,
             explanation:
@@ -548,10 +548,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "What is unique about Ashoka's 13th Major Rock Edict?",
             options: [
-              "A conqueror publicly inscribed remorse for his own war, reporting its deportations and deaths as a moral failure",
-              "It is the oldest writing found in India",
-              "It abolished the Mauryan army",
-              "It was written in Latin",
+              "A conqueror publicly inscribed remorse for his own war of conquest",
+              "It is the oldest writing ever found anywhere in the Indian subcontinent",
+              "It abolished the Mauryan army and disbanded the imperial garrisons",
+              "It was written in Latin for the Roman merchants trading at Barygaza",
             ],
             correctIndex: 0,
             explanation:
@@ -561,10 +561,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "How should the casualty figures in Ashoka's Kalinga edict be treated?",
             options: [
-              "As the king's own reported figures, royal rhetoric rather than verified statistics",
-              "As exact counts from an imperial census",
-              "As a later forgery",
-              "As referring to animals, not people",
+              "As the king's own reported figures, royal rhetoric not statistics",
+              "As exact counts compiled by the Mauryan imperial census officers",
+              "As a later forgery cut into the rock by Gupta-era court editors",
+              "As referring to captured animals and cattle rather than to people",
             ],
             correctIndex: 0,
             explanation:
@@ -574,10 +574,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "What happened to the Brahmi script of Ashoka's edicts after the Mauryas?",
             options: [
-              "It was gradually forgotten in India and deciphered only in 1837, by James Prinsep working with Indian pandits' scholarship",
-              "It remained in continuous use until today",
-              "It was banned by the Guptas",
-              "It was never written down",
+              "It was forgotten in India and deciphered only in 1837 by Prinsep",
+              "It remained in continuous everyday use in India down to the present",
+              "It was banned by the Guptas in favour of Sanskrit in Devanagari",
+              "It was never written down and survives only in oral recitation",
             ],
             correctIndex: 0,
             explanation:
@@ -587,10 +587,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "Which languages appear on Ashoka's Kandahar edict, and why does that matter?",
             options: [
-              "Greek and Aramaic, showing the Mauryan state addressed its Hellenistic and Aramaic-reading subjects in their own languages",
-              "Sanskrit and Tamil, showing a north-south divide",
-              "Chinese and Prakrit, showing Silk Road contact",
-              "Latin and Greek, showing Roman influence",
+              "Greek and Aramaic, addressing subjects in their own languages",
+              "Sanskrit and Tamil, showing a north-south divide in the empire",
+              "Chinese and Prakrit, showing Silk Road contact with Han China",
+              "Latin and Greek, showing Roman influence on Mauryan chancery",
             ],
             correctIndex: 0,
             explanation:
@@ -601,9 +601,9 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
             prompt: "What is the earliest known text to state systematic rules for arithmetic with zero?",
             options: [
               "Brahmagupta's Brahmasphutasiddhanta, 628 CE",
-              "Aryabhata's Aryabhatiya, 499 CE",
-              "Fibonacci's Liber Abaci, 1202",
-              "Euclid's Elements, c. 300 BCE",
+              "Aryabhata's Aryabhatiya of Kusumapura, 499 CE",
+              "Fibonacci's Liber Abaci at Pisa, 1202 CE",
+              "Euclid's Elements at Alexandria, c. 300 BCE",
             ],
             correctIndex: 0,
             explanation:
@@ -613,10 +613,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "Why is the Bakhshali manuscript's 'world's oldest zero' claim taught as contested?",
             options: [
-              "Its 2017 radiocarbon dates span roughly the 3rd to 10th centuries, and specialist historians dispute the oldest-folio framing (Plofker et al., 2017)",
-              "The manuscript was proven to be a modern forgery",
-              "It contains no zeros at all",
-              "Radiocarbon dating cannot be applied to birch bark",
+              "Its 2017 radiocarbon dates span several centuries and remain disputed",
+              "The manuscript was proven a nineteenth-century forgery on birch bark",
+              "It contains no zeros at all, only Kharosthi fractional notation",
+              "Radiocarbon dating cannot be applied to birch bark manuscripts",
             ],
             correctIndex: 0,
             explanation:
@@ -626,10 +626,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "Why are the decimal digits called 'Arabic numerals' in Europe?",
             options: [
-              "Europe received them via the Arabic world (al-Khwarizmi c. 820s; Fibonacci 1202); the label records the messenger, not the Indian origin",
-              "They were invented in Baghdad",
-              "Arab traders invented them for bookkeeping",
-              "The name was chosen at random",
+              "Europe received them through Arabic intermediaries, not from India",
+              "They were invented in Baghdad by al-Khwarizmi in the 820s CE",
+              "Arab traders invented them for bookkeeping on the Red Sea routes",
+              "The name was chosen at random by later European printers in Venice",
             ],
             correctIndex: 0,
             explanation:
@@ -639,10 +639,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "Who founded the Mughal empire, and where was he from?",
             options: [
-              "Babur, a Timurid prince from the Fergana valley in Central Asia, who won at Panipat in 1526",
-              "Akbar, a Rajput king from Gujarat",
-              "Aurangzeb, a Persian shah",
-              "Ashoka, from Magadha",
+              "Babur, a Timurid prince from Fergana, who won at Panipat in 1526",
+              "Akbar, a Rajput king from Gujarat, who won at Panipat in 1556",
+              "Aurangzeb, a Persian shah from Isfahan, crowned at Delhi in 1658",
+              "Ashoka, a Mauryan prince from Magadha, crowned at Pataliputra",
             ],
             correctIndex: 0,
             explanation:
@@ -652,10 +652,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "What did Akbar's statecraft include?",
             options: [
-              "Folding Hindu elites into the imperial service, revenue reform, abolishing the jizya, and staged interfaith debate at court",
-              "Forced conversion of the whole population",
-              "Abolition of taxation",
-              "Closing India to all foreign trade",
+              "Hindu elites in imperial service, revenue reform, and ending the jizya",
+              "Forced conversion of the whole population to Islam by imperial decree",
+              "Abolition of taxation across the empire and reliance on war booty",
+              "Closing India to all foreign trade and expelling foreign merchants",
             ],
             correctIndex: 0,
             explanation:
@@ -665,10 +665,10 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "What was Sir Thomas Roe's position when he reached Jahangir's court in 1615?",
             options: [
-              "A supplicant ambassador asking trade permission from a far richer empire",
-              "A conqueror dictating terms",
-              "A colonial governor taking office",
-              "A missionary banned from court",
+              "A supplicant ambassador asking trade permission from a richer empire",
+              "A conqueror dictating peace terms to a defeated Mughal court at Agra",
+              "A colonial governor taking office over Britain's Bengal territory",
+              "A missionary banned from court and confined to the Surat factory",
             ],
             correctIndex: 0,
             explanation:
@@ -678,9 +678,9 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
           {
             prompt: "Which sequence correctly orders the end of Mughal power and the start of British territorial rule?",
             options: [
-              "Aurangzeb dies 1707 → fragmentation → Plassey 1757 → Bengal diwani 1765 → last emperor deposed 1857",
-              "Plassey 1757 → Aurangzeb dies 1707 → diwani 1765",
-              "Diwani 1765 → Panipat 1526 → Plassey 1757",
+              "Aurangzeb dies 1707 → Plassey 1757 → diwani 1765 → 1857 deposition",
+              "Plassey 1757 → Aurangzeb dies 1707 → diwani 1765 → 1857 deposition",
+              "Diwani 1765 → Panipat 1526 → Plassey 1757 → Aurangzeb dies 1707",
               "Last emperor deposed 1857 → Plassey 1757 → Aurangzeb dies 1707",
             ],
             correctIndex: 0,
@@ -812,10 +812,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "What does the Han census of 2 CE record, and why does the course treat it as special evidence?",
             options: [
-              "Roughly 57 million registered persons; it is an administrative document from the state itself, not a modern reconstruction",
-              "Exactly 100 million citizens, counted by Roman envoys",
-              "Only the population of the capital",
-              "Nothing; it is legendary",
+              "Roughly 57 million registered persons, in the state's own document",
+              "Exactly 100 million citizens, counted for the Han court by Roman envoys",
+              "Only the population of the capital at Chang'an and its two suburbs",
+              "Nothing; it is a legendary figure invented by Song-era compilers",
             ],
             correctIndex: 0,
             explanation:
@@ -825,10 +825,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "How does the course state the paper claim precisely?",
             options: [
-              "The official history credits Cai Lun with a refined process in 105 CE, but older paper exists archaeologically, so he standardized an emerging technology",
-              "Cai Lun invented paper from nothing in 105 CE",
-              "Paper was invented in Egypt and imported to China",
-              "Paper is a Tang invention of the 700s",
+              "Cai Lun standardized an emerging technology in 105 CE, per the history",
+              "Cai Lun invented paper from nothing in 105 CE, with no precursors",
+              "Paper was invented in Egypt and imported to China under the Han",
+              "Paper is a Tang invention of the 700s, first made near Chang'an",
             ],
             correctIndex: 0,
             explanation:
@@ -838,10 +838,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "What is the Diamond Sutra of 868?",
             options: [
-              "The earliest securely dated complete printed book, a woodblock scroll from Dunhuang with a colophon equivalent to 11 May 868, now in the British Library",
-              "The first book printed with movable metal type",
-              "A Confucian examination manual",
-              "A map of the Silk Roads",
+              "The earliest securely dated complete printed book, from Dunhuang in 868",
+              "The first book printed with movable metal type, from Dunhuang in 868",
+              "A Confucian examination manual printed at Chang'an in the year 868",
+              "A map of the Silk Roads drawn for the Tang court in the year 868",
             ],
             correctIndex: 0,
             explanation:
@@ -851,10 +851,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "Why do historians reject the claim that the An Lushan rebellion killed 36 million people?",
             options: [
-              "The figure comes from a fall in registered census population, and the war broke the census system itself; missing from the registers is not the same as dead",
-              "Because the rebellion never happened",
-              "Because Tang China had fewer than 36 million people",
-              "Because the figure was invented by European historians",
+              "The figure tracks the census registers, and the war broke the census",
+              "Because the rebellion never happened outside later Song chronicles",
+              "Because Tang China held fewer than 36 million people in total",
+              "Because the figure was invented by nineteenth-century Europeans",
             ],
             correctIndex: 0,
             explanation:
@@ -864,10 +864,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "What was Chang'an under the Tang?",
             options: [
-              "A planned grid capital of about a million people (by common estimates), with foreign merchant communities, Buddhist monasteries, and documented Christian and Muslim presence",
-              "A small military outpost on the steppe",
-              "A port city ruled by Persian merchants",
-              "The capital of Heian Japan",
+              "A planned grid capital of roughly a million people, with foreign quarters",
+              "A small military outpost on the steppe frontier north of the Ordos loop",
+              "A port city on the Yangzi ruled by resident Persian merchant families",
+              "The capital of Heian Japan, laid out on a Chinese grid plan in 794",
             ],
             correctIndex: 0,
             explanation:
@@ -877,10 +877,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "Which primary source documents Bi Sheng's invention of movable type?",
             options: [
-              "Shen Kuo's Dream Pool Essays (1088), describing clay movable type made in the 1040s",
-              "The Wujing Zongyao (1044)",
-              "Marco Polo's Travels",
-              "The Hunminjeongeum (1446)",
+              "Shen Kuo's Dream Pool Essays of 1088, on clay type of the 1040s",
+              "The Wujing Zongyao of 1044, the Song court military compendium",
+              "Marco Polo's Travels, dictated in a Genoese prison in 1298",
+              "The Hunminjeongeum of 1446, promulgated by Korea's King Sejong",
             ],
             correctIndex: 0,
             explanation:
@@ -891,9 +891,9 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
             prompt: "Where do the earliest surviving printed gunpowder formulas appear?",
             options: [
               "In the Song military manual Wujing Zongyao, 1044",
-              "In Roger Bacon's writings, 1267",
-              "In a Mongol chronicle of 1240",
-              "In the Diamond Sutra, 868",
+              "In Roger Bacon's Opus Majus, written in 1267",
+              "In a Mongol campaign chronicle written in 1240",
+              "In the Diamond Sutra colophon of 868 CE",
             ],
             correctIndex: 0,
             explanation:
@@ -903,10 +903,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "What is the earliest known account of marine compass navigation?",
             options: [
-              "Zhu Yu's Pingzhou Ketan (early 1100s), describing pilots steering by the needle in overcast weather",
-              "A Viking saga of the 900s",
-              "Columbus's log of 1492",
-              "Ibn Battuta's travels of the 1330s",
+              "Zhu Yu's Pingzhou Ketan of the early 1100s, on steering by needle",
+              "A Viking saga of the 900s describing steering by a sunstone",
+              "Columbus's log of 1492, on the needle's westward variation",
+              "Ibn Battuta's travels of the 1330s, on pilotage in the Red Sea",
             ],
             correctIndex: 0,
             explanation:
@@ -916,10 +916,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "What was jiaozi?",
             options: [
-              "The world's first government-issued paper money, evolving from Sichuan merchant notes and state-issued from the 1020s",
-              "A Song tax on iron",
-              "The Mongol postal relay system",
-              "A type of movable metal type",
+              "The first government-issued paper money, state-issued from the 1020s",
+              "A Song tax on iron levied on the Sichuan foundries from the 1020s",
+              "The Mongol postal relay system of stations and remounts across Asia",
+              "A type of movable metal type first cast in Sichuan in the 1020s",
             ],
             correctIndex: 0,
             explanation:
@@ -929,10 +929,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "How does the course present Hartwell's Song iron figure?",
             options: [
-              "As his estimate (~125,000 tons/year by 1078), debated and revised since, though even skeptics place Song output far beyond contemporary Europe",
-              "As an exact measurement from Song records",
-              "As disproven and worthless",
-              "As a figure for steel, not iron",
+              "His estimate of about 125,000 tons a year by 1078, debated since",
+              "An exact measurement drawn from surviving Song foundry records",
+              "A figure disproven in the 1990s and now regarded as worthless",
+              "A figure for finished steel output rather than for pig iron",
             ],
             correctIndex: 0,
             explanation:
@@ -942,10 +942,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "What belongs on the Song lesson's honest ledger alongside the economic revolution?",
             options: [
-              "Payments to the Liao after 1005, loss of the north in 1127, conquest by the Mongols in 1279, and the spread of foot binding among elite women",
-              "Nothing; the Song era had no dark side",
-              "The destruction of all Buddhist temples",
-              "A ban on all foreign trade",
+              "Payments to the Liao, the loss of the north in 1127, and foot binding",
+              "Nothing; the Song era has no dark side in the surviving record",
+              "The destruction of every Buddhist temple by imperial decree in 1005",
+              "A ban on all foreign trade that closed the southern ports after 1127",
             ],
             correctIndex: 0,
             explanation:
@@ -955,10 +955,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "What was the Heian period's most famous literary work, and how does the course label it?",
             options: [
-              "Murasaki Shikibu's Tale of Genji (c. 1010), 'often called' the world's first novel, with the hedge kept because the label depends on defining the genre",
-              "The Kojiki, definitively the world's first novel",
-              "A war chronicle written by samurai",
-              "A Chinese-language legal code",
+              "Murasaki Shikibu's Tale of Genji, 'often called' the first novel",
+              "The Kojiki of 712, definitively the world's first prose novel",
+              "A war chronicle written by samurai for the Kamakura court",
+              "A Chinese-language legal code issued at the Heian court in 794",
             ],
             correctIndex: 0,
             explanation:
@@ -968,10 +968,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "What does the course say sakoku ('closed country') actually was?",
             options: [
-              "Managed, narrow trade: Europeans mostly expelled, but exchange continued with the Dutch at Dejima, China, Korea via Tsushima, and Ryukyu",
-              "Total isolation with zero foreign contact for 250 years",
-              "A ban on Japanese ships only",
-              "An open-ports policy",
+              "Managed, narrow trade with the Dutch at Dejima, China, Korea, Ryukyu",
+              "Total isolation with zero foreign contact for two hundred fifty years",
+              "A ban on Japanese ships only, leaving foreign shipping untouched",
+              "An open-ports policy that welcomed all European trading companies",
             ],
             correctIndex: 0,
             explanation:
@@ -981,10 +981,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "What is the Jikji's precise claim to fame?",
             options: [
-              "Printed in Goryeo Korea in 1377, it is the oldest extant book printed with movable metal type, roughly 78 years before Gutenberg's Bible",
-              "It is the first printed book of any kind",
-              "It proves Gutenberg copied Korean technology",
-              "It is the oldest surviving paper document",
+              "Printed in Goryeo Korea in 1377, the oldest extant metal-type book",
+              "Printed in Goryeo Korea in 1377, the first printed book of any kind",
+              "Printed in Goryeo Korea in 1377, proving Gutenberg copied the method",
+              "Printed in Goryeo Korea in 1377, the oldest surviving paper document",
             ],
             correctIndex: 0,
             explanation:
@@ -994,10 +994,10 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
           {
             prompt: "Why does the course call Hangul 'almost unique' among writing systems?",
             options: [
-              "It has a named creator (Sejong and his scholars, 1443), a stated purpose (literacy for ordinary people), and a promulgation document with a date (Hunminjeongeum, 1446)",
-              "It is the world's oldest alphabet",
-              "It was the first script ever printed",
-              "It descends directly from Chinese characters",
+              "It has a named creator, a stated purpose, and a dated promulgation",
+              "It is the world's oldest alphabet, older than Phoenician writing",
+              "It was the first script ever printed with movable metal type",
+              "It descends directly from Chinese characters, simplified for Korean",
             ],
             correctIndex: 0,
             explanation:
@@ -1090,10 +1090,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "What did Evans et al. (2007) establish about Angkor?",
             options: [
-              "It was the world's largest known preindustrial settlement complex: a low-density urban sprawl on the order of a thousand square kilometers",
-              "It was a walled city of ten million people",
-              "It was purely a ceremonial site with no population",
-              "It was founded by Chinese colonists",
+              "The largest known preindustrial settlement complex, low-density sprawl",
+              "A single walled city holding about ten million people inside its moat",
+              "A purely ceremonial site with no resident population around the temples",
+              "A colony founded by Chinese settlers under the Tang dynasty in the 800s",
             ],
             correctIndex: 0,
             explanation:
@@ -1103,10 +1103,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "What was the engineering foundation of Angkor's agriculture?",
             options: [
-              "Monsoon water management: vast baray reservoirs (the West Baray is roughly 8 km long), canals, and embankments supporting intensive rice farming",
-              "Deep wells drilled into the water table",
-              "Terraced mountainside farming",
-              "Imported grain from China",
+              "Monsoon water management: baray reservoirs, canals, and embankments",
+              "Deep wells drilled into the water table beneath the temple precincts",
+              "Terraced mountainside farming on the slopes of the Kulen plateau",
+              "Imported grain from China, shipped up the Mekong by Song merchants",
             ],
             correctIndex: 0,
             explanation:
@@ -1117,9 +1117,9 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
             prompt: "Who wrote the only surviving eyewitness account of Angkor in its prime?",
             options: [
               "Zhou Daguan, a Chinese envoy who lived there in 1296-97",
-              "Henri Mouhot, in the 1860s",
-              "Ibn Battuta, in the 1340s",
-              "Marco Polo, in the 1290s",
+              "Henri Mouhot, a French naturalist who arrived in the 1860s",
+              "Ibn Battuta, a Moroccan jurist who passed through in the 1340s",
+              "Marco Polo, a Venetian merchant who described it in the 1290s",
             ],
             correctIndex: 0,
             explanation:
@@ -1129,10 +1129,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "Why does the course reject the claim that Henri Mouhot 'discovered' Angkor?",
             options: [
-              "Angkor Wat was never abandoned: Khmer worshippers used it continuously and Iberian visitors described it in the 1500s; Mouhot only made it famous in Europe",
-              "Because Mouhot never went to Cambodia",
-              "Because the city was discovered by satellite",
-              "Because Angkor was built after Mouhot's death",
+              "Angkor Wat was never abandoned; Mouhot only made it famous in Europe",
+              "Because Mouhot never reached Cambodia and wrote it up from Bangkok",
+              "Because the city was located by aerial survey rather than on foot",
+              "Because Angkor Wat was built after Mouhot's death in the 1860s",
             ],
             correctIndex: 0,
             explanation:
@@ -1142,10 +1142,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "What is the current, fuller account of the end of Angkor as a capital?",
             options: [
-              "Recorded megadroughts and violent monsoon swings (Buckley et al., 2010), shifting coastal trade, the 1431 Ayutthaya sack recorded in later chronicles, and the court's move toward Phnom Penh",
-              "A single earthquake destroyed it in 1431",
-              "European invaders burned it in the 1500s",
-              "Nothing; it remains Cambodia's capital",
+              "Megadroughts and monsoon swings, shifting trade, and the 1431 sack",
+              "A single earthquake levelled the city and its reservoirs in 1431",
+              "European invaders burned the temple complex in the early 1500s",
+              "Nothing happened; Angkor is still Cambodia's working capital",
             ],
             correctIndex: 0,
             explanation:
@@ -1155,10 +1155,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "Under which king was Angkor Wat built, and to which god was it first dedicated?",
             options: [
-              "Suryavarman II (reigned c. 1113-1150), dedicated to Vishnu and later converted to Buddhist use",
-              "Jayavarman VII, dedicated to the Buddha from the start",
-              "Jayavarman II, dedicated to Shiva",
-              "Hayam Wuruk, dedicated to Vishnu",
+              "Suryavarman II, c. 1113-1150, dedicated first to Vishnu",
+              "Jayavarman VII, c. 1181-1218, dedicated first to the Buddha",
+              "Jayavarman II, c. 802-835, dedicated first to Shiva",
+              "Hayam Wuruk, c. 1350-1389, dedicated first to Vishnu",
             ],
             correctIndex: 0,
             explanation:
@@ -1168,10 +1168,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "What kind of state was Srivijaya?",
             options: [
-              "A thalassocracy: an empire of harbors, fleets, and client ports controlling the straits, centered by the standard identification at Palembang in Sumatra",
-              "A landlocked mountain kingdom",
-              "A Chinese province",
-              "A nomadic steppe confederation",
+              "A thalassocracy of harbors and fleets, centered at Palembang",
+              "A landlocked mountain kingdom in the Sumatran interior highlands",
+              "A Chinese province administered from Guangzhou after the 600s",
+              "A nomadic steppe confederation that raided the Malay peninsula",
             ],
             correctIndex: 0,
             explanation:
@@ -1181,10 +1181,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "What did the monk Yijing report about Srivijaya?",
             options: [
-              "In his account, a community of more than a thousand Buddhist monks; he advised pilgrims to study Sanskrit there before going on to India",
-              "That it had no religious life at all",
-              "That it was ruled by Chinese governors",
-              "That its people could not read",
+              "More than a thousand Buddhist monks, and Sanskrit study before India",
+              "That it had no religious life at all beyond the ruler's household",
+              "That it was ruled by Chinese governors appointed from Guangzhou",
+              "That its people could not read and kept no written records at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1194,10 +1194,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "What happened to the memory of Srivijaya, and why does the course dwell on it?",
             options: [
-              "The empire was entirely forgotten until George Coedès reassembled its existence in 1918 from inscriptions and Chinese records; forgetting reflects what survives, not what mattered",
-              "It was remembered continuously in Indonesian schools",
-              "It was a myth invented in 1918",
-              "Its records were destroyed by the Portuguese",
+              "It was forgotten until George Coedès reassembled it in 1918",
+              "It was remembered continuously in Indonesian school histories",
+              "It was a myth invented by Dutch colonial scholars in 1918",
+              "Its records were destroyed by the Portuguese at Malacca in 1511",
             ],
             correctIndex: 0,
             explanation:
@@ -1207,10 +1207,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "What event immediately preceded Majapahit's founding in 1293?",
             options: [
-              "A Mongol (Yuan) naval expedition sent by Kublai Khan was outmaneuvered and expelled by the Javanese prince who then took the throne",
-              "The Portuguese conquest of Malacca",
-              "The eruption of Krakatoa",
-              "The fall of Srivijaya to the Cholas",
+              "A Yuan naval expedition sent by Kublai Khan was outmaneuvered",
+              "The Portuguese conquest of Malacca closed the Java Sea to trade",
+              "The eruption of Krakatoa emptied the Sunda strait of shipping",
+              "The fall of Srivijaya to a Chola fleet left the straits open",
             ],
             correctIndex: 0,
             explanation:
@@ -1220,10 +1220,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "How does the course tell you to read the Nagarakretagama's list of roughly a hundred tributaries?",
             options: [
-              "As a 1365 court panegyric: evidence of Majapahit's horizon and prestige, while the degree of real control is debated among historians",
-              "As an administrative census proving direct rule of all of modern Indonesia",
-              "As a forgery from the colonial era",
-              "As a Chinese diplomatic record",
+              "As a 1365 court panegyric: evidence of horizon and prestige",
+              "As an administrative census proving direct rule over the islands",
+              "As a forgery composed in the Dutch colonial era from Chinese notes",
+              "As a Chinese diplomatic record of Ming tributary relations",
             ],
             correctIndex: 0,
             explanation:
@@ -1233,10 +1233,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "What is Borobudur?",
             options: [
-              "A stepped stone monument raised in central Java around 800 CE under the Sailendra dynasty, commonly described as the world's largest Buddhist monument",
-              "A Khmer temple at Angkor",
-              "A mosque built by the Malacca sultanate",
-              "A Chinese pagoda in Sumatra",
+              "A stepped stone monument raised in central Java around 800 CE",
+              "A Khmer temple at Angkor raised under Suryavarman II in the 1100s",
+              "A mosque built by the Malacca sultanate on Java around 1450",
+              "A Chinese pagoda raised in Sumatra by Ming envoys around 1410",
             ],
             correctIndex: 0,
             explanation:
@@ -1246,10 +1246,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "Why were the Maluku islands disproportionately important to world trade before the 1600s?",
             options: [
-              "Cloves and nutmeg grew nowhere else on earth, so every clove anywhere had passed through Southeast Asian sea lanes",
-              "They held the world's only tin mines",
-              "They controlled the Suez route",
-              "They minted the region's only currency",
+              "Cloves and nutmeg grew nowhere else on earth before the 1600s",
+              "They held the world's only workable tin mines before the 1600s",
+              "They controlled the Suez transit route to the Mediterranean",
+              "They minted the only silver currency accepted across the region",
             ],
             correctIndex: 0,
             explanation:
@@ -1259,10 +1259,10 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
           {
             prompt: "What role did the monsoon play in the maritime empires' power?",
             options: [
-              "Its seasonal winds set sailing schedules and forced layovers, so strait-side entrepôts could host, provision, and tax the waiting trade",
-              "It made sailing impossible, so all trade went overland",
-              "It only mattered for agriculture",
-              "It blew constantly in one direction year-round",
+              "Its seasonal winds set sailing schedules and forced long layovers",
+              "It made open-sea sailing impossible, so all trade went overland",
+              "It mattered only for rice agriculture and never for shipping",
+              "It blew constantly in one direction throughout the whole year",
             ],
             correctIndex: 0,
             explanation:
@@ -1273,9 +1273,9 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
             prompt: "Which city inherited the strait-hub role in the 1400s, and how did its independence end?",
             options: [
               "Malacca, founded c. 1400; Portugal seized it in 1511",
-              "Palembang, seized by Spain in 1571",
-              "Manila, seized by Portugal in 1511",
-              "Singapore, founded by the British in 1819",
+              "Palembang, refounded c. 1400; Spain seized it in 1571",
+              "Manila, founded c. 1400; Portugal seized it in 1511",
+              "Singapore, founded c. 1400; the Dutch seized it in 1641",
             ],
             correctIndex: 0,
             explanation:
@@ -1407,10 +1407,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "Where does the term 'Silk Road' come from?",
             options: [
-              "Coined in 1877 by the German geographer Ferdinand von Richthofen; no ancient trader used it",
-              "It appears in Han dynasty records",
-              "Marco Polo coined it in the 1290s",
-              "It is a translation of a Sogdian phrase",
+              "Coined in 1877 by the geographer Ferdinand von Richthofen",
+              "It appears in Han dynasty records of the Western Regions",
+              "Marco Polo coined it in the Travels he dictated in 1298",
+              "It translates a phrase used by Sogdian caravan merchants",
             ],
             correctIndex: 0,
             explanation:
@@ -1420,10 +1420,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "What is Hansen's (2012) documented revision of the overland Silk Road story?",
             options: [
-              "Excavated documents show mostly local, small-scale, oasis-to-oasis trade; the routes' great cargo was people, religions, and technologies",
-              "There was no overland trade at all",
-              "Caravans regularly hauled silk nonstop from China to Rome",
-              "Only silk ever moved on the routes",
+              "Excavated documents show mostly local, small-scale oasis trade",
+              "There was no overland trade at all before the Mongol conquests",
+              "Caravans hauled silk nonstop from Chang'an to Rome each year",
+              "Only silk ever moved on the routes, by imperial Han decree",
             ],
             correctIndex: 0,
             explanation:
@@ -1433,10 +1433,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "How does the course treat the story that prisoners from the Battle of Talas (751) brought papermaking to Samarkand?",
             options: [
-              "As a tale rather than a record, since paper existed in Central Asia earlier; the documented outcome is paper mills in Samarkand and Baghdad by the late 700s",
-              "As a verified event with named prisoners",
-              "As a myth with no underlying truth about paper's spread",
-              "As proof that paper was invented at Talas",
+              "As a tale, not a record: paper mills are documented by the late 700s",
+              "As a verified event, with the captured papermakers named in the record",
+              "As a myth with no underlying truth about how papermaking spread west",
+              "As proof that paper itself was invented at Talas by Abbasid soldiers",
             ],
             correctIndex: 0,
             explanation:
@@ -1446,10 +1446,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "What does the Belitung shipwreck prove?",
             options: [
-              "A 9th-century Arabian-style ship carried tens of thousands of mass-produced Chinese Changsha bowls (one dated to the 820s): industrial-scale Tang-Abbasid sea trade centuries before European ships arrived",
-              "That Europeans reached Indonesia in the 800s",
-              "That sea trade was limited to small luxury cargoes",
-              "That Chinese ships never sailed west",
+              "An Arabian-style ship carried mass-produced Chinese bowls in the 800s",
+              "That European ships had reached the Indonesian archipelago by the 800s",
+              "That sea trade was limited to small luxury cargoes before the 1400s",
+              "That Chinese ships never sailed west of the Strait of Malacca at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1459,10 +1459,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "Who were the Sogdians?",
             options: [
-              "An Iranian-speaking merchant people from the Samarkand region who served for centuries as the overland network's signature middlemen",
-              "A Chinese dynasty",
-              "Mongol tax collectors",
-              "Japanese pirates",
+              "An Iranian-speaking merchant people from the Samarkand region",
+              "A Chinese dynasty that ruled the Tarim basin oases after 640",
+              "Mongol tax collectors stationed along the yam relay stations",
+              "Japanese pirates who raided the Korean and Chinese coasts",
             ],
             correctIndex: 0,
             explanation:
@@ -1472,10 +1472,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "What was the Baghdad translation movement, per Gutas (1998)?",
             options: [
-              "A sustained, society-wide, patron-funded effort (roughly 8th-10th centuries) translating Greek, Persian, and Sanskrit learning into Arabic",
-              "A single caliph's one-year project",
-              "A program to translate Arabic works into Latin",
-              "A purely religious effort limited to scripture",
+              "A sustained, patron-funded translation effort, 8th to 10th centuries",
+              "A single caliph's one-year project to copy the Alexandrian library",
+              "A program to translate Arabic works into Latin for European courts",
+              "A purely religious effort limited to scripture and legal commentary",
             ],
             correctIndex: 0,
             explanation:
@@ -1485,10 +1485,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "What hedge does the course attach to the House of Wisdom?",
             options: [
-              "It is real but thinly evidenced, and Gutas argues it was essentially a palace library; the documented wonder is the society-wide movement, not one building",
-              "It never existed in any form",
-              "It was the world's first university, fully documented",
-              "It was located in Cairo, not Baghdad",
+              "It is real but thinly evidenced; Gutas calls it a palace library",
+              "It never existed in any form and was invented by later chroniclers",
+              "It was the world's first university, fully documented in the sources",
+              "It was located in Fatimid Cairo rather than in Abbasid Baghdad",
             ],
             correctIndex: 0,
             explanation:
@@ -1498,10 +1498,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "Which two everyday English words descend from al-Khwarizmi and his book?",
             options: [
-              "'Algebra' (from al-jabr in his book's title) and 'algorithm' (from Latin corruptions of his name)",
-              "'Chemistry' and 'zenith'",
-              "'Zero' and 'cipher'",
-              "'Compass' and 'almanac'",
+              "'Algebra,' from his book's title, and 'algorithm,' from his name",
+              "'Chemistry,' from al-kimiya, and 'zenith,' from samt al-ras",
+              "'Zero,' from sifr, and 'cipher,' from the same Arabic root",
+              "'Compass,' from the qiblah, and 'almanac,' from al-manakh",
             ],
             correctIndex: 0,
             explanation:
@@ -1511,10 +1511,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "What was Ibn Sina's Canon of Medicine (1025)?",
             options: [
-              "A medical encyclopedia that, in Latin translation, served as a standard European medical textbook into the early modern period",
-              "A book of religious law",
-              "The first book printed with movable type",
-              "A Mongol medical manual",
+              "A medical encyclopedia used as a European textbook in Latin",
+              "A book of religious law that governed Abbasid medical practice",
+              "The first book printed with movable type, at Bukhara in 1025",
+              "A Mongol medical manual compiled for the Ilkhanate at Tabriz",
             ],
             correctIndex: 0,
             explanation:
@@ -1524,10 +1524,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "What honest caution does the course attach to the 'golden age' frame itself?",
             options: [
-              "It can imply everything afterward was decline, a story historians increasingly push back on; science in the Islamic world did not stop in 1258",
-              "That golden ages never really happen",
-              "That the term is too positive about Baghdad",
-              "That only Europe had golden ages",
+              "It implies everything afterward was decline, which historians dispute",
+              "That golden ages never really happen in any civilization's history",
+              "That the term is much too positive about Abbasid-era Baghdad's record",
+              "That only Europe ever had a golden age worth calling by the name",
             ],
             correctIndex: 0,
             explanation:
@@ -1537,10 +1537,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "How does the course handle chronicle death tolls from the Mongol conquests?",
             options: [
-              "As unverifiable and, at the top end, implausible: read as expressions of catastrophe rather than counts, while the catastrophe itself is undoubted",
-              "As precise statistics to memorize",
-              "As proof the conquests were invented",
-              "As undercounts to be tripled",
+              "As unverifiable and often implausible, though the catastrophe is real",
+              "As precise statistics that students should memorize by campaign",
+              "As proof that the conquests were invented by Persian chroniclers",
+              "As undercounts that modern demographers should routinely triple",
             ],
             correctIndex: 0,
             explanation:
@@ -1550,10 +1550,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "What was the yam?",
             options: [
-              "The Mongol relay post-road system: stations, remounts, and passports moving messengers across Eurasia at unprecedented speed",
-              "A Mongol siege engine",
-              "The Mongol royal clan",
-              "A tax on silk",
+              "The Mongol relay post-road system of stations and remounts",
+              "The Mongol siege engine used against Baghdad's walls in 1258",
+              "The Mongol royal clan descended from Chinggis Khan's sons",
+              "The Mongol tax on raw silk levied on the Persian workshops",
             ],
             correctIndex: 0,
             explanation:
@@ -1563,10 +1563,10 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
           {
             prompt: "Which statement matches the course's synthesis on the Mongols?",
             options: [
-              "They destroyed a connected world's nodes, then ran the connections harder than anyone before them; neither cartoon survives the record",
-              "They were pure destroyers with no constructive record",
-              "The conquests were bloodless and the Pax total",
-              "They never affected trade either way",
+              "They wrecked the nodes, then ran the connections harder than anyone",
+              "They were pure destroyers with no constructive record whatsoever",
+              "The conquests were bloodless, and the Pax Mongolica was total peace",
+              "They never affected long-distance trade in either direction at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1577,9 +1577,9 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
             prompt: "How is Marco Polo's account treated by historians, per the course?",
             options: [
               "Debated in its details, broadly accepted in its substance",
-              "Accepted word for word",
-              "Proven to be entirely fabricated",
-              "Lost, and known only by title",
+              "Accepted word for word, since he named his Chinese offices",
+              "Proven entirely fabricated from Persian guidebooks in the 1990s",
+              "Lost in the sack of Venice, and known now only by its title",
             ],
             correctIndex: 0,
             explanation:
@@ -1590,9 +1590,9 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
             prompt: "Which later dynasty's founder claimed descent from both Chinggis Khan and Timur?",
             options: [
               "The Mughals: Babur, who won at Panipat in 1526",
-              "The Ming",
-              "The Tokugawa",
-              "The Abbasids",
+              "The Ming: Hongwu, who took Dadu from the Yuan in 1368",
+              "The Tokugawa: Ieyasu, who won at Sekigahara in 1600",
+              "The Abbasids: al-Saffah, who won at the Zab in 750",
             ],
             correctIndex: 0,
             explanation:
@@ -1691,10 +1691,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Why does the course include a section on hierarchy, slavery, and conquest at all?",
             options: [
-              "Because the record demands it (it is in Asia's own law codes, inscriptions, and eyewitness accounts), and hiding it would make the course untrustworthy on everything else",
+              "Because the record demands it, and hiding it would be untrustworthy",
               "To argue that precolonial Asia was worse than everywhere else",
-              "Because European sources require it",
-              "To justify later colonization",
+              "Because European sources require it as a condition of citation",
+              "To justify the later European colonization of Asia's heartlands",
             ],
             correctIndex: 0,
             explanation:
@@ -1704,10 +1704,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Which two opposite myths about caste does the course reject?",
             options: [
-              "That caste is an eternal, unchanging essence of India, and that caste was a British invention",
-              "That caste existed, and that it was hierarchical",
-              "That the Manusmriti is old, and that jatis exist",
-              "That caste is South Asian, and that it changed over time",
+              "That caste is an eternal essence, and that Britain invented it",
+              "That caste existed at all, and that it was ever hierarchical",
+              "That the Manusmriti is an old text, and that jatis ever existed",
+              "That caste is South Asian, and that it changed at all over time",
             ],
             correctIndex: 0,
             explanation:
@@ -1717,10 +1717,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What does Palais (1996) estimate about the nobi, and how does the course present it?",
             options: [
-              "Roughly 30 percent of Joseon Korea's population in some periods; presented as his attributed estimate from registers that permit only rough shares",
+              "Roughly 30 percent in some periods, an attributed rough estimate",
               "An exact census figure of 30 percent for all of Korean history",
-              "That the nobi were free wage laborers",
-              "That nobi status ended in the 1400s",
+              "That the nobi were free wage laborers paid in rice and cloth",
+              "That nobi status was abolished across Korea during the 1400s",
             ],
             correctIndex: 0,
             explanation:
@@ -1730,10 +1730,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "How does the course use Malik Ambar's life?",
             options: [
-              "As documented evidence that Indian Ocean slavery was real, large, and structurally different from the plantation model: born in Ethiopia, enslaved, he ended as effective ruler of Ahmadnagar and a stubborn Mughal opponent",
-              "As proof that slavery in Asia was benign",
-              "As a legend with no documentation",
-              "As an example of European plantation slavery",
+              "As evidence that Indian Ocean slavery differed from the plantation model",
+              "As proof that slavery in Asia was a mild, benign household institution",
+              "As a legend with no documentation outside later Marathi court ballads",
+              "As an example of European plantation slavery transplanted into India",
             ],
             correctIndex: 0,
             explanation:
@@ -1743,10 +1743,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Which eyewitness and epigraphic evidence documents bondage at Angkor?",
             options: [
-              "Zhou Daguan's 1296-97 account describes enslaved people in households, and temple inscriptions list thousands of bound workers on temple estates",
-              "Portuguese court records from the 1500s",
-              "Henri Mouhot's 1860s diaries",
-              "There is no evidence of bondage at Angkor",
+              "Zhou Daguan's 1296-97 account and the temple estate inscriptions",
+              "Portuguese court records from Goa describing Khmer households",
+              "Henri Mouhot's 1860s diaries of the Cambodian forest villages",
+              "There is no evidence of bondage at Angkor in any known source",
             ],
             correctIndex: 0,
             explanation:
@@ -1756,10 +1756,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Why is 'Asia practiced caste' as false as 'Asia was casteless,' per the course?",
             options: [
-              "Because both flatten: caste is South Asian, nobi bondage is Korean, temple bondage is Khmer; precision applies to the hard parts exactly as to the proud ones",
-              "Because caste never existed anywhere",
-              "Because only Europe had social hierarchy",
-              "Because the word 'caste' is untranslatable",
+              "Because both flatten: caste is South Asian, nobi bondage is Korean",
+              "Because caste as a system never existed anywhere in South Asia",
+              "Because only Europe developed a formal system of social hierarchy",
+              "Because the word 'caste' is Portuguese and cannot be translated",
             ],
             correctIndex: 0,
             explanation:
@@ -1769,10 +1769,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What happened between the Chola kingdom and Srivijaya in 1025?",
             options: [
-              "A Chola naval expedition raided Srivijaya's ports across the Bay of Bengal: Asian power projected against Asian power, five centuries before Portugal arrived",
-              "They signed a permanent alliance",
-              "Srivijaya conquered south India",
-              "Portugal mediated a peace between them",
+              "A Chola naval expedition raided Srivijaya's ports across the bay",
+              "They signed a permanent alliance against the Song navy that year",
+              "Srivijaya conquered the Chola heartland in south India that year",
+              "Portugal mediated a peace between the two of them at Malacca",
             ],
             correctIndex: 0,
             explanation:
@@ -1782,10 +1782,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What was the Ming occupation of Vietnam?",
             options: [
-              "Direct Chinese administration of Vietnam from 1407 to 1427, ended by Le Loi's resistance",
-              "A trade agreement signed in 1407",
-              "A Mongol invasion of the 1280s",
-              "A French protectorate",
+              "Direct Chinese administration from 1407 to 1427, ended by Le Loi",
+              "A Ming-Vietnamese trade agreement signed at Thang Long in 1407",
+              "A Mongol invasion of the Red River delta launched in the 1280s",
+              "A French protectorate imposed over Tonkin during the 1880s",
             ],
             correctIndex: 0,
             explanation:
@@ -1795,10 +1795,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What was the Imjin War?",
             options: [
-              "Hideyoshi's Japan invaded Joseon Korea (1592-1598), aiming through Korea at China; Korean forces, Yi Sun-sin's navy, and Ming intervention fought it to a devastating stalemate",
-              "A Korean invasion of Japan",
-              "A civil war inside Ming China",
-              "A war between Japan and Portugal",
+              "Hideyoshi's Japan invaded Joseon Korea, 1592-1598, aiming at China",
+              "A Korean invasion of Japan launched from Pusan during the 1590s",
+              "A civil war inside Ming China between rival factions at Beijing",
+              "A war between Japan and Portugal fought over the Nagasaki trade",
             ],
             correctIndex: 0,
             explanation:
@@ -1809,9 +1809,9 @@ None of this dilutes what European colonization did; scale, integration, and ide
             prompt: "Which power annexed Korea in 1910?",
             options: [
               "Japan, which ruled it until 1945",
-              "Britain",
-              "Russia",
-              "The United States",
+              "Britain, which ruled it until 1947",
+              "Russia, which ruled it until 1917",
+              "The United States, which left in 1898",
             ],
             correctIndex: 0,
             explanation:
@@ -1821,10 +1821,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Which of these does the course list as a structural mark of European colonization, beyond 'outsiders arrived'?",
             options: [
-              "Sovereignty seated on another continent, with profits, careers, and final authority flowing to the metropole",
-              "The use of cavalry in battle",
-              "Taxation of peasants",
-              "Religious difference between rulers and ruled",
+              "Sovereignty seated on another continent, with profits flowing out",
+              "The use of cavalry and gunpowder artillery in decisive battles",
+              "The taxation of peasants assessed in cash rather than in grain",
+              "Religious difference between the rulers and the ruled population",
             ],
             correctIndex: 0,
             explanation:
@@ -1834,10 +1834,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "How long did European rule over Asia's heartlands last, on the course's timeline?",
             options: [
-              "Roughly two centuries (from Plassey 1757 to the mid-1900s) out of some four and a half millennia of documented urban history",
-              "Over a thousand years",
-              "From 1510 continuously to the present",
-              "Less than a decade",
+              "Roughly two centuries, out of some four and a half millennia",
+              "Over a thousand years, from the Tang dynasty to the present",
+              "From 1510 continuously to the present day across the region",
+              "Less than a decade, from Plassey to the Bengal diwani grant",
             ],
             correctIndex: 0,
             explanation:
@@ -1847,10 +1847,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What is the 'waiting-room picture' the course removes?",
             options: [
-              "The idea that Asian history was a prelude spent waiting for Europeans to arrive and matter",
-              "The idea that Asia had large cities",
-              "The idea that trade existed before 1500",
-              "The idea that empires kept archives",
+              "That Asian history was a prelude spent waiting for Europeans",
+              "That Asia had large cities long before Europe had any at all",
+              "That long-distance trade existed well before the year 1500",
+              "That Asian empires kept archives of their own administration",
             ],
             correctIndex: 0,
             explanation:
@@ -1860,10 +1860,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Does documenting intra-Asian conquest dilute what European colonization did, per the course?",
             options: [
-              "No: scale, integration, and ideology made European colonization a rupture, and the precise definition survives the evidence, unlike the slogan version",
-              "Yes: it proves colonization was harmless",
-              "Yes: all empires are identical in every respect",
-              "No, because European colonization never happened",
+              "No: scale, integration, and ideology made it a genuine rupture",
+              "Yes: it proves that colonization was essentially harmless there",
+              "Yes: all empires are identical in scale, method, and ideology",
+              "No, because European colonization of Asia never actually happened",
             ],
             correctIndex: 0,
             explanation:
@@ -1873,10 +1873,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What does the course say about Bengal's textile industry under Company rule?",
             options: [
-              "It declined while Britain's mechanized industry rose, a documented linkage whose precise causes economic historians still argue about",
-              "It grew without interruption into the 1900s",
-              "It never existed",
-              "It was destroyed by the Mughals",
+              "It declined while Britain's mechanized industry rose after 1780",
+              "It grew without interruption right through into the early 1900s",
+              "It never existed outside a handful of Dhaka court workshops",
+              "It was destroyed by Mughal tax policy before the Company arrived",
             ],
             correctIndex: 0,
             explanation:
@@ -2032,10 +2032,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What was Pomeranz's methodological innovation in The Great Divergence?",
             options: [
-              "Comparing like with like: England against the Yangzi delta, the most advanced regions of each world, instead of 'Europe' against 'China'",
-              "Using only European sources",
-              "Ignoring economic data entirely",
-              "Comparing modern nations' borders backward in time",
+              "Comparing like with like: England against the Yangzi delta",
+              "Using only European sources and archives for both of the sides",
+              "Ignoring economic data entirely in favor of cultural history",
+              "Comparing modern national borders projected backward in time",
             ],
             correctIndex: 0,
             explanation:
@@ -2045,10 +2045,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What broke the England-Yangzi tie, in Pomeranz's argument?",
             options: [
-              "Contingency: coal near Britain's industrial regions, plus New World land, calories, and cotton lifting the shared ecological constraint",
-              "Inherent European cultural superiority",
-              "China's abolition of markets",
-              "A Chinese ban on iron production",
+              "Contingency: coal near Britain's industry, plus New World land",
+              "Inherent European cultural superiority over Chinese tradition",
+              "China's abolition of markets under the early Qing emperors",
+              "A Chinese imperial ban on iron production after the Song fell",
             ],
             correctIndex: 0,
             explanation:
@@ -2058,10 +2058,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What did Broadberry, Guan, and Li (2018) conclude?",
             options: [
-              "Reconstructed GDP-per-capita series show China's leading regions falling behind Europe's leading edge well before 1750, with the gap opening progressively",
-              "That the divergence never happened",
-              "That China led the world economy until 1900",
-              "That Pomeranz was right in every particular",
+              "China's leading regions fell behind Europe's well before 1750",
+              "That the divergence never happened in any measurable sense at all",
+              "That China led the world economy right through until about 1900",
+              "That Pomeranz was correct in every particular of his argument",
             ],
             correctIndex: 0,
             explanation:
@@ -2071,10 +2071,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Why does the course declare no winner in the Great Divergence debate?",
             options: [
-              "Because the professionals have not: the datasets and arguments are still contested in the journals, and the course's voice asserts only what is settled",
-              "Because the question is unanswerable in principle",
-              "Because both sides retracted their books",
-              "Because the course has no opinion on anything",
+              "Because the professionals have not: the datasets are still contested",
+              "Because the question is unanswerable in principle from any data",
+              "Because both sides retracted their books after the 2018 papers",
+              "Because the course declines to have an opinion about anything",
             ],
             correctIndex: 0,
             explanation:
@@ -2084,10 +2084,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Which of these is a boundary of the debate that NO serious side disputes?",
             options: [
-              "Europe did not lead the world economy in 1000 or 1500, and the divergence was complete and enormous by the mid-1800s",
-              "The divergence began with the fall of Rome",
-              "Asia never had advanced economies",
-              "The divergence is still widening today",
+              "Europe did not lead in 1000 or 1500, and the gap was huge by 1850",
+              "The divergence began with the fall of Rome in the fifth century",
+              "Asia never had advanced economies at all before European contact",
+              "The divergence is still widening between the same regions today",
             ],
             correctIndex: 0,
             explanation:
@@ -2097,10 +2097,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What do Allen's (2009) real-wage studies contribute, and with what caveat?",
             options: [
-              "Early modern silver wages in Asian cities measured below northwestern European levels, with the caveat that cross-continental living-standard comparisons are genuinely hard",
-              "Proof that wages were identical everywhere",
-              "Evidence that wages cannot be studied historically",
-              "A finding that Asian wages were the world's highest in 1800",
+              "Silver wages in Asian cities measured below northwestern Europe's",
+              "Proof that real wages were identical across Eurasia before 1800",
+              "Evidence that wages simply cannot be studied historically at all",
+              "A finding that Asian wages were the world's highest around 1800",
             ],
             correctIndex: 0,
             explanation:
@@ -2110,10 +2110,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "In the course's toolkit, what is the limit of state documents like the Han census?",
             options: [
-              "They count only what states count: registered people, so a collapse in the registers is not automatically a collapse in the population",
-              "They are always deliberate forgeries",
-              "They cover only religious matters",
-              "They cannot be dated",
+              "They count only registered people, not everyone actually alive",
+              "They are always deliberate forgeries produced for the court",
+              "They cover only religious matters and temple landholdings",
+              "They cannot be dated because they carry no reign years",
             ],
             correctIndex: 0,
             explanation:
@@ -2123,10 +2123,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Which evidence type does the course call 'artifacts that carry their own proof'?",
             options: [
-              "Dated objects like the Diamond Sutra's 868 colophon, the Jikji of 1377, and the Belitung cargo",
-              "Modern textbook summaries",
-              "Court poetry like the Nagarakretagama",
-              "GDP reconstructions",
+              "Dated objects: the 868 colophon, the Jikji, the Belitung cargo",
+              "Modern textbook summaries of the current scholarly consensus",
+              "Court poetry such as the Majapahit Nagarakretagama of 1365",
+              "GDP reconstructions from the Maddison Project database",
             ],
             correctIndex: 0,
             explanation:
@@ -2136,10 +2136,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "How should court poetry like the Nagarakretagama be classified in the toolkit?",
             options: [
-              "As a source whose genre must be named: praise literature, evidence of horizon and prestige, not an administrative record of control",
-              "As equivalent to a census",
-              "As worthless fabrication",
-              "As an eyewitness travel account",
+              "As praise literature: evidence of prestige, not of actual control",
+              "As the equivalent of a state census of the tributary islands",
+              "As worthless fabrication carrying no evidentiary value at all",
+              "As an eyewitness travel account written by a foreign envoy",
             ],
             correctIndex: 0,
             explanation:
@@ -2149,10 +2149,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What does the course's final audit ask of any historical claim?",
             options: [
-              "Who says it, in what kind of source, about which people, where, when, and whether anything independent converges",
-              "Whether it appears in more than one textbook",
-              "Whether it sounds plausible",
-              "Whether it flatters the right side",
+              "Who says it, in what kind of source, and what converges with it",
+              "Whether it appears in more than one published school textbook",
+              "Whether it sounds plausible to a reader of general history",
+              "Whether it flatters the side the reader already agrees with",
             ],
             correctIndex: 0,
             explanation:
@@ -2162,10 +2162,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Which single sentence best states the course's central, hedged thesis?",
             options: [
-              "On the standard reconstructions (Maddison, 2007, as revised), China and India together were roughly half of world output as late as 1820; the timing and causes of the reversal are contested (Pomeranz, 2000; Broadberry et al., 2018)",
+              "China and India were roughly half of world output as late as 1820",
               "Asia was always richer than everywhere else and always will be",
               "China was exactly 32.9 percent of world GDP in 1820, a measured fact",
-              "The West has led the world economy since antiquity",
+              "The West has led the world economy since classical antiquity",
             ],
             correctIndex: 0,
             explanation:
@@ -2175,10 +2175,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "Why does the course treat Srivijaya's four forgotten centuries as evidence rather than as absence?",
             options: [
-              "Because what survives depends on materials, climate, and who does the remembering; forgetting testifies about survival, not about what mattered",
-              "Because forgotten states never existed",
-              "Because Chinese records are always wrong",
-              "Because oral tradition is superior to writing",
+              "Because what survives depends on materials, climate, and memory",
+              "Because states that were forgotten never really existed at all",
+              "Because Chinese records are always wrong about foreign states",
+              "Because oral tradition is more reliable than written records",
             ],
             correctIndex: 0,
             explanation:
@@ -2188,10 +2188,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "A friend says: 'Asia was rich until Europeans showed up in 1500 and ruined it.' Using this course, what is the precise correction?",
             options: [
-              "European power in Asia was coastal enclaves for two centuries after 1510; territorial rule began at Plassey (1757); and Asia's own record includes conquest, hierarchy, and slavery, so neither the utopia nor the 1500 turning point survives the evidence",
-              "Asia was actually poor throughout history",
-              "Europeans never affected Asia at all",
-              "The friend is right in every detail",
+              "European power was coastal until Plassey in 1757, and Asia had conquests",
+              "Asia was actually poor throughout its recorded history until 1900",
+              "Europeans never affected Asia in any way at any point after 1500",
+              "The friend is right in every detail, including the 1500 turning point",
             ],
             correctIndex: 0,
             explanation:
@@ -2201,10 +2201,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "A website claims: 'Song China had 30 percent of world GDP in 1100.' What does the course's method require before repeating this?",
             options: [
-              "Attribution and hedging: identify whose reconstruction it is, treat it as an estimate with error bars, round rather than assert decimals, and check the Maddison Project's current revision",
-              "Nothing; percentages are always safe to repeat",
-              "Rejecting it because GDP did not exist in 1100",
-              "Doubling it to correct for Western bias",
+              "Attribution and hedging: whose reconstruction, with what error bars",
+              "Nothing; percentage figures are always safe to repeat as given",
+              "Rejecting it, because GDP did not exist as a concept in 1100",
+              "Doubling it to correct for the Western bias in the source data",
             ],
             correctIndex: 0,
             explanation:
@@ -2214,10 +2214,10 @@ None of this dilutes what European colonization did; scale, integration, and ide
           {
             prompt: "What does the course say you should walk out with, above any single date?",
             options: [
-              "The audit habit: name the civilization, period, and region; classify the source; attribute the numbers; and run the check hardest on claims you want to believe",
-              "A ranked list of history's greatest empires",
+              "The audit habit: name the place and period, attribute the numbers",
+              "A ranked list of history's greatest empires by size and wealth",
               "The conviction that no historical claim can ever be trusted",
-              "A complete chronology of every Asian dynasty",
+              "A complete chronology of every Asian dynasty since 2600 BCE",
             ],
             correctIndex: 0,
             explanation:
