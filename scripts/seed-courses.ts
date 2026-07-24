@@ -110,6 +110,8 @@ import { DC_BERMAN_COURSE } from "./data/dc-berman-course";
 import { SEATTLE_BOOKEND_COURSE } from "./data/seattle-bookend-course";
 import { BALTIMORE_CHAIN_COURSE } from "./data/baltimore-chain-course";
 import { PITTSBURGH_PLAYBOOK_COURSE } from "./data/pittsburgh-playbook-course";
+import { HOW_THE_TOOLS_TRAVELLED_COURSE } from "./data/how-the-tools-travelled-course";
+import { JIM_CROW_EXPORT_COURSE } from "./data/jim-crow-export-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
