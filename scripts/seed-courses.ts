@@ -725,6 +725,13 @@ async function main() {
     { slug: "seattle-the-modern-bookend", course: SEATTLE_BOOKEND_COURSE, category: "Culture & History" },
     { slug: "baltimore-the-whole-chain", course: BALTIMORE_CHAIN_COURSE, category: "Culture & History" },
     { slug: "pittsburgh-where-the-playbook-was-written", course: PITTSBURGH_PLAYBOOK_COURSE, category: "Culture & History" },
+    // The two capstones. "How the Tools Travelled" (plans/42) turns the city courses into one
+    // argument: a shared, largely federal toolkit applied locally, with every proposed connection
+    // TESTED rather than asserted. "Exported" (plans/43) carries the question abroad; it is the most
+    // sensitive course here, keeps the Germany and South Africa claims on separate evidentiary
+    // footings, and states in its own text that it does not equate outcomes.
+    { slug: "how-the-tools-travelled", course: HOW_THE_TOOLS_TRAVELLED_COURSE, category: "Culture & History" },
+    { slug: "exported-how-others-studied-american-race-law", course: JIM_CROW_EXPORT_COURSE, category: "Culture & History" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:
