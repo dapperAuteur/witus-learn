@@ -106,6 +106,11 @@ import { TWO_RACETRACKS_COURSE } from "./data/two-racetracks-course";
 import { MUDSOCK_BOUNDARY_COURSE } from "./data/mudsock-boundary-course";
 import { PRESIDENTS_HOUSE_COURSE } from "./data/presidents-house-course";
 import { FORT_HARRISON_COURSE } from "./data/fort-harrison-course";
+import { DC_BERMAN_COURSE } from "./data/dc-berman-course";
+import { SEATTLE_BOOKEND_COURSE } from "./data/seattle-bookend-course";
+import { BALTIMORE_CHAIN_COURSE } from "./data/baltimore-chain-course";
+import { PITTSBURGH_PLAYBOOK_COURSE } from "./data/pittsburgh-playbook-course";
+import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
 import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
@@ -709,6 +714,15 @@ async function main() {
     { slug: "mudsock-how-a-rivalry-marks-a-boundary", course: MUDSOCK_BOUNDARY_COURSE, category: "Culture & History" },
     { slug: "the-presidents-house", course: PRESIDENTS_HOUSE_COURSE, category: "Culture & History" },
     { slug: "fort-harrison-the-federal-footprint", course: FORT_HARRISON_COURSE, category: "Culture & History" },
+    // Metro-paths cities (plans/41 section 3b): each teaches a different STAGE in the life of the
+    // same instruments the Indianapolis cluster covers. DC is where blight clearance was blessed
+    // (Berman v. Parker); Philadelphia is Indiana Avenue's university-expansion twin; Seattle is the
+    // modern school-assignment bookend to course 2's Milliken. Tours drop into *-now-tour later.
+    { slug: "dc-where-the-instrument-was-blessed", course: DC_BERMAN_COURSE, category: "Culture & History" },
+    { slug: "philadelphia-the-university-and-the-block", course: PHILADELPHIA_UNIVERSITY_COURSE, category: "Culture & History" },
+    { slug: "seattle-the-modern-bookend", course: SEATTLE_BOOKEND_COURSE, category: "Culture & History" },
+    { slug: "baltimore-the-whole-chain", course: BALTIMORE_CHAIN_COURSE, category: "Culture & History" },
+    { slug: "pittsburgh-where-the-playbook-was-written", course: PITTSBURGH_PLAYBOOK_COURSE, category: "Culture & History" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

@@ -85,28 +85,6 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - Encyclopedia of Indianapolis. (n.d.-a). *Benjamin Harrison Presidential Site*. https://indyencyclopedia.org/benjamin-harrison-presidential-site/
 - Miller Center. (n.d.-a). *Benjamin Harrison: Life in brief*. University of Virginia. https://millercenter.org/president/bharrison/life-in-brief
 - U.S. Const. amend. XVII.`,
-      recallContent: [
-        {
-          prompt: "Why is this course structurally different from the other Indianapolis site courses?",
-          answer: "Its subject is a person who held power rather than a place that lost an argument. The useful case for learning what power can and cannot do is the one where someone had the office, asked for the thing, and did not get it.",
-        },
-        {
-          prompt: "Give Harrison's Indianapolis dates: arrival, Civil War regiment, Senate, presidency, death.",
-          answer: "Moved to Indianapolis in 1854; joined the Seventieth Regiment of the Indiana Volunteers in 1862 and became a brigadier general; served in the United States Senate until 1887; president from 1889 to 1893; died March 13, 1901.",
-        },
-        {
-          prompt: "How did Harrison get to the United States Senate, and why does that matter here?",
-          answer: "The Indiana state legislature chose him. Until the Seventeenth Amendment was ratified in 1913, state legislatures picked senators. The man who would ask Congress to protect the congressional ballot reached the Senate without one.",
-        },
-        {
-          prompt: "Where is the house, when was it built, and what is the neighbourhood called?",
-          answer: "1230 North Delaware Street, Indianapolis, in the Old Northside. Begun in 1874 by Benjamin and Caroline Harrison and finished in the spring of 1875.",
-        },
-        {
-          prompt: "State the civic question this course carries, and why it is really two questions.",
-          answer: "What could a presidency do about voting rights, and what happened when it tried? The first is structural, about the powers of the office; the second is about one specific fight. You cannot answer the second honestly without the first.",
-        },
-      ],
     },
     {
       slug: "ph-then-the-era",
@@ -141,24 +119,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - Williams v. Mississippi, 170 U.S. 213 (1898).`,
       recallContent: [
         {
-          prompt: "Why is it wrong to read the 1890 federal elections bill as an opening move?",
-          answer: "Because Congress had already built federal enforcement machinery in the Enforcement Acts of 1870 and 1871 and then let it fall into disuse. The 1890 bill was an attempt to restart a machine that had been switched off, and in 1894 Congress repealed most of what was left.",
+          prompt: "Why is this course structurally different from the other Indianapolis site courses?",
+          answer: "Its subject is a person who held power rather than a place that lost an argument. The useful case for learning what power can and cannot do is the one where someone had the office, asked for the thing, and did not get it.",
         },
         {
-          prompt: "What is the Repeal Act of 1894, and who passed it?",
-          answer: "28 Stat. 36, passed when Democrats held the presidency and both chambers of Congress. It rescinded most of the remaining Reconstruction voting rights enforcement provisions from the 1870 Enforcement Act and the 1871 force act.",
+          prompt: "Give Harrison's Indianapolis dates: arrival, Civil War regiment, Senate, presidency, death.",
+          answer: "Moved to Indianapolis in 1854; joined the Seventieth Regiment of the Indiana Volunteers in 1862 and became a brigadier general; served in the United States Senate until 1887; president from 1889 to 1893; died March 13, 1901.",
         },
         {
-          prompt: "What two opposite things happened in 1890, and what does the pairing show?",
-          answer: "The United States Senate filibustered a federal elections bill, and Mississippi adopted a constitution that disfranchised Black voters through a literacy test with an understanding clause and a poll tax. Two governments moved in opposite directions in the same year, and the one that acted decisively won.",
+          prompt: "How did Harrison get to the United States Senate, and why does that matter here?",
+          answer: "The Indiana state legislature chose him. Until the Seventeenth Amendment was ratified in 1913, state legislatures picked senators. The man who would ask Congress to protect the congressional ballot reached the Senate without one.",
         },
         {
-          prompt: "What did Article XIII of Indiana's 1851 constitution say, and when did it fall?",
-          answer: "'No negro or mulatto shall come into or settle in the State, after the adoption of this Constitution.' The Indiana Supreme Court held it invalid in 1866 after the Thirteenth Amendment.",
+          prompt: "Where is the house, when was it built, and what is the neighbourhood called?",
+          answer: "1230 North Delaware Street, Indianapolis, in the Old Northside. Begun in 1874 by Benjamin and Caroline Harrison and finished in the spring of 1875.",
         },
         {
-          prompt: "How did Indiana Democrats try to block the Fifteenth Amendment in 1869, and how was it ratified anyway?",
-          answer: "Seventeen senators and thirty-seven representatives resigned to break the quorum. Oliver P. Morton reinterpreted the quorum rule to mean two thirds of the members who had not resigned, and the General Assembly ratified over Democratic protests. The fight was decided on procedure, not on the merits.",
+          prompt: "State the civic question this course carries, and why it is really two questions.",
+          answer: "What could a presidency do about voting rights, and what happened when it tried? The first is structural, about the powers of the office; the second is about one specific fight. You cannot answer the second honestly without the first.",
         },
       ],
     },
@@ -189,24 +167,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - Library of Congress. (n.d.). *Presidential election of 1888: A resource guide*. https://guides.loc.gov/presidential-election-1888`,
       recallContent: [
         {
-          prompt: "What was the 1888 front porch campaign, and what do the words 'carefully selected' tell you?",
-          answer: "Harrison stayed in Indianapolis and delegations came to him. The Miller Center says he spoke to carefully selected delegations and reporters, which means the candidate controlled the audience, the setting and the record. It was a media strategy.",
+          prompt: "Why is it wrong to read the 1890 federal elections bill as an opening move?",
+          answer: "Because Congress had already built federal enforcement machinery in the Enforcement Acts of 1870 and 1871 and then let it fall into disuse. The 1890 bill was an attempt to restart a machine that had been switched off, and in 1894 Congress repealed most of what was left.",
         },
         {
-          prompt: "Give the 1888 result, including the detail most retellings drop.",
-          answer: "Harrison carried the electoral college 233 to 168 while receiving about 90,000 fewer popular votes than Cleveland. New York and Indiana were the swing states, and Harrison failed to carry his home city of Indianapolis.",
+          prompt: "What is the Repeal Act of 1894, and who passed it?",
+          answer: "28 Stat. 36, passed when Democrats held the presidency and both chambers of Congress. It rescinded most of the remaining Reconstruction voting rights enforcement provisions from the 1870 Enforcement Act and the 1871 force act.",
         },
         {
-          prompt: "Who was William Wade Dudley, what did his circular say, and what phrase did it leave behind?",
-          answer: "Treasurer of the Republican National Committee, appointed by Harrison. His October 1888 circular told Indiana workers to divide the floaters into blocks of five with a trusted man and the necessary funds in charge of each. 'Blocks of five' became shorthand for electoral corruption.",
+          prompt: "What two opposite things happened in 1890, and what does the pairing show?",
+          answer: "The United States Senate filibustered a federal elections bill, and Mississippi adopted a constitution that disfranchised Black voters through a literacy test with an understanding clause and a poll tax. Two governments moved in opposite directions in the same year, and the one that acted decisively won.",
         },
         {
-          prompt: "State precisely what the Dudley letter does and does not establish.",
-          answer: "It establishes that the instruction was written by a named officer of Harrison's campaign in his home state in the election he won. It does not establish how many votes were bought or whether Harrison knew. The Miller Center calls the vote-buying claim 'political talk' that circulated for years.",
+          prompt: "What did Article XIII of Indiana's 1851 constitution say, and when did it fall?",
+          answer: "'No negro or mulatto shall come into or settle in the State, after the adoption of this Constitution.' The Indiana Supreme Court held it invalid in 1866 after the Thirteenth Amendment.",
         },
         {
-          prompt: "Why does the 1888 fraud question belong in a voting rights course?",
-          answer: "Because it explains why the 'Force Bill' slur worked and why southern Democrats could posture as defenders of clean elections. The charge of election fraud in 1888 ran in both directions, and a course that omits it is selling a hero.",
+          prompt: "How did Indiana Democrats try to block the Fifteenth Amendment in 1869, and how was it ratified anyway?",
+          answer: "Seventeen senators and thirty-seven representatives resigned to break the quorum. Oliver P. Morton reinterpreted the quorum rule to mean two thirds of the members who had not resigned, and the General Assembly ratified over Democratic protests. The fight was decided on procedure, not on the merits.",
         },
       ],
     },
@@ -449,24 +427,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - Wikipedia. (n.d.). *Benjamin Harrison Presidential Site*. Cited here only as the tertiary source of a competing cost figure; follow its footnote before using the number. https://en.wikipedia.org/wiki/Benjamin_Harrison_Presidential_Site`,
       recallContent: [
         {
-          prompt: "Describe the house as a survey form would: style, size, architect, materials.",
-          answer: "A 16-room, three-storey brick Italianate residence with a basement, roughly 10,000 square feet, by architect Herman T. Brandt, with a three-storey bay window, bracketed cornices, parquet floors, butternut woodwork, a walnut staircase with oak trim, a two-foot Indiana limestone basement and 380,550 bricks. Begun 1874, finished spring 1875.",
+          prompt: "What was the 1888 front porch campaign, and what do the words 'carefully selected' tell you?",
+          answer: "Harrison stayed in Indianapolis and delegations came to him. The Miller Center says he spoke to carefully selected delegations and reporters, which means the candidate controlled the audience, the setting and the record. It was a media strategy.",
         },
         {
-          prompt: "Name the three conveniences the site lists and explain what each one really bought.",
-          answer: "Running water, a coal-fed furnace, and 23 gaslight fixtures, under 12-foot ceilings. Each replaces labour a poorer household supplied by hand: carrying water, tending fires, filling and trimming lamps. Ceiling height buys air and light and costs fuel.",
+          prompt: "Give the 1888 result, including the detail most retellings drop.",
+          answer: "Harrison carried the electoral college 233 to 168 while receiving about 90,000 fewer popular votes than Cleveland. New York and Indiana were the swing states, and Harrison failed to carry his home city of Indianapolis.",
         },
         {
-          prompt: "Why is plumbing a better class indicator than a cornice?",
-          answer: "Style is a taste choice available at several price points, but a second-floor bathroom in 1875 Indianapolis is not. Systems tell you the owner's position more reliably than ornament does.",
+          prompt: "Who was William Wade Dudley, what did his circular say, and what phrase did it leave behind?",
+          answer: "Treasurer of the Republican National Committee, appointed by Harrison. His October 1888 circular told Indiana workers to divide the floaters into blocks of five with a trusted man and the necessary funds in charge of each. 'Blocks of five' became shorthand for electoral corruption.",
         },
         {
-          prompt: "What does the carriage house tell you, and why does it matter?",
-          answer: "It had upstairs quarters for the coachman, so somebody lived over the horses. The labour the house required did not disappear, it moved, and that sentence is the thread to pull when you ask who else this house contained.",
+          prompt: "State precisely what the Dudley letter does and does not establish.",
+          answer: "It establishes that the instruction was written by a named officer of Harrison's campaign in his home state in the election he won. It does not establish how many votes were bought or whether Harrison knew. The Miller Center calls the vote-buying claim 'political talk' that circulated for years.",
         },
         {
-          prompt: "Three sources give three costs for the house. What is the rule?",
-          answer: "Give a figure its owner and say what it counts. $24,008.59 and $24,818.67 are both offered for the house itself; about $29,000 is the site's figure covering the lot purchase through the last room painted, which is a different scope. Do not average numbers you do not understand.",
+          prompt: "Why does the 1888 fraud question belong in a voting rights course?",
+          answer: "Because it explains why the 'Force Bill' slur worked and why southern Democrats could posture as defenders of clean elections. The charge of election fraud in 1888 ran in both directions, and a course that omits it is selling a hero.",
         },
       ],
     },
@@ -508,24 +486,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - National Park Service. (n.d.-b). *Benjamin Harrison Home* [National Historic Landmark listing]. https://www.nps.gov/subjects/nationalhistoriclandmarks/index.htm`,
       recallContent: [
         {
-          prompt: "State the porch problem in one sentence.",
-          answer: "The house is famous for an 1888 front porch campaign, but both published accounts date the front porch a visitor sees to 1895 or 1896, after the presidency.",
+          prompt: "Describe the house as a survey form would: style, size, architect, materials.",
+          answer: "A 16-room, three-storey brick Italianate residence with a basement, roughly 10,000 square feet, by architect Herman T. Brandt, with a three-storey bay window, bracketed cornices, parquet floors, butternut woodwork, a walnut staircase with oak trim, a two-foot Indiana limestone basement and 380,550 bricks. Begun 1874, finished spring 1875.",
         },
         {
-          prompt: "What does the porch date prove, and what does it NOT prove?",
-          answer: "It proves the visible fabric postdates the event the house is famous for. It does not prove there was no porch in 1888, because neither source says what stood at the front door then.",
+          prompt: "Name the three conveniences the site lists and explain what each one really bought.",
+          answer: "Running water, a coal-fed furnace, and 23 gaslight fixtures, under 12-foot ceilings. Each replaces labour a poorer household supplied by hand: carrying water, tending fires, filling and trimming lamps. Ceiling height buys air and light and costs fuel.",
         },
         {
-          prompt: "What does the phrase 'front porch campaign' actually name?",
-          answer: "A campaign method: the candidate stays home and the country comes to him. The porch in the phrase is a metaphor that happens to also be a building part, and confusing the two produces claims about wood the record does not support.",
+          prompt: "Why is plumbing a better class indicator than a cornice?",
+          answer: "Style is a taste choice available at several price points, but a second-floor bathroom in 1875 Indianapolis is not. Systems tell you the owner's position more reliably than ornament does.",
         },
         {
-          prompt: "Name the four layers present in any restored historic house.",
-          answer: "What was originally built; what the original owners changed while living there; what later owners changed for a different use; and what restorers removed, replaced or invented to return it to a chosen date. The fourth is the layer visitors never see.",
+          prompt: "What does the carriage house tell you, and why does it matter?",
+          answer: "It had upstairs quarters for the coachman, so somebody lived over the horses. The labour the house required did not disappear, it moved, and that sentence is the thread to pull when you ask who else this house contained.",
         },
         {
-          prompt: "Give the two dating disagreements this lesson keeps rather than smooths.",
-          answer: "The porch was added in 1895 or 1896 depending on the source, and Mary Lord Harrison's sale is dated 1937 by the National Park Service summary and 1939 by the Encyclopedia of Indianapolis and the site. Both are deed questions answerable in Marion County records.",
+          prompt: "Three sources give three costs for the house. What is the rule?",
+          answer: "Give a figure its owner and say what it counts. $24,008.59 and $24,818.67 are both offered for the house itself; about $29,000 is the site's figure covering the lot purchase through the last room painted, which is a different scope. Do not average numbers you do not understand.",
         },
       ],
     },
@@ -567,24 +545,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - National Park Service. (n.d.-d). *National Register of Historic Places: Frequently asked questions*. https://www.nps.gov/subjects/nationalregister/faqs.htm`,
       recallContent: [
         {
-          prompt: "What did the upper floors of the president's house hold for roughly thirty five years, and why is that not a failure?",
-          answer: "Student housing for the Arthur Jordan School of Music. A use that pays for a roof is what keeps a building standing long enough for anyone to decide it is important.",
+          prompt: "State the porch problem in one sentence.",
+          answer: "The house is famous for an 1888 front porch campaign, but both published accounts date the front porch a visitor sees to 1895 or 1896, after the presidency.",
         },
         {
-          prompt: "Give the designation dates for the house and the neighbourhood.",
-          answer: "National Historic Landmark January 29, 1964; National Register October 15, 1966, reference 66000010. The Old Northside was listed on the National Register in 1978 and designated an official Indianapolis historic district by the city's preservation commission in the same year.",
+          prompt: "What does the porch date prove, and what does it NOT prove?",
+          answer: "It proves the visible fabric postdates the event the house is famous for. It does not prove there was no porch in 1888, because neither source says what stood at the front door then.",
         },
         {
-          prompt: "Name the four consequences of choosing a restoration date.",
-          answer: "Everything after the date becomes clutter to remove; the earliest layers can only be inferred; rooms get assigned a single purpose the family may have used flexibly; and absent people stay absent unless somebody decides otherwise.",
+          prompt: "What does the phrase 'front porch campaign' actually name?",
+          answer: "A campaign method: the candidate stays home and the country comes to him. The porch in the phrase is a metaphor that happens to also be a building part, and confusing the two produces claims about wood the record does not support.",
         },
         {
-          prompt: "Restate the designation rule this course carries from the Indiana Avenue course.",
-          answer: "Federal listing, including National Historic Landmark status, is recognition plus review leverage when federal money or a permit is involved. It is not a demolition veto for a private owner. Local designation under a local ordinance is what regulates.",
+          prompt: "Name the four layers present in any restored historic house.",
+          answer: "What was originally built; what the original owners changed while living there; what later owners changed for a different use; and what restorers removed, replaced or invented to return it to a chosen date. The fourth is the layer visitors never see.",
         },
         {
-          prompt: "What are the Old Northside's boundaries, and which one should stop you?",
-          answer: "16th Street, Bellefontaine Street, I-65, and Pennsylvania Street. An interstate is one of the four sides of the neighbourhood, which is the alignment instrument from course 1 reappearing as a property line.",
+          prompt: "Give the two dating disagreements this lesson keeps rather than smooths.",
+          answer: "The porch was added in 1895 or 1896 depending on the source, and Mary Lord Harrison's sale is dated 1937 by the National Park Service summary and 1939 by the Encyclopedia of Indianapolis and the site. Both are deed questions answerable in Marion County records.",
         },
       ],
     },
@@ -639,24 +617,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - National Archives. (n.d.). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript`,
       recallContent: [
         {
-          prompt: "What does Article II, Section 3 actually let a president do about legislation?",
-          answer: "Recommend to Congress's consideration such measures as he judges necessary and expedient. He can ask. Congress is under no obligation to consider, schedule, debate or vote.",
+          prompt: "What did the upper floors of the president's house hold for roughly thirty five years, and why is that not a failure?",
+          answer: "Student housing for the Arthur Jordan School of Music. A use that pays for a roof is what keeps a building standing long enough for anyone to decide it is important.",
         },
         {
-          prompt: "Quote the clause that makes federal election law possible, and say what it does.",
-          answer: "Article I, Section 4: the times, places and manner of holding elections for senators and representatives shall be prescribed by each state legislature, 'but the Congress may at any time by Law make or alter such Regulations.' States run elections by default; Congress may override for congressional elections. It is a power of Congress, not of the president.",
+          prompt: "Give the designation dates for the house and the neighbourhood.",
+          answer: "National Historic Landmark January 29, 1964; National Register October 15, 1966, reference 66000010. The Old Northside was listed on the National Register in 1978 and designated an official Indianapolis historic district by the city's preservation commission in the same year.",
         },
         {
-          prompt: "Why does Article I, Section 5 make the 1890 fight so bitter?",
-          answer: "Because each house is the judge of the elections, returns and qualifications of its own members. A federal supervisor's certified count would be evidence for the chamber that decides who gets seated, so the fight was about who controls the documentation that decides who sits in Congress.",
+          prompt: "Name the four consequences of choosing a restoration date.",
+          answer: "Everything after the date becomes clutter to remove; the earliest layers can only be inferred; rooms get assigned a single purpose the family may have used flexibly; and absent people stay absent unless somebody decides otherwise.",
         },
         {
-          prompt: "List what a presidency could NOT do about voting rights in 1889.",
-          answer: "Introduce a bill, schedule floor time, end a filibuster, order a state to register anyone, or enforce a statute Congress had not passed or had repealed.",
+          prompt: "Restate the designation rule this course carries from the Indiana Avenue course.",
+          answer: "Federal listing, including National Historic Landmark status, is recognition plus review leverage when federal money or a permit is involved. It is not a demolition veto for a private owner. Local designation under a local ordinance is what regulates.",
         },
         {
-          prompt: "When a president asks for something and does not get it, what is the useful question?",
-          answer: "Not whether he wanted it enough, but which body had the power, what procedure it used, and who was in the room. The instrument matters more than the intention, and the instrument is written down.",
+          prompt: "What are the Old Northside's boundaries, and which one should stop you?",
+          answer: "16th Street, Bellefontaine Street, I-65, and Pennsylvania Street. An interstate is one of the four sides of the neighbourhood, which is the alignment instrument from course 1 reappearing as a property line.",
         },
       ],
     },
@@ -693,24 +671,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - U.S. Senate. (n.d.). *About filibusters and cloture: Historical overview*. https://www.senate.gov/about/powers-procedures/filibusters-cloture/overview.htm`,
       recallContent: [
         {
-          prompt: "Identify the bill precisely.",
-          answer: "The Federal Elections Bill of 1890, H.R. 11045, 51st Congress. Drafted and introduced by Representative Henry Cabot Lodge of Massachusetts and carried in the Senate by Senator George Frisbie Hoar of Massachusetts.",
+          prompt: "What does Article II, Section 3 actually let a president do about legislation?",
+          answer: "Recommend to Congress's consideration such measures as he judges necessary and expedient. He can ask. Congress is under no obligation to consider, schedule, debate or vote.",
         },
         {
-          prompt: "Walk the bill's machinery in order.",
-          answer: "Citizens petition; a federal circuit court appoints supervisors of elections for congressional elections in that district; supervisors of different political faiths attend registration, inspect lists, judge qualifications, canvass and observe the count; they certify, and the House judges the elections of its own members; criminal penalties cover fraud, bribery and intimidation; federal marshals are available on request.",
+          prompt: "Quote the clause that makes federal election law possible, and say what it does.",
+          answer: "Article I, Section 4: the times, places and manner of holding elections for senators and representatives shall be prescribed by each state legislature, 'but the Congress may at any time by Law make or alter such Regulations.' States run elections by default; Congress may override for congressional elections. It is a power of Congress, not of the president.",
         },
         {
-          prompt: "What is the unresolved detail about the petition, and what should you do about it?",
-          answer: "Published summaries disagree on whether one hundred voters or five hundred citizens had to sign. The bill's text is in the Congressional Record of the 51st Congress, digitised and public, so the threshold is checkable rather than arguable.",
+          prompt: "Why does Article I, Section 5 make the 1890 fight so bitter?",
+          answer: "Because each house is the judge of the elections, returns and qualifications of its own members. A federal supervisor's certified count would be evidence for the chamber that decides who gets seated, so the fight was about who controls the documentation that decides who sits in Congress.",
         },
         {
-          prompt: "Which single provision produced the 'Force Bill' name, and how big a part of the bill was it?",
-          answer: "The availability of federal marshals to secure an election on a supervisor's request. It is one clause of a bill otherwise about registration lists, canvassing and certification.",
+          prompt: "List what a presidency could NOT do about voting rights in 1889.",
+          answer: "Introduce a bill, schedule floor time, end a filibuster, order a state to register anyone, or enforce a statute Congress had not passed or had repealed.",
         },
         {
-          prompt: "Why does the naming fight matter?",
-          answer: "'Federal Elections Bill' describes supervisors with clipboards; 'Force Bill' describes soldiers. Both name the same document, and the slur is the name that survived into the textbooks. Whoever names a bill has already half-argued it.",
+          prompt: "When a president asks for something and does not get it, what is the useful question?",
+          answer: "Not whether he wanted it enough, but which body had the power, what procedure it used, and who was in the room. The instrument matters more than the intention, and the instrument is written down.",
         },
       ],
     },
@@ -764,24 +742,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - Welch, R. E., Jr. (1965). The Federal Elections Bill of 1890: Postscripts and prelude. *The Journal of American History, 52*(3), 511-526.`,
       recallContent: [
         {
-          prompt: "Give the four dates that matter in the bill's death.",
-          answer: "July 2, 1890, the House passes it 155 to 149 with no Democratic votes. December 2, 1890, the Senate takes it up and Democrats begin a filibuster. January 22, 1891, the Senate votes 35 to 34 to set it aside. March 4, 1891, the 51st Congress ends and unpassed bills die.",
+          prompt: "Identify the bill precisely.",
+          answer: "The Federal Elections Bill of 1890, H.R. 11045, 51st Congress. Drafted and introduced by Representative Henry Cabot Lodge of Massachusetts and carried in the Senate by Senator George Frisbie Hoar of Massachusetts.",
         },
         {
-          prompt: "How many times did the Senate vote on whether to enact the bill?",
-          answer: "None. The decisive 35 to 34 vote was about what the Senate would spend its time on, not about the merits of the bill.",
+          prompt: "Walk the bill's machinery in order.",
+          answer: "Citizens petition; a federal circuit court appoints supervisors of elections for congressional elections in that district; supervisors of different political faiths attend registration, inspect lists, judge qualifications, canvass and observe the count; they certify, and the House judges the elections of its own members; criminal penalties cover fraud, bribery and intimidation; federal marshals are available on request.",
         },
         {
-          prompt: "What cloture rule existed in 1891?",
-          answer: "None. The Senate's own history dates the first cloture rule to 1917, Rule 22, adopted at Woodrow Wilson's urging. A majority that cannot close debate is not an operative majority.",
+          prompt: "What is the unresolved detail about the petition, and what should you do about it?",
+          answer: "Published summaries disagree on whether one hundred voters or five hundred citizens had to sign. The bill's text is in the Congressional Record of the 51st Congress, digitised and public, so the threshold is checkable rather than arguable.",
         },
         {
-          prompt: "Why is a motion to displace such an effective weapon?",
-          answer: "You do not have to defeat a bill if you can make the chamber do something else instead. Nobody goes on record voting against the bill; they vote for the other business.",
+          prompt: "Which single provision produced the 'Force Bill' name, and how big a part of the bill was it?",
+          answer: "The availability of federal marshals to secure an election on a supervisor's request. It is one clause of a bill otherwise about registration lists, canvassing and certification.",
         },
         {
-          prompt: "Name the six ways a bill can die and say which ones leave a public record.",
-          answer: "Voted down on final passage (fully visible), filibustered with no cloture (nearly invisible), displaced by a motion to take up other business (deniable), left to expire when the Congress ends (invisible), never scheduled (invisible), killed in committee (low visibility). Only the first puts everyone on the record.",
+          prompt: "Why does the naming fight matter?",
+          answer: "'Federal Elections Bill' describes supervisors with clipboards; 'Force Bill' describes soldiers. Both name the same document, and the slur is the name that survived into the textbooks. Whoever names a bill has already half-argued it.",
         },
       ],
     },
@@ -822,24 +800,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - Welch, R. E., Jr. (1965). The Federal Elections Bill of 1890: Postscripts and prelude. *The Journal of American History, 52*(3), 511-526.`,
       recallContent: [
         {
-          prompt: "State the 'Compromise of 1890' claim in its strongest form.",
-          answer: "That Republicans let the McKinley Tariff and the Sherman Silver Purchase Act through and withdrew support from the federal elections bill, ending the party's commitment to Black suffrage.",
+          prompt: "Give the four dates that matter in the bill's death.",
+          answer: "July 2, 1890, the House passes it 155 to 149 with no Democratic votes. December 2, 1890, the Senate takes it up and Democrats begin a filibuster. January 22, 1891, the Senate votes 35 to 34 to set it aside. March 4, 1891, the 51st Congress ends and unpassed bills die.",
         },
         {
-          prompt: "What are the three solidly established facts underneath that claim?",
-          answer: "All three measures were live in the same Senate in the same year; the tariff and the silver act became law and the elections bill did not; and on January 22, 1891 a group of silver Republicans joined Democrats to set the bill aside 35 to 34.",
+          prompt: "How many times did the Senate vote on whether to enact the bill?",
+          answer: "None. The decisive 35 to 34 vote was about what the Senate would spend its time on, not about the merits of the bill.",
         },
         {
-          prompt: "What does the record read here NOT establish?",
-          answer: "That a bargain was struck by named people at a named time on named terms, and that Harrison was party to it. He kept asking for the bill afterwards, which is the opposite of what a man who had traded it away would do.",
+          prompt: "What cloture rule existed in 1891?",
+          answer: "None. The Senate's own history dates the first cloture rule to 1917, Rule 22, adopted at Woodrow Wilson's urging. A majority that cannot close debate is not an operative majority.",
         },
         {
-          prompt: "Give the defensible formulation you should steal for your own writing.",
-          answer: "The elections bill died in a Senate that had just passed the tariff and the silver act, and a handful of silver Republicans supplied the margin that set it aside; whether that was a bargain or a convergence of interests is contested.",
+          prompt: "Why is a motion to displace such an effective weapon?",
+          answer: "You do not have to defeat a bill if you can make the chamber do something else instead. Nobody goes on record voting against the bill; they vote for the other business.",
         },
         {
-          prompt: "What did McConarty do that makes his article methodologically interesting?",
-          answer: "He read 202 letters sent to Senator Hoar during the bill's nine months and argued from them that Reconstruction-era issues still mattered profoundly to Americans in 1890. He found a body of evidence and counted what was in it rather than arguing about motives.",
+          prompt: "Name the six ways a bill can die and say which ones leave a public record.",
+          answer: "Voted down on final passage (fully visible), filibustered with no cloture (nearly invisible), displaced by a motion to take up other business (deniable), left to expire when the Congress ends (invisible), never scheduled (invisible), killed in committee (low visibility). Only the first puts everyone on the record.",
         },
       ],
     },
@@ -894,24 +872,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - PBS American Experience. (n.d.). *The Lakota Ghost Dance and the massacre at Wounded Knee*. WGBH. https://www.pbs.org/wgbh/americanexperience/features/american-oz-lakota-ghost-dance-massacre-wounded-knee/`,
       recallContent: [
         {
-          prompt: "Quote Harrison's inaugural line about the ballot and give its date.",
-          answer: "March 4, 1889: 'The freedom of the ballot is a condition of our national life, and no power vested in Congress or in the Executive to secure or perpetuate it should remain unused upon occasion.'",
+          prompt: "State the 'Compromise of 1890' claim in its strongest form.",
+          answer: "That Republicans let the McKinley Tariff and the Sherman Silver Purchase Act through and withdrew support from the federal elections bill, ending the party's commitment to Black suffrage.",
         },
         {
-          prompt: "Why do the dates of the four quoted documents matter?",
-          answer: "They run 1889, 1889, 1891 and 1892, which is before the bill, during it, eleven months after it died, and a month after Harrison lost re-election. The claim that he went quiet after 1891 is refuted by his own messages.",
+          prompt: "What are the three solidly established facts underneath that claim?",
+          answer: "All three measures were live in the same Senate in the same year; the tariff and the silver act became law and the elections bill did not; and on January 22, 1891 a group of silver Republicans joined Democrats to set the bill aside 35 to 34.",
         },
         {
-          prompt: "What did Harrison say about lynching in December 1892?",
-          answer: "That the frequent lynching of colored people accused of crime is without the excuse mobs have sometimes urged, that such acts are a reproach to the community where they occur, and that so far as they can be made the subject of federal jurisdiction the strongest repressive legislation is demanded.",
+          prompt: "What does the record read here NOT establish?",
+          answer: "That a bargain was struck by named people at a named time on named terms, and that Harrison was party to it. He kept asking for the bill afterwards, which is the opposite of what a man who had traded it away would do.",
         },
         {
-          prompt: "Name the three parts of the record that do not fit a flattering story.",
-          answer: "He signed the Geary Act on May 5, 1892, extending Chinese exclusion and requiring Chinese residents to carry certificates of residence; he ordered the army into the Sioux reservations on November 13, 1890, and the Wounded Knee massacre followed on December 29; and his own 1888 election carried the 'blocks of five' vote-buying circular written by his campaign treasurer.",
+          prompt: "Give the defensible formulation you should steal for your own writing.",
+          answer: "The elections bill died in a Senate that had just passed the tariff and the silver act, and a handful of silver Republicans supplied the margin that set it aside; whether that was a bargain or a convergence of interests is contested.",
         },
         {
-          prompt: "What is the test of whether you have understood this lesson?",
-          answer: "Both 'Harrison was a champion of civil rights' and 'Harrison did nothing for civil rights' should make you uncomfortable. If only one does, you skipped part of the record.",
+          prompt: "What did McConarty do that makes his article methodologically interesting?",
+          answer: "He read 202 letters sent to Senator Hoar during the bill's nine months and argued from them that Reconstruction-era issues still mattered profoundly to Americans in 1890. He found a body of evidence and counted what was in it rather than arguing about motives.",
         },
       ],
     },
@@ -953,24 +931,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "What is the question the whole cluster is really about?",
-          answer: "Not who may vote, but whose vote decides anything. Governments have spent a century and a half managing the second question, and there are two levers on it.",
+          prompt: "Quote Harrison's inaugural line about the ballot and give its date.",
+          answer: "March 4, 1889: 'The freedom of the ballot is a condition of our national life, and no power vested in Congress or in the Executive to secure or perpetuate it should remain unused upon occasion.'",
         },
         {
-          prompt: "Describe the two levers.",
-          answer: "Lever one is national power over the machinery of an election: federal supervisors watching registration and certifying counts, which failed on a 35 to 34 procedural vote in 1891. Lever two is the boundary of the jurisdiction itself: the 1969 Unigov act, effective January 1, 1970, which passed without a referendum and moved the Black share of the city's population from about 27 percent to about 17 percent.",
+          prompt: "Why do the dates of the four quoted documents matter?",
+          answer: "They run 1889, 1889, 1891 and 1892, which is before the bill, during it, eleven months after it died, and a month after Harrison lost re-election. The claim that he went quiet after 1891 is refuted by his own messages.",
         },
         {
-          prompt: "Which lever is loud and which is quiet, and why does that matter?",
-          answer: "Supervisors at a polling place are visible and opponents could call them an army, so the loud lever failed. A boundary change is a line on a map that most residents never see drawn, so the quiet lever passed and lasted.",
+          prompt: "What did Harrison say about lynching in December 1892?",
+          answer: "That the frequent lynching of colored people accused of crime is without the excuse mobs have sometimes urged, that such acts are a reproach to the community where they occur, and that so far as they can be made the subject of federal jurisdiction the strongest repressive legislation is demanded.",
         },
         {
-          prompt: "State the limit this lesson puts on the comparison.",
-          answer: "The two events are not a causal chain. Eighty years, different governments, parties, instruments and stated purposes separate them. Nobody in the 1969 Indiana General Assembly was finishing what the Senate started in 1891.",
+          prompt: "Name the three parts of the record that do not fit a flattering story.",
+          answer: "He signed the Geary Act on May 5, 1892, extending Chinese exclusion and requiring Chinese residents to carry certificates of residence; he ordered the army into the Sioux reservations on November 13, 1890, and the Wounded Knee massacre followed on December 29; and his own 1888 election carried the 'blocks of five' vote-buying circular written by his campaign treasurer.",
         },
         {
-          prompt: "What is the honest asymmetry between the two cases?",
-          answer: "Lever one required Congress to act and it did not; lever two required a state legislature to act and it did. Doing nothing favours whatever the status quo already produces, so in a system with many veto points the side wanting no change has to win once and the side wanting change has to win at every stage.",
+          prompt: "What is the test of whether you have understood this lesson?",
+          answer: "Both 'Harrison was a champion of civil rights' and 'Harrison did nothing for civil rights' should make you uncomfortable. If only one does, you skipped part of the record.",
         },
       ],
     },
@@ -1378,24 +1356,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - ProPublica. (n.d.). *Nonprofit Explorer*. https://projects.propublica.org/nonprofits/`,
       recallContent: [
         {
-          prompt: "Who owns and runs the Benjamin Harrison house, and who does not?",
-          answer: "A not-for-profit, tax-exempt operating foundation established in 1966. It is not a federal property and not run by the National Park Service, even though it is a National Historic Landmark. Listing is recognition, not ownership and not control.",
+          prompt: "What is the question the whole cluster is really about?",
+          answer: "Not who may vote, but whose vote decides anything. Governments have spent a century and a half managing the second question, and there are two levers on it.",
         },
         {
-          prompt: "Trace the ownership chain from the family to today.",
-          answer: "Mary Lord Harrison sold to the Arthur Jordan School of Music, which used the upper floors as a dormitory and the ground floor as a museum; the Arthur Jordan Foundation renovated it; a not-for-profit operating foundation has run it since 1966, and the museum has been accredited by the American Alliance of Museums since 2003.",
+          prompt: "Describe the two levers.",
+          answer: "Lever one is national power over the machinery of an election: federal supervisors watching registration and certifying counts, which failed on a 35 to 34 procedural vote in 1891. Lever two is the boundary of the jurisdiction itself: the 1969 Unigov act, effective January 1, 1970, which passed without a referendum and moved the Black share of the city's population from about 27 percent to about 17 percent.",
         },
         {
-          prompt: "State the four questions to ask about any museum or historic site.",
-          answer: "What legal entity owns and operates it; where the money comes from; who governs it and how they are chosen; and what is on the public record.",
+          prompt: "Which lever is loud and which is quiet, and why does that matter?",
+          answer: "Supervisors at a polling place are visible and opponents could call them an army, so the loud lever failed. A boundary change is a line on a map that most residents never see drawn, so the quiet lever passed and lasted.",
         },
         {
-          prompt: "What does an IRS Form 990 show, and where can you read one?",
-          answer: "Total revenue and expenses, the largest programme areas, the highest-paid staff and contractors, and the board. It is a public document, searchable free through the IRS Tax Exempt Organization Search or ProPublica's Nonprofit Explorer.",
+          prompt: "State the limit this lesson puts on the comparison.",
+          answer: "The two events are not a causal chain. Eighty years, different governments, parties, instruments and stated purposes separate them. Nobody in the 1969 Indiana General Assembly was finishing what the Senate started in 1891.",
         },
         {
-          prompt: "Why does this course refuse to give a budget figure for the site?",
-          answer: "Because third-party aggregators republish nonprofit financials with varying dates and definitions. The right figure is the one you read yourself on an actual Form 990 whose tax year you can state.",
+          prompt: "What is the honest asymmetry between the two cases?",
+          answer: "Lever one required Congress to act and it did not; lever two required a state legislature to act and it did. Doing nothing favours whatever the status quo already produces, so in a system with many veto points the side wanting no change has to win once and the side wanting change has to win at every stage.",
         },
       ],
     },
@@ -1439,24 +1417,24 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 - National Trust for Historic Preservation. (n.d.). *Statement on the recent conflict between The Montpelier Foundation and The Montpelier Descendants Committee*. https://savingplaces.org/press-center/media-resources/statement-conflict-montpelier-foundation-and-montpelier-descendants-committee`,
       recallContent: [
         {
-          prompt: "What is interpretation, and what are the six decisions behind it?",
-          answer: "Deciding what a site says out loud in its rooms. The decisions are the period of significance, the restoration date, the interpretive themes, the tour script, the label copy, and the programmes. Only the programmes are normally visible from outside.",
+          prompt: "Who owns and runs the Benjamin Harrison house, and who does not?",
+          answer: "A not-for-profit, tax-exempt operating foundation established in 1966. It is not a federal property and not run by the National Park Service, even though it is a National Historic Landmark. Listing is recognition, not ownership and not control.",
         },
         {
-          prompt: "Why is Harrison's record a hard interpretive problem for this house?",
-          answer: "Because it will not fit on a label. Repeated public demands for ballot protection, a bill killed on a procedural vote, the Geary Act, Wounded Knee, and a vote-buying circular in his own election cannot all sit in one sentence, so somebody must choose.",
+          prompt: "Trace the ownership chain from the family to today.",
+          answer: "Mary Lord Harrison sold to the Arthur Jordan School of Music, which used the upper floors as a dormitory and the ground floor as a museum; the Arthur Jordan Foundation renovated it; a not-for-profit operating foundation has run it since 1966, and the museum has been accredited by the American Alliance of Museums since 2003.",
         },
         {
-          prompt: "Summarise the Montpelier governance sequence and its dates.",
-          answer: "June 2021, the foundation's bylaws commit to at least half the board being recommended or endorsed by the Montpelier Descendants Committee. March 2022, the board rescinds it, producing national backlash including from staff and the National Trust. May 16, 2022, the board elects the Descendants Committee's slate, achieving structural parity.",
+          prompt: "State the four questions to ask about any museum or historic site.",
+          answer: "What legal entity owns and operates it; where the money comes from; who governs it and how they are chosen; and what is on the public record.",
         },
         {
-          prompt: "Why did public pressure work at Montpelier?",
-          answer: "Because the decision was visible. Bylaws are documents, board votes are minuted, and a national organisation with standing said so publicly. That is beat 5 in its purest form.",
+          prompt: "What does an IRS Form 990 show, and where can you read one?",
+          answer: "Total revenue and expenses, the largest programme areas, the highest-paid staff and contractors, and the board. It is a public document, searchable free through the IRS Tax Exempt Organization Search or ProPublica's Nonprofit Explorer.",
         },
         {
-          prompt: "List the four questions to ask about interpretation at any site.",
-          answer: "What period does the site interpret and when was that last reviewed; whose lives are represented and whose are not; is there a written interpretive plan you may read; and who is on the board, how were they selected, and does a descendant or community body have a formal role.",
+          prompt: "Why does this course refuse to give a budget figure for the site?",
+          answer: "Because third-party aggregators republish nonprofit financials with varying dates and definitions. The right figure is the one you read yourself on an actual Form 990 whose tax year you can state.",
         },
       ],
     },
@@ -1911,20 +1889,24 @@ A short, checkable piece in which every sentence is either something you read in
 - U.S. Senate. (n.d.). *About filibusters and cloture: Historical overview*. https://www.senate.gov/about/powers-procedures/filibusters-cloture/overview.htm`,
       recallContent: [
         {
-          prompt: "What is the actual product of this course?",
-          answer: "The six-beat site template run on a subject that is half a building and half a bill: Then, Built, Powers, Now, Next, Write. The Harrison material is the worked example.",
+          prompt: "What is interpretation, and what are the six decisions behind it?",
+          answer: "Deciding what a site says out loud in its rooms. The decisions are the period of significance, the restoration date, the interpretive themes, the tour script, the label copy, and the programmes. Only the programmes are normally visible from outside.",
         },
         {
-          prompt: "Name the single largest open item this course admits to.",
-          answer: "It has read descriptions of H.R. 11045's provisions, not the bill itself. The text is in the Congressional Record of the 51st Congress, digitised and public.",
+          prompt: "Why is Harrison's record a hard interpretive problem for this house?",
+          answer: "Because it will not fit on a label. Repeated public demands for ballot protection, a bill killed on a procedural vote, the Geary Act, Wounded Knee, and a vote-buying circular in his own election cannot all sit in one sentence, so somebody must choose.",
         },
         {
-          prompt: "Why does this course refuse to deliver a verdict on Harrison?",
-          answer: "Because a verdict is not a research output, and because the learner now has enough of the file to form one and to say what it rests on.",
+          prompt: "Summarise the Montpelier governance sequence and its dates.",
+          answer: "June 2021, the foundation's bylaws commit to at least half the board being recommended or endorsed by the Montpelier Descendants Committee. March 2022, the board rescinds it, producing national backlash including from staff and the National Trust. May 16, 2022, the board elects the Descendants Committee's slate, achieving structural parity.",
         },
         {
-          prompt: "State the closing argument about the gap between 1891 and 1965.",
-          answer: "A president wrote the right sentences and his party held both chambers, and it was not enough, because the office could ask and not act and the Senate had no way to stop a minority from talking. The gap is a gap in procedure, not in sincerity, and procedure can be read, learned and changed.",
+          prompt: "Why did public pressure work at Montpelier?",
+          answer: "Because the decision was visible. Bylaws are documents, board votes are minuted, and a national organisation with standing said so publicly. That is beat 5 in its purest form.",
+        },
+        {
+          prompt: "List the four questions to ask about interpretation at any site.",
+          answer: "What period does the site interpret and when was that last reviewed; whose lives are represented and whose are not; is there a written interpretive plan you may read; and who is on the board, how were they selected, and does a descendant or community body have a formal role.",
         },
       ],
     },

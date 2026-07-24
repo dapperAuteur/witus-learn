@@ -452,6 +452,28 @@ follow-ups. Tell Claude which to author.`,
     provenance: "plans/future-courses/civics-more-proposal.md",
   },
   {
+    key: "cross-city-connections",
+    title: "Cross-city connections: the DC-to-Indianapolis kind, at scale",
+    summary: "Finding lines like DC-to-Indianapolis (Washington authorised blight clearance in Berman v. Parker,",
+    body: `# Cross-city connections: the DC-to-Indianapolis kind, at scale
+
+Finding lines like DC-to-Indianapolis (Washington authorised blight clearance in Berman v. Parker,
+1954; Indianapolis used it on Indiana Avenue) across the US and globally. A source-and-use link is a
+documented line of transmission, not a thematic rhyme.
+
+Strongest US nodes to verify: Washington DC (Berman, the origin node for blight clearance
+nationwide), New Haven under Mayor Lee (the most-studied renewal model), Chicago (covenants and
+redlining as national technologies), Detroit (Milliken making every district line a wall), and
+Louisville's Buchanan v. Warley 1917 as the hinge that pushed racial zoning into covenants then
+redlining, which Baltimore then shows end to end. The common upstream is federal: the 1949 and 1954
+Housing Acts, the FHA Underwriting Manual, the 1956 Highway Act.
+
+Build: one cross-link lesson per existing city course, then a "how the tools travelled" capstone,
+then a diagram (DC and the federal acts are hubs, cities are leaves). Every edge is a claim of
+causation and must be sourced to that standard. Full plan: plans/42-cross-city-connections.md.`,
+    provenance: "plans/future-courses/cross-city-connections.md",
+  },
+  {
     key: "green-book",
     title: "Green book",
     summary: "Green Book",
@@ -661,6 +683,29 @@ and the **parent Family view** (a linked parent sees their own child's progress,
 attendance, powers the Guided tier's progress dashboard). Kid-friendly avatar+PIN login is available
 for young students without email._`,
     provenance: "plans/future-courses/home-school-pricing.md",
+  },
+  {
+    key: "jim-crow-export",
+    title: "How South Africa and Nazi Germany learned from US Jim Crow",
+    summary: "NEEDS BAM SIGN-OFF BEFORE AUTHORING. The most sensitive topic in the route series.",
+    body: `# How South Africa and Nazi Germany learned from US Jim Crow
+
+NEEDS BAM SIGN-OFF BEFORE AUTHORING. The most sensitive topic in the route series.
+
+The United States as a source node in the global history of racial law. Two claims kept strictly
+separate. (A) Nazi Germany: anchored in James Q. Whitman, Hitler's American Model (Princeton, 2017),
+a mainstream legal history showing Nazi lawyers studied US immigration, citizenship and
+anti-miscegenation law, while finding parts (the one-drop rule) too harsh to copy. "Influence" means
+studied and selectively drew on, never replicated. (B) Apartheid South Africa: a different
+evidentiary base, parallel development with a shared British colonial parent and documented mutual
+awareness, plus later cross-citation between the civil rights and anti-apartheid movements. Do not
+extend the German thesis to South Africa.
+
+Shape: one carefully built course, not a track, that leads with how to hold the claim, recaps what
+the US city courses already established, presents Germany then South Africa, teaches the limits of
+the analogy explicitly, and never equates outcomes. Companion to the shipped Pan-Africanism and
+Afrocentricity courses (this is the legal-technique thread). Full plan: plans/43-jim-crow-export.md.`,
+    provenance: "plans/future-courses/jim-crow-export.md",
   },
   {
     key: "metro-paths",

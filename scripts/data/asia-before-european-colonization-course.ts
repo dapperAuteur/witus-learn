@@ -95,18 +95,6 @@ One more piece of framing, because the course title uses a loaded phrase. "Befor
 - Frankopan, P. (2015). *The Silk Roads: A new history of the world*. Bloomsbury.
 - Lockard, C. A. (2009). *Southeast Asia in world history*. Oxford University Press.
 - Hansen, V. (2020). *The year 1000: When explorers connected the world and globalization began*. Scribner.`,
-      recallContent: [
-        {
-          prompt: "What is the one rule this course adopts before any history, and why?",
-          answer:
-            "Never say 'Asia did X.' Name the civilization, the period, and the region for every claim, because 'Asia' is an outsiders' label (Greek in origin) covering roughly 60 percent of humanity, and flattened claims can neither be checked nor falsified.",
-        },
-        {
-          prompt: "Give the key dates that show 'European colonization of Asia' was not one event.",
-          answer:
-            "Coastal enclaves first: Goa 1510, Malacca 1511, Manila 1571. Territorial rule only from Plassey in Bengal, 1757; most of mainland Southeast Asia annexed in the 1800s. Japan, Korea, Siam, and most of China were never European colonies; Korea was colonized by Japan (1910-1945).",
-        },
-      ],
     },
     {
       slug: "asia-center-of-gravity",
@@ -135,14 +123,14 @@ So here is the course's claim, stated with the discipline it will demand of ever
 - Abu-Lughod, J. L. (1989). *Before European hegemony: The world system A.D. 1250-1350*. Oxford University Press.`,
       recallContent: [
         {
-          prompt: "State the course's central claim with its full source discipline (attribution + hedges).",
+          prompt: "What is the one rule this course adopts before any history, and why?",
           answer:
-            "According to the standard reconstructions (Maddison, 2007, revised by the Maddison Project), China and India together accounted for roughly half of world output as late as 1820; the timing and causes of the reversal are contested (Pomeranz, 2000, argues late and contingent; Broadberry, Guan & Li, 2018, argue earlier).",
+            "Never say 'Asia did X.' Name the civilization, the period, and the region for every claim, because 'Asia' is an outsiders' label (Greek in origin) covering roughly 60 percent of humanity, and flattened claims can neither be checked nor falsified.",
         },
         {
-          prompt: "What physical, non-spreadsheet evidence points to Asia as the economic center before 1800?",
+          prompt: "Give the key dates that show 'European colonization of Asia' was not one event.",
           answer:
-            "The direction of trade: Europeans sailed east to buy Indian cotton, Chinese silk and porcelain, and Southeast Asian spices, and paid overwhelmingly in silver (much of it Spanish-American), because Asia made what the world wanted (Frank, 1998; Pomeranz, 2000).",
+            "Coastal enclaves first: Goa 1510, Malacca 1511, Manila 1571. Territorial rule only from Plassey in Bengal, 1757; most of mainland Southeast Asia annexed in the 1800s. Japan, Korea, Siam, and most of China were never European colonies; Korea was colonized by Japan (1910-1945).",
         },
       ],
     },
@@ -379,14 +367,14 @@ Around **1900 BCE** the urban system faded: cities shrank, writing and the weigh
 - UNESCO World Heritage Centre. (n.d.). *Archaeological ruins at Moenjodaro*. https://whc.unesco.org/en/list/138/`,
       recallContent: [
         {
-          prompt: "Give the Indus civilization's mature dates, two cities in each modern country, and its scale.",
+          prompt: "State the course's central claim with its full source discipline (attribution + hedges).",
           answer:
-            "Mature urban phase c. 2600-1900 BCE. Mohenjo-daro and Harappa (present-day Pakistan); Dholavira and Rakhigarhi (present-day India). Well over a thousand recorded settlements, covering an area larger by common estimates than Egypt and Mesopotamia combined.",
+            "According to the standard reconstructions (Maddison, 2007, revised by the Maddison Project), China and India together accounted for roughly half of world output as late as 1820; the timing and causes of the reversal are contested (Pomeranz, 2000, argues late and contingent; Broadberry, Guan & Li, 2018, argue earlier).",
         },
         {
-          prompt: "What physical evidence shows Indus cities were planned, and what is notably absent from the digs?",
+          prompt: "What physical, non-spreadsheet evidence points to Asia as the economic center before 1800?",
           answer:
-            "Regular street alignments, standardized fired bricks, a single weight system across sites, covered street drains with house connections, bathing platforms, and the Great Bath at Mohenjo-daro. Absent: readable texts, named rulers, grand royal tombs, and unambiguous palaces or temples.",
+            "The direction of trade: Europeans sailed east to buy Indian cotton, Chinese silk and porcelain, and Southeast Asian spices, and paid overwhelmingly in silver (much of it Spanish-American), because Asia made what the world wanted (Frank, 1998; Pomeranz, 2000).",
         },
       ],
     },
@@ -414,14 +402,14 @@ One caution against the romance trap. Ashoka's remorse did not dissolve his empi
 - Dhammika, S. (Trans.). (1993). *The edicts of King Asoka: An English rendering*. Buddhist Publication Society.`,
       recallContent: [
         {
-          prompt: "Date the Maurya empire's founding and Ashoka's reign, and name the capital.",
+          prompt: "Give the Indus civilization's mature dates, two cities in each modern country, and its scale.",
           answer:
-            "Chandragupta Maurya took power in Magadha c. 321 BCE, after Alexander's withdrawal from the Indus region; capital Pataliputra (near modern Patna). Ashoka reigned c. 268-232 BCE.",
+            "Mature urban phase c. 2600-1900 BCE. Mohenjo-daro and Harappa (present-day Pakistan); Dholavira and Rakhigarhi (present-day India). Well over a thousand recorded settlements, covering an area larger by common estimates than Egypt and Mesopotamia combined.",
         },
         {
-          prompt: "In what languages and scripts were Ashoka's edicts written, and who read them again after they were forgotten?",
+          prompt: "What physical evidence shows Indus cities were planned, and what is notably absent from the digs?",
           answer:
-            "Mostly Prakrit in the Brahmi script, Kharosthi in the northwest, plus a Greek-and-Aramaic bilingual at Kandahar. Brahmi was forgotten for centuries and deciphered in 1837 by James Prinsep, building on Indian pandits' and earlier scholars' work.",
+            "Regular street alignments, standardized fired bricks, a single weight system across sites, covered street drains with house connections, bathing platforms, and the Great Bath at Mohenjo-daro. Absent: readable texts, named rulers, grand royal tombs, and unambiguous palaces or temples.",
         },
       ],
     },
@@ -450,14 +438,14 @@ Why does this lesson matter beyond trivia? Because it models how to make a "who 
 - Thapar, R. (2002). *Early India: From the origins to AD 1300*. University of California Press.`,
       recallContent: [
         {
-          prompt: "What exactly did Brahmagupta do in 628 CE, and what error of his does the course record?",
+          prompt: "Date the Maurya empire's founding and Ashoka's reign, and name the capital.",
           answer:
-            "In the Brahmasphutasiddhanta he stated systematic rules for arithmetic with zero and with negative numbers, the earliest known text to treat zero as a number to calculate with. He also ruled that zero divided by zero equals zero, which is wrong; the course records the error deliberately.",
+            "Chandragupta Maurya took power in Magadha c. 321 BCE, after Alexander's withdrawal from the Indus region; capital Pataliputra (near modern Patna). Ashoka reigned c. 268-232 BCE.",
         },
         {
-          prompt: "Why are 'our numbers' called Arabic numerals, and what does the course say the label records?",
+          prompt: "In what languages and scripts were Ashoka's edicts written, and who read them again after they were forgotten?",
           answer:
-            "Because Europe received them via the Arabic world: al-Khwarizmi wrote on calculation with the Indian numerals in Baghdad c. 820s, and Latin translations plus Fibonacci's Liber Abaci (1202) spread them in Europe. The label records the messenger, not the origin; Arabic mathematicians themselves called it Hindi reckoning.",
+            "Mostly Prakrit in the Brahmi script, Kharosthi in the northwest, plus a Greek-and-Aramaic bilingual at Kandahar. Brahmi was forgotten for centuries and deciphered in 1837 by James Prinsep, building on Indian pandits' and earlier scholars' work.",
         },
       ],
     },
@@ -486,14 +474,14 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
 - UNESCO World Heritage Centre. (n.d.). *Taj Mahal*. https://whc.unesco.org/en/list/252/`,
       recallContent: [
         {
-          prompt: "Who founded the Mughal empire, when, from where, and what does the dynasty's name mean?",
+          prompt: "What exactly did Brahmagupta do in 628 CE, and what error of his does the course record?",
           answer:
-            "Babur, a Timurid prince from the Fergana valley (present-day Uzbekistan), descended from Timur and Genghis Khan, defeated Ibrahim Lodi at the First Battle of Panipat in 1526. 'Mughal' is a Persian form of 'Mongol,' an outsiders' label for an outsider dynasty.",
+            "In the Brahmasphutasiddhanta he stated systematic rules for arithmetic with zero and with negative numbers, the earliest known text to treat zero as a number to calculate with. He also ruled that zero divided by zero equals zero, which is wrong; the course records the error deliberately.",
         },
         {
-          prompt: "Give the datable sequence from Mughal peak to European territorial rule.",
+          prompt: "Why are 'our numbers' called Arabic numerals, and what does the course say the label records?",
           answer:
-            "Akbar's consolidation 1556-1605; Roe arrives as a supplicant at Jahangir's court 1615; Maddison's estimate puts the subcontinent at roughly a quarter of world output c. 1700; Aurangzeb dies 1707 and the empire fragments; Plassey 1757; the Company takes Bengal's diwani 1765; the last Mughal is deposed 1857.",
+            "Because Europe received them via the Arabic world: al-Khwarizmi wrote on calculation with the Indian numerals in Baghdad c. 820s, and Latin translations plus Fibonacci's Liber Abaci (1202) spread them in Europe. The label records the messenger, not the origin; Arabic mathematicians themselves called it Hindi reckoning.",
         },
       ],
     },
@@ -729,14 +717,14 @@ The honest ledger, as always: the **An Lushan rebellion** (**755-763**) devastat
 - British Library. (n.d.). *The Diamond Sutra* (Or.8210/P.2). https://www.bl.uk/`,
       recallContent: [
         {
-          prompt: "What makes the Han census of 2 CE a different kind of evidence from Maddison's GDP shares?",
+          prompt: "Who founded the Mughal empire, when, from where, and what does the dynasty's name mean?",
           answer:
-            "It is an administrative document produced by the state it describes (roughly 57 million registered persons), not a modern reconstruction. Its limits are different too: it counts registered people, so its later collapses can reflect broken registration rather than deaths, as the An Lushan case shows.",
+            "Babur, a Timurid prince from the Fergana valley (present-day Uzbekistan), descended from Timur and Genghis Khan, defeated Ibrahim Lodi at the First Battle of Panipat in 1526. 'Mughal' is a Persian form of 'Mongol,' an outsiders' label for an outsider dynasty.",
         },
         {
-          prompt: "State the paper and printing facts precisely, with dates and hedges.",
+          prompt: "Give the datable sequence from Mughal peak to European territorial rule.",
           answer:
-            "Paper: the official history credits Cai Lun with a refined process in 105 CE, but archaeology finds older paper, so he standardized an emerging technology. Printing: the Diamond Sutra, woodblock-printed with a colophon dated 11 May 868, found at Dunhuang and held by the British Library, is the earliest securely dated complete printed book.",
+            "Akbar's consolidation 1556-1605; Roe arrives as a supplicant at Jahangir's court 1615; Maddison's estimate puts the subcontinent at roughly a quarter of world output c. 1700; Aurangzeb dies 1707 and the empire fragments; Plassey 1757; the Company takes Bengal's diwani 1765; the last Mughal is deposed 1857.",
         },
       ],
     },
@@ -768,14 +756,14 @@ The honest ledger. Song China was not a superpower in the military sense: it pai
 - Hansen, V. (2020). *The year 1000: When explorers connected the world and globalization began*. Scribner.`,
       recallContent: [
         {
-          prompt: "What did Elvin (1973) mean by the Song 'medieval economic revolution'? List the ingredients.",
+          prompt: "What makes the Han census of 2 CE a different kind of evidence from Maddison's GDP shares?",
           answer:
-            "Population past a commonly estimated 100 million; Champa rice double-cropping; dense market and canal networks; cities of about a million (Kaifeng, Hangzhou); mass printing; the world's first government paper money (jiaozi, from the 1020s); large-scale, partly coal-fired iron production (Hartwell's estimate ~125,000 tons/year by 1078, labeled an estimate).",
+            "It is an administrative document produced by the state it describes (roughly 57 million registered persons), not a modern reconstruction. Its limits are different too: it counts registered people, so its later collapses can reflect broken registration rather than deaths, as the An Lushan case shows.",
         },
         {
-          prompt: "What belongs on the Song lesson's honest ledger?",
+          prompt: "State the paper and printing facts precisely, with dates and hedges.",
           answer:
-            "Military vulnerability alongside wealth: negotiated payments to the Liao after 1005, loss of the north to the Jin in 1127, conquest by the Mongols in 1279. And foot binding began spreading among elite women during the Song, a documented harm no account of the era may omit.",
+            "Paper: the official history credits Cai Lun with a refined process in 105 CE, but archaeology finds older paper, so he standardized an emerging technology. Printing: the Diamond Sutra, woodblock-printed with a colophon dated 11 May 868, found at Dunhuang and held by the British Library, is the earliest securely dated complete printed book.",
         },
       ],
     },
@@ -802,14 +790,14 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
 - UNESCO World Heritage Centre. (n.d.). *Haeinsa Temple Janggyeong Panjeon, the depositories for the Tripitaka Koreana woodblocks*. https://whc.unesco.org/en/list/737/`,
       recallContent: [
         {
-          prompt: "Describe Japan's dual political structure and give its dates.",
+          prompt: "What did Elvin (1973) mean by the Song 'medieval economic revolution'? List the ingredients.",
           answer:
-            "From Minamoto no Yoritomo's appointment as shogun in 1192 until 1868, emperors reigned as sacred figureheads in Kyoto while warrior governments (Kamakura, Ashikaga, then Tokugawa from 1603) actually ruled: nearly 700 years of reign without rule.",
+            "Population past a commonly estimated 100 million; Champa rice double-cropping; dense market and canal networks; cities of about a million (Kaifeng, Hangzhou); mass printing; the world's first government paper money (jiaozi, from the 1020s); large-scale, partly coal-fired iron production (Hartwell's estimate ~125,000 tons/year by 1078, labeled an estimate).",
         },
         {
-          prompt: "What makes Hangul almost unique among the world's writing systems?",
+          prompt: "What belongs on the Song lesson's honest ledger?",
           answer:
-            "It has a named creator (King Sejong and his scholars, 1443), a stated design rationale (so ordinary people unable to learn Chinese characters could write, per the Hunminjeongeum), and a publication date (1446). Elite resistance kept Chinese characters dominant for centuries, but the alphabet became modern Korea's script.",
+            "Military vulnerability alongside wealth: negotiated payments to the Liao after 1005, loss of the north to the Jin in 1127, conquest by the Mongols in 1279. And foot binding began spreading among elite women during the Song, a documented harm no account of the era may omit.",
         },
       ],
     },
@@ -1046,14 +1034,14 @@ What ended it? The old story says Angkor "fell" when the Thai kingdom of **Ayutt
 - UNESCO World Heritage Centre. (n.d.). *Angkor*. https://whc.unesco.org/en/list/668/`,
       recallContent: [
         {
-          prompt: "Who is Zhou Daguan and why does he matter to this course twice over?",
+          prompt: "Describe Japan's dual political structure and give its dates.",
           answer:
-            "A Chinese envoy who lived at Angkor in 1296-97 and wrote the only surviving eyewitness account of the city in its prime. He matters once as evidence (processions, women-run markets, daily life) and once for the honest ledger: he matter-of-factly describes enslaved people in Khmer households.",
+            "From Minamoto no Yoritomo's appointment as shogun in 1192 until 1868, emperors reigned as sacred figureheads in Kyoto while warrior governments (Kamakura, Ashikaga, then Tokugawa from 1603) actually ruled: nearly 700 years of reign without rule.",
         },
         {
-          prompt: "Why does the course reject 'Henri Mouhot discovered Angkor,' and what is the fuller account of Angkor's end?",
+          prompt: "What makes Hangul almost unique among the world's writing systems?",
           answer:
-            "Angkor Wat was never abandoned (Khmer worshippers used it continuously, and Iberian visitors described it in the 1500s); Mouhot's 1860s writings only made it famous in Europe. The end of Angkor as capital combines recorded megadroughts and violent monsoon swings (Buckley et al., 2010), shifting coastal trade, the recorded 1431 Ayutthaya sack, and the court's move toward Phnom Penh.",
+            "It has a named creator (King Sejong and his scholars, 1443), a stated design rationale (so ordinary people unable to learn Chinese characters could write, per the Hunminjeongeum), and a publication date (1446). Elite resistance kept Chinese characters dominant for centuries, but the alphabet became modern Korea's script.",
         },
       ],
     },
@@ -1080,14 +1068,14 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
 - UNESCO World Heritage Centre. (n.d.). *Borobudur Temple Compounds*. https://whc.unesco.org/en/list/592/`,
       recallContent: [
         {
-          prompt: "What kind of empire was Srivijaya, and what did Yijing report there?",
+          prompt: "Who is Zhou Daguan and why does he matter to this course twice over?",
           answer:
-            "A Buddhist thalassocracy (empire of harbors and fleets, not broad territory) centered by the standard identification at Palembang, Sumatra, controlling the Malacca and Sunda straits from the late 600s into the 1000s. Yijing, stopping in 671 and again in the 680s-690s, reported (his account) over a thousand monks and advised pilgrims to study Sanskrit there before India.",
+            "A Chinese envoy who lived at Angkor in 1296-97 and wrote the only surviving eyewitness account of the city in its prime. He matters once as evidence (processions, women-run markets, daily life) and once for the honest ledger: he matter-of-factly describes enslaved people in Khmer households.",
         },
         {
-          prompt: "How does the course tell you to read the Nagarakretagama's list of a hundred tributaries?",
+          prompt: "Why does the course reject 'Henri Mouhot discovered Angkor,' and what is the fuller account of Angkor's end?",
           answer:
-            "As a court panegyric of 1365 (Mpu Prapanca praising Hayam Wuruk's Majapahit): evidence of the empire's horizon and prestige, but how much real control it reflects is debated among historians. Same discipline as Maddison's shares: name the source, state what it is, do not upgrade praise into administration.",
+            "Angkor Wat was never abandoned (Khmer worshippers used it continuously, and Iberian visitors described it in the 1500s); Mouhot's 1860s writings only made it famous in Europe. The end of Angkor as capital combines recorded megadroughts and violent monsoon swings (Buckley et al., 2010), shifting coastal trade, the recorded 1431 Ayutthaya sack, and the court's move toward Phnom Penh.",
         },
       ],
     },
@@ -1324,14 +1312,14 @@ Peter Frankopan's *The Silk Roads* (2015) argues these corridors, not the Medite
 - UNESCO World Heritage Centre. (2014). *Silk Roads: The routes network of Chang'an-Tianshan corridor*. https://whc.unesco.org/en/list/1442/`,
       recallContent: [
         {
-          prompt: "Who coined 'Silk Road,' when, and why does the course lead with that fact?",
+          prompt: "What kind of empire was Srivijaya, and what did Yijing report there?",
           answer:
-            "Ferdinand von Richthofen, a German geographer, in 1877. The course leads with it because the name, like 'Asia,' is a modern label pasted onto older realities, and knowing a term's origin inoculates against treating the label as the thing.",
+            "A Buddhist thalassocracy (empire of harbors and fleets, not broad territory) centered by the standard identification at Palembang, Sumatra, controlling the Malacca and Sunda straits from the late 600s into the 1000s. Yijing, stopping in 671 and again in the 680s-690s, reported (his account) over a thousand monks and advised pilgrims to study Sanskrit there before India.",
         },
         {
-          prompt: "How does the course handle the Battle of Talas paper story?",
+          prompt: "How does the course tell you to read the Nagarakretagama's list of a hundred tributaries?",
           answer:
-            "As a tale, not a record: the story that captured Chinese papermakers brought papermaking to Samarkand after 751 is treated by historians as legend, since paper existed in Central Asia earlier. What is documented is the outcome: paper mills in Samarkand and Baghdad by the late 700s.",
+            "As a court panegyric of 1365 (Mpu Prapanca praising Hayam Wuruk's Majapahit): evidence of the empire's horizon and prestige, but how much real control it reflects is debated among historians. Same discipline as Maddison's shares: name the source, state what it is, do not upgrade praise into administration.",
         },
       ],
     },
@@ -1364,14 +1352,14 @@ Two honest notes to close. First, the "golden age" frame has its own trap: it ca
 - Plofker, K. (2009). *Mathematics in India*. Princeton University Press.`,
       recallContent: [
         {
-          prompt: "Name the three scholars this lesson uses to show the movement produced new science, with their contributions.",
+          prompt: "Who coined 'Silk Road,' when, and why does the course lead with that fact?",
           answer:
-            "Al-Khwarizmi (algebra, from his book's title al-jabr, plus the treatise on Indian numerals; 'algorithm' from his name), Ibn al-Haytham (Book of Optics, c. 1011-1021, experiment-based theory of vision), and Ibn Sina (Canon of Medicine, 1025, a standard European medical text in Latin translation into the early modern period).",
+            "Ferdinand von Richthofen, a German geographer, in 1877. The course leads with it because the name, like 'Asia,' is a modern label pasted onto older realities, and knowing a term's origin inoculates against treating the label as the thing.",
         },
         {
-          prompt: "What two enabling conditions made the Baghdad translation movement possible?",
+          prompt: "How does the course handle the Battle of Talas paper story?",
           answer:
-            "Paper mills (Samarkand, then Baghdad, by the late 700s) made books far cheaper than parchment, and the Abbasid realm inherited scholarly communities, prominently Greek-literate Christians, who did much of the translating under broad patronage from caliphs down to merchant families.",
+            "As a tale, not a record: the story that captured Chinese papermakers brought papermaking to Samarkand after 751 is treated by historians as legend, since paper existed in Central Asia earlier. What is documented is the outcome: paper mills in Samarkand and Baghdad by the late 700s.",
         },
       ],
     },
@@ -1397,14 +1385,14 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
 - Frankopan, P. (2015). *The Silk Roads: A new history of the world*. Bloomsbury.`,
       recallContent: [
         {
-          prompt: "List the documented machinery of the 'Pax Mongolica' side of the ledger.",
+          prompt: "Name the three scholars this lesson uses to show the movement produced new science, with their contributions.",
           answer:
-            "The yam post-road relay with stations, remounts, and passports; imperial censuses; deliberate sparing and relocation of artisans and engineers; trunk routes safe enough for routine trans-Eurasian commerce (Marco Polo's 1271-95 journey, debated in detail, accepted in substance); pragmatic religious tolerance; Persian and Chinese experts exchanged across the empire.",
+            "Al-Khwarizmi (algebra, from his book's title al-jabr, plus the treatise on Indian numerals; 'algorithm' from his name), Ibn al-Haytham (Book of Optics, c. 1011-1021, experiment-based theory of vision), and Ibn Sina (Canon of Medicine, 1025, a standard European medical text in Latin translation into the early modern period).",
         },
         {
-          prompt: "Trace the Mongol threads that connect to other lessons in this course.",
+          prompt: "What two enabling conditions made the Baghdad translation movement possible?",
           answer:
-            "Baghdad 1258 ends the Abbasid lesson's era; Yuan conquest of Song 1279 ends the Song lesson; the failed invasions of Japan (1274, 1281) and the repelled Java expedition (Majapahit's founding, 1293) appear in Sections 3-4; Babur, founder of the Mughals (1526), claimed descent from both Chinggis Khan and Timur.",
+            "Paper mills (Samarkand, then Baghdad, by the late 700s) made books far cheaper than parchment, and the Abbasid realm inherited scholarly communities, prominently Greek-literate Christians, who did much of the translating under broad patronage from caliphs down to merchant families.",
         },
       ],
     },
@@ -1642,14 +1630,14 @@ Why does an orientation course spend a lesson on this? Three reasons, and they e
 - Seth, M. J. (2011). *A history of Korea: From antiquity to the present*. Rowman & Littlefield.`,
       recallContent: [
         {
-          prompt: "State the two opposite myths about caste that the course rejects, and the documented position between them.",
+          prompt: "List the documented machinery of the 'Pax Mongolica' side of the ledger.",
           answer:
-            "Myth one: caste as an eternal, unchanging essence of India. Myth two: caste as a British invention. Documented position: textual hierarchy is ancient (varna in a late Rigveda hymn; the Manusmriti's codified ranks c. 200 BCE-200 CE), the lived jati system varied by region and changed over time, and colonial institutions later hardened and reorganized it (Bayly, 1999).",
+            "The yam post-road relay with stations, remounts, and passports; imperial censuses; deliberate sparing and relocation of artisans and engineers; trunk routes safe enough for routine trans-Eurasian commerce (Marco Polo's 1271-95 journey, debated in detail, accepted in substance); pragmatic religious tolerance; Persian and Chinese experts exchanged across the empire.",
         },
         {
-          prompt: "What were the nobi, and how does the course present Palais's figure?",
+          prompt: "Trace the Mongol threads that connect to other lessons in this course.",
           answer:
-            "Joseon Korea's hereditary unfree class: bought, sold, inherited, status passing to children. Palais (1996) estimated roughly 30 percent of the population in some periods; the course attributes the estimate to him, notes the registers permit only rough shares, and reports the scholarly debate over 'slave' versus 'serf' while keeping the hereditary unfreedom itself undisputed.",
+            "Baghdad 1258 ends the Abbasid lesson's era; Yuan conquest of Song 1279 ends the Song lesson; the failed invasions of Japan (1274, 1281) and the repelled Java expedition (Majapahit's founding, 1293) appear in Sections 3-4; Babur, founder of the Mughals (1526), claimed descent from both Chinggis Khan and Timur.",
         },
       ],
     },
@@ -1681,14 +1669,14 @@ None of this dilutes what European colonization did; scale, integration, and ide
 - Richards, J. F. (1993). *The Mughal Empire* (The New Cambridge History of India, I.5). Cambridge University Press.`,
       recallContent: [
         {
-          prompt: "List four documented intra-Asian conquests or invasions from before or apart from European rule, with dates.",
+          prompt: "State the two opposite myths about caste that the course rejects, and the documented position between them.",
           answer:
-            "The Chola naval raid on Srivijaya (1025); the Mongol conquests (1200s, including Baghdad 1258 and Song China by 1279); Ming China's occupation of Vietnam (1407-1427, expelled by Le Loi's resistance); Hideyoshi's Imjin War invasions of Korea (1592-1598). Japan's annexation of Korea (1910-1945) completes the point that the last pre-1945 colonizer of a major Asian nation was Asian.",
+            "Myth one: caste as an eternal, unchanging essence of India. Myth two: caste as a British invention. Documented position: textual hierarchy is ancient (varna in a late Rigveda hymn; the Manusmriti's codified ranks c. 200 BCE-200 CE), the lived jati system varied by region and changed over time, and colonial institutions later hardened and reorganized it (Bayly, 1999).",
         },
         {
-          prompt: "Roughly how long did European rule over Asia's heartlands last, against the course's full timeline?",
+          prompt: "What were the nobi, and how does the course present Palais's figure?",
           answer:
-            "About two centuries (territorial rule from Plassey 1757; independence movements succeeding by the mid-1900s, e.g. Indonesia 1945, India 1947) out of roughly four and a half millennia of documented urban history since the Indus cities.",
+            "Joseon Korea's hereditary unfree class: bought, sold, inherited, status passing to children. Palais (1996) estimated roughly 30 percent of the population in some periods; the course attributes the estimate to him, notes the registers permit only rough shares, and reports the scholarly debate over 'slave' versus 'serf' while keeping the hereditary unfreedom itself undisputed.",
         },
       ],
     },
@@ -1926,14 +1914,14 @@ None of this dilutes what European colonization did; scale, integration, and ide
 - Frank, A. G. (1998). *ReOrient: Global economy in the Asian age*. University of California Press.`,
       recallContent: [
         {
-          prompt: "What was Pomeranz's methodological move, and why does this course consider it kin to its own first rule?",
+          prompt: "List four documented intra-Asian conquests or invasions from before or apart from European rule, with dates.",
           answer:
-            "He refused the continent-sized comparison ('Europe' vs 'China') and compared like with like: England against the Yangzi delta, the most advanced regions of each world. It is the anti-flattening rule applied to economic history: name the region before you compare, or the comparison is meaningless.",
+            "The Chola naval raid on Srivijaya (1025); the Mongol conquests (1200s, including Baghdad 1258 and Song China by 1279); Ming China's occupation of Vietnam (1407-1427, expelled by Le Loi's resistance); Hideyoshi's Imjin War invasions of Korea (1592-1598). Japan's annexation of Korea (1910-1945) completes the point that the last pre-1945 colonizer of a major Asian nation was Asian.",
         },
         {
-          prompt: "List the six evidence types in the course's closing toolkit, each with one example from the course.",
+          prompt: "Roughly how long did European rule over Asia's heartlands last, against the course's full timeline?",
           answer:
-            "State documents (Han census, 2 CE); dated artifacts (Diamond Sutra 868, Jikji 1377, Belitung cargo); eyewitnesses with limits (Zhou Daguan, Yijing, Marco Polo); attributed reconstructions with error bars (Maddison's shares, Hartwell's iron); archaeology (Indus drains, Evans's Angkor map); and silences read as evidence about survival (Srivijaya, forgotten until Coedès 1918).",
+            "About two centuries (territorial rule from Plassey 1757; independence movements succeeding by the mid-1900s, e.g. Indonesia 1945, India 1947) out of roughly four and a half millennia of documented urban history since the Indus cities.",
         },
       ],
     },

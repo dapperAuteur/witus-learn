@@ -102,28 +102,6 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 - Encyclopedia of Indianapolis. (n.d.-c). *Gold and Glory Sweepstakes*. https://indyencyclopedia.org/gold-and-glory-sweepstakes/
 - Indianapolis Motor Speedway. (n.d.-a). *About the track*. https://www.indianapolismotorspeedway.com/history/about-the-track
 - Indianapolis Motor Speedway. (2021, July 13). *Black racing legend Wiggins drives to big screen with new movie "Eraced"*. https://www.indianapolismotorspeedway.com/news-multimedia/news/2021/07/13/black-racing-legend-wiggins-drives-to-big-screen-with-new-movie-eraced`,
-      recallContent: [
-        {
-          prompt: "Give the Indianapolis Motor Speedway's shape, size and 1909 surface, with the numbers.",
-          answer: "A 2.5-mile rectangular oval. The first surface was crushed rock and tar; in September 1909 it was repaved with 3.2 million ten-pound paving bricks, laid in 63 days, which is where the nickname the Brickyard comes from.",
-        },
-        {
-          prompt: "When and where did the Indiana State Fairgrounds mile track open, and what else opened with it?",
-          answer: "September 19, 1892, on the former Jay G. Voss farm at East 38th Street and Fall Creek Parkway. It opened with 72 buildings and a 6,000-seat grandstand on 214 acres.",
-        },
-        {
-          prompt: "Two sources give different founding dates for the Speedway. What does this course do about it?",
-          answer: "Names both. The Encyclopedia of Indianapolis dates the idea to 1906 and the company to 1909; the Cultural Landscape Foundation dates the proposal to 1905 and the company to 1906. Neither is picked, because the disagreement is not load-bearing.",
-        },
-        {
-          prompt: "What is the institutional difference between the two tracks, before you get to racing?",
-          answer: "One was privately built by four manufacturers on farmland to race and test cars. The other is a grandstand attraction on state fairgrounds, built to draw a crowd to an agricultural exhibition. That difference still decides who may attend a public meeting about each one.",
-        },
-        {
-          prompt: "Why is the Speedway's own 2021 statement that the Indy 500 was 'whites only' unusually strong evidence?",
-          answer: "Because it is the institution admitting something against its own interest on its own website. A source with something to lose by saying a thing is stronger than a source with nothing to lose.",
-        },
-      ],
     },
     {
       slug: "tr-gold-and-glory",
@@ -160,28 +138,24 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 - Sheldon, A. (2021, February 12). *Charlie Wiggins and the Gold and Glory Sweepstakes*. AAA Northeast. https://magazine.northeast.aaa.com/daily/life/cars-trucks/charlie-wiggins-and-the-gold-and-glory-sweepstakes/`,
       recallContent: [
         {
-          prompt: "Who founded the Colored Speedway Association, and in what year?",
-          answer: "Seven men in 1924: William 'Prez' Rucker, Harry Dunnington, George LeMon, Oscar E. Schilling, Earnest Jay Butler, Alvin D. Smith and Harry A. Earl. It was a board, not a spontaneous gathering.",
+          prompt: "Give the Indianapolis Motor Speedway's shape, size and 1909 surface, with the numbers.",
+          answer: "A 2.5-mile rectangular oval. The first surface was crushed rock and tar; in September 1909 it was repaved with 3.2 million ten-pound paving bricks, laid in 63 days, which is where the nickname the Brickyard comes from.",
         },
         {
-          prompt: "Where did the name 'Gold and Glory' come from?",
-          answer: "A Chicago Defender sportswriter, Frank A. 'Fay' Young. A national Black newspaper naming the event is what made it a national event rather than a local one.",
+          prompt: "When and where did the Indiana State Fairgrounds mile track open, and what else opened with it?",
+          answer: "September 19, 1892, on the former Jay G. Voss farm at East 38th Street and Fall Creek Parkway. It opened with 72 buildings and a 6,000-seat grandstand on 214 acres.",
         },
         {
-          prompt: "Give the first race's date, venue, distance, winner and average speed.",
-          answer: "August 2, 1924, on the one-mile dirt track at the Indiana State Fairgrounds, 100 miles. Malcolm Hannon won in the Barber-Warnock Ford Special at an average of 63.5 miles per hour, with John Simmons second.",
+          prompt: "Two sources give different founding dates for the Speedway. What does this course do about it?",
+          answer: "Names both. The Encyclopedia of Indianapolis dates the idea to 1906 and the company to 1909; the Cultural Landscape Foundation dates the proposal to 1905 and the company to 1906. Neither is picked, because the disagreement is not load-bearing.",
         },
         {
-          prompt: "Two good sources disagree about how many Gold and Glory races were run. What are the two counts, and what does this course do?",
-          answer: "The Encyclopedia of Indianapolis calls it an 11-year run with no race in 1934; the PBS companion site carries dated pages for twelve races between 1924 and 1936. The course reports both and adopts neither, because it has not seen the underlying race records.",
+          prompt: "What is the institutional difference between the two tracks, before you get to racing?",
+          answer: "One was privately built by four manufacturers on farmland to race and test cars. The other is a grandstand attraction on state fairgrounds, built to draw a crowd to an agricultural exhibition. That difference still decides who may attend a public meeting about each one.",
         },
         {
-          prompt: "Why is 'the Fairgrounds race' an inaccurate shorthand?",
-          answer: "Because the 1931 running was held at Walnut Gardens Speedway in Mooresville, Indiana, on July 4, at 50 miles rather than 100, after founder Harry Earl offered his facility for one dollar.",
-        },
-        {
-          prompt: "What do the three recorded winning average speeds show, and what are they?",
-          answer: "63.5 mph in 1924, 58.2 in 1931, 57.69 in 1936. The decline is the economics of a circuit running on borrowed tracks and second-hand machinery through a depression, not a decline in driving.",
+          prompt: "Why is the Speedway's own 2021 statement that the Indy 500 was 'whites only' unusually strong evidence?",
+          answer: "Because it is the institution admitting something against its own interest on its own website. A source with something to lose by saying a thing is stronger than a source with nothing to lose.",
         },
       ],
     },
@@ -241,24 +215,28 @@ export const TWO_RACETRACKS_COURSE: AuthoredCourse = {
 - Sheldon, A. (2021, February 12). *Charlie Wiggins and the Gold and Glory Sweepstakes*. AAA Northeast. https://magazine.northeast.aaa.com/daily/life/cars-trucks/charlie-wiggins-and-the-gold-and-glory-sweepstakes/`,
       recallContent: [
         {
-          prompt: "Give Charlie Wiggins's dates and his trade.",
-          answer: "Born July 15, 1897, in Baptisttown, Evansville; moved to Indianapolis in 1923; died March 11, 1979, buried at Crown Hill Cemetery. He was a mechanic who worked at Louis Sagalowsky's shop, built the Wiggins Special there, and eventually owned the garage.",
+          prompt: "Who founded the Colored Speedway Association, and in what year?",
+          answer: "Seven men in 1924: William 'Prez' Rucker, Harry Dunnington, George LeMon, Oscar E. Schilling, Earnest Jay Butler, Alvin D. Smith and Harry A. Earl. It was a board, not a spontaneous gathering.",
         },
         {
-          prompt: "Three sources describe Wiggins's role on the 1934 Indianapolis 500 winning car differently. What are the three versions, and what does the course do?",
-          answer: "The Encyclopedia says Bill Cummings consulted him; the Automotive Hall of Fame says he engineered the car and was kept out of Victory Lane; an AAA article says he was hired to tune it and posed as a janitor. Those are different claims, so the course reports all three with their owners and settles none, because it has not seen an entry list, a payroll or a photograph.",
+          prompt: "Where did the name 'Gold and Glory' come from?",
+          answer: "A Chicago Defender sportswriter, Frank A. 'Fay' Young. A national Black newspaper naming the event is what made it a national event rather than a local one.",
         },
         {
-          prompt: "What happened to Wiggins in 1936, and what did he do afterwards?",
-          answer: "He was pinned under his burning engine in a thirteen-car pileup and lost his right leg. He made a wooden prosthetic and worked on passenger and racing cars at his garage for the rest of his life. He was elected to the Automotive Hall of Fame in 2021.",
+          prompt: "Give the first race's date, venue, distance, winner and average speed.",
+          answer: "August 2, 1924, on the one-mile dirt track at the Indiana State Fairgrounds, 100 miles. Malcolm Hannon won in the Barber-Warnock Ford Special at an average of 63.5 miles per hour, with John Simmons second.",
         },
         {
-          prompt: "Who was Joie Ray, and what is unresolved about his licensing?",
-          answer: "The first African American driver to race alongside white drivers in a sanctioned sprint car race, at Mitchell, Indiana, on April 6, 1947, and an AAA competitor from June 26, 1949, at Salem Speedway. Accounts disagree about whether his first licence came in 1946 or 1947 and whether the AAA or its successor issued it. A licence is a dated document, so the question is resolvable and has not been resolved here.",
+          prompt: "Two good sources disagree about how many Gold and Glory races were run. What are the two counts, and what does this course do?",
+          answer: "The Encyclopedia of Indianapolis calls it an 11-year run with no race in 1934; the PBS companion site carries dated pages for twelve races between 1924 and 1936. The course reports both and adopts neither, because it has not seen the underlying race records.",
         },
         {
-          prompt: "Give the headline number, and its definition.",
-          answer: "Eighty calendar years between the first 500-mile race in 1911 and Willy T. Ribbs starting the 1991 race, which was the 75th running. The definition counts starters in the 500-mile race at this track, not entries attempted or licences held. The six missing years are a question: the Encyclopedia accounts for four as total inactivity during the Second World War, and this course has not confirmed the rest.",
+          prompt: "Why is 'the Fairgrounds race' an inaccurate shorthand?",
+          answer: "Because the 1931 running was held at Walnut Gardens Speedway in Mooresville, Indiana, on July 4, at 50 miles rather than 100, after founder Harry Earl offered his facility for one dollar.",
+        },
+        {
+          prompt: "What do the three recorded winning average speeds show, and what are they?",
+          answer: "63.5 mph in 1924, 58.2 in 1931, 57.69 in 1936. The decline is the economics of a circuit running on borrowed tracks and second-hand machinery through a depression, not a decline in driving.",
         },
       ],
     },
@@ -485,24 +463,24 @@ The Speedway was **listed on the National Register of Historic Places in 1975** 
 - National Park Service. (n.d.). *National Historic Landmarks program*. https://www.nps.gov/subjects/nationalhistoriclandmarks/index.htm`,
       recallContent: [
         {
-          prompt: "Why is a racetrack a hard subject for building typology?",
-          answer: "Because the primary structure is the surface itself, which is civil engineering: grading, drainage, banking and a running line. The grandstands, towers, garages and gates are secondary equipment arranged around a piece of engineered land.",
+          prompt: "Give Charlie Wiggins's dates and his trade.",
+          answer: "Born July 15, 1897, in Baptisttown, Evansville; moved to Indianapolis in 1923; died March 11, 1979, buried at Crown Hill Cemetery. He was a mechanic who worked at Louis Sagalowsky's shop, built the Wiggins Special there, and eventually owned the garage.",
         },
         {
-          prompt: "What land-use problem does a 2.5-mile closed circuit create, and how did the Speedway answer it?",
-          answer: "It encloses an enormous interior that has to be used for something. An eighteen-hole golf course was installed in 1929 within and outside the infield; four holes of Brickyard Crossing sit inside the track today.",
+          prompt: "Three sources describe Wiggins's role on the 1934 Indianapolis 500 winning car differently. What are the three versions, and what does the course do?",
+          answer: "The Encyclopedia says Bill Cummings consulted him; the Automotive Hall of Fame says he engineered the car and was kept out of Victory Lane; an AAA article says he was hired to tune it and posed as a janitor. Those are different claims, so the course reports all three with their owners and settles none, because it has not seen an entry list, a payroll or a photograph.",
         },
         {
-          prompt: "What does a facility with more than 250,000 permanent seats do to the town around it?",
-          answer: "It is almost empty most of the year and then hosts the largest single-day gathering in the region, so roads, parking, lodging, policing and local businesses are all sized for the peak. The streets around the track are the physical shape of one day in May.",
+          prompt: "What happened to Wiggins in 1936, and what did he do afterwards?",
+          answer: "He was pinned under his burning engine in a thirteen-car pileup and lost his right leg. He made a wooden prosthetic and worked on passenger and racing cars at his garage for the rest of his life. He was elected to the Automotive Hall of Fame in 2021.",
         },
         {
-          prompt: "What happened to the 3.2 million bricks, and what is the general lesson?",
-          answer: "They were overlaid with asphalt in 1937, remain underneath, and a one-yard strip was left exposed at the start and finish line. Preservation preserved a token: a fragment kept legible so the whole can be referred to. Compare the three acres and eleven buildings that stand for Indiana Avenue.",
+          prompt: "Who was Joie Ray, and what is unresolved about his licensing?",
+          answer: "The first African American driver to race alongside white drivers in a sanctioned sprint car race, at Mitchell, Indiana, on April 6, 1947, and an AAA competitor from June 26, 1949, at Salem Speedway. Accounts disagree about whether his first licence came in 1946 or 1947 and whether the AAA or its successor issued it. A licence is a dated document, so the question is resolvable and has not been resolved here.",
         },
         {
-          prompt: "The Speedway became a National Historic Landmark in 1987 and built the Pagoda from 1998 to 2000. What does that prove?",
-          answer: "That a federal designation is recognition plus review leverage, not a freeze and not a demolition veto over a private owner. It is the same rule course 1 taught, seen from the other side.",
+          prompt: "Give the headline number, and its definition.",
+          answer: "Eighty calendar years between the first 500-mile race in 1911 and Willy T. Ribbs starting the 1991 race, which was the 75th running. The definition counts starters in the 500-mile race at this track, not entries attempted or licences held. The six missing years are a question: the Encyclopedia accounts for four as total inactivity during the Second World War, and this course has not confirmed the rest.",
         },
       ],
     },
@@ -544,28 +522,24 @@ The Encyclopedia entry describes Speedway as a middle-class town and **does not 
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "When was Speedway platted, by whom, and for whom?",
-          answer: "Speedway City was laid out in 1912 by the real estate developer Lemon Trotter for the Speedway's four founders: Carl G. Fisher, James A. Allison, Arthur C. Newby and Frank H. Wheeler. The track came first; the town was platted beside it.",
+          prompt: "Why is a racetrack a hard subject for building typology?",
+          answer: "Because the primary structure is the surface itself, which is civil engineering: grading, drainage, banking and a running line. The grandstands, towers, garages and gates are secondary equipment arranged around a piece of engineered land.",
         },
         {
-          prompt: "Name three manufacturers that located in Speedway, and say what that tells you.",
-          answer: "Prest-O-Lite, the Electric Steel Company (1913), the Allison Engineering Company (1917), American Art Clay (1919) and Esterline Angus (1923). Two of the four founders put their own companies in the town they platted: the track was a proving ground and the industry moved in next door.",
+          prompt: "What land-use problem does a 2.5-mile closed circuit create, and how did the Speedway answer it?",
+          answer: "It encloses an enormous interior that has to be used for something. An eighteen-hole golf course was installed in 1929 within and outside the infield; four holes of Brickyard Crossing sit inside the track today.",
         },
         {
-          prompt: "How is Speedway governed, and how big is it?",
-          answer: "About 4.2 square miles, an elected five-member town council, and its own police, fire, library, water and wastewater services. It incorporated in 1926.",
+          prompt: "What does a facility with more than 250,000 permanent seats do to the town around it?",
+          answer: "It is almost empty most of the year and then hosts the largest single-day gathering in the region, so roads, parking, lodging, policing and local businesses are all sized for the peak. The streets around the track are the physical shape of one day in May.",
         },
         {
-          prompt: "What is Speedway's relationship to Unigov, and why does it matter to this cluster?",
-          answer: "It is one of the four excluded cities the 1969 statute left independent, along with Beech Grove, Lawrence and Southport, and its residents have resisted annexation. Course 1 watched that boundary move outward and dilute an electorate; here the same boundary went around a town and left it outside. Same instrument, two directions.",
+          prompt: "What happened to the 3.2 million bricks, and what is the general lesson?",
+          answer: "They were overlaid with asphalt in 1937, remain underneath, and a one-yard strip was left exposed at the start and finish line. Preservation preserved a token: a fragment kept legible so the whole can be referred to. Compare the three acres and eleven buildings that stand for Indiana Avenue.",
         },
         {
-          prompt: "What practical research consequence follows from Speedway being a separate municipality?",
-          answer: "The comprehensive plan and the adopting body for ground in Speedway are the town's, not Marion County's Metropolitan Development Commission. Getting the jurisdiction wrong is the most common error in local research.",
-        },
-        {
-          prompt: "What does this course refuse to say about Speedway, and where would you find out?",
-          answer: "Anything about the town's racial composition, because the source used does not address it. Decennial census and American Community Survey tables are published for incorporated places and are free.",
+          prompt: "The Speedway became a National Historic Landmark in 1987 and built the Pagoda from 1998 to 2000. What does that prove?",
+          answer: "That a federal designation is recognition plus review leverage, not a freeze and not a demolition veto over a private owner. It is the same rule course 1 taught, seen from the other side.",
         },
       ],
     },
@@ -614,28 +588,28 @@ The Encyclopedia entry describes Speedway as a middle-class town and **does not 
 - Track Enterprises. (2019). *Final Hoosier Hundred at the Indy Mile to be held May 23*. https://trackenterprises.com/final-hoosier-hundred-at-the-indy-mile-to-be-held-may-23/`,
       recallContent: [
         {
-          prompt: "Was the mile track an addition to the fairgrounds, or part of the plan?",
-          answer: "Part of the plan. The mile race track opened with the fairgrounds on September 19, 1892, alongside 72 buildings and a 6,000-seat grandstand on 214 acres.",
+          prompt: "When was Speedway platted, by whom, and for whom?",
+          answer: "Speedway City was laid out in 1912 by the real estate developer Lemon Trotter for the Speedway's four founders: Carl G. Fisher, James A. Allison, Arthur C. Newby and Frank H. Wheeler. The track came first; the town was platted beside it.",
         },
         {
-          prompt: "Why is a dirt mile both the design and the risk?",
-          answer: "Dirt is cheap to build and maintain and fits inside a fairground, but it is loose, it changes through a race as cars cut ruts, and visibility drops as it dries. A circuit with no money races on the cheapest available ground, and the cheapest ground carries the most risk.",
+          prompt: "Name three manufacturers that located in Speedway, and say what that tells you.",
+          answer: "Prest-O-Lite, the Electric Steel Company (1913), the Allison Engineering Company (1917), American Art Clay (1919) and Esterline Angus (1923). Two of the four founders put their own companies in the town they platted: the track was a proving ground and the industry moved in next door.",
         },
         {
-          prompt: "What happened to the mile track in 2019?",
-          answer: "It was converted to a harness racing facility with an all-weather crushed-limestone surface, auto racing ended after the 64th Hoosier Hundred on May 23, 2019, and the infield was eliminated for additional parking.",
+          prompt: "How is Speedway governed, and how big is it?",
+          answer: "About 4.2 square miles, an elected five-member town council, and its own police, fire, library, water and wastewater services. It incorporated in 1926.",
         },
         {
-          prompt: "Name the two things to resist when describing that conversion.",
-          answer: "Resist calling it a desecration, because it is an ordinary operating decision by a public body and calling it a blight designation would cheapen that word. Resist calling it nothing, because it is a dated change to the physical evidence of a Black sporting institution.",
+          prompt: "What is Speedway's relationship to Unigov, and why does it matter to this cluster?",
+          answer: "It is one of the four excluded cities the 1969 statute left independent, along with Beech Grove, Lawrence and Southport, and its residents have resisted annexation. Course 1 watched that boundary move outward and dilute an electorate; here the same boundary went around a town and left it outside. Same instrument, two directions.",
         },
         {
-          prompt: "What does this course not know about the 2019 decision, and why?",
-          answer: "Whether the Gold and Glory Sweepstakes was considered when the conversion was decided, because the State Fair Commission's minutes have not been read here. They exist.",
+          prompt: "What practical research consequence follows from Speedway being a separate municipality?",
+          answer: "The comprehensive plan and the adopting body for ground in Speedway are the town's, not Marion County's Metropolitan Development Commission. Getting the jurisdiction wrong is the most common error in local research.",
         },
         {
-          prompt: "Who placed the two historical markers connected to this story, and why does the sponsor matter?",
-          answer: "The Indiana Racing Memorial Association, a private organisation, placed both the Fairgrounds mile marker and the 2018 Charlie Wiggins marker in Evansville. Who paid for the sign is part of what the sign says.",
+          prompt: "What does this course refuse to say about Speedway, and where would you find out?",
+          answer: "Anything about the town's racial composition, because the source used does not address it. Decennial census and American Community Survey tables are published for incorporated places and are free.",
         },
       ],
     },
@@ -690,28 +664,28 @@ The Encyclopedia entry describes Speedway as a middle-class town and **does not 
 - Indianapolis Motor Speedway. (2020, January 5). *Penske Corporation completes acquisition of the Indianapolis Motor Speedway, the NTT IndyCar Series and IMS Productions*. https://www.indianapolismotorspeedway.com/news-multimedia/news/2020/01/05/penske-corporation-completes-acquisition-of-the-ims-indycar-and-imsproductions`,
       recallContent: [
         {
-          prompt: "Define a sanctioning body and list what it controls.",
-          answer: "A private association that writes the rulebook, licenses drivers and officials, approves entries, sanctions and officiates events, and certifies results. Inside its sport its authority is close to total.",
+          prompt: "Was the mile track an addition to the fairgrounds, or part of the plan?",
+          answer: "Part of the plan. The mile race track opened with the fairgrounds on September 19, 1892, alongside 72 buildings and a 6,000-seat grandstand on 214 acres.",
         },
         {
-          prompt: "Name the four differences between a sanctioning body and a government body like a redevelopment commission.",
-          answer: "Its power comes from a contract and from owning the event rather than from a statute; its meetings are not public; it keeps only what it chooses to keep; and you contest a decision through its own internal process rather than by appeal or judicial review.",
+          prompt: "Why is a dirt mile both the design and the risk?",
+          answer: "Dirt is cheap to build and maintain and fits inside a fairground, but it is loose, it changes through a race as cars cut ruts, and visibility drops as it dries. A circuit with no money races on the cheapest available ground, and the cheapest ground carries the most risk.",
         },
         {
-          prompt: "Why does that difference matter to a researcher?",
-          answer: "Because a private association can exclude someone without writing anything down. There is no statute to cite, no minute to request and no boundary map. Course 1's instruments all left documents; this one need not.",
+          prompt: "What happened to the mile track in 2019?",
+          answer: "It was converted to a harness racing facility with an all-weather crushed-limestone surface, auto racing ended after the 64th Hoosier Hundred on May 23, 2019, and the infield was eliminated for additional parking.",
         },
         {
-          prompt: "Give the chain of sanctioning bodies for the Indianapolis 500 with dates.",
-          answer: "The AAA Contest Board, the leading national sanctioning body since 1902; USAC, established September 16, 1955 by IMS president Tony Hulman Jr. after the AAA dissolved its Contest Board, sanctioning the 500 from 1956; the Indy Racing League from 1997, founded 1996 by IMS owner Tony George; and today Penske Entertainment Corp., which acquired the track and the IndyCar Series on January 6, 2020.",
+          prompt: "Name the two things to resist when describing that conversion.",
+          answer: "Resist calling it a desecration, because it is an ordinary operating decision by a public body and calling it a blight designation would cheapen that word. Resist calling it nothing, because it is a dated change to the physical evidence of a Black sporting institution.",
         },
         {
-          prompt: "What structural pattern repeats in that chain?",
-          answer: "The owner of the racetrack founds or owns the body that sanctions the race at the racetrack. It happened with Hulman in 1955, with Tony George in 1996, and it is the situation today under one owner of venue, series and production arm.",
+          prompt: "What does this course not know about the 2019 decision, and why?",
+          answer: "Whether the Gold and Glory Sweepstakes was considered when the conversion was decided, because the State Fair Commission's minutes have not been read here. They exist.",
         },
         {
-          prompt: "What two questions should you ask about admission to anything?",
-          answer: "Who owns the venue, because a private owner can refuse entry with no rule and no record; and who writes and enforces the rulebook, because licensing and entry approval are separate powers that may or may not sit in the same hands.",
+          prompt: "Who placed the two historical markers connected to this story, and why does the sponsor matter?",
+          answer: "The Indiana Racing Memorial Association, a private organisation, placed both the Fairgrounds mile marker and the 2018 Charlie Wiggins marker in Evansville. Who paid for the sign is part of what the sign says.",
         },
       ],
     },
@@ -770,28 +744,28 @@ The four gates above are permission gates. **The fifth is capital, and it applie
 - RACER. (2021, February 25). *Retro: Mack's dizzyingly unlikely Indy 500 run*. https://racer.com/2021/02/25/retro-macks-dizzyingly-unlikely-indy-500-run/`,
       recallContent: [
         {
-          prompt: "Name the five gates a driver has to pass, and who holds each.",
-          answer: "The competition licence and registration or entry approval, both held by the sanctioning body; membership in the association; the venue's own gate, held by the private owner; and capital, which is held by nobody and closes on everyone.",
+          prompt: "Define a sanctioning body and list what it controls.",
+          answer: "A private association that writes the rulebook, licenses drivers and officials, approves entries, sanctions and officiates events, and certifies results. Inside its sport its authority is close to total.",
         },
         {
-          prompt: "What is the documented entry-approval instance in this lesson?",
-          answer: "Charlie Wiggins and Sumner 'Red' Oliver tried to enter a car at Dayton Speedway and were rejected for lacking AAA registration, and were told they could register for dirt track races the following summer, per the Indianapolis Recorder as cited by Paul Mullins.",
+          prompt: "Name the four differences between a sanctioning body and a government body like a redevelopment commission.",
+          answer: "Its power comes from a contract and from owning the event rather than from a statute; its meetings are not public; it keeps only what it chooses to keep; and you contest a decision through its own internal process rather than by appeal or judicial review.",
         },
         {
-          prompt: "Why is that procedural refusal the key to the whole mechanism?",
-          answer: "Because nobody in the account mentions race. A gate that turns on paperwork you were not able to obtain looks in the record exactly like a gate that turns on paperwork you failed to obtain. The ambiguity is what the system is for.",
+          prompt: "Why does that difference matter to a researcher?",
+          answer: "Because a private association can exclude someone without writing anything down. There is no statute to cite, no minute to request and no boundary map. Course 1's instruments all left documents; this one need not.",
         },
         {
-          prompt: "What is the difference between 'this course found no record of X' and 'X did not happen'?",
-          answer: "The first is a claim about a search; the second is a claim about the world. Say which one you are making, every time.",
+          prompt: "Give the chain of sanctioning bodies for the Indianapolis 500 with dates.",
+          answer: "The AAA Contest Board, the leading national sanctioning body since 1902; USAC, established September 16, 1955 by IMS president Tony Hulman Jr. after the AAA dissolved its Contest Board, sanctioning the 500 from 1956; the Indy Racing League from 1997, founded 1996 by IMS owner Tony George; and today Penske Entertainment Corp., which acquired the track and the IndyCar Series on January 6, 2020.",
         },
         {
-          prompt: "What does the course refuse to say about association membership?",
-          answer: "Whether membership was a formal prerequisite to competing, and whether membership rules restricted applicants by race. The sources used do not answer it, and the membership rules of a national motor club are a document somebody could find.",
+          prompt: "What structural pattern repeats in that chain?",
+          answer: "The owner of the racetrack founds or owns the body that sanctions the race at the racetrack. It happened with Hulman in 1955, with Tony George in 1996, and it is the situation today under one owner of venue, series and production arm.",
         },
         {
-          prompt: "Why does the course insist on separating the capital gate from the colour bar?",
-          answer: "Because they are different barriers, and letting one hide behind the other lets a real barrier escape measurement. When a permission gate opens, the capital gate is still behind it, and a course that counts only the first declares victory too early.",
+          prompt: "What two questions should you ask about admission to anything?",
+          answer: "Who owns the venue, because a private owner can refuse entry with no rule and no record; and who writes and enforces the rulebook, because licensing and entry approval are separate powers that may or may not sit in the same hands.",
         },
       ],
     },
@@ -867,28 +841,28 @@ The four gates above are permission gates. **The fifth is capital, and it applie
 - PBS. (n.d.-b). *For gold and glory: History*. https://www.pbs.org/forgoldandglory/history/`,
       recallContent: [
         {
-          prompt: "Which piece of the inherited claim failed verification, and which pieces held?",
-          answer: "The sanctioning body's written policy is NOT VERIFIED. The alternative championship, its drivers, its venue with a correction for 1931, the absence of Black starters until 1991, and exclusion by Speedway officials all hold.",
+          prompt: "Name the five gates a driver has to pass, and who holds each.",
+          answer: "The competition licence and registration or entry approval, both held by the sanctioning body; membership in the association; the venue's own gate, held by the private owner; and capital, which is held by nobody and closes on everyone.",
         },
         {
-          prompt: "What did the AAA say in 1947, and where is it recorded?",
-          answer: "AAA officials said there had never been a time when the association barred any contestant by reason of race, creed or any other cause, as reported by the Indianapolis Recorder in October 1947 and quoted by Paul Mullins, who reads it as exposing a gentleman's agreement rather than a formal code.",
+          prompt: "What is the documented entry-approval instance in this lesson?",
+          answer: "Charlie Wiggins and Sumner 'Red' Oliver tried to enter a car at Dayton Speedway and were rejected for lacking AAA registration, and were told they could register for dirt track races the following summer, per the Indianapolis Recorder as cited by Paul Mullins.",
         },
         {
-          prompt: "Give the three ways to handle that quotation correctly.",
-          answer: "It is a denial from an interested party and so is evidence about what they were willing to say; choosing 'there was never a rule' as a defence is itself weak evidence that there was no rule to produce; and both can be true while the exclusion was total, because four separate gates can each refuse without anyone writing it down.",
+          prompt: "Why is that procedural refusal the key to the whole mechanism?",
+          answer: "Because nobody in the account mentions race. A gate that turns on paperwork you were not able to obtain looks in the record exactly like a gate that turns on paperwork you failed to obtain. The ambiguity is what the system is for.",
         },
         {
-          prompt: "State the three-sentence verdict this course adopts.",
-          answer: "Black drivers did not start the race for eighty years, and the Speedway and the Encyclopedia both attribute that to exclusion by Speedway officials. The mechanism appears to have run through licensing, registration, entry approval and private admission rather than a published rule, and the one direct statement in the record denies a rule existed. Whether a written policy existed somewhere unexamined remains open.",
+          prompt: "What is the difference between 'this course found no record of X' and 'X did not happen'?",
+          answer: "The first is a claim about a search; the second is a claim about the world. Say which one you are making, every time.",
         },
         {
-          prompt: "Why does an unwritten exclusion teach more than a written one?",
-          answer: "Because a written rule can be printed, quoted, repealed and measured, while an unwritten one has no document, no date and no defendant. Every individual refusal has an innocent procedural explanation, and the pattern only appears when you count outcomes across decades. When the mechanism leaves no document, the outcome is the evidence.",
+          prompt: "What does the course refuse to say about association membership?",
+          answer: "Whether membership was a formal prerequisite to competing, and whether membership rules restricted applicants by race. The sources used do not answer it, and the membership rules of a national motor club are a document somebody could find.",
         },
         {
-          prompt: "What is the weakness in this course's own sources?",
-          answer: "Three of the strongest sources lead back to one scholar, Todd Gould, who wrote both Encyclopedia entries, the book and the documentary. Where the Encyclopedia and the PBS site disagree, that is not two independent sources disagreeing.",
+          prompt: "Why does the course insist on separating the capital gate from the colour bar?",
+          answer: "Because they are different barriers, and letting one hide behind the other lets a real barrier escape measurement. When a permission gate opens, the capital gate is still behind it, and a course that counts only the first declares victory too early.",
         },
       ],
     },
@@ -956,24 +930,28 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 - Sheldon, A. (2021, February 12). *Charlie Wiggins and the Gold and Glory Sweepstakes*. AAA Northeast. https://magazine.northeast.aaa.com/daily/life/cars-trucks/charlie-wiggins-and-the-gold-and-glory-sweepstakes/`,
       recallContent: [
         {
-          prompt: "Which course 1 example is the same pattern as the Colored Speedway Association?",
-          answer: "The Flanner House self-help home ownership programme, which answered the clearance of Pat Ward's Bottom with about 300 dollars down and roughly 1,200 hours of labour toward equity. A community answering a taking by building an institution is a documented pattern.",
+          prompt: "Which piece of the inherited claim failed verification, and which pieces held?",
+          answer: "The sanctioning body's written policy is NOT VERIFIED. The alternative championship, its drivers, its venue with a correction for 1931, the absence of Black starters until 1991, and exclusion by Speedway officials all hold.",
         },
         {
-          prompt: "List five things the Colored Speedway Association had to acquire to run a championship.",
-          answer: "An organisation with named principals, a venue it did not own, a fallback venue, a fixed date, a field of entrants, cars, a name and audience through the Black press, and medical provision.",
+          prompt: "What did the AAA say in 1947, and where is it recorded?",
+          answer: "AAA officials said there had never been a time when the association barred any contestant by reason of race, creed or any other cause, as reported by the Indianapolis Recorder in October 1947 and quoted by Paul Mullins, who reads it as exposing a gentleman's agreement rather than a formal code.",
         },
         {
-          prompt: "What can a parallel institution match, and what can it not?",
-          answer: "It can match the event: a 100-mile championship with a field, a purse, a national name and a crowd. It cannot match the capital: a purpose-built plant with 3.2 million bricks and a quarter of a million seats against a rented dirt mile with a 6,000-seat grandstand.",
+          prompt: "Give the three ways to handle that quotation correctly.",
+          answer: "It is a denial from an interested party and so is evidence about what they were willing to say; choosing 'there was never a rule' as a defence is itself weak evidence that there was no rule to produce; and both can be true while the exclusion was total, because four separate gates can each refuse without anyone writing it down.",
         },
         {
-          prompt: "Why did the Sweepstakes end and the Indianapolis 500 survive its own interruptions?",
-          answer: "The Sweepstakes ran on rented ground, second-hand machinery and gate receipts with no reserve, so Depression finances plus the 1936 crash finished it. The 500 also missed years, including four of total inactivity during the Second World War in which the track deteriorated dreadfully, and it returned because it had a plant, an owner and a balance sheet. The difference in survival is a difference in capital structure.",
+          prompt: "State the three-sentence verdict this course adopts.",
+          answer: "Black drivers did not start the race for eighty years, and the Speedway and the Encyclopedia both attribute that to exclusion by Speedway officials. The mechanism appears to have run through licensing, registration, entry approval and private admission rather than a published rule, and the one direct statement in the record denies a rule existed. Whether a written policy existed somewhere unexamined remains open.",
         },
         {
-          prompt: "State the rule about parallel institutions.",
-          answer: "Read a parallel institution as evidence about the main one. A separate league, hospital, bank, school or travel guide is a functioning organisation built by named people at real cost, and it exists because a door was held shut. Credit the construction rather than filing it under loss.",
+          prompt: "Why does an unwritten exclusion teach more than a written one?",
+          answer: "Because a written rule can be printed, quoted, repealed and measured, while an unwritten one has no document, no date and no defendant. Every individual refusal has an innocent procedural explanation, and the pattern only appears when you count outcomes across decades. When the mechanism leaves no document, the outcome is the evidence.",
+        },
+        {
+          prompt: "What is the weakness in this course's own sources?",
+          answer: "Three of the strongest sources lead back to one scholar, Todd Gould, who wrote both Encyclopedia entries, the book and the documentary. Where the Encyclopedia and the PBS site disagree, that is not two independent sources disagreeing.",
         },
       ],
     },
@@ -1041,24 +1019,24 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 - Mullins, P. R. (2015, May 16). *Racing along the color line*. Archaeology and Material Culture. https://paulmullins.wordpress.com/2015/05/16/racing-along-the-color-line/`,
       recallContent: [
         {
-          prompt: "How long was the gap between the permission gate opening and a Black driver starting the Indianapolis 500?",
-          answer: "About forty-two years. Licensing and sanctioned competition opened in the late 1940s; Willy T. Ribbs qualified on May 19, 1991.",
+          prompt: "Which course 1 example is the same pattern as the Colored Speedway Association?",
+          answer: "The Flanner House self-help home ownership programme, which answered the clearance of Pat Ward's Bottom with about 300 dollars down and roughly 1,200 hours of labour toward equity. A community answering a taking by building an institution is a documented pattern.",
         },
         {
-          prompt: "State the sentence that generalises that gap.",
-          answer: "A rule repealed is not a barrier removed. The interval between a formal opening and a measurable change is itself a measurement, and it is usually the most interesting number in the story.",
+          prompt: "List five things the Colored Speedway Association had to acquire to run a championship.",
+          answer: "An organisation with named principals, a venue it did not own, a fallback venue, a fixed date, a field of entrants, cars, a name and audience through the Black press, and medical provision.",
         },
         {
-          prompt: "Name the four candidate explanations for the gap, and what the course does with them.",
-          answer: "Capital and sponsorship, the junior racing pipeline, private team hiring, and residual informal exclusion. All four could operate at once. The course names them, admits it cannot rank them, and refuses to manufacture an explanation from plausibility.",
+          prompt: "What can a parallel institution match, and what can it not?",
+          answer: "It can match the event: a 100-mile championship with a field, a purse, a national name and a crowd. It cannot match the capital: a purpose-built plant with 3.2 million bricks and a quarter of a million seats against a rented dirt mile with a 6,000-seat grandstand.",
         },
         {
-          prompt: "Why is this course's civic question unusually measurable compared with course 1's?",
-          answer: "Because a sport counts everything and publishes it: starters, entries, qualifying attempts, finishes and prize money, every year, by the sanctioning body itself. Course 1's question of how many buildings the Avenue lost has no answer because no survey was run.",
+          prompt: "Why did the Sweepstakes end and the Indianapolis 500 survive its own interruptions?",
+          answer: "The Sweepstakes ran on rented ground, second-hand machinery and gate receipts with no reserve, so Depression finances plus the 1936 crash finished it. The 500 also missed years, including four of total inactivity during the Second World War in which the track deteriorated dreadfully, and it returned because it had a plant, an owner and a balance sheet. The difference in survival is a difference in capital structure.",
         },
         {
-          prompt: "How should you treat the existence of a chief diversity officer at Penske Entertainment?",
-          answer: "As a documented fact about an organisation, not as a result. Whether outcomes changed is a separate countable question. Do not accept a job title as a result and do not dismiss one either. Count.",
+          prompt: "State the rule about parallel institutions.",
+          answer: "Read a parallel institution as evidence about the main one. A separate league, hospital, bank, school or travel guide is a functioning organisation built by named people at real cost, and it exists because a door was held shut. Credit the construction rather than filing it under loss.",
         },
       ],
     },
@@ -1511,28 +1489,24 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "Give the four questions to ask about any site, in order.",
-          answer: "Who owns it; which government's jurisdiction the ground is in; whether there is an adopted plan and who adopted it; and who decides, when they meet, and whether the agenda is public.",
+          prompt: "How long was the gap between the permission gate opening and a Black driver starting the Indianapolis 500?",
+          answer: "About forty-two years. Licensing and sanctioned competition opened in the late 1940s; Willy T. Ribbs qualified on May 19, 1991.",
         },
         {
-          prompt: "Who owns the Indianapolis Motor Speedway, and what does that mean for a citizen?",
-          answer: "Penske Entertainment Corp., which acquired the track, the IndyCar Series and IMS Productions on January 6, 2020. There is no public meeting, agenda, comment period or records request for a private company's decisions about its own property. A citizen's leverage there is commercial and reputational, not civic.",
+          prompt: "State the sentence that generalises that gap.",
+          answer: "A rule repealed is not a barrier removed. The interval between a formal opening and a measurable change is itself a measurement, and it is usually the most interesting number in the story.",
         },
         {
-          prompt: "What does Indiana Code chapter 36-7-14 allow a town redevelopment commission to do?",
-          answer: "Find that an area in its jurisdiction is an area needing redevelopment, designate it a redevelopment project area, and acquire property by purchase, exchange, gift, grant, condemnation or lease, then hold, sell, lease or dispose of it.",
+          prompt: "Name the four candidate explanations for the gap, and what the course does with them.",
+          answer: "Capital and sponsorship, the junior racing pipeline, private team hiring, and residual informal exclusion. All four could operate at once. The course names them, admits it cannot rank them, and refuses to manufacture an explanation from plausibility.",
         },
         {
-          prompt: "What happened to the word 'blighted', and what is the lesson?",
-          answer: "It became 'area needing redevelopment', and 'condemnation' is eminent domain. The vocabulary softened and the power did not change. A statute can be renamed without being weakened, and reading the current text is the only way to know which happened.",
+          prompt: "Why is this course's civic question unusually measurable compared with course 1's?",
+          answer: "Because a sport counts everything and publishes it: starters, entries, qualifying attempts, finishes and prize money, every year, by the sanctioning body itself. Course 1's question of how many buildings the Avenue lost has no answer because no survey was run.",
         },
         {
-          prompt: "How does the Indiana Code describe the State Fair Commission, and why is that phrasing interesting?",
-          answer: "As a separate body, corporate and politic, which is not a state agency but performs essential governmental functions, with eight members, five appointed by the governor. It is a hybrid, and which open-meetings and public-records obligations attach to a hybrid is a specific legal question this course does not answer.",
-        },
-        {
-          prompt: "State beat 5's finding for this course, and how it mirrors course 1's.",
-          answer: "Course 1 found that no area plan had been adopted yet, which is where a citizen has the most leverage. Here the ground with the deepest Black sporting history has the most public process attached: a state commission, a legislative advisory committee that met October 30, 2025, published reports and a master plan under revision. The process is open. Whether anyone who cares about the Sweepstakes has spoken at it is unknown.",
+          prompt: "How should you treat the existence of a chief diversity officer at Penske Entertainment?",
+          answer: "As a documented fact about an organisation, not as a result. Whether outcomes changed is a separate countable question. Do not accept a job title as a result and do not dismiss one either. Count.",
         },
       ],
     },
@@ -2017,24 +1991,28 @@ A short, checkable piece in which every sentence is either something you read in
 - Mullins, P. R. (2015, May 16). *Racing along the color line*. Archaeology and Material Culture. https://paulmullins.wordpress.com/2015/05/16/racing-along-the-color-line/`,
       recallContent: [
         {
-          prompt: "What is the actual product of this course?",
-          answer: "The six-beat site template transferred to a subject that does not look like a planning story: Then, Built, Powers, Now, Next, Write. The racing material is the worked example.",
+          prompt: "Give the four questions to ask about any site, in order.",
+          answer: "Who owns it; which government's jurisdiction the ground is in; whether there is an adopted plan and who adopted it; and who decides, when they meet, and whether the agenda is public.",
         },
         {
-          prompt: "Name three things you can do now that you could not before.",
-          answer: "Recognise a sanctioning body as an instrument whose defining feature is leaving no record; tell an outcome from an instrument and say which your evidence supports; notice a statute renamed rather than repealed, as with 'area needing redevelopment'; and measure the interval between a formal opening and a real change.",
+          prompt: "Who owns the Indianapolis Motor Speedway, and what does that mean for a citizen?",
+          answer: "Penske Entertainment Corp., which acquired the track, the IndyCar Series and IMS Productions on January 6, 2020. There is no public meeting, agenda, comment period or records request for a private company's decisions about its own property. A citizen's leverage there is commercial and reputational, not civic.",
         },
         {
-          prompt: "Why does this course say nothing about the racial composition of the Town of Speedway?",
-          answer: "Because the source used does not address it. The course points at decennial census and American Community Survey tables for incorporated places instead of guessing.",
+          prompt: "What does Indiana Code chapter 36-7-14 allow a town redevelopment commission to do?",
+          answer: "Find that an area in its jurisdiction is an area needing redevelopment, designate it a redevelopment project area, and acquire property by purchase, exchange, gift, grant, condemnation or lease, then hold, sell, lease or dispose of it.",
         },
         {
-          prompt: "Name four unopened sources that would advance this story.",
-          answer: "AAA Contest Board rulebooks and minutes plus USAC's 1955 bylaws; Indianapolis 500 entry lists and licence registers including refused entries; the full runs of the Indianapolis Recorder and the Chicago Defender; the State Fair Commission's minutes including the 2019 resurfacing; the Speedway's National Historic Landmark nomination; and the Speedway Redevelopment Commission's record.",
+          prompt: "What happened to the word 'blighted', and what is the lesson?",
+          answer: "It became 'area needing redevelopment', and 'condemnation' is eminent domain. The vocabulary softened and the power did not change. A statute can be renamed without being weakened, and reading the current text is the only way to know which happened.",
         },
         {
-          prompt: "What do the first three courses of the Indianapolis cluster have in common?",
-          answer: "Each tested an inherited argument and two reported partial failures rather than hiding them. That is what happens when you check, and a series that never reported a failed test would be telling you about its authors rather than about Indianapolis.",
+          prompt: "How does the Indiana Code describe the State Fair Commission, and why is that phrasing interesting?",
+          answer: "As a separate body, corporate and politic, which is not a state agency but performs essential governmental functions, with eight members, five appointed by the governor. It is a hybrid, and which open-meetings and public-records obligations attach to a hybrid is a specific legal question this course does not answer.",
+        },
+        {
+          prompt: "State beat 5's finding for this course, and how it mirrors course 1's.",
+          answer: "Course 1 found that no area plan had been adopted yet, which is where a citizen has the most leverage. Here the ground with the deepest Black sporting history has the most public process attached: a state commission, a legislative advisory committee that met October 30, 2025, published reports and a master plan under revision. The process is open. Whether anyone who cares about the Sweepstakes has spoken at it is unknown.",
         },
       ],
     },

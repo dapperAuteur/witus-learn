@@ -74,24 +74,6 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
 - Indiana High School Athletic Association. (n.d.-a). *Boys basketball tournament timeline*. https://ihsaapublic.blob.core.windows.net/archive/b-basketball/TournamentTimeline.htm
 - Indiana High School Athletic Association. (n.d.-b). *Membership history, 1903 to present*. https://www.ihsaa.org/sites/default/files/documents/Membership%20History.pdf
 - Indiana High School Athletic Association. (n.d.-c). *History of the IHSAA*. https://www.ihsaa.org/history-ihsaa`,
-      recallContent: [
-        {
-          prompt: "When and where does the IHSAA record the first Indiana state basketball tournament, and who won it?",
-          answer: "March 1911, at Assembly Hall on the Indiana University campus in Bloomington, won by Crawfordsville. The IHSAA sponsored it officially from 1912.",
-        },
-        {
-          prompt: "How long did Indiana run a single-class tournament, and what replaced it?",
-          answer: "From 1911 through 1997, every school entered the same bracket regardless of size. A four-class format began in 1998.",
-        },
-        {
-          prompt: "Which schools were barred from IHSAA membership, and when did that end?",
-          answer: "All-Black public high schools, along with parochial, private and institutional schools. A December 1941 Athletic Council resolution admitted them; they were admitted 15 August 1942 and were eligible for the 1943 tournament.",
-        },
-        {
-          prompt: "Why does this course put the single-class rule and the membership rule side by side?",
-          answer: "Because one says size is no reason to separate you and the other says some schools are not in the competition at all. A membership rule is a boundary drawn by an association, doing what boundaries do.",
-        },
-      ],
     },
     {
       slug: "gcl-attucks-built",
@@ -126,24 +108,20 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
 - United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/`,
       recallContent: [
         {
-          prompt: "What did the Indianapolis school board do on 22 December 1922, and who is recorded as providing the impetus?",
-          answer: "It adopted a resolution authorising construction of a Colored High School. Judge Dillin's findings record the impetus as a petition from the Indianapolis Chamber of Commerce.",
+          prompt: "When and where does the IHSAA record the first Indiana state basketball tournament, and who won it?",
+          answer: "March 1911, at Assembly Hall on the Indiana University campus in Bloomington, won by Crawfordsville. The IHSAA sponsored it officially from 1912.",
         },
         {
-          prompt: "Who sued to stop the school being built, in whose name, and what happened?",
-          answer: "The NAACP sued in the name of Archie Greathouse, an Indianapolis resident, charging that students would not receive an equal education in a separate school. The suit and the appeal both failed.",
+          prompt: "How long did Indiana run a single-class tournament, and what replaced it?",
+          answer: "From 1911 through 1997, every school entered the same bracket regardless of size. A four-class format began in 1998.",
         },
         {
-          prompt: "What happened to Black high school students in Indianapolis when Attucks opened in September 1927?",
-          answer: "All of them were compelled to attend it regardless of where in the city they lived, in the court's words 'forthwith' and 'regardless of their place of residence.'",
+          prompt: "Which schools were barred from IHSAA membership, and when did that end?",
+          answer: "All-Black public high schools, along with parochial, private and institutional schools. A December 1941 Athletic Council resolution admitted them; they were admitted 15 August 1942 and were eligible for the 1943 tournament.",
         },
         {
-          prompt: "What did the 1935 amendment to the 1869 act require, and why does it matter?",
-          answer: "It required the board to provide transportation for Black students who had to travel more than a certain distance by reason of the board's segregation policies. Buses were used to make segregation work decades before buses were ordered to undo it.",
-        },
-        {
-          prompt: "What did Indiana's 1949 act say, and what question does it force?",
-          answer: "It declared state policy to be equal, nonsegregated, nondiscriminatory education and to abolish segregated schools and school districts. Dillin noted it anticipated Brown by five years. So the question is why Attucks was still 99.8 percent Black in 1968-69.",
+          prompt: "Why does this course put the single-class rule and the membership rule side by side?",
+          answer: "Because one says size is no reason to separate you and the other says some schools are not in the competition at all. A membership rule is a boundary drawn by an association, doing what boundaries do.",
         },
       ],
     },
@@ -200,24 +178,24 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
 - WFYI. (2017, March 26). *Crispus Attucks wins first state title in 58 years*. https://www.wfyi.org/education/2017-03-26/crispus-attucks-wins-first-state-title-in-58-years`,
       recallContent: [
         {
-          prompt: "Which Attucks championship fact has the cleanest citation, and why is it stronger than the usual one?",
-          answer: "That the 1955 team was the first Indianapolis boys team to win the state tournament begun in 1911. It is checkable against the tournament's own champion list and needs no national superlative.",
+          prompt: "What did the Indianapolis school board do on 22 December 1922, and who is recorded as providing the impetus?",
+          answer: "It adopted a resolution authorising construction of a Colored High School. Judge Dillin's findings record the impetus as a petition from the Indianapolis Chamber of Commerce.",
         },
         {
-          prompt: "How should you handle the claim that Attucks was the first all-Black team in the nation to win a state title?",
-          answer: "Attribute it to the Indiana Historical Bureau rather than adopting it. Verifying it nationally would require checking every state association's championship record before 1955, which this course has not done.",
+          prompt: "Who sued to stop the school being built, in whose name, and what happened?",
+          answer: "The NAACP sued in the name of Archie Greathouse, an Indianapolis resident, charging that students would not receive an equal education in a separate school. The suit and the appeal both failed.",
         },
         {
-          prompt: "Name the three accounts of the 1955 celebration and what each emphasises.",
-          answer: "The Encyclopedia of Indianapolis has the mayor greeting the team at Monument Circle and leading a procession to Northwestern Park. The Indiana Historical Bureau has a single lap around the monument instead of the traditional longer route. Sports Illustrated says police would not let the team stop and celebrate at the Circle.",
+          prompt: "What happened to Black high school students in Indianapolis when Attucks opened in September 1927?",
+          answer: "All of them were compelled to attend it regardless of where in the city they lived, in the court's words 'forthwith' and 'regardless of their place of residence.'",
         },
         {
-          prompt: "What would settle the disagreement about the parade, and has this course read it?",
-          answer: "The contemporaneous record: the Indianapolis Recorder and Indianapolis Star for 20 March 1955, plus police and city records. None of it has been read into this course.",
+          prompt: "What did the 1935 amendment to the 1869 act require, and why does it matter?",
+          answer: "It required the board to provide transportation for Black students who had to travel more than a certain distance by reason of the board's segregation policies. Buses were used to make segregation work decades before buses were ordered to undo it.",
         },
         {
-          prompt: "Who coached the 1955, 1956 and 1959 championship teams, and when did Attucks next win a title?",
-          answer: "Ray Crowe coached in 1955 and 1956; Bill Garrett coached the 1959 team. Attucks next won a state championship in 2017, in Class 3A, 58 years later.",
+          prompt: "What did Indiana's 1949 act say, and what question does it force?",
+          answer: "It declared state policy to be equal, nonsegregated, nondiscriminatory education and to abolish segregated schools and school districts. Dillin noted it anticipated Brown by five years. So the question is why Attucks was still 99.8 percent Black in 1968-69.",
         },
       ],
     },
@@ -444,24 +422,24 @@ A high school gym seating eight thousand people in a town far smaller than eight
 - Visit Indiana. (n.d.). *High school gyms: Basketball, best of Indiana*. https://visitindiana.in.gov/blog/post/high-school-gyms-basketball-best-of-indiana/`,
       recallContent: [
         {
-          prompt: "What structurally distinguishes a gymnasium as a building type, and what makes it a 'fieldhouse'?",
-          answer: "A clear-span room: a playing floor with no columns in it, which is the expensive part, wrapped in seating. It becomes a fieldhouse when the seating stops being an afterthought and the building goes free-standing.",
+          prompt: "Which Attucks championship fact has the cleanest citation, and why is it stronger than the usual one?",
+          answer: "That the 1955 team was the first Indianapolis boys team to win the state tournament begun in 1911. It is checkable against the tournament's own champion list and needs no national superlative.",
         },
         {
-          prompt: "Give Hinkle Fieldhouse's architect, date, capacity, and how long it was the largest basketball arena in the country.",
-          answer: "Fermor Spencer Cannon, opened 1928, seating 15,000, the largest basketball arena in the United States until 1950. National Register listed 1983; IHSAA finals from 1928 through 1971; sectionals until 1994.",
+          prompt: "How should you handle the claim that Attucks was the first all-Black team in the nation to win a state title?",
+          answer: "Attribute it to the Indiana Historical Bureau rather than adopting it. Verifying it nationally would require checking every state association's championship record before 1955, which this course has not done.",
         },
         {
-          prompt: "Why did New Castle Fieldhouse change rank twice among the largest high school gyms?",
-          answer: "A 2019 recount by the Indiana High School Basketball Historical Society reordered the top three and moved it to third; a 2020 renovation raised its capacity from 7,829 to 8,424 and moved it back to first. A ranking is a measurement, and measurements get redone.",
+          prompt: "Name the three accounts of the 1955 celebration and what each emphasises.",
+          answer: "The Encyclopedia of Indianapolis has the mayor greeting the team at Monument Circle and leading a procession to Northwestern Park. The Indiana Historical Bureau has a single lap around the monument instead of the traditional longer route. Sports Illustrated says police would not let the team stop and celebrate at the Circle.",
         },
         {
-          prompt: "New Castle is reported to have seated 9,325 in 1959-60 and 8,424 today. How do you handle that?",
-          answer: "Both can be right. Seats widen, aisles get added, codes change. Quote the year with the capacity, the same discipline course 1 required for displacement figures.",
+          prompt: "What would settle the disagreement about the parade, and has this course read it?",
+          answer: "The contemporaneous record: the Indianapolis Recorder and Indianapolis Star for 20 March 1955, plus police and city records. None of it has been read into this course.",
         },
         {
-          prompt: "What is a fieldhouse evidence of, in the beat 2 sense?",
-          answer: "What a community chose to spend on. It is a public building for the thing the town does together, effectively a town hall with a basketball court in it, which makes its size a statement about whose assembly is being funded.",
+          prompt: "Who coached the 1955, 1956 and 1959 championship teams, and when did Attucks next win a title?",
+          answer: "Ray Crowe coached in 1955 and 1956; Bill Garrett coached the 1959 team. Attucks next won a state championship in 2017, in Class 3A, 58 years later.",
         },
       ],
     },
@@ -518,24 +496,24 @@ In **May 2026**, Indianapolis Public Schools announced a **44 million dollar** e
 - WFYI. (2026a, May 6). *Indy's Crispus Attucks High School to receive new healthcare lab and gym via $44 million expansion*. https://www.wfyi.org/education/2026-05-06/indys-crispus-attucks-high-school-to-receive-new-healthcare-lab-and-gym-via-44-million-expansion`,
       recallContent: [
         {
-          prompt: "What was Indiana's minimum acreage formula for a school site, and what does it require for 2,394 students?",
-          answer: "Seven acres for the first 200 students plus one acre for each additional 100. For 2,394 students that is roughly 29 acres: 7 for the first 200 and about 21.9 for the remaining 2,194.",
+          prompt: "What structurally distinguishes a gymnasium as a building type, and what makes it a 'fieldhouse'?",
+          answer: "A clear-span room: a playing floor with no columns in it, which is the expensive part, wrapped in seating. It becomes a fieldhouse when the seating stops being an afterthought and the building goes free-standing.",
         },
         {
-          prompt: "Give the five facts in the court's footnote about the Attucks site.",
-          answer: "The site was 8.4 acres; a waiver was needed from the State Board of Education; the waiver carried a cap of no more than 2,200 students; in 1967-68 the school enrolled 2,394; and those students were 2,393 Black and one white.",
+          prompt: "Give Hinkle Fieldhouse's architect, date, capacity, and how long it was the largest basketball arena in the country.",
+          answer: "Fermor Spencer Cannon, opened 1928, seating 15,000, the largest basketball arena in the United States until 1950. National Register listed 1983; IHSAA finals from 1928 through 1971; sectionals until 1994.",
         },
         {
-          prompt: "What happened to the two sites proposed for a new, desegregated Attucks?",
-          answer: "The City refused to release a 54-acre tract it owned at 38th and White River because Parks wanted it as a nursery, prompting Dillin's line that the City's sense of priorities struck the Court as curious. The board's option at 30th and Guion Road was blocked when the Metropolitan Development Commission denied the rezoning.",
+          prompt: "Why did New Castle Fieldhouse change rank twice among the largest high school gyms?",
+          answer: "A 2019 recount by the Indiana High School Basketball Historical Society reordered the top three and moved it to third; a 2020 renovation raised its capacity from 7,829 to 8,424 and moved it back to first. A ranking is a measurement, and measurements get redone.",
         },
         {
-          prompt: "Why is the Metropolitan Development Commission's refusal the best cross-course link in this cluster?",
-          answer: "It is the same body course 1 introduced in beat 5, which adopts the comprehensive plan and the zoning ordinance and decides rezonings. Here it is the body that denied a school board the land for a desegregated high school. A zoning decision is a school decision when it is made about a school site.",
+          prompt: "New Castle is reported to have seated 9,325 in 1959-60 and 8,424 today. How do you handle that?",
+          answer: "Both can be right. Seats widen, aisles get added, codes change. Quote the year with the capacity, the same discipline course 1 required for displacement figures.",
         },
         {
-          prompt: "Correct the popular claim that Attucks had no gymnasium.",
-          answer: "It had a gymnasium from the 1938 addition and a second from 1966. The accurate version is that it had gyms on a site about a third of the state's own minimum for its enrolment, and played its biggest games in Butler Fieldhouse.",
+          prompt: "What is a fieldhouse evidence of, in the beat 2 sense?",
+          answer: "What a community chose to spend on. It is a public building for the thing the town does together, effectively a town hall with a basketball court in it, which makes its size a statement about whose assembly is being funded.",
         },
       ],
     },
@@ -584,24 +562,24 @@ In **May 2026**, Indianapolis Public Schools announced a **44 million dollar** e
 - United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/`,
       recallContent: [
         {
-          prompt: "Give Indiana's two tournament start dates and the gap between them.",
-          answer: "The IHSAA records its first state basketball tournament in 1911 and held its first football state tournament in 1973, in three classes. Sixty-two years.",
+          prompt: "What was Indiana's minimum acreage formula for a school site, and what does it require for 2,394 students?",
+          answer: "Seven acres for the first 200 students plus one acre for each additional 100. For 2,394 students that is roughly 29 acres: 7 for the first 200 and about 21.9 for the remaining 2,194.",
         },
         {
-          prompt: "Name three ways a gymnasium and a football field differ as investments.",
-          answer: "Land (a gym footprint versus over an acre and a half of playing surface before track, stands and parking), season and weather dependence, and the number of other community uses and revenue nights the building supports.",
+          prompt: "Give the five facts in the court's footnote about the Attucks site.",
+          answer: "The site was 8.4 acres; a waiver was needed from the State Board of Education; the waiver carried a cap of no more than 2,200 students; in 1967-68 the school enrolled 2,394; and those students were 2,393 Black and one white.",
         },
         {
-          prompt: "Who actually made the choice about Attucks's outdoor athletic space?",
-          answer: "Not the school. A school board acting on a 1922 resolution, a state board granting an acreage waiver, a city refusing to release 54 acres, and a zoning commission refusing a rezoning.",
+          prompt: "What happened to the two sites proposed for a new, desegregated Attucks?",
+          answer: "The City refused to release a 54-acre tract it owned at 38th and White River because Parks wanted it as a nursery, prompting Dillin's line that the City's sense of priorities struck the Court as curious. The board's option at 30th and Guion Road was blocked when the Metropolitan Development Commission denied the rezoning.",
         },
         {
-          prompt: "State the rule for reading any school's athletic plant.",
-          answer: "Ask about the parcel before you ask about the program. A school with a stadium had land; a school without one usually did not, and the reason is in a dated record.",
+          prompt: "Why is the Metropolitan Development Commission's refusal the best cross-course link in this cluster?",
+          answer: "It is the same body course 1 introduced in beat 5, which adopts the comprehensive plan and the zoning ordinance and decides rezonings. Here it is the body that denied a school board the land for a desegregated high school. A zoning decision is a school decision when it is made about a school site.",
         },
         {
-          prompt: "Why will this course not say Indiana built gyms first because it loved basketball more?",
-          answer: "Because a dated gap is evidence and a motive is an argument. The 1911 to 1973 gap is sourced; the reason for it is not sourced here.",
+          prompt: "Correct the popular claim that Attucks had no gymnasium.",
+          answer: "It had a gymnasium from the 1938 addition and a second from 1966. The accurate version is that it had gyms on a site about a third of the state's own minimum for its enrolment, and played its biggest games in Butler Fieldhouse.",
         },
       ],
     },
@@ -676,24 +654,24 @@ Dillin catalogued the techniques the board used after 1954: "attendance zone bou
 - United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/`,
       recallContent: [
         {
-          prompt: "Quote Dillin's 1971 finding about boundary changes, and note the correction this course makes.",
-          answer: "'According to the evidence, there have been approximately 350 boundary changes in the system since 1954. More than 90% of these promoted segregation.' The widely repeated version says 360; the opinion says approximately 350. Use the primary source and say you did.",
+          prompt: "Give Indiana's two tournament start dates and the gap between them.",
+          answer: "The IHSAA records its first state basketball tournament in 1911 and held its first football state tournament in 1973, in three classes. Sixty-two years.",
         },
         {
-          prompt: "What is an optional attendance zone, and what did the court find it did?",
-          answer: "An area whose students may choose between two schools. Drawn precisely where neighbourhoods mixed, it let individual choices do the sorting: white students in optional zones almost always attended white schools, and Black students were given options to Attucks even when whiter schools were closer.",
+          prompt: "Name three ways a gymnasium and a football field differ as investments.",
+          answer: "Land (a gym footprint versus over an acre and a half of playing surface before track, stands and parking), season and weather dependence, and the number of other community uses and revenue nights the building supports.",
         },
         {
-          prompt: "Give the two transfer rules the court found, and why neither mentions race.",
-          answer: "A sibling preference operated as a grandfather clause letting white students escape Attucks, in effect through March 1970. Proximity was not a legitimate reason for transfer unless a student lived more than two miles away, which kept Black students within two miles of Attucks from transferring. A rule that lets you out and a rule that keeps you in, both facially neutral.",
+          prompt: "Who actually made the choice about Attucks's outdoor athletic space?",
+          answer: "Not the school. A school board acting on a 1922 resolution, a state board granting an acreage waiver, a city refusing to release 54 acres, and a zoning commission refusing a rezoning.",
         },
         {
-          prompt: "Name the six techniques the court catalogued for post-1954 segregation.",
-          answer: "Attendance zone boundary changes, construction of additions, construction of new schools, provision or adjustment of transportation, alteration of grade structures, and the location or relocation of special education classes. Often combined.",
+          prompt: "State the rule for reading any school's athletic plant.",
+          answer: "Ask about the parcel before you ask about the program. A school with a stadium had land; a school without one usually did not, and the reason is in a dated record.",
         },
         {
-          prompt: "What is the rule to carry from the optional zone finding?",
-          answer: "When a rule is optional, ask who exercises the option and in which direction. A policy that is facially neutral and statistically one-directional is doing work, and the direction is the evidence.",
+          prompt: "Why will this course not say Indiana built gyms first because it loved basketball more?",
+          answer: "Because a dated gap is evidence and a motive is an argument. The 1911 to 1973 gap is sourced; the reason for it is not sourced here.",
         },
       ],
     },
@@ -743,24 +721,24 @@ The question this course carries is: **how do school district lines make a schoo
 - United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). https://www.courtlistener.com/opinion/321692/united-states-of-america-donny-brurell-buckley-intervening-v-board-of/`,
       recallContent: [
         {
-          prompt: "What was Indiana's historic coterminous rule, and when was it recognised by statute?",
-          answer: "When a city expanded its corporate limits, the school city succeeded to the township trustee's school powers, so the boundaries of a school city and a civil city were the same. The Seventh Circuit records the rule as finally recognised by statute in 1931.",
+          prompt: "Quote Dillin's 1971 finding about boundary changes, and note the correction this course makes.",
+          answer: "'According to the evidence, there have been approximately 350 boundary changes in the system since 1954. More than 90% of these promoted segregation.' The widely repeated version says 360; the opinion says approximately 350. Use the primary source and say you did.",
         },
         {
-          prompt: "What did the 1961 Act do, and to which county did it apply?",
-          answer: "With respect only to Marion County, it made a civil annexation only a prima facie extension of the school city boundary, and made that extension subject to a separate remonstrance by the losing school corporation.",
+          prompt: "What is an optional attendance zone, and what did the court find it did?",
+          answer: "An area whose students may choose between two schools. Drawn precisely where neighbourhoods mixed, it let individual choices do the sorting: white students in optional zones almost always attended white schools, and Black students were given options to Attucks even when whiter schools were closer.",
         },
         {
-          prompt: "What is a remonstrance, and why does adding one matter so much?",
-          answer: "A formal objection filed by affected parties that can block or delay an action. It forbids nothing; it makes an automatic step stoppable by whoever shows up.",
+          prompt: "Give the two transfer rules the court found, and why neither mentions race.",
+          answer: "A sibling preference operated as a grandfather clause letting white students escape Attucks, in effect through March 1970. Proximity was not a legitimate reason for transfer unless a student lived more than two miles away, which kept Black students within two miles of Attucks from transferring. A rule that lets you out and a rule that keeps you in, both facially neutral.",
         },
         {
-          prompt: "Quote the court's conclusion about the 1961 and 1969 acts, including its hedge.",
-          answer: "That their effect 'may well have been to retard desegregation and to promote segregation,' and that under previous Indiana law, which still applied to every city except Indianapolis, civil annexation would automatically carry school annexation with it. The hedge states a probable effect without asserting intent.",
+          prompt: "Name the six techniques the court catalogued for post-1954 segregation.",
+          answer: "Attendance zone boundary changes, construction of additions, construction of new schools, provision or adjustment of transportation, alteration of grade structures, and the location or relocation of special education classes. Often combined.",
         },
         {
-          prompt: "What is the transferable question to ask about any American metro area?",
-          answer: "Is the school district boundary the same shape as the municipal boundary? If not, when did they diverge, under what act, and who was inside each one on that date?",
+          prompt: "What is the rule to carry from the optional zone finding?",
+          answer: "When a rule is optional, ask who exercises the option and in which direction. A policy that is facially neutral and statistically one-directional is doing work, and the direction is the evidence.",
         },
       ],
     },
@@ -830,24 +808,24 @@ Judge Dillin, in the 1973 remedy phase, considered whether the surrounding distr
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "Quote the Seventh Circuit's description of what Unigov did to the school district.",
-          answer: "The Uni-Gov Act 'expressly provides that the Indianapolis school district would not be affected by the expansion of the city,' so the school district 'was confined to an area in the central part of the new Uni-Gov, where it is surrounded by eight township school systems and by two additional city school corporations (Beech Grove and Speedway City), all operating independently within the new unified City of Indianapolis and within Marion County.'",
+          prompt: "What was Indiana's historic coterminous rule, and when was it recognised by statute?",
+          answer: "When a city expanded its corporate limits, the school city succeeded to the township trustee's school powers, so the boundaries of a school city and a civil city were the same. The Seventh Circuit records the rule as finally recognised by statute in 1931.",
         },
         {
-          prompt: "In the participants' own words, why were schools excluded from Unigov?",
-          answer: "Mayor Lugar said the bill would die if schools were included and acknowledged that many people wanted to keep their particular school segregated. Board president Landrum Shields said including schools would have raised the spectre of racial integration and meant instant death for the plan, adding 'We cooperated with the Mayor by not killing Unigov.'",
+          prompt: "What did the 1961 Act do, and to which county did it apply?",
+          answer: "With respect only to Marion County, it made a civil annexation only a prima facie extension of the school city boundary, and made that extension subject to a separate remonstrance by the losing school corporation.",
         },
         {
-          prompt: "What were the Black enrolment shares on each side of the line in 1969?",
-          answer: "The township school districts were about 2.6 percent Black; Indianapolis Public Schools enrolled more than one third Black students.",
+          prompt: "What is a remonstrance, and why does adding one matter so much?",
+          answer: "A formal objection filed by affected parties that can block or delay an action. It forbids nothing; it makes an automatic step stoppable by whoever shows up.",
         },
         {
-          prompt: "What did Judge Dillin find about whether the surrounding districts had themselves discriminated, and why is it the key sentence?",
-          answer: "That there was no evidence any added defendant had committed acts of de jure segregation, and that with few exceptions none had had the opportunity because the Black population inside their borders ranged from slight to none. A district line can produce a segregated system without a single discriminatory act inside any district.",
+          prompt: "Quote the court's conclusion about the 1961 and 1969 acts, including its hedge.",
+          answer: "That their effect 'may well have been to retard desegregation and to promote segregation,' and that under previous Indiana law, which still applied to every city except Indianapolis, civil annexation would automatically carry school annexation with it. The hedge states a probable effect without asserting intent.",
         },
         {
-          prompt: "How many school districts does Marion County have today, and how does that compare with 1974?",
-          answer: "Eleven: IPS, eight township corporations (Decatur, Franklin, Lawrence, Perry, Pike, Warren, Washington, Wayne), plus Beech Grove and Speedway. The same eleven the Seventh Circuit described in 1974.",
+          prompt: "What is the transferable question to ask about any American metro area?",
+          answer: "Is the school district boundary the same shape as the municipal boundary? If not, when did they diverge, under what act, and who was inside each one on that date?",
         },
       ],
     },
@@ -919,24 +897,24 @@ The same opinion records the district judge's estimate that but for the violatio
 - United States v. Board of School Commissioners of the City of Indianapolis, 128 F.3d 507 (7th Cir. 1997). https://caselaw.findlaw.com/court/us-7th-circuit/1233296.html`,
       recallContent: [
         {
-          prompt: "Why does this course call a lawsuit an instrument, and how long did this one run?",
-          answer: "Because it fits the definition: a specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. It was filed 31 May 1968 and the inter-district busing it produced ended in 2016.",
+          prompt: "Quote the Seventh Circuit's description of what Unigov did to the school district.",
+          answer: "The Uni-Gov Act 'expressly provides that the Indianapolis school district would not be affected by the expansion of the city,' so the school district 'was confined to an area in the central part of the new Uni-Gov, where it is surrounded by eight township school systems and by two additional city school corporations (Beech Grove and Speedway City), all operating independently within the new unified City of Indianapolis and within Marion County.'",
         },
         {
-          prompt: "Who was ultimately held liable, and who paid for the remedy?",
-          answer: "The State of Indiana. Dillin imputed the violation to the State in July 1973, and in July 1981 held that Indiana must fund the entire Marion County-wide remedy because the State alone bore the liability.",
+          prompt: "In the participants' own words, why were schools excluded from Unigov?",
+          answer: "Mayor Lugar said the bill would die if schools were included and acknowledged that many people wanted to keep their particular school segregated. Board president Landrum Shields said including schools would have raised the spectre of racial integration and meant instant death for the plan, adding 'We cooperated with the Mayor by not killing Unigov.'",
         },
         {
-          prompt: "In which direction did the busing actually run, and when was the other direction authorised?",
-          answer: "One way, out of IPS to the township districts, beginning 19 August 1981 with about 5,500 Black students. The Seventh Circuit did not authorise transfers into IPS until April 1980, and the implemented remedy still ran outward.",
+          prompt: "What were the Black enrolment shares on each side of the line in 1969?",
+          answer: "The township school districts were about 2.6 percent Black; Indianapolis Public Schools enrolled more than one third Black students.",
         },
         {
-          prompt: "What did the 1984 ruling about township school board elections establish, and why does it matter?",
-          answer: "That parents of bused students could vote and run in the township school board elections governing their children's schools. Representation does not follow a student automatically; it had to be granted, three years after the buses started.",
+          prompt: "What did Judge Dillin find about whether the surrounding districts had themselves discriminated, and why is it the key sentence?",
+          answer: "That there was no evidence any added defendant had committed acts of de jure segregation, and that with few exceptions none had had the opportunity because the Black population inside their borders ranged from slight to none. A district line can produce a segregated system without a single discriminatory act inside any district.",
         },
         {
-          prompt: "Quote the Seventh Circuit's 1997 one-sentence summary of what Unigov did.",
-          answer: "That in 1969, when the Uni-Gov law extended the City of Indianapolis boundaries to be coterminous with Marion County, the boundaries of IPS were deliberately not extended, in order to prevent Black public schoolchildren from being in the same school district as white ones.",
+          prompt: "How many school districts does Marion County have today, and how does that compare with 1974?",
+          answer: "Eleven: IPS, eight township corporations (Decatur, Franklin, Lawrence, Perry, Pike, Warren, Washington, Wayne), plus Beech Grove and Speedway. The same eleven the Seventh Circuit described in 1974.",
         },
       ],
     },
@@ -1006,28 +984,24 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 - United States v. Board of School Commissioners of the City of Indianapolis, 503 F.2d 68 (7th Cir. 1974). https://www.courtlistener.com/opinion/321692/united-states-of-america-donny-brurell-buckley-intervening-v-board-of/`,
       recallContent: [
         {
-          prompt: "What did the district court order in the Detroit case, and what did the Supreme Court do about it?",
-          answer: "It ordered a metropolitan desegregation plan covering Detroit plus 53 of the 85 outlying suburban districts. On 25 July 1974 the Supreme Court, 5 to 4, held that remedy impermissible.",
+          prompt: "Why does this course call a lawsuit an instrument, and how long did this one run?",
+          answer: "Because it fits the definition: a specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. It was filed 31 May 1968 and the inter-district busing it produced ended in 2016.",
         },
         {
-          prompt: "State Milliken's threshold for a cross-district remedy.",
-          answer: "Before the boundaries of separate and autonomous school districts may be set aside, it must first be shown that there has been a constitutional violation within one district that produces a significant segregative effect in another district, and specifically that racially discriminatory acts of the state or local districts were a substantial cause of inter-district segregation.",
+          prompt: "Who was ultimately held liable, and who paid for the remedy?",
+          answer: "The State of Indiana. Dillin imputed the violation to the State in July 1973, and in July 1981 held that Indiana must fund the entire Marion County-wide remedy because the State alone bore the liability.",
         },
         {
-          prompt: "Which clause of the Milliken standard did Indianapolis satisfy, and what supplied the proof?",
-          answer: "The clause allowing an inter-district remedy where district lines have been deliberately drawn on the basis of race. The proof was the 1969 Unigov statute, which moved the city line and expressly left the school line, explained on the record at the time.",
+          prompt: "In which direction did the busing actually run, and when was the other direction authorised?",
+          answer: "One way, out of IPS to the township districts, beginning 19 August 1981 with about 5,500 Black students. The Seventh Circuit did not authorise transfers into IPS until April 1980, and the implemented remedy still ran outward.",
         },
         {
-          prompt: "Break down what the Seventh Circuit did in August 1974.",
-          answer: "It reversed the remedy beyond the Uni-Gov boundaries, vacated and remanded the remedy inside them so the district court could decide whether establishing Uni-Gov boundaries without reestablishing IPS boundaries warranted an inter-district remedy, and affirmed everything else.",
+          prompt: "What did the 1984 ruling about township school board elections establish, and why does it matter?",
+          answer: "That parents of bused students could vote and run in the township school board elections governing their children's schools. Representation does not follow a student automatically; it had to be granted, three years after the buses started.",
         },
         {
-          prompt: "Why does this course refuse to quote Justice Marshall's dissent?",
-          answer: "Because the full-text sources read for the lesson did not carry the dissents in full, and a quotation you have not seen in the document you read is a quotation you do not have. The course sends you to volume 418 of the United States Reports to quote it yourself with a page number.",
-        },
-        {
-          prompt: "Name two other metropolitan areas where an inter-district remedy survived Milliken.",
-          answer: "New Castle County, Delaware, in Evans v. Buchanan, covering Wilmington and its suburbs; and Jefferson County, Kentucky, where the Louisville city and county systems merged in 1975.",
+          prompt: "Quote the Seventh Circuit's 1997 one-sentence summary of what Unigov did.",
+          answer: "That in 1969, when the Uni-Gov law extended the City of Indianapolis boundaries to be coterminous with Marion County, the boundaries of IPS were deliberately not extended, in order to prevent Black public schoolchildren from being in the same school district as white ones.",
         },
       ],
     },
@@ -1123,24 +1097,28 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "Why does the Unigov argument fail in course 1 and hold in this one?",
-          answer: "Because the test is chronological. Every instrument that took Indiana Avenue's buildings predates 1 January 1970, so Unigov cannot have caused them. The shape and limit of the school remedy, from 1974 to 2016, all postdate Unigov and turn on its boundary.",
+          prompt: "What did the district court order in the Detroit case, and what did the Supreme Court do about it?",
+          answer: "It ordered a metropolitan desegregation plan covering Detroit plus 53 of the 85 outlying suburban districts. On 25 July 1974 the Supreme Court, 5 to 4, held that remedy impermissible.",
         },
         {
-          prompt: "State the surviving claim about Unigov and schools as precisely as the record allows.",
-          answer: "Unigov did not segregate the schools. It made an existing segregation permanent at the one moment Indiana's own default rule would have dissolved it, because under the rule recognised by statute in 1931 a civil annexation carried school annexation automatically, and Unigov was the largest civil annexation in the state's history.",
+          prompt: "State Milliken's threshold for a cross-district remedy.",
+          answer: "Before the boundaries of separate and autonomous school districts may be set aside, it must first be shown that there has been a constitutional violation within one district that produces a significant segregative effect in another district, and specifically that racially discriminatory acts of the state or local districts were a substantial cause of inter-district segregation.",
         },
         {
-          prompt: "Which three effects fail the test, and why?",
-          answer: "Attucks being segregated (1927, forty-three years earlier), IPS being internally segregated (boundary changes from 1954 and the 1961 act), and the metro pattern of a Black city district ringed by white township districts (the townships were already about 2.6 percent Black in 1969). All predate Unigov.",
+          prompt: "Which clause of the Milliken standard did Indianapolis satisfy, and what supplied the proof?",
+          answer: "The clause allowing an inter-district remedy where district lines have been deliberately drawn on the basis of race. The proof was the 1969 Unigov statute, which moved the city line and expressly left the school line, explained on the record at the time.",
         },
         {
-          prompt: "Give the three corrections this lesson makes.",
-          answer: "The opinion says approximately 350 boundary changes since 1954, not 360 between 1949 and 1968. The Seventh Circuit did not find Unigov fostered segregation; Dillin did, on remand, on 1 August 1975, with the intent finding on 11 July 1978. And the cluster plan's attribution of that finding to Dillin's 1971 ruling names the right judge and the wrong year, because the 1971 opinion only says the 1961 and 1969 acts 'may well have been' to promote segregation.",
+          prompt: "Break down what the Seventh Circuit did in August 1974.",
+          answer: "It reversed the remedy beyond the Uni-Gov boundaries, vacated and remanded the remedy inside them so the district court could decide whether establishing Uni-Gov boundaries without reestablishing IPS boundaries warranted an inter-district remedy, and affirmed everything else.",
         },
         {
-          prompt: "Name three records that would settle what is still open here.",
-          answer: "The Board of School Commissioners' minutes from 1954 to 1971 where the boundary changes live, the General Assembly's committee record for the 1961 act and the 1969 Unigov bill, and the Indianapolis Recorder's coverage from 1968 to 1981. Also the township school boards' minutes and the 1989 National Register nomination for Attucks.",
+          prompt: "Why does this course refuse to quote Justice Marshall's dissent?",
+          answer: "Because the full-text sources read for the lesson did not carry the dissents in full, and a quotation you have not seen in the document you read is a quotation you do not have. The course sends you to volume 418 of the United States Reports to quote it yourself with a page number.",
+        },
+        {
+          prompt: "Name two other metropolitan areas where an inter-district remedy survived Milliken.",
+          answer: "New Castle County, Delaware, in Evans v. Buchanan, covering Wilmington and its suburbs; and Jefferson County, Kentucky, where the Louisville city and county systems merged in 1975.",
         },
       ],
     },
@@ -1579,28 +1557,24 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 - WFYI. (n.d.). *Mayor-appointed board to assume control of IPS and charter school facilities, finances*. https://www.wfyi.org/news/articles/indiana-senate-passes-hb1423-ips-charters-ipec-2026`,
       recallContent: [
         {
-          prompt: "How many townships have land inside the IPS boundary, and why does that matter?",
-          answer: "Seven: Lawrence, Wayne, Washington, Warren, Pike, Decatur and Perry. The IPS line is not a township line and not the current city limit. It is roughly where the school district stopped growing, frozen by the 1961 and 1969 acts and by Unigov.",
+          prompt: "Why does the Unigov argument fail in course 1 and hold in this one?",
+          answer: "Because the test is chronological. Every instrument that took Indiana Avenue's buildings predates 1 January 1970, so Unigov cannot have caused them. The shape and limit of the school remedy, from 1974 to 2016, all postdate Unigov and turn on its boundary.",
         },
         {
-          prompt: "In Indiana, which parts of a school budget come from the state and which from local property tax?",
-          answer: "Classroom operations come mainly from state tuition support, distributed by a formula with a foundation amount plus complexity dollars for students from low-income backgrounds. Local property tax supports the operations fund, debt service on bonds and leases, and any referendum levy under Indiana Code 20-46-1 or 20-46-9.",
+          prompt: "State the surviving claim about Unigov and schools as precisely as the record allows.",
+          answer: "Unigov did not segregate the schools. It made an existing segregation permanent at the one moment Indiana's own default rule would have dissolved it, because under the rule recognised by statute in 1931 a civil annexation carried school annexation automatically, and Unigov was the largest civil annexation in the state's history.",
         },
         {
-          prompt: "Why does a district boundary still decide whether a community can build a gym?",
-          answer: "Because a property tax levy raises rate multiplied by the assessed value inside the line. Two districts with identical rates and identical children raise different amounts if different parcels are inside them, and buildings are paid for from the property tax side.",
+          prompt: "Which three effects fail the test, and why?",
+          answer: "Attucks being segregated (1927, forty-three years earlier), IPS being internally segregated (boundary changes from 1954 and the 1961 act), and the metro pattern of a Black city district ringed by white township districts (the townships were already about 2.6 percent Black in 1969). All predate Unigov.",
         },
         {
-          prompt: "Give the three routes by which a school district line can be moved in Indiana.",
-          answer: "Annexation between school corporations under Indiana Code 20-23-5, which needs a resolution from both the losing and the gaining district and is subject to remonstrance by voters in the losing district; reorganisation under 20-23-4; and an act of the General Assembly, which is what Indiana actually used in 1961, 1969, 2025 and 2026.",
+          prompt: "Give the three corrections this lesson makes.",
+          answer: "The opinion says approximately 350 boundary changes since 1954, not 360 between 1949 and 1968. The Seventh Circuit did not find Unigov fostered segregation; Dillin did, on remand, on 1 August 1975, with the intent finding on 11 July 1978. And the cluster plan's attribution of that finding to Dillin's 1971 ruling names the right judge and the wrong year, because the 1971 opinion only says the 1961 and 1969 acts 'may well have been' to promote segregation.",
         },
         {
-          prompt: "What did the 2026 law do to the IPS boundary, and what did it do instead?",
-          answer: "Nothing to the boundary. House Enrolled Act 1423 created the Indianapolis Public Education Corporation, a nine-member board appointed by the mayor, which takes over budgets and tax levies, property, transportation and school performance, with full implementation in 2028-29. A boundary can stay put while everything about who governs inside it changes.",
-        },
-        {
-          prompt: "What is 'legal settlement' and why does the term matter here?",
-          answer: "Indiana's statutory term for the tie between a student and a school corporation. A district line does not only draw a school, it assigns a legal status to a child, and that status is what the money follows.",
+          prompt: "Name three records that would settle what is still open here.",
+          answer: "The Board of School Commissioners' minutes from 1954 to 1971 where the boundary changes live, the General Assembly's committee record for the 1961 act and the 1969 Unigov bill, and the Indianapolis Recorder's coverage from 1968 to 1981. Also the township school boards' minutes and the 1989 National Register nomination for Attucks.",
         },
       ],
     },
@@ -2082,24 +2056,28 @@ A short, checkable piece in which every sentence is either something you read in
 - United States v. Board of School Commissioners of the City of Indianapolis, 332 F. Supp. 655 (S.D. Ind. 1971). https://law.justia.com/cases/federal/district-courts/FSupp/332/655/1624629/`,
       recallContent: [
         {
-          prompt: "Why does this course insist that running the six-beat template twice is the point?",
-          answer: "Because once is a story and twice, with different results, is a method. Course 1 ran the chronology test and reported a failure; this course ran it and reported a hold. A test is only worth having because it can do both.",
+          prompt: "How many townships have land inside the IPS boundary, and why does that matter?",
+          answer: "Seven: Lawrence, Wayne, Washington, Warren, Pike, Decatur and Perry. The IPS line is not a township line and not the current city limit. It is roughly where the school district stopped growing, frozen by the 1961 and 1969 acts and by Unigov.",
         },
         {
-          prompt: "Give the difference between a claim about a document and a claim about the world, using this course's example.",
-          answer: "'The court found more than 90 percent of about 350 boundary changes promoted segregation' is a claim about a document and is supported by it. 'Indianapolis schools were segregated by accident' is a claim about the world and the record contradicts it.",
+          prompt: "In Indiana, which parts of a school budget come from the state and which from local property tax?",
+          answer: "Classroom operations come mainly from state tuition support, distributed by a formula with a foundation amount plus complexity dollars for students from low-income backgrounds. Local property tax supports the operations fund, debt service on bonds and leases, and any referendum levy under Indiana Code 20-46-1 or 20-46-9.",
         },
         {
-          prompt: "Name four things this course deliberately left out.",
-          answer: "The Attucks athletic record in depth, the IHSAA's own institutional reasons for changing its rule in 1941, what actually stood on the 8.4 acres, whether the busing remedy was worth it, the dissents in Milliken, and the parochial school systems in Marion County.",
+          prompt: "Why does a district boundary still decide whether a community can build a gym?",
+          answer: "Because a property tax levy raises rate multiplied by the assessed value inside the line. Two districts with identical rates and identical children raise different amounts if different parcels are inside them, and buildings are paid for from the property tax side.",
         },
         {
-          prompt: "List the unopened sources that would advance this story.",
-          answer: "The Board of School Commissioners' minutes from 1954 to 1971, the General Assembly's committee record for the 1961 act and the 1969 Unigov bill, the township school boards' minutes, the Indianapolis Recorder from 1922 to 1981, the 1989 National Register nomination and the Sanborn maps, and the Star and Recorder for 20 March 1955.",
+          prompt: "Give the three routes by which a school district line can be moved in Indiana.",
+          answer: "Annexation between school corporations under Indiana Code 20-23-5, which needs a resolution from both the losing and the gaining district and is subject to remonstrance by voters in the losing district; reorganisation under 20-23-4; and an act of the General Assembly, which is what Indiana actually used in 1961, 1969, 2025 and 2026.",
         },
         {
-          prompt: "State the closing claim of the course in one line.",
-          answer: "The buildings are the evidence and the line is the argument, and the line is still there, still deciding, and still amendable by a resolution, a remonstrance or an act of a legislature.",
+          prompt: "What did the 2026 law do to the IPS boundary, and what did it do instead?",
+          answer: "Nothing to the boundary. House Enrolled Act 1423 created the Indianapolis Public Education Corporation, a nine-member board appointed by the mayor, which takes over budgets and tax levies, property, transportation and school performance, with full implementation in 2028-29. A boundary can stay put while everything about who governs inside it changes.",
+        },
+        {
+          prompt: "What is 'legal settlement' and why does the term matter here?",
+          answer: "Indiana's statutory term for the tie between a student and a school corporation. A district line does not only draw a school, it assigns a legal status to a child, and that status is what the money follows.",
         },
       ],
     },

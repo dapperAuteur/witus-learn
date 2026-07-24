@@ -86,18 +86,6 @@ Read the second row again. Convention 87 dates from **1948**. Poland, the commun
 - International Labour Organization. (n.d.). *Ratifications for the Republic of Korea*. NORMLEX. https://www.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:103123
 - Statistics Korea. (2025, October). *Supplementary results of the Economically Active Population Survey by employment type in August 2025* [Press release]. https://mods.go.kr/board.es?act=view&bid=11735&list_no=439078&mid=a20105010000
 - Kim & Chang. (2022). *Implementation and implications of the ILO fundamental conventions*. https://www.kimchang.com/en/insights/detail.kc?sch_section=4&idx=24986`,
-      recallContent: [
-        {
-          prompt: "When did South Korea ratify ILO Conventions 87 and 98, and when did they enter into force?",
-          answer:
-            "Korea deposited the ratifications (together with Convention 29 on forced labour) on 20 April 2021; they entered into force one year later, on 20 April 2022, thirty years after Korea joined the ILO in 1991 promising to ratify them, and seventy-three years after Convention 87 was written.",
-        },
-        {
-          prompt: "What two present-day 'catches' does the course say came with the unions Korean workers won in 1987?",
-          answer:
-            "(1) A workforce split between regular and non-regular workers, 38.2% of wage workers were non-regular in August 2025 (Statistics Korea) and stand outside most of what the unions won; and (2) a repression mechanism unique in the track: civil damages suits and provisional seizure of wages and homes brought against individual strikers.",
-        },
-      ],
     },
     {
       slug: "korea-four-questions",
@@ -132,14 +120,14 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
 - Statista. (2024). *Trade union membership rate South Korea 1977–2023* [Reporting Ministry of Employment and Labor figures]. https://www.statista.com/statistics/648966/south-korea-union-membership-rate/`,
       recallContent: [
         {
-          prompt: "What is Korea's defining answer to Question 2 (who is excluded)?",
+          prompt: "When did South Korea ratify ILO Conventions 87 and 98, and when did they enter into force?",
           answer:
-            "The regular/non-regular divide: 38.2% of wage workers, 8.57 million people, were non-regular in August 2025 (Statistics Korea): fixed-term, part-time, dispatched, in-house subcontracted, or 'specially employed' self-employed like truck drivers. Many stand outside effective union protection; some are outside the legal definition of 'worker' entirely.",
+            "Korea deposited the ratifications (together with Convention 29 on forced labour) on 20 April 2021; they entered into force one year later, on 20 April 2022, thirty years after Korea joined the ILO in 1991 promising to ratify them, and seventy-three years after Convention 87 was written.",
         },
         {
-          prompt: "What is Korea's signature modern answer to Question 4 (what happens to you if you try)?",
+          prompt: "What two present-day 'catches' does the course say came with the unions Korean workers won in 1987?",
           answer:
-            "The civil damages suit plus provisional seizure: a strike is ruled illegal, the company sues the union and individual strikers for lost business, and courts freeze wages and homes while the case runs. It can financially destroy a worker without jailing anyone, a mechanism no other course in the track has.",
+            "(1) A workforce split between regular and non-regular workers, 38.2% of wage workers were non-regular in August 2025 (Statistics Korea) and stand outside most of what the unions won; and (2) a repression mechanism unique in the track: civil damages suits and provisional seizure of wages and homes brought against individual strikers.",
         },
       ],
     },
@@ -359,14 +347,14 @@ Hold that gap, a real statute, deliberately left dead, because the next lesson i
 - The Korea Times. (2011, January 23). *Labor activist Chon Tae-il's death: A wake-up call*. https://www.koreatimes.co.kr/southkorea/20110123/century-labor-activist-chon-tae-ils-death-a-wake-up-call`,
       recallContent: [
         {
-          prompt: "What three mechanisms did the Park regime use to keep labor cheap and quiet?",
+          prompt: "What is Korea's defining answer to Question 2 (who is excluded)?",
           answer:
-            "(1) A single legal, state-supervised federation (the FKTU) with vetted leadership channeling grievances downward; (2) emergency law, the December 1971 special measures and the 1972 Yushin system, suspending effective bargaining and strike rights; (3) the KCIA treating labor organizing as a security matter: surveillance, infiltration, and breaking of independent unions.",
+            "The regular/non-regular divide: 38.2% of wage workers, 8.57 million people, were non-regular in August 2025 (Statistics Korea): fixed-term, part-time, dispatched, in-house subcontracted, or 'specially employed' self-employed like truck drivers. Many stand outside effective union protection; some are outside the legal definition of 'worker' entirely.",
         },
         {
-          prompt: "Who staffed Korea's light-industry export machine, and under what conditions?",
+          prompt: "What is Korea's signature modern answer to Question 4 (what happens to you if you try)?",
           answer:
-            "Overwhelmingly young women, teenagers and women in their early twenties from the countryside, including the 'sida' assistant seamstresses of Seoul's Peace Market: thirteen-to-fifteen-hour days in attic workshops too low to stand in, fabric dust, dormitory living, wages remitted home. The 1953 Labor Standards Act guaranteed hours and conditions on paper and was simply not enforced there.",
+            "The civil damages suit plus provisional seizure: a strike is ruled illegal, the company sues the union and individual strikers for lost business, and courts freeze wages and homes while the case runs. It can financially destroy a worker without jailing anyone, a mechanism no other course in the track has.",
         },
       ],
     },
@@ -395,14 +383,14 @@ Hold that gap, a real statute, deliberately left dead, because the next lesson i
 - Cho, Y. (2003). *A single spark: The biography of Chun Tae-il* (Dolbegae, publisher; original Korean edition 1983).`,
       recallContent: [
         {
-          prompt: "What did Jeon Tae-il discover in 1968, and what did he do about it before his death?",
+          prompt: "What three mechanisms did the Park regime use to keep labor cheap and quiet?",
           answer:
-            "That the 1953 Labor Standards Act already guaranteed, on paper, the hours, rest and protections the Peace Market denied, the law existed but was unenforced. He taught himself the statute from a guidebook, formed the 'Fools' Society' of fellow tailors, surveyed hundreds of workers about hours and health, and took the evidence to the Labor Office and the press. Officialdom did nothing.",
+            "(1) A single legal, state-supervised federation (the FKTU) with vetted leadership channeling grievances downward; (2) emergency law, the December 1971 special measures and the 1972 Yushin system, suspending effective bargaining and strike rights; (3) the KCIA treating labor organizing as a security matter: surveillance, infiltration, and breaking of independent unions.",
         },
         {
-          prompt: "What happened on 13 November 1970, and what were its two immediate legacies?",
+          prompt: "Who staffed Korea's light-industry export machine, and under what conditions?",
           answer:
-            "Jeon Tae-il, 22, self-immolated at Seoul's Peace Market beside a burning copy of the Labor Standards Act, dying that evening after asking his mother to continue the work. Legacies: the Peace Market's first real union within two weeks (founded with his mother Lee So-sun presiding), and the fusing of workers and students, the alliance that became the backbone of the democratic labor movement.",
+            "Overwhelmingly young women, teenagers and women in their early twenties from the countryside, including the 'sida' assistant seamstresses of Seoul's Peace Market: thirteen-to-fifteen-hour days in attic workshops too low to stand in, fabric dust, dormitory living, wages remitted home. The 1953 Labor Standards Act guaranteed hours and conditions on paper and was simply not enforced there.",
         },
       ],
     },
@@ -431,14 +419,14 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
 - Global Nonviolent Action Database. (n.d.). *South Korean women labourers protest closing of YH wig manufacturing company, 1979*. Swarthmore College. https://nvdatabase.swarthmore.edu/content/south-korean-women-labourers-protest-closing-yh-wig-manufacturing-company-1979`,
       recallContent: [
         {
-          prompt: "Who was Lee So-sun, and what did she do after 13 November 1970?",
+          prompt: "What did Jeon Tae-il discover in 1968, and what did he do about it before his death?",
           answer:
-            "Jeon Tae-il's mother. Honoring his dying request, she presided over the founding of the Cheonggye Garment Workers' Union barely a week after his funeral, was jailed repeatedly under the dictatorship, and organized for four more decades. When she died in 2011 at 82, the movement called her 'the mother of workers.'",
+            "That the 1953 Labor Standards Act already guaranteed, on paper, the hours, rest and protections the Peace Market denied, the law existed but was unenforced. He taught himself the statute from a guidebook, formed the 'Fools' Society' of fellow tailors, surveyed hundreds of workers about hours and health, and took the evidence to the Labor Office and the press. Officialdom did nothing.",
         },
         {
-          prompt: "What happened at Dongil Textile on 22 February 1978, and what followed for the women involved?",
+          prompt: "What happened on 13 November 1970, and what were its two immediate legacies?",
           answer:
-            "Company-side men attacked women unionists arriving to vote in a union election, smearing them with buckets of human excrement to humiliate them out of their woman-led democratic union. Over a hundred who kept resisting were fired and blacklisted across the industry; women who protested at a broadcast event were beaten and arrested.",
+            "Jeon Tae-il, 22, self-immolated at Seoul's Peace Market beside a burning copy of the Labor Standards Act, dying that evening after asking his mother to continue the work. Legacies: the Peace Market's first real union within two weeks (founded with his mother Lee So-sun presiding), and the fusing of workers and students, the alliance that became the backbone of the democratic labor movement.",
         },
       ],
     },
@@ -674,14 +662,14 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
 - Chang, D. (2021). Korean labour movement: The birth, rise and transformation of the democratic trade union movement. In *Routledge Handbook of Contemporary South Korea*. https://labourschool.org/wp-content/uploads/2024/09/Chang-2021-Korean-Labour-Movement-Routledge-Handbook-of-Contemporary-South-Korea.pdf`,
       recallContent: [
         {
-          prompt: "What was the Great Workers' Struggle, in numbers?",
+          prompt: "Who was Lee So-sun, and what did she do after 13 November 1970?",
           answer:
-            "July-September 1987: more than 3,300 labor disputes involving roughly 1.2 million workers in about three months, in a country whose entire union membership had been about a million. By the end of 1988 over 3,400 new unions existed, wage settlements commonly ran 25-30%, and membership roughly doubled toward its 1989 peak of just under one wage worker in five.",
+            "Jeon Tae-il's mother. Honoring his dying request, she presided over the founding of the Cheonggye Garment Workers' Union barely a week after his funeral, was jailed repeatedly under the dictatorship, and organized for four more decades. When she died in 2011 at 82, the movement called her 'the mother of workers.'",
         },
         {
-          prompt: "Where did the 1987 strike wave begin, and which workforce led it?",
+          prompt: "What happened at Dongil Textile on 22 February 1978, and what followed for the women involved?",
           answer:
-            "In the Hyundai complexes of Ulsan, the dictatorship's showcase heavy-industry city, spreading through Masan, Changwon and Busan. The strikers were centrally the men of heavy industry, shipyards, autos, steel, a different workforce from the women of the 1970s light-industry unions, and the origin of today's chaebol enterprise-union movement.",
+            "Company-side men attacked women unionists arriving to vote in a union election, smearing them with buckets of human excrement to humiliate them out of their woman-led democratic union. Over a hundred who kept resisting were fired and blacklisted across the industry; women who protested at a broadcast event were beaten and arrested.",
         },
       ],
     },
@@ -710,14 +698,14 @@ Do not overclaim the chain, historians debate the exact weights, but the sequenc
 - UPI. (2020, May 6). *Samsung heir apologizes for no-union policy*. https://www.upi.com/Top_News/World-News/2020/05/06/Samsung-heir-apologies-for-no-union-policy/4521588766924/`,
       recallContent: [
         {
-          prompt: "What is a chaebol, and how does it shape Korean union structure?",
+          prompt: "What was the Great Workers' Struggle, in numbers?",
           answer:
-            "A family-controlled conglomerate (Samsung, Hyundai, LG, SK…) spanning dozens of legally separate subsidiaries, deliberately built by the developmental state. Because one complex can employ tens of thousands, a single enterprise union can be an army while the economy-wide structure stays fragmented, each union stops at its own company's gate. It is the Japanese enterprise-union pattern on bigger, more confrontational firms.",
+            "July-September 1987: more than 3,300 labor disputes involving roughly 1.2 million workers in about three months, in a country whose entire union membership had been about a million. By the end of 1988 over 3,400 new unions existed, wage settlements commonly ran 25-30%, and membership roughly doubled toward its 1989 peak of just under one wage worker in five.",
         },
         {
-          prompt: "Distinguish the FKTU and the KCTU.",
+          prompt: "Where did the 1987 strike wave begin, and which workforce led it?",
           answer:
-            "FKTU: the older federation, the dictatorship era's single legal center, today the more moderate and negotiation-oriented house. KCTU: founded November 1995 by the democratic unions of 1987, illegal until November 1999 (the law allowed one center and FKTU held the slot), today the more militant and political federation. Each organizes roughly 1.1 million workers (KCTU: 1,086,618 at end-2023, MOEL figures).",
+            "In the Hyundai complexes of Ulsan, the dictatorship's showcase heavy-industry city, spreading through Masan, Changwon and Busan. The strikers were centrally the men of heavy industry, shipyards, autos, steel, a different workforce from the women of the 1970s light-industry unions, and the origin of today's chaebol enterprise-union movement.",
         },
       ],
     },
@@ -952,14 +940,14 @@ That second workforce is the next lesson's subject, and it is not a fringe: it i
 - Statistics Korea. (2025, October). *Supplementary results of the Economically Active Population Survey by employment type in August 2025* [Press release]. https://mods.go.kr/board.es?act=view&bid=11735&list_no=439078&mid=a20105010000`,
       recallContent: [
         {
-          prompt: "What did each side get in the February 1998 tripartite bargain?",
+          prompt: "What is a chaebol, and how does it shape Korean union structure?",
           answer:
-            "Employers and the state got legalized layoffs for 'urgent managerial necessity' and the Dispatch Workers Act legalizing temp-agency employment. Labor got recognition: teachers'-union legalization, union political-participation rights, and a seat at the tripartite table. The KCTU rank and file revolted and voted it down, forcing their leadership's resignation, but the deal stood.",
+            "A family-controlled conglomerate (Samsung, Hyundai, LG, SK…) spanning dozens of legally separate subsidiaries, deliberately built by the developmental state. Because one complex can employ tens of thousands, a single enterprise union can be an army while the economy-wide structure stays fragmented, each union stops at its own company's gate. It is the Japanese enterprise-union pattern on bigger, more confrontational firms.",
         },
         {
-          prompt: "Why is 1997 Korea's hinge year for this course?",
+          prompt: "Distinguish the FKTU and the KCTU.",
           answer:
-            "The IMF-led ~$58 billion international rescue (letter of intent signed 3 December 1997, then the largest ever assembled) came with labor-flexibility conditions. The resulting 1998 legal tools, business-reason layoffs, dispatch work, and the outsourcing wave that followed, grew today's non-regular workforce (38.2% of wage workers, August 2025) around the unions of 1987 rather than through them.",
+            "FKTU: the older federation, the dictatorship era's single legal center, today the more moderate and negotiation-oriented house. KCTU: founded November 1995 by the democratic unions of 1987, illegal until November 1999 (the law allowed one center and FKTU held the slot), today the more militant and political federation. Each organizes roughly 1.1 million workers (KCTU: 1,086,618 at end-2023, MOEL figures).",
         },
       ],
     },
@@ -991,14 +979,14 @@ Nearly four in ten. Now unpack what the label means, because "non-regular" (*bij
 - International Labour Organization. (n.d.). *Republic of Korea — country profile*. ILOSTAT. https://ilostat.ilo.org/data/country-profiles/kor/`,
       recallContent: [
         {
-          prompt: "What is the size of Korea's non-regular workforce, with year and source?",
+          prompt: "What did each side get in the February 1998 tripartite bargain?",
           answer:
-            "8,568,000 workers, 38.2% of all wage workers, as of August 2025, per Statistics Korea's Economically Active Population Survey supplementary results by employment type (unchanged in share from August 2024). Nearly four in ten wage earners.",
+            "Employers and the state got legalized layoffs for 'urgent managerial necessity' and the Dispatch Workers Act legalizing temp-agency employment. Labor got recognition: teachers'-union legalization, union political-participation rights, and a seat at the tripartite table. The KCTU rank and file revolted and voted it down, forcing their leadership's resignation, but the deal stood.",
         },
         {
-          prompt: "What is in-house subcontracting, and why does the course call it 'the Korean specialty'?",
+          prompt: "Why is 1997 Korea's hinge year for this course?",
           answer:
-            "A nominally independent contractor company supplies crews who work inside the principal firm's own plant, same shipyard or assembly line as regular employees, at lower pay and outside the enterprise union. Korea's giant shipyards and auto plants run on it, and courts have repeatedly found major manufacturers' versions to be disguised illegal dispatch.",
+            "The IMF-led ~$58 billion international rescue (letter of intent signed 3 December 1997, then the largest ever assembled) came with labor-flexibility conditions. The resulting 1998 legal tools, business-reason layoffs, dispatch work, and the outsourcing wave that followed, grew today's non-regular workforce (38.2% of wage workers, August 2025) around the unions of 1987 rather than through them.",
         },
       ],
     },
@@ -1029,14 +1017,14 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
 - Statistics Korea. (2025, October). *Supplementary results of the Economically Active Population Survey by employment type in August 2025* [Press release]. https://mods.go.kr/board.es?act=view&bid=11735&list_no=439078&mid=a20105010000`,
       recallContent: [
         {
-          prompt: "Who were the KTX attendants, and how long did their fight run?",
+          prompt: "What is the size of Korea's non-regular workforce, with year and source?",
           answer:
-            "About 280 women hired through a subsidiary for Korea's new high-speed rail, dismissed in 2006 after demanding the direct employment they said was promised. Through reversed court victories, picket lines and rooftop protests, the fight ran twelve years, ending with a 2018 agreement returning them to direct employment, an emblematic irregular-workers' struggle fought largely outside the big federations' core unions.",
+            "8,568,000 workers, 38.2% of all wage workers, as of August 2025, per Statistics Korea's Economically Active Population Survey supplementary results by employment type (unchanged in share from August 2024). Nearly four in ten wage earners.",
         },
         {
-          prompt: "What is the three-part honest answer to 'where were the unions while non-regular work grew?'",
+          prompt: "What is in-house subcontracting, and why does the course call it 'the Korean specialty'?",
           answer:
-            "(1) The enterprise-union structure made defending the regular core rational, even at the price of acquiescing in outsourcing, no conspiracy needed; (2) the excluded organized anyway (KTX attendants, Kiryung Electronics), creating the era's defining struggles; (3) the federations, especially the KCTU, have since made irregular organizing a priority, but the change is partial, recent, and was forced substantially from below.",
+            "A nominally independent contractor company supplies crews who work inside the principal firm's own plant, same shipyard or assembly line as regular employees, at lower pay and outside the enterprise union. Korea's giant shipyards and auto plants run on it, and courts have repeatedly found major manufacturers' versions to be disguised illegal dispatch.",
         },
       ],
     },
@@ -1273,14 +1261,14 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
 - Peoples Dispatch. (2020, January 13). *For the dismissed workers of the 2009 Ssangyong Motors strike, the struggle continues*. https://peoplesdispatch.org/2020/01/13/for-the-dismissed-workers-of-the-2009-ssangyong-motors-strike-the-struggle-continues/`,
       recallContent: [
         {
-          prompt: "What is provisional seizure (gapryu), and why does it make the damages suit so potent?",
+          prompt: "Who were the KTX attendants, and how long did their fight run?",
           answer:
-            "A court order freezing a defendant's assets, wages, severance pay, homes, while litigation runs, before any final judgment. Because anti-strike damages cases can run a decade or more (Ssangyong's reached the Supreme Court in June 2023, 13+ years after the 2009 strike), workers live for years under garnished pay and corporate-scale joint debt regardless of the eventual verdict. The process is the punishment.",
+            "About 280 women hired through a subsidiary for Korea's new high-speed rail, dismissed in 2006 after demanding the direct employment they said was promised. Through reversed court victories, picket lines and rooftop protests, the fight ran twelve years, ending with a 2018 agreement returning them to direct employment, an emblematic irregular-workers' struggle fought largely outside the big federations' core unions.",
         },
         {
-          prompt: "Summarize the Ssangyong 2009 strike and its human aftermath.",
+          prompt: "What is the three-part honest answer to 'where were the unions while non-regular work grew?'",
           answer:
-            "Facing ~2,600 layoffs, metalworkers occupied the Pyeongtaek plant for 77 days until police commandos rappelling from helicopters broke it in August 2009. The company, its insurer and the state then sued the union and individual workers; courts ordered ~4.7 billion won in damages (2013-14) with provisional seizures. By 2018 media counted around thirty deaths among laid-off workers and family members (counts vary by period and definition), suicides prominent among them.",
+            "(1) The enterprise-union structure made defending the regular core rational, even at the price of acquiescing in outsourcing, no conspiracy needed; (2) the excluded organized anyway (KTX attendants, Kiryung Electronics), creating the era's defining struggles; (3) the federations, especially the KCTU, have since made irregular organizing a priority, but the change is partial, recent, and was forced substantially from below.",
         },
       ],
     },
@@ -1309,14 +1297,14 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
 - Jacobin. (2023, February). *South Korean truckers provide a model for labor organizing among independent contractors*. https://jacobin.com/2023/02/south-korean-trucker-contractor-strike-trucksol`,
       recallContent: [
         {
-          prompt: "What was the Safe Trucking Freight Rates System, and what happened to it?",
+          prompt: "What is provisional seizure (gapryu), and why does it make the damages suit so potent?",
           answer:
-            "A minimum freight-rate scheme introduced in 2020 for container and cement haulage, on the logic that rock-bottom rates force owner-operators into overloading and dangerous hours. It carried a three-year sunset; the 2022 strikes sought to make it permanent and extend it, but after the November-December strike ended in defeat (9 December 2022), the system lapsed on 31 December 2022.",
+            "A court order freezing a defendant's assets, wages, severance pay, homes, while litigation runs, before any final judgment. Because anti-strike damages cases can run a decade or more (Ssangyong's reached the Supreme Court in June 2023, 13+ years after the 2009 strike), workers live for years under garnished pay and corporate-scale joint debt regardless of the eventual verdict. The process is the punishment.",
         },
         {
-          prompt: "What was unprecedented about the government's response on 29 November 2022?",
+          prompt: "Summarize the Ssangyong 2009 strike and its human aftermath.",
           answer:
-            "It invoked the return-to-work order provision of the Trucking Transport Business Act, on the books since 2004, never before used, against ~2,500 cement haulers (a second order followed 8 December for steel/petrochemical drivers). Defiance carried up to three years in prison or a 30 million won fine plus license suspension, applied to drivers as individuals, legally 'business operators,' not workers.",
+            "Facing ~2,600 layoffs, metalworkers occupied the Pyeongtaek plant for 77 days until police commandos rappelling from helicopters broke it in August 2009. The company, its insurer and the state then sued the union and individual workers; courts ordered ~4.7 billion won in damages (2013-14) with provisional seizures. By 2018 media counted around thirty deaths among laid-off workers and family members (counts vary by period and definition), suicides prominent among them.",
         },
       ],
     },
@@ -1348,14 +1336,14 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
 - The Korea Herald. (2025). *How will 'Yellow Envelope' bill reshape Korea's labor landscape?* https://www.koreaherald.com/article/10564042`,
       recallContent: [
         {
-          prompt: "Where does the name 'yellow envelope law' come from?",
+          prompt: "What was the Safe Trucking Freight Rates System, and what happened to it?",
           answer:
-            "From a 2013-14 citizens' campaign: after courts ordered Ssangyong workers to pay ~4.7 billion won, a reader sent 47,000 won in a yellow envelope, the kind wages used to be paid in, to help. Around fifty thousand people gave about 1.5 billion won, and the envelope became the emblem of the demand to rein in damages suits against strikers.",
+            "A minimum freight-rate scheme introduced in 2020 for container and cement haulage, on the logic that rock-bottom rates force owner-operators into overloading and dangerous hours. It carried a three-year sunset; the 2022 strikes sought to make it permanent and extend it, but after the November-December strike ended in defeat (9 December 2022), the system lapsed on 31 December 2022.",
         },
         {
-          prompt: "Give the dated legislative history of the yellow envelope law.",
+          prompt: "What was unprecedented about the government's response on 29 November 2022?",
           answer:
-            "Passed by the National Assembly November 2023, vetoed by President Yoon. Passed again August 2024, vetoed again. After Yoon's December 2024 martial-law crisis, impeachment, and the June 2025 election, passed a third time on 24 August 2025 (183-3, opposition boycotting), signed, and effective March 2026. As of mid-2026 its real-world effects are untested, check current status before asserting outcomes.",
+            "It invoked the return-to-work order provision of the Trucking Transport Business Act, on the books since 2004, never before used, against ~2,500 cement haulers (a second order followed 8 December for steel/petrochemical drivers). Defiance carried up to three years in prison or a 30 million won fine plus license suspension, applied to drivers as individuals, legally 'business operators,' not workers.",
         },
       ],
     },
@@ -1592,14 +1580,14 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
 - The Diplomat. (2022, December). *South Korea's government accused of violating labor rights amid truckers' strike*. https://thediplomat.com/2022/12/south-koreas-government-accused-of-violating-labor-rights-amid-truckers-strike/`,
       recallContent: [
         {
-          prompt: "What did Korea have to change in its own law to ratify ILO Conventions 87 and 98?",
+          prompt: "Where does the name 'yellow envelope law' come from?",
           answer:
-            "The 2021 TULRAA amendments, most prominently allowing dismissed and unemployed workers to join unions (ending the rule that made firing an organizer a union-expulsion tool), plus loosened restrictions on union office and public-sector organizing. The conventions were deposited 20 April 2021, entered into force 20 April 2022, and carry the same effect as domestic statute under Article 6(1) of the constitution.",
+            "From a 2013-14 citizens' campaign: after courts ordered Ssangyong workers to pay ~4.7 billion won, a reader sent 47,000 won in a yellow envelope, the kind wages used to be paid in, to help. Around fifty thousand people gave about 1.5 billion won, and the envelope became the emblem of the demand to rein in damages suits against strikers.",
         },
         {
-          prompt: "What post-ratification events show the fight didn't end in 2021?",
+          prompt: "Give the dated legislative history of the yellow envelope law.",
           answer:
-            "The November 2022 truckers' return-to-work orders and the continuing damages-suit battles both came after ratification; unions took them to ILO supervisory bodies under the newly binding conventions, the government defended them as lawful, and those proceedings, plus the first court tests of the conventions' domestic effect, were still unfolding as of mid-2026.",
+            "Passed by the National Assembly November 2023, vetoed by President Yoon. Passed again August 2024, vetoed again. After Yoon's December 2024 martial-law crisis, impeachment, and the June 2025 election, passed a third time on 24 August 2025 (183-3, opposition boycotting), signed, and effective March 2026. As of mid-2026 its real-world effects are untested, check current status before asserting outcomes.",
         },
       ],
     },
@@ -1639,14 +1627,14 @@ Three readings, and then the skill.
 - Statistics Korea. (2025, October). *Supplementary results of the Economically Active Population Survey by employment type in August 2025* [Press release]. https://mods.go.kr/board.es?act=view&bid=11735&list_no=439078&mid=a20105010000`,
       recallContent: [
         {
-          prompt: "Give Korea's scorecard numbers with years and sources.",
+          prompt: "What did Korea have to change in its own law to ratify ILO Conventions 87 and 98?",
           answer:
-            "Density 13.1% (2022, MOEL; 14.2% in 2021, 12.5% in 2019; below 10% around 2010; peak just under one in five in 1989). Coverage ~14.8% (2018, OECD/AIAS ICTWSS). Bargaining: enterprise-level, with no mechanism extending agreements to non-signers. Non-regular share: 38.2% of wage workers (August 2025, Statistics Korea).",
+            "The 2021 TULRAA amendments, most prominently allowing dismissed and unemployed workers to join unions (ending the rule that made firing an organizer a union-expulsion tool), plus loosened restrictions on union office and public-sector organizing. The conventions were deposited 20 April 2021, entered into force 20 April 2022, and carry the same effect as domestic statute under Article 6(1) of the constitution.",
         },
         {
-          prompt: "What is the third diagnostic tool this course adds to the track's toolkit?",
+          prompt: "What post-ratification events show the fight didn't end in 2021?",
           answer:
-            "Find out what happens after the strike ends: who gets sued and under what liability rule, whether provisional seizure freezes assets during litigation, what criminal charges attach, and whether the strikers were inside the legal category 'worker' at all. A labor system's true face is the years of consequences, not the day of confrontation. (Germany contributed 'find the bargaining level'; Poland 'find the form that moves workers out of the category.')",
+            "The November 2022 truckers' return-to-work orders and the continuing damages-suit battles both came after ratification; unions took them to ILO supervisory bodies under the newly binding conventions, the government defended them as lawful, and those proceedings, plus the first court tests of the conventions' domestic effect, were still unfolding as of mid-2026.",
         },
       ],
     },

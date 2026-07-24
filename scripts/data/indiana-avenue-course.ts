@@ -68,24 +68,6 @@ export const INDIANA_AVENUE_COURSE: AuthoredCourse = {
 - Encyclopedia of Indianapolis. (n.d.-a). *Indiana Avenue*. https://indyencyclopedia.org/indiana-avenue/
 - Encyclopedia of Indianapolis. (n.d.-b). *Ransom Place*. https://indyencyclopedia.org/ransom-place/
 - Encyclopedia of Indianapolis. (n.d.-c). *Lockefield Gardens*. https://indyencyclopedia.org/lockefield-gardens/`,
-      recallContent: [
-        {
-          prompt: "What is Indiana Avenue, geographically, and how old is the street?",
-          answer: "One of four diagonal streets on Alexander Ralston's 1821 plat of Indianapolis, running northwest out of the Mile Square from Illinois and Ohio streets.",
-        },
-        {
-          prompt: "What did a 1916 study find within eight blocks of the Avenue?",
-          answer: "33 restaurants, 33 saloons, 26 grocery stores, 17 barbers and hair stylists, 16 tailors and clothing retailers, 14 cobblers, 13 dry goods stores, plus drugstores, pawnbrokers, pool halls, funeral parlors, and the offices of lawyers, physicians, dentists and real estate agents.",
-        },
-        {
-          prompt: "Why is that list of businesses evidence of something more than commerce?",
-          answer: "It is a complete local economy. A resident could meet every ordinary need inside the corridor without risking being refused service, which the DNR historic context describes as existing without the constant humiliation encountered in the world at large.",
-        },
-        {
-          prompt: "Which prerequisite course does this one build on, and what does it teach?",
-          answer: "The Green Book: How to Read a Route. It teaches the method: read an edition and a listing, read a gap as evidence, chain listings into a route, and research an address forward to today.",
-        },
-      ],
     },
     {
       slug: "ia-green-book-listings",
@@ -154,24 +136,20 @@ export const INDIANA_AVENUE_COURSE: AuthoredCourse = {
 - New York Public Library. (n.d.). *Green Book research guide*. https://libguides.nypl.org/greenbook`,
       recallContent: [
         {
-          prompt: "How many Green Book entries did Indiana have in total, across how many communities, and who compiled the list?",
-          answer: "197 entries across 21 communities, compiled by the Indiana DNR Division of Historic Preservation and Archaeology and documented by Gray & Pape in the 2025 National Register multiple property form.",
+          prompt: "What is Indiana Avenue, geographically, and how old is the street?",
+          answer: "One of four diagonal streets on Alexander Ralston's 1821 plat of Indianapolis, running northwest out of the Mile Square from Illinois and Ohio streets.",
         },
         {
-          prompt: "What span of street numbers do the Indiana Avenue listings cover, and why is that useful?",
-          answer: "233 to 1005 Indiana Avenue. It gives you a testable length for the district rather than an impression, and it matches the roughly nine-block corridor described elsewhere.",
+          prompt: "What did a 1916 study find within eight blocks of the Avenue?",
+          answer: "33 restaurants, 33 saloons, 26 grocery stores, 17 barbers and hair stylists, 16 tailors and clothing retailers, 14 cobblers, 13 dry goods stores, plus drugstores, pawnbrokers, pool halls, funeral parlors, and the offices of lawyers, physicians, dentists and real estate agents.",
         },
         {
-          prompt: "Why do most Indiana Avenue beauty parlors, drug stores and liquor stores stop appearing after 1955?",
-          answer: "Because the 1956 edition narrowed the guide to lodging and restaurants almost exclusively. It is an editorial change in the book, not a change on the street.",
+          prompt: "Why is that list of businesses evidence of something more than commerce?",
+          answer: "It is a complete local economy. A resident could meet every ordinary need inside the corridor without risking being refused service, which the DNR historic context describes as existing without the constant humiliation encountered in the world at large.",
         },
         {
-          prompt: "Which single Indiana Avenue business is listed continuously from 1950 to 1967, and why did it survive the category cut?",
-          answer: "Perkins Restaurant at 793 Indiana Avenue. Restaurants were one of the two categories the guide kept after 1956.",
-        },
-        {
-          prompt: "There is a Thurman hotel at 222 Indiana Avenue in the Indiana Green Book data. Why must you not put it on this corridor?",
-          answer: "It is in French Lick, about 100 miles south, which has its own Indiana Avenue. A listing is only located when you carry the city as well as the street.",
+          prompt: "Which prerequisite course does this one build on, and what does it teach?",
+          answer: "The Green Book: How to Read a Route. It teaches the method: read an edition and a listing, read a gap as evidence, chain listings into a route, and research an address forward to today.",
         },
       ],
     },
@@ -204,24 +182,24 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
 - SAVI, The Polis Center. (n.d.). *Changes in Indy's historic Black neighborhoods*. https://savi.org/changes-in-indys-historic-black-neighborhoods/`,
       recallContent: [
         {
-          prompt: "What years does the Encyclopedia of Indianapolis give as the golden age of Indianapolis jazz, and name three documented Avenue venues.",
-          answer: "1945 to 1965. Documented venues include the Cotton Club, Sunset Terrace, George's Bar, Henri's, the Red Keg, the Red Rooster, the Ritz Lounge, the Sky Club, the Trianon Ballroom and the Walker Casino.",
+          prompt: "How many Green Book entries did Indiana have in total, across how many communities, and who compiled the list?",
+          answer: "197 entries across 21 communities, compiled by the Indiana DNR Division of Historic Preservation and Archaeology and documented by Gray & Pape in the 2025 National Register multiple property form.",
         },
         {
-          prompt: "There is a Sunset Terrace club and a Sunset tavern at 875 Indiana Avenue in the Green Book. Why should you not treat those as the same entry?",
-          answer: "A shared word in a name is a lead, not an identification. You would corroborate it in a city directory before writing that they are one establishment.",
+          prompt: "What span of street numbers do the Indiana Avenue listings cover, and why is that useful?",
+          answer: "233 to 1005 Indiana Avenue. It gives you a testable length for the district rather than an impression, and it matches the roughly nine-block corridor described elsewhere.",
         },
         {
-          prompt: "Give Lockefield Gardens' opening date and the two competing unit counts, with who gives each.",
-          answer: "Opened February 1938. The Encyclopedia of Indianapolis gives 748 units in 24 buildings on 22 acres; SAVI refers to 798 units. Report the number you used and its source rather than picking one silently.",
+          prompt: "Why do most Indiana Avenue beauty parlors, drug stores and liquor stores stop appearing after 1955?",
+          answer: "Because the 1956 edition narrowed the guide to lodging and restaurants almost exclusively. It is an editorial change in the book, not a change on the street.",
         },
         {
-          prompt: "What did the state NAACP think about creating Crispus Attucks High School, and how does the DNR context describe the school?",
-          answer: "The state chapter fought its creation, fearing a segregated school would mean inferior facilities and coursework. The same source says it became and remains a source of Black excellence and pride. Both are true.",
+          prompt: "Which single Indiana Avenue business is listed continuously from 1950 to 1967, and why did it survive the category cut?",
+          answer: "Perkins Restaurant at 793 Indiana Avenue. Restaurants were one of the two categories the guide kept after 1956.",
         },
         {
-          prompt: "What did Flanner House offer residents displaced from Pat Ward's Bottom?",
-          answer: "A path to home ownership: about 300 dollars down and roughly 1,200 hours of labour to earn equity in a house. It drew national attention and let some families remain in the area.",
+          prompt: "There is a Thurman hotel at 222 Indiana Avenue in the Indiana Green Book data. Why must you not put it on this corridor?",
+          answer: "It is in French Lick, about 100 miles south, which has its own Indiana Avenue. A listing is only located when you carry the city as well as the street.",
         },
       ],
     },
@@ -427,20 +405,24 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - National Park Service. (n.d.). *National Register of Historic Places*. https://www.nps.gov/subjects/nationalregister/index.htm`,
       recallContent: [
         {
-          prompt: "What three categories does the Indiana Green Book documentation form sort businesses into, and on what basis?",
-          answer: "Domestic, commercial and district, sorted by primary use, then into subtypes taken from the Green Book's own category headings.",
+          prompt: "What years does the Encyclopedia of Indianapolis give as the golden age of Indianapolis jazz, and name three documented Avenue venues.",
+          answer: "1945 to 1965. Documented venues include the Cotton Club, Sunset Terrace, George's Bar, Henri's, the Red Keg, the Red Rooster, the Ritz Lounge, the Sky Club, the Trianon Ballroom and the Walker Casino.",
         },
         {
-          prompt: "Why does a typology that only counts monuments miss most of a district?",
-          answer: "Because the domestic subtypes, especially tourist homes run by Black women, are architecturally ordinary houses that were doing significant civic and social work. Ordinary fabric can carry extraordinary history.",
+          prompt: "There is a Sunset Terrace club and a Sunset tavern at 875 Indiana Avenue in the Green Book. Why should you not treat those as the same entry?",
+          answer: "A shared word in a name is a lead, not an identification. You would corroborate it in a city directory before writing that they are one establishment.",
         },
         {
-          prompt: "Give the Indiana Avenue Historic District's listing date, size and building count.",
-          answer: "Listed on the National Register June 12, 1987, reference number 87000912. About 3 acres, eleven historic buildings in the 500 block, built roughly 1869 to 1935.",
+          prompt: "Give Lockefield Gardens' opening date and the two competing unit counts, with who gives each.",
+          answer: "Opened February 1938. The Encyclopedia of Indianapolis gives 748 units in 24 buildings on 22 acres; SAVI refers to 798 units. Report the number you used and its source rather than picking one silently.",
         },
         {
-          prompt: "What does 'extant' mean on a survey form, and what does it NOT mean?",
-          answer: "It means the building is standing. It does not mean the business is open, the use is unchanged, the interior survives, or the community is intact. A survey measures fabric only.",
+          prompt: "What did the state NAACP think about creating Crispus Attucks High School, and how does the DNR context describe the school?",
+          answer: "The state chapter fought its creation, fearing a segregated school would mean inferior facilities and coursework. The same source says it became and remains a source of Black excellence and pride. Both are true.",
+        },
+        {
+          prompt: "What did Flanner House offer residents displaced from Pat Ward's Bottom?",
+          answer: "A path to home ownership: about 300 dollars down and roughly 1,200 hours of labour to earn equity in a house. It drew national attention and let some families remain in the area.",
         },
       ],
     },
@@ -476,24 +458,20 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - National Park Service. (n.d.). *National Historic Landmarks program*. https://www.nps.gov/subjects/nationalhistoriclandmarks/index.htm`,
       recallContent: [
         {
-          prompt: "Where is the Walker Building, and what is its plan and date?",
-          answer: "617 Indiana Avenue, at the Avenue and Dr. Martin Luther King Jr. Street. A four-story flatiron building by Rubush and Hunter with sculpture by Alexander Sangernebo, opened December 1927.",
+          prompt: "What three categories does the Indiana Green Book documentation form sort businesses into, and on what basis?",
+          answer: "Domestic, commercial and district, sorted by primary use, then into subtypes taken from the Green Book's own category headings.",
         },
         {
-          prompt: "Why is the building triangular, and what does that tell you about beat 2?",
-          answer: "Indiana Avenue is a diagonal from Ralston's 1821 plat cutting a rectangular grid, which leaves triangular lots. A 1821 survey decision determines the shape of a 1927 building.",
+          prompt: "Why does a typology that only counts monuments miss most of a district?",
+          answer: "Because the domestic subtypes, especially tourist homes run by Black women, are architecturally ordinary houses that were doing significant civic and social work. Ordinary fabric can carry extraordinary history.",
         },
         {
-          prompt: "Who finished the building, and when did Madam C. J. Walker die?",
-          answer: "She died in 1919, eight years before the December 1927 opening. Her daughter A'Lelia Walker and the company's general manager and attorney Freeman B. Ransom carried the construction through.",
+          prompt: "Give the Indiana Avenue Historic District's listing date, size and building count.",
+          answer: "Listed on the National Register June 12, 1987, reference number 87000912. About 3 acres, eleven historic buildings in the 500 block, built roughly 1869 to 1935.",
         },
         {
-          prompt: "Name the building's three designations and their years.",
-          answer: "Indiana Register of Historic Places 1979, National Register of Historic Places 1980, National Historic Landmark 1991.",
-        },
-        {
-          prompt: "What is the most useful thing about the designation dates?",
-          answer: "They all come after the decisions that removed most of the corridor, which ran from 1945 through the 1960s. Designation arrived late, which is why Section 5 asks about the buildings still standing today.",
+          prompt: "What does 'extant' mean on a survey form, and what does it NOT mean?",
+          answer: "It means the building is standing. It does not mean the business is open, the use is unchanged, the interior survives, or the community is intact. A survey measures fabric only.",
         },
       ],
     },
@@ -531,20 +509,24 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - National Park Service. (n.d.). *National Register of Historic Places: Frequently asked questions*. https://www.nps.gov/subjects/nationalregister/faqs.htm`,
       recallContent: [
         {
-          prompt: "Name the three documented surviving fragments of the historic fabric, and one reason each survived.",
-          answer: "The Walker Building (monumental, institutionally owned, money raised); Ransom Place (residential, organised, listed in 1992 while there was still something to list); and seven Lockefield Gardens buildings (locally designated in 1980, rehabilitated, the other 17 demolished in 1983).",
+          prompt: "Where is the Walker Building, and what is its plan and date?",
+          answer: "617 Indiana Avenue, at the Avenue and Dr. Martin Luther King Jr. Street. A four-story flatiron building by Rubush and Hunter with sculpture by Alexander Sangernebo, opened December 1927.",
         },
         {
-          prompt: "What is the uncomfortable finding in the Lockefield demolition chronology?",
-          answer: "Judge S. Hugh Dillin ruled that rehabilitating Lockefield for an exclusively or overwhelmingly Black residency would illegally reproduce school segregation, so a desegregation ruling is part of why the project was not rehabilitated for its own residents.",
+          prompt: "Why is the building triangular, and what does that tell you about beat 2?",
+          answer: "Indiana Avenue is a diagonal from Ralston's 1821 plat cutting a rectangular grid, which leaves triangular lots. A 1821 survey decision determines the shape of a 1927 building.",
         },
         {
-          prompt: "Does National Register listing stop a private owner from demolishing a building?",
-          answer: "No. Federal listing is recognition plus review leverage when federal money or a federal permit is involved, plus some tax credits. Local designation under a local ordinance is the one that normally regulates demolition.",
+          prompt: "Who finished the building, and when did Madam C. J. Walker die?",
+          answer: "She died in 1919, eight years before the December 1927 opening. Her daughter A'Lelia Walker and the company's general manager and attorney Freeman B. Ransom carried the construction through.",
         },
         {
-          prompt: "Which designation actually protected the seven surviving Lockefield buildings?",
-          answer: "The local Indianapolis historic district designation made in 1980, at the time of the redevelopment agreement.",
+          prompt: "Name the building's three designations and their years.",
+          answer: "Indiana Register of Historic Places 1979, National Register of Historic Places 1980, National Historic Landmark 1991.",
+        },
+        {
+          prompt: "What is the most useful thing about the designation dates?",
+          answer: "They all come after the decisions that removed most of the corridor, which ran from 1945 through the 1960s. Designation arrived late, which is why Section 5 asks about the buildings still standing today.",
         },
       ],
     },
@@ -582,24 +564,20 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
       recallContent: [
         {
-          prompt: "Define an 'instrument' as this course uses the word.",
-          answer: "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. The last part is what makes it researchable.",
+          prompt: "Name the three documented surviving fragments of the historic fabric, and one reason each survived.",
+          answer: "The Walker Building (monumental, institutionally owned, money raised); Ransom Place (residential, organised, listed in 1992 while there was still something to list); and seven Lockefield Gardens buildings (locally designated in 1980, rehabilitated, the other 17 demolished in 1983).",
         },
         {
-          prompt: "What was Pat Ward's Bottom, and what happened to it?",
-          answer: "A Black neighbourhood of small tightly packed houses behind Crispus Attucks High School. Identified as blighted by the Indiana General Assembly in 1945, chosen by the Indianapolis Redevelopment Commission for its first slum clearance, with demolition beginning in 1948.",
+          prompt: "What is the uncomfortable finding in the Lockefield demolition chronology?",
+          answer: "Judge S. Hugh Dillin ruled that rehabilitating Lockefield for an exclusively or overwhelmingly Black residency would illegally reproduce school segregation, so a desegregation ruling is part of why the project was not rehabilitated for its own residents.",
         },
         {
-          prompt: "Why is 'blighted' a legal conclusion rather than a description?",
-          answer: "It is reached by a body, on a record, against statutory criteria, and it unlocks powers of acquisition, clearance and resale that do not otherwise exist.",
+          prompt: "Does National Register listing stop a private owner from demolishing a building?",
+          answer: "No. Federal listing is recognition plus review leverage when federal money or a federal permit is involved, plus some tax credits. Local designation under a local ordinance is the one that normally regulates demolition.",
         },
         {
-          prompt: "What is the circularity problem with physical blight criteria?",
-          answer: "The criteria measure deterioration, and deterioration follows from decades of refused mortgage credit, insurance and investment. The finding and its cause can be the same policy at two dates.",
-        },
-        {
-          prompt: "If you want to know why a block is gone, where do you start, and why?",
-          answer: "With the designation, not the demolition. A designation is dated, bounded, minuted and public, and the clearance follows from it.",
+          prompt: "Which designation actually protected the seven surviving Lockefield buildings?",
+          answer: "The local Indianapolis historic district designation made in 1980, at the time of the redevelopment agreement.",
         },
       ],
     },
@@ -636,24 +614,24 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - Archer, D. N. (2020). "White men's roads through Black men's homes": Advancing racial equity through highway reconstruction. *Vanderbilt Law Review, 73*(5). https://scholarship.law.vanderbilt.edu/vlr/vol73/iss5/1/`,
       recallContent: [
         {
-          prompt: "What does the Fifth Amendment require when property is taken?",
-          answer: "Private property shall not be taken for public use without just compensation. The Fourteenth Amendment applies the requirement to the states.",
+          prompt: "Define an 'instrument' as this course uses the word.",
+          answer: "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. The last part is what makes it researchable.",
         },
         {
-          prompt: "In a condemnation case, what is normally in dispute?",
-          answer: "The price, not whether the taking happens. Refusing an offer usually leads to a court setting the number rather than stopping the project.",
+          prompt: "What was Pat Ward's Bottom, and what happened to it?",
+          answer: "A Black neighbourhood of small tightly packed houses behind Crispus Attucks High School. Identified as blighted by the Indiana General Assembly in 1945, chosen by the Indianapolis Redevelopment Commission for its first slum clearance, with demolition beginning in 1948.",
         },
         {
-          prompt: "Give the documented Temple family timeline and figures.",
-          answer: "House at 550 Minerva Street plus three rentals. IU's initial offer 23,000 dollars in 1965; Governor Whitcomb granted eminent domain permission in December 1972 and January 1976; settled June 1979 at 50,000 dollars. The site became University Tower.",
+          prompt: "Why is 'blighted' a legal conclusion rather than a description?",
+          answer: "It is reached by a body, on a record, against statutory criteria, and it unlocks powers of acquisition, clearance and resale that do not otherwise exist.",
         },
         {
-          prompt: "Why should you not turn the Temple settlement into a statistic?",
-          answer: "One case is one case. It documents what happened to one family and establishes no average, pattern or rate. The 1965 and 1979 dollar figures are also not comparable without an inflation adjustment you would have to state.",
+          prompt: "What is the circularity problem with physical blight criteria?",
+          answer: "The criteria measure deterioration, and deterioration follows from decades of refused mortgage credit, insurance and investment. The finding and its cause can be the same policy at two dates.",
         },
         {
-          prompt: "Why does the 1970 Uniform Relocation Act matter to this chronology?",
-          answer: "It set relocation assistance and acquisition standards for federally funded projects, and most of the clearance in this course predates it. A 1950s taking and a 1980s taking happened under different legal regimes.",
+          prompt: "If you want to know why a block is gone, where do you start, and why?",
+          answer: "With the designation, not the demolition. A designation is dated, bounded, minuted and public, and the clearance follows from it.",
         },
       ],
     },
@@ -693,24 +671,24 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - WRTV Indianapolis. (n.d.). *"Under the highway": How interstates divided Indianapolis neighborhoods and displaced 17,000 people*. https://www.wrtv.com/news/local-news/indianapolis/under-the-highway-how-interstates-divided-indianapolis-neighborhoods-and-displaced-17-000-people`,
       recallContent: [
         {
-          prompt: "What is an alignment decision, and who made it for an urban interstate?",
-          answer: "The choice of route. It was proposed by the state highway department in negotiation with local officials, and approved federally, under the Federal-Aid Highway Act of 1956 which funded roughly 90 percent federal to 10 percent state.",
+          prompt: "What does the Fifth Amendment require when property is taken?",
+          answer: "Private property shall not be taken for public use without just compensation. The Fourteenth Amendment applies the requirement to the states.",
         },
         {
-          prompt: "What three qualities made a route attractive to a highway planner, and why did that fall on Black districts?",
-          answer: "Cheap land, low political resistance, and land already designated blighted. Segregated Black districts had all three, by the design of earlier policy.",
+          prompt: "In a condemnation case, what is normally in dispute?",
+          answer: "The price, not whether the taking happens. Refusing an offer usually leads to a court setting the number rather than stopping the project.",
         },
         {
-          prompt: "Where does the '17,000 displaced, 8,000 buildings' figure come from, and what are its three limits?",
-          answer: "WRTV attributes it to an Indianapolis Star article of October 15, 1976. It is city-wide rather than Avenue-specific, it is a contemporaneous newspaper figure with no published method, and this course has not seen the underlying count. Attribute it, do not adopt it.",
+          prompt: "Give the documented Temple family timeline and figures.",
+          answer: "House at 550 Minerva Street plus three rentals. IU's initial offer 23,000 dollars in 1965; Governor Whitcomb granted eminent domain permission in December 1972 and January 1976; settled June 1979 at 50,000 dollars. The site became University Tower.",
         },
         {
-          prompt: "Give the census example and say why it is better evidence than the 17,000 figure.",
-          answer: "The tract closest to I-70 on the Southside fell from 4,225 residents in 1960 to 1,661 in 1970. It is a decennial census count for a defined tract, so you know exactly what it measures.",
+          prompt: "Why should you not turn the Temple settlement into a statistic?",
+          answer: "One case is one case. It documents what happened to one family and establishes no average, pattern or rate. The 1965 and 1979 dollar figures are also not comparable without an inflation adjustment you would have to state.",
         },
         {
-          prompt: "What does the popular account say destroyed Indiana Avenue, and what do the verifiable sources say?",
-          answer: "The popular account says the interstate did. The Encyclopedia of Indianapolis entry on Indiana Avenue does not name highways among the causes at all; it names the 1958 campus plan, blight designations, IU's parcel purchases and the Lockefield demolition. The interstate is documented as taking surrounding neighbourhoods including Ransom Place.",
+          prompt: "Why does the 1970 Uniform Relocation Act matter to this chronology?",
+          answer: "It set relocation assistance and acquisition standards for federally funded projects, and most of the clearance in this course predates it. A 1950s taking and a 1980s taking happened under different legal regimes.",
         },
       ],
     },
@@ -746,24 +724,24 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - Paschall, W. (2020). *Indiana Avenue: The ethnic cleansing of Black Indianapolis*. New America. https://www.newamerica.org/indianapolis/blog/indiana-avenue-ethnic-cleansing-black-indianapolis/`,
       recallContent: [
         {
-          prompt: "What did the 1958 plan propose, and what did it become?",
-          answer: "A joint undergraduate campus of Indiana University and Purdue University next to the IU School of Medicine campus. It became IUPUI.",
+          prompt: "What is an alignment decision, and who made it for an urban interstate?",
+          answer: "The choice of route. It was proposed by the state highway department in negotiation with local officials, and approved federally, under the Federal-Aid Highway Act of 1956 which funded roughly 90 percent federal to 10 percent state.",
         },
         {
-          prompt: "What was Hoosier Realty Corporation, when was it formed, and what did it acquire?",
-          answer: "A nonprofit real estate entity formed by Indiana University in March 1962. It acquired more than 2,000 houses and lots.",
+          prompt: "What three qualities made a route attractive to a highway planner, and why did that fall on Black districts?",
+          answer: "Cheap land, low political resistance, and land already designated blighted. Segregated Black districts had all three, by the design of earlier policy.",
         },
         {
-          prompt: "Why would an institution buy land through a separate corporation?",
-          answer: "Because prices rise once sellers know who is buying and why. It is legal and standard, and it means the deed records will not always carry the institution's name. Follow the entity, not the institution.",
+          prompt: "Where does the '17,000 displaced, 8,000 buildings' figure come from, and what are its three limits?",
+          answer: "WRTV attributes it to an Indianapolis Star article of October 15, 1976. It is city-wide rather than Avenue-specific, it is a contemporaneous newspaper figure with no published method, and this course has not seen the underlying count. Attribute it, do not adopt it.",
         },
         {
-          prompt: "Give three dated acquisition facts from the record.",
-          answer: "IU purchased 401 parcels between July 1964 and August 1966; the trustees resolved in June 1965 to expand the boundaries including by eminent domain; the first Indiana Avenue purchase may have been Ruth McArthur's home at 802-810 Indiana Avenue in October 1965. About 300 acres were assembled from the 1960s to the 1980s.",
+          prompt: "Give the census example and say why it is better evidence than the 17,000 figure.",
+          answer: "The tract closest to I-70 on the Southside fell from 4,225 residents in 1960 to 1,661 in 1970. It is a decennial census count for a defined tract, so you know exactly what it measures.",
         },
         {
-          prompt: "What happened to IUPUI on July 1, 2024, and why does it matter to a researcher?",
-          answer: "It was realigned into IU Indianapolis and Purdue University in Indianapolis, after a definitive agreement signed June 14, 2023. The entity that assembled the land no longer exists under that name, which breaks a naive records search.",
+          prompt: "What does the popular account say destroyed Indiana Avenue, and what do the verifiable sources say?",
+          answer: "The popular account says the interstate did. The Encyclopedia of Indianapolis entry on Indiana Avenue does not name highways among the causes at all; it names the 1958 campus plan, blight designations, IU's parcel purchases and the Lockefield demolition. The interstate is documented as taking surrounding neighbourhoods including Ransom Place.",
         },
       ],
     },
@@ -806,24 +784,24 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "When was Unigov passed and when did it take effect, and what is procedurally unusual about it?",
-          answer: "Passed by the Indiana General Assembly in 1969, effective January 1, 1970. It is the only major postwar city-county consolidation accomplished without a voter referendum.",
+          prompt: "What did the 1958 plan propose, and what did it become?",
+          answer: "A joint undergraduate campus of Indiana University and Purdue University next to the IU School of Medicine campus. It became IUPUI.",
         },
         {
-          prompt: "How did the Unigov statute target one city without naming it?",
-          answer: "It applied to any Indiana city of 250,000 or more, which in 1969 meant only Indianapolis. The threshold was later raised to 600,000 to stop other cities doing the same.",
+          prompt: "What was Hoosier Realty Corporation, when was it formed, and what did it acquire?",
+          answer: "A nonprofit real estate entity formed by Indiana University in March 1962. It acquired more than 2,000 houses and lots.",
         },
         {
-          prompt: "List what Unigov left out.",
-          answer: "The school districts; incorporated cities and towns over 5,000, leaving Beech Grove, Lawrence, Southport and Speedway independent; the nine townships; several municipal corporations; and the county courts. Fifty overlapping governmental units and more than 61 taxing districts remain.",
+          prompt: "Why would an institution buy land through a separate corporation?",
+          answer: "Because prices rise once sellers know who is buying and why. It is legal and standard, and it means the deed records will not always carry the institution's name. Follow the entity, not the institution.",
         },
         {
-          prompt: "In the participants' own words, why were schools excluded?",
-          answer: "Lugar said the bill would die if schools were included and acknowledged that many people wanted to keep their particular school segregated. Board president Landrum Shields said including schools would have raised the spectre of racial integration and meant instant death for the plan.",
+          prompt: "Give three dated acquisition facts from the record.",
+          answer: "IU purchased 401 parcels between July 1964 and August 1966; the trustees resolved in June 1965 to expand the boundaries including by eminent domain; the first Indiana Avenue purchase may have been Ruth McArthur's home at 802-810 Indiana Avenue in October 1965. About 300 acres were assembled from the 1960s to the 1980s.",
         },
         {
-          prompt: "What did consolidation do to the Black share of the city's population, and what did a court later find about Unigov?",
-          answer: "It fell immediately from 27 percent of the old city to 17 percent of the consolidated city, not recovering until the 2010 census. Judge Dillin later found that Unigov fostered segregation by expanding the city limits into white townships while leaving school district boundaries unchanged, though he did not invalidate the law.",
+          prompt: "What happened to IUPUI on July 1, 2024, and why does it matter to a researcher?",
+          answer: "It was realigned into IU Indianapolis and Purdue University in Indianapolis, after a definitive agreement signed June 14, 2023. The entity that assembled the land no longer exists under that name, which breaks a naive records search.",
         },
       ],
     },
@@ -875,24 +853,24 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "What was the proposed spine for this course cluster, and what is the verdict?",
-          answer: "That the 1970 Unigov consolidation is one decision tying the district, the schools and the suburbs together. Verdict: the spine is thinner than proposed. It holds for schools and suburbs and fails for the district's buildings.",
+          prompt: "When was Unigov passed and when did it take effect, and what is procedurally unusual about it?",
+          answer: "Passed by the Indiana General Assembly in 1969, effective January 1, 1970. It is the only major postwar city-county consolidation accomplished without a voter referendum.",
         },
         {
-          prompt: "Why can Unigov not be the cause of the Avenue's demolition?",
-          answer: "Because it took effect on January 1, 1970, and the blight designations, campus plan, freeway announcement and IU's parcel purchases all predate it. A cause cannot postdate its effect.",
+          prompt: "How did the Unigov statute target one city without naming it?",
+          answer: "It applied to any Indiana city of 250,000 or more, which in 1969 meant only Indianapolis. The threshold was later raised to 600,000 to stop other cities doing the same.",
         },
         {
-          prompt: "State the weaker claim that survives the chronology test.",
-          answer: "Unigov did not clear the Avenue; it changed who governs the ground afterwards. The district was cleared under one electorate and has been planned ever since under another, in which the Black share fell immediately from 27 to 17 percent.",
+          prompt: "List what Unigov left out.",
+          answer: "The school districts; incorporated cities and towns over 5,000, leaving Beech Grove, Lawrence, Southport and Speedway independent; the nine townships; several municipal corporations; and the county courts. Fifty overlapping governmental units and more than 61 taxing districts remain.",
         },
         {
-          prompt: "Name the three method lessons from this test.",
-          answer: "Build the chronology before the argument; a weakened claim that survives beats a strong claim that does not; and report the weakening, because suppressing it is the actual error.",
+          prompt: "In the participants' own words, why were schools excluded?",
+          answer: "Lugar said the bill would die if schools were included and acknowledged that many people wanted to keep their particular school segregated. Board president Landrum Shields said including schools would have raised the spectre of racial integration and meant instant death for the plan.",
         },
         {
-          prompt: "Which records would settle the open questions, and have they been read into this course?",
-          answer: "The Redevelopment Commission minutes and project files, IU trustee minutes 1962 to 1968, the state highway right-of-way maps for I-65, and the Indianapolis Recorder's coverage. None of them has been read here. They are public or requestable.",
+          prompt: "What did consolidation do to the Black share of the city's population, and what did a court later find about Unigov?",
+          answer: "It fell immediately from 27 percent of the old city to 17 percent of the consolidated city, not recovering until the 2010 census. Judge Dillin later found that Unigov fostered segregation by expanding the city limits into white townships while leaving school district boundaries unchanged, though he did not invalidate the law.",
         },
       ],
     },
@@ -1286,24 +1264,24 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - WFYI. (2025, December 22). *After "long and silent pause," what's next for Indiana Ave development plan?* https://www.wfyi.org/wfyi-news/2025-12-22/after-long-and-silent-pause-whats-next-for-indiana-ave-development-plan`,
       recallContent: [
         {
-          prompt: "What are the four questions to ask about any parcel's future, in order?",
-          answer: "What does the comprehensive plan say it should become; what does the zoning permit today; is there an area-specific plan and has it been adopted; and who decides, when do they meet, and is the agenda public.",
+          prompt: "What was the proposed spine for this course cluster, and what is the verdict?",
+          answer: "That the 1970 Unigov consolidation is one decision tying the district, the schools and the suburbs together. Verdict: the spine is thinner than proposed. It holds for schools and suburbs and fails for the district's buildings.",
         },
         {
-          prompt: "What is the difference between a comprehensive plan and zoning?",
-          answer: "The comprehensive plan is the policy statement about what land should become; zoning is the enforceable rule about what may be built today. Rezoning petitions are judged against the plan.",
+          prompt: "Why can Unigov not be the cause of the Avenue's demolition?",
+          answer: "Because it took effect on January 1, 1970, and the blight designations, campus plan, freeway announcement and IU's parcel purchases all predate it. A cause cannot postdate its effect.",
         },
         {
-          prompt: "Which body adopts the comprehensive plan and the zoning ordinance in Indianapolis, and what else does it do?",
-          answer: "The Metropolitan Development Commission. It also decides variance and rezoning petitions and approves contracts and the sale of property for redevelopment.",
+          prompt: "State the weaker claim that survives the chronology test.",
+          answer: "Unigov did not clear the Avenue; it changed who governs the ground afterwards. The district was cleared under one electorate and has been planned ever since under another, in which the Black share fell immediately from 27 to 17 percent.",
         },
         {
-          prompt: "What is the status of the Indiana Avenue Certified Strategic Plan, as of the latest reporting?",
-          answer: "Announced February 2023, public kickoff April 2024, first consultant EKLA's contract expired end of 2024, a second phase runs with MKSK through 2026 with completion expected autumn 2026. Nothing had been published or adopted.",
+          prompt: "Name the three method lessons from this test.",
+          answer: "Build the chronology before the argument; a weakened claim that survives beats a strong claim that does not; and report the weakening, because suppressing it is the actual error.",
         },
         {
-          prompt: "Why is 'not adopted yet' a useful finding rather than a dead end?",
-          answer: "Because an unadopted plan is still open to public comment, and public meetings are still happening. That is where a citizen has the most leverage.",
+          prompt: "Which records would settle the open questions, and have they been read into this course?",
+          answer: "The Redevelopment Commission minutes and project files, IU trustee minutes 1962 to 1968, the state highway right-of-way maps for I-65, and the Indianapolis Recorder's coverage. None of them has been read here. They are public or requestable.",
         },
       ],
     },
@@ -1744,20 +1722,24 @@ A short, checkable piece in which every sentence is either something you read in
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "What is the actual product of this course?",
-          answer: "The six-beat site template, run once end to end on a real place: Then, Built, Powers, Now, Next, Write. The Indiana Avenue material is the worked example.",
+          prompt: "What are the four questions to ask about any parcel's future, in order?",
+          answer: "What does the comprehensive plan say it should become; what does the zoning permit today; is there an area-specific plan and has it been adopted; and who decides, when do they meet, and is the agenda public.",
         },
         {
-          prompt: "Give the difference between a claim about a document and a claim about the world, using this course's example.",
-          answer: "'The Green Book lists about 30 Indiana Avenue businesses' is about the document and is supported by it. 'There were 30 Black businesses on the Avenue' is about the world and is false: a 1916 count found more than 180 in eight blocks.",
+          prompt: "What is the difference between a comprehensive plan and zoning?",
+          answer: "The comprehensive plan is the policy statement about what land should become; zoning is the enforceable rule about what may be built today. Rezoning petitions are judged against the plan.",
         },
         {
-          prompt: "Why does this course refuse to give a total for how many buildings the Avenue lost?",
-          answer: "Because no such survey has been read into it, and the circulating city-wide displacement figures count different things over different scopes. Manufacturing a corridor-level number from them would invent a statistic.",
+          prompt: "Which body adopts the comprehensive plan and the zoning ordinance in Indianapolis, and what else does it do?",
+          answer: "The Metropolitan Development Commission. It also decides variance and rezoning petitions and approves contracts and the sale of property for redevelopment.",
         },
         {
-          prompt: "Name the four unopened sources that would advance this story.",
-          answer: "The Indianapolis Redevelopment Commission's minutes and project files, the IU Board of Trustees minutes 1962 to 1968, the state highway right-of-way maps for I-65, and the Indianapolis Recorder across the period.",
+          prompt: "What is the status of the Indiana Avenue Certified Strategic Plan, as of the latest reporting?",
+          answer: "Announced February 2023, public kickoff April 2024, first consultant EKLA's contract expired end of 2024, a second phase runs with MKSK through 2026 with completion expected autumn 2026. Nothing had been published or adopted.",
+        },
+        {
+          prompt: "Why is 'not adopted yet' a useful finding rather than a dead end?",
+          answer: "Because an unadopted plan is still open to public comment, and public meetings are still happening. That is where a citizen has the most leverage.",
         },
       ],
     },

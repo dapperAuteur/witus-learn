@@ -88,28 +88,6 @@ export const FORT_HARRISON_COURSE: AuthoredCourse = {
 - Hankins, M. B. (2020). *Fort Benjamin Harrison: From military base to Indiana state park* [Master's thesis, Indiana University]. IUPUI ScholarWorks. https://scholarworks.iupui.edu/bitstream/handle/1805/22736/Hankins_Final_Masters%20Thesis_Fort_Ben.pdf
 - Indiana Historical Bureau. (1996). *Fort Benjamin Harrison* [State historical marker 49.1996.1]. Indiana Historical Bureau. https://www.in.gov/history/state-historical-markers/find-a-marker/fort-benjamin-harrison/
 - McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text`,
-      recallContent: [
-        {
-          prompt: "Why was the post built nine to twelve miles outside Indianapolis instead of at the existing Arsenal site?",
-          answer: "The Arsenal plan was opposed by city residents because of its proximity to their growing residential and business communities, so Russell B. Harrison proposed selling the Arsenal grounds and buying farmland in Lawrence Township instead.",
-        },
-        {
-          prompt: "Give the three establishment years in circulation for this post, with who says each.",
-          answer: "1902 in the HABS documentation and in part of the National Register nomination; 1903 on the Indiana state historical marker and elsewhere in the same nomination; June 28, 1904 in the Encyclopedia of Indianapolis. They are plausibly four different acts all being called establishment.",
-        },
-        {
-          prompt: "What is the acreage disagreement, and which source explains the others?",
-          answer: "Sources give about 1,994 acres or about 2,415 to 2,417 acres for roughly the same price. The HABS documentation reconciles them by separating a 1903 to 1904 purchase of 1,994 acres from a further 423 acres bought in 1906 to 1908.",
-        },
-        {
-          prompt: "What error can a reader catch in the National Register nomination, and why does it matter?",
-          answer: "It calls Russell B. Harrison the grandson of President Benjamin Harrison; the HABS narrative says he came home for his father's funeral. A National Register nomination is authoritative but not infallible, so corroborate rather than repeat.",
-        },
-        {
-          prompt: "When was the original post complex built, and which regiments garrisoned it before the First World War?",
-          answer: "Construction ran from 1906 through 1910, most of it finished in 1908, when the first permanent infantry garrison arrived. The 10th and 23rd U.S. Infantry garrisoned it, and the post also trained the Indiana State Militia.",
-        },
-      ],
     },
     {
       slug: "fh-two-wars",
@@ -161,24 +139,24 @@ Around that core the Army opened or enlarged specialised schools: the **Finance 
 - McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text`,
       recallContent: [
         {
-          prompt: "What did the post do in the First World War, and how many men were on it at the peak?",
-          answer: "It was a training centre. About 12,000 men were on the ground at the height of activity in June 1917, running three Officer Training Camps, Medical Officers Training Camps, and an Engineers Training Camp of up to 9,000 men trained mostly as railroad specialists.",
+          prompt: "Why was the post built nine to twelve miles outside Indianapolis instead of at the existing Arsenal site?",
+          answer: "The Arsenal plan was opposed by city residents because of its proximity to their growing residential and business communities, so Russell B. Harrison proposed selling the Arsenal grounds and buying farmland in Lawrence Township instead.",
         },
         {
-          prompt: "What was Base Hospital 32, and who paid for it?",
-          answer: "One of 33 voluntary base hospitals organised nationally before the United States entered the war, established here with a $25,000 contribution from Eli Lilly and staffed by local doctors and nurses. It ran a 500-bed hospital in France.",
+          prompt: "Give the three establishment years in circulation for this post, with who says each.",
+          answer: "1902 in the HABS documentation and in part of the National Register nomination; 1903 on the Indiana state historical marker and elsewhere in the same nomination; June 28, 1904 in the Encyclopedia of Indianapolis. They are plausibly four different acts all being called establishment.",
         },
         {
-          prompt: "The HABS documentation says influenza mortality at General Hospital No. 25 was high. Why does this course give no number?",
-          answer: "Because the source gives none. The count exists in Army medical records this course has not read, and supplying a figure would be inventing a statistic.",
+          prompt: "What is the acreage disagreement, and which source explains the others?",
+          answer: "Sources give about 1,994 acres or about 2,415 to 2,417 acres for roughly the same price. The HABS documentation reconciles them by separating a 1903 to 1904 purchase of 1,994 acres from a further 423 acres bought in 1906 to 1908.",
         },
         {
-          prompt: "Why did the post become an induction centre rather than a training camp in the Second World War?",
-          answer: "By autumn 1940 the Army had decided it was too small to train troops for modern warfare, so it became a midwest induction and reception centre and a logistical support hub, plus specialised Finance, Chaplain, and Baker and Cooks schools.",
+          prompt: "What error can a reader catch in the National Register nomination, and why does it matter?",
+          answer: "It calls Russell B. Harrison the grandson of President Benjamin Harrison; the HABS narrative says he came home for his father's funeral. A National Register nomination is authoritative but not infallible, so corroborate rather than repeat.",
         },
         {
-          prompt: "What is the disagreement about the prisoner of war camp, and what detail does the National Register nomination add?",
-          answer: "Two sources date it 1943 to 1944 and two date it 1944 to 1945. The nomination places it at the Camp Glenn complex and records that the Italian and German prisoners worked as construction and maintenance workers throughout the fort.",
+          prompt: "When was the original post complex built, and which regiments garrisoned it before the First World War?",
+          answer: "Construction ran from 1906 through 1910, most of it finished in 1908, when the first permanent infantry garrison arrived. The 10th and 23rd U.S. Infantry garrisoned it, and the post also trained the Indiana State Militia.",
         },
       ],
     },
@@ -241,28 +219,24 @@ This is the part that most writing about military posts leaves out, and it is th
 - National Archives. (n.d.). *Executive Order 9981: Desegregation of the Armed Forces (1948)*. https://www.archives.gov/milestone-documents/executive-order-9981`,
       recallContent: [
         {
-          prompt: "What is the strongest documented item about race specific to this post, and what year?",
-          answer: "An all-African American Civilian Conservation Corps company arrived here in 1936 from Fort Knox, Kentucky, specialising in reforestation and soil conservation, at a post that served as Indiana's CCC district headquarters.",
+          prompt: "What did the post do in the First World War, and how many men were on it at the peak?",
+          answer: "It was a training centre. About 12,000 men were on the ground at the height of activity in June 1917, running three Officer Training Camps, Medical Officers Training Camps, and an Engineers Training Camp of up to 9,000 men trained mostly as railroad specialists.",
         },
         {
-          prompt: "The CCC's enabling legislation prohibited discrimination by race, color and creed. What actually happened?",
-          answer: "The CCC followed the segregated pattern of military personnel, with white officers and technical staff supervising Black enrollees in segregated camps. Eight of Indiana's fifty-six companies were African American. A written prohibition is not an outcome.",
+          prompt: "What was Base Hospital 32, and who paid for it?",
+          answer: "One of 33 voluntary base hospitals organised nationally before the United States entered the war, established here with a $25,000 contribution from Eli Lilly and staffed by local doctors and nurses. It ran a 500-bed hospital in France.",
         },
         {
-          prompt: "What do the April 1942 Chaplain School photographs document, and what do they not document?",
-          answer: "The Library of Congress catalogue summary describes Jewish, Catholic, and Negro and white Protestant students training together, which is evidence that this school was not segregated in that month. It is not evidence that the post was integrated, or that housing, food and promotion were equal.",
+          prompt: "The HABS documentation says influenza mortality at General Hospital No. 25 was high. Why does this course give no number?",
+          answer: "Because the source gives none. The count exists in Army medical records this course has not read, and supplying a figure would be inventing a statistic.",
         },
         {
-          prompt: "What do the National Register nomination and the HABS documentation say about race at this post?",
-          answer: "Nothing. Both describe the post's social hierarchy in detail by rank and never mention race, segregation or Black soldiers. That is a fact about the documents and must not be read as evidence of absence.",
+          prompt: "Why did the post become an induction centre rather than a training camp in the Second World War?",
+          answer: "By autumn 1940 the Army had decided it was too small to train troops for modern warfare, so it became a midwest induction and reception centre and a logistical support hub, plus specialised Finance, Chaplain, and Baker and Cooks schools.",
         },
         {
-          prompt: "Name the records that would answer what this lesson could not.",
-          answer: "CCC company rosters and camp inspection reports, Army post general orders and station lists, the reception centre's processing records, and the Indianapolis Recorder. None of them were read for this course.",
-        },
-        {
-          prompt: "What is Executive Order 9981, and when was Army desegregation actually completed?",
-          answer: "Truman's order of 26 July 1948 declaring equality of treatment and opportunity in the armed services without regard to race, color, religion or national origin. Army desegregation was completed in 1954 with the deactivation of the last all-Black unit.",
+          prompt: "What is the disagreement about the prisoner of war camp, and what detail does the National Register nomination add?",
+          answer: "Two sources date it 1943 to 1944 and two date it 1944 to 1945. The nomination places it at the Camp Glenn complex and records that the Italian and German prisoners worked as construction and maintenance workers throughout the fort.",
         },
       ],
     },
@@ -486,28 +460,28 @@ This is the part that most writing about military posts leaves out, and it is th
 - National Park Service. (n.d.). *National Register of Historic Places*. https://www.nps.gov/subjects/nationalregister/index.htm`,
       recallContent: [
         {
-          prompt: "Who is named as the architect of this post, and why does that matter for how it was listed?",
-          answer: "The Army Quartermaster Corps, working from standardised plans used nationwide. The nomination says the buildings lack the architectural significance for individual listing, so they qualify as a district. Significance can live in a pattern rather than an object.",
+          prompt: "What is the strongest documented item about race specific to this post, and what year?",
+          answer: "An all-African American Civilian Conservation Corps company arrived here in 1936 from Fort Knox, Kentucky, specialising in reforestation and soil conservation, at a post that served as Indiana's CCC district headquarters.",
         },
         {
-          prompt: "Describe the plan in the terms a 1907 newspaper used, and name the road that rings it.",
-          answer: "A military city in thirty brick and stone buildings set on a horseshoe curve with a parade ground in the centre. Lawton Road follows the perimeter of the parade ground; Kent Road crosses it on a diagonal on an original concrete bridge.",
+          prompt: "The CCC's enabling legislation prohibited discrimination by race, color and creed. What actually happened?",
+          answer: "The CCC followed the segregated pattern of military personnel, with white officers and technical staff supervising Black enrollees in segregated camps. Eight of Indiana's fifty-six companies were African American. A written prohibition is not an outcome.",
         },
         {
-          prompt: "Why did the HABS surveyors compare the parade ground to Olmsted-style planning, and what does that tell you?",
-          answer: "Because it combines a flat drill field with curving drives and grouped trees, so the military purpose and a residential landscape amenity are the same ground. It is why a state park could later inherit the layout without redrawing it.",
+          prompt: "What do the April 1942 Chaplain School photographs document, and what do they not document?",
+          answer: "The Library of Congress catalogue summary describes Jewish, Catholic, and Negro and white Protestant students training together, which is evidence that this school was not segregated in that month. It is not evidence that the post was integrated, or that housing, food and promotion were equal.",
         },
         {
-          prompt: "Name the three functional zones of the historic district.",
-          answer: "Residential and administrative around the parade ground on Lawton Road; service and utility east and southeast on Greene and Otis avenues; and the hospital unit east of the parade ground with four officers' residences.",
+          prompt: "What do the National Register nomination and the HABS documentation say about race at this post?",
+          answer: "Nothing. Both describe the post's social hierarchy in detail by rank and never mention race, segregation or Black soldiers. That is a fact about the documents and must not be read as evidence of absence.",
         },
         {
-          prompt: "What was the wooded land north of the built complex used for, and why does that matter to the rest of this course?",
-          answer: "It was the training area, land deliberately left unbuilt. Ninety years of that inside a growing county produced a forest no planner could have assembled, which is the ground that became the state park.",
+          prompt: "Name the records that would answer what this lesson could not.",
+          answer: "CCC company rosters and camp inspection reports, Army post general orders and station lists, the reception centre's processing records, and the Indianapolis Recorder. None of them were read for this course.",
         },
         {
-          prompt: "What on this site is older than the post itself?",
-          answer: "A nineteenth-century cemetery, identified in the HABS documentation as Spring Valley Cemetery with the earliest graves in Lawrence Township. Elisha Reddick bought 132 acres here in 1823.",
+          prompt: "What is Executive Order 9981, and when was Army desegregation actually completed?",
+          answer: "Truman's order of 26 July 1948 declaring equality of treatment and opportunity in the armed services without regard to race, color, religion or national origin. Army desegregation was completed in 1954 with the deactivation of the last all-Black unit.",
         },
       ],
     },
@@ -563,28 +537,28 @@ This is the part that most writing about military posts leaves out, and it is th
 - McGillem, D. E., & Associates, Cardinal, J. R., & Bush, D. R. (1993). *Fort Benjamin Harrison Historic District* [National Register of Historic Places registration form]. Indiana Department of Natural Resources. https://npgallery.nps.gov/NRHP/GetAsset/NRHP/93001581_text`,
       recallContent: [
         {
-          prompt: "Walk the ornament ladder from most decorated to least.",
-          answer: "Senior officers' family quarters on the north and west sides of the parade ground; bachelor officers' quarters; hospital and administrative buildings; married non-commissioned officers' housing; enlisted men's barracks; and service buildings such as warehouses, stables and the commissary at the bottom.",
+          prompt: "Who is named as the architect of this post, and why does that matter for how it was listed?",
+          answer: "The Army Quartermaster Corps, working from standardised plans used nationwide. The nomination says the buildings lack the architectural significance for individual listing, so they qualify as a district. Significance can live in a pattern rather than an object.",
         },
         {
-          prompt: "Why are the Office of the Quartermaster General plan numbers a research handle?",
-          answer: "Eighteen officers' houses here came from just three plans, 120-F, 142-B and 145-D, and the barracks from plan 75-G. The same numbered plans were used at other posts, so a plan number lets you find sibling buildings nationwide.",
+          prompt: "Describe the plan in the terms a 1907 newspaper used, and name the road that rings it.",
+          answer: "A military city in thirty brick and stone buildings set on a horseshoe curve with a parade ground in the centre. Lawton Road follows the perimeter of the parade ground; Kent Road crosses it on a diagonal on an original concrete bridge.",
         },
         {
-          prompt: "Name the shared material vocabulary of the original buildings.",
-          answer: "Poured concrete foundations faced with coursed limestone up to a dressed limestone water table, common bond brick walls, dressed limestone lug sills with flat or arched voussoirs, gabled and hipped roofs originally slate, and large open verandas with rounded wood columns.",
+          prompt: "Why did the HABS surveyors compare the parade ground to Olmsted-style planning, and what does that tell you?",
+          answer: "Because it combines a flat drill field with curving drives and grouped trees, so the military purpose and a residential landscape amenity are the same ground. It is why a state park could later inherit the layout without redrawing it.",
         },
         {
-          prompt: "The nomination reads Colonial Revival as nostalgic and nationalistic. How should you handle that claim?",
-          answer: "As an interpretation rather than a measurement. It is a conventional reading, and you should attribute it to the nomination rather than repeat it as an established fact.",
+          prompt: "Name the three functional zones of the historic district.",
+          answer: "Residential and administrative around the parade ground on Lawton Road; service and utility east and southeast on Greene and Otis avenues; and the hospital unit east of the parade ground with four officers' residences.",
         },
         {
-          prompt: "What happened to the post's street names in 1939, and why is that useful?",
-          answer: "Streets originally named for Spanish-American War heroes were renamed for commanders and men stationed here who distinguished themselves in action. A street name dates a map and tells you which past the post chose to commemorate.",
+          prompt: "What was the wooded land north of the built complex used for, and why does that matter to the rest of this course?",
+          answer: "It was the training area, land deliberately left unbuilt. Ninety years of that inside a growing county produced a forest no planner could have assembled, which is the ground that became the state park.",
         },
         {
-          prompt: "State the habit this lesson wants you to carry to any building.",
-          answer: "A building records the distinctions its builders chose to encode, and is silent about the ones they took for granted. This nomination reads rank in fine detail and never asks who was permitted to hold which rank.",
+          prompt: "What on this site is older than the post itself?",
+          answer: "A nineteenth-century cemetery, identified in the HABS documentation as Spring Valley Cemetery with the earliest graves in Lawrence Township. Elisha Reddick bought 132 acres here in 1823.",
         },
       ],
     },
@@ -641,28 +615,28 @@ Here is the mechanism, and it is genuinely different from the private-owner case
 - Sample, D. (2005, June 15). *Indiana city flourishes after "Fort Ben" closure*. American Forces Press Service. https://www.dvidshub.net/news/538075/indiana-city-flourishes-after-fort-ben-closure`,
       recallContent: [
         {
-          prompt: "Give the Fort Benjamin Harrison Historic District's size, resource count and areas of significance.",
-          answer: "About 340 acres; 94 buildings, 6 structures and 2 sites, of which 75 buildings, 1 site and 3 structures contribute. Areas of significance are Military, Community Planning and Development, and Architecture, with periods 1906-1910, 1920-1937 and 1938-1945.",
+          prompt: "Walk the ornament ladder from most decorated to least.",
+          answer: "Senior officers' family quarters on the north and west sides of the parade ground; bachelor officers' quarters; hospital and administrative buildings; married non-commissioned officers' housing; enlisted men's barracks; and service buildings such as warehouses, stables and the commissary at the bottom.",
         },
         {
-          prompt: "What two other names does the Camp Edwin F. Glenn nomination list, and what do they tell you?",
-          answer: "Citizens' Military Training Camp and Fort Harrison Prisoner of War Camp. Two names give you the district's whole history: interwar civilian training, then a wartime prison.",
+          prompt: "Why are the Office of the Quartermaster General plan numbers a research handle?",
+          answer: "Eighteen officers' houses here came from just three plans, 120-F, 142-B and 145-D, and the barracks from plan 75-G. The same numbered plans were used at other posts, so a plan number lets you find sibling buildings nationwide.",
         },
         {
-          prompt: "What is Section 106, and what does it not do?",
-          answer: "It requires a federal agency to take into account the effect of its undertaking on historic properties and to consult the state historic preservation officer. It is a consultation and consideration requirement, not a veto; an agency that follows it may still demolish.",
+          prompt: "Name the shared material vocabulary of the original buildings.",
+          answer: "Poured concrete foundations faced with coursed limestone up to a dressed limestone water table, common bond brick walls, dressed limestone lug sills with flat or arched voussoirs, gabled and hipped roofs originally slate, and large open verandas with rounded wood columns.",
         },
         {
-          prompt: "Why does a 19-page HABS architectural description of this post exist?",
-          answer: "Documenting a property to Historic American Buildings Survey standards and depositing the record with the Library of Congress is a common mitigation measure agreed under the Section 106 process when a federal agency changes or disposes of historic property.",
+          prompt: "The nomination reads Colonial Revival as nostalgic and nationalistic. How should you handle that claim?",
+          answer: "As an interpretation rather than a measurement. It is a conventional reading, and you should attribute it to the nomination rather than repeat it as an established fact.",
         },
         {
-          prompt: "How does the timing of designation here reverse the pattern from the Indiana Avenue course?",
-          answer: "On Indiana Avenue designation came after the decisions that emptied the corridor. Here closure produced the listing: the base was listed for closure in 1991, the nomination was prepared in 1993, and both districts were listed in 1995.",
+          prompt: "What happened to the post's street names in 1939, and why is that useful?",
+          answer: "Streets originally named for Spanish-American War heroes were renamed for commanders and men stationed here who distinguished themselves in action. A street name dates a map and tells you which past the post chose to commemorate.",
         },
         {
-          prompt: "What did listing not prevent?",
-          answer: "More than one million square feet of buildings were demolished during the conversion. Listed districts, a federal consultation requirement and mass demolition are all true at once.",
+          prompt: "State the habit this lesson wants you to carry to any building.",
+          answer: "A building records the distinctions its builders chose to encode, and is silent about the ones they took for granted. This nomination reads rank in fine detail and never asks who was permitted to hold which rank.",
         },
       ],
     },
@@ -719,24 +693,28 @@ Put the numbers from Section 1 next to that rule.
 - U.S. Department of Education. (n.d.). *Impact Aid Section 7002: Payments for federal property*. https://www.ed.gov/grants-and-programs/formula-grants/impact-aid/impact-aid-section-7002--payments-for-federal-property`,
       recallContent: [
         {
-          prompt: "What is the Enclave Clause, and what must you not assume from it?",
-          answer: "Article I, Section 8, Clause 17 lets Congress exercise authority over places purchased with a state legislature's consent for forts, magazines, arsenals, dockyards and other needful buildings. Do not assume every federal property is an exclusive-jurisdiction enclave: jurisdiction may be exclusive, concurrent, partial or proprietary depending on what the state ceded and the United States accepted.",
+          prompt: "Give the Fort Benjamin Harrison Historic District's size, resource count and areas of significance.",
+          answer: "About 340 acres; 94 buildings, 6 structures and 2 sites, of which 75 buildings, 1 site and 3 structures contribute. Areas of significance are Military, Community Planning and Development, and Architecture, with periods 1906-1910, 1920-1937 and 1938-1945.",
         },
         {
-          prompt: "Why does federal property not appear on a county's tax rolls?",
-          answer: "Because a state may not tax an instrumentality of the federal government, a principle running back to McCulloch v. Maryland in 1819. The Department of Education states plainly that federally owned property does not generate taxes.",
+          prompt: "What two other names does the Camp Edwin F. Glenn nomination list, and what do they tell you?",
+          answer: "Citizens' Military Training Camp and Fort Harrison Prisoner of War Camp. Two names give you the district's whole history: interwar civilian training, then a wartime prison.",
         },
         {
-          prompt: "State the fiscal asymmetry this post created for Lawrence and Marion County.",
-          answer: "It was the largest employer in Lawrence with nearly 10,000 civilian and military employees and the fifth largest in Indianapolis by 1982, and it contributed nothing to the property tax base, while creating demand for roads, housing and above all schools for workers' children.",
+          prompt: "What is Section 106, and what does it not do?",
+          answer: "It requires a federal agency to take into account the effect of its undertaking on historic properties and to consult the state historic preservation officer. It is a consultation and consideration requirement, not a veto; an agency that follows it may still demolish.",
         },
         {
-          prompt: "Why is untaxed land also land under no pressure to earn?",
-          answer: "A private owner of 1,700 wooded acres in a growing county pays property tax annually, which is a standing incentive to subdivide and sell. The United States paid no such tax and felt no such pressure, which is why the forest survived.",
+          prompt: "Why does a 19-page HABS architectural description of this post exist?",
+          answer: "Documenting a property to Historic American Buildings Survey standards and depositing the record with the Library of Congress is a common mitigation measure agreed under the Section 106 process when a federal agency changes or disposes of historic property.",
         },
         {
-          prompt: "Name the three documents to start with if you want to know what a federal installation costs and gives a local government.",
-          answer: "The school district's Impact Aid application, the county assessor's exempt-property roll, and the installation's own real property records. None of them were read for this course.",
+          prompt: "How does the timing of designation here reverse the pattern from the Indiana Avenue course?",
+          answer: "On Indiana Avenue designation came after the decisions that emptied the corridor. Here closure produced the listing: the base was listed for closure in 1991, the nomination was prepared in 1993, and both districts were listed in 1995.",
+        },
+        {
+          prompt: "What did listing not prevent?",
+          answer: "More than one million square feet of buildings were demolished during the conversion. Listed districts, a federal consultation requirement and mass demolition are all true at once.",
         },
       ],
     },
@@ -793,28 +771,24 @@ Here is where this post gets genuinely interesting, and where it links to the re
 - U.S. Department of Education. (n.d.). *Impact Aid grants*. https://www.ed.gov/grants-and-programs/formula-grants/impact-aid-grants`,
       recallContent: [
         {
-          prompt: "What is the difference between Impact Aid Section 7003 and Section 7002?",
-          answer: "Section 7003 pays basic support for the cost of educating federally connected children. Section 7002 compensates for the lost tax base itself, and requires that the federal government acquired property since 1938 worth at least 10 percent of all real property in the district at the time.",
+          prompt: "What is the Enclave Clause, and what must you not assume from it?",
+          answer: "Article I, Section 8, Clause 17 lets Congress exercise authority over places purchased with a state legislature's consent for forts, magazines, arsenals, dockyards and other needful buildings. Do not assume every federal property is an exclusive-jurisdiction enclave: jurisdiction may be exclusive, concurrent, partial or proprietary depending on what the state ceded and the United States accepted.",
         },
         {
-          prompt: "Why can this course not tell you whether the district serving this post qualified under Section 7002?",
-          answer: "Because the land was bought around 1903 to 1908 and Section 7002 only counts property acquired after 1938, and because the annual applications are public but were not read here. Assume nothing either way.",
+          prompt: "Why does federal property not appear on a county's tax rolls?",
+          answer: "Because a state may not tax an instrumentality of the federal government, a principle running back to McCulloch v. Maryland in 1819. The Department of Education states plainly that federally owned property does not generate taxes.",
         },
         {
-          prompt: "What does the phrase 'formula grants subject to appropriation' warn you about?",
-          answer: "That eligibility is not payment. A district can be eligible for a full entitlement and receive a fraction of it for decades, so always separate what the formula says is owed from what Congress actually appropriated.",
+          prompt: "State the fiscal asymmetry this post created for Lawrence and Marion County.",
+          answer: "It was the largest employer in Lawrence with nearly 10,000 civilian and military employees and the fifth largest in Indianapolis by 1982, and it contributed nothing to the property tax base, while creating demand for roads, housing and above all schools for workers' children.",
         },
         {
-          prompt: "What happened in 1970, and what did it not accomplish?",
-          answer: "The City of Lawrence annexed the fort, adding about 5,000 people, 26 miles of roads and 2,500 acres. It did not make the land taxable, because a city ordinance cannot override the rule that a state may not tax federal property.",
+          prompt: "Why is untaxed land also land under no pressure to earn?",
+          answer: "A private owner of 1,700 wooded acres in a growing county pays property tax annually, which is a standing incentive to subdivide and sell. The United States paid no such tax and felt no such pressure, which is why the forest survived.",
         },
         {
-          prompt: "Why is 1970 a significant year for this annexation beyond the annexation itself?",
-          answer: "Unigov took effect on 1 January 1970 and Lawrence is a Unigov excluded city with its own mayor, council, police, fire, water and parks. A metropolitan boundary decision and a municipal boundary decision happened in the same twelve months.",
-        },
-        {
-          prompt: "State the portable lesson of the 1970 annexation.",
-          answer: "A jurisdictional decision made when land is worthless to you determines who benefits when it becomes valuable. When roughly 2,500 acres came back after 1991, they came back inside the City of Lawrence because of a 1970 decision.",
+          prompt: "Name the three documents to start with if you want to know what a federal installation costs and gives a local government.",
+          answer: "The school district's Impact Aid application, the county assessor's exempt-property roll, and the installation's own real property records. None of them were read for this course.",
         },
       ],
     },
@@ -882,28 +856,28 @@ A base is a district's largest employer. Every member of Congress has an overwhe
 - Sample, D. (2005, June 15). *Indiana city flourishes after "Fort Ben" closure*. American Forces Press Service. https://www.dvidshub.net/news/538075/indiana-city-flourishes-after-fort-ben-closure`,
       recallContent: [
         {
-          prompt: "Why can ordinary legislation not close military bases, and what are the three parts of the mechanism that can?",
-          answer: "Because every member protects the base at home and any bill naming bases attracts amendments removing them. The mechanism is an independent commission reviewing the Secretary of Defense's list against published criteria, a single package sent to the President for all-or-nothing acceptance, and a congressional power to reject only the entire package. There is no vote on any individual base.",
+          prompt: "What is the difference between Impact Aid Section 7003 and Section 7002?",
+          answer: "Section 7003 pays basic support for the cost of educating federally connected children. Section 7002 compensates for the lost tax base itself, and requires that the federal government acquired property since 1938 worth at least 10 percent of all real property in the district at the time.",
         },
         {
-          prompt: "What happened to this post in the 1988 round, and what does that teach?",
-          answer: "The 1988 round brought new jobs here and made the post look financially viable. A base that survives one round is not safe; it is simply not yet on the next list.",
+          prompt: "Why can this course not tell you whether the district serving this post qualified under Section 7002?",
+          answer: "Because the land was bought around 1903 to 1908 and Section 7002 only counts property acquired after 1938, and because the annual applications are public but were not read here. Assume nothing either way.",
         },
         {
-          prompt: "Name three things the 1 July 1991 recommendation did besides closing the post.",
-          answer: "It realigned the Soldier Support Center to Fort Jackson, South Carolina; it retained the Defense Finance and Accounting Service, Indianapolis Center; it revised a 1988 recommendation so U.S. Army Recruiting Command went to Fort Knox instead; and it found the Secretary had deviated substantially from selection criterion 2 and recommended closing Building 1.",
+          prompt: "What does the phrase 'formula grants subject to appropriation' warn you about?",
+          answer: "That eligibility is not payment. A district can be eligible for a full entitlement and receive a fraction of it for decades, so always separate what the formula says is owed from what Congress actually appropriated.",
         },
         {
-          prompt: "Why is 'closed' not a synonym for 'the federal government left'?",
-          answer: "Because the same recommendation that closed the post explicitly retained the Defense Finance and Accounting Service, Indianapolis Center. A major federal employer stayed on the same ground.",
+          prompt: "What happened in 1970, and what did it not accomplish?",
+          answer: "The City of Lawrence annexed the fort, adding about 5,000 people, 26 miles of roads and 2,500 acres. It did not make the land taxable, because a city ordinance cannot override the rule that a state may not tax federal property.",
         },
         {
-          prompt: "What unintended coalition appeared during the closure fight?",
-          answer: "Environmental groups wanted the forest turned into a park and Lawrence Township community groups wanted to prevent future residential development, so the closure some people fought was a closure others supported for reasons unrelated to defense policy.",
+          prompt: "Why is 1970 a significant year for this annexation beyond the annexation itself?",
+          answer: "Unigov took effect on 1 January 1970 and Lawrence is a Unigov excluded city with its own mayor, council, police, fire, water and parks. A metropolitan boundary decision and a municipal boundary decision happened in the same twelve months.",
         },
         {
-          prompt: "Summarise a base closure in this course's vocabulary.",
-          answer: "A federal decision, taken by a federal commission, under a federal statute, about federal land, whose entire local consequence falls on a city, township, school district and county that had no vote in it.",
+          prompt: "State the portable lesson of the 1970 annexation.",
+          answer: "A jurisdictional decision made when land is worthless to you determines who benefits when it becomes valuable. When roughly 2,500 acres came back after 1991, they came back inside the City of Lawrence because of a 1970 decision.",
         },
       ],
     },
@@ -987,32 +961,28 @@ The remaining roughly **800 acres**, mostly the already-developed part, went to 
 - Sample, D. (2005, June 15). *Indiana city flourishes after "Fort Ben" closure*. American Forces Press Service. https://www.dvidshub.net/news/538075/indiana-city-flourishes-after-fort-ben-closure`,
       recallContent: [
         {
-          prompt: "Why was the transition task force formed by December 1991 specifically?",
-          answer: "To qualify for a $100,000 grant from the Defense Office of Economic Adjustment. The deadline was a funding deadline, and communities that organise fast get the reuse planning money.",
+          prompt: "Why can ordinary legislation not close military bases, and what are the three parts of the mechanism that can?",
+          answer: "Because every member protects the base at home and any bill naming bases attracts amendments removing them. The mechanism is an independent commission reviewing the Secretary of Defense's list against published criteria, a single package sent to the President for all-or-nothing acceptance, and a congressional power to reject only the entire package. There is no vote on any individual base.",
         },
         {
-          prompt: "What did the 1992 inventory find, and what explains it?",
-          answer: "About 1,700 acres of nearly continuous reforested land including roughly 1,100 acres that a DNR study called the largest tract of forest remaining in central Indiana, plus 155 plant species, 42 fish species, 185 bird species and the endangered Indiana bat. It exists because ninety years of federal ownership meant no property tax, a need for undeveloped training land, and restricted access.",
+          prompt: "What happened to this post in the 1988 round, and what does that teach?",
+          answer: "The 1988 round brought new jobs here and made the post look financially viable. A base that survives one round is not safe; it is simply not yet on the next list.",
         },
         {
-          prompt: "What is a public benefit conveyance, and who decides?",
-          answer: "Under the Federal Property and Administrative Services Act of 1949 the government must consider conveyances for park, recreation and natural resource protection before disposal. For a park the Department of the Interior assesses it and the transfer runs through the National Park Service programme now called Federal Lands to Parks. The alternative is sale at fair market value.",
+          prompt: "Name three things the 1 July 1991 recommendation did besides closing the post.",
+          answer: "It realigned the Soldier Support Center to Fort Jackson, South Carolina; it retained the Defense Finance and Accounting Service, Indianapolis Center; it revised a 1988 recommendation so U.S. Army Recruiting Command went to Fort Knox instead; and it found the Secretary had deviated substantially from selection criterion 2 and recommended closing Building 1.",
         },
         {
-          prompt: "What did the National Park Service decide in August 1992?",
-          answer: "It supported a public benefit conveyance, having determined that the land was not suitable as a national park and that preservation and protection should be accomplished by local or state government. A federal agency decided it should not be the owner and named who should be.",
+          prompt: "Why is 'closed' not a synonym for 'the federal government left'?",
+          answer: "Because the same recommendation that closed the post explicitly retained the Defense Finance and Accounting Service, Indianapolis Center. A major federal employer stayed on the same ground.",
         },
         {
-          prompt: "What is the discrepancy in the account of Governor Bayh's announcement, and how should you handle it?",
-          answer: "Hankins's text gives 30 August 1994 while the footnote on the same sentence cites an Indianapolis Star article dated 31 August 1993. Go to the footnote's source rather than picking a year. This course reports the discrepancy and does not resolve it.",
+          prompt: "What unintended coalition appeared during the closure fight?",
+          answer: "Environmental groups wanted the forest turned into a park and Lawrence Township community groups wanted to prevent future residential development, so the closure some people fought was a closure others supported for reasons unrelated to defense policy.",
         },
         {
-          prompt: "Describe the 1995 transfer of the park land.",
-          answer: "The Army transferred 1,700 of 2,500 acres to the Indiana DNR under an interim lease at a recurring price, renewable in four-year periods, with covenants against deforestation, mining, soil erosion and pollution and requirements for historic preservation and archaeology.",
-        },
-        {
-          prompt: "What is the Fort Harrison Reuse Authority, and why does its financing close the circle of this section?",
-          answer: "A body established in 1995 under Indiana Code 36-7-30 for the reuse of federal military bases, which bought about 800 acres for $9 million and sits in an indefinite special taxing district levying special benefit taxes. Ground that paid no property tax for ninety years came back inside a purpose-built taxing instrument.",
+          prompt: "Summarise a base closure in this course's vocabulary.",
+          answer: "A federal decision, taken by a federal commission, under a federal statute, about federal land, whose entire local consequence falls on a city, township, school district and county that had no vote in it.",
         },
       ],
     },
@@ -1452,28 +1422,32 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
 - Sample, D. (2005, June 15). *Indiana city flourishes after "Fort Ben" closure*. American Forces Press Service. https://www.dvidshub.net/news/538075/indiana-city-flourishes-after-fort-ben-closure`,
       recallContent: [
         {
-          prompt: "Name the three different kinds of owner on this former post today.",
-          answer: "The Indiana Department of Natural Resources, which runs the 1,700-acre state park; the Fort Harrison Reuse Authority, a state-statute body holding about 800 acres in an indefinite special taxing district; and the federal government, whose Defense Finance and Accounting Service occupies the Bean Federal Center.",
+          prompt: "Why was the transition task force formed by December 1991 specifically?",
+          answer: "To qualify for a $100,000 grant from the Defense Office of Economic Adjustment. The deadline was a funding deadline, and communities that organise fast get the reuse planning money.",
         },
         {
-          prompt: "Why is the Bean Federal Center's name history a research trap?",
-          answer: "Its official designation changed five times between 1953 and 1991, so a search on any single name will miss four decades of records. Follow the entity, not the current name.",
+          prompt: "What did the 1992 inventory find, and what explains it?",
+          answer: "About 1,700 acres of nearly continuous reforested land including roughly 1,100 acres that a DNR study called the largest tract of forest remaining in central Indiana, plus 155 plant species, 42 fish species, 185 bird species and the endangered Indiana bat. It exists because ninety years of federal ownership meant no property tax, a need for undeveloped training land, and restricted access.",
         },
         {
-          prompt: "What extra question does a former federal installation require before the usual four?",
-          answer: "Who owns it now and how did they get it: federal, state, municipal, reuse authority or private, and by what instrument such as a public benefit conveyance, an economic development sale, a lease or an ordinary transaction. The answer changes every other answer.",
+          prompt: "What is a public benefit conveyance, and who decides?",
+          answer: "Under the Federal Property and Administrative Services Act of 1949 the government must consider conveyances for park, recreation and natural resource protection before disposal. For a park the Department of the Interior assesses it and the transfer runs through the National Park Service programme now called Federal Lands to Parks. The alternative is sale at fair market value.",
         },
         {
-          prompt: "What does the City of Lawrence's municipal code section on cooperation with Marion County tell you, and what does it not?",
-          answer: "It tells you Lawrence has its own plan commission and board of zoning appeals and that the ordinance anticipates a coordination problem with the county. It does not tell you which body hears a petition on a specific parcel, and this course did not verify that.",
+          prompt: "What did the National Park Service decide in August 1992?",
+          answer: "It supported a public benefit conveyance, having determined that the land was not suitable as a national park and that preservation and protection should be accomplished by local or state government. A federal agency decided it should not be the owner and named who should be.",
         },
         {
-          prompt: "How many overlapping authorities can claim one parcel on this post?",
-          answer: "At least five: a state park, a reuse authority's special taxing district, an excluded city, a consolidated county, and a National Register historic district. Overlapping authority is the ordinary condition of American land.",
+          prompt: "What is the discrepancy in the account of Governor Bayh's announcement, and how should you handle it?",
+          answer: "Hankins's text gives 30 August 1994 while the footnote on the same sentence cites an Indianapolis Star article dated 31 August 1993. Go to the footnote's source rather than picking a year. This course reports the discrepancy and does not resolve it.",
         },
         {
-          prompt: "What is the live interpretive argument about the park, and why is it actionable?",
-          answer: "Hankins argues that visitors often do not encounter the park's military history and that the Camp Glenn area does not interpret the military's role in inadvertently reforesting the land. Interpretive plans get revised, so a gap in a state park is a comment you can make to a state agency.",
+          prompt: "Describe the 1995 transfer of the park land.",
+          answer: "The Army transferred 1,700 of 2,500 acres to the Indiana DNR under an interim lease at a recurring price, renewable in four-year periods, with covenants against deforestation, mining, soil erosion and pollution and requirements for historic preservation and archaeology.",
+        },
+        {
+          prompt: "What is the Fort Harrison Reuse Authority, and why does its financing close the circle of this section?",
+          answer: "A body established in 1995 under Indiana Code 36-7-30 for the reuse of federal military bases, which bought about 800 acres for $9 million and sits in an indefinite special taxing district levying special benefit taxes. Ground that paid no property tax for ninety years came back inside a purpose-built taxing instrument.",
         },
       ],
     },
@@ -1948,24 +1922,28 @@ A short, checkable piece in which every sentence is either something you read in
 - U.S. Department of Education. (n.d.). *Impact Aid Section 7002: Payments for federal property*. https://www.ed.gov/grants-and-programs/formula-grants/impact-aid/impact-aid-section-7002--payments-for-federal-property`,
       recallContent: [
         {
-          prompt: "What is the actual product of this course?",
-          answer: "The six-beat site template run on ground whose owner was the federal government: Then, Built, Powers, Now, Next, Write. The Fort Harrison material is the worked example.",
+          prompt: "Name the three different kinds of owner on this former post today.",
+          answer: "The Indiana Department of Natural Resources, which runs the 1,700-acre state park; the Fort Harrison Reuse Authority, a state-statute body holding about 800 acres in an indefinite special taxing district; and the federal government, whose Defense Finance and Accounting Service occupies the Bean Federal Center.",
         },
         {
-          prompt: "In one sentence about taxation, why does the largest tract of forest in central Indiana exist?",
-          answer: "Because for ninety years it was owned by an entity that paid no property tax on it, needed it undeveloped for training, and restricted access to it, so it faced none of the pressure to subdivide that a private owner would have faced.",
+          prompt: "Why is the Bean Federal Center's name history a research trap?",
+          answer: "Its official designation changed five times between 1953 and 1991, so a search on any single name will miss four decades of records. Follow the entity, not the current name.",
         },
         {
-          prompt: "How does this course's instrument set differ from course 1's?",
-          answer: "Course 1 showed a corridor taken by a city redevelopment commission and a state university using blight designation and eminent domain. This course showed a federal owner that removed land from the tax rolls, employed more people than anyone else in the city, and then left through a process no local voter could reach.",
+          prompt: "What extra question does a former federal installation require before the usual four?",
+          answer: "Who owns it now and how did they get it: federal, state, municipal, reuse authority or private, and by what instrument such as a public benefit conveyance, an economic development sale, a lease or an ordinary transaction. The answer changes every other answer.",
         },
         {
-          prompt: "Name four things this course deliberately did not assert.",
-          answer: "The post's jurisdictional status; whether the local school district ever received Impact Aid Section 7002 payments; a total economic cost of the closure; and any account of segregation here beyond the two documented items in lesson 3.",
+          prompt: "What does the City of Lawrence's municipal code section on cooperation with Marion County tell you, and what does it not?",
+          answer: "It tells you Lawrence has its own plan commission and board of zoning appeals and that the ordinance anticipates a coordination problem with the county. It does not tell you which body hears a petition on a specific parcel, and this course did not verify that.",
         },
         {
-          prompt: "Name four of the unopened sources that would advance this story.",
-          answer: "CCC company rosters and camp inspection reports; the 1917 Officer Training Camp rosters; Bower's Army command history of the post; the Fort Harrison Transition Task Force records and the Robert Baker collection; the 1995 Environmental Impact Statement and interim lease; the Indianapolis Recorder; and the 1970 annexation ordinance.",
+          prompt: "How many overlapping authorities can claim one parcel on this post?",
+          answer: "At least five: a state park, a reuse authority's special taxing district, an excluded city, a consolidated county, and a National Register historic district. Overlapping authority is the ordinary condition of American land.",
+        },
+        {
+          prompt: "What is the live interpretive argument about the park, and why is it actionable?",
+          answer: "Hankins argues that visitors often do not encounter the park's military history and that the Camp Glenn area does not interpret the military's role in inadvertently reforesting the land. Interpretive plans get revised, so a gap in a state park is a comment you can make to a state agency.",
         },
       ],
     },

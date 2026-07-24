@@ -80,18 +80,6 @@ Two more courses on this platform pick up the story later: the **History of Unio
 - Carney, J. A., & Rosomoff, R. N. (2011). *In the shadow of slavery: Africa's botanical legacy in the Atlantic world*. University of California Press.
 - Wood, P. H. (1974). *Black majority: Negroes in colonial South Carolina from 1670 through the Stono Rebellion*. Knopf.
 - Berlin, I. (1998). *Many thousands gone: The first two centuries of slavery in North America*. Harvard University Press.`,
-      recallContent: [
-        {
-          prompt: "What is the single-sentence thesis of this course?",
-          answer:
-            "Enslaved and colonized people carried expertise their enslavers often lacked (in farming, building, metalworking, medicine, food, and navigation), and that knowledge was extracted, uncredited and uncompensated, to build colonial economies.",
-        },
-        {
-          prompt: "Why does the course insist on citing everything and teaching debates as debates?",
-          answer:
-            "Because the topic has two equally damaging failure modes: erasure (Europeans built everything) and romantic overcorrection (uncited claims that Africans invented everything). Only the cited record, with contested claims flagged as contested, avoids both.",
-        },
-      ],
     },
     {
       slug: "ttc-how-we-know",
@@ -118,14 +106,14 @@ The answer is that historians triangulate. No single source proves a transfer; a
 - Rosengarten, D. (1986). *Row upon row: Sea grass baskets of the South Carolina Lowcountry*. McKissick Museum, University of South Carolina.`,
       recallContent: [
         {
-          prompt: "Why is the written record of slavery a problem for this course, and how do historians work around it?",
+          prompt: "What is the single-sentence thesis of this course?",
           answer:
-            "Almost all written records were made by the enslavers (account books, laws, sale documents, ads), not the enslaved. Historians triangulate several kinds of evidence: slave-trade skill preferences, runaway ads naming trades, matching techniques, material culture, language, oral history, and archaeology.",
+            "Enslaved and colonized people carried expertise their enslavers often lacked (in farming, building, metalworking, medicine, food, and navigation), and that knowledge was extracted, uncredited and uncompensated, to build colonial economies.",
         },
         {
-          prompt: "What is the difference between 'documented' and 'plausible,' and why does it matter here?",
+          prompt: "Why does the course insist on citing everything and teaching debates as debates?",
           answer:
-            "Documented means the record actually shows it; plausible means it fits but is not proven. A technique appearing in both West Africa and the colonies is plausible evidence of transfer, not proof of it. Careful scholarship hedges the plausible instead of asserting it.",
+            "Because the topic has two equally damaging failure modes: erasure (Europeans built everything) and romantic overcorrection (uncited claims that Africans invented everything). Only the cited record, with contested claims flagged as contested, avoids both.",
         },
       ],
     },
@@ -369,19 +357,14 @@ None of this is contested. West Africa was a rice civilization with deep experti
 - Hawthorne, W. (2003). *Planting rice and harvesting slaves: Transformations along the Guinea-Bissau coast, 1400-1900*. Heinemann.`,
       recallContent: [
         {
-          prompt: "What is Oryza glaberrima, and why does it matter to this course?",
+          prompt: "Why is the written record of slavery a problem for this course, and how do historians work around it?",
           answer:
-            "African rice, a rice species West Africans domesticated on their own in the inland Niger delta, separate from Asian rice. It shows West Africa had its own full rice civilization (crop, tools, and knowledge) long before any European colony.",
+            "Almost all written records were made by the enslavers (account books, laws, sale documents, ads), not the enslaved. Historians triangulate several kinds of evidence: slave-trade skill preferences, runaway ads naming trades, matching techniques, material culture, language, oral history, and archaeology.",
         },
         {
-          prompt: "What was tidal mangrove rice, and why was it the hardest system?",
+          prompt: "What is the difference between 'documented' and 'plausible,' and why does it matter here?",
           answer:
-            "Growing rice in coastal estuaries where salt and fresh water meet. It required building earthen embankments and sluice gates to admit fresh river water and flush salt water out with the tides, plus transplanting seedlings and selecting seed. It is engineering as much as farming.",
-        },
-        {
-          prompt: "Name three West African rice techniques that reappear in the Carolina story.",
-          answer:
-            "Sowing seed by pressing it into the mud with the heel; hulling rice with a wooden mortar and pestle (largely women's knowledge); and winnowing with a wide coiled fanner basket.",
+            "Documented means the record actually shows it; plausible means it fits but is not proven. A technique appearing in both West Africa and the colonies is plausible evidence of transfer, not proof of it. Careful scholarship hedges the plausible instead of asserting it.",
         },
       ],
     },
@@ -413,19 +396,19 @@ Notice the word **thesis**. It is a strong, carefully argued interpretation, hug
 - Carney, J. A., & Rosomoff, R. N. (2011). *In the shadow of slavery: Africa's botanical legacy in the Atlantic world*. University of California Press.`,
       recallContent: [
         {
-          prompt: "Who first argued (in 1974) that enslaved Africans' knowledge, not just their labor, helped build the Carolina rice economy?",
+          prompt: "What is Oryza glaberrima, and why does it matter to this course?",
           answer:
-            "Peter Wood, in Black Majority (1974). He argued enslaved Africans supplied rice-growing and cattle-herding skill and swamp survival knowledge, which helped the colony work and gave it a Black majority.",
+            "African rice, a rice species West Africans domesticated on their own in the inland Niger delta, separate from Asian rice. It shows West Africa had its own full rice civilization (crop, tools, and knowledge) long before any European colony.",
         },
         {
-          prompt: "What does the Black Rice thesis (Carney, 2001) claim, and what did Littlefield's work add?",
+          prompt: "What was tidal mangrove rice, and why was it the hardest system?",
           answer:
-            "That an entire African knowledge system (tidal-field technology, agronomy, and processing, including women's expertise) crossed the Atlantic and substantially built Carolina rice. Littlefield (1981) added that planters preferred and paid more for captives from rice-growing regions.",
+            "Growing rice in coastal estuaries where salt and fresh water meet. It required building earthen embankments and sluice gates to admit fresh river water and flush salt water out with the tides, plus transplanting seedlings and selecting seed. It is engineering as much as farming.",
         },
         {
-          prompt: "Why keep calling it a 'thesis'?",
+          prompt: "Name three West African rice techniques that reappear in the Carolina story.",
           answer:
-            "Because it is a strong, argued interpretation, not a settled fact. It was hugely influential and it was also tested and challenged by other historians, which is the subject of the next lesson.",
+            "Sowing seed by pressing it into the mud with the heel; hulling rice with a wooden mortar and pestle (largely women's knowledge); and winnowing with a wide coiled fanner basket.",
         },
       ],
     },
@@ -466,19 +449,19 @@ One thing the debate does **not** touch, and the reason this course refuses to l
 - Carney, J. A., & Rosomoff, R. N. (2011). *In the shadow of slavery: Africa's botanical legacy in the Atlantic world*. University of California Press.`,
       recallContent: [
         {
-          prompt: "What was the core of the 2007 Eltis, Morgan, and Richardson challenge to the Black Rice thesis?",
+          prompt: "Who first argued (in 1974) that enslaved Africans' knowledge, not just their labor, helped build the Carolina rice economy?",
           answer:
-            "That the strong transfer claim was overstated and under-documented. Their points: presence is not the same as transfer; the demographics and sex ratios of the slave trade complicate the emphasis on women's knowledge; and planters and the environment shaped the crop too. They did not deny African rice expertise existed.",
+            "Peter Wood, in Black Majority (1974). He argued enslaved Africans supplied rice-growing and cattle-herding skill and swamp survival knowledge, which helped the colony work and gave it a Black majority.",
         },
         {
-          prompt: "In the Black Rice debate, what is NOT in dispute versus what IS contested?",
+          prompt: "What does the Black Rice thesis (Carney, 2001) claim, and what did Littlefield's work add?",
           answer:
-            "Not disputed: West Africans had deep rice expertise, enslaved people from rice regions were in Carolina, and some techniques and processing knowledge were African. Contested: whether a whole knowledge system transferred largely intact, how African-driven versus creolized or planter-directed Lowcountry rice was, and the exact mechanism of transfer.",
+            "That an entire African knowledge system (tidal-field technology, agronomy, and processing, including women's expertise) crossed the Atlantic and substantially built Carolina rice. Littlefield (1981) added that planters preferred and paid more for captives from rice-growing regions.",
         },
         {
-          prompt: "How does teaching the debate refute both the erasure and the romantic overcorrection at once?",
+          prompt: "Why keep calling it a 'thesis'?",
           answer:
-            "The erasure ('planters invented Carolina rice') is dead because no serious scholar in the debate believes it. The overcorrection ('Africans single-handedly built it, no questions allowed') is also wrong, because the scholars asking 'how exactly?' are doing careful work. The honest answer lives in the contested middle.",
+            "Because it is a strong, argued interpretation, not a settled fact. It was hugely influential and it was also tested and challenged by other historians, which is the subject of the next lesson.",
         },
       ],
     },
@@ -707,14 +690,19 @@ Now the honesty, the same discipline as the rice lesson. Making dye cakes for ex
 - Carney, J. A., & Rosomoff, R. N. (2011). *In the shadow of slavery: Africa's botanical legacy in the Atlantic world*. University of California Press.`,
       recallContent: [
         {
-          prompt: "Why was making indigo dye (not just growing the plant) expert work?",
+          prompt: "What was the core of the 2007 Eltis, Morgan, and Richardson challenge to the Black Rice thesis?",
           answer:
-            "Turning the plant into dye is an unforgiving fermentation: you ferment the cut plants in vats, judge by smell and color the exact moment to move the liquid, beat it to add air so the dye forms, then drain and dry it into cakes. A misjudgment at any step ruins the whole batch.",
+            "That the strong transfer claim was overstated and under-documented. Their points: presence is not the same as transfer; the demographics and sex ratios of the slave trade complicate the emphasis on women's knowledge; and planters and the environment shaped the crop too. They did not deny African rice expertise existed.",
         },
         {
-          prompt: "How does Andrea Feeser complicate the Eliza Lucas Pinckney indigo story?",
+          prompt: "In the Black Rice debate, what is NOT in dispute versus what IS contested?",
           answer:
-            "Feeser (2013) shows that many enslaved people in South Carolina came from West African and Caribbean indigo regions, and that their knowledge and labor (along with a hired Caribbean expert) were central to the crop's success. The celebrated name sits atop uncredited enslaved and Caribbean expertise.",
+            "Not disputed: West Africans had deep rice expertise, enslaved people from rice regions were in Carolina, and some techniques and processing knowledge were African. Contested: whether a whole knowledge system transferred largely intact, how African-driven versus creolized or planter-directed Lowcountry rice was, and the exact mechanism of transfer.",
+        },
+        {
+          prompt: "How does teaching the debate refute both the erasure and the romantic overcorrection at once?",
+          answer:
+            "The erasure ('planters invented Carolina rice') is dead because no serious scholar in the debate believes it. The overcorrection ('Africans single-handedly built it, no questions allowed') is also wrong, because the scholars asking 'how exactly?' are doing careful work. The honest answer lives in the contested middle.",
         },
       ],
     },
@@ -740,14 +728,14 @@ So the honest statement is narrower than the exciting one, and still worth sayin
 - Jordan, T. G. (1993). *North American cattle-ranching frontiers: Origins, diffusion, and differentiation*. University of New Mexico Press.`,
       recallContent: [
         {
-          prompt: "How did the Carolina open-range 'cow pen' system resemble West African herding more than English farming?",
+          prompt: "Why was making indigo dye (not just growing the plant) expert work?",
           answer:
-            "It let cattle range freely in the woods, penned them at night for protection, burned pasture seasonally to freshen the grass, and used herders and dogs across large distances, closer to West African open-range pastoralism (as among cattle-keeping peoples like the Fulbe) than to enclosed English husbandry.",
+            "Turning the plant into dye is an unforgiving fermentation: you ferment the cut plants in vats, judge by smell and color the exact moment to move the liquid, beat it to add air so the dye forms, then drain and dry it into cakes. A misjudgment at any step ruins the whole batch.",
         },
         {
-          prompt: "Why is the cattle-and-cowboy claim a good example of hedging a thin claim?",
+          prompt: "How does Andrea Feeser complicate the Eliza Lucas Pinckney indigo story?",
           answer:
-            "Because Wood offered it as a suggestion, not proof ('it is even possible'), and the origins of American ranching are contested. Terry Jordan (1993) traced West African, Iberian, and British roots. The honest statement (enslaved Africans did skilled herding resembling West African practice, with a possibly African-rooted cowboy) is narrower than the slogan 'Africans invented the cowboy.'",
+            "Feeser (2013) shows that many enslaved people in South Carolina came from West African and Caribbean indigo regions, and that their knowledge and labor (along with a hired Caribbean expert) were central to the crop's success. The celebrated name sits atop uncredited enslaved and Caribbean expertise.",
         },
       ],
     },
@@ -955,14 +943,14 @@ And sometimes the record does reach an individual, which lets us be precise inst
 - New Georgia Encyclopedia. (n.d.). *Horace King (1807-1885)*. https://www.georgiaencyclopedia.org`,
       recallContent: [
         {
-          prompt: "What is the honest way to describe enslaved people's role in building the U.S. Capitol and Southern architecture?",
+          prompt: "How did the Carolina open-range 'cow pen' system resemble West African herding more than English farming?",
           answer:
-            "As documented labor and, in many cases, skilled craft (quarrying, sawing, brickmaking and laying, masonry, plastering, carpentry). The design was usually credited to white architects, so it is overreach to attribute a famous building's design to a named enslaved person without a source.",
+            "It let cattle range freely in the woods, penned them at night for protection, burned pasture seasonally to freshen the grass, and used herders and dogs across large distances, closer to West African open-range pastoralism (as among cattle-keeping peoples like the Fulbe) than to enclosed English husbandry.",
         },
         {
-          prompt: "Why is Horace King the through-line of the course in one life?",
+          prompt: "Why is the cattle-and-cowboy claim a good example of hedging a thin claim?",
           answer:
-            "He was one of the most respected bridge builders in the Deep South, building major Town lattice truss bridges, yet he did this while enslaved. His skill did not free him; he gained freedom only in 1846 by a special act of the Alabama legislature. Indispensable, and unfree.",
+            "Because Wood offered it as a suggestion, not proof ('it is even possible'), and the origins of American ranching are contested. Terry Jordan (1993) traced West African, Iberian, and British roots. The honest statement (enslaved Africans did skilled herding resembling West African practice, with a possibly African-rooted cowboy) is narrower than the slogan 'Africans invented the cowboy.'",
         },
       ],
     },
@@ -989,14 +977,14 @@ So the honest claim credits the documented skill without inventing the transfer.
 - Dew, C. B. (1994). *Bond of iron: Master and slave at Buffalo Forge*. W. W. Norton.`,
       recallContent: [
         {
-          prompt: "What did Charles Dew's Bond of Iron (1994) show about enslaved ironworkers?",
+          prompt: "What is the honest way to describe enslaved people's role in building the U.S. Capitol and Southern architecture?",
           answer:
-            "At Buffalo Forge in Virginia, enslaved people were skilled forgemen, founders, colliers, and blacksmiths who ran the forge and furnace. Dew could name them and trace their work through the records; the operation depended on their expertise.",
+            "As documented labor and, in many cases, skilled craft (quarrying, sawing, brickmaking and laying, masonry, plastering, carpentry). The design was usually credited to white architects, so it is overreach to attribute a famous building's design to a named enslaved person without a source.",
         },
         {
-          prompt: "What is the 'myth to retire' about African iron in the Americas, and why?",
+          prompt: "Why is Horace King the through-line of the course in one life?",
           answer:
-            "The claim that African iron-smelting technology was transferred to American plantations. West African smelting was real in Africa, and enslaved American ironwork (forging and casting) was real and skilled, but there is no good evidence enslaved people built West African smelting furnaces here. The 'Africans brought iron smelting to America' claim outruns the evidence.",
+            "He was one of the most respected bridge builders in the Deep South, building major Town lattice truss bridges, yet he did this while enslaved. His skill did not free him; he gained freedom only in 1846 by a special act of the Alabama legislature. Indispensable, and unfree.",
         },
       ],
     },
@@ -1217,19 +1205,14 @@ Now hold the whole thing together, because the irony is the lesson. The knowledg
 - Minardi, M. (2004). The Boston inoculation controversy of 1721-1722: An incident in the history of race. *The William and Mary Quarterly, 61*(1), 47-76.`,
       recallContent: [
         {
-          prompt: "What is variolation, and how did Cotton Mather learn about it?",
+          prompt: "What did Charles Dew's Bond of Iron (1994) show about enslaved ironworkers?",
           answer:
-            "Deliberately introducing a small amount of smallpox matter into a cut in a healthy person, producing a mild case and lifelong immunity. Mather learned it around 1716 from the enslaved African man he called Onesimus, who had undergone it as a boy in Africa and showed Mather the scar. Mather recorded it in a 1716 letter to the Royal Society.",
+            "At Buffalo Forge in Virginia, enslaved people were skilled forgemen, founders, colliers, and blacksmiths who ran the forge and furnace. Dew could name them and trace their work through the records; the operation depended on their expertise.",
         },
         {
-          prompt: "What did Boylston's 1721 Boston results show, and why did the inoculation face fury?",
+          prompt: "What is the 'myth to retire' about African iron in the Americas, and why?",
           answer:
-            "Of 247 people Boylston inoculated, about 2 percent died, versus roughly 14 percent among those who caught smallpox naturally, the first careful American demonstration that inoculation worked. It faced fury partly because of race: Margot Minardi (2004) shows critics distrusted medical knowledge that traced to an enslaved African. Someone even firebombed Mather's house.",
-        },
-        {
-          prompt: "How is Onesimus's story the through-line of the course?",
-          answer:
-            "His knowledge gave Boston its first real defense against smallpox, yet he stayed enslaved, was described with a slaveholder's condescension, and only gained a partial, conditional freedom. Life-saving expertise bought him almost nothing.",
+            "The claim that African iron-smelting technology was transferred to American plantations. West African smelting was real in Africa, and enslaved American ironwork (forging and casting) was real and skilled, but there is no good evidence enslaved people built West African smelting furnaces here. The 'Africans brought iron smelting to America' claim outruns the evidence.",
         },
       ],
     },
@@ -1252,14 +1235,19 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
 - South Carolina Encyclopedia. (n.d.). *Caesar*. https://www.scencyclopedia.org`,
       recallContent: [
         {
-          prompt: "What roles did enslaved healers and midwives play, according to Fett (2002)?",
+          prompt: "What is variolation, and how did Cotton Mather learn about it?",
           answer:
-            "They did much of the everyday doctoring on plantations, caring for the sick, delivering babies, and making plant medicines for both Black and white households, drawing on African precedents. Fett shows healing gave them authority and could be a form of resistance against a system that treated bodies as property.",
+            "Deliberately introducing a small amount of smallpox matter into a cut in a healthy person, producing a mild case and lifelong immunity. Mather learned it around 1716 from the enslaved African man he called Onesimus, who had undergone it as a boy in Africa and showed Mather the scar. Mather recorded it in a 1716 letter to the Royal Society.",
         },
         {
-          prompt: "Why is the 1750 case of Caesar the 'exception that measures the rule'?",
+          prompt: "What did Boylston's 1721 Boston results show, and why did the inoculation face fury?",
           answer:
-            "The South Carolina assembly freed him and paid him an annuity in exchange for publishing his poison-and-snakebite antidote, showing the knowledge was recognized as valuable. But only one man was freed while slavery continued unchanged; the reward was exceptional precisely because in every other case such expertise was taken for nothing.",
+            "Of 247 people Boylston inoculated, about 2 percent died, versus roughly 14 percent among those who caught smallpox naturally, the first careful American demonstration that inoculation worked. It faced fury partly because of race: Margot Minardi (2004) shows critics distrusted medical knowledge that traced to an enslaved African. Someone even firebombed Mather's house.",
+        },
+        {
+          prompt: "How is Onesimus's story the through-line of the course?",
+          answer:
+            "His knowledge gave Boston its first real defense against smallpox, yet he stayed enslaved, was described with a slaveholder's condescension, and only gained a partial, conditional freedom. Life-saving expertise bought him almost nothing.",
         },
       ],
     },
@@ -1480,14 +1468,14 @@ Here the through-line takes a particular, modern shape, so watch for it. This kn
 - Twitty, M. W. (2017). *The cooking gene: A journey through African American culinary history in the Old South*. Amistad.`,
       recallContent: [
         {
-          prompt: "What African crops and food words show up in American foodways?",
+          prompt: "What roles did enslaved healers and midwives play, according to Fett (2002)?",
           answer:
-            "Okra (the word 'gumbo' comes from a West and Central African word for okra), black-eyed peas (the cowpea, a West African domesticate), sorghum, and sesame (called benne, from a West African word), among others. Carney and Rosomoff (2011) trace Africa's botanical legacy across the Atlantic.",
+            "They did much of the everyday doctoring on plantations, caring for the sick, delivering babies, and making plant medicines for both Black and white households, drawing on African precedents. Fett shows healing gave them authority and could be a form of resistance against a system that treated bodies as property.",
         },
         {
-          prompt: "What is the modern twist on the through-line in the foodways lesson?",
+          prompt: "Why is the 1750 case of Caesar the 'exception that measures the rule'?",
           answer:
-            "The cooking enslaved Africans created became celebrated, profitable 'Southern cuisine,' but its Black origins were long erased, with credit drifting to the plantation household rather than the enslaved cooks. The expertise is still being separated from its creators, which historians like Harris and Twitty work to correct.",
+            "The South Carolina assembly freed him and paid him an annuity in exchange for publishing his poison-and-snakebite antidote, showing the knowledge was recognized as valuable. But only one man was freed while slavery continued unchanged; the reward was exceptional precisely because in every other case such expertise was taken for nothing.",
         },
       ],
     },
@@ -1514,14 +1502,14 @@ But hold the pattern one more time, because it does not break. The pilot who alo
 - Dawson, K. (2018). *Undercurrents of power: Aquatic culture in the African diaspora*. University of Pennsylvania Press.`,
       recallContent: [
         {
-          prompt: "What does Kevin Dawson's Undercurrents of Power (2018) show about enslaved Africans and water?",
+          prompt: "What African crops and food words show up in American foodways?",
           answer:
-            "That West and West-Central Africans were expert swimmers, divers, and canoe-makers and handlers, often more skilled than Europeans (many of whom could not swim). In the Americas they built and paddled canoes, served as pilots over dangerous water, and dived for salvage.",
+            "Okra (the word 'gumbo' comes from a West and Central African word for okra), black-eyed peas (the cowpea, a West African domesticate), sorghum, and sesame (called benne, from a West African word), among others. Carney and Rosomoff (2011) trace Africa's botanical legacy across the Atlantic.",
         },
         {
-          prompt: "How was aquatic skill both a source of privilege and a tool of resistance?",
+          prompt: "What is the modern twist on the through-line in the foodways lesson?",
           answer:
-            "Because water work was valuable and hard to supervise, it sometimes brought wages, autonomy, or rarely a path toward freedom. But enslavers also knew a swimmer could escape, so swimming was often discouraged, and the skill, passed parent to child, became a quiet form of resistance.",
+            "The cooking enslaved Africans created became celebrated, profitable 'Southern cuisine,' but its Black origins were long erased, with credit drifting to the plantation household rather than the enslaved cooks. The expertise is still being separated from its creators, which historians like Harris and Twitty work to correct.",
         },
       ],
     },
