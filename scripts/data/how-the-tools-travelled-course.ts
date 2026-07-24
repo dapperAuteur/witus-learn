@@ -1902,6 +1902,380 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · What This Does Not Prove  (the limits, a drill, and the learner's own test)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "htt-limits",
+      title: "19 · What this does not prove",
+      section: "Section 6 · What This Does Not Prove",
+      body: `**A course that argues one thing for five sections owes its last section to the argument's limits.** This is not a modesty ritual. **Each of the three limits below is a specific way the thesis of this course can be used to say something false**, and you will meet all three in print.
+
+## Limit one: a common cause produces correlation, and correlation is not transmission
+
+**Section 5 gave you the shape: the graph is a star.** Now take the consequence seriously. **When one hub reaches many places, those places will resemble each other**, and every pair of them will show a correlation. **None of those correlations is evidence that either place influenced the other.**
+
+**This cuts both ways and the second way is easy to miss.** It is a reason to doubt city-to-city claims, **and** it is a reason to be careful about the upstream claim itself. **"Both cities took federal money and both cleared a Black district" does not by itself establish that the federal money caused the clearance in either city.** It establishes that the money was there. **Question 4 has to be asked about your own favourite explanation, not only about the ones you are trying to knock down.**
+
+## Limit two: parallel invention is real, common, and boring
+
+**Fifty legislatures work on the same national problem at the same time, in the same professional and legal culture, and reach the same answer.** That is not transmission. It is convergence, and American federalism produces it constantly.
+
+**The clearest example is sitting inside this course and it has not been resolved.** **Indiana's blight statute is 1945. Pennsylvania's Urban Redevelopment Law is 1945. The District of Columbia Redevelopment Act is 1945.** Three enabling statutes, three jurisdictions, one year, four years before the federal money arrived.
+
+**That is a striking pattern and this course does not know what it is.** It could be a model act circulating through a professional body, which would be a documented line. It could be three legislatures responding to the same postwar housing crisis independently, which would be convergence. **This course did not read the legislative histories, so it calls the 1945 cluster a rhyme, flags it as the most interesting unresolved question it found, and stops.** **State redevelopment law is a whole layer of this story that a capstone built on federal instruments has treated lightly, and saying so is part of the finding.**
+
+## Limit three, and it is the one with a conscience attached: available is not chosen
+
+**Title I money was available to every city in the United States.** Not every city cleared a Black district. Cities that did clear cleared different areas, on different schedules, and stopped at different points. **The federal government made a tool cheap and legal. Somebody in each place picked it up, pointed it, and signed.**
+
+**Say the danger plainly.** A structural explanation can become a way of not naming anybody. "The federal instruments did it" is true as far as it goes, and if it is the whole sentence, **then no redevelopment commissioner, no mayor, no highway engineer and no valuator ever decided anything.** **A history in which the structure acts and no person does is not a more sophisticated history. It is an alibi**, and it is one the records themselves refuse, because the records are full of named people voting on dated motions.
+
+**The correct move is both, in this order.** **Name the upstream, because it is real and it explains the timing and the shape.** **Then go and find who chose**, because the minutes exist and they have names in them. **The city courses in this series are the second half of that sentence, and this capstone is only the first.**
+
+## What this course specifically does not establish
+
+**Written out, so that nobody has to guess.**
+1. **No intent.** Nothing here shows what any redevelopment commission, highway department or zoning board meant to do. **Intent needs the minutes, and no commission's minutes have been read into this series.**
+2. **No alignment claim.** The 1956 Act did not direct any route through any neighbourhood; its text does not do that, and the alignment decisions were made elsewhere.
+3. **No causal claim from Berman to any clearance.** Only to the legal security of clearance, from November 1954 onward.
+4. **No copy-chain out of Pittsburgh.** Emulation of a partnership, yes. A clearance manual travelling city to city, no.
+5. **No person-carried link.** The category is open and the archive that might close it is named on the map.
+6. **No accounting of how much.** This course cannot tell you what share of any city's outcome is federal, what share is state, and what share is local. **It can tell you the instruments existed and which edges are documented. Proportions would need quantitative work nobody here has done.**
+
+## The opposite error, which is also available
+
+**Refusing every claim is not rigour.** A reader who finishes this course saying "you can never show anything connects" has learned the wrong lesson as thoroughly as one who finishes saying "it was all one plan."
+
+**Three horizontal edges survived every test in this course, and they are not small.** A Louisville lawsuit voided Baltimore's statute book. A Detroit opinion redirected an Indianapolis case within weeks. A Washington opinion reached New London and Honolulu in the reported words of the courts that got there. **Those are proven, they are citable, and the vertical lines from the upstream are proven too.**
+
+**The standard is not "nothing counts." It is "say which kind, and show the paper."**
+
+## Now go and use it
+
+**The next two lessons are the point of the course.** One is a drill on the vocabulary and the dates. The other asks you to take **one connection of your own**, something you believe about two places, and run it through the taxonomy and the four questions in writing. **Pick one you like. That is the whole exercise.**
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- District of Columbia Redevelopment Act of 1945, 60 Stat. 790 (1946). https://www.law.cornell.edu/topn/district_of_columbia_redevelopment_act_of_1945
+- Housing Act of 1949, Pub. L. No. 81-171, 63 Stat. 413 (1949). https://www.govinfo.gov/content/pkg/STATUTE-63/pdf/STATUTE-63-Pg413.pdf
+- Neumann, T. (2016, February 1). *The "spiritual capital" of the Rust Belt: Pittsburgh and the postindustrial transformation of North Atlantic cities*. Global Urban History. https://globalurbanhistory.com/2016/02/01/the-spiritual-capital-of-the-rust-belt-pittsburgh-and-the-postindustrial-transformation-of-north-atlantic-cities/
+- Urban Redevelopment Authority of Pittsburgh. (n.d.). *History of the Urban Redevelopment Authority of Pittsburgh (URA)*. https://www.ura.org/pages/history-of-the-urban-redevelopment-authority-of-pittsburgh-ura`,
+      recallContent: [
+        {
+          prompt: "What do the colours on this course's map mean?",
+          answer: "Purple at the Capitol is the federal upstream. Blue is a source node, a place where a tool was authorised, with Pittsburgh drawn in blue but described as contested. Amber is a use node. Green is the federal footprint at Fort Harrison and the unopened Bartholomew archive at Cornell.",
+        },
+        {
+          prompt: "What does a dashed line on the map mean, and how many horizontal ones are there?",
+          answer: "A documented edge that survived all four questions. There are three horizontal city-to-city relationships drawn: Louisville to Baltimore, Detroit to Indianapolis, and Washington to New London and Honolulu.",
+        },
+        {
+          prompt: "What shape is the graph, and what follows from it?",
+          answer: "A star, not a web. The dense part is one hub reaching all the cities, not the cities talking to each other. Everything else that looks like a link between two cities is two spokes of the same wheel, seen from the side.",
+        },
+        {
+          prompt: "Why is the absence of a line between Indiana Avenue and the Hill District deliberate?",
+          answer: "Because they rhyme powerfully and no line between them is documented. The absence of a line is itself a claim, and it is the claim the course spent six sections earning.",
+        },
+        {
+          prompt: "Why is Seattle not joined to Detroit on the map?",
+          answer: "Because Milliken and Parents Involved are a doctrine pair rather than a documented line. Milliken limits compulsion and Parents Involved limits choice, and this course did not verify a citation chain between them.",
+        },
+      ],
+    },
+    {
+      slug: "htt-exercise-grade-a-claim",
+      title: "20 · Practice: grade the claim",
+      section: "Section 6 · What This Does Not Prove",
+      lessonType: "exercise",
+      body: `**This drill is the vocabulary and the dates, typed rather than recognised.** Type the missing word, name, number or year and check. The next lesson is where you use them on something of your own.
+
+**One reminder before you start.** Every answer below is either a category from lesson 2, a question from lesson 3, or a fact from a statute, a manual or an opinion this course quoted. **If an answer surprises you, go back to the lesson it came from rather than accepting it here**, because being able to type the word is not the same as being able to defend it.
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Federal Housing Administration. (1938). *Underwriting manual: Underwriting and valuation procedure under Title II of the National Housing Act*. U.S. Government Printing Office.
+- Federal-Aid Highway Act of 1956, Pub. L. No. 84-627, 70 Stat. 374 (1956). https://www.govinfo.gov/content/pkg/STATUTE-70/pdf/STATUTE-70-Pg374.pdf
+- Housing Act of 1949, Pub. L. No. 81-171, 63 Stat. 413 (1949). https://www.govinfo.gov/content/pkg/STATUTE-63/pdf/STATUTE-63-Pg413.pdf
+- Milliken v. Bradley, 418 U.S. 717 (1974). https://www.law.cornell.edu/supremecourt/text/418/717`,
+      exercise: {
+        instructions:
+          "Type the missing term, name, number or year, then check. Close answers (spelling, capitalization) count as 'close', not wrong.",
+        items: [
+          {
+            prompt: "The strongest kind of connection in the taxonomy is source to ___.",
+            answer: "use",
+            accept: ["use", "source to use", "application"],
+            explanation: "One place authorises a tool and another applies it. It has a document at both ends, which is why only chronology can break it.",
+          },
+          {
+            prompt: "The weakest kind, and the honest word when only a pattern exists, is a thematic ___.",
+            answer: "rhyme",
+            accept: ["rhyme", "thematic rhyme", "resemblance"],
+            explanation: "A shared pattern is a rhyme; a documented line is a connection. Say the word rather than dressing the resemblance up.",
+          },
+          {
+            prompt: "A documented line means one of four things: a citation, a copied plan, a named person, or a funding ___.",
+            answer: "stream",
+            accept: ["stream", "funding stream", "source"],
+            explanation: "If you have none of the four, you have a rhyme, however strong the resemblance feels.",
+          },
+          {
+            prompt: "The first and cheapest question of the test is ___.",
+            answer: "chronology",
+            accept: ["chronology", "the chronology", "dates", "timing"],
+            explanation: "Build a two-column table of date and event covering both places. A cause cannot postdate the effects it is supposed to have produced.",
+          },
+          {
+            prompt: "The fourth question, the one people skip, asks what ___ cause would produce the same result.",
+            answer: "alternative",
+            accept: ["alternative", "other", "alternate"],
+            explanation: "A common federal upstream is the alternative explanation for nearly every city-to-city resemblance in this catalogue.",
+          },
+          {
+            prompt: "The federal statute that created the national money for slum clearance is the Housing Act of ___.",
+            answer: "1949",
+            accept: ["1949", "49"],
+            explanation: "Public Law 81-171, 63 Stat. 413, approved July 15, 1949. Title I is the one this series keeps meeting.",
+          },
+          {
+            prompt: "Under Title I the federal capital grant covered up to ___ thirds of the net project cost.",
+            answer: "two",
+            accept: ["two", "2", "two-thirds", "two thirds"],
+            explanation: "The locality supplied local grants-in-aid worth at least one third of aggregate net project costs. For every three dollars of loss, the city found one and Washington found two.",
+          },
+          {
+            prompt: "The Housing Act of 1954 renamed the programme urban ___.",
+            answer: "renewal",
+            accept: ["renewal", "urban renewal"],
+            explanation: "It added rehabilitation and conservation to demolition and leaned harder on private redevelopers. The vocabulary in a local record dates the document.",
+          },
+          {
+            prompt: "To get 1954 aid a locality had to submit and maintain a ___ program for community improvement.",
+            answer: "workable",
+            accept: ["workable", "workable program", "workable programme"],
+            explanation: "A comprehensive plan, a zoning ordinance and map, subdivision regulations and code enforcement, produced to a federal specification. Money converted into law at a distance.",
+          },
+          {
+            prompt: "The FHA rulebook whose words this course prefers to the redlining maps is the Underwriting ___.",
+            answer: "Manual",
+            accept: ["manual", "underwriting manual"],
+            explanation: "It is not confidential and not disputed. A picture persuades; a quotation proves.",
+          },
+          {
+            prompt: "The 1956 highway statute renamed the system the National System of Interstate and ___ Highways.",
+            answer: "Defense",
+            accept: ["defense", "defence"],
+            explanation: "The defence rationale runs back to the 1944 Act's own language and to the Department of Defense review of the first 37,700 miles announced in 1947.",
+          },
+          {
+            prompt: "The 1956 Act set the federal share of project cost at ___ percent.",
+            answer: "90",
+            accept: ["90", "ninety", "90%"],
+            explanation: "A city choosing an urban Interstate alignment was spending roughly ten cents on the dollar, and Title II created the Highway Trust Fund so the money did not have to be fought for annually.",
+          },
+          {
+            prompt: "The 1954 opinion that made blight-designation clearance constitutionally safe is Berman v. ___.",
+            answer: "Parker",
+            accept: ["parker", "berman v parker"],
+            explanation: "348 U.S. 26, decided November 22, 1954, unanimously. It held an area may be taken as a whole and conveyed to a private developer.",
+          },
+          {
+            prompt: "Berman did not cause Indiana Avenue's clearance. In this course's phrase, it ___ it.",
+            answer: "insured",
+            accept: ["insured", "backstopped", "insured it"],
+            explanation: "Indiana's blight machinery is 1945 and demolition began in 1948. An instrument that arrives after a practice is not its cause; it is its insurance.",
+          },
+          {
+            prompt: "The 1974 decision that turned a school district boundary into a wall is Milliken v. ___.",
+            answer: "Bradley",
+            accept: ["bradley", "milliken v bradley"],
+            explanation: "418 U.S. 717, decided July 25, 1974. Its escape clause, for lines deliberately drawn on the basis of race, is the door Indianapolis went through.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "htt-assignment-test-a-connection",
+      title: "21 · Your assignment: test one connection of your own",
+      section: "Section 6 · What This Does Not Prove",
+      lessonType: "assignment",
+      body: `**Every other course in this series ends by asking you to write about a place. This one ends by asking you to write about a claim.**
+
+## The assignment
+
+Take **one proposed connection between two places** that you believe, or want to believe, and **test it in writing against the taxonomy in lesson 2 and the four questions in lesson 3.** **800 to 1,200 words.** Every factual sentence must be checkable against a source you name. **You must reach a verdict, and you must publish it even if it is not the one you wanted.**
+
+**Do not use a connection this course already worked.** Berman to Indiana Avenue, Milliken to Indianapolis, Buchanan to Baltimore, Pittsburgh to anywhere, and Bartholomew to Southwest are all spent. **Find your own.**
+
+## Step 1 · Choose a claim, and choose one you have some feeling about
+
+**Good hunting grounds, none of which this course has verified for you.**
+- **Your own town.** Did it have an urban renewal agency? What did it clear, when, and under which state statute? **Then ask where the practice came from, and test whatever answer you find.**
+- **A claim you have read.** Any sentence of the form "city A pioneered this and city B copied it." **Those sentences are everywhere and most of them have never been tested by the person repeating them.**
+- **A person.** Any planner, commissioner, consultant or judge who appears in two of these stories. **Person to place is the open category, and the most concrete win available.**
+- **A statute.** Did your state's redevelopment law arrive in 1945, like Indiana's, Pennsylvania's and the District's? **If it did, you have walked straight into this course's biggest unresolved question, and the legislative history is public.**
+- **An international claim.** The transmission of segregation and clearance practice between countries is real and heavily written about. **It is also the easiest place to overclaim**, so if you go there, hold the standard higher, not lower.
+
+**One rule about choosing.** **Pick a claim you would be sorry to lose.** Testing something you are indifferent to teaches you nothing about the discipline, because the discipline is entirely about what you do when the answer disappoints you.
+
+## Step 2 · Classify it before you test it
+
+**Write one sentence: "This is a claim of ___," using a category from lesson 2.** Source to use, model to copy, doctrine pair, person to place, instrument lineage, or thematic rhyme.
+
+**If you cannot decide which category it is, that is itself a finding**, and it usually means the claim is vaguer than it sounded. **Sharpen the claim until it fits one box, then test the sharpened version.**
+
+## Step 3 · Build the chronology before you write a sentence of prose
+
+**Three columns: date, event, source.** Both places in one table, in date order. **This is the outline of the piece, and it is where most claims die.**
+
+## Step 4 · Run all four questions, in writing, in order
+
+**Give each one its own short section with a heading, and answer it plainly.**
+1. **Chronology.** Does the proposed cause precede its effects?
+2. **Mechanism.** Which channel: money, law, paper, or people? **Name it or admit you cannot.**
+3. **Document.** A citation, a copied plan, a named person or a funding stream. **Say which record, held by whom, and whether you actually read it.**
+4. **Alternative cause.** What else explains this? **A shared upstream, parallel invention, or common professional training. Take the best alternative seriously and say why it does or does not beat your claim.**
+
+## Step 5 · Publish a verdict table
+
+**End with the same table lesson 3 gave you: which questions passed, which failed, and what you are therefore allowed to write.** **One row per question, one verdict line underneath.**
+
+## Rules you do not get to break
+
+1. **No invented detail.** Not a date, a name, a quotation, a figure or an address. **If a source does not say it, you do not write it.**
+2. **No invented or composite people.** Real, cited individuals only.
+3. **Give every figure its owner.** Not "displacement was 23,000" but "the local histories compiled by WETA's Boundary Stones put displacement from the Southwest renewal at about 23,000 residents."
+4. **Quote instruments exactly or not at all.** Statutes, manuals and opinions have real words. **Do not improve them, and do not attribute to a court a holding it did not reach.**
+5. **Use the word "rhyme" when it applies.** If the claim fails, say "this is a rhyme, not a link," in those words. **The vocabulary is the deliverable.**
+6. **Report the failure.** If your claim broke, the write-up says so, in the same voice it would have used to announce a success.
+7. **Name the record you did not read.** Every piece in this series ends by saying where the next researcher should go. **One paragraph, minimum, on what would settle the question and where it is held.**
+8. **Do not publish a private individual's name with their address**, whatever the record says. The parcel record is public; your write-up is a different act.
+
+## What good looks like
+
+**A short, checkable piece in which a real claim is taken seriously, tested in the open, and given a verdict that the reader can check line by line.** The best version of this assignment is usually **a claim that failed**, because a failed test that is honestly reported tells the next reader something nobody had written down.
+
+**The model is in this course.** Section 3 took the most attractive connection in the whole series, the one both prerequisite courses exist to support, ran four questions on it, and reported that it fails one. **That piece of writing is more useful than a confident version would have been, and it is more useful precisely because it disappointed its author.**
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Housing Act of 1949, Pub. L. No. 81-171, 63 Stat. 413 (1949). https://www.govinfo.gov/content/pkg/STATUTE-63/pdf/STATUTE-63-Pg413.pdf
+- Milliken v. Bradley, 418 U.S. 717 (1974). https://www.law.cornell.edu/supremecourt/text/418/717
+- Division of Rare and Manuscript Collections. (n.d.). *Guide to the Harland Bartholomew and Associates planning reports, 1944-1990* (Collection 6400). Cornell University Library. http://rmc.library.cornell.edu/EAD/htmldocs/RMM06400.html`,
+      recallContent: [
+        {
+          prompt: "Why is a common cause a problem for city-to-city claims, and for the upstream claim too?",
+          answer: "Because one hub reaching many places makes those places resemble each other, so every pair shows a correlation that is not evidence either influenced the other. The same caution applies to the upstream claim: both cities taking federal money and both clearing a district establishes that the money was there, not that it caused either clearance.",
+        },
+        {
+          prompt: "What is the 1945 cluster, and what does this course call it?",
+          answer: "Indiana's blight statute, Pennsylvania's Urban Redevelopment Law and the District of Columbia Redevelopment Act are all 1945, four years before the federal money. It could be a circulating model act or three independent responses to the same crisis. This course did not read the legislative histories, so it calls the cluster a rhyme and flags it as the most interesting unresolved question it found.",
+        },
+        {
+          prompt: "State the third limit and the danger attached to it.",
+          answer: "Available is not chosen. Title I money was open to every city and not every city cleared a Black district. The danger is that a structural explanation becomes a way of not naming anybody: a history in which the structure acts and no person does is an alibi, and the records refuse it, because they are full of named people voting on dated motions.",
+        },
+        {
+          prompt: "Name three things this course specifically does not establish.",
+          answer: "Any body's intent, since no commission's minutes have been read; that the 1956 Act directed any route through any neighbourhood; that Berman caused any clearance rather than securing it; a copy-chain out of Pittsburgh; any person-carried link; and what share of any city's outcome is federal, state or local.",
+        },
+        {
+          prompt: "What is the opposite error, and what is the standard?",
+          answer: "Refusing every claim is not rigour. Three horizontal edges survived every test, and the vertical lines are proven too. The standard is not \"nothing counts\" but \"say which kind, and show the paper.\"",
+        },
+      ],
+    },
+    {
+      slug: "htt-what-comes-next",
+      title: "22 · What survived, what was downgraded, and what is still open",
+      section: "Section 6 · What This Does Not Prove",
+      body: `**You now have the thing the individual city courses could not give you: a method for saying how they are related, and a vocabulary for saying when they are not.**
+
+## The verdicts, in one table
+
+| Proposed connection | Kind | Verdict |
+|---|---|---|
+| Berman to Indiana Avenue | Source to use | **Weakened.** Fails chronology. Berman insured the clearance rather than causing it |
+| Berman to New London and Honolulu | Source to use | **Survives.** Kelo and Midkiff cite Berman in writing |
+| Milliken to Indianapolis | Source to use | **Survives, strongest in the course.** The Seventh Circuit named it and reversed in accordance with it |
+| Milliken to Parents Involved | Doctrine pair | **Holds as a pair.** No citation chain verified, so no causal line is drawn |
+| Buchanan to Baltimore's ordinances | Source to use | **Survives.** A Louisville case made a Baltimore statute book unenforceable |
+| Zoning to covenants to redlining | Instrument lineage | **Downgraded.** Guilford's covenant is 1913, four years before Buchanan. A lineage of purpose, not a baton pass |
+| Pittsburgh to other cities | Model to copy | **Split.** True as to emulation of the partnership, false as to a copy-chain of clearance |
+| Bartholomew to Southwest DC | Person to place | **Fails.** The Area B plan was approved in 1952; he arrived in 1953 |
+| The three 1945 statutes | Unresolved | **Rhyme, flagged.** Could be a model act or convergence. Legislative histories unread |
+| Fort Harrison to Indiana Avenue | Thematic rhyme | **Rhyme, and useful.** Same government, different instruments, no shared tool |
+| The upstream to every city | Vertical | **Survives everywhere.** Funding streams and binding law, documented |
+
+**Read the shape of that column.** **One of the eight proposed horizontal connections survived intact in the form it was first stated.** That is the honest yield of a careful capstone, and it is a better result than eleven confident arrows would have been.
+
+## What you can do now that you could not before
+
+- **Grade a transmission claim in about an hour**, using a two-column date table and four questions, and know which of the six categories you are in.
+- **Say "rhyme" out loud** about a resemblance you find moving, without feeling that you have given anything up.
+- **Read a federal statute for its mechanism** rather than its rhetoric: who pays, on what condition, to whom, and what document it leaves.
+- **Spot a conditional grant**, which is the most common way an American practice spreads without anybody copying anybody.
+- **Tell a vertical connection from a horizontal one**, which is the single most useful distinction in this course and the one most often collapsed in public writing.
+- **Report your own weakened claim in the same voice you would have used for a strong one.**
+
+## What this course deliberately did not cover
+
+- **State redevelopment law**, which is a whole layer between the federal statutes and the local decision. **Three of these statutes are the same year and this course could not say why.** It is the largest gap here.
+- **The global lines.** The transmission of segregation and clearance practice between countries is real, documented and demanding, and it belongs to its own course rather than to a paragraph in this one.
+- **Quantities.** No share, proportion or attribution of outcome. **The instruments are named; the arithmetic is not attempted.**
+- **Intent.** No commission's minutes were read, so no claim about what anybody meant.
+- **The other Green Book cities.** Chicago, New Haven, St. Louis, Miami, New Orleans, Durham, Saint Paul and others appear as leads and not as courses. **Each would need the same treatment the twelve got.**
+
+## The unopened sources, which are the next real work
+
+**Named so that somebody can go.**
+- **The Harland Bartholomew and Associates planning reports**, Cornell University Library, collection 6400, covering twenty states plus the District of Columbia, including Indiana and Kentucky. **The person-to-place category could close here.**
+- **The Indianapolis Redevelopment Commission's minutes**, which would show whether any Indianapolis body ever cited *Berman*, and would close the one open question in Section 3.
+- **The legislative histories of the 1945 statutes** in Indiana, Pennsylvania and the District, which would tell you whether the cluster is a model act or convergence.
+- **Local urban renewal application files**, held in city and state archives, which contain the workable program each city submitted. **A workable program is a federal specification filled in by a named local official, which makes it one of the most direct pieces of transmission evidence anyone could read.**
+- **The Urban Redevelopment Authority of Pittsburgh's Lower Hill project files** and the Allegheny Conference records, which the Pittsburgh course also left unopened.
+
+**None of these has been read into this course.** They are public or requestable, and any one of them would let a reader move a verdict in the table above.
+
+## Where this sits, and what it asks of you
+
+**This is the last course in the route series and the only one with no ground under it.** The others put you on a corridor, in a trench, beside a district line or on a closed post. **This one puts you in front of a claim.**
+
+**The series began by teaching you to read a Green Book listing and follow one address forward. It ends by teaching you to read a sentence of causation and ask it for its papers.** **Those are the same skill at two scales**, and the second one is the more dangerous, because a claim about transmission is a claim about who is responsible.
+
+**So carry the vocabulary, and carry the caution with it. Name the upstream. Then go and find who chose.**
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26
+- Buchanan v. Warley, 245 U.S. 60 (1917). https://supreme.justia.com/cases/federal/us/245/60/
+- Division of Rare and Manuscript Collections. (n.d.). *Guide to the Harland Bartholomew and Associates planning reports, 1944-1990* (Collection 6400). Cornell University Library. http://rmc.library.cornell.edu/EAD/htmldocs/RMM06400.html
+- Housing Act of 1949, Pub. L. No. 81-171, 63 Stat. 413 (1949). https://www.govinfo.gov/content/pkg/STATUTE-63/pdf/STATUTE-63-Pg413.pdf
+- Milliken v. Bradley, 418 U.S. 717 (1974). https://www.law.cornell.edu/supremecourt/text/418/717`,
+      recallContent: [
+        {
+          prompt: "What does the assignment ask you to produce, and how long?",
+          answer: "A test in writing of one proposed connection between two places, 800 to 1,200 words, against the taxonomy and the four questions, ending in a published verdict even if it is not the one you wanted.",
+        },
+        {
+          prompt: "Why does the assignment say to pick a claim you would be sorry to lose?",
+          answer: "Because testing something you are indifferent to teaches nothing about the discipline, which is entirely about what you do when the answer disappoints you.",
+        },
+        {
+          prompt: "What must you do before testing a claim, and what does difficulty there tell you?",
+          answer: "Classify it: write one sentence naming which of the six categories it is. If you cannot decide, the claim is vaguer than it sounded, and you should sharpen it until it fits one box and then test the sharpened version.",
+        },
+        {
+          prompt: "What are the three columns of the chronology table, and why build it first?",
+          answer: "Date, event, source, with both places in one table in date order. It is the outline of the piece, and it is where most claims die.",
+        },
+        {
+          prompt: "Name three of the rules the assignment does not let you break.",
+          answer: "No invented detail; no invented or composite people; give every figure its owner; quote instruments exactly or not at all; use the word rhyme when it applies; report the failure in the same voice you would announce a success; name the record you did not read; and do not publish a private individual's name with their address.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
