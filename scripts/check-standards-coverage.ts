@@ -47,6 +47,7 @@ const BACKLOG: Record<string, string> = {
   // History and culture courses that predate the standards work.
   "where-we-rested": "positive track, unmapped; property/civics content when mapped",
   "the-schoolhouse-network": "positive track, unmapped; strong civics/economics content when mapped",
+  "what-they-built": "positive track, unmapped; the strongest ECONOMICS mapping candidate in the catalogue",
   "great-migration-and-the-world": "unmapped",
   "africa-before-colonization": "unmapped",
   "asia-before-european-colonization": "unmapped",
