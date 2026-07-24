@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { requirePlatformOwner } from "@/lib/session";
@@ -34,6 +35,7 @@ export const metadata: Metadata = { title: "Future classes & features" };
 // Notes written offline don't vanish: the form queues them (src/lib/offline-outbox.ts) and they're
 // sent as soon as there's a connection.
 const statusClass: Record<FutureWorkStatus, string> = {
+  shipped: "bg-emerald-100 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-100",
   proposed: "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300",
   recommended: "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300",
   researching: "bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-300",
@@ -138,6 +140,18 @@ export default async function FutureWorkPage() {
                           </span>
                         </div>
                         <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{item.summary}</p>
+                        {/* A shipped proposal links to what it produced, so built work stops appearing in the
+                            queue as an open idea. One proposal can produce several courses. */}
+                        {item.courseSlugs && item.courseSlugs.length > 0 ? (
+                          <p className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+                            <span className="text-neutral-500">Built:</span>
+                            {item.courseSlugs.map((slug) => (
+                              <Link key={slug} href={`/bam/${slug}`} className="underline underline-offset-2" style={{ color: "var(--accent)" }}>
+                                {slug}
+                              </Link>
+                            ))}
+                          </p>
+                        ) : null}
 
                         <details className="group mt-3">
                           <summary className="inline-flex min-h-11 cursor-pointer items-center text-sm underline pointer-coarse:min-h-12" style={{ color: "var(--accent)" }}>

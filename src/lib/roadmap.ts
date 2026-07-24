@@ -460,6 +460,37 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   became the documented mechanism of licensing and entry approval. Course 4 refused "where the tax base
   went" for lack of a longitudinal study. Course 5 declined to resolve Harrison into a hero. Where
   accounts disagree, these courses teach the disagreement.
+- ✅ **The route series is complete: 14 courses, plus a positive track of 3**
+  (\`bundle/route-series-complete\`). Five more metros joined the Indianapolis cluster,
+  **Washington DC** (where the instrument was blessed), **Philadelphia** (the university and the
+  block), **Pittsburgh** (where the playbook was written), **Baltimore** (the whole chain, 1910
+  ordinance → covenant → redlining → renewal) and **Seattle** (the modern bookend), and **two
+  capstones** close it: *How the Tools Travelled* tests the cross-city connections as claims rather
+  than asserting them, and *Exported* asks what South Africa and Nazi Germany actually read of
+  American race law, keeping those two on **separate evidentiary footings** and stating in its own
+  text that it does not equate outcomes.
+  **Then the shape problem got fixed.** Fourteen courses on clearance and exclusion can leave a
+  learner concluding this history is only things done to people, which is false, and no amount of
+  upbeat sentences inside those courses fixes it, because the argument is made by the CATALOGUE.
+  So a second track runs beside it (\`plans/44\`): **The Schoolhouse Network** (the Rosenwald
+  school-building program, where the finding is that communities contributed **more** than the Fund,
+  16.5 vs 15.1 percent, which reframes a story usually told as philanthropy), **Where We Rested**
+  (Black resort and beach communities as going concerns, establishing that Bruce's Beach returned
+  **two lots and not the park**, that four other Black families in Block 12 got nothing, and that the
+  land was sold back within about seven months), and **What They Built** (five business districts read
+  as firms, out of charters and insurance filings, around the question nobody teaches: how do you
+  capitalise a district when banks will not lend to you).
+  **The governing rule is stated inside each course and enforced structurally:** never use a positive
+  to soften a negative. The claim is **co-occurrence**, not balance, and it does not net out.
+  Schoolhouse classifies every row of its co-occurrence table as causal, responsive or
+  simultaneous-only and says Tulsa is simultaneous-only and must not be upgraded. Where We Rested
+  ships a banned-sentence table ("but it wasn't all bad") and refuses the "civil rights hurt Black
+  business" reading, naming the confounders instead. What They Built puts internal failures (the True
+  Reformers embezzlement, Binga's charge) in the **achievement** column where they belong, and teaches
+  no instruments of clearance at all, because the route series owns those.
+  These courses also **cut** load-bearing claims rather than repeat them: Rosenwald's ubiquitous
+  "$18.1 million in public funds" and Greenwood's "a dollar circulated 19 times", both cut on method,
+  the second turned into the worked example of a claim to refuse. **Re-run \`pnpm seed:courses\`.**
 - ✅ **Quiz answer positions are balanced, and guarded** (\`fix/quiz-answer-balance\`). A catalogue-wide
   audit found **118 quiz banks** where more than 60 percent of correct answers sat at one option index
   with no shuffling, roughly 1,250 questions a learner could pass by always picking the same letter.

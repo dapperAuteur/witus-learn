@@ -112,6 +112,9 @@ import { BALTIMORE_CHAIN_COURSE } from "./data/baltimore-chain-course";
 import { PITTSBURGH_PLAYBOOK_COURSE } from "./data/pittsburgh-playbook-course";
 import { HOW_THE_TOOLS_TRAVELLED_COURSE } from "./data/how-the-tools-travelled-course";
 import { JIM_CROW_EXPORT_COURSE } from "./data/jim-crow-export-course";
+import { SCHOOLHOUSE_NETWORK_COURSE } from "./data/schoolhouse-network-course";
+import { WHERE_WE_RESTED_COURSE } from "./data/where-we-rested-course";
+import { WHAT_THEY_BUILT_COURSE } from "./data/what-they-built-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
@@ -725,6 +728,26 @@ async function main() {
     { slug: "seattle-the-modern-bookend", course: SEATTLE_BOOKEND_COURSE, category: "Culture & History" },
     { slug: "baltimore-the-whole-chain", course: BALTIMORE_CHAIN_COURSE, category: "Culture & History" },
     { slug: "pittsburgh-where-the-playbook-was-written", course: PITTSBURGH_PLAYBOOK_COURSE, category: "Culture & History" },
+    // The two capstones. "How the Tools Travelled" (plans/42) turns the city courses into one
+    // argument: a shared, largely federal toolkit applied locally, with every proposed connection
+    // TESTED rather than asserted. "Exported" (plans/43) carries the question abroad; it is the most
+    // sensitive course here, keeps the Germany and South Africa claims on separate evidentiary
+    // footings, and states in its own text that it does not equate outcomes.
+    { slug: "how-the-tools-travelled", course: HOW_THE_TOOLS_TRAVELLED_COURSE, category: "Culture & History" },
+    { slug: "exported-how-others-studied-american-race-law", course: JIM_CROW_EXPORT_COURSE, category: "Culture & History" },
+    // The POSITIVE track (plans/44 Part 1). The catalogue teaches clearance and exclusion across
+    // sixteen courses; its SHAPE could leave a learner thinking this history is only things done
+    // to people. These teach what was built, on its own terms. Governing rule, stated in each
+    // course: never use a positive to soften a negative. The claim is co-occurrence, not balance.
+    { slug: "the-schoolhouse-network", course: SCHOOLHOUSE_NETWORK_COURSE, category: "Culture & History" },
+    { slug: "where-we-rested", course: WHERE_WE_RESTED_COURSE, category: "Culture & History" },
+    // "What They Built" is the track's economics course: five districts read as firms, out of
+    // charters, insurance filings and city directories, around the question nobody teaches — how do
+    // you capitalise a business district when banks will not lend to you? It enforces the rule
+    // structurally rather than tonally: lesson 17 is a two-column calendar, and internal failures
+    // (the True Reformers embezzlement, Binga's charge) sit in the achievement column where they
+    // belong. It deliberately teaches NO instruments of clearance; the route series owns those.
+    { slug: "what-they-built", course: WHAT_THEY_BUILT_COURSE, category: "Culture & History" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

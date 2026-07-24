@@ -18,6 +18,7 @@ import { SHE_DID_THE_WORK_PROPOSAL, SHE_DID_THE_WORK_SUBJECTS } from "@/lib/futu
 export type FutureWorkKind = "course" | "feature";
 
 export type FutureWorkStatus =
+  | "shipped"
   | "proposed"
   | "recommended"
   | "researching"
@@ -27,6 +28,7 @@ export type FutureWorkStatus =
   | "cut";
 
 export const FUTURE_WORK_STATUS_LABEL: Record<FutureWorkStatus, string> = {
+  shipped: "Shipped, course is live",
   proposed: "Proposed",
   recommended: "Recommended, carries a course",
   researching: "Researching",
@@ -50,6 +52,10 @@ export interface FutureWorkItem {
   body: string;
   /** The local planning file this was generated from (gitignored; not read at runtime). */
   provenance: string;
+  /** When this proposal has actually been BUILT: the live course slug(s) it produced. Rendered on
+   *  /admin/future as a link, so a shipped idea stops looking like an open one. A proposal can
+   *  produce several courses (metro-paths produced five), hence an array. */
+  courseSlugs?: string[];
 }
 
 // The proposal's own judgment about who carries a course alone, who is a chapter in someone else's,
@@ -104,18 +110,53 @@ const SHE_DID_THE_WORK: FutureWorkItem[] = [
  */
 const PROPOSAL_META: Record<
   string,
-  { group?: string; status?: FutureWorkStatus; kind?: FutureWorkKind; key?: string }
+  { group?: string; status?: FutureWorkStatus; kind?: FutureWorkKind; key?: string; courseSlugs?: string[] }
 > = {
+  // SHIPPED. These proposals have been built and the courses are live, so they render with a link
+  // instead of sitting in the queue looking like open work. Slugs must match scripts/seed-courses.ts.
+  "green-book": { status: "shipped", courseSlugs: ["green-book-how-to-read-a-route"] },
+  "cross-city-connections": { status: "shipped", courseSlugs: ["how-the-tools-travelled"] },
+  "jim-crow-export": { status: "shipped", courseSlugs: ["exported-how-others-studied-american-race-law"] },
+  "metro-paths": {
+    status: "shipped",
+    courseSlugs: [
+      "dc-where-the-instrument-was-blessed",
+      "philadelphia-the-university-and-the-block",
+      "seattle-the-modern-bookend",
+      "baltimore-the-whole-chain",
+      "pittsburgh-where-the-playbook-was-written",
+    ],
+  },
+  // The positive track. Part 1 of the parallel-history note is built; its timeline half is not, so
+  // `visual-timelines` deliberately stays open below rather than riding this one to "shipped".
+  "parallel-history": {
+    status: "shipped",
+    courseSlugs: ["the-schoolhouse-network", "where-we-rested", "what-they-built"],
+  },
+  "training-the-colonizer": { status: "shipped", courseSlugs: ["training-the-colonizer"] },
+  "pan-africanism-track-proposal": { status: "shipped", courseSlugs: ["pan-africanism"] },
+  "afrocentricity-track-proposal": { status: "shipped", courseSlugs: ["afrocentricity"] },
+  "africa-precolonial-track-proposal": { status: "shipped", courseSlugs: ["africa-before-colonization"] },
+  "precolonial-asia-track-proposal": { status: "shipped", courseSlugs: ["asia-before-european-colonization"] },
+  "precolumbian-mesoamerica-track-proposal": { status: "shipped", courseSlugs: ["precolumbian-mesoamerica"] },
+
   // `key` overrides exist ONLY to preserve keys that predate auto-discovery. `item_key` is the join
   // column for `future_work_notes` — renaming a key silently orphans every note filed against it.
   // Never change an existing key; add an override instead.
   "civics-more-proposal": { key: "civics-more", group: "Civics" },
   "travel-abroad-proposal": { key: "travel-abroad", group: "Travel & Living Abroad", status: "building" },
-  "history-of-unions": { group: "Workers' Rights", status: "building" },
-  "workers-rights-track-proposal": { group: "Workers' Rights" },
+  "history-of-unions": { group: "Workers' Rights", status: "shipped", courseSlugs: ["history-of-unions"] },
+  "workers-rights-track-proposal": { group: "Workers' Rights", status: "shipped", courseSlugs: ["know-your-rights-at-work", "history-of-unions"] },
   // Dropped in while the union work was building — and picked up with no code change, which is the
   // whole point of auto-discovery. Under the old hardcoded generator it would have been invisible.
   world: { group: "World History" },
+  // The two STRUCTURAL paths (plans/46). Grouped together because they are one idea: each is the
+  // general theory of a case the catalogue already teaches. Government forms generalise the route
+  // series (every course there turns on "which body had the power, and where did it come from");
+  // business forms generalise What They Built (fraternal orders and building-and-loans were entity
+  // choices, not colour). Both are `recommended` rather than `proposed` for that reason.
+  "types-of-government-path": { group: "Structures", status: "recommended" },
+  "types-of-business-path": { group: "Structures", status: "recommended" },
   // Not course proposals — a live sales asset and the market research behind it. They're `feature`
   // so they don't clutter the course list, but they stay visible: BAM asked for one place for
   // "this type of stuff", and pricing is exactly the kind of thing that goes stale unseen.

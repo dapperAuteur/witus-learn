@@ -474,6 +474,80 @@ causation and must be sourced to that standard. Full plan: plans/42-cross-city-c
     provenance: "plans/future-courses/cross-city-connections.md",
   },
   {
+    key: "explore-map-and-entities",
+    title: "The explore surface: a course map, a timeline panel, and cross-course entities",
+    summary: "Three asks answered as one surface, because all three let a learner ask a question the app cannot",
+    body: `# The explore surface: a course map, a timeline panel, and cross-course entities
+
+Three asks answered as one surface, because all three let a learner ask a question the app cannot
+answer today: show me how this all connects. Seventeen courses now share people, statutes and places,
+and the only way to discover that is to take all of them.
+
+THE MAP. Reuse the existing map lesson renderer (Natural Earth projection, markers with lat/lng plus
+lines and polygons) rather than building anything new. The one missing piece is that courses have no
+coordinates: add a course_places table (course_id, lat, lng, label, role) rather than lat/lng columns
+on courses, because a course is often about several places and one point would lie. Most route-series
+courses already have a map lesson whose markers ARE those coordinates, so the data largely exists and
+simply is not queryable. The category/track toggle should be a lens, not a filter: by category colours
+pins by subject; by track colours by learning path AND DRAWS THE PATH ORDER AS CONNECTING LINES, which
+is where the map earns its keep, since a path is inherently a route and nobody has drawn one yet.
+Wanderlearn destination pins are a third, independent layer; getting that list is the one external
+dependency, the same blocker as the outstanding tour URLs.
+
+THE TIMELINE PANEL, three ideas, refined now that it must sit beside the map so the two drive each
+other. (1) A brushed timeline: drag a range and the pins filter, with two stacked bands, what was
+built above and what was done below. It answers the parallel-history problem and the diffusion
+question with one control. Largest cost, biggest payoff. (2) An event rail: a scrollable dated list
+beside the map, hover to highlight a pin. Mostly layout over existing data; the right first shipment.
+(3) An era stepper: named periods as tabs that re-centre the map. Most teachable for a classroom and
+it forces a useful editorial decision about periodisation. Ship 2, then 1, then 3.
+
+CROSS-COURSE ENTITIES, the most valuable idea here. Berman v. Parker appears in the DC course, the
+capstone, and by implication in Indiana Avenue; Milliken runs through three courses; the Housing Act
+of 1949 sits under half the catalogue, and none of it is visible. Model it as entities (person, case,
+law, place, event, organization) joined to courses and lessons. Surface it as an entity page listing
+every course that touches it, as its own result type in search, as a quiet "also discussed in" line on
+lesson pages, and as an entity index at /teach so a teacher can ask what else covers the same case.
+Populate it by extracting from the Sources blocks the courses already carry plus an author-declared
+field going forward, NOT by hand-tagging seventeen courses. The capstone's connection graph is
+already a hand-built entity map to seed from.
+
+Every new table is tenant-scoped and by-id reads 404 across tenants. No entity page ships without its
+citations. Full plan: plans/45-explore-map-timeline-and-entities.md.
+
+DECIDED 2026-07-24: build all three timeline ideas, plus a rotating globe. Both asks have better
+answers than building three separate things.
+
+THE GLOBE IS A PROJECTION SWAP, not a new component. Verified against installed packages rather than
+assumed: d3-geo 3.1.1 is already a dependency and exports geoOrthographic with .rotate(), geoPath is
+projection-agnostic so the existing renderer draws a globe by changing one line, and geoDistance,
+geoCircle and geoGraticule are all present, which covers the sphere outline, the graticule, and the
+test for culling pins on the far side. world-atlas topojson is already loaded. No new dependency.
+MapLessonContent gains a projection prop; flat Natural Earth stays the default for LESSON maps, where
+a static printable image is right, and the globe is for the explore page where exploring is the point.
+Drag rotates, wheel zooms, and it all runs on data already in the browser so it still works offline.
+
+Accessibility is the real cost and is not optional: a flat-view toggle, keyboard rotation and zoom,
+and the pin list rendered as real text beside the globe. That text list is also the no-JS and offline
+fallback, and it doubles as the event rail.
+
+Zoom should control pin DENSITY, not dot size: far out, one pin per place cluster with a count; mid,
+one pin per course primary place; close in, every place a course touches plus tour pins. That is why
+course_places carries a role: it is the level-of-detail key.
+
+ALL THREE TIMELINES WITHOUT CLUTTER, because they are ONE control at three zooms, mirroring what zoom
+does to the map. Era stepper is the coarse grip (continent view), the brushed range is the medium grip
+(country view), the event rail is the fine grip (street view). They compose: clicking an era sets the
+brush, the brush filters the rail, the rail highlights pins. One instrument, three grips, not three
+features. The app then has ONE mental model on both axes: zoom out for the shape, zoom in for the
+detail. Space is the globe, time is the panel, and learning one teaches the other.
+
+Progressive disclosure keeps it calm: default is globe at continent zoom, era chips, collapsed rail,
+so only two controls are visible. Zooming or clicking an era densifies pins and fills the rail.
+Expanding the rail reveals the brush. The brush is never the first thing a newcomer meets.`,
+    provenance: "plans/future-courses/explore-map-and-entities.md",
+  },
+  {
     key: "green-book",
     title: "Green book",
     summary: "Green Book",
@@ -2099,6 +2173,145 @@ USCIS, SSA), all stressing "verify current rules/fees at the official source" si
 The tax/legal/immigration courses must be firmly framed as **educational, not professional advice**
 (the new site-wide disclaimer already covers this) and point to IRS/USCIS/a licensed professional.`,
     provenance: "plans/future-courses/travel-abroad-proposal.md",
+  },
+  {
+    key: "types-of-business-path",
+    title: "How a Business Is Formed: a path on entity types, US and worldwide",
+    summary: "A seven-course path on business forms: sole proprietorships and partnerships, the LLC, C-corps and",
+    body: `# How a Business Is Formed: a path on entity types, US and worldwide
+
+A seven-course path on business forms: sole proprietorships and partnerships, the LLC, C-corps and
+the S-corp election, nonprofits, benefit corporations, cooperatives, and how other countries form
+businesses. Series slug proposal: \`business-forms\`.
+
+The hook is that the catalogue already taught this once, as a case study. What They Built teaches that
+Black communities excluded from banks financed themselves through fraternal orders, industrial
+insurance companies and building and loan associations. Those are not colour in the story. They are
+entity types, chosen because of what the law let each one do. This path is the general theory of which
+that course is the worked example, which means a learner finishing What They Built has somewhere
+specific to go next.
+
+The organising idea is that an entity is a bundle of four decisions: liability, taxation, ownership
+and transfer, and governance. Every form on earth is a different answer to those four, so a learner
+who holds the four questions can read a form they have never seen, including a foreign one.
+
+The seven courses. 1, What a Business Entity Actually Is, the method course: the four decisions, and
+reading formation documents as primary sources, articles, operating agreement, bylaws, the state's own
+filing portal. 2, The US Forms: sole proprietorship, general and limited partnership, LLP, LLC, C-corp,
+and the S-corp, which is a tax election and not an entity type at all, the single most common
+misunderstanding in the subject and worth a full lesson. Also 501(c)(3) versus (c)(4) versus (c)(6),
+and benefit corporation, a legal form, versus Certified B Corp, a private certification, two different
+things that most content blurs. 3, Cooperatives: worker, consumer, producer, housing and purchasing,
+the Rochdale Principles, Mondragon, the rural electric co-ops that are the reason much of rural
+America has power, and credit unions, the co-op most Americans belong to without knowing it. 4,
+Financing Without Access, the bridge course, historical and global at once: fraternal benefit
+societies, industrial and burial insurance, building and loan associations, rotating savings and
+credit associations worldwide including susu, tanda, chit fund and tontine, and Islamic finance
+structures where interest is prohibited. The through-line is that when the capital system excludes
+you, you invent an entity. 5, How Other Countries Form Businesses: the UK's Ltd, PLC and community
+interest company; Germany's GmbH and AG and its mandatory worker representation on supervisory boards,
+which connects straight to the unions track; France's SARL and SAS; Japan's KK; Nordic co-op density;
+China's state-owned enterprises and the VIE structure; India's private limited and Section 8 company.
+The point is that the American set is not universal and the differences are policy choices with
+consequences. 6, Governance, or Who Actually Decides: boards, shareholders versus stakeholders,
+fiduciary duty, dual-class shares, the German two-tier board, and the difference that defines
+cooperatives, one share one vote versus one member one vote. 7, the capstone, Choose a Form and
+Defend It, against the four decisions and against a named alternative.
+
+The path says plainly and repeatedly that it is not legal advice. It teaches you what to ask a lawyer.
+No legal or tax value is asserted from memory: statutes, filings and agency pages, or nothing.
+
+Maps and timelines. The timeline here is the best hook in either structural path, because limited
+liability was invented, and recently. The beats, all to be verified and dated precisely before
+authoring: chartered trading companies, the Rochdale Pioneers in 1844, the UK Limited Liability Act in
+1855, the S-corp election in 1958, Wyoming's LLC statute in 1977 and the IRS rulings that made it
+usable, the check-the-box regulations in 1997, and benefit corporation statutes from 2010 onward. The
+line that lands with a teenager is that the LLC, the default form for a new American small business, is
+younger than the Rubik's Cube, which reframes business structure from natural law to recent and
+revisable policy. This needs only the cheapest timeline option, a markdown block, so the path is not
+blocked on engineering. The two-band timeline device is also a direct fit for course 4: forms available
+to everyone on the top band, forms Black communities used because banks would not lend on the bottom,
+one shared axis. The rule from the positive track still binds there: co-occurrence is the claim,
+balance is not. For maps, the path wants a choropleth of entity availability, where a co-op has
+statutory recognition, where codetermination is mandatory, where the LLC has a functional equivalent,
+plus a point map of the historical institutions in course 4 that can reuse What They Built's markers.
+
+Suggested build order across both structural paths: this path's courses 1 and 4 first, because they
+have a live hook and need no new engineering, then the government path's method and local-government
+courses, then the polygon map layer once two courses are waiting to use it.
+
+Full plan, including the government-forms path it pairs with: \`plans/46\`.`,
+    provenance: "plans/future-courses/types-of-business-path.md",
+  },
+  {
+    key: "types-of-government-path",
+    title: "Who Has the Power? A path on how governments are formed, from the block to the globe",
+    summary: "A nine-course path on the forms of government at every level: countries, regions and states, cities",
+    body: `# Who Has the Power? A path on how governments are formed, from the block to the globe
+
+A nine-course path on the forms of government at every level: countries, regions and states, cities
+and towns, tribal nations, and self-governing communities, plus how other countries constitute
+themselves. Series slug proposal: \`power-structures\`.
+
+This is not a generic civics unit. It is the general theory of which the route series is fourteen
+worked examples. Every one of those courses turns on finding the instrument, a 1910 ordinance, a
+blight designation, a school-district line, an annexation, and every one of those is a question about
+which body had the power to do that and where the power came from. A learner who holds the general
+rule can transfer what those courses taught to a place the courses never covered. So every general
+rule in this path is introduced from a case already in the catalogue, generalised, then tested
+somewhere new.
+
+The organising idea is the vertical stack of authority, and the fact most adults get wrong: in the
+United States, cities are creatures of the state. Dillon's Rule versus home rule explains why a city
+could pass a segregation ordinance in 1910 and why state preemption kills local ordinances today, and
+almost no civics course teaches it. The second thing generic civics gets wrong is bigger: tribal
+nations are not a rung on that ladder at all. They are a separate sovereign, with a
+government-to-government relationship to the federal government and sovereignty that predates the
+United States rather than being delegated by it.
+
+The nine courses. 1, Who Has the Power to Do This, the method course: given any government action,
+find the body, its enabling authority, the document that grants it, and who can overturn it. 2, Forms
+of Government, Honestly: classification as a contested exercise rather than a vocabulary quiz, taught
+through the fact that V-Dem, Freedom House, the EIU Democracy Index and Polity rank the same
+countries differently on published methodologies. 3, How Countries Constitute Themselves: presidential
+versus parliamentary versus semi-presidential, written versus uncodified constitutions, federal
+versus unitary, and how constitutions actually get made, by constituent assembly, negotiated
+transition or imposition after defeat. 4, The Middle Layer: federalism versus devolution is the whole
+lesson, because a US state's powers are constitutionally entrenched while Scotland's come from an Act
+of Parliament. 5, The Local Layer: Dillon's Rule and home rule, council-manager versus strong mayor,
+town meeting, Unigov as the case study already taught in the Indianapolis cluster, and special
+districts, which outnumber municipalities in the United States and whose elections nearly nobody
+votes in. 6, Tribal Nations and Indigenous Governance, its own course rather than a lesson. 7,
+Governments Without States: the EU, the UN and AU, unrecognised states, and self-governing
+communities including HOAs, housing co-ops, unions and mutual aid networks. 8, How Power Changes
+Hands: election systems as machines that produce different results from identical votes, then coups,
+revolutions, negotiated transitions and term limits. 9, the capstone, Map Your Own Stack, in which the
+learner documents every government with authority over the block they live on, from the primary
+record. Most people find six to twelve and are surprised by half.
+
+Course 6 carries the restraint rule the lacrosse course used and got right: teach that traditional
+governance exists, whose it is and why it matters, then stop, reproducing no ceremonial procedure or
+restricted internal detail, and telling the learner the silence is deliberate. Lead with nations' own
+words and with Indigenous scholarship. Treat the several hundred federally recognised tribes as
+several hundred distinct governments, not one.
+
+Maps and timelines. This path is the first content in the catalogue that genuinely needs a polygon
+map layer rather than more pins, because a form of government is an area and not a dot. The raw
+material is already installed: the world-atlas topojson ships country, US state and US county
+polygons, so a choropleth is a renderer change rather than a new dependency. The payoff is that the
+map becomes the argument. The rotating-globe idea of zoom controlling density maps exactly onto the
+vertical stack: zoomed out, countries filled by form; zoom in, states and provinces; zoom in further,
+municipalities and then the special districts almost nobody can see. Tribal nations need a separate,
+differently styled polygon layer, including current reservations, the McGirt boundaries in eastern
+Oklahoma, and Alaska Native corporation regions, which are corporate rather than reservations.
+Rendering them as one more shade of the same ladder would be a factual error, not a style choice. For
+timelines, this path is a diffusion story and wants the map time-slider option: put an adoption year
+on each country and watch constitutional adoption sweep the twentieth century in waves,
+decolonisation and then the post-Soviet transitions. That is mechanically the same slider the
+cross-city-connections capstone wants, so one component serves two series.
+
+Full plan, including the business-forms path it pairs with: \`plans/46\`.`,
+    provenance: "plans/future-courses/types-of-government-path.md",
   },
   {
     key: "visual-timelines",

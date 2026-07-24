@@ -344,3 +344,40 @@ export function toPlainText(groups: ScopedFramework[], brand: string): string {
   }
   return lines.join("\n");
 }
+
+/**
+ * The standards a single course meets, grouped by jurisdiction, for display ON the course page.
+ *
+ * Educators shop on standards coverage, so a course that meets 40 standards across 12 states should
+ * say so where the course is, not only on a separate standards page they have to know exists. This
+ * returns just enough for a compact, collapsible summary: which jurisdictions, how many standards in
+ * each, and the total. The full detail stays at /academic-standards?course=<slug>, which this links
+ * to, so the course page stays clean.
+ *
+ * Returns an empty array for an unmapped course, and the caller renders nothing. Never invent a
+ * claim: an unmapped course showing "0 standards" would be worse than showing nothing, because it
+ * reads as "meets none" when it means "not analysed yet". See scripts/check-standards-coverage.ts,
+ * which is the guard that keeps that backlog visible.
+ */
+export function standardsForCourse(courseSlug: string): {
+  jurisdictions: { state: StateCode; jurisdiction: string; count: number }[];
+  total: number;
+} {
+  const byState = new Map<StateCode, { jurisdiction: string; count: number }>();
+  const frameworkById = new Map(FRAMEWORKS.map((f) => [f.id, f]));
+
+  for (const a of ALIGNMENTS) {
+    if (!a.courseSlugs.includes(courseSlug)) continue;
+    const f = frameworkById.get(a.frameworkId);
+    if (!f) continue;
+    const cur = byState.get(f.state);
+    if (cur) cur.count += 1;
+    else byState.set(f.state, { jurisdiction: f.jurisdiction, count: 1 });
+  }
+
+  const jurisdictions = [...byState.entries()]
+    .map(([state, v]) => ({ state, jurisdiction: v.jurisdiction, count: v.count }))
+    .sort((a, b) => b.count - a.count || a.jurisdiction.localeCompare(b.jurisdiction));
+
+  return { jurisdictions, total: jurisdictions.reduce((n, j) => n + j.count, 0) };
+}
