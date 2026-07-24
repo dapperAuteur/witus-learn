@@ -501,6 +501,469 @@ Put those two paragraphs side by side, because the distance between them is the 
         },
       ],
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Powers  (beat 3: the instruments. the load-bearing section of this course)
+    //
+    // This section carries the argument the whole course was built to make. Where the Indiana
+    // Avenue course named five instruments and stopped, this one adds a sixth kind of claim: the
+    // EXPORT of the model. Lesson 11 states the "playbook" thesis in its strongest sourceable form,
+    // and lesson 12 tests it against a chronology and a mechanism and WEAKENS it on purpose, then
+    // closes on the rare double absence (the arena that replaced the neighbourhood was itself
+    // demolished, September 2011 to March 2012). The verdict is reported, not hidden.
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "pgh-powers-law-and-authority",
+      title: "8 · Instrument one: the law, and the authority it creates",
+      section: "Section 3 · Powers",
+      body: `**This is the section the whole course exists for.** Everything before it establishes what the Hill was and what replaced it. Everything after it asks what happens next. This section teaches the tools, because **a neighbourhood does not vanish, it is removed by somebody with an instrument.** Learn the instruments and you can read any American city.
+
+**An instrument, in this course, is a specific legal power, exercised by a specific body, under a specific statute, leaving a specific document.** That last clause is what turns history into research: if a power was exercised, a record exists, and the record has a name. This is the same definition the Indiana Avenue course used, and it is the same all the way down.
+
+**Instrument one is the enabling law, and the authority it brings into being.** Before a government can clear an area, somebody has to write the power into law and create a body to hold it. **Pittsburgh's distinctive contribution is that it wrote that law and built that body early, and visibly, and this is the seed of the claim in this course's title.**
+
+**The law.** The **Pennsylvania Urban Redevelopment Law**, the Act of May 24, 1945, authorised municipalities to create public bodies called **Redevelopment Authorities** to eliminate areas found to be "blighted" and to plan and contract with private, corporate or governmental redevelopers to rebuild them (Urban Redevelopment Authority of Pittsburgh, n.d.-a). Read what that sentence does: **it creates a new kind of legal person with powers no ordinary city department has, to designate, acquire, clear, and hand cleared land to a developer.**
+
+**The body.** The **Urban Redevelopment Authority of Pittsburgh (URA)** was incorporated on **November 18, 1946**, described by the URA itself as "one of the first redevelopment authorities in Pennsylvania" (Urban Redevelopment Authority of Pittsburgh, n.d.-a). **Note the exact claim, and do not inflate it.** The URA's own history says "one of the first in Pennsylvania," not "the first in the nation." When you repeat an institution's claim about itself, repeat the version the institution actually makes.
+
+**The partnership that ran it.** The URA did not operate alone. The **Allegheny Conference on Community Development**, an organisation of Pittsburgh business leaders formed in **1944** and associated above all with the financier **Richard King Mellon**, worked with city hall under Mayor **David L. Lawrence**, who was elected in **1945**, to direct the city's postwar rebuilding (Neumann, 2016). Business elites and elected officials, pulling together: **that pairing is the machine, and lesson 10 takes it apart.**
+
+**The first thing the machine built.** The URA's first major project was **Gateway Center**, described by the URA as "the first privately financed downtown redevelopment project in the United States" (Urban Redevelopment Authority of Pittsburgh, n.d.-a). Hold onto Gateway Center. It is downtown, not the Hill, and it is the project outsiders came to admire. **The Lower Hill was the same machine's second and larger job, and almost nobody came to admire that.**
+
+**The transferable skill, stated plainly.** Every clearance in America has an enabling law and an authority. When you research one, find two things first:
+1. **The statute:** its year and its name. In Indiana it was the General Assembly's blight machinery from 1945. In Pennsylvania it was the Urban Redevelopment Law of 1945. **Two states, the same year, which is a clue lesson 12 will need.**
+2. **The authority:** its name and its incorporation date. In Indianapolis it was the Redevelopment Commission. In Pittsburgh it was the URA, incorporated November 18, 1946. **A body that can be named can be researched: it kept minutes, it holds project files, and both are public.**
+
+**One honest note to carry into the rest of the section.** Pittsburgh assembled this apparatus **before** the federal government built the national urban-renewal program, the **Housing Act of 1949**, which the next lessons will show was the machine that actually spread clearance across the country. **That earliness is real, and it is the strongest fact behind this course's title. It is also not the same as "every other city copied Pittsburgh," and keeping those two apart is the work of lesson 12.**
+
+## Sources
+- Neumann, T. (2016, February 1). *The "spiritual capital" of the Rust Belt: Pittsburgh and the postindustrial transformation of North Atlantic cities*. Global Urban History. https://globalurbanhistory.com/2016/02/01/the-spiritual-capital-of-the-rust-belt-pittsburgh-and-the-postindustrial-transformation-of-north-atlantic-cities/
+- Urban Redevelopment Authority of Pittsburgh. (n.d.-a). *History of the Urban Redevelopment Authority of Pittsburgh (URA)*. https://www.ura.org/pages/history-of-the-urban-redevelopment-authority-of-pittsburgh-ura`,
+      recallContent: [
+        {
+          prompt: "What is the difference between 'the Hill District' and 'the Lower Hill', and why does saying 'the Hill was destroyed' get it wrong?",
+          answer: "The Lower Hill is the roughly 95 acres closest to downtown that were cleared. The Middle and Upper Hill were not cleared the same way and remain a living neighbourhood, so 'the Hill was destroyed' is wrong on the geography and unfair to the people who still live there.",
+        },
+        {
+          prompt: "What is the August Wilson House, and why is it evidence of survival rather than loss?",
+          answer: "August Wilson's restored childhood home at 1727 Bedford Avenue in the Middle Hill, now a nonprofit arts centre run by the Daisy Wilson Artist Community. Nine of his ten Century Cycle plays are set in the Hill. A house that runs programmes today is the neighbourhood still speaking for itself.",
+        },
+        {
+          prompt: "Does listing a building on the National Register stop its owner from demolishing it?",
+          answer: "No. Federal listing is recognition plus review leverage when federal money or a permit is involved, plus some tax credits. Local designation under a city ordinance is what normally regulates demolition, and only when a commission enforces it.",
+        },
+        {
+          prompt: "What happened when preservationists tried to save the Civic Arena itself around 2010?",
+          answer: "It failed. The reviewing bodies declined to grant it historic status and the courts declined to stop the demolition. The designation tool that could not save the neighbourhood could not save the building that replaced it either.",
+        },
+      ],
+    },
+    {
+      slug: "pgh-powers-designation",
+      title: "9 · Instrument two: the blight designation and the redevelopment area",
+      section: "Section 3 · Powers",
+      body: `The law from lesson 8 gives the URA a power it cannot use until it says a magic word. **Instrument two is the designation, and the word is "blighted."**
+
+**How it ran on the Lower Hill.** In the early 1950s the Lower Hill was studied for urban renewal, and as part of the City of Pittsburgh's renewal effort the neighbourhood was **declared blighted** and drawn into a **redevelopment area**. In **September 1955**, the federal government approved the Lower Hill redevelopment plan, slating roughly **95 acres** of homes and businesses for clearance, and **clearance began in 1955** (Heinz History Center, n.d.-a; Urban Redevelopment Authority of Pittsburgh, n.d.-b). A city councilman of the period described the area as "one of the most outstanding examples in Pittsburgh of neighborhood deterioration" (Heinz History Center, n.d.-a).
+
+**Read that quotation as evidence about the speaker, not about the Hill.** The people in lessons 1 through 3 built a jazz foundry, the country's leading Black newspaper and a set of anchor churches on this ground. **"Neighborhood deterioration" is the language a designation needs in order to work.** It is the sound an instrument makes when it is being justified.
+
+**Now the two things about the word that transfer to any city.**
+
+1. **"Blighted" is a legal conclusion, not a description.** A body reaches it, on a record, against criteria written into a statute. Once reached, it unlocks powers that do not otherwise exist: acquisition, clearance, and resale to a redeveloper. **Before the designation the powers do not exist; after it, they do.** That is why the designation, and not the demolition, is where you start.
+2. **The criteria are usually physical**, things like building age, overcrowding, plumbing and fire risk, **and those measures correlate strongly with where a city has refused to lend, insure or invest.** A neighbourhood denied mortgage capital for decades will measure as deteriorated, and the measurement then becomes the justification. **The finding and its cause can be the same policy at two different dates.** This is the identical circularity the Indiana Avenue course found; it is not a Pittsburgh peculiarity, it is how the instrument works everywhere.
+
+**A disagreement this course teaches instead of smoothing.** The Lower Hill counts vary by source and by what is being counted, and an honest course reports the range rather than picking the roundest number:
+
+| What is counted | Figure you will see |
+|---|---|
+| Acreage cleared | about 95 acres |
+| Buildings | about 1,300 |
+| Businesses | over 400, or specifically 413 |
+| Families | 1,500 or 1,600 |
+| People displaced | more than 8,000 |
+
+The Heinz History Center gives "over 8,000 residents were displaced, as well as over 400 businesses" (Heinz History Center, n.d.-a). A landscape-architecture account gives "1,300 buildings, 413 businesses, and 1,600 families (more than 8,000 people)" (The Field, 2021). **These do not contradict each other; they count different things.** Carry the source with the number every time, the way the Indiana Avenue course made you attribute the 17,000 figure rather than adopt it.
+
+**And a specific caution about magnitude.** You will sometimes see the buildings figure rendered as "thirteen thousand." That is an order of magnitude too high, a transcription slip for one thousand three hundred. **When a number is roughly ten times its neighbours, suspect a stray zero and go back to the source.** A decimal or a comma in the wrong place is the most common error in repeated statistics, and catching it is a research skill.
+
+**The research move, unchanged from Indianapolis.** If you want to know why a block on the Lower Hill is gone, **do not start with the demolition. Start with the designation**, because the designation is dated, bounded and minuted, and the clearance follows from it. Ask who declared it, under what statute, on what date, with what boundary, and on what evidence.
+
+## Sources
+- Heinz History Center. (n.d.-a). *Crossroads of the world: How urban renewal changed the Hill*. Senator John Heinz History Center. https://www.heinzhistorycenter.org/blog/crossroads-of-the-world-how-urban-renewal-changed-the-hill/
+- The Field. (2021, January 26). *Reviving the Hill, one of the oldest residential neighborhoods in the Steel City*. American Society of Landscape Architects. https://thefield.asla.org/2021/01/26/reviving-the-hill-one-of-the-oldest-residential-neighborhoods-in-the-steel-city/
+- Urban Redevelopment Authority of Pittsburgh. (n.d.-b). *Lower Hill*. https://www.ura.org/pages/lower-hill`,
+      recallContent: [
+        {
+          prompt: "What was the Pennsylvania Urban Redevelopment Law of 1945, and what did it create?",
+          answer: "The Act of May 24, 1945, which authorised municipalities to create Redevelopment Authorities: public bodies that could designate blighted areas, acquire and clear them, and contract with private or governmental redevelopers to rebuild.",
+        },
+        {
+          prompt: "When was the URA incorporated, and how should you state its 'first' claim?",
+          answer: "November 18, 1946. The URA calls itself 'one of the first redevelopment authorities in Pennsylvania,' not the first in the nation. Repeat the version the institution actually makes; do not inflate it.",
+        },
+        {
+          prompt: "What was Gateway Center, and why keep it separate from the Lower Hill?",
+          answer: "The URA's first major project, which it calls the first privately financed downtown redevelopment project in the United States. It is downtown and it is what outsiders came to admire. The Lower Hill was the same machine's second and larger job, which almost nobody came to admire.",
+        },
+        {
+          prompt: "What was the Allegheny Conference on Community Development, and who anchored it?",
+          answer: "An organisation of Pittsburgh business leaders formed in 1944, associated above all with the financier Richard King Mellon, which worked with Mayor David L. Lawrence to direct the city's postwar rebuilding. Business elites plus elected officials is the machine.",
+        },
+      ],
+    },
+    {
+      slug: "pgh-powers-eminent-domain-partnership",
+      title: "10 · Instrument three: eminent domain, and the public-private machine",
+      section: "Section 3 · Powers",
+      body: `Designation unlocks the power. **The power itself is eminent domain, and the thing that makes it run on this scale is a partnership.**
+
+**What eminent domain is.** The government's authority to take private property for a public use, on payment of just compensation. The constitutional text is the last clause of the **Fifth Amendment**: "nor shall private property be taken for public use, without just compensation." The Fourteenth Amendment applies the requirement to the states. Three things a learner usually has wrong about it, unchanged from the Indiana Avenue course:
+
+1. **The owner does not have to agree.** The dispute in a condemnation case is normally about **price**, not about whether the taking happens.
+2. **The taker is often not the party that ends up with the land.** Under a redevelopment statute a public authority acquires and clears, and then **conveys the cleared land to a private or institutional redeveloper.** That is the design of urban renewal, not an abuse of it, and it is why "public use" became a contested phrase in American law.
+3. **It leaves a paper trail.** Appraisals, condemnation filings, court judgments and settlement amounts are public records.
+
+**The design was tested and upheld while the Lower Hill was being planned.** In **Berman v. Parker** (1954), a unanimous Supreme Court upheld the District of Columbia's power to condemn property for urban renewal even where a particular building was not itself run down, and even though the cleared land would be handed to private redevelopers. Justice Douglas wrote that the concept of the public welfare is broad. **Berman is the legal ground the whole national program stood on**, and it was decided the year before the federal government approved the Lower Hill plan (*Berman v. Parker*, 1954).
+
+**Now the part that is specific to Pittsburgh: the public-private partnership as an instrument.** The URA held the legal powers, but the direction came from the pairing named in lesson 8: the **Allegheny Conference on Community Development**, the organisation of business leaders around **Richard King Mellon**, working with Mayor **David L. Lawrence** and city hall. The historian Roy Lubove's study of this arrangement is described by its publisher as "a pioneering analysis of elite driven, post-World War II urban renewal" (University of Pittsburgh Press, n.d.). **"Elite driven" is the operative phrase.** A small number of the city's most powerful private citizens and its highest elected officials, deciding together which ground the machine would run on. That is the machine, and Gateway Center was its first run and the Lower Hill its second.
+
+**Put the instruments in order, because order is the transferable part.** A **designation** (lesson 9) makes land acquirable and clearable. **Eminent domain** is the power that acquires it. A **public-private partnership** supplies the direction, the financing and the redeveloper the cleared land is conveyed to. **Designation plus condemnation plus partnership is the mechanism**, and once you can name the three you can read the same move in any renewal-era city.
+
+**An honest limit, and this course keeps it in view.** The Indiana Avenue course could follow one named family, the Temples, through a documented condemnation with dated offers and a final settlement. **This course has not read an individual Lower Hill condemnation file into itself.** What the record here establishes is the mechanism, the acreage, the designation and the counts, not a single household's dollar figures. **The individual acquisition files exist**, in Allegheny County's records and in the URA's own project files, **and they are the next real work on this question.** Reporting that gap is more accurate than borrowing a number from somewhere and hoping.
+
+**One thing the machine did not fully get.** As talk of clearance moved up the slope toward the Middle Hill, residents organised and **held the line at the corner of Crawford Street and Centre Avenue**, the place now marked as **Freedom Corner** (Hill District Digital History, n.d.-b). **The instrument met an organised neighbourhood and stopped**, which is why the Middle and Upper Hill survived and why beat 5 has somewhere to send you. Keep Freedom Corner for Section 5.
+
+## Sources
+- Berman v. Parker, 348 U.S. 26 (1954). https://supreme.justia.com/cases/federal/us/348/26/
+- Hill District Digital History. (n.d.-b). *Freedom Corner: A rallying point for Pittsburgh activism*. https://hillhistory.org/items/show/7
+- U.S. Const. amend. V.
+- University of Pittsburgh Press. (n.d.). *Twentieth-century Pittsburgh, volume one: Government, business, and environmental change* [Book description]. https://upittpress.org/books/9780822955511/`,
+      recallContent: [
+        {
+          prompt: "How did the Lower Hill's blight designation actually run, with dates and acreage?",
+          answer: "The Lower Hill was declared blighted and drawn into a redevelopment area; the federal government approved the plan in September 1955, slating about 95 acres for clearance, and clearance began in 1955. A councilman called it one of the most outstanding examples of neighborhood deterioration.",
+        },
+        {
+          prompt: "Why is 'blighted' a legal conclusion rather than a description?",
+          answer: "A body reaches it on a record against statutory criteria, and it unlocks acquisition, clearance and resale powers that do not otherwise exist. Before the designation the powers do not exist; after it, they do.",
+        },
+        {
+          prompt: "How should you handle the varying Lower Hill counts, and the 'thirteen thousand buildings' figure?",
+          answer: "Carry the source with the number, because sources count different things: about 95 acres, about 1,300 buildings, 400-plus or 413 businesses, 1,500 or 1,600 families, more than 8,000 people. 'Thirteen thousand' is a stray-zero slip for 1,300; when a number is ten times its neighbours, suspect a transcription error.",
+        },
+        {
+          prompt: "If you want to know why a Lower Hill block is gone, where do you start, and why?",
+          answer: "With the designation, not the demolition, because the designation is dated, bounded, minuted and public, and the clearance follows from it.",
+        },
+      ],
+    },
+    {
+      slug: "pgh-powers-export-of-model",
+      title: "11 · Instrument four: the export of the model",
+      section: "Section 3 · Powers",
+      body: `Here is the claim in this course's title, stated as strongly as the record honestly allows. **Then the next lesson tests it.**
+
+**The strong version of the thesis.** Pittsburgh did not just clear a neighbourhood. It assembled the whole public-private redevelopment machine **early**, before the federal government built the national program, and it became a place other cities studied. Both halves of that are sourceable.
+
+**Half one: Pittsburgh was early.** The Allegheny Conference formed in **1944**, the Pennsylvania Urban Redevelopment Law passed in **1945**, the URA was incorporated in **1946**, and Gateway Center was underway by the start of the 1950s, **all before the federal Housing Act of 1949** created the national urban-renewal program (Neumann, 2016; Urban Redevelopment Authority of Pittsburgh, n.d.-a).
+
+**Half two: Pittsburgh was studied.** The historian Tracy Neumann documents that "in the 1950s and 1960s, more than seventy national and international delegations of urban policy tourists who hoped to replicate the Renaissance arrived in Pittsburgh," with visitors "from Dayton and Detroit" and officials "from Canada, Australia, Brazil, Belgium, Germany, and Scotland," and concludes that "Pittsburgh's postwar urban renewal program made it a popular model for other aging industrial cities in the 1950s and 1960s" (Neumann, 2016). Lubove's history of it is described by its publisher as the "classic model" analysis of elite-driven renewal (University of Pittsburgh Press, n.d.). **So "Pittsburgh was celebrated and visited as a model" is not a guess. It is documented, by a named historian, with a number attached.**
+
+**Now begin complicating it, because the strong version hides a substitution.** Look closely at what the seventy delegations came to **replicate**. Neumann's own sentence tells you: they came to see "how Democratic mayors and Republican businessmen had worked together to scrub clean the streets and skies of the dirty, polluted, and flood-prone city" (Neumann, 2016). **They came for the partnership and the clean-up: smoke control, flood control, and Gateway Center.** That is the reputational package. **A delegation admiring Gateway Center and the smoke-control ordinance is not the same as a city carrying home a manual for clearing a Black neighbourhood**, and the record this course could verify does not show the second thing travelling.
+
+**What actually spread the clearance instruments across the country was federal, not Pittsburgh.** The **Housing Act of 1949** funded slum clearance and urban redevelopment nationally, and the Heinz History Center notes that "Pittsburgh leaders took advantage of the 1949 American Housing Act which provided federal funds to urban renewal projects that cleared out 'slums'" (Heinz History Center, n.d.-a). **Pittsburgh took advantage of the same federal money as everyone else.** Its own Lower Hill clearance rode Title I federal grants, the way Indianapolis and Washington and San Francisco and Detroit did. **The instruments were a national kit, funded federally and authorised by parallel state laws, and upheld for the whole country by Berman v. Parker in 1954.**
+
+**Hold the two facts side by side, because keeping them apart is the entire skill of this lesson.**
+- **Pittsburgh assembled and showcased the public-private partnership early and visibly, and was genuinely emulated as a model of that partnership.** True, and documented.
+- **The specific instruments that emptied Black districts, including Indiana Avenue, spread mainly through the federal Housing Act of 1949 and parallel state redevelopment laws, not through cities copying Pittsburgh's clearance.** Also true, and it is the half a triumphant "Pittsburgh wrote the playbook" story leaves out.
+
+**So what does the title claim, honestly?** It claims that the **partnership playbook**, the arrangement of elite business power and elected government running redevelopment together, was written early and prominently in Pittsburgh. **That is defensible.** It does **not** claim that every later city learned to clear its Black neighbourhood by copying Pittsburgh, because that is not in the record. **Lesson 12 lines the dates up and shows you exactly where the strong claim breaks.**
+
+## Sources
+- Heinz History Center. (n.d.-a). *Crossroads of the world: How urban renewal changed the Hill*. Senator John Heinz History Center. https://www.heinzhistorycenter.org/blog/crossroads-of-the-world-how-urban-renewal-changed-the-hill/
+- Neumann, T. (2016, February 1). *The "spiritual capital" of the Rust Belt: Pittsburgh and the postindustrial transformation of North Atlantic cities*. Global Urban History. https://globalurbanhistory.com/2016/02/01/the-spiritual-capital-of-the-rust-belt-pittsburgh-and-the-postindustrial-transformation-of-north-atlantic-cities/
+- University of Pittsburgh Press. (n.d.). *Twentieth-century Pittsburgh, volume one: Government, business, and environmental change* [Book description]. https://upittpress.org/books/9780822955511/
+- Urban Redevelopment Authority of Pittsburgh. (n.d.-a). *History of the Urban Redevelopment Authority of Pittsburgh (URA)*. https://www.ura.org/pages/history-of-the-urban-redevelopment-authority-of-pittsburgh-ura`,
+      recallContent: [
+        {
+          prompt: "What does the Fifth Amendment require, and what is normally in dispute in a condemnation case?",
+          answer: "That private property not be taken for public use without just compensation, applied to the states by the Fourteenth Amendment. The dispute is normally about the price, not about whether the taking happens.",
+        },
+        {
+          prompt: "What did Berman v. Parker (1954) establish, and why does it matter to the Lower Hill?",
+          answer: "A unanimous Supreme Court upheld condemning property for urban renewal even where a building was not itself run down and even though cleared land went to private redevelopers. It is the legal ground the national program stood on, decided the year before the Lower Hill plan was approved.",
+        },
+        {
+          prompt: "Name the three-part mechanism this course says you can find in any renewal-era city.",
+          answer: "Designation makes land acquirable and clearable; eminent domain acquires it; a public-private partnership supplies direction, financing and the redeveloper the cleared land is conveyed to. Designation plus condemnation plus partnership.",
+        },
+        {
+          prompt: "What individual record does this course honestly admit it has NOT read, and where does it live?",
+          answer: "An individual Lower Hill condemnation file with one household's dated offers and settlement, the way the Indiana Avenue course followed the Temple family. Those files exist in Allegheny County's records and the URA's own project files, and they are the next real work.",
+        },
+      ],
+    },
+    {
+      slug: "pgh-powers-test-the-playbook",
+      title: "12 · Testing the playbook against a chronology, and a double absence",
+      section: "Section 3 · Powers",
+      body: `The title of this course is an argument, and a good argument invites its own test. **This lesson lines the dates up and asks whether "other cities copied Pittsburgh" survives them. It mostly does not, and this course reports that as a result rather than hiding it.**
+
+**The argument, as proposed.** "Pittsburgh: Where the Playbook Was Written" implies a chain: Pittsburgh invented the redevelopment machine, other cities copied it, and that copying is what emptied Black districts like Indiana Avenue across the country.
+
+**The test is chronology and mechanism, the cheapest test in history.** Line the dates up and ask whether the proposed cause comes before its proposed effects, and whether a mechanism actually connects them.
+
+| Date | Event |
+|---|---|
+| 1944 | Allegheny Conference on Community Development formed in Pittsburgh |
+| 1945 | Pennsylvania Urban Redevelopment Law; District of Columbia Redevelopment Act; David Lawrence elected Pittsburgh mayor |
+| 1945 | Indiana General Assembly identifies Pat Ward's Bottom, Indianapolis, as blighted (from the prerequisite course) |
+| November 18, 1946 | URA of Pittsburgh incorporated |
+| 1948 | Demolition begins at Pat Ward's Bottom, Indianapolis |
+| 1949 | Federal Housing Act creates the national urban-renewal program (Title I) |
+| early 1950s | Gateway Center underway in downtown Pittsburgh |
+| 1954 | Berman v. Parker upholds urban-renewal takings nationally |
+| September 1955 | Federal government approves the Lower Hill plan; Pittsburgh clearance begins |
+| September 17, 1961 | Civic Arena opens on the cleared Lower Hill |
+| September 2011 to March 2012 | The Civic Arena is demolished |
+
+**The verdict, stated plainly. The strong claim fails, and a weaker one survives.**
+
+**Where the argument fails, and why.**
+1. **The timing does not run downhill from Pittsburgh.** Indianapolis identified Pat Ward's Bottom as blighted in **1945** and began demolishing it in **1948**, using its own state's machinery, on the same timeline as Pittsburgh's, not after it. Washington's enabling law is the **same year** as Pennsylvania's, 1945. **These are parallel state adoptions, not a copy-chain with Pittsburgh at the head of it.** A cause cannot run to an effect that was already happening beside it.
+2. **The mechanism that actually spread is federal.** The instrument kit, blight designation, condemnation, conveyance to a redeveloper, was funded by the **Housing Act of 1949** and upheld for every city by **Berman v. Parker** in 1954. Cities did not need Pittsburgh's example to run it; they needed the federal money and their own state law, and they had both. **What travelled city to city was not a clearance manual. It was a reputation.**
+3. **What Pittsburgh actually exported was the partnership, not the clearance.** The documented thing outsiders came to replicate was the public-private partnership and the downtown clean-up, smoke control, flood control, Gateway Center (Neumann, 2016). **A course that lets "seventy delegations came to admire Gateway Center" become "seventy cities copied Pittsburgh's clearance of the Hill" has swapped one claim for a bigger one it cannot support.**
+
+**Where the argument holds, in a smaller and defensible form.** Pittsburgh **assembled and showcased the public-private redevelopment machine early and visibly, and was genuinely emulated as a model of that partnership.** It is one of the prominent early reference cases for the arrangement of elite business power and elected government running a city's rebuilding together. **That is a real claim, it is smaller than the one the title implies at first read, and it is the one this course makes.** The "playbook" that was written here is the partnership playbook, not a step-by-step manual every later city followed to empty its Black district.
+
+**Three method lessons, which outlast every fact in this course.**
+1. **Build the chronology before you build the argument.** A table of dates costs an hour and kills a bad thesis cheaply. It is what turned "Pittsburgh wrote the playbook" into "Pittsburgh wrote the partnership playbook, and the clearance spread federally."
+2. **A weakened claim that survives is worth more than a strong claim that does not.** "Pittsburgh was an early, emulated model of the partnership" is checkable. "Every city copied Pittsburgh's clearance" is not, and it is largely false.
+3. **Report the weakening.** If you tested a thesis and it partly failed, that is a finding and it belongs in your write-up. **Suppressing it is the actual error**, and this lesson exists to model doing the opposite.
+
+**Now the closing image, and it is the one this course was built around: a rare double absence.** The Civic Arena that replaced the neighbourhood was itself demolished. **Demolition began on September 26, 2011 and was completed on March 31, 2012** (Civic Arena, n.d.). Read the two clearances together. First a working, majority-Black neighbourhood of about 1,300 buildings was removed for a showpiece. Then, roughly half a century later, the showpiece was removed too. **The ground at the edge of downtown Pittsburgh has been cleared twice in one lifetime**, and today it is a redevelopment site once more, which is exactly where beat 5 sends you next. The city that wrote the partnership playbook watched its own monument to that playbook erased, and the argument over what belongs on the ground began again.
+
+**What is still open, and would settle the remaining questions.** The URA's Lower Hill project files, the Allegheny Conference records held in Pittsburgh's archives, and the individual condemnation files in Allegheny County. **None of those has been read into this course.** They are public or requestable, and they are the difference between restating this story and adding to it.
+
+## Sources
+- Civic Arena (Pittsburgh). (n.d.). In *Wikipedia*. Retrieved July 2026, from https://en.wikipedia.org/wiki/Civic_Arena_(Pittsburgh)
+- Heinz History Center. (n.d.-a). *Crossroads of the world: How urban renewal changed the Hill*. Senator John Heinz History Center. https://www.heinzhistorycenter.org/blog/crossroads-of-the-world-how-urban-renewal-changed-the-hill/
+- Neumann, T. (2016, February 1). *The "spiritual capital" of the Rust Belt: Pittsburgh and the postindustrial transformation of North Atlantic cities*. Global Urban History. https://globalurbanhistory.com/2016/02/01/the-spiritual-capital-of-the-rust-belt-pittsburgh-and-the-postindustrial-transformation-of-north-atlantic-cities/`,
+      recallContent: [
+        {
+          prompt: "State the strong form of this course's title thesis, and the two halves of it that are actually documented.",
+          answer: "The strong form: Pittsburgh invented the redevelopment machine and other cities copied it, which is what emptied Black districts nationally. The two documented halves are narrower: Pittsburgh assembled the machine early (Allegheny Conference 1944, PA law 1945, URA 1946), and Pittsburgh was studied by more than seventy delegations who came to replicate the Renaissance.",
+        },
+        {
+          prompt: "What did the seventy delegations actually come to Pittsburgh to replicate?",
+          answer: "The public-private partnership and the downtown clean-up: how Democratic mayors and Republican businessmen worked together, smoke control, flood control and Gateway Center. That is not the same as a manual for clearing a Black neighbourhood.",
+        },
+        {
+          prompt: "If cities did not need Pittsburgh's example to run urban renewal, what did they need, and what upheld it?",
+          answer: "Federal money from the Housing Act of 1949 and their own state redevelopment law, both of which they had. Berman v. Parker (1954) upheld the takings for every city. What travelled city to city was a reputation, not a clearance manual.",
+        },
+        {
+          prompt: "State the surviving, weaker claim the course actually makes.",
+          answer: "Pittsburgh assembled and showcased the public-private redevelopment partnership early and visibly, and was genuinely emulated as a model of that partnership, so it is one of the prominent early reference cases, not the sole origin every later city copied. The playbook written here is the partnership playbook.",
+        },
+        {
+          prompt: "What is the 'rare double absence,' with dates?",
+          answer: "The neighbourhood was cleared in 1955 for the Civic Arena, and the arena itself was then demolished, from September 26, 2011 to March 31, 2012. The ground at the edge of downtown has been cleared twice in one lifetime.",
+        },
+      ],
+    },
+    {
+      slug: "pgh-quiz-powers",
+      title: "13 · Quiz: who decided, and did the playbook travel",
+      section: "Section 3 · Powers",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "This course defines an 'instrument' as:",
+            options: [
+              "Any historical cause of a neighbourhood's decline",
+              "A newspaper account of a public decision",
+              "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document",
+              "A tool used to demolish a building",
+            ],
+            correctIndex: 2,
+            explanation: "The last clause is what makes history researchable: if a power was exercised, a named record exists.",
+            sourceLessonSlug: "pgh-powers-law-and-authority",
+          },
+          {
+            prompt: "What did the Pennsylvania Urban Redevelopment Law of 1945 do?",
+            options: [
+              "It authorised municipalities to create Redevelopment Authorities that could designate blighted areas, acquire and clear them, and contract with redevelopers",
+              "It built the Civic Arena directly",
+              "It merged Pittsburgh with surrounding Allegheny County",
+              "It banned racial covenants in Pittsburgh housing",
+            ],
+            correctIndex: 0,
+            explanation: "The law creates a new legal body with powers no ordinary city department has: to designate, acquire, clear and convey.",
+            sourceLessonSlug: "pgh-powers-law-and-authority",
+          },
+          {
+            prompt: "How does the URA describe its own place in redevelopment history, and how should you repeat it?",
+            options: [
+              "As the first redevelopment authority in the world",
+              "As the first redevelopment authority in the United States",
+              "As having no claim to being early at all",
+              "As 'one of the first redevelopment authorities in Pennsylvania,' which is the version to repeat rather than inflate",
+            ],
+            correctIndex: 3,
+            explanation: "When you repeat an institution's claim about itself, repeat the version it actually makes. The URA says 'one of the first in Pennsylvania.'",
+            sourceLessonSlug: "pgh-powers-law-and-authority",
+          },
+          {
+            prompt: "The Allegheny Conference on Community Development was:",
+            options: [
+              "A federal agency created by the Housing Act of 1949",
+              "An organisation of Pittsburgh business leaders formed in 1944, around Richard King Mellon, that worked with city hall to direct redevelopment",
+              "A neighbourhood group from the Hill District",
+              "The URA's in-house demolition contractor",
+            ],
+            correctIndex: 1,
+            explanation: "Business elites plus elected officials, pulling together, is the public-private machine this section takes apart.",
+            sourceLessonSlug: "pgh-powers-law-and-authority",
+          },
+          {
+            prompt: "In September 1955, what happened to the Lower Hill?",
+            options: [
+              "The Civic Arena opened to the public",
+              "The neighbourhood was added to the National Register of Historic Places",
+              "The federal government approved the Lower Hill redevelopment plan, slating about 95 acres for clearance, and clearance began",
+              "The Allegheny Conference was first formed",
+            ],
+            correctIndex: 2,
+            explanation: "The designation and federal approval are the hinge; the clearance follows from them.",
+            sourceLessonSlug: "pgh-powers-designation",
+          },
+          {
+            prompt: "Why is 'blighted' called a legal conclusion rather than a description?",
+            options: [
+              "A body reaches it on a record against statutory criteria, and it unlocks acquisition and clearance powers that do not otherwise exist",
+              "Because only lawyers are allowed to use the word",
+              "Because it can never be appealed or challenged",
+              "Because it applies only to empty land with no buildings",
+            ],
+            correctIndex: 0,
+            explanation: "Before the designation the powers do not exist; after it, they do. That is why you start research at the designation.",
+            sourceLessonSlug: "pgh-powers-designation",
+          },
+          {
+            prompt: "The varying Lower Hill counts (about 1,300 buildings, 413 businesses, 1,600 families, over 8,000 people) should be handled how?",
+            options: [
+              "Pick the largest figure in every category",
+              "Average all the published figures together into one number",
+              "Ignore them because they disagree",
+              "Carry the source with each number, because sources count different things, and suspect a stray zero when a figure is ten times its neighbours",
+            ],
+            correctIndex: 3,
+            explanation: "'Thirteen thousand buildings' is a transcription slip for 1,300. Attribute figures; do not adopt or blend them.",
+            sourceLessonSlug: "pgh-powers-designation",
+          },
+          {
+            prompt: "What did Berman v. Parker (1954) establish?",
+            options: [
+              "That urban renewal was unconstitutional",
+              "That a government may condemn property for urban renewal even where a building is not itself run down and the cleared land goes to private redevelopers",
+              "That only the federal government could use eminent domain",
+              "That Pittsburgh could annex Allegheny County",
+            ],
+            correctIndex: 1,
+            explanation: "Berman is the legal ground the national urban-renewal program stood on, decided the year before the Lower Hill plan was approved.",
+            sourceLessonSlug: "pgh-powers-eminent-domain-partnership",
+          },
+          {
+            prompt: "The three-part mechanism this course says you can find in any renewal-era city is:",
+            options: [
+              "Designation, condemnation, and a public-private partnership that directs and finances redevelopment",
+              "A referendum, a bond issue, and a groundbreaking ceremony",
+              "A highway, a stadium, and a parking garage",
+              "A census, a zoning map, and a tax abatement",
+            ],
+            correctIndex: 0,
+            explanation: "Designation makes land clearable, eminent domain acquires it, and the partnership supplies direction and the redeveloper the land is conveyed to.",
+            sourceLessonSlug: "pgh-powers-eminent-domain-partnership",
+          },
+          {
+            prompt: "What individual record does this course honestly admit it has NOT read into itself?",
+            options: [
+              "The date the Civic Arena opened",
+              "An individual Lower Hill condemnation file with one household's dated offers and settlement, of the kind the Indiana Avenue course had for the Temple family",
+              "The acreage of the Lower Hill",
+              "The name of the Pittsburgh Courier",
+            ],
+            correctIndex: 1,
+            explanation: "Those files exist in Allegheny County's records and the URA's project files. Reporting the gap is more accurate than borrowing a number.",
+            sourceLessonSlug: "pgh-powers-eminent-domain-partnership",
+          },
+          {
+            prompt: "Historian Tracy Neumann documents that in the 1950s and 1960s Pittsburgh was visited by:",
+            options: [
+              "A single delegation from Washington, D.C.",
+              "No outside delegations at all",
+              "Only delegations from within Pennsylvania",
+              "More than seventy national and international delegations who hoped to replicate the Renaissance",
+            ],
+            correctIndex: 3,
+            explanation: "Visitors came from Dayton, Detroit, Canada, Australia, Brazil, Belgium, Germany and Scotland. Pittsburgh as a studied model is documented, not guessed.",
+            sourceLessonSlug: "pgh-powers-export-of-model",
+          },
+          {
+            prompt: "What did those delegations actually come to Pittsburgh to replicate?",
+            options: [
+              "A manual for clearing a Black neighbourhood, block by block",
+              "The public-private partnership and the downtown clean-up: smoke control, flood control and Gateway Center",
+              "The design of the Civic Arena's retractable roof",
+              "The Pittsburgh Courier's newspaper business model",
+            ],
+            correctIndex: 1,
+            explanation: "A delegation admiring Gateway Center and the smoke ordinance is not a city carrying home a clearance manual. Keep the two apart.",
+            sourceLessonSlug: "pgh-powers-export-of-model",
+          },
+          {
+            prompt: "What actually spread the clearance instruments across the country, rather than cities copying Pittsburgh?",
+            options: [
+              "A private consulting firm based in Pittsburgh",
+              "The Pittsburgh Courier's national circulation",
+              "The federal Housing Act of 1949 and parallel state redevelopment laws, upheld for every city by Berman v. Parker",
+              "The Allegheny Conference's membership dues",
+            ],
+            correctIndex: 2,
+            explanation: "Pittsburgh's own Lower Hill clearance rode the same Title I federal money as everyone else. The kit was national.",
+            sourceLessonSlug: "pgh-powers-export-of-model",
+          },
+          {
+            prompt: "Testing the 'other cities copied Pittsburgh' thesis against the chronology shows that:",
+            options: [
+              "It fails as a copy-chain, because Indianapolis and Washington ran their own machinery on the same 1940s timeline, and what Pittsburgh exported was a partnership reputation, not a clearance manual",
+              "Pittsburgh single-handedly caused every later clearance",
+              "No American city ever cleared a Black neighbourhood",
+              "The chronology is unknowable, so the thesis cannot be tested",
+            ],
+            correctIndex: 0,
+            explanation: "The surviving, weaker claim is that Pittsburgh was an early, emulated model of the partnership, one prominent reference case rather than the sole origin.",
+            sourceLessonSlug: "pgh-powers-test-the-playbook",
+          },
+          {
+            prompt: "The 'rare double absence' at the heart of this course is:",
+            options: [
+              "That two different neighbourhoods were cleared on the same day",
+              "That both the Pittsburgh Courier and the Crawford Grill closed in the same year",
+              "That the Lower Hill appears in neither the Green Book nor the census",
+              "That the neighbourhood was cleared in 1955 for the Civic Arena, and the arena itself was then demolished between September 2011 and March 2012",
+            ],
+            correctIndex: 3,
+            explanation: "The ground at the edge of downtown has been cleared twice in one lifetime, and it is a redevelopment site again today.",
+            sourceLessonSlug: "pgh-powers-test-the-playbook",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
