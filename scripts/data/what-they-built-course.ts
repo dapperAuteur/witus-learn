@@ -632,7 +632,7 @@ The **Durham Freeway**, originally the East-West Expressway and now **North Caro
 
 ## And the present tense, because two of these institutions are still in the news
 
-- **North Carolina Mutual.** After more than a century, **liquidation was ordered by the courts on October 11, 2022**, with liabilities exceeding assets by at least **78 million dollars** (Wikipedia contributors, 2026, as summarised from the North Carolina Department of Insurance proceedings). **Verify this one against the North Carolina Department of Insurance's own filings before you publish it.**
+- **North Carolina Mutual.** After more than a century, the company entered receivership and **secondary accounts give October 11, 2022 as the date a court ordered its liquidation**, with liabilities exceeding assets by at least **78 million dollars**. **This course does not assert that date on its own authority.** A receivership is a legal proceeding with a public docket, and **the North Carolina Department of Insurance is the authoritative source** (North Carolina Department of Insurance, n.d.). **Read the docket before you publish the date, and cite the docket rather than a summary.**
 - **Mechanics and Farmers Bank** survived the Great Depression without closing and is still trading. On **July 22, 2026**, **Optus Financial Corporation and M&F Bancorp announced a merger** that the parties say would create the largest African American owned financial institution in the United States: roughly **1.27 billion dollars in total assets** as of **March 31, 2026**, **ten locations across North and South Carolina**, a deal valued at about **105 million dollars**, with **James Sills** of M&F to lead the combined bank and closing expected in the **fourth quarter of 2026**, subject to shareholder and regulatory approval (Banking Dive, 2026; WIS-TV, 2026).
 
 **That is a live transaction, not a settled fact.** A merger that has been announced is a proposal with conditions on it. **Say "announced" and "expected to close", and check whether it did.**
@@ -643,6 +643,7 @@ The **Durham Freeway**, originally the East-West Expressway and now **North Caro
 - Facing South. (2020, June 10). *The bitter history behind the highways occupied by protesters*. https://www.facingsouth.org/2020/06/bitter-history-behind-highways-occupied-protesters
 - NCpedia. (n.d.-a). *North Carolina Mutual Life Insurance Company*. https://www.ncpedia.org/north-carolina-mutual-life-insuranc
 - NCpedia. (n.d.-b). *Mechanics and Farmers Bank*. https://www.ncpedia.org/mechanics-and-farmers-bank
+- North Carolina Department of Insurance. (n.d.). *Company receiverships*. https://www.ncdoi.gov/
 - North Carolina Department of Natural and Cultural Resources. (2023, December 20). *Black Wall Street (G-116)*. https://www.dncr.nc.gov/blog/2023/12/20/black-wall-street-g-116
 - WIS-TV. (2026, July 23). *Optus Bank, M&F Bank announce merger that would create nation's largest Black-owned bank*. https://www.wistv.com/2026/07/23/optus-bank-mf-bank-announce-merger-that-would-create-nations-largest-black-owned-bank/`,
       recallContent: [
@@ -745,7 +746,7 @@ Consolidated was, at the time of its purchase in **2005**, the oldest continuous
         },
         {
           prompt: "What is the current status of the two Durham institutions in this lesson?",
-          answer: "North Carolina Mutual's liquidation was ordered on October 11, 2022. Mechanics and Farmers Bank is still trading, and on July 22, 2026 its holding company announced a merger with Optus Financial expected to close in the fourth quarter of 2026, subject to approvals.",
+          answer: "North Carolina Mutual went into receivership, with secondary accounts dating the liquidation order to October 11, 2022, which you should check against the state Department of Insurance docket. Mechanics and Farmers Bank is still trading, and on July 22, 2026 its holding company announced a merger with Optus Financial expected to close in the fourth quarter of 2026, subject to approvals.",
         },
       ],
     },
@@ -1323,7 +1324,7 @@ Later figures from the same company: **by 1945 it was worth 14 million dollars w
 
 **Industrial insurance is expensive per dollar of coverage**, because collecting weekly in person costs money and small policies do not spread fixed costs. **This was a criticism of the product across the entire industry, for all customers, not a criticism of these companies**, and it is why the product eventually disappeared. **You should know that before you write about it, because a reader who knows it and finds it missing from your account will stop trusting you.**
 
-**And the strategy has a documented endpoint.** North Carolina Mutual, the largest and longest running of them, **had its liquidation ordered by the courts on October 11, 2022**, with liabilities exceeding assets by at least **78 million dollars**. **Check that against the North Carolina Department of Insurance's own filings before you publish it**, because a receivership is a legal proceeding with a public docket and you should cite the docket rather than a summary.
+**And the strategy has an endpoint.** North Carolina Mutual, the largest and longest running of them, went into receivership, and **secondary accounts date the liquidation order to October 11, 2022**, with liabilities exceeding assets by at least **78 million dollars**. **This course does not assert that date on its own authority.** **Check it against the North Carolina Department of Insurance's own filings before you publish it** (North Carolina Department of Insurance, n.d.), because a receivership is a legal proceeding with a public docket and you should cite the docket rather than a summary.
 
 **A 123-year run ending in liquidation is one sentence, and "the largest Black-owned business in the United States for most of the twentieth century" is another. Both are true. Neither edits the other.**
 
@@ -1334,6 +1335,7 @@ Later figures from the same company: **by 1945 it was worth 14 million dollars w
 - NCpedia. (n.d.-a). *North Carolina Mutual Life Insurance Company*. https://www.ncpedia.org/north-carolina-mutual-life-insuranc
 - New Georgia Encyclopedia. (n.d.-a). *Auburn Avenue (Sweet Auburn)*. https://www.georgiaencyclopedia.org/articles/counties-cities-neighborhoods/auburn-avenue-sweet-auburn/
 - New Georgia Encyclopedia. (n.d.-b). *Alonzo Herndon (1858-1927)*. https://www.georgiaencyclopedia.org/articles/business-economy/alonzo-herndon-1858-1927/
+- North Carolina Department of Insurance. (n.d.). *Company receiverships*. https://www.ncdoi.gov/
 - Weare, W. B. (1993). *Black business in the New South: A social history of the North Carolina Mutual Life Insurance Company*. University of North Carolina Press.`,
       recallContent: [
         {
@@ -1426,8 +1428,8 @@ The figure you will see quoted everywhere is that **134 Black-owned banks were o
           answer: "It was expensive per dollar of coverage, because collecting weekly in person costs money and small policies do not spread fixed costs. That was a criticism of the product across the entire industry, for all customers, and it is why the product eventually disappeared.",
         },
         {
-          prompt: "How should North Carolina Mutual's October 11, 2022 liquidation be reported?",
-          answer: "As one sentence beside another. A 123-year run ending in liquidation, and the largest Black-owned business in the United States for most of the twentieth century. Both true, neither editing the other. Cite the Department of Insurance docket rather than a summary.",
+          prompt: "How should North Carolina Mutual's receivership and liquidation be reported?",
+          answer: "As one sentence beside another. A run of more than a century ending in liquidation, and the largest Black-owned business in the United States for most of the twentieth century. Both true, neither editing the other. Cite the state Department of Insurance docket rather than a summary.",
         },
       ],
     },
@@ -1562,7 +1564,7 @@ Every line on both sides is sourced in this course.
 | **Late 1950s to late 1960s** | | Interstate 95 through Jackson Ward; the Downtown Connector across Auburn Avenue; NC 147 through Hayti; urban renewal in Bronzeville and Greenwood |
 | **1962 to the 1970s** | | Durham's project ends with 4,057 households and 502 businesses demolished |
 | **1976 to 1998** | Sweet Auburn designated 1976; Jackson Ward listed July 30, 1976 and designated a landmark June 2, 1978; nine Bronzeville properties designated September 9, 1998 | |
-| **2022 and 2026** | M&F Bancorp and Optus Financial announce a merger on July 22, 2026 that would create the largest Black-owned bank in the country | North Carolina Mutual's liquidation is ordered October 11, 2022 |
+| **2022 and 2026** | M&F Bancorp and Optus Financial announce a merger on July 22, 2026 that would create the largest Black-owned bank in the country | North Carolina Mutual goes into receivership, with the liquidation order dated to 2022 |
 
 ## Six things to notice, in order of how uncomfortable they are
 
@@ -1656,7 +1658,7 @@ Every line on both sides is sourced in this course.
       mapContent: {
         markers: [
           {
-            id: "wtb-durham",
+            id: "wtb-map-durham",
             lat: 35.994,
             lng: -78.901,
             title: "Parrish Street and Hayti, Durham, North Carolina",
@@ -1665,7 +1667,7 @@ Every line on both sides is sourced in this course.
               "Two districts, not one. Parrish Street held North Carolina Mutual, incorporated February 28, 1899, and Mechanics and Farmers Bank, chartered February 25, 1907 and opened August 1, 1908. Du Bois counted fifteen grocery stores, eight barber shops, seven meat and fish dealers, two drug stores and five manufacturing establishments here in 1912, with the bank holding 11,000 dollars of paid-in capital and 17,000 dollars deposited by 500 different persons. Hayti, immediately south, was the residential and cultural district. The freeway and urban renewal project ended with 4,057 households and 502 businesses demolished. Mechanics and Farmers still trades and its holding company announced a merger on July 22, 2026.",
           },
           {
-            id: "wtb-richmond",
+            id: "wtb-map-richmond",
             lat: 37.547,
             lng: -77.437,
             title: "Jackson Ward, Richmond, Virginia",
@@ -1674,7 +1676,7 @@ Every line on both sides is sourced in this course.
               "Where the fraternal order model reached its fullest form. The Savings Bank of the Grand Fountain of the United Order of True Reformers was chartered March 2, 1888 and opened April 3, 1889, the first Black-owned bank chartered in the United States and the second to open. Maggie Lena Walker chartered the Saint Luke Penny Savings Bank on July 28, 1903, the first bank in the country chartered by a Black woman, and ran the Independent Order of St. Luke to about 100,000 members in 24 states. Listed on the National Register July 30, 1976 and designated a National Historic Landmark June 2, 1978. Interstate 95 was built through it in the late 1950s.",
           },
           {
-            id: "wtb-atlanta",
+            id: "wtb-map-atlanta",
             lat: 33.7554,
             lng: -84.373,
             title: "Sweet Auburn, Atlanta, Georgia",
@@ -1683,7 +1685,7 @@ Every line on both sides is sourced in this course.
               "Named by John Wesley Dobbs, and called the richest Negro street in the world by Fortune magazine in 1956, a quotation and not a measurement. Alonzo Herndon bought a failing mutual aid association in 1905, incorporated it with 5,000 dollars of assets, and by 1922 had over 400,000 dollars and legal reserve status as the Atlanta Life Insurance Company, one of only five Black-owned insurers then to hold it. Citizens Trust Bank opened here August 16, 1921 and the Atlanta Daily World from August 5, 1928. Designated a national historic landmark district in 1976, covering about 19 acres. The Downtown Connector bisects the street.",
           },
           {
-            id: "wtb-tulsa",
+            id: "wtb-map-tulsa",
             lat: 36.1608,
             lng: -95.9853,
             title: "Greenwood, Tulsa, Oklahoma",
@@ -1692,7 +1694,7 @@ Every line on both sides is sourced in this course.
               "Founded on 40 acres O. W. Gurley bought along the Frisco tracks in 1906 and sold to Black buyers, inside a city that grew from 1,390 people in 1900 to 72,075 in 1920. In 1921 the district held about 11,000 residents, 108 businesses including 41 grocery and meat markets and 30 restaurants, 33 professionals including 15 physicians and surgeons, 24 skilled craftspeople and 26 service workers. Destroyed in 1921; roughly 1,400 suits for over 4 million dollars followed and insurers declined under standard riot clauses. Rebuilt to 242 Black-owned business establishments by 1942, which offsets nothing about 1921. Highway construction and urban renewal took much of it in the late 1960s.",
           },
           {
-            id: "wtb-chicago",
+            id: "wtb-map-chicago",
             lat: 41.8309,
             lng: -87.627,
             title: "Bronzeville and the Black Metropolis, Chicago, Illinois",
@@ -1701,7 +1703,7 @@ Every line on both sides is sourced in this course.
               "The largest of the five, built on a population that ran 30,050 in 1900 and 109,548 in 1920 inside a strip about five miles long. Jesse Binga opened a private bank in 1908 and took a state charter in 1921; Anthony Overton commissioned his building on South State Street in 1922 and ran a cosmetics manufacturer, a bank, an insurer and a newspaper. Binga State Bank was closed by Illinois auditors July 31, 1930 and Douglass National closed about 1932. Supreme Life, formed by merger in 1929, survived the Depression and re-skinned its headquarters in 1950. Nine properties were designated a Chicago landmark district on September 9, 1998.",
           },
           {
-            id: "wtb-philadelphia",
+            id: "wtb-map-philadelphia",
             lat: 39.969,
             lng: -75.172,
             title: "Berean Building and Loan Association, Philadelphia, Pennsylvania",
@@ -1710,7 +1712,7 @@ Every line on both sides is sourced in this course.
               "The instrument most often left out of this history. Founded in 1888 at Berean Presbyterian Church by the Reverend Matthew Anderson, it managed more than 150,000 dollars of stock for 700 members by 1909, helped more than 300 families buy homes, had an integrated board and came through the Depression. Read it as the capital chain running its full length inside one congregation: a church produces a building and loan, which produces home ownership, which produces collateral, which produces the ability to borrow for a business. Du Bois's 1912 Durham list includes a building and loan association too. Assume every district had one and go looking in the church records.",
           },
           {
-            id: "wtb-washington",
+            id: "wtb-map-washington",
             lat: 38.9169,
             lng: -77.0285,
             title: "Washington, D.C.: Capital Savings Bank and the True Reformer Building",
