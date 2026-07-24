@@ -432,10 +432,10 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
           {
             prompt: "What is the honest role of AI in finding your audience and message?",
             options: [
-              "It hands you a guaranteed audience that already loves your product",
-              "It helps you research and reach real people, but never manufactures their approval",
-              "Its made-up customer personas count as real market validation",
-              "It removes the need to talk to anyone",
+              "It hands you a guaranteed audience that already loves you",
+              "It helps you reach real people, but never manufactures approval",
+              "Its made-up customer personas count as real validation",
+              "It removes the need to talk to anybody at all ever",
             ],
             correctIndex: 1,
             explanation:
@@ -445,10 +445,10 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
           {
             prompt: "Which use of AI crosses the line from research into fabrication?",
             options: [
-              "Clustering real, anonymized customer feedback into themes",
-              "Drafting neutral survey questions to ask real people",
-              "Generating a glowing 'customer' review to post, or a statistic you never measured",
-              "Listing competitors so you can go verify each one",
+              "Clustering real, anonymised customer feedback into themes",
+              "Drafting neutral survey questions to ask of real people",
+              "Generating a glowing 'customer' review you never received",
+              "Listing your competitors so you can go and verify each one",
             ],
             correctIndex: 2,
             explanation:
@@ -458,10 +458,10 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
           {
             prompt: "What's the fix for AI's generic, forgettable default voice?",
             options: [
-              "Publish the raw draft faster",
-              "Feed AI your own voice and rewrite the draft with specific, true details only you know",
-              "Add more buzzwords like 'revolutionary' and 'unlock'",
-              "Use a longer prompt and ship it unedited",
+              "Publish the raw draft as fast as you possibly can",
+              "Feed it your voice and rewrite with true details you know",
+              "Add more buzzwords such as 'revolutionary' and 'unlock'",
+              "Use a much longer prompt and then ship it unedited",
             ],
             correctIndex: 1,
             explanation:
@@ -471,10 +471,10 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
           {
             prompt: "What must you ALWAYS do with AI-drafted social, email, blog, or SEO content before it reaches a real person?",
             options: [
-              "Nothing, AI output is ready to publish",
-              "Edit it into your voice and fact-check every claim, number, and source",
-              "Translate it into more formal language",
-              "Make it as long as possible",
+              "Nothing at all, since AI output is ready to publish",
+              "Edit it into your voice and fact-check every single claim",
+              "Translate it into rather more formal-sounding language",
+              "Make the piece as long as you possibly can",
             ],
             correctIndex: 1,
             explanation:
@@ -484,10 +484,10 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
           {
             prompt: "Why keep a written one-page 'brand kit' and paste it atop your prompts?",
             options: [
-              "It makes content longer",
-              "It keeps voice, message, and look consistent so AI doesn't drift into a different style each time",
-              "It guarantees you can copyright everything AI makes",
-              "It replaces the need to edit",
+              "It reliably makes all of your content longer",
+              "It keeps voice and look consistent so the AI does not drift",
+              "It guarantees you can copyright everything the AI makes",
+              "It replaces the need to edit anything afterwards",
             ],
             correctIndex: 1,
             explanation:
@@ -497,10 +497,10 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
           {
             prompt: "Your friend will post a 5-star review if you send a free product. What does FTC guidance say?",
             options: [
-              "It's fine, they're a real person, so no rules apply",
-              "The free product is a material connection you must disclose clearly and conspicuously; and fabricated/undisclosed reviews can be illegal",
-              "You can present it as an independent review as long as it's positive",
-              "Only large companies have to disclose anything",
+              "It is fine; they are a real person, so no rules apply",
+              "The free product is a material connection you must disclose",
+              "You can present it as an independent review if it is positive",
+              "Only much larger companies have to disclose anything",
             ],
             correctIndex: 1,
             explanation:
@@ -511,9 +511,9 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
             prompt: "According to the U.S. Copyright Office, can you copyright a logo made from a single AI prompt?",
             options: [
               "Yes, whatever AI generates for you is automatically yours",
-              "No, purely AI-generated output isn't protected; copyright needs human authorship, and prompting alone isn't enough",
-              "Yes, if your prompt was detailed enough",
-              "Only if you paid for the AI tool",
+              "No, purely AI-generated output is not protected at all",
+              "Yes, so long as your prompt was detailed enough",
+              "Only if you actually paid to use the AI tool",
             ],
             correctIndex: 1,
             explanation:
@@ -523,10 +523,10 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
           {
             prompt: "Which is a sign of 'AI slop' that erodes trust?",
             options: [
-              "A post with a specific, true customer result you have permission to share",
-              "Generic, could-be-anyone content with a confident made-up statistic and hollow hype",
-              "Three carefully edited posts you're proud of",
-              "Disclosing clearly that customers are chatting with a bot",
+              "A post with a true customer result you may share",
+              "Generic content with a confident made-up statistic in it",
+              "Three carefully edited posts that you are proud of",
+              "Disclosing clearly that customers are chatting to a bot",
             ],
             correctIndex: 1,
             explanation:
@@ -550,9 +550,9 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
             prompt: "What's the trust-DNA bottom line for marketing with AI in this course?",
             options: [
               "Use AI to fake demand and reviews so you grow faster",
-              "Use AI to be better and faster (authentic, disclosed, and cited), never to be fake or hollow",
-              "Publish as much AI content as possible to win on volume",
-              "Hide that AI was involved at all costs",
+              "Use AI to be better and faster, never fake or hollow",
+              "Publish as much AI content as you can to win on volume",
+              "Hide the fact that AI was involved, at all costs",
             ],
             correctIndex: 1,
             explanation:
