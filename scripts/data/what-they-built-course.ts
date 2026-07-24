@@ -423,6 +423,151 @@ Du Bois then adds the layer above retail: "black Durham has in addition to this 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 2 · The institutions  (layer 4: what actually holds a district up)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "wtb-five-institutions",
+      title: "5 · The five institutions every one of these districts had",
+      section: "Section 2 · The institutions",
+      body: `Look at the five districts in this course side by side and the same five institutions appear in every one of them. Not the same firms. **The same five kinds of institution**, which is a much more interesting fact, because it means people in cities that had little contact with each other independently built the same structure.
+
+**Here they are, in the order they usually appeared.**
+
+| # | Institution | What it actually does | Why a district cannot skip it |
+|---|---|---|---|
+| **1** | **The church** | Congregation, property, credit standing, meeting space | Owns real estate early, and vouches for people |
+| **2** | **The fraternal order or mutual aid society** | Collects dues, pays sickness and death benefits | Turns many small payments into one pool of capital |
+| **3** | **The insurance company** | Sells small policies, holds reserves, invests them | Legally required to accumulate assets, which is capital |
+| **4** | **The bank or building and loan** | Takes deposits, makes loans, clears payments | Lends where nobody else will |
+| **5** | **The newspaper** | Sells advertising, carries the district's own account | Makes local trade legible, and creates a public record |
+
+**Read the "why" column again as a sequence and you have the whole argument of this course.** A church gathers people. An order turns them into a pool. An insurer turns the pool into regulated assets. A bank turns assets into loans. A newspaper turns loans into visible businesses. **That is a capital chain, and it was built from the bottom up because the top was closed.** Section 4 works it in detail.
+
+## 2. The fraternal order, which is the one modern readers underrate most
+
+**A fraternal benefit order is a business.** Members pay small regular dues. When a member is sick, the order pays a benefit. When a member dies, the order pays for the funeral. Between those payments the order holds money, and money held is money that can be invested.
+
+**Read one order's balance sheet.** The Grand Fountain of the United Order of True Reformers was founded in Richmond on **January 11, 1881** by **William Washington Browne**, a formerly enslaved man, Union Army veteran, teacher and Methodist minister. By **1892 it had 765 chapters and more than 40,000 members**, and by the early 1900s it had branches in **24 states**. Members bought death-benefit certificates for **1 dollar 50 cents**, which initially paid heirs **100 dollars** and later **50 dollars**. By the early 1900s the order had **paid out more than one million dollars in death benefits** (Encyclopedia Virginia, n.d.-a).
+
+**Now look at what that order owned**, because this is the part that turns a benefit society into an economy: **a 50-room hotel; retail stores selling groceries, farm implements and goods its own members manufactured; three farms; fourteen meeting halls; an office building at 604 to 608 North Second Street in Richmond, built in 1891; a newspaper, the *Reformer*; a 634-acre old folks home established in 1898; and a five-storey building in Washington, D.C., completed in 1902** (Encyclopedia Virginia, n.d.-a).
+
+**That is vertical integration**, and it is the single most efficient answer to exclusion in this entire course. If white landlords will not rent you a hall, own the hall. If white newspapers will not carry your advertising, own the paper. **Every one of those assets is also collateral**, which matters enormously in Section 4.
+
+## The other order you need to know, because it did the same thing with a different balance
+
+The **Independent Order of St. Luke** was, when **Maggie Lena Walker** was elected its Right Worthy Grand Secretary in **1899**, facing bankruptcy. She held the post until her death in **1934**. **Over roughly 25 years of her leadership the order grew to about 100,000 members across 24 states, collected nearly 3.5 million dollars, and built reserves of about 100,000 dollars** (Encyclopedia Virginia, n.d.-b).
+
+**On August 20, 1901, Walker stood up and announced what she intended to build: a bank, a newspaper and a department store** (Encyclopedia Virginia, n.d.-b). She then built all three. Lesson 8 follows each one, including the one that closed.
+
+## 1, 3, 4 and 5, briefly, because each gets its own treatment later
+
+- **The church.** Congregations bought land early, often before individual members could. A church that owns its building has a balance sheet and a credit history, and its trustees are usually the same men who later sign a bank charter. **Watch for the overlap of names between a church board and a bank board. It is almost always there.**
+- **The insurance company.** Section 4 is largely about this. The short version: **an insurer is legally obliged to hold reserves against future claims, and reserves are investable capital.** That legal obligation is the machine.
+- **The bank or building and loan.** The distinguishing question is not size, it is **who the lender answers to**. Lesson 15 separates them properly.
+- **The newspaper.** Lesson 6.
+
+## The honest caveat, and it belongs here rather than at the end
+
+**Two of the institutions named in this lesson failed.** The True Reformers bank **closed on October 20, 1910** after its cashier embezzled more than **50,000 dollars** and several businesses defaulted on large unsecured loans, and the order could not pay claims; the order itself formally ceased operations in **1934** (Encyclopedia Virginia, n.d.-a).
+
+**Report that in the same voice you report the 765 chapters.** Not as a moral, not as a twist, and above all not as the point of the story. **A 29-year run that reached 40,000 members in 24 states and built a hotel, three farms and fourteen halls is a real achievement, and it ended in an embezzlement and a bank failure. Both sentences are true and neither one edits the other.** That is the discipline this whole course is trying to teach you, applied to a case where the failure is internal rather than imposed, which is the harder case.
+
+## Sources
+- Encyclopedia Virginia. (n.d.-a). *Grand Fountain of the United Order of True Reformers*. https://encyclopediavirginia.org/entries/grand-fountain-of-the-united-order-of-true-reformers/
+- Encyclopedia Virginia. (n.d.-b). *Maggie Lena Walker (1864-1934)*. https://encyclopediavirginia.org/entries/walker-maggie-lena-1864-1934/
+- Du Bois, W. E. B. (Ed.). (1907). *Economic co-operation among Negro Americans*. Atlanta University Press. https://docsouth.unc.edu/church/dubois07/dubois.html
+- Walker, J. E. K. (2009). *The history of Black business in America: Capitalism, race, entrepreneurship* (2nd ed.). University of North Carolina Press.`,
+      recallContent: [
+        {
+          prompt: "Name three of the seven record types this course uses, and one thing each cannot prove.",
+          answer: "Any three of: city directory (cannot prove ownership or completeness); charter (cannot prove the institution opened or traded); insurance filing (says nothing about the firms financed unless you read the investment schedules); contemporary study (is an argument, not a neutral survey); National Register nomination (measures survival, not existence); clearance roll (a taking record); the firm's own filings (what a company chose to say on a date).",
+        },
+        {
+          prompt: "Why is a clearance or demolition roll often the best inventory of a district that survives?",
+          answer: "Because the agency had a legal obligation to identify and pay for what it took, so it counted accurately. Durham's project ended with 4,057 households and 502 businesses demolished, and 502 is therefore a census of Black Durham business.",
+        },
+        {
+          prompt: "What is the difference between a charter date and an opening date, using Mechanics and Farmers Bank?",
+          answer: "The bank was chartered by the North Carolina General Assembly on February 25, 1907 and began operations on August 1, 1908. A charter proves a legal entity exists; it does not prove the institution opened or traded.",
+        },
+        {
+          prompt: "What must accompany every figure you publish?",
+          answer: "An owner, a date and a scope. Who counted it, from what, in which year, and covering what.",
+        },
+      ],
+    },
+    {
+      slug: "wtb-press-and-orders",
+      title: "6 · The newspaper as a business, not a mirror",
+      section: "Section 2 · The institutions",
+      body: `The Black press is usually taught as a voice. It was also **a firm with a payroll, a printing plant, a distribution network, an advertising rate card and a circulation figure**, and reading it that way tells you things the voice framing cannot.
+
+**Start with why a district needs a paper at all.** Advertising is how a business tells strangers it exists. If the daily papers will not sell you display advertising, or will only run your notice in a segregated column, then **your firm is invisible to everyone outside your own block**. A district newspaper fixes that, and it does it as a commercial transaction rather than a favour.
+
+**So a Black newspaper's advertising pages are a business directory that somebody paid to be in**, which makes them a different and in some ways better source than a city directory. **A canvasser may miss you. An advertiser paid.**
+
+## The four papers in this course, with their numbers
+
+**The *Chicago Defender*.** Founded in **1905** by **Robert S. Abbott**. Its circulation reached about **50,000 by 1916**, **125,000 by 1918**, and **more than 200,000 by the early 1920s**, with roughly **two thirds of sales outside Chicago** (Hauad, n.d.). It was housed at **3435 South Indiana Avenue from 1920 to 1960** (National Park Service, n.d.).
+
+**Read that two-thirds figure carefully, because it is the most important number in this lesson.** A Chicago paper selling most of its copies outside Chicago is not a local paper. **It is a national distribution business run out of one district**, and its distribution channel was the railroad: Pullman porters carried bundles on the trains and dropped them where they stopped (Hauad, n.d.). **That is a supply chain, built out of the jobs Black men could actually get**, and it is a better example of business ingenuity than most of what gets called ingenuity.
+
+**The *Atlanta Daily World*.** Founded as the *Atlanta World* by **W. A. Scott II on August 5, 1928**, it became the *Atlanta Daily World* in **1932**, one of the first Black daily newspapers in the country. Its offices were on **Auburn Avenue** (New Georgia Encyclopedia, n.d.-c).
+
+**The *Chicago Bee*.** Founded by **Anthony Overton**, a manufacturer and banker, and housed in a building he put up on South State Street. **Note what that means: the same man owned the cosmetics factory, the bank, the insurance company and the newspaper that advertised them.** Sources differ on the *Bee*'s founding year, giving **1925** in some accounts and **1929** in the National Park Service's (National Park Service, n.d.). **Give the year with its source.**
+
+**The *Reformer*.** The Grand Fountain of the United Order of True Reformers published it, bimonthly in **1893** and weekly by **1900 with a circulation of 8,000** (Encyclopedia Virginia, n.d.-a). **An order publishing its own newspaper is the clearest possible statement that the order considered itself an economy and not a club.**
+
+## What a newspaper proves, and what it does not
+
+| The paper says | You may conclude | You may NOT conclude |
+|---|---|---|
+| A firm bought a display advertisement | The firm existed and had cash for advertising | That it was successful, or Black owned |
+| Circulation figures | What the publisher claimed, for advertisers | Actual readership, which was usually higher, since copies were shared |
+| Editorial support for a business | The paper's editorial position | Independence, if the owner also owned the business |
+
+**That last row is not a criticism, it is a reading instruction.** Overton's paper covering Overton's bank is exactly as reliable as any owner-covered-by-owner arrangement, which is to say: useful for facts the owner had no reason to falsify, and unusable for judgments. **The Green Book method course taught you the same skill on a different document.**
+
+## The church and the order, in one paragraph each, because they are the other two publishers
+
+**The church.** Denominational publishing houses printed hymnals, Sunday school material and periodicals, and Du Bois's 1907 Atlanta University study catalogues church "publications" alongside land values and assets when it measures denominations (Du Bois, 1907). **A denomination with a printing house is a manufacturer.**
+
+**The fraternal order.** Beyond the *Reformer*, orders printed ritual books, certificates and membership records. **Those certificates are financial instruments**, and where they survive they are among the most under-used business records in American history.
+
+## Your working habit from this lesson
+
+When you research any firm in any of these districts, **go to the local Black newspaper first and read the advertisements, not the articles.** The articles tell you what the editor thought was important. **The advertisements tell you who had money to spend on being seen**, which is a much better proxy for what was actually operating on the street.
+
+## Sources
+- Du Bois, W. E. B. (Ed.). (1907). *Economic co-operation among Negro Americans*. Atlanta University Press. https://docsouth.unc.edu/church/dubois07/dubois.html
+- Encyclopedia Virginia. (n.d.-a). *Grand Fountain of the United Order of True Reformers*. https://encyclopediavirginia.org/entries/grand-fountain-of-the-united-order-of-true-reformers/
+- Hauad, V. (n.d.). *Robert S. Abbott and the Chicago Defender: Powerhouse of the Black press*. The Ohio State University. https://cpb-us-w2.wpmucdn.com/u.osu.edu/dist/1/3078/files/2012/06/Veronica-Hauad1.pdf
+- National Park Service. (n.d.). *Chicago's Black metropolis: Understanding history through a historic place* [Teaching with Historic Places]. https://www.nps.gov/articles/chicago-s-black-metropolis-understanding-history-through-a-historic-place-teaching-with-historic-places.htm
+- New Georgia Encyclopedia. (n.d.-c). *Atlanta Daily World*. https://www.georgiaencyclopedia.org/articles/arts-culture/atlanta-daily-world/`,
+      recallContent: [
+        {
+          prompt: "Name the five institutions that appear in every district in this course, in the order they usually appeared.",
+          answer: "The church, the fraternal order or mutual aid society, the insurance company, the bank or building and loan, and the newspaper.",
+        },
+        {
+          prompt: "Describe the capital chain those five institutions form.",
+          answer: "A church gathers people. An order turns them into a pool of dues. An insurer turns the pool into regulated reserves, which are assets. A bank turns assets into loans. A newspaper turns loans into visible businesses.",
+        },
+        {
+          prompt: "What did the Grand Fountain of the United Order of True Reformers own besides its bank?",
+          answer: "A 50-room hotel, retail stores, three farms, fourteen meeting halls, an office building on North Second Street in Richmond built in 1891, the Reformer newspaper, a 634-acre old folks home from 1898, and a five-storey building in Washington, D.C., completed in 1902.",
+        },
+        {
+          prompt: "What three things did Maggie Lena Walker announce on August 20, 1901, and did she build them?",
+          answer: "A bank, a newspaper and a department store. She built all three. The department store closed in 1911.",
+        },
+        {
+          prompt: "How should the True Reformers bank failure of October 20, 1910 be reported?",
+          answer: "In the same voice as the 765 chapters and 40,000 members. A 29-year run that built a hotel, three farms and fourteen halls is a real achievement, and it ended in an embezzlement of more than 50,000 dollars and defaulted unsecured loans. Both are true and neither edits the other.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
