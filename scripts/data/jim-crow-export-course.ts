@@ -1379,6 +1379,248 @@ On classification: some states counted descent "for up to three generations," fi
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · The limits of the analogy
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ex-limits",
+      title: "18 · Where the analogy breaks, taught on purpose",
+      section: "Section 5 · The limits of the analogy",
+      body: `**This course teaches the transmission of legal technique. It does not equate outcomes.** That sentence is in the course rather than left for you to infer, because a course on this subject that leaves it to inference has failed at its main job.
+
+**Limit 1. Outcome, and it is not close.** The United States Holocaust Memorial Museum states: "In total, six million Jewish men, women, and children were murdered by the Nazi German regime and its allies and collaborators" (United States Holocaust Memorial Museum, n.d.-b). **There is no American equivalent, and nothing in sections 3 or 4 suggests otherwise.** A shared drafting technique in 1935 is not a shared outcome in 1942, and treating the first as evidence of the second is the error the whole course is built to prevent.
+
+**And the mirror error, stated in the same breath, because it belongs there.** The Equal Justice Initiative documented 4,075 racial terror lynchings of African Americans in twelve southern states between 1877 and 1950 (Equal Justice Initiative, 2017). **That is not softened by anything in this course either.** **Neither of these two paragraphs is a response to the other. They are both simply true, and the impulse to weigh them against each other is the impulse to stop reading.**
+
+**Limit 2. Intent at the moment of the borrowing.** Whitman writes: "It is simply not the case that the drafters of the Nuremberg laws were already aiming at the annihilation of the Jews in 1935. The concern of early Nazi policy was to drive the Jewish population into exile, or at the very least to marginalize it within the borders of the Reich" (Whitman, 2017, p. 13). **Read what that does and does not do.** It dates the intent of the 1935 drafters. **It does not make the 1935 laws innocent**, and it does not mean that what came later was unconnected to them. **It means 1935 and 1942 are different objects and have to be dated separately**, which is the same chronology discipline lesson 14 applied to apartheid and the Indiana Avenue course applied to Unigov.
+
+**Limit 3. Structure.** American racism in this period was **decentralised**: state legislatures, state courts, thirty different anti-miscegenation regimes with different thresholds and different penalties, inside a single country that also contained a constitutional tradition working against them. Whitman is explicit: "the racist strains in American law coexisted and competed with some glorious humane and egalitarian strains" (Whitman, 2017, p. 15), and Nazi lawyers spent a good deal of energy "deploring, and puzzling over, the strength of the liberal countercurrent in a country with so much openly and unapologetically sanctioned racism" (Whitman, 2017, p. 15). **A one-party dictatorship and a federal constitutional republic with a large racist minority are not the same kind of machine**, even when parts of them look alike.
+
+**Limit 4. Target.** American race law was aimed at Black Americans, at Chinese and Japanese immigrants, at Filipinos, at Native Americans. **The Nuremberg Laws were aimed at Jews, whom American law classified as white.** Freisler said so in the room, and Rethmeier built an entire objection on it (lesson 11). **The mismatch is not a technicality. It is the reason no statute could simply be lifted.**
+
+**Limit 5. The lynching and terror comparison, which is a comparison and not a transmission.** Whitman opens his book by noting that in the 1930s Nazi Germany and the American South had, in the words of two southern historians, "the look of a 'mirror image'," two unapologetically racist regimes in which people were "hounded, beaten, and sometimes murdered" (Whitman, 2017, p. 3). **That is a resemblance claim, and it belongs on rung 5 of the ladder.** Historians argue about how far the comparison goes and what it explains. **What nobody has produced is a document in which one regime's terror practice was studied and adopted by the other**, and this course does not pretend otherwise. **The legal record is about statutes. It is not about lynching, and stretching it to cover lynching is exactly the overreach section 1 warned you about.**
+
+**Limit 6. The comparison cannot be used to rank suffering, and the attempt is itself a harm.** There is no arithmetic that makes one of these histories acceptable by reference to the other. **A comparison that ends in a ranking has stopped being history and become an argument about whose ancestors matter, which is not a question the sources can answer and not a question worth asking.**
+
+**What survives all six limits, which is the actual finding.** **Legal techniques are portable.** A two-tier citizenship, a quota formula keyed to a census, a criminal marriage ban with an anti-evasion clause, and a classification rule with a threshold: these are modular pieces of drafting, and they can be studied, written up, argued over and adapted by a government whose ideology and whose targets are entirely different. **That is a smaller claim than the one people arrive with, and it is the one the evidence supports.**
+
+## Sources
+- Equal Justice Initiative. (2017). *Lynching in America: Confronting the legacy of racial terror* (3rd ed.). https://eji.org/reports/lynching-in-america/
+- United States Holocaust Memorial Museum. (n.d.-b). *Documenting numbers of victims of the Holocaust and Nazi persecution*. Holocaust Encyclopedia. https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "Why is the cross-citation between freedom movements better documented than the legal-technique traffic?",
+          answer: "Because movements cite their forebears on purpose and in public, since citing them is part of the work. A regime borrowing a technique of exclusion has no reason to advertise it.",
+        },
+        {
+          prompt: "What did the 1962 Luthuli and King appeal ask people to do?",
+          answer: "Hold meetings and demonstrations on Human Rights Day, press their governments to support economic sanctions, and refuse to buy South African products, trade with South Africa or invest there.",
+        },
+        {
+          prompt: "Which American figures did Mandela name before Congress in 1990?",
+          answer: "George Washington, Abraham Lincoln and Thomas Jefferson as figures met through literature, and John Brown, Sojourner Truth, Frederick Douglass, W.E.B. Du Bois, Marcus Garvey and Martin Luther King Jr. as people he had heard of and admired.",
+        },
+        {
+          prompt: "Why does this course stop at the edge of the Pan-Africanism and Afrocentricity courses?",
+          answer: "Because Du Bois, Garvey and King are the spine of those courses and summarising them here would do them badly. This course carries the legal-technique thread only.",
+        },
+      ],
+    },
+    {
+      slug: "ex-two-misuses",
+      title: "19 · The two misuses, named and disarmed",
+      section: "Section 5 · The limits of the analogy",
+      body: `**Both misuses are built out of true statements.** That is what makes them effective and what makes a general warning useless. **You disarm them by knowing which true statement got dropped.**
+
+**Misuse 1: "America equals Nazi Germany."**
+
+*How it is assembled, step by step.*
+1. Quote Freisler saying American jurisprudence "would suit us perfectly." **Stop before the words "with a single exception."**
+2. Report that Nazi lawyers studied American law. **Omit "too harsh" and the rejection of the one-drop rule.**
+3. Upgrade Whitman's "possible, indeed likely" to *proved*.
+4. Slide from the 1935 statutes to the Holocaust without dating anything in between.
+5. Conclude that America was the author of Nazi race law.
+
+*What is wrong with it.* **Every individual step except the last is a real quotation or a real fact.** The conclusion is still false, and Whitman rejects it in his own text: "None of this is to suggest that America was a Nazi country in the 1930s" (Whitman, 2017, p. 15), and "[w]e can, and should, reject the sort of simple-minded anti-Americanism that blames the United States for all the evils of the world, or reduces America to nothing but its history of racism" (Whitman, 2017, pp. 15 to 16).
+
+*How to disarm it in one move.* **Ask for the second half of the Freisler sentence.** Anyone who has actually read the source can supply it. **Anyone who cannot has been working from a headline.**
+
+**Misuse 2: comparison as minimisation.**
+
+*How it is assembled, step by step.*
+1. Report, correctly, that the Nazis found the American one-drop rule too harsh.
+2. Infer that American race law was therefore comparatively moderate.
+3. Add that the Nuremberg drafters were not yet aiming at annihilation in 1935.
+4. Add that South Africa developed in parallel rather than by copying, and let "parallel" quietly mean "unconnected."
+5. Conclude that American segregation has been overrated by comparison with real tyranny.
+
+*What is wrong with it.* Step 2 inverts the evidence. **Whitman's actual sentence is that scholars who see parallels between American and Nazi classification schemes are wrong "only because they understate the relative severity of American law"** (Whitman, 2017). **The Nazis found the American rule too harsh. That is a fact about the American rule.** Step 3 misuses a claim about the 1935 drafters as if it were a claim about the whole regime. Step 4 confuses "not derived from" with "not comparable to," when lesson 14's finding was a shared colonial parent, which is a relationship and not an absence of one.
+
+*How to disarm it in one move.* **Ask what the comparison is for.** A comparison that produces a ranking has left history. **"Which was worse" is not a research question.**
+
+**A third misuse, quieter and more common than either.** **Reaching for this material to score a point about the present without doing any of the legal work.** Sections 3 and 4 are about named instruments, named bodies, named dates and named documents. **An argument that gestures at "America taught the Nazis" to characterise some current dispute has borrowed the emotional weight of the history and none of its method.** The Indiana Avenue course put the same rule on writing about a city block: **name the instrument every time you name a harm.** It applies here without modification.
+
+**A self-test for anything you write on this subject.** Three questions, and you should be able to answer all three about your own draft.
+
+| Question | If the answer is no |
+|---|---|
+| **Have I said which rung of the ladder my claim is on?** | The reader cannot tell whether you found a transcript or a resemblance |
+| **Have I included the fact that most cuts against my conclusion?** | You are advocating, not reporting |
+| **Would the scholar I disagree with recognise my summary of their position?** | You have built a straw version and beaten it |
+
+**And one last framing, which is the reason the course was built this way.** Whitman writes that we may feel a need "to identify a true nefandum, an abyss of unexampled modern horror against which we can define ourselves" (Whitman, 2017, p. 14). **Both misuses serve that need in opposite ways.** One makes America part of the abyss so the writer can stand outside it. The other keeps the abyss safely foreign so the writer can stand outside it. **Standing outside it is the thing both are for, and the discipline of naming instruments and dates is what stops you.**
+
+## Sources
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "State this course's boundary sentence about outcomes.",
+          answer: "The course teaches the transmission of legal technique. It does not equate outcomes. A shared drafting technique in 1935 is not a shared outcome in 1942.",
+        },
+        {
+          prompt: "What does Whitman's claim about the intent of the 1935 drafters do, and what does it not do?",
+          answer: "It dates the intent of the drafters, who aimed at exile or marginalisation rather than annihilation. It does not make the 1935 laws innocent, and it does not disconnect them from what came later. It means 1935 and 1942 must be dated separately.",
+        },
+        {
+          prompt: "Give the structural difference between the American and Nazi race regimes.",
+          answer: "American racism was decentralised across state legislatures and courts, inside a country whose constitutional tradition also worked against it, and Nazi lawyers deplored and puzzled over that liberal countercurrent. The Nazi state was a one-party dictatorship.",
+        },
+        {
+          prompt: "How does this course classify the comparison between American racial terror and Nazi violence?",
+          answer: "As a resemblance claim on rung 5, which historians argue about. Nobody has produced a document in which one regime's terror practice was studied and adopted by the other, so it is a comparison and not a transmission.",
+        },
+        {
+          prompt: "What survives all six limits?",
+          answer: "That legal techniques are portable. A two-tier citizenship, a quota formula keyed to a census, a criminal marriage ban with an anti-evasion clause, and a classification threshold are modular pieces of drafting that a government with different targets can study and adapt.",
+        },
+      ],
+    },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · Why it matters now
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "ex-why-it-matters",
+      title: "20 · Why it matters now: read it as history of law",
+      section: "Section 6 · Why it matters now",
+      body: `**The finding is not that some country was secretly the villain. The finding is about how law travels**, and that is a durable, usable thing to know.
+
+**1. Comparative research before legislation is normal, and normality is the point.** Whitman quotes Konrad Zweigert and Hein Kötz, the leading postwar German comparative lawyers, on how legislation actually gets made: "Legislators all over the world have found that on many matters good laws cannot be produced without the assistance of comparative law," and "[e]ver since the second half of the nineteenth century legislation in Germany has been preceded by extensive comparative legal research." Whitman's addition is the sting: this description "is just as pertinent to the making of bad laws as it is to the making of good ones" (Whitman, 2017). **A ministry commissioning a survey of foreign statutes is not a conspiracy. It is Tuesday.** Which is precisely why the survey is worth reading.
+
+**2. Legal techniques are modular in a way that ideologies are not.** You cannot transplant a worldview. **You can absolutely transplant a drafting device.** Look back at what actually crossed: a threshold rule for classifying people by descent, a two-tier citizenship, a criminal marriage prohibition with an anti-evasion clause, a quota formula keyed to a census year. **Each of those is a component**, and a component can be picked up by a regime with a different history, a different target population, and a different justification. **That is the transferable lesson, and it is why "our law is nothing like theirs" is a weak defence when the question was about a component.**
+
+**3. The most uncomfortable finding in the book is not about racism at all.** Whitman argues that what appealed to Nazi lawyers included the **American legal style**: the open-endedness and flexibility of common-law method, judge-made law, and the legal realism that was fashionable in New Deal America as well as in Nazi Germany. Freisler praised American jurisprudence as one that "would suit us perfectly," and Whitman writes that what attracted Nazi lawyers "was not just American racism but American legal culture" (Whitman, 2017). **Flexibility is a feature until you ask flexible in whose hands.** That is a question worth carrying to any argument about legal innovation.
+
+**4. The reception of the argument is part of the argument.** Michael Stolleis, reviewing the book from Germany, noticed that its warm American reception seemed to carry an implication: that American society should reflect critically on its own past and present rather than only pointing at Nazi Germany (Stolleis, 2018). He also closes his review by observing that a sharper light on the American share of discrimination by colour, religion, sex and language makes visible that the whole business was not banished on 8 May 1945 (Stolleis, 2018). **Notice that a German legal historian is the one making that point about America, and notice that noticing it does not settle whether he is right.**
+
+**5. What to do with all of this, concretely.** When you next meet the phrase "modelled on" in a news story about a law, treat it as a claim that needs the same handling this course has given its two claims.
+
+| Ask | Because |
+|---|---|
+| **Which rung?** | Copied text, commissioned study, mere awareness, or resemblance are four different claims |
+| **Where is the memo?** | Real legislative borrowing usually leaves a research trail, and the trail is often public |
+| **Who was the document's audience?** | A closed briefing and a press release are different evidence |
+| **What did they reject, and why?** | The rejections tell you more about the borrower than the adoptions do |
+| **Does the chronology work?** | The proposed cause has to precede the effect |
+
+**The last of those five is the one this course has used most.** It broke the easy story about apartheid in lesson 14, it dated the Nuremberg definition against the radicals' proposal in lesson 10, and it is the same test that broke a proposed argument in the Indiana Avenue course. **A table of dates is the cheapest research instrument there is, and it wins arguments that rhetoric cannot.**
+
+**Why this belongs at the end of a series about American cities.** The city courses taught that racial outcomes on one block were made by named decisions under named instruments. **This course asked whether those instruments were exportable, and found that at least some of them were studied abroad as the leading example of the type.** That reframes the city courses without changing a word in them: **a country whose race law was catalogued by foreign ministries as the world's most developed example cannot treat its own segregation as a local embarrassment.** It was, in the technical sense that this course has been careful to define, a model.
+
+## Sources
+- Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "How is misuse 1, the America-equals-Nazi-Germany reading, assembled?",
+          answer: "Quote Freisler up to \"would suit us perfectly\" and stop before \"with a single exception\"; report the study but omit the rejection of the one-drop rule as too harsh; upgrade Whitman's hedge to proof; slide from 1935 to the Holocaust without dating anything.",
+        },
+        {
+          prompt: "What is the one-move disarming of that misuse?",
+          answer: "Ask for the second half of the Freisler sentence. Anyone who has read the source can supply it. Anyone who cannot has been working from a headline.",
+        },
+        {
+          prompt: "Which step in misuse 2 inverts the evidence, and what is the actual sentence?",
+          answer: "The step that infers American law was comparatively moderate. Whitman's actual claim is that scholars who see parallels are wrong only because they understate the relative severity of American law.",
+        },
+        {
+          prompt: "What is the third and quieter misuse?",
+          answer: "Reaching for the material to score a present-day point without doing any of the legal work, borrowing the emotional weight of the history and none of its method. Name the instrument every time you name a harm.",
+        },
+        {
+          prompt: "Give the three questions of the self-test.",
+          answer: "Have I said which rung of the ladder my claim is on? Have I included the fact that most cuts against my conclusion? Would the scholar I disagree with recognise my summary of their position?",
+        },
+      ],
+    },
+    {
+      slug: "ex-what-this-left-out",
+      title: "21 · What this course left out, and the sources nobody has read here",
+      section: "Section 6 · Why it matters now",
+      body: `**A course that does not tell you its own edges is asking to be over-trusted.** Here are the edges.
+
+**Deliberately not covered, and where each one lives instead.**
+
+- **Nazi eugenics and the American eugenics movement.** Whitman names Stefan Kühl's *The Nazi Connection: Eugenics, American Racism, and German National Socialism* (1994), which showed an active traffic between American and Nazi eugenicists into the late 1930s, and named American figures whose works were standard citations in Germany (Whitman, 2017, p. 8). **That is a separate literature with a separate evidence base and it deserves its own course, not a paragraph here.**
+- **Lebensraum and the American conquest of the West.** Whitman reports that Nazi leaders repeatedly invoked American westward expansion when speaking of their own conquests, quotes Hitler doing so in a 1928 speech, notes Hans Frank calling the Jews of Ukraine "Indians" in 1942, and quotes Norman Rich's conclusion that American westward expansion "served as the model for Hitler's entire conception of Lebensraum" (Whitman, 2017, pp. 9 to 10). **Whitman also notes that there are historians who deny the significance of those quotations.** This course did not adjudicate that, because it is not a claim about legal technique.
+- **Australia, Brazil, and British colonial law more broadly.** Whitman's conclusion gestures at all three as further places where inequality was created by statute along biological lines, and Kier's 1933 research brief covered Australia alongside the United States and South Africa (Stolleis, 2018). **Neither is followed up here.**
+- **The transnational Black political movement.** ***Pan-Africanism*** is the course for that, and ***Afrocentricity*** is the course for the intellectual and cultural frame. **This course cross-links to them and deliberately does not summarise them.**
+- **The American domestic story.** The city courses do that work, and this course assumed it.
+
+**Things this course looked for and would not print.**
+1. **Apartheid officials publicly invoking the American example.** Discussed in lesson 15. The best evidence located was a cartoon reproduced in a journalistic piece. **Below the floor, so left out.**
+2. **The House and Senate override tallies for the Comprehensive Anti-Apartheid Act of 1986.** Published sources consulted disagreed. **The dates and the public law number are given instead.**
+3. **Any characterisation of the Wiesen and Ledford reviews of Whitman.** They are named in lesson 11 as places to go. **They were not read in full here, so they are not summarised.**
+
+**The unopened sources, which are the actual next work.** Every item on this list is real, and none of it was read for this course.
+
+| Source | Why it matters |
+|---|---|
+| The full German transcript of the 5 June 1934 Commission meeting | Everything in section 3 rests on one scholar's reading of it |
+| Heinrich Krieger, *Das Rassenrecht in den Vereinigten Staaten* (1936) | Whitman writes that the book "would deserve at least a partial translation today" |
+| Herbert Kier, "Volk, Rasse und Staat," in Frank (Ed.), *Nationalsozialistisches Handbuch für Recht und Gesetzgebung* (1935), pp. 17 to 28 | The thirty-state table itself, rather than a description of it |
+| Jens-Uwe Guettel (2012) and Andreas Rethmeier (1995) | The other side of the argument, read directly rather than through Whitman |
+| Maurice Evans, *Black and White in the Southern States* (1915) | A South African segregationist's own account of the American South |
+| C. T. Loram, *The Education of the South African Native* (1917) | The clearest American-to-South-African transfer in the section |
+| United Nations records of South African delegations, 1950s | Where claim 1 in the "would not print" list above could be settled |
+| The record of the September 1935 German lawyers' delegation to the United States | Whitman's reviewers note the gap; somebody should close it |
+
+**What you can do now that you could not do before.**
+- **Grade an influence claim by rung** instead of accepting or rejecting it whole.
+- **Read a hedge as data.** "Possible, indeed likely" is a measurement of an author's own confidence, and it should change yours.
+- **Ask who a document's audience was**, and treat a closed briefing and a press release as different evidence.
+- **Break a causal story with a table of dates**, which worked on apartheid in lesson 14 and on the Nuremberg definition in lesson 10.
+- **Spot both misuses from their missing pieces**, rather than from their tone.
+- **Say "we do not know" in writing**, which is the single hardest sentence in this course and the one Whitman writes at the moment his own argument would most like him not to.
+
+**The last thing, and the reason the course exists.** The instruments in section 2 were not hidden. They were published statutes in a democratic republic, printed in volumes anyone could order, and a foreign ministry ordered them, catalogued them, and argued about them in a room with a stenographer. **The most disturbing fact in this whole subject is not that anything was concealed. It is that nothing was.** Whatever else you take from this course, take that: **the record of how a country governs race is public, and someone is always reading it.**
+
+## Sources
+- Stolleis, M. (2018). Lehrmeister Amerika [America the schoolmaster]. *Rechtsgeschichte / Legal History*, *26*, 489 to 492. https://doi.org/10.12946/rg26/489-492
+- Whitman, J. Q. (2017). *Hitler's American model: The United States and the making of Nazi race law*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "Why does Whitman quote Zweigert and Kötz on comparative law, and what is his addition?",
+          answer: "To show that comparative research before legislation is ordinary practice, and that German legislation had been preceded by extensive comparative research since the second half of the nineteenth century. His addition is that the description is just as pertinent to the making of bad laws as of good ones.",
+        },
+        {
+          prompt: "Why are legal techniques portable in a way ideologies are not?",
+          answer: "Because a threshold rule, a two-tier citizenship, a criminal marriage ban with an anti-evasion clause and a quota formula keyed to a census are components. A component can be picked up by a regime with a different history, target and justification.",
+        },
+        {
+          prompt: "What did Whitman find attracted Nazi lawyers besides American racism?",
+          answer: "American legal culture: the open-endedness and flexibility of common-law method, judge-made law, and the legal realism fashionable in New Deal America as well as in Nazi Germany. Flexibility is a feature until you ask flexible in whose hands.",
+        },
+        {
+          prompt: "Give the five questions to ask of any claim that a law was modelled on a foreign one.",
+          answer: "Which rung of the ladder? Where is the memo? Who was the document's audience? What did they reject and why? Does the chronology work?",
+        },
+        {
+          prompt: "How does this course reframe the city courses without changing a word in them?",
+          answer: "A country whose race law was catalogued by foreign ministries as the world's most developed example of the type cannot treat its own segregation as a local embarrassment. It was, in the technical sense the course defines, a model.",
+        },
+      ],
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
