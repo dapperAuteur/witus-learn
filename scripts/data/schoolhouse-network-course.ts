@@ -487,6 +487,495 @@ Historian **James D. Anderson** argues in *The Education of Blacks in the South,
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 2 · The money  (THE LOAD-BEARING SECTION)
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "sn-money-matching-model",
+      title: "5 · The matching model: one building, four columns",
+      section: "Section 2 · The money",
+      body: `**This is the section the course exists for.** Section 1 established what was built. This section establishes **who paid**, and the answer is the part of the story that gets left out most reliably.
+
+**The mechanism has a name: the challenge grant, also called the matching grant.** The Fund did not build schools. **The Fund offered money that only existed if other money appeared first**, and the other money had to come from named sources in stated proportions. Learn this mechanism and you can read almost any twentieth-century philanthropic program, because the design outlived its inventor.
+
+## The four columns
+
+Every completed Rosenwald building has a budget with the same shape. The Fund's own card file, which lesson 7 opens, uses these headings:
+
+| Column | Who | What it usually was |
+|---|---|---|
+| **Rosenwald** | Julius Rosenwald personally, then the Julius Rosenwald Fund | A capped grant, initially up to 350 dollars per new schoolhouse |
+| **Public** | The county or state, out of tax revenue | Usually the largest single column |
+| **Negroes** | The local Black community | Cash, land, materials, and labour valued in dollars |
+| **Whites** | Local white residents | Required by the Fund, and frequently zero |
+
+**Those are the archive's own column headings, reproduced here as the record's language rather than this course's.** When you cite a card, quote the heading and say it is the heading.
+
+## What a community had to produce before a grant existed
+
+From the documentation forms (Obenauer & Brown, 2015; Weathers, 2008; Oklahoma Historical Society, n.d.-a):
+
+1. **A site**, with the Fund recommending a minimum of **two acres**, the building placed in one corner so the rest could hold a playground, a garden or agricultural plot, the privies and a well.
+2. **A matching contribution** from the local Black community, in cash, land, materials or labour.
+3. **A contribution from local white residents**, which the North Carolina form describes as **a requirement of aid from the Fund** (Obenauer & Brown, 2015, p. 4).
+4. **A public commitment**: local and state education funds toward construction, and an agreement by the public school authority to **operate and maintain** the school as part of the public system.
+5. **Required equipment**: blackboards along one or two walls of each classroom, patent desks, cloakrooms and two sanitary privies (Obenauer & Brown, 2015, p. 54).
+
+**Read requirement 3 next to a sentence from the Fund's own historians.** Edwin Embree and Julian Waxman wrote that "White citizens balked at the idea of contributing towards buildings for Negroes that would in many instances be better than the existing schools for their own children" (quoted in Obenauer & Brown, 2015, p. 23). **A required column that was often empty is a fact about the requirement, not only about the column.**
+
+## What the grants were worth, and how they moved
+
+- **Schoolhouses.** Under Tuskegee's administration the grant was initially capped at **350 dollars** per new schoolhouse (Obenauer & Brown, 2015, p. 7). Rosenwald's earliest grants ran at **300 dollars** (Obenauer & Brown, 2015, p. 6).
+- **Teachers' homes.** From **1922** the Fund offered up to **1,000 dollars** toward a teacherage, then reduced this the following year to **half the cost up to 900 dollars**. Grants were also offered in any county with **no** Rosenwald school if its Black population exceeded ten percent of the total (Obenauer & Brown, 2015, p. 16).
+- **Shops.** From **1927** the Fund issued grants of **200 to 400 dollars** for shop buildings, if built to Rosenwald plans, fully equipped and properly staffed (Weathers, 2008, p. 11).
+- **Buses.** From the **1929-1930** academic year the Fund offered rural bus grants, conditional on the school being a two-teacher plan or larger, a school term of at least eight months, and teachers paid a minimum of **60 dollars a month**. In North Carolina the aid covered half the cost the first year up to 500 dollars, a third the second year and a quarter the third (Obenauer & Brown, 2015, pp. 15-16).
+
+**Every one of those conditions is a lever.** A grant that requires an eight-month term is buying a longer school year, not a bus. **Read a grant condition as a policy instrument and you will always know what the grantmaker actually wanted.**
+
+## Where the community's money came from
+
+This part is documented in specifics, and the specifics are better than any summary of them.
+
+- **Educational rallies and box parties.** A box party was part of an educational rally: baked goods and handmade items, including dolls, were placed in boxes and bid on by anyone in the community (Obenauer & Brown, 2015, pp. 23-24).
+- **Divided labour, and not as neatly as it is usually told.** Box parties were often a way women raised money while men contributed physical labour. **Historian Mary Hoffschwelle is quoted in the same passage correcting the tidy version: "Although the men committed themselves as the heads of their families, women and children put in their labour as well"** (quoted in Obenauer & Brown, 2015, p. 24).
+- **Crops and livestock.** A North Carolinian wrote in 1924: "An acre of cotton may be planted and the profits from the sale of it applied on the school. In many sections hogs and chickens are raised by the community to obtain money for buildings" (quoted in Obenauer & Brown, 2015, p. 25).
+- **Materials cut, hauled, milled and delivered by the community that gave them.** The same 1924 account records that at **Lumber Bridge, in Robeson County**, "the people gave seventy thousand feet of lumber for framing and sheathing. This was cut from their own hands, hauled by their own teams to a saw mill owned by themselves, sawed by bill, and laid down on a school lot purchased with their own funds" (quoted in Obenauer & Brown, 2015, p. 25).
+- **The church.** In many communities the church donated the two or more acres the Fund required, and church elders organised the campaign. The documentation form quotes the reason: in a region where white residents discouraged Black participation in nearly any organised activity, "churches provided the single strong institutional framework for Afro-American endeavors" (quoted in Obenauer & Brown, 2015, p. 23).
+
+**Now apply the rule from lesson 1 to that list.** Every item on it is an achievement, and every item on it is also a measurement of what a public system was refusing to pay for. **Do not close this lesson with the lumber.** Close it with the question the next lesson answers: **how much of the total did that add up to, and what does the total mean?**
+
+## Sources
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf
+- Oklahoma Historical Society. (n.d.-a). *Rosenwald schools*. The Encyclopedia of Oklahoma History and Culture. https://www.okhistory.org/publications/enc/entry?entry=RO029
+- Weathers, L. C. M. (2008). *The Rosenwald school building program in South Carolina, 1917-1932* [National Register of Historic Places multiple property documentation form]. University of South Carolina Public History Program. http://www.nationalregister.sc.gov/MPS/MPS050.pdf`,
+      recallContent: [
+        {
+          prompt: "Who wrote the proposal that started the program, when, and what did point four of it say?",
+          answer: "Booker T. Washington, in a letter to Julius Rosenwald dated 12 June 1912. Point four said care should be taken to keep any county from relying on the fund, so that each county would be stimulated to do more for itself than it had before. That is the origin of the matching requirement.",
+        },
+        {
+          prompt: "Break down the budget of the first Rosenwald school at Loachapoka, Alabama, March 1913.",
+          answer: "Total 942 dollars 50 cents: Rosenwald's grant 300, local African Americans 150 in cash plus labour valued at 142.50, and local white citizens 350. Public officials then maintained the building.",
+        },
+        {
+          prompt: "What happened to the program's administration in 1920, and what prompted it?",
+          answer: "It moved from Tuskegee Institute to a new southern office in Nashville under Samuel L. Smith. Fletcher B. Dresslar's inspection of forty-seven schools in August and September 1919 and his subsequent report contributed to the decision.",
+        },
+        {
+          prompt: "Whose name is on these buildings, and what did the man himself think about that?",
+          answer: "Julius Rosenwald discouraged the use of his name on buildings he funded, and most schools were named for their communities. They are called Rosenwald schools anyway, because that is the category the surviving record keeps them under.",
+        },
+        {
+          prompt: "State the credit question as a clash between two documents.",
+          answer: "Public Law 116-336 attributes all 5,357 buildings to 'the philanthropy of Julius Rosenwald', while the North Carolina documentation form records that the Fund's aid often covered only fifteen to twenty percent of a building's cost. Both are documents; the course does not adjudicate.",
+        },
+      ],
+    },
+    {
+      slug: "sn-money-the-share",
+      title: "6 · The share the communities paid, and what it does and does not prove",
+      section: "Section 2 · The money",
+      body: `**This is the load-bearing lesson of the course.** It is one arithmetic question, asked carefully: **of the money that built these buildings, how much came from the Black communities that used them?** The answer is repeated everywhere and checked almost nowhere.
+
+## The national figures, with their owners
+
+Two National Register documentation forms, prepared eight years and two states apart, give the same national totals:
+
+| Item | Figure |
+|---|---|
+| Total cost of the 5,357 buildings | about **28.5 million dollars** |
+| Julius Rosenwald and the Rosenwald Fund contributed | **more than 4.3 million dollars** |
+| Local African American communities raised | **more than 4.7 million dollars** |
+
+(Weathers, 2008, p. 11; Obenauer & Brown, 2015, p. 3.)
+
+**Do the division yourself, because the two percentages are the entire argument.**
+- Black communities: 4.7 of 28.5 is about **16.5 percent**.
+- The Rosenwald Fund: 4.3 of 28.5 is about **15.1 percent**.
+
+**The communities put in more than the philanthropist did.** That is the sentence the usual telling of this story does not contain, and it is derived from two state historic preservation documents by dividing one number by another.
+
+## Four cautions before you use those percentages
+
+**1. The Fund's own figure is contested, in three versions.** The forms say more than 4.3 million. **The Fund's own itemised expenditure table lists construction of schoolhouses, teachers' homes and shops at 4,209,210 dollars**, inside a total of 5,362,361 dollars across all its education purposes including buses, term extension, libraries, industrial high schools and the Nashville office's administration (Obenauer & Brown, 2015, p. 15; Weathers, 2008, pp. 11-12). A third figure, **over 4.4 million**, circulates in philanthropy literature. **Three numbers for one column, and the differences are about what is being counted: construction only, construction plus programs, or the founder's personal gifts plus the Fund's.**
+
+**2. This course could not verify the public-funds figure that usually completes the table.** You will frequently see "18.1 million dollars in public funds" attached to this program. **No institutional source read for this course states it**, and the course will not repeat a number it has not seen sourced. What the verified totals support is only this: **28.5 million total, minus 4.7 and minus 4.3, leaves about 19.5 million from public tax revenue and white contributions combined.** If you need the split, go and find it, and cite where you found it.
+
+**3. Labour was counted at a valuation, and somebody chose the valuation.** At Loachapoka in 1913, local Black residents' labour was entered on the budget at **142 dollars 50 cents** (Obenauer & Brown, 2015, p. 6). **That is a price somebody set for other people's work.** The records read for this course do not say who set it or on what basis. **A contribution figure that includes valued labour is partly an accounting decision**, and you should say so whenever you quote one.
+
+**4. A national percentage is not a school.** Lesson 7 shows two real school cards where the community share was 3.5 percent and 10.5 percent. **Neither is 16.5 percent. The average is an average.**
+
+## One state where all four columns are itemised
+
+Tennessee is the cleanest published example, because its state encyclopedia prints the whole ledger for **354 schools, 9 teachers' homes and 10 shops** (Tennessee Encyclopedia, n.d.):
+
+| Column | Amount | Share of the state total |
+|---|---|---|
+| Rosenwald Fund aid | 291,250 | about 14.8 percent |
+| African American contributions | 296,388 | about 15.0 percent |
+| White contributions | 28,027 | about 1.4 percent |
+| Tax revenue | 1,354,157 | about 68.8 percent |
+| **Total** | **1,969,822** | |
+
+**Three findings in one table.**
+1. **Black Tennesseans contributed more than the Rosenwald Fund did**, by about 5,100 dollars.
+2. **White contributions were about 1.4 percent**, against a column the Fund required.
+3. **Tax revenue was more than two-thirds of the total**, which matters because of what the next section of this lesson says about whose taxes those were.
+
+## North Carolina, cumulatively, and a historian's summary
+
+**By 1 July 1932, Black residents of North Carolina had contributed more than 666,000 dollars toward Rosenwald buildings** (Obenauer & Brown, 2015, p. 28). The same form quotes a research report prepared for the state: excluding the largest schools at the end of the program, **it was local African Americans who "almost universally raised the majority amount of money for Rosenwald school construction throughout North Carolina, far in excess of the Fund grants"** (Brown, 2007, quoted in Obenauer & Brown, 2015, p. 23).
+
+## Now the sentence that makes this section a civics lesson, not a fundraising story
+
+The same documentation form states it directly:
+
+> "African American communities in North Carolina, already required to pay taxes for public schools, most of which were made available exclusively to white students, were essentially forced to pay a second school levy in order to provide their children with more than a sporadic, subpar education." (Obenauer & Brown, 2015, p. 23)
+
+**Historian James D. Anderson gave this a name: double taxation** (Anderson, 1988). A community paid the public levy, which mostly built other people's schools, and then raised the money again among itself to unlock a grant.
+
+**And here are the numbers that put a price on it, from the same state.** North Carolina's per-pupil spending (Bullock and Hanchett, cited in Obenauer & Brown, 2015, pp. 27-28):
+
+| School year | Per white student | Per Black student |
+|---|---|---|
+| 1914-1915 | 7.38 | 2.66 |
+| 1929-1930 | 44.48 | 14.30 |
+
+**Spending per Black student in North Carolina rose about fivefold between 1915 and 1930, and remained a fraction of the white figure the entire time.** Both halves of that sentence are in the source, and neither one is allowed to be the ending.
+
+## What the 16.5 percent proves, and what it does not
+
+**It proves** that the communities were the second largest funder of their own schools, ahead of the philanthropy the program is named after, and that they did it out of the smallest incomes in the country.
+
+**It does not prove** that the program was a fraud, that Rosenwald's money was unimportant, or that the matching model was designed to extract. **Washington proposed the matching condition himself**, on a stated theory that a county which contributed would keep contributing (lesson 3). Whether that theory worked is a real historical argument with evidence on both sides, and this course has not settled it.
+
+**And it does not make the story uplifting.** Here is the rule from lesson 1, in its hardest form:
+
+> **A community paying twice for one school is not a triumph of self-reliance. It is a measurement of a transfer.** The transfer is the finding. What the community built with what was left is a separate finding, and putting the second one after the first does not cancel it out.
+
+**Write both. In that order. Without a "but" between them.**
+
+## Sources
+- Anderson, J. D. (1988). *The education of Blacks in the South, 1860-1935*. University of North Carolina Press.
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf
+- Tennessee Encyclopedia. (n.d.). *Julius Rosenwald Fund*. https://tennesseeencyclopedia.net/entries/julius-rosenwald-fund/
+- Weathers, L. C. M. (2008). *The Rosenwald school building program in South Carolina, 1917-1932* [National Register of Historic Places multiple property documentation form]. University of South Carolina Public History Program. http://www.nationalregister.sc.gov/MPS/MPS050.pdf`,
+      recallContent: [
+        {
+          prompt: "Name the four columns on a Rosenwald building's budget, and say whose language those column names are.",
+          answer: "Rosenwald, Public, Negroes and Whites. Those are the Rosenwald Fund card file's own headings, reproduced as the record's language rather than the course's. Quote the heading and say it is the heading.",
+        },
+        {
+          prompt: "List three things a community had to produce before a Rosenwald grant existed at all.",
+          answer: "A site of at least two acres with the building in one corner; a matching contribution from the local Black community in cash, land, materials or labour; a contribution from local white residents, which the Fund required; a public commitment of tax funds and an agreement by the school authority to operate and maintain the school; and the required equipment, including blackboards, desks, cloakrooms and two sanitary privies.",
+        },
+        {
+          prompt: "The Fund's bus grants required an eight-month school term and teachers paid at least 60 dollars a month. What does that tell you?",
+          answer: "That a grant condition is a policy instrument. A grant requiring an eight-month term is buying a longer school year, not a bus. Read the conditions and you know what the grantmaker actually wanted.",
+        },
+        {
+          prompt: "How did communities actually raise their share? Give three documented methods.",
+          answer: "Educational rallies and box parties where baked and handmade goods were bid on; planting an acre of cotton or raising hogs and chickens for the school; and giving materials and labour directly, as at Lumber Bridge in Robeson County where the community cut, hauled and milled seventy thousand feet of lumber and laid it on a lot it had bought.",
+        },
+        {
+          prompt: "Why does this course quote Hoffschwelle's correction about who contributed labour?",
+          answer: "Because the tidy version says women raised money at box parties while men gave labour. Hoffschwelle notes that although men committed themselves as heads of families, women and children put in their labour as well.",
+        },
+      ],
+    },
+    {
+      slug: "sn-money-one-card",
+      title: "7 · Reading one school's card: the primary record for the money",
+      section: "Section 2 · The money",
+      body: `Lesson 6 gave you national and state totals. **Those totals were built out of individual records, and the individual records survive.** This lesson opens two of them, because the difference between reading a summary and reading a source is the difference between knowing a fact and being able to check one.
+
+## Where the record is
+
+The **Rosenwald Fund Card File**, part of the **Julius Rosenwald Fund Archives, 1918-1948**, is held at **Fisk University's John Hope and Aurelia E. Franklin Library** in Nashville. The wider collection runs to **585 archival boxes and an estimated 674,000 items**, including photographs, documents, school fund cards and correspondence, and it is being digitised and published online (Fisk University, n.d.-a, n.d.-b).
+
+**Why Fisk holds it matters.** When the Julius Rosenwald Fund closed, its papers went to a historically Black university in the same city as the Fund's southern office. **The archive of the program is in the custody of an institution of the community the program was about.** That is not always how philanthropic archives end up, and it is one reason this record is as accessible as it is.
+
+## Card one: Oak Grove School, Charles County, Maryland
+
+From the digitised card (Fisk University, n.d.-b):
+
+| Field | Value |
+|---|---|
+| School | Oak Grove |
+| County and state | Charles County, Maryland |
+| Item number | Md 3911 |
+| Application number | 4-J |
+| Year | 1930-31 |
+| Teacher type | 2 |
+| Acreage | 2 |
+| **Total cost** | **2,850** |
+| Negroes | 100 |
+| Public | 2,350 |
+| Rosenwald | 400 |
+
+**Work the percentages.** The Black community's share is 100 of 2,850, which is about **3.5 percent**. The Rosenwald grant is about **14 percent**. Public funds are about **82 percent**.
+
+**Read the acreage and teacher-type fields too.** Two acres is exactly the Fund's recommended minimum. Two teachers means a two-classroom plan, which is the size that came with a movable partition. **The card is telling you which drawing was used.**
+
+## Card two: Capitol Heights School, Prince George's County, Maryland
+
+| Field | Value |
+|---|---|
+| School | Capitol Heights |
+| County and state | Prince George's County, Maryland |
+| Item number | Md 2626 |
+| Application number | 13-E |
+| Year | 1925-26 |
+| Teacher type | 2 |
+| Acreage | 2 |
+| **Total cost** | **4,750** |
+| Negroes | 500 |
+| Whites | 0 |
+| Public | 3,550 |
+| Rosenwald | 700 |
+
+(Fisk University, n.d.-c.)
+
+**Here the Black community's share is 500 of 4,750, about 10.5 percent.** The Rosenwald grant is about 15 percent. **And the Whites column is a printed zero**, on a program whose grant conditions required a white contribution.
+
+## What two cards teach that a national total cannot
+
+**1. The average is an average.** Nationally the Black community share was about 16.5 percent. At Oak Grove it was 3.5 percent and at Capitol Heights 10.5 percent. **No school was the average school.** If you write "Black communities paid 16.5 percent of the cost of these schools," you are describing a sum, not a building. **Describe whichever one you actually mean.**
+
+**2. Two similar schools, five years apart, are not comparable without work.** Both are two-teacher plans on two acres in Maryland. One cost 2,850 dollars and one cost 4,750. **This course has not adjusted either figure for inflation and has not established why they differ.** Site, materials, labour costs, plan revision and local prices are all candidates. **Naming what you have not established is part of the report.**
+
+**3. The card records money and not people.** It does not say how the 500 dollars was raised, over how long, by how many households, or what anybody gave up. **It does not record refusals**, so you cannot see who was asked and said no, or who was never asked. It does not record whether the labour column exists on this card because no labour was given or because nobody wrote it down. **A budget line is the shadow a campaign leaves. It is not the campaign.**
+
+**4. The headings are historical evidence in themselves.** "Negroes" and "Whites" are the card's own printed column headings. **They tell you the program's accounting was organised by race at the level of the form**, which is a fact about the administrative world these buildings were raised in, and it is worth stating plainly rather than paraphrasing away.
+
+## How to do this yourself
+
+1. Go to the Rosenwald Fund collection at Fisk (https://rosenwald.fisk.edu/) and search the school fund database by **state and county**.
+2. Open a card and copy **every** field, including the item number and the application number, because those are how you cite it and how the next researcher finds it again.
+3. Compute the four shares. **Show the arithmetic in your notes**, not just the result.
+4. Cross-check the school against the **National Register** and your **state historic preservation office**, which is what Section 5 teaches.
+5. **Write down what the card does not say.** That list is your research agenda.
+
+## Sources
+- Fisk University. (n.d.-a). *Rosenwald Fund collection: About the project*. John Hope and Aurelia E. Franklin Library. https://rosenwald.fisk.edu/s/rosenwald-fund-collection/page/about-project
+- Fisk University. (n.d.-b). *Oak Grove School* [Rosenwald Fund card file, Md 3911]. Julius Rosenwald Fund Archives, 1918-1948, John Hope and Aurelia E. Franklin Library. https://rosenwald.fisk.edu/s/rosenwald-fund-collection/item/21262
+- Fisk University. (n.d.-c). *Capitol Heights School* [Rosenwald Fund card file, Md 2626]. Julius Rosenwald Fund Archives, 1918-1948, John Hope and Aurelia E. Franklin Library. https://rosenwald.fisk.edu/s/rosenwald-fund-collection/item/21342
+- Obenauer, K., & Brown, C. (2015). *Rosenwald schools in North Carolina* [National Register of Historic Places multiple property documentation form]. North Carolina State Historic Preservation Office. https://files.nc.gov/ncdcr/nr/NC04.pdf`,
+      recallContent: [
+        {
+          prompt: "Give the three national money figures and the two percentages that follow from them.",
+          answer: "About 28.5 million dollars total cost, more than 4.3 million from Rosenwald and the Fund, and more than 4.7 million raised by Black communities. That is about 16.5 percent from the communities and about 15.1 percent from the Fund, so the communities put in more than the philanthropist did.",
+        },
+        {
+          prompt: "Why does this course refuse to print the commonly quoted public-funds figure?",
+          answer: "Because no institutional source read for the course states it. What the verified totals support is that 28.5 million minus 4.7 and minus 4.3 leaves about 19.5 million from public tax revenue and white contributions combined. If you need the split, find it and cite where.",
+        },
+        {
+          prompt: "Give Tennessee's four-column ledger and the three findings in it.",
+          answer: "Rosenwald Fund 291,250; African Americans 296,388; whites 28,027; tax revenue 1,354,157, totalling 1,969,822. Black Tennesseans contributed more than the Fund did; white contributions were about 1.4 percent against a column the Fund required; and tax revenue was more than two-thirds of the total.",
+        },
+        {
+          prompt: "What is double taxation, and who named it?",
+          answer: "Historian James D. Anderson's term for a community paying the public school levy, which mostly built other people's schools, and then raising the money again among itself to unlock a matching grant. The North Carolina documentation form describes the same thing as being forced to pay a second school levy.",
+        },
+        {
+          prompt: "State the rule about what the 16.5 percent figure means, in the course's hardest form.",
+          answer: "A community paying twice for one school is not a triumph of self-reliance; it is a measurement of a transfer. The transfer is the finding, what the community built with what was left is a separate finding, and the second does not cancel the first. Write both, in that order, without a 'but' between them.",
+        },
+      ],
+    },
+    {
+      slug: "sn-quiz-money",
+      title: "8 · Quiz: the money",
+      section: "Section 2 · The money",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 8,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is a challenge grant, in the sense this program used it?",
+            options: [
+              "A grant awarded competitively to the county that submitted the strongest school building application",
+              "Money that only exists once other money appears first, from named sources in stated proportions",
+              "A grant repaid to the funder out of local tax revenue once the completed building is in public use",
+              "A conditional pledge released in instalments as each stage of the construction work is inspected",
+            ],
+            correctIndex: 1,
+            explanation: "Learn this mechanism and you can read almost any twentieth-century philanthropic program, because the design outlived its inventor.",
+            sourceLessonSlug: "sn-money-matching-model",
+          },
+          {
+            prompt: "Which of these was a stated requirement before a Rosenwald grant existed?",
+            options: [
+              "A written pledge from the community not to seek further outside aid for a period of five years",
+              "A guarantee from the state legislature that the school term would be extended to nine months",
+              "A contribution from local white residents, alongside the Black community's own contribution",
+              "Evidence that no other school for Black children existed within a five-mile radius of the site",
+            ],
+            correctIndex: 2,
+            explanation: "The North Carolina documentation form describes the white contribution as a requirement of aid from the Fund. It was frequently zero anyway.",
+            sourceLessonSlug: "sn-money-matching-model",
+          },
+          {
+            prompt: "The Fund's bus grants from 1929-1930 required a school term of at least eight months and teachers paid at least 60 dollars a month. What is the transferable lesson?",
+            options: [
+              "That transport was the Fund's highest priority in the closing years of the building program",
+              "That rural districts could not otherwise afford to operate buses over the distances involved",
+              "That the Fund had begun to duplicate transport services already provided to white schools by the counties themselves",
+              "That a grant condition is a policy instrument, so the conditions tell you what the funder wanted",
+            ],
+            correctIndex: 3,
+            explanation: "A grant requiring an eight-month term is buying a longer school year, not a bus.",
+            sourceLessonSlug: "sn-money-matching-model",
+          },
+          {
+            prompt: "At Lumber Bridge in Robeson County, North Carolina, what did the community contribute?",
+            options: [
+              "Seventy thousand feet of lumber, cut by hand, hauled by their own teams to a mill they owned, laid on a lot they had bought",
+              "A cash sum raised at a long series of box parties and educational rallies held across the county over the course of one winter",
+              "Two acres of land donated by the local church, along with the labour of every household in the district",
+              "The full cost of the building, which the county then declined to accept into the public school system",
+            ],
+            correctIndex: 0,
+            explanation: "The 1924 account is quoted in the North Carolina documentation form. The specifics are better than any summary of them.",
+            sourceLessonSlug: "sn-money-matching-model",
+          },
+          {
+            prompt: "Why does the course quote Hoffschwelle's correction to the box-party account?",
+            options: [
+              "Because the tidy division of women raising money and men giving labour leaves out that women and children put in labour as well",
+              "Because box parties were much less common than the educational rallies held in the other fourteen states where the program operated",
+              "Because the amounts raised at box parties were too small to appear in the surviving Fund records",
+              "Because the practice was borrowed from white school improvement leagues operating in the same counties",
+            ],
+            correctIndex: 0,
+            explanation: "Although the men committed themselves as heads of their families, women and children put in their labour as well.",
+            sourceLessonSlug: "sn-money-matching-model",
+          },
+          {
+            prompt: "Of the roughly 28.5 million dollars these buildings cost, what did Black communities raise and what did the Fund contribute?",
+            options: [
+              "About 4.3 million from the communities and about 4.7 million from Rosenwald and the Fund together",
+              "About 4.7 million from the communities and about 4.3 million from Rosenwald and the Fund",
+              "About 18.1 million from the communities and about 4.3 million from Rosenwald and the Fund",
+              "Roughly equal amounts, with the remainder made up from state and county education budgets",
+            ],
+            correctIndex: 1,
+            explanation: "That is about 16.5 percent from the communities against about 15.1 percent from the Fund, so the communities put in more than the philanthropist did.",
+            sourceLessonSlug: "sn-money-the-share",
+          },
+          {
+            prompt: "The Fund's own contribution appears in the sources as 4.2, 4.3 and 4.4 million dollars. Why?",
+            options: [
+              "Because the totals were compiled in different years, as more of the individual school records came to light in the archives at Fisk University",
+              "Because the three figures are stated in different currencies of account used by the Fund's Chicago office",
+              "Because the figures count different things: construction only, construction plus programs, or personal gifts plus Fund grants",
+              "Because two of the three sources are secondary accounts and only one worked from the Fund's own ledgers",
+            ],
+            correctIndex: 2,
+            explanation: "The Fund's own itemised table puts construction of schoolhouses, teachers' homes and shops at 4,209,210 inside a total of 5,362,361 across all its education purposes.",
+            sourceLessonSlug: "sn-money-the-share",
+          },
+          {
+            prompt: "How does this course handle the '18.1 million dollars in public funds' figure that usually completes the national table?",
+            options: [
+              "It uses it, since the figure is repeated consistently across the philanthropy and preservation literature",
+              "It refuses to print it, because no institutional source read for this course states it",
+              "It replaces it with a state-level estimate scaled up from Tennessee's published tax revenue column",
+              "It treats it as an inflation-adjusted figure and converts it back to nominal dollars before use",
+            ],
+            correctIndex: 1,
+            explanation: "What the verified totals support is that 28.5 million minus 4.7 and minus 4.3 leaves about 19.5 million from public tax revenue and white contributions combined.",
+            sourceLessonSlug: "sn-money-the-share",
+          },
+          {
+            prompt: "In Tennessee's published four-column ledger, how do the Black community and Rosenwald Fund columns compare?",
+            options: [
+              "The Fund contributed 291,250 and African Americans 296,388, so the community column is larger",
+              "The Fund's 291,250 was roughly double the African American contribution of about 148,000 dollars",
+              "The two columns are identical, which is what the Fund's matching formula was designed to produce",
+              "The African American column is not itemised separately from the white contributions in that state",
+            ],
+            correctIndex: 0,
+            explanation: "Black Tennesseans contributed about 5,100 dollars more than the Fund did, while white contributions were about 1.4 percent and tax revenue was about 68.8 percent.",
+            sourceLessonSlug: "sn-money-the-share",
+          },
+          {
+            prompt: "What did North Carolina spend per student in the 1929-1930 school year?",
+            options: [
+              "The same amount for both, after the Rosenwald program equalised construction spending across the state",
+              "7 dollars 38 cents per white student and 2 dollars 66 cents per Black student, as it had in 1914-1915",
+              "44 dollars 48 cents per white student and 14 dollars 30 cents per Black student",
+              "A figure the state stopped publishing by race after the Rosenwald program began operating there",
+            ],
+            correctIndex: 2,
+            explanation: "Spending per Black student rose about fivefold between 1915 and 1930 and remained a fraction of the white figure the whole time. Both halves are in the source.",
+            sourceLessonSlug: "sn-money-the-share",
+          },
+          {
+            prompt: "Why is 'labour valued at 142 dollars 50 cents' a figure to handle carefully?",
+            options: [
+              "Because labour contributions were recorded only in Alabama and cannot be compared across states",
+              "Because it is a price somebody set for other people's work, and the records do not say who or on what basis",
+              "Because the Fund refused to count labour toward a match after the program moved to Nashville in 1920",
+              "Because the value of unpaid labour cannot honestly be converted into dollars without a published contemporary wage series",
+            ],
+            correctIndex: 1,
+            explanation: "A contribution figure that includes valued labour is partly an accounting decision, and you should say so whenever you quote one.",
+            sourceLessonSlug: "sn-money-the-share",
+          },
+          {
+            prompt: "Where is the Rosenwald Fund card file held, and why does the custody matter?",
+            options: [
+              "At the Library of Congress, because federal legislation directed the Fund's papers there when it closed",
+              "At the National Archives in Washington, alongside the National Register nomination files for each school",
+              "Across the fifteen state historic preservation offices, each of which holds the cards for the schools within its own state",
+              "At Fisk University in Nashville, so the program's archive is held by an institution of the community it concerned",
+            ],
+            correctIndex: 3,
+            explanation: "The Julius Rosenwald Fund Archives, 1918-1948 are at Fisk's John Hope and Aurelia E. Franklin Library: 585 boxes and an estimated 674,000 items.",
+            sourceLessonSlug: "sn-money-one-card",
+          },
+          {
+            prompt: "At Oak Grove School in Charles County, Maryland, the card shows a total cost of 2,850 with 100 from the Black community. What does that show?",
+            options: [
+              "That Maryland communities were charged a lower matching rate than communities in the Deep South states",
+              "That the card is incomplete, since the Fund's own conditions set a minimum community contribution",
+              "A community share of about 3.5 percent, well under the national average, because no school was the average school",
+              "That the public column of 2,350 dollars had already absorbed the community's contribution before the card was filled in",
+            ],
+            correctIndex: 2,
+            explanation: "At Capitol Heights the community share was about 10.5 percent. Nationally it was about 16.5 percent. Describe whichever one you actually mean.",
+            sourceLessonSlug: "sn-money-one-card",
+          },
+          {
+            prompt: "The Capitol Heights card prints a zero in the Whites column. Why is that worth recording?",
+            options: [
+              "Because a zero in any column means the card was never completed, and the school may therefore never have been built at all",
+              "Because Maryland exempted its counties from the white-contribution requirement after 1925",
+              "Because the Fund reduced its own grant by the same amount whenever that column came in empty",
+              "Because the Fund's grant conditions required a white contribution, so a printed zero is evidence about the requirement",
+            ],
+            correctIndex: 3,
+            explanation: "A required column that was often empty is a fact about the requirement, not only about the column.",
+            sourceLessonSlug: "sn-money-one-card",
+          },
+          {
+            prompt: "What does a Rosenwald school card NOT record?",
+            options: [
+              "How the community's money was raised, over how long, by how many households, and who refused",
+              "The total cost of the building, and the separate amounts entered against each of the four funding columns",
+              "The county and state, the item number, and the application number used to file the record",
+              "The acreage of the site and the teacher-type, which together indicate which plan was used",
+            ],
+            correctIndex: 0,
+            explanation: "A budget line is the shadow a campaign leaves. It is not the campaign, and the list of what the card omits is your research agenda.",
+            sourceLessonSlug: "sn-money-one-card",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
