@@ -80,23 +80,6 @@ The method that avoids both traps is the one this course commits to: **evidence,
 - Hosler, D. (1994). *The sounds and colors of power: The sacred metallurgical technology of ancient West Mexico*. MIT Press.
 - Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell.
 - Feder, K. L. (2020). *Frauds, myths, and mysteries: Science and pseudoscience in archaeology* (10th ed.). Oxford University Press.`,
-      recallContent: [
-        {
-          prompt: "Define 'Mesoamerica', what kind of thing is it, roughly where, and who coined the term?",
-          answer:
-            "A culture area (not a country): roughly north-central Mexico through Belize, Guatemala, El Salvador, and western Honduras, defined by shared traits (maize-beans-squash farming, the interlocking 260/365-day calendars, screenfold books, the ballgame, stepped pyramids, ritual sacrifice). The term was proposed by Paul Kirchhoff in 1943.",
-        },
-        {
-          prompt: "Name the three conventional periods and their rough dates, and the caveat that comes with them.",
-          answer:
-            "Preclassic/Formative (c. 2000 BCE-250 CE), Classic (c. 250-900 CE), Postclassic (c. 900-1521 CE). Caveat: they are archaeologists' filing labels with fuzzy, regional boundaries, nothing 'ended' on a date.",
-        },
-        {
-          prompt: "What was missing from the Mesoamerican toolkit that makes the building record more impressive, not less?",
-          answer:
-            "No draft animals (no horses, oxen, or mules existed in the Americas), no wheeled transport (wheels exist only on figurines), and no metal tools for most of the sequence, metallurgy arrives c. 600-800 CE in West Mexico, mostly for ornament. The cities were raised by organized human labor.",
-        },
-      ],
     },
     {
       slug: "meso-olmec",
@@ -125,19 +108,19 @@ One more contested artifact belongs in this lesson because it may be the hemisph
 - Rodríguez Martínez, M. d. C., Ortíz Ceballos, P., Coe, M. D., Diehl, R. A., Houston, S. D., Taube, K. A., & Delgado Calderón, A. (2006). Oldest writing in the New World. *Science, 313*(5793), 1610-1614.`,
       recallContent: [
         {
-          prompt: "Why should you hold the name 'Olmec' at arm's length?",
+          prompt: "Define 'Mesoamerica', what kind of thing is it, roughly where, and who coined the term?",
           answer:
-            "It is a Nahuatl exonym ('rubber people') that the Aztecs applied to later inhabitants of the Gulf Coast some two thousand years afterward; archaeologists borrowed it. The builders' own name for themselves and their language are unknown.",
+            "A culture area (not a country): roughly north-central Mexico through Belize, Guatemala, El Salvador, and western Honduras, defined by shared traits (maize-beans-squash farming, the interlocking 260/365-day calendars, screenfold books, the ballgame, stepped pyramids, ritual sacrifice). The term was proposed by Paul Kirchhoff in 1943.",
         },
         {
-          prompt: "Give the two great Olmec centers with rough dates, and the consensus reading of the colossal heads.",
+          prompt: "Name the three conventional periods and their rough dates, and the caveat that comes with them.",
           answer:
-            "San Lorenzo, c. 1400-1000 BCE; La Venta, c. 1000-400 BCE. The seventeen known colossal heads are read as individualized ruler portraits, each face distinct, some later defaced or buried, which looks like politics.",
+            "Preclassic/Formative (c. 2000 BCE-250 CE), Classic (c. 250-900 CE), Postclassic (c. 900-1521 CE). Caveat: they are archaeologists' filing labels with fuzzy, regional boundaries, nothing 'ended' on a date.",
         },
         {
-          prompt: "What is the honest label for the Cascajal Block, and why?",
+          prompt: "What was missing from the Mesoamerican toolkit that makes the building record more impressive, not less?",
           answer:
-            "'Possible earliest writing in the Americas; unprovenienced; contested.' Its 62 signs match no known system and it was published as Olmec writing of c. 900 BCE, but it was recovered from a bulldozed lot rather than excavated in context, so date and authenticity remain debated.",
+            "No draft animals (no horses, oxen, or mules existed in the Americas), no wheeled transport (wheels exist only on figurines), and no metal tools for most of the sequence, metallurgy arrives c. 600-800 CE in West Mexico, mostly for ornament. The cities were raised by organized human labor.",
         },
       ],
     },
@@ -167,14 +150,19 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
 - Canuto, M. A., Estrada-Belli, F., Garrison, T. G., Houston, S. D., Acuña, M. J., Kováč, M., Marken, D., Nondédéo, P., Auld-Thomas, L., & 9 others. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137.`,
       recallContent: [
         {
-          prompt: "Give the vital statistics of Aguada Fénix: where, how big, when built, and how it was found.",
+          prompt: "Why should you hold the name 'Olmec' at arm's length?",
           answer:
-            "Tabasco, Mexico. An artificial platform c. 1.4 km long, up to ~400 m wide, 10-15 m high, with radiating causeways; built mainly c. 1000-800 BCE per radiocarbon dating; the largest known monumental construction in the Maya area by volume. Found via airborne LiDAR (announced 2020, Inomata et al.).",
+            "It is a Nahuatl exonym ('rubber people') that the Aztecs applied to later inhabitants of the Gulf Coast some two thousand years afterward; archaeologists borrowed it. The builders' own name for themselves and their language are unknown.",
         },
         {
-          prompt: "How does Aguada Fénix complicate the Olmec mother-culture debate?",
+          prompt: "Give the two great Olmec centers with rough dates, and the consensus reading of the colossal heads.",
           answer:
-            "Its layout echoes Olmec San Lorenzo (suggesting Gulf connection), but it dates to San Lorenzo's decline and before La Venta's peak, at a scale the Gulf never attempted, and nearly 500 formally similar complexes turned up across the region. 'Who influenced whom' got harder, not easier.",
+            "San Lorenzo, c. 1400-1000 BCE; La Venta, c. 1000-400 BCE. The seventeen known colossal heads are read as individualized ruler portraits, each face distinct, some later defaced or buried, which looks like politics.",
+        },
+        {
+          prompt: "What is the honest label for the Cascajal Block, and why?",
+          answer:
+            "'Possible earliest writing in the Americas; unprovenienced; contested.' Its 62 signs match no known system and it was published as Olmec writing of c. 900 BCE, but it was recovered from a bulldozed lot rather than excavated in context, so date and authenticity remain debated.",
         },
       ],
     },
@@ -413,19 +401,14 @@ One more feature must be stated plainly, because this course does not save the u
 - Manzanilla, L. R. (2015). Cooperation and tensions in multiethnic corporate societies using Teotihuacan, central Mexico, as a case study. *PNAS, 112*(30), 9210-9215.`,
       recallContent: [
         {
-          prompt: "Give Teotihuacan's scale claims the way the course hedges them: population, rank, and the headline monuments.",
+          prompt: "Give the vital statistics of Aguada Fénix: where, how big, when built, and how it was found.",
           answer:
-            "At its height (c. 100-550 CE) commonly estimated at 100,000+ inhabitants, by most estimates among the largest cities on Earth at the time. Pyramid of the Sun (~65 m high, ~220 m base), Pyramid of the Moon, and the Feathered Serpent Pyramid inside the Ciudadela, all on the gridded Avenue of the Dead axis.",
+            "Tabasco, Mexico. An artificial platform c. 1.4 km long, up to ~400 m wide, 10-15 m high, with radiating causeways; built mainly c. 1000-800 BCE per radiocarbon dating; the largest known monumental construction in the Maya area by volume. Found via airborne LiDAR (announced 2020, Inomata et al.).",
         },
         {
-          prompt: "What is the evidence that Teotihuacan was multiethnic?",
+          prompt: "How does Aguada Fénix complicate the Olmec mother-culture debate?",
           answer:
-            "Excavated neighborhoods: the Oaxaca barrio with generations of Zapotec-style tombs and urns, and a merchants' barrio rich in Gulf-coast and Maya-region ceramics, plus isotope studies (Manzanilla, 2015) showing residents raised elsewhere lived and died in the city.",
-        },
-        {
-          prompt: "What did the Feathered Serpent Pyramid excavations find, and why does the course put it here rather than saving it for the Aztecs?",
-          answer:
-            "More than 200 sacrificed individuals, many young men in warrior regalia, hands as if bound, dedicating the building c. 200 CE (Sugiyama & Cabrera excavations). It shows ritual killing is archaeologically real centuries before the Mexica: not an Aztec invention, not a Spanish slander.",
+            "Its layout echoes Olmec San Lorenzo (suggesting Gulf connection), but it dates to San Lorenzo's decline and before La Venta's peak, at a scale the Gulf never attempted, and nearly 500 formally similar complexes turned up across the region. 'Who influenced whom' got harder, not easier.",
         },
       ],
     },
@@ -459,19 +442,19 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
 - Sahagún, B. de. (1950-1982). *Florentine Codex: General history of the things of New Spain* (A. J. O. Anderson & C. E. Dibble, Trans.; Books 1-12). School of American Research / University of Utah. (Original work compiled c. 1545-1590; Book 7 carries the Fifth Sun narrative located at Teotihuacan)`,
       recallContent: [
         {
-          prompt: "What does the name 'Teotihuacan' actually tell us, and what doesn't it?",
+          prompt: "Give Teotihuacan's scale claims the way the course hedges them: population, rank, and the headline monuments.",
           answer:
-            "It tells us what the Aztecs, arriving eight centuries after the fall, thought of the ruins: Nahuatl for roughly 'where the gods were made'/'where one becomes a god' (translation debated); their Fifth Sun creation story is set there. It tells us nothing about the builders: their name for the city is unknown, as are all the monument names on the map.",
+            "At its height (c. 100-550 CE) commonly estimated at 100,000+ inhabitants, by most estimates among the largest cities on Earth at the time. Pyramid of the Sun (~65 m high, ~220 m base), Pyramid of the Moon, and the Feathered Serpent Pyramid inside the Ciudadela, all on the gridded Avenue of the Dead axis.",
         },
         {
-          prompt: "Describe the burn pattern of Teotihuacan's fall and why it matters for the 'whodunit.'",
+          prompt: "What is the evidence that Teotihuacan was multiethnic?",
           answer:
-            "Around the mid-500s CE (cited range c. 550-650), the destruction is selective: temples and elite structures along the Avenue of the Dead burned and sculptures smashed, while most apartment compounds are untouched. That pattern suggests targeted destruction of symbols of authority (uprising/civil conflict) more than foreign sacking, but the cause remains contested.",
+            "Excavated neighborhoods: the Oaxaca barrio with generations of Zapotec-style tombs and urns, and a merchants' barrio rich in Gulf-coast and Maya-region ceramics, plus isotope studies (Manzanilla, 2015) showing residents raised elsewhere lived and died in the city.",
         },
         {
-          prompt: "Why does the course call calibrated ignorance a skill?",
+          prompt: "What did the Feathered Serpent Pyramid excavations find, and why does the course put it here rather than saving it for the Aztecs?",
           answer:
-            "Because 'unknown' is itself a finding earned by eliminating easier answers, and stating it honestly, with what evidence would settle it, is what separates history from mythology. Pseudo-history fills such vacuums with aliens and lost races; Teotihuacan is the control case for what happens when writing never speaks.",
+            "More than 200 sacrificed individuals, many young men in warrior regalia, hands as if bound, dedicating the building c. 200 CE (Sugiyama & Cabrera excavations). It shows ritual killing is archaeologically real centuries before the Mexica: not an Aztec invention, not a Spanish slander.",
         },
       ],
     },
@@ -707,19 +690,19 @@ Hold the scale in your head as one picture: white causeways running between citi
 - Ruz Lhuillier, A. (1973). *El Templo de las Inscripciones, Palenque*. Instituto Nacional de Antropología e Historia.`,
       recallContent: [
         {
-          prompt: "State the two corrections this lesson opens and closes with.",
+          prompt: "What does the name 'Teotihuacan' actually tell us, and what doesn't it?",
           answer:
-            "(1) There was never a Maya empire, the Classic Maya world was dozens of rival city-states sharing a civilization but not a government. (2) The 'small ceremonial centers in empty jungle' picture is dead: PACUNAM LiDAR (2018) found ~61,480 structures in 2,144 km², implying 7-11 million people in the Late Classic central lowlands over an engineered, farmed landscape.",
+            "It tells us what the Aztecs, arriving eight centuries after the fall, thought of the ruins: Nahuatl for roughly 'where the gods were made'/'where one becomes a god' (translation debated); their Fifth Sun creation story is set there. It tells us nothing about the builders: their name for the city is unknown, as are all the monument names on the map.",
         },
         {
-          prompt: "What does the Pakal example demonstrate about the value of a readable script?",
+          prompt: "Describe the burn pattern of Teotihuacan's fall and why it matters for the 'whodunit.'",
           answer:
-            "Precision without hedging: K'inich Janaab' Pakal of Palenque acceded 615 CE, died 683 after a 68-year reign, and his sarcophagus (found by Ruz Lhuillier, 1952) lies beneath the Temple of the Inscriptions. Deciphered writing turns ruins into named, dated history, the exact thing anonymous Teotihuacan lacks.",
+            "Around the mid-500s CE (cited range c. 550-650), the destruction is selective: temples and elite structures along the Avenue of the Dead burned and sculptures smashed, while most apartment compounds are untouched. That pattern suggests targeted destruction of symbols of authority (uprising/civil conflict) more than foreign sacking, but the cause remains contested.",
         },
         {
-          prompt: "How did Classic Petén cities survive the dry season, and what fed them?",
+          prompt: "Why does the course call calibrated ignorance a skill?",
           answer:
-            "City-scale water engineering, e.g., Tikal's plastered catchments and reservoirs storing water across 4-5 dry months, and agriculture far beyond slash-and-burn: terraces, drained/raised wetland fields, orchards and gardens, all visible in the LiDAR record.",
+            "Because 'unknown' is itself a finding earned by eliminating easier answers, and stating it honestly, with what evidence would settle it, is what separates history from mythology. Pseudo-history fills such vacuums with aliens and lost races; Teotihuacan is the control case for what happens when writing never speaks.",
         },
       ],
     },
@@ -748,19 +731,19 @@ The 2012 affair earns its place in this course as a **specimen**: watch how it w
 - Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press.`,
       recallContent: [
         {
-          prompt: "What kind of writing system is Maya script, and why does that classification matter?",
+          prompt: "State the two corrections this lesson opens and closes with.",
           answer:
-            "A full logosyllabic system, several hundred signs mixing logograms with a consonant-vowel syllabary, capable of recording anything its users could say: the only demonstrated full writing system in the pre-Columbian Americas. It matters because it means Maya texts are prose (names, verbs, dates, quotations), not gesturing pictograms.",
+            "(1) There was never a Maya empire, the Classic Maya world was dozens of rival city-states sharing a civilization but not a government. (2) The 'small ceremonial centers in empty jungle' picture is dead: PACUNAM LiDAR (2018) found ~61,480 structures in 2,144 km², implying 7-11 million people in the Late Classic central lowlands over an engineered, farmed landscape.",
         },
         {
-          prompt: "Lay out the Maya calendar toolkit.",
+          prompt: "What does the Pakal example demonstrate about the value of a readable script?",
           answer:
-            "Tzolk'in (260-day ritual round) + haab (365-day year), meshing every 52 years as the Calendar Round; and the Long Count, a positional day-count from an era base in 3114 BCE (GMT correlation; most-used variant = Aug 11), which fixes events to a single day. The Dresden Codex adds a Venus table (584-day cycle, with corrections) and eclipse tables.",
+            "Precision without hedging: K'inich Janaab' Pakal of Palenque acceded 615 CE, died 683 after a 68-year reign, and his sarcophagus (found by Ruz Lhuillier, 1952) lies beneath the Temple of the Inscriptions. Deciphered writing turns ruins into named, dated history, the exact thing anonymous Teotihuacan lacks.",
         },
         {
-          prompt: "Where and when do the earliest surviving Long Count dates appear, and what does that imply?",
+          prompt: "How did Classic Petén cities survive the dry season, and what fed them?",
           answer:
-            "36 and 32 BCE, at Chiapa de Corzo and Tres Zapotes, on the western edge of the Maya area. The positional system (and its zero-requiring place-keeping) predates the Maya florescence, and its actual inventors are honestly uncertain.",
+            "City-scale water engineering, e.g., Tikal's plastered catchments and reservoirs storing water across 4-5 dry months, and agriculture far beyond slash-and-burn: terraces, drained/raised wetland fields, orchards and gardens, all visible in the LiDAR record.",
         },
       ],
     },
@@ -796,19 +779,19 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
 - Canuto, M. A., et al. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137.`,
       recallContent: [
         {
-          prompt: "What are the last dated monuments the lesson cites, and what do they mark?",
+          prompt: "What kind of writing system is Maya script, and why does that classification matter?",
           answer:
-            "Tikal's last Long Count stela, 869 CE, and one of the very last known anywhere, Toniná's of 909 CE. They mark the city-by-city shutdown of the divine-king institution in the southern lowlands across roughly 760-910 CE, staggered over 150 years, not overnight.",
+            "A full logosyllabic system, several hundred signs mixing logograms with a consonant-vowel syllabary, capable of recording anything its users could say: the only demonstrated full writing system in the pre-Columbian Americas. It matters because it means Maya texts are prose (names, verbs, dates, quotations), not gesturing pictograms.",
         },
         {
-          prompt: "Summarize the drought evidence and its acknowledged limit.",
+          prompt: "Lay out the Maya calendar toolkit.",
           answer:
-            "Lake Chichancanab sediment cores (Hodell et al., 1995) put c. 800-1000 CE among the region's driest intervals in millennia; a Belize stalagmite (Kennett et al., 2012) resolves repeated severe 9th-century droughts tracking political failures. Limit: the north also got dry, yet Chichén Itzá boomed, so drought can't be the whole story, and the causal weights remain argued.",
+            "Tzolk'in (260-day ritual round) + haab (365-day year), meshing every 52 years as the Calendar Round; and the Long Count, a positional day-count from an era base in 3114 BCE (GMT correlation; most-used variant = Aug 11), which fixes events to a single day. The Dresden Codex adds a Venus table (584-day cycle, with corrections) and eclipse tables.",
         },
         {
-          prompt: "Why does the course insist 'specific and debated' is the opposite of 'mysterious'?",
+          prompt: "Where and when do the earliest surviving Long Count dates appear, and what does that imply?",
           answer:
-            "The collapse has an evidence trail, dates, sediment cores, fortification walls, last stelae, and a live multi-causal argument. 'Mysteriously vanished' erases that evidence and the ~7 million living Maya, clearing ground for lost-race fantasies. A political system died; a people did not.",
+            "36 and 32 BCE, at Chiapa de Corzo and Tres Zapotes, on the western edge of the Maya area. The positional system (and its zero-requiring place-keeping) predates the Maya florescence, and its actual inventors are honestly uncertain.",
         },
       ],
     },
@@ -1047,19 +1030,19 @@ Two more institutions round out the picture the conquistadors' awe tends to crow
 - UNESCO World Heritage Centre. (1987). *Historic Centre of Mexico City and Xochimilco* (World Heritage List No. 412).`,
       recallContent: [
         {
-          prompt: "Sort the names: Mexica, Aztec, Nahuatl, Tenochtitlan.",
+          prompt: "What are the last dated monuments the lesson cites, and what do they mark?",
           answer:
-            "Mexica: the people's own name (→ 'Mexico'). Aztec: a later label from legendary Aztlan, popularized by 19th-century writers, standard but less precise. Nahuatl: their language, shared with other Nahua peoples. Tenochtitlan: their island capital in Lake Texcoco, traditionally founded 1325 at the eagle-on-cactus sign now on Mexico's flag.",
+            "Tikal's last Long Count stela, 869 CE, and one of the very last known anywhere, Toniná's of 909 CE. They mark the city-by-city shutdown of the divine-king institution in the southern lowlands across roughly 760-910 CE, staggered over 150 years, not overnight.",
         },
         {
-          prompt: "What are chinampas, and what are they not?",
+          prompt: "Summarize the drought evidence and its acknowledged limit.",
           answer:
-            "Raised rectangular field-plots built from lake mud and vegetation between canal grids, anchored by willows, among the most productive farming systems ever engineered, yielding multiple harvests a year. They are NOT floating gardens (they don't float). A remnant survives at Xochimilco (UNESCO, 1987).",
+            "Lake Chichancanab sediment cores (Hodell et al., 1995) put c. 800-1000 CE among the region's driest intervals in millennia; a Belize stalagmite (Kennett et al., 2012) resolves repeated severe 9th-century droughts tracking political failures. Limit: the north also got dry, yet Chichén Itzá boomed, so drought can't be the whole story, and the causal weights remain argued.",
         },
         {
-          prompt: "Name three pieces of hydraulic/urban engineering that made a lake metropolis livable.",
+          prompt: "Why does the course insist 'specific and debated' is the opposite of 'mysterious'?",
           answer:
-            "The twin-channeled Chapultepec aqueduct (one channel flows while the other is cleaned); the kilometers-long dike attributed to Nezahualcoyotl separating brackish from fresh water; three causeways with removable bridges plus canal-streets, with nightly sweeping, canoe-collected waste used as fertilizer, and market courts policing measures.",
+            "The collapse has an evidence trail, dates, sediment cores, fortification walls, last stelae, and a live multi-causal argument. 'Mysteriously vanished' erases that evidence and the ~7 million living Maya, clearing ground for lost-race fantasies. A political system died; a people did not.",
         },
       ],
     },
@@ -1089,19 +1072,19 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
 - León-Portilla, M. (1992). *Fifteen poets of the Aztec world*. University of Oklahoma Press.`,
       recallContent: [
         {
-          prompt: "Give the Triple Alliance's founding facts and why its age matters.",
+          prompt: "Sort the names: Mexica, Aztec, Nahuatl, Tenochtitlan.",
           answer:
-            "1428: Tenochtitlan, Texcoco, and Tlacopan overthrew Tepanec Azcapotzalco and split future tribute by formula, Tenochtitlan increasingly dominant. Only 91 years separate that founding from Cortés, the empire the Spanish met was younger than the printing press, still expanding, with unhealed holes (Tlaxcala, the Purépecha).",
+            "Mexica: the people's own name (→ 'Mexico'). Aztec: a later label from legendary Aztlan, popularized by 19th-century writers, standard but less precise. Nahuatl: their language, shared with other Nahua peoples. Tenochtitlan: their island capital in Lake Texcoco, traditionally founded 1325 at the eagle-on-cactus sign now on Mexico's flag.",
         },
         {
-          prompt: "What is the Codex Mendoza and why is it a historian's gift?",
+          prompt: "What are chinampas, and what are they not?",
           answer:
-            "A colonial compilation (c. 1541) copying imperial tribute rolls: town by painted town, the cloaks, maize, cacao, feathers, jade, paper, and warrior costumes owed to the Alliance. It lets us read the empire's fiscal machinery item by item (Berdan & Anawalt, 1992).",
+            "Raised rectangular field-plots built from lake mud and vegetation between canal grids, anchored by willows, among the most productive farming systems ever engineered, yielding multiple harvests a year. They are NOT floating gardens (they don't float). A remnant survives at Xochimilco (UNESCO, 1987).",
         },
         {
-          prompt: "What were the flower wars, and what label does the course attach to their purpose?",
+          prompt: "Name three pieces of hydraulic/urban engineering that made a lake metropolis livable.",
           answer:
-            "Xochiyaoyotl: arranged battles between the Alliance and enemies like Tlaxcala. Purpose CONTESTED, sources frame chivalric-religious captive-taking; Hassig reads low-cost attrition/containment; period informants conflict. What's not contested is the enmity they cultivated.",
+            "The twin-channeled Chapultepec aqueduct (one channel flows while the other is cleaned); the kilometers-long dike attributed to Nezahualcoyotl separating brackish from fresh water; three causeways with removable bridges plus canal-streets, with nightly sweeping, canoe-collected waste used as fertilizer, and market courts policing measures.",
         },
       ],
     },
@@ -1132,19 +1115,19 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
 - Sugiyama, S. (2005). *Human sacrifice, militarism, and rulership: Materialization of state ideology at the Feathered Serpent Pyramid, Teotihuacan*. Cambridge University Press.`,
       recallContent: [
         {
-          prompt: "What did the excavations beginning in 2015 on Guatemala Street find, and what question did they close?",
+          prompt: "Give the Triple Alliance's founding facts and why its age matters.",
           answer:
-            "The Huei Tzompantli: the great skull rack's platform and two towers of mortared human skulls, hundreds documented, men, women, and children (INAH, Barrera Rodríguez team). It closed the question of whether the Spanish descriptions of the rack were pure propaganda: the structure existed, in substance as described.",
+            "1428: Tenochtitlan, Texcoco, and Tlacopan overthrew Tepanec Azcapotzalco and split future tribute by formula, Tenochtitlan increasingly dominant. Only 91 years separate that founding from Cortés, the empire the Spanish met was younger than the printing press, still expanding, with unhealed holes (Tlaxcala, the Purépecha).",
         },
         {
-          prompt: "State the Mexica rationale for sacrifice in their own terms, and why the course explains it.",
+          prompt: "What is the Codex Mendoza and why is it a historian's gift?",
           answer:
-            "Fifth Sun cosmology: the gods sacrificed themselves to set the sun moving; humans repay the debt (nextlahualli) in blood to keep the cosmos running, embedded with war-captive ideology and universal self-bloodletting. The course explains it because understanding a framework is not endorsing it: it is the difference between history and a horror movie.",
+            "A colonial compilation (c. 1541) copying imperial tribute rolls: town by painted town, the cloaks, maize, cacao, feathers, jade, paper, and warrior costumes owed to the Alliance. It lets us read the empire's fiscal machinery item by item (Berdan & Anawalt, 1992).",
         },
         {
-          prompt: "Why do BOTH the sensational and the denialist versions fail?",
+          prompt: "What were the flower wars, and what label does the course attach to their purpose?",
           answer:
-            "Sensational: relies on unverifiable five-/six-figure chronicle numbers (80,400; 136,000) and treats one practice as the whole civilization. Denialist ('Spanish slander'): refuted by archaeology, the tzompantli is excavated, and sacrifice is documented at Teotihuacan and among the Maya centuries before the Mexica. The honest account holds the real skull tower, the audited numbers, the internal logic, and the conquerors' own public-killing repertoire, all at once.",
+            "Xochiyaoyotl: arranged battles between the Alliance and enemies like Tlaxcala. Purpose CONTESTED, sources frame chivalric-religious captive-taking; Hassig reads low-cost attrition/containment; period informants conflict. What's not contested is the enmity they cultivated.",
         },
       ],
     },
@@ -1393,19 +1376,19 @@ The takeaway is structural, not trivia: Mesoamerica was **polycentric to the end
 - Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press.`,
       recallContent: [
         {
-          prompt: "What does the 'Danzantes' renaming teach about method?",
+          prompt: "What did the excavations beginning in 2015 on Guatemala Street find, and what question did they close?",
           answer:
-            "The ~300 contorted figures at Monte Albán were romantically read as 'dancers'; the evidence-driven consensus now reads slain/sacrificed captives, some with name-glyphs, a war memorial. Readings must follow evidence even when the correction is grimmer than the charm.",
+            "The Huei Tzompantli: the great skull rack's platform and two towers of mortared human skulls, hundreds documented, men, women, and children (INAH, Barrera Rodríguez team). It closed the question of whether the Spanish descriptions of the rack were pure propaganda: the structure existed, in substance as described.",
         },
         {
-          prompt: "Why do the Mixtec codices matter beyond their beauty?",
+          prompt: "State the Mexica rationale for sacrifice in their own terms, and why the course explains it.",
           answer:
-            "Screenfold books like the Zouche-Nuttall carry painted genealogical-historical narrative, real dynasties across centuries, e.g. Lord Eight Deer Jaguar Claw's 11th-century career, the closest thing to narrative political history in Indigenous hands outside the Maya inscriptions (Boone, 2000). Tomb 7 (Caso, 1932) shows the same civilization's goldwork at world level.",
+            "Fifth Sun cosmology: the gods sacrificed themselves to set the sun moving; humans repay the debt (nextlahualli) in blood to keep the cosmos running, embedded with war-captive ideology and universal self-bloodletting. The course explains it because understanding a framework is not endorsing it: it is the difference between history and a horror movie.",
         },
         {
-          prompt: "State the structural takeaway of this lesson in one sentence.",
+          prompt: "Why do BOTH the sensational and the denialist versions fail?",
           answer:
-            "Mesoamerica was polycentric to the end, multiple states, unrelated language families, scripts, technologies, and power centers (Zapotec, Mixtec, Purépecha, and more) right up to 1519, so any story compressed to 'Cortés versus the Aztecs' has already erased most of the map.",
+            "Sensational: relies on unverifiable five-/six-figure chronicle numbers (80,400; 136,000) and treats one practice as the whole civilization. Denialist ('Spanish slander'): refuted by archaeology, the tzompantli is excavated, and sacrifice is documented at Teotihuacan and among the Maya centuries before the Mexica. The honest account holds the real skull tower, the audited numbers, the internal logic, and the conquerors' own public-killing repertoire, all at once.",
         },
       ],
     },
@@ -1433,19 +1416,19 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
 - Quilter, J., & Hoopes, J. W. (Eds.). (2003). *Gold and power in ancient Costa Rica, Panama, and Colombia*. Dumbarton Oaks.`,
       recallContent: [
         {
-          prompt: "Describe Mesoamerica's southern boundary the way the course does.",
+          prompt: "What does the 'Danzantes' renaming teach about method?",
           answer:
-            "A gradient, not a wall: Pacific Nicaragua/Nicoya held Mesoamerican-tied peoples (e.g., the Nahua-related Nicarao), while most of lower Central America belonged to the Isthmo-Colombian sphere, Chibchan-speaking chiefdoms oriented toward Colombia. 'Not Mesoamerican' meant different, not empty or backward.",
+            "The ~300 contorted figures at Monte Albán were romantically read as 'dancers'; the evidence-driven consensus now reads slain/sacrificed captives, some with name-glyphs, a war memorial. Readings must follow evidence even when the correction is grimmer than the charm.",
         },
         {
-          prompt: "Give the honest account of the Diquís spheres.",
+          prompt: "Why do the Mixtec codices matter beyond their beauty?",
           answer:
-            "Hundreds of stone spheres (mostly granodiorite, up to ~2.5 m, many tons), made roughly 500-1500 CE per UNESCO, placed near chiefly settlements; purpose unknown, rank/alignment/plaza-monument readings argued, original contexts largely destroyed by 1930s-40s plantation clearing. Local stone + known pecking/grinding techniques: no Atlantis required. UNESCO World Heritage 2014.",
+            "Screenfold books like the Zouche-Nuttall carry painted genealogical-historical narrative, real dynasties across centuries, e.g. Lord Eight Deer Jaguar Claw's 11th-century career, the closest thing to narrative political history in Indigenous hands outside the Maya inscriptions (Boone, 2000). Tomb 7 (Caso, 1932) shows the same civilization's goldwork at world level.",
         },
         {
-          prompt: "Which way did metallurgy flow in the Americas, and why does the course keep pointing at it?",
+          prompt: "State the structural takeaway of this lesson in one sentence.",
           answer:
-            "From South America northward, through the Isthmo-Colombian gold country (Sitio Conte's Coclé burials, c. 700-1000 CE) and by sea to West Mexico, where the Purépecha pushed bronze furthest. It reminds you that technology flows along existing routes in any direction, and the hemisphere's deepest metalworking was southern.",
+            "Mesoamerica was polycentric to the end, multiple states, unrelated language families, scripts, technologies, and power centers (Zapotec, Mixtec, Purépecha, and more) right up to 1519, so any story compressed to 'Cortés versus the Aztecs' has already erased most of the map.",
         },
       ],
     },
@@ -1681,19 +1664,19 @@ The single fact that best breaks the "1521 = the end" reflex is this: **the last
 - Lockhart, J. (Ed. & Trans.). (1993). *We people here: Nahuatl accounts of the conquest of Mexico*. University of California Press.`,
       recallContent: [
         {
-          prompt: "List the four conquest myths this lesson dismantles (per Restall).",
+          prompt: "Describe Mesoamerica's southern boundary the way the course does.",
           answer:
-            "(1) A few hundred Spaniards conquered millions, no, tens of thousands of Indigenous allies (esp. Tlaxcala) did the fighting; it was closer to a Mesoamerican civil war. (2) Superior technology was decisive, no, alliances, siege, and disease were. (3) Moctezuma mistook Cortés for Quetzalcoatl, contested, probably a colonial-era elaboration. (4) The Indigenous side was passive and quickly finished, no: Noche Triste, a three-month siege, Cuauhtémoc's resistance, and survival long after.",
+            "A gradient, not a wall: Pacific Nicaragua/Nicoya held Mesoamerican-tied peoples (e.g., the Nahua-related Nicarao), while most of lower Central America belonged to the Isthmo-Colombian sphere, Chibchan-speaking chiefdoms oriented toward Colombia. 'Not Mesoamerican' meant different, not empty or backward.",
         },
         {
-          prompt: "What actually took Tenochtitlan, and over what kind of timeframe?",
+          prompt: "Give the honest account of the Diquís spheres.",
           answer:
-            "A months-long siege of an island city by a largely Indigenous army: cutting the aqueduct/causeway supply, building brigantines to control the lake, and starving it, final siege roughly three months into August 1521. Not out-shooting it with steel and guns.",
+            "Hundreds of stone spheres (mostly granodiorite, up to ~2.5 m, many tons), made roughly 500-1500 CE per UNESCO, placed near chiefly settlements; purpose unknown, rank/alignment/plaza-monument readings argued, original contexts largely destroyed by 1930s-40s plantation clearing. Local stone + known pecking/grinding techniques: no Atlantis required. UNESCO World Heritage 2014.",
         },
         {
-          prompt: "What is Nojpetén and why does it break '1521 = the end'?",
+          prompt: "Which way did metallurgy flow in the Americas, and why does the course keep pointing at it?",
           answer:
-            "The Itza Maya capital (Tayasal) on an island in Lake Petén Itzá, the last independent Maya kingdom, which held out 176 years after Tenochtitlan until a Spanish assault took it on March 13, 1697 (Jones, 1998). Nearly the whole colonial period ran with a sovereign Maya state on the map; 'the conquest' was a centuries-long, resisted process.",
+            "From South America northward, through the Isthmo-Colombian gold country (Sitio Conte's Coclé burials, c. 700-1000 CE) and by sea to West Mexico, where the Purépecha pushed bronze furthest. It reminds you that technology flows along existing routes in any direction, and the hemisphere's deepest metalworking was southern.",
         },
       ],
     },
@@ -1725,19 +1708,19 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
 - Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press.`,
       recallContent: [
         {
-          prompt: "State the mechanism-vs-context distinction for the demographic collapse.",
+          prompt: "List the four conquest myths this lesson dismantles (per Restall).",
           answer:
-            "Germs were the mechanism, colonialism was the context. Old World crowd diseases (smallpox from 1520, measles, cocoliztli epidemics of 1545/1576) killed populations with no immunity, but did so inside a system of war, enslavement, forced labor, encomienda, displacement, and famine that shattered societies' capacity to survive and made each epidemic deadlier. Neither alone explains the scale.",
+            "(1) A few hundred Spaniards conquered millions, no, tens of thousands of Indigenous allies (esp. Tlaxcala) did the fighting; it was closer to a Mesoamerican civil war. (2) Superior technology was decisive, no, alliances, siege, and disease were. (3) Moctezuma mistook Cortés for Quetzalcoatl, contested, probably a colonial-era elaboration. (4) The Indigenous side was passive and quickly finished, no: Noche Triste, a three-month siege, Cuauhtémoc's resistance, and survival long after.",
         },
         {
-          prompt: "Give the central-Mexico numbers as a range with attribution, plus the collapse ratio.",
+          prompt: "What actually took Tenochtitlan, and over what kind of timeframe?",
           answer:
-            "Commonly cited ~15-30 million on the eve of contact, high end from Cook & Borah (the Berkeley School, ~25M and up), lower from critics (e.g., Rosenblat, a few million), falling by roughly 90% to about 1-2 million within a century. The proportion is agreed even where absolute numbers are contested.",
+            "A months-long siege of an island city by a largely Indigenous army: cutting the aqueduct/causeway supply, building brigantines to control the lake, and starving it, final siege roughly three months into August 1521. Not out-shooting it with steel and guns.",
         },
         {
-          prompt: "How does the course answer both minimizers and maximizers of the death toll?",
+          prompt: "What is Nojpetén and why does it break '1521 = the end'?",
           answer:
-            "Minimizers (cite low estimates toward deniability): even the low reconstructions show a ~90% collapse, a cataclysm on any accounting. Maximizers (state the highest figure as fact): false precision hands critics an easy target and treats the real, staggering record as insufficient. The catastrophe can neither be honestly deflated nor needs inflating.",
+            "The Itza Maya capital (Tayasal) on an island in Lake Petén Itzá, the last independent Maya kingdom, which held out 176 years after Tenochtitlan until a Spanish assault took it on March 13, 1697 (Jones, 1998). Nearly the whole colonial period ran with a sovereign Maya state on the map; 'the conquest' was a centuries-long, resisted process.",
         },
       ],
     },
@@ -1975,19 +1958,19 @@ Put the three acts together and you have this course's transferable method for a
 - Proskouriakoff, T. (1960). Historical implications of a pattern of dates at Piedras Negras, Guatemala. *American Antiquity, 25*(4), 454-475.`,
       recallContent: [
         {
-          prompt: "Tell the decipherment story in three names and what each contributed.",
+          prompt: "State the mechanism-vs-context distinction for the demographic collapse.",
           answer:
-            "Knorozov (1952, Leningrad): the syllabic principle, glyphs spell sounds, proven via Landa's 'alphabet.' Proskouriakoff (1960): the texts are history, Piedras Negras date patterns record rulers' births, accessions, and deaths. Thompson: the cautionary name, the field's dominant figure, who insisted the script was non-phonetic and history-free, delaying the truth a generation until after his death (Coe's Breaking the Maya Code chronicles it).",
+            "Germs were the mechanism, colonialism was the context. Old World crowd diseases (smallpox from 1520, measles, cocoliztli epidemics of 1545/1576) killed populations with no immunity, but did so inside a system of war, enslavement, forced labor, encomienda, displacement, and famine that shattered societies' capacity to survive and made each epidemic deadlier. Neither alone explains the scale.",
         },
         {
-          prompt: "Name the four surviving pre-conquest Maya codices and the detail that makes the names themselves a lesson.",
+          prompt: "Give the central-Mexico numbers as a range with attribution, plus the collapse ratio.",
           answer:
-            "Dresden, Madrid, Paris, named for the European cities that hold them, and the Maya Codex of Mexico (ex-'Grolier'), authenticated by INAH in 2018. Four books are the entire surviving pre-conquest literature of a civilization of scribes.",
+            "Commonly cited ~15-30 million on the eve of contact, high end from Cook & Borah (the Berkeley School, ~25M and up), lower from critics (e.g., Rosenblat, a few million), falling by roughly 90% to about 1-2 million within a century. The proportion is agreed even where absolute numbers are contested.",
         },
         {
-          prompt: "What parallel does the course draw between decipherment and LiDAR?",
+          prompt: "How does the course answer both minimizers and maximizers of the death toll?",
           answer:
-            "Same epistemological event via different instruments: evidence that was always present became readable, texts spoke after the code cracked; the landscape spoke when lasers stripped the canopy (PACUNAM 2018: ~61,480 structures in 2,144 km²), and the field rebuilt its picture around the new evidence.",
+            "Minimizers (cite low estimates toward deniability): even the low reconstructions show a ~90% collapse, a cataclysm on any accounting. Maximizers (state the highest figure as fact): false precision hands critics an easy target and treats the real, staggering record as insufficient. The catastrophe can neither be honestly deflated nor needs inflating.",
         },
       ],
     },
@@ -2021,19 +2004,19 @@ Now connect this lesson to everything before it, because the connection is the p
 - Goldman Environmental Foundation. (2015). *Berta Cáceres, 2015 Goldman Prize recipient, South and Central America*.`,
       recallContent: [
         {
-          prompt: "Recite the present-tense numbers this lesson insists on, with their hedges.",
+          prompt: "Tell the decipherment story in three names and what each contributed.",
           answer:
-            "~7 million Maya alive today; ~6 million speakers of ~30 Mayan languages; Maya over 40% of Guatemala per the 2018 census; ~1.65 million Nahuatl speakers and 7+ million Indigenous-language speakers in Mexico per INEGI 2020; the tzolk'in still kept by highland Guatemalan daykeepers; Xochimilco's chinampas still farmed.",
+            "Knorozov (1952, Leningrad): the syllabic principle, glyphs spell sounds, proven via Landa's 'alphabet.' Proskouriakoff (1960): the texts are history, Piedras Negras date patterns record rulers' births, accessions, and deaths. Thompson: the cautionary name, the field's dominant figure, who insisted the script was non-phonetic and history-free, delaying the truth a generation until after his death (Coe's Breaking the Maya Code chronicles it).",
         },
         {
-          prompt: "What happened in Guatemala in the early 1980s, per the UN-sponsored truth commission?",
+          prompt: "Name the four surviving pre-conquest Maya codices and the detail that makes the names themselves a lesson.",
           answer:
-            "The civil war's counterinsurgency fell overwhelmingly on Maya communities: the CEH (1999) documented ~200,000 dead or disappeared across the conflict (commission estimate), found 83% of identified victims were Maya, and concluded state forces committed 'acts of genocide', within living memory.",
+            "Dresden, Madrid, Paris, named for the European cities that hold them, and the Maya Codex of Mexico (ex-'Grolier'), authenticated by INAH in 2018. Four books are the entire surviving pre-conquest literature of a civilization of scribes.",
         },
         {
-          prompt: "Name three post-1697 events or institutions that refute Indigenous passivity in the region.",
+          prompt: "What parallel does the course draw between decipherment and LiDAR?",
           answer:
-            "The Caste War of Yucatán (1847-1901+; the autonomous Chan Santa Cruz polity); the Guna revolution of 1925 winning the autonomous Comarca Guna Yala; and the modern movement layer, Menchú's 1992 Nobel, Berta Cáceres's dam fight (Goldman Prize 2015; assassinated 2016), the Academia de Lenguas Mayas (1990) and Mexico's linguistic-rights framework.",
+            "Same epistemological event via different instruments: evidence that was always present became readable, texts spoke after the code cracked; the landscape spoke when lasers stripped the canopy (PACUNAM 2018: ~61,480 structures in 2,144 km²), and the field rebuilt its picture around the new evidence.",
         },
       ],
     },

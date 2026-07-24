@@ -81,18 +81,6 @@ Scale, for orientation: India has been the world's **most populous country** sin
 - International Labour Organization & Institute for Human Development. (2024). *India Employment Report 2024: Youth employment, education and skills*. ILO. https://www.ilo.org/sites/default/files/2024-08/India%20Employment%20-%20web_8%20April.pdf
 - Ministry of Statistics and Programme Implementation, National Statistics Office. (n.d.). *Periodic Labour Force Survey (PLFS)*. Government of India. https://mospi.gov.in/
 - United Nations Department of Economic and Social Affairs. (2023). *India overtakes China as the world's most populous country* (Policy Brief No. 153). https://www.un.org/development/desa/dpad/publication/un-desa-policy-brief-no-153-india-overtakes-china-as-the-worlds-most-populous-country/`,
-      recallContent: [
-        {
-          prompt: "India's informality figure, with year, source, and definition.",
-          answer:
-            "About 90% of India's workers are in INFORMAL EMPLOYMENT, jobs carrying no social-security protection or employment benefits, per the India Employment Report 2024 (ILO & Institute for Human Development), built on the government's Periodic Labour Force Survey. About 82% work in the informal SECTOR (unregistered enterprises).",
-        },
-        {
-          prompt: "Why must any informality statistic carry its definition?",
-          answer:
-            "Because informality is measured differently by different bodies (enterprise registration vs social-security coverage vs written contract), and the headline percentage swings with the definition. A statistic without a definition, source, and year is not usable.",
-        },
-      ],
     },
     {
       slug: "india-law-on-paper",
@@ -123,14 +111,14 @@ Scale, for orientation: India has been the world's **most populous country** sin
 - T.K. Rangarajan v. Government of Tamil Nadu & Others, Supreme Court of India (2003, August 6). https://indiankanoon.org/doc/88909580/`,
       recallContent: [
         {
-          prompt: "How many members does it take to apply to register a union under India's Trade Unions Act, 1926?",
+          prompt: "India's informality figure, with year, source, and definition.",
           answer:
-            "Seven (§ 4). Since the 2001 amendment, a union of workers also needs at least 10% of the establishment's workforce or 100 workers, whichever is less, still subject to the minimum of seven.",
+            "About 90% of India's workers are in INFORMAL EMPLOYMENT, jobs carrying no social-security protection or employment benefits, per the India Employment Report 2024 (ILO & Institute for Human Development), built on the government's Periodic Labour Force Survey. About 82% work in the informal SECTOR (unregistered enterprises).",
         },
         {
-          prompt: "What did T.K. Rangarajan v. Government of Tamil Nadu (2003) hold?",
+          prompt: "Why must any informality statistic carry its definition?",
           answer:
-            "That government employees have no fundamental, legal, moral or equitable right to strike. It arose from the mass dismissal of roughly 170,000 striking Tamil Nadu government employees. Forming a union is a fundamental right under Article 19(1)(c); striking is not.",
+            "Because informality is measured differently by different bodies (enterprise registration vs social-security coverage vs written contract), and the headline percentage swings with the definition. A statistic without a definition, source, and year is not usable.",
         },
       ],
     },
@@ -165,14 +153,14 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
 - Constitution of India, art. 19(1)(c). https://www.indiacode.nic.in/`,
       recallContent: [
         {
-          prompt: "Statutory exclusion versus structural exclusion, define both, with one example each.",
+          prompt: "How many members does it take to apply to register a union under India's Trade Unions Act, 1926?",
           answer:
-            "Statutory: written into the law by name, the Wagner Act carving out agricultural and domestic workers. Structural: the law's vocabulary (employer, establishment, industry) simply never reaches you, India's ~90% informal workforce. The first can be repealed; the second has nothing to repeal.",
+            "Seven (§ 4). Since the 2001 amendment, a union of workers also needs at least 10% of the establishment's workforce or 100 workers, whichever is less, still subject to the minimum of seven.",
         },
         {
-          prompt: "For an informal worker in India, what does Question 4 ('what happens to you if you try?') look like?",
+          prompt: "What did T.K. Rangarajan v. Government of Tamil Nadu (2003) hold?",
           answer:
-            "Not dismissal, there is no job to be dismissed from. Retaliation is informal too: eviction from the vending spot, confiscation of the cart, the contractor who stops calling, the police. Informal punishment is harder to litigate than a firing.",
+            "That government employees have no fundamental, legal, moral or equitable right to strike. It arose from the mass dismissal of roughly 170,000 striking Tamil Nadu government employees. Forming a union is a fundamental right under Article 19(1)(c); striking is not.",
         },
       ],
     },
@@ -410,14 +398,14 @@ Read the right-hand column again. **Every major federation is tied to a politica
 - International Labour Organization & Institute for Human Development. (2024). *India Employment Report 2024*. ILO. https://www.ilo.org/sites/default/files/2024-08/India%20Employment%20-%20web_8%20April.pdf`,
       recallContent: [
         {
-          prompt: "Name the five major Indian union federations, their founding years, and their political families.",
+          prompt: "Statutory exclusion versus structural exclusion, define both, with one example each.",
           answer:
-            "AITUC (1920, Communist Party of India), INTUC (1947, Indian National Congress), HMS (1948, the socialist stream), BMS (1955, the RSS, the BJP's ideological parent), CITU (1970, CPI(M)). Every major federation has a party.",
+            "Statutory: written into the law by name, the Wagner Act carving out agricultural and domestic workers. Structural: the law's vocabulary (employer, establishment, industry) simply never reaches you, India's ~90% informal workforce. The first can be repealed; the second has nothing to repeal.",
         },
         {
-          prompt: "What is the last completed government verification of union membership, and what did it find?",
+          prompt: "For an informal worker in India, what does Question 4 ('what happens to you if you try?') look like?",
           answer:
-            "The 2002 verification: BMS largest at about 6.2 million, then INTUC (~3.9m), AITUC (~3.3m), CITU (~2.7m). Later claims are self-declared and a subsequent verification was never cleanly completed, so no current official count exists.",
+            "Not dismissal, there is no job to be dismissed from. Retaliation is informal too: eviction from the vending spot, confiscation of the cart, the contractor who stops calling, the police. Informal punishment is harder to litigate than a firing.",
         },
       ],
     },
@@ -445,14 +433,14 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 - British Safety Council India. (2025, July). *Bharat Bandh sees over 250 million workers join nationwide strike against 'anti-worker' policies*. https://www.britsafe.in/safety-management-news/2025/bharat-bandh-sees-over-250-million-workers-join-nationwide-strike-against-anti-worker-policies`,
       recallContent: [
         {
-          prompt: "Why is the nationwide general strike the one industrial action an informal worker can join?",
+          prompt: "Name the five major Indian union federations, their founding years, and their political families.",
           answer:
-            "Because it requires no employer: you stay home, shut your stall, or march. Enterprise strikes need an employment relationship; the bharat bandh is aimed at the government and at policy, so the informal nine-tenths can take part.",
+            "AITUC (1920, Communist Party of India), INTUC (1947, Indian National Congress), HMS (1948, the socialist stream), BMS (1955, the RSS, the BJP's ideological parent), CITU (1970, CPI(M)). Every major federation has a party.",
         },
         {
-          prompt: "How do Indian general strikes differ in TARGET from the strikes in the anchor course (Homestead, Pullman, Flint)?",
+          prompt: "What is the last completed government verification of union membership, and what did it find?",
           answer:
-            "Anchor-course strikes ran against an employer, aimed at a contract. The Indian bharat bandh runs against the government, aimed at policy, labour codes, privatisation, social security. It is bargaining with the state, by the only means available to a fragmented movement.",
+            "The 2002 verification: BMS largest at about 6.2 million, then INTUC (~3.9m), AITUC (~3.3m), CITU (~2.7m). Later claims are self-declared and a subsequent verification was never cleanly completed, so no current official count exists.",
         },
       ],
     },
@@ -689,14 +677,14 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 - The Trade Unions Act, 1926 (India), § 4. India Code. https://www.indiacode.nic.in/bitstream/123456789/20965/1/the_trade_unions_act,_1926.pdf`,
       recallContent: [
         {
-          prompt: "SEWA, who founded it, when, where, and under what law did it register?",
+          prompt: "Why is the nationwide general strike the one industrial action an informal worker can join?",
           answer:
-            "Ela Bhatt (1933-2022), a labour lawyer from the Textile Labour Association's women's wing, founded the Self-Employed Women's Association in Ahmedabad in 1972. It registered as a trade union under the Trade Unions Act, 1926 (SEWA records 12 April 1972) after arguing a union needs a purpose, not an employer.",
+            "Because it requires no employer: you stay home, shut your stall, or march. Enterprise strikes need an employment relationship; the bharat bandh is aimed at the government and at policy, so the informal nine-tenths can take part.",
         },
         {
-          prompt: "How big is SEWA, and how should that figure be treated?",
+          prompt: "How do Indian general strikes differ in TARGET from the strikes in the anchor course (Homestead, Pullman, Flint)?",
           answer:
-            "SEWA reports 3.78 million members across 20 states, its own count, attributed not audited. Even discounted, it is one of India's largest workers' organisations, and unlike the major federations it is tied to no political party.",
+            "Anchor-course strikes ran against an employer, aimed at a contract. The Indian bharat bandh runs against the government, aimed at policy, labour codes, privatisation, social security. It is bargaining with the state, by the only means available to a fragmented movement.",
         },
       ],
     },
@@ -730,14 +718,14 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 - International Labour Organization. (2015). *Transition from the Informal to the Formal Economy Recommendation, 2015 (No. 204)*. https://www.ilo.org/`,
       recallContent: [
         {
-          prompt: "SEWA's 'struggle and development', what does each half mean?",
+          prompt: "SEWA, who founded it, when, where, and under what law did it register?",
           answer:
-            "Struggle: the union half, piece-rate campaigns against middlemen, eviction fights with municipalities, lobbying the state for welfare boards and laws. Development: member-owned institutions that build what a contract would have contained, the SEWA Cooperative Bank (1974), insurance, childcare, producer cooperatives.",
+            "Ela Bhatt (1933-2022), a labour lawyer from the Textile Labour Association's women's wing, founded the Self-Employed Women's Association in Ahmedabad in 1972. It registered as a trade union under the Trade Unions Act, 1926 (SEWA records 12 April 1972) after arguing a union needs a purpose, not an employer.",
         },
         {
-          prompt: "Name the 2014 statute SEWA's vendor battles helped produce, and what is odd about it as labour law.",
+          prompt: "How big is SEWA, and how should that figure be treated?",
           answer:
-            "The Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014, with town vending committees whose membership must be 40% vendors. It is labour law with the employer deleted: it regulates cities, not employers.",
+            "SEWA reports 3.78 million members across 20 states, its own count, attributed not audited. Even discounted, it is one of India's largest workers' organisations, and unlike the major federations it is tied to no political party.",
         },
       ],
     },
@@ -773,14 +761,14 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 - International Labour Organization. (2015). *Transition from the Informal to the Formal Economy Recommendation, 2015 (No. 204)*. https://www.ilo.org/`,
       recallContent: [
         {
-          prompt: "State SEWA's existence proof and its structural limit in one line each.",
+          prompt: "SEWA's 'struggle and development', what does each half mean?",
           answer:
-            "Proof: workers without employers can be organised at scale, three-plus million members, five decades, a working method. Limit: they cannot be brought under a collective agreement, because no counterparty exists to sign one, no counterparty, no contract.",
+            "Struggle: the union half, piece-rate campaigns against middlemen, eviction fights with municipalities, lobbying the state for welfare boards and laws. Development: member-owned institutions that build what a contract would have contained, the SEWA Cooperative Bank (1974), insurance, childcare, producer cooperatives.",
         },
         {
-          prompt: "How does SEWA illustrate the same law as the Nordic Ghent system?",
+          prompt: "Name the 2014 statute SEWA's vendor battles helped produce, and what is odd about it as labour law.",
           answer:
-            "Both show services build unions: Nordic unions keep members by administering unemployment funds; SEWA keeps members through its bank, insurance, and childcare. Where the statute gives a union nothing to deliver, the union must deliver something itself.",
+            "The Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014, with town vending committees whose membership must be 40% vendors. It is labour law with the employer deleted: it regulates cities, not employers.",
         },
       ],
     },
@@ -1021,14 +1009,14 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 - Press Information Bureau. (n.d.). *Industrial Relations Code, 2020: Promoting harmony and ease of doing business* [Factsheet]. Government of India. https://www.pib.gov.in/FactsheetDetails.aspx?Id=150483`,
       recallContent: [
         {
-          prompt: "The four Labour Codes, with years and one headline change each.",
+          prompt: "State SEWA's existence proof and its structural limit in one line each.",
           answer:
-            "Code on Wages (2019): universal minimum wage plus a national floor wage. Industrial Relations Code (2020): 300-worker permission threshold, universal 14-day strike notice, 51% sole negotiating union. OSH Code (2020): one safety/licensing regime absorbing 13 laws. Code on Social Security (2020): first statutory coverage of gig and platform workers. Together they replace 29 central laws.",
+            "Proof: workers without employers can be organised at scale, three-plus million members, five decades, a working method. Limit: they cannot be brought under a collective agreement, because no counterparty exists to sign one, no counterparty, no contract.",
         },
         {
-          prompt: "What did the Code on Wages, 2019 do to the 'scheduled employments' gap?",
+          prompt: "How does SEWA illustrate the same law as the Nordic Ghent system?",
           answer:
-            "Closed it: the minimum wage became universal instead of applying only to occupations a government had listed, with a national floor wage below which no state minimum may fall, on paper, the largest extension of a labour right toward the informal workforce in Indian history.",
+            "Both show services build unions: Nordic unions keep members by administering unemployment funds; SEWA keeps members through its bank, insurance, and childcare. Where the statute gives a union nothing to deliver, the union must deliver something itself.",
         },
       ],
     },
@@ -1061,14 +1049,14 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 - Ministry of Labour & Employment, Government of India. (2026, January). *FAQ on myths and realities of the Industrial Relations Code 2020*. https://www.labour.gov.in/static/uploads/2026/01/b9f5b3916c042a5597f9cb4f3cc9f0fd.pdf`,
       recallContent: [
         {
-          prompt: "The Labour Codes' four-threshold timeline, dated.",
+          prompt: "The four Labour Codes, with years and one headline change each.",
           answer:
-            "Enacted 2019 (Wages) and 2020 (the other three); brought into force 21 November 2025; final Central Rules 8 May 2026; state rules still uneven as of mid-2026 because labour is on the Concurrent List and every state writes its own rules. 'In force' means different things in different states.",
+            "Code on Wages (2019): universal minimum wage plus a national floor wage. Industrial Relations Code (2020): 300-worker permission threshold, universal 14-day strike notice, 51% sole negotiating union. OSH Code (2020): one safety/licensing regime absorbing 13 laws. Code on Social Security (2020): first statutory coverage of gig and platform workers. Together they replace 29 central laws.",
         },
         {
-          prompt: "Who absorbed the five-year commencement delay, and why is that asymmetric?",
+          prompt: "What did the Code on Wages, 2019 do to the 'scheduled employments' gap?",
           answer:
-            "The informal nine-tenths. The organised tenth kept its old-law protections through the gap; the universal minimum wage and gig social security existed only inside the un-commenced Codes, so the workers with the least did all the waiting.",
+            "Closed it: the minimum wage became universal instead of applying only to occupations a government had listed, with a national floor wage below which no state minimum may fall, on paper, the largest extension of a labour right toward the informal workforce in Indian history.",
         },
       ],
     },
@@ -1096,14 +1084,14 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 - Press Information Bureau. (2025). *Labour reforms: Formalising and safeguarding India's gig & platform workforce*. Government of India. https://www.pib.gov.in/PressReleasePage.aspx?PRID=2200767`,
       recallContent: [
         {
-          prompt: "The SS Code 2020's three gig-economy definitions and the funding rule.",
+          prompt: "The Labour Codes' four-threshold timeline, dated.",
           answer:
-            "Gig worker: earns outside a traditional employer-employee relationship. Platform worker: a gig worker working through an online platform. Aggregator: the digital intermediary (the app). Funding: aggregators contribute 1-2% of annual turnover, capped at 5% of payments to their gig/platform workers, to a social-security fund; registration runs through e-Shram (309M+ registrations by July 2025).",
+            "Enacted 2019 (Wages) and 2020 (the other three); brought into force 21 November 2025; final Central Rules 8 May 2026; state rules still uneven as of mid-2026 because labour is on the Concurrent List and every state writes its own rules. 'In force' means different things in different states.",
         },
         {
-          prompt: "Which two states legislated on gig work before the central Codes were operational, and how do their levies differ?",
+          prompt: "Who absorbed the five-year commencement delay, and why is that asymmetric?",
           answer:
-            "Rajasthan (2023, first in India): welfare cess of 1-2% per transaction. Karnataka (2025): welfare fee of 1-5% of per-transaction payout, graded by aggregator category, plus grievance and termination protections. The states moved during the Centre's five-year commencement gap.",
+            "The informal nine-tenths. The organised tenth kept its old-law protections through the gap; the universal minimum wage and gig social security existed only inside the un-commenced Codes, so the workers with the least did all the waiting.",
         },
       ],
     },
@@ -1342,14 +1330,14 @@ Both sentences can be true at once, and seeing how is a skill this course has be
 - Census of India. (2011). *Primary census abstract: Scheduled Castes and Scheduled Tribes*. Office of the Registrar General & Census Commissioner. https://censusindia.gov.in/`,
       recallContent: [
         {
-          prompt: "The two 2024 parliamentary data points on manual scavenging, and the definitional artifact between them.",
+          prompt: "The SS Code 2020's three gig-economy definitions and the funding rule.",
           answer:
-            "Rajya Sabha, July 2024: 'no reports of manual scavenging as defined by the 2013 Act', and 377 deaths cleaning sewers and septic tanks, 2019-2023, from the same ministry. The Act's definition centres on insanitary latrines; sewer and septic-tank deaths are filed under 'hazardous cleaning,' so the practice persists while the defined category reads as empty.",
+            "Gig worker: earns outside a traditional employer-employee relationship. Platform worker: a gig worker working through an online platform. Aggregator: the digital intermediary (the app). Funding: aggregators contribute 1-2% of annual turnover, capped at 5% of payments to their gig/platform workers, to a social-security fund; registration runs through e-Shram (309M+ registrations by July 2025).",
         },
         {
-          prompt: "What did NAMASTE profiling data (Lok Sabha, December 2024) show about who does sewer and septic-tank work?",
+          prompt: "Which two states legislated on gig work before the central Codes were operational, and how do their levies differ?",
           answer:
-            "Of 54,574 workers profiled and validated, 67.9% were Scheduled Castes and roughly 92% were SC/ST/OBC combined, against an SC population share of about 16.6% (Census 2011). Occupational assignment by descent, persisting inside the informal economy despite Article 17 and two statutory bans (1993, 2013).",
+            "Rajasthan (2023, first in India): welfare cess of 1-2% per transaction. Karnataka (2025): welfare fee of 1-5% of per-transaction payout, graded by aggregator category, plus grievance and termination protections. The states moved during the Centre's five-year commencement gap.",
         },
       ],
     },
@@ -1380,14 +1368,14 @@ Both sentences can be true at once, and seeing how is a skill this course has be
 - UNICEF India. (2016, July). *Statement on the Child Labour (Prohibition and Regulation) Amendment Act, 2016*. https://www.unicef.org/india/`,
       recallContent: [
         {
-          prompt: "India's child-labour count, dated, and why no current figure is headlined.",
+          prompt: "The two 2024 parliamentary data points on manual scavenging, and the definitional artifact between them.",
           answer:
-            "Census 2001: 12.7 million working children aged 5-14; Census 2011: 10.1 million, a real decline. The 2021 census was postponed, so as of mid-2026 the last full count is fifteen years old; everything newer is a survey estimate, and the course attributes rather than asserts those.",
+            "Rajya Sabha, July 2024: 'no reports of manual scavenging as defined by the 2013 Act', and 377 deaths cleaning sewers and septic tanks, 2019-2023, from the same ministry. The Act's definition centres on insanitary latrines; sewer and septic-tank deaths are filed under 'hazardous cleaning,' so the practice persists while the defined category reads as empty.",
         },
         {
-          prompt: "The 2016 amendment's two most criticised features.",
+          prompt: "What did NAMASTE profiling data (Lok Sabha, December 2024) show about who does sewer and septic-tank work?",
           answer:
-            "(1) The family-enterprise exception: children under 14 may 'help' in family enterprises after school, non-hazardous, carving out exactly the informal settings where most child labour lives. (2) The hazardous-occupations list for adolescents was cut from 83 items to 3 broad categories (mines, inflammables/explosives, Factories Act hazardous processes).",
+            "Of 54,574 workers profiled and validated, 67.9% were Scheduled Castes and roughly 92% were SC/ST/OBC combined, against an SC population share of about 16.6% (Census 2011). Occupational assignment by descent, persisting inside the informal economy despite Article 17 and two statutory bans (1993, 2013).",
         },
       ],
     },
@@ -1631,14 +1619,14 @@ Both sentences can be true at once, and seeing how is a skill this course has be
 - The Industrial Relations Code, 2020 (India), No. 35 of 2020. India Code. https://www.indiacode.nic.in/bitstream/123456789/22040/1/A2020-35.pdf`,
       recallContent: [
         {
-          prompt: "Give India's four answers, one line each.",
+          prompt: "India's child-labour count, dated, and why no current figure is headlined.",
           answer:
-            "Q1: nearly anyone may organise (Art. 19(1)(c), seven members), but no 87/98 ratification and no right to strike. Q2: excluded formally almost nobody, structurally ~90%, with a caste geography. Q3: the formal tenth bargains enterprise-level through party-tied federations; the informal rest bargain with substituted counterparties, above all the state. Q4: the rulebook, Rangarajan, or informal punishment, depending on which India you work in.",
+            "Census 2001: 12.7 million working children aged 5-14; Census 2011: 10.1 million, a real decline. The 2021 census was postponed, so as of mid-2026 the last full count is fifteen years old; everything newer is a survey estimate, and the course attributes rather than asserts those.",
         },
         {
-          prompt: "Why does this course say politics replaces bargaining where the employer is missing?",
+          prompt: "The 2016 amendment's two most criticised features.",
           answer:
-            "Bargaining needs a counterparty who can sign; the informal majority has none, so demands aim at the state instead. That is why India's biggest labor events are general strikes against governments over policy (attributed at 250M), not contract fights against firms, and why welfare boards and e-Shram are the informal economy's 'agreements.'",
+            "(1) The family-enterprise exception: children under 14 may 'help' in family enterprises after school, non-hazardous, carving out exactly the informal settings where most child labour lives. (2) The hazardous-occupations list for adolescents was cut from 83 items to 3 broad categories (mines, inflammables/explosives, Factories Act hazardous processes).",
         },
       ],
     },

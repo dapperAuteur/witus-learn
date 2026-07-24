@@ -75,18 +75,6 @@ Second, and this is the through-line of the entire course: **Sweden is not Denma
 - OECD/AIAS. (n.d.). *ICTWSS database — country notes: Sweden; Denmark*. Organisation for Economic Co-operation and Development. https://www.oecd.org/en/data/datasets/oecd-aias-ictwss-database.html
 - European Commission. (2022). *Directive (EU) 2022/2041 on adequate minimum wages in the European Union* [recitals on Member States without statutory minimum wages]. EUR-Lex. https://eur-lex.europa.eu/eli/dir/2022/2041/oj
 - Eurofound. (n.d.). *Sweden: Statutory minimum wages* [notes that Sweden has no statutory minimum wage; pay floors set by collective agreement]. European Foundation for the Improvement of Living and Working Conditions. https://www.eurofound.europa.eu/en/topic/minimum-wage`,
-      recallContent: [
-        {
-          prompt: "In Sweden and Denmark, what sets the minimum wage, and who writes it?",
-          answer:
-            "Collective agreements, negotiated industry by industry between unions and employers, so there are hundreds of sector-level floors, each written by the union and the employers it covers, not by the legislature. Neither country has a single statutory national minimum wage.",
-        },
-        {
-          prompt: "Why might a NEGOTIATED wage floor be more durable than a LEGISLATED one, in this model's own logic?",
-          answer:
-            "Because it can be defended and raised every bargaining round without first winning a national election, and because a floor written into law risks becoming a ceiling, a union on the other side of a negotiated floor exists to push it up.",
-        },
-      ],
     },
     {
       slug: "nordic-four-questions",
@@ -121,14 +109,14 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
 - ETUI / Worker Participation. (n.d.). *Sweden; Denmark: National industrial relations*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries`,
       recallContent: [
         {
-          prompt: "Roughly what were union density rates in Sweden and Denmark (early 2020s) and the US (2025), with sources?",
+          prompt: "In Sweden and Denmark, what sets the minimum wage, and who writes it?",
           answer:
-            "Around 65% in Sweden and around 67% in Denmark (OECD/AIAS ICTWSS, ~2019-2022), against 10.0% in the United States in 2025 (BLS, 2026).",
+            "Collective agreements, negotiated industry by industry between unions and employers, so there are hundreds of sector-level floors, each written by the union and the employers it covers, not by the legislature. Neither country has a single statutory national minimum wage.",
         },
         {
-          prompt: "What is the 'referee' difference between the US/German systems and the Nordic one (Q3)?",
+          prompt: "Why might a NEGOTIATED wage floor be more durable than a LEGISLATED one, in this model's own logic?",
           answer:
-            "The U.S. has the NLRB and Germany has a dense statute; Sweden and Denmark largely have no state referee. The two sides self-regulate the labour market by agreement, and the state stays out by tradition, set up by Saltsjöbaden (1938) and the September Compromise (1899).",
+            "Because it can be defended and raised every bargaining round without first winning a national election, and because a floor written into law risks becoming a ceiling, a union on the other side of a negotiated floor exists to push it up.",
         },
       ],
     },
@@ -360,14 +348,14 @@ Compare the American worker's decision. In the U.S., joining a union is a *separ
 - Lind, J. (2009). The end of the Ghent system as a trade union recruitment machinery? *Industrial Relations Journal, 40*(6), 510–523. https://doi.org/10.1111/j.1468-2338.2009.00543.x`,
       recallContent: [
         {
-          prompt: "What is the Ghent system, and where is it named after?",
+          prompt: "Roughly what were union density rates in Sweden and Denmark (early 2020s) and the US (2025), with sources?",
           answer:
-            "A system in which unemployment insurance is administered by union-linked funds (the a-kassa in Sweden, the a-kasse in Denmark), so joining the union is the default when you insure yourself against job loss. Named after Ghent, Belgium, where it began around 1901.",
+            "Around 65% in Sweden and around 67% in Denmark (OECD/AIAS ICTWSS, ~2019-2022), against 10.0% in the United States in 2025 (BLS, 2026).",
         },
         {
-          prompt: "Give the sharpest reason the same 'freedom to organise' produces ~65% density in Sweden but ~10% in the US.",
+          prompt: "What is the 'referee' difference between the US/German systems and the Nordic one (Q3)?",
           answer:
-            "The default is opposite. In Sweden joining is what you tick on the unemployment-insurance form; in the US it is a separate, deliberate, sometimes fireable act of helping build a union that usually doesn't exist at your workplace yet.",
+            "The U.S. has the NLRB and Germany has a dense statute; Sweden and Denmark largely have no state referee. The two sides self-regulate the labour market by agreement, and the state stays out by tradition, set up by Saltsjöbaden (1938) and the September Compromise (1899).",
         },
       ],
     },
@@ -403,14 +391,14 @@ Still: hold the table in your head. When someone tells you high union membership
 - OECD. (2025). *Membership of unions and employers' organisations, and bargaining coverage*. OECD Publishing. https://www.oecd.org/en/publications/membership-of-unions-and-employers-organisations-and-bargaining-coverage_fe47107c-en.html`,
       recallContent: [
         {
-          prompt: "How does Norway serve as a 'natural experiment' for the Ghent system?",
+          prompt: "What is the Ghent system, and where is it named after?",
           answer:
-            "Norway is Nordic and has a strong welfare state but NO Ghent system (state-run unemployment insurance). Its density (~50%, early 2020s) is markedly below Ghent-system Sweden (~65%) and Denmark (~67%). Same culture, different plumbing, and the density gap tracks the plumbing.",
+            "A system in which unemployment insurance is administered by union-linked funds (the a-kassa in Sweden, the a-kasse in Denmark), so joining the union is the default when you insure yourself against job loss. Named after Ghent, Belgium, where it began around 1901.",
         },
         {
-          prompt: "What is the honest caveat on the Norway comparison?",
+          prompt: "Give the sharpest reason the same 'freedom to organise' produces ~65% density in Sweden but ~10% in the US.",
           answer:
-            "It is observational, not a lab: ~50% is still high, Norway's bargaining coverage is high too, and other factors matter. The evidence is consistent with a large Ghent effect (roughly +15 points), not proof of it.",
+            "The default is opposite. In Sweden joining is what you tick on the unemployment-insurance form; in the US it is a separate, deliberate, sometimes fireable act of helping build a union that usually doesn't exist at your workplace yet.",
         },
       ],
     },
@@ -439,14 +427,14 @@ Sit with what that gives you. This is not two different countries with a hundred
 - Kjellberg, A. (2024). *Kollektivavtalens täckningsgrad samt organisationsgraden hos arbetsgivarförbund och fackförbund* [Coverage of collective agreements and density of employer and union organisations] (Studies in Social Policy, Industrial Relations, Working Life and Mobility, Research Reports). Lund University, Department of Sociology. https://portal.research.lu.se/en/publications/`,
       recallContent: [
         {
-          prompt: "What was the core change in Sweden's 2007 a-kassa reform, and the two-year effect on density?",
+          prompt: "How does Norway serve as a 'natural experiment' for the Ghent system?",
           answer:
-            "It raised and differentiated a-kassa membership fees (higher fees where unemployment was higher). Union density fell from ~77% (2006) to ~71% (2008), the steepest fall in modern Swedish history, and hit blue-collar (LO) unions hardest (Kjellberg, 2011).",
+            "Norway is Nordic and has a strong welfare state but NO Ghent system (state-run unemployment insurance). Its density (~50%, early 2020s) is markedly below Ghent-system Sweden (~65%) and Denmark (~67%). Same culture, different plumbing, and the density gap tracks the plumbing.",
         },
         {
-          prompt: "What does the post-2007 'coda' (fees cut in 2014, density only partly recovering) teach?",
+          prompt: "What is the honest caveat on the Norway comparison?",
           answer:
-            "Institutions have momentum, a broken habit of membership doesn't fully re-form, and the Ghent effect runs both ways: cheapening the fund slows the bleed but does not automatically undo the damage. Density stabilised in the high-60s, below its 2006 level.",
+            "It is observational, not a lab: ~50% is still high, Norway's bargaining coverage is high too, and other factors matter. The evidence is consistent with a large Ghent effect (roughly +15 points), not proof of it.",
         },
       ],
     },
@@ -672,14 +660,14 @@ The phrase Swedes use for what came out of it is **"the spirit of Saltsjöbaden"
 - ETUI / Worker Participation. (n.d.). *Sweden: Collective bargaining*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries/sweden`,
       recallContent: [
         {
-          prompt: "Who signed the Saltsjöbaden Basic Agreement, in what year, and what did it actually regulate?",
+          prompt: "What was the core change in Sweden's 2007 a-kassa reform, and the two-year effect on density?",
           answer:
-            "The union confederation LO and the employers' confederation SAF, in December 1938. It was not a wage deal but a 'treaty about how to have disputes', procedures for negotiation, handling conflicts, limiting action that harms third parties, and settling matters between the two sides rather than through the state.",
+            "It raised and differentiated a-kassa membership fees (higher fees where unemployment was higher). Union density fell from ~77% (2006) to ~71% (2008), the steepest fall in modern Swedish history, and hit blue-collar (LO) unions hardest (Kjellberg, 2011).",
         },
         {
-          prompt: "What was the Ådalen event (1931), and why is it in this lesson?",
+          prompt: "What does the post-2007 'coda' (fees cut in 2014, density only partly recovering) teach?",
           answer:
-            "In May 1931 soldiers fired on a workers' demonstration at Ådalen, Sweden, killing five people. It is in the lesson to show the admired, consensual 'Swedish model' was a settlement forced by a decade of hard, sometimes deadly conflict, not a calm national temperament.",
+            "Institutions have momentum, a broken habit of membership doesn't fully re-form, and the Ghent effect runs both ways: cheapening the fund slows the bleed but does not automatically undo the damage. Density stabilised in the high-60s, below its 2006 level.",
         },
       ],
     },
@@ -708,14 +696,14 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
 - Eurofound. (n.d.). *Denmark: Industrial relations and social dialogue*. European Foundation for the Improvement of Living and Working Conditions. https://www.eurofound.europa.eu/en/country/denmark`,
       recallContent: [
         {
-          prompt: "What is the September Compromise (1899), and why is it called 'the constitution of the labour market'?",
+          prompt: "Who signed the Saltsjöbaden Basic Agreement, in what year, and what did it actually regulate?",
           answer:
-            "The 1899 Danish agreement between the employers' confederation DA and the union confederation that ended the Great Lockout. It is the founding, never-replaced framework of Danish self-regulation: employers recognised the right to organise, unions recognised the employer's right to manage and direct work (ledelsesret), within agreed rules for disputes.",
+            "The union confederation LO and the employers' confederation SAF, in December 1938. It was not a wage deal but a 'treaty about how to have disputes', procedures for negotiation, handling conflicts, limiting action that harms third parties, and settling matters between the two sides rather than through the state.",
         },
         {
-          prompt: "Give one way the timing of the two founding agreements marks Denmark as distinct from Sweden.",
+          prompt: "What was the Ådalen event (1931), and why is it in this lesson?",
           answer:
-            "Denmark's settlement (1899) predates Sweden's (1938) by about forty years, so Danish self-regulation is older and built even more around cross-sectoral peak organisations, part of why the distinctively Danish flexicurity bargain (easy dismissal, well cushioned) could take root, while Sweden grew a stronger statutory layer in the 1970s.",
+            "In May 1931 soldiers fired on a workers' demonstration at Ådalen, Sweden, killing five people. It is in the lesson to show the admired, consensual 'Swedish model' was a settlement forced by a decade of hard, sometimes deadly conflict, not a calm national temperament.",
         },
       ],
     },
@@ -743,14 +731,14 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
 - ETUI / Worker Participation. (n.d.). *Sweden; Denmark: Collective bargaining*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries`,
       recallContent: [
         {
-          prompt: "In Sweden, which sector sets the wage norm ('the mark'/märket), and what formalised that role?",
+          prompt: "What is the September Compromise (1899), and why is it called 'the constitution of the labour market'?",
           answer:
-            "Internationally exposed manufacturing/export industry settles first and sets the norm ('märket') that other sectors follow. Sweden's Industrial Agreement (Industriavtalet) of 1997 formalised this norm-setting role. The point is to keep economy-wide wages tethered to what exporters can afford.",
+            "The 1899 Danish agreement between the employers' confederation DA and the union confederation that ended the Great Lockout. It is the founding, never-replaced framework of Danish self-regulation: employers recognised the right to organise, unions recognised the employer's right to manage and direct work (ledelsesret), within agreed rules for disputes.",
         },
         {
-          prompt: "What is the peace obligation (fredsplikt), and where does it sit in Swedish law?",
+          prompt: "Give one way the timing of the two founding agreements marks Denmark as distinct from Sweden.",
           answer:
-            "Once a collective agreement is in force, the bound parties may not take industrial action over matters it covers, for the life of the agreement. In Sweden it sits in the Co-determination Act (MBL, SFS 1976:580); sympathy action is an exception, generally only to support a lawful primary conflict. Disputes go to the Labour Court (Arbetsdomstolen).",
+            "Denmark's settlement (1899) predates Sweden's (1938) by about forty years, so Danish self-regulation is older and built even more around cross-sectoral peak organisations, part of why the distinctively Danish flexicurity bargain (easy dismissal, well cushioned) could take root, while Sweden grew a stronger statutory layer in the 1970s.",
         },
       ],
     },
@@ -996,19 +984,14 @@ So the honest verdict, dated: flexicurity is a real and coherent bargain, not a 
 - Lag (1982:80) om anställningsskydd [Employment Protection Act / LAS] (Sweden). Sveriges riksdag. https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-198280-om-anstallningsskydd_sfs-1982-80`,
       recallContent: [
         {
-          prompt: "Name the three legs of Danish flexicurity (the 'golden triangle') and the trade it offers workers.",
+          prompt: "In Sweden, which sector sets the wage norm ('the mark'/märket), and what formalised that role?",
           answer:
-            "(1) Easy hiring and firing; (2) a relatively generous unemployment benefit (dagpenge); (3) heavy active labour-market policy (retraining/activation). Workers trade JOB security for EMPLOYMENT security, losing a job is survivable and temporary rather than wrecking.",
+            "Internationally exposed manufacturing/export industry settles first and sets the norm ('märket') that other sectors follow. Sweden's Industrial Agreement (Industriavtalet) of 1997 formalised this norm-setting role. The point is to keep economy-wide wages tethered to what exporters can afford.",
         },
         {
-          prompt: "Give the clearest evidence that flexicurity's 'security' side has thinned.",
+          prompt: "What is the peace obligation (fredsplikt), and where does it sit in Swedish law?",
           answer:
-            "The 2010 reform cut the maximum dagpenge period from four years to two (phased ~2012-13) and roughly doubled the requalification requirement; the benefit's replacement rate has also drifted down for many workers as the cap lagged wages.",
-        },
-        {
-          prompt: "How does Sweden differ from Denmark on job protection?",
-          answer:
-            "Sweden does not run classic Danish flexicurity; it has stronger statutory job protection via the Employment Protection Act (LAS, 1982) with 'last in, first out' seniority, though a 2022 reform loosened dismissals somewhat in exchange for stronger retraining rights. 'Nordic' is at least two different labour markets.",
+            "Once a collective agreement is in force, the bound parties may not take industrial action over matters it covers, for the life of the agreement. In Sweden it sits in the Co-determination Act (MBL, SFS 1976:580); sympathy action is an exception, generally only to support a lawful primary conflict. Disputes go to the Labour Court (Arbetsdomstolen).",
         },
       ],
     },
@@ -1036,14 +1019,19 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
 - ETUI / Worker Participation. (n.d.). *Sweden; Denmark: Industrial action*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries`,
       recallContent: [
         {
-          prompt: "What does US Taft-Hartley § 8(b)(4) do, and how does the Nordic rule on sympathy action differ?",
+          prompt: "Name the three legs of Danish flexicurity (the 'golden triangle') and the trade it offers workers.",
           answer:
-            "§ 8(b)(4) (1947) bans US unions from pressuring a NEUTRAL business to force it to stop dealing with the employer the union actually disputes, outlawing secondary boycotts/sympathy strikes. In Sweden and Denmark, sympathy action in support of a LAWFUL primary conflict is legal (an exception to the peace obligation in Sweden's MBL), so a dispute can lawfully radiate to firms not directly involved.",
+            "(1) Easy hiring and firing; (2) a relatively generous unemployment benefit (dagpenge); (3) heavy active labour-market policy (retraining/activation). Workers trade JOB security for EMPLOYMENT security, losing a job is survivable and temporary rather than wrecking.",
         },
         {
-          prompt: "Why is the legality of sympathy action essential to Nordic self-regulation?",
+          prompt: "Give the clearest evidence that flexicurity's 'security' side has thinned.",
           answer:
-            "Because the wage floor is enforced by collective pressure rather than by law; the sympathy strike is what makes that pressure strong enough to bring a hold-out employer to sign. Ban it and the self-regulation model loses its teeth.",
+            "The 2010 reform cut the maximum dagpenge period from four years to two (phased ~2012-13) and roughly doubled the requalification requirement; the benefit's replacement rate has also drifted down for many workers as the cap lagged wages.",
+        },
+        {
+          prompt: "How does Sweden differ from Denmark on job protection?",
+          answer:
+            "Sweden does not run classic Danish flexicurity; it has stronger statutory job protection via the Employment Protection Act (LAS, 1982) with 'last in, first out' seniority, though a 2022 reform loosened dismissals somewhat in exchange for stronger retraining rights. 'Nordic' is at least two different labour markets.",
         },
       ],
     },
@@ -1283,14 +1271,14 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
 - Financial Times. (2023–2024). *Reporting on Tesla's Swedish labour dispute* [dated news reporting; contested and evolving — re-check]. https://www.ft.com/`,
       recallContent: [
         {
-          prompt: "When and why did IF Metall strike against Tesla, and why was a ~130-mechanic strike enough to matter?",
+          prompt: "What does US Taft-Hartley § 8(b)(4) do, and how does the Nordic rule on sympathy action differ?",
           answer:
-            "On 27 October 2023, over Tesla's refusal to sign a collective agreement for its Swedish service mechanics. The small primary strike mattered because legal sympathy action multiplied it, dockworkers, PostNord (mail and licence plates), electricians, cleaners and painters, plus transport unions across the Nordics refusing to handle Tesla vehicles.",
+            "§ 8(b)(4) (1947) bans US unions from pressuring a NEUTRAL business to force it to stop dealing with the employer the union actually disputes, outlawing secondary boycotts/sympathy strikes. In Sweden and Denmark, sympathy action in support of a LAWFUL primary conflict is legal (an exception to the peace obligation in Sweden's MBL), so a dispute can lawfully radiate to firms not directly involved.",
         },
         {
-          prompt: "What is the course's required way of stating the Tesla dispute's status?",
+          prompt: "Why is the legality of sympathy action essential to Nordic self-regulation?",
           answer:
-            "As dated, contested and unfinished: as of the course's 2026 writing, unresolved, Tesla had not signed, actions continued, neither side had won, and the learner should re-check the current state. No winner is declared.",
+            "Because the wage floor is enforced by collective pressure rather than by law; the sympathy strike is what makes that pressure strong enough to bring a hold-out employer to sign. Ban it and the self-regulation model loses its teeth.",
         },
       ],
     },
@@ -1318,14 +1306,14 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
 - IF Metall. (2023–). *Tesla-konflikten* [interested primary source — treat accordingly; re-check for current status]. Industrifacket Metall. https://www.ifmetall.se/`,
       recallContent: [
         {
-          prompt: "What are the three things the Tesla dispute puts under load?",
+          prompt: "When and why did IF Metall strike against Tesla, and why was a ~130-mechanic strike enough to matter?",
           answer:
-            "(1) Whether a self-regulation model with no minimum-wage law and no legal extension can compel a firm that simply refuses; (2) whether the legal sympathy strike still has teeth against a globally mobile company that can re-route logistics and wait; (3) whether the response stays national or becomes coordinated across the Nordics/Europe.",
+            "On 27 October 2023, over Tesla's refusal to sign a collective agreement for its Swedish service mechanics. The small primary strike mattered because legal sympathy action multiplied it, dockworkers, PostNord (mail and licence plates), electricians, cleaners and painters, plus transport unions across the Nordics refusing to handle Tesla vehicles.",
         },
         {
-          prompt: "How does Tesla connect to Section 6's 'honest limits'?",
+          prompt: "What is the course's required way of stating the Tesla dispute's status?",
           answer:
-            "Tesla is the dramatic version of a quiet problem: it is not only defiant multinationals who sit outside the collective agreements, but also migrant workers, platform workers, and employees of the growing number of firms that never signed. The model was built for nationally rooted firms that accept the rules.",
+            "As dated, contested and unfinished: as of the course's 2026 writing, unresolved, Tesla had not signed, actions continued, neither side had won, and the learner should re-check the current state. No winner is declared.",
         },
       ],
     },
@@ -1564,14 +1552,14 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
 - OECD/AIAS. (n.d.). *ICTWSS database — country notes: Sweden; Denmark*. https://www.oecd.org/en/data/datasets/oecd-aias-ictwss-database.html`,
       recallContent: [
         {
-          prompt: "What are the three things simultaneously true about the Nordic model that the course insists on?",
+          prompt: "What are the three things the Tesla dispute puts under load?",
           answer:
-            "It is genuinely impressive; it is eroding (density has fallen from a higher peak, Sweden ~85% mid-1990s to ~65% now); and it has always had people standing outside it (migrant/posted, platform, and never-signed-firm workers). 'Strong' and 'weakening' are both true.",
+            "(1) Whether a self-regulation model with no minimum-wage law and no legal extension can compel a firm that simply refuses; (2) whether the legal sympathy strike still has teeth against a globally mobile company that can re-route logistics and wait; (3) whether the response stays national or becomes coordinated across the Nordics/Europe.",
         },
         {
-          prompt: "How does the Danish 'alternative union / a-kasse' trend erode the model, and what did the Laval case establish?",
+          prompt: "How does Tesla connect to Section 6's 'honest limits'?",
           answer:
-            "Alternative funds sell the a-kasse without the bargaining union attached, capturing the fund while detaching it from the bargaining power it financed, the Section 2 erosion mechanism, sharpest in Denmark. Laval (CJEU C-341/05, 2007) held Swedish union blockade action against a Latvian firm's posted workers a disproportionate restriction on EU freedom to provide services, curbing the enforcement weapon at the border (prompting the 2010 'Lex Laval').",
+            "Tesla is the dramatic version of a quiet problem: it is not only defiant multinationals who sit outside the collective agreements, but also migrant workers, platform workers, and employees of the growing number of firms that never signed. The model was built for nationally rooted firms that accept the rules.",
         },
       ],
     },
@@ -1615,14 +1603,14 @@ That is the whole course in one paradox. **The strongest labour movements in the
 - Court of Justice of the European Union. (n.d.). *Denmark v Parliament and Council* (Case C-19/23) [annulment action; check current status]. https://curia.europa.eu/juris/liste.jsf?num=C-19/23`,
       recallContent: [
         {
-          prompt: "State the paradox this course exists to teach, in one sentence.",
+          prompt: "What are the three things simultaneously true about the Nordic model that the course insists on?",
           answer:
-            "The strongest labour movements in the developed world fought a minimum-wage law (the EU directive 2022/2041) to protect a labour model in which there is no minimum-wage law, because the law would weaken the movement that makes the no-law model work.",
+            "It is genuinely impressive; it is eroding (density has fallen from a higher peak, Sweden ~85% mid-1990s to ~65% now); and it has always had people standing outside it (migrant/posted, platform, and never-signed-firm workers). 'Strong' and 'weakening' are both true.",
         },
         {
-          prompt: "What is the single methodological habit the course wants you to keep for every other country?",
+          prompt: "How does the Danish 'alternative union / a-kasse' trend erode the model, and what did the Laval case establish?",
           answer:
-            "Look for the plumbing before you reach for the culture. Union numbers and labour outcomes are usually explained by institutions (like who runs the unemployment fund) rather than by national character.",
+            "Alternative funds sell the a-kasse without the bargaining union attached, capturing the fund while detaching it from the bargaining power it financed, the Section 2 erosion mechanism, sharpest in Denmark. Laval (CJEU C-341/05, 2007) held Swedish union blockade action against a Latvian firm's posted workers a disproportionate restriction on EU freedom to provide services, curbing the enforcement weapon at the border (prompting the 2010 'Lex Laval').",
         },
       ],
     },

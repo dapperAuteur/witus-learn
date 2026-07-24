@@ -81,18 +81,6 @@ Here are the anchor course's **four questions**, asked of Chile in advance. Ever
 - OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/
 - Piñera, J. (1990). *La revolución laboral en Chile*. Zig-Zag. https://www.economiaysociedad.cl/
 - Biblioteca del Congreso Nacional de Chile. (1979). *Decreto Ley 2758: Establece normas sobre negociación colectiva*. LeyChile. https://www.bcn.cl/leychile/navegar?idNorma=6993`,
-      recallContent: [
-        {
-          prompt: "Who wrote Chile's 1979 Plan Laboral, under what government, and what is its central architectural rule?",
-          answer:
-            "José Piñera, a Harvard-trained economist appointed Minister of Labor at 30, under the Pinochet military dictatorship. The central rule: collective bargaining is confined by law to the single firm, never the industry or sector.",
-        },
-        {
-          prompt: "Give Chile's union density and bargaining coverage with year and source, and the OECD coverage average for comparison.",
-          answer:
-            "Density around 16% and coverage around 19.3% in 2023 (OECD/AIAS ICTWSS, in OECD 2025), against an OECD coverage average of about 33.5% (2023/24), among the lowest coverage in the OECD.",
-        },
-      ],
     },
     {
       slug: "chile-before-1973",
@@ -120,14 +108,14 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
 - Central Unitaria de Trabajadores de Chile. (n.d.). *La historia de la CUT*. https://cut.cl/web/la-historia-de-la-cut/`,
       recallContent: [
         {
-          prompt: "What was the CUT (1953), and how strong was Chilean labor by 1973, with sources?",
+          prompt: "Who wrote Chile's 1979 Plan Laboral, under what government, and what is its central architectural rule?",
           answer:
-            "The Central Única de Trabajadores, Chile's single national union center founded in 1953. By 1973 union density reached roughly 34%, its historic peak (Fundación Sol, 2015; Memoria Chilena), and by the CUT's own account it represented about 940,000 workers in some 6,700 unions at the time of the coup.",
+            "José Piñera, a Harvard-trained economist appointed Minister of Labor at 30, under the Pinochet military dictatorship. The central rule: collective bargaining is confined by law to the single firm, never the industry or sector.",
         },
         {
-          prompt: "Why does the pre-1973 movement's SHAPE (not just its size) matter for reading the Plan Laboral?",
+          prompt: "Give Chile's union density and bargaining coverage with year and source, and the OECD coverage average for comparison.",
           answer:
-            "Because it was centralised (one national confederation), industrially organised (copper and nitrate bargained as sectors), and politically consequential (a pillar of Allende's coalition), and the 1979 design reads almost point-for-point as the negation of exactly those three properties.",
+            "Density around 16% and coverage around 19.3% in 2023 (OECD/AIAS ICTWSS, in OECD 2025), against an OECD coverage average of about 33.5% (2023/24), among the lowest coverage in the OECD.",
         },
       ],
     },
@@ -367,14 +355,14 @@ Here is the point to carry into the next lesson. **By 1978, Chile's old labor sy
 - Museo de la Memoria y los Derechos Humanos. (n.d.). *Archivo: Central Unitaria de Trabajadores (CUT)*. https://www.archivommdh.cl/index.php/central-unitaria-de-trabajadores-cut`,
       recallContent: [
         {
-          prompt: "By what instrument and when was the CUT dissolved, and what else was shut down with it?",
+          prompt: "What was the CUT (1953), and how strong was Chilean labor by 1973, with sources?",
           answer:
-            "Decree Law No. 12, September 1973, the junta cancelled the CUT's legal status, outlawed it, and seized its assets. Collective bargaining was suspended, union elections banned, meetings put under police supervision, and wages set by decree. Chile then had no functioning collective bargaining for six years.",
+            "The Central Única de Trabajadores, Chile's single national union center founded in 1953. By 1973 union density reached roughly 34%, its historic peak (Fundación Sol, 2015; Memoria Chilena), and by the CUT's own account it represented about 940,000 workers in some 6,700 unions at the time of the coup.",
         },
         {
-          prompt: "Name the two documented cases the course uses to stand for the repression of labor figures, and why they are 'findings, not allegations.'",
+          prompt: "Why does the pre-1973 movement's SHAPE (not just its size) matter for reading the Plan Laboral?",
           answer:
-            "Víctor Jara, detained, tortured and killed in the Estadio Chile days after the coup; and Tucapel Jiménez, ANEF president, murdered by state intelligence agents in 1982. Both cases ended in criminal convictions in Chilean courts, and the overall toll (3,000+ killed or disappeared) is documented by Chile's own truth commissions.",
+            "Because it was centralised (one national confederation), industrially organised (copper and nitrate bargained as sectors), and politically consequential (a pillar of Allende's coalition), and the 1979 design reads almost point-for-point as the negation of exactly those three properties.",
         },
       ],
     },
@@ -403,14 +391,14 @@ One more piece of context you need before Section 3, because it is part of the h
 - Memoria Chilena, Biblioteca Nacional de Chile. (n.d.). *Sindicalismo en Chile durante la dictadura militar*. https://www.memoriachilena.gob.cl/`,
       recallContent: [
         {
-          prompt: "What was the Grupo de los Diez, and what international pressure did the labor vacuum provoke by 1978?",
+          prompt: "By what instrument and when was the CUT dissolved, and what else was shut down with it?",
           answer:
-            "A group of surviving Chilean union leaders who kept pressing the regime and reached out abroad. By 1978 the AFL-CIO and international transport unions were preparing a commercial boycott of Chilean exports, longshoremen refusing Chilean cargo, demanding an end to labor-rights violations. For an export economy, that threat had teeth.",
+            "Decree Law No. 12, September 1973, the junta cancelled the CUT's legal status, outlawed it, and seized its assets. Collective bargaining was suspended, union elections banned, meetings put under police supervision, and wages set by decree. Chile then had no functioning collective bargaining for six years.",
         },
         {
-          prompt: "State both halves of the boycott-to-Plan sequence that 'honest people emphasise differently.'",
+          prompt: "Name the two documented cases the course uses to stand for the repression of labor figures, and why they are 'findings, not allegations.'",
           answer:
-            "Half one: international solidarity worked, foreign union pressure forced a dictatorship to restore legal unions and bargaining within months. Half two: the regime turned compliance into architecture, it wrote a new code that met the formal demand while engineering organised labor's permanent weakness. The boycott forced A labor law; the dictatorship chose WHICH one.",
+            "Víctor Jara, detained, tortured and killed in the Estadio Chile days after the coup; and Tucapel Jiménez, ANEF president, murdered by state intelligence agents in 1982. Both cases ended in criminal convictions in Chilean courts, and the overall toll (3,000+ killed or disappeared) is documented by Chile's own truth commissions.",
         },
       ],
     },
@@ -648,14 +636,14 @@ One fairness note before the strike lesson. **None of these moves reads as shock
 - International Labour Organization. (n.d.). *Chile — Decreto-ley núm. 2758 por el que se establecen normas sobre negociación colectiva* (NATLEX). https://www.ilo.org/dyn/natlex/natlex4.detail?p_isn=12535`,
       recallContent: [
         {
-          prompt: "Which two decree laws carry the Plan Laboral's collective architecture, and what does each govern?",
+          prompt: "What was the Grupo de los Diez, and what international pressure did the labor vacuum provoke by 1978?",
           answer:
-            "DL 2756 (1979) governs union organisations, union types, voluntary membership, multiple unions per firm, voluntary dues. DL 2758 (1979) governs collective bargaining, firm-level only, federations barred from bargaining, negotiating groups permitted, and the strike rules. (DL 2200 of 1978 had already flexibilised individual contracts.)",
+            "A group of surviving Chilean union leaders who kept pressing the regime and reached out abroad. By 1978 the AFL-CIO and international transport unions were preparing a commercial boycott of Chilean exports, longshoremen refusing Chilean cargo, demanding an end to labor-rights violations. For an export economy, that threat had teeth.",
         },
         {
-          prompt: "Why does the course call the Plan's union pluralism 'fragmentation' rather than freedom?",
+          prompt: "State both halves of the boycott-to-Plan sequence that 'honest people emphasise differently.'",
           answer:
-            "Because permitting multiple competing unions inside one firm, each bargaining separately, funded only by voluntary dues, with non-union negotiating groups as competitors, multiplies worker organisations while dividing their power: as many parallel negotiations as unions in a workplace. More unions, less union.",
+            "Half one: international solidarity worked, foreign union pressure forced a dictatorship to restore legal unions and bargaining within months. Half two: the regime turned compliance into architecture, it wrote a new code that met the formal demand while engineering organised labor's permanent weakness. The boycott forced A labor law; the dictatorship chose WHICH one.",
         },
       ],
     },
@@ -685,14 +673,14 @@ Put the three together and run the game out in your head. You strike; the firm h
 - NLRB v. Mackay Radio & Telegraph Co., 304 U.S. 333 (1938). Library of Congress. https://www.loc.gov/item/usrep304333/`,
       recallContent: [
         {
-          prompt: "What was the '59-day trapdoor' in the original DL 2758?",
+          prompt: "Which two decree laws carry the Plan Laboral's collective architecture, and what does each govern?",
           answer:
-            "A strike's legal time limit with a penalty: after 59 days on strike, a worker was deemed by law to have VOLUNTARILY RESIGNED, not fired, resigned. Combined with legal replacement and possible lockout, the fuse burned toward the strikers.",
+            "DL 2756 (1979) governs union organisations, union types, voluntary membership, multiple unions per firm, voluntary dues. DL 2758 (1979) governs collective bargaining, firm-level only, federations barred from bargaining, negotiating groups permitted, and the strike rules. (DL 2200 of 1978 had already flexibilised individual contracts.)",
         },
         {
-          prompt: "How does Chile's 1979 replacement rule compare with US law, and why does the course say the difference is 'provenance'?",
+          prompt: "Why does the course call the Plan's union pluralism 'fragmentation' rather than freedom?",
           answer:
-            "Mechanically they rhyme: NLRB v. Mackay Radio (1938) made permanent replacement of economic strikers lawful in the US, and post-PATCO employers used it. But the US rule accreted through doctrine and norm shifts; Chile's was drawn deliberately, one clause in a coherent design whose author stated the goal, strikes that do not paralyse. Same furniture, different architect, so always ask who put the rule there and why.",
+            "Because permitting multiple competing unions inside one firm, each bargaining separately, funded only by voluntary dues, with non-union negotiating groups as competitors, multiplies worker organisations while dividing their power: as many parallel negotiations as unions in a workplace. More unions, less union.",
         },
       ],
     },
@@ -729,14 +717,14 @@ That is a real case. It is made by serious people, it contains true statements, 
 - Álvarez, R. (2012). El Plan Laboral y la negociación colectiva: ¿origen de un nuevo sindicalismo en Chile? 1979–1985. *Boletín del Instituto de Historia Argentina y Americana "Dr. Emilio Ravignani"*, (35/36). https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S0524-97672012000200004`,
       recallContent: [
         {
-          prompt: "List the four claims of the steelmanned defense of the Plan Laboral.",
+          prompt: "What was the '59-day trapdoor' in the original DL 2758?",
           answer:
-            "(1) It legalised unions when the junta's real alternative was nothing; (2) firm-level bargaining ties wages to firm productivity and protects employment at marginal firms; (3) depoliticised unions protect workers from being weaponised or purged by parties; (4) Chile's post-1985 growth and poverty decline vindicate labor flexibility.",
+            "A strike's legal time limit with a penalty: after 59 days on strike, a worker was deemed by law to have VOLUNTARILY RESIGNED, not fired, resigned. Combined with legal replacement and possible lockout, the fuse burned toward the strikers.",
         },
         {
-          prompt: "What is the asymmetry problem with the 'depoliticisation' claim?",
+          prompt: "How does Chile's 1979 replacement rule compare with US law, and why does the course say the difference is 'provenance'?",
           answer:
-            "Only one side was depoliticised: unions were confined to firm-level economics while employers and their associations remained free to organise nationally, fund politics, and shape legislation. Depoliticising one side of a power relationship doesn't remove politics, it hands the politics to the other side.",
+            "Mechanically they rhyme: NLRB v. Mackay Radio (1938) made permanent replacement of economic strikers lawful in the US, and post-PATCO employers used it. But the US rule accreted through doctrine and norm shifts; Chile's was drawn deliberately, one clause in a coherent design whose author stated the goal, strikes that do not paralyse. Same furniture, different architect, so always ask who put the rule there and why.",
         },
       ],
     },
@@ -977,14 +965,14 @@ Because, this is the uncomfortable, load-bearing fact, **it largely couldn't, an
 - OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/`,
       recallContent: [
         {
-          prompt: "What did the 1991 reform (Ley 19.069) change about the strike, and what did it preserve?",
+          prompt: "List the four claims of the steelmanned defense of the Plan Laboral.",
           answer:
-            "It removed the fixed strike time limit (the 59-day deemed-resignation trapdoor), making strikes indefinite, and came alongside strengthened dismissal protections. It preserved striker replacement, itself regulating the conditions for hiring replacements from day one, the firm-level lock, and the negotiating-group competitor.",
+            "(1) It legalised unions when the junta's real alternative was nothing; (2) firm-level bargaining ties wages to firm productivity and protects employment at marginal firms; (3) depoliticised unions protect workers from being weaponised or purged by parties; (4) Chile's post-1985 growth and poverty decline vindicate labor flexibility.",
         },
         {
-          prompt: "How did the 1980 Constitution protect the Plan Laboral after 1990?",
+          prompt: "What is the asymmetry problem with the 'depoliticisation' claim?",
           answer:
-            "Designated (non-elected) senators and an engineered electoral system let the right hold a Senate blocking position with minority support, so structural labor reforms died or shrank there for the transition's first fifteen-plus years. The labor code and the political system shielding it were parts of one project, by the same designer's hand.",
+            "Only one side was depoliticised: unions were confined to firm-level economics while employers and their associations remained free to organise nationally, fund politics, and shape legislation. Depoliticising one side of a power relationship doesn't remove politics, it hands the politics to the other side.",
         },
       ],
     },
@@ -1017,14 +1005,14 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
 - Ministerio del Trabajo y Previsión Social (Chile). (2023). *Ley que reduce la jornada laboral a 40 horas semanales es publicada en el Diario Oficial*. https://www.mintrab.gob.cl/ley-que-reduce-la-jornada-laboral-a-40-horas-semanales-es-publicada-en-el-diario-oficial/`,
       recallContent: [
         {
-          prompt: "What is the 'huelga efectiva,' and when did Chile get it?",
+          prompt: "What did the 1991 reform (Ley 19.069) change about the strike, and what did it preserve?",
           answer:
-            "The effective strike: Ley 20.940 (published 8 September 2016, in force 1 April 2017) prohibited replacing striking workers with external hires or internal reshuffling, reversing the 1979 replacement rule after 38 years. The struck firm now actually stops.",
+            "It removed the fixed strike time limit (the 59-day deemed-resignation trapdoor), making strikes indefinite, and came alongside strengthened dismissal protections. It preserved striker replacement, itself regulating the conditions for hiring replacements from day one, the firm-level lock, and the negotiating-group competitor.",
         },
         {
-          prompt: "What happened to 'titularidad sindical,' and why does it matter?",
+          prompt: "How did the 1980 Constitution protect the Plan Laboral after 1990?",
           answer:
-            "The reform tried to make the union the sole bargaining agent where one exists, closing the 1979 negotiating-groups loophole, but Chile's Constitutional Tribunal struck that chapter down on 9 May 2016 (Rol 3016-16), on freedom-of-association grounds, before the law took effect. The non-union competitor from the original design survives.",
+            "Designated (non-elected) senators and an engineered electoral system let the right hold a Senate blocking position with minority support, so structural labor reforms died or shrank there for the transition's first fifteen-plus years. The labor code and the political system shielding it were parts of one project, by the same designer's hand.",
         },
       ],
     },
@@ -1271,14 +1259,14 @@ Carry the fingerprint idea into the next lesson, because the design has one more
 - Fundación Sol. (2015). *Sindicatos y negociación colectiva: Panorama estadístico nacional y evidencia comparada*. https://fundacionsol.cl/`,
       recallContent: [
         {
-          prompt: "Give Chile's density and coverage (year + source), and the OECD averages they compare against.",
+          prompt: "What is the 'huelga efectiva,' and when did Chile get it?",
           answer:
-            "Density ~16% (2023), slightly ABOVE the OECD average of 15.1% (2023); coverage ~19.3% (2023), among the OECD's lowest, against an average of 33.5% (2023/24). All OECD/AIAS ICTWSS figures via OECD (2025).",
+            "The effective strike: Ley 20.940 (published 8 September 2016, in force 1 April 2017) prohibited replacing striking workers with external hires or internal reshuffling, reversing the 1979 replacement rule after 38 years. The struck firm now actually stops.",
         },
         {
-          prompt: "Why is 'Chilean density has RISEN since 1985' true but misleading, and what habit does it teach?",
+          prompt: "What happened to 'titularidad sindical,' and why does it matter?",
           answer:
-            "Because 1985 is the mid-dictatorship trough: only Iceland, Chile and Spain show increases from that baseline (OECD, 2025), yet from the 1973 peak (~34%) density is down by more than half. Whoever picks the baseline picks the story, always ask what the starting point is doing.",
+            "The reform tried to make the union the sole bargaining agent where one exists, closing the 1979 negotiating-groups loophole, but Chile's Constitutional Tribunal struck that chapter down on 9 May 2016 (Rol 3016-16), on freedom-of-association grounds, before the law took effect. The non-union competitor from the original design survives.",
         },
       ],
     },
@@ -1305,14 +1293,14 @@ You have seen this move before, in country after country, and now it has a famil
 - Aravena, A. (2016). Oportunidad, conflicto y reconocimiento: El movimiento de trabajadores subcontratados de CODELCO y el gobierno de Michelle Bachelet, 2006–2007. *Polis (Santiago)*. https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0718-50492016000400004`,
       recallContent: [
         {
-          prompt: "Name the 'put-them-outside move' variants across the track, including Chile's.",
+          prompt: "Give Chile's density and coverage (year + source), and the OECD averages they compare against.",
           answer:
-            "US: the NLRA farm/domestic carve-out and modern misclassification. Mexico: protection contracts (a union that isn't yours). Poland: junk contracts (civil-law instead of employment contracts). Global South broadly: informality. Chile: subcontratación, a thin contractor becomes your legal employer, and in a firm-level-only system that empties your bargaining rights of their target.",
+            "Density ~16% (2023), slightly ABOVE the OECD average of 15.1% (2023); coverage ~19.3% (2023), among the OECD's lowest, against an average of 33.5% (2023/24). All OECD/AIAS ICTWSS figures via OECD (2025).",
         },
         {
-          prompt: "What happened at Codelco in 2007, and why does the course call it the course's sharpest irony?",
+          prompt: "Why is 'Chilean density has RISEN since 1985' true but misleading, and what habit does it teach?",
           answer:
-            "Some 30,000 subcontracted workers struck for 37 days under the CTC and won a framework agreement (Acuerdo Marco) across Codelco's divisions, described by the CTC as Chile's first sectoral-type bargaining since before the dictatorship. The workers the 1979 architecture most excluded produced its first post-1979 approximation of sectoral bargaining, entirely outside the legal machinery.",
+            "Because 1985 is the mid-dictatorship trough: only Iceland, Chile and Spain show increases from that baseline (OECD, 2025), yet from the 1973 peak (~34%) density is down by more than half. Whoever picks the baseline picks the story, always ask what the starting point is doing.",
         },
       ],
     },
@@ -1560,14 +1548,14 @@ Even the membership plumbing points opposite ways. The Nordics run **default-in*
 - Biblioteca del Congreso Nacional de Chile. (1979). *Decreto Ley 2758: Establece normas sobre negociación colectiva*. LeyChile. https://www.bcn.cl/leychile/navegar?idNorma=6993`,
       recallContent: [
         {
-          prompt: "In what sense do Sweden/Denmark and Chile have the SAME wage-setting architecture on paper, and what are the numbers that show the opposite outcomes?",
+          prompt: "Name the 'put-them-outside move' variants across the track, including Chile's.",
           answer:
-            "Neither mandates sectoral bargaining by statute nor has a legal extension mechanism, coverage is left to what the parties build. Outcomes: Sweden ~65% density / ~88% coverage, Denmark ~67% / ~82%, Chile ~16% / ~19.3% (OECD/AIAS; Chile 2023).",
+            "US: the NLRA farm/domestic carve-out and modern misclassification. Mexico: protection contracts (a union that isn't yours). Poland: junk contracts (civil-law instead of employment contracts). Global South broadly: informality. Chile: subcontratación, a thin contractor becomes your legal employer, and in a firm-level-only system that empties your bargaining rights of their target.",
         },
         {
-          prompt: "Explain the two metaphors: the referee's silence vs the wall's silence.",
+          prompt: "What happened at Codelco in 2007, and why does the course call it the course's sharpest irony?",
           answer:
-            "The Nordic statute is silent like a referee at a grandmasters' match, the strong parties govern themselves and asked the state out (1899, 1938). The Chilean statute is silent above the firm like a wall, DL 2758 exists to stop movement to the sectoral level. Same textual silence, opposite provenance and purpose.",
+            "Some 30,000 subcontracted workers struck for 37 days under the CTC and won a framework agreement (Acuerdo Marco) across Codelco's divisions, described by the CTC as Chile's first sectoral-type bargaining since before the dictatorship. The workers the 1979 architecture most excluded produced its first post-1979 approximation of sectoral bargaining, entirely outside the legal machinery.",
         },
       ],
     },
@@ -1600,14 +1588,14 @@ That durability, whatever one thinks of it, and Chileans think everything of it,
 - Servicio Electoral de Chile. (n.d.). *Resultados plebiscitos* (Archivo Histórico). https://archivo.servel.cl/index.php/resultados-plebiscitos`,
       recallContent: [
         {
-          prompt: "Give the three plebiscite results, dated, with source.",
+          prompt: "In what sense do Sweden/Denmark and Chile have the SAME wage-setting architecture on paper, and what are the numbers that show the opposite outcomes?",
           answer:
-            "25 October 2020: 78.27% Apruebo to begin a rewrite. 4 September 2022: the Convention's draft rejected, 61.86% Rechazo / 38.14% Apruebo, mandatory voting, 85.7% turnout, Chile's highest-participation vote. 17 December 2023: the Council's draft rejected, 55.76% En contra / 44.24% A favor. All per Servel (with BCN reporting).",
+            "Neither mandates sectoral bargaining by statute nor has a legal extension mechanism, coverage is left to what the parties build. Outcomes: Sweden ~65% density / ~88% coverage, Denmark ~67% / ~82%, Chile ~16% / ~19.3% (OECD/AIAS; Chile 2023).",
         },
         {
-          prompt: "Why does the course refuse to read the 2022/2023 results as verdicts on labor policy?",
+          prompt: "Explain the two metaphors: the referee's silence vs the wall's silence.",
           answer:
-            "Both proposals, one transformative, one more conservative than the status quo, were rejected as wholes: hundreds of articles spanning every subject, with voters' reasons never itemised. Inferring a labor verdict from a whole-document rejection is exactly the kind of overreach the track teaches you to refuse. The safe conclusion is institutional: the amended 1980 Constitution and the 1979 labor architecture remain in force.",
+            "The Nordic statute is silent like a referee at a grandmasters' match, the strong parties govern themselves and asked the state out (1899, 1938). The Chilean statute is silent above the firm like a wall, DL 2758 exists to stop movement to the sectoral level. Same textual silence, opposite provenance and purpose.",
         },
       ],
     },
@@ -1645,14 +1633,14 @@ A labor system is an answer to the question "how much organised power should wor
 - NLRB v. Mackay Radio & Telegraph Co., 304 U.S. 333 (1938). Library of Congress. https://www.loc.gov/item/usrep304333/`,
       recallContent: [
         {
-          prompt: "Answer Question 4 for Chile as of today, in two sentences.",
+          prompt: "Give the three plebiscite results, dated, with source.",
           answer:
-            "Since Ley 20.940 took effect (1 April 2017), workers may strike and may not be replaced, externally or internally, the 1979 design's sharpest tooth, drawn after 38 years. But the strike remains confined to a single firm's regulated bargaining round, in a system where the firm you may pressure is often not where power over your conditions lives.",
+            "25 October 2020: 78.27% Apruebo to begin a rewrite. 4 September 2022: the Convention's draft rejected, 61.86% Rechazo / 38.14% Apruebo, mandatory voting, 85.7% turnout, Chile's highest-participation vote. 17 December 2023: the Council's draft rejected, 55.76% En contra / 44.24% A favor. All per Servel (with BCN reporting).",
         },
         {
-          prompt: "What are the design patterns Chile teaches you to recognise in systems that 'deny having authors'?",
+          prompt: "Why does the course refuse to read the 2022/2023 results as verdicts on labor policy?",
           answer:
-            "Rules that all lean one direction; 'freedoms' that fragment (pluralism, negotiating groups); procedures that desynchronise; penalties that make a right legal but unusable (replacement, the 59-day trapdoor); and political locks protecting the arrangement from revision (the 1980 Constitution's veto points). Seen once where confessed, they become recognisable where denied.",
+            "Both proposals, one transformative, one more conservative than the status quo, were rejected as wholes: hundreds of articles spanning every subject, with voters' reasons never itemised. Inferring a labor verdict from a whole-document rejection is exactly the kind of overreach the track teaches you to refuse. The safe conclusion is institutional: the amended 1980 Constitution and the 1979 labor architecture remain in force.",
         },
       ],
     },

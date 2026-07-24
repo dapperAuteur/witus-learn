@@ -85,24 +85,6 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
 - Gregory, J. (n.d.). *Racial restrictive covenants project*. University of Washington. https://depts.washington.edu/covenants/
 - KUOW. (2016). *Race matters: Understanding how the Central Area was gentrified*. https://www.kuow.org/stories/race-matters-understanding-how-the-central-area-was-gentrified
 - Seattle Civil Rights and Labor History Project. (n.d.). *Racial restrictive covenants*. University of Washington. https://depts.washington.edu/civilr/covenants.htm`,
-      recallContent: [
-        {
-          prompt: "What is a racially restrictive covenant, and what does it mean that it 'runs with the land'?",
-          answer: "A clause in a property deed barring sale, rental, or occupancy by people outside a named race. Running with the land means it binds later owners, not only the person who signed it, so it segregates a neighborhood in advance.",
-        },
-        {
-          prompt: "How did covenants segregate differently from a refusal at the point of sale?",
-          answer: "They segregated in advance. Whole neighborhoods were made legally closed to nonwhite buyers before anyone applied, rather than keeping a record of individuals turned away.",
-        },
-        {
-          prompt: "Where were Seattle's Black residents concentrated, and why does the course say the concentration is a consequence rather than a preference?",
-          answer: "In the Central District, east of downtown. Most of the city was closed by covenant and, from the 1930s, marked risky by federal mortgage maps, so the concentration follows from restriction and has a paper trail.",
-        },
-        {
-          prompt: "Why does this course refuse to reproduce one specific Seattle deed's covenant wording verbatim?",
-          answer: "Because it could not pin one specific deed's exact text to a citable source while authoring. It describes the documented exclusionary formulas, attributes them, and sends the learner to the UW covenants archive to read actual deeds. Reporting the gap is the honest move.",
-        },
-      ],
     },
     {
       slug: "sea-then-covenants-archive",
@@ -137,20 +119,20 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
 - Substitute House Bill 1335, 67th Leg., Reg. Sess. (Wash. 2021). https://depts.washington.edu/covenants/shb1335.shtml`,
       recallContent: [
         {
-          prompt: "Who runs the Racial Restrictive Covenants Project, and what makes it an unusual kind of source?",
-          answer: "Historian James Gregory at the University of Washington, with Larry Cebula at Eastern Washington University. It is a searchable archive of the primary documents, the deeds themselves, rather than a summary you have to trust.",
+          prompt: "What is a racially restrictive covenant, and what does it mean that it 'runs with the land'?",
+          answer: "A clause in a property deed barring sale, rental, or occupancy by people outside a named race. Running with the land means it binds later owners, not only the person who signed it, so it segregates a neighborhood in advance.",
         },
         {
-          prompt: "Give the scale figures the project reports for Washington and for King County.",
-          answer: "More than 80,000 restricted properties statewide, found by examining more than 7 million property records; King County, which contains Seattle, alone accounts for more than 37,000 restricted properties.",
+          prompt: "How did covenants segregate differently from a refusal at the point of sale?",
+          answer: "They segregated in advance. Whole neighborhoods were made legally closed to nonwhite buyers before anyone applied, rather than keeping a record of individuals turned away.",
         },
         {
-          prompt: "What did Washington House Bill 1335 (2021) do?",
-          answer: "It charged the project with identifying neighborhoods covered by racist deed provisions statewide and created a process for a current owner to have the covenant language struck from their own property title.",
+          prompt: "Where were Seattle's Black residents concentrated, and why does the course say the concentration is a consequence rather than a preference?",
+          answer: "In the Central District, east of downtown. Most of the city was closed by covenant and, from the 1930s, marked risky by federal mortgage maps, so the concentration follows from restriction and has a paper trail.",
         },
         {
-          prompt: "Name two things the covenants archive does NOT prove.",
-          answer: "It is a restriction, not a census, so it does not tell you who lived where or how a rule was enforced in a given case; and the absence of a covenant is not proof of openness, because lending, steering, and violence excluded people without leaving a covenant. The documented properties are a floor, not a ceiling.",
+          prompt: "Why does this course refuse to reproduce one specific Seattle deed's covenant wording verbatim?",
+          answer: "Because it could not pin one specific deed's exact text to a citable source while authoring. It describes the documented exclusionary formulas, attributes them, and sends the learner to the UW covenants archive to read actual deeds. Reporting the gap is the honest move.",
         },
       ],
     },
@@ -182,20 +164,20 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
 - National Park Service. (n.d.). *Bainbridge Island Japanese American Exclusion Memorial, Minidoka National Historic Site*. https://www.nps.gov/miin/index.htm`,
       recallContent: [
         {
-          prompt: "What order authorized the removal, and what was the first exclusion order issued under it?",
-          answer: "Executive Order 9066, signed February 19, 1942, authorized the military to designate exclusion areas. Civilian Exclusion Order No. 1, the first issued under it, targeted Bainbridge Island because of its proximity to naval facilities.",
+          prompt: "Who runs the Racial Restrictive Covenants Project, and what makes it an unusual kind of source?",
+          answer: "Historian James Gregory at the University of Washington, with Larry Cebula at Eastern Washington University. It is a searchable archive of the primary documents, the deeds themselves, rather than a summary you have to trust.",
         },
         {
-          prompt: "Give the two Bainbridge numbers and the distinction between them.",
-          answer: "On March 30, 1942, 227 Japanese Americans were removed and ferried out, then sent to Manzanar. The island's total Japanese American population was about 276; those away for study, work, or service were not allowed to return. The gap is people who lost their homes without being on the ferry.",
+          prompt: "Give the scale figures the project reports for Washington and for King County.",
+          answer: "More than 80,000 restricted properties statewide, found by examining more than 7 million property records; King County, which contains Seattle, alone accounts for more than 37,000 restricted properties.",
         },
         {
-          prompt: "Describe the memorial as its keepers describe it.",
-          answer: "The Bainbridge Island Japanese American Exclusion Memorial at Pritchard Park, near the ferry site, guided by 'Nidoto Nai Yoni,' translated as 'Let it not happen again.' Its heart is a long wooden wall carrying the names and ages of the island's 1942 Japanese American residents. It is administered as part of Minidoka National Historic Site.",
+          prompt: "What did Washington House Bill 1335 (2021) do?",
+          answer: "It charged the project with identifying neighborhoods covered by racist deed provisions statewide and created a process for a current owner to have the covenant language struck from their own property title.",
         },
         {
-          prompt: "Why does the course insist on naming the instrument rather than using a single word like 'racism'?",
-          answer: "Because the covenant and the removal targeted overlapping communities through entirely different machinery, a private deed versus a federal military order. Naming the instrument keeps the mechanism visible instead of hiding it behind one word.",
+          prompt: "Name two things the covenants archive does NOT prove.",
+          answer: "It is a restriction, not a census, so it does not tell you who lived where or how a rule was enforced in a given case; and the absence of a covenant is not proof of openness, because lending, steering, and violence excluded people without leaving a covenant. The documented properties are a floor, not a ceiling.",
         },
       ],
     },
@@ -412,20 +394,20 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
 - Seattle Civil Rights and Labor History Project. (n.d.). *Seattle's Central District*. University of Washington. https://depts.washington.edu/civilr/`,
       recallContent: [
         {
-          prompt: "Where is the Central District, and what does the course mean by reading it as a floor plan?",
-          answer: "The neighborhoods east of downtown and south of Capitol Hill, where a large majority of Seattle's Black residents lived in the mid twentieth century. Read as a floor plan, a community pressed into a small area builds density into it because it has nowhere else to build.",
+          prompt: "What order authorized the removal, and what was the first exclusion order issued under it?",
+          answer: "Executive Order 9066, signed February 19, 1942, authorized the military to designate exclusion areas. Civilian Exclusion Order No. 1, the first issued under it, targeted Bainbridge Island because of its proximity to naval facilities.",
         },
         {
-          prompt: "Why does the course call the Central District infrastructure rather than entertainment?",
-          answer: "Because a district built under exclusion held churches doubling as organizing halls, Black-owned businesses, a Jackson Street music scene, and mutual aid and civil rights organizations, assembled because the wider city refused to provide them. It is the same finding as the Indiana Avenue course.",
+          prompt: "Give the two Bainbridge numbers and the distinction between them.",
+          answer: "On March 30, 1942, 227 Japanese Americans were removed and ferried out, then sent to Manzanar. The island's total Japanese American population was about 276; those away for study, work, or service were not allowed to return. The gap is people who lost their homes without being on the ferry.",
         },
         {
-          prompt: "How are the Central District's density and the north end's exclusivity the same fact from two sides?",
-          answer: "One neighborhood is crowded because the others are closed. A map of where covenants were thickest laid over a map of where Black Seattle lived shows near mirror images, which is a mechanism, not a coincidence.",
+          prompt: "Describe the memorial as its keepers describe it.",
+          answer: "The Bainbridge Island Japanese American Exclusion Memorial at Pritchard Park, near the ferry site, guided by 'Nidoto Nai Yoni,' translated as 'Let it not happen again.' Its heart is a long wooden wall carrying the names and ages of the island's 1942 Japanese American residents. It is administered as part of Minidoka National Historic Site.",
         },
         {
-          prompt: "Name two ways the built form encodes the constraint.",
-          answer: "Churches larger than a small congregation would build because the church was also the meeting hall and political base; and a dense residential fabric because the covenant belt left no room to expand outward.",
+          prompt: "Why does the course insist on naming the instrument rather than using a single word like 'racism'?",
+          answer: "Because the covenant and the removal targeted overlapping communities through entirely different machinery, a private deed versus a federal military order. Naming the instrument keeps the mechanism visible instead of hiding it behind one word.",
         },
       ],
     },
@@ -458,20 +440,20 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
 - Systemic Justice Project, Harvard Law School. (n.d.). *Redlining and disinvestment: A case study on racial segregation and gentrification throughout Seattle's Central District*. https://systemicjustice.org/article/redlining-and-disinvestment-a-case-study-on-racial-segregation-and-gentrification-throughout-seattles-central-district/`,
       recallContent: [
         {
-          prompt: "Give the Central District's Black-share change with the discipline the course requires.",
-          answer: "In the 1960s and 1970s, by several accounts, roughly 78 to 90 percent of Seattle's Black population lived there and its tracts ran about 40 to 90 percent Black in 1970; by 2020 those tracts were on the order of 7 to 17 percent Black. Report them as journalism and public-history ranges with the outlet attached, not as surveyed constants.",
+          prompt: "Where is the Central District, and what does the course mean by reading it as a floor plan?",
+          answer: "The neighborhoods east of downtown and south of Capitol Hill, where a large majority of Seattle's Black residents lived in the mid twentieth century. Read as a floor plan, a community pressed into a small area builds density into it because it has nowhere else to build.",
         },
         {
-          prompt: "State Claim A and Claim B, with their different dates and mechanisms.",
-          answer: "Claim A, earlier policy: covenants and 1930s mortgage maps and decades of disinvestment made the neighborhood Black and depressed in value, a mid-century story of exclusion. Claim B, later gentrification and displacement: from the 1990s, rising values, taxes, and rents priced out long-time residents, a turn-of-the-century story of a market.",
+          prompt: "Why does the course call the Central District infrastructure rather than entertainment?",
+          answer: "Because a district built under exclusion held churches doubling as organizing halls, Black-owned businesses, a Jackson Street music scene, and mutual aid and civil rights organizations, assembled because the wider city refused to provide them. It is the same finding as the Indiana Avenue course.",
         },
         {
-          prompt: "Why must the two claims be kept apart rather than merged?",
-          answer: "They have different dates and different responsible actors. Blaming gentrification for the whole arc gets the mid-century wrong; blaming only redlining gets the recent decades wrong. They are causally linked, earlier policy made the neighborhood cheap and the market later took it, which is a sequence, not a synonym.",
+          prompt: "How are the Central District's density and the north end's exclusivity the same fact from two sides?",
+          answer: "One neighborhood is crowded because the others are closed. A map of where covenants were thickest laid over a map of where Black Seattle lived shows near mirror images, which is a mechanism, not a coincidence.",
         },
         {
-          prompt: "What is the defensible one-sentence version, and the indefensible one?",
-          answer: "Defensible: policy made it cheap, then the market took it. Indefensible: gentrification segregated the Central District. Name which claim you are making, attach a date, and cite the figure.",
+          prompt: "Name two ways the built form encodes the constraint.",
+          answer: "Churches larger than a small congregation would build because the church was also the meeting hall and political base; and a dense residential fabric because the covenant belt left no room to expand outward.",
         },
       ],
     },
@@ -499,20 +481,20 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
 - National Park Service. (n.d.). *Bainbridge Island Japanese American Exclusion Memorial, Minidoka National Historic Site*. https://www.nps.gov/miin/index.htm`,
       recallContent: [
         {
-          prompt: "Why is the memorial's siting at Pritchard Park a design decision?",
-          answer: "It stands at the exact ground where the ferry left on March 30, 1942, not in a civic plaza or cemetery. Placing it where the removal physically happened makes the ground part of the evidence and argues that place matters.",
+          prompt: "Give the Central District's Black-share change with the discipline the course requires.",
+          answer: "In the 1960s and 1970s, by several accounts, roughly 78 to 90 percent of Seattle's Black population lived there and its tracts ran about 40 to 90 percent Black in 1970; by 2020 those tracts were on the order of 7 to 17 percent Black. Report them as journalism and public-history ranges with the outlet attached, not as surveyed constants.",
         },
         {
-          prompt: "What do the two central design choices, names-and-ages and wood, encode?",
-          answer: "Names and ages rather than a total refuse the rounding of loss into a statistic, one person per line. Wood, which weathers and must be maintained, makes the memorial a commitment the living community renews rather than a monument left behind.",
+          prompt: "State Claim A and Claim B, with their different dates and mechanisms.",
+          answer: "Claim A, earlier policy: covenants and 1930s mortgage maps and decades of disinvestment made the neighborhood Black and depressed in value, a mid-century story of exclusion. Claim B, later gentrification and displacement: from the 1990s, rising values, taxes, and rents priced out long-time residents, a turn-of-the-century story of a market.",
         },
         {
-          prompt: "What does federal designation as part of Minidoka National Historic Site do, and not do?",
-          answer: "It brings the site into the national park framework with its interpretation, funding, and stewardship. It is recognition plus leverage, not by itself a local zoning control; everyday protection of any place still runs through local ordinance and the community that maintains it.",
+          prompt: "Why must the two claims be kept apart rather than merged?",
+          answer: "They have different dates and different responsible actors. Blaming gentrification for the whole arc gets the mid-century wrong; blaming only redlining gets the recent decades wrong. They are causally linked, earlier policy made the neighborhood cheap and the market later took it, which is a sequence, not a synonym.",
         },
         {
-          prompt: "Why does the memorial belong in beat 2 rather than beat 1?",
-          answer: "Beat 1 is what happened; beat 2 is what got built and what the built form encodes. The removal is history; the memorial is a built argument about that history made by the people it happened to, read through siting, material, and form.",
+          prompt: "What is the defensible one-sentence version, and the indefensible one?",
+          answer: "Defensible: policy made it cheap, then the market took it. Indefensible: gentrification segregated the Central District. Name which claim you are making, attach a date, and cite the figure.",
         },
       ],
     },
@@ -552,20 +534,20 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
 - U.S. Const. amend. XIV.`,
       recallContent: [
         {
-          prompt: "What gave a racially restrictive covenant its force before 1948?",
-          answer: "Judicial enforcement. A covenant was a private contract, but a court would enforce it, voiding a sale to a barred buyer, which turned a private prejudice into a public instrument backed by the state.",
+          prompt: "Why is the memorial's siting at Pritchard Park a design decision?",
+          answer: "It stands at the exact ground where the ferry left on March 30, 1942, not in a civic plaza or cemetery. Placing it where the removal physically happened makes the ground part of the evidence and argues that place matters.",
         },
         {
-          prompt: "What exactly did Shelley v. Kraemer (1948) hold?",
-          answer: "That judicial enforcement of a racially restrictive covenant is state action violating the Equal Protection Clause of the Fourteenth Amendment. The covenants as private agreements were not made illegal; what became unconstitutional was a court enforcing one.",
+          prompt: "What do the two central design choices, names-and-ages and wood, encode?",
+          answer: "Names and ages rather than a total refuse the rounding of loss into a statistic, one person per line. Wood, which weathers and must be maintained, makes the memorial a commitment the living community renews rather than a monument left behind.",
         },
         {
-          prompt: "Name two things Shelley did NOT do.",
-          answer: "It did not strike the language from existing deeds, so the clauses remain readable today; it did not bar private discrimination by refusal, lending, or steering; and it did not undo the segregation the covenants had already built.",
+          prompt: "What does federal designation as part of Minidoka National Historic Site do, and not do?",
+          answer: "It brings the site into the national park framework with its interpretation, funding, and stewardship. It is recognition plus leverage, not by itself a local zoning control; everyday protection of any place still runs through local ordinance and the community that maintains it.",
         },
         {
-          prompt: "What did Washington HB 1335 (2021) add, and why was it needed decades after Shelley?",
-          answer: "Because Shelley left the language in the deeds, HB 1335 created a process, run through the King County Recorder's Office, for a current owner to have a covenant formally struck from their own title. Removal is still voluntary and owner-by-owner.",
+          prompt: "Why does the memorial belong in beat 2 rather than beat 1?",
+          answer: "Beat 1 is what happened; beat 2 is what got built and what the built form encodes. The removal is history; the memorial is a built argument about that history made by the people it happened to, read through siting, material, and form.",
         },
       ],
     },
@@ -601,20 +583,20 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
 - Washington v. Seattle School District No. 1, 458 U.S. 457 (1982). https://www.law.cornell.edu/supremecourt/text/458/457`,
       recallContent: [
         {
-          prompt: "Why did neighborhood-based assignment produce segregated Seattle schools without any current legal command?",
-          answer: "Because covenants and lending had concentrated Black Seattle in the Central District, its neighborhood schools were heavily Black while others were heavily white. The housing map produced the school pattern; no court order or law required it. That distinction is what the 2007 case turns on.",
+          prompt: "What gave a racially restrictive covenant its force before 1948?",
+          answer: "Judicial enforcement. A covenant was a private contract, but a court would enforce it, voiding a sale to a barred buyer, which turned a private prejudice into a public instrument backed by the state.",
         },
         {
-          prompt: "What was the Seattle Plan, and how should its 'first big city' claim be handled?",
-          answer: "A late-1970s desegregation plan using mandatory reassignment and busing, with district-wide busing beginning September 1978. Attribute the claim that Seattle was the first large city to desegregate voluntarily to HistoryLink and others rather than adopting it flat.",
+          prompt: "What exactly did Shelley v. Kraemer (1948) hold?",
+          answer: "That judicial enforcement of a racially restrictive covenant is state action violating the Equal Protection Clause of the Fourteenth Amendment. The covenants as private agreements were not made illegal; what became unconstitutional was a court enforcing one.",
         },
         {
-          prompt: "What did Initiative 350 try to do, and what did the Supreme Court do in 1982?",
-          answer: "Initiative 350 (1978) tried to bar school boards from assigning students away from neighborhood schools for desegregation. In Washington v. Seattle School District No. 1 (1982), the Court struck it down as unconstitutionally restructuring the political process to burden racial minorities. In 1982 the Court protected Seattle's voluntary integration.",
+          prompt: "Name two things Shelley did NOT do.",
+          answer: "It did not strike the language from existing deeds, so the clauses remain readable today; it did not bar private discrimination by refusal, lending, or steering; and it did not undo the segregation the covenants had already built.",
         },
         {
-          prompt: "How did the racial tiebreaker work, and what classification did it use?",
-          answer: "Under open choice, when a high school was oversubscribed the district used tiebreakers; the racial tiebreaker favored whichever applicant would move a far-from-balance school toward the district's overall balance. It classified students as white or nonwhite, the binary the 2007 case is fought over.",
+          prompt: "What did Washington HB 1335 (2021) add, and why was it needed decades after Shelley?",
+          answer: "Because Shelley left the language in the deeds, HB 1335 created a process, run through the King County Recorder's Office, for a current owner to have a covenant formally struck from their own title. Removal is still voluntary and owner-by-owner.",
         },
       ],
     },
@@ -651,20 +633,20 @@ And the reason the Court gave for the rule:
 - U.S. Const. amend. XIV.`,
       recallContent: [
         {
-          prompt: "What did the district court order in the Detroit case, and what did the Supreme Court do?",
-          answer: "It ordered a metropolitan desegregation plan reaching Detroit plus 53 of the 85 surrounding suburban districts. On July 25, 1974, the Supreme Court, 5 to 4, held that remedy impermissible.",
+          prompt: "Why did neighborhood-based assignment produce segregated Seattle schools without any current legal command?",
+          answer: "Because covenants and lending had concentrated Black Seattle in the Central District, its neighborhood schools were heavily Black while others were heavily white. The housing map produced the school pattern; no court order or law required it. That distinction is what the 2007 case turns on.",
         },
         {
-          prompt: "State Milliken's threshold for a cross-district remedy.",
-          answer: "Before the boundaries of separate, autonomous districts may be set aside, it must first be shown that a constitutional violation within one district produces a significant segregative effect in another, for example where discriminatory acts caused segregation in an adjacent district or where district lines were deliberately drawn on the basis of race.",
+          prompt: "What was the Seattle Plan, and how should its 'first big city' claim be handled?",
+          answer: "A late-1970s desegregation plan using mandatory reassignment and busing, with district-wide busing beginning September 1978. Attribute the claim that Seattle was the first large city to desegregate voluntarily to HistoryLink and others rather than adopting it flat.",
         },
         {
-          prompt: "What kind of limit is Milliken, precisely?",
-          answer: "A limit on compulsion. It governs what a court may order over the objection of districts that did not themselves discriminate. It does not tell a willing district what it may do on its own, which is why it is only half of this section.",
+          prompt: "What did Initiative 350 try to do, and what did the Supreme Court do in 1982?",
+          answer: "Initiative 350 (1978) tried to bar school boards from assigning students away from neighborhood schools for desegregation. In Washington v. Seattle School District No. 1 (1982), the Court struck it down as unconstitutionally restructuring the political process to burden racial minorities. In 1982 the Court protected Seattle's voluntary integration.",
         },
         {
-          prompt: "What is the reason the Court gave for the rule, and what value does it protect?",
-          answer: "That no single tradition in public education is more deeply rooted than local control over the operation of schools. The district boundary becomes the default wall of the remedy, defended by local control.",
+          prompt: "How did the racial tiebreaker work, and what classification did it use?",
+          answer: "Under open choice, when a high school was oversubscribed the district used tiebreakers; the racial tiebreaker favored whichever applicant would move a far-from-balance school toward the district's overall balance. It classified students as white or nonwhite, the binary the 2007 case is fought over.",
         },
       ],
     },
@@ -719,24 +701,20 @@ His objection to Seattle's plan was narrow and specific: **not that race may nev
 - U.S. Const. amend. XIV.`,
       recallContent: [
         {
-          prompt: "What fact about Seattle makes the 2007 case the opposite frame from Milliken?",
-          answer: "Seattle had never operated legally separate schools and had never been under court-ordered desegregation. It was a willing district using a racial tiebreaker of its own choice, so the question was not whether a court could compel integration but whether a district could choose it.",
+          prompt: "What did the district court order in the Detroit case, and what did the Supreme Court do?",
+          answer: "It ordered a metropolitan desegregation plan reaching Detroit plus 53 of the 85 surrounding suburban districts. On July 25, 1974, the Supreme Court, 5 to 4, held that remedy impermissible.",
         },
         {
-          prompt: "What did the five-Justice majority actually hold?",
-          answer: "That Seattle's and Louisville's specific plans were unconstitutional because they assigned individual students by a racial classification that, as designed, was not narrowly tailored to the interests offered. The tiebreaker, as built, fell.",
+          prompt: "State Milliken's threshold for a cross-district remedy.",
+          answer: "Before the boundaries of separate, autonomous districts may be set aside, it must first be shown that a constitutional violation within one district produces a significant segregative effect in another, for example where discriminatory acts caused segregation in an adjacent district or where district lines were deliberately drawn on the basis of race.",
         },
         {
-          prompt: "Who joined the 'stop discriminating on the basis of race' line, and why does it matter?",
-          answer: "Only four Justices, Roberts, Scalia, Thomas, and Alito, joined Part IV. It is a plurality line, not the holding of the Court. Attributing it to 'the Supreme Court' as the rule of the case is the most common error about Parents Involved, because the controlling fifth vote did not sign it.",
+          prompt: "What kind of limit is Milliken, precisely?",
+          answer: "A limit on compulsion. It governs what a court may order over the objection of districts that did not themselves discriminate. It does not tell a willing district what it may do on its own, which is why it is only half of this section.",
         },
         {
-          prompt: "What did Kennedy's controlling concurrence preserve?",
-          answer: "That avoiding racial isolation and achieving diversity are compelling interests a district may pursue, and that a district may use race-conscious means, such as site selection, drawing attendance zones by neighborhood demographics, allocating resources, recruiting, and tracking by race, that stop short of assigning each student an individual racial label.",
-        },
-        {
-          prompt: "State the careful one-paragraph holding.",
-          answer: "The case struck the two specific plans for assigning individual students by a racial classification that was not narrowly tailored. It did not hold that a district may never consider race; through Kennedy, five Justices left standing diversity and avoiding racial isolation as compelling interests pursued by non-individual-classification means. The broader plurality view did not command a majority and did not become law.",
+          prompt: "What is the reason the Court gave for the rule, and what value does it protect?",
+          answer: "That no single tradition in public education is more deeply rooted than local control over the operation of schools. The district boundary becomes the default wall of the remedy, defended by local control.",
         },
       ],
     },
@@ -785,20 +763,24 @@ The full dissents in both cases, quoted from the United States Reports rather th
 - Washington v. Seattle School District No. 1, 458 U.S. 457 (1982). https://www.law.cornell.edu/supremecourt/text/458/457`,
       recallContent: [
         {
-          prompt: "State the pairing in one sentence, and say what kind of claim it is.",
-          answer: "Milliken limited what a court could compel across district lines, and Parents Involved limited what a district could voluntarily choose to do with race, so across thirty-three years integration was narrowed from two directions. It is a claim about effect and direction, not a claim that one case dictated the other.",
+          prompt: "What fact about Seattle makes the 2007 case the opposite frame from Milliken?",
+          answer: "Seattle had never operated legally separate schools and had never been under court-ordered desegregation. It was a willing district using a racial tiebreaker of its own choice, so the question was not whether a court could compel integration but whether a district could choose it.",
         },
         {
-          prompt: "Correct the popular claim that Milliken 'banned busing.'",
-          answer: "It did not. Courts kept ordering busing within districts. Milliken barred a cross-district remedy absent an interdistrict violation, making metropolitan, cross-boundary remedies rare by requiring proof the line itself carried the violation.",
+          prompt: "What did the five-Justice majority actually hold?",
+          answer: "That Seattle's and Louisville's specific plans were unconstitutional because they assigned individual students by a racial classification that, as designed, was not narrowly tailored to the interests offered. The tiebreaker, as built, fell.",
         },
         {
-          prompt: "Correct the popular claim that Parents Involved held schools can never consider race.",
-          answer: "Five Justices, through Kennedy, held that avoiding racial isolation and pursuing diversity are compelling interests a district may pursue by race-conscious means short of labeling each student. The Court struck the specific method of assigning individual students by a white-or-nonwhite classification that was not narrowly tailored. The sweeping line is a plurality of four, not the holding.",
+          prompt: "Who joined the 'stop discriminating on the basis of race' line, and why does it matter?",
+          answer: "Only four Justices, Roberts, Scalia, Thomas, and Alito, joined Part IV. It is a plurality line, not the holding of the Court. Attributing it to 'the Supreme Court' as the rule of the case is the most common error about Parents Involved, because the controlling fifth vote did not sign it.",
         },
         {
-          prompt: "What is the Seattle-specific twist that makes this the sharpest bookend?",
-          answer: "In 1982, Washington v. Seattle School District No. 1 protected Seattle's voluntary choice to integrate from a state ban; in 2007, Parents Involved limited Seattle's voluntary choice to integrate. Same district, same goal, opposite results, twenty-five years apart, from a changed Court and doctrine.",
+          prompt: "What did Kennedy's controlling concurrence preserve?",
+          answer: "That avoiding racial isolation and achieving diversity are compelling interests a district may pursue, and that a district may use race-conscious means, such as site selection, drawing attendance zones by neighborhood demographics, allocating resources, recruiting, and tracking by race, that stop short of assigning each student an individual racial label.",
+        },
+        {
+          prompt: "State the careful one-paragraph holding.",
+          answer: "The case struck the two specific plans for assigning individual students by a racial classification that was not narrowly tailored. It did not hold that a district may never consider race; through Kennedy, five Justices left standing diversity and avoiding racial isolation as compelling interests pursued by non-individual-classification means. The broader plurality view did not command a majority and did not become law.",
         },
       ],
     },
@@ -1196,20 +1178,20 @@ The full dissents in both cases, quoted from the United States Reports rather th
 - Substitute House Bill 1335, 67th Leg., Reg. Sess. (Wash. 2021). https://depts.washington.edu/covenants/shb1335.shtml`,
       recallContent: [
         {
-          prompt: "What are the four questions to ask about any district's assignment, in order?",
-          answer: "How is a student assigned by default; what choice sits on top; what decides a contested seat when a school is full; and who draws the boundaries, when do they meet, and is it public.",
+          prompt: "State the pairing in one sentence, and say what kind of claim it is.",
+          answer: "Milliken limited what a court could compel across district lines, and Parents Involved limited what a district could voluntarily choose to do with race, so across thirty-three years integration was narrowed from two directions. It is a claim about effect and direction, not a claim that one case dictated the other.",
         },
         {
-          prompt: "How does Seattle assign most students now, and why does that matter given this course?",
-          answer: "By attendance-area school based on the address of the primary residence. When housing is segregated, address-based assignment reproduces the housing pattern, which is the link Section 3 opened with. After the 2007 tiebreaker fell, assignment is again largely the map of who lives where.",
+          prompt: "Correct the popular claim that Milliken 'banned busing.'",
+          answer: "It did not. Courts kept ordering busing within districts. Milliken barred a cross-district remedy absent an interdistrict violation, making metropolitan, cross-boundary remedies rare by requiring proof the line itself carried the violation.",
         },
         {
-          prompt: "What is NOT among Seattle's current tiebreakers, and why is that significant?",
-          answer: "The race of the individual student. That absence is Parents Involved (2007) still operating on the district: the 2007 opinion is why the current tiebreaker list reads the way it does, which shows Section 3 is live civics, not old law.",
+          prompt: "Correct the popular claim that Parents Involved held schools can never consider race.",
+          answer: "Five Justices, through Kennedy, held that avoiding racial isolation and pursuing diversity are compelling interests a district may pursue by race-conscious means short of labeling each student. The Court struck the specific method of assigning individual students by a white-or-nonwhite classification that was not narrowly tailored. The sweeping line is a plurality of four, not the holding.",
         },
         {
-          prompt: "What is the housing-side live process, and who runs it?",
-          answer: "Removing a racial covenant from a deed under Washington's HB 1335 (2021), a live administrative process with a form and fee, published and handled by the King County Recorder's Office.",
+          prompt: "What is the Seattle-specific twist that makes this the sharpest bookend?",
+          answer: "In 1982, Washington v. Seattle School District No. 1 protected Seattle's voluntary choice to integrate from a state ban; in 2007, Parents Involved limited Seattle's voluntary choice to integrate. Same district, same goal, opposite results, twenty-five years apart, from a changed Court and doctrine.",
         },
       ],
     },
@@ -1651,20 +1633,20 @@ A short, checkable piece in which every sentence is either something you read in
 - Densho. (n.d.). *Photo essay: Exclusion Order No. 1, Bainbridge Island*. https://densho.org/catalyst/photo-essay-bainbridge-island/`,
       recallContent: [
         {
-          prompt: "What is the actual product of this course?",
-          answer: "The six-beat site template, run on a real place: Then, Built, Powers, Now, Next, Write. The Seattle material is the worked example, and this course is the modern bookend of the argument the gym course opened.",
+          prompt: "What are the four questions to ask about any district's assignment, in order?",
+          answer: "How is a student assigned by default; what choice sits on top; what decides a contested seat when a school is full; and who draws the boundaries, when do they meet, and is it public.",
         },
         {
-          prompt: "State the difference between what a court may compel and what a district may choose, using the two cases.",
-          answer: "Milliken (1974) limited what a court could compel, barring a cross-district remedy without an interdistrict violation. Parents Involved (2007) limited what a willing Seattle district could voluntarily choose, striking its individual-classification tiebreaker while, through Kennedy, leaving room to pursue integration by other means.",
+          prompt: "How does Seattle assign most students now, and why does that matter given this course?",
+          answer: "By attendance-area school based on the address of the primary residence. When housing is segregated, address-based assignment reproduces the housing pattern, which is the link Section 3 opened with. After the 2007 tiebreaker fell, assignment is again largely the map of who lives where.",
         },
         {
-          prompt: "Why does the course refuse to reproduce one Seattle covenant's exact verbatim text or a single displacement total?",
-          answer: "Because it could not pin one deed's exact wording to a citable source, so it describes the documented formulas and sends you to the archive; and no displacement survey has been read into it, while the demographic ranges count different tracts and years, so a corridor-level total would be an invented statistic. Reporting the gaps is the finding.",
+          prompt: "What is NOT among Seattle's current tiebreakers, and why is that significant?",
+          answer: "The race of the individual student. That absence is Parents Involved (2007) still operating on the district: the 2007 opinion is why the current tiebreaker list reads the way it does, which shows Section 3 is live civics, not old law.",
         },
         {
-          prompt: "Name three unopened sources that would advance this story.",
-          answer: "The Seattle School Board's minutes on the tiebreaker, the King County property records behind a single covenanted block, the Densho oral-history archive of the removal, and the full opinions in both cases read cover to cover.",
+          prompt: "What is the housing-side live process, and who runs it?",
+          answer: "Removing a racial covenant from a deed under Washington's HB 1335 (2021), a live administrative process with a form and fee, published and handled by the King County Recorder's Office.",
         },
       ],
     },

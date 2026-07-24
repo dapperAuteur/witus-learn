@@ -99,28 +99,6 @@ export const MUDSOCK_BOUNDARY_COURSE: AuthoredCourse = {
 - Encyclopedia of Indianapolis. (n.d.-c). *Hamilton County*. https://indyencyclopedia.org/hamilton-county/
 - The Reporter. (2018, October 31). *Battle of Mudsock coming up Sept. 8*. https://readthereporter.com/battle-of-mudsock-coming-up-sept-8/
 - WRTV Indianapolis. (n.d.). *The "Battle of Mudsock": Fishers' hidden history*. https://www.wrtv.com/news/local-news/hamilton-county/fishers/the-real-battle-of-mudsock-the-history-of-fishers-you-didn-t-know-about`,
-      recallContent: [
-        {
-          prompt: "How did the settlement that became Fishers begin, and in what year?",
-          answer: "As a railroad stop. The Peru and Indianapolis Railroad arrived in 1851; Salathiel Fisher bought the land next to the track and established Fisher's Switch in 1872. He died in 1873 and his son Henry developed it.",
-        },
-        {
-          prompt: "What explanation does the Encyclopedia of Indianapolis give for the nickname Mudsock, and what should you do with the more colourful local retelling?",
-          answer: "It attributes the nickname to the swampy nature of the soil. The story about horses wearing socks of mud is a local retelling with no primary source found for this course, so attribute it as a story rather than repeating it as an etymology.",
-        },
-        {
-          prompt: "Why is a place nickname a research hazard?",
-          answer: "It has no author and no date, it was never recorded on a plat or ordinance, and it was not unique. Other Indiana communities including Dundee in Madison County were also called Mudsock, so searching on the name alone collects the wrong county.",
-        },
-        {
-          prompt: "How many people died in the 1881 Battle of Mudsock?",
-          answer: "The sources disagree. The Encyclopedia of Indianapolis and WRTV say one; The Reporter says two. Injury counts range from 30 to 32. Report the range with its owners rather than averaging, and note that only the local outlets give a calendar date.",
-        },
-        {
-          prompt: "What is the tone rule for this course, and why is it a research instruction?",
-          answer: "The subject is instruments and incentives, not blame. Every criticism is aimed at a law, a formula or a procedure, all of which are public and none of which is a person. Four hundred thousand people live here now.",
-        },
-      ],
     },
     {
       slug: "ms-the-county-that-grew",
@@ -188,24 +166,24 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - U.S. Census Bureau. (n.d.). *Decennial census*. https://www.census.gov/programs-surveys/decennial-census.html`,
       recallContent: [
         {
-          prompt: "In which decade does Hamilton County's rapid growth actually begin, and why does that matter to this course's argument?",
-          answer: "The 1950s: the county grew 40.9 percent from 1950 to 1960 and 35.9 percent from 1960 to 1970. It matters because Unigov did not take effect until January 1, 1970, so Unigov cannot have started the growth.",
+          prompt: "How did the settlement that became Fishers begin, and in what year?",
+          answer: "As a railroad stop. The Peru and Indianapolis Railroad arrived in 1851; Salathiel Fisher bought the land next to the track and established Fisher's Switch in 1872. He died in 1873 and his son Henry developed it.",
         },
         {
-          prompt: "What does the 1900 to 1920 period prove about suburban growth?",
-          answer: "That growth is not a law of nature. After the natural gas boom ended, Hamilton County lost 20 percent of its population between 1900 and 1920.",
+          prompt: "What explanation does the Encyclopedia of Indianapolis give for the nickname Mudsock, and what should you do with the more colourful local retelling?",
+          answer: "It attributes the nickname to the swampy nature of the soil. The story about horses wearing socks of mud is a local retelling with no primary source found for this course, so attribute it as a story rather than repeating it as an etymology.",
         },
         {
-          prompt: "Two publishers give slightly different counts for the same censuses. What does this course do?",
-          answer: "Reports both, names the owner of each, and says the gap of about twenty people touches no argument here. It does not average them or silently pick one.",
+          prompt: "Why is a place nickname a research hazard?",
+          answer: "It has no author and no date, it was never recorded on a plat or ordinance, and it was not unique. Other Indiana communities including Dundee in Madison County were also called Mudsock, so searching on the name alone collects the wrong county.",
         },
         {
-          prompt: "Give the two facts about Westfield that must be held together.",
-          answer: "Westfield was platted in 1834 by North Carolina Quakers and planned as an important home station on the Underground Railroad. The same encyclopedia entry records only 272 African Americans among the county's 54,532 residents in 1970.",
+          prompt: "How many people died in the 1881 Battle of Mudsock?",
+          answer: "The sources disagree. The Encyclopedia of Indianapolis and WRTV say one; The Reporter says two. Injury counts range from 30 to 32. Report the range with its owners rather than averaging, and note that only the local outlets give a calendar date.",
         },
         {
-          prompt: "What happened in the Noblesville courthouse in 1925, and how did it get there?",
-          answer: "The murder trial of D. C. Stephenson, Grand Dragon of the Indiana Klan, ran there from October 28 to November 14, 1925, after prosecutors obtained a change of venue out of Indianapolis. He was convicted and sentenced to life.",
+          prompt: "What is the tone rule for this course, and why is it a research instruction?",
+          answer: "The subject is instruments and incentives, not blame. Every criticism is aimed at a law, a formula or a procedure, all of which are public and none of which is a person. Four hundred thousand people live here now.",
         },
       ],
     },
@@ -247,24 +225,24 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - Towne Post Network. (n.d.). *Some history behind the annual Mudsock game*. https://townepost.com/indiana/geist/mudsock-game-history/`,
       recallContent: [
         {
-          prompt: "Which two schools contest the Mudsock rivalry, and what do they have in common that most people miss?",
-          answer: "Fishers High School and Hamilton Southeastern High School. They are both public, both in the City of Fishers, and both in the same school district, Hamilton Southeastern Schools.",
+          prompt: "In which decade does Hamilton County's rapid growth actually begin, and why does that matter to this course's argument?",
+          answer: "The 1950s: the county grew 40.9 percent from 1950 to 1960 and 35.9 percent from 1960 to 1970. It matters because Unigov did not take effect until January 1, 1970, so Unigov cannot have started the growth.",
         },
         {
-          prompt: "Sketch the sequence from the original Fishers High School to two high schools.",
-          answer: "An original Fishers High School stood at Lantern Road and 116th Street; the district consolidated as Hamilton Southeastern with a high school founded in 1964; the original school was demolished in 1969; HSE was the only high school for about forty years; the 2003 freshman campus became Fishers High School in 2006 and held grades 9 to 12 from 2007.",
+          prompt: "What does the 1900 to 1920 period prove about suburban growth?",
+          answer: "That growth is not a law of nature. After the natural gas boom ended, Hamilton County lost 20 percent of its population between 1900 and 1920.",
         },
         {
-          prompt: "What is the flag on that sequence, and what is the instruction?",
-          answer: "Every claim in it comes from encyclopedic secondary sources. The county reorganization plan, the school board minutes and a district history have not been read into this course. Report the claims as reported, name who reported them, and keep the hedge.",
+          prompt: "Two publishers give slightly different counts for the same censuses. What does this course do?",
+          answer: "Reports both, names the owner of each, and says the gap of about twenty people touches no argument here. It does not average them or silently pick one.",
         },
         {
-          prompt: "How is the Mudsock trophy actually won, and when did the competition start?",
-          answer: "It is an all varsity sports points competition: each Tigers versus Royals contest is worth one point, and the school with more points takes the trophy. Hamilton Southeastern's athletics department described it as being in its eighteenth year in September 2025, which places the first competition in 2007-08.",
+          prompt: "Give the two facts about Westfield that must be held together.",
+          answer: "Westfield was platted in 1834 by North Carolina Quakers and planned as an important home station on the Underground Railroad. The same encyclopedia entry records only 272 African Americans among the county's 54,532 residents in 1970.",
         },
         {
-          prompt: "State precisely what the Mudsock line does and does not separate.",
-          answer: "It separates two attendance areas inside one school corporation, one city, one township pair and one county. It does not separate two towns, two tax bases, two school boards, two tax rates or two ballots. Nothing a government does differently runs along it.",
+          prompt: "What happened in the Noblesville courthouse in 1925, and how did it get there?",
+          answer: "The murder trial of D. C. Stephenson, Grand Dragon of the Indiana Klan, ran there from October 28 to November 14, 1925, after prosecutors obtained a change of venue out of Indianapolis. He was convicted and sentenced to life.",
         },
       ],
     },
@@ -497,24 +475,24 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
       recallContent: [
         {
-          prompt: "What is the basic unit of a suburb, and why is it not a building?",
-          answer: "The recorded subdivision plat: a surveyed drawing that cuts one parcel into many and dedicates streets and easements. Until it is recorded the lots do not legally exist, so every house is downstream of a document.",
+          prompt: "Which two schools contest the Mudsock rivalry, and what do they have in common that most people miss?",
+          answer: "Fishers High School and Hamilton Southeastern High School. They are both public, both in the City of Fishers, and both in the same school district, Hamilton Southeastern Schools.",
         },
         {
-          prompt: "Name the item recorded alongside a plat that this course says decides a political future.",
-          answer: "A waiver of the right to remonstrate against annexation. It looks like paperwork and it is signed decades before anyone learns what it does.",
+          prompt: "Sketch the sequence from the original Fishers High School to two high schools.",
+          answer: "An original Fishers High School stood at Lantern Road and 116th Street; the district consolidated as Hamilton Southeastern with a high school founded in 1964; the original school was demolished in 1969; HSE was the only high school for about forty years; the 2003 freshman campus became Fishers High School in 2006 and held grades 9 to 12 from 2007.",
         },
         {
-          prompt: "Why can two houses a quarter mile apart require a mile and a half of driving?",
-          answer: "Because of the street hierarchy: arterial, collector, local, cul de sac. Adjacent subdivisions often do not connect, which is a written street standard adopted by a local body, not a fact of terrain.",
+          prompt: "What is the flag on that sequence, and what is the instruction?",
+          answer: "Every claim in it comes from encyclopedic secondary sources. The county reorganization plan, the school board minutes and a district history have not been read into this course. Report the claims as reported, name who reported them, and keep the hedge.",
         },
         {
-          prompt: "Contrast the Indiana Avenue corridor's answer to 'what does a household need' with the subdivision's answer.",
-          answer: "The Avenue put a complete economy inside eight blocks because its residents could be refused service elsewhere. The subdivision separates uses and puts almost nothing within walking distance because its residents have cars. Both forms answer the same question.",
+          prompt: "How is the Mudsock trophy actually won, and when did the competition start?",
+          answer: "It is an all varsity sports points competition: each Tigers versus Royals contest is worth one point, and the school with more points takes the trophy. Hamilton Southeastern's athletics department described it as being in its eighteenth year in September 2025, which places the first competition in 2007-08.",
         },
         {
-          prompt: "What does Rothstein's work license you to say, and what does it not?",
-          answer: "It licenses saying American suburban development happened inside a national policy framework with documented racial effects. It does not license asserting anything about the covenants on a specific Hamilton County subdivision you have not read. Those are public county records.",
+          prompt: "State precisely what the Mudsock line does and does not separate.",
+          answer: "It separates two attendance areas inside one school corporation, one city, one township pair and one county. It does not separate two towns, two tax bases, two school boards, two tax rates or two ballots. Nothing a government does differently runs along it.",
         },
       ],
     },
@@ -557,24 +535,24 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - U.S. Environmental Protection Agency. (n.d.). *Smart growth and school siting*. https://www.epa.gov/smartgrowth/smart-growth-and-school-siting`,
       recallContent: [
         {
-          prompt: "What is the school site size formula that drove twentieth century American school siting?",
-          answer: "A minimum acreage plus an additional acre for every hundred students of ultimate enrollment. Ten acres plus one per hundred is the commonly quoted elementary version, with larger base figures for high schools.",
+          prompt: "What is the basic unit of a suburb, and why is it not a building?",
+          answer: "The recorded subdivision plat: a surveyed drawing that cuts one parcel into many and dedicates streets and easements. Until it is recorded the lots do not legally exist, so every house is downstream of a document.",
         },
         {
-          prompt: "Why does an acreage standard produce peripheral campuses?",
-          answer: "A site that large is not available in a built up area at a price a school board will pay, so it is bought at the edge where land is cheap. Nobody voted for sprawl; they voted for an acreage standard.",
+          prompt: "Name the item recorded alongside a plat that this course says decides a political future.",
+          answer: "A waiver of the right to remonstrate against annexation. It looks like paperwork and it is signed decades before anyone learns what it does.",
         },
         {
-          prompt: "How does school siting economics explain the existence of the Mudsock rivalry?",
-          answer: "A district that can afford large sites builds a small number of very large high schools. Hamilton Southeastern houses about 21,299 students in two high schools, so outgrowing one school in 2006 produced a rivalry between two halves of one community rather than between two towns.",
+          prompt: "Why can two houses a quarter mile apart require a mile and a half of driving?",
+          answer: "Because of the street hierarchy: arterial, collector, local, cul de sac. Adjacent subdivisions often do not connect, which is a written street standard adopted by a local body, not a fact of terrain.",
         },
         {
-          prompt: "Give two of the ways the Indiana Avenue building type and the Fishers campus type differ in what they assume.",
-          answer: "The Avenue obeys a 1821 diagonal and meets the sidewalk, and assumes a household that cannot rely on being served elsewhere. The campus obeys the rectangular section line grid, sits back behind lawns and parking, and assumes a household with a vehicle.",
+          prompt: "Contrast the Indiana Avenue corridor's answer to 'what does a household need' with the subdivision's answer.",
+          answer: "The Avenue put a complete economy inside eight blocks because its residents could be refused service elsewhere. The subdivision separates uses and puts almost nothing within walking distance because its residents have cars. Both forms answer the same question.",
         },
         {
-          prompt: "Why is the Mudsock basketball game at the Fishers Event Center both a beat 2 and a beat 3 fact?",
-          answer: "It shows the city has capital projects at a scale a school gymnasium cannot match, and capital projects are financed by the instruments Section 3 teaches.",
+          prompt: "What does Rothstein's work license you to say, and what does it not?",
+          answer: "It licenses saying American suburban development happened inside a national policy framework with documented racial effects. It does not license asserting anything about the covenants on a specific Hamilton County subdivision you have not read. Those are public county records.",
         },
       ],
     },
@@ -610,24 +588,24 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
       recallContent: [
         {
-          prompt: "Who built Geist Reservoir, when, and why?",
-          answer: "The Indianapolis Water Company. It dammed Fall Creek in 1941 and the reservoir began supplying Indianapolis with water in 1943, because the White River could not meet the growing city's demand.",
+          prompt: "What is the school site size formula that drove twentieth century American school siting?",
+          answer: "A minimum acreage plus an additional acre for every hundred students of ultimate enrollment. Ten acres plus one per hundred is the commonly quoted elementary version, with larger base figures for high schools.",
         },
         {
-          prompt: "What was removed to make the reservoir?",
-          answer: "535 acres of woodland and 45 homesteads, including the small village of Germantown. The water backed up 7.5 miles.",
+          prompt: "Why does an acreage standard produce peripheral campuses?",
+          answer: "A site that large is not available in a built up area at a price a school board will pay, so it is bought at the edge where land is cheap. Nobody voted for sprawl; they voted for an acreage standard.",
         },
         {
-          prompt: "How does this course compare Geist to Indiana Avenue, and what does it refuse to do?",
-          answer: "It notes that both contain households removed so a larger project could proceed, and refuses to call them the same story. The instruments, scale and record differ, and this course has not read who owned the 45 homesteads or what they were paid. What travels is the shape of the question.",
+          prompt: "How does school siting economics explain the existence of the Mudsock rivalry?",
+          answer: "A district that can afford large sites builds a small number of very large high schools. Hamilton Southeastern houses about 21,299 students in two high schools, so outgrowing one school in 2006 produced a rivalry between two halves of one community rather than between two towns.",
         },
         {
-          prompt: "Trace the reservoir's shoreline from 1943 to 2010.",
-          answer: "Nothing for decades; Shorewood became an independent private corporation in 1970; first housing developments Beamreach and Masthead in 1980; around 2,200 upscale homes by the early 2000s; annexed by Fishers on January 2, 2010; Citizens Energy Group acquired the utility in 2011.",
+          prompt: "Give two of the ways the Indiana Avenue building type and the Fishers campus type differ in what they assume.",
+          answer: "The Avenue obeys a 1821 diagonal and meets the sidewalk, and assumes a household that cannot rely on being served elsewhere. The campus obeys the rectangular section line grid, sits back behind lawns and parking, and assumes a household with a vehicle.",
         },
         {
-          prompt: "What does this course refuse to claim about the reservoir's purpose, and why does the distinction matter?",
-          answer: "It refuses to claim the reservoir was built to create lakefront property. The stated purpose was drinking water and the housing came four decades later under a separate entity. The record supports a consequence, not an intention, and confusing the two is the most abused move in local history writing.",
+          prompt: "Why is the Mudsock basketball game at the Fishers Event Center both a beat 2 and a beat 3 fact?",
+          answer: "It shows the city has capital projects at a scale a school gymnasium cannot match, and capital projects are financed by the instruments Section 3 teaches.",
         },
       ],
     },
@@ -692,24 +670,24 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "What does incorporation change about a piece of ground?",
-          answer: "Before it, land is governed by the county and township. After it there is a municipal corporation with a council, a budget, a tax levy, ordinances, a police department and a ballot of its own.",
+          prompt: "Who built Geist Reservoir, when, and why?",
+          answer: "The Indianapolis Water Company. It dammed Fall Creek in 1941 and the reservoir began supplying Indianapolis with water in 1943, because the White River could not meet the growing city's demand.",
         },
         {
-          prompt: "State the two 2012 Fishers ballot questions and the three possible outcomes.",
-          answer: "Whether Fishers and Fall Creek Township should reorganize as a single political subdivision, and whether the Town of Fishers should change into a city. No to both meant staying a town; yes to the first meant a reorganized city with nine at large councillors, a mayor chosen from among them and a hired city manager; no to the first and yes to the second meant a second class city with six district councillors, three at large and an elected mayor.",
+          prompt: "What was removed to make the reservoir?",
+          answer: "535 acres of woodland and 45 homesteads, including the small village of Germantown. The water backed up 7.5 miles.",
         },
         {
-          prompt: "Give the official results of both questions.",
-          answer: "Reorganization: 14,097 yes (37.51 percent) to 23,483 no (62.49 percent). City: 20,052 yes (55.36 percent) to 16,169 no (44.64 percent). Fishers incorporated as a second class city on January 1, 2015.",
+          prompt: "How does this course compare Geist to Indiana Avenue, and what does it refuse to do?",
+          answer: "It notes that both contain households removed so a larger project could proceed, and refuses to call them the same story. The instruments, scale and record differ, and this course has not read who owned the 45 homesteads or what they were paid. What travels is the shape of the question.",
         },
         {
-          prompt: "What does the vote-count difference between the two questions tell you, and where can you only find it?",
-          answer: "37,580 votes were cast on the first question and 36,221 on the second, so 1,359 people voted on one and not the other. You will only find that in the official returns, not in coverage of them.",
+          prompt: "Trace the reservoir's shoreline from 1943 to 2010.",
+          answer: "Nothing for decades; Shorewood became an independent private corporation in 1970; first housing developments Beamreach and Masthead in 1980; around 2,200 upscale homes by the early 2000s; annexed by Fishers on January 2, 2010; Citizens Energy Group acquired the utility in 2011.",
         },
         {
-          prompt: "What is the comparison this lesson sets up with course 1?",
-          answer: "Unigov was the only major postwar consolidation accomplished without a voter referendum, in 1969. In 2012 a much smaller consolidation of a town and its township was put to Indiana voters and defeated 62 to 38. Same state, forty three years apart.",
+          prompt: "What does this course refuse to claim about the reservoir's purpose, and why does the distinction matter?",
+          answer: "It refuses to claim the reservoir was built to create lakefront property. The stated purpose was drinking water and the housing came four decades later under a separate entity. The record supports a consequence, not an intention, and confusing the two is the most abused move in local history writing.",
         },
       ],
     },
@@ -774,28 +752,24 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - The Reporter. (2024). *Fishers wants to annex 994 acres of Hamilton County*. https://readthereporter.com/fishers-wants-to-annex-994-acres-of-hamilton-county/`,
       recallContent: [
         {
-          prompt: "Name Indiana's three annexation routes and their code sections.",
-          answer: "Voluntary, IC 36-4-3-5, needing 51 percent of owners or 75 percent of assessed value; super voluntary, IC 36-4-3-5.1, needing 100 percent; and municipal or so-called involuntary annexation, IC 36-4-3-3, initiated by a council ordinance.",
+          prompt: "What does incorporation change about a piece of ground?",
+          answer: "Before it, land is governed by the county and township. After it there is a municipal corporation with a council, a budget, a tax levy, ordinances, a police department and a ballot of its own.",
         },
         {
-          prompt: "What did Senate Enrolled Act 330 of 2015 change about remonstrance?",
-          answer: "It created a two tier test: 51 percent opposition gets a court hearing and 65 percent ends the annexation. Before that, 65 percent was needed merely to get into court. It also required signatures to be dated after the ordinance is adopted and created an economic development exception.",
+          prompt: "State the two 2012 Fishers ballot questions and the three possible outcomes.",
+          answer: "Whether Fishers and Fall Creek Township should reorganize as a single political subdivision, and whether the Town of Fishers should change into a city. No to both meant staying a town; yes to the first meant a reorganized city with nine at large councillors, a mayor chosen from among them and a hired city manager; no to the first and yes to the second meant a second class city with six district councillors, three at large and an elected mayor.",
         },
         {
-          prompt: "What is a remonstrance waiver, and when is it signed?",
-          answer: "A recorded document giving up, in advance and permanently, the right to object to a future annexation. It is signed when a property connects to municipal utilities, usually sewer, and it runs with the land, so later buyers inherit it.",
+          prompt: "Give the official results of both questions.",
+          answer: "Reorganization: 14,097 yes (37.51 percent) to 23,483 no (62.49 percent). City: 20,052 yes (55.36 percent) to 16,169 no (44.64 percent). Fishers incorporated as a second class city on January 1, 2015.",
         },
         {
-          prompt: "Give the key numbers of the Fishers southeast annexation.",
-          answer: "994 acres, 960 parcels, 2,500 to 3,000 residents, about 400 million dollars of assessed value, and 710 parcels (about 74 percent) carrying recorded remonstrance waivers. Completion was announced June 5, 2025, with taxes first payable January 1, 2027.",
+          prompt: "What does the vote-count difference between the two questions tell you, and where can you only find it?",
+          answer: "37,580 votes were cast on the first question and 36,221 on the second, so 1,359 people voted on one and not the other. You will only find that in the official returns, not in coverage of them.",
         },
         {
-          prompt: "Why does the waiver figure settle the annexation, and when was it actually decided?",
-          answer: "Because 65 percent opposition ends an annexation under SEA 330, and 74 percent of the parcels had already permanently given up the right to be counted in that percentage. It was decided at the moment the sewer went in.",
-        },
-        {
-          prompt: "Why is annexation not a taking, and what is the argument actually about?",
-          answer: "Nothing is transferred and nobody loses a home, so no compensation is owed. What changes is which government taxes you, which police respond and which ballot you get. The argument is about the exchange rate between the new levy and the new services.",
+          prompt: "What is the comparison this lesson sets up with course 1?",
+          answer: "Unigov was the only major postwar consolidation accomplished without a voter referendum, in 1969. In 2012 a much smaller consolidation of a town and its township was put to Indiana voters and defeated 62 to 38. Same state, forty three years apart.",
         },
       ],
     },
@@ -843,28 +817,28 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "What did the Indiana School Reorganization Act of 1959 require, and what did it accomplish?",
-          answer: "A reorganization plan in each county, developed by a nine member committee, with each consolidated district enrolling at least 1,000 students. Over about eleven years Indiana's districts fell from 966 to 402, and districts under 1,000 students fell from 801 to 156.",
+          prompt: "Name Indiana's three annexation routes and their code sections.",
+          answer: "Voluntary, IC 36-4-3-5, needing 51 percent of owners or 75 percent of assessed value; super voluntary, IC 36-4-3-5.1, needing 100 percent; and municipal or so-called involuntary annexation, IC 36-4-3-3, initiated by a council ordinance.",
         },
         {
-          prompt: "What happened to the proposed single Marion County school district in 1961?",
-          answer: "The county committee voted unanimously to propose one 130,000-student district. Over 10,000 people signed petitions against it, 2,000 attended a hearing on May 18, 1961 and 1,000 attended a follow-up six days later. The plan died and a compromise created what is now Indianapolis Public Schools.",
+          prompt: "What did Senate Enrolled Act 330 of 2015 change about remonstrance?",
+          answer: "It created a two tier test: 51 percent opposition gets a court hearing and 65 percent ends the annexation. Before that, 65 percent was needed merely to get into court. It also required signatures to be dated after the ordinance is adopted and created an economic development exception.",
         },
         {
-          prompt: "How was the school boundary set twice, and why does that matter?",
-          answer: "In 1961 a proposed countywide district was defeated by petition and hearing, and in 1969 Unigov deliberately excluded schools. Two independent processes eight years apart produced the same line, so it is not an accident.",
+          prompt: "What is a remonstrance waiver, and when is it signed?",
+          answer: "A recorded document giving up, in advance and permanently, the right to object to a future annexation. It is signed when a property connects to municipal utilities, usually sewer, and it runs with the land, so later buyers inherit it.",
         },
         {
-          prompt: "What did Unigov do about annexation into neighbouring counties, and why is that the hinge of this course?",
-          answer: "It barred annexation into neighbouring counties, a restriction needed to get the votes. The same statute that erased city limits inside Marion County made Hamilton County permanently unreachable by Indianapolis, so only municipalities already in the county could grow into this ground.",
+          prompt: "Give the key numbers of the Fishers southeast annexation.",
+          answer: "994 acres, 960 parcels, 2,500 to 3,000 residents, about 400 million dollars of assessed value, and 710 parcels (about 74 percent) carrying recorded remonstrance waivers. Completion was announced June 5, 2025, with taxes first payable January 1, 2027.",
         },
         {
-          prompt: "Did the 2010 Geist annexation or the 2025 southeast annexation change anyone's school district?",
-          answer: "No. Municipal and school boundaries are two different maps of the same ground, changed by two different bodies under two different statutes on two different schedules.",
+          prompt: "Why does the waiver figure settle the annexation, and when was it actually decided?",
+          answer: "Because 65 percent opposition ends an annexation under SEA 330, and 74 percent of the parcels had already permanently given up the right to be counted in that percentage. It was decided at the moment the sewer went in.",
         },
         {
-          prompt: "Name the four jurisdictional lines crossing this ground, and which one determines your tax bill.",
-          answer: "The municipal boundary, the township boundary, the school corporation boundary and the taxing district. The taxing district, the overlay of every unit that levies on your parcel, determines the bill. None of the four is the Mudsock line.",
+          prompt: "Why is annexation not a taking, and what is the argument actually about?",
+          answer: "Nothing is transferred and nobody loses a home, so no compensation is owed. What changes is which government taxes you, which police respond and which ballot you get. The argument is about the exchange rate between the new levy and the new services.",
         },
       ],
     },
@@ -932,28 +906,28 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
 - WFYI. (2023, November 8). *These Indiana schools won and lost referendums in the 2023 general election*. https://www.wfyi.org/news/articles/indiana-school-referendums-2023-eneral-election-results`,
       recallContent: [
         {
-          prompt: "Why is a property tax rate an output rather than an input?",
-          answer: "A unit of government sets a levy, the total dollars it intends to collect. The rate is that levy divided by the total assessed value in the district, so the rate falls out of the arithmetic. Growing assessed value means the same levy produces a lower rate.",
+          prompt: "What did the Indiana School Reorganization Act of 1959 require, and what did it accomplish?",
+          answer: "A reorganization plan in each county, developed by a nine member committee, with each consolidated district enrolling at least 1,000 students. Over about eleven years Indiana's districts fell from 966 to 402, and districts under 1,000 students fell from 801 to 156.",
         },
         {
-          prompt: "State Indiana's property tax caps and how they became constitutional.",
-          answer: "One percent of homestead property, two percent of residential, long-term care and agricultural land, and three percent of nonresidential and personal property, beginning with 2010 bills. SJR 1 passed in 2008 and again in 2010, and Hoosiers voted in November 2010 to put the caps in Article 10, Section 1 of the state constitution.",
+          prompt: "What happened to the proposed single Marion County school district in 1961?",
+          answer: "The county committee voted unanimously to propose one 130,000-student district. Over 10,000 people signed petitions against it, 2,000 attended a hearing on May 18, 1961 and 1,000 attended a follow-up six days later. The plan died and a compromise created what is now Indianapolis Public Schools.",
         },
         {
-          prompt: "What is the only exemption from the caps in most counties, and why does that explain school referenda?",
-          answer: "Expenses for capital projects, or additional school operating or public safety funds, approved by voters in a public referendum. A referendum is the only legal door in a constitutional wall, which is why districts keep walking through it.",
+          prompt: "How was the school boundary set twice, and why does that matter?",
+          answer: "In 1961 a proposed countywide district was defeated by petition and hearing, and in 1969 Unigov deliberately excluded schools. Two independent processes eight years apart produced the same line, so it is not an accident.",
         },
         {
-          prompt: "What does Hamilton Southeastern Schools say about its state funding, and why is that counterintuitive?",
-          answer: "The district's own finance page says it ranks in the bottom 2 percent of all Indiana school districts in state tuition support per student. A district in the state's highest income county gets among the least state money per student, because state formulas direct funding toward student need.",
+          prompt: "What did Unigov do about annexation into neighbouring counties, and why is that the hinge of this course?",
+          answer: "It barred annexation into neighbouring counties, a restriction needed to get the votes. The same statute that erased city limits inside Marion County made Hamilton County permanently unreachable by Indianapolis, so only municipalities already in the county could grow into this ground.",
         },
         {
-          prompt: "What happened to the referendum rate in 2023, and why?",
-          answer: "It fell from 0.2275 to 0.1995 dollars per 100 dollars of assessed value, and still passed with about 70 percent. Assessed value had grown enough that a lower rate on a larger base still funded the schools.",
+          prompt: "Did the 2010 Geist annexation or the 2025 southeast annexation change anyone's school district?",
+          answer: "No. Municipal and school boundaries are two different maps of the same ground, changed by two different bodies under two different statutes on two different schedules.",
         },
         {
-          prompt: "What does the Hamilton and Marion County income comparison prove, and what does it not?",
-          answer: "It proves a present difference in median household income between two adjacent counties, measured with margins of error. It does not prove a transfer of tax base. No longitudinal study tracing assessed value or households from one county to the other has been read into this course, so the proposed 'where the tax base went' claim is reported as unverified.",
+          prompt: "Name the four jurisdictional lines crossing this ground, and which one determines your tax bill.",
+          answer: "The municipal boundary, the township boundary, the school corporation boundary and the taxing district. The taxing district, the overlay of every unit that levies on your parcel, determines the bill. None of the four is the Mudsock line.",
         },
       ],
     },
@@ -1038,28 +1012,28 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "Does the Mudsock line mark a jurisdictional boundary? Give the reasoning.",
-          answer: "No. Both schools are public, in the same school corporation, city and county, under the same board, tax rates, referendum and ballot. It is an attendance boundary drawn by one board and revisable by that board at any meeting.",
+          prompt: "Why is a property tax rate an output rather than an input?",
+          answer: "A unit of government sets a levy, the total dollars it intends to collect. The rate is that levy divided by the total assessed value in the district, so the rate falls out of the arithmetic. Growing assessed value means the same levy produces a lower rate.",
         },
         {
-          prompt: "Which half of the proposed Unigov spine holds for Hamilton County, and why?",
-          answer: "The governance half. Unigov excluded school districts and barred annexation into neighbouring counties, so from January 1, 1970 Indianapolis was legally unable to cross into Hamilton County. That fixed this county's political independence in statute.",
+          prompt: "State Indiana's property tax caps and how they became constitutional.",
+          answer: "One percent of homestead property, two percent of residential, long-term care and agricultural land, and three percent of nonresidential and personal property, beginning with 2010 bills. SJR 1 passed in 2008 and again in 2010, and Hoosiers voted in November 2010 to put the caps in Article 10, Section 1 of the state constitution.",
         },
         {
-          prompt: "What does the chronology test show about Unigov and suburban growth?",
-          answer: "That Unigov did not cause it. The county grew 40.9 percent in the 1950s and 35.9 percent in the 1960s, and Unigov took effect January 1, 1970. It arrived mid curve and froze the boundary conditions around growth already under way.",
+          prompt: "What is the only exemption from the caps in most counties, and why does that explain school referenda?",
+          answer: "Expenses for capital projects, or additional school operating or public safety funds, approved by voters in a public referendum. A referendum is the only legal door in a constitutional wall, which is why districts keep walking through it.",
         },
         {
-          prompt: "Why does this course refuse the claim that the tax base moved north?",
-          answer: "Because a flow requires a longitudinal measurement tracing assessed value or households between two places over time, and no such study has been read into this course. It can show a present difference and a mechanism, which is not the same thing.",
+          prompt: "What does Hamilton Southeastern Schools say about its state funding, and why is that counterintuitive?",
+          answer: "The district's own finance page says it ranks in the bottom 2 percent of all Indiana school districts in state tuition support per student. A district in the state's highest income county gets among the least state money per student, because state formulas direct funding toward student need.",
         },
         {
-          prompt: "State the claim that survives the test.",
-          answer: "The rivalry does mark a boundary: the line between what a community can see and what actually governs it. Four jurisdictional boundaries cross this ground in four different shapes, and the one 8,000 people can feel at a stadium has no legal effect.",
+          prompt: "What happened to the referendum rate in 2023, and why?",
+          answer: "It fell from 0.2275 to 0.1995 dollars per 100 dollars of assessed value, and still passed with about 70 percent. Assessed value had grown enough that a lower rate on a larger base still funded the schools.",
         },
         {
-          prompt: "Name the four records that would settle the open questions.",
-          answer: "The Hamilton County school reorganization committee's plan and minutes, the recorded remonstrance waivers on the 710 parcels, the September 5, 2024 southeast annexation fiscal plan, and any longitudinal study of assessed value across the county line. None has been read here.",
+          prompt: "What does the Hamilton and Marion County income comparison prove, and what does it not?",
+          answer: "It proves a present difference in median household income between two adjacent counties, measured with margins of error. It does not prove a transfer of tax base. No longitudinal study tracing assessed value or households from one county to the other has been read into this course, so the proposed 'where the tax base went' claim is reported as unverified.",
         },
       ],
     },
@@ -1486,24 +1460,28 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
 - The Reporter. (2026). *HSE Board approves placing operating referendum on November ballot*. https://readthereporter.com/hse-board-approves-placing-operating-referendum-on-november-ballot/`,
       recallContent: [
         {
-          prompt: "What is on the November 3, 2026 ballot for Hamilton Southeastern Schools, and on what terms?",
-          answer: "An operating referendum of up to 0.36 dollars per 100 dollars of assessed value over eight years, approved by the school board 6 to 0 with one abstention on June 10, 2026. The district projects a 3 dollar per month increase on the median homeowner's 2027 bill.",
+          prompt: "Does the Mudsock line mark a jurisdictional boundary? Give the reasoning.",
+          answer: "No. Both schools are public, in the same school corporation, city and county, under the same board, tax rates, referendum and ballot. It is an attendance boundary drawn by one board and revisable by that board at any meeting.",
         },
         {
-          prompt: "Why are the maximum rate on the ballot and the rate the district intends to levy different numbers?",
-          answer: "The ballot sets a ceiling. Coverage of the resolution described a plan to start near 22 cents and escalate about 6 percent a year to roughly 33 cents by 2034, under a 36 cent maximum. That is normal and legal, and you only learn it by reading past the headline number.",
+          prompt: "Which half of the proposed Unigov spine holds for Hamilton County, and why?",
+          answer: "The governance half. Unigov excluded school districts and barred annexation into neighbouring counties, so from January 1, 1970 Indianapolis was legally unable to cross into Hamilton County. That fixed this county's political independence in statute.",
         },
         {
-          prompt: "Why does the district say it is asking, and who said so?",
-          answer: "Senate Enrolled Act 1 of 2025. Board President Tiffany Pascoe said the board referred the measure in response to SEA-1 to sustain the district's long-term outlook, and Superintendent Dr. Matt Kegley described it as seeking to recover a portion of revenue lost through SEA-1. The district also identified 7 million dollars in ongoing reductions.",
+          prompt: "What does the chronology test show about Unigov and suburban growth?",
+          answer: "That Unigov did not cause it. The county grew 40.9 percent in the 1950s and 35.9 percent in the 1960s, and Unigov took effect January 1, 1970. It arrived mid curve and froze the boundary conditions around growth already under way.",
         },
         {
-          prompt: "Why is 'referenda may appear only on general election ballots' an instrument rather than a technicality?",
-          answer: "Because a rule about when a question may be asked is a rule about who will be in the room to answer it. The 2016 referendum was decided in a May primary; the 2026 one must go to a November general electorate. Neither is more legitimate, but somebody chose which electorate gets the question.",
+          prompt: "Why does this course refuse the claim that the tax base moved north?",
+          answer: "Because a flow requires a longitudinal measurement tracing assessed value or households between two places over time, and no such study has been read into this course. It can show a present difference and a mechanism, which is not the same thing.",
         },
         {
-          prompt: "How does this course cite the Fishers 2040 plan, and why does it say so out loud?",
-          answer: "By its published adoption dates, June 2016 with amendments published in June 2021, taken from the documents' title pages. The city's server refused automated requests, so the plan's contents have not been read into this course. The limit is stated rather than hidden, and opening the plan is the learner's assignment.",
+          prompt: "State the claim that survives the test.",
+          answer: "The rivalry does mark a boundary: the line between what a community can see and what actually governs it. Four jurisdictional boundaries cross this ground in four different shapes, and the one 8,000 people can feel at a stadium has no legal effect.",
+        },
+        {
+          prompt: "Name the four records that would settle the open questions.",
+          answer: "The Hamilton County school reorganization committee's plan and minutes, the recorded remonstrance waivers on the 710 parcels, the September 5, 2024 southeast annexation fiscal plan, and any longitudinal study of assessed value across the county line. None has been read here.",
         },
       ],
     },
@@ -1955,24 +1933,24 @@ A short, checkable piece in which every sentence is either something you read in
 - Wachter, J. (2014, May). *40 years after Unigov: Indianapolis and Marion County's experience with consolidated government*. The Abell Foundation. https://abell.org/wp-content/uploads/2022/02/ec-unigov514.pdf`,
       recallContent: [
         {
-          prompt: "What is the actual product of this course?",
-          answer: "The six-beat site template, proved to work on a suburb as well as on a cleared district. Course 1 ran it on Indiana Avenue; this ran it on Fishers and Hamilton County, and that the same six questions work on both is the finding.",
+          prompt: "What is on the November 3, 2026 ballot for Hamilton Southeastern Schools, and on what terms?",
+          answer: "An operating referendum of up to 0.36 dollars per 100 dollars of assessed value over eight years, approved by the school board 6 to 0 with one abstention on June 10, 2026. The district projects a 3 dollar per month increase on the median homeowner's 2027 bill.",
         },
         {
-          prompt: "Name three things you can do after this course that you could not do before.",
-          answer: "Name four jurisdictional boundaries over one piece of ground and say which body moves each; explain why a school district line almost never moves when a city limit does; read a remonstrance waiver as deciding an annexation decades in advance; and explain why a constitutional tax cap produces school referenda.",
+          prompt: "Why are the maximum rate on the ballot and the rate the district intends to levy different numbers?",
+          answer: "The ballot sets a ceiling. Coverage of the resolution described a plan to start near 22 cents and escalate about 6 percent a year to roughly 33 cents by 2034, under a 36 cent maximum. That is normal and legal, and you only learn it by reading past the headline number.",
         },
         {
-          prompt: "Which two claims does this course explicitly refuse to make?",
-          answer: "Any claim about the intent behind a specific plat, covenant, annexation or district line, because the recorded documents have not been read here; and any claim that a tax base moved from Marion County to Hamilton County, because no longitudinal study was found.",
+          prompt: "Why does the district say it is asking, and who said so?",
+          answer: "Senate Enrolled Act 1 of 2025. Board President Tiffany Pascoe said the board referred the measure in response to SEA-1 to sustain the district's long-term outlook, and Superintendent Dr. Matt Kegley described it as seeking to recover a portion of revenue lost through SEA-1. The district also identified 7 million dollars in ongoing reductions.",
         },
         {
-          prompt: "Name the unopened sources that would advance this story.",
-          answer: "The Hamilton County school reorganization committee's plan and minutes, the recorded remonstrance waivers on the 710 southeast parcels, the September 5, 2024 southeast annexation fiscal plan and the earlier Geist one, the Fishers 2040 plan itself, and the Hamilton Superior Court file in the Geist litigation.",
+          prompt: "Why is 'referenda may appear only on general election ballots' an instrument rather than a technicality?",
+          answer: "Because a rule about when a question may be asked is a rule about who will be in the room to answer it. The 2016 referendum was decided in a May primary; the 2026 one must go to a November general electorate. Neither is more legitimate, but somebody chose which electorate gets the question.",
         },
         {
-          prompt: "What is the closing observation about the pair of courses?",
-          answer: "The same state legislature wrote the statutes that cleared one place and enabled another. Blight designation and remonstrance waiver are both instruments; eminent domain filings and annexation ordinances are both public records; the Redevelopment Commission and the City Council are both bodies with minutes. Reading both is the only way to see they were never two stories.",
+          prompt: "How does this course cite the Fishers 2040 plan, and why does it say so out loud?",
+          answer: "By its published adoption dates, June 2016 with amendments published in June 2021, taken from the documents' title pages. The city's server refused automated requests, so the plan's contents have not been read into this course. The limit is stated rather than hidden, and opening the plan is the learner's assignment.",
         },
       ],
     },

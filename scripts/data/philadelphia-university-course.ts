@@ -79,24 +79,6 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - Encyclopedia of Indianapolis. (n.d.). *Indiana Avenue*. https://indyencyclopedia.org/indiana-avenue/
 - Puckett, J. L. (n.d.-a). *The University City Science Center and the Black Bottom*. West Philadelphia Collaborative History, University of Pennsylvania Graduate School of Education. https://collaborativehistory.gse.upenn.edu/stories/university-city-science-center-and-black-bottom
 - University of Pennsylvania University Archives. (n.d.). *History of the University City Science Center: Approval process, displacement, protests, and PR disaster, 1965-1971*. https://archives.upenn.edu/exhibits/penn-history/science-center/part-3/`,
-      recallContent: [
-        {
-          prompt: "What was the Black Bottom, and where was it?",
-          answer: "A predominantly working-class and working-poor African American neighbourhood in West Philadelphia, a mix of homes and small commerce north and south of Market Street west of the University of Pennsylvania. It is the ground under what is now University City.",
-        },
-        {
-          prompt: "Why does it matter that 'Black Bottom' was the residents' own word?",
-          answer: "Because a neighbourhood people name for themselves and a redevelopment area a government draws are two different objects with two different boundaries. The remembered Black Bottom had fuzzy edges; the legal Unit 3 was precise to the block. Keeping them apart is the research discipline.",
-        },
-        {
-          prompt: "What did the 1960 census of the future Science Center blocks find, and what Indianapolis figure does it echo?",
-          answer: "Non-white households occupied 333 of 429 dwelling units, about 77.6 percent. It echoes Indiana Avenue being about 77 percent Black by 1920: two Black neighbourhoods, same order of magnitude, forty years apart.",
-        },
-        {
-          prompt: "What is the key difference between the Black Bottom and Indiana Avenue, and what does it change?",
-          answer: "Indiana Avenue was primarily a commercial and cultural corridor; the Black Bottom was primarily a residential neighbourhood. It changes what was lost and how it is counted: businesses and listings on the Avenue, households and renters here. The instrument is the twin; the thing it acted on is a cousin.",
-        },
-      ],
     },
     {
       slug: "pa-then-reading-the-record",
@@ -133,24 +115,20 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - University of Pennsylvania University Archives. (n.d.). *History of the University City Science Center: Approval process, displacement, protests, and PR disaster, 1965-1971*. https://archives.upenn.edu/exhibits/penn-history/science-center/part-3/`,
       recallContent: [
         {
-          prompt: "Why is the clearest census of the Black Bottom the one the Redevelopment Authority made?",
-          answer: "Because federal urban renewal required a survey before an area could be taken, so the best record of the neighbourhood is the paperwork of its removal. That is why the method course said to research an address forward through the documents of the people who acted on it.",
+          prompt: "What was the Black Bottom, and where was it?",
+          answer: "A predominantly working-class and working-poor African American neighbourhood in West Philadelphia, a mix of homes and small commerce north and south of Market Street west of the University of Pennsylvania. It is the ground under what is now University City.",
         },
         {
-          prompt: "What is the one displacement figure with a clear owner and scope, and what does it cover?",
-          answer: "2,653 people known to have been displaced from University Redevelopment Area Unit 3, roughly 78 percent African American and mostly renters.",
+          prompt: "Why does it matter that 'Black Bottom' was the residents' own word?",
+          answer: "Because a neighbourhood people name for themselves and a redevelopment area a government draws are two different objects with two different boundaries. The remembered Black Bottom had fuzzy edges; the legal Unit 3 was precise to the block. Keeping them apart is the research discipline.",
         },
         {
-          prompt: "Why do the figures 666 and 2,653 differ by roughly a factor of four?",
-          answer: "They answer different questions. About 666 is Penn's official count for the Science Center building alone; 2,653 is everyone displaced from all of Unit 3. They are not in conflict; they count different areas.",
+          prompt: "What did the 1960 census of the future Science Center blocks find, and what Indianapolis figure does it echo?",
+          answer: "Non-white households occupied 333 of 429 dwelling units, about 77.6 percent. It echoes Indiana Avenue being about 77 percent Black by 1920: two Black neighbourhoods, same order of magnitude, forty years apart.",
         },
         {
-          prompt: "How should you handle the 'as high as 10,000' figure?",
-          answer: "As the loosest, an outer bound for the whole Black Bottom over the whole renewal era. Attribute it, state its scope, and do not adopt it as if it were a survey, the same way the Indiana Avenue course handled the 17,000 figure.",
-        },
-        {
-          prompt: "When you say where the Black Bottom was, what must you specify?",
-          answer: "Whose boundary you mean. The Redevelopment Authority's Unit 3 had a legal boundary precise to the block; the residents' remembered neighbourhood did not. A reader cannot tell which you are using unless you say.",
+          prompt: "What is the key difference between the Black Bottom and Indiana Avenue, and what does it change?",
+          answer: "Indiana Avenue was primarily a commercial and cultural corridor; the Black Bottom was primarily a residential neighbourhood. It changes what was lost and how it is counted: businesses and listings on the Avenue, households and renters here. The instrument is the twin; the thing it acted on is a cousin.",
         },
       ],
     },
@@ -358,20 +336,24 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - University of Pennsylvania University Archives. (n.d.). *History of the University City Science Center: Approval process, displacement, protests, and PR disaster, 1965-1971*. https://archives.upenn.edu/exhibits/penn-history/science-center/part-3/`,
       recallContent: [
         {
-          prompt: "What was the West Philadelphia Corporation, and what event preceded its founding?",
-          answer: "A corporation founded in 1959 by the area's universities and hospitals to coordinate land and redevelopment. Its founding followed the 1958 robbery and killing of Korean doctoral student In-Ho Oh, which the institutions used to organise.",
+          prompt: "Why is the clearest census of the Black Bottom the one the Redevelopment Authority made?",
+          answer: "Because federal urban renewal required a survey before an area could be taken, so the best record of the neighbourhood is the paperwork of its removal. That is why the method course said to research an address forward through the documents of the people who acted on it.",
         },
         {
-          prompt: "Why does the course treat the renaming of the district as evidence?",
-          answer: "Because renaming the Black Bottom as University City changes what kind of thing the ground is understood to be, from a neighbourhood with residents to a campus with an institution. A new district name is the first move of an expansion.",
+          prompt: "What is the one displacement figure with a clear owner and scope, and what does it cover?",
+          answer: "2,653 people known to have been displaced from University Redevelopment Area Unit 3, roughly 78 percent African American and mostly renters.",
         },
         {
-          prompt: "What kind of building type is a research park, and how does it differ from the Black Bottom's fabric?",
-          answer: "Laboratory and office buildings on superblocks, oriented to institutions and parking. A rowhouse block is addressed to the sidewalk and serves a household; a research campus is addressed to the institution. The change of built form shows the change of power.",
+          prompt: "Why do the figures 666 and 2,653 differ by roughly a factor of four?",
+          answer: "They answer different questions. About 666 is Penn's official count for the Science Center building alone; 2,653 is everyone displaced from all of Unit 3. They are not in conflict; they count different areas.",
         },
         {
-          prompt: "What two distinct grievances did the 1969 College Hall sit-in protest, and why keep them separate?",
-          answer: "The displacement of the Black Bottom and classified war research connected to the Science Center. They are different claims and must be cited separately, but the pairing shows that the postwar campus and the postwar defense complex were often the same institutions.",
+          prompt: "How should you handle the 'as high as 10,000' figure?",
+          answer: "As the loosest, an outer bound for the whole Black Bottom over the whole renewal era. Attribute it, state its scope, and do not adopt it as if it were a survey, the same way the Indiana Avenue course handled the 17,000 figure.",
+        },
+        {
+          prompt: "When you say where the Black Bottom was, what must you specify?",
+          answer: "Whose boundary you mean. The Redevelopment Authority's Unit 3 had a legal boundary precise to the block; the residents' remembered neighbourhood did not. A reader cannot tell which you are using unless you say.",
         },
       ],
     },
@@ -406,20 +388,20 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - University of Pennsylvania University Archives. (n.d.). *History of the University City Science Center: Approval process, displacement, protests, and PR disaster, 1965-1971*. https://archives.upenn.edu/exhibits/penn-history/science-center/part-3/`,
       recallContent: [
         {
-          prompt: "State the Black Bottom substitution in one line, with the numbers.",
-          answer: "A neighbourhood of homes became a campus of laboratories: the Market corridor was leveled by the end of 1967 for the Science Center and University City High School, and where 429 dwelling units had stood, only 15 remained in the Science Center area by 1970.",
+          prompt: "What was the West Philadelphia Corporation, and what event preceded its founding?",
+          answer: "A corporation founded in 1959 by the area's universities and hospitals to coordinate land and redevelopment. Its founding followed the 1958 robbery and killing of Korean doctoral student In-Ho Oh, which the institutions used to organise.",
         },
         {
-          prompt: "Why is Society Hill the course's control case?",
-          answer: "Because the same Redevelopment Authority ran it in the same era but preserved the buildings instead of clearing them, while still displacing most of the poorer residents. Comparing it to the Black Bottom isolates what actually varied.",
+          prompt: "Why does the course treat the renaming of the district as evidence?",
+          answer: "Because renaming the Black Bottom as University City changes what kind of thing the ground is understood to be, from a neighbourhood with residents to a campus with an institution. A new district name is the first move of an expansion.",
         },
         {
-          prompt: "What was constant across the Black Bottom and Society Hill, and what varied?",
-          answer: "Displacement of the residents was the constant. The fate of the buildings was the variable: cleared in the Black Bottom, preserved in Society Hill. The variable was what the ground was wanted for and who was wanted on it, not whether the fabric was worth saving.",
+          prompt: "What kind of building type is a research park, and how does it differ from the Black Bottom's fabric?",
+          answer: "Laboratory and office buildings on superblocks, oriented to institutions and parking. A rowhouse block is addressed to the sidewalk and serves a household; a research campus is addressed to the institution. The change of built form shows the change of power.",
         },
         {
-          prompt: "What does Society Hill do to the idea that the Black Bottom's problem was simply late designation?",
-          answer: "It complicates it. Designation and preservation are tools that serve whoever holds them. Society Hill was preserved and its poorer residents still went, so the missing variable is who held the tools and what they wanted, not the timing of designation alone.",
+          prompt: "What two distinct grievances did the 1969 College Hall sit-in protest, and why keep them separate?",
+          answer: "The displacement of the Black Bottom and classified war research connected to the Science Center. They are different claims and must be cited separately, but the pairing shows that the postwar campus and the postwar defense complex were often the same institutions.",
         },
       ],
     },
@@ -455,24 +437,20 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - Puckett, J. L. (n.d.-b). *Collateral damage in Unit 3*. West Philadelphia Collaborative History, University of Pennsylvania Graduate School of Education. https://collaborativehistory.gse.upenn.edu/stories/collateral-damage-unit-3`,
       recallContent: [
         {
-          prompt: "What is the precise 1945 parallel between Indiana and Pennsylvania?",
-          answer: "Both states set up their blight-clearance machinery in 1945: Indiana's blight law and the Pennsylvania Urban Redevelopment Law, enacted May 24, 1945. Two states, two blight statutes, the same year, which is the postwar federal urban-renewal framework landing in both legislatures.",
+          prompt: "State the Black Bottom substitution in one line, with the numbers.",
+          answer: "A neighbourhood of homes became a campus of laboratories: the Market corridor was leveled by the end of 1967 for the Science Center and University City High School, and where 429 dwelling units had stood, only 15 remained in the Science Center area by 1970.",
         },
         {
-          prompt: "In Pennsylvania, which body certifies blight, and why does that split matter?",
-          answer: "The City Planning Commission certifies blight, not the Redevelopment Authority. The finding and the clearing are done by two different bodies, so there are two separate public paper trails to request.",
+          prompt: "Why is Society Hill the course's control case?",
+          answer: "Because the same Redevelopment Authority ran it in the same era but preserved the buildings instead of clearing them, while still displacing most of the poorer residents. Comparing it to the Black Bottom isolates what actually varied.",
         },
         {
-          prompt: "Which statutory blight criterion is a judgment rather than a measurement, and why is that a problem?",
-          answer: "'Land uses which are economically or socially undesirable.' It judges a use rather than measuring a building, and in a segregated city a judgment about a use is rarely innocent of who is using it. The physical criteria are also circular, since deterioration follows decades of refused credit.",
+          prompt: "What was constant across the Black Bottom and Society Hill, and what varied?",
+          answer: "Displacement of the residents was the constant. The fate of the buildings was the variable: cleared in the Black Bottom, preserved in Society Hill. The variable was what the ground was wanted for and who was wanted on it, not whether the fabric was worth saving.",
         },
         {
-          prompt: "What happens to a Pennsylvania blight certification after 20 years, and why does it matter to a citizen?",
-          answer: "It expires unless renewed. Certification is dated and re-datable rather than permanent, which makes it a public record you can look up, check the age of, and comment on.",
-        },
-        {
-          prompt: "What does this course refuse to claim about the Black Bottom certification?",
-          answer: "That it was made in bad faith, because that is a claim about intent and the course has not read the Planning Commission's certification file for Unit 3. It claims only that the instrument existed and was used, and that the file is a public record it has not opened.",
+          prompt: "What does Society Hill do to the idea that the Black Bottom's problem was simply late designation?",
+          answer: "It complicates it. Designation and preservation are tools that serve whoever holds them. Society Hill was preserved and its poorer residents still went, so the missing variable is who held the tools and what they wanted, not the timing of designation alone.",
         },
       ],
     },
@@ -500,20 +478,24 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - University of Pennsylvania University Archives. (n.d.). *History of the University City Science Center: Approval process, displacement, protests, and PR disaster, 1965-1971*. https://archives.upenn.edu/exhibits/penn-history/science-center/part-3/`,
       recallContent: [
         {
-          prompt: "When did the Redevelopment Authority condemn and demolish the Unit 3 properties, and what does the March 1967 figure show?",
-          answer: "Condemned in 1966, demolished in 1967 and 1968. By March 1967 only 43 percent of owners had accepted the Authority's prices, so a majority had not agreed when clearance began. The project moves whether or not owners are ready.",
+          prompt: "What is the precise 1945 parallel between Indiana and Pennsylvania?",
+          answer: "Both states set up their blight-clearance machinery in 1945: Indiana's blight law and the Pennsylvania Urban Redevelopment Law, enacted May 24, 1945. Two states, two blight statutes, the same year, which is the postwar federal urban-renewal framework landing in both legislatures.",
         },
         {
-          prompt: "How did federal money reach the Black Bottom clearance, and how does that differ from Indiana Avenue?",
-          answer: "Through a federal urban-renewal grant of about 13 million dollars (1966) to the Redevelopment Authority, roughly two thirds spent on real estate. On Indiana Avenue the decisive federal money flowed through the highway program instead. Same federal era, different federal channel; here there is no highway.",
+          prompt: "In Pennsylvania, which body certifies blight, and why does that split matter?",
+          answer: "The City Planning Commission certifies blight, not the Redevelopment Authority. The finding and the clearing are done by two different bodies, so there are two separate public paper trails to request.",
         },
         {
-          prompt: "Trace the sequence by which a public power produces a private campus.",
-          answer: "Take, clear, convey: a public authority condemns and clears the land, then conveys it to a redeveloper. In Unit 3 the designated redeveloper was the University City Science Center itself. That is the design of urban renewal, and it is why 'public use' became contested.",
+          prompt: "Which statutory blight criterion is a judgment rather than a measurement, and why is that a problem?",
+          answer: "'Land uses which are economically or socially undesirable.' It judges a use rather than measuring a building, and in a segregated city a judgment about a use is rarely innocent of who is using it. The physical criteria are also circular, since deterioration follows decades of refused credit.",
         },
         {
-          prompt: "What two limits does the lesson insist on when using the numbers?",
-          answer: "The 1966 dollar figures are not comparable to today's without a stated inflation adjustment, and federal relocation standards changed with the 1970 Uniform Relocation Act, so takings before and after happened under different rules.",
+          prompt: "What happens to a Pennsylvania blight certification after 20 years, and why does it matter to a citizen?",
+          answer: "It expires unless renewed. Certification is dated and re-datable rather than permanent, which makes it a public record you can look up, check the age of, and comment on.",
+        },
+        {
+          prompt: "What does this course refuse to claim about the Black Bottom certification?",
+          answer: "That it was made in bad faith, because that is a claim about intent and the course has not read the Planning Commission's certification file for Unit 3. It claims only that the instrument existed and was used, and that the file is a public record it has not opened.",
         },
       ],
     },
@@ -548,20 +530,20 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - University of Pennsylvania University Archives. (n.d.). *History of the University City Science Center: Approval process, displacement, protests, and PR disaster, 1965-1971*. https://archives.upenn.edu/exhibits/penn-history/science-center/part-3/`,
       recallContent: [
         {
-          prompt: "What was the West Philadelphia Corporation, and how did a resident describe it at the time?",
-          answer: "A coalition founded in 1959, funded and run primarily by the University of Pennsylvania with junior institutional partners, which controlled the Unit 3 redevelopment as Penn's surrogate. Resident Felton Newman told a hearing it was 'a front for the University of Pennsylvania.'",
+          prompt: "When did the Redevelopment Authority condemn and demolish the Unit 3 properties, and what does the March 1967 figure show?",
+          answer: "Condemned in 1966, demolished in 1967 and 1968. By March 1967 only 43 percent of owners had accepted the Authority's prices, so a majority had not agreed when clearance began. The project moves whether or not owners are ready.",
         },
         {
-          prompt: "How is the West Philadelphia Corporation parallel to Hoosier Realty Corporation, and how does it differ?",
-          answer: "Parallel: both let a university do neighbourhood land work through a nonprofit intermediary rather than only in its own name. Different: Hoosier Realty was Indiana University's own single-university shell formed as a land vehicle, while the West Philadelphia Corporation was a multi-institution consortium Penn funded and ran, founded first for safety after a 1958 killing.",
+          prompt: "How did federal money reach the Black Bottom clearance, and how does that differ from Indiana Avenue?",
+          answer: "Through a federal urban-renewal grant of about 13 million dollars (1966) to the Redevelopment Authority, roughly two thirds spent on real estate. On Indiana Avenue the decisive federal money flowed through the highway program instead. Same federal era, different federal channel; here there is no highway.",
         },
         {
-          prompt: "What is the overclaim to avoid, and the careful sentence to use instead?",
-          answer: "Overclaim: 'Penn used a shell company exactly like Indiana University did.' Careful: both universities worked through a surrogate nonprofit, and the surrogates differed in structure and origin.",
+          prompt: "Trace the sequence by which a public power produces a private campus.",
+          answer: "Take, clear, convey: a public authority condemns and clears the land, then conveys it to a redeveloper. In Unit 3 the designated redeveloper was the University City Science Center itself. That is the design of urban renewal, and it is why 'public use' became contested.",
         },
         {
-          prompt: "State the complete machine in one line, and what is notably absent from it.",
-          answer: "Certification of blight by the Planning Commission, plus condemnation, clearance and conveyance by the Redevelopment Authority with federal money, plus a university working through a surrogate nonprofit. Notably absent: any highway.",
+          prompt: "What two limits does the lesson insist on when using the numbers?",
+          answer: "The 1966 dollar figures are not comparable to today's without a stated inflation adjustment, and federal relocation standards changed with the 1970 Uniform Relocation Act, so takings before and after happened under different rules.",
         },
       ],
     },
@@ -598,24 +580,20 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - Puckett, J. L. (n.d.-a). *The University City Science Center and the Black Bottom*. West Philadelphia Collaborative History, University of Pennsylvania Graduate School of Education. https://collaborativehistory.gse.upenn.edu/stories/university-city-science-center-and-black-bottom`,
       recallContent: [
         {
-          prompt: "Name the four genuinely parallel features of Indianapolis and Philadelphia.",
-          answer: "A university drove the clearing of a Black neighbourhood; the land was worked through a surrogate nonprofit tied to the university; a public redevelopment body used blight and eminent domain; and both states passed their enabling blight statute in 1945. The 1945 statutes are the most exact parallel.",
+          prompt: "What was the West Philadelphia Corporation, and how did a resident describe it at the time?",
+          answer: "A coalition founded in 1959, funded and run primarily by the University of Pennsylvania with junior institutional partners, which controlled the Unit 3 redevelopment as Penn's surrogate. Resident Felton Newman told a hearing it was 'a front for the University of Pennsylvania.'",
         },
         {
-          prompt: "Give two features that are 'merely similar' rather than parallel.",
-          answer: "The thing cleared (a commercial corridor versus a residential neighbourhood) and the surrogate's structure (a single-university shell versus a multi-institution consortium). Also the demographic snapshots, close but measured differently at different dates.",
+          prompt: "How is the West Philadelphia Corporation parallel to Hoosier Realty Corporation, and how does it differ?",
+          answer: "Parallel: both let a university do neighbourhood land work through a nonprofit intermediary rather than only in its own name. Different: Hoosier Realty was Indiana University's own single-university shell formed as a land vehicle, while the West Philadelphia Corporation was a multi-institution consortium Penn funded and ran, founded first for safety after a 1958 killing.",
         },
         {
-          prompt: "What is genuinely different, and why does the absence of a highway make Philadelphia the cleaner case?",
-          answer: "No highway in the clearance, a different federal channel (an urban-renewal grant rather than highway funds), a defense-research controversy, and a Planning Commission that certifies while the Authority clears. With no highway to blame, Philadelphia isolates the university-and-authority instrument and proves the pattern was a program.",
+          prompt: "What is the overclaim to avoid, and the careful sentence to use instead?",
+          answer: "Overclaim: 'Penn used a shell company exactly like Indiana University did.' Careful: both universities worked through a surrogate nonprofit, and the surrogates differed in structure and origin.",
         },
         {
-          prompt: "State the verdict on the twin claim.",
-          answer: "It holds, most strongly at the level of the instrument, which is the same machine in both cities. It overreaches only if 'twin' is taken to mean 'identical': the neighbourhoods, surrogates and federal channels differ, and one city has a war-research overlay. A twin is not a clone.",
-        },
-        {
-          prompt: "What is the durable method lesson for handling a compelling parallel?",
-          answer: "Do not accept or reject it whole. Build three cited columns, parallel, similar, different. A parallel with a full strong column survives; one that dissolves into 'merely similar' in every row was a vibe.",
+          prompt: "State the complete machine in one line, and what is notably absent from it.",
+          answer: "Certification of blight by the Planning Commission, plus condemnation, clearance and conveyance by the Redevelopment Authority with federal money, plus a university working through a surrogate nonprofit. Notably absent: any highway.",
         },
       ],
     },
@@ -653,20 +631,24 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - Tomek, B. C. (n.d.-b). *MOVE*. Encyclopedia of Greater Philadelphia, Rutgers University. https://philadelphiaencyclopedia.org/essays/move/`,
       recallContent: [
         {
-          prompt: "State the documented facts of 13 May 1985, once and plainly.",
-          answer: "Philadelphia police dropped an explosive device from a helicopter onto the roof of 6221 Osage Avenue, the MOVE headquarters, in the Cobbs Creek neighbourhood. The resulting fire was allowed to burn. Eleven people died, six adults and five children; more than 60 homes were destroyed and more than 250 people left homeless.",
+          prompt: "Name the four genuinely parallel features of Indianapolis and Philadelphia.",
+          answer: "A university drove the clearing of a Black neighbourhood; the land was worked through a surrogate nonprofit tied to the university; a public redevelopment body used blight and eminent domain; and both states passed their enabling blight statute in 1945. The 1945 statutes are the most exact parallel.",
         },
         {
-          prompt: "What official record exists, and what did it conclude?",
-          answer: "The Philadelphia Special Investigation Commission (the MOVE Commission) issued its report on 6 March 1986, concluding that dropping a bomb on an occupied rowhouse was 'unconscionable' and the tactics 'grossly negligent.' Because there is a report, the event is documentable rather than only remembered.",
+          prompt: "Give two features that are 'merely similar' rather than parallel.",
+          answer: "The thing cleared (a commercial corridor versus a residential neighbourhood) and the surrogate's structure (a single-university shell versus a multi-institution consortium). Also the demographic snapshots, close but measured differently at different dates.",
         },
         {
-          prompt: "Why must the MOVE bombing not be collapsed into the Black Bottom story?",
-          answer: "They share a city and the race of the victims and nothing about the instrument. The Black Bottom was land assembly for a university via blight certification and eminent domain; the bombing was lethal municipal police power in an armed standoff, four miles west, in 1985. Collapsing them hides the two different mechanisms a citizen would confront.",
+          prompt: "What is genuinely different, and why does the absence of a highway make Philadelphia the cleaner case?",
+          answer: "No highway in the clearance, a different federal channel (an urban-renewal grant rather than highway funds), a defense-research controversy, and a Planning Commission that certifies while the Authority clears. With no highway to blame, Philadelphia isolates the university-and-authority instrument and proves the pattern was a program.",
         },
         {
-          prompt: "What tone does this lesson require, and why does it point to the commission report rather than paraphrase?",
-          answer: "Accountability, not spectacle: who decided, what body reviewed it, what it concluded. Survivors and relatives are living and children died, so the lesson gives the documented count and directs the learner to the official report rather than dramatising the deaths or reproducing varying victim lists.",
+          prompt: "State the verdict on the twin claim.",
+          answer: "It holds, most strongly at the level of the instrument, which is the same machine in both cities. It overreaches only if 'twin' is taken to mean 'identical': the neighbourhoods, surrogates and federal channels differ, and one city has a war-research overlay. A twin is not a clone.",
+        },
+        {
+          prompt: "What is the durable method lesson for handling a compelling parallel?",
+          answer: "Do not accept or reject it whole. Build three cited columns, parallel, similar, different. A parallel with a full strong column survives; one that dissolves into 'merely similar' in every row was a vibe.",
         },
       ],
     },
@@ -1062,24 +1044,20 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 - WHYY. (2020, November 20). *The story behind Penn's $100 million pledge to Philly schools*. https://whyy.org/episodes/the-story-behind-penns-100-million-pledge-to-philly-schools/`,
       recallContent: [
         {
-          prompt: "What are the four questions to ask about any parcel's future, in order?",
-          answer: "What does the comprehensive plan say it should become; what does the zoning permit today; what is the live civic argument over this ground; and who decides, when do they meet, and is the record public.",
+          prompt: "State the documented facts of 13 May 1985, once and plainly.",
+          answer: "Philadelphia police dropped an explosive device from a helicopter onto the roof of 6221 Osage Avenue, the MOVE headquarters, in the Cobbs Creek neighbourhood. The resulting fire was allowed to burn. Eleven people died, six adults and five children; more than 60 homes were destroyed and more than 250 people left homeless.",
         },
         {
-          prompt: "What is Philadelphia's comprehensive plan, who adopts it, and which district covers University City?",
-          answer: "Philadelphia2035, adopted by the Philadelphia City Planning Commission in 2011, with a Citywide Vision and 18 District Plans. University City falls under the University/Southwest District Plan. A comprehensive plan is policy, not enforceable zoning.",
+          prompt: "What official record exists, and what did it conclude?",
+          answer: "The Philadelphia Special Investigation Commission (the MOVE Commission) issued its report on 6 March 1986, concluding that dropping a bomb on an occupied rowhouse was 'unconscionable' and the tactics 'grossly negligent.' Because there is a report, the event is documentable rather than only remembered.",
         },
         {
-          prompt: "What is a PILOT, and what did Penn pledge in November 2020?",
-          answer: "A payment in lieu of taxes: a voluntary contribution a tax-exempt institution makes in place of property tax. In November 2020 Penn pledged the School District of Philadelphia 100 million dollars over ten years, about 10 million a year, for environmental remediation such as asbestos and lead.",
+          prompt: "Why must the MOVE bombing not be collapsed into the Black Bottom story?",
+          answer: "They share a city and the race of the victims and nothing about the instrument. The Black Bottom was land assembly for a university via blight certification and eminent domain; the bombing was lethal municipal police power in an armed standoff, four miles west, in 1985. Collapsing them hides the two different mechanisms a citizen would confront.",
         },
         {
-          prompt: "Summarise the two sides of the PILOT argument.",
-          answer: "Penn's pledge is real money and the largest private gift in the district's history. Critics call it a donation, not a PILOT, because it is time-limited, giver-directed, and far below the roughly 40 million a year some estimate a fair share would be, about four times the pledge.",
-        },
-        {
-          prompt: "Why is the PILOT fight the right beat-5 question for this course?",
-          answer: "Because it is the present-tense continuation of the same relationship Section 3 established: a university that grew onto a cleared Black neighbourhood by public means and federal money is now exempt from the tax that funds the city's schools. Same relationship, later date.",
+          prompt: "What tone does this lesson require, and why does it point to the commission report rather than paraphrase?",
+          answer: "Accountability, not spectacle: who decided, what body reviewed it, what it concluded. Survivors and relatives are living and children died, so the lesson gives the documented count and directs the learner to the official report rather than dramatising the deaths or reproducing varying victim lists.",
         },
       ],
     },
@@ -1522,20 +1500,24 @@ A short, checkable piece in which every sentence is either something you read in
 - Tomek, B. C. (n.d.-b). *MOVE*. Encyclopedia of Greater Philadelphia, Rutgers University. https://philadelphiaencyclopedia.org/essays/move/`,
       recallContent: [
         {
-          prompt: "What is the point of this being a second course rather than the first?",
-          answer: "It uses the template to test a claim rather than only tell a story. The template proved it travels to a second city, and the comparison proved the instrument travels: the same university-plus-surrogate-plus-authority machine under a 1945 blight statute.",
+          prompt: "What are the four questions to ask about any parcel's future, in order?",
+          answer: "What does the comprehensive plan say it should become; what does the zoning permit today; what is the live civic argument over this ground; and who decides, when do they meet, and is the record public.",
         },
         {
-          prompt: "Why is 'two states passing a blight law in the same year' treated as evidence rather than coincidence?",
-          answer: "Because it is the postwar federal urban-renewal framework landing in two state legislatures at once. Indiana and Pennsylvania both passed their enabling blight statutes in 1945, which is the strongest single sign the two cities ran the same program.",
+          prompt: "What is Philadelphia's comprehensive plan, who adopts it, and which district covers University City?",
+          answer: "Philadelphia2035, adopted by the Philadelphia City Planning Commission in 2011, with a Citywide Vision and 18 District Plans. University City falls under the University/Southwest District Plan. A comprehensive plan is policy, not enforceable zoning.",
         },
         {
-          prompt: "Why does the course refuse to give a single Black Bottom displacement number?",
-          answer: "Because the five circulating figures count different things over different scopes, from the Science Center alone to the whole neighbourhood, and manufacturing one number from them would invent a statistic.",
+          prompt: "What is a PILOT, and what did Penn pledge in November 2020?",
+          answer: "A payment in lieu of taxes: a voluntary contribution a tax-exempt institution makes in place of property tax. In November 2020 Penn pledged the School District of Philadelphia 100 million dollars over ten years, about 10 million a year, for environmental remediation such as asbestos and lead.",
         },
         {
-          prompt: "Name the unopened sources that would advance this story.",
-          answer: "The City Planning Commission's Unit 3 blight certification, the Redevelopment Authority's Unit 3 project files, the University of Pennsylvania trustees' minutes from the redevelopment years, and the West Philadelphia Corporation's own records. All public or requestable, none read into this course.",
+          prompt: "Summarise the two sides of the PILOT argument.",
+          answer: "Penn's pledge is real money and the largest private gift in the district's history. Critics call it a donation, not a PILOT, because it is time-limited, giver-directed, and far below the roughly 40 million a year some estimate a fair share would be, about four times the pledge.",
+        },
+        {
+          prompt: "Why is the PILOT fight the right beat-5 question for this course?",
+          answer: "Because it is the present-tense continuation of the same relationship Section 3 established: a university that grew onto a cleared Black neighbourhood by public means and federal money is now exempt from the tax that funds the city's schools. Same relationship, later date.",
         },
       ],
     },

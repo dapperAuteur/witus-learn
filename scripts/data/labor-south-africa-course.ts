@@ -87,18 +87,6 @@ Read those two rows again, because the distance between them is the reason this 
 - South African History Online. (n.d.). *The Congress of South African Trade Unions (COSATU)*. https://sahistory.org.za/article/congress-south-african-trade-unions-cosatu
 - Republic of South Africa. (2015). *Report of the Marikana Commission of Inquiry*. https://www.gov.za/documents/marikana-commission-inquiry-report
 - BBC News. (2012, August 17). *South Africa's Lonmin Marikana mine clashes killed 34*. https://www.bbc.com/news/world-africa-19292909`,
-      recallContent: [
-        {
-          prompt: "What was launched in Durban on 1 December 1985, and at what size?",
-          answer:
-            "COSATU, the Congress of South African Trade Unions, with 33 affiliated unions and about 460,000 members (South African History Online). It became one of the central engines of the movement that ended apartheid in 1994.",
-        },
-        {
-          prompt: "What happened at Marikana on 16 August 2012, and why does it open this course?",
-          answer:
-            "Police shot dead 34 striking miners at Lonmin's Marikana platinum mine, the deadliest police action since apartheid ended (BBC, 2012). It opens the course because it happened under the government COSATU's alliance helped elect: the paradox the whole course must explain.",
-        },
-      ],
     },
     {
       slug: "sa-four-questions",
@@ -134,14 +122,14 @@ Here are South Africa's answers in advance, and notice that they move **three ti
 - South African History Online. (n.d.). *The 1946 African Mine Workers' Strike*. https://sahistory.org.za/article/1946-african-mine-workers-strike`,
       recallContent: [
         {
-          prompt: "What are the anchor course's four questions?",
+          prompt: "What was launched in Durban on 1 December 1985, and at what size?",
           answer:
-            "(1) Who is allowed to organise? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try? South Africa's answers move three times, apartheid, the struggle, democracy, more than any other country in the track.",
+            "COSATU, the Congress of South African Trade Unions, with 33 affiliated unions and about 460,000 members (South African History Online). It became one of the central engines of the movement that ended apartheid in 1994.",
         },
         {
-          prompt: "What does Section 23 of South Africa's 1996 Constitution do, and when did South Africa ratify ILO Conventions 87 and 98?",
+          prompt: "What happened at Marikana on 16 August 2012, and why does it open this course?",
           answer:
-            "Section 23 gives every worker the constitutional right to form and join a union, to organise, to bargain collectively, and to strike, one of the few constitutions that entrenches the strike itself. South Africa ratified ILO C87 and C98 in February 1996, within two years of democracy; the apartheid state never had.",
+            "Police shot dead 34 striking miners at Lonmin's Marikana platinum mine, the deadliest police action since apartheid ended (BBC, 2012). It opens the course because it happened under the government COSATU's alliance helped elect: the paradox the whole course must explain.",
         },
       ],
     },
@@ -378,14 +366,14 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
 - International Labour Organization. (2016). *A review of the South African labour market* (historical overview of the Industrial Conciliation framework). https://www.ilo.org/`,
       recallContent: [
         {
-          prompt: "What did the Industrial Conciliation Act 11 of 1924 do, in one sentence each for its two faces?",
+          prompt: "What are the anchor course's four questions?",
           answer:
-            "It built a modern collective-bargaining system, registered unions, industrial councils, enforceable industry agreements, and it defined 'employee' to exclude pass-bearing African workers, so the entire system did not apply to most South Africans (O'Malley Archives; SAHO).",
+            "(1) Who is allowed to organise? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try? South Africa's answers move three times, apartheid, the struggle, democracy, more than any other country in the track.",
         },
         {
-          prompt: "What did the Native Labour (Settlement of Disputes) Act 48 of 1953 do?",
+          prompt: "What does Section 23 of South Africa's 1996 Constitution do, and when did South Africa ratify ILO Conventions 87 and 98?",
           answer:
-            "It made strikes by African workers a criminal offence and substituted a shadow machinery, state-appointed regional committees and powerless 'works committees', for union rights. African unions were not banned; they were given nothing: no registration, no recognition, no lawful strike (SAHO).",
+            "Section 23 gives every worker the constitutional right to form and join a union, to organise, to bargain collectively, and to strike, one of the few constitutions that entrenches the strike itself. South Africa ratified ILO C87 and C98 in February 1996, within two years of democracy; the apartheid state never had.",
         },
       ],
     },
@@ -414,14 +402,14 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
 - O'Malley, P. (n.d.). *Legislation index: Mines and Works Act; Industrial Conciliation Act (1956), s 77; Natives (Abolition of Passes) Act (1952)*. O'Malley Archives, Nelson Mandela Foundation. https://omalley.nelsonmandela.org/`,
       recallContent: [
         {
-          prompt: "Name the three 'walls' around the African worker beyond the 1924 definition, with one fact each.",
+          prompt: "What did the Industrial Conciliation Act 11 of 1924 do, in one sentence each for its two faces?",
           answer:
-            "(1) Job reservation, the Mines and Works Amendment Act 1926 and s 77 of the 1956 Industrial Conciliation Act reserved work by race. (2) The pass, the 1952 reference-book system controlled residence and work; prosecutions ran to hundreds of thousands a year at peak (SAHO). (3) The compound, migrant labour housed by the employer; Wilson (1972) found African gold-mine real wages no higher in 1969 than 1911.",
+            "It built a modern collective-bargaining system, registered unions, industrial councils, enforceable industry agreements, and it defined 'employee' to exclude pass-bearing African workers, so the entire system did not apply to most South Africans (O'Malley Archives; SAHO).",
         },
         {
-          prompt: "What happened in the 1946 African mineworkers' strike, and what lesson did its defeat teach?",
+          prompt: "What did the Native Labour (Settlement of Disputes) Act 48 of 1953 do?",
           answer:
-            "Roughly 60,000-100,000 miners struck for ten shillings a day in August 1946; police broke the strike within a week, at least nine dead, over 1,200 injured (SAHO), and the union was destroyed. The defeat convinced a generation that workplace power alone could not beat this state, pushing African unionism toward political alliance.",
+            "It made strikes by African workers a criminal offence and substituted a shadow machinery, state-appointed regional committees and powerless 'works committees', for union rights. African unions were not banned; they were given nothing: no registration, no recognition, no lawful strike (SAHO).",
         },
       ],
     },
@@ -654,14 +642,14 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
 - Friedman, S. (1987). *Building tomorrow today: African workers in trade unions, 1970–1984*. Ravan Press.`,
       recallContent: [
         {
-          prompt: "How large were the 1973 Durban strikes, and why does the course give a range?",
+          prompt: "Name the three 'walls' around the African worker beyond the 1924 definition, with one fact each.",
           answer:
-            "About 61,000 strikers in and around Durban between January and March 1973 (Institute for Industrial Education, 1974); around 100,000 counting the wave nationally through the year (SAHO). The two figures measure different things, so the course reports the documented range instead of inventing one number.",
+            "(1) Job reservation, the Mines and Works Amendment Act 1926 and s 77 of the 1956 Industrial Conciliation Act reserved work by race. (2) The pass, the 1952 reference-book system controlled residence and work; prosecutions ran to hundreds of thousands a year at peak (SAHO). (3) The compound, migrant labour housed by the employer; Wilson (1972) found African gold-mine real wages no higher in 1969 than 1911.",
         },
         {
-          prompt: "What was the 'no leaders' tactic, and what echo does it have elsewhere in this track?",
+          prompt: "What happened in the 1946 African mineworkers' strike, and what lesson did its defeat teach?",
           answer:
-            "Strikers refused to elect committees or spokesmen because a named leader could be arrested or victimised under the 1953 strike ban; crowds bargained collectively and the state had no head to cut off. It rhymes with Poland's occupation strikes of 1980, a repressed workforce redesigning the strike so the state's usual answer fails.",
+            "Roughly 60,000-100,000 miners struck for ten shillings a day in August 1946; police broke the strike within a week, at least nine dead, over 1,200 injured (SAHO), and the union was destroyed. The defeat convinced a generation that workplace power alone could not beat this state, pushing African unionism toward political alliance.",
         },
       ],
     },
@@ -685,14 +673,14 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
 - South African History Online. (n.d.). *Wiehahn Commission report tabled in parliament*. https://sahistory.org.za/dated-event/wiehahn-commission-report-tabled-parliament`,
       recallContent: [
         {
-          prompt: "What was the Wiehahn opening, and what was the state's gamble?",
+          prompt: "How large were the 1973 Durban strikes, and why does the course give a range?",
           answer:
-            "The Wiehahn Commission (1979) recommended admitting African workers to the registered union system, enacted by the Industrial Conciliation Amendment Act 94 of 1979. The gamble was control: a registered union is a regulable union. The unions took the machinery and kept shop-floor power, and the gamble failed.",
+            "About 61,000 strikers in and around Durban between January and March 1973 (Institute for Industrial Education, 1974); around 100,000 counting the wave nationally through the year (SAHO). The two figures measure different things, so the course reports the documented range instead of inventing one number.",
         },
         {
-          prompt: "What organisational design did FOSATU (founded April 1979) run on?",
+          prompt: "What was the 'no leaders' tactic, and what echo does it have elsewhere in this track?",
           answer:
-            "Shop-floor democracy: elected, mandated, recallable shop stewards holding the power, officials on a short leash, registration used as a tool rather than a leash. COSATU inherited this design, it is why the unions became formidable rather than captured.",
+            "Strikers refused to elect committees or spokesmen because a named leader could be arrested or victimised under the 1953 strike ban; crowds bargained collectively and the state had no head to cut off. It rhymes with Poland's occupation strikes of 1980, a repressed workforce redesigning the strike so the state's usual answer fails.",
         },
       ],
     },
@@ -719,14 +707,14 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
 - Baskin, J. (1991). *Striking back: A history of COSATU*. Ravan Press.`,
       recallContent: [
         {
-          prompt: "Name COSATU's founding principles and its decisive break with FOSATU.",
+          prompt: "What was the Wiehahn opening, and what was the state's gamble?",
           answer:
-            "One industry, one union; one country, one federation; worker control through shop stewards, plus the break: open engagement in the political struggle, sealed by adopting the Freedom Charter in 1987 and entering the Tripartite Alliance (ANC-SACP-COSATU) after the 1990 unbannings.",
+            "The Wiehahn Commission (1979) recommended admitting African workers to the registered union system, enacted by the Industrial Conciliation Amendment Act 94 of 1979. The gamble was control: a registered union is a regulable union. The unions took the machinery and kept shop-floor power, and the gamble failed.",
         },
         {
-          prompt: "What was the August 1987 miners' strike, and how does the course handle its numbers?",
+          prompt: "What organisational design did FOSATU (founded April 1979) run on?",
           answer:
-            "A three-week NUM-led strike, the largest in South African history to that point. NUM claimed about 340,000 participants; the Chamber of Mines counted fewer; the course reports both sides' figures. It ended in defeat with tens of thousands dismissed (SAHO).",
+            "Shop-floor democracy: elected, mandated, recallable shop stewards holding the power, officials on a short leash, registration used as a tool rather than a leash. COSATU inherited this design, it is why the unions became formidable rather than captured.",
         },
       ],
     },
@@ -960,14 +948,14 @@ Add the **Basic Conditions of Employment Act 75 of 1997** (hours, leave, notice)
 - National Economic Development and Labour Council. (n.d.). *About NEDLAC*. https://nedlac.org.za/`,
       recallContent: [
         {
-          prompt: "Name four worker-facing features of the LRA 66 of 1995.",
+          prompt: "Name COSATU's founding principles and its decisive break with FOSATU.",
           answer:
-            "(1) Coverage of nearly all employees, no farm/domestic carve-out; (2) organisational rights including statutory shop stewards; (3) sectoral bargaining councils with extension, plus protected strikes; (4) the CCMA, a free and informal disputes tribunal handling on the order of 150,000+ referrals a year (CCMA annual reports).",
+            "One industry, one union; one country, one federation; worker control through shop stewards, plus the break: open engagement in the political struggle, sealed by adopting the Freedom Charter in 1987 and entering the Tripartite Alliance (ANC-SACP-COSATU) after the 1990 unbannings.",
         },
         {
-          prompt: "What is NEDLAC, and why does it matter for Question 3?",
+          prompt: "What was the August 1987 miners' strike, and how does the course handle its numbers?",
           answer:
-            "The National Economic Development and Labour Council (launched February 1995): a statutory chamber where labour, business, government and community negotiate legislation before parliament. It puts unions at the drafting table itself, the highest bargaining 'level' anywhere in this track.",
+            "A three-week NUM-led strike, the largest in South African history to that point. NUM claimed about 340,000 participants; the Chamber of Mines counted fewer; the course reports both sides' figures. It ended in defeat with tens of thousands dismissed (SAHO).",
         },
       ],
     },
@@ -995,14 +983,14 @@ Add the **Basic Conditions of Employment Act 75 of 1997** (hours, leave, notice)
 - Congress of South African Trade Unions. (n.d.). *Congress resolutions and policy submissions*. https://cosatu.org.za/`,
       recallContent: [
         {
-          prompt: "Give South Africa's unemployment figures with definitions, source and date.",
+          prompt: "Name four worker-facing features of the LRA 66 of 1995.",
           answer:
-            "Q1 2025, Stats SA Quarterly Labour Force Survey: 32.9% official (actively searching), 43.1% expanded (includes discouraged work-seekers), and roughly 62% official for ages 15-24. Always date these, they move quarterly, but they have not been low in living memory.",
+            "(1) Coverage of nearly all employees, no farm/domestic carve-out; (2) organisational rights including statutory shop stewards; (3) sectoral bargaining councils with extension, plus protected strikes; (4) the CCMA, a free and informal disputes tribunal handling on the order of 150,000+ referrals a year (CCMA annual reports).",
         },
         {
-          prompt: "Summarise the insider/outsider critique and the unions' rebuttal in one sentence each.",
+          prompt: "What is NEDLAC, and why does it matter for Question 3?",
           answer:
-            "Critique (e.g. the Harvard-led growth panel advising the Treasury, 2008): extended bargaining agreements and strong protections raise hiring costs and price unemployed outsiders out of work. Rebuttal (COSATU's own submissions): unemployment tracks apartheid's education and spatial legacies and the economy's structure, not the LRA, bottom wages are too low to live on, and cheapening jobs would not create them.",
+            "The National Economic Development and Labour Council (launched February 1995): a statutory chamber where labour, business, government and community negotiate legislation before parliament. It puts unions at the drafting table itself, the highest bargaining 'level' anywhere in this track.",
         },
       ],
     },
@@ -1034,14 +1022,14 @@ The same building the LRA built, with a side door that lets the work in while le
 - Congress of South African Trade Unions. (n.d.). *Campaign statements on labour broking*. https://cosatu.org.za/`,
       recallContent: [
         {
-          prompt: "How does labour broking move a worker outside the LRA's protections?",
+          prompt: "Give South Africa's unemployment figures with definitions, source and date.",
           answer:
-            "Under LRA s 198 the temporary employment service (broker) is the employer, not the client whose work the worker actually does, so the client's bargaining agreements, wages and dismissal protections don't attach; the client can simply end the assignment. Same room, different door: the track's outside-the-category move.",
+            "Q1 2025, Stats SA Quarterly Labour Force Survey: 32.9% official (actively searching), 43.1% expanded (includes discouraged work-seekers), and roughly 62% official for ages 15-24. Always date these, they move quarterly, but they have not been low in living memory.",
         },
         {
-          prompt: "What did the 2014 amendment and the 2018 Assign Services judgment each do?",
+          prompt: "Summarise the insider/outsider critique and the unions' rebuttal in one sentence each.",
           answer:
-            "The Labour Relations Amendment Act 6 of 2014 (s 198A) deems a below-threshold placed worker the client's employee after three months. Assign Services v NUMSA [2018] ZACC 22 held the client becomes the SOLE employer, closing the 'dual employer' loophole. NUMSA, the federation's most rebellious affiliate, litigated it to the top court.",
+            "Critique (e.g. the Harvard-led growth panel advising the Treasury, 2008): extended bargaining agreements and strong protections raise hiring costs and price unemployed outsiders out of work. Rebuttal (COSATU's own submissions): unemployment tracks apartheid's education and spatial legacies and the economy's structure, not the LRA, bottom wages are too low to live on, and cheapening jobs would not create them.",
         },
       ],
     },
@@ -1280,14 +1268,14 @@ The same building the LRA built, with a side door that lets the work in while le
 - South African History Online. (n.d.). *The Marikana massacre, 16 August 2012*. https://sahistory.org.za/`,
       recallContent: [
         {
-          prompt: "Who was striking at Marikana, for what, and under whose authorisation?",
+          prompt: "How does labour broking move a worker outside the LRA's protections?",
           answer:
-            "Rock drill operators at Lonmin's platinum mines began an unprotected (wildcat) strike on 9 August 2012, demanding R12,500 a month take-home, launched by the workers themselves, initially outside both NUM (the recognised majority union, whose standing had collapsed) and the rival AMCU, which was recruiting hard.",
+            "Under LRA s 198 the temporary employment service (broker) is the employer, not the client whose work the worker actually does, so the client's bargaining agreements, wages and dismissal protections don't attach; the client can simply end the assignment. Same room, different door: the track's outside-the-category move.",
         },
         {
-          prompt: "What is the documented toll of the Marikana events, per the commission's report?",
+          prompt: "What did the 2014 amendment and the 2018 Assign Services judgment each do?",
           answer:
-            "Ten people killed between 10 and 15 August (including two police officers and two Lonmin security guards); then on 16 August, 34 strikers killed by police, 17 at scene 1, 17 at scene 2, with at least 78 wounded and about 270 arrested (Marikana Commission of Inquiry report, 2015).",
+            "The Labour Relations Amendment Act 6 of 2014 (s 198A) deems a below-threshold placed worker the client's employee after three months. Assign Services v NUMSA [2018] ZACC 22 held the client becomes the SOLE employer, closing the 'dual employer' loophole. NUMSA, the federation's most rebellious affiliate, litigated it to the top court.",
         },
       ],
     },
@@ -1320,14 +1308,14 @@ The same building the LRA built, with a side door that lets the work in while le
 - BBC News. (2015, June 25). *Marikana commission: Key findings*. https://www.bbc.com/news/world-africa-33269205`,
       recallContent: [
         {
-          prompt: "List three things the Farlam Commission found and three it did not find.",
+          prompt: "Who was striking at Marikana, for what, and under whose authorisation?",
           answer:
-            "Found: the 15-16 August police operation was defectively decided and planned; the police account was materially untruthful (evidence withheld/constructed); Lonmin, NUM and AMCU each bore documented failures, and the accusation against Ramaphosa was rejected as groundless. Did NOT find: any political order or conspiracy behind the shootings; any criminal conviction (commissions refer, they don't convict); any compensation award (it recommended processes).",
+            "Rock drill operators at Lonmin's platinum mines began an unprotected (wildcat) strike on 9 August 2012, demanding R12,500 a month take-home, launched by the workers themselves, initially outside both NUM (the recognised majority union, whose standing had collapsed) and the rival AMCU, which was recruiting hard.",
         },
         {
-          prompt: "What was the state of Marikana accountability when this course was written (2026)?",
+          prompt: "What is the documented toll of the Marikana events, per the commission's report?",
           answer:
-            "Phiyega found unfit for office (suspended 2015, term expired 2017); many family civil claims settled from 2018 onward, others still in progress into the mid-2020s; and no one convicted of any August 2012 killing, no officer tried for 16 August itself; prosecutions so far concern the earlier deaths and alleged obstruction, ended in acquittal or still before the courts. Dated, open, to be re-checked.",
+            "Ten people killed between 10 and 15 August (including two police officers and two Lonmin security guards); then on 16 August, 34 strikers killed by police, 17 at scene 1, 17 at scene 2, with at least 78 wounded and about 270 arrested (Marikana Commission of Inquiry report, 2015).",
         },
       ],
     },
@@ -1565,14 +1553,14 @@ The same building the LRA built, with a side door that lets the work in while le
 - Republic of South Africa. (2018). *National Minimum Wage Act 9 of 2018*. https://www.gov.za/documents/national-minimum-wage-act-9-2018-27-nov-2018-0000`,
       recallContent: [
         {
-          prompt: "Date the rupture: NUMSA's resolutions, the expulsion, Vavi, and SAFTU.",
+          prompt: "List three things the Farlam Commission found and three it did not find.",
           answer:
-            "December 2013: NUMSA's special national congress resolves not to campaign for the ANC and calls on COSATU to leave the alliance. 8 November 2014: COSATU's CEC expels NUMSA, 33-24. March 2015: general secretary Zwelinzima Vavi expelled. April 2017: SAFTU launches, roughly 700,000 claimed members, about two dozen unions, 'independent but not apolitical.'",
+            "Found: the 15-16 August police operation was defectively decided and planned; the police account was materially untruthful (evidence withheld/constructed); Lonmin, NUM and AMCU each bore documented failures, and the accusation against Ramaphosa was rejected as groundless. Did NOT find: any political order or conspiracy behind the shootings; any criminal conviction (commissions refer, they don't convict); any compensation award (it recommended processes).",
         },
         {
-          prompt: "Give each side's strongest exhibit in the alliance debate.",
+          prompt: "What was the state of Marikana accountability when this course was written (2026)?",
           answer:
-            "COSATU (stay in): the National Minimum Wage Act 9 of 2018 (in force 1 Jan 2019, ~six million workers), won through NEDLAC from inside the alliance. NUMSA/SAFTU (get out): Marikana, a massacre of strikers under an ANC-led government, read as proof the alliance neutered the federation. Both exhibits are genuine; the course declares no winner.",
+            "Phiyega found unfit for office (suspended 2015, term expired 2017); many family civil claims settled from 2018 onward, others still in progress into the mid-2020s; and no one convicted of any August 2012 killing, no officer tried for 16 August itself; prosecutions so far concern the earlier deaths and alleged obstruction, ended in acquittal or still before the courts. Dated, open, to be re-checked.",
         },
       ],
     },
@@ -1598,14 +1586,14 @@ The same building the LRA built, with a side door that lets the work in while le
 - Republic of South Africa. (2018). *National Minimum Wage Act 9 of 2018*. https://www.gov.za/documents/national-minimum-wage-act-9-2018-27-nov-2018-0000`,
       recallContent: [
         {
-          prompt: "Why does the course refuse to conclude that South Africa 'won the state and lost the workplace' like Poland?",
+          prompt: "Date the rupture: NUMSA's resolutions, the expulsion, Vavi, and SAFTU.",
           answer:
-            "Because the counter-evidence is real: density several times Poland's (roughly a quarter to three in ten, survey-varying, ILO/OECD-AIAS), living sectoral bargaining councils, a statutory seat in lawmaking via NEDLAC, the 2018 minimum wage won from inside, and rival federations still competing to organise. The rhyme is offered as an open question, not forced as a verdict.",
+            "December 2013: NUMSA's special national congress resolves not to campaign for the ANC and calls on COSATU to leave the alliance. 8 November 2014: COSATU's CEC expels NUMSA, 33-24. March 2015: general secretary Zwelinzima Vavi expelled. April 2017: SAFTU launches, roughly 700,000 claimed members, about two dozen unions, 'independent but not apolitical.'",
         },
         {
-          prompt: "What is the single bluntest lesson South Africa adds to the track?",
+          prompt: "Give each side's strongest exhibit in the alliance debate.",
           answer:
-            "A right belongs to a category, and whoever writes the category decides who has the right, from 'employee, not pass-bearing' (1924) to 'employee of the client, after three months, below the threshold' (2015). Read definitions before rights, in any country.",
+            "COSATU (stay in): the National Minimum Wage Act 9 of 2018 (in force 1 Jan 2019, ~six million workers), won through NEDLAC from inside the alliance. NUMSA/SAFTU (get out): Marikana, a massacre of strikers under an ANC-led government, read as proof the alliance neutered the federation. Both exhibits are genuine; the course declares no winner.",
         },
       ],
     },

@@ -63,24 +63,6 @@ export const GREEN_BOOK_READ_A_ROUTE_COURSE: AuthoredCourse = {
 - Green, V. H. (Ed.). (1956). *The Negro travelers' Green book: 1956*. Victor H. Green & Co. Schomburg Center for Research in Black Culture, The New York Public Library. https://digitalcollections.nypl.org/collections/the-green-book
 - National Park Service. (n.d.-a). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm
 - National Park Service. (n.d.-b). *Green Book properties listed in the National Register of Historic Places*. https://www.nps.gov/articles/green-book-properties-listed-in-the-national-register-of-historic-places.htm`,
-      recallContent: [
-        {
-          prompt: "Who published the first Green Book, in what year, and what was his day job?",
-          answer: "Victor Hugo Green, in 1936. He was a letter carrier for the U.S. Post Office, and stayed one until he retired in 1952 after 39 years.",
-        },
-        {
-          prompt: "How did Green actually collect his listings?",
-          answer: "Through a network of fellow postal employees who solicited listings along their delivery routes, plus reader submissions and, later, paid agents. So the book records what someone reported to him, not everything that existed.",
-        },
-        {
-          prompt: "Who ran the Green Book after Victor Green died in 1960?",
-          answer: "His wife Alma Green, credited as editor and publisher from 1959, ran it until 1962. The last two editions were published by Langley Waller.",
-        },
-        {
-          prompt: "Which oil company sold the Green Book at its stations nationwide, and who arranged it?",
-          answer: "Esso. James A. Jackson, a Black marketing executive at the company, arranged it. Esso also franchised stations to Black owners.",
-        },
-      ],
     },
     {
       slug: "gbr-editions-and-titles",
@@ -112,20 +94,20 @@ That sentence is not decoration. It is the publisher telling you that the book w
 - New York Public Library. (n.d.). *Green Book research guide*. https://libguides.nypl.org/greenbook`,
       recallContent: [
         {
-          prompt: "In 1936 the Green Book covered what area, and when did it go national?",
-          answer: "Metropolitan New York only, with the first two editions leaning on Harlem businesses. It went national in 1937.",
+          prompt: "Who published the first Green Book, in what year, and what was his day job?",
+          answer: "Victor Hugo Green, in 1936. He was a letter carrier for the U.S. Post Office, and stayed one until he retired in 1952 after 39 years.",
         },
         {
-          prompt: "Why is there a gap in the editions in the early 1940s?",
-          answer: "Wartime rationing forced a hiatus of about four years, roughly 1942 to 1945. The guide returned with a redesigned 1946 edition.",
+          prompt: "How did Green actually collect his listings?",
+          answer: "Through a network of fellow postal employees who solicited listings along their delivery routes, plus reader submissions and, later, paid agents. So the book records what someone reported to him, not everything that existed.",
         },
         {
-          prompt: "What changed about the categories in the 1956 edition, and why does that matter to a researcher?",
-          answer: "It stopped listing service stations, drug stores, tailors, hair salons, liquor stores and more, and narrowed to lodging and restaurants. So an empty barber-shop search in a late edition reflects an editorial decision, not the absence of barbers.",
+          prompt: "Who ran the Green Book after Victor Green died in 1960?",
+          answer: "His wife Alma Green, credited as editor and publisher from 1959, ran it until 1962. The last two editions were published by Langley Waller.",
         },
         {
-          prompt: "What did Victor Green say in 1949 that he wanted for the book?",
-          answer: "That there would be a day in the near future when the guide would not have to be published, because Black Americans would have equal opportunities and could go wherever they pleased without embarrassment.",
+          prompt: "Which oil company sold the Green Book at its stations nationwide, and who arranged it?",
+          answer: "Esso. James A. Jackson, a Black marketing executive at the company, arranged it. Esso also franchised stations to Black owners.",
         },
       ],
     },
@@ -314,16 +296,20 @@ Read the guide as a safety document and you will get the history half right. Rea
 - Taylor, C. (2020). *Overground railroad: The Green Book and the roots of Black travel in America*. Abrams Press.`,
       recallContent: [
         {
-          prompt: "Why did the automobile matter so much in Black American life, according to Sorin (2020)?",
-          answer: "Driving let families avoid the segregated railroad car and bus and travel on their own terms, so the car became a tool of resistance as well as transport.",
+          prompt: "In 1936 the Green Book covered what area, and when did it go national?",
+          answer: "Metropolitan New York only, with the first two editions leaning on Harlem businesses. It went national in 1937.",
         },
         {
-          prompt: "What is a sundown town, and roughly how many did Loewen document?",
-          answer: "A community that excluded Black residents and visitors, often enforced after dark. Loewen expected about fifty nationwide and instead documented more than 440 in Illinois alone and thousands across the country, most outside the South.",
+          prompt: "Why is there a gap in the editions in the early 1940s?",
+          answer: "Wartime rationing forced a hiatus of about four years, roughly 1942 to 1945. The guide returned with a redesigned 1946 edition.",
         },
         {
-          prompt: "What was the alternative to the Green Book, in the guide's own words?",
-          answer: "Word of mouth. The 1956 foreword says the Black traveler had to depend on it before a Negro travel guide existed, and often accommodations were simply not available.",
+          prompt: "What changed about the categories in the 1956 edition, and why does that matter to a researcher?",
+          answer: "It stopped listing service stations, drug stores, tailors, hair salons, liquor stores and more, and narrowed to lodging and restaurants. So an empty barber-shop search in a late edition reflects an editorial decision, not the absence of barbers.",
+        },
+        {
+          prompt: "What did Victor Green say in 1949 that he wanted for the book?",
+          answer: "That there would be a day in the near future when the guide would not have to be published, because Black Americans would have equal opportunities and could go wherever they pleased without embarrassment.",
         },
       ],
     },
@@ -358,20 +344,16 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
 - Taylor, C. (2020). *Overground railroad: The Green Book and the roots of Black travel in America*. Abrams Press.`,
       recallContent: [
         {
-          prompt: "What is a tourist home, and who typically ran one?",
-          answer: "A private residence with a room to rent, offering lodging where no hotel would take Black travelers. Most were owned or operated by married or widowed women, which also gave them a measure of economic independence.",
+          prompt: "Why did the automobile matter so much in Black American life, according to Sorin (2020)?",
+          answer: "Driving let families avoid the segregated railroad car and bus and travel on their own terms, so the car became a tool of resistance as well as transport.",
         },
         {
-          prompt: "Roughly how many tourist homes did the Green Book list across its run, and where did they dominate?",
-          answer: "More than fourteen hundred. In Nebraska, and in Michigan outside Detroit, they made up about ninety percent of all Green Book sites.",
+          prompt: "What is a sundown town, and roughly how many did Loewen document?",
+          answer: "A community that excluded Black residents and visitors, often enforced after dark. Loewen expected about fifty nationwide and instead documented more than 440 in Illinois alone and thousands across the country, most outside the South.",
         },
         {
-          prompt: "Why were hair salons so heavily represented in Green Book cities?",
-          answer: "They were gathering places and a route to economic independence for Black women, and salon listings often outnumbered lodging and food listings in a city. Some also served the civil rights movement directly, driving clients to register or receiving NAACP mail.",
-        },
-        {
-          prompt: "When you open a city's section, what should you look at besides the hotel?",
-          answer: "Which of the six needs are covered and which are missing. Beds without fuel, or fuel without beds, tells you what kind of stop that city could actually be.",
+          prompt: "What was the alternative to the Green Book, in the guide's own words?",
+          answer: "Word of mouth. The 1956 foreword says the Black traveler had to depend on it before a Negro travel guide existed, and often accommodations were simply not available.",
         },
       ],
     },
@@ -573,20 +555,20 @@ Four short lines. Now read what is actually in them.
 - National Park Service. (n.d.-c). *Latimore Tourist Home*. https://www.nps.gov/places/latimore-tourist-home.htm`,
       recallContent: [
         {
-          prompt: "Name the four levels of the Green Book's listing hierarchy, outermost first.",
-          answer: "State, then city or town, then category (HOTELS, TOURIST HOMES, and so on), then the entry itself: a name, a dash, and an address.",
+          prompt: "What is a tourist home, and who typically ran one?",
+          answer: "A private residence with a room to rent, offering lodging where no hotel would take Black travelers. Most were owned or operated by married or widowed women, which also gave them a measure of economic independence.",
         },
         {
-          prompt: "Why does the category heading matter so much when you are working from a cropped image or a transcription?",
-          answer: "The entry usually does not say what kind of place it is. It is a tourist home only because it sits under the TOURIST HOMES heading. Lose the heading and you lose the meaning.",
+          prompt: "Roughly how many tourist homes did the Green Book list across its run, and where did they dominate?",
+          answer: "More than fourteen hundred. In Nebraska, and in Michigan outside Detroit, they made up about ninety percent of all Green Book sites.",
         },
         {
-          prompt: "What does a listing that reads 'Mrs. M. Jackson, Herman St.' tell you, and what does it not tell you?",
-          answer: "It tells you a woman ran it and it was probably her home, on Herman Street. It does not tell you the house number, so the address is a research lead rather than a location.",
+          prompt: "Why were hair salons so heavily represented in Green Book cities?",
+          answer: "They were gathering places and a route to economic independence for Black women, and salon listings often outnumbered lodging and food listings in a city. Some also served the civil rights movement directly, driving clients to register or receiving NAACP mail.",
         },
         {
-          prompt: "Three sources give three different first-listing years for the Latimore Tourist Home. What do you do?",
-          answer: "Treat it as an open question and settle it in the digitized editions yourself. NPS says 1949, the Friends group says 1939, and it appears in the 1940 edition. Do not repeat any of the three without checking.",
+          prompt: "When you open a city's section, what should you look at besides the hotel?",
+          answer: "Which of the six needs are covered and which are missing. Beds without fuel, or fuel without beds, tells you what kind of stop that city could actually be.",
         },
       ],
     },
@@ -626,24 +608,20 @@ The publisher is telling you directly that the gaps in his book are partly a gap
 - New York Public Library. (n.d.). *Green Book research guide*. https://libguides.nypl.org/greenbook`,
       recallContent: [
         {
-          prompt: "What did the 1940 edition say a listing means?",
-          answer: "That it is a selection to choose from, and that under no circumstances do the listings imply the place is recommended. A listing meant 'will serve you', not 'is good'.",
+          prompt: "Name the four levels of the Green Book's listing hierarchy, outermost first.",
+          answer: "State, then city or town, then category (HOTELS, TOURIST HOMES, and so on), then the entry itself: a name, a dash, and an address.",
         },
         {
-          prompt: "What are the three states an establishment can be in, in a starred edition like 1956?",
-          answer: "Starred (recommended), listed without a star, and absent. The book explicitly warns that no star does not necessarily mean inferior.",
+          prompt: "Why does the category heading matter so much when you are working from a cropped image or a transcription?",
+          answer: "The entry usually does not say what kind of place it is. It is a tourist home only because it sits under the TOURIST HOMES heading. Lose the heading and you lose the meaning.",
         },
         {
-          prompt: "Why is a large, bold, illustrated entry not evidence that the business was better?",
-          answer: "Display space was paid advertising. Prominence on the page is a purchase, not a ranking.",
+          prompt: "What does a listing that reads 'Mrs. M. Jackson, Herman St.' tell you, and what does it not tell you?",
+          answer: "It tells you a woman ran it and it was probably her home, on Herman Street. It does not tell you the house number, so the address is a research lead rather than a location.",
         },
         {
-          prompt: "Green himself gave a reason that places were missing from his book. What was it?",
-          answer: "That thousands of first-class places would gladly have served travelers but he could not secure enough agents to send in the information. The gaps are partly gaps in his reporting network.",
-        },
-        {
-          prompt: "Which three questions must you be able to answer before publishing a claim taken from a listing?",
-          answer: "Which edition, which page, and whether you read it in the page image or in a machine transcription.",
+          prompt: "Three sources give three different first-listing years for the Latimore Tourist Home. What do you do?",
+          answer: "Treat it as an open question and settle it in the digitized editions yourself. NPS says 1949, the Friends group says 1939, and it appears in the 1940 edition. Do not repeat any of the three without checking.",
         },
       ],
     },
@@ -680,20 +658,24 @@ The publisher is telling you directly that the gaps in his book are partly a gap
 - National Park Service. (n.d.-b). *Green Book properties listed in the National Register of Historic Places*. https://www.nps.gov/articles/green-book-properties-listed-in-the-national-register-of-historic-places.htm`,
       recallContent: [
         {
-          prompt: "Which cities had the highest-volume Green Book listings, and where was the book actually most valuable?",
-          answer: "The highest volume was in New York, Detroit, Chicago, and Los Angeles. It was most valuable to travelers crossing smaller towns in rural areas across the South and the West, where a single listing could be the only option.",
+          prompt: "What did the 1940 edition say a listing means?",
+          answer: "That it is a selection to choose from, and that under no circumstances do the listings imply the place is recommended. A listing meant 'will serve you', not 'is good'.",
         },
         {
-          prompt: "Give two reasons a city section might be thin that have nothing to do with how many businesses served Black travelers.",
-          answer: "Nobody in that area sent listings in to Green, or the category you are looking for was cut editorially, most importantly in the 1956 narrowing to lodging and restaurants.",
+          prompt: "What are the three states an establishment can be in, in a starred edition like 1956?",
+          answer: "Starred (recommended), listed without a star, and absent. The book explicitly warns that no star does not necessarily mean inferior.",
         },
         {
-          prompt: "How do you test whether a thin section is a real absence or a reporting gap?",
-          answer: "Check independent sources for the same place and decade: census population by race, city directories, Black newspapers in the region, and state historic preservation office surveys. Business district in the other sources plus nothing in the guide means a reporting gap.",
+          prompt: "Why is a large, bold, illustrated entry not evidence that the business was better?",
+          answer: "Display space was paid advertising. Prominence on the page is a purchase, not a ranking.",
         },
         {
-          prompt: "What does the 1940 New Mexico section contain, and why is it a useful contrast with Tulsa?",
-          answer: "One entry in the whole state, a tourist home in Deming. Tulsa in the same edition has entries across nine categories, many on North Greenwood Avenue. Same book, same year, opposite meanings.",
+          prompt: "Green himself gave a reason that places were missing from his book. What was it?",
+          answer: "That thousands of first-class places would gladly have served travelers but he could not secure enough agents to send in the information. The gaps are partly gaps in his reporting network.",
+        },
+        {
+          prompt: "Which three questions must you be able to answer before publishing a claim taken from a listing?",
+          answer: "Which edition, which page, and whether you read it in the page image or in a machine transcription.",
         },
       ],
     },
@@ -928,20 +910,20 @@ Read the table twice. The eastern two thirds is a workable chain: you can plan a
 - National Park Service. (n.d.-d). *Route 66 and the historic Negro Motorist Green Book*. https://www.nps.gov/articles/000/route-66-and-the-historic-negro-motorist-green-book.htm`,
       recallContent: [
         {
-          prompt: "What are the first two steps of a route reconstruction, and why are they first?",
-          answer: "Fix the year and edition, then fix the road as it ran that year using a period map. 'In the Green Book' is not a claim, and highways were realigned constantly, so today's road is not always the 1940 road.",
+          prompt: "Which cities had the highest-volume Green Book listings, and where was the book actually most valuable?",
+          answer: "The highest volume was in New York, Detroit, Chicago, and Los Angeles. It was most valuable to travelers crossing smaller towns in rural areas across the South and the West, where a single listing could be the only option.",
         },
         {
-          prompt: "In the 1940 edition, where does the chain of Route 66 stops break, and for how far?",
-          answer: "It breaks after Amarillo, Texas. There is no listed stop on the corridor in New Mexico or Arizona, so the next listing going west is San Bernardino, California.",
+          prompt: "Give two reasons a city section might be thin that have nothing to do with how many businesses served Black travelers.",
+          answer: "Nobody in that area sent listings in to Green, or the category you are looking for was cut editorially, most importantly in the 1956 narrowing to lodging and restaurants.",
         },
         {
-          prompt: "Why is the 1940 New Mexico listing in Deming no help to a Route 66 driver?",
-          answer: "Deming is in the far south of the state, on the southern highways, nowhere near U.S. 66. A listing exists, but not on the road the driver is on.",
+          prompt: "How do you test whether a thin section is a real absence or a reporting gap?",
+          answer: "Check independent sources for the same place and decade: census population by race, city directories, Black newspapers in the region, and state historic preservation office surveys. Business district in the other sources plus nothing in the guide means a reporting gap.",
         },
         {
-          prompt: "What is the difference between 'a driver could not stop there' and 'the guide could not help them decide'?",
-          answer: "Only the second is supported by an absent listing. The book's silence is evidence about the book's coverage, not proof that every business on that stretch refused service.",
+          prompt: "What does the 1940 New Mexico section contain, and why is it a useful contrast with Tulsa?",
+          answer: "One entry in the whole state, a tourist home in Deming. Tulsa in the same edition has entries across nine categories, many on North Greenwood Avenue. Same book, same year, opposite meanings.",
         },
       ],
     },
@@ -981,20 +963,20 @@ The first sentence is a claim about the world that you have not proved. The seco
 - New York Public Library. (n.d.). *Green Book research guide*. https://libguides.nypl.org/greenbook`,
       recallContent: [
         {
-          prompt: "Name the three live explanations for a gap in the listings.",
-          answer: "Refusal (businesses would not serve Black travelers), absence (few businesses or few Black residents), and silence (businesses existed but nobody reported them to Green). A long gap usually contains all three at different points.",
+          prompt: "What are the first two steps of a route reconstruction, and why are they first?",
+          answer: "Fix the year and edition, then fix the road as it ran that year using a period map. 'In the Green Book' is not a claim, and highways were realigned constantly, so today's road is not always the 1940 road.",
         },
         {
-          prompt: "What is the cheapest test for a suspected gap, and why?",
-          answer: "Check a different edition, and a different guide. The editions are digitised and free at the Schomburg Center, and a town appearing in 1948 but not 1940 points at reporting rather than refusal.",
+          prompt: "In the 1940 edition, where does the chain of Route 66 stops break, and for how far?",
+          answer: "It breaks after Amarillo, Texas. There is no listed stop on the corridor in New Mexico or Arizona, so the next listing going west is San Bernardino, California.",
         },
         {
-          prompt: "How would you evidence the 'refusal' explanation for a specific stretch of road?",
-          answer: "With a positive record, not with the silence itself: a documented sundown town in that county, a local ordinance, a newspaper account, a lawsuit, or an oral history from a state preservation survey.",
+          prompt: "Why is the 1940 New Mexico listing in Deming no help to a Route 66 driver?",
+          answer: "Deming is in the far south of the state, on the southern highways, nowhere near U.S. 66. A listing exists, but not on the road the driver is on.",
         },
         {
-          prompt: "Rewrite 'Black travelers could not stop anywhere in Arizona on Route 66 in 1940' as a defensible claim.",
-          answer: "The 1940 edition lists no establishment on the U.S. 66 corridor in Arizona; its Arizona entries are in Nogales, Phoenix, and Tucson, all off the corridor. That is a claim about the book, which is what the evidence supports.",
+          prompt: "What is the difference between 'a driver could not stop there' and 'the guide could not help them decide'?",
+          answer: "Only the second is supported by an absent listing. The book's silence is evidence about the book's coverage, not proof that every business on that stretch refused service.",
         },
       ],
     },
@@ -1427,20 +1409,20 @@ Subsection (b) then defines a place of public accommodation, and the list reads 
 - New York Public Library. (n.d.). *Green Book research guide*. https://libguides.nypl.org/greenbook`,
       recallContent: [
         {
-          prompt: "Which part of the Civil Rights Act of 1964 ended legal segregation in hotels and restaurants, and what does it say?",
-          answer: "Title II, at 42 U.S.C. section 2000a. It entitles all persons to full and equal enjoyment of any place of public accommodation without discrimination on the ground of race, color, religion, or national origin.",
+          prompt: "Name the three live explanations for a gap in the listings.",
+          answer: "Refusal (businesses would not serve Black travelers), absence (few businesses or few Black residents), and silence (businesses existed but nobody reported them to Green). A long gap usually contains all three at different points.",
         },
         {
-          prompt: "Which lodging places did Title II NOT cover, and why is that ironic here?",
-          answer: "Buildings with not more than five rooms for rent that the proprietor actually occupies as a residence. That is a description of a tourist home, the category the Green Book leaned on hardest where hotels would not serve Black travelers.",
+          prompt: "What is the cheapest test for a suspected gap, and why?",
+          answer: "Check a different edition, and a different guide. The editions are digitised and free at the Schomburg Center, and a town appearing in 1948 but not 1940 points at reporting rather than refusal.",
         },
         {
-          prompt: "Why did desegregation hurt many of the businesses listed in the Green Book?",
-          answer: "It expanded choice for Black travelers and expanded the customer base for white-owned businesses at the same time, drawing business away from the Black-owned establishments the guide was built on.",
+          prompt: "How would you evidence the 'refusal' explanation for a specific stretch of road?",
+          answer: "With a positive record, not with the silence itself: a documented sundown town in that county, a local ordinance, a newspaper account, a lawsuit, or an oral history from a state preservation survey.",
         },
         {
-          prompt: "What two things does an honest account of 1964 have to hold at once?",
-          answer: "That Victor Green had wanted the guide to become unnecessary and said so in print in 1949, and that the change cost the businesses in his book real money.",
+          prompt: "Rewrite 'Black travelers could not stop anywhere in Arizona on Route 66 in 1940' as a defensible claim.",
+          answer: "The 1940 edition lists no establishment on the U.S. 66 corridor in Arizona; its Arizona entries are in Nogales, Phoenix, and Tucson, all off the corridor. That is a claim about the book, which is what the evidence supports.",
         },
       ],
     },
@@ -1477,20 +1459,20 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
 - National Park Service. (n.d.-d). *Route 66 and the historic Negro Motorist Green Book*. https://www.nps.gov/articles/000/route-66-and-the-historic-negro-motorist-green-book.htm`,
       recallContent: [
         {
-          prompt: "Name the three documented reasons Green Book places disappeared.",
-          answer: "The market shifted after the Civil Rights Act of 1964, governments took land through eminent domain for urban renewal and freeway projects, and the new interstates either cut through districts or bypassed them and took the traffic away.",
+          prompt: "Which part of the Civil Rights Act of 1964 ended legal segregation in hotels and restaurants, and what does it say?",
+          answer: "Title II, at 42 U.S.C. section 2000a. It entitles all persons to full and equal enjoyment of any place of public accommodation without discrimination on the ground of race, color, religion, or national origin.",
         },
         {
-          prompt: "Three survival figures circulate. Why do they not contradict each other?",
-          answer: "They count different things: businesses closing within ten years of 1964, sites still extant nationally today as an estimate, and sites still standing in Route 66 communities as of 2014. Different units, different dates, different scopes.",
+          prompt: "Which lodging places did Title II NOT cover, and why is that ironic here?",
+          answer: "Buildings with not more than five rooms for rent that the proprietor actually occupies as a residence. That is a description of a tourist home, the category the Green Book leaned on hardest where hotels would not serve Black travelers.",
         },
         {
-          prompt: "What does the National Park Service say about the number of Green Book businesses in razed neighborhoods?",
-          answer: "That the numbers are unknown. A federal agency writing about its own subject declines to put a figure on it, which is the standard to follow.",
+          prompt: "Why did desegregation hurt many of the businesses listed in the Green Book?",
+          answer: "It expanded choice for Black travelers and expanded the customer base for white-owned businesses at the same time, drawing business away from the Black-owned establishments the guide was built on.",
         },
         {
-          prompt: "What is the rule for stating a survival rate in your own work?",
-          answer: "Quote a figure with its owner, its date and its scope attached, or say the rate is contested and no complete national survey exists. Never average the published figures and never estimate your own.",
+          prompt: "What two things does an honest account of 1964 have to hold at once?",
+          answer: "That Victor Green had wanted the guide to become unnecessary and said so in print in 1949, and that the change cost the businesses in his book real money.",
         },
       ],
     },
@@ -1844,24 +1826,20 @@ A short, checkable report in which every sentence is either something you read i
 - New York Public Library. (n.d.). *Green Book research guide*. https://libguides.nypl.org/greenbook`,
       recallContent: [
         {
-          prompt: "Before you leave the digitized page, what five things do you record about your chosen listing?",
-          answer: "Edition year, page number, state, city, category heading, and the entry exactly as printed, plus whether you read the image or a transcription.",
+          prompt: "Name the three documented reasons Green Book places disappeared.",
+          answer: "The market shifted after the Civil Rights Act of 1964, governments took land through eminent domain for urban renewal and freeway projects, and the new interstates either cut through districts or bypassed them and took the traffic away.",
         },
         {
-          prompt: "Name three sources that can corroborate a listing independently of the Green Book.",
-          answer: "City directories, Sanborn fire insurance maps, the census, a Black newspaper from the region, a state historic preservation office survey, or a National Register nomination.",
+          prompt: "Three survival figures circulate. Why do they not contradict each other?",
+          answer: "They count different things: businesses closing within ten years of 1964, sites still extant nationally today as an estimate, and sites still standing in Route 66 communities as of 2014. Different units, different dates, different scopes.",
         },
         {
-          prompt: "Which step of the assignment is the most valuable, and why?",
-          answer: "Finding the decision trail behind the change: demolition permits, urban renewal files, right-of-way maps, council minutes, newspaper coverage. An empty lot with a documented decision behind it teaches more than a preserved building does.",
+          prompt: "What does the National Park Service say about the number of Green Book businesses in razed neighborhoods?",
+          answer: "That the numbers are unknown. A federal agency writing about its own subject declines to put a figure on it, which is the standard to follow.",
         },
         {
-          prompt: "Why can you not assume the modern address matches the historical one?",
-          answer: "Streets get renamed, cities annex and renumber, and numbering schemes change. Check the street name, the numbering, and the parcel record before claiming a location.",
-        },
-        {
-          prompt: "What is the rule about a tourist home you locate today?",
-          answer: "It was somebody's house and probably still is. Photograph from the public sidewalk, do not publish the current occupants' names, and do not knock unless invited.",
+          prompt: "What is the rule for stating a survival rate in your own work?",
+          answer: "Quote a figure with its owner, its date and its scope attached, or say the rate is contested and no complete national survey exists. Never average the published figures and never estimate your own.",
         },
       ],
     },
@@ -1893,16 +1871,24 @@ A short, checkable report in which every sentence is either something you read i
 - New York Public Library. (n.d.). *Green Book research guide*. https://libguides.nypl.org/greenbook`,
       recallContent: [
         {
-          prompt: "What is the difference between a claim about the book and a claim about the world?",
-          answer: "'The 1940 edition lists nothing on this corridor' is about the book and is supported by the book. 'Nobody could stop here' is about the world and needs other evidence. Write the first one.",
+          prompt: "Before you leave the digitized page, what five things do you record about your chosen listing?",
+          answer: "Edition year, page number, state, city, category heading, and the entry exactly as printed, plus whether you read the image or a transcription.",
         },
         {
-          prompt: "Why is a heat map of Green Book listings not a map of where the guide mattered?",
-          answer: "Density and usefulness run in opposite directions. The thickest sections are big cities where travelers already had options; a single listing on an empty stretch was worth far more.",
+          prompt: "Name three sources that can corroborate a listing independently of the Green Book.",
+          answer: "City directories, Sanborn fire insurance maps, the census, a Black newspaper from the region, a state historic preservation office survey, or a National Register nomination.",
         },
         {
-          prompt: "Why does this course refuse to give a single national survival statistic?",
-          answer: "Because no complete national survey exists. The published figures count different units, over different periods, across different scopes, and averaging them would manufacture a number nobody measured.",
+          prompt: "Which step of the assignment is the most valuable, and why?",
+          answer: "Finding the decision trail behind the change: demolition permits, urban renewal files, right-of-way maps, council minutes, newspaper coverage. An empty lot with a documented decision behind it teaches more than a preserved building does.",
+        },
+        {
+          prompt: "Why can you not assume the modern address matches the historical one?",
+          answer: "Streets get renamed, cities annex and renumber, and numbering schemes change. Check the street name, the numbering, and the parcel record before claiming a location.",
+        },
+        {
+          prompt: "What is the rule about a tourist home you locate today?",
+          answer: "It was somebody's house and probably still is. Photograph from the public sidewalk, do not publish the current occupants' names, and do not knock unless invited.",
         },
       ],
     },

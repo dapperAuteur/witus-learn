@@ -69,28 +69,6 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
 - Boundary Stones (WETA). (2022, July 21). *The cost of urban renewal in Southwest DC*. https://boundarystones.weta.org/2022/07/21/cost-urban-renewal-southwest-dc
 - WTTW. (n.d.). *Southwest Washington, DC*. https://www.wttw.com/ten/towns/southwest-washington-dc
 - Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26`,
-      recallContent: [
-        {
-          prompt: "Where is Southwest, geographically, and what was it originally?",
-          answer: "The smallest of Washington's four quadrants, a low flat wedge between the U.S. Capitol and the confluence of the Potomac and Anacostia rivers. It began as a working river port and grew into a dense mixed neighbourhood of row houses and alley dwellings.",
-        },
-        {
-          prompt: "What was the racial composition of Southwest in 1950, and roughly how many people lived there?",
-          answer: "African Americans were 69 percent of residents in 1950, and roughly 23,000 people lived in the area that was later cleared.",
-        },
-        {
-          prompt: "What phrase did James Baldwin give for what happened to neighbourhoods like Southwest?",
-          answer: "\"Negro removal,\" his national name for urban renewal.",
-        },
-        {
-          prompt: "Why does this course tell you to separate a measured housing condition from the language around it?",
-          answer: "Because the surveys measured real crowding and real plumbing shortages, but a measured condition is not a verdict on the people, and reformers had called the alleys a threat for fifty years before clearance. Read the surveys as evidence and the language as argument.",
-        },
-        {
-          prompt: "Which two courses are prerequisites to this one, and what did each establish?",
-          answer: "The Green Book: How to Read a Route taught the method. Indiana Avenue: A District and What Replaced It applied it and found the buildings went to a blight designation and land assembly, not the highway. This course reads the opinion that made that blight tool constitutionally safe.",
-        },
-      ],
     },
     {
       slug: "dc-the-surveys",
@@ -120,24 +98,24 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
 - WTTW. (n.d.). *Southwest Washington, DC*. https://www.wttw.com/ten/towns/southwest-washington-dc`,
       recallContent: [
         {
-          prompt: "What was an alley dwelling in Washington, and who tended to live in them?",
-          answer: "A small house built in the interior of a city block, behind the street-facing row houses and reached through a narrow passage. Many were occupied by African American families and, earlier, immigrants.",
+          prompt: "Where is Southwest, geographically, and what was it originally?",
+          answer: "The smallest of Washington's four quadrants, a low flat wedge between the U.S. Capitol and the confluence of the Potomac and Anacostia rivers. It began as a working river port and grew into a dense mixed neighbourhood of row houses and alley dwellings.",
         },
         {
-          prompt: "Give the survey figures the Berman opinion recited for the housing in the area.",
-          answer: "64.3 percent of dwellings beyond repair, 18.4 percent needing major repairs, 17.3 percent satisfactory; 57.8 percent with outside toilets, 60.3 percent with no baths, 29.3 percent lacking electricity, 82.2 percent with no wash basins or laundry tubs, 83.8 percent lacking central heating.",
+          prompt: "What was the racial composition of Southwest in 1950, and roughly how many people lived there?",
+          answer: "African Americans were 69 percent of residents in 1950, and roughly 23,000 people lived in the area that was later cleared.",
         },
         {
-          prompt: "What is the one thing every figure in that survey measures, and what does none of them measure?",
-          answer: "Every figure measures the building fabric: roof, plumbing, wiring. None measures the residents, the businesses, the churches, or whether the community worked.",
+          prompt: "What phrase did James Baldwin give for what happened to neighbourhoods like Southwest?",
+          answer: "\"Negro removal,\" his national name for urban renewal.",
         },
         {
-          prompt: "State the circularity at the centre of this course.",
-          answer: "A neighbourhood lacks plumbing and heating after decades of withheld investment, refused lending, and unenforced standards, much of it along the colour line. The condition is then used to justify clearing the people who suffered it. The condition and its cause are the same policy at two dates.",
+          prompt: "Why does this course tell you to separate a measured housing condition from the language around it?",
+          answer: "Because the surveys measured real crowding and real plumbing shortages, but a measured condition is not a verdict on the people, and reformers had called the alleys a threat for fifty years before clearance. Read the surveys as evidence and the language as argument.",
         },
         {
-          prompt: "Does a housing survey, by itself, decide that a neighbourhood should be demolished?",
-          answer: "No. The survey reports the condition of the buildings. Demolishing the neighbourhood and dispersing its people is a separate decision made by a body under a statute, which is the subject of Section 3. People make the decision and cite the numbers.",
+          prompt: "Which two courses are prerequisites to this one, and what did each establish?",
+          answer: "The Green Book: How to Read a Route taught the method. Indiana Avenue: A District and What Replaced It applied it and found the buildings went to a blight designation and land assembly, not the highway. This course reads the opinion that made that blight tool constitutionally safe.",
         },
       ],
     },
@@ -169,24 +147,24 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
 - WTTW. (n.d.). *Southwest Washington, DC*. https://www.wttw.com/ten/towns/southwest-washington-dc`,
       recallContent: [
         {
-          prompt: "What are the most cited figures for the scale of the Southwest clearance, and how should you treat them?",
-          answer: "About 99 percent of buildings on roughly 560 acres, displacing about 23,000 residents and 1,500 businesses. They are compiled figures repeated across local histories, not a single census tabulation, so name the source and say what each counts.",
+          prompt: "What was an alley dwelling in Washington, and who tended to live in them?",
+          answer: "A small house built in the interior of a city block, behind the street-facing row houses and reached through a narrow passage. Many were occupied by African American families and, earlier, immigrants.",
         },
         {
-          prompt: "What was Daniel Thursz's 1966 study, and who published it?",
-          answer: "Where Are They Now? A study of the impact of relocation on former residents of Southwest Washington, published by the Health and Welfare Council of the National Capital Area. It followed displaced families.",
+          prompt: "Give the survey figures the Berman opinion recited for the housing in the area.",
+          answer: "64.3 percent of dwellings beyond repair, 18.4 percent needing major repairs, 17.3 percent satisfactory; 57.8 percent with outside toilets, 60.3 percent with no baths, 29.3 percent lacking electricity, 82.2 percent with no wash basins or laundry tubs, 83.8 percent lacking central heating.",
         },
         {
-          prompt: "Summarise Thursz's findings on housing cost and employment.",
-          answer: "Housing quality generally rose, but 57 percent of surveyed residents paid more than in Southwest, most at least 20 dollars a month more. The share of household heads not working rose from 52 percent before to 62 percent after, partly because they lived farther from work.",
+          prompt: "What is the one thing every figure in that survey measures, and what does none of them measure?",
+          answer: "Every figure measures the building fabric: roof, plumbing, wiring. None measures the residents, the businesses, the churches, or whether the community worked.",
         },
         {
-          prompt: "Why is the Thursz study the honest heart of beat 1?",
-          answer: "Because renewal was sold as slum clearance for the benefit of slum residents, and Thursz measured the residents afterward: better plumbing bought at the price of higher rent, worse employment, and a scattered community. It is a measured outcome with an author and a date, not a lament or a defence.",
+          prompt: "State the circularity at the centre of this course.",
+          answer: "A neighbourhood lacks plumbing and heating after decades of withheld investment, refused lending, and unenforced standards, much of it along the colour line. The condition is then used to justify clearing the people who suffered it. The condition and its cause are the same policy at two dates.",
         },
         {
-          prompt: "What did Thursz say happened to the community as a whole?",
-          answer: "It was scattered \"as leaves on a windy autumn day,\" not resettled together but broken apart across the city, with residents generally moving to areas that would face increasing segregation and disinvestment.",
+          prompt: "Does a housing survey, by itself, decide that a neighbourhood should be demolished?",
+          answer: "No. The survey reports the condition of the buildings. Demolishing the neighbourhood and dispersing its people is a separate decision made by a body under a statute, which is the subject of Section 3. People make the decision and cite the numbers.",
         },
       ],
     },
@@ -398,24 +376,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - Berman v. Parker, 348 U.S. 26 (1954). https://www.law.cornell.edu/supremecourt/text/348/26`,
       recallContent: [
         {
-          prompt: "In Southwest, were clearance and new design done by the same act and body?",
-          answer: "No. Clearance ran under the District of Columbia Redevelopment Act of 1945 through the Redevelopment Land Agency and the National Capital Planning Commission. What was built afterward was a separate design question, decided through competing plans.",
+          prompt: "What are the most cited figures for the scale of the Southwest clearance, and how should you treat them?",
+          answer: "About 99 percent of buildings on roughly 560 acres, displacing about 23,000 residents and 1,500 businesses. They are compiled figures repeated across local histories, not a single census tabulation, so name the source and say what each counts.",
         },
         {
-          prompt: "Name the two competing plans for Southwest and their rough dates.",
-          answer: "An early plan by the architect Chloethiel Woodard Smith around 1952, and a competing 1954 plan by the developer William Zeckendorf with the architect I. M. Pei.",
+          prompt: "What was Daniel Thursz's 1966 study, and who published it?",
+          answer: "Where Are They Now? A study of the impact of relocation on former residents of Southwest Washington, published by the Health and Welfare Council of the National Capital Area. It followed displaced families.",
         },
         {
-          prompt: "What is a superblock, and why does this course call it a civics decision?",
-          answer: "A large parcel that pushes through-traffic to its edges and gives the interior to buildings, parking and landscaped courts. It replaces a public street grid, the most democratic thing a city owns, with private courts, changing who controls the space between buildings.",
+          prompt: "Summarise Thursz's findings on housing cost and employment.",
+          answer: "Housing quality generally rose, but 57 percent of surveyed residents paid more than in Southwest, most at least 20 dollars a month more. The share of household heads not working rose from 52 percent before to 62 percent after, partly because they lived farther from work.",
         },
         {
-          prompt: "What did replacing small lots with superblocks mean for who could build?",
-          answer: "Only parties who could afford to build at large scale, which is few owners rather than many. The coarse grain is a matter of who can afford it, a civics question in an architecture costume.",
+          prompt: "Why is the Thursz study the honest heart of beat 1?",
+          answer: "Because renewal was sold as slum clearance for the benefit of slum residents, and Thursz measured the residents afterward: better plumbing bought at the price of higher rent, worse employment, and a scattered community. It is a measured outcome with an author and a date, not a lament or a defence.",
         },
         {
-          prompt: "What postwar idea justified redesigning the whole area rather than repairing buildings, and where do you meet it again?",
-          answer: "The view that the old neighbourhood itself was the disease and only a cleared, rebuilt, rationally zoned district was the cure. The Supreme Court adopts almost the same reasoning in lesson 9.",
+          prompt: "What did Thursz say happened to the community as a whole?",
+          answer: "It was scattered \"as leaves on a windy autumn day,\" not resettled together but broken apart across the city, with residents generally moving to areas that would face increasing segregation and disinvestment.",
         },
       ],
     },
@@ -450,24 +428,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - The Cultural Landscape Foundation. (n.d.). *Chloethiel Woodard Smith*. https://www.tclf.org/chloethiel-woodard-smith`,
       recallContent: [
         {
-          prompt: "State the shared typology of the Southwest superblocks in one sentence.",
-          answer: "High-rise apartment slabs raised on pilotis mixed with clustered low row houses, arranged inside superblocks threaded by pedestrian paths and courts rather than by the old streets.",
+          prompt: "In Southwest, were clearance and new design done by the same act and body?",
+          answer: "No. Clearance ran under the District of Columbia Redevelopment Act of 1945 through the Redevelopment Land Agency and the National Capital Planning Commission. What was built afterward was a separate design question, decided through competing plans.",
         },
         {
-          prompt: "Which was the first completed superblock, who designed it, and when?",
-          answer: "Capitol Park, designed by Chloethiel Woodard Smith, built from 1957 to 1963.",
+          prompt: "Name the two competing plans for Southwest and their rough dates.",
+          answer: "An early plan by the architect Chloethiel Woodard Smith around 1952, and a competing 1954 plan by the developer William Zeckendorf with the architect I. M. Pei.",
         },
         {
-          prompt: "Name two projects by Chloethiel Woodard Smith in Southwest.",
-          answer: "Capitol Park and Harbour Square.",
+          prompt: "What is a superblock, and why does this course call it a civics decision?",
+          answer: "A large parcel that pushes through-traffic to its edges and gives the interior to buildings, parking and landscaped courts. It replaces a public street grid, the most democratic thing a city owns, with private courts, changing who controls the space between buildings.",
         },
         {
-          prompt: "Why does this course say the landscape between the buildings is the point, not decoration?",
-          answer: "Because in these superblocks the lawns, courts and plantings do the work the street used to do. The private landscaped court is what replaced the public alley and sidewalk, so the new Southwest is designed in exactly the places the old Southwest was public.",
+          prompt: "What did replacing small lots with superblocks mean for who could build?",
+          answer: "Only parties who could afford to build at large scale, which is few owners rather than many. The coarse grain is a matter of who can afford it, a civics question in an architecture costume.",
         },
         {
-          prompt: "How should architectural quality and the clearance decision be kept apart?",
-          answer: "Architectural quality is evidence about the buildings; the clearance is a separate question with separate evidence. A landmark is evidence about itself, so keep the two ledgers apart to tell the whole truth.",
+          prompt: "What postwar idea justified redesigning the whole area rather than repairing buildings, and where do you meet it again?",
+          answer: "The view that the old neighbourhood itself was the disease and only a cleared, rebuilt, rationally zoned district was the cure. The Supreme Court adopts almost the same reasoning in lesson 9.",
         },
       ],
     },
@@ -498,24 +476,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - Wheat Row. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Wheat_Row`,
       recallContent: [
         {
-          prompt: "Which eighteenth-century buildings were spared and folded into Harbour Square?",
-          answer: "Wheat Row (four attached houses at 1315 to 1321 Fourth Street S.W., built about 1794 and believed the first row houses in Washington), plus the Lewis House and Barney House. The nearby Thomas Law House was also spared.",
+          prompt: "State the shared typology of the Southwest superblocks in one sentence.",
+          answer: "High-rise apartment slabs raised on pilotis mixed with clustered low row houses, arranged inside superblocks threaded by pedestrian paths and courts rather than by the old streets.",
         },
         {
-          prompt: "Who originally built Wheat Row, and why does that matter to this lesson?",
-          answer: "The Greenleaf Syndicate, land speculators including Robert Morris, around 1794. It matters because the buildings preserved from a majority-Black working neighbourhood were the oldest, most genteel structures, tied to the city's white founders, not anything the displaced community built.",
+          prompt: "Which was the first completed superblock, who designed it, and when?",
+          answer: "Capitol Park, designed by Chloethiel Woodard Smith, built from 1957 to 1963.",
         },
         {
-          prompt: "How does what survived in Southwest differ from what survived on Indiana Avenue?",
-          answer: "On Indiana Avenue the survivor was the Walker Building, built by a Black-owned company as a monument to the community. In Southwest the survivors predated the displaced community and belonged to the founders' era. Both cities preserved something, but opposite things.",
+          prompt: "Name two projects by Chloethiel Woodard Smith in Southwest.",
+          answer: "Capitol Park and Harbour Square.",
         },
         {
-          prompt: "Which level of designation actually regulates demolition, federal or local?",
-          answer: "Local. National Register listing is recognition plus review leverage on federally funded or permitted work. A DC historic landmark or district, under DC's preservation law and review board, is what regulates exterior changes and demolition.",
+          prompt: "Why does this course say the landscape between the buildings is the point, not decoration?",
+          answer: "Because in these superblocks the lawns, courts and plantings do the work the street used to do. The private landscaped court is what replaced the public alley and sidewalk, so the new Southwest is designed in exactly the places the old Southwest was public.",
         },
         {
-          prompt: "When did DC's historic-preservation law take effect relative to the clearance, and what follows?",
-          answer: "DC's preservation law dates from 1978, after Southwest was cleared. So preservation arrived too late to protect what was cleared and in time only to protect what replaced it, which is why the modernist superblocks can carry landmark status while the old neighbourhood has none.",
+          prompt: "How should architectural quality and the clearance decision be kept apart?",
+          answer: "Architectural quality is evidence about the buildings; the clearance is a separate question with separate evidence. A landmark is evidence about itself, so keep the two ledgers apart to tell the whole truth.",
         },
       ],
     },
@@ -549,24 +527,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - Docomomo US. (n.d.). *The Southwest urban renewal area in Washington, D.C.* https://docomomo-us.org/news/the-southwest-urban-renewal-area-in-washington-d-c`,
       recallContent: [
         {
-          prompt: "Define an 'instrument' as this course uses the word.",
-          answer: "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. The last part is what makes it researchable.",
+          prompt: "Which eighteenth-century buildings were spared and folded into Harbour Square?",
+          answer: "Wheat Row (four attached houses at 1315 to 1321 Fourth Street S.W., built about 1794 and believed the first row houses in Washington), plus the Lewis House and Barney House. The nearby Thomas Law House was also spared.",
         },
         {
-          prompt: "What statute authorised clearing Southwest, and what body did it create?",
-          answer: "The District of Columbia Redevelopment Act of 1945 (60 Stat. 790, approved August 2, 1946), which created the Redevelopment Land Agency to acquire land under a comprehensive plan prepared by the National Capital Planning Commission.",
+          prompt: "Who originally built Wheat Row, and why does that matter to this lesson?",
+          answer: "The Greenleaf Syndicate, land speculators including Robert Morris, around 1794. It matters because the buildings preserved from a majority-Black working neighbourhood were the oldest, most genteel structures, tied to the city's white founders, not anything the displaced community built.",
         },
         {
-          prompt: "Why was the statute passed by Congress rather than a city council?",
-          answer: "Because the District had no home rule: in 1945 Washington had no elected mayor or council, and Congress legislated for the city directly. The people of Southwest had no vote in the legislature that authorised clearing their neighbourhood.",
+          prompt: "How does what survived in Southwest differ from what survived on Indiana Avenue?",
+          answer: "On Indiana Avenue the survivor was the Walker Building, built by a Black-owned company as a monument to the community. In Southwest the survivors predated the displaced community and belonged to the founders' era. Both cities preserved something, but opposite things.",
         },
         {
-          prompt: "When was Southwest's Area B plan approved, and what was its status among DC renewal areas?",
-          answer: "By the end of 1952. Southwest was the first area designated for renewal in the District.",
+          prompt: "Which level of designation actually regulates demolition, federal or local?",
+          answer: "Local. National Register listing is recognition plus review leverage on federally funded or permitted work. A DC historic landmark or district, under DC's preservation law and review board, is what regulates exterior changes and demolition.",
         },
         {
-          prompt: "Why is Southwest the pivot of this whole series rather than just another cleared district?",
-          answer: "Because a property owner in Area B sued, arguing the taking violated the Fifth Amendment, and the case went to the Supreme Court. Its answer made the blight-designation tool constitutionally safe to use in every city in the country.",
+          prompt: "When did DC's historic-preservation law take effect relative to the clearance, and what follows?",
+          answer: "DC's preservation law dates from 1978, after Southwest was cleared. So preservation arrived too late to protect what was cleared and in time only to protect what replaced it, which is why the modernist superblocks can carry landmark status while the old neighbourhood has none.",
         },
       ],
     },
@@ -600,24 +578,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - District of Columbia Redevelopment Act of 1945, 60 Stat. 790 (1946). https://www.law.cornell.edu/topn/district_of_columbia_redevelopment_act_of_1945`,
       recallContent: [
         {
-          prompt: "Who was the plaintiff in Berman v. Parker, and what was his property?",
-          answer: "Not a displaced resident. The appellants owned property at 712 Fourth Street, S.W., in Area B, which was not a dwelling; a department store stood on it. Their argument was that a non-slum property could not be taken to cure a slum.",
+          prompt: "Define an 'instrument' as this course uses the word.",
+          answer: "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document. The last part is what makes it researchable.",
         },
         {
-          prompt: "Quote the Court's core statement about the scope of public welfare.",
-          answer: "\"The concept of the public welfare is broad and inclusive... The values it represents are spiritual as well as physical, aesthetic as well as monetary,\" and it is within the legislature's power to decide the community should be beautiful as well as healthy.",
+          prompt: "What statute authorised clearing Southwest, and what body did it create?",
+          answer: "The District of Columbia Redevelopment Act of 1945 (60 Stat. 790, approved August 2, 1946), which created the Redevelopment Land Agency to acquire land under a comprehensive plan prepared by the National Capital Planning Commission.",
         },
         {
-          prompt: "What did the Court say about beauty and the Fifth Amendment?",
-          answer: "\"If those who govern the District of Columbia decide that the Nation's Capital should be beautiful as well as sanitary, there is nothing in the Fifth Amendment that stands in the way.\"",
+          prompt: "Why was the statute passed by Congress rather than a city council?",
+          answer: "Because the District had no home rule: in 1945 Washington had no elected mayor or council, and Congress legislated for the city directly. The people of Southwest had no vote in the legislature that authorised clearing their neighbourhood.",
         },
         {
-          prompt: "What was the actual holding that made the store owner lose?",
-          answer: "That redevelopment may treat an area as a whole and need not proceed piecemeal, so an owner cannot defeat an area-wide plan by pointing to his own lot; and that the cleared land may be conveyed to a private redeveloper, because the public end may be as well served through private enterprise.",
+          prompt: "When was Southwest's Area B plan approved, and what was its status among DC renewal areas?",
+          answer: "By the end of 1952. Southwest was the first area designated for renewal in the District.",
         },
         {
-          prompt: "Name two things Berman did NOT hold.",
-          answer: "It did not hold that 712 Fourth Street was itself a slum; it did not decide what anyone should be paid; and it did not rule on whether the plan was wise. It was also not brought by the displaced residents, but by a business.",
+          prompt: "Why is Southwest the pivot of this whole series rather than just another cleared district?",
+          answer: "Because a property owner in Area B sued, arguing the taking violated the Fifth Amendment, and the case went to the Supreme Court. Its answer made the blight-designation tool constitutionally safe to use in every city in the country.",
         },
       ],
     },
@@ -648,24 +626,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - Thursz, D. (1966). *Where are they now? A study of the impact of relocation on former residents of southwest Washington*. Health and Welfare Council of the National Capital Area.`,
       recallContent: [
         {
-          prompt: "What does the Fifth Amendment require when property is taken?",
-          answer: "That private property not be taken for public use without just compensation. In the District the Fifth applies directly because the District is federal ground.",
+          prompt: "Who was the plaintiff in Berman v. Parker, and what was his property?",
+          answer: "Not a displaced resident. The appellants owned property at 712 Fourth Street, S.W., in Area B, which was not a dwelling; a department store stood on it. Their argument was that a non-slum property could not be taken to cure a slum.",
         },
         {
-          prompt: "In a condemnation case, what is normally in dispute?",
-          answer: "The price, not whether the taking happens. Refusing an offer leads to a court setting compensation rather than stopping the project.",
+          prompt: "Quote the Court's core statement about the scope of public welfare.",
+          answer: "\"The concept of the public welfare is broad and inclusive... The values it represents are spiritual as well as physical, aesthetic as well as monetary,\" and it is within the legislature's power to decide the community should be beautiful as well as healthy.",
         },
         {
-          prompt: "How did Berman change the rule about conveying condemned land to a private developer?",
-          answer: "Before Berman it was arguable that handing condemned land to a private company was not a public use. Berman said the public end may be served as well through private enterprise, so public taking followed by private rebuilding became the doctrine of urban renewal, not an abuse of it.",
+          prompt: "What did the Court say about beauty and the Fifth Amendment?",
+          answer: "\"If those who govern the District of Columbia decide that the Nation's Capital should be beautiful as well as sanitary, there is nothing in the Fifth Amendment that stands in the way.\"",
         },
         {
-          prompt: "What did Berman NOT touch, and how does the Thursz study fill that blank?",
-          answer: "Berman decided the taking was lawful, not whether compensation made anyone whole. Thursz showed owners were paid for buildings but tenants, who were most of Southwest, owned nothing to be paid for, and their relocation did not preserve the community or hold housing costs down.",
+          prompt: "What was the actual holding that made the store owner lose?",
+          answer: "That redevelopment may treat an area as a whole and need not proceed piecemeal, so an owner cannot defeat an area-wide plan by pointing to his own lot; and that the cleared land may be conveyed to a private redeveloper, because the public end may be as well served through private enterprise.",
         },
         {
-          prompt: "Why does comparing a 1950s taking to a 1970s one require care?",
-          answer: "Because the Uniform Relocation Act of 1970 later raised relocation standards for federally funded projects, and most of the Southwest clearance predates it. The two takings happened under different legal regimes.",
+          prompt: "Name two things Berman did NOT hold.",
+          answer: "It did not hold that 712 Fourth Street was itself a slum; it did not decide what anyone should be paid; and it did not rule on whether the plan was wise. It was also not brought by the displaced residents, but by a business.",
         },
       ],
     },
@@ -707,24 +685,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - Hawaii Housing Authority v. Midkiff, 467 U.S. 229 (1984). https://www.law.cornell.edu/supremecourt/text/467/229`,
       recallContent: [
         {
-          prompt: "Name the three cases the Berman holding travelled through, and what each allowed.",
-          answer: "Midkiff (1984) upheld Hawaii forcing landowners to sell to tenants; Poletown (1981, Michigan) let Detroit condemn a neighbourhood for a GM plant; and Kelo (2005) allowed New London to take well-maintained, non-blighted homes for private economic development.",
+          prompt: "What does the Fifth Amendment require when property is taken?",
+          answer: "That private property not be taken for public use without just compensation. In the District the Fifth applies directly because the District is federal ground.",
         },
         {
-          prompt: "What was the significance of Kelo relative to Berman's origin?",
-          answer: "The tool that began as slum clearance in Southwest had travelled to taking sound, non-blighted houses for economic growth. Kelo cited Berman and Midkiff, and O'Connor's dissent warned the logic could replace any modest use with a fancier one.",
+          prompt: "In a condemnation case, what is normally in dispute?",
+          answer: "The price, not whether the taking happens. Refusing an offer leads to a court setting compensation rather than stopping the project.",
         },
         {
-          prompt: "Why does the simple claim that Berman caused Indiana Avenue's clearance fail?",
-          answer: "Because Indiana had its own 1945 state blight statute and had begun demolishing homes near the Avenue in 1948, six years before Berman was decided in November 1954. A cause cannot postdate effects already under way.",
+          prompt: "How did Berman change the rule about conveying condemned land to a private developer?",
+          answer: "Before Berman it was arguable that handing condemned land to a private company was not a public use. Berman said the public end may be served as well through private enterprise, so public taking followed by private rebuilding became the doctrine of urban renewal, not an abuse of it.",
         },
         {
-          prompt: "State the accurate, weaker version of the link between Berman and Indiana Avenue.",
-          answer: "Berman did not start the clearance; it resolved the constitutional public-use question nationwide, so the blight tool Indianapolis was already using could not be struck down on Fifth Amendment grounds. It guaranteed the machine could not be stopped by that argument.",
+          prompt: "What did Berman NOT touch, and how does the Thursz study fill that blank?",
+          answer: "Berman decided the taking was lawful, not whether compensation made anyone whole. Thursz showed owners were paid for buildings but tenants, who were most of Southwest, owned nothing to be paid for, and their relocation did not preserve the community or hold housing costs down.",
         },
         {
-          prompt: "What is the method lesson from testing this link?",
-          answer: "Build the chronology before the argument; a weaker claim that survives a date check beats a stronger one that fails it; and when a favourite thesis partly breaks, report the break, because that is the finding, not a failure.",
+          prompt: "Why does comparing a 1950s taking to a 1970s one require care?",
+          answer: "Because the Uniform Relocation Act of 1970 later raised relocation standards for federally funded projects, and most of the Southwest clearance predates it. The two takings happened under different legal regimes.",
         },
       ],
     },
@@ -754,24 +732,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - Federal Highway Administration. (n.d.). *The D.C. freeway revolt and the coming of Metro*. https://www.fhwa.dot.gov/highwayhistory/dcrevolt/`,
       recallContent: [
         {
-          prompt: "Why should DC not be filed simply as \"the city that beat the highways\"?",
-          answer: "Because the Southeast and Southwest Freeway was built through the cleared Southwest quadrant as part of the renewal itself. Southwest did not beat the highway; its freeway and its clearance were the same operation.",
+          prompt: "Name the three cases the Berman holding travelled through, and what each allowed.",
+          answer: "Midkiff (1984) upheld Hawaii forcing landowners to sell to tenants; Poletown (1981, Michigan) let Detroit condemn a neighbourhood for a GM plant; and Kelo (2005) allowed New London to take well-maintained, non-blighted homes for private economic development.",
         },
         {
-          prompt: "What was the ECTC, and who led it?",
-          answer: "The Emergency Committee on the Transportation Crisis, a grassroots coalition that fought DC's freeway plans in the 1960s and 1970s. Reginald Booker chaired it and Sammie Abbott was its strategist and spokesman.",
+          prompt: "What was the significance of Kelo relative to Berman's origin?",
+          answer: "The tool that began as slum clearance in Southwest had travelled to taking sound, non-blighted houses for economic growth. Kelo cited Berman and Midkiff, and O'Connor's dissent warned the logic could replace any modest use with a fancier one.",
         },
         {
-          prompt: "What phrase did Sammie Abbott's poster give the movement?",
-          answer: "\"White men's roads through black men's homes,\" which is also the title of Deborah Archer's later study of highways and racial equity.",
+          prompt: "Why does the simple claim that Berman caused Indiana Avenue's clearance fail?",
+          answer: "Because Indiana had its own 1945 state blight statute and had begun demolishing homes near the Avenue in 1948, six years before Berman was decided in November 1954. A cause cannot postdate effects already under way.",
         },
         {
-          prompt: "What did the freeway revolt actually win?",
-          answer: "It defeated the Three Sisters Bridge and most of the planned inner-city freeway network, shifted resources toward the Metro rail system, and helped move national transportation policy away from insisting on urban freeways.",
+          prompt: "State the accurate, weaker version of the link between Berman and Indiana Avenue.",
+          answer: "Berman did not start the clearance; it resolved the constitutional public-use question nationwide, so the blight tool Indianapolis was already using could not be struck down on Fifth Amendment grounds. It guaranteed the machine could not be stopped by that argument.",
         },
         {
-          prompt: "How should the victory be held honestly?",
-          answer: "The revolt saved Brookland, Takoma, Shaw and others from roads still being planned, but it did not save Southwest, whose freeway was already built. A win that arrives after your own block is gone is still a win for the next block.",
+          prompt: "What is the method lesson from testing this link?",
+          answer: "Build the chronology before the argument; a weaker claim that survives a date check beats a stronger one that fails it; and when a favourite thesis partly breaks, report the break, because that is the finding, not a failure.",
         },
       ],
     },
@@ -803,24 +781,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - Smithsonian Magazine. (2023). *How the 1973 D.C. Home Rule Act enabled the nation's capital to govern itself, with congressional oversight*. https://www.smithsonianmag.com/history/how-the-1973-dc-home-rule-act-enabled-the-nations-capital-to-govern-itself-with-congressional-oversight-180987180/`,
       recallContent: [
         {
-          prompt: "During the Southwest clearance, what representation did Washington residents have?",
-          answer: "Almost none. They had no elected mayor or city council, no vote in Congress which legislated for the District directly, and until the Twenty-third Amendment in 1961 they could not even vote for President.",
+          prompt: "Why should DC not be filed simply as \"the city that beat the highways\"?",
+          answer: "Because the Southeast and Southwest Freeway was built through the cleared Southwest quadrant as part of the renewal itself. Southwest did not beat the highway; its freeway and its clearance were the same operation.",
         },
         {
-          prompt: "What did the Twenty-third Amendment do, and when did DC residents first use it?",
-          answer: "Ratified in 1961, it gave District residents presidential electors for the first time, and they first voted for President in 1964.",
+          prompt: "What was the ECTC, and who led it?",
+          answer: "The Emergency Committee on the Transportation Crisis, a grassroots coalition that fought DC's freeway plans in the 1960s and 1970s. Reginald Booker chaired it and Sammie Abbott was its strategist and spokesman.",
         },
         {
-          prompt: "What did the 1973 Home Rule Act grant, and what did Congress keep?",
-          answer: "It restored an elected mayor and council, approved by DC voters in 1974. Congress kept the power to review and overturn the District's local laws and to intervene in its budget, and DC still has no voting representation in Congress, only a nonvoting House delegate since 1971.",
+          prompt: "What phrase did Sammie Abbott's poster give the movement?",
+          answer: "\"White men's roads through black men's homes,\" which is also the title of Deborah Archer's later study of highways and racial equity.",
         },
         {
-          prompt: "Why does the franchise belong in a course about a demolished neighbourhood?",
-          answer: "Because beat 5 asks who governs this ground, and for Washington the answer has a permanent asterisk: the ground is governed in the last instance by a Congress the governed cannot vote for, and the Zoning Commission still seats federal members by law.",
+          prompt: "What did the freeway revolt actually win?",
+          answer: "It defeated the Three Sisters Bridge and most of the planned inner-city freeway network, shifted resources toward the Metro rail system, and helped move national transportation policy away from insisting on urban freeways.",
         },
         {
-          prompt: "What is the honest, checkable claim about the franchise and the clearance, and what would be overclaiming?",
-          answer: "Checkable: the people of Southwest bore a clearance authorised by a legislature they had no vote in and had no ballot to answer it with. Overclaiming: that the lack of the franchise caused the clearance, since cities whose residents could vote cleared Black neighbourhoods too.",
+          prompt: "How should the victory be held honestly?",
+          answer: "The revolt saved Brookland, Takoma, Shaw and others from roads still being planned, but it did not save Southwest, whose freeway was already built. A win that arrives after your own block is gone is still a win for the next block.",
         },
       ],
     },
@@ -1225,24 +1203,24 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 - The Wharf. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/The_Wharf_(Washington,_D.C.)`,
       recallContent: [
         {
-          prompt: "What are the four questions to ask about any parcel's future, in order?",
-          answer: "What the comprehensive plan says it should become; what the zoning permits today; whether there is an area plan or live development and who approved it; and who decides, when they meet, and whether the agenda is public.",
+          prompt: "During the Southwest clearance, what representation did Washington residents have?",
+          answer: "Almost none. They had no elected mayor or city council, no vote in Congress which legislated for the District directly, and until the Twenty-third Amendment in 1961 they could not even vote for President.",
         },
         {
-          prompt: "What is unusual about the membership of the DC Zoning Commission, and why does it matter to this course?",
-          answer: "It has five members: three District residents appointed by the Mayor and confirmed by the Council, and two federal officials, the Architect of the Capitol and the Director of the National Park Service. The body that decides what may be built still seats members no District voter chose, echoing the absent franchise of Section 3.",
+          prompt: "What did the Twenty-third Amendment do, and when did DC residents first use it?",
+          answer: "Ratified in 1961, it gave District residents presidential electors for the first time, and they first voted for President in 1964.",
         },
         {
-          prompt: "How does The Wharf redevelopment repeat the Berman pattern?",
-          answer: "Public land assembled by a redevelopment agency and conveyed to a private developer (Hoffman-Madison Waterfront), rebuilt at large scale, with phases opening in 2017 and 2022. It is the public-taking-then-private-rebuilding design Berman blessed, running again in the same quadrant seventy years later.",
+          prompt: "What did the 1973 Home Rule Act grant, and what did Congress keep?",
+          answer: "It restored an elected mayor and council, approved by DC voters in 1974. Congress kept the power to review and overturn the District's local laws and to intervene in its budget, and DC still has no voting representation in Congress, only a nonvoting House delegate since 1971.",
         },
         {
-          prompt: "At the neighbourhood scale, what body governs Southwest, and how much power does it have?",
-          answer: "The Advisory Neighborhood Commission; Southwest is in Ward 6 and ANC 6D. Its recommendations are advisory, but agencies must give them great weight, and its public meetings are where a resident's leverage is highest and cost lowest.",
+          prompt: "Why does the franchise belong in a course about a demolished neighbourhood?",
+          answer: "Because beat 5 asks who governs this ground, and for Washington the answer has a permanent asterisk: the ground is governed in the last instance by a Congress the governed cannot vote for, and the Zoning Commission still seats federal members by law.",
         },
         {
-          prompt: "Why does this lesson tell you to re-check every date and body it gives?",
-          answer: "Because plans are amended, developers change, and contracts are extended, and in a city whose zoning still answers partly to Congress the answer to who governs this ground keeps moving. Re-checking is the method, not a disclaimer.",
+          prompt: "What is the honest, checkable claim about the franchise and the clearance, and what would be overclaiming?",
+          answer: "Checkable: the people of Southwest bore a clearance authorised by a legislature they had no vote in and had no ballot to answer it with. Overclaiming: that the lack of the franchise caused the clearance, since cities whose residents could vote cleared Black neighbourhoods too.",
         },
       ],
     },
@@ -1683,24 +1661,24 @@ A short, checkable piece in which every sentence is either something you read in
 - Thursz, D. (1966). *Where are they now? A study of the impact of relocation on former residents of southwest Washington*. Health and Welfare Council of the National Capital Area.`,
       recallContent: [
         {
-          prompt: "What is the actual product of this course?",
-          answer: "A second run of the six-beat site template, this time on the place where the central instrument was made constitutionally safe. Where Indiana Avenue taught the method, this course showed the document (Berman v. Parker) behind it.",
+          prompt: "What are the four questions to ask about any parcel's future, in order?",
+          answer: "What the comprehensive plan says it should become; what the zoning permits today; whether there is an area plan or live development and who approved it; and who decides, when they meet, and whether the agenda is public.",
         },
         {
-          prompt: "State precisely what Berman held and what it did not.",
-          answer: "It held that an area may be taken as a whole and conveyed to a private developer. It did not hold that any particular building was a slum, and it was brought by a department store owner, not a displaced family.",
+          prompt: "What is unusual about the membership of the DC Zoning Commission, and why does it matter to this course?",
+          answer: "It has five members: three District residents appointed by the Mayor and confirmed by the Council, and two federal officials, the Architect of the Capitol and the Director of the National Park Service. The body that decides what may be built still seats members no District voter chose, echoing the absent franchise of Section 3.",
         },
         {
-          prompt: "Why did this course use the Thursz cohort in aggregate rather than a single named displaced family?",
-          answer: "Because a real aggregate study beats a decorated individual story you cannot fully source. The Indiana Avenue course had a documented condemnation record for one family; for Southwest the honest material was the aggregate relocation study.",
+          prompt: "How does The Wharf redevelopment repeat the Berman pattern?",
+          answer: "Public land assembled by a redevelopment agency and conveyed to a private developer (Hoffman-Madison Waterfront), rebuilt at large scale, with phases opening in 2017 and 2022. It is the public-taking-then-private-rebuilding design Berman blessed, running again in the same quadrant seventy years later.",
         },
         {
-          prompt: "Name three unopened sources that would advance this story.",
-          answer: "The Redevelopment Land Agency project files and photographs in the People's Archive, the National Capital Planning Commission's Southwest plan documents, the HABS documentation of the renewal area, the full Berman trial record, and the ECTC papers.",
+          prompt: "At the neighbourhood scale, what body governs Southwest, and how much power does it have?",
+          answer: "The Advisory Neighborhood Commission; Southwest is in Ward 6 and ANC 6D. Its recommendations are advisory, but agencies must give them great weight, and its public meetings are where a resident's leverage is highest and cost lowest.",
         },
         {
-          prompt: "How does this course point to the rest of the metro-course series?",
-          answer: "It is the courthouse of the cluster. Pittsburgh is where the renewal playbook was written, Philadelphia is the university-land-assembly parallel to Indiana Avenue, Baltimore holds the whole instrument chain in one city, and Seattle is the later school-integration bookend.",
+          prompt: "Why does this lesson tell you to re-check every date and body it gives?",
+          answer: "Because plans are amended, developers change, and contracts are extended, and in a city whose zoning still answers partly to Congress the answer to who governs this ground keeps moving. Re-checking is the method, not a disclaimer.",
         },
       ],
     },

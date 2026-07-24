@@ -54,6 +54,11 @@ export const GREAT_MIGRATION_AND_THE_WORLD_COURSE: AuthoredCourse = {
 ## Sources
 - National Archives. (n.d.). *The Great Migration (1910–1970)*. https://www.archives.gov/research/african-americans/migrations/great-migration
 - Wilkerson, I. (2010). *The warmth of other suns: The epic story of America's great migration*. Random House.`,
+    },
+    {
+      slug: "gmw-waves-and-streams",
+      title: "2 · Two waves and three streams",
+      section: "Section 1 · The shape of the Migration",
       recallContent: [
         {
           prompt: "About how many Black Americans left the South during the Great Migration, and over roughly what span of years?",
@@ -64,11 +69,6 @@ export const GREAT_MIGRATION_AND_THE_WORLD_COURSE: AuthoredCourse = {
           answer: "About 90% at the start of the twentieth century; about 52% by 1970 (National Archives).",
         },
       ],
-    },
-    {
-      slug: "gmw-waves-and-streams",
-      title: "2 · Two waves and three streams",
-      section: "Section 1 · The shape of the Migration",
       body: `The Great Migration was not one smooth flow. Historians usually split it into **two waves**, and geographers trace **three streams**. Getting these straight now will make the rest of the course click into place.
 
 **Two waves.**
@@ -262,6 +262,11 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
 - *Smith v. Allwright*, 321 U.S. 649 (1944).
 - Grossman, J. R. (1989). *Land of hope: Chicago, Black Southerners, and the Great Migration*. University of Chicago Press.
 - Wilkerson, I. (2010). *The warmth of other suns: The epic story of America's great migration*. Random House.`,
+    },
+    {
+      slug: "gmw-sharecropping",
+      title: "5 · Sharecropping and debt peonage: an economy built to trap",
+      section: "Section 2 · Why they left: the push",
       recallContent: [
         {
           prompt: "What 1896 Supreme Court case made 'separate but equal' constitutional?",
@@ -272,11 +277,6 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
           answer: "A rule barring Black voters from the Democratic primary (the only election that mattered in the one-party South). Struck down in Smith v. Allwright (1944).",
         },
       ],
-    },
-    {
-      slug: "gmw-sharecropping",
-      title: "5 · Sharecropping and debt peonage: an economy built to trap",
-      section: "Section 2 · Why they left: the push",
       body: `Jim Crow was the law. **Sharecropping** was the economy underneath it, and it was engineered so that hard work rarely led out of debt.
 
 **How the system worked.** After the Civil War, most Southern land stayed in the hands of white owners, while the people who worked it, many of them formerly enslaved and their descendants, had no land and no cash. The solution that emerged was sharecropping: a family farmed an owner's land in exchange for a share of the crop, usually about half. Because the family had no money to live on until harvest, they bought food, seed, tools, and clothing on credit from the landowner or a **furnishing merchant**, at marked-up prices and steep interest, against the crop they had not yet grown (Wilkerson, 2010).
@@ -314,16 +314,6 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
 - National Archives. (n.d.-b). *Racial violence and the Red Summer*. https://www.archives.gov/research/african-americans/wwi/red-summer
 - Britannica, T. Editors of Encyclopaedia. (n.d.-b). *Boll weevil*. In *Encyclopædia Britannica*. https://www.britannica.com/animal/boll-weevil
 - Marks, C. (1989). *Farewell—We're good and gone: The great Black migration*. Indiana University Press.`,
-      recallContent: [
-        {
-          prompt: "What did the 'Red Summer' of 1919 show about the North?",
-          answer: "That anti-Black mob violence was national, not only Southern. White mobs attacked Black communities in dozens of cities (38 died in Chicago; the Elaine, Arkansas massacre was the worst). The North was a destination, not a promised land.",
-        },
-        {
-          prompt: "Roughly how many racial terror lynchings has the Equal Justice Initiative documented, and over what years?",
-          answer: "More than 4,400 of Black Americans between 1877 and 1950 (an undercount; counts vary between projects).",
-        },
-      ],
     },
     {
       slug: "gmw-quiz-push",
@@ -517,6 +507,21 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
 - National Archives. (n.d.). *The Great Migration (1910–1970)*. https://www.archives.gov/research/african-americans/migrations/great-migration`,
       recallContent: [
         {
+          prompt: "What did the 'Red Summer' of 1919 show about the North?",
+          answer: "That anti-Black mob violence was national, not only Southern. White mobs attacked Black communities in dozens of cities (38 died in Chicago; the Elaine, Arkansas massacre was the worst). The North was a destination, not a promised land.",
+        },
+        {
+          prompt: "Roughly how many racial terror lynchings has the Equal Justice Initiative documented, and over what years?",
+          answer: "More than 4,400 of Black Americans between 1877 and 1950 (an undercount; counts vary between projects).",
+        },
+      ],
+    },
+    {
+      slug: "gmw-defender-and-kin",
+      title: "9 · The Chicago Defender and the kinship chain",
+      section: "Section 3 · Why they left: the pull",
+      recallContent: [
+        {
           prompt: "How did World War I open the door to Northern factory jobs for Black Southerners?",
           answer: "It cut off European immigrant labor and drafted millions of men, creating a labor shortage. Northern industry recruited Black Southern workers for the first time, at a cash wage several times higher than Southern farm labor.",
         },
@@ -525,11 +530,6 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
           answer: "That it was actively recruited and 'orchestrated in the board rooms of northern industrial enterprises,' not just a spontaneous drift of rural people north.",
         },
       ],
-    },
-    {
-      slug: "gmw-defender-and-kin",
-      title: "9 · The Chicago Defender and the kinship chain",
-      section: "Section 3 · Why they left: the pull",
       body: `Industry supplied the jobs. But how did a sharecropper in Mississippi even learn that those jobs existed, or find the nerve to go? Two forces did that work: a **newspaper** and a **network of relatives**.
 
 **The Chicago Defender was the loudest voice for leaving.** Founded in 1905 by **Robert Sengstacke Abbott**, the *Defender* became the most widely read Black newspaper in the country, and during World War I it campaigned openly for migration. It ran editorials, cartoons, and photographs praising Northern life, printed train schedules and Northern job listings, and even declared a **"Great Northern Drive"** for **May 15, 1917**, a symbolic day to leave (Grossman, 1989). Abbott's paper framed the move not as running away but as a bold claim on freedom and dignity.
@@ -757,6 +757,11 @@ Three people, three streams, three decades. Keep them in mind: the rest of the c
 
 ## Sources
 - Wilkerson, I. (2010). *The warmth of other suns: The epic story of America's great migration*. Random House.`,
+    },
+    {
+      slug: "gmw-cities",
+      title: "12 · The cities they poured into",
+      section: "Section 4 · The routes and the cities",
       recallContent: [
         {
           prompt: "Who are Wilkerson's three subjects, and which stream does each represent?",
@@ -767,11 +772,6 @@ Three people, three streams, three decades. Keep them in mind: the rest of the c
           answer: "That the Migration was not only sharecroppers. It also carried doctors, teachers, and skilled professionals who could not advance under Jim Crow.",
         },
       ],
-    },
-    {
-      slug: "gmw-cities",
-      title: "12 · The cities they poured into",
-      section: "Section 4 · The routes and the cities",
       body: `When the streams reached their Northern ends, they hit a handful of cities with tremendous force. The numbers are the story here, so read the table slowly.
 
 | City | Black population, 1910 | Black population, 1920 | Rough change |
@@ -813,16 +813,6 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
 - Kaiser Permanente. (n.d.). *The World War II Kaiser Richmond shipyard labor force*. https://about.kaiserpermanente.org/who-we-are/our-history/the-world-war-ii-kaiser-richmond-shipyard-labor-force
 - *Second Great Migration (African American)*. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Second_Great_Migration_(African_American)
 - *James v. Marinship Corp.* (California Supreme Court, 1944).`,
-      recallContent: [
-        {
-          prompt: "What drove the Second Great Migration to the West Coast, and by how much did San Francisco's Black population grow during the war?",
-          answer: "World War II shipbuilding (Henry Kaiser's yards in Richmond, Oakland, Portland, and Vancouver, WA). San Francisco's Black population grew from fewer than 5,000 before the war to about 32,000 by 1945.",
-        },
-        {
-          prompt: "How did the Boilermakers union treat Black shipyard workers, and what case challenged it?",
-          answer: "It forced them into separate, second-class 'auxiliary' locals that took their dues but denied full membership. James v. Marinship (1944) ruled against demanding dues while denying real membership.",
-        },
-      ],
     },
     {
       slug: "gmw-quiz-routes",
@@ -1010,12 +1000,12 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
 - Museum of Modern Art. (n.d.). *Jacob Lawrence: The Migration Series*. https://www.moma.org/calendar/exhibitions/444`,
       recallContent: [
         {
-          prompt: "Who edited The New Negro (1925) and why does it matter?",
-          answer: "Alain Locke. The anthology became the manifesto of the Harlem Renaissance, gathering writers like Langston Hughes, Zora Neale Hurston, Claude McKay, and Countee Cullen.",
+          prompt: "What drove the Second Great Migration to the West Coast, and by how much did San Francisco's Black population grow during the war?",
+          answer: "World War II shipbuilding (Henry Kaiser's yards in Richmond, Oakland, Portland, and Vancouver, WA). San Francisco's Black population grew from fewer than 5,000 before the war to about 32,000 by 1945.",
         },
         {
-          prompt: "What is Jacob Lawrence's Migration Series, and why is it useful to a student?",
-          answer: "A 1941 set of 60 tempera panels telling the Migration's arc, painted by a son of migrants. It is a primary source about the Migration that you can actually look at (shared by MoMA and the Phillips Collection).",
+          prompt: "How did the Boilermakers union treat Black shipyard workers, and what case challenged it?",
+          answer: "It forced them into separate, second-class 'auxiliary' locals that took their dues but denied full membership. James v. Marinship (1944) ruled against demanding dues while denying real membership.",
         },
       ],
     },
@@ -1041,6 +1031,21 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
 - Detroit Historical Society. (n.d.). *Motown Records*. Encyclopedia of Detroit. https://detroithistorical.org/learn/encyclopedia-of-detroit/motown-records`,
       recallContent: [
         {
+          prompt: "Who edited The New Negro (1925) and why does it matter?",
+          answer: "Alain Locke. The anthology became the manifesto of the Harlem Renaissance, gathering writers like Langston Hughes, Zora Neale Hurston, Claude McKay, and Countee Cullen.",
+        },
+        {
+          prompt: "What is Jacob Lawrence's Migration Series, and why is it useful to a student?",
+          answer: "A 1941 set of 60 tempera panels telling the Migration's arc, painted by a son of migrants. It is a primary source about the Migration that you can actually look at (shared by MoMA and the Phillips Collection).",
+        },
+      ],
+    },
+    {
+      slug: "gmw-church-and-press",
+      title: "17 · The church, gospel, and the Black press",
+      section: "Section 5 · What they built: the culture",
+      recallContent: [
+        {
           prompt: "What did Muddy Waters do to the Delta blues when he reached Chicago, and why?",
           answer: "He amplified it, went electric, to be heard over noisy South Side clubs, creating Chicago blues (recorded on Chess Records), a direct ancestor of rock and roll.",
         },
@@ -1049,11 +1054,6 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
           answer: "Berry Gordy founded it in Detroit in 1959, and his own parents had migrated there from Sandersville, Georgia, in 1922. The label was built by a migrant family for an audience the Migration had gathered north.",
         },
       ],
-    },
-    {
-      slug: "gmw-church-and-press",
-      title: "17 · The church, gospel, and the Black press",
-      section: "Section 5 · What they built: the culture",
       body: `Music and art get the headlines, but two quieter institutions did the daily work of turning strangers into a community: the **church** and the **newspaper**.
 
 **The Black church was the first thing migrants rebuilt.** Newcomers who felt lost in a huge, cold city could find, in a storefront church, people who talked like them, cooked like them, and had come from the same Southern counties. Churches ran employment networks, mutual-aid funds, day care, and burial societies; they were social-service agency, town hall, and concert hall at once. As Section 6 will show, they were also the launch pad for Black political power.
@@ -1269,6 +1269,11 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
 - Executive Order 8802, 3 C.F.R. (1941).
 - National Archives. (n.d.-c). *Executive Order 9981: Desegregation of the Armed Forces (1948)*. https://www.archives.gov/milestone-documents/executive-order-9981
 - Salve Regina University. (n.d.). *How Blacks became Blue: The 1936 African American voting shift*. https://digitalcommons.salve.edu/pell_theses/77/`,
+    },
+    {
+      slug: "gmw-randolph-and-middle-class",
+      title: "20 · Randolph, the porters, and a rising middle class",
+      section: "Section 6 · What they built: political power",
       recallContent: [
         {
           prompt: "Why did moving north give Black Americans political power they lacked in the South?",
@@ -1279,11 +1284,6 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
           answer: "EO 8802 banned racial discrimination in the defense industries and created the Fair Employment Practice Committee. EO 9981 desegregated the armed forces. Both reflected the leverage of the growing Black urban vote and civil-rights pressure.",
         },
       ],
-    },
-    {
-      slug: "gmw-randolph-and-middle-class",
-      title: "20 · Randolph, the porters, and a rising middle class",
-      section: "Section 6 · What they built: political power",
       body: `Electoral power was one engine. **Organized labor and mass protest** were another, and one man sits at the center of both: **A. Philip Randolph**.
 
 **The Pullman porters organized.** The **Pullman porters** you met in Section 3 (the men who staffed the railroad sleeping cars and smuggled the Defender south) held some of the steadiest jobs open to Black men, but under demeaning conditions and low pay. In **1925**, Randolph organized them into the **Brotherhood of Sleeping Car Porters**, the first major Black-led labor union in the United States. After a long fight, it won recognition and a contract in **1937** (AFL-CIO, n.d.). This platform's *History of Unions* course tells that struggle, and the wider story of Black workers and the labor movement, in full.
@@ -1497,6 +1497,11 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
 
 ## Sources
 - Federal Reserve Bank of Chicago. (n.d.). *Revisiting how two federal housing agencies propagated redlining in the 1930s*. https://www.chicagofed.org/research/content-areas/mobility/policy-brief-federal-housing-programs-redlining`,
+    },
+    {
+      slug: "gmw-covenants-and-second-ghetto",
+      title: "23 · Covenants, Shelley, and the second ghetto",
+      section: "Section 7 · The costs",
       recallContent: [
         {
           prompt: "How did redlining block wealth-building for Black families?",
@@ -1507,11 +1512,6 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
           answer: "Scholars debate how much the maps caused versus reflected discrimination already standard among private lenders and the FHA. Redlining was a whole system; the FHA's underwriting rules may have mattered more than the maps.",
         },
       ],
-    },
-    {
-      slug: "gmw-covenants-and-second-ghetto",
-      title: "23 · Covenants, Shelley, and the second ghetto",
-      section: "Section 7 · The costs",
       body: `Redlining starved Black neighborhoods of credit. Two more tools kept Black families *inside* them: **private contracts** and, later, **public policy**.
 
 **Restrictive covenants were segregation written into the deed.** A racially **restrictive covenant** was a clause in a property's deed promising that the home would never be sold to or occupied by Black people (and often other groups). Whole white neighborhoods signed them block by block, building a private legal wall that no anti-discrimination law then touched. If a Black family bought in anyway, neighbors could sue to remove them, and courts would enforce the covenant.
@@ -1545,16 +1545,6 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
 ## Sources
 - Sugrue, T. J. (1996). *The origins of the urban crisis: Race and inequality in postwar Detroit*. Princeton University Press.
 - Federal Reserve Bank of Chicago. (n.d.). *Revisiting how two federal housing agencies propagated redlining in the 1930s*. https://www.chicagofed.org/research/content-areas/mobility/policy-brief-federal-housing-programs-redlining`,
-      recallContent: [
-        {
-          prompt: "Why does this course say 'white flight' was not simply private choice?",
-          answer: "Because it was subsidized by the same FHA-backed mortgages that redlining denied to Black families. Public policy financed white families' move to the suburbs while trapping Black families in the city and draining the urban tax base.",
-        },
-        {
-          prompt: "What did Thomas Sugrue argue about deindustrialization in Detroit?",
-          answer: "That it began in the 1950s (before the 1960s unrest), as employers moved plants to suburbs and overseas and automated. Combined with racial discrimination, it was a structural cause of the urban crisis, not a reaction to 1960s unrest.",
-        },
-      ],
     },
     {
       slug: "gmw-quiz-costs",
@@ -1766,6 +1756,21 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
 - *Rollin' Stone (Muddy Waters song)*. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Rollin%27_Stone_(Muddy_Waters_song)`,
       recallContent: [
         {
+          prompt: "Why does this course say 'white flight' was not simply private choice?",
+          answer: "Because it was subsidized by the same FHA-backed mortgages that redlining denied to Black families. Public policy financed white families' move to the suburbs while trapping Black families in the city and draining the urban tax base.",
+        },
+        {
+          prompt: "What did Thomas Sugrue argue about deindustrialization in Detroit?",
+          answer: "That it began in the 1950s (before the 1960s unrest), as employers moved plants to suburbs and overseas and automated. Combined with racial discrimination, it was a structural cause of the urban crisis, not a reaction to 1960s unrest.",
+        },
+      ],
+    },
+    {
+      slug: "gmw-internationalism-and-cold-war",
+      title: "27 · The moral argument goes global",
+      section: "Section 8 · And the world",
+      recallContent: [
+        {
           prompt: "How did jazz reach Paris, and why is 'negrophilia' an important caveat?",
           answer: "Jazz reached Paris via Black American army bands in World War I; some musicians stayed (La Revue Nègre, 1925, with Josephine Baker and Sidney Bechet). The caveat: French audiences often embraced Black performers as exotic and 'primitive' rather than simply as artists. The welcome was real, and so were its limits.",
         },
@@ -1774,11 +1779,6 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
           answer: "Muddy Waters' electric Chess records reached young British musicians, who built the British Invasion on them. The Rolling Stones took their name from Muddy's 1950 song 'Rollin' Stone.' Delta blues, carried north and electrified, went to London and back out to the world.",
         },
       ],
-    },
-    {
-      slug: "gmw-internationalism-and-cold-war",
-      title: "27 · The moral argument goes global",
-      section: "Section 8 · And the world",
       body: `Culture was one export. A **moral argument** was the other, and it may have mattered even more.
 
 **The Migration helped make Black politics international.** Concentrating millions of Black people, with their newspapers, universities, and organizations, in world cities like New York gave Black thinkers a platform that reached far beyond the United States. Harlem in particular became a hub of **Black internationalism** and **Pan-Africanism**, linking the struggle of Black Americans to anti-colonial movements across Africa and the Caribbean. (This platform's *Pan-Africanism*, *Afrocentricity*, and *Africa Before Colonization* courses follow that thread of ideas in depth; this lesson only shows where it connects to the Migration.)

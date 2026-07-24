@@ -101,18 +101,6 @@ One more thing this course promises you, stated here so you can hold it to accou
 - Caton-Thompson, G. (1931). *The Zimbabwe culture: Ruins and reactions*. Clarendon Press.
 - Levtzion, N., & Hopkins, J. F. P. (Eds.). (2000). *Corpus of early Arabic sources for West African history*. Markus Wiener. (Original work published 1981)
 - Fauvelle, F.-X. (2018). *The golden rhinoceros: Histories of the African Middle Ages* (T. L. Fagan, Trans.). Princeton University Press.`,
-      recallContent: [
-        {
-          prompt: "Quote or closely paraphrase the Hegel and Trevor-Roper claims this course opens with, with their dates.",
-          answer:
-            "Hegel (lectures from the 1820s, published 1837): Africa 'is no historical part of the World; it has no movement or development to exhibit.' Trevor-Roper (broadcast 1963, printed 1965): there is 'only the history of the Europeans in Africa. The rest is largely darkness... And darkness is not a subject for history.'",
-        },
-        {
-          prompt: "Why does this course open with the deniers' own words instead of a summary of them?",
-          answer:
-            "Because the claims are real and checkable, and quoting them prevents the course from arguing against a strawman. The rest of the course is the documented record that refutes the actual claim as actually made.",
-        },
-      ],
     },
     {
       slug: "africa-two-traps",
@@ -139,14 +127,14 @@ A note on how this course cites. Every teaching lesson ends with a Sources list 
 - Ehret, C. (2016). *The civilizations of Africa: A history to 1800* (2nd ed.). University of Virginia Press.`,
       recallContent: [
         {
-          prompt: "Name the two traps and give one concrete example of each.",
+          prompt: "Quote or closely paraphrase the Hegel and Trevor-Roper claims this course opens with, with their dates.",
           answer:
-            "Erasure: e.g. the Hamitic hypothesis (Seligman 1930), Great Zimbabwe credited to Phoenicians, Frobenius crediting Ife to Atlantis. Romance: e.g. a precise net-worth figure for Mansa Musa, a war-free and slavery-free golden age, every manuscript library upgraded to a 'university.'",
+            "Hegel (lectures from the 1820s, published 1837): Africa 'is no historical part of the World; it has no movement or development to exhibit.' Trevor-Roper (broadcast 1963, printed 1965): there is 'only the history of the Europeans in Africa. The rest is largely darkness... And darkness is not a subject for history.'",
         },
         {
-          prompt: "What is the anti-flattening rule, and what project is the landmark statement of the method?",
+          prompt: "Why does this course open with the deniers' own words instead of a summary of them?",
           answer:
-            "Never say 'Africa did X': name the region, the people, and the period for every claim. The landmark institutional statement is the UNESCO General History of Africa (launched 1964; 8 volumes, 1981-1993, written mostly by African scholars).",
+            "Because the claims are real and checkable, and quoting them prevents the course from arguing against a strawman. The rest of the course is the documented record that refutes the actual claim as actually made.",
         },
       ],
     },
@@ -384,14 +372,14 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
 - UNESCO World Heritage Centre. (2011). *Archaeological sites of the Island of Meroe* [Inscription record]. https://whc.unesco.org/en/list/1336/`,
       recallContent: [
         {
-          prompt: "The 25th Dynasty: who, when, and one primary document.",
+          prompt: "Name the two traps and give one concrete example of each.",
           answer:
-            "Kushite kings from Napata (in present-day Sudan) ruled Egypt c. 747-656 BCE. Piye's Victory Stela from Jebel Barkal (now in Cairo) records the conquest in the 720s BCE; Taharqa (r. 690-664 BCE) appears in the Hebrew Bible as 'Tirhakah king of Cush.'",
+            "Erasure: e.g. the Hamitic hypothesis (Seligman 1930), Great Zimbabwe credited to Phoenicians, Frobenius crediting Ife to Atlantis. Romance: e.g. a precise net-worth figure for Mansa Musa, a war-free and slavery-free golden age, every manuscript library upgraded to a 'university.'",
         },
         {
-          prompt: "What did Amanirenas's forces bury at Meroë, and why is it good evidence?",
+          prompt: "What is the anti-flattening rule, and what project is the landmark statement of the method?",
           answer:
-            "A bronze head of the emperor Augustus, hacked from a statue during raids on Roman Egypt in the 20s BCE, buried beneath temple steps at Meroë so worshippers walked over it. Found in 1910, now in the British Museum: physical, datable evidence of Kush fighting Rome to a settlement.",
+            "Never say 'Africa did X': name the region, the people, and the period for every claim. The landmark institutional statement is the UNESCO General History of Africa (launched 1964; 8 volumes, 1981-1993, written mostly by African scholars).",
         },
       ],
     },
@@ -421,14 +409,14 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
 - Phillipson, D. W. (2012). *Foundations of an African civilisation: Aksum and the northern Horn, 1000 BC-AD 1300*. James Currey.`,
       recallContent: [
         {
-          prompt: "Three independent kinds of evidence for Aksum, one specific example each.",
+          prompt: "The 25th Dynasty: who, when, and one primary document.",
           answer:
-            "Its own coins (gold coinage from c. 270 CE under Endubis; Ezana's mid-reign switch to the cross); its own monuments (the 33-meter Great Stele); foreign merchant accounts (the first-century Periplus of the Erythraean Sea describing the port of Adulis).",
+            "Kushite kings from Napata (in present-day Sudan) ruled Egypt c. 747-656 BCE. Piye's Victory Stela from Jebel Barkal (now in Cairo) records the conquest in the 720s BCE; Taharqa (r. 690-664 BCE) appears in the Hebrew Bible as 'Tirhakah king of Cush.'",
         },
         {
-          prompt: "What happened to the 24-meter Aksum stele in 1937 and 2005?",
+          prompt: "What did Amanirenas's forces bury at Meroë, and why is it good evidence?",
           answer:
-            "Looted to Rome on Mussolini's orders in 1937; returned by Italy in 2005 and re-erected at Aksum (a World Heritage site since 1980). It prefigures the Benin bronzes story: African historical evidence removed to Europe, and its contested return.",
+            "A bronze head of the emperor Augustus, hacked from a statue during raids on Roman Egypt in the 20s BCE, buried beneath temple steps at Meroë so worshippers walked over it. Found in 1910, now in the British Museum: physical, datable evidence of Kush fighting Rome to a settlement.",
         },
       ],
     },
@@ -657,14 +645,14 @@ One deliberate correction before the quiz: these three states were succession IN
 - Green, T. (2019). *A fistful of shells: West Africa from the rise of the slave trade to the age of revolution*. University of Chicago Press.`,
       recallContent: [
         {
-          prompt: "Three empires, three peoples, three (approximate) periods.",
+          prompt: "Three independent kinds of evidence for Aksum, one specific example each.",
           answer:
-            "Ghana/Wagadu: Soninke, documented from the eighth century, described by al-Bakri 1068, declining by the twelfth to thirteenth. Mali: Mande (Malinke), thirteenth to fifteenth centuries, founding dated traditionally to Sundiata c. 1235. Songhai: from Gao, dominant fifteenth to sixteenth centuries, destroyed at Tondibi 1591 by a Moroccan force with firearms.",
+            "Its own coins (gold coinage from c. 270 CE under Endubis; Ezana's mid-reign switch to the cross); its own monuments (the 33-meter Great Stele); foreign merchant accounts (the first-century Periplus of the Erythraean Sea describing the port of Adulis).",
         },
         {
-          prompt: "What is contested about the 'Almoravid sack of Ghana in 1076'?",
+          prompt: "What happened to the 24-meter Aksum stele in 1937 and 2005?",
           answer:
-            "The conquest claim comes from later Arabic historians; Conrad and Fisher (1982) argued the evidence for an actual sack is thin. Many specialists now describe Almoravid pressure and commercial reorientation instead. Older textbooks assert the sack as fact; this course does not.",
+            "Looted to Rome on Mussolini's orders in 1937; returned by Italy in 2005 and re-erected at Aksum (a World Heritage site since 1980). It prefigures the Benin bronzes story: African historical evidence removed to Europe, and its contested return.",
         },
       ],
     },
@@ -699,14 +687,14 @@ One deliberate correction before the quiz: these three states were succession IN
 - Hunwick, J. O. (1999). *Timbuktu and the Songhay Empire: Al-Sa'di's Ta'rikh al-Sudan down to 1613*. Brill.`,
       recallContent: [
         {
-          prompt: "What does al-Umari actually report about Mansa Musa's gold in Cairo, and via which scholarly translation does this course cite it?",
+          prompt: "Three empires, three peoples, three (approximate) periods.",
           answer:
-            "That Musa's 1324-25 spending drove the gold mithqal down from 25 dirhams to about 22, depressed for about twelve years; al-Umari gathered this in Cairo roughly a dozen years after the visit. Cited via Levtzion & Hopkins, Corpus of Early Arabic Sources for West African History.",
+            "Ghana/Wagadu: Soninke, documented from the eighth century, described by al-Bakri 1068, declining by the twelfth to thirteenth. Mali: Mande (Malinke), thirteenth to fifteenth centuries, founding dated traditionally to Sundiata c. 1235. Songhai: from Gao, dominant fifteenth to sixteenth centuries, destroyed at Tondibi 1591 by a Moroccan force with firearms.",
         },
         {
-          prompt: "Name the two hedges this course applies to the Mansa Musa story.",
+          prompt: "What is contested about the 'Almoravid sack of Ghana in 1076'?",
           answer:
-            "'Richest person ever' is refused as unquantifiable (no revenue or reserve data exists; the viral figure traces to a 2012 listicle). The 'crashed Egypt's economy' framing is labeled contested: Schultz (2006) showed the reported price swing is within normal Mamluk exchange-rate fluctuation.",
+            "The conquest claim comes from later Arabic historians; Conrad and Fisher (1982) argued the evidence for an actual sack is thin. Many specialists now describe Almoravid pressure and commercial reorientation instead. Older textbooks assert the sack as fact; this course does not.",
         },
       ],
     },
@@ -737,14 +725,14 @@ One deliberate correction before the quiz: these three states were succession IN
 - Gomez, M. A. (2018). *African dominion: A new history of empire in early and medieval West Africa*. Princeton University Press.`,
       recallContent: [
         {
-          prompt: "What did Leo Africanus report about Timbuktu's market around the 1510s?",
+          prompt: "What does al-Umari actually report about Mansa Musa's gold in Cairo, and via which scholarly translation does this course cite it?",
           answer:
-            "That books sold better than any other merchandise: the famous line documenting a mass book trade in a West African city, published in 1550.",
+            "That Musa's 1324-25 spending drove the gold mithqal down from 25 dirhams to about 22, depressed for about twelve years; al-Umari gathered this in Cairo roughly a dozen years after the visit. Cited via Levtzion & Hopkins, Corpus of Early Arabic Sources for West African History.",
         },
         {
-          prompt: "Why does Jenne-jeno matter so much to this course's argument?",
+          prompt: "Name the two hedges this course applies to the Mansa Musa story.",
           answer:
-            "The McIntosh excavations (from 1977) showed a settlement from c. 250 BCE growing into an urban cluster by the mid-first millennium CE, centuries before trans-Saharan Islamic trade: cities on the Niger were homegrown, not imported, which kills the claim that urbanism arrived with outsiders.",
+            "'Richest person ever' is refused as unquantifiable (no revenue or reserve data exists; the viral figure traces to a 2012 listicle). The 'crashed Egypt's economy' framing is labeled contested: Schultz (2006) showed the reported price swing is within normal Mamluk exchange-rate fluctuation.",
         },
       ],
     },
@@ -988,14 +976,14 @@ One deliberate correction before the quiz: these three states were succession IN
 - UNESCO World Heritage Centre. (n.d.). *Great Zimbabwe National Monument* [Inscription record, 1986]. https://whc.unesco.org/en/list/364/`,
       recallContent: [
         {
-          prompt: "Great Zimbabwe: who built it, when, and name two excavation finds that prove long-distance trade.",
+          prompt: "What did Leo Africanus report about Timbuktu's market around the 1510s?",
           answer:
-            "Ancestors of the Shona, c. 1100-1450 CE. Finds include Chinese celadon, Persian glazed ware, glass beads, and a coin from Kilwa on the Swahili coast: a landlocked city wired into Indian Ocean trade.",
+            "That books sold better than any other merchandise: the famous line documenting a mass book trade in a West African city, published in 1550.",
         },
         {
-          prompt: "The chain of denial and correction at Great Zimbabwe, with dates.",
+          prompt: "Why does Jenne-jeno matter so much to this course's argument?",
           answer:
-            "Mauch 1871 (Sheba/Ophir), Bent 1891 (Phoenician), Rhodesia Ancient Ruins Ltd. 1895 (commercial looting), Hall from 1902 (deposits destroyed); then Randall-MacIver 1905 (African, medieval) and Caton-Thompson 1929/1931 (settled). From 1970 Rhodesia censored official publications from stating the African origin as fact and forced out Inspector of Monuments Peter Garlake.",
+            "The McIntosh excavations (from 1977) showed a settlement from c. 250 BCE growing into an urban cluster by the mid-first millennium CE, centuries before trans-Saharan Islamic trade: cities on the Niger were homegrown, not imported, which kills the claim that urbanism arrived with outsiders.",
         },
       ],
     },
@@ -1023,14 +1011,14 @@ One deliberate correction before the quiz: these three states were succession IN
 - UNESCO World Heritage Centre. (n.d.). *Ruins of Kilwa Kisiwani and ruins of Songo Mnara* [Inscription record, 1981]. https://whc.unesco.org/en/list/144/`,
       recallContent: [
         {
-          prompt: "What did Ibn Battuta say about Kilwa in 1331, and why does the witness matter?",
+          prompt: "Great Zimbabwe: who built it, when, and name two excavation finds that prove long-distance trade.",
           answer:
-            "In the Gibb translation: 'one of the most beautiful and well-constructed towns in the world.' The witness was the most traveled person of his century, comparing Kilwa against Cairo, Damascus, and Constantinople firsthand.",
+            "Ancestors of the Shona, c. 1100-1450 CE. Finds include Chinese celadon, Persian glazed ware, glass beads, and a coin from Kilwa on the Swahili coast: a landlocked city wired into Indian Ocean trade.",
         },
         {
-          prompt: "How do the Great Zimbabwe and Swahili coast lessons form one economy?",
+          prompt: "The chain of denial and correction at Great Zimbabwe, with dates.",
           answer:
-            "Plateau gold moved from Great Zimbabwe's world to the coast at Sofala, whose trade Kilwa controlled; Kilwa's own copper coins have been found at Great Zimbabwe, and Chinese and Persian goods moved inland the other way.",
+            "Mauch 1871 (Sheba/Ophir), Bent 1891 (Phoenician), Rhodesia Ancient Ruins Ltd. 1895 (commercial looting), Hall from 1902 (deposits destroyed); then Randall-MacIver 1905 (African, medieval) and Caton-Thompson 1929/1931 (settled). From 1970 Rhodesia censored official publications from stating the African origin as fact and forced out Inspector of Monuments Peter Garlake.",
         },
       ],
     },
@@ -1059,14 +1047,14 @@ One deliberate correction before the quiz: these three states were succession IN
 - Hicks, D. (2020). *The brutish museums: The Benin Bronzes, colonial violence and cultural restitution*. Pluto Press.`,
       recallContent: [
         {
-          prompt: "Which kingdom made the Benin Bronzes, what are they materially, and what did the 2023 isotope study show?",
+          prompt: "What did Ibn Battuta say about Kilwa in 1331, and why does the witness matter?",
           answer:
-            "The Edo Kingdom of Benin (present-day southern Nigeria; not the modern Republic of Benin). Mostly leaded brass, lost-wax cast, including 900+ palace plaques of the 16th-17th centuries. Skowronek et al. (2023) traced much of the metal to Rhineland-made manilla trade rings.",
+            "In the Gibb translation: 'one of the most beautiful and well-constructed towns in the world.' The witness was the most traveled person of his century, comparing Kilwa against Cairo, Damascus, and Constantinople firsthand.",
         },
         {
-          prompt: "State the 1897 events and the course's hedged loot figures.",
+          prompt: "How do the Great Zimbabwe and Swahili coast lessons form one economy?",
           answer:
-            "January 1897: the Phillips party, proceeding against warnings, was ambushed and killed. February 1897: a British punitive expedition (~1,200 men) took and burned Benin City; Oba Ovonramwen was exiled to Calabar. Thousands of objects were looted (commonly estimated 3,000-5,000; no complete inventory), including ~900 plaques from a storehouse; the British Museum holds the largest collection (900+ objects).",
+            "Plateau gold moved from Great Zimbabwe's world to the coast at Sofala, whose trade Kilwa controlled; Kilwa's own copper coins have been found at Great Zimbabwe, and Chinese and Persian goods moved inland the other way.",
         },
       ],
     },
@@ -1094,14 +1082,14 @@ One deliberate correction before the quiz: these three states were succession IN
 - UNESCO World Heritage Centre. (n.d.). *Rock-hewn churches, Lalibela* [Inscription record, 1978]. https://whc.unesco.org/en/list/18/`,
       recallContent: [
         {
-          prompt: "What happened at Adwa, and what made it diplomatically different from other African victories?",
+          prompt: "Which kingdom made the Benin Bronzes, what are they materially, and what did the 2023 isotope study show?",
           answer:
-            "On 1 March 1896, Menelik II and Empress Taytu's army destroyed the invading Italian force. The Treaty of Addis Ababa (October 1896) made Italy recognize Ethiopia's full independence, and European powers opened embassies: a battlefield result converted into durable international standing.",
+            "The Edo Kingdom of Benin (present-day southern Nigeria; not the modern Republic of Benin). Mostly leaded brass, lost-wax cast, including 900+ palace plaques of the 16th-17th centuries. Skowronek et al. (2023) traced much of the metal to Rhineland-made manilla trade rings.",
         },
         {
-          prompt: "State the course's precise formulation of 'Ethiopia was never colonized.'",
+          prompt: "State the 1897 events and the course's hedged loot figures.",
           answer:
-            "Never colonized in the Scramble (Adwa 1896 secured recognized independence); invaded and brutally occupied by Fascist Italy 1936-41 (poison gas, the 1937 massacres), with sovereignty restored in 1941. The precise sentence survives scrutiny; the slogan without the asterisk does not.",
+            "January 1897: the Phillips party, proceeding against warnings, was ambushed and killed. February 1897: a British punitive expedition (~1,200 men) took and burned Benin City; Oba Ovonramwen was exiled to Calabar. Thousands of objects were looted (commonly estimated 3,000-5,000; no complete inventory), including ~900 plaques from a storehouse; the British Museum holds the largest collection (900+ objects).",
         },
       ],
     },
@@ -1349,14 +1337,14 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
 - Wright, J. (2007). *The trans-Saharan slave trade*. Routledge.`,
       recallContent: [
         {
-          prompt: "Give two documented, NAMED examples showing that 'African slavery' was not one thing.",
+          prompt: "What happened at Adwa, and what made it diplomatically different from other African victories?",
           answer:
-            "Absorptive household/lineage slavery in parts of West and Central Africa, where descendants could merge into the community ('wealth in people'), versus the nineteenth-century Sokoto Caliphate's large slave-worked estates and hereditary state slavery. Same continent, radically different institutions; neither to be romanticized.",
+            "On 1 March 1896, Menelik II and Empress Taytu's army destroyed the invading Italian force. The Treaty of Addis Ababa (October 1896) made Italy recognize Ethiopia's full independence, and European powers opened embassies: a battlefield result converted into durable international standing.",
         },
         {
-          prompt: "How does the course present numbers for the trans-Saharan trade?",
+          prompt: "State the course's precise formulation of 'Ethiopia was never colonized.'",
           answer:
-            "As modern reconstructions from thin evidence, not counts: Austen's 1979 'tentative census' (his own word) put it in the several millions over roughly twelve centuries, and all such figures carry wide error bars. Qualitatively undisputed: large, sustained, deadly in the crossing.",
+            "Never colonized in the Scramble (Adwa 1896 secured recognized independence); invaded and brutally occupied by Fascist Italy 1936-41 (poison gas, the 1937 massacres), with sovereignty restored in 1941. The precise sentence survives scrutiny; the slogan without the asterisk does not.",
         },
       ],
     },
@@ -1387,14 +1375,14 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
 - Nunn, N. (2008). The long-term effects of Africa's slave trades. *Quarterly Journal of Economics, 123*(1), 139-176.`,
       recallContent: [
         {
-          prompt: "The SlaveVoyages headline figures, and why they are firmer than the Saharan ones.",
+          prompt: "Give two documented, NAMED examples showing that 'African slavery' was not one thing.",
           answer:
-            "About 12.5 million embarked and about 10.7 million landed alive, 1501-1866 (nearly two million died at sea). They rest on tens of thousands of surviving individual voyage records, unlike the thin evidence behind Saharan reconstructions.",
+            "Absorptive household/lineage slavery in parts of West and Central Africa, where descendants could merge into the community ('wealth in people'), versus the nineteenth-century Sokoto Caliphate's large slave-worked estates and hereditary state slavery. Same continent, radically different institutions; neither to be romanticized.",
         },
         {
-          prompt: "What do Afonso I's 1526 letters document, and what does the course refuse to make of them?",
+          prompt: "How does the course present numbers for the trans-Saharan trade?",
           answer:
-            "The king of Kongo protesting to João III of Portugal that merchants were kidnapping and buying away his freeborn subjects, depopulating the country, and demanding controls: contemporary African criticism of the trade, from inside, in writing. The course refuses to dress him as a modern abolitionist; he objected to unlawful enslavement of his subjects, not to slavery as such.",
+            "As modern reconstructions from thin evidence, not counts: Austen's 1979 'tentative census' (his own word) put it in the several millions over roughly twelve centuries, and all such figures carry wide error bars. Qualitatively undisputed: large, sustained, deadly in the crossing.",
         },
       ],
     },
@@ -1638,14 +1626,14 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
 - UNESCO. (1981-1993). *General history of Africa* (Vol. I: Methodology and African prehistory, J. Ki-Zerbo, Ed.). UNESCO Publishing / Heinemann.`,
       recallContent: [
         {
-          prompt: "Name four Arabic-language sources for West Africa, each with its method and its catch.",
+          prompt: "The SlaveVoyages headline figures, and why they are firmer than the Saharan ones.",
           answer:
-            "Al-Fazari (8th c.): earliest mention of Ghana, but survives only as quotations in later writers. Al-Bakri (1068): administratively detailed but compiled secondhand in al-Andalus. Al-Umari (1330s): interviews in Cairo a dozen years after Musa's hajj. Ibn Battuta (1331/1352-53): eyewitness, but dictated years later to Ibn Juzayy, with debated legs.",
+            "About 12.5 million embarked and about 10.7 million landed alive, 1501-1866 (nearly two million died at sea). They rest on tens of thousands of surviving individual voyage records, unlike the thin evidence behind Saharan reconstructions.",
         },
         {
-          prompt: "Give three examples of the INSIDER African written record.",
+          prompt: "What do Afonso I's 1526 letters document, and what does the course refuse to make of them?",
           answer:
-            "The Ge'ez tradition (Aksumite inscriptions to the radiocarbon-dated Garima Gospels), the Timbuktu manuscripts and Tarikh al-Sudan, ajami writing of African languages in Arabic script, plus the Kilwa Chronicle (and Meroitic, still unread).",
+            "The king of Kongo protesting to João III of Portugal that merchants were kidnapping and buying away his freeborn subjects, depopulating the country, and demanding controls: contemporary African criticism of the trade, from inside, in writing. The course refuses to dress him as a modern abolitionist; he objected to unlawful enslavement of his subjects, not to slavery as such.",
         },
       ],
     },
@@ -1677,14 +1665,14 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
 - Niane, D. T. (1965). *Sundiata: An epic of old Mali* (G. D. Pickett, Trans.). Longman.`,
       recallContent: [
         {
-          prompt: "Why did radiocarbon dating matter SPECIFICALLY for the 'no documents, no history' argument?",
+          prompt: "Name four Arabic-language sources for West Africa, each with its method and its catch.",
           answer:
-            "It lets sites be dated without any documents at all, so history could be written wherever people left material traces: Jenne-jeno's pre-Islamic urbanism, Igbo-Ukwu's ninth-tenth-century bronzes, Great Zimbabwe's medieval dates. The premise 'history requires documents' dissolved.",
+            "Al-Fazari (8th c.): earliest mention of Ghana, but survives only as quotations in later writers. Al-Bakri (1068): administratively detailed but compiled secondhand in al-Andalus. Al-Umari (1330s): interviews in Cairo a dozen years after Musa's hajj. Ibn Battuta (1331/1352-53): eyewitness, but dictated years later to Ibn Juzayy, with debated legs.",
         },
         {
-          prompt: "Vansina's three named limits of oral tradition.",
+          prompt: "Give three examples of the INSIDER African written record.",
           answer:
-            "Telescoping (chronology compresses, middle generations drop), feedback (written accounts leak back into oral ones and pose as independent confirmation), and present function (performance bends content toward living patrons' needs).",
+            "The Ge'ez tradition (Aksumite inscriptions to the radiocarbon-dated Garima Gospels), the Timbuktu manuscripts and Tarikh al-Sudan, ajami writing of African languages in Arabic script, plus the Kilwa Chronicle (and Meroitic, still unread).",
         },
       ],
     },
@@ -1923,14 +1911,14 @@ And the correction was also work, and it is worth naming who did it. Decolonizat
 - Thornton, J. K. (1998). *Africa and Africans in the making of the Atlantic world, 1400-1800* (2nd ed.). Cambridge University Press.`,
       recallContent: [
         {
-          prompt: "Recite the five-part audit and its two guard rails.",
+          prompt: "Why did radiocarbon dating matter SPECIFICALLY for the 'no documents, no history' argument?",
           answer:
-            "Which people, which place, which century, which sources, and do independent lines converge? Guard rails: refuse erasure and refuse romance, because both replace evidence with need.",
+            "It lets sites be dated without any documents at all, so history could be written wherever people left material traces: Jenne-jeno's pre-Islamic urbanism, Igbo-Ukwu's ninth-tenth-century bronzes, Great Zimbabwe's medieval dates. The premise 'history requires documents' dissolved.",
         },
         {
-          prompt: "How does the course treat Cheikh Anta Diop?",
+          prompt: "Vansina's three named limits of oral tradition.",
           answer:
-            "By its usual standard: he forced open the question of ancient Egypt's African context a generation early, and the questions he forced are now normal science, while some of his specific claims remain contested and are labeled so.",
+            "Telescoping (chronology compresses, middle generations drop), feedback (written accounts leak back into oral ones and pose as independent confirmation), and present function (performance bends content toward living patrons' needs).",
         },
       ],
     },

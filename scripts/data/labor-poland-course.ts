@@ -76,18 +76,6 @@ Read those two rows again, because the distance between them is the strangest fa
 - European Solidarity Centre. (n.d.). *How did Solidarność (Solidarity) come to be?* https://ecs.gda.pl/en/how-did-solidarnosc-solidarity-come-to-be/
 - OECD/AIAS. (n.d.). *ICTWSS database — country note: Poland*. Organisation for Economic Co-operation and Development. https://www.oecd.org/content/dam/oecd/en/data/datasets/oecd-aias-ictwss/Poland.pdf
 - Statistics Poland (GUS). (n.d.). *Registered unemployment rate 1990–2025*. https://stat.gov.pl/en/topics/labour-market/registered-unemployment/unemployment-rate-1990-2025,3,1.html`,
-      recallContent: [
-        {
-          prompt: "What was Solidarność's approximate peak membership, and when?",
-          answer:
-            "About 10 million members at its peak in September 1981, roughly a third of Poland's population and around 80% of wage earners (European Solidarity Centre). The largest membership organisation the communist bloc ever produced.",
-        },
-        {
-          prompt: "What is Poland's trade union density today, and how does it rank in the EU?",
-          answer:
-            "About 9.4% (2022, OECD/AIAS ICTWSS), among the lowest in the European Union. A union that once enrolled a third of the country now organises fewer than one worker in ten.",
-        },
-      ],
     },
     {
       slug: "poland-four-questions",
@@ -121,14 +109,14 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
 - OECD/AIAS. (n.d.). *ICTWSS database — country note: Poland*. https://www.oecd.org/content/dam/oecd/en/data/datasets/oecd-aias-ictwss/Poland.pdf`,
       recallContent: [
         {
-          prompt: "What are the anchor course's four questions?",
+          prompt: "What was Solidarność's approximate peak membership, and when?",
           answer:
-            "(1) Who is allowed to organise? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try? Poland's answers to all four move violently between 1980 and today.",
+            "About 10 million members at its peak in September 1981, roughly a third of Poland's population and around 80% of wage earners (European Solidarity Centre). The largest membership organisation the communist bloc ever produced.",
         },
         {
-          prompt: "How does Poland answer Question 3 (level of bargaining) differently from Germany?",
+          prompt: "What is Poland's trade union density today, and how does it rank in the EU?",
           answer:
-            "Germany bargains for whole sectors above the firm, so coverage far exceeds membership. Poland bargains company by company, and a company agreement generally needs a union inside that firm first, so coverage tracks membership: low and falling. Sectoral bargaining has nearly disappeared.",
+            "About 9.4% (2022, OECD/AIAS ICTWSS), among the lowest in the European Union. A union that once enrolled a third of the country now organises fewer than one worker in ten.",
         },
       ],
     },
@@ -357,14 +345,14 @@ So the strikers of August 1980 were experienced, disciplined, and connected to a
 - U.S. Bureau of Labor Statistics. (1989, September). *How Poland's Solidarity won freedom of association*. Monthly Labor Review. https://www.bls.gov/opub/mlr/1989/09/art5full.pdf`,
       recallContent: [
         {
-          prompt: "What were the December 1970 and June 1976 events, and why do they matter for 1980?",
+          prompt: "What are the anchor course's four questions?",
           answer:
-            "Both were worker uprisings against government food-price rises, Baltic ports in 1970 (met with army gunfire, dozens killed) and Radom/Ursus in 1976 (price rise withdrawn, but participants beaten and sacked, giving rise to the KOR defence committee). They taught the 1980 strikers to stay inside the factory rather than march, and connected workers to dissident allies.",
+            "(1) Who is allowed to organise? (2) Who is excluded? (3) Who bargains with whom, and at what level? (4) What happens to you if you try? Poland's answers to all four move violently between 1980 and today.",
         },
         {
-          prompt: "Why did a 'workers' state' have no channel for worker grievances?",
+          prompt: "How does Poland answer Question 3 (level of bargaining) differently from Germany?",
           answer:
-            "Because the only legal unions belonged to the ruling Party and existed to transmit the Party's decisions downward, not to represent workers upward. Management, the union and the state were effectively the same body, so workers had no independent voice, which is exactly what Solidarność would demand.",
+            "Germany bargains for whole sectors above the firm, so coverage far exceeds membership. Poland bargains company by company, and a company agreement generally needs a union inside that firm first, so coverage tracks membership: low and falling. Sectoral bargaining has nearly disappeared.",
         },
       ],
     },
@@ -396,14 +384,14 @@ Only **after** that came the right to strike (demand 2), free speech (demand 3),
 - International Labour Organization. (n.d.). *Ratifications for Poland — C087 and C098*. NORMLEX. https://normlex.ilo.org/dyn/normlex/en/f?p=1000:11200:0::NO:11200:P11200_COUNTRY_ID:102809`,
       recallContent: [
         {
-          prompt: "What was the Inter-factory Strike Committee (MKS), and why was it revolutionary?",
+          prompt: "What were the December 1970 and June 1976 events, and why do they matter for 1980?",
           answer:
-            "The Międzyzakładowy Komitet Strajkowy, a committee formed by the Gdańsk shipyard strikers to bargain on behalf of hundreds of striking workplaces at once, instead of each settling separately. Refusing to settle alone, in solidarity across factories, is where the union got both its power and its name.",
+            "Both were worker uprisings against government food-price rises, Baltic ports in 1970 (met with army gunfire, dozens killed) and Radom/Ursus in 1976 (price rise withdrawn, but participants beaten and sacked, giving rise to the KOR defence committee). They taught the 1980 strikers to stay inside the factory rather than march, and connected workers to dissident allies.",
         },
         {
-          prompt: "Why did the 21 Demands cite ILO Convention No. 87, and what did that expose?",
+          prompt: "Why did a 'workers' state' have no channel for worker grievances?",
           answer:
-            "Because Poland had ratified Convention 87 (freedom of association) back in 1957 and then ignored it. The workers were not asking for a new right, they were demanding the government obey a treaty it had signed 23 years earlier. It exposed the gap between the paper floor and the real one.",
+            "Because the only legal unions belonged to the ruling Party and existed to transmit the Party's decisions downward, not to represent workers upward. Management, the union and the state were effectively the same body, so workers had no independent voice, which is exactly what Solidarność would demand.",
         },
       ],
     },
@@ -435,14 +423,14 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
 - Encyclopædia Britannica. (n.d.). *Solidarity (Polish trade union)*. https://www.britannica.com/topic/Solidarity`,
       recallContent: [
         {
-          prompt: "What did the Gdańsk Agreement (31 August 1980) concede, and why was it historic?",
+          prompt: "What was the Inter-factory Strike Committee (MKS), and why was it revolutionary?",
           answer:
-            "It conceded the right to form independent, self-governing trade unions, the first time any communist government in the Soviet bloc had allowed a union outside Party control. Signed by Lech Wałęsa and deputy PM Mieczysław Jagielski at the Lenin Shipyard.",
+            "The Międzyzakładowy Komitet Strajkowy, a committee formed by the Gdańsk shipyard strikers to bargain on behalf of hundreds of striking workplaces at once, instead of each settling separately. Refusing to settle alone, in solidarity across factories, is where the union got both its power and its name.",
         },
         {
-          prompt: "How was the 1980 registration fight resolved, and what was really at stake?",
+          prompt: "Why did the 21 Demands cite ILO Convention No. 87, and what did that expose?",
           answer:
-            "A Warsaw court tried to write the Party's 'leading role' into Solidarność's own statute; the union threatened a general strike; on 10 November 1980 the Supreme Court removed the clause from the statute and put the reference in a mere appendix quoting the Gdańsk Agreement. At stake was whether the union would be genuinely independent or a Party body in law.",
+            "Because Poland had ratified Convention 87 (freedom of association) back in 1957 and then ignored it. The workers were not asking for a new right, they were demanding the government obey a treaty it had signed 23 years earlier. It exposed the gap between the paper floor and the real one.",
         },
       ],
     },
@@ -677,14 +665,14 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
 - Encyclopædia Britannica. (n.d.). *Solidarity (Polish trade union)*. https://www.britannica.com/topic/Solidarity`,
       recallContent: [
         {
-          prompt: "What made Solidarność, in 1980-81, 'more than a union'?",
+          prompt: "What did the Gdańsk Agreement (31 August 1980) concede, and why was it historic?",
           answer:
-            "With ~10 million members it became a parallel society, running independent presses and bulletins, debating openly, and electing its leaders democratically inside a one-party state. The 'carnival of Solidarity' was a burst of free self-organisation Poles had not known in their adult lives.",
+            "It conceded the right to form independent, self-governing trade unions, the first time any communist government in the Soviet bloc had allowed a union outside Party control. Signed by Lech Wałęsa and deputy PM Mieczysław Jagielski at the Lenin Shipyard.",
         },
         {
-          prompt: "What three pressures built during 1981?",
+          prompt: "How was the 1980 registration fight resolved, and what was really at stake?",
           answer:
-            "(1) A collapsing, indebted economy with worsening shortages and rationing; (2) state provocations like the March 1981 Bydgoszcz beatings of activists; and (3) the constant threat of Soviet military intervention, as in Hungary 1956 and Czechoslovakia 1968.",
+            "A Warsaw court tried to write the Party's 'leading role' into Solidarność's own statute; the union threatened a general strike; on 10 November 1980 the Supreme Court removed the clause from the statute and put the reference in a mere appendix quoting the Gdańsk Agreement. At stake was whether the union would be genuinely independent or a Party body in law.",
         },
       ],
     },
@@ -714,14 +702,14 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
 - The Nobel Foundation. (n.d.). *Lech Wałęsa — Nobel Peace Prize 1983*. https://www.nobelprize.org/prizes/peace/1983/walesa/facts/`,
       recallContent: [
         {
-          prompt: "What happened at the Wujek coal mine on 16 December 1981?",
+          prompt: "What made Solidarność, in 1980-81, 'more than a union'?",
           answer:
-            "Three days into martial law, police and army units opened fire on striking miners occupying the pit, killing nine unarmed men and wounding many more. It is the sharpest answer to 'what happens to you if you try?' in the Wave-1 courses.",
+            "With ~10 million members it became a parallel society, running independent presses and bulletins, debating openly, and electing its leaders democratically inside a one-party state. The 'carnival of Solidarity' was a burst of free self-organisation Poles had not known in their adult lives.",
         },
         {
-          prompt: "Who imposed martial law, and how long was Solidarność banned?",
+          prompt: "What three pressures built during 1981?",
           answer:
-            "General Wojciech Jaruzelski, ruling through the Military Council of National Salvation (WRON), imposed it on 13 December 1981. Solidarność was outlawed by statute on 8 October 1982 and operated underground for roughly seven years until 1989.",
+            "(1) A collapsing, indebted economy with worsening shortages and rationing; (2) state provocations like the March 1981 Bydgoszcz beatings of activists; and (3) the constant threat of Soviet military intervention, as in Hungary 1956 and Czechoslovakia 1968.",
         },
       ],
     },
@@ -947,14 +935,14 @@ And that, precisely, is where its troubles began. Winning the country turned out
 - Chancellery of the President of the Republic of Poland. (n.d.). *1989 — Freedom Day*. https://www.president.pl/archives/bronislaw-komorowski/freedom-day/1989`,
       recallContent: [
         {
-          prompt: "What did the Round Table (6 Feb-5 Apr 1989) and the 4 June 1989 election produce?",
+          prompt: "What happened at the Wujek coal mine on 16 December 1981?",
           answer:
-            "The Round Table relegalised Solidarność and scheduled partly-free elections (35% of the Sejm contestable; the Senate fully free). On 4 June 1989 Solidarity won every contestable Sejm seat and 99 of 100 Senate seats, a landslide that became a referendum communism lost, leading to Mazowiecki as the bloc's first non-communist PM in August 1989.",
+            "Three days into martial law, police and army units opened fire on striking miners occupying the pit, killing nine unarmed men and wounding many more. It is the sharpest answer to 'what happens to you if you try?' in the Wave-1 courses.",
         },
         {
-          prompt: "In the vocabulary of the four questions, what did Poland 1989 resolve?",
+          prompt: "Who imposed martial law, and how long was Solidarność banned?",
           answer:
-            "Question 1, 'who may organise?', resolved at national scale. A trade union was the primary vehicle that negotiated a communist state out of power and formed the government that replaced it. No other course in the track shows a union as the engine of a national political revolution.",
+            "General Wojciech Jaruzelski, ruling through the Military Council of National Salvation (WRON), imposed it on 13 December 1981. Solidarność was outlawed by statute on 8 October 1982 and operated underground for roughly seven years until 1989.",
         },
       ],
     },
@@ -982,14 +970,14 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
 - Eurofound. (2002). *The dynamics of unemployment 1990–2002*. https://www.eurofound.europa.eu/en/resources/article/2002/dynamics-unemployment-1990-2002`,
       recallContent: [
         {
-          prompt: "What was the Balcerowicz Plan, and when did it take effect?",
+          prompt: "What did the Round Table (6 Feb-5 Apr 1989) and the 4 June 1989 election produce?",
           answer:
-            "The 'shock therapy' package (in force 1 January 1990) that freed prices, cut subsidies, tightened money, and opened Poland's economy to the market all at once. It broke hyperinflation and eventually restored growth, but caused a deep transitional recession.",
+            "The Round Table relegalised Solidarność and scheduled partly-free elections (35% of the Sejm contestable; the Senate fully free). On 4 June 1989 Solidarity won every contestable Sejm seat and 99 of 100 Senate seats, a landslide that became a referendum communism lost, leading to Mazowiecki as the bloc's first non-communist PM in August 1989.",
         },
         {
-          prompt: "How did shock therapy affect the workers who had built Solidarność, and what does that teach?",
+          prompt: "In the vocabulary of the four questions, what did Poland 1989 resolve?",
           answer:
-            "It fell hardest on the industrial workers of the state factories, mines and shipyards, as those enterprises shrank and closed; unemployment rose from an official zero to 16.4% by 1993 (GUS). The union's own government administered insecurity to its own base, teaching that winning the country and holding the workplace are different battles.",
+            "Question 1, 'who may organise?', resolved at national scale. A trade union was the primary vehicle that negotiated a communist state out of power and formed the government that replaced it. No other course in the track shows a union as the engine of a national political revolution.",
         },
       ],
     },
@@ -1228,14 +1216,14 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
 - European Trade Union Institute. (2025). *Poland: Collective bargaining and minimum wage regime*. https://www.etui.org/sites/default/files/2025-06/Poland_Collective%20bargaining%20and%20minimum%20wage%20regime_2025_0.pdf`,
       recallContent: [
         {
-          prompt: "Give Poland's union density, bargaining coverage, and employer-organisation density, with years and source.",
+          prompt: "What was the Balcerowicz Plan, and when did it take effect?",
           answer:
-            "Density 9.4% (2022), bargaining coverage 11.6% (2023), employer-organisation density 56.3% (2022), all OECD/AIAS ICTWSS. Coverage is barely above membership, unlike Germany where it is over three times membership.",
+            "The 'shock therapy' package (in force 1 January 1990) that freed prices, cut subsidies, tightened money, and opened Poland's economy to the market all at once. It broke hyperinflation and eventually restored growth, but caused a deep transitional recession.",
         },
         {
-          prompt: "Why is Polish coverage 'chained to' its low membership, when Germany's is not?",
+          prompt: "How did shock therapy affect the workers who had built Solidarność, and what does that teach?",
           answer:
-            "Poland bargains company by company (sectoral agreements have nearly vanished), and a company agreement generally needs a union inside that firm, but ~70% of workers are in SMEs too small to have one. Germany's sectoral bargaining, by contrast, binds whole industries through employer-association membership, so its coverage floats free of membership.",
+            "It fell hardest on the industrial workers of the state factories, mines and shipyards, as those enterprises shrank and closed; unemployment rose from an official zero to 16.4% by 1993 (GUS). The union's own government administered insecurity to its own base, teaching that winning the country and holding the workplace are different battles.",
         },
       ],
     },
@@ -1267,14 +1255,14 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
 - Encyclopædia Britannica. (n.d.). *Lech Wałęsa*. https://www.britannica.com/biography/Lech-Walesa`,
       recallContent: [
         {
-          prompt: "Name Poland's three nationally representative union confederations, and the irony about one of them.",
+          prompt: "Give Poland's union density, bargaining coverage, and employer-organisation density, with years and source.",
           answer:
-            "NSZZ 'Solidarność' (1980), OPZZ (the All-Poland Alliance of Trade Unions), and FZZ (Trade Unions Forum, 2002). The irony: OPZZ was created in 1984 by the communist regime as an official alternative after Solidarność was banned, and is now a legitimate independent confederation of its own.",
+            "Density 9.4% (2022), bargaining coverage 11.6% (2023), employer-organisation density 56.3% (2022), all OECD/AIAS ICTWSS. Coverage is barely above membership, unlike Germany where it is over three times membership.",
         },
         {
-          prompt: "How does the course handle Solidarność's contemporary politics and the Wałęsa dispute?",
+          prompt: "Why is Polish coverage 'chained to' its low membership, when Germany's is not?",
           answer:
-            "It states as dated fact that NSZZ 'Solidarność' has since the 1990s been aligned with the national-catholic right and backed PiS (e.g. Lech Kaczyński in 2005). On Wałęsa's contested 1970s security-service allegations, it names the dispute, notes he denies them, and declines to adjudicate, settled facts vs. still-argued meaning.",
+            "Poland bargains company by company (sectoral agreements have nearly vanished), and a company agreement generally needs a union inside that firm, but ~70% of workers are in SMEs too small to have one. Germany's sectoral bargaining, by contrast, binds whole industries through employer-association membership, so its coverage floats free of membership.",
         },
       ],
     },
@@ -1510,14 +1498,14 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
 - Notes from Poland. (2026, April 3). *Poland boosts labour inspector powers to curb precarious work*. https://notesfrompoland.com/2026/04/03/poland-boosts-labour-inspector-powers-to-curb-precarious-work/`,
       recallContent: [
         {
-          prompt: "What is a Polish 'junk contract' (umowa śmieciowa), and how does it dodge the Labour Code?",
+          prompt: "Name Poland's three nationally representative union confederations, and the irony about one of them.",
           answer:
-            "A civil-law contract (umowa zlecenie or umowa o dzieło, under the Civil Code) used to hire someone doing ordinary employee-like work, instead of an employment contract (umowa o pracę, under the Labour Code). Because labour protections and collective bargaining attach to 'employees,' the paper reclassification puts the worker outside paid leave, notice, full social security, labour courts, and bargaining.",
+            "NSZZ 'Solidarność' (1980), OPZZ (the All-Poland Alliance of Trade Unions), and FZZ (Trade Unions Forum, 2002). The irony: OPZZ was created in 1984 by the communist regime as an official alternative after Solidarność was banned, and is now a legitimate independent confederation of its own.",
         },
         {
-          prompt: "State the one structural move shared by Polish junk contracts, US misclassification, and Mexican protection contracts.",
+          prompt: "How does the course handle Solidarność's contemporary politics and the Wałęsa dispute?",
           answer:
-            "In all three, an employer uses a legal form to place a worker outside the category that carries the protections, a civil-law contract, an 'independent contractor' label, or a phantom-union agreement. The real question everywhere is not 'is there a protection?' but 'is this worker inside or outside the category the protection attaches to?'",
+            "It states as dated fact that NSZZ 'Solidarność' has since the 1990s been aligned with the national-catholic right and backed PiS (e.g. Lech Kaczyński in 2005). On Wałęsa's contested 1970s security-service allegations, it names the dispute, notes he denies them, and declines to adjudicate, settled facts vs. still-argued meaning.",
         },
       ],
     },
@@ -1553,14 +1541,14 @@ One last cross-link. This course was **history and structure**, *how did this ha
 - European Trade Union Institute. (2023). *Poland: Trade unions developing after a decline* (Chapter 22). https://www.etui.org/sites/default/files/2023-06/Chapter22_Poland_Trade%20unions%20developing%20after%20a%20decline_2023.pdf`,
       recallContent: [
         {
-          prompt: "Run the four questions on Poland today in one line each.",
+          prompt: "What is a Polish 'junk contract' (umowa śmieciowa), and how does it dodge the Labour Code?",
           answer:
-            "Q1 (who may organise?): everyone, yet density is only ~9%. Q2 (who is excluded?): workers on civil-law junk contracts. Q3 (who bargains, at what level?): company by company, so coverage ~12% is chained to membership. Q4 (what if you try?): an ordinary democratic answer now, versus martial law and Wujek in 1981.",
+            "A civil-law contract (umowa zlecenie or umowa o dzieło, under the Civil Code) used to hire someone doing ordinary employee-like work, instead of an employment contract (umowa o pracę, under the Labour Code). Because labour protections and collective bargaining attach to 'employees,' the paper reclassification puts the worker outside paid leave, notice, full social security, labour courts, and bargaining.",
         },
         {
-          prompt: "What single sentence captures Poland's place in the whole track?",
+          prompt: "State the one structural move shared by Polish junk contracts, US misclassification, and Mexican protection contracts.",
           answer:
-            "A movement can win the entire state and still, through the structures that come afterward, lose the workplace. No other country in the track shows a union as the engine of a national revolution, or the collapse of workplace power that followed.",
+            "In all three, an employer uses a legal form to place a worker outside the category that carries the protections, a civil-law contract, an 'independent contractor' label, or a phantom-union agreement. The real question everywhere is not 'is there a protection?' but 'is this worker inside or outside the category the protection attaches to?'",
         },
       ],
     },
