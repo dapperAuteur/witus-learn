@@ -244,7 +244,12 @@ One habit to build from day one: write the move *after* you play it, keep the sh
           },
           {
             prompt: "Where does the white queen start the game?",
-            options: ["d1, a light square, her own color", "e1", "d8", "Anywhere on the first rank"],
+            options: [
+              "d1, a light square, her own color",
+              "e1, one square to the queen's right",
+              "d8, mirroring Black's own queen",
+              "Anywhere along her own first rank",
+            ],
             correctIndex: 0,
             explanation:
               "Queens start on their own color: White's queen on d1 (light), Black's on d8 (dark). The king takes the remaining center square.",
@@ -253,9 +258,9 @@ One habit to build from day one: write the move *after* you play it, keep the sh
           {
             prompt: "What actually wins a game of chess?",
             options: [
-              "Capturing the enemy king",
+              "Capturing the enemy king, ending the game at once",
               "Checkmate, attacking the king so it has no legal escape",
-              "Capturing more pieces than your opponent",
+              "Capturing more total material than your opponent",
               "Reaching the far side of the board with your king",
             ],
             correctIndex: 1,
@@ -300,10 +305,10 @@ One habit to build from day one: write the move *after* you play it, keep the sh
           {
             prompt: "Are the familiar point values (queen 9, rook 5, pawn 1...) part of the FIDE Laws of Chess?",
             options: [
-              "Yes, Article 3 lists them",
-              "Yes, but only for tie-breaks",
-              "No, they're a coaching convention; the rulebook assigns no values",
-              "No, FIDE uses a different official scale",
+              "Yes, Article 3 lists them as Q9 R5 B3 N3 P1",
+              "Yes, but only for tie-breaks and adjudication",
+              "No, it's a coaching convention, not in the Laws",
+              "No, but FIDE's official scale ranks bishop over 3",
             ],
             correctIndex: 2,
             explanation:
@@ -315,7 +320,7 @@ One habit to build from day one: write the move *after* you play it, keep the sh
             options: [
               "Move the king to a safe square",
               "Block the check with another piece",
-              "Capture the checking piece",
+              "Capture the piece that gives the check",
               "Pass your turn and let the check stand",
             ],
             correctIndex: 3,
@@ -326,7 +331,7 @@ One habit to build from day one: write the move *after* you play it, keep the sh
           {
             prompt: "The player to move has NO legal move and their king is NOT in check. What is the result?",
             options: [
-              "They lose, they can't move",
+              "They lose the game, having no legal move",
               "They may pass and the opponent moves again",
               "The game is immediately drawn, stalemate",
               "The arbiter decides based on material",
@@ -339,10 +344,10 @@ One habit to build from day one: write the move *after* you play it, keep the sh
           {
             prompt: "King and bishop versus a lone king. What does the rulebook say about this game?",
             options: [
-              "The side with the bishop can win with perfect play",
-              "It's a 'dead position', drawn, because no series of legal moves can produce checkmate",
-              "It's a win after 50 more moves",
-              "The bishop's side wins on time if the other player's clock runs out",
+              "The bishop's side can force checkmate with perfect play",
+              "It's a 'dead position', an automatic draw with no legal mate",
+              "It's a win for the bishop's side by the fifty-move rule",
+              "The bishop's side wins on time if the clock runs out",
             ],
             correctIndex: 1,
             explanation:
@@ -353,8 +358,8 @@ One habit to build from day one: write the move *after* you play it, keep the sh
             prompt: "Which of these statements about castling is TRUE?",
             options: [
               "You can never castle if you've been in check at any point in the game",
-              "You can't castle if your rook passes through an attacked square",
-              "The attacked-square restrictions apply only to the king's squares, the rook's path can be attacked",
+              "You can't castle while your rook passes through an attacked square",
+              "Only the king's squares are restricted; the rook may pass through attack",
               "You may castle even after your king has moved, as long as it moved back",
             ],
             correctIndex: 2,
@@ -365,9 +370,9 @@ One habit to build from day one: write the move *after* you play it, keep the sh
           {
             prompt: "Your opponent's pawn advances two squares and lands directly beside your pawn. When may you capture it en passant?",
             options: [
-              "Any time before it promotes",
+              "Any time before that enemy pawn eventually promotes",
               "Only on the move immediately after the two-square advance",
-              "Only if your pawn hasn't moved yet",
+              "Only if your capturing pawn has not yet moved at all",
               "En passant isn't a legal capture in tournament play",
             ],
             correctIndex: 1,
@@ -378,10 +383,10 @@ One habit to build from day one: write the move *after* you play it, keep the sh
           {
             prompt: "A pawn reaches the far rank. Which of these is a legal choice?",
             options: [
-              "Keep it as a pawn",
-              "Promote it to a second queen, even though your first queen is still on the board",
-              "Promote it to an enemy-colored piece to block lines",
-              "Promote only to a piece you've already lost",
+              "Keep it as a pawn if you prefer to, and skip promoting",
+              "Promote to a second queen even with one already on the board",
+              "Promote it to an enemy-colored piece to block enemy lines",
+              "Promote only to a type of piece you have already lost",
             ],
             correctIndex: 1,
             explanation:
@@ -404,10 +409,10 @@ One habit to build from day one: write the move *after* you play it, keep the sh
           {
             prompt: "Why does keeping a scoresheet matter beyond habit?",
             options: [
-              "It's required in rated play (Art. 8.1), and draw claims like repetition and the fifty-move rule are verified against it",
-              "It adds rating points",
-              "It's optional but polite",
-              "Only the arbiter keeps score in rated games",
+              "Required in rated play; draw claims are verified from it",
+              "It directly adds bonus rating points to each game",
+              "It's entirely optional but considered good manners",
+              "Only the arbiter records the moves in rated games",
             ],
             correctIndex: 0,
             explanation:
@@ -588,8 +593,8 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
             prompt: "Who publishes the Laws of Chess used worldwide, and when did the current edition take effect?",
             options: [
               "FIDE, the current edition took effect 1 January 2023",
-              "Chess.com, updated continuously",
-              "Each country writes its own unrelated laws",
+              "Chess.com, updated continuously online year-round",
+              "Each country writes its own set of unrelated laws",
               "The reigning world champion approves each edition",
             ],
             correctIndex: 0,
@@ -613,9 +618,9 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "Why do the Laws of Chess give the arbiter explicit discretion?",
             options: [
-              "Because the preface admits the Laws can't cover every situation, so a trained human supplies fair judgment",
+              "Because the Laws' preface admits it can't cover every case",
               "Because arbiters outrank the FIDE General Assembly",
-              "Because most rules are unwritten traditions",
+              "Because most of the rules are unwritten traditions",
               "They don't, arbiters may only read the text aloud",
             ],
             correctIndex: 0,
@@ -626,10 +631,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "You deliberately touch your own bishop, intending to move it. It has three legal moves, all bad. What now?",
             options: [
-              "Say 'j'adoube' and put it back",
-              "You must move the bishop, Art. 4.3 gives no escape once a legal move exists",
+              "Say 'j'adoube' now and put the touched bishop back",
+              "You must move the bishop; Art. 4.3 gives no escape here",
               "You may move any piece if you haven't released the bishop",
-              "You lose the game immediately",
+              "You immediately lose the game under the touch rule",
             ],
             correctIndex: 1,
             explanation:
@@ -639,10 +644,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "What's the correct way to adjust a piece sitting crookedly on its square?",
             options: [
-              "Announce 'j'adoube' or 'I adjust' FIRST, then straighten it, on your move",
+              "Announce 'j'adoube' or 'I adjust' first, then straighten it",
               "Straighten it quickly and say 'adjust' if anyone objects",
-              "Ask the arbiter to straighten it; players may never touch pieces to adjust",
-              "Adjusting is forbidden once the game starts",
+              "Ask the arbiter to straighten it; players may not adjust",
+              "Adjusting pieces is forbidden once the game has started",
             ],
             correctIndex: 0,
             explanation:
@@ -652,10 +657,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "Intending to castle, you pick up your rook first, then reach for your king. What does Art. 4.4.2 say?",
             options: [
-              "Nothing, the order doesn't matter",
-              "You may not castle on that side this move; ordinary touch-move rules now apply",
+              "Nothing at all; the order of the two pieces doesn't matter",
+              "You may not castle that side this move; touch-move now applies",
               "You lose the right to castle for the rest of the game on both sides",
-              "The arbiter adds two minutes to your clock",
+              "The arbiter simply adds two minutes to the opponent's clock",
             ],
             correctIndex: 1,
             explanation:
@@ -665,10 +670,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "When is a non-capturing move 'made' final, the point of no return for that move?",
             options: [
-              "When you touch the piece",
+              "When you first touch the piece with intent",
               "When you release the piece on its new square",
-              "When you press the clock",
-              "When your opponent responds",
+              "When you finally press your clock button",
+              "When your opponent responds with a move",
             ],
             correctIndex: 1,
             explanation:
@@ -678,10 +683,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "In standard play, what happens after a player's SECOND completed illegal move?",
             options: [
-              "Two more minutes to the opponent",
-              "The arbiter declares the game lost by that player",
-              "The move stands if unnoticed",
-              "The game restarts from move one",
+              "Two more minutes added to the opponent's clock",
+              "The arbiter declares that player to have lost",
+              "The illegal move simply stands if unnoticed",
+              "The whole game restarts from move one again",
             ],
             correctIndex: 1,
             explanation:
@@ -691,10 +696,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "What's the lawful way to offer a draw?",
             options: [
-              "Any time, even on the opponent's move",
-              "After making your move on the board and before pressing your clock, no conditions attached",
-              "Only through the arbiter, in writing",
-              "Only after move 30",
+              "At any time, even on the opponent's move",
+              "After moving, before you press your clock",
+              "Only through the arbiter, always in writing",
+              "Only after move 30 has been reached",
             ],
             correctIndex: 1,
             explanation:
@@ -704,10 +709,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "For a threefold-repetition claim, which of these is required?",
             options: [
-              "The three repetitions must be on consecutive moves",
-              "The same MOVES must repeat three times",
-              "The same position with the same player to move and the same possible moves (castling/en passant rights included), occurrences need not be consecutive",
-              "The opponent must agree to the claim",
+              "The three repetitions must come on three consecutive moves",
+              "The same exact MOVES, not position, must repeat thrice",
+              "The same position, side to move, and rights, not just in a row",
+              "The opponent must formally agree to the repetition claim",
             ],
             correctIndex: 2,
             explanation:
@@ -717,10 +722,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "The fifty-move rule lets the player to move claim a draw when...",
             options: [
-              "...fifty moves have been played in total",
-              "...the last fifty consecutive moves by each player contain no pawn move and no capture",
-              "...one player has been ahead for fifty moves",
-              "...both clocks pass the fifty-minute mark",
+              "...fifty total moves have now been played overall",
+              "...the last fifty moves saw no pawn move or capture",
+              "...one player has been ahead for fifty full moves",
+              "...both clocks pass the fifty-minute time mark",
             ],
             correctIndex: 1,
             explanation:
@@ -732,8 +737,8 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
             options: [
               "Threefold repetition and the fifty-move rule",
               "Fivefold repetition and the seventy-five-move rule",
-              "Agreement and threefold repetition",
-              "All draws require a claim",
+              "Agreement and ordinary threefold repetition",
+              "Every draw type still requires an explicit claim",
             ],
             correctIndex: 1,
             explanation:
@@ -743,8 +748,8 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "Your opponent has only a bare king. YOUR flag falls. Result?",
             options: [
-              "You lose on time",
-              "Draw, a lone king cannot possibly checkmate, and the Laws never award an impossible win",
+              "You simply lose on time, flag down",
+              "Draw: a lone king can never checkmate you",
               "Your opponent chooses win or draw",
               "The game continues without clocks",
             ],
@@ -756,10 +761,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "Per the FIDE Laws' appendices, a game with 5 minutes per player plus a 3-second increment is...",
             options: [
-              "Rapid, the increment doesn't count",
-              "Blitz, base plus 60× increment is 10 minutes or less (5:00 + 3:00 = 8:00)",
-              "Classical, if the players agree",
-              "Bullet, which Appendix B defines",
+              "Rapid, since the increment doesn't count",
+              "Blitz: base + 60× increment, 10 min or less",
+              "Classical, if both players agree to it",
+              "Bullet, which FIDE Appendix B defines",
             ],
             correctIndex: 1,
             explanation:
@@ -769,10 +774,10 @@ Online platforms add **bullet** (under ~3 minutes, often 1), an internet-native 
           {
             prompt: "Which of these is a rule, not mere etiquette?",
             options: [
-              "Press the clock with the same hand that moved the piece (Art. 6.2.3)",
-              "Shake hands before the game",
-              "Announce 'check' aloud",
-              "Resign when down a queen",
+              "Press the clock with the same hand that moved",
+              "Always shake hands before the game starts",
+              "Always announce 'check' out loud each time",
+              "Always resign once you are down a whole queen",
             ],
             correctIndex: 0,
             explanation:
@@ -1007,9 +1012,9 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "Why is bringing the queen out early a bad habit rather than aggression?",
             options: [
-              "The queen can't capture in the opening",
-              "Enemy developing moves attack her, so the opponent builds an army for free while she runs",
-              "It's illegal before move 10",
+              "The queen simply can't capture during the opening",
+              "Enemy developing moves hit her, gaining time for free",
+              "It is actually illegal before move 10 arrives",
               "The queen is weaker in the opening than the endgame",
             ],
             correctIndex: 1,
@@ -1020,10 +1025,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "After 1. e4 e5 2. Nf3 Nc6 3. Bb5, which opening is on the board?",
             options: [
-              "The Ruy López, analyzed in a Spanish priest's 1561 treatise",
-              "The Italian Game",
-              "The Queen's Gambit",
-              "The Sicilian Defense",
+              "The Ruy López, from a Spanish priest's 1561 book",
+              "The Italian Game, from a 1497 Lucena text",
+              "The Queen's Gambit, a queenside d4 opening",
+              "The Sicilian Defense, Black's 1...c5 reply",
             ],
             correctIndex: 0,
             explanation:
@@ -1033,10 +1038,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "Why is the Queen's Gambit called chess's most famous FAKE gamble?",
             options: [
-              "Because it loses by force",
-              "Because the offered c-pawn is nearly always regainable, it's not a true sacrifice",
-              "Because the queen itself is sacrificed",
-              "Because it was invented for television",
+              "Because it simply loses the game outright by force",
+              "Because the offered c-pawn is nearly always regained",
+              "Because the queen herself is really sacrificed",
+              "Because it was actually invented for television",
             ],
             correctIndex: 1,
             explanation:
@@ -1046,10 +1051,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "On the conventional scale, trading your rook for the opponent's bishop is called...",
             options: [
-              "...winning the exchange",
+              "...winning the exchange, gaining 5 for 3",
               "...losing the exchange, giving 5 for 3",
-              "...an even trade",
-              "...a gambit",
+              "...an even and fair material trade",
+              "...a positional pawn gambit line",
             ],
             correctIndex: 1,
             explanation:
@@ -1059,10 +1064,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "What makes the knight the signature forking piece?",
             options: [
-              "It's the most valuable piece",
-              "Its jump attacks squares no other piece covers along the way, so its threats appear from nowhere",
+              "It is easily the most valuable minor piece",
+              "Its jump hits squares line-pieces never cover",
               "It's the only piece allowed to attack the king",
-              "It can move twice per turn",
+              "It is allowed to move twice in one turn",
             ],
             correctIndex: 1,
             explanation:
@@ -1073,8 +1078,8 @@ One warning label, because you live on the same internet as everyone else: engin
             prompt: "A knight is pinned to its own KING by your bishop. What is legally true?",
             options: [
               "The knight may move if it captures something",
-              "Moving the knight is illegal (it would expose the king to check), but it still gives check and supports threats itself",
-              "The knight must be moved immediately",
+              "Moving it is illegal, but it still gives check",
+              "The knight must be moved away immediately",
               "Your bishop may not be captured while pinning",
             ],
             correctIndex: 1,
@@ -1085,10 +1090,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "King in front, queen behind on the same diagonal; your bishop attacks the king. What's the tactic?",
             options: [
-              "A skewer, the king must move, exposing the queen behind it",
-              "A pin, the king can't move",
+              "A skewer: the king must move, exposing the queen",
+              "A pin, since the pinned king simply can't move",
               "A fork, two pieces attacked from one square",
-              "A discovered check",
+              "A discovered check along the bishop's line",
             ],
             correctIndex: 0,
             explanation:
@@ -1098,10 +1103,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "Why is a discovered CHECK so much stronger than an ordinary discovered attack?",
             options: [
-              "It ends the game immediately",
-              "The check forces the reply, so the moving piece gets a free turn to do anything, grab material, make threats",
-              "It can't be blocked",
-              "It doesn't use a second piece",
+              "It instantly ends the entire game immediately",
+              "The forced reply gives the moved piece a free turn",
+              "It simply can never be blocked by anything",
+              "It doesn't even use a second attacking piece",
             ],
             correctIndex: 1,
             explanation:
@@ -1111,10 +1116,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "Against a DOUBLE check, which replies are possible?",
             options: [
-              "Block either check",
-              "Capture either checker",
-              "Only a king move, block or capture can each answer just one of the two attackers",
-              "Any of the normal three options",
+              "Block just either one of the two checkers",
+              "Capture just either one of the two checkers",
+              "Only a king move; block or capture stops just one",
+              "Any one of the normal three escape options",
             ],
             correctIndex: 2,
             explanation:
@@ -1124,10 +1129,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "An enemy rook guards both the back rank and a knight you'd like to take. The tactical label and the recipe?",
             options: [
-              "Overloaded defender, take one duty, and recapturing forfeits the other",
-              "Absolute pin, the rook can't move",
-              "Zugzwang, any move loses",
-              "Skewer, attack through the rook",
+              "Overloaded piece: one duty falls if it recaptures",
+              "Absolute pin, so the rook simply can't move",
+              "Zugzwang, where nearly any move now loses",
+              "Skewer, attacking straight through the rook",
             ],
             correctIndex: 0,
             explanation:
@@ -1138,9 +1143,9 @@ One warning label, because you live on the same internet as everyone else: engin
             prompt: "In the K+Q vs K mate, what is the queen's safe herding pattern, and what's the fatal impulse?",
             options: [
               "Give check every move; the impulse is moving too slowly",
-              "Keep the queen a knight's-move away from the enemy king to shrink its box; the impulse is one queen move too many, stalemate",
-              "Trade the queen for a rook first",
-              "March the pawn to promote a second queen",
+              "Keep the queen a knight's-move from the king, not adjacent",
+              "Trade the queen for a rook and then bring the king",
+              "March the passed pawn up to promote a second queen",
             ],
             correctIndex: 1,
             explanation:
@@ -1150,10 +1155,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "Kings face each other with one empty square between them. Who has 'the opposition'?",
             options: [
-              "The player who must move",
-              "The player who does NOT have to move, the mover must give ground",
-              "Whoever has more pawns",
-              "White, always",
+              "The player who is forced now to move first",
+              "The player NOT on move; the mover must give ground",
+              "Whoever happens to have more pawns on board",
+              "White always holds it, purely by definition",
             ],
             correctIndex: 1,
             explanation:
@@ -1163,10 +1168,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "What question does the 'square of the pawn' answer at a glance?",
             options: [
-              "Whether a defending king can catch a running passed pawn before it promotes",
-              "Whether castling is still legal",
-              "Which squares a knight controls",
-              "Whether a position is a dead draw",
+              "Whether the king can catch a passed pawn in time",
+              "Whether castling rights are still legal here",
+              "Which exact squares an enemy knight controls",
+              "Whether the whole position is a dead draw",
             ],
             correctIndex: 0,
             explanation:
@@ -1176,10 +1181,10 @@ One warning label, because you live on the same internet as everyone else: engin
           {
             prompt: "Per the study plan, which habit is the highest-return use of daily minutes?",
             options: [
-              "Memorizing opening lines",
-              "Tactics puzzles, calculated to the end before moving",
-              "Bullet games",
-              "Watching streamers",
+              "Memorizing long forced opening lines by rote",
+              "Tactics puzzles, calculated fully to the end",
+              "Playing endless one-minute bullet games",
+              "Watching chess streamers for hours daily",
             ],
             correctIndex: 1,
             explanation:
@@ -1390,9 +1395,9 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
             prompt: "Where and roughly when did chess's earliest accepted ancestor emerge, and what was it called?",
             options: [
               "Northern India, around the sixth century CE, chaturanga",
-              "Ancient Egypt, around 2000 BCE, senet",
-              "China, around the tenth century, xiangqi",
-              "Persia, around 300 BCE, shatranj",
+              "Ancient Egypt, around 2000 BCE, the game of senet",
+              "China, around the tenth century CE, called xiangqi",
+              "Persia, around 300 BCE, a game they called shatranj",
             ],
             correctIndex: 0,
             explanation:
@@ -1405,7 +1410,7 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
               "Persian 'shah mat', the king is helpless/defeated",
               "Latin 'checcus mattus', the board is full",
               "French 'échec du maître', the master's blow",
-              "Sanskrit 'chatur mat', four defeats",
+              "Sanskrit 'chatur mat', meaning four defeats",
             ],
             correctIndex: 0,
             explanation:
@@ -1415,10 +1420,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "Which culture produced chess's first study tradition, endgame problems and written analysis?",
             options: [
-              "The Islamic world, in the centuries after shatranj arrived from Persia",
-              "Victorian England",
-              "Renaissance Italy",
-              "The Soviet Union",
+              "The Islamic world, in the centuries after shatranj",
+              "Victorian England and its many chess clubs",
+              "Renaissance Italy and its earliest masters",
+              "The Soviet Union's famous state chess school",
             ],
             correctIndex: 0,
             explanation:
@@ -1428,10 +1433,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "Before the late fifteenth century, how did the queen move?",
             options: [
-              "One square diagonally, one of the weakest pieces on the board",
-              "Exactly as she does today",
-              "Like a knight",
-              "She didn't exist in any form",
+              "One square diagonally, one of the weakest pieces",
+              "Exactly as she already does today, oddly",
+              "Just like a knight, leaping in an L-shape",
+              "She didn't exist on the board in any form",
             ],
             correctIndex: 0,
             explanation:
@@ -1441,10 +1446,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "What was 'scacchi alla rabiosa'?",
             options: [
-              "Italy's name for the new fast game, the 'mad queen's chess' of the late 1400s",
-              "A banned gambling variant",
-              "The first chess clock",
-              "A medieval chess poem",
+              "Italy's name for the new fast 'mad queen's chess'",
+              "A banned medieval gambling variant of chess",
+              "The very first mechanical chess game clock",
+              "A long medieval instructional poem on chess",
             ],
             correctIndex: 0,
             explanation:
@@ -1454,10 +1459,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "Why did opening theory arise almost simultaneously with the queen's new powers?",
             options: [
-              "The fast queen made early moves dangerous (four-move mates existed), and the new printing press could distribute the analysis, Lucena's treatise came in 1497",
-              "FIDE mandated the study of openings",
+              "The fast queen made openings sharp, and print spread it",
+              "FIDE then mandated the formal study of openings",
               "Kings began castling, which required memorization",
-              "Coffeehouses demanded faster games",
+              "Coffeehouse players demanded much faster games then",
             ],
             correctIndex: 0,
             explanation:
@@ -1467,10 +1472,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "What happened in 1886?",
             options: [
-              "Steinitz beat Zukertort in the first official World Chess Championship match",
-              "FIDE was founded",
-              "The first chess Olympiad was held",
-              "Morphy toured Europe",
+              "Steinitz beat Zukertort for the first world title",
+              "FIDE was founded in Paris in that same year",
+              "The very first chess Olympiad was held then",
+              "Paul Morphy toured across Europe in triumph",
             ],
             correctIndex: 0,
             explanation:
@@ -1480,10 +1485,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "How did the world title operate between 1886 and 1946?",
             options: [
-              "As the champion's personal property, champions chose challengers and set terms, until Alekhine died holding the title",
-              "FIDE ran qualification cycles from the start",
-              "It rotated among national federations annually",
-              "It was decided by tournament every year",
+              "As the champion's private property; he chose challengers",
+              "FIDE ran the qualification cycles from the start",
+              "It rotated among the national federations annually",
+              "It was decided by a big tournament every year",
             ],
             correctIndex: 0,
             explanation:
@@ -1493,10 +1498,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "Who was Vera Menchik?",
             options: [
-              "Winner of the first Women's World Championship (London, 1927), who held the title until her death and competed against the leading men",
-              "The first female FIDE president",
-              "The fictional heroine of The Queen's Gambit",
-              "The first woman to earn the GM title in 1978",
+              "First Women's World Champion, 1927; also faced top men",
+              "The very first female president of FIDE itself",
+              "The real-life heroine behind The Queen's Gambit",
+              "The first woman ever to earn the GM title, 1978",
             ],
             correctIndex: 0,
             explanation:
@@ -1506,9 +1511,9 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "What made Reykjavik 1972 'the Match of the Century'?",
             options: [
-              "American Bobby Fischer beat Soviet champion Boris Spassky 12½-8½, breaking 24 years of Soviet possession of the title at the height of the Cold War",
-              "It was the first televised chess match",
-              "It ended in a tie broken by blitz",
+              "Fischer beat Spassky 12½-8½, ending Soviet rule",
+              "It was the very first televised chess match",
+              "It ended in a tie, later broken by blitz",
               "Fischer was the youngest champion in history",
             ],
             correctIndex: 0,
@@ -1519,8 +1524,8 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "Which is the CORRECT account of the Kasparov-Deep Blue matches?",
             options: [
-              "Kasparov won the 1996 Philadelphia match 4-2; Deep Blue won the 1997 New York rematch 3½-2½ on 11 May 1997",
-              "Deep Blue swept both matches",
+              "Kasparov won 1996 4-2; Deep Blue won the 1997 rematch",
+              "Deep Blue simply swept both of the two matches",
               "Kasparov won both; a later machine beat him in 2003",
               "Deep Blue won in 1996; Kasparov took revenge in 1997",
             ],
@@ -1532,10 +1537,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "Why was the 1997 rematch a genuine historical milestone?",
             options: [
-              "It was the first defeat of a reigning world champion by a computer in a match under standard conditions",
-              "It proved machines understood chess like humans",
-              "It was the first time a computer won a single game against a champion",
-              "It ended competitive human chess",
+              "The first match defeat of a reigning champion by a machine",
+              "It proved machines finally understood chess like humans",
+              "It was the first single game a computer won versus a champion",
+              "It effectively ended all competitive human chess for good",
             ],
             correctIndex: 0,
             explanation:
@@ -1545,10 +1550,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "What separated AlphaZero (2017) from Deep Blue and the traditional engines?",
             options: [
-              "It learned entirely from self-play, given only the rules, no human openings or handcrafted evaluation, and beat Stockfish +28 =72 −0 over 100 games",
-              "It was the first computer to beat a world champion",
+              "It learned from self-play alone, given only the bare rules",
+              "It was the very first computer to beat a world champion",
               "It searched more positions per second than any machine ever",
-              "It was built by IBM",
+              "It was designed and quietly built entirely by IBM Research",
             ],
             correctIndex: 0,
             explanation:
@@ -1558,10 +1563,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "By Netflix's own announcement, what did The Queen's Gambit do in its first 28 days (from 23 October 2020)?",
             options: [
-              "62 million households watched, its most-watched scripted limited series to date",
-              "10 million households watched",
-              "It won the World Championship broadcast rights",
-              "200 million households watched",
+              "62 million households, its top scripted limited series",
+              "Only 10 million households watched it in 28 days",
+              "It won the World Chess Championship broadcast rights",
+              "Some 200 million households watched in 28 days",
             ],
             correctIndex: 0,
             explanation:
@@ -1571,10 +1576,10 @@ One caution the sourcing habit demands: you will meet grander claims online, "ch
           {
             prompt: "Why did the 2020 boom retain players when the 1972 Fischer boom faded?",
             options: [
-              "The funnel had collapsed: a curious viewer could be playing rated games on a phone in minutes, with streamers and online events for retention",
-              "The Queen's Gambit ran for more seasons",
-              "FIDE lowered membership fees worldwide",
-              "Chess became an Olympic sport in 2021",
+              "A viewer could play rated games on a phone at once",
+              "The Queen's Gambit simply ran for more seasons",
+              "FIDE had lowered its membership fees worldwide",
+              "Chess officially became an Olympic sport in 2021",
             ],
             correctIndex: 0,
             explanation:
@@ -1747,10 +1752,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "What are the three layers of organized chess, bottom to top?",
             options: [
-              "Clubs/schools → national federations (like US Chess) → FIDE",
+              "Clubs/schools → national federations → then FIDE",
               "Online platforms → sponsors → the world champion",
-              "Cities → states → the United Nations",
-              "Players → streamers → engines",
+              "Cities → states → then the United Nations",
+              "Players → streamers → then chess engines",
             ],
             correctIndex: 0,
             explanation:
@@ -1760,10 +1765,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "What is the Chess Olympiad?",
             options: [
-              "FIDE's flagship national-team event, first held officially in London in 1927, now roughly biennial with open and women's sections",
-              "The Olympic Games' chess event",
-              "An annual online blitz championship",
-              "The world championship match itself",
+              "FIDE's flagship national-team event since 1927",
+              "The Olympic Games' own official chess event",
+              "An annual online blitz world championship",
+              "The main world championship match itself",
             ],
             correctIndex: 0,
             explanation:
@@ -1773,9 +1778,9 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "How old is the Women's World Championship?",
             options: [
-              "As old as the Olympiad, first held in London in 1927, won by Vera Menchik",
-              "It began in the 1990s",
-              "It began after The Queen's Gambit aired",
+              "As old as the Olympiad, from 1927, won by Vera Menchik",
+              "It only began in the early 1990s, quite recently",
+              "It began only after The Queen's Gambit aired in 2020",
               "There has never been a separate women's world title",
             ],
             correctIndex: 0,
@@ -1786,10 +1791,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "Who created the chess rating system, and what was his day job?",
             options: [
-              "Arpad Elo, physics professor (and master-level player)",
-              "Wilhelm Steinitz, world champion",
-              "Claude Shannon, information theorist",
-              "Thibault Duplessis, programmer",
+              "Arpad Elo, a physics professor and strong player",
+              "Wilhelm Steinitz, the first world champion",
+              "Claude Shannon, the information theorist",
+              "Thibault Duplessis, the Lichess programmer",
             ],
             correctIndex: 0,
             explanation:
@@ -1799,10 +1804,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "In Elo, what determines how many points a single game moves your rating?",
             options: [
-              "The size of the surprise, how far your result deviates from the expected score, scaled by your K-factor",
-              "A flat 10 points per win",
-              "The length of the game in moves",
-              "The tournament's prize fund",
+              "How far your result beats the expected score",
+              "Always a flat 10 rating points for each win",
+              "The total length of the game in moves",
+              "The tournament's total prize fund size",
             ],
             correctIndex: 0,
             explanation:
@@ -1812,10 +1817,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "Your friend's blitz rating on one website is 1980; your FIDE classical rating is 1610. What do these numbers say about who's stronger?",
             options: [
-              "Essentially nothing, they're coordinates in separate pools with different formulas, floors, and populations",
-              "Your friend is 370 points stronger",
+              "Almost nothing; they're coordinates in separate pools",
+              "Your friend is a clear 370 points much stronger",
               "You are stronger, because FIDE ratings run higher",
-              "Whoever played more games is stronger",
+              "Whoever has played the more games is stronger",
             ],
             correctIndex: 0,
             explanation:
@@ -1825,10 +1830,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "Why do developing young players have a higher K-factor?",
             options: [
-              "So their ratings move quickly, the system is still learning who they are, and they're improving fast",
-              "As a reward for joining young",
+              "So their ratings move fast while they improve fast",
+              "Purely as a reward for joining chess young",
               "To protect adults from losing points to them",
-              "It's a typo in the regulations",
+              "It's really just a typo in the regulations",
             ],
             correctIndex: 0,
             explanation:
@@ -1851,10 +1856,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "What is a GM norm?",
             options: [
-              "A tournament performance around 2600 against strong (avg. 2380+) titled, multi-federation opposition, accumulated across at least 27 games, typically three 9-round events",
-              "Any tournament victory",
-              "A 2500 rating held for one year",
-              "A certificate purchased from FIDE",
+              "A ~2600 result versus titled players, 27+ games",
+              "Any single strong tournament victory at all",
+              "A 2500 FIDE rating held for a whole year",
+              "A paper certificate simply purchased from FIDE",
             ],
             correctIndex: 0,
             explanation:
@@ -1864,10 +1869,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "How long does a FIDE title last, and where is it recognized?",
             options: [
-              "For life, in every FIDE member federation, all 204 of them",
-              "One year, renewable",
+              "For life, in every one of FIDE's 204 federations",
+              "Just one single year, but always renewable",
               "Until your rating drops below the threshold",
-              "Only in your home country",
+              "Only ever within your own home federation",
             ],
             correctIndex: 0,
             explanation:
@@ -1877,10 +1882,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "How do the women's titles (WGM, WIM) relate to the open titles?",
             options: [
-              "They're additional titles set 200 rating points below the corresponding open titles, women also earn open titles by the identical standards",
-              "They replace the open titles for women",
+              "Extra titles set 200 points below the open ones",
+              "They simply replace the open titles for women",
               "They require higher ratings than open titles",
-              "They expire unless defended annually",
+              "They quietly expire unless defended each year",
             ],
             correctIndex: 0,
             explanation:
@@ -1890,10 +1895,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "What happened in world championship history in 2024?",
             options: [
-              "Gukesh Dommaraju, 18, became the youngest world champion ever, breaking Kasparov's 1985 record",
+              "Gukesh, 18, became the youngest champion ever",
               "Kasparov returned and reclaimed the title",
-              "The title was abolished",
-              "A computer was allowed to compete",
+              "The world title was quietly abolished then",
+              "A chess computer was allowed to compete",
             ],
             correctIndex: 0,
             explanation:
@@ -1903,10 +1908,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "In a Swiss-system tournament, how are players paired each round?",
             options: [
-              "Against opponents with the same current score, winners meet winners, and nobody is eliminated",
-              "Randomly every round",
+              "Against opponents on your same current score",
+              "Completely at random in every single round",
               "Single elimination, lose and you're out",
-              "By age group",
+              "Strictly by player age group each round",
             ],
             correctIndex: 0,
             explanation:
@@ -1916,10 +1921,10 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "How does a U.S. student's game become nationally rated?",
             options: [
-              "Join US Chess and play in a sanctioned event, results report into the national rating system",
-              "Submit a video of the game to FIDE",
-              "Win three casual games at any club",
-              "Reach 1500 online first",
+              "Join US Chess and play a sanctioned rated event",
+              "Just submit a video of the game to FIDE",
+              "Just win three casual games at any local club",
+              "Just reach a 1500 rating online first of all",
             ],
             correctIndex: 0,
             explanation:
@@ -1929,8 +1934,8 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
           {
             prompt: "Chess.com and Lichess deliver a similar product with opposite economics. Which description is accurate?",
             options: [
-              "Chess.com is the largest commercial platform (subscriptions, ads, sponsored events); Lichess (founded 2010 by Thibault Duplessis) is free, open-source, ad-free, and donation-funded",
-              "Both are owned by FIDE",
+              "Chess.com is commercial; Lichess is free and open-source",
+              "Both big platforms are wholly owned by FIDE directly",
               "Lichess charges subscriptions; Chess.com is a nonprofit",
               "Chess.com is open-source; Lichess sells user data",
             ],
@@ -2124,8 +2129,8 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "What is this course's honest headline about professional chess playing?",
             options: [
-              "Almost nobody earns a living playing, the population living on playing income is roughly the world elite plus a thin band of circuit pros",
-              "Any master can live on tournament prizes",
+              "Almost nobody earns a living just from playing games",
+              "Any titled master can live on tournament prizes",
               "Prize money is evenly distributed through the field",
               "Online blitz prizes sustain most professionals",
             ],
@@ -2137,10 +2142,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "Why does the norm system (Lesson 26) matter to the ECONOMICS of a playing career?",
             options: [
-              "Norms require years of travel to strong international events, at least 27 games against titled fields, an expensive project with no salary attached",
-              "Norms pay a stipend from FIDE",
-              "Norms replace entry fees",
-              "Norms guarantee sponsorship",
+              "Norms need years of costly travel and 27+ titled games",
+              "Norms pay a monthly stipend directly from FIDE",
+              "Norms directly replace all tournament entry fees",
+              "Norms guarantee a paid corporate sponsorship deal",
             ],
             correctIndex: 0,
             explanation:
@@ -2150,10 +2155,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "An 80-player open charges $60 entries and pays $2,000 total prizes. What's the field's collective arithmetic?",
             options: [
-              "The field pays $4,800 to chase $2,000, the average entrant recovers under half an entry fee, and the median entrant recovers nothing",
-              "The field breaks even",
-              "The field profits if everyone plays well",
-              "Prize money exceeds entries at most opens",
+              "The field pays $4,800 to chase just $2,000 in prizes",
+              "The whole field roughly breaks even on the money",
+              "The whole field profits if everyone plays well",
+              "Prize money usually exceeds entries at most opens",
             ],
             correctIndex: 0,
             explanation:
@@ -2163,10 +2168,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "What is the load-bearing floor of the U.S. chess economy?",
             options: [
-              "Scholastic chess, school programs, camps, lessons, and the tournament circuit serving them",
-              "Elite invitational tournaments",
-              "Chess book publishing",
-              "Casino chess rooms",
+              "Scholastic chess: school programs, camps, lessons",
+              "Elite closed invitational tournaments only",
+              "The entire chess book publishing industry",
+              "Big casino, hotel, and resort chess rooms",
             ],
             correctIndex: 0,
             explanation:
@@ -2176,10 +2181,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "What's the effective credential for entry-level scholastic coaching?",
             options: [
-              "Being reliably stronger than the students, prepared, and good with kids, not a master title",
-              "A grandmaster title",
-              "A FIDE rating over 2200",
-              "A college degree in education",
+              "Being reliably stronger than the kids, and prepared",
+              "A full grandmaster title, and nothing at all less",
+              "A verified FIDE rating of well over 2200 points",
+              "A full four-year college degree in education",
             ],
             correctIndex: 0,
             explanation:
@@ -2189,10 +2194,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "Why won't this course print 'chess coaches make $X per hour'?",
             options: [
-              "Because rates vary enormously by region, format, venue, and credential, an average without a year, place, and definition is folklore",
-              "Because coaching is unpaid",
-              "Because US Chess forbids publishing rates",
-              "Because rates are identical everywhere, so it's not interesting",
+              "Because rates vary hugely by region, format, and venue",
+              "Because chess coaching is entirely unpaid labor",
+              "Because US Chess strictly forbids publishing rates",
+              "Because coaching rates are identical everywhere",
             ],
             correctIndex: 0,
             explanation:
@@ -2202,10 +2207,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "When schools ask whether chess raises academic performance, what's the honest position?",
             options: [
-              "The research on academic transfer is genuinely mixed, so the honest pitch sells what's observable: focus, sportsmanship, voluntary hard thinking",
+              "The research on academic transfer is genuinely mixed",
               "Studies uniformly prove large test-score gains",
-              "Chess has been shown to harm academics",
-              "No school has ever asked",
+              "Chess has clearly been shown to harm academics",
+              "Honestly, no school has ever once asked this",
             ],
             correctIndex: 0,
             explanation:
@@ -2215,10 +2220,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "Why can a 1400-rated creator out-earn a grandmaster online?",
             options: [
-              "Audiences buy teaching, relatability, consistency, and production, Elo mostly picks your lane (mastery-spectacle vs. learning-in-public), not your outcome",
-              "Platforms cap grandmaster earnings",
-              "Ratings are hidden online",
-              "They can't, income tracks Elo exactly",
+              "Audiences buy teaching and production, not raw Elo",
+              "Platforms secretly cap grandmaster earnings",
+              "Player ratings are simply hidden while online",
+              "They simply can't; income tracks Elo exactly",
             ],
             correctIndex: 0,
             explanation:
@@ -2228,10 +2233,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "What's the realistic framing of starting a chess channel as a student?",
             options: [
-              "A low-cost skills bet, worst case you build editing, speaking, and audience skills; best case a niche grows with you. Not an income plan",
+              "A low-cost skills bet, worst case, not an income plan",
               "A reliable path to full-time income within a year",
-              "Pointless unless you're titled",
-              "Forbidden by scholastic rules",
+              "Utterly pointless unless you are already titled",
+              "Strictly forbidden by all the scholastic rules",
             ],
             correctIndex: 0,
             explanation:
@@ -2241,10 +2246,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "What does the TD/arbiter credential ladder price?",
             options: [
-              "Rules knowledge, judgment under pressure, and administrative reliability, playing strength is irrelevant",
-              "Your peak rating",
-              "Tournament victories",
-              "Social media following",
+              "Rules knowledge, judgment, and admin reliability",
+              "Only your all-time peak playing rating counts",
+              "Your total count of tournament victories",
+              "The size of your social media following",
             ],
             correctIndex: 0,
             explanation:
@@ -2254,10 +2259,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "An organizer guarantees $1,500 in prizes with $600 of venue/staff costs and a $45 entry fee. What's the key risk?",
             options: [
-              "Below 47 entrants the organizer personally pays the shortfall, guaranteed funds transfer all field-size risk to the organizer",
-              "There is no risk in guaranteed prizes",
+              "Below 47 entrants the organizer eats the shortfall",
+              "There is really no risk in guaranteed prizes",
               "Players might demand refunds if they lose",
-              "US Chess collects the surplus",
+              "US Chess quietly collects any prize surplus",
             ],
             correctIndex: 0,
             explanation:
@@ -2267,9 +2272,9 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "Why did 'fair-play analyst' emerge as a chess profession?",
             options: [
-              "Engines in every pocket plus the shift online forced statistical, at-scale cheat detection, permanent teams of analysts, statisticians, and engineers at the platforms",
-              "FIDE required one arbiter per board",
-              "Streaming made analysts famous",
+              "Pocket engines and online play forced scaled detection",
+              "FIDE suddenly required one arbiter for each board",
+              "Streaming simply made these analysts newly famous",
               "It hasn't, cheating detection is fully automated",
             ],
             correctIndex: 0,
@@ -2280,10 +2285,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "What did Chess.com's October 2022 report on Hans Niemann actually conclude?",
             options: [
-              "He had likely cheated in more than 100 online games, but there was no determinative evidence of cheating in the over-the-board Sinquefield Cup game",
+              "Likely cheated in 100+ online games, but no OTB proof",
               "He cheated in the Sinquefield Cup game against Carlsen",
-              "He had never cheated anywhere",
-              "Carlsen had cheated",
+              "He had honestly never once cheated anywhere at all",
+              "Carlsen himself had actually been the one cheating",
             ],
             correctIndex: 0,
             explanation:
@@ -2293,9 +2298,9 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "How did the Carlsen-Niemann affair resolve institutionally?",
             options: [
-              "A federal court dismissed Niemann's $100M suit (June 2023), the parties announced a resolution that August, and FIDE's process sanctioned Carlsen's conduct while clearing Niemann on the over-the-board allegations",
-              "Niemann won $100 million at trial",
-              "Carlsen was banned from chess",
+              "A court dismissed Niemann's $100M suit in June 2023",
+              "Niemann actually won the full $100 million at trial",
+              "Carlsen was simply banned from all chess for it",
               "It remains entirely unresolved with no findings",
             ],
             correctIndex: 0,
@@ -2306,10 +2311,10 @@ Sit with how much that one story teaches. **Past online cheating was real and pr
           {
             prompt: "What is the through-line this course claims connects the rulebook, the history, and the economy?",
             options: [
-              "Claims need sources, numbers need owners, and integrity is what makes the system worth playing in, trust is the currency of every chess career",
+              "Claims need sources, numbers need owners; trust is all",
               "Memorizing openings is the foundation of success",
               "Only grandmasters matter to the chess economy",
-              "Chess is primarily a spectator business",
+              "Chess is really primarily a spectator business",
             ],
             correctIndex: 0,
             explanation:
