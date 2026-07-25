@@ -381,6 +381,41 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   env vars (\`CRON_SECRET\`, \`DEMO_VISITOR_PASSWORD\`, \`DEMO_VISITOR_USER_EMAIL\`), the feature stays
   dark until BAM sets them (see \`plans/user-tasks/62-demo-account-setup.md\` for the domain/env/seed
   steps).
+- ✅ **Bundle SALES are live** (\`feat/bundle-sales\`, **migration 0039**). The app can now sell a
+  bundle: two tenant-scoped tables (\`bundles\`, \`bundle_courses\`), \`createBundleCheckout\`
+  mirroring the course flow, and a webhook branch that enrolls the buyer in EVERY member course
+  idempotently (a Stripe retry never double-enrolls; access is granted per course so a later bundle
+  edit cannot revoke it). \`/bundles\` and \`/bundles/<slug>\` are the buy surface (free bundles enroll
+  directly, paid go to Stripe), \`/admin/bundles\` is the owner view, and \`pnpm seed:bundles\` creates
+  the six proposed bundles UNPUBLISHED with the recommended price so nothing sells until BAM publishes.
+  Tenant isolation is tested (a bundle 404s across tenants and never surfaces another tenant's course).
+  Promos and ecosystem cross-promo (CentenarianOS, FlashLearnAI) already worked and are unchanged.
+  **After merge: \`pnpm db:migrate:prod\`, then \`pnpm seed:bundles\`.**
+- 🔧 **Bundle proposals + the bundle-sales gap** (\`src/lib/bundles.ts\`, on \`/admin/pricing\`).
+  Six themed bundles (the full route series, Black History Through Place, Civics Essentials, the state
+  civics collection, the two structural paths, and the global labor series), each with an APP price and
+  a TpT price and a separate justification for each channel; app savings are computed live from the
+  members' proposed course prices. Two capabilities were CONFIRMED already working: promo codes (Stripe
+  coupons at \`/admin/marketing\`, applied at checkout, comparable to CentenarianOS and FlashLearnAI)
+  and ecosystem cross-promo (both apps attachable to any course or category). The one gap is bundle
+  SALES: the app cannot yet sell a bundle, because it is a payments feature with a prod migration and a
+  webhook that grants paid access, so it is scoped as its own reviewed branch in \`plans/48\` rather
+  than rushed. Prices are recommendations; nothing changes a live price.
+- 🔧 **Proposed pricing** (\`/admin/pricing\`, owner-only): a fair-and-competitive price
+  recommendation for every course, in five tiers (Free, Foundation $9, Core $19, Premium $29,
+  Certification prep $39), assigned by category with per-course overrides (US Civics 101 free as a
+  funnel; the Green Book flagship and the two capstones at Premium; FAA Part 107 at Certification;
+  single-state civics at Foundation). Shows current vs proposed side by side (current read from the
+  catalog), and leads with the recommendation that the PRIMARY model be an all-access subscription
+  (~$12/mo or $99/yr). Proposals only, nothing changes a live price, and no number is a revenue
+  promise. Model + assignment in \`src/lib/course-pricing.ts\`.
+- 🔧 **Teachers Pay Teachers plan** (\`/admin/tpt-plan\`, owner-only): a ranked rollout plan for the
+  TpT sales channel, ordered to optimize reach and conversion (free gateway first to buy followers and
+  reviews, then high-intent state-civics units, then the differentiated Green Book flagship, then
+  evergreen units, then bundles). Each row shows the recommended price and the course's REAL standards
+  count (a genuine TpT selling point), pulled from the standards data. Packets live in
+  \`plans/future-courses/tpt-packets/\`; seven are built (great-migration, indiana/illinois/arizona
+  civics, us-constitution, woop, and Green Book). Recommendations, not sales promises.
 - 🔧 **Per-audience landing pages** (\`/for/<audience>\` + a \`/for\` index): teachers, school leaders,
   parents, homeschool families, and community leaders each get a page written in their own terms,
   above the two general pages (\`/platform\`, \`/explore\`). Recruiting-tenant only, 404 on a white-label
@@ -419,9 +454,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   decisions (liability, taxation, ownership/transfer, governance), and reading the formation documents
   as primary sources is the skill; it says plainly, repeatedly, that it is not legal or tax advice, and
   asserts no statute section or tax rate from memory. Both are mapped to the Common Core RH/WHST
-  literacy strands and shuffle-by-default; all eight quiz banks score 25-31% on the length tell. These
-  are the pilot tranche: 1 of 9 government courses and 1 of 7 business courses; the rest follow across
-  later sessions. **Re-run \`pnpm seed:courses\`.**
+  literacy strands and shuffle-by-default; all eight quiz banks score 25-31% on the length tell. A third course now joins them, **The
+  Local Layer** (\`the-local-layer\`, 20 lessons), the deep Dillon's-Rule-vs-home-rule course: municipal
+  forms (mayor-council, council-manager, commission), special districts (which outnumber cities and
+  whose elections nobody votes in), town meeting, and Unigov as the creatures-of-the-state case, built
+  ON the method course without repeating it. A fourth course, **Financing
+  Without Access** (\`financing-without-access\`, 18 lessons), joins the business path: the bridge course
+  on fraternal societies, industrial insurance, building-and-loans, ROSCAs worldwide (susu, tanda,
+  chit fund, tontine) and Islamic finance, on the through-line that when the capital system excludes
+  you, you invent an entity. It declines Islamic-finance market statistics rather than quote them
+  loosely and teaches the form-vs-substance debate unresolved. Tranche so far: 2 of 9 government and 2
+  of 7 business courses. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**

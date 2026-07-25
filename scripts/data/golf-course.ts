@@ -870,10 +870,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "Who writes the Rules of Golf?",
             options: [
-              "The PGA Tour",
-              "The USGA and The R&A jointly, as one shared code",
-              "Each country writes its own",
-              "The PGA of America",
+              "The PGA Tour, on behalf of all the pros",
+              "The USGA and The R&A jointly, as one code",
+              "Each country writes its own set of rules",
+              "The PGA of America and its member pros",
             ],
             correctIndex: 1,
             explanation:
@@ -883,10 +883,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "Which edition of the Rules of Golf is currently in force?",
             options: [
-              "The 2016 Rules",
-              "The 2019 Rules",
+              "The 2016 Rules, effective 1 January 2016",
+              "The 2019 Rules, effective 1 January 2019",
               "The 2023 Rules, effective 1 January 2023",
-              "Each tour writes its own",
+              "Each professional tour writes its own set",
             ],
             correctIndex: 2,
             explanation:
@@ -896,10 +896,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "What is the foundational rule expressed in Rule 9.1?",
             options: [
-              "You may always improve your lie",
-              "A player's ball at rest on the course must be played as it lies",
-              "You must always take the flagstick out",
-              "You get five minutes to search for a ball",
+              "You may always improve your lie by hand",
+              "A ball at rest must be played as it lies",
+              "You must always take the flagstick out first",
+              "You get a full five minutes to search for it",
             ],
             correctIndex: 1,
             explanation:
@@ -909,10 +909,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "What does the term \"general penalty\" mean?",
             options: [
-              "One stroke",
-              "Disqualification",
-              "Two strokes in stroke play, or loss of hole in match play",
-              "A warning only",
+              "One penalty stroke in every format of play",
+              "Immediate disqualification from the event",
+              "Two strokes in stroke play, or loss of hole",
+              "A warning only on your very first breach",
             ],
             correctIndex: 2,
             explanation: "The Rules use this phrase constantly, so it is worth learning once.",
@@ -921,10 +921,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "Your club accidentally strikes the ball twice during one stroke. What happens?",
             options: [
-              "One penalty stroke",
-              "Two penalty strokes",
+              "One penalty stroke added to your score",
+              "Two penalty strokes, the general penalty",
               "It counts as one stroke with no penalty",
-              "You must replay the shot",
+              "You must replay the shot from the same spot",
             ],
             correctIndex: 2,
             explanation:
@@ -933,7 +933,7 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           },
           {
             prompt: "How long may you search for your ball before it is lost?",
-            options: ["One minute", "Three minutes", "Five minutes", "As long as you like"],
+            options: ["One minute of active search", "Three minutes of active search", "Five minutes of active search", "As long as you like out there"],
             correctIndex: 1,
             explanation:
               "Rule 18.2a(1): three minutes from when you or your caddie begin searching. It used to be five.",
@@ -950,10 +950,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "What must you do before playing a provisional ball?",
             options: [
-              "Nothing, just hit it",
-              "Announce that it is a provisional",
-              "Ask your opponent's permission",
-              "Wait three minutes",
+              "Nothing at all; you just hit it",
+              "Announce that it is a provisional ball",
+              "Ask your playing opponent's permission",
+              "Wait the full three minutes first",
             ],
             correctIndex: 1,
             explanation:
@@ -963,10 +963,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "The 'drop it near where you lost it for two strokes' option is:",
             options: [
-              "Rule 18.4, a Rule of Golf that always applies",
-              "Model Local Rule E-5, which applies only if the Committee has adopted it, and is not for elite competition",
-              "Illegal everywhere",
-              "Only available on par 3s",
+              "Rule 18.4, a full Rule of Golf that always applies",
+              "Model Local Rule E-5, if the Committee adopts it",
+              "Illegal everywhere under the current Rules of Golf",
+              "Only available on par 3s, never on par 4s or 5s",
             ],
             correctIndex: 1,
             explanation:
@@ -983,7 +983,7 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           },
           {
             prompt: "Where may you NOT declare your ball unplayable?",
-            options: ["In a bunker", "In the rough", "In a penalty area", "On the putting green"],
+            options: ["In a greenside bunker", "In the thick rough", "In a marked penalty area", "On the putting green"],
             correctIndex: 2,
             explanation:
               "Rule 19.1 allows unplayable relief anywhere on the course EXCEPT a penalty area, which has its own relief rules under Rule 17.",
@@ -992,10 +992,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "Your ball is buried under a steep bunker lip. What does Rule 19.3b let you do?",
             options: [
-              "Take free relief outside the bunker",
-              "Take back-on-the-line relief outside the bunker for a total of two penalty strokes",
+              "Take free relief just outside the bunker",
+              "Take back-on-line relief outside for two strokes",
               "Move the ball to the fairway for one stroke",
-              "Nothing; you must play it",
+              "Nothing; you must play it as it lies there",
             ],
             correctIndex: 1,
             explanation:
@@ -1005,10 +1005,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "In a bunker, which of these is now permitted?",
             options: [
-              "Grounding your club behind the ball",
+              "Grounding your club in the sand behind the ball",
               "Taking a practice swing that touches the sand",
-              "Removing loose impediments such as leaves and stones",
-              "Testing the sand with your hand",
+              "Removing loose impediments like leaves and stones",
+              "Testing the sand's texture with your bare hand",
             ],
             correctIndex: 2,
             explanation:
@@ -1018,10 +1018,10 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           {
             prompt: "You are putting and leave the flagstick in the hole. Your ball hits it and drops. What is the ruling?",
             options: [
-              "Two-stroke penalty",
-              "One-stroke penalty",
+              "A two-stroke penalty applies",
+              "A one-stroke penalty applies",
               "No penalty; the ball is holed",
-              "You must replay the putt",
+              "You must replay the putt again",
             ],
             correctIndex: 2,
             explanation:
@@ -1030,7 +1030,7 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
           },
           {
             prompt: "Which format lets partners each play their own ball, counting the better score on each hole?",
-            options: ["Foursomes (alternate shot)", "Four-Ball (best ball)", "Stableford", "Maximum Score"],
+            options: ["Foursomes (alternate shot)", "Four-Ball (best ball)", "Stableford (points scoring)", "Maximum Score (capped hole)"],
             correctIndex: 1,
             explanation:
               "Four-Ball (Rule 23) is the ideal format for a beginner playing with a stronger partner, because your bad holes simply do not count.",
@@ -1333,10 +1333,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "What does \"play to your miss\" mean?",
             options: [
-              "Practice until you have no miss",
-              "Aim so that your habitual bad shot still finishes somewhere playable",
-              "Always aim directly at the flag",
-              "Only play holes that suit you",
+              "Practice on the range until you no longer have a miss",
+              "Aim so your habitual bad shot still finishes playable",
+              "Always aim directly at the flag, whatever the risk",
+              "Only play holes that already suit your ball flight",
             ],
             correctIndex: 1,
             explanation:
@@ -1346,10 +1346,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "Why is the middle of the green usually the correct target?",
             options: [
-              "Greens are flattest in the middle",
-              "Because it is surrounded on all sides by more green, so misses still finish on the putting surface",
-              "Because the Rules require it",
-              "It is not; always attack the flag",
+              "Greens are nearly always flattest in the middle part",
+              "It is ringed by more green, so misses stay on it",
+              "Because the Rules of Golf explicitly require this",
+              "It is not; you should always attack the flag itself",
             ],
             correctIndex: 1,
             explanation:
@@ -1359,10 +1359,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "You are behind a tree. The hero shot works about 10% of the time. What does the math say?",
             options: [
-              "Take the hero shot; the upside is worth it",
-              "Chip out sideways, which averages more than a full stroke better",
+              "Take the hero shot; its big upside is clearly worth it",
+              "Chip out sideways, averaging a full stroke better",
               "Declare the ball unplayable and go back to the tee",
-              "The two options are equivalent",
+              "The two options work out mathematically equivalent",
             ],
             correctIndex: 1,
             explanation:
@@ -1385,10 +1385,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "Why does a ball from light rough often fly FURTHER than one from the fairway?",
             options: [
-              "The grass springs the ball forward",
-              "Grass between the clubface and ball kills backspin, so the ball comes out hot and runs",
-              "It does not; it always goes shorter",
-              "The ball sits closer to the hole",
+              "The tall grass physically springs the ball forward",
+              "Grass kills backspin, so the ball comes out hot",
+              "It does not; a rough lie always goes shorter",
+              "The ball simply sits up closer to the hole",
             ],
             correctIndex: 1,
             explanation: "This is called a 'flier,' and it surprises people because they expect rough to cost distance.",
@@ -1397,10 +1397,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "What is the rule of thumb for playing into the wind?",
             options: [
-              "Swing harder to punch through it",
-              "When it's breezy, swing easy: take more club and swing at about 80%",
-              "Aim well right of the target",
-              "Use your driver from anywhere",
+              "Swing much harder to punch the ball through it",
+              "When breezy, swing easy: more club, about 80%",
+              "Aim well right of the target to allow for drift",
+              "Use your low-spinning driver from almost anywhere",
             ],
             correctIndex: 1,
             explanation:
@@ -1410,10 +1410,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "Under Rule 4.3a(1), a distance-measuring device is:",
             options: [
-              "Always prohibited",
-              "Allowed by default, unless a Committee prohibits it by Local Rule",
-              "Allowed only in match play",
-              "Allowed only for professionals",
+              "Always prohibited in every single form of play",
+              "Allowed by default, unless a Local Rule bars it",
+              "Allowed only in match play, never stroke play",
+              "Allowed only for touring professionals in events",
             ],
             correctIndex: 1,
             explanation:
@@ -1423,10 +1423,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "What does it mean to \"short-side\" yourself?",
             options: [
-              "To lay up short of the green",
-              "To miss the green on the same side as the flag, leaving no green to work with",
-              "To use too little club",
-              "To play from the forward tees",
+              "To lay up well short of the green on purpose",
+              "To miss the green on the SAME side as the flag",
+              "To use far too little club into the green",
+              "To play the whole hole from the forward tees",
             ],
             correctIndex: 1,
             explanation:
@@ -1436,10 +1436,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "Breaking 100 for the first time is mostly:",
             options: [
-              "A swing achievement",
-              "A decision-making achievement, from making fewer disastrous choices",
-              "A matter of buying better clubs",
-              "Impossible without a coach",
+              "Purely a ball-striking and swing achievement",
+              "A decision-making win, from fewer disaster holes",
+              "Mostly a matter of buying much better clubs",
+              "Basically impossible without a paid swing coach",
             ],
             correctIndex: 1,
             explanation:
@@ -1465,10 +1465,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "How is your Handicap Index calculated?",
             options: [
-              "The average of all your scores",
-              "The average of your lowest 8 Score Differentials out of the most recent 20",
-              "Your best round ever",
-              "Your most recent round",
+              "A simple average of all the scores you post",
+              "The average of your lowest 8 of the last 20",
+              "Your single best round of golf ever posted",
+              "Your most recent round, updated each time out",
             ],
             correctIndex: 1,
             explanation:
@@ -1493,10 +1493,10 @@ Your Course Handicap is calculated from your Index using that specific set of te
           {
             prompt: "What does Slope Rating measure?",
             options: [
-              "The steepness of the terrain",
-              "How much harder the course plays for a bogey golfer than for a scratch golfer",
-              "What a scratch golfer is expected to shoot",
-              "The average score of all players",
+              "The literal physical steepness of the course terrain",
+              "How much harder it plays for a bogey vs scratch golfer",
+              "The exact score a scratch golfer is expected to shoot",
+              "The simple average score of every player who plays it",
             ],
             correctIndex: 1,
             explanation:
@@ -2012,10 +2012,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "What did the Scottish Parliament's 1457 Act actually do about golf?",
             options: [
-              "Established the first 18-hole course",
-              "Ordered golf to be 'cried down' so men would practise archery instead",
-              "Created the first Rules of Golf",
-              "Founded the Royal & Ancient Golf Club",
+              "Established the first standardized 18-hole course",
+              "Ordered it 'cried down' so men would practise archery",
+              "Created the first written code of Rules of Golf",
+              "Founded the Royal & Ancient Golf Club of St Andrews",
             ],
             correctIndex: 1,
             explanation:
@@ -2025,10 +2025,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "Were 18 holes standardized in 1764?",
             options: [
-              "Yes, by an act of the R&A",
-              "No, St Andrews shortened its OWN round from 22 to 18; eighteen became the norm only in the 1880s",
-              "Yes, by the USGA",
-              "No, the standard is still 22 holes",
+              "Yes, a formal R&A act fixed the number of holes at 18",
+              "No, St Andrews cut its OWN round from 22 to 18 holes",
+              "Yes, the USGA fixed 18 as the worldwide standard",
+              "No, a full round's standard is still 22 holes today",
             ],
             correctIndex: 1,
             explanation:
@@ -2038,10 +2038,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "The first Open Championship (Prestwick, 1860) was:",
             options: [
-              "Open to anyone who entered, with a large purse",
-              "Contested by eight professionals BY INVITATION, over three rounds of a 12-hole course, with no prize money",
-              "A 72-hole event won by an amateur",
-              "Held at St Andrews over 18 holes",
+              "Open to anyone who entered, and offered a cash purse",
+              "Contested by eight professionals BY INVITATION, no prize",
+              "A 72-hole stroke-play event won by a local amateur",
+              "Held at St Andrews over the modern 18-hole course",
             ],
             correctIndex: 1,
             explanation:
@@ -2059,10 +2059,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "When was the PGA of America's Caucasian-only clause adopted and removed?",
             options: [
-              "Adopted 1916, removed 1948",
+              "Adopted March 1916, removed October 1948",
               "Adopted 1934, removed November 1961",
-              "Adopted 1948, removed 1964",
-              "Adopted 1920, removed 1975",
+              "Adopted June 1948, removed December 1964",
+              "Adopted April 1920, removed February 1975",
             ],
             correctIndex: 1,
             explanation:
@@ -2072,10 +2072,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "What was the outcome of Bill Spiller and Ted Rhodes's 1948 lawsuit over the Richmond Open?",
             options: [
-              "They won, and the clause was struck down",
-              "The suit was WITHDRAWN on a PGA promise not to discriminate, a promise the PGA then broke",
-              "They lost at the Supreme Court",
-              "The case is still pending",
+              "They won at trial, and the Caucasian-only clause fell",
+              "It was WITHDRAWN on a PGA promise the PGA then broke",
+              "They lost on appeal all the way to the Supreme Court",
+              "It settled for cash but left the clause fully intact",
             ],
             correctIndex: 1,
             explanation:
@@ -2085,10 +2085,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "How did Bill Spiller come to meet California Attorney General Stanley Mosk?",
             options: [
-              "They played together on the PGA Tour",
-              "Spiller was working as a caddie and carried Mosk's bag",
-              "Mosk was his lawyer in the 1948 suit",
-              "They met at a PGA meeting",
+              "They played together in a PGA Tour pro-am event",
+              "Spiller was caddying and carried Mosk's golf bag",
+              "Mosk had been his attorney in the 1948 Richmond suit",
+              "They were introduced at a PGA committee meeting",
             ],
             correctIndex: 1,
             explanation:
@@ -2098,10 +2098,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "What reason did the January 1962 issue of Golfdom give for the repeal of the Caucasian-only clause?",
             options: [
-              "A moral reckoning with racial injustice",
+              "A public moral reckoning with racial injustice",
               "\"Difficulties in making tournament arrangements\"",
-              "A Supreme Court ruling",
-              "Pressure from Charlie Sifford",
+              "A binding Supreme Court desegregation ruling",
+              "Sustained public pressure from Charlie Sifford",
             ],
             correctIndex: 1,
             explanation:
@@ -2111,10 +2111,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "Why did golf's desegregation have to run through the Fourteenth Amendment rather than the Civil Rights Act?",
             options: [
-              "Because the Civil Rights Act came too late in every case",
-              "Because Title II does not list golf courses at all, and expressly exempts private clubs",
-              "Because golf is a federal matter",
-              "Because the PGA is a government agency",
+              "Because the Civil Rights Act came too late every time",
+              "Because Title II omits golf courses and exempts private clubs",
+              "Because golf is exclusively a federal regulatory matter",
+              "Because the PGA counts as a federal government agency",
             ],
             correctIndex: 1,
             explanation:
@@ -2124,10 +2124,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "Which of these was NOT one of the evasions used to keep golf segregated?",
             options: [
-              "Relabelling tournaments as 'Invitationals'",
+              "Relabelling PGA tournaments as 'Invitationals' to dodge the rule",
               "Leasing a city-owned course to a sham 'private club'",
-              "Selling the municipal course outright",
-              "Passing a state law explicitly banning Black golfers from all courses",
+              "Selling the municipal course outright to private owners",
+              "Passing a state law banning Black golfers everywhere",
             ],
             correctIndex: 3,
             explanation:
@@ -2137,10 +2137,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "In July 1954, seven weeks after Brown, what did the district court order in the Atlanta golf case?",
             options: [
-              "Immediate desegregation of all municipal courses",
-              "Equal facilities \"while preserving segregation,\" claiming to be in accord with Brown's principles",
-              "That the courses be closed",
-              "That the case be dismissed",
+              "Immediate desegregation of every municipal golf course",
+              "Equal facilities \"while preserving segregation\"",
+              "That the courses be closed to all races entirely",
+              "That the case be dismissed for lack of standing",
             ],
             correctIndex: 1,
             explanation:
@@ -2150,10 +2150,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "What actually happened to the Greensboro Six's case at the Supreme Court?",
             options: [
-              "They lost 5-4 on the merits",
-              "In Wolfe v. North Carolina (1960) the Court DISMISSED the appeal, never reaching the merits",
-              "They won unanimously",
-              "The Court never heard of the case",
+              "They lost 5-4 on the merits in a signed majority opinion",
+              "In Wolfe v. North Carolina it DISMISSED the appeal",
+              "They won unanimously and the whole clause was voided",
+              "The Court declined the appeal and never heard the case",
             ],
             correctIndex: 1,
             explanation:
@@ -2163,10 +2163,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "Why could Ann Gregory enter a USGA championship in 1956?",
             options: [
-              "She won a qualifying tournament",
-              "Because the Chicago Women's Golf Club became the first all-Black club admitted to USGA membership that year",
-              "The USGA changed its rules for individuals",
-              "She was invited personally",
+              "She won a USGA regional qualifying tournament",
+              "Her Chicago Women's Golf Club won USGA membership",
+              "The USGA changed its entry rules for individuals",
+              "She was personally invited by the USGA president",
             ],
             correctIndex: 1,
             explanation:
@@ -2184,10 +2184,10 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
           {
             prompt: "What happened to Augusta's Black caddies in 1983, the first year players could bring their own?",
             options: [
-              "They were given full club membership",
-              "63 of the 81 players brought outside caddies, so most of them lost the work",
-              "Nothing changed; players kept using them",
-              "They were hired by the PGA TOUR",
+              "They were all given full Augusta National club membership",
+              "63 of the 81 players brought their own outside caddies",
+              "Nothing changed; every player kept using the club caddies",
+              "They were all hired onto the PGA TOUR caddie staff",
             ],
             correctIndex: 1,
             explanation:
@@ -3024,10 +3024,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
           {
             prompt: "Which of these is NOT allowed for an amateur under the 2022 Rules?",
             options: [
-              "Signing a sponsorship or NIL deal",
+              "Signing a sponsorship or an NIL endorsement deal",
               "Accepting free equipment from a manufacturer",
               "Accepting payment for giving golf instruction",
-              "Having travel expenses paid",
+              "Having your tournament travel expenses paid",
             ],
             correctIndex: 2,
             explanation:
@@ -3045,10 +3045,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
           {
             prompt: "Under the current Rules, being a MEMBER of a professional tour:",
             options: [
-              "Immediately ends your amateur status",
-              "Is allowed, it is PLAYING in a competition as a professional that ends it",
-              "Is impossible for an amateur",
-              "Requires USGA permission",
+              "Immediately ends your amateur status outright",
+              "Is fine; only PLAYING as a pro ends it",
+              "Is completely impossible for any amateur",
+              "Requires written USGA permission first",
             ],
             correctIndex: 1,
             explanation: "The Rules draw the line at the act, not the affiliation. This surprises nearly everybody.",
@@ -3057,10 +3057,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
           {
             prompt: "Which rulebook actually governs your college golf eligibility?",
             options: [
-              "The USGA's Rules of Amateur Status",
-              "The NCAA's, a separate rulebook; the binding constraint is whichever is stricter",
-              "The R&A's",
-              "The PGA TOUR's",
+              "The USGA's own Rules of Amateur Status",
+              "The NCAA's; the stricter book always binds",
+              "The R&A's Rules of Amateur Status only",
+              "The PGA TOUR's player eligibility rules",
             ],
             correctIndex: 1,
             explanation:
@@ -3070,10 +3070,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
           {
             prompt: "What is the entry requirement for an amateur to enter the U.S. Open?",
             options: [
-              "An invitation from the USGA",
-              "A Handicap Index of 0.4 or better, plus the entry form and fee",
-              "A top-100 world ranking",
-              "A college golf scholarship",
+              "A personal invitation from the USGA committee",
+              "A Handicap Index of 0.4 or better, plus the fee",
+              "A top-100 spot in the world golf ranking",
+              "A funded college golf scholarship offer",
             ],
             correctIndex: 1,
             explanation:
@@ -3090,10 +3090,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
           {
             prompt: "What is \"Golf's Longest Day\"?",
             options: [
-              "The 18-hole Local Qualifying round",
-              "U.S. Open Final Qualifying: 36 holes in a single day",
-              "The final round of the Masters",
-              "A 72-hole LIV event",
+              "The single 18-hole Local Qualifying round",
+              "U.S. Open Final Qualifying: 36 holes in a day",
+              "The dramatic final round of the Masters",
+              "A 72-hole LIV Golf event over a full week",
             ],
             correctIndex: 1,
             explanation: "Two full rounds, walking, at about 13 sites, with a place in a major on the line and no second chance.",
@@ -3102,10 +3102,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
           {
             prompt: "A player quotes you 2.4 as the Handicap Index limit for the U.S. Amateur. Are they right?",
             options: [
-              "Yes, 2.4 is correct",
-              "No, the U.S. Amateur limit is 0.4. 2.4 is the U.S. MID-Amateur, which also requires you to be 25 or older",
-              "No, there is no limit",
-              "Yes, but only for players under 18",
+              "Yes, 2.4 is exactly the correct limit",
+              "No, the U.S. Amateur limit is 0.4, not 2.4",
+              "No, there is no handicap limit at all",
+              "Yes, but only for players under age 18",
             ],
             correctIndex: 1,
             explanation:
@@ -3146,10 +3146,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
           {
             prompt: "Which five organizations founded First Tee in 1997?",
             options: [
-              "The World Golf Foundation alone",
-              "The LPGA, the Masters Tournament, the PGA of America, the PGA TOUR, and the USGA",
-              "The USGA and The R&A",
-              "LIV Golf and the PGA TOUR",
+              "The World Golf Foundation entirely on its own",
+              "The LPGA, Masters, PGA of America, PGA TOUR, USGA",
+              "The USGA and The R&A, golf's two rule-makers",
+              "LIV Golf together with the modern PGA TOUR",
             ],
             correctIndex: 1,
             explanation:
@@ -3159,10 +3159,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
           {
             prompt: "What does the gap between 48.1 million and 29.1 million golfers represent?",
             options: [
-              "A statistical error",
-              "About 19 million people engaging with golf without going near a golf course, the sport's clearest growth market",
-              "Players who quit the sport",
-              "Golfers who live outside the US",
+              "A simple statistical counting error",
+              "About 19 million off-course-only players",
+              "Players who have quit the sport for good",
+              "Golfers who live entirely outside the US",
             ],
             correctIndex: 1,
             explanation:

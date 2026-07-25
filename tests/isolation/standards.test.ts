@@ -181,6 +181,8 @@ const CATALOG = [
   // Structures paths (plans/46) — method courses
   "who-has-the-power",
   "what-a-business-entity-is",
+  "the-local-layer",
+  "financing-without-access",
 ];
 
 describe("standards data integrity — a wrong code could be filed with a state", () => {

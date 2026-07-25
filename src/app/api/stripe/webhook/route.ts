@@ -2,6 +2,7 @@ import type Stripe from "stripe";
 import { env } from "@/lib/env";
 import { getStripe } from "@/lib/stripe";
 import { cancelEnrollmentBySubscription, enrollPaid } from "@/db/queries/enrollment";
+import { getBundleCourseIds } from "@/db/queries/bundles";
 import { incrementPromoUsage } from "@/db/queries/connect";
 
 // POST /api/stripe/webhook — Stripe calls this directly (no tenant host), so it
@@ -35,6 +36,15 @@ export async function POST(req: Request) {
         s.id,
         typeof s.subscription === "string" ? s.subscription : null,
       );
+    }
+    // A bundle purchase enrolls the buyer in EVERY member course. enrollPaid is idempotent
+    // (onConflictDoNothing on user+course+attempt), so a Stripe retry of the same event never
+    // double-enrolls. Access is granted per course, so editing the bundle later cannot revoke it.
+    if (md.bundle_id && md.user_id && md.tenant_id) {
+      const courseIds = await getBundleCourseIds(md.tenant_id, md.bundle_id);
+      for (const courseId of courseIds) {
+        await enrollPaid(md.tenant_id, md.user_id, courseId, s.id, null);
+      }
     }
     if (md.promo_id) await incrementPromoUsage(md.promo_id);
   } else if (event.type === "customer.subscription.deleted") {

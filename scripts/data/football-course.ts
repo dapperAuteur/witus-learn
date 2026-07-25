@@ -252,10 +252,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "Where does the word 'soccer' come from?",
             options: [
-              "British university slang: 'assoc.' (association football) plus the Oxford '-er' suffix",
+              "British university slang: 'assoc.' plus the Oxford '-er' suffix",
               "An American shortening of 'association' invented in the 1920s",
-              "A Scottish dialect word for kicking",
-              "The surname of the man who wrote the first Laws",
+              "A Scottish dialect word for kicking a ball along the ground",
+              "The surname of Ebenezer Morley, who drafted the first Laws",
             ],
             correctIndex: 0,
             explanation:
@@ -265,10 +265,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "Who is documented as having coined the word 'soccer'?",
             options: [
-              "Charles Wreford-Brown, the England captain",
-              "Ebenezer Morley, founder of the FA",
-              "Nobody, the coiner is unknown, and the Wreford-Brown story is undocumented",
-              "A FIFA committee in 1904",
+              "Charles Wreford-Brown, the Oxford and England captain",
+              "Ebenezer Morley, the founder of the Football Association",
+              "Nobody, the true coiner is unknown and undocumented",
+              "A FIFA committee at its founding congress in 1904",
             ],
             correctIndex: 2,
             explanation:
@@ -278,10 +278,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "What happened to the word 'soccer' in Britain?",
             options: [
-              "It was never used there",
-              "It was used through most of the twentieth century, then declined sharply from around 1980 as it came to sound American",
-              "It has always been the preferred British term",
-              "It was banned by the Football Association in 1921",
+              "It was never used in Britain, only in North America and Australia",
+              "Common for most of the twentieth century, then it faded after 1980",
+              "It has always been the single preferred term in British football",
+              "It was formally banned by the Football Association back in 1921",
             ],
             correctIndex: 1,
             explanation:
@@ -291,10 +291,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "Under Law 1, what is the legal LENGTH of a football pitch?",
             options: [
-              "Exactly 105 m, there is one legal size",
-              "A range: 90-120 m (100-130 yds), narrowing to 100-110 m for international matches",
+              "Exactly 105 m long, the one fixed legal size set in the Laws",
+              "A range: 90-120 m long, narrowing to 100-110 m for internationals",
               "A range, but only for youth football; senior pitches are fixed",
-              "Whatever the referee decides on the day",
+              "Whatever the referee measures and decides before the match",
             ],
             correctIndex: 1,
             explanation:
@@ -317,10 +317,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "How far is the penalty mark from the goal line, and how wide is the goal?",
             options: [
-              "11 m (12 yds); 7.32 m (8 yds) between the inside of the posts",
-              "9.15 m (10 yds); 8 m",
-              "12 m; 7 m",
-              "16.5 m (18 yds); 7.32 m",
+              "11 m (12 yds); 7.32 m (8 yds) between the posts",
+              "9.15 m (10 yds) out; 8 m between the posts",
+              "12 m (13 yds); 7 m between the goalposts",
+              "16.5 m (18 yds); 7.32 m between the posts",
             ],
             correctIndex: 0,
             explanation:
@@ -330,10 +330,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "What does Law 2 specify about the ball?",
             options: [
-              "That it must be a 'size 5' ball",
-              "Spherical, 68-70 cm circumference, 410-450 g at the start of the match, 0.6-1.1 atmosphere pressure",
-              "Only that it must be round and white",
-              "That it must be made of leather",
+              "Simply that it must be a regulation 'size 5' ball",
+              "Spherical, 68-70 cm round, 410-450 g, 0.6-1.1 atmospheres",
+              "Only that it must be round, white and clearly visible",
+              "That it must be made of genuine hand-stitched leather",
             ],
             correctIndex: 1,
             explanation:
@@ -364,10 +364,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "In football vocabulary, what is 'the 6'?",
             options: [
-              "The player wearing shirt number 6",
-              "The defensive/holding midfielder who screens the back line",
-              "The sixth substitute",
-              "The centre-forward",
+              "The outfield player wearing squad shirt number 6",
+              "The holding midfielder screening the back line",
+              "The sixth substitute listed on the teamsheet",
+              "The centre-forward leading the attacking line",
             ],
             correctIndex: 1,
             explanation:
@@ -377,10 +377,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "Where may the goalkeeper handle the ball?",
             options: [
-              "Anywhere in their own half",
-              "Only inside their own penalty area",
-              "Anywhere, at any time",
-              "Only inside the goal area (six-yard box)",
+              "Anywhere inside their own half of the pitch",
+              "Only within their own team's penalty area",
+              "Anywhere on the field of play, at any time",
+              "Only inside the goal area, the six-yard box",
             ],
             correctIndex: 1,
             explanation:
@@ -390,10 +390,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "The fourth official's board shows a minimum of 4 added minutes. The referee plays 6. Is that legal?",
             options: [
-              "No, the board is binding",
-              "Yes, the board shows the minimum; Law 7 makes the allowance for time lost the referee's judgement",
-              "Only if a goal is scored",
-              "Only in extra time",
+              "No, the fourth official's board is binding",
+              "Yes, the board shows only the minimum added time",
+              "Only if a goal is scored during the added time",
+              "Only during extra time in knockout matches",
             ],
             correctIndex: 1,
             explanation:
@@ -403,10 +403,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "When is the ball out of play?",
             options: [
-              "As soon as any part of it crosses the line",
-              "Only when it has WHOLLY crossed the line, on the ground or in the air",
+              "As soon as any part of the ball crosses the line",
+              "Only once it has wholly crossed the line entirely",
               "When the referee says so, regardless of the line",
-              "When it touches the advertising boards",
+              "As soon as it touches the advertising hoardings",
             ],
             correctIndex: 1,
             explanation:
@@ -416,10 +416,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "The scores are level at full time in a league match. What do the Laws require?",
             options: [
-              "Extra time, then penalties",
-              "Nothing, Law 10 allows a match to end as a draw; extra time and penalties exist only if COMPETITION rules require a winner",
-              "A replay",
-              "A coin toss",
+              "Extra time, then kicks from the penalty mark",
+              "Nothing, Law 10 allows the match to end a draw",
+              "A replay staged at the drawing team's ground",
+              "A coin toss refereed to decide the winner",
             ],
             correctIndex: 1,
             explanation:
@@ -429,10 +429,10 @@ So a 0-0 draw is a legitimate, complete, finished football match. American viewe
           {
             prompt: "Which statement about kick-off is correct under Law 8?",
             options: [
-              "The ball must be played forward",
+              "The ball must be played forward before anyone else touches it",
               "The ball must be touched by two players before it is in play",
-              "The ball is in play once it is kicked and clearly moves, and a goal may be scored directly from kick-off",
-              "A goal cannot be scored directly from kick-off",
+              "The ball is in play once kicked, and a goal may be scored direct",
+              "A goal can never be scored directly from the kick-off restart",
             ],
             correctIndex: 2,
             explanation:
@@ -711,7 +711,7 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "What do the Laws of the Game specify about passing, shooting and dribbling technique?",
             options: [
-              "Law 12 sets out the legal passing surfaces",
+              "Law 12 sets out the legal passing surfaces to use",
               "Nothing, technique is entirely coaching convention",
               "Law 2 requires that the ball be struck with the instep",
               "The Laws mandate two-footedness at youth level",
@@ -724,10 +724,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "What is the purpose of an 'open' or directional first touch?",
             options: [
-              "To stop the ball completely dead so you can look up",
-              "To take the ball INTO the space you have already chosen, turning one action into two",
+              "To stop the ball completely dead before you look up",
+              "To take the ball INTO the space you have already chosen",
               "To keep the ball as close to your standing foot as possible",
-              "To slow the game down",
+              "To slow the game down and kill the tempo deliberately",
             ],
             correctIndex: 1,
             explanation:
@@ -737,10 +737,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "Your team-mate is about to be closed down hard. How should you weight the pass?",
             options: [
-              "Softly, so it is easy to control",
-              "Firmly, a hard pass arrives sooner and buys them the time the defender is trying to take",
-              "Chip it over their head",
-              "Weight is irrelevant; only accuracy matters",
+              "Softly, so it is always easy to bring under control",
+              "Firmly, a hard pass arrives sooner and buys them time",
+              "Chip it up and over the closing defender's head",
+              "Weight is irrelevant, only pass accuracy ever matters",
             ],
             correctIndex: 1,
             explanation:
@@ -750,10 +750,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "What distinguishes 'running with the ball' from 'dribbling'?",
             options: [
-              "They are the same thing",
-              "Running with the ball covers space at speed with big touches when nobody is in front of you; dribbling beats a defender who IS in front of you",
-              "Dribbling is only legal in the attacking third",
-              "Running with the ball is only for defenders",
+              "They are simply two different names for the same action",
+              "Running covers ground at speed; dribbling beats a defender",
+              "Dribbling is only ever legal in the final attacking third",
+              "Running with the ball is a technique only for defenders",
             ],
             correctIndex: 1,
             explanation:
@@ -763,10 +763,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "Why does a step-over fail if it isn't followed by acceleration?",
             options: [
-              "Because the referee will call it a foul",
-              "Because the trick only makes the defender commit their weight, the change of pace is what actually beats them",
-              "Because step-overs are illegal in most competitions",
-              "It doesn't fail; the trick alone is enough",
+              "Because the referee will always call the trick a foul",
+              "The trick only commits the defender; the pace beats them",
+              "Because step-overs are now illegal in most competitions",
+              "It doesn't fail, the trick by itself is always enough",
             ],
             correctIndex: 1,
             explanation:
@@ -776,10 +776,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "Where on the pitch is it most sensible to take defenders on, and why?",
             options: [
-              "In your own defensive third, it draws pressure away",
-              "In the attacking third, especially wide, the worst outcome is a throw-in, the best is a goal",
-              "In central midfield, because there is more space",
-              "Anywhere; the risk is identical across the pitch",
+              "In your own defensive third, since it draws pressure away",
+              "In the attacking third out wide, where losing it costs least",
+              "In central midfield, because there is far more space there",
+              "Anywhere, since the risk is identical across the pitch",
             ],
             correctIndex: 1,
             explanation:
@@ -789,10 +789,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "Where should the non-kicking (plant) foot go when driving a shot, and why?",
             options: [
-              "Well behind the ball, so you can get more power",
-              "Beside the ball, pointing at the target, planting behind it makes you lean back and lift the shot",
-              "Directly on top of the ball",
-              "It doesn't matter",
+              "Well behind the ball, so that you can generate more power",
+              "Beside the ball, pointing at the target, not behind it",
+              "Planted directly on top of the ball at the moment of contact",
+              "It genuinely doesn't matter where the plant foot lands",
             ],
             correctIndex: 1,
             explanation:
@@ -802,10 +802,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "What two factors most determine the probability that a shot becomes a goal?",
             options: [
-              "Power and spin",
-              "Distance from goal and angle (how much of the goal you can see)",
-              "Which foot you use and the weather",
-              "The goalkeeper's height and the crowd noise",
+              "The raw striking power and the amount of spin",
+              "Distance from goal and the shooting angle available",
+              "Which foot you use and the day's weather conditions",
+              "The goalkeeper's height and the level of crowd noise",
             ],
             correctIndex: 1,
             explanation:
@@ -815,10 +815,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "Why do coaches insist on low shots?",
             options: [
-              "Low shots are worth more goals",
-              "Getting down is slower for a goalkeeper than reaching up; low shots can also deflect in or produce rebounds",
-              "The Laws penalise shots above the crossbar",
-              "It is purely aesthetic preference",
+              "Low shots are somehow worth more than a single goal",
+              "Getting down is slower for a keeper than reaching up",
+              "The Laws now penalise any shot struck above the crossbar",
+              "It is purely an aesthetic and stylistic preference",
             ],
             correctIndex: 1,
             explanation:
@@ -828,10 +828,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "Law 12 defines three levels of a foul challenge. Which one requires a RED card?",
             options: [
-              "Careless, a lack of attention or consideration",
-              "Reckless, disregard for the danger to or consequences for an opponent",
-              "Using excessive force, exceeding necessary force and/or endangering the safety of an opponent",
-              "Any challenge involving contact",
+              "Careless, showing a lack of attention or consideration",
+              "Reckless, with disregard for the danger to an opponent",
+              "Using excessive force or endangering an opponent's safety",
+              "Any challenge that involves any physical contact at all",
             ],
             correctIndex: 2,
             explanation:
@@ -841,10 +841,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "What is meant by 'showing' an attacker in one-v-one defending?",
             options: [
-              "Pointing at where you want your team-mates to go",
-              "Angling your body so the only route past you is the one you want them to take, weak foot, touchline, away from goal",
-              "Standing square so you can cover both sides equally",
-              "Diving in to force a mistake",
+              "Pointing to show where you want your team-mates to go",
+              "Angling your body so their only route is the one you want",
+              "Standing square on so you can cover both sides equally",
+              "Diving straight in to force the attacker into a mistake",
             ],
             correctIndex: 1,
             explanation:
@@ -854,10 +854,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "You are the last defender and a counter-attack is coming at you. What is your job?",
             options: [
-              "Win the ball immediately with a slide tackle",
-              "Delay, stay on your feet, retreat, force them wide, buy seconds for team-mates to recover",
-              "Foul the attacker to stop the attack",
-              "Step up to play them offside",
+              "Win the ball back immediately with a hard slide tackle",
+              "Delay, stay on your feet, retreat and force them wide",
+              "Cynically foul the attacker to stop the whole attack",
+              "Step up sharply and try to play them all offside",
             ],
             correctIndex: 1,
             explanation:
@@ -867,10 +867,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "A team-mate deliberately KICKS the ball back to the goalkeeper inside the penalty area and the goalkeeper picks it up. What is the restart?",
             options: [
-              "A penalty kick",
-              "An indirect free kick, with no disciplinary sanction in the ordinary case",
-              "A direct free kick",
-              "Play continues, the back-pass rule was abolished",
+              "A penalty kick to the attacking side from the spot",
+              "An indirect free kick, with no card in the usual case",
+              "A direct free kick to the attacking side, no card",
+              "Play continues; the back-pass rule was long abolished",
             ],
             correctIndex: 1,
             explanation:
@@ -880,10 +880,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "A team-mate deliberately CHESTS the ball back to the goalkeeper. May the goalkeeper handle it?",
             options: [
-              "No, any deliberate pass back may not be handled",
-              "Yes, the restriction applies to a deliberate KICK; a chest, head or knee pass may be handled unless it was a deliberate trick to circumvent the Law",
-              "Only if the goalkeeper is outside the six-yard box",
-              "Only in youth football",
+              "No, any deliberate pass back at all may not be handled",
+              "Yes, the restriction covers only a deliberate KICK back",
+              "Only if the goalkeeper stays outside the six-yard box",
+              "Only allowed in youth and grassroots-level football",
             ],
             correctIndex: 1,
             explanation:
@@ -893,10 +893,10 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
           {
             prompt: "What does it mean for a goalkeeper to 'narrow the angle'?",
             options: [
-              "Standing on the goal line to cover both corners",
-              "Advancing off the line towards the ball so the striker can see less of the goal",
+              "Standing back on the goal line to cover both corners",
+              "Advancing off the line so the striker sees less of the goal",
               "Standing at the near post regardless of where the ball is",
-              "Diving early to guess the shot",
+              "Diving down early to gamble on where the shot will go",
             ],
             correctIndex: 1,
             explanation:
@@ -1317,10 +1317,10 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "Who writes the Laws of the Game?",
             options: [
-              "FIFA",
+              "FIFA's ruling council at its annual congress",
               "The IFAB (International Football Association Board)",
-              "UEFA and the other confederations jointly",
-              "The Football Association of England alone",
+              "UEFA together with the other five confederations",
+              "The Football Association of England on its own",
             ],
             correctIndex: 1,
             explanation:
@@ -1330,10 +1330,10 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "How many votes does FIFA hold on The IFAB, and how many are needed to change a Law?",
             options: [
-              "4 of 8; a change needs 6 (a three-quarters majority)",
-              "8 of 8; FIFA has absolute control",
-              "1 of 5; each member has one vote",
-              "4 of 8; a simple majority of 5 is enough",
+              "4 of 8; a change needs 6, a three-quarters majority",
+              "8 of 8; FIFA holds outright, absolute control",
+              "1 of 5; every member body holds one equal vote",
+              "4 of 8; a simple majority of 5 votes is enough",
             ],
             correctIndex: 0,
             explanation:
@@ -1343,9 +1343,9 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "How many Laws of the Game are there, and what is the current edition?",
             options: [
-              "16 Laws; the 2025/26 edition",
-              "17 Laws; the Laws of the Game 2026/27, effective 1 July 2026",
-              "18 Laws; revised every four years before each World Cup",
+              "16 Laws in the current 2025/26 published edition",
+              "17 Laws; the 2026/27 edition, effective 1 July 2026",
+              "18 Laws, revised every four years before a World Cup",
               "17 Laws, but they have not been revised since 1997",
             ],
             correctIndex: 1,
@@ -1359,7 +1359,7 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
               "'Offside is judged at the moment the ball is received.'",
               "'It is not an offence to be in an offside position.'",
               "'A player level with the last defender is offside.'",
-              "'Offside applies only in the attacking third.'",
+              "'Offside applies only within the attacking third.'",
             ],
             correctIndex: 1,
             explanation:
@@ -1369,10 +1369,10 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "Which parts of the body are considered when judging offside position?",
             options: [
-              "Every part of the body, including hands and arms",
-              "Head, body and feet, hands and arms are NOT considered, for any player including goalkeepers",
-              "Only the feet",
-              "Only the part of the body nearest the goal, whatever it is",
+              "Every part of the body, including the hands and arms",
+              "Head, body and feet; hands and arms are NOT considered",
+              "Only the feet and the lower legs of the attacker",
+              "Only the body part nearest the goal, whatever it is",
             ],
             correctIndex: 1,
             explanation:
@@ -1382,10 +1382,10 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "A defender attempts a controlled headed clearance, mishits it, and it falls to an attacker who was in an offside position when the pass was played. The attacker scores. What is the decision?",
             options: [
-              "Offside, the attacker gained an advantage",
-              "Goal, the defender deliberately played the ball, and Law 11 says an inaccurate clearance does not negate that",
-              "Indirect free kick to the defending team",
-              "Drop ball",
+              "Offside, because the attacker gained an advantage",
+              "Goal, a deliberate play resets offside even if mishit",
+              "Indirect free kick awarded to the defending team",
+              "A dropped ball to restart play for the defence",
             ],
             correctIndex: 1,
             explanation:
@@ -1395,10 +1395,10 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "From which restarts can a player NEVER be offside?",
             options: [
-              "Free kicks and penalties",
+              "Free kicks and penalty kicks alike",
               "Goal kick, throw-in, and corner kick",
-              "Kick-off and dropped ball",
-              "Only the throw-in",
+              "The kick-off and any dropped ball",
+              "Only from the throw-in restart",
             ],
             correctIndex: 1,
             explanation:
@@ -1408,10 +1408,10 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "What does Law 12 state as the framing principle for handball?",
             options: [
-              "'Any contact between the ball and the hand or arm is an offence.'",
-              "'Not every touch of a player's hand/arm with the ball is an offence.'",
-              "'Handball is always a deliberate act.'",
-              "'Handball is judged only inside the penalty area.'",
+              "'Any ball contact with the hand or arm is an offence.'",
+              "'Not every hand or arm touch of the ball is an offence.'",
+              "'Handball is by definition always a deliberate act.'",
+              "'Handball can only be judged inside the penalty area.'",
             ],
             correctIndex: 1,
             explanation:
@@ -1421,10 +1421,10 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "Under the CURRENT (2026/27) Law 12, when does an accidental handball void a goal?",
             options: [
-              "Whenever the ball accidentally touches any attacking player's arm anywhere in the build-up",
-              "Only for the scorer, directly off their own hand/arm, or immediately after it touched their own hand/arm",
-              "Never, accidental handball never affects a goal",
-              "Only if the referee judges it deliberate",
+              "Whenever it touches any attacker's arm during the build-up",
+              "Only for the scorer, directly or immediately off their own arm",
+              "Never; an accidental handball never affects a goal at all",
+              "Only if the referee judges the handball to be deliberate",
             ],
             correctIndex: 1,
             explanation:
@@ -1441,7 +1441,7 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           },
           {
             prompt: "Which Law contains VAR?",
-            options: ["Law 6 (The Other Match Officials)", "Law 5 (The Referee), section 4", "Its own Law, number 18", "Law 12"],
+            options: ["Law 6 (The Other Match Officials)", "Law 5 (The Referee), section 4", "Its own separate Law, number 18", "Law 12 (Fouls and Misconduct)"],
             correctIndex: 1,
             explanation:
               "VAR is in Law 5 §4, plus a separate VAR protocol section in the same book. There is no Law 18, there are exactly 17 Laws.",
@@ -1450,9 +1450,9 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "What is the threshold for a VAR intervention?",
             options: [
-              "Any decision a team disputes",
+              "Any on-field decision that either team formally disputes",
               "A 'clear and obvious error' or a 'serious missed incident'",
-              "Any incident inside the penalty area",
+              "Any incident at all occurring inside the penalty area",
               "Whenever the broadcaster's replay shows a different angle",
             ],
             correctIndex: 1,
@@ -1463,9 +1463,9 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "Which of these is NOT a VAR-reviewable category in 2026/27?",
             options: [
-              "Goal / no goal",
-              "Penalty / no penalty",
-              "A yellow card for a midfield foul that the referee intended to give",
+              "Whether a legitimate goal was scored: goal or no goal",
+              "Whether a penalty should be awarded: penalty or not",
+              "A yellow card for a midfield foul the referee meant to give",
               "Mistaken identity when the referee cards the wrong player",
             ],
             correctIndex: 2,
@@ -1476,10 +1476,10 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "Is VAR mandatory in football?",
             options: [
-              "Yes, all competitions must use it",
-              "No, Law 5 permits it only where the organiser meets the VAR Handbook requirements and has written permission from FIFA",
-              "Yes, but only in professional leagues",
-              "It is required by IFAB statute in all matches above under-16 level",
+              "Yes, every competition worldwide is now required to use it",
+              "No, only where the organiser meets FIFA's VAR requirements",
+              "Yes, but only within the professional senior men's leagues",
+              "It is required by IFAB statute in all matches above under-16",
             ],
             correctIndex: 1,
             explanation:
@@ -1489,10 +1489,10 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
           {
             prompt: "Under Law 16, must a goal kick leave the penalty area before the ball is in play?",
             options: [
-              "Yes, that has always been the rule",
-              "No, the ball is in play as soon as it is kicked and clearly moves, which is why keepers now pass short to a defender inside the box",
-              "Only in matches with VAR",
-              "Only if the opposition presses",
+              "Yes, that has always been the long-standing Law 16 rule",
+              "No, it is in play once kicked and moving, so keepers pass short",
+              "Only in top-flight senior matches that are played with VAR",
+              "Only when the opposing team actively chooses to press high",
             ],
             correctIndex: 1,
             explanation:
@@ -1738,9 +1738,9 @@ Almost everybody watches the ball. The ball is the least informative object on t
             prompt: "How is a formation read, and why do the numbers add to ten?",
             options: [
               "Front to back; ten because one player is always suspended",
-              "Back to front, excluding the goalkeeper, ten outfield players plus the keeper makes eleven",
-              "Back to front, including the goalkeeper",
-              "The order is arbitrary",
+              "Back to front, excluding the keeper; ten outfield plus one",
+              "Read back to front, this time including the goalkeeper",
+              "The reading order is entirely arbitrary and unfixed",
             ],
             correctIndex: 1,
             explanation:
@@ -1750,9 +1750,9 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Why does 'we play 4-3-3' tell you very little about a team?",
             options: [
-              "Because 4-3-3 is illegal in most competitions",
-              "Because a formation is at least three shapes, one in possession, one out of possession, one in transition",
-              "Because formations are decided by the referee",
+              "Because a 4-3-3 is now illegal in most competitions",
+              "Because a formation is really three shapes, not one",
+              "Because a team's formation is decided by the referee",
               "Because all formations are functionally identical",
             ],
             correctIndex: 1,
@@ -1763,10 +1763,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Which of these is the weakness of a 4-4-2 against most modern shapes?",
             options: [
-              "It has no strikers",
+              "It leaves a team with no genuine recognised strikers",
               "It is outnumbered in central midfield (two against three)",
-              "It cannot defend set pieces",
-              "It is illegal under Law 3",
+              "It cannot properly defend against most set pieces",
+              "It is outright illegal under the Laws of the Game",
             ],
             correctIndex: 1,
             explanation:
@@ -1776,10 +1776,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "What is the actual purpose of keeping possession of the ball?",
             options: [
-              "To run down the clock",
-              "To MOVE the opposition, a defence that never has to move cannot be broken down",
-              "To improve the team's passing statistics",
-              "To tire out the opposition's goalkeeper",
+              "To run down the match clock and kill off the game",
+              "To MOVE the opposition; a static defence cannot break",
+              "To improve the team's overall passing statistics",
+              "To gradually tire out the opposition's goalkeeper",
             ],
             correctIndex: 1,
             explanation:
@@ -1789,10 +1789,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Why is the space 'between the lines' the most valuable area of the pitch?",
             options: [
-              "Because the Laws grant extra protection there",
-              "Because a player receiving there faces the goal with defenders behind them, while the midfielders who should mark them are in front and running the wrong way",
-              "Because it is closest to the goal",
-              "Because offside does not apply there",
+              "Because the Laws grant players extra protection there",
+              "Because a receiver there faces goal, behind the midfield",
+              "Because it is by far the closest area to the goal itself",
+              "Because the offside law does not apply there at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1802,10 +1802,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Why do teams deliberately pass out from the back instead of kicking long?",
             options: [
-              "To show off technical ability",
-              "To invite the press, if opponents come forward to hunt the ball, they leave space behind, and one pass through the press attacks a stretched defence",
-              "Because Law 16 requires it",
-              "To reduce the goalkeeper's workload",
+              "To show off the team's technical ability on the ball",
+              "To invite the press, so one pass through it finds space",
+              "Because Law 16 of the Laws of the Game requires it",
+              "To reduce the goalkeeper's overall workload in the game",
             ],
             correctIndex: 1,
             explanation:
@@ -1815,10 +1815,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Your opponents have crowded everyone to one flank to trap you. What is the highest-value pass?",
             options: [
-              "A pass backwards to the goalkeeper",
+              "A cautious pass backwards to the goalkeeper's feet",
               "A switch of play, a long flat pass to the empty far side",
-              "A short pass into the crowded area",
-              "A long ball down the same flank",
+              "A short pass played into the crowded near-side flank",
+              "A hopeful long ball hit down the same crowded flank",
             ],
             correctIndex: 1,
             explanation:
@@ -1828,10 +1828,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "What is the trade-off of a high press?",
             options: [
-              "It wins the ball near the opponent's goal but leaves space behind a high defensive line",
-              "It is safer than a low block in every respect",
-              "It requires only the strikers to work hard",
-              "It is prohibited above youth level",
+              "It wins the ball high but leaves space behind the line",
+              "It is genuinely safer than a low block in every respect",
+              "It only ever requires the front strikers to work hard",
+              "It is outright prohibited above youth age levels",
             ],
             correctIndex: 0,
             explanation:
@@ -1841,10 +1841,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Is a low block a sign of a cowardly or unambitious team?",
             options: [
-              "Yes, good teams always press high",
-              "No, it is a legitimate strategy that surrenders territory in exchange for denying space near your own goal, and it pairs naturally with the counter-attack",
-              "Yes, and it is penalised as time-wasting",
-              "It is only legal when a team is a player short",
+              "Yes, since all genuinely good teams always press high up",
+              "No, it trades territory to deny space and suits the counter",
+              "Yes, and it is actively penalised as deliberate time-wasting",
+              "It is only legal when a team is a player short on the pitch",
             ],
             correctIndex: 1,
             explanation:
@@ -1854,10 +1854,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "What is the most dangerous moment in football for a team, and why?",
             options: [
-              "The moment they win the ball, because they may be caught out of shape",
-              "The moment they LOSE the ball, because they were attacking, so they are spread out, high, and off balance",
-              "A corner against them",
-              "The first minute of the second half",
+              "The moment they win the ball, when they may be out of shape",
+              "The moment they LOSE the ball, spread out, high and off balance",
+              "A dangerous defensive corner conceded right against them",
+              "The opening minutes of the second half after the restart",
             ],
             correctIndex: 1,
             explanation:
@@ -1867,10 +1867,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Why is the offside trap high-risk?",
             options: [
-              "Because Law 11 makes it an offence",
-              "Because one defender who fails to step up (or steps late) plays everyone onside, leaving the whole line behind the ball",
-              "Because VAR always overturns it",
-              "Because it requires the goalkeeper to leave the area",
+              "Because Law 11 of the Laws makes the whole trap an offence",
+              "Because one defender stepping late plays the attackers onside",
+              "Because modern VAR nearly always overturns it in time",
+              "Because it requires the goalkeeper to leave the penalty area",
             ],
             correctIndex: 1,
             explanation:
@@ -1880,10 +1880,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Why are set pieces disproportionately valuable for a weaker team?",
             options: [
-              "Because referees award more of them to underdogs",
-              "Because they are the only rehearsable moments in football, stopped, positioned, and repeatable",
-              "Because the offside law is suspended during them",
-              "Because they carry more points",
+              "Because referees tend to award more of them to underdogs",
+              "Because they are football's only rehearsable, repeatable moments",
+              "Because the offside law is entirely suspended during them",
+              "Because a set-piece goal officially carries even more points",
             ],
             correctIndex: 1,
             explanation:
@@ -1893,10 +1893,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "Why is a long throw-in into the box so dangerous?",
             options: [
-              "Because a goal can be scored directly from it",
-              "Because it is a free cross that the opposition cannot be offside against, Law 11 says no offside directly from a throw-in",
-              "Because defenders must stay 10 yards away",
-              "Because the goalkeeper may not handle it",
+              "Because a goal can be scored directly from the throw",
+              "Because it is a free cross with no offside from a throw-in",
+              "Because defenders must all stay a full 10 yards away",
+              "Because the goalkeeper is not allowed to handle it",
             ],
             correctIndex: 1,
             explanation:
@@ -1906,10 +1906,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "What does an inswinging corner do that an outswinger does not?",
             options: [
-              "It curls TOWARDS the goal, attacking the goalkeeper, a flick anywhere is dangerous and the keeper must commit",
-              "It guarantees a header on target",
-              "It removes the offside law",
-              "It must be taken with the weaker foot",
+              "It curls TOWARDS goal, so the keeper must commit early",
+              "It somehow guarantees a clean header on target",
+              "It completely removes the offside law from that play",
+              "It must by rule be taken only with the weaker foot",
             ],
             correctIndex: 0,
             explanation:
@@ -1919,10 +1919,10 @@ Almost everybody watches the ball. The ball is the least informative object on t
           {
             prompt: "You want to actually read a match rather than just watch it. What is the single best exercise?",
             options: [
-              "Follow the ball closely at all times",
-              "Pick one off-ball player, a full-back or holding midfielder, and watch only them for five minutes",
-              "Watch only the replays",
-              "Track the score minute by minute",
+              "Follow the ball itself closely at absolutely all times",
+              "Pick one off-ball player and watch only them for five minutes",
+              "Watch only the slow-motion television replays throughout",
+              "Track only the running scoreline closely minute by minute",
             ],
             correctIndex: 1,
             explanation:
@@ -2175,10 +2175,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "Did England invent football?",
             options: [
-              "Yes, the game did not exist anywhere before 1863",
-              "No, England CODIFIED it. Ball games arose independently in many cultures; England wrote the rulebook others agreed to use",
-              "No, football was invented in China and imported directly to England",
-              "Yes, and FIFA officially recognises 1863 as the invention of ball sport",
+              "Yes, the game did not exist anywhere at all before 1863",
+              "No, England CODIFIED it; ball games arose in many cultures",
+              "No, it was invented in China and imported to England",
+              "Yes, and FIFA recognises 1863 as the birth of ball sport",
             ],
             correctIndex: 1,
             explanation:
@@ -2188,10 +2188,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "What is FIFA's actual, carefully-worded claim about cuju?",
             options: [
-              "That cuju is the direct ancestor of modern football",
-              "That cuju is 'the earliest form of football for which there is scientific evidence'",
-              "That cuju was invented in England and exported to China",
-              "That cuju had no rules",
+              "That cuju is the single direct, proven ancestor of modern football",
+              "That cuju is the 'earliest form of football' with scientific evidence",
+              "That cuju was actually invented in England and later exported to China",
+              "That cuju was an informal folk game with no fixed rules at all",
             ],
             correctIndex: 1,
             explanation:
@@ -2201,10 +2201,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "Which two practical pressures pushed England to codify football when it did?",
             options: [
-              "Royal decree and a papal ban",
-              "Public schools that could not play each other because their rules differed, and industrialisation (free Saturday afternoons, cities, railways)",
-              "Television rights and sponsorship",
-              "A shortage of rugby balls",
+              "A royal decree combined with a formal papal ban on games",
+              "Public schools with clashing rules, plus industrialisation",
+              "The sale of television rights and commercial sponsorship",
+              "A sudden nationwide shortage of usable rugby balls",
             ],
             correctIndex: 1,
             explanation:
@@ -2214,10 +2214,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "Where and when was the Football Association founded?",
             options: [
-              "Wembley Stadium, 1888",
+              "Wembley Stadium, London, on 28 April 1888",
               "The Freemasons' Tavern, London, 26 October 1863",
-              "Manchester, 17 April 1888",
-              "Paris, 21 May 1904",
+              "Manchester Town Hall, on the 17 April 1888",
+              "the Rue Saint-Honoré, Paris, 21 May 1904",
             ],
             correctIndex: 1,
             explanation:
@@ -2227,10 +2227,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "Football and rugby split in 1863 over which two questions?",
             options: [
-              "The size of the ball and the number of players",
-              "Handling (may you run with the ball in your hands?) and hacking (may you kick an opponent in the shins?)",
+              "The legal size of the ball and the total number of players",
+              "Handling the ball in the hands, and hacking an opponent's shins",
               "Whether to allow substitutes, and the length of the match",
-              "Professionalism and gate money",
+              "Player professionalism and the equal splitting of gate money",
             ],
             correctIndex: 1,
             explanation:
@@ -2240,10 +2240,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "Why did The FA legalise professionalism in 1885?",
             options: [
-              "Because FIFA required it",
-              "Because working-class northern clubs were already paying players quietly, and the FA had to choose between enforcing amateurism (and splitting the sport) or admitting reality",
-              "To make football more exclusive",
-              "To fund the construction of Wembley",
+              "Because FIFA had formally required the FA to legalise it",
+              "Because northern clubs already paid players, so the FA gave in",
+              "To make the whole sport far more socially exclusive again",
+              "To raise the money to fund the construction of Wembley",
             ],
             correctIndex: 1,
             explanation:
@@ -2265,7 +2265,7 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           },
           {
             prompt: "Which country won the first FIFA World Cup, and when?",
-            options: ["Brazil, 1950", "Uruguay, 1930, as hosts", "England, 1966", "Italy, 1934"],
+            options: ["Brazil, the hosts, in 1950", "Uruguay, the hosts, in 1930", "England, the hosts, in 1966", "Italy, the hosts, in 1934"],
             correctIndex: 1,
             explanation:
               "Uruguay beat Argentina 4-2 in the 1930 final in Montevideo. It demolishes the assumption that football's centre of gravity has always been European, South America was dominant almost immediately.",
@@ -2275,8 +2275,8 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
             prompt: "When and where was the first FIFA Women's World Cup, and who won it?",
             options: [
               "1991, China, the United States beat Norway 2-1",
-              "1999, USA, the United States beat China",
-              "1971, Mexico, Denmark won",
+              "1999, USA, the United States beat China on penalties",
+              "1971, Mexico, Denmark won the unofficial tournament",
               "1930, Uruguay, held alongside the men's tournament",
             ],
             correctIndex: 0,
@@ -2287,10 +2287,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "State the structural reality of modern football's economics.",
             options: [
-              "The richest leagues and the best players are both concentrated in Europe",
-              "The richest LEAGUES are concentrated in western Europe; the PLAYERS are not, European clubs recruit globally and capture the value those players create",
-              "Football's wealth is distributed evenly across the six confederations",
-              "South America is the wealthiest football market",
+              "The richest leagues and best players are all based in Europe",
+              "The richest LEAGUES sit in western Europe; the PLAYERS do not",
+              "Football's wealth is spread evenly across the six confederations",
+              "South America is now the single wealthiest football market",
             ],
             correctIndex: 1,
             explanation:
@@ -2300,10 +2300,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "In 1921, why did the FA move against women's football?",
             options: [
-              "Because nobody was watching it",
-              "Because it was SUCCEEDING, drawing enormous crowds and large charitable revenues",
-              "Because the players demanded professional contracts",
-              "Because The IFAB instructed it to",
+              "Because almost nobody at all was turning up to watch it",
+              "Because it was SUCCEEDING, drawing huge crowds and revenues",
+              "Because the women players demanded professional contracts",
+              "Because The IFAB had formally instructed the FA to do it",
             ],
             correctIndex: 1,
             explanation:
@@ -2314,9 +2314,9 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
             prompt: "What did the FA's 5 December 1921 resolution actually do?",
             options: [
               "Made it illegal for women to play football anywhere in England",
-              "Requested that FA member clubs refuse the use of their grounds for women's matches",
-              "Imposed a fine on any woman who played",
-              "Required women's teams to play with a smaller ball",
+              "Asked member clubs to refuse their grounds to women's teams",
+              "Imposed a heavy financial fine on any woman who played",
+              "Required all women's teams to play with a smaller ball",
             ],
             correctIndex: 1,
             explanation:
@@ -2326,10 +2326,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "What crowd figure is given for the Dick, Kerr Ladies match at Goodison Park on Boxing Day 1920?",
             options: [
-              "Exactly 53,000, the figure is settled and undisputed",
-              "The figure is DISPUTED: the most-cited number is 53,000, but some accounts give at least 46,000, with thousands more locked out",
-              "About 5,000",
-              "No attendance was ever recorded",
+              "Exactly 53,000; the figure is settled and quite undisputed",
+              "The figure is DISPUTED: most cite 53,000, some give 46,000+",
+              "Only about 5,000, a fairly modest local crowd that day",
+              "No official attendance figure was ever recorded at all",
             ],
             correctIndex: 1,
             explanation:
@@ -2338,7 +2338,7 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           },
           {
             prompt: "How long did the FA's ban on women playing at member grounds last?",
-            options: ["Five years", "Twenty years", "Fifty years, 1921 until 1971", "It has never been lifted"],
+            options: ["About five short years", "Around twenty full years", "Fifty years, 1921 until 1971", "It has never been lifted"],
             correctIndex: 2,
             explanation:
               "Two full generations of players who never got a stadium, a crowd, a wage, or a career. The stated reason in the minute was that football is 'quite unsuitable for females'.",
@@ -2347,10 +2347,10 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
           {
             prompt: "What was the total attendance at the 2023 FIFA Women's World Cup?",
             options: [
-              "1,978,274 across 64 matches, the largest in the tournament's history",
-              "About 350,000",
-              "Roughly 5 million",
-              "FIFA has never published the figure",
+              "1,978,274 across 64 matches, the largest ever",
+              "Roughly 350,000 across all of the 64 matches",
+              "Roughly 5 million spread across all 64 matches",
+              "FIFA has never once published the official figure",
             ],
             correctIndex: 0,
             explanation:
@@ -2615,10 +2615,10 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
           {
             prompt: "Which of these statements is CORRECT?",
             options: [
-              "UEFA runs the Premier League",
-              "The FA governs English football; the Premier League runs the Premier League; UEFA runs European competitions, three bodies, three jobs",
+              "UEFA directly runs the whole English Premier League",
+              "The FA governs English football; UEFA runs European ones",
               "FIFA runs the Premier League and appoints its referees",
-              "The IFAB approves each league's fixture list",
+              "The IFAB personally approves each league's fixture list",
             ],
             correctIndex: 1,
             explanation:
@@ -2628,9 +2628,9 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
           {
             prompt: "Why do a World Cup match and a high school match use the same 17 Laws without playing the same game?",
             options: [
-              "Because the World Cup uses a secret extra rulebook",
-              "Because the Laws are full of 'where competition rules permit', one rulebook with a MENU of options, and each competition picks from it",
-              "Because FIFA modifies the Laws for elite competition",
+              "Because the World Cup uses its own secret extra rulebook",
+              "Because the Laws offer a MENU each competition picks from",
+              "Because FIFA quietly modifies the Laws for elite competition",
               "Because high school football uses only 12 of the 17 Laws",
             ],
             correctIndex: 1,
@@ -2641,10 +2641,10 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
           {
             prompt: "What is a football 'pyramid'?",
             options: [
-              "A youth development structure",
-              "Stacked divisions connected by promotion and relegation, with no floor, in principle a park team can climb to the top",
-              "The seating arrangement in a stadium",
-              "FIFA's ranking of national teams",
+              "A national youth-team development and coaching structure",
+              "Stacked divisions linked by promotion and relegation, no floor",
+              "The tiered seating and terracing arrangement in a stadium",
+              "FIFA's official world ranking system for national teams",
             ],
             correctIndex: 1,
             explanation:
@@ -2654,10 +2654,10 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
           {
             prompt: "Why is relegation better described as a budgetary catastrophe than a sporting embarrassment?",
             options: [
-              "Because relegated clubs must pay a fine to the league",
-              "Because dropping a division can cost a club a large share of its income, broadcast money, gate, sponsorship, and usually its best players",
-              "Because relegated clubs are expelled from the FA",
-              "It isn't, relegation has no financial consequences",
+              "Because relegated clubs must pay a large fine to the league",
+              "Because dropping a division can cost a club much of its income",
+              "Because relegated clubs are permanently expelled from the FA",
+              "It isn't; relegation has no real financial consequences",
             ],
             correctIndex: 1,
             explanation:
@@ -2667,10 +2667,10 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
           {
             prompt: "How does MLS differ structurally from the English pyramid?",
             options: [
-              "It has more divisions",
-              "It is a CLOSED league, no promotion or relegation; new clubs join by expansion, and it operates as a single entity with a salary cap",
-              "It plays by different Laws of the Game",
-              "It is governed by UEFA",
+              "It simply operates far more professional divisions in total",
+              "It is a CLOSED league, no promotion or relegation, with a cap",
+              "It plays by a slightly different set of the Laws of the Game",
+              "It is directly governed by UEFA rather than by CONCACAF",
             ],
             correctIndex: 1,
             explanation:
@@ -2680,10 +2680,10 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
           {
             prompt: "What is the strongest HONEST argument in favour of a closed league?",
             options: [
-              "It is more traditional",
-              "Financial stability and competitive balance, no relegation risk means long-term investment, and a cap prevents the spending arms race that regularly bankrupts clubs in open pyramids",
-              "It produces better players",
-              "It is required by FIFA",
+              "It is simply a much more traditional and historic structure",
+              "Financial stability; no relegation risk allows long-term investment",
+              "It reliably produces far better, more technically able players",
+              "It is now required outright by FIFA statute for all leagues",
             ],
             correctIndex: 1,
             explanation:
@@ -2694,9 +2694,9 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
             prompt: "Name the three different kinds of competition a club may be playing in during the same month.",
             options: [
               "The league, the domestic cup, and the continental competition",
-              "The league, the World Cup, and the Olympics",
-              "The league, the transfer window, and the playoffs",
-              "The league, the reserve league, and the youth league",
+              "The league, the World Cup, and the summer Olympics tournament",
+              "The league, the transfer window, and the domestic playoffs",
+              "The league, the reserve league, and the academy youth league",
             ],
             correctIndex: 0,
             explanation:
@@ -2708,8 +2708,8 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
             options: [
               "By invitation from the confederation",
               "By league position in their domestic league",
-              "By winning the domestic cup only",
-              "By paying an entry fee",
+              "By winning the domestic knockout cup only",
+              "By simply paying a set annual entry fee",
             ],
             correctIndex: 1,
             explanation:
@@ -2727,10 +2727,10 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
           {
             prompt: "What significant labour change has the NWSL made?",
             options: [
-              "It introduced promotion and relegation",
-              "It abolished its college draft, players now enter as free agents who can negotiate with any club",
-              "It adopted a hard salary cap for the first time",
-              "It merged with MLS",
+              "It has newly introduced full promotion and relegation systems",
+              "It abolished its college draft; players now enter as free agents",
+              "It adopted a hard league salary cap for the very first time",
+              "It has formally merged its whole structure straight into MLS",
             ],
             correctIndex: 1,
             explanation:
@@ -2740,10 +2740,10 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
           {
             prompt: "What is new about the 2026 FIFA World Cup format?",
             options: [
-              "48 teams and 104 matches, in 12 groups of four, with a round of 32",
-              "32 teams in eight groups, as before",
-              "It is the first to be held outside Europe",
-              "It has abolished the group stage entirely",
+              "48 teams, 104 matches, 12 groups of four, a round of 32",
+              "32 teams in eight groups of four, exactly as before",
+              "It is the very first ever to be held outside Europe",
+              "It has completely abolished the group stage entirely",
             ],
             correctIndex: 0,
             explanation:
@@ -2753,10 +2753,10 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
           {
             prompt: "Why is it a mistake to treat western Europe's 'big five' leagues as the whole of football?",
             options: [
-              "Because they are not actually the wealthiest",
-              "Because that tells you about MONEY, not about football, enormous football cultures operate outside it, and the best players have never come only from Europe",
-              "Because they play by different Laws",
-              "Because they are not FIFA members",
+              "Because they are not, in fact, the wealthiest leagues at all",
+              "Because that measures MONEY, not football; huge cultures lie outside",
+              "Because they somehow all play by their own different Laws now",
+              "Because they are somehow not even full FIFA member associations",
             ],
             correctIndex: 1,
             explanation:
@@ -3106,10 +3106,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "Why does a club often sell its best player with a year left on their contract?",
             options: [
-              "Because FIFA requires it",
-              "Because an expired contract makes the player a FREE AGENT who can leave for nothing, so it is the club's last chance to convert them into a fee",
+              "Because FIFA's own transfer regulations formally require it",
+              "Because an expiring contract lets the player leave for nothing",
               "Because transfer fees are highest in a player's final year",
-              "Because the salary cap forces it",
+              "Because the league's strict salary cap simply forces it",
             ],
             correctIndex: 1,
             explanation:
@@ -3119,10 +3119,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "What is the men's world record transfer fee, and does it still stand?",
             options: [
-              "€222 million, Neymar, Barcelona to PSG, August 2017, and it still stands",
+              "€222 million, Neymar to PSG, 2017, and it still stands",
               "€100 million, and it has been broken many times since",
-              "€500 million, set in 2024",
-              "There is no record; fees are confidential",
+              "€500 million, a new record fee set back in 2024",
+              "There is no such record; all fees are kept confidential",
             ],
             correctIndex: 0,
             explanation:
@@ -3132,9 +3132,9 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "What is the women's world record transfer fee, and what makes it notable?",
             options: [
-              "About $1.1 million, Naomi Girma to Chelsea, January 2025, the first women's transfer above $1 million",
-              "About €50 million",
-              "About $767,000, and it has not been broken",
+              "About $1.1 million, Naomi Girma to Chelsea, January 2025",
+              "About €50 million, roughly a men's-scale record fee",
+              "About $767,000, and it has never once been broken",
               "There has never been a paid transfer in women's football",
             ],
             correctIndex: 0,
@@ -3145,10 +3145,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "What is FIFA's Article 19?",
             options: [
-              "The rule requiring VAR at all World Cup matches",
-              "'Protection of minors', international transfers are only permitted if the player is over 18, with narrow listed exceptions",
-              "The salary cap for MLS clubs",
-              "The rule creating the transfer window",
+              "The FIFA rule requiring VAR at all World Cup matches",
+              "'Protection of minors': no international transfer under 18",
+              "The mandatory salary cap set for all of the MLS clubs",
+              "The FIFA rule that first created the transfer window",
             ],
             correctIndex: 1,
             explanation:
@@ -3158,10 +3158,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "Under Article 19's EU/EEA exception for 16-18 year-olds, what must the new club guarantee?",
             options: [
-              "A first-team contract",
-              "Adequate football education AND an academic, school or vocational education allowing a career other than football",
-              "A minimum wage set by FIFA",
-              "Return travel to the player's home country",
+              "A guaranteed senior first-team professional contract",
+              "Adequate football AND academic or vocational education",
+              "A guaranteed minimum player wage as set by FIFA",
+              "Paid annual return travel to the player's home country",
             ],
             correctIndex: 1,
             explanation:
@@ -3171,10 +3171,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "How should the widely-quoted figure of '15,000 young West African players trafficked per year' be treated?",
             options: [
-              "As an established fact, it comes from an NGO",
-              "As a contested hidden-population estimate: the exploitation is real and documented, but nobody has a reliable count",
-              "As a proven undercount",
-              "As a fabrication with no basis at all",
+              "As a firmly established fact, since it comes from an NGO",
+              "As a contested estimate; the abuse is real but the count is not",
+              "As a rigorously proven and verified statistical undercount",
+              "As a complete fabrication with no real factual basis at all",
             ],
             correctIndex: 1,
             explanation:
@@ -3185,9 +3185,9 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
             prompt: "The Guardian's figure of at least 6,500 migrant worker deaths in Qatar counts what, exactly?",
             options: [
               "Deaths of workers on World Cup stadium construction sites",
-              "Deaths of migrant workers from five countries, in Qatar, from ALL causes, in any job or none, over roughly 2010-2020",
-              "Work-related deaths across Qatar in 2020",
-              "Deaths on all projects connected to the tournament",
+              "Deaths of migrants from five countries in Qatar, ALL causes",
+              "Only work-related deaths across all of Qatar during 2020",
+              "Deaths on all building projects connected to the tournament",
             ],
             correctIndex: 1,
             explanation:
@@ -3197,10 +3197,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "Qatar's Supreme Committee reported 3 work-related and 34 non-work-related deaths (37 total). What does that figure count?",
             options: [
-              "All migrant deaths in Qatar",
-              "Deaths among workers on FIFA World Cup STADIUM sites specifically, the narrowest possible definition",
+              "All migrant worker deaths recorded across Qatar",
+              "Deaths among workers on World Cup STADIUM sites only",
               "Deaths across all tournament-connected projects",
-              "Work-related deaths in a single year",
+              "Only work-related deaths recorded in a single year",
             ],
             correctIndex: 1,
             explanation:
@@ -3210,10 +3210,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "Who said that between 400 and 500 migrant workers died on projects connected to the Qatar World Cup?",
             options: [
-              "Amnesty International",
-              "The International Labour Organization",
-              "Hassan Al-Thawadi, Qatar's own World Cup chief, in November 2022",
-              "The Guardian",
+              "Amnesty International, in its detailed 2021 report",
+              "The International Labour Organization, the ILO",
+              "Hassan Al-Thawadi, Qatar's World Cup chief, in 2022",
+              "The Guardian newspaper's own 2021 investigation",
             ],
             correctIndex: 2,
             explanation:
@@ -3223,10 +3223,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "What is the honest conclusion about the death toll of the labour that built Qatar 2022?",
             options: [
-              "It was 6,500",
-              "It was 37",
-              "It is genuinely unknown, largely because the deaths were not investigated, and that absence is itself the finding",
-              "It was 400-500, and the matter is settled",
+              "It was exactly 6,500, and that is a firmly settled figure",
+              "It was officially just 37, and that figure is fully settled",
+              "It is genuinely unknown, because the deaths went uninvestigated",
+              "It was 400 to 500, and the entire matter is now settled",
             ],
             correctIndex: 2,
             explanation:
@@ -3236,10 +3236,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "Why does certifying a worker's death as 'natural causes' without an autopsy matter?",
             options: [
-              "It affects the family's religious rites only",
-              "Because a young healthy man who dies of 'cardiac arrest' after working in extreme heat may have died OF the heat, a workplace condition, and therefore someone's legal responsibility",
-              "It has no practical consequence",
-              "It changes the total published by FIFA",
+              "It only ever affects the grieving family's religious rites",
+              "Because a heat 'cardiac arrest' may really be a workplace death",
+              "In practice it has no real practical consequence at all",
+              "It merely changes the final total figure published by FIFA",
             ],
             correctIndex: 1,
             explanation:
@@ -3249,10 +3249,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "According to the Aspen Institute, how does soccer rank among the costs of major American youth sports?",
             options: [
-              "The cheapest of the four major sports",
-              "The MOST expensive of the four major sports studied, about $1,188 per child per season",
-              "Roughly the same as baseball",
-              "Free, because it is school-based",
+              "Easily the cheapest of the four major sports studied",
+              "The MOST expensive of the four, about $1,188 per season",
+              "Roughly the same seasonal cost as youth baseball",
+              "Effectively free, because it is entirely school-based",
             ],
             correctIndex: 1,
             explanation:
@@ -3262,10 +3262,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "What is the US youth sport participation gap by household income (ages 6-12)?",
             options: [
-              "24% for households at $25,000 or less, versus 40% for households at $100,000 or more",
-              "There is no meaningful gap",
-              "40% versus 42%, the gap is negligible",
-              "10% versus 90%",
+              "24% at under $25,000 versus 40% at $100,000 or more",
+              "There is genuinely no meaningful income gap at all",
+              "40% versus 42%, so the gap is basically negligible",
+              "10% at the lowest incomes versus 90% at the highest",
             ],
             correctIndex: 0,
             explanation:
@@ -3275,10 +3275,10 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
           {
             prompt: "What do the FA's 1921 ban and American pay-to-play have in common?",
             options: [
-              "Both were imposed by FIFA",
-              "Different mechanisms, same result: the people who control ACCESS decide who gets to play, and a system that selects for income or gender is not selecting for ability",
-              "Both were formally rescinded in 1971",
-              "Nothing, they are unrelated",
+              "Both were directly imposed on the whole sport by FIFA itself",
+              "Different mechanisms, same result: access, not ability, decides",
+              "Both were formally and completely rescinded back in 1971",
+              "Nothing at all; the two are genuinely completely unrelated",
             ],
             correctIndex: 1,
             explanation:
@@ -3695,10 +3695,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What does the U.S. Soccer Grassroots referee course involve?",
             options: [
-              "A four-year apprenticeship",
-              "An online component of roughly 4.5 hours plus an in-person field session",
-              "A written exam only, taken at a FIFA centre",
-              "Playing at college level first",
+              "A full four-year formal refereeing apprenticeship",
+              "An online part of roughly 4.5 hours plus a field session",
+              "A single written exam only, taken at a FIFA centre",
+              "Having played competitively at college level first",
             ],
             correctIndex: 1,
             explanation:
@@ -3716,10 +3716,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What is the best defence for a young referee against abuse from adults?",
             options: [
-              "Arguing back forcefully",
-              "Knowing the Laws better than anyone in the ground, being decisive, and reporting abuse to your assignor every time",
-              "Avoiding difficult decisions",
-              "Only refereeing matches involving friends",
+              "Arguing straight back loudly and forcefully every time",
+              "Knowing the Laws, being decisive, and reporting every abuse",
+              "Quietly avoiding all of the most difficult decisions",
+              "Only ever refereeing matches that involve your friends",
             ],
             correctIndex: 1,
             explanation:
@@ -3729,10 +3729,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What is the free first step on the U.S. Soccer coaching ladder?",
             options: [
-              "The National D Licence",
+              "The National D coaching Licence, taken in person",
               "The 'Introduction to Grassroots Coaching' online module",
-              "The UEFA B Licence",
-              "The Pro Licence",
+              "The more advanced UEFA B coaching Licence course",
+              "The elite professional-level Pro Licence course",
             ],
             correctIndex: 1,
             explanation:
@@ -3742,10 +3742,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What must you do before progressing from the grassroots licences to the National D?",
             options: [
-              "Have played professionally",
-              "Take at least two grassroots courses IN PERSON, one of which must be the 11v11 course",
-              "Coach for ten years",
-              "Pass a written exam set by FIFA",
+              "Have previously played the game at a professional level",
+              "Take two grassroots courses IN PERSON, one being the 11v11",
+              "Coach youth teams for a minimum of ten full seasons",
+              "Pass a formal written examination set directly by FIFA",
             ],
             correctIndex: 1,
             explanation:
@@ -3755,10 +3755,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What is the most common mistake in youth coaching sessions?",
             options: [
-              "Too much small-sided play",
-              "Drills where twelve children queue and one touches the ball, a session with a queue in it needs redesigning",
-              "Letting children play without instruction",
-              "Coaching decisions rather than outcomes",
+              "Allowing far too much unstructured small-sided play",
+              "Drills where children queue and only one touches the ball",
+              "Letting the children just play without any instruction",
+              "Coaching only the decisions rather than the outcomes",
             ],
             correctIndex: 1,
             explanation:
@@ -3784,10 +3784,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "Why does the NCAA publish no high-school-to-professional probability for soccer?",
             options: [
-              "Because the figure is too depressing to publish",
-              "Because its pro tables are built from DRAFT data, men's soccer is excluded (entry isn't funnelled through one draft) and the NWSL has discontinued its draft entirely",
-              "Because soccer is not an NCAA sport",
-              "Because FIFA prohibits it",
+              "Because the true figure is simply too depressing to publish",
+              "Because its pro tables use DRAFT data and soccer has no draft",
+              "Because soccer is somehow not an officially listed NCAA sport",
+              "Because FIFA's own governing rules directly prohibit it",
             ],
             correctIndex: 1,
             explanation:
@@ -3797,10 +3797,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What is the honest conclusion of the odds lesson?",
             options: [
-              "Give up football and study something else",
-              "Play, take the college route for the DEGREE, build the other plan alongside rather than after, and point yourself at the industry rather than only the pitch",
-              "Move abroad at 16 to join an academy",
-              "Focus entirely on football and drop everything else",
+              "Give up on football entirely and study something else",
+              "Play, use college for the DEGREE, and aim at the industry too",
+              "Move abroad completely alone at 16 to join an academy",
+              "Focus entirely on the football and drop everything else",
             ],
             correctIndex: 1,
             explanation:
@@ -3810,10 +3810,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "Why is a futsal league an unusually good first business for a young person?",
             options: [
-              "Because it requires no organisation at all",
-              "Indoors (weather-proof revenue), uses spaces that already exist and sit empty, needs only ten players to fill a fixture, and short matches let you run many games per evening on one court",
-              "Because futsal courts are free everywhere",
-              "Because it needs no referee",
+              "Because it supposedly requires no organisation at all",
+              "Indoor and weather-proof, and needs only ten players a game",
+              "Because futsal courts are entirely free almost everywhere",
+              "Because it needs no referee or match officials at all",
             ],
             correctIndex: 1,
             explanation:
@@ -3823,10 +3823,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What most often kills an amateur football club or league?",
             options: [
-              "Poor quality of football",
-              "Money with nobody accountable for it, unreliability (no fixture list, no table, late starts), and no insurance",
-              "Too many players wanting to join",
-              "Playing on grass rather than turf",
+              "A consistently poor overall quality of the football",
+              "Unaccountable money, unreliability, and no insurance cover",
+              "Simply too many players all wanting to join at once",
+              "Choosing to play on grass pitches rather than on turf",
             ],
             correctIndex: 1,
             explanation:
@@ -3836,10 +3836,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "You are 17, want to work in football analysis, and have no contacts. What is the entry test?",
             options: [
-              "A degree in sports science",
-              "A PORTFOLIO, not a CV, analyse a match, write it up, publish it, and do it again",
-              "Having played at academy level",
-              "A FIFA agent licence",
+              "A recognised university degree in sports science",
+              "A PORTFOLIO, not a CV: analyse, write, publish, repeat",
+              "Having previously played at a top academy level",
+              "A formally registered FIFA player-agent licence",
             ],
             correctIndex: 1,
             explanation:
@@ -3849,10 +3849,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What dominates the cost base of a lower-league club, and how can you verify it yourself?",
             options: [
-              "Stadium maintenance; you cannot verify it, as club finances are secret",
-              "Player and staff WAGES, and in England clubs are companies that file accounts publicly, so you can read a real club's revenue and wage bill for free at Companies House",
-              "Travel costs; verified through the league's website",
-              "Broadcast production; verified via FIFA",
+              "Stadium upkeep; you cannot verify it, finances are secret",
+              "Player and staff WAGES; English clubs file public accounts",
+              "Team travel costs; verified through the league's own website",
+              "Broadcast production costs; all verified directly via FIFA",
             ],
             correctIndex: 1,
             explanation:

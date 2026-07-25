@@ -117,6 +117,8 @@ import { WHERE_WE_RESTED_COURSE } from "./data/where-we-rested-course";
 import { WHAT_THEY_BUILT_COURSE } from "./data/what-they-built-course";
 import { WHAT_A_BUSINESS_ENTITY_IS_COURSE } from "./data/what-a-business-entity-is-course";
 import { WHO_HAS_THE_POWER_COURSE } from "./data/who-has-the-power-course";
+import { THE_LOCAL_LAYER_COURSE } from "./data/the-local-layer-course";
+import { FINANCING_WITHOUT_ACCESS_COURSE } from "./data/financing-without-access-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
@@ -756,6 +758,12 @@ async function main() {
     // skill. It is the general case of which What They Built is a worked example, and it says plainly,
     // repeatedly, that it is not legal or tax advice. First of 7 planned path courses.
     { slug: "what-a-business-entity-is", course: WHAT_A_BUSINESS_ENTITY_IS_COURSE, category: "Civics" },
+    // "Financing Without Access" is course 4 of the "How a Business Is Formed" path (plans/46): the
+    // bridge course, historical and global. Fraternal benefit societies, industrial/burial insurance,
+    // building and loan associations, ROSCAs worldwide (susu/tanda/chit fund/tontine), and finance
+    // without interest (Islamic finance). Through-line: when the capital system excludes you, you
+    // invent an entity. The general case of What They Built's fraternal-orders-and-building-loans.
+    { slug: "financing-without-access", course: FINANCING_WITHOUT_ACCESS_COURSE, category: "Civics" },
     // "Who Has the Power to Do This?" is course 1 (the method course) of the "Who Has the Power?" path
     // (plans/46, Path A): given any government action, find the body, its enabling authority, the
     // document that grants it, and who can overturn it. It is the general case of which the route
@@ -763,6 +771,11 @@ async function main() {
     // vs home rule and the special-district layer, and introduces tribal nations as a SEPARATE
     // sovereign, not a rung on the ladder. First of 9 planned path courses.
     { slug: "who-has-the-power", course: WHO_HAS_THE_POWER_COURSE, category: "Civics" },
+    // "The Local Layer" is course 5 of the "Who Has the Power?" path (plans/46, Path A): the level of
+    // government most adults were never taught. Dillon's Rule developed, the municipal forms
+    // (mayor-council, council-manager, commission), special districts (which outnumber cities and
+    // whose elections nobody votes in), town meeting, and Unigov as the "creatures of the state" case.
+    { slug: "the-local-layer", course: THE_LOCAL_LAYER_COURSE, category: "Civics" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:
