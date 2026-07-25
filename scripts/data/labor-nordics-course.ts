@@ -131,10 +131,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "What is true about the national minimum wage in Sweden and Denmark?",
             options: [
-              "It is one of the highest statutory minimum wages in the world",
+              "Both set one of the highest statutory national minimum wages in the world, raised yearly by parliament",
               "There is essentially no statutory national minimum wage, the wage floor is set by collective agreement",
-              "It is set by the EU and applied identically in both countries",
-              "It exists in Denmark but not in Sweden",
+              "A single EU-wide minimum wage is set in Brussels and applied identically across both countries here",
+              "A statutory minimum wage exists in Denmark, but Sweden leaves the entire floor to collective agreement",
             ],
             correctIndex: 1,
             explanation:
@@ -144,10 +144,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "An American student hears 'no minimum-wage law' and assumes wages must be terrible. Why is that backwards?",
             options: [
-              "Because Sweden and Denmark actually do have a secret statutory minimum",
-              "Because the collective-agreement floor is real, high, and covers almost everyone, a full-time worker is generally better protected than one on the $7.25 US federal floor",
-              "Because wages don't matter in the Nordic model",
-              "Because the government pays everyone's wages directly",
+              "Because Sweden and Denmark actually do set a statutory national minimum wage, and a very high one",
+              "Because the collective-agreement floor is real, high, and protects almost everyone in full-time work",
+              "Because wages barely matter here, since a generous welfare state supports workers either way",
+              "Because the government pays a large share of every worker's wage directly out of tax revenue",
             ],
             correctIndex: 1,
             explanation:
@@ -157,10 +157,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "In this model's own logic, why prefer a NEGOTIATED wage floor to a LEGISLATED one?",
             options: [
-              "It is cheaper for the government to administer",
-              "It can be raised each bargaining round without winning a national election, and it avoids a legal floor quietly becoming a ceiling",
-              "It applies only to union members, keeping costs down",
-              "It is required by the Swedish constitution",
+              "It is far cheaper for the state to administer, since employers collect and remit the wage themselves",
+              "It can be raised each bargaining round without a national election, and avoids a floor becoming a ceiling",
+              "It applies only to dues-paying union members, which keeps the overall national wage bill much lower",
+              "It is required by the Swedish constitution, which bars the Riksdag from legislating any wage floor",
             ],
             correctIndex: 1,
             explanation:
@@ -186,10 +186,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "Why does 'everyone is allowed to organise' fail to explain Sweden's and Denmark's ~two-thirds density?",
             options: [
-              "Because the right to organise is also present in many countries stuck near 10% density, legal freedom is common, two-thirds actually joining is rare",
-              "Because density is actually much lower than two-thirds",
-              "Because the government forces workers to join",
-              "Because only migrant workers may organise",
+              "The legal right to organise is also common in countries near 10% density, so it cannot explain two-thirds",
+              "Because measured union density in Sweden and Denmark is actually far lower, closer to one-third",
+              "Because Swedish and Danish law effectively compels most workers to join a union on taking a job",
+              "Because in practice only migrant and public-sector employees are actually permitted to organise there",
             ],
             correctIndex: 0,
             explanation:
@@ -212,10 +212,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "Who is disproportionately EXCLUDED from the collective-agreement floor (Q2)?",
             options: [
-              "Executives and civil servants",
+              "Senior executives and civil servants, who are legally barred from the sector collective agreements",
               "Migrant workers, platform/gig workers, and employees of firms that never signed an agreement",
-              "Nobody, coverage is universal",
-              "Anyone over 50",
+              "Nobody at all, because collective-agreement coverage in both countries is effectively universal",
+              "Anyone over 50, who ages out of the sector agreements once past a fixed seniority threshold",
             ],
             correctIndex: 1,
             explanation:
@@ -225,10 +225,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "What does 'self-regulation' mean for Q3 (the referee) in Sweden and Denmark?",
             options: [
-              "A government board like the US NLRB certifies every union",
-              "There largely is no state referee, the two sides govern the labour market by agreement, and the state stays out by tradition",
-              "The EU sets all wages",
-              "Employers alone set the rules",
+              "A government board modelled on the US NLRB certifies every union and supervises each bargaining round",
+              "There is largely no state referee; the two sides govern the labour market by agreement, not statute",
+              "The EU sets all wages centrally, and both countries simply administer the figure fixed in Brussels",
+              "Employers' confederations alone write the rules, and unions merely administer them without bargaining",
             ],
             correctIndex: 1,
             explanation:
@@ -238,10 +238,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "The course repeatedly insists on one methodological habit about Sweden and Denmark. Which?",
             options: [
-              "Treat them as interchangeable 'Scandinavia'",
-              "Keep them distinct, they run their unemployment funds differently, made their founding peace in different decades, and are under different strains",
-              "Assume Denmark always leads and Sweden follows",
-              "Ignore Norway entirely",
+              "Treat Sweden and Denmark as one interchangeable 'Scandinavia' with essentially a single labour model",
+              "Keep them distinct: they run unemployment funds differently and made their founding peace decades apart",
+              "Assume Denmark always leads on labour reform and Sweden reliably copies its agreements a few years later",
+              "Ignore Norway entirely, since it shares neither the culture nor the welfare state of its two neighbours",
             ],
             correctIndex: 1,
             explanation:
@@ -251,10 +251,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "Which of the four anchor questions do Sweden and Denmark answer most distinctively on the WEAPONS side (Q4)?",
             options: [
-              "They ban all strikes",
-              "They permit the sympathy strike, a weapon US law bans, so a dispute can spread to firms that are not the direct target",
-              "They require government approval before any strike",
-              "They allow only individual, not collective, action",
+              "They ban all strikes outright and settle every labour dispute through compulsory state arbitration",
+              "They permit the sympathy strike, a weapon US law bans, so a dispute can spread to neutral firms",
+              "They require formal government approval and a lengthy cooling-off period before any strike begins",
+              "They allow only individual workplace grievances, never collective or sympathy industrial action",
             ],
             correctIndex: 1,
             explanation:
@@ -264,10 +264,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "Why does the course say Norway will appear as a 'natural experiment'?",
             options: [
-              "Because Norway has the highest density in the world",
-              "Because Norway is a Nordic country WITHOUT the Ghent system, so its lower density helps isolate what Ghent actually does",
-              "Because Norway has a statutory minimum wage",
-              "Because Norway is not in Scandinavia",
+              "Because Norway has the highest union density anywhere in the world, far above Sweden and Denmark",
+              "Because Norway is a Nordic country WITHOUT the Ghent system, so its lower density isolates Ghent's effect",
+              "Because Norway, unlike its Nordic neighbours, does set a statutory national minimum wage by law",
+              "Because Norway sits outside Scandinavia and so falls outside the Nordic labour model altogether",
             ],
             correctIndex: 1,
             explanation:
@@ -277,10 +277,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "The anchor course's lesson 20 relates to this course how?",
             options: [
-              "It contradicts this course",
-              "It is the one-paragraph version; this course is the deep version for two countries, kept distinct, and cross-links rather than repeats it",
-              "It covers Germany, not the Nordics",
-              "It is an exercise, not a lesson",
+              "It flatly contradicts this course, offering the Nordics as a case where high density has no cause",
+              "It is the one-paragraph version; this course is the deep two-country version, cross-linking not repeating it",
+              "It covers Germany's board-level co-determination rather than the Nordics, so the two barely overlap",
+              "It is a hands-on production exercise rather than a lesson, so it teaches none of the content built here",
             ],
             correctIndex: 1,
             explanation:
@@ -290,10 +290,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "Why does the course flag a caveat even on the headline 'no minimum wage'?",
             options: [
-              "Because the headline is actually false",
-              "Because a course that hides its caveats is selling something, a few edge cases exist, but the load-bearing fact (no single national statutory minimum) is true",
-              "Because Denmark secretly has one",
-              "Because the EU sets the wage",
+              "Because the headline is actually false, and both countries quietly enforce a national statutory minimum",
+              "Because a few sector edge cases exist, though the load-bearing fact, no single national statutory minimum, holds",
+              "Because Denmark secretly maintains a national statutory minimum wage that the headline conveniently omits",
+              "Because the EU in fact sets both countries' wage floor directly, overriding their collective agreements",
             ],
             correctIndex: 1,
             explanation:
@@ -303,10 +303,10 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
           {
             prompt: "In the American mental model the course contrasts with, a 'protection' is fundamentally a…",
             options: [
-              "Contract the workers wrote",
+              "A contract the workers themselves negotiated, sector by sector, and can enforce",
               "Law passed by a legislature, so the whole fight happens in a legislature",
-              "Decision by an employers' association",
-              "Ruling by a labour court",
+              "A decision handed down by the relevant employers' association for that industry",
+              "A binding ruling issued by a specialist labour court, not the ordinary courts",
             ],
             correctIndex: 1,
             explanation:
@@ -449,10 +449,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "What is the Ghent system?",
             options: [
-              "A statutory minimum wage set by the city of Ghent",
-              "A system in which unemployment insurance is administered by union-linked funds, making union membership the default",
-              "A German co-determination law",
-              "An EU directive on bargaining coverage",
+              "A statutory minimum wage first set by the Belgian city of Ghent and later copied across the Nordics",
+              "Unemployment insurance is run through union-linked funds, so joining the union is the low-effort default",
+              "A German co-determination law placing elected worker representatives on company supervisory boards",
+              "An EU directive that harmonises collective-bargaining coverage rates right across all EU member states",
             ],
             correctIndex: 1,
             explanation:
@@ -462,10 +462,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "Why does the same legal 'freedom to organise' produce ~65% density in Sweden but ~10% in the US?",
             options: [
-              "Swedish law forces workers to join unions",
-              "The default is opposite: in Sweden joining is what you tick when you insure against unemployment; in the US it is a separate, deliberate, sometimes fireable act",
-              "US workers are legally barred from unions",
-              "Sweden counts members differently",
+              "Swedish law directly compels workers to join a recognised union as a condition of most employment",
+              "In Sweden joining is ticked when you insure against unemployment; in the US it is a separate, risky act",
+              "US federal law legally bars most private-sector workers from belonging to any union of any kind",
+              "Sweden simply counts its union members far more generously than the United States counts its own",
             ],
             correctIndex: 1,
             explanation:
@@ -475,10 +475,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "The anchor course says Nordic density is 'a story about who runs the unemployment system.' What habit does that teach?",
             options: [
-              "Explain union numbers by national character",
+              "Explain union membership numbers by each country's national character",
               "Look for the plumbing (the institutions) before reaching for the culture",
-              "Assume all Nordic countries are identical",
-              "Ignore unemployment insurance entirely",
+              "Assume all the Nordic countries are essentially identical in labour terms",
+              "Ignore unemployment insurance entirely and study only the wage statutes",
             ],
             correctIndex: 1,
             explanation:
@@ -496,10 +496,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "How does Norway function as a natural experiment for the Ghent effect?",
             options: [
-              "It has the world's highest density despite no unions",
-              "It is Nordic with a strong welfare state but NO Ghent system, and its density (~50%) sits well below Sweden's and Denmark's (~65-67%)",
-              "It has a statutory minimum wage and no bargaining",
-              "It banned unemployment insurance",
+              "It has the highest union density in the entire world despite having essentially no organised unions",
+              "It is Nordic with a strong welfare state but no Ghent system, and its ~50% density sits below its neighbours'",
+              "It sets a statutory national minimum wage and has almost no sectoral collective bargaining at all",
+              "It has banned unemployment insurance altogether, which is why its union density is comparatively low",
             ],
             correctIndex: 1,
             explanation:
@@ -517,10 +517,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "What is the honest caveat the course attaches to the Norway comparison?",
             options: [
-              "There is no caveat, it proves Ghent is the only cause",
-              "It is observational, not a lab: ~50% is still high, coverage is high, and Ghent adds roughly 15 points rather than explaining everything",
-              "Norway actually has a Ghent system",
-              "Density in Norway is really 10%",
+              "There is no real caveat; the Norway gap proves the Ghent system is the single cause of high density",
+              "It is observational, not a lab: ~50% is high and Ghent adds about 15 points rather than explaining everything",
+              "Norway actually does run its own Ghent system, so it is not a genuine no-Ghent comparison after all",
+              "Norway's real union density is only about 10%, essentially no higher than the United States' own figure",
             ],
             correctIndex: 1,
             explanation:
@@ -530,10 +530,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "What did Sweden's January 2007 a-kassa reform actually change?",
             options: [
-              "It abolished collective bargaining",
-              "It raised and DIFFERENTIATED unemployment-fund membership fees, charging more in higher-unemployment sectors",
-              "It introduced a statutory minimum wage",
-              "It merged all unions into one federation",
+              "It abolished sectoral collective bargaining and replaced it with a national statutory wage board",
+              "It raised and DIFFERENTIATED a-kassa membership fees, charging more in higher-unemployment sectors",
+              "It introduced Sweden's first statutory national minimum wage, set each year by the government",
+              "It merged all of Sweden's competing trade unions into a single national confederation by law",
             ],
             correctIndex: 1,
             explanation:
@@ -543,10 +543,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "What happened to Swedish union density after the 2007 reform (Kjellberg)?",
             options: [
-              "It rose from 65% to 80%",
+              "It rose from about 77% (2006) to about 83% (2008), the steepest rise in modern Swedish history",
               "It fell from about 77% (2006) to about 71% (2008), the steepest drop in modern Swedish history",
-              "It was completely unchanged",
-              "It fell to 10%, matching the US",
+              "It was essentially unchanged, holding steady near 77% right through the fee reform and after",
+              "It collapsed to about 10% by 2008, falling all the way to the United States' membership level",
             ],
             correctIndex: 1,
             explanation:
@@ -556,10 +556,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "The 2007 decline was uneven. Who was hit hardest, and why does that support the theory?",
             options: [
-              "White-collar unions, because they earn more",
-              "Blue-collar (LO) unions, because the fee increases bit hardest in lower-wage, higher-unemployment sectors",
-              "Only public-sector unions",
-              "Everyone equally, which disproves the theory",
+              "White-collar (TCO/SACO) unions, because higher earners paid the steepest differentiated fees",
+              "Blue-collar (LO) unions, because the fees bit hardest in lower-wage, higher-unemployment sectors",
+              "Only public-sector unions, because the state stopped subsidising their unemployment funds",
+              "Every union equally, an even fall across all sectors that actually disproves the Ghent theory",
             ],
             correctIndex: 1,
             explanation:
@@ -569,10 +569,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "Why is the 2007 reform STRONGER evidence than the Norway comparison?",
             options: [
-              "Because Sweden is bigger than Norway",
-              "Because it is the same country, same workers, same culture, with one institutional dial turned, rather than two countries with many hidden differences",
-              "Because it was a randomised controlled trial",
-              "Because Norway has no data",
+              "Because Sweden is a much larger country than Norway, giving its density figures more statistical weight",
+              "Because it is the same country and workers with one institutional dial turned, not two countries compared",
+              "Because the 2007 reform was run as a randomised controlled trial with a proper untreated control group",
+              "Because Norway keeps no reliable union-density data, so the cross-country comparison cannot be made",
             ],
             correctIndex: 1,
             explanation:
@@ -582,10 +582,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "What does the post-2007 'coda' (fees cut in 2014, density only partly recovering) show?",
             options: [
-              "That the Ghent effect is fake",
-              "That institutions have momentum and the effect runs both ways, cheapening the fund slows the bleed but does not automatically restore lost membership",
-              "That density instantly returned to 77%",
-              "That fees never changed again",
+              "That the Ghent effect is essentially fake, since the 2014 fee cut changed union density not at all",
+              "That institutions have momentum: cheapening the fund slows the bleed but does not restore lost membership",
+              "That density instantly bounced right back to its 77% peak as soon as the 2014 fee cut took effect",
+              "That a-kassa fees were never touched again after 2007, so density simply drifted down on its own",
             ],
             correctIndex: 1,
             explanation:
@@ -595,10 +595,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "What is the 'plumbing is power' implication for the negotiated wage floor?",
             options: [
-              "The floor is safe no matter what happens to unions",
-              "A government could weaken the negotiated-floor model without abolishing it, just by making the unemployment funds more expensive, since the floor rests on union strength, which rests on density, which rests on Ghent",
-              "The floor depends only on the EU",
-              "The floor depends only on employers",
+              "The negotiated floor stays safe no matter what happens to the unions, since it no longer depends on them",
+              "A government could weaken the negotiated floor without abolishing it, just by making the a-kassa funds costlier",
+              "The negotiated wage floor now depends solely on EU directives rather than on any domestic union strength",
+              "The negotiated floor depends only on employers' goodwill, since unions play no real part in setting it",
             ],
             correctIndex: 1,
             explanation:
@@ -608,10 +608,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "The course says the a-kassa funds are 'not literally the unions.' Why does that matter?",
             options: [
-              "It means the Ghent effect is illegal",
-              "The funds are legally separate, state-subsidised bodies, so you can be in a fund without a union, the effect works through the LINK and the DEFAULT, which is exactly where erosion gets in",
-              "It means unions have no role at all",
-              "It means density is actually zero",
+              "It means the entire Ghent arrangement is technically illegal under EU competition and state-aid law",
+              "The funds are legally separate bodies you can join without a union, so the LINK and DEFAULT let erosion in",
+              "It means the unions play no real role, since the state-run funds do all the recruiting for them",
+              "It means measured union density is actually close to zero once you exclude all of the fund's members",
             ],
             correctIndex: 1,
             explanation:
@@ -621,10 +621,10 @@ Sit with what that gives you. This is not two different countries with a hundred
           {
             prompt: "Who is the authority the course leans on for Swedish density figures?",
             options: [
-              "The US Bureau of Labor Statistics",
-              "Anders Kjellberg (Lund University)",
-              "The European Central Bank",
-              "Tesla's investor relations",
+              "The US Bureau of Labor Statistics, which reports on American union membership each year",
+              "Anders Kjellberg, the Lund University sociologist who documented Swedish union density",
+              "The European Central Bank, in Frankfurt, which oversees eurozone monetary policy",
+              "Tesla's investor relations department, in its quarterly reports to shareholders",
             ],
             correctIndex: 1,
             explanation:
@@ -753,10 +753,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "What was the Saltsjöbaden Basic Agreement (1938)?",
             options: [
-              "A Swedish statutory minimum wage",
-              "A 1938 agreement between LO (unions) and SAF (employers) setting the rules for conducting and resolving industrial disputes, the base of Swedish self-regulation",
-              "An EU directive",
-              "A wage settlement for the metal industry",
+              "A Swedish statutory national minimum wage, set by parliament and updated each year for inflation",
+              "A 1938 agreement between the unions (LO) and employers (SAF) setting the rules for industrial disputes",
+              "An EU directive requiring Sweden to set a statutory minimum wage across every industrial sector",
+              "A one-off 1938 wage settlement covering only the Swedish metalworking and engineering industry",
             ],
             correctIndex: 1,
             explanation:
@@ -766,10 +766,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "Why does the course call the consensual 'Swedish model' a settlement rather than a national temperament?",
             options: [
-              "Because Swedes have always been calm",
-              "Because it followed a decade of intense, sometimes deadly conflict (the Ådalen shootings, 1931) and a government threat to legislate",
-              "Because the EU imposed it",
-              "Because employers invented it alone",
+              "Because the Swedes have always been temperamentally calm, cooperative and averse to open conflict",
+              "Because it followed a decade of hard conflict (the Ådalen shootings, 1931) and a threat to legislate",
+              "Because the European Union imposed the whole cooperative model on Sweden as a condition of membership",
+              "Because the employers' confederation invented and imposed the entire model on the unions by itself",
             ],
             correctIndex: 1,
             explanation:
@@ -779,10 +779,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "What happened at Ådalen in 1931?",
             options: [
-              "A collective agreement was signed",
+              "A major national collective agreement between LO and SAF was signed there",
               "Soldiers fired on a workers' demonstration and five people were killed",
-              "The a-kassa was created",
-              "Sweden introduced a minimum wage",
+              "The first Swedish unemployment-insurance a-kassa fund was established",
+              "Sweden introduced its very first statutory national minimum-wage law",
             ],
             correctIndex: 1,
             explanation:
@@ -792,10 +792,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "In the Swedish model, what does self-regulation require of BOTH sides to function?",
             options: [
-              "That both sides be weak",
+              "That both sides stay weak, leaving the state to step in and set the terms",
               "That both sides be strong and organised enough to make and keep bargains",
-              "That the state set all wages",
-              "That unions have no members",
+              "That the state set all wages centrally and referee every industrial dispute",
+              "That unions keep almost no members, so employers can set terms freely",
             ],
             correctIndex: 1,
             explanation:
@@ -805,10 +805,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "What was the September Compromise (Denmark, 1899)?",
             options: [
-              "A statutory minimum wage",
-              "The 1899 agreement ending the Great Lockout, 'the constitution of the Danish labour market'",
-              "A Swedish law",
-              "An EU treaty",
+              "Denmark's first statutory national minimum-wage law, formally enacted by parliament in 1899",
+              "The 1899 agreement that ended the Great Lockout, 'the constitution of the Danish labour market'",
+              "A Swedish labour law of 1899 that first legalised trade unions across the whole country",
+              "An 1899 EU treaty establishing common labour standards across the member states of Europe",
             ],
             correctIndex: 1,
             explanation:
@@ -818,10 +818,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "What two reciprocal recognitions sat at the core of the September Compromise?",
             options: [
-              "The state recognised unions; unions recognised the state",
-              "Employers recognised the workers' right to organise; unions recognised the employers' right to manage and direct work (ledelsesret)",
-              "Both sides recognised a minimum wage",
-              "Employers recognised the EU; unions recognised NATO",
+              "The state formally recognised the unions, and in return the unions recognised the authority of the state",
+              "Employers recognised the workers' right to organise; unions recognised the employers' right to manage work",
+              "Both sides recognised and jointly agreed to enforce a new statutory national minimum wage for workers",
+              "Employers recognised Denmark's place in the EU, and the unions in turn recognised its NATO membership",
             ],
             correctIndex: 1,
             explanation:
@@ -831,10 +831,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "How does the timing of the two founding agreements mark Denmark as distinct from Sweden?",
             options: [
-              "Denmark's (1899) predates Sweden's (1938) by ~40 years, so Danish self-regulation is older and more deeply habitual",
-              "Sweden's came first, in 1899",
-              "They were signed the same year",
-              "Neither country has a founding agreement",
+              "Denmark's (1899) predates Sweden's (1938) by roughly 40 years, so Danish self-regulation is older and deeper",
+              "Sweden's Saltsjöbaden Agreement came first, in 1899, a full generation before Denmark's compromise",
+              "The two founding agreements were signed in the very same year, so neither country had a head start",
+              "Neither country actually has a single founding agreement; both built self-regulation only by statute",
             ],
             correctIndex: 0,
             explanation:
@@ -844,10 +844,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "In Sweden, which sector settles first and sets the wage norm ('the mark'/märket)?",
             options: [
-              "Retail",
-              "The public sector",
+              "The large domestic retail and consumer-services sector",
+              "The public sector, the country's biggest single employer",
               "Internationally exposed manufacturing/export industry",
-              "Agriculture",
+              "Agriculture, forestry and the food-processing trades",
             ],
             correctIndex: 2,
             explanation:
@@ -857,10 +857,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "How do Sweden and Denmark differ from Germany and France on extending agreements to non-signatory firms?",
             options: [
-              "They extend agreements by decree, like France",
-              "They have NO legal extension, coverage is high because organisation is high and signing is the norm, not because a law forces it",
-              "They copy the German employer-association mechanism exactly",
-              "They require every firm to sign by statute",
+              "They extend every collective agreement to non-signatory firms by government decree, exactly as France does",
+              "They have NO legal extension; coverage is high because organisation is high and signing is the norm, not law",
+              "They copy the German mechanism exactly, so coverage rides on firms belonging to employers' associations",
+              "They legally require every single firm to sign the relevant sector collective agreement by national statute",
             ],
             correctIndex: 1,
             explanation:
@@ -870,10 +870,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "With no law and no legal extension, what forces a hold-out firm to sign a collective agreement?",
             options: [
-              "A government fine",
-              "Industrial action, a strike plus SYMPATHY action by other unions, to make operating without an agreement more costly than signing one",
-              "An EU court order",
-              "Nothing; firms are free to ignore agreements",
+              "A heavy government fine levied on any firm that operates without the relevant collective agreement",
+              "Industrial action, a strike plus SYMPATHY action by other unions, to make holding out costlier than signing",
+              "A binding order from an EU court compelling the hold-out firm to sign the relevant collective agreement",
+              "Nothing at all; a firm remains entirely free to ignore any collective agreement it never chose to sign",
             ],
             correctIndex: 1,
             explanation:
@@ -883,10 +883,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "What is the peace obligation (fredsplikt)?",
             options: [
-              "A ban on all unions",
-              "Once a collective agreement is in force, the bound parties may not take industrial action over matters it covers, for the life of the agreement",
-              "A government promise not to tax unions",
-              "A rule that strikes need police permission",
+              "A statutory ban on all trade unions for as long as any binding national collective agreement is in force",
+              "While a collective agreement is in force, the bound parties may not take industrial action over what it covers",
+              "A standing government promise never to tax union funds while a collective agreement remains in force",
+              "A rule that every strike must first obtain formal permission from the local police before it may begin",
             ],
             correctIndex: 1,
             explanation:
@@ -896,10 +896,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "Which body adjudicates disputes over collective agreements and the peace obligation in Sweden?",
             options: [
-              "The National Labor Relations Board",
+              "The National Labor Relations Board, a US federal agency",
               "The Labour Court (Arbetsdomstolen), a specialist court",
-              "The European Central Bank",
-              "The Riksdag (parliament) directly",
+              "The European Central Bank, based in Frankfurt am Main",
+              "The Riksdag, Sweden's national parliament, sitting directly",
             ],
             correctIndex: 1,
             explanation:
@@ -909,10 +909,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "Which Swedish statute is named as governing the right of association, collective bargaining and industrial action?",
             options: [
-              "The Wagner Act",
+              "The US Wagner Act (the National Labor Relations Act, 1935)",
               "The Co-determination Act (Medbestämmandelagen, MBL, SFS 1976:580)",
-              "The September Compromise",
-              "Directive (EU) 2022/2041",
+              "The September Compromise of 1899, Denmark's founding accord",
+              "EU Directive 2022/2041 on adequate minimum wages across the Union",
             ],
             correctIndex: 1,
             explanation:
@@ -922,10 +922,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "Why let the internationally exposed sector bargain FIRST?",
             options: [
-              "To pay exporters the least",
-              "For discipline, it tethers economy-wide wage growth to what the country's exporters can actually afford",
-              "Because the law requires it",
-              "To exclude the public sector from bargaining",
+              "To make sure exporters always end up paying their workers the very lowest wages in the economy",
+              "For discipline: it tethers economy-wide wage growth to what the country's exporters can afford",
+              "Because a specific Swedish statute legally requires the export sector to settle before all others",
+              "To exclude the public sector from national bargaining entirely and let industry set wages alone",
             ],
             correctIndex: 1,
             explanation:
@@ -935,10 +935,10 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
           {
             prompt: "What single line summarises how the Nordic wage floor is maintained?",
             options: [
-              "A statute sets it and the police enforce it",
-              "Organised sectors bargain under a self-imposed constitution, enforced by collective pressure rather than statute, disciplined by a peace obligation and a specialist labour court",
-              "The EU sets it and extends it to all firms",
-              "Employers set it unilaterally",
+              "A single national statute fixes the wage floor, and the police and the courts then enforce it directly",
+              "Organised sectors bargain under self-regulation, enforced by collective pressure rather than by statute",
+              "The EU sets the wage floor centrally and legally extends it to every single firm in both countries",
+              "Employers set the wage floor unilaterally, and unions simply administer whatever figure they choose",
             ],
             correctIndex: 1,
             explanation:
@@ -1046,10 +1046,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Which country's model is 'flexicurity,' and what are its three legs?",
             options: [
-              "Sweden's: high job protection, low benefits, no retraining",
-              "Denmark's: easy hiring/firing, a relatively generous unemployment benefit (dagpenge), and heavy active labour-market policy",
-              "Norway's: statutory minimum wage, high tariffs, no unions",
-              "A US federal program",
+              "Sweden's: strong statutory job protection, low unemployment benefits, and no active retraining at all",
+              "Denmark's: easy hiring/firing, a generous unemployment benefit (dagpenge), and active labour-market policy",
+              "Norway's: a statutory national minimum wage, high import tariffs, and essentially no trade unions",
+              "A single US federal program combining easy firing, generous benefits and mandatory job retraining",
             ],
             correctIndex: 1,
             explanation:
@@ -1059,10 +1059,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What trade does flexicurity offer workers?",
             options: [
-              "Job security in exchange for lower pay",
-              "JOB security is given up for EMPLOYMENT security, a cushion if the job ends plus a fast route to the next one",
-              "Higher wages in exchange for banning strikes",
-              "Lifetime employment at one firm",
+              "Lifelong job security in exchange for permanently lower pay, with wages frozen for a guaranteed post",
+              "JOB security is given up for EMPLOYMENT security: a cushion if the job ends plus a fast route to the next",
+              "Substantially higher wages in exchange for permanently giving up the legal right to strike at all",
+              "Guaranteed lifetime employment at a single firm, with retraining only if that firm itself closes",
             ],
             correctIndex: 1,
             explanation:
@@ -1072,10 +1072,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Why must flexicurity be taught as a trade rather than a free lunch?",
             options: [
-              "Because it is illegal under EU law",
-              "Because it only protects workers if the benefit and retraining legs stay strong, weaken them and only easy-firing remains ('deregulation in a Scandinavian sweater')",
-              "Because it applies only to managers",
-              "Because Denmark abolished it",
+              "Because the whole flexicurity model is actually illegal under current EU employment and market law",
+              "Because it protects workers only if the benefit and retraining legs stay strong, or only easy-firing is left",
+              "Because in practice flexicurity applies only to managers and salaried staff, not to ordinary workers",
+              "Because Denmark quietly abolished flexicurity years ago, so only the historical memory of it remains",
             ],
             correctIndex: 1,
             explanation:
@@ -1085,10 +1085,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What concrete change shows flexicurity's 'security' side thinning?",
             options: [
-              "The 2010 reform cut the maximum dagpenge period from four years to two and roughly doubled the requalification requirement",
-              "Denmark abolished unemployment benefits entirely",
-              "Denmark introduced a statutory minimum wage",
-              "Denmark banned firing workers",
+              "The 2010 reform cut the maximum dagpenge period from four years to two and roughly doubled requalification",
+              "Denmark abolished unemployment benefits (dagpenge) entirely, leaving dismissed workers with no cushion",
+              "Denmark introduced its first statutory national minimum wage, replacing the collective-agreement floor",
+              "Denmark banned the firing of workers outright, so employers may no longer dismiss any staff at will",
             ],
             correctIndex: 0,
             explanation:
@@ -1098,10 +1098,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "How does Sweden differ from Denmark on job protection?",
             options: [
-              "Sweden has weaker protection than Denmark",
-              "Sweden has stronger statutory job protection via the Employment Protection Act (LAS, 1982), with 'last in, first out' seniority, it does not run classic Danish flexicurity",
-              "Sweden and Denmark are identical here",
-              "Sweden has no employment law at all",
+              "Sweden has markedly weaker statutory job protection than Denmark and relies instead on pure flexicurity",
+              "Sweden has stronger statutory job protection under the Employment Protection Act (LAS, 1982), not flexicurity",
+              "Sweden and Denmark are essentially identical here, both running the exact same flexicurity model overall",
+              "Sweden has no employment-protection law at all, leaving dismissals entirely to collective agreement",
             ],
             correctIndex: 1,
             explanation:
@@ -1111,10 +1111,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What does US Taft-Hartley § 8(b)(4) (1947) prohibit?",
             options: [
-              "All strikes by any union",
-              "A union pressuring a NEUTRAL business to force it to stop dealing with the employer the union actually disputes (secondary boycotts / sympathy action)",
-              "Collective bargaining",
-              "Unemployment insurance",
+              "Absolutely all strikes by any union, in every industry, whether primary or secondary in character",
+              "A union pressuring a NEUTRAL business to stop it dealing with the employer the union actually disputes",
+              "All ordinary collective bargaining between a private employer and the union representing its workers",
+              "Union-linked unemployment-insurance funds of the sort the Nordic Ghent system actually relies upon",
             ],
             correctIndex: 1,
             explanation:
@@ -1124,10 +1124,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What is the Nordic rule on sympathy action?",
             options: [
-              "It is banned, exactly as in the US",
-              "A union not itself in dispute may lawfully take sympathy action to support another union's LAWFUL primary conflict, an exception to the peace obligation",
-              "It requires the government's permission each time",
-              "It is allowed only for public-sector workers",
+              "It is completely banned in the Nordics, exactly as it is in the United States under Taft-Hartley",
+              "A union not itself in dispute may lawfully take sympathy action to back another union's lawful dispute",
+              "It requires the national government's explicit permission each and every time before it may begin",
+              "It is permitted only for public-sector workers, and never for those employed in the private sector",
             ],
             correctIndex: 1,
             explanation:
@@ -1137,10 +1137,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What is the vivid structural difference between the US ban and the Nordic rule?",
             options: [
-              "The US lets disputes radiate; the Nordics confine them",
-              "The US confines a dispute to the two direct parties; the Nordic rule lets it RADIATE, so the neutral party the US statute protects is the Nordic pressure point",
-              "Both confine disputes identically",
-              "Neither allows any industrial action",
+              "The US lets a dispute radiate widely, while the Nordic rule strictly confines it to the two parties",
+              "The US confines a dispute to the two direct parties; the Nordic rule lets it RADIATE to neutral firms",
+              "Both systems confine a dispute in exactly the same way, to the union and its own employer alone",
+              "Neither system allows any industrial action of any kind at all, whether primary or secondary",
             ],
             correctIndex: 1,
             explanation:
@@ -1150,10 +1150,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Why is the legal sympathy strike LOAD-BEARING for Nordic self-regulation?",
             options: [
-              "It isn't, it's just a historical curiosity",
-              "Because the wage floor is enforced by collective pressure, not statute; sympathy action is what makes that pressure strong enough to bring a hold-out employer to sign",
-              "Because it replaces the unemployment fund",
-              "Because it sets the minimum wage directly",
+              "It actually isn't load-bearing at all; it is just a colourful historical curiosity with no real effect",
+              "Because the wage floor rests on collective pressure, not statute, and sympathy action makes that pressure bite",
+              "Because the sympathy strike directly replaces the unemployment fund as the engine of union membership",
+              "Because the sympathy strike is what sets each sector's minimum wage directly, with no bargaining needed",
             ],
             correctIndex: 1,
             explanation:
@@ -1163,10 +1163,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Does 'legal sympathy action' mean 'unlimited'?",
             options: [
-              "Yes, anything goes",
-              "No, the primary conflict must be lawful, essential-services and proportionality limits apply, and the peace obligation still binds parties to their own agreements",
-              "Yes, but only in Denmark",
-              "No, it is actually banned",
+              "Yes, essentially anything goes; once a strike is sympathetic there are no legal limits on it at all",
+              "No: the primary conflict must be lawful, essential-services and proportionality limits apply, and peace binds",
+              "Yes, it is genuinely unlimited, but only in Denmark, since Sweden imposes strict proportionality limits",
+              "No, because sympathy action is in fact completely banned in both Sweden and Denmark, just as in the US",
             ],
             correctIndex: 1,
             explanation:
@@ -1176,10 +1176,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "How does the course frame the US-vs-Nordic choice on sympathy action?",
             options: [
-              "The Nordics are simply right and the US simply wrong",
-              "As a genuinely contested policy choice, the two systems drew the line in opposite places on purpose, and employers argue spreading a dispute to neutral firms is disproportionate",
-              "As an accident of history with no real disagreement",
-              "As identical in both systems",
+              "As a simple matter of right and wrong, with the Nordics plainly correct and the US plainly mistaken",
+              "As a genuinely contested policy choice: the two systems drew the line in opposite places on purpose",
+              "As a mere accident of history, with no real underlying disagreement between the two legal systems",
+              "As essentially identical in both systems, since each regulates sympathy action in the very same way",
             ],
             correctIndex: 1,
             explanation:
@@ -1189,10 +1189,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "In the anchor course, why was the United Farm Workers' grape boycott lawful when the same tactic was illegal for a steelworkers' union?",
             options: [
-              "Because grapes are exempt",
-              "Because farm workers were excluded from the NLRA in 1935, so they were also outside its secondary-boycott ban",
-              "Because the UFW got special permission",
-              "Because Taft-Hartley did not exist yet",
+              "Because agricultural produce such as grapes is specifically exempt from all US secondary-boycott rules",
+              "Because farm workers were excluded from the NLRA in 1935, so they also fell outside its secondary-boycott ban",
+              "Because the United Farm Workers were granted a special one-off exemption by the federal labour board",
+              "Because the Taft-Hartley Act had simply not yet been passed at the time of the grape boycott campaign",
             ],
             correctIndex: 1,
             explanation:
@@ -1202,10 +1202,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Which Swedish statute frames sympathy action as an exception to the peace obligation?",
             options: [
-              "The Employment Protection Act (LAS)",
+              "The Employment Protection Act (Lagen om anställningsskydd, LAS)",
               "The Co-determination Act (Medbestämmandelagen, MBL, 1976:580)",
-              "The Taft-Hartley Act",
-              "Directive (EU) 2022/2041",
+              "The US Taft-Hartley Act of 1947 (Labor Management Relations Act)",
+              "EU Directive 2022/2041 on adequate minimum wages in Europe",
             ],
             correctIndex: 1,
             explanation:
@@ -1215,10 +1215,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Why does the same country keep the state OUT of wage-setting but keep sympathy action IN?",
             options: [
-              "For no particular reason",
-              "Because sympathy action is what makes a non-legislated wage floor enforceable, the enforcement tool substitutes for a law",
-              "Because the EU requires both",
-              "Because employers demanded both",
+              "For no particular reason; the two rules simply grew up separately and happen to coexist by accident",
+              "Because sympathy action is what makes a non-legislated wage floor enforceable, standing in for a law",
+              "Because EU law positively requires both no wage statute and the presence of legal sympathy action",
+              "Because the employers' confederations themselves demanded both arrangements as the price of peace",
             ],
             correctIndex: 1,
             explanation:
@@ -1228,10 +1228,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "The Danish golden triangle's 'security' leg is best described as security of…",
             options: [
-              "the specific job you currently hold",
-              "income and employment, a cushion if the job ends and a fast route to a new one, not a guarantee you keep this job",
-              "the employer's profits",
-              "the union's finances",
+              "the one specific job you currently hold, which the model guarantees you will be able to keep",
+              "income and employment: a cushion if the job ends and a fast route to a new one, not this job itself",
+              "the employer's profits and share price, which the flexicurity model is mainly designed to protect",
+              "the union's own finances and unemployment-fund reserves, rather than the individual worker at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1328,10 +1328,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What triggered the Swedish Tesla dispute, and when did the primary strike begin?",
             options: [
-              "A factory safety scandal, in 2019",
-              "Tesla's refusal to sign a collective agreement for its Swedish service mechanics; IF Metall struck on 27 October 2023",
-              "A wage cut imposed by the Swedish government",
-              "A merger between Tesla and Volvo",
+              "A factory safety scandal at a Tesla assembly plant in Sweden in 2019, long before any union involvement",
+              "Tesla's refusal to sign a collective agreement for its Swedish mechanics; IF Metall struck on 27 October 2023",
+              "A sudden wage cut imposed on Tesla's Swedish workers directly by the Swedish government in late 2023",
+              "A proposed merger between Tesla and Volvo Cars that IF Metall moved to block on antitrust grounds",
             ],
             correctIndex: 1,
             explanation:
@@ -1341,10 +1341,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Why could a strike by only ~130 Tesla mechanics exert real pressure?",
             options: [
-              "Because the mechanics were highly paid",
-              "Because legal SYMPATHY action multiplied it, dockworkers, PostNord, electricians, cleaners and painters, and Nordic transport unions all refused to handle Tesla",
-              "Because the government joined the strike",
-              "Because Tesla had only 130 employees worldwide",
+              "Because the striking Tesla mechanics were unusually highly paid and skilled, so they were hard to replace",
+              "Because legal SYMPATHY action multiplied it, as dockworkers, PostNord and other unions refused to touch Tesla",
+              "Because the Swedish national government itself formally joined the strike and ordered Tesla to negotiate",
+              "Because Tesla had only about 130 employees in the entire world, so losing them shut the whole company down",
             ],
             correctIndex: 1,
             explanation:
@@ -1354,10 +1354,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What was the significance of PostNord halting deliveries to Tesla (from ~20 November 2023)?",
             options: [
-              "It stopped Tesla's advertising",
-              "It cut off mail INCLUDING the licence plates newly registered cars legally require, a genuine choke point",
-              "It was purely symbolic with no effect",
-              "It raised Tesla's shipping costs slightly",
+              "It halted Tesla's advertising and marketing mail campaigns across Sweden, denting its brand image",
+              "It cut off mail INCLUDING the licence plates newly registered cars legally require, a real choke point",
+              "It was a purely symbolic gesture that had no practical effect at all on Tesla's Swedish operations",
+              "It raised Tesla's shipping and courier costs slightly, but caused no real operational disruption",
             ],
             correctIndex: 1,
             explanation:
@@ -1367,10 +1367,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "How did the dispute become regional?",
             options: [
-              "The EU ordered all members to boycott Tesla",
-              "Transport and dockworker unions in Denmark, Norway and Finland announced they would refuse to handle Tesla vehicles bound for Sweden (from ~December 2023)",
-              "Tesla closed all European operations",
-              "It never spread beyond Sweden",
+              "The European Union formally ordered all of its member states to boycott Tesla vehicles and services",
+              "Transport and dockworker unions in Denmark, Norway and Finland refused to handle Tesla cars bound for Sweden",
+              "Tesla responded by closing down all of its European sales and service operations outside of Sweden",
+              "It never actually spread beyond Sweden; the other Nordic unions declined to take any part at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1380,10 +1380,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What is the course's stated status of the Tesla dispute?",
             options: [
-              "Tesla signed in early 2024; the unions won",
-              "The unions were crushed and the model failed",
-              "As of the course's 2026 writing, unresolved, Tesla had not signed, actions continued, neither side had won, and the reader should re-check",
-              "It was settled by the Swedish parliament with a new law",
+              "Tesla signed a full collective agreement in early 2024, so the Swedish unions clearly won the dispute",
+              "The Swedish unions were decisively crushed and the whole self-regulation model failed the stress test",
+              "As of the course's 2026 writing: unresolved, Tesla had not signed, actions continued, and neither side had won",
+              "It was finally settled by the Swedish parliament, which stepped in and imposed a new wage law on Tesla",
             ],
             correctIndex: 2,
             explanation:
@@ -1393,10 +1393,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Test 1: what does Tesla probe about Sweden's self-regulation model?",
             options: [
-              "Whether Sweden's minimum-wage law is high enough",
-              "Whether a model with NO minimum-wage law and NO legal extension can compel a firm that simply refuses, since its only tool is pressure",
-              "Whether Tesla can build a factory in Sweden",
-              "Whether the EU can set Swedish wages",
+              "Whether Sweden's statutory national minimum-wage law is set high enough to cover Tesla's mechanics",
+              "Whether a model with no minimum-wage law and no legal extension can compel a firm that simply refuses",
+              "Whether Tesla will ultimately be permitted to build a large car-manufacturing factory in Sweden",
+              "Whether the European Union has the power to set Swedish wages directly, over the unions' objections",
             ],
             correctIndex: 1,
             explanation:
@@ -1406,10 +1406,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Test 2: what does Tesla probe about the sympathy strike?",
             options: [
-              "Whether it is legal at all",
-              "Whether it still has teeth against a globally mobile firm that can re-route logistics internationally, avoid dependence on any single local supplier, and wait",
-              "Whether workers support it",
-              "Whether it violates the peace obligation",
+              "Whether the sympathy strike is actually legal at all in Sweden once a foreign multinational is involved",
+              "Whether it still has teeth against a globally mobile firm that can re-route logistics abroad and simply wait",
+              "Whether ordinary Swedish workers still support the sympathy strike as a tactic against a popular brand",
+              "Whether spreading the dispute to neutral firms violates the peace obligation binding IF Metall's members",
             ],
             correctIndex: 1,
             explanation:
@@ -1419,10 +1419,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Test 3: what does the Nordic spread of the dispute reveal?",
             options: [
-              "That the dispute was illegal",
-              "A coordination problem, a single national movement may not move a multinational, but a coordinated Nordic (or European) one has a better chance",
-              "That Tesla had already won",
-              "That sympathy action is banned across the Nordics",
+              "That the entire Tesla dispute was illegal from the outset, which is exactly why it had to cross borders",
+              "A coordination problem: one national movement may struggle to move a multinational, but a Nordic bloc might",
+              "That Tesla had in effect already won the dispute, so the other Nordic unions were joining a lost cause",
+              "That legal sympathy action is in fact banned right across the Nordic countries, forcing the unions abroad",
             ],
             correctIndex: 1,
             explanation:
@@ -1432,10 +1432,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "How does the Tesla dispute connect to Section 6's 'honest limits'?",
             options: [
-              "It doesn't, they are unrelated",
-              "It is the dramatic version of a quiet problem: migrant, platform, and never-signed-firm workers also sit outside the agreements the model was built for",
-              "It proves the model has no limits",
-              "It shows the model only fails with car companies",
+              "It does not connect to them at all; the Tesla fight and the honest-limits section are entirely unrelated",
+              "It is the dramatic version of a quiet problem: migrant, platform and uncovered-firm workers sit outside too",
+              "It actually proves that the Nordic model has no real limits, since the unions can always spread a dispute",
+              "It shows that the model only ever fails against large car companies, not against any other employers",
             ],
             correctIndex: 1,
             explanation:
@@ -1445,10 +1445,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What reporting discipline does Section 5 deliberately model?",
             options: [
-              "Predict the winner confidently",
-              "Date every claim, name what is contested, cite interested parties as interested, and refuse to declare a winner the record has not produced",
-              "Rely on memory rather than checking",
-              "Turn the dispute into a tidy morality tale",
+              "Confidently predict the eventual winner of the dispute so that students get a clear, memorable outcome",
+              "Date every claim, name what is contested, cite interested parties as interested, and declare no winner yet",
+              "Rely on memory and recall rather than checking the record, to keep the account lively and readable",
+              "Turn the messy, unresolved dispute into a tidy morality tale, with clear-cut heroes and villains throughout",
             ],
             correctIndex: 1,
             explanation:
@@ -1458,10 +1458,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Why should IF Metall's own account of the dispute be read as an 'interested primary source'?",
             options: [
-              "Because unions are always wrong",
-              "Because IF Metall is a party to the dispute, so its account is authoritative on its own actions but not neutral, a careful reader cites it accordingly and cross-checks",
-              "Because it is a government agency",
-              "Because it is fabricated",
+              "Because trade unions are essentially always wrong about the facts, so their statements should be ignored",
+              "Because IF Metall is a party to the dispute, so its account is authoritative on its own acts but not neutral",
+              "Because IF Metall is really a neutral government agency, so its account can be trusted without checking",
+              "Because IF Metall's whole account of the Tesla dispute is fabricated and cannot be relied on at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1471,10 +1471,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Why does the course refuse to walk through the licence-plate court rulings blow-by-blow?",
             options: [
-              "Because courts are irrelevant",
-              "Because the interim rulings were conflicting and evolving and the author could not fully verify them, so it notes the plate fight became a legal sub-battle without asserting a chain of outcomes",
-              "Because Tesla won every ruling",
-              "Because the unions won every ruling",
+              "Because the licence-plate court rulings are entirely irrelevant to the substance of the labour dispute",
+              "Because the interim rulings were conflicting and could not be fully verified, so it asserts no chain of outcomes",
+              "Because Tesla in fact won every single one of the licence-plate court rulings, making the story one-sided",
+              "Because the Swedish unions in fact won every single licence-plate ruling, making the account one-sided",
             ],
             correctIndex: 1,
             explanation:
@@ -1486,8 +1486,8 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
             options: [
               "A large car factory with thousands of assembly workers",
               "Sales and service centres, it does not manufacture in Sweden",
-              "A bank",
-              "A government contractor",
+              "A large retail bank with branches across Swedish cities",
+              "A government defence contractor supplying the Swedish state",
             ],
             correctIndex: 1,
             explanation:
@@ -1497,10 +1497,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "What is the model's 'central assumption' that Tesla puts under load?",
             options: [
-              "That the government will always intervene",
+              "That the national government will always step in and intervene to settle any major dispute",
               "That no serious employer can hold out against coordinated collective pressure indefinitely",
-              "That workers will never strike",
-              "That wages must be set by law",
+              "That ordinary workers will never actually go out on strike even when their union calls them",
+              "That wages must ultimately be set by a national law rather than by any collective agreement",
             ],
             correctIndex: 1,
             explanation:
@@ -1510,10 +1510,10 @@ And now connect it back to Section 3, because this is not a curiosity, **it is l
           {
             prompt: "Why is an ongoing, unresolved dispute still valuable to teach?",
             options: [
-              "It isn't, only settled history should be taught",
-              "Because it is the Nordic model being tested in real time, and teaching it dated-and-open trains the exact judgment students need for live events",
-              "Because the outcome is obvious",
-              "Because it lets the course predict the future",
+              "It genuinely isn't; only fully settled history should ever be taught, never a live and unresolved dispute",
+              "Because it is the Nordic model tested in real time, and teaching it dated-and-open trains live-event judgment",
+              "Because the eventual outcome of the Tesla dispute is already completely obvious to any careful observer",
+              "Because teaching a live dispute lets the course confidently predict exactly how the whole thing will end",
             ],
             correctIndex: 1,
             explanation:
@@ -1625,10 +1625,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "What three things does the course insist are simultaneously true about the Nordic model?",
             options: [
-              "It is perfect, permanent, and universal",
+              "It is completely perfect, entirely permanent, and universally applied to every single worker",
               "It is genuinely impressive, it is eroding, and it has always had people standing outside it",
-              "It is failing, fraudulent, and finished",
-              "It is identical to the US, German, and French models",
+              "It is quietly failing, fundamentally fraudulent, and now essentially finished as a labour model",
+              "It is essentially identical to the US, German and French labour models in almost every respect",
             ],
             correctIndex: 1,
             explanation:
@@ -1638,10 +1638,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "Roughly how has Swedish union density changed since the mid-1990s?",
             options: [
-              "Risen from 65% to 85%",
+              "Risen from around 65% (mid-1990s) to around 85% now",
               "Fallen from around 85% (mid-1990s) to around 65% now",
-              "Stayed flat at 50%",
-              "Collapsed to 10%",
+              "Stayed almost flat at around 50% throughout the period",
+              "Collapsed from around 85% all the way down to 10%",
             ],
             correctIndex: 1,
             explanation:
@@ -1651,10 +1651,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "How do Danish 'alternative' unions and unemployment funds erode the model?",
             options: [
-              "By raising wages too fast",
-              "They sell the a-kasse without the bargaining union attached, capturing the fund while detaching it from the bargaining power the fund quietly financed",
-              "By banning strikes",
-              "By forcing everyone into one union",
+              "By pushing negotiated wages up much too fast, which then prices Danish workers out of the labour market",
+              "They sell the a-kasse without the bargaining union attached, capturing the fund but not its bargaining power",
+              "By banning strikes outright, which strips the traditional bargaining unions of their single main weapon",
+              "By legally forcing every Danish worker into one single state-run union, thereby crowding out all the rest",
             ],
             correctIndex: 1,
             explanation:
@@ -1664,10 +1664,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "Which three groups sit OUTSIDE the collective-agreement floor?",
             options: [
-              "Executives, civil servants, and retirees",
+              "Senior executives, civil servants, and retirees, who are all deliberately excluded from the floor",
               "Migrant/posted workers, platform/gig workers, and employees of firms that never signed an agreement",
-              "Only foreign tourists",
-              "Nobody, coverage is universal",
+              "Only foreign tourists visiting the country, since everyone actually employed there is fully covered",
+              "Nobody at all: collective-agreement coverage in both Sweden and Denmark is effectively universal",
             ],
             correctIndex: 1,
             explanation:
@@ -1677,10 +1677,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "What did the Laval case (CJEU, C-341/05, 2007) establish?",
             options: [
-              "That Swedish wages must be set by law",
-              "That Swedish union blockade action against a Latvian firm's posted workers was a disproportionate restriction on the EU freedom to provide services",
-              "That posted workers may never be paid",
-              "That Tesla must sign a collective agreement",
+              "That Swedish wages must in future be set directly by national statute rather than by collective agreement",
+              "That Swedish union blockade of a Latvian firm's posted workers unlawfully restricted EU service freedom",
+              "That posted workers from other EU member states may never lawfully be paid the Swedish agreement rate",
+              "That Tesla, as a foreign employer operating in Sweden, must sign the relevant collective agreement",
             ],
             correctIndex: 1,
             explanation:
@@ -1690,10 +1690,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "Why do platform/gig workers pose a structural problem for the model?",
             options: [
-              "They earn too much to need a union",
-              "The model assumes an employer to bargain with, and where a worker is classed as self-employed the collective-agreement floor may not reach them at all",
-              "They are banned from unions by EU law",
-              "They are all covered automatically",
+              "Platform and gig workers simply earn far too much money to bother needing or joining a trade union at all",
+              "The model assumes an employer to bargain with, yet a worker classed as self-employed may fall outside the floor",
+              "Platform and gig workers are specifically forbidden from joining any trade union under current EU law",
+              "Platform and gig workers are in fact all automatically covered by the relevant collective agreement",
             ],
             correctIndex: 1,
             explanation:
@@ -1703,10 +1703,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "What was the EU Directive (EU) 2022/2041?",
             options: [
-              "A ban on collective bargaining",
-              "The 2022 Directive on adequate minimum wages, promoting adequate statutory minimum wages where they exist and promoting collective bargaining on wage-setting",
-              "A directive forcing Sweden to adopt the euro",
-              "A Tesla-specific regulation",
+              "An EU directive imposing an outright ban on all collective bargaining right across the member states",
+              "The 2022 Directive on adequate minimum wages, promoting statutory minimum wages and collective bargaining",
+              "A 2022 EU directive forcing Sweden and Denmark to abandon the krona and finally adopt the euro currency",
+              "A Tesla-specific EU regulation requiring the company to sign collective agreements right across Europe",
             ],
             correctIndex: 1,
             explanation:
@@ -1716,10 +1716,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "What did the directive's fine print say about countries with no statutory minimum wage?",
             options: [
-              "It forced them to introduce one immediately",
-              "It does NOT require them to introduce a statutory minimum, nor to make collective agreements universally applicable, where wage protection is delivered through bargaining (Article 1)",
-              "It abolished their collective agreements",
-              "It set their wages directly from Brussels",
+              "It forced every such country to introduce a statutory national minimum wage almost immediately after",
+              "It does NOT require them to introduce a statutory minimum, nor to make collective agreements universal",
+              "It abolished those countries' existing collective agreements and replaced them with a single wage law",
+              "It set those countries' wages directly from Brussels, overriding both statute and collective agreement",
             ],
             correctIndex: 1,
             explanation:
@@ -1729,10 +1729,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "Why did the Nordic unions fight a directive that would nominally HELP low-paid workers?",
             options: [
-              "Because they oppose higher wages",
-              "To protect the mechanism, not refuse the money, they feared the precedent that the EU may legislate on 'pay,' which invites a legislature toward a floor they keep deliberately outside any legislature",
-              "Because the EU is not democratic",
-              "Because they wanted lower wages",
+              "Because the Nordic unions are fundamentally opposed on principle to any higher wages for their workers",
+              "To protect the mechanism, not refuse the money: they feared the precedent of the EU legislating on pay",
+              "Because the Nordic unions regard the whole European Union as fundamentally undemocratic and illegitimate",
+              "Because the Nordic unions actively wanted their own members' wages to be pushed lower rather than higher",
             ],
             correctIndex: 1,
             explanation:
@@ -1742,10 +1742,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "On what legal ground did Denmark (backed by Sweden) ask the CJEU to annul the directive (Case C-19/23)?",
             options: [
-              "That the directive was too generous",
-              "That the EU had legislated on 'pay,' which the EU treaties (Article 153(5) TFEU) specifically exclude from EU competence",
-              "That Sweden had already left the EU",
-              "That the directive violated Tesla's rights",
+              "That the directive was simply far too generous to the low-paid workers right across the European Union",
+              "That the EU had legislated on 'pay,' which the treaties (Article 153(5) TFEU) exclude from EU competence",
+              "That Sweden had by then already formally left the European Union, so the directive could not bind it",
+              "That the directive unlawfully violated Tesla's rights as a large multinational employer in Sweden",
             ],
             correctIndex: 1,
             explanation:
@@ -1755,10 +1755,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "State the course's central paradox.",
             options: [
-              "Weak unions built a strong minimum wage",
-              "The strongest labour movements fought a minimum-wage law to protect a model with no minimum-wage law, because the law would weaken the movement that makes the no-law model work",
-              "The state set wages and unions vanished",
-              "Employers demanded a minimum wage and unions refused pay",
+              "Weak and poorly organised unions somehow managed to build an unusually strong statutory minimum wage",
+              "The strongest labour movements fought a minimum-wage law to protect a model that has no minimum-wage law",
+              "The state took over setting all wages directly, and organised trade unions simply vanished entirely",
+              "Employers themselves demanded a statutory minimum wage, while the unions flatly refused higher pay",
             ],
             correctIndex: 1,
             explanation:
@@ -1768,10 +1768,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "What is the single methodological habit the course wants you to keep?",
             options: [
-              "Explain outcomes by national character",
+              "Explain labour outcomes mainly by each country's national character",
               "Look for the plumbing (institutions) before reaching for the culture",
-              "Always trust official sources over independent ones",
-              "Assume all Nordic countries are the same",
+              "Always trust official government sources over any independent ones",
+              "Assume all the Nordic countries are essentially one and the same",
             ],
             correctIndex: 1,
             explanation:
@@ -1781,10 +1781,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "In the four-questions recap, what is the Nordic answer to Q4 (what happens if you try)?",
             options: [
-              "You are fired with no recourse",
-              "You are protected, and your side may fight hard, the legal sympathy strike (banned in the US under Taft-Hartley §8(b)(4)) is the enforcement engine, as the Tesla dispute shows",
-              "You must get government permission to strike",
-              "Only individual action is allowed",
+              "You are simply fired at will, with no legal recourse whatsoever and no protection from your union at all",
+              "You are protected, and your side may fight hard: the legal sympathy strike is the enforcement engine here",
+              "You must first obtain formal permission from the national government before you are allowed to strike",
+              "Only individual workplace action is allowed; collective or sympathy industrial action is forbidden",
             ],
             correctIndex: 1,
             explanation:
@@ -1794,10 +1794,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "Which course does the lesson recommend next to see a DIFFERENT answer to Q3?",
             options: [
-              "The India course",
+              "The India course, on informal work and platform labour markets",
               "'Germany: Workers on the Board', co-determination and works councils",
-              "The China course",
-              "A Tesla investor briefing",
+              "The China course, on state-run unions and its national labour law",
+              "A Tesla investor briefing on the Swedish labour dispute's costs",
             ],
             correctIndex: 1,
             explanation:
@@ -1807,10 +1807,10 @@ That is the whole course in one paradox. **The strongest labour movements in the
           {
             prompt: "Why does 'a floor written into law can become a ceiling' matter to the directive story?",
             options: [
-              "It doesn't",
-              "Because a statutory 'adequate' figure gives employers a number to pay and no more, and can substitute for the union that would otherwise keep pushing the floor up, which is what the Nordic unions were guarding against",
-              "Because laws are always better than contracts",
-              "Because ceilings are illegal in the EU",
+              "It genuinely doesn't; the ceiling worry is irrelevant to the directive story and to the unions' fight",
+              "Because a statutory 'adequate' figure becomes the most employers pay, sidelining the union that raises it",
+              "Because a written law is always strictly better protection than a mere negotiated collective contract",
+              "Because wage ceilings of every kind are explicitly illegal under European Union law right across the bloc",
             ],
             correctIndex: 1,
             explanation:

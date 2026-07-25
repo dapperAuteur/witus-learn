@@ -198,10 +198,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
             prompt:
               "An American student sees that German density is ~14% and concludes German workers must have weak protections. What has the student got wrong?",
             options: [
-              "Nothing, density is the only thing that matters",
-              "They have assumed coverage is built out of members, which is true in the US and false in Germany",
-              "German density is actually 60%",
-              "Germany has no collective agreements",
+              "Nothing is wrong; union density is the only labour statistic that actually matters",
+              "They assumed coverage is built out of union members, true in the US but false in Germany",
+              "German density is really about 60%, and the published 14% figure is a well-known error",
+              "Germany has almost no collective agreements, so its workers really are unprotected",
             ],
             correctIndex: 1,
             explanation:
@@ -211,10 +211,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
           {
             prompt: "Under TVG § 3(1), who is bound by a German collective agreement?",
             options: [
-              "Every worker in the country",
-              "The members of the bargaining parties, including the employers who belong to the employers' association",
-              "Only workers who voted for it",
-              "Only firms with more than 2,000 employees",
+              "Every worker in the country, because the state extends each agreement to all firms",
+              "The members of the bargaining parties, chiefly the employers in the employers' association",
+              "Only the workers who personally voted to accept the agreement in a ratification ballot",
+              "Only firms with more than 2,000 employees, the co-determination threshold set in law",
             ],
             correctIndex: 1,
             explanation:
@@ -224,10 +224,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
           {
             prompt: "What is an Arbeitgeberverband, and why does it matter for coverage?",
             options: [
-              "A German union; it recruits members",
-              "An employers' association; when a company joins it, the company is bound by the sectoral agreement the association signs",
-              "A government agency that sets wages",
-              "A works council for managers",
+              "A German industrial union; it recruits members and negotiates the sectoral agreement",
+              "An employers' association; a company that joins it becomes bound by the sectoral agreement",
+              "A federal agency that sets sector wages by decree, binding every firm in the industry",
+              "A works council made up of managers, representing executive staff (leitende Angestellte)",
             ],
             correctIndex: 1,
             explanation:
@@ -238,10 +238,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
             prompt:
               "True or false: Germany's high bargaining coverage is mainly produced by the government legally extending agreements to non-member firms.",
             options: [
-              "True, that is exactly how it works",
-              "False, Germany has that power (TVG § 5) but OECD/AIAS calls its use 'rather exceptional'; coverage comes from employer-association membership",
-              "True, every German agreement is automatically extended",
-              "False, Germany has no extension power at all",
+              "True, statutory extension by the labour ministry is exactly how German coverage is produced",
+              "False, Germany has that power (TVG § 5) but OECD/AIAS calls its actual use 'rather exceptional'",
+              "True, every German collective agreement is automatically extended by law to non-member firms",
+              "False, Germany has no statutory power to extend a collective agreement to anyone at all",
             ],
             correctIndex: 1,
             explanation:
@@ -252,10 +252,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
             prompt:
               "A German worker who has never joined a union works at a company that belongs to an employers' association. Is she likely to be paid under the sectoral collective agreement?",
             options: [
-              "No, the agreement only binds union members",
-              "Yes, the employer is bound and in practice applies the terms to everyone, usually via a reference clause in the individual contract",
-              "Only if a court orders it",
-              "Only if more than half her colleagues are union members",
+              "No, the sectoral agreement legally binds only the workers who are actual union members",
+              "Yes, the employer is bound and applies the terms to everyone via a reference clause",
+              "Only if a labour court specifically orders the employer to extend the terms to her",
+              "Only if more than half of her immediate colleagues are themselves paid-up union members",
             ],
             correctIndex: 1,
             explanation:
@@ -265,10 +265,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
           {
             prompt: "What is the German 'dual system'?",
             options: [
-              "Two competing union federations",
-              "Sectoral bargaining ABOVE the firm (union ↔ employers' association) plus works councils INSIDE the firm",
-              "Two houses of parliament voting on wages",
-              "A system of two minimum wages, east and west",
+              "Two rival union federations competing to sign the sectoral collective agreement",
+              "Sectoral bargaining above the firm, plus a statutory works council inside each firm",
+              "The two houses of the German parliament jointly voting to set sectoral wage rates",
+              "A system of two national minimum wages, one for the east and one for the west",
             ],
             correctIndex: 1,
             explanation:
@@ -278,10 +278,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
           {
             prompt: "What does Article 9(3) of Germany's Basic Law say about agreements that restrict the right to organise?",
             options: [
-              "They are permitted if both parties consent",
-              "They are null and void, and measures directed to that end are unlawful",
-              "They must be reviewed by the labour ministry",
-              "They are punishable by a fine of €10,000",
+              "They are permitted, provided the employer and the worker both consent to them",
+              "They are null and void, and measures aimed at that end are also unlawful",
+              "They must first be reviewed and approved by the federal labour ministry",
+              "They are valid but punishable by an administrative fine of up to €10,000",
             ],
             correctIndex: 1,
             explanation:
@@ -291,10 +291,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
           {
             prompt: "Which groups are excluded from the German Works Constitution Act?",
             options: [
-              "Part-time workers and apprentices",
-              "Executive staff (§ 5(3)), and religious communities and their charitable/educational institutions (§ 118(2))",
-              "Anyone under 25",
-              "Nobody, it covers every worker in Germany",
+              "Part-time workers and apprentices, who are counted but cannot stand for election",
+              "Executive staff (§ 5(3)) and religious communities and their institutions (§ 118(2))",
+              "Anyone under 25, plus all trainees still within their first probationary year of work",
+              "Nobody at all, the Act covers every single employee working in Germany without exception",
             ],
             correctIndex: 1,
             explanation:
@@ -303,7 +303,7 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
           },
           {
             prompt: "When did Germany ratify ILO Convention No. 87 (freedom of association)?",
-            options: ["1919", "8 June 1956", "20 March 1957", "1976"],
+            options: ["28 June 1919", "8 June 1956", "20 March 1957", "4 May 1976"],
             correctIndex: 2,
             explanation:
               "20 March 1957 (ILO NORMLEX). Convention No. 98 came slightly earlier, on 8 June 1956.",
@@ -313,10 +313,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
             prompt:
               "The BLS warns that its 2025 US union figures are 11-month averages excluding October 2025. Why does the course tell you that?",
             options: [
-              "Because it means the US numbers are fabricated",
-              "Because a course that hides its caveats is selling something, the figures are not strictly comparable year-to-year, though the gap with Germany is far too big for that to explain",
-              "Because the German numbers are also 11-month averages",
-              "Because BLS retracted the release",
+              "Because the missing October means the 2025 US union figures were simply invented by the BLS",
+              "Because a course hiding its caveats is selling something; the 2025 figures aren't strictly comparable",
+              "Because Germany's own 2024 density and coverage figures are likewise only 11-month averages",
+              "Because the BLS formally retracted the entire 2025 union release a few weeks after publishing it",
             ],
             correctIndex: 1,
             explanation:
@@ -326,10 +326,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
           {
             prompt: "Which of the four questions from the anchor course does Germany answer most distinctively?",
             options: [
-              "Question 1, who is allowed to organise",
-              "Question 2, who is excluded",
+              "Question 1, who is allowed to organise a union at all",
+              "Question 2, who is excluded from the system entirely",
               "Question 3, who bargains with whom, and at what level",
-              "Question 4, what happens to you if you try",
+              "Question 4, what happens to you if you dare to try",
             ],
             correctIndex: 2,
             explanation:
@@ -339,10 +339,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
           {
             prompt: "What is a Flächentarifvertrag?",
             options: [
-              "A single-company contract",
-              "An area-wide / sectoral collective agreement between an industrial union and an employers' association",
-              "A works agreement between an employer and a works council",
-              "A government wage decree",
+              "A single-company contract signed by one firm directly with the industrial union",
+              "An area-wide sectoral agreement between an industrial union and an employers' body",
+              "A works agreement negotiated between an employer and its elected works council",
+              "A government wage decree binding every firm across an entire industrial sector",
             ],
             correctIndex: 1,
             explanation:
@@ -353,10 +353,10 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
             prompt:
               "Germany's coverage rides on employers staying inside employers' associations. What does that immediately predict about how the system could break?",
             options: [
-              "It breaks if workers stop joining unions",
-              "It breaks if employers find a way to belong to the association without being bound by the agreement",
-              "It breaks if the government stops extending agreements",
-              "It cannot break, it is written into the constitution",
+              "It breaks if workers stop joining unions and union density falls below ten percent",
+              "It breaks when employers stay in the association without being bound by its agreement",
+              "It breaks if the government stops declaring collective agreements generally binding",
+              "It cannot break at all, because parity co-determination is fixed in the constitution",
             ],
             correctIndex: 1,
             explanation:
@@ -575,10 +575,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
           {
             prompt: "Who elects a German works council?",
             options: [
-              "The union's members in the workplace",
+              "Only the union's dues-paying members who happen to work at that establishment",
               "All the employees of the establishment, whether or not they belong to a union",
-              "The employer, from a list of candidates",
-              "The Federal Employment Agency",
+              "The employer, choosing the works council from an approved list of official candidates",
+              "The Federal Employment Agency, the state body that also runs unemployment benefits",
             ],
             correctIndex: 1,
             explanation:
@@ -609,10 +609,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
           {
             prompt: "An employer must INFORM the works council of a plan. Can it then proceed over the works council's objection?",
             options: [
-              "No, information rights include a veto",
-              "Yes, information means the employer must tell you; it does not mean you can stop it",
-              "Only with a court order",
-              "Only if the union agrees",
+              "No, an information right always carries a works-council veto with it",
+              "Yes, information means the employer must tell you, not that you can stop it",
+              "Only after the employer first obtains a formal order from the labour court",
+              "Only if the union representing the sector formally agrees to the plan",
             ],
             correctIndex: 1,
             explanation:
@@ -622,10 +622,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
           {
             prompt: "What makes a § 87(1) matter a genuine CO-DETERMINATION right rather than a consultation right?",
             options: [
-              "The employer has to reply in writing",
-              "The employer cannot act without agreement, and on deadlock the conciliation committee decides, its award REPLACING agreement (§ 87(2))",
-              "The union must be notified",
-              "It only applies in companies over 2,000 employees",
+              "The employer must reply to the works council in writing within a fixed statutory deadline",
+              "The employer cannot act without agreement, and any deadlock goes to a conciliation committee",
+              "The union must be formally notified before the employer may implement the measure at all",
+              "It applies only in large companies that normally employ more than 2,000 permanent staff",
             ],
             correctIndex: 1,
             explanation:
@@ -636,10 +636,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
             prompt:
               "An employer wants to install software that monitors employee performance. Which tier of right does the works council have here?",
             options: [
-              "Information only",
-              "Consultation only",
-              "Co-determination, § 87(1) no. 6 covers technical devices designed to monitor employee behaviour or performance",
-              "No right at all; monitoring is a management prerogative",
+              "Information only, the employer just has to tell the works council in advance",
+              "Consultation only, the works council must be heard but cannot block the plan",
+              "Co-determination, § 87(1) no. 6 covers devices that monitor employee performance",
+              "No right at all, workplace monitoring is purely a management prerogative here",
             ],
             correctIndex: 2,
             explanation:
@@ -649,10 +649,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
           {
             prompt: "Which of these is NOT something a works council co-determines under § 87(1)?",
             options: [
-              "The start and end of the daily working hours",
-              "Piece and bonus rates",
+              "The start and end of daily working hours and breaks",
+              "Piece rates, bonus rates and the timing of payment",
               "The LEVEL of wages and the length of the working week",
-              "Holiday scheduling principles",
+              "Holiday scheduling principles and the leave schedule",
             ],
             correctIndex: 2,
             explanation:
@@ -675,10 +675,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
           {
             prompt: "Can a German works council VETO an individual dismissal?",
             options: [
-              "Yes, dismissal requires its consent",
-              "No, it must be consulted and may object on five statutory grounds, but it cannot block the dismissal",
-              "Yes, but only for union members",
-              "Only in companies with more than 2,000 employees",
+              "Yes, an individual dismissal legally requires the works council's prior consent",
+              "No, it must be consulted and may object, but cannot actually block the dismissal",
+              "Yes, though its veto power applies only to the dismissal of actual union members",
+              "Only in large companies with more than 2,000 permanently employed workers",
             ],
             correctIndex: 1,
             explanation:
@@ -689,10 +689,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
             prompt:
               "A company is closing a major department. What is the difference between the Interessenausgleich and the Sozialplan?",
             options: [
-              "They are two names for the same document",
-              "The Interessenausgleich (whether/how/when the change happens) cannot be forced on the employer; the Sozialplan (what workers get) CAN be imposed by the conciliation committee under § 112(4)",
-              "The Sozialplan is voluntary; the Interessenausgleich is binding",
-              "Both can be imposed by the labour court",
+              "They are simply two alternative names for one and the same restructuring document, with no difference",
+              "The Interessenausgleich cannot be forced on the employer, but the Sozialplan can be imposed on deadlock",
+              "The Sozialplan is voluntary for the employer, while the Interessenausgleich is legally binding",
+              "Both the Interessenausgleich and the Sozialplan can be imposed on the employer by the labour court",
             ],
             correctIndex: 1,
             explanation:
@@ -702,10 +702,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
           {
             prompt: "Under § 99, what does a works council in a firm with more than 20 employees get to do about a hiring or transfer?",
             options: [
-              "Be informed after the fact",
-              "Give or refuse its CONSENT to the measure, on the grounds listed in § 99(2)",
-              "Interview the candidate",
-              "Nothing, recruitment is a management prerogative",
+              "Be informed of the hiring only after it has already taken effect",
+              "Give or refuse its consent to the measure, on the grounds in § 99(2)",
+              "Interview each candidate and score them before the employer decides",
+              "Nothing at all, recruitment is purely a management prerogative here",
             ],
             correctIndex: 1,
             explanation:
@@ -724,9 +724,9 @@ Read that against the reality. The crime is *obstructing the formation of a work
             prompt: "Works councils are much more common in large workplaces. What were the 2023 figures?",
             options: [
               "73% of workplaces with 200+ employees, versus 16% of those with 21-50",
-              "50% of large workplaces, versus 45% of small ones",
-              "Every workplace over 5 employees has one, by law",
-              "20% of large workplaces, versus 19% of small ones",
+              "About 50% of large workplaces, against roughly 45% of the smaller ones",
+              "Every workplace with more than 5 employees must have one, by federal law",
+              "About 20% of large workplaces, against roughly 19% of the smaller ones",
             ],
             correctIndex: 0,
             explanation:
@@ -736,10 +736,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
           {
             prompt: "In Germany, obstructing a works-council election is…",
             options: [
-              "A civil matter handled by the labour court",
-              "A criminal offence punishable by up to one year's imprisonment or a fine (§ 119)",
-              "Permitted if the employer objects to the union",
-              "Punished by an automatic €10,000 fine",
+              "A civil matter for the labour court, resolved by a reinstatement order",
+              "A criminal offence punishable by up to one year in prison or a fine (§ 119)",
+              "Entirely permitted whenever the employer objects to the union involved",
+              "Punishable only by an automatic administrative fine of up to €10,000",
             ],
             correctIndex: 1,
             explanation:
@@ -749,10 +749,10 @@ Read that against the reality. The crime is *obstructing the formation of a work
           {
             prompt: "What is the procedural hole in BetrVG § 119?",
             options: [
-              "The maximum sentence is too short",
-              "§ 119(2): prosecution happens only on application, from the works council (which may not exist), a union in the establishment (which may not be present), the electoral board, or the employer itself",
-              "It only applies to companies over 500 employees",
-              "It expires after one year",
+              "The one-year maximum sentence is far too short to deter any large and determined employer",
+              "§ 119(2): it is prosecuted only on application by the works council, a union, or the employer",
+              "The criminal offence applies only to companies that normally employ more than 500 staff",
+              "The whole criminal offence quietly expires one year after the election was obstructed",
             ],
             correctIndex: 1,
             explanation:
@@ -960,10 +960,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "German companies have two boards. Which one do employee representatives sit on?",
             options: [
-              "The Vorstand (management board), which runs the company",
-              "The Aufsichtsrat (supervisory board), which appoints and oversees the management board",
-              "Both, equally",
-              "Neither, they sit on a separate workers' board",
+              "The Vorstand (management board), which actually runs the company day to day",
+              "The Aufsichtsrat (supervisory board), which appoints and oversees management",
+              "Both boards equally, since employee representatives sit on each of the two",
+              "Neither, employee representatives sit on a wholly separate workers' council",
             ],
             correctIndex: 1,
             explanation:
@@ -973,10 +973,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "Under the Mitbestimmungsgesetz 1976, which companies must give employees half the supervisory-board seats?",
             options: [
-              "All companies with more than 500 employees",
-              "AGs, KGaAs, GmbHs and co-operatives that normally employ MORE THAN 2,000",
-              "Only coal and steel companies",
-              "Only publicly listed companies of any size",
+              "All companies of any legal form that employ more than 500 workers",
+              "AGs, KGaAs, GmbHs and co-ops that normally employ more than 2,000",
+              "Only coal, iron and steel companies, exactly as under the 1951 Act",
+              "Only publicly listed companies, regardless of how large they are",
             ],
             correctIndex: 1,
             explanation: "MitbestG § 1(1): more than 2,000 employees. Below that, the One-Third Participation Act 2004 takes over at 500.",
@@ -985,10 +985,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "A German company with 700 employees, what board-level representation do its workers get?",
             options: [
-              "Half the supervisory board",
-              "One third of the supervisory board, under the Drittelbeteiligungsgesetz 2004",
-              "None",
-              "Full parity plus a neutral member",
+              "Half of the supervisory board, under the Co-determination Act 1976",
+              "One third of the supervisory board (Drittelbeteiligungsgesetz 2004)",
+              "None at all, board co-determination begins only at 2,000 employees",
+              "Full parity plus a genuinely neutral eleventh member, as in 1951",
             ],
             correctIndex: 1,
             explanation: "DrittelbG § 1: more than 500 employees → one third of the supervisory board.",
@@ -1006,10 +1006,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "What does MitbestG § 15(1) require about the composition of the employee bench?",
             options: [
-              "That it be at least half women",
-              "That it include a senior executive (leitender Angestellter), a person the Works Constitution Act excludes from the works council",
-              "That every member be a union member",
-              "That no member be a manager",
+              "That at least half of the employee-bench seats are reserved for women workers",
+              "That it include one senior executive (leitender Angestellter) on the workers' bench",
+              "That every member of the employee bench must be a fully paid-up union member",
+              "That no member of the employee bench may be a manager of the company at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1019,10 +1019,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "Under MitbestG § 27(2), what happens if the supervisory board cannot elect a chair by a two-thirds majority?",
             options: [
-              "A court appoints a neutral chair",
-              "The shareholder members elect the chair; the employee members elect only the deputy",
-              "The employee members elect the chair",
-              "The seat stays vacant",
+              "A labour court then steps in and appoints an independent neutral chair",
+              "The shareholder side elects the chair; the employees elect only the deputy",
+              "The employee members elect the chair, and shareholders take the deputy",
+              "The chair's seat simply stays empty until the two sides eventually agree",
             ],
             correctIndex: 1,
             explanation: "The chair goes to the shareholder side automatically, and the workers get the deputy as a consolation.",
@@ -1032,9 +1032,9 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
             prompt: "Under MitbestG § 29(2), who has a second vote when the supervisory board deadlocks?",
             options: [
               "The chair, and the statute says expressly that the deputy does NOT",
-              "The deputy chair",
-              "The labour director",
-              "Nobody; the motion simply fails",
+              "The deputy chair, who is elected by the employee side of the board",
+              "The labour director, who sits on the company's management board",
+              "Nobody at all; on a tie the motion before the board simply fails",
             ],
             correctIndex: 0,
             explanation:
@@ -1057,10 +1057,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "How does the 1951 coal-and-steel supervisory board break a tie?",
             options: [
-              "The shareholder chair casts a second vote",
-              "An eleventh, genuinely NEUTRAL member, who may not be tied to a union, an employers' association, or the company, elected by the other ten",
-              "The government appoints an arbitrator",
-              "It cannot; the board is simply deadlocked",
+              "The shareholder-elected chair casts a second, tie-breaking vote, exactly as in the 1976 Act",
+              "An eleventh, genuinely neutral member, tied to neither side, chosen by the other ten members",
+              "The federal government steps in and appoints an outside arbitrator to break the tie",
+              "It cannot be broken at all, so the coal-and-steel supervisory board stays deadlocked",
             ],
             correctIndex: 1,
             explanation:
@@ -1070,10 +1070,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "What extra power do workers have under the 1951 Act that they do NOT have under the 1976 Act?",
             options: [
-              "The right to strike inside the boardroom",
-              "The labour director cannot be appointed against the majority of the employee-elected supervisory board members (§ 13(1))",
-              "The right to veto dividends",
-              "A majority of the supervisory board seats",
+              "The right to call a strike from inside the company boardroom whenever it deadlocks",
+              "The labour director cannot be appointed against the employee-elected members (§ 13(1))",
+              "A standing power to veto any dividends the company pays out to its shareholders",
+              "A permanent outright majority of all the seats on the company's supervisory board",
             ],
             correctIndex: 1,
             explanation:
@@ -1083,10 +1083,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "Why did coal and steel workers get a better deal in 1951 than everyone else got in 1976?",
             options: [
-              "Coal miners are more skilled",
-              "Timing and leverage, in 1951 the Ruhr's coal and steel were the strategic heart of West German reindustrialisation, and the unions asked at the one moment the answer would be yes",
-              "The 1976 Act was written by unions",
-              "The 1951 Act was imposed by the United Nations",
+              "Because coal miners were far more skilled, and far harder to replace, than other workers",
+              "Timing and leverage, the unions asked when Ruhr coal and steel gave them decisive weight",
+              "The 1976 Co-determination Act was drafted and written almost entirely by the trade unions",
+              "The 1951 coal-and-steel Act was directly imposed on West Germany by the United Nations",
             ],
             correctIndex: 1,
             explanation: "A lesson about power, not about Germany. Institutions record the balance of forces at the moment they were written.",
@@ -1095,10 +1095,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "What is an Arbeitsdirektor?",
             options: [
-              "The head of the works council",
-              "A labour director who sits as an equal member of the MANAGEMENT board (MitbestG § 33; Montan-MitbestG § 13)",
-              "A government inspector",
-              "The chair of the supervisory board",
+              "The elected head of the establishment's works council, its chief officer",
+              "A labour director sitting as an equal member of the management board (§ 33)",
+              "A federal government inspector who audits the company's labour practices",
+              "The chair of the supervisory board, always chosen by the shareholders",
             ],
             correctIndex: 1,
             explanation:
@@ -1107,7 +1107,7 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           },
           {
             prompt: "How many German companies had a parity-co-determined supervisory board in 2025?",
-            options: ["670, down from a peak of 767 in 2002", "About 5,000", "About 50", "Every company with over 500 employees"],
+            options: ["670, down from a peak of 767 in 2002", "Around 5,000 companies across Germany", "About 50, almost all in coal and steel", "Every company with over 500 employees"],
             correctIndex: 0,
             explanation:
               "Hans-Böckler-Stiftung (2025). The number peaked in 2002 and has fallen since, lesson 11 asks why.",
@@ -1117,10 +1117,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
             prompt:
               "This course refuses to tell you how many companies are still co-determined under the 1951 coal-and-steel Act. Why?",
             options: [
-              "The number is secret",
-              "Because the Hans-Böckler tally explicitly excludes them and no trustworthy current count was found, so the course will not invent one",
-              "Because the 1951 Act was repealed",
-              "Because it is the same as the 1976 number",
+              "Because the exact number is treated as an official secret under German company law",
+              "Because the Hans-Böckler tally excludes them and no trustworthy current count was found",
+              "Because the 1951 coal-and-steel Act was quietly repealed and no longer applies at all",
+              "Because the figure is exactly the same as the 1976 parity-co-determination number",
             ],
             correctIndex: 1,
             explanation:
@@ -1130,10 +1130,10 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor*, the
           {
             prompt: "Why does the two-tier board structure matter for reading the claim 'workers are on the board'?",
             options: [
-              "It doesn't; a board is a board",
-              "Because the board workers sit on is the SUPERVISORY board, it appoints and oversees management rather than running the company, so 'on the board' means something narrower and more precise than an American would assume",
-              "Because German boards have no legal power",
-              "Because workers actually sit on the management board",
+              "It does not really matter in practice, since a board is simply a board whatever you call it",
+              "Because workers sit on the supervisory board, which oversees management rather than running the firm",
+              "Because German supervisory boards actually hold no real legal power over the company at all",
+              "Because employee representatives actually sit on the management board that runs the company",
             ],
             correctIndex: 1,
             explanation:
@@ -1269,10 +1269,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "In the German dual system, who bargains over the LEVEL of pay?",
             options: [
-              "The works council, inside the firm",
-              "The industrial union and the employers' association, at sector level",
-              "The supervisory board",
-              "The Federal Ministry of Labour",
+              "The works council, negotiating pay inside the individual firm",
+              "The industrial union and the employers' association, sector-wide",
+              "The supervisory board, where employee reps hold half the seats",
+              "The Federal Ministry of Labour, acting by administrative decree",
             ],
             correctIndex: 1,
             explanation: "Pay is channel one, the union's channel, above the firm. The works council is expressly forbidden from touching it.",
@@ -1281,10 +1281,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "What does BetrVG § 77(3) forbid?",
             options: [
-              "Works councils from meeting without the employer",
-              "Works agreements from dealing with pay and conditions that a collective agreement fixes or normally fixes",
-              "Unions from entering the workplace",
-              "Employers from joining an employers' association",
+              "Works councils from ever meeting without the employer being present in the room",
+              "Works agreements on pay and conditions that a collective agreement normally fixes",
+              "Trade unions from physically entering the workplace in order to recruit members",
+              "Individual employers from joining any sectoral employers' association at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1294,10 +1294,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "Why is Tarifvorrang necessary to the whole architecture?",
             options: [
-              "It saves the employer paperwork",
-              "Without it, employers would negotiate pay with the works council, a body of their own employees who cannot strike, and undercut the sectoral agreement firm by firm",
-              "It is an EU requirement",
-              "It stops works councils from being elected",
+              "It mainly saves the employer a great deal of duplicated bargaining paperwork each year",
+              "Without it, employers would cut cheaper pay deals with a works council that cannot strike",
+              "It is a binding requirement imposed directly on Germany by European Union directives",
+              "It exists mainly to stop smaller firms' works councils from ever being elected at all",
             ],
             correctIndex: 1,
             explanation: "The rule keeps pay in the one channel that carries a credible threat.",
@@ -1306,10 +1306,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "What is an Öffnungsklausel (opening clause)?",
             options: [
-              "A clause letting workers open the company's books",
-              "A clause in a sectoral agreement expressly authorising a single firm and its works council to deviate from it, e.g. longer hours in exchange for a job guarantee",
-              "A clause letting an employer leave the employers' association",
-              "A clause opening the works council to union members only",
+              "A clause that lets the workforce open and inspect the company's financial books",
+              "A clause letting one firm and its works council deviate from the sectoral agreement",
+              "A clause allowing an individual employer to leave the employers' association early",
+              "A clause that restricts works-council membership to paid-up union members only",
             ],
             correctIndex: 1,
             explanation:
@@ -1319,10 +1319,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "Can a German works council lawfully call a strike?",
             options: [
-              "Yes, over any § 87(1) matter",
-              "No, BetrVG § 74(2) makes industrial action between the employer and the works council unlawful",
-              "Yes, but only with the union's permission",
-              "Yes, but only once per year",
+              "Yes, freely, over any of the fourteen co-determination matters in § 87(1)",
+              "No, BetrVG § 74(2) makes industrial action against the employer unlawful",
+              "Yes, but only after first obtaining the sector union's express permission",
+              "Yes, but only once per calendar year, and then only over pay levels",
             ],
             correctIndex: 1,
             explanation:
@@ -1332,10 +1332,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "Under § 74(1), how often must the employer and works council meet?",
             options: [
-              "Once a year",
-              "At least once a month, discussing matters 'with an earnest desire to reach agreement'",
-              "Only when the employer chooses",
-              "Never, meetings are voluntary",
+              "Just once a year, at a single legally mandated annual meeting",
+              "At least once a month, 'with an earnest desire to reach agreement'",
+              "Only if and when the employer alone chooses to call a meeting",
+              "Never at all, since all such meetings are entirely voluntary",
             ],
             correctIndex: 1,
             explanation: "Conflict inside the German establishment isn't suppressed by culture; it is routed, into a monthly meeting.",
@@ -1344,10 +1344,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "Where does the German right to strike come from?",
             options: [
-              "A statute passed in 1949",
-              "Basic Law Art. 9(3) plus decades of Federal Labour Court (Bundesarbeitsgericht) case law, there is no statute granting it",
-              "The Works Constitution Act, § 74",
-              "An EU directive",
+              "A dedicated federal strike statute that the Bundestag passed back in the year 1949",
+              "Basic Law Art. 9(3) plus decades of Federal Labour Court case law, no statute grants it",
+              "The Works Constitution Act itself, whose § 74 expressly grants the strike right",
+              "A binding European Union directive guaranteeing the freedom to take collective action",
             ],
             correctIndex: 1,
             explanation:
@@ -1370,10 +1370,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "What is the Friedenspflicht (peace obligation)?",
             options: [
-              "A ban on all strikes in Germany",
-              "While a collective agreement is running, the matters it settles are off the table, you do not strike over what your own contract has already agreed",
-              "A duty on the government to mediate every dispute",
-              "A rule that strikes must be announced 30 days in advance",
+              "A blanket legal ban on every strike anywhere in Germany, at any time, without exception",
+              "While a collective agreement runs, you may not strike over the matters it has settled",
+              "A binding legal duty on the federal government to mediate every single industrial dispute",
+              "A strict rule that any strike be formally announced at least thirty days beforehand",
             ],
             correctIndex: 1,
             explanation:
@@ -1383,10 +1383,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "This course refuses to quote a 'days lost to strikes' statistic for Germany. Why?",
             options: [
-              "Because Germany has never had a strike",
-              "Because it did not retrieve one from a primary source it trusts, learn the mechanism, be suspicious of the tidy number",
-              "Because the figure is classified",
-              "Because strike data is meaningless",
+              "Because Germany has genuinely never once had a single strike in its whole history",
+              "Because no trusted primary source for the number was found, so it will not quote one",
+              "Because the exact strike-days figure is officially classified by the federal state",
+              "Because strike-days data is inherently meaningless and can never tell you anything",
             ],
             correctIndex: 1,
             explanation:
@@ -1396,10 +1396,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "State the German trade in one sentence.",
             options: [
-              "Germany gives workers a strike fund and takes away their board seats",
-              "Germany gives the workforce a permanent, statutory seat, and takes away its ability to make a scene",
-              "Germany gives workers pay rises and takes away their holidays",
-              "Germany gives employers total control and workers nothing",
+              "Germany gives workers a generous strike fund and takes away their board seats entirely",
+              "Germany gives the workforce a permanent statutory seat and removes its right to strike",
+              "Germany gives workers regular pay rises and takes away their statutory paid holidays",
+              "Germany gives employers near-total control and gives the workers almost nothing at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1410,9 +1410,9 @@ That is not a criticism. It might be the best bargain any working class ever str
             prompt: "A works agreement (Betriebsvereinbarung) and a collective agreement (Tarifvertrag), which produces which?",
             options: [
               "The union produces the works agreement; the works council produces the collective agreement",
-              "The works council + employer produce the works agreement; the union + employers' association produce the collective agreement",
-              "Both are produced by the supervisory board",
-              "Both are issued by the labour ministry",
+              "Works council and employer make the works agreement; union and association make the collective one",
+              "Both of these documents are produced entirely by the company's own supervisory board of directors",
+              "Both agreements are formally issued by the Federal Ministry of Labour, by administrative decree",
             ],
             correctIndex: 1,
             explanation: "Two bodies, two statutes, two kinds of power, and § 77(3) is the line between them.",
@@ -1422,10 +1422,10 @@ That is not a criticism. It might be the best bargain any working class ever str
             prompt:
               "An employer in trouble wants its works council to accept a pay cut below the sectoral rate. What does it need first?",
             options: [
-              "Nothing, the works council can simply agree",
-              "An opening clause in the sectoral collective agreement expressly authorising the deviation (§ 77(3), second sentence)",
-              "Permission from the supervisory board",
-              "A court order",
+              "Nothing at all, since the firm's own works council can simply agree to the lower rate itself",
+              "An opening clause in the sectoral collective agreement that expressly authorises the deviation",
+              "Formal prior permission granted by the company's supervisory board and its shareholders",
+              "A binding court order from the competent regional labour court authorising the pay cut",
             ],
             correctIndex: 1,
             explanation:
@@ -1435,10 +1435,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "Which body has power inside the German firm, and which body has the strike?",
             options: [
-              "Both belong to the works council",
-              "Both belong to the union",
-              "The works council has power inside the firm; the union, outside the firm, has the strike",
-              "Neither has either",
+              "Both the internal power and the strike weapon belong to the elected works council",
+              "Both the internal power and the strike weapon belong entirely to the sector union",
+              "The works council holds power inside the firm; the union outside holds the strike",
+              "Neither body holds either the internal power or the right to strike at all",
             ],
             correctIndex: 2,
             explanation:
@@ -1448,10 +1448,10 @@ That is not a criticism. It might be the best bargain any working class ever str
           {
             prompt: "Under § 87(1)'s opening words, what happens to a works council's co-determination right if the collective agreement already covers the matter?",
             options: [
-              "The works council co-determines it anyway",
-              "The right does not apply, § 87(1) operates only 'in so far as [matters] are not prescribed by legislation or collective agreement'",
-              "The works council may override the collective agreement",
-              "The matter goes to the supervisory board",
+              "The works council simply co-determines the matter anyway, ignoring the collective agreement",
+              "The right does not apply; § 87(1) operates only where no collective agreement covers the matter",
+              "The works council may use § 87(1) to override the sectoral collective agreement entirely",
+              "The whole matter is then escalated to the company's supervisory board for a final decision",
             ],
             correctIndex: 1,
             explanation: "The second half of the seam. Between § 87(1)'s chapeau and § 77(3), the boundary between the two channels is fully written down.",
@@ -1605,10 +1605,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "What has happened to collective bargaining coverage in West Germany since 1998?",
             options: [
-              "It has risen from 51% to 76%",
-              "It has fallen from 76% to about 51%, down 25 percentage points",
-              "It has been flat at about 50%",
-              "It has fallen from 90% to 80%",
+              "It has actually risen steadily from 51% up to about 76% since then",
+              "It has fallen from 76% to about 51%, a drop of 25 percentage points",
+              "It has stayed essentially flat at roughly 50% across the whole period",
+              "It has fallen only slightly, from about 90% down to around 80%",
             ],
             correctIndex: 1,
             explanation:
@@ -1626,10 +1626,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "What is OT-Mitgliedschaft?",
             options: [
-              "Overtime membership, a union scheme for shift workers",
-              "Membership of an employers' association 'ohne Tarifbindung', WITHOUT being bound by the collective agreement it signs",
-              "A works council for temporary workers",
-              "A union membership discount",
+              "Overtime membership, a special union scheme for regular night and shift workers",
+              "Membership of an employers' association without being bound by its agreement",
+              "A separate works council set up only for a firm's temporary and agency workers",
+              "A discount on union dues for the low-paid, funded by the employers' association",
             ],
             correctIndex: 1,
             explanation:
@@ -1639,10 +1639,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "Germany's coverage fell by 25 points in the West. Did union density cause that?",
             options: [
-              "Yes, workers stopped joining unions",
-              "No, coverage was never made of union members (TVG § 3(1) binds through the EMPLOYER). It fell because employers escaped the agreement while staying in the association",
-              "Yes, the government abolished collective agreements",
-              "No, coverage actually rose",
+              "Yes, German workers simply stopped joining trade unions in large numbers after 1998",
+              "No; coverage binds through the employer, and it fell as employers escaped the agreement",
+              "Yes, the federal government formally abolished most sectoral collective agreements",
+              "No, West German bargaining coverage actually rose steadily across the whole period",
             ],
             correctIndex: 1,
             explanation:
@@ -1652,10 +1652,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "Germany could sweep uncovered firms back in by declaring agreements generally binding (TVG § 5). Why doesn't it?",
             options: [
-              "The power was repealed in 1998",
-              "It is used only exceptionally, partly because § 5 requires the Ministry to act in agreement with a committee on which the employers' peak organisations sit",
-              "The EU forbids it",
-              "German unions oppose it",
+              "The whole statutory extension power under § 5 was quietly repealed altogether in 1998",
+              "It is used only rarely, since § 5 needs a committee where the employers' side must also agree",
+              "European Union law now flatly forbids any member state from extending its agreements",
+              "Germany's own trade unions strongly oppose ever using the statutory extension power at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1665,10 +1665,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "Why did Germany introduce a national statutory minimum wage in 2015, having never had one before?",
             options: [
-              "Because the EU ordered it",
-              "Because the collective agreement used to BE the floor, and as coverage collapsed, a hole opened at the bottom of the labour market that the state had to patch with law",
-              "Because unions demanded it in 1949",
-              "Because inflation rose",
+              "Because the European Union directly ordered Germany to introduce a statutory minimum wage",
+              "Because the collective agreement used to be the floor, and its collapse left a hole to patch",
+              "Because Germany's trade unions had loudly demanded a national minimum wage back in 1949",
+              "Because sharply rising post-crisis inflation was steadily eroding ordinary German wages",
             ],
             correctIndex: 1,
             explanation:
@@ -1678,10 +1678,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "What does Article 4 of EU Directive 2022/2041 require of a member state with coverage below 80%?",
             options: [
-              "It must reach 80% within five years or face fines",
-              "It must draw up an action plan, with a timeline and concrete measures, to raise collective bargaining coverage",
-              "It must abolish its statutory minimum wage",
-              "Nothing, it is purely advisory",
+              "It must reach 80% coverage within five years or else face heavy financial penalties",
+              "It must draw up an action plan, with concrete measures, to raise bargaining coverage",
+              "It must abolish its national statutory minimum wage and rely on bargaining instead",
+              "Nothing binding at all, since the whole 80% figure is purely advisory guidance",
             ],
             correctIndex: 1,
             explanation:
@@ -1691,10 +1691,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "In November 2025 the CJEU ruled on the Adequate Minimum Wages Directive (C-19/23). What survived?",
             options: [
-              "Nothing, the whole Directive was annulled",
-              "Parts of Article 5 (criteria for setting statutory minimum wages) were annulled; ARTICLE 4, the duty to promote collective bargaining, survived",
-              "Article 4 was annulled; Article 5 survived",
-              "The Court upheld the Directive in full",
+              "Nothing at all survived, since the Court annulled the whole Directive outright and in full",
+              "Parts of Article 5 on minimum-wage criteria fell; Article 4, on promoting bargaining, survived",
+              "Article 4 was struck down outright, while Article 5 on minimum-wage criteria survived intact",
+              "The Court upheld the whole Directive in full, rejecting Denmark's entire challenge outright",
             ],
             correctIndex: 1,
             explanation:
@@ -1713,10 +1713,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "How does converting to a European Company (SE) let a firm avoid parity co-determination?",
             options: [
-              "SEs are exempt from all labour law",
-              "The level of board-level participation is negotiated and then FROZEN at conversion, so convert while small, then grow past 2,000 employees without ever owing a parity board",
-              "SEs must be registered in Luxembourg",
-              "SEs have no supervisory board",
+              "An SE is entirely exempt from every part of German labour and co-determination law alike",
+              "Board participation is frozen at conversion, so a firm converts while small, then grows freely",
+              "Every SE must by law be registered and headquartered in Luxembourg, safely outside Germany",
+              "An SE has no supervisory board at all, so there are simply no board seats to allocate",
             ],
             correctIndex: 1,
             explanation:
@@ -1734,10 +1734,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "What is the Drittelbeteiligungslücke ('one-third gap'), and which famous collapse illustrated it?",
             options: [
-              "A gap in pension funding; Deutsche Bank",
-              "The One-Third Participation Act has no automatic attribution of subsidiaries' employees to the parent, so group structures escape it, which is why WIRECARD had no employee representatives on its supervisory board",
-              "A gap in works-council coverage; Volkswagen",
-              "A gap in the minimum wage; Amazon",
+              "A gap in corporate pension funding, most infamously exposed by the collapse of Deutsche Bank AG",
+              "The One-Third Act attributes no subsidiary staff to the parent, so groups like WIRECARD escape it",
+              "A gap in ordinary works-council coverage, most famously illustrated by the whole Volkswagen group",
+              "A gap in statutory minimum-wage enforcement, most notoriously exposed at Amazon's warehouses",
             ],
             correctIndex: 1,
             explanation:
@@ -1747,10 +1747,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "What general lesson about institutions does the board-level erosion teach?",
             options: [
-              "Laws are always obeyed",
-              "A law that attaches to a LEGAL FORM can be escaped by changing the legal form, and a company can simply decide what shape it is",
-              "German companies are uniquely dishonest",
-              "Co-determination has been repealed",
+              "Laws of this kind are essentially always obeyed, since firms genuinely fear the penalties",
+              "A law that attaches to a legal form can be escaped by changing that form, as firms may choose",
+              "German companies are, taken as a whole, uniquely and unusually dishonest about the law",
+              "Board-level co-determination has now been quietly repealed right across Germany in recent years",
             ],
             correctIndex: 1,
             explanation:
@@ -1768,10 +1768,10 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
           {
             prompt: "The number of parity-co-determined German companies was 670 in 2025. Why is that NOT reassuring on its own?",
             options: [
-              "Because 670 is a made-up number",
-              "Because the absolute count is roughly stable (peak 767 in 2002) while the SHARE of eligible companies complying has fallen, and the share is the number that tells you about intent",
-              "Because it should be zero",
-              "Because it counts coal and steel companies twice",
+              "Because the figure of 670 is simply an invented number with no real source behind it at all",
+              "Because the raw count is stable (767 in 2002) while the share of eligible firms complying fell",
+              "Because the true figure really ought to be zero, given that every large firm should comply fully",
+              "Because the 670 figure double-counts the old coal-and-steel companies, inflating the total",
             ],
             correctIndex: 1,
             explanation:
@@ -1895,10 +1895,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "Why can't you measure the effect of co-determination by simply comparing co-determined firms to non-co-determined firms?",
             options: [
-              "Because co-determined firms refuse to share data",
-              "Because co-determined firms are the big ones and the others are small, so the comparison measures SIZE, not co-determination",
-              "Because co-determination is illegal to study",
-              "Because the two groups are identical, so there is nothing to compare",
+              "Because co-determined firms consistently refuse to share their internal performance data",
+              "Because co-determined firms are the big ones, so the comparison measures size, not the law",
+              "Because it is actually illegal in Germany to study co-determined firms in this manner",
+              "Because the two groups of firms are essentially identical, so there is nothing to compare",
             ],
             correctIndex: 1,
             explanation:
@@ -1909,10 +1909,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "In Jäger, Schoefer & Heining (2021), what happened to WAGES when workers were placed on the supervisory board?",
             options: [
-              "Wages jumped sharply",
-              "Wages collapsed",
-              "There was little to no measurable effect on wages",
-              "Wages doubled within five years",
+              "Wages jumped sharply almost straight away",
+              "Wages promptly collapsed across the board",
+              "There was little to no measurable wage effect",
+              "Wages roughly doubled within about five years",
             ],
             correctIndex: 2,
             explanation:
@@ -1923,10 +1923,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "Critics predicted that workers on the board would starve firms of investment ('underinvestment'). What did the evidence actually show about capital investment?",
             options: [
-              "Investment collapsed, exactly as predicted",
-              "Investment was unaffected",
-              "Investment slightly INCREASED, the opposite of the prediction",
-              "Investment moved entirely abroad",
+              "Capital investment collapsed sharply, exactly as predicted",
+              "Capital investment was left essentially unaffected either way",
+              "Investment slightly increased, opposite to the prediction",
+              "Capital investment moved almost entirely abroad instead",
             ],
             correctIndex: 2,
             explanation:
@@ -1951,10 +1951,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "Jäger, Noy & Schoefer (2022), 'What Does Codetermination Do?', best characterises co-determination's effects as…",
             options: [
-              "Enormous and redistributive",
-              "Modest, better understood as enabling long-run cooperation than as a large lever on wages, productivity or profits",
-              "Uniformly negative for firms",
-              "Impossible to measure",
+              "Enormous and strongly redistributive, shifting large sums from shareholders to workers",
+              "Modest, more about enabling long-run cooperation than a big lever on wages or profits",
+              "Uniformly negative for firms, damaging their profits, investment and long-run survival",
+              "Genuinely impossible to measure, because the two groups of firms cannot be compared",
             ],
             correctIndex: 1,
             explanation:
@@ -1965,10 +1965,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "How does the 'modest effects' finding cut against the DOOM-MONGERS (co-determination's critics)?",
             options: [
-              "It shows co-determination doubled German wages",
-              "It shows the predicted damage, wrecked investment, lost productivity, firm collapse, does not appear in the data",
-              "It shows co-determination is unconstitutional",
-              "It shows firms love co-determination",
+              "It shows that board-level co-determination roughly doubled ordinary German wages",
+              "It shows the predicted damage, lost investment and collapse, never shows up in the data",
+              "It shows that board-level co-determination is actually unconstitutional in Germany",
+              "It shows that German firms actually love and welcome board-level co-determination",
             ],
             correctIndex: 1,
             explanation:
@@ -1979,10 +1979,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "How does the same 'modest effects' finding cut against the BOOSTERS (co-determination's champions)?",
             options: [
-              "It proves co-determination should be abolished",
-              "It shows the high German wages come mainly from sectoral bargaining, not the boardroom, so co-determination is not the engine boosters claim",
-              "It shows co-determination raises profits enormously",
-              "It shows works councils are illegal",
+              "It proves that board-level co-determination really ought to be abolished altogether soon",
+              "It shows the high German wages come mostly from sectoral bargaining, not the boardroom",
+              "It shows that board-level co-determination raises company profits quite enormously",
+              "It shows that elected works councils are, in strict legal terms, actually illegal now",
             ],
             correctIndex: 1,
             explanation:
@@ -1993,10 +1993,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "What is the single strongest fact behind the efficiency (right-side) critique of co-determination?",
             options: [
-              "That co-determination is banned in the United States",
-              "Revealed preference, firms spend real effort engineering their way OUT of it (SE conversions, OT-membership, foreign legal forms), which signals they experience it as a burden",
-              "That works councils go on strike constantly",
-              "That co-determined firms always go bankrupt",
+              "That board-level co-determination is completely banned by federal law in the United States",
+              "Revealed preference: firms spend real effort engineering their way out of it, signalling a burden",
+              "That co-determined firms' works councils go out on strike almost constantly, every single year",
+              "That co-determined German firms almost always end up going bankrupt within a few short years",
             ],
             correctIndex: 1,
             explanation:
@@ -2007,10 +2007,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "The efficiency critique says the German labour market splits into 'insiders' and 'outsiders.' Who are the outsiders, in the terms of this course?",
             options: [
-              "Supervisory-board members",
-              "The uncovered near-half of workers from Section 5, temps, and low-coverage sectors like tech at ~11%",
-              "Trade union officials",
-              "Executives excluded from the works council",
+              "The employee representatives who sit on the company's supervisory board itself",
+              "The uncovered near-half of workers, temps, and low-coverage sectors such as tech",
+              "The full-time trade union officials who negotiate the sectoral wage agreements",
+              "The senior executives who are formally excluded from the elected works council",
             ],
             correctIndex: 1,
             explanation:
@@ -2021,10 +2021,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "The 'golden cage' critique from the left points to two statutory facts to argue co-determination pacifies workers. Which two?",
             options: [
-              "The five-employee threshold and the four-year term",
-              "The works council cannot strike (BetrVG § 74(2)) and the shareholder chair keeps the casting vote (MitbestG § 29(2))",
-              "The finance committee and the labour director",
-              "The reference clause and the opening clause",
+              "The five-employee election threshold and the standard four-year works-council term",
+              "The works council cannot strike, and the shareholder chair keeps the casting vote",
+              "The mandatory finance committee and the co-determined labour director on the board",
+              "The individual contract's reference clause and the sector agreement's opening clause",
             ],
             correctIndex: 1,
             explanation:
@@ -2035,10 +2035,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "How does the 'golden cage' critique read the modest-effects evidence?",
             options: [
-              "As proof co-determination should be expanded",
-              "As confirmation, a system that redistributes little is one that traded militancy for a chair",
-              "As evidence the data are wrong",
-              "As irrelevant to its argument",
+              "As clear proof that board-level co-determination really ought to be greatly expanded",
+              "As confirmation: a system that redistributes little traded militancy for a chair",
+              "As firm evidence that the underlying economic data must simply be wrong somewhere",
+              "As basically irrelevant to its own core argument about the pacification of workers",
             ],
             correctIndex: 1,
             explanation:
@@ -2049,10 +2049,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "What is the reply to the 'golden cage' (toothless-ploy) critique, drawn from Section 5?",
             options: [
-              "There is no reply; the critique is unanswerable",
-              "The erosion itself, firms build elaborate legal machinery to ESCAPE co-determination, which is strange behaviour toward an institution that supposedly holds no one",
-              "That works councils actually can strike",
-              "That co-determination raised wages enormously",
+              "There is simply no good reply at all; the golden-cage critique is basically unanswerable",
+              "The erosion itself, firms work hard to escape an institution that supposedly holds no one",
+              "That elected works councils can, in actual fact, lawfully call a strike inside the firm",
+              "That board-level co-determination actually raised ordinary German wages quite enormously",
             ],
             correctIndex: 1,
             explanation:
@@ -2063,10 +2063,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "A student says: 'Firms avoid co-determination, therefore it must do them real economic harm.' What is the precise flaw?",
             options: [
-              "Firms do not actually avoid it",
-              "'Firms try to avoid it' and 'it does measurable harm' are different claims, the evidence supports the first but not the second",
-              "Co-determination is voluntary, so avoidance is impossible",
-              "There is no flaw; the reasoning is correct",
+              "Firms do not, in actual reality, avoid co-determination at all, so the whole premise is false",
+              "'Firms avoid it' and 'it does measurable harm' are different claims; only the first has evidence",
+              "Co-determination is entirely voluntary, so avoiding it is simply impossible by definition",
+              "There is no flaw at all in the reasoning here; the student's inference is entirely correct",
             ],
             correctIndex: 1,
             explanation:
@@ -2077,10 +2077,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "Which honest one-line verdict on German co-determination does this course arrive at?",
             options: [
-              "A fairy tale of workers running German industry",
-              "A toothless management ploy with no real content",
-              "A real institution with modest measured effects, admired and escaped at once, worth neither a postcard nor a takedown",
-              "The single cause of high German wages",
+              "A pure fairy tale of ordinary workers happily running all of German industry",
+              "A toothless management ploy with essentially no real content or power at all",
+              "A real institution with modest measured effects, admired and escaped at once",
+              "The single decisive cause of Germany's unusually high manufacturing wages overall",
             ],
             correctIndex: 2,
             explanation:
@@ -2091,10 +2091,10 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             prompt:
               "The course points you to the Nordic model (Sweden and Denmark) as the next step in the track. What shared question makes that the natural comparison?",
             options: [
-              "Whether workers should sit on boards at all",
-              "Whether the LAW or the CONTRACT should hold up the wage floor, the same fight Germany's erosion and 2015 minimum wage exposed, argued from the other side",
-              "Whether unions should be legal",
-              "Whether to abolish the supervisory board",
+              "Whether ordinary workers should sit on company supervisory boards at all, or never do",
+              "Whether law or contract should hold up the wage floor, the fight Germany's erosion exposed",
+              "Whether independent trade unions should be legal and permitted to exist there at all",
+              "Whether the two-tier supervisory board ought to be abolished across the Nordic states",
             ],
             correctIndex: 1,
             explanation:
