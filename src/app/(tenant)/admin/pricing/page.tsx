@@ -8,6 +8,7 @@ import {
   proposePricing,
   type PriceTier,
 } from "@/lib/course-pricing";
+import { BUNDLE_PROPOSALS } from "@/lib/bundles";
 
 export const metadata: Metadata = { title: "Proposed pricing" };
 
@@ -49,6 +50,17 @@ export default async function PricingPage() {
     .sort((a, b) => a.category.localeCompare(b.category) || b.proposed.price - a.proposed.price);
 
   const countByTier = TIER_ORDER.map((t) => ({ tier: t, n: rows.filter((r) => r.proposed.tier === t).length }));
+
+  // Bundle sum-of-parts, from each member course's proposed price (real category from the catalog).
+  const bySlug = new Map(courses.map((c) => [c.slug, c] as const));
+  const bundles = BUNDLE_PROPOSALS.map((b) => {
+    const sum = b.appMembers.reduce((acc, slug) => {
+      const c = bySlug.get(slug);
+      return acc + proposePricing(slug, c?.category ?? null).price;
+    }, 0);
+    const known = b.appMembers.filter((s) => bySlug.has(s)).length;
+    return { ...b, sum, savings: Math.max(0, sum - b.appPrice), known, total: b.appMembers.length };
+  });
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-10">
@@ -125,6 +137,56 @@ export default async function PricingPage() {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="bundles" className="mt-10">
+        <h2 id="bundles" className="text-xl font-semibold">
+          Bundles (app and Teachers Pay Teachers)
+        </h2>
+        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
+          Themed sets sold together at a discount, each with a price and justification for BOTH
+          channels. Heads up: the app cannot yet SELL a bundle (see the plan in{" "}
+          <code>plans/48</code> and the operator task); these seed that feature. App savings are
+          computed from the members&apos; proposed course prices.
+        </p>
+        <div className="mt-4 space-y-4">
+          {bundles.map((b) => (
+            <div key={b.slug} className="rounded-lg border border-neutral-200 p-5 dark:border-neutral-800">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="font-semibold">{b.title}</h3>
+                <span className="text-sm text-neutral-500">
+                  {b.known}
+                  {b.known !== b.total ? ` of ${b.total}` : ""} course{b.total === 1 ? "" : "s"}
+                </span>
+              </div>
+              <div className="mt-3 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-md bg-neutral-50 p-3 dark:bg-neutral-900/40">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--accent)" }}>
+                      App
+                    </span>
+                    <span className="text-lg font-bold">${b.appPrice}</span>
+                    {b.savings > 0 ? (
+                      <span className="text-xs text-emerald-600">
+                        save ${b.savings} vs ${b.sum} singly
+                      </span>
+                    ) : null}
+                  </div>
+                  <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">{b.appJustification}</p>
+                </div>
+                <div className="rounded-md bg-neutral-50 p-3 dark:bg-neutral-900/40">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--accent)" }}>
+                      TpT
+                    </span>
+                    <span className="text-lg font-bold">{b.tptPrice === null ? "not yet" : `$${b.tptPrice}`}</span>
+                  </div>
+                  <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">{b.tptJustification}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

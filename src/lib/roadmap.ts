@@ -381,6 +381,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   env vars (\`CRON_SECRET\`, \`DEMO_VISITOR_PASSWORD\`, \`DEMO_VISITOR_USER_EMAIL\`), the feature stays
   dark until BAM sets them (see \`plans/user-tasks/62-demo-account-setup.md\` for the domain/env/seed
   steps).
+- 🔧 **Bundle proposals + the bundle-sales gap** (\`src/lib/bundles.ts\`, on \`/admin/pricing\`).
+  Six themed bundles (the full route series, Black History Through Place, Civics Essentials, the state
+  civics collection, the two structural paths, and the global labor series), each with an APP price and
+  a TpT price and a separate justification for each channel; app savings are computed live from the
+  members' proposed course prices. Two capabilities were CONFIRMED already working: promo codes (Stripe
+  coupons at \`/admin/marketing\`, applied at checkout, comparable to CentenarianOS and FlashLearnAI)
+  and ecosystem cross-promo (both apps attachable to any course or category). The one gap is bundle
+  SALES: the app cannot yet sell a bundle, because it is a payments feature with a prod migration and a
+  webhook that grants paid access, so it is scoped as its own reviewed branch in \`plans/48\` rather
+  than rushed. Prices are recommendations; nothing changes a live price.
 - 🔧 **Proposed pricing** (\`/admin/pricing\`, owner-only): a fair-and-competitive price
   recommendation for every course, in five tiers (Free, Foundation $9, Core $19, Premium $29,
   Certification prep $39), assigned by category with per-course overrides (US Civics 101 free as a
