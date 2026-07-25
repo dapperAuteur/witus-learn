@@ -4045,6 +4045,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "who-has-the-power",
       "what-a-business-entity-is",
       "the-local-layer",
+      "financing-without-access",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4120,6 +4121,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // primary record (the state's own statutes, charters, and filings).
       "who-has-the-power",
       "the-local-layer",
+      // Business-financing capstone: document one real financing-without-access institution from
+      // the primary record (its charter, its filings) and how its entity choice fit its constraint.
+      "financing-without-access",
     ],
     lessons: [
       "19 · Your assignment: find a listing, then find the address today",

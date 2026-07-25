@@ -182,6 +182,7 @@ const CATALOG = [
   "who-has-the-power",
   "what-a-business-entity-is",
   "the-local-layer",
+  "financing-without-access",
 ];
 
 describe("standards data integrity — a wrong code could be filed with a state", () => {

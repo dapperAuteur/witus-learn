@@ -381,6 +381,13 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   env vars (\`CRON_SECRET\`, \`DEMO_VISITOR_PASSWORD\`, \`DEMO_VISITOR_USER_EMAIL\`), the feature stays
   dark until BAM sets them (see \`plans/user-tasks/62-demo-account-setup.md\` for the domain/env/seed
   steps).
+- 🔧 **Teachers Pay Teachers plan** (\`/admin/tpt-plan\`, owner-only): a ranked rollout plan for the
+  TpT sales channel, ordered to optimize reach and conversion (free gateway first to buy followers and
+  reviews, then high-intent state-civics units, then the differentiated Green Book flagship, then
+  evergreen units, then bundles). Each row shows the recommended price and the course's REAL standards
+  count (a genuine TpT selling point), pulled from the standards data. Packets live in
+  \`plans/future-courses/tpt-packets/\`; seven are built (great-migration, indiana/illinois/arizona
+  civics, us-constitution, woop, and Green Book). Recommendations, not sales promises.
 - 🔧 **Per-audience landing pages** (\`/for/<audience>\` + a \`/for\` index): teachers, school leaders,
   parents, homeschool families, and community leaders each get a page written in their own terms,
   above the two general pages (\`/platform\`, \`/explore\`). Recruiting-tenant only, 404 on a white-label
@@ -423,8 +430,13 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Local Layer** (\`the-local-layer\`, 20 lessons), the deep Dillon's-Rule-vs-home-rule course: municipal
   forms (mayor-council, council-manager, commission), special districts (which outnumber cities and
   whose elections nobody votes in), town meeting, and Unigov as the creatures-of-the-state case, built
-  ON the method course without repeating it. Tranche so far: 2 of 9 government courses and 1 of 7
-  business courses; the rest follow. **Re-run \`pnpm seed:courses\`.**
+  ON the method course without repeating it. A fourth course, **Financing
+  Without Access** (\`financing-without-access\`, 18 lessons), joins the business path: the bridge course
+  on fraternal societies, industrial insurance, building-and-loans, ROSCAs worldwide (susu, tanda,
+  chit fund, tontine) and Islamic finance, on the through-line that when the capital system excludes
+  you, you invent an entity. It declines Islamic-finance market statistics rather than quote them
+  loosely and teaches the form-vs-substance debate unresolved. Tranche so far: 2 of 9 government and 2
+  of 7 business courses. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**
