@@ -381,6 +381,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   env vars (\`CRON_SECRET\`, \`DEMO_VISITOR_PASSWORD\`, \`DEMO_VISITOR_USER_EMAIL\`), the feature stays
   dark until BAM sets them (see \`plans/user-tasks/62-demo-account-setup.md\` for the domain/env/seed
   steps).
+- 🔧 **Per-audience landing pages** (\`/for/<audience>\` + a \`/for\` index): teachers, school leaders,
+  parents, homeschool families, and community leaders each get a page written in their own terms,
+  above the two general pages (\`/platform\`, \`/explore\`). Recruiting-tenant only, 404 on a white-label
+  school, linked from the homepage as "Who is it for?". One \`AudienceLandingContent\` type and one
+  shared renderer keep them consistent; each audience is a small content file resolved by a dynamic
+  route. **No invented stats, efficacy claims, testimonials, or prices** (the type file states the
+  rule): the pages lean on what is now genuinely verifiable, the real per-state standards alignment,
+  cited courses, shuffled quizzes, the parent view, kid login, cohorts, the AI tutor, and the
+  no-signup demo. The homeschool page asserts no state's requirements; the community page carries the
+  "communities educating themselves" heritage generally and points to the catalog's cited history
+  courses for specifics. Still notes: the Teachers Pay Teachers course packets.
 - 🔧 **Platform + demo landing pages** (\`feat/platform-demo-landing\`): two public marketing pages,
   shown only on Learn.WitUS itself (\`tenant.flags.recruiting\`, 404 elsewhere so a white-label school
   never advertises the platform underneath it): **\`/platform\`** pitches Learn.WitUS as a product for
