@@ -29,6 +29,7 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { href: "/admin/live", title: "Live", desc: "Schedule and run live sessions.", icon: "🔴", ownerOnly: true },
   { href: "/admin/documentarian", title: "Documentarian", desc: "Course-family build tracker, check off + leave notes.", icon: "🎬", ownerOnly: true },
   { href: "/admin/future", title: "Future classes & features", desc: "Proposed courses + features to review, leave notes Claude reads.", icon: "🔮", ownerOnly: true },
+  { href: "/admin/tpt-plan", title: "Teachers Pay Teachers plan", desc: "Which packets to post, in what order and at what price, to optimize sales.", icon: "🛒", ownerOnly: true },
   { href: "/admin/roadmap", title: "Roadmap", desc: "Internal progress tracker.", icon: "🗺️", ownerOnly: true },
   { href: "/admin/commands", title: "Commands", desc: "CLI reference, migrations, seeds, feedback:list…", icon: "⌨️", ownerOnly: true },
   { href: "/admin/source-chat", title: "Source Chat", desc: "Chat-with-sources config + test (per course).", icon: "💬", ownerOnly: true },
