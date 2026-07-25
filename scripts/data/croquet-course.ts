@@ -201,7 +201,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
         questions: [
           {
             prompt: "How many separate codes of croquet does the World Croquet Federation publish rulebooks for?",
-            options: ["One, 'the rules of croquet'", "Two, Association Croquet and Golf Croquet", "Four, including American Six-Wicket and garden croquet", "Six, one per hoop"],
+            options: ["One, a single unified 'rules of croquet'", "Two: Association Croquet and Golf Croquet", "Three, adding American Six-Wicket as well", "Six, one rulebook for each of the six hoops"],
             correctIndex: 1,
             explanation:
               "The WCF publishes exactly two rulebooks: the Laws of Association Croquet (7th ed., 2021) and the Rules of Golf Croquet (6th ed., 2022). American Six-Wicket is the USCA's code; garden croquet has no governing body at all.",
@@ -209,7 +209,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           },
           {
             prompt: "Which body governs American Six-Wicket croquet?",
-            options: ["The World Croquet Federation", "The United States Croquet Association (USCA)", "Croquet England", "No one, it is an informal code"],
+            options: ["The World Croquet Federation, the WCF", "The United States Croquet Association (USCA)", "Croquet England, the sport's home union", "No one; it is an informal garden game"],
             correctIndex: 1,
             explanation:
               "The USCA publishes The Official Rules of American Six Wicket Croquet (revised 2024). The USCA is a member of the WCF, not a rival to it, and it also runs national championships in the WCF's codes.",
@@ -218,9 +218,9 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           {
             prompt: "Why is 'in croquet, hitting another ball earns you extra strokes' a bad sentence?",
             options: [
-              "It is simply false in every code",
-              "It fails to name a code, it is true in Association Croquet and false in Golf Croquet",
-              "It confuses hoops with wickets",
+              "It is plainly false in every one of the codes",
+              "It names no code; it is true in AC, false in GC",
+              "It confuses the hoop with the wicket, a slip",
               "It is true, but only on a full-size court",
             ],
             correctIndex: 1,
@@ -238,7 +238,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           },
           {
             prompt: "How many hoops are physically set on a six-wicket croquet court?",
-            options: ["Twelve, one per hoop point", "Nine", "Six, each run twice in opposite directions", "Six, each run once"],
+            options: ["Twelve, one for each of the twelve hoop points", "Nine, as in American backyard nine-wicket", "Six, each one run twice in opposite directions", "Six, but each is run once for six points"],
             correctIndex: 2,
             explanation:
               "Six hoops plus a central peg. Each hoop is run twice, in opposite directions, giving 12 hoop points per ball; with the peg point that is 13 per ball and 26 for a side of two balls.",
@@ -247,10 +247,10 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           {
             prompt: "In the WCF codes, where are the two inner hoops set?",
             options: [
-              "Against the north and south boundaries",
+              "Hard against the north and south boundaries",
               "Seven yards north and south of the central peg",
-              "Twenty-one yards from the peg",
-              "In the corners",
+              "Twenty-one yards north and south of the peg",
+              "Tucked into each of the four court corners",
             ],
             correctIndex: 1,
             explanation:
@@ -268,10 +268,10 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           {
             prompt: "A championship hoop's uprights are set how far apart, relative to the ball?",
             options: [
-              "About twice the ball's width",
-              "Between 3 11/16 in and 4 in, barely wider than the 3⅝ in ball",
-              "Exactly 5 inches",
-              "It varies with no upper limit",
+              "About twice the width of the 3⅝ inch ball",
+              "Between 3 11/16 in and 4 in, barely over the ball",
+              "Exactly 5 inches, a comfortable clearance",
+              "It varies by club, with no fixed upper limit",
             ],
             correctIndex: 1,
             explanation:
@@ -281,10 +281,10 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           {
             prompt: "What does GC Rule 2.4 allow when the available space is too small for a standard court?",
             options: [
-              "Nothing, the game cannot be played",
-              "A smaller court keeping the proportions five units long by four units wide",
-              "Removing two hoops",
-              "Playing with two balls instead of four",
+              "Nothing at all; the game simply cannot be played",
+              "A smaller court keeping the five-by-four proportions",
+              "Removing two of the six hoops to shrink the court",
+              "Playing with two balls per side instead of four",
             ],
             correctIndex: 1,
             explanation:
@@ -293,7 +293,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           },
           {
             prompt: "According to the WCF's own Association Croquet page, how long can a break run?",
-            options: ["Up to 12 strokes", "Up to 26 strokes", "Up to 91 strokes", "There is no published figure"],
+            options: ["Up to 12 strokes, one per hoop", "Up to 26 strokes, the point total", "Up to 91 strokes in one turn", "There is no published figure"],
             correctIndex: 2,
             explanation:
               "The WCF page states it is possible to play a break of up to 91 strokes, taking a ball through all twelve hoops and then the peg, in a single turn.",
@@ -301,7 +301,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           },
           {
             prompt: "Competitive croquet is most usefully compared to which of these?",
-            options: ["Badminton", "Billiards, snooker and pool", "Sprinting", "Archery"],
+            options: ["Badminton and other net games", "Billiards, snooker and pool", "Sprinting and track athletics", "Archery and other aim sports"],
             correctIndex: 1,
             explanation:
               "The WCF makes the comparison itself: the game is built on the concept of a break, 'as in snooker, billiards and pool'. The tactical unit, chaining earned strokes, is the same idea.",
@@ -318,10 +318,10 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           {
             prompt: "Which statement about garden/backyard croquet is accurate?",
             options: [
-              "It is the WCF's beginner code",
-              "It is governed by the USCA",
-              "It has no governing body and no rulebook, it is a different, informal activity",
-              "It is played on a standard 28 by 35 yard court",
+              "It is the WCF's recognised beginner code",
+              "It is governed by the USCA under house rules",
+              "It has no governing body and no rulebook at all",
+              "It is played on the standard 28 by 35 yard court",
             ],
             correctIndex: 2,
             explanation:
@@ -330,7 +330,7 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           },
           {
             prompt: "Under how many rule sets does the USCA crown national champions?",
-            options: ["One (American only)", "Two", "Four, American, Association, Golf Croquet and Nine-Wicket", "Six"],
+            options: ["One only, the American six-wicket code", "Two, the American and Association codes", "Four: American, AC, Golf and Nine-Wicket", "Six, one per recognised WCF variant"],
             correctIndex: 2,
             explanation:
               "The USCA runs national championships in four codes. That is why 'the American body only plays the American code' is wrong.",
@@ -339,10 +339,10 @@ A 50 × 40 foot rectangle is a school field corner, a big backyard, a park. The 
           {
             prompt: "What does the WCF say about croquet variants such as Ricochet that it lists on its links page?",
             options: [
-              "They are WCF codes with their own world championships",
+              "They are officially recognised WCF codes with world titles",
               "'Note: these games are not WCF recognised versions of Croquet'",
-              "They are the beginner tier of Golf Croquet",
-              "They are banned",
+              "They are the beginner tier of Golf Croquet for newcomers",
+              "They are banned outright from every WCF-affiliated club",
             ],
             correctIndex: 1,
             explanation:
@@ -546,7 +546,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
         questions: [
           {
             prompt: "How many strokes does a Golf Croquet turn contain?",
-            options: ["As many as you can earn", "One (Rule 1.1.1), with handicap extra strokes as the main exception", "Two", "Four, one per ball"],
+            options: ["As many as you can earn in one turn", "One, bar handicap strokes (Rule 1.1.1)", "Two, a strike then a follow-up shot", "Four, one stroke for each of the balls"],
             correctIndex: 1,
             explanation:
               "Rule 1.1.1: each turn contains one stroke. This is the single biggest difference from Association Croquet, where earned extra strokes build breaks.",
@@ -554,7 +554,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           },
           {
             prompt: "In Golf Croquet, what do you earn by hitting an opponent's ball?",
-            options: ["An extra stroke", "A croquet stroke", "Nothing extra, there is no roquet and no croquet stroke in GC", "One point"],
+            options: ["An extra stroke, as in Association", "A croquet stroke off that ball", "Nothing; GC has no roquet at all", "One point towards the game"],
             correctIndex: 2,
             explanation:
               "The words 'roquet' and 'croquet stroke' do not appear anywhere in the WCF Rules of Golf Croquet. Hitting a ball can still be a strong tactical move, but it buys no strokes.",
@@ -562,7 +562,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           },
           {
             prompt: "What is the fixed colour sequence of play in Golf Croquet?",
-            options: ["Blue, black, red, yellow", "Blue, red, black, yellow", "Red, blue, yellow, black", "Whatever order the players agree"],
+            options: ["Blue, black, red, yellow", "Blue, red, black, yellow", "Red, blue, yellow, black", "Whatever order players agree"],
             correctIndex: 1,
             explanation:
               "Rule 1.2.1. One side plays blue and black, the other red and yellow. Because the sequence is fixed, you always know who shoots next, which is what makes GC tactical.",
@@ -572,9 +572,9 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
             prompt: "In Golf Croquet, who scores the hoop point?",
             options: [
               "The side whose ball first runs the hoop in order",
-              "The side whose ball is closest to the hoop when the turn ends",
-              "Every ball that eventually goes through",
-              "The side that played the last stroke",
+              "The side whose ball lies closest when the turn ends",
+              "Every ball that eventually passes through the hoop",
+              "The side that played the last stroke of the turn",
             ],
             correctIndex: 0,
             explanation:
@@ -591,7 +591,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           },
           {
             prompt: "In a 13-point Golf Croquet game that reaches 6-6, which hoop is contested for the deciding point?",
-            options: ["Hoop 13", "Hoop 1 again", "Hoop 3 again", "Whichever hoop the winner of the toss chooses"],
+            options: ["Hoop 13, the next in order", "Hoop 1, contested again", "Hoop 3, contested again", "Whichever hoop the leader picks"],
             correctIndex: 2,
             explanation:
               "Rule 1.4.3. In a 7-point game the decider is hoop 1 again (Rule 1.4.2). Both players know the venue of the decider in advance, so the previous hoop is really a fight for position at the decider.",
@@ -600,10 +600,10 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           {
             prompt: "Can a ball score a Golf Croquet hoop point without being struck directly through it?",
             options: [
-              "No, only a direct strike scores",
-              "Yes, Rule 7.1.1 allows the ball to pass through 'directly or indirectly', so a ball knocked through by another ball scores",
-              "Only in handicap play",
-              "Only if the referee agrees",
+              "No, only a direct strike can score it",
+              "Yes; Rule 7.1.1 allows an indirect running",
+              "Only in handicap play, with extra strokes",
+              "Only if the referee explicitly agrees to it",
             ],
             correctIndex: 1,
             explanation:
@@ -615,8 +615,8 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
             options: [
               "A ball crossing the halfway line at any moment",
               "The end of a turn in which a point is scored",
-              "The start of every turn",
-              "A referee's call",
+              "The start of every turn, before any stroke",
+              "A referee's call once a ball is beyond halfway",
             ],
             correctIndex: 1,
             explanation:
@@ -626,10 +626,10 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           {
             prompt: "Which of these makes a ball EXEMPT from being offside in Golf Croquet?",
             options: [
-              "It was sent there by a stroke played by the opposing side",
-              "It has already run its hoop",
+              "It was sent there by a stroke of the opposing side",
+              "It has already run the hoop earlier this turn",
               "It belongs to the player with the higher handicap",
-              "It is within a yard of a boundary",
+              "It is sitting within one yard of a boundary line",
             ],
             correctIndex: 0,
             explanation:
@@ -640,9 +640,9 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
             prompt: "What actually happens to an offside ball in Golf Croquet?",
             options: [
               "It is automatically moved to a penalty area",
-              "It is removed from the game",
-              "Nothing automatic, the opponent MAY give an offside direction, sending it to be played from a penalty area",
-              "Its side loses the hoop",
+              "It is removed from the game for the round",
+              "Nothing automatic; the opponent may direct it",
+              "Its side loses the current hoop outright",
             ],
             correctIndex: 2,
             explanation:
@@ -652,10 +652,10 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           {
             prompt: "How big is a Golf Croquet penalty area?",
             options: [
-              "A semi-circle of one yard radius, centred on point D or E",
-              "A full circle of three yards radius",
-              "A square yard in each corner",
-              "The whole area behind the halfway line",
+              "A semi-circle of one-yard radius at D or E",
+              "A full circle of three yards radius at the peg",
+              "A square yard marked out in each court corner",
+              "The whole court area behind the halfway line",
             ],
             correctIndex: 0,
             explanation: "Rule 17.1.1 defines the penalty area as a semi-circular area of one-yard radius.",
@@ -664,10 +664,10 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           {
             prompt: "What is the accurate statement about jump shots in Golf Croquet?",
             options: [
-              "They are banned by Rule 11.2",
+              "They are banned outright under GC Rule 11.2",
               "They are expressly permitted by a named rule",
-              "The word 'jump' appears nowhere in the GC Rules, they are legal by omission, bounded by the fault list in Rule 11.2",
-              "They are legal only in handicap play",
+              "'Jump' is unnamed; legal by omission under 11.2",
+              "They are legal only in handicap play, never else",
             ],
             correctIndex: 2,
             explanation:
@@ -677,10 +677,10 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           {
             prompt: "Which of these IS a fault under GC Rule 11.2?",
             options: [
-              "Running a hoop backwards by accident",
-              "Causing a ball to touch a hoop, the peg or another ball while it is still in contact with the mallet (a crush)",
-              "Scoring a hoop for your opponent",
-              "Playing out of the start area",
+              "Running a hoop backwards purely by accident",
+              "A crush: a ball still on the mallet touches a hoop",
+              "Scoring a hoop point for your own opponent",
+              "Playing your ball from outside the start area",
             ],
             correctIndex: 1,
             explanation:
@@ -689,7 +689,7 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           },
           {
             prompt: "Where does Golf Croquet play begin from?",
-            options: ["The centre peg", "Anywhere on the boundary", "The start area, within one yard of corner IV", "Corner I"],
+            options: ["The centre peg, in colour order", "Anywhere along the four boundaries", "The start area, near corner IV", "Corner I, in colour sequence"],
             correctIndex: 2,
             explanation: "Rule 5.2.1. All four balls enter from the start area, in the fixed colour sequence.",
             sourceLessonSlug: "gc-how-a-turn-works",
@@ -697,9 +697,9 @@ You do not need to know that ruling. You need to know the *pattern*: **the PDF p
           {
             prompt: "Why is 'the 6th-edition PDF is the complete law of Golf Croquet' not quite true?",
             options: [
-              "Because clubs may rewrite it",
-              "Because the rulebooks are amended between editions by Official Rulings from the WCF's rules committees",
-              "Because the WCF has no authority over GC",
+              "Because individual clubs may rewrite it freely",
+              "Because Official Rulings amend it between editions",
+              "Because the WCF has no real authority over GC",
               "Because each country writes its own version",
             ],
             correctIndex: 1,
@@ -888,10 +888,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "How does a side win a game of Association Croquet?",
             options: [
-              "By scoring 13 points with one ball",
-              "By having BOTH of its balls score 12 hoop points and the peg point, 26 points, and both pegged out",
-              "By running all six hoops first",
-              "By reaching 7 points",
+              "By scoring 13 points with a single ball",
+              "By pegging out BOTH balls after 26 points",
+              "By running all six hoops before the opponent",
+              "By reaching 7 points ahead of the opponent",
             ],
             correctIndex: 1,
             explanation:
@@ -901,10 +901,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "What is a 'rover' ball?",
             options: [
-              "A ball that has been pegged out",
-              "A ball that has scored all 12 of its hoop points and may now score the peg",
-              "The opponent's ball you are dead on",
-              "A ball outside the boundary",
+              "A ball that has already been pegged out",
+              "A ball that has scored all 12 hoop points",
+              "An opponent's ball you are currently dead on",
+              "A ball that has been sent off the boundary",
             ],
             correctIndex: 1,
             explanation:
@@ -915,9 +915,9 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
             prompt: "Why might a strong player deliberately NOT peg out their rover ball?",
             options: [
               "Because pegging out is illegal before the opponent scores",
-              "Because pegging out removes that ball from the game, leaving them one ball against the opponent's two",
-              "Because it costs a point",
-              "Because the peg is out of bounds",
+              "Because it removes that ball, leaving one against two",
+              "Because pegging out costs the side a scored point",
+              "Because the peg itself counts as out of bounds ground",
             ],
             correctIndex: 1,
             explanation:
@@ -927,9 +927,9 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "What is a roquet (Law 17.1)?",
             options: [
-              "Running a hoop",
-              "Any contact between the striker's ball and a LIVE ball during and as a consequence of a stroke",
-              "Hitting the peg",
+              "Running your ball through a hoop in order",
+              "Your ball striking a live ball in a stroke",
+              "Hitting the central peg with your ball",
               "Placing your ball against another ball",
             ],
             correctIndex: 1,
@@ -940,10 +940,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "After making a roquet, what does the striker do?",
             options: [
-              "Play on from where the ball stopped",
-              "Take croquet: pick the ball up and place it in contact with the roqueted ball, then play a stroke that moves it",
+              "Play on from where the ball came to rest",
+              "Take croquet from the roqueted ball",
               "Take two free strokes from the peg",
-              "End the turn",
+              "End the turn and sit down at once",
             ],
             correctIndex: 1,
             explanation:
@@ -953,10 +953,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "What does Law 19.1 grant, and what does Law 19.3 forbid?",
             options: [
-              "A continuation stroke after a croquet stroke or a hoop point, and continuation strokes may NOT be accumulated",
-              "Two continuation strokes, which may be banked for later",
-              "A free lift, which may not be refused",
-              "An extra ball, which may not be pegged out",
+              "One continuation stroke; it cannot be banked",
+              "Two continuation strokes, bankable for later use",
+              "A free lift that the opponent may not refuse",
+              "An extra ball, which may not later be pegged out",
             ],
             correctIndex: 0,
             explanation:
@@ -966,10 +966,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "When does an Association Croquet turn end (Law 7.6.1)?",
             options: [
-              "After four strokes",
-              "When, in a stroke other than a croquet stroke, the striker's ball neither makes a roquet nor scores a hoop point for itself",
-              "When the striker chooses to stop",
-              "When a ball goes off court",
+              "After exactly four strokes have been played",
+              "When a non-croquet stroke neither hits nor scores",
+              "When the striker chooses to end the turn early",
+              "When any ball is knocked off the court boundary",
             ],
             correctIndex: 1,
             explanation:
@@ -979,10 +979,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "Which law makes a long break possible?",
             options: [
-              "Law 1.1, the 26-point objective",
-              "Law 2.6.10, you may take croquet once from each other ball per turn, UNLESS you score a hoop, which renews the right",
-              "Law 16.3, the definition of wiring",
-              "Law 19.3, continuation strokes may not be accumulated",
+              "Law 1.1, which sets the 26-point objective",
+              "Law 2.6.10, where a hoop renews your roquets",
+              "Law 16.3, which defines wiring on the court",
+              "Law 19.3, continuation strokes cannot accumulate",
             ],
             correctIndex: 1,
             explanation:
@@ -993,9 +993,9 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
             prompt: "Which statement about the word 'break' in the AC Laws is true?",
             options: [
               "It is defined in the Glossary of the 7th edition",
-              "It is defined in Law 2.6",
-              "It is NOT a defined term, there is no law number to cite for it; the WCF's Association Croquet information page is the honest source",
-              "It appears nowhere in the Laws at all",
+              "It is formally defined in Law 2.6 as a break",
+              "It is not defined; no law number exists for it",
+              "It appears nowhere in the AC Laws at all",
             ],
             correctIndex: 2,
             explanation:
@@ -1005,10 +1005,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "How many balls are in play, and how are they divided?",
             options: [
-              "Four, blue and black against red and yellow (Law 2.3)",
-              "Two, one per player",
-              "Six, one per hoop",
-              "Four, but each player owns one and plays alone",
+              "Four: blue and black against red and yellow",
+              "Two, a single ball for each of the players",
+              "Six, one ball for each of the six hoops",
+              "Four, but each player owns and plays one",
             ],
             correctIndex: 0,
             explanation:
@@ -1018,10 +1018,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "What does Law 16.3 define?",
             options: [
-              "The croquet stroke",
-              "Wiring, when a hoop or the peg impedes a ball's direct course to a target ball, or impedes the mallet swing, or the ball lies in a hoop's jaws",
-              "The peg point",
-              "The order of play",
+              "The croquet stroke and its rules",
+              "Wiring: a hoop or peg blocks the shot",
+              "The peg point and how to score it",
+              "The order of play between the sides",
             ],
             correctIndex: 1,
             explanation:
@@ -1032,9 +1032,9 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
             prompt: "What is the wiring lift (Law 16.1), and why does it make wiring risky?",
             options: [
               "It lets you lift any ball at any time, so wiring is pointless",
-              "If the OPPONENT is responsible for a ball of yours being wired from all other balls and not touching another ball, you may lift it and play from either baulk-line, so wiring an opponent can hand them a free lift",
-              "It lets the referee reposition balls",
-              "It only applies in handicap play",
+              "A ball your opponent leaves wired may be lifted to baulk",
+              "It lets the referee reposition any wired ball at will",
+              "It applies only in handicap play, never in level play",
             ],
             correctIndex: 1,
             explanation:
@@ -1044,10 +1044,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "In Association Croquet, what does it mean that a ball is 'dead' to you?",
             options: [
-              "It has been pegged out",
-              "You have already taken croquet from it this turn, so you may not roquet it again until you score a hoop point",
-              "It is off the court",
-              "It belongs to your opponent",
+              "It has already been pegged out of play",
+              "You have roqueted it and cannot again yet",
+              "It has been driven off the court boundary",
+              "It belongs to your opponent's side",
             ],
             correctIndex: 1,
             explanation:
@@ -1057,10 +1057,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "What must a croquet stroke do to the croqueted ball (Law 18.5)?",
             options: [
-              "Send it out of bounds",
-              "Move or shake it",
+              "Send it right out of bounds",
+              "Move or at least shake it",
               "Send it through a hoop",
-              "Leave it exactly where it was",
+              "Leave it exactly where it lay",
             ],
             correctIndex: 1,
             explanation:
@@ -1070,10 +1070,10 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
           {
             prompt: "Which of these is the correct AC loop?",
             options: [
-              "hoop → peg → hoop → peg",
-              "roquet → take croquet → continuation stroke → (roquet again, or run a hoop) ...",
+              "hoop → peg → hoop → peg, repeating",
+              "roquet → croquet → continuation → repeat",
               "one stroke, then the opponent plays",
-              "four strokes per turn, always",
+              "always four strokes per single turn",
             ],
             correctIndex: 1,
             explanation:
@@ -1315,9 +1315,9 @@ Now the drill.`,
             prompt: "In a four-ball break, what is a 'pioneer'?",
             options: [
               "The ball you are currently playing",
-              "A ball sent ahead to wait at a hoop you have not reached yet",
-              "The ball parked near the peg",
-              "A ball that has been pegged out",
+              "A ball sent ahead to a future hoop",
+              "The ball parked near the central peg",
+              "A ball that has just been pegged out",
             ],
             correctIndex: 1,
             explanation:
@@ -1327,10 +1327,10 @@ Now the drill.`,
           {
             prompt: "Why is the pivot placed near the peg?",
             options: [
-              "Because the Laws require it",
-              "Because the centre of the court is close to everything, so a ball is always within reach",
-              "Because it scores a point there",
-              "Because it cannot be roqueted there",
+              "Because the Laws specifically require it",
+              "Because the centre is within reach of all",
+              "Because a ball scores a point sitting there",
+              "Because it cannot be roqueted while there",
             ],
             correctIndex: 1,
             explanation:
@@ -1340,10 +1340,10 @@ Now the drill.`,
           {
             prompt: "What makes the croquet stroke the highest-leverage skill in Association Croquet?",
             options: [
-              "It scores a point directly",
-              "One stroke moves BOTH balls, so it must place your ball in front of the hoop AND send the other ball ahead as a pioneer",
-              "It is the only legal stroke",
-              "It cannot be faulted",
+              "It scores a hoop point directly for you",
+              "One stroke moves both balls at once",
+              "It is the only fully legal stroke available",
+              "It can never be ruled a fault by anyone",
             ],
             correctIndex: 1,
             explanation:
@@ -1361,10 +1361,10 @@ Now the drill.`,
           {
             prompt: "What is a 'leave'?",
             options: [
-              "Conceding the game",
-              "The arrangement of the balls on the court when your turn ends",
+              "Conceding the whole game to your opponent",
+              "The ball layout left when your turn ends",
               "The moment your ball leaves the court",
-              "A referee's ruling",
+              "A referee's ruling on a ball position",
             ],
             correctIndex: 1,
             explanation:
@@ -1374,10 +1374,10 @@ Now the drill.`,
           {
             prompt: "Why can wiring an opponent's ball backfire?",
             options: [
-              "It is a fault",
-              "If you are responsible for their ball being wired from ALL other balls (and it is not touching one), Law 16.1 may give them a free wiring lift to the baulk-line",
-              "It costs you a continuation stroke",
-              "It scores a point for them",
+              "It is treated as an automatic fault",
+              "Law 16.1 can hand them a free lift to baulk",
+              "It costs you your next continuation stroke",
+              "It scores a bonus point for the opponent",
             ],
             correctIndex: 1,
             explanation:
@@ -1388,9 +1388,9 @@ Now the drill.`,
             prompt: "Which leave is generally safer than an all-out wiring leave?",
             options: [
               "Leaving both your balls in the middle of the court",
-              "Distance plus angle: your two balls together, far away, so their only shot is long, and a miss hands you a break",
+              "Distance: your balls far off, so their shot is long",
               "Leaving your balls on the boundary next to theirs",
-              "Pegging out one of your balls",
+              "Pegging out one of your two balls straight away",
             ],
             correctIndex: 1,
             explanation:
@@ -1400,10 +1400,10 @@ Now the drill.`,
           {
             prompt: "In Golf Croquet, what does 'clearing' an opponent's ball earn you?",
             options: [
-              "An extra stroke",
-              "A point",
-              "No extra strokes at all, a turn is one stroke, but their ball is now far from the hoop it wanted",
-              "A croquet stroke",
+              "An extra stroke to follow up",
+              "A single point towards the game",
+              "Nothing; a GC turn is one stroke",
+              "A croquet stroke off that ball",
             ],
             correctIndex: 2,
             explanation:
@@ -1413,10 +1413,10 @@ Now the drill.`,
           {
             prompt: "What is a 'promotion' in Golf Croquet, and why is it legal?",
             options: [
-              "Hitting one ball into another so that the second ball runs the hoop, legal because Rule 7.1.1 allows a ball to run a hoop directly or INDIRECTLY",
-              "Moving your ball up the colour sequence",
-              "Being promoted to a lower handicap",
-              "Running two hoops in one stroke",
+              "Cannoning a ball through, legal via Rule 7.1.1",
+              "Moving your own ball up the colour sequence",
+              "Being promoted to a lower handicap grade",
+              "Running two separate hoops in one stroke",
             ],
             correctIndex: 0,
             explanation:
@@ -1426,10 +1426,10 @@ Now the drill.`,
           {
             prompt: "Most beginners' Association Croquet breaks collapse because they...",
             options: [
-              "hit too hard",
-              "take the easy croquet stroke that only solves the current hoop, instead of the correct one that sets up the next two",
-              "wire themselves",
-              "peg out too early",
+              "swing much too hard on every stroke",
+              "take the easy croquet stroke, not the right",
+              "accidentally wire their own two balls",
+              "peg out their first ball far too early",
             ],
             correctIndex: 1,
             explanation:
@@ -1439,10 +1439,10 @@ Now the drill.`,
           {
             prompt: "Which fixed feature of Golf Croquet makes its tactics calculable?",
             options: [
-              "The offside rule",
-              "The fixed colour sequence (Rule 1.2.1), you always know exactly who plays next and with which ball",
-              "The 7-point game length",
-              "The penalty areas",
+              "The offside (halfway) rule, Rule 8",
+              "The fixed colour sequence (Rule 1.2.1)",
+              "The fixed 7-point game length only",
+              "The two one-yard penalty areas",
             ],
             correctIndex: 1,
             explanation:
@@ -1452,10 +1452,10 @@ Now the drill.`,
           {
             prompt: "In your match log, which stroke should you record?",
             options: [
-              "The one you physically missed",
-              "The one you CHOSE wrong, a different thing, and the one that is actually fixable",
-              "Every stroke of the game",
-              "Only strokes that scored",
+              "The one you physically missed on court",
+              "The one you chose wrong, the fixable one",
+              "Every single stroke of the whole game",
+              "Only the strokes that actually scored",
             ],
             correctIndex: 1,
             explanation:
@@ -1464,7 +1464,7 @@ Now the drill.`,
           },
           {
             prompt: "Which field must every match-log entry begin with?",
-            options: ["The score", "The weather", "The CODE you were playing", "Your handicap"],
+            options: ["The final score line", "The day's weather", "The CODE you were playing", "Your current handicap"],
             correctIndex: 2,
             explanation:
               "Always name the code. A tactical note from a Golf Croquet game can be actively wrong advice in Association Croquet.",
@@ -1473,10 +1473,10 @@ Now the drill.`,
           {
             prompt: "What is the 'fallback' skill in Association Croquet, used when your break has fallen apart?",
             options: [
-              "The long straight shot (hitting in from distance)",
-              "The croquet stroke",
-              "The wiring lift",
-              "The peg-out",
+              "The long straight shot from distance",
+              "The precise croquet stroke off a ball",
+              "The defensive wiring lift to baulk",
+              "The peg-out of your own rover",
             ],
             correctIndex: 0,
             explanation:
@@ -1486,10 +1486,10 @@ Now the drill.`,
           {
             prompt: "In a four-ball break, how many jobs does each of the other three balls have?",
             options: [
-              "One each: two pioneers (next hoop and the hoop after) and one pivot near the peg",
-              "None, they are obstacles",
-              "They rotate randomly",
-              "Two each",
+              "One each: two pioneers and a pivot",
+              "None; they are just obstacles to avoid",
+              "They rotate roles at random each turn",
+              "Two jobs each, filled every turn",
             ],
             correctIndex: 0,
             explanation:
@@ -1624,9 +1624,9 @@ The board tells your opponent exactly how poor you are. Play accordingly.
             prompt: "Which body governs American Six-Wicket, and what is its current rulebook?",
             options: [
               "The WCF, the Laws of Association Croquet, 7th ed.",
-              "The USCA, The Official Rules of American Six Wicket Croquet, revised 2024",
-              "Croquet England, the Golf Croquet Rules",
-              "No one, it is an informal code",
+              "The USCA, the Official Rules revised in 2024",
+              "Croquet England, the WCF Golf Croquet Rules",
+              "No one; it is an informal, uncodified game",
             ],
             correctIndex: 1,
             explanation:
@@ -1636,10 +1636,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "What is the order of play in American Six-Wicket?",
             options: [
-              "The striker chooses which of their side's balls to play each turn",
+              "The striker picks which of the two balls to play",
               "A fixed rotation: blue, red, black, yellow",
-              "Whichever ball is closest to the next wicket",
-              "Alternating sides, but each side chooses its ball",
+              "Whichever ball lies closest to the next wicket",
+              "Alternating sides, but each side picks its ball",
             ],
             correctIndex: 1,
             explanation:
@@ -1648,7 +1648,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           },
           {
             prompt: "How many points does a side need to win an American Six-Wicket game?",
-            options: ["13", "26, 12 wicket points plus the stake point, for each of the side's two balls", "7", "24"],
+            options: ["13, one ball's full circuit and peg", "26, each ball's 12 wickets and the stake", "7, exactly as in a Golf Croquet game", "24, the twelve wickets counted twice"],
             correctIndex: 1,
             explanation:
               "Rule 1.1(b) and Rule 10.4. The side must stake out BOTH balls (or, in a time-limited game, score the most points).",
@@ -1657,9 +1657,9 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "What does USCA Rule 7.1 say happens when the striker earns the croquet shot?",
             options: [
-              "The striker ball becomes 'dead' on the roqueted ball and may not roquet it again until it scores its next wicket",
+              "The striker ball goes dead on the roqueted ball",
               "The striker ball is removed from the game",
-              "The roqueted ball is removed",
+              "The roqueted ball is removed from the game",
               "Deadness is cleared at the end of every turn",
             ],
             correctIndex: 0,
@@ -1670,10 +1670,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "What is the correct thing to say about the phrase 'carryover deadness'?",
             options: [
-              "It is USCA Rule 7.2",
+              "It is written into USCA Rule 7.2 verbatim",
               "It is a term defined in the rulebook's glossary",
-              "It appears ZERO times in the official 2024 rulebook, it is coaching slang for what Rule 7.1 describes",
-              "It is an Association Croquet term",
+              "It is coaching slang; not in the 2024 rulebook",
+              "It is an Association Croquet glossary term",
             ],
             correctIndex: 2,
             explanation:
@@ -1683,10 +1683,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "Roughly how big is a deadness board, and what is on it?",
             options: [
-              "About 2 ft high by 3 ft wide, with the four ball colours down the left and 12 coloured squares, three per ball",
+              "About 2 ft by 3 ft, with 12 squares, three per ball",
               "A pocket-sized scorecard carried by the referee",
-              "A digital screen required at every club",
-              "A 6 ft square scoreboard with 26 squares",
+              "A digital screen required at every USCA club",
+              "A 6 ft square scoreboard holding 26 squares",
             ],
             correctIndex: 0,
             explanation:
@@ -1696,10 +1696,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "What is the 1-back clearing (Rule 7.3)?",
             options: [
-              "Deadness is cleared automatically for everyone at 1-back",
-              "As each ball scores its 1-back wicket, the OPPOSING side may clear the deadness from one of its eligible balls, and must declare which before playing its next first shot",
-              "A ball at 1-back may roquet any ball twice",
-              "It clears the deadness board at half time",
+              "Deadness clears automatically for all at 1-back",
+              "At 1-back, the opposing side clears one ball's deadness",
+              "A ball reaching 1-back may roquet any ball twice",
+              "It fully clears the deadness board at half time",
             ],
             correctIndex: 1,
             explanation:
@@ -1708,7 +1708,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           },
           {
             prompt: "In a TIME LIMIT game of American Six-Wicket, how long does a striker have to play a shot?",
-            options: ["No limit", "45 seconds after the previous shot is completed", "10 seconds", "Two minutes"],
+            options: ["No limit at all on shot time", "45 seconds after the previous shot", "10 seconds from the last shot", "Two full minutes for each shot"],
             correctIndex: 1,
             explanation:
               "Rule 13.8 ('Shot and Game Clocks'), with the timekeeper announcing when 15 seconds remain. Note the rule's own qualifier, the shot clock applies 'in a time limit game', not to every American game. A 45-second shot clock is not a slow game.",
@@ -1716,7 +1716,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           },
           {
             prompt: "How many time-outs does each side get in a timed American game?",
-            options: ["None", "Three one-minute player time-outs", "One five-minute time-out", "Unlimited"],
+            options: ["None are permitted at all", "Three one-minute time-outs", "One five-minute time-out", "Unlimited, at will"],
             correctIndex: 1,
             explanation: "Rule 13.9.",
             sourceLessonSlug: "american-six-wicket",
@@ -1724,10 +1724,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "What happens at 'match time' in a timed American game?",
             options: [
-              "Play stops immediately and the leader wins",
-              "Each remaining ball gets one last turn in rotation; then the side with the most wicket and stake points wins (ties → play continues in full rounds)",
-              "The game is replayed",
-              "The deadness board is cleared",
+              "Play stops at once and the current leader wins",
+              "Each ball takes one last turn; most points wins",
+              "The whole game is replayed from the start",
+              "The deadness board is wiped completely clean",
             ],
             correctIndex: 1,
             explanation: "Rules 13.10 and 13.11(b).",
@@ -1736,10 +1736,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "How does a rover ball dead on two or more balls clear its deadness (Rule 10.3)?",
             options: [
-              "It cannot",
-              "By running any wicket in either direction, though it remains 'last dead' on one ball",
-              "By staking out",
-              "By waiting one full rotation",
+              "It cannot clear it under any rule",
+              "By running any wicket, either direction",
+              "By staking out its own partner ball",
+              "By waiting one full rotation of play",
             ],
             correctIndex: 1,
             explanation: "A rover has no 'next wicket' left in order, so the rules give it a different clearing path.",
@@ -1749,9 +1749,9 @@ The board tells your opponent exactly how poor you are. Play accordingly.
             prompt: "Is choosing which of your two balls to play part of the standard American game?",
             options: [
               "Yes, it is the core of American strategy",
-              "No, the rotation is fixed. A ball choice exists only as an EXPERIMENTAL rule (17.1) in one narrow case",
-              "Only in doubles",
-              "Only in handicap play",
+              "No; rotation is fixed (17.1 is experimental)",
+              "Only in the doubles form of the game",
+              "Only when playing under a set handicap",
             ],
             correctIndex: 1,
             explanation:
@@ -1761,10 +1761,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "Strategically, what does deadness add on top of Association Croquet's break-building problem?",
             options: [
-              "Nothing, it is cosmetic",
-              "A resource that runs out: every roquet spends something, and the board shows your opponent exactly how poor you are",
-              "A time limit",
-              "Extra points",
+              "Nothing at all; it is purely cosmetic",
+              "A resource that runs out as you roquet",
+              "A strict shot-by-shot time limit",
+              "Extra bonus points on each roquet",
             ],
             correctIndex: 1,
             explanation:
@@ -1773,7 +1773,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           },
           {
             prompt: "What decides who plays first in American Six-Wicket?",
-            options: ["A coin toss (Rule 1.1(c))", "The lower handicap", "The home club", "The referee"],
+            options: ["A coin toss (Rule 1.1(c))", "The lower-handicap player", "The designated home club", "The presiding referee's call"],
             correctIndex: 0,
             explanation: "The winner takes blue and black (first and third) or red and yellow (second and fourth).",
             sourceLessonSlug: "american-six-wicket",
@@ -1781,10 +1781,10 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           {
             prompt: "May an American Six-Wicket game be shortened?",
             options: [
-              "No",
-              "Yes, Rule 16.1 provides a 14-point game (6 wicket points plus the stake, per ball)",
+              "No, it is always played full length",
+              "Yes; Rule 16.1 gives a 14-point game",
               "Yes, down to 7 points, as in Golf Croquet",
-              "Only in juniors' play",
+              "Only in junior and youth-level play",
             ],
             correctIndex: 1,
             explanation:
@@ -2072,9 +2072,9 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "What is the best-sourced claim about the foundation of the modern Association Croquet laws?",
             options: [
-              "Jaques introduced croquet to Britain at the 1851 Great Exhibition",
-              "John Jaques II published 'Croquet; the Laws and Regulations of the Game' in 1864, which the WCF's Hall of Fame calls 'recognizably the foundation of the modern laws of Association Croquet'",
-              "The rules came from Ireland in 1850",
+              "Jaques showed croquet at the 1851 Great Exhibition",
+              "Jaques's 1864 rulebook, per the WCF Hall of Fame",
+              "The rules arrived from Ireland around 1850",
               "The All England Croquet Club wrote them in 1868",
             ],
             correctIndex: 1,
@@ -2085,10 +2085,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "How does this course treat the claim that croquet came to England from Ireland around 1850?",
             options: [
-              "As settled fact",
-              "As a disputed claim, OxfordCroquet calls it 'somewhat dubious' and argues for the French jeu de mail instead",
-              "As deliberately invented",
-              "As proven by the WCF",
+              "As fully settled historical fact",
+              "As a disputed, dubious claim",
+              "As a deliberately invented myth",
+              "As a claim proven by the WCF",
             ],
             correctIndex: 1,
             explanation: "A disputed claim is presented as a dispute, not as a fact.",
@@ -2097,10 +2097,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "Where and when was the All England Croquet Club founded?",
             options: [
-              "At Wimbledon, in 1868",
-              "In central London, at 346 Strand, on 23 July 1868, it moved to Wimbledon in October 1869",
-              "At Worple Road, in 1875",
-              "In Paris, in 1900",
+              "At Wimbledon, first founded in 1868",
+              "In London, at 346 Strand, in July 1868",
+              "At Worple Road, Wimbledon, in 1875",
+              "In Paris, at the 1900 Olympics",
             ],
             correctIndex: 1,
             explanation:
@@ -2110,9 +2110,9 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "What did the All England Croquet Club do in 1875, and what did it lead to?",
             options: [
-              "It banned croquet outright",
-              "With croquet's popularity and its finances fading, it set aside ONE lawn for lawn tennis, and by 1882 croquet had ceased to be played there",
-              "It moved to Paris",
+              "It banned the game of croquet outright",
+              "It set aside one lawn for lawn tennis",
+              "It relocated the whole club to Paris",
               "It merged with the Croquet Association",
             ],
             correctIndex: 1,
@@ -2122,7 +2122,7 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           },
           {
             prompt: "How many athletes competed in croquet at the 1900 Paris Olympics, and from how many nations?",
-            options: ["10 athletes, from 1 nation (France)", "72 athletes, from 12 nations", "4 athletes, from 1 nation", "22 athletes, from 3 nations"],
+            options: ["10 athletes, from a single nation", "72 athletes, from 12 nations total", "4 athletes, from just 1 nation", "22 athletes, from 3 nations total"],
             correctIndex: 0,
             explanation:
               "Ten competitors, seven men and three women, all French. Every medal went to France. That is croquet's entire Olympic history.",
@@ -2131,10 +2131,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "What was genuinely unusual about the three women in the 1900 Olympic croquet event?",
             options: [
-              "They were the first female Olympians",
-              "They competed directly against the men in the same competition, there was no separate women's event",
-              "They won all three medals",
-              "They were the only competitors",
+              "They were the first-ever female Olympians",
+              "They competed head-to-head with the men",
+              "They swept all three of the medals",
+              "They were the only competitors present",
             ],
             correctIndex: 1,
             explanation:
@@ -2144,10 +2144,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "Why is 'the croquet women were the first female Olympians' false?",
             options: [
-              "Because no women competed in 1900",
-              "Because Hélène de Pourtalès competed in yachting on 22 May 1900, five weeks before croquet began on 28 June",
-              "Because croquet was not an Olympic sport",
-              "Because they competed in a separate event",
+              "Because no women at all competed in 1900",
+              "Because de Pourtalès sailed weeks earlier, in May",
+              "Because croquet was not an Olympic sport then",
+              "Because they competed in a separate women's event",
             ],
             correctIndex: 1,
             explanation:
@@ -2158,9 +2158,9 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
             prompt: "What happened to roque at the 1904 St. Louis Olympics?",
             options: [
               "It drew 80 competitors from 12 nations",
-              "One event, four competitors, all American, gold to Charles Jacobus; croquet or roque has never been contested at the Olympics again",
-              "It was cancelled",
-              "Women competed against men again",
+              "Four Americans; gold to Charles Jacobus",
+              "It was cancelled before it began",
+              "Women again competed against the men",
             ],
             correctIndex: 1,
             explanation:
@@ -2170,10 +2170,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "The 'only one paying spectator at the 1900 Olympics' story is best described as...",
             options: [
-              "Pure folklore with no source",
+              "Pure folklore with no source at all",
               "A hard statistic from the Official Report",
-              "Real but hedged, the Official Report says 'unless I am very much mistaken, however, this gentleman was the only paying spectator'; retelling dropped the hedge",
-              "An invention of the WCF",
+              "Real but hedged; the hedge was lost",
+              "An outright invention of the WCF itself",
             ],
             correctIndex: 2,
             explanation:
@@ -2183,10 +2183,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "Why does this course cite the 1900 spectator quote as 'the Official Report, as quoted and translated by the World Croquet Federation' rather than just 'the Official Report'?",
             options: [
-              "Because the WCF wrote the report",
-              "Because the course verified the WCF's English translation, not the French original, so it says exactly what it checked",
-              "Because the report is secret",
-              "Because the WCF disputes the report",
+              "Because the WCF actually wrote the report",
+              "Because it read a translation, not the French",
+              "Because the original report is kept secret",
+              "Because the WCF openly disputes the report",
             ],
             correctIndex: 1,
             explanation:
@@ -2196,10 +2196,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "What is wrong with the claim that croquet was 'banned in Boston' by the clergy?",
             options: [
-              "Nothing, it is well documented",
-              "A ban cannot be verified. The USCA's own history says only that the Boston clergy 'spoke out against' the behaviour around croquet, denouncing is not banning",
-              "It happened in New York, not Boston",
-              "It was the police, not the clergy",
+              "Nothing at all; it is well documented",
+              "No ban is verifiable; clergy only spoke out",
+              "It happened in New York, not in Boston",
+              "It was the police, not the local clergy",
             ],
             correctIndex: 1,
             explanation:
@@ -2209,10 +2209,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "Which source is peer-reviewed scholarship on croquet and Victorian gender roles?",
             options: [
-              "The Jaques company blog",
-              "Sterngass, J. (1998), 'Cheating, gender roles, and the nineteenth-century croquet craze', Journal of Sport History, 25(3)",
+              "The Jaques mallet-company blog post",
+              "Sterngass (1998), Journal of Sport History",
               "The New-York Historical Society blog post",
-              "Croquet World Online Magazine",
+              "Croquet World Online Magazine feature",
             ],
             correctIndex: 1,
             explanation:
@@ -2222,10 +2222,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "This course names Prichard's 'The History of Croquet' (1981) but does not quote it. Why?",
             options: [
-              "It is out of print",
-              "It is unreliable",
-              "Because the course did not read it, and you do not cite what you have not read",
-              "Because the WCF disputes it",
+              "It is long out of print now",
+              "It is known to be unreliable",
+              "The course did not actually read it",
+              "Because the WCF openly disputes it",
             ],
             correctIndex: 2,
             explanation:
@@ -2235,10 +2235,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "What is the general rule this course applies when two sources disagree and one of them is selling something?",
             options: [
-              "Average the two",
-              "Cite the one that isn't selling, and say out loud that the other exists",
-              "Cite whichever is more famous",
-              "Cite neither",
+              "Average the two claims together",
+              "Cite the one that isn't selling",
+              "Cite whichever is the more famous",
+              "Cite neither source at all",
             ],
             correctIndex: 1,
             explanation:
@@ -2248,10 +2248,10 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
           {
             prompt: "What does Olympedia itself warn about croquet at the 1900 Games?",
             options: [
-              "That it drew record crowds",
-              "That 'very little is known' about it, and that some Olympic historians say it was not even an Olympic sport",
-              "That the results were falsified",
-              "That women were barred",
+              "That it drew huge record crowds",
+              "That 'very little is known' about it",
+              "That all the results were falsified",
+              "That women were barred from it",
             ],
             correctIndex: 1,
             explanation:
@@ -2522,10 +2522,10 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           {
             prompt: "What is the stated goal of the croquet handicap system?",
             options: [
-              "To make weaker players stronger",
-              "To give each player an equal chance of winning about half their games over time",
-              "To rank players for prize money",
-              "To keep beginners out of tournaments",
+              "To make the weaker players genuinely stronger",
+              "To give each player an even chance to win",
+              "To rank all players strictly for prize money",
+              "To keep beginners out of open tournaments",
             ],
             correctIndex: 1,
             explanation:
@@ -2534,7 +2534,7 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           },
           {
             prompt: "In croquet, what does a NEGATIVE ('minus') handicap indicate?",
-            options: ["A beginner", "A very strong player", "A suspended player", "A junior"],
+            options: ["A raw beginner", "A very strong player", "A suspended player", "A young junior player"],
             correctIndex: 1,
             explanation:
               "Handicaps run backwards: high numbers are weaker players, low numbers stronger, and zero or minus handicaps indicate very strong players.",
@@ -2543,9 +2543,9 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           {
             prompt: "What does the weaker player receive in HANDICAP Association Croquet?",
             options: [
-              "Extra strokes",
-              "Bisques, extra turns; the number is the difference between the two handicaps (Law 42.2.1)",
-              "A head start of six points",
+              "Extra individual free strokes",
+              "Bisques, meaning extra free turns",
+              "A head start of six full points",
               "The right to choose the code",
             ],
             correctIndex: 1,
@@ -2556,10 +2556,10 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           {
             prompt: "Why can't you carry an American Six-Wicket handicap straight into Association Croquet?",
             options: [
-              "You can, they are the same scale",
-              "They are DIFFERENT scales, the USCA's own rankings page says to add two to your American handicap to get your Association handicap",
-              "Association Croquet has no handicaps",
-              "Only the WCF may issue handicaps",
+              "You can; the two scales are identical",
+              "Different scales; add two for the AC number",
+              "Association Croquet has no handicaps at all",
+              "Only the WCF is allowed to issue handicaps",
             ],
             correctIndex: 1,
             explanation:
@@ -2568,7 +2568,7 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           },
           {
             prompt: "In Croquet England's Automatic Handicap System, what happens to your index when you win a handicap game?",
-            options: ["+10", "+1", "It does not change", "-10"],
+            options: ["+10 to your index", "+1 to your index", "No change to your index", "-10 from your index"],
             correctIndex: 0,
             explanation:
               "Win +10, loss -10 in handicap play. Cross a trigger point and your handicap moves. Anti-yo-yo protection stops you bouncing straight back.",
@@ -2578,9 +2578,9 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
             prompt: "Which games count toward your Croquet England handicap?",
             options: [
               "Every game you play, including friendlies",
-              "Only qualifying singles games, calendar fixtures, federation leagues, inter-club contests and designated club competitions. Doubles, friendlies and ad-hoc games are excluded",
-              "Only national championships",
-              "Only doubles",
+              "Only qualifying singles fixtures, not friendlies",
+              "Only the top national championship events",
+              "Only doubles matches within federation leagues",
             ],
             correctIndex: 1,
             explanation:
@@ -2598,10 +2598,10 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           {
             prompt: "What does the £189 entry fee at the croquet world championship tell you?",
             options: [
-              "That the prize money is enormous",
-              "That the PLAYERS pay to enter, croquet has no prize-money economy, which is why the money in the sport is on the building side, not the winning side",
+              "That the tournament prize money is enormous",
+              "That players pay to enter; no prize economy",
               "That entry is restricted to sponsored professionals",
-              "That the WCF is a for-profit company",
+              "That the WCF runs as a big for-profit company",
             ],
             correctIndex: 1,
             explanation: "It is the single most clarifying economic fact in the sport.",
@@ -2610,10 +2610,10 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           {
             prompt: "How do you get into a WCF world championship?",
             options: [
-              "You enter directly online",
-              "Through your national federation, via federation/membership places, world-ranking places, wild cards, or a qualifying tournament",
+              "You just enter directly online yourself",
+              "Through your national federation's places",
               "By invitation from the reigning champion",
-              "By winning a national title only",
+              "Only by winning a national title first",
             ],
             correctIndex: 1,
             explanation:
@@ -2623,10 +2623,10 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           {
             prompt: "What does the WCF's own 2024 report say about Association Croquet?",
             options: [
-              "It is the fastest-growing code",
-              "Ranked AC games have declined by 11% in five years, with no reported growth in 2024, prompting an 'AC Regeneration' working group",
-              "It has been discontinued",
-              "It has doubled in size",
+              "It is the single fastest-growing code",
+              "Ranked AC games fell 11% in five years",
+              "It has been quietly discontinued",
+              "It has doubled in size since 2019",
             ],
             correctIndex: 1,
             explanation:
@@ -2637,8 +2637,8 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
             prompt: "How does this course report the size of the USCA?",
             options: [
               "Exactly 300 clubs and 3,000 members",
-              "As a range, roughly 200-300 clubs and 3,000-3,500 members, because the USCA's own rulebook and About Us page give different figures",
-              "It refuses to say anything",
+              "As a range: ~200-300 clubs, ~3,000+ members",
+              "It refuses to give any figure at all",
               "Exactly 200 clubs and 3,500 members",
             ],
             correctIndex: 1,
@@ -2650,9 +2650,9 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
             prompt: "What is the All-England Handicap?",
             options: [
               "The championship for minus-handicap players",
-              "A competition running club → regional → national final that is explicitly designed for NEWCOMERS and developing players",
-              "The national doubles title",
-              "A ranking list",
+              "A club-to-national final for newcomers",
+              "The national doubles championship title",
+              "A published national ranking ladder list",
             ],
             correctIndex: 1,
             explanation:
@@ -2661,7 +2661,7 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           },
           {
             prompt: "What does USCA membership cost a full-time student, and a school?",
-            options: ["$75 each", "$25 each", "Both are FREE", "$125 for a school, $25 for a student"],
+            options: ["$75 for each of them", "$25 for each of them", "Both are entirely FREE", "$125 school, $25 student"],
             correctIndex: 2,
             explanation:
               "Free student and free school membership, bringing a handicap, a ranking, eligibility for sanctioned tournaments and US National Team eligibility. Barely anybody uses it.",
@@ -2670,10 +2670,10 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           {
             prompt: "Why is the Annapolis Cup NOT a rung on the competitive ladder?",
             options: [
-              "It is not a real event",
-              "It is played under NINE-WICKET rules, a different code, so it leads nowhere near a WCF world championship, however wonderful a tradition it is",
-              "Only Navy may enter",
-              "It has no crowd",
+              "It is not really a competitive event",
+              "It uses nine-wicket rules, another code",
+              "It is open only to US Navy entrants",
+              "It draws almost no crowd at all",
             ],
             correctIndex: 1,
             explanation:
@@ -2683,10 +2683,10 @@ Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **
           {
             prompt: "Croquet England requires what of anyone who coaches children?",
             options: [
-              "Nothing in particular",
-              "That they be a CqE U18s Licensed Coach",
-              "A minus handicap",
-              "A university degree",
+              "Nothing in particular at all",
+              "A CqE U18s Licensed Coach award",
+              "A minus (very strong) handicap",
+              "A formal university degree",
             ],
             correctIndex: 1,
             explanation:
@@ -3142,9 +3142,9 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "What is published about prize money at the croquet world championships?",
             options: [
-              "A £50,000 purse for the winner",
-              "Nothing, no prize fund is published for either world championship; what IS published is the £189 entry fee the players pay",
-              "Prize money is shared among the top 8",
+              "A large £50,000 purse for the winner",
+              "Nothing; players pay a £189 entry fee",
+              "Prize money is shared among the top eight",
               "The WCF pays travel for all competitors",
             ],
             correctIndex: 1,
@@ -3155,9 +3155,9 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "Why won't this course give you a worldwide croquet player count?",
             options: [
-              "Because it is a secret",
-              "Because no governing body publishes one, so any confident figure was invented",
-              "Because it changes daily",
+              "Because it is a closely-kept secret",
+              "Because no body publishes such a figure",
+              "Because it changes almost daily",
               "Because the WCF forbids publishing it",
             ],
             correctIndex: 1,
@@ -3168,10 +3168,10 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "According to Croquet England's own published figures, what has it given clubs over the last decade?",
             options: [
-              "Nothing, clubs are self-funded",
-              "Grants totalling nearly £200,000 to 80 member clubs, and interest-free loans of more than £28,000 to 15 clubs",
-              "£5 million in prize money",
-              "Free courts to every applicant",
+              "Nothing at all; clubs are self-funded",
+              "Nearly £200,000 in grants to 80 clubs",
+              "About £5 million in cash prize money",
+              "Free courts to every single applicant",
             ],
             correctIndex: 1,
             explanation:
@@ -3181,10 +3181,10 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "What does the WCF's Development programme offer its member federations?",
             options: [
-              "Nothing",
-              "Loans or grants for developing croquet in their domain, plus funded coaching/referee courses and volunteer coaches with transport costs paid",
-              "A share of TV revenue",
-              "Free courts",
+              "Nothing much at all, in practice",
+              "Loans, grants and funded courses",
+              "A share of the WCF's TV revenue",
+              "Free full-size championship courts",
             ],
             correctIndex: 1,
             explanation: "A governing body that will lend you money and send you a coach is not a normal sports economy.",
@@ -3200,7 +3200,7 @@ And you now have the one habit that matters more than any of it: **when someone 
           },
           {
             prompt: "What mowing height does the WCF-published Croquet Facility Guide specify?",
-            options: ["½ to ¾ inch", "3 mm to 5 mm, with a cylinder mower, up to three times a week in the growing season", "1 mm", "It does not say"],
+            options: ["½ to ¾ inch, cut once a week", "3 mm to 5 mm, by cylinder mower", "About 1 mm, cut every other day", "The guide does not actually say"],
             correctIndex: 1,
             explanation:
               "The imperial figures you find online come from turf-retailer and backyard-game blogs, which contradict each other and are not governing-body sources.",
@@ -3209,10 +3209,10 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "Why can a croquet lawn realistically share a site with a tennis or bowls club?",
             options: [
-              "Because the sports are played at the same time",
-              "Because croquet's turf height (~3 mm) sits between lawn tennis (~4 mm) and competitive bowls (~1 mm), so the facility and the greenkeeper can be shared",
-              "Because croquet needs no maintenance",
-              "Because the courts are the same size",
+              "Because the three sports play at the same time",
+              "Because their turf heights are all similar",
+              "Because a croquet lawn needs no maintenance",
+              "Because all three courts are the same size",
             ],
             correctIndex: 1,
             explanation:
@@ -3222,10 +3222,10 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "What does the Croquet Facility Guide say about synthetic surfaces?",
             options: [
-              "They are preferred for new clubs",
+              "They are strongly preferred for all new clubs now",
               "'The sport is not currently played on synthetic surfaces'",
-              "They are required for tournaments",
-              "They are cheaper and just as good",
+              "They are required for all sanctioned tournament play",
+              "They are far cheaper and every bit as good to play",
             ],
             correctIndex: 1,
             explanation:
@@ -3236,9 +3236,9 @@ And you now have the one habit that matters more than any of it: **when someone 
             prompt: "What does Croquet England's Club-Level Coach qualification require?",
             options: [
               "A university degree in sports science",
-              "A two-day course with a practical assessment and an open-book test on BOTH the GC Rules and the AC Laws",
-              "A minus handicap",
-              "Ten years of play",
+              "A two-day course, assessment and open test",
+              "A minus (very strong) tournament handicap",
+              "Ten full years of competitive play",
             ],
             correctIndex: 1,
             explanation:
@@ -3248,10 +3248,10 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "Pinehurst Resort's published croquet rate card runs from...",
             options: [
-              "$5 to $20",
-              "$100 (up to 3 people, 1 hour) to $750 (17-32 people)",
-              "$1,000 to $5,000",
-              "It does not publish prices",
+              "$5 to $20 per person session",
+              "$100 (up to 3) to $750 (17-32)",
+              "$1,000 to $5,000 per session",
+              "It does not publish any prices",
             ],
             correctIndex: 1,
             explanation:
@@ -3262,9 +3262,9 @@ And you now have the one habit that matters more than any of it: **when someone 
             prompt: "Why does this course quote rate cards instead of coaches' salaries?",
             options: [
               "Because salaries are confidential by law",
-              "Because no croquet coach's, mallet-maker's or club manager's income is published anywhere, so any earnings figure you see was invented",
-              "Because coaches are unpaid",
-              "Because the USCA forbids it",
+              "Because no such income is published anywhere",
+              "Because croquet coaches are all unpaid",
+              "Because the USCA strictly forbids it",
             ],
             correctIndex: 1,
             explanation:
@@ -3274,10 +3274,10 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "How many ball brands are on the WCF's approved list worldwide, and what does approval cost?",
             options: [
-              "Three brands (Dawson, Sunshiny, Invictus X); a manufacturer submits a set with a £100 fee",
-              "Fifty brands; approval is free",
-              "One brand; approval costs £50,000",
-              "The WCF does not approve equipment",
+              "Three brands; approval costs a £100 fee",
+              "Fifty brands; approval is entirely free",
+              "One brand only; approval costs £50,000",
+              "The WCF does not approve any equipment",
             ],
             correctIndex: 0,
             explanation:
@@ -3287,10 +3287,10 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "What makes Robert Fletcher the section's key example?",
             options: [
-              "He is the richest player in croquet",
-              "He won the 2013 AC World Championship at 20, the youngest ever, and is the named supplier of the WCF-approved Invictus X ball, running his own equipment company",
-              "He invented Golf Croquet",
-              "He founded the WCF",
+              "He is the richest player in all croquet",
+              "A world champion who built an equipment firm",
+              "He single-handedly invented Golf Croquet",
+              "He founded the World Croquet Federation",
             ],
             correctIndex: 1,
             explanation:
@@ -3301,8 +3301,8 @@ And you now have the one habit that matters more than any of it: **when someone 
             prompt: "Which three facts about the Jaques company must be held together?",
             options: [
               "Only that the business dates itself to 1795",
-              "That the business dates ITSELF to 1795 (its own claim); that the registered company was incorporated in 1945; and that its Companies House status was read as 'Voluntary Arrangement', a formal insolvency procedure",
-              "That it went bankrupt in 1864",
+              "1795 self-claim, 1945 incorporation, insolvency",
+              "That it went bankrupt entirely back in 1864",
               "That it no longer makes croquet equipment",
             ],
             correctIndex: 1,
@@ -3313,10 +3313,10 @@ And you now have the one habit that matters more than any of it: **when someone 
           {
             prompt: "What is the most efficient first move for a US high-school student who wants to compete?",
             options: [
-              "Buy a championship mallet",
-              "Join the USCA, student membership is FREE and brings a handicap, a national ranking and eligibility for sanctioned tournaments, then get a handicap and enter a HANDICAP tournament",
-              "Enter the world championship qualifier",
-              "Build a court",
+              "Buy a top championship-grade mallet first",
+              "Join the USCA free, then enter a handicap event",
+              "Enter the world championship qualifier directly",
+              "Build your own full-size championship court",
             ],
             correctIndex: 1,
             explanation:

@@ -111,7 +111,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/banking-abroad-course.ts": 1.00,
   "scripts/data/broadcasting-course.ts": 0.69,
   "scripts/data/citizenship-naturalization-course.ts": 0.86,
-  "scripts/data/croquet-course.ts": 0.96,
   "scripts/data/dc-berman-course.ts": 0.97,
   "scripts/data/dental-health-course.ts": 0.77,
   "scripts/data/dual-citizenship-course.ts": 1.00,
