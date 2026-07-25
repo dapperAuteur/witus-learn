@@ -90,6 +90,9 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
             <Link href="/platform" className="text-sm font-medium underline" style={{ color: "var(--accent)" }}>
               See the platform
             </Link>
+            <Link href="/for" className="text-sm font-medium underline" style={{ color: "var(--accent)" }}>
+              Who is it for?
+            </Link>
             <Link href="/demo" className="text-sm font-medium underline" style={{ color: "var(--accent)" }}>
               Try the live demo
             </Link>
