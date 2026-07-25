@@ -1,8 +1,10 @@
 import "server-only";
 import Stripe from "stripe";
 import type { Course } from "@/db/schema";
+import type { Bundle } from "@/db/schema/bundles";
 import type { TenantRecord } from "@/lib/tenant";
 import { updateCourse } from "@/db/queries/authoring";
+import { updateBundleStripe } from "@/db/queries/bundles";
 import { env, hasStripe } from "./env";
 
 let cached: Stripe | undefined;
@@ -152,6 +154,67 @@ export async function createCourseCheckout(opts: {
     ...(couponId ? { discounts: [{ coupon: couponId }] } : {}),
     ...(Object.keys(paymentIntentData).length ? { payment_intent_data: paymentIntentData } : {}),
     ...(Object.keys(subscriptionData).length ? { subscription_data: subscriptionData } : {}),
+  });
+  return session.url;
+}
+
+// ── Bundles ──────────────────────────────────────────────────────────────────
+// A bundle is sold exactly like a one-time course, but the webhook enrolls the buyer in every member
+// course instead of one. ensureBundlePrice/createBundleCheckout mirror the course helpers so the
+// Stripe surface stays a single well-understood pattern.
+
+export async function ensureBundlePrice(stripe: Stripe, tenantId: string, bundle: Bundle): Promise<string> {
+  if (bundle.stripePriceId) return bundle.stripePriceId;
+
+  const productId =
+    bundle.stripeProductId ??
+    (await stripe.products.create({ name: bundle.title, metadata: { bundle_id: bundle.id } })).id;
+
+  const price = await stripe.prices.create({
+    product: productId,
+    currency: "usd",
+    unit_amount: Math.round(Number(bundle.price) * 100),
+    ...(bundle.priceType === "subscription"
+      ? { recurring: { interval: bundle.billingInterval === "year" ? "year" : "month" } }
+      : {}),
+    metadata: { bundle_id: bundle.id },
+  });
+
+  await updateBundleStripe(tenantId, bundle.id, { stripeProductId: productId, stripePriceId: price.id });
+  return price.id;
+}
+
+export async function createBundleCheckout(opts: {
+  stripe: Stripe;
+  tenant: TenantRecord;
+  bundle: Bundle;
+  userId: string;
+  priceId: string;
+  siteUrl: string;
+  couponId?: string | null;
+  promoId?: string | null;
+}): Promise<string | null> {
+  const { stripe, tenant, bundle, userId, priceId, siteUrl, couponId, promoId } = opts;
+  const isSub = bundle.priceType === "subscription";
+  const descriptor = tenant.stripe.statementDescriptor;
+
+  const paymentIntentData: Stripe.Checkout.SessionCreateParams.PaymentIntentData = {};
+  if (!isSub && descriptor) paymentIntentData.statement_descriptor_suffix = descriptor.slice(0, 22);
+
+  const session = await stripe.checkout.sessions.create({
+    mode: isSub ? "subscription" : "payment",
+    line_items: [{ price: priceId, quantity: 1 }],
+    success_url: `${siteUrl}/bundles/${bundle.slug}?purchased=true&session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${siteUrl}/bundles/${bundle.slug}?canceled=true`,
+    client_reference_id: userId,
+    metadata: {
+      bundle_id: bundle.id,
+      user_id: userId,
+      tenant_id: tenant.id,
+      ...(promoId ? { promo_id: promoId } : {}),
+    },
+    ...(couponId ? { discounts: [{ coupon: couponId }] } : {}),
+    ...(Object.keys(paymentIntentData).length ? { payment_intent_data: paymentIntentData } : {}),
   });
   return session.url;
 }
