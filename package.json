@@ -24,6 +24,7 @@
     "seed:map": "tsx --env-file=.env.local scripts/seed-map.ts",
     "seed:languages": "tsx --env-file=.env.local scripts/seed-languages.ts",
     "seed:courses": "tsx --env-file=.env.local scripts/seed-courses.ts",
+    "seed:bundles": "tsx --env-file=.env.local scripts/seed-bundles.ts",
     "seed:langchain": "tsx --env-file=.env.local scripts/seed-langchain.ts",
     "seed:faa": "tsx --env-file=.env.local scripts/seed-faa.ts",
     "seed:bvc:real": "tsx --env-file=.env.local scripts/seed-bvc-real.ts",
