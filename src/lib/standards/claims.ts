@@ -4044,6 +4044,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // charters, formation documents) and cited secondary sources into a coherent account.
       "who-has-the-power",
       "what-a-business-entity-is",
+      "the-local-layer",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4082,6 +4083,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // Government-forms method course: test a government action against its enabling document
       // (did this body have the power?), the same corroborate-or-challenge move.
       "who-has-the-power",
+      "the-local-layer",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",
@@ -4117,6 +4119,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // Government-forms capstone: map every government with authority over your block, from the
       // primary record (the state's own statutes, charters, and filings).
       "who-has-the-power",
+      "the-local-layer",
     ],
     lessons: [
       "19 · Your assignment: find a listing, then find the address today",

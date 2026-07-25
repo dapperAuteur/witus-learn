@@ -419,9 +419,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   decisions (liability, taxation, ownership/transfer, governance), and reading the formation documents
   as primary sources is the skill; it says plainly, repeatedly, that it is not legal or tax advice, and
   asserts no statute section or tax rate from memory. Both are mapped to the Common Core RH/WHST
-  literacy strands and shuffle-by-default; all eight quiz banks score 25-31% on the length tell. These
-  are the pilot tranche: 1 of 9 government courses and 1 of 7 business courses; the rest follow across
-  later sessions. **Re-run \`pnpm seed:courses\`.**
+  literacy strands and shuffle-by-default; all eight quiz banks score 25-31% on the length tell. A third course now joins them, **The
+  Local Layer** (\`the-local-layer\`, 20 lessons), the deep Dillon's-Rule-vs-home-rule course: municipal
+  forms (mayor-council, council-manager, commission), special districts (which outnumber cities and
+  whose elections nobody votes in), town meeting, and Unigov as the creatures-of-the-state case, built
+  ON the method course without repeating it. Tranche so far: 2 of 9 government courses and 1 of 7
+  business courses; the rest follow. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**
