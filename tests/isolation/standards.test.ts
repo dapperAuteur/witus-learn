@@ -137,6 +137,47 @@ const CATALOG = [
   "pickleball",
   "lacrosse-creators-game",
   "croquet",
+  // Route series + capstones (mapped to CCSS RH/WHST literacy strands, 2026-07-24)
+  "green-book-how-to-read-a-route",
+  "indiana-avenue-a-district-and-what-replaced-it",
+  "the-gym-and-the-color-line",
+  "two-racetracks",
+  "mudsock-how-a-rivalry-marks-a-boundary",
+  "the-presidents-house",
+  "fort-harrison-the-federal-footprint",
+  "dc-where-the-instrument-was-blessed",
+  "philadelphia-the-university-and-the-block",
+  "seattle-the-modern-bookend",
+  "baltimore-the-whole-chain",
+  "pittsburgh-where-the-playbook-was-written",
+  "how-the-tools-travelled",
+  "exported-how-others-studied-american-race-law",
+  // Positive track
+  "the-schoolhouse-network",
+  "where-we-rested",
+  "what-they-built",
+  // Labor series
+  "labor-brazil",
+  "labor-chile",
+  "labor-germany",
+  "labor-india",
+  "labor-south-africa",
+  "labor-south-korea",
+  "sweden-denmark-nordic-model",
+  // Precolonial + contested history
+  "africa-before-colonization",
+  "asia-before-european-colonization",
+  "precolumbian-mesoamerica",
+  "pan-africanism",
+  "afrocentricity",
+  "training-the-colonizer",
+  // Culture and migration
+  "great-migration-and-the-world",
+  "hoodoo-tradition-of-resistance",
+  "hoodoo-complete",
+  "history-of-bathing",
+  // Civics
+  "state-civics-dc",
 ];
 
 describe("standards data integrity — a wrong code could be filed with a state", () => {

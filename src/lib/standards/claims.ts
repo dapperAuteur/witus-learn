@@ -3984,6 +3984,139 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
     ],
   },
+
+  // ══ Catalog-wide social-studies literacy (route series, labor series, precolonial and
+  //    contested-history courses, and the positive track) ════════════════════════════════
+  // These courses are the catalog's disciplinary-literacy backbone. Every one obeys the BVC
+  // citation rule (APA 7, a `## Sources` section, each claim tied to a verified source), so the
+  // Common Core Reading-in-History and Writing-in-History-and-Social-Studies strands (RH/WHST)
+  // are a genuine, non-widened fit. Mapped ONLY to those literacy standards, not to any content
+  // standard the courses do not squarely teach. The three claims are deliberately narrow: what
+  // ALL of them do (synthesis), what the source-critical ones do (test a claim), and what the
+  // ones with a graded capstone do (a research project).
+  {
+    id: "catalog.cited-primary-secondary-synthesis",
+    claim:
+      "Builds a documented account of its subject by integrating cited primary and secondary sources into one coherent understanding.",
+    courseSlugs: [
+      // Route series + capstones
+      "green-book-how-to-read-a-route",
+      "indiana-avenue-a-district-and-what-replaced-it",
+      "the-gym-and-the-color-line",
+      "two-racetracks",
+      "mudsock-how-a-rivalry-marks-a-boundary",
+      "the-presidents-house",
+      "fort-harrison-the-federal-footprint",
+      "dc-where-the-instrument-was-blessed",
+      "philadelphia-the-university-and-the-block",
+      "seattle-the-modern-bookend",
+      "baltimore-the-whole-chain",
+      "pittsburgh-where-the-playbook-was-written",
+      "how-the-tools-travelled",
+      "exported-how-others-studied-american-race-law",
+      // Positive track
+      "the-schoolhouse-network",
+      "where-we-rested",
+      "what-they-built",
+      // Labor series
+      "labor-brazil",
+      "labor-chile",
+      "labor-germany",
+      "labor-india",
+      "labor-south-africa",
+      "labor-south-korea",
+      "sweden-denmark-nordic-model",
+      // Precolonial + contested history
+      "africa-before-colonization",
+      "asia-before-european-colonization",
+      "precolumbian-mesoamerica",
+      "pan-africanism",
+      "afrocentricity",
+      "training-the-colonizer",
+      // Culture and migration
+      "great-migration-and-the-world",
+      "hoodoo-tradition-of-resistance",
+      "hoodoo-complete",
+      "history-of-bathing",
+      // Civics
+      "state-civics-dc",
+    ],
+    lessons: [
+      "2 · How we know: reading a record the enslavers wrote",
+      "2 · The center of gravity: the claim, its sources, and its caveats",
+      "9 · Reading density: what a thick section and a thin one mean",
+      "8 · The Lula record, stated as dated fact",
+      "Africa Before Colonization: The Documented Record",
+    ],
+  },
+  {
+    id: "catalog.test-a-historical-claim",
+    claim:
+      "Teaches the student to test a historical claim against its sources: corroborate it, challenge it, or downgrade and cut it when the evidence does not support it.",
+    courseSlugs: [
+      "green-book-how-to-read-a-route",
+      "indiana-avenue-a-district-and-what-replaced-it",
+      "the-gym-and-the-color-line",
+      "two-racetracks",
+      "mudsock-how-a-rivalry-marks-a-boundary",
+      "the-presidents-house",
+      "fort-harrison-the-federal-footprint",
+      "dc-where-the-instrument-was-blessed",
+      "philadelphia-the-university-and-the-block",
+      "seattle-the-modern-bookend",
+      "baltimore-the-whole-chain",
+      "pittsburgh-where-the-playbook-was-written",
+      "how-the-tools-travelled",
+      "exported-how-others-studied-american-race-law",
+      "what-they-built",
+      "afrocentricity",
+      "training-the-colonizer",
+      "africa-before-colonization",
+      "asia-before-european-colonization",
+      "precolumbian-mesoamerica",
+      "pan-africanism",
+    ],
+    lessons: [
+      "3 · The test: four questions before you draw an edge",
+      "10 · The source: what Berman v. Parker authorised",
+      "1 · The claim, and the two ways it gets abused",
+      "6 · How to hold a contested claim: the Black Rice debate",
+      "2 · The Olmec: heads, rubber, and a live debate",
+      "Afrocentricity: How to Evaluate a Contested Paradigm",
+    ],
+  },
+  {
+    id: "catalog.research-a-primary-record",
+    claim:
+      "Ships a graded research capstone: the student locates a primary record, corroborates it across sources, and writes it up with citations.",
+    courseSlugs: [
+      "green-book-how-to-read-a-route",
+      "indiana-avenue-a-district-and-what-replaced-it",
+      "the-gym-and-the-color-line",
+      "two-racetracks",
+      "mudsock-how-a-rivalry-marks-a-boundary",
+      "the-presidents-house",
+      "fort-harrison-the-federal-footprint",
+      "dc-where-the-instrument-was-blessed",
+      "philadelphia-the-university-and-the-block",
+      "seattle-the-modern-bookend",
+      "baltimore-the-whole-chain",
+      "pittsburgh-where-the-playbook-was-written",
+      "how-the-tools-travelled",
+      "exported-how-others-studied-american-race-law",
+      "the-schoolhouse-network",
+      "where-we-rested",
+      "what-they-built",
+    ],
+    lessons: [
+      "19 · Your assignment: find a listing, then find the address today",
+      "20 · Your assignment: write one block",
+      "21 · Your assignment: write one firm",
+      "21 · Your assignment: test one connection of your own",
+      "17 · Your assignment: one schoolhouse, and the budget line that raised it",
+      "20 · Your assignment: write one property",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

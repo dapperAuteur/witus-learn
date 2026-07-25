@@ -43,14 +43,28 @@ conventions are in the managed block below; durable committed planning lives in 
 Educators shop on **standards coverage**, so it must not rot. `pnpm lint` runs
 `scripts/check-standards-coverage.ts`, a **ratchet**: it compares every course registered in
 `scripts/seed-courses.ts` against the alignments in `src/lib/standards/`, and **fails on any course
-that has neither an alignment nor an entry in that script's `BACKLOG` map**. The 35 courses unmapped
-as of 2026-07-24 are grandfathered there with a reason each; the list shrinking is the progress bar.
+that has neither an alignment nor an entry in that script's `BACKLOG` map**. As of 2026-07-24 only
+three genuinely-vocational courses remain excused (knot-tying, off-grid-survival, broadcasting); the
+list shrinking is the progress bar.
 
 So when you ship a course, do one of two things:
 1. **Map it** — add or extend a claim in `src/lib/standards/claims.ts` and reference it from the
-   jurisdiction files, then delete its `BACKLOG` line, or
+   jurisdiction files (or the shared frameworks in `src/lib/standards/shared/`), then delete its
+   `BACKLOG` line, or
 2. **Excuse it** — add a one-line reason to `BACKLOG` (practical/vocational courses with no academic
    standard to claim are legitimately permanent entries).
+
+**Accuracy on change, not just on creation (the harder half).** The ratchet only proves a course is
+aligned to *something*; it cannot tell whether the *specific* standards a course claims are still
+true after its lessons change. So: **whenever you add a course OR materially change a course's
+lessons** (add/cut/rewrite lessons, not a typo or a quiz-option-length fix), re-check what it now
+claims and make it accurate. Run **`pnpm standards:for <slug>`** — it prints every standard the
+course claims, per state, from `src/lib/standards/`. Confirm every code shown is a standard the
+course *as it stands today* genuinely teaches: not one a since-cut lesson used to carry, and never
+one it does not teach. If a claim's evidence lesson was removed or rewritten, fix the claim (and any
+jurisdiction/shared-framework mapping) so the page a teacher reads is true. A wrong standard shown to
+an educator is worse than a missing one. The isolation suite guards the verbatim state text and that
+every claim slug resolves to a registered course, but the *is-this-still-taught* judgment is yours.
 
 Standards a course meets render **on the course page, under the description**, as a collapsed
 `<details>` summarising the count and jurisdictions, linking to `/academic-standards?course=<slug>`

@@ -10,6 +10,7 @@
     "check:em-dashes": "tsx scripts/check-em-dashes.ts",
     "check:recall": "tsx scripts/check-recall-placement.ts",
     "check:standards": "tsx scripts/check-standards-coverage.ts",
+    "standards:for": "tsx scripts/standards-for-course.ts",
     "check:quiz-balance": "tsx scripts/check-quiz-balance.ts",
     "check:longest-option": "tsx scripts/check-longest-option.ts",
     "typecheck": "next typegen && tsc --noEmit",
