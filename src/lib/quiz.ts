@@ -70,7 +70,13 @@ export function toSafeQuiz(content: QuizContent): {
     })),
     passingScore: content.passingScore,
     questionsPerAttempt: questionsToServe(content),
-    shuffleOptions: content.shuffleOptions,
+    // Shuffle by DEFAULT, so a retake never shows the correct answer in the same slot it was last
+    // time (a learner who saw it at "C" cannot coast on position). Scoring is by original index
+    // server-side and questionKey is prompt-derived, so shuffling changes no score and no history.
+    // A bank opts OUT only with an explicit `shuffleOptions: false`, reserved for the rare question
+    // whose options must keep a fixed order; the catalog avoids positional options ("all of the
+    // above", "A and B") as an authoring rule, so that case is essentially theoretical here.
+    shuffleOptions: content.shuffleOptions ?? true,
   };
 }
 

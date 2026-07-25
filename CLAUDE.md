@@ -79,7 +79,13 @@ Two guards in `pnpm lint` protect the same thing from two directions, and a quiz
 measuring test-taking rather than learning (which also corrupts every dashboard average built on it):
 
 - `check-quiz-balance.ts` — the **position** tell. Fix by adding `shuffleOptions: true`. Cheap and
-  content-preserving.
+  content-preserving. **Shuffle is now the default** (`toSafeQuiz` in `src/lib/quiz.ts` serves
+  `shuffleOptions ?? true`), so every attempt AND every retake re-orders a question's options and the
+  correct answer never sits in the same slot twice — scoring is by original index, so no score or
+  history changes. A bank opts out only with an explicit `shuffleOptions: false`, reserved for a
+  question whose options must keep a fixed order; the catalog avoids positional options ("all of the
+  above", "A and B"), so that is essentially theoretical. The static guard still wants the explicit
+  flag on skewed banks as defense-in-depth.
 - `check-longest-option.ts` — the **length** tell: the right answer collects the qualifier and the
   "because" clause while the distractors stay short, so a learner can click the longest option
   without reading. **`shuffleOptions` does NOT fix this** — length travels with the option text.
