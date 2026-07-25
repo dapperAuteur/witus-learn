@@ -130,10 +130,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "What makes Chile's labor system different in KIND from every other system in the Workers' Rights track?",
             options: [
-              "It is the oldest labor system in the Americas",
-              "It was deliberately designed as a coherent package (the 1979 Plan Laboral) by a named author with a stated goal, rather than evolving",
-              "It has the highest union density in the OECD",
-              "It was written by the ILO",
+              "It is the oldest continuously codified labor code of any nation in all of the Americas",
+              "It was deliberately designed as a coherent 1979 package by a named author, not evolved",
+              "It currently posts the highest union density anywhere in the OECD, at Nordic-style levels",
+              "It was drafted for Chile by the ILO in Geneva and then adopted essentially wholesale",
             ],
             correctIndex: 1,
             explanation:
@@ -143,10 +143,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "Who was José Piñera, in this story?",
             options: [
-              "The general who led the 1973 coup",
-              "The Harvard-trained economist appointed Pinochet's Minister of Labor at age 30, who wrote the 1979 Plan Laboral and published a book defending it",
-              "Chile's first labor union president",
-              "The author of the 2016 labor reform",
+              "The senior army general who planned and then led the 1973 military coup against Allende",
+              "The economist Pinochet named Minister of Labor at 30, who wrote and still defends the Plan Laboral",
+              "Chile's first national union-federation president, murdered by soldiers in the days after the coup",
+              "The center-left minister who drafted and steered Chile's 2016 collective-bargaining reform law",
             ],
             correctIndex: 1,
             explanation:
@@ -156,10 +156,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "What is the central architectural rule of Chile's labor system, from 1979 to today?",
             options: [
-              "Collective bargaining happens at the national level, once a year",
-              "Collective bargaining is confined by law to the single firm, sectoral bargaining is not part of the legal architecture",
-              "Only the government may negotiate wages",
-              "Strikes are constitutionally guaranteed at all levels",
+              "Collective bargaining is centralised at the national level and renewed once each year",
+              "Collective bargaining is confined by law to the single firm, never the industry or sector",
+              "Only a national wage board may set private pay, by binding government decree each year",
+              "Strikes are guaranteed by the 1980 constitution at every level of bargaining alike",
             ],
             correctIndex: 1,
             explanation:
@@ -182,10 +182,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "How does Chile's bargaining coverage compare with the OECD average?",
             options: [
-              "It is roughly double the OECD average",
-              "About 19.3% (2023) against an OECD average of about 33.5% (2023/24), among the lowest in the OECD",
-              "It exactly matches the OECD average",
-              "The OECD does not measure Chile",
+              "It runs at roughly double the OECD average, sitting near the very top of the ranking",
+              "About 19.3% (2023) against an OECD average near 33.5%, among the lowest in the OECD",
+              "It sits almost exactly at the OECD-wide average of about 33.5% for the 2023-24 period",
+              "The OECD does not actually measure Chilean bargaining coverage anywhere in its dataset",
             ],
             correctIndex: 1,
             explanation:
@@ -195,10 +195,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "Why does the course insist the designers 'get their say' (the steelman) before the effects are measured?",
             options: [
-              "Because the course endorses the Plan Laboral",
-              "Because a course that only prosecutes is propaganda, the Plan has a serious published defense by its author, and education means hearing it, then checking it against evidence",
-              "Because Chilean law requires it",
-              "Because the effects are unknown",
+              "Because the course fully endorses the Plan Laboral and every one of its stated aims",
+              "Because a course that only prosecutes is propaganda: hear the real defense, then test it",
+              "Because Chilean law compels any published critic to print the government's reply first",
+              "Because the Plan Laboral's real effects on workers were, in truth, never once measured",
             ],
             correctIndex: 1,
             explanation:
@@ -208,10 +208,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "What happened at the Santa María School in Iquique on 21 December 1907?",
             options: [
-              "A mining accident killed nitrate workers",
-              "Troops under General Silva Renard opened fire on striking nitrate workers and their families who were quartered at the school",
-              "The CUT was founded there",
-              "The first collective agreement in Chile was signed there",
+              "A dynamite blast in the nearby nitrate works killed hundreds of the striking mine workers",
+              "Troops under General Silva Renard opened fire on striking nitrate workers at the school",
+              "The CUT national union confederation was founded there by the assembled nitrate strikers",
+              "Chile's first legally recognised collective wage agreement was signed at the school that day",
             ],
             correctIndex: 1,
             explanation:
@@ -221,10 +221,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "What is true about the death toll at Santa María de Iquique?",
             options: [
-              "It is precisely documented at 3,600",
-              "It is genuinely contested, official counts said around 126, social memory (via the 1969 Cantata) says 3,600, and historians treat the truth as unknown but well above the official count",
-              "It is precisely documented at 30",
-              "No one died; the strike ended peacefully",
+              "It is precisely documented at exactly 3,600 in the Chilean army's own official casualty register",
+              "It is genuinely contested: official counts near 126, the 1969 Cantata says 3,600, truth unknown",
+              "It is precisely documented at exactly 30, the toll named in the first telegram to the president",
+              "No one was killed at the school at all; the nitrate strike ended in a peaceful settlement",
             ],
             correctIndex: 1,
             explanation:
@@ -234,10 +234,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "What fixed the figure of 3,600 dead in Chilean social memory?",
             options: [
-              "The official government report of 1908",
+              "The official Chilean government massacre report published in 1908",
               "The Cantata de Santa María de Iquique, composed by Luis Advis in 1969",
-              "The Rettig Report",
-              "The 1979 Plan Laboral",
+              "The Rettig truth-commission report on the dictatorship, issued in 1991",
+              "The Plan Laboral decree laws written by José Piñera back in 1979",
             ],
             correctIndex: 1,
             explanation:
@@ -247,10 +247,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "What was the CUT?",
             options: [
-              "A copper mining company",
+              "A large state-owned nitrate and copper mining company operating in the northern desert",
               "The Central Única de Trabajadores, Chile's single national union center, founded in 1953",
-              "A government labor inspectorate",
-              "An employers' confederation",
+              "A government labor inspectorate that policed the unions and set wages by official decree",
+              "The national employers' confederation that bargained against the country's trade unions",
             ],
             correctIndex: 1,
             explanation:
@@ -273,10 +273,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "Which THREE properties of the pre-1973 movement does the course say the 1979 design reads as a negation of?",
             options: [
-              "Rural, informal, and apolitical",
-              "Centralised (one confederation), industrially organised (sectors like copper bargaining as one), and politically consequential",
-              "Foreign-led, illegal, and violent",
-              "Small, fragmented, and firm-level",
+              "That it was rural, only informally organised, and largely apolitical in its whole character",
+              "That it was centralised (one confederation), sectoral (copper as one), and politically strong",
+              "That it was foreign-led, formally illegal under Chilean law, and reliant on armed violence",
+              "That it was small, fragmented into firm-sized units, and locked tightly at the single firm",
             ],
             correctIndex: 1,
             explanation:
@@ -286,10 +286,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "Where was Chile's labor movement born?",
             options: [
-              "In Santiago's textile mills",
-              "In the northern nitrate fields, the pampa salitrera, in the late 1800s",
-              "In the southern fisheries",
-              "In the vineyards of the central valley",
+              "In the crowded textile mills and metalworking factories of central Santiago",
+              "In the northern nitrate fields, the pampa salitrera, back in the late 1800s",
+              "In the salmon fisheries and fish-canning plants along the southern coast",
+              "In the vineyards and the large fruit estates of Chile's central valley",
             ],
             correctIndex: 1,
             explanation:
@@ -299,10 +299,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "Under the ORIGINAL 1979 rules, what could happen to you for striking too long (Question 4)?",
             options: [
-              "Nothing, strikes had no time limit",
-              "A long strike could legally end your employment, and employers could replace strikers, rules that stood until the 2017 reform took effect",
-              "You would be imprisoned automatically",
-              "The state would pay your wages",
+              "Nothing at all, because the original 1979 rules set no time limit on a lawful strike",
+              "A long strike could legally end your job: after 59 days you were deemed to have resigned",
+              "You were automatically jailed by the special labor courts for taking part in the strike",
+              "The state stepped in and paid your full wages for the whole duration of the strike",
             ],
             correctIndex: 1,
             explanation:
@@ -312,10 +312,10 @@ That is what stood on 10 September 1973. Keep the shape of it in mind, centralis
           {
             prompt: "Who is EXCLUDED, above all, in Chile's system (Question 2 preview)?",
             options: [
-              "Public-sector managers",
-              "Subcontracted workers, placed outside the bargaining unit by contracting structure, plus the informal",
-              "Mining workers",
-              "University graduates",
+              "Public-sector managers and senior civil servants earning above a defined salary grade line",
+              "The subcontracted, placed outside the bargaining unit by contracting structure, plus the informal",
+              "Copper and nitrate miners, whom the special mining code barred outright from forming unions",
+              "University graduates, shut out of union membership during their first years of employment",
             ],
             correctIndex: 1,
             explanation:
@@ -413,10 +413,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "What happened on 11 September 1973 in Chile?",
             options: [
-              "The Plan Laboral was announced",
-              "The armed forces overthrew the elected government; President Allende died in the bombed presidential palace; a junta under Pinochet took power",
-              "The CUT was founded",
-              "Chile joined the OECD",
+              "The 1979 Plan Laboral labor code was formally announced to the Chilean public that day",
+              "The armed forces overthrew Allende's elected government and a Pinochet junta seized power",
+              "The CUT national union confederation was founded by the copper and nitrate workers' unions",
+              "Chile was formally admitted to the OECD as its newest Latin American member country",
             ],
             correctIndex: 1,
             explanation:
@@ -426,10 +426,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "By what instrument was the CUT dissolved?",
             options: [
-              "A plebiscite",
-              "Decree Law No. 12 (September 1973), which cancelled its legal status, outlawed it, and seized its assets",
-              "The Plan Laboral of 1979",
-              "A ruling of the Supreme Court",
+              "A binding national plebiscite held under the terms of the earlier 1925 constitution",
+              "Decree Law No. 12 (September 1973), which cancelled its legal status and seized its assets",
+              "The 1979 Plan Laboral, whose Decree Law 2758 dissolved the national confederation",
+              "A formal ruling by Chile's Supreme Court declaring the union confederation unlawful",
             ],
             correctIndex: 1,
             explanation:
@@ -439,10 +439,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "What was the state of collective bargaining in Chile from 1973 to 1979?",
             options: [
-              "It continued normally at the firm level",
-              "It did not function at all, bargaining was suspended, union elections banned, and wages set by government decree",
-              "It moved to the sectoral level",
-              "It was administered by the ILO",
+              "It continued much as normal, negotiated firm by firm at the ordinary enterprise level",
+              "It did not function at all: bargaining suspended, elections banned, wages set by decree",
+              "It shifted up to the sector level and was centrally coordinated by the state itself",
+              "It was administered directly by the ILO in Geneva on the military junta's behalf",
             ],
             correctIndex: 1,
             explanation:
@@ -452,10 +452,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "What did Chile's Rettig Commission and its successor document?",
             options: [
-              "That no one was killed under the dictatorship",
-              "More than 3,000 people killed or disappeared by agents of the dictatorship, findings of the Chilean state's own truth commissions",
-              "Only economic statistics",
-              "The results of the 1988 plebiscite",
+              "That not a single person was killed or forcibly disappeared during the dictatorship's years",
+              "More than 3,000 people killed or disappeared by the dictatorship, findings of the Chilean state",
+              "Only economic statistics on national growth, inflation, and the country's copper output",
+              "The complete vote totals and turnout figures from the October 1988 national plebiscite",
             ],
             correctIndex: 1,
             explanation:
@@ -465,10 +465,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "Who was Tucapel Jiménez?",
             options: [
-              "The author of the Plan Laboral",
-              "The president of the public employees' association ANEF, murdered by state intelligence agents in 1982, a crime for which Chilean courts later convicted the perpetrators",
-              "The general who led the 1973 coup",
-              "Chile's first labor minister after 1990",
+              "The free-market economist who drafted the 1979 Plan Laboral labor code for the regime",
+              "The president of the ANEF public-employee association, murdered by state agents in 1982",
+              "The senior army general who planned and then led the coup of September 1973 in Chile",
+              "Chile's first labor minister appointed after the country's return to democracy in 1990",
             ],
             correctIndex: 1,
             explanation:
@@ -478,10 +478,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "Why does the course warn 'do not let the numbers do the flattening'?",
             options: [
-              "Because the numbers are invented",
-              "Because repression fell on the whole society, and the labor movement was not merely a victim, copper miners called the first mass national protest against the regime in May 1983",
-              "Because statistics are always misleading",
-              "Because the union movement collaborated with the regime",
+              "Because the dictatorship's casualty numbers were invented and cannot really be trusted",
+              "Because repression fell on the whole society, and miners still called the first protest in 1983",
+              "Because statistics on political violence are, as a rule, always fundamentally misleading",
+              "Because the trade-union movement had openly collaborated with the military regime throughout",
             ],
             correctIndex: 1,
             explanation:
@@ -491,10 +491,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "What foreign pressure pushed the dictatorship toward writing a labor code in 1979?",
             options: [
-              "A United Nations invasion",
-              "A threatened commercial boycott of Chilean exports by the AFL-CIO and international transport unions, longshoremen refusing Chilean cargo",
-              "An OECD membership requirement",
-              "Pressure from the Soviet Union",
+              "A United Nations peacekeeping force that landed at Chile's main Pacific export ports",
+              "A threatened commercial boycott by the AFL-CIO and transport unions refusing Chilean cargo",
+              "An OECD membership rule that required Chile to legalise its trade unions before entry",
+              "Direct diplomatic and trade pressure applied on the junta by the Soviet Union and its bloc",
             ],
             correctIndex: 1,
             explanation:
@@ -504,10 +504,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "What was the Grupo de los Diez?",
             options: [
-              "The military junta's economic team",
-              "A group of surviving Chilean union leaders who kept pressing the regime on labor rights and connected with the international labor movement",
-              "Ten companies exempted from the labor code",
-              "The drafting committee of the 1980 Constitution",
+              "The military junta's small team of free-market economic and monetary policy advisors",
+              "Surviving Chilean union leaders who pressed the regime and reached the labor movement abroad",
+              "Ten large copper and fruit export firms granted a special exemption from the labor code",
+              "The drafting committee that wrote the dictatorship's 1980 Constitution for the regime",
             ],
             correctIndex: 1,
             explanation:
@@ -517,10 +517,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "What was José Piñera's mission when appointed Minister of Labor at the end of 1978?",
             options: [
-              "To restore the 1973 labor system",
-              "To stop the boycott and build new labor institutions, which became the 1979 Plan Laboral, after whose announcement the AFL-CIO suspended the boycott",
-              "To negotiate Chile's entry into the ILO",
-              "To dissolve the remaining unions permanently",
+              "To restore the pre-1973 labor system and re-legalise the dissolved CUT confederation",
+              "To stop the boycott and build new labor institutions, which became the 1979 Plan Laboral",
+              "To negotiate Chile's formal entry into the International Labour Organization in Geneva",
+              "To dissolve each remaining trade union in the whole country on a permanent legal basis",
             ],
             correctIndex: 1,
             explanation:
@@ -530,10 +530,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "What is 'half one' of the boycott story, the part that is genuinely good news?",
             options: [
-              "The boycott failed completely",
-              "International labor solidarity worked: pressure from workers in other countries forced a dictatorship to restore legal unions and bargaining within months",
-              "The regime voluntarily liberalised",
-              "The ILO imposed sanctions",
+              "That the threatened export boycott quietly collapsed and in the end failed completely",
+              "International solidarity worked: foreign pressure forced the regime to restore legal unions",
+              "That the military regime chose to liberalise its labor law entirely on its own initiative",
+              "That the ILO in Geneva responded by imposing formal trade sanctions on the whole of Chile",
             ],
             correctIndex: 1,
             explanation:
@@ -543,10 +543,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "What is 'half two', the catch?",
             options: [
-              "The boycott was never real",
-              "The regime turned compliance into architecture: it wrote a NEW code that met the formal demand while deliberately engineering organised labor's weakness, the boycott forced A labor law; the dictatorship chose WHICH one",
-              "The AFL-CIO wrote the Plan Laboral",
-              "The old system was restored unchanged",
+              "That the threatened export boycott was never real and carried no genuine leverage at all",
+              "The regime turned compliance into architecture: a new code that engineered labor's weakness",
+              "That the AFL-CIO in Washington itself wrote the actual text of the Plan Laboral for Chile",
+              "That the pre-1973 labor system was simply restored, entirely unchanged and fully intact",
             ],
             correctIndex: 1,
             explanation:
@@ -556,10 +556,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "Within the regime, what was the actual alternative to the Plan Laboral?",
             options: [
-              "A Nordic-style sectoral system",
-              "Nothing, junta hardliners wanted no independent unions at all, indefinitely; Piñera's legalise-but-atomise design won that internal argument",
-              "Restoring the CUT",
-              "Joining a US-style NLRB system",
+              "A Nordic-style sectoral bargaining system built around a few strong national federations",
+              "Nothing: hardliners wanted no independent unions at all, so the legalise-but-atomise design won",
+              "Completely restoring the dissolved CUT confederation with all of its pre-coup legal powers",
+              "Adopting a US-style national labor relations board to supervise all the union elections",
             ],
             correctIndex: 1,
             explanation:
@@ -569,10 +569,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "Who was Víctor Jara?",
             options: [
-              "A junta economist",
-              "The singer-songwriter of the labor and student movements, detained, tortured, and killed in the Estadio Chile days after the coup, with former officers convicted decades later",
-              "The leader of the Grupo de los Diez",
-              "The first president of the new CUT in 1988",
+              "A prominent free-market economist serving on the military junta's advisory policy team",
+              "The singer of the labor movements, killed at the Estadio Chile, with officers later convicted",
+              "The veteran union leader who founded and then led the dissident Grupo de los Diez group",
+              "The first elected president of the newly re-founded CUT confederation in the year 1988",
             ],
             correctIndex: 1,
             explanation:
@@ -582,10 +582,10 @@ One more piece of context you need before Section 3, because it is part of the h
           {
             prompt: "Why could the dictatorship not simply keep the labor-law vacuum forever?",
             options: [
-              "The 1980 Constitution forbade it",
-              "It presented itself abroad as modernizing, ran an export economy exposed to foreign union action, and by 1978 faced a concrete boycott threat, a labor market with no labor law was untenable",
-              "The junta lost a plebiscite on the question",
-              "The ILO expelled Chile",
+              "The dictatorship's own 1980 Constitution expressly forbade leaving the vacuum in place",
+              "It looked modernizing abroad, ran an export economy, and faced a real 1978 boycott threat",
+              "The junta lost a binding national plebiscite held specifically on the labor-law question",
+              "The International Labour Organization in Geneva formally expelled Chile over the vacuum",
             ],
             correctIndex: 1,
             explanation:
@@ -594,7 +594,12 @@ One more piece of context you need before Section 3, because it is part of the h
           },
           {
             prompt: "When the copper miners' confederation called the first mass national protest against the regime, what year was it?",
-            options: ["1974", "1983", "1990", "2006"],
+            options: [
+              "1974",
+              "1983",
+              "1990",
+              "2006",
+            ],
             correctIndex: 1,
             explanation:
               "May 1983, the call that grew into the mid-1980s protest cycle, and proof the movement was an actor in the story, not only a victim.",
@@ -740,9 +745,9 @@ That is a real case. It is made by serious people, it contains true statements, 
             prompt: "Which two 1979 decree laws carry the Plan Laboral's collective architecture?",
             options: [
               "DL 2756 (union organisations) and DL 2758 (collective bargaining)",
-              "DL 12 and DL 2200",
-              "Ley 20.940 and Ley 20.123",
-              "The Wagner Act and Taft-Hartley",
+              "Decree Law No. 12 of 1973 and the individual-contract law DL 2200",
+              "Ley 20.940 of 2016 and the subcontracting law, Ley 20.123 of 2006",
+              "The US Wagner Act of 1935 and the Taft-Hartley Act passed in 1947",
             ],
             correctIndex: 0,
             explanation:
@@ -752,10 +757,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "At what level did DL 2758 lock collective bargaining?",
             options: [
-              "The national level",
-              "The single firm, with federations and confederations barred from bargaining for their members",
-              "The industry level",
-              "The regional level",
+              "At the national level, in a single annual round covering every sector of the economy",
+              "At the single firm, with federations and confederations barred from bargaining for members",
+              "At the industry level, sector by sector, coordinated centrally by the Labor Ministry",
+              "At the regional level, with one negotiation held per province in each calendar year",
             ],
             correctIndex: 1,
             explanation:
@@ -765,10 +770,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "How did the Plan Laboral use union PLURALISM?",
             options: [
-              "It banned having more than one union per firm",
-              "It allowed multiple competing unions inside one firm, with voluntary dues, multiplying organisations while dividing their power",
-              "It required all unions to join one confederation",
-              "It made union membership mandatory",
+              "It flatly banned any single firm from having more than one recognised union at a time",
+              "It allowed multiple competing unions inside one firm, dividing the workers' bargaining power",
+              "It required every union in the whole country to affiliate with one national confederation",
+              "It made union membership legally compulsory for every worker employed at a given firm",
             ],
             correctIndex: 1,
             explanation:
@@ -778,10 +783,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "What are 'grupos negociadores'?",
             options: [
-              "Government mediators",
-              "Ad hoc groups of workers, not unions, allowed by DL 2758 to bargain collectively, giving the union a non-union competitor inside the firm",
-              "Employer associations",
-              "The junta's economic advisors",
+              "Government-appointed mediators tasked with settling collective bargaining disputes",
+              "Ad hoc groups of workers, not unions, allowed by DL 2758 to bargain as the union's rival",
+              "Employers' associations that bargained on behalf of an entire sector of the economy",
+              "The military junta's inner circle of free-market economic policy and monetary advisors",
             ],
             correctIndex: 1,
             explanation:
@@ -791,10 +796,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "Why was bargaining timing staggered firm by firm?",
             options: [
-              "To reduce paperwork at the labor inspectorate",
-              "So negotiations across an industry never came due together, foreclosing even informal sectoral coordination",
-              "To align all contracts with the fiscal year",
-              "It was an accident of drafting",
+              "To cut down on the paperwork at the labor inspectorate and speed up official filings",
+              "So an industry's negotiations never fell due together, foreclosing informal coordination",
+              "To line every firm's collective contract up neatly with the government's fiscal year",
+              "It was simply an unplanned side effect of hasty and careless drafting by the authors",
             ],
             correctIndex: 1,
             explanation:
@@ -804,10 +809,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "What were the Plan Laboral's declared pillars, per the scholarship?",
             options: [
-              "Sectoral bargaining, strike pay, union monopoly, political unions",
-              "Firm-level bargaining; strikes that do not paralyse; union pluralism ('freedom'); union depoliticisation",
-              "Nationalisation, indexation, central planning, full employment",
-              "Co-determination, works councils, Ghent funds, flexicurity",
+              "Sectoral bargaining, guaranteed strike pay, a single union monopoly, and political unions",
+              "Firm-level bargaining; strikes that don't paralyse; union pluralism; union depoliticisation",
+              "Nationalisation, wage indexation, central economic planning, and guaranteed full employment",
+              "Co-determination, elected works councils, Ghent unemployment funds, and Nordic flexicurity",
             ],
             correctIndex: 1,
             explanation:
@@ -817,10 +822,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "Under the original DL 2758, what could the employer do during a legal strike?",
             options: [
-              "Nothing, operations had to stop",
-              "Hire replacement workers so production continued, and answer with a lockout",
-              "Only negotiate through the Labor Ministry",
-              "Pay double wages to strikers",
+              "Nothing whatever, because by law the struck firm's operations simply had to shut down",
+              "Hire replacement workers so production continued, and answer the strike with a lockout",
+              "Only bargain through the Labor Ministry's official government mediation service office",
+              "Pay the striking workers double their normal wages until the dispute was fully resolved",
             ],
             correctIndex: 1,
             explanation:
@@ -830,10 +835,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "What was the '59-day rule' in the original DL 2758?",
             options: [
-              "Strikes had to be announced 59 days in advance",
-              "After 59 days on strike, a worker was deemed by law to have voluntarily resigned",
-              "Employers had 59 days to respond to demands",
-              "Contracts lasted 59 months",
+              "Any legal strike had to be formally announced a full 59 days before it could commence",
+              "After 59 days on strike, a worker was deemed by law to have voluntarily resigned the job",
+              "Employers were granted a full 59 days in which to answer the union's list of demands",
+              "Every collective contract was fixed by statute to run for a term of exactly 59 months",
             ],
             correctIndex: 1,
             explanation:
@@ -843,10 +848,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "What is the American mirror of Chile's striker-replacement rule?",
             options: [
-              "There is none, replacement is unlawful in the US",
-              "NLRB v. Mackay Radio (1938): permanent replacement of economic strikers has been lawful in the US for most of a century, used in earnest after PATCO (1981)",
-              "The Wagner Act banned strikes entirely",
-              "The US requires strikes to end after 59 days",
+              "There is none at all, since replacing striking workers has always been unlawful in the US",
+              "NLRB v. Mackay Radio (1938): permanent replacement of economic strikers, used after PATCO",
+              "The Wagner Act of 1935, which is what banned strikes across the whole US labor market",
+              "A US federal rule that forces every strike to end automatically after 59 days on the line",
             ],
             correctIndex: 1,
             explanation:
@@ -856,10 +861,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "What is 'the sophisticated modern way to remove a right,' per this section?",
             options: [
-              "Prohibit it in the constitution",
-              "Keep it formally available while engineering its failure, the strike stays legal and cannot win",
-              "Delegate it to the courts",
-              "Put it to a referendum",
+              "Write the right straight out of the national constitution and then forbid it entirely",
+              "Keep it formally available while engineering its failure: the strike stays legal, cannot win",
+              "Hand the whole question over to the ordinary courts, to be decided quietly case by case",
+              "Put the right itself to a binding, one-off national referendum of the whole electorate",
             ],
             correctIndex: 1,
             explanation:
@@ -869,10 +874,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "Which of these is Piñera's OWN summary of the Plan Laboral's achievements?",
             options: [
-              "It restored union freedom and democracy, introduced firm-level bargaining, depoliticised the union world, achieved social peace, and set conditions for full employment",
-              "It abolished unions permanently",
-              "It created Nordic-style sectoral bargaining",
-              "It was written by the AFL-CIO",
+              "It restored union freedom, brought in firm-level bargaining, and depoliticised the unions",
+              "It abolished trade unions right across Chile on a permanent and nationwide legal basis",
+              "It created a Nordic-style system of sectoral, industry-wide collective wage bargaining",
+              "It was drafted for Chile by the AFL-CIO and the transport unions abroad in Washington",
             ],
             correctIndex: 0,
             explanation:
@@ -882,10 +887,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "What is the serious economic argument FOR firm-level bargaining?",
             options: [
-              "It maximises strike frequency",
-              "Wages negotiated at the firm track what that firm can pay, so marginal firms and their workers aren't priced out by sector-wide deals struck by the strongest firms",
-              "It guarantees equal pay across an industry",
-              "It requires no unions at all",
+              "That firm-level bargaining maximises the total number of strikes a labor market produces",
+              "Wages set at the firm track what that firm can pay, so marginal firms aren't priced out",
+              "That firm-level bargaining guarantees identical pay for every worker across an industry",
+              "That firm-level bargaining lets a whole labor market function with no trade unions at all",
             ],
             correctIndex: 1,
             explanation:
@@ -895,10 +900,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "What is the course's key reply to that economic argument, as applied to Chile?",
             options: [
-              "Firm-level bargaining is always wrong",
-              "Firm-level as an option workers choose is one thing; as a legal ceiling workers were FORBIDDEN to bargain past, imposed by a dictatorship, never voted on, it is another. And the OECD (2025) finds the result atomised, with coverage ~19.3% (2023)",
-              "Sectoral bargaining has no downsides anywhere",
-              "The Nordic model also forbids sectoral bargaining",
+              "That firm-level bargaining is simply always the wrong choice, everywhere and for everyone",
+              "As a level workers were legally forbidden to pass, imposed by a dictatorship, never voted on",
+              "That sectoral bargaining, by contrast, carries no real downsides whatsoever in any country",
+              "That the Nordic model likewise forbids its own workers from ever bargaining at the sector level",
             ],
             correctIndex: 1,
             explanation:
@@ -908,10 +913,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "Why does the course reject 'social peace in the private sector, 1979-1990' as vindication?",
             options: [
-              "Because there were constant strikes in the 1980s",
-              "Because peace under a dictatorship that had recently killed union leaders is suppression, which reads as peace in any ledger",
-              "Because social peace is undesirable",
-              "Because the claim is about the public sector",
+              "Because there were in fact constant, disruptive strikes all through the 1980s in Chile",
+              "Because peace under a dictatorship that had recently killed union leaders is suppression",
+              "Because social peace is, in and of itself, an undesirable goal for any national economy",
+              "Because the claim in truth refers only to the Chilean public sector, not the private one",
             ],
             correctIndex: 1,
             explanation:
@@ -921,10 +926,10 @@ That is a real case. It is made by serious people, it contains true statements, 
           {
             prompt: "What is the 'attribution problem' with crediting the labor code for Chile's post-1985 boom?",
             options: [
-              "Chile had no growth after 1985",
-              "The boom followed sweeping reforms across the whole economy plus a copper cycle, so isolating the labor code's contribution is somewhere between hard and impossible",
-              "The OECD refuses to publish Chilean GDP",
-              "Growth statistics are secret",
+              "Because Chile actually recorded no economic growth of any kind at all after the year 1985",
+              "The boom followed sweeping economy-wide reforms plus a copper cycle, so isolating it is hard",
+              "Because the OECD in Paris refuses to publish any Chilean GDP figures whatsoever for review",
+              "Because all of Chile's national economic growth statistics are kept official state secrets",
             ],
             correctIndex: 1,
             explanation:
@@ -1027,10 +1032,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "What happened in Chile's October 1988 plebiscite?",
             options: [
-              "The Plan Laboral was approved by voters",
-              "Chileans voted No, setting the dictatorship's end date, with the new CUT (founded 1988) part of the campaign",
-              "A new constitution was adopted",
-              "Pinochet was re-elected for life",
+              "The 1979 Plan Laboral labor code was approved directly by the voters in the plebiscite",
+              "Chileans voted No, setting the dictatorship's end date, with the new 1988 CUT campaigning",
+              "A wholly new democratic constitution was adopted by the whole country through referendum",
+              "Pinochet was re-elected by the voters to serve as the country's president for a life term",
             ],
             correctIndex: 1,
             explanation:
@@ -1040,10 +1045,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "What is 'the more interesting half of the Chilean story,' per this course?",
             options: [
-              "That the dictatorship wrote a labor code at all",
-              "That the Plan Laboral's architecture SURVIVED the return to democracy, largely intact to this day",
-              "That Chile joined the OECD",
-              "That copper prices rose",
+              "That the dictatorship chose to sit down and write a formal labor code for Chile at all",
+              "That the Plan Laboral's architecture SURVIVED the return to democracy, still largely intact",
+              "That Chile was admitted into the OECD as a full member state in the year 2010 at last",
+              "That the world price of copper rose very sharply all through Chile's great 1980s boom",
             ],
             correctIndex: 1,
             explanation:
@@ -1053,10 +1058,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "How did the 1980 Constitution protect the labor code after 1990?",
             options: [
-              "It explicitly forbade any labor legislation",
-              "Designated senators and an engineered electoral system gave the right a Senate blocking position, where structural labor reforms died or shrank for 15+ years",
-              "It required ILO approval for reforms",
-              "It did not, the code was unprotected",
+              "It expressly forbade the Congress from passing any labor legislation of any kind at all",
+              "Designated senators and a rigged electoral system gave the right a durable Senate veto",
+              "It required the prior approval of the ILO in Geneva before any labor reform could pass",
+              "It did not protect the code in any way; the labor code was in fact left wholly unshielded",
             ],
             correctIndex: 1,
             explanation:
@@ -1066,10 +1071,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "What did the 1991 reform (Ley 19.069) do to the 59-day trapdoor?",
             options: [
-              "Extended it to 90 days",
-              "Removed it, strikes became indefinite, while striker replacement remained lawful under regulated conditions",
-              "Nothing changed until 2016",
-              "It abolished strikes entirely",
+              "It extended the strike's legal time limit outward from the old 59 days to a full 90 days",
+              "It removed the limit, so strikes became indefinite, while striker replacement stayed lawful",
+              "It changed nothing about strikes at all, which had to wait until the 2016 labor reform",
+              "It abolished the legal right to strike within the private sector across Chile entirely",
             ],
             correctIndex: 1,
             explanation:
@@ -1079,10 +1084,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "Why does the course say the design 'closed its own loop' after 1990?",
             options: [
-              "Because the junta remained in power secretly",
-              "Because the movement that might have forced structural reform had been remade small by the very rules it needed to change, atomised unions couldn't mass-mobilise for de-atomisation",
-              "Because workers preferred the Plan Laboral",
-              "Because the ILO endorsed the design",
+              "Because the military junta secretly stayed on in power for years after the 1990 handover",
+              "The movement that might have forced reform had been remade small by the very rules it faced",
+              "Because Chilean workers had, over time, come to actively prefer the Plan Laboral system",
+              "Because the ILO in Geneva had formally endorsed the dictatorship's whole labor-code design",
             ],
             correctIndex: 1,
             explanation:
@@ -1092,10 +1097,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "Which was a reason the Concertación governments (1990-2010) left the architecture largely alone?",
             options: [
-              "They were banned from legislating on labor",
-              "Their own economic teams prized stability and growth and treated the flexible labor market as part of that machine, the center had made its peace with it",
-              "The CUT asked them not to reform",
-              "The OECD forbade reform",
+              "They were legally barred outright from legislating on any labor-related questions at all",
+              "Their economic teams prized stability and growth, treating the flexible market as its engine",
+              "The CUT confederation itself had formally asked them not to reform the inherited labor code",
+              "The OECD in Paris made leaving the labor code fully intact a firm condition of Chile's entry",
             ],
             correctIndex: 1,
             explanation:
@@ -1106,9 +1111,9 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
             prompt: "When was Ley 20.940 published, and when did it take effect?",
             options: [
               "Published 8 September 2016; in force 1 April 2017",
-              "Published in 1991; in force 1992",
-              "Published 11 September 1973; in force immediately",
-              "Published 2023; in force 2028",
+              "Both drafted and in full force during 1991 and 1992",
+              "Published 11 September 1973; in force from that day on",
+              "Both signed in 2023 and set to take effect fully by 2028",
             ],
             correctIndex: 0,
             explanation:
@@ -1118,10 +1123,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "What is the 'huelga efectiva' that Ley 20.940 recognised?",
             options: [
-              "A strike limited to 59 days",
-              "The effective strike: replacing strikers is prohibited, externally or by internal reshuffling, so the struck firm actually stops",
-              "A strike that requires government permission",
-              "A symbolic one-hour strike",
+              "A special strike that is lawfully capped at a maximum length of exactly 59 days",
+              "The effective strike: replacing strikers is barred, so the struck firm actually stops",
+              "A strike that first requires formal written permission from the government to proceed",
+              "A purely symbolic one-hour warning strike that carries no real economic effect at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1131,10 +1136,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "What did Ley 20.940 change about extending union-won benefits to non-members?",
             options: [
-              "Nothing",
-              "Extension now requires the union's agreement, ending employers' unilateral practice of handing the union's wins to everyone, which had made membership look pointless",
-              "Extension became automatic and mandatory",
-              "Non-members were banned from receiving benefits forever",
+              "Nothing changed at all; the old free-extension practice was simply left fully in place",
+              "Extension now needs the union's agreement, ending employers' unilateral free extensions",
+              "Extension of the benefits to non-members became automatic and legally mandatory for all",
+              "Non-members were, from then on, permanently barred from receiving any union-won benefit",
             ],
             correctIndex: 1,
             explanation:
@@ -1144,10 +1149,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "What happened to 'titularidad sindical' in 2016?",
             options: [
-              "It became law and remains in force",
-              "The Constitutional Tribunal (9 May 2016, Rol 3016-16) struck it down before the law took effect, so non-union negotiating groups survive",
-              "The unions rejected it",
-              "It was never proposed",
+              "It became law during the 2016 reform and has remained fully in force ever since that year",
+              "The Constitutional Tribunal (9 May 2016) struck it down before the law even took effect",
+              "The trade unions themselves rejected it outright during the reform's passage in Congress",
+              "It was never actually proposed at any point during the whole 2016 labor reform process",
             ],
             correctIndex: 1,
             explanation:
@@ -1157,10 +1162,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "Did Ley 20.940 establish sectoral bargaining?",
             options: [
-              "Yes, Chile now bargains by industry",
-              "No, bargaining stayed at the firm level, and the OECD's 2025 review still describes the system as firm-level, fragmented, and uncoordinated",
-              "Yes, but only for mining",
-              "Sectoral bargaining was already legal since 1979",
+              "Yes, Chile from then on bargained by industry and by sector right across the economy",
+              "No, bargaining stayed at the firm; the OECD in 2025 still calls the system fragmented",
+              "Yes, but the sectoral bargaining was in fact set up only for the copper-mining industry",
+              "Sectoral bargaining had, in reality, already been legal in Chile ever since back in 1979",
             ],
             correctIndex: 1,
             explanation:
@@ -1170,10 +1175,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "What is the repeating pattern across 1991, 2001, and 2016?",
             options: [
-              "Each reform abolished and then restored the labor code",
-              "Democratic Chile has repeatedly softened the Plan Laboral's PENALTIES while proving unable, so far, to touch its ARCHITECTURE, the firm-level cage outlasts every rule inside it",
-              "Each reform strengthened the dictatorship's rules",
-              "No reform ever passed",
+              "Each successive reform first abolished, and then fully restored, the whole labor code",
+              "Democratic Chile keeps softening the Plan's penalties but never touches its architecture",
+              "Each successive reform further tightened and strengthened the dictatorship's own rules",
+              "No labor reform of any real kind ever actually passed in Chile after the year 1990",
             ],
             correctIndex: 1,
             explanation:
@@ -1183,10 +1188,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "What does the 2023 workweek law (Ley 21.561) illustrate, in this course's framing?",
             options: [
-              "That the architecture has finally changed",
-              "That reform continues at the margins, hours phased from 45 to 40 by 2028, while the bargaining architecture remains untouched: hours, not architecture",
-              "That Chile abolished the Código del Trabajo",
-              "That strikes are banned again",
+              "That the Plan Laboral's core bargaining architecture has, at long last, finally changed",
+              "Reform still moves at the margins: hours phased 45 to 40 by 2028, architecture untouched",
+              "That Chile has entirely repealed and then replaced its whole Código del Trabajo labor code",
+              "That strikes have, once again, been banned right across the whole of the private sector",
             ],
             correctIndex: 1,
             explanation:
@@ -1196,10 +1201,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "On what grounds did the Constitutional Tribunal strike union titularity?",
             options: [
-              "Fiscal cost",
-              "Freedom of association, including the freedom NOT to be represented by the union",
-              "Conflict with the ILO constitution",
-              "A drafting typo",
+              "The heavy fiscal cost that establishing union titularity would have imposed on the state",
+              "Freedom of association, including the freedom NOT to be represented by the union at all",
+              "A direct conflict with the wording of the ILO's own founding constitution over in Geneva",
+              "A simple drafting typo that the tribunal claimed to find buried in the reform's wording",
             ],
             correctIndex: 1,
             explanation:
@@ -1209,10 +1214,10 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
           {
             prompt: "What habit does Section 4 teach for reading institutions that outlive their creators?",
             options: [
-              "Assume consensus explains survival",
-              "Ask what was constitutionally locked, who benefited from the lock, and whether the people harmed retained the organised power to force it open",
-              "Assume inertia explains everything",
-              "Check only economic statistics",
+              "Assume that a broad political consensus is simply what explains the institution's survival",
+              "Ask what was locked, who gained from the lock, and whether the harmed kept power to resist",
+              "Assume that plain institutional inertia is what explains the whole of its long survival",
+              "Look only at the economic growth statistics drawn from the relevant years of the period",
             ],
             correctIndex: 1,
             explanation:
@@ -1316,9 +1321,9 @@ You have seen this move before, in country after country, and now it has a famil
             prompt: "What was Chile's union density in 2023 (OECD/AIAS), and how does it compare to the OECD average?",
             options: [
               "About 16%, slightly ABOVE the OECD average of 15.1%",
-              "About 34%, double the OECD average",
-              "About 5%, the OECD's lowest",
-              "About 65%, Nordic levels",
+              "About 34%, roughly double the current OECD average",
+              "About 5%, the very lowest density in the whole OECD",
+              "About 65%, up at Nordic Ghent-system density levels",
             ],
             correctIndex: 0,
             explanation:
@@ -1328,10 +1333,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "What was Chile's collective bargaining coverage in 2023, and where does it rank?",
             options: [
-              "About 19.3%, among the lowest in the OECD (average ~33.5%, 2023/24)",
-              "About 49%, near Germany's",
-              "About 88%, near Sweden's",
-              "About 33.5%, exactly the OECD average",
+              "About 19.3%, among the lowest in the OECD (average ~33.5%)",
+              "About 49%, roughly level with Germany's coverage rate",
+              "About 88%, roughly level with Sweden's coverage rate",
+              "About 33.5%, sitting exactly at the OECD-wide average",
             ],
             correctIndex: 0,
             explanation:
@@ -1341,10 +1346,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "What is the 'fingerprint of bargaining level'?",
             options: [
-              "The absolute number of unions in a country",
-              "The GAP between coverage and density, sectoral systems show coverage towering over membership (Germany: 14.1% vs ~49%); firm-only Chile shows a ~3-point gap",
-              "The number of strikes per year",
-              "The minimum wage level",
+              "The sheer absolute number of separate trade unions counted within a given single country",
+              "The GAP between coverage and density: sectoral systems tower, firm-only Chile shows ~3 points",
+              "The total count of strikes that a national labor market records over the course of a year",
+              "The statutory minimum wage, measured as against the national median or average full wage",
             ],
             correctIndex: 1,
             explanation:
@@ -1354,10 +1359,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "Which democracy does Chile's density/coverage line most resemble in the comparison table?",
             options: [
-              "Sweden",
-              "The United States, low density with coverage barely above it, the profile of firm-level-only bargaining",
-              "Germany",
-              "Denmark",
+              "Sweden, with its very high union density paired to near-universal bargaining coverage",
+              "The United States: low density with coverage barely above it, the firm-level-only profile",
+              "Germany, where its broad sectoral deals cover roughly half of the national workforce",
+              "Denmark, whose Ghent-based system drives its bargaining coverage to near-universal levels",
             ],
             correctIndex: 1,
             explanation:
@@ -1367,10 +1372,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "'Chilean union density has risen since 1985', what makes this true statement misleading?",
             options: [
-              "The data is fabricated",
-              "1985 is the mid-dictatorship trough; from the 1973 peak (~34%) density is down by more than half. Whoever picks the baseline picks the story",
-              "Density actually fell since 1985",
-              "The OECD doesn't track Chile",
+              "The underlying OECD and AIAS density data reported for Chile is, in truth, fabricated",
+              "1985 is the mid-dictatorship trough; from the 1973 peak (~34%) density is down by half",
+              "Chilean union density has, in reality, been steadily falling ever since the year 1985",
+              "The OECD does not, in actual practice, track any union-density figures at all for Chile",
             ],
             correctIndex: 1,
             explanation:
@@ -1380,10 +1385,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "Which sector shows Chile's highest unionisation, at what rate?",
             options: [
-              "Retail, at 80%",
+              "Farming, at 31% of employees (2023)",
               "Mining, at 42% of employees (2023)",
-              "Agriculture, at 60%",
-              "Banking, at 90%",
+              "Retail, at 26% of employees (2023)",
+              "Banking, at 19% of employees (2023)",
             ],
             correctIndex: 1,
             explanation:
@@ -1393,10 +1398,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "In subcontratación, who is the subcontracted worker's LEGAL employer?",
             options: [
-              "The principal company whose work they do",
-              "The contractor firm, while the principal that actually controls their conditions is, legally, a stranger to them",
-              "The state",
-              "The union",
+              "The principal company whose copper they dig or whose store shelves they stock each day",
+              "The contractor firm, while the principal that controls their conditions is a legal stranger",
+              "The Chilean state itself, acting through the Dirección del Trabajo labor inspectorate",
+              "The union itself, which the law treats as the workers' formal employer of legal record",
             ],
             correctIndex: 1,
             explanation:
@@ -1406,10 +1411,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "Why does subcontracting interact so powerfully with Chile's firm-level-only rule?",
             options: [
-              "It doesn't, the two are unrelated",
-              "Because the narrower the legal bargaining unit, the more an employer gains by nudging workers just past its edge, 'which firm employs you' decides whether bargaining rights mean anything",
-              "Because subcontractors pay higher wages",
-              "Because sectoral bargaining covers subcontractors automatically",
+              "It does not interact with that rule in any real way: the two rules are entirely unrelated",
+              "The narrower the legal bargaining unit, the more an employer gains by moving workers past it",
+              "Because the subcontractor firms involved actually tend to pay noticeably higher wages",
+              "Because sectoral bargaining would automatically cover all the subcontracted staff anyway",
             ],
             correctIndex: 1,
             explanation:
@@ -1419,10 +1424,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "What is the 'put-them-outside move,' and what is Chile's version?",
             options: [
-              "Banning unions outright; Chile's version is a union ban",
-              "Redefining workers so the system no longer applies, US misclassification, Mexican protection contracts, Polish junk contracts, informality, with subcontratación as Chile's version",
-              "Deporting union organisers",
-              "Moving factories abroad",
+              "Banning trade unions outright, and Chile's own particular version of it is a full union ban",
+              "Redefining workers so the rules stop applying: US, Mexican, Polish, and now Chilean forms",
+              "Deporting the foreign-born union organisers from the country before they are able to act",
+              "Relocating entire factories, and all of their jobs, to structurally cheaper countries abroad",
             ],
             correctIndex: 1,
             explanation:
@@ -1432,10 +1437,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "What did Ley 20.123 (in force 14 January 2007) actually do?",
             options: [
-              "It banned subcontracting",
-              "It defined and regulated subcontracted work and temp-services firms, and made the principal jointly or subsidiarily liable for contractors' labor and social-security obligations",
-              "It gave subcontracted workers the right to bargain with the principal",
-              "It privatised Codelco",
+              "It banned all subcontracting arrangements right across the whole of the Chilean economy",
+              "It defined and regulated subcontracting, making the principal liable for labor obligations",
+              "It gave the subcontracted workers a right to bargain directly with the principal company",
+              "It broke up and then privatised the state-owned copper mining company, Codelco, in full",
             ],
             correctIndex: 1,
             explanation:
@@ -1445,10 +1450,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "What crucial thing did Ley 20.123 NOT do?",
             options: [
-              "It did not define subcontracting",
-              "It did not give subcontracted workers bargaining rights toward the principal company",
-              "It did not regulate temp agencies",
-              "It did not create any liability",
+              "It did not, in the end, actually define subcontracted work in any real legal terms at all",
+              "It did not give subcontracted workers any bargaining rights toward the principal company",
+              "It did not regulate any of the temporary-services staffing and labor-supply agencies",
+              "It did not create any employer liability whatsoever toward the subcontracted workers",
             ],
             correctIndex: 1,
             explanation:
@@ -1458,10 +1463,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "What happened at Codelco in 2007?",
             options: [
-              "The mine was privatised",
-              "Around 30,000 subcontracted workers struck for 37 days under the CTC and won a framework agreement (Acuerdo Marco) across Codelco's divisions",
-              "The government banned mining strikes",
-              "Codelco abolished subcontracting",
+              "The Chilean state stepped in and fully privatised the Codelco copper company that year",
+              "Around 30,000 subcontracted workers struck 37 days under the CTC and won a framework deal",
+              "The government imposed an outright legal ban on every strike in the mining sector then",
+              "Codelco itself abolished the use of all subcontracting right across its mining operations",
             ],
             correctIndex: 1,
             explanation:
@@ -1471,10 +1476,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "Why does the course call the 2007 Acuerdo Marco the sharpest irony in the course?",
             options: [
-              "Because it was negotiated by the government",
-              "Because Chile's first post-1979 approximation of SECTORAL bargaining was won by the workers the architecture most completely excluded, from outside the legal machinery entirely",
-              "Because it lasted only one week",
-              "Because it lowered wages",
+              "Because the framework agreement was quietly negotiated for the workers by the government",
+              "Chile's first post-1979 approach to SECTORAL bargaining was won by the most excluded workers",
+              "Because the resulting framework agreement in fact lasted for only a single working week",
+              "Because the deal actually ended up lowering, not raising, the copper workers' own wages",
             ],
             correctIndex: 1,
             explanation:
@@ -1484,10 +1489,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "Why does this course use OECD/AIAS figures rather than Chile's Dirección del Trabajo statistics?",
             options: [
-              "The Dirección del Trabajo publishes no statistics",
-              "For cross-country comparability, the DT's own rates run somewhat differently because the denominator differs, and the course says which measure it is using",
-              "OECD numbers are always higher",
-              "Chilean statistics are secret",
+              "Because the Dirección del Trabajo, unlike the OECD, publishes no such statistics at all",
+              "For comparability: the DT's own rates differ by denominator, so the course names its measure",
+              "Because the OECD's published figures are reliably higher than Chile's own national numbers",
+              "Because the Dirección del Trabajo deliberately keeps all of its union statistics secret",
             ],
             correctIndex: 1,
             explanation:
@@ -1497,10 +1502,10 @@ You have seen this move before, in country after country, and now it has a famil
           {
             prompt: "Chile 'does not so much have a labor movement as thousands of firm-sized labor movements.' What produced that shape?",
             options: [
-              "Worker preference for small unions",
-              "The 1979 design, pluralism-as-fragmentation plus firm-locked bargaining, whose fragmentation the OECD still documents in 2025",
-              "A 2023 law requiring small unions",
-              "The Ghent system",
+              "A genuine, freely held worker preference for very many small and independent unions",
+              "The 1979 design, pluralism-as-fragmentation plus firm-locked bargaining, still documented",
+              "A 2023 Chilean law that specifically required all unions to stay small and firm-sized",
+              "The Ghent system, which ties a worker's union membership to the unemployment funds",
             ],
             correctIndex: 1,
             explanation:
@@ -1655,10 +1660,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "On paper, what do Sweden/Denmark and Chile share in their wage-setting architecture?",
             options: [
-              "A statutory national minimum wage",
-              "Neither mandates sectoral bargaining by statute, and neither has a legal mechanism extending agreements to non-signatory firms",
-              "Ghent-system unemployment funds",
-              "A ban on all strikes",
+              "A single statutory national minimum wage, one that is set centrally by the government",
+              "Neither mandates sectoral bargaining by statute, nor extends agreements to other firms",
+              "Ghent-system unemployment insurance funds directly tied to trade-union membership",
+              "A blanket, statute-wide legal ban on strikes right across the private-sector economy",
             ],
             correctIndex: 1,
             explanation:
@@ -1668,10 +1673,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "Why is the Nordic statute silent about sectoral bargaining?",
             options: [
-              "Because sectoral bargaining is banned there",
-              "Because strong organised parties pushed the state out by treaty (1899, 1938) and built sectoral bargaining themselves, by contract, enforced with legal sympathy action",
-              "Because the EU forbids it",
-              "Because unions are too weak to demand it",
+              "Because sectoral bargaining is, in fact, outright banned right across all of the Nordics",
+              "Strong parties pushed the state out by treaty (1899, 1938) and built bargaining themselves",
+              "Because European Union law specifically forbids sectoral bargaining within Sweden today",
+              "Because the Nordic trade unions are simply far too weak to demand a sectoral level at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1681,10 +1686,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "Why is the Chilean statute silent above the firm?",
             options: [
-              "Because workers chose decentralisation in a referendum",
-              "Because DL 2758 locked bargaining to the firm and barred federations from the table, the wall's silence: it exists to stop movement",
-              "Because sectoral bargaining was never invented in Latin America",
-              "Because the ILO required it",
+              "Because the Chilean workers themselves chose decentralisation in a national referendum",
+              "DL 2758 locked bargaining to the firm and barred federations: the wall exists to block it",
+              "Because sectoral bargaining was, historically, never invented anywhere in Latin America",
+              "Because the ILO over in Geneva required Chile to bargain strictly firm by firm instead",
             ],
             correctIndex: 1,
             explanation:
@@ -1694,10 +1699,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "How do the membership 'defaults' differ between the two systems?",
             options: [
-              "Both are default-in",
-              "Nordic Ghent plumbing makes joining the path of least resistance (default-in); the Plan Laboral built default-out, voluntary dues, competing unions, a non-union alternative, and (until 2017) free extension of union wins to non-members",
-              "Both are default-out",
-              "Chile has a Ghent system",
+              "Both of these systems are default-in, so that joining a trade union is the easy path",
+              "Nordic Ghent plumbing makes joining the easy default; the Plan built default-out membership",
+              "Both of the systems are default-out, which makes union membership economically pointless",
+              "Chile in fact runs a Ghent-style system, so joining a union there is the easy default",
             ],
             correctIndex: 1,
             explanation:
@@ -1707,10 +1712,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "What is 'the most transferable sentence in the track'?",
             options: [
-              "All labor law converges over time",
-              "You cannot read a labor statute by its text alone, text tells you the rules; only provenance tells you the game",
-              "Density always predicts coverage",
-              "Strikes are always counterproductive",
+              "That every labor-law system on earth converges on a single common model over enough time",
+              "You cannot read a labor statute by its text alone; only provenance tells you the game",
+              "That a country's union density will always reliably predict its bargaining coverage",
+              "That strikes are, in the end, always counterproductive for the workers who call them",
             ],
             correctIndex: 1,
             explanation:
@@ -1720,10 +1725,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "Where does Chile's lawful strike live, compared with the Nordic sympathy weapon?",
             options: [
-              "Anywhere, any time, for any cause",
-              "Only inside a firm's own regulated bargaining round, precisely where Nordic sympathy action lives OUTSIDE the primary dispute, spreading pressure to hold-outs",
-              "Only in the public sector",
-              "Only with government authorisation",
+              "Anywhere and at any time at all, for whatever cause the workers might choose to raise",
+              "Only inside a firm's bargaining round, exactly where Nordic sympathy action lives outside",
+              "Only within the public sector and across its various state-owned enterprises and firms",
+              "Only after the workers have first obtained formal authorisation from the government",
             ],
             correctIndex: 1,
             explanation:
@@ -1733,10 +1738,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "What began Chile's constitutional process in 2019?",
             options: [
-              "An OECD directive",
-              "Protests that began over a Santiago metro-fare increase and widened into the largest demonstrations since the return to democracy, the estallido social",
-              "A military coup",
-              "A petition by employers",
+              "A formal directive that was handed down to Chile by the OECD in Paris in the year 2019",
+              "Protests over a Santiago metro-fare rise that widened into the estallido social of 2019",
+              "A second military coup that briefly seized power in the capital, Santiago, that October",
+              "A formal petition that was brought forward by the country's main employer associations",
             ],
             correctIndex: 1,
             explanation:
@@ -1746,10 +1751,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "What did Chileans decide on 25 October 2020?",
             options: [
-              "To reject any new constitution",
-              "78.27% voted Apruebo, to write a new constitution, via an elected convention (Servel)",
-              "To restore the 1925 constitution",
-              "To leave the OECD",
+              "They voted to reject the idea of writing any new national constitution at all this time",
+              "78.27% voted Apruebo, to write a new constitution, through an elected convention (Servel)",
+              "They voted to restore Chile's much earlier 1925 constitution in place of the current one",
+              "They voted for Chile to withdraw entirely from the OECD and its various obligations",
             ],
             correctIndex: 1,
             explanation:
@@ -1759,10 +1764,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "What happened on 4 September 2022?",
             options: [
-              "The Convention's draft was approved narrowly",
-              "The Convention's draft was rejected 61.86% to 38.14%, with mandatory voting and 85.7% turnout, Chile's highest-participation vote",
-              "The plebiscite was cancelled",
-              "The 1980 Constitution was abolished",
+              "The Constitutional Convention's draft constitution was, in the event, narrowly approved",
+              "The Convention's draft was rejected 61.86% to 38.14%, with mandatory voting, record turnout",
+              "The scheduled constitutional plebiscite was, at the last minute, postponed and cancelled",
+              "The dictatorship-era 1980 Constitution was itself abolished outright by the popular vote",
             ],
             correctIndex: 1,
             explanation:
@@ -1772,10 +1777,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "What happened on 17 December 2023?",
             options: [
-              "A second, more conservative draft was approved",
-              "The Constitutional Council's draft, widely characterised as more conservative than the existing constitution, was also rejected, 55.76% to 44.24%",
-              "Sectoral bargaining became constitutional",
-              "A third convention was elected",
+              "A second, notably more conservative draft constitution was, this time around, approved",
+              "The Council's draft, seen as more conservative than the current charter, was also rejected",
+              "Sectoral collective bargaining was, at last, written directly into the new constitution",
+              "A third full constitutional convention was elected in order to try the process once again",
             ],
             correctIndex: 1,
             explanation:
@@ -1785,10 +1790,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "What may NOT be concluded from the two constitutional rejections, per the course?",
             options: [
-              "That the 1980 Constitution remains in force",
-              "That Chileans endorsed, or rejected, the Plan Laboral's labor architecture: both drafts were rejected as wholes, for unitemised reasons spanning every subject",
-              "That turnout was high in 2022",
-              "That two processes occurred",
+              "That the dictatorship's own 1980 Constitution nonetheless still remains in force in Chile",
+              "That Chileans endorsed or rejected the Plan: both drafts were rejected whole, every subject",
+              "That the recorded turnout was very high indeed in the September 2022 national plebiscite",
+              "That two entirely separate constitutional-reform processes did, in fact, both take place",
             ],
             correctIndex: 1,
             explanation:
@@ -1798,10 +1803,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "What is the institutional bottom line after 2019-2023?",
             options: [
-              "Chile has a new constitution",
-              "The amended 1980 Constitution remains in force, and the 1979 labor architecture remains beneath it, the design has outlived its regime, a major reform, and two rebuild attempts",
-              "The labor code was abolished",
-              "Sectoral bargaining was established",
+              "Chile, in the end, adopted a wholly new democratic constitution to replace the old one",
+              "The amended 1980 Constitution remains, with the 1979 labor architecture beneath it intact",
+              "The Código del Trabajo labor code was, at long last, repealed in its complete entirety",
+              "Sectoral collective bargaining was, after the votes, finally established across all Chile",
             ],
             correctIndex: 1,
             explanation:
@@ -1811,10 +1816,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "Why was reading ONE confessed design worth a whole course, per the closing lesson?",
             options: [
-              "Because Chile is the largest economy in the track",
-              "Because it calibrates you: having seen engineered weakness where it was confessed, named author, stated goals, you can recognise the same patterns in systems that present themselves as nobody's decision",
-              "Because designed systems are rare and unimportant",
-              "Because all other systems are identical to Chile's",
+              "Because Chile is, by a wide margin, the very largest economy in the whole of the track",
+              "It calibrates you: having seen weakness confessed, you can spot it where it is denied",
+              "Because designed labor systems are genuinely rare and, on the whole, largely unimportant",
+              "Because every other labor system in the world is essentially identical to Chile's own",
             ],
             correctIndex: 1,
             explanation:
@@ -1824,10 +1829,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "What comparison does the closing assignment ask American students to sit with?",
             options: [
-              "Chile has a minimum wage and the US does not",
-              "Mackay Radio (1938) wrote Chile's replacement rule into US law and no Congress has deleted it, while Chile deleted its copy in 2016",
-              "The US has sectoral bargaining and Chile does not",
-              "Both countries ban strikes",
+              "That Chile has a national minimum wage in place while the United States has none at all",
+              "Mackay Radio (1938) wrote Chile's rule into US law; Chile deleted its copy, the US did not",
+              "That the US, unlike Chile, has full sectoral bargaining while Chile has none whatsoever",
+              "That both the US and Chile alike ban strikes right across the whole private-sector economy",
             ],
             correctIndex: 1,
             explanation:
@@ -1837,10 +1842,10 @@ A labor system is an answer to the question "how much organised power should wor
           {
             prompt: "What is 'the Chilean question' the course exists to install?",
             options: [
-              "How high should the minimum wage be?",
+              "How high should the national statutory minimum wage be set?",
               "If this system had a named author, what would you say they wanted?",
-              "Should unions exist?",
-              "Is GDP growth good?",
+              "Should trade unions be permitted to exist in the economy at all?",
+              "Is gross domestic product growth a good thing for a country?",
             ],
             correctIndex: 1,
             explanation:

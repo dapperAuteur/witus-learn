@@ -135,6 +135,13 @@ describe("toSafeQuiz (the serving seam)", () => {
     expect(safe.passingScore).toBe(80);
     expect(safe.shuffleOptions).toBe(true);
   });
+
+  it("shuffles by DEFAULT: a bank that never set shuffleOptions still serves shuffled", () => {
+    // So a retake cannot leave the correct answer in the same slot. A bank opts out only with an
+    // explicit false; undefined means shuffle.
+    expect(toSafeQuiz(bank(12)).shuffleOptions).toBe(true);
+    expect(toSafeQuiz({ questions: bank(12).questions, shuffleOptions: false }).shuffleOptions).toBe(false);
+  });
 });
 
 describe("scoring a capped subset attempt", () => {

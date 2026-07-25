@@ -26,15 +26,20 @@ export const COMMON_CORE_ELA: SharedFramework = {
     {
       code: "CCSS.ELA-Literacy.RH.11-12.8",
       text: "Evaluate an author's premises, claims, and evidence by corroborating or challenging them with other information.",
-      claimIds: ["bvc.evaluate-claims-fallacies"],
+      claimIds: ["bvc.evaluate-claims-fallacies", "catalog.test-a-historical-claim"],
       coverage: "full",
+      note: "The BVC value-chain course teaches fallacy-spotting; the route series, the labor and precolonial courses, and Afrocentricity make testing a claim against its sources (corroborating, challenging, or downgrading it) the explicit method of the course.",
     },
     {
       code: "CCSS.ELA-Literacy.RH.11-12.9",
       text: "Integrate information from diverse sources, both primary and secondary, into a coherent understanding of an idea or event, noting discrepancies among sources.",
-      claimIds: ["bvc.nearest-green-oral-history", "bvc.whose-voice-absence"],
-      coverage: "full",
-      note: "“Noting discrepancies among sources” is the whole point of the Nathan Green lesson: the documentary record and the oral record disagree, and the episode teaches why oral history is a legitimate scholarly method for resolving that.",
+      claimIds: [
+        "bvc.nearest-green-oral-history",
+        "bvc.whose-voice-absence",
+        "catalog.cited-primary-secondary-synthesis",
+      ],
+      coverage: "partial",
+      note: "Full in the BVC Nathan Green lesson, where the documentary and oral records openly disagree. Partial across the catalog-wide claim: every one of those courses integrates cited primary and secondary sources into a coherent account (the standard's first clause), and the route, labor, and contested-scholarship courses also foreground where the sources disagree, but the narrative histories (bathing, hoodoo) integrate sources without making discrepancy-resolution a systematic exercise.",
     },
     {
       code: "CCSS.ELA-Literacy.RI.11-12.6",
@@ -45,16 +50,16 @@ export const COMMON_CORE_ELA: SharedFramework = {
     {
       code: "CCSS.ELA-Literacy.WHST.11-12.7",
       text: "Conduct short as well as more sustained research projects to answer a question (including a self-generated question) or solve a problem; narrow or broaden the inquiry when appropriate; synthesize multiple sources on the subject, demonstrating understanding of the subject under investigation.",
-      claimIds: ["bvc.coffee-project-synthesis"],
-      coverage: "partial",
-      note: "Partial: only the Coffee episode currently ships a graded assignment. Where it runs, it meets this standard squarely.",
+      claimIds: ["bvc.coffee-project-synthesis", "catalog.research-a-primary-record"],
+      coverage: "full",
+      note: "The Coffee episode ships a graded assignment; the route series and the positive-track courses each close with a research capstone (find a listing, write one firm, test one connection) in which the student runs a self-directed inquiry and synthesizes multiple sources.",
     },
     {
       code: "CCSS.ELA-Literacy.WHST.11-12.8",
       text: "Gather relevant information from multiple authoritative print and digital sources, using advanced searches effectively; assess the strengths and limitations of each source in terms of the specific task, purpose, and audience; integrate information into the text selectively to maintain the flow of ideas, avoiding plagiarism and overreliance on any one source and following a standard format for citation.",
-      claimIds: ["bvc.coffee-project-sources-ethics"],
-      coverage: "partial",
-      note: "Partial, same reason as WHST.11-12.7.",
+      claimIds: ["bvc.coffee-project-sources-ethics", "catalog.research-a-primary-record"],
+      coverage: "full",
+      note: "The route and positive-track capstones require the student to locate a primary record, corroborate it across independent sources, weigh each source's limits, and write it up with citations: the whole of this standard.",
     },
   ],
 };

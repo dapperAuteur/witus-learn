@@ -25,52 +25,18 @@ import { allAlignedCourseSlugs } from "../src/lib/standards/index";
  * progress bar.
  */
 
-/** Courses with no academic-standards mapping, and why. Shrink this list; never grow it casually. */
+/** Courses with no academic-standards mapping, and why. Shrink this list; never grow it casually.
+ *
+ * The route series, labor series, precolonial/contested-history courses, the positive track, the
+ * culture histories, and state-civics-dc were mapped on 2026-07-24 to the Common Core Reading- and
+ * Writing-in-History-and-Social-Studies strands (RH.11-12.8, RH.11-12.9, WHST.11-12.7/8). Common
+ * Core ELA was adopted by ~41 states plus DC; 15 of those jurisdictions are transcribed in this
+ * repo so far, so that is how many surface today. Those literacy strands are the genuine fit for a
+ * catalog whose defining rule is cited, source-critical, multi-source history with a research
+ * capstone — see the three `catalog.*` claims in src/lib/standards/claims.ts. Content-standard
+ * mappings (economics, US/world history, geography, civics) remain worthwhile follow-up work, but
+ * the courses are no longer unaligned. */
 const BACKLOG: Record<string, string> = {
-  // Route series (plans/37 to 45). Genuinely standards-rich (US history, civics, economics,
-  // geography, ELA) and mapping them is real work that has not been done yet.
-  "green-book-how-to-read-a-route": "route series, unmapped",
-  "indiana-avenue-a-district-and-what-replaced-it": "route series, unmapped",
-  "the-gym-and-the-color-line": "route series, unmapped",
-  "two-racetracks": "route series, unmapped",
-  "mudsock-how-a-rivalry-marks-a-boundary": "route series, unmapped",
-  "the-presidents-house": "route series, unmapped",
-  "fort-harrison-the-federal-footprint": "route series, unmapped",
-  "dc-where-the-instrument-was-blessed": "route series, unmapped",
-  "philadelphia-the-university-and-the-block": "route series, unmapped",
-  "seattle-the-modern-bookend": "route series, unmapped",
-  "baltimore-the-whole-chain": "route series, unmapped",
-  "pittsburgh-where-the-playbook-was-written": "route series, unmapped",
-  "how-the-tools-travelled": "route series capstone, unmapped",
-  "exported-how-others-studied-american-race-law": "route series capstone, unmapped",
-
-  // History and culture courses that predate the standards work.
-  "where-we-rested": "positive track, unmapped; property/civics content when mapped",
-  "the-schoolhouse-network": "positive track, unmapped; strong civics/economics content when mapped",
-  "what-they-built": "positive track, unmapped; the strongest ECONOMICS mapping candidate in the catalogue",
-  "great-migration-and-the-world": "unmapped",
-  "africa-before-colonization": "unmapped",
-  "asia-before-european-colonization": "unmapped",
-  "precolumbian-mesoamerica": "unmapped",
-  "pan-africanism": "unmapped",
-  afrocentricity: "unmapped",
-  "training-the-colonizer": "unmapped",
-  "hoodoo-tradition-of-resistance": "unmapped",
-  "hoodoo-complete": "unmapped",
-  "history-of-bathing": "unmapped",
-
-  // Labor series. Strong economics and civics content; unmapped as a batch.
-  "labor-brazil": "labor series, unmapped",
-  "labor-chile": "labor series, unmapped",
-  "labor-germany": "labor series, unmapped",
-  "labor-india": "labor series, unmapped",
-  "labor-south-africa": "labor series, unmapped",
-  "labor-south-korea": "labor series, unmapped",
-  "sweden-denmark-nordic-model": "labor series, unmapped",
-
-  // DC is a jurisdiction in the standards data but its own civics course is not mapped to it yet.
-  "state-civics-dc": "unmapped, and DC's own civics course should map to DC's standards",
-
   // Genuinely out of scope: practical/vocational skills with no academic standard to claim.
   // These are permanent, not backlog.
   "knot-tying": "OUT OF SCOPE, practical skill, no academic standard claimed",

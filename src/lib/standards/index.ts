@@ -381,3 +381,40 @@ export function standardsForCourse(courseSlug: string): {
 
   return { jurisdictions, total: jurisdictions.reduce((n, j) => n + j.count, 0) };
 }
+
+/**
+ * The path/track/category equivalent of standardsForCourse: the DISTINCT standards a whole set of
+ * courses meets, per jurisdiction. A learning path is a shopping unit too — a teacher choosing a
+ * path wants "this path meets N standards across M states" the same way they want it per course.
+ *
+ * Deduped by (state, code): if four courses in a path each meet RH.11-12.9 in California, that is
+ * ONE standard the path covers in California, not four. That is what makes the number honest — it
+ * counts what the path teaches, not how many times. The caller (a path page) renders the same
+ * collapsible summary as the course page and links to /academic-standards, which the per-course
+ * links already reach. Returns an empty array when NONE of the courses is mapped, so the path page
+ * renders nothing rather than "0 standards" — same rule as the course page.
+ */
+export function standardsForCourses(courseSlugs: string[]): {
+  jurisdictions: { state: StateCode; jurisdiction: string; count: number }[];
+  total: number;
+} {
+  const wanted = new Set(courseSlugs);
+  const frameworkById = new Map(FRAMEWORKS.map((f) => [f.id, f]));
+  // state -> set of distinct codes covered by any course in the set
+  const codesByState = new Map<StateCode, { jurisdiction: string; codes: Set<string> }>();
+
+  for (const a of ALIGNMENTS) {
+    if (!a.courseSlugs.some((s) => wanted.has(s))) continue;
+    const f = frameworkById.get(a.frameworkId);
+    if (!f) continue;
+    const cur = codesByState.get(f.state);
+    if (cur) cur.codes.add(a.code);
+    else codesByState.set(f.state, { jurisdiction: f.jurisdiction, codes: new Set([a.code]) });
+  }
+
+  const jurisdictions = [...codesByState.entries()]
+    .map(([state, v]) => ({ state, jurisdiction: v.jurisdiction, count: v.codes.size }))
+    .sort((a, b) => b.count - a.count || a.jurisdiction.localeCompare(b.jurisdiction));
+
+  return { jurisdictions, total: jurisdictions.reduce((n, j) => n + j.count, 0) };
+}

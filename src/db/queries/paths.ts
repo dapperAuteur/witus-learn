@@ -6,6 +6,7 @@ import { courses } from "@/db/schema/courses";
 
 export interface PathCourse {
   id: string;
+  slug: string | null;
   title: string;
   description: string | null;
   isPublished: boolean;
@@ -31,7 +32,7 @@ export async function getPathBySlug(
   if (!p[0]) return null;
 
   const rows = await db
-    .select({ id: courses.id, title: courses.title, description: courses.description, isPublished: courses.isPublished })
+    .select({ id: courses.id, slug: courses.slug, title: courses.title, description: courses.description, isPublished: courses.isPublished })
     .from(learningPathCourses)
     .innerJoin(courses, eq(courses.id, learningPathCourses.courseId))
     .where(and(eq(learningPathCourses.pathId, p[0].id), eq(courses.tenantId, tenantId)))

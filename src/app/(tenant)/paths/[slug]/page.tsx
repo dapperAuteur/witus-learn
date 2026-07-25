@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getScopedDb } from "@/db/scoped";
 import { getPathBySlug } from "@/db/queries/paths";
+import { standardsForCourses } from "@/lib/standards";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -23,6 +24,12 @@ export default async function PathPage({ params }: Params) {
 
   const courses = data.courses.filter((c) => c.isPublished);
 
+  // Standards this path meets, aggregated over its published courses and deduped by (state, code):
+  // a path is a shopping unit too, so it earns the same summary a course page carries. Pure lookup
+  // over committed standards data, no query. Renders nothing when none of the courses is mapped,
+  // exactly like the course page — "0 standards" would read as "meets none", not "not analysed yet".
+  const pathStandards = standardsForCourses(courses.map((c) => c.slug).filter((s): s is string => !!s));
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
       <Link href="/paths" className="text-sm text-neutral-500 hover:underline">
@@ -31,6 +38,43 @@ export default async function PathPage({ params }: Params) {
       <h1 className="mt-4 text-3xl font-bold">{data.path.title}</h1>
       {data.path.description ? (
         <p className="mt-2 text-neutral-600 dark:text-neutral-400">{data.path.description}</p>
+      ) : null}
+
+      {pathStandards.total > 0 ? (
+        <details className="mt-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
+          <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 px-4 text-sm font-medium pointer-coarse:min-h-12">
+            <span aria-hidden="true">🎓</span>
+            <span>
+              This path meets <strong>{pathStandards.total}</strong> academic standard
+              {pathStandards.total === 1 ? "" : "s"} across{" "}
+              <strong>{pathStandards.jurisdictions.length}</strong>{" "}
+              {pathStandards.jurisdictions.length === 1 ? "jurisdiction" : "jurisdictions"}
+            </span>
+            <span className="ml-auto text-xs text-neutral-500">show</span>
+          </summary>
+          <div className="px-4 pb-4">
+            <ul className="mt-2 flex flex-wrap gap-2">
+              {pathStandards.jurisdictions.map((j) => (
+                <li key={j.state}>
+                  <Link
+                    href={`/academic-standards?state=${j.state.toLowerCase()}`}
+                    className="inline-flex items-center gap-1 rounded-full border border-neutral-300 px-3 py-1 text-xs hover:underline dark:border-neutral-700"
+                  >
+                    {j.jurisdiction}
+                    <span className="text-neutral-500">{j.count}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/academic-standards"
+              className="mt-3 inline-block text-sm underline underline-offset-2"
+              style={{ color: "var(--accent)" }}
+            >
+              Explore the full standards finder
+            </Link>
+          </div>
+        </details>
       ) : null}
 
       <ol className="mt-6 space-y-3">

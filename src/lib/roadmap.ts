@@ -381,6 +381,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   env vars (\`CRON_SECRET\`, \`DEMO_VISITOR_PASSWORD\`, \`DEMO_VISITOR_USER_EMAIL\`), the feature stays
   dark until BAM sets them (see \`plans/user-tasks/62-demo-account-setup.md\` for the domain/env/seed
   steps).
+- 🔧 **Per-audience landing pages** (\`/for/<audience>\` + a \`/for\` index): teachers, school leaders,
+  parents, homeschool families, and community leaders each get a page written in their own terms,
+  above the two general pages (\`/platform\`, \`/explore\`). Recruiting-tenant only, 404 on a white-label
+  school, linked from the homepage as "Who is it for?". One \`AudienceLandingContent\` type and one
+  shared renderer keep them consistent; each audience is a small content file resolved by a dynamic
+  route. **No invented stats, efficacy claims, testimonials, or prices** (the type file states the
+  rule): the pages lean on what is now genuinely verifiable, the real per-state standards alignment,
+  cited courses, shuffled quizzes, the parent view, kid login, cohorts, the AI tutor, and the
+  no-signup demo. The homeschool page asserts no state's requirements; the community page carries the
+  "communities educating themselves" heritage generally and points to the catalog's cited history
+  courses for specifics. Still notes: the Teachers Pay Teachers course packets.
 - 🔧 **Platform + demo landing pages** (\`feat/platform-demo-landing\`): two public marketing pages,
   shown only on Learn.WitUS itself (\`tenant.flags.recruiting\`, 404 elsewhere so a white-label school
   never advertises the platform underneath it): **\`/platform\`** pitches Learn.WitUS as a product for
@@ -395,6 +406,22 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   recruiting block, and the ecosystem footer. No migration.
 
 ## Content
+- 🔧 **The two structural paths have their first courses** (\`plans/46\`). Both paths are the general
+  case of something the catalog already teaches one instance at a time, and the method course of each
+  now ships. **Who Has the Power to Do This?** (Civics, \`who-has-the-power\`, 19 lessons / 5 sections /
+  4 quizzes / a map / a capstone) is the general case of the route series: given any government
+  action, find the body, its enabling authority, the document that grants it, and who can overturn
+  it. It teaches Dillon's Rule vs home rule and the special-district layer, and introduces tribal
+  nations as a SEPARATE sovereign, not a rung on the ladder. It declines the apocryphal Andrew Jackson
+  quote (teaching the refusal as method) and keeps Dillon's Rule vs the Cooley Doctrine an open split.
+  **What a Business Entity Actually Is** (Civics, \`what-a-business-entity-is\`, 19 lessons / 5 sections
+  / 4 quizzes / a capstone) is the general case of What They Built: an entity is a bundle of four
+  decisions (liability, taxation, ownership/transfer, governance), and reading the formation documents
+  as primary sources is the skill; it says plainly, repeatedly, that it is not legal or tax advice, and
+  asserts no statute section or tax rate from memory. Both are mapped to the Common Core RH/WHST
+  literacy strands and shuffle-by-default; all eight quiz banks score 25-31% on the length tell. These
+  are the pilot tranche: 1 of 9 government courses and 1 of 7 business courses; the rest follow across
+  later sessions. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**

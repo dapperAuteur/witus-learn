@@ -155,8 +155,10 @@ const PROPOSAL_META: Record<
   // series (every course there turns on "which body had the power, and where did it come from");
   // business forms generalise What They Built (fraternal orders and building-and-loans were entity
   // choices, not colour). Both are `recommended` rather than `proposed` for that reason.
-  "types-of-government-path": { group: "Structures", status: "recommended" },
-  "types-of-business-path": { group: "Structures", status: "recommended" },
+  // Both paths have their method course shipped (plans/46 pilot tranche); the rest follow. `building`
+  // rather than `shipped` because 1 of 9 / 1 of 7 courses exist. The link is to the pilot.
+  "types-of-government-path": { group: "Structures", status: "building", courseSlugs: ["who-has-the-power"] },
+  "types-of-business-path": { group: "Structures", status: "building", courseSlugs: ["what-a-business-entity-is"] },
   // Not course proposals — a live sales asset and the market research behind it. They're `feature`
   // so they don't clutter the course list, but they stay visible: BAM asked for one place for
   // "this type of stuff", and pricing is exactly the kind of thing that goes stale unseen.

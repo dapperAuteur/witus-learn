@@ -184,10 +184,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "What is the difference between the 'informal sector' and 'informal employment'?",
             options: [
-              "They are synonyms",
-              "Informal sector counts unregistered workplaces; informal employment counts jobs without social security or benefits, wherever they sit",
-              "Informal sector means illegal work; informal employment means part-time work",
-              "Informal employment only counts the self-employed",
+              "They are exact synonyms: both simply mean any job paid in cash and kept off the books",
+              "Informal sector counts unregistered workplaces; informal employment counts unprotected jobs",
+              "Informal sector means outright illegal work; informal employment means ordinary part-time work",
+              "Informal employment counts only the self-employed; the informal sector counts all wage earners",
             ],
             correctIndex: 1,
             explanation:
@@ -198,10 +198,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
             prompt:
               "A contract cleaner works inside a registered factory with no provident fund and no written contract. How do the two measures classify her?",
             options: [
-              "Informal sector and informal employment",
-              "Formal sector and formal employment",
+              "Informal sector and informal employment, on both of the two counts",
+              "Formal sector and also formal employment, on both of the counts",
               "Formal-sector job, but informal employment relationship",
-              "She is not counted in either measure",
+              "She falls outside both measures and is therefore not counted at all",
             ],
             correctIndex: 2,
             explanation:
@@ -211,10 +211,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "Why does this course insist any informality statistic carry a source, a year, AND a definition?",
             options: [
-              "Because Indian statistics are secret",
-              "Because informality is defined differently by different bodies, and the headline percentage swings with the definition",
-              "Because the number never changes",
-              "Because the ILO forbids quoting numbers otherwise",
+              "Because India's labour statistics are officially secret and cannot be quoted",
+              "Because bodies define informality differently, so the headline percentage swings",
+              "Because the informality figure has stayed frozen and never once changed since 1947",
+              "Because the ILO forbids quoting any figure without its own written permission",
             ],
             correctIndex: 1,
             explanation:
@@ -224,10 +224,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "What does 'informal employment' concretely mean for the worker, in this course's definition?",
             options: [
-              "Working illegally",
-              "Being unemployed",
-              "No written contract, no social security (provident fund/health insurance), no paid leave, no notice period, often no identifiable employer",
-              "Working from home",
+              "Working illegally, in breach of the law, and therefore liable to prosecution",
+              "Being unemployed, that is, having no work at all and actively looking for a job",
+              "No written contract, no social security, no paid leave, no notice period",
+              "Working from home rather than at the employer's own registered premises",
             ],
             correctIndex: 2,
             explanation:
@@ -237,10 +237,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "What underlying government survey does the India Employment Report 2024 build on?",
             options: [
-              "The Census of India",
+              "The decennial Census of India, conducted by the Registrar General's office",
               "The Periodic Labour Force Survey (PLFS), run by the National Statistics Office",
-              "The e-Shram portal",
-              "The Economic Survey",
+              "The e-Shram portal, the national registry of unorganised informal workers",
+              "The annual Economic Survey tabled in Parliament before the Union Budget",
             ],
             correctIndex: 1,
             explanation:
@@ -258,10 +258,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "What gap did the Minimum Wages Act, 1948 leave open?",
             options: [
-              "It only applied to government employees",
-              "It covered only 'scheduled employments', occupations a government had listed, so unlisted occupations had no statutory wage floor",
-              "It set wages only for factories",
-              "It expired in 1960",
+              "It applied only to government employees, leaving the entire private sector uncovered",
+              "It covered only 'scheduled employments', so unlisted occupations had no wage floor",
+              "It set a statutory minimum wage only inside registered factories and nowhere else",
+              "It lapsed entirely in 1960 and was never renewed by any subsequent Parliament",
             ],
             correctIndex: 1,
             explanation:
@@ -271,10 +271,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "What did the Supreme Court hold in T.K. Rangarajan v. Government of Tamil Nadu (2003)?",
             options: [
-              "That all strikes are constitutionally protected",
+              "That every strike in India is constitutionally protected as a fundamental right",
               "That government employees have no fundamental, legal, moral or equitable right to strike",
-              "That unions may not be formed by government employees",
-              "That the Trade Unions Act is unconstitutional",
+              "That government employees are barred from forming trade unions of any kind at all",
+              "That the entire Trade Unions Act, 1926 is unconstitutional and void for vagueness",
             ],
             correctIndex: 1,
             explanation:
@@ -284,10 +284,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "Which two ILO core conventions has India never ratified, and what is the government's stated reason?",
             options: [
-              "The child-labour conventions, citing poverty",
-              "Conventions 87 and 98 (freedom of association and collective bargaining), citing statutory restrictions on government servants",
-              "The forced-labour conventions, citing prison labour",
-              "None, India has ratified all eight",
+              "The two child-labour conventions, citing deep rural and family-farm poverty everywhere",
+              "Conventions 87 and 98, citing statutory restrictions binding on government servants",
+              "The two forced-labour conventions, citing the persistence of prison and bonded labour",
+              "None of them, since India has in fact ratified all eight of the core ILO conventions",
             ],
             correctIndex: 1,
             explanation:
@@ -297,10 +297,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "What is the 'catch' in India's elaborate labour-law machine?",
             options: [
-              "The laws were never passed",
-              "Every part assumes an establishment, an industry, an employer, so the machine only reaches the formal fraction of the economy",
-              "The laws only apply in Delhi",
-              "The machine covers everyone equally",
+              "The labour laws were drafted but in the end were never actually passed by Parliament at all",
+              "Every part assumes an establishment, an industry, an employer, only the formal fraction",
+              "The labour laws apply only inside Delhi and a small handful of other union territories",
+              "The machine already reaches every single Indian worker equally, formal and informal alike",
             ],
             correctIndex: 1,
             explanation:
@@ -311,10 +311,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
             prompt:
               "How does India's biggest exclusion differ from the Wagner Act's exclusion of agricultural and domestic workers?",
             options: [
-              "It is harsher but written in the same way",
-              "It is structural rather than statutory, the law's vocabulary never reaches informal workers, so there is no carve-out clause to repeal",
-              "It only affects women",
-              "It was written by the British and cannot be amended",
+              "It is far harsher than the Wagner Act, and yet it is written in exactly the same way",
+              "It is structural, not statutory: the law's vocabulary never reaches informal workers",
+              "It affects only women workers, whom the statutes explicitly single out and exclude by name",
+              "It was written by the British and, being colonial, can no longer be amended at all today",
             ],
             correctIndex: 1,
             explanation:
@@ -324,10 +324,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "For India's informal workers, who is 'across the table' when they organise?",
             options: [
-              "Their employer's HR department",
-              "Usually the state (welfare boards, registration schemes) or the city (municipal authorities), because there is no employer to bargain with",
-              "The ILO",
-              "Nobody, informal workers cannot organise",
+              "Their employer's own human-resources department, exactly as in the formal sector",
+              "Usually the state (welfare boards, schemes) or the city, since there is no employer",
+              "The International Labour Organization, which bargains on the informal worker's behalf",
+              "Nobody at all, because informal workers are legally forbidden from organising at all",
             ],
             correctIndex: 1,
             explanation:
@@ -337,10 +337,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "What does retaliation ('Question 4') look like for an informal worker in India?",
             options: [
-              "Formal dismissal with notice",
-              "A tribunal hearing",
-              "Informal punishment, eviction from the vending spot, confiscation of the cart, the contractor who stops calling",
-              "Loss of union membership",
+              "Formal dismissal with proper written notice and statutory severance pay",
+              "A hearing before an industrial tribunal, with reinstatement as the usual remedy",
+              "Informal punishment: eviction from the vending spot, confiscation of the cart",
+              "Loss of trade-union membership and expulsion from the federation's rolls",
             ],
             correctIndex: 2,
             explanation:
@@ -350,10 +350,10 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
           {
             prompt: "Why does this course refuse to call India's workforce 'the world's largest'?",
             options: [
-              "Because India's workforce is tiny",
-              "Because the claim depends on definitions and China's labour force is of comparable size, 'most populous country' (UN, 2023) is the verifiable claim",
-              "Because the UN forbids the comparison",
-              "Because workforce data does not exist for India",
+              "Because India's total workforce is in fact tiny by any international comparison",
+              "Because the claim depends on definitions and China's labour force is comparable in size",
+              "Because the United Nations has expressly forbidden making that particular comparison",
+              "Because no workforce or labour-force statistics of any kind exist for India at all",
             ],
             correctIndex: 1,
             explanation:
@@ -455,10 +455,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What is a CTUO in the Indian labour landscape?",
             options: [
-              "A government wage board",
-              "A central trade union organisation, a national federation of thousands of registered unions",
-              "A type of collective agreement",
-              "A labour court",
+              "A statutory government wage board that fixes minimum wages sector by sector",
+              "A central trade union organisation, a national federation of registered unions",
+              "A type of collective agreement signed at national level across an industry",
+              "A specialised labour court that adjudicates industrial disputes and lay-offs",
             ],
             correctIndex: 1,
             explanation:
@@ -468,10 +468,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Which federation is the oldest, and what does its 1920 founding date tell you?",
             options: [
-              "INTUC, unions began at independence",
-              "AITUC, Indian unionism is older than the Indian state itself",
-              "BMS, unions began with the RSS",
-              "CITU, unions began with the communist split",
+              "INTUC, meaning Indian trade unionism only began at independence in 1947",
+              "AITUC, meaning Indian unionism is older than the Indian state itself",
+              "BMS, meaning organised Indian trade unionism began only with the RSS",
+              "CITU, meaning Indian unionism began with the 1964 communist party split",
             ],
             correctIndex: 1,
             explanation:
@@ -481,10 +481,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Why was INTUC founded in 1947?",
             options: [
-              "To merge all existing unions",
+              "To merge every existing Indian union into one single national federation",
               "So the Congress party would have a labour wing not controlled by communists",
-              "To represent government employees only",
-              "As a condition of ILO membership",
+              "To represent India's central-government employees and no other workers",
+              "As a formal precondition of India's admission to the ILO in that year",
             ],
             correctIndex: 1,
             explanation:
@@ -494,10 +494,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What is politically extraordinary about the BMS's position today?",
             options: [
-              "It is banned",
-              "It is a union federation whose ideological parent (the RSS) is also the parent of the governing party it must bargain against",
-              "It has no members",
-              "It is run by the ILO",
+              "It has been formally outlawed and deregistered by every central government since 1955",
+              "Its ideological parent, the RSS, also fathered the governing party it must bargain against",
+              "It has no members at all and exists only on paper as a registered shell federation",
+              "It is run directly by the International Labour Organization from Geneva, not by Indians",
             ],
             correctIndex: 1,
             explanation:
@@ -507,10 +507,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What happened to the union movement when India's Communist Party split in 1964?",
             options: [
-              "Nothing, unions stayed united",
+              "Nothing at all happened; the union movement stayed completely united through it",
               "The union movement split with the party: CITU was founded in 1970 alongside AITUC",
-              "All communist unions were dissolved",
-              "The BMS absorbed both wings",
+              "Every communist-aligned union in the country was dissolved and formally banned",
+              "The BMS quietly absorbed both wings of the divided communist union movement",
             ],
             correctIndex: 1,
             explanation:
@@ -520,10 +520,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Poland, China, India, how does this course distinguish their three union-politics entanglements?",
             options: [
-              "They are identical",
-              "Poland: union created a political force that destroyed the party-state; China: the party owns the one permitted union; India: many parties, each with its own union",
-              "Poland: party owns union; China: union owns party; India: no unions",
-              "All three have a single state-run federation",
+              "All three are essentially identical: in each a single ruling party owns the one lawful union",
+              "Poland: the union destroyed the party-state; China: the party owns the union; India: rival unions",
+              "Poland: the party owns the union; China: the union owns the party; India: no unions exist at all",
+              "All three simply run one single state-controlled federation and permit no rival unions at all",
             ],
             correctIndex: 1,
             explanation:
@@ -533,10 +533,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What is the trade-off of India's many-parties-many-unions arrangement?",
             options: [
-              "Independence from the state, at the price of fragmentation, rival federations compete inside the same workforce",
-              "Unity, at the price of state control",
-              "High membership, at the price of illegality",
-              "There is no trade-off",
+              "Independence from the state, but at the price of fragmentation into rival party-tied unions",
+              "Unity across the movement, but bought at the price of total state control of labour",
+              "Very high union membership, but bought at the price of the unions' outright illegality",
+              "There is genuinely no trade-off at all; the arrangement carries no cost whatsoever",
             ],
             correctIndex: 0,
             explanation:
@@ -546,10 +546,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "When was the last completed, formally used government verification of union membership, and who was largest?",
             options: [
-              "2019, INTUC",
-              "2002, BMS, at about 6.2 million verified members",
-              "2011, CITU",
-              "There has never been one",
+              "2019, when INTUC was verified as the single largest federation",
+              "2002, when the BMS was verified largest at about 6.2 million members",
+              "2011, when CITU was verified as the single largest federation",
+              "There has in fact never been any completed government verification",
             ],
             correctIndex: 1,
             explanation:
@@ -559,10 +559,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Why does this course refuse to state current membership figures for the federations?",
             options: [
-              "Membership is a state secret",
-              "Because current claims are self-declared and no completed verification supports them, the course gives the last verified figure (2002) with its date instead",
-              "Because membership is zero",
-              "Because the ILO forbids publishing them",
+              "Because union membership figures are a formally classified state secret in India",
+              "Because current claims are self-declared and no completed verification backs them",
+              "Because the actual membership of every Indian federation is in fact zero today",
+              "Because the ILO formally forbids any member state from publishing such figures",
             ],
             correctIndex: 1,
             explanation:
@@ -572,10 +572,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What was the organisers' first demand in the 9 July 2025 general strike?",
             options: [
-              "A four-day work week",
-              "Repeal of the four Labour Codes",
-              "Nationalisation of all industry",
-              "India's exit from the ILO",
+              "A statutory four-day working week",
+              "Repeal of all four of the Labour Codes",
+              "Nationalisation of all of industry",
+              "India's immediate exit from the ILO",
             ],
             correctIndex: 1,
             explanation:
@@ -585,10 +585,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What exactly is the '250 million' figure attached to the 9 July 2025 strike?",
             options: [
-              "A government census of strikers",
-              "The organising unions' own claimed participation figure, attributed by this course, not asserted",
-              "An ILO-audited count",
-              "The number of union members in India",
+              "An official government census that physically counted every one of the strikers",
+              "The organising unions' own claimed figure, attributed by this course, not asserted",
+              "An independent, ILO-audited head count of the strikers, verified afterward",
+              "The total registered trade-union membership across the whole of India today",
             ],
             correctIndex: 1,
             explanation:
@@ -598,10 +598,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Why can't strike participation be verified in India's informal sectors?",
             options: [
-              "Strikes are illegal there",
-              "Because from outside, 'on strike' and 'not working today' are indistinguishable for a street vendor or day labourer",
-              "Because informal workers never stop working",
-              "Because the government hides the data",
+              "Because strikes are entirely illegal across India's informal sectors and go unrecorded",
+              "Because from outside, 'on strike' and 'not working today' look identical for a street vendor",
+              "Because informal workers, being self-employed, simply never stop working at all ever",
+              "Because the central government deliberately hides all of the strike-participation data",
             ],
             correctIndex: 1,
             explanation:
@@ -611,10 +611,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "How does the Indian bharat bandh differ from the anchor course's strikes in its target?",
             options: [
-              "It does not differ",
-              "It is aimed at the government and its policies, not at an employer and a contract",
-              "It is aimed at foreign companies",
-              "It is aimed at the courts",
+              "It does not differ from the anchor course's strikes in any meaningful way at all",
+              "It is aimed at the government and its policies, not at any employer or a contract",
+              "It is aimed squarely at large foreign-owned multinational companies operating in India",
+              "It is aimed at the labour courts and industrial tribunals rather than at any employer",
             ],
             correctIndex: 1,
             explanation:
@@ -624,10 +624,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Why is the general strike the one industrial action open to informal workers?",
             options: [
-              "Because the law exempts them from strike notice",
-              "Because it requires no employer, staying home, shutting a stall, or marching needs no employment relationship",
-              "Because unions pay them to participate",
-              "Because it happens on public holidays",
+              "Because the law specifically exempts all informal workers from the 14-day strike notice",
+              "Because it needs no employer: staying home or shutting a stall needs no employment tie",
+              "Because the organising unions directly pay the informal workers a daily wage to join in",
+              "Because a general strike always falls on an existing public holiday, so no work is lost",
             ],
             correctIndex: 1,
             explanation:
@@ -638,10 +638,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt:
               "The unions struck in 2025 against Labour Codes that extend a universal minimum wage and gig-worker social security. What does the course say about this apparent irony?",
             options: [
-              "The unions misread the laws",
-              "That both sides have a case, and Section 4 lays out the Codes' text and the objections, dated, as always",
-              "The Codes secretly abolish unions",
-              "The strike was actually in support of the Codes",
+              "That the unions simply misread the Codes and struck against a law that helps them",
+              "That both sides have a case; Section 4 lays out the Codes' text and the objections",
+              "That the Codes secretly abolish trade unions altogether behind their welfare language",
+              "That the strike was in fact quietly called in open support of the four Labour Codes",
             ],
             correctIndex: 1,
             explanation:
@@ -783,10 +783,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Who founded SEWA, and from inside what organisation?",
             options: [
-              "Anasuya Sarabhai, from inside the Congress party",
-              "Ela Bhatt, a labour lawyer heading the women's wing of the Textile Labour Association in Ahmedabad",
-              "A committee of the ILO",
-              "The Gujarat Labour Department",
+              "Anasuya Sarabhai, from inside the Indian National Congress party in Ahmedabad",
+              "Ela Bhatt, a labour lawyer heading the Textile Labour Association's women's wing",
+              "A committee of the International Labour Organization, working out of Geneva",
+              "The Gujarat state Labour Department, as an official state-government scheme",
             ],
             correctIndex: 1,
             explanation:
@@ -796,10 +796,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What was the Labour Department's objection to registering SEWA in 1972?",
             options: [
-              "SEWA had too few members",
+              "SEWA simply had far too few members to register as a trade union at all",
               "A union needs an employer to struggle against, and SEWA's members had none",
-              "Women could not legally form unions",
-              "The Trade Unions Act had expired",
+              "Women were not legally permitted to form or join trade unions at that time",
+              "The Trade Unions Act, 1926 had by then expired and been repealed entirely",
             ],
             correctIndex: 1,
             explanation:
@@ -809,10 +809,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What feature of the Trade Unions Act, 1926 made SEWA's registration legally possible?",
             options: [
-              "A special exemption for women's organisations",
+              "A special statutory exemption written specifically for women's organisations",
               "The Act requires seven members but nowhere requires that they share an employer",
-              "A 1971 amendment covering the self-employed",
-              "The Act does not apply in Gujarat",
+              "A 1971 amendment that specifically extended the Act to cover the self-employed",
+              "The Act simply does not apply anywhere within the state of Gujarat at all",
             ],
             correctIndex: 1,
             explanation:
@@ -822,10 +822,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "How does this course treat SEWA's reported membership of 3.78 million across 20 states?",
             options: [
-              "As an audited government figure",
-              "As SEWA's own count, attributed, and still, even discounted, evidence of one of India's largest workers' organisations",
-              "As an ILO estimate",
-              "As deliberately falsified",
+              "As a fully audited membership figure formally certified by the central government",
+              "As SEWA's own count, attributed, and still evidence of a very large organisation",
+              "As an official membership estimate produced and published by the ILO in Geneva",
+              "As a figure SEWA has deliberately falsified in order to inflate its own size",
             ],
             correctIndex: 1,
             explanation:
@@ -835,10 +835,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Why does this course call the SEWA membership card 'the most underrated object' it teaches?",
             options: [
-              "It doubles as a credit card",
-              "It is often a member's first document naming her as a worker, converting an invisible person into a represented one when facing police or municipal harassment",
-              "It is required by the Trade Unions Act",
-              "It guarantees a minimum wage",
+              "It also doubles as a bank credit card usable at any commercial shop or bank branch",
+              "It is often a member's first document naming her as a worker, not an invisible person",
+              "It is a document expressly required of every trade-union member by the 1926 Act",
+              "It legally guarantees its holder the full statutory national minimum wage always",
             ],
             correctIndex: 1,
             explanation:
@@ -848,10 +848,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "For SEWA's home-based piece-rate workers, who replaces the employer as bargaining counterparty?",
             options: [
-              "The ILO",
-              "The middleman and trader chain, in piece-rate campaigns",
-              "The police",
-              "Nobody, they cannot bargain at all",
+              "The International Labour Organization, acting on their behalf",
+              "The middleman and the trader chain, through piece-rate campaigns",
+              "The local police, who control the wholesale market where they work",
+              "Nobody at all, since these workers simply cannot bargain in any way",
             ],
             correctIndex: 1,
             explanation:
@@ -861,10 +861,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What is legally odd about the Street Vendors Act, 2014 as a piece of labour law?",
             options: [
-              "It has no penalties",
-              "It regulates municipalities rather than employers, labour law with the employer deleted",
-              "It applies only to Gujarat",
-              "It was written by SEWA",
+              "It contains no penalties and no enforcement mechanism of any single kind whatsoever",
+              "It regulates municipalities rather than employers: labour law with the employer deleted",
+              "It applies only within the single state of Gujarat and nowhere else in all of India",
+              "It was drafted and written entirely by SEWA rather than by any state legislature",
             ],
             correctIndex: 1,
             explanation:
@@ -874,10 +874,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Why did SEWA found its own cooperative bank in 1974?",
             options: [
-              "To speculate in currency markets",
-              "Because no commercial bank would lend to undocumented informal workers, so the union built the institution a formal job would have given access to",
-              "Because the government required unions to run banks",
-              "To pay strike benefits",
+              "To speculate for profit in the international foreign-currency exchange markets abroad",
+              "No commercial bank would lend to undocumented informal workers, so SEWA built its own",
+              "Because the central government legally required every trade union to run its own bank",
+              "To fund and pay out generous weekly strike benefits to all of its striking members",
             ],
             correctIndex: 1,
             explanation:
@@ -887,10 +887,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Which international instruments carry the definitional fight SEWA started in 1972?",
             options: [
-              "The USMCA Rapid Response Mechanism",
-              "The ILO Home Work Convention, 1996 (No. 177) and Recommendation 204 (2015) on formalising the informal economy",
-              "The Geneva Conventions",
-              "The Paris Agreement",
+              "The USMCA Rapid Response Labour Mechanism, enforced through trade sanctions",
+              "The ILO Home Work Convention, 1996 (No. 177) and Recommendation 204 of 2015",
+              "The Geneva Conventions on the treatment of prisoners and civilians in war",
+              "The Paris Agreement on limiting global greenhouse-gas emissions worldwide",
             ],
             correctIndex: 1,
             explanation:
@@ -900,10 +900,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What is the one classic union deliverable missing from SEWA's toolkit, and why?",
             options: [
-              "Strikes, they are illegal for women",
-              "A collective agreement, no counterparty exists that could bind itself to terms for its members as a class",
-              "Membership dues",
-              "Legal representation",
+              "Strikes, which remain entirely illegal for women workers everywhere across India",
+              "A collective agreement: no counterparty exists that could sign terms for its members",
+              "Membership dues, which SEWA is legally forbidden from collecting from any member",
+              "Legal representation, which SEWA cannot lawfully provide to any of its members",
             ],
             correctIndex: 1,
             explanation:
@@ -913,10 +913,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "How is SEWA 'the Ghent effect at the other end of the income distribution'?",
             options: [
-              "It administers Denmark's unemployment funds",
-              "Like Nordic unions, it binds members through services, but its bank and insurance stand in for an absent formal system rather than topping up an existing one",
-              "It was founded by Scandinavian unions",
-              "It pays unemployment benefits from state funds",
+              "It directly administers the national state unemployment insurance funds of Denmark",
+              "Like Nordic unions it binds members through services, but stands in for an absent system",
+              "It was founded and is still bankrolled by the Scandinavian trade-union federations",
+              "It pays out unemployment benefits drawn directly from central government tax funds",
             ],
             correctIndex: 1,
             explanation:
@@ -926,10 +926,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What does this course concede when it says 'membership is not coverage' about SEWA?",
             options: [
-              "That SEWA's members are not real workers",
-              "That 3.78 million is vast as organising but small against an informal workforce in the hundreds of millions, SEWA changes members' lives, not the aggregate condition",
-              "That SEWA's membership is falling",
-              "That coverage requires a political party",
+              "That SEWA's own members are not in fact real workers at all under any Indian law",
+              "3.78 million is vast as organising but tiny against a workforce of hundreds of millions",
+              "That SEWA's total membership has been steadily falling every single year for a decade",
+              "That real coverage always requires the direct backing of an allied political party",
             ],
             correctIndex: 1,
             explanation:
@@ -939,10 +939,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Whose logic does India's e-Shram registry of informal workers borrow, per this course?",
             options: [
-              "The German works council's",
-              "SEWA's, the state substituting itself as counterparty: registration, identity, welfare boards for workers with no employer",
-              "The Wagner Act's",
-              "China's ACFTU's",
+              "The German works council's model of statutory plant-level worker representation",
+              "SEWA's: the state substitutes itself as counterparty, registering the worker directly",
+              "The American Wagner Act's model of a certified majority union bargaining at a firm",
+              "China's ACFTU model of one single party-state-controlled national trade union",
             ],
             correctIndex: 1,
             explanation:
@@ -952,10 +952,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "SEWA organises women, by design. What honest observation does the course attach to that?",
             options: [
-              "Men are legally barred from informal work",
-              "Informal work is disproportionately women's work, and parallel organising of informal men has been thinner everywhere",
-              "Women are a small minority of informal workers",
-              "The design was imposed by the government",
+              "Men are entirely and legally barred from doing any informal work throughout India",
+              "Informal work is disproportionately women's work; organising informal men stayed thinner",
+              "Women make up only a very small minority of all of India's informal-sector workers",
+              "The women-only design was directly imposed on SEWA by the central government by law",
             ],
             correctIndex: 1,
             explanation:
@@ -965,10 +965,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What one-line verdict on SEWA does this course ask you to carry forward?",
             options: [
-              "SEWA failed because it never signed a contract",
-              "Organising the employer-less is possible and SEWA shows the method, but bargaining in the anchor course's sense still requires the employer nine-tenths of Indian workers lack",
-              "SEWA is a political party in waiting",
-              "SEWA's model only works in Gujarat",
+              "SEWA ultimately failed because it never once managed to sign a collective contract",
+              "Organising the employer-less works and SEWA shows how, but bargaining needs an employer",
+              "SEWA is really a political party in waiting, biding its time before contesting polls",
+              "SEWA's whole model only works inside the single home state of Gujarat, nowhere else",
             ],
             correctIndex: 1,
             explanation:
@@ -1106,10 +1106,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What did India's four Labour Codes do to the existing body of central labour law?",
             options: [
-              "Added four new laws on top of it",
-              "Repealed and consolidated 29 central labour laws into four Codes",
-              "Transferred it all to the states",
-              "Abolished labour law entirely",
+              "Added four brand-new labour laws on top of the existing body of laws",
+              "Repealed and consolidated 29 central labour laws into just four Codes",
+              "Transferred the entire body of central labour law over to the states",
+              "Abolished essentially all of India's central labour law altogether",
             ],
             correctIndex: 1,
             explanation:
@@ -1119,10 +1119,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What is the headline change of the Code on Wages, 2019?",
             options: [
-              "It abolished the minimum wage",
-              "The minimum wage became universal, no more 'scheduled employments' gate, plus a national floor wage",
-              "It doubled all wages",
-              "It applies only to factories",
+              "It abolished the statutory minimum wage across the whole of India entirely",
+              "The minimum wage became universal, with a new national floor wage below it",
+              "It automatically doubled every single worker's wage across the whole country",
+              "It applies the minimum wage only inside registered factories, nowhere else",
             ],
             correctIndex: 1,
             explanation:
@@ -1132,10 +1132,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Under the IR Code 2020, which establishments need prior government permission for lay-offs, retrenchment or closure?",
             options: [
-              "All establishments",
+              "All establishments, regardless of how many workers they happen to employ",
               "Those with 300 or more workers, raised from the previous threshold of 100",
-              "Those with 50 or more workers",
-              "None, the requirement was abolished",
+              "Those with 50 or more workers, lowered from the previous threshold of 100",
+              "None at all, since the prior-permission requirement was entirely abolished",
             ],
             correctIndex: 1,
             explanation:
@@ -1145,10 +1145,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What did the IR Code do to strike notice requirements?",
             options: [
-              "Abolished them",
-              "Extended the 14-day advance notice from public utility services to ALL establishments, with wide no-strike windows during proceedings",
-              "Reduced notice to 24 hours",
-              "Made all strikes illegal",
+              "Abolished the strike-notice requirement altogether for every establishment",
+              "Extended the 14-day strike notice from public utilities to all establishments",
+              "Cut the required advance strike notice down to just 24 hours before a strike",
+              "Made every strike, in every single sector, outright illegal across the country",
             ],
             correctIndex: 1,
             explanation:
@@ -1157,7 +1157,12 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           },
           {
             prompt: "What share of workers must a union have to become the sole negotiating union under the IR Code?",
-            options: ["10%", "25%", "51% of workers on the muster roll", "75%"],
+            options: [
+              "10% of the workers on the muster roll",
+              "25% of the workers on the muster roll",
+              "51% of the workers on the muster roll",
+              "75% of the workers on the muster roll",
+            ],
             correctIndex: 2,
             explanation:
               "India's first general statutory recognition rule. With party-tied rivals in one plant, a 51% winner is rare, failing that, a negotiating council of larger unions.",
@@ -1166,10 +1171,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Why does the course insist you 'hold both halves' of the Codes?",
             options: [
-              "Because the Codes are secret",
-              "Because they extend floors (universal minimum wage, social security) while raising thresholds (300 workers, universal strike notice), the halves fall on different workers",
-              "Because half the Codes were repealed",
-              "Because unions and employers agree on everything",
+              "Because the entire content of the four Labour Codes has been kept officially secret",
+              "They extend floors (a universal minimum wage) while raising thresholds (300 workers)",
+              "Because exactly half of the four Labour Codes were later quietly repealed again",
+              "Because the unions and the employers now fully agree on every part of the Codes",
             ],
             correctIndex: 1,
             explanation:
@@ -1179,10 +1184,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "When were the four Codes brought into force?",
             options: [
-              "Immediately on passage in 2019-2020",
-              "21 November 2025, five years after enactment",
-              "They are not yet in force",
-              "1 January 2022",
+              "Immediately on passage, back in 2019 and 2020",
+              "On 21 November 2025, five years after enactment",
+              "They have in fact not yet been brought into force",
+              "On 1 January 2022, about a year after passage",
             ],
             correctIndex: 1,
             explanation:
@@ -1192,10 +1197,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What structural feature of India's constitution explains most of the five-year commencement gap?",
             options: [
-              "The President's veto",
-              "Labour is on the Concurrent List, both Centre and states legislate, and the Codes run on rules every state must write itself",
-              "Labour law requires a referendum",
-              "The Supreme Court suspended the Codes",
+              "The President's power to veto and indefinitely delay the commencement order",
+              "Labour is on the Concurrent List, so every state must write its own rules",
+              "Indian labour law can take effect only after a nationwide public referendum",
+              "The Supreme Court had suspended all four of the Codes for the whole period",
             ],
             correctIndex: 1,
             explanation:
@@ -1205,10 +1210,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "The course's four thresholds every law must cross before it protects anyone are…",
             options: [
-              "Drafted, debated, amended, printed",
-              "Enacted, in force, rules framed, enforced",
-              "Proposed, passed, signed, celebrated",
-              "State, national, ILO, court",
+              "Drafted, debated, amended, and finally printed",
+              "Enacted, then in force, rules framed, enforced",
+              "Proposed, passed, signed, and then celebrated",
+              "State, then national, then ILO, then court",
             ],
             correctIndex: 1,
             explanation:
@@ -1218,10 +1223,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Who absorbed the cost of the five-year gap between enactment and commencement?",
             options: [
-              "The organised tenth, who lost their old protections",
-              "The informal nine-tenths, their universal wage floor and social security existed only inside the un-commenced Codes, while the old laws kept protecting the organised",
-              "Employers, who paid double compliance",
-              "Nobody, the gap had no cost",
+              "The organised tenth, who entirely lost all of their old protections during the gap",
+              "The informal nine-tenths, whose wage floor existed only inside the un-commenced Codes",
+              "Employers, who were forced to pay double the compliance costs throughout the gap",
+              "Nobody at all, since the five-year commencement gap in fact carried no real cost",
             ],
             correctIndex: 1,
             explanation:
@@ -1231,10 +1236,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "How does the Code on Social Security, 2020 define a 'gig worker'?",
             options: [
-              "Any part-time worker",
-              "A person earning from work arrangements outside of traditional employer-employee relationship",
-              "Anyone paid in cash",
-              "A worker under age 30",
+              "Any part-time worker employed for fewer than the standard number of weekly hours",
+              "A person earning from work arrangements outside a traditional employer-employee tie",
+              "Anyone at all who happens to be paid in cash rather than into a formal bank account",
+              "Any worker who is under the age of thirty and works through some digital app",
             ],
             correctIndex: 1,
             explanation:
@@ -1244,10 +1249,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "How are gig-worker social-security schemes funded under the SS Code?",
             options: [
-              "Entirely by general taxation",
-              "By aggregator contributions of 1-2% of annual turnover, capped at 5% of payments to their gig and platform workers",
-              "By worker dues of 10% of earnings",
-              "By the ILO",
+              "Entirely out of general central-government taxation, at no cost to any of the apps",
+              "By aggregator contributions of 1-2% of annual turnover, capped at 5% of payouts",
+              "By compulsory worker dues set at a flat 10% of every single gig worker's earnings",
+              "Directly by the International Labour Organization out of its own Geneva budget",
             ],
             correctIndex: 1,
             explanation:
@@ -1257,10 +1262,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "What did the SS Code's gig recognition deliberately NOT give gig workers?",
             options: [
-              "Social-security schemes",
-              "A statutory definition",
-              "Minimum wage, working-time limits, and collective-bargaining rights, the recognition is welfare, not employment status",
-              "e-Shram registration",
+              "Social-security schemes and welfare-fund coverage of the usual statutory sort",
+              "A clear statutory definition of the gig worker written into the Code text itself",
+              "Minimum wage, working-time limits and collective bargaining: it is welfare only",
+              "Registration and enrolment on the national e-Shram portal for unorganised workers",
             ],
             correctIndex: 2,
             explanation:
@@ -1270,10 +1275,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Which state passed India's first gig-worker law, and what does it levy?",
             options: [
-              "Karnataka, a 10% payroll tax",
-              "Rajasthan (2023), a welfare cess of 1-2% per transaction on aggregators, with a board and register",
-              "Kerala, a flat licence fee",
-              "Gujarat, no levy",
+              "Karnataka, which imposed a flat 10% payroll tax on all of the aggregators",
+              "Rajasthan (2023), a welfare cess of 1-2% per transaction on aggregators",
+              "Kerala, which imposed a single flat annual licence fee on the aggregators",
+              "Gujarat, which imposed no levy of any kind at all on any of the aggregators",
             ],
             correctIndex: 1,
             explanation:
@@ -1283,10 +1288,10 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Why does the course say e-Shram 'borrows the SEWA logic'?",
             options: [
-              "SEWA built the portal",
-              "It attaches identity, registration and welfare to the WORKER rather than to any employer, the counterparty-substitution playbook, run by the state at national scale",
-              "It only registers women",
-              "It is headquartered in Ahmedabad",
+              "SEWA itself actually designed and built the whole of the e-Shram portal for the state",
+              "It attaches identity, registration and welfare to the worker, not to any employer",
+              "The e-Shram portal registers only women workers, just as SEWA itself originally did",
+              "The e-Shram portal is run and headquartered in Ahmedabad, which is SEWA's home city",
             ],
             correctIndex: 1,
             explanation:
@@ -1390,10 +1395,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What does Article 17 of India's Constitution do?",
             options: [
-              "Guarantees a minimum wage",
+              "Guarantees every single worker a statutory national minimum wage",
               "Abolishes 'untouchability' and forbids its practice in any form",
-              "Creates the caste system",
-              "Establishes the census",
+              "Creates and formally codifies the whole caste system in Indian law",
+              "Establishes and mandates the decennial national Census of India",
             ],
             correctIndex: 1,
             explanation:
@@ -1416,10 +1421,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "How many times has manual scavenging been banned by central statute, and when?",
             options: [
-              "Once, in 1950",
-              "Twice, the 1993 Act and the 2013 Prohibition of Employment as Manual Scavengers and their Rehabilitation Act",
-              "It has never been banned",
-              "Three times, most recently in the Labour Codes",
+              "Once only, by a single central statute passed back in the year 1950",
+              "Twice: the 1993 Act and the 2013 Manual Scavengers Rehabilitation Act",
+              "It has in fact never once been banned by any central statute at all",
+              "Three times, the most recent being inside the four 2020 Labour Codes",
             ],
             correctIndex: 1,
             explanation:
@@ -1430,10 +1435,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             prompt:
               "In July 2024 the Ministry of Social Justice told the Rajya Sabha there were 'no reports of manual scavenging as defined by the 2013 Act', and also reported what?",
             options: [
-              "That the 2013 Act had been repealed",
+              "That the entire 2013 Act had by then been formally repealed in full",
               "377 deaths cleaning sewers and septic tanks between 2019 and 2023",
-              "That all sanitation work was now mechanised",
-              "That the census had resumed",
+              "That all of India's sanitation work had by then been fully mechanised",
+              "That the long-delayed decennial census had at last resumed nationwide",
             ],
             correctIndex: 1,
             explanation:
@@ -1443,10 +1448,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Why can 'no manual scavenging' and '377 sewer deaths' both be true at once?",
             options: [
-              "The deaths occurred abroad",
-              "Because the 2013 Act's definition centres on insanitary latrines, so sewer and septic-tank deaths are filed under a different label, 'hazardous cleaning'",
-              "Because the deaths were not workers",
-              "They cannot both be true",
+              "Because all of the reported deaths in fact occurred abroad, outside India entirely",
+              "The 2013 Act's definition centres on latrines, so sewer deaths are filed elsewhere",
+              "Because the people who actually died were not legally workers under any statute",
+              "The two official statements simply cannot both be true at the very same time",
             ],
             correctIndex: 1,
             explanation:
@@ -1456,10 +1461,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What did NAMASTE profiling data (Lok Sabha, December 2024) show about sewer and septic-tank workers?",
             options: [
-              "They are drawn evenly from all communities",
-              "Of 54,574 profiled and validated workers, 67.9% were Scheduled Castes and roughly 92% SC/ST/OBC combined",
-              "Most are recent migrants from abroad",
-              "No caste data was collected",
+              "They are drawn perfectly evenly and proportionally from all of India's communities",
+              "Of 54,574 validated workers, 67.9% were Scheduled Castes and about 92% SC/ST/OBC",
+              "Most of them are in fact recent migrant workers from outside of India entirely",
+              "No caste data of any kind at all was gathered during the NAMASTE profiling drive",
             ],
             correctIndex: 1,
             explanation:
@@ -1469,10 +1474,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What have India's Supreme Court rulings ordered for sewer deaths?",
             options: [
-              "Nothing, the cases were dismissed",
-              "Compensation: ₹10 lakh per death since 1993 (Safai Karamchari Andolan, 2014), raised to ₹30 lakh (Balram Singh, 2023)",
-              "Criminal penalties only",
-              "Nationalisation of sanitation",
+              "Nothing at all; both of the cases were summarily dismissed by the court",
+              "Compensation: ₹10 lakh per death since 1993, raised to ₹30 lakh in 2023",
+              "Only criminal penalties for the employers, with no compensation ordered",
+              "The full nationalisation of all sanitation work across the whole country",
             ],
             correctIndex: 1,
             explanation:
@@ -1482,10 +1487,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Why is half of the 2013 Act devoted to rehabilitation rather than prohibition?",
             options: [
-              "As a drafting error",
-              "Because banning caste-assigned work without replacing the income only criminalises the worker, alternative livelihoods are the other half of ending it",
-              "Because prohibition was already complete",
-              "To fund the census",
+              "It was included purely as an accidental drafting error in the whole 2013 statute",
+              "Banning caste-assigned work without replacing the income only criminalises the worker",
+              "Because prohibition of the practice was by 2013 already wholly and fully complete",
+              "It was written in mainly as a way to help fund the long-delayed national census",
             ],
             correctIndex: 1,
             explanation:
@@ -1495,10 +1500,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What does this course mean by 'the structural exclusion has a caste geography'?",
             options: [
-              "That informality only exists in some states",
-              "That who ends up in the informal economy's worst work, the sewer, the waste heap, is not caste-neutral; the exclusion from labour law's vocabulary falls hardest along lines of descent",
-              "That caste is a regional phenomenon",
-              "That formal workers have no caste",
+              "That informality as a whole exists only in some of India's states, and not others",
+              "Who ends up in the informal economy's very worst work is not at all caste-neutral",
+              "That caste itself is really only a regional phenomenon confined to the far south",
+              "That formal-sector workers in India in fact have no caste identity of any kind",
             ],
             correctIndex: 1,
             explanation:
@@ -1508,10 +1513,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What do India's census figures show about child labour between 2001 and 2011?",
             options: [
-              "An increase from 10.1 to 12.7 million",
-              "A decline from about 12.7 million to about 10.1 million working children aged 5-14, while the child population grew",
-              "No change",
-              "The census does not count working children",
+              "A sharp rise from about 10.1 million up to about 12.7 million working children total",
+              "A decline from about 12.7 million to about 10.1 million working children aged 5-14",
+              "No measurable change at all in the total number of working children aged 5 to 14",
+              "The decennial census does not in fact count working children at all anywhere in India",
             ],
             correctIndex: 1,
             explanation:
@@ -1521,10 +1526,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What did the 2016 amendment do to child employment law?",
             options: [
-              "Legalised all child work",
-              "Banned employment of children under 14 in all occupations and barred adolescents (14-18) from hazardous work, with a family-enterprise exception",
-              "Only raised the working age to 12",
-              "Applied only to factories",
+              "Legalised effectively all forms of child work everywhere throughout the country",
+              "Banned all work by children under 14, with a family-enterprise exception",
+              "Merely raised the minimum working age from ten up to just twelve years of age",
+              "Applied its new child-work ban only inside registered factories and mines",
             ],
             correctIndex: 1,
             explanation:
@@ -1534,10 +1539,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Why do critics call the family-enterprise exception the 2016 ban's biggest hole?",
             options: [
-              "Because family enterprises are always hazardous",
-              "Because in a ~90%-informal economy, the family farm, home workshop and stall are exactly where most child labour lives, and a home workplace is structurally hard to inspect",
-              "Because it applies to adolescents only",
-              "Because it expired in 2020",
+              "Because every family enterprise, without any exception, is inherently hazardous work",
+              "In a ~90%-informal economy, the family farm is exactly where most child labour lives",
+              "Because the exception in fact applies only to adolescents aged 14 to 18, not children",
+              "Because the whole family-enterprise exception quietly expired back in the year 2020",
             ],
             correctIndex: 1,
             explanation:
@@ -1547,10 +1552,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What happened to the hazardous-occupations list for adolescents in the 2016 amendment?",
             options: [
-              "It was expanded from 3 to 83 items",
-              "It was cut from 83 items to 3 broad categories, mines, inflammable substances and explosives, and hazardous processes under the Factories Act",
-              "It was left unchanged",
-              "It was moved into the Constitution",
+              "It was expanded from just 3 items up to a full 83 hazardous categories",
+              "It was cut from 83 items down to just 3 broad hazardous categories",
+              "It was left entirely unchanged by the whole 2016 amendment, at 83 items",
+              "It was lifted wholesale out of statute and moved into the Constitution",
             ],
             correctIndex: 1,
             explanation:
@@ -1560,10 +1565,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Why does this course decline to give a current child-labour figure for India?",
             options: [
-              "Because child labour has ended",
-              "Because the last full count is the 2011 census, the 2021 census was postponed, so every newer number is a survey estimate, which the course attributes rather than headlines",
-              "Because the data is classified",
-              "Because the ILO forbids it",
+              "Because child labour in India has now been completely and entirely ended",
+              "The last full count is the 2011 census, and the 2021 census was postponed",
+              "Because all current child-labour data is officially classified as secret",
+              "Because the International Labour Organization formally forbids publishing any",
             ],
             correctIndex: 1,
             explanation:
@@ -1573,10 +1578,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What 'effective child-labour law' has actually moved India's numbers, per this course?",
             options: [
-              "The Industrial Disputes Act",
-              "Education law, the RTE Act's compulsory-schooling entitlement, plus household income growth, because inspection cannot reach workplaces with no employer of record",
-              "The Trade Unions Act",
-              "The Street Vendors Act",
+              "The Industrial Disputes Act of 1947, through its lay-off and retrenchment provisions",
+              "Education law: the RTE compulsory-schooling entitlement, plus rising household income",
+              "The Trade Unions Act of 1926, through its low seven-member union registration rule",
+              "The Street Vendors Act of 2014, through its town vending committee requirements",
             ],
             correctIndex: 1,
             explanation:
@@ -1641,10 +1646,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "India's answer to 'Who is allowed to organise?' is 'nearly anyone, but…' But what?",
             options: [
-              "But only through the state federation",
-              "But the right is thinner than its paper: no ILO 87/98 ratification, no fundamental right to strike, and a universal 14-day strike notice under the IR Code",
-              "But only in factories",
-              "But unions must register with a political party",
+              "But only through one single official state-controlled trade-union federation",
+              "But the right is thin on paper: no ILO 87/98, no right to strike, 14-day notice",
+              "But only inside registered factories and mines, nowhere else in the whole economy",
+              "But every union must first formally register itself with an approved political party",
             ],
             correctIndex: 1,
             explanation:
@@ -1654,10 +1659,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Summarise India's answer to 'Who is excluded?'",
             options: [
-              "Nobody at all",
-              "Formally almost nobody; structurally roughly nine in ten, via the statutes' vocabulary, with a caste geography, running through childhood",
-              "Only government employees",
-              "Only agricultural workers, by name",
+              "Nobody at all is excluded from India's labour law, either formally or structurally",
+              "Formally almost nobody; structurally roughly nine in ten, with a caste geography",
+              "Only central and state government employees are excluded, and no other workers",
+              "Only agricultural and domestic workers, carved out by name in the statute text",
             ],
             correctIndex: 1,
             explanation:
@@ -1667,10 +1672,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "For the informal nine-tenths, who fills the employer's chair at the bargaining table?",
             options: [
-              "The largest federation",
-              "Substituted counterparties: the middleman, the municipality, and above all the state (welfare boards, e-Shram, aggregator-funded schemes)",
-              "The ILO",
-              "Nobody, bargaining is illegal for them",
+              "The single largest central trade union federation, acting on all their behalf",
+              "Substituted counterparties: the middleman, the municipality, above all the state",
+              "The International Labour Organization, negotiating directly for all the workers",
+              "Nobody at all, since bargaining is entirely illegal for informal workers here",
             ],
             correctIndex: 1,
             explanation:
@@ -1680,10 +1685,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Why does the course say Question 4 has three answers in one country?",
             options: [
-              "Because there are three federations",
-              "Because retaliation differs by which India you work in: a rulebook for the formal private sector, Rangarajan's remedy-less dismissal for government employees, and informal punishment for the informal majority",
-              "Because the Constitution has three articles on strikes",
-              "Because there are three Labour Codes",
+              "Because there are exactly three major central trade union federations across India",
+              "Retaliation differs by which India you work in: rulebook, Rangarajan, informal punishment",
+              "Because the Indian Constitution contains three separate articles dealing with strikes",
+              "Because there are exactly three separate Labour Codes covering industrial relations",
             ],
             correctIndex: 1,
             explanation:
@@ -1693,10 +1698,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Why does this course insist India is 'the largest case, not an exotic one'?",
             options: [
-              "Because India has the world's largest verified union membership",
-              "Because per the ILO, informal employment is the majority experience of work globally, theories of labor rights that assume an employer skip most of the world's workers",
-              "Because every country is 90% informal",
-              "Because the ILO is headquartered in India",
+              "Because India has the single largest verified union membership in the whole world",
+              "Per the ILO, informal employment is the majority experience of work worldwide",
+              "Because every single country on earth is likewise about 90% informally employed",
+              "Because the International Labour Organization is itself headquartered inside India",
             ],
             correctIndex: 1,
             explanation:
@@ -1706,10 +1711,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What replaces bargaining where the employer is missing, per this course's verdict?",
             options: [
-              "Arbitration",
-              "Politics, demands aimed at the state, which is why India's biggest labor events are general strikes against governments over policy, not contract fights against firms",
-              "Litigation",
-              "Nothing at all",
+              "Formal, binding arbitration of the whole dispute before a neutral third-party panel",
+              "Politics: demands aimed at the state, which is why the big events are general strikes",
+              "Litigation, taking the individual employer straight to the labour courts and tribunals",
+              "Nothing at all replaces it; the informal workers simply have no recourse whatsoever",
             ],
             correctIndex: 1,
             explanation:
@@ -1719,10 +1724,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "State the course's three-part sourcing discipline.",
             options: [
-              "Trust official sources, distrust unions, ignore the press",
+              "Trust all official sources, distrust the unions, and simply ignore the press",
               "No number without a definition, no law without a date, no claim without an owner",
-              "Always use the largest available figure",
-              "Only cite the ILO",
+              "Always use the single largest available figure that any given source has published",
+              "Only ever cite the ILO itself, and never cite any other source of data at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1732,10 +1737,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Apply the discipline: a headline says 'India's Labour Codes guarantee every worker a minimum wage.' What must you ask before repeating it?",
             options: [
-              "Nothing, statutes are self-executing",
-              "Which threshold the claim refers to (enacted 2019/20, in force 21 Nov 2025, Central Rules 8 May 2026, state rules uneven as of mid-2026), and how 'worker' and enforcement reach the informal majority",
-              "Only whether the number is in crores or millions",
-              "Whether the headline is from a union or an employer",
+              "Nothing at all needs asking, since all Indian statutes are entirely self-executing",
+              "Which of the four thresholds the claim refers to, and how it reaches informal workers",
+              "Only whether the headline figure is expressed in crores or else in plain millions",
+              "Only whether the headline came originally from a trade union or from an employer",
             ],
             correctIndex: 1,
             explanation:
@@ -1745,10 +1750,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "SEWA's method and e-Shram share one design principle. Which?",
             options: [
-              "Attach identity, registration and protection to the PERSON rather than to a job or employer",
-              "Fund everything through union dues",
-              "Organise only formal-sector workers",
-              "Replace the state with cooperatives",
+              "Attach identity, registration and protection to the person, not to a job or employer",
+              "Fund absolutely everything entirely through the members' own trade-union dues alone",
+              "Organise only the formal-sector workers, and never any of the informal workers at all",
+              "Replace the entire state apparatus with member-owned worker cooperatives everywhere",
             ],
             correctIndex: 0,
             explanation:
@@ -1758,10 +1763,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "What single structural limit stands at both SEWA scale and national scale?",
             options: [
-              "Lack of members",
-              "No counterparty, no contract, organising and welfare are achievable without an employer; a collective agreement is not",
-              "Lack of laws",
-              "The census delay",
+              "A simple and chronic lack of enough dues-paying members to sustain all the work",
+              "No counterparty, no contract: organising works without an employer, a contract cannot",
+              "A simple and chronic lack of any applicable labour laws on the statute books at all",
+              "The long postponement and repeated delay of the whole decennial national census",
             ],
             correctIndex: 1,
             explanation:
@@ -1772,10 +1777,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             prompt:
               "The course closes by asking you to test the anchor course's machinery against one figure. Who, and why?",
             options: [
-              "A factory manager, because factories are typical",
-              "A street vendor, whatever survives contact with a worker who has no employer is the real core of labor rights",
-              "A judge, because courts decide everything",
-              "A federation president, because unions speak for all workers",
+              "A factory manager, on the grounds that formal factories are the entirely typical case",
+              "A street vendor: whatever survives contact with an employer-less worker is the core",
+              "A high-court judge, on the grounds that the courts ultimately decide everything",
+              "A federation president, on the grounds that the unions truly speak for all workers",
             ],
             correctIndex: 1,
             explanation:
@@ -1785,10 +1790,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Which pairing correctly matches the track's three union-politics entanglements to their countries?",
             options: [
-              "India: party owns the single union; China: many parties, many unions; Poland: union destroyed the party-state",
-              "Poland: the union destroyed the party-state; China: the party owns the one permitted union; India: many parties, each with its own union",
-              "Poland: many parties, many unions; China: union came first; India: single state federation",
-              "All three: single state-run federation",
+              "India: the party owns the single union; China: many rival unions; Poland: the union won power",
+              "Poland: the union destroyed the party-state; China: the party owns the union; India: rival unions",
+              "Poland: many rival parties and unions; China: the union came first; India: one state federation",
+              "All three countries simply run one single state-run federation and allow no rival unions at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1799,10 +1804,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             prompt:
               "Apply the discipline to '250 million workers struck on 9 July 2025.' Who owns that number, and what may you honestly repeat?",
             options: [
-              "The government owns it; repeat it freely",
-              "The organising unions own it; you may repeat 'the organisers claimed over 250 million', attribution, not assertion",
-              "The ILO owns it; it is audited",
-              "Nobody owns it; numbers need no owners",
+              "The government owns the figure, and so you may simply repeat it as a plain fact",
+              "The unions own it; you may repeat 'the organisers claimed over 250 million', attributed",
+              "The ILO owns the figure, and it has been fully and independently audited already",
+              "Nobody at all owns the figure, since numbers never need to have any owners at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1812,10 +1817,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "e-Shram recorded over 309 million registrations by July 2025. What is the careful reading of that figure?",
             options: [
-              "309 million workers now receive benefits",
-              "It counts registrations on a self-declaration portal, a measure of who raised their hand, not of benefits delivered",
-              "It counts union members",
-              "It is the number of formal-sector employees",
+              "All 309 million of those registered workers now actually receive their full benefits",
+              "It counts self-declared registrations, who raised their hand, not benefits delivered",
+              "It counts the total registered trade-union membership across the whole of India today",
+              "It is simply the total number of all formal-sector employees in the entire country",
             ],
             correctIndex: 1,
             explanation:
@@ -1825,10 +1830,10 @@ Both sentences can be true at once, and seeing how is a skill this course has be
           {
             prompt: "Why is India called this track's most important stress test of the anchor course?",
             options: [
-              "Because India has the strictest labour laws",
-              "Because every anchor tool assumes an employer, and India is the largest case where most workers have none, what survives that test is the real core of labor rights",
-              "Because India ratified every ILO convention first",
-              "Because Indian unions are the world's oldest",
+              "Because India in fact has the single strictest labour laws found anywhere in the world",
+              "Every anchor tool assumes an employer, and India is the largest case where most lack one",
+              "Because India was the very first country to ratify every single one of the ILO conventions",
+              "Because India's trade unions are demonstrably the very oldest anywhere in the world",
             ],
             correctIndex: 1,
             explanation:
