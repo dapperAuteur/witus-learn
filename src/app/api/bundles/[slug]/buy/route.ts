@@ -1,0 +1,42 @@
+import { apiContext, errorJson, json } from "@/lib/api";
+import { getActiveLearner } from "@/lib/active-learner";
+import { getBundleBySlug } from "@/db/queries/bundles";
+import { enrollFree } from "@/db/queries/enrollment";
+import { createBundleCheckout, ensureBundlePrice, getStripe } from "@/lib/stripe";
+import { getSiteUrl } from "@/lib/site-url";
+
+// POST /api/bundles/[slug]/buy — buy a bundle. A free bundle (price 0) enrolls the learner in every
+// member course immediately; a paid one returns a Stripe Checkout URL and the webhook enrolls on
+// payment. 404s across tenants (the bundle query is tenant-scoped). Enrollment is attributed to the
+// ACTIVE learner (self or a managed child), same as the course flow.
+export async function POST(_req: Request, { params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const { sdb, session } = await apiContext();
+  if (!session) return errorJson("Unauthorized", 401);
+  const learner = (await getActiveLearner(session))!;
+
+  const found = await getBundleBySlug(sdb.tenantId, slug); // published only
+  if (!found) return errorJson("Not found", 404);
+  const { bundle, courses } = found;
+  if (courses.length === 0) return errorJson("This bundle has no available courses", 409);
+
+  // Free bundle: enroll in every member course directly (idempotent per course).
+  if (Number(bundle.price) === 0 || bundle.priceType === "free") {
+    for (const c of courses) await enrollFree(sdb.tenantId, learner.id, c.id);
+    return json({ enrolled: true, courses: courses.length }, 201);
+  }
+
+  // Paid bundle: Stripe Checkout, the webhook grants access on payment.
+  const stripe = getStripe();
+  if (!stripe) return errorJson("Payments are not configured", 503);
+  const priceId = await ensureBundlePrice(stripe, sdb.tenantId, bundle);
+  const url = await createBundleCheckout({
+    stripe,
+    tenant: sdb.tenant,
+    bundle,
+    userId: learner.id,
+    priceId,
+    siteUrl: await getSiteUrl(),
+  });
+  return json({ url });
+}
