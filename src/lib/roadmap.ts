@@ -395,6 +395,22 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   recruiting block, and the ecosystem footer. No migration.
 
 ## Content
+- 🔧 **The two structural paths have their first courses** (\`plans/46\`). Both paths are the general
+  case of something the catalog already teaches one instance at a time, and the method course of each
+  now ships. **Who Has the Power to Do This?** (Civics, \`who-has-the-power\`, 19 lessons / 5 sections /
+  4 quizzes / a map / a capstone) is the general case of the route series: given any government
+  action, find the body, its enabling authority, the document that grants it, and who can overturn
+  it. It teaches Dillon's Rule vs home rule and the special-district layer, and introduces tribal
+  nations as a SEPARATE sovereign, not a rung on the ladder. It declines the apocryphal Andrew Jackson
+  quote (teaching the refusal as method) and keeps Dillon's Rule vs the Cooley Doctrine an open split.
+  **What a Business Entity Actually Is** (Civics, \`what-a-business-entity-is\`, 19 lessons / 5 sections
+  / 4 quizzes / a capstone) is the general case of What They Built: an entity is a bundle of four
+  decisions (liability, taxation, ownership/transfer, governance), and reading the formation documents
+  as primary sources is the skill; it says plainly, repeatedly, that it is not legal or tax advice, and
+  asserts no statute section or tax rate from memory. Both are mapped to the Common Core RH/WHST
+  literacy strands and shuffle-by-default; all eight quiz banks score 25-31% on the length tell. These
+  are the pilot tranche: 1 of 9 government courses and 1 of 7 business courses; the rest follow across
+  later sessions. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**

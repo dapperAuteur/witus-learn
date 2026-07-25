@@ -115,6 +115,8 @@ import { JIM_CROW_EXPORT_COURSE } from "./data/jim-crow-export-course";
 import { SCHOOLHOUSE_NETWORK_COURSE } from "./data/schoolhouse-network-course";
 import { WHERE_WE_RESTED_COURSE } from "./data/where-we-rested-course";
 import { WHAT_THEY_BUILT_COURSE } from "./data/what-they-built-course";
+import { WHAT_A_BUSINESS_ENTITY_IS_COURSE } from "./data/what-a-business-entity-is-course";
+import { WHO_HAS_THE_POWER_COURSE } from "./data/who-has-the-power-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
@@ -748,6 +750,19 @@ async function main() {
     // (the True Reformers embezzlement, Binga's charge) sit in the achievement column where they
     // belong. It deliberately teaches NO instruments of clearance; the route series owns those.
     { slug: "what-they-built", course: WHAT_THEY_BUILT_COURSE, category: "Culture & History" },
+    // "What a Business Entity Actually Is" is course 1 (the method course) of the "How a Business Is
+    // Formed" path (plans/46, Path B): an entity is a bundle of four decisions (liability, taxation,
+    // ownership/transfer, governance), and reading the formation documents as primary sources is the
+    // skill. It is the general case of which What They Built is a worked example, and it says plainly,
+    // repeatedly, that it is not legal or tax advice. First of 7 planned path courses.
+    { slug: "what-a-business-entity-is", course: WHAT_A_BUSINESS_ENTITY_IS_COURSE, category: "Civics" },
+    // "Who Has the Power to Do This?" is course 1 (the method course) of the "Who Has the Power?" path
+    // (plans/46, Path A): given any government action, find the body, its enabling authority, the
+    // document that grants it, and who can overturn it. It is the general case of which the route
+    // series is fourteen worked examples (find the instrument, then its source), teaches Dillon's Rule
+    // vs home rule and the special-district layer, and introduces tribal nations as a SEPARATE
+    // sovereign, not a rung on the ladder. First of 9 planned path courses.
+    { slug: "who-has-the-power", course: WHO_HAS_THE_POWER_COURSE, category: "Civics" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

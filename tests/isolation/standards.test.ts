@@ -178,6 +178,9 @@ const CATALOG = [
   "history-of-bathing",
   // Civics
   "state-civics-dc",
+  // Structures paths (plans/46) — method courses
+  "who-has-the-power",
+  "what-a-business-entity-is",
 ];
 
 describe("standards data integrity — a wrong code could be filed with a state", () => {
