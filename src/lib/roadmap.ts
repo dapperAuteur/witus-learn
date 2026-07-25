@@ -381,6 +381,14 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   env vars (\`CRON_SECRET\`, \`DEMO_VISITOR_PASSWORD\`, \`DEMO_VISITOR_USER_EMAIL\`), the feature stays
   dark until BAM sets them (see \`plans/user-tasks/62-demo-account-setup.md\` for the domain/env/seed
   steps).
+- 🔧 **Proposed pricing** (\`/admin/pricing\`, owner-only): a fair-and-competitive price
+  recommendation for every course, in five tiers (Free, Foundation $9, Core $19, Premium $29,
+  Certification prep $39), assigned by category with per-course overrides (US Civics 101 free as a
+  funnel; the Green Book flagship and the two capstones at Premium; FAA Part 107 at Certification;
+  single-state civics at Foundation). Shows current vs proposed side by side (current read from the
+  catalog), and leads with the recommendation that the PRIMARY model be an all-access subscription
+  (~$12/mo or $99/yr). Proposals only, nothing changes a live price, and no number is a revenue
+  promise. Model + assignment in \`src/lib/course-pricing.ts\`.
 - 🔧 **Teachers Pay Teachers plan** (\`/admin/tpt-plan\`, owner-only): a ranked rollout plan for the
   TpT sales channel, ordered to optimize reach and conversion (free gateway first to buy followers and
   reviews, then high-intent state-civics units, then the differentiated Green Book flagship, then
