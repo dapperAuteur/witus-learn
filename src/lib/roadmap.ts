@@ -381,6 +381,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   env vars (\`CRON_SECRET\`, \`DEMO_VISITOR_PASSWORD\`, \`DEMO_VISITOR_USER_EMAIL\`), the feature stays
   dark until BAM sets them (see \`plans/user-tasks/62-demo-account-setup.md\` for the domain/env/seed
   steps).
+- ✅ **Bundle SALES are live** (\`feat/bundle-sales\`, **migration 0039**). The app can now sell a
+  bundle: two tenant-scoped tables (\`bundles\`, \`bundle_courses\`), \`createBundleCheckout\`
+  mirroring the course flow, and a webhook branch that enrolls the buyer in EVERY member course
+  idempotently (a Stripe retry never double-enrolls; access is granted per course so a later bundle
+  edit cannot revoke it). \`/bundles\` and \`/bundles/<slug>\` are the buy surface (free bundles enroll
+  directly, paid go to Stripe), \`/admin/bundles\` is the owner view, and \`pnpm seed:bundles\` creates
+  the six proposed bundles UNPUBLISHED with the recommended price so nothing sells until BAM publishes.
+  Tenant isolation is tested (a bundle 404s across tenants and never surfaces another tenant's course).
+  Promos and ecosystem cross-promo (CentenarianOS, FlashLearnAI) already worked and are unchanged.
+  **After merge: \`pnpm db:migrate:prod\`, then \`pnpm seed:bundles\`.**
 - 🔧 **Bundle proposals + the bundle-sales gap** (\`src/lib/bundles.ts\`, on \`/admin/pricing\`).
   Six themed bundles (the full route series, Black History Through Place, Civics Essentials, the state
   civics collection, the two structural paths, and the global labor series), each with an APP price and
