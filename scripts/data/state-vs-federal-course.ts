@@ -490,10 +490,10 @@ The through-line: most of the time, state and federal law **overlap peacefully**
           {
             prompt: "What does the Commerce Clause give Congress power over?",
             options: [
-              "Only the buying and selling of goods within one state",
-              "Commerce with foreign nations, among the several states, and with the Indian tribes",
-              "All commerce, with no limits",
-              "Only commerce that the states approve",
+              "Only the buying and selling of goods made within one state",
+              "Commerce with foreign nations, among the states, and with tribes",
+              "All commerce everywhere, with no constitutional limits at all",
+              "Only commerce that a state's legislature has approved first",
             ],
             correctIndex: 1,
             explanation:
@@ -504,10 +504,10 @@ The through-line: most of the time, state and federal law **overlap peacefully**
             prompt:
               "Under the Supremacy Clause, what happens when a valid federal law and a state law genuinely conflict?",
             options: [
-              "The state law wins",
-              "Both are struck down",
-              "The federal law prevails (the state law gives way)",
-              "The Supreme Court must rewrite both",
+              "The state law wins within that state's borders",
+              "Both laws are struck down and Congress must retry",
+              "The federal law prevails and the state law gives way",
+              "The Supreme Court must rewrite both to agree",
             ],
             correctIndex: 2,
             explanation:
@@ -525,10 +525,10 @@ The through-line: most of the time, state and federal law **overlap peacefully**
           {
             prompt: "What did McCulloch v. Maryland (1819) establish?",
             options: [
-              "That states may tax federal institutions",
-              "That Congress has implied powers and a state may not tax the federal bank",
-              "That the President can ignore Congress",
-              "That the Commerce Clause is unlimited",
+              "That states may freely tax federal institutions inside them",
+              "That Congress has implied powers, and states cannot tax it",
+              "That the President may ignore Congress during a crisis",
+              "That the Commerce Clause reaches every activity at all",
             ],
             correctIndex: 1,
             explanation:
@@ -538,10 +538,10 @@ The through-line: most of the time, state and federal law **overlap peacefully**
           {
             prompt: "In Gibbons v. Ogden (1824), how did the Supreme Court define 'commerce'?",
             options: [
-              "Narrowly: only the sale of physical goods",
-              "Broadly: including navigation and commercial intercourse among the states",
-              "As anything a state chooses to allow",
-              "As limited to foreign trade only",
+              "Narrowly: only the sale of physical goods across a line",
+              "Broadly: including navigation and commercial intercourse",
+              "As whatever activity a single state chooses to allow",
+              "As limited strictly to foreign trade across the ocean",
             ],
             correctIndex: 1,
             explanation:
@@ -564,10 +564,10 @@ The through-line: most of the time, state and federal law **overlap peacefully**
           {
             prompt: "Which statement best describes how state and federal law usually interact?",
             options: [
-              "They are almost always in conflict",
-              "Federal law replaces all state law",
-              "Most of the time they operate side by side; the Supremacy Clause resolves true conflicts",
-              "States can override any federal law they dislike",
+              "They are almost always in direct conflict with each other",
+              "Federal law automatically replaces all state law on point",
+              "Usually side by side; the Supremacy Clause resolves conflicts",
+              "States may override any federal law that they dislike",
             ],
             correctIndex: 2,
             explanation:

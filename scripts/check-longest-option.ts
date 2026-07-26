@@ -189,7 +189,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/state-civics-wi-course.ts": 0.88,
   "scripts/data/state-civics-wv-course.ts": 0.93,
   "scripts/data/state-civics-wy-course.ts": 0.70,
-  "scripts/data/state-vs-federal-course.ts": 0.63,
   "scripts/data/studying-abroad-course.ts": 1.00,
   "scripts/data/survival-course.ts": 0.93,
   "scripts/data/taxes-americans-abroad-course.ts": 0.94,
@@ -199,7 +198,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/travel-flying-home-course.ts": 0.78,
   "scripts/data/travel-passport-course.ts": 0.84,
   "scripts/data/two-racetracks-course.ts": 0.97,
-  "scripts/data/us-state-local-gov-course.ts": 0.61,
   "scripts/data/voting-elections-101-course.ts": 0.85,
   "scripts/data/woop-course.ts": 1.00,
 };
