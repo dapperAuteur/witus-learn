@@ -474,8 +474,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   on fraternal societies, industrial insurance, building-and-loans, ROSCAs worldwide (susu, tanda,
   chit fund, tontine) and Islamic finance, on the through-line that when the capital system excludes
   you, you invent an entity. It declines Islamic-finance market statistics rather than quote them
-  loosely and teaches the form-vs-substance debate unresolved. Tranche so far: 2 of 9 government and 2
-  of 7 business courses. **Re-run \`pnpm seed:courses\`.**
+  loosely and teaches the form-vs-substance debate unresolved. Two more join now: **The US Forms**
+  (\`us-business-forms\`, business path course 2: the US entity forms read through the four decisions,
+  the S-corp taught as a tax ELECTION not an entity type) and **The Middle Layer** (\`the-middle-layer\`,
+  government path course 4: states, provinces and regions on the federalism-vs-devolution distinction,
+  entrenched co-sovereigns versus powers granted by statute). Tranche so far: 3 of 9 government and 3
+  of 7 business courses; coverage 95/98. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**

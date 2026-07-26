@@ -183,6 +183,8 @@ const CATALOG = [
   "what-a-business-entity-is",
   "the-local-layer",
   "financing-without-access",
+  "us-business-forms",
+  "the-middle-layer",
 ];
 
 describe("standards data integrity — a wrong code could be filed with a state", () => {

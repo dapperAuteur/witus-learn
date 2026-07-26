@@ -119,6 +119,8 @@ import { WHAT_A_BUSINESS_ENTITY_IS_COURSE } from "./data/what-a-business-entity-
 import { WHO_HAS_THE_POWER_COURSE } from "./data/who-has-the-power-course";
 import { THE_LOCAL_LAYER_COURSE } from "./data/the-local-layer-course";
 import { FINANCING_WITHOUT_ACCESS_COURSE } from "./data/financing-without-access-course";
+import { US_BUSINESS_FORMS_COURSE } from "./data/us-business-forms-course";
+import { THE_MIDDLE_LAYER_COURSE } from "./data/the-middle-layer-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
@@ -764,6 +766,12 @@ async function main() {
     // without interest (Islamic finance). Through-line: when the capital system excludes you, you
     // invent an entity. The general case of What They Built's fraternal-orders-and-building-loans.
     { slug: "financing-without-access", course: FINANCING_WITHOUT_ACCESS_COURSE, category: "Civics" },
+    // "The US Forms" is course 2 of the business path (plans/46, Path B): the US entity forms read
+    // through the four decisions, with the S-corp taught as a tax ELECTION not an entity type.
+    { slug: "us-business-forms", course: US_BUSINESS_FORMS_COURSE, category: "Civics" },
+    // "The Middle Layer" is course 4 of the government path (plans/46, Path A): states/provinces/regions,
+    // on the federalism-vs-devolution distinction (entrenched co-sovereigns vs powers granted by statute).
+    { slug: "the-middle-layer", course: THE_MIDDLE_LAYER_COURSE, category: "Civics" },
     // "Who Has the Power to Do This?" is course 1 (the method course) of the "Who Has the Power?" path
     // (plans/46, Path A): given any government action, find the body, its enabling authority, the
     // document that grants it, and who can overturn it. It is the general case of which the route
