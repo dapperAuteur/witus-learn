@@ -129,6 +129,8 @@ import { TRIBAL_NATIONS_GOVERNANCE_COURSE } from "./data/tribal-nations-governan
 import { GOVERNMENTS_WITHOUT_STATES_COURSE } from "./data/governments-without-states-course";
 import { HOW_POWER_CHANGES_HANDS_COURSE } from "./data/how-power-changes-hands-course";
 import { BUSINESS_GOVERNANCE_COURSE } from "./data/business-governance-course";
+import { MAP_YOUR_OWN_STACK_COURSE } from "./data/map-your-own-stack-course";
+import { CHOOSE_A_FORM_CAPSTONE_COURSE } from "./data/choose-a-form-capstone-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
@@ -829,6 +831,14 @@ async function main() {
     // taken deep. Boards, shareholders vs stakeholders, fiduciary duty (care/loyalty, business judgment
     // rule), dual-class shares, the German two-tier board, and one-share-one-vote vs one-member-one-vote.
     { slug: "business-governance", course: BUSINESS_GOVERNANCE_COURSE, category: "Civics" },
+    // "Map Your Own Stack" is course 9, the CAPSTONE, of the government path (plans/46, Path A): the
+    // learner documents every government with authority over their block from the primary record (most
+    // find six to twelve and are surprised by half), synthesizing the whole path. Completes Path A (9/9).
+    { slug: "map-your-own-stack", course: MAP_YOUR_OWN_STACK_COURSE, category: "Civics" },
+    // "Choose a Form and Defend It" is course 7, the CAPSTONE, of the business path (plans/46, Path B):
+    // real scenarios, pick a form and defend it against the four decisions AND a named alternative,
+    // not legal advice (stated in the assignment itself). Completes Path B (7/7).
+    { slug: "choose-a-form-capstone", course: CHOOSE_A_FORM_CAPSTONE_COURSE, category: "Civics" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

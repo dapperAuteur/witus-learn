@@ -4063,6 +4063,11 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "governments-without-states",
       "how-power-changes-hands",
       "business-governance",
+      // The two path capstones: Map Your Own Stack integrates every layer's primary record into one
+      // account of a real block; Choose a Form and Defend It integrates the path's frameworks into a
+      // coherent, defended entity choice.
+      "map-your-own-stack",
+      "choose-a-form-capstone",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4115,6 +4120,10 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "tribal-nations-governance",
       "governments-without-states",
       "how-power-changes-hands",
+      // Map Your Own Stack teaches the corroborate-or-challenge discipline on the learner's own
+      // findings: "did not find" kept distinct from "does not exist," no value asserted from memory,
+      // disagreements flagged as claims to check against the primary record.
+      "map-your-own-stack",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",
@@ -4166,6 +4175,10 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "governments-without-states",
       "how-power-changes-hands",
       "business-governance",
+      // Map Your Own Stack is the path's graded research capstone in full: locate every government over
+      // a real block from the primary record (statutes, charters, the tax bill, treaties) and write it
+      // up with citations, distinguishing what was not found from what does not exist.
+      "map-your-own-stack",
     ],
     lessons: [
       "19 · Your assignment: find a listing, then find the address today",

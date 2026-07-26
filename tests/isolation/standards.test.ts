@@ -193,6 +193,8 @@ const CATALOG = [
   "governments-without-states",
   "how-power-changes-hands",
   "business-governance",
+  "map-your-own-stack",
+  "choose-a-form-capstone",
 ];
 
 describe("standards data integrity — a wrong code could be filed with a state", () => {

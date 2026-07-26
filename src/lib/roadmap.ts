@@ -490,9 +490,11 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   directives. The design rule holds in the author's text, not the renderer: co-occurrence is the claim,
   not balance. Next up (plans/44/45): the map time-slider (Option B) and the explore-map globe.
 
-- 🔧 **The two structural paths have their first courses** (\`plans/46\`). Both paths are the general
-  case of something the catalog already teaches one instance at a time, and the method course of each
-  now ships. **Who Has the Power to Do This?** (Civics, \`who-has-the-power\`, 19 lessons / 5 sections /
+- ✅ **Both structural paths are complete** (\`plans/46\`): Path A "Who Has the Power?" is 9 of 9 and
+  Path B "How a Business Is Formed" is 7 of 7. (One enhancement stays open, filed as \`plans/49\`: the
+  separate-sovereign polygon map layer the Tribal Nations course wants, which currently ships a
+  point-based stopgap.) Both paths are the general case of something the catalog already teaches one
+  instance at a time. **Who Has the Power to Do This?** (Civics, \`who-has-the-power\`, 19 lessons / 5 sections /
   4 quizzes / a map / a capstone) is the general case of the route series: given any government
   action, find the body, its enabling authority, the document that grants it, and who can overturn
   it. It teaches Dillon's Rule vs home rule and the special-district layer, and introduces tribal
@@ -542,8 +544,13 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   worked example labelled hypothetical), and **Governance: Who Actually Decides** (\`business-governance\`,
   business course 6: boards, fiduciary duty, dual-class shares, the German two-tier board, and one share
   one vote vs one member one vote). All map to the RH/WHST strands; every new bank 23-35% on the length
-  tell. Tranche so far: 8 of 9 government and 6 of 7 business courses (only the two capstones left);
-  coverage 103/106. **Re-run \`pnpm seed:courses\`.**
+  tell. Finally the two CAPSTONES land and **both paths are complete**: **Map Your Own Stack**
+  (\`map-your-own-stack\`, government course 9 of 9: document every government with authority over your
+  block from the primary record, most people find six to twelve and are surprised by half, the graded
+  research capstone that synthesizes the whole path) and **Choose a Form and Defend It**
+  (\`choose-a-form-capstone\`, business course 7 of 7: pick a form for a real scenario and defend it
+  against the four decisions and a named alternative, not legal advice, stated in the assignment).
+  **Path A is 9 of 9 and Path B is 7 of 7**; coverage 105/108. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**
