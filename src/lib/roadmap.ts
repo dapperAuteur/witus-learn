@@ -529,8 +529,21 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   decisions applied to the UK, Germany with Mitbestimmung, France, Japan, the Nordics, China's SOEs and
   the VIE contractual structure, and India, on the point that the American set is not universal). All
   four map to the Common Core RH/WHST literacy strands and shuffle-by-default; every new quiz bank
-  scores 23-35% on the length tell. Tranche so far: 5 of 9 government and 5 of 7 business courses;
-  coverage 99/102. **Re-run \`pnpm seed:courses\`.**
+  scores 23-35% on the length tell. Then four MORE join: **Tribal Nations and Indigenous Governance**
+  (\`tribal-nations-governance\`, government course 6: sovereignty as pre-existing not delegated,
+  treaties as supreme law, IRA 1934 vs traditional governance, McGirt, and Alaska Native corporations,
+  authored under plans/46's care rules, teaching that/whose/why and reproducing no ceremonial or
+  restricted detail, leading with nations' own words and Indigenous scholars, the Haudenosaunee held
+  with care and the Constitution-influence claim taught as contested), **Governments Without States**
+  (\`governments-without-states\`, government course 7: the EU as its own legal order, the UN and AU,
+  contested states taught neutrally with attribution, and self-governing communities), **How Power
+  Changes Hands** (\`how-power-changes-hands\`, government course 8: election systems that turn identical
+  votes into different winners, then coups, revolutions, negotiated transitions and term limits, the
+  worked example labelled hypothetical), and **Governance: Who Actually Decides** (\`business-governance\`,
+  business course 6: boards, fiduciary duty, dual-class shares, the German two-tier board, and one share
+  one vote vs one member one vote). All map to the RH/WHST strands; every new bank 23-35% on the length
+  tell. Tranche so far: 8 of 9 government and 6 of 7 business courses (only the two capstones left);
+  coverage 103/106. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**

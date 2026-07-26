@@ -4056,6 +4056,13 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // through the four decisions, with cited authoritative sources.
       "cooperatives",
       "foreign-business-forms",
+      // Government path courses 6-8: read treaties and tribal constitutions, supranational founding
+      // treaties, and electoral law into a coherent account. Business course 6: read governance
+      // documents (bylaws, board structures) and doctrine into a coherent account of who decides.
+      "tribal-nations-governance",
+      "governments-without-states",
+      "how-power-changes-hands",
+      "business-governance",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4101,6 +4108,13 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // semi-presidential; how imposed was Japan's constitution) against the record.
       "forms-of-government",
       "how-countries-constitute",
+      // Tribal Nations tests the delegated-vs-inherent-sovereignty correction and holds the
+      // Iroquois-influence claim as contested; Governments Without States tests recognition claims
+      // (declarative vs constitutive) and contested-state status; How Power Changes Hands tests the
+      // claim that identical votes yield different winners, and Duverger's law as a tendency.
+      "tribal-nations-governance",
+      "governments-without-states",
+      "how-power-changes-hands",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",
@@ -4144,6 +4158,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // How Countries Constitute capstone: trace how one real constitution was made from the primary
       // record (the constitutional text itself) and classify its system, written up with citations.
       "how-countries-constitute",
+      // Structures-path capstones that locate a primary record and write it up with citations: Tribal
+      // Nations (find the nations whose ground you are on, from the record), Governments Without States
+      // (find a non-state body and its founding document), How Power Changes Hands (one real contest's
+      // record under two systems), and Business Governance (read a real governance filing: who decides).
+      "tribal-nations-governance",
+      "governments-without-states",
+      "how-power-changes-hands",
+      "business-governance",
     ],
     lessons: [
       "19 · Your assignment: find a listing, then find the address today",

@@ -189,6 +189,10 @@ const CATALOG = [
   "how-countries-constitute",
   "cooperatives",
   "foreign-business-forms",
+  "tribal-nations-governance",
+  "governments-without-states",
+  "how-power-changes-hands",
+  "business-governance",
 ];
 
 describe("standards data integrity — a wrong code could be filed with a state", () => {

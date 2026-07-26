@@ -125,6 +125,10 @@ import { FORMS_OF_GOVERNMENT_COURSE } from "./data/forms-of-government-course";
 import { HOW_COUNTRIES_CONSTITUTE_COURSE } from "./data/how-countries-constitute-course";
 import { COOPERATIVES_COURSE } from "./data/cooperatives-course";
 import { FOREIGN_BUSINESS_FORMS_COURSE } from "./data/foreign-business-forms-course";
+import { TRIBAL_NATIONS_GOVERNANCE_COURSE } from "./data/tribal-nations-governance-course";
+import { GOVERNMENTS_WITHOUT_STATES_COURSE } from "./data/governments-without-states-course";
+import { HOW_POWER_CHANGES_HANDS_COURSE } from "./data/how-power-changes-hands-course";
+import { BUSINESS_GOVERNANCE_COURSE } from "./data/business-governance-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
@@ -805,6 +809,26 @@ async function main() {
     // four decisions applied to the UK, Germany (with Mitbestimmung), France, Japan, the Nordics, China
     // (SOEs and the VIE contractual structure), and India; the American set of forms is not universal.
     { slug: "foreign-business-forms", course: FOREIGN_BUSINESS_FORMS_COURSE, category: "Civics" },
+    // "Tribal Nations and Indigenous Governance" is course 6 of the government path (plans/46, Path A):
+    // sovereignty as PRE-EXISTING not delegated (a separate sovereign, not a rung), treaties as supreme
+    // law, IRA 1934 vs traditional governance (the Haudenosaunee held with care), Public Law 280,
+    // McGirt, and Alaska Native corporations. Follows plans/46's care rules: teaches that/whose/why,
+    // reproduces no ceremonial or restricted detail, leads with nations' own words and Indigenous scholars.
+    { slug: "tribal-nations-governance", course: TRIBAL_NATIONS_GOVERNANCE_COURSE, category: "Civics" },
+    // "Governments Without States" is course 7 of the government path (plans/46, Path A): the EU as its
+    // own legal order, the UN and AU, unrecognised/contested states (Montevideo, recognition theories,
+    // taught neutrally), and self-governing communities (HOAs, co-ops, unions, mutual aid), the hand-off
+    // to the business path.
+    { slug: "governments-without-states", course: GOVERNMENTS_WITHOUT_STATES_COURSE, category: "Civics" },
+    // "How Power Changes Hands" is course 8 of the government path (plans/46, Path A): election systems
+    // as machines that turn identical votes into different winners (FPTP, party-list PR, ranked choice,
+    // mixed-member), then power changing hands outside elections (coups, revolutions, negotiated
+    // transitions, term limits). The worked example is labelled hypothetical; real results cited precisely.
+    { slug: "how-power-changes-hands", course: HOW_POWER_CHANGES_HANDS_COURSE, category: "Civics" },
+    // "Governance: Who Actually Decides" is course 6 of the business path (plans/46, Path B): decision #4
+    // taken deep. Boards, shareholders vs stakeholders, fiduciary duty (care/loyalty, business judgment
+    // rule), dual-class shares, the German two-tier board, and one-share-one-vote vs one-member-one-vote.
+    { slug: "business-governance", course: BUSINESS_GOVERNANCE_COURSE, category: "Civics" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:
