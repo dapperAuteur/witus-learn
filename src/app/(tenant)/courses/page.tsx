@@ -6,6 +6,7 @@ import { getSession, getMembership, isPlatformOwner } from "@/lib/session";
 import { resolveTenant } from "@/lib/tenant";
 import { isWitusBrandedHost } from "@/lib/witus-host";
 import { ecosystemProductBySlug } from "@/lib/ecosystem";
+import { matchEntities } from "@/lib/entities";
 import { CourseCard } from "@/components/course-card";
 
 export const metadata: Metadata = { title: "Courses" };
@@ -29,6 +30,19 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
     sdb.listCourses({ q: sp.q, category: sp.category, sort, includeUnpublished: isEditor }),
     sdb.listCategories(),
   ]);
+  // Cross-course entities that match the search (plans/45 Part 3): a person/case/law the query names
+  // is its own result type ("Milliken v. Bradley, appears in 3 courses"), not scattered lesson hits.
+  // Only surfaced when at least TWO of the tenant's own published courses cover it, so it is genuinely
+  // cross-course here. One extra query, only when there is a query that matches an entity.
+  const matchedEntities = sp.q ? matchEntities(sp.q) : [];
+  let entityResults: { slug: string; name: string; kind: string; count: number }[] = [];
+  if (matchedEntities.length > 0) {
+    const published = new Set((await sdb.listCourses({})).map((c) => c.slug));
+    entityResults = matchedEntities
+      .map((e) => ({ slug: e.slug, name: e.name, kind: e.kind, count: e.courses.filter((l) => published.has(l.courseSlug)).length }))
+      .filter((e) => e.count >= 2);
+  }
+
   // A private course stays owner-only: keep it only for the platform owner or its own instructor.
   const courses = rawCourses.filter(
     (c) => c.visibility !== "private" || owner || (session && c.instructorId === session.user.id),
@@ -91,6 +105,25 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
         {sp.category ? ` in ${sp.category}` : ""}
         {sp.q ? ` matching “${sp.q}”` : ""}
       </p>
+      {entityResults.length > 0 ? (
+        <section aria-label="Topics that span courses" className="mb-4 rounded-lg border-2 p-4" style={{ borderColor: "var(--accent)" }}>
+          <p className="text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--accent)" }}>
+            Topics that span courses
+          </p>
+          <ul className="mt-2 space-y-1">
+            {entityResults.map((e) => (
+              <li key={e.slug} className="text-sm">
+                <Link href={`/e/${e.slug}`} className="font-medium hover:underline">
+                  {e.name}
+                </Link>{" "}
+                <span className="text-neutral-500">
+                  · {e.kind} · appears in {e.count} courses
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
       {ecosystemChip ? (
         <a
           href={ecosystemChip.href}

@@ -441,6 +441,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   recruiting block, and the ecosystem footer. No migration.
 
 ## Content
+- 🔧 **Cross-course entities, surfaced in search** (plans/45 Part 3). Eleven people, cases, laws, and
+  concepts the route series and its capstone argue about (Berman v. Parker, Milliken, Buchanan,
+  Shelley, Kelo, the 1949/1956/1964 Acts, Unigov, Dillon's Rule, building-and-loans, North Carolina
+  Mutual, the Great Migration) now have an ENTITY PAGE at \`/e/<slug>\` listing every course that
+  touches them with each course's one-line take, and they surface in course SEARCH as their own result
+  type (\`Milliken v. Bradley, appears in 3 courses\`) instead of scattered lesson hits. Tenant-scoped:
+  a link only shows for a course the tenant publishes, and an entity is only 'cross-course' when the
+  tenant has at least two of its courses. Curated seed in code (\`src/lib/entities.ts\`), so no
+  migration; the DB-backed author-declared model stays the plans/45 follow-up. Timeline panel added to
+  \`/globe\` too, the doctrinal-and-policy spine on one axis beside the map.
 - 🔧 **The explore globe** (plans/45, \`/globe\`). A rotating, draggable orthographic globe of the
   places our courses are about, where zoom controls pin DENSITY (semantic zoom, not just dot size): far
   out shows only tier-1 hubs, zoom in reveals the rest. Drag rotates, wheel/buttons/arrow-keys zoom, and
