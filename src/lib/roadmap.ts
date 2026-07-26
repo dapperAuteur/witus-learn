@@ -441,6 +441,14 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   recruiting block, and the ecosystem footer. No migration.
 
 ## Content
+- 🔧 **Map time-slider** (plans/44 Option B). The map lesson gains an optional \`year\` on any marker,
+  line, or polygon; when present, a Play button and a year slider appear and the map reveals elements
+  as of the chosen year, so a learner watches the pins light up over time (diffusion). An element with
+  no year always shows, so every existing map renders exactly as before. Play steps through the
+  distinct event years, one cohort at a time. First use: **How the Tools Travelled**, where the six
+  dated doctrinal markers now light up in order, 1917 Buchanan BEFORE the 1949 federal upstream, which
+  is the course's own chronology point (an instrument that arrives after a practice is not its cause).
+  All six years are verified from the course text. Next in plans/45: the explore-map globe.
 - 🔧 **Visual timelines: the \`:::timeline\` block** (plans/44 Option C, the cheapest first step). A
   fenced block inside any lesson body renders a vertical, dated list on one shared time axis, so a
   course can SHOW co-occurrence (two things happening at once) instead of asserting it. Syntax mirrors
