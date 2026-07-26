@@ -1481,11 +1481,11 @@ Put the two side by side and the four-route taxonomy earns its fourth row.
       slug: "constitute-map",
       title: "18 · Map: constitutional systems of the world",
       section: "Section 5 · See it, then trace and classify one",
-      body: `**Read this before the map, because the map's limits are part of the lesson.** This platform draws markers as fixed-size dots on a world projection, so the coordinates below are **approximate points placed to show a pattern, not addresses.** Do not use them to find a building. And a constitutional system is a property of a whole country, an area, not a point, so the plan for this path notes that these comparative courses are the first content that genuinely needs a polygon (choropleth) map layer rather than pins. Until that ships, read the colours, not the positions.
+      body: `**Read this before the map, because the map's limits are part of the lesson.** A constitutional system is a property of a whole country, an AREA, not a point, so this map fills each country's area by its executive family (the choropleth layer), with a capital-city marker on top that carries the detail. Read the fills first, then tap a marker. The dots are **approximate points placed to show a pattern, not addresses**, so do not use them to find a building.
 
 ## What the colours mean
 
-The markers are grouped by the course's FIRST axis, how executive power is held, because that is the sharpest single sorter of the world's democracies:
+The fills, and the markers on them, are grouped by the course's FIRST axis, how executive power is held, because that is the sharpest single sorter of the world's democracies:
 
 **Blue markers: presidential.** A separately elected president holds executive power for a fixed term, separate from the legislature. The United States and Brazil.
 
@@ -1582,6 +1582,25 @@ Colour carries only the first axis. Each marker's description carries the other 
             description:
               "Drawn in its own colour because semi-presidential is a genuinely contested category (Lesson 7). Under the 1958 Constitution of the Fifth Republic a separately elected president shares executive power with a prime minister who must hold the confidence of the National Assembly; in 'cohabitation' the system tilts parliamentary. Unitary and codified. Scholars dispute whether 'semi-presidential' names one type or two. Coordinates are approximate.",
           },
+        ],
+        // The choropleth (plans/49): fill the whole country AREA by executive family, because a
+        // constitutional system is a property of an area, not a point. These are exactly the eight
+        // countries this lesson already discusses, filled with the same sourced classifications the
+        // markers carry; France keeps its own colour because Section 2 taught the category is contested.
+        regionLegend: [
+          { category: "presidential", color: "#1d4ed8", label: "Presidential" },
+          { category: "parliamentary", color: "#b45309", label: "Parliamentary" },
+          { category: "semi-presidential", color: "#7c3aed", label: "Semi-presidential (a contested category)" },
+        ],
+        regions: [
+          { featureId: "840", category: "presidential", label: "United States: presidential, federal" },
+          { featureId: "076", category: "presidential", label: "Brazil: presidential, federal" },
+          { featureId: "826", category: "parliamentary", label: "United Kingdom: parliamentary, uncodified" },
+          { featureId: "276", category: "parliamentary", label: "Germany: parliamentary, federal" },
+          { featureId: "392", category: "parliamentary", label: "Japan: parliamentary, unitary" },
+          { featureId: "710", category: "parliamentary", label: "South Africa: parliamentary in structure" },
+          { featureId: "554", category: "parliamentary", label: "New Zealand: parliamentary, uncodified" },
+          { featureId: "250", category: "semi-presidential", label: "France: semi-presidential (contested)" },
         ],
       },
     },

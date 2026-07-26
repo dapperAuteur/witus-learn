@@ -29,10 +29,28 @@ interface Shape {
   /** See Marker.year. */
   year?: number;
 }
+/** A choropleth fill (plans/49): fill a whole country AREA by category, because a comparative property
+ *  (a form of government, where an entity type is recognised) is an area, not a point. Joined to the
+ *  world topojson by ISO 3166-1 numeric id. Colours and the legend come from `MapContent.regionLegend`. */
+interface RegionLayer {
+  /** The topojson feature id to fill: the ISO 3166-1 numeric country code, matching the world atlas. */
+  featureId: string;
+  /** Category name; its colour comes from `MapContent.regionLegend`. */
+  category: string;
+  /** Optional tooltip label (defaults to the category). */
+  label?: string;
+  /** See Marker.year. */
+  year?: number;
+}
 export interface MapContent {
   markers?: Marker[];
   lines?: Shape[];
   polygons?: Shape[];
+  /** Choropleth fills joined to the world topojson by ISO 3166-1 numeric id (plans/49). */
+  regions?: RegionLayer[];
+  /** Ordered category -> colour for the `regions` choropleth; also renders the legend. A region whose
+   *  category is absent here uses a neutral fill. */
+  regionLegend?: { category: string; color: string; label?: string }[];
 }
 
 const WIDTH = 960;
@@ -47,16 +65,24 @@ const hasYear = (e: { year?: number }): e is { year: number } => typeof e.year =
 export function MapLessonContent({ content }: { content: MapContent }) {
   const [active, setActive] = useState<Marker | null>(null);
 
-  const { land, path, project } = useMemo(() => {
+  const { land, path, project, countriesById } = useMemo(() => {
     const topo = worldData as unknown as Topology;
     const land = feature(topo, topo.objects.countries as GeometryCollection) as FeatureCollection;
     const projection = geoNaturalEarth1().fitSize([WIDTH, HEIGHT], land);
-    return { land, path: geoPath(projection), project: projection };
+    // For the choropleth: look up a country feature by its ISO 3166-1 numeric id, to fill by area.
+    const countriesById = new Map(land.features.map((f) => [String(f.id), f] as const));
+    return { land, path: geoPath(projection), project: projection, countriesById };
   }, []);
+
+  // Category -> fill colour for the regions choropleth; also drives the legend.
+  const regionColor = useMemo(
+    () => new Map((content.regionLegend ?? []).map((r) => [r.category, r.color] as const)),
+    [content.regionLegend],
+  );
 
   // Distinct event years across every element, sorted. Empty when nothing is dated (no slider then).
   const years = useMemo<number[]>(() => {
-    const all = [...(content.markers ?? []), ...(content.lines ?? []), ...(content.polygons ?? [])];
+    const all = [...(content.markers ?? []), ...(content.lines ?? []), ...(content.polygons ?? []), ...(content.regions ?? [])];
     const set = new Set<number>();
     for (const e of all) if (hasYear(e)) set.add(e.year);
     return [...set].sort((a, b) => a - b);
@@ -130,6 +156,18 @@ export function MapLessonContent({ content }: { content: MapContent }) {
           <path key={i} d={path(f) ?? undefined} fill="#eef2f7" stroke="#fff" strokeWidth={0.4} />
         ))}
 
+        {/* Choropleth fills (plans/49): whole-country areas coloured by category, on top of the
+            neutral land. A comparative property is an area, not a point. */}
+        {(content.regions ?? []).filter(visible).map((r) => {
+          const f = countriesById.get(r.featureId);
+          if (!f) return null;
+          return (
+            <path key={`region-${r.featureId}`} d={path(f) ?? undefined} fill={regionColor.get(r.category) ?? "#c7cdd6"} fillOpacity={0.85} stroke="#fff" strokeWidth={0.5}>
+              <title>{r.label ?? r.category}</title>
+            </path>
+          );
+        })}
+
         {(content.polygons ?? []).filter(visible).map((p) => {
           const poly: Polygon = { type: "Polygon", coordinates: [flip(p.coords)] };
           return <path key={p.id} d={path(poly) ?? undefined} fill={p.fillColor ?? p.color ?? "#99999933"} stroke={p.color ?? "#888"} strokeWidth={0.6} />;
@@ -163,6 +201,17 @@ export function MapLessonContent({ content }: { content: MapContent }) {
           );
         })}
       </svg>
+
+      {(content.regionLegend?.length ?? 0) > 0 ? (
+        <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm" aria-label="Map legend">
+          {content.regionLegend!.map((r) => (
+            <li key={r.category} className="flex items-center gap-1.5">
+              <span aria-hidden className="inline-block h-3 w-3 rounded-sm" style={{ backgroundColor: r.color }} />
+              {r.label ?? r.category}
+            </li>
+          ))}
+        </ul>
+      ) : null}
 
       {active ? (
         <div className="mt-3 rounded-lg border border-neutral-200 p-3 text-sm dark:border-neutral-800">

@@ -491,9 +491,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   not balance. Next up (plans/44/45): the map time-slider (Option B) and the explore-map globe.
 
 - ✅ **Both structural paths are complete** (\`plans/46\`): Path A "Who Has the Power?" is 9 of 9 and
-  Path B "How a Business Is Formed" is 7 of 7. (One enhancement stays open, filed as \`plans/49\`: the
-  separate-sovereign polygon map layer the Tribal Nations course wants, which currently ships a
-  point-based stopgap.) Both paths are the general case of something the catalog already teaches one
+  Path B "How a Business Is Formed" is 7 of 7. The **choropleth map layer** (\`plans/49\`) also shipped:
+  map lessons gain a \`regions\` fill joined to the world topojson by ISO code, with a legend, so a
+  comparative property renders as an AREA not a pin. **How Countries Constitute Themselves** is the
+  first consumer, filling eight countries by executive family. Still open in \`plans/49\`: the US-state
+  fill and the separate-sovereign tribal polygon layer (Tribal Nations ships a point-based stopgap
+  until reservation geometry is wired). Both paths are the general case of something the catalog already teaches one
   instance at a time. **Who Has the Power to Do This?** (Civics, \`who-has-the-power\`, 19 lessons / 5 sections /
   4 quizzes / a map / a capstone) is the general case of the route series: given any government
   action, find the body, its enabling authority, the document that grants it, and who can overturn
