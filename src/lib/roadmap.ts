@@ -441,6 +441,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   recruiting block, and the ecosystem footer. No migration.
 
 ## Content
+- 🔧 **Visual timelines: the \`:::timeline\` block** (plans/44 Option C, the cheapest first step). A
+  fenced block inside any lesson body renders a vertical, dated list on one shared time axis, so a
+  course can SHOW co-occurrence (two things happening at once) instead of asserting it. Syntax mirrors
+  the \`:::reveal\` family: \`:::timeline Optional title\` then \`year | lane | text\` (or
+  \`year | text\`) lines, closed by \`:::\`. Events with lanes (e.g. built vs done) each get a
+  colour and a legend, so the two tracks read at a glance and stay mobile-friendly. Pure data plus
+  markup (offline-safe, no dependency, no new lesson type), parsed by \`src/lib/timeline.ts\` (unit
+  tested) and rendered by \`TimelineBlock\`, wired into \`LessonBody\` beside the reveal/tool/field-log
+  directives. The design rule holds in the author's text, not the renderer: co-occurrence is the claim,
+  not balance. Next up (plans/44/45): the map time-slider (Option B) and the explore-map globe.
+
 - 🔧 **The two structural paths have their first courses** (\`plans/46\`). Both paths are the general
   case of something the catalog already teaches one instance at a time, and the method course of each
   now ships. **Who Has the Power to Do This?** (Civics, \`who-has-the-power\`, 19 lessons / 5 sections /

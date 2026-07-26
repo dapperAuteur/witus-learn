@@ -1,9 +1,11 @@
 import { Fragment } from "react";
 import { REVEAL_RE } from "@/lib/reveals";
+import { TIMELINE_CLOSE, TIMELINE_OPEN_RE, parseTimelineEvents } from "@/lib/timeline";
 import { Markdown } from "./markdown";
 import { EcosystemCallout } from "./ecosystem-callout";
 import { FieldLogCallout } from "./field-log/field-log-callout";
 import { Reveal } from "./reveal";
+import { TimelineBlock } from "./timeline-block";
 
 // Renders lesson body markdown, with course-aware behaviours layered on:
 //  1. external links are counted (linkContext → /api/link/click),
@@ -47,7 +49,27 @@ export function LessonBody({
     buf = [];
   };
 
+  // Multi-line `:::timeline … :::` fences are consumed here; `skipTo` marks lines already absorbed
+  // so the per-line loop below steps over them.
+  let skipTo = -1;
+
   lines.forEach((line, i) => {
+    if (i <= skipTo) return;
+
+    const tl = line.match(TIMELINE_OPEN_RE);
+    if (tl) {
+      let close = i + 1;
+      while (close < lines.length && lines[close].trim() !== TIMELINE_CLOSE) close++;
+      const events = parseTimelineEvents(lines.slice(i + 1, close));
+      if (events.length > 0) {
+        flush(`md-${i}`);
+        blocks.push(<TimelineBlock key={`tl-${i}`} title={tl[1]} events={events} />);
+        skipTo = close; // absorb through the closing fence
+        return;
+      }
+      // A `:::timeline` with no parseable events falls through to ordinary markdown.
+    }
+
     const tool = line.match(TOOL_RE);
     const fl = line.match(FIELD_LOG_RE);
     const rv = line.match(REVEAL_RE);
