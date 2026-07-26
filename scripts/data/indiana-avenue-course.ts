@@ -217,10 +217,10 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
           {
             prompt: "Indiana Avenue first appears on which document, and in what year?",
             options: [
-              "The 1945 Indiana redevelopment act",
-              "Alexander Ralston's 1821 plat of Indianapolis",
-              "The 1916 business survey",
-              "The 1938 Lockefield Gardens plans",
+              "The Indiana redevelopment act of 1945",
+              "Ralston's 1821 plat of Indianapolis",
+              "The 1916 eight-block business survey",
+              "The 1938 Lockefield Gardens site plans",
             ],
             correctIndex: 1,
             explanation: "It is one of four diagonal streets on Ralston's 1821 plat, running northwest out of the Mile Square.",
@@ -237,9 +237,9 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
             prompt: "The 1916 study of eight blocks of the Avenue is significant mainly because it shows:",
             options: [
               "That the Avenue was primarily a nightlife strip",
-              "A complete local economy, from groceries and cobblers to lawyers, doctors and funeral parlors",
-              "That most businesses were owned by people who lived elsewhere",
-              "That the Avenue was in decline by 1916",
+              "A complete local economy of shops and professions",
+              "That most Avenue businesses were owned by absentees",
+              "That the Avenue was already in steep decline by 1916",
             ],
             correctIndex: 1,
             explanation: "The list runs from restaurants and grocery stores to tailors, cobblers, drugstores, pawnbrokers and professional offices. That is infrastructure, not entertainment.",
@@ -256,9 +256,9 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
             prompt: "Who compiled and field-checked the Indiana Green Book site list, and under what funding?",
             options: [
               "The New York Public Library, under a private grant",
-              "The Indiana DNR Division of Historic Preservation and Archaeology, with a National Park Service Underrepresented Communities grant, documented by Gray & Pape",
-              "Indiana University, under a state appropriation",
-              "The city of Indianapolis, under a federal transportation grant",
+              "The Indiana DNR, under a National Park Service grant",
+              "Indiana University, under a 1958 state appropriation",
+              "The city of Indianapolis, under a highway grant",
             ],
             correctIndex: 1,
             explanation: "The DNR compiled the entries and ran a desktop survey, then used an NPS Underrepresented Communities grant to hire Gray & Pape to field-check sites and write the multiple property documentation form.",
@@ -274,10 +274,10 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
           {
             prompt: "Most Avenue beauty parlors, drug stores and liquor stores disappear from the guide after 1955. The correct reading is:",
             options: [
-              "Those businesses all closed in 1956",
-              "The 1956 edition narrowed the guide to lodging and restaurants almost exclusively",
-              "The Avenue was demolished in 1956",
-              "The publisher lost the Indiana listings",
+              "Those Avenue businesses all closed down in 1956",
+              "The 1956 edition narrowed to lodging and restaurants",
+              "The entire Avenue was demolished in early 1956",
+              "The publisher lost the Indiana Avenue listings",
             ],
             correctIndex: 1,
             explanation: "It is an editorial change in the book, not an event on the street. This is the same reading skill the method course taught.",
@@ -293,10 +293,10 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
           {
             prompt: "The Thurman hotel at 222 Indiana Avenue, listed 1939-1941 and 1946-1952, is a trap because:",
             options: [
-              "It never existed",
-              "It is in French Lick, Indiana, about 100 miles south, which has its own Indiana Avenue",
-              "The years are wrong",
-              "It was a tourist home, not a hotel",
+              "The hotel was never actually built there",
+              "It is in French Lick, Indiana, 100 miles south",
+              "The years listed are transposition errors",
+              "It was a tourist home rather than a hotel",
             ],
             correctIndex: 1,
             explanation: "Searching on street name alone would place it on the Indianapolis corridor. Always carry the city with the street.",
@@ -305,10 +305,10 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
           {
             prompt: "About 30 Avenue businesses appear in the Green Book across thirty years, while a 1916 study counted more than 180 in eight blocks. The gap measures:",
             options: [
-              "How many businesses failed",
+              "How many Avenue businesses had failed by then",
               "The guide's coverage, not the Avenue's inventory",
-              "An error in the 1916 study",
-              "The number of white-owned businesses",
+              "An overcount in the 1916 eight-block study",
+              "The number of white-owned Avenue businesses",
             ],
             correctIndex: 1,
             explanation: "The Green Book recorded what someone reported to Victor Green's network. It was never a survey of everything that existed.",
@@ -324,10 +324,10 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
           {
             prompt: "Which causes does the Encyclopedia name for the decline of the Avenue's jazz scene?",
             options: [
-              "Changing musical taste alone",
-              "Dispersal of the Black population, the end of the jam session as a training ground, attrition among mentors, and the closing of the venues",
-              "A city ordinance banning live music",
-              "The arrival of recorded music",
+              "Only a shift in the popular musical taste",
+              "Dispersal, a dying jam session, lost mentors",
+              "A city ordinance that banned live music",
+              "The sudden arrival of recorded music alone",
             ],
             correctIndex: 1,
             explanation: "The entry names dispersal, the death of the jam session, attrition of mentors and master players, and the demise of the Avenue as a focal point.",
@@ -348,10 +348,10 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
           {
             prompt: "Two sources give Lockefield Gardens different unit counts. What does this course do about it?",
             options: [
-              "Averages them",
-              "Uses the larger figure because it is more impressive",
-              "Gives both figures with their owners and refuses to pick",
-              "Omits the unit count entirely",
+              "Averages the two counts into one figure",
+              "Uses the larger figure as more impressive",
+              "Gives both figures with their owners",
+              "Omits the disputed unit count entirely",
             ],
             correctIndex: 2,
             explanation: "The Encyclopedia of Indianapolis says 748 units; SAVI refers to 798. Fifty units is not a rounding error, so the course reports both and names the sources.",
@@ -360,9 +360,9 @@ Two of those venue names should look familiar. **Sunset Terrace opened in Decemb
           {
             prompt: "What did Flanner House offer residents displaced by the clearance of Pat Ward's Bottom?",
             options: [
-              "Cash relocation payments only",
-              "Roughly 300 dollars down plus about 1,200 hours of labour to earn equity in a house",
-              "Free rental units downtown",
+              "Only the standard federal cash relocation payments",
+              "About 300 dollars down and 1,200 hours of sweat equity",
+              "Free public rental units in a downtown high-rise",
               "Nothing; the agency opposed the clearance and left",
             ],
             correctIndex: 1,
@@ -886,10 +886,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "This course defines an 'instrument' as:",
             options: [
-              "Any historical cause",
-              "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document",
-              "A tool used in construction",
-              "A newspaper account of a decision",
+              "Any broad historical cause or force",
+              "A specific legal power exercised by a body",
+              "A physical tool used in construction",
+              "A newspaper account of a city decision",
             ],
             correctIndex: 1,
             explanation: "The last clause is what makes history researchable: if a power was exercised, a named record exists.",
@@ -899,9 +899,9 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             prompt: "Which body chose Pat Ward's Bottom for the city's first slum clearance, and when did demolition begin?",
             options: [
               "The Metropolitan Development Commission, 1970",
-              "The Indianapolis Redevelopment Commission, with demolition beginning in 1948",
+              "The Indianapolis Redevelopment Commission, 1948",
               "The Indiana Department of Highways, 1957",
-              "The IU Board of Trustees, 1965",
+              "The Indiana University Board of Trustees, 1965",
             ],
             correctIndex: 1,
             explanation: "The General Assembly identified it as blighted in 1945; the Redevelopment Commission chose it, and homes came down starting in 1948.",
@@ -910,10 +910,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Why is a blight designation described as a legal conclusion rather than a description?",
             options: [
-              "Because it is written by lawyers",
-              "Because a body reaches it on a record against statutory criteria, and it unlocks acquisition and clearance powers",
-              "Because it can never be challenged",
-              "Because it only applies to vacant land",
+              "Because it is written up by government lawyers",
+              "Because a body reaches it against statutory criteria",
+              "Because it can never afterwards be challenged",
+              "Because it applies only to already-vacant land",
             ],
             correctIndex: 1,
             explanation: "The designation is the hinge: before it, the powers do not exist; after it, they do.",
@@ -922,10 +922,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "The circularity problem in physical blight criteria is that:",
             options: [
-              "The criteria are too strict",
-              "Deterioration measured by the criteria is produced by the same policies of refused credit and investment that preceded it",
-              "The criteria change every year",
-              "Only old buildings can qualify",
+              "The criteria are simply far too strict",
+              "The measured decay came from refused credit",
+              "The criteria change from year to year",
+              "Only very old buildings can ever qualify",
             ],
             correctIndex: 1,
             explanation: "A neighbourhood denied mortgage capital for decades measures as deteriorated, and the measurement then justifies clearance.",
@@ -946,10 +946,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "In the documented Temple family case, what were the first offer and the final settlement, and how far apart in time?",
             options: [
-              "23,000 dollars in 1965 and 50,000 dollars in June 1979, fourteen years apart",
+              "23,000 dollars in 1965 and 50,000 dollars in 1979",
               "50,000 dollars in 1962 and 75,000 dollars in 1968",
               "10,000 dollars in 1970 and 12,000 dollars in 1972",
-              "The case was never settled",
+              "The whole dispute was resolved with no payment at all",
             ],
             correctIndex: 0,
             explanation: "Governor Whitcomb authorised eminent domain against the family in December 1972 and again in January 1976. The site became University Tower.",
@@ -958,10 +958,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Why should the Temple settlement NOT be turned into a statistic?",
             options: [
-              "Because the family asked for privacy",
-              "Because one case establishes no average, pattern or rate, and the 1965 and 1979 dollar amounts are not comparable without a stated inflation adjustment",
-              "Because the figures are disputed",
-              "Because eminent domain was not used",
+              "Because the family requested full privacy",
+              "Because one case establishes no average or rate",
+              "Because the two dollar figures are disputed",
+              "Because eminent domain was never used here",
             ],
             correctIndex: 1,
             explanation: "One documented case is evidence about that case. Generalising from it manufactures a rate nobody measured.",
@@ -970,9 +970,9 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Under the Federal-Aid Highway Act of 1956, who chose an interstate's route through a city?",
             options: [
-              "Congress, by statute for each city",
-              "The state highway department, in negotiation with local officials, subject to federal approval",
-              "The Bureau of the Census",
+              "Congress, by a separate statute for each city",
+              "The state highway department, with local officials",
+              "The federal Bureau of Public Roads directly",
               "The affected neighbourhoods, by referendum",
             ],
             correctIndex: 1,
@@ -982,10 +982,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "The figure '17,000 residents displaced and 8,000 buildings demolished' should be used how?",
             options: [
-              "As the Indiana Avenue displacement total",
-              "Attributed to its owner and date (an Indianapolis Star article of October 15, 1976, per WRTV) and understood as a city-wide figure",
-              "Averaged with other published estimates",
-              "Not mentioned at all",
+              "As the total for the Indiana Avenue corridor",
+              "A 1976 newspaper figure, understood as city-wide",
+              "Averaged in with other published estimates",
+              "Left out of the historical account entirely",
             ],
             correctIndex: 1,
             explanation: "It covers roughly 31 miles of interstate inside I-465, not one corridor, and it is a contemporaneous newspaper figure with no published method.",
@@ -994,10 +994,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "The Encyclopedia of Indianapolis entry on Indiana Avenue names which causes of the Avenue's loss?",
             options: [
-              "Interstate highway construction only",
-              "The 1958 joint campus plan, blight designations, Indiana University's parcel purchases, and the Lockefield demolition",
-              "Population loss and changing taste",
-              "A single 1970 consolidation law",
+              "The interstate highway construction alone",
+              "The 1958 campus plan, blight, and IU purchases",
+              "Population loss and changing public taste",
+              "A single 1970 city-county consolidation law",
             ],
             correctIndex: 1,
             explanation: "That entry does not name highway construction among the Avenue's causes at all, which is why this course separates the corridor's fabric from the surrounding neighbourhoods.",
@@ -1006,10 +1006,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "What was Hoosier Realty Corporation, and why was it used?",
             options: [
-              "A city agency that condemned property",
-              "A nonprofit real estate entity Indiana University formed in March 1962, which acquired more than 2,000 houses and lots; buying under a separate name keeps prices from rising",
+              "A city agency that condemned the property",
+              "An IU nonprofit that quietly bought 2,000+ lots",
               "A private developer that opposed the campus",
-              "The state highway department's land arm",
+              "The state highway department's own land arm",
             ],
             correctIndex: 1,
             explanation: "Land assembly gets more expensive once sellers know the buyer and the plan, so the deed records will not always carry the institution's name.",
@@ -1025,9 +1025,9 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Unigov was approved in 1969 and took effect January 1, 1970. What is procedurally unusual about it?",
             options: [
-              "It passed by a two-thirds referendum",
-              "It is the only major postwar city-county consolidation accomplished without a voter referendum",
-              "It was imposed by a federal court",
+              "It passed by a narrow two-thirds referendum",
+              "It was done with no voter referendum at all",
+              "It was imposed by a federal district court",
               "It required approval from every township",
             ],
             correctIndex: 1,
@@ -1037,10 +1037,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "What did Unigov leave OUT of the consolidation?",
             options: [
-              "Nothing; it merged all local government",
-              "School districts, incorporated cities and towns over 5,000 (Beech Grove, Lawrence, Southport, Speedway), the nine townships, several municipal corporations, and the county courts",
-              "Only the police and fire departments",
-              "Only the school districts",
+              "Nothing at all; it merged every local government",
+              "Schools, the excluded cities, townships, and courts",
+              "Only the police and fire departments citywide",
+              "Only the local school districts were left out",
             ],
             correctIndex: 1,
             explanation: "Fifty separate governmental units and more than 61 taxing districts remain in Marion County.",
@@ -1049,10 +1049,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Testing the proposed Unigov spine against the chronology shows that:",
             options: [
-              "Unigov caused the demolition of Indiana Avenue",
-              "Unigov cannot have caused the Avenue's clearance, because the blight designations, campus plan, freeway announcement and parcel purchases all predate January 1, 1970",
-              "The chronology is unknowable",
-              "The Avenue was cleared entirely after 1970",
+              "Unigov directly caused the demolition of the Avenue",
+              "Unigov cannot have caused it; instruments predate 1970",
+              "The event chronology here is essentially unknowable",
+              "The Avenue was cleared entirely only after 1970",
             ],
             correctIndex: 1,
             explanation: "The surviving, weaker claim is that Unigov changed who governs the ground afterwards, with the Black share of the city falling from 27 to 17 percent.",
@@ -1423,10 +1423,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Why is this course's map lesson national rather than block by block?",
             options: [
-              "Because Indiana Avenue's coordinates are unknown",
-              "Because the lesson map draws the whole world, so points need roughly two degrees of separation to be distinguishable, and a nine-block corridor is smaller than one dot",
-              "Because block-level maps are copyrighted",
-              "Because the course avoids maps of Indianapolis",
+              "Because Indiana Avenue's exact coordinates are unknown",
+              "Because the world-scale map turns the corridor into one dot",
+              "Because detailed block-level maps are all copyrighted",
+              "Because the course deliberately avoids Indianapolis maps",
             ],
             correctIndex: 1,
             explanation: "Choosing the right scale of map for the question is the actual skill. For a parcel question the right map is MapIndy.",
@@ -1435,10 +1435,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "What is MapIndy?",
             options: [
-              "A private real estate listing site",
-              "The official GIS for the Consolidated City of Indianapolis and Marion County",
-              "A historical atlas of 1930s Indianapolis",
-              "A transit planning app",
+              "A private commercial real estate listing site",
+              "The official GIS for Indianapolis and Marion County",
+              "A historical atlas of 1930s-era Indianapolis",
+              "A regional transit route and schedule planning app",
             ],
             correctIndex: 1,
             explanation: "It shows parcel boundaries, political boundaries, street centrelines and aerial imagery by address, intersection or parcel number.",
@@ -1448,9 +1448,9 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             prompt: "Which four facts should you pull for any parcel in any American county?",
             options: [
               "Square footage, paint colour, roof age, and street name",
-              "Parcel number, owner of record, assessed value, and the overlapping jurisdictions it sits in",
+              "Parcel number, owner, assessed value, and jurisdictions",
               "Architect, contractor, original cost, and current tenant",
-              "Zoning code only",
+              "The zoning code, lot shape, and the street frontage",
             ],
             correctIndex: 1,
             explanation: "The names of the tools change from county to county; those four facts do not.",
@@ -1459,10 +1459,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "In Indianapolis, which body adopts the comprehensive plan AND the zoning ordinance AND decides rezoning petitions?",
             options: [
-              "The City-County Council",
+              "The Indianapolis City-County Council",
               "The Metropolitan Development Commission",
               "The Indianapolis Redevelopment Commission",
-              "The Indiana General Assembly",
+              "The Indiana General Assembly itself",
             ],
             correctIndex: 1,
             explanation: "One body writing the rules, deciding the exceptions, and approving property sales for redevelopment. Notice when that happens anywhere.",
@@ -1472,8 +1472,8 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             prompt: "A comprehensive plan differs from zoning because:",
             options: [
               "It is legally binding on every owner immediately",
-              "It is the policy statement that rezoning petitions are judged against, while zoning is the enforceable rule about what may be built today",
-              "It only covers publicly owned land",
+              "It is the guiding policy, not the enforceable rule",
+              "It applies only to publicly owned land parcels",
               "It is written by the state rather than the city",
             ],
             correctIndex: 1,
@@ -1483,10 +1483,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "What is the Indiana Avenue Certified Strategic Plan's status in the most recent reporting used by this course?",
             options: [
-              "Adopted in 2023 and being implemented",
-              "Announced February 2023, kicked off April 2024, consultant replaced after 2024, second phase running through 2026, with nothing published or adopted",
-              "Cancelled",
-              "Adopted by the Indiana General Assembly",
+              "Formally adopted in 2023 and now being implemented",
+              "Announced 2023, still unfinished, nothing yet adopted",
+              "Cancelled outright by the city council in 2024",
+              "Adopted directly by the Indiana General Assembly",
             ],
             correctIndex: 1,
             explanation: "MKSK holds a 125,000 dollar contract through the end of 2026 with completion expected in autumn 2026. The city's planning deputy director publicly acknowledged the pause in November 2025.",
@@ -1495,9 +1495,9 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Why is 'no adopted area plan yet' a useful finding for a citizen?",
             options: [
-              "Because it means nothing will be built",
-              "Because an unadopted plan is still open to public comment and public meetings are still being held",
-              "Because it invalidates the zoning",
+              "Because it means that nothing will be built",
+              "Because the unadopted plan stays open to comment",
+              "Because it quietly invalidates the current zoning",
               "Because it triggers automatic historic protection",
             ],
             correctIndex: 1,
@@ -1507,10 +1507,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Which level of designation normally regulates whether a building can be demolished?",
             options: [
-              "National Historic Landmark",
-              "National Register of Historic Places",
-              "Local historic district or landmark designation under a local ordinance",
-              "State register listing",
+              "Designation as a full National Historic Landmark",
+              "Listing on the National Register of Historic Places",
+              "A local historic district or landmark under local law",
+              "A listing on the state's official historic register",
             ],
             correctIndex: 2,
             explanation: "Federal listing is recognition plus review leverage on federally funded or permitted work. The local ordinance is what requires a certificate before demolition.",
@@ -1519,10 +1519,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Why does this course tell you to practise parcel lookups on institutional and commercial addresses?",
             options: [
-              "Because residential records are not public",
-              "Because publishing a current occupant's name attached to their home address is a different act from a public record sitting in a county database",
-              "Because homes have no parcel numbers",
-              "Because assessors refuse residential requests",
+              "Because residential parcel records are kept private",
+              "Because naming who lives at an address is a different act",
+              "Because private homes have no parcel numbers at all",
+              "Because assessors reject residential parcel requests",
             ],
             correctIndex: 1,
             explanation: "It is the same rule the method course applied to tourist homes: a house someone lives in is somebody's home first.",
@@ -1531,10 +1531,10 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "When you find a gap in the corridor where a historic building should be, the four meaningful answers are:",
             options: [
-              "Brick, wood, stone, or steel",
-              "A newer building, a parking or surface lot, a lawn or plaza, or a road",
-              "Public, private, institutional, or vacant",
-              "Demolished, moved, burned, or collapsed",
+              "Brick, timber, limestone, or structural steel",
+              "A newer building, a surface lot, a plaza, or a road",
+              "Public, private, institutional, or now vacant",
+              "Demolished, relocated, burned down, or collapsed",
             ],
             correctIndex: 1,
             explanation: "Each of the four points to a different decision with a different record behind it.",

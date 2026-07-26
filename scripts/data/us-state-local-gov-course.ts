@@ -451,7 +451,12 @@ The through-line of this whole course: **the level closest to you is the one whe
         questions: [
           {
             prompt: "How many levels of government does a typical person in the U.S. live under at once?",
-            options: ["One", "Two", "At least three (federal, state, local)", "Five"],
+            options: [
+              "One: the national government does everything",
+              "Two: the federal and state governments only",
+              "At least three (federal, state, local)",
+              "Five: adding city and county as separate",
+            ],
             correctIndex: 2,
             explanation:
               "You live under federal, state, and local government simultaneously, and usually under several local governments at once (county, city, school district, special districts).",
@@ -480,7 +485,12 @@ The through-line of this whole course: **the level closest to you is the one whe
           },
           {
             prompt: "Which level of government primarily ADMINISTERS elections (registration rules, deadlines, voting machinery)?",
-            options: ["The federal government", "The states (often via counties)", "The Supreme Court", "Special districts only"],
+            options: [
+              "The federal government, uniformly",
+              "The states, often via counties",
+              "The U.S. Supreme Court by ruling",
+              "Special districts, in most places",
+            ],
             correctIndex: 1,
             explanation:
               "States administer elections, which is why registration rules, deadlines, and ID requirements differ from state to state. Your state's election office is the authoritative source.",
@@ -489,10 +499,10 @@ The through-line of this whole course: **the level closest to you is the one whe
           {
             prompt: "Why can't you assume a 'county' or a 'city' provides your local services everywhere in the U.S.?",
             options: [
-              "Because local government structure varies by state",
-              "Because all local services are actually federal",
-              "Because counties were abolished",
-              "Because only cities provide services",
+              "Local government structure varies by state",
+              "All local services are actually run federally",
+              "Counties were abolished in most states long ago",
+              "Only incorporated cities may provide services",
             ],
             correctIndex: 0,
             explanation:
@@ -502,10 +512,10 @@ The through-line of this whole course: **the level closest to you is the one whe
           {
             prompt: "What is an 'unfunded mandate'?",
             options: [
-              "Money one level of government grants to another",
-              "A requirement one level imposes on another without providing the money to carry it out",
-              "A tax collected by special districts",
-              "A federal program run identically in every state",
+              "Money one level of government grants to another, with conditions",
+              "A requirement one level imposes with no money to carry it out",
+              "A tax that special districts levy for one specific service",
+              "A federal program run the same in every state, fully funded",
             ],
             correctIndex: 1,
             explanation:
@@ -515,10 +525,10 @@ The through-line of this whole course: **the level closest to you is the one whe
           {
             prompt: "What is a 'special district'?",
             options: [
-              "A branch of the federal government",
-              "A local government created to do one job (like water, fire, or transit), separate from the city or county",
-              "Another name for a state legislature",
-              "A type of federal court",
+              "A regional branch office of the federal government",
+              "A local government created to do one job, like water",
+              "Another name for a chamber of the state legislature",
+              "A specialized federal trial court for local cases",
             ],
             correctIndex: 1,
             explanation:
@@ -544,10 +554,10 @@ The through-line of this whole course: **the level closest to you is the one whe
           {
             prompt: "At the federal level, how many members of Congress represent you directly?",
             options: [
-              "One U.S. House representative and two U.S. senators",
-              "Only the President",
-              "Your governor and mayor",
-              "The entire Supreme Court",
+              "One U.S. House member and two U.S. senators",
+              "Only the President represents everyone",
+              "Your state governor and your local mayor",
+              "All nine Supreme Court justices jointly",
             ],
             correctIndex: 0,
             explanation:

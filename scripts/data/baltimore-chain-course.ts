@@ -170,10 +170,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Old West Baltimore became a dense, concentrated Black community mainly because:",
             options: [
-              "Black Baltimoreans preferred to live close together",
+              "Black Baltimoreans mostly preferred to settle close to their own churches",
               "It was confined by custom, then law, then contract, then the mortgage market",
-              "The land there was the cheapest in the city",
-              "The city built public housing there first",
+              "The land on the west side happened to be the cheapest available in the city",
+              "The city chose to build its earliest public housing projects on those blocks",
             ],
             correctIndex: 1,
             explanation: "The density is the product of confinement. The edges of the district were held shut, which is the machinery Section 3 traces.",
@@ -189,10 +189,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "What happened at 1834 McCulloh Street in the summer of 1910?",
             options: [
-              "The city opened its first Black public school",
-              "A Black lawyer bought the house and had his law partner move onto a white block, and the neighbours pushed City Hall for a segregation law",
-              "A restrictive covenant was signed",
-              "The HOLC drew its first red line",
+              "The city opened its first Black public high school that same summer",
+              "A Black lawyer bought it so his law partner could move onto a white block",
+              "A racial restrictive covenant was recorded against the McCulloh Street block",
+              "The HOLC drew its first Baltimore red line across that block that summer",
             ],
             correctIndex: 1,
             explanation: "W. Ashbie Hawkins bought the house for his law partner George W. F. McMechen. The trigger for the nation's first residential segregation ordinance was a Black professional on a good street.",
@@ -208,10 +208,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "What was Pennsylvania Avenue to Black Baltimore?",
             options: [
-              "A minor residential street",
+              "A quiet minor residential street off the main commercial grid",
               "The commercial and entertainment spine, known as The Avenue",
-              "The site of the HOLC office",
-              "A suburb built after the Second World War",
+              "The site of the city's main HOLC and FHA lending office",
+              "A commuter suburb laid out for white families after the war",
             ],
             correctIndex: 1,
             explanation: "It was the spine of Black Baltimore, nicknamed The Avenue, and in 2019 Maryland designated the area around it as the state's first Black Arts District.",
@@ -232,10 +232,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Why is the Arch Social Club a different kind of evidence than the Royal Theatre monument?",
             options: [
-              "It is older than the country",
-              "It is a surviving institution still operating on The Avenue, where the monument marks an absence",
-              "It was never a real club",
-              "It is located in a different city",
+              "It is older than the United States itself by several decades",
+              "It is a surviving institution still operating on The Avenue today",
+              "It was never actually a real club, only a painted storefront sign",
+              "It sits in a different city that merely shares the avenue's name",
             ],
             correctIndex: 1,
             explanation: "Founded in 1905, the Arch Social Club is one of the oldest continuously operating Black social clubs in the country and is still on Pennsylvania Avenue. A survivor is different evidence than a monument.",
@@ -244,10 +244,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The method-course trap the chapter warns about for Baltimore Green Book claims is:",
             options: [
-              "Trusting the digitized editions",
-              "Asserting a street number and year from memory instead of reading the edition and carrying the city",
-              "Using the 1956 edition",
-              "Citing the New York Public Library",
+              "Trusting the digitized Green Book editions without ever checking",
+              "Naming a street number and year from memory rather than the edition",
+              "Relying only on the 1956 Green Book edition for the whole city",
+              "Citing the New York Public Library's scanned copies as the source",
             ],
             correctIndex: 1,
             explanation: "More than one American city has a Pennsylvania Avenue, and Baltimore has more than one Avenue. A listing is only located when you carry the city with the street.",
@@ -256,10 +256,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The Baltimore Afro-American newspaper was founded in 1892 by:",
             options: [
-              "W. Ashbie Hawkins",
+              "W. Ashbie Hawkins, the segregation-case lawyer",
               "John H. Murphy Sr., a formerly enslaved man",
-              "The Roland Park Company",
-              "The Home Owners' Loan Corporation",
+              "The Roland Park Company's real estate office",
+              "The Home Owners' Loan Corporation's city office",
             ],
             correctIndex: 1,
             explanation: "It grew into one of the most influential Black newspapers in the country and still publishes. A newspaper is an archive of what a community said at the time.",
@@ -268,10 +268,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course put 'what the community built' before the instruments section?",
             options: [
-              "To pad the course",
-              "Because a course that is only a catalogue of harm is both incomplete and inaccurate",
-              "Because the instruments are unimportant",
-              "Because the buildings all survive",
+              "To pad the course out with extra optional reading material",
+              "Because a course of only harm is incomplete and inaccurate",
+              "Because the segregation instruments finally do not matter",
+              "Because all of the buildings from that era still survive",
             ],
             correctIndex: 1,
             explanation: "The people confined to Old West Baltimore built a lasting press, a winning legal campaign and a cultural corridor. Leaving that out would misrepresent the record.",
@@ -280,10 +280,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "W. Ashbie Hawkins is significant in this course because he:",
             options: [
-              "Designed the HOLC map",
-              "Both triggered the 1910 ordinance by a house purchase and then fought the ordinances in court",
-              "Was the mayor who signed the ordinance",
-              "Built Pennsylvania Avenue's theatres",
+              "Designed the 1937 HOLC residential security map of the city",
+              "He triggered the 1910 ordinance and then fought it in court",
+              "He was the reform mayor who signed the original 1910 ordinance",
+              "He built the Pennsylvania Avenue theatres, including the Royal",
             ],
             correctIndex: 1,
             explanation: "His McCulloh Street purchase set off the law, and he spent years litigating against the ordinances, winning at least one case. Resistance is part of the record.",
@@ -292,10 +292,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Which neighbourhoods are grouped as Old West Baltimore?",
             options: [
-              "Fells Point, Canton and Federal Hill",
+              "Fells Point, Canton, Federal Hill and Locust Point on the east",
               "Upton, Harlem Park, Sandtown-Winchester, Druid Heights and Marble Hill",
-              "Roland Park, Guilford and Homeland",
-              "Rosemont and Edmondson Village only",
+              "Roland Park, Guilford, Homeland and Original Northwood together",
+              "Rosemont, Edmondson Village and Walbrook on the far west only",
             ],
             correctIndex: 1,
             explanation: "These west-side neighbourhoods around Pennsylvania and Druid Hill Avenues formed the historic centre of Black Baltimore. Roland Park and Guilford are the covenant suburbs of Section 3.",
@@ -304,10 +304,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The Druid Hill Avenue and McCulloh Street corridor within Old West Baltimore held:",
             options: [
-              "The city's factories",
+              "The city's main factories and rail yards",
               "The community's professional and civic elite",
-              "The HOLC and FHA offices",
-              "The highway right-of-way",
+              "The city's main HOLC and FHA branch offices",
+              "The Franklin-Mulberry highway right-of-way",
             ],
             correctIndex: 1,
             explanation: "It was the good street of Black Baltimore, which is exactly why a Black lawyer buying a house there triggered the 1910 ordinance.",
@@ -316,10 +316,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Both things were true of Old West Baltimore at once. They were:",
             options: [
-              "A wealthy district and an empty one",
+              "A wealthy district and an almost entirely empty one at once",
               "A confined community and a complete, accomplished society",
-              "A new suburb and an old slum",
-              "A white district and a Black one",
+              "A brand-new streetcar suburb and an old downtown slum",
+              "A mostly white district and a mostly Black one at once",
             ],
             correctIndex: 1,
             explanation: "It was confined by the instruments and it produced a press, a legal campaign and major American musicians. A course that keeps only one half is lying.",
@@ -328,10 +328,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Because white hospitals refused or segregated Black patients, Black Baltimore:",
             options: [
-              "Sent all patients out of state",
-              "Supported its own medical institutions and training for Black nurses and doctors",
-              "Had no medical care at all",
-              "Relied only on the city health department",
+              "It sent nearly all of its Black patients to out-of-state care",
+              "It built its own hospitals and trained Black nurses and doctors",
+              "It went almost entirely without any medical care at all",
+              "It relied only on the city's segregated health department",
             ],
             correctIndex: 1,
             explanation: "The institutions Black Baltimore built for itself, including medical ones, are the part of the record most retellings skip.",
@@ -725,10 +725,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The claim that Baltimore's 1910 ordinance was 'the first residential racial segregation law in the US' is best described as:",
             options: [
-              "A myth with no basis",
-              "A claim about a single statute that stood for decades",
-              "True, but a compression of a chain of four ordinances passed and struck between 1910 and 1913",
-              "A claim invented by later historians",
+              "A myth with no basis in the actual Baltimore records",
+              "A claim about one statute that stood unchallenged for decades",
+              "Accurate, but a compression of four ordinances struck by 1913",
+              "A claim first invented by later revisionist historians",
             ],
             correctIndex: 2,
             explanation: "The headline is accurate but hides a seven-year fight: four laws in three years, each struck and redrafted, ended by a case from another state.",
@@ -749,10 +749,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "How did the racial zoning ordinances finally end?",
             options: [
-              "Baltimore's City Council repealed them",
-              "A referendum overturned them",
-              "They were never enforced in the first place",
-              "Buchanan v. Warley (1917), a Louisville case, had the Supreme Court end racial zoning nationally, and Baltimore's died with it",
+              "Baltimore's own City Council quietly repealed all of them",
+              "A statewide Maryland ballot referendum finally overturned them",
+              "They were quietly never enforced in the first place anywhere",
+              "The Supreme Court's Buchanan v. Warley (1917) ended it nationwide",
             ],
             correctIndex: 3,
             explanation: "State v. Gurry (1913) voided one on vested-property grounds; Buchanan ended the whole class under the Fourteenth Amendment, so Baltimore's became unenforceable rather than repealed.",
@@ -761,10 +761,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "A racial restrictive covenant differs from a zoning ordinance because it is:",
             options: [
-              "A federal law",
+              "A federal statute enforced through the U.S. Justice Department",
               "A private promise written into the deed that binds every future owner",
-              "A tax on the property",
-              "A map grading the neighbourhood",
+              "A recurring tax the property owner had to pay the city each year",
+              "An official colour-coded map grading the neighbourhood by risk",
             ],
             correctIndex: 1,
             explanation: "It rides in the deed, so it lives in the same land records as the ground rent from Section 2, and the record-reading skill transfers.",
@@ -773,10 +773,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the 1913 date of the Guilford covenant matter to the chain argument?",
             options: [
-              "It is the same year as the fourth zoning ordinance and four years before Buchanan, so covenants ran parallel to zoning rather than after it",
-              "It proves covenants came long after zoning ended",
-              "It shows the covenant was illegal",
-              "It has nothing to do with the ordinances",
+              "It shares the fourth ordinance's year; covenants ran parallel",
+              "It proves the covenants came long after the zoning laws ended",
+              "It shows the Guilford covenant was plainly illegal from the start",
+              "It has nothing at all to do with the earlier zoning ordinances",
             ],
             correctIndex: 0,
             explanation: "The Roland Park Company reached for a permanent private instrument because the public one was failing in court. The lineage is one of purpose, not a clean sequence in time.",
@@ -785,10 +785,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "What did Shelley v. Kraemer (1948) actually do to racial covenants?",
             options: [
-              "It erased the covenant language from all deeds",
-              "It made writing new covenants a crime",
-              "It held that courts could not enforce them, while the dead language stayed in the deeds",
-              "It upheld them as constitutional",
+              "It erased the covenant language from every recorded deed",
+              "It made the writing of any new covenant a federal crime",
+              "Courts could no longer enforce them, though the words remained",
+              "It upheld the racial covenants as fully constitutional",
             ],
             correctIndex: 2,
             explanation: "State enforcement would violate the Fourteenth Amendment, so covenants became unenforceable but not erased. Many Baltimore deeds still carry the clause, which is why researchers go looking for it.",
@@ -797,10 +797,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The 1937 HOLC 'Residential Security Map' of Baltimore is best taught as:",
             options: [
-              "The single proven cause of West Baltimore's decline",
-              "The clearest surviving picture of official attitude and a boundary that mattered, but not a proven sole cause",
-              "A private real estate advertisement",
-              "A map with no racial content",
+              "The single proven cause of all West Baltimore's later decline",
+              "The clearest surviving picture of official attitude, not a sole cause",
+              "A private real estate sales advertisement with no official standing",
+              "An internal map that carried no racial content whatsoever",
             ],
             correctIndex: 1,
             explanation: "Its area descriptions name race as a hazard, and later work finds the boundaries had some independent effect, but the direct causal story is disputed.",
@@ -809,10 +809,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Which findings make scholars dispute the tidy 'the HOLC map redlined Baltimore' story?",
             options: [
-              "The map was never actually drawn",
-              "The map only covered white neighbourhoods",
-              "Baltimore had no HOLC map at all",
-              "The maps were largely confidential, and HOLC's own lending went into red areas",
+              "The Baltimore security map was in fact never actually drawn",
+              "The map only ever covered the city's white neighbourhoods",
+              "Baltimore, unlike other cities, never had a security map",
+              "The maps were confidential, and HOLC lent into the red areas",
             ],
             correctIndex: 3,
             explanation: "A simple 'lenders used this map to deny loans' account is hard to support when the maps were internal and the agency lent inside the red. The FHA is the better-documented private-market instrument.",
@@ -821,10 +821,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course lean on the FHA Underwriting Manual rather than the HOLC map?",
             options: [
-              "Because the manual's own words are undisputed: it required racial stability and recommended deed restrictions prohibiting occupancy except by the intended race",
-              "Because the manual is more colourful",
-              "Because the map does not exist",
-              "Because the FHA had no influence on lending",
+              "The manual's own words demanded racial stability and endorsed covenants",
+              "Because the underwriting manual simply reads far more colourfully",
+              "Because the HOLC security map does not exist in the city archives",
+              "Because the FHA never truly influenced private home lending at all",
             ],
             correctIndex: 0,
             explanation: "The manual endorsed the private covenants in writing. A picture persuades; a quotation proves. Prefer the instrument you can quote.",
@@ -833,10 +833,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The Highway to Nowhere is the 'unusually legible absence' of this course because it:",
             options: [
-              "Was never built at all",
-              "Is a fully working interstate today",
-              "Was built and then abandoned halfway, so it is the one link in the chain still physically open",
-              "Was demolished after completion",
+              "Was proposed on paper but in the end never built at all",
+              "Is a fully working stretch of interstate carrying traffic today",
+              "Was built then abandoned halfway, the one link still open",
+              "Was fully completed and then demolished a few years later",
             ],
             correctIndex: 2,
             explanation: "The zoning was struck and the covenants disabled, but the highway trench is still there, an open cut with a live civic proceeding attached.",
@@ -845,10 +845,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "How should the highway's displacement figures be handled?",
             options: [
-              "Averaged into a single round number",
-              "Given their owner, with the varying block count reported rather than smoothed, and understood as demolition counts not a full survey",
-              "Presented as a corridor-level census of everything lost",
-              "Dropped, because they are unknowable",
+              "Averaged together into a single clean round headline number",
+              "Given their owner, with the block count reported not smoothed",
+              "Presented as a full corridor-level census of everything lost",
+              "Dropped entirely, because the figures are simply unknowable",
             ],
             correctIndex: 1,
             explanation: "About 971 homes, 62 businesses, one school and roughly 1,500 residents. The block count runs from about fourteen to about twenty because sources count different things.",
@@ -857,10 +857,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "What makes the highway a decision rather than a disaster that simply happened?",
             options: [
-              "Nothing; highways are natural features",
-              "It appeared overnight with no planning",
-              "The weather determined its route",
-              "Its route was chosen by transportation officials through a process that left alignment studies, right-of-way maps and condemnation filings",
+              "Nothing; highways are really just natural landscape features",
+              "It appeared almost overnight with no real planning behind it",
+              "The weather and the terrain alone determined its final route",
+              "Officials chose its route, leaving maps and condemnation filings",
             ],
             correctIndex: 3,
             explanation: "Naming the body that chose the line is the whole posture of beat 3, and those right-of-way maps are public records this course has not yet fully read.",
@@ -870,9 +870,9 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
             prompt: "The one-line verdict of testing the chain against the chronology is:",
             options: [
               "The chain holds as a lineage of purpose and fails as a clean baton pass in time",
-              "The chain is entirely false",
-              "The chain is a flawless four-step sequence",
-              "The chronology cannot be built",
+              "The chain turns out to be entirely false at basically every single link",
+              "The chain is a flawless four-step sequence run start to finish by one hand",
+              "The underlying chronology simply cannot be built from the records at all",
             ],
             correctIndex: 0,
             explanation: "Successive tools aimed at one end in one city is defensible; a clean four-step sequence run by one hand is not.",
@@ -881,10 +881,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the course insist there was no single hand behind the chain?",
             options: [
-              "Because the instruments were imaginary",
-              "Because only one body was ever involved",
-              "Because a city council, a private company, a federal corporation, the FHA and a state highway department each used a different power across sixty years",
-              "Because nobody made any decisions",
+              "Because the four segregation instruments were essentially all imaginary",
+              "Because in the end only one single governing body was ever truly involved",
+              "A city council, a company, the HOLC, the FHA and a state highway body each acted",
+              "Because in the end nobody here ever actually made any real decisions at all",
             ],
             correctIndex: 2,
             explanation: "The purpose was shared, but the authorship was plural. 'The chain' must not smuggle in a single planner the record does not show.",
@@ -893,10 +893,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The method lesson 'a weakened claim that survives beats a strong claim that does not' means, here:",
             options: [
-              "Always make the boldest possible claim",
-              "'Four instruments, one purpose, one city' survives the dates, while 'a clean sequence run by one hand' does not, so you keep the first",
-              "Never test your own thesis",
-              "Suppress any finding that weakens your argument",
+              "Always make the boldest and strongest possible claim you can",
+              "Keep the version that survives the dates over the bolder one",
+              "You should never actually test your own thesis against the dates",
+              "Suppress any finding at all that weakens your main argument",
             ],
             correctIndex: 1,
             explanation: "Report the weakening rather than hiding it. A chain you can check is worth more than a story you cannot.",
@@ -1243,10 +1243,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course's map lesson show a national pattern rather than the trench block by block?",
             options: [
-              "Because the trench has no coordinates",
-              "Because block-level maps are copyrighted",
-              "Because the lesson map draws the whole world, so points need roughly two degrees of separation to separate, and a 1.4-mile trench is smaller than one dot",
-              "Because the course avoids maps of Baltimore",
+              "Because the Franklin-Mulberry trench has no fixed coordinates",
+              "Because the block-level city maps are all under copyright",
+              "The world map is too coarse; a 1.4-mile trench is under one dot",
+              "Because the course deliberately avoids all maps of Baltimore",
             ],
             correctIndex: 2,
             explanation: "Choosing the right scale of map for the question is the actual skill. For a parcel question the right tools are SDAT and the Baltimore City GIS.",
@@ -1279,10 +1279,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Why is the Arch Social Club a safe address to practise a parcel lookup on?",
             options: [
-              "Because it is a demolished building",
-              "Because it is a public institution whose address is already published, so no private home is exposed",
-              "Because it has no owner of record",
-              "Because it is outside Baltimore City",
+              "Because it is a long-demolished building with no address",
+              "Because it is a public building whose address is already published",
+              "Because the building has no owner of record on file at all",
+              "Because it sits just outside Baltimore City's parcel system",
             ],
             correctIndex: 1,
             explanation: "Founded in 1905 and still operating at 2426 Pennsylvania Avenue. Practise on institutional and commercial addresses, never on somebody's home.",
@@ -1304,9 +1304,9 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
             prompt: "Baltimore's current zoning code, TransForm Baltimore, took effect in:",
             options: [
               "2017, replacing a code that had stood since 1971",
-              "1971, and has not changed since",
-              "2025, alongside the highway grant",
-              "1910, with the segregation ordinance",
+              "1971, and it has not once changed since then",
+              "2025, alongside the new federal highway grant",
+              "1910, with the original segregation ordinance",
             ],
             correctIndex: 0,
             explanation: "Ordinance 16-581, effective June 5, 2017. Variances go to the Board of Municipal and Zoning Appeals; rezonings are enacted by the City Council.",
@@ -1315,10 +1315,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "What is West Baltimore United?",
             options: [
-              "A private developer",
-              "A Baltimore City Department of Transportation effort to retrofit the US 40 corridor and reconnect the divided neighbourhoods",
-              "The name of the 1910 ordinance",
-              "A neighbourhood association that opposes the project",
+              "A private commercial developer building along the corridor",
+              "A city effort to retrofit the US 40 corridor and reconnect it",
+              "The formal name given to the original 1910 zoning ordinance",
+              "A neighbourhood association organised to oppose the project",
             ],
             correctIndex: 1,
             explanation: "It is the city-led planning and construction effort attached to the Highway to Nowhere, funded first by a planning grant and then by a construction grant.",
@@ -1327,10 +1327,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The roughly 85.5 million dollars announced on January 7, 2025 for the corridor came from:",
             options: [
-              "A Maryland state bond",
-              "The Roland Park Company",
-              "Private philanthropy",
-              "The U.S. Department of Transportation's Reconnecting Communities Program, funded through the 2021 Infrastructure Investment and Jobs Act",
+              "A Maryland state transportation bond issue passed in 2021",
+              "The Roland Park Company together with private local donors",
+              "Private philanthropy pooled from several national foundations",
+              "The U.S. DOT's Reconnecting Communities Program, from the 2021 law",
             ],
             correctIndex: 3,
             explanation: "The stated first-phase uses are a cap over one block, tearing down existing ramps, and safety improvements at key intersections.",
@@ -1339,10 +1339,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "How should the Red Line's connection to the trench be described, per this course?",
             options: [
-              "As a completed rail line",
-              "As proposed and not yet final: light rail was named the recommended mode in June 2024, but the alignment was still being defined",
-              "As permanently cancelled",
-              "As unrelated to the corridor",
+              "As a fully completed and operating light-rail transit line",
+              "As proposed, not final: light rail recommended in June 2024",
+              "As a project that has been permanently cancelled for good",
+              "As a transit plan wholly unrelated to the trench corridor",
             ],
             correctIndex: 1,
             explanation: "Separate what is decided and funded (the cap, ramp removal, safety) from what is proposed (the exact Red Line route). The record did not yet support a settled station.",
@@ -1351,10 +1351,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "How is Baltimore's beat-5 answer different from the Indianapolis prerequisite's?",
             options: [
-              "Baltimore has no plan at all",
-              "Indianapolis had already finished its highway removal",
-              "In Indianapolis the area plan had adopted nothing after years, while on Franklin-Mulberry there is awarded federal money and a construction phase underway",
-              "Both cities adopted identical plans",
+              "Baltimore, quite unlike Indianapolis, has no adopted plan at all yet",
+              "Indianapolis had already completely finished its own highway removal",
+              "Indianapolis stalled for years, while Baltimore now has funds and a build",
+              "Both cities in the end adopted more or less identical corridor plans",
             ],
             correctIndex: 2,
             explanation: "The honest finding here is a funded, moving project on the same ground the history taught you to read.",
@@ -1363,10 +1363,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "In Baltimore, the level of designation that can actually require authorization before a demolition is:",
             options: [
-              "Local designation by the Commission for Historical and Architectural Preservation (CHAP)",
-              "National Register listing",
-              "Inclusion on the HOLC map",
-              "A ground rent",
+              "Local CHAP designation by the city preservation commission",
+              "A listing on the National Register of Historic Places",
+              "Inclusion within the 1937 HOLC residential security map",
+              "An outstanding ground rent still recorded on the parcel",
             ],
             correctIndex: 0,
             explanation: "Section 2's rule holds here: federal listing is recognition plus review leverage, and local CHAP designation is what can slow or stop a demolition.",
@@ -1375,9 +1375,9 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "If a parcel's owner of record does not match the organisation operating the building, that is:",
             options: [
-              "Proof the record is wrong",
-              "A reason to stop researching",
-              "Illegal",
+              "Firm proof that the parcel record itself is wrong",
+              "A clear reason to stop researching the parcel now",
+              "Outright illegal under Baltimore City property law",
               "Normal, and a finding to follow rather than an error",
             ],
             correctIndex: 3,
@@ -1387,10 +1387,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The Franklin-Mulberry trench in the tour brief is described as:",
             options: [
-              "A roughly 300-foot-wide sunken road, about 1.4 miles long, that mostly ends where the never-built downtown system was to begin",
-              "A completed interstate carrying through traffic downtown",
-              "A surface boulevard with no grade change",
-              "A rail line",
+              "A 300-foot-wide sunken road roughly 1.4 miles long, ending short",
+              "A completed interstate carrying through traffic into downtown",
+              "A wide surface boulevard running level with no grade change",
+              "A below-grade commuter rail line running about 1.4 miles",
             ],
             correctIndex: 0,
             explanation: "A road that stops is right-of-way, and right-of-way is on a map you can request. The stub is the unusually legible absence.",
@@ -1399,10 +1399,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the course place four other cities on the map beside Baltimore?",
             options: [
-              "To fill empty space",
-              "To stop you reading Baltimore as a local misfortune rather than a local instance of a national method",
-              "Because Baltimore's coordinates are unknown",
-              "Because those cities funded the project",
+              "Mainly to fill the otherwise empty space on the world map",
+              "So Baltimore reads as a local instance of a national method",
+              "Because Baltimore's own map coordinates are simply unknown",
+              "Because those four other cities each helped fund the project",
             ],
             correctIndex: 1,
             explanation: "Rondo, Overtown, Tremé and Hayti each had a highway cut through a Black district. The same instrument recurs across the country.",
@@ -1411,10 +1411,10 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
           {
             prompt: "The course's rule for every date and dollar figure in the live-civics lesson is:",
             options: [
-              "Trust them permanently once published",
-              "Re-check all of them before you rely on any of them, because grants get amended and alignments change",
-              "Ignore the sources",
-              "Average the conflicting figures into one number",
+              "Trust every figure permanently once it has been published",
+              "Re-check every figure before relying on it, since grants change",
+              "Simply ignore the cited underlying sources altogether",
+              "Average all the conflicting figures into a single number",
             ],
             correctIndex: 1,
             explanation: "That instruction is not a disclaimer; it is the same method Section 3 used on a hundred-year-old ordinance.",

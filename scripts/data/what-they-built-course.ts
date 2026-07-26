@@ -1548,7 +1548,22 @@ Use this on any claim, in any subject.
 
 ## The calendar
 
-Every line on both sides is sourced in this course.
+Every line on both sides is sourced in this course. Read it first as a picture: the two tracks share one axis, and the years where a dot sits in each track are the point, not a total.
+
+:::timeline Two tracks, one calendar
+1888 | built | The True Reformers bank is chartered in Richmond
+1903 | built | Walker charters St. Luke Penny Savings
+1905 | taken | Georgia raises capital requirements, wrecking small mutual aid associations
+1907 | built | Mechanics and Farmers is chartered in Durham
+1907 | taken | Oklahoma's Senate Bill One formalises segregation
+1921 | built | Greenwood holds 108 businesses; Citizens Trust opens in Atlanta
+1921 | taken | Greenwood is destroyed
+1942 | built | Greenwood holds 242 Black-owned business establishments again
+1960s | taken | Interstate highways cut through Jackson Ward, Auburn Avenue and Hayti
+2026 | built | M&F and Optus announce a merger to form the largest Black-owned bank
+:::
+
+The same record, in full, with every entry sourced elsewhere in the course:
 
 | Date | What was being built | What was being done |
 |---|---|---|

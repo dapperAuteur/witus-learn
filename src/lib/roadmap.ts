@@ -441,9 +441,63 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   recruiting block, and the ecosystem footer. No migration.
 
 ## Content
-- 🔧 **The two structural paths have their first courses** (\`plans/46\`). Both paths are the general
-  case of something the catalog already teaches one instance at a time, and the method course of each
-  now ships. **Who Has the Power to Do This?** (Civics, \`who-has-the-power\`, 19 lessons / 5 sections /
+- 🔧 **"Also discussed in" on lesson pages, and a year brush on the globe** (plans/45 follow-ups). A
+  lesson that NAMES a cross-course entity now carries a quiet "Also discussed in other courses" line
+  linking to the entity page, matched by scanning the lesson text (no per-lesson tagging), tenant-scoped
+  and shown only when at least two of the tenant's courses cover it. And the globe gained a year brush
+  (plans/45 Idea 1): seven pins carry a documented year they enter the record (the business-district
+  foundings 1888-1906, the Great Migration's 1916 start, the DC 1954 and Pittsburgh 1956 clearances),
+  and an "as of" slider reveals the dated places over time while undated pins always show, so place and
+  time move together. Years are a curated seed drawn from the courses; the set grows as more pins earn
+  a defensible date.
+- 🔧 **Cross-course entities, surfaced in search** (plans/45 Part 3). Eleven people, cases, laws, and
+  concepts the route series and its capstone argue about (Berman v. Parker, Milliken, Buchanan,
+  Shelley, Kelo, the 1949/1956/1964 Acts, Unigov, Dillon's Rule, building-and-loans, North Carolina
+  Mutual, the Great Migration) now have an ENTITY PAGE at \`/e/<slug>\` listing every course that
+  touches them with each course's one-line take, and they surface in course SEARCH as their own result
+  type (\`Milliken v. Bradley, appears in 3 courses\`) instead of scattered lesson hits. Tenant-scoped:
+  a link only shows for a course the tenant publishes, and an entity is only 'cross-course' when the
+  tenant has at least two of its courses. Curated seed in code (\`src/lib/entities.ts\`), so no
+  migration; the DB-backed author-declared model stays the plans/45 follow-up. Timeline panel added to
+  \`/globe\` too, the doctrinal-and-policy spine on one axis beside the map.
+- 🔧 **The explore globe** (plans/45, \`/globe\`). A rotating, draggable orthographic globe of the
+  places our courses are about, where zoom controls pin DENSITY (semantic zoom, not just dot size): far
+  out shows only tier-1 hubs, zoom in reveals the rest. Drag rotates, wheel/buttons/arrow-keys zoom, and
+  a pin on the far hemisphere is culled with \`geoDistance > PI/2\`. It is a projection swap on the
+  existing d3-geo stack (\`geoOrthographic\` + \`geoGraticule10\`), so no new dependency and it works
+  offline. The plan's non-negotiables ship WITH it, not as a follow-up: a flat-map toggle, a spin
+  pause, keyboard control, and the pin list rendered as REAL TEXT beside the globe, which is both the
+  accessibility affordance and the no-JS fallback. Tenant-scoped: a pin only appears if the tenant
+  publishes the course it points to. Linked from /explore (\`Spin the globe\`). Pins are a curated set
+  of real course locations (\`src/lib/globe-pins.ts\`); coordinates are ordinary city/site coordinates,
+  several reused from the verified How the Tools Travelled map, nothing invented.
+- 🔧 **Map time-slider** (plans/44 Option B). The map lesson gains an optional \`year\` on any marker,
+  line, or polygon; when present, a Play button and a year slider appear and the map reveals elements
+  as of the chosen year, so a learner watches the pins light up over time (diffusion). An element with
+  no year always shows, so every existing map renders exactly as before. Play steps through the
+  distinct event years, one cohort at a time. First use: **How the Tools Travelled**, where the six
+  dated doctrinal markers now light up in order, 1917 Buchanan BEFORE the 1949 federal upstream, which
+  is the course's own chronology point (an instrument that arrives after a practice is not its cause).
+  All six years are verified from the course text. Next in plans/45: the explore-map globe.
+- 🔧 **Visual timelines: the \`:::timeline\` block** (plans/44 Option C, the cheapest first step). A
+  fenced block inside any lesson body renders a vertical, dated list on one shared time axis, so a
+  course can SHOW co-occurrence (two things happening at once) instead of asserting it. Syntax mirrors
+  the \`:::reveal\` family: \`:::timeline Optional title\` then \`year | lane | text\` (or
+  \`year | text\`) lines, closed by \`:::\`. Events with lanes (e.g. built vs done) each get a
+  colour and a legend, so the two tracks read at a glance and stay mobile-friendly. Pure data plus
+  markup (offline-safe, no dependency, no new lesson type), parsed by \`src/lib/timeline.ts\` (unit
+  tested) and rendered by \`TimelineBlock\`, wired into \`LessonBody\` beside the reveal/tool/field-log
+  directives. The design rule holds in the author's text, not the renderer: co-occurrence is the claim,
+  not balance. Next up (plans/44/45): the map time-slider (Option B) and the explore-map globe.
+
+- ✅ **Both structural paths are complete** (\`plans/46\`): Path A "Who Has the Power?" is 9 of 9 and
+  Path B "How a Business Is Formed" is 7 of 7. The **choropleth map layer** (\`plans/49\`) also shipped:
+  map lessons gain a \`regions\` fill joined to the world topojson by ISO code, with a legend, so a
+  comparative property renders as an AREA not a pin. **How Countries Constitute Themselves** is the
+  first consumer, filling eight countries by executive family. Still open in \`plans/49\`: the US-state
+  fill and the separate-sovereign tribal polygon layer (Tribal Nations ships a point-based stopgap
+  until reservation geometry is wired). Both paths are the general case of something the catalog already teaches one
+  instance at a time. **Who Has the Power to Do This?** (Civics, \`who-has-the-power\`, 19 lessons / 5 sections /
   4 quizzes / a map / a capstone) is the general case of the route series: given any government
   action, find the body, its enabling authority, the document that grants it, and who can overturn
   it. It teaches Dillon's Rule vs home rule and the special-district layer, and introduces tribal
@@ -463,8 +517,43 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   on fraternal societies, industrial insurance, building-and-loans, ROSCAs worldwide (susu, tanda,
   chit fund, tontine) and Islamic finance, on the through-line that when the capital system excludes
   you, you invent an entity. It declines Islamic-finance market statistics rather than quote them
-  loosely and teaches the form-vs-substance debate unresolved. Tranche so far: 2 of 9 government and 2
-  of 7 business courses. **Re-run \`pnpm seed:courses\`.**
+  loosely and teaches the form-vs-substance debate unresolved. Two more join now: **The US Forms**
+  (\`us-business-forms\`, business path course 2: the US entity forms read through the four decisions,
+  the S-corp taught as a tax ELECTION not an entity type) and **The Middle Layer** (\`the-middle-layer\`,
+  government path course 4: states, provinces and regions on the federalism-vs-devolution distinction,
+  entrenched co-sovereigns versus powers granted by statute). Four more join now: **Forms of
+  Government, Honestly** (\`forms-of-government\`, government course 2: the classical forms, then reading
+  a classification critically because V-Dem, Polity, Freedom House and the EIU rank the same countries
+  differently on published methods, asserting no country's current score and mapping the measurers
+  rather than the scores), **How Countries Constitute Themselves** (\`how-countries-constitute\`,
+  government course 3: presidential/parliamentary/semi-presidential, written vs uncodified, federal vs
+  unitary, and the four routes constitutions are made by, from the US 1787 to South Africa 1996),
+  **Cooperatives** (\`cooperatives\`, business course 3: one-member-one-vote, the Rochdale Principles,
+  Mondragon, rural electric co-ops and the credit union handed over by Financing Without Access), and
+  **How Other Countries Form Businesses** (\`foreign-business-forms\`, business course 5: the four
+  decisions applied to the UK, Germany with Mitbestimmung, France, Japan, the Nordics, China's SOEs and
+  the VIE contractual structure, and India, on the point that the American set is not universal). All
+  four map to the Common Core RH/WHST literacy strands and shuffle-by-default; every new quiz bank
+  scores 23-35% on the length tell. Then four MORE join: **Tribal Nations and Indigenous Governance**
+  (\`tribal-nations-governance\`, government course 6: sovereignty as pre-existing not delegated,
+  treaties as supreme law, IRA 1934 vs traditional governance, McGirt, and Alaska Native corporations,
+  authored under plans/46's care rules, teaching that/whose/why and reproducing no ceremonial or
+  restricted detail, leading with nations' own words and Indigenous scholars, the Haudenosaunee held
+  with care and the Constitution-influence claim taught as contested), **Governments Without States**
+  (\`governments-without-states\`, government course 7: the EU as its own legal order, the UN and AU,
+  contested states taught neutrally with attribution, and self-governing communities), **How Power
+  Changes Hands** (\`how-power-changes-hands\`, government course 8: election systems that turn identical
+  votes into different winners, then coups, revolutions, negotiated transitions and term limits, the
+  worked example labelled hypothetical), and **Governance: Who Actually Decides** (\`business-governance\`,
+  business course 6: boards, fiduciary duty, dual-class shares, the German two-tier board, and one share
+  one vote vs one member one vote). All map to the RH/WHST strands; every new bank 23-35% on the length
+  tell. Finally the two CAPSTONES land and **both paths are complete**: **Map Your Own Stack**
+  (\`map-your-own-stack\`, government course 9 of 9: document every government with authority over your
+  block from the primary record, most people find six to twelve and are surprised by half, the graded
+  research capstone that synthesizes the whole path) and **Choose a Form and Defend It**
+  (\`choose-a-form-capstone\`, business course 7 of 7: pick a form for a real scenario and defend it
+  against the four decisions and a named alternative, not legal advice, stated in the assignment).
+  **Path A is 9 of 9 and Path B is 7 of 7**; coverage 105/108. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**

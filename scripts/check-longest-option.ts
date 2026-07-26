@@ -107,7 +107,6 @@ function longestStrategyValue(lens: number[], correct: number): { value: number;
  * the progress bar. Do not add to this list to make new content pass.
  */
 const GRANDFATHERED: Record<string, number> = {
-  "scripts/data/baltimore-chain-course.ts": 0.97,
   "scripts/data/banking-abroad-course.ts": 1.00,
   "scripts/data/broadcasting-course.ts": 0.69,
   "scripts/data/citizenship-naturalization-course.ts": 0.86,
@@ -124,7 +123,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/hoodoo-complete-course.ts": 1.00,
   "scripts/data/hoodoo-course.ts": 0.84,
   "scripts/data/how-to-run-course.ts": 0.72,
-  "scripts/data/indiana-avenue-course.ts": 0.97,
   "scripts/data/jury-duty-courts-course.ts": 0.78,
   "scripts/data/knots-course.ts": 0.85,
   "scripts/data/know-your-rights-at-work-course.ts": 0.96,
@@ -191,7 +189,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/state-civics-wi-course.ts": 0.88,
   "scripts/data/state-civics-wv-course.ts": 0.93,
   "scripts/data/state-civics-wy-course.ts": 0.70,
-  "scripts/data/state-vs-federal-course.ts": 0.63,
   "scripts/data/studying-abroad-course.ts": 1.00,
   "scripts/data/survival-course.ts": 0.93,
   "scripts/data/taxes-americans-abroad-course.ts": 0.94,
@@ -201,7 +198,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/travel-flying-home-course.ts": 0.78,
   "scripts/data/travel-passport-course.ts": 0.84,
   "scripts/data/two-racetracks-course.ts": 0.97,
-  "scripts/data/us-state-local-gov-course.ts": 0.61,
   "scripts/data/voting-elections-101-course.ts": 0.85,
   "scripts/data/woop-course.ts": 1.00,
 };

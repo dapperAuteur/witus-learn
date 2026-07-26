@@ -183,6 +183,18 @@ const CATALOG = [
   "what-a-business-entity-is",
   "the-local-layer",
   "financing-without-access",
+  "us-business-forms",
+  "the-middle-layer",
+  "forms-of-government",
+  "how-countries-constitute",
+  "cooperatives",
+  "foreign-business-forms",
+  "tribal-nations-governance",
+  "governments-without-states",
+  "how-power-changes-hands",
+  "business-governance",
+  "map-your-own-stack",
+  "choose-a-form-capstone",
 ];
 
 describe("standards data integrity — a wrong code could be filed with a state", () => {

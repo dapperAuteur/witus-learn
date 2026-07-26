@@ -1662,6 +1662,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             id: "htt-upstream",
             lat: 38.8899,
             lng: -77.0091,
+            year: 1949,
             title: "The federal upstream, Washington, D.C.",
             color: "#7e22ce",
             description:
@@ -1671,6 +1672,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             id: "htt-southwest-dc",
             lat: 38.878,
             lng: -77.021,
+            year: 1954,
             title: "Southwest Washington, D.C.: the source of Berman",
             color: "#1d4ed8",
             description:
@@ -1680,6 +1682,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             id: "htt-detroit",
             lat: 42.3314,
             lng: -83.0458,
+            year: 1974,
             title: "Detroit, Michigan: the source of Milliken",
             color: "#1d4ed8",
             description:
@@ -1689,6 +1692,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             id: "htt-louisville",
             lat: 38.2527,
             lng: -85.7585,
+            year: 1917,
             title: "Louisville, Kentucky: the source of Buchanan",
             color: "#1d4ed8",
             description:
@@ -1734,6 +1738,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             id: "htt-new-london",
             lat: 41.348,
             lng: -72.093,
+            year: 2005,
             title: "Fort Trumbull, New London, Connecticut",
             color: "#b45309",
             description:
@@ -1743,6 +1748,7 @@ Pittsburgh **assembled and showcased the public-private redevelopment machine ea
             id: "htt-honolulu",
             lat: 21.3069,
             lng: -157.8583,
+            year: 1984,
             title: "Honolulu, Hawaii",
             color: "#b45309",
             description:
