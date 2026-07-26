@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { listCourses } from "@/db/queries/catalog";
 import { GLOBE_PINS } from "@/lib/globe-pins";
+import { CATALOG_TIMELINE } from "@/lib/catalog-timeline";
 import { ExploreGlobe, type GlobeMarker } from "@/components/explore-globe";
+import { TimelineBlock } from "@/components/timeline-block";
 
 export const metadata: Metadata = {
   title: "Where our courses take place",
@@ -39,6 +41,21 @@ export default async function GlobePage() {
           <ExploreGlobe markers={markers} />
         </div>
       )}
+
+      {/* The timeline panel beside the map (plans/45 Part 2): the doctrinal-and-policy spine the route
+          series argues about, so a visitor sees WHEN alongside WHERE. Place and time on one page. */}
+      {markers.length > 0 ? (
+        <section aria-labelledby="tl" className="mt-10">
+          <h2 id="tl" className="text-xl font-semibold">
+            And when: the century these places share
+          </h2>
+          <p className="mt-1 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
+            The rulings and federal acts the route series traces, on one axis. Two tracks: what a court
+            ruled, and what a legislature or agency did.
+          </p>
+          <TimelineBlock events={CATALOG_TIMELINE} />
+        </section>
+      ) : null}
     </main>
   );
 }
