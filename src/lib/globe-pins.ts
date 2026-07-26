@@ -18,26 +18,29 @@ export interface GlobePin {
   title: string;
   courseSlug: string;
   tier: 1 | 2 | 3;
+  /** Optional year this place enters the documented record (a founding, or a key event). Drives the
+   *  globe's year brush; a pin with no year always shows. */
+  year?: number;
 }
 
 export const GLOBE_PINS: GlobePin[] = [
   // ── The route series and its US sites ──
-  { id: "dc", lat: 38.9072, lng: -77.0369, title: "Washington, D.C.", courseSlug: "dc-where-the-instrument-was-blessed", tier: 1 },
+  { id: "dc", lat: 38.9072, lng: -77.0369, title: "Washington, D.C.", courseSlug: "dc-where-the-instrument-was-blessed", tier: 1, year: 1954 },
   { id: "indianapolis", lat: 39.7684, lng: -86.1581, title: "Indianapolis, Indiana", courseSlug: "indiana-avenue-a-district-and-what-replaced-it", tier: 1 },
   { id: "baltimore", lat: 39.2904, lng: -76.6122, title: "Baltimore, Maryland", courseSlug: "baltimore-the-whole-chain", tier: 2 },
-  { id: "pittsburgh", lat: 40.4406, lng: -79.9959, title: "Pittsburgh, Pennsylvania", courseSlug: "pittsburgh-where-the-playbook-was-written", tier: 2 },
+  { id: "pittsburgh", lat: 40.4406, lng: -79.9959, title: "Pittsburgh, Pennsylvania", courseSlug: "pittsburgh-where-the-playbook-was-written", tier: 2, year: 1956 },
   { id: "philadelphia", lat: 39.9526, lng: -75.1652, title: "Philadelphia, Pennsylvania", courseSlug: "philadelphia-the-university-and-the-block", tier: 2 },
   { id: "seattle", lat: 47.6062, lng: -122.3321, title: "Seattle, Washington", courseSlug: "seattle-the-modern-bookend", tier: 2 },
 
   // ── What They Built: the business districts ──
-  { id: "durham", lat: 35.994, lng: -78.8986, title: "Durham, North Carolina", courseSlug: "what-they-built", tier: 3 },
-  { id: "richmond", lat: 37.5407, lng: -77.436, title: "Richmond, Virginia", courseSlug: "what-they-built", tier: 3 },
-  { id: "atlanta", lat: 33.749, lng: -84.388, title: "Atlanta, Georgia", courseSlug: "what-they-built", tier: 3 },
-  { id: "tulsa", lat: 36.154, lng: -95.9928, title: "Tulsa, Oklahoma (Greenwood)", courseSlug: "what-they-built", tier: 2 },
+  { id: "durham", lat: 35.994, lng: -78.8986, title: "Durham, North Carolina", courseSlug: "what-they-built", tier: 3, year: 1898 },
+  { id: "richmond", lat: 37.5407, lng: -77.436, title: "Richmond, Virginia", courseSlug: "what-they-built", tier: 3, year: 1888 },
+  { id: "atlanta", lat: 33.749, lng: -84.388, title: "Atlanta, Georgia", courseSlug: "what-they-built", tier: 3, year: 1905 },
+  { id: "tulsa", lat: 36.154, lng: -95.9928, title: "Tulsa, Oklahoma (Greenwood)", courseSlug: "what-they-built", tier: 2, year: 1906 },
   { id: "chicago", lat: 41.8781, lng: -87.6298, title: "Chicago, Illinois (Bronzeville)", courseSlug: "what-they-built", tier: 3 },
 
   // ── The Great Migration ──
-  { id: "mississippi", lat: 32.3547, lng: -89.3985, title: "Mississippi, the Great Migration's source", courseSlug: "great-migration-and-the-world", tier: 3 },
+  { id: "mississippi", lat: 32.3547, lng: -89.3985, title: "Mississippi, the Great Migration's source", courseSlug: "great-migration-and-the-world", tier: 3, year: 1916 },
 
   // ── The labor series, by country ──
   { id: "brazil", lat: -15.7939, lng: -47.8828, title: "Brazil", courseSlug: "labor-brazil", tier: 1 },

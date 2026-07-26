@@ -22,6 +22,9 @@ export interface GlobeMarker {
   title: string;
   href: string;
   tier: 1 | 2 | 3;
+  /** Optional year this place enters the record. When present anywhere, the globe gains a year brush
+   *  that reveals dated pins over time; a pin with no year always shows. */
+  year?: number;
 }
 
 const W = 640;
@@ -44,6 +47,18 @@ export function ExploreGlobe({ markers }: { markers: GlobeMarker[] }) {
   const [spinning, setSpinning] = useState(true);
   const [active, setActive] = useState<GlobeMarker | null>(null);
   const drag = useRef<{ x: number; y: number } | null>(null);
+
+  // The year brush (plans/45 Idea 1): distinct years across dated markers. When present, "as of"
+  // reveals dated pins over time; undated pins always show. Starts at the end (all visible).
+  const years = useMemo(() => {
+    const set = new Set<number>();
+    for (const m of markers) if (typeof m.year === "number") set.add(m.year);
+    return [...set].sort((a, b) => a - b);
+  }, [markers]);
+  const timed = years.length > 0;
+  const minYear = years[0] ?? 0;
+  const maxYear = years[years.length - 1] ?? 0;
+  const [asOf, setAsOf] = useState<number>(maxYear || 0);
 
   const land = useMemo(() => {
     const topo = worldData as unknown as Topology;
@@ -73,9 +88,11 @@ export function ExploreGlobe({ markers }: { markers: GlobeMarker[] }) {
   // The point facing the viewer, for far-hemisphere culling.
   const center: [number, number] = [-rot[0], -rot[1]];
 
-  // Which markers render on the globe: within the density tier, and (on the globe) on the near side.
+  // Which markers render: within the density tier, within the year brush (undated always pass), and
+  // (on the globe) on the near hemisphere.
   const shown = markers.filter((m) => {
     if (m.tier > threshold) return false;
+    if (typeof m.year === "number" && m.year > asOf) return false;
     if (flat) return true;
     return geoDistance([m.lng, m.lat], center) <= Math.PI / 2;
   });
@@ -115,6 +132,30 @@ export function ExploreGlobe({ markers }: { markers: GlobeMarker[] }) {
             {shown.length} of {markers.length} places · zoom in for more
           </span>
         </div>
+
+        {timed ? (
+          <div className="mb-2 flex flex-wrap items-center gap-3">
+            <input
+              type="range"
+              min={minYear}
+              max={maxYear}
+              step={1}
+              value={asOf}
+              onChange={(e) => setAsOf(Number(e.target.value))}
+              className="h-2 flex-1 min-w-32 cursor-pointer accent-(--accent)"
+              aria-label="Reveal places as of year"
+              aria-valuetext={`As of ${asOf}`}
+            />
+            <span className="text-sm font-semibold tabular-nums" aria-live="polite">
+              as of {asOf}
+            </span>
+            {asOf < maxYear ? (
+              <button type="button" onClick={() => setAsOf(maxYear)} className="text-xs underline" style={{ color: "var(--accent)" }}>
+                show all years
+              </button>
+            ) : null}
+          </div>
+        ) : null}
 
         <svg
           viewBox={`0 0 ${W} ${H}`}

@@ -23,7 +23,7 @@ export default async function GlobePage() {
   const markers: GlobeMarker[] = GLOBE_PINS.flatMap((p) => {
     const id = idBySlug.get(p.courseSlug);
     if (!id) return []; // the tenant does not publish this course
-    return [{ id: p.id, lat: p.lat, lng: p.lng, title: p.title, href: `/course/${id}`, tier: p.tier }];
+    return [{ id: p.id, lat: p.lat, lng: p.lng, title: p.title, href: `/course/${id}`, tier: p.tier, year: p.year }];
   });
 
   return (

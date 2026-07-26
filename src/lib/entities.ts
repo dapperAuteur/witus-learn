@@ -158,6 +158,16 @@ export function getEntity(slug: string): Entity | undefined {
   return BY_SLUG.get(slug);
 }
 
+/** Entities named in a lesson body (case-insensitive substring on the name or an alias). For the
+ *  lesson-page "also discussed in" line. The names are proper nouns, so substring is safe enough. */
+export function entitiesInLesson(body: string | null | undefined): Entity[] {
+  if (!body) return [];
+  const lc = body.toLowerCase();
+  return ENTITIES.filter(
+    (e) => lc.includes(e.name.toLowerCase()) || (e.aliases ?? []).some((a) => lc.includes(a.toLowerCase())),
+  );
+}
+
 /** Entities whose name or an alias contains the query (case-insensitive). For search. */
 export function matchEntities(query: string): Entity[] {
   const q = query.trim().toLowerCase();

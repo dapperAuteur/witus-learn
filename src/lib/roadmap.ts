@@ -441,6 +441,15 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   recruiting block, and the ecosystem footer. No migration.
 
 ## Content
+- 🔧 **"Also discussed in" on lesson pages, and a year brush on the globe** (plans/45 follow-ups). A
+  lesson that NAMES a cross-course entity now carries a quiet "Also discussed in other courses" line
+  linking to the entity page, matched by scanning the lesson text (no per-lesson tagging), tenant-scoped
+  and shown only when at least two of the tenant's courses cover it. And the globe gained a year brush
+  (plans/45 Idea 1): seven pins carry a documented year they enter the record (the business-district
+  foundings 1888-1906, the Great Migration's 1916 start, the DC 1954 and Pittsburgh 1956 clearances),
+  and an "as of" slider reveals the dated places over time while undated pins always show, so place and
+  time move together. Years are a curated seed drawn from the courses; the set grows as more pins earn
+  a defensible date.
 - 🔧 **Cross-course entities, surfaced in search** (plans/45 Part 3). Eleven people, cases, laws, and
   concepts the route series and its capstone argue about (Berman v. Parker, Milliken, Buchanan,
   Shelley, Kelo, the 1949/1956/1964 Acts, Unigov, Dillon's Rule, building-and-loans, North Carolina

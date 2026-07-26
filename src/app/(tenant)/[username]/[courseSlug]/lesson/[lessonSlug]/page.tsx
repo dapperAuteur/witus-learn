@@ -12,6 +12,8 @@ import { CurriculumFeedback } from "@/components/curriculum-feedback";
 import { AssignmentSubmit } from "@/components/assignment-submit";
 import { getSubmission } from "@/db/queries/assignments";
 import { buildCrossroads } from "@/lib/crossroads";
+import { entitiesInLesson } from "@/lib/entities";
+import { listCourses } from "@/db/queries/catalog";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { MetricsTrackerCta } from "@/components/metrics-tracker-cta";
@@ -114,6 +116,18 @@ export default async function LessonPage({ params }: Params) {
           courseSlug,
         })
       : [];
+
+  // "Also discussed in" (plans/45 Part 3): entities this lesson names that ALSO appear in other
+  // courses. Tenant-scoped, and only when the tenant has at least two courses covering the entity, so
+  // the connection is real for this school. Only runs when the body actually names an entity.
+  const namedEntities = access.open ? entitiesInLesson(lesson.textContent) : [];
+  let alsoDiscussed: { slug: string; name: string }[] = [];
+  if (namedEntities.length > 0) {
+    const published = new Set((await listCourses(view.tenant.id)).map((c) => c.slug));
+    alsoDiscussed = namedEntities
+      .filter((e) => e.courses.filter((l) => published.has(l.courseSlug)).length >= 2)
+      .map((e) => ({ slug: e.slug, name: e.name }));
+  }
 
   return (
     <div>
@@ -303,6 +317,20 @@ export default async function LessonPage({ params }: Params) {
             ))}
           </div>
         </section>
+      ) : null}
+
+      {alsoDiscussed.length > 0 ? (
+        <p className="mt-6 text-sm text-neutral-500">
+          Also discussed in other courses:{" "}
+          {alsoDiscussed.map((e, i) => (
+            <span key={e.slug}>
+              {i > 0 ? ", " : ""}
+              <Link href={`/e/${e.slug}`} className="underline hover:no-underline" style={{ color: "var(--accent)" }}>
+                {e.name}
+              </Link>
+            </span>
+          ))}
+        </p>
       ) : null}
 
       {access.open && view.session ? (
