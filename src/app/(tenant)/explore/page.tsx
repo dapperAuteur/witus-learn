@@ -286,6 +286,9 @@ export default async function ExplorePage() {
               Browse all {stats.courses} {plural(stats.courses, "course")}
             </Link>
           ) : null}
+          <Link href="/globe" className={`${textLink} text-sm`} style={accent}>
+            Spin the globe →
+          </Link>
         </div>
       </header>
 

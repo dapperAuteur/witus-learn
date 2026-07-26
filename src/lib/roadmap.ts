@@ -441,6 +441,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   recruiting block, and the ecosystem footer. No migration.
 
 ## Content
+- 🔧 **The explore globe** (plans/45, \`/globe\`). A rotating, draggable orthographic globe of the
+  places our courses are about, where zoom controls pin DENSITY (semantic zoom, not just dot size): far
+  out shows only tier-1 hubs, zoom in reveals the rest. Drag rotates, wheel/buttons/arrow-keys zoom, and
+  a pin on the far hemisphere is culled with \`geoDistance > PI/2\`. It is a projection swap on the
+  existing d3-geo stack (\`geoOrthographic\` + \`geoGraticule10\`), so no new dependency and it works
+  offline. The plan's non-negotiables ship WITH it, not as a follow-up: a flat-map toggle, a spin
+  pause, keyboard control, and the pin list rendered as REAL TEXT beside the globe, which is both the
+  accessibility affordance and the no-JS fallback. Tenant-scoped: a pin only appears if the tenant
+  publishes the course it points to. Linked from /explore (\`Spin the globe\`). Pins are a curated set
+  of real course locations (\`src/lib/globe-pins.ts\`); coordinates are ordinary city/site coordinates,
+  several reused from the verified How the Tools Travelled map, nothing invented.
 - 🔧 **Map time-slider** (plans/44 Option B). The map lesson gains an optional \`year\` on any marker,
   line, or polygon; when present, a Play button and a year slider appear and the map reveals elements
   as of the chosen year, so a learner watches the pins light up over time (diffusion). An element with
