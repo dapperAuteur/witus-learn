@@ -516,8 +516,21 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   (\`us-business-forms\`, business path course 2: the US entity forms read through the four decisions,
   the S-corp taught as a tax ELECTION not an entity type) and **The Middle Layer** (\`the-middle-layer\`,
   government path course 4: states, provinces and regions on the federalism-vs-devolution distinction,
-  entrenched co-sovereigns versus powers granted by statute). Tranche so far: 3 of 9 government and 3
-  of 7 business courses; coverage 95/98. **Re-run \`pnpm seed:courses\`.**
+  entrenched co-sovereigns versus powers granted by statute). Four more join now: **Forms of
+  Government, Honestly** (\`forms-of-government\`, government course 2: the classical forms, then reading
+  a classification critically because V-Dem, Polity, Freedom House and the EIU rank the same countries
+  differently on published methods, asserting no country's current score and mapping the measurers
+  rather than the scores), **How Countries Constitute Themselves** (\`how-countries-constitute\`,
+  government course 3: presidential/parliamentary/semi-presidential, written vs uncodified, federal vs
+  unitary, and the four routes constitutions are made by, from the US 1787 to South Africa 1996),
+  **Cooperatives** (\`cooperatives\`, business course 3: one-member-one-vote, the Rochdale Principles,
+  Mondragon, rural electric co-ops and the credit union handed over by Financing Without Access), and
+  **How Other Countries Form Businesses** (\`foreign-business-forms\`, business course 5: the four
+  decisions applied to the UK, Germany with Mitbestimmung, France, Japan, the Nordics, China's SOEs and
+  the VIE contractual structure, and India, on the point that the American set is not universal). All
+  four map to the Common Core RH/WHST literacy strands and shuffle-by-default; every new quiz bank
+  scores 23-35% on the length tell. Tranche so far: 5 of 9 government and 5 of 7 business courses;
+  coverage 99/102. **Re-run \`pnpm seed:courses\`.**
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ **Pickleball, the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
   "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**

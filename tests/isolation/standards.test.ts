@@ -185,6 +185,10 @@ const CATALOG = [
   "financing-without-access",
   "us-business-forms",
   "the-middle-layer",
+  "forms-of-government",
+  "how-countries-constitute",
+  "cooperatives",
+  "foreign-business-forms",
 ];
 
 describe("standards data integrity — a wrong code could be filed with a state", () => {

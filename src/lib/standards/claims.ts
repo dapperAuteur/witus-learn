@@ -4048,6 +4048,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "financing-without-access",
       "us-business-forms",
       "the-middle-layer",
+      // Government path courses 2-3: read index methodologies (V-Dem, Polity, Freedom House, EIU)
+      // and real constitutions into a coherent account of how a state is classified and constituted.
+      "forms-of-government",
+      "how-countries-constitute",
+      // Business path courses 3, 5: read cooperative charters/principles and foreign formation law
+      // through the four decisions, with cited authoritative sources.
+      "cooperatives",
+      "foreign-business-forms",
     ],
     lessons: [
       "2 · How we know: reading a record the enslavers wrote",
@@ -4088,6 +4096,11 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "who-has-the-power",
       "the-local-layer",
       "the-middle-layer",
+      // Forms of Government tests a classification against the index's own methodology and against a
+      // rival index; How Countries Constitute tests contested classifications (is France
+      // semi-presidential; how imposed was Japan's constitution) against the record.
+      "forms-of-government",
+      "how-countries-constitute",
     ],
     lessons: [
       "3 · The test: four questions before you draw an edge",
@@ -4128,6 +4141,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // Business-financing capstone: document one real financing-without-access institution from
       // the primary record (its charter, its filings) and how its entity choice fit its constraint.
       "financing-without-access",
+      // How Countries Constitute capstone: trace how one real constitution was made from the primary
+      // record (the constitutional text itself) and classify its system, written up with citations.
+      "how-countries-constitute",
     ],
     lessons: [
       "19 · Your assignment: find a listing, then find the address today",

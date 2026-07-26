@@ -121,6 +121,10 @@ import { THE_LOCAL_LAYER_COURSE } from "./data/the-local-layer-course";
 import { FINANCING_WITHOUT_ACCESS_COURSE } from "./data/financing-without-access-course";
 import { US_BUSINESS_FORMS_COURSE } from "./data/us-business-forms-course";
 import { THE_MIDDLE_LAYER_COURSE } from "./data/the-middle-layer-course";
+import { FORMS_OF_GOVERNMENT_COURSE } from "./data/forms-of-government-course";
+import { HOW_COUNTRIES_CONSTITUTE_COURSE } from "./data/how-countries-constitute-course";
+import { COOPERATIVES_COURSE } from "./data/cooperatives-course";
+import { FOREIGN_BUSINESS_FORMS_COURSE } from "./data/foreign-business-forms-course";
 import { PHILADELPHIA_UNIVERSITY_COURSE } from "./data/philadelphia-university-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
@@ -784,6 +788,23 @@ async function main() {
     // (mayor-council, council-manager, commission), special districts (which outnumber cities and
     // whose elections nobody votes in), town meeting, and Unigov as the "creatures of the state" case.
     { slug: "the-local-layer", course: THE_LOCAL_LAYER_COURSE, category: "Civics" },
+    // "Forms of Government, Honestly" is course 2 of the government path (plans/46, Path A): the
+    // classical forms, then the load-bearing skill of reading a classification critically, because
+    // V-Dem, Polity, Freedom House, and the EIU rank the same countries differently on published
+    // methodologies. Asserts no country's current index score; the capstone reads two live reports.
+    { slug: "forms-of-government", course: FORMS_OF_GOVERNMENT_COURSE, category: "Civics" },
+    // "How Countries Constitute Themselves" is course 3 of the government path (plans/46, Path A):
+    // presidential/parliamentary/semi-presidential, written vs uncodified, federal vs unitary, and the
+    // four routes by which constitutions get made (US 1787, Germany 1949, Japan 1947, South Africa 1996).
+    { slug: "how-countries-constitute", course: HOW_COUNTRIES_CONSTITUTE_COURSE, category: "Civics" },
+    // "Cooperatives" is course 3 of the business path (plans/46, Path B): worker/consumer/producer/
+    // housing/purchasing co-ops on the one-member-one-vote difference, the Rochdale Principles,
+    // Mondragon, rural electric co-ops, and the credit union that Financing Without Access handed here.
+    { slug: "cooperatives", course: COOPERATIVES_COURSE, category: "Civics" },
+    // "How Other Countries Form Businesses" is course 5 of the business path (plans/46, Path B): the
+    // four decisions applied to the UK, Germany (with Mitbestimmung), France, Japan, the Nordics, China
+    // (SOEs and the VIE contractual structure), and India; the American set of forms is not universal.
+    { slug: "foreign-business-forms", course: FOREIGN_BUSINESS_FORMS_COURSE, category: "Civics" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:
