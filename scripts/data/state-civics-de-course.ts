@@ -258,10 +258,10 @@ Because Delaware is small and the state government is strong, much is handled at
           {
             prompt: "What is unique about how Delaware amends its constitution?",
             options: [
-              "It requires a unanimous public vote",
-              "The Legislature can amend it alone (two-thirds in two sessions), no public vote is required",
-              "Only the Governor can amend it",
-              "It can never be amended",
+              "A statewide referendum must approve it by two-thirds",
+              "The Legislature amends it alone, with no public referendum",
+              "Only the Governor may amend it, by executive order",
+              "It cannot be amended without an act of the U.S. Congress",
             ],
             correctIndex: 1,
             explanation:
@@ -271,10 +271,10 @@ Because Delaware is small and the state government is strong, much is handled at
           {
             prompt: "Why is Delaware called 'The First State'?",
             options: [
-              "It was the first colony settled",
-              "It was the first to ratify the U.S. Constitution (December 7, 1787)",
-              "It has the first governor",
-              "It is alphabetically first",
+              "It was the first English colony settled in the Americas",
+              "It first ratified the U.S. Constitution, in December 1787",
+              "Its capital city, Dover, was the first U.S. capital",
+              "It is alphabetically the first of the fifty states",
             ],
             correctIndex: 1,
             explanation:
@@ -284,10 +284,10 @@ Because Delaware is small and the state government is strong, much is handled at
           {
             prompt: "What makes Delaware the 'corporate capital' of America?",
             options: [
-              "It has the most factories",
-              "Most major U.S. companies incorporate there, drawn by its corporate law and the Court of Chancery",
-              "It bans corporations elsewhere",
-              "It owns all the companies",
+              "It hosts far more factories than any other U.S. state",
+              "Most large U.S. firms incorporate there for its business law",
+              "It legally bans firms from incorporating in other states",
+              "The state government owns shares in most of those companies",
             ],
             correctIndex: 1,
             explanation:
@@ -297,10 +297,10 @@ Because Delaware is small and the state government is strong, much is handled at
           {
             prompt: "What is special about Delaware's Court of Chancery?",
             options: [
-              "It only handles traffic tickets",
-              "It is a court of equity with no juries, expert in corporate and business law",
-              "It elects the Governor",
-              "It is a federal court",
+              "It handles only routine traffic tickets and parking fines",
+              "It is a court of equity, deciding business cases without juries",
+              "It certifies the results of Delaware's statewide elections",
+              "It is the federal district trial court based in Wilmington",
             ],
             correctIndex: 1,
             explanation:
@@ -323,10 +323,10 @@ Because Delaware is small and the state government is strong, much is handled at
           {
             prompt: "What balance does Delaware's constitution require on its major courts?",
             options: [
-              "An equal number of men and women",
-              "A major-party balance, no more than a bare majority from one party, the rest from the other",
-              "Only judges over age 60",
-              "Only judges from Wilmington",
+              "An equal number of men and women on every court",
+              "A party balance, with at most a bare majority from one party",
+              "That every judge on the court must be older than sixty",
+              "That all of its judges must reside in the city of Wilmington",
             ],
             correctIndex: 1,
             explanation:
@@ -336,10 +336,10 @@ Because Delaware is small and the state government is strong, much is handled at
           {
             prompt: "How are Delaware's judges chosen?",
             options: [
-              "Elected in partisan races",
-              "Nominated by the Governor and confirmed by the Senate for 12-year terms, subject to party balance",
-              "Elected by the Legislature",
-              "Chosen by the Court of Chancery",
+              "Elected by the voters in partisan, statewide judicial races",
+              "The Governor nominates them and the Senate confirms 12-year terms",
+              "Chosen by a statewide popular majority vote held every six years",
+              "Appointed for life by the judges of the state Court of Chancery",
             ],
             correctIndex: 1,
             explanation:
@@ -349,10 +349,10 @@ Because Delaware is small and the state government is strong, much is handled at
           {
             prompt: "Can Delaware citizens put a law on the ballot by initiative?",
             options: [
-              "Yes, a strong initiative",
-              "No, Delaware has no initiative, and citizens don't even vote on constitutional amendments",
-              "Only in even years",
-              "Only for corporate law",
+              "Yes, through a strong statewide ballot-initiative process",
+              "No, Delaware has no initiative and no amendment referendum",
+              "Yes, but only during even-numbered election years",
+              "Yes, but only for matters of corporate and business law",
             ],
             correctIndex: 1,
             explanation:
@@ -370,10 +370,10 @@ Because Delaware is small and the state government is strong, much is handled at
           {
             prompt: "Why does this course tell you to VERIFY Delaware's judiciary and voting rules?",
             options: [
-              "Because Delaware has no government website",
-              "Because the party-balance rule has been litigated and voting-access changes are recent: confirm at [courts.delaware.gov](https://courts.delaware.gov) / [elections.delaware.gov](https://elections.delaware.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because the state of Delaware runs no official website",
+              "Because those rules are contested and recently changed, so verify them",
+              "Because only the United States Congress may set those state rules",
+              "Because Delaware keeps all of its election results permanently secret",
             ],
             correctIndex: 1,
             explanation:

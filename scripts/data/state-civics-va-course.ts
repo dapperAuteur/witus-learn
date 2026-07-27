@@ -341,10 +341,10 @@ So "what governs where I live?" in Virginia depends on whether you're in a **cou
           {
             prompt: "What is unique about the Governor of Virginia's term?",
             options: [
-              "The Governor serves a 6-year term",
-              "The Governor cannot serve two consecutive terms, the only state with this rule",
-              "The Governor is appointed by the Legislature",
-              "There is no term limit at all",
+              "The Governor serves a single fixed six-year term",
+              "The Governor cannot serve two consecutive terms",
+              "The Governor is appointed by the state Legislature",
+              "There is no term limit on the office whatsoever",
             ],
             correctIndex: 1,
             explanation:
@@ -354,10 +354,10 @@ So "what governs where I live?" in Virginia depends on whether you're in a **cou
           {
             prompt: "Which three statewide executive officers do Virginia voters elect (separately)?",
             options: [
-              "Governor, Treasurer, Secretary of State",
+              "Governor, State Treasurer, Secretary of State",
               "Governor, Lieutenant Governor, Attorney General",
-              "Governor and two U.S. Senators",
-              "Only the Governor",
+              "Governor and Virginia's two U.S. Senators",
+              "The Governor and Lieutenant Governor only",
             ],
             correctIndex: 1,
             explanation:
@@ -367,10 +367,10 @@ So "what governs where I live?" in Virginia depends on whether you're in a **cou
           {
             prompt: "How are Virginia's Supreme Court justices chosen?",
             options: [
-              "Elected by voters in partisan races",
-              "Appointed for life by the Governor",
-              "Elected by the General Assembly (the Legislature) to 12-year terms",
-              "Chosen by a citizens' commission",
+              "Elected by the voters in partisan statewide races",
+              "Appointed to serve for life by the state Governor",
+              "Elected by the General Assembly to 12-year terms",
+              "Chosen by an independent citizens' commission",
             ],
             correctIndex: 2,
             explanation:
@@ -393,10 +393,10 @@ So "what governs where I live?" in Virginia depends on whether you're in a **cou
           {
             prompt: "Can Virginia citizens put a new law on the ballot by gathering signatures?",
             options: [
-              "Yes, Virginia has a strong initiative process",
-              "No: Virginia has no citizen initiative; law is made through the General Assembly",
-              "Only in even-numbered years",
-              "Only for tax measures",
+              "Yes, Virginia has a strong statewide initiative process",
+              "No, Virginia has no citizen initiative process at all",
+              "Yes, but only during even-numbered election years",
+              "Yes, but only for state and local tax questions",
             ],
             correctIndex: 1,
             explanation:
@@ -406,10 +406,10 @@ So "what governs where I live?" in Virginia depends on whether you're in a **cou
           {
             prompt: "What does it mean that Virginia is a 'Dillon's Rule' state?",
             options: [
-              "Localities have broad home-rule powers by default",
-              "Localities have only the powers the state expressly grants them",
-              "The Governor controls all local budgets",
-              "Counties can secede from the state",
+              "Localities hold broad home-rule powers by default",
+              "Localities have only the powers the state grants them",
+              "The Governor directly controls all local budgets",
+              "Counties may freely secede from the state at will",
             ],
             correctIndex: 1,
             explanation:
@@ -419,10 +419,10 @@ So "what governs where I live?" in Virginia depends on whether you're in a **cou
           {
             prompt: "What is a Virginia 'independent city'?",
             options: [
-              "A city that governs the surrounding county",
-              "A city that is not part of any county, a separate, county-equivalent unit",
-              "A city with no elected officials",
-              "The state capital only",
+              "A city that fully governs its surrounding county",
+              "A city that belongs to no county, a separate unit",
+              "A city governed with no elected local officials",
+              "Only the state's capital city, which is Richmond",
             ],
             correctIndex: 1,
             explanation:
@@ -432,10 +432,10 @@ So "what governs where I live?" in Virginia depends on whether you're in a **cou
           {
             prompt: "In which years does Virginia elect its Governor?",
             options: [
-              "The same year as the U.S. President",
-              "Odd-numbered years, the year after a presidential election (e.g., 2025, 2029)",
-              "Every two years",
-              "Only in leap years",
+              "In the same year as the U.S. presidential election",
+              "Odd-numbered years, right after a presidential race",
+              "In every even-numbered year, once every two years",
+              "Only during leap years, once every four years",
             ],
             correctIndex: 1,
             explanation:
@@ -445,10 +445,10 @@ So "what governs where I live?" in Virginia depends on whether you're in a **cou
           {
             prompt: "Why does this course tell you to VERIFY Virginia's voter-ID and early-voting rules?",
             options: [
-              "Because Virginia has no elections office",
-              "Because those rules have changed more than once recently, so older sources may be out of date; confirm at [elections.virginia.gov](https://elections.virginia.gov)",
-              "Because only Congress sets them",
-              "Because the rules are secret",
+              "Because the state of Virginia runs no elections office",
+              "Because those rules have changed more than once recently",
+              "Because only the U.S. Congress may set those state rules",
+              "Because Virginia keeps all of its voting rules fully secret",
             ],
             correctIndex: 1,
             explanation:

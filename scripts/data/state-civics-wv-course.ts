@@ -238,10 +238,10 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
           {
             prompt: "What is unique about how West Virginia became a state?",
             options: [
-              "It was purchased from France",
-              "It is the only state created by breaking away from another state (Virginia), during the Civil War",
-              "It was a separate country first",
-              "It was admitted by lottery",
+              "It was purchased from France in a treaty",
+              "The only state split from another state",
+              "It was an independent country beforehand",
+              "It was admitted by a national lottery",
             ],
             correctIndex: 1,
             explanation:
@@ -251,10 +251,10 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
           {
             prompt: "What event made West Virginia's creation possible?",
             options: [
-              "The Louisiana Purchase",
-              "The Civil War (Virginia's secession from the Union)",
-              "The Revolutionary War",
-              "The Gold Rush",
+              "The Louisiana Purchase treaty with France",
+              "The Civil War and Virginia's secession",
+              "The American Revolutionary War of 1776",
+              "The great California Gold Rush of 1849",
             ],
             correctIndex: 1,
             explanation:
@@ -264,10 +264,10 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
           {
             prompt: "Who succeeds the Governor in West Virginia?",
             options: [
-              "The Lieutenant Governor",
-              "The President of the Senate (there is no Lieutenant Governor)",
-              "The Chief Justice",
-              "The Speaker of the House",
+              "The elected Lieutenant Governor",
+              "The President of the state Senate",
+              "The Chief Justice of the court",
+              "The Speaker of the House of Delegates",
             ],
             correctIndex: 1,
             explanation:
@@ -277,10 +277,10 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
           {
             prompt: "How strong is West Virginia's gubernatorial veto on most bills?",
             options: [
-              "Impossible to override",
-              "Weak: most vetoes can be overridden by a simple majority (budget bills need two-thirds)",
-              "The Governor cannot veto",
-              "Only courts can override it",
+              "Very strong and impossible to override",
+              "Weak: a simple majority overrides it",
+              "The Governor cannot veto any bill",
+              "Only the state courts can override",
             ],
             correctIndex: 1,
             explanation:
@@ -291,8 +291,8 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
             prompt: "What changed about West Virginia's judicial elections in 2015?",
             options: [
               "Judges became appointed for life",
-              "Elections became nonpartisan (no party labels on the ballot)",
-              "Judges were abolished",
+              "Elections became nonpartisan races",
+              "Judgeships were entirely abolished",
               "The Legislature began electing them",
             ],
             correctIndex: 1,
@@ -303,10 +303,10 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
           {
             prompt: "What new court did West Virginia add in 2022?",
             options: [
-              "A traffic court",
-              "An Intermediate Court of Appeals (it previously had none)",
-              "A federal court",
-              "A tax court",
+              "A statewide traffic violations court",
+              "An Intermediate Court of Appeals",
+              "A new federal appellate court",
+              "A specialized state tax court",
             ],
             correctIndex: 1,
             explanation:
@@ -316,10 +316,10 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
           {
             prompt: "What is West Virginia's highest court called?",
             options: [
-              "The Supreme Court",
-              "The Supreme Court of Appeals of West Virginia",
-              "The Court of Chancery",
-              "The General Court",
+              "The state Supreme Judicial Court",
+              "The Supreme Court of Appeals",
+              "The high Court of Chancery",
+              "The General Court of the state",
             ],
             correctIndex: 1,
             explanation:
@@ -342,10 +342,10 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
           {
             prompt: "Does West Virginia have a statewide citizen initiative?",
             options: [
-              "Yes, a strong one",
-              "No: amendments are proposed by the Legislature and ratified by voters",
-              "Only for coal policy",
-              "Only in even years",
+              "Yes, it has a strong citizen initiative",
+              "No, the Legislature proposes them",
+              "Only for state coal mining policy",
+              "Only during even-numbered years",
             ],
             correctIndex: 1,
             explanation:
@@ -355,10 +355,10 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
           {
             prompt: "Why does this course tell you to VERIFY West Virginia's court structure and voting rules?",
             options: [
-              "Because West Virginia has no government website",
-              "Because it switched to nonpartisan judicial elections (2015) and added an intermediate court (2022), and voting is run by county clerks, confirm at [courtswv.gov](https://courtswv.gov) / [sos.wv.gov](https://sos.wv.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "West Virginia keeps no government website",
+              "The courts changed and rules shift",
+              "Only the United States Congress sets them",
+              "Because every ballot is kept fully secret",
             ],
             correctIndex: 1,
             explanation:

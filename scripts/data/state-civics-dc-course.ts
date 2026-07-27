@@ -223,10 +223,10 @@ So DC's government is **real and elected, but operates under a congressional vet
           {
             prompt: "What is the District of Columbia?",
             options: [
-              "The 51st state",
-              "A federal district, the seat of the national government, under the ultimate authority of Congress",
-              "A county of Maryland",
-              "A national park",
+              "The nation's 51st admitted state",
+              "A federal district Congress oversees",
+              "A chartered county of Maryland",
+              "A federal national park unit",
             ],
             correctIndex: 1,
             explanation:
@@ -249,10 +249,10 @@ So DC's government is **real and elected, but operates under a congressional vet
           {
             prompt: "What did the Home Rule Act of 1973 create?",
             options: [
-              "DC statehood",
-              "An elected Mayor and a 13-member Council for limited local self-government",
-              "A new state constitution",
-              "Voting senators for DC",
+              "Full DC statehood and two senators",
+              "An elected Mayor and 13-seat Council",
+              "A brand-new state constitution",
+              "Two voting U.S. senators for DC",
             ],
             correctIndex: 1,
             explanation:
@@ -262,10 +262,10 @@ So DC's government is **real and elected, but operates under a congressional vet
           {
             prompt: "What power does Congress keep over DC laws under Home Rule?",
             options: [
-              "None",
-              "A review period in which Congress can disapprove DC laws, plus budget oversight",
+              "None at all once a law is passed",
+              "A review period to disapprove DC laws",
               "Only the power to name streets",
-              "The power to elect the Mayor",
+              "The power to elect DC's Mayor now",
             ],
             correctIndex: 1,
             explanation:
@@ -275,10 +275,10 @@ So DC's government is **real and elected, but operates under a congressional vet
           {
             prompt: "What does 'Taxation Without Representation' on DC plates refer to?",
             options: [
-              "DC pays no taxes",
-              "DC residents pay federal taxes but have no voting representation in Congress",
-              "DC has too many senators",
-              "DC cannot vote for Mayor",
+              "DC residents pay no federal taxes",
+              "Federal taxes but no vote in Congress",
+              "DC has too many U.S. senators now",
+              "DC residents cannot elect a Mayor",
             ],
             correctIndex: 1,
             explanation:
@@ -289,9 +289,9 @@ So DC's government is **real and elected, but operates under a congressional vet
             prompt: "How can DC residents vote for President despite lacking voting members of Congress?",
             options: [
               "They cannot vote for President",
-              "The 23rd Amendment (1961) gives DC three electoral votes",
-              "Maryland votes for them",
-              "The Mayor casts DC's vote",
+              "The 23rd Amendment gives DC 3 electors",
+              "Maryland casts their presidential vote",
+              "The Mayor casts DC's electoral vote",
             ],
             correctIndex: 1,
             explanation:
@@ -301,10 +301,10 @@ So DC's government is **real and elected, but operates under a congressional vet
           {
             prompt: "What is the status of DC statehood?",
             options: [
-              "DC became a state in 2016",
-              "DC voters approved it (2016) and the U.S. House passed a bill, but it has not become law",
+              "DC became the 51st U.S. state in 2016",
+              "Voters approved it but it isn't yet law",
               "It is constitutionally forbidden forever",
-              "Congress has no role",
+              "Congress plays no role in the process",
             ],
             correctIndex: 1,
             explanation:
@@ -314,10 +314,10 @@ So DC's government is **real and elected, but operates under a congressional vet
           {
             prompt: "What are Advisory Neighborhood Commissions (ANCs)?",
             options: [
-              "Federal agencies",
-              "Unpaid, elected hyperlocal bodies that advise the city on neighborhood matters and must be given 'great weight'",
-              "The DC Council's staff",
-              "Congressional committees",
+              "Federal executive agencies",
+              "Elected hyperlocal advisory bodies",
+              "The DC Council's paid staff",
+              "U.S. congressional committees",
             ],
             correctIndex: 1,
             explanation:
@@ -327,10 +327,10 @@ So DC's government is **real and elected, but operates under a congressional vet
           {
             prompt: "Who appoints DC's local judges?",
             options: [
-              "DC voters elect them",
-              "The U.S. President nominates and the U.S. Senate confirms them (from a DC commission's list)",
-              "The Mayor appoints them",
-              "The DC Council elects them",
+              "DC voters elect them at the ballot box",
+              "The President nominates; the Senate confirms",
+              "The DC Mayor alone appoints them all",
+              "The DC Council elects them by a vote",
             ],
             correctIndex: 1,
             explanation:
@@ -341,9 +341,9 @@ So DC's government is **real and elected, but operates under a congressional vet
             prompt: "Why does this course tell you to VERIFY DC's autonomy and statehood status?",
             options: [
               "Because DC has no government website",
-              "Because DC's budget autonomy and the statehood question are active and change: confirm at [dccouncil.gov](https://dccouncil.gov) / [dcboe.gov](https://dcboe.gov)",
-              "Because only Maryland decides",
-              "Because voting is secret",
+              "Because budget autonomy and statehood shift",
+              "Because only Maryland can decide it",
+              "Because your DC ballot stays secret",
             ],
             correctIndex: 1,
             explanation:

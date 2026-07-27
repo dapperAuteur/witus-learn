@@ -421,10 +421,10 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
           {
             prompt: "How is North Carolina's constitution amended?",
             options: [
-              "Citizens petition an amendment directly onto the ballot (initiative)",
-              "The General Assembly proposes by a 3/5 vote of each house, and the voters ratify",
-              "The Governor amends it by executive order",
-              "The state Supreme Court rewrites it",
+              "Citizens petition an amendment directly onto the ballot",
+              "The General Assembly proposes by 3/5, voters ratify",
+              "The Governor amends it directly by executive order",
+              "The state Supreme Court rewrites the text by ruling",
             ],
             correctIndex: 1,
             explanation:
@@ -434,10 +434,10 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
           {
             prompt: "What is the 'Council of State' in North Carolina?",
             options: [
-              "An advisory board the governor appoints",
-              "The state Senate's leadership committee",
-              "Ten separately-elected statewide executive officers (a plural executive)",
-              "The panel that nominates judges",
+              "An advisory board that the sitting governor appoints",
+              "The state Senate's internal leadership committee",
+              "Ten separately-elected statewide executive officers",
+              "The judicial panel that nominates all state court judges",
             ],
             correctIndex: 2,
             explanation:
@@ -447,10 +447,10 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
           {
             prompt: "How does North Carolina choose its Supreme Court justices and Court of Appeals judges?",
             options: [
-              "Merit selection (commission + governor + retention)",
-              "Nonpartisan statewide elections",
-              "Partisan statewide elections (a party label appears on the ballot)",
-              "Appointment by the General Assembly for life",
+              "Merit selection by a commission, then retention votes",
+              "Nonpartisan statewide elections with no party label",
+              "Partisan statewide elections with a party label",
+              "Appointment by the General Assembly for life terms",
             ],
             correctIndex: 2,
             explanation:
@@ -460,10 +460,10 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
           {
             prompt: "Which statement about the North Carolina governor's veto is correct?",
             options: [
-              "The governor has always had a veto since 1776",
-              "The governor got a veto only in 1997 (NC was the last state to grant one) and a veto is overridden by 3/5 of each chamber",
-              "There is no veto at all in North Carolina",
-              "A veto is overridden by a simple majority",
+              "The governor has held full veto power since statehood in 1776",
+              "The governor got a veto only in 1997, overridden by 3/5",
+              "There is no gubernatorial veto power in North Carolina",
+              "A veto is overridden by a simple majority of each chamber",
             ],
             correctIndex: 1,
             explanation:
@@ -473,10 +473,10 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
           {
             prompt: "What vote overrides a governor's veto in North Carolina?",
             options: [
-              "A simple majority of each chamber",
-              "Two-thirds of each chamber",
-              "Three-fifths of the members present and voting in each chamber",
-              "Three-fourths of each chamber",
+              "A simple majority of all the members present in each chamber",
+              "Two-thirds of the members present and voting in each",
+              "Three-fifths of members present and voting per chamber",
+              "Three-fourths of the members present in each chamber",
             ],
             correctIndex: 2,
             explanation:
@@ -486,10 +486,10 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
           {
             prompt: "How many counties does North Carolina have, and how are they governed?",
             options: [
-              "50 counties, each run by a county judge",
-              "100 counties, each governed by an elected Board of County Commissioners",
-              "75 counties, each with a quorum court",
-              "120 counties, one per House seat",
+              "50 counties, each run by a single elected district judge",
+              "100 counties, each run by a Board of Commissioners",
+              "75 counties, each governed by an elected quorum court",
+              "120 counties, one for each state House district seat",
             ],
             correctIndex: 1,
             explanation:
@@ -507,9 +507,9 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
           {
             prompt: "Which statement about North Carolina voting access is correct?",
             options: [
-              "There is no early voting and absentee voting requires an excuse",
-              "Early one-stop voting allows same-day registration, and absentee (mail) voting is no-excuse",
-              "Voters may only vote on Election Day",
+              "There is no early voting; absentee requires an excuse",
+              "Early one-stop voting allows same-day registration",
+              "Voters may cast a ballot only on Election Day itself",
               "Same-day registration is allowed on Election Day itself",
             ],
             correctIndex: 1,
@@ -520,10 +520,10 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
           {
             prompt: "Why does this course refuse to treat one court ruling as the final word on North Carolina's photo voter-ID rule?",
             options: [
-              "Because North Carolina has no voter-ID requirement at all",
-              "Because the ID requirement (SB 824, 2018) was litigated in state and federal courts for years, taking effect only in 2023 to 2024, so you must check [ncsbe.gov](https://ncsbe.gov) for the current status",
-              "Because the rules are secret",
-              "Because only the governor knows the rule",
+              "Because North Carolina has no photo voter-ID requirement at all",
+              "Because the ID law was litigated for years, effective 2023",
+              "Because the state's voting rules are kept entirely secret",
+              "Because only the sitting governor knows the actual rule",
             ],
             correctIndex: 1,
             explanation:
@@ -533,10 +533,10 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
           {
             prompt: "Because North Carolina has no citizen initiative and a comparatively limited governor's veto, what is the main lever for changing a state law?",
             options: [
-              "Petitioning a statute directly onto the ballot",
-              "Electing and lobbying your General Assembly members (and testifying in committee)",
-              "Asking the U.S. President",
-              "Filing in federal court only",
+              "Petitioning a proposed statute directly onto the ballot",
+              "Electing and lobbying your General Assembly members",
+              "Asking the U.S. President to issue an executive order",
+              "Filing a lawsuit in federal district court only",
             ],
             correctIndex: 1,
             explanation:

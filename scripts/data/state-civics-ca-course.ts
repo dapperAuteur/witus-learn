@@ -409,10 +409,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "When was California's current (second) constitution adopted, and what is notable about it?",
             options: [
-              "1849: it is one of the shortest state constitutions",
-              "1879: it is long, heavily amended, and grants strong direct democracy",
-              "1911: it abolished the state legislature",
-              "1966: it created a unicameral legislature",
+              "1849: it was among the shortest of state constitutions",
+              "1879: it is long, much-amended, and allows direct democracy",
+              "1911: it abolished the California state legislature entirely",
+              "1966: it replaced the two houses with one unicameral body",
             ],
             correctIndex: 1,
             explanation:
@@ -422,10 +422,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "Which best describes California's Lieutenant Governor?",
             options: [
-              "Elected on a joint ticket with the Governor",
-              "Appointed by the Governor",
-              "Elected separately from the Governor and can be from a different party",
-              "Chosen by the Legislature",
+              "Elected on a single joint ticket alongside the Governor",
+              "Appointed to the post directly by the sitting Governor",
+              "Elected separately and may be from a different party",
+              "Chosen by a majority vote of the state Legislature",
             ],
             correctIndex: 2,
             explanation:
@@ -448,10 +448,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "How does a California Supreme Court or Court of Appeal justice reach the bench?",
             options: [
-              "Partisan statewide election",
-              "Lifetime appointment by the U.S. President",
-              "Governor appoints, a commission confirms, then voters decide a yes/no retention vote",
-              "Chosen by the county Board of Supervisors",
+              "Elected by the voters in a partisan statewide judicial race",
+              "Given a lifetime appointment directly by the U.S. President",
+              "Governor appoints, a commission confirms, then a retention vote",
+              "Selected directly by the local county Board of Supervisors",
             ],
             correctIndex: 2,
             explanation:
@@ -461,10 +461,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "What power does California's Governor have over the state BUDGET that the U.S. President lacks?",
             options: [
-              "The power to raise taxes without a vote",
-              "A line-item veto to reduce or eliminate individual appropriation items",
-              "The power to dissolve the Legislature",
-              "The power to appoint all legislators",
+              "The power to raise state taxes without any legislative vote",
+              "A line-item veto to reduce or cut individual budget items",
+              "The power to dissolve the Legislature and call new elections",
+              "The power to appoint every member of the state Legislature",
             ],
             correctIndex: 1,
             explanation:
@@ -474,10 +474,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "To override a California Governor's veto, the Legislature needs:",
             options: [
-              "A simple majority of each house",
-              "A two-thirds vote of each house (rare in practice)",
-              "Approval of the state Supreme Court",
-              "A statewide referendum",
+              "A simple majority vote in each of the two houses",
+              "A two-thirds vote of each house, rare in practice",
+              "The formal approval of the state Supreme Court",
+              "A statewide referendum placed before the voters",
             ],
             correctIndex: 1,
             explanation:
@@ -500,10 +500,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "What does California's 'top-two' primary do?",
             options: [
-              "Sends the top candidate from each party to the general election",
-              "Lets only registered party members vote",
-              "Advances the two highest vote-getters overall, regardless of party",
-              "Chooses judges by retention vote",
+              "Sends the top finisher from each party to the general election",
+              "Lets only voters registered with a party cast primary ballots",
+              "Advances the two highest vote-getters, regardless of party",
+              "Chooses the state's judges through a yes-or-no retention vote",
             ],
             correctIndex: 2,
             explanation:
@@ -513,10 +513,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "Why does the number of signatures to qualify a California initiative change over time?",
             options: [
-              "The Legislature resets it every year at random",
-              "It is a percentage of the votes cast for Governor at the last gubernatorial election",
-              "It is tied to the U.S. Census only",
-              "It never changes: it is a fixed constitutional number",
+              "The state Legislature resets the number each year at random",
+              "It is a percentage of the last governor's-race vote total",
+              "It is tied only to the once-a-decade U.S. Census count",
+              "It never changes: a fixed number set in the constitution",
             ],
             correctIndex: 1,
             explanation:
@@ -527,9 +527,9 @@ The practical payoff: **who provides your service depends on where you live**: i
             prompt: "Which set correctly matches California's three direct-democracy tools?",
             options: [
               "Initiative = remove an official; Referendum = pass a law; Recall = reject a law",
-              "Initiative = pass a law; Referendum = reject a law the Legislature passed; Recall = remove an official early",
+              "Initiative = pass a law; Referendum = reject a law; Recall = remove an official",
               "Initiative = appoint a judge; Referendum = set the budget; Recall = call an election",
-              "All three simply mean 'vote in an election'",
+              "Initiative = veto a bill; Referendum = elect a judge; Recall = raise state taxes",
             ],
             correctIndex: 1,
             explanation:
