@@ -639,10 +639,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "How is Hoodoo best described, and how does it differ from Vodou/'Voodoo'?",
             options: [
-              "They are identical organized religions",
-              "Hoodoo is an African American folk practice (conjure/rootwork); Vodou/Vodun are distinct organized religions with deities and clergy",
-              "Hoodoo is a religion and Vodou is a folk practice",
-              "Both are styles of blues music",
+              "Hoodoo and Vodou are one identical organized religion",
+              "Hoodoo is an African American folk practice; Vodou is a religion",
+              "Hoodoo is an organized church religion; Vodou is a loose practice",
+              "Both are regional styles of Delta and Chicago blues music",
             ],
             correctIndex: 1,
             explanation:
@@ -652,10 +652,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "Which African source do scholars most strongly link to the mojo bag and the charged crossroads?",
             options: [
-              "Ancient Egyptian temple religion",
-              "Central African (Kongo) cosmology: the nkisi/minkisi and the dikenga cosmogram",
-              "Roman household gods",
-              "Purely European folk magic",
+              "Ancient Egyptian temple religion with its funerary amulets and spells",
+              "Central African Kongo cosmology: nkisi and the dikenga cosmogram",
+              "Roman household gods, the lares and penates of the family hearth",
+              "Purely European folk magic from medieval grimoire and charm lore",
             ],
             correctIndex: 1,
             explanation:
@@ -665,10 +665,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "Under slavery, the conjure/root doctor most often ALSO served as…",
             options: [
-              "A tax collector for the plantation",
-              "A healer, herbalist, and midwife with real authority in the community",
-              "An official of the church",
-              "A ship's navigator",
+              "A tax collector and bookkeeper for the plantation's owner",
+              "A healer, herbalist, and midwife with real community standing",
+              "An ordained clergy official within the plantation's white church",
+              "A ship's navigator charting vessels across the Atlantic Ocean",
             ],
             correctIndex: 1,
             explanation:
@@ -678,10 +678,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "How should a book's 'Psalm X is for purpose Y' correspondence table be read?",
             options: [
-              "As fixed, universal doctrine",
-              "As one lineage's system / practitioner perspective, useful but varying, not settled fact",
-              "As proven scientific fact",
-              "As irrelevant to Hoodoo",
+              "As fixed, universal doctrine binding on every rootworker alike",
+              "As one lineage's practitioner perspective, useful but varying",
+              "As proven scientific fact tested in controlled lab experiments",
+              "As irrelevant folklore with no real place in conjure practice",
             ],
             correctIndex: 1,
             explanation:
@@ -691,10 +691,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "What is a 'personal concern' in Hoodoo, and why does it carry a caution?",
             options: [
-              "A worry the client discusses; no caution",
-              "A hair, name-paper, or photograph believed to carry a working, reflecting sympathetic magic; cautions apply because it can target a person's autonomy",
-              "A type of candle; a fire hazard",
-              "A regional dialect word for money",
+              "A worry the client discusses aloud; it carries no caution at all",
+              "A personal item (hair, photo) in a working; can target autonomy",
+              "A dressed vigil candle that poses a real household fire hazard",
+              "A regional Gullah dialect word meaning money or personal wealth",
             ],
             correctIndex: 1,
             explanation:
@@ -704,10 +704,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "Which pairing correctly matches a working to its traditional aim?",
             options: [
-              "Uncrossing → to harm an enemy",
-              "Honey jar → to sweeten someone's regard; uncrossing → to remove a crossed condition / bring relief",
-              "Red-brick-dust wash → gambling only",
-              "Mojo hand → to curse a household",
+              "Uncrossing → to harm an enemy and lay a lasting curse on them",
+              "Honey jar → sweetens regard; uncrossing → removes a crossed state",
+              "Red-brick-dust wash → only for luck when gambling at cards and dice",
+              "Mojo hand → to curse a household and drive its family away",
             ],
             correctIndex: 1,
             explanation:
@@ -717,10 +717,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "In conjure, what is the role of divination (signs, dreams, cards, Bible-and-key)?",
             options: [
-              "It is a medical diagnosis",
-              "It 'reads' the situation before acting (e.g., whether trouble is 'natural' or 'unnatural') and sets the working",
-              "It guarantees winning the numbers",
-              "It has no role in the tradition",
+              "It is a licensed medical diagnosis of the client's true illness",
+              "It 'reads' the situation before acting, then sets the working",
+              "It guarantees winning the daily lottery numbers every single time",
+              "It has no role at all and is rejected across the whole tradition",
             ],
             correctIndex: 1,
             explanation:
@@ -730,10 +730,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "What distinguishes the Low Country/Gullah region in the history of Hoodoo?",
             options: [
-              "It had no connection to conjure",
-              "Its relatively isolated Gullah Geechee communities preserved unusually strong African retentions in language and spiritual life",
-              "It invented mail-order catalogs",
-              "It rejected all African influence",
+              "It had no connection at all to conjure or any rootwork practice",
+              "Its isolated Gullah Geechee communities kept strong African retentions",
+              "It first invented the whole mail-order spiritual-supply catalog business",
+              "It fully rejected every trace of African influence in its life",
             ],
             correctIndex: 1,
             explanation:
@@ -743,10 +743,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "What did Carolyn Morrow Long's Spiritual Merchants (2001) document about the supply business?",
             options: [
-              "That it was run entirely by tradition insiders",
-              "That a folk practice met mass production, and many manufacturers/shop owners were OUTSIDERS profiting from a Black practice",
-              "That no commercial trade ever existed",
-              "That Hoodoo and Voodoo are the same",
+              "That the supply trade was run entirely by tradition insiders",
+              "That mass production met a folk practice, with many outsider owners",
+              "That no commercial spiritual-supply trade has ever really existed here",
+              "That Hoodoo and Voodoo are one and the same organized religion",
             ],
             correctIndex: 1,
             explanation:
@@ -756,10 +756,10 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
           {
             prompt: "Why must the Hyatt corpus (and older field records) be read critically?",
             options: [
-              "Because they are fictional",
-              "Because a white outsider collected them from Black informants under Jim Crow, shaping what was shared and framed, and they show variety, not one 'correct' system",
-              "Because they endorse a single doctrine",
-              "Because they contain no real information",
+              "Because they are wholly fictional tales with no basis in real fact",
+              "Because a white outsider gathered them under Jim Crow, shaping it",
+              "Because they endorse one single settled doctrine binding on all conjure",
+              "Because they contain no real or usable information about the practice",
             ],
             correctIndex: 1,
             explanation:

@@ -251,9 +251,9 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
             prompt: "How does the Onondaga Nation itself describe lacrosse?",
             options: [
               "As a game invented in Montreal in the 1800s and later adopted by Native nations",
-              "As sacred, a game given by the Creator, played for the Creator, known to have healing power, and therefore also called the Medicine Game",
-              "As a purely recreational pastime with no cultural meaning",
-              "As a European import that replaced older Haudenosaunee games",
+              "As sacred, given by the Creator, with healing power, also the Medicine Game",
+              "As a purely recreational pastime with no cultural or sacred meaning at all",
+              "As a French colonial import that displaced older Haudenosaunee stickball",
             ],
             correctIndex: 1,
             explanation:
@@ -263,10 +263,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "Why does this course refuse to describe ceremonial medicine-game practices in detail?",
             options: [
-              "Because no written records of them exist anywhere",
-              "Because they are ceremony, not content, the course teaches that they exist and whose they are, quotes what Nations publish themselves, and does not reproduce what isn't ours to give",
-              "Because they are identical to the modern game, so describing them would be redundant",
-              "Because they are legally classified information",
+              "Because no written or oral records of these practices exist anywhere today",
+              "Because they are ceremony not content, so it quotes only what Nations publish",
+              "Because they are identical to the modern game and describing them is redundant",
+              "Because they are legally classified as protected government information",
             ],
             correctIndex: 1,
             explanation:
@@ -289,10 +289,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "Who is Allan Downey, and why does this course cite his book?",
             options: [
-              "A Montreal dentist who wrote the first rulebook",
-              "A Dakelh (Nak'azdli Whut'en) historian whose book The Creator's Game (2018) is Indigenous lacrosse history written by an Indigenous scholar",
-              "The founder of World Lacrosse",
-              "A Haudenosaunee stick maker from Onondaga",
+              "A Montreal dentist who wrote the very first codified lacrosse rulebook in 1860s",
+              "A Dakelh historian, author of The Creator's Game (2018), an Indigenous scholar",
+              "The founder of World Lacrosse, the sport's international governing body",
+              "A Haudenosaunee stick maker from Onondaga who strings sticks for the Nationals",
             ],
             correctIndex: 1,
             explanation:
@@ -302,10 +302,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "In the traditional Haudenosaunee medicine game, what is the stick made of?",
             options: [
-              "Aluminum with a plastic head",
-              "Hand-made hickory, strung traditionally, and the ceremonial game is played only with wooden sticks",
-              "Carbon-fiber composite",
-              "Any material, as long as the pocket is legal",
+              "Machined aluminum shaft with a molded plastic head and mesh",
+              "Hand-made hickory, strung traditionally by the stickmaker",
+              "Molded carbon-fiber composite with a synthetic mesh pocket",
+              "Any modern material at all, as long as the pocket is legal",
             ],
             correctIndex: 1,
             explanation:
@@ -315,10 +315,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "Is a wooden stick still legal in the modern codified game?",
             options: [
-              "No, wood was banned for safety reasons in the 1980s",
-              "Yes, the NCAA women's rules list wood among the legal stick materials, alongside composite, metal alloy, plastic and other synthetics",
-              "Only for goalkeepers",
-              "Only in exhibition games",
+              "No, wood was banned for player-safety reasons back in the mid-1980s",
+              "Yes, NCAA women's rules list wood among the legal stick materials",
+              "Only for goalkeepers, and only during warm-ups before play",
+              "Only in exhibition games and traditional ceremonial matches",
             ],
             correctIndex: 1,
             explanation:
@@ -328,10 +328,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "What are officials usually checking when they perform a \"stick check\"?",
             options: [
-              "The player's grip strength",
-              "Pocket depth, a pocket that's too deep holds the ball when it should release",
-              "Whether the shaft is made of wood",
-              "The color of the stick head",
+              "The player's grip strength and hand placement on the shaft",
+              "Pocket depth, because a too-deep pocket holds the ball illegally",
+              "Whether the shaft is made of wood or an illegal metal alloy",
+              "The color of the stick head and whether it matches the team uniform",
             ],
             correctIndex: 1,
             explanation:
@@ -341,10 +341,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "Where does the word \"lacrosse\" come from?",
             options: [
-              "From a Mohawk word meaning \"stick game\"",
-              "From French, \"crosse\" is the ordinary French word for a stick used in a ball game; Jesuit missionaries encountered the game in the 1630s",
-              "From a Latin liturgical term introduced in 1867",
-              "From the town of La Crosse, Wisconsin",
+              "From a Mohawk word meaning stick game, later adopted into French",
+              "From French; crosse is the French word for a stick-and-ball game",
+              "From a Latin liturgical term the missionaries introduced in 1867",
+              "From the town of La Crosse, Wisconsin, which is named for a river",
             ],
             correctIndex: 1,
             explanation:
@@ -354,9 +354,9 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "What did William George Beers actually do?",
             options: [
-              "Invented lacrosse in 1856",
-              "Wrote down the first rules from 1860, drove the founding of the National Lacrosse Association on Sept. 26, 1867, and published a book on the game in 1869",
-              "Founded the International Olympic Committee",
+              "Personally invented the game of lacrosse from scratch in the year 1856",
+              "Wrote the first rules from 1860 and drove the sport's 1867 founding",
+              "Founded the modern International Olympic Committee back in 1894",
               "Led the Haudenosaunee Nationals to their first world championship medal",
             ],
             correctIndex: 1,
@@ -367,10 +367,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "How should Beers be described honestly?",
             options: [
-              "As a hero who saved the game from disappearing",
-              "As a villain with no lasting influence",
-              "As the codifier of the modern rulebook who also disparaged the Indigenous players he called \"the acknowledged masters of the game,\" claiming \"the Indian never can play as scientifically as the best white players\"",
-              "As an Indigenous rulemaker from Kahnawake",
+              "As a national hero who single-handedly saved the game from disappearing",
+              "As a villain with no real or lasting influence on the modern game",
+              "As the rulebook's codifier who also disparaged the Indigenous players",
+              "As an Indigenous rulemaker from the Kahnawake Mohawk community",
             ],
             correctIndex: 2,
             explanation:
@@ -380,10 +380,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "Was lacrosse declared Canada's national game by an act of parliament in 1859?",
             options: [
-              "Yes, on July 1, 1859",
-              "No, that claim originated with Beers and, per the Dictionary of Canadian Biography, \"became a myth both long and widely held\"",
-              "Yes, but the act was repealed in 1994",
-              "Yes, and hockey was added in the same act",
+              "Yes, by an act of parliament passed on July 1, 1859",
+              "No, that claim came from Beers and became a long-held myth",
+              "Yes, but the 1859 act was quietly repealed back in 1994",
+              "Yes, and ice hockey was named in that very same 1859 act too",
             ],
             correctIndex: 1,
             explanation:
@@ -393,10 +393,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "What happened to Indigenous players in organized lacrosse in 1880?",
             options: [
-              "They were given permanent championship berths",
-              "They were barred from championship competition when the association reorganized as amateur-only, often by being classed automatically as \"professionals\"",
-              "They voluntarily stopped competing",
-              "They were required to use plastic sticks",
+              "They were given permanent guaranteed berths in every championship event",
+              "They were barred by an amateur-only rule, classed as professionals",
+              "They voluntarily stopped competing and left the sport for good",
+              "They were required to switch from wooden to standardized plastic sticks",
             ],
             correctIndex: 1,
             explanation:
@@ -406,10 +406,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "What is uniquely true of the Haudenosaunee Nationals in world sport?",
             options: [
-              "They are the only team allowed to use wooden sticks",
-              "They are a full member of World Lacrosse (joined 1985), the only Indigenous nation admitted to international competition by a sport's world governing body, competing under their own flag",
-              "They are a club team representing New York State",
-              "They hold a permanent Olympic berth",
+              "They are the only national team still allowed to use traditional wooden sticks",
+              "A full member of World Lacrosse, the only Indigenous nation admitted to it",
+              "They are a club team representing New York State in domestic league play",
+              "They hold a permanent guaranteed berth in every Summer Olympic Games program",
             ],
             correctIndex: 1,
             explanation:
@@ -419,10 +419,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "In 2010, why did the Iroquois Nationals miss the world championship in Manchester?",
             options: [
-              "They failed to qualify",
-              "The U.K. refused to issue visas on their Haudenosaunee passports; offered U.S. passports instead, the players refused, and the team forfeited",
-              "The tournament was cancelled",
-              "They were suspended by World Lacrosse",
+              "They failed to qualify through the regional playoff bracket",
+              "The U.K. refused visas on their Haudenosaunee passports",
+              "The Manchester tournament was cancelled that year for funding",
+              "They were suspended by World Lacrosse for a rules violation",
             ],
             correctIndex: 1,
             explanation:
@@ -432,10 +432,10 @@ Because you cannot understand the modern sport's politics, Olympic eligibility, 
           {
             prompt: "How did the Haudenosaunee end up competing at The World Games 2022 after being excluded?",
             options: [
-              "The IOC intervened",
-              "Ireland Lacrosse voluntarily withdrew from the tournament and gave the Haudenosaunee its place",
-              "They won a lawsuit",
-              "The exclusion was a clerical error",
+              "The IOC intervened directly and ordered them reinstated",
+              "Ireland Lacrosse withdrew and gave the Haudenosaunee its place",
+              "They won a lawsuit in international court that forced their entry",
+              "The exclusion turned out to be a simple clerical filing error",
             ],
             correctIndex: 1,
             explanation:
@@ -702,10 +702,10 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
           {
             prompt: "Why is there playable space behind the goal in field lacrosse?",
             options: [
-              "There isn't, the goal is on the end line",
-              "Because the goal is set 12 m from the end line, leaving real playing space behind the cage",
-              "Because the goalkeeper may leave the field",
-              "Because the end line is only marked for face-offs",
+              "There isn't any at all, the goal sits right on the very end line itself",
+              "Because the goal sits 12 m off the end line, leaving space behind it",
+              "Because the goalkeeper is allowed to leave the field of play",
+              "Because the end line is only there to mark the spot for face-offs",
             ],
             correctIndex: 1,
             explanation:
@@ -715,10 +715,10 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
           {
             prompt: "What does the men's offside rule (WL Rule 65.1) require?",
             options: [
-              "No more than six players in the attack half and no more than seven in the defensive half",
-              "All ten players must stay in their own half at all times",
-              "Only the goalkeeper may cross the center line",
-              "Offside applies only during face-offs",
+              "No more than six in the attack half, no more than seven on defense",
+              "All ten field players must stay in their own half at all times",
+              "Only the goalkeeper is permitted to cross the center line at all",
+              "Offside only applies during the face-off and the following fast clear",
             ],
             correctIndex: 0,
             explanation:
@@ -736,10 +736,10 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
           {
             prompt: "What does the Shooting Space rule (WL women's Rule 20.A.19) forbid?",
             options: [
-              "An attacker shooting from outside the 15 m marking area",
-              "A defender blocking or guarding the goal with any part of their body to obstruct the shooting lane",
-              "A goalkeeper leaving the goal circle",
-              "Passing backward across the restraining line",
+              "An attacker shooting from well outside the 15 m marking area",
+              "A defender in the shooting lane obstructing it with the body",
+              "A goalkeeper stepping outside the goal circle during play",
+              "Passing the ball backward across the midfield restraining line",
             ],
             correctIndex: 1,
             explanation:
@@ -749,10 +749,10 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
           {
             prompt: "Under World Lacrosse women's field rules, may a field player wear a helmet?",
             options: [
-              "Yes, and it is required",
-              "Yes, it is optional",
-              "No, field players are not permitted to wear headgear or face masks",
-              "Only the three attackers may",
+              "Yes, a padded helmet with a face mask is required",
+              "Yes, headgear is optional and left to each player's choice",
+              "No, field players may not wear headgear or face masks",
+              "Only the three attackers may, and only inside the arc",
             ],
             correctIndex: 2,
             explanation:
@@ -763,9 +763,9 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
             prompt: "How does a women's lacrosse game restart at the center of the field?",
             options: [
               "A face-off, with both players crouched over the ball",
-              "A draw, sticks held back-to-back above hip level with the ball between them, pushed up on the whistle",
-              "A goalkeeper throw",
-              "A coin toss for possession",
+              "A draw, sticks held back-to-back at hip level",
+              "A goalkeeper throw out to a teammate from the crease",
+              "A referee coin toss to decide first possession",
             ],
             correctIndex: 1,
             explanation: "World Lacrosse (2025b), Rule 13.A.5. It's a vertical contest, a completely different skill from the men's face-off.",
@@ -774,10 +774,10 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
           {
             prompt: "Someone tells you \"women's lacrosse is 12-a-side.\" What's the correct response?",
             options: [
-              "Agree, that's the universal number",
-              "Correct them, it's always 10",
-              "Ask which code: NCAA women's is 12, World Lacrosse women's is 10, and both are correct in their own rulebook",
-              "It doesn't matter; the number varies game to game",
+              "Agree, twelve is the single universal number in every code",
+              "Correct them, it is always exactly ten in every rulebook",
+              "Ask which code: NCAA women's is 12 but World Lacrosse is 10",
+              "It doesn't matter, the roster number varies from game to game",
             ],
             correctIndex: 2,
             explanation:
@@ -795,10 +795,10 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
           {
             prompt: "In NCAA women's lacrosse, what does Rule 2, Section 18 require of field players?",
             options: [
-              "Helmets with face masks",
-              "Eye protection, worn properly, meeting the current ASTM standard",
-              "Nothing beyond a mouthguard",
-              "Shoulder pads and arm pads",
+              "Hard helmets with steel face masks and a throat guard",
+              "Eye protection, worn properly, meeting the ASTM standard",
+              "Nothing at all beyond a fitted mouthguard for each player",
+              "Padded shoulder pads, arm pads, and full rib protectors",
             ],
             correctIndex: 1,
             explanation:
@@ -808,10 +808,10 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
           {
             prompt: "How should you think about the relationship between men's and women's lacrosse?",
             options: [
-              "The same game, with women's being a non-contact version",
-              "Related sports with a shared ancestor, like rugby union and rugby league. Core skills in one (a legal body check; playing defense without entering shooting space) have no equivalent in the other",
-              "Identical rules with different equipment",
-              "Two names for one sport",
+              "The exact same game, with women's just a non-contact version",
+              "Related sports sharing an ancestor, like rugby's two codes",
+              "Identical rules everywhere, only the equipment differs",
+              "Simply two different names for one and the same sport",
             ],
             correctIndex: 1,
             explanation:
@@ -830,8 +830,8 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
             prompt: "What are the defining numbers of Sixes lacrosse?",
             options: [
               "10 players, 100 m field, four 15-minute quarters, 80-second shot clock",
-              "6 players (5 field + goalkeeper), 70 m × 36 m field, four 8-minute quarters, 30-second shot clock",
-              "6 players, indoor rink, two 30-minute halves, no shot clock",
+              "6 players, 70 m x 36 m field, four 8-minute quarters, 30-second clock",
+              "6 players, indoor rink, two 30-minute halves, and no shot clock",
               "12 players, 120-yard field, four 15-minute quarters, 90-second clock",
             ],
             correctIndex: 1,
@@ -841,10 +841,10 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
           {
             prompt: "Why did World Lacrosse create the Sixes discipline?",
             options: [
-              "To make the game more dangerous and therefore more watchable",
-              "To lower cost and barriers, a small field, six players, no positional specialists, so more countries can field a competitive team, which is what a sport needs to be Olympic-viable",
-              "To replace box lacrosse in Canada",
-              "Because field lacrosse was banned internationally",
+              "To make the game far more dangerous and therefore more watchable",
+              "To lower cost and barriers so more countries can field a team",
+              "To replace the box lacrosse leagues in Canada and the U.S.",
+              "Because field lacrosse had been banned from the Olympics",
             ],
             correctIndex: 1,
             explanation:
@@ -1086,10 +1086,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "What's the correct technique for catching a lacrosse ball?",
             options: [
-              "Stab at the ball to meet it early",
-              "Hold the stick rigid so the ball can't escape",
-              "Give with the ball, draw the stick back slightly as it arrives so the pocket absorbs the impact",
-              "Turn the stick head away at the last moment",
+              "Stab hard at the ball to meet it as early as possible",
+              "Hold the stick rigid and locked so the ball cannot bounce out",
+              "Give with the ball, drawing the stick back as it arrives",
+              "Turn the stick head sharply away at the very last moment",
             ],
             correctIndex: 2,
             explanation: "A stiff stick spits the ball out. Soft hands keep it. Catching is the most under-practiced skill in the sport.",
@@ -1098,10 +1098,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "Why do coaches insist that ground balls win games?",
             options: [
-              "Because they look impressive",
-              "Because a loose ball is a possession nobody owns, and in a sport with an 80-second shot clock, every ground ball you win is up to 80 seconds of possession taken from the opponent",
-              "Because the rules award a bonus point for a scooped ball",
-              "Because they're the only legal way to gain possession",
+              "Because a big scooping play always looks impressive to the whole crowd",
+              "Because a loose ball is possession nobody owns, worth 80 seconds",
+              "Because the rulebook awards a bonus point for every scooped ball",
+              "Because a scoop is the only legal way to gain fresh possession",
             ],
             correctIndex: 1,
             explanation: "Possession is the currency of a shot-clock sport. The cliché survives because it keeps being true.",
@@ -1110,10 +1110,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "What is \"wall ball\"?",
             options: [
-              "A penalty for hitting the boards in box lacrosse",
-              "Throwing and catching against a brick wall, both hands, in patterns, free, solo, and the fastest way to build stick skills",
-              "A zone defense formation",
-              "A drill only goalkeepers do",
+              "A penalty for slamming a player into the boards in box lacrosse",
+              "Throwing and catching against a wall to build stick skills",
+              "A packed zone defense formation used to protect the goal",
+              "A conditioning drill that only the goalkeepers ever do",
             ],
             correctIndex: 1,
             explanation: "It's the closest thing lacrosse has to a cheat code, and it costs nothing but a ball.",
@@ -1122,10 +1122,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "Why should a player spend real practice time on their weak hand?",
             options: [
-              "The rules require players to alternate hands",
-              "Because a one-handed player is a solved problem, a competent defender simply takes away the strong side and the player disappears",
-              "Because the weak hand generates more shot power",
-              "It's only relevant for goalkeepers",
+              "The rulebook requires players to alternate hands each possession",
+              "Because a one-handed player is a solved problem for defenders",
+              "Because the weak hand actually generates more raw shot power",
+              "It is only really relevant for goalkeepers and face-off men",
             ],
             correctIndex: 1,
             explanation: "Spend at least half your reps on the hand you hate.",
@@ -1134,10 +1134,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "What is the real purpose of a dodge?",
             options: [
-              "To score directly, every time",
-              "To force the defense to move, once your defender is beaten, someone must slide to help, and the moment they do, a teammate is open",
-              "To draw a penalty",
-              "To run out the shot clock",
+              "To beat your man and score directly, every single time",
+              "To force the defense to move, a slide opens a teammate",
+              "To draw a slashing penalty and win a free position",
+              "To run the shot clock down and stall out the possession",
             ],
             correctIndex: 1,
             explanation: "You dodge to make the defense move. The goal you create is usually someone else's.",
@@ -1146,10 +1146,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "What is \"X\" in field lacrosse?",
             options: [
-              "The center face-off spot",
-              "The space directly behind the goal, playable because the goal sits 12 m off the end line, where a defender's back is to their own cage and you can attack from either side",
-              "The penalty box",
-              "The goalkeeper's crease",
+              "The center face-off spot at the middle of the field",
+              "The playable space directly behind the goal cage",
+              "The penalty box where suspended players must sit",
+              "The goalkeeper's crease circle right in front of the net",
             ],
             correctIndex: 1,
             explanation: "It's the best attacking real estate on the field, and the engine of the classic men's field offense.",
@@ -1158,10 +1158,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "What single habit most separates good offenses from bad ones?",
             options: [
-              "Shooting as hard as possible",
-              "Holding the ball to run the clock",
-              "Moving the ball faster than the defense can rotate, defenses beat individuals but lose to ball movement",
-              "Always dodging from the same side",
+              "Shooting the ball as hard as humanly possible on every look",
+              "Holding the ball to run the clock down every possession",
+              "Moving the ball faster than the defense can rotate to cover",
+              "Always dodging hard from the exact same side, every single time",
             ],
             correctIndex: 2,
             explanation:
@@ -1184,10 +1184,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "In the women's game, what does legal defense consist of?",
             options: [
-              "Body-checking the ball carrier off balance",
-              "Playing the stick and the space without displacing your opponent, without obstructing shooting space, and without parking in the 11 m fan for more than three seconds",
-              "Standing directly in front of the goal at all times",
-              "Holding the attacker's stick until the whistle",
+              "Body-checking the ball carrier hard to knock her off balance",
+              "Playing the stick and space without displacing your opponent",
+              "Standing planted directly in front of the goal at all times",
+              "Holding down the attacker's stick until the next whistle blows",
             ],
             correctIndex: 1,
             explanation:
@@ -1197,10 +1197,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "What is a defensive \"slide\"?",
             options: [
-              "A goalkeeper diving across the crease",
-              "A defender leaving their own player to stop a ball carrier who has beaten their defender, which forces the rest of the defense to rotate",
-              "A substitution during play",
-              "A legal check from behind",
+              "A goalkeeper diving all the way across the crease to save",
+              "A defender leaving their own man to stop the ball carrier",
+              "A quick on-the-fly substitution made during open play",
+              "A legal stick check delivered from directly behind the player",
             ],
             correctIndex: 1,
             explanation:
@@ -1210,10 +1210,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "When would a team most likely switch from man-to-man to a zone defense?",
             options: [
-              "When facing a team that shoots very well from outside",
-              "When protecting a lead, hiding a mismatch, or facing a team that can't shoot from distance",
-              "Whenever they win the face-off",
-              "Zone defense is illegal in lacrosse",
+              "When facing a team that shoots the ball very well from outside",
+              "When protecting a lead or hiding a defensive mismatch",
+              "Whenever they happen to win the opening face-off of a quarter",
+              "Never, because zone defense is illegal in real lacrosse",
             ],
             correctIndex: 1,
             explanation:
@@ -1223,10 +1223,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "Why is a face-off specialist so valuable on a men's field roster?",
             options: [
-              "Because the face-off is worth two goals",
-              "Because in men's field lacrosse every quarter AND every goal is followed by a face-off, so winning them means getting the ball back after every goal you score and every goal you concede",
-              "Because they also play goalkeeper",
-              "Because face-offs are the only way to score",
+              "Because winning the face-off is officially worth two whole goals",
+              "Because every quarter and every goal is followed by a face-off",
+              "Because the same specialist also plays goalkeeper on defense",
+              "Because face-offs are the only legal way to score any goals",
             ],
             correctIndex: 1,
             explanation:
@@ -1236,10 +1236,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "What's the difference between a clear and a ride?",
             options: [
-              "A clear is a shot; a ride is a pass",
-              "A clear is moving the ball out of your own defensive end after winning it; a ride is pressuring the other team's clear to force a turnover",
-              "A clear is a substitution; a ride is a timeout",
-              "They're two names for the same thing",
+              "A clear is a hard shot on goal; a ride is a long outlet pass",
+              "A clear advances the ball; a ride pressures it into a turnover",
+              "A clear is a full player substitution; a ride is a called timeout",
+              "They are simply two different names for the exact same thing",
             ],
             correctIndex: 1,
             explanation:
@@ -1249,10 +1249,10 @@ The women's game manages this differently, with **cards**. In NCAA women's lacro
           {
             prompt: "In World Lacrosse men's field, what is the penalty for a MAJOR foul?",
             options: [
-              "Loss of possession only",
-              "Suspension from the game for 1, 2, or 3 minutes depending on the officials' judgment of severity and intent, with the ball usually awarded to the fouled team",
-              "Automatic ejection",
-              "A 30-second suspension in every case",
+              "Loss of possession only, with no player suspension at all",
+              "A suspension of 1, 2, or 3 minutes, ball to the fouled team",
+              "Automatic ejection from the game with no substitute permitted",
+              "A flat 30-second suspension in absolutely every single case",
             ],
             correctIndex: 1,
             explanation:
@@ -1432,10 +1432,10 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
           {
             prompt: "What is the \"edition trap\"?",
             options: [
-              "Rulebooks are secret and can't be read by the public",
-              "Rulebooks are dated and turn over on different schedules, so quoting an old edition spreads stale rules, always check the cover year",
-              "Only coaches are allowed to own a rulebook",
-              "Every governing body publishes the same book",
+              "Rulebooks are kept secret and cannot be read by the public",
+              "Editions turn over on different schedules, quoting an old one",
+              "Only licensed head coaches are allowed to own the rulebook",
+              "Every governing body publishes the one single identical rulebook",
             ],
             correctIndex: 1,
             explanation:
@@ -1445,10 +1445,10 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
           {
             prompt: "In a World Lacrosse rulebook, what authority do \"approved rulings\" (ARs) have?",
             options: [
-              "None, they're just commentary",
+              "None at all, they are just informal commentary",
               "The same authority as the rules themselves",
-              "They apply only to youth games",
-              "They apply only in overtime",
+              "They apply only to youth and beginner games",
+              "They apply only during overtime and playoff games",
             ],
             correctIndex: 1,
             explanation:
@@ -1458,10 +1458,10 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
           {
             prompt: "Which of these is the strongest way to settle a lacrosse rules argument?",
             options: [
-              "\"I've played for years and this is how we always did it\"",
-              "\"A coach told me\"",
-              "Name the discipline and code, quote the rule number from the current rulebook, and note the edition year",
-              "Search a forum thread",
+              "\"I've played for years, this is just how we always did it here\"",
+              "\"A coach I really trust told me once, so it must be right\"",
+              "Name the discipline and code, quote the rule and edition year",
+              "Search an online forum thread and go with the top reply",
             ],
             correctIndex: 2,
             explanation:
@@ -1471,10 +1471,10 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
           {
             prompt: "In World Lacrosse men's field, what is the penalty for a MINOR foul when the other team already has possession?",
             options: [
-              "Loss of possession",
-              "A 30-second suspension for the player who committed the foul",
-              "A 3-minute suspension",
-              "A free position for the fouled player",
+              "Loss of possession, awarded straight to the other team",
+              "A 30-second suspension for the player who fouled",
+              "A full 3-minute suspension for the offending player",
+              "A free position awarded to the fouled attacking player",
             ],
             correctIndex: 1,
             explanation:
@@ -1492,10 +1492,10 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
           {
             prompt: "Does a slash require actually striking the opponent?",
             options: [
-              "Yes, contact is always required",
-              "No, swinging at an opponent's stick in a dangerous or reckless way is slashing \"even if they do not actually hit the opponent's stick or body\"",
-              "Only if the opponent falls down",
-              "Only in box lacrosse",
+              "Yes, actual stick or body contact is always required first",
+              "No, a reckless swing counts as slashing even if it misses",
+              "Only if the opponent actually falls down to the ground",
+              "Only in the indoor box lacrosse version of the game",
             ],
             correctIndex: 1,
             explanation:
@@ -1512,10 +1512,10 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
           {
             prompt: "What is the characteristic penalty in women's lacrosse?",
             options: [
-              "The penalty box",
-              "A free position, play stops, the fouled player gets the ball, and the offending defender is moved a set distance away",
-              "A penalty shot from the center circle",
-              "Loss of a timeout",
+              "The penalty box, where the fouling player must sit out",
+              "A free position, defender moved back a set distance",
+              "A direct penalty shot taken from the center circle",
+              "Loss of one team timeout for the rest of the half",
             ],
             correctIndex: 1,
             explanation:
@@ -1545,10 +1545,10 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
           {
             prompt: "Why is officiating described as the most accessible PAID role in lacrosse?",
             options: [
-              "Because it requires elite athleticism",
-              "Because it requires no size, speed, or club-team budget, only rules knowledge, decisiveness, and composure, and officials are paid per game amid a chronic shortage",
-              "Because officials are guaranteed a college scholarship",
-              "Because it requires no training at all",
+              "Because it demands truly elite athleticism and top-end speed",
+              "Because it needs no size or budget, only rules knowledge",
+              "Because officials are all guaranteed a full college scholarship",
+              "Because it requires no training or certification whatsoever",
             ],
             correctIndex: 1,
             explanation:
@@ -1558,10 +1558,10 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
           {
             prompt: "How does officiating make you a better player?",
             options: [
-              "It doesn't, it's purely a job",
-              "Because you cannot officiate without knowing exactly where the line sits between a legal check and a major foul, or between good defense and shooting space",
-              "Because officials get extra practice time",
-              "Because officials are scouted by colleges",
+              "It doesn't at all, it is purely a job and nothing more than that",
+              "Because officiating forces you to learn where the line sits",
+              "Because officials get extra free practice time on the field",
+              "Because officials are actively scouted by college coaches",
             ],
             correctIndex: 1,
             explanation: "Officials know the rules better than most coaches, and that knowledge shows up in your own game immediately.",
@@ -1583,10 +1583,10 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
           {
             prompt: "Why is table crew (timer/scorer/shot-clock) a smart first job at a lacrosse venue?",
             options: [
-              "It's the highest-paid role in the sport",
-              "It's often the first paid job available to a young person there, and it's the fastest way to learn a rulebook cold",
-              "It requires a coaching license",
-              "It guarantees a spot on the varsity team",
+              "It's easily the single highest-paid role in the entire sport",
+              "It's often the first paid job a young person can get there",
+              "It requires a valid coaching license and background check",
+              "It guarantees you a starting spot on the varsity team",
             ],
             correctIndex: 1,
             explanation:
@@ -1767,10 +1767,10 @@ Some things that have happened:
           {
             prompt: "When may NCAA Division I lacrosse coaches first contact a recruit?",
             options: [
-              "Any time from ninth grade",
-              "September 1 of the player's junior year, under NCAA legislation passed in April 2017 to curb early recruiting",
-              "Only after the player graduates",
-              "January 1 of senior year, in all divisions",
+              "Any time starting from the first day of ninth grade",
+              "September 1 of the junior year, under 2017 NCAA rules",
+              "Only after the player has fully graduated high school",
+              "January 1 of senior year, the same across all divisions",
             ],
             correctIndex: 1,
             explanation:
@@ -1780,10 +1780,10 @@ Some things that have happened:
           {
             prompt: "The September 1 rule restricts what, exactly?",
             options: [
-              "What recruits may do, you can't email a coach before then",
-              "What coaches may do, you can still email coaches, send film, and attend camps; they just can't respond the way you'd like yet",
-              "Both parties equally",
-              "Only official campus visits",
+              "What recruits may do, you cannot email any coach at all before then",
+              "What coaches may do, you can still send film and attend camps",
+              "Both parties equally, the recruits and the coaches alike",
+              "Only official on-campus recruiting visits and nothing else",
             ],
             correctIndex: 1,
             explanation: "Send film. Film is cheap, coaches watch it, and it doesn't care where you live.",
@@ -1800,10 +1800,10 @@ Some things that have happened:
           {
             prompt: "Project Play reports what gap in regular sports participation among kids aged 6-12?",
             options: [
-              "No measurable gap by income",
-              "24% from homes earning $25,000 or less, versus 40% from homes earning $100,000+",
-              "35% versus 37%, essentially even",
-              "Participation is higher in lower-income homes",
+              "No real measurable participation gap by household income",
+              "24% in homes under $25,000, versus 40% over $100,000",
+              "35% versus 37%, an essentially even split by income",
+              "Participation is actually higher in lower-income homes",
             ],
             correctIndex: 1,
             explanation: "Cost is not a small barrier in lacrosse; it is the barrier.",
@@ -1812,10 +1812,10 @@ Some things that have happened:
           {
             prompt: "Why does the course suggest seriously considering NCAA Division III?",
             options: [
-              "Because D-III offers the largest athletic scholarships",
-              "Because there are no athletic scholarships there, but there is strong lacrosse, real coaching, and admissions officers who care that you play, which beats a D-I roster spot you never come off the bench for",
-              "Because D-III has no recruiting rules",
-              "Because D-III teams play in the PLL",
+              "Because D-III offers by far the largest athletic scholarships",
+              "Because it has real lacrosse and coaches who value you",
+              "Because D-III has no recruiting rules or contact dates",
+              "Because D-III teams go on to play in the professional PLL",
             ],
             correctIndex: 1,
             explanation: "Also worth asking any program: how many players at my position, and how many are on the field on Saturday?",
@@ -1824,10 +1824,10 @@ Some things that have happened:
           {
             prompt: "What is the PLL, and how big is it?",
             options: [
-              "A women's indoor league with four teams",
-              "The top men's FIELD league in North America, with eight teams",
-              "The international governing body",
-              "A college conference",
+              "A women's indoor box lacrosse league with just four teams",
+              "The top men's field league in North America, eight teams",
+              "The sport's international governing body for all lacrosse",
+              "A college athletic conference for university lacrosse teams",
             ],
             correctIndex: 1,
             explanation:
@@ -1837,10 +1837,10 @@ Some things that have happened:
           {
             prompt: "What does the NLL itself publish about its players' working lives?",
             options: [
-              "That all players are full-time professional athletes",
-              "That many hold multiple jobs, its own site runs a piece noting athletes hold down full-time jobs, raise families, AND play professionally",
-              "That players are forbidden from outside employment",
-              "Nothing, the league does not comment",
+              "That all of its players are full-time professional athletes",
+              "That many hold full-time jobs and raise families too",
+              "That its players are forbidden from any outside employment",
+              "Nothing at all, the league does not publicly comment on it",
             ],
             correctIndex: 1,
             explanation:
@@ -1850,10 +1850,10 @@ Some things that have happened:
           {
             prompt: "Why does this course refuse to print professional lacrosse salary figures?",
             options: [
-              "Because salaries are secret by law",
-              "Because the numbers circulating online come from content farms rather than leagues or player associations, if you want a number, get it from a league or a CBA",
-              "Because players are unpaid",
-              "Because salaries are identical across all leagues",
+              "Because player salaries are kept legally secret by law",
+              "Because those figures come from content farms, not leagues",
+              "Because professional lacrosse players are all unpaid",
+              "Because salaries are identical across every single pro league",
             ],
             correctIndex: 1,
             explanation: "Cite the source that owns the number, or don't cite a number.",
@@ -1862,10 +1862,10 @@ Some things that have happened:
           {
             prompt: "What changed for the Women's Lacrosse League (WLL) in 2026?",
             options: [
-              "It folded",
-              "It played its first full regular season, eleven weekends with playoffs, rosters expanded to 23, games on ESPN, and switched from sixes to full-field 10-v-10",
-              "It expanded to sixteen teams",
-              "It merged with the NLL",
+              "It folded and stopped operating after just one season",
+              "It played its first full season and switched to 10-v-10",
+              "It rapidly expanded to a full sixteen professional teams",
+              "It fully merged with the men's indoor NLL league",
             ],
             correctIndex: 1,
             explanation:
@@ -1875,10 +1875,10 @@ Some things that have happened:
           {
             prompt: "Is Athletes Unlimited Pro Lacrosse currently operating?",
             options: [
-              "Yes, it's the top women's league",
-              "No, it ran 2021-2024 and Athletes Unlimited suspended it indefinitely, effective immediately, on December 18, 2024",
-              "Yes, but only in Canada",
-              "It never existed",
+              "Yes, it is currently the very top professional women's league",
+              "No, it ran 2021-2024 and was suspended in December 2024",
+              "Yes, but only in Canada and a couple of U.S. cities",
+              "It never actually existed as a real professional league",
             ],
             correctIndex: 1,
             explanation:
@@ -1888,10 +1888,10 @@ Some things that have happened:
           {
             prompt: "When was lacrosse previously an Olympic medal sport?",
             options: [
-              "1924 and 1936",
-              "1904 (St. Louis) and 1908 (London), with demonstration appearances in 1928, 1932 and 1948",
-              "It has never been an Olympic sport",
-              "1948 only",
+              "1924 in Paris and then again in 1936 in Berlin, as a medal event",
+              "1904 (St. Louis) and 1908 (London), plus later demonstrations",
+              "It has never once been a full Olympic medal sport at all",
+              "Only once, at the 1948 London Games, as a medal sport",
             ],
             correctIndex: 1,
             explanation:
@@ -1909,9 +1909,9 @@ Some things that have happened:
           {
             prompt: "What is the confirmed qualification pathway to LA28?",
             options: [
-              "A single world championship in 2028",
-              "Continental championships (Sept-Dec 2026) → World Lacrosse Sixes Championships (Oct 2027, sending five teams per gender including host USA) → a final Olympic qualifying tournament in early 2028 that completes the field of six",
-              "Direct invitation by the IOC",
+              "A single one-off world championship held in the year 2028",
+              "Continental events, 2027 Sixes worlds, then a 2028 qualifier",
+              "A direct invitation issued straight from the IOC itself",
               "The top six teams in the world rankings qualify automatically",
             ],
             correctIndex: 1,
@@ -1922,10 +1922,10 @@ Some things that have happened:
           {
             prompt: "What is the IOC's stated reason for not admitting the Haudenosaunee to the 2028 Games?",
             options: [
-              "That the team isn't competitive enough",
-              "That IOC eligibility rules require a National Olympic Committee, which requires recognition as an independent state, recognition the Haudenosaunee do not have from the UN, though World Lacrosse has recognized them as a full member since 1985",
-              "That lacrosse isn't their traditional sport",
-              "That the roster deadline passed",
+              "That the Haudenosaunee team simply isn't competitive enough",
+              "That IOC eligibility requires a National Olympic Committee",
+              "That lacrosse isn't actually their own traditional sport",
+              "That the roster submission deadline had already passed",
             ],
             correctIndex: 1,
             explanation:
@@ -1935,10 +1935,10 @@ Some things that have happened:
           {
             prompt: "What is the right way to state the Haudenosaunee Olympic-eligibility situation to someone else?",
             options: [
-              "\"They're definitely in\"",
-              "\"They're definitely out, forever\"",
-              "\"As of [this date], the status was [this], and here is where I checked\", because the question is live and the authoritative sources are the Nationals, the Onondaga Nation, World Lacrosse, and Indigenous news outlets",
-              "\"Nobody knows anything about it\"",
+              "\"They are definitely in the 2028 Games, and it's fully settled\"",
+              "\"They are definitely out of the Olympics for good, forever\"",
+              "\"As of [this date], the status was [X], and here's my source\"",
+              "\"Honestly, nobody really knows anything at all about it\"",
             ],
             correctIndex: 2,
             explanation:
@@ -2312,10 +2312,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "What are USA Lacrosse's coach certification levels?",
             options: [
-              "Beginner, Intermediate, Advanced",
-              "Bronze, Silver, Gold, Platinum (formerly Levels 1-3), with Bronze as the safety/risk-management baseline for all active coach members",
-              "A, B, and C licences",
-              "There is only one level",
+              "Beginner, Intermediate, Advanced, and Expert grade tiers",
+              "Bronze, Silver, Gold, and Platinum, formerly Levels 1-3",
+              "A, B, and C grade coaching licences, as in soccer",
+              "There is only one single level for every active coach",
             ],
             correctIndex: 1,
             explanation:
@@ -2333,10 +2333,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "Why is stick stringing a realistic micro-business for a student?",
             options: [
-              "It requires a workshop and expensive machinery",
-              "It costs almost nothing to learn, requires no facility, and every team has players who can't string their own sticks and will pay someone who can",
-              "It's licensed by World Lacrosse",
-              "It only pays at professional level",
+              "It requires a full workshop and costly stringing machinery",
+              "It costs little to learn and every team needs stringers",
+              "It's formally licensed and regulated by World Lacrosse",
+              "It only ever pays anything at the professional level",
             ],
             correctIndex: 1,
             explanation:
@@ -2346,10 +2346,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "Which statement about the three program models is accurate?",
             options: [
-              "School programs are the most expensive for families",
-              "Club/travel teams are the cheapest way to play",
-              "School programs are cheapest for families and reach kids who'd never seek out a club; club/travel teams are a business whose product is partly hope",
-              "Rec leagues are only for elite players",
+              "School programs are the most expensive option for families",
+              "Club and travel teams are always the cheapest way to play",
+              "School programs are cheapest and reach kids clubs miss",
+              "Rec leagues are strictly for elite, high-level players only",
             ],
             correctIndex: 2,
             explanation:
@@ -2359,10 +2359,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "What is the single highest-leverage thing a new lacrosse program can build?",
             options: [
-              "A logo and uniforms",
+              "A polished team logo and a matching set of new uniforms",
               "A loaner-equipment bin, because equipment is the gate",
-              "A social media account",
-              "A championship team",
+              "A big active social media account for the program",
+              "A championship-winning varsity team in year one",
             ],
             correctIndex: 1,
             explanation:
@@ -2384,10 +2384,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "What does the course say about where the realistic money is in lacrosse?",
             options: [
-              "Playing professionally",
-              "Paid coaching, camps and clinics, officiating at volume, equipment services, and program administration, none of which will make you rich, but several of which will pay you to spend your life around the game",
-              "Sponsorship deals for amateur players",
-              "There is no money in lacrosse at any level",
+              "Playing professionally in a top men's outdoor league",
+              "Paid coaching, camps, officiating, and equipment services",
+              "Big brand sponsorship deals for very talented amateur players",
+              "There is simply no real money in lacrosse at any level",
             ],
             correctIndex: 1,
             explanation:
@@ -2397,10 +2397,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "If you are not Haudenosaunee, what's the honest way to engage with traditional wooden stick-making?",
             options: [
-              "Learn the shape and start selling wooden sticks",
-              "As a customer, a student, and an advocate, buy from Native makers, learn who they are, and understand the stick carries meaning before you handle one like inventory",
-              "Avoid the subject entirely",
-              "Mass-produce a plastic version",
+              "Learn the basic shape and start selling wooden sticks",
+              "As a customer and student, buying from Native makers",
+              "Avoid the whole subject entirely and never mention it",
+              "Mass-produce a cheap plastic version and sell it widely",
             ],
             correctIndex: 1,
             explanation:
@@ -2410,10 +2410,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "What's the rule the course gives for evaluating any lacrosse business idea?",
             options: [
-              "Go where the biggest market is",
-              "Solve a problem someone actually has, nobody needs another apparel brand; plenty of people need a stick strung by Thursday or a used helmet that fits",
-              "Only start something if you were an elite player",
-              "Copy what a successful club is already doing",
+              "Go straight to where the very biggest market already is",
+              "Solve a problem someone actually has, not a vanity project",
+              "Only start something if you were once an elite player",
+              "Just copy exactly what a successful local club is already doing",
             ],
             correctIndex: 1,
             explanation: "And none of those problems requires you to be great at lacrosse.",
@@ -2422,10 +2422,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "What did Fultz & Chen (2012), drawing on NCAA data, report about Division I lacrosse participation?",
             options: [
-              "That lacrosse was the most racially diverse NCAA sport",
-              "That white athletes made up 91.4% of male and 90.6% of female Division I lacrosse players, with Black athletes under 2.5%",
-              "That participation was evenly split across all groups",
-              "That the NCAA does not collect this data",
+              "That lacrosse was easily the most racially diverse NCAA sport",
+              "That white athletes were 91.4% of men and 90.6% of women",
+              "That participation was evenly split across all racial groups",
+              "That the NCAA does not collect any of this racial data",
             ],
             correctIndex: 1,
             explanation:
@@ -2448,10 +2448,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "What is distinctive about the Harlem Lacrosse model?",
             options: [
-              "It runs elite travel tournaments",
-              "It places full-time program directors inside schools, delivering academic support, mentoring, leadership training and college/career counseling alongside lacrosse, the program comes to the school, not the other way round",
-              "It is a professional league",
-              "It manufactures equipment",
+              "It runs elite travel tournaments for top-tier club players",
+              "It places full-time program directors inside the schools",
+              "It is a fully professional men's field lacrosse league",
+              "It manufactures and sells its own lacrosse equipment",
             ],
             correctIndex: 1,
             explanation:
@@ -2461,10 +2461,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "In what sense is the Sixes discipline an access intervention?",
             options: [
-              "It isn't, it's purely a TV format",
-              "It needs a smaller field, fewer players, and no long sticks or face-off specialists, a discipline explicitly designed to lower the cost of entry, wearing an Olympic uniform",
-              "It bans expensive equipment brands",
-              "It is free to play by rule",
+              "It isn't an intervention at all, it's purely a TV format",
+              "It needs a smaller field, fewer players, no long sticks",
+              "It formally bans expensive equipment brands by rule",
+              "It is completely free to play everywhere by rule",
             ],
             correctIndex: 1,
             explanation:
@@ -2474,10 +2474,10 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
           {
             prompt: "What is the entrepreneurial reading of lacrosse's access problem?",
             options: [
-              "That the sport is a bad market and should be avoided",
-              "That every barrier is also an opening, a sport with an equipment gate needs equipment programs, a sport with a travel-club pipeline needs alternatives, and a sport that is 90% one demographic has an enormous unserved population",
-              "That someone else will fix it eventually",
-              "That the only fix is more scholarships",
+              "That the sport is a bad market that should simply be avoided",
+              "That every barrier is also an opening for someone to build",
+              "That someone else will surely fix it all eventually",
+              "That the one real fix is simply more athletic scholarships",
             ],
             correctIndex: 1,
             explanation:
