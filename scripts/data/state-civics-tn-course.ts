@@ -305,9 +305,9 @@ The practical effect: in Tennessee, the **county** is a major unit of government
             prompt: "Which constitution governs Tennessee today, and can citizens initiate laws?",
             options: [
               "The Constitution of 1796; yes, strong initiative",
-              "The Constitution of 1870; no, Tennessee has no citizen initiative",
+              "The Constitution of 1870; no citizen initiative",
               "The Constitution of 1953; yes, for taxes only",
-              "It has no constitution",
+              "It has no constitution; only federal law applies",
             ],
             correctIndex: 1,
             explanation:
@@ -319,8 +319,8 @@ The practical effect: in Tennessee, the **county** is a major unit of government
             options: [
               "A separately elected Lieutenant Governor",
               "The Speaker of the state Senate (by statute)",
-              "The Attorney General",
-              "The Chief Justice",
+              "The Attorney General, elected statewide",
+              "The Chief Justice of the Supreme Court",
             ],
             correctIndex: 1,
             explanation:
@@ -330,10 +330,10 @@ The practical effect: in Tennessee, the **county** is a major unit of government
           {
             prompt: "Who appoints Tennessee's Attorney General?",
             options: [
-              "The Governor",
-              "The voters",
-              "The state Supreme Court (the only such arrangement in the nation)",
-              "The U.S. President",
+              "The Governor, with state Senate consent",
+              "The voters, in a statewide election",
+              "The state Supreme Court, to an 8-year term",
+              "The U.S. President, with Senate approval",
             ],
             correctIndex: 2,
             explanation:
@@ -343,9 +343,9 @@ The practical effect: in Tennessee, the **county** is a major unit of government
           {
             prompt: "How are Tennessee's Secretary of State, Treasurer, and Comptroller chosen?",
             options: [
-              "Elected by the voters",
+              "Elected directly by the voters",
               "Appointed by the Governor",
-              "Elected by the General Assembly (the Legislature)",
+              "Elected by the General Assembly",
               "Appointed by the Supreme Court",
             ],
             correctIndex: 2,
@@ -356,10 +356,10 @@ The practical effect: in Tennessee, the **county** is a major unit of government
           {
             prompt: "How are Tennessee's appellate (Supreme Court) judges selected?",
             options: [
-              "Elected in partisan races",
-              "By the 'Tennessee Plan': the Governor appoints from a commission's list, then voters hold yes/no retention elections",
-              "Appointed for life by the Legislature",
-              "Chosen by the Attorney General",
+              "Elected in partisan statewide general races",
+              "Governor appoints; voters hold retention votes",
+              "Appointed for life by the state Legislature",
+              "Chosen directly by the Attorney General",
             ],
             correctIndex: 1,
             explanation:
@@ -369,10 +369,10 @@ The practical effect: in Tennessee, the **county** is a major unit of government
           {
             prompt: "Why is Tennessee's gubernatorial veto considered weak?",
             options: [
-              "The Governor cannot veto at all",
-              "The Legislature can override it with a simple majority (not two-thirds)",
-              "Only the courts can override it",
-              "Vetoes expire after a week",
+              "The Governor cannot veto any bill at all",
+              "Overridden by a simple legislative majority",
+              "Only the state courts can override it",
+              "Vetoes automatically expire after a week",
             ],
             correctIndex: 1,
             explanation:
@@ -395,9 +395,9 @@ The practical effect: in Tennessee, the **county** is a major unit of government
           {
             prompt: "What is distinctive about Nashville's local government?",
             options: [
-              "It has no government",
-              "It is a consolidated metropolitan city-county government (Metro Nashville-Davidson County)",
-              "It is run by the state directly",
+              "It has no local city government at all",
+              "A consolidated city-county metro government",
+              "It is run entirely by the state directly",
               "It is an independent city in a different state",
             ],
             correctIndex: 1,
@@ -409,9 +409,9 @@ The practical effect: in Tennessee, the **county** is a major unit of government
             prompt: "What is true about absentee voting in Tennessee?",
             options: [
               "Any voter may vote absentee for no reason",
-              "A voter generally must qualify under a specific excuse to vote absentee",
-              "Absentee voting is banned entirely",
-              "Only the Governor may vote absentee",
+              "A voter must qualify under a specific excuse",
+              "Absentee voting is completely banned here",
+              "Only the Governor may cast an absentee vote",
             ],
             correctIndex: 1,
             explanation:
@@ -422,9 +422,9 @@ The practical effect: in Tennessee, the **county** is a major unit of government
             prompt: "Why does this course tell you to VERIFY Tennessee's voting rules?",
             options: [
               "Because Tennessee has no elections office",
-              "Because photo-ID, absentee-excuse, and early-voting rules change and are run by county commissions; confirm at [sos.tn.gov](https://sos.tn.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because ID and absentee rules change locally",
+              "Because only the U.S. Congress sets them",
+              "Because all voting in the state is secret",
             ],
             correctIndex: 1,
             explanation:

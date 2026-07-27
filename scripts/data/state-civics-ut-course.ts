@@ -254,10 +254,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "What is distinctive about how Utah candidates reach the primary ballot?",
             options: [
-              "Only the Governor can nominate them",
-              "A dual path: the caucus-and-convention system OR gathering signatures (or both)",
-              "They are appointed",
-              "There is no primary",
+              "Only the Governor can nominate candidates",
+              "A dual path: convention or signatures, or both",
+              "They are appointed by the state Senate",
+              "There is no primary election held at all",
             ],
             correctIndex: 1,
             explanation:
@@ -267,10 +267,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "Why was the signature path added in 2014?",
             options: [
-              "To abolish primaries",
-              "So candidates could reach the broader primary electorate rather than only convention delegates",
-              "To reduce voting",
-              "Because Congress required it",
+              "To abolish party primaries statewide",
+              "To reach primary voters, not just delegates",
+              "To reduce overall statewide voter turnout",
+              "Because the U.S. Congress required it",
             ],
             correctIndex: 1,
             explanation:
@@ -280,10 +280,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "What condition preceded Utah's 1896 statehood?",
             options: [
-              "Adopting a state lottery",
-              "Its constitution permanently banning polygamy",
-              "Abolishing its Legislature",
-              "Joining another state",
+              "Adopting a statewide public lottery",
+              "Its constitution banning polygamy",
+              "Abolishing its state Legislature",
+              "Joining Nevada as a single state",
             ],
             correctIndex: 1,
             explanation:
@@ -314,10 +314,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "What direct-democracy tools do Utah citizens have?",
             options: [
-              "None",
-              "Initiative (statutes) and referendum",
-              "Only recall of judges",
-              "Only advisory polls",
+              "None whatsoever under state law",
+              "Initiative and referendum on statutes",
+              "Only the recall of sitting judges",
+              "Only nonbinding advisory polls",
             ],
             correctIndex: 1,
             explanation:
@@ -327,9 +327,9 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "How does Utah choose its judges?",
             options: [
-              "Partisan elections",
-              "Merit selection (commission → Governor appoints → Senate confirms), then retention elections",
-              "The Legislature elects them",
+              "Partisan statewide general elections",
+              "Merit selection, then retention elections",
+              "The state Legislature elects them",
               "Lifetime appointment with no review",
             ],
             correctIndex: 1,
@@ -340,10 +340,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "How do most Utahns receive their ballots?",
             options: [
-              "In person only",
-              "By mail: Utah conducts elections primarily by mail",
-              "Online",
-              "By phone",
+              "In person at the polls only",
+              "By mail, sent to active voters",
+              "Online through a state portal",
+              "By phone from the county clerk",
             ],
             correctIndex: 1,
             explanation:
@@ -353,10 +353,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "How can a Utah citizen influence who gets on the ballot?",
             options: [
-              "Only by voting in November",
-              "By attending precinct caucuses (to become a delegate) and/or signing candidate petitions",
-              "By contacting the Governor",
-              "There is no way",
+              "Only by voting in the November election",
+              "Attend precinct caucuses or sign petitions",
+              "By contacting the state Governor's office",
+              "There is no legal way to influence it",
             ],
             correctIndex: 1,
             explanation:
@@ -366,10 +366,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "Why does this course tell you to VERIFY Utah's nomination and voting rules?",
             options: [
-              "Because Utah has no elections office",
-              "Because the dual-path (SB54) system has been litigated and voting rules are run by county clerks and change; confirm at [vote.utah.gov](https://vote.utah.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Utah has no state elections office",
+              "Because SB54 is litigated and rules change",
+              "Because only the U.S. Congress sets them",
+              "Because all state voting is secret",
             ],
             correctIndex: 1,
             explanation:

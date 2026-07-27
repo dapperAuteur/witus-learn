@@ -309,9 +309,9 @@ This closes the loop on the whole course: plan ahead (Lessons 1-8), stay safe an
             prompt: "Why can't you assume 'my passport hasn't expired' is enough to travel internationally?",
             options: [
               "Passports must always be replaced every 2 years regardless of expiration",
-              "Many countries require at least 6 months of validity remaining beyond your trip, and some airlines enforce this at boarding",
-              "Passports expire the moment you leave the country",
-              "It's always fine, expiration dates don't matter for travel",
+              "Many countries require at least 6 months of validity beyond your trip dates",
+              "Your passport becomes invalid as soon as you cross any international border",
+              "It's always fine, only the issue date matters and expiration is ignored",
             ],
             correctIndex: 1,
             explanation:
@@ -321,10 +321,10 @@ This closes the loop on the whole course: plan ahead (Lessons 1-8), stay safe an
           {
             prompt: "What are the two authoritative sources you should check for a destination's current visa/entry requirements?",
             options: [
-              "A travel blog and a friend who went recently",
-              "The airline's booking page only",
-              "The State Department's country pages (travel.state.gov) and the destination's own official embassy/consulate site",
-              "A third-party visa-checker app",
+              "A travel blog and a friend who recently returned from the destination",
+              "The airline's booking page shown when you purchase your ticket",
+              "The State Department pages and the destination's own embassy site",
+              "A third-party visa-checker app that aggregates various entry rules",
             ],
             correctIndex: 2,
             explanation:
@@ -334,10 +334,10 @@ This closes the loop on the whole course: plan ahead (Lessons 1-8), stay safe an
           {
             prompt: "What does STEP (the Smart Traveler Enrollment Program) actually do?",
             options: [
-              "It automatically books your flights",
-              "It registers your specific trip so the nearest U.S. embassy can send you alerts and reach you in a crisis",
-              "It replaces the need for a passport",
-              "It guarantees a full refund if your trip is canceled",
+              "It automatically books your flights and reserves hotel rooms for you",
+              "It registers your trip so the nearest embassy can send you alerts",
+              "It replaces the need for a passport when entering foreign countries",
+              "It guarantees a full refund if your trip is canceled by the airline",
             ],
             correctIndex: 1,
             explanation:
@@ -347,10 +347,10 @@ This closes the loop on the whole course: plan ahead (Lessons 1-8), stay safe an
           {
             prompt: "According to the State Department, who pays your medical bills if you get sick or hurt while traveling abroad?",
             options: [
-              "The U.S. government automatically covers it",
-              "Your destination country's government",
-              "You do, the U.S. government does not provide insurance or pay costs for citizens abroad, and U.S. health insurance often doesn't cover it either",
-              "Your airline is required to cover it",
+              "The U.S. government automatically covers all citizens' medical bills",
+              "Your destination country's public health system covers the cost",
+              "You do, the U.S. government does not insure or pay your costs abroad",
+              "Your airline is required by law to cover any medical costs abroad",
             ],
             correctIndex: 2,
             explanation:
@@ -360,10 +360,10 @@ This closes the loop on the whole course: plan ahead (Lessons 1-8), stay safe an
           {
             prompt: "How far ahead should you see a healthcare provider before international travel, and why?",
             options: [
-              "The day before you leave, so advice is fresh",
-              "At least 4-6 weeks before, since some vaccines need multiple doses and time to build immunity",
-              "There's no need to see a provider before travel",
-              "Exactly 24 hours before, per CDC guidance",
+              "The day before you leave, so the advice you get is still very fresh",
+              "At least 4-6 weeks before, since some vaccines need multiple doses",
+              "There is no medical need to see a provider before you travel",
+              "Exactly 24 hours before departure, according to CDC guidance",
             ],
             correctIndex: 1,
             explanation:
@@ -387,9 +387,9 @@ This closes the loop on the whole course: plan ahead (Lessons 1-8), stay safe an
             prompt: "If your bag with your only passport copy is lost or stolen abroad, what habit from this course would have protected you?",
             options: [
               "Keeping the only copy in the same bag as the original, for convenience",
-              "Keeping physical and digital copies of key documents stored separately from the originals",
-              "Memorizing your passport number instead of keeping any copies",
-              "Not carrying your passport at all while sightseeing",
+              "Keeping physical and digital copies stored apart from the originals",
+              "Memorizing your passport number instead of keeping any paper copies",
+              "Not carrying your passport at all while out sightseeing each day",
             ],
             correctIndex: 1,
             explanation:
@@ -399,10 +399,10 @@ This closes the loop on the whole course: plan ahead (Lessons 1-8), stay safe an
           {
             prompt: "What can a U.S. embassy or consulate help with if you're in an emergency abroad?",
             options: [
-              "Nothing, they can only assist with passport renewals",
-              "Replacing a lost/stolen passport, supporting crime victims, and connecting you to emergency financial help, among other things",
-              "Only issuing new visas for other countries",
-              "Paying your hotel bill directly with no repayment required",
+              "Nothing, they can only assist you with routine passport renewals",
+              "Replacing a lost passport, aiding crime victims, and emergency loans",
+              "Only issuing new visas so you can enter nearby foreign countries",
+              "Paying your hotel bill directly abroad with no repayment ever required",
             ],
             correctIndex: 1,
             explanation:
@@ -412,10 +412,10 @@ This closes the loop on the whole course: plan ahead (Lessons 1-8), stay safe an
           {
             prompt: "When re-entering the U.S., if you're not sure whether something you bought abroad needs to be declared to CBP, what should you do?",
             options: [
-              "Skip declaring it if it's a small item",
-              "Declare it, failing to declare something that should have been declared risks forfeiting it",
-              "Only declare items over $5,000",
-              "Ask a fellow passenger for advice instead of CBP",
+              "Skip declaring it entirely if it is a small and inexpensive item",
+              "Declare it, since failing to declare an item risks forfeiting it",
+              "Only declare items that cost you more than $5,000 in total",
+              "Ask a fellow passenger for advice about it instead of CBP",
             ],
             correctIndex: 1,
             explanation:
