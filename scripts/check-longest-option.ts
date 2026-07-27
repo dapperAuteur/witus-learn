@@ -107,24 +107,14 @@ function longestStrategyValue(lens: number[], correct: number): { value: number;
  * the progress bar. Do not add to this list to make new content pass.
  */
 const GRANDFATHERED: Record<string, number> = {
-  "scripts/data/broadcasting-course.ts": 0.69,
-  "scripts/data/help-a-campaign-course.ts": 1.00,
   "scripts/data/history-of-unions-course.ts": 0.92,
   "scripts/data/hoodoo-complete-course.ts": 1.00,
-  "scripts/data/jury-duty-courts-course.ts": 0.78,
-  "scripts/data/knots-course.ts": 0.85,
   "scripts/data/know-your-rights-at-work-course.ts": 0.96,
   "scripts/data/lacrosse-course.ts": 0.95,
   "scripts/data/learning-how-to-learn-course.ts": 0.95,
   "scripts/data/pickleball-course.ts": 0.87,
-  "scripts/data/robotics-steam-course.ts": 0.63,
-  "scripts/data/shipping-logistics-course.ts": 0.94,
-  "scripts/data/spotting-misleading-marketing-course.ts": 0.85,
-  "scripts/data/survival-course.ts": 0.93,
   "scripts/data/tennis-course.ts": 0.88,
   "scripts/data/training-the-colonizer-course.ts": 1.00,
-  "scripts/data/voting-elections-101-course.ts": 0.85,
-  "scripts/data/woop-course.ts": 1.00,
 };
 
 function trackedFiles(): string[] {

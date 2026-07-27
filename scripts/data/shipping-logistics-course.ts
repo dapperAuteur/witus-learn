@@ -341,7 +341,7 @@ The Federal Maritime Commission, which oversees international household-goods mo
             prompt: "What two logistics items in this course have unusually long lead times that can derail a move if started late?",
             options: [
               "Buying a plane ticket and packing a suitcase",
-              "Moving a pet internationally and getting destination-country customs approval for household goods",
+              "Moving a pet abroad and getting customs approval",
               "Choosing a paint color and buying furniture",
               "Learning the local language and getting a haircut",
             ],
@@ -353,10 +353,10 @@ The Federal Maritime Commission, which oversees international household-goods mo
           {
             prompt: "What are the three broad approaches to deciding what belongings to bring abroad?",
             options: [
-              "Only full-service movers are an option",
-              "Full-service international movers, ship-it-yourself, and sell-and-rebuy",
+              "Hiring full-service movers is the only way",
+              "Movers, ship-yourself, or sell-and-rebuy",
               "Air freight, sea freight, and rail freight",
-              "Renting, buying, and leasing",
+              "Renting, buying, leasing, or borrowing",
             ],
             correctIndex: 1,
             explanation:
@@ -367,9 +367,9 @@ The Federal Maritime Commission, which oversees international household-goods mo
             prompt: "What's the key cost/time tradeoff between air freight and sea freight?",
             options: [
               "They cost and take the same amount of time",
-              "Air freight is fast and expensive; sea freight is slow and far cheaper for large volumes",
+              "Air is fast but pricey, sea slow but cheap",
               "Sea freight is always faster than air freight",
-              "Air freight cannot be insured",
+              "Air freight can never be insured at all",
             ],
             correctIndex: 1,
             explanation:
@@ -379,10 +379,10 @@ The Federal Maritime Commission, which oversees international household-goods mo
           {
             prompt: "What agency licenses companies that ship household goods internationally by ocean vessel, and where can you verify a company's license?",
             options: [
-              "The IRS; verify at irs.gov",
-              "The Federal Maritime Commission (FMC); verify at www2.fmc.gov/oti",
-              "The FAA; verify at faa.gov",
-              "There is no licensing requirement for international movers",
+              "The IRS (the Internal Revenue Service)",
+              "The Federal Maritime Commission (FMC)",
+              "The FAA (Federal Aviation body)",
+              "No license is required for movers",
             ],
             correctIndex: 1,
             explanation:
@@ -392,10 +392,10 @@ The Federal Maritime Commission, which oversees international household-goods mo
           {
             prompt: "In the UK's Transfer of Residence example, what must happen before you ship your household goods to claim duty relief?",
             options: [
-              "Nothing, relief is automatic on arrival",
-              "You must apply to HMRC (form ToR1) and receive an approved reference number before shipping",
-              "You must sell everything and rebuy it in the UK",
-              "You must be a UK citizen",
+              "Nothing, the relief is automatic on arrival",
+              "Apply to HMRC for an approved ToR1 number",
+              "You must sell everything and rebuy in the UK",
+              "You must already hold full UK citizenship",
             ],
             correctIndex: 1,
             explanation:
@@ -405,9 +405,9 @@ The Federal Maritime Commission, which oversees international household-goods mo
           {
             prompt: "According to USDA APHIS, who sets a pet's entry requirements for international travel?",
             options: [
-              "The U.S. government, uniformly for every destination",
-              "The destination country, and requirements can change and must be verified for that specific destination each time",
-              "The airline only",
+              "The U.S. government, one rule for everyone",
+              "The destination country, and rules change",
+              "The airline you book your flight with",
               "There are no requirements for pet travel",
             ],
             correctIndex: 1,
@@ -418,10 +418,10 @@ The Federal Maritime Commission, which oversees international household-goods mo
           {
             prompt: "Why should you hand-carry documents like your passport, original birth/marriage certificates, and your shipment's inventory list rather than pack them?",
             options: [
-              "Because customs prohibits shipping paper documents",
-              "Because a shipment can take weeks, get held at customs, or rarely be lost, and you need these documents before or independent of it arriving",
-              "Because they weigh too much to ship",
-              "There's no real reason, packing them is fine",
+              "Because customs prohibits shipping documents",
+              "Because a shipment can be slow or lost",
+              "Because they weigh far too much to ship",
+              "There's no real reason, packing is fine",
             ],
             correctIndex: 1,
             explanation:
@@ -431,10 +431,10 @@ The Federal Maritime Commission, which oversees international household-goods mo
           {
             prompt: "For an international move, what does USPS require that a purely domestic move does not?",
             options: [
-              "Nothing extra is required",
-              "You must go to a Post Office location in person, before leaving the U.S., to submit the change of address and verify your identity",
-              "You must forward your mail to a foreign post office directly",
-              "International moves cannot use mail forwarding at all",
+              "No extra step is required beyond domestic",
+              "Go to a Post Office in person to verify ID",
+              "Forward mail to a foreign post office directly",
+              "Mail forwarding is not allowed from abroad",
             ],
             correctIndex: 1,
             explanation:
@@ -444,10 +444,10 @@ The Federal Maritime Commission, which oversees international household-goods mo
           {
             prompt: "How often should a U.S. citizen living abroad submit a new Federal Post Card Application (FPCA)?",
             options: [
-              "Once, permanently, the first time they move abroad",
-              "Whenever they move and again annually, since one FPCA only extends federal-election eligibility for at least one calendar year",
-              "Only in presidential election years",
-              "FPCAs are not available to citizens living abroad",
+              "Once only, the first time they move abroad",
+              "Whenever they move and again every year",
+              "Only during presidential election years",
+              "FPCAs are unavailable to expat citizens",
             ],
             correctIndex: 1,
             explanation:

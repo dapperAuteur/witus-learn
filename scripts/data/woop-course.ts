@@ -225,10 +225,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "What is the difference between a positive expectation and a positive fantasy?",
             options: [
-              "An expectation is a judgment of likelihood; a fantasy is an enjoyed image with no judgment of likelihood",
+              "An expectation judges likelihood; a fantasy just enjoys the image",
               "An expectation is about other people; a fantasy is about yourself",
-              "They are two words for the same mental act",
-              "An expectation is emotional; a fantasy is rational",
+              "Both are judgments of likelihood aimed at different future goals",
+              "An expectation is emotional, while a fantasy stays coldly rational",
             ],
             correctIndex: 0,
             explanation:
@@ -238,10 +238,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "Which four populations were studied in Oettingen and Mayer (2002)?",
             options: [
-              "Athletes, musicians, chess players, and soldiers",
-              "Job-seeking graduates, students with a crush, undergraduates facing an exam, and hip-replacement patients",
+              "Pro athletes, concert musicians, chess masters, and soldiers",
+              "Job-seekers, people with a crush, exam-takers, hip-surgery patients",
               "Only undergraduate psychology students, in four separate semesters",
-              "Executives, teachers, nurses, and retirees",
+              "Executives, schoolteachers, ER nurses, and retired veterans",
             ],
             correctIndex: 1,
             explanation:
@@ -251,10 +251,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "What is the honest limitation of the four Oettingen and Mayer (2002) studies?",
             options: [
-              "They had no control groups at all",
-              "They were correlational, so on their own they cannot show the fantasy CAUSED the worse outcome",
-              "They were never peer-reviewed",
-              "They measured only feelings, never behavior",
+              "They used no control group or comparison condition at all",
+              "They were correlational, so alone they cannot prove causation",
+              "They were never peer-reviewed prior to their publication",
+              "They measured only feelings and never any actual behavior",
             ],
             correctIndex: 1,
             explanation:
@@ -277,10 +277,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "Why is the Kappes and Oettingen (2011) result more probative than the 2002 studies?",
             options: [
-              "It had a much larger sample",
-              "It INDUCED the fantasy experimentally rather than merely measuring it, which speaks to cause rather than correlation",
-              "It was published in a more prestigious journal",
-              "It followed participants for two years",
+              "It recruited a much larger and more representative sample",
+              "It INDUCED the fantasy rather than merely measuring it",
+              "It was published in a more prestigious peer-reviewed journal",
+              "It followed the participants for two full years afterward",
             ],
             correctIndex: 1,
             explanation:
@@ -290,10 +290,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "Fantasy realization theory says a vivid positive daydream does what?",
             options: [
-              "Rehearses the skills needed to succeed",
-              "Delivers a sample of the feeling you wanted, partly satisfying you and lowering your mobilization to go get the rest",
+              "Rehearses the concrete real-world skills you need to succeed",
+              "Gives a sample of the feeling, lowering your drive to get the rest",
               "Increases your expectation of success, which then increases effort",
-              "Has no effect unless you also write it down",
+              "Has no measurable effect unless you also write it down first",
             ],
             correctIndex: 1,
             explanation:
@@ -316,10 +316,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "Someone concludes from this research that the fix is to think realistically about how bad things currently are. What is wrong with that?",
             options: [
-              "Nothing, that is exactly what the research recommends",
-              "That is DWELLING, which produces just as little commitment as indulging",
-              "It works, but only for people with high expectations",
-              "It works, but only for health goals",
+              "Nothing, that is precisely what the research recommends doing",
+              "That is DWELLING, and it builds as little commitment as indulging",
+              "It works, but only for people who already hold high expectations",
+              "It works, but only for physical-health and fitness goals",
             ],
             correctIndex: 1,
             explanation:
@@ -329,10 +329,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "Does mental contrasting ask you to give up the vivid positive image of the future?",
             options: [
-              "Yes, that is the whole point of the method",
-              "No. It KEEPS the vivid positive future and adds the obstacle immediately afterward, in that order",
-              "Yes, but only when your expectations are low",
-              "It makes no difference either way",
+              "Yes, giving up that image is the whole point of the method",
+              "No. It KEEPS the positive future and adds the obstacle right after",
+              "Yes, you must abandon it whenever your expectations are low",
+              "It makes no measurable difference to the final outcome either way",
             ],
             correctIndex: 1,
             explanation:
@@ -355,10 +355,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "What is the practical implication of the intention-behavior gap for motivational advice?",
             options: [
-              "Advice that tries to make you WANT the goal more is pushing on the weakest link",
+              "Advice to make you WANT the goal more pushes on the weakest link",
               "Nobody who fails at a goal ever really intended to do it",
-              "Intentions are irrelevant and should be ignored",
-              "Only people with low intentions ever fail",
+              "Intentions are irrelevant to outcomes and should be ignored",
+              "Only people with weak initial intentions ever end up failing",
             ],
             correctIndex: 0,
             explanation:
@@ -381,10 +381,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "Why does the course insist that mental contrasting and implementation intentions are taught together?",
             options: [
-              "Because Oettingen and Gollwitzer are co-authors",
-              "Because each tool fails without the other: a plan for a goal you never committed to will not run, and a commitment with no plan hits the intention-behavior gap",
-              "Because the app requires both",
-              "Because the two were invented at the same time",
+              "Because Oettingen and Gollwitzer personally co-authored the studies",
+              "Because each fails without the other: no commitment, no plan works",
+              "Because the official WOOP smartphone app happens to require both",
+              "Because the two methods were both invented in the very same year",
             ],
             correctIndex: 1,
             explanation:
@@ -394,10 +394,10 @@ This is also, by the way, the honest reason that a course like this one is not a
           {
             prompt: "What relationship does this course claim to Gabriele Oettingen's team and woopmylife.org?",
             options: [
-              "It is the official course of the WOOP app",
-              "None: it teaches and cites the published science, uses original exercises, and is not affiliated with, endorsed by, or licensed by them",
-              "It licenses their worksheets under an agreement",
-              "It is a competitor product that disputes their findings",
+              "It is the officially licensed companion course of the WOOP app",
+              "None: it teaches the cited science and is unaffiliated with them",
+              "It licenses their official worksheets under a written agreement",
+              "It is a rival product that publicly disputes their findings",
             ],
             correctIndex: 1,
             explanation:
@@ -658,9 +658,9 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
             prompt: "What are the two acts of mental contrasting, in order?",
             options: [
               "Elaborate the obstacle, then elaborate the desired future",
-              "Elaborate the desired future, then immediately elaborate the inner obstacle",
-              "Write a plan, then visualize it succeeding",
-              "List your strengths, then list your weaknesses",
+              "Elaborate the desired future, then the inner obstacle",
+              "Write out a full plan, then visualize it succeeding",
+              "List your strengths first, then list your weaknesses",
             ],
             correctIndex: 1,
             explanation:
@@ -670,10 +670,10 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
           {
             prompt: "Why does the ORDER of the two elaborations matter?",
             options: [
-              "It does not; the research shows either order works",
-              "Future-first makes the obstacle arrive as the thing blocking something you can already taste; obstacle-first turns the future into consolation, which is indulging with extra steps",
-              "Obstacle-first is actually the recommended order",
-              "Because the app enforces that order",
+              "It does not matter; the research shows either order works fine",
+              "Future-first makes the obstacle block what you can already taste",
+              "Obstacle-first is in fact the officially recommended order",
+              "Because the official WOOP app simply enforces that order",
             ],
             correctIndex: 1,
             explanation:
@@ -684,9 +684,9 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
             prompt: "In Oettingen, Pak, and Schnetter (2001), what happened to the commitment of participants who mentally contrasted?",
             options: [
               "It rose uniformly, regardless of their expectations",
-              "It TRACKED their expectations: strong when expectations were high, weak when low",
+              "It TRACKED expectations: strong when high, weak when low",
               "It fell uniformly, regardless of their expectations",
-              "It was identical to the indulging group",
+              "It was statistically identical to the indulging group",
             ],
             correctIndex: 1,
             explanation:
@@ -696,10 +696,10 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
           {
             prompt: "Is mental contrasting best described as a commitment amplifier or a commitment selector?",
             options: [
-              "An amplifier: it makes you want everything more",
-              "A selector: it makes you want the reachable things more and the unreachable things less",
-              "Neither: it has no effect on commitment",
-              "An amplifier, but only for health goals",
+              "An amplifier: it simply makes you want everything more",
+              "A selector: reachable things more, unreachable things less",
+              "Neither: it has no measurable effect on commitment",
+              "An amplifier, but only for health and fitness goals",
             ],
             correctIndex: 1,
             explanation:
@@ -709,10 +709,10 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
           {
             prompt: "What is the test for a genuine INNER obstacle?",
             options: [
-              "It must be the biggest problem you face",
-              "It must be a thought, feeling, habit, or behavior of yours that you could act on and could detect in the moment",
-              "It must be something other people also struggle with",
-              "It must be solvable within one week",
+              "It must be the single biggest problem that you currently face",
+              "A thought, feeling, or habit of yours you can detect in the moment",
+              "It must be something most other people also struggle with",
+              "It must be completely solvable within a single week's time",
             ],
             correctIndex: 1,
             explanation:
@@ -723,9 +723,9 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
             prompt: "Why does the method insist the obstacle be internal rather than a circumstance?",
             options: [
               "To encourage you to take personal responsibility for everything",
-              "Because the obstacle becomes the TRIGGER of an if-then plan, and you cannot build a detectable trigger out of the job market",
-              "Because external obstacles are never real",
-              "Because it makes the exercise faster",
+              "Because the obstacle becomes the TRIGGER of an if-then plan",
+              "Because external obstacles are essentially never truly real",
+              "Because keeping it internal makes the exercise run faster",
             ],
             correctIndex: 1,
             explanation:
@@ -735,10 +735,10 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
           {
             prompt: "Why is \"I'm just lazy\" a bad obstacle even though it sounds internal?",
             options: [
-              "Because it is too harsh on yourself",
-              "Because it is an insult, not a detectable event: laziness does not happen at 6:40 pm in the kitchen, but reaching for your phone does",
-              "Because laziness is not real",
-              "Because it is external",
+              "Because the label is simply far too harsh on yourself",
+              "Because it is an insult, not a detectable event you can catch",
+              "Because laziness is not a genuinely real personal trait",
+              "Because it is really an external circumstance, not internal",
             ],
             correctIndex: 1,
             explanation:
@@ -748,10 +748,10 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
           {
             prompt: "Which of these is the best-formed inner obstacle?",
             options: [
-              "\"The economy is bad.\"",
+              "\"The national economy is really quite bad right now.\"",
               "\"I get home, sit on the sofa, and the evening disappears.\"",
-              "\"I need a better laptop first.\"",
-              "\"My manager doesn't respect me.\"",
+              "\"I honestly need a far better laptop before I start.\"",
+              "\"My manager plainly does not respect me one bit.\"",
             ],
             correctIndex: 1,
             explanation:
@@ -761,9 +761,9 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
           {
             prompt: "When your expectations of success are LOW, what does mental contrasting lead to, and how should you read that?",
             options: [
-              "Stronger commitment, which is the point of the method",
-              "Weak commitment and disengagement, which the theory treats as a FEATURE, not a malfunction",
-              "No change in commitment at all",
+              "Stronger commitment, which is the entire point of the method",
+              "Weak commitment and disengagement, treated as a FEATURE not a bug",
+              "No measurable change in your goal commitment level at all",
               "An error that means you performed the method incorrectly",
             ],
             correctIndex: 1,
@@ -774,10 +774,10 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
           {
             prompt: "Your expectation is low. What is the diagnostic question before you let the goal go?",
             options: [
-              "Do other people think I can do it?",
-              "Is my expectation low because my track record honestly says so, or because I am guessing from fear without ever having tried?",
-              "How much do I want it?",
-              "Would a positive affirmation change my mind?",
+              "Do most other people around me think that I can do it?",
+              "Is it low from my real track record, or from untested fear?",
+              "How badly do I truly want to reach this particular goal?",
+              "Would repeating a positive affirmation change my mind?",
             ],
             correctIndex: 1,
             explanation:
@@ -788,9 +788,9 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
             prompt: "What did the Wang, Wang, and Gai (2021) meta-analysis find when it tested EXPECTATION LEVEL as a moderator of the MCII effect?",
             options: [
               "It confirmed the expectancy boundary condition strongly",
-              "It did NOT find a significant moderating effect of expectation level",
-              "It found the effect reversed at high expectations",
-              "It did not test expectation level",
+              "It did NOT find a significant moderation by expectation level",
+              "It found the whole effect reversed at high expectations",
+              "It never actually tested expectation level as a moderator",
             ],
             correctIndex: 1,
             explanation:
@@ -800,10 +800,10 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
           {
             prompt: "Abdulla and Woods (2021) also found no expectancy moderation. What explanation did the authors offer?",
             options: [
-              "That mental contrasting does not work at all",
-              "That 84.7% of their participants had moderate-to-high expectancy, so there may not have been enough genuinely low-expectancy people for the predicted effect to appear",
-              "That their measure of commitment was invalid",
-              "That the participants cheated",
+              "That mental contrasting simply does not ever work at all",
+              "That 84.7% had moderate-to-high expectancy, too few low ones",
+              "That their whole measure of commitment was simply invalid",
+              "That a number of the participants had simply cheated",
             ],
             correctIndex: 1,
             explanation:
@@ -814,9 +814,9 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
             prompt: "Given that the original experiments supported the expectancy boundary but the pooled evidence has not confirmed it, how should you hold the idea?",
             options: [
               "As settled science you can bet a life decision on",
-              "As good judgment that the theory supports, but not as a proven mechanism",
-              "As definitively refuted, and therefore ignorable",
-              "As true only for people over 30",
+              "As good judgment the theory supports, but not proven",
+              "As definitively refuted, and therefore safe to ignore",
+              "As reliably true only for people over the age of 30",
             ],
             correctIndex: 1,
             explanation:
@@ -826,9 +826,9 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
           {
             prompt: "Why is indulging in an unreachable goal described as \"a trap with a nice view\"?",
             options: [
-              "Because it makes you feel bad about yourself",
-              "Because it keeps you attached to the goal, feeling good about it, and doing nothing about it, indefinitely",
-              "Because it makes you quit too early",
+              "Because it just makes you feel quite bad about yourself",
+              "Because it keeps you attached, feeling good, and doing nothing",
+              "Because it always makes you quit the goal far too early",
               "Because it raises your expectations unrealistically high",
             ],
             correctIndex: 1,
@@ -840,9 +840,9 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
             prompt: "Which of these correctly describes what dwelling produces?",
             options: [
               "Strong commitment, because facing reality is motivating",
-              "Middling commitment, largely disconnected from whether you are actually likely to succeed",
-              "Exactly the same result as mental contrasting",
-              "Higher expectations of success",
+              "Middling commitment, disconnected from your real odds",
+              "The exact same result you get from mental contrasting",
+              "Clearly higher expectations of your future success",
             ],
             correctIndex: 1,
             explanation:
@@ -1109,10 +1109,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "What is the structure of an IMPLEMENTATION intention?",
             options: [
-              "\"I intend to reach x!\"",
+              "\"I intend to finally reach my goal x this year!\"",
               "\"When situation x arises, I will perform response y!\"",
-              "\"I hope situation x does not arise.\"",
-              "\"I will try my best at x.\"",
+              "\"I really hope that situation x does not ever arise.\"",
+              "\"I will honestly try my very best at reaching x!\"",
             ],
             correctIndex: 1,
             explanation:
@@ -1135,10 +1135,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "In Orbell, Hodgkins, and Sheeran (1997), what made the breast-self-examination result so striking?",
             options: [
-              "The implementation-intention group wanted it more than the control group",
-              "Goal intention was held constant: all the women already strongly intended to do it, and only the presence of a when-and-where plan differed (100% vs 53%)",
-              "The control group had no intention to do it at all",
-              "The effect only appeared after two years",
+              "The implementation-intention group wanted it more than the controls",
+              "Same strong intent in both; only the plan differed (100% vs 53%)",
+              "The control group reportedly had no intention to do it whatsoever",
+              "The striking effect only appeared after two full years had passed",
             ],
             correctIndex: 1,
             explanation:
@@ -1148,10 +1148,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "How should you treat that 100%-versus-53% figure?",
             options: [
-              "As a law you can quote confidently: if-then plans double your follow-through",
-              "With care: it is a SINGLE 1997 study with a modest sample, and clean numbers like 100% rarely survive replication at that magnitude. Trust the direction, not the size",
-              "As fabricated, since 100% is impossible",
-              "As irrelevant, since it is old",
+              "As a firm law: if-then plans reliably double your follow-through",
+              "With care: one modest 1997 study; trust direction, not size",
+              "As obviously fabricated, since a clean 100% is impossible",
+              "As entirely irrelevant now, since the study is quite old",
             ],
             correctIndex: 1,
             explanation:
@@ -1161,10 +1161,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "Mechanically, why does an if-then plan work?",
             options: [
-              "It increases your motivation to reach the goal",
-              "It delegates control of the response to an anticipated situational cue, so the decision is made in advance rather than at the moment of truth",
-              "It makes the goal seem more important",
-              "It creates guilt, which drives action",
+              "It simply increases your raw motivation to reach the goal",
+              "It hands the response to a preset cue, decided in advance",
+              "It makes the underlying goal seem much more important to you",
+              "It creates a sense of guilt, which then drives your action",
             ],
             correctIndex: 1,
             explanation:
@@ -1174,9 +1174,9 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "\"Just have more discipline\" is not competing advice against implementation intentions. Why not?",
             options: [
-              "Because discipline does not exist",
-              "Because it is a description of the PROBLEM. The method is a design pattern for a person who runs out of willpower, which is everyone",
-              "Because discipline works better",
+              "Because willpower and self-discipline simply do not exist at all",
+              "Because it just describes the PROBLEM the method is built to solve",
+              "Because plain old self-discipline actually works far better",
               "Because implementation intentions require even more discipline",
             ],
             correctIndex: 1,
@@ -1187,10 +1187,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "Gollwitzer and Sheeran (2006) meta-analyzed how many independent tests, and found what effect size?",
             options: [
-              "24 tests, g = 0.34",
+              "24 tests, g = 0.34 (small effect)",
               "94 tests, d = 0.65 (medium-to-large)",
-              "317 tests, d = 0.36",
-              "12 tests, d = 1.20",
+              "317 tests, d = 0.36 (small-to-medium)",
+              "12 tests, d = 1.20 (very large)",
             ],
             correctIndex: 1,
             explanation:
@@ -1200,10 +1200,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "What is the most important caveat about applying d = 0.65 to the four-step method?",
             options: [
-              "There is none: it applies directly",
-              "It is the effect of implementation intentions ALONE, a different intervention from MCII, whose pooled effect is smaller",
-              "It only applies to students",
-              "It was later retracted",
+              "There is really none at all: it applies to MCII directly",
+              "It is the effect of implementation intentions ALONE, not MCII",
+              "It only ever applies to college and university students",
+              "It was quietly retracted by its authors several years later",
             ],
             correctIndex: 1,
             explanation:
@@ -1213,10 +1213,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "Which of these is a properly detectable IF?",
             options: [
-              "\"If I have time...\"",
+              "\"If I somehow manage to have some free time...\"",
               "\"If it is 7:30 am and I am in the kitchen...\"",
-              "\"If I feel motivated...\"",
-              "\"If work is not too busy...\"",
+              "\"If I happen to feel really motivated that day...\"",
+              "\"If my work schedule is not too terribly busy...\"",
             ],
             correctIndex: 1,
             explanation:
@@ -1226,10 +1226,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "Which of these is a properly formed THEN?",
             options: [
-              "\"...then I will be more focused.\"",
+              "\"...then I will somehow be far more focused and productive.\"",
               "\"...then I will put my phone in the drawer and open the document.\"",
-              "\"...then I will do two hours of study.\"",
-              "\"...then I will eat healthier.\"",
+              "\"...then I will do two full hours of really hard study work.\"",
+              "\"...then I will start eating a good deal more healthily.\"",
             ],
             correctIndex: 1,
             explanation:
@@ -1239,10 +1239,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "How do the two halves of MCII fuse together?",
             options: [
-              "The wish becomes the THEN",
-              "The obstacle found by mental contrasting BECOMES the trigger (the IF) of the implementation intention",
-              "The outcome becomes the IF",
-              "They do not fuse; they are run separately on different goals",
+              "The original wish itself simply becomes the THEN part",
+              "The obstacle BECOMES the trigger (the IF) of the plan",
+              "The desired outcome itself instead becomes the IF cue",
+              "They never fuse; they are run separately on different goals",
             ],
             correctIndex: 1,
             explanation:
@@ -1252,10 +1252,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "What is the difference between an obstacle-triggered and an opportunity-triggered if-then plan?",
             options: [
-              "Obstacle-triggered plans fire when your obstacle shows up; opportunity-triggered plans fire on a good moment for the action, even when the obstacle never appears",
-              "Opportunity-triggered plans are always superior",
-              "They are two names for the same thing",
-              "Obstacle-triggered plans are for health goals only",
+              "Obstacle plans fire on the obstacle; opportunity plans on a cue",
+              "Opportunity-triggered plans are always clearly the superior ones",
+              "They are really just two different names for the same one thing",
+              "Obstacle-triggered plans are meant only for health-type goals",
             ],
             correctIndex: 0,
             explanation:
@@ -1265,10 +1265,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "Why should the THEN be small enough to feel almost embarrassing?",
             options: [
-              "To lower your expectations of success",
-              "Because the plan's job is to get you STARTED, and implementation intentions work largely by helping people get started",
-              "Because small goals matter more than big ones",
-              "Because it makes the plan easier to memorize",
+              "To deliberately lower your own expectations of success",
+              "Because the plan's whole job is just to get you STARTED",
+              "Because small goals always matter far more than big ones",
+              "Because it makes the whole plan much easier to memorize",
             ],
             correctIndex: 1,
             explanation:
@@ -1278,10 +1278,10 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
           {
             prompt: "Rewrite: \"If I have time this week, then I will work on my portfolio.\" Which is the best fix?",
             options: [
-              "\"If I really want it, then I will find the time for my portfolio.\"",
-              "\"If I sit down on the sofa after dinner, then I will stand up, go to the desk, and open the portfolio file.\"",
-              "\"If this week is not too busy, then I will do four hours on my portfolio.\"",
-              "\"I intend to finish my portfolio this week!\"",
+              "\"If I really want it, then I will find time for the portfolio.\"",
+              "\"If I sit on the sofa after dinner, then I go open the file.\"",
+              "\"If this week is not busy, then I will do four hours of work.\"",
+              "\"I fully intend to completely finish the portfolio this week!\"",
             ],
             correctIndex: 1,
             explanation:
@@ -1567,10 +1567,10 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "Why does the method ask for ONE wish, ONE outcome, and ONE obstacle rather than lists?",
             options: [
-              "To save time",
-              "Because the point is to force a choice, and a list is how you avoid one",
-              "Because more than one confuses the app",
-              "Because the research only tested one of each",
+              "Purely to save you a little bit of time in the moment",
+              "Because the point is to force a choice, not avoid one",
+              "Because more than one of each confuses the WOOP app",
+              "Because the original research only ever tested one of each",
             ],
             correctIndex: 1,
             explanation:
@@ -1580,10 +1580,10 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "What is the difference between labelling and elaborating an obstacle?",
             options: [
-              "There is none",
-              "A label is a word (\"procrastination\"); elaboration is going there vividly: the room, the hour, the feeling, the thing your hands do instead",
+              "There is honestly no real difference between the two at all",
+              "A label is a word; elaboration is the vivid room, hour, and feeling",
               "Labelling is the research-backed method; elaboration is folk advice",
-              "Elaboration means writing at least 500 words",
+              "Elaboration means writing out at least 500 full words on it",
             ],
             correctIndex: 1,
             explanation:
@@ -1594,9 +1594,9 @@ Answer with one word. Spelling is forgiving.`,
             prompt: "In the freelancer example, the wish was to get paid on time. Why was the PLAN about logging hours?",
             options: [
               "Because logging hours is more important than invoicing",
-              "Because the plan is built from the OBSTACLE, and the failure happened at logging even though the pain showed up at invoicing",
-              "Because the wish was wrong",
-              "Because invoicing cannot be automated",
+              "Because the plan is built from the OBSTACLE, which was logging",
+              "Because the original stated wish itself was simply wrong",
+              "Because the invoicing step itself cannot be automated",
             ],
             correctIndex: 1,
             explanation:
@@ -1606,10 +1606,10 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "How long does a single run of the method take once you know the four steps?",
             options: [
-              "A weekend retreat",
-              "About five minutes, and the adolescent study's whole intervention was a 30-minute written exercise",
-              "At least two hours",
-              "It must be repeated daily for a month before the first run counts",
+              "A full weekend-long silent meditation retreat at the least",
+              "About five minutes; the teen study used a 30-minute exercise",
+              "At the very least a good two or three uninterrupted hours",
+              "It must be repeated daily for a month before it counts",
             ],
             correctIndex: 1,
             explanation:
@@ -1632,9 +1632,9 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "Why should you NOT skip or skimp the outcome step, even after learning that positive fantasies sap energy?",
             options: [
-              "Because it makes the exercise more enjoyable",
-              "Because mental contrasting REQUIRES the vivid positive future. Without it there is no contrast, and you are merely dwelling",
-              "Because the app will not let you continue",
+              "Because it simply makes the whole exercise more enjoyable",
+              "Because mental contrasting REQUIRES the vivid positive future",
+              "Because the WOOP app will not otherwise let you continue",
               "You should skip it: the research says fantasies are harmful",
             ],
             correctIndex: 1,
@@ -1645,10 +1645,10 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "You finish a run and feel deflated rather than inspired. What does that indicate?",
             options: [
-              "You did it wrong and should try again",
-              "It worked. The borrowed feeling of the daydream has been replaced by an accurate picture of one specific thing you must walk through",
+              "You clearly did it quite wrong and really should try again",
+              "It worked: the daydream glow is replaced by an accurate picture",
               "Your expectations are too low and the goal should be abandoned",
-              "You skipped the plan step",
+              "You most probably skipped over the whole plan step here",
             ],
             correctIndex: 1,
             explanation:
@@ -1671,10 +1671,10 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "Why is \"I'm lazy\" specifically called out as a failure mode?",
             options: [
-              "Because it is unkind",
-              "Because a character judgment cannot be detected at 6:40 pm, whereas a hand reaching for a phone can. It feels like brutal honesty and is actually a way of not looking",
-              "Because laziness has been disproven",
-              "Because it is an external obstacle",
+              "Because the label is really just too unkind to yourself",
+              "Because a character judgment cannot be detected in the moment",
+              "Because laziness itself has been fully disproven by science",
+              "Because it is really an external circumstance obstacle",
             ],
             correctIndex: 1,
             explanation:
@@ -1684,10 +1684,10 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "What is the subtlest failure mode, in which the method turns against itself?",
             options: [
-              "Writing the plan before the obstacle",
-              "Using the method as a mood-booster: picking a flattering obstacle and an easy plan, finishing with a pleasant glow and no changed behavior",
-              "Doing it in the morning rather than the evening",
-              "Running it on a work goal rather than a health goal",
+              "Writing out the whole plan step before the obstacle step",
+              "Using it as a mood-booster: flattering obstacle, easy plan",
+              "Doing the whole thing in the morning rather than the evening",
+              "Running it on a work goal instead of on a health goal",
             ],
             correctIndex: 1,
             explanation:
@@ -1697,10 +1697,10 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "\"Wish: become a better person.\" What is wrong with it?",
             options: [
-              "Nothing: broad wishes work best",
-              "It is too big: a wish that size has forty obstacles, so the obstacle step produces mush",
-              "It is too easy",
-              "It is not positive enough",
+              "Nothing at all: broad and big wishes work the best",
+              "It is too big: a wish that size has forty obstacles",
+              "It is honestly a far too easy and simple wish",
+              "It is simply not nearly positive or upbeat enough",
             ],
             correctIndex: 1,
             explanation:
@@ -1710,10 +1710,10 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "\"If I get a chance, then I will try harder.\" Why is this not a plan?",
             options: [
-              "It is a fine plan",
-              "Neither half works: \"a chance\" is not a detectable cue, and \"try harder\" is not an action you can start in five seconds",
-              "Because it should be phrased as a goal intention",
-              "Because it does not mention the outcome",
+              "It is honestly a perfectly fine and quite complete plan",
+              "Neither half works: \"a chance\" and \"try harder\" are both vague",
+              "Because it should instead be phrased as a goal intention",
+              "Because it does not once mention the desired end outcome",
             ],
             correctIndex: 1,
             explanation:
@@ -1723,10 +1723,10 @@ Answer with one word. Spelling is forgiving.`,
           {
             prompt: "This course tells you to go and use the free WOOP app and website. What is the accompanying disclosure?",
             options: [
-              "That the course earns a commission from it",
-              "That the course has no affiliation with, endorsement from, or licence from Oettingen's team or woopmylife.org, and reproduces none of their materials",
-              "That the app is unreliable",
-              "That using the app is required to pass the course",
+              "That the whole course earns a sales commission from it",
+              "That it has no affiliation with or licence from Oettingen's team",
+              "That the official WOOP app is often really quite unreliable",
+              "That using the WOOP app is required to pass the course",
             ],
             correctIndex: 1,
             explanation:
@@ -1903,10 +1903,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "What did Stadler, Oettingen, and Gollwitzer (2009) find, and with how many participants?",
             options: [
-              "With 66 participants, better exam scores",
-              "With 256 women, the MCII group was twice as physically active (nearly 1 hour more per week) as the information-only group, sustained over 4 months",
+              "With 66 total participants, distinctly better exam scores",
+              "With 256 women, the MCII group was twice as active over 4 months",
               "With 15,907 participants, a small effect on goal attainment",
-              "With 51 participants, less snacking",
+              "With just 51 participants, noticeably less evening snacking",
             ],
             correctIndex: 1,
             explanation:
@@ -1916,10 +1916,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "What makes the Stadler et al. (2010) fruit-and-vegetable study especially notable?",
             options: [
-              "It had the largest sample of any MCII study",
-              "At TWO YEARS, only the MCII group had maintained the increase; the information-only group had returned to baseline",
-              "It proved MCII beats every other planning method",
-              "It was the first study Oettingen ever ran",
+              "It had by far the single largest sample of any MCII study",
+              "At TWO YEARS, only the MCII group maintained the increase",
+              "It proved that MCII clearly beats every other planning method",
+              "It was the very first study that Oettingen herself ever ran",
             ],
             correctIndex: 1,
             explanation:
@@ -1929,10 +1929,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "The PSAT study (Duckworth et al., 2011) found the MCII group completed more than 60% more practice questions. Which claim does it support?",
             options: [
-              "MCII raises exam scores",
-              "In 66 high-school students, a 30-minute written MCII exercise led to more practice questions completed (an effort measure)",
-              "MCII works better than any other study technique",
-              "MCII permanently changes academic ability",
+              "MCII directly raises students' actual final exam scores",
+              "In 66 students, a 30-minute MCII exercise raised practice effort",
+              "MCII clearly works better than any other study technique",
+              "MCII permanently changes a student's core academic ability",
             ],
             correctIndex: 1,
             explanation:
@@ -1955,10 +1955,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "What is the pooled effect of MCII on goal attainment, per Wang, Wang, and Gai (2021)?",
             options: [
-              "Hedges' g = 0.336, 95% CI [0.229, 0.443], from 24 effects across 21 articles, N = 15,907",
-              "d = 0.65, from 94 independent tests",
-              "d = 1.2, a large effect",
-              "No significant effect at all",
+              "Hedges' g = 0.336, 95% CI [0.229, 0.443], N = 15,907",
+              "d = 0.65, drawn from 94 separate independent tests",
+              "d = 1.2, which counts as a genuinely large effect",
+              "No statistically significant effect on it at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1968,9 +1968,9 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "In plain language, what does an effect of about g = 0.34 mean?",
             options: [
-              "About 34% of people succeed",
-              "The average person who did MCII ends up doing better than roughly 63% of those who did not, where 50% would mean it did nothing",
-              "The method works 34% of the time",
+              "That roughly 34% of all people who try it will succeed",
+              "The average MCII person beats about 63% of those who did not",
+              "That the method reliably works about 34% of the time",
               "It is a large effect, comparable to a medical breakthrough",
             ],
             correctIndex: 1,
@@ -1981,10 +1981,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "The 95% confidence interval was [0.229, 0.443]. What does that tell you?",
             options: [
-              "That the true effect is definitely 0.336",
-              "That the data are consistent with the true effect being distinctly smaller or somewhat bigger, but it excludes zero (so probably not nothing) and does not reach 0.5 (so probably not large)",
-              "That the study was badly designed",
-              "That 95% of participants improved",
+              "That the single true effect is definitely exactly 0.336",
+              "Consistent with a smaller-or-bigger effect, but excludes zero",
+              "That the whole underlying study must have been badly designed",
+              "That a full 95% of all the study participants improved",
             ],
             correctIndex: 1,
             explanation:
@@ -1994,10 +1994,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "What did the meta-analysts say about publication bias in their own MCII meta-analysis?",
             options: [
-              "That there was none",
-              "That their analyses indicated the meta-analysis might have SOME publication bias, though they argued the main conclusion was still relatively reliable",
+              "That there was honestly none of it present at all",
+              "That there was SOME bias, but the conclusion still holds",
               "That it made the effect look smaller than it really is",
-              "They did not test for it",
+              "That they simply did not bother to test for it at all",
             ],
             correctIndex: 1,
             explanation:
@@ -2007,10 +2007,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "Which moderator DID reach significance in Wang et al. (2021), and what did it show?",
             options: [
-              "Age: the method works only for adults",
-              "Intervention delivery: face-to-face with an experimenter (g = 0.465) beat document-based delivery (g = 0.277)",
-              "Goal domain: health goals beat academic goals",
-              "Expectation level: high expectations beat low",
+              "Age: the whole method works only for grown adults over 18",
+              "Delivery: face-to-face (g = 0.465) beat document (g = 0.277)",
+              "Goal domain: health goals clearly beat academic goals",
+              "Expectation level: high expectations clearly beat low ones",
             ],
             correctIndex: 1,
             explanation:
@@ -2020,10 +2020,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "Cross and Sheffield (2019) independently reviewed mental contrasting for health behavior. What did they find?",
             options: [
-              "No effect at all",
-              "Effects in the same neighbourhood (adjusted g = 0.28 at up to 4 weeks, g = 0.38 at up to 3 months), which is reassuring convergence from an independent team",
-              "A much larger effect, around g = 0.9",
-              "That the method is harmful",
+              "Essentially no real measurable effect on behavior at all here",
+              "Similar effects: g = 0.28 at 4 weeks, g = 0.38 at 3 months",
+              "A very much larger effect, up around roughly g = 0.9",
+              "That the method is actively quite harmful to health behavior",
             ],
             correctIndex: 1,
             explanation:
@@ -2033,10 +2033,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "What is the current status of the expectancy boundary condition?",
             options: [
-              "Settled: it is confirmed by the meta-analysis",
-              "Mixed: the original experiments supported it, but the meta-analysis found no significant moderation by expectation level and an independent study found none either",
-              "Definitively refuted",
-              "Never tested by anyone",
+              "Settled: it is firmly confirmed by the big meta-analysis",
+              "Mixed: early experiments backed it, but the meta-analysis did not",
+              "Definitively and completely refuted by every later study",
+              "It has honestly never once been properly tested by anyone",
             ],
             correctIndex: 1,
             explanation:
@@ -2046,10 +2046,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "What did Abdulla and Woods (2021) find when they compared MCII against solution-focused and autonomous planning?",
             options: [
-              "MCII was dramatically better",
-              "Commitment was marginally higher in the MCII group, but the differences were small and NOT statistically significant",
-              "MCII was significantly worse",
-              "They did not measure commitment",
+              "MCII came out dramatically and decisively better",
+              "Commitment was marginally higher, but NOT significant",
+              "MCII came out significantly and measurably worse",
+              "They did not ever actually measure commitment at all",
             ],
             correctIndex: 1,
             explanation:
@@ -2059,10 +2059,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "Why does it matter that most MCII studies used a PASSIVE control (information only, or a placebo writing exercise)?",
             options: [
-              "It does not matter; a control is a control",
-              "Because it answers \"is it better than nothing?\" rather than the question you actually care about: \"is it better than the other things I could do with those five minutes?\"",
-              "Because passive controls inflate p-values",
-              "Because it means the studies were unethical",
+              "It does not really matter at all; a control is a control",
+              "Because it only answers whether it beats doing nothing",
+              "Because passive controls always inflate the p-values",
+              "Because it means the underlying studies were unethical",
             ],
             correctIndex: 1,
             explanation:
@@ -2072,10 +2072,10 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "Much of the MCII literature involves the researchers who developed the method. How should you read that?",
             options: [
-              "As a scandal that invalidates the findings",
-              "As normal for a young research programme, but a reason to keep asking whether researchers with no stake in the theory have replicated it",
-              "As proof that the effect is fabricated",
-              "As irrelevant to how much you should believe it",
+              "As a genuine scandal that fully invalidates the findings",
+              "As normal for a young field, but a reason to seek replication",
+              "As clear proof that the whole effect must be fabricated",
+              "As entirely irrelevant to how much you should believe it",
             ],
             correctIndex: 1,
             explanation:
@@ -2085,8 +2085,8 @@ You have just learned a method with a **real but modest** pooled effect, **proba
           {
             prompt: "Given a modest effect, probable publication bias, and no established advantage over other planning methods, why is running MCII still rational?",
             options: [
-              "Because belief makes it work",
-              "Because it costs five minutes, no money, and no risk. Match the size of your bet to the cost of being wrong, and the strength of your commitment to the strength of the evidence",
+              "Because your sheer belief in it makes it actually work",
+              "Because it costs five minutes, no money, and no real risk",
               "Because the effect is actually large once you account for bias",
               "It is not rational; the course concludes you should not use it",
             ],

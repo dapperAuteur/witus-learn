@@ -320,10 +320,10 @@ A simple pre-election checklist: confirm you're **registered** at your **current
           {
             prompt: "Is there a single nationwide voter-registration deadline?",
             options: [
-              "Yes, 30 days before every election",
-              "No, deadlines are set by each state and some states offer same-day registration",
-              "Yes, it's set by the FEC",
-              "No, there is no deadline anywhere",
+              "Yes, exactly 30 days before every election",
+              "No, each state sets its own deadline",
+              "Yes, one uniform date set by the FEC",
+              "No, there is no deadline anywhere at all",
             ],
             correctIndex: 1,
             explanation:
@@ -333,9 +333,9 @@ A simple pre-election checklist: confirm you're **registered** at your **current
           {
             prompt: "What is the key difference between a primary and a caucus?",
             options: [
-              "A primary is run by the party; a caucus is run by the state",
-              "A primary is run by the state; a caucus is run by the political party",
-              "There is no difference",
+              "A primary is party-run; a caucus is state-based",
+              "A primary is state-run; a caucus is party-run",
+              "There is really no difference between them",
               "Caucuses decide the general election winner",
             ],
             correctIndex: 1,
@@ -346,10 +346,10 @@ A simple pre-election checklist: confirm you're **registered** at your **current
           {
             prompt: "What is a provisional ballot?",
             options: [
-              "A ballot cast only by mail",
-              "A ballot cast when a poll worker can't immediately confirm the voter's eligibility",
-              "A ballot used only in caucuses",
-              "An early-voting ballot",
+              "A ballot that can be cast only by U.S. mail",
+              "A ballot cast when eligibility isn't confirmed",
+              "A special ballot used only during caucuses",
+              "An early-voting ballot cast before Election Day",
             ],
             correctIndex: 1,
             explanation:
@@ -372,8 +372,8 @@ A simple pre-election checklist: confirm you're **registered** at your **current
             prompt: "How do Maine and Nebraska allocate their electoral votes differently from other states?",
             options: [
               "They don't participate in the Electoral College",
-              "They use a congressional-district method instead of winner-take-all",
-              "They let Congress choose their electors",
+              "They split electors by congressional district",
+              "They let the U.S. Congress choose their electors",
               "They award electors by county population only",
             ],
             correctIndex: 1,
@@ -384,8 +384,8 @@ A simple pre-election checklist: confirm you're **registered** at your **current
           {
             prompt: "Why was the Electoral College created?",
             options: [
-              "It was always the only option ever proposed",
-              "As a compromise between Congress electing the president and a direct national popular vote",
+              "It was always the single option ever proposed",
+              "As a compromise between Congress and a popular vote",
               "To guarantee the largest states always decide the winner",
               "It was invented by the Supreme Court in the 1900s",
             ],
@@ -397,10 +397,10 @@ A simple pre-election checklist: confirm you're **registered** at your **current
           {
             prompt: "What is a legislative referral?",
             options: [
-              "A citizen petition to overturn a law",
-              "A measure, often a constitutional amendment, that the legislature itself refers to voters",
-              "A type of caucus",
-              "A federal court ruling on a ballot measure",
+              "A citizen petition filed to overturn a law",
+              "A measure the legislature refers to voters",
+              "A special type of local political caucus",
+              "A federal court ruling on a state ballot measure",
             ],
             correctIndex: 1,
             explanation:
@@ -410,10 +410,10 @@ A simple pre-election checklist: confirm you're **registered** at your **current
           {
             prompt: "Are election-night results the official outcome?",
             options: [
-              "Yes, they are final and certified",
-              "No, they are unofficial; the canvass and certification that follow produce the official result",
-              "Only in presidential elections",
-              "Only if there's no recount",
+              "Yes, they are the final, signed, certified totals",
+              "No, canvass and certification make it official",
+              "Only in presidential general elections nationwide",
+              "Only if there is no official recount ordered",
             ],
             correctIndex: 1,
             explanation:
@@ -423,10 +423,10 @@ A simple pre-election checklist: confirm you're **registered** at your **current
           {
             prompt: "What is the best way to confirm the voting rules that apply to you specifically?",
             options: [
-              "Assume every state follows the same rules",
-              "Check your state or local election office's official website (or a federal portal like Vote.gov that routes you there)",
-              "Ask a caucus organizer",
-              "Rely on last election's rules without checking",
+              "Assume that every state follows the exact same rules",
+              "Check your state or local election office's website",
+              "Ask a nearby caucus organizer for the details",
+              "Rely on the last election's rules without ever checking",
             ],
             correctIndex: 1,
             explanation:

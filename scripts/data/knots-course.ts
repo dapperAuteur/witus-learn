@@ -1002,7 +1002,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "In rope terminology, what is the \"bight\"?",
             options: [
               "The longest, load-bearing part of the rope",
-              "The curved or bent part of the rope while working, an open U that does not cross itself",
+              "The bent part of a rope forming an open U",
               "The short working end used to form the knot",
               "The direction in which the strands are twisted",
             ],
@@ -1014,9 +1014,9 @@ export const KNOTS_COURSE: AuthoredCourse = {
           {
             prompt: "Why choose a figure-eight over an overhand as a stopper knot?",
             options: [
-              "The overhand is stronger but slower to tie",
+              "The overhand is stronger but much slower to tie",
               "The figure-eight jams hard so it stays put permanently",
-              "The figure-eight is bulkier but does NOT jam, so it unties easily even after loading",
+              "The figure-eight does NOT jam and unties easily",
               "There is no practical difference between them",
             ],
             correctIndex: 2,
@@ -1042,7 +1042,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
               "You need to join two ropes of clearly different thickness under load. Which knot is correct?",
             options: [
               "A square (reef) knot",
-              "A sheet bend (weaver's knot / becket bend)",
+              "A sheet bend",
               "A clove hitch",
               "A granny knot",
             ],
@@ -1055,8 +1055,8 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt: "Which statement about the bowline is TRUE?",
             options: [
               "It is a self-tightening noose that cinches down under load",
-              "It is a fixed loop that does not slip or jam and unties easily, the \"king of knots\"",
-              "It is used only to finish a frayed rope end",
+              "It is a fixed loop that does not slip or jam under load",
+              "It is used only to whip and finish a frayed rope end",
               "It is the weakest of all the loops and should be avoided",
             ],
             correctIndex: 1,
@@ -1069,7 +1069,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
               "Best practice for making a rope fast to a ring or post with two half-hitches is to first take a ________.",
             options: [
               "granny knot for backup",
-              "round turn, so friction takes the load before the knot does",
+              "round turn",
               "second bowline",
               "short splice",
             ],
@@ -1084,7 +1084,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
             options: [
               "holds equally well when the load is removed or reversed",
               "can never be untied once tied",
-              "falls apart easily the instant the load comes off",
+              "falls apart the instant the load is off",
               "is only for joining two ropes together",
             ],
             correctIndex: 2,
@@ -1096,7 +1096,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
             prompt:
               "You need to put a permanent, high-strength fixed LOOP in the end of a three-strand laid rope. Which technique?",
             options: [
-              "An eye splice: unlay the strands and tuck them back into the standing part",
+              "An eye splice",
               "A short splice",
               "A common whipping",
               "A taut-line hitch",
@@ -1111,7 +1111,7 @@ export const KNOTS_COURSE: AuthoredCourse = {
               "Which is the correct SAFETY framing for the rescue and rigging lessons in this course?",
             options: [
               "They fully qualify you to perform rope rescue and overhead rigging",
-              "They are educational awareness only: real rescue and life-load/overhead rigging require certified training and rated gear",
+              "They are awareness only, not certified rescue training",
               "They replace the need for rated slings and shackles in stage work",
               "They show that a running bowline is the preferred knot to put around a person",
             ],
@@ -1126,8 +1126,8 @@ export const KNOTS_COURSE: AuthoredCourse = {
             options: [
               "Flying a lighting truss over the audience",
               "Suspending a load on a motor above people",
-              "Dressing and securing cable runs and tying gear down on a cart",
-              "Rigging overhead speaker arrays",
+              "Dressing cable runs and tying gear on a cart",
+              "Rigging overhead speaker arrays on trusses",
             ],
             correctIndex: 2,
             explanation:

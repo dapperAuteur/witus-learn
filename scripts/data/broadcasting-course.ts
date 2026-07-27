@@ -710,10 +710,10 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             prompt:
               "Why does the course tell utility-technician hopefuls to learn knots and rigging (and point them to the Knot-Tying & Rope Work course)?",
             options: [
-              "Knots are only decorative on a set",
-              "Securing cable/gear, tying off runs, and clean coiling are real day-one utility skills that make you more hireable",
-              "Only on-air talent needs knots",
-              "The FCC requires a knot-tying license",
+              "Knots are only decorative trim on a set",
+              "Coiling and securing cable are core skills",
+              "Only the on-air talent ever needs knots",
+              "The FCC requires a paid knot-tying license",
             ],
             correctIndex: 1,
             explanation:
@@ -724,9 +724,9 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             prompt:
               "What is the most authoritative FREE source for a broadcasting role's median pay and 10-year job outlook?",
             options: [
-              "A random salary-comparison website",
-              "The U.S. Bureau of Labor Statistics Occupational Outlook Handbook",
-              "A job board's 'estimated' salary",
+              "A random online salary-comparison website",
+              "The BLS Occupational Outlook Handbook",
+              "A job board's 'estimated' salary range",
               "A social-media influencer's video",
             ],
             correctIndex: 1,
@@ -752,8 +752,8 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             prompt: "A demo reel should primarily do what?",
             options: [
               "Run at least five minutes with a slow logo intro",
-              "List your hobbies and references",
-              "Lead with your strongest clip and PROVE what you can do in about 60 to 120 seconds",
+              "List your hobbies and personal references",
+              "Lead with your best clip and prove your skills",
               "Avoid crediting which parts were your work",
             ],
             correctIndex: 2,
@@ -765,10 +765,10 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
             prompt:
               "When audio fails live, the fastest way to find the fault is to:",
             options: [
-              "Replace every piece of gear at once",
-              "Walk the signal flow (source, cable, connection, mixer, output) until you find the dead link",
-              "Turn all levels to maximum",
-              "Restart the entire broadcast",
+              "Swap out every piece of gear all at once",
+              "Walk the signal flow until the dead link",
+              "Turn every channel level up to maximum",
+              "Restart the entire live broadcast feed",
             ],
             correctIndex: 1,
             explanation:
@@ -781,7 +781,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "Be the main light on the subject's face",
               "Fill in the shadows opposite the key",
               "Separate the subject from the background",
-              "Set the camera's white balance",
+              "Set the camera's white balance level",
             ],
             correctIndex: 2,
             explanation:
@@ -795,7 +795,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "The National Association of Broadcasters (NAB)",
               "The Society of Broadcast Engineers (SBE)",
               "The Federal Communications Commission (FCC)",
-              "The Bureau of Labor Statistics (BLS)",
+              "The U.S. Bureau of Labor Statistics (BLS)",
             ],
             correctIndex: 2,
             explanation:
@@ -807,8 +807,8 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "The difference between play-by-play and color commentary is best described as:",
             options: [
               "Play-by-play analyzes strategy; color describes the action",
-              "Play-by-play describes the action (what/when); color adds analysis and story (why)",
-              "They are two names for the exact same job",
+              "Play-by-play describes action; color adds analysis",
+              "They are two different names for the same exact job",
               "Color handles the score and play-by-play stays silent",
             ],
             correctIndex: 1,
@@ -821,7 +821,7 @@ U.S. Bureau of Labor Statistics. (2024d). *Broadcast, sound, and video technicia
               "Which combination best describes a realistic path to a first broadcasting job?",
             options: [
               "Wait for a network to offer you an on-air staff role first",
-              "Internships + freelance/day-call gigs (often utility or camera) to build credits, plus networking through groups like SBE and NAB",
+              "Internships and freelance gigs build credits, plus networking",
               "Only apply once you have a four-year degree and never freelance",
               "Avoid unions, local markets, and volunteer gigs entirely",
             ],
