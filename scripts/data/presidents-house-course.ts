@@ -202,10 +202,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What makes this course structurally different from the other Indianapolis site courses?",
             options: [
-              "It covers a longer time period",
+              "It covers a much longer time period, from Reconstruction through the New Deal",
               "Its subject is a person who held power rather than a place that lost an argument",
-              "It has no primary sources",
-              "It is about architecture only",
+              "It relies on no primary sources at all, only later biographies of Harrison",
+              "It is about the house's architecture only, and never about the presidency",
             ],
             correctIndex: 1,
             explanation: "The useful case for learning the limits of power is the one where someone had the office, asked for the thing, and did not get it.",
@@ -214,8 +214,8 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "How did Benjamin Harrison reach the United States Senate?",
             options: [
-              "By statewide popular election",
-              "By appointment from the president",
+              "By statewide popular election of Indiana voters",
+              "By appointment from Indiana's sitting governor",
               "The Indiana state legislature chose him",
               "By winning a special election in Indianapolis",
             ],
@@ -227,9 +227,9 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             prompt: "The house at the centre of this course is at:",
             options: [
               "1230 North Delaware Street, Indianapolis",
-              "617 Indiana Avenue, Indianapolis",
-              "North Bend, Ohio",
-              "1600 Pennsylvania Avenue, Washington",
+              "617 Indiana Avenue in downtown Indianapolis",
+              "North Bend, Ohio, where Harrison was born",
+              "1600 Pennsylvania Avenue in Washington, D.C.",
             ],
             correctIndex: 0,
             explanation: "Harrison and his wife Caroline began building it in 1874; it was finished in spring 1875, and he died there in 1901.",
@@ -238,10 +238,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Which statement best describes the state of federal voting rights enforcement when Harrison took office in 1889?",
             options: [
-              "No federal enforcement law had ever existed",
-              "Federal enforcement was at its strongest point",
-              "Enforcement was constitutionally forbidden",
-              "Machinery built by the Enforcement Acts of 1870 and 1871 existed but had largely fallen into disuse",
+              "No federal law enforcing the right to vote in elections had ever been enacted",
+              "Federal enforcement of voting rights stood at its strongest level since 1870",
+              "Federal enforcement of voting rights had been forbidden by the Supreme Court",
+              "Machinery from the Enforcement Acts of 1870 and 1871 existed but fell into disuse",
             ],
             correctIndex: 3,
             explanation: "That is why the 1890 bill is best read as an attempt to restart a switched-off machine rather than as an opening move.",
@@ -250,10 +250,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "The Repeal Act of 1894, 28 Stat. 36, did what?",
             options: [
-              "Created federal election supervisors",
-              "Rescinded most of the remaining Reconstruction voting rights enforcement provisions",
-              "Extended the Fifteenth Amendment to state elections",
-              "Established the poll tax",
+              "Created a federal corps of election supervisors for congressional races",
+              "Rescinded most remaining Reconstruction voting rights enforcement provisions",
+              "Extended the Fifteenth Amendment's guarantees to all state elections",
+              "Established the poll tax and the literacy test across the former South",
             ],
             correctIndex: 1,
             explanation: "It passed when Democrats held the presidency and both chambers, three years after the federal elections bill died.",
@@ -262,10 +262,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "In the same year the Senate filibustered the federal elections bill, what did Mississippi do?",
             options: [
-              "Adopted a constitution disfranchising Black voters through a literacy test with an understanding clause and a poll tax",
-              "Ratified the Fifteenth Amendment",
-              "Abolished its poll tax",
-              "Elected its first Black governor",
+              "Adopted a constitution disfranchising Black voters with a literacy test and a poll tax",
+              "Ratified the Fifteenth Amendment and opened its polls to all Black male voters",
+              "Abolished its poll tax and dropped the literacy test used at voter registration",
+              "Elected its first Black governor and integrated all its public schools statewide",
             ],
             correctIndex: 0,
             explanation: "The 1890 Mississippi convention's design was copied across the South, and the Supreme Court upheld it in Williams v. Mississippi, 170 U.S. 213 (1898).",
@@ -274,10 +274,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Article XIII of Indiana's 1851 constitution did what, and when did it fall?",
             options: [
-              "Guaranteed Black suffrage; repealed in 1870",
-              "Created a poll tax; struck down in 1900",
-              "Barred Black people from coming into or settling in the state; held invalid by the Indiana Supreme Court in 1866",
-              "Established township schools; amended in 1851",
+              "Guaranteed Black male suffrage across the state; repealed by amendment in 1881",
+              "Created a statewide poll tax for all elections; struck down by the courts in 1902",
+              "Barred Black settlement in the state; struck down by the Indiana Supreme Court in 1866",
+              "Established a system of township common schools; amended by the legislature in 1855",
             ],
             correctIndex: 2,
             explanation: "The court held it invalid after the Thirteenth Amendment. Indiana's own record on Black political rights is documented and it is not clean.",
@@ -286,9 +286,9 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "How did Indiana Democrats attempt to stop ratification of the Fifteenth Amendment in 1869?",
             options: [
-              "They filed a lawsuit",
-              "They voted it down twice",
-              "They asked the governor to veto it",
+              "They filed a lawsuit in state court to block the amendment's ratification outright",
+              "They voted the amendment down twice on the floor of the state Senate in Indianapolis",
+              "They persuaded the governor to veto the amendment after both chambers had passed it",
               "Seventeen senators and thirty-seven representatives resigned their seats to break the quorum",
             ],
             correctIndex: 3,
@@ -300,8 +300,8 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             options: [
               "Voting rights fights are usually decided on the merits in open debate",
               "These fights are often decided by procedure, so look at procedure first",
-              "State legislatures cannot ratify amendments",
-              "Resignations are always illegal",
+              "State legislatures cannot lawfully ratify amendments to the Constitution",
+              "A resignation from a legislature is always illegal under state law",
             ],
             correctIndex: 1,
             explanation: "The measure was blocked by preventing a vote rather than by losing one, and it advanced only when somebody reinterpreted a procedural rule.",
@@ -310,10 +310,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What was Harrison's 1888 'front porch campaign'?",
             options: [
-              "A whistle-stop train tour of the Midwest",
-              "A campaign run entirely through newspaper advertising",
-              "A refusal to campaign at all",
-              "He stayed in Indianapolis and spoke to carefully selected delegations who came to him",
+              "A whistle-stop railroad tour across the Midwest and the industrial Northeast",
+              "A campaign run entirely through paid newspaper advertising in the swing states",
+              "A refusal to campaign at all, leaving every speech to his running mate",
+              "He stayed home in Indianapolis and spoke to carefully selected delegations",
             ],
             correctIndex: 3,
             explanation: "A candidate who does not travel controls the audience, the setting and the record. It was a media strategy and a new one.",
@@ -322,10 +322,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What was the 1888 election result?",
             options: [
-              "Harrison carried the electoral college 233 to 168 while receiving about 90,000 fewer popular votes than Cleveland",
-              "Harrison won both the popular vote and the electoral college",
-              "Cleveland won the electoral college but lost the popular vote",
-              "The election was decided in the House of Representatives",
+              "Harrison took the electoral college 233 to 168 with about 90,000 fewer popular votes",
+              "Harrison won both the popular vote and the electoral college by a wide margin",
+              "Cleveland won the electoral college but narrowly lost the national popular vote",
+              "The election was thrown to the House of Representatives after an electoral tie",
             ],
             correctIndex: 0,
             explanation: "New York and Indiana were the swing states, and Harrison failed to carry his home city of Indianapolis.",
@@ -334,10 +334,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Who wrote the 'blocks of five' circular, and what position did he hold?",
             options: [
-              "Henry Cabot Lodge, a member of the House",
-              "George Frisbie Hoar, a senator",
+              "Henry Cabot Lodge, the Massachusetts member who drafted the bill",
+              "George Frisbie Hoar, the Massachusetts senator who managed the bill",
               "William Wade Dudley, treasurer of the Republican National Committee",
-              "Oliver P. Morton, a former governor",
+              "Oliver P. Morton, a former Indiana governor and United States senator",
             ],
             correctIndex: 2,
             explanation: "The October 1888 circular told Indiana workers to divide the floaters into blocks of five with a trusted man and the necessary funds in charge of each.",
@@ -346,10 +346,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What does the Dudley circular establish, stated precisely?",
             options: [
-              "That Harrison personally directed vote buying",
-              "That the 1888 election was legally overturned",
-              "That no votes were bought in Indiana",
-              "That the instruction was written by a named officer of Harrison's campaign in his home state in the election he won",
+              "That Harrison personally directed the buying of votes across Indiana in 1888",
+              "That the 1888 election was later overturned by a federal court in Indiana",
+              "That no votes were bought anywhere in Indiana during the 1888 campaign at all",
+              "That the instruction was written by a named officer of Harrison's own campaign",
             ],
             correctIndex: 3,
             explanation: "It does not establish how many votes were bought or whether Harrison knew. The Miller Center calls the vote-buying claim 'political talk' that circulated for years.",
@@ -358,10 +358,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course put the 1888 fraud allegation in a voting rights lesson?",
             options: [
-              "Because the charge of election fraud in 1888 ran in both directions, which is why southern Democrats could posture as defenders of clean elections",
-              "To discredit Harrison",
-              "Because it was the only issue in the campaign",
-              "Because the courts resolved it",
+              "Because the 1888 fraud charge ran both ways, which southern Democrats exploited",
+              "To discredit Harrison and cast public doubt on the legitimacy of his 1888 win",
+              "Because vote fraud was the only real issue in the entire 1888 campaign season",
+              "Because the federal courts fully resolved the fraud question soon after 1888",
             ],
             correctIndex: 0,
             explanation: "A course that gives you Harrison's fine sentences about the ballot without giving you this is selling a hero rather than teaching a record.",
@@ -370,10 +370,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "How did Harrison's presidency end?",
             options: [
-              "He declined to run again",
-              "He was defeated for renomination",
-              "He lost the 1892 election to Cleveland by roughly 375,000 popular votes and by close to two to one in the electoral college",
-              "He died in office",
+              "He declined to run for a second term and retired quietly to Indianapolis",
+              "He was defeated for renomination at the 1892 Republican national convention",
+              "He lost the 1892 rematch to Cleveland, 375,000 votes and two to one in electors",
+              "He died suddenly in office during the winter of the fourth year of his term",
             ],
             correctIndex: 2,
             explanation: "Cleveland carried Indiana among the swing states. The man who asked for federal supervision of elections was turned out by an election, decisively, and left.",
@@ -964,10 +964,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Under Article II, Section 3, a president's power over legislation amounts to what?",
             options: [
-              "Introducing bills in either chamber",
-              "Setting the Senate's calendar",
+              "Introducing bills on the floor of either chamber",
+              "Setting the legislative calendar of the Senate",
               "Recommending measures to Congress's consideration",
-              "Requiring a committee vote",
+              "Requiring a committee to hold a recorded vote",
             ],
             correctIndex: 2,
             explanation: "He can ask. Congress is under no obligation to consider, schedule, debate or vote on what he asks for.",
@@ -976,10 +976,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Which constitutional clause makes a federal elections law possible at all?",
             options: [
-              "Article I, Section 4, which lets Congress make or alter state regulations for congressional elections",
-              "The Tenth Amendment",
-              "Article II, Section 2, the appointment power",
-              "The Commerce Clause",
+              "Article I, Section 4, letting Congress alter state rules for congressional races",
+              "The Tenth Amendment, which reserves election powers to the several states",
+              "Article II, Section 2, letting the president appoint the federal officers",
+              "The Commerce Clause of Article I, regulating commerce among the states",
             ],
             correctIndex: 0,
             explanation: "States run elections by default, but Congress may override for congressional elections. It is a power of Congress, not of the president, which is why the president could only ask.",
@@ -988,10 +988,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Why does Article I, Section 5 make certified election returns so valuable?",
             options: [
-              "It gives the president a veto over returns",
-              "It requires the Supreme Court to review every count",
-              "It bars states from counting ballots",
-              "Each house is the judge of the elections, returns and qualifications of its own members",
+              "It gives the president a personal veto over each disputed election return",
+              "It requires the U.S. Supreme Court to review and certify every vote count",
+              "It bars the individual states from counting the ballots in federal races",
+              "Each house judges the elections, returns and qualifications of its own members",
             ],
             correctIndex: 3,
             explanation: "A supervisor's certified count would be evidence for the chamber that decides who gets seated, so the fight was over who controls the documentation that decides who sits in Congress.",
@@ -1012,10 +1012,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Identify the bill at the centre of this course.",
             options: [
-              "The Blair Education Bill of 1890",
-              "The Enforcement Act of 1871",
-              "The Federal Elections Bill of 1890, H.R. 11045, drafted by Rep. Henry Cabot Lodge and carried in the Senate by Sen. George Frisbie Hoar",
-              "The Sherman Silver Purchase Act",
+              "The Blair Education Bill of 1890, providing federal aid to public schools",
+              "The Enforcement Act of 1871, aimed at the Ku Klux Klan across the South",
+              "The Federal Elections Bill of 1890, H.R. 11045, drafted by Rep. Henry Cabot Lodge",
+              "The Sherman Silver Purchase Act of 1890, on federal silver buying that year",
             ],
             correctIndex: 2,
             explanation: "Opponents called it the 'Force Bill', a slur borrowed from Reconstruction, and that name is the one that survived into the textbooks.",
@@ -1024,10 +1024,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "How would federal supervision of an election have been triggered under the bill?",
             options: [
-              "By a petition from citizens in a district, on which a federal circuit court would appoint supervisors",
-              "Automatically in every southern district",
-              "By presidential proclamation",
-              "By a vote of the state legislature",
+              "By a petition from citizens, on which a federal circuit court appoints supervisors",
+              "Automatically in every southern congressional district, needing no petition",
+              "By a written proclamation issued by the sitting president after an election",
+              "By a two-thirds vote of the relevant state's own legislature each cycle",
             ],
             correctIndex: 0,
             explanation: "Supervision was neither automatic nor nationwide. Published summaries disagree on whether the petition needed one hundred voters or five hundred citizens, and the bill's text in the Congressional Record settles it.",
@@ -1036,10 +1036,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Which provision of the bill produced the nickname 'Force Bill'?",
             options: [
-              "The availability of federal marshals to secure an election on a supervisor's request",
+              "Federal marshals available to secure an election at a supervisor's request",
               "The requirement that supervisors be of different political faiths",
-              "The house-to-house canvass",
-              "The criminal penalties for bribery",
+              "The provision authorising a house-to-house canvass of registered voters",
+              "The criminal penalties set for bribery and for casting illegal ballots",
             ],
             correctIndex: 0,
             explanation: "It is one clause of a bill otherwise about registration lists, canvassing and certification, and the slur outperformed the bill's actual name.",
@@ -1048,10 +1048,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What happened to the bill in the House of Representatives?",
             options: [
-              "It was defeated by six votes",
-              "It never came to a vote",
+              "It was narrowly defeated on final passage by a margin of just six votes",
+              "It never came to any recorded vote on the floor of the full House at all",
               "It passed on July 2, 1890, by 155 to 149, with no Democrats voting in favour",
-              "It was referred back to committee",
+              "It was quietly referred back to committee and was never reported out again",
             ],
             correctIndex: 2,
             explanation: "The bill's only fatal problem was in the Senate, where it never received a vote on the merits at all.",
@@ -1060,10 +1060,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What did the Senate's January 22, 1891 vote of 35 to 34 actually decide?",
             options: [
-              "That the bill was unconstitutional",
-              "That the bill should be set aside as the pending business, not whether to enact it",
-              "That the bill was enacted",
-              "That the Senate would adjourn for the year",
+              "That the bill as written was plainly unconstitutional on its face in full",
+              "That the bill should be set aside as pending business, not whether to enact it",
+              "That the bill was thereby enacted into permanent federal law that same day",
+              "That the whole Senate would adjourn for the remainder of the calendar year",
             ],
             correctIndex: 1,
             explanation: "A motion to displace is the quietest legislative weapon there is: nobody has to go on record against the bill, they vote for other business.",
@@ -1072,9 +1072,9 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What cloture rule was available to break the 1890-91 filibuster?",
             options: [
-              "A simple majority rule adopted in 1806",
-              "A three-fifths rule adopted in 1875",
-              "The Reed Rules, adopted in 1890",
+              "A simple-majority cloture rule adopted by the Senate in 1806",
+              "A three-fifths cloture rule adopted by the Senate in 1875",
+              "The Reed Rules on debate, adopted by the House in 1890",
               "None. The Senate's first cloture rule, Rule 22, came in 1917",
             ],
             correctIndex: 3,
@@ -1096,10 +1096,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "How should the 'Compromise of 1890' be described?",
             options: [
-              "As a contested interpretation: three measures were live at once, two passed, and whether a bargain was struck by named people on named terms is not established by the record read here",
-              "As a signed written agreement between Harrison and Senate Democrats",
-              "As a myth with no supporting evidence at all",
-              "As a Supreme Court decision",
+              "As a contested interpretation: whether a bargain was struck on named terms is unproven",
+              "As a signed and dated written pact between President Harrison and Senate Democrats",
+              "As a total myth with no supporting documentary or archival evidence anywhere at all",
+              "As a formal Supreme Court decision handed down during the October 1890 term that year",
             ],
             correctIndex: 0,
             explanation: "A pattern of votes is consistent with a deal and equally consistent with senators voting their own state's interests. Welch, Hirshson, Perman and McConarty are where the work has been done.",
@@ -1108,10 +1108,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What makes McConarty's 2020 article methodologically interesting?",
             options: [
-              "It relies entirely on later biographies",
-              "It reads 202 letters sent to Senator Hoar during the bill's nine months and argues from what is in them",
-              "It uses census data only",
-              "It is a work of fiction based on the period",
+              "It relies entirely on later published biographies of Harrison and Lodge",
+              "It reads 202 letters sent to Senator Hoar during the bill's nine months",
+              "It draws only on aggregate federal census data from the 1890 census",
+              "It is a work of historical fiction loosely based on the 1890 period",
             ],
             correctIndex: 1,
             explanation: "The difference between an opinion about the past and a finding about it is a body of evidence somebody actually counted. The unopened box is where the new argument lives.",
@@ -1120,10 +1120,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these is a documented part of Harrison's record that complicates a flattering story?",
             options: [
-              "He vetoed the Sherman Antitrust Act",
-              "He refused to appoint any Black Americans to federal office",
-              "He never mentioned voting rights after 1891",
-              "He signed the Geary Act on May 5, 1892, extending Chinese exclusion and requiring Chinese residents to carry certificates of residence",
+              "He vetoed the Sherman Antitrust Act when it reached his desk in 1890",
+              "He refused to appoint any Black Americans to any federal office at all",
+              "He never mentioned voting rights again after the bill died in 1891",
+              "He signed the Geary Act on May 5, 1892, extending Chinese exclusion",
             ],
             correctIndex: 3,
             explanation: "He also ordered the army into the Sioux reservations on November 13, 1890, and the Wounded Knee massacre followed on December 29. A record is a list, not a score.",
@@ -1132,10 +1132,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "This course compares the 1890 elections bill with the 1969 Unigov consolidation. What is the claim, and what is the limit?",
             options: [
-              "That Unigov was a direct continuation of the Senate's 1891 vote",
-              "That both are instruments aimed at the effective weight of a vote, but they are not a causal chain and eighty years and different governments separate them",
-              "That the two events happened in the same decade",
-              "That neither had any effect on voting",
+              "That the Unigov consolidation was a direct legal continuation of the 1891 vote",
+              "That both aim at the effective weight of a vote, but they are not a causal chain",
+              "That the two events happened in the same decade and were run by the same men",
+              "That neither the elections bill nor Unigov had any measurable effect on voting",
             ],
             correctIndex: 1,
             explanation: "One lever changes how an election is run; the other changes who is inside the electorate. The loud lever failed and the quiet lever passed, which is the transferable observation.",
@@ -1575,9 +1575,9 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Who owns and operates the Benjamin Harrison house today?",
             options: [
-              "The National Park Service",
-              "The City of Indianapolis",
-              "The State of Indiana",
+              "The National Park Service, which runs it as a federal historic unit",
+              "The City of Indianapolis, through its municipal parks department",
+              "The State of Indiana, through the state historical bureau's museum arm",
               "A not-for-profit, tax-exempt operating foundation established in 1966",
             ],
             correctIndex: 3,
@@ -1587,10 +1587,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What are the four questions to ask about any museum or historic site?",
             options: [
-              "Ticket price, opening hours, parking, and gift shop",
-              "What legal entity owns and operates it; where the money comes from; who governs it; and what is on the public record",
-              "Architect, style, date, and square footage",
-              "Visitor numbers only",
+              "Ticket price, opening hours, parking availability, and the size of the gift shop",
+              "Who owns and operates it; where its money comes from; who governs it; what is on record",
+              "The architect, the building style, the construction date, and the square footage",
+              "The annual visitor numbers and the average price of an adult admission ticket",
             ],
             correctIndex: 1,
             explanation: "They work anywhere, on any nonprofit, in any state, and every one of them has a document behind it.",
@@ -1599,10 +1599,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "An IRS Form 990 is:",
             options: [
-              "A public annual information return showing a tax-exempt organisation's revenue, expenses, top staff and board",
-              "A confidential document available only to donors",
-              "A state property tax assessment",
-              "A federal grant application",
+              "A public annual return showing a tax-exempt group's revenue, expenses, staff and board",
+              "A confidential filing available only to the organisation's largest private donors",
+              "A state property tax assessment sent out yearly by the county assessor's office",
+              "A federal grant application submitted to the National Endowment for the Humanities",
             ],
             correctIndex: 0,
             explanation: "Searchable free through the IRS Tax Exempt Organization Search or ProPublica's Nonprofit Explorer. Read the filing itself and state its tax year.",
@@ -1611,10 +1611,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course refuse to quote a budget figure for the site?",
             options: [
-              "The figures are secret",
-              "Museums are exempt from disclosure",
-              "Third-party aggregators republish nonprofit financials with varying dates and definitions, so the right figure is the one you read on an actual filing whose year you can state",
-              "The number changes daily",
+              "The site's finances are kept entirely secret from the public under a federal statute",
+              "Accredited museums are entirely exempt from all federal financial disclosure rules",
+              "Aggregators report the financials with varying dates, so trust a dated filing you can cite",
+              "The reported figure changes almost daily with new donations and ticket admissions",
             ],
             correctIndex: 2,
             explanation: "It is the same rule course 1 applied to the 17,000 displacement figure: give a number its owner, its date and its scope, or do not use it.",
@@ -1624,8 +1624,8 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
             prompt: "Which of these interpretive decisions is normally visible from outside a site?",
             options: [
               "The published programme descriptions",
-              "The tour script",
-              "The interpretive plan",
+              "The full internal docent tour script",
+              "The board-approved interpretive plan",
               "The curatorial restoration files",
             ],
             correctIndex: 0,
@@ -1635,10 +1635,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Why is Harrison's record a hard interpretive problem for a house museum?",
             options: [
-              "Because no primary sources survive",
-              "Because the house is too small for exhibits",
-              "Because the record is entirely positive",
-              "Because it will not fit on a label: the ballot messages, the failed bill, the Geary Act, Wounded Knee and the 1888 circular cannot all sit in one sentence",
+              "Because almost no primary sources about Harrison's whole presidency survive",
+              "Because the house is physically far too small to hold any interpretive exhibits",
+              "Because Harrison's public record is entirely positive and so needs no framing",
+              "Because it will not fit on one label: the ballot messages and Wounded Knee clash",
             ],
             correctIndex: 3,
             explanation: "The right posture is not to demand a particular choice but to see that a choice was made, and to ask what it was and when it was last revisited.",
@@ -1647,10 +1647,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What happened at Montpelier between June 2021 and May 2022?",
             options: [
-              "The site closed permanently",
-              "A bylaw commitment to descendant parity on the board was made, rescinded in March 2022, and restored on May 16, 2022 after national backlash",
-              "The federal government took over the property",
-              "The board was replaced by a court order",
+              "The historic site was closed permanently to the public by a vote of its own board",
+              "A descendant board-parity pledge was made, rescinded in March 2022, restored in May 2022",
+              "The federal government seized and took over the whole property from its private owner",
+              "The entire governing board was removed and replaced under a Virginia court order",
             ],
             correctIndex: 1,
             explanation: "Public pressure worked because the decision was visible: bylaws are documents and board votes are minuted.",
@@ -1659,10 +1659,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Which body recommended the directors whose election achieved 'structural parity' at Montpelier?",
             options: [
-              "The National Park Service",
-              "The Virginia General Assembly",
+              "The National Park Service in Washington",
+              "The Virginia General Assembly in Richmond",
               "The Montpelier Descendants Committee",
-              "The American Alliance of Museums",
+              "The national American Alliance of Museums",
             ],
             correctIndex: 2,
             explanation: "The National Trust for Historic Preservation, which had condemned the March 2022 rescission, publicly congratulated the board on May 16, 2022.",
@@ -1671,10 +1671,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Where does the actual text of H.R. 11045 live, so that the petition-threshold disagreement can be settled?",
             options: [
-              "It has been lost",
-              "Only in a private collection",
-              "In state archives in Mississippi",
-              "In the Congressional Record of the 51st Congress, digitised and public at congress.gov",
+              "It has been lost, and not one complete copy of it survives anywhere today",
+              "Only in a private manuscript collection that is closed to the general public",
+              "Only in Mississippi's own state archives building, which is closed to the public",
+              "In the Congressional Record of the 51st Congress, public online at congress.gov",
             ],
             correctIndex: 3,
             explanation: "Anyone who tells you the number without telling you where they read it is repeating a summary, and this course says the same about itself.",
@@ -1683,10 +1683,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Why is this course's map national rather than block by block?",
             options: [
-              "Because the lesson map draws the whole world, so points need roughly two degrees of separation, and everything in Indianapolis is one dot",
-              "Because the house's location is unknown",
-              "Because Indianapolis maps are copyrighted",
-              "Because the course avoids maps",
+              "Because the map spans the whole world, so nearby points merge into one Indianapolis dot",
+              "Because the exact street location of the Harrison house is genuinely unknown today",
+              "Because all detailed street maps of the city of Indianapolis are under copyright",
+              "Because the course deliberately avoids using any street-level city maps at all",
             ],
             correctIndex: 0,
             explanation: "Matching the scale of the map to the question is the skill. For a Marion County parcel the right tool is MapIndy.",
@@ -1695,10 +1695,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What do the Wounded Knee and San Francisco markers do on this course's map?",
             options: [
-              "They mark where Harrison campaigned",
-              "They keep the map from being read as a monument, by plotting the two parts of the record that do not fit",
-              "They show where the bill was debated",
-              "They mark archives",
+              "They mark the two western cities where Harrison personally campaigned in 1888",
+              "They keep the map from reading as a monument by plotting the two parts that do not fit",
+              "They show the two eastern cities where the elections bill was formally debated",
+              "They mark the federal archives that hold the bill's surviving committee papers",
             ],
             correctIndex: 1,
             explanation: "The November 1890 troop order preceding the December 29, 1890 massacre, and the Geary Act signed May 5, 1892.",
@@ -1707,10 +1707,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "On a 360 tour of a house museum, which rooms are usually the most informative?",
             options: [
-              "The parlour and the dining room",
-              "The bedrooms",
-              "The rooms not on the tour: service stairs, kitchen passages, storage, basement, attic, carriage house",
-              "The gift shop",
+              "The front parlour and the formal dining room where important guests were received",
+              "The upstairs family bedrooms on both the second and the third floors of the house",
+              "The rooms left off the tour: the service stairs, kitchen passages, storage and attic",
+              "The museum gift shop, the ticketing desk, and the main visitor entrance hall",
             ],
             correctIndex: 2,
             explanation: "A museum's route is an argument about which parts of a household mattered.",
@@ -1719,10 +1719,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "A 360 tour of this house cannot show you which of the following?",
             options: [
-              "The colour of the woodwork",
-              "The shape of the staircase",
+              "The exact colour of the butternut woodwork in the main hallway",
+              "The precise carved shape of the walnut staircase with its oak trim",
               "A vote, an absence, a governance decision, or its own capture date",
-              "The furniture in the parlour",
+              "The period furniture arranged throughout the front parlour today",
             ],
             correctIndex: 2,
             explanation: "Nothing in the building records what the Senate did on January 22, 1891, and the board, budget and interpretive plan are not visible in a room.",
@@ -1731,10 +1731,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "What did the front porch on the house today turn out to be, relative to the campaign it is famous for?",
             options: [
-              "Original to 1875 and unchanged",
-              "Built after the presidency, in 1895 or 1896 depending on which source you read",
-              "Added by the museum in 1974",
-              "Removed entirely in 1896",
+              "Part of the original 1875 house and never once altered by anyone since",
+              "Built after the presidency, in 1895 or 1896 depending on the source",
+              "Added by the museum's foundation during its full 1974 restoration",
+              "Torn off and removed entirely from the front of the house in 1896",
             ],
             correctIndex: 1,
             explanation: "Which does not prove there was no porch in 1888. Neither source says what stood at the front door then, and this course does not assert what it cannot source.",
@@ -1743,10 +1743,10 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
           {
             prompt: "Restate the designation rule this cluster teaches.",
             options: [
-              "Federal listing is recognition plus review leverage when federal money or a permit is involved; local designation under a local ordinance is what regulates",
+              "Federal listing brings recognition and review leverage; a local ordinance regulates",
               "National Historic Landmark status transfers a property to the federal government",
-              "Only state registers regulate demolition",
-              "Federal listing prevents any change to a building",
+              "Only state historic registers can lawfully regulate the demolition of a landmark",
+              "Federal listing legally prevents any physical change to a listed building at all",
             ],
             correctIndex: 0,
             explanation: "The Old Northside carries both: National Register listing in 1978 and an Indianapolis historic district designation the same year.",
