@@ -347,10 +347,10 @@ No country will score perfectly on all six. The point of the framework is to com
           {
             prompt: "What is the key legal difference between residency and citizenship in a destination country?",
             options: [
-              "There is no difference; the terms are interchangeable",
-              "Residency is an ongoing right to live there; citizenship is full legal membership, typically after years of residency",
+              "There is no difference; the two terms are fully interchangeable",
+              "Residency is a right to live there; citizenship is full membership",
               "Citizenship is always temporary; residency is always permanent",
-              "Only residency requires a visa; citizenship never does",
+              "Only residency needs a visa; citizenship never requires one",
             ],
             correctIndex: 1,
             explanation:
@@ -360,8 +360,8 @@ No country will score perfectly on all six. The point of the framework is to com
           {
             prompt: "In Mexico's example, what agency issues its temporary resident visa, and what bases can it be granted on?",
             options: [
-              "The IRS; based on tax status only",
-              "The Instituto Nacional de Migración (INM); based on a job offer, family relationship, or proof of income/savings",
+              "The IRS; granted only on your U.S. federal tax status",
+              "Mexico's INM; on a job offer, family, or proof of income",
               "The U.S. Department of State; based on U.S. citizenship alone",
               "A private visa broker; based on payment of a flat fee",
             ],
@@ -373,10 +373,10 @@ No country will score perfectly on all six. The point of the framework is to com
           {
             prompt: "According to Portugal's official visa portal, what does it call its remote-work visa category?",
             options: [
-              "The 'Golden Visa'",
-              "A visa for the exercise of a professional activity done remotely, 'digital nomads'",
-              "The 'D8 Express Visa'",
-              "It does not offer a remote-work visa category",
+              "The 'Golden Visa,' its investment-based residency permit",
+              "A visa for professional activity done remotely, 'digital nomads'",
+              "The 'D8 Express Visa,' a fast-tracked skilled-worker permit",
+              "It does not offer any remote-work visa category at present",
             ],
             correctIndex: 1,
             explanation:
@@ -394,8 +394,8 @@ No country will score perfectly on all six. The point of the framework is to com
           {
             prompt: "Why does this course avoid stating how many weeks or months a visa application will take?",
             options: [
-              "Processing times are secret",
-              "Timelines vary enormously by country and visa type and change over time, so a fixed number would go stale",
+              "Processing times are secret and never published",
+              "Timelines vary by country and visa type, and change",
               "Every visa takes exactly the same amount of time",
               "Only expedited applications have a processing time",
             ],
@@ -420,10 +420,10 @@ No country will score perfectly on all six. The point of the framework is to com
           {
             prompt: "Where should a U.S. citizen living abroad start to register and vote absentee?",
             options: [
-              "Their destination country's election office",
-              "FVAP.gov, the Federal Voting Assistance Program, to submit a Federal Post Card Application (FPCA)",
-              "There is no way to vote once you live abroad",
-              "Only by flying back to the U.S. in person",
+              "Their destination country's local election office",
+              "FVAP.gov, the Federal Voting Assistance Program",
+              "There is no legal way to vote once you move abroad",
+              "Only by flying back to your home U.S. state in person",
             ],
             correctIndex: 1,
             explanation:
@@ -433,10 +433,10 @@ No country will score perfectly on all six. The point of the framework is to com
           {
             prompt: "Does moving abroad end a U.S. citizen's obligation to file U.S. income taxes?",
             options: [
-              "Yes, once you establish residency elsewhere",
-              "No, U.S. citizens are generally taxed on worldwide income and must keep filing regardless of where they live",
+              "Yes, once you establish tax residency in another country",
+              "No, U.S. citizens are taxed on worldwide income",
               "Only if they earn more than $1 million per year",
-              "Only for the first year abroad",
+              "Only for the first full year after you move abroad",
             ],
             correctIndex: 1,
             explanation:
@@ -446,10 +446,10 @@ No country will score perfectly on all six. The point of the framework is to com
           {
             prompt: "This course recommends confirming a destination's visa requirements with which two authoritative sources?",
             options: [
-              "A travel blog and a social media group",
-              "The destination country's own official immigration authority and a licensed immigration attorney",
-              "This course alone, since it's kept up to date automatically",
-              "Only a travel agent",
+              "A popular travel blog and a large online expat community group",
+              "The country's official immigration authority and a licensed attorney",
+              "This course alone, since it is kept fully up to date for you",
+              "Only a general travel agent handling your relocation flights",
             ],
             correctIndex: 1,
             explanation:

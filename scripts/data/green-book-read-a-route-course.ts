@@ -131,7 +131,7 @@ That sentence is not decoration. It is the publisher telling you that the book w
           },
           {
             prompt: "What was Victor Green's job while he built the guide?",
-            options: ["Newspaper editor", "Hotel owner", "Letter carrier for the U.S. Post Office", "Oil company executive"],
+            options: ["Newspaper editor in Harlem", "A hotel owner in Manhattan", "U.S. Post Office letter carrier", "Oil company executive at Esso"],
             correctIndex: 2,
             explanation: "He carried mail from 1913 and did not retire until 1952, after thirty-nine years of service.",
             sourceLessonSlug: "gbr-what-it-was",
@@ -139,10 +139,10 @@ That sentence is not decoration. It is the publisher telling you that the book w
           {
             prompt: "How did Green primarily gather listings in the early years?",
             options: [
-              "By buying a commercial hotel database",
-              "Through a network of fellow postal employees who solicited listings along their routes, plus reader submissions",
-              "From federal census records",
-              "By visiting every city himself",
+              "By buying a commercial hotel and motel database",
+              "Through fellow postmen and readers who wrote in",
+              "From federal census and municipal tax records",
+              "By personally visiting every listed city himself",
             ],
             correctIndex: 1,
             explanation: "Other postmen solicited listings and advertising along their delivery routes, and readers wrote in with places they had used.",
@@ -152,9 +152,9 @@ That sentence is not decoration. It is the publisher telling you that the book w
             prompt: "Because of how listings were gathered, the Green Book is best understood as a record of:",
             options: [
               "Every business in America that served Black customers",
-              "Only businesses owned by Black people",
-              "What someone reported to Green, which is not the same as everything that existed",
-              "Government-inspected establishments",
+              "Only businesses owned by Black people in the South",
+              "What someone reported to Green, not all that existed",
+              "Only government-inspected, licensed establishments",
             ],
             correctIndex: 2,
             explanation: "It is a reported directory, not a survey. That distinction drives every reading skill in this course.",
@@ -198,10 +198,10 @@ That sentence is not decoration. It is the publisher telling you that the book w
           {
             prompt: "Why is there a roughly four-year gap in editions in the early 1940s?",
             options: [
-              "Green was ill",
-              "Wartime rationing forced a hiatus during the Second World War",
-              "The book was banned",
-              "There were no listings left",
+              "Green fell seriously ill for years",
+              "Wartime rationing forced a hiatus",
+              "The book was banned across the South",
+              "There were no new listings left to print",
             ],
             correctIndex: 1,
             explanation: "Rationing of supplies during the Second World War forced a hiatus of about four years; the guide returned in 1946.",
@@ -210,10 +210,10 @@ That sentence is not decoration. It is the publisher telling you that the book w
           {
             prompt: "Which change first appears on the 1946 cover?",
             options: [
-              "The price",
-              "A cover illustration and the line 'Carry your Green Book with you, you may need it'",
-              "A map of Route 66",
-              "The Esso logo",
+              "The new retail cover price in dollars",
+              "An illustration and the famous tag line",
+              "A large fold-out road map of Route 66",
+              "The Esso oil company's corporate logo",
             ],
             correctIndex: 1,
             explanation: "1946 brought the first illustrated cover and the well-known tag line, both of which stayed.",
@@ -222,10 +222,10 @@ That sentence is not decoration. It is the publisher telling you that the book w
           {
             prompt: "Beginning with the 1956 edition, the categories of business listed:",
             options: [
-              "Expanded to include schools and churches",
-              "Narrowed to lodging and restaurants almost exclusively",
-              "Stayed exactly the same as in 1940",
-              "Dropped hotels",
+              "Expanded to include schools, churches and banks",
+              "Narrowed to mostly lodging and restaurants",
+              "Stayed exactly the same as they were in 1940",
+              "Dropped hotels and motels from the guide",
             ],
             correctIndex: 1,
             explanation: "The 1956 edition dropped gas stations, drug stores, tailors, hair salons and liquor stores, focusing on lodging and restaurants.",
@@ -253,10 +253,10 @@ That sentence is not decoration. It is the publisher telling you that the book w
           {
             prompt: "What did Victor Green write in the 1949 introduction about the guide's future?",
             options: [
-              "That it would be published forever",
+              "That it would be published forever, without end",
               "That he hoped to sell it to a larger publisher",
-              "That there would come a day when it would not have to be published, once Black Americans had equal opportunities",
-              "That readers should stop sending in listings",
+              "That one day it would no longer need publishing",
+              "That readers should stop sending in new listings",
             ],
             correctIndex: 2,
             explanation: "Green said suspending publication would be a great day, because it would mean people could go wherever they pleased without embarrassment.",
@@ -371,9 +371,9 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
           {
             prompt: "According to Sorin (2020), why did the automobile matter so much to Black American families?",
             options: [
-              "It was cheaper than the train",
-              "It let them avoid the segregated railroad car and bus and travel on their own terms, making driving a form of resistance",
-              "Cars were exempt from segregation laws",
+              "It was always far cheaper than the train",
+              "It let them avoid segregated trains and buses",
+              "Cars were fully exempt from segregation laws",
               "It was the only legal way to cross state lines",
             ],
             correctIndex: 1,
@@ -383,10 +383,10 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
           {
             prompt: "A sundown town was:",
             options: [
-              "A town with an early curfew for everyone",
-              "A community that excluded Black residents and visitors, often enforced after dark",
-              "A resort open only in the evening",
-              "A town listed in the Green Book for night driving",
+              "A town with a strict early night curfew for everyone",
+              "A town that excluded Black people, enforced after dark",
+              "A seasonal resort open only in the evening hours",
+              "A town listed in the Green Book for safe night driving",
             ],
             correctIndex: 1,
             explanation: "Exclusion was enforced by ordinance, sign, police practice, or threat, and being stranded in one was a real danger.",
@@ -395,10 +395,10 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
           {
             prompt: "What did Loewen (2005) find when he counted sundown towns?",
             options: [
-              "Fewer than he expected, about twenty nationwide",
-              "More than 440 in Illinois alone and thousands nationwide, most outside the South",
-              "That they existed only in the Deep South",
-              "That the concept could not be documented",
+              "Fewer than he expected, only about twenty nationwide",
+              "More than 440 in Illinois alone, thousands nationwide",
+              "That they existed only in the Deep South, nowhere else",
+              "That the whole concept simply could not be documented",
             ],
             correctIndex: 1,
             explanation: "He set out expecting roughly fifty nationwide and instead documented far more, concentrated outside the traditional South.",
@@ -414,10 +414,10 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
           {
             prompt: "Besides safety, the Green Book functioned as:",
             options: [
-              "A government census",
-              "A business directory that pooled a community's buying power",
-              "A membership card",
-              "A legal defense manual",
+              "An official government population census",
+              "A directory pooling community buying power",
+              "A paid membership card for a travel club",
+              "A legal self-defense manual for drivers",
             ],
             correctIndex: 1,
             explanation: "Choosing where to stop directed money to Black-owned and non-discriminating businesses, inside a tradition that included the 'Don't Buy Where You Can't Work' boycotts.",
@@ -433,10 +433,10 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
           {
             prompt: "A tourist home was:",
             options: [
-              "A small hotel chain",
-              "A private residence with a room to rent",
-              "A campground",
-              "A boarding school",
+              "A small budget roadside hotel chain",
+              "A private home renting out a room",
+              "A roadside tent and trailer campground",
+              "A private residential boarding school",
             ],
             correctIndex: 1,
             explanation: "Private homes rented rooms to travelers, which in many towns was the only lodging available to Black families.",
@@ -473,10 +473,10 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
           {
             prompt: "How did some salons contribute directly to the civil rights movement?",
             options: [
-              "By refusing white customers",
-              "By driving clients to register to vote and accepting NAACP mail on their behalf",
-              "By printing the Green Book",
-              "By operating as courts",
+              "By flatly refusing to serve white customers",
+              "By driving clients to vote and holding NAACP mail",
+              "By printing and distributing the Green Book",
+              "By operating as informal neighbourhood courts",
             ],
             correctIndex: 1,
             explanation: "Salon staff drove clients to voting booths and let NAACP literature be delivered to the salon rather than to clients' homes, which carried risk.",
@@ -492,10 +492,10 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
           {
             prompt: "A city section shows four tourist homes and no service station. The best reading is:",
             options: [
-              "The city had no cars",
-              "You can sleep there but should arrive with fuel, because the guide records no place to buy it",
-              "The city was a sundown town",
-              "The listings are fabricated",
+              "The city clearly had no automobiles at all",
+              "You can sleep there but should arrive with fuel",
+              "The city was almost certainly a sundown town",
+              "The tourist-home listings were all fabricated",
             ],
             correctIndex: 1,
             explanation: "Reading a city section means asking which of the day's needs the guide covers and which it leaves you to solve yourself.",
@@ -504,10 +504,10 @@ Every one of those headings appears in the 1940 edition (Green, 1940). A guide t
           {
             prompt: "The best one-sentence description of what the guide's category list shows is:",
             options: [
-              "A survival kit for emergencies only",
-              "The supply chain for an ordinary day of life away from home",
-              "A list of tourist attractions",
-              "A directory of churches",
+              "A survival kit for roadside emergencies only",
+              "The supply chain for an ordinary day out",
+              "A list of local roadside tourist attractions",
+              "A directory of local churches and schools",
             ],
             correctIndex: 1,
             explanation: "Barbers, tailors, and drug stores are not survival items. Their presence shows the guide was about living normally, not merely getting through.",
@@ -717,10 +717,10 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "A listing reading 'Mrs. M. Jackson, Herman St.' with no house number means:",
             options: [
-              "The entry is a fabrication",
-              "The informant reported only the street, so the address is a research lead, not a location",
-              "The building had no address",
-              "The business was closed",
+              "The whole entry is an obvious fabrication",
+              "Only the street was reported, so it is a lead",
+              "The building itself had no street address",
+              "The business had permanently closed down",
             ],
             correctIndex: 1,
             explanation: "Street-only, corner, landmark, and post-office-box addresses are all normal in small-town listings.",
@@ -729,10 +729,10 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "The Latimore Tourist Home in Russellville, Arkansas is significant partly because:",
             options: [
-              "It was the largest hotel in Arkansas",
-              "It is on the National Register of Historic Places, at 318 South Houston Avenue",
-              "It appears only in the final edition",
-              "It was owned by Victor Green",
+              "It was by far the largest hotel in Arkansas",
+              "It is on the National Register of Historic Places",
+              "It appears only in the final 1966-67 edition",
+              "It was personally owned by Victor Hugo Green",
             ],
             correctIndex: 1,
             explanation: "It was listed on the National Register in 2012, reference number 11001049, and was run by Eugene and Cora Wilson Latimore.",
@@ -741,9 +741,9 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "Three sources give three different years for the Latimore's first Green Book appearance. The right response is to:",
             options: [
-              "Pick the government source and move on",
-              "Average them",
-              "Treat it as unsettled and check the digitized editions yourself",
+              "Pick the government source and simply move on",
+              "Simply average the three years together",
+              "Treat it as unsettled and check the editions",
               "Leave the date out of any research forever",
             ],
             correctIndex: 2,
@@ -753,10 +753,10 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "What did the 1940 edition say about whether a listing was a recommendation?",
             options: [
-              "That every listing was personally inspected",
-              "That under no circumstances do the listings imply the place is recommended",
-              "That listings were ranked by quality",
-              "It said nothing about the question",
+              "That every listing had been personally inspected",
+              "That a listing does not mean the place is recommended",
+              "That the listings were ranked by overall quality",
+              "That it said nothing at all about the question",
             ],
             correctIndex: 1,
             explanation: "The front matter states it plainly. A 1940 listing meant 'will serve you', not 'is good'.",
@@ -777,10 +777,10 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "In a starred edition, what does the ABSENCE of a star mean?",
             options: [
-              "The accommodations were inferior",
-              "Not necessarily anything about quality, as the guide explicitly warns",
-              "The business was white-owned",
-              "The listing was free",
+              "The accommodations were clearly inferior",
+              "Not necessarily anything about the quality",
+              "The listed business was actually white-owned",
+              "The listing itself was completely free",
             ],
             correctIndex: 1,
             explanation: "The legend adds the parenthesis 'Omission of * does not necessarily mean inferior accommodations.'",
@@ -789,10 +789,10 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "A business appears in large bold type with an illustration. What can you conclude?",
             options: [
-              "It was the best in town",
+              "It was the very best hotel in town",
               "It bought display advertising space",
-              "The editor stayed there",
-              "It was government approved",
+              "The guide's editor once stayed there",
+              "It was officially government approved",
             ],
             correctIndex: 1,
             explanation: "Prominence on the page is a purchase, not a ranking, which is why you must say whether you counted entries or column inches.",
@@ -802,9 +802,9 @@ The publisher is telling you directly that the gaps in his book are partly a gap
             prompt: "Green's own 1949 introduction explains missing listings by saying:",
             options: [
               "That the missing places refused to serve Black travelers",
-              "That he could not secure enough agents to send in information about thousands of places that would gladly have served travelers",
-              "That he ran out of pages",
-              "That readers stopped writing to him",
+              "That he lacked agents to report thousands of willing places",
+              "That he had simply run out of room and pages to print",
+              "That his readers had stopped writing letters to him",
             ],
             correctIndex: 1,
             explanation: "The publisher tells you directly that the gaps are partly gaps in his reporting network.",
@@ -813,10 +813,10 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "Which rule about street numbers does this course insist on?",
             options: [
-              "Always round to the nearest hundred",
-              "Never publish a house number you have only seen in machine-read text",
-              "Ignore house numbers entirely",
-              "Trust transcriptions over images",
+              "Always round the number to the nearest hundred",
+              "Never publish a house number from machine-read text",
+              "Ignore all house numbers completely and entirely",
+              "Always trust transcriptions over the page images",
             ],
             correctIndex: 1,
             explanation: "Digits corrupt first in scanned text. Check the page image and a second source such as a city directory, a Sanborn map, or a National Register nomination.",
@@ -825,10 +825,10 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "Where were the Green Book's highest-volume listings?",
             options: [
-              "Small towns in the rural West",
-              "New York, Detroit, Chicago, and Los Angeles",
-              "Along the Canadian border",
-              "In Bermuda and Mexico",
+              "Small towns across the rural western states",
+              "New York, Detroit, Chicago and Los Angeles",
+              "Small towns along the Canadian border",
+              "In Bermuda, Mexico and the Caribbean",
             ],
             correctIndex: 1,
             explanation: "Cities with large Black populations carried the most listings, per the National Park Service.",
@@ -837,10 +837,10 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "Where was the guide MOST valuable to a traveler?",
             options: [
-              "In the cities with the most listings",
-              "Crossing smaller towns in rural areas across the South and out West",
-              "In Harlem",
-              "On ocean crossings",
+              "In the big cities that had the most listings",
+              "Crossing smaller towns in the rural South and West",
+              "In the Harlem neighbourhood of New York City",
+              "On long transatlantic ocean liner crossings",
             ],
             correctIndex: 1,
             explanation: "Density and usefulness run in opposite directions: one listing on a long empty stretch outweighs forty in a city with obvious options.",
@@ -849,10 +849,10 @@ The publisher is telling you directly that the gaps in his book are partly a gap
           {
             prompt: "Independent sources show a Black business district in a town, but the guide lists nothing there. The most likely explanation is:",
             options: [
-              "The town was a sundown town",
-              "A reporting gap: nobody sent listings in from that area",
-              "The businesses were all closed that year",
-              "The page was censored",
+              "The town was almost certainly a sundown town",
+              "A reporting gap: no one sent listings from there",
+              "The businesses were all closed that whole year",
+              "The guide's page was deliberately censored",
             ],
             correctIndex: 1,
             explanation: "Corroboration elsewhere plus silence in the guide points at the reporting network, which Green said was his limiting factor.",
@@ -1006,10 +1006,10 @@ The first sentence is a claim about the world that you have not proved. The seco
           {
             prompt: "Why must you fix the road using a PERIOD map rather than a current one?",
             options: [
-              "Current maps are copyrighted",
-              "Highways were realigned constantly, so the road in your year may not follow today's route",
-              "Period maps are more accurate about distance",
-              "Current maps omit small towns",
+              "Current road maps are all still under copyright",
+              "Highways were realigned, so your year's road may differ",
+              "Period maps are far more accurate about distance",
+              "Current maps leave out almost all the small towns",
             ],
             correctIndex: 1,
             explanation: "Alignments moved. Using today's road can put a listing on or off your corridor incorrectly.",
@@ -1018,10 +1018,10 @@ The first sentence is a claim about the world that you have not proved. The seco
           {
             prompt: "Why should you write down your inclusion rule (for example 'within about ten miles of the alignment')?",
             options: [
-              "It is required by law",
-              "Because deciding which cities count is a judgment call, and a stated rule applied consistently is checkable",
-              "To make the list shorter",
-              "Because the Green Book used that rule",
+              "It is strictly required by state highway law",
+              "A stated rule applied consistently is checkable",
+              "To make the final city list a good deal shorter",
+              "Because the Green Book itself used that exact rule",
             ],
             correctIndex: 1,
             explanation: "Step 4 is the subjective step. Naming your rule turns a judgment into something another researcher can audit.",
@@ -1030,10 +1030,10 @@ The first sentence is a claim about the world that you have not proved. The seco
           {
             prompt: "In the 1940 edition, which Missouri cities on or near U.S. 66 carry listings?",
             options: [
-              "Kansas City and Columbia only",
-              "St. Louis, Lebanon, Springfield, Carthage, and Joplin",
-              "None",
-              "Only St. Louis",
+              "Only Kansas City, Columbia and Jefferson City",
+              "St. Louis, Lebanon, Springfield, Carthage and Joplin",
+              "None of the Missouri cities carry any listing",
+              "Only St. Louis and Kansas City, nowhere else",
             ],
             correctIndex: 1,
             explanation: "Those five sit on or near the corridor, giving a workable chain of stops across the state.",
@@ -1063,10 +1063,10 @@ The first sentence is a claim about the world that you have not proved. The seco
           {
             prompt: "Why does the single 1940 New Mexico listing not help a Route 66 driver?",
             options: [
-              "It was a paid advertisement",
-              "Deming is in the far south of the state, off the U.S. 66 corridor",
-              "It closed before 1940",
-              "It only served white customers",
+              "It was merely a paid commercial display advertisement",
+              "Deming sits in the far south, off the U.S. 66 corridor",
+              "It had permanently closed several years before 1940",
+              "It served only white travelers, never Black ones",
             ],
             correctIndex: 1,
             explanation: "A listing that is not on your road is not a stop on your route, which is the whole point of chaining by corridor.",
@@ -1074,7 +1074,7 @@ The first sentence is a claim about the world that you have not proved. The seco
           },
           {
             prompt: "Which of these is NOT one of the three live explanations for a gap in listings?",
-            options: ["Refusal", "Absence", "Silence in the reporting network", "Deliberate censorship by the federal government"],
+            options: ["Refusal to serve Black travelers", "Absence of any business at all", "Silence in the reporting network", "Federal government press censorship"],
             correctIndex: 3,
             explanation: "The three testable explanations are refusal, absence, and silence. Nothing in the record supports federal censorship of the guide.",
             sourceLessonSlug: "gbr-the-gap-and-the-detour",
@@ -1082,10 +1082,10 @@ The first sentence is a claim about the world that you have not proved. The seco
           {
             prompt: "What is the cheapest first test of a suspected gap?",
             options: [
-              "Visit the site",
-              "Check a different edition, and a different travel guide",
-              "File a records request",
-              "Interview a descendant",
+              "Drive out and visit the actual site",
+              "Check another edition or travel guide",
+              "File a formal public records request",
+              "Track down and interview a descendant",
             ],
             correctIndex: 1,
             explanation: "The editions are digitised and free, and a town present in one year but absent in another usually indicates a reporting gap.",
@@ -1094,10 +1094,10 @@ The first sentence is a claim about the world that you have not proved. The seco
           {
             prompt: "To evidence the 'refusal' explanation for a stretch of road, you need:",
             options: [
-              "The silence in the listings itself",
-              "A positive record such as a documented sundown town, an ordinance, a newspaper account, a lawsuit, or an oral history",
-              "A modern interview",
-              "A photograph of the road",
+              "The silence in the listings, taken on its own",
+              "A positive record: an ordinance or news account",
+              "One single modern recorded video interview",
+              "A clear modern photograph of the empty road",
             ],
             correctIndex: 1,
             explanation: "Silence cannot evidence refusal. Only an affirmative document can.",
@@ -1118,10 +1118,10 @@ The first sentence is a claim about the world that you have not proved. The seco
           {
             prompt: "The dense 1940 Tulsa listings on and around North Greenwood Avenue can be read as:",
             options: [
-              "Evidence that the 1921 massacre never happened",
-              "Documentary evidence of what was rebuilt in the Greenwood district",
-              "Proof that Tulsa was not segregated",
-              "A printing error",
+              "Evidence that the 1921 Tulsa massacre never happened",
+              "Evidence of what was rebuilt in the Greenwood district",
+              "Proof that Tulsa was never really segregated at all",
+              "Nothing but a simple printing and layout error",
             ],
             correctIndex: 1,
             explanation: "Nine categories of business on and around Greenwood in 1940 record a district that had been burned in 1921 and rebuilt.",
@@ -1130,10 +1130,10 @@ The first sentence is a claim about the world that you have not proved. The seco
           {
             prompt: "Why should you avoid stating a mileage for a gap unless you have measured it?",
             options: [
-              "Mileages are classified",
-              "Distances on realigned highways are easy to get wrong, and an unmeasured figure is a guess",
-              "The Green Book never used miles",
-              "Mileage is irrelevant to history",
+              "All highway mileages are officially classified",
+              "On realigned roads an unmeasured distance is a guess",
+              "The Green Book never once printed any mileages",
+              "Mileage is entirely irrelevant to real history",
             ],
             correctIndex: 1,
             explanation: "Measure on a period map or do not state a number. An invented distance discredits an otherwise solid route reconstruction.",
@@ -1142,10 +1142,10 @@ The first sentence is a claim about the world that you have not proved. The seco
           {
             prompt: "Three explanations for a gap are live at once on a long stretch. What follows?",
             options: [
-              "You must pick one",
-              "The gap is meaningless",
-              "Different segments of the same gap may have different explanations, and your write-up should say so",
-              "You should discard the route",
+              "You must simply pick just one explanation",
+              "The whole gap is therefore quite meaningless",
+              "Different segments may have different explanations",
+              "You should discard the whole route entirely",
             ],
             correctIndex: 2,
             explanation: "They are not mutually exclusive. A long gap usually contains refusal, absence, and reporting silence at different points along it.",
@@ -1504,9 +1504,9 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "Which lodging establishments did Title II exempt?",
             options: [
-              "All motels built after 1960",
-              "Buildings with not more than five rooms for rent that the proprietor actually occupies as a residence",
-              "All establishments in the South",
+              "All roadside motels that were built after 1960",
+              "Owner-occupied buildings with five rooms or fewer",
+              "Every lodging establishment across the whole South",
               "Any business with fewer than twenty employees",
             ],
             correctIndex: 1,
@@ -1516,10 +1516,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "Why is that exemption significant for Green Book history specifically?",
             options: [
-              "Because tourist homes were the guide's most heavily used lodging category where hotels would not serve Black travelers",
-              "Because it applied only to hotels in cities",
-              "Because it made the Green Book illegal",
-              "Because it required the guide to keep publishing",
+              "Because tourist homes were the guide's most-used lodging",
+              "Because it applied only to hotels in the big cities",
+              "Because it made the whole Green Book outright illegal",
+              "Because it legally required the guide to keep publishing",
             ],
             correctIndex: 0,
             explanation: "The category the guide leaned on hardest is the category Congress left outside the statute.",
@@ -1528,10 +1528,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "How did the final 1966 to 1967 edition describe the Civil Rights Act?",
             options: [
-              "As a threat to Black business",
-              "As a new bill of rights for everyone, regardless of race, creed, or color",
-              "As unlikely to be enforced",
-              "It did not mention it",
+              "As a serious threat to Black business",
+              "As a new bill of rights for all people",
+              "As a new law unlikely to be enforced",
+              "It did not mention the new Act at all",
             ],
             correctIndex: 1,
             explanation: "The final edition told readers that every hotel, restaurant, theater or other facility catering to the general public must now do exactly that.",
@@ -1540,10 +1540,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "What effect did desegregation have on many Black-owned businesses in the guide?",
             options: [
-              "It doubled their business",
-              "It drew business away from them as choice expanded for Black travelers and white-owned businesses gained customers",
-              "It had no effect",
-              "It forced them to relocate",
+              "It quickly doubled their regular customer trade",
+              "It drew customers away as their choices widened",
+              "It had almost no measurable effect on them",
+              "It forced most of them to relocate elsewhere",
             ],
             correctIndex: 1,
             explanation: "Expanded access cut both ways, which the guide's own final edition was already noticing.",
@@ -1552,10 +1552,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "The National Park Service states that at least half of the Green Book's Black-owned businesses:",
             options: [
-              "Were demolished by 1970",
-              "Were closed within 10 years",
-              "Moved to the suburbs",
-              "Were bought by chains",
+              "Were all demolished by about 1970",
+              "Were closed within 10 years of 1964",
+              "Moved out to the growing suburbs",
+              "Were bought up by national chains",
             ],
             correctIndex: 1,
             explanation: "That figure counts business closures in the decade after 1964, not demolitions.",
@@ -1564,10 +1564,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "What does NPS say about the number of Green Book businesses in neighborhoods razed for urban renewal and freeways?",
             options: [
-              "About 4,000",
-              "Exactly half",
-              "That the numbers are unknown",
-              "None were affected",
+              "About 4,000 businesses",
+              "Exactly one half of them",
+              "That the number is unknown",
+              "That none were affected",
             ],
             correctIndex: 2,
             explanation: "The agency writes 'unknown numbers' rather than estimating, which is the standard this course asks you to follow.",
@@ -1583,10 +1583,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "A new interstate that BYPASSED a Black commercial district rather than cutting through it:",
             options: [
-              "Had no economic effect",
-              "Took the traffic and therefore the customers away, leaving formerly thriving areas as shells",
-              "Always increased property values",
-              "Was required to compensate every business",
+              "Had no real economic effect on the district",
+              "Took the traffic and customers, leaving shells",
+              "Always sharply increased local property values",
+              "Was legally required to compensate every business",
             ],
             correctIndex: 1,
             explanation: "Being routed around was its own kind of taking, which is why 'through' and 'around' both belong in the story.",
@@ -1595,10 +1595,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "The 'less than 20 percent still extant' estimate is attributed to:",
             options: [
-              "The Census Bureau",
-              "Architectural historian Jennifer Reut, an expert participant with the National Trust for Historic Preservation, as reported by NPS",
-              "Victor Green",
-              "The Schomburg Center",
+              "The United States federal Census Bureau",
+              "Historian Jennifer Reut, as reported by NPS",
+              "The Green Book publisher Victor Hugo Green",
+              "The Schomburg Center, a research library",
             ],
             correctIndex: 1,
             explanation: "It is an attributed estimate about sites still standing nationally, reported on the NPS National Register page.",
@@ -1607,10 +1607,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "The 'approximately 30 percent still standing in 2014' figure applies to:",
             options: [
-              "All Green Book sites nationally",
-              "Green Book sites in Route 66 communities only",
-              "Tourist homes only",
-              "Sites in the South only",
+              "All Green Book sites across the nation",
+              "Green Book sites in Route 66 towns",
+              "Tourist home lodging listings only",
+              "Green Book sites in the South only",
             ],
             correctIndex: 1,
             explanation: "It comes from 2014 research into Green Book sites in Route 66 communities, so its scope is a single corridor.",
@@ -1619,10 +1619,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "Why do the three survival figures differ?",
             options: [
-              "One of them is wrong",
-              "They count different units, over different periods, across different geographic scopes",
-              "They were produced by biased sources",
-              "They are rounded differently",
+              "One of the three figures is simply wrong",
+              "They count different units, periods and scopes",
+              "They were produced by biased partisan sources",
+              "They are simply each rounded off differently",
             ],
             correctIndex: 1,
             explanation: "Businesses closing is not buildings standing, ten years is not today, and Route 66 is not the nation.",
@@ -1638,10 +1638,10 @@ Sources: National Park Service (n.d.-a, n.d.-b, n.d.-d).
           {
             prompt: "You are writing up a project and want to state what share of Green Book sites survive. What should you do?",
             options: [
-              "Average the published figures",
-              "Estimate from the sites you personally checked",
-              "Quote a figure with its owner, date and scope attached, or say the rate is contested and no complete national survey exists",
-              "Use the highest figure, to be generous",
+              "Simply average the three published national figures",
+              "Estimate it from the sites you personally checked",
+              "Quote a figure with its owner, date and scope, or abstain",
+              "Always use the single highest figure, to be generous",
             ],
             correctIndex: 2,
             explanation: "This is the exact point where careful research turns into plausible-sounding fabrication. Attribute or abstain.",

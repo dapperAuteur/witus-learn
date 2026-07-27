@@ -231,10 +231,10 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
           {
             prompt: "What national first does South Dakota hold?",
             options: [
-              "The first state income tax",
-              "The first state to adopt the citizen initiative and referendum (1898)",
-              "The first unicameral legislature",
-              "The first to abolish courts",
+              "The first state to enact a personal income tax",
+              "First state to adopt the initiative and referendum",
+              "The first state to run a unicameral legislature",
+              "The first state to abolish all its trial-level courts",
             ],
             correctIndex: 1,
             explanation:
@@ -244,10 +244,10 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
           {
             prompt: "How does South Dakota's first compare to Oregon?",
             options: [
-              "Oregon went first in 1902",
-              "South Dakota went first (1898), before Oregon's more famous 1902 system",
-              "They adopted it the same year",
-              "Neither has initiative",
+              "Oregon actually went first, years earlier in 1902",
+              "South Dakota went first in 1898, before Oregon's 1902",
+              "Both states adopted the very same measure in that year",
+              "Neither state has ever adopted the citizen initiative",
             ],
             correctIndex: 1,
             explanation:
@@ -270,10 +270,10 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
           {
             prompt: "Does South Dakota have a state income tax?",
             options: [
-              "Yes, a high one",
+              "Yes, it levies a high personal income tax",
               "No, it relies on sales and other taxes",
-              "Only for corporations",
-              "Only in cities",
+              "Only on large corporate business profits",
+              "Only within its incorporated cities",
             ],
             correctIndex: 1,
             explanation:
@@ -283,10 +283,10 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
           {
             prompt: "How does South Dakota choose its Supreme Court justices?",
             options: [
-              "Partisan elections",
-              "Merit selection (commission → Governor appoints) plus retention elections",
-              "The Legislature elects them",
-              "Lifetime appointment",
+              "Statewide partisan elections held each term",
+              "Merit selection, then yes/no retention votes",
+              "The state Legislature elects them by joint vote",
+              "Lifetime appointment by the sitting Governor",
             ],
             correctIndex: 1,
             explanation:
@@ -296,10 +296,10 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
           {
             prompt: "What are the two ways law gets made in South Dakota?",
             options: [
-              "Only by the Governor",
-              "Through the Legislature, and directly by the voters (initiative and referendum)",
-              "Only by the courts",
-              "Only by counties",
+              "Only by the Governor issuing an executive order",
+              "The Legislature, and directly by the voters",
+              "Only by the state's appellate court rulings",
+              "Only by the county boards of commissioners",
             ],
             correctIndex: 1,
             explanation:
@@ -309,10 +309,10 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
           {
             prompt: "Which sovereign governments are part of South Dakota's civic landscape?",
             options: [
-              "None",
-              "Nine federally recognized Native American tribal nations with their own constitutions and courts",
-              "Only city governments",
-              "Only the federal government",
+              "There are none within the entire state",
+              "Nine federally recognized tribal nations",
+              "Only local incorporated city governments",
+              "Only the national federal government itself",
             ],
             correctIndex: 1,
             explanation:
@@ -330,10 +330,10 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
           {
             prompt: "What kind of legislature does South Dakota have?",
             options: [
-              "A full-time, year-round legislature",
-              "A part-time citizen legislature with a short annual session and term limits",
-              "A unicameral legislature",
-              "An appointed legislature",
+              "A full-time, salaried year-round state legislature",
+              "A part-time citizen legislature with term limits",
+              "A single-chamber unicameral state legislature",
+              "An appointed, governor-selected legislature",
             ],
             correctIndex: 1,
             explanation:
@@ -344,9 +344,9 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
             prompt: "Why does this course tell you to VERIFY South Dakota's ballot-measure and voting rules?",
             options: [
               "Because South Dakota has no elections office",
-              "Because signature/approval thresholds have been debated and voting is run by county auditors and can change: confirm at sdsos.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because thresholds and voting rules can change",
+              "Because only the U.S. Congress may set these rules",
+              "Because all state voting is entirely secret",
             ],
             correctIndex: 1,
             explanation:

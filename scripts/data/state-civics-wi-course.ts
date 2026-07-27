@@ -264,10 +264,10 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
           {
             prompt: "What is 'the Wisconsin Idea'?",
             options: [
-              "A tax cut plan",
-              "The principle that state government and the university should serve all residents",
-              "A highway project",
-              "A ban on voting",
+              "A 1990s state tax-cut and highway construction plan",
+              "The idea that state and university serve all residents",
+              "A major interstate highway and bridge construction project",
+              "A state constitutional ban on same-day voter registration",
             ],
             correctIndex: 1,
             explanation:
@@ -277,10 +277,10 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
           {
             prompt: "What is distinctive about Wisconsin's gubernatorial veto?",
             options: [
-              "The Governor cannot veto anything",
-              "An unusually powerful partial veto that can strike parts of spending items (nicknamed the 'Frankenstein veto')",
-              "Only the Legislature can veto",
-              "Vetoes require a court order",
+              "The Governor cannot veto any bill or spending item at all",
+              "A strong partial veto that cuts parts of spending items",
+              "Only the state Legislature may veto a bill after passage",
+              "Every veto must first receive a formal state court order",
             ],
             correctIndex: 1,
             explanation:
@@ -290,10 +290,10 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
           {
             prompt: "How and when does Wisconsin elect its Supreme Court justices?",
             options: [
-              "Appointed for life by the Governor",
-              "Elected on a nonpartisan ballot in spring elections, to 10-year terms",
-              "Elected by the Legislature",
-              "Elected in November partisan races",
+              "Appointed for a lifetime term by the sitting Governor",
+              "Elected on a nonpartisan spring ballot, 10-year terms",
+              "Chosen by a joint vote of the entire state Legislature",
+              "Elected each November on a partisan party-line ballot",
             ],
             correctIndex: 1,
             explanation:
@@ -303,10 +303,10 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
           {
             prompt: "Why do Wisconsin's spring Supreme Court elections matter so much?",
             options: [
-              "They are ceremonial",
-              "The court's balance can decide major statewide questions, so these low-turnout races are highly consequential",
-              "They pick the Governor",
-              "They set the school calendar",
+              "They are purely ceremonial and largely symbolic events",
+              "The court's balance can decide big statewide questions",
+              "They directly pick the state's next sitting Governor",
+              "They officially set the statewide public school calendar",
             ],
             correctIndex: 1,
             explanation:
@@ -329,10 +329,10 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
           {
             prompt: "Can Wisconsin citizens put a new law on the ballot by initiative?",
             options: [
-              "Yes, a strong initiative",
-              "No, Wisconsin has no statewide initiative, though it has a strong recall",
-              "Only in spring",
-              "Only for schools",
+              "Yes, citizens may use a strong statewide petition initiative",
+              "No statewide initiative, but the state has a strong recall",
+              "Yes, but only during the annual spring election cycle",
+              "Yes, but only for local public school funding questions",
             ],
             correctIndex: 1,
             explanation:
@@ -342,10 +342,10 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
           {
             prompt: "What direct citizen power did Wisconsin use famously in 2012?",
             options: [
-              "A citizen initiative",
+              "A binding statewide citizen initiative",
               "A recall election of the Governor",
-              "A constitutional convention",
-              "A jury nullification",
+              "A full state constitutional convention",
+              "A jury nullification of a state law",
             ],
             correctIndex: 1,
             explanation:
@@ -355,10 +355,10 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
           {
             prompt: "What is a 'town' in Wisconsin's local-government system?",
             options: [
-              "The state capital",
-              "A rural, general-purpose local unit (similar to a township), distinct from incorporated villages and cities",
-              "A private company",
-              "A federal district",
+              "The official state capital city, which is Madison",
+              "A rural general-purpose local unit, like a township",
+              "A private, for-profit incorporated business company",
+              "A federal judicial district set within the state",
             ],
             correctIndex: 1,
             explanation:
@@ -368,10 +368,10 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
           {
             prompt: "Which voting feature does Wisconsin offer?",
             options: [
-              "No registration ever",
-              "Same-day (Election-Day) registration, with a photo-ID requirement",
-              "Voting only by the Legislature",
-              "Property-owners-only voting",
+              "No voter registration is ever needed to cast a vote",
+              "Same-day registration, plus a photo-ID requirement",
+              "All voting is done only by the state Legislature",
+              "Voting limited to property-owning residents only",
             ],
             correctIndex: 1,
             explanation:
@@ -381,10 +381,10 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
           {
             prompt: "Why does this course tell you to VERIFY Wisconsin's partial-veto limits and voting rules?",
             options: [
-              "Because Wisconsin has no government website",
-              "Because amendments have narrowed the partial veto and voting rules are run by municipal clerks and change: confirm at [legis.wisconsin.gov](https://legis.wisconsin.gov) / [elections.wi.gov](https://elections.wi.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because the state of Wisconsin has no government website",
+              "Because amendments narrowed the veto, clerks run voting",
+              "Because only the U.S. Congress sets these state rules",
+              "Because the secret ballot conceals the current rules",
             ],
             correctIndex: 1,
             explanation:
