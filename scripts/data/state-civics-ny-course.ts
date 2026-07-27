@@ -358,9 +358,9 @@ You use **one or the other** for a given election: a voter issued an early mail 
           {
             prompt: "What question is New York required to put on the ballot every 20 years?",
             options: [
-              "Whether to raise the state income tax",
-              "Whether to hold a convention to revise the state constitution",
-              "Whether to re-elect the Governor",
+              "Whether to raise the state's income tax rate",
+              "Whether to hold a state constitutional convention",
+              "Whether to re-elect the Governor for a new term",
               "Whether to split New York City from the state",
             ],
             correctIndex: 1,
@@ -373,8 +373,8 @@ You use **one or the other** for a given election: a voter issued an early mail 
             options: [
               "The Supreme Court is the highest court and the Court of Appeals is a trial court",
               "The Supreme Court is the trial court and the Court of Appeals is the highest court",
-              "Both are trial courts",
-              "The Court of Appeals is a federal court",
+              "Both the Supreme Court and the Court of Appeals are general-purpose trial courts",
+              "The Court of Appeals is a federal court that reviews every New York verdict",
             ],
             correctIndex: 1,
             explanation:
@@ -384,10 +384,10 @@ You use **one or the other** for a given election: a voter issued an early mail 
           {
             prompt: "How are New York Court of Appeals judges selected?",
             options: [
-              "Elected in partisan statewide races",
-              "Appointed by the Governor from a nominating commission's list, with State Senate confirmation",
-              "Appointed by the U.S. President",
-              "Chosen by the Chief Judge alone",
+              "Elected by voters in partisan statewide judicial races",
+              "Governor appoints from a commission's list, Senate confirms",
+              "Appointed by the U.S. President with U.S. Senate consent",
+              "Chosen by the Court's Chief Judge without a Senate vote",
             ],
             correctIndex: 1,
             explanation:
@@ -413,7 +413,7 @@ You use **one or the other** for a given election: a voter issued an early mail 
               "With a simple majority of each house",
               "With a two-thirds vote of each house",
               "It cannot. The Governor's veto is final",
-              "Only by a statewide referendum",
+              "Only through a statewide voter referendum",
             ],
             correctIndex: 1,
             explanation:
@@ -423,10 +423,10 @@ You use **one or the other** for a given election: a voter issued an early mail 
           {
             prompt: "How many counties does New York have, and what is special about five of them?",
             options: [
-              "50 counties; five are federal territory",
+              "50 counties; five are U.S. overseas territory",
               "62 counties; five are the boroughs of New York City",
-              "57 counties; five are in Long Island",
-              "62 counties; five are unincorporated",
+              "57 counties; five lie within eastern Long Island",
+              "62 counties; five are unincorporated territories",
             ],
             correctIndex: 1,
             explanation:
@@ -436,10 +436,10 @@ You use **one or the other** for a given election: a voter issued an early mail 
           {
             prompt: "What is the difference between New York's absentee ballot and its early mail ballot?",
             options: [
-              "They are the same thing",
-              "The absentee ballot requires a listed excuse; the early mail ballot is no-excuse (any registered voter)",
+              "They are simply two names for the same excuse-required paper ballot",
+              "The absentee ballot needs a listed excuse; early mail is open to any voter",
               "The early mail ballot requires an excuse; the absentee ballot is no-excuse",
-              "Only the absentee ballot still exists",
+              "Only the absentee ballot still exists; early mail was later repealed",
             ],
             correctIndex: 1,
             explanation:
@@ -449,10 +449,10 @@ You use **one or the other** for a given election: a voter issued an early mail 
           {
             prompt: "What does New York's 'closed primary' rule require?",
             options: [
-              "Any voter may vote in any party's primary",
+              "Any registered voter may vote in any party's primary freely",
               "Only voters enrolled in a party may vote in that party's primary",
-              "Primaries are decided by the Legislature",
-              "There are no primaries in New York",
+              "Party primaries are decided by a vote of the State Legislature",
+              "There are no party primary elections at all in New York State",
             ],
             correctIndex: 1,
             explanation:
@@ -462,10 +462,10 @@ You use **one or the other** for a given election: a voter issued an early mail 
           {
             prompt: "Can an ordinary New York citizen put a new statewide law on the ballot by petition?",
             options: [
-              "Yes, with 5% of voters' signatures",
-              "Yes, but only in odd years",
-              "No. New York has no statewide citizen initiative; only the Legislature can refer statewide measures",
-              "Yes, through the county legislature",
+              "Yes, by collecting valid signatures from 5% of the registered state voters",
+              "Yes, but only during odd-numbered election years and by signed voter petition",
+              "No. New York has no citizen initiative; only the Legislature can refer measures",
+              "Yes, by filing a signed petition with your local county legislature clerk",
             ],
             correctIndex: 2,
             explanation:
@@ -475,10 +475,10 @@ You use **one or the other** for a given election: a voter issued an early mail 
           {
             prompt: "Starting with the 2026 cycle, what changed about how New York picks its Lieutenant Governor?",
             options: [
-              "The office was abolished",
-              "The Governor and Lieutenant Governor now run as a joint ticket from the primary onward (the separate LG primary was eliminated)",
-              "The Lieutenant Governor is now appointed by the courts",
-              "The Lieutenant Governor is now chosen by the Legislature",
+              "The Lieutenant Governor's office was abolished completely",
+              "The Governor and Lieutenant Governor now run as one joint ticket",
+              "The Lieutenant Governor is now appointed by the state courts",
+              "The Lieutenant Governor is now chosen by the state Legislature",
             ],
             correctIndex: 1,
             explanation:

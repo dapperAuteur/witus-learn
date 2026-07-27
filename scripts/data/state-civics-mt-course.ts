@@ -249,10 +249,10 @@ The takeaway: Montana combines a **short, part-time Legislature** with **strong 
           {
             prompt: "What is distinctive about Montana's 1972 constitution?",
             options: [
-              "It has no bill of rights",
-              "It guarantees a clean-and-healthful environment, strong privacy, and a right to know",
-              "It bans elections",
-              "It created a unicameral legislature",
+              "It contains no bill of rights protecting its citizens",
+              "It guarantees a clean environment and strong privacy",
+              "It bans statewide elections in odd-numbered years",
+              "It created a one-house unicameral state legislature",
             ],
             correctIndex: 1,
             explanation:
@@ -262,10 +262,10 @@ The takeaway: Montana combines a **short, part-time Legislature** with **strong 
           {
             prompt: "Which environmental guarantee does Montana's constitution include?",
             options: [
-              "A right to pollute freely",
+              "A right for industry to pollute the air freely",
               "A right to a clean and healthful environment",
-              "A ban on all industry",
-              "No environmental provisions",
+              "A constitutional ban on all mining and industry",
+              "No environmental protections anywhere in the text",
             ],
             correctIndex: 1,
             explanation:
@@ -275,10 +275,10 @@ The takeaway: Montana combines a **short, part-time Legislature** with **strong 
           {
             prompt: "How often and for how long does Montana's Legislature meet?",
             options: [
-              "Year-round",
-              "Every other year (odd years), for 90 legislative days",
-              "Once a decade",
-              "Only during emergencies",
+              "Year-round in a full-time professional legislature",
+              "Every other year, for up to 90 legislative days",
+              "Once each decade after the U.S. census count",
+              "Only when the Governor calls an emergency session",
             ],
             correctIndex: 1,
             explanation:
@@ -327,10 +327,10 @@ The takeaway: Montana combines a **short, part-time Legislature** with **strong 
           {
             prompt: "What can Montana citizens put on the ballot by initiative?",
             options: [
-              "Nothing",
+              "Nothing, because Montana has no initiative",
               "A statute or a constitutional amendment",
-              "Only local ordinances",
-              "Only tax cuts",
+              "Only local city and county ordinances",
+              "Only cuts to the state income tax rate",
             ],
             correctIndex: 1,
             explanation:
@@ -340,10 +340,10 @@ The takeaway: Montana combines a **short, part-time Legislature** with **strong 
           {
             prompt: "Which open-government rights shape Montana lawmaking?",
             options: [
-              "A right to secrecy",
-              "The 'right to know' and the 'right of participation'",
-              "A right to skip taxes",
-              "No such rights exist",
+              "A right to government secrecy and closed meetings",
+              "The 'right to know' and 'right of participation'",
+              "A right to skip paying all your state taxes",
+              "No open-government rights appear in the text",
             ],
             correctIndex: 1,
             explanation:
@@ -361,10 +361,10 @@ The takeaway: Montana combines a **short, part-time Legislature** with **strong 
           {
             prompt: "Why does this course tell you to VERIFY Montana's voting rules?",
             options: [
-              "Because Montana has no elections office",
-              "Because registration and ID rules have changed and been litigated and are run by county offices, so confirm at [sosmt.gov](https://sosmt.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Montana runs no statewide elections office",
+              "Because ID and registration rules keep changing",
+              "Because only the U.S. Congress sets state voting law",
+              "Because state election law is fixed by the courts",
             ],
             correctIndex: 1,
             explanation:

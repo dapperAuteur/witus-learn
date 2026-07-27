@@ -260,10 +260,10 @@ The practical effect: in New Jersey, **a great deal happens at the town level**,
           {
             prompt: "Why is New Jersey's Governor considered one of the strongest in the nation?",
             options: [
-              "The Governor also serves as Chief Justice",
-              "Many top officials (Attorney General, Secretary of State, Treasurer) are appointed by the Governor, not elected",
-              "The Governor can serve unlimited terms",
-              "The Governor writes court decisions",
+              "The Governor also serves as the state Chief Justice",
+              "Top officials are appointed by the Governor, not elected",
+              "The Governor may serve unlimited consecutive terms",
+              "The Governor personally writes all court decisions",
             ],
             correctIndex: 1,
             explanation:
@@ -286,10 +286,10 @@ The practical effect: in New Jersey, **a great deal happens at the town level**,
           {
             prompt: "How are New Jersey judges chosen?",
             options: [
-              "Elected by voters in partisan races",
-              "Nominated by the Governor and confirmed by the Senate; tenure to age 70 after reappointment",
-              "Elected by the Legislature",
-              "Chosen by a citizens' commission",
+              "Elected by voters in partisan statewide races",
+              "Nominated by the Governor, confirmed by the Senate",
+              "Elected directly by the full state Legislature",
+              "Chosen by an independent citizens' commission",
             ],
             correctIndex: 1,
             explanation:
@@ -312,10 +312,10 @@ The practical effect: in New Jersey, **a great deal happens at the town level**,
           {
             prompt: "Can New Jersey citizens put a new law on the ballot by petition?",
             options: [
-              "Yes, New Jersey has a strong initiative",
-              "No, New Jersey has no citizen initiative; only the Legislature can refer amendments to voters",
-              "Only in even years",
-              "Only for school budgets",
+              "Yes, New Jersey has a strong citizen initiative",
+              "No, there is no initiative; the Legislature refers",
+              "Yes, but only in even-numbered election years",
+              "Yes, but only for local school district budgets",
             ],
             correctIndex: 1,
             explanation:
@@ -325,10 +325,10 @@ The practical effect: in New Jersey, **a great deal happens at the town level**,
           {
             prompt: "What is a New Jersey gubernatorial 'conditional veto'?",
             options: [
-              "A veto that expires after a year",
-              "The Governor returns a bill with specific proposed changes for the Legislature to consider",
-              "A veto only the courts can issue",
-              "A veto of a federal law",
+              "A veto that automatically expires after one year",
+              "The Governor returns a bill with proposed changes",
+              "A veto that only the state's courts may issue",
+              "A veto that blocks a specific federal statute",
             ],
             correctIndex: 1,
             explanation:
@@ -338,10 +338,10 @@ The practical effect: in New Jersey, **a great deal happens at the town level**,
           {
             prompt: "What were New Jersey county boards called before 2021?",
             options: [
-              "Boards of Supervisors",
+              "The Board of County Supervisors",
               "The Board of Chosen Freeholders",
-              "County Councils",
-              "Parish Boards",
+              "The Board of County Selectmen",
+              "The Board of Parish Commissioners",
             ],
             correctIndex: 1,
             explanation:
@@ -351,10 +351,10 @@ The practical effect: in New Jersey, **a great deal happens at the town level**,
           {
             prompt: "In which years does New Jersey elect its Governor?",
             options: [
-              "The same year as the U.S. President",
-              "Odd-numbered years (e.g., 2025, 2029), separate from the presidential cycle",
-              "Every two years",
-              "Only in leap years",
+              "The same year as the U.S. presidential race",
+              "Odd-numbered years, not the presidential cycle",
+              "Every two years, with the full Assembly",
+              "Only in federal leap years, such as 2028",
             ],
             correctIndex: 1,
             explanation:
@@ -364,10 +364,10 @@ The practical effect: in New Jersey, **a great deal happens at the town level**,
           {
             prompt: "Why does this course tell you to VERIFY New Jersey's election details?",
             options: [
-              "Because New Jersey has no elections office",
-              "Because deadlines, early-voting days, and mail rules change and are run by county officials. Confirm at nj.gov/state/elections",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because New Jersey has no state elections office",
+              "Because deadlines and mail rules change by county",
+              "Because only the U.S. Congress sets state rules",
+              "Because every ballot in the state stays secret",
             ],
             correctIndex: 1,
             explanation:

@@ -265,10 +265,10 @@ The practical effect: in most of Missouri your county is a key unit, but if you 
           {
             prompt: "What is the 'Missouri Plan'?",
             options: [
-              "A state highway system",
-              "A method of choosing judges: merit-selection nomination, gubernatorial appointment, then retention elections",
-              "Missouri's tax code",
-              "A plan to split the state in two",
+              "A statewide plan for interstate highway construction",
+              "A way of choosing judges by merit, appointment, then a vote",
+              "Missouri's system for collecting income and sales tax",
+              "A plan to split Missouri into two entirely new states",
             ],
             correctIndex: 1,
             explanation:
@@ -278,10 +278,10 @@ The practical effect: in most of Missouri your county is a key unit, but if you 
           {
             prompt: "Why is the plan named for Missouri?",
             options: [
-              "Missouri banned it",
-              "Missouri adopted it first (1940) and many states copied it",
-              "It only works in Missouri",
-              "It was named by Congress",
+              "Missouri was the first state to ban the practice",
+              "Missouri adopted it first in 1940 and states copied it",
+              "It legally applies only inside Missouri's borders",
+              "It was named by a special act of the U.S. Congress",
             ],
             correctIndex: 1,
             explanation:
@@ -325,10 +325,10 @@ The practical effect: in most of Missouri your county is a key unit, but if you 
           {
             prompt: "What direct-democracy tools do Missouri citizens have?",
             options: [
-              "None",
+              "None; Missouri allows no direct-democracy tools",
               "Initiative (statutes and amendments) and referendum",
-              "Only recall of the Governor",
-              "Only advisory polls",
+              "Only the recall of the Governor and legislators",
+              "Only nonbinding advisory polls run by the state",
             ],
             correctIndex: 1,
             explanation:
@@ -338,10 +338,10 @@ The practical effect: in most of Missouri your county is a key unit, but if you 
           {
             prompt: "What is unusual about the City of St. Louis?",
             options: [
-              "It is the state capital",
-              "It is an independent city, not part of any county (separated from St. Louis County in 1876)",
-              "It has no government",
-              "It governs the whole state",
+              "It is the state capital and seat of government",
+              "It is an independent city, part of no county at all",
+              "It has no local government of its own at all",
+              "It governs the entire state from a single council",
             ],
             correctIndex: 1,
             explanation:
@@ -359,10 +359,10 @@ The practical effect: in most of Missouri your county is a key unit, but if you 
           {
             prompt: "What special vote does the Missouri Plan give citizens on many judges?",
             options: [
-              "A vote to set their salary",
+              "A public vote to set each judge's salary",
               "A nonpartisan yes/no retention vote",
-              "A vote to write their opinions",
-              "No vote at all",
+              "A vote to help write their court opinions",
+              "No binding vote of any kind at all",
             ],
             correctIndex: 1,
             explanation:
@@ -372,10 +372,10 @@ The practical effect: in most of Missouri your county is a key unit, but if you 
           {
             prompt: "Why does this course tell you to VERIFY Missouri's voting rules?",
             options: [
-              "Because Missouri has no elections office",
-              "Because photo-ID and early/absentee rules have changed and are run by county clerks (confirm at sos.mo.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Missouri runs no statewide elections office",
+              "Because photo-ID and absentee rules changed recently",
+              "Because only the U.S. Congress may set state rules",
+              "Because every ballot is kept secret and sealed",
             ],
             correctIndex: 1,
             explanation:

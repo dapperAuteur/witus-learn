@@ -252,10 +252,10 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
           {
             prompt: "What is distinctive about New Hampshire's House of Representatives?",
             options: [
-              "It has only 10 members",
-              "It has about 400 members, one of the largest legislative bodies in the English-speaking world",
-              "It is appointed by the Governor",
-              "It meets once a decade",
+              "It has only 10 members, fewer than any other state",
+              "About 400 members, among the largest legislatures",
+              "It is appointed by the Governor to four-year terms",
+              "It meets just once every ten years to pass a budget",
             ],
             correctIndex: 1,
             explanation:
@@ -274,9 +274,9 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
             prompt: "Which constitution governs New Hampshire, and how old is it?",
             options: [
               "The 1784 Constitution, the second-oldest still in use",
-              "The 1959 Constitution, the newest",
-              "The 1901 Constitution",
-              "It has no written constitution",
+              "The 1788 Constitution, adopted when it joined the Union",
+              "The 1901 Constitution, the newest one in New England",
+              "It has no written constitution, relying on tradition",
             ],
             correctIndex: 0,
             explanation:
@@ -286,10 +286,10 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
           {
             prompt: "What does New Hampshire's elected Executive Council do?",
             options: [
-              "Writes all laws",
-              "Approves the Governor's appointments, contracts, and pardons",
-              "Runs the public schools",
-              "Elects the Governor",
+              "Writes all the state's laws without the Legislature",
+              "Approves the Governor's appointments and contracts",
+              "Runs the public schools and sets the curriculum",
+              "Elects the Governor once the popular vote ends",
             ],
             correctIndex: 1,
             explanation:
@@ -307,10 +307,10 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
           {
             prompt: "What is the 'New Hampshire Advantage'?",
             options: [
-              "Free college for all",
-              "No broad-based state income tax on wages and no general state sales tax",
-              "The largest state budget",
-              "Mandatory voting",
+              "Free public college for every legal state resident",
+              "No state income tax on wages and no general sales tax",
+              "The single largest total state budget in the nation",
+              "Mandatory voting in every statewide general election",
             ],
             correctIndex: 1,
             explanation:
@@ -320,10 +320,10 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
           {
             prompt: "How are New Hampshire's judges chosen?",
             options: [
-              "Elected in partisan races",
-              "Nominated by the Governor, confirmed by the Executive Council, serving to age 70",
-              "Elected by the Legislature",
-              "Chosen by town meeting",
+              "Elected in statewide partisan judicial elections",
+              "Nominated by the Governor, confirmed by the Council",
+              "Elected directly by the full state Legislature",
+              "Chosen by a direct vote at each annual town meeting",
             ],
             correctIndex: 1,
             explanation:
@@ -333,10 +333,10 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
           {
             prompt: "What is an 'open town meeting' in New Hampshire?",
             options: [
-              "A closed legislative session",
-              "A gathering where any registered voter can debate and vote on the town budget and warrant articles",
-              "A meeting only for officials",
-              "A statewide referendum",
+              "A closed session open only to elected officials",
+              "Where any registered voter votes on the budget",
+              "A private meeting held only for the town selectmen",
+              "A statewide referendum held every other year",
             ],
             correctIndex: 1,
             explanation:
@@ -346,10 +346,10 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
           {
             prompt: "What is New Hampshire's protected role in presidential elections?",
             options: [
-              "It hosts the national convention",
-              "It holds the first-in-the-nation presidential primary, protected by state law",
-              "It chooses the President directly",
-              "It has no role",
+              "It hosts both major parties' national conventions",
+              "It holds the first-in-the-nation presidential primary",
+              "It chooses the President by a direct popular vote count",
+              "It plays no special role in presidential elections",
             ],
             correctIndex: 1,
             explanation:
@@ -359,10 +359,10 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
           {
             prompt: "Why does this course tell you to VERIFY New Hampshire's tax and primary details?",
             options: [
-              "Because New Hampshire has no government website",
-              "Because the interest-and-dividends tax is being phased out and the primary calendar shifts. Confirm at sos.nh.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because New Hampshire has no official government websites",
+              "Because the dividends tax is ending and the date shifts",
+              "Because only the U.S. Congress can set state taxes",
+              "Because every ballot cast in the state stays secret",
             ],
             correctIndex: 1,
             explanation:

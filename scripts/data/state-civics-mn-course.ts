@@ -257,10 +257,10 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
           {
             prompt: "Why does Minnesota often lead the nation in voter turnout?",
             options: [
-              "It requires everyone to vote by law",
-              "It was an early adopter of same-day (Election-Day) registration and offers easy voting",
-              "It has the smallest population",
-              "It only counts some votes",
+              "It legally requires every adult resident to vote",
+              "It adopted Election-Day voter registration early",
+              "It has the smallest population among all states",
+              "It counts only votes cast at in-person polls",
             ],
             correctIndex: 1,
             explanation:
@@ -270,10 +270,10 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
           {
             prompt: "What does 'DFL' stand for in Minnesota politics?",
             options: [
-              "Democratic Free Labor",
+              "Democratic Free-Labor Party",
               "Democratic-Farmer-Labor Party",
-              "Direct Federal League",
-              "Duluth-Fargo League",
+              "Democratic Federal League",
+              "Duluth Farmer-Labor League",
             ],
             correctIndex: 1,
             explanation:
@@ -283,10 +283,10 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
           {
             prompt: "What was unusual about the Minnesota Legislature from 1913 to 1973?",
             options: [
-              "It had only one house",
-              "It was officially nonpartisan: legislators served without party labels",
-              "It never met",
-              "It was appointed by the Governor",
+              "It had only one chamber, a unicameral legislature",
+              "It was officially nonpartisan, with no party labels",
+              "It never held a floor session during that period",
+              "It was appointed entirely by the sitting Governor",
             ],
             correctIndex: 1,
             explanation:
@@ -296,10 +296,10 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
           {
             prompt: "Which statewide officers do Minnesota voters elect?",
             options: [
-              "Only the Governor",
-              "Governor/Lt. Governor (joint ticket), Attorney General, Secretary of State, and State Auditor",
-              "Nine officials",
-              "The Legislature elects them all",
+              "Only the Governor and Lieutenant Governor, jointly elected",
+              "Governor, Attorney General, Secretary of State, Auditor",
+              "Nine separately elected statewide executive officials",
+              "The Legislature chooses all of them by joint ballot",
             ],
             correctIndex: 1,
             explanation:
@@ -309,10 +309,10 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
           {
             prompt: "How do most Minnesota judges first reach the bench?",
             options: [
-              "By legislative election",
-              "By gubernatorial appointment to fill a vacancy, then running as incumbents",
-              "By lifetime appointment",
-              "By lottery",
+              "By statewide election in openly partisan contests",
+              "By gubernatorial appointment to fill a mid-term vacancy",
+              "By lifetime appointment, as in the federal courts",
+              "By random lottery among licensed state attorneys",
             ],
             correctIndex: 1,
             explanation:
@@ -335,10 +335,10 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
           {
             prompt: "Can Minnesota citizens propose a new law by initiative?",
             options: [
-              "Yes, a strong initiative",
-              "No. Minnesota has no statewide initiative; the Legislature proposes amendments for voters",
-              "Only in even years",
-              "Only for taxes",
+              "Yes, through a strong citizen initiative process",
+              "No. Minnesota has no statewide initiative process",
+              "Yes, but only during even-numbered election years",
+              "Yes, but only for state tax and budget measures",
             ],
             correctIndex: 1,
             explanation:
@@ -348,10 +348,10 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
           {
             prompt: "Why does leaving a Minnesota amendment question blank effectively count as a 'no'?",
             options: [
-              "Because blanks are discarded",
-              "Because an amendment needs a majority of ALL voters in the election, not just those marking the question",
-              "Because only the Governor counts blanks",
-              "Because blanks are counted as 'yes'",
+              "Because blank ballots are discarded before counting",
+              "Because it needs a majority of everyone voting that day",
+              "Because only the Governor may certify blank questions",
+              "Because unmarked questions are counted as yes votes",
             ],
             correctIndex: 1,
             explanation:
@@ -361,10 +361,10 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
           {
             prompt: "Which regional body is distinctive to Minnesota's Twin Cities area?",
             options: [
-              "The Governor's Council",
-              "The Metropolitan Council (regional planning and transit)",
-              "The Board of Chosen Freeholders",
-              "The Permanent Fund",
+              "The Governor's Regional Planning Council",
+              "The Metropolitan Council for regional transit",
+              "The Board of Chosen Freeholders for the region",
+              "The Permanent University Trust Fund board",
             ],
             correctIndex: 1,
             explanation:
@@ -374,10 +374,10 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
           {
             prompt: "Why does this course tell you to VERIFY Minnesota's voting rules?",
             options: [
-              "Because Minnesota has no elections office",
-              "Because registration and absentee rules change and are administered by county/city officials, confirm at [sos.mn.gov](https://sos.mn.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Minnesota keeps no central elections office",
+              "Because absentee and registration rules change locally",
+              "Because only the U.S. Congress may set voting rules",
+              "Because ballots are secret and cannot be published",
             ],
             correctIndex: 1,
             explanation:

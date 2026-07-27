@@ -294,10 +294,10 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
           {
             prompt: "What is 'the Oregon System'?",
             options: [
-              "A public transit network",
-              "The 1902 citizen initiative and referendum, copied by states nationwide",
-              "Oregon's tax code",
-              "A judicial appointment method",
+              "A statewide public transit and commuter light-rail network",
+              "The 1902 citizen initiative and referendum, copied nationwide",
+              "Oregon's statewide personal and corporate income tax code",
+              "A judicial appointment method used by the Governor's office",
             ],
             correctIndex: 1,
             explanation:
@@ -307,10 +307,10 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
           {
             prompt: "What voting 'first' did Oregon achieve in 1998?",
             options: [
-              "The first online voting",
+              "The first state to allow fully secure online voting",
               "The first state to conduct all elections entirely by mail",
-              "The first to ban absentee voting",
-              "The first to require property ownership",
+              "The first state to ban all in-person absentee voting",
+              "The first state to require property ownership to vote",
             ],
             correctIndex: 1,
             explanation:
@@ -321,9 +321,9 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
             prompt: "What did Oregon pioneer in 2016?",
             options: [
               "Automatic voter registration ('Oregon Motor Voter')",
-              "A state income tax",
-              "Ranked-choice voting statewide",
-              "A unicameral legislature",
+              "A brand-new statewide personal income tax law",
+              "Ranked-choice voting for all statewide offices",
+              "A single-chamber unicameral state legislature",
             ],
             correctIndex: 0,
             explanation:
@@ -333,10 +333,10 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
           {
             prompt: "Who is first in line to succeed Oregon's Governor?",
             options: [
-              "The Lieutenant Governor",
-              "The Secretary of State (Oregon has no Lieutenant Governor)",
-              "The Speaker of the House",
-              "The Chief Justice",
+              "The separately elected Lieutenant Governor of Oregon",
+              "The Secretary of State, who Oregon elects separately",
+              "The Speaker of the Oregon House of Representatives",
+              "The Chief Justice of the Oregon Supreme Court",
             ],
             correctIndex: 1,
             explanation:
@@ -359,10 +359,10 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
           {
             prompt: "What is a legislative 'walkout' in Oregon?",
             options: [
-              "A labor strike by state workers",
-              "Legislators denying the two-thirds quorum by leaving, blocking action",
-              "A vote to expel a member",
-              "A type of ballot measure",
+              "A coordinated labor strike by all state workers",
+              "Legislators denying the two-thirds quorum by leaving",
+              "A formal floor vote to expel a sitting member",
+              "A special type of citizen-filed ballot measure",
             ],
             correctIndex: 1,
             explanation:
@@ -372,9 +372,9 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
           {
             prompt: "How are Oregon's judges chosen?",
             options: [
-              "Appointed for life by the Governor",
-              "Elected on a nonpartisan ballot (Supreme Court justices to 6-year terms)",
-              "Elected by the Legislature",
+              "Appointed for life by the Governor with no vote",
+              "Elected on a nonpartisan ballot to 6-year terms",
+              "Elected directly by the full state Legislature",
               "Chosen by a citizens' commission with no election",
             ],
             correctIndex: 1,
@@ -385,10 +385,10 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
           {
             prompt: "What does Oregon's 1973 land-use law (SB 100) require?",
             options: [
-              "That all land be publicly owned",
-              "Urban growth boundaries that concentrate development and protect farmland and forests",
-              "A ban on all new housing",
-              "That counties merge into the state",
+              "That all rural farm land be publicly owned by the state",
+              "Urban growth boundaries that protect farmland and forests",
+              "A total statewide ban on building any new homes at all",
+              "That all Oregon counties merge into the state government",
             ],
             correctIndex: 1,
             explanation:
@@ -400,7 +400,7 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
             options: [
               "Appointment and confirmation",
               "Initiative and referendum",
-              "Veto and override",
+              "Veto and legislative override",
               "Census and apportionment",
             ],
             correctIndex: 1,
@@ -411,10 +411,10 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
           {
             prompt: "Why does this course tell you to VERIFY Oregon's voting and land-use rules?",
             options: [
-              "Because Oregon has no elections office",
-              "Because registration/ballot details are run by county clerks and land-use rules recur on ballots and change, confirm at sos.oregon.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Oregon has no statewide elections office or public website at all",
+              "Because county clerks run registration and land-use rules recur on ballots",
+              "Because only the U.S. Congress in Washington sets all of these voting rules",
+              "Because voting is secret and no official state rules are ever posted",
             ],
             correctIndex: 1,
             explanation:

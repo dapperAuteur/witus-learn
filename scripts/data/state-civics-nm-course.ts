@@ -235,10 +235,10 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
           {
             prompt: "What is distinctive about New Mexico's 1912 constitution?",
             options: [
-              "It bans all languages but English",
-              "It contains special protections for Spanish-speaking citizens, making the state effectively bilingual",
-              "It has no bill of rights",
-              "It created a unicameral legislature",
+              "It bans every language except English statewide",
+              "It protects Spanish-speaking citizens' civic rights",
+              "It contains no bill of rights at all for citizens",
+              "It created a one-house unicameral legislature",
             ],
             correctIndex: 1,
             explanation:
@@ -248,10 +248,10 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
           {
             prompt: "Which sovereign governments exist within New Mexico?",
             options: [
-              "None",
-              "Many tribal nations, including 19 Pueblos and the Navajo Nation",
-              "Only city governments",
-              "Only the federal government",
+              "None at all; there are no tribal governments",
+              "Tribal nations: 19 Pueblos and the Navajo Nation",
+              "Only municipal and city governments hold power",
+              "Only the U.S. federal government is sovereign",
             ],
             correctIndex: 1,
             explanation:
@@ -261,10 +261,10 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
           {
             prompt: "What is unique about New Mexico's legislature?",
             options: [
-              "It has 400 members",
-              "It is the only fully volunteer (unpaid) state legislature: no salary, only per diem",
-              "It meets year-round",
-              "It is appointed",
+              "It has 400 members, the largest in the country",
+              "It is the only unpaid legislature: per diem only",
+              "It meets all year long with no recess at all",
+              "It is appointed directly by the sitting Governor",
             ],
             correctIndex: 1,
             explanation:
@@ -274,10 +274,10 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
           {
             prompt: "How long are New Mexico's legislative sessions?",
             options: [
-              "Year-round",
-              "60 days in odd years and 30 days (mostly budget) in even years",
-              "90 days every other year",
-              "45 days annually",
+              "A full year-round session with no break",
+              "60 days in odd years, 30 days in even years",
+              "90 days in every other calendar year only",
+              "A flat 45 days in every single calendar year",
             ],
             correctIndex: 1,
             explanation:
@@ -287,10 +287,10 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
           {
             prompt: "How does a New Mexico judge reach and keep the bench?",
             options: [
-              "Lifetime appointment with no review",
-              "Appointed by the Governor, then wins a partisan election, then faces retention votes",
-              "Elected by the Legislature",
-              "Chosen by lottery",
+              "A lifetime appointment with no later review",
+              "Appointed, then partisan election, then retention",
+              "Elected directly by the full state Legislature",
+              "Chosen at random through a public lottery draw",
             ],
             correctIndex: 1,
             explanation:
@@ -301,9 +301,9 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
             prompt: "Which powerful statewide office reflects New Mexico's vast public lands?",
             options: [
               "The Commissioner of Public Lands",
-              "The Chief Justice",
-              "The Speaker of the House",
-              "The Adjutant General",
+              "The Chief Justice of the state",
+              "The Speaker of the state House",
+              "The state's Adjutant General",
             ],
             correctIndex: 0,
             explanation:
@@ -313,10 +313,10 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
           {
             prompt: "Can New Mexico citizens start a general law by initiative?",
             options: [
-              "Yes, a strong initiative",
-              "No, there is no statewide initiative; the Legislature proposes amendments for voters",
-              "Only in even years",
-              "Only in Spanish",
+              "Yes, through a strong citizen initiative",
+              "No, only the Legislature proposes amendments",
+              "Yes, but only in even-numbered election years",
+              "Yes, but only for Spanish-language laws",
             ],
             correctIndex: 1,
             explanation:
@@ -334,10 +334,10 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
           {
             prompt: "Which voting feature does New Mexico offer?",
             options: [
-              "No registration ever",
-              "Same-day registration, early and absentee voting (plus constitutional protection regardless of English/Spanish literacy)",
-              "Voting only for landowners",
-              "In-person Election-Day voting only",
+              "No voter registration is ever required here",
+              "Same-day registration, early and absentee voting",
+              "Voting is limited to property-owning landowners",
+              "In-person Election-Day voting only, no mail",
             ],
             correctIndex: 1,
             explanation:
@@ -347,10 +347,10 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
           {
             prompt: "Why does this course tell you to VERIFY New Mexico's voting rules?",
             options: [
-              "Because New Mexico has no elections office",
-              "Because registration and early/absentee rules are run by county clerks and change; confirm at sos.nm.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because New Mexico has no state elections office",
+              "Because county clerks run and change these rules",
+              "Because only the U.S. Congress sets voting rules",
+              "Because every ballot in the state stays secret",
             ],
             correctIndex: 1,
             explanation:
