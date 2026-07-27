@@ -381,9 +381,9 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
           {
             prompt: "Most first-time candidates run for which kind of office, and why?",
             options: [
-              "President: it gets the most attention",
-              "A local or state office: smaller electorate, lower cost, more winnable",
-              "U.S. Senate: the rules are simplest",
+              "President: it gets the very most attention",
+              "A local or state office: smaller and winnable",
+              "U.S. Senate: its rules are the simplest ones",
               "It doesn't matter; all races cost the same",
             ],
             correctIndex: 1,
@@ -395,9 +395,9 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
             prompt: "Are the age and residency rules to run for a STATE legislature the same in every state?",
             options: [
               "Yes: the Constitution sets one nationwide rule",
-              "No: each state sets its own, so they vary; check NCSL or your election office",
-              "Yes: the FEC sets them",
-              "Only the age varies, never residency",
+              "No: each state sets its own, so they vary",
+              "Yes: the federal FEC sets them all directly",
+              "Only the age varies, and never residency",
             ],
             correctIndex: 1,
             explanation:
@@ -415,10 +415,10 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
           {
             prompt: "Who sets ballot-access requirements like petition signature counts and filing fees?",
             options: [
-              "The FEC, uniformly nationwide",
-              "The states: so the exact requirements vary by state and office",
+              "The FEC, uniformly across the whole nation",
+              "The states, so requirements vary by state",
               "The U.S. Constitution, with one fixed number",
-              "Political parties only",
+              "Only the political parties themselves, alone",
             ],
             correctIndex: 1,
             explanation:
@@ -428,10 +428,10 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
           {
             prompt: "At what point do you become a 'candidate' under FEC rules for a federal race?",
             options: [
-              "When you announce on social media",
+              "When you first announce on social media",
               "When you raise or spend more than $5,000",
-              "When you win a primary",
-              "When you turn 25",
+              "When you win your first party primary",
+              "When you turn twenty-five years of age",
             ],
             correctIndex: 1,
             explanation:
@@ -441,10 +441,10 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
           {
             prompt: "A campaign for a state legislature or city council is governed by…",
             options: [
-              "The FEC, just like a federal race",
-              "State (and sometimes local) law, not the FEC",
-              "No rules at all",
-              "The U.S. Senate",
+              "The FEC, just exactly like a federal race",
+              "State and sometimes local law, not the FEC",
+              "No campaign rules apply to it whatsoever",
+              "Only the full U.S. Senate itself governs it",
             ],
             correctIndex: 1,
             explanation:
@@ -467,10 +467,10 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
           {
             prompt: "What is the purpose of campaign finance disclosure?",
             options: [
-              "To cap how much anyone can raise",
-              "To make the money a campaign raises and spends publicly visible",
-              "To choose the winner",
-              "To replace the need for a treasurer",
+              "To cap how much anyone can possibly raise",
+              "To make campaign money publicly visible",
+              "To directly choose the eventual winner",
+              "To fully replace the need for a treasurer",
             ],
             correctIndex: 1,
             explanation:
@@ -480,10 +480,10 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
           {
             prompt: "On a typical local campaign, the workhorse of voter outreach is…",
             options: [
-              "National TV ads",
-              "Direct voter contact: door-knocking and phone calls",
+              "Costly national primetime TV ad buys",
+              "Direct voter contact: doors and phones",
               "Buying the voter file from a foreign vendor",
-              "Waiting for the press to call",
+              "Just waiting for the local press to call",
             ],
             correctIndex: 1,
             explanation:
@@ -493,10 +493,10 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
           {
             prompt: "Are election-night results official, and do a candidate's duties end on Election Day?",
             options: [
-              "Yes and yes: it's all over that night",
-              "No: results are unofficial until canvassed/certified, and reporting and committee duties continue after the election",
-              "Results are official, but you can stop filing reports",
-              "Only winners have any further duties",
+              "Yes and yes: it is all fully over that night",
+              "No: results are unofficial until certified",
+              "Results are official, but stop filing reports",
+              "Only the winners have any real further duties",
             ],
             correctIndex: 1,
             explanation:

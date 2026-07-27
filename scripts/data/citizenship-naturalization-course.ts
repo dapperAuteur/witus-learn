@@ -298,10 +298,10 @@ Because naturalization applications involve money, deadlines, and immigration st
           {
             prompt: "Under the 14th Amendment, who is a U.S. citizen at birth?",
             options: [
-              "Only children of U.S. citizens",
-              "Anyone born or naturalized in the U.S. and subject to its jurisdiction",
-              "Only children born in a hospital",
-              "Nobody; citizenship is only granted by naturalization",
+              "Only children who have at least one U.S. citizen parent at birth",
+              "Anyone born or naturalized here and subject to U.S. jurisdiction",
+              "Only children physically born inside a U.S. hospital or clinic",
+              "Nobody; U.S. citizenship is only ever granted through naturalization",
             ],
             correctIndex: 1,
             explanation:
@@ -311,10 +311,10 @@ Because naturalization applications involve money, deadlines, and immigration st
           {
             prompt: "Which 1898 Supreme Court case confirmed birthright citizenship applies even when a child's parents are not citizens?",
             options: [
-              "Marbury v. Madison",
+              "Dred Scott v. Sandford",
               "United States v. Wong Kim Ark",
-              "Trump v. Barbara",
-              "Plessy v. Ferguson",
+              "Ozawa v. United States",
+              "Fong Yue Ting v. United States",
             ],
             correctIndex: 1,
             explanation:
@@ -324,10 +324,10 @@ Because naturalization applications involve money, deadlines, and immigration st
           {
             prompt: "Under the Child Citizenship Act of 2000 (INA § 320), how can a child under 18 automatically become a citizen after birth?",
             options: [
-              "By passing the civics test",
-              "By being a lawful permanent resident in the legal and physical custody of a U.S. citizen parent",
-              "By turning 18 while living in the U.S.",
-              "It is not possible without a separate application",
+              "By passing the standard USCIS civics and English test on their own",
+              "A permanent resident in the legal and physical custody of a citizen parent",
+              "By turning 18 while continuously residing inside the United States",
+              "It is never possible without a separate naturalization application",
             ],
             correctIndex: 1,
             explanation:
@@ -337,10 +337,10 @@ Because naturalization applications involve money, deadlines, and immigration st
           {
             prompt: "What is the general permanent-residence requirement to naturalize, and how is it shorter for some applicants?",
             options: [
-              "10 years generally; 5 years if married to a citizen",
-              "5 years generally; 3 years if married to and living with a U.S. citizen the whole time",
-              "1 year for everyone",
-              "There is no residence requirement",
+              "10 years generally; 5 years if you are married to a U.S. citizen",
+              "5 years generally; 3 years if married to and living with a citizen",
+              "Exactly 1 year of permanent residence is required for every applicant",
+              "There is no permanent-residence time requirement at all to naturalize",
             ],
             correctIndex: 1,
             explanation:
@@ -350,10 +350,10 @@ Because naturalization applications involve money, deadlines, and immigration st
           {
             prompt: "Which of these is the correct order of the last two major steps in naturalization?",
             options: [
-              "Take the Oath, then receive a decision",
-              "Receive a decision, then (if approved) take the Oath of Allegiance",
-              "Take the civics test, then file Form N-400",
-              "Receive a Certificate of Naturalization, then apply",
+              "Take the Oath of Allegiance first, then receive the USCIS decision",
+              "Receive the decision, then if approved take the Oath of Allegiance",
+              "Take the civics and English test first, then file your Form N-400",
+              "Receive the Certificate of Naturalization first, then apply to USCIS",
             ],
             correctIndex: 1,
             explanation:
@@ -376,10 +376,10 @@ Because naturalization applications involve money, deadlines, and immigration st
           {
             prompt: "When does a naturalization applicant actually become a U.S. citizen?",
             options: [
-              "The day Form N-400 is filed",
-              "The day the interview is scheduled",
-              "When they take the Oath of Allegiance at a naturalization ceremony",
-              "The day they pass the civics test",
+              "The day their Form N-400 application is officially filed",
+              "The day their naturalization interview is first scheduled",
+              "When they take the Oath of Allegiance at the ceremony",
+              "The day they pass the civics and English portions of the test",
             ],
             correctIndex: 2,
             explanation:
@@ -389,10 +389,10 @@ Because naturalization applications involve money, deadlines, and immigration st
           {
             prompt: "Which additional rule applies only to running for President or Vice President, not to other elected offices?",
             options: [
-              "Must be a naturalized citizen",
-              "Must be a \"natural born Citizen\" (U.S. Const. art. II, § 1)",
-              "Must have passed the civics test twice",
-              "Must be a lawful permanent resident",
+              "Must be a naturalized citizen who has held a U.S. passport",
+              "Must be a \"natural born Citizen\" per the Constitution",
+              "Must have personally passed the civics test at least twice",
+              "Must be a lawful permanent resident for at least ten years",
             ],
             correctIndex: 1,
             explanation:
@@ -402,10 +402,10 @@ Because naturalization applications involve money, deadlines, and immigration st
           {
             prompt: "In the United States, who is legally authorized to give immigration legal advice?",
             options: [
-              "Any notary public, including a \"notario público\"",
+              "Any notary public, including one who is a \"notario público\"",
               "Only an attorney or a DOJ-recognized accredited representative",
               "Anyone who has been through the naturalization process themselves",
-              "Any USCIS employee you speak with by phone",
+              "Any USCIS employee you happen to speak with over the phone",
             ],
             correctIndex: 1,
             explanation:

@@ -101,8 +101,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What is the best way to think about a health metric, based on this module?",
             "options": [
-              "A grade you pass or fail each day, like a test score",
-              "An invisible body signal turned into a number you can watch and act on",
+              "A grade you pass or fail each day, like a school test",
+              "A hidden body signal turned into a number to track",
               "A guess about how your body feels on a given day",
               "A score you should try to beat every single day"
             ],
@@ -145,10 +145,10 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What does the research say about a higher resting heart rate and how long people live?",
             "options": [
-              "A higher resting heart rate is linked to a higher risk of death, so a lower one tends to track with a longer life",
-              "Resting heart rate has no link to how long people live",
-              "A higher resting heart rate is linked to a lower risk of death",
-              "Only a very low resting heart rate, under forty, is linked to a longer life"
+              "A higher resting rate links to a higher risk of death",
+              "Resting heart rate has no link to how long you live",
+              "A higher resting rate links to a lower risk of death",
+              "Only a resting rate under forty is linked to long life"
             ],
             "correctIndex": 0,
             "explanation": "A large review found a higher resting heart rate is linked to a higher risk of death from all causes and from heart disease, so a lower resting heart rate tends to track with a longer life. The claim that there is no link is wrong, the third option reverses the real direction, and the lesson never sets a special cutoff under forty for living longer.\n\nReference: (Zhang et al., 2016a)"
@@ -156,9 +156,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "Where did the famous ten thousand steps a day goal actually come from?",
             "options": [
-              "A long-term government health study",
-              "A nineteen sixties marketing slogan from a Japanese pedometer company",
-              "The National Sleep Foundation",
+              "A long-term government-funded health study",
+              "A nineteen sixties Japanese pedometer ad slogan",
+              "A report from the National Sleep Foundation",
               "A meta-analysis of fifteen international step studies"
             ],
             "correctIndex": 1,
@@ -190,7 +190,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What is the weekly activity target, and how do vigorous minutes count toward it?",
             "options": [
               "About thirty minutes of moderate effort a week, with vigorous minutes counting the same as moderate",
-              "About one hundred fifty to three hundred minutes of moderate effort, or seventy-five to one hundred fifty of vigorous, with one vigorous minute worth about two moderate",
+              "About one hundred fifty to three hundred moderate minutes, vigorous minutes worth double",
               "About five hundred minutes of moderate effort only, with no credit for vigorous effort",
               "About seventy-five minutes of moderate effort, with vigorous minutes counting as half a moderate minute"
             ],
@@ -200,10 +200,10 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "According to the module, which pattern in your first week of data counts as a red flag worth a closer look?",
             "options": [
-              "One single morning where your resting heart rate is higher than usual",
-              "Sleep efficiency below eighty percent, since most healthy people stay above ninety percent",
-              "A resting heart rate that matches the population average online",
-              "Walking a few hundred steps fewer than the day before"
+              "One morning your resting heart rate reads higher",
+              "Sleep efficiency dropping below eighty percent",
+              "A resting heart rate matching the online average",
+              "Walking a few hundred steps fewer than yesterday"
             ],
             "correctIndex": 1,
             "explanation": "Sleep efficiency dropping below eighty percent is a red flag, since most healthy people stay above ninety percent. A single odd morning is normal noise, not a red flag, matching a population average is not a warning sign at all, and a small day-to-day step dip is far short of the sharp activity drop lasting more than three days that the lesson flags.\n\nReference: (Reed & Sacco, 2016)"
@@ -303,9 +303,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "When is the heart rate reading on your wrist the most trustworthy?",
             "options": [
-              "During a hard sprint",
+              "During a hard, all-out sprint effort",
               "At rest and during easy activity",
-              "Right after eating"
+              "Right after a big, heavy meal"
             ],
             "correctIndex": 1,
             "explanation": "Wrist heart rate is reasonably accurate at rest and during easy activity, so your morning resting reading is one you can use. During a hard sprint it gets worse, because a pumping arm and sweaty skin make the wrist sensor struggle. Eating is not what drives the accuracy of the reading, so that option is wrong.\n\nReference: (Germini et al., 2022)"
@@ -324,9 +324,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "According to the module, what can smartwatches do regarding heart rhythm?",
             "options": [
-              "Replace a doctor's diagnosis",
-              "Flag an irregular heart rhythm with measured accuracy",
-              "Measure calorie burn with high precision"
+              "Fully replace a licensed doctor's diagnosis",
+              "Flag an irregular rhythm, measured accuracy",
+              "Measure calorie burn with pinpoint precision"
             ],
             "correctIndex": 1,
             "explanation": "A review pooling many studies found that smartwatches can flag an irregular heart rhythm with measured accuracy. They do not replace a doctor's diagnosis, since flagging is not the same as a full medical diagnosis. They also do not measure calorie burn precisely, because energy expenditure is the least accurate number on any device.\n\nReference: (Nazarian et al., 2021)"
@@ -335,8 +335,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What is sleep efficiency?",
             "options": [
               "The total number of hours you spend in bed",
-              "The share of your time in bed that you actually spend asleep",
-              "How many times you wake up in the night"
+              "The share of time in bed you spend asleep",
+              "How many separate times you wake in the night"
             ],
             "correctIndex": 1,
             "explanation": "Sleep efficiency is the share of time in bed you actually spend asleep, found by dividing minutes asleep by minutes in bed and turning it into a percentage. Total hours in bed is just the denominator, not the efficiency itself. The number of times you wake is related to sleep quality but is not the definition of sleep efficiency."
@@ -344,9 +344,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "You slept the same way two nights in a row, but your device counted forty extra minutes of reading in bed on the second night, and your sleep efficiency read lower. Why?",
             "options": [
-              "The device sensor broke overnight",
-              "The denominator grew, so the same sleep became a smaller share of the night",
-              "You actually slept worse the second night"
+              "The device's sleep sensor broke down overnight",
+              "The time-in-bed denominator simply grew larger",
+              "You actually slept much worse the second night"
             ],
             "correctIndex": 1,
             "explanation": "Sleep efficiency depends heavily on the denominator, which is how you define time in bed. Counting the extra reading time as time in bed made the same amount of sleep a smaller share, so the percentage dropped. The sensor did not break, since the change is purely in the math. You did not sleep worse either, because the night itself was identical.\n\nReference: (Reed & Sacco, 2016)"
@@ -438,9 +438,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "An N-of-1 study is best described as which of the following?",
             "options": [
-              "A study that compares you against thousands of other people of your age",
-              "A study with only one person in it, where you compare your data to your own past",
-              "A study run by exactly one doctor on a single clinic's patients"
+              "A study comparing you to thousands of same-age peers",
+              "A study of one person, compared to your own past",
+              "A study run by exactly one doctor at one clinic"
             ],
             "correctIndex": 1,
             "explanation": "Correct: An N-of-1 is a study of one person, where you become your own control group and compare your data to your own past self rather than to a crowd. Option 1 is wrong because comparing you to a population is the opposite of N-of-1, that is a population average. Option 3 is wrong because the 'one' in N-of-1 refers to the number of subjects, not the number of doctors.\n\nReference: (Lillie et al., 2011)"
@@ -448,9 +448,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "According to the three-part recipe for a personal trial, what are the three steps?",
             "options": [
-              "Change three things together, skip the baseline, and measure once",
+              "Change three things at once, skip a baseline, measure once",
               "Pick a population average, match it, then keep tracking",
-              "Change one thing at a time, measure a baseline first, and repeat to confirm the pattern"
+              "Change one thing, measure a baseline first, then repeat"
             ],
             "correctIndex": 2,
             "explanation": "Correct: The recipe is change one variable, measure a baseline first, and repeat to confirm. Option 1 is wrong because changing several things at once means you cannot tell which one moved the needle, and a baseline is required. Option 2 is wrong because the whole point of an N-of-1 is to use your own baseline, not a population average.\n\nReference: (Davidson et al., 2021)"
@@ -479,9 +479,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "On a simple line chart of one health metric over time, what does the bottom edge running left to right usually show?",
             "options": [
-              "The size of your metric",
-              "The trend of the whole line",
-              "Time, with each step to the right being one more day"
+              "The size or height of your chosen metric",
+              "The overall trend of the whole plotted data line",
+              "Time, each step to the right is one more day"
             ],
             "correctIndex": 2,
             "explanation": "Correct: The bottom edge, the horizontal axis, runs left to right and shows time, with each step to the right being one more day. Option 1 is wrong because the size of your metric is the side edge, the vertical axis. Option 2 is wrong because the trend is the shape the line makes over time, not the bottom edge itself."
@@ -489,9 +489,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "When does a change on your chart count as a real shift rather than normal wobble?",
             "options": [
-              "When the line moves to a new level and stays there for several days in a row",
-              "When any single day spikes higher than the day before",
-              "When one reading lands outside your normal band for just one day"
+              "When the line holds a new level for several days",
+              "When any single day spikes above the day before",
+              "When one reading leaves your normal band for one day"
             ],
             "correctIndex": 0,
             "explanation": "Correct: A real shift is a move to a new level that holds for several days in a row, usually three to five. Option 2 is wrong because a single spike is just day-to-day noise. Option 3 is wrong because one day outside your band is almost always noise, not a real change."
@@ -500,7 +500,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What is a moving average, and why does it 'move'?",
             "options": [
               "The single highest reading from your last week, updated whenever a new high appears",
-              "The average of your last several days, recomputed each day as you drop the oldest day and add the newest",
+              "The average of recent days, dropping the oldest and adding the newest each day",
               "Your all-time average since you started tracking, which slowly climbs over the years"
             ],
             "correctIndex": 1,
@@ -509,9 +509,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "For daily health metrics, why is a seven-day window often the sweet spot for a moving average?",
             "options": [
-              "It is the longest window any fitness app will allow",
-              "It smooths the daily jitter and also cancels the weekday versus weekend pattern, without hiding a real change for too long",
-              "It reacts to every single day so you never miss a spike"
+              "It is simply the longest window any fitness app allows",
+              "It smooths daily jitter, cancels weekday-weekend bias",
+              "It reacts to each single day so you never miss a spike"
             ],
             "correctIndex": 1,
             "explanation": "Correct: Seven days smooths daily noise and cancels the weekday versus weekend pattern, while still letting a real trend show through without a long delay. Option 1 is wrong because windows can be much longer, like thirty days. Option 3 is wrong because the purpose of smoothing is to stop reacting to each single day, not to react to every spike."
@@ -582,9 +582,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What does the N in an N-of-1 experiment actually stand for?",
             "options": [
-              "The number of weeks the test runs",
-              "The number of people in the study, which here is one",
-              "The number of changes you make at once",
+              "The number of weeks the whole test period runs",
+              "The number of people in the study, here one",
+              "The number of changes you make all at once",
               "The number of times you measure each day"
             ],
             "correctIndex": 1,
@@ -593,9 +593,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "Your neighbor changes his bedtime, his afternoon caffeine, and his pillow all in the same week, then says he found what fixed his sleep. What is the problem with his approach?",
             "options": [
-              "He did not track his sleep for long enough",
-              "He used a tracker that is not accurate",
-              "He changed more than one thing, so he cannot tell which change mattered"
+              "He did not track his sleep for nearly long enough here",
+              "He used a tracker that is not very accurate here",
+              "He changed three things, so no single cause is clear"
             ],
             "correctIndex": 2,
             "explanation": "Correct: changing several things at once means you cannot tell which one moved the result, which breaks the experiment. Wrong: the lessons say nothing about his tracking length being the issue here; the core flaw is the multiple changes. Wrong: tracker accuracy is not the problem in this example; even a perfect tracker could not untangle three changes made together."
@@ -614,9 +614,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What weekly activity target do the US Physical Activity Guidelines suggest?",
             "options": [
-              "About 300 to 450 minutes of moderate activity a week, with nothing short counting",
-              "About 60 minutes of vigorous activity a day, every day",
-              "About 150 to 300 minutes of moderate, or 75 to 150 minutes of vigorous activity a week, and activity of any length counts"
+              "About 300 to 450 moderate minutes a week, with nothing short counting",
+              "About 60 minutes of vigorous activity a day, every single day",
+              "About 150 to 300 moderate or 75 to 150 vigorous minutes, any length"
             ],
             "correctIndex": 2,
             "explanation": "Correct: the guidelines suggest about 150 to 300 minutes of moderate or 75 to 150 minutes of vigorous activity a week, and activity of any length counts. Wrong: 300 to 450 moderate minutes overstates the range and the lessons say short bursts do count, so 'nothing short counting' is false. Wrong: 60 minutes of vigorous every day is not the stated target.\n\nReference: (Piercy et al., 2018)"
@@ -624,10 +624,10 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What is the refined estimate for your maximum heart rate?",
             "options": [
-              "220 minus your age, exactly",
-              "About 208 minus 0.7 times your age, and it is still just an estimate",
-              "About 200 minus 0.5 times your age",
-              "Your resting heart rate times three"
+              "Exactly 220 minus your current age, no rounding at all",
+              "About 208 minus 0.7 times age, still an estimate",
+              "About 200 minus 0.5 times your current age",
+              "Your resting heart rate multiplied by three"
             ],
             "correctIndex": 1,
             "explanation": "Correct: the refined estimate is about 208 minus 0.7 times your age, and the lessons stress it is still an estimate, not an exact number. Wrong: 220 minus your age is the older rule of thumb that researchers refined. Wrong: 200 minus 0.5 times age is a made-up variant. Wrong: resting heart rate times three is not how max heart rate is estimated.\n\nReference: (Tanaka et al., 2001)"
@@ -656,9 +656,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "You set your heart-rate zones, then take a real brisk walk and your watch counts zero moderate minutes. What is the most likely fix?",
             "options": [
-              "Your zone numbers are set too high, so lower them and test the walk again",
-              "Your zone numbers are set too low, so raise them",
-              "Your battery is too low to track effort"
+              "Your zone numbers are set too high, so lower them",
+              "Your zone numbers are set too low, so raise them up",
+              "Your battery is far too low to track your effort"
             ],
             "correctIndex": 0,
             "explanation": "Correct: if a genuine brisk walk counts nothing, your moderate threshold was set too high, so you lower the numbers and retest. Wrong: raising the numbers would make it even harder to register moderate effort, the opposite of the fix. Wrong: battery level is not the calibration issue the lessons describe."
@@ -666,9 +666,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "In an N-of-1 experiment, how long should your baseline period be before you make any change?",
             "options": [
-              "Just 1 to 2 days",
-              "At least 7 days of living normally",
-              "About 30 days"
+              "Just 1 or 2 short days of tracking",
+              "At least 7 days of normal living",
+              "About 30 full days of tracking"
             ],
             "correctIndex": 1,
             "explanation": "Correct: track a baseline of at least 7 days while living normally, since one or two days will not show your real pattern. Wrong: 1 to 2 days is too short to reveal your normal pattern. Wrong: 30 days is longer than the lessons call for; the stated minimum baseline is 7 days."
@@ -676,9 +676,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "Your test period looks almost exactly like your baseline, with no real change. What does the module say to do next?",
             "options": [
-              "Quit, because the first try failing means the change cannot work for you",
-              "Stack three new changes at once to speed things up",
-              "Treat no effect as information, change one thing about the intervention, and run it again"
+              "Quit, since one failed try means it will never work for you",
+              "Stack three brand-new changes at once to speed it up",
+              "Treat no effect as info, change one thing, run it again"
             ],
             "correctIndex": 2,
             "explanation": "Correct: no effect is information, not failure; you adjust one variable and retest because the first try is rarely the final answer. Wrong: quitting after one try goes against the lesson, which says the first experiment is the start of a conversation with your body. Wrong: stacking several changes at once breaks the one-variable rule, so you could not tell which change mattered."
@@ -762,8 +762,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What does longitudinal analysis mean when you are reading your tracker data?",
             "options": [
-              "Comparing your numbers to other people your age",
-              "Reading your data over months instead of days so you watch the trend",
+              "Comparing your numbers to other people of your age",
+              "Reading your data over months to watch the trend",
               "Checking your numbers several times within a single day"
             ],
             "correctIndex": 1,
@@ -802,8 +802,8 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "When does a change in your data count as a signal rather than noise?",
             "options": [
-              "When it leaves your normal band and holds for weeks, not just a few days",
-              "When it shows up for two days in a row",
+              "When it leaves your normal band and holds for weeks",
+              "When it shows up for just two days in a row",
               "When it is larger than the change anyone else reports"
             ],
             "correctIndex": 0,
@@ -813,7 +813,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "prompt": "What is the difference between a goal and a system in this module?",
             "options": [
               "A goal is tracked daily, while a system is tracked weekly",
-              "A goal ends at a finish line, while a system is a small thing you repeat no matter what",
+              "A goal ends at a finish line, a system you just repeat",
               "A goal is for younger people, while a system is for older people"
             ],
             "correctIndex": 1,
@@ -824,7 +824,7 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
             "options": [
               "Setting a single big stretch target for the year",
               "Sharing their numbers publicly with a large online group",
-              "Action planning and coping planning, building a plan for when, where, and how to handle setbacks"
+              "Action planning plus coping planning for setbacks"
             ],
             "correctIndex": 2,
             "explanation": "People who used action planning and coping planning, deciding when, where, and how they would handle setbacks, kept the new behavior going far longer. A single big stretch target is just a goal, which the lesson says traps you. Public sharing with a large group is not what this study tested; that idea comes from a different lesson and can even backfire.\n\nReference: (Sniehotta et al., 2005)"
@@ -842,9 +842,9 @@ export const READ_YOUR_BODY_COURSE: AuthoredCourse = {
           {
             "prompt": "What are the three parts of a lasting health system in this module?",
             "options": [
-              "A goal, a deadline, and a reward",
-              "A daily trigger, a fast log, and a short weekly review",
-              "A tracker, a coach, and a leaderboard"
+              "A big goal, a hard deadline, and a reward",
+              "A daily trigger, a fast log, a weekly review",
+              "A tracker, a personal coach, and a leaderboard"
             ],
             "correctIndex": 1,
             "explanation": "A lasting health system has three parts: a daily trigger, a fast log, and a short weekly review. The first option describes a goal-based setup with a finish line, which the module warns against. The third lists tools and competition, not the trigger, log, and review structure the lesson teaches."

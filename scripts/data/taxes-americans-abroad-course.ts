@@ -343,10 +343,10 @@ This lesson is about a **completely separate obligation** that trips people up c
           {
             prompt: "How does the U.S. decide whether to tax a citizen's or green card holder's income, even if they've lived abroad for years?",
             options: [
-              "Based on where the income was earned only",
-              "Based on citizenship/resident-alien status, worldwide income is taxed regardless of where they live",
-              "Only income physically transferred into a U.S. bank account is taxed",
-              "Only if they visit the U.S. at least once during the year",
+              "Based only on the country where the income was actually earned and paid",
+              "Citizenship or resident-alien status makes worldwide income taxable",
+              "Only income physically transferred into a U.S. bank account is taxable",
+              "Only if they set foot in the U.S. at least once during the tax year",
             ],
             correctIndex: 1,
             explanation:
@@ -356,10 +356,10 @@ This lesson is about a **completely separate obligation** that trips people up c
           {
             prompt: "You live abroad and expect the Foreign Earned Income Exclusion to bring your U.S. tax owed to zero. Do you still need to file a return?",
             options: [
-              "No, if you owe nothing, filing isn't required",
-              "Yes, the exclusion and Foreign Tax Credit are claimed on a filed return, so filing is what unlocks the relief",
-              "Only if you earned more than $1 million",
-              "Only if you're claiming a refund",
+              "No, if you end up owing nothing at all, filing a return is not required",
+              "Yes, the exclusion is claimed on a filed return, so filing unlocks it",
+              "Only if your foreign earned income exceeded the annual exclusion cap",
+              "Only if you are specifically claiming a tax refund on the return",
             ],
             correctIndex: 1,
             explanation:
@@ -369,10 +369,10 @@ This lesson is about a **completely separate obligation** that trips people up c
           {
             prompt: "Which of these income types can the Foreign Earned Income Exclusion apply to?",
             options: [
-              "Rental income from a foreign property",
-              "A foreign pension",
+              "Rental income you collect from a foreign investment property",
+              "A foreign private or government pension paid in retirement",
               "Wages for work you performed while living abroad",
-              "Dividends from a foreign brokerage account",
+              "Dividends paid out from a foreign brokerage account",
             ],
             correctIndex: 2,
             explanation:
@@ -383,9 +383,9 @@ This lesson is about a **completely separate obligation** that trips people up c
             prompt: "What does the physical presence test require to qualify for the FEIE?",
             options: [
               "A full calendar tax year of intent to live abroad permanently",
-              "At least 330 full days physically present in a foreign country or countries during a 12-month period",
-              "Owning property in a foreign country",
-              "Renouncing U.S. citizenship",
+              "At least 330 full days in a foreign country during a 12-month period",
+              "Owning residential property in the foreign country where you now live",
+              "Formally renouncing your U.S. citizenship at an embassy or consulate",
             ],
             correctIndex: 1,
             explanation:
@@ -395,10 +395,10 @@ This lesson is about a **completely separate obligation** that trips people up c
           {
             prompt: "How does the Foreign Tax Credit (Form 1116) reduce U.S. tax, compared to the FEIE?",
             options: [
-              "It excludes foreign earned income from tax entirely, just like the FEIE",
-              "It gives a dollar-for-dollar credit for foreign income tax already paid on the same income, and can apply to passive income",
-              "It only applies to self-employment tax",
-              "It eliminates the need to file a U.S. return",
+              "It excludes foreign earned income from tax entirely, exactly like the FEIE",
+              "A dollar-for-dollar credit for foreign tax paid, even on passive income",
+              "It applies only to self-employment tax owed on your net foreign earnings",
+              "It fully eliminates any need to file a U.S. federal income tax return",
             ],
             correctIndex: 1,
             explanation:
@@ -408,10 +408,10 @@ This lesson is about a **completely separate obligation** that trips people up c
           {
             prompt: "Where do you file the FBAR (FinCEN Form 114)?",
             options: [
-              "Attached to your IRS Form 1040",
-              "Electronically with FinCEN, a Treasury bureau, separate from your tax return",
-              "By mail to your nearest U.S. embassy",
-              "You don't need to file it separately if you filed Form 8938",
+              "Attached as a schedule to your annual IRS Form 1040 tax return",
+              "Electronically with FinCEN, a Treasury bureau, not with your return",
+              "By certified mail to your nearest U.S. embassy or consulate abroad",
+              "You skip it entirely as long as you have already filed Form 8938",
             ],
             correctIndex: 1,
             explanation:
@@ -421,10 +421,10 @@ This lesson is about a **completely separate obligation** that trips people up c
           {
             prompt: "True or false: filing an FBAR automatically satisfies the Form 8938 (FATCA) requirement too.",
             options: [
-              "True, they're the same filing under two names",
-              "False, they're separate requirements with different thresholds, and Form 8938 is filed with your tax return while the FBAR goes to FinCEN",
-              "True, but only for married filers",
-              "False, because Form 8938 replaced the FBAR",
+              "True, the FBAR and Form 8938 are the same filing under two names",
+              "False, separate rules with different thresholds and destinations",
+              "True, but they overlap that way only for joint married filers",
+              "False, because Form 8938 fully replaced the older FBAR in 2011",
             ],
             correctIndex: 1,
             explanation:
@@ -434,10 +434,10 @@ This lesson is about a **completely separate obligation** that trips people up c
           {
             prompt: "You live abroad and file no extension paperwork. What happens to your filing deadline, and does it stop interest from accruing on unpaid tax?",
             options: [
-              "Deadline moves to June 15 automatically, and interest is also delayed to June 15",
-              "Deadline moves to June 15 automatically, but interest still accrues on unpaid tax from April 15",
-              "There is no automatic extension for people living abroad",
-              "The deadline moves to October 15 automatically",
+              "Deadline moves to June 15, and interest is also delayed until June 15",
+              "Deadline moves to June 15, but interest still accrues from April 15",
+              "There is no automatic filing extension at all for people living abroad",
+              "The deadline moves all the way to October 15 with no form required",
             ],
             correctIndex: 1,
             explanation:
@@ -447,10 +447,10 @@ This lesson is about a **completely separate obligation** that trips people up c
           {
             prompt: "Why might someone who moved abroad still owe state income tax to their old U.S. state?",
             options: [
-              "States automatically stop taxing anyone who leaves the country",
-              "They haven't broken domicile with that state, some states (like 'sticky states') presume continued residency until you prove you've established a new domicile elsewhere",
-              "Federal law requires all states to tax worldwide income the same way the IRS does",
-              "State tax only applies to people who still hold a U.S. passport",
+              "States automatically stop taxing anyone the moment they leave the country",
+              "They never broke domicile; states presume residency until you prove otherwise",
+              "Federal law forces every state to tax worldwide income like the IRS does",
+              "State income tax applies only to people who still hold a U.S. passport",
             ],
             correctIndex: 1,
             explanation:

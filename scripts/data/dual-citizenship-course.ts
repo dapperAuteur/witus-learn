@@ -323,10 +323,10 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
           {
             prompt: "Does U.S. law require a U.S. citizen to choose between U.S. citizenship and a second nationality?",
             options: [
-              "Yes, U.S. law requires picking one",
-              "No, U.S. law does not require a U.S. citizen to choose between U.S. citizenship and another nationality",
-              "Only if the other country objects",
-              "Only for naturalized citizens, not those born abroad",
+              "Yes, federal law requires holding one nationality",
+              "No, U.S. law does not require you to choose one",
+              "Only if the second country formally objects",
+              "Only for naturalized citizens, not the native-born",
             ],
             correctIndex: 1,
             explanation:
@@ -336,10 +336,10 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
           {
             prompt: "According to this course, what do descent, naturalization, and marriage as paths to a second citizenship all have in common?",
             options: [
-              "They are all governed by U.S. law",
-              "They all require the U.S. to approve the acquisition first",
-              "They are all governed by the OTHER country's own law, which varies by country",
-              "None of them can result in dual citizenship",
+              "They are all governed only by U.S. immigration law",
+              "They all require the U.S. to approve first",
+              "They are all governed by the other country's law",
+              "None of them can produce a dual citizenship",
             ],
             correctIndex: 2,
             explanation:
@@ -349,10 +349,10 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
           {
             prompt: "When entering or leaving the United States, which passport must a U.S. dual national use?",
             options: [
-              "Whichever passport is more convenient",
+              "Whichever passport happens to be more convenient",
               "The passport of the other country of nationality",
-              "The U.S. passport, regardless of what other passport is also held",
-              "No passport is required for dual nationals",
+              "The U.S. passport, no matter what else is held",
+              "No passport is required for any dual national",
             ],
             correctIndex: 2,
             explanation:
@@ -362,10 +362,10 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
           {
             prompt: "According to the Department of State, what obligation can a foreign country impose on its dual-national citizens tied to its armed forces?",
             options: [
-              "None, the U.S. exempts dual nationals from foreign military service",
-              "Mandatory military service, possibly imposed on arrival in the country or when attempting to leave",
-              "Only voluntary service is ever allowed",
-              "Only citizens who were born in that country can be required to serve",
+              "None, U.S. law exempts dual nationals from service",
+              "Mandatory service, imposed on arrival or on exit",
+              "Only voluntary reserve service is ever allowed",
+              "Only citizens born in that country must serve",
             ],
             correctIndex: 1,
             explanation:
@@ -376,9 +376,9 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
             prompt: "What two conditions does INA § 349 require before an expatriating act (like formal renunciation) actually results in loss of U.S. nationality?",
             options: [
               "It must be witnessed by two people and notarized",
-              "It must be performed voluntarily and with the intention of relinquishing U.S. nationality",
-              "It must happen before age 18",
-              "It must be approved by Congress",
+              "It must be voluntary and done to relinquish it",
+              "It must happen before the person turns 18",
+              "It must first be approved by the U.S. Congress",
             ],
             correctIndex: 1,
             explanation:
@@ -388,10 +388,10 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
           {
             prompt: "Can a U.S. citizen renounce their citizenship by mail, and when does a renunciation actually take legal effect?",
             options: [
-              "Yes by mail; it takes effect immediately upon signing",
-              "No, it requires appearing in person before a consular or diplomatic officer abroad, and it only takes effect once the Department of State approves a Certificate of Loss of Nationality",
-              "Yes by mail; it takes effect after 90 days",
-              "No, it can only be done inside the United States",
+              "Yes by mail; it takes full effect immediately on signing",
+              "No, in-person oath abroad, then CLN approval needed",
+              "Yes by mail; it takes legal effect after 90 days",
+              "No, but it can be done inside the United States",
             ],
             correctIndex: 1,
             explanation:
@@ -401,10 +401,10 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
           {
             prompt: "Once the Department of State approves a determination of loss of nationality, can the person generally reverse it if they change their mind?",
             options: [
-              "Yes, at any time within one year",
-              "No, outside a narrow statutory exception, it is irrevocable absent a successful administrative or judicial appeal",
-              "Yes, simply by reapplying for a passport",
-              "Yes, if they pay an additional fee",
+              "Yes, reversible at any time within the first year",
+              "No, it is irrevocable absent a successful appeal",
+              "Yes, simply by reapplying for a new passport",
+              "Yes, by paying an additional government fee",
             ],
             correctIndex: 1,
             explanation:
@@ -414,10 +414,10 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
           {
             prompt: "What risk does the Department of State specifically warn about for someone who renounces without already holding, or being assured of acquiring, a second nationality?",
             options: [
-              "Automatic reinstatement of U.S. citizenship after 5 years",
-              "Becoming stateless, without the protection of any government or a passport from any country",
-              "Losing the right to visit the U.S. for exactly one year",
-              "Owing double the normal exit tax",
+              "Automatic U.S. citizenship reinstatement after 5 years",
+              "Becoming stateless, with no government's protection",
+              "Losing the right to visit the U.S. for one full year",
+              "Owing exactly double the normal expatriation tax",
             ],
             correctIndex: 1,
             explanation:
@@ -427,10 +427,10 @@ export const DUAL_CITIZENSHIP_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these, by itself, can make someone a 'covered expatriate' subject to the IRS exit tax?",
             options: [
-              "Having net worth of $2 million or more on the date of expatriation",
-              "Owning a home in a foreign country",
-              "Being married to a non-U.S. citizen",
-              "Holding a foreign bank account under $10,000",
+              "Net worth of $2 million or more at expatriation",
+              "Owning a vacation home in a foreign country",
+              "Being married to a non-U.S. citizen spouse",
+              "Holding a foreign bank account under $10,000 total",
             ],
             correctIndex: 0,
             explanation:

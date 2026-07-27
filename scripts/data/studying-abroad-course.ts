@@ -378,10 +378,10 @@ Whichever program you choose, your campus study-abroad office (not a third-party
           {
             prompt: "What mainly distinguishes an exchange program from direct enrollment?",
             options: [
-              "Exchange programs never involve financial aid",
-              "An exchange runs on a partnership agreement between two universities (often with a reciprocal swap and pre-set credit transfer); direct enrollment means applying directly to the foreign university, with transfer evaluated separately",
-              "Direct enrollment is always shorter than an exchange",
-              "There is no meaningful difference",
+              "Exchange programs by law never involve any financial aid, loans, or grants",
+              "An exchange runs on a partner-university deal with pre-set credit transfer",
+              "Direct enrollment is always far shorter and much cheaper than an exchange",
+              "There is no meaningful difference at all between the two program paths",
             ],
             correctIndex: 1,
             explanation:
@@ -391,10 +391,10 @@ Whichever program you choose, your campus study-abroad office (not a third-party
           {
             prompt: "Why should you talk to your campus study-abroad office and faculty adviser BEFORE choosing a program?",
             options: [
-              "It's a formality with no real impact",
-              "Because they're the only ones who can confirm whether the program's credits will actually count toward your degree",
-              "Because only they can issue your passport",
-              "Because it's required to enroll in STEP",
+              "It is just a bureaucratic formality with no real impact on you at all",
+              "Only they can confirm whether the program's credits count toward your degree",
+              "Because only the study-abroad office can legally issue your passport",
+              "Because STEP enrollment requires an adviser's written signature first",
             ],
             correctIndex: 1,
             explanation:
@@ -404,10 +404,10 @@ Whichever program you choose, your campus study-abroad office (not a third-party
           {
             prompt: "Why doesn't this course list specific student-visa requirements for any one country?",
             options: [
-              "Student visas don't exist",
-              "Because every destination country sets and changes its own rules, so this course teaches the research method (travel.state.gov + the destination's own official site) instead",
-              "Because the U.S. State Department doesn't publish any guidance for students",
-              "Because visas are only required for degree-seeking programs",
+              "Student visas were abolished by international treaty in the year 2000",
+              "Each country sets and changes its own rules, so learn the research method",
+              "Because the U.S. State Department publishes no guidance at all for students",
+              "Because visas are required only for four-year degree-seeking programs",
             ],
             correctIndex: 1,
             explanation:
@@ -417,10 +417,10 @@ Whichever program you choose, your campus study-abroad office (not a third-party
           {
             prompt: "Why does a semester or year of study abroad make the six-month passport-validity rule tighter than it would be for a short vacation?",
             options: [
-              "It doesn't, the rule is identical for any trip length",
-              "A long stay, plus visa-processing time, plus any in-country extension process, all eat into the same six-month cushion",
-              "Passports issued to students expire faster",
-              "Six months only applies to passport cards, not books",
+              "It does not, the six-month rule is identical for a trip of any length",
+              "A long stay plus visa processing time eats into the six-month cushion",
+              "Passports issued to enrolled students expire a full two years faster",
+              "The six-month rule applies only to passport cards, never to books",
             ],
             correctIndex: 1,
             explanation:
@@ -430,10 +430,10 @@ Whichever program you choose, your campus study-abroad office (not a third-party
           {
             prompt: "According to State Department guidance for students abroad, what should you research beyond your destination's entry/visa rules?",
             options: [
-              "Nothing else is necessary once you have a visa",
-              "The destination's own laws (e.g., drug laws), since a substance's U.S. legal status doesn't carry over, plus safety practices like regular family check-ins",
-              "Only the exchange rate",
-              "Only local restaurant recommendations",
+              "Nothing else is necessary at all once your entry visa is approved",
+              "Local laws like drug laws, plus safety habits like family check-ins",
+              "Only the current currency exchange rate for your destination country",
+              "Only the best local restaurant and nightlife recommendations nearby",
             ],
             correctIndex: 1,
             explanation:
@@ -443,10 +443,10 @@ Whichever program you choose, your campus study-abroad office (not a third-party
           {
             prompt: "Why does the CDC recommend a pre-travel health appointment 4-6 weeks before departure, rather than the week before?",
             options: [
-              "It's simply a scheduling convenience",
-              "Because some vaccines need time to become effective and some require multiple doses spaced weeks apart",
-              "Because appointments are only available on that schedule",
-              "Because CDC guidance only applies within 4-6 weeks of travel",
+              "It is only a scheduling convenience for the travel clinic staff",
+              "Some vaccines need time to work and some need multiple spaced doses",
+              "Because clinic appointments are offered on no other week of the year",
+              "Because CDC guidance legally applies only within 4-6 weeks of travel",
             ],
             correctIndex: 1,
             explanation:
@@ -456,10 +456,10 @@ Whichever program you choose, your campus study-abroad office (not a third-party
           {
             prompt: "What's the key funding difference between a semester abroad that transfers credit back to your U.S. degree, and enrolling for a full degree directly at a foreign school?",
             options: [
-              "There is no difference, both work identically for federal aid",
-              "A semester/year through your home institution can generally use your normal federal aid package; a full foreign degree is not Pell/TEACH-Grant-eligible, only Direct-Loan-eligible at participating schools",
-              "Only full foreign degrees qualify for federal aid",
-              "Federal aid never applies to any study-abroad program",
+              "There is no real difference, both draw federal aid in the same way",
+              "A home-institution term keeps your aid; a foreign degree is loan-only",
+              "Only a full foreign degree program qualifies for any U.S. federal aid",
+              "Federal aid never applies to any kind of study-abroad program at all",
             ],
             correctIndex: 1,
             explanation:
@@ -469,10 +469,10 @@ Whichever program you choose, your campus study-abroad office (not a third-party
           {
             prompt: "What single factor determines both whether your abroad credits count toward your degree AND whether federal aid can fund the program?",
             options: [
-              "The cost of the program",
-              "Your home institution's acceptance of the credits earned abroad",
-              "The length of the program",
-              "Which country you choose",
+              "The total tuition and travel cost of the study-abroad program",
+              "Your home institution accepting the credits you earn abroad",
+              "The calendar length in weeks of the study-abroad program",
+              "Which specific foreign country and city you decide to choose",
             ],
             correctIndex: 1,
             explanation:

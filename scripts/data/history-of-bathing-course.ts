@@ -101,10 +101,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "What is the central problem with the 'ladder' image of hygiene (everyone was filthy, then we climbed to clean)?",
             options: [
-              "It is basically correct, just missing some dates",
-              "'Clean' is a changing standard, not a fixed quantity, so different traditions were sophisticated in different ways rather than higher or lower on one ladder",
-              "It gives too much credit to ancient Rome",
-              "It underestimates how dirty the present still is",
+              "It is basically correct and only off on a few dates",
+              "'Clean' is a changing standard, not a rung on a ladder",
+              "It gives far too much of the credit to ancient Rome",
+              "It underestimates how dirty the modern present still is",
             ],
             correctIndex: 1,
             explanation:
@@ -114,10 +114,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "According to Virginia Smith's Clean, the history of personal hygiene is best described as:",
             options: [
-              "A steady straight line of progress",
-              "Not linear: it loops, contradicts itself, and moves backward as often as forward",
-              "Identical everywhere once soap was invented",
-              "A story with a single hero civilization",
+              "A steady straight line of continuous upward progress",
+              "Not linear: it loops back as often as it goes forward",
+              "Identical everywhere the moment soap was invented",
+              "A single straight story with just one hero people",
             ],
             correctIndex: 1,
             explanation: "Smith (2007) argues the history of cleanliness is not a line of progress; it is full of reversals and contradictions.",
@@ -126,10 +126,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "Which statement best matches the 'verdict' this course is building toward?",
             options: [
-              "Some civilizations were clean and others were simply dirty",
-              "Europe taught the world to bathe",
-              "Many different, richly developed traditions, plus one particular European retreat from bathing and its slow return",
-              "Nobody anywhere bathed regularly until modern plumbing",
+              "Some civilizations were clean and others simply dirty",
+              "Europe alone taught the rest of the world to bathe",
+              "Many developed traditions, plus a European retreat and return",
+              "Nobody bathed regularly until the arrival of plumbing",
             ],
             correctIndex: 2,
             explanation:
@@ -139,10 +139,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "The popular belief that 'medieval Europeans never bathed and had to be taught to wash' is, according to this course:",
             options: [
-              "Completely true and well documented",
-              "Largely false: medieval Europe had public bathhouses, and the retreat from bathing came later and was never total",
-              "True only for the nobility",
-              "Impossible to evaluate with any evidence",
+              "Completely true and very well documented",
+              "Largely false: medieval Europe kept bathhouses",
+              "True only for the very poorest peasants",
+              "Impossible to judge from the surviving evidence",
             ],
             correctIndex: 1,
             explanation:
@@ -152,10 +152,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "In this course, 'archaeology' (things) is treated as strong evidence because:",
             options: [
-              "Objects and buildings are harder to argue with than a stranger's written opinion, since a city does not build a giant watertight pool unless bathing matters",
-              "Archaeologists never disagree",
-              "Written sources are always lies",
-              "Buildings can be dated to the exact day",
+              "A building is harder to argue with than an opinion",
+              "Archaeologists never disagree about the past",
+              "Written sources are essentially always lies",
+              "Buildings can be dated to the exact single day",
             ],
             correctIndex: 0,
             explanation:
@@ -165,10 +165,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "Why does the course call written 'those people were disgusting' accounts a trap?",
             options: [
-              "Because writing had not been invented yet",
-              "Because they were usually written by outsiders describing strangers or enemies, often to flatter the writer's own side",
-              "Because they are always forgeries",
-              "Because they were written too recently to matter",
+              "Because writing had not yet been invented then",
+              "Because outsiders wrote them to flatter their own side",
+              "Because they are nearly always clumsy forgeries",
+              "Because they were all written far too recently",
             ],
             correctIndex: 1,
             explanation:
@@ -179,9 +179,9 @@ The same discipline is why the course refuses to crown a single "inventor of soa
             prompt: "A Spanish observer reports that Moctezuma bathed twice a day. What is the honest way to use that report?",
             options: [
               "State flatly that Moctezuma bathed twice a day",
-              "Ignore it completely because it is Spanish",
-              "Attribute it to the observer and hedge it ('a Spanish observer reported...'), then look for corroboration",
-              "Assume the true number was higher",
+              "Ignore it completely because the writer is Spanish",
+              "Attribute it to the observer, then seek corroboration",
+              "Assume the true daily number was actually higher",
             ],
             correctIndex: 2,
             explanation:
@@ -191,10 +191,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "The course refuses to crown a single 'inventor of soap.' Why?",
             options: [
-              "Because soap was never actually invented",
-              "Because the real evidence is patchy and local, with recipes and uses appearing in several places over a long span",
+              "Because soap was honestly never truly invented",
+              "Because recipes appear in many places over a long span",
               "Because the inventor's name was lost in a fire",
-              "Because soap is not important to the story",
+              "Because soap plays no real part in the story",
             ],
             correctIndex: 1,
             explanation:
@@ -204,10 +204,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "Which of these is the clearest example of 'a thing' (archaeological evidence) rather than 'a word' (a written claim)?",
             options: [
-              "A traveler's letter calling a city filthy",
+              "A traveler's letter calling the whole city filthy",
               "A chronicle written 40 years after a conquest",
-              "A drained, watertight brick bathing tank excavated from an ancient city",
-              "A poem praising a king's cleanliness",
+              "A watertight brick bathing tank dug from a city",
+              "A court poem praising a king's daily cleanliness",
             ],
             correctIndex: 2,
             explanation: "The physical tank (like the Great Bath at Mohenjo-daro) is direct material evidence; the other three are written claims that need scrutiny.",
@@ -216,9 +216,9 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "What does Ashenburg's The Dirt on Clean add to the point that 'clean' is a changing standard?",
             options: [
-              "That every society tends to assume its own hygiene habits are the natural, obvious, correct ones",
-              "That only modern people are truly clean",
-              "That cleanliness has no connection to religion",
+              "That each society assumes its own habits are normal",
+              "That only modern people are ever truly clean",
+              "That cleanliness has no link at all to religion",
               "That soap solved the problem for everyone at once",
             ],
             correctIndex: 0,
@@ -228,10 +228,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "A Roman two thousand years ago felt clean after:",
             options: [
-              "A long soak with a bar of soap",
-              "Being oiled and then scraped, with no soap involved",
-              "A cold shower and deodorant",
-              "Rinsing with vinegar only",
+              "A long hot soak with a big bar of soap",
+              "Being oiled and then scraped, with no soap",
+              "A cold morning shower with strong deodorant",
+              "Rinsing the skin with plain vinegar only",
             ],
             correctIndex: 1,
             explanation: "Romans cleaned with oil and a strigil (scraper); soap was not part of the routine. A later section covers this in detail.",
@@ -240,10 +240,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "Which three books are named as the scholarly backbone of this course?",
             options: [
-              "Three novels about ancient Rome",
-              "Ashenburg's The Dirt on Clean, Smith's Clean, and Brown's Foul Bodies",
-              "Three chemistry textbooks",
-              "A single encyclopedia",
+              "Three popular novels set in ancient imperial Rome",
+              "Three histories of hygiene: Ashenburg, Smith, and Brown",
+              "Three modern industrial chemistry lab textbooks",
+              "A single one-volume general reference encyclopedia",
             ],
             correctIndex: 1,
             explanation:
@@ -253,10 +253,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "The rule 'name the source, and when a claim rests on a single observer, say so and hedge' is meant to prevent:",
             options: [
-              "Citing any sources at all",
-              "Turning one person's secondhand claim into a stated fact",
-              "Using archaeology",
-              "Studying non-European cultures",
+              "Citing any outside written sources at all",
+              "Turning one secondhand claim into a stated fact",
+              "Using archaeology as material evidence at all",
+              "Studying any non-European bathing cultures",
             ],
             correctIndex: 1,
             explanation: "The rule keeps vivid single-witness anecdotes labeled as claims, which is what separates history from a good-sounding story.",
@@ -265,10 +265,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "Why is it fair to say a Roman, a praying Muslim, a Finn in a sauna, and a Nahua noble were each 'clean'?",
             options: [
-              "They all used the same method",
-              "Each met a complete, sophisticated standard of cleanliness within their own tradition, for their own reasons",
-              "None of them were actually clean",
-              "Only the Roman was truly clean",
+              "They all used a single identical washing method",
+              "Each met a full standard within their own tradition",
+              "None of the four were ever actually truly clean",
+              "Only the Roman bather alone was ever truly clean",
             ],
             correctIndex: 1,
             explanation: "Different traditions defined and achieved cleanliness differently; none sits 'above' the others on one ladder (Smith, 2007).",
@@ -277,10 +277,10 @@ The same discipline is why the course refuses to crown a single "inventor of soa
           {
             prompt: "What is the best short description of this course's method?",
             options: [
-              "Retell the most entertaining stories without checking them",
-              "Combine physical evidence with written sources, attribute and hedge single-observer claims, and avoid tidy stereotypes",
-              "Trust only modern textbooks",
-              "Prove that one civilization was cleanest",
+              "Retell the most entertaining stories without ever checking them",
+              "Combine physical and written evidence, then hedge shaky claims",
+              "Trust only modern published textbooks and encyclopedias",
+              "Prove that one particular civilization was the cleanest",
             ],
             correctIndex: 1,
             explanation: "The course weighs things against words, labels shaky claims, and resists flattening whole societies into a single stereotype.",
@@ -366,9 +366,9 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
             prompt: "What was the thermae in Roman life?",
             options: [
               "A private bathtub found only in wealthy homes",
-              "A large public bath complex that was a center of daily social, medical, and business life",
-              "A religious temple where bathing was forbidden",
-              "A type of aqueduct",
+              "A large public bath complex, a center of daily life",
+              "A religious temple where all bathing was forbidden",
+              "A type of large stone water-carrying aqueduct",
             ],
             correctIndex: 1,
             explanation:
@@ -378,10 +378,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "How did a Roman hypocaust heat a bath?",
             options: [
-              "By burning coal inside the pool",
-              "By raising the floor on brick pillars and circulating hot furnace air beneath it and up wall flues",
-              "By solar panels on the roof",
-              "By pouring boiling water from aqueducts directly onto bathers",
+              "By burning hot coal inside the bathing pool",
+              "By circulating hot furnace air under a raised floor",
+              "By mounting bronze solar panels on the roof",
+              "By pouring boiling aqueduct water onto bathers",
             ],
             correctIndex: 1,
             explanation:
@@ -392,9 +392,9 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
             prompt: "The classic Roman bathing circuit moved a bather through rooms of changing temperature. Which sequence is right?",
             options: [
               "Cold plunge first, then undress, then leave",
-              "Undress, then rising heat (warm tepidarium, hot caldarium), finishing with a cold plunge (frigidarium)",
-              "Straight into the hottest room and out again",
-              "Only a single lukewarm pool",
+              "Undress, rising heat, then a cold plunge to finish",
+              "Straight into the hottest room and back out again",
+              "A single lukewarm pool and nothing else at all",
             ],
             correctIndex: 1,
             explanation:
@@ -404,10 +404,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "Was Roman public bathing only for the wealthy?",
             options: [
-              "Yes, entry cost more than most workers earned in a month",
-              "No, entry was cheap and sometimes free when a politician or emperor paid the fee, so many classes bathed",
-              "Yes, only senators were admitted",
-              "No, but only soldiers could enter",
+              "Yes, entry cost far more than a month of wages",
+              "No, entry was cheap and sometimes even free",
+              "Yes, only senators and their sons were let in",
+              "No, but only serving soldiers were allowed in",
             ],
             correctIndex: 1,
             explanation:
@@ -417,10 +417,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "How did a Roman actually clean the body?",
             options: [
-              "With a bar of hard soap",
-              "By rubbing the skin with oil and scraping it off with a curved metal strigil",
-              "With a cold shower and no oil",
-              "By rolling in sand only",
+              "With a single bar of hard, scented body soap",
+              "By oiling the skin and scraping it with a strigil",
+              "With a cold plain-water shower and no oil at all",
+              "By rolling the bare body in dry desert sand",
             ],
             correctIndex: 1,
             explanation:
@@ -430,10 +430,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "What is a strigil?",
             options: [
-              "A Roman soap bar",
-              "A curved metal scraper used to remove oil, sweat, and dirt from the skin",
-              "A heated bathing pool",
-              "A Gaulish hair dye",
+              "A Roman bar of hard scented bathing soap",
+              "A curved metal scraper for oil and dirt",
+              "A small heated indoor Roman bathing pool",
+              "A reddish Gaulish cosmetic hair-dye paste",
             ],
             correctIndex: 1,
             explanation: "The strigil is the scraper at the heart of the oil-and-scrape method (Smith, 2007).",
@@ -442,10 +442,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "The fact that Romans used no body soap yet felt clean best supports which of the course's central ideas?",
             options: [
-              "The Romans were secretly dirty",
-              "'Clean' is a standard reached by a method, and a sophisticated hygiene culture can contain no soap at all",
-              "Soap is the only way to be clean",
-              "Bathing did not matter to Romans",
+              "The Romans were secretly quite filthy people",
+              "'Clean' is a standard set by method, not by soap",
+              "Soap is the only real way to ever be clean",
+              "Bathing did not really matter much to Romans",
             ],
             correctIndex: 1,
             explanation:
@@ -456,9 +456,9 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
             prompt: "In Pliny the Elder's Natural History, what is 'sapo,' and what was it used for?",
             options: [
               "A Roman bathing soap for scrubbing the body",
-              "A preparation of tallow and ash that Pliny calls an invention of the Gauls, used to redden and dress the hair",
-              "A kind of aqueduct cement",
-              "A perfume imported from Egypt",
+              "A tallow-and-ash Gaulish preparation for the hair",
+              "A kind of strong stone aqueduct sealing cement",
+              "A costly floral perfume imported from Egypt",
             ],
             correctIndex: 1,
             explanation:
@@ -468,10 +468,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "What should you conclude about the 'Mount Sapo' origin story for soap?",
             options: [
-              "It is well-documented history",
-              "It is almost certainly a legend: there is no evidence such a mountain existed, and the word likely came from a Germanic root",
-              "It proves the Romans invented soap",
-              "It was recorded firsthand by Pliny",
+              "It is well-documented, reliable Roman history",
+              "Almost certainly a legend with no real evidence",
+              "It clearly proves the Romans invented soap",
+              "It was recorded firsthand by Pliny himself",
             ],
             correctIndex: 1,
             explanation:
@@ -481,10 +481,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "Where and for what purpose do some of the earliest written soap-like recipes appear?",
             options: [
-              "In Rome, for washing the body",
-              "In ancient Mesopotamia, commonly dated around 2200 BCE, and probably for cleaning wool and cloth rather than people",
-              "In medieval France, for making perfume",
-              "In Japan, for purification rituals",
+              "In ancient Rome, for washing the human body",
+              "In Mesopotamia near 2200 BCE, likely for cloth",
+              "In medieval France, for making fine perfume",
+              "In ancient Japan, for temple purification rites",
             ],
             correctIndex: 1,
             explanation:
@@ -494,10 +494,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "Why does the course refuse to name a single 'inventor of soap'?",
             options: [
-              "Because soap was never invented",
-              "Because the real evidence is a long, scattered arc across many cultures rather than one eureka moment",
-              "Because the inventor's name is a secret",
-              "Because only Rome mattered",
+              "Because soap was truly never once invented",
+              "Because the evidence is a long, scattered arc",
+              "Because the inventor's name is a kept secret",
+              "Because only ancient Rome really ever mattered",
             ],
             correctIndex: 1,
             explanation:
@@ -514,10 +514,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "Which statement about Roman bathing and religion is most accurate for this course's purposes?",
             options: [
-              "Roman bathing was chiefly a religious purification ritual like Muslim ablution",
-              "Roman bathing was largely social, medical, and about pleasure and status, and doctors like Galen prescribed bathing routines",
-              "Romans believed bathing was sinful",
-              "Roman baths were open only during religious festivals",
+              "Roman bathing was mainly a religious purification ritual",
+              "Roman bathing was largely social, medical, and about status",
+              "Romans believed that all bathing was deeply sinful",
+              "Roman baths opened only during major religious festivals",
             ],
             correctIndex: 1,
             explanation:
@@ -527,10 +527,10 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
           {
             prompt: "A friend says 'the Romans were clean because they invented soap.' Using this section, what is the accurate correction?",
             options: [
-              "They are completely right",
-              "Romans were clean, but by oiling and scraping, not soap; soap existed as a Gaulish hair product and true body soap came much later elsewhere",
-              "Romans were actually filthy and never bathed",
-              "Soap was invented in Rome for the baths",
+              "They are completely and entirely right about that",
+              "Romans were clean, but by oiling and scraping, not soap",
+              "Romans were actually filthy and never bathed at all",
+              "Soap was in fact invented in Rome for its baths",
             ],
             correctIndex: 1,
             explanation:
@@ -541,9 +541,9 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
             prompt: "The largest imperial baths, such as the Baths of Caracalla, tell us what about Roman priorities?",
             options: [
               "Bathing was a rare luxury reserved for emperors",
-              "Bathing mattered enough that the state built monumental complexes serving thousands at once",
-              "Romans disliked bathing and built the baths for storage",
-              "The baths were never actually used",
+              "Bathing mattered enough to build huge public complexes",
+              "Romans disliked bathing and built them for storage",
+              "The grand baths were in fact never actually used",
             ],
             correctIndex: 1,
             explanation:
@@ -631,10 +631,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "What is wudu?",
             options: [
-              "A public steam bath",
-              "The Islamic ritual washing (hands, face, arms, head, feet, in order) performed before each of the five daily prayers",
-              "A type of hard soap from Nablus",
-              "A Roman scraping tool",
+              "A large public steam-heated bathhouse room",
+              "Islamic ritual washing before each daily prayer",
+              "A type of hard olive-oil soap from Nablus",
+              "A curved Roman metal skin-scraping tool",
             ],
             correctIndex: 1,
             explanation:
@@ -644,10 +644,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "Why does the course say religious washing created a demand for cleanliness that 'fashion could not easily switch off'?",
             options: [
-              "Because bathing was legally taxed",
-              "Because wudu before every prayer and ghusl when required are daily religious obligations for ordinary believers, independent of trend",
-              "Because only kings were allowed to bathe",
-              "Because soap was free",
+              "Because bathing was heavily legally taxed",
+              "Because prayer washing is a daily religious duty",
+              "Because only kings were ever allowed to bathe",
+              "Because good soap was always completely free",
             ],
             correctIndex: 1,
             explanation:
@@ -657,10 +657,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "The hammam's architecture (heated rooms, steam) was mainly inherited from which earlier tradition?",
             options: [
-              "The Japanese sento",
+              "The old Japanese sento bathhouse",
               "The Roman and Byzantine bath",
-              "The Mesoamerican temazcal",
-              "The Finnish sauna",
+              "The Mesoamerican temazcal lodge",
+              "The wood-fired Finnish sauna",
             ],
             correctIndex: 1,
             explanation:
@@ -670,10 +670,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "How was the hammam adapted to Islamic norms compared with a Roman bath?",
             options: [
-              "It removed all heating",
-              "Bathers rinsed under running or poured water rather than sharing a soaking pool, used an exfoliating mitt, and the sexes were strictly separated by hours or buildings",
-              "It admitted only foreigners",
-              "It banned soap",
+              "It removed all heating and steam from the rooms",
+              "Bathers rinsed under running water, not a pool",
+              "It admitted only wealthy foreign travelers",
+              "It completely banned the use of all soap",
             ],
             correctIndex: 1,
             explanation:
@@ -683,10 +683,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "For whom was the hammam an especially important center of social life?",
             options: [
-              "Only for soldiers",
-              "For women, as a major place to gather, talk, and celebrate in societies where public space was often otherwise limited to men",
-              "Only for foreign visitors",
-              "Only for children",
+              "Chiefly for serving professional soldiers",
+              "For women, a major place to gather and talk",
+              "Only for wealthy foreign male visitors",
+              "Only for very young noble-born children",
             ],
             correctIndex: 1,
             explanation:
@@ -696,10 +696,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "What was the medieval Islamic world's decisive contribution to soap?",
             options: [
-              "Inventing soap from nothing",
-              "Turning soap into purpose-made hard body soap, a firm, storable, scented bar made to wash people",
-              "Banning soap for religious reasons",
-              "Using soap only to dye hair",
+              "Inventing all soap entirely from nothing at all",
+              "Turning soap into purpose-made hard body soap",
+              "Completely banning soap for religious reasons",
+              "Using soap only to dye and redden the hair",
             ],
             correctIndex: 1,
             explanation:
@@ -717,10 +717,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "What distinguishes Aleppo soap?",
             options: [
-              "It is a liquid hair dye",
-              "It is a hard soap of olive oil and laurel (bay) berry oil cooked with lye, and an ancestor of the olive-oil soap Europe called 'Castile'",
-              "It contains no oil at all",
-              "It was invented in Rome",
+              "It is a scented liquid cosmetic hair dye",
+              "A hard olive-and-laurel-oil soap cooked with lye",
+              "It contains no olive or any plant oil at all",
+              "It was first invented in ancient imperial Rome",
             ],
             correctIndex: 1,
             explanation:
@@ -730,9 +730,9 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "Nabulsi (Nablus) soap is made from which three local ingredients, and how is it finished?",
             options: [
-              "Animal fat, sand, and salt, dried in the sun for a day",
-              "Olive oil, water, and lye, boiled then cut into bars and cured for months in tall drying towers",
-              "Laurel oil, honey, and ash, frozen overnight",
+              "Animal fat, sand, and salt, sun-dried for a day",
+              "Olive oil, water, and lye, cured for months in towers",
+              "Laurel oil, honey, and ash, deep-frozen overnight",
               "Palm oil, milk, and perfume, baked in an oven",
             ],
             correctIndex: 1,
@@ -743,10 +743,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "What recognition did the tradition of Nabulsi soap making receive in 2024?",
             options: [
-              "It was banned",
-              "UNESCO added it to the Representative List of the Intangible Cultural Heritage of Humanity",
-              "It was patented by a single company",
-              "It was declared the origin of all soap",
+              "It was formally banned across the region",
+              "UNESCO added it to its Intangible Heritage list",
+              "It was patented by a single large company",
+              "It was declared the origin of all world soap",
             ],
             correctIndex: 1,
             explanation:
@@ -756,10 +756,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "How does the course describe the relationship between Aleppo/Nablus soap and Europe's Castile and Marseille soaps?",
             options: [
-              "They are unrelated inventions",
-              "They belong to the same Mediterranean olive-oil-soap family, not a separate European invention",
-              "Castile and Marseille came first and taught the Islamic world",
-              "None of them use olive oil",
+              "They are wholly unrelated separate inventions",
+              "Same Mediterranean olive-oil-soap family",
+              "Castile and Marseille came first and taught it",
+              "None of these soaps use any olive oil at all",
             ],
             correctIndex: 1,
             explanation:
@@ -769,10 +769,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "Even after the hard-soap breakthrough, why does the course still refuse to name a single 'inventor of soap'?",
             options: [
-              "Because soap does not exist",
-              "Because soap is a technology several connected cultures developed and traded over a long arc, not one person's eureka moment",
-              "Because the Islamic world never used soap",
-              "Because Rome invented it first",
+              "Because soap does not really exist at all",
+              "Because soap is a shared technology, not one eureka",
+              "Because the Islamic world never used any soap",
+              "Because ancient Rome clearly invented it first",
             ],
             correctIndex: 1,
             explanation:
@@ -782,10 +782,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "Chemically, what is soap?",
             options: [
-              "Pure olive oil",
-              "The product of combining a fat or oil with a strong alkali",
-              "Wood ash by itself",
-              "Scented water",
+              "Pure cold-pressed olive oil on its own",
+              "A fat or oil combined with a strong alkali",
+              "Plain gray wood ash entirely by itself",
+              "Lightly perfumed warm scented bath water",
             ],
             correctIndex: 1,
             explanation:
@@ -795,10 +795,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "A classmate says 'Europe invented real soap and brought it to everyone.' What is the accurate correction from this section?",
             options: [
-              "That is exactly right",
-              "Purpose-made hard body soap was above all a medieval Islamic-world advance; Europe's Castile and Marseille soaps are part of the same shared Mediterranean tradition",
-              "Nobody used soap until the 1900s",
-              "Soap was invented in Japan",
+              "That is exactly and completely right about it",
+              "Hard body soap was above all an Islamic-world advance",
+              "Nobody anywhere used any soap until the 1900s",
+              "Real soap was actually first invented in Japan",
             ],
             correctIndex: 1,
             explanation:
@@ -808,10 +808,10 @@ The hammam is half of this section's story. The other half is what people increa
           {
             prompt: "Why should you keep the maturity of the hammam in mind before reading about the Crusades later in the course?",
             options: [
-              "Because the hammam was a recent invention at the time",
-              "Because Crusaders who met the hammam in the Levant were encountering a mature, centuries-deep institution, not a crude foreign washroom",
-              "Because Crusaders built the first hammams",
-              "Because the hammam had already disappeared by then",
+              "Because the hammam was then a recent invention",
+              "Because Crusaders met a centuries-old institution",
+              "Because Crusaders built the very first hammams",
+              "Because the hammam had wholly vanished by then",
             ],
             correctIndex: 1,
             explanation:
@@ -914,10 +914,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "How did the Great Bath's builders make the tank hold water?",
             options: [
-              "With a plastic liner",
-              "With finely fitted bricks set in gypsum plaster and sealed with a thick layer of bitumen (natural tar)",
-              "With loose sand",
-              "They did not; it leaked constantly",
+              "With a modern waterproof plastic liner",
+              "With fitted bricks and a bitumen tar seal",
+              "With a thick bed of loose river sand",
+              "They did not; it leaked almost constantly",
             ],
             correctIndex: 1,
             explanation:
@@ -927,10 +927,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "Why can archaeologists NOT simply state what the Great Bath was used for?",
             options: [
-              "The building was destroyed before study",
-              "The Indus script has never been deciphered, so no surviving text explains its purpose; a ritual use is a reasonable inference, not a documented fact",
-              "Archaeologists never studied it",
-              "It was clearly a swimming pool, so there is no question",
+              "The whole building was destroyed before any study",
+              "The Indus script is undeciphered, so purpose is inferred",
+              "Archaeologists have somehow simply never studied it",
+              "It was plainly just a swimming pool, so no question",
             ],
             correctIndex: 1,
             explanation:
@@ -940,10 +940,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "The Great Bath is often described as:",
             options: [
-              "The world's largest swimming pool",
+              "The world's single largest swimming pool",
               "The earliest known public water tank anywhere",
-              "A Roman invention",
-              "A natural hot spring",
+              "A late classical Roman engineering invention",
+              "A wholly natural warm volcanic hot spring",
             ],
             correctIndex: 1,
             explanation:
@@ -953,10 +953,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "Besides the Great Bath, what other evidence shows clean water mattered greatly to Indus cities?",
             options: [
-              "Nothing else survives",
-              "Wells, covered drains, and household bathing platforms appear across the cities",
-              "Written bathing manuals",
-              "Giant soap factories",
+              "Nothing else at all survives to this day",
+              "Wells, covered drains, and bathing platforms",
+              "Detailed written Indus bathing manuals survive",
+              "Enormous ancient Indus soap-making factories",
             ],
             correctIndex: 1,
             explanation:
@@ -966,10 +966,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "In Shinto, what is misogi?",
             options: [
-              "A hard soap",
-              "A purification practice of washing the body, sometimes under a cold waterfall or in a river or the sea",
-              "A public bathhouse",
-              "A Roman scraper",
+              "A hard scented olive-oil bathing soap",
+              "A Shinto purification washing practice",
+              "A large public heated Japanese bathhouse",
+              "A curved Roman metal skin scraper",
             ],
             correctIndex: 1,
             explanation:
@@ -979,10 +979,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "What socially notable idea did Buddhism add to Japanese bathing?",
             options: [
-              "That bathing was sinful",
-              "That providing baths to others, including the poor and sick, could earn religious merit, so temples built bath halls and offered charity bathing",
-              "That only monks could ever bathe",
-              "That bathing required soap imported from Rome",
+              "That all bathing was a deeply sinful act indeed",
+              "That giving baths to others earns religious merit",
+              "That only ordained monks could ever bathe",
+              "That bathing needed soap imported from Rome",
             ],
             correctIndex: 1,
             explanation:
@@ -992,10 +992,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "What is a sento?",
             options: [
-              "A natural hot spring",
-              "A public bathhouse that became a fixture of Japanese town life, especially in the Edo period",
-              "A Shinto shrine",
-              "A type of soap",
+              "A natural warm volcanic hot spring",
+              "A public bathhouse of Japanese town life",
+              "A sacred rural Japanese Shinto shrine",
+              "A hard scented Japanese bathing soap",
             ],
             correctIndex: 1,
             explanation: "The sento is Japan's public bathhouse, descended from temple baths (Government of Japan, 2019).",
@@ -1004,10 +1004,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "What is an onsen?",
             options: [
-              "A bathing platform",
-              "Bathing at a natural hot spring, popular in volcanic Japan as both a health practice and a pastime",
-              "A cold-water purification ritual",
-              "A soap-making town",
+              "A raised brick household bathing platform",
+              "Bathing at a natural volcanic hot spring",
+              "A cold-water Shinto purification ritual",
+              "A famous traditional soap-making town",
             ],
             correctIndex: 1,
             explanation: "Onsen are hot-spring baths, a beloved part of Japanese bathing culture (Government of Japan, 2019).",
@@ -1016,10 +1016,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "In the ofuro tradition, why do bathers wash and rinse fully BEFORE entering the tub?",
             options: [
-              "Because the tub water is toxic",
-              "Because the tub is for soaking and warming in clean, often shared, hot water, so washing outside first keeps that water clean",
-              "Because soap is banned in the tub for religious reasons only",
-              "Because the tub is too small to wash in",
+              "Because the tub water is somehow actually toxic",
+              "Because the shared soaking water must stay clean",
+              "Because soap is strictly banned inside the tub",
+              "Because the tub is simply far too small to wash in",
             ],
             correctIndex: 1,
             explanation:
@@ -1029,10 +1029,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "The Japanese bather being 'clean before the soak begins' is used in the course to make what point?",
             options: [
-              "That Japan copied the Roman bath exactly",
-              "That 'clean' was reached by yet another distinct method, a fourth complete tradition alongside Rome, Islam, and others",
+              "That Japan copied the Roman bath almost exactly",
+              "That 'clean' was reached by yet another method",
               "That soaking is the only real way to be clean",
-              "That the Japanese did not value cleanliness",
+              "That the Japanese did not value cleanliness at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1042,10 +1042,10 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
           {
             prompt: "Japanese tradition traces misogi to an old story about which figure washing to purify himself?",
             options: [
-              "The Buddha",
-              "The deity Izanagi, who washes after a journey to the land of the dead in the early chronicles",
-              "A Roman emperor",
-              "A Portuguese sailor",
+              "The historical Buddha himself, in one legend",
+              "The deity Izanagi, washing to purify himself",
+              "A famous early conquering Roman emperor",
+              "A lost and shipwrecked Portuguese sailor",
             ],
             correctIndex: 1,
             explanation:
@@ -1069,9 +1069,9 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
             prompt: "What is the safest honest summary of what the Great Bath proves?",
             options: [
               "That the Indus people worshipped water gods",
-              "That clean water and deliberate bathing infrastructure mattered greatly to the Indus cities, even though the exact purpose of the Bath must be inferred",
-              "That the Indus people had no interest in cleanliness",
-              "That Rome built the first baths",
+              "That clean water and bathing mattered greatly",
+              "That the Indus people ignored all cleanliness",
+              "That Rome clearly built the first ever baths",
             ],
             correctIndex: 1,
             explanation:
@@ -1156,10 +1156,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "In a Finnish sauna, what is löyly?",
             options: [
-              "The wooden bench",
-              "The burst of intense moist heat released when water is thrown on the hot stones",
-              "A bar of soap",
-              "The cold lake used for cooling off",
+              "The smooth wooden sauna sitting bench",
+              "The moist heat burst from water on hot stones",
+              "A firm bar of hard scented washing soap",
+              "The cold outdoor lake used for cooling off",
             ],
             correctIndex: 1,
             explanation: "Löyly is the steam-heat from water on the sauna stones (UNESCO, 2020).",
@@ -1168,10 +1168,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "How does a sauna get a person clean, compared with the Roman method?",
             options: [
-              "By soaking in soapy water",
-              "By heat and sweating, which opens and cleans the skin, doing by a different route much of what the Roman oil-and-strigil method did",
-              "By scraping with a strigil",
-              "By ritual ablution before prayer",
+              "By soaking a long time in warm soapy water",
+              "By heat and sweating, which opens the skin",
+              "By oiling the skin then scraping with a strigil",
+              "By ritual ablution washing before prayer",
             ],
             correctIndex: 1,
             explanation:
@@ -1181,10 +1181,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "Which traditional roles show the sauna was 'more than washing' in Finnish life?",
             options: [
-              "It was used only by soldiers",
-              "It was where women gave birth, the sick were tended, and the dead were washed and prepared, a clean, almost sacred, equal space",
-              "It was a place to store food",
-              "It was reserved for royalty",
+              "It was used only by serving Finnish soldiers",
+              "It was where births, healing, and death happened",
+              "It was mainly a place to store winter food",
+              "It was strictly reserved only for royalty",
             ],
             correctIndex: 1,
             explanation:
@@ -1195,9 +1195,9 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
             prompt: "About how many saunas does Finland have, and what does that number illustrate?",
             options: [
               "A few hundred, showing the tradition is dying",
-              "About 3.3 million for roughly 5.5 million people, showing the tradition remains central",
-              "Exactly one, a national monument",
-              "None; saunas are only historical",
+              "About 3.3 million for 5.5 million people",
+              "Exactly one, a single national monument",
+              "None at all; saunas are purely historical",
             ],
             correctIndex: 1,
             explanation:
@@ -1207,10 +1207,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "What happened to Finnish sauna culture in 2020?",
             options: [
-              "It was banned",
-              "UNESCO inscribed it on the Representative List of the Intangible Cultural Heritage of Humanity, Finland's first such inscription",
-              "It was invented",
-              "It was declared a Roman import",
+              "It was formally banned right across Finland",
+              "UNESCO inscribed it on its Heritage list",
+              "It was suddenly invented out of nothing",
+              "It was declared an ancient Roman import",
             ],
             correctIndex: 1,
             explanation: "UNESCO added sauna culture in Finland to its Representative List in 2020 (UNESCO, 2020).",
@@ -1219,10 +1219,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "What is a temazcal?",
             options: [
-              "A Mesoamerican sweat bath: a small enclosed chamber filled with steam by pouring water on hot stones",
-              "A type of Aztec soap",
-              "A Roman cold plunge",
-              "A Japanese hot spring",
+              "A Mesoamerican steam sweat-bath chamber",
+              "A type of hard scented Aztec bathing soap",
+              "A cold-water Roman frigidarium plunge pool",
+              "A Japanese volcanic natural hot spring",
             ],
             correctIndex: 0,
             explanation:
@@ -1232,10 +1232,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "The sauna and the temazcal, built by peoples with no contact, are used in the course to show what?",
             options: [
-              "That one culture must have copied the other",
-              "That different peoples independently developed the same good idea, sweat bathing, as a complete tradition of their own",
-              "That sweat bathing does not really clean anyone",
-              "That only Europe had real bathing",
+              "That one culture secretly copied the other",
+              "That different peoples independently had the idea",
+              "That sweat bathing never really cleans anyone",
+              "That only Europe ever had any real bathing",
             ],
             correctIndex: 1,
             explanation:
@@ -1245,10 +1245,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "For what purposes was the temazcal used?",
             options: [
-              "Only for cooking",
-              "Ordinary hygiene, healing (especially women recovering after childbirth), and ritual purification",
-              "Only for punishment",
-              "Only for storing water",
+              "Only for everyday communal village cooking",
+              "Hygiene, healing after childbirth, and ritual",
+              "Only for harsh judicial corporal punishment",
+              "Only for storing fresh clean drinking water",
             ],
             correctIndex: 1,
             explanation:
@@ -1258,10 +1258,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "The claim 'Moctezuma bathed twice a day' comes from which source?",
             options: [
-              "A modern textbook with no citation",
-              "A single Spanish conquistador, Andres de Tapia, whose report reaches us largely through historians like Ashenburg",
+              "A modern textbook with no citation at all",
+              "A single Spanish conquistador, Andres de Tapia",
               "An Aztec codex written by Moctezuma himself",
-              "Archaeological measurement of his palace",
+              "Archaeological measurement of his royal palace",
             ],
             correctIndex: 1,
             explanation:
@@ -1271,10 +1271,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "What is the honest way to state the Moctezuma bathing claim?",
             options: [
-              "'Moctezuma bathed twice a day,' as a plain fact",
-              "'The conquistador Andres de Tapia reported that Moctezuma bathed twice a day,' attributing and hedging the single-witness claim",
-              "Ignore it entirely because it is Spanish",
-              "'Moctezuma bathed at least three times a day,' rounding up",
+              "'Moctezuma bathed twice a day,' as plain fact",
+              "'Tapia reported Moctezuma bathed twice a day,' hedged",
+              "Ignore it entirely because the source is Spanish",
+              "'Moctezuma bathed three times a day,' rounding up",
             ],
             correctIndex: 1,
             explanation:
@@ -1284,10 +1284,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "What can be said MORE confidently than the exact 'twice a day' number?",
             options: [
-              "Nothing at all can be said",
-              "That regular bathing, including steam bathing in the temazcal, was clearly important in the Nahua world, since several accounts plus archaeology and the surviving practice agree",
-              "That the Aztecs never bathed",
-              "That only Moctezuma ever bathed",
+              "Nothing at all can really be said about it",
+              "That regular bathing clearly mattered to the Nahua",
+              "That the Aztecs simply never bathed at all",
+              "That only Moctezuma himself ever really bathed",
             ],
             correctIndex: 1,
             explanation:
@@ -1323,10 +1323,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "Why does the course practice the attribute-and-hedge discipline on the Moctezuma claim now, before Section 7?",
             options: [
-              "To fill space",
-              "Because Section 7's encounters between Europeans and other peoples turn entirely on handling single-observer claims honestly",
-              "Because the claim is unimportant",
-              "Because Section 7 has no sources",
+              "To simply fill up some empty page space here",
+              "Because Section 7 turns on single-observer claims",
+              "Because the whole claim is quite unimportant",
+              "Because Section 7 has no cited sources at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1336,10 +1336,10 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
           {
             prompt: "What is the best one-sentence summary of the sauna and temazcal lessons together?",
             options: [
-              "Sweat bathing is a crude substitute for washing in water",
-              "Getting clean by sweating in heat is a full, sophisticated tradition that several peoples developed independently",
-              "Only Finland ever used a sweat bath",
-              "The temazcal was copied from the sauna",
+              "Sweat bathing is a crude substitute for washing",
+              "Getting clean by sweating is a full tradition",
+              "Only Finland ever used any kind of sweat bath",
+              "The temazcal was directly copied from the sauna",
             ],
             correctIndex: 1,
             explanation:
@@ -1431,10 +1431,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "What were 'stews' in medieval Europe?",
             options: [
-              "Thick soups sold at market",
-              "Public bathhouses (the word comes from the steam), common in medieval towns",
-              "Prisons",
-              "Churches",
+              "Thick hot soups sold at the town market",
+              "Public bathhouses, common in medieval towns",
+              "Grim medieval town holding cells and prisons",
+              "Small local medieval parish churches",
             ],
             correctIndex: 1,
             explanation:
@@ -1444,10 +1444,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "What do the medieval stews prove about the claim 'medieval Europeans never bathed'?",
             options: [
-              "They confirm it",
-              "They disprove the medieval part of it: medieval towns had common public bathhouses, plus tub baths at home",
-              "They prove only nobles bathed",
-              "They prove bathing was illegal",
+              "They fully and neatly confirm the whole myth",
+              "They disprove the medieval part of the myth",
+              "They prove that only the nobles ever bathed",
+              "They prove all bathing was strictly illegal",
             ],
             correctIndex: 1,
             explanation:
@@ -1457,10 +1457,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "Like the Roman thermae and the hammam, the medieval bathhouse was also:",
             options: [
-              "A place of sociability, where people might eat, drink, and gather",
-              "A silent, solitary place",
-              "Only ever used by doctors",
-              "A place where washing was forbidden",
+              "A social place to eat, drink, and gather",
+              "A silent, solitary, and quite lonely place",
+              "A place used only ever by trained doctors",
+              "A place where all washing was quite forbidden",
             ],
             correctIndex: 0,
             explanation:
@@ -1471,9 +1471,9 @@ So the medieval reality is not a filthy people who had never heard of washing. I
             prompt: "When did much of western and urban Europe actually retreat from water bathing?",
             options: [
               "During the Middle Ages (roughly 500-1400)",
-              "Roughly the sixteenth and seventeenth centuries (the early modern period)",
-              "In the twentieth century",
-              "It never happened",
+              "Roughly the 1500s and 1600s, the early modern era",
+              "Mostly during the whole twentieth century",
+              "It genuinely never actually happened at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1482,7 +1482,7 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           },
           {
             prompt: "Which disease, spreading from the 1490s, especially frightened people away from communal bathhouses?",
-            options: ["Measles", "Syphilis, the 'Great Pox'", "Smallpox alone", "Scurvy"],
+            options: ["Measles, a common rash", "Syphilis, the 'Great Pox'", "Smallpox, the speckled pox", "Scurvy, a sailors' disease"],
             correctIndex: 1,
             explanation:
               "Syphilis spread across Europe from the 1490s and made crowded bathhouses look dangerous (Ashenburg, 2007).",
@@ -1491,10 +1491,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "What did early modern physicians believe warm water did to the body?",
             options: [
-              "That it strengthened the bones",
-              "That it opened the skin's pores, letting disease-bearing bad air (miasma) into the body",
-              "That it cured all disease instantly",
-              "That it had no effect at all",
+              "That it strengthened and hardened the bones",
+              "That it opened the pores to disease-bearing air",
+              "That it instantly cured almost all disease",
+              "That it had no real effect at all on health",
             ],
             correctIndex: 1,
             explanation:
@@ -1504,10 +1504,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "As water bathing declined, how did fashionable Europeans redefine cleanliness?",
             options: [
-              "By bathing in cold rivers daily",
-              "By changing clean white linen often, which was believed to draw sweat and dirt out of the body, plus perfume",
-              "By using more soap than ever",
-              "By shaving their heads",
+              "By bathing in cold open rivers each and every day",
+              "By often changing clean white linen, plus perfume",
+              "By using far more hard soap than ever before",
+              "By closely shaving their whole heads bald",
             ],
             correctIndex: 1,
             explanation:
@@ -1516,7 +1516,7 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           },
           {
             prompt: "Whose court became the emblem of 'linen-and-perfume' cleanliness with rare water immersion?",
-            options: ["The court of Louis XIV", "The Roman Senate", "The Ottoman court", "The Japanese imperial court"],
+            options: ["The court of Louis XIV", "The old Roman imperial Senate", "The Ottoman sultan's court", "The Japanese imperial court"],
             correctIndex: 0,
             explanation:
               "Louis XIV's court exemplified cleanliness by linen change rather than by immersion (Ashenburg, 2007).",
@@ -1525,10 +1525,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "How should you treat a dramatic claim that a particular king 'bathed only twice in his life'?",
             options: [
-              "As a proven fact",
-              "As the kind of single-witness anecdote to attribute and hedge, while holding onto the documented part: the system had shifted from water to linen",
-              "As evidence all Europeans were filthy forever",
-              "As certainly false and not worth mentioning",
+              "As a fully proven, documented historical fact",
+              "As a single-witness anecdote to attribute and hedge",
+              "As proof that all Europeans were filthy forever",
+              "As certainly false and not even worth a mention",
             ],
             correctIndex: 1,
             explanation:
@@ -1538,10 +1538,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "Besides disease and medical theory, what practical factor made the communal hot bath costlier to run?",
             options: [
-              "A shortage of soap",
-              "The rising cost of wood fuel needed to heat the water",
-              "A ban on towels",
-              "A tax on steam",
+              "A sudden severe shortage of good hard soap",
+              "The rising cost of the wood fuel to heat water",
+              "A strict new town-wide ban on all bath towels",
+              "A heavy new government tax on rising steam",
             ],
             correctIndex: 1,
             explanation: "Scarce, pricey wood made heating bathwater more expensive (Smith, 2007).",
@@ -1550,10 +1550,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "The 'dirty Middle Ages' myth gets two things wrong. What are they?",
             options: [
-              "The place and the language",
-              "The timing (the retreat was early modern, not medieval) and the completeness (it was partial, hitting public water bathing hardest, not a total end to washing)",
-              "The number of bathhouses and their names",
-              "Nothing; the myth is basically correct",
+              "The exact geographic place and the language",
+              "The timing (early modern) and the completeness",
+              "The count of bathhouses and their local names",
+              "Nothing at all; the myth is basically correct",
             ],
             correctIndex: 1,
             explanation:
@@ -1563,10 +1563,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "What eventually brought water bathing back and replaced the old miasma-and-pores model?",
             options: [
-              "A return to Roman religion",
-              "The 1800s sanitary movement, public baths, indoor plumbing, and above all germ theory (real microbes replacing 'bad air')",
-              "The banning of linen",
-              "The closing of all hospitals",
+              "A widespread return to old Roman religion",
+              "The 1800s sanitary movement and germ theory",
+              "A sweeping total ban on wearing clean linen",
+              "The sudden closing of all the city hospitals",
             ],
             correctIndex: 1,
             explanation:
@@ -1576,9 +1576,9 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "Why is the honest phrase a 'retreat AND a return' rather than a 'fall'?",
             options: [
-              "Because nothing ever changed",
-              "Because water bathing declined in early modern Europe and then came back from the 1700s-1800s, so it is a wheel that turned, not a permanent collapse",
-              "Because Europe never bathed again",
+              "Because nothing at all ever really changed",
+              "Because water bathing declined and then returned",
+              "Because Europe genuinely never bathed again",
               "Because the return happened in the Middle Ages",
             ],
             correctIndex: 1,
@@ -1589,10 +1589,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "A classmate says 'people in the Middle Ages were too ignorant to wash.' Using this section, what is the accurate correction?",
             options: [
-              "They are right",
-              "Medieval Europeans bathed (the stews); the pullback from water bathing came later, in the early modern period, for specific reasons (disease fear, the open-pores theory, linen, fuel cost), and was partial",
-              "Nobody in history ever washed",
-              "Only the Romans ever bathed",
+              "They are completely and entirely right on it",
+              "Medieval people bathed; the pullback came later",
+              "Nobody at all in history ever once washed",
+              "Only the ancient Romans ever really bathed",
             ],
             correctIndex: 1,
             explanation:
@@ -1602,10 +1602,10 @@ So the medieval reality is not a filthy people who had never heard of washing. I
           {
             prompt: "Erasmus, writing in the 1520s, observed what about the bathhouses of Brabant?",
             options: [
-              "That they were newly built and packed",
-              "That the once-busy bathhouses had largely emptied",
-              "That they had never existed",
-              "That they were reserved for royalty",
+              "That they were newly built and quite packed",
+              "That the once-busy bathhouses had emptied",
+              "That they had genuinely never once existed",
+              "That they were strictly reserved for royalty",
             ],
             correctIndex: 1,
             explanation:
@@ -1696,10 +1696,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "During the Crusades, what bathing culture did western European 'Franks' encounter in the Levant?",
             options: [
-              "The Japanese sento",
-              "The mature Islamic hammam, with public steam baths and fine hard soaps",
-              "The Finnish sauna",
-              "Nothing; there was no bathing there",
+              "The old wood-fired Japanese town sento",
+              "The mature Islamic hammam and fine hard soaps",
+              "The birch-scented northern Finnish sauna",
+              "Nothing at all; there was no local bathing",
             ],
             correctIndex: 1,
             explanation:
@@ -1709,10 +1709,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "Who was Usama ibn Munqidh?",
             options: [
-              "A Roman senator",
-              "A 12th-century Syrian nobleman and writer whose memoir records vivid anecdotes about the Franks, including in the baths",
-              "A Spanish conquistador",
-              "A Finnish sauna master",
+              "A famous old Roman republican senator",
+              "A 12th-century Syrian nobleman and writer",
+              "A ruthless 16th-century Spanish conquistador",
+              "A revered northern Finnish sauna master",
             ],
             correctIndex: 1,
             explanation:
@@ -1722,10 +1722,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "Why must Usama's stories about the Franks be read critically?",
             options: [
-              "Because he never met any Franks",
-              "Because he shaped his anecdotes to entertain and to stress how crude and foreign the Franks were, flattering his own side",
-              "Because the memoir is a modern forgery",
-              "Because he wrote in Latin",
+              "Because he never once actually met any Franks",
+              "Because he shaped anecdotes to flatter his side",
+              "Because the whole memoir is a modern forgery",
+              "Because he wrote the memoir entirely in Latin",
             ],
             correctIndex: 1,
             explanation:
@@ -1735,10 +1735,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "What did contact with the Islamic world during the Crusades actually do for European bathing?",
             options: [
-              "It introduced bathing to a Europe that had never washed",
-              "It exposed Europeans to a more elaborate bathing culture and to goods like fine soap, an influence, not a first introduction",
-              "It ended European bathing entirely",
-              "It had no effect at all",
+              "It introduced bathing to a Europe that never washed",
+              "It exposed Europeans to fine soap, an influence",
+              "It ended all European bathing culture entirely",
+              "It genuinely had no measurable effect at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1748,10 +1748,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "Which slogan does the course tell you to resist about the Crusades?",
             options: [
-              "'The hammam was a sophisticated institution'",
-              "'The Crusaders learned to bathe from the Muslims because Europe had no bathing'",
-              "'Usama's memoir is a valuable source'",
-              "'Soap traveled along trade routes'",
+              "'The hammam was a sophisticated old institution'",
+              "'Crusaders learned to bathe from the Muslims'",
+              "'Usama's memoir is a genuinely valuable source'",
+              "'Soap traveled along medieval trade routes'",
             ],
             correctIndex: 1,
             explanation:
@@ -1762,9 +1762,9 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
             prompt: "After 1492, what did the documented record contain about Spanish and Indigenous American perceptions of each other?",
             options: [
               "Only Spanish praise for their own cleanliness",
-              "Reports in both directions: Spanish notes on Indigenous bathing, and Indigenous accounts that the arriving Spanish were dirty and foul-smelling",
-              "Nothing was ever written down",
-              "Only Indigenous praise for the Spanish",
+              "Reports both ways, including of dirty Spaniards",
+              "Nothing at all was ever once written down",
+              "Only Indigenous praise for the clean Spanish",
             ],
             correctIndex: 1,
             explanation:
@@ -1775,9 +1775,9 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
             prompt: "Why did the timing of 1492 sharpen the hygiene contrast between the Spanish and the Nahua?",
             options: [
               "Because the Spanish had just invented soap",
-              "Because the Spanish of the 1500s came from the very century of Europe's early-modern retreat from water bathing",
-              "Because the Nahua had stopped bathing",
-              "Because it was winter",
+              "Because 1500s Spain was mid-retreat from bathing",
+              "Because the Nahua had entirely stopped bathing",
+              "Because it all happened in the dead of winter",
             ],
             correctIndex: 1,
             explanation:
@@ -1787,10 +1787,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "How should each report of mutual disgust between Spanish and Nahua be handled?",
             options: [
-              "As a flat civilizational fact",
-              "Attributed and hedged, because every one of them is an outsider describing strangers",
-              "Ignored completely",
-              "Exaggerated for effect",
+              "As a flat, settled, plain civilizational fact",
+              "Attributed and hedged, as outsider accounts",
+              "Ignored and dismissed entirely and completely",
+              "Freely exaggerated for good dramatic effect",
             ],
             correctIndex: 1,
             explanation:
@@ -1800,10 +1800,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "The mutual disgust between two societies with different hygiene standards best illustrates which of Ashenburg's points?",
             options: [
-              "That soap solves everything",
-              "That every society assumes its own way of being clean is the natural, correct one, so different standards meeting produces mutual disgust",
-              "That only Europeans had standards",
-              "That cleanliness is purely genetic",
+              "That plenty of good soap simply solves everything",
+              "That each society thinks its own way is natural",
+              "That only the Europeans ever had any standards",
+              "That cleanliness is purely and wholly genetic",
             ],
             correctIndex: 1,
             explanation:
@@ -1813,10 +1813,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "Which conclusion does the record support, and which does it NOT support?",
             options: [
-              "It supports 'clean natives civilized a dirty Europe'; it does not support any contact",
-              "It supports that Indigenous Americans documented unwashed Spaniards; it does NOT support the fairy tale that clean natives set out to civilize a dirty Europe",
-              "It supports nothing at all",
-              "It supports that Europeans were the cleanest people on Earth",
+              "It supports 'clean natives civilized dirty Europe'",
+              "It supports unwashed-Spaniard reports, not a fairy tale",
+              "It genuinely supports nothing whatsoever at all",
+              "It supports Europeans being Earth's cleanest people",
             ],
             correctIndex: 1,
             explanation:
@@ -1827,9 +1827,9 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
             prompt: "How is the 'Moctezuma bathed twice a day' report used in this section?",
             options: [
               "As undisputed proof the Aztecs were cleanest",
-              "As one attributed, hedged report (from Andres de Tapia) that fits a broader, better-supported pattern of regular Nahua bathing",
-              "As a modern invention",
-              "As evidence the Spanish never washed",
+              "As one attributed, hedged report fitting a pattern",
+              "As a recent complete modern-day fabrication",
+              "As firm proof the Spanish never once washed",
             ],
             correctIndex: 1,
             explanation:
@@ -1851,10 +1851,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "The two great encounters in this section (Crusades, Columbian exchange) share which lesson?",
             options: [
-              "That one civilization was objectively cleanest",
-              "That cross-cultural contact is real and worth studying, but the vivid witness accounts must be attributed and hedged, not flattened into 'clean people versus dirty people'",
-              "That nobody ever bathed",
-              "That soap was never traded",
+              "That one single civilization was truly cleanest",
+              "That contact is real but accounts must be hedged",
+              "That nobody anywhere ever once really bathed",
+              "That soap was genuinely never once traded at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1864,10 +1864,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "What is the accurate way to describe the Islamic world's effect on European bathing through the Crusades?",
             options: [
-              "It taught a bathless Europe to bathe for the first time",
-              "It was an influence, exposing Europeans to a more elaborate bathing culture and finer soaps that fed their tastes and trade",
-              "It had no measurable effect",
-              "It forced Europeans to stop bathing",
+              "It taught a wholly bathless Europe to first bathe",
+              "It was an influence, exposing them to finer soaps",
+              "It had no real measurable effect on them at all",
+              "It forced all Europeans to stop bathing at once",
             ],
             correctIndex: 1,
             explanation:
@@ -1877,10 +1877,10 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
           {
             prompt: "A friend says the Columbian encounter proves 'Europeans were just the dirtiest people in history.' What is the accurate correction?",
             options: [
-              "They are exactly right",
-              "The record shows a specific collision: Spaniards from Europe's early-modern retreat met a daily-bathing Nahua world, and each found the other strange; it is different standards meeting, not a permanent universal ranking",
-              "Europeans were actually the cleanest",
-              "Nothing about hygiene was ever recorded",
+              "They are exactly and completely right about it",
+              "A dated collision of standards, not a ranking",
+              "Europeans were in fact actually the cleanest",
+              "Nothing on hygiene was ever once truly recorded",
             ],
             correctIndex: 1,
             explanation:
@@ -2059,10 +2059,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "Put the claim 'medieval Europeans never bathed' on trial. What is the accurate verdict?",
             options: [
-              "True: they never bathed",
-              "A distortion: medieval Europeans did bathe (the stews), and the retreat from water bathing came later, was partial, and was caused, not from ignorance",
-              "True, but only for peasants",
-              "Impossible to evaluate",
+              "True: they simply never once bathed at all",
+              "A distortion: they bathed; the retreat came later",
+              "True, but only ever for the poorest peasants",
+              "Genuinely impossible to fairly evaluate now",
             ],
             correctIndex: 1,
             explanation:
@@ -2072,10 +2072,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "The myth makes two errors about the real European retreat from water bathing. They are:",
             options: [
-              "The country and the century",
-              "The timing (it was early modern, not medieval) and the completeness (it was partial, not total)",
-              "The soap and the linen",
-              "The names of the kings",
+              "The exact country and the precise century",
+              "The timing (early modern) and the completeness",
+              "The kind of soap and the kind of white linen",
+              "The personal names of the various old kings",
             ],
             correctIndex: 1,
             explanation: "It misdates a partial early modern retreat as a total medieval one (Section 6, Section 8).",
@@ -2084,10 +2084,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "Why is 'had to be introduced to washing by cleaner civilizations' false?",
             options: [
-              "Because no other civilizations existed",
-              "Because Europe already had its own bathhouses and tub baths, so outside contact was influence, not a first introduction",
-              "Because Europeans invented all bathing",
-              "Because soap did not exist",
+              "Because no other civilizations even existed",
+              "Because Europe already had its own bathhouses",
+              "Because Europeans alone invented all bathing",
+              "Because soap simply did not exist back then",
             ],
             correctIndex: 1,
             explanation: "You cannot introduce someone to a thing they already have (Smith, 2007; Ashenburg, 2007).",
@@ -2096,10 +2096,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "Early modern Europeans pulled back from water bathing for reasons that included all of the following EXCEPT:",
             options: [
-              "Fear of epidemic disease such as syphilis",
-              "A medical theory that warm water opened the pores to disease",
+              "Fear of epidemic disease such as raging syphilis",
+              "A theory that warm water opened the body's pores",
               "A new ideal of cleanliness based on clean linen",
-              "A religious ban on all forms of washing anywhere",
+              "A religious ban on all washing everywhere",
             ],
             correctIndex: 3,
             explanation:
@@ -2109,10 +2109,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "Where does the 'dirty Middle Ages' myth come from?",
             options: [
-              "From medieval writers themselves",
-              "From later storytellers smearing an early modern, partial retreat backward over the whole Middle Ages, and rewriting 'different standards' as 'civilized versus dirty'",
-              "From archaeological measurements",
-              "From the Islamic world",
+              "From the medieval writers their own selves",
+              "From later storytellers smearing it backward",
+              "From careful modern archaeological measurements",
+              "From the medieval Islamic bathhouse world",
             ],
             correctIndex: 1,
             explanation:
@@ -2123,9 +2123,9 @@ Those three habits work on far more than soap. They work on any confident story 
             prompt: "What is the course's honest replacement sentence for the myth?",
             options: [
               "Everyone was filthy until modern plumbing",
-              "Medieval Europeans did bathe; a partial retreat from public water bathing came later, in the early modern period, for specific reasons; and no one had to teach Europe to wash",
-              "Europe taught the world to bathe",
-              "The Aztecs were the only clean people",
+              "Medieval Europeans bathed; the retreat came later",
+              "Europe alone taught the whole world to bathe",
+              "The Aztecs were the only truly clean people",
             ],
             correctIndex: 1,
             explanation: "This is the precise, defensible statement the whole course builds toward (Section 8).",
@@ -2134,10 +2134,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "The course's first verdict, about the history of cleanliness, is:",
             options: [
-              "One ladder from dirty to clean, with a winner at the top",
-              "Many different, richly developed traditions, each sophisticated on its own terms, plus one specific, partial European retreat from public water bathing and its slow return",
-              "That soap made everyone identical",
-              "That only Rome mattered",
+              "One single ladder from dirty up to fully clean",
+              "Many rich traditions, plus one European retreat",
+              "That good soap made absolutely everyone identical",
+              "That in the end only ancient Rome ever mattered",
             ],
             correctIndex: 1,
             explanation: "Many parallel traditions plus a specific European retreat and return, not a single ladder (Smith, 2007; Ashenburg, 2007).",
@@ -2146,10 +2146,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "The course's second verdict, the transferable skill, is to think about the past by:",
             options: [
-              "Believing the most entertaining story",
-              "Weighing things against words, attributing and hedging single-witness claims, and refusing tidy stereotypes",
-              "Trusting only one source",
-              "Assuming the present is always cleaner and better",
+              "Believing the single most entertaining story",
+              "Weighing things against words, hedging claims",
+              "Trusting only one single hand-picked source",
+              "Assuming the present is always cleaner now",
             ],
             correctIndex: 1,
             explanation: "These three habits work on any confident story about how people used to live (Section 8).",
@@ -2158,10 +2158,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "'Weigh things against words' means:",
             options: [
-              "Ignore all writing",
-              "Prefer physical evidence that is hard to fake (like a watertight tank or heated floor), and treat vivid written claims, especially insults about strangers, with care",
-              "Trust travelers' insults over buildings",
-              "Only use written sources",
+              "Ignore all writing and all written sources",
+              "Prefer hard-to-fake physical evidence to insults",
+              "Trust travelers' insults over the buildings",
+              "Only ever use the written textual sources",
             ],
             correctIndex: 1,
             explanation: "Physical evidence is strong; written claims need scrutiny (Section 1, Section 8).",
@@ -2170,10 +2170,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "Which sentence is 'history' rather than 'a myth being born'?",
             options: [
-              "'Moctezuma bathed twice a day.'",
-              "'The conquistador Andres de Tapia reported that Moctezuma bathed twice a day.'",
+              "'Moctezuma always bathed twice every day.'",
+              "'Tapia reported Moctezuma bathed twice a day.'",
               "'Everyone in Mexico bathed exactly twice a day.'",
-              "'Moctezuma never bathed.'",
+              "'Moctezuma simply never once bathed at all.'",
             ],
             correctIndex: 1,
             explanation: "Attributing and hedging the single-witness claim keeps it honest (Section 8).",
@@ -2182,10 +2182,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "The Roman bath, the hammam, and the Japanese ofuro together best demonstrate that:",
             options: [
-              "Every culture bathed exactly the same way",
-              "'Clean' was reached by several different, complete methods, so no single tradition sits above the others on one ladder",
-              "Only one of them was truly clean",
-              "Bathing was rare everywhere",
+              "Every single culture bathed the exact same way",
+              "'Clean' was reached by several complete methods",
+              "That only one of the three was ever truly clean",
+              "That regular bathing was quite rare everywhere",
             ],
             correctIndex: 1,
             explanation: "Different sophisticated methods, not a single ranking (Smith, 2007).",
@@ -2194,10 +2194,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "Why does 'refuse the tidy stereotype' matter beyond the history of bathing?",
             options: [
-              "It does not; it only applies to soap",
-              "Because the habit works on any confident story that flatters one group and flattens a whole era or people, which is a very common way to be misled",
-              "Because stereotypes are always true",
-              "Because history has no other lessons",
+              "It does not; it only ever applies to soap",
+              "Because the habit works on any flattering story",
+              "Because stereotypes are almost always true",
+              "Because history holds no other real lessons",
             ],
             correctIndex: 1,
             explanation: "The comfortable, flattering version of a story is often the wrong one (Section 8).",
@@ -2206,10 +2206,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "A classmate confidently says 'other civilizations had to teach filthy medieval Europe how to wash.' Your best corrected reply is:",
             options: [
-              "'You're right, Europe never washed.'",
-              "'Medieval Europe already bathed in its stews; the pullback from water bathing was early modern, partial, and caused, and outside contact was influence, not a first lesson in washing.'",
-              "'Only the Romans ever bathed.'",
-              "'Soap was invented in France.'",
+              "'You're quite right, Europe honestly never washed.'",
+              "'Medieval Europe bathed; the pullback came later.'",
+              "'Only the ancient Romans ever really bathed at all.'",
+              "'Real hard soap was first invented over in France.'",
             ],
             correctIndex: 1,
             explanation:
@@ -2219,10 +2219,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "The sauna and the temazcal, invented independently, support the course's verdict by showing:",
             options: [
-              "That one culture copied the other",
-              "That different peoples developed sophisticated cleanliness traditions on their own, which fits 'many parallel traditions,' not one ladder",
-              "That sweat bathing does not clean",
-              "That only Europe innovated",
+              "That one culture secretly copied the other one",
+              "That different peoples developed clean traditions",
+              "That plain sweat bathing does not really clean",
+              "That in truth only Europe ever really innovated",
             ],
             correctIndex: 1,
             explanation: "Independent invention supports the many-traditions verdict (Section 5, Section 8).",
@@ -2231,10 +2231,10 @@ Those three habits work on far more than soap. They work on any confident story 
           {
             prompt: "What is the single most useful skill the course says it can leave you with?",
             options: [
-              "Memorizing every bathing date",
-              "Recognizing when a story trades an accurate, complicated picture for a tidy, flattering, wrong one",
-              "Reciting the soap recipe",
-              "Naming every Roman emperor",
+              "Memorizing every single old bathing date",
+              "Recognizing a tidy, flattering, wrong story",
+              "Reciting the full hard-soap recipe by heart",
+              "Naming every single ancient Roman emperor",
             ],
             correctIndex: 1,
             explanation:

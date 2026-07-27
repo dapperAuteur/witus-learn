@@ -350,9 +350,9 @@ None of these exceptions apply to the situation this course is about: living in 
           {
             prompt: "As a U.S. citizen, does moving abroad generally stop your Social Security payments?",
             options: [
-              "Yes, payments stop the day you leave the U.S.",
-              "Generally no, U.S. citizens can typically keep receiving payments abroad if eligible, unlike non-citizens (whose payments generally stop after six months)",
-              "Only if you notify the SSA in writing",
+              "Yes, all payments stop the very day you leave the U.S.",
+              "Generally no, eligible U.S. citizens keep payments abroad",
+              "Only if you formally notify the SSA in writing beforehand",
               "Payments only continue if you keep a U.S. mailing address",
             ],
             correctIndex: 1,
@@ -371,10 +371,10 @@ None of these exceptions apply to the situation this course is about: living in 
           {
             prompt: "What does Portugal's official national visa portal call its visa category for retirees and people living on passive income?",
             options: [
-              "The 'Golden Visa'",
-              "A 'residency visa for retirement purposes... or for people living from passive income'",
+              "The 'Golden Visa' for major property investors",
+              "A 'residency visa for retirement... passive income'",
               "It does not offer any retirement-specific visa",
-              "The 'Digital Nomad Visa'",
+              "The 'Digital Nomad Visa' for remote employees",
             ],
             correctIndex: 1,
             explanation:
@@ -384,10 +384,10 @@ None of these exceptions apply to the situation this course is about: living in 
           {
             prompt: "Does the Foreign Earned Income Exclusion generally reduce U.S. tax owed on Social Security or pension income?",
             options: [
-              "Yes, the same way it does for wages",
-              "No, that exclusion only applies to earned income (wages/self-employment), and retirement income isn't earned income",
-              "Only for people over age 70",
-              "Only if the pension is paid by a foreign employer",
+              "Yes, it works exactly the same way as it does for wages",
+              "No, it applies only to earned income, not retirement income",
+              "Only for retirees who are already over the age of 70",
+              "Only if the pension is paid by a foreign employer abroad",
             ],
             correctIndex: 1,
             explanation:
@@ -397,10 +397,10 @@ None of these exceptions apply to the situation this course is about: living in 
           {
             prompt: "Does moving abroad end a U.S. citizen's estate and gift tax filing obligations?",
             options: [
-              "Yes, once you establish residency elsewhere",
-              "No, the same IRS guidance covering income tax filing abroad also requires estate and gift tax returns, based on worldwide assets",
-              "Only estates over $1 million must still file",
-              "Only if the person dies within the U.S.",
+              "Yes, once you establish legal residency somewhere else",
+              "No, IRS rules still require estate and gift tax returns",
+              "Only estates worth over $1 million must still file",
+              "Only if the person actually dies within the U.S.",
             ],
             correctIndex: 1,
             explanation:
@@ -410,10 +410,10 @@ None of these exceptions apply to the situation this course is about: living in 
           {
             prompt: "Does Medicare generally cover healthcare costs for a retiree who has relocated to live abroad?",
             options: [
-              "Yes, anywhere in the world",
-              "No, Medicare generally doesn't cover care outside the U.S., and its narrow exceptions don't apply to someone who has relocated abroad",
+              "Yes, it covers you anywhere in the entire world",
+              "No, Medicare generally won't cover care abroad",
               "Only in countries with a U.S. military base",
-              "Only for emergency care, everywhere",
+              "Only for emergency care, absolutely everywhere",
             ],
             correctIndex: 1,
             explanation:
@@ -423,10 +423,10 @@ None of these exceptions apply to the situation this course is about: living in 
           {
             prompt: "What retirement-specific twist does this course add to Moving Abroad 101's six-factor framework for choosing a country?",
             options: [
-              "Ignoring cost of living entirely",
-              "Budgeting a fixed retirement income against currency risk over a long retirement, and confirming age-specific healthcare access and cost",
-              "Only considering countries with no income tax",
-              "Choosing based solely on climate",
+              "Ignoring the local cost of living there almost completely",
+              "Budgeting income against currency risk, plus age-based care",
+              "Only considering countries that levy no income tax at all",
+              "Choosing your country based solely on its warm climate",
             ],
             correctIndex: 1,
             explanation:
@@ -437,8 +437,8 @@ None of these exceptions apply to the situation this course is about: living in 
             prompt: "According to the Department of State's retirement-abroad guidance, who should you consult about whether your U.S. will, trust, and powers of attorney are enforceable in your destination country?",
             options: [
               "No one, U.S. estate documents automatically apply everywhere",
-              "Professionals (e.g., a local or cross-border estate attorney), since enforceability varies by country",
-              "Only the destination country's tax office",
+              "A cross-border estate attorney, since enforceability varies",
+              "Only the destination country's national tax authority",
               "This course provides a definitive answer for every country",
             ],
             correctIndex: 1,
@@ -451,7 +451,7 @@ None of these exceptions apply to the situation this course is about: living in 
             options: [
               "The SSA's Payments Abroad Screening Tool",
               "A generic online cost-of-living calculator",
-              "A travel blog's visa checklist",
+              "A travel blog's informal visa checklist",
               "None, general lists are always sufficient",
             ],
             correctIndex: 0,

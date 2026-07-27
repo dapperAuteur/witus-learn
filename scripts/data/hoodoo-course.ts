@@ -319,7 +319,7 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt:
               "Hoodoo is an African American folk-spiritual practice also known by which other name?",
-            options: ["Vodou", "Santería", "Rootwork (or conjure)", "Obeah"],
+            options: ["Vodou (a religion)", "Santería (a religion)", "Rootwork (or conjure)", "Obeah (a tradition)"],
             correctIndex: 2,
             explanation:
               "Hoodoo, conjure, and rootwork name the same African American folk-spiritual tradition of healing, protection, and power.",
@@ -352,10 +352,10 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Under slavery, the community healer and herbalist who also worked conjure was known as the…",
             options: [
-              "Circuit preacher",
-              "Overseer",
+              "Traveling circuit preacher",
+              "Plantation overseer",
               "Root (or conjure) doctor",
-              "Field driver",
+              "Hired field gang driver",
             ],
             correctIndex: 2,
             explanation:
@@ -380,10 +380,10 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Are Hoodoo and 'Voodoo' two names for exactly the same thing?",
             options: [
-              "Yes, they are identical",
-              "No, Vodou/Vodun are organized religions, while Hoodoo is a distinct African American folk practice",
-              "Yes, but only in Louisiana",
-              "No, Hoodoo is the clergy branch of Vodou",
+              "Yes, they are two names for the same one thing",
+              "No, Vodou is a religion; Hoodoo is a folk practice",
+              "Yes, but only among the folk of Louisiana",
+              "No, Hoodoo is the ordained clergy branch of Vodou",
             ],
             correctIndex: 1,
             explanation:
@@ -409,9 +409,9 @@ This is why the tradition is often described, in the title of one study in the p
               "Alongside African knowledge, which strands did enslaved people blend into what became Hoodoo?",
             options: [
               "Ancient Egyptian temple ritual and Greek philosophy",
-              "Norse rune lore and Celtic druidry",
-              "Hindu ritual and Buddhist meditation",
-              "European folk magic, Native American herb lore, and Protestant Christianity",
+              "Old Norse rune lore and ancient Celtic druid magic",
+              "Classical Hindu temple ritual and Buddhist meditation",
+              "European folk magic, Native American lore, and Christianity",
             ],
             correctIndex: 3,
             explanation:
@@ -421,10 +421,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "Why did the root doctor hold real authority in the quarters?",
             options: [
-              "Enslaved communities had little or no access to medical care, and the root doctor healed, delivered babies, and eased pain",
-              "Enslavers appointed root doctors to supervise the work gangs",
-              "Root doctors were ordained by the churches that enslavers attended",
-              "Root doctors owned the land they worked",
+              "With no doctors near, the root doctor healed and eased pain",
+              "Enslavers appointed root doctors to run the work gangs",
+              "Root doctors were ordained clergy at enslavers' churches",
+              "The root doctors owned the very land that they worked",
             ],
             correctIndex: 0,
             explanation:
@@ -435,10 +435,10 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Which small bag of roots, curios, and personal items is the tradition's signature charm?",
             options: [
-              "The reliquary",
-              "The censer",
-              "The mojo bag, also called a hand or toby",
-              "The phylactery",
+              "The holy Catholic reliquary box",
+              "The swinging brass incense censer",
+              "The mojo bag, a hand or toby",
+              "The small Jewish phylactery box",
             ],
             correctIndex: 2,
             explanation:
@@ -449,9 +449,9 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Using hair, a written name, or a photograph on the belief that a connection to the person carries the working is what anthropologists call…",
             options: [
-              "Divination",
-              "Ancestral reverence",
-              "Iconoclasm",
+              "Ritual future divination",
+              "Ancestral spirit reverence",
+              "Angry religious iconoclasm",
               "Contagious or sympathetic magic",
             ],
             correctIndex: 3,
@@ -462,10 +462,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "How did enslavers respond to conjure, according to the historical record?",
             options: [
-              "They genuinely feared conjure and poisoning, and laws and testimony reflect that fear",
-              "They ignored it entirely",
+              "They feared conjure and poisoning, as laws show",
+              "They calmly ignored conjure entirely and always",
               "They paid conjure doctors to work on their behalf",
-              "They required every enslaved person to practice it",
+              "They made every enslaved person practice conjure",
             ],
             correctIndex: 0,
             explanation:
@@ -491,9 +491,9 @@ This is why the tradition is often described, in the title of one study in the p
             prompt: "How is Hoodoo best described?",
             options: [
               "An organized religion with clergy and deities",
-              "An African American folk-spiritual practice (conjure/rootwork) for healing, protection, and power",
-              "A style of dance",
-              "A dialect of English",
+              "An African American folk-spiritual healing practice",
+              "A style of old African American social dance",
+              "A regional spoken dialect of American English",
             ],
             correctIndex: 1,
             explanation:
@@ -503,10 +503,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "How does Hoodoo differ from Vodou/'Voodoo'?",
             options: [
-              "They are identical",
-              "Hoodoo is older than all African religions",
-              "Vodou/Vodun are organized religions with deities and clergy; Hoodoo is a distinct African American folk practice",
-              "Voodoo is practiced only in the U.S.",
+              "They are wholly and entirely identical things",
+              "Hoodoo is far older than all African religions",
+              "Vodou is a religion; Hoodoo is a folk practice",
+              "Voodoo is practiced only in the modern-day U.S.",
             ],
             correctIndex: 2,
             explanation:
@@ -516,10 +516,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "Which African tradition is a likely ancestor of the Hoodoo mojo bag?",
             options: [
-              "The Central African (Kongo) nkisi/minkisi power object",
-              "The Egyptian pyramid",
-              "The Roman amulet",
-              "None, it is purely European",
+              "The Central African Kongo nkisi power object",
+              "The tall ancient Egyptian stone pyramid",
+              "The small bronze ancient Roman amulet",
+              "None at all, it is a purely European thing",
             ],
             correctIndex: 0,
             explanation:
@@ -529,9 +529,9 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "Under slavery, the root/conjure doctor most often also served as a…",
             options: [
-              "Tax collector",
-              "Plantation owner",
-              "Ship captain",
+              "A traveling colonial tax collector",
+              "A wealthy Southern plantation owner",
+              "A merchant sailing ship captain",
               "Healer, herbalist, and midwife",
             ],
             correctIndex: 3,
@@ -542,10 +542,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "How did most historical practitioners relate Hoodoo to Christianity?",
             options: [
-              "They rejected Christianity entirely",
-              "They saw conjure as compatible with their Christian faith and used the Bible as a source of power",
-              "Hoodoo forbade any religion",
-              "Only non-Christians practiced it",
+              "They fully rejected all Christianity entirely",
+              "They saw conjure as compatible with their faith",
+              "Hoodoo strictly forbade any and all religion",
+              "Only non-Christian people ever practiced it",
             ],
             correctIndex: 1,
             explanation:
@@ -555,10 +555,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "What does 'rootwork' refer to?",
             options: [
-              "Gardening for food",
-              "Tree surgery",
-              "The tradition's use of roots, herbs, and natural materials believed to hold spiritual power",
-              "Genealogy research",
+              "Simple backyard gardening for food",
+              "Professional arborist tree surgery",
+              "Using roots and herbs held to hold power",
+              "Deep ancestral genealogy research",
             ],
             correctIndex: 2,
             explanation:
@@ -568,10 +568,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "What did the Great Migration do to Hoodoo?",
             options: [
-              "Carried it into Northern and Western cities, where it met the cash economy and spiritual-supply shops",
-              "Ended it entirely",
-              "Confined it to Africa",
-              "Made it a federal religion",
+              "Carried it north into cities and cash economy",
+              "Ended the whole living tradition entirely",
+              "Confined it strictly back home to Africa",
+              "Made it a formal U.S. federal religion",
             ],
             correctIndex: 0,
             explanation:
@@ -581,10 +581,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "What tension does commercialization raise for Hoodoo?",
             options: [
-              "It makes the practice illegal",
-              "It has no effect on the tradition",
-              "It turns Hoodoo into a sport",
-              "Outsiders often package, sell, and teach a Black tradition stripped of its history, an appropriation concern",
+              "It makes the whole practice completely illegal",
+              "It has no real effect at all on the tradition",
+              "It turns Hoodoo into a mere spectator sport",
+              "Outsiders sell a Black tradition stripped of history",
             ],
             correctIndex: 3,
             explanation:
@@ -594,10 +594,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "How did Hoodoo shape American culture?",
             options: [
-              "It had no cultural impact",
-              "It runs through the blues (mojo, crossroads) and Black literature (Hurston, Reed)",
-              "It created jazz single-handedly",
-              "It only influenced sports",
+              "It had no real cultural impact on America",
+              "It runs through the blues and Black literature",
+              "It single-handedly created all of early jazz",
+              "It only ever influenced modern American sports",
             ],
             correctIndex: 1,
             explanation:
@@ -607,10 +607,10 @@ This is why the tradition is often described, in the title of one study in the p
           {
             prompt: "Why does this course present Hoodoo as cultural history rather than a how-to?",
             options: [
-              "Because Hoodoo is fake",
-              "Because it is illegal to describe",
-              "To respect a living Black tradition, centering its communities and scholarship, and avoiding appropriation and unsafe instruction",
-              "Because no sources exist",
+              "Because Hoodoo is widely thought to be entirely fake",
+              "Because it is somehow fully illegal to describe",
+              "To respect a living Black tradition and its scholarship",
+              "Because absolutely no real written sources exist",
             ],
             correctIndex: 2,
             explanation:
@@ -635,10 +635,10 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Which two areas of the Deep South does the course name as places where Hoodoo took especially deep root?",
             options: [
-              "The Mississippi Delta and the Low Country of coastal South Carolina and Georgia",
-              "New England and the Great Lakes",
-              "The Pacific Northwest and the Rocky Mountains",
-              "The Rio Grande Valley and the Ozarks",
+              "The Mississippi Delta and coastal Low Country",
+              "New England and the northern Great Lakes",
+              "The Pacific Northwest and Rocky Mountains",
+              "The Rio Grande Valley and the Ozark hills",
             ],
             correctIndex: 0,
             explanation:
@@ -663,10 +663,10 @@ This is why the tradition is often described, in the title of one study in the p
             prompt:
               "Which root does the tradition most associate with strength, luck, and mastering hardship?",
             options: [
-              "Sassafras",
+              "Sassafras tree root",
               "High John the Conqueror",
-              "Ginseng",
-              "Mandrake",
+              "Asian ginseng root",
+              "European mandrake root",
             ],
             correctIndex: 1,
             explanation:
