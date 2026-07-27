@@ -212,9 +212,9 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "In what year does the IHSAA record its first state basketball tournament, and where?",
             options: [
-              "1899, in Indianapolis",
-              "1911, at Assembly Hall on the Indiana University campus in Bloomington",
-              "1928, at Butler Fieldhouse",
+              "1899, at Tomlinson Hall in Indianapolis",
+              "1911, at Assembly Hall in Bloomington",
+              "1928, at the new Butler Fieldhouse",
               "1943, at the Indianapolis Coliseum",
             ],
             correctIndex: 1,
@@ -231,10 +231,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "When were all-Black, parochial, private and institutional high schools admitted to IHSAA membership?",
             options: [
-              "Admitted 15 August 1942 after a December 1941 Athletic Council resolution, eligible for the 1943 tournament",
-              "1911, at the tournament's founding",
-              "1954, after Brown v. Board of Education",
-              "1970, under court order",
+              "Admitted 15 August 1942, first eligible in 1943",
+              "1911, when the IHSAA first ran its tournament",
+              "1954, right after the Brown v. Board ruling",
+              "1970, under a federal desegregation order",
             ],
             correctIndex: 0,
             explanation: "For the first three decades of the state tournament, some schools were not permitted to enter it at all.",
@@ -243,10 +243,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "What did the Indianapolis Board of School Commissioners do on 22 December 1922?",
             options: [
-              "Voted to desegregate the high schools",
-              "Petitioned the IHSAA for membership",
-              "Purchased the Attucks site",
-              "Adopted a resolution authorising construction of a 'Colored High School'",
+              "Voted to desegregate all of the city's high schools",
+              "Petitioned the IHSAA for full tournament membership",
+              "Purchased the 8.4-acre site for the segregated school",
+              "Adopted a resolution authorising a 'Colored High School'",
             ],
             correctIndex: 3,
             explanation: "Judge Dillin's 1971 findings record the impetus as a petition from the Indianapolis Chamber of Commerce.",
@@ -263,9 +263,9 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
             prompt: "What happened to Black high school students in Indianapolis when Attucks opened in September 1927?",
             options: [
               "They could choose between Attucks and their neighbourhood school",
-              "They were compelled to attend Attucks regardless of where in the city they lived",
-              "Only those living within two miles were assigned there",
-              "Enrolment was voluntary until 1949",
+              "They were compelled to attend Attucks regardless of where they lived",
+              "Only those living within two miles of Attucks were assigned there",
+              "Enrolment at Attucks stayed voluntary until the 1949 state act",
             ],
             correctIndex: 1,
             explanation: "The court's words are 'forthwith compelled to attend it, regardless of their place of residence in the city.'",
@@ -274,10 +274,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "What did the 1935 amendment to Indiana's 1869 school act require?",
             options: [
-              "That the board provide transportation for Black students required to travel farther by reason of its segregation policies",
-              "That segregated schools be equally funded",
-              "That Attucks be admitted to the IHSAA",
-              "That optional attendance zones be abolished",
+              "That the board bus Black students who traveled farther under segregation",
+              "That the state equally fund the segregated schools and their facilities",
+              "That Crispus Attucks be admitted at once to the IHSAA state tournament",
+              "That the board abolish every optional attendance zone in the city",
             ],
             correctIndex: 0,
             explanation: "Buses were used to make segregation work at city scale decades before a court ordered buses to undo it. The vehicle is not the policy; the assignment rule is.",
@@ -286,10 +286,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "Chapter 186 of Indiana's Acts of 1949 did what?",
             options: [
-              "Created the township school districts",
-              "Established the IHSAA",
-              "Authorised Unigov",
-              "Declared it state policy to abolish segregated and separate schools and school districts, and required desegregation on a phased basis",
+              "Created the eight surrounding township school districts",
+              "Established the IHSAA and its statewide basketball tournament",
+              "Authorised the Unigov city-county consolidation of 1969",
+              "Declared state policy to abolish segregated schools and districts",
             ],
             correctIndex: 3,
             explanation: "Judge Dillin observed that Indiana 'completely anticipated and completely adopted the holding in Brown I' five years early. Which is why the persistence of segregation afterward is a question about boundaries, not statutes.",
@@ -298,10 +298,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "In 1874 the Indiana Supreme Court held in Cory v. Carter that:",
             options: [
-              "Segregated schools were unconstitutional",
-              "School district boundaries had to match city boundaries",
-              "Under the 1869 act, Black children were not entitled to admission to the common schools provided for white students",
-              "The IHSAA could not exclude Black schools",
+              "That segregated public schools were plainly unconstitutional",
+              "That school district lines had to match the city boundaries",
+              "That the 1869 act barred Black children from the white schools",
+              "That the IHSAA could not lawfully exclude all-Black schools",
             ],
             correctIndex: 2,
             explanation: "An 1877 amendment required admission to white schools only where no separate school of comparable grade was provided.",
@@ -310,10 +310,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "Which Attucks championship claim has the cleanest, most checkable citation?",
             options: [
-              "That the 1955 team was the first Indianapolis boys team to win the state tournament begun in 1911",
-              "That it was the first all-Black team in the nation to win a state title",
-              "That it never lost a tournament game",
-              "That it was the first team to win three titles",
+              "That the 1955 team was Indianapolis's first boys state champion",
+              "That it was the first all-Black team in the nation to win a title",
+              "That it was the first Indiana team to finish a season undefeated",
+              "That it was the first team ever to win three straight state titles",
             ],
             correctIndex: 0,
             explanation: "It is checkable against the tournament's own champion list. The national superlative requires checking every state association's record before 1955, which this course has not done.",
@@ -322,10 +322,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "Attucks won the 1955 state final against which school, and why is that matchup significant?",
             options: [
-              "Milan; it was the Hoosiers rematch",
-              "Gary Roosevelt, also an all-Black school, so both teams on the state's biggest stage were segregated schools",
-              "Lafayette Jefferson; it was the first integrated final",
-              "Shelbyville; it was Bill Garrett's old school",
+              "Milan, the school from the 1954 Hoosiers championship",
+              "Gary Roosevelt, itself an all-Black segregated school",
+              "Lafayette Jefferson, the state's first integrated final",
+              "Shelbyville, coach Bill Garrett's former high school",
             ],
             correctIndex: 1,
             explanation: "The Indiana Historical Bureau's account notes that with two Black teams on the floor there was no question of biased officiating deciding it.",
@@ -334,10 +334,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "Three sources describe the celebration after the 1955 championship. What does this course do?",
             options: [
-              "Picks the most dramatic version",
-              "Omits the celebration",
-              "Averages them",
-              "Gives all three with their owners, notes they agree the celebration ended at Northwestern Park and disagree about the Circle, and names the unread records that would settle it",
+              "Picks the single most dramatic of the three accounts",
+              "Omits the disputed celebration from the course entirely",
+              "Averages the three accounts into a single combined version",
+              "Gives all three, attributed, and names what would settle it",
             ],
             correctIndex: 3,
             explanation: "The Encyclopedia has a mayoral greeting at the Circle; the Historical Bureau has a shortened parade route; Sports Illustrated says police would not let the team stop there. The emphasis is the disagreement.",
@@ -346,10 +346,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "Who coached the 1959 Attucks championship team, and what else is he known for?",
             options: [
-              "Ray Crowe, who also coached 1955 and 1956",
-              "Matthias Nolcox, the school's first principal",
-              "Bill Garrett, who led Shelbyville to the 1947 state title and whose 1948 Indiana University debut challenged the Big Ten's unwritten bar on Black players",
-              "Oscar Robertson, as a player-coach",
+              "Ray Crowe, who also coached the 1955 and 1956 champions",
+              "Matthias Nolcox, the school's first principal from 1927",
+              "Bill Garrett, who led Shelbyville to the 1947 state title",
+              "Oscar Robertson, serving as the team's player-coach",
             ],
             correctIndex: 2,
             explanation: "The Indiana Historical Bureau's 'Integrating Basketball' marker records Garrett's IU career and his appointment at Attucks in 1957.",
@@ -357,7 +357,12 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           },
           {
             prompt: "When did Attucks next win a state championship after 1959?",
-            options: ["1970", "1988", "2006", "2017, in Class 3A"],
+            options: [
+              "1970, under the single-class format",
+              "1988, in the Class 4A bracket",
+              "2006, in the Class 2A bracket",
+              "2017, in the Class 3A final",
+            ],
             correctIndex: 3,
             explanation: "Fifty-eight years later. The school is open, competing and being expanded today, which is why this course refuses a lost-golden-age frame.",
             sourceLessonSlug: "gcl-attucks-champions",
@@ -365,10 +370,10 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
           {
             prompt: "Sports Illustrated titled its account of Attucks 'The real Hoosiers tale.' What does that headline concede?",
             options: [
-              "That the film Hoosiers was factually accurate",
-              "That the championship a state made into a national film was Milan's in 1954, while three championships by a segregated Black high school in 1955, 1956 and 1959 did not become the movie",
-              "That Attucks was fictional",
-              "That Milan and Attucks played each other",
+              "That the film Hoosiers was an entirely accurate account",
+              "That Milan's 1954 title became the film, not Attucks's three",
+              "That the Attucks championship run was largely fictional",
+              "That Milan and Attucks met in the 1954 state championship",
             ],
             correctIndex: 1,
             explanation: "Which story a place tells about itself is evidence about the place, and Section 6 asks you to write about that kind of evidence.",
@@ -1135,10 +1140,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "Quote Judge Dillin's 1971 finding about boundary changes in the Indianapolis system.",
             options: [
-              "Approximately 350 boundary changes since 1954, more than 90 percent of which promoted segregation",
-              "Exactly 360 changes, all of which promoted segregation",
-              "About 100 changes, half of which promoted segregation",
-              "No boundary changes were found to be segregative",
+              "About 350 boundary changes since 1954, over 90 percent segregative",
+              "Exactly 360 boundary changes since 1954, all of them segregative",
+              "Roughly 100 boundary changes since 1954, half of them segregative",
+              "No boundary changes since 1954 were found to be segregative",
             ],
             correctIndex: 0,
             explanation: "The widely repeated 'ninety percent of 360' comes from a secondary account counting a different period. Quote the opinion, cite the page, and give the period.",
@@ -1147,10 +1152,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "What did the court find optional attendance zones actually did?",
             options: [
-              "They equalised enrolment between crowded and empty schools",
-              "They were drawn where neighbourhoods mixed, and white students in them almost always chose white schools, so individual choices did the sorting",
-              "They were never used in Indianapolis",
-              "They applied only to students living more than two miles from school",
+              "They equalised enrolment between crowded and half-empty schools",
+              "They let white students in mixed zones keep choosing white schools",
+              "They were used only in the all-Black neighbourhoods of the city",
+              "They applied only to students living over two miles from a school",
             ],
             correctIndex: 1,
             explanation: "A policy that is facially neutral and statistically one-directional is doing work, and the direction is the evidence.",
@@ -1159,10 +1164,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "The transfer rules the court found operated how?",
             options: [
-              "Both rules made transfers easier for everyone",
-              "Both rules were struck down before Attucks opened",
-              "A sibling preference let white students escape Attucks, while a two-mile proximity rule kept Black students within two miles of Attucks from transferring out",
-              "Transfers were decided by lottery",
+              "Both transfer rules were designed to help every student equally",
+              "Both transfer rules were struck down well before Attucks opened",
+              "A sibling preference let white students transfer out of Attucks",
+              "Transfers were decided each year by a random public lottery",
             ],
             correctIndex: 2,
             explanation: "The court called the sibling preference a grandfather clause; it remained in effect through March 1970. Neither rule mentions race and both are race policy.",
@@ -1171,10 +1176,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "What was Indiana's historic coterminous rule, and when was it recognised by statute?",
             options: [
-              "School districts had to match county lines, from 1869",
-              "School districts were drawn by the state board, from 1949",
-              "Attendance zones had to match ward lines, from 1922",
-              "When a city extended its corporate limits the school city's boundaries followed, so the two were the same shape; recognised by statute in 1931",
+              "School districts had to match the county lines, fixed in 1869",
+              "School districts were drawn by the state board, starting in 1949",
+              "Attendance zones had to match the city's ward lines, from 1922",
+              "A city's annexations extended its school city too, recognised in 1931",
             ],
             correctIndex: 3,
             explanation: "One boundary, one electorate, one tax base, one school system. A city could not grow its tax base and leave its schools behind, because the law did not let the two come apart.",
@@ -1183,9 +1188,9 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "The 1961 Act of the Indiana General Assembly applied to which territory, and what did it change?",
             options: [
-              "Marion County only; it made a civil annexation merely a prima facie school annexation, subject to a separate remonstrance by the losing school corporation",
-              "The whole state; it abolished school district boundaries",
-              "Marion and Hamilton counties; it merged their school systems",
+              "Marion County only; it made civil annexation only prima facie for schools",
+              "The whole state; it abolished all existing school district boundaries",
+              "Marion and Hamilton counties; it merged their two school systems",
               "Indianapolis only; it required a referendum before any annexation",
             ],
             correctIndex: 0,
@@ -1195,10 +1200,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "What is a remonstrance, and why does adding one to a process matter?",
             options: [
-              "A public hearing required before any vote; it slows decisions down",
-              "A tax appeal; it reduces the amount owed",
-              "A formal objection by affected parties that can block or delay an action; it forbids nothing but makes an automatic step stoppable by whoever shows up",
-              "A court injunction; it ends the process entirely",
+              "A public hearing held before any vote; it only slows decisions down",
+              "A formal tax appeal that lowers the assessed amount a district owes",
+              "A formal objection that can block or delay an otherwise automatic step",
+              "A binding court injunction that ends the annexation process entirely",
             ],
             correctIndex: 2,
             explanation: "Before 1961 school annexation followed civil annexation automatically in Indiana. After it, in Marion County, somebody could stop it.",
@@ -1207,10 +1212,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "How did the Seventh Circuit describe what Unigov did to the Indianapolis school district?",
             options: [
-              "It merged the district with the eight township systems",
-              "It dissolved the district and replaced it with a county board",
-              "It required the district to expand with the city",
-              "The Act expressly provided the school district would not be affected by the expansion of the city, leaving it confined to the central part of the new Uni-Gov, surrounded by eight township systems and two additional city school corporations",
+              "It merged the IPS district with the eight township school systems",
+              "It dissolved the district and handed control to a new county board",
+              "It required the school district to expand outward with the city",
+              "The Act left the school district unaffected as the city expanded",
             ],
             correctIndex: 3,
             explanation: "A city grew to fill a county. Its school district stayed a hole in the middle of that county, ringed by ten independent systems inside the same city.",
@@ -1219,10 +1224,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "In the participants' own words, why were schools excluded from Unigov?",
             options: [
-              "Including schools would have raised the spectre of racial integration and meant instant death for the plan, and Mayor Lugar said the bill would die if schools were included",
-              "The school board asked to be included and was refused by the state",
-              "Federal law forbade including schools in a city-county consolidation",
-              "There was no time to draft the school provisions",
+              "Including schools would have meant instant death for the whole plan",
+              "The school board asked to be included but was refused by the state",
+              "Federal law then forbade including schools in any city-county merger",
+              "There was simply no time left to draft the school provisions",
             ],
             correctIndex: 0,
             explanation: "Board president Landrum Shields added, 'We cooperated with the Mayor by not killing Unigov.' The exclusion was the price of passage, stated at the time by the people who paid it.",
@@ -1231,10 +1236,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "Judge Dillin found the surrounding township districts had not committed acts of de jure segregation. Why?",
             options: [
-              "Because they had adopted voluntary integration plans",
-              "Because they had, with few exceptions, no opportunity to, since the Black population within their borders ranged from slight to none",
-              "Because they were governed by the same board as IPS",
-              "Because the evidence against them was excluded at trial",
+              "Because they had all adopted voluntary integration plans early",
+              "Because their Black population ranged from very slight to none",
+              "Because they were then governed by the very same board as IPS",
+              "Because the evidence against them was all excluded at the trial",
             ],
             correctIndex: 1,
             explanation: "A district line can produce a segregated system without a single discriminatory act inside any district. The boundary had already done the work.",
@@ -1243,10 +1248,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "Who was ultimately held liable for funding the Marion County-wide desegregation remedy?",
             options: [
-              "Indianapolis Public Schools alone",
-              "The eight township districts, in proportion to enrolment",
-              "The federal government, under Title IV",
-              "The State of Indiana, because the State alone bore liability for the constitutional violations",
+              "Indianapolis Public Schools alone, from its own local budget",
+              "The eight township districts, split in proportion to enrolment",
+              "The federal government, under Title IV of the Civil Rights Act",
+              "The State of Indiana, which alone bore the constitutional liability",
             ],
             correctIndex: 3,
             explanation: "Dillin imputed the violation to the State in July 1973 and held the State responsible for the cost in July 1981. When a school board is a creature of a state, the state can be the defendant.",
@@ -1255,10 +1260,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "In which direction did the inter-district busing that began in August 1981 actually run?",
             options: [
-              "Both directions equally from the first day",
-              "One way, out of IPS: about 5,500 Black students to six township districts",
-              "Into IPS only, from the townships",
-              "Between the townships, bypassing IPS",
+              "Both directions equally, from the very first day of busing",
+              "One way, out of IPS: about 5,500 Black students to six townships",
+              "Into IPS only, busing township students inward each morning",
+              "Between the outer townships alone, bypassing IPS entirely",
             ],
             correctIndex: 1,
             explanation: "The Seventh Circuit did not authorise transfers into IPS until April 1980, and the implemented remedy still ran outward. A remedy can be lawful and asymmetric in who bears its inconvenience.",
@@ -1267,10 +1272,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "What did a court have to establish separately in 1984, three years after busing began?",
             options: [
-              "That the buses met state safety standards",
-              "That the State would reimburse transport costs",
-              "That parents of bused students could vote and run in the township school board elections governing their children's schools",
-              "That bused students could play on township athletic teams",
+              "That every bus used actually met the state safety standards",
+              "That the State would fully reimburse the district's transport costs",
+              "That bused students' parents could vote in township board elections",
+              "That bused students could play on the township athletic teams",
             ],
             correctIndex: 2,
             explanation: "Representation does not follow a student automatically. It had to be granted, and somebody had to ask.",
@@ -1279,10 +1284,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "State the threshold Milliken v. Bradley set for a cross-district desegregation remedy.",
             options: [
-              "Any statewide racial imbalance justifies consolidating districts",
-              "A cross-district remedy is available whenever a central district is majority Black",
-              "District lines may never be crossed for any reason",
-              "It must first be shown that a constitutional violation within one district produces a significant segregative effect in another, and specifically that discriminatory acts of the state or local districts were a substantial cause of inter-district segregation",
+              "Any statewide racial imbalance is enough to justify merging the districts",
+              "A remedy may cross lines whenever the central district is majority Black",
+              "No desegregation remedy may ever cross a school district boundary line",
+              "A violation in one district must cause significant segregation in another",
             ],
             correctIndex: 3,
             explanation: "Decided 25 July 1974, 5 to 4. The district boundary becomes the presumptive limit of the remedy, defended by the value the Court names: local control of schools.",
@@ -1291,10 +1296,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "Which clause of the Milliken standard did the Indianapolis plaintiffs satisfy, and with what evidence?",
             options: [
-              "The clause allowing a remedy where district lines have been deliberately drawn on the basis of race; the evidence was the 1969 Unigov statute, which moved the city line and expressly left the school line, explained on the record at the time",
-              "The clause about statewide financial disparities; the evidence was per-pupil spending",
-              "The clause about faculty assignment; the evidence was teacher transfers",
-              "No clause; the Indianapolis remedy was struck down entirely",
+              "The race-drawn-lines clause; the evidence was the 1969 Unigov statute itself",
+              "The statewide school-finance clause; the evidence was per-pupil spending gaps",
+              "The faculty-assignment clause; the evidence was the record of teacher transfers",
+              "No clause; the Indianapolis metropolitan remedy was struck down entirely",
             ],
             correctIndex: 0,
             explanation: "In most metros a plaintiff cannot show a decision about the line itself. Indiana's legislature had written one down and dated it.",
@@ -1303,10 +1308,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "This course corrects the claim that 'the Seventh Circuit found Unigov fostered segregation.' What is the accurate version?",
             options: [
-              "No court ever made such a finding",
-              "The Supreme Court made the finding in Milliken",
-              "The Seventh Circuit reversed the remedy beyond the Uni-Gov line and remanded the question inside it; Judge Dillin made the finding on remand on 1 August 1975, and found discriminatory intent 'perfectly obvious' on 11 July 1978",
-              "The Seventh Circuit made the finding, but in 1976 rather than 1974",
+              "No court at any level, state or federal, ever made such a finding",
+              "The Supreme Court itself made this very finding in Milliken",
+              "The Seventh Circuit reversed and remanded; Dillin found intent in 1978",
+              "The Seventh Circuit did make the finding, but in 1976 and not 1974",
             ],
             correctIndex: 2,
             explanation: "Attributing a trial court's fact-finding to an appellate court, or a 1978 intent finding to a 1974 opinion, changes the meaning. The intent finding was only required after the Supreme Court remanded in January 1977.",
@@ -1724,10 +1729,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "Why can no 360 tour ever show you the most important object in this course?",
             options: [
-              "Because the cameras are not high enough",
-              "Because a school district boundary has no physical existence: no fence, no sign, no change in the pavement. It exists only as a description in a record",
-              "Because district boundaries are confidential",
-              "Because boundaries change too often to photograph",
+              "Because the tour cameras simply are not mounted high enough",
+              "Because a district boundary has no physical existence to photograph",
+              "Because school district boundaries are legally confidential records",
+              "Because the boundaries change far too often to ever photograph",
             ],
             correctIndex: 1,
             explanation: "That invisible line decides which building a child may enter, which is the strongest possible argument for reading records rather than only looking.",
@@ -1748,10 +1753,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "How should you treat a championship banner or a dedication plaque in a school lobby?",
             options: [
-              "As decoration, not evidence",
-              "As proof that the events happened as described",
-              "As a source that needs no citation",
-              "As a document with an author, a sponsor and a date, recording what an institution agreed to say in public in a particular year",
+              "As mere lobby decoration, never as historical evidence",
+              "As firm proof the events happened exactly as described",
+              "As a trustworthy source that needs no further citation",
+              "As a dated document with an author and a sponsor behind it",
             ],
             correctIndex: 3,
             explanation: "Note which years are up and which are not, and who decides what goes on the wall.",
@@ -1760,10 +1765,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "Why does the lesson map plot other cities rather than Marion County's eleven districts?",
             options: [
-              "Because Marion County data is unavailable",
-              "Because a fixed world projection needs points roughly two degrees apart to separate them, and Marion County is about 25 kilometres across, so it collapses into one dot",
-              "Because the other cities are more important",
-              "Because the map cannot display markers in Indiana",
+              "Because the Marion County boundary data is entirely unavailable",
+              "Because Marion County is too small to separate into distinct dots",
+              "Because the other cities matter far more to this argument here",
+              "Because the base map cannot display any markers inside Indiana",
             ],
             correctIndex: 1,
             explanation: "Choosing the right scale of map for your question is a research skill. For a boundary you need a boundary file, not a world map.",
@@ -1772,10 +1777,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "What did the Connecticut Supreme Court hold in Sheff v. O'Neill in 1996, and why is it on this map?",
             options: [
-              "That Milliken applied to state courts as well",
-              "That Hartford's schools were adequately integrated",
-              "That the state had an affirmative constitutional obligation to provide substantially equal educational opportunity, and that districting based on town and city boundary lines was unconstitutional",
-              "That school districts could secede from their counties",
+              "That Milliken's federal rule applied to the state courts too",
+              "That Hartford's schools were already adequately integrated",
+              "That the state had a duty to provide equal educational opportunity",
+              "That school districts were free to secede from their counties",
             ],
             correctIndex: 2,
             explanation: "Milliken is a federal constitutional decision and does not control what a state constitution requires. That question has fifty different answers.",
@@ -1784,10 +1789,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "In the Memphis and Shelby County case, why was the first statute allowing suburban municipalities to form their own districts struck down?",
             options: [
-              "Because a federal judge found the state legislation violated the state constitution because it applied only to Shelby County",
-              "Because the municipalities failed to hold referenda",
-              "Because the districts were too small to be viable",
-              "Because the merger had not yet taken effect",
+              "Because it unconstitutionally applied only to Shelby County",
+              "Because the suburban municipalities failed to hold their referenda",
+              "Because the proposed new districts were far too small to be viable",
+              "Because the county-wide school merger had not yet taken effect",
             ],
             correctIndex: 0,
             explanation: "That is the same one-county carve-out technique Indiana used in 1961. Tennessee's constitution treats such local legislation differently than Indiana's did.",
@@ -1803,10 +1808,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "In Indiana, which money pays for classroom operations and which pays for buildings and buses?",
             options: [
-              "Both come from local property tax",
-              "Both come from the state budget",
-              "Classrooms are funded by federal grants and buildings by the county",
-              "Classroom operations come mainly from state tuition support distributed by formula; buildings and buses come from local property tax through the operations fund, debt service and any referendum levy",
+              "Both come entirely from the local property tax on real estate",
+              "Both come straight from the state's general fund budget alone",
+              "Classrooms come from federal grants and buildings from the county",
+              "State aid pays classrooms; local property tax pays for buildings",
             ],
             correctIndex: 3,
             explanation: "Which is why a gym is a boundary question even in a state that pays for teaching centrally.",
@@ -1815,10 +1820,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "Why does a district boundary still determine what a community can build, even where the state pays for teaching?",
             options: [
-              "Because a property tax levy raises rate multiplied by the assessed value inside the line, so two districts with identical rates and identical children raise different amounts",
-              "Because the state gives extra money to wealthy districts",
-              "Because building codes vary by district",
-              "Because construction contracts are awarded by school boards",
+              "Because a levy equals the tax rate times the value inside the line",
+              "Because the state deliberately gives extra money to wealthy districts",
+              "Because the building codes themselves vary from district to district",
+              "Because all construction contracts are awarded by the local school board",
             ],
             correctIndex: 0,
             explanation: "A district with high-value property inside its line can build a fieldhouse at a rate that raises nothing like as much next door.",
@@ -1839,10 +1844,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "What did Senate Enrolled Act 1 of 2025 change about school referendums?",
             options: [
-              "It abolished school referendums",
-              "It required a two-thirds majority to pass one",
-              "It raised homestead deductions, restricted referendum questions to November general elections in even-numbered years, and required referendum revenue to be shared with charter schools statewide from 2028",
-              "It transferred referendum authority to county councils",
+              "It permanently abolished all local school referendums outright",
+              "It required a full two-thirds supermajority to pass a referendum",
+              "It limited referendums to even-year November general elections",
+              "It transferred all referendum authority to the county councils",
             ],
             correctIndex: 2,
             explanation: "The Indiana Fiscal Policy Institute projects districts will lose about 338 million dollars in anticipated revenue by 2028, and IPS an estimated 97 million between 2026 and 2032. A district now gets one ballot chance every two years.",
@@ -1851,10 +1856,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "Under Indiana Code 20-23-5, what does it take to move territory from one school corporation to another?",
             options: [
-              "A resolution adopted by both the losing and the gaining district, with voters in the losing district able to file a remonstrance",
-              "A single vote of the state board of education",
-              "A county-wide referendum",
-              "An order of the Department of Local Government Finance",
+              "Resolutions by both districts, with voters able to remonstrate",
+              "A single vote of the full state board of education alone",
+              "A binding county-wide public referendum of the voters",
+              "A direct order of the Department of Local Government Finance",
             ],
             correctIndex: 0,
             explanation: "The remonstrance the 1961 act inserted into Marion County school annexations is still in the statute sixty-five years later.",
@@ -1863,10 +1868,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "What did House Enrolled Act 1423 of 2026 do?",
             options: [
-              "It merged IPS with the eight township districts",
-              "It shrank the IPS boundary to Center Township",
-              "It abolished the IPS school board outright",
-              "It created the Indianapolis Public Education Corporation, a nine-member board appointed by the mayor that takes over budgets and levies, property, transportation and school performance, with full implementation in 2028-29",
+              "It formally merged IPS with the eight township districts",
+              "It shrank the IPS boundary down to Center Township alone",
+              "It abolished the elected IPS school board entirely at once",
+              "It created a nine-member education board appointed by the mayor",
             ],
             correctIndex: 3,
             explanation: "Note what it did NOT do: it did not move the boundary. It moved the power inside it. Ask both questions about any district: where is the line, and who holds power inside it?",
@@ -1875,10 +1880,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "The November 2025 proposal to shrink IPS to Center Township would have done what, and what is its status?",
             options: [
-              "Removed 47 district and charter schools and affected more than 10,000 students; nothing has been adopted",
-              "Added three townships to IPS; it was adopted in December 2025",
-              "Merged IPS with Beech Grove and Speedway; it is before a court",
-              "Dissolved IPS entirely; it takes effect in 2028",
+              "Removed 47 schools and 10,000-plus students; nothing adopted yet",
+              "Added three whole townships to IPS; it was adopted in December 2025",
+              "Merged IPS with Beech Grove and Speedway; it is now before a court",
+              "Dissolved the IPS district entirely; it takes full effect in 2028",
             ],
             correctIndex: 0,
             explanation: "Bounded by 38th Street, Emerson Avenue, Troy Avenue and Belmont Avenue. 'Not adopted yet' is the finding, and it is where a citizen has the most leverage.",
@@ -1887,10 +1892,10 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
           {
             prompt: "The exercise ends with one rule you do not get to break. What is it?",
             options: [
-              "Never criticise a school board in writing",
-              "Do not run the drill on a child: never attach a named student to an address, a school assignment or a demographic figure in anything you publish",
-              "Never download the boundary files",
-              "Do not attend a public meeting without permission",
+              "Never once criticise a sitting school board in your writing",
+              "Never attach a named student to an address or a school assignment",
+              "Never download the district's public boundary files yourself",
+              "Never attend any public board meeting without prior permission",
             ],
             correctIndex: 1,
             explanation: "Practise on institutions, boundaries and public bodies. A school is a public body. A student is not.",

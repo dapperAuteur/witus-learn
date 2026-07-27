@@ -182,10 +182,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "Where is Southwest in relation to the rest of Washington?",
             options: [
-              "It is the smallest quadrant, a low wedge between the Capitol and the Potomac and Anacostia rivers",
-              "It is the largest quadrant, north of the Capitol",
-              "It is a suburb in Maryland",
-              "It is the federal Mall itself",
+              "It is the smallest quadrant, a low wedge between the Capitol and the river confluence",
+              "It is the largest quadrant, lying north of the Capitol out to the Maryland line",
+              "It is a Maryland suburb across the Anacostia, annexed to the city after the Civil War",
+              "It is the federal Mall itself, the open green spine running west of the Capitol",
             ],
             correctIndex: 0,
             explanation: "Southwest is the smallest of the city's four quadrants, a flat wedge of land at the river confluence, which began as a working port.",
@@ -208,10 +208,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "What is an alley dwelling?",
             options: [
-              "A luxury apartment on a main avenue",
-              "A federal office building",
-              "A houseboat on the waterfront",
-              "A house built inside a city block, behind the street-facing row houses and reached through a narrow passage",
+              "A luxury apartment fronting a main avenue, built for the district's wealthiest tenants",
+              "A federal office block raised along the cleared Southwest waterfront in the 1960s",
+              "A houseboat moored at the Maine Avenue wharf, rented as seasonal riverfront housing",
+              "A small house inside a city block, behind the row houses, up a narrow passage",
             ],
             correctIndex: 3,
             explanation: "Alley dwellings were a distinctive Washington form, often occupied by African American families, and reformers had defined them as a problem for half a century.",
@@ -227,10 +227,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "Every figure in the Berman housing survey measures the same kind of thing. What is it?",
             options: [
-              "The residents' incomes",
-              "The building fabric, such as plumbing, wiring and repair",
-              "Neighbourhood crime",
-              "The count of local businesses",
+              "The residents' incomes and how much rent each household paid",
+              "The building fabric: its plumbing, wiring and state of repair",
+              "The rate of neighbourhood crime recorded by the police",
+              "The number of local businesses and church congregations",
             ],
             correctIndex: 1,
             explanation: "The survey counts only fabric, so it can only ever recommend replacing fabric. It measures nothing about the community.",
@@ -239,10 +239,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "What is the \"circularity\" this course identifies in blight measurement?",
             options: [
-              "Surveys are taken twice",
-              "The buildings are round",
-              "The poor conditions follow from decades of withheld investment and lending, and are then used to justify clearing the people who suffered them",
-              "One family is counted more than once",
+              "The same block is surveyed twice and the two counts are averaged together",
+              "The redevelopment plan is drawn as a ring of blocks around a central plaza",
+              "Decades of withheld lending cause the conditions later cited to justify clearance",
+              "One displaced family is accidentally counted more than once in the totals",
             ],
             correctIndex: 2,
             explanation: "The condition and its cause can be the same policy at two dates, which is the most important idea in the course.",
@@ -251,10 +251,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "Does a housing survey, by itself, decide that a neighbourhood should be demolished?",
             options: [
-              "Yes, the survey is the decision",
-              "Only if over half the buildings fail",
-              "Only a court may order a survey",
-              "No, demolition is a separate decision made by a body under a statute, which cites the survey",
+              "Yes, the survey findings are the demolition order themselves",
+              "Only when more than half the surveyed buildings are beyond repair",
+              "Only a federal court may order a survey and the clearance that follows",
+              "No, demolition is a separate decision a body makes under a statute",
             ],
             correctIndex: 3,
             explanation: "People make the decision and cite the numbers. The survey is evidence, not a verdict.",
@@ -263,10 +263,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "By the most cited estimate, roughly how much of Southwest was cleared, and how many residents were displaced?",
             options: [
-              "About 99 percent of buildings on roughly 560 acres, displacing about 23,000 residents",
-              "About half the buildings, roughly 5,000 residents",
-              "A single block, about 200 residents",
-              "The whole quadrant, about 100,000 residents",
+              "About 99 percent of buildings on roughly 560 acres, about 23,000 residents",
+              "About half the buildings on some 200 acres, roughly 5,000 residents",
+              "A single block near the waterfront, about 200 displaced residents",
+              "The whole quadrant and much of Southeast, about 100,000 residents",
             ],
             correctIndex: 0,
             explanation: "About 99 percent of buildings on roughly 560 acres, with about 23,000 residents and 1,500 businesses displaced. These are compiled figures, so carry their owner.",
@@ -275,10 +275,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "How should you treat the \"23,000 residents, 1,500 businesses, 560 acres\" figures?",
             options: [
-              "As an exact single census count",
-              "As compiled figures repeated across local histories: name the source and say what each counts",
-              "As invented and unusable",
-              "As a federal survey with a stated method",
+              "As one exact tabulation taken straight from the 1950 federal census count",
+              "As compiled figures from local histories: name the source and what each counts",
+              "As invented figures with no source at all, which cannot honestly be used",
+              "As a single federal survey published with one clearly stated method",
             ],
             correctIndex: 1,
             explanation: "Different accounts round the residents or count families rather than people. Carry the owner of the number, as the Indiana Avenue course did with its contested figure.",
@@ -287,10 +287,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "What did Daniel Thursz's 1966 study set out to measure?",
             options: [
-              "The architectural quality of the new buildings",
-              "The cost of the freeway",
-              "What happened to the residents of Southwest after they were displaced",
-              "The number of federal employees in the area",
+              "The architectural quality of the new modernist superblocks",
+              "The construction cost of the Southeast-Southwest Freeway",
+              "What happened to Southwest's residents after they were displaced",
+              "The number of federal employees working in the cleared area",
             ],
             correctIndex: 2,
             explanation: "Where Are They Now? followed displaced families, published by the Health and Welfare Council of the National Capital Area.",
@@ -299,10 +299,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "What did Thursz find about housing cost after displacement?",
             options: [
-              "Everyone paid less",
-              "Rents were unchanged",
-              "The city paid all housing costs",
-              "57 percent paid more than they had in Southwest, most at least 20 dollars a month more",
+              "Nearly everyone paid less rent in their new homes than before",
+              "Rents stayed the same because the new housing was rent-controlled",
+              "The city covered all housing costs for the displaced families",
+              "57 percent paid more than in Southwest, most at least 20 dollars more",
             ],
             correctIndex: 3,
             explanation: "Housing quality often rose, but at a higher price, which is the uncomfortable finding renewal's promise did not account for.",
@@ -311,10 +311,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "What happened to employment among displaced household heads, according to Thursz?",
             options: [
-              "The share not working rose from 52 percent to 62 percent, partly because people lived farther from work",
-              "It improved sharply",
-              "It was unaffected",
-              "Everyone found federal jobs",
+              "The share not working rose from 52 to 62 percent, partly from farther commutes",
+              "It improved sharply as steady new jobs opened near the rebuilt superblocks",
+              "It was unaffected, since most household heads kept their old jobs",
+              "Nearly every displaced household head found steady federal work",
             ],
             correctIndex: 0,
             explanation: "Displacement moved people away from where they worked, and employment outcomes worsened.",
@@ -335,10 +335,10 @@ export const DC_BERMAN_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course insist you credit what Southwest's residents built, not only what was lost?",
             options: [
-              "To make the history cheerful",
-              "Because the buildings were famous",
-              "Because a report that inventories only loss is incomplete, and the community's churches, businesses and civic life predated the planners",
-              "Because the planners asked for it",
+              "To make the neighbourhood's history read as cheerful and uplifting",
+              "Because the cleared buildings were nationally famous landmarks",
+              "Because a report of only loss is incomplete: the churches predated the planners",
+              "Because the redevelopment planners themselves requested the credit be given",
             ],
             correctIndex: 2,
             explanation: "Crediting what people built is a research standard, the same one the Indiana Avenue course applied. It is not a courtesy.",
@@ -814,10 +814,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "This course defines an 'instrument' as:",
             options: [
-              "A tool used in demolition",
-              "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document",
-              "Any historical cause",
-              "A newspaper account of a decision",
+              "A physical tool such as a bulldozer or wrecking crane used in demolition work",
+              "A specific legal power used by a body under a statute, leaving a document",
+              "Any broad historical cause, such as an economic trend or a migration wave",
+              "A newspaper account describing a clearance decision after it happened later",
             ],
             correctIndex: 1,
             explanation: "The last clause is what makes it researchable: if a power was used, a named record exists.",
@@ -826,10 +826,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Which statute authorised clearing Southwest, and what body did it create?",
             options: [
-              "The Home Rule Act of 1973, which created the DC Council",
-              "The Federal-Aid Highway Act of 1956, which created the Bureau of Public Roads",
+              "The Home Rule Act of 1973, which created the elected Council of the District of Columbia",
+              "The Federal-Aid Highway Act of 1956, which launched the Interstate Highway System",
               "The District of Columbia Redevelopment Act of 1945, which created the Redevelopment Land Agency",
-              "The Twenty-third Amendment, which created the Zoning Commission",
+              "The Twenty-third Amendment of 1961, which gave the District presidential electors",
             ],
             correctIndex: 2,
             explanation: "The 1945 Act (60 Stat. 790) created the RLA, which acquired land under a plan by the National Capital Planning Commission.",
@@ -838,10 +838,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Why was the statute that cleared Southwest passed by Congress, not a city council?",
             options: [
-              "Because the District had no home rule and Congress legislated for the city directly",
-              "Because the project crossed state lines",
-              "Because the city council refused to act",
-              "Because the President ordered it",
+              "Because the District had no home rule; Congress legislated for it directly",
+              "Because the redevelopment project crossed into neighbouring Maryland",
+              "Because the elected city council studied the plan but refused to act",
+              "Because the President personally ordered the neighbourhood cleared",
             ],
             correctIndex: 0,
             explanation: "Washington had no elected mayor or council in 1945, so the people of Southwest had no vote in the legislature that authorised the clearance.",
@@ -850,10 +850,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Who was the plaintiff in Berman v. Parker?",
             options: [
-              "A displaced family from an alley dwelling",
-              "The Redevelopment Land Agency",
-              "A tenants' union",
-              "The owner of a department store at 712 Fourth Street, S.W., which was not a dwelling",
+              "A family displaced from one of the neighbourhood's alley dwellings",
+              "The Redevelopment Land Agency, the body that acquired the land",
+              "A tenants' union representing the renters across Area B",
+              "The owner of a department store at 712 Fourth Street S.W., not a dwelling",
             ],
             correctIndex: 3,
             explanation: "The challenger owned a going business, not a slum, and argued a non-slum property could not be taken to cure a slum. The case that authorised clearing homes turned on a store.",
@@ -863,9 +863,9 @@ The eventual redevelopment drew on both, and the built result is the physical ar
             prompt: "Which phrase is from the Berman opinion?",
             options: [
               "\"The concept of the public welfare is broad and inclusive\"",
-              "\"Separate but equal has no place\"",
-              "\"With all deliberate speed\"",
-              "\"A living Constitution\"",
+              "\"Separate but equal has no place in public education\"",
+              "\"The power to tax involves the power to destroy\"",
+              "\"The right of the people to be secure in their houses\"",
             ],
             correctIndex: 0,
             explanation: "Justice Douglas wrote that public welfare is broad and inclusive, its values spiritual as well as physical, aesthetic as well as monetary.",
@@ -874,10 +874,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "What was the actual holding that made the store owner lose?",
             options: [
-              "That his building was proven to be a slum",
-              "That redevelopment may treat an area as a whole and need not be piecemeal, so an owner cannot defeat an area plan by pointing to his own lot",
-              "That department stores are never protected",
-              "That the Fifth Amendment does not apply in the District",
+              "That his department store building had itself been proven a slum in the housing survey",
+              "That an area may be taken as a whole, so an owner cannot defeat the plan with his own lot",
+              "That department stores anywhere enjoy no constitutional protection from any taking",
+              "That the Fifth Amendment's public-use limit simply does not apply within the District",
             ],
             correctIndex: 1,
             explanation: "The Court also held the cleared land could be conveyed to a private developer, since the public end may be served as well through private enterprise.",
@@ -910,10 +910,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "How did Berman change the rule about giving condemned land to a private developer?",
             options: [
-              "It held the public end may be served as well through private enterprise, making public taking followed by private rebuilding the doctrine",
-              "It banned the practice",
-              "It required a second vote of Congress each time",
-              "It left the question entirely to the states",
+              "It held the public end may be served through private enterprise, so the handoff was lawful",
+              "It banned the practice of ever handing condemned land to a private developer at all",
+              "It required a fresh vote of Congress before each transfer of land to a developer",
+              "It left the question of private redevelopment entirely to each of the individual states",
             ],
             correctIndex: 0,
             explanation: "Before Berman it was arguable this was not a public use. After Berman it was the design of urban renewal.",
@@ -922,10 +922,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "The Thursz study fills a blank Berman left. What blank?",
             options: [
-              "Whether the taking was lawful",
-              "Whether the compensation actually made residents whole, especially the tenants who owned no building",
-              "Who designed the superblocks",
-              "When the freeway opened",
+              "Whether the taking of Southwest was lawful at all under the Fifth Amendment",
+              "Whether compensation made residents whole, especially tenants who owned no building",
+              "Who designed the modernist superblocks that later replaced the neighbourhood",
+              "When the Southeast-Southwest Freeway through the quadrant was finally opened",
             ],
             correctIndex: 1,
             explanation: "Berman decided lawfulness. Thursz measured outcomes: owners were paid for buildings, but most of Southwest were renters, and relocation raised their costs and scattered them.",
@@ -934,10 +934,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Where did the Berman standard eventually travel, in Kelo v. New London (2005)?",
             options: [
-              "It was overruled entirely",
-              "It was limited to the District of Columbia",
-              "It allowed taking well-maintained, non-blighted homes for a private economic-development plan",
-              "It applied only to farmland",
+              "It was overruled entirely, ending all federal deference on the public-use test",
+              "It was limited to the District of Columbia and was never applied elsewhere",
+              "It allowed taking well-kept, non-blighted homes for private economic development",
+              "It applied only to vacant farmland taken for building a new public highway",
             ],
             correctIndex: 2,
             explanation: "Kelo cited Berman and Midkiff; the tool that began as slum clearance had reached sound houses taken for economic growth. O'Connor dissented.",
@@ -946,10 +946,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Why does the claim that Berman \"caused\" Indiana Avenue's clearance fail the chronology test?",
             options: [
-              "Because Indiana Avenue was never cleared",
-              "Because Berman was decided in 1970",
-              "Because Indianapolis is not in the United States",
-              "Because Indiana had its own 1945 blight statute and began demolition in 1948, before Berman was decided in November 1954",
+              "Because Indiana Avenue was in fact never actually cleared or demolished at all",
+              "Because Berman was not decided until 1970, many years after that clearance",
+              "Because Indianapolis lies wholly outside the reach of federal constitutional law",
+              "Because Indiana's own 1945 blight statute and 1948 demolition predate Berman in 1954",
             ],
             correctIndex: 3,
             explanation: "A cause cannot postdate effects already under way. The accurate, weaker claim is that Berman made the tool Indianapolis was already using safe from a Fifth Amendment challenge.",
@@ -958,10 +958,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Why should DC not be filed simply as the city that beat the highways?",
             options: [
-              "Because the Southeast and Southwest Freeway was built through the cleared Southwest quadrant as part of the renewal",
-              "Because no freeways were ever proposed",
-              "Because the revolt failed completely",
-              "Because Metro was never built",
+              "Because the Southeast and Southwest Freeway ran through the cleared quadrant",
+              "Because no urban freeways were ever seriously proposed for the District",
+              "Because the freeway revolt failed completely and every planned road was built",
+              "Because the Metro rail system the coalition wanted was never built at all",
             ],
             correctIndex: 0,
             explanation: "Southwest's freeway and its clearance were the same operation. The revolt saved other neighbourhoods, not Southwest.",
@@ -970,10 +970,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "What did the Emergency Committee on the Transportation Crisis achieve?",
             options: [
-              "It built the North Central Freeway",
-              "It defeated the Three Sisters Bridge and most of the inner-city freeway network and shifted resources toward Metro",
-              "It repealed the Home Rule Act",
-              "It designed the superblocks",
+              "It built the North Central Freeway straight through Brookland and Takoma homes",
+              "It defeated the Three Sisters Bridge and most inner-city freeways, boosting Metro",
+              "It repealed the Home Rule Act and restored full congressional control of DC",
+              "It designed the modernist superblocks that rose across the cleared ground",
             ],
             correctIndex: 1,
             explanation: "Reginald Booker chaired it and Sammie Abbott, whose poster read \"white men's roads through black men's homes,\" was its spokesman.",
@@ -982,10 +982,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "What is the honest, checkable claim about the franchise and the Southwest clearance?",
             options: [
-              "The lack of the vote single-handedly caused the clearance",
-              "DC residents controlled Congress",
-              "The people of Southwest bore a clearance authorised by a legislature they had no vote in, and had no ballot to answer it with",
-              "The clearance restored voting rights",
+              "The lack of the local vote single-handedly caused the entire Southwest clearance",
+              "District residents effectively controlled the very Congress that governed them",
+              "Southwest bore a clearance by a legislature it had no vote in and no ballot to answer",
+              "The clearance itself restored full voting rights to all of the District's residents",
             ],
             correctIndex: 2,
             explanation: "Overclaiming that the lack of a vote caused the clearance would fail, since cities whose residents could vote cleared Black neighbourhoods too. The narrower claim is checkable and still damning.",
@@ -1363,10 +1363,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Why is this course's map national rather than block by block?",
             options: [
-              "Because Southwest's coordinates are unknown",
-              "Because the lesson map draws the whole world, so points need roughly two degrees of separation, and a cleared quadrant is smaller than one dot",
-              "Because block maps are copyrighted",
-              "Because the course avoids maps of Washington",
+              "Because the exact map coordinates of Southwest were never properly surveyed",
+              "The world-scale map needs two degrees between points; a quadrant is under one dot",
+              "Because detailed block maps of the whole District are all under copyright",
+              "Because the course deliberately avoids showing any maps of Washington",
             ],
             correctIndex: 1,
             explanation: "Matching the scale of the map to the question is the skill. For a parcel you use the District's own GIS and real-property tools.",
@@ -1375,10 +1375,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "What do the amber markers on the map have in common?",
             options: [
-              "They are the four largest US cities",
-              "They have Green Book listings",
+              "They are the four largest cities in the entire United States",
+              "They each once had a listing in the Negro Motorist Green Book",
               "They are places the Berman holding reached or was applied",
-              "They were chosen at random",
+              "They were chosen at random from across the national map",
             ],
             correctIndex: 2,
             explanation: "Indiana Avenue, New London, Detroit and Overtown show Southwest as the origin point of a national doctrine, not a local misfortune.",
@@ -1399,10 +1399,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Which four facts should you pull for any parcel in any jurisdiction?",
             options: [
-              "Paint colour, roof age, square footage, and street name",
-              "Architect, contractor, original cost, and current tenant",
-              "The zoning code only",
-              "The parcel identifier, the owner of record, the assessed value, and the overlapping jurisdictions",
+              "The paint colour, the roof age, the total square footage, and the full street name",
+              "The architect, the contractor, the original build cost, and the current tenant",
+              "Only the zoning code and the current use that applies to the parcel",
+              "The parcel identifier, the owner of record, the assessed value, and the jurisdictions",
             ],
             correctIndex: 3,
             explanation: "The names of the tools change from place to place; those four facts do not.",
@@ -1411,10 +1411,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "What is unusual about the DC Zoning Commission's membership?",
             options: [
-              "It has two federal members, the Architect of the Capitol and the Director of the National Park Service, alongside three mayoral appointees",
-              "It is elected entirely by DC voters",
-              "It is appointed by the President alone",
-              "It has no members from the District",
+              "It seats two federal members, the Architect of the Capitol and the Park Service director",
+              "Every single one of its members is elected directly by District of Columbia voters",
+              "All of its five members are appointed by the President of the United States alone",
+              "It has no members who actually reside within the District of Columbia today",
             ],
             correctIndex: 0,
             explanation: "The body that decides what may be built in Southwest still seats members no District voter chose, echoing the absent franchise of Section 3.",
@@ -1423,10 +1423,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "How does The Wharf redevelopment repeat the Berman pattern?",
             options: [
-              "It restored the alley dwellings",
-              "Public land assembled by a redevelopment agency and conveyed to a private developer, rebuilt at large scale",
-              "It was built entirely by the federal government",
-              "It required a citywide referendum",
+              "It faithfully restored the demolished alley dwellings on their original old sites",
+              "Public land assembled by an agency and conveyed to a private developer at large scale",
+              "It was designed and built entirely by the federal government itself",
+              "It required a binding citywide referendum before any of the construction began",
             ],
             correctIndex: 1,
             explanation: "Public taking followed by private rebuilding, the design Berman blessed, running again in the same quadrant with phases opening in 2017 and 2022.",
@@ -1435,10 +1435,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "A comprehensive plan differs from zoning because:",
             options: [
-              "It binds every owner immediately",
-              "It covers only federal land",
-              "It is the policy statement rezonings are judged against, while zoning is the enforceable rule about what may be built today",
-              "It is written by the developer",
+              "It legally binds every single one of the District's property owners right away",
+              "It covers only the federally owned land within the whole District",
+              "It is the policy rezonings are judged against, while zoning is the enforceable rule",
+              "It is written by the private developer who actually proposes the given project",
             ],
             correctIndex: 2,
             explanation: "That is why a zoning hearing so often becomes an argument about what the comprehensive plan says.",
@@ -1447,10 +1447,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "At the neighbourhood scale, which body governs Southwest, and what is the weight of its recommendations?",
             options: [
-              "The Zoning Commission, whose word is final",
-              "Congress, which votes on each parcel",
-              "The National Park Service, which owns all of it",
-              "Advisory Neighborhood Commission 6D, whose recommendations are advisory but which agencies must give great weight",
+              "The Zoning Commission entirely alone, whose word on any parcel is always final",
+              "The U.S. Congress, which votes directly on each and every individual parcel",
+              "The National Park Service, which owns all of the land across Southwest",
+              "Advisory Neighborhood Commission 6D, advisory but which agencies must weigh heavily",
             ],
             correctIndex: 3,
             explanation: "Southwest is in Ward 6; ANC 6D's meetings are the cheapest civic act there is and where a resident's leverage is highest.",
@@ -1459,10 +1459,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Why does this course tell you to practise parcel lookups on institutional or public addresses?",
             options: [
-              "Because publishing a current occupant's name with their home address is a different act from a public record sitting in a database",
-              "Because residential records are secret",
-              "Because homes have no parcel identifier",
-              "Because assessors refuse residential requests",
+              "Because tying a current occupant's name to their address differs from a public record",
+              "Because residential parcel records are kept entirely secret from all of the public",
+              "Because private homes have no parcel identifier of any kind at all in the database",
+              "Because county assessors always refuse any request about a residence",
             ],
             correctIndex: 0,
             explanation: "The same rule the method course applied to tourist homes: a house someone lives in is somebody's home first.",
@@ -1471,10 +1471,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Which level of designation normally regulates whether a building can be demolished?",
             options: [
-              "National Historic Landmark",
-              "A local historic landmark or district under the District's own preservation law and review board",
-              "National Register of Historic Places",
-              "State register listing",
+              "Listing as a National Historic Landmark by the U.S. Secretary of the Interior",
+              "A local historic landmark under the District's own preservation law and review board",
+              "Being entered on the National Register of Historic Places by the Keeper",
+              "A listing on the state register of historic places maintained by the state",
             ],
             correctIndex: 1,
             explanation: "Federal listing is recognition plus review leverage on federally funded or permitted work. The local law is what requires a permit before demolition.",
@@ -1483,10 +1483,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "When you find the street grid replaced by superblocks set behind lawns, what have you found?",
             options: [
-              "A natural feature",
-              "A federal park that was always there",
-              "A place where a superblock replaced the old fine-grained neighbourhood, which is a dated decision",
-              "Nothing checkable",
+              "A natural landscape feature of the old riverbank that predates the entire city grid",
+              "A large federal park that stood on exactly this ground long before the clearance",
+              "A place where a superblock replaced the old fine-grained neighbourhood, a dated decision",
+              "Nothing checkable, since old street patterns leave behind no dated record",
             ],
             correctIndex: 2,
             explanation: "Every place the old grid does not continue is a place a superblock replaced it, and the change has a date and a record.",
@@ -1495,10 +1495,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "What is the most important civic question to ask at the rebuilt waterfront?",
             options: [
-              "Which restaurant is best",
-              "How tall the buildings are",
-              "What year the piers were painted",
-              "Whether an ordinary person can stand at the water's edge without buying anything",
+              "Which of the waterfront's many new restaurants serves the very best food",
+              "How tall the tallest of the new waterfront buildings actually stands",
+              "What year the wooden piers along the wharf were last repainted",
+              "Whether an ordinary person can reach the water's edge without buying anything",
             ],
             correctIndex: 3,
             explanation: "Whether the public can reach the water freely is the deepest civic fact about a waterfront, and a tour can show the answer.",
@@ -1507,10 +1507,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
             options: [
-              "Because beat 4 is a drop-in: the course is complete with the other five beats, and the body serves as the observation brief meanwhile",
-              "Because the tour was cancelled",
-              "Because the platform requires a placeholder",
-              "Because the tour will never be added",
+              "Because beat 4 is a drop-in: the course is complete without it, the body is the brief",
+              "Because the planned 360 tour of the Southwest waterfront was cancelled",
+              "Because the platform strictly requires a placeholder lesson to occupy this slot",
+              "Because the planned 360 tour will never actually be added to this whole course",
             ],
             correctIndex: 0,
             explanation: "A tour embed URL is authoritative external data and is never guessed, so the lesson ships with the notice and the brief and the URL drops in on a re-seed.",
@@ -1519,10 +1519,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "What does the map lesson say about its markers being approximate points?",
             options: [
-              "The map is unreliable and should be ignored",
-              "Do not use them to find an address; use them to see the pattern, and use the District's parcel tools for a lot",
-              "The coordinates should be averaged",
-              "The markers are fictional",
+              "The whole map is unreliable and should simply be ignored by the reader",
+              "Do not use them to find an address; use them for the pattern, parcel tools for a lot",
+              "The scattered marker coordinates should all be averaged into one single point",
+              "The markers are fictional inventions placed on the map for illustration",
             ],
             correctIndex: 1,
             explanation: "Approximate points at world scale are fine for a pattern and useless for a lot line. Match the tool to the question.",
@@ -1531,10 +1531,10 @@ The eventual redevelopment drew on both, and the built result is the physical ar
           {
             prompt: "Why should you re-check every date and body given in the \"who governs this ground\" lesson?",
             options: [
-              "Because they are probably wrong",
-              "Because the sources are secret",
-              "Because plans are amended, developers change, and in a city whose zoning still answers partly to Congress the answer keeps moving",
-              "Because the parcels move",
+              "Because the dates and bodies the lesson gives you are all probably wrong already",
+              "Because the underlying sources for the lesson are all kept secret from the public",
+              "Because plans are amended, developers change, and DC zoning still answers to Congress",
+              "Because the parcels themselves physically move over time on the map",
             ],
             correctIndex: 2,
             explanation: "Re-checking is the method, not a disclaimer, and DC's federal oversight makes \"who governs this ground\" an unusually long answer.",

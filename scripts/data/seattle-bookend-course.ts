@@ -195,10 +195,10 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           {
             prompt: "A racially restrictive covenant is best described as:",
             options: [
-              "A city zoning ordinance",
-              "A federal mortgage program",
-              "A clause in a property deed barring sale, rental, or occupancy by people outside a named race, which binds later owners",
-              "A rule set by a neighborhood association after a sale",
+              "A municipal zoning ordinance that sorts land by permitted use and by building height across a whole city",
+              "A federal mortgage program that insured home loans and graded neighborhoods by lending risk on its maps",
+              "A clause in a property deed barring sale, rental, or occupancy by people outside a named race, binding later owners",
+              "A rule a neighborhood association adopts in its recorded bylaws after a sale to govern fences, paint, and upkeep",
             ],
             correctIndex: 2,
             explanation: "Because it runs with the land, it binds later owners and segregates a neighborhood in advance rather than at the point of an individual sale.",
@@ -208,9 +208,9 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
             prompt: "Which prerequisite course does this one bookend, and on what point?",
             options: [
               "The Gym and the Color Line, on the school district line and what a court could compel under Milliken",
-              "The Green Book, on how to read a listing",
-              "A course on Seattle architecture",
-              "A course on the Civil Liberties Act of 1988",
+              "The Green Book, on how to read a single listing and chain a safe route across a segregated country",
+              "A course on Seattle architecture and the design of its early twentieth-century residential districts",
+              "A course on the Civil Liberties Act of 1988 and the federal redress later paid for the incarceration",
             ],
             correctIndex: 0,
             explanation: "The gym course read Milliken through Indianapolis; this course takes the modern end of the same argument, Parents Involved v. Seattle, on what a district could voluntarily choose.",
@@ -218,7 +218,12 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           },
           {
             prompt: "The University of Washington's Racial Restrictive Covenants Project reports locating racist deed provisions on roughly how many Washington properties?",
-            options: ["About 500", "About 5,000", "About 800", "More than 80,000, examined across more than 7 million property records"],
+            options: [
+              "About 500, a handful of restricted blocks scattered across King County",
+              "About 5,000, mostly in Seattle's north-end neighborhoods and its suburbs",
+              "About 800, limited to deeds recorded during the 1920s building boom",
+              "More than 80,000, examined across more than 7 million property records",
+            ],
             correctIndex: 3,
             explanation: "King County, which contains Seattle, alone accounts for more than 37,000 of them. This was the default for much new residential development, not a handful of enclaves.",
             sourceLessonSlug: "sea-then-covenants-archive",
@@ -226,10 +231,10 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           {
             prompt: "What did Washington House Bill 1335 (2021) do?",
             options: [
-              "Banned the sale of homes with old covenants",
-              "Charged the covenants project with mapping racist deed provisions statewide and created a process for an owner to strike the language from their own title",
-              "Made covenants enforceable again",
-              "Required schools to teach the covenants",
+              "Banned the future sale of any home whose recorded deed still carried an unremoved racial covenant clause",
+              "Had the covenants project map racist deed provisions statewide and let an owner strike the clause from their title",
+              "Made racial covenants judicially enforceable again for the first time since the Shelley decision of 1948",
+              "Required every Washington public school to teach the documented history of the state's racial covenants",
             ],
             correctIndex: 1,
             explanation: "A research project became a state mandate: the state treated mapping the restriction as a public duty.",
@@ -238,10 +243,10 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the course say the concentration of Black Seattle in the Central District is a consequence rather than a preference?",
             options: [
-              "Because residents said so in a survey",
-              "Because the Central District had the best housing",
-              "Because most of the city was closed by covenant and, from the 1930s, marked risky by federal mortgage maps, so the concentration follows from restriction and has a paper trail",
-              "Because the schools there were better",
+              "Because residents told census takers they simply preferred to live near one another in that part of the city",
+              "Because the Central District happened to hold the newest and most affordable housing stock in the whole city",
+              "Because most of the city was closed by covenant and marked risky by 1930s federal mortgage maps, leaving little else",
+              "Because the public schools serving the Central District were rated the best in the entire city at that time",
             ],
             correctIndex: 2,
             explanation: "A concentration that severe traces to documented restriction across the rest of the city, not to choice.",
@@ -251,9 +256,9 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
             prompt: "Beyond Black residents, Washington covenants also barred:",
             options: [
               "Asian and, in some deeds, Jewish residents",
-              "Only Catholic residents",
-              "Renters of any race",
-              "Only noncitizens",
+              "Only Catholic and Eastern Orthodox residents",
+              "Renters of any race, though never actual buyers",
+              "Only noncitizens who had immigrated recently",
             ],
             correctIndex: 0,
             explanation: "A single instrument aimed at several communities at once, which matters when Section 1 turns to the removal of Japanese Americans.",
@@ -262,10 +267,10 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           {
             prompt: "Which executive order authorized the exclusion, and when was it signed?",
             options: [
-              "Executive Order 8802, signed 1941",
+              "Executive Order 8802, signed on June 25, 1941",
               "Executive Order 9066, signed February 19, 1942",
-              "Executive Order 9981, signed 1948",
-              "The Civil Liberties Act, signed 1988",
+              "Executive Order 9981, signed on July 26, 1948",
+              "The Civil Liberties Act, signed August 10, 1988",
             ],
             correctIndex: 1,
             explanation: "Civilian Exclusion Order No. 1, the first issued under it, targeted Bainbridge Island because of its proximity to naval facilities.",
@@ -274,10 +279,10 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           {
             prompt: "On March 30, 1942, how many Japanese Americans were removed from Bainbridge Island, and how many lived there in total?",
             options: [
-              "About 1,000 removed, out of 1,200",
-              "50 removed, out of 60",
+              "About 1,000 removed by ferry, out of an island Japanese American population near 1,200",
+              "About 50 removed by ferry, out of an island Japanese American population of roughly 60",
               "227 removed by ferry, out of a total island Japanese American population of about 276",
-              "276 removed, out of 276",
+              "All 276 removed by ferry, out of an island Japanese American population of exactly 276",
             ],
             correctIndex: 2,
             explanation: "The gap between 227 and 276 is people who were away for study, work, or military service and were not allowed to return.",
@@ -297,7 +302,12 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           },
           {
             prompt: "The Bainbridge memorial's guiding phrase 'Nidoto Nai Yoni' is translated by the community as:",
-            options: ["Never forget", "Let it not happen again", "We are still here", "Home at last"],
+            options: [
+              "We must never forget this",
+              "Let it not happen again",
+              "We are still here today",
+              "At long last we are home",
+            ],
             correctIndex: 1,
             explanation: "Its heart is a long wooden wall carrying the names and ages of the island's 1942 Japanese American residents, a design that insists on a person for every line.",
             sourceLessonSlug: "sea-then-removal",
@@ -305,10 +315,10 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           {
             prompt: "The covenants archive is unusual as a historical source because:",
             options: [
-              "It is a searchable archive of the primary documents, the deeds themselves, rather than a summary you must trust",
-              "It is the only record of Seattle housing",
-              "It was written by the covenant signers",
-              "It is not available to the public",
+              "It is a searchable archive of the primary documents, the deeds themselves, not a summary you must trust",
+              "It is the only surviving record of who lived in every Seattle neighborhood before the Second World War",
+              "It was compiled by the original covenant signers themselves to document and defend their property values",
+              "It is a private collection not open to the public without a paid research subscription and appointment",
             ],
             correctIndex: 0,
             explanation: "You read the clause, then who signed and recorded it. A covenant is a public record with a date and a recording number.",
@@ -317,10 +327,10 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           {
             prompt: "What does the course say about a covenant being struck from a deed?",
             options: [
-              "It restores the neighborhood's original population",
-              "It never happened",
-              "It was automatic after 1948",
-              "A struck covenant is not an undone history: Shelley v. Kraemer made the clauses unenforceable in 1948, but the language stayed and the segregation it built stayed",
+              "Striking it gradually restores a neighborhood's original pre-covenant population over the following years",
+              "Removing the clause from a recorded deed never actually happened anywhere in Washington until after 2021",
+              "The clause was struck automatically from every affected deed statewide right after the 1948 Shelley ruling",
+              "A struck covenant is not an undone history: Shelley made it unenforceable in 1948, but the segregation stayed",
             ],
             correctIndex: 3,
             explanation: "Enforceability and effect are different things, a distinction Section 3 develops.",
@@ -329,10 +339,10 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the course insist on naming the instrument rather than using a single word like 'racism'?",
             options: [
-              "Because the covenant and the 1942 removal hit overlapping communities through entirely different machinery, so naming the instrument keeps the mechanism visible",
-              "Because 'racism' is inaccurate",
-              "Because the word is banned in the archive",
-              "Because covenants were not about race",
+              "Because the covenant and the removal used different machinery on overlapping communities, so naming the instrument shows it",
+              "Because the single word 'racism' is factually inaccurate for describing anything that happened in Seattle's history",
+              "Because the word 'racism' is formally forbidden in the covenants archive's public descriptions and its search metadata",
+              "Because racial covenants were never really about race at all, only about protecting neighborhood property values over time",
             ],
             correctIndex: 0,
             explanation: "A private deed and a federal military order are different instruments; the single word hides which one did the work.",
@@ -341,10 +351,10 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
           {
             prompt: "Which best states what the covenants archive does NOT prove?",
             options: [
-              "That covenants existed",
-              "That covenants named excluded groups",
-              "Who lived on any given street, or how a rule was enforced in a given case, since it is a restriction and not a census, and its 80,000 properties are a floor not a ceiling",
-              "That King County had covenants",
+              "That racial covenants existed and were recorded on tens of thousands of properties across Washington State",
+              "That many covenants named the excluded groups directly, including Black, Asian, and some Jewish residents",
+              "Who lived on any given street, or how a rule was enforced, since a covenant is a restriction and not a census",
+              "That King County, which contains Seattle, alone held well over 37,000 covenant-restricted properties by count",
             ],
             correctIndex: 2,
             explanation: "Lending, steering, and violence also excluded people without leaving a covenant, so the documented count understates the closure.",
@@ -354,9 +364,9 @@ export const SEATTLE_BOOKEND_COURSE: AuthoredCourse = {
             prompt: "Most of Bainbridge Island's Japanese American families made their living as:",
             options: [
               "Farmers, many of them strawberry growers",
-              "Shipyard workers",
-              "Fishermen only",
-              "Downtown Seattle merchants",
+              "Shipyard and naval shipyard laborers",
+              "Fishermen and salmon cannery workers",
+              "Downtown Seattle merchants and grocers",
             ],
             correctIndex: 0,
             explanation: "Most were United States citizens by birth, and no act by any of them was alleged; the removal was applied by ancestry.",
@@ -796,10 +806,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "What gave a racially restrictive covenant its force before 1948?",
             options: [
-              "A city permit",
-              "Judicial enforcement: courts would void a sale to a barred buyer, backing a private contract with the power of the state",
-              "A federal registration",
-              "A vote of the neighborhood",
+              "A city permit the municipal building department issued each time a restricted lot changed ownership",
+              "Judicial enforcement: a court would void a sale to a barred buyer, backing the contract with state power",
+              "A federal registration filed with the county recorder each time a covenanted property changed hands",
+              "A binding vote the neighborhood association had to take before any covenanted home could be sold on",
             ],
             correctIndex: 1,
             explanation: "A private prejudice became a public instrument the moment a court would enforce it.",
@@ -808,10 +818,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Shelley v. Kraemer (1948) held that:",
             options: [
-              "Covenants were now illegal to write",
-              "Covenants had to be removed from all deeds",
-              "Covenants did not exist",
-              "Judicial enforcement of a racially restrictive covenant is state action violating the Fourteenth Amendment's Equal Protection Clause",
+              "Racially restrictive covenants were from then on illegal for any owner to write into a deed",
+              "Every racially restrictive covenant had to be physically struck from all existing deeds at once",
+              "Racially restrictive covenants had never legally existed and were void from the moment of signing",
+              "Enforcing a racially restrictive covenant in court is state action the Equal Protection Clause forbids",
             ],
             correctIndex: 3,
             explanation: "The covenants as private agreements were not banned; what became unconstitutional was a court enforcing one.",
@@ -821,9 +831,9 @@ The full dissents in both cases, quoted from the United States Reports rather th
             prompt: "Which of these did Shelley v. Kraemer NOT do?",
             options: [
               "Strike the covenant language out of existing deeds and undo the segregation already built",
-              "Make covenants judicially unenforceable",
-              "Rest on the Equal Protection Clause",
-              "Leave private refusals to sell untouched",
+              "Make racially restrictive covenants judicially unenforceable in courts across the country",
+              "Rest the whole holding squarely on the Fourteenth Amendment's Equal Protection Clause",
+              "Leave private refusals to sell, lend, or steer buyers completely untouched by the ruling",
             ],
             correctIndex: 0,
             explanation: "The language stayed in the records, which is why the covenants project can still read it, and the segregation already built stayed on the ground.",
@@ -832,10 +842,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Why did neighborhood-based school assignment reproduce Seattle's housing segregation?",
             options: [
-              "Because a court ordered it",
-              "Because a state law required segregated schools",
-              "Because covenants and lending had concentrated Black Seattle in the Central District, so assigning children to neighborhood schools mapped the housing pattern onto the schools",
-              "Because the IHSAA barred Black schools",
+              "Because a federal court had explicitly ordered Seattle to assign each student to their neighborhood school",
+              "Because a standing Washington state law had long required the public schools to be racially segregated",
+              "Covenants and lending concentrated Black Seattle in the Central District, so neighborhood assignment mirrored that",
+              "Because the state athletic association had barred Black Seattle schools from ever competing against white ones",
             ],
             correctIndex: 2,
             explanation: "Segregation without a current legal command is exactly the condition the 2007 case turns on.",
@@ -844,10 +854,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "In Washington v. Seattle School District No. 1 (1982), the Supreme Court:",
             options: [
-              "Upheld Initiative 350's ban on busing",
-              "Struck down Initiative 350, protecting Seattle's voluntary desegregation from a state ban, because the measure restructured the political process to burden racial minorities",
-              "Ordered Seattle to bus students",
-              "Ended the Seattle Plan",
+              "Upheld Initiative 350 and its statewide ban on assigning students away from neighborhood schools",
+              "Struck down Initiative 350, shielding Seattle's voluntary desegregation from that state busing ban",
+              "Ordered the Seattle district to begin busing students citywide to reach racial balance in every school",
+              "Ended the voluntary Seattle Plan along with its mandatory reassignment and busing across the district",
             ],
             correctIndex: 1,
             explanation: "In 1982 the Court protected the very kind of voluntary choice that a differently composed Court would limit in 2007.",
@@ -856,10 +866,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "How did Seattle's racial tiebreaker classify students, and when did it apply?",
             options: [
-              "By income, at every school",
-              "By test score, for magnet schools",
-              "By home address only",
-              "As white or nonwhite, used to fill an oversubscribed high school toward the district's overall balance",
+              "By household income bracket, applied at every district school regardless of how full it already was",
+              "By entrance test score, used only to seat students at the district's competitive magnet high schools",
+              "By home street address alone, with no additional tiebreaker applied at an oversubscribed school",
+              "As white or nonwhite, to fill an oversubscribed high school toward the district's overall balance",
             ],
             correctIndex: 3,
             explanation: "That single binary classification of each student is the fact Parents Involved is fought over.",
@@ -868,10 +878,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "What did the district court order in Milliken v. Bradley, and what did the Supreme Court do?",
             options: [
-              "It ordered a metropolitan plan reaching Detroit plus 53 suburban districts; the Court, 5 to 4, held that cross-district remedy impermissible absent an interdistrict violation",
-              "It ordered Detroit to close; the Court affirmed",
-              "It ordered vouchers; the Court reversed",
-              "It ordered nothing; the Court dismissed",
+              "It ordered a plan over Detroit and 53 suburban districts; the Court, 5 to 4, barred that cross-district remedy",
+              "It ordered the Detroit city school system shut down entirely, and the Supreme Court affirmed that 5 to 4",
+              "It ordered a statewide school voucher program covering Detroit, and the Supreme Court reversed it 5 to 4",
+              "It ordered no desegregation remedy at all, and the Supreme Court then dismissed the entire appeal 5 to 4",
             ],
             correctIndex: 0,
             explanation: "The district boundary became the default wall of the remedy, defended by local control of schools.",
@@ -880,10 +890,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "What kind of limit is Milliken, precisely?",
             options: [
-              "A limit on what a district may voluntarily choose",
-              "A limit on compulsion: what a court may order over the objection of districts that did not themselves discriminate",
-              "A ban on all busing",
-              "A rule about school funding",
+              "A limit on what a willing district may voluntarily choose to do with race in its own assignment plan",
+              "A limit on compulsion: what a court may order over districts that did not themselves discriminate",
+              "A flat constitutional ban on all busing of students for any racial purpose anywhere in the country",
+              "A rule about how much funding a state must send its segregated urban school districts every year",
             ],
             correctIndex: 1,
             explanation: "Because it limits only compulsion, it leaves open what a willing district may choose, which is where the Seattle case lives.",
@@ -892,10 +902,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "What made Seattle's situation in Parents Involved the reverse of Milliken's?",
             options: [
-              "Seattle had more students",
-              "Seattle had never operated legally separate schools and was under no court order; it was a willing district choosing a race-conscious tiebreaker, so the issue was choice, not compulsion",
-              "Seattle was in a different circuit",
-              "Seattle had no covenants",
+              "Seattle simply enrolled many more students across its public schools than the Detroit district had at the time",
+              "Seattle never ran legally separate schools and was under no court order, so choice, not compulsion, was at issue",
+              "Seattle sat in an entirely different federal appeals circuit, so the Milliken holding did not bind it at all",
+              "Seattle's residential neighborhoods had never carried any racially restrictive covenants in them at all",
             ],
             correctIndex: 1,
             explanation: "Milliken was a court trying to compel unwilling suburbs; Seattle was a willing district acting on its own.",
@@ -904,10 +914,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "The line 'The way to stop discrimination on the basis of race is to stop discriminating on the basis of race' is:",
             options: [
-              "The holding of the Court",
-              "From Justice Kennedy's concurrence",
-              "A plurality line joined by only four Justices (Roberts, Scalia, Thomas, Alito), not the holding of the Court",
-              "From the dissent",
+              "The controlling holding of the whole Court, joined by a clear majority of at least five Justices",
+              "Drawn word for word from Justice Kennedy's separate, controlling concurrence in the Seattle case",
+              "A plurality line joined by only four Justices, Roberts, Scalia, Thomas, Alito, not the Court's holding",
+              "Taken directly from the four-Justice dissent that would have upheld the Seattle tiebreaker plan",
             ],
             correctIndex: 2,
             explanation: "Attributing it to 'the Supreme Court' as the rule of the case is the most common error about Parents Involved.",
@@ -916,10 +926,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Why does Justice Kennedy's concurrence control what Parents Involved stands for?",
             options: [
-              "Because he wrote the longest opinion",
-              "Because he was Chief Justice",
-              "Because he dissented",
-              "Because his was the narrowest ground reaching the judgment, and he rejected the plurality's broader position while agreeing the specific plans failed",
+              "Because he wrote by far the longest of all the separate opinions filed in the Parents Involved case",
+              "Because he was serving as the Chief Justice, whose vote controls the result of any closely divided ruling",
+              "Because he dissented from the judgment and would have fully upheld both the Seattle and Louisville plans",
+              "His was the narrowest ground for the judgment, rejecting the plurality's rule while agreeing the plans failed",
             ],
             correctIndex: 3,
             explanation: "The controlling opinion in a split decision is the narrowest one necessary to the judgment.",
@@ -928,10 +938,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "What did five Justices, through Kennedy, leave standing in Parents Involved?",
             options: [
-              "That avoiding racial isolation and achieving diversity are compelling interests a district may pursue, by race-conscious means short of labeling each student",
-              "That race may never be considered in any way",
-              "That busing is required",
-              "That covenants are enforceable",
+              "Avoiding racial isolation and diversity are compelling interests a district may pursue without labeling students",
+              "Race may from that day on never be considered in any public school assignment decision whatsoever, at all",
+              "Court-ordered busing is from that point on flatly required across every racially imbalanced district statewide",
+              "Racially restrictive covenants are from then on once again fully enforceable in the state and county courts",
             ],
             correctIndex: 0,
             explanation: "Kennedy listed permissible tools like site selection, attendance-zone drawing, resource allocation, recruiting, and tracking by race.",
@@ -940,10 +950,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Which statement about the Milliken and Parents Involved pairing is accurate?",
             options: [
-              "Milliken caused Parents Involved as binding precedent",
-              "They are the same kind of case",
-              "It is a claim about effect and direction, not doctrine: a remedies case and an equal-protection case that together narrowed school integration from two sides, once from the court and once from the district",
-              "They were decided the same year",
+              "Milliken directly caused Parents Involved and is cited within its majority opinion as binding precedent",
+              "They are fundamentally the same kind of case, both resting entirely on the Equal Protection Clause alone",
+              "A claim about effect, not doctrine: a remedies case and an equal-protection case narrowed integration two ways",
+              "They were both handed down in the very same Supreme Court term, which is why they are read as one pair",
             ],
             correctIndex: 2,
             explanation: "They do not cite each other as controlling; what links them is outcome and direction across thirty-three years.",
@@ -952,10 +962,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "The corrected, accurate version of 'the Supreme Court banned busing' in Milliken is:",
             options: [
-              "It banned all busing nationwide",
-              "It made cross-district remedies rare by requiring proof of an interdistrict violation, while busing within a district kept being ordered",
-              "It required busing everywhere",
-              "It said nothing about remedies",
+              "It banned all school busing nationwide, striking down every desegregation transportation order at once",
+              "It made cross-district remedies rare by requiring proof of an interdistrict violation; local busing continued",
+              "It required mandatory busing everywhere, in every school district in the country, to force full racial balance",
+              "It said nothing at all about remedies, leaving the district court's metropolitan Detroit order fully intact",
             ],
             correctIndex: 1,
             explanation: "The popular version fails against the opinion; the narrower claim survives.",
@@ -964,10 +974,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "What is the Seattle-specific twist across 1982 and 2007?",
             options: [
-              "Seattle changed states",
-              "The Court protected Seattle's voluntary integration from a state ban in 1982 and limited Seattle's voluntary integration in 2007: same district and goal, opposite results, from a changed Court and doctrine",
-              "Seattle never desegregated",
-              "The 2007 case overruled Milliken",
+              "Between the 1982 decision and the 2007 decision, Seattle had somehow changed which state it legally belonged to",
+              "The Court shielded Seattle's voluntary integration in 1982 but limited it in 2007: same goal, opposite results",
+              "Seattle never once actually desegregated a single one of its public schools across the whole period from 1978 to 2007",
+              "The 2007 Parents Involved decision expressly overruled the earlier 1974 Milliken v. Bradley holding on remedies",
             ],
             correctIndex: 1,
             explanation: "Tracing that reversal, case by case and year by year, is exactly the research the course teaches.",
@@ -1334,10 +1344,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Why is this course's map lesson national rather than block by block?",
             options: [
-              "Because Seattle's coordinates are unknown",
-              "Because block-level maps are copyrighted",
-              "Because the course avoids maps of Seattle",
-              "Because the lesson map draws the whole world, so points need a couple of degrees to separate, and a neighborhood or a covenant line is far smaller than one dot",
+              "Because the exact latitude and longitude of Seattle's older neighborhoods are simply unknown to the project",
+              "Because detailed block-level street maps of Seattle are all under copyright and cannot lawfully be shown",
+              "Because the course deliberately avoids showing any maps of Seattle or its individual neighborhoods at all",
+              "The lesson map draws the whole world, so points need degrees to separate, and a covenant line is smaller than a dot",
             ],
             correctIndex: 3,
             explanation: "Choosing the right scale of map for the question is the skill; for a covenant it is the UW database, for a parcel the Parcel Viewer.",
@@ -1346,10 +1356,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "What is the UW Racial Restrictive Covenants Project database?",
             options: [
-              "A real-estate listing site",
-              "A searchable archive of scanned deeds with racial restrictions, arranged by region starting with Seattle neighborhoods",
-              "A transit map",
-              "A private genealogy service",
+              "A commercial real-estate listing site showing every current home now for sale across Seattle's neighborhoods",
+              "A searchable archive of scanned deeds carrying racial restrictions, arranged by region starting with Seattle",
+              "A regional transit map showing Seattle's bus and light-rail lines and all their scheduled stops citywide",
+              "A private paid genealogy service that traces family trees through old King County property and probate deeds",
             ],
             correctIndex: 1,
             explanation: "You read the clause, then who signed and recorded it. A covenant is a public record with a date and recording number.",
@@ -1358,10 +1368,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "How does Seattle assign most students to a school today?",
             options: [
-              "By a racial tiebreaker",
-              "By lottery only",
+              "By a race-conscious tiebreaker applied at every oversubscribed high school across the city",
+              "By a single districtwide lottery only, with every open seat assigned purely at random",
               "By an attendance-area school based on the address of the student's primary residence",
-              "By test score",
+              "By an entrance test score, with the highest-scoring students assigned to the best schools",
             ],
             correctIndex: 2,
             explanation: "When housing is segregated, address-based assignment reproduces the housing pattern, the link Section 3 opened with.",
@@ -1370,10 +1380,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Which factor is NOT among Seattle's current school tiebreakers, and why?",
             options: [
-              "The race of the individual student, because Parents Involved (2007) is still operating on the district",
-              "Whether a sibling attends",
-              "Distance from the school",
-              "Available capacity",
+              "The race of the individual student, because Parents Involved (2007) still constrains the district",
+              "Whether an older sibling attends, because the district quietly dropped that rule after the 2007 ruling",
+              "Distance from the school, because Parents Involved forbade using any home location in assignment",
+              "Available capacity, because the district now fills each school strictly by a random lottery instead",
             ],
             correctIndex: 0,
             explanation: "The current tiebreaker list reads the way it does because of the 2007 opinion; Section 3 is live civics, not old law.",
@@ -1382,10 +1392,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Under Washington's HB 1335, how does a racial covenant come off a deed today?",
             options: [
-              "It is removed automatically for every property",
-              "It cannot be removed",
-              "A court orders it citywide",
-              "A current owner files with the King County Recorder's Office to strike the language from their own title",
+              "It is removed automatically from every affected property statewide as soon as the owner sells the home",
+              "It simply cannot be removed from a recorded deed by any legal process available in Washington today",
+              "A county superior court judge orders it struck from every covenanted deed across the whole city at once",
+              "A current owner files with the King County Recorder's Office to strike the clause from their own title",
             ],
             correctIndex: 3,
             explanation: "Removal is voluntary and owner-by-owner, seventy-three years after Shelley made the clauses merely unenforceable.",
@@ -1394,10 +1404,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Who draws Seattle's school attendance-area boundaries, and how?",
             options: [
-              "The governor, by order",
+              "The Washington state governor alone, by issuing a binding executive order each school year",
               "The Seattle School Board, through its enrollment-planning process in public meetings",
-              "The Supreme Court",
-              "The King County Recorder",
+              "The United States Supreme Court itself, by mandating the specific boundaries in its rulings",
+              "The King County Recorder's Office, drawing them as it records each new property deed",
             ],
             correctIndex: 1,
             explanation: "A boundary change is a school decision made in a room you can sit in, the attendance-zone instrument still running.",
@@ -1406,10 +1416,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Why does this course tell you to practice parcel lookups on public or institutional addresses?",
             options: [
-              "Because residential records are secret",
-              "Because homes have no parcel numbers",
-              "Because a scanned historical deed is a public document, while publishing a current resident's name tied to their home address is a different act",
-              "Because the Recorder refuses residential requests",
+              "Because all current residential property records in King County are legally sealed and kept entirely secret",
+              "Because private homes are never assigned any parcel number at all within the county's public records system",
+              "A scanned historical deed is public, but tying a current resident's name to their home address is a different act",
+              "Because the King County Recorder categorically refuses every public request touching a residential property",
             ],
             correctIndex: 2,
             explanation: "It is the same ethics rule the method course applied to tourist homes.",
@@ -1418,10 +1428,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "When you find a scanned covenanted deed in a Seattle neighborhood, what two facts should you read off first?",
             options: [
-              "The current owner and the sale price",
+              "The home's current market value and its most recent sale price",
               "Which group or groups it excludes, and the year it was recorded",
-              "The paint color and roof age",
-              "The school district and the ZIP code",
+              "The building's exterior paint color and the age of its roof",
+              "The assigned school attendance area and the postal ZIP code",
             ],
             correctIndex: 1,
             explanation: "Then compare the neighborhood to the point that the covenant belt and the Central District are near mirror images.",
@@ -1430,9 +1440,9 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "The three transferable questions for any American address are:",
             options: [
-              "Square footage, style, and price",
-              "Architect, builder, and year",
-              "Zoning, height, and setback",
+              "The square footage, the architectural style, and the asking price",
+              "The original architect, the builder, and the year it was built",
+              "The current zoning code, the height limit, and the setback",
               "What restricted this land, who owns it, and which school it feeds",
             ],
             correctIndex: 3,
@@ -1442,10 +1452,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "What is the single most important object in this course, and where does it live?",
             options: [
-              "The Space Needle, downtown",
-              "A line, the covenant boundary and the school attendance boundary, which has no physical existence and lives only in records",
-              "The ferry, on Puget Sound",
-              "A statue, in a park",
+              "The Space Needle downtown, the single most recognizable built landmark on the entire Seattle skyline today",
+              "A line: the covenant boundary and the school attendance boundary, with no physical form, living only in records",
+              "The Bainbridge ferry crossing Puget Sound, retracing the exact 1942 removal route across the water each day",
+              "A bronze memorial statue standing in a Central District park, cast to honor the neighborhood's founders",
             ],
             correctIndex: 1,
             explanation: "You cannot photograph a covenant or an attendance line, which is the argument for reading records instead of only looking.",
@@ -1454,10 +1464,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "In the Central District, how does the observation brief say to read the two dated processes on the ground?",
             options: [
-              "By counting cars",
-              "By old churches and small commercial buildings as the earlier layer and new townhomes and apartments as the market layer, then dating what you see",
-              "By measuring street width",
-              "By the number of trees",
+              "By carefully counting the number of parked and moving cars found along every single block of the neighborhood",
+              "By reading old churches and small shops as the earlier layer and new townhomes as the market layer, then dating each",
+              "By precisely measuring the paved width of every residential street and then comparing them block to block",
+              "By counting the mature street trees on every block and mapping out where the canopy is thickest citywide",
             ],
             correctIndex: 1,
             explanation: "A surviving church is Claim A; a block of new construction is Claim B made visible.",
@@ -1466,10 +1476,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Why does the map mark both Bainbridge Island and Manzanar?",
             options: [
-              "To fill space",
-              "Because they are the two largest islands",
-              "Because a memorial at the ferry ground and the confinement site are two ends of one order, and the map is honest only if it shows both",
-              "Because both had covenants",
+              "Simply to fill otherwise empty stretches of ocean on the national map with two more labeled points of interest",
+              "Because Bainbridge and Manzanar happen to be the two single largest islands found anywhere on the West Coast",
+              "The memorial at the ferry ground and the confinement site are two ends of one order, and an honest map shows both",
+              "Because both Bainbridge Island and the Manzanar site were once blanketed with the same racial deed covenants",
             ],
             correctIndex: 2,
             explanation: "Commemorating the departure while hiding the destination would be a dishonest map.",
@@ -1478,10 +1488,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
             options: [
-              "Because the tour was cancelled",
-              "Because the platform requires a placeholder",
-              "Because the tour is optional and will never be added",
-              "Because beat 4 is a drop-in: the course is complete with the other five beats, and the body serves as the observation brief until the tour lands",
+              "Because the planned 360 tour was formally cancelled and so it will now simply never be captured or published",
+              "Because the course platform strictly requires an empty placeholder lesson to sit in every content section",
+              "Because the tour is entirely optional and, by firm editorial policy, is never actually going to be added",
+              "Beat 4 is a drop-in: the course is complete with its other beats; the body is the brief until the tour lands",
             ],
             correctIndex: 3,
             explanation: "A tour embed URL is authoritative external data and is never guessed, so the lesson ships with the notice and the brief, and the URL drops in on a re-seed.",
@@ -1490,10 +1500,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "The Louisville marker on the map, Meredith v. Jefferson County, differs from Seattle because:",
             options: [
-              "Louisville had no schools",
-              "Jefferson County had once been under a court desegregation order, unlike Seattle, a different fact pattern worth its own reading",
-              "It was decided in a different year",
-              "It upheld the racial tiebreaker",
+              "Louisville and Jefferson County simply had no public schools of their very own at the time of that lawsuit",
+              "Jefferson County had once been under a court desegregation order, unlike Seattle, a genuinely different fact pattern",
+              "It was handed down in an entirely different Supreme Court term, several years apart from the Seattle case",
+              "Unlike Seattle's plan, its racial tiebreaker was expressly upheld by the Supreme Court as constitutional",
             ],
             correctIndex: 1,
             explanation: "It was the companion case decided with Parents Involved on June 28, 2007.",
@@ -1502,10 +1512,10 @@ The full dissents in both cases, quoted from the United States Reports rather th
           {
             prompt: "What does the course say you should do with every date and figure in the 'assignment today' lesson?",
             options: [
-              "Memorize them permanently",
-              "Ignore them",
-              "Assume they never change",
-              "Re-check all of them against the source before relying on them, because assignment plans and boundaries change often",
+              "Memorize every one of them permanently, since Seattle's school assignment rules and boundaries never change",
+              "Ignore all of them completely, because none of these particular dates or figures ever matter to the method",
+              "Assume they will simply never change, and safely cite these same numbers in your writing for years to come",
+              "Re-check each of them against the source before relying on it, since assignment plans and boundaries change often",
             ],
             correctIndex: 3,
             explanation: "That instruction is not a disclaimer; it is the method.",
