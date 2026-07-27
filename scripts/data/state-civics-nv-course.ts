@@ -234,10 +234,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "What can Nevada voters do that no other state's voters can?",
             options: [
-              "Vote twice",
+              "Recall a U.S. Senator from office by signed petition",
               "Vote for 'None of These Candidates' in statewide races",
-              "Elect the Governor for life",
-              "Skip all taxes",
+              "Elect the Governor to unlimited consecutive terms",
+              "Pay no federal income tax by living in the state",
             ],
             correctIndex: 1,
             explanation:
@@ -247,10 +247,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "If 'None of These Candidates' gets the most votes, what happens?",
             options: [
-              "The seat stays vacant",
-              "The highest-finishing actual candidate still wins (the option is non-binding)",
-              "A new election is held",
-              "The Governor appoints someone",
+              "The seat stays vacant until a special election",
+              "The highest-finishing actual candidate still wins",
+              "A new runoff election is held within thirty days",
+              "The Governor appoints someone to fill the office",
             ],
             correctIndex: 1,
             explanation:
@@ -260,10 +260,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "Why does Nevada have no state income tax?",
             options: [
-              "It is banned by Congress",
+              "The U.S. Constitution bans all state income taxes",
               "Gaming (casino) taxes and tourism revenue fund the state",
-              "Nevada has no government",
-              "Only counties tax income",
+              "Casino profits are paid directly to every resident",
+              "Only individual counties may collect an income tax",
             ],
             correctIndex: 1,
             explanation:
@@ -273,10 +273,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "Which bodies regulate Nevada's casinos?",
             options: [
-              "The Legislature alone",
+              "The Legislature and the Governor's staff office",
               "The Gaming Control Board and the Gaming Commission",
-              "The federal government",
-              "The Supreme Court",
+              "The U.S. Department of Justice gaming division",
+              "The Nevada Supreme Court and the Attorney General",
             ],
             correctIndex: 1,
             explanation:
@@ -286,10 +286,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "How often does Nevada's Legislature meet?",
             options: [
-              "Year-round",
+              "Year-round in Carson City with no time limit",
               "Every other year (odd years), limited to 120 days",
-              "Once a decade",
-              "Only during elections",
+              "Every single year for a full ninety-day session",
+              "Only in election years for thirty session days",
             ],
             correctIndex: 1,
             explanation:
@@ -299,10 +299,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "How are Nevada's judges chosen?",
             options: [
-              "Appointed for life by the Governor",
+              "Appointed for life by the Governor and Senate",
               "Elected on a nonpartisan ballot to 6-year terms",
-              "Elected by the Legislature",
-              "Chosen by the Gaming Commission",
+              "Elected by the Legislature on partisan ballots",
+              "Chosen by the Gaming Commission every four years",
             ],
             correctIndex: 1,
             explanation:
@@ -312,10 +312,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "How many times must a citizen-initiated constitutional amendment pass in Nevada?",
             options: [
-              "Once",
+              "Once, in a single general election year",
               "Twice, in two consecutive general elections",
-              "Three times",
-              "It cannot be done by initiative",
+              "Three times across six years of voting",
+              "It cannot be done by citizen initiative",
             ],
             correctIndex: 1,
             explanation:
@@ -325,10 +325,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "What is unusual about Carson City?",
             options: [
-              "It is in another state",
-              "It is an independent consolidated municipality (a combined city-county)",
-              "It has no residents",
-              "It is a national park",
+              "It sits inside Clark County near Las Vegas",
+              "It is a consolidated city-county municipality",
+              "It is governed by an appointed city manager",
+              "It is one of Nevada's sixteen listed counties",
             ],
             correctIndex: 1,
             explanation:
@@ -338,10 +338,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "Which voting feature does Nevada offer?",
             options: [
-              "No registration ever",
-              "Same-day and automatic registration, plus mailed ballots to active voters",
-              "Voting only for casino owners",
-              "In-person Election-Day voting only",
+              "Registration is closed thirty days before any vote",
+              "Same-day and automatic registration, plus mailed ballots",
+              "Only registered casino owners may receive a ballot",
+              "In-person Election-Day voting is the only legal way",
             ],
             correctIndex: 1,
             explanation:
@@ -351,10 +351,10 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
           {
             prompt: "Why does this course tell you to VERIFY Nevada's voting and amendment rules?",
             options: [
-              "Because Nevada has no elections office",
-              "Because registration/ballot rules are run by county clerks and the two-election amendment process is specific: confirm at nvsos.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Nevada holds no elections and appoints all its officers",
+              "Because county clerks run the rules, which change: verify at nvsos.gov",
+              "Because Congress alone sets Nevada's voting and ballot statutes",
+              "Because the amendment rules never change from one year to the next",
             ],
             correctIndex: 1,
             explanation:
