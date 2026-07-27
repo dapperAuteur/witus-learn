@@ -249,8 +249,8 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
           {
             prompt: "The tennis net is lower in the center than at the posts. By how much, and why does it matter tactically?",
             options: [
-              "6 inches lower, it makes cross-court the geometrically safer shot",
-              "6 inches higher, it makes down-the-line safer",
+              "6 inches lower, cross-court clears more net",
+              "6 inches higher, making the down-the-line shot safer",
               "It is the same height all the way across",
               "1 foot lower, it makes the drop shot safer",
             ],
@@ -277,7 +277,7 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
             prompt: "Where does the '15, 30, 40' scoring system come from?",
             options: [
               "It's specified in ITF Rule 5 as deriving from a clock face",
-              "Nobody knows for certain, the clock-face story is a theory, not a documented fact",
+              "The clock-face story is a theory, not documented fact",
               "It was invented by the USTA in 1881",
               "It comes from the number of feet between the service lines",
             ],
@@ -315,7 +315,7 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
             prompt: "In a tie-break, the serve rotation is:",
             options: [
               "Each player serves two points throughout",
-              "First server serves one point, then players alternate two consecutive points each",
+              "One point by the first server, then two each in turn",
               "The server of the previous game serves the whole tie-break",
               "Each player serves four points",
             ],
@@ -339,10 +339,10 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
           {
             prompt: "Who standardized the 10-point final-set tie-break across all four Grand Slams, and when?",
             options: [
-              "The ITF, in its 2026 rulebook",
-              "The ATP and WTA jointly, in 2019",
-              "The Grand Slam Board, announced 16 March 2022 as a trial",
-              "The four Slams have never standardized it",
+              "The ITF, when it published the 2026 rulebook revision",
+              "The ATP and WTA together, back in the 2019 season",
+              "The Grand Slam Board, on 16 March 2022 as a trial",
+              "The four Slams have never once standardized it",
             ],
             correctIndex: 2,
             explanation:
@@ -351,7 +351,12 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
           },
           {
             prompt: "You toss the ball to serve, decide not to hit it, and catch it. What's the call?",
-            options: ["Fault", "Let", "Nothing, you may catch it or let it bounce", "Loss of point"],
+            options: [
+              "Fault, exactly like a missed first serve",
+              "A let, you replay the first serve",
+              "Nothing, you may catch or bounce it",
+              "Loss of point, a service fault",
+            ],
             correctIndex: 2,
             explanation: "ITF Rule 19, Case 1 answers this explicitly: it is not a fault.",
             sourceLessonSlug: "tennis-the-serve-and-the-let",
@@ -373,8 +378,8 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
               "You fault on the first serve. Your second serve clips the net cord and lands in. Under the standard ITF rule, what happens?",
             options: [
               "Double fault, you lose the point",
-              "It's a let; you replay it, and you are still on your second serve",
-              "It's a let; you get a fresh first serve",
+              "A let; replay it, still second serve",
+              "It's a let, and you get a fresh first serve",
               "It's in play, the point continues",
             ],
             correctIndex: 1,
@@ -392,7 +397,12 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
           },
           {
             prompt: "Which Grand Slam confirmed it would keep human line judges for 2026?",
-            options: ["Wimbledon", "The US Open", "The Australian Open", "Roland-Garros (the French Open)"],
+            options: [
+              "Wimbledon, played on grass",
+              "The US Open, on hard court",
+              "The Australian Open, on hard courts",
+              "Roland-Garros, the French Open",
+            ],
             correctIndex: 3,
             explanation:
               "Roland-Garros is the only major still using line judges. On clay the ball leaves an inspectable mark, and its tournament director has said the technology's reliability is 'not absolute' on the surface.",
@@ -640,7 +650,7 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             options: [
               "It mandates the Continental grip for serving",
               "It mandates an Eastern grip for beginners",
-              "Nothing at all, grips are coaching convention, not law",
+              "Nothing, grips are convention, not law",
               "It bans the Western grip on grass",
             ],
             correctIndex: 2,
@@ -652,7 +662,7 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             prompt: "Why did the professional tour drift toward the semi-western forehand grip?",
             options: [
               "It is required by the ATP",
-              "It closes the face so you can brush up the ball for topspin, letting you swing hard and still keep it in",
+              "Closing the face gives heavy topspin",
               "It is the only grip that works on clay",
               "It makes low, skidding balls easier to handle",
             ],
@@ -664,8 +674,8 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
           {
             prompt: "The USTA teaches groundstroke power as a chain. What is the correct order?",
             options: [
-              "Arm → shoulder → torso → hips → legs",
-              "Legs → hips → torso → shoulder → arm → racquet",
+              "Arm → shoulder → torso → hips → knees → legs",
+              "Legs → hips → torso → shoulder → arm",
               "Wrist → arm → racquet",
               "Torso → legs → arm → racquet",
             ],
@@ -677,10 +687,10 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
           {
             prompt: "What is the most common fault in recreational groundstrokes, the one no grip change can fix?",
             options: [
-              "Gripping the racquet too tightly",
-              "Late preparation, taking the racquet back when the ball bounces rather than when it crosses the net",
-              "Standing too close to the baseline",
-              "Using two hands on the backhand",
+              "Gripping the racquet far too tightly",
+              "Late preparation, racquet back too late",
+              "Standing too close to the baseline for balance",
+              "Using two hands on the backhand swing",
             ],
             correctIndex: 1,
             explanation:
@@ -692,7 +702,7 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             options: [
               "It is easier on high, shoulder-height balls",
               "It is easier to block back a big serve",
-              "More reach, and a more natural slice (it's the same grip)",
+              "More reach and a natural one-hand slice",
               "It is easier for beginners to learn",
             ],
             correctIndex: 2,
@@ -704,7 +714,7 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             prompt: "What does a slice do to the ball, and why is it not merely defensive?",
             options: [
               "Topspin, making the ball dip, it's purely a rally ball",
-              "Backspin, making the ball float and stay low after the bounce, an attack against a player who wants the ball high",
+              "Backspin, so the ball floats then stays low",
               "Sidespin only, which is illegal in singles",
               "Nothing; slice is just a slower groundstroke",
             ],
@@ -716,10 +726,10 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
           {
             prompt: "You toss the ball to serve, dislike the toss, and catch it. Under ITF Rule 19, what has happened?",
             options: [
-              "A fault",
-              "A let, serve again",
-              "Nothing, it is not a fault; you may catch it or let it bounce",
-              "Loss of point",
+              "A fault, like any missed serve",
+              "A let, so you serve that point again",
+              "Nothing, catch it or let it bounce",
+              "Loss of point, a foot fault",
             ],
             correctIndex: 2,
             explanation:
@@ -730,8 +740,8 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             prompt: "What actually makes a second serve safe?",
             options: [
               "Hitting the first serve more softly",
-              "Spin, brushing up/across the ball so it dips into the box and kicks off the court",
-              "Aiming for the centre line every time",
+              "Spin that makes it dip in and kick",
+              "Aiming for the centre line every single time",
               "Standing further behind the baseline",
             ],
             correctIndex: 1,
@@ -744,7 +754,7 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             options: [
               "Attack the first, neutralize the second",
               "Play both exactly the same way for consistency",
-              "Neutralize the first (get it back deep); attack the second (step in, take it early)",
+              "Neutralize the first, attack the second",
               "Lob the first, slice the second",
             ],
             correctIndex: 2,
@@ -756,7 +766,7 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             prompt: "What is the single most important instruction for a beginner's volley?",
             options: [
               "Take a long backswing to generate pace",
-              "Do not swing, block/punch the ball with the racquet out in front",
+              "Do not swing, block the ball out in front",
               "Drop the racquet head below the wrist on every ball",
               "Always volley with a semi-western grip",
             ],
@@ -768,8 +778,8 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
           {
             prompt: "The ball is low at the net. What should you do?",
             options: [
-              "Drop the racquet head below your wrist",
-              "Bend your knees to get down to the ball, keeping the racquet head up",
+              "Drop the racquet head well below your wrist",
+              "Bend the knees, keep the racquet up",
               "Swing harder to lift it",
               "Let it bounce and hit a groundstroke",
             ],
@@ -782,8 +792,8 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             prompt: "When exactly should you split step?",
             options: [
               "Just after you hit your own shot",
-              "As your opponent strikes the ball, landing on the balls of both feet at their moment of contact",
-              "Immediately after the ball bounces on your side",
+              "As your opponent strikes, land on both feet",
+              "Immediately after the ball bounces on your own side",
               "Only when you're at the net",
             ],
             correctIndex: 1,
@@ -795,8 +805,8 @@ Most recreational players do *hit → admire → panic*. They stand and watch th
             prompt: "After you hit a shot, where should you recover to?",
             options: [
               "Exactly the centre mark, every time",
-              "Toward the middle of the angles your opponent can now hit, shaded, not dead centre",
-              "Stay where you hit from, to watch the shot",
+              "Toward the middle of their reply angles",
+              "Stay right where you hit from, to watch the shot",
               "The net, always",
             ],
             correctIndex: 1,
@@ -1024,8 +1034,8 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
           {
             prompt: "The course cites the 70/20/10 rally-length split. What important caveat does it attach?",
             options: [
-              "The data is disputed and probably wrong",
-              "It comes from men's professional (ATP) data, comparable public recreational data essentially does not exist, though the structural point likely strengthens at lower levels",
+              "The data is disputed and probably all wrong",
+              "It is men's ATP data, not recreational",
               "It only applies on clay courts",
               "It was measured at high-school matches",
             ],
@@ -1038,7 +1048,7 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
             prompt: "Why is the standard club practice routine (long crosscourt baseline rallies) close to backwards?",
             options: [
               "Rallying is worthless and should never be practised",
-              "It trains the ~10% of points that reach 9+ shots, while the 70% decided in the first four balls go unrehearsed",
+              "It drills rare long rallies, not the first four",
               "Crosscourt is a bad shot",
               "Because fitness doesn't matter in tennis",
             ],
@@ -1050,10 +1060,10 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
           {
             prompt: "In the classic Serve +1 pattern from the deuce court (right-hander), what does the wide serve accomplish?",
             options: [
-              "It guarantees an ace",
-              "It pulls the returner off court, making a crosscourt return the likeliest reply, so you can pre-move and hit +1 into the open court",
-              "It forces the returner to lob",
-              "It is illegal under ITF rules",
+              "It guarantees an outright ace",
+              "It pulls the returner off the court",
+              "It forces the returner to lob it back",
+              "It is illegal under the current ITF rules",
             ],
             correctIndex: 1,
             explanation:
@@ -1064,9 +1074,9 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
             prompt: "The course says strategy in tennis is 'almost never certainty.' What is it instead?",
             options: [
               "Guessing, and hoping",
-              "Narrowing, shrinking the set of likely replies, then playing the odds you yourself created",
+              "Narrowing the set of likely replies",
               "Hitting as hard as possible",
-              "Copying whatever the professionals do",
+              "Copying whatever the top professionals do",
             ],
             correctIndex: 1,
             explanation:
@@ -1076,10 +1086,10 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
           {
             prompt: "What is the returner's cardinal sin against a second serve?",
             options: [
-              "Returning crosscourt",
-              "Returning too deep",
-              "Going for too much on the return itself, converting the game's biggest advantage into an unforced error",
-              "Split-stepping too early",
+              "Returning it safely crosscourt",
+              "Returning it far too deep",
+              "Overhitting it into an unforced error",
+              "Split-stepping much too early on the return",
             ],
             correctIndex: 2,
             explanation:
@@ -1090,7 +1100,7 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
             prompt: "Why is hitting deep genuinely strategic rather than merely cautious?",
             options: [
               "It looks impressive to spectators",
-              "It forces the opponent to hit from behind the baseline, where the angles available to them are small, a short ball lets them step in and opens the whole court",
+              "It pins them deep, cutting angles",
               "Deep balls always produce winners",
               "The rules award bonus points for depth",
             ],
@@ -1115,7 +1125,7 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
           {
             prompt: "Give BOTH geometric reasons that crosscourt is the percentage rally ball.",
             options: [
-              "Lower net in the middle, and a longer court on the diagonal",
+              "Lower net in the middle, longer diagonal",
               "Higher net and a shorter court",
               "It's easier to disguise, and the wind helps",
               "It's the only legal direction on a rally ball",
@@ -1128,9 +1138,9 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
           {
             prompt: "When should you change direction and go down the line?",
             options: [
-              "On any ball, whenever you feel like it",
+              "On any ball, whenever you feel like going",
               "Off a defensive ball while on the run",
-              "Off a ball you're AHEAD of, balanced, with the ball in your strike zone",
+              "Off a ball you're ahead of, balanced",
               "Only on second serves",
             ],
             correctIndex: 2,
@@ -1142,7 +1152,7 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
             prompt: "The course refuses to cite one commonly-repeated statistic. Which, and why?",
             options: [
               "The net height, because it varies by tournament",
-              "A figure like 'X% of amateur points end in unforced errors', because it's repeated everywhere with no source behind it",
+              "An amateur unforced-error %, repeated with no source",
               "The 70/20/10 rally split, because O'Shannessy is unreliable",
               "The court dimensions, because the ITF hasn't published them",
             ],
@@ -1154,7 +1164,7 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
           {
             prompt: "How wide is the doubles court compared with the singles court?",
             options: [
-              "36 ft (10.97 m) vs 27 ft (8.23 m), each alley adds 4.5 ft; same length",
+              "36 ft vs 27 ft, alleys add 4.5 ft, same length",
               "40 ft vs 27 ft, each alley adds 6.5 ft",
               "36 ft vs 27 ft, and the court is also longer",
               "They are the same width; only the service boxes change",
@@ -1167,8 +1177,8 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
           {
             prompt: "In doubles, is the service box bigger than in singles?",
             options: [
-              "Yes, the doubles alleys count on the serve",
-              "No, the serve must land in the diagonally opposite service box, and the alleys are NOT part of it; the alleys only come into play once the point is live",
+              "Yes, the doubles alleys count on the serve too",
+              "No, the alleys are not part of the serve",
               "Yes, but only on the second serve",
               "Only at Grand Slam events",
             ],
@@ -1182,8 +1192,8 @@ Which retro-justifies Lesson 10: a player with no volley is not a full doubles p
             options: [
               "Both players at the net",
               "Both players at the baseline",
-              "One up and one back, it leaves a diagonal corridor of open court",
-              "Both players standing in the alleys",
+              "One up, one back, a diagonal gap",
+              "Both players standing deep in the alleys",
             ],
             correctIndex: 2,
             explanation:
@@ -1329,7 +1339,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
             prompt: "What is *jeu de paume*?",
             options: [
               "The French name for the Roland-Garros tournament",
-              "A medieval French game, 'the game of the palm', played by hitting a ball with the hand, the ancestor of tennis",
+              "A medieval French game, tennis's ancestor",
               "The original name for a tie-break",
               "The French tennis federation",
             ],
@@ -1353,10 +1363,10 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
           {
             prompt: "What did Walter Clopton Wingfield's February 1874 provisional patent actually cover?",
             options: [
-              "The tie-break",
-              "The modern tennis racket",
-              "A portable court, sold as a box of poles, net, mallet, pegs, rackets, balls, and an instruction manual",
-              "The 15/30/40 scoring system",
+              "The tie-break scoring rule",
+              "The modern wooden tennis racket",
+              "A portable court in a boxed kit",
+              "The 15/30/40 point scoring system",
             ],
             correctIndex: 2,
             explanation:
@@ -1366,7 +1376,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
           {
             prompt: "Which statement about the phrase 'Grand Slam' is accurate?",
             options: [
-              "Don Budge was the first to win all four majors in a year (1938), but the claim that the term was coined for him is contested, newspapers used it about tennis in 1933",
+              "Budge won all four in 1938, but the coinage is contested",
               "The writer Allison Danzig definitively coined it for Don Budge in 1938",
               "It is the official ITF term, defined in the rulebook",
               "It originated in baseball",
@@ -1411,7 +1421,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
             prompt: "Under the pre-1968 amateur rule, what happened when an amateur champion turned professional?",
             options: [
               "Nothing, he kept playing the majors and now got paid",
-              "He was banned from the majors, and could only play paid exhibition tours",
+              "Banned from the majors, only paid pro tours",
               "He had to give back his trophies",
               "He was required to join the ILTF board",
             ],
@@ -1424,7 +1434,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
             prompt: "What was 'shamateurism'?",
             options: [
               "A style of play popular in the 1950s",
-              "The open secret that officially unpaid amateurs were taking large under-the-table payments",
+              "Amateurs taking under-the-table pay",
               "An early name for the ATP",
               "A rule allowing amateurs to accept prize money",
             ],
@@ -1436,7 +1446,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
             prompt: "What was the real function of the amateur rule?",
             options: [
               "To keep money out of tennis entirely",
-              "To keep players' income untraceable and discretionary, which kept control with the national federations",
+              "To keep control with the federations",
               "To protect players from taxes",
               "To make matches shorter",
             ],
@@ -1449,7 +1459,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
             prompt: "On 30 March 1968, meeting in Paris, what did the ILTF vote to do?",
             options: [
               "Create the ATP",
-              "Approve open tennis, amateurs and professionals competing together for prize money",
+              "Approve open tennis for all",
               "Standardize the tie-break",
               "Ban South Africa from Davis Cup",
             ],
@@ -1462,7 +1472,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
             options: [
               "The 1968 Wimbledon Championships",
               "The 1968 US Open",
-              "The British Hard Court Championships at Bournemouth, from 22 April 1968",
+              "Bournemouth, 22 April 1968",
               "The 1968 French Championships",
             ],
             correctIndex: 2,
@@ -1475,7 +1485,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
             options: [
               "It was the first five-set match in history",
               "It won Cox the tournament",
-              "It was the first time an amateur beat a pro in an open event, undercutting the premise that they were different classes of player",
+              "First amateur to beat a pro in an open event",
               "It caused the ILTF to reverse the open-tennis vote",
             ],
             correctIndex: 2,
@@ -1485,10 +1495,10 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
           {
             prompt: "Which of these became possible only *after* the Open era began?",
             options: [
-              "Players organizing into their own associations (the ATP in 1972, the WTA in 1973)",
-              "The tie-break",
-              "Doubles",
-              "The Davis Cup",
+              "Players forming their own associations",
+              "The tie-break, introduced around 1970",
+              "Mixed doubles played at the majors",
+              "The Davis Cup, first contested in 1900",
             ],
             correctIndex: 0,
             explanation:
@@ -1511,7 +1521,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
             prompt: "How did the Open era change the meaning of the word 'amateur'?",
             options: [
               "It didn't, the word means the same thing it always did",
-              "It turned it from a legal category controlling whether you could be paid into simply meaning someone who plays for reasons other than money",
+              "From a legal pay category to playing for love",
               "It made 'amateur' a professional ranking level",
               "It abolished amateur tennis entirely",
             ],
@@ -1737,10 +1747,10 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
           {
             prompt: "Why was the American Tennis Association founded in 1916?",
             options: [
-              "To organize professional tennis",
-              "Because the USLTA had formally barred African American players from its competitions",
-              "To write the rules of tennis",
-              "To run the US Open",
+              "To organize the professional tour",
+              "The USLTA barred Black players",
+              "To write the official rules of tennis",
+              "To run the US Open tournament",
             ],
             correctIndex: 1,
             explanation:
@@ -1763,9 +1773,9 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
           {
             prompt: "What did Althea Gibson win in 1956?",
             options: [
-              "Wimbledon",
-              "The U.S. Nationals",
-              "The French Championships, the first Grand Slam title won by a Black player",
+              "Wimbledon, which she won in 1957",
+              "The U.S. Nationals, won in 1957",
+              "The French Championships",
               "The Australian Championships",
             ],
             correctIndex: 2,
@@ -1784,10 +1794,10 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
           {
             prompt: "Arthur Ashe won the 1968 US Open. Who received the $14,000 winner's cheque?",
             options: [
-              "Ashe",
-              "Nobody, it was withheld",
-              "Tom Okker, the runner-up, because Ashe was an amateur and could not accept it",
-              "The USTA",
+              "Ashe, the amateur champion",
+              "Nobody, the cheque was withheld",
+              "Tom Okker, the runner-up",
+              "The USTA kept the cheque",
             ],
             correctIndex: 2,
             explanation:
@@ -1797,10 +1807,10 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
           {
             prompt: "At the 1973 South African Open, what did Arthur Ashe insist on?",
             options: [
-              "Playing only doubles",
-              "Entering as a Black man, refusing the apartheid regime's 'honorary white' designation",
+              "Playing only in the doubles draw",
+              "Refusing 'honorary white' status",
               "Donating his prize money to the ATP",
-              "Playing under a false name",
+              "Playing under an assumed false name",
             ],
             correctIndex: 1,
             explanation:
@@ -1811,7 +1821,7 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
             prompt: "How did Arthur Ashe's HIV diagnosis become public in April 1992?",
             options: [
               "He chose to announce it at a press conference of his own initiative",
-              "A *USA Today* reporter told him the paper had a tip; he announced it the next day, the leak forced his hand",
+              "A USA Today tip forced his hand, he announced next day",
               "It was disclosed by the ATP",
               "It was never made public in his lifetime",
             ],
@@ -1824,7 +1834,7 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
             prompt: "Why did the Original 9 sign $1 contracts on 23 September 1970?",
             options: [
               "As a symbolic protest against low pay",
-              "As a legal device, becoming contract professionals shielded the Houston Racquet Club from USLTA sanctions",
+              "A legal device to avoid USLTA sanctions",
               "Because that was the tournament's actual prize money",
               "To join the ATP",
             ],
@@ -1845,7 +1855,7 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
             prompt: "When and where was the WTA founded?",
             options: [
               "September 1972, at Forest Hills",
-              "June 1973, at the Gloucester Hotel in London, a week before Wimbledon",
+              "June 1973, in London",
               "September 1970, in Houston",
               "March 1968, in Paris",
             ],
@@ -1865,10 +1875,10 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
           {
             prompt: "Which Grand Slam paid equal prize money, then went BACKWARDS to paying men more?",
             options: [
-              "Wimbledon",
-              "The US Open",
-              "The Australian Open, equal in 1984, paying men more again by 1996, equal permanently only from 2001",
-              "None of them ever reversed",
+              "Wimbledon, equal only from 2007",
+              "The US Open, equal since 1973",
+              "The Australian Open, then reversed",
+              "None of the four ever reversed course",
             ],
             correctIndex: 2,
             explanation:
@@ -1879,9 +1889,9 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
             prompt: "What is the precise truth about Roland-Garros and equal prize money?",
             options: [
               "It went fully equal in 2006",
-              "In 2006 only the two singles champions were paid equally; full-draw equality came in 2007",
-              "It has never paid equal prize money",
-              "It was the first Slam to pay equally",
+              "Champions equal 2006, full draw 2007",
+              "It has never once paid equal prize money",
+              "It was the very first Slam to pay equally",
             ],
             correctIndex: 1,
             explanation:
@@ -1899,7 +1909,7 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
             prompt: "Does equal prize money at the four Slams mean tennis has equal pay?",
             options: [
               "Yes, the Slams are the whole sport",
-              "No. Outside the Slams the gap is large and current, and the WTA has pledged a pathway to equal prize money only by 2027 (combined events) and 2033 (non-combined)",
+              "No, outside the Slams the gap is large",
               "Yes, since the WTA's 2023 announcement",
               "No, because the ATP refuses to allow it",
             ],
@@ -2052,7 +2062,7 @@ Which means your teammate's match can end mid-point because someone else clinche
             prompt: "What does the '500' in 'ATP 500' or 'WTA 500' refer to?",
             options: [
               "The prize money in thousands of dollars",
-              "The number of ranking points the champion earns",
+              "The champion's ranking points earned",
               "The number of players in the draw",
               "The year the event was founded",
             ],
@@ -2065,7 +2075,7 @@ Which means your teammate's match can end mid-point because someone else clinche
             prompt: "ATP and WTA rankings use a rolling 52-week system. What does that mean in practice?",
             options: [
               "Points accumulate permanently over a career",
-              "Points expire after 52 weeks and must be re-earned, you 'defend' them every year",
+              "Points expire after 52 weeks, you defend",
               "Rankings are recalculated once a year",
               "Only your best career result counts",
             ],
@@ -2078,7 +2088,7 @@ Which means your teammate's match can end mid-point because someone else clinche
             prompt: "What is the ITF World Tennis Tour?",
             options: [
               "The top tier of professional tennis",
-              "The entry level of pro tennis, ~600 tournaments, where players earn their first ATP/WTA ranking points",
+              "The entry level of the pro tour",
               "A team competition between nations",
               "The junior circuit only",
             ],
@@ -2090,10 +2100,10 @@ Which means your teammate's match can end mid-point because someone else clinche
           {
             prompt: "Since 1 January 2022, who runs tennis's anti-doping and anti-corruption programs?",
             options: [
-              "The ITF",
-              "The ATP and WTA separately",
-              "The International Tennis Integrity Agency (ITIA), an independent body",
-              "The Grand Slam Board",
+              "The ITF, as it always has",
+              "The ATP and WTA, run separately",
+              "The ITIA, an independent body",
+              "The Grand Slam Board itself",
             ],
             correctIndex: 2,
             explanation:
@@ -2104,7 +2114,7 @@ Which means your teammate's match can end mid-point because someone else clinche
             prompt: "The Davis Cup began in 1900. Where did its trophy come from?",
             options: [
               "It was donated by the ITF",
-              "Dwight Davis, one of the four Harvard players behind the idea, bought it with his own money",
+              "Dwight Davis paid for it himself",
               "It was commissioned by the British royal family",
               "It was funded by a sponsor",
             ],
@@ -2116,7 +2126,7 @@ Which means your teammate's match can end mid-point because someone else clinche
             prompt: "The Fed Cup was renamed the Billie Jean King Cup in 2020. What made that notable?",
             options: [
               "It was the first team competition to allow professionals",
-              "It was the first time a major global team competition in any sport had been named after a woman",
+              "The first global team event named after a woman",
               "It was the first ITF event to pay prize money",
               "It merged with the Davis Cup",
             ],
@@ -2128,7 +2138,7 @@ Which means your teammate's match can end mid-point because someone else clinche
             prompt: "Why did tennis disappear from the Olympics after 1924?",
             options: [
               "Not enough countries played it",
-              "A dispute between the ILTF and the IOC over amateurism and control of the players",
+              "An ILTF-IOC dispute over amateurism",
               "The courts were too expensive to build",
               "It was replaced by badminton",
             ],
@@ -2152,7 +2162,7 @@ Which means your teammate's match can end mid-point because someone else clinche
           },
           {
             prompt: "Roughly how many students played high school tennis in the U.S. in 2024-25?",
-            options: ["About 60,000", "About 130,000", "About 363,000 (204,721 girls + 158,667 boys)", "About 1.2 million"],
+            options: ["About 60,000", "About 130,000", "About 363,000", "About 1.2 million"],
             correctIndex: 2,
             explanation:
               "Per the NFHS participation survey. Girls' tennis is the 7th most popular girls' sport; boys' tennis is 9th. Remember this number, it's the denominator when we do the odds of turning pro.",
@@ -2162,7 +2172,7 @@ Which means your teammate's match can end mid-point because someone else clinche
             prompt: "What is USTA League?",
             options: [
               "The U.S. professional tour",
-              "The largest adult competitive tennis league in the country, 320,000+ players a year, with a path to a national championship",
+              "The largest adult tennis league",
               "A junior development program",
               "The college tennis governing body",
             ],
@@ -2174,10 +2184,10 @@ Which means your teammate's match can end mid-point because someone else clinche
           {
             prompt: "What makes the USTA League ladder work?",
             options: [
-              "Age divisions only",
-              "The NTRP rating system, which sorts players by level so matches are competitive",
-              "A draft system",
-              "Random assignment",
+              "Age divisions only, by decade",
+              "The NTRP rating system",
+              "A player draft system",
+              "Random team assignment",
             ],
             correctIndex: 1,
             explanation: "League play generally runs from 2.5 to 5.0. You either self-rate or receive a computer rating from your results.",
@@ -2187,7 +2197,7 @@ Which means your teammate's match can end mid-point because someone else clinche
             prompt: "In NCAA Division I team tennis, how does a dual match work?",
             options: [
               "Six singles matches, most wins takes it",
-              "Three doubles matches for one combined team point, then six singles worth one point each, first team to 4 points wins",
+              "A doubles point, six singles, first to 4",
               "One match per player, best of five sets",
               "Same as a pro tournament, single elimination",
             ],
@@ -2199,10 +2209,10 @@ Which means your teammate's match can end mid-point because someone else clinche
           {
             prompt: "Which body is the governing body of U.S. college tennis?",
             options: [
-              "The USTA",
-              "The ITF",
-              "The Intercollegiate Tennis Association (ITA)",
-              "The NCAA alone",
+              "The USTA, the U.S. governing body",
+              "The ITF, the world governing body",
+              "The Intercollegiate Tennis Association",
+              "The NCAA, acting entirely alone",
             ],
             correctIndex: 2,
             explanation:
@@ -2212,10 +2222,10 @@ Which means your teammate's match can end mid-point because someone else clinche
           {
             prompt: "World TeamTennis, founded in 1974 with Billie Jean King among its founders, relaunches in December 2026 with what notable feature?",
             options: [
-              "No-let serving",
-              "Competing players receive equity in the league, a first in tennis",
+              "No-let serving on every point",
+              "Players get league equity",
               "Matches played on grass only",
-              "No doubles",
+              "No doubles matches at all",
             ],
             correctIndex: 1,
             explanation:
@@ -2405,7 +2415,7 @@ That is not a consolation prize. **That is the prize.**
         questions: [
           {
             prompt: "Roughly what percentage of U.S. high school tennis players go on to play NCAA tennis?",
-            options: ["About 25%", "About 15%", "About 4-5% (4.7% of boys, 4.0% of girls)", "Less than 0.1%"],
+            options: ["About 25%", "About 15%", "About 4-5%", "Less than 0.1%"],
             correctIndex: 2,
             explanation:
               "And the NCAA notes its own figure is generous, because the denominator misses club-only players, a group it names tennis as having a lot of. So the true rate is lower.",
@@ -2434,7 +2444,7 @@ That is not a consolation prize. **That is the prize.**
           },
           {
             prompt: "How much prize money can a tennis player accept before college enrollment and keep NCAA eligibility?",
-            options: ["$0", "$1,000 per year", "Up to $10,000 per calendar year", "Unlimited"],
+            options: ["$0, none allowed", "$1,000 per year", "$10,000 a year", "Unlimited, no cap"],
             correctIndex: 2,
             explanation: "Tennis is specifically carved out of the general NCAA amateurism rule. Almost no other sport gets this.",
             sourceLessonSlug: "tennis-college-pipeline",
@@ -2471,7 +2481,7 @@ That is not a consolation prize. **That is the prize.**
           {
             prompt:
               "About 14,000 people play professional tennis each year. Roughly how many earn enough prize money to cover the cost of competing?",
-            options: ["About 6,000", "About 2,500", "About 600 (the ITF's figure), or the top 250-350, per the review panel", "Nearly all of them"],
+            options: ["About 6,000", "About 2,500", "About 600", "Nearly all of them"],
             correctIndex: 2,
             explanation:
               "600 ÷ 14,000 ≈ 4.3%. By the panel's stricter figure, 350 ÷ 14,000 = 2.5%. Roughly 96-97% of professional tennis players LOSE money playing professional tennis.",
@@ -2480,7 +2490,7 @@ That is not a consolation prize. **That is the prize.**
           {
             prompt: "According to the ITF, what is the approximate 'break-even' ranking in professional tennis?",
             options: [
-              "Around 336 for men and 253 for women, and that's BEFORE coaching costs",
+              "About 336 men, 253 women",
               "Around 1,000 for both",
               "Around 50 for both",
               "There is no break-even point",
@@ -2494,7 +2504,7 @@ That is not a consolation prize. **That is the prize.**
             prompt: "What is the difference between a rating (NTRP, UTR) and a ranking?",
             options: [
               "They are two words for the same thing",
-              "A rating estimates your level; a ranking is an ordered list of who is ahead of whom",
+              "A rating is your level; a ranking is your order",
               "A ranking estimates your level; a rating is an ordered list",
               "Ratings are only for professionals",
             ],
@@ -2506,9 +2516,9 @@ That is not a consolation prize. **That is the prize.**
           {
             prompt: "How many people played tennis in the U.S. in 2025, and what's the trend?",
             options: [
-              "27.3 million, a sixth consecutive year of growth, up 54% since 2019",
-              "5 million, declining",
-              "60 million, flat",
+              "27.3 million, up 54% since 2019",
+              "5 million, declining fast",
+              "60 million, roughly flat",
               "12 million, declining since 2019",
             ],
             correctIndex: 0,
@@ -2519,7 +2529,7 @@ That is not a consolation prize. **That is the prize.**
             prompt: "What is the single strongest argument for tennis as a lifetime sport?",
             options: [
               "It is the easiest sport to learn",
-              "You can COMPETE, with a rating, a league, and a path to a national championship, at 25, 45, and 70",
+              "You can COMPETE at 25, 45, and 70",
               "It requires no equipment",
               "It has the highest professional salaries",
             ],
@@ -2533,7 +2543,7 @@ That is not a consolation prize. **That is the prize.**
               "The lesson notes that tennis is a 'networking sport' but insists on naming a complication. What is it?",
             options: [
               "Tennis is too expensive to televise",
-              "It has been an upper-middle-class club sport for a century, and access to courts, coaching, and membership is not evenly distributed",
+              "Court and coaching access is unequal",
               "Networking is against USTA rules",
               "Doubles partners are assigned randomly",
             ],
@@ -2546,9 +2556,9 @@ That is not a consolation prize. **That is the prize.**
             prompt: "Which statement best captures this section's argument?",
             options: [
               "Turning pro is the only worthwhile goal in tennis",
-              "The pro tour is a lottery with roughly a 97% loss rate; the amateur ladder is a real, winnable competition for life, and only one of those is being sold to you",
-              "Nobody should play competitive tennis",
-              "College tennis is impossible to reach",
+              "A 97% loss lottery vs a winnable amateur ladder",
+              "Nobody should ever play competitive tennis",
+              "College tennis is impossible for anyone to reach",
             ],
             correctIndex: 1,
             explanation:
@@ -2558,10 +2568,10 @@ That is not a consolation prize. **That is the prize.**
           {
             prompt: "Why is it significant that the ITF and Wimbledon PUBLISH these prize-money and break-even figures?",
             options: [
-              "It is required by law",
+              "It is required by U.S. federal law",
               "It isn't significant, every sport does it",
-              "Because a sport that hid these figures would look exactly like a sport where everybody makes it",
-              "It boosts ticket sales",
+              "Hiding these would mask the loss rate",
+              "It boosts ticket and TV sales revenue",
             ],
             correctIndex: 2,
             explanation:
@@ -2936,7 +2946,7 @@ You are being handed the same information they had to fight to assemble.
             prompt: "Per the BLS, roughly how many coaching jobs are there compared with athlete jobs?",
             options: [
               "About the same number of each",
-              "About 16 times more coaching jobs (248,950 vs 15,070)",
+              "16 times more coaching jobs",
               "About 3 times more athlete jobs",
               "About 100 times more athlete jobs",
             ],
@@ -2949,7 +2959,7 @@ You are being handed the same information they had to fight to assemble.
               "For athletes and sports competitors, the BLS mean wage is $206,180 and the median is $66,710. What does that tell you?",
             options: [
               "The data is wrong",
-              "It's a right-skewed distribution, a few superstars drag the average far above what a typical athlete earns. Trust the median.",
+              "Right-skewed, a few stars pull the mean up",
               "Most athletes earn about $206,180",
               "It means athletes are underpaid relative to coaches",
             ],
@@ -2961,10 +2971,10 @@ You are being handed the same information they had to fight to assemble.
           {
             prompt: "What happened to the USPTA?",
             options: [
-              "It merged with the USTA",
-              "It shut down",
-              "It rebranded as the RSPA (Racquet Sports Professionals Association) in September 2024, now covering tennis, pickleball, padel, squash, and platform tennis",
-              "It was absorbed by the PTR",
+              "It merged into the USTA in 2024",
+              "It shut down completely in 2024",
+              "It rebranded as the RSPA in 2024",
+              "It was absorbed by the rival PTR",
             ],
             correctIndex: 2,
             explanation: "Founded in 1927 as the USPTA. Over 14,000 members. If an older source says 'USPTA,' it means RSPA.",
@@ -2974,7 +2984,7 @@ You are being handed the same information they had to fight to assemble.
             prompt: "Does the USTA certify tennis coaches?",
             options: [
               "Yes, it is the only body that can",
-              "No. It ACCREDITS the organizations that certify coaches, and accreditation is voluntary and free",
+              "No, it accredits the certifiers",
               "Yes, but only for junior coaches",
               "No, nobody certifies tennis coaches",
             ],
@@ -2987,7 +2997,7 @@ You are being handed the same information they had to fight to assemble.
             prompt: "What three things does USTA Safe Play Approval require?",
             options: [
               "A tennis rating, a résumé, and references",
-              "A criminal background check, acknowledgement of the Safe Play Policy, and U.S. Center for SafeSport training",
+              "Background check, policy sign-off, and training",
               "A college degree, a certification, and insurance",
               "Only a background check",
             ],
@@ -3000,7 +3010,7 @@ You are being handed the same information they had to fight to assemble.
             prompt: "Why is racquet stringing structurally a good first business?",
             options: [
               "It requires a large building and staff",
-              "It's a recurring, non-optional service, strings break and lose tension on a schedule, so the same customer buys again for as long as they play",
+              "A recurring, non-optional service",
               "It has no competition anywhere",
               "It requires a four-year degree",
             ],
@@ -3014,7 +3024,7 @@ You are being handed the same information they had to fight to assemble.
             options: [
               "CS (Certified Stringer), basic stringing only",
               "PRA (Professional Racquet Advisor), advising on technology",
-              "MRT (Master Racquet Technician), including customizing a racquet's weight, balance, and swingweight",
+              "MRT (Master Racquet Technician), full customizing",
               "There is only one USRSA credential",
             ],
             correctIndex: 2,
@@ -3039,7 +3049,7 @@ You are being handed the same information they had to fight to assemble.
             prompt: "Why hasn't electronic line calling eliminated the officiating career?",
             options: [
               "Because ELC is only used at Roland-Garros",
-              "Because ELC replaced only the out/fault calls, the most mechanical task, while every judgment call stays with the chair umpire",
+              "ELC replaced only line calls, not judgment",
               "Because the ITF banned it",
               "It has eliminated it, there are no officials left",
             ],
@@ -3065,7 +3075,7 @@ You are being handed the same information they had to fight to assemble.
             prompt: "What does the USTA's facility grant program fund, and what is the condition?",
             options: [
               "100% of costs, with no conditions",
-              "Up to 50% of total project cost, but the facility must be open to the public",
+              "Up to 50%, if open to the public",
               "Only private club renovations",
               "Only professional tournament venues",
             ],
@@ -3077,10 +3087,10 @@ You are being handed the same information they had to fight to assemble.
           {
             prompt: "Why does this course refuse to state the cost of building a tennis court?",
             options: [
-              "Because it's a secret",
-              "Because the authoritative body (the American Sports Builders Association) publishes construction standards but no price, every confident figure online comes from a lead-generation site",
-              "Because courts are free to build",
-              "Because the USTA forbids it",
+              "Because it's kept a secret",
+              "The ASBA sets standards, not prices",
+              "Because tennis courts are free to build",
+              "Because the USTA strictly forbids it",
             ],
             correctIndex: 1,
             explanation:
@@ -3099,7 +3109,7 @@ You are being handed the same information they had to fight to assemble.
             prompt: "What is the core argument of Section 8?",
             options: [
               "Everyone should try to turn professional",
-              "The money in tennis is not mostly in PLAYING tennis, the players are the product, and the sport is the market",
+              "The money isn't in playing tennis",
               "Tennis is a dying industry",
               "Only wealthy people can work in tennis",
             ],
@@ -3112,10 +3122,10 @@ You are being handed the same information they had to fight to assemble.
             prompt:
               "The course points out that Gladys Heldman, the Original 9, Billie Jean King, and Arthur Ashe changed tennis. What does it say they had in common?",
             options: [
-              "They all won Wimbledon",
-              "They understood how the BUSINESS worked, publishing, contracts, organizations, leagues, a players' union, and were willing to build a different one",
+              "They all won the Wimbledon title",
+              "They grasped how the business worked",
               "They were all coached by the same person",
-              "They all played left-handed",
+              "They all played tennis left-handed",
             ],
             correctIndex: 1,
             explanation:
