@@ -310,10 +310,10 @@ The practical effect: Illinois pushes real power **down** to local governments, 
           {
             prompt: "What is distinctive about Illinois's two financial officers?",
             options: [
-              "It has neither a Comptroller nor a Treasurer",
-              "It elects BOTH a Comptroller and a Treasurer as separate offices",
-              "The Governor appoints both",
-              "They are the same person",
+              "It has neither a Comptroller nor a Treasurer at all",
+              "It elects both a Comptroller and a Treasurer separately",
+              "The Governor appoints both of these two financial officers",
+              "They are always one and the very same single person",
             ],
             correctIndex: 1,
             explanation:
@@ -323,10 +323,10 @@ The practical effect: Illinois pushes real power **down** to local governments, 
           {
             prompt: "What changed in 2014 about the Illinois Governor and Lieutenant Governor?",
             options: [
-              "The office of Lieutenant Governor was abolished",
-              "They began running together on a joint ticket (previously elected separately)",
-              "The Governor's term became six years",
-              "The Lieutenant Governor became a judge",
+              "The office of Lieutenant Governor was fully abolished",
+              "They began running together on a single joint ticket",
+              "The Governor's term of office became six years long",
+              "The Lieutenant Governor became a sitting trial judge",
             ],
             correctIndex: 1,
             explanation:
@@ -336,10 +336,10 @@ The practical effect: Illinois pushes real power **down** to local governments, 
           {
             prompt: "How are Illinois Supreme Court justices chosen?",
             options: [
-              "Appointed by the Governor for life",
-              "Elected in partisan district races to 10-year terms (3 justices from Cook County)",
-              "Elected on a nonpartisan statewide ballot",
-              "Chosen by the General Assembly",
+              "Appointed by the Governor for a lifetime term",
+              "Elected in partisan district races to 10-year terms",
+              "Elected on a nonpartisan statewide ballot each cycle",
+              "Chosen directly by the Illinois General Assembly",
             ],
             correctIndex: 1,
             explanation:
@@ -349,10 +349,10 @@ The practical effect: Illinois pushes real power **down** to local governments, 
           {
             prompt: "What is the ONLY subject Illinois citizens may change by initiative?",
             options: [
-              "Any law they wish",
-              "The structure and procedures of the Legislature (the Legislative Article)",
-              "Only tax rates",
-              "Only the executive branch",
+              "Any state or local law they happen to wish to change",
+              "Only the Legislative Article of the constitution",
+              "Only state and local tax rates set each year",
+              "Only the internal structure of the executive branch",
             ],
             correctIndex: 1,
             explanation:
@@ -362,10 +362,10 @@ The practical effect: Illinois pushes real power **down** to local governments, 
           {
             prompt: "What did the 1980 Cutback Amendment do?",
             options: [
-              "Created a Lieutenant Governor",
-              "Shrank the House from 177 to 118 and ended multi-member districts and cumulative voting",
-              "Abolished the Supreme Court",
-              "Merged Cook County into the state",
+              "Created a brand-new office of Lieutenant Governor",
+              "Cut the House to 118 and ended cumulative voting",
+              "Completely abolished the Illinois Supreme Court",
+              "Merged all of Cook County directly into the state",
             ],
             correctIndex: 1,
             explanation:
@@ -376,9 +376,9 @@ The practical effect: Illinois pushes real power **down** to local governments, 
             prompt: "How is Illinois's local-government tradition best described?",
             options: [
               "Dillon's Rule: localities have only granted powers",
-              "Strong home rule: home-rule units start with broad power unless the state limits them",
-              "All power held by the Governor",
-              "No local governments at all",
+              "Strong home rule with broad local power by default",
+              "All governing power is held by the state Governor",
+              "There are no local governments in the state at all",
             ],
             correctIndex: 1,
             explanation:
@@ -396,10 +396,10 @@ The practical effect: Illinois pushes real power **down** to local governments, 
           {
             prompt: "Which voter-access feature does Illinois offer?",
             options: [
-              "No mail voting of any kind",
-              "Same-day registration, automatic registration, and no-excuse vote-by-mail",
-              "Voting only for property owners",
-              "In-person Election-Day voting only",
+              "No mail voting of any kind is ever allowed here",
+              "Same-day and automatic registration and mail voting",
+              "Voting is limited to property-owning residents only",
+              "In-person Election-Day voting is the only option",
             ],
             correctIndex: 1,
             explanation:
@@ -409,10 +409,10 @@ The practical effect: Illinois pushes real power **down** to local governments, 
           {
             prompt: "Why does this course tell you to VERIFY Illinois's voting rules?",
             options: [
-              "Because Illinois has no elections office",
-              "Because deadlines and ID rules change and are run by county clerks and local boards; confirm at [elections.il.gov](https://elections.il.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Illinois keeps no state elections office at all",
+              "Because deadlines and ID rules change over time",
+              "Because only the U.S. Congress in D.C. sets these rules",
+              "Because every ballot in Illinois is kept fully secret",
             ],
             correctIndex: 1,
             explanation:

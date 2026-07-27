@@ -241,10 +241,10 @@ So Kentucky keeps judicial races **nonpartisan** (a contrast with, say, Alabama'
           {
             prompt: "How many counties does Kentucky have, and how does that rank?",
             options: [
-              "10, the fewest",
+              "10, among the fewest of any state",
               "120, the third-most of any state",
-              "254, the most",
-              "50, average",
+              "254, more than any other state",
+              "50, about the national average",
             ],
             correctIndex: 1,
             explanation:
@@ -254,10 +254,10 @@ So Kentucky keeps judicial races **nonpartisan** (a contrast with, say, Alabama'
           {
             prompt: "How strong is the Kentucky Governor's veto?",
             options: [
-              "Impossible to override",
-              "Weak: the General Assembly overrides with a simple majority",
-              "The Governor cannot veto",
-              "Only courts can override it",
+              "Absolute: it can never be overridden",
+              "Weak: overridden by a simple majority",
+              "None: the Governor cannot veto bills",
+              "Strong: only courts can override it",
             ],
             correctIndex: 1,
             explanation:
@@ -268,9 +268,9 @@ So Kentucky keeps judicial races **nonpartisan** (a contrast with, say, Alabama'
             prompt: "How does Kentucky choose its Supreme Court justices?",
             options: [
               "Appointed for life by the Governor",
-              "Elected on a nonpartisan ballot from districts to 8-year terms",
-              "Elected by the Legislature",
-              "In partisan races",
+              "Elected nonpartisan to 8-year terms",
+              "Chosen by the General Assembly's vote",
+              "In partisan, party-labeled races",
             ],
             correctIndex: 1,
             explanation:
@@ -293,10 +293,10 @@ So Kentucky keeps judicial races **nonpartisan** (a contrast with, say, Alabama'
           {
             prompt: "Can Kentucky citizens put a law on the ballot by initiative?",
             options: [
-              "Yes, a strong initiative",
-              "No: there is no statewide initiative; the General Assembly proposes amendments for voters",
-              "Only in even years",
-              "Only for bourbon policy",
+              "Yes, through a strong citizen initiative",
+              "No: Kentucky has no statewide initiative",
+              "Yes, but only during even-numbered years",
+              "Yes, but only for state bourbon policy",
             ],
             correctIndex: 1,
             explanation:
@@ -306,9 +306,9 @@ So Kentucky keeps judicial races **nonpartisan** (a contrast with, say, Alabama'
           {
             prompt: "What officials run a Kentucky county?",
             options: [
-              "A mayor and city council",
-              "An elected county judge/executive and a fiscal court",
-              "A governor-appointed board",
+              "A city mayor and an elected city council",
+              "A county judge/executive and fiscal court",
+              "A board appointed by the state Governor",
               "No one, counties have no government",
             ],
             correctIndex: 1,
@@ -318,7 +318,7 @@ So Kentucky keeps judicial races **nonpartisan** (a contrast with, say, Alabama'
           },
           {
             prompt: "Which Kentucky city merged with its county into a consolidated 'Metro' government?",
-            options: ["Lexington only", "Louisville (Louisville Metro / Jefferson County)", "Frankfort", "Bowling Green"],
+            options: ["Covington, across from Cincinnati", "Louisville and Jefferson County (Metro)", "Frankfort, the state capital city", "Bowling Green, home of Corvette plant"],
             correctIndex: 1,
             explanation:
               "Louisville merged with Jefferson County into Louisville Metro, a Kentucky city-county consolidation.",
@@ -327,10 +327,10 @@ So Kentucky keeps judicial races **nonpartisan** (a contrast with, say, Alabama'
           {
             prompt: "Why does this course tell you to VERIFY Kentucky's voting rules?",
             options: [
-              "Because Kentucky has no elections office",
-              "Because early-voting and ID rules changed recently and are run by county clerks, confirm at [sos.ky.gov](https://sos.ky.gov) / [elect.ky.gov](https://elect.ky.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Kentucky has no state elections office",
+              "Because rules changed and county clerks run them",
+              "Because only the U.S. Congress may set them",
+              "Because all voting records are kept secret",
             ],
             correctIndex: 1,
             explanation:

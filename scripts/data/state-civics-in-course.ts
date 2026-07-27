@@ -414,10 +414,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "What is distinctive about Indiana's strict state-debt clause (Article 10, §5)?",
             options: [
-              "It lets the state borrow without limit",
-              "It effectively requires the state to balance its budget",
-              "It abolishes the state income tax",
-              "It gives the governor a line-item veto",
+              "It lets the state borrow for any purpose",
+              "It effectively requires a balanced budget",
+              "It abolishes Indiana's state income tax",
+              "It grants the governor a line-item veto",
             ],
             correctIndex: 1,
             explanation:
@@ -440,10 +440,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "How does Indiana select its Supreme Court and Court of Appeals justices?",
             options: [
-              "Partisan statewide elections",
-              "Lifetime appointment by the legislature",
-              "Merit selection (nominating commission + governor) followed by yes/no retention votes",
-              "Appointment by the U.S. President",
+              "Contested partisan elections every six years",
+              "Lifetime appointment by the state legislature",
+              "Merit selection, then yes/no retention votes",
+              "Direct appointment by the U.S. President",
             ],
             correctIndex: 2,
             explanation:
@@ -469,10 +469,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "Which U.S. Supreme Court case upheld Indiana's strict photo voter-ID law?",
             options: [
-              "McCulloch v. Maryland",
-              "Crawford v. Marion County Election Board (2008)",
-              "Gibbons v. Ogden",
-              "Marbury v. Madison",
+              "Shelby County v. Holder, 570 U.S. 529 (2013)",
+              "Crawford v. Marion County, 553 U.S. 181 (2008)",
+              "Harper v. Virginia Board of Elections (1966)",
+              "Burdick v. Takushi, 504 U.S. 428 (1992)",
             ],
             correctIndex: 1,
             explanation:
@@ -495,10 +495,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "Can an ordinary Indiana citizen put a new state law on the ballot by petition?",
             options: [
-              "Yes, with 5% of voters' signatures",
-              "Yes, but only in even years",
+              "Yes, by collecting 5% of voters' signatures",
+              "Yes, but only during even-numbered years",
               "No: Indiana has no statewide citizen initiative",
-              "Yes, through the county council",
+              "Yes, by a petition to the county council",
             ],
             correctIndex: 2,
             explanation:
@@ -508,10 +508,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "What recently changed about Indiana's top K-12 education office?",
             options: [
-              "It was abolished entirely",
-              "The elected Superintendent of Public Instruction became an appointed Secretary of Education (effective 2021)",
+              "The elected office was abolished outright",
+              "The elected superintendent post became appointed",
               "It was merged into the governor's office",
-              "It became a federal position",
+              "It became a federally appointed position",
             ],
             correctIndex: 1,
             explanation:
@@ -521,10 +521,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "Because Indiana's legislature can override the governor and has no citizen initiative, what is the most effective way to change state law?",
             options: [
-              "Launch a signature petition drive",
-              "Sue in federal court",
-              "Elect and lobby your state legislators (and testify on bills)",
-              "Petition the governor directly",
+              "Launch a citizen signature petition drive",
+              "Ask a federal court to strike the law",
+              "Elect and lobby your state legislators",
+              "Petition the governor to sign a bill",
             ],
             correctIndex: 2,
             explanation:

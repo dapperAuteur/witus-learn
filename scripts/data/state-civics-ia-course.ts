@@ -231,10 +231,10 @@ Statewide officers serve **4-year terms.**
           {
             prompt: "How is an Iowa caucus different from a primary?",
             options: [
-              "It is a quiet ballot at a polling place",
-              "It is an in-person neighborhood meeting run by the parties to discuss candidates and register a preference",
-              "It is decided by the Governor",
-              "It is held online only",
+              "It is a quiet secret ballot cast at a county polling place",
+              "It is an in-person party meeting to discuss and pick candidates",
+              "It is decided entirely by the Governor and state officials",
+              "It is held online only through the official Iowa elections website",
             ],
             correctIndex: 1,
             explanation:
@@ -244,10 +244,10 @@ Statewide officers serve **4-year terms.**
           {
             prompt: "Why did Iowa's caucuses get outsized attention?",
             options: [
-              "Iowa is the largest state",
-              "They traditionally went first on the presidential calendar, drawing intense retail campaigning",
-              "They pick the President directly",
-              "They are the only elections in Iowa",
+              "Iowa is by far the largest state in the entire country",
+              "They traditionally went first on the presidential calendar",
+              "They pick the U.S. President directly without any other vote",
+              "They are the only public elections ever held in the state",
             ],
             correctIndex: 1,
             explanation:
@@ -257,10 +257,10 @@ Statewide officers serve **4-year terms.**
           {
             prompt: "Who draws Iowa's district maps?",
             options: [
-              "The Governor",
-              "The nonpartisan Legislative Services Agency (LSA), using neutral criteria",
-              "The political parties",
-              "The Supreme Court",
+              "The Governor and the executive branch staff",
+              "The nonpartisan Legislative Services Agency",
+              "The two major political parties together",
+              "The Iowa Supreme Court and its chief justice",
             ],
             correctIndex: 1,
             explanation:
@@ -270,10 +270,10 @@ Statewide officers serve **4-year terms.**
           {
             prompt: "What is the LSA forbidden from considering when drawing maps?",
             options: [
-              "Population",
-              "Past election results, incumbents' addresses, and party registration",
-              "County lines",
-              "City boundaries",
+              "The total resident population of each new district",
+              "Past election results, incumbents, and party data",
+              "The existing county lines across the state",
+              "The existing city, town, and village boundaries",
             ],
             correctIndex: 1,
             explanation:
@@ -283,10 +283,10 @@ Statewide officers serve **4-year terms.**
           {
             prompt: "How does Iowa choose its Supreme Court justices?",
             options: [
-              "Partisan elections",
-              "Merit selection (commission → Governor appoints) plus retention elections",
-              "The Legislature elects them",
-              "Lifetime appointment",
+              "Contested partisan statewide elections held each cycle",
+              "A nominating commission, Governor, then retention votes",
+              "The state Legislature elects each of the justices directly",
+              "Lifetime appointment made by the sitting Iowa Governor",
             ],
             correctIndex: 1,
             explanation:
@@ -309,10 +309,10 @@ Statewide officers serve **4-year terms.**
           {
             prompt: "Does Iowa have a statewide citizen initiative?",
             options: [
-              "Yes, a strong one",
-              "No: amendments come from two consecutive General Assemblies, then voters",
-              "Only for taxes",
-              "Only during caucuses",
+              "Yes, Iowa has a strong and often-used citizen initiative",
+              "No: amendments need two General Assemblies plus voters",
+              "Only for state and local taxation ballot measures",
+              "Only during a presidential caucus election season",
             ],
             correctIndex: 1,
             explanation:
@@ -343,10 +343,10 @@ Statewide officers serve **4-year terms.**
           {
             prompt: "Why does this course tell you to VERIFY Iowa's caucus calendar and voting rules?",
             options: [
-              "Because Iowa has no elections office",
-              "Because the presidential nominating calendar has shifted and early-voting rules change and are run by county auditors, confirm at [sos.iowa.gov](https://sos.iowa.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Iowa keeps no statewide elections office at all",
+              "Because the caucus calendar shifts and voting rules change",
+              "Because only the U.S. Congress in Washington sets these rules",
+              "Because every single vote cast in Iowa is kept fully secret",
             ],
             correctIndex: 1,
             explanation:

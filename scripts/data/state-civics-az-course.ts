@@ -388,10 +388,10 @@ And thanks to the **Voter Protection Act**, a measure you help pass is hard for 
           {
             prompt: "What is the defining feature of Arizona's constitution emphasized in this course?",
             options: [
-              "A weak legislature",
-              "Strong direct democracy: initiative, referendum, and recall built in",
-              "A ban on all taxes",
-              "A unicameral legislature",
+              "A single-chamber unicameral state legislature",
+              "Direct democracy: initiative, referendum, recall",
+              "A constitutional ban on all state income taxes",
+              "A governor holding an absolute, unoverridable veto",
             ],
             correctIndex: 1,
             explanation:
@@ -427,10 +427,10 @@ And thanks to the **Voter Protection Act**, a measure you help pass is hard for 
           {
             prompt: "Besides passing a bill through the Legislature, how else can a new law be made in Arizona?",
             options: [
-              "By the governor alone",
+              "By the governor issuing it alone by decree",
               "By voters directly, through the initiative",
-              "By a single county",
-              "By the state Supreme Court",
+              "By a single county passing its own statute",
+              "By the state Supreme Court issuing a ruling",
             ],
             correctIndex: 1,
             explanation:
@@ -448,10 +448,10 @@ And thanks to the **Voter Protection Act**, a measure you help pass is hard for 
           {
             prompt: "Under the Voter Protection Act (Prop 105, 1998), how can the Legislature change a voter-approved initiative?",
             options: [
-              "By a simple majority anytime",
-              "It cannot change it under any circumstances",
-              "Only by a 3/4 vote of each chamber AND only if the change furthers the measure's purpose",
-              "Only the governor can change it",
+              "By a simple majority vote at any later time",
+              "It cannot be changed under any circumstances",
+              "Only by a 3/4 vote that furthers its purpose",
+              "Only the governor may change it by order",
             ],
             correctIndex: 2,
             explanation:
@@ -461,10 +461,10 @@ And thanks to the **Voter Protection Act**, a measure you help pass is hard for 
           {
             prompt: "What is Arizona's Active Early Voting List (AEVL)?",
             options: [
-              "A list of people banned from voting",
-              "A list that automatically sends a mail ballot for each election",
-              "A registry of poll workers",
-              "A list of candidates",
+              "A list of voters banned from every election",
+              "A list that auto-mails a ballot each election",
+              "A public registry of trained local poll workers",
+              "A list of all candidates running for office",
             ],
             correctIndex: 1,
             explanation:
@@ -487,10 +487,10 @@ And thanks to the **Voter Protection Act**, a measure you help pass is hard for 
           {
             prompt: "What did Arizona's Proposition 131 (2022) do, and when does it take effect?",
             options: [
-              "Abolished the Legislature, effective immediately",
-              "Created the office of Lieutenant Governor, beginning with the 2026 election cycle",
-              "Banned early voting starting in 2024",
-              "Merged two counties in 2020",
+              "Abolished the state Legislature, effective 2023",
+              "Created a Lieutenant Governor, effective in 2026",
+              "Banned all early voting starting in the year 2024",
+              "Merged two small counties together back in 2020",
             ],
             correctIndex: 1,
             explanation:
@@ -500,10 +500,10 @@ And thanks to the **Voter Protection Act**, a measure you help pass is hard for 
           {
             prompt: "Why does this course tell you to VERIFY Arizona's Lieutenant Governor status rather than memorize an answer?",
             options: [
-              "Because the office is secret",
-              "Because the change is in progress (2026 cycle), so older and newer sources disagree, check the current status",
-              "Because Arizona has no official website",
-              "Because only Congress knows",
+              "Because the Lieutenant Governor office is a secret",
+              "Because the change is in progress for the 2026 cycle",
+              "Because Arizona has no official state website",
+              "Because only the U.S. Congress in D.C. would know",
             ],
             correctIndex: 1,
             explanation:

@@ -226,10 +226,10 @@ Because several officials are elected on their own, Kansas can end up with a **G
           {
             prompt: "What was 'Bleeding Kansas'?",
             options: [
-              "A drought in the 1930s",
-              "The violent 1850s struggle over whether Kansas would be a free or slave state",
-              "A labor strike",
-              "A border dispute with Nebraska",
+              "A severe farm drought in the 1930s Dust Bowl",
+              "The 1850s fight over slavery in the territory",
+              "A statewide railroad labor strike in 1894",
+              "A boundary dispute with the state of Nebraska",
             ],
             correctIndex: 1,
             explanation:
@@ -252,10 +252,10 @@ Because several officials are elected on their own, Kansas can end up with a **G
           {
             prompt: "Which statewide officers do Kansans elect?",
             options: [
-              "Only the Governor",
-              "Governor/Lt. Governor (joint ticket), Secretary of State, Attorney General, Treasurer, and Insurance Commissioner",
-              "Nine officials",
-              "The Legislature elects them",
+              "Only the governor, with no others elected",
+              "The governor and four other statewide officers",
+              "Nine separately elected statewide officers",
+              "The Legislature appoints them all in Topeka",
             ],
             correctIndex: 1,
             explanation:
@@ -278,10 +278,10 @@ Because several officials are elected on their own, Kansas can end up with a **G
           {
             prompt: "How does Kansas choose its Supreme Court justices?",
             options: [
-              "Partisan elections",
-              "Merit selection (nominating commission → Governor appoints) plus retention elections",
-              "The Legislature elects them",
-              "Lifetime appointment with no review",
+              "Contested partisan elections every four years",
+              "Merit selection, then yes/no retention votes",
+              "The Legislature elects them by joint ballot",
+              "Lifetime appointment with no later review",
             ],
             correctIndex: 1,
             explanation:
@@ -292,9 +292,9 @@ Because several officials are elected on their own, Kansas can end up with a **G
             prompt: "Can Kansas citizens put a law on the ballot by initiative?",
             options: [
               "Yes, a strong initiative like its neighbors",
-              "No, Kansas has no statewide initiative; the Legislature refers amendments to voters",
-              "Only in even years",
-              "Only for farm policy",
+              "No, Kansas has no statewide citizen initiative",
+              "Yes, but only during even-numbered years",
+              "Yes, but only for state agriculture policy",
             ],
             correctIndex: 1,
             explanation:
@@ -304,10 +304,10 @@ Because several officials are elected on their own, Kansas can end up with a **G
           {
             prompt: "What does home rule give Kansas localities?",
             options: [
-              "No local power at all",
-              "Substantial authority to manage their own affairs without asking the Legislature for permission on every matter",
-              "Control over the state budget",
-              "The power to secede",
+              "No local power without state permission",
+              "Authority to manage their own local affairs",
+              "Direct control over the entire state budget",
+              "The power to secede from the United States",
             ],
             correctIndex: 1,
             explanation:
@@ -317,10 +317,10 @@ Because several officials are elected on their own, Kansas can end up with a **G
           {
             prompt: "Where do Kansas ballot measures come from?",
             options: [
-              "Citizen petitions",
-              "The Legislature, which refers amendments to the voters",
-              "The Governor alone",
-              "County commissions",
+              "Citizen initiative petitions and drives",
+              "The Legislature, which refers them to voters",
+              "The Governor acting alone by executive order",
+              "County commissions and local school boards",
             ],
             correctIndex: 1,
             explanation:
@@ -339,9 +339,9 @@ Because several officials are elected on their own, Kansas can end up with a **G
             prompt: "Why does this course tell you to VERIFY Kansas's judicial-selection and voting rules?",
             options: [
               "Because Kansas has no government website",
-              "Because the method of choosing justices has been debated and voting rules are run by county officers and change, confirm at [kscourts.gov](https://kscourts.gov) / [sos.ks.gov](https://sos.ks.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because the method is debated and rules change",
+              "Because only the U.S. Congress sets them",
+              "Because all state voting records are secret",
             ],
             correctIndex: 1,
             explanation:
