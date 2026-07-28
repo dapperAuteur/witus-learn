@@ -120,9 +120,9 @@ A note on evidence, since we are about to spend a course on a subject people arg
           {
             prompt: "What is the core function of a union?",
             options: [
-              "To run the government's labor department",
-              "To let workers deal with an employer collectively rather than one at a time",
-              "To set the national minimum wage",
+              "To run the federal government's labor department",
+              "To let workers deal with an employer as a group",
+              "To set the national minimum wage by statute",
               "To provide health insurance to the unemployed",
             ],
             correctIndex: 1,
@@ -133,10 +133,10 @@ A note on evidence, since we are about to spend a course on a subject people arg
           {
             prompt: "What is a \"collective bargaining agreement\"?",
             options: [
-              "A law passed by Congress setting workplace rules",
-              "A written contract negotiated between a union and an employer covering pay, hours, safety, discipline and grievances",
-              "An agreement between two unions not to compete",
-              "A court order ending a strike",
+              "A workplace-rules law passed by the US Congress",
+              "A union-employer contract on pay and grievances",
+              "An agreement between two rival unions not to compete",
+              "A federal court order ending a lawful strike",
             ],
             correctIndex: 1,
             explanation:
@@ -146,10 +146,10 @@ A note on evidence, since we are about to spend a course on a subject people arg
           {
             prompt: "What is a \"grievance procedure\"?",
             options: [
-              "A union's process for expelling a member",
-              "An agreed process for challenging an employer decision that a worker believes broke the union contract",
-              "The government's process for certifying a union",
-              "A vote to authorize a strike",
+              "A union's internal process for expelling a member",
+              "An agreed way to challenge a contract violation",
+              "The government's process for certifying a new union",
+              "A membership vote to authorize a strike",
             ],
             correctIndex: 1,
             explanation:
@@ -160,7 +160,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             prompt: "What is the difference between union MEMBERSHIP and union COVERAGE?",
             options: [
               "They mean the same thing",
-              "Membership means you joined the union; coverage means a union contract governs your job, whether or not you joined",
+              "Membership means you joined; coverage means a contract governs your job",
               "Coverage means you joined; membership means the contract applies to you",
               "Membership applies to public workers; coverage applies to private workers",
             ],
@@ -172,10 +172,10 @@ A note on evidence, since we are about to spend a course on a subject people arg
           {
             prompt: "Why does bargaining alone put an individual worker at a disadvantage?",
             options: [
-              "Because individual workers are legally banned from negotiating",
-              "Because the employer typically has one job to give and other applicants, while the worker has one job to lose",
-              "Because employers are always dishonest",
-              "Because federal law forbids one-on-one salary talks",
+              "Because individual workers are legally banned from negotiating pay",
+              "Because the employer has other applicants; the worker has one job",
+              "Because employers are always dishonest with workers",
+              "Because federal law forbids one-on-one salary negotiations",
             ],
             correctIndex: 1,
             explanation:
@@ -199,7 +199,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             prompt: "The second of the four questions asks \"Who is excluded?\" What does the course say is the interesting part of that question?",
             options: [
               "Whether anybody at all is excluded",
-              "Who is excluded, and whether the exclusion was an accident or a deliberate decision",
+              "Who is excluded, and whether that exclusion was chosen",
               "How many people are excluded, as a percentage",
               "Whether the excluded workers voted in the last election",
             ],
@@ -212,7 +212,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             prompt: "Question 3 asks who bargains with whom, and at what level. Why does the course say this is not just a technical detail?",
             options: [
               "Because bargaining level determines a country's tax rate",
-              "Because it explains how a country with FEWER union members than the US can still have FAR MORE workers covered by union contracts",
+              "Because a country with fewer members can still cover more workers",
               "Because only sector-level bargaining is legal under international law",
               "Because company-level bargaining is always illegal",
             ],
@@ -224,10 +224,10 @@ A note on evidence, since we are about to spend a course on a subject people arg
           {
             prompt: "Question 4, \"What happens to you if you try?\", comes with a warning. What is it?",
             options: [
-              "That the answer is the same in every country",
-              "That a country's LEGAL answer and its REAL answer are often not the same, and you should say so and say how you know",
-              "That the answer is never knowable",
-              "That only lawyers may ask it",
+              "That the legal answer is exactly the same in every country",
+              "That a country's LEGAL and REAL answers often differ",
+              "That the honest answer is never truly knowable",
+              "That only trained lawyers are allowed to ask it",
             ],
             correctIndex: 1,
             explanation:
@@ -238,8 +238,8 @@ A note on evidence, since we are about to spend a course on a subject people arg
             prompt: "Which statement best describes this course's stance on unions?",
             options: [
               "Unions are always good and criticism of them is anti-worker",
-              "Unions are always bad and destroyed American industry",
-              "Unions have both won major protections and, at times, excluded workers by race and sex, the course teaches both, with sources",
+              "Unions are always bad and single-handedly destroyed American industry",
+              "Unions both won big protections and excluded workers by race and sex",
               "The course takes no position on any factual question",
             ],
             correctIndex: 2,
@@ -250,10 +250,10 @@ A note on evidence, since we are about to spend a course on a subject people arg
           {
             prompt: "The course says a union is NOT the government. What follows from that?",
             options: [
-              "A union can pass laws directly",
-              "In most of the world a union is a private organization, and can only get what it can negotiate or force",
-              "A union cannot be sued",
-              "A union's contract has no legal effect",
+              "A union can directly pass its own laws",
+              "A union is a private group; it wins only by bargaining",
+              "A union can never be sued in court",
+              "A union's signed contract has no legal effect whatsoever",
             ],
             correctIndex: 1,
             explanation:
@@ -276,9 +276,9 @@ A note on evidence, since we are about to spend a course on a subject people arg
           {
             prompt: "How does this course relate to its companion, *Know Your Rights at Work*?",
             options: [
-              "They cover the same material at different reading levels",
-              "This one is the history, how we got here and why it differs abroad; the companion covers what your rights are on the job today",
-              "The companion is about union leadership elections",
+              "They cover the same material at different reading levels entirely",
+              "This one is the history; the companion is today's rights",
+              "The companion is only about union leadership elections",
               "This course replaces the companion",
             ],
             correctIndex: 1,
@@ -291,7 +291,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             options: [
               "Pick the version most people believe",
               "Pick the version that fits the argument you are making",
-              "Say that the record does not settle it, rather than picking a side",
+              "Say the record does not settle it, don't pick a side",
               "Leave the question out of the course",
             ],
             correctIndex: 2,
@@ -492,10 +492,10 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
           {
             prompt: "What was the Knights of Labor's answer to \"who is a union for?\"",
             options: [
-              "Only skilled craftsmen",
-              "Almost everybody who works, skilled and unskilled, across trades",
-              "Only workers in a single company",
-              "Only union officers",
+              "Only skilled craftsmen working in the building trades",
+              "Almost everyone who works, skilled or unskilled",
+              "Only workers within a single large company",
+              "Only elected union officers",
             ],
             correctIndex: 1,
             explanation:
@@ -526,10 +526,10 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
           {
             prompt: "What does the course say was the cost of the AFL's strategy winning?",
             options: [
-              "It made unions illegal",
-              "The strategy that won was the one that organized the FEWEST people, leaving unskilled, Black, women and many immigrant workers outside",
-              "It forced all unions to merge",
-              "It ended collective bargaining in the US",
+              "It made every labor union in the entire country illegal",
+              "It organized the fewest workers and left most outside",
+              "It forced all craft unions to merge together",
+              "It ended collective bargaining across the US",
             ],
             correctIndex: 1,
             explanation:
@@ -549,7 +549,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             options: [
               "August Spies, who was later hanged for it",
               "A Chicago police agent, as historians have proven",
-              "It was never established, the state never identified or produced the bomb-thrower",
+              "It was never established; the state named no one",
               "An unnamed Pinkerton detective, per the trial record",
             ],
             correctIndex: 2,
@@ -560,8 +560,8 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
           {
             prompt: "On what legal theory were the eight Haymarket defendants convicted of murder?",
             options: [
-              "Eyewitness identification of the bomb-thrower",
-              "Conspiracy, that their speeches and writings incited an unknown person to throw the bomb",
+              "Eyewitness identification of the actual bomb-thrower",
+              "Conspiracy: their speeches incited an unknown bomber",
               "Their fingerprints on the bomb casing",
               "A confession from one of them",
             ],
@@ -573,9 +573,9 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
           {
             prompt: "What did Illinois Governor John Peter Altgeld do on June 26, 1893?",
             options: [
-              "Ordered the National Guard into Chicago",
-              "Pardoned the three surviving Haymarket prisoners and attacked the trial's fairness in writing",
-              "Signed the Chinese Exclusion Act",
+              "Ordered the state National Guard to occupy Chicago",
+              "Pardoned the three surviving Haymarket prisoners",
+              "Signed the 1882 Chinese Exclusion Act",
               "Founded the American Federation of Labor",
             ],
             correctIndex: 1,
@@ -586,7 +586,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
           {
             prompt: "Why do most countries mark labor's holiday on May 1 while the United States does not?",
             options: [
-              "May 1 became International Workers' Day in memory of Haymarket, which happened in the US",
+              "May 1 became International Workers' Day after Haymarket",
               "May 1 is a European agricultural festival unrelated to labor",
               "The US never had a labor holiday",
               "The ILO ordered the US to use September",
@@ -599,10 +599,10 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
           {
             prompt: "At Homestead in 1892, who came up the river on barges to retake Carnegie's plant?",
             options: [
-              "Federal troops",
-              "Roughly 300 armed Pinkerton agents, a PRIVATE detective force hired by the company",
-              "The Pennsylvania state police",
-              "Members of a rival union",
+              "Federal troops ordered in by President Harrison",
+              "Roughly 300 Pinkerton agents hired by Carnegie",
+              "The Pennsylvania state militia and police",
+              "Members of a rival steelworkers' union",
             ],
             correctIndex: 1,
             explanation:
@@ -626,8 +626,8 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             prompt: "What actually broke the Pullman strike of 1894?",
             options: [
               "Pinkerton guards",
-              "A federal court injunction, enforced by troops, with Debs jailed for contempt of court",
-              "A vote of the American Railway Union to give up",
+              "A federal injunction enforced by troops, Debs jailed",
+              "A membership vote of the American Railway Union to quit",
               "A settlement in which Pullman restored wages",
             ],
             correctIndex: 1,
@@ -639,9 +639,9 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             prompt: "In Loewe v. Lawlor (1908), the \"Danbury Hatters\" case, the Supreme Court held that:",
             options: [
               "Unions have a constitutional right to strike",
-              "The Sherman Antitrust Act, a law aimed at monopolies, applied to a union boycott, and individual members could be personally liable",
+              "The Sherman Antitrust Act covered a union boycott",
               "Yellow-dog contracts were unconstitutional",
-              "Federal courts could not issue labor injunctions",
+              "Federal courts could not issue any labor injunctions",
             ],
             correctIndex: 1,
             explanation:
@@ -652,7 +652,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             prompt: "What was a \"yellow-dog contract\"?",
             options: [
               "A contract requiring union membership as a condition of employment",
-              "A condition of hire under which a worker signed a promise NOT to join a union",
+              "A hire condition: the worker promised NOT to join a union",
               "A union's agreement not to strike for a fixed term",
               "A federal court order ending a strike",
             ],
@@ -665,7 +665,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             prompt: "What did the Norris-LaGuardia Act of 1932 do, and what did it NOT do?",
             options: [
               "It gave workers a legal right to organize and required employers to bargain",
-              "It limited federal courts' power to issue labor injunctions and made yellow-dog contracts unenforceable, but it did NOT give workers a right to organize",
+              "It curbed injunctions, voided yellow-dog contracts, not a right",
               "It created the National Labor Relations Board",
               "It banned strikes in interstate commerce",
             ],
@@ -847,7 +847,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "What is the \"Uprising of the 20,000,\" and why does the course insist on mentioning it in the Triangle lesson?",
             options: [
               "A 1911 protest march held after the fire",
-              "A 1909-1910 shirtwaist workers' strike demanding pay, hours AND safety, which Triangle refused to settle",
+              "A 1909-1910 shirtwaist strike Triangle refused",
               "The union that organized the Homestead steelworkers",
               "A Chicago rally that preceded Haymarket",
             ],
@@ -873,7 +873,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "What did the Triangle fire produce IMMEDIATELY?",
             options: [
               "The National Labor Relations Act",
-              "The New York State Factory Investigating Commission and dozens of NEW YORK STATE safety and hours laws",
+              "The NY State Factory Investigating Commission",
               "The federal Occupational Safety and Health Administration",
               "The Fair Labor Standards Act",
             ],
@@ -886,7 +886,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "What is the connection between the Triangle fire and the National Labor Relations Act of 1935?",
             options: [
               "The Act was named after a Triangle victim",
-              "Robert F. Wagner led the Factory Investigating Commission created after the fire, and 24 years later wrote the NLRA",
+              "Wagner led the fire commission, later wrote the NLRA",
               "The Act was passed in 1911 in direct response to the fire",
               "There is no connection; the course invented it",
             ],
@@ -899,9 +899,9 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "Section 7 of the NLRA gives employees the right to self-organize, to bargain collectively, AND to engage in what else?",
             options: [
               "\"Other concerted activities... for mutual aid or protection\"",
-              "\"Any lawful protest against the government\"",
-              "\"Political campaign contributions\"",
-              "\"Refusal to work for any reason\"",
+              "\"Any peaceful public protest against the federal government\"",
+              "\"Direct political campaign contributions\"",
+              "\"A refusal to work for any personal reason\"",
             ],
             correctIndex: 0,
             explanation:
@@ -938,7 +938,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "In NLRB v. Jones & Laughlin Steel Corp. (1937), the Supreme Court:",
             options: [
               "Struck down the Wagner Act as unconstitutional",
-              "Upheld the Wagner Act under Congress's power over interstate commerce",
+              "Upheld the Wagner Act under the commerce power",
               "Held that unions violate the Sherman Antitrust Act",
               "Ordered the NLRB abolished",
             ],
@@ -964,9 +964,9 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "Why does the exclusion of agricultural and domestic workers have a racial dimension, even though the statute uses no racial word?",
             options: [
               "It doesn't; the course overstates it",
-              "In the 1930s those were the occupations in which Black Americans, mostly still in the rural South, were overwhelmingly concentrated; Mexican-American farm workers were removed by the same clause",
+              "In the 1930s these jobs were mostly Black rural Southerners",
               "Because the NLRB refused to register Black unions",
-              "Because the Supreme Court later added a racial requirement",
+              "Because the Supreme Court later wrote in a racial requirement",
             ],
             correctIndex: 1,
             explanation:
@@ -977,7 +977,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "How does this course handle the question of WHY the agricultural/domestic exclusion was written?",
             options: [
               "It states as settled fact that every legislator involved was motivated by racism",
-              "It separates three things: the TEXT (not in dispute), the EFFECT (not in dispute), and the MOTIVE (a historical argument, with Perea (2011) the leading case that it was deliberate)",
+              "It separates the TEXT, the EFFECT, and the MOTIVE, citing Perea (2011)",
               "It avoids the question entirely",
               "It says the exclusion was purely administrative and had no racial effect",
             ],
@@ -990,7 +990,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "Why did farmworker organizing in the 1960s rely on marches, fasts and a nationwide CONSUMER BOYCOTT rather than NLRB elections?",
             options: [
               "Because those tactics are more effective in every industry",
-              "Because farm workers were excluded from the NLRA, so they had no NLRB election, no protection from being fired for organizing, and no employer duty to bargain",
+              "Because the NLRA excluded farm workers, so no NLRB vote",
               "Because the UFW chose not to use the law available to it",
               "Because boycotts were the only tactic allowed under Taft-Hartley",
             ],
@@ -1003,7 +1003,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "What was the California Agricultural Labor Relations Act of 1975?",
             options: [
               "A federal law extending NLRA rights to all farm workers",
-              "A STATE law giving California farm workers the collective-bargaining rights federal law had denied them, most states still have no equivalent",
+              "A STATE law giving California farm workers union rights",
               "A law banning farmworker unions in California",
               "A Supreme Court decision on farm labor",
             ],
@@ -1194,7 +1194,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "What was the CIO's core strategic idea?",
             options: [
               "Organize only skilled workers, grouped by craft",
-              "Organize entire industries, everyone in the plant, skilled and unskilled, in one union",
+              "Organize whole industries into one big union",
               "Organize only public employees",
               "Replace collective bargaining with legislation",
             ],
@@ -1207,8 +1207,8 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "What was new about the tactic autoworkers used at Flint in 1936-37?",
             options: [
               "They walked out and picketed the gates",
-              "They SAT DOWN, occupied the plants and stopped production from inside, where strikebreakers could not replace them",
-              "They filed a lawsuit against General Motors",
+              "They SAT DOWN, occupying plants from inside",
+              "They filed a federal lawsuit against General Motors",
               "They ran a consumer boycott of Chevrolets",
             ],
             correctIndex: 1,
@@ -1219,8 +1219,8 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
           {
             prompt: "What was the Memorial Day massacre of May 30, 1937?",
             options: [
-              "A bombing at a labor rally in Chicago",
-              "Chicago police fired on marching Republic Steel strikers and their families, killing ten",
+              "A dynamite bombing at a large labor rally in Chicago",
+              "Chicago police shot Republic Steel marchers dead",
               "A fire in a garment factory",
               "The Pinkertons' assault on Homestead",
             ],
@@ -1245,10 +1245,10 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
           {
             prompt: "Section 14(b) of Taft-Hartley permits states to:",
             options: [
-              "Ban strikes outright",
-              "Pass \"right-to-work\" laws banning union-security agreements, the clauses that require workers covered by a union contract to pay dues or fees",
-              "Require every worker to join a union",
-              "Set their own minimum wage",
+              "Ban all strikes in the state outright",
+              "Pass \"right-to-work\" laws on union dues",
+              "Require every worker to join a state union",
+              "Set their own state minimum wage",
             ],
             correctIndex: 1,
             explanation:
@@ -1259,7 +1259,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "What is a \"secondary boycott,\" and what did Taft-Hartley do about it?",
             options: [
               "A second strike at the same employer; Taft-Hartley encouraged it",
-              "Pressuring a NEUTRAL business to stop dealing with the employer a union has a dispute with; Taft-Hartley banned it (§ 8(b)(4))",
+              "Pressuring a NEUTRAL business to cut off the employer; Taft-Hartley banned it",
               "A boycott organized by consumers rather than workers; Taft-Hartley protected it",
               "A union refusing to bargain; Taft-Hartley legalized it",
             ],
@@ -1272,7 +1272,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "Why was the United Farm Workers' nationwide grape boycott LAWFUL when the identical tactic would have been illegal for a steelworkers' union?",
             options: [
               "Because agricultural boycotts have a special exemption written into Taft-Hartley",
-              "Because the secondary-boycott ban lives inside the NLRA, and farm workers are excluded from the NLRA",
+              "Because the secondary-boycott ban sits in the NLRA, which excludes farm workers",
               "Because the Supreme Court granted the UFW an exception",
               "Because California law overrode federal law",
             ],
@@ -1284,8 +1284,8 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
           {
             prompt: "What did the Taft-Hartley Act's § 8(b) create for the first time?",
             options: [
-              "Employer unfair labor practices",
-              "UNION unfair labor practices, things a union itself could be found to have done illegally",
+              "Employer unfair labor practices under the Wagner Act",
+              "UNION unfair labor practices, things a union can't do",
               "The National Labor Relations Board",
               "The right to strike",
             ],
@@ -1298,7 +1298,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "The PATCO strike of August 3, 1981 was:",
             options: [
               "Legal, and Reagan's response was unlawful",
-              "Illegal, federal employees are barred by statute from striking against the government (5 U.S.C. § 7311)",
+              "Illegal; federal workers may not strike, by statute",
               "Legal under Taft-Hartley's national-emergency provisions",
               "Authorized in advance by the FAA",
             ],
@@ -1311,7 +1311,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "What is the most common FALSE claim about PATCO?",
             options: [
               "That the strike was illegal",
-              "That Reagan MADE IT LEGAL to permanently replace strikers, in fact that had been lawful in the private sector since NLRB v. Mackay Radio (1938)",
+              "That Reagan MADE IT LEGAL to permanently replace them",
               "That PATCO was decertified",
               "That the controllers were barred from federal employment",
             ],
@@ -1331,8 +1331,8 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
           {
             prompt: "What caveat does BLS attach to the 2025 union figures?",
             options: [
-              "They exclude workers under age 25",
-              "They are 11-month averages excluding October 2025 (data were not collected during the federal shutdown), so they are not strictly comparable with other years",
+              "They exclude every worker under twenty-five years old",
+              "They are 11-month averages that skip October 2025",
               "They cover only the private sector",
               "They are projections, not measurements",
             ],
@@ -1345,8 +1345,8 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "In 2025 the US public-sector union membership rate was 32.9% and the private-sector rate was 5.9%. What does that tell you?",
             options: [
               "Private-sector unions are growing faster",
-              "Modern American unionism is overwhelmingly a PUBLIC-sector phenomenon, a very different labor movement from the one that shut down GM in 1937",
-              "Public employees are barred from unionizing",
+              "Modern American unionism is mostly a PUBLIC-sector thing",
+              "Public employees are legally barred from unionizing anywhere",
               "The two sectors are converging",
             ],
             correctIndex: 1,
@@ -1359,7 +1359,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             options: [
               "It identifies employer opposition as the single proven cause",
               "It identifies globalization as the single proven cause",
-              "It lists the serious candidate explanations and says the question is not settled, warning that anyone offering one cause and no others is selling you something",
+              "It lists the candidates and calls the question unsettled",
               "It says the decline never happened",
             ],
             correctIndex: 2,
@@ -1561,10 +1561,10 @@ Which is exactly the skill the rest of this course is going to make you use on s
           {
             prompt: "How did AFL craft unions commonly exclude Black workers WITHOUT writing a racial rule about jobs?",
             options: [
-              "By requiring a college degree",
-              "By keeping them out of apprenticeships, the only door into a skilled trade",
-              "By charging higher dues",
-              "By moving all work out of state",
+              "By requiring a costly four-year college degree",
+              "By barring them from skilled apprenticeships",
+              "By charging much higher membership dues",
+              "By moving all their work out of state",
             ],
             correctIndex: 1,
             explanation:
@@ -1574,10 +1574,10 @@ Which is exactly the skill the rest of this course is going to make you use on s
           {
             prompt: "What was a segregated \"auxiliary\" local?",
             options: [
-              "A local for retired members",
-              "A separate local for Black workers with no vote, no full membership, and no say in the contract governing their own jobs",
-              "An overseas branch of an American union",
-              "A local for supervisors",
+              "A local reserved for retired former members",
+              "A separate Black local with no vote or say",
+              "An overseas branch of a large American labor union",
+              "A local reserved only for supervisors",
             ],
             correctIndex: 1,
             explanation:
@@ -1588,9 +1588,9 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "What did Steele v. Louisville & Nashville Railroad Co. (1944) establish?",
             options: [
               "That unions may not strike against railroads",
-              "That a union with the exclusive legal power to bargain for a craft owes ALL workers in it a duty of fair representation and may not discriminate by race",
+              "That an exclusive union owes all workers fair treatment",
               "That Black workers must form separate unions",
-              "That the Railway Labor Act does not apply to firemen",
+              "That the Railway Labor Act does not apply to firemen at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1600,8 +1600,8 @@ Which is exactly the skill the rest of this course is going to make you use on s
           {
             prompt: "Which 1964 statute made it an unlawful employment practice for a LABOR ORGANIZATION to exclude or segregate members by race or sex?",
             options: [
-              "The National Labor Relations Act",
-              "Title VII of the Civil Rights Act of 1964 (42 U.S.C. § 2000e-2(c))",
+              "The amended National Labor Relations Act of 1935",
+              "Title VII of the Civil Rights Act of 1964",
               "The Fair Labor Standards Act",
               "The Landrum-Griffin Act",
             ],
@@ -1613,10 +1613,10 @@ Which is exactly the skill the rest of this course is going to make you use on s
           {
             prompt: "What did the AFL-CIO's executive council do about the 1963 March on Washington?",
             options: [
-              "Organized and funded it",
-              "Declined to endorse it, only A. Philip Randolph supported Walter Reuther's motion for a strong endorsement; the UAW endorsed it anyway",
-              "Voted to oppose it publicly",
-              "Endorsed it unanimously",
+              "Organized, funded, and led the entire march",
+              "Declined to endorse it; only the UAW backed it",
+              "Voted formally to oppose the march in public statements",
+              "Endorsed the march quickly and unanimously",
             ],
             correctIndex: 1,
             explanation:
@@ -1627,8 +1627,8 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "What did the Brotherhood of Sleeping Car Porters win in 1937, twelve years after it was founded?",
             options: [
               "A seat on the Pullman Company's board",
-              "The first collective bargaining agreement between a major American corporation and a Black-led union",
-              "A federal law banning racial discrimination",
+              "The first US contract with a Black-led union",
+              "A new federal law banning racial discrimination",
               "Membership in the CIO",
             ],
             correctIndex: 1,
@@ -1640,7 +1640,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "How did A. Philip Randolph obtain Executive Order 8802 in 1941?",
             options: [
               "By winning a lawsuit against the federal government",
-              "By threatening to march tens of thousands of Black Americans on Washington, a labor tactic applied to a civil-rights demand",
+              "By threatening a march of thousands on Washington",
               "By lobbying Congress for five years",
               "By calling a nationwide general strike",
             ],
@@ -1666,9 +1666,9 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "What triggered the Memphis sanitation strike that began on February 12, 1968?",
             options: [
               "A pay cut announced by the mayor",
-              "Two workers, Echol Cole and Robert Walker, were crushed to death by a garbage truck compactor on February 1, having sheltered inside it because Black sanitation workers were not permitted to shelter in white neighbourhoods",
+              "Two workers crushed to death by a garbage compactor",
               "A federal court order",
-              "The assassination of Martin Luther King Jr.",
+              "The assassination of Martin Luther King Jr. in Memphis",
             ],
             correctIndex: 1,
             explanation:
@@ -1679,7 +1679,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "Why was Martin Luther King Jr. in Memphis when he was assassinated on April 4, 1968?",
             options: [
               "For a voter-registration rally",
-              "To support the sanitation workers' strike, he had spoken to a hall of strikers the night before",
+              "To support the striking sanitation workers",
               "He was passing through on his way to Atlanta",
               "To testify before a congressional committee",
             ],
@@ -1699,8 +1699,8 @@ Which is exactly the skill the rest of this course is going to make you use on s
           {
             prompt: "The McClellan Committee (1957-59), with Robert F. Kennedy as chief counsel, primarily investigated:",
             options: [
-              "The Congress of Industrial Organizations",
-              "Racketeering in labor and management, centrally, the International Brotherhood of Teamsters",
+              "The entire Congress of Industrial Organizations",
+              "Labor racketeering, centrally the Teamsters",
               "The National Labor Relations Board",
               "The United Farm Workers",
             ],
@@ -1712,10 +1712,10 @@ Which is exactly the skill the rest of this course is going to make you use on s
           {
             prompt: "What did the Landrum-Griffin Act of 1959 create?",
             options: [
-              "A federal ban on strikes",
-              "A bill of rights for UNION MEMBERS, free speech in meetings, equal voting rights, protection from arbitrary discipline by their own union, plus public financial reporting and regulated union elections",
-              "The National Labor Relations Board",
-              "State right-to-work laws",
+              "A permanent federal ban on all strikes",
+              "A bill of rights for UNION MEMBERS",
+              "The National Labor Relations Board (NLRB)",
+              "New nationwide state right-to-work laws",
             ],
             correctIndex: 1,
             explanation:
@@ -1726,9 +1726,9 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "What did the 1989 Teamsters consent decree require?",
             options: [
               "That the union dissolve",
-              "Federal court supervision, an Independent Review Board that could expel corrupt officials, and direct one-member-one-vote election of international officers",
+              "Court supervision and an Independent Review Board",
               "That the union rejoin the AFL-CIO",
-              "That all Teamster contracts be renegotiated",
+              "That every Teamster contract be fully renegotiated",
             ],
             correctIndex: 1,
             explanation:
@@ -1739,7 +1739,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "What does the course say about what happened to Jimmy Hoffa?",
             options: [
               "He was killed by a rival Teamster faction, as court records show",
-              "It refuses to say, he disappeared in 1975 and nobody has established what happened to him",
+              "It refuses to say; he vanished in 1975, unresolved",
               "He fled to Brazil",
               "He died of natural causes in prison",
             ],
@@ -2075,7 +2075,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "What is the \"Ghent system\"?",
             options: [
               "A system of sectoral bargaining used in Belgium",
-              "A system in which UNEMPLOYMENT INSURANCE is administered by union-affiliated funds, making union membership the natural default",
+              "Unemployment insurance run by union funds",
               "A treaty setting minimum labour standards in Europe",
               "A form of board-level worker representation",
             ],
@@ -2096,7 +2096,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "Why do Denmark and Sweden have NO statutory national minimum wage?",
             options: [
               "Because they do not believe in wage floors",
-              "Because the wage floor is set by sectoral collective agreements, industry by industry, and covers nearly everybody without a law",
+              "Because sectoral agreements set the wage floor",
               "Because EU law forbids national minimum wages",
               "Because wages are set individually by each employer",
             ],
@@ -2108,9 +2108,9 @@ The mechanism is not exotic. It is the oldest one there is.
           {
             prompt: "What honest complication does the course add about the Nordic model?",
             options: [
-              "That Nordic unions have never been strong",
-              "That the Ghent system is ERODING, private unemployment funds not requiring union membership have grown, and Nordic density has declined for decades from a higher peak",
-              "That Nordic countries have banned strikes",
+              "That Nordic unions have never actually been strong",
+              "That the Ghent system is ERODING, density falling",
+              "That Nordic countries have completely banned strikes",
               "That the OECD data are fabricated",
             ],
             correctIndex: 1,
@@ -2121,10 +2121,10 @@ The mechanism is not exotic. It is the oldest one there is.
           {
             prompt: "Germany's union MEMBERSHIP rate (~14.1%, 2024) is close to the US rate (10.0%, 2025). What is dramatically different?",
             options: [
-              "German unions have more money",
-              "German bargaining COVERAGE is roughly 49-50%, versus 11.2% in the US, because German bargaining happens at the SECTOR level",
-              "Germany has no strikes",
-              "German unions are run by the government",
+              "German unions simply have far more money to spend",
+              "German COVERAGE is ~50%, set at the SECTOR level",
+              "Germany has almost no strikes at all",
+              "German unions are run entirely by the government",
             ],
             correctIndex: 1,
             explanation:
@@ -2143,8 +2143,8 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "What is the \"catch\" in German board-level co-determination that the caricature usually omits?",
             options: [
               "Employee representatives cannot vote",
-              "The board chair comes from the shareholder side and holds a CASTING VOTE in a tie, so it is parity of seats, not parity of power",
-              "The law applies only to state-owned companies",
+              "The chair is a shareholder with the CASTING VOTE",
+              "The law applies only to large state-owned companies",
               "Workers must buy shares to qualify",
             ],
             correctIndex: 1,
@@ -2155,10 +2155,10 @@ The mechanism is not exotic. It is the oldest one there is.
           {
             prompt: "Who elects a German works council (Betriebsrat)?",
             options: [
-              "The union's national leadership",
-              "ALL the employees in a workplace, not just union members",
-              "The company's shareholders",
-              "The federal labour ministry",
+              "The union's own national leadership committee",
+              "ALL employees in a workplace, not just members",
+              "The company's private shareholders only",
+              "The federal labour ministry in Berlin",
             ],
             correctIndex: 1,
             explanation:
@@ -2169,7 +2169,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "What is an \"enterprise union\"?",
             options: [
               "A union of all workers in an industry",
-              "A union organized at a single COMPANY, whose members are that company's regular employees",
+              "A union organized at a single COMPANY",
               "A union organized by craft",
               "A union owned by the employer",
             ],
@@ -2181,10 +2181,10 @@ The mechanism is not exotic. It is the oldest one there is.
           {
             prompt: "Which workers does Japan's enterprise-union structure systematically leave out?",
             options: [
-              "Senior managers",
-              "Non-regular workers, part-time, fixed-term and dispatched (agency) workers",
-              "Engineers",
-              "Public employees",
+              "Senior corporate managers and their executives",
+              "Non-regular part-time and fixed-term workers",
+              "Highly paid senior engineers",
+              "Permanent public-sector employees",
             ],
             correctIndex: 1,
             explanation:
@@ -2194,10 +2194,10 @@ The mechanism is not exotic. It is the oldest one there is.
           {
             prompt: "What is Japan's shuntō?",
             options: [
-              "A law requiring annual wage increases",
-              "The 'spring labour offensive', enterprise unions across the economy bargain at roughly the same time, with RENGO setting a target and big exporters' settlements setting the benchmark",
-              "A ban on strikes during the spring",
-              "A government wage board",
+              "A federal law requiring annual national wage increases",
+              "The 'spring labour offensive' of enterprise unions",
+              "A total ban on all strikes during springtime",
+              "A government-run national wage board",
             ],
             correctIndex: 1,
             explanation:
@@ -2208,7 +2208,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "Under China's Trade Union Law, what is true of the ACFTU?",
             options: [
               "It is one of several competing national federations",
-              "It is the single legal national trade union: workplace unions must affiliate to it, forming one requires approval from the next-level union body, and unions operate under the leadership of the Communist Party",
+              "It is the single legal union, led by the Party",
               "It is a private organization independent of the state",
               "It is banned in mainland China",
             ],
@@ -2221,7 +2221,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "What happened to the right to strike in China's constitution?",
             options: [
               "It was added in 1982",
-              "It appeared in the 1975 and 1978 constitutions and was REMOVED from the 1982 Constitution",
+              "It appeared in 1975 and 1978, REMOVED in 1982",
               "It has been in every Chinese constitution",
               "It has never appeared in any Chinese constitution",
             ],
@@ -2234,7 +2234,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "What was the FIRST of Solidarity's 21 Demands, posted on the Gdańsk shipyard gate in August 1980?",
             options: [
               "A wage increase",
-              "The right to form FREE TRADE UNIONS, independent of the Communist Party",
+              "The right to form FREE TRADE UNIONS",
               "Free elections for parliament",
               "Poland's withdrawal from the Warsaw Pact",
             ],
@@ -2246,8 +2246,8 @@ The mechanism is not exotic. It is the oldest one there is.
           {
             prompt: "Why did the apartheid government's Wiehahn Commission (1979) recommend legally recognizing Black trade unions?",
             options: [
-              "Out of a commitment to racial equality",
-              "For CONTROL, unregistered Black unions were growing anyway, and a registered union can be regulated",
+              "Out of a genuine commitment to full racial equality",
+              "For CONTROL, a registered union can be regulated",
               "Because the ILO ordered it",
               "Because Black workers had won the vote",
             ],
@@ -2259,8 +2259,8 @@ The mechanism is not exotic. It is the oldest one there is.
           {
             prompt: "What did Qatar's Law No. 19 of 2020 do?",
             options: [
-              "Legalized trade unions for migrant workers",
-              "Removed the No-Objection Certificate requirement, so a migrant worker can change jobs without the employer's permission",
+              "Fully legalized trade unions for all migrant workers",
+              "Removed the No-Objection Certificate for job changes",
               "Banned all foreign workers",
               "Required employers to pay recruitment fees",
             ],
@@ -2273,7 +2273,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "What has NOT changed for migrant workers in Qatar as of 2026?",
             options: [
               "They still cannot be paid a minimum wage",
-              "They still may not form or join TRADE UNIONS, that right is reserved to Qatari nationals; the main mechanism is a consultative 'joint committee'",
+              "They still may not form or join TRADE UNIONS",
               "They still cannot leave the country under any circumstances",
               "They are still barred from any legal complaint",
             ],
@@ -2286,7 +2286,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "The course says the Gulf's exclusion of migrant workers has a shape you have already seen. Where?",
             options: [
               "In the Taft-Hartley Act's secondary-boycott ban",
-              "In the NLRA's 1935 exclusion of \"agricultural laborers\" and workers \"in the domestic service\", a category of worker defined BY LAW as outside the system that protects everyone else",
+              "In the NLRA's 1935 farm and domestic exclusion",
               "In the Chinese Trade Union Law",
               "In Germany's works councils",
             ],
@@ -2587,9 +2587,9 @@ These are the specific, checkable facts this course wants in your head, the ones
             prompt: "What makes the ILO structurally unusual among international organizations?",
             options: [
               "It has its own police force",
-              "It is TRIPARTITE, member delegations include government, employer and worker delegates, and employers and workers vote independently of their own government",
+              "It is TRIPARTITE: government, employer, worker delegates",
               "Only democracies may join",
-              "Its decisions are automatically binding on all members",
+              "Its decisions are automatically binding on all its members",
             ],
             correctIndex: 1,
             explanation:
@@ -2600,7 +2600,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             prompt: "What is the difference between an ILO Convention and an ILO Recommendation?",
             options: [
               "A Convention binds every member automatically; a Recommendation binds only signatories",
-              "A Convention is a treaty that binds a country only if that country RATIFIES it; a Recommendation is non-binding guidance",
+              "A Convention binds a country only if it RATIFIES it; a Recommendation does not",
               "There is no legal difference",
               "A Recommendation is enforced by the International Court of Justice",
             ],
@@ -2613,9 +2613,9 @@ These are the specific, checkable facts this course wants in your head, the ones
             prompt: "How many fundamental ILO conventions are there now, and what changed?",
             options: [
               "Eight, unchanged since 1998",
-              "Ten, occupational safety and health was added as a fundamental principle in June 2022, recognizing Conventions 155 and 187",
+              "Ten, safety and health added as fundamental, 2022",
               "Four, the number was reduced in 2022",
-              "Twelve, climate standards were added in 2020",
+              "Twelve, climate and safety standards added in 2020",
             ],
             correctIndex: 1,
             explanation:
@@ -2624,7 +2624,7 @@ These are the specific, checkable facts this course wants in your head, the ones
           },
           {
             prompt: "How many of the ILO's fundamental conventions has the UNITED STATES ratified?",
-            options: ["All ten", "Eight", "Two, C105 and C182", "None"],
+            options: ["All ten of them", "Eight of the ten", "Two: C105, C182", "None at all"],
             correctIndex: 2,
             explanation:
               "Only two. It has NOT ratified C087 (freedom of association) or C098 (collective bargaining), putting it, on those two, alongside China and Qatar.",
@@ -2634,7 +2634,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             prompt: "The ILO's Committee on Freedom of Association can hear a complaint against a country that has NOT ratified Convention 87 or 98. Why?",
             options: [
               "Because the UN Security Council authorizes it case by case",
-              "Because the 1998 Declaration holds that all members, by virtue of MEMBERSHIP alone, must respect the fundamental principles, including freedom of association, ratified or not",
+              "Because the 1998 Declaration binds members by MEMBERSHIP",
               "Because non-ratifying countries automatically lose their vote",
               "It cannot; ratification is required",
             ],
@@ -2648,8 +2648,8 @@ These are the specific, checkable facts this course wants in your head, the ones
             options: [
               "Economic sanctions",
               "Expulsion from the United Nations",
-              "Embarrassment, it reports, examines, publishes, and at most convenes a Commission of Inquiry that names what it found. It has no police, no fines, no court.",
-              "Criminal prosecution of the officials responsible",
+              "Embarrassment: it reports, publishes, names what it found",
+              "Criminal prosecution of the responsible national officials",
             ],
             correctIndex: 2,
             explanation:
@@ -2674,7 +2674,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             options: [
               "Trust the State Department, because it is a government",
               "Trust the ITUC, because it represents workers",
-              "Treat the GAP between two motivated sources as where the interesting question lives, and go find the statute",
+              "Treat the GAP as the question; go find the statute",
               "Discard both and rely on memory",
             ],
             correctIndex: 2,
@@ -2686,7 +2686,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             prompt: "Which of the five habits explains why Nordic union density is high and German bargaining coverage is broad?",
             options: [
               "Notice who benefits from the version you are told",
-              "Look for the PLUMBING before you reach for the culture, institutional design explains more than national character almost every time",
+              "Look for the PLUMBING before the culture",
               "Every number carries a year and a source",
               "When the record does not settle it, say so",
             ],
@@ -2698,10 +2698,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "\"Separate the text, the effect, and the motive.\" Which example in this course does that habit come from?",
             options: [
-              "The PATCO strike",
-              "The NLRA's exclusion of agricultural and domestic workers, the statute's TEXT is undisputed, its EFFECT is measurable, and its MOTIVE is a historical argument",
-              "The founding of the ILO",
-              "The Ghent system",
+              "The 1981 PATCO air traffic strike",
+              "The NLRA's farm and domestic exclusion",
+              "The 1919 founding of the ILO in Versailles",
+              "The Nordic Ghent system of insurance",
             ],
             correctIndex: 1,
             explanation:
@@ -2711,10 +2711,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "Which question of the four explains why Germany, with a union membership rate close to America's, has roughly five times the bargaining coverage?",
             options: [
-              "Q1, who is allowed to organise?",
+              "Q1, who is allowed to organise a union?",
               "Q2, who is excluded?",
-              "Q3, who bargains with whom, and at what level?",
-              "Q4, what happens to you if you try?",
+              "Q3, who bargains with whom, at what level?",
+              "Q4, what happens to you if you dare to try?",
             ],
             correctIndex: 2,
             explanation:
@@ -2739,7 +2739,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             options: [
               "To make you pro-union",
               "To make you anti-union",
-              "To make you the person who asks \"covered, or a member? what year is that number? and who did the law leave out?\"",
+              "To make you the person who asks the questions",
               "To prepare you for a career in labour law",
             ],
             correctIndex: 2,
@@ -2751,8 +2751,8 @@ These are the specific, checkable facts this course wants in your head, the ones
             prompt: "Where does the course say to go for what your rights are on the job TODAY?",
             options: [
               "Back to Section 3 of this course",
-              "The companion course, *Know Your Rights at Work*, protected concerted activity, retaliation, at-will employment, reading your contract",
-              "The ILO's Committee on Freedom of Association",
+              "The companion course, *Know Your Rights at Work*",
+              "The ILO's Committee on Freedom of Association in Geneva",
               "Nowhere; this course covers it",
             ],
             correctIndex: 1,
