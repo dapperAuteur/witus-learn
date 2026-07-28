@@ -107,7 +107,6 @@ function longestStrategyValue(lens: number[], correct: number): { value: number;
  * the progress bar. Do not add to this list to make new content pass.
  */
 const GRANDFATHERED: Record<string, number> = {
-  "scripts/data/training-the-colonizer-course.ts": 1.00,
 };
 
 function trackedFiles(): string[] {
