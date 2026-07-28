@@ -158,6 +158,41 @@ export async function createCourseCheckout(opts: {
   return session.url;
 }
 
+// ── Platform billing (a school buying its own white-label instance) ───────────
+// Opposite direction from a course sale: the SCHOOL pays the platform account, so NO Connect transfer.
+// The amount is set per school (price_data with a custom unit_amount), so every school can be a
+// different price, and either a recurring subscription or a one-time lifetime payment (plans/51).
+export async function createPlatformCheckout(opts: {
+  stripe: Stripe;
+  /** The school being billed (only its id + name are needed). */
+  school: { id: string; name: string };
+  billingType: "subscription" | "lifetime";
+  /** 'month' | 'year' for a subscription; ignored for lifetime. */
+  interval: "month" | "year" | null;
+  amountCents: number;
+  currency?: string;
+  siteUrl: string;
+}): Promise<string | null> {
+  const { stripe, school, billingType, interval, amountCents, currency = "usd", siteUrl } = opts;
+  const isSub = billingType === "subscription";
+
+  const priceData: Stripe.Checkout.SessionCreateParams.LineItem.PriceData = {
+    currency,
+    unit_amount: amountCents,
+    product_data: { name: `${school.name} white-label school` },
+    ...(isSub && interval ? { recurring: { interval } } : {}),
+  };
+
+  const session = await stripe.checkout.sessions.create({
+    mode: isSub ? "subscription" : "payment",
+    line_items: [{ price_data: priceData, quantity: 1 }],
+    success_url: `${siteUrl}/admin/school-billing?paid=${school.id}`,
+    cancel_url: `${siteUrl}/admin/school-billing?canceled=${school.id}`,
+    metadata: { platform_tenant_id: school.id, billing_type: billingType },
+  });
+  return session.url;
+}
+
 // ── Bundles ──────────────────────────────────────────────────────────────────
 // A bundle is sold exactly like a one-time course, but the webhook enrolls the buyer in every member
 // course instead of one. ensureBundlePrice/createBundleCheckout mirror the course helpers so the
