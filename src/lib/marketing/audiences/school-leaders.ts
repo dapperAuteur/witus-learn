@@ -10,7 +10,7 @@ export const SCHOOL_LEADERS_LANDING: AudienceLandingContent = {
   eyebrow: "For school leaders",
   title: "Run your own school, on your own domain, that you can defend to a board",
   subtitle:
-    "Your brand, your domain, isolated from every other school on the platform. Cited curriculum, standards evidence you can put in a filing, and live classes with attendance, a parent view, and an AI tutor grounded only in your content.",
+    "Your brand, your domain, isolated from every other school on the platform. Cited curriculum, standards evidence you can put in a filing, and live classes with attendance, a parent view, and verified credentials anyone can check.",
   metaDescription:
     "A white-label school for districts and leaders: your own domain, cited curriculum, per-state standards evidence for filings, live classes, attendance, a parent view, and a no-signup demo.",
   primaryCta: { href: "/demo", label: "Try the live demo →" },
@@ -47,10 +47,10 @@ export const SCHOOL_LEADERS_LANDING: AudienceLandingContent = {
         "Younger learners sign in with a class code and a PIN, no email required. Parents get a view into what their child is doing, so families can follow along without a separate account for every task.",
     },
     {
-      icon: "🤖",
-      title: "An AI tutor grounded only in your content",
+      icon: "✅",
+      title: "Verified credentials, checkable by anyone",
       body:
-        "Students can ask questions and get answers drawn only from what your courses actually teach and their sources, not the open internet. What the tutor says stays inside the material you approved.",
+        "Every completion issues a credential with a public verification link, so a certificate can be confirmed against your school rather than just claimed. Useful when a registrar or a parent needs proof.",
     },
   ],
   faq: [

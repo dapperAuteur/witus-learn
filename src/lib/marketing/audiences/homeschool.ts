@@ -41,9 +41,9 @@ export const HOMESCHOOL_LANDING: AudienceLandingContent = {
     },
     {
       icon: "📎",
-      title: "Cited courses and an AI tutor that stays in the material",
+      title: "Cited courses your student can trust",
       body:
-        "Every course is cited to real sources, with in-line citations and a bibliography, so when your student asks how a claim is known, the answer is on the page. The AI tutor answers only from what the course teaches and its sources, not the open internet.",
+        "Every course is cited to real sources, with in-line citations and a bibliography, so when your student asks how a claim is known, the answer is on the page. Save any lesson for offline, so learning does not stop when the internet does.",
     },
     {
       icon: "🔁",

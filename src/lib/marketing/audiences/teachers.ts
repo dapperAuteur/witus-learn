@@ -10,7 +10,7 @@ export const TEACHERS_LANDING: AudienceLandingContent = {
   subtitle:
     "Every course is cited to real sources, aligned to published standards, and honest about what it does and does not claim. Assign it, teach it live, or build your own on top of it.",
   metaDescription:
-    "Cited, standards-aligned courses for teachers: every claim tied to a source, alignments you can hand an administrator, live classes and cohorts, and an AI tutor grounded in your content.",
+    "Cited, standards-aligned courses for teachers: every claim tied to a source, alignments you can hand an administrator, live classes and cohorts, and lessons that work offline.",
   primaryCta: { href: "/demo", label: "Try the live demo →" },
   secondaryCta: { href: "/academic-standards", label: "See the standards a course meets" },
   valueProps: [
@@ -39,10 +39,10 @@ export const TEACHERS_LANDING: AudienceLandingContent = {
         "Answer choices shuffle every attempt, so a student cannot coast on position, and questions are checked so the correct answer is not simply the longest one. A quiz score means something.",
     },
     {
-      icon: "🤖",
-      title: "An AI tutor grounded in the course",
+      icon: "📶",
+      title: "Lessons that work offline",
       body:
-        "Students can ask questions and get answers drawn only from what the course actually teaches and its sources, not the open internet.",
+        "Students save a lesson, its page and its media, and keep going without a connection. Progress syncs when they are back online, so a bus, a field trip, or a home with spotty internet is not a blocker.",
     },
     {
       icon: "🛠️",

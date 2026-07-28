@@ -53,10 +53,10 @@ const FEATURES: Feature[] = [
       "Young learners without an email sign in with a class code, an avatar, and a PIN, no password, no account for a parent to manage.",
   },
   {
-    icon: "🤖",
-    title: "An AI tutor, grounded in your content",
+    icon: "📶",
+    title: "Works offline",
     body:
-      "A built-in tutor answers questions using only what's actually taught in your courses, not the open internet.",
+      "Save any lesson, its page and its media, for offline. Students keep learning on a bus or with spotty internet, and their progress syncs when they reconnect.",
   },
 ];
 
