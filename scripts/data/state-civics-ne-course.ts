@@ -249,10 +249,10 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
           {
             prompt: "What is unique about Nebraska's Legislature?",
             options: [
-              "It has three chambers",
-              "It is the only unicameral (single-house) AND officially nonpartisan state legislature",
-              "It has no elected members",
-              "It meets only once per decade",
+              "It has three separate chambers instead of two houses",
+              "It is the only unicameral, nonpartisan legislature",
+              "Its members are appointed, not elected by voters",
+              "It meets only once every ten years after a census",
             ],
             correctIndex: 1,
             explanation:
@@ -283,10 +283,10 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
           {
             prompt: "Which feature helps the one-house Unicameral deliberate without a second chamber?",
             options: [
-              "Secret votes only",
-              "A guaranteed public hearing for every bill and three separate stages of floor debate",
-              "Approval by the Governor before debate",
-              "A conference committee with Congress",
+              "Secret floor votes on every bill before passage",
+              "A public hearing for every bill and staged debate",
+              "Approval by the Governor before any floor debate",
+              "A conference committee shared with the U.S. Congress",
             ],
             correctIndex: 1,
             explanation:
@@ -296,10 +296,10 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
           {
             prompt: "Because Nebraska has only one house, which step is unnecessary?",
             options: [
-              "Committee review",
-              "A conference committee to reconcile two versions of a bill",
-              "The Governor's signature",
-              "A public hearing",
+              "Sending a passed bill to committee for review",
+              "A conference committee to reconcile two bills",
+              "The Governor's signature before a bill becomes law",
+              "A public hearing held on every bill introduced",
             ],
             correctIndex: 1,
             explanation:
@@ -309,10 +309,10 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
           {
             prompt: "How does Nebraska select its judges?",
             options: [
-              "Partisan elections",
-              "Merit selection (commission → Governor appoints) plus nonpartisan retention elections",
-              "The Legislature elects them",
-              "The Governor appoints for life with no review",
+              "Partisan elections with party labels on the ballot",
+              "Merit selection, then nonpartisan retention votes",
+              "The Legislature elects each judge to the bench",
+              "The Governor appoints judges for life, no review",
             ],
             correctIndex: 1,
             explanation:
@@ -322,10 +322,10 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
           {
             prompt: "What is unusual about who owns Nebraska's electricity?",
             options: [
-              "It is owned by one private company",
-              "ALL electricity is publicly owned, no private for-profit electric utilities",
-              "It is owned by the federal government",
-              "Nebraska imports all its power",
+              "It is owned by a single private utility company",
+              "All of it is publicly owned, no private utilities",
+              "It is owned entirely by the U.S. federal government",
+              "Nebraska imports all of its power from Wyoming",
             ],
             correctIndex: 1,
             explanation:
@@ -335,10 +335,10 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
           {
             prompt: "How does Nebraska award its presidential electoral votes?",
             options: [
-              "Winner-take-all, like most states",
-              "By congressional district (with Maine): two statewide, one per district",
-              "By the Legislature's choice",
-              "It has no electoral votes",
+              "Winner-take-all statewide, like most other states",
+              "By district (with Maine), plus two statewide",
+              "By a vote of the state Legislature each cycle",
+              "It casts no electoral votes for any President",
             ],
             correctIndex: 1,
             explanation:
@@ -348,10 +348,10 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
           {
             prompt: "What is a Nebraska 'natural resources district' (NRD)?",
             options: [
-              "A national park",
-              "An elected local body that manages water and soil by watershed, a Nebraska innovation",
-              "A private mining company",
-              "A federal agency",
+              "A national park run by the U.S. Park Service",
+              "An elected body managing water and soil locally",
+              "A private mining company operating on state land",
+              "A federal agency based in Washington, D.C.",
             ],
             correctIndex: 1,
             explanation:
@@ -361,10 +361,10 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
           {
             prompt: "Why does this course tell you to VERIFY Nebraska's voter-ID and electoral rules?",
             options: [
-              "Because Nebraska has no elections office",
-              "Because voter ID was recently added (2022) and electoral-vote proposals recur, confirm current rules at sos.nebraska.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Nebraska runs no statewide elections office",
+              "Because voter ID was added in 2022 and rules shift",
+              "Because only the U.S. Congress sets state voting law",
+              "Because state voting law is fixed and never changes",
             ],
             correctIndex: 1,
             explanation:

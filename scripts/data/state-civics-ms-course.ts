@@ -225,10 +225,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "What did Mississippi voters remove from the constitution in 2020?",
             options: [
-              "The Governor's office",
-              "A Jim Crow-era rule that could send statewide elections to the state House if no candidate won both the popular vote and a majority of House districts",
-              "All elections",
-              "The Supreme Court",
+              "The state's four U.S. House districts drawn after 2000",
+              "A Jim Crow-era rule that sent elections to the House",
+              "The runoff held when no candidate wins a popular majority",
+              "The elected office of the powerful Lieutenant Governor",
             ],
             correctIndex: 1,
             explanation:
@@ -238,10 +238,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "What else did Mississippi change in 2020?",
             options: [
-              "It adopted a new state flag, retiring the last one with a Confederate emblem",
-              "It abolished counties",
-              "It banned voting",
-              "It moved its capital",
+              "It adopted a new state flag with no Confederate emblem",
+              "It abolished the elected boards of supervisors statewide",
+              "It banned absentee voting for every registered voter",
+              "It moved the state capital from Jackson to Biloxi",
             ],
             correctIndex: 0,
             explanation:
@@ -251,10 +251,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "Why is Mississippi's Lieutenant Governor considered so powerful?",
             options: [
-              "They command the National Guard",
-              "They preside over the Senate and strongly control its committees, calendar, and which bills advance",
-              "They appoint all judges",
-              "They write the budget alone",
+              "They command the state's National Guard during a war",
+              "They preside over the Senate and steer its committees",
+              "They appoint every justice on the state Supreme Court",
+              "They write the entire state budget without the Legislature",
             ],
             correctIndex: 1,
             explanation:
@@ -277,10 +277,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "Why is Mississippi's citizen initiative process currently not in effect?",
             options: [
-              "Voters abolished it",
-              "The state Supreme Court struck it down (2021) because its five-congressional-district signature formula became impossible after Mississippi dropped to four districts",
-              "The Governor vetoed it",
-              "It was never created",
+              "Mississippi voters repealed it in a 2021 referendum",
+              "The Supreme Court voided its broken five-district formula",
+              "The Governor vetoed the citizen-initiative statute in 2021",
+              "The Legislature repealed it after the 2020 U.S. census",
             ],
             correctIndex: 1,
             explanation:
@@ -303,10 +303,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "How does Mississippi choose its Supreme Court justices?",
             options: [
-              "Appointed for life by the Governor",
-              "Elected on a nonpartisan ballot from districts to 8-year terms",
-              "Elected by the Legislature",
-              "In partisan races",
+              "Appointed for life by the Governor and the Senate",
+              "Elected on a nonpartisan ballot to 8-year terms",
+              "Elected by the state Legislature in a partisan vote",
+              "Chosen in partisan races with each party's label shown",
             ],
             correctIndex: 1,
             explanation:
@@ -316,10 +316,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "What elected board governs a Mississippi county?",
             options: [
-              "A city council",
-              "A board of supervisors (from five supervisor districts, or 'beats')",
-              "A fiscal court",
-              "A police jury",
+              "A city council elected by the municipality's voters",
+              "A board of supervisors from five county districts",
+              "A fiscal court led by an elected county judge",
+              "A police jury of elected parish commissioners",
             ],
             correctIndex: 1,
             explanation:
@@ -337,10 +337,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "Why does this course especially tell you to VERIFY Mississippi's rules?",
             options: [
-              "Because Mississippi has no government website",
-              "Because so much changed recently: the election rule (2020), the flag (2020), and the initiative process (struck down 2021); confirm current status at [sos.ms.gov](https://sos.ms.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Mississippi keeps no official state website online",
+              "Because its election rule, flag, and initiative changed",
+              "Because only the U.S. Congress can set state rules",
+              "Because state law never changes once it is adopted",
             ],
             correctIndex: 1,
             explanation:

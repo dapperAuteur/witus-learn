@@ -322,10 +322,10 @@ The pattern behind every one of these: the honest version of dental science is u
           {
             prompt: "What do plaque bacteria produce when they break down sugar, and what does that do to teeth?",
             options: [
-              "Fluoride; it strengthens enamel",
-              "Acid; it demineralizes enamel and can cause cavities",
-              "Calcium; it remineralizes enamel",
-              "Nothing measurable happens to enamel",
+              "Fluoride; it strengthens and hardens enamel",
+              "Acid; it demineralizes enamel and causes decay",
+              "Calcium; it remineralizes and rebuilds the enamel",
+              "Nothing measurable happens to the enamel",
             ],
             correctIndex: 1,
             explanation:
@@ -336,9 +336,9 @@ The pattern behind every one of these: the honest version of dental science is u
             prompt: "Per the ADA, how should you brush your teeth?",
             options: [
               "As hard as possible, once a day, for best results",
-              "Twice a day for two minutes, gently, with a fluoride toothpaste",
-              "Only after meals, with any toothpaste",
-              "Once a week is sufficient if you floss daily",
+              "Twice a day, two minutes, gently, fluoride paste",
+              "Only after meals, using any toothpaste you have",
+              "Once a week is enough if you floss every day",
             ],
             correctIndex: 1,
             explanation:
@@ -348,10 +348,10 @@ The pattern behind every one of these: the honest version of dental science is u
           {
             prompt: "What did the 2019 Cochrane review find about flossing's effect on plaque and gingivitis?",
             options: [
-              "Strong, high-certainty evidence that flossing eliminates plaque",
-              "Low to very-low certainty evidence; may reduce gingivitis somewhat, plaque effect unclear",
+              "Strong evidence that flossing eliminates plaque",
+              "Low certainty; small gingivitis gain, plaque unclear",
               "No evidence exists on interdental cleaning at all",
-              "Flossing was proven more effective than any interdental brush in every trial",
+              "Flossing beat every interdental brush in all the trials",
             ],
             correctIndex: 1,
             explanation:
@@ -369,10 +369,10 @@ The pattern behind every one of these: the honest version of dental science is u
           {
             prompt: "What does the WHO strongly recommend for free-sugar intake, and does that include sugar from fruit juice or honey?",
             options: [
-              "Under 10% of total energy; yes, it includes fruit juice and honey sugars",
-              "Under 50% of total energy; only added table sugar counts",
-              "No limit is recommended",
-              "Under 10% of total energy; only soda counts",
+              "Under 10% of energy; includes juice and honey",
+              "Under 50% of energy; only added table sugar counts",
+              "No upper limit on sugar intake is recommended",
+              "Under 10% of energy; only soda sugar counts",
             ],
             correctIndex: 0,
             explanation:
@@ -390,10 +390,10 @@ The pattern behind every one of these: the honest version of dental science is u
           {
             prompt: "Why is the periodontal disease-diabetes link considered the strongest of the systemic connections in this course?",
             options: [
-              "It's the only link studied at all",
-              "It's bidirectional and supported by randomized trials showing periodontal treatment improves blood-sugar control",
-              "The AHA declared it definitively causal",
-              "It was discovered most recently",
+              "It is the only systemic link ever studied at all",
+              "It's bidirectional; trials show lower blood sugar",
+              "The AHA has declared it a definitively causal link",
+              "It was the most recently discovered of the links",
             ],
             correctIndex: 1,
             explanation:
@@ -403,10 +403,10 @@ The pattern behind every one of these: the honest version of dental science is u
           {
             prompt: "What does the American Heart Association's 2026 statement say about periodontal therapy and cardiovascular disease?",
             options: [
-              "Periodontal therapy is proven to prevent heart attacks and strokes",
-              "There is no direct evidence of causality, or that periodontal therapy will prevent CVD",
-              "The two conditions are completely unrelated",
-              "Only flossing, not brushing, prevents CVD",
+              "Periodontal therapy is proven to prevent strokes",
+              "No direct evidence of causality or CVD prevention",
+              "The two conditions are completely unrelated things",
+              "Only flossing, never brushing, can prevent CVD",
             ],
             correctIndex: 1,
             explanation:
@@ -416,9 +416,9 @@ The pattern behind every one of these: the honest version of dental science is u
           {
             prompt: "What does an 'umbrella review,' like the 2025 periodontal-Alzheimer's study, actually tell you?",
             options: [
-              "It proves periodontal disease causes Alzheimer's in humans",
-              "It summarizes existing systematic reviews and shows a consistent association, not proof of causation",
-              "It is a single new clinical trial",
+              "It proves periodontal disease causes human Alzheimer's",
+              "It pools past reviews, showing association not cause",
+              "It is one single brand-new clinical drug trial",
               "It disproves any link between the two conditions",
             ],
             correctIndex: 1,
@@ -430,8 +430,8 @@ The pattern behind every one of these: the honest version of dental science is u
             prompt: "True or false: bleeding gums when flossing means you should stop flossing.",
             options: [
               "True, bleeding means flossing is damaging your gums",
-              "False, bleeding usually signals gum inflammation that consistent, gentle cleaning helps resolve",
-              "True, but only if it happens more than once",
+              "False, bleeding usually signals gum inflammation",
+              "True, but only if it keeps happening every time",
               "False, because flossing never causes any bleeding",
             ],
             correctIndex: 1,

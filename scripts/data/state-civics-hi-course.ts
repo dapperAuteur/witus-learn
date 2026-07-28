@@ -251,10 +251,10 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "What makes Hawaii's government the most centralized in the U.S.?",
             options: [
-              "It has 254 counties",
-              "It has only four counties, essentially no city/town governments, and a single statewide school system",
-              "It has no state government",
-              "It is run by the federal government",
+              "It has 254 separate counties and thousands of school districts",
+              "Four counties, no city/town governments, one statewide school system",
+              "It has hundreds of incorporated cities and dozens of townships",
+              "Its public schools are run by 15 elected county school boards",
             ],
             correctIndex: 1,
             explanation:
@@ -264,10 +264,10 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "How does Hawaii run its public schools?",
             options: [
-              "Through hundreds of local districts",
-              "As a single, unified statewide school system with no local districts or boards",
-              "Only private schools exist",
-              "Each county runs its own",
+              "Through 15 county districts, each with its own elected board",
+              "One statewide system run by the state DOE, with no local districts",
+              "Only private and charter schools operate across the islands",
+              "Each of the four counties runs its own separate school system",
             ],
             correctIndex: 1,
             explanation:
@@ -278,9 +278,9 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
             prompt: "How many statewide executive officials do Hawaiians elect?",
             options: [
               "Only two: the Governor and Lieutenant Governor",
-              "Nine",
-              "None",
-              "Six",
+              "Nine separate statewide elected executive offices",
+              "None; the state Legislature appoints the Governor",
+              "Six, including a separately elected Attorney General",
             ],
             correctIndex: 0,
             explanation:
@@ -290,10 +290,10 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "How is judicial retention decided in Hawaii?",
             options: [
-              "By a yes/no vote of the people",
+              "By a yes/no retention vote of the people each term",
               "By the Judicial Selection Commission, not the voters",
-              "By the Governor alone",
-              "By the U.S. Supreme Court",
+              "By the Governor alone, with no other body involved",
+              "By the U.S. Supreme Court through a federal appeal",
             ],
             correctIndex: 1,
             explanation:
@@ -303,10 +303,10 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "What is the Office of Hawaiian Affairs (OHA)?",
             options: [
-              "A tourism agency",
-              "An elected-trustee state agency managing ceded-land revenues in trust for Native Hawaiians",
-              "The state police",
-              "A federal court",
+              "The cabinet agency that markets Hawaii tourism to the U.S. mainland",
+              "State agency of elected trustees holding ceded lands for Native Hawaiians",
+              "The statewide police force patrolling all four counties' main highways",
+              "A federal district court that rules on Native Hawaiian land claims",
             ],
             correctIndex: 1,
             explanation:
@@ -316,10 +316,10 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "What makes Hawaii's official-language status unique?",
             options: [
-              "It has no official language",
-              "It is the only state with an official second language (Hawaiian), alongside English",
-              "It bans English",
-              "It requires Latin",
+              "Its state constitution names English the sole official language",
+              "The only state whose constitution makes Hawaiian an official language",
+              "It legally bans English from all official government documents",
+              "It requires Latin alongside English in all official state documents",
             ],
             correctIndex: 1,
             explanation:
@@ -329,10 +329,10 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "Which constitution governs Hawaii, and when did it take effect?",
             options: [
-              "The Constitution of 1900",
+              "The Constitution of 1900, from the Territory era",
               "The Constitution of 1959, adopted at statehood",
-              "The Kingdom constitution of 1840",
-              "It has no constitution",
+              "The Kingdom constitution of 1840, still in force",
+              "It has no constitution, only federal statute",
             ],
             correctIndex: 1,
             explanation:
@@ -342,10 +342,10 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "In Hawaii, what provides your local government?",
             options: [
-              "A city council",
-              "Your county (one of four); there are no city or town governments below the county",
-              "A township",
-              "The school district",
+              "A city council elected within each incorporated island town",
+              "Your county, one of four, with no city or town government below it",
+              "A township board and trustees, as in most Midwestern states",
+              "The local elected school district covering your neighborhood",
             ],
             correctIndex: 1,
             explanation:
@@ -355,10 +355,10 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "How does most voting happen in Hawaii?",
             options: [
-              "In person only",
+              "In person only, at a precinct on Election Day",
               "By mail: a ballot is sent to every registered voter",
-              "Online",
-              "By telephone",
+              "Online, through the secure state voter portal",
+              "By telephone, using a PIN mailed to each voter",
             ],
             correctIndex: 1,
             explanation:
@@ -368,10 +368,10 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "Where does public-school policy advocacy go in Hawaii?",
             options: [
-              "To a local school district",
-              "To the statewide Board of Education and the Legislature, because schools are state-run",
-              "To the county sheriff",
-              "To the federal government",
+              "To your neighborhood's local elected school board",
+              "To the statewide Board of Education and the Legislature",
+              "To your county sheriff and the mayor's education office",
+              "To the U.S. Department of Education in Washington",
             ],
             correctIndex: 1,
             explanation:

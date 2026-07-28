@@ -271,10 +271,10 @@ This differs from every other system you've met: it's **not** Washington's "top-
           {
             prompt: "What is Alaska's 'Unorganized Borough'?",
             options: [
-              "A failed city",
-              "A single vast area covering much of the state with no borough government, where the state provides services",
-              "The state capital",
-              "A federal military zone",
+              "Alaska's largest incorporated city",
+              "A borough-less area the state runs",
+              "Juneau, the state capital city",
+              "A U.S. military base near Fairbanks",
             ],
             correctIndex: 1,
             explanation:
@@ -285,9 +285,9 @@ This differs from every other system you've met: it's **not** Washington's "top-
             prompt: "How many statewide executive officials do Alaskans elect?",
             options: [
               "Nine, a large plural executive",
-              "Only two: the Governor and Lieutenant Governor (joint ticket)",
+              "Two: the Governor and Lt. Governor",
               "None; the Legislature picks them",
-              "Five",
+              "Five separate statewide offices",
             ],
             correctIndex: 1,
             explanation:
@@ -298,7 +298,7 @@ This differs from every other system you've met: it's **not** Washington's "top-
             prompt: "How does Alaska's election system work (adopted 2020)?",
             options: [
               "Separate party primaries and winner-take-all",
-              "An open 'top-four' primary, then a ranked-choice general election",
+              "An open top-four primary, then ranked-choice",
               "The Legislature elects all officials",
               "A jungle primary where 50% wins outright",
             ],
@@ -310,10 +310,10 @@ This differs from every other system you've met: it's **not** Washington's "top-
           {
             prompt: "How is Alaska's system different from Louisiana's jungle primary?",
             options: [
-              "They are identical",
-              "Louisiana lets a 50%+ candidate win outright in round one; Alaska sends the top four to a ranked-choice general",
-              "Alaska has no primary",
-              "Louisiana uses ranked-choice voting",
+              "They work in exactly the same way today",
+              "Louisiana can end in round one; Alaska cannot",
+              "Alaska holds no primary election at all",
+              "Louisiana also uses ranked-choice voting",
             ],
             correctIndex: 1,
             explanation:
@@ -324,9 +324,9 @@ This differs from every other system you've met: it's **not** Washington's "top-
             prompt: "What is the Alaska Permanent Fund Dividend (PFD)?",
             options: [
               "A tax Alaskans pay each year",
-              "An annual cash payment to eligible residents from the state's invested oil wealth",
-              "A federal welfare program",
-              "A loan that must be repaid",
+              "A yearly cash payout from oil wealth",
+              "A federal welfare program payment",
+              "A loan residents must repay later",
             ],
             correctIndex: 1,
             explanation:
@@ -337,9 +337,9 @@ This differs from every other system you've met: it's **not** Washington's "top-
             prompt: "Which taxes does Alaska NOT collect at the state level?",
             options: [
               "Property tax and income tax",
-              "State personal income tax and statewide sales tax",
-              "All taxes of any kind",
-              "Only the gas tax",
+              "State income tax and sales tax",
+              "All taxes of every kind",
+              "Only the state gas tax",
             ],
             correctIndex: 1,
             explanation:
@@ -349,9 +349,9 @@ This differs from every other system you've met: it's **not** Washington's "top-
           {
             prompt: "How does Alaska choose its judges?",
             options: [
-              "Partisan elections",
-              "Merit selection via the Alaska Judicial Council, gubernatorial appointment, then retention elections",
-              "The Legislature elects them",
+              "Partisan judicial elections statewide",
+              "Merit selection, then retention votes",
+              "The Legislature elects all judges",
               "The Permanent Fund board appoints them",
             ],
             correctIndex: 1,
@@ -363,9 +363,9 @@ This differs from every other system you've met: it's **not** Washington's "top-
             prompt: "What can Alaska's citizen initiative do?",
             options: [
               "Nothing; Alaska has no initiative",
-              "Put a statute on the ballot (as with the 2020 election-system measure), though not directly amend the constitution",
-              "Only raise taxes",
-              "Only remove judges",
+              "Pass a law, not amend the constitution",
+              "Only raise or lower state taxes",
+              "Only remove judges from the bench",
             ],
             correctIndex: 1,
             explanation:
@@ -375,10 +375,10 @@ This differs from every other system you've met: it's **not** Washington's "top-
           {
             prompt: "Why does this course tell you to VERIFY Alaska's voting system and dividend?",
             options: [
-              "Because Alaska has no elections office",
-              "Because the top-four/RCV system is new and has faced repeal efforts, and the PFD amount changes yearly. Confirm at [elections.alaska.gov](https://elections.alaska.gov) / the state",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Alaska keeps no elections office",
+              "Because the RCV system is new and the PFD varies",
+              "Because only the U.S. Congress sets them",
+              "Because your ballot choices remain secret",
             ],
             correctIndex: 1,
             explanation:

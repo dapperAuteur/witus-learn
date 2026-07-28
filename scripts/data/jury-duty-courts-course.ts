@@ -310,10 +310,10 @@ Throughout, the judge rules on legal questions (what evidence comes in, objectio
           {
             prompt: "Where do federal courts typically get the names for jury summonses?",
             options: [
-              "Referrals from court employees",
-              "Voter registration lists (often supplemented by licensed-driver lists)",
-              "Only people who served before",
-              "Nomination by an employer",
+              "Referrals from local court employees",
+              "Voter registration and driver lists",
+              "Only people who have served before",
+              "Direct nomination by your employer",
             ],
             correctIndex: 1,
             explanation:
@@ -324,8 +324,8 @@ Throughout, the judge rules on legal questions (what evidence comes in, objectio
             prompt: "What is voir dire?",
             options: [
               "The jury's final vote on a verdict",
-              "Questioning prospective jurors to screen for bias before trial",
-              "The judge's instructions to the jury",
+              "Questioning jurors to screen for bias",
+              "The judge's final instructions to the jury",
               "An appeal filed after a conviction",
             ],
             correctIndex: 1,
@@ -336,10 +336,10 @@ Throughout, the judge rules on legal questions (what evidence comes in, objectio
           {
             prompt: "What does a federal grand jury decide?",
             options: [
-              "Guilt or innocence at trial",
-              "Whether there is probable cause to indict",
-              "How much civil compensation is owed",
-              "The length of a prison sentence",
+              "Guilt or innocence at the criminal trial",
+              "Whether probable cause exists to indict",
+              "How much civil money compensation is owed",
+              "The length of a convict's prison sentence",
             ],
             correctIndex: 1,
             explanation:
@@ -349,10 +349,10 @@ Throughout, the judge rules on legal questions (what evidence comes in, objectio
           {
             prompt: "Under the Fifth Amendment, are all 50 states required to use a grand jury to charge someone with a felony?",
             options: [
-              "Yes, always",
-              "No, the grand jury requirement binds only the federal government",
-              "Only in death-penalty cases",
-              "Only if the defendant requests one",
+              "Yes, in every state without exception",
+              "No, it binds only the federal government",
+              "Only in serious death-penalty cases",
+              "Only if the defendant formally requests one",
             ],
             correctIndex: 1,
             explanation:
@@ -362,10 +362,10 @@ Throughout, the judge rules on legal questions (what evidence comes in, objectio
           {
             prompt: "Which of these is the correct order for the stages of a trial?",
             options: [
-              "Closing arguments, opening statements, evidence, verdict",
-              "Jury instructions, evidence, opening statements, deliberation",
+              "Closing arguments, opening statements, evidence, deliberation, jury instructions, verdict",
+              "Jury instructions, evidence, opening statements, closing arguments, deliberation, verdict",
               "Opening statements, evidence, closing arguments, jury instructions, deliberation, verdict",
-              "Deliberation, evidence, opening statements, verdict",
+              "Deliberation, evidence, opening statements, closing arguments, jury instructions, verdict",
             ],
             correctIndex: 2,
             explanation:
@@ -375,10 +375,10 @@ Throughout, the judge rules on legal questions (what evidence comes in, objectio
           {
             prompt: "What standard of proof applies in a civil case?",
             options: [
-              "Beyond a reasonable doubt",
-              "Probable cause",
-              "Preponderance of the evidence (more likely than not)",
-              "No standard is required",
+              "Proof beyond a reasonable doubt",
+              "Simple probable cause alone",
+              "Preponderance of the evidence",
+              "No legal standard is required",
             ],
             correctIndex: 2,
             explanation:
@@ -401,10 +401,10 @@ Throughout, the judge rules on legal questions (what evidence comes in, objectio
           {
             prompt: "Why is jury service often described as a check on government power?",
             options: [
-              "Jurors can veto any law they dislike",
-              "Ordinary citizens, not government officials, decide the outcome of the case",
-              "Jurors are paid directly by the defendant",
-              "Jurors can overturn the Constitution",
+              "Jurors can veto any state law they dislike",
+              "Ordinary citizens, not officials, decide it",
+              "Jurors are paid directly by the defense lawyer",
+              "Jurors can overturn the U.S. Constitution",
             ],
             correctIndex: 1,
             explanation:

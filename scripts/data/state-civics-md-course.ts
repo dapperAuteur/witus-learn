@@ -265,10 +265,10 @@ Constitutional **amendments** are proposed by the General Assembly (by a **three
           {
             prompt: "What is distinctive about Maryland's Governor?",
             options: [
-              "The Governor cannot veto bills",
-              "The Governor has the nation's strongest budget power: the Legislature can generally only cut, not add, spending",
-              "The Governor serves for life",
-              "The Governor is chosen by the Legislature",
+              "The Governor cannot veto any bill the Assembly passes",
+              "The Governor has the nation's strongest budget power",
+              "The Governor holds the office for a full lifetime",
+              "The Governor is chosen by the state Legislature",
             ],
             correctIndex: 1,
             explanation:
@@ -278,10 +278,10 @@ Constitutional **amendments** are proposed by the General Assembly (by a **three
           {
             prompt: "Which statewide officers do Maryland voters elect?",
             options: [
-              "Nine officials",
-              "Governor/Lt. Governor (joint ticket), Attorney General, and Comptroller",
-              "Only the Governor",
-              "The Secretary of State and Treasurer",
+              "Fifteen separate officials on a single statewide ballot",
+              "Governor/Lt. Governor, Attorney General, Comptroller",
+              "Only the Governor and no other statewide officer",
+              "The Secretary of State and the elected Treasurer",
             ],
             correctIndex: 1,
             explanation:
@@ -304,10 +304,10 @@ Constitutional **amendments** are proposed by the General Assembly (by a **three
           {
             prompt: "What did Maryland's highest court get renamed to in 2022?",
             options: [
-              "The Court of Appeals",
-              "The Supreme Court of Maryland (formerly the Court of Appeals)",
-              "The Superior Court",
-              "The General Court",
+              "The Maryland Court of Appeals",
+              "The Supreme Court of Maryland",
+              "The Maryland Superior Court",
+              "The Maryland General Court",
             ],
             correctIndex: 1,
             explanation:
@@ -317,10 +317,10 @@ Constitutional **amendments** are proposed by the General Assembly (by a **three
           {
             prompt: "How are Maryland's appellate judges chosen?",
             options: [
-              "Elected in partisan races",
-              "Appointed by the Governor with Senate confirmation, then retention elections",
-              "Elected by the Legislature",
-              "Chosen by lottery",
+              "Elected by the voters in partisan statewide contests",
+              "Appointed by the Governor, then retention elections",
+              "Elected directly by the state General Assembly",
+              "Chosen at random by a public statewide lottery",
             ],
             correctIndex: 1,
             explanation:
@@ -330,10 +330,10 @@ Constitutional **amendments** are proposed by the General Assembly (by a **three
           {
             prompt: "What citizen power do Marylanders have over new laws?",
             options: [
-              "A citizen initiative to propose laws",
-              "A petition to referendum, a citizen veto that sends a new law to the voters",
-              "Direct repeal by any citizen",
-              "None at all",
+              "A citizen initiative to propose brand-new laws",
+              "A petition to referendum, a citizen veto",
+              "Direct repeal of any state law by one citizen",
+              "None at all, citizens hold no power over laws",
             ],
             correctIndex: 1,
             explanation:
@@ -356,10 +356,10 @@ Constitutional **amendments** are proposed by the General Assembly (by a **three
           {
             prompt: "What is unusual about the City of Baltimore?",
             options: [
-              "It is the state capital",
-              "It is an independent city, not part of any county",
-              "It has no government",
-              "It governs the entire state",
+              "It is the state capital of Maryland",
+              "It is an independent city, in no county",
+              "It operates without any local government",
+              "It governs the entire state alone",
             ],
             correctIndex: 1,
             explanation:
@@ -377,10 +377,10 @@ Constitutional **amendments** are proposed by the General Assembly (by a **three
           {
             prompt: "Why does this course tell you to VERIFY Maryland's court name and budget details?",
             options: [
-              "Because Maryland has no government website",
-              "Because the top court was renamed in 2022 and budget-flexibility rules have been adjusted: confirm at [mdcourts.gov](https://www.mdcourts.gov/) / [mgaleg.maryland.gov](https://mgaleg.maryland.gov/)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Maryland has no official government website",
+              "Because the court's name and budget rules changed",
+              "Because only the U.S. Congress can set state law",
+              "Because all Maryland voting is kept fully secret",
             ],
             correctIndex: 1,
             explanation:

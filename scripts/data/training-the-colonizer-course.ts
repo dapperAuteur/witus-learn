@@ -128,10 +128,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "What is the central thesis of this course?",
             options: [
-              "Enslaved and colonized people carried expertise their enslavers often lacked, and it was taken uncredited and uncompensated to build colonial economies",
-              "Europeans taught enslaved people all the skills used on plantations",
-              "Africans invented every important technology in world history",
-              "Slavery had no effect on how colonial economies were built",
+              "Enslaved people carried expertise their enslavers lacked, taken uncredited",
+              "Europeans taught enslaved people every farming skill used on plantations",
+              "Africans invented every important technology in all of world history",
+              "Slavery had almost no real effect on how colonial economies were built",
             ],
             correctIndex: 0,
             explanation:
@@ -141,10 +141,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "The course warns against two opposite traps. What are they?",
             options: [
-              "Overcounting and undercounting the enslaved population",
-              "Erasure (Europeans built everything) and romantic overcorrection (uncited claims Africans invented everything)",
-              "Citing too many sources and citing too few",
-              "Focusing on farming and ignoring building",
+              "Overcounting and undercounting the total enslaved population in records",
+              "Erasure (Europeans built everything) and uncited romantic overcorrection",
+              "Citing far too many primary sources versus citing far too few of them",
+              "Focusing only on rice farming and ignoring building and all metalwork",
             ],
             correctIndex: 1,
             explanation:
@@ -167,10 +167,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "Why does the course say being indispensable did not make an enslaved expert free?",
             options: [
-              "Because enslaved experts were always freed within a year",
-              "Because the value of the knowledge went to the enslaver while the knower remained property",
-              "Because the knowledge was worthless",
-              "Because enslaved people refused payment",
+              "Because enslaved experts were always legally freed within a single year",
+              "Because the value went to the enslaver while its holder stayed property",
+              "Because the practical knowledge itself was worthless to the owners",
+              "Because enslaved people commonly refused any payment they were offered",
             ],
             correctIndex: 1,
             explanation:
@@ -180,10 +180,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "Why was rice a striking example to open with?",
             options: [
-              "Rice was a traditional English crop the planters knew well",
-              "Rice was never actually grown in South Carolina",
-              "Rice was not an English crop, and many enslaved Africans came from a West African region where rice had been farmed for centuries",
-              "Rice required no special knowledge to grow",
+              "Rice was a traditional English staple crop the Carolina planters already knew well",
+              "Rice was never actually grown anywhere in the colonial South Carolina Lowcountry",
+              "Rice was not an English crop, but enslaved Africans knew it from West Africa's Rice Coast",
+              "Rice required no special skill or knowledge to grow in the flooded coastal fields",
             ],
             correctIndex: 2,
             explanation:
@@ -193,10 +193,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "What is the core problem with the written record from slavery?",
             options: [
-              "There are no written records at all from the period",
+              "There are no surviving written records at all from the period",
               "Almost all of it was written by the enslavers, not the enslaved",
-              "It was all written in West African languages",
-              "It was destroyed in the Civil War",
+              "It was all written down in various West African languages",
+              "It was mostly destroyed during the American Civil War fighting",
             ],
             correctIndex: 1,
             explanation:
@@ -206,10 +206,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "How does a runaway advertisement become evidence of skill?",
             options: [
-              "It was written to praise the enslaved person",
-              "It describes the escapee's trade (sawyer, pilot, indigo-maker) to help recapture them, so it credibly records real skill",
-              "It was written by the enslaved person",
-              "It listed only physical descriptions, never skills",
+              "It was written mainly to praise and honor the enslaved person's loyalty",
+              "It names the escapee's trade (sawyer, pilot, indigo-maker) to aid recapture",
+              "It was written by the enslaved person to record their own daring escape",
+              "It listed only physical descriptions of height, age, weight, and scars",
             ],
             correctIndex: 1,
             explanation:
@@ -219,10 +219,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "What did Daniel Littlefield's study of the Carolina slave trade find about planter preferences?",
             options: [
-              "Planters had no regional preferences at all",
-              "Planters preferred captives from regions with no farming tradition",
-              "Planters associated captives from rice-growing regions with rice skill and paid accordingly",
-              "Planters only bought people born in the colonies",
+              "Planters showed no regional preferences at all when buying new captives",
+              "Planters preferred captives from regions with no farming tradition at all",
+              "Planters tied captives from rice-growing regions to rice skill and paid more",
+              "Planters only bought enslaved people who were already born in the colonies",
             ],
             correctIndex: 2,
             explanation:
@@ -232,10 +232,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "The coiled sweetgrass baskets of the South Carolina Lowcountry are an example of what kind of evidence?",
             options: [
-              "Written testimony",
+              "Written testimony from the enslaved basket-makers themselves",
               "Material culture carrying a technique across the Atlantic",
-              "A modern invention with no African link",
-              "A European craft taught to enslaved people",
+              "A modern craft invention with no real African link at all",
+              "A European craft the planters taught to enslaved people",
             ],
             correctIndex: 1,
             explanation:
@@ -245,10 +245,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "What is the key warning the course attaches to every West-Africa-to-Americas parallel?",
             options: [
-              "A parallel is automatically proof of transfer",
-              "Parallels are always coincidences",
-              "A parallel is evidence but not proof; the technique might also be European, Native American, or locally developed",
-              "Parallels can never be studied by historians",
+              "A parallel by itself is automatically firm proof of a knowledge transfer",
+              "Parallels across the Atlantic are always nothing more than coincidences",
+              "A parallel is evidence, not proof; a technique might also be European or Native",
+              "Parallels can never be studied or tested by careful working historians",
             ],
             correctIndex: 2,
             explanation:
@@ -258,10 +258,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "What does it mean that historians 'triangulate' this history?",
             options: [
-              "They rely on a single decisive document",
-              "They combine several kinds of evidence that point the same way, since no one source proves a knowledge transfer",
-              "They measure the angles of plantation fields",
-              "They only use oral history",
+              "They rely on one single decisive document to prove each transfer",
+              "They combine several kinds of evidence that all point the same way",
+              "They carefully measure the angles of the flooded plantation fields",
+              "They rely only on recorded oral history from the enslaved people",
             ],
             correctIndex: 1,
             explanation:
@@ -271,10 +271,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "Which best captures the course's stance on contested scholarly claims?",
             options: [
-              "Always pick the most dramatic claim",
-              "Teach the debate, name the sides, and do not declare a winner for the learner",
-              "Ignore any claim that scholars dispute",
-              "Treat all disputed claims as false",
+              "Always pick the single most dramatic claim available for the learner",
+              "Teach the debate, name both sides, and let the learner weigh it fairly",
+              "Ignore any claim that scholars still actively dispute among themselves",
+              "Treat all disputed claims as simply false and unworthy of teaching",
             ],
             correctIndex: 1,
             explanation:
@@ -284,10 +284,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "Which two later courses on this platform continue the story of Black labor beyond this course?",
             options: [
-              "The AI Literacy and Cybersecurity courses",
-              "The Tennis and Golf courses",
+              "The AI Literacy and the Cybersecurity courses",
+              "The Tennis, Golf, and Pickleball racket courses",
               "The History of Unions and Great Migration courses",
-              "The Civics and Voting courses",
+              "The Civics and the Voting Rights survey courses",
             ],
             correctIndex: 2,
             explanation:
@@ -297,10 +297,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "Why does the course say the romantic overcorrection 'insults the record'?",
             options: [
-              "Because the record is too weak to defend",
-              "Because the documented record is already strong and does not need uncited inflation",
-              "Because Africans made no real contributions",
-              "Because historians dislike praise",
+              "Because the surviving record is far too weak to defend on its own",
+              "Because the documented record is strong without uncited inflation",
+              "Because enslaved Africans made no real technical contributions",
+              "Because professional historians generally dislike any kind of praise",
             ],
             correctIndex: 1,
             explanation:
@@ -310,10 +310,10 @@ The answer is that historians triangulate. No single source proves a transfer; a
           {
             prompt: "In this course, what is the difference between calling something 'documented' versus 'plausible'?",
             options: [
-              "There is no difference; the course uses them interchangeably",
-              "'Documented' means the record shows it; 'plausible' means it fits but is not proven, and the course always says which it is showing",
-              "'Plausible' is stronger than 'documented'",
-              "Both mean the claim is certainly true",
+              "There is no real difference; the course uses them interchangeably",
+              "'Documented' means the record shows it; 'plausible' just fits",
+              "'Plausible' is always a stronger claim than 'documented' ones",
+              "Both simply mean the underlying claim is always certainly true",
             ],
             correctIndex: 1,
             explanation:
@@ -476,10 +476,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "What is Oryza glaberrima?",
             options: [
-              "The Asian rice species grown worldwide",
-              "African rice, a species West Africans domesticated independently of Asian rice",
-              "A type of fanner basket",
-              "A South Carolina plantation",
+              "The main Asian rice species that is now grown worldwide",
+              "African rice, domesticated by West Africans on their own",
+              "A type of woven fanner basket used to winnow the rice",
+              "A large South Carolina tidal rice plantation on the coast",
             ],
             correctIndex: 1,
             explanation:
@@ -489,10 +489,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "Why was the coast from Senegal to Sierra Leone and Liberia called the Rice Coast?",
             options: [
-              "Europeans planted rice there in the 1800s",
-              "It was the only place rice grew in the world",
-              "West Africans there had long grown rice across upland, inland-swamp, and tidal systems",
-              "The name was a European mistake with no basis",
+              "Portuguese and English planted rice there back in the early 1800s",
+              "It was the only place on earth where rice would grow at all",
+              "West Africans there grew rice in upland, swamp, and tidal systems",
+              "The name was just a European mapmaker's mistake with no real basis",
             ],
             correctIndex: 2,
             explanation:
@@ -502,10 +502,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "Which West African rice system was the most technically demanding?",
             options: [
-              "Upland rain-fed rice",
-              "Inland swamp rice",
-              "Tidal mangrove rice, which required embankments and sluice gates to manage salt and fresh water",
-              "Container gardening",
+              "Upland rain-fed rice, grown on dry hillsides by rainfall alone",
+              "Inland swamp rice, planted in low freshwater basins by hand",
+              "Tidal mangrove rice, needing dikes and sluice gates for salt",
+              "Container gardening of rice seedlings in small clay pots",
             ],
             correctIndex: 2,
             explanation:
@@ -515,10 +515,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "The mortar and pestle used to hull rice, and the fanner basket used to winnow it, carried what additional significance in West Africa?",
             options: [
-              "They were used only by European overseers",
-              "This processing was largely women's work and women's knowledge",
-              "They were purely decorative",
-              "They had no connection to rice",
+              "They were used only by the European overseers themselves",
+              "This processing was largely women's work and knowledge",
+              "They were kept purely as decorative household objects",
+              "They had no real connection to rice farming at all",
             ],
             correctIndex: 1,
             explanation:
@@ -536,10 +536,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "What is the core of Judith Carney's Black Rice thesis (2001)?",
             options: [
-              "That Europeans taught Africans to grow rice",
-              "That rice was never grown in South Carolina",
-              "That an entire African knowledge system (technology, agronomy, and processing) crossed the Atlantic in enslaved people's memories",
-              "That only the crop, and no knowledge, crossed the Atlantic",
+              "That European planters taught the Africans how to grow rice here",
+              "That rice was never actually grown in colonial South Carolina at all",
+              "That a whole African knowledge system crossed the Atlantic in memory",
+              "That only the crop itself, and no knowledge, crossed the Atlantic",
             ],
             correctIndex: 2,
             explanation:
@@ -549,10 +549,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "What did Daniel Littlefield's Rice and Slaves (1981) show about Carolina planters?",
             options: [
-              "They had no preferences among captives",
-              "They preferred captives from regions with no farming",
-              "They associated captives from the Rice Coast with rice skill and paid accordingly",
-              "They grew no rice at all",
+              "They showed no clear preferences at all among the many captives",
+              "They preferred captives from inland regions with no rice farming",
+              "They tied Rice Coast captives to rice skill and paid more for them",
+              "They actually grew no rice at all on their Carolina plantations",
             ],
             correctIndex: 2,
             explanation:
@@ -562,10 +562,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "Who challenged the Black Rice thesis in a 2007 American Historical Review article?",
             options: [
-              "Judith Carney and Peter Wood",
+              "Judith Carney, Peter Wood, and Daniel Littlefield",
               "David Eltis, Philip Morgan, and David Richardson",
-              "Walter Hawthorne and S. Max Edelson",
-              "No one; the thesis was never challenged",
+              "Walter Hawthorne, S. Max Edelson, and Ira Berlin",
+              "No one; the thesis was never seriously challenged",
             ],
             correctIndex: 1,
             explanation:
@@ -575,10 +575,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "What did the challengers mean by 'presence is not the same as transfer'?",
             options: [
-              "That no Africans were present in Carolina",
-              "That people from rice regions being present does not by itself prove a whole knowledge system was adopted",
-              "That transfer always happens automatically",
-              "That planters were absent from their plantations",
+              "That no Africans at all were ever present in colonial Carolina",
+              "That rice-region captives being present does not prove adoption",
+              "That knowledge transfer always happens quickly and automatically",
+              "That the planters were always absent from their own plantations",
             ],
             correctIndex: 1,
             explanation:
@@ -588,10 +588,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "The 2010 AHR Exchange 'The Question of Black Rice' is an example of what?",
             options: [
-              "A single historian declaring the final answer",
-              "A healthy scholarly argument where several historians publicly test and reframe a claim",
-              "Proof that the thesis was a hoax",
-              "A court trial",
+              "A single historian finally declaring the one true final answer",
+              "A scholarly argument where historians test and reframe a claim",
+              "Clear public proof that the Black Rice thesis was a hoax",
+              "A formal court trial with a judge deciding all the facts",
             ],
             correctIndex: 1,
             explanation:
@@ -601,10 +601,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "What did Walter Hawthorne mean by reframing the story from 'black rice' to 'brown'?",
             options: [
-              "That rice turned brown in Carolina",
-              "That the African role was a creolized, co-produced knowledge, not a single one-way transfer and not a European achievement",
-              "That Africans played no part",
-              "That Europeans invented rice farming",
+              "That the rice literally turned brown when grown in Carolina",
+              "That the African role was creolized and co-produced, not one-way",
+              "That enslaved Africans played no real part in the rice work",
+              "That European planters alone invented all Carolina rice farming",
             ],
             correctIndex: 1,
             explanation:
@@ -614,10 +614,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "Which statement about African rice knowledge is NOT in dispute among the historians in the debate?",
             options: [
-              "That a whole knowledge system transferred perfectly intact",
-              "That West Africans had deep, old rice expertise and enslaved people from rice regions were in Carolina",
-              "That Africans single-handedly ran the entire economy with no coercion",
-              "That planters invented Carolina rice with no African input",
+              "That a whole knowledge system transferred perfectly and fully intact",
+              "That West Africans had rice skill and enslaved people reached Carolina",
+              "That Africans single-handedly ran the whole economy with no coercion",
+              "That the planters invented Carolina rice with no African input at all",
             ],
             correctIndex: 1,
             explanation:
@@ -627,10 +627,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "How does teaching the Black Rice debate refute the old erasure story?",
             options: [
-              "It proves Europeans invented Carolina rice",
-              "It shows no serious historian in the debate believes planters did it alone with Africans as mere muscle",
-              "It ignores African expertise",
-              "It declares Carney the winner",
+              "It plainly proves Europeans alone invented all Carolina rice farming",
+              "It shows no serious historian thinks planters did it with mere muscle",
+              "It simply ignores the real African rice expertise almost entirely",
+              "It simply declares Judith Carney the outright winner of the debate",
             ],
             correctIndex: 1,
             explanation:
@@ -640,10 +640,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "Why does the course refuse to let the Black Rice debate become the whole point?",
             options: [
-              "Because the debate is boring",
-              "Because whichever way the evidence reads, the people who carried the expertise were still enslaved, uncredited, and unpaid",
-              "Because the debate was settled long ago",
-              "Because the experts were all freed",
+              "Because the whole scholarly debate is honestly a bit dull and boring",
+              "Because either way, those who carried it stayed enslaved and unpaid",
+              "Because the historical debate was firmly settled very long ago",
+              "Because the enslaved rice experts were all eventually set free",
             ],
             correctIndex: 1,
             explanation:
@@ -653,10 +653,10 @@ One thing the debate does **not** touch, and the reason this course refuses to l
           {
             prompt: "What skill is the Black Rice lesson really teaching?",
             options: [
-              "How to grow rice",
-              "How to separate what is settled from what is genuinely contested, and hold the difference honestly",
-              "How to win an argument by picking the loudest side",
-              "How to ignore historians who disagree",
+              "How to grow good rice in flooded coastal tidal fields",
+              "How to separate the settled from the genuinely contested",
+              "How to win an argument by simply picking the loudest side",
+              "How to ignore every historian who happens to disagree",
             ],
             correctIndex: 1,
             explanation:
@@ -750,10 +750,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "Why was turning the indigo plant into dye considered expert work?",
             options: [
-              "The plant was hard to grow but the dye made itself",
-              "It is an unforgiving fermentation where misjudging the timing, temperature, or beating ruins the whole batch",
-              "It required no special skill",
-              "The dye was made in a single easy step",
+              "The plant was hard to grow but the dye simply made itself",
+              "It is an unforgiving fermentation where timing ruins a batch",
+              "It required no special skill beyond ordinary field labor",
+              "The dye was made in a single quick and easy boiling step",
             ],
             correctIndex: 1,
             explanation:
@@ -763,10 +763,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "What was indigo's role in the colonial South Carolina economy?",
             options: [
-              "A worthless weed",
-              "The colony's second great money crop after rice, producing a valuable blue dye for European textiles",
-              "A food staple with no export value",
-              "A crop grown only in Africa",
+              "A completely worthless roadside weed no one would buy",
+              "The colony's second money crop after rice, a valuable dye",
+              "A common food staple with no real export value at all",
+              "A crop that was only ever grown in West Africa itself",
             ],
             correctIndex: 1,
             explanation:
@@ -784,10 +784,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "According to Andrea Feeser (2013), what does the popular Eliza Lucas Pinckney story leave out?",
             options: [
-              "That indigo was never actually grown in South Carolina",
-              "That many enslaved people came from West African and Caribbean indigo regions and their knowledge and labor were central to the crop",
-              "That Europeans invented indigo dyeing",
-              "That indigo required no labor",
+              "That indigo was actually never once grown in South Carolina",
+              "That enslaved African and Caribbean indigo knowledge was key",
+              "That Europeans alone invented all indigo dyeing on their own",
+              "That growing indigo required almost no skilled labor at all",
             ],
             correctIndex: 1,
             explanation:
@@ -797,10 +797,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "Indigo dyeing in West Africa was:",
             options: [
-              "Unknown until Europeans introduced it",
-              "An old and sophisticated tradition, including the Yoruba and the centuries-old dye pits of Kano",
-              "Practiced only after the slave trade ended",
-              "A modern invention",
+              "Unknown there until European traders first introduced it",
+              "An old, sophisticated tradition, like the Kano dye pits",
+              "Practiced only long after the Atlantic slave trade ended",
+              "A fairly modern nineteenth-century European invention",
             ],
             correctIndex: 1,
             explanation:
@@ -810,9 +810,9 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "Why does the course NOT claim a clean, total transfer of indigo knowledge from Africa to Carolina?",
             options: [
-              "Because West Africans knew nothing about indigo",
-              "Because making dye cakes for export differs from dyeing cloth, and the exact line of transmission is not fully documented",
-              "Because Eliza Lucas Pinckney invented indigo",
+              "Because West Africans knew almost nothing at all about indigo",
+              "Because making dye cakes differs from dyeing cloth, undocumented",
+              "Because Eliza Lucas Pinckney personally invented indigo dyeing",
               "Because there is no evidence enslaved people worked with indigo",
             ],
             correctIndex: 1,
@@ -822,7 +822,12 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           },
           {
             prompt: "What was colonial Carolina's first big export, before rice took over?",
-            options: ["Cotton", "Cattle, hides, and salted beef", "Tobacco", "Sugar"],
+            options: [
+              "Baled upland long cotton fiber",
+              "Cattle, hides, and salted beef",
+              "Cured whole leaf golden tobacco",
+              "Refined white barreled cane sugar",
+            ],
             correctIndex: 1,
             explanation:
               "Cattle products, much of it shipped to feed the Caribbean sugar islands, came first, and enslaved Africans often managed the herds.",
@@ -831,10 +836,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "How did the Carolina 'cow pen' system differ from English husbandry?",
             options: [
-              "It fenced cattle into small enclosed fields",
-              "It let cattle range freely in the woods, penned them at night, and burned pasture seasonally, resembling West African open-range herding",
-              "It kept no cattle at all",
-              "It used only European herding dogs",
+              "It fenced the cattle into small tightly enclosed English fields",
+              "It let cattle range freely, penned them at night, burned pasture",
+              "It kept no cattle at all, relying only on hogs and sheep instead",
+              "It relied only on trained European herding dogs to move cattle",
             ],
             correctIndex: 1,
             explanation:
@@ -844,10 +849,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "What did Peter Wood suggest about the word 'cowboy'?",
             options: [
-              "That it is definitely of English origin",
-              "That it may have found early use in South Carolina, tied to enslaved African herders, though he offered this as a suggestion",
-              "That it was invented in Hollywood",
-              "That it has no connection to Carolina",
+              "That it is definitely of plain and pure English origin",
+              "That it may have arisen in Carolina among enslaved herders",
+              "That it was invented in twentieth-century Hollywood films",
+              "That it has no real connection at all to colonial Carolina",
             ],
             correctIndex: 1,
             explanation:
@@ -857,10 +862,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "What did the geographer Terry Jordan (1993) argue about the origins of American cattle ranching?",
             options: [
-              "That it was purely West African",
-              "That it was purely English",
-              "That it had several braided roots, West African, Iberian, and British Isles, not a single source",
-              "That cattle ranching had no history worth studying",
+              "That it was purely and entirely West African in its origins",
+              "That it was purely and entirely English in its true origins",
+              "That it had braided West African, Iberian, and British roots",
+              "That cattle ranching had no history at all worth studying",
             ],
             correctIndex: 2,
             explanation:
@@ -870,10 +875,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "Why does the course hedge the cattle claim instead of stating 'Africans invented the cowboy'?",
             options: [
-              "Because enslaved Africans did no cattle work",
-              "Because the claim is thinner and contested, and flattening it into a slogan is the romantic overcorrection the course refuses",
-              "Because Wood never studied cattle",
-              "Because the cowboy is unimportant",
+              "Because the enslaved Africans did no real cattle work at all",
+              "Because the claim is thinner, contested, and a slogan overstates",
+              "Because Wood never actually studied the Carolina cattle trade",
+              "Because the figure of the cowboy is quite unimportant here",
             ],
             correctIndex: 1,
             explanation:
@@ -883,10 +888,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "What is the narrower, honest, cited version of the cattle claim?",
             options: [
-              "Black people invented the cowboy, full stop",
-              "Enslaved Africans did much of the skilled cattle work in early Carolina, their methods resembled West African open-range herding, and one historian sees partly African roots for the cowboy",
-              "Europeans did all the herding",
-              "Cattle were unimportant to Carolina",
+              "Black people alone invented the whole American cowboy, full stop",
+              "Enslaved Africans did skilled cattle work like West African herding",
+              "European settlers alone did all early Carolina cattle herding",
+              "Cattle and herding were entirely unimportant to colonial Carolina",
             ],
             correctIndex: 1,
             explanation:
@@ -896,10 +901,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "What common thread links the indigo and cattle lessons to the rice lesson?",
             options: [
-              "All three prove Europeans did the real work",
-              "All three show credited names and slogans sitting atop uncredited enslaved expertise, taught with careful hedging where the record is thin",
-              "All three are fully settled with no debate",
-              "None of them involve enslaved people",
+              "All three prove Europeans did the real skilled work themselves",
+              "All three show credited names atop uncredited enslaved skill",
+              "All three are fully settled now with no remaining debate",
+              "None of them really involve enslaved people at all in any way",
             ],
             correctIndex: 1,
             explanation:
@@ -909,10 +914,10 @@ So the honest statement is narrower than the exciting one, and still worth sayin
           {
             prompt: "In the indigo trade, who kept the wealth the dye produced?",
             options: [
-              "The enslaved workers who knew the process",
-              "The planters and merchants, while the enslaved experts remained property",
-              "The dye was given away for free",
-              "The Caribbean expert alone",
+              "The enslaved dye workers who actually knew the process",
+              "The planters and merchants, while the experts stayed owned",
+              "The valuable blue dye was mostly given away for free",
+              "The single hired Caribbean indigo expert kept it alone",
             ],
             correctIndex: 1,
             explanation:
@@ -999,10 +1004,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "Beyond heavy hauling, what skilled building trades did enslaved people commonly practice?",
             options: [
-              "Only field labor, never a trade",
-              "Carpentry, sawing, brickmaking and laying, masonry, plastering, and roofing",
-              "Only office work",
-              "None; all building was done by Europeans",
+              "Only heavy field labor, never any skilled trade at all",
+              "Carpentry, sawing, brickmaking, masonry, and plastering",
+              "Only indoor office work and simple household errands",
+              "None; all building work was done by Europeans alone",
             ],
             correctIndex: 1,
             explanation:
@@ -1013,9 +1018,9 @@ So the honest claim credits the documented skill without inventing the transfer.
             prompt: "What famous federal buildings were built partly with enslaved labor?",
             options: [
               "The United States Capitol and the White House",
-              "The Eiffel Tower",
-              "Buckingham Palace",
-              "No government buildings used enslaved labor",
+              "The Eiffel Tower in central Paris, France",
+              "London's royal Buckingham Palace in England",
+              "No government buildings ever used enslaved labor",
             ],
             correctIndex: 0,
             explanation:
@@ -1025,10 +1030,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "What is the key distinction the course draws about enslaved people and famous buildings?",
             options: [
-              "Between labor and craft, which are the same thing",
-              "Between documented labor and skilled craft (yes) and documented design (usually not, credited to white architects)",
-              "Between real and imaginary buildings",
-              "Between cheap and expensive materials",
+              "Between labor and craft, which are really the same thing",
+              "Between documented craft (yes) and design (usually not)",
+              "Between totally real buildings and purely imaginary ones",
+              "Between cheap and expensive imported building materials",
             ],
             correctIndex: 1,
             explanation:
@@ -1038,10 +1043,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "Why does the course refuse to attribute a famous building's DESIGN to a named enslaved person without a source?",
             options: [
-              "Because enslaved people had no skills",
-              "Because doing so would be a romantic overcorrection unsupported by the record, when the documented truth is already remarkable",
-              "Because design does not matter",
-              "Because no records survive at all",
+              "Because the enslaved people had no real design skills at all",
+              "Because it would be a romantic overcorrection with no source",
+              "Because a building's design does not really matter at all",
+              "Because absolutely no building records survive from that time",
             ],
             correctIndex: 1,
             explanation:
@@ -1051,10 +1056,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "Who was Horace King?",
             options: [
-              "A European architect",
-              "A man born enslaved who became one of the most respected bridge builders in the Deep South",
-              "A cotton planter",
-              "A fictional character",
+              "A trained white European architect from across the ocean",
+              "A man born enslaved who became a respected bridge builder",
+              "A wealthy Deep South cotton and rice plantation planter",
+              "A wholly fictional character invented for the whole course",
             ],
             correctIndex: 1,
             explanation:
@@ -1064,10 +1069,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "What does Horace King's life show about skill and freedom?",
             options: [
-              "That being highly skilled quickly earned freedom",
-              "That his skill did not free him: he built major bridges while enslaved and was freed only in 1846 by a special act of the Alabama legislature",
-              "That he was never actually enslaved",
-              "That skill and freedom are unrelated to slavery",
+              "That being very highly skilled soon earned him full freedom",
+              "That his skill did not free him; he was freed only in 1846",
+              "That King was in fact never once actually enslaved at all",
+              "That skill and freedom are entirely unrelated to slavery",
             ],
             correctIndex: 1,
             explanation:
@@ -1077,10 +1082,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "What kind of bridges is Horace King known for building?",
             options: [
-              "Steel suspension bridges",
+              "Steel cable suspension bridges",
               "Town lattice truss covered bridges",
-              "Concrete highway overpasses",
-              "Rope footbridges",
+              "Concrete highway overpass spans",
+              "Woven rope and plank footbridges",
             ],
             correctIndex: 1,
             explanation:
@@ -1090,10 +1095,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "What did Charles Dew's Bond of Iron (1994) document?",
             options: [
-              "That enslaved people did no ironwork",
-              "Skilled enslaved forgemen, founders, colliers, and blacksmiths who ran Buffalo Forge in Virginia",
-              "That all ironworkers were European",
-              "The invention of steel",
+              "That enslaved people did no real ironwork of any kind",
+              "Skilled enslaved forgemen and smiths who ran Buffalo Forge",
+              "That all of the skilled ironworkers were European men",
+              "The first invention of modern industrial steel casting",
             ],
             correctIndex: 1,
             explanation:
@@ -1103,10 +1108,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "What decorative ironwork are cities like Charleston and New Orleans known for, partly made by enslaved smiths?",
             options: [
-              "Plastic fencing",
+              "Molded plastic garden fencing panels",
               "Wrought-iron gates, railings, and balconies",
-              "Glass windows",
-              "Brick chimneys",
+              "Large decorative stained glass windows",
+              "Tall red clay brick chimneys and hearths",
             ],
             correctIndex: 1,
             explanation:
@@ -1116,10 +1121,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "What is the 'myth to retire' in the ironwork lesson?",
             options: [
-              "That West Africa had ironworking at all",
-              "That African iron-smelting technology was transferred to and used on American plantations",
-              "That enslaved people worked iron",
-              "That iron was important to the plantation economy",
+              "That West Africa actually had any ironworking skill at all",
+              "That African iron-smelting was used on American plantations",
+              "That enslaved people ever actually worked with any iron",
+              "That iron was really important to the plantation economy",
             ],
             correctIndex: 1,
             explanation:
@@ -1130,9 +1135,9 @@ So the honest claim credits the documented skill without inventing the transfer.
             prompt: "Which two things ARE true, even as the 'smelting transfer' claim is not supported?",
             options: [
               "West Africa had no metallurgy, and enslaved smiths were unskilled",
-              "West Africa had ancient iron-smelting, and enslaved American smiths were expert at forging and casting",
+              "West Africa had ancient smelting, and enslaved smiths forged expertly",
               "Europeans invented all ironwork, and Africans learned it from them",
-              "Iron was unimportant, and smiths were rare",
+              "Iron was quite unimportant, and skilled smiths were fairly rare",
             ],
             correctIndex: 1,
             explanation:
@@ -1142,10 +1147,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "What did enslaved American ironworkers mostly do with iron, according to the record?",
             options: [
-              "Smelt it from ore in West African bloomery furnaces",
-              "Forge and cast iron that came from European-style furnaces and imports",
-              "Only mine the ore",
-              "Nothing; they did not work iron",
+              "Smelt it from raw ore in West African bloomery furnaces",
+              "Forge and cast iron from European-style furnaces and imports",
+              "Only dig and mine the raw iron ore out of the deep ground",
+              "Nothing at all; they never once actually worked any iron",
             ],
             correctIndex: 1,
             explanation:
@@ -1155,10 +1160,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "What thinking skill does retiring the iron-smelting myth reinforce?",
             options: [
-              "Believing the most exciting version of a story",
-              "Keeping what is documented, dropping what is not, and not letting a good story outrun its evidence",
-              "Ignoring African history",
-              "Accepting any claim about Africa",
+              "Always believing the most exciting version of a story",
+              "Keeping what is documented and dropping what is not",
+              "Simply ignoring all African history entirely and always",
+              "Accepting just any exciting claim at all about Africa",
             ],
             correctIndex: 1,
             explanation:
@@ -1168,10 +1173,10 @@ So the honest claim credits the documented skill without inventing the transfer.
           {
             prompt: "How do the building and ironwork lessons connect to the course's through-line?",
             options: [
-              "They show enslaved skill made owners and nations wealthy while the skilled workers stayed unfree and uncredited",
-              "They show enslaved people were paid well for their crafts",
-              "They show only Europeans had building skills",
-              "They show skill always led to freedom",
+              "They show enslaved skill enriched owners while workers stayed unfree",
+              "They show enslaved people were paid well for their skilled crafts",
+              "They show that only Europeans ever really had any building skills",
+              "They show that great skill almost always led straight to freedom",
             ],
             correctIndex: 0,
             explanation:
@@ -1262,10 +1267,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "Who was Onesimus?",
             options: [
-              "A Boston doctor",
-              "An enslaved African man in Cotton Mather's household who taught Mather about inoculation",
-              "A European scientist",
-              "A fictional figure",
+              "A well-known Boston physician and Puritan minister",
+              "An enslaved African man in Cotton Mather's household",
+              "A famous European scientist and physician of the day",
+              "A purely fictional figure invented by later writers",
             ],
             correctIndex: 1,
             explanation:
@@ -1275,10 +1280,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "What is variolation (inoculation), as Onesimus described it?",
             options: [
-              "Drinking a herbal tea to prevent disease",
-              "Deliberately introducing a small amount of smallpox matter into a cut, producing a mild case and lifelong immunity",
-              "Avoiding all contact with the sick",
-              "A European invention of the 1800s",
+              "Drinking a special herbal tea to prevent the disease",
+              "Putting a small amount of smallpox matter into a cut",
+              "Carefully avoiding all direct contact with the sick",
+              "A much later European invention of the early 1800s",
             ],
             correctIndex: 1,
             explanation:
@@ -1288,10 +1293,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "How did Cotton Mather record learning of the practice?",
             options: [
-              "He never wrote it down",
-              "In a 1716 letter to the Royal Society, quoting Onesimus that it was 'often used among the Guramantese'",
-              "In a novel",
-              "In a painting",
+              "He never actually bothered to write any of it down",
+              "In a 1716 letter to the Royal Society, quoting Onesimus",
+              "In a popular Boston novel he published years later",
+              "In a large oil painting he commissioned from an artist",
             ],
             correctIndex: 1,
             explanation:
@@ -1301,10 +1306,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "Why does the course say Onesimus's exact origin is uncertain?",
             options: [
-              "Because he was not really African",
-              "Because 'Guramantese' is Mather's term and scholars read it different ways, so the record does not pin down a precise origin",
-              "Because origins never matter",
-              "Because Mather lied about everything",
+              "Because he was clearly not really African by birth at all",
+              "Because 'Guramantese' is Mather's own term, read many ways",
+              "Because a person's origins never really matter to anyone",
+              "Because Cotton Mather simply lied about nearly everything",
             ],
             correctIndex: 1,
             explanation:
@@ -1314,10 +1319,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "What were the results of Dr. Zabdiel Boylston's 1721 Boston inoculations?",
             options: [
-              "Everyone he inoculated died",
-              "Of 247 people inoculated, about 2 percent died, versus roughly 14 percent among those who caught smallpox naturally",
-              "The results were never recorded",
-              "Inoculation made the epidemic worse",
+              "Every single person that he inoculated soon died anyway",
+              "Of 247 inoculated, about 2 percent died, not 14 percent",
+              "The trial results were somehow never recorded at all",
+              "Inoculation actually made the Boston epidemic much worse",
             ],
             correctIndex: 1,
             explanation:
@@ -1327,10 +1332,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "According to Margot Minardi (2004), the 1721 inoculation controversy was partly an argument about what?",
             options: [
-              "Taxes",
-              "Race: whether medical knowledge traced to an enslaved African could be trusted",
-              "The weather",
-              "Shipping routes",
+              "New local property and shipping taxes on the town",
+              "Race: could an enslaved African's knowledge be trusted",
+              "The unusually cold and harsh winter weather that year",
+              "The main Atlantic trade and shipping routes to Europe",
             ],
             correctIndex: 1,
             explanation:
@@ -1340,10 +1345,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "What did Onesimus's life-saving knowledge win for him personally?",
             options: [
-              "Immediate freedom and wealth",
-              "Almost nothing: he stayed enslaved, was described with condescension, and only arranged a partial, conditional freedom",
-              "A statue in Boston",
-              "A seat in the legislature",
+              "Immediate freedom and considerable personal wealth",
+              "Almost nothing: he stayed enslaved, only partly freed",
+              "A large bronze statue of him placed in downtown Boston",
+              "A permanent seat in the Massachusetts legislature",
             ],
             correctIndex: 1,
             explanation:
@@ -1353,10 +1358,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "What did Sharla Fett's Working Cures (2002) document?",
             options: [
-              "That enslaved people did no medical work",
-              "That enslaved healers, herb doctors, and midwives did much of the doctoring on plantations for both Black and white households",
+              "That enslaved people did no real medical work of any kind",
+              "That enslaved healers and midwives did much of the doctoring",
               "That all plantation medicine was done by European doctors",
-              "That healing was illegal",
+              "That healing by the enslaved was strictly illegal by law",
             ],
             correctIndex: 1,
             explanation:
@@ -1367,9 +1372,9 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
             prompt: "Which group did Fett highlight as central to plantation health culture?",
             options: [
               "Enslaved women, especially as midwives and medicine-makers",
-              "European ship captains",
-              "Only enslaved men",
-              "Colonial governors",
+              "Visiting European ship captains and merchant traders",
+              "Only enslaved men, never the enslaved women at all",
+              "The colonial governors and their appointed officials",
             ],
             correctIndex: 0,
             explanation:
@@ -1379,10 +1384,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "What happened to the enslaved South Carolina healer Caesar in 1750?",
             options: [
-              "He was executed",
-              "The colonial assembly freed him and paid him an annuity in exchange for making his poison-and-snakebite antidote public",
-              "He was sold to another colony",
-              "Nothing is known about him",
+              "He was quickly tried and publicly executed in Charleston",
+              "The assembly freed him and paid for his public antidote",
+              "He was quietly sold away to another southern colony",
+              "Nothing at all is really known about him from records",
             ],
             correctIndex: 1,
             explanation:
@@ -1392,10 +1397,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "Why does the course call Caesar's freedom 'the exception that measures the rule'?",
             options: [
-              "Because his cure did not work",
-              "Because one man was freed for his knowledge while slavery itself continued unchanged, and such rewards were rare precisely because expertise was usually taken for nothing",
-              "Because everyone with medical knowledge was freed",
-              "Because Caesar was never actually enslaved",
+              "Because his famous snakebite cure did not actually work",
+              "Because one man was freed while slavery itself went on",
+              "Because everyone with medical knowledge was quickly freed",
+              "Because Caesar was in fact never actually enslaved at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1405,10 +1410,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "What does Caesar's case show about how white society valued enslaved medical knowledge?",
             options: [
-              "That they thought it was worthless",
-              "That they knew it was valuable, valuable enough for a government to buy and publish it",
-              "That they ignored it entirely",
-              "That only Europeans had useful cures",
+              "That they truly thought it was completely worthless junk",
+              "That they knew it was valuable enough to buy and publish",
+              "That they simply ignored it entirely and completely",
+              "That only the European doctors ever had any useful cures",
             ],
             correctIndex: 1,
             explanation:
@@ -1419,9 +1424,9 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
             prompt: "How do the medicine lessons reinforce the course's central tension?",
             options: [
               "They show enslaved knowledge was always fairly rewarded",
-              "They show life-saving expertise flowed from enslaved people to society while buying the knowers little or no freedom",
-              "They show enslaved people had no medical knowledge",
-              "They show medicine was unrelated to slavery",
+              "They show life-saving skill flowed out but bought no freedom",
+              "They show enslaved people had no real medical knowledge",
+              "They show that medicine was entirely unrelated to slavery",
             ],
             correctIndex: 1,
             explanation:
@@ -1431,10 +1436,10 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
           {
             prompt: "Why is Onesimus's story described as the course's clearest documented case?",
             options: [
-              "Because it rests on Mather's own writing and Boylston's careful published results, not on speculation",
-              "Because there are no records of it",
-              "Because it is a legend with no evidence",
-              "Because it is contested like the Black Rice debate",
+              "Because it rests on Mather's writing and Boylston's results",
+              "Because there are simply no written records of it at all",
+              "Because it is really just a legend with no real evidence",
+              "Because it is contested much like the Black Rice debate",
             ],
             correctIndex: 0,
             explanation:
@@ -1524,10 +1529,10 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           {
             prompt: "The word 'gumbo' comes from what?",
             options: [
-              "A French word for soup",
-              "A West and Central African word for okra (ki ngombo in Bantu languages)",
-              "A Native American word for corn",
-              "An English word for stew",
+              "An old French word for a thick country soup",
+              "A West African word for okra, from ki ngombo",
+              "A Native American word for ground maize corn",
+              "An old plain English word for a meat stew",
             ],
             correctIndex: 1,
             explanation:
@@ -1536,7 +1541,12 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           },
           {
             prompt: "Which of these is a West African crop that crossed into American foodways?",
-            options: ["Potatoes", "Black-eyed peas (the cowpea)", "Apples", "Wheat"],
+            options: [
+              "White potatoes from the Andes",
+              "Black-eyed peas (the cowpea)",
+              "Sweet European orchard apples",
+              "Old World winter wheat grain",
+            ],
             correctIndex: 1,
             explanation:
               "The cowpea (black-eyed pea) was domesticated in West Africa thousands of years ago; okra, sorghum, and sesame (benne) also crossed.",
@@ -1545,10 +1555,10 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           {
             prompt: "Who did most of the cooking in plantation kitchens?",
             options: [
-              "European chefs hired from abroad",
-              "Enslaved cooks, overwhelmingly, who brought and developed the techniques",
-              "The planters themselves",
-              "No one; food was imported ready-made",
+              "Skilled European chefs hired specially from abroad",
+              "Enslaved cooks, who developed most of the techniques",
+              "The wealthy white planters and overseers themselves",
+              "No one; nearly all the food was imported ready-made",
             ],
             correctIndex: 1,
             explanation:
@@ -1558,10 +1568,10 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           {
             prompt: "What have food historians Jessica Harris and Michael Twitty documented?",
             options: [
-              "That Southern food has no African roots",
-              "The culinary genealogy tracing specific dishes from West Africa through slavery to the American table",
-              "That enslaved people did not cook",
-              "That all American food came from Europe",
+              "That Southern food has no real African roots at all",
+              "The culinary trail from Africa to the American table",
+              "That the enslaved people did not do any real cooking",
+              "That all American food came straight over from Europe",
             ],
             correctIndex: 1,
             explanation:
@@ -1571,10 +1581,10 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           {
             prompt: "What is the modern twist on the through-line in the foodways lesson?",
             options: [
-              "The food's Black origins are fully credited today",
-              "The cuisine became celebrated and profitable while its Black origins were long erased, so the expertise is still being separated from its creators",
-              "The food is no longer eaten",
-              "Enslaved cooks were always paid royalties",
+              "The food's Black origins are all fully credited today",
+              "The cuisine grew famous while its Black roots were erased",
+              "The famous old food is simply no longer eaten anywhere",
+              "The enslaved cooks were always paid fair royalties",
             ],
             correctIndex: 1,
             explanation:
@@ -1584,10 +1594,10 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           {
             prompt: "What is Hoppin' John an example of?",
             options: [
-              "A European dessert",
-              "A dish built on the African-rooted technique of cooking rice and beans (cowpeas) together",
-              "A modern fast food",
-              "A crop, not a dish",
+              "A rich baked European dessert eaten after a meal",
+              "A dish of African-style rice and beans cooked together",
+              "A modern American fast food burger and fries meal",
+              "A single raw field crop, not a cooked dish at all",
             ],
             correctIndex: 1,
             explanation:
@@ -1597,10 +1607,10 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           {
             prompt: "According to Kevin Dawson (2018), how did enslaved Africans' water skills compare to Europeans' at the time?",
             options: [
-              "Europeans were the expert swimmers",
-              "Enslaved Africans were often expert swimmers, divers, and canoeists, while many Europeans, even sailors, could not swim",
-              "Neither group could swim",
-              "Water skills did not matter",
+              "Europeans were clearly the more expert and able swimmers",
+              "Enslaved Africans often swam well while many Europeans could not",
+              "Neither group could really swim or handle any boats at all",
+              "Water and swimming skills did not really matter to anyone",
             ],
             correctIndex: 1,
             explanation:
@@ -1609,7 +1619,12 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           },
           {
             prompt: "What skilled water job did enslaved people do that required reading dangerous sandbars and tides?",
-            options: ["Piloting boats and ships through treacherous water", "Building roads", "Weaving baskets", "Growing tobacco"],
+            options: [
+              "Piloting boats and ships through treacherous water",
+              "Building new inland gravel roads for wagons",
+              "Weaving coiled sweetgrass rice storage baskets",
+              "Growing dried tobacco leaf in the upland fields",
+            ],
             correctIndex: 0,
             explanation:
               "A pilot who could bring a vessel safely over the bar held lives and cargo in his hands, a trusted, skilled role.",
@@ -1618,10 +1633,10 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           {
             prompt: "Why were canoes so important in places like the Carolina and Georgia Lowcountry?",
             options: [
-              "They were purely decorative",
-              "Boats did what roads could not, moving people, goods, and messages through marshes, rivers, and coastal waters",
-              "They were never actually used",
-              "They were only used for racing",
+              "They were kept purely as decorative garden ornaments",
+              "Boats did what roads could not, moving people, goods",
+              "They were almost never actually used for much at all",
+              "They were only ever used for weekend sport racing",
             ],
             correctIndex: 1,
             explanation:
@@ -1632,9 +1647,9 @@ But hold the pattern one more time, because it does not break. The pilot who alo
             prompt: "How was aquatic skill sometimes rewarded, and why did enslavers also discourage swimming?",
             options: [
               "It brought instant freedom for all; swimming was encouraged",
-              "It sometimes brought wages, autonomy, or rarely a path to freedom, but enslavers discouraged swimming because a swimmer could escape",
-              "It was never rewarded and never discouraged",
-              "Swimming was required of everyone",
+              "It sometimes brought wages, but enslavers feared escapes",
+              "It was never rewarded and was never once discouraged",
+              "Swimming was strictly required of nearly everyone there",
             ],
             correctIndex: 1,
             explanation:
@@ -1644,10 +1659,10 @@ But hold the pattern one more time, because it does not break. The pilot who alo
           {
             prompt: "What is the through-line 'on the water'?",
             options: [
-              "The most skilled person on the boat was often the least free person on the boat",
-              "Pilots were always free men",
-              "Water work had nothing to do with slavery",
-              "Europeans did all the piloting",
+              "The most skilled person aboard was often the least free",
+              "The boat pilots were nearly always completely free men",
+              "Water work really had nothing at all to do with slavery",
+              "White Europeans alone did all of the skilled piloting",
             ],
             correctIndex: 0,
             explanation:
@@ -1658,9 +1673,9 @@ But hold the pattern one more time, because it does not break. The pilot who alo
             prompt: "What does the foodways lesson add to the course's argument about credit?",
             options: [
               "That credit for enslaved knowledge was always given",
-              "That some of this uncredited expertise is still celebrated and sold today under names that hide its creators",
-              "That food knowledge is trivial",
-              "That Europeans invented Southern cuisine",
+              "That this uncredited expertise is still sold today",
+              "That the enslaved people's food knowledge is trivial",
+              "That the Europeans alone invented Southern cuisine",
             ],
             correctIndex: 1,
             explanation:
@@ -1671,9 +1686,9 @@ But hold the pattern one more time, because it does not break. The pilot who alo
             prompt: "Which statement best fits both the foodways and watercraft lessons?",
             options: [
               "Enslaved people contributed nothing to food or water skills",
-              "Enslaved people held expertise that shaped cuisine and coastal transport, while remaining uncredited or unfree",
-              "All this knowledge was European in origin",
-              "These skills earned enslaved people full freedom",
+              "Enslaved skill shaped cuisine and transport, yet stayed unfree",
+              "All of this valuable knowledge was really European in origin",
+              "These skills earned the enslaved people their full freedom",
             ],
             correctIndex: 1,
             explanation:

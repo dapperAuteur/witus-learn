@@ -286,10 +286,10 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
           {
             prompt: "What was Maine before it became a state in 1820?",
             options: [
-              "A separate country",
+              "A self-governing British royal colony of its own",
               "Part of Massachusetts (the District of Maine)",
-              "Part of Canada",
-              "A territory of New York",
+              "Part of the British colony of Lower Canada",
+              "An eastern coastal territory of New York",
             ],
             correctIndex: 1,
             explanation:
@@ -325,10 +325,10 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
           {
             prompt: "What distinction does Maine hold in elections?",
             options: [
-              "It banned voting by mail",
-              "It was the first state to adopt ranked-choice voting (2016)",
-              "It has no elections",
-              "It requires unanimous votes",
+              "It permanently banned all voting by mail",
+              "It first adopted ranked-choice voting",
+              "It holds no statewide elections at all",
+              "It requires a unanimous vote to elect",
             ],
             correctIndex: 1,
             explanation:
@@ -338,10 +338,10 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
           {
             prompt: "In ranked-choice voting, what happens if no candidate has a majority of first choices?",
             options: [
-              "The election is voided",
-              "The last-place candidate is eliminated and their ballots transfer to next choices, repeating until someone has a majority",
-              "The Legislature picks the winner",
-              "The oldest candidate wins",
+              "The whole election is immediately voided",
+              "Last-place candidate is cut, votes transfer",
+              "The state Legislature simply picks the winner",
+              "The oldest candidate on the ballot then wins",
             ],
             correctIndex: 1,
             explanation:
@@ -351,10 +351,10 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
           {
             prompt: "Which Maine general elections do NOT use ranked-choice voting?",
             options: [
-              "U.S. House and Senate",
-              "The general election for Governor and state legislature (a constitutional plurality requirement)",
-              "Primary elections",
-              "Presidential electors",
+              "The U.S. House and U.S. Senate general elections",
+              "The general election for Governor and Legislature",
+              "Every state and federal primary election statewide",
+              "The presidential electors, chosen by district",
             ],
             correctIndex: 1,
             explanation:
@@ -364,10 +364,10 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
           {
             prompt: "What is Maine's 'people's veto'?",
             options: [
-              "The Governor's veto power",
-              "A citizen petition to suspend a newly passed law and send it to the voters to accept or reject",
-              "A court's power to strike laws",
-              "A federal override",
+              "The Governor's own power to veto bills",
+              "A citizen petition to reject a passed law",
+              "A court's power to strike down state laws",
+              "A federal Congressional override of state law",
             ],
             correctIndex: 1,
             explanation:
@@ -377,10 +377,10 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
           {
             prompt: "How are Maine's judges chosen?",
             options: [
-              "Elected in partisan races",
-              "Nominated by the Governor and confirmed by the Legislature for 7-year terms",
-              "Elected by the Legislature",
-              "Chosen by a citizens' commission with no confirmation",
+              "Elected by voters in partisan statewide contests",
+              "Nominated by Governor, confirmed by Legislature",
+              "Elected directly by the full state Legislature",
+              "Chosen by a citizens' commission with no vote",
             ],
             correctIndex: 1,
             explanation:
@@ -390,10 +390,10 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
           {
             prompt: "How does Maine award its presidential electoral votes?",
             options: [
-              "Winner-take-all",
-              "By congressional district (with Nebraska), two statewide, one per district",
-              "By the Legislature",
-              "It has none",
+              "Winner-take-all, all going to one candidate",
+              "By district: two statewide, one per district",
+              "Awarded entirely by the full state Legislature",
+              "It has none; Maine casts no electoral votes",
             ],
             correctIndex: 1,
             explanation:
@@ -403,10 +403,10 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
           {
             prompt: "Why does this course tell you to VERIFY which Maine elections use ranked-choice voting?",
             options: [
-              "Because Maine has no elections office",
-              "Because a constitutional nuance limits RCV to primaries and federal general elections (not the governor/legislature general) and rules change, confirm at [maine.gov/sos](https://maine.gov/sos)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Maine has no state elections office at all",
+              "Because a constitutional rule limits RCV's scope",
+              "Because only the U.S. Congress can set the RCV rules",
+              "Because every Maine vote is kept completely secret",
             ],
             correctIndex: 1,
             explanation:

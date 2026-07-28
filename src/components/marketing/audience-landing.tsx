@@ -59,6 +59,14 @@ export function AudienceLanding({
         </div>
       </section>
 
+      {/* Standards coverage is a selling point every audience file names in its copy, so link the
+          real, public standards page (per-state, by course) from every landing page. */}
+      <p className="mb-12 text-center text-sm">
+        <Link href="/academic-standards" className="font-medium underline" style={{ color: "var(--accent)" }}>
+          See the academic standards these courses meet, by state
+        </Link>
+      </p>
+
       {content.faq && content.faq.length > 0 ? (
         <section aria-labelledby="faq-heading" className="mb-12">
           <h2 id="faq-heading" className="mb-4 text-xl font-semibold">

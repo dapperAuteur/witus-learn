@@ -222,10 +222,10 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
           {
             prompt: "What is Alabama's constitution famous for?",
             options: [
-              "Being the shortest in the nation",
-              "Being the longest constitution in the world (by length)",
-              "Having no amendments",
-              "Being unwritten",
+              "Being the shortest written constitution in the nation",
+              "Being the longest state constitution in the world",
+              "Having almost no amendments in its whole history",
+              "Being an entirely unwritten body of state customs",
             ],
             correctIndex: 1,
             explanation:
@@ -235,10 +235,10 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
           {
             prompt: "Why did Alabama's constitution grow so long?",
             options: [
-              "It had a strong home-rule tradition",
-              "Weak home rule meant local matters often required statewide constitutional amendments",
-              "It copied other states word for word",
-              "It was translated many times",
+              "It grew out of a very strong local home-rule tradition",
+              "Weak home rule forced local matters into amendments",
+              "It copied several other states almost word for word",
+              "It was translated into many other world languages",
             ],
             correctIndex: 1,
             explanation:
@@ -248,10 +248,10 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
           {
             prompt: "What did Alabama voters approve in 2022?",
             options: [
-              "Abolishing the constitution",
-              "A recompiled Constitution of Alabama 2022 that removed racist language and reorganized the text",
-              "A brand-new form of government",
-              "Ending elections",
+              "Abolishing the state constitution completely and forever",
+              "A recompiled 2022 Constitution with racist text cut",
+              "A brand-new form of state government built from scratch",
+              "Ending all future statewide and local elections here",
             ],
             correctIndex: 1,
             explanation:
@@ -261,10 +261,10 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
           {
             prompt: "What does 'weak home rule' mean in Alabama?",
             options: [
-              "Localities have broad independent power",
-              "Localities have little independent authority and often need state legislative action",
-              "There are no local governments",
-              "The Governor runs every county",
+              "Localities have broad, fully independent local power",
+              "Localities have little power and need state action",
+              "There are no functioning local governments at all",
+              "The Governor personally runs every single county",
             ],
             correctIndex: 1,
             explanation:
@@ -274,10 +274,10 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
           {
             prompt: "How strong is the Alabama Governor's veto?",
             options: [
-              "Impossible to override",
-              "Comparatively weak: the Legislature overrides with a simple majority",
-              "The Governor cannot veto",
-              "Only courts can override it",
+              "Very strong: it is impossible for anyone to override it",
+              "Weak: the Legislature overrides by simple majority",
+              "The Governor has no power at all to veto any bill",
+              "Only the state appellate courts can override a veto",
             ],
             correctIndex: 1,
             explanation:
@@ -287,10 +287,10 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
           {
             prompt: "How does Alabama elect its Supreme Court justices?",
             options: [
-              "Appointed for life by the Governor",
-              "In partisan statewide elections (party labels on the ballot) to 6-year terms",
-              "Elected by the Legislature",
-              "On a nonpartisan ballot",
+              "Appointed for life terms directly by the Governor",
+              "In partisan statewide elections, 6-year terms",
+              "Elected by the state Legislature to 8-year terms",
+              "On a fully nonpartisan statewide judicial ballot",
             ],
             correctIndex: 1,
             explanation:
@@ -313,10 +313,10 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
           {
             prompt: "Why do Alabamians vote on so many constitutional amendments?",
             options: [
-              "They enjoy voting",
-              "Weak home rule means many local matters require statewide constitutional amendments",
-              "Congress requires it",
-              "The Governor demands it",
+              "They simply enjoy voting on the ballot each year",
+              "Weak home rule turns local matters into amendments",
+              "The U.S. Congress requires it under federal law",
+              "The state Governor personally demands every amendment",
             ],
             correctIndex: 1,
             explanation:
@@ -334,10 +334,10 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
           {
             prompt: "Why does this course tell you to VERIFY Alabama's constitution references and voting rules?",
             options: [
-              "Because Alabama has no government website",
-              "Because the 2022 recompilation renamed/reorganized the constitution and voting rules are run by counties and can change; confirm at [sos.alabama.gov](https://sos.alabama.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Alabama keeps no official government website online",
+              "Because the 2022 recompile renamed it and rules change",
+              "Because only the U.S. Congress can ever set the rules",
+              "Because every ballot cast in the state stays secret",
             ],
             correctIndex: 1,
             explanation:

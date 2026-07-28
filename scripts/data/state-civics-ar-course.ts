@@ -383,10 +383,10 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
           {
             prompt: "What did Amendment 7 (1920) add to the Arkansas Constitution?",
             options: [
-              "A state income tax",
+              "A statewide personal income tax law",
               "The citizen initiative and referendum",
-              "A Lieutenant Governor",
-              "Merit selection of judges",
+              "The office of the Lieutenant Governor",
+              "Merit selection of appellate judges",
             ],
             correctIndex: 1,
             explanation:
@@ -396,10 +396,10 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
           {
             prompt: "What is distinctive about Arkansas's executive branch?",
             options: [
-              "The governor appoints all other executives",
-              "There are seven separately elected constitutional officers, including a separately-elected Lieutenant Governor",
-              "There is only one elected executive",
-              "The Lieutenant Governor runs on the governor's ticket",
+              "The governor appoints all other executive officers",
+              "Seven separately elected constitutional officers",
+              "There is only a single elected executive officer",
+              "Lieutenant Governor runs on the governor's ticket",
             ],
             correctIndex: 1,
             explanation:
@@ -422,10 +422,10 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
           {
             prompt: "How can the Arkansas General Assembly override the governor's veto?",
             options: [
-              "With a two-thirds vote of each chamber",
-              "With a three-fourths vote",
+              "With a two-thirds vote in both chambers",
+              "With a three-fourths vote of both chambers",
               "With a simple majority of each chamber",
-              "It cannot override a veto",
+              "It cannot override the governor's veto",
             ],
             correctIndex: 2,
             explanation:
@@ -435,9 +435,9 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
           {
             prompt: "In Arkansas county government, what is the 'county judge'?",
             options: [
-              "The judge who runs criminal trials",
-              "The county's chief EXECUTIVE (not a courtroom judge)",
-              "A member of the Supreme Court",
+              "The judge who runs the county's criminal trials",
+              "The county's chief executive, not a judge",
+              "A member of the state Supreme Court bench",
               "The head of the quorum court's legal staff",
             ],
             correctIndex: 1,
@@ -457,9 +457,9 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
             prompt: "Which statement about Arkansas voting rules is correct?",
             options: [
               "Early in-person voting requires an excuse; mail voting is no-excuse",
-              "Early in-person voting is no-excuse; mail (absentee) voting requires an excuse",
-              "Both early and mail voting require an excuse",
-              "Neither early nor mail voting is allowed",
+              "Early in-person voting is no-excuse; mail voting needs an excuse",
+              "Both early in-person and absentee mail voting require an excuse",
+              "Neither early in-person nor absentee mail voting is allowed",
             ],
             correctIndex: 1,
             explanation:
@@ -477,10 +477,10 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
           {
             prompt: "Why does this course NOT state fixed signature-distribution numbers for Arkansas ballot initiatives?",
             options: [
-              "Because Arkansas has no initiative process",
-              "Because the initiative rules were recently tightened and remain in flux, so you must check the current handbook",
-              "Because the numbers are secret",
-              "Because only the governor knows them",
+              "Because Arkansas has no citizen initiative process at all",
+              "Because the rules were tightened and remain in flux",
+              "Because the exact signature numbers are kept secret",
+              "Because only the governor is allowed to know them",
             ],
             correctIndex: 1,
             explanation:
@@ -490,10 +490,10 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
           {
             prompt: "Because Arkansas's governor's veto is weak and executive power is split among seven elected officers, what is a key lever for changing state law?",
             options: [
-              "Petitioning the governor alone",
-              "Electing and lobbying your state legislators (and testifying in committee)",
-              "Contacting the U.S. President",
-              "Filing in federal court only",
+              "Petitioning the state governor's office alone",
+              "Electing and lobbying your state legislators",
+              "Writing to the U.S. President in Washington D.C.",
+              "Filing suit in federal district court only",
             ],
             correctIndex: 1,
             explanation:

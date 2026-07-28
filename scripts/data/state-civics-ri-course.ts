@@ -247,10 +247,10 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "What did Rhode Island change about its official name in 2020?",
             options: [
-              "It added 'and Providence Plantations'",
-              "It dropped 'and Providence Plantations,' becoming simply 'State of Rhode Island'",
-              "It renamed itself 'Ocean State'",
-              "It made no change",
+              "It re-added 'and Providence Plantations'",
+              "It dropped 'and Providence Plantations'",
+              "It officially renamed itself 'Ocean State'",
+              "It made no change to the name at all",
             ],
             correctIndex: 1,
             explanation:
@@ -260,10 +260,10 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "Who founded the Rhode Island colony and for what principle?",
             options: [
-              "William Penn, for farming",
-              "Roger Williams, for religious freedom and separation of church and state",
-              "John Smith, for gold",
-              "The King, for taxes",
+              "William Penn, for Quaker farming rights",
+              "Roger Williams, for religious freedom",
+              "Captain John Smith, in search of gold",
+              "The English King, seeking tax money",
             ],
             correctIndex: 1,
             explanation:
@@ -273,10 +273,10 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "What is true about Rhode Island's counties?",
             options: [
-              "They run schools and police",
-              "They exist only as geographic/judicial areas; there are no county governments",
-              "There are 39 of them",
-              "They elect the Governor",
+              "They run all local schools and the police",
+              "They have no county governments at all",
+              "There are exactly thirty-nine of them",
+              "They elect the state Governor directly",
             ],
             correctIndex: 1,
             explanation:
@@ -286,10 +286,10 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "What did Rhode Island's 2004 amendment do?",
             options: [
-              "Abolished the Legislature",
-              "Established separation of powers, removing legislators from executive boards and strengthening the Governor",
-              "Created counties",
-              "Ended elections",
+              "Abolished the state Legislature",
+              "Established separation of powers",
+              "Created five new county governments",
+              "Ended all statewide elections",
             ],
             correctIndex: 1,
             explanation:
@@ -299,10 +299,10 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "What is unique about Rhode Island's Supreme Court justices?",
             options: [
-              "They are elected annually",
-              "They serve for life, the only state high court with life tenure",
-              "They are chosen by lottery",
-              "They must be under 40",
+              "They are elected every single year",
+              "They serve for life, not elected",
+              "They are chosen by random lottery",
+              "They must all be under age forty",
             ],
             correctIndex: 1,
             explanation:
@@ -312,10 +312,10 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "How strong is the Rhode Island Governor's veto?",
             options: [
-              "Very strong, impossible to override",
-              "Comparatively weak: the Legislature overrides with only a three-fifths vote, and there's no line-item veto",
-              "The Governor cannot veto at all",
-              "Only courts can override it",
+              "Very strong, impossible to override ever",
+              "Weak: overridden by a three-fifths vote",
+              "The Governor cannot veto any bill",
+              "Only the state courts can override",
             ],
             correctIndex: 1,
             explanation:
@@ -338,10 +338,10 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "Since Rhode Island has no counties, what makes most local decisions?",
             options: [
-              "County commissioners",
-              "Cities and towns (and, in smaller towns, town meetings)",
-              "The federal government",
-              "Private companies",
+              "Elected county commissioners statewide",
+              "Cities and towns, plus town meetings",
+              "The federal government in Washington",
+              "Private for-profit service companies",
             ],
             correctIndex: 1,
             explanation:
@@ -351,10 +351,10 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "Can Rhode Island citizens put a law on the ballot by initiative?",
             options: [
-              "Yes, a strong initiative",
-              "No, there is no statewide initiative; the General Assembly proposes amendments for voters",
-              "Only in even years",
-              "Only for schools",
+              "Yes, through a strong citizen initiative",
+              "No, there is no statewide initiative",
+              "Only during even-numbered election years",
+              "Only for local school board questions",
             ],
             correctIndex: 1,
             explanation:
@@ -364,10 +364,10 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "Why does this course tell you to VERIFY Rhode Island's name, structure, and voting rules?",
             options: [
-              "Because Rhode Island has no government website",
-              "Because the name changed in 2020, powers were reformed in 2004, and voting rules are run locally and change; confirm at sos.ri.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Rhode Island keeps no government website",
+              "The name and powers changed, rules shift",
+              "Only the United States Congress sets them",
+              "Because every ballot is kept fully secret",
             ],
             correctIndex: 1,
             explanation:

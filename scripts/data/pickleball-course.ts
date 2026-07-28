@@ -262,9 +262,9 @@ So why does every game start "**zero, zero, two**"? Because of one deliberately 
             prompt: "A served ball lands exactly on the centerline of the correct service court. What is the call?",
             options: [
               "Good serve, the service court includes its centerline",
-              "Fault, the centerline is out on a serve",
-              "Replay",
-              "Good only if it also touched the net",
+              "Fault, a serve touching the centerline is out",
+              "Replay, a centerline serve is treated as a let",
+              "Good only if the serve also clipped the net cord",
             ],
             correctIndex: 0,
             explanation:
@@ -287,10 +287,10 @@ So why does every game start "**zero, zero, two**"? Because of one deliberately 
           {
             prompt: "Which of the volley-serve constraints (upward arc, paddle below wrist, ball below waist) also apply to a DROP serve?",
             options: [
-              "None of them, Rule 7.D has its own, much shorter list of requirements",
-              "All three of them",
-              "Only the upward-arc requirement",
-              "Only the below-the-waist requirement",
+              "None, Rule 7.D has its own shorter requirements",
+              "All three, exactly the volley-serve rules",
+              "Only the upward-arc contact requirement",
+              "Only the below-the-waist ball requirement",
             ],
             correctIndex: 0,
             explanation:
@@ -300,9 +300,9 @@ So why does every game start "**zero, zero, two**"? Because of one deliberately 
           {
             prompt: "Which statement about spin on the serve is correct under the 2026 rulebook?",
             options: [
-              "You may not pre-spin the ball on release, but you may apply spin with the paddle at contact",
-              "All spin on the serve is banned",
-              "You may pre-spin the ball with your fingers, but not with the paddle",
+              "You may not pre-spin, but paddle spin at contact is legal",
+              "All spin on the serve is banned, including at contact",
+              "You may pre-spin with your fingers, but not the paddle",
               "Spin is allowed on a drop serve but banned on a volley serve",
             ],
             correctIndex: 0,
@@ -313,7 +313,7 @@ So why does every game start "**zero, zero, two**"? Because of one deliberately 
           {
             prompt: "Why does every doubles game begin with the score called as 'zero, zero, two'?",
             options: [
-              "The starting server is designated the SECOND server for that first rotation, so the starting team gets only one server before a side out",
+              "The starting server counts as the team's SECOND server",
               "It is a superstition with no basis in the rulebook",
               "Because the receiving team's score is announced first",
               "Because two players must serve before any point can be scored",
@@ -334,10 +334,10 @@ So why does every game start "**zero, zero, two**"? Because of one deliberately 
           {
             prompt: "Under the two-bounce rule, who must let the ball bounce?",
             options: [
-              "The receiver must let the serve bounce, and then the serving team must let the return of serve bounce",
-              "Only the receiver, on the serve",
-              "Both teams, on every shot of the rally",
-              "Only the serving team, on the third shot",
+              "Receiver lets the serve bounce, server the return",
+              "Only the receiver, on the serve itself",
+              "Both teams, on every single shot in a rally",
+              "Only the serving team, returning on the third shot",
             ],
             correctIndex: 0,
             explanation:
@@ -347,7 +347,7 @@ So why does every game start "**zero, zero, two**"? Because of one deliberately 
           {
             prompt: "You volley a ball from just behind the kitchen line, and your momentum carries you into the kitchen after the ball is already dead. What is the call?",
             options: [
-              "Fault against you, momentum into the non-volley zone counts even after the ball becomes dead",
+              "Fault, momentum into the zone counts even when dead",
               "No fault, the ball was dead, so it doesn't matter",
               "No fault, as long as only one foot lands in the zone",
               "Replay",
@@ -373,8 +373,8 @@ So why does every game start "**zero, zero, two**"? Because of one deliberately 
           {
             prompt: "After stepping into the kitchen, what must happen before you may legally volley again?",
             options: [
-              "Both feet must contact the playing surface completely outside the non-volley zone",
-              "One foot must be outside the zone",
+              "Both feet must land completely outside the kitchen",
+              "Just one foot planted outside the zone is enough",
               "You must wait for one full rally",
               "Nothing, you may volley as soon as the ball comes back",
             ],
@@ -581,7 +581,7 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "You volley from behind the kitchen line and your paddle's follow-through swings out over the non-volley zone. What is the call?",
             options: [
-              "Legal, the non-volley zone is two-dimensional and does not extend above the playing surface",
+              "Legal, the non-volley zone is a two-dimensional area",
               "Fault, the paddle may not cross the plane of the kitchen line",
               "Fault, the zone extends upward to the height of the net",
               "Legal only if the paddle stays below waist height",
@@ -594,8 +594,8 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "You step into the kitchen to play a bounced ball, then step back with ONE foot outside the line and volley the next ball. What is the call?",
             options: [
-              "Fault, BOTH feet must contact the surface completely outside the zone before you may volley",
-              "Legal, one foot outside is enough",
+              "Fault, BOTH feet must reset outside the zone first",
+              "Legal, since one foot is now outside the zone line",
               "Legal, the restriction ends as soon as you leave the zone",
               "Replay",
             ],
@@ -607,7 +607,7 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "You hit an unreturnable volley. The ball is dead. THEN your momentum carries you into the kitchen. What is the call?",
             options: [
-              "Fault against you, the momentum rule applies even after the ball becomes dead",
+              "Fault, the momentum rule applies even after the ball is dead",
               "No fault, the rally was already over",
               "No fault, momentum faults only apply if the ball is still live",
               "The point is replayed",
@@ -620,10 +620,10 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "You volley a ball while touching your partner, who is standing in the kitchen. What is the call?",
             options: [
-              "Fault against you, the rule explicitly includes anything in contact with the volleying player, including the partner",
+              "Fault, a partner in contact with you counts too",
               "No fault, only the player who hits the ball matters",
               "Fault against your partner, not you",
-              "Legal if your partner is not moving",
+              "Legal as long as your partner is not moving",
             ],
             correctIndex: 0,
             explanation:
@@ -646,7 +646,7 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "Which rule makes it a fault when a ball bounces TWICE on your side before you hit it?",
             options: [
-              "Rule 10.B (Maximum Number of Bounces), a different rule from the two-bounce rule",
+              "Rule 10.B, the Maximum Number of Bounces rule",
               "Rule 10.A (the Two-Bounce Rule)",
               "Rule 11.A (Non-Volley Zone Infractions)",
               "There is no such rule, two bounces are always allowed",
@@ -672,9 +672,9 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "Which of the volley-serve constraints applies to a DROP serve under Rule 7.D?",
             options: [
-              "None of them, 7.D requires only a natural-height release and no propelling of the ball",
-              "The upward-arc requirement only",
-              "The below-the-waist requirement only",
+              "None, 7.D needs only a natural-height release",
+              "The upward-arc motion requirement only",
+              "The below-the-waist paddle-contact requirement",
               "All three (arc, wrist, waist)",
             ],
             correctIndex: 0,
@@ -698,10 +698,10 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "What did the 2026 USA Pickleball rulebook do to the RULE NUMBERS?",
             options: [
-              "It renumbered nearly everything, e.g. the 2025 service-fault rule 4.M.4 became the 2026 rule 7.E.1",
-              "It kept the numbering identical to 2025",
-              "It removed rule numbers entirely",
-              "It only renumbered the wheelchair rules",
+              "It renumbered nearly everything, 4.M.4 to 7.E.1",
+              "It kept the 2025 numbering completely unchanged",
+              "It removed all rule numbers from the book",
+              "It only renumbered the wheelchair section rules",
             ],
             correctIndex: 0,
             explanation:
@@ -711,10 +711,10 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "Under STANDARD (side-out) scoring, what happens when the receiving team wins a rally?",
             options: [
-              "No point is scored; the serve eventually passes to them",
+              "No point scored; the serve may pass to them",
               "They score a point",
-              "They score a point and get the serve",
-              "The rally is replayed",
+              "They immediately score a point and keep serving",
+              "The entire rally must be replayed again",
             ],
             correctIndex: 0,
             explanation:
@@ -724,9 +724,9 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "How does the 2026 rulebook describe rally scoring?",
             options: [
-              "As a PROVISIONAL rule and an OPTION (Rule 14.A) that a tournament director may choose, with exceptions",
+              "As a PROVISIONAL OPTION a director may choose",
               "As the mandatory standard scoring system for all play",
-              "As a format banned from all sanctioned play",
+              "As a format outright banned from all sanctioned play",
               "As a format used only in singles",
             ],
             correctIndex: 0,
@@ -737,10 +737,10 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "What changed about the rally-scoring GAME-WINNING point between the 2025 and 2026 rulebooks?",
             options: [
-              "In 2025 the game point could be scored only when serving; in 2026 whoever wins the rally scores it, so the receiving team can win the game",
+              "In 2026 the rally winner scores it, even the receiver",
               "Nothing changed",
               "In 2026 the game point can be scored only when serving",
-              "In 2026 rally scoring was abolished entirely",
+              "In 2026 rally scoring was abolished completely",
             ],
             correctIndex: 0,
             explanation:
@@ -750,7 +750,7 @@ USA Pickleball is candid that it is still deciding. Its stated reason for the 20
           {
             prompt: "Someone says 'the pros use rally scoring, so that's the rule now.' What is the accurate response?",
             options: [
-              "The pro tours are private businesses that may run their own formats; USA Pickleball's rulebook still makes side-out scoring standard and rally scoring provisional",
+              "Pro tours are private and run their own formats; the rulebook keeps side-out standard",
               "They're right, pro rules automatically become the rules for everyone",
               "They're wrong; rally scoring does not exist anywhere in pickleball",
               "They're right, because USA Pickleball adopted rally scoring for its National Championship",
@@ -954,7 +954,7 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "Why is the transition zone (between the kitchen line and the baseline) the worst place to stand?",
             options: [
-              "Balls land at your feet, and a ball at your feet must be hit upward",
+              "Balls land at your feet, so you must hit up",
               "It is illegal to stand there during a rally",
               "You cannot see the ball from there",
               "The net is highest directly in front of it",
@@ -967,9 +967,9 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "Immediately after you return the serve, what should you do, and why can you afford to?",
             options: [
-              "Run to the kitchen line, the serving team must let your return bounce (Rule 10.A.2), so they cannot punish you while you advance",
+              "Run up; they must let your return bounce first",
               "Stay at the baseline in case they hit it back deep",
-              "Move to the transition zone and wait",
+              "Move into the transition zone and just wait",
               "Switch sides with your partner",
             ],
             correctIndex: 0,
@@ -993,9 +993,9 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "What is the risk of a third-shot DRIVE compared with a drop?",
             options: [
-              "Hit it slightly high and you have handed a chest-height ball to two opponents standing at the net, who will hit it down at you while you are still 20 feet back",
+              "Hit it high and net players smash it back down",
               "It is illegal under Rule 10.A",
-              "It cannot be hit until the fourth shot",
+              "It cannot legally be hit until the fourth shot",
               "It always lands in the kitchen, which is a fault",
             ],
             correctIndex: 0,
@@ -1006,10 +1006,10 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "You are being attacked while stuck in the transition zone. What is the correct shot?",
             options: [
-              "A reset, take pace off the ball and drop it into the opponents' kitchen",
-              "A hard counter-drive at their feet",
+              "A reset, drop it soft into their kitchen",
+              "A hard counter-drive right at their feet",
               "A lob over both of them",
-              "Stop and let the ball bounce twice",
+              "Stop and let the ball bounce twice first",
             ],
             correctIndex: 0,
             explanation:
@@ -1019,7 +1019,7 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "Why is it a bad idea to hit hard once both teams are at the kitchen line?",
             options: [
-              "From eight feet away a hard flat ball either hits the net or comes back faster than you can react",
+              "From eight feet a hard ball nets or rebounds fast",
               "It is a fault to hit a volley above 20 mph",
               "The rulebook forbids overhead smashes near the net",
               "It always causes a kitchen momentum fault",
@@ -1032,7 +1032,7 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "In a dink rally, what is the actual losing condition?",
             options: [
-              "Popping a ball up above net height, where it can be attacked",
+              "Popping the ball up above net height",
               "Hitting more than ten dinks in a row",
               "Letting the ball bounce twice",
               "Stepping into the kitchen",
@@ -1045,7 +1045,7 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "Why do dinks target the opponents' non-volley zone specifically?",
             options: [
-              "A ball landing in the kitchen cannot be volleyed, so opponents must let it bounce and hit up on a low ball",
+              "A kitchen ball cannot be volleyed, so they hit up",
               "A ball landing in the kitchen is an automatic point",
               "It is the only legal place to hit a soft shot",
               "It forces a momentum fault under Rule 11.A.2",
@@ -1058,7 +1058,7 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "If a ball at the kitchen line is BELOW the top of the net, what should you do?",
             options: [
-              "Dink it back, attacking a below-net ball means hitting up, which loses",
+              "Dink it back; attacking a low ball loses",
               "Attack it hard, since your opponent is close",
               "Lob it",
               "Let it bounce twice to reset the rally",
@@ -1071,7 +1071,7 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "What is the governing principle of doubles positioning?",
             options: [
-              "You and your partner are one wall, up together, back together, slide together",
+              "You and your partner are a single wall that slides together",
               "One player always stays back to cover lobs",
               "Partners should split the court left and right and never move",
               "The stronger player should take every ball",
@@ -1084,10 +1084,10 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "Which rule makes STACKING legal?",
             options: [
-              "Rule 5.B.4, except while serving and receiving, there is no restriction on player positions",
+              "Rule 5.B.4, positions are unrestricted after the serve",
               "Rule 11.A, you may contact the kitchen except while volleying",
               "Rule 14.A, the provisional rally scoring option",
-              "There is no rule; stacking is technically against the rules but not enforced",
+              "There is no rule; stacking is technically illegal but ignored",
             ],
             correctIndex: 0,
             explanation:
@@ -1097,10 +1097,10 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "Why is the Erne (volleying from outside the sideline, beside the net post) legal?",
             options: [
-              "The non-volley zone is a defined 7 ft × 20 ft area on the court, and standing outside the sideline means you are not in contact with it",
+              "Standing outside the sideline is not contact with the zone",
               "The rulebook has a specific rule permitting the Erne by name",
               "It is only legal in rally scoring",
-              "It is legal only if your partner is in the kitchen",
+              "It is legal only if your partner stands in the kitchen",
             ],
             correctIndex: 0,
             explanation:
@@ -1110,9 +1110,9 @@ Look at how both of those work. Neither is a trick. Both are what happens when s
           {
             prompt: "Why is an ATP ('around the post', a ball hit outside the net post, below net height) legal?",
             options: [
-              "For a rally ball, Rule 10.C only requires that it land on the opponent's end of the court; nothing requires a rally ball to pass over the net",
-              "Because the ball technically passes over an imaginary extension of the net",
-              "Because the net post is not part of the court",
+              "Rule 10.C only requires it to land on their end",
+              "Because the ball passes over an imaginary net extension",
+              "Because the net post is not a part of the court",
               "It is not legal, it is a common myth",
             ],
             correctIndex: 0,
@@ -1347,7 +1347,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "Who invented pickleball, and where?",
             options: [
-              "Joel Pritchard, Bill Bell, and Barney McCallum, on Bainbridge Island, Washington",
+              "Pritchard, Bell, and McCallum, on Bainbridge Island",
               "Barney McCallum alone, in Seattle",
               "Joan Pritchard, on Whidbey Island",
               "An unnamed group of tennis coaches in Tukwila, Washington",
@@ -1360,7 +1360,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "USA Pickleball dates the invention of the sport to the summer of 1965. What kind of evidence is that date based on?",
             options: [
-              "Human memory recorded long after the fact, the founders themselves variously said 1963, 1965, and 1966",
+              "Human memory recorded long after the fact",
               "A dated diary entry from Joel Pritchard",
               "A newspaper article published that summer",
               "A patent filing",
@@ -1386,7 +1386,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "What is the correct statement about the claim that pickleball is named after a dog named Pickles?",
             options: [
-              "It is disputed, not settled, and the evidence that would resolve it has never been produced",
+              "It is disputed, and the resolving evidence was never produced",
               "It is confirmed fact, documented by USA Pickleball",
               "It has been definitively disproven by a veterinary record",
               "It was invented by a journalist and no participant ever believed it",
@@ -1399,7 +1399,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "What is the 'pickle boat' explanation of the name?",
             options: [
-              "Joan Pritchard said the game reminded her of the crew pickle boat, whose oarsmen were the leftovers from other boats",
+              "Joan Pritchard said it recalled crew's leftover pickle boat",
               "The founders played the game on a boat",
               "The ball was originally stored in a pickle barrel on a fishing boat",
               "It refers to a boat the Pritchard family owned",
@@ -1412,9 +1412,9 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "USA Pickleball's official position is that the dog was born in 1968, three years after the game was named. What is the problem with treating that as proof?",
             options: [
-              "The claim is 'based on evidence' that has never been named, no vet record, registration, or dated photo has been published; the only support is testimony from the family the claim vindicates",
-              "There is no problem, it is fully documented",
-              "USA Pickleball has since retracted it",
+              "No record is named; only testimony backs it",
+              "There is no problem, the claim is fully documented",
+              "USA Pickleball has since quietly retracted it",
               "The Pritchard family denies it",
             ],
             correctIndex: 0,
@@ -1425,7 +1425,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "What did the sport's own historians, Lucore and Youngren, conclude about the naming dispute in 2018?",
             options: [
-              "That they could not conclusively determine whether the game was named for the dog or the dog for the game",
+              "That they could not determine which came first",
               "That the dog story was definitively true",
               "That the pickle-boat story was definitively true",
               "They never addressed the question",
@@ -1438,7 +1438,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "According to all sides, including USA Pickleball, why did the dog story spread in the first place?",
             options: [
-              "A reporter was told the true story, heard the dog version as an alternative, and printed the dog because it was cuter and more memorable",
+              "A reporter chose the dog version as it was cuter",
               "Barney McCallum paid for advertising that used it",
               "It appeared in the 1984 rulebook",
               "The Pritchard family invented it to sell paddles",
@@ -1464,7 +1464,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "What is the difference between a claim being DISPROVEN and being UNDOCUMENTED?",
             options: [
-              "Disproven means contrary evidence exists; undocumented means nobody has produced evidence either way",
+              "Disproven means contrary evidence exists; undocumented does not",
               "They mean the same thing",
               "Undocumented claims are always false",
               "Disproven claims can still be repeated as fact if they are popular",
@@ -1477,7 +1477,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "What should you notice when an institution expresses MORE confidence about a fact than its own subject-matter experts did?",
             options: [
-              "That something other than new evidence probably caused the increase in confidence",
+              "That something other than evidence caused it",
               "That the institution must have inside information",
               "That the experts were being unnecessarily cautious",
               "Nothing, institutions are always the better source",
@@ -1503,7 +1503,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "USA Pickleball's history page says Pickle-Ball Inc. was established in 1972, but articles of incorporation were filed with the Washington Secretary of State on February 13, 1968. What is the best explanation?",
             options: [
-              "Both are true but measure different things, legally incorporated in 1968, operationally active from 1972, and the history page does not say which it means",
+              "Both true: incorporated 1968, active from 1972",
               "One of them is a forgery",
               "The 1968 filing was for a different company",
               "USA Pickleball made an error and has corrected it",
@@ -1516,8 +1516,8 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "In what year did pickleball become Washington's official state sport?",
             options: [
-              "2022, via Senate Bill 5615, signed on the original Pritchard family court",
-              "1984, alongside the first rulebook",
+              "2022, via Senate Bill 5615 signed by Inslee",
+              "1984, alongside the very first rulebook",
               "2010, when the IFP was formed",
               "2005, when the association became a nonprofit",
             ],
@@ -1529,7 +1529,7 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
           {
             prompt: "Someone tells you a pickleball rule and cites a rule number. What is the careful response?",
             options: [
-              "Ask WHOSE rulebook and WHAT YEAR, USA Pickleball revises annually and renumbered the whole book for 2026, and the pro tours run their own variants",
+              "Ask WHOSE rulebook and WHAT YEAR; they change yearly",
               "Accept it, rule numbers are permanent",
               "Assume they are wrong, since amateurs never know the rules",
               "Check the 1984 rulebook, which is the definitive version",
@@ -1754,7 +1754,7 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "Why is pickleball's barrier to entry structurally low, rather than merely 'easy to learn'?",
             options: [
-              "The rules themselves suppress serve power, foot speed, and reach, the attributes that take years to build in other racket sports",
+              "The rules suppress serve power, foot speed, and reach",
               "There are no rules governing the serve",
               "The court is the same size as a tennis court, so movement matters less",
               "Professional players are required to give beginners a handicap",
@@ -1780,10 +1780,10 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "According to this course, what most commonly separates an intermediate player from the next level?",
             options: [
-              "Decisions, driving instead of dropping, impatience in dink rallies, attacking balls below net height",
-              "Raw foot speed",
-              "Serve velocity",
-              "Paddle price",
+              "Decision-making, not athleticism",
+              "Raw foot speed and reflexes",
+              "Serve velocity and spin rate",
+              "Paddle price and brand",
             ],
             correctIndex: 0,
             explanation:
@@ -1793,9 +1793,9 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "What does UTPR count?",
             options: [
-              "Only results from USA Pickleball sanctioned tournaments",
-              "All recreational and tournament matches",
-              "Only professional tour results",
+              "Only sanctioned USA Pickleball tournaments",
+              "All recreational and tournament matches played",
+              "Only the pro tour results, PPA and MLP",
               "Self-reported skill levels",
             ],
             correctIndex: 0,
@@ -1806,7 +1806,7 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "In DUPR, you win a match, and your rating goes DOWN. How is that possible?",
             options: [
-              "DUPR moves on performance versus expectation, weighing opponent strength and score margin; winning by less than expected can lower your rating",
+              "DUPR weighs opponent strength and score margin",
               "It is a known bug in DUPR",
               "DUPR penalizes players who play recreational matches",
               "It is impossible, a win always raises a DUPR rating",
@@ -1827,10 +1827,10 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "Someone says 'I'm a 4.0.' What is the most informative follow-up question?",
             options: [
-              "Whose 4.0, UTPR or DUPR? And from how many matches, and how recently?",
-              "How many years have you played?",
-              "What paddle do you use?",
-              "Nothing, a 4.0 is a 4.0",
+              "Whose 4.0, UTPR or DUPR, and how recent?",
+              "How many years have you been playing?",
+              "What paddle brand do you play with?",
+              "Nothing, a 4.0 is just a 4.0",
             ],
             correctIndex: 0,
             explanation:
@@ -1840,7 +1840,7 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "What is the difference between a sanctioned and an unsanctioned tournament?",
             options: [
-              "A sanctioned event runs under USA Pickleball's rulebook and reports to your official UTPR; an unsanctioned event does not",
+              "A sanctioned event reports to your official UTPR",
               "Unsanctioned tournaments are illegal",
               "Sanctioned tournaments are only for professionals",
               "There is no difference; the words are interchangeable",
@@ -1853,7 +1853,7 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "Under Rule 15.C, what is true of scoring options in sanctioned play?",
             options: [
-              "All scoring options are win by two points, except win by one is allowed for team play",
+              "Win by two, but win by one for teams",
               "All games are win by one point",
               "Games are always to 21, win by two",
               "Only rally scoring is permitted",
@@ -1874,7 +1874,7 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "Two players each say they 'medaled in a pickleball tournament.' Why does that claim mean little on its own?",
             options: [
-              "Events are bracketed by both skill rating and age group, so a medal in one division is not comparable to a medal in another",
+              "Brackets split by skill and age group",
               "Medals are awarded to every entrant",
               "Tournaments do not award medals",
               "It means a lot, a medal is a medal",
@@ -1887,7 +1887,7 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "What happened between the PPA Tour and Major League Pickleball in February 2024?",
             options: [
-              "They completed a merger, with the combined entity organized under the United Pickleball Association (UPA)",
+              "They merged into one entity, the UPA",
               "MLP shut down entirely",
               "They were both acquired by USA Pickleball",
               "They split into four separate tours",
@@ -1900,7 +1900,7 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "Pro pickleball salaries spiked in 2023 and were later reported to fall, while participation kept growing. What caused the spike?",
             options: [
-              "A bidding war: two leagues competing to sign the same small pool of elite players, both offering guaranteed contracts",
+              "A bidding war between two rival pro leagues",
               "A surge in television revenue",
               "A USA Pickleball rule requiring minimum salaries",
               "Ticket sales at the National Championship",
@@ -1913,7 +1913,7 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "What is the correct confidence level to hold about reported pro-pickleball contract cuts?",
             options: [
-              "The merger is documented; the correction is well reported by the trade press but not independently auditable, because the leagues are private companies",
+              "Well reported by the trade press, not audited",
               "It is fully audited public financial data",
               "It is pure rumor with no reporting behind it",
               "USA Pickleball publishes the leagues' books annually",
@@ -1926,7 +1926,7 @@ The pro game is the part of pickleball that gets the cameras. It is not the part
           {
             prompt: "According to this course, where is the real opportunity in pickleball for an amateur or entrepreneur?",
             options: [
-              "In the amateur economy, courts, coaching, leagues, events, and equipment, which is fed by participation growth",
+              "The amateur economy, fed by participation growth",
               "In signing a professional playing contract",
               "In buying an MLP franchise",
               "There is no opportunity; the market is saturated",
@@ -2176,8 +2176,8 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "For 2022, SFIA reported 8.9 million pickleball participants while an APP/YouGov study reported 36.5 million. What explains the gap?",
             options: [
-              "They used different thresholds, the 36.5M figure counted anyone who played at least once in a 12-month window",
-              "One of the two organizations fabricated its data",
+              "Different thresholds, 36.5M counted anyone who played once",
+              "One of the two organizations simply fabricated its data",
               "The 36.5M figure counted players worldwide, not just in the U.S.",
               "SFIA excluded doubles players",
             ],
@@ -2223,10 +2223,10 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "What did SFIA's 2023 State of Pickleball report conclude about infrastructure?",
             options: [
-              "Roughly 25,000 new courts and on the order of $900 million of investment would be needed to meet demand",
+              "About 25,000 new courts and $900 million were needed",
               "There was already a surplus of courts",
               "Court demand would be met by converting golf courses",
-              "No new courts would be needed before 2030",
+              "No new courts would be needed anytime before 2030",
             ],
             correctIndex: 0,
             explanation:
@@ -2236,9 +2236,9 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "The playing surface is 20 ft × 44 ft. What total area does USA Pickleball's court-CONSTRUCTION guidance recommend per court?",
             options: [
-              "A minimum of 30 ft × 60 ft, with 34 ft × 64 ft preferred",
-              "Exactly 20 ft × 44 ft, no run-off is needed",
-              "A minimum of 60 ft × 120 ft",
+              "At least 30 ft × 60 ft, 34 ft × 64 ft preferred",
+              "Exactly 20 ft × 44 ft, needing no extra run-off",
+              "A minimum of 60 ft × 120 ft of build area",
               "A minimum of 24 ft × 50 ft",
             ],
             correctIndex: 0,
@@ -2249,9 +2249,9 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "Why is 'four pickleball courts fit on one tennis court' a misleading pitch?",
             options: [
-              "Four fit only at bare-minimum spacing, which creates unsafe run-off overruns; two or three with real run-off is the honest number",
+              "Four fit only at unsafe spacing; two or three is safe",
               "It is false, no pickleball court fits on a tennis court",
-              "Tennis courts cannot legally be converted",
+              "Tennis courts cannot legally ever be converted",
               "It understates capacity; six actually fit",
             ],
             correctIndex: 0,
@@ -2262,10 +2262,10 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "What makes pickleball noise so much more disruptive than tennis noise?",
             options: [
-              "It is impulsive and high-frequency, roughly 20 dB louder per strike than tennis, repeating up to 900 times per hour per court",
+              "Impulsive, high-frequency, and 20 dB louder per hit",
               "It is a low, constant rumble that carries through walls",
               "It is quieter, but players shout more",
-              "There is no meaningful difference in noise",
+              "There is no meaningful difference in the noise",
             ],
             correctIndex: 0,
             explanation:
@@ -2275,7 +2275,7 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "Roughly how far can pickleball noise create serious neighbor conflict, per the American Planning Association?",
             options: [
-              "Up to about 800 feet (sound may carry as far as 1,000 ft depending on conditions)",
+              "Up to roughly 800 feet, 1,000 at most",
               "About 50 feet",
               "About 5 miles",
               "Only within the fence line of the court",
@@ -2288,7 +2288,7 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "What happened in Boise as a result of a pickleball noise lawsuit?",
             options: [
-              "The city settled with homeowners and agreed to convert pickleball courts back to tennis at two complexes",
+              "City settled and reverted two courts to tennis",
               "The city won and expanded its pickleball program",
               "The lawsuit was dismissed as frivolous",
               "The state legislature banned pickleball",
@@ -2314,7 +2314,7 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "Why is running a league an attractive low-capital business?",
             options: [
-              "It generates recurring revenue on courts you do not own, and supplies the reliable, level-matched, scheduled game that open play cannot",
+              "Recurring revenue on courts you do not own",
               "Leagues require no organizing work at all",
               "League operators are exempt from liability",
               "USA Pickleball pays a subsidy per league",
@@ -2340,7 +2340,7 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "Why does a DELAMINATED paddle create a cheating problem rather than just a warranty problem?",
             options: [
-              "Delamination makes the paddle more powerful, the air gap between face and core acts as a spring",
+              "Delamination adds power; the air gap works like a spring",
               "Delaminated paddles are heavier and therefore illegal by weight",
               "Delamination makes the paddle weaker, so players demand refunds",
               "It does not; Rule 3.D.5 is purely a durability rule",
@@ -2353,7 +2353,7 @@ That is a brutal business to enter on the strength of loving pickleball. It is a
           {
             prompt: "What is the single most important thing to understand before entering the paddle-manufacturing business?",
             options: [
-              "The governing body can delist your flagship paddle between seasons with no appeal, and it is actively lowering the performance ceiling (PBCoR 0.44 → 0.43)",
+              "The body can delist your flagship paddle anytime, with no appeal",
               "Paddle designs are protected by USA Pickleball from regulatory change",
               "Once a paddle is approved, it stays approved permanently",
               "There is no equipment testing in pickleball",

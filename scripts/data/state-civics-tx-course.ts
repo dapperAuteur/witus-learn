@@ -353,10 +353,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "Why is Texas's 1876 constitution so long and so frequently amended?",
             options: [
-              "It has never been amended, so detail piled up",
-              "It writes many specifics into the constitution itself, so changing policy often needs a constitutional amendment",
-              "Federal law requires an amendment every year",
-              "The governor rewrites it each term",
+              "It has never once been amended since 1876, so unresolved detail simply piled up over the years",
+              "It locks many policy specifics into the constitution itself, so changing them needs a formal amendment",
+              "A federal law obligates every U.S. state to amend its own constitution at least once each year",
+              "The sitting governor is empowered to personally rewrite the whole document at the start of each term",
             ],
             correctIndex: 1,
             explanation:
@@ -366,10 +366,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "What does Texas's 'plural executive' mean?",
             options: [
-              "The governor appoints all other statewide officials",
-              "There are two governors",
-              "Several statewide executive officers are elected separately and answer to voters, not to the governor",
-              "The Legislature runs the executive branch",
+              "The governor personally appoints every other statewide executive official across the entire state",
+              "Texas simultaneously elects two separate governors who split and jointly share the single office",
+              "Several statewide executive officers are elected separately and answer to voters, not the governor",
+              "The Legislature, and not any elected governor, directly runs the entire executive branch itself",
             ],
             correctIndex: 2,
             explanation:
@@ -379,10 +379,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "Why is the Texas Lieutenant Governor often called the most powerful office in the state?",
             options: [
-              "The Lt. Governor commands the state's courts",
-              "The Lt. Governor is President of the Senate and controls committees and bill assignments",
-              "The Lt. Governor can veto any bill alone",
-              "The Lt. Governor appoints all judges",
+              "The Lieutenant Governor personally commands every civil and criminal court sitting in the state",
+              "The Lieutenant Governor is President of the Senate and controls its committees and bill assignments",
+              "The Lieutenant Governor may single-handedly veto any bill passed by either legislative chamber",
+              "The Lieutenant Governor personally appoints all of the judges who sit on the two high courts",
             ],
             correctIndex: 1,
             explanation:
@@ -392,10 +392,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "How is Texas's high court system unusual?",
             options: [
-              "It has no supreme court",
-              "It has TWO highest courts: a Supreme Court for civil cases and a Court of Criminal Appeals for criminal cases",
-              "Its supreme court is appointed by the U.S. President",
-              "It shares a supreme court with Oklahoma",
+              "It has no court of last resort at all, so every final appeal goes straight to the federal courts",
+              "It has TWO high courts: a Supreme Court for civil cases and a Court of Criminal Appeals for criminal cases",
+              "Its nine supreme court justices are each appointed directly by the sitting U.S. President himself",
+              "It shares one single joint court of last resort with the neighboring state of Oklahoma next door",
             ],
             correctIndex: 1,
             explanation:
@@ -405,9 +405,9 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "How does Texas select the judges on its two highest courts?",
             options: [
-              "Merit selection plus yes/no retention votes",
-              "Lifetime appointment by the governor",
-              "Nonpartisan elections",
+              "Merit selection followed by yes/no retention votes",
+              "Lifetime appointment by the sitting state governor",
+              "Nonpartisan judicial elections held across the state",
               "Partisan statewide elections to six-year terms",
             ],
             correctIndex: 3,
@@ -418,10 +418,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "What is distinctive about when the Texas Legislature meets?",
             options: [
-              "It meets year-round, full time",
+              "It meets in continuous full-time session all year long, every single year",
               "It meets only in regular session in odd-numbered years, for up to 140 days",
-              "It meets only when the courts allow it",
-              "It meets every year for the full year",
+              "It may only meet during the exact months a state court expressly allows it to",
+              "It meets every single year, staying in session for the full twelve months",
             ],
             correctIndex: 1,
             explanation:
@@ -431,10 +431,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "How can the Texas Legislature override the governor's veto?",
             options: [
-              "With a simple majority of each chamber",
-              "It cannot: the veto is final",
+              "With just a simple majority vote of the members present in each of the two chambers",
+              "It cannot be overridden in any way, because a governor's veto in Texas is truly final",
               "With a two-thirds vote of each chamber (though many vetoes arrive after the session ends)",
-              "By a statewide referendum",
+              "Only by putting the vetoed bill to a binding statewide referendum of the Texas voters",
             ],
             correctIndex: 2,
             explanation:
@@ -444,10 +444,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "Which statement about Texas local government is correct?",
             options: [
-              "Texas has fewer counties than any state",
+              "Texas has far fewer counties than any other single state, with only a couple of dozen in all",
               "Texas has 254 counties (the most of any state) and NO townships; a commissioners court runs each county",
-              "Texas counties are run by an elected mayor",
-              "Every Texas town is a home-rule city",
+              "Each of Texas's counties is governed by one elected county mayor serving a fixed four-year term",
+              "Every incorporated town across Texas is automatically classified as a self-governing home-rule city",
             ],
             correctIndex: 1,
             explanation:
@@ -457,10 +457,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "What do you need to vote in person in Texas, and what's the fallback?",
             options: [
-              "Nothing: no ID is required",
+              "Nothing whatsoever: Texas law requires no identification of any kind in order to vote in person here",
               "An accepted photo ID; or, if you can't get one, a Reasonable Impediment Declaration plus a supporting document",
-              "A passport only",
-              "A witness signature",
+              "Only a valid U.S. passport book is ever accepted at a Texas polling place, and nothing else will do",
+              "A registered adult witness must personally sign the poll book to vouch for your own identity every time",
             ],
             correctIndex: 1,
             explanation:
@@ -470,10 +470,10 @@ The practical payoff is the same as everywhere: **who provides your service depe
           {
             prompt: "Can an ordinary Texas citizen put a new STATE law on the statewide ballot by petition?",
             options: [
-              "Yes, with 5% of voters' signatures",
-              "Yes, but only in odd years",
+              "Yes, by gathering valid signatures from at least five percent of the state's registered voters",
+              "Yes, but citizens may only do so during odd-numbered years when the Legislature meets",
               "No. Texas has no statewide citizen initiative; only the Legislature can propose amendments",
-              "Yes, through the commissioners court",
+              "Yes, by filing the citizen petition through the local county commissioners court for approval",
             ],
             correctIndex: 2,
             explanation:

@@ -308,9 +308,9 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
             prompt: "What is distinctive about Washington's executive branch?",
             options: [
               "The Governor appoints all other officials",
-              "Voters elect nine separate statewide officials (a 'plural' executive)",
-              "There is only one elected official statewide",
-              "The Legislature chooses the Governor",
+              "Voters elect nine separate statewide officials",
+              "There is only a single elected official statewide",
+              "The Legislature elects the state Governor",
             ],
             correctIndex: 1,
             explanation:
@@ -320,10 +320,10 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
           {
             prompt: "Which office in Washington's executive is nonpartisan?",
             options: [
-              "Attorney General",
-              "Governor",
+              "Attorney General (the state's lawyer)",
+              "Governor (the state's chief executive)",
               "Superintendent of Public Instruction",
-              "State Treasurer",
+              "State Treasurer (manages state funds)",
             ],
             correctIndex: 2,
             explanation:
@@ -333,10 +333,10 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
           {
             prompt: "How are Washington Supreme Court justices chosen?",
             options: [
-              "Appointed for life by the Governor",
-              "Elected by voters on a nonpartisan ballot to 6-year terms",
-              "Elected by the Legislature",
-              "Chosen by a citizens' commission",
+              "Appointed for life terms by the Governor",
+              "Elected by voters on a nonpartisan ballot",
+              "Elected by a vote of the Legislature",
+              "Chosen by a judicial nominating commission",
             ],
             correctIndex: 1,
             explanation:
@@ -349,7 +349,7 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
               "Each elects two senators and one representative",
               "Each elects one senator and two representatives",
               "Senators are statewide; representatives by district",
-              "Each elects three senators",
+              "Each elects three senators and no representatives",
             ],
             correctIndex: 1,
             explanation:
@@ -359,10 +359,10 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
           {
             prompt: "Besides passing a bill through the Legislature, how else can a law be made in Washington?",
             options: [
-              "By the Governor alone",
-              "By voters directly, through initiative and referendum",
-              "By a single county",
-              "By the state Supreme Court",
+              "By the Governor signing an official decree",
+              "By voters via initiative and referendum",
+              "By a county passing a local ordinance",
+              "By the state Supreme Court's ruling",
             ],
             correctIndex: 1,
             explanation:
@@ -372,10 +372,10 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
           {
             prompt: "How does most voting happen in Washington?",
             options: [
-              "In person at polling places only",
-              "Entirely by mail: a ballot is sent to every registered voter",
-              "Online through a state website",
-              "By telephone",
+              "In person at neighborhood polling places",
+              "Entirely by mail, a ballot goes to every voter",
+              "Online through an official state elections site",
+              "By telephone through a county call center",
             ],
             correctIndex: 1,
             explanation:
@@ -385,10 +385,10 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
           {
             prompt: "How does Washington's 'top-two' primary work?",
             options: [
-              "Each party's top candidate advances",
-              "The two candidates with the most votes advance, even if from the same party",
-              "Only the incumbent advances",
-              "The Governor selects the finalists",
+              "Each party's top candidate advances alone",
+              "The top two advance, even if same party",
+              "Only the incumbent officeholder advances",
+              "The Governor selects the two finalists",
             ],
             correctIndex: 1,
             explanation:
@@ -398,10 +398,10 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
           {
             prompt: "What is true about Washington's personal state income tax?",
             options: [
-              "It has a high graduated income tax",
-              "It has no personal state income tax; it relies on sales and property taxes (and the issue is litigated)",
-              "Only counties levy income tax",
-              "The income tax funds all schools",
+              "It imposes a steep graduated state income tax",
+              "No personal income tax; it leans on sales tax",
+              "Only counties may levy a local income tax",
+              "A state income tax funds the public schools",
             ],
             correctIndex: 1,
             explanation:
@@ -412,9 +412,9 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
             prompt: "Why does this course tell you to VERIFY Washington's tax and voting rules?",
             options: [
               "Because Washington has no official website",
-              "Because tax questions are actively litigated and election rules are set locally and change; confirm at [leg.wa.gov](https://leg.wa.gov) / [sos.wa.gov](https://sos.wa.gov)",
-              "Because only Congress sets them",
-              "Because the rules are secret",
+              "Because tax law and election rules change",
+              "Because only the U.S. Congress may set them",
+              "Because the state keeps the rules secret",
             ],
             correctIndex: 1,
             explanation:

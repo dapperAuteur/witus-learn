@@ -309,10 +309,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "Which constitution governs Colorado, and why is Colorado the 'Centennial State'?",
             options: [
-              "The Constitution of 1876; it joined the Union in the nation's 100th year",
-              "The Constitution of 1912; it was the 100th territory",
-              "The Constitution of 1950; it has 100 counties",
-              "It has no constitution",
+              "The Constitution of 1876; it joined in the nation's 100th year",
+              "The Constitution of 1912; Colorado was the 100th territory organized",
+              "The Constitution of 1950; adopted after it reached 100 counties",
+              "It uses the U.S. Constitution directly and has none of its own",
             ],
             correctIndex: 0,
             explanation:
@@ -322,10 +322,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "What can Colorado citizens put directly on the ballot by initiative?",
             options: [
-              "Only nonbinding opinions",
+              "Only nonbinding advisory ballot opinions",
               "A statute OR a constitutional amendment",
-              "Only local ordinances",
-              "Nothing, Colorado has no initiative",
+              "Only city and county local ordinances",
+              "Nothing; Colorado has no initiative right",
             ],
             correctIndex: 1,
             explanation:
@@ -335,10 +335,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "What is TABOR?",
             options: [
-              "A state agency that builds roads",
-              "The Taxpayer's Bill of Rights: requires voter approval for tax increases and caps/refunds revenue",
-              "Colorado's income-tax code",
-              "A judicial nominating commission",
+              "A state agency that builds and maintains Colorado highways",
+              "The Taxpayer's Bill of Rights: voters approve tax hikes",
+              "Colorado's flat income-tax rate written in state code",
+              "A judicial nominating commission that screens judges",
             ],
             correctIndex: 1,
             explanation:
@@ -348,10 +348,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "Under TABOR, what happens to state revenue collected ABOVE the cap?",
             options: [
-              "It is kept automatically by the Legislature",
-              "It must generally be refunded to taxpayers unless voters approve keeping it",
-              "It goes to the federal government",
-              "It is illegal to collect",
+              "It is kept automatically by the state Legislature each year",
+              "It is refunded to taxpayers unless voters vote to keep it",
+              "It goes straight to the federal government in Washington",
+              "It is illegal for the state to collect above the cap",
             ],
             correctIndex: 1,
             explanation:
@@ -361,10 +361,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "How does Colorado choose its judges?",
             options: [
-              "Partisan elections",
-              "Merit selection (nominating commission → Governor appoints) plus yes/no retention elections",
-              "The Legislature elects them",
-              "Lifetime appointment by the Governor with no review",
+              "Partisan, big-money contested party elections",
+              "Merit selection, then yes/no retention elections",
+              "The state Legislature elects them by majority vote",
+              "Lifetime appointment by the Governor, no review",
             ],
             correctIndex: 1,
             explanation:
@@ -374,10 +374,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "What does Colorado's 'GAVEL' amendment guarantee?",
             options: [
-              "That the Governor can veto any bill twice",
-              "That every bill gets a committee hearing (limiting leaders' power to kill bills quietly)",
-              "That judges serve for life",
-              "That taxes never rise",
+              "That the Governor may veto any bill twice over",
+              "That every bill gets a committee hearing",
+              "That every judge serves a life term on the bench",
+              "That Colorado state taxes can never rise",
             ],
             correctIndex: 1,
             explanation:
@@ -387,10 +387,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "Why can't the Colorado Legislature raise a state tax by itself?",
             options: [
-              "Only counties can tax",
-              "TABOR requires that tax increases be approved by the voters",
-              "The Governor sets all taxes",
-              "Colorado has no taxes",
+              "Only Colorado county commissions may levy taxes",
+              "TABOR requires voter approval for any tax increase",
+              "The Governor alone sets every state tax rate yearly",
+              "Colorado collects no state income taxes at all",
             ],
             correctIndex: 1,
             explanation:
@@ -400,10 +400,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "How do most Coloradans vote?",
             options: [
-              "In person only, on Election Day",
-              "By mail, a ballot is mailed to every registered voter",
-              "Online",
-              "By proxy through a legislator",
+              "In person only, at a poll site on Election Day",
+              "By mail; a ballot is mailed to each voter",
+              "Online through the state's voting website",
+              "By proxy given to their state legislator",
             ],
             correctIndex: 1,
             explanation:
@@ -413,10 +413,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "Who has drawn Colorado's congressional and legislative maps since 2018?",
             options: [
-              "The Governor alone",
-              "Independent commissions of Democrats, Republicans, and unaffiliated members (Amendments Y and Z)",
-              "The U.S. Congress",
-              "The state Treasurer",
+              "The Governor, acting alone by his executive order",
+              "Independent citizen redistricting commissions",
+              "The U.S. Congress through a federal statute",
+              "The state Treasurer with the Secretary of State",
             ],
             correctIndex: 1,
             explanation:
@@ -426,10 +426,10 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
           {
             prompt: "Why does this course tell you to VERIFY TABOR's current numbers and rules?",
             options: [
-              "Because TABOR is secret",
-              "Because its caps, refunds, and interactions change yearly and are frequently litigated and on the ballot. Check leg.colorado.gov / sos.state.co.us",
-              "Because only Congress controls TABOR",
-              "Because TABOR was repealed",
+              "Because the full TABOR statute is deliberately kept secret",
+              "Because its caps and refunds change from year to year",
+              "Because only the U.S. Congress may amend TABOR's rules",
+              "Because TABOR was fully repealed by voters in 2020",
             ],
             correctIndex: 1,
             explanation:

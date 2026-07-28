@@ -251,9 +251,9 @@ Fill in each blank below, then check. Spelling and capitalization are forgiving.
           {
             prompt: "What did Time magazine actually do in 1975?",
             options: [
-              "Named \"American Women\" collectively its Person of the Year, with twelve women, including Wyatt, on the cover",
-              "Named Addie Wyatt its Woman of the Year",
-              "Named Addie Wyatt and Barbara Jordan co-Persons of the Year",
+              "Named \"American Women\" collectively its Person of the Year for 1975",
+              "Named Addie Wyatt its Woman of the Year for union organizing",
+              "Named Addie Wyatt and Barbara Jordan its co-Persons of the Year",
               "Named the Coalition of Labor Union Women its Organization of the Year",
             ],
             correctIndex: 0,
@@ -264,9 +264,9 @@ Fill in each blank below, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Under at-will employment, which of these is generally true?",
             options: [
-              "An employer may fire you for a good reason, a bad reason, or no reason at all",
-              "An employer must give two weeks' notice and a written reason",
-              "An employer must show good cause before firing anyone",
+              "An employer may fire you for a good reason, a bad reason, or none at all",
+              "An employer must give two weeks' notice and a written reason first",
+              "An employer must show documented good cause before firing anyone",
               "An employer may only fire you after a documented warning process",
             ],
             correctIndex: 0,
@@ -298,10 +298,10 @@ Fill in each blank below, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Why is the grievance-and-arbitration clause described as the one that gives the other clauses their teeth?",
             options: [
-              "Because it is the only clause that gives you a defined process, ending before a neutral third party, when the employer breaks another clause",
-              "Because it sets the highest wages",
-              "Because it is legally required in every contract",
-              "Because it lets the union call a strike at any time",
+              "Because it gives you a defined process before a neutral party",
+              "Because it alone sets the highest wage scale in the contract",
+              "Because federal law requires arbitration in every contract",
+              "Because it lets the union call a strike whenever it likes",
             ],
             correctIndex: 0,
             explanation:
@@ -312,9 +312,9 @@ Fill in each blank below, then check. Spelling and capitalization are forgiving.
             prompt: "In contract language, what does \"sole discretion\" signal?",
             options: [
               "The other party decides, and you have no say",
-              "Both parties must agree",
-              "A neutral arbitrator decides",
-              "The clause is unenforceable",
+              "Both parties must agree before it applies",
+              "A neutral arbitrator makes the final call",
+              "The clause is legally unenforceable as written",
             ],
             correctIndex: 0,
             explanation: "\"Sole discretion\" is the phrase to slow down on, you have just read a sentence that gives something away.",
@@ -335,10 +335,10 @@ Fill in each blank below, then check. Spelling and capitalization are forgiving.
           {
             prompt: "A collective bargaining agreement is best described as:",
             options: [
-              "An enforceable written agreement between an employer and a union representing its workers",
-              "A statement of an employer's values and commitments",
-              "A federal statute governing all workplaces",
-              "A non-binding memo produced at the end of a strike",
+              "An enforceable written agreement between an employer and a union",
+              "A statement of an employer's values and commitments to staff",
+              "A federal statute setting minimum pay across all workplaces",
+              "A non-binding memo the employer posts after a strike ends",
             ],
             correctIndex: 0,
             explanation:
@@ -349,9 +349,9 @@ Fill in each blank below, then check. Spelling and capitalization are forgiving.
             prompt: "Wyatt's employer sent her to the canning floor in 1941 after she passed the typing test. What was the stated reason?",
             options: [
               "Black women were not hired as typists in the front office",
-              "There were no typist vacancies that week",
-              "She was too young for a clerical role",
-              "The typing test result was lost",
+              "There were no typist vacancies in the office that week",
+              "She was told she was too young for a clerical role",
+              "The typing test result had been lost in the office",
             ],
             correctIndex: 0,
             explanation:
@@ -381,10 +381,10 @@ Fill in each blank below, then check. Spelling and capitalization are forgiving.
           {
             prompt: "You read your offer letter and find the phrase \"employment is at-will.\" What is the practical effect of that sentence?",
             options: [
-              "Either side can end the employment at any time, for almost any reason, without cause or notice",
-              "You are guaranteed employment for one year",
-              "You cannot be fired without a written warning first",
-              "You have automatically joined a union",
+              "Either side can end the job at any time, for almost any reason",
+              "You are guaranteed at least one year of continued employment",
+              "You cannot be fired without a written warning and a hearing",
+              "You have automatically joined the union under the contract",
             ],
             correctIndex: 0,
             explanation:
@@ -526,9 +526,9 @@ The next four sections are, in order: what people did when the law **didn't** co
             prompt: "Which statute contains the right to engage in \"concerted activities for... mutual aid or protection\"?",
             options: [
               "The National Labor Relations Act, Section 7 (29 U.S.C. § 157)",
-              "The 1st Amendment to the U.S. Constitution",
-              "The Fair Labor Standards Act",
-              "The Railway Labor Act, Section 6",
+              "The 1st Amendment to the United States Constitution (1791)",
+              "The Fair Labor Standards Act of 1938, Sections 6 and 7",
+              "The Railway Labor Act of 1926, Sections 2, 6, and 10",
             ],
             correctIndex: 0,
             explanation:
@@ -539,9 +539,9 @@ The next four sections are, in order: what people did when the law **didn't** co
             prompt: "Do you need to be in a union for Section 7 to protect you?",
             options: [
               "No, § 7 protects concerted activity whether or not a union is involved",
-              "Yes, § 7 only protects union members",
-              "Yes, but only if a union election has been filed",
-              "Only if your employer voluntarily recognizes a union",
+              "Yes, § 7 only protects employees who are dues-paying union members",
+              "Yes, but only after a union election petition is filed with the NLRB",
+              "Only if your employer voluntarily recognizes the union first",
             ],
             correctIndex: 0,
             explanation:
@@ -552,9 +552,9 @@ The next four sections are, in order: what people did when the law **didn't** co
             prompt: "In NLRB v. Washington Aluminum Co. (1962), what did the employees do?",
             options: [
               "Walked out together because the shop's furnace had broken and it was freezing",
-              "Filed a formal written grievance through their union",
-              "Went on strike for higher wages after a failed negotiation",
-              "Picketed a customer's business to pressure their employer",
+              "Filed a formal written grievance through the union's grievance process",
+              "Went on strike over wages after a formal negotiation with management failed",
+              "Picketed a customer's business to pressure their own employer indirectly",
             ],
             correctIndex: 0,
             explanation:
@@ -565,9 +565,9 @@ The next four sections are, in order: what people did when the law **didn't** co
             prompt: "According to Washington Aluminum, do employees lose § 7 protection if they never made a specific demand to the employer first?",
             options: [
               "No, the Court held they do not necessarily lose protection for that reason",
-              "Yes, a written demand is always required first",
-              "Yes, unless a union files the demand on their behalf",
-              "Only if the employer has an open-door policy",
+              "Yes, a specific written demand to the employer is always required first",
+              "Yes, unless their union first files the written demand on their behalf",
+              "Only if the employer maintains a formal written open-door policy",
             ],
             correctIndex: 0,
             explanation:
@@ -577,10 +577,10 @@ The next four sections are, in order: what people did when the law **didn't** co
           {
             prompt: "What does \"concerted\" mean in \"protected concerted activity\"?",
             options: [
-              "Acting with or on behalf of other employees, rather than alone about yourself only",
-              "Acting with the written approval of a union",
-              "Acting during a formally called strike",
-              "Acting after giving the employer notice",
+              "Acting with or on behalf of other employees, not alone about yourself",
+              "Acting only with the prior written approval of your union local",
+              "Acting only during a strike that has been formally called by a union",
+              "Acting only after giving the employer advance written notice first",
             ],
             correctIndex: 0,
             explanation:
@@ -603,10 +603,10 @@ The next four sections are, in order: what people did when the law **didn't** co
           {
             prompt: "Why did Dolores Huerta's fight for farm workers have to happen OUTSIDE the National Labor Relations Act?",
             options: [
-              "Because agricultural laborers are excluded from the NLRA's definition of \"employee\"",
-              "Because the NLRA only applies east of the Mississippi",
-              "Because the NLRA had not been passed yet",
-              "Because farm workers chose not to use it",
+              "Because agricultural laborers are excluded from the NLRA's coverage",
+              "Because the NLRA applies only to workers east of the Mississippi",
+              "Because the NLRA had not yet been passed by Congress in 1935",
+              "Because farm workers deliberately chose not to use it at the time",
             ],
             correctIndex: 0,
             explanation:
@@ -629,10 +629,10 @@ The next four sections are, in order: what people did when the law **didn't** co
           {
             prompt: "Under NLRA § 2(11), what makes someone a \"supervisor\", and therefore NOT covered by § 7?",
             options: [
-              "Authority to hire, discipline, discharge or effectively recommend such action, using independent judgment",
-              "Having the word \"manager\" in their job title",
-              "Earning a salary rather than an hourly wage",
-              "Having worked at the company for more than five years",
+              "Authority to hire, discipline or discharge, using independent judgment",
+              "Having the word \"manager\" or \"lead\" in their official job title",
+              "Earning a fixed salary rather than an hourly or piece-rate wage",
+              "Having worked at the company for more than five continuous years",
             ],
             correctIndex: 0,
             explanation:
@@ -642,10 +642,10 @@ The next four sections are, in order: what people did when the law **didn't** co
           {
             prompt: "Which of these is LEAST likely to be protected concerted activity?",
             options: [
-              "One employee, alone, complaining to a manager that their own raise was too small",
+              "One employee, alone, telling a manager their own raise was too small",
               "Two coworkers going together to a manager about unsafe equipment",
-              "Four employees signing a group letter about scheduling",
-              "Three coworkers discussing their pay with each other",
+              "Four employees together signing a group letter about scheduling",
+              "Three coworkers openly discussing their pay rates with each other",
             ],
             correctIndex: 0,
             explanation:
@@ -655,10 +655,10 @@ The next four sections are, in order: what people did when the law **didn't** co
           {
             prompt: "Your employer's handbook says employees may not discuss their pay with each other. Under § 7, what is the status of that rule?",
             options: [
-              "Discussing pay with coworkers is generally protected concerted activity, and a rule forbidding it is legally suspect",
-              "The handbook rule controls, because you agreed to it",
-              "It depends on whether you are salaried",
-              "It is fine, because pay is confidential business information",
+              "Discussing pay with coworkers is protected, and a rule banning it is suspect",
+              "The handbook rule controls here, because you signed and agreed to it",
+              "It depends entirely on whether you are a salaried or an hourly worker",
+              "It is fine, because your individual pay is confidential business data",
             ],
             correctIndex: 0,
             explanation:
@@ -668,10 +668,10 @@ The next four sections are, in order: what people did when the law **didn't** co
           {
             prompt: "Which of these is TRUE about the 1st Amendment and your private-sector job?",
             options: [
-              "The 1st Amendment restrains government, not a private employer, your workplace protection comes from statutes like the NLRA instead",
+              "The 1st Amendment restrains government, not a private employer like yours",
               "The 1st Amendment fully protects anything you say at a private workplace",
-              "The 1st Amendment and NLRA § 7 mean the same thing",
-              "The 1st Amendment applies only to unionized private employers",
+              "The 1st Amendment and NLRA § 7 protect the exact same conduct at work",
+              "The 1st Amendment applies only to unionized private-sector employers",
             ],
             correctIndex: 0,
             explanation:
@@ -682,9 +682,9 @@ The next four sections are, in order: what people did when the law **didn't** co
             prompt: "A nanny working in a private family home wants to organize with other nannies employed by the same family. Does the NLRA cover her?",
             options: [
               "No, domestic service in a private home is excluded from § 2(3)",
-              "Yes, all private-sector workers are covered",
-              "Yes, but only if there are more than five employees",
-              "Only if she is paid hourly",
+              "Yes, all private-sector employees are fully covered by the NLRA",
+              "Yes, but only if the family employs more than five people",
+              "Only if she is paid an hourly wage rather than a salary",
             ],
             correctIndex: 0,
             explanation:
@@ -694,10 +694,10 @@ The next four sections are, in order: what people did when the law **didn't** co
           {
             prompt: "A company classifies its delivery drivers as independent contractors. What does that do to their § 7 rights, and what is the catch?",
             options: [
-              "Genuine independent contractors are excluded from § 7, but what matters is the actual working relationship, not the label the company uses",
-              "The label the company uses is legally decisive",
-              "Contractors have the same § 7 rights as employees",
-              "Contractors are covered by the Railway Labor Act instead",
+              "Genuine contractors are excluded, but the true relationship controls the label",
+              "Whatever label the company writes on the paperwork is legally decisive",
+              "Contractors automatically have the very same § 7 rights that employees do",
+              "Genuine contractors are covered instead by the Railway Labor Act of 1926",
             ],
             correctIndex: 0,
             explanation:
@@ -707,10 +707,10 @@ The next four sections are, in order: what people did when the law **didn't** co
           {
             prompt: "Why does the course say knowing the EXCLUSIONS is more useful than knowing the rights?",
             options: [
-              "Because whether the law is pointed at you determines everything that follows, retaliation, charges, and remedies all depend on being a covered \"employee\"",
-              "Because the exclusions are easier to memorize",
-              "Because most workers are excluded",
-              "Because the rights are rarely enforced",
+              "Because whether you are a covered \"employee\" decides your charges and remedies",
+              "Because the list of exclusions is far easier to memorize than the rights",
+              "Because the great majority of private-sector workers are excluded groups",
+              "Because the § 7 rights themselves are almost never enforced in practice",
             ],
             correctIndex: 0,
             explanation:
@@ -845,10 +845,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "Why could farm workers not simply file for an NLRB election in the 1960s?",
             options: [
-              "Agricultural laborers are excluded from the NLRA's definition of \"employee\"",
-              "The NLRB only operated east of the Mississippi",
-              "They had not yet formed a union",
-              "Their employers were too small to be covered",
+              "Agricultural laborers are excluded from the NLRA's coverage",
+              "The NLRB only operated in states east of the Mississippi",
+              "They had not yet formed a recognized farm workers union",
+              "Their employers were too small in size to be covered",
             ],
             correctIndex: 0,
             explanation:
@@ -859,9 +859,9 @@ It would be easy to file this under "history," or under "sad news about a famous
             prompt: "Who began the Delano grape strike on September 8, 1965?",
             options: [
               "Filipino farm workers of the AWOC, led by Larry Itliong and Ben Gines",
-              "The National Farm Workers Association, led by César Chávez",
-              "The Teamsters",
-              "The United Farm Workers, led by Dolores Huerta",
+              "The National Farm Workers Association, led entirely by César Chávez",
+              "The Teamsters, claiming jurisdiction over the vineyard workers",
+              "The United Farm Workers of America, led by Dolores Huerta alone",
             ],
             correctIndex: 0,
             explanation:
@@ -871,10 +871,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "The growers could outlast a strike. What did the farm workers do instead, and why did it work?",
             options: [
-              "Launched a consumer boycott, going around the employer to the employer's customers, the one place the growers were vulnerable",
-              "Filed unfair labor practice charges with the NLRB",
-              "Sued the growers in federal court",
-              "Petitioned Congress to amend the NLRA",
+              "Launched a consumer boycott, going around the growers to their customers",
+              "Filed unfair labor practice charges with the NLRB regional office",
+              "Sued the growers for back wages in federal district court in California",
+              "Petitioned Congress to amend the NLRA to finally cover farm workers",
             ],
             correctIndex: 0,
             explanation:
@@ -892,10 +892,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "What did California's Agricultural Labor Relations Act of 1975 do?",
             options: [
-              "Made California the first state to extend collective bargaining rights to agricultural workers",
-              "Amended the NLRA to cover farm workers nationwide",
-              "Banned consumer boycotts of agricultural products",
-              "Created the National Labor Relations Board",
+              "Made California the first state to give farm workers bargaining rights",
+              "Amended the federal NLRA to cover all farm workers nationwide",
+              "Banned all consumer boycotts of California agricultural products",
+              "Created the federal National Labor Relations Board and its staff",
             ],
             correctIndex: 0,
             explanation:
@@ -905,10 +905,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "\"Legislate what you cannot bargain for.\" What does this step in Huerta's method mean?",
             options: [
-              "If you cannot win a benefit at the bargaining table, win it in the statute book, then the employer must obey it anyway",
-              "Only elected officials can improve working conditions",
-              "Unions should not negotiate contracts",
-              "Boycotts should be made illegal",
+              "If you cannot win a benefit at the table, win it in the statute book",
+              "Only elected officials can ever improve real working conditions",
+              "Unions should stop negotiating contracts with employers entirely",
+              "All consumer boycotts should be made illegal under new state law",
             ],
             correctIndex: 0,
             explanation:
@@ -918,10 +918,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "Why does the course say house meetings, one kitchen, a few neighbours, are worth the slowness?",
             options: [
-              "An organization built out of relationships survives a lost strike; one built out of a mailing list does not",
-              "They are cheaper than advertising",
-              "They are legally required before an election",
-              "They allow the union to avoid the employer's notice",
+              "Relationships survive a lost strike; a mailing list does not",
+              "They are far cheaper to run than paid mass advertising",
+              "They are legally required before a union election is held",
+              "They let the union avoid giving the employer any notice",
             ],
             correctIndex: 0,
             explanation: "This is the least glamorous and most durable part of the method.",
@@ -930,10 +930,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "On March 18, 2026, what did Dolores Huerta say publicly?",
             options: [
-              "That César Chávez sexually abused her in the 1960s, and that she had stayed silent for six decades",
-              "That she was retiring from the Dolores Huerta Foundation",
-              "That the UFW should disband",
-              "That she disputed The New York Times investigation",
+              "That César Chávez had sexually abused her, and she stayed silent for decades",
+              "That she was retiring at once from her Dolores Huerta Foundation post",
+              "That the UFW should disband and formally end all its organizing work",
+              "That she flatly disputed and rejected The New York Times investigation",
             ],
             correctIndex: 0,
             explanation:
@@ -943,10 +943,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "What reason did Huerta give for her long silence?",
             options: [
-              "She feared speaking would damage the farm worker movement, which was her life's work",
-              "She had signed a non-disclosure agreement",
-              "She had been threatened with a lawsuit",
-              "She did not remember the events until recently",
+              "She feared that speaking would damage the farm worker movement",
+              "She had signed a binding non-disclosure agreement with the union",
+              "She had been threatened with a defamation lawsuit by allies",
+              "She did not clearly remember the events until very recently",
             ],
             correctIndex: 0,
             explanation:
@@ -956,10 +956,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "What did the California Legislature do on March 26, 2026?",
             options: [
-              "Voted to rename the March 31 state holiday from César Chávez Day to Farmworkers Day",
-              "Repealed the Agricultural Labor Relations Act",
-              "Extended NLRA coverage to farm workers",
-              "Opened a criminal investigation",
+              "Voted to rename the March 31 César Chávez Day to Farmworkers Day",
+              "Voted to repeal the state Agricultural Labor Relations Act",
+              "Voted to extend federal NLRA coverage to all farm workers",
+              "Voted to open a state criminal investigation into the UFW",
             ],
             correctIndex: 0,
             explanation:
@@ -969,10 +969,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "What is the central claim of the lesson \"A movement is not a saint\"?",
             options: [
-              "The organizing work was real AND the harm was real, the person who built the power can also be harmed inside it, and neither fact cancels the other",
-              "The farm worker movement's achievements were fraudulent",
-              "Allegations against historical figures should be left to historians",
-              "The 1975 Act should be repealed",
+              "Both the organizing work and the harm were real, and neither cancels the other",
+              "The whole farm worker movement's celebrated achievements were fraudulent",
+              "Allegations against historical figures should be left only to historians",
+              "The 1975 Agricultural Labor Relations Act should be fully repealed now",
             ],
             correctIndex: 0,
             explanation:
@@ -982,10 +982,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "What does the course say is the connection between the Huerta/Chávez record and YOUR rights at work?",
             options: [
-              "It is why a grievance process you can use WITHOUT the permission of the powerful matters more than anyone's good character",
-              "It proves unions are ineffective",
-              "It shows you should never trust a coworker",
-              "It means historical figures cannot be taught",
+              "It is why a grievance process you can use without permission beats good character",
+              "It proves that labor unions are fundamentally ineffective for most workers",
+              "It shows that you should never again trust a coworker or fellow organizer",
+              "It means that historical figures can no longer be taught at all in schools",
             ],
             correctIndex: 0,
             explanation:
@@ -995,10 +995,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "The course reports the 2026 allegations with named sources and specific dates. Why does it insist on that, rather than just summarizing?",
             options: [
-              "So you can check it yourself, and update it when the record moves, a record from a few months ago is still moving",
-              "Because the sources requested attribution",
-              "To make the lesson longer",
-              "Because the events are disputed and unverifiable",
+              "So you can check it yourself and update it as the record keeps moving",
+              "Because the named sources specifically requested public attribution",
+              "To make the lesson considerably longer and more detailed overall",
+              "Because the underlying events are disputed and wholly unverifiable",
             ],
             correctIndex: 0,
             explanation:
@@ -1008,10 +1008,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "Dolores Huerta's formal role in the UFW, across four decades, was:",
             options: [
-              "Chief contract negotiator, the person actually at the bargaining table",
-              "Press secretary",
-              "Treasurer",
-              "Legal counsel",
+              "Chief contract negotiator, actually at the bargaining table",
+              "Press secretary, handling the union's media and public relations",
+              "Treasurer, managing the union's dues and its strike fund",
+              "Legal counsel, arguing the union's cases before the courts",
             ],
             correctIndex: 0,
             explanation:
@@ -1021,10 +1021,10 @@ It would be easy to file this under "history," or under "sad news about a famous
           {
             prompt: "Which of these best describes the relationship between the two lessons in this section?",
             options: [
-              "They are both required: the method is genuinely teachable, and the record is genuinely true, and a course that gave you only one would be lying by omission",
-              "The second lesson replaces the first",
-              "The first lesson is history; the second is opinion",
-              "They contradict each other, and the student must choose",
+              "Both are required: the method is teachable and the record is true",
+              "The second lesson entirely replaces and cancels the first one",
+              "The first lesson is settled history; the second is mere opinion",
+              "They flatly contradict each other, so the student must choose one",
             ],
             correctIndex: 0,
             explanation:
@@ -1184,9 +1184,9 @@ You may have heard that there is a landmark court case bearing her name. **There
             prompt: "Who may file an unfair labor practice charge with the NLRB?",
             options: [
               "Any person, no union membership, no lawyer, and no fee required",
-              "Only a certified union, on a worker's behalf",
-              "Only an employee with at least one year of service",
-              "Only an attorney admitted to practice before the Board",
+              "Only a certified union, filing the charge on a worker's behalf",
+              "Only an employee with at least one full year of paid service",
+              "Only an attorney formally admitted to practice before the Board",
             ],
             correctIndex: 0,
             explanation:
@@ -1196,10 +1196,10 @@ You may have heard that there is a landmark court case bearing her name. **There
           {
             prompt: "If the Board finds your employer retaliated against you, what remedy does NLRA § 10(c) authorize?",
             options: [
-              "Cease and desist, and affirmative action including reinstatement with or without back pay",
-              "Punitive damages of up to three times lost wages",
-              "Criminal prosecution of the manager involved",
-              "Automatic union recognition at the workplace",
+              "Cease and desist, plus reinstatement with or without back pay",
+              "Punitive damages of up to three times the wages you lost",
+              "Criminal prosecution of the individual manager involved",
+              "Automatic union recognition across the entire workplace",
             ],
             correctIndex: 0,
             explanation:
@@ -1209,10 +1209,10 @@ You may have heard that there is a landmark court case bearing her name. **There
           {
             prompt: "Retaliation under § 8(a)(1) is limited to firing someone. True or false?",
             options: [
-              "False, the statute forbids conduct that interferes with, restrains, or coerces, which includes cut hours, punitive scheduling, selective discipline, and even threats",
-              "True, only a discharge counts",
-              "True, unless the employee is in a union",
-              "False, but only cut pay counts",
+              "False, it also forbids cut hours, punitive scheduling, discipline, and threats",
+              "True, only an actual discharge or firing of the worker will ever count",
+              "True, unless the affected employee already belongs to a certified union",
+              "False, but only an actual reduction in the worker's take-home pay counts",
             ],
             correctIndex: 0,
             explanation:
@@ -1222,10 +1222,10 @@ You may have heard that there is a landmark court case bearing her name. **There
           {
             prompt: "What does NLRA § 8(a)(4) separately forbid?",
             options: [
-              "Discharging or discriminating against an employee because they filed charges or gave testimony under the Act",
-              "Hiring replacement workers during a strike",
-              "Closing a plant for economic reasons",
-              "Refusing to recognize a union without an election",
+              "Punishing an employee because they filed charges or gave testimony",
+              "Hiring permanent replacement workers during an economic strike",
+              "Permanently closing an entire plant for genuine economic reasons",
+              "Refusing to recognize a union without a secret-ballot election",
             ],
             correctIndex: 0,
             explanation:
@@ -1262,9 +1262,9 @@ You may have heard that there is a landmark court case bearing her name. **There
             prompt: "Between 1963 and 1973, how did the NLRB rule in cases against J.P. Stevens?",
             options: [
               "It found the company guilty of violating labor laws in 21 of 22 cases",
-              "It found for the company in most cases",
-              "It never heard a case against the company",
-              "It found one violation, in 1973",
+              "It found in favor of the company in the large majority of cases",
+              "It never once heard a single case brought against the company",
+              "It found exactly one single violation, occurring back in 1973",
             ],
             correctIndex: 0,
             explanation:
@@ -1274,10 +1274,10 @@ You may have heard that there is a landmark court case bearing her name. **There
           {
             prompt: "What is the deeper point of the J.P. Stevens back-pay figure?",
             options: [
-              "When the only penalty for breaking a law is paying back what you owed anyway, the law has priced the violation rather than prohibited it",
-              "The NLRB is an ineffective agency that should be abolished",
-              "Back pay is a generous remedy",
-              "Workers should not file charges",
+              "If the only penalty is repaying what you owed, the law prices the violation",
+              "The NLRB is an ineffective agency that ought to be abolished entirely",
+              "Back pay is an unusually generous remedy for the wronged workers here",
+              "Workers facing retaliation should simply not file any charges at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1288,9 +1288,9 @@ You may have heard that there is a landmark court case bearing her name. **There
             prompt: "The Roanoke Rapids workers won their NLRB election in August 1974. When did they get a first contract?",
             options: [
               "October 1980, six more years, after a national boycott",
-              "Immediately, in September 1974",
-              "In 1975, after federal mediation",
-              "They never got one",
+              "Immediately, in September 1974, right after the win",
+              "In 1975, after months of federal mediation talks",
+              "They never actually got a first contract at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1300,10 +1300,10 @@ You may have heard that there is a landmark court case bearing her name. **There
           {
             prompt: "What did the October 1980 J.P. Stevens settlement contain?",
             options: [
-              "Dues check-off, binding arbitration of grievances, and compensation for wages lost during the fight for a contract",
-              "Punitive damages for every fired worker",
-              "A federal consent decree and criminal penalties",
-              "Automatic recognition at every Stevens plant nationwide",
+              "Dues check-off, binding arbitration, and pay for wages lost in the fight",
+              "Full punitive damages awarded to each of the fired mill workers here",
+              "A binding federal consent decree and criminal penalties for managers",
+              "Automatic union recognition at every single Stevens plant nationwide",
             ],
             correctIndex: 0,
             explanation:
@@ -1313,10 +1313,10 @@ You may have heard that there is a landmark court case bearing her name. **There
           {
             prompt: "Is there a landmark court case bearing Crystal Lee Sutton's name?",
             options: [
-              "No, a published-opinions search returns no case captioned with her name; her reinstatement came through the NLRB-and-court process, not a famous precedent",
-              "Yes, Sutton v. J.P. Stevens, decided by the Supreme Court",
-              "Yes, Jordan v. J.P. Stevens, decided by the Fourth Circuit",
-              "Yes, but it was unpublished",
+              "No, no published case is captioned with her name; it came via the NLRB process",
+              "Yes, Sutton v. J.P. Stevens, decided by the U.S. Supreme Court in 1979",
+              "Yes, Jordan v. J.P. Stevens, decided by the Fourth Circuit back in 1978",
+              "Yes, a landmark case, but the full opinion was left entirely unpublished",
             ],
             correctIndex: 0,
             explanation:
@@ -1351,10 +1351,10 @@ You may have heard that there is a landmark court case bearing her name. **There
           {
             prompt: "What are the two things the Sutton lesson insists are true AT ONCE?",
             options: [
-              "The person who goes first absorbs a real and heavy cost, AND it still worked: they won the election, got the contract, and the clauses protected people for decades",
-              "That the law is useless, and that unions are unnecessary",
-              "That retaliation is rare, and that remedies are generous",
-              "That the film was accurate, and that her name was used",
+              "The person who goes first pays a heavy cost, AND it still worked in the end",
+              "That the labor law is entirely useless, and that unions are unnecessary",
+              "That workplace retaliation is rare, and that the remedies are generous",
+              "That the 1979 film was fully accurate, and that her real name was used",
             ],
             correctIndex: 0,
             explanation:
@@ -1456,10 +1456,10 @@ You are a freelance camera operator with one client. You are a contractor whose 
           {
             prompt: "Why are flight attendants NOT covered by the National Labor Relations Act?",
             options: [
-              "NLRA § 2(3) excludes employees of an employer subject to the Railway Labor Act, which covers airlines",
-              "They are classified as independent contractors",
-              "They are classified as supervisors",
-              "They cross state lines, so no federal law applies",
+              "NLRA § 2(3) excludes employees covered by the Railway Labor Act",
+              "They are formally classified as travelling independent contractors",
+              "They are formally classified as onboard cabin crew supervisors",
+              "They cross many state lines, so no single federal law applies",
             ],
             correctIndex: 0,
             explanation:
@@ -1469,10 +1469,10 @@ You are a freelance camera operator with one client. You are a contractor whose 
           {
             prompt: "Under the Railway Labor Act, when may an airline union legally strike?",
             options: [
-              "Only after the NMB proffers arbitration, a party rejects it, the NMB releases the parties, and a 30-day cooling-off period expires",
-              "Any time after the contract expires",
-              "Any time a majority of members vote to do so",
-              "Only with the President's written permission",
+              "Only after the NMB releases the parties and a 30-day cooling-off period ends",
+              "Any time at all, immediately after the current union contract expires",
+              "Any time that a simple majority of the union's members vote to strike",
+              "Only with the sitting U.S. President's express written permission first",
             ],
             correctIndex: 0,
             explanation:
@@ -1482,10 +1482,10 @@ You are a freelance camera operator with one client. You are a contractor whose 
           {
             prompt: "Could the seven machinists in NLRB v. Washington Aluminum have done what they did, if they had been flight attendants?",
             options: [
-              "No, the NLRA does not cover them, and the RLA forbids a walkout until the parties are released and a cooling-off period expires",
-              "Yes, § 7 applies to all private-sector workers",
-              "Yes, but only with 30 days' notice",
-              "Only if they had first filed a charge with the NLRB",
+              "No, the RLA bars a walkout until the parties are released and cool-off ends",
+              "Yes, NLRA § 7 applies fully to all private-sector workers everywhere",
+              "Yes, but only after giving the airline a full 30 days' written notice",
+              "Only if they had first filed a formal charge with the NLRB regional office",
             ],
             correctIndex: 0,
             explanation:
@@ -1495,10 +1495,10 @@ You are a freelance camera operator with one client. You are a contractor whose 
           {
             prompt: "On January 20, 2019, what did Sara Nelson actually do?",
             options: [
-              "Called on the labor movement to discuss conducting a general strike to end the government shutdown",
-              "Called an immediate strike of all AFA flight attendants",
-              "Filed an unfair labor practice charge against the federal government",
-              "Ordered air traffic controllers to call in sick",
+              "Called on the labor movement to discuss a general strike to end the shutdown",
+              "Called an immediate nationwide walkout of all AFA flight attendants now",
+              "Filed a formal unfair labor practice charge against the federal government",
+              "Ordered the nation's air traffic controllers to call in sick en masse",
             ],
             correctIndex: 0,
             explanation:
@@ -1509,9 +1509,9 @@ You are a freelance camera operator with one client. You are a contractor whose 
             prompt: "Did a general strike actually happen in January 2019?",
             options: [
               "No, it was never called, and AFA did not strike either",
-              "Yes, millions of workers walked out",
-              "Yes, but only flight attendants participated",
-              "Yes, it lasted five days",
+              "Yes, millions of union workers walked out nationwide",
+              "Yes, but only the AFA flight attendants took part",
+              "Yes, and it lasted a full five days across the country",
             ],
             correctIndex: 0,
             explanation:
@@ -1522,9 +1522,9 @@ You are a freelance camera operator with one client. You are a contractor whose 
             prompt: "Whose absence actually began to stop the planes, five days later?",
             options: [
               "Air traffic controllers, whose sick-outs delayed flights at LaGuardia",
-              "Flight attendants, who walked off aircraft",
-              "Pilots, who refused to fly",
-              "Baggage handlers, who struck nationally",
+              "Flight attendants, who together walked off their aircraft in protest",
+              "Airline pilots, who flatly refused to fly any scheduled flights",
+              "Airport baggage handlers, who struck at hub airports nationally",
             ],
             correctIndex: 0,
             explanation:
@@ -1534,10 +1534,10 @@ You are a freelance camera operator with one client. You are a contractor whose 
           {
             prompt: "What, precisely, was Sara Nelson's leverage?",
             options: [
-              "A credible, articulated threat that made an already-existing vulnerability impossible for the other side to keep ignoring",
-              "The legal right to shut down all U.S. air travel",
-              "A strike fund large enough to outlast the government",
-              "A court injunction against the shutdown",
+              "A credible threat that made an existing vulnerability impossible to ignore",
+              "The legal right to shut down all U.S. commercial air travel at will",
+              "A union strike fund large enough to outlast the entire federal government",
+              "A federal court injunction ordering an end to the government shutdown",
             ],
             correctIndex: 0,
             explanation:
@@ -1547,10 +1547,10 @@ You are a freelance camera operator with one client. You are a contractor whose 
           {
             prompt: "The course defines leverage as:",
             options: [
-              "Locating the point where your group's refusal, or credible capacity to refuse, stops something the other side cannot afford to have stopped, and making it legible to them",
-              "The degree of public sympathy your cause attracts",
-              "The number of members your union has",
-              "How badly you are being treated",
+              "Finding where your refusal stops something the other side cannot afford to lose",
+              "The sheer degree of public sympathy and press attention your cause attracts",
+              "The total number of dues-paying members your particular union happens to have",
+              "How badly, and how unfairly, you personally are being treated at your job",
             ],
             correctIndex: 0,
             explanation:
@@ -1569,9 +1569,9 @@ You are a freelance camera operator with one client. You are a contractor whose 
             prompt: "Is Sara Nelson a Time 100 honoree?",
             options: [
               "It could not be verified in any year, so this course does not assert it",
-              "Yes, in 2019",
-              "Yes, multiple times",
-              "Yes, in 2020 and 2022",
+              "Yes, she was formally named to the annual Time 100 list back in 2019",
+              "Yes, she has been named to the Time 100 list multiple separate times",
+              "Yes, she was formally named to the Time 100 list in both 2020 and 2022",
             ],
             correctIndex: 0,
             explanation:
@@ -1581,10 +1581,10 @@ You are a freelance camera operator with one client. You are a contractor whose 
           {
             prompt: "Under the RLA, what happens to an airline contract when it reaches its end date?",
             options: [
-              "It does not expire, it becomes \"amendable,\" and the terms stay in force while bargaining continues, possibly for years",
-              "It expires and the workers become at-will",
-              "It automatically renews on the same terms for one year",
-              "The NMB imposes a new contract",
+              "It does not expire, it becomes \"amendable\" and its terms stay in force",
+              "It fully expires, and the covered workers all revert to at-will status",
+              "It automatically renews on exactly the same terms for one more year",
+              "The NMB immediately imposes an entirely new contract on both sides",
             ],
             correctIndex: 0,
             explanation:
@@ -1594,10 +1594,10 @@ You are a freelance camera operator with one client. You are a contractor whose 
           {
             prompt: "What was AFA preparing, separate from any general strike?",
             options: [
-              "A flight attendant strike over unsafe conditions, a different legal theory from a contract strike",
-              "A lawsuit against the President",
-              "A boycott of United Airlines",
-              "A petition to Congress",
+              "A flight attendant strike over unsafe conditions, a distinct legal theory",
+              "A federal lawsuit filed directly against the sitting U.S. President",
+              "A nationwide consumer boycott of United Airlines and its main partners",
+              "A formal written petition to the U.S. Congress demanding new legislation",
             ],
             correctIndex: 0,
             explanation:
@@ -1620,10 +1620,10 @@ You are a freelance camera operator with one client. You are a contractor whose 
           {
             prompt: "Why is the RLA's 97% no-interruption record relevant to the leverage lesson?",
             options: [
-              "It shows the statute is designed to prevent strikes, and works, which is exactly why Nelson had to find leverage somewhere other than a strike",
-              "It proves flight attendants do not want to strike",
-              "It shows the NMB is biased toward unions",
-              "It is irrelevant to leverage",
+              "It shows the statute prevents strikes, so Nelson needed leverage elsewhere",
+              "It proves that flight attendants themselves do not actually want to strike",
+              "It shows the NMB is structurally biased in favor of the airline unions",
+              "It is completely irrelevant to the question of workplace leverage here",
             ],
             correctIndex: 0,
             explanation:
@@ -1634,9 +1634,9 @@ You are a freelance camera operator with one client. You are a contractor whose 
             prompt: "You are one of four people at your company who understand the payroll system, and your invoice is 90 days late. What does this section tell you to ask?",
             options: [
               "What breaks if we stop? Who notices? How fast? And do they know it yet?",
-              "Am I being treated fairly compared to my coworkers?",
-              "How long have I worked here?",
-              "Is my manager a reasonable person?",
+              "Am I truly being treated fairly compared to all of my coworkers here?",
+              "How long, in total, have I actually worked here at this company?",
+              "Is my direct manager a genuinely reasonable and fair-minded person?",
             ],
             correctIndex: 0,
             explanation:
@@ -1884,10 +1884,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Is Fran Drescher the current president of SAG-AFTRA?",
             options: [
-              "No, she served 2021-2025 and was succeeded by Sean Astin in September 2025",
-              "Yes, she was re-elected in 2025",
-              "Yes, she has served continuously since 2021",
-              "No, she resigned during the 2023 strike",
+              "No, she served 2021-2025 and was succeeded by Sean Astin in 2025",
+              "Yes, she was re-elected to a full new term in September 2025",
+              "Yes, she has served continuously in the office since 2021",
+              "No, she resigned partway through the 2023 SAG-AFTRA strike",
             ],
             correctIndex: 0,
             explanation:
@@ -1897,10 +1897,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Is Meredith Stiehm the current president of the WGA West?",
             options: [
-              "No, she served 2021-2025, termed out, and was succeeded by Michele Mulroney",
-              "Yes, she is serving a third term",
-              "Yes, she was re-elected in 2025",
-              "No, she never held the office",
+              "No, she served 2021-2025, termed out, succeeded by Michele Mulroney",
+              "Yes, she is currently serving an uninterrupted third full term",
+              "Yes, she was formally re-elected to another full term in 2025",
+              "No, she was nominated but never actually held the WGA office",
             ],
             correctIndex: 0,
             explanation: "Also a former president. Both left office in September 2025.",
@@ -1922,10 +1922,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Under SAG-AFTRA's 2023 agreement, what must consent to an employment-based digital replica include?",
             options: [
-              "A clear and conspicuous consent with a \"reasonably specific description\" of the intended use",
-              "A verbal agreement on set",
-              "A blanket licence for any purpose, in perpetuity",
-              "Nothing, consent is not required if you are already employed",
+              "A clear consent with a \"reasonably specific description\" of the use",
+              "A quick verbal agreement made informally on the set that day",
+              "A broad blanket licence for absolutely any purpose, in perpetuity",
+              "Nothing at all, consent is not required if you are already employed",
             ],
             correctIndex: 0,
             explanation:
@@ -1935,10 +1935,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "What is a \"synthetic performer\" under the 2023 SAG-AFTRA agreement?",
             options: [
-              "A digitally created asset trained on multiple humans, not recognizably any one of them, producers must notify the union and bargain over compensation",
-              "A body double",
-              "A performer who works remotely",
-              "An animated character voiced by a union member",
+              "A digital asset trained on many humans, recognizably none of them",
+              "A hired human body double who stands in for the lead actor",
+              "A union performer who does all of their work remotely from home",
+              "An animated cartoon character voiced by a single union member",
             ],
             correctIndex: 0,
             explanation:
@@ -1948,10 +1948,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "In a contract, what does \"in any media now known or hereafter devised\" do?",
             options: [
-              "Extends the licence to technologies that do not exist yet, it is how an old signature ends up training a new model",
-              "Limits the licence to current technology only",
-              "Requires renegotiation when technology changes",
-              "Restricts the licence to broadcast television",
+              "Extends the licence to technologies that do not exist yet",
+              "Limits the licence strictly to current technology only",
+              "Requires renegotiation each time the technology changes",
+              "Restricts the licence only to broadcast television use",
             ],
             correctIndex: 0,
             explanation: "It is one of the most consequential phrases in modern contracts, and it is easy to skim past.",
@@ -1960,10 +1960,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "A freelance contract takes a \"perpetual, irrevocable, worldwide, royalty-free, sublicensable\" licence to your work. What have you given up?",
             options: [
-              "It forever, everywhere, with no further payment, with no ability to change your mind, and they may hand it to third parties you never agreed to",
-              "A one-year licence you can cancel",
-              "Nothing, these are standard terms with no legal effect",
-              "Only the right to sell the work yourself",
+              "It forever, everywhere, with no payment, and transferable to third parties",
+              "Just a limited one-year licence that you can freely cancel at any time",
+              "Nothing at all, these are standard boilerplate terms with no legal effect",
+              "Only the exclusive right to sell copies of the work yourself directly",
             ],
             correctIndex: 0,
             explanation:
@@ -1973,10 +1973,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "What is a \"mini-room,\" and why did it matter to the WGA?",
             options: [
-              "A small writers' room hired for a few weeks before a show is greenlit, an example of the employer restructuring the JOB so the old contract stopped protecting it",
-              "A small room where arbitration hearings are held",
-              "A union meeting of fewer than ten members",
-              "A streaming service's internal development team",
+              "A small writers' room hired briefly before a show is even greenlit",
+              "A small private room where formal arbitration hearings are held",
+              "A formal union meeting made up of fewer than ten total members",
+              "A streaming service's own internal software development team",
             ],
             correctIndex: 0,
             explanation:
@@ -1986,10 +1986,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Under the 2023 WGA agreement, can AI-generated text be \"literary material\"?",
             options: [
-              "No, and that matters because \"literary material\" is the unit on which credits, compensation and separated rights are built",
-              "Yes, if a human edits it",
-              "Yes, if the company discloses it",
-              "Only for streaming productions",
+              "No, and \"literary material\" is the unit credits and compensation are built on",
+              "Yes, so long as a properly credited human writer edits the text afterward",
+              "Yes, so long as the hiring company formally discloses that AI was used",
+              "Only for streaming productions made for the newer digital-only platforms",
             ],
             correctIndex: 0,
             explanation:
@@ -2000,9 +2000,9 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
             prompt: "Under the 2023 WGA agreement, can a company require a writer to use ChatGPT to perform writing services?",
             options: [
               "No, but a writer may choose to use AI, with the company's consent",
-              "Yes, if it is in the writer's contract",
-              "Yes, for any streaming project",
-              "Only if the company pays a premium",
+              "Yes, if it is written into the writer's individual contract",
+              "Yes, for absolutely any streaming project the company makes",
+              "Only if the hiring company agrees to pay a special premium",
             ],
             correctIndex: 0,
             explanation: "The choice belongs to the writer. That is the point of the provision.",
@@ -2011,10 +2011,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "What is the WGA's strategy toward AI, as the course describes it?",
             options: [
-              "It did not ban the technology, it defined AI output as something that doesn't count, protected the human's right to refuse it, and required disclosure",
-              "It banned all use of AI in film and television",
-              "It required studios to pay a per-use AI licence fee to the Guild",
-              "It took no position on AI",
+              "It did not ban AI, but made its output not count and let writers refuse it",
+              "It fully banned all use of AI across film and television productions",
+              "It required the studios to pay a per-use AI licence fee to the Guild",
+              "It deliberately took no formal position at all on the use of AI tools",
             ],
             correctIndex: 0,
             explanation:
@@ -2024,10 +2024,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Why does this course NOT reproduce Fran Drescher's most famous strike quote?",
             options: [
-              "Two orderings of the passage circulate and the primary video could not be retrieved, so the course teaches the agreement instead of the anecdote",
-              "Because the quote is copyrighted",
-              "Because she has asked that it not be reproduced",
-              "Because the quote is not relevant to the course",
+              "Two orderings circulate and the source video could not be verified",
+              "Because the famous quote is fully copyrighted by the network",
+              "Because she has personally asked that it not be reproduced anywhere",
+              "Because the quote is simply not relevant to this labor course",
             ],
             correctIndex: 0,
             explanation:
@@ -2037,10 +2037,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Which single question does the course say to ask of any likeness or AI clause?",
             options: [
-              "What, specifically, are you going to do with it?, and if the document will not say, that refusal is the answer",
-              "Is this contract standard in the industry?",
-              "Has anyone else signed this?",
-              "Is the company reputable?",
+              "What, specifically, will you do with it? A refusal to say is the answer",
+              "Is this particular contract considered standard across the industry?",
+              "Has anyone else in my position already signed this same document?",
+              "Is the hiring company generally reputable and well-known in the field?",
             ],
             correctIndex: 0,
             explanation:
@@ -2050,10 +2050,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Meredith Stiehm's fight is described as the most sophisticated idea in the course. What is it?",
             options: [
-              "The employer does not break the contract, it changes the work until the contract no longer describes it, and then correctly points out that it has broken nothing",
-              "The employer refuses to sign any contract at all",
-              "The employer replaces all workers with AI",
-              "The employer relocates the work overseas",
+              "The employer changes the work until the contract no longer describes it",
+              "The employer flatly refuses to sign any new union contract at all",
+              "The employer quietly replaces all of its human workers with AI tools",
+              "The employer relocates all of the work to cheaper sites overseas",
             ],
             correctIndex: 0,
             explanation:
@@ -2063,10 +2063,10 @@ Fill in each blank, then check. Spelling and capitalization are forgiving.
           {
             prompt: "Which of these is Meredith Stiehm's actual credit?",
             options: [
-              "Creator of Cold Case; co-creator of The Bridge; writer/EP on Homeland",
-              "Creator of Homeland",
-              "Creator of Bosch",
-              "Creator of NYPD Blue",
+              "Creator of Cold Case; co-creator of The Bridge; writer on Homeland",
+              "Sole creator of Homeland and its several later spinoff series",
+              "Creator of Bosch and its long-running Amazon spinoff series",
+              "Creator of NYPD Blue and the earlier series Hill Street Blues",
             ],
             correctIndex: 0,
             explanation:

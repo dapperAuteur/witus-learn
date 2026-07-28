@@ -437,10 +437,10 @@ IEEE TryEngineering. (n.d.). *Engineering STEM lesson plans & activities*. https
           {
             prompt: "In a robot, what is the job of an 'actuator'?",
             options: [
-              "To measure temperature or light",
-              "To make something move or happen, like a motor or a light",
-              "To store the program",
-              "To connect to the internet",
+              "To measure the temperature or light",
+              "To make a motor or light turn on",
+              "To store the robot's program code",
+              "To connect the robot to the internet",
             ],
             correctIndex: 1,
             explanation:
@@ -463,10 +463,10 @@ IEEE TryEngineering. (n.d.). *Engineering STEM lesson plans & activities*. https
           {
             prompt: "Why must an electric circuit be a 'closed' (complete) loop?",
             options: [
-              "So it looks neat",
-              "So the electricity has a complete path to flow around; any gap stops it",
-              "To make it waterproof",
-              "So it uses more battery",
+              "So it looks neat and organized",
+              "So electricity has a path to flow",
+              "To keep the wires fully waterproof",
+              "So the robot uses more battery",
             ],
             correctIndex: 1,
             explanation:
@@ -489,10 +489,10 @@ IEEE TryEngineering. (n.d.). *Engineering STEM lesson plans & activities*. https
           {
             prompt: "What is an 'algorithm'?",
             options: [
-              "A type of battery",
-              "A step-by-step set of instructions to get something done",
-              "A kind of sensor",
-              "A robot's metal body",
+              "A type of rechargeable battery",
+              "A step-by-step set of instructions",
+              "A kind of heat and motion sensor",
+              "The robot's heavy metal outer frame",
             ],
             correctIndex: 1,
             explanation:
@@ -515,10 +515,10 @@ IEEE TryEngineering. (n.d.). *Engineering STEM lesson plans & activities*. https
           {
             prompt: "A conditional (an 'if / else' statement) lets a program do what?",
             options: [
-              "Run certain code only when a condition is true",
-              "Repeat forever",
-              "Charge the battery",
-              "Move faster",
+              "Run code only when a test is true",
+              "Repeat the same steps forever",
+              "Charge the robot's battery pack",
+              "Make all the motors move much faster",
             ],
             correctIndex: 0,
             explanation:
@@ -542,10 +542,10 @@ IEEE TryEngineering. (n.d.). *Engineering STEM lesson plans & activities*. https
             prompt:
               "According to the FDA, why is a 'robotically-assisted surgical system' not fully a robot on its own?",
             options: [
-              "It is too small to count",
-              "It cannot perform surgery without direct human control",
-              "It has no sensors",
-              "It only works in space",
+              "It is far too small to be seen at all",
+              "It cannot operate without a surgeon",
+              "It has no working sensors at all",
+              "It only works up in outer space",
             ],
             correctIndex: 1,
             explanation:

@@ -348,10 +348,10 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
           {
             prompt: "What federal law is the main reason some foreign banks are reluctant to open accounts for U.S. citizens?",
             options: [
-              "The Bank Secrecy Act",
+              "The Bank Secrecy Act, the anti-money-laundering law",
               "FATCA (the Foreign Account Tax Compliance Act)",
-              "The USA PATRIOT Act",
-              "Regulation E",
+              "The USA PATRIOT Act, the counterterrorism finance law",
+              "Regulation E, the electronic fund transfer rule",
             ],
             correctIndex: 1,
             explanation:
@@ -362,8 +362,8 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
             prompt: "Why might a small foreign bank decline to open an account for a U.S. citizen, even though no law bans them from doing so?",
             options: [
               "U.S. citizens are legally barred from holding foreign bank accounts",
-              "FATCA's compliance cost, and the risk of a 30% withholding tax, can outweigh the revenue from serving a few American customers",
-              "Foreign banks can never legally serve non-residents",
+              "FATCA compliance costs can exceed revenue from a few U.S. customers",
+              "Foreign banks can never legally serve any non-resident clients",
               "The IRS revokes a foreign bank's charter if it serves Americans",
             ],
             correctIndex: 1,
@@ -374,10 +374,10 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
           {
             prompt: "If your U.S. bank account is closed while you live abroad, what should you check first, per the CFPB?",
             options: [
-              "Your credit card's rewards balance",
-              "Your checking-account report from a company like Chex Systems or Early Warning Services",
-              "Your passport's remaining validity",
-              "Your Foreign Earned Income Exclusion eligibility",
+              "Your credit card's outstanding rewards balance",
+              "Your checking-account report from a screening firm",
+              "Your passport's remaining months of validity",
+              "Your Foreign Earned Income Exclusion tax eligibility",
             ],
             correctIndex: 1,
             explanation:
@@ -387,9 +387,9 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
           {
             prompt: "Which foreign-account reporting obligation is filed with your regular IRS tax return, versus separately with FinCEN?",
             options: [
-              "The FBAR is filed with your IRS return; Form 8938 goes to FinCEN",
-              "Form 8938 is filed with your IRS return; the FBAR goes to FinCEN separately",
-              "Both are filed together, directly with FinCEN",
+              "The FBAR goes with your IRS return; Form 8938 goes to FinCEN",
+              "Form 8938 goes with your IRS return; the FBAR goes to FinCEN",
+              "Both forms are filed together, sent directly to FinCEN",
               "Neither is ever filed separately from your state tax return",
             ],
             correctIndex: 1,
@@ -402,8 +402,8 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
               "A U.S. consumer sends $200 to a relative in another country through a company that regularly offers this service. What must the provider disclose before the consumer pays?",
             options: [
               "Nothing, disclosure is optional for amounts under $500",
-              "The exact exchange rate, any fees, and the amount the recipient is expected to receive",
-              "Only the total dollar amount being sent",
+              "The exact exchange rate, all fees, and amount received",
+              "Only the total dollar amount being transferred",
               "Only the provider's customer service phone number",
             ],
             correctIndex: 1,
@@ -414,10 +414,10 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
           {
             prompt: "Why can an international transfer advertised as having \"no fee\" still be expensive?",
             options: [
-              "Because taxes are always added afterward",
-              "Because the exchange-rate markup, the spread between the real market rate and the rate quoted to you, is often where the provider makes its money",
+              "Because sales taxes are always added on top afterward",
+              "Because the currency markup, or spread, is provider profit",
               "Because \"no fee\" transfers are illegal and always cost extra",
-              "Because the recipient must pay a mandatory tariff",
+              "Because the recipient must pay a mandatory import tariff",
             ],
             correctIndex: 1,
             explanation:
@@ -427,10 +427,10 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
           {
             prompt: "Which of these is a classic warning sign of a money-transfer scam, according to the CFPB?",
             options: [
-              "A request to pay by wire transfer, cryptocurrency, courier, or gift card, combined with high-pressure urgency",
+              "A request to pay by wire, crypto, or gift card, with urgent pressure",
               "A written disclosure showing the exchange rate and fees before you pay",
-              "A 30-minute window to cancel a transfer after paying",
-              "A checking-account report from Chex Systems",
+              "A guaranteed 30-minute window to cancel a transfer after paying",
+              "A monthly checking-account report from a credit screening firm",
             ],
             correctIndex: 0,
             explanation:
@@ -440,10 +440,10 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
           {
             prompt: "What can happen to an international wire or transfer if a name, bank, or country involved matches a U.S. sanctions (OFAC) list?",
             options: [
-              "Nothing, sanctions only apply to businesses, never personal transfers",
-              "The transaction can be blocked or rejected by the institution handling it, even if the sender did nothing wrong",
-              "The sender is automatically fined by the IRS",
-              "The transfer is always canceled with no recovery of the funds",
+              "Nothing at all, sanctions only apply to businesses, never personal transfers",
+              "The transaction can be blocked or rejected, even if the sender is blameless",
+              "The sender is automatically fined several thousand dollars by the IRS",
+              "The transfer is always canceled with no chance of recovering the funds",
             ],
             correctIndex: 1,
             explanation:
@@ -453,10 +453,10 @@ Beyond avoiding scams, staying compliant when you bank and move money across bor
           {
             prompt: "According to this course's closing checklist, what should you do before making any international transfer?",
             options: [
-              "Skip reading the disclosure to save time",
-              "Read the disclosed exchange rate and fees, and compare against at least one other provider",
-              "Always use the very first provider you find",
-              "Assume every provider charges the same exchange rate",
+              "Skip reading the whole disclosure entirely just to save time",
+              "Read the disclosed exchange rate and fees, then shop around",
+              "Always use the very first provider you happen to find",
+              "Assume every provider charges you the same exchange rate",
             ],
             correctIndex: 1,
             explanation:

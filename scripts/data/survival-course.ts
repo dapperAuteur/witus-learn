@@ -727,10 +727,10 @@ A ten-question check on the course's core, cited principles. Passing score is 70
             prompt:
               "According to the 'rule of 3s,' which need should you generally address FIRST after immediate danger and air?",
             options: [
-              "Food",
-              "Shelter / protecting body temperature",
+              "Finding food to eat",
+              "Shelter and body warmth",
               "Signaling for help",
-              "Charging your phone",
+              "Charging your cell phone",
             ],
             correctIndex: 1,
             explanation:
@@ -756,7 +756,7 @@ A ten-question check on the course's core, cited principles. Passing score is 70
               "What is the key difference between filtration and purification (disinfection)?",
             options: [
               "They are the same thing",
-              "Filtration strains out particles/many microbes; disinfection kills or inactivates pathogens",
+              "Filtration strains out particles; disinfection kills pathogens",
               "Purification removes chemical contamination; filtration does not do anything",
               "Filtration is only for salt water",
             ],
@@ -770,9 +770,9 @@ A ten-question check on the course's core, cited principles. Passing score is 70
               "The CDC says the most reliable way to kill disease-causing organisms in clear water is to:",
             options: [
               "Let it sit in sunlight for an hour",
-              "Add a pinch of salt",
-              "Bring it to a rolling boil for 1 minute (longer at high altitude)",
-              "Freeze it",
+              "Add a pinch of table salt to it",
+              "Bring it to a full rolling boil",
+              "Freeze it into solid block ice",
             ],
             correctIndex: 2,
             explanation:
@@ -784,9 +784,9 @@ A ten-question check on the course's core, cited principles. Passing score is 70
               "Which practice is a deadly carbon monoxide risk you must NEVER do?",
             options: [
               "Opening a window for fresh air",
-              "Running a generator, grill, or camp stove indoors or near windows",
+              "Running a generator or grill indoors",
               "Installing a battery-backup CO alarm",
-              "Using a flashlight",
+              "Using a handheld LED flashlight",
             ],
             correctIndex: 1,
             explanation:
@@ -798,7 +798,7 @@ A ten-question check on the course's core, cited principles. Passing score is 70
               "During a power outage, the USDA advises you to:",
             options: [
               "Open the freezer often to check on food",
-              "Keep refrigerator and freezer doors closed and, when in doubt, throw it out",
+              "Keep fridge and freezer doors closed",
               "Judge safety by smell and taste",
               "Move all frozen food to the counter",
             ],
@@ -812,7 +812,7 @@ A ten-question check on the course's core, cited principles. Passing score is 70
               "Which statement about foraging wild food in an emergency is correct?",
             options: [
               "If an animal eats a plant, it is safe for humans",
-              "Never eat any wild plant or mushroom you cannot positively identify with a qualified expert",
+              "Never eat a plant or mushroom you cannot identify",
               "Bitter taste reliably signals a poisonous plant",
               "Foraging should be your first priority in any emergency",
             ],
@@ -826,8 +826,8 @@ A ten-question check on the course's core, cited principles. Passing score is 70
               "When plumbing fails, the CDC's core sanitation principle is to:",
             options: [
               "Dump waste into the nearest storm drain",
-              "Contain and cover human waste and keep it away from water and food",
-              "Ignore it until services return",
+              "Contain, cover, keep it from water and food",
+              "Ignore it entirely until services return",
               "Bury it next to your drinking-water container",
             ],
             correctIndex: 1,
@@ -839,8 +839,8 @@ A ten-question check on the course's core, cited principles. Passing score is 70
             prompt:
               "What is the safest overall posture toward first aid that this course teaches?",
             options: [
-              "Attempt any procedure you've read about",
-              "Call emergency services, give only care you're trained/equipped for, and get hands-on certified training",
+              "Attempt any medical procedure you have read about",
+              "Call for help and give only care you are trained for",
               "Reading a guide is equivalent to taking a course",
               "Wait and do nothing until professionals arrive, always",
             ],
@@ -855,7 +855,7 @@ A ten-question check on the course's core, cited principles. Passing score is 70
             options: [
               "They mean exactly the same thing",
               "A watch means the hazard is happening now; a warning means it might happen later",
-              "A watch means conditions are possible (prepare); a warning means it's happening or imminent (act now)",
+              "A watch means conditions are possible; a warning means act now",
               "A warning only applies to floods",
             ],
             correctIndex: 2,

@@ -361,10 +361,10 @@ Because Michigan layers **county + township + city/village** together, "who do I
           {
             prompt: "Which constitution governs Michigan today, and when did it take effect?",
             options: [
-              "The Constitution of 1908, effective 1910",
+              "The Constitution of 1908, effective January 1, 1909",
               "The Constitution of 1963, effective January 1, 1964",
               "The Constitution of 1835, effective at statehood",
-              "Michigan has no written constitution",
+              "Michigan follows the federal Constitution only",
             ],
             correctIndex: 1,
             explanation:
@@ -387,10 +387,10 @@ Because Michigan layers **county + township + city/village** together, "who do I
           {
             prompt: "How are Michigan Supreme Court justices chosen?",
             options: [
-              "Appointed for life by the Governor",
-              "Elected on a nonpartisan ballot, though nominated by the parties at convention",
+              "Appointed for life by the Governor, as in federal courts",
+              "Elected on a nonpartisan ballot but nominated by the parties",
               "Elected in openly partisan races with party labels on the ballot",
-              "Chosen by the Legislature",
+              "Selected by a merit-based judicial nominating commission",
             ],
             correctIndex: 1,
             explanation:
@@ -400,10 +400,10 @@ Because Michigan layers **county + township + city/village** together, "who do I
           {
             prompt: "What did Proposal 2 of 2018 create?",
             options: [
-              "A state income tax",
+              "A graduated state income tax to fund schools",
               "The Independent Citizens Redistricting Commission",
-              "A Lieutenant Governor's office",
-              "A unicameral legislature",
+              "The independently elected office of Attorney General",
+              "A unicameral legislature replacing two chambers",
             ],
             correctIndex: 1,
             explanation:
@@ -413,10 +413,10 @@ Because Michigan layers **county + township + city/village** together, "who do I
           {
             prompt: "How is the Independent Citizens Redistricting Commission composed?",
             options: [
-              "13 members appointed by the Governor",
-              "4 Democrats, 4 Republicans, and 5 members affiliated with neither party, randomly selected",
-              "All sitting legislators",
-              "The state Supreme Court justices",
+              "13 members appointed by the Governor and the Legislature",
+              "4 Democrats, 4 Republicans, and 5 unaffiliated, at random",
+              "All sitting state legislators serving on the commission",
+              "The seven state Supreme Court justices, sitting ex officio",
             ],
             correctIndex: 1,
             explanation:
@@ -426,10 +426,10 @@ Because Michigan layers **county + township + city/village** together, "who do I
           {
             prompt: "Besides passing a bill through the Legislature, how else can a law be made in Michigan?",
             options: [
-              "By the Governor alone",
-              "By voters directly, through the initiative and referendum",
-              "By a single county board",
-              "By the Michigan Supreme Court",
+              "By the Governor alone through an executive order",
+              "By voters directly, through initiative and referendum",
+              "By a county board of commissioners by ordinance",
+              "By the Michigan Supreme Court issuing a ruling",
             ],
             correctIndex: 1,
             explanation:
@@ -439,10 +439,10 @@ Because Michigan layers **county + township + city/village** together, "who do I
           {
             prompt: "What happens to a Michigan citizen 'initiated law' before it could go on the ballot?",
             options: [
-              "It goes to the Governor for signature first",
-              "It goes to the Legislature first, which may enact it as written",
-              "It is decided by the Supreme Court",
-              "It is automatically added to the constitution",
+              "It goes to the Governor for a signature before any vote",
+              "It goes to the Legislature, which may enact it as written",
+              "It is reviewed and decided by the state Supreme Court",
+              "It is automatically added to the state constitution",
             ],
             correctIndex: 1,
             explanation:
@@ -452,10 +452,10 @@ Because Michigan layers **county + township + city/village** together, "who do I
           {
             prompt: "Which voting-access change did Michigan voters approve?",
             options: [
-              "A ban on absentee voting",
-              "No-reason absentee voting and automatic/same-day registration (Proposal 3 of 2018)",
-              "Ending all early voting",
-              "Requiring voters to own property",
+              "A statewide ban on all no-reason absentee voting",
+              "No-reason absentee voting and same-day registration",
+              "Ending all nine days of early in-person voting",
+              "Requiring voters to own property to cast a ballot",
             ],
             correctIndex: 1,
             explanation:
@@ -478,10 +478,10 @@ Because Michigan layers **county + township + city/village** together, "who do I
           {
             prompt: "Why does this course tell you to VERIFY Michigan's term-limit and voting rules rather than memorize them?",
             options: [
-              "Because Michigan has no official website",
-              "Because voter-approved proposals (e.g., 2018 and 2022) changed them recently, so older sources are out of date",
-              "Because only Congress sets them",
-              "Because the rules are secret",
+              "Because Michigan keeps no official record of its rules",
+              "Because ballot proposals in 2018 and 2022 changed them",
+              "Because only the U.S. Congress can set state rules",
+              "Because the state keeps these rules confidential",
             ],
             correctIndex: 1,
             explanation:

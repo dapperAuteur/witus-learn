@@ -300,10 +300,10 @@ The practical effect: in Louisiana, when other Americans say "county," you say *
           {
             prompt: "What makes Louisiana's legal system unique among U.S. states?",
             options: [
-              "It has no courts",
-              "It is based on civil law (French/Spanish/Napoleonic), not English common law",
-              "It uses only federal law",
-              "It bans written statutes",
+              "It follows the English common law of the 49 states",
+              "It rests on civil law, not English common law",
+              "It uses only federal law and has no state code",
+              "It bans written statutes and uses only custom",
             ],
             correctIndex: 1,
             explanation:
@@ -326,10 +326,10 @@ The practical effect: in Louisiana, when other Americans say "county," you say *
           {
             prompt: "In Louisiana's 'jungle primary,' what happens if a candidate wins over 50% in the first round?",
             options: [
-              "They still must face a runoff",
-              "They win the office outright, with no second round",
-              "The Legislature decides the winner",
-              "The election is voided",
+              "They still must face a second-round runoff",
+              "They win the office outright, no runoff",
+              "The Legislature picks the winning candidate",
+              "The whole election is thrown out entirely",
             ],
             correctIndex: 1,
             explanation:
@@ -339,10 +339,10 @@ The practical effect: in Louisiana, when other Americans say "county," you say *
           {
             prompt: "How is Louisiana's jungle primary different from Washington's 'top-two'?",
             options: [
-              "They are identical",
-              "In Louisiana a candidate can win outright by clearing 50% in the first round; in top-two the top two always advance",
-              "Louisiana has separate party primaries",
-              "Washington has no primary",
+              "The two systems are completely identical in all rules",
+              "A 50% first-round winner wins; top-two advances two",
+              "Louisiana holds separate party primaries first",
+              "Washington runs no primary election whatsoever",
             ],
             correctIndex: 1,
             explanation:
@@ -360,10 +360,10 @@ The practical effect: in Louisiana, when other Americans say "county," you say *
           {
             prompt: "Which constitution governs Louisiana today?",
             options: [
-              "Its first, from 1812",
+              "Its very first constitution, from 1812",
               "The Constitution of 1974 (its eleventh)",
-              "The Napoleonic Code directly",
-              "It has no constitution",
+              "The French Napoleonic Code, used directly",
+              "It has no written constitution at all",
             ],
             correctIndex: 1,
             explanation:
@@ -373,10 +373,10 @@ The practical effect: in Louisiana, when other Americans say "county," you say *
           {
             prompt: "Can Louisiana citizens put a statute on the ballot by initiative petition?",
             options: [
-              "Yes, a strong initiative",
-              "No, there is no general citizen initiative; amendments come from the Legislature and then voters ratify",
-              "Only in even years",
-              "Only for local roads",
+              "Yes, through a strong statewide initiative",
+              "No; only the Legislature proposes amendments",
+              "Only in even-numbered election years, by petition",
+              "Only for local road and drainage projects",
             ],
             correctIndex: 1,
             explanation:
@@ -386,10 +386,10 @@ The practical effect: in Louisiana, when other Americans say "county," you say *
           {
             prompt: "What is a 'police jury' in Louisiana?",
             options: [
-              "A jury in a criminal trial",
-              "A traditional parish governing board (like a county commission)",
-              "The state police force",
-              "A panel that appoints judges",
+              "A jury that hears major criminal trials",
+              "A parish's traditional governing board",
+              "Louisiana's statewide police force",
+              "A panel that appoints state judges",
             ],
             correctIndex: 1,
             explanation:
@@ -399,10 +399,10 @@ The practical effect: in Louisiana, when other Americans say "county," you say *
           {
             prompt: "How are Louisiana's judges chosen?",
             options: [
-              "Appointed for life by the Governor",
-              "Elected, including Supreme Court justices from districts, using the open (jungle) primary format",
-              "Elected by the Legislature",
-              "Appointed by the Attorney General",
+              "Appointed for life by the Governor alone",
+              "Elected via the open (jungle) primary",
+              "Chosen directly by the state Legislature",
+              "Appointed by the state Attorney General",
             ],
             correctIndex: 1,
             explanation:
@@ -412,10 +412,10 @@ The practical effect: in Louisiana, when other Americans say "county," you say *
           {
             prompt: "Why does this course tell you to VERIFY Louisiana's election calendar and voting rules?",
             options: [
-              "Because Louisiana has no elections office",
-              "Because dates (e.g., odd-year governor races) and ID/absentee rules change and are run by the SoS and parish registrars, so confirm at sos.la.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Louisiana runs no elections office at all",
+              "Because those dates and voting rules change",
+              "Because only the U.S. Congress sets state rules",
+              "Because all Louisiana voting is kept fully secret",
             ],
             correctIndex: 1,
             explanation:

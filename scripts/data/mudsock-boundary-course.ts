@@ -260,10 +260,10 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "What brought the settlement that became Fishers into existence, and when?",
             options: [
-              "The Peru and Indianapolis Railroad, which reached the area in 1851",
-              "The natural gas boom of 1887",
-              "Interstate 69, built in the 1960s",
-              "Geist Reservoir, completed in 1943",
+              "The Peru and Indianapolis Railroad, arriving in 1851",
+              "The northeast Indiana natural gas boom of 1887",
+              "Interstate 69, the corridor Fishers grew along",
+              "Geist Reservoir, which began supplying water in 1943",
             ],
             correctIndex: 0,
             explanation: "The railroad came first. Salathiel Fisher bought land beside the track and established Fisher's Switch in 1872; he died in 1873 and his son Henry developed it.",
@@ -284,10 +284,10 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "Why is a place nickname a research hazard rather than a research finding?",
             options: [
-              "Nicknames are always invented by newspapers",
-              "It has no author or date, was never on an official record, and was not unique to this place, so a name-only search collects the wrong county",
-              "Nicknames cannot be cited at all",
-              "Because it changed every decade",
+              "Newspapers always coin nicknames, giving each a date",
+              "It has no author or date and was never officially recorded",
+              "A nickname can never be cited in any historical work",
+              "The nickname changed with each new decade for a century",
             ],
             correctIndex: 1,
             explanation: "Other Indiana communities, including Dundee in Madison County, were also called Mudsock. Always carry the county, exactly as course 1 said to carry the city.",
@@ -297,9 +297,9 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
             prompt: "The sources on the 1881 Battle of Mudsock disagree. How does this course handle it?",
             options: [
               "It uses the highest figure because it is more dramatic",
-              "It omits the event",
-              "It averages the reported casualty counts",
-              "It reports the range with each figure's owner and notes that only the local outlets give a calendar date",
+              "It omits the event for lack of a single agreed figure",
+              "It averages the reported casualty counts into one number",
+              "It reports the range with each figure's owner, not an average",
             ],
             correctIndex: 3,
             explanation: "The Encyclopedia of Indianapolis and WRTV say one killed; The Reporter says two. Injury counts run 30 to 32. The underlying 1881 newspapers and court records have not been read here.",
@@ -315,10 +315,10 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "What does Hamilton County's population between 1900 and 1920 demonstrate?",
             options: [
-              "That census counts before 1930 are unreliable",
-              "That the county has always grown",
-              "That growth is not inevitable: the county lost 20 percent of its population after the natural gas boom ended",
-              "That the county's boundaries changed",
+              "That census counts taken before 1930 were unreliable",
+              "That the county has grown in every decade since 1900",
+              "That growth is not inevitable: the county shrank after 1900",
+              "That the county's boundaries were redrawn after 1900",
             ],
             correctIndex: 2,
             explanation: "A place that grows can shrink. A course that treats suburban growth as a law of nature has not looked at 1920.",
@@ -334,10 +334,10 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "Two publishers give Hamilton County's 2020 count as 347,490 and 347,467. What should you do?",
             options: [
-              "Use whichever is larger",
-              "Report both with their owners, say which you used, and note the gap touches no argument here",
-              "Refuse to cite either",
-              "Average them to 347,478",
+              "Use whichever figure is larger, which is 347,490",
+              "Report both with their owners and say which you used",
+              "Refuse to cite either figure until they agree",
+              "Average the two figures into a single 347,478",
             ],
             correctIndex: 1,
             explanation: "A difference of twenty three people changes nothing in this course, and saying so out loud is better than quietly rounding.",
@@ -346,10 +346,10 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "Which pair of facts about Westfield does this course insist on holding together?",
             options: [
-              "It was platted by North Carolina Quakers and planned as an Underground Railroad home station, and the county had only 272 African American residents out of 54,532 in 1970",
-              "It was founded in 1834 and became a city in 2008",
-              "It has a large sports complex and a growing population",
-              "It was named for a monthly meeting and incorporated in 1849",
+              "Quaker-platted for the Underground Railroad, yet 272 Black residents in 1970",
+              "It was platted in 1834 by Asa Bales and incorporated as a city in 2008",
+              "It was named for a North Carolina Quaker antislavery monthly meeting",
+              "It incorporated as a town in 1849, some fifteen years after its plat",
             ],
             correctIndex: 0,
             explanation: "Both come from the same Encyclopedia of Indianapolis entry. Using only one of them chooses a story over a record.",
@@ -358,9 +358,9 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "Why was the 1925 D. C. Stephenson murder trial held in Noblesville?",
             options: [
-              "Because prosecutors obtained a change of venue out of Indianapolis",
-              "Because the crime occurred in Hamilton County",
-              "Because the Indiana Supreme Court ordered it",
+              "Because prosecutors won a change of venue from Indianapolis",
+              "Because the murder itself took place within Hamilton County",
+              "Because the Indiana Supreme Court ordered a transfer there",
               "Because Noblesville had the largest courtroom in the state",
             ],
             correctIndex: 0,
@@ -371,9 +371,9 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
             prompt: "Fishers High School and Hamilton Southeastern High School are:",
             options: [
               "In two different school districts in the same county",
-              "In two different cities in the same district",
+              "In two different cities inside the same school district",
               "One public and one private school in the same city",
-              "Both public schools in the same city and the same school district",
+              "Both public schools in one city and one school district",
             ],
             correctIndex: 3,
             explanation: "This is the hinge of the whole course. The line between them is an attendance boundary, not a jurisdictional one.",
@@ -382,10 +382,10 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "How did Fishers High School come to exist as the district's second high school?",
             options: [
-              "The building opened in 2003 as a freshman campus, became Fishers High School in 2006, and held grades 9 to 12 from 2007",
-              "It was built new in 2007 on a greenfield site",
-              "It was the original Fishers High School, reopened",
-              "It was transferred from Noblesville schools in 2010",
+              "It opened in 2003 as a freshman campus and became a high school in 2006",
+              "It was built new in 2007 on a greenfield site at the edge of town",
+              "It was the original Fishers High School reopened after its 1969 closure",
+              "It was transferred from Noblesville schools in a 2010 boundary swap",
             ],
             correctIndex: 0,
             explanation: "Hamilton Southeastern High School had been the district's only high school for roughly forty years before that.",
@@ -394,10 +394,10 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "What flag does this course put on the dates for the district's founding and the original Fishers High School's closure?",
             options: [
-              "That the dates are certainly wrong",
-              "That they come from encyclopedic secondary sources, and the county reorganization plan and school board minutes have not been read into this course",
-              "That they are disputed by the district",
-              "That no source gives them at all",
+              "That both of the dates are certainly wrong and untrustworthy",
+              "That they come from encyclopedic secondary sources, not primary ones",
+              "That the school district publicly disputes both of the dates",
+              "That no published source gives either of these two dates at all",
             ],
             correctIndex: 1,
             explanation: "The reported dates are 1964 for the district's high school and 1969 for the original school's demolition. Report them as reported and keep the hedge.",
@@ -406,10 +406,10 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "How is the Mudsock trophy won?",
             options: [
-              "By winning the annual football game",
-              "By a vote of the two athletic directors",
-              "By the school with the higher combined enrollment",
-              "By accumulating the most points across varsity sports, one point per Tigers versus Royals contest",
+              "By winning the annual Mudsock Week varsity football game",
+              "By a vote of the two schools' athletic directors each spring",
+              "By the school with the higher combined varsity enrollment",
+              "By taking the most points across varsity sports, one per contest",
             ],
             correctIndex: 3,
             explanation: "Hamilton Southeastern's athletics department credits the trophy's creation to Dub and Jeanie Clark and their family, and described the competition as being in its eighteenth year in September 2025.",
@@ -418,10 +418,10 @@ The Encyclopedia of Indianapolis independently records the town at "only 344" in
           {
             prompt: "The central claim this course will test is that:",
             options: [
-              "The Mudsock rivalry is fake",
-              "Hamilton County grew because of Unigov",
-              "The boundary you can feel at a football game is the most visible line on this ground and the least consequential",
-              "High school sports should not be publicly funded",
+              "The Mudsock rivalry is fake and was invented purely for marketing",
+              "Hamilton County grew mainly because of the 1970 Unigov consolidation",
+              "The line you feel at a game is the most visible and least consequential",
+              "High school sports programs should not receive any public funding",
             ],
             correctIndex: 2,
             explanation: "The gap between visibility and consequence is exactly where civic power hides, which is why Section 3 goes looking for the boundaries that do govern.",
@@ -1049,10 +1049,10 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
           {
             prompt: "What changes when a piece of ground incorporates as a municipality?",
             options: [
-              "Its school district boundary is redrawn",
-              "It gains a council, a budget, a tax levy, ordinances, a police department and a ballot of its own",
-              "Its property is reassessed at market value",
-              "Its township government is dissolved",
+              "Its existing school district boundary is immediately redrawn",
+              "It gains a council, a budget, a tax levy, and a ballot of its own",
+              "Every parcel within it is reassessed at full market value",
+              "Its township government is immediately dissolved by the state",
             ],
             correctIndex: 1,
             explanation: "Before incorporation, land in Indiana is governed by the county and township. Incorporation adds a layer; it does not remove the school district or the township.",
@@ -1061,10 +1061,10 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
           {
             prompt: "In the November 2012 Fishers ballot, how did a voter who wanted an elected mayor have to vote?",
             options: [
-              "Yes to both questions",
-              "Yes to the first and no to the second",
-              "No to both questions",
-              "No to the first question and yes to the second",
+              "Yes to both of the reorganization questions",
+              "Yes to the first question and no to the second",
+              "No to both of the reorganization questions",
+              "No to the first but yes to the second question",
             ],
             correctIndex: 3,
             explanation: "A yes on the first question produced a reorganized city with a mayor chosen from among nine at large councillors and a hired city manager, regardless of the second answer. Ballot structure is a form of power.",
@@ -1073,10 +1073,10 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
           {
             prompt: "Give the official Hamilton County result of the Fishers and Fall Creek Township reorganization question.",
             options: [
-              "Rejected, 14,097 yes (37.51 percent) to 23,483 no (62.49 percent)",
+              "Rejected, 14,097 yes to 23,483 no",
               "Approved, 20,052 yes to 16,169 no",
-              "Rejected by a single vote",
-              "Withdrawn before the election",
+              "Rejected by a margin of a single vote",
+              "Withdrawn by the town before the election",
             ],
             correctIndex: 0,
             explanation: "The second question, whether the town should change into a city, passed 20,052 to 16,169, and Fishers incorporated as a second class city on January 1, 2015.",
@@ -1086,9 +1086,9 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
             prompt: "What is the Indiana consolidation comparison this course draws?",
             options: [
               "Both Unigov and the Fishers reorganization were approved by voters",
-              "Unigov was the only major postwar consolidation done without a referendum in 1969, while in 2012 a much smaller consolidation was put to voters and defeated 62 to 38",
-              "Neither consolidation was ever put to a legislature",
-              "Both were struck down in court",
+              "Unigov passed in 1969 without a public vote; the 2012 merger lost",
+              "Neither consolidation was ever taken up by the state legislature",
+              "Both consolidations were eventually struck down by state courts",
             ],
             correctIndex: 1,
             explanation: "Same state, forty three years apart. Neither fact judges the other; putting them side by side teaches something no single case could.",
@@ -1109,10 +1109,10 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
           {
             prompt: "What is a remonstrance waiver?",
             options: [
-              "A court order permitting an annexation to proceed",
-              "A recorded document in which a landowner permanently gives up the right to object to a future annexation, typically signed when the property connects to municipal sewer",
-              "A promise by a city not to raise taxes after annexation",
-              "A petition signed by neighbours supporting annexation",
+              "A court order that permits a pending annexation to move ahead",
+              "A recorded document giving up the right to object to annexation",
+              "A written promise by a city not to raise taxes after annexing",
+              "A petition signed by neighbours who support a coming annexation",
             ],
             correctIndex: 1,
             explanation: "It runs with the land, so later buyers inherit it, usually without knowing. The city extends a pipe and the owner signs away a political right.",
@@ -1128,10 +1128,10 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
           {
             prompt: "Why is annexation not a taking under the Fifth Amendment sense course 1 taught?",
             options: [
-              "Because Indiana law forbids annexing occupied land",
+              "Because Indiana law forbids annexing occupied private land",
               "Because the annexing city pays compensation to every owner",
-              "Because annexation requires unanimous consent",
-              "Because nothing is transferred and nobody loses a home; what changes is which government taxes you, which police respond, and which ballot you get",
+              "Because annexation requires the unanimous consent of owners",
+              "Because nothing is transferred and nobody loses a home",
             ],
             correctIndex: 3,
             explanation: "The tax increase is real and it is the point. The argument is about the exchange rate between the new levy and the new services, which is what a fiscal plan must spell out.",
@@ -1153,9 +1153,9 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
             prompt: "What happened to the proposed single Marion County school district in 1961?",
             options: [
               "It was adopted and became Indianapolis Public Schools",
-              "It was blocked by a federal court",
-              "It was defeated after more than 10,000 petition signatures and packed public hearings, leaving township districts intact",
-              "It was never actually proposed",
+              "It was struck down by a federal desegregation lawsuit",
+              "It was defeated after more than 10,000 petition signatures",
+              "It was never actually put before the county committee",
             ],
             correctIndex: 2,
             explanation: "The county committee had voted unanimously for one 130,000-student district. City schools were about 25 percent nonwhite in 1960 and the other Marion County schools were virtually all white.",
@@ -1176,10 +1176,10 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
           {
             prompt: "Did the 2010 Geist annexation or the 2025 southeast annexation change any student's school district?",
             options: [
-              "Yes, both moved students into Hamilton Southeastern Schools",
-              "Only the Geist annexation did",
-              "Only the southeast annexation did",
-              "No. Municipal and school boundaries are separate maps changed by different bodies under different statutes",
+              "Yes, both moved students into a new school district",
+              "Only the 2010 Geist annexation moved any students at all",
+              "Only the 2025 southeast annexation moved any students",
+              "No. Municipal and school boundaries are separate maps",
             ],
             correctIndex: 3,
             explanation: "A household can wake up in a new city and the same school district. That is the ordinary condition of American suburban life.",
@@ -1200,8 +1200,8 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
           {
             prompt: "In most Indiana counties, what is the only exemption from the property tax caps?",
             options: [
-              "Property owned by a nonprofit",
-              "Capital project, school operating or public safety funds approved by voters in a public referendum",
+              "Property owned by a registered nonprofit group",
+              "Funds approved by voters in a public referendum",
               "Any levy adopted unanimously by a county council",
               "Farmland enrolled in a conservation programme",
             ],
@@ -1212,10 +1212,10 @@ Four jurisdictional boundaries cross this ground: the municipal limit, the towns
           {
             prompt: "Testing this course's own title against the record shows that:",
             options: [
-              "The rivalry marks the line between two school districts",
-              "The rivalry marks the line between Fishers and Indianapolis",
-              "The rivalry marks the line between what a community can see and what actually governs it, because both schools share one district, city, county, board, tax rate and ballot",
-              "The rivalry has no relationship to any boundary at all",
+              "The rivalry marks the boundary between two separate school corporations",
+              "The rivalry marks the county line between Hamilton and Marion counties",
+              "The most visible line is not the one that actually governs the ground",
+              "The rivalry has no relationship to any real boundary whatsoever",
             ],
             correctIndex: 2,
             explanation: "Four jurisdictional boundaries cross this ground in four different shapes, and the one 8,000 people can feel at a stadium is not one of them.",
@@ -1626,10 +1626,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "Why is this course's map lesson national rather than block by block?",
             options: [
-              "Because Hamilton County's coordinates are unknown",
-              "Because the lesson map draws the whole world, so points need roughly two degrees of separation to separate visually, and Fishers is about a fifth of a degree from downtown Indianapolis",
-              "Because county maps are copyrighted",
-              "Because the course avoids maps of Indiana",
+              "Because Hamilton County's precise coordinates are not publicly known",
+              "Because the map is world-scale, so city and suburb become one point",
+              "Because detailed county maps are copyrighted and cannot be shown",
+              "Because the course deliberately avoids all detailed Indiana maps",
             ],
             correctIndex: 1,
             explanation: "That crowding is an accurate rendering of the problem: at national scale a city and its suburb are one place, and every difference that matters between them is invisible.",
@@ -1638,10 +1638,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "What is Indiana Gateway for Government Units?",
             options: [
-              "A private real estate listing site",
-              "The state's online voter registration portal",
-              "The state's public database of local government budgets, levies, tax rates and referendum information, run with the Indiana Business Research Center",
-              "A historical atlas of Indiana townships",
+              "A private commercial real estate listing and valuation site",
+              "The state's official online voter and elections registration portal",
+              "The state's public database of local government budgets and levies",
+              "A historical atlas of Indiana's counties and old townships",
             ],
             correctIndex: 2,
             explanation: "Its Taxpayer Portal shows assessed values, tax bills and referendum calculators, and its report search reaches every local unit in the state.",
@@ -1650,7 +1650,7 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "Which five facts should you pull for any parcel in any American county?",
             options: [
-              "Parcel number, owner of record, assessed value, taxing district, and the list of units that levy on it",
+              "Parcel number, owner, assessed value, taxing district, and its levies",
               "Square footage, roof age, paint colour, street name and school",
               "Architect, contractor, original cost, current tenant and zoning",
               "Purchase price, mortgage lender, insurer, and two neighbours' names",
@@ -1662,10 +1662,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "What is on the Hamilton Southeastern ballot on November 3, 2026?",
             options: [
-              "A bond issue for a third high school",
-              "An operating referendum of up to 0.36 dollars per 100 dollars of assessed value over eight years",
-              "A proposal to merge with Noblesville schools",
-              "A question on annexing the district into Fishers",
+              "A bond issue to build a third district high school",
+              "An operating referendum of up to 0.36 dollars per 100",
+              "A proposal to merge the district with Noblesville schools",
+              "A question on annexing the whole district into Fishers",
             ],
             correctIndex: 1,
             explanation: "The board approved the resolution 6 to 0 with one abstention on June 10, 2026, and the district projects a 3 dollar per month increase for the median homeowner's 2027 bill.",
@@ -1674,9 +1674,9 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "Why do the maximum rate on a referendum ballot and the rate a district intends to levy differ?",
             options: [
-              "Because the county auditor sets the actual rate",
+              "Because the county auditor sets the district's actual rate",
               "Because the ballot rate is adjusted for inflation each year",
-              "Because the maximum is a ceiling, and the district may plan to levy below it and escalate over the term",
+              "Because the maximum is a ceiling the district may levy below",
               "Because the state caps referendum rates at half the ballot figure",
             ],
             correctIndex: 2,
@@ -1686,10 +1686,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "Senate Enrolled Act 1 of 2025 restricted property tax referenda to general election ballots. Why does this course call that an instrument?",
             options: [
-              "Because it saves counties money on special elections",
-              "Because a rule about when a question may be asked is a rule about who will be in the room to answer it",
-              "Because it makes referenda unconstitutional",
-              "Because general elections have lower turnout",
+              "Because it saves the county money on running special elections",
+              "Because when a question is asked decides who answers it",
+              "Because it makes school tax referenda unconstitutional",
+              "Because general elections tend to draw a lower turnout",
             ],
             correctIndex: 1,
             explanation: "The 2016 Hamilton Southeastern referendum was decided in a May primary and the 2026 one must go to a November electorate. Neither is more legitimate; somebody chose which electorate gets the question.",
@@ -1698,10 +1698,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "How does this course handle the Fishers 2040 comprehensive plan?",
             options: [
-              "It summarises the plan's land use recommendations in detail",
-              "It ignores the plan entirely",
-              "It asserts the plan's contents from memory",
-              "It cites the published adoption dates from the documents' title pages and states plainly that the plan's contents were not read, because the city's server refused automated requests",
+              "It summarises the plan's land use recommendations in full detail",
+              "It ignores the comprehensive plan and its dates entirely",
+              "It asserts the plan's detailed contents from memory alone",
+              "It cites the adoption dates but says the contents were not read",
             ],
             correctIndex: 3,
             explanation: "The limit is stated rather than hidden, and opening the plan is left as the learner's assignment. The URLs are in the lesson's sources.",
@@ -1710,10 +1710,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "What does Indiana require a municipality to adopt before an annexation ordinance?",
             options: [
-              "A written fiscal plan spelling out services, costs, revenue and the tax effect",
-              "A referendum of the annexed residents",
-              "A county council resolution",
-              "A comprehensive plan amendment",
+              "A written fiscal plan of services, costs, revenue and tax effect",
+              "A binding referendum of the residents who are being annexed",
+              "A formal written resolution first adopted by the county's council",
+              "A prior amendment to the city's comprehensive land use plan",
             ],
             correctIndex: 0,
             explanation: "The Fishers southeast annexation's fiscal plan is dated September 5, 2024 and is published on the city's website. A number without a document is a rumour.",
@@ -1722,10 +1722,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "Why does this course tell you to practise parcel lookups on public and commercial buildings?",
             options: [
-              "Because residential records are not public in Indiana",
-              "Because homes are not assigned parcel numbers",
-              "Because publishing a current occupant's name with their home address is a different act from a public record sitting in a county database",
-              "Because the assessor refuses residential requests",
+              "Because residential parcel records are not public in Indiana",
+              "Because private homes are not assigned any parcel numbers",
+              "Because naming a resident with a home address is a different act",
+              "Because the county assessor refuses all residential requests",
             ],
             correctIndex: 2,
             explanation: "It is the same rule course 1 applied to the Green Book tourist homes, and it does not relax because the neighbourhood is affluent.",
@@ -1734,10 +1734,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "When you find a visible edge between two neighbourhoods, what is it most likely to be?",
             options: [
-              "A school district line",
-              "A township line",
-              "A city limit",
-              "The edge of a subdivision, which is a private plat rather than a jurisdiction",
+              "A school district attendance line marked on the ground",
+              "A township boundary line between two civil townships",
+              "A municipal city limit between two neighbouring cities",
+              "A subdivision edge, a private plat and not a jurisdiction",
             ],
             correctIndex: 3,
             explanation: "Learning to be disappointed by an edge is the skill. None of the four jurisdictional lines in lesson 10 is visible from the ground.",
@@ -1747,9 +1747,9 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
             prompt: "Why does the observation brief tell you to find the sewer?",
             options: [
               "Because sewer lines follow historic property boundaries",
-              "Because sewer maps show the original plats",
-              "Because sewers determine school attendance areas",
-              "Because the boundary between municipal sewer and septic is where remonstrance waivers get signed, making it a political boundary with a twenty year fuse",
+              "Because sewer maps reveal each subdivision's original plat",
+              "Because sewer lines quietly determine school attendance areas",
+              "Because the sewer and septic line is where waivers are signed",
             ],
             correctIndex: 3,
             explanation: "The city extends a pipe and the owner signs away a political right. Lesson 9 showed that settling an annexation of 960 parcels.",
@@ -1758,10 +1758,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "Name the four things a virtual tour of this ground cannot show you.",
             options: [
-              "A boundary, a tax rate, a recorded waiver, and a decision",
-              "Colour, texture, scale and season",
-              "Buildings, streets, signs and vehicles",
-              "Weather, time of day, traffic and noise",
+              "A boundary, a tax rate, a waiver, a decision",
+              "Colour, texture, scale, shadow and season",
+              "Buildings, streets, signs, trees and vehicles",
+              "Weather, time of day, traffic, cars and noise",
             ],
             correctIndex: 0,
             explanation: "A subdivision proves a plat was recorded. It is not evidence about anybody's motive, and none of the four jurisdictional lines has a sign on it.",
@@ -1770,10 +1770,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "Why is Milliken v. Bradley on this course's map?",
             options: [
-              "Because it concerned Indiana schools",
-              "Because it invalidated the 1959 Reorganization Act",
-              "Because the Supreme Court set aside a cross district desegregation remedy in 1974, holding that crossing a district line required a showing of an interdistrict violation or effect",
-              "Because it upheld a suburban annexation",
+              "Because it concerned segregation in Indiana public schools",
+              "Because it invalidated Indiana's 1959 school Reorganization Act",
+              "Because it set aside a cross-district desegregation remedy in 1974",
+              "Because it upheld a large suburban school district annexation",
             ],
             correctIndex: 2,
             explanation: "An Indiana county committee drew a school district line in the early 1960s, and a decade later the federal courts made lines of that kind far harder to cross.",
@@ -1782,10 +1782,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "Why is Black Jack, Missouri on this course's map?",
             options: [
-              "Because the Eighth Circuit held in 1974 that a zoning ordinance adopted after the city's 1970 incorporation violated the Fair Housing Act",
+              "Because a court held its 1970 zoning violated the Fair Housing Act",
               "Because it was the first city in America to use remonstrance waivers",
-              "Because it merged with St. Louis",
-              "Because it has a rivalry like Mudsock",
+              "Because it eventually merged into the nearby city of St. Louis",
+              "Because it has a bitter high school rivalry much like Mudsock",
             ],
             correctIndex: 0,
             explanation: "Lesson 8 taught incorporation as a neutral instrument. Black Jack is the case where a court examined what one was used for.",
@@ -1794,10 +1794,10 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
           {
             prompt: "What do the Shelby County, Tennessee municipal school districts add to this course?",
             options: [
-              "A second example of a high school rivalry",
-              "Evidence that school district lines are still being drawn: six suburban municipalities formed their own districts, opening in 2014 after litigation, following a 2013 merger",
-              "Proof that consolidation always fails",
-              "An example of a successful county-wide district",
+              "A second vivid example of a high school sports rivalry",
+              "Evidence that district lines are still being drawn today",
+              "Proof that school district consolidation always fails",
+              "An example of a successful single county-wide school district",
             ],
             correctIndex: 1,
             explanation: "The lines are not a settled historical artifact. Lesson 10's instrument is in use right now.",

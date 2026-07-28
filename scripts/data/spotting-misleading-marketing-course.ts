@@ -348,10 +348,10 @@ Practical habits: **keep records** (screenshots, receipts, the ad itself, order 
           {
             prompt: "Under the FTC's deception standard, an ad is deceptive when it is…",
             options: [
-              "Annoying or repetitive",
-              "Likely to mislead a reasonable consumer about something material",
-              "Aimed at children",
-              "Longer than 30 seconds",
+              "Annoying, loud, and very repetitive",
+              "Likely to mislead on a material point",
+              "Mainly aimed at young kids and teens",
+              "Longer than thirty seconds of ad airtime",
             ],
             correctIndex: 1,
             explanation:
@@ -361,10 +361,10 @@ Practical habits: **keep records** (screenshots, receipts, the ad itself, order 
           {
             prompt: "What does a \"save up to 70%\" banner actually promise you?",
             options: [
-              "Everything is 70% off",
-              "You'll save at least 70%",
-              "70% is the best possible case, not the typical one",
-              "The average discount is 70%",
+              "Everything in the whole store is 70% off",
+              "You will save at least a full 70%",
+              "70% is the best case, not the typical",
+              "The average discount is a full 70%",
             ],
             correctIndex: 2,
             explanation:
@@ -374,10 +374,10 @@ Practical habits: **keep records** (screenshots, receipts, the ad itself, order 
           {
             prompt: "A paid influencer posts about a product. What does the FTC require?",
             options: [
-              "Nothing, if they liked it",
-              "A clear disclosure like \"#ad\" placed with the endorsement",
+              "Nothing at all, if they liked it",
+              "A clear \"#ad\" with the endorsement",
               "A disclosure only in their profile bio",
-              "Approval from the FTC first",
+              "Prior approval from the FTC first",
             ],
             correctIndex: 1,
             explanation:
@@ -387,10 +387,10 @@ Practical habits: **keep records** (screenshots, receipts, the ad itself, order 
           {
             prompt: "As of 2024, what does the FTC's Consumer Reviews and Testimonials Rule (16 CFR 465) ban?",
             options: [
-              "All online reviews",
-              "Buying or selling fake reviews and fake indicators of social-media influence",
-              "Negative reviews",
-              "Reviews written by customers",
+              "All honest online reviews, without fail",
+              "Buying or selling fake reviews and followers",
+              "Any genuinely negative product review online",
+              "Real reviews written by real paying customers",
             ],
             correctIndex: 1,
             explanation:
@@ -408,10 +408,10 @@ Practical habits: **keep records** (screenshots, receipts, the ad itself, order 
           {
             prompt: "A supplement claims it \"cures diabetes.\" Why is that almost certainly illegal?",
             options: [
-              "Supplements can't mention any body part",
-              "Supplements may make structure/function claims but not claim to cure a disease",
+              "Supplements can't ever mention a body part",
+              "May support function, not cure disease",
               "The word 'diabetes' is trademarked",
-              "Only doctors can sell supplements",
+              "Only licensed doctors can sell them",
             ],
             correctIndex: 1,
             explanation:
@@ -421,10 +421,10 @@ Practical habits: **keep records** (screenshots, receipts, the ad itself, order 
           {
             prompt: "\"Cuts your risk in half!\" can be technically true but misleading because…",
             options: [
-              "Risk can't be measured",
-              "It may hide a tiny absolute change (e.g., 2-in-a-million to 1-in-a-million)",
-              "Halving is always impossible",
-              "It's a form of puffery",
+              "Risk simply cannot be measured at all",
+              "It can hide a tiny absolute change",
+              "Halving a risk is always impossible",
+              "It is just a form of legal puffery",
             ],
             correctIndex: 1,
             explanation:
@@ -434,10 +434,10 @@ Practical habits: **keep records** (screenshots, receipts, the ad itself, order 
           {
             prompt: "What is \"lateral reading\"?",
             options: [
-              "Reading an ad twice",
-              "Opening new tabs to see what independent sources say about a source",
-              "Skimming the fine print",
-              "Reading reviews bottom-to-top",
+              "Reading the same ad twice over",
+              "Opening tabs to check other sources",
+              "Skimming through the fine print",
+              "Reading all reviews from bottom to top",
             ],
             correctIndex: 1,
             explanation:
@@ -447,10 +447,10 @@ Practical habits: **keep records** (screenshots, receipts, the ad itself, order 
           {
             prompt: "Where would you report a deceptive advertisement or a scam?",
             options: [
-              "The FCC only",
-              "The FTC (ReportFraud.ftc.gov), and your state Attorney General",
-              "Nowhere, nothing can be done",
-              "The company that ran the ad",
+              "Only the FCC, and no one else at all",
+              "The FTC and your state Attorney General",
+              "Nowhere, since nothing can be done at all",
+              "Only the company that ran the ad itself",
             ],
             correctIndex: 1,
             explanation:

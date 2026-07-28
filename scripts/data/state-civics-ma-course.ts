@@ -303,10 +303,10 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
           {
             prompt: "What is notable about the Massachusetts Constitution of 1780?",
             options: [
-              "It was the first to abolish courts",
-              "It is the oldest functioning written constitution in the world, drafted by John Adams",
-              "It has never been amended",
-              "It created a unicameral legislature",
+              "It was the first American constitution to abolish all state courts",
+              "It is the oldest functioning written constitution in the world",
+              "It was replaced by three later Massachusetts constitutions",
+              "It created a single-chamber legislature with no state senate",
             ],
             correctIndex: 1,
             explanation:
@@ -324,10 +324,10 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
           {
             prompt: "What does the elected Governor's Council do?",
             options: [
-              "Writes the state budget",
+              "Writes and passes the annual state operating budget",
               "Confirms judicial appointments and approves pardons",
-              "Runs the public schools",
-              "Commands the National Guard",
+              "Runs every public school district in the Commonwealth",
+              "Commands the state National Guard during emergencies",
             ],
             correctIndex: 1,
             explanation:
@@ -337,10 +337,10 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
           {
             prompt: "How does Massachusetts choose its judges?",
             options: [
-              "Partisan elections",
-              "The Legislature elects them",
-              "The Governor nominates and the Governor's Council confirms; judges serve to age 70",
-              "A citizens' commission elects them",
+              "Statewide partisan elections held on the first Tuesday in November",
+              "Both chambers of the state Legislature jointly elect them",
+              "The Governor nominates and the Governor's Council confirms them",
+              "A nonpartisan citizens' commission elects them by public vote",
             ],
             correctIndex: 2,
             explanation:
@@ -350,10 +350,10 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
           {
             prompt: "What makes Massachusetts's initiative process 'indirect'?",
             options: [
-              "Only the Governor can start it",
-              "A citizen petition goes to the Legislature first; only if it declines does the measure go to voters",
-              "It can never reach the ballot",
-              "It applies only to local governments",
+              "Only the sitting Governor is allowed to begin such a petition drive",
+              "A petition goes to the Legislature before it can reach the ballot",
+              "It can never appear on the statewide general election ballot",
+              "It applies only to local city and town governments statewide",
             ],
             correctIndex: 1,
             explanation:
@@ -363,10 +363,10 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
           {
             prompt: "What is an 'open town meeting' in Massachusetts?",
             options: [
-              "A closed session of the Legislature",
-              "A gathering where any registered voter can attend, speak, and vote on the town budget and bylaws",
-              "A meeting only for elected officials",
-              "A statewide referendum",
+              "A private closed-door session of the state House and Senate",
+              "A meeting where any registered voter can vote on town budgets",
+              "A private meeting open only to elected officials and staff",
+              "A binding statewide referendum decided by every registered voter",
             ],
             correctIndex: 1,
             explanation:
@@ -376,10 +376,10 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
           {
             prompt: "What happened to many Massachusetts county governments around 1997 to 2000?",
             options: [
-              "They were given new powers",
+              "They were each granted broad new taxing and law-enforcement powers",
               "Several were abolished and their functions absorbed by the state",
-              "They merged into one county",
-              "They became independent cities",
+              "They all merged together into one large statewide county",
+              "They each became fully independent new self-chartered cities",
             ],
             correctIndex: 1,
             explanation:
@@ -389,10 +389,10 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
           {
             prompt: "What did the 2022 VOTES Act do?",
             options: [
-              "Ended mail voting",
-              "Expanded no-excuse mail voting, early voting, and same-day registration",
-              "Abolished the Governor's Council",
-              "Required property ownership to vote",
+              "Ended all mail-in and absentee voting across the Commonwealth",
+              "Expanded mail voting, early voting, and same-day registration",
+              "Abolished the eight-member elected Governor's Council entirely",
+              "Required every voter to own property before registering to vote",
             ],
             correctIndex: 1,
             explanation:
@@ -402,10 +402,10 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
           {
             prompt: "Which two statewide officers do Massachusetts voters elect separately from the Governor?",
             options: [
-              "The Chief Justice and the Speaker",
-              "The Attorney General and the Secretary of the Commonwealth (among others)",
-              "Two U.S. Senators",
-              "The county sheriffs only",
+              "The Chief Justice and the Speaker of the House of Representatives",
+              "The Attorney General and the Secretary of the Commonwealth",
+              "Both of the state's two United States Senators in Congress",
+              "Only the elected county sheriffs and district registers",
             ],
             correctIndex: 1,
             explanation:
@@ -415,10 +415,10 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
           {
             prompt: "Why does this course tell you to VERIFY Massachusetts's voting rules?",
             options: [
-              "Because Massachusetts has no elections office",
-              "Because the VOTES Act's rules are phasing in and are administered by local clerks, so confirm current details at [sec.state.ma.us](https://sec.state.ma.us)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Massachusetts keeps no central statewide elections office",
+              "Because the VOTES Act rules are phasing in and run by local clerks",
+              "Because only the U.S. Congress sets state voting rules",
+              "Because every ballot cast in the state is fully secret",
             ],
             correctIndex: 1,
             explanation:

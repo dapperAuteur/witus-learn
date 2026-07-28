@@ -311,10 +311,10 @@ Once reported, the passport is **permanently invalid**, even if you find it late
           {
             prompt: "Can a U.S. passport card be used to fly internationally?",
             options: [
-              "Yes, on any international flight",
-              "No, it's valid only for land/sea entry from Canada, Mexico, Bermuda, and certain Caribbean destinations",
-              "Only on flights to Canada",
-              "Only if paired with a driver's license",
+              "Yes, on any international flight from any U.S. airport",
+              "No, only for land or sea entry from nearby countries",
+              "Yes, but only on short flights to Canada or Mexico",
+              "Yes, if paired with a REAL ID driver's license",
             ],
             correctIndex: 1,
             explanation:
@@ -325,9 +325,9 @@ Once reported, the passport is **permanently invalid**, even if you find it late
             prompt: "As a first-time applicant, when should you sign Form DS-11?",
             options: [
               "Before your appointment, so it's ready to hand over",
-              "At your appointment, only when the acceptance official tells you to",
-              "It doesn't need to be signed",
-              "Anytime, as long as it's dated",
+              "At the appointment, when the acceptance agent says to",
+              "You never sign it; the official signs it for you",
+              "Anytime at home, as long as you date and initial it",
             ],
             correctIndex: 1,
             explanation:
@@ -350,8 +350,8 @@ Once reported, the passport is **permanently invalid**, even if you find it late
           {
             prompt: "Why doesn't this course print a specific passport fee amount or number of weeks for processing?",
             options: [
-              "Those numbers are secret",
-              "Fees and processing times change over time, so the course points you to the current official numbers instead",
+              "Those figures are secret and not shared with the public",
+              "Fees and processing times change, so verify the current ones",
               "Every applicant pays a different, unpredictable amount",
               "The Department of State doesn't publish that information",
             ],
@@ -363,10 +363,10 @@ Once reported, the passport is **permanently invalid**, even if you find it late
           {
             prompt: "You're eligible to renew by mail with Form DS-82, but you also want to renew online. What extra condition applies ONLY to online renewal?",
             options: [
-              "You must be at least 25 and not traveling internationally within 6 weeks",
-              "You must renew at a passport agency in person",
-              "You must have a passport card, not a book",
-              "There's no extra condition, mail eligibility is the same as online eligibility",
+              "You must be 25 or older and not fly abroad within 6 weeks",
+              "You must renew in person at a regional passport agency",
+              "You must be renewing a passport card, not the book",
+              "There's no extra rule; online and mail rules match",
             ],
             correctIndex: 0,
             explanation:
@@ -376,10 +376,10 @@ Once reported, the passport is **permanently invalid**, even if you find it late
           {
             prompt: "For a child under 16, what must an absent parent typically provide if they can't appear in person?",
             options: [
-              "Nothing, one parent is always enough",
-              "A notarized Statement of Consent, Form DS-3053, submitted within 90 days of notarization",
+              "Nothing; one parent appearing is always enough",
+              "A notarized Statement of Consent, Form DS-3053",
               "A verbal phone confirmation to the acceptance official",
-              "A copy of the child's birth certificate only",
+              "A photocopy of the child's birth certificate only",
             ],
             correctIndex: 1,
             explanation:
@@ -389,10 +389,10 @@ Once reported, the passport is **permanently invalid**, even if you find it late
           {
             prompt: "Once you report a passport lost or stolen, and later find it, can you use it to travel?",
             options: [
-              "Yes, once you report it found",
-              "No, it's permanently invalid, even if you find it later",
-              "Yes, for domestic travel only",
-              "Only if you call to reactivate it",
+              "Yes, once you report to the agency that you found it",
+              "No, it's permanently invalid even if you find it",
+              "Yes, but for domestic flights within the U.S. only",
+              "Yes, if you call the passport center to reactivate it",
             ],
             correctIndex: 1,
             explanation:
@@ -403,9 +403,9 @@ Once reported, the passport is **permanently invalid**, even if you find it late
             prompt: "What is the 'six-month validity rule' many countries apply?",
             options: [
               "Your passport must not have expired more than six months ago",
-              "Your passport must be valid for at least six months beyond your trip's dates",
-              "You can only travel for six months on one passport",
-              "Passports are only checked every six months",
+              "Your passport must stay valid six months past your trip",
+              "You may only travel abroad six months on one passport",
+              "Border agents recheck your passport every six months",
             ],
             correctIndex: 1,
             explanation:

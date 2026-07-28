@@ -402,8 +402,8 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "When did Georgia's current constitution take effect, and how can it be amended?",
             options: [
-              "1877: only by a citizen signature initiative",
-              "1983: amendments are proposed by a two-thirds vote of each house of the General Assembly, then ratified by voters",
+              "1877: only by a statewide signature initiative",
+              "1983: a two-thirds vote of each house, then voters",
               "1945: amendments are made by the Governor alone",
               "2010: amendments require approval of the U.S. Congress",
             ],
@@ -415,10 +415,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "Which best describes Georgia's Lieutenant Governor?",
             options: [
-              "Elected on a joint ticket with the Governor and has no legislative role",
-              "Appointed by the Governor",
-              "Elected separately from the Governor (can be a different party) and presides over the State Senate",
-              "Chosen by the General Assembly",
+              "Elected on a joint ticket with the Governor",
+              "Appointed directly by the sitting Governor",
+              "Elected separately, presides over the Senate",
+              "Chosen by a vote of the General Assembly",
             ],
             correctIndex: 2,
             explanation:
@@ -441,9 +441,9 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "How are Georgia's Supreme Court justices and Court of Appeals judges selected?",
             options: [
-              "Partisan statewide elections with a party label on the ballot",
+              "Partisan statewide elections with party labels",
               "Lifetime appointment by the U.S. President",
-              "Nonpartisan statewide elections to six-year terms (with the Governor filling mid-term vacancies)",
+              "Nonpartisan statewide elections to six-year terms",
               "Chosen by the county boards of commissioners",
             ],
             correctIndex: 2,
@@ -455,7 +455,7 @@ The practical payoff: **who provides your service depends on where you live**: i
             prompt: "To override a Georgia Governor's veto, the General Assembly needs:",
             options: [
               "A simple majority of each house",
-              "A two-thirds vote of the members of each house",
+              "A two-thirds vote of each house",
               "Approval of the state Supreme Court",
               "A statewide citizen initiative",
             ],
@@ -467,7 +467,7 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "Which statement about Georgia local government is correct?",
             options: [
-              "Georgia has 159 counties (the second-most of any state) and no townships",
+              "Georgia has 159 counties and no townships at all",
               "Georgia has 254 counties and thousands of townships",
               "Georgia has no counties, only special districts",
               "Every Georgia city must merge with its county",
@@ -480,10 +480,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "What is a 'consolidated city-county government' in Georgia, and which was the first?",
             options: [
-              "A township that governs several counties; the first was Athens-Clarke",
-              "A merged city and county under one government; Columbus-Muscogee (1971) was Georgia's first",
-              "A federal district; the first was Augusta-Richmond",
-              "A special district for schools only; the first was Macon-Bibb",
+              "A township over several counties; first Athens-Clarke",
+              "A merged city and county; first Columbus-Muscogee",
+              "A federal district; first was Augusta-Richmond",
+              "A schools-only district; first was Macon-Bibb",
             ],
             correctIndex: 1,
             explanation:
@@ -494,8 +494,8 @@ The practical payoff: **who provides your service depends on where you live**: i
             prompt: "What triggers a runoff election in Georgia?",
             options: [
               "A tie in the state legislature",
-              "No candidate winning an outright majority (more than 50%), sending the top two to a second election",
-              "A judge ordering a recount",
+              "No candidate wins over 50% of votes",
+              "A state judge orders a recount",
               "The Governor calling one at will",
             ],
             correctIndex: 1,
@@ -506,10 +506,10 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "Which is an accurate change made by Georgia's Senate Bill 202 (2021)?",
             options: [
-              "It created a statewide citizen initiative",
-              "Absentee ballots are now verified using an ID number rather than signature match, and drop boxes were moved inside early-voting sites",
-              "It abolished in-person early voting",
-              "It required the Governor to sign every constitutional amendment",
+              "It created a brand-new statewide citizen initiative",
+              "Absentee ballots verified by ID, not signature",
+              "It abolished all in-person early voting statewide",
+              "It required the Governor to sign every amendment",
             ],
             correctIndex: 1,
             explanation:
@@ -519,9 +519,9 @@ The practical payoff: **who provides your service depends on where you live**: i
           {
             prompt: "Because Georgia has no citizen initiative, what is the main way to change state law or the constitution?",
             options: [
-              "Gather petition signatures to put a law directly on the ballot",
-              "Elect and persuade legislators (who are the gatekeepers for what reaches the ballot) and vote on the amendments they refer",
-              "Petition the U.S. Supreme Court",
+              "Gather petition signatures to put a law on the ballot",
+              "Elect legislators and vote on amendments they refer",
+              "Petition the U.S. Supreme Court to rule on it",
               "Ask the Governor to write new statutes directly",
             ],
             correctIndex: 1,

@@ -58,6 +58,17 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
     ...(showMap ? [{ href: "/explore", label: "Explore" }] : []),
     ...(flags.paths ? [{ href: "/paths", label: "Paths" }] : []),
     { href: "/instructors", label: "Instructors" },
+    // Bundles is a per-tenant commerce page (works on any school), so it is always available.
+    { href: "/bundles", label: "Bundles" },
+    // The recruiting front door's marketing/discovery pages: the per-audience landing pages
+    // (/for + /for/<audience>) and the brand directory (/schools). Both 404 on a white-label school
+    // (tenant.flags.recruiting), so gate the links on the SAME flag or they would be dead menu entries.
+    ...(flags.recruiting
+      ? [
+          { href: "/for", label: "Who it's for" },
+          { href: "/schools", label: "Our schools" },
+        ]
+      : []),
   ];
 
   // Only rendered for instructors/brand admins/the platform owner (canTeach). The two

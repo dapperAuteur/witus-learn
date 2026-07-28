@@ -235,10 +235,10 @@ So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking
           {
             prompt: "What is unusual about Oklahoma's highest courts?",
             options: [
-              "It has no high court",
-              "It has TWO: a civil Supreme Court and a Court of Criminal Appeals (like Texas)",
-              "Its high court is federal",
-              "Its high court has 50 members",
+              "It has no high court and sends all appeals to the U.S. Congress",
+              "It has TWO: a civil Supreme Court and a Court of Criminal Appeals",
+              "Its single high court is a federal court based in Washington",
+              "Its single high court has exactly 50 elected justices on it",
             ],
             correctIndex: 1,
             explanation:
@@ -251,7 +251,7 @@ So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking
               "The Oklahoma Supreme Court",
               "The Court of Criminal Appeals",
               "The Corporation Commission",
-              "A federal court",
+              "A federal appeals court in D.C.",
             ],
             correctIndex: 1,
             explanation:
@@ -261,10 +261,10 @@ So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking
           {
             prompt: "What is distinctive about Oklahoma's executive branch?",
             options: [
-              "The Governor appoints everyone",
-              "It is one of the largest plural executives, electing many statewide officials separately",
-              "It has no elected officials",
-              "The Legislature runs it",
+              "The Governor alone appoints every other statewide executive officer",
+              "One of the largest plural executives, electing many officials separately",
+              "It has no separately elected executive officials besides the Governor",
+              "The state Legislature runs it and appoints all executive officers",
             ],
             correctIndex: 1,
             explanation:
@@ -287,10 +287,10 @@ So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking
           {
             prompt: "What direct-democracy tools do Oklahomans have?",
             options: [
-              "None",
-              "Initiative (statutes and amendments) and referendum, from the original 1907 constitution",
-              "Only recall of judges",
-              "Only advisory votes",
+              "None; Oklahoma bans all citizen-led ballot measures entirely",
+              "Initiative and referendum, from the original 1907 constitution",
+              "Only the power to recall sitting judges and nothing else",
+              "Only non-binding advisory votes that carry no legal force",
             ],
             correctIndex: 1,
             explanation:
@@ -313,10 +313,10 @@ So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking
           {
             prompt: "How does Oklahoma choose its appellate judges?",
             options: [
-              "Partisan elections",
-              "Merit selection (commission → Governor appoints) plus retention elections",
-              "The Legislature elects them",
-              "Lifetime appointment",
+              "Partisan statewide elections held every six-year cycle",
+              "Merit selection by a commission, plus retention elections",
+              "The state Legislature elects them by a majority vote",
+              "Lifetime appointment by the Governor with no later review",
             ],
             correctIndex: 1,
             explanation:
@@ -326,10 +326,10 @@ So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking
           {
             prompt: "What did McGirt v. Oklahoma (2020) establish?",
             options: [
-              "That Oklahoma has no counties",
-              "That much of eastern Oklahoma remains a tribal reservation for purposes of certain criminal jurisdiction",
-              "That the Governor controls the courts",
-              "That Oklahoma must join Texas",
+              "That Oklahoma has no counties and its county map must be redrawn entirely",
+              "That much of eastern Oklahoma is still a reservation for some criminal cases",
+              "That the Governor now directly controls all of the state courts and tribes",
+              "That Oklahoma must merge its entire court system with the state of Texas",
             ],
             correctIndex: 1,
             explanation:
@@ -347,10 +347,10 @@ So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking
           {
             prompt: "Why does this course tell you to VERIFY Oklahoma's tribal-jurisdiction and voting details?",
             options: [
-              "Because Oklahoma has no government website",
-              "Because McGirt's implications are still evolving and voting rules are run by county boards and change. Confirm at authoritative sources / elections.ok.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Oklahoma has no official state government website at all online",
+              "Because McGirt's effects are still evolving and local county boards run voting",
+              "Because only the U.S. Congress in Washington sets all of these voting rules",
+              "Because voting is secret and no official state rules are ever published",
             ],
             correctIndex: 1,
             explanation:

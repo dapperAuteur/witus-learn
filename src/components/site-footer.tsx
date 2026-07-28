@@ -14,6 +14,15 @@ export function SiteFooter({ tenant }: { tenant: TenantRecord }) {
           © {brandName(tenant)}
         </p>
         <ul className="flex flex-wrap gap-4">
+          {/* The platform pitch is the recruiting front door only (404 on a white-label school), so
+              gate the link on the same flag to avoid a dead footer entry. */}
+          {tenant.flags.recruiting ? (
+            <li>
+              <Link className="hover:underline" href="/platform">
+                Platform
+              </Link>
+            </li>
+          ) : null}
           {legal.termsUrl ? (
             <li>
               <Link className="hover:underline" href="/terms">

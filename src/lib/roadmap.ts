@@ -416,10 +416,10 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   count (a genuine TpT selling point), pulled from the standards data. Packets live in
   \`plans/future-courses/tpt-packets/\`; seven are built (great-migration, indiana/illinois/arizona
   civics, us-constitution, woop, and Green Book). Recommendations, not sales promises.
-- 🔧 **Per-audience landing pages** (\`/for/<audience>\` + a \`/for\` index): teachers, school leaders,
+- ✅ **Per-audience landing pages** (\`/for/<audience>\` + a \`/for\` index): teachers, school leaders,
   parents, homeschool families, and community leaders each get a page written in their own terms,
   above the two general pages (\`/platform\`, \`/explore\`). Recruiting-tenant only, 404 on a white-label
-  school, linked from the homepage as "Who is it for?". One \`AudienceLandingContent\` type and one
+  school, and reachable from BOTH the homepage and the Explore nav menu ("Who it's for"). One \`AudienceLandingContent\` type and one
   shared renderer keep them consistent; each audience is a small content file resolved by a dynamic
   route. **No invented stats, efficacy claims, testimonials, or prices** (the type file states the
   rule): the pages lean on what is now genuinely verifiable, the real per-state standards alignment,

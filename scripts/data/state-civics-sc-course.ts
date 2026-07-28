@@ -274,10 +274,10 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
           {
             prompt: "What does it mean that South Carolina is a 'legislative state'?",
             options: [
-              "It has no legislature",
-              "The General Assembly has historically dominated government, with a weak governor",
-              "Only the Governor makes law",
-              "Judges write all laws",
+              "The state has no legislature and is run by the courts",
+              "The General Assembly dominated, with a weak governor",
+              "Only the Governor may write and pass all state laws",
+              "Elected judges alone write all the state's statutes yearly",
             ],
             correctIndex: 1,
             explanation:
@@ -287,10 +287,10 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
           {
             prompt: "Which states elect their judges through the Legislature?",
             options: [
-              "Every state",
+              "Every state in the entire nation",
               "South Carolina and Virginia",
-              "Only California",
-              "No states do this",
+              "Only California and Oregon",
+              "No states do this any longer",
             ],
             correctIndex: 1,
             explanation:
@@ -300,10 +300,10 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
           {
             prompt: "What screening step precedes a South Carolina judicial election?",
             options: [
-              "A public referendum",
-              "The Judicial Merit Selection Commission screens candidates for qualifications",
-              "A gubernatorial veto",
-              "A jury trial",
+              "A statewide public referendum of all registered voters",
+              "A Judicial Merit Selection Commission screening",
+              "A gubernatorial veto followed by a Senate override",
+              "A jury trial held before a sitting circuit judge",
             ],
             correctIndex: 1,
             explanation:
@@ -313,10 +313,10 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
           {
             prompt: "Why does South Carolina elect so many separate statewide officials?",
             options: [
-              "To make the Governor stronger",
-              "Because its tradition of a weak governor spread executive power across many elected officers",
-              "Because the federal government requires it",
-              "Because it has no Governor",
+              "To make the state's Governor much stronger and central",
+              "Because a weak-governor tradition spread power out",
+              "Because the federal government requires it by law",
+              "Because South Carolina elects no Governor at all",
             ],
             correctIndex: 1,
             explanation:
@@ -326,10 +326,10 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
           {
             prompt: "Which reform strengthened South Carolina's Governor in 2018?",
             options: [
-              "Abolishing the Legislature",
-              "Joining the Governor and Lieutenant Governor on a single ticket",
-              "Making the Governor a judge",
-              "Ending elections",
+              "Abolishing the state's entire General Assembly outright",
+              "Governor and Lieutenant Governor share one ticket",
+              "Making the Governor the chief Supreme Court justice",
+              "Ending all statewide elections held in the state",
             ],
             correctIndex: 1,
             explanation:
@@ -352,10 +352,10 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
           {
             prompt: "Can South Carolina citizens put a law on the ballot by petition?",
             options: [
-              "Yes, a strong initiative",
-              "No, there is no citizen initiative; amendments run through the General Assembly",
-              "Only in even years",
-              "Only for schools",
+              "Yes, through a strong statewide initiative process",
+              "No, there is no citizen initiative statewide",
+              "Only during even-numbered statewide election years",
+              "Only for local school district ballot measures",
             ],
             correctIndex: 1,
             explanation:
@@ -365,10 +365,10 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
           {
             prompt: "What did the Home Rule Act of 1975 do?",
             options: [
-              "Abolished counties",
-              "Gave South Carolina counties more self-governing power through elected county councils",
-              "Created a state income tax",
-              "Made the Governor a judge",
+              "Abolished all of the state's existing county councils",
+              "Gave counties home-rule power via county councils",
+              "Created South Carolina's first state income tax",
+              "Made the Governor the state's chief trial judge",
             ],
             correctIndex: 1,
             explanation:
@@ -392,9 +392,9 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
             prompt: "Why does this course tell you to VERIFY South Carolina's structure and voting rules?",
             options: [
               "Because South Carolina has no government website",
-              "Because the state is actively reforming its executive branch and voting rules change and are run by counties: confirm at scstatehouse.gov / scvotes.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because reforms continue and voting rules change",
+              "Because only the U.S. Congress can set these rules",
+              "Because all voting in the state is entirely secret",
             ],
             correctIndex: 1,
             explanation:

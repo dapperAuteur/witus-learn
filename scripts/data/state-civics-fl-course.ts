@@ -430,10 +430,10 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
           {
             prompt: "What is distinctive about Florida's Constitution Revision Commission (CRC)?",
             options: [
-              "It meets every year to rewrite the budget",
-              "It meets once every 20 years and can place proposals directly on the ballot",
-              "It is appointed by the U.S. President",
-              "It replaces the Legislature during its session",
+              "It meets each year only to rewrite the whole state budget",
+              "It meets every 20 years and sends proposals to the ballot",
+              "It is appointed entirely by the U.S. President in Washington",
+              "It replaces the state Legislature during the 60-day session",
             ],
             correctIndex: 1,
             explanation:
@@ -443,10 +443,10 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
           {
             prompt: "Besides the Governor, who makes up the Florida Cabinet?",
             options: [
-              "The Speaker, the Senate President, and the Chief Justice",
-              "The Lieutenant Governor, Secretary of State, and Treasurer",
-              "The separately-elected Attorney General, Chief Financial Officer, and Commissioner of Agriculture",
-              "Three members appointed by the Governor",
+              "The House Speaker, the Senate President, and Chief Justice",
+              "The Lieutenant Governor, the Secretary of State, and the Treasurer",
+              "The Attorney General, the CFO, and the Agriculture Commissioner",
+              "Three deputies whom the Governor personally appoints each term",
             ],
             correctIndex: 2,
             explanation:
@@ -456,10 +456,10 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
           {
             prompt: "How does Florida select its Supreme Court and District Court of Appeal judges?",
             options: [
-              "Partisan statewide elections",
-              "Lifetime appointment by the Legislature",
-              "Merit selection (nominating commission + governor) followed by yes/no retention votes",
-              "Appointment by the U.S. President",
+              "Contested partisan elections held statewide each cycle",
+              "Lifetime appointment by the Florida Legislature in Tallahassee",
+              "A nominating commission and the Governor, then retention votes",
+              "Direct appointment by the U.S. President and the U.S. Senate",
             ],
             correctIndex: 2,
             explanation:
@@ -482,10 +482,10 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
           {
             prompt: "Which statement about Florida's local government is correct?",
             options: [
-              "Florida has townships between its counties and cities",
-              "Florida has 67 counties, split into charter and non-charter counties, and NO townships",
-              "Florida has no counties, only municipalities",
-              "Every Florida county has an identical, state-mandated structure",
+              "Florida has townships layered between its counties and cities",
+              "Florida has 67 counties, charter and non-charter, and no townships",
+              "Florida has no counties at all, only its incorporated municipalities",
+              "Every Florida county shares one identical state-set structure",
             ],
             correctIndex: 1,
             explanation:
@@ -495,10 +495,10 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
           {
             prompt: "What does it mean that Florida holds 'closed primaries'?",
             options: [
-              "Anyone can vote in any party's primary",
-              "Only voters registered in a party may vote in that party's primary (with a universal-primary exception)",
-              "Primaries are held in secret with no public results",
-              "Only incumbents may run in a primary",
+              "Any registered voter may vote in either party's own primary",
+              "Only voters registered in a party may vote in its primary",
+              "Primaries are held in secret with no vote results released",
+              "Only incumbent officeholders are allowed to run in a primary",
             ],
             correctIndex: 1,
             explanation:
@@ -508,10 +508,10 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
           {
             prompt: "What recently changed about Florida's vote-by-mail rules (SB 90 in 2021, SB 524 in 2022)?",
             options: [
-              "Vote-by-mail was abolished",
-              "A mail-ballot request now expires faster (roughly by the end of the next general-election year) and you must supply an ID number",
-              "Every voter is automatically mailed a ballot",
-              "Mail ballots no longer require any deadline",
+              "Vote-by-mail was abolished completely across all of Florida",
+              "A mail request now expires sooner and needs an ID number",
+              "Every registered voter is now automatically mailed a ballot",
+              "Mail ballots no longer have any request deadline at all",
             ],
             correctIndex: 1,
             explanation:
@@ -521,10 +521,10 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
           {
             prompt: "Roughly what must a Florida citizen initiative collect to reach the ballot?",
             options: [
-              "Nothing: the Governor puts it on the ballot",
-              "Signatures equal to about 8% of the last presidential vote, spread across at least half the congressional districts, then Florida Supreme Court review",
-              "A two-thirds vote of the Legislature",
-              "Approval from every county commission",
+              "Nothing at all: the Governor alone places it on the ballot",
+              "Signatures near 8% of the last presidential vote statewide",
+              "A two-thirds override vote of both legislative chambers",
+              "Formal approval from all 67 of Florida's county commissions",
             ],
             correctIndex: 1,
             explanation:

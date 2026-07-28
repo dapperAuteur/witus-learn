@@ -267,9 +267,9 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
           {
             prompt: "What was Vermont before it became a state in 1791?",
             options: [
-              "A British colony until 1791",
-              "An independent republic (1777 to 1791) with its own constitution",
-              "Part of Canada",
+              "A British royal colony governed until 1791",
+              "An independent republic from 1777 to 1791",
+              "A northern province of British-ruled Canada",
               "A territory of New York with no government",
             ],
             correctIndex: 1,
@@ -280,10 +280,10 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
           {
             prompt: "What did Vermont's 1777 constitution do first in America?",
             options: [
-              "Created a unicameral legislature",
-              "Banned adult slavery and dropped property requirements for voting",
-              "Abolished courts",
-              "Created a state income tax",
+              "Established a two-house bicameral state legislature",
+              "Banned adult slavery and ended property tests for voting",
+              "Abolished all courts across the entire new republic",
+              "Created the first permanent state income tax in the nation",
             ],
             correctIndex: 1,
             explanation:
@@ -301,10 +301,10 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
           {
             prompt: "What happens if no candidate for Vermont Governor wins a majority?",
             options: [
-              "The top vote-getter wins anyway",
-              "The Legislature (General Assembly) chooses the winner from the top finishers",
-              "A new election is held immediately",
-              "The office stays vacant",
+              "The top vote-getter automatically wins the office",
+              "The General Assembly chooses from the top finishers",
+              "A brand-new statewide runoff election is held at once",
+              "The Governor's office simply stays vacant for the term",
             ],
             correctIndex: 1,
             explanation:
@@ -314,9 +314,9 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
           {
             prompt: "How are Vermont's judges retained?",
             options: [
-              "By yes/no votes of the people",
-              "By a vote of the General Assembly (the Legislature)",
-              "By the Governor alone",
+              "By yes/no retention votes of the people",
+              "By a vote of the General Assembly",
+              "By the sitting Governor acting alone",
               "They serve for life with no review",
             ],
             correctIndex: 1,
@@ -327,10 +327,10 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
           {
             prompt: "What is Town Meeting Day in Vermont?",
             options: [
-              "A closed session of the Legislature",
-              "An annual March gathering where any registered voter can debate and vote on the town budget and local questions",
-              "A meeting only for town officials",
-              "A statewide primary",
+              "A closed annual session of the state Legislature",
+              "A March meeting where voters decide the town budget",
+              "A private meeting held only for elected town officials",
+              "A statewide partisan primary election in March",
             ],
             correctIndex: 1,
             explanation:
@@ -340,10 +340,10 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
           {
             prompt: "Why is county government minor in Vermont?",
             options: [
-              "Vermont has no counties",
-              "Counties are mainly judicial districts; the town is the center of local government",
-              "The Governor runs every county",
-              "Counties were sold to private companies",
+              "Vermont's 14 counties were all dissolved in a 1968 reform",
+              "Counties are mainly judicial districts, not local government",
+              "The Governor personally runs every one of the counties",
+              "Vermont's counties were all long ago sold to private companies",
             ],
             correctIndex: 1,
             explanation:
@@ -366,10 +366,10 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
           {
             prompt: "Does Vermont have a statewide citizen initiative?",
             options: [
-              "Yes, a strong one",
-              "No, its direct democracy happens locally, on Town Meeting Day",
-              "Only for taxes",
-              "Only in leap years",
+              "Yes, a strong statewide ballot-petition initiative",
+              "No, its direct democracy happens on Town Meeting Day",
+              "Yes, but only for statewide tax and budget questions",
+              "Yes, but it is allowed only during leap election years",
             ],
             correctIndex: 1,
             explanation:
@@ -379,10 +379,10 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
           {
             prompt: "Why does this course tell you to VERIFY Vermont's voting rules?",
             options: [
-              "Because Vermont has no elections office",
-              "Because details and deadlines are administered by town clerks and can change, confirm at [sos.vermont.gov](https://sos.vermont.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Vermont has no statewide elections office at all",
+              "Because town clerks administer voting and rules can change",
+              "Because only the U.S. Congress sets all state voting rules",
+              "Because the secret ballot hides all the current rules",
             ],
             correctIndex: 1,
             explanation:

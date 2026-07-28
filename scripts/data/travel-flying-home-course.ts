@@ -318,10 +318,10 @@ The bottom line: know that tiers exist and that alcohol/tobacco are separate and
           {
             prompt: "When landing back in the U.S. with a connecting domestic flight, when must you clear CBP?",
             options: [
-              "Only at your final destination airport",
-              "At your first U.S. airport of arrival, even if it isn't your final destination",
+              "Only at your final destination airport after landing",
+              "At your first U.S. airport of arrival, not the final one",
               "You don't need to clear CBP if you're a U.S. citizen",
-              "Only if you have something to declare",
+              "Only if you have items over the exemption to declare",
             ],
             correctIndex: 1,
             explanation:
@@ -331,10 +331,10 @@ The bottom line: know that tiers exist and that alcohol/tobacco are separate and
           {
             prompt: "What are the three numbers in TSA's 3-1-1 liquids rule?",
             options: [
-              "3 bags, 1 liter each, 1 passenger",
-              "3.4 oz (100 mL) per container, 1 quart-size bag, 1 bag per passenger",
-              "3 hours early, 1 ID, 1 boarding pass",
-              "3 liquids max, 1 gel, 1 aerosol",
+              "3 bags of 1 liter each, 1 bag per passenger allowed",
+              "3.4 oz per container, 1 quart-size bag, 1 per passenger",
+              "3 hours early, 1 photo ID, and 1 printed boarding pass",
+              "3 liquids max, 1 gel, and 1 aerosol container per bag",
             ],
             correctIndex: 1,
             explanation:
@@ -344,9 +344,9 @@ The bottom line: know that tiers exist and that alcohol/tobacco are separate and
           {
             prompt: "What's the one-line difference between what TSA PreCheck speeds up and what Global Entry speeds up?",
             options: [
-              "They do the exact same thing",
-              "PreCheck speeds up leaving a U.S. airport; Global Entry speeds up returning to the U.S., and includes PreCheck benefits",
-              "PreCheck is for international flights only; Global Entry is for domestic flights only",
+              "They do the exact same thing at every airport security checkpoint",
+              "PreCheck speeds departure screening; Global Entry speeds reentry",
+              "PreCheck covers international flights; Global Entry covers domestic",
               "PreCheck is free; Global Entry always costs more with no added benefit",
             ],
             correctIndex: 1,
@@ -357,8 +357,8 @@ The bottom line: know that tiers exist and that alcohol/tobacco are separate and
           {
             prompt: "How is CBP's job different from TSA's?",
             options: [
-              "They're the same agency with different names",
-              "TSA screens for security threats before boarding; CBP decides who and what may legally enter the U.S. at the border",
+              "They're the same federal agency under two different names",
+              "TSA screens for threats; CBP controls who enters the U.S.",
               "TSA only works overseas; CBP only works domestically",
               "CBP handles airline check-in; TSA handles customs",
             ],
@@ -391,9 +391,9 @@ The bottom line: know that tiers exist and that alcohol/tobacco are separate and
           {
             prompt: "If you're unsure whether an item you're bringing back needs to be declared, what should you do?",
             options: [
-              "Leave it undeclared to save time",
-              "Declare it, there's no penalty for declaring, even if the item turns out to be restricted or prohibited",
-              "Only declare it if it's worth more than $1,000",
+              "Leave it undeclared to save time at the checkpoint",
+              "Declare it; there's no penalty just for declaring",
+              "Only declare it if it's worth over $1,000 in total",
               "Ask another passenger for advice instead of declaring it",
             ],
             correctIndex: 1,
@@ -404,10 +404,10 @@ The bottom line: know that tiers exist and that alcohol/tobacco are separate and
           {
             prompt: "Why doesn't this course print a fixed dollar amount for the duty-free personal exemption?",
             options: [
-              "CBP keeps that number secret",
-              "The exemption tier depends on which countries you visited and how long you were gone, and the amounts can change, so the course points to CBP's own tool for the current figure",
-              "Every traveler gets the exact same exemption regardless of trip details",
-              "Duty-free exemptions no longer exist",
+              "CBP keeps the exemption amount secret from travelers",
+              "It varies by trip length and countries, and can change",
+              "Every traveler gets the exact same fixed exemption amount",
+              "Duty-free personal exemptions no longer exist at all",
             ],
             correctIndex: 1,
             explanation:
@@ -418,9 +418,9 @@ The bottom line: know that tiers exist and that alcohol/tobacco are separate and
             prompt: "Why does CBP restrict bringing back items like fresh fruit, meat, and plants specifically?",
             options: [
               "To protect the profits of domestic grocery stores",
-              "Because they can carry plant pests and foreign animal diseases that could seriously damage U.S. crops, livestock, and the environment",
+              "They can carry pests and foreign animal diseases here",
               "There's no real reason, it's an arbitrary customs rule",
-              "Only to collect extra duty revenue",
+              "Only to collect extra duty revenue at the border",
             ],
             correctIndex: 1,
             explanation:

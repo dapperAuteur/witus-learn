@@ -147,9 +147,9 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             prompt: "The Black Bottom was, primarily:",
             options: [
               "A commercial and jazz corridor like Indiana Avenue",
-              "A university-owned research park",
-              "A working-class and working-poor African American residential neighbourhood in West Philadelphia",
-              "A public housing project",
+              "A university research park opened in the late 1920s",
+              "A working-class Black residential neighbourhood near Penn",
+              "A city-run public housing project opened around 1955",
             ],
             correctIndex: 2,
             explanation: "It was a residential neighbourhood, a mix of homes and small commerce, which is the key difference from Indiana Avenue's business corridor.",
@@ -158,10 +158,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the course insist 'Black Bottom' was the residents' own word?",
             options: [
-              "Because a neighbourhood people name for themselves and a redevelopment area a government draws are two different objects with two different boundaries",
-              "Because the name was invented by the Redevelopment Authority",
-              "Because it proves the neighbourhood was small",
-              "Because the name appears on the 1960 census form",
+              "Because a self-named neighbourhood and a legally drawn redevelopment area are two different objects",
+              "Because the Redevelopment Authority coined the name and printed it on its 1960 blight survey maps",
+              "Because it proves the neighbourhood was too small to be drawn on the city's official planning maps",
+              "Because the name appears as an official government label on the 1960 federal census form itself",
             ],
             correctIndex: 0,
             explanation: "The remembered Black Bottom had fuzzy edges; the legal Unit 3 was precise to the block. Keeping them apart is the research discipline.",
@@ -169,7 +169,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           },
           {
             prompt: "In 1960, in the blocks the Science Center would take, non-white households occupied about what share of dwelling units?",
-            options: ["About 25 percent", "About 50 percent", "About 90 percent", "About 78 percent (333 of 429 units)"],
+            options: ["About 25 percent (108 of 429)", "About 50 percent (215 of 429)", "About 90 percent (386 of 429)", "About 78 percent (333 of 429 units)"],
             correctIndex: 3,
             explanation: "333 of 429 dwelling units, about 77.6 percent, a figure of the same order as Indiana Avenue being about 77 percent Black by 1920.",
             sourceLessonSlug: "pa-then-black-bottom",
@@ -177,10 +177,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Walter Palmer's memory that residents felt safe enough to walk the street at 2 or 3 in the morning is used in this course as:",
             options: [
-              "Proof that crime did not exist",
-              "Cited testimony that a functioning social fabric existed, of a kind a survey form cannot measure",
-              "A reason the clearance was justified",
-              "An invented detail for atmosphere",
+              "Proof that crime never once occurred anywhere in the neighbourhood",
+              "Cited testimony to a functioning social fabric a survey cannot measure",
+              "A documented reason the neighbourhood's clearance was fully justified",
+              "An invented atmospheric detail carrying no cited source behind it",
             ],
             correctIndex: 1,
             explanation: "It is read as evidence of ordinary safety and community, cited as one person's testimony, not as nostalgia.",
@@ -196,10 +196,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The University of Pennsylvania's official figure of about 666 displaced counts:",
             options: [
-              "Everyone in the Black Bottom",
+              "Everyone displaced across the whole of the Black Bottom",
               "People displaced by the Science Center building itself",
-              "People displaced by the whole of Unit 3",
-              "Only renters",
+              "People displaced by the whole of Unit 3, about 2,653",
+              "Only the renters, and none of the property owners",
             ],
             correctIndex: 1,
             explanation: "666 is Penn's official count for the Science Center alone; 2,653 is all of Unit 3. They count different areas, which is why they differ by roughly a factor of four.",
@@ -208,10 +208,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The course refuses to pick a single 'Black Bottom displacement number' because:",
             options: [
-              "The records were destroyed",
-              "The five circulating figures answer different questions over different areas, so there is no one question they all answer",
-              "The number is a state secret",
-              "Nobody counted",
+              "The Redevelopment Authority deliberately destroyed the displacement records",
+              "The five circulating figures each count a different thing over a different area",
+              "The real displacement total remains a sealed municipal secret to this day",
+              "Nobody ever actually counted the residents displaced from the neighbourhood",
             ],
             correctIndex: 1,
             explanation: "666, 550 to 700, half of 2,653, 2,653, and 'as high as 10,000' each count a different thing over a different scope. Teaching that is the point.",
@@ -220,10 +220,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "How should the 'as high as 10,000' figure be handled?",
             options: [
-              "Adopted as the neighbourhood total",
-              "Averaged with the 2,653 figure",
-              "Attributed, scoped as an outer bound for the whole Black Bottom over the whole era, and not adopted as a survey",
-              "Ignored entirely",
+              "Adopted as the single definitive Black Bottom displacement total",
+              "Averaged together with the 2,653 Unit 3 figure to split the difference",
+              "Attributed as an outer bound for the whole neighbourhood, not a survey",
+              "Ignored entirely as an unusable and worthless made-up estimate",
             ],
             correctIndex: 2,
             explanation: "It is the loosest figure, handled the way the Indiana Avenue course handled the 17,000 newspaper figure: attribute it and state its scope.",
@@ -232,10 +232,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why is the clearest census of the Black Bottom the one the Redevelopment Authority produced?",
             options: [
-              "Because the Authority was a research institution",
-              "Because federal urban renewal required a survey before an area could be taken, so the best record is the paperwork of the removal",
-              "Because residents refused to be counted otherwise",
-              "Because the university funded a study",
+              "Because the Redevelopment Authority was a demographic research institution",
+              "Because federal urban renewal required a survey before an area could be taken",
+              "Because the neighbourhood's residents refused to be counted by anyone else",
+              "Because the University of Pennsylvania funded its own private census study",
             ],
             correctIndex: 1,
             explanation: "A recurring irony: the best record of a neighbourhood is often the documentation of its clearance.",
@@ -244,10 +244,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The residents' Black Bottom boundaries, according to a community history, were:",
             options: [
-              "Fixed by ordinance",
-              "Never fixed, remembered differently by different people, generally running west from around 32nd or 33rd Street",
-              "Identical to the Unit 3 legal boundary",
-              "Unknown to anyone",
+              "Fixed precisely by a 1950s municipal ordinance and never once disputed",
+              "Never fixed, remembered differently, running west from about 32nd Street",
+              "Exactly identical to the legally certified Unit 3 redevelopment boundary",
+              "Entirely unknown to every former resident and historian alike today",
             ],
             correctIndex: 1,
             explanation: "A remembered neighbourhood has fuzzy edges; the legal redevelopment area did not. When you write where it was, say whose boundary you mean.",
@@ -256,10 +256,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Which two courses does this one build on, and what does each contribute?",
             options: [
-              "Two civics courses about voting",
-              "The Green Book (the method: read a record, research an address forward) and Indiana Avenue (the model: a university plus a redevelopment authority cleared that corridor)",
-              "Two courses about jazz",
-              "A course on architecture and a course on taxes",
+              "Two introductory civics courses about voter registration and casting a ballot",
+              "The Green Book, on reading a record and an address, and Indiana Avenue, the model",
+              "Two music-history courses on the origins and spread of American jazz music",
+              "A course on rowhouse architecture and a separate course on city property taxes",
             ],
             correctIndex: 1,
             explanation: "The Green Book teaches how to read; Indiana Avenue found the instrument this course confirms at a second campus.",
@@ -268,10 +268,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why can Philadelphia show the university-plus-authority instrument 'most clearly'?",
             options: [
-              "Because Penn kept better records than Indiana University",
-              "Because here there is no highway to argue about, so the clearance isolates the university-and-authority variable",
-              "Because the Black Bottom was larger",
-              "Because Philadelphia had no blight law",
+              "Because Penn kept far better records than Indiana University did",
+              "Because with no highway here, the clearance isolates the instrument",
+              "Because the Black Bottom was far larger than Indiana Avenue was",
+              "Because Pennsylvania had no state blight statute on its books",
             ],
             correctIndex: 1,
             explanation: "Indiana Avenue had an interstate nearby that the popular story blamed. West Philadelphia's clearance was not a highway project, which isolates the instrument.",
@@ -280,10 +280,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "A displacement count and a neighbourhood are, in this course's phrasing:",
             options: [
-              "The same thing",
-              "A fact about a document and a fact about people, respectively, with a gap between them the course works in",
-              "Both facts about people",
-              "Both facts about documents",
+              "Exactly the same thing, merely described in two different ways",
+              "A fact about a document and a fact about people, respectively",
+              "Both are facts about people rather than about any document",
+              "Both are facts about documents rather than about any people",
             ],
             correctIndex: 1,
             explanation: "A count is a fact about a document; a neighbourhood is a fact about people. Later sections work in the gap between them.",
@@ -291,7 +291,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           },
           {
             prompt: "The community that descended from the Black Bottom organises today as:",
-            options: ["The Society Hill Civic Association", "The Black Bottom Tribe, still asking the city for a marker", "The West Philadelphia Corporation", "The MOVE organization"],
+            options: ["The Society Hill Civic Association of central Philadelphia", "The Black Bottom Tribe, still asking the city for a marker", "The West Philadelphia Corporation, the university's land arm", "The MOVE organization based in the Cobbs Creek area"],
             correctIndex: 1,
             explanation: "A living-community signal: descendants are active now, which is why the course bans the 'vanished golden age' frame.",
             sourceLessonSlug: "pa-then-black-bottom",
@@ -664,10 +664,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "This course defines an 'instrument' as:",
             options: [
-              "Any historical cause of a change",
-              "A specific legal power, exercised by a specific body, under a specific statute, leaving a specific document",
-              "A newspaper account of a decision",
-              "A tool used in construction",
+              "Any broad historical cause or force lying behind a neighbourhood change",
+              "A specific legal power exercised by a specific body under a specific statute",
+              "A newspaper account describing how a particular civic decision was made",
+              "A physical measuring tool used in land surveying and building work",
             ],
             correctIndex: 1,
             explanation: "The last clause is what makes history researchable: if a power was exercised, a named record exists.",
@@ -676,9 +676,9 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "What is the most exact parallel between the Indiana and Pennsylvania clearances?",
             options: [
-              "Both cities had the same mayor",
-              "Both universities were named Indiana",
-              "Both used the same highway",
+              "Both cities happened to elect the very same mayor in 1945",
+              "Both of the universities involved were named Indiana",
+              "Both clearances used the very same interstate highway",
               "Both states passed their enabling blight statute in 1945",
             ],
             correctIndex: 3,
@@ -700,10 +700,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Which statutory blight criterion is a judgment about a use rather than a measurement of a building?",
             options: [
-              "Overcrowded dwellings",
-              "Lack of light and air",
+              "Unsafe, unsanitary, or overcrowded dwelling units",
+              "Inadequate light and air, with excessive land coverage",
               "Land uses which are economically or socially undesirable",
-              "Faulty street or lot layout",
+              "Faulty arrangement of streets and defective lot layout",
             ],
             correctIndex: 2,
             explanation: "In a segregated city a judgment about a use is rarely innocent of who is using it. The physical criteria are separately circular, since deterioration follows refused credit.",
@@ -719,10 +719,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "How did federal money reach the Black Bottom clearance, and how does that differ from Indiana Avenue?",
             options: [
-              "Through the highway program, exactly as in Indianapolis",
-              "Through a federal urban-renewal grant to the Redevelopment Authority; on Indiana Avenue the decisive federal money flowed through the highway program instead",
-              "It received no federal money",
-              "Through a direct grant to the university",
+              "Through the federal highway program, exactly as in Indianapolis",
+              "Through a federal urban-renewal grant to the Redevelopment Authority",
+              "It received no federal money at all, only private university funds",
+              "Through a direct federal grant paid straight to the university",
             ],
             correctIndex: 1,
             explanation: "Same federal era, different federal channel. West Philadelphia's clearance had no highway; the grant went to the Authority that cleared land for the research park.",
@@ -731,10 +731,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The sequence by which a public power produces a private campus is:",
             options: [
-              "Convey, then take, then clear",
-              "Take, clear, convey: the authority condemns and clears, then conveys the land to a redeveloper (here, the Science Center)",
-              "The university condemns the land directly",
-              "The state clears the land and keeps it",
+              "Convey the land first, then take it, and only then clear it",
+              "Take, clear, convey: the authority clears, then conveys the land",
+              "The university itself condemns and clears the land directly",
+              "The state condemns the land, clears it, and permanently keeps it",
             ],
             correctIndex: 1,
             explanation: "That design, a public body taking and a private developer receiving, is why 'public use' became a contested phrase in American law.",
@@ -745,8 +745,8 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             options: [
               "'A front for the University of Pennsylvania,' per Felton Newman",
               "A neighbourhood improvement club with no university ties",
-              "A federal agency",
-              "A tenants' union",
+              "An independent federal urban renewal and housing agency",
+              "A grassroots neighbourhood tenants' rights organization",
             ],
             correctIndex: 0,
             explanation: "The coalition was funded and run primarily by Penn and controlled Unit 3 as its surrogate. A citizen named the instrument correctly, on the record.",
@@ -755,10 +755,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "How does the West Philadelphia Corporation differ from Hoosier Realty Corporation?",
             options: [
-              "It was identical, a single-university shell",
-              "It was a federal agency, not a nonprofit",
-              "It was a multi-institution consortium Penn funded and ran, founded first for neighbourhood safety, whereas Hoosier Realty was Indiana University's own dedicated land vehicle",
-              "It never acquired any land",
+              "It was completely identical, a single-university shell company",
+              "It was actually a federal agency rather than a private nonprofit",
+              "A multi-institution consortium Penn funded and ran, not a single shell",
+              "It never once acquired any land at all in West Philadelphia",
             ],
             correctIndex: 2,
             explanation: "Parallel instrument, different structure and origin. Saying 'Penn used a shell exactly like Indiana University' overclaims.",
@@ -767,10 +767,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The 'twin' claim between the Black Bottom and Indiana Avenue holds most strongly at the level of:",
             options: [
-              "The neighbourhoods, which were identical",
-              "The instrument: the same university-plus-surrogate-plus-authority machine under a 1945 blight statute",
-              "The federal funding channel, which was the same",
-              "The surrogate structure, which was the same",
+              "The neighbourhoods, which were completely identical in every way",
+              "The instrument: the same university, surrogate, and authority machine",
+              "The federal funding channel, which was exactly the same in both",
+              "The surrogate's structure, which was precisely the same in both",
             ],
             correctIndex: 1,
             explanation: "A twin is not a clone. The instrument is the same; the neighbourhoods, surrogates and federal channels differ, and Philadelphia adds a war-research overlay.",
@@ -779,10 +779,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why is Philadelphia called the 'cleaner' case for proving the instrument?",
             options: [
-              "Because Penn kept tidier records",
-              "Because the Black Bottom was smaller",
-              "Because there is no highway in the clearance, so it isolates the university-and-authority instrument with nothing to confuse the reader",
-              "Because no one was displaced",
+              "Because Penn simply kept far tidier and fuller archival records",
+              "Because the Black Bottom was much smaller than the Avenue was",
+              "Because no highway is present, so it isolates the instrument",
+              "Because absolutely no one in the area was displaced at all",
             ],
             correctIndex: 2,
             explanation: "On Indiana Avenue the interstate muddied the story; West Philadelphia's clearance was not a highway project, which isolates the variable.",
@@ -791,10 +791,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The durable method for handling a compelling historical parallel is to:",
             options: [
-              "Accept it if it feels right",
-              "Reject it unless it is identical in every respect",
-              "Sort every claim into parallel, merely similar, or different, and cite each",
-              "Average the two cases together",
+              "Accept the parallel whole if it simply feels basically right",
+              "Reject it entirely unless it is identical in every respect",
+              "Sort each claim as parallel, similar, or different, and cite it",
+              "Average the two different cases together into a single one",
             ],
             correctIndex: 2,
             explanation: "A parallel with a full strong column survives; one that dissolves into 'merely similar' in every row was a vibe.",
@@ -803,10 +803,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The MOVE bombing of 13 May 1985 must not be collapsed into the Black Bottom story because:",
             options: [
-              "It happened in a different city",
-              "It was not documented",
-              "It shares a city and the race of the victims but nothing about the instrument: it was lethal police power in a standoff, in Cobbs Creek, in 1985, not land assembly for a university",
-              "It caused no harm",
+              "It happened in a completely different and far distant American city",
+              "It was never once officially documented by any source anywhere at all",
+              "It shares a city but not the instrument: a police raid, not land assembly",
+              "It caused essentially no real harm to any of the people who lived there",
             ],
             correctIndex: 2,
             explanation: "Collapsing them hides the two entirely different mechanisms a citizen would have to confront. Mechanisms differ, and each leaves its own record.",
@@ -815,10 +815,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "What official record documents the MOVE bombing, and what did it conclude?",
             options: [
-              "A university dissertation, which found no fault",
-              "The Philadelphia Special Investigation Commission report of 6 March 1986, which called dropping a bomb on an occupied rowhouse 'unconscionable' and the tactics 'grossly negligent'",
-              "A police internal memo, never released",
-              "There is no official record",
+              "A university doctoral dissertation that found no municipal fault at all",
+              "The MOVE Commission report of 1986, calling the bombing 'unconscionable'",
+              "A confidential internal police memo that was reportedly never released",
+              "There is simply no official government record of the whole event",
             ],
             correctIndex: 1,
             explanation: "Because there is a commission report, the event is documentable rather than only remembered, and the course points learners to the report itself.",
@@ -827,10 +827,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "What tone does the course require for the MOVE bombing?",
             options: [
-              "Vivid, cinematic retelling",
-              "Accountability: who decided, what body reviewed it, what it concluded, told with restraint because survivors and relatives are living and children died",
-              "Neutrality that avoids naming any wrongdoing",
-              "Celebration of the investigation",
+              "A vivid, cinematic retelling of the fire and the many deaths",
+              "Accountability: who decided, who reviewed it, what they concluded",
+              "Strict neutrality that carefully avoids naming any wrongdoing",
+              "Open celebration of the official commission's investigation",
             ],
             correctIndex: 1,
             explanation: "There is no lesson in the flames; the lesson is that a city produced an official finding against itself. Tone is accountability, not spectacle.",
@@ -1199,10 +1199,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why is this course's map lesson city-to-city rather than block by block?",
             options: [
-              "Because the Black Bottom's coordinates are unknown",
-              "Because block-level maps are copyrighted",
-              "Because Philadelphia forbids mapping",
-              "Because the lesson map draws the whole world, so points need roughly two degrees of separation, and the Black Bottom and the MOVE site are only about four miles apart",
+              "Because the Black Bottom's exact map coordinates are entirely unknown",
+              "Because detailed block-level street maps are all under copyright",
+              "Because the city of Philadelphia legally forbids any close mapping",
+              "Because the map is worldwide and the two sites are only four miles apart",
             ],
             correctIndex: 3,
             explanation: "That the two Philadelphia decisions collapse into one dot is the visual form of the warning that they are close together and not the same thing.",
@@ -1211,10 +1211,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "What is Atlas?",
             options: [
-              "A private real-estate listing site",
-              "The City of Philadelphia's official property map, showing parcels, ownership, assessment, zoning and permits",
-              "A historical atlas of 1960s Philadelphia",
-              "A transit app",
+              "A private, for-profit commercial real-estate listings website",
+              "The City of Philadelphia's official parcel and zoning map",
+              "A printed historical street atlas of 1960s Philadelphia",
+              "A public transit trip-planning app for the entire city",
             ],
             correctIndex: 1,
             explanation: "At atlas.phila.gov. For a parcel question it is the right-scale map, unlike the world map in the lesson.",
@@ -1225,8 +1225,8 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             options: [
               "Architect, contractor, original cost, and current tenant",
               "Square footage, paint colour, roof age, and street name",
-              "Parcel or account number, owner of record, assessed value, and the zoning versus the plan",
-              "Zoning code only",
+              "Parcel number, owner of record, assessed value, and the zoning",
+              "Only the zoning code, and nothing else about the parcel",
             ],
             correctIndex: 2,
             explanation: "The tool names change from city to city; those four facts do not. Philadelphia calls its tools Atlas and the OPA, as Indianapolis called them MapIndy and the Assessor.",
@@ -1235,10 +1235,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why is 3401 Market Street a safe address to practise a parcel lookup on?",
             options: [
-              "It is a documented, institution-occupied public building on the cleared Unit 3 ground, so no one's home is exposed",
-              "It is a private residence",
-              "It has no owner",
-              "It is outside Philadelphia",
+              "An institution-occupied public building on cleared Unit 3 ground",
+              "It is a private, owner-occupied single-family home residence",
+              "It has no listed owner of record at all anywhere in Atlas",
+              "It sits entirely outside the Philadelphia municipal limits",
             ],
             correctIndex: 0,
             explanation: "A City Council ordinance granted the Science Center that building in 1965. The rule: practise on institutional and commercial addresses, never someone's home.",
@@ -1247,10 +1247,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "What is Philadelphia's comprehensive plan, and how does it relate to zoning?",
             options: [
-              "Philadelphia2035; it is the policy statement that rezonings are judged against, while zoning is the enforceable rule about what may be built today",
-              "Philadelphia2035; it is legally binding on every owner immediately",
-              "The zoning code itself",
-              "A federal plan for the city",
+              "Philadelphia2035, the policy statement rezonings are judged against",
+              "Philadelphia2035; it is legally binding on all owners at once",
+              "The city's own enforceable base zoning code, and nothing more",
+              "A strictly binding federal master plan imposed on the whole city",
             ],
             correctIndex: 0,
             explanation: "Adopted by the City Planning Commission in 2011, with a Citywide Vision and 18 District Plans. Where a plan and a zoning code disagree is where development fights live.",
@@ -1259,10 +1259,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "What did Penn pledge to the School District of Philadelphia in November 2020?",
             options: [
-              "Full property taxes on its entire portfolio",
-              "100 million dollars over ten years, about 10 million a year, for environmental remediation such as asbestos and lead",
-              "40 million dollars a year in PILOTs",
-              "Nothing",
+              "Full property taxes on its entire real-estate portfolio",
+              "100 million dollars over ten years for asbestos and lead cleanup",
+              "About 40 million dollars every single year in true PILOTs",
+              "Nothing at all, beyond its existing property-tax exemption",
             ],
             correctIndex: 1,
             explanation: "Critics call it a donation rather than a true PILOT because it is time-limited, giver-directed, and below what property tax on the portfolio would yield.",
@@ -1271,10 +1271,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why is the PILOT fight the right beat-5 question for this course?",
             options: [
-              "Because Penn is the largest employer in the city",
-              "Because it has nothing to do with the history",
-              "Because it is the present-tense continuation of the same relationship: a university that grew onto a cleared Black neighbourhood by public means is now exempt from the tax that funds the city's schools",
-              "Because it will end the property tax entirely",
+              "Because Penn is by far the largest single employer in the city",
+              "Because it has absolutely nothing to do with the history at all",
+              "Because it continues the very same relationship at a later date",
+              "Because it will soon end the city's property tax entirely",
             ],
             correctIndex: 2,
             explanation: "You do not have to decide the fight to see it is the same relationship at a later date, the move Indiana Avenue made about electorates.",
@@ -1283,10 +1283,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "When the owner of record of a parcel does not match the organisation operating the building, that is:",
             options: [
-              "An error in Atlas",
-              "Illegal",
-              "Impossible",
-              "Normal, and a finding, exactly as the surrogate-nonprofit lesson predicted",
+              "A plain data-entry error somewhere in the city's Atlas",
+              "Strictly illegal under Pennsylvania property-records law",
+              "Impossible under the county's official deed-recording system",
+              "Normal, a finding the surrogate-nonprofit lesson predicted",
             ],
             correctIndex: 3,
             explanation: "Follow the entity, not the institution's name. Land is often held through a surrogate, which is why deed records do not always say what you expect.",
@@ -1296,9 +1296,9 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
             prompt: "In Pennsylvania, the split of roles in the blight process is that:",
             options: [
               "The Redevelopment Authority both certifies blight and clears",
-              "The City Planning Commission certifies blight and the Redevelopment Authority acquires and clears",
-              "The university certifies blight",
-              "The state legislature certifies each area",
+              "The Planning Commission certifies blight; the Authority clears",
+              "The university itself directly certifies each area as blighted",
+              "The state legislature certifies each blighted area case by case",
             ],
             correctIndex: 1,
             explanation: "Two bodies, two public paper trails. The certification is also dated and expires after 20 years unless renewed.",
@@ -1307,10 +1307,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The Black Bottom clearance and the MOVE bombing share:",
             options: [
-              "The same instrument and the same body",
-              "A city and the race of the victims, but not the instrument, the body, the neighbourhood, or the decade",
-              "The same year",
-              "The same beneficiary",
+              "The very same instrument and the very same city body",
+              "A city and the victims' race, but not the instrument or era",
+              "The same exact year and the same city administration",
+              "The same ultimate institutional beneficiary of the land",
             ],
             correctIndex: 1,
             explanation: "One is land assembly by a redevelopment authority in the 1960s; the other is lethal police power in a 1985 standoff in Cobbs Creek. Different mechanisms, different records.",
@@ -1319,10 +1319,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the map plot the MOVE site at an approximate point rather than an exact house number?",
             options: [
-              "Because the address is unknown",
-              "Because the block is residential today and people live there now, so the course does not pin the exact house",
-              "Because the map cannot hold precise coordinates",
-              "Because the event is disputed",
+              "Because the exact street house number is now entirely unknown",
+              "Because people live on the block now, so it avoids the exact house",
+              "Because the map itself simply cannot hold precise coordinates",
+              "Because the event's basic factual details are still disputed",
             ],
             correctIndex: 1,
             explanation: "The same restraint as refusing to publish a current resident's name with their address: accountability, not exposure.",
@@ -1331,10 +1331,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why do the amber markers show four other campuses?",
             options: [
-              "To pad the map",
-              "Because they are the four largest US universities",
-              "To show that a university steering a redevelopment authority was a national program, not a Penn peculiarity, offered as leads to verify",
-              "Because each has a Green Book listing",
+              "Merely to pad out the otherwise empty world map with dots",
+              "Because they are the four largest universities in the US",
+              "To show the pattern was national, offered as leads to verify",
+              "Because each of them carries an old Green Book listing",
             ],
             correctIndex: 2,
             explanation: "Indianapolis, Pittsburgh, Chicago's Hyde Park and Columbia's Morningside Heights are leads in each city's own records, not findings this course has proven.",
@@ -1343,10 +1343,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "Why does this course publish a virtual_tour lesson before the tour URL exists?",
             options: [
-              "Because the tour was cancelled",
-              "Because the platform requires a placeholder",
-              "Because the tour is optional and will never be added",
-              "Because beat 4 is a drop-in: a site course is complete and teachable with the other five beats, and the body serves as the observation brief meanwhile",
+              "Because the planned 360 tour was permanently cancelled",
+              "Because the course platform strictly requires a placeholder",
+              "Because the tour is entirely optional and will never be added",
+              "Because beat 4 is a drop-in: the course is complete without it",
             ],
             correctIndex: 3,
             explanation: "A tour embed URL is authoritative external data and is never guessed, so the lesson ships with the notice and the brief and the URL drops in on a re-seed.",
@@ -1355,10 +1355,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "What is 'the seam' the observation brief tells you to find on the corridor?",
             options: [
-              "A street renamed after a donor",
-              "The line where the research-park fabric meets surviving older rowhouse blocks, which is the dated edge of the clearance",
-              "The border between two ZIP codes",
-              "A crack in the pavement",
+              "A single main street quietly renamed after a wealthy donor",
+              "Where the research park meets the surviving rowhouse blocks",
+              "The exact border line dividing two adjacent ZIP codes",
+              "A wide visible crack running clear across the pavement",
             ],
             correctIndex: 1,
             explanation: "The seam marks what was taken versus what was not, and it has a date you can research.",
@@ -1367,10 +1367,10 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
           {
             prompt: "The instruction to re-check every date and dollar figure in the live-civics lesson is:",
             options: [
-              "A disclaimer to avoid liability",
-              "The method: plans, pledges and figures change, and each has a source and date attached for exactly that reason",
-              "A sign the sources are unreliable",
-              "Optional",
+              "A cautious legal disclaimer written to avoid liability",
+              "The method: figures change, so each has a source and date",
+              "A plain sign the cited sources are all unreliable here",
+              "An entirely optional and fully skippable instruction",
             ],
             correctIndex: 1,
             explanation: "Beat 5 is live civics, so its facts have shelf lives. Re-checking is the skill, not a caveat.",

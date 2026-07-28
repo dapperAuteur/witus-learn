@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getScopedDb } from "@/db/scoped";
 import { listSchoolDirectory } from "@/db/queries/directory";
+import { ogImageUrl } from "@/lib/og";
 
-export const metadata: Metadata = { title: "Our schools" };
+const schoolsDescription = "The cited, media-rich schools publishing on Learn.WitUS.";
+const schoolsCard = ogImageUrl({ title: "Our schools" });
+export const metadata: Metadata = {
+  title: "Our schools",
+  description: schoolsDescription,
+  openGraph: { title: "Our schools", description: schoolsDescription, images: [schoolsCard] },
+  twitter: { card: "summary_large_image", title: "Our schools", description: schoolsDescription, images: [schoolsCard] },
+};
 
 // Brand directory — only on the platform front door (the recruiting school). Links
 // OUT to each brand's own domain; never renders another brand's catalog (isolation).

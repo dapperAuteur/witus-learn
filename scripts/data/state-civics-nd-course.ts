@@ -250,10 +250,10 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
           {
             prompt: "What is unique about voting in North Dakota?",
             options: [
-              "Voting is mandatory",
-              "It is the only state with no voter registration, eligible residents just bring ID and vote",
-              "Only landowners may vote",
-              "Voting is done by the Legislature",
+              "Voting is mandatory for every adult resident",
+              "The only state with no voter registration",
+              "Only property owners are allowed to cast a vote",
+              "Ballots are cast for you by the Legislature",
             ],
             correctIndex: 1,
             explanation:
@@ -263,10 +263,10 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
           {
             prompt: "Since there's no registration, what confirms a North Dakota voter's eligibility?",
             options: [
-              "A party membership card",
-              "Acceptable ID proving identity and North Dakota residence",
-              "A letter from the Governor",
-              "Nothing is required",
+              "A valid party membership card from your county",
+              "Acceptable ID proving identity and residence",
+              "A signed letter from the sitting Governor",
+              "Nothing at all is required from the voter",
             ],
             correctIndex: 1,
             explanation:
@@ -276,10 +276,10 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
           {
             prompt: "What national 'only' does North Dakota's government own and operate?",
             options: [
-              "The only state airline",
-              "The only state-owned bank (the Bank of North Dakota), plus a state-owned mill",
-              "The only state-owned oil company",
-              "The only state casino",
+              "The only state-run commercial airline",
+              "The only state-owned bank in the nation",
+              "The only state-owned oil-and-gas company",
+              "The only state-operated casino resort",
             ],
             correctIndex: 1,
             explanation:
@@ -289,10 +289,10 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
           {
             prompt: "Which movement created North Dakota's state bank and mill?",
             options: [
-              "The Tea Party",
-              "The Nonpartisan League (a farmer-populist movement)",
-              "The Progressive Party of Vermont",
-              "The DFL",
+              "The national conservative Tea Party",
+              "The Nonpartisan League, a farmer movement",
+              "The Progressive Party of Vermont coalition",
+              "The Minnesota Democratic-Farmer-Labor",
             ],
             correctIndex: 1,
             explanation:
@@ -302,10 +302,10 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
           {
             prompt: "What direct-democracy tools do North Dakotans have?",
             options: [
-              "None",
-              "Initiative (statutes and amendments), referendum, and recall (with comparatively low thresholds)",
-              "Only recall of judges",
-              "Only advisory votes",
+              "No citizen direct-democracy tools are allowed",
+              "Initiative, referendum, and recall powers",
+              "Only recall of appointed judges allowed",
+              "Only non-binding advisory ballot votes",
             ],
             correctIndex: 1,
             explanation:
@@ -315,10 +315,10 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
           {
             prompt: "How often does North Dakota's Legislative Assembly meet?",
             options: [
-              "Year-round",
-              "Only every other year (odd years), limited to 80 days per biennium",
-              "Once a decade",
-              "Only when the Governor calls it",
+              "Year-round in continuous session",
+              "Every other year, capped at 80 days",
+              "Just once in every ten-year period",
+              "Only when the Governor formally calls it",
             ],
             correctIndex: 1,
             explanation:
@@ -328,10 +328,10 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
           {
             prompt: "How are North Dakota's Supreme Court justices chosen?",
             options: [
-              "Appointed for life by the Governor",
-              "Elected on a nonpartisan ballot to 10-year terms (vacancies may be filled by appointment, then election)",
-              "Elected by the Legislature",
-              "Chosen by the Bank of North Dakota",
+              "Appointed for life by the sitting Governor",
+              "Elected nonpartisan to 10-year terms",
+              "Elected directly by the state Legislature",
+              "Chosen by the Bank of North Dakota board",
             ],
             correctIndex: 1,
             explanation:
@@ -354,10 +354,10 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
           {
             prompt: "Why are citizen initiatives especially common in North Dakota?",
             options: [
-              "They are required by Congress",
-              "North Dakota's initiative signature thresholds are comparatively low, so measures reach the ballot regularly",
-              "The Governor writes them",
-              "Only judges can file them",
+              "Federal law in Congress requires them",
+              "Its signature thresholds are low",
+              "The Governor personally writes each one",
+              "Only sitting judges are allowed to file",
             ],
             correctIndex: 1,
             explanation:
@@ -367,10 +367,10 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
           {
             prompt: "Why does this course tell you to VERIFY North Dakota's voter-ID rules?",
             options: [
-              "Because North Dakota has no elections office",
-              "Because with no registration, ID rules confirm eligibility and they have been litigated and adjusted: confirm at sos.nd.gov",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "North Dakota has no state elections office",
+              "ID rules confirm eligibility, so verify",
+              "Only the United States Congress sets them",
+              "Because all voting ballots stay secret",
             ],
             correctIndex: 1,
             explanation:

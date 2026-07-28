@@ -3,11 +3,17 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getScopedDb } from "@/db/scoped";
 import { brandName } from "@/lib/branding";
+import { ogImageUrl } from "@/lib/og";
+import { PLATFORM_PLANS, PLATFORM_PRICING_NOTE, PLATFORM_PRICING_CTA, displayPrice } from "@/lib/platform-pricing";
 
+const platformDescription =
+  "Learn.WitUS is the multi-tenant learning platform behind Better Vice Club and other cited, media-rich schools. Run your own on your own domain.";
+const platformCard = ogImageUrl({ title: "The platform" });
 export const metadata: Metadata = {
   title: "The platform",
-  description:
-    "Learn.WitUS is the multi-tenant learning platform behind Better Vice Club and other cited, media-rich schools. Run your own on your own domain.",
+  description: platformDescription,
+  openGraph: { title: "The platform", description: platformDescription, images: [platformCard] },
+  twitter: { card: "summary_large_image", title: "The platform", description: platformDescription, images: [platformCard] },
 };
 
 interface Feature {
@@ -48,10 +54,10 @@ const FEATURES: Feature[] = [
       "Young learners without an email sign in with a class code, an avatar, and a PIN, no password, no account for a parent to manage.",
   },
   {
-    icon: "🤖",
-    title: "An AI tutor, grounded in your content",
+    icon: "📶",
+    title: "Works offline",
     body:
-      "A built-in tutor answers questions using only what's actually taught in your courses, not the open internet.",
+      "Save any lesson, its page and its media, for offline. Students keep learning on a bus or with spotty internet, and their progress syncs when they reconnect.",
   },
 ];
 
@@ -107,6 +113,43 @@ export default async function PlatformPage() {
               <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{f.body}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* White-label pricing (plans/user-tasks/204). The numbers live in src/lib/platform-pricing.ts,
+          which BAM edits; until a price is set, each plan reads "Pricing on request" and the CTA routes
+          the prospect to inquire, rather than showing a guessed figure. */}
+      <section aria-labelledby="pricing-heading" className="mb-12">
+        <h2 id="pricing-heading" className="text-center text-2xl font-bold">
+          What it costs to run your own school
+        </h2>
+        <div className="mx-auto mt-6 grid max-w-3xl gap-4 sm:grid-cols-2">
+          {PLATFORM_PLANS.map((p) => (
+            <div key={p.name} className="rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">
+              <h3 className="font-semibold">{p.name}</h3>
+              <p className="text-sm text-neutral-500">{p.forWhom}</p>
+              <p className="mt-3 text-2xl font-bold" style={{ color: "var(--accent)" }}>
+                {displayPrice(p.price)}
+              </p>
+              <ul className="mt-3 space-y-1 text-sm text-neutral-600 dark:text-neutral-400">
+                {p.includes.map((i) => (
+                  <li key={i}>{i}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <p className="mx-auto mt-5 max-w-xl text-center text-sm text-neutral-600 dark:text-neutral-400">
+          {PLATFORM_PRICING_NOTE}
+        </p>
+        <div className="mt-5 text-center">
+          <Link
+            href={PLATFORM_PRICING_CTA.href}
+            className="inline-block min-h-11 rounded-md px-5 py-2.5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
+            {PLATFORM_PRICING_CTA.label} →
+          </Link>
         </div>
       </section>
 

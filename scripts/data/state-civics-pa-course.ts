@@ -378,10 +378,10 @@ The practical payoff: **who provides your service depends on where you live**. I
           {
             prompt: "When was Pennsylvania's current constitution adopted, and how is it amended?",
             options: [
-              "1776, by a simple majority of one legislative session",
-              "1968, the General Assembly must pass it in two consecutive sessions, then voters approve it",
+              "1776, approved by a simple majority in one legislative session",
+              "1968, passed by the General Assembly twice, then approved by voters",
               "1968, citizens gather petition signatures to put it on the ballot",
-              "1874, only the Governor may propose amendments",
+              "1874, and only the Governor may formally propose amendments",
             ],
             correctIndex: 1,
             explanation:
@@ -391,10 +391,10 @@ The practical payoff: **who provides your service depends on where you live**. I
           {
             prompt: "Which direct-democracy tool does Pennsylvania NOT give its citizens?",
             options: [
-              "The right to vote",
-              "The citizen initiative (petitioning a law or amendment onto the ballot)",
-              "The right to a jury trial",
-              "The right to contact legislators",
+              "The right to vote in all state and local elections",
+              "The citizen initiative to petition a law onto the ballot",
+              "The right to a jury trial in serious criminal cases",
+              "The right to contact and petition your state legislators",
             ],
             correctIndex: 1,
             explanation:
@@ -404,10 +404,10 @@ The practical payoff: **who provides your service depends on where you live**. I
           {
             prompt: "How large is the Pennsylvania General Assembly, and why is it notable?",
             options: [
-              "120 members, the smallest legislature in the nation",
-              "A single unicameral house of 49 members",
-              "253 members (a 203-member House and 50-member Senate), the largest full-time state legislature in the nation",
-              "435 members, mirroring the U.S. House",
+              "120 members total, said to be the smallest legislature in the nation",
+              "A single unicameral house of just 49 members, as in Nebraska",
+              "253 members: the largest full-time state legislature in the nation",
+              "435 members total, mirroring the size of the U.S. House exactly",
             ],
             correctIndex: 2,
             explanation:
@@ -417,10 +417,10 @@ The practical payoff: **who provides your service depends on where you live**. I
           {
             prompt: "How do Pennsylvania's Governor and Lieutenant Governor reach office?",
             options: [
-              "The Lieutenant Governor is appointed by the Governor",
-              "They run as a joint ticket in the general election (but are nominated separately in the primary)",
-              "The Legislature chooses both",
-              "They are elected in completely separate general elections and can be from different parties",
+              "The Lieutenant Governor is appointed directly by the Governor, not elected",
+              "They run as a joint ticket in the general election, nominated separately",
+              "The two houses of the Legislature jointly choose both these officers",
+              "They are elected in completely separate general elections statewide",
             ],
             correctIndex: 1,
             explanation:
@@ -443,10 +443,10 @@ The practical payoff: **who provides your service depends on where you live**. I
           {
             prompt: "How does a Pennsylvania appellate judge reach and keep the bench?",
             options: [
-              "Appointed by the Governor for life",
-              "Chosen by the Legislature every two years",
-              "Wins a partisan election to a 10-year term, then keeps the seat through nonpartisan yes/no retention votes",
-              "Appointed, then confirmed by voters (never elected)",
+              "Appointed by the Governor for a single lifetime term on the bench",
+              "Chosen by the state Legislature to a renewable two-year court term",
+              "Wins a partisan election, then keeps the seat by yes/no retention votes",
+              "Appointed by the Governor, then merely confirmed by voters, never elected",
             ],
             correctIndex: 2,
             explanation:
@@ -456,10 +456,10 @@ The practical payoff: **who provides your service depends on where you live**. I
           {
             prompt: "What power does Pennsylvania's Governor have over the BUDGET that the U.S. President lacks?",
             options: [
-              "The power to raise taxes without a vote",
-              "A line-item veto to reduce or strike individual appropriation items",
-              "The power to dissolve the General Assembly",
-              "The power to appoint all legislators",
+              "The power to raise state taxes without any legislative vote",
+              "A line-item veto to reduce or strike individual budget items",
+              "The power to dissolve the General Assembly and call elections",
+              "The power to appoint all state legislators to office directly",
             ],
             correctIndex: 1,
             explanation:
@@ -469,10 +469,10 @@ The practical payoff: **who provides your service depends on where you live**. I
           {
             prompt: "To override a Pennsylvania Governor's veto, the General Assembly needs:",
             options: [
-              "A simple majority of each house",
-              "A two-thirds vote of the members elected to each house (rare in practice)",
-              "Approval of the state Supreme Court",
-              "A statewide referendum",
+              "A simple majority of the members elected to each house",
+              "A two-thirds vote of the members elected to each house",
+              "Approval of the Pennsylvania Supreme Court's seven justices",
+              "A statewide voter referendum at the next general election",
             ],
             correctIndex: 1,
             explanation:
@@ -482,10 +482,10 @@ The practical payoff: **who provides your service depends on where you live**. I
           {
             prompt: "Which statement about Pennsylvania local government is correct?",
             options: [
-              "Pennsylvania has 67 counties and an active layer of townships (first and second class)",
-              "Pennsylvania abolished all its townships",
-              "Pennsylvania has no counties, only special districts",
-              "Every Pennsylvania municipality must adopt a home-rule charter",
+              "Pennsylvania has 67 counties plus active townships of two classes",
+              "Pennsylvania abolished all of its first- and second-class townships",
+              "Pennsylvania has no counties at all, only special service districts",
+              "Every Pennsylvania municipality must adopt a home-rule charter now",
             ],
             correctIndex: 0,
             explanation:
@@ -495,10 +495,10 @@ The practical payoff: **who provides your service depends on where you live**. I
           {
             prompt: "What is true of Pennsylvania's Act 77 no-excuse mail-in voting?",
             options: [
-              "It was struck down permanently and no longer exists",
-              "It lets any registered voter vote by mail without an excuse, and the PA Supreme Court upheld it in 2022",
-              "It requires every in-person voter to show photo ID at every election",
-              "It created a citizen-initiative process",
+              "It was struck down as unconstitutional and no longer exists at all",
+              "Registered voters may vote by mail without an excuse; upheld in 2022",
+              "It requires every in-person voter to show a photo ID at every election",
+              "It created a new statewide citizen-initiative petition process",
             ],
             correctIndex: 1,
             explanation:

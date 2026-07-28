@@ -434,10 +434,10 @@ The throughline of this whole course: **the skills are universal; the rules are 
           {
             prompt: "Which of these is a way an ordinary person can help a campaign without running for office?",
             options: [
-              "Only by becoming a paid campaign manager",
-              "Volunteering, donating, canvassing, phone/text banking, hosting, or helping digitally",
-              "Only by giving over the legal limit",
-              "Nothing: you must be a candidate to help",
+              "Only as a salaried, full-time campaign manager",
+              "Volunteering, donating, canvassing, or hosting",
+              "Only by donating above the federal legal limit",
+              "Nothing, since only the candidate may help",
             ],
             correctIndex: 1,
             explanation:
@@ -447,9 +447,9 @@ The throughline of this whole course: **the skills are universal; the rules are 
           {
             prompt: "Under FEC rules, is your own donated volunteer time a contribution?",
             options: [
-              "Yes: every hour counts against your limit",
-              "No: volunteer services are not a contribution as long as no one pays you for that time",
-              "Only if you knock more than 100 doors",
+              "Yes, and every hour counts against your donor cap",
+              "No: donated volunteer time isn't a contribution",
+              "Only if you knock more than 100 doors total",
               "Only for federal races, never for state ones",
             ],
             correctIndex: 1,
@@ -460,10 +460,10 @@ The throughline of this whole course: **the skills are universal; the rules are 
           {
             prompt: "You buy $300 of yard signs and give them to a campaign. What is that, and what does its value count against?",
             options: [
-              "Nothing: goods are never a contribution",
-              "An in-kind contribution, whose value counts against your contribution limit",
-              "Volunteer time, which is unlimited",
-              "A coordinated communication only",
+              "Nothing, since donated goods never count",
+              "An in-kind contribution against your limit",
+              "Volunteer time, which has no dollar cap",
+              "A coordinated party communication expense only",
             ],
             correctIndex: 1,
             explanation:
@@ -473,10 +473,10 @@ The throughline of this whole course: **the skills are universal; the rules are 
           {
             prompt: "Is there one nationwide individual contribution limit that applies to every campaign?",
             options: [
-              "Yes: the FEC sets one number for all races",
-              "No: the FEC sets federal limits (indexed to inflation), while state/local limits vary by state and some states have none",
-              "Yes: every state copies the federal number",
-              "No: there are no limits anywhere",
+              "Yes: the FEC sets one national number for all races",
+              "No: federal limits differ from state limits by state",
+              "Yes: every state copies the federal FEC number exactly",
+              "No: contributions face no limits anywhere at all",
             ],
             correctIndex: 1,
             explanation:
@@ -486,10 +486,10 @@ The throughline of this whole course: **the skills are universal; the rules are 
           {
             prompt: "Can a foreign national contribute to a U.S. campaign, including a state or local ballot measure?",
             options: [
-              "Yes, for local races only",
-              "No: foreign nationals are prohibited from contributing in connection with any federal, state, or local election",
-              "Yes, up to the federal limit",
-              "Only if a U.S. citizen co-signs",
+              "Yes, for local and state ballot races only",
+              "No: foreign nationals are barred entirely",
+              "Yes, up to the standard federal donor limit",
+              "Only if a U.S. citizen co-signs the check",
             ],
             correctIndex: 1,
             explanation:
@@ -499,10 +499,10 @@ The throughline of this whole course: **the skills are universal; the rules are 
           {
             prompt: "Is it legal to donate in a friend's name and have them pay you back?",
             options: [
-              "Yes, if the amount is small",
-              "No: contributions in the name of another (straw-donor schemes) are illegal",
-              "Yes, for state races only",
-              "Only if you tell the campaign",
+              "Yes, if the amount stays fairly small",
+              "No: giving in another's name is illegal",
+              "Yes, but only for state and local races",
+              "Only if you tell the campaign treasurer",
             ],
             correctIndex: 1,
             explanation:
@@ -513,9 +513,9 @@ The throughline of this whole course: **the skills are universal; the rules are 
             prompt: "Which is a canvassing 'don't'?",
             options: [
               "Identifying yourself and who you're with",
-              "Giving someone false voting information, like the wrong election date",
-              "Respecting a 'no' and moving on",
-              "Pointing people to [Vote.gov](https://vote.gov) to register",
+              "Giving someone the wrong election date",
+              "Respecting a firm 'no' and moving along",
+              "Pointing people to Vote.gov to register",
             ],
             correctIndex: 1,
             explanation:
@@ -526,9 +526,9 @@ The throughline of this whole course: **the skills are universal; the rules are 
             prompt: "If you host a campaign event at home and spend more than the federal allowance on food and drinks, the excess is…",
             options: [
               "Still exempt: home events have no limit",
-              "An in-kind contribution the campaign must report",
-              "A coordinated communication",
-              "Illegal in every case",
+              "A reportable in-kind contribution",
+              "A coordinated party communication",
+              "Illegal under all circumstances",
             ],
             correctIndex: 1,
             explanation:
@@ -538,9 +538,9 @@ The throughline of this whole course: **the skills are universal; the rules are 
           {
             prompt: "What turns an 'independent' expenditure into a coordinated one, and what's the effect?",
             options: [
-              "Spending too little; it becomes tax-free",
-              "Coordinating with the candidate or party; it's then treated as an in-kind contribution subject to limits",
-              "Posting it online; it becomes unlimited",
+              "Spending too little, so it becomes fully tax-free",
+              "Coordinating with a candidate, making it in-kind",
+              "Posting it online, which makes it unlimited money",
               "Nothing: independent and coordinated are the same",
             ],
             correctIndex: 1,
@@ -552,8 +552,8 @@ The throughline of this whole course: **the skills are universal; the rules are 
             prompt: "Donations to a ballot-measure or local-cause committee are governed by…",
             options: [
               "The FEC, exactly like a federal candidate",
-              "State (and local) law: there is no federal ballot-measure process, and the rules vary by state",
-              "No rules at all",
+              "State and local law; rules vary by state",
+              "No rules apply to ballot-measure gifts",
               "The U.S. Constitution, with one fixed limit",
             ],
             correctIndex: 1,

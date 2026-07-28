@@ -231,10 +231,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "Why is Wyoming called 'The Equality State'?",
             options: [
-              "It has equal-sized counties",
-              "It was the first place in America to grant women the right to vote (1869)",
-              "It has no government",
-              "It splits power equally with Congress",
+              "Because all its counties are exactly equal in size",
+              "First place in America to let women vote, in 1869",
+              "Because it operates with no state government",
+              "Because it splits all power equally with Congress",
             ],
             correctIndex: 1,
             explanation:
@@ -257,10 +257,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "What is distinctive about Wyoming's executive branch?",
             options: [
-              "It has nine elected officials",
-              "It has five elected statewide officers and NO Lieutenant Governor (the Secretary of State succeeds the Governor)",
-              "The Governor appoints everyone",
-              "It has no Governor",
+              "It has nine separately elected statewide officials",
+              "Five elected officers and no Lieutenant Governor",
+              "The Governor personally appoints every officer",
+              "It operates with no elected Governor at all",
             ],
             correctIndex: 1,
             explanation:
@@ -296,10 +296,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "How does Wyoming fund its government without a state income tax?",
             options: [
-              "Federal grants only",
-              "Heavily through mineral and energy revenue, plus sales and property taxes",
-              "A state lottery",
-              "It has no revenue",
+              "Entirely through federal government grants alone",
+              "Through mineral and energy revenue and sales tax",
+              "Mainly from a large state lottery and casino gambling",
+              "It collects no revenue and borrows to operate",
             ],
             correctIndex: 1,
             explanation:
@@ -309,10 +309,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "How does Wyoming choose its Supreme Court justices?",
             options: [
-              "Partisan elections",
-              "Merit selection (commission → Governor appoints) plus retention elections",
-              "The Legislature elects them",
-              "Lifetime appointment",
+              "Statewide partisan elections held each term",
+              "Merit selection, then yes/no retention votes",
+              "The state Legislature elects them by joint vote",
+              "Lifetime appointment by the sitting Governor",
             ],
             correctIndex: 1,
             explanation:
@@ -322,10 +322,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "Does Wyoming have a citizen initiative?",
             options: [
-              "No, none at all",
-              "Yes, but with high signature/distribution requirements, so fewer measures reach the ballot",
-              "Only for taxes",
-              "Only in cities",
+              "No, Wyoming has no initiative process at all",
+              "Yes, but high thresholds keep measures rare",
+              "Only for statewide tax and bond measures",
+              "Only inside the state's incorporated cities",
             ],
             correctIndex: 1,
             explanation:
@@ -343,10 +343,10 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
           {
             prompt: "Why does this course tell you to VERIFY Wyoming's voting rules?",
             options: [
-              "Because Wyoming has no elections office",
-              "Because registration and ID rules are administered by county clerks and can change: confirm at [sos.wyo.gov](https://sos.wyo.gov)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Wyoming has no state elections office",
+              "Because county clerks run it and rules change",
+              "Because only the U.S. Congress sets these rules",
+              "Because all Wyoming voting is fully secret",
             ],
             correctIndex: 1,
             explanation:

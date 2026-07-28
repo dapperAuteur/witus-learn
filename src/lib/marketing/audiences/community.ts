@@ -48,10 +48,10 @@ export const COMMUNITY_LANDING: AudienceLandingContent = {
         "Organize learners into cohorts, teach live classes, take attendance, and give parents a view of progress. Younger learners get a kid-friendly login built for how children actually sign in.",
     },
     {
-      icon: "🤖",
-      title: "An AI tutor grounded in your content",
+      icon: "📶",
+      title: "Works offline",
       body:
-        "Learners can ask questions and get answers drawn only from what your courses actually teach and their sources, not the open internet.",
+        "Learners save a lesson, its page and its media, for offline and keep going without a connection. Progress syncs when they reconnect, so patchy internet does not stop a class.",
     },
   ],
   faq: [

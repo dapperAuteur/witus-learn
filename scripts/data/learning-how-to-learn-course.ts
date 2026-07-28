@@ -441,8 +441,8 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
             options: [
               "Tests measure encoding; rereading exercises retrieval",
               "Tests measure retrieval; rereading mostly exercises encoding",
-              "Both measure storage equally",
-              "Neither involves retrieval",
+              "Both measure storage equally, with no retrieval at all",
+              "Neither one truly involves retrieval or real encoding",
             ],
             correctIndex: 1,
             explanation: "Tests require retrieval (getting it back out); rereading is encoding-heavy and builds familiarity, not recall.",
@@ -451,10 +451,10 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
           {
             prompt: "You've been stuck on one problem for 30 minutes. What does the two-modes idea suggest?",
             options: [
-              "Push harder in focused mode for another hour",
-              "Step away and let diffuse mode make connections, then return",
-              "Switch to a brand-new subject permanently",
-              "Reread the textbook chapter twice",
+              "Push harder in focused mode for another full hour",
+              "Step away and let diffuse mode connect, then return",
+              "Switch to a brand-new subject and never come back",
+              "Reread the whole textbook chapter twice tonight",
             ],
             correctIndex: 1,
             explanation: "Hard problems often yield when you leave focused mode and let diffuse mode work, then come back.",
@@ -463,10 +463,10 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
           {
             prompt: "In Roediger & Karpicke (2006), why did testing beat rereading?",
             options: [
-              "Tests gave students the answers to memorize",
-              "On a delayed test, students who practiced retrieving retained far more than those who reread",
-              "Rereading caused students to forget everything",
-              "Testing only helped on immediate tests",
+              "Tests simply gave students the answers to memorize",
+              "On a delayed test, retrieval practice retained far more",
+              "Rereading caused students to forget almost everything",
+              "Testing helped only on the immediate same-day test",
             ],
             correctIndex: 1,
             explanation: "Retrieval practice produced substantially better retention after a delay: the testing effect.",
@@ -475,10 +475,10 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
           {
             prompt: "You have four hours to study for a test next week. Which plan does the research favor?",
             options: [
-              "One four-hour block tonight",
+              "One single four-hour cram block tonight",
               "Four one-hour sessions spread across the week",
-              "Eight hours the night before",
-              "It makes no difference",
+              "Eight straight hours the night before it",
+              "It makes no measurable difference either way",
             ],
             correctIndex: 1,
             explanation: "Spaced (distributed) practice beats massed practice across hundreds of experiments (Cepeda et al., 2006).",
@@ -487,9 +487,9 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
           {
             prompt: "Interleaving made practice feel harder and look worse that day, yet doubled next-day scores. Why?",
             options: [
-              "It is a desirable difficulty: effortful practice improves long-term retention",
-              "The students cheated on the later test",
-              "Blocked practice is always better",
+              "A desirable difficulty: effortful practice aids retention",
+              "The students must have cheated on that later test",
+              "Blocked practice is always better than interleaving",
               "The in-session feeling is the best guide to learning",
             ],
             correctIndex: 0,
@@ -499,10 +499,10 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
           {
             prompt: "Why is pulling an all-nighter a poor way to prepare?",
             options: [
-              "It gives you too much diffuse-mode time",
-              "Sleep is when memories consolidate, so skipping it undermines what you studied",
-              "Caffeine erases memories",
-              "It counts as massed practice, which is ideal",
+              "It gives you far too much idle diffuse-mode time now",
+              "Sleep consolidates memory, so skipping it undermines study",
+              "Caffeine actively erases the memories you just formed",
+              "It counts as massed practice, which is always ideal",
             ],
             correctIndex: 1,
             explanation: "Sleep actively consolidates and reorganizes memory; an all-nighter trades away that process (Diekelmann & Born, 2010).",
@@ -511,9 +511,9 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
           {
             prompt: "What turns ordinary repetition into deliberate practice?",
             options: [
-              "Doing more total hours of anything",
-              "Targeting a skill just beyond your reach, with full focus and immediate feedback",
-              "Repeating only what you already do well",
+              "Simply doing more total hours of anything at all",
+              "Targeting a skill just past your reach, with feedback",
+              "Repeating only what you already do quite well",
               "Practicing while distracted to build toughness",
             ],
             correctIndex: 1,
@@ -523,10 +523,10 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
           {
             prompt: "How does committing to a 25-minute Pomodoro help you beat procrastination?",
             options: [
-              "It guarantees you finish the whole task",
-              "It lowers the cost of starting by promising effort, not an outcome",
-              "It removes the need for breaks",
-              "It works only for people who aren't busy",
+              "It guarantees that you will finish the whole task",
+              "It lowers the cost of starting: effort, not outcome",
+              "It removes the need for any breaks at all today",
+              "It works only for people who are not at all busy",
             ],
             correctIndex: 1,
             explanation: "Procrastination avoids a feeling; committing to 25 focused minutes (process, not outcome) makes starting easy (Cirillo, 2018).",
@@ -535,10 +535,10 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
           {
             prompt: "Why is \"this feels familiar\" a dangerous signal when studying?",
             options: [
-              "Familiarity guarantees you'll pass",
-              "Fluency from rereading creates an illusion of knowing; self-testing reveals the truth",
-              "It means you've already mastered the material",
-              "Familiar material is never on tests",
+              "Familiarity guarantees that you will pass the test",
+              "Fluency from rereading fakes knowing; self-testing checks",
+              "It means you have already fully mastered the material",
+              "Familiar material is basically never on the tests",
             ],
             correctIndex: 1,
             explanation: "Familiarity is an unreliable gauge; replace the feeling with a measurement: self-testing (Dunlosky et al., 2013; Flavell, 1979).",
@@ -547,10 +547,10 @@ The discomfort is the tell. If your studying feels smooth and easy, you're proba
           {
             prompt: "Across this whole course, what does it usually mean if your studying feels smooth and easy?",
             options: [
-              "You're learning efficiently and can stop early",
+              "You are learning efficiently and can safely stop early",
               "You're probably building familiarity, not durable memory",
-              "The material is too advanced",
-              "You should reread it once more to lock it in",
+              "The material is simply far too advanced right now",
+              "You should just reread it once more to lock it in",
             ],
             correctIndex: 1,
             explanation: "Effortful methods (retrieval, spacing, interleaving) feel harder but last; easy studying tends to build familiarity, not memory.",

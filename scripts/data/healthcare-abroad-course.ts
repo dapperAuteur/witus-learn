@@ -315,9 +315,9 @@ None of the numbers in this course, insurance costs, evacuation figures, Medigap
             prompt: "According to the State Department, what is a common practical reality about paying for medical care abroad?",
             options: [
               "Care is always billed to your U.S. insurance automatically",
-              "In many locations, payment or a deposit is required before you're treated",
-              "The U.S. government pays first and bills you later",
-              "Care abroad is always free for U.S. citizens",
+              "In many places, payment or a deposit comes before treatment",
+              "The U.S. government pays the provider and bills you later",
+              "Care abroad is always completely free for U.S. citizens",
             ],
             correctIndex: 1,
             explanation:
@@ -328,9 +328,9 @@ None of the numbers in this course, insurance costs, evacuation figures, Medigap
             prompt: "What is travel medical insurance designed to cover?",
             options: [
               "Ongoing routine care for someone living abroad long-term",
-              "Emergency medical care (and often evacuation) for a single, defined trip",
-              "Trip cancellation and lost luggage only",
-              "Prescription refills at any U.S. pharmacy",
+              "Emergency medical care, often evacuation, for one defined trip",
+              "Trip cancellation, travel delays, and lost luggage only",
+              "Routine prescription refills at any U.S. or local pharmacy",
             ],
             correctIndex: 1,
             explanation:
@@ -340,10 +340,10 @@ None of the numbers in this course, insurance costs, evacuation figures, Medigap
           {
             prompt: "How does international (expat) health insurance differ from travel medical insurance?",
             options: [
-              "It's identical, just a different name",
-              "It's ongoing and renewable, meant for someone actually living in a country long-term",
-              "It only covers emergencies during layovers",
-              "It's only available to non-U.S. citizens",
+              "It's identical to travel medical, just a different name",
+              "It's ongoing and renewable, for long-term residents abroad",
+              "It only covers medical emergencies during airport layovers",
+              "It's only available to non-U.S. citizens living abroad",
             ],
             correctIndex: 1,
             explanation:
@@ -353,10 +353,10 @@ None of the numbers in this course, insurance costs, evacuation figures, Medigap
           {
             prompt: "What does Medicare.gov say about Medicare coverage outside the United States?",
             options: [
-              "Medicare covers all care abroad the same as at home",
-              "Medicare usually doesn't cover health care while traveling outside the U.S., with narrow exceptions",
-              "Medicare only covers care in Canada and Mexico",
-              "Medicare coverage abroad depends only on your age",
+              "Medicare covers all care abroad exactly the same as at home",
+              "Medicare usually won't cover care abroad, with few exceptions",
+              "Medicare only covers emergency care in Canada and Mexico",
+              "Medicare coverage abroad depends only on your age bracket",
             ],
             correctIndex: 1,
             explanation:
@@ -366,9 +366,9 @@ None of the numbers in this course, insurance costs, evacuation figures, Medigap
           {
             prompt: "Why does the State Department recommend checking with a destination's embassy about your medicines before you travel?",
             options: [
-              "Because customs always confiscates medicine",
-              "Because medicine rules vary by country, and a restricted medicine, even one legal in the U.S., can lead to arrest or detention",
-              "Because embassies sell replacement medicine",
+              "Because customs officers always confiscate medicine",
+              "Because a restricted medicine can mean arrest abroad",
+              "Because embassies always sell replacement medicine",
               "Because it's only relevant for controlled substances",
             ],
             correctIndex: 1,
@@ -379,10 +379,10 @@ None of the numbers in this course, insurance costs, evacuation figures, Medigap
           {
             prompt: "What should you generally expect about paying for routine or emergency care abroad?",
             options: [
-              "Your U.S. insurance is billed automatically",
-              "Payment or a deposit is often required before you're treated",
-              "Care is billed to the nearest U.S. embassy",
-              "You can always pay after you return home",
+              "Your U.S. insurance is always billed automatically",
+              "Payment or a deposit is often required up front",
+              "Care is billed directly to the nearest U.S. embassy",
+              "You can always pay the bill after you return home",
             ],
             correctIndex: 1,
             explanation:
@@ -392,9 +392,9 @@ None of the numbers in this course, insurance costs, evacuation figures, Medigap
           {
             prompt: "Why can medical evacuation insurance matter even if you already have travel health insurance?",
             options: [
-              "Travel health insurance never covers any medical care",
-              "Most travel health plans don't cover the cost of transport to better-equipped care or transport home, which can cost tens of thousands of dollars",
-              "Medical evacuation is always included automatically",
+              "Travel health insurance never covers any medical care at all",
+              "Most travel plans don't cover costly evacuation transport",
+              "Medical evacuation is always covered automatically for free",
               "Evacuation insurance replaces the need for a passport",
             ],
             correctIndex: 1,

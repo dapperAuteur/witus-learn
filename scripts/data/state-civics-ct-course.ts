@@ -271,10 +271,10 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
           {
             prompt: "Why is Connecticut called 'The Constitution State'?",
             options: [
-              "It wrote the U.S. Constitution",
-              "For its 1639 Fundamental Orders, often called one of the first written constitutions framing a government",
-              "It has the most amendments",
-              "It has no constitution",
+              "Because it wrote the entire U.S. Constitution",
+              "For its 1639 Fundamental Orders, an early charter",
+              "Because it has the most constitutional amendments",
+              "Because the state has no written constitution",
             ],
             correctIndex: 1,
             explanation:
@@ -284,10 +284,10 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
           {
             prompt: "What did Connecticut do to county government in 1960?",
             options: [
-              "Strengthened it",
-              "Abolished it: Connecticut has no county governments",
-              "Merged all counties into one",
-              "Created new counties",
+              "Strengthened county governments across the state",
+              "Abolished it: there are no county governments",
+              "Merged all eight counties into a single one",
+              "Created several brand-new county governments",
             ],
             correctIndex: 1,
             explanation:
@@ -297,10 +297,10 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
           {
             prompt: "Who provides 'county-type' services in Connecticut today?",
             options: [
-              "County commissioners",
-              "The state and the towns (with regional planning bodies for federal purposes)",
-              "The federal government",
-              "Private companies",
+              "Elected county commissioners in each county",
+              "The state and the towns provide those services",
+              "The federal government runs those services",
+              "Private for-profit companies under state contract",
             ],
             correctIndex: 1,
             explanation:
@@ -318,10 +318,10 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
           {
             prompt: "Which statewide officer runs Connecticut's elections?",
             options: [
-              "The Attorney General",
+              "The elected Attorney General",
               "The Secretary of the State",
-              "The Comptroller",
-              "The Chief Justice",
+              "The Connecticut Comptroller",
+              "The court's Chief Justice",
             ],
             correctIndex: 1,
             explanation:
@@ -331,10 +331,10 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
           {
             prompt: "How are Connecticut's judges chosen?",
             options: [
-              "Elected in partisan races",
-              "Screened by a commission, nominated by the Governor, and appointed by the General Assembly for 8-year terms",
-              "Appointed for life by the Governor",
-              "Chosen by town meeting",
+              "Elected by voters in partisan campaign races",
+              "Nominated by the Governor, appointed by lawmakers",
+              "Appointed for life directly by the sitting Governor",
+              "Chosen directly by each town's town meeting vote",
             ],
             correctIndex: 1,
             explanation:
@@ -344,10 +344,10 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
           {
             prompt: "Can Connecticut citizens put a law on the ballot by initiative?",
             options: [
-              "Yes, a strong initiative",
-              "No, Connecticut has no statewide initiative; the General Assembly proposes amendments for voters",
-              "Only in even years",
-              "Only for schools",
+              "Yes, through a strong citizen initiative process",
+              "No, there is no statewide citizen initiative",
+              "Only for even-year statewide ballot measures",
+              "Only for local public school ballot questions",
             ],
             correctIndex: 1,
             explanation:
@@ -357,10 +357,10 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
           {
             prompt: "Since Connecticut has no counties, what is its key unit of local government?",
             options: [
-              "The parish",
+              "The rural church parish",
               "The town (169 of them)",
-              "The borough",
-              "The precinct",
+              "The incorporated borough",
+              "The local voting precinct",
             ],
             correctIndex: 1,
             explanation:
@@ -370,10 +370,10 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
           {
             prompt: "Which voting change did Connecticut recently adopt?",
             options: [
-              "It banned absentee voting",
-              "It added early in-person voting (used starting 2024) and no-excuse absentee voting",
-              "It ended all elections",
-              "It required property ownership",
+              "It banned all absentee mail-in voting outright",
+              "It added early in-person and no-excuse absentee",
+              "It ended all statewide and local elections outright",
+              "It required property ownership to cast a ballot",
             ],
             correctIndex: 1,
             explanation:
@@ -383,10 +383,10 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
           {
             prompt: "Why does this course tell you to VERIFY Connecticut's regions and voting rules?",
             options: [
-              "Because Connecticut has no government website",
-              "Because planning-region arrangements and new voting rules are recent and change, and towns run elections; confirm at [portal.ct.gov/sots](https://portal.ct.gov/sots)",
-              "Because only Congress sets them",
-              "Because voting is secret",
+              "Because Connecticut has no official government website",
+              "Because these regions and rules are recent and change",
+              "Because only the U.S. Congress can set the rules",
+              "Because all voting details are kept fully secret",
             ],
             correctIndex: 1,
             explanation:

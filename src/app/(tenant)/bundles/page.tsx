@@ -2,10 +2,15 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { listBundles } from "@/db/queries/bundles";
+import { ogImageUrl } from "@/lib/og";
 
+const bundlesDescription = "Course bundles: themed sets sold together at a discount.";
+const bundlesCard = ogImageUrl({ title: "Bundles" });
 export const metadata: Metadata = {
   title: "Bundles",
-  description: "Course bundles: themed sets sold together at a discount.",
+  description: bundlesDescription,
+  openGraph: { title: "Bundles", description: bundlesDescription, images: [bundlesCard] },
+  twitter: { card: "summary_large_image", title: "Bundles", description: bundlesDescription, images: [bundlesCard] },
 };
 
 function priceLabel(price: string | number, priceType: string): string {
