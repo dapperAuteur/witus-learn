@@ -58,6 +58,9 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
     ...(showMap ? [{ href: "/explore", label: "Explore" }] : []),
     ...(flags.paths ? [{ href: "/paths", label: "Paths" }] : []),
     { href: "/instructors", label: "Instructors" },
+    // The per-audience landing pages (/for + /for/<audience>): teachers, school leaders, parents,
+    // homeschoolers, community. Public marketing/discovery, so ungated and always shown.
+    { href: "/for", label: "Who it's for" },
   ];
 
   // Only rendered for instructors/brand admins/the platform owner (canTeach). The two
