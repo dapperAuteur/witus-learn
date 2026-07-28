@@ -51,16 +51,22 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
         </Link>
       </p>
 
-      {/* Gradebook export (plans/50, Phase 1). A plain download link: the route returns a CSV
-          attachment, authorized to the cohort owner or a tenant admin. */}
-      <p className="mt-4">
+      {/* Gradebook export (plans/50): a CSV download and a print-to-PDF report, both authorized to the
+          cohort owner or a tenant admin. */}
+      <div className="mt-4 flex flex-wrap gap-2">
         <a
           href={`/api/cohorts/${cohort.id}/gradebook.csv`}
           className="inline-flex min-h-11 items-center rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900 pointer-coarse:min-h-12"
         >
           Export gradebook (CSV)
         </a>
-      </p>
+        <Link
+          href={`/cohorts/${cohort.id}/report`}
+          className="inline-flex min-h-11 items-center rounded-md border border-neutral-300 px-3 py-1.5 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900 pointer-coarse:min-h-12"
+        >
+          Printable report (PDF)
+        </Link>
+      </div>
 
       <div className="mt-6">
         <CohortRoster
