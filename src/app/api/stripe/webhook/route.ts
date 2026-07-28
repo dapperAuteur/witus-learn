@@ -4,6 +4,10 @@ import { getStripe } from "@/lib/stripe";
 import { cancelEnrollmentBySubscription, enrollPaid } from "@/db/queries/enrollment";
 import { getBundleCourseIds } from "@/db/queries/bundles";
 import { incrementPromoUsage } from "@/db/queries/connect";
+import {
+  activatePlatformSubscription,
+  setPlatformSubscriptionStatusByStripeId,
+} from "@/db/queries/platform-subscriptions";
 
 // POST /api/stripe/webhook — Stripe calls this directly (no tenant host), so it
 // reads tenant/course/user from the session metadata and verifies the signature
@@ -47,9 +51,23 @@ export async function POST(req: Request) {
       }
     }
     if (md.promo_id) await incrementPromoUsage(md.promo_id);
+    // A SCHOOL bought its own white-label instance (plans/51). Activate its billing row and the
+    // tenant. Idempotent, so a Stripe retry is a no-op. Covers both a recurring subscription and a
+    // one-time lifetime payment (a lifetime session simply has no `subscription`).
+    if (md.platform_tenant_id) {
+      await activatePlatformSubscription({
+        tenantId: md.platform_tenant_id,
+        checkoutSessionId: s.id,
+        stripeCustomerId: typeof s.customer === "string" ? s.customer : null,
+        stripeSubscriptionId: typeof s.subscription === "string" ? s.subscription : null,
+      });
+    }
   } else if (event.type === "customer.subscription.deleted") {
     const sub = event.data.object as Stripe.Subscription;
+    // The id belongs to either a student's course subscription or a school's platform subscription;
+    // only one of these matches, so calling both is safe.
     await cancelEnrollmentBySubscription(sub.id);
+    await setPlatformSubscriptionStatusByStripeId(sub.id, "canceled");
   }
 
   return new Response("ok", { status: 200 });

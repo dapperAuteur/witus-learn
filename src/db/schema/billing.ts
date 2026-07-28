@@ -52,3 +52,41 @@ export const courseCompletions = pgTable(
 
 export type Enrollment = typeof enrollments.$inferSelect;
 export type CourseCompletion = typeof courseCompletions.$inferSelect;
+
+// Platform billing (plans/51): what a white-label SCHOOL pays to run its own instance, one row per
+// tenant. This is the opposite money direction from enrollments (which charge a STUDENT for a course
+// and pay the school via Connect): here the school pays BAM's platform account. Each school carries
+// its OWN negotiated amount, either recurring or a one-time lifetime payment.
+export const platformSubscriptions = pgTable(
+  "platform_subscriptions",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    /** 'subscription' (recurring) or 'lifetime' (one-time, never renews). */
+    billingType: text("billing_type").notNull(),
+    /** 'month' or 'year' for a subscription; null for lifetime. */
+    interval: text("interval"),
+    /** The negotiated per-school price, in the currency's minor unit (cents). */
+    amountCents: integer("amount_cents").notNull(),
+    currency: text("currency").notNull().default("usd"),
+    /** 'pending' (checkout created, unpaid) | 'active' | 'past_due' | 'canceled'. */
+    status: text("status").notNull().default("pending"),
+    stripeCustomerId: text("stripe_customer_id"),
+    stripeSubscriptionId: text("stripe_subscription_id"),
+    stripeCheckoutSessionId: text("stripe_checkout_session_id"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    unique("platform_subscriptions_tenant_uq").on(t.tenantId),
+    check("platform_subscriptions_type_chk", sql`${t.billingType} in ('subscription','lifetime')`),
+    check(
+      "platform_subscriptions_status_chk",
+      sql`${t.status} in ('pending','active','past_due','canceled')`,
+    ),
+  ],
+);
+
+export type PlatformSubscription = typeof platformSubscriptions.$inferSelect;
