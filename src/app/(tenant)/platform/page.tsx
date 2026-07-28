@@ -3,11 +3,16 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getScopedDb } from "@/db/scoped";
 import { brandName } from "@/lib/branding";
+import { ogImageUrl } from "@/lib/og";
 
+const platformDescription =
+  "Learn.WitUS is the multi-tenant learning platform behind Better Vice Club and other cited, media-rich schools. Run your own on your own domain.";
+const platformCard = ogImageUrl({ title: "The platform" });
 export const metadata: Metadata = {
   title: "The platform",
-  description:
-    "Learn.WitUS is the multi-tenant learning platform behind Better Vice Club and other cited, media-rich schools. Run your own on your own domain.",
+  description: platformDescription,
+  openGraph: { title: "The platform", description: platformDescription, images: [platformCard] },
+  twitter: { card: "summary_large_image", title: "The platform", description: platformDescription, images: [platformCard] },
 };
 
 interface Feature {

@@ -100,6 +100,42 @@ results replay), and **never edit the prompt** — `questionKey` hashes the prom
 resets per-question history for every learner who already answered. Give distractors real, checkable,
 and definitively *wrong* specificity; padding them with filler just trades one tell for another.
 
+## Page-quality rule — every page is found, shared, mobile-first, and usable
+
+A page that works but can't be found, or looks broken on a phone, or shares as a blank card, is a
+page that isn't done. Every user-facing page (a `page.tsx`, especially a **marketing/landing page**)
+must satisfy all of these **in the same branch that ships it**:
+
+1. **Findable in the menu.** The page is reachable from the site chrome (the header nav, the mobile
+   drawer, or the footer), not just by knowing the URL. This is the load-bearing one, and the one that
+   rots silently: the per-audience landing pages sat published-but-unlinked until a visitor asked where
+   they were. Add the nav/footer link when you add the page. **Gate recruiting-front-door pages**
+   (anything that `notFound()`s unless `tenant.flags.recruiting`, e.g. `/for`, `/schools`, `/platform`)
+   **on the same flag**, or the link is a dead 404 on every white-label school.
+2. **SEO.** Export `metadata` (or `generateMetadata`) with a unique `title` and `description`. Dynamic
+   and by-id pages resolve both from tenant-scoped data (never a client-supplied tenant, per the
+   multi-tenancy invariant).
+3. **Its own social card.** Set `openGraph.images` **and** `twitter.images` to
+   `ogImageUrl({ title, subtitle })` (`src/lib/og.ts` → `/api/og`, which paints the page's title over
+   the tenant's own map). A page that inherits the generic default card shares identically to every
+   other page and says nothing about itself. Login-gated app pages are exempt (behind auth, not shared).
+4. **Mobile-first.** Design at 360px first; base Tailwind classes target the phone and `sm:`/`md:`/`lg:`
+   layer up. Tap targets are at least ~44px (`min-h-11`, `pointer-coarse:min-h-11`). Nothing forces
+   horizontal scroll; wide content (tables, maps, code) scrolls inside its own `overflow-x-auto` box.
+5. **Accessible.** One `<h1>`, ordered headings, semantic landmarks, `alt` on meaningful images,
+   keyboard-operable controls, visible focus, labelled inputs. (The general a11y conventions live in
+   `gemini/witus/docs/shared-ui-ux-dx.md`.)
+6. **Marketing pages specifically** lead with a clear value proposition and a call to action, and carry
+   **no fabricated stats, testimonials, efficacy claims, or prices** (the audience-landing content type
+   states this and the isolation suite guards it).
+
+**Enforced.** `pnpm lint` runs `scripts/check-page-reachability.ts`, a **ratchet** over every top-level
+static `(tenant)` page: it fails on a **menu orphan** (a public page linked from no chrome) and on a
+**shared-OG-card** public page (one riding the default card). Pre-existing exceptions sit in that
+script's `ORPHAN_OK` / `SHARED_CARD_OK` maps with a one-line reason; a new page fails until it is
+linked and given its own card, or added to a map with a reason. Delete an entry when you fix its page;
+never add one to make a new page pass. Points 4 and 5 are review-enforced, not scripted.
+
 ## App-improvements review rule — check `./plans/app-improvements/` at both ends of a task
 
 `./plans/app-improvements/` is BAM's live product backlog — he drops feature notes and bug reports
