@@ -143,12 +143,12 @@ for (const file of trackedPages()) {
 const fail = orphans.length > 0 || sharedCards.length > 0;
 
 if (orphans.length) {
-  console.error(`\nMENU ORPHANS (${orphans.length}) — a public page with no link in the header, mobile drawer, or footer:`);
+  console.error(`\nMENU ORPHANS (${orphans.length}): a public page with no link in the header, mobile drawer, or footer.`);
   for (const r of orphans.sort()) console.error(`  ${r}`);
   console.error(`  Fix: add a nav/footer link in the same branch, or add the route to ORPHAN_OK in this script with a reason.`);
 }
 if (sharedCards.length) {
-  console.error(`\nSHARED OG CARD (${sharedCards.length}) — a public page that rides the tenant default card instead of its own:`);
+  console.error(`\nSHARED OG CARD (${sharedCards.length}): a public page that rides the tenant default card instead of its own.`);
   for (const r of sharedCards.sort()) console.error(`  ${r}`);
   console.error(`  Fix: set metadata.openGraph.images to ogImageUrl({ title: <page title> }) (see src/lib/og.ts), or add to SHARED_CARD_OK with a reason.`);
 }
