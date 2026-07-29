@@ -136,10 +136,11 @@ export const TPT_PLAN: TptPlanItem[] = [
     title: "Who Has the Power? A civics method unit",
     courseSlug: "who-has-the-power",
     status: "built",
+    packetDir: "who-has-the-power-unit",
     price: "$9",
     tier: "unit",
     rationale:
-      "Newly shipped, unusually strong for civics classrooms (Dillon's Rule, tribal sovereignty as a separate sovereign). Differentiated and standards-aligned. Build the packet next.",
+      "Newly shipped, unusually strong for civics classrooms (Dillon's Rule, tribal sovereignty as a separate sovereign). Differentiated and standards-aligned.",
     crossSell: "The Local Layer and the rest of the government-structures path.",
   },
   {
@@ -147,6 +148,7 @@ export const TPT_PLAN: TptPlanItem[] = [
     title: "What They Built: Black business districts",
     courseSlug: "what-they-built",
     status: "built",
+    packetDir: "what-they-built-unit",
     price: "$9",
     tier: "unit",
     rationale:
