@@ -133,6 +133,11 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   malformed / indented / placeholder / answer-equals-question card that would render as dead prose and
   never grade. **Semantic** ("Audit reveals" on the instructor tools): the AI judges whether each
   card's answer is actually supported by its lesson, advisory only (never a build gate).
+- 🔜 **Sentry error monitoring** (\`feat/rag-autoindex-and-report-bulk\`, wired, DSN pending → task 208):
+  crash-grade signal (real stack traces, grouping, alerting) alongside the existing home-grown admin
+  error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
+  \`onRequestError\` tags the request host (how tenants resolve) and a \`beforeSend\` scrub reuses
+  \`redactSecrets\` so no learner email or magic-link token ever leaves for the vendor.
 - ✅ **LMS UX batch** (\`bundle/lms-ux-2026-07-01\`): **upload hardening** for the 100MB Cloudinary
   cap (shared chunked \`uploadToCloudinary\` + size guard; recorder live-size + auto-stop; "Stripe
   not configured" banner); **teacher catalog** (\`/teach\` fuzzy search + status filters + bulk

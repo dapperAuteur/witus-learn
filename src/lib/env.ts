@@ -98,6 +98,14 @@ const schema = z.object({
   // unset (default) to attach each subdomain via the API instead — that works with just a wildcard
   // CNAME *DNS record* at your own DNS host, no nameserver move.
   VERCEL_WILDCARD_DOMAIN: z.string().optional(),
+
+  // Sentry error monitoring (optional; the SDK is inert without a DSN — see sentry.*.config.ts and
+  // src/instrumentation*.ts). SENTRY_DSN is server-side; NEXT_PUBLIC_SENTRY_DSN is the browser DSN.
+  // The build-time SENTRY_ORG / SENTRY_PROJECT / SENTRY_AUTH_TOKEN (source-map upload) are read from
+  // process.env by next.config.ts and don't need validation here.
+  SENTRY_DSN: z.string().optional(),
+  NEXT_PUBLIC_SENTRY_DSN: z.string().optional(),
+  SENTRY_ENVIRONMENT: z.string().optional(),
 });
 
 const isProd = process.env.NODE_ENV === "production";
@@ -187,3 +195,5 @@ export const hasVercelDomains = Boolean(env.VERCEL_API_TOKEN && env.VERCEL_PROJE
  *  When false (default), base-zone subdomains are attached to Vercel individually via the API, which
  *  works with just a wildcard CNAME DNS record — no nameserver move. */
 export const hasVercelWildcard = env.VERCEL_WILDCARD_DOMAIN === "true";
+/** Sentry is wired to receive events (a DSN is set). Without it the SDK is inert. */
+export const hasSentry = Boolean(env.SENTRY_DSN || env.NEXT_PUBLIC_SENTRY_DSN);
