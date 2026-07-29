@@ -111,15 +111,36 @@ export async function activatePlatformSubscription(opts: {
   await db.update(tenants).set({ isActive: true }).where(eq(tenants.id, opts.tenantId));
 }
 
-/** Webhook: a school's recurring subscription changed (past_due or canceled). Lifetime rows never
- *  reach here. On cancel we do NOT auto-delete the tenant; we mark it so BAM decides whether to
- *  suspend, since a cancelled platform sub is a business event, not a data-cleanup one. */
+/** Webhook: a school's recurring subscription changed (active, past_due, or canceled). Lifetime rows
+ *  never reach here. On cancel we do NOT auto-delete the tenant; we mark it so BAM decides whether to
+ *  suspend, since a cancelled platform sub is a business event, not a data-cleanup one. Keyed by the
+ *  Stripe subscription id, so it only ever matches a platform row (never a student's course sub, which
+ *  lives in a different table), and a repeated webhook is a no-op rewrite of the same status. */
 export async function setPlatformSubscriptionStatusByStripeId(
   stripeSubscriptionId: string,
-  status: "past_due" | "canceled",
+  status: "active" | "past_due" | "canceled",
 ): Promise<void> {
   await db
     .update(platformSubscriptions)
     .set({ status, updatedAt: new Date() })
     .where(eq(platformSubscriptions.stripeSubscriptionId, stripeSubscriptionId));
+}
+
+/** Owner suspend/reactivate: set a school's billing status directly by tenant id. Used by the
+ *  suspend/reactivate control, not the webhook (which keys off Stripe ids). A no-op if the school has
+ *  no billing row yet, and idempotent (re-running rewrites the same status). */
+export async function setPlatformSubscriptionStatusByTenantId(
+  tenantId: string,
+  status: "pending" | "active" | "past_due" | "canceled",
+): Promise<void> {
+  await db
+    .update(platformSubscriptions)
+    .set({ status, updatedAt: new Date() })
+    .where(eq(platformSubscriptions.tenantId, tenantId));
+}
+
+/** Owner suspend/reactivate: flip whether a school (tenant) is live. Suspending hides the school from
+ *  its learners; reactivating brings it back. Idempotent (setting the same value is a no-op rewrite). */
+export async function setTenantActive(tenantId: string, active: boolean): Promise<void> {
+  await db.update(tenants).set({ isActive: active }).where(eq(tenants.id, tenantId));
 }

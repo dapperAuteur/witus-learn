@@ -141,7 +141,9 @@ export async function createCourseCheckout(opts: {
   const session = await stripe.checkout.sessions.create({
     mode: isSub ? "subscription" : "payment",
     line_items: [{ price: priceId, quantity: 1 }],
-    success_url: `${siteUrl}/course/${course.id}?enrolled=true&session_id={CHECKOUT_SESSION_ID}`,
+    // Fulfill on return (backstop for the webhook, which can lag or, in dev, never arrive). The verify
+    // route enrolls idempotently and redirects to the now-unlocked course. See /api/checkout/verify.
+    success_url: `${siteUrl}/api/checkout/verify?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${siteUrl}/course/${course.id}?canceled=true`,
     client_reference_id: userId,
     metadata: {
@@ -239,7 +241,9 @@ export async function createBundleCheckout(opts: {
   const session = await stripe.checkout.sessions.create({
     mode: isSub ? "subscription" : "payment",
     line_items: [{ price: priceId, quantity: 1 }],
-    success_url: `${siteUrl}/bundles/${bundle.slug}?purchased=true&session_id={CHECKOUT_SESSION_ID}`,
+    // Same verify-on-return backstop as a course; it enrolls the buyer in every member course and
+    // sends them to /my-courses. See /api/checkout/verify.
+    success_url: `${siteUrl}/api/checkout/verify?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${siteUrl}/bundles/${bundle.slug}?canceled=true`,
     client_reference_id: userId,
     metadata: {

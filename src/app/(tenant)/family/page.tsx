@@ -78,7 +78,23 @@ export default async function FamilyPage() {
         <div className="mt-8 space-y-10">
           {views.map((child) => (
             <section key={child.userId} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
-              <h2 className="text-lg font-semibold">{child.displayName}</h2>
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <h2 className="text-lg font-semibold">{child.displayName}</h2>
+                <nav aria-label={`Export ${child.displayName}'s report`} className="flex flex-wrap items-center gap-2">
+                  <a
+                    href={`/api/family/${child.userId}/gradebook.csv`}
+                    className="inline-flex min-h-11 items-center rounded-md border border-neutral-300 px-3 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900 pointer-coarse:min-h-12"
+                  >
+                    Export (CSV)
+                  </a>
+                  <a
+                    href={`/family/${child.userId}/report`}
+                    className="inline-flex min-h-11 items-center rounded-md border border-neutral-300 px-3 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900 pointer-coarse:min-h-12"
+                  >
+                    Printable report (PDF)
+                  </a>
+                </nav>
+              </div>
 
               <div className="mt-4">
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Course progress</h3>
