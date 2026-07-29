@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq, ne, sql } from "drizzle-orm";
+import { and, desc, eq, inArray, ne, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { problemReports, type ProblemReport } from "@/db/schema";
 
@@ -60,4 +60,21 @@ export async function setProblemReportStatus(
     .where(and(eq(problemReports.tenantId, tenantId), eq(problemReports.id, id)))
     .returning();
   return row ?? null;
+}
+
+/** Set the status of many reports at once (tenant-scoped). Powers the admin "bulk resolve" action
+ *  so a batch of already-triaged reports can be closed in one click. Returns the ids actually
+ *  updated (ids belonging to another tenant simply don't match and are skipped — no cross-tenant write). */
+export async function setProblemReportStatusBulk(
+  tenantId: string,
+  ids: string[],
+  status: "new" | "triaged" | "closed",
+): Promise<string[]> {
+  if (ids.length === 0) return [];
+  const rows = await db
+    .update(problemReports)
+    .set({ status })
+    .where(and(eq(problemReports.tenantId, tenantId), inArray(problemReports.id, ids)))
+    .returning({ id: problemReports.id });
+  return rows.map((r) => r.id);
 }

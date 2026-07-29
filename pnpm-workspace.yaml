@@ -1,8 +1,11 @@
 # pnpm 11 moved build-script approval here (the old package.json `pnpm.onlyBuiltDependencies`
-# field is no longer read — see https://pnpm.io/settings). These three need their build
-# scripts to run: esbuild (used by tsx, which every `pnpm <script>` in scripts/ runs on),
-# sharp (Next.js image optimization), and unrs-resolver (eslint's resolver).
+# field is no longer read — see https://pnpm.io/settings). These need their build scripts to run:
+# esbuild (used by tsx, which every `pnpm <script>` in scripts/ runs on), sharp (Next.js image
+# optimization), unrs-resolver (eslint's resolver), and @sentry/cli (downloads the CLI binary that
+# uploads source maps at build time so Sentry stack traces are de-minified — harmless without a
+# SENTRY_AUTH_TOKEN set, which just skips the upload step).
 allowBuilds:
+  '@sentry/cli': true
   esbuild: true
   sharp: true
   unrs-resolver: true

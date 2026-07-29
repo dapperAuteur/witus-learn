@@ -33,6 +33,7 @@ import { getSourceChatConfig } from "@/db/queries/source-chat-config";
 import { courseHasChunks } from "@/db/queries/source-chunks";
 import { sourceChatAllowed } from "@/lib/source-chat-access";
 import { CourseAdminTools } from "@/components/course-admin-tools";
+import { getEmbeddingStaleness } from "@/db/queries/cyoa";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { brandName } from "@/lib/branding";
@@ -589,7 +590,11 @@ export default async function CourseBySlugPage({ params }: Params) {
       {showSourceChat ? <CourseSourceChat courseId={course.id} courseTitle={course.title} /> : null}
 
       {view.isEditor ? (
-        <CourseAdminTools courseId={course.id} navigationMode={course.navigationMode} />
+        <CourseAdminTools
+          courseId={course.id}
+          navigationMode={course.navigationMode}
+          index={await getEmbeddingStaleness(course.id)}
+        />
       ) : null}
     </main>
   );

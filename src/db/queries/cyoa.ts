@@ -30,6 +30,25 @@ export async function upsertLessonEmbedding(lessonId: string, embedding: number[
     });
 }
 
+/** Index freshness for a course: how many published lessons are missing an embedding or have been
+ *  edited since they were last embedded (`updated_at > created_at`). `stale > 0` means the RAG index
+ *  is behind the lessons — the course page shows a "re-index" nudge on the instructor tools. */
+export async function getEmbeddingStaleness(
+  courseId: string,
+): Promise<{ published: number; stale: number }> {
+  const [row] = await db
+    .select({
+      published: sql<number>`count(*)`.mapWith(Number),
+      stale: sql<number>`count(*) filter (where ${lessonEmbeddings.lessonId} is null or ${lessons.updatedAt} > ${lessonEmbeddings.createdAt})`.mapWith(
+        Number,
+      ),
+    })
+    .from(lessons)
+    .leftJoin(lessonEmbeddings, eq(lessonEmbeddings.lessonId, lessons.id))
+    .where(and(eq(lessons.courseId, courseId), eq(lessons.isPublished, true)));
+  return { published: row?.published ?? 0, stale: row?.stale ?? 0 };
+}
+
 /** In-course semantic neighbors. Course-scoped, so naturally tenant-safe. */
 export async function matchLessons(
   courseId: string,
