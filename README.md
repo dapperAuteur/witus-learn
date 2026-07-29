@@ -10,10 +10,16 @@ surface is the **Commodity Map**, an interactive world map, not a generic catalo
 
 ## Status
 
-Phase 1 (Foundation) in progress. See [docs/BUILD_PLAN.md](docs/BUILD_PLAN.md) for the full
-phased plan and [docs/spec/dedicated-lms/](docs/spec/dedicated-lms/) for the complete product
-specification (PRD, data model, API surface, content/pedagogy, auth/billing, multitenancy,
-migration).
+Live and in active development. For a plain-language view of what's shipped and what's coming, see
+the **public roadmap at `/roadmap`** ([src/lib/public-roadmap.ts](src/lib/public-roadmap.ts)); the
+owner-only in-app roadmap at `/admin/roadmap` ([src/lib/roadmap.ts](src/lib/roadmap.ts)) carries the
+full per-branch engineering detail. See [docs/BUILD_PLAN.md](docs/BUILD_PLAN.md) for the phased plan
+and [docs/spec/dedicated-lms/](docs/spec/dedicated-lms/) for the complete product specification (PRD,
+data model, API surface, content/pedagogy, auth/billing, multitenancy, migration).
+
+Recent: publish-time RAG auto-indexing (+ staleness badge), an assessment guardrail (`pnpm
+check:reveals` lint + an AI "Audit reveals" instructor tool), admin bulk-resolve for problem reports,
+and Sentry error monitoring (wired, inert until a DSN is set). This public **`/roadmap`** page is new.
 
 ## Stack
 

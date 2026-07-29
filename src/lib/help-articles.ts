@@ -161,6 +161,23 @@ sticking in the lesson versus only at quiz time. Learners see their own side of 
 for another try.`,
   },
   {
+    slug: "ai-tools-embeddings-audit",
+    title: "Keep your course's AI features current",
+    category: "Teaching",
+    keywords: ["embeddings", "index", "reindex", "re-index", "chat with sources", "cyoa", "audit reveals", "ai", "self-check"],
+    body: `# Keep your course's AI features current
+
+At the bottom of your course page (when you're the instructor) you'll find **Instructor tools**.
+
+- **Generate / Re-index embeddings** powers chat-with-your-sources and the CYOA "crossroads." When you
+  **publish** a course it re-indexes automatically. If you later edit lessons on an already-published
+  course, a badge shows **"N of M lessons changed since last index"**, click **Re-index lessons** to
+  refresh it. (Needs an AI key configured.)
+- **Audit reveals** asks the AI whether each \`:::reveal\` self-check answer is actually supported by
+  its lesson, and lists any that look off. It's an advisory suggestion, so always verify before you
+  change a card, but it's a fast way to catch an answer that drifted after you rewrote a lesson.`,
+  },
+  {
     slug: "live-sessions",
     title: "Run a live session",
     category: "Live",

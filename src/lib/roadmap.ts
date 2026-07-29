@@ -138,6 +138,13 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
   \`onRequestError\` tags the request host (how tenants resolve) and a \`beforeSend\` scrub reuses
   \`redactSecrets\` so no learner email or magic-link token ever leaves for the vendor.
+- ✅ **Public roadmap page + config/verify sweep** (\`chore/config-verify-sweep\`): a public,
+  plain-language **\`/roadmap\`** (what's live / building / exploring, recruiting-gated, own OG card,
+  linked in the footer) drawn from \`src/lib/public-roadmap.ts\`, separate from this owner-only detail.
+  Plus a verify pass: \`/explore\` polish confirmed done (map OG, in-place episodes, no S2/S3), Indiana
+  civics superintendent-change confirmed accurate, and a mobile fix (family gradebook report table now
+  scrolls in its own box). Cloudinary audio upload + FAA m2-review re-seed + instructor-URL reassign
+  remain OPERATOR steps (config / DB), not code.
 - ✅ **LMS UX batch** (\`bundle/lms-ux-2026-07-01\`): **upload hardening** for the 100MB Cloudinary
   cap (shared chunked \`uploadToCloudinary\` + size guard; recorder live-size + auto-stop; "Stripe
   not configured" banner); **teacher catalog** (\`/teach\` fuzzy search + status filters + bulk
