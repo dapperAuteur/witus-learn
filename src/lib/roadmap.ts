@@ -168,6 +168,10 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Massachusetts, Missouri, Maryland, Wisconsin, Colorado, Minnesota. Tier 5 (orders 29-34): South
   Carolina, Alabama, Louisiana, Kentucky, Oregon, Oklahoma. The two bundles move to 35/36 and all
   twelve join the State Civics Bundle. 28 of the highest-population states now have a printable unit.
+- ✅ **TpT state packets, tier 6** (\`feat/tpt-state-packets-tier6\`): Connecticut, Utah, Iowa, Nevada,
+  Arkansas, Mississippi civics units (orders 35-40), each standards-grounded via \`pnpm standards:for\`.
+  The two bundles move to 41/42 and all six join the State Civics Bundle. 34 of the highest-population
+  states now have a printable unit.
   plain-language **\`/roadmap\`** (what's live / building / exploring, recruiting-gated, own OG card,
   linked in the footer) drawn from \`src/lib/public-roadmap.ts\`, separate from this owner-only detail.
   Plus a verify pass: \`/explore\` polish confirmed done (map OG, in-place episodes, no S2/S3), Indiana
