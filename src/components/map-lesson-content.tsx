@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { geoNaturalEarth1, geoPath } from "d3-geo";
+import { geoAlbersUsa, geoNaturalEarth1, geoPath } from "d3-geo";
+import type { GeoProjection } from "d3-geo";
 import { feature } from "topojson-client";
 import type { FeatureCollection, LineString, Polygon } from "geojson";
 import type { GeometryCollection, Topology } from "topojson-specification";
@@ -29,11 +30,12 @@ interface Shape {
   /** See Marker.year. */
   year?: number;
 }
-/** A choropleth fill (plans/49): fill a whole country AREA by category, because a comparative property
- *  (a form of government, where an entity type is recognised) is an area, not a point. Joined to the
- *  world topojson by ISO 3166-1 numeric id. Colours and the legend come from `MapContent.regionLegend`. */
+/** A choropleth fill (plans/49): fill a whole AREA by category, because a comparative property
+ *  (a form of government, a municipal-authority regime) is an area, not a point. Colours and the
+ *  legend come from `MapContent.regionLegend`. */
 interface RegionLayer {
-  /** The topojson feature id to fill: the ISO 3166-1 numeric country code, matching the world atlas. */
+  /** The topojson feature id to fill. For the world atlas: the ISO 3166-1 numeric country code
+   *  (e.g. "840"). For the us-states atlas: the 2-digit state FIPS code (e.g. "18" for Indiana). */
   featureId: string;
   /** Category name; its colour comes from `MapContent.regionLegend`. */
   category: string;
@@ -41,38 +43,93 @@ interface RegionLayer {
   label?: string;
   /** See Marker.year. */
   year?: number;
+  /** Which polygon atlas this region belongs to (plans/49). "world" fills a country on the Natural
+   *  Earth world map (the default). "us-states" fills a US state on a geoAlbersUsa map, loaded from
+   *  `us-atlas/states-10m.json`. A lesson is either a world map or a US map, never both: the first
+   *  region's atlas picks the projection and the ~2 MB states atlas loads only when one is present. */
+  atlas?: "world" | "us-states";
 }
 export interface MapContent {
   markers?: Marker[];
   lines?: Shape[];
   polygons?: Shape[];
-  /** Choropleth fills joined to the world topojson by ISO 3166-1 numeric id (plans/49). */
+  /** Choropleth fills joined to a polygon atlas by feature id (plans/49): the world atlas by ISO
+   *  3166-1 numeric id, or the us-states atlas by 2-digit state FIPS. See `RegionLayer.atlas`. */
   regions?: RegionLayer[];
   /** Ordered category -> colour for the `regions` choropleth; also renders the legend. A region whose
    *  category is absent here uses a neutral fill. */
   regionLegend?: { category: string; color: string; label?: string }[];
 }
 
-const WIDTH = 960;
-const HEIGHT = 480;
+// The world map is Natural Earth at 2:1; the US map is geoAlbersUsa at 8:5 (matching the standalone
+// us-states map), which leaves room for the Alaska + Hawaii insets the projection composes in.
+const WORLD_WIDTH = 960;
+const WORLD_HEIGHT = 480;
+const US_WIDTH = 960;
+const US_HEIGHT = 600;
 const flip = (coords: [number, number][]): [number, number][] => coords.map(([lat, lng]) => [lng, lat]);
 const hasYear = (e: { year?: number }): e is { year: number } => typeof e.year === "number";
+// A US region is keyed by 2-digit FIPS; pad so "1" and "01" both match. World ids are already the
+// zero-padded 3-digit strings the atlas ships, so they are compared as-is.
+const usKey = (id: string) => id.padStart(2, "0");
 
-// Renders a lesson's map_content (producer markers + trade-route lines + production
-// polygons) on a Natural Earth world map. Click a marker for its detail. When any element carries a
-// `year`, a time-slider appears and the map reveals elements as of the chosen year (an element with
-// no year always shows). Backwards-compatible: a map with no years renders exactly as before.
+interface MapGeo {
+  land: FeatureCollection;
+  path: ReturnType<typeof geoPath>;
+  project: GeoProjection;
+  featuresById: Map<string, FeatureCollection["features"][number]>;
+  width: number;
+  height: number;
+}
+
+// Renders a lesson's map_content (producer markers + trade-route lines + production polygons + a
+// choropleth `regions` layer) on either a Natural Earth WORLD map or, when any region targets the
+// `us-states` atlas, a geoAlbersUsa map of the United States. Click a marker for its detail. When any
+// element carries a `year`, a time-slider appears and the map reveals elements as of the chosen year
+// (an element with no year always shows). Backwards-compatible: a map with no us-states regions and
+// no years renders exactly as before, and never loads the heavy states atlas.
 export function MapLessonContent({ content }: { content: MapContent }) {
   const [active, setActive] = useState<Marker | null>(null);
 
-  const { land, path, project, countriesById } = useMemo(() => {
+  // A lesson is either a world map or a US map; the first us-states region flips the whole map. World
+  // maps never touch the ~2 MB states atlas, keeping their bundle tiny.
+  const isUsMap = useMemo(
+    () => (content.regions ?? []).some((r) => r.atlas === "us-states"),
+    [content.regions],
+  );
+
+  // The US states topojson (~2 MB) is loaded lazily, ONLY for a US map, via dynamic import, so a
+  // world-country lesson never pays for it. Null until it resolves.
+  const [usTopo, setUsTopo] = useState<Topology | null>(null);
+  useEffect(() => {
+    if (!isUsMap || usTopo) return;
+    let cancelled = false;
+    void import("us-atlas/states-10m.json").then((m) => {
+      if (!cancelled) setUsTopo(((m as { default?: unknown }).default ?? m) as unknown as Topology);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [isUsMap, usTopo]);
+
+  // Projection, path, land polygons, and the id -> feature index for the choropleth join. Picks the
+  // atlas from the lesson: world by default, us-states when a us-states region is present. Returns
+  // null while the US atlas is still loading (the world atlas is bundled, so it is never null).
+  const geo = useMemo<MapGeo | null>(() => {
+    if (isUsMap) {
+      if (!usTopo) return null;
+      const land = feature(usTopo, usTopo.objects.states as GeometryCollection) as unknown as FeatureCollection;
+      const projection = geoAlbersUsa().fitSize([US_WIDTH, US_HEIGHT], land);
+      const featuresById = new Map(land.features.map((f) => [usKey(String(f.id)), f] as const));
+      return { land, path: geoPath(projection), project: projection, featuresById, width: US_WIDTH, height: US_HEIGHT };
+    }
     const topo = worldData as unknown as Topology;
     const land = feature(topo, topo.objects.countries as GeometryCollection) as FeatureCollection;
-    const projection = geoNaturalEarth1().fitSize([WIDTH, HEIGHT], land);
+    const projection = geoNaturalEarth1().fitSize([WORLD_WIDTH, WORLD_HEIGHT], land);
     // For the choropleth: look up a country feature by its ISO 3166-1 numeric id, to fill by area.
-    const countriesById = new Map(land.features.map((f) => [String(f.id), f] as const));
-    return { land, path: geoPath(projection), project: projection, countriesById };
-  }, []);
+    const featuresById = new Map(land.features.map((f) => [String(f.id), f] as const));
+    return { land, path: geoPath(projection), project: projection, featuresById, width: WORLD_WIDTH, height: WORLD_HEIGHT };
+  }, [isUsMap, usTopo]);
 
   // Category -> fill colour for the regions choropleth; also drives the legend.
   const regionColor = useMemo(
@@ -151,18 +208,19 @@ export function MapLessonContent({ content }: { content: MapContent }) {
         </div>
       ) : null}
 
-      <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full rounded-lg bg-sky-50" role="img" aria-label="Lesson map">
-        {land.features.map((f, i) => (
-          <path key={i} d={path(f) ?? undefined} fill="#eef2f7" stroke="#fff" strokeWidth={0.4} />
+      {geo ? (
+      <svg viewBox={`0 0 ${geo.width} ${geo.height}`} className={`w-full rounded-lg ${isUsMap ? "bg-slate-50" : "bg-sky-50"}`} role="img" aria-label={isUsMap ? "Lesson map of the United States" : "Lesson map"}>
+        {geo.land.features.map((f, i) => (
+          <path key={i} d={geo.path(f) ?? undefined} fill="#eef2f7" stroke="#fff" strokeWidth={0.4} />
         ))}
 
-        {/* Choropleth fills (plans/49): whole-country areas coloured by category, on top of the
-            neutral land. A comparative property is an area, not a point. */}
+        {/* Choropleth fills (plans/49): whole areas (a country, or a US state) coloured by category,
+            on top of the neutral land. A comparative property is an area, not a point. */}
         {(content.regions ?? []).filter(visible).map((r) => {
-          const f = countriesById.get(r.featureId);
+          const f = geo.featuresById.get(isUsMap ? usKey(r.featureId) : r.featureId);
           if (!f) return null;
           return (
-            <path key={`region-${r.featureId}`} d={path(f) ?? undefined} fill={regionColor.get(r.category) ?? "#c7cdd6"} fillOpacity={0.85} stroke="#fff" strokeWidth={0.5}>
+            <path key={`region-${r.featureId}`} d={geo.path(f) ?? undefined} fill={regionColor.get(r.category) ?? "#c7cdd6"} fillOpacity={0.85} stroke="#fff" strokeWidth={0.5}>
               <title>{r.label ?? r.category}</title>
             </path>
           );
@@ -170,16 +228,16 @@ export function MapLessonContent({ content }: { content: MapContent }) {
 
         {(content.polygons ?? []).filter(visible).map((p) => {
           const poly: Polygon = { type: "Polygon", coordinates: [flip(p.coords)] };
-          return <path key={p.id} d={path(poly) ?? undefined} fill={p.fillColor ?? p.color ?? "#99999933"} stroke={p.color ?? "#888"} strokeWidth={0.6} />;
+          return <path key={p.id} d={geo.path(poly) ?? undefined} fill={p.fillColor ?? p.color ?? "#99999933"} stroke={p.color ?? "#888"} strokeWidth={0.6} />;
         })}
 
         {(content.lines ?? []).filter(visible).map((l) => {
           const line: LineString = { type: "LineString", coordinates: flip(l.coords) };
-          return <path key={l.id} d={path(line) ?? undefined} fill="none" stroke={l.color ?? "#8B4513"} strokeWidth={1.5} strokeDasharray="4 3" />;
+          return <path key={l.id} d={geo.path(line) ?? undefined} fill="none" stroke={l.color ?? "#8B4513"} strokeWidth={1.5} strokeDasharray="4 3" />;
         })}
 
         {(content.markers ?? []).filter(visible).map((m) => {
-          const xy = project([m.lng, m.lat]);
+          const xy = geo.project([m.lng, m.lat]);
           if (!xy) return null;
           return (
             <circle
@@ -201,6 +259,15 @@ export function MapLessonContent({ content }: { content: MapContent }) {
           );
         })}
       </svg>
+      ) : (
+        // US atlas still loading (world atlas is bundled, so this only shows for a us-states map).
+        <div
+          className="flex aspect-8/5 w-full items-center justify-center rounded-lg bg-slate-50 text-sm text-neutral-500"
+          role="status"
+        >
+          Loading map...
+        </div>
+      )}
 
       {(content.regionLegend?.length ?? 0) > 0 ? (
         <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm" aria-label="Map legend">

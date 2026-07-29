@@ -1501,8 +1501,112 @@ Unigov ties this whole course together. The **state** had the power to reorganiz
     // SECTION 5 · See it, then map your own
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
+      slug: "local-map-home-rule-states",
+      title: "19 · Map: the fifty states by home-rule regime",
+      section: "Section 5 · See it, then map your own",
+      body: `**Read this before the map, because the map's limits are the lesson.** This is a teaching aid, not a legal determination. It colours each state by the regime under which its cities and towns hold power, the home-rule-versus-Dillon's-Rule question from Section 1, drawn as a choropleth so you can see the rough national pattern at a glance. But Section 1 also taught that this question is a **spectrum, not a switch** (Lesson 3), and any three-colour map of a spectrum is a simplification. **Do not use this map to decide what your city may lawfully do.** Read the caveats, read the colours as a rough landscape, and settle any real question against your own state's constitution and statutes.
+
+## What the three colours mean
+
+Section 1 taught that a state can hand its localities a broad, standing grant of power (**home rule**) or make them ask permission for anything not clearly granted (**Dillon's Rule**), and that most states do some of each. This map sorts the fifty states into three honest buckets:
+
+| Colour | Category | What it means |
+|---|---|---|
+| **Blue** | Home rule (broad) | The standard references list the state as a home-rule state that does not apply Dillon's Rule to its municipalities |
+| **Amber** | Dillon's Rule (limited) | The references list the state as a Dillon's Rule state, with no broad home-rule grant |
+| **Grey** | Mixed / contested | The state applies home rule to some governments or powers and Dillon's Rule to others, or the sources genuinely disagree, or its status could not be placed with confidence |
+
+**The grey bucket is the honest one, and it is deliberately the largest.** It holds the many states that are genuinely a blend, plus every state this map could not confidently sort. That is the point, not a cop-out: Section 1's whole argument is that "your state is a Dillon's Rule state" is a starting hypothesis, not a fact, so a state that cannot be placed cleanly is coloured as unsettled rather than forced into a binary. Better honest and vague than confidently wrong.
+
+## Why even the counts disagree
+
+There is no single agreed list, and the disagreement is itself the lesson. The National League of Cities, summarising the standard fifty-state survey, counts roughly 31 Dillon's Rule states, about 10 home-rule states, 8 states that apply Dillon's Rule only to certain municipalities, and Florida as a special case (home rule for everything except taxation) (National League of Cities, n.d.; Krane, Rigos & Hill, 2001). A widely cited Brookings analysis, reading the same underlying survey, instead counts 39 Dillon's Rule states, 10 that reject it, and Florida as uncertain (Richardson, Gough & Puentes, 2003). **Same country, same era, different totals**, because the authors measure slightly different things. This map follows the more cautious reading and pushes every genuinely-mixed or uncertain state into grey, which is why blue and amber here are small, confident groups and grey is everything else.
+
+## Read Indiana, the course's own case
+
+Notice that **Indiana is grey**, not amber. After Section 4, where the state redrew Indianapolis by statute with no referendum, it is tempting to call Indiana a flat Dillon's Rule state. But Indiana also grants its localities a limited home rule, so the honest colour is mixed. And Unigov is the reminder that even a home-rule grant sits under the state's power to reorganise local government at all. The grey states are exactly where you must do the most reading before you claim anything about them.
+
+## What the map cannot show, and what that proves
+
+**It cannot show the spectrum inside a single colour.** Two blue states can entrench home rule very differently (constitutional versus legislative, from Lesson 4), and two grey states can be mixed for opposite reasons. Colour carries one rough sort; the real answer for any state needs its constitution and statutes, which is exactly where the capstone sends you. This map is where the course's caution becomes a picture: it points you at the documents, it does not stand in for them. It is not legal advice.
+
+## Sources
+- National League of Cities. (n.d.). Cities 101: Delegation of power. https://www.nlc.org/resource/cities-101-delegation-of-power/
+- Krane, D., Rigos, P. N., & Hill, M. B. (2001). Home rule in America: A fifty-state handbook. CQ Press.
+- Richardson, J. J., Jr., Gough, M. Z., & Puentes, R. (2003). Is home rule the answer? Clarifying the influence of Dillon's Rule on growth management. Brookings Institution Center on Urban and Metropolitan Policy. https://www.brookings.edu/articles/is-home-rule-the-answer-clarifying-the-influence-of-dillons-rule-on-growth-management/`,
+      mapContent: {
+        // A US-STATE choropleth (plans/49): fill each state by its municipal-authority regime, the
+        // home-rule-versus-Dillon's-Rule question from Section 1. `atlas: "us-states"` selects the
+        // geoAlbersUsa projection and the us-atlas states topojson, joined by 2-digit state FIPS.
+        // The classification is the standard NLC / Krane three-way sort as reproduced in the sources;
+        // every genuinely-mixed or unplaceable state is pushed to "mixed / contested" on purpose, so
+        // the map stays a teaching aid rather than a fabricated crisp binary (see the lesson body).
+        regionLegend: [
+          { category: "home rule (broad)", color: "#2563eb", label: "Home rule (broad grant)" },
+          { category: "Dillon's Rule (limited)", color: "#b45309", label: "Dillon's Rule (limited grant)" },
+          { category: "mixed / contested", color: "#6b7280", label: "Mixed / contested (a blend, or the sources disagree)" },
+        ],
+        regions: [
+          // Home rule (broad): states the references list as home-rule, not Dillon's Rule.
+          { featureId: "02", category: "home rule (broad)", atlas: "us-states", label: "Alaska: home rule (broad)" },
+          { featureId: "12", category: "home rule (broad)", atlas: "us-states", label: "Florida: home rule (broad), with a taxation carve-out" },
+          { featureId: "19", category: "home rule (broad)", atlas: "us-states", label: "Iowa: home rule (broad)" },
+          { featureId: "25", category: "home rule (broad)", atlas: "us-states", label: "Massachusetts: home rule (broad)" },
+          { featureId: "34", category: "home rule (broad)", atlas: "us-states", label: "New Jersey: home rule (broad)" },
+          { featureId: "39", category: "home rule (broad)", atlas: "us-states", label: "Ohio: home rule (broad)" },
+          { featureId: "41", category: "home rule (broad)", atlas: "us-states", label: "Oregon: home rule (broad)" },
+          { featureId: "54", category: "home rule (broad)", atlas: "us-states", label: "West Virginia: home rule (broad)" },
+          // Dillon's Rule (limited): states the references list as Dillon's Rule, with no broad home-rule grant.
+          { featureId: "10", category: "Dillon's Rule (limited)", atlas: "us-states", label: "Delaware: Dillon's Rule (limited)" },
+          { featureId: "28", category: "Dillon's Rule (limited)", atlas: "us-states", label: "Mississippi: Dillon's Rule (limited)" },
+          { featureId: "30", category: "Dillon's Rule (limited)", atlas: "us-states", label: "Montana: Dillon's Rule (limited)" },
+          { featureId: "32", category: "Dillon's Rule (limited)", atlas: "us-states", label: "Nevada: Dillon's Rule (limited)" },
+          { featureId: "33", category: "Dillon's Rule (limited)", atlas: "us-states", label: "New Hampshire: Dillon's Rule (limited)" },
+          { featureId: "40", category: "Dillon's Rule (limited)", atlas: "us-states", label: "Oklahoma: Dillon's Rule (limited)" },
+          { featureId: "50", category: "Dillon's Rule (limited)", atlas: "us-states", label: "Vermont: Dillon's Rule (limited)" },
+          { featureId: "51", category: "Dillon's Rule (limited)", atlas: "us-states", label: "Virginia: Dillon's Rule (limited); the textbook Dillon's Rule state" },
+          { featureId: "56", category: "Dillon's Rule (limited)", atlas: "us-states", label: "Wyoming: Dillon's Rule (limited)" },
+          // Mixed / contested: genuinely blended (home rule for some units or powers, Dillon's Rule for
+          // others), sources disagree, or could not be placed with confidence. The honest default bucket.
+          { featureId: "01", category: "mixed / contested", atlas: "us-states", label: "Alabama: mixed / contested" },
+          { featureId: "04", category: "mixed / contested", atlas: "us-states", label: "Arizona: mixed / contested" },
+          { featureId: "05", category: "mixed / contested", atlas: "us-states", label: "Arkansas: mixed / contested" },
+          { featureId: "06", category: "mixed / contested", atlas: "us-states", label: "California: mixed / contested" },
+          { featureId: "08", category: "mixed / contested", atlas: "us-states", label: "Colorado: mixed / contested" },
+          { featureId: "09", category: "mixed / contested", atlas: "us-states", label: "Connecticut: mixed / contested" },
+          { featureId: "13", category: "mixed / contested", atlas: "us-states", label: "Georgia: mixed / contested" },
+          { featureId: "15", category: "mixed / contested", atlas: "us-states", label: "Hawaii: mixed / contested" },
+          { featureId: "16", category: "mixed / contested", atlas: "us-states", label: "Idaho: mixed / contested" },
+          { featureId: "17", category: "mixed / contested", atlas: "us-states", label: "Illinois: mixed / contested" },
+          { featureId: "18", category: "mixed / contested", atlas: "us-states", label: "Indiana: mixed / contested (limited home rule; the course's own Unigov case)" },
+          { featureId: "20", category: "mixed / contested", atlas: "us-states", label: "Kansas: mixed / contested" },
+          { featureId: "21", category: "mixed / contested", atlas: "us-states", label: "Kentucky: mixed / contested" },
+          { featureId: "22", category: "mixed / contested", atlas: "us-states", label: "Louisiana: mixed / contested" },
+          { featureId: "23", category: "mixed / contested", atlas: "us-states", label: "Maine: mixed / contested" },
+          { featureId: "24", category: "mixed / contested", atlas: "us-states", label: "Maryland: mixed / contested" },
+          { featureId: "26", category: "mixed / contested", atlas: "us-states", label: "Michigan: mixed / contested" },
+          { featureId: "27", category: "mixed / contested", atlas: "us-states", label: "Minnesota: mixed / contested" },
+          { featureId: "29", category: "mixed / contested", atlas: "us-states", label: "Missouri: mixed / contested" },
+          { featureId: "31", category: "mixed / contested", atlas: "us-states", label: "Nebraska: mixed / contested" },
+          { featureId: "35", category: "mixed / contested", atlas: "us-states", label: "New Mexico: mixed / contested" },
+          { featureId: "36", category: "mixed / contested", atlas: "us-states", label: "New York: mixed / contested" },
+          { featureId: "37", category: "mixed / contested", atlas: "us-states", label: "North Carolina: mixed / contested" },
+          { featureId: "38", category: "mixed / contested", atlas: "us-states", label: "North Dakota: mixed / contested" },
+          { featureId: "42", category: "mixed / contested", atlas: "us-states", label: "Pennsylvania: mixed / contested" },
+          { featureId: "44", category: "mixed / contested", atlas: "us-states", label: "Rhode Island: mixed / contested" },
+          { featureId: "45", category: "mixed / contested", atlas: "us-states", label: "South Carolina: mixed / contested" },
+          { featureId: "46", category: "mixed / contested", atlas: "us-states", label: "South Dakota: mixed / contested" },
+          { featureId: "47", category: "mixed / contested", atlas: "us-states", label: "Tennessee: mixed / contested" },
+          { featureId: "48", category: "mixed / contested", atlas: "us-states", label: "Texas: mixed / contested" },
+          { featureId: "49", category: "mixed / contested", atlas: "us-states", label: "Utah: mixed / contested" },
+          { featureId: "53", category: "mixed / contested", atlas: "us-states", label: "Washington: mixed / contested" },
+          { featureId: "55", category: "mixed / contested", atlas: "us-states", label: "Wisconsin: mixed / contested" },
+        ],
+      },
+    },
+    {
       slug: "local-map-marion-county",
-      title: "19 · Map: the local layer that survived Unigov",
+      title: "20 · Map: the local layer that survived Unigov",
       section: "Section 5 · See it, then map your own",
       body: `**Read this before the map, because the map's limits are part of the lesson.** This platform draws markers as fixed-size dots on a world projection, so the coordinates below are **approximate points placed to show a pattern, not addresses.** Do not use them to find a building. The point of the map is the relationship between the markers, not their exact positions.
 
@@ -1518,7 +1622,7 @@ The map places, over Marion County, Indiana, the governments that still sit on t
 
 ## What the map cannot show, and what that proves
 
-**It cannot show overlap as area.** The consolidated city, an excluded town, a township, a school corporation, and a library district are shapes that lie on top of one another, and a dot cannot draw a shape. This path's plan notes that these courses are the first content that genuinely needs a polygon map layer rather than pins; until that ships, hold the overlap in your head while you read the dots.
+**It cannot show overlap as area.** The consolidated city, an excluded town, a township, a school corporation, and a library district are shapes that lie on top of one another, and a dot cannot draw a shape. The previous lesson is the polygon layer this path called for, but at the STATE scale, a choropleth of home-rule regimes. The shapes that overlap HERE are sub-county, an excluded town, a township, a school corporation, a library district, and the atlas that fills whole states and counties does not carry those municipal boundaries. So this map stays pins; hold the overlap in your head while you read the dots.
 
 **But the dots already make the core point.** Count the markers. One law called "unified government" left this many separate governments standing on one county's ground, and the fuller tally is about fifty units and more than sixty-one taxing districts (Wachter, 2014). **That is the local layer: not the tidy pyramid people imagine, but a dense overlap that even a famous consolidation barely thinned.** Now go map your own.
 
@@ -1604,7 +1708,7 @@ The map places, over Marion County, Indiana, the governments that still sit on t
     },
     {
       slug: "local-capstone",
-      title: "20 · Capstone: map the local governments over your address",
+      title: "21 · Capstone: map the local governments over your address",
       section: "Section 5 · See it, then map your own",
       lessonType: "assignment",
       body: `You have the whole local layer now: Dillon's Rule and home rule, the forms of municipal government, the special districts that outnumber the cities, the town meeting, and Unigov. Use it on the one place you know best, **the address you live at.** Document every local government and special district with authority over it, from the primary record. Most people find several they had no idea existed, and the surprises are almost always special districts.
