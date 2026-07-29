@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { requirePlatformOwner } from "@/lib/session";
 import { standardsForCourse, standardsForCourses } from "@/lib/standards";
 import { TPT_PLAN, TPT_STRATEGY, type TptPlanItem } from "@/lib/tpt-plan";
@@ -76,8 +77,15 @@ export default async function TptPlanPage() {
                   </div>
                   <div className="mt-1 text-xs text-neutral-500">Leads to: {i.crossSell}</div>
                   {i.packetDir ? (
-                    <div className="mt-1 text-xs text-neutral-400">
-                      <code>plans/future-courses/tpt-packets/{i.packetDir}/</code>
+                    <div className="mt-1 flex flex-wrap items-center gap-2 text-xs">
+                      <Link
+                        href={`/admin/tpt-plan/${i.packetDir}`}
+                        className="inline-flex min-h-9 items-center rounded-md border px-2.5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11"
+                        style={{ borderColor: "var(--accent)", color: "var(--accent)" }}
+                      >
+                        Preview / download PDF →
+                      </Link>
+                      <code className="text-neutral-400">plans/future-courses/tpt-packets/{i.packetDir}/</code>
                     </div>
                   ) : null}
                 </td>
