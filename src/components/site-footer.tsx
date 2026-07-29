@@ -23,6 +23,15 @@ export function SiteFooter({ tenant }: { tenant: TenantRecord }) {
               </Link>
             </li>
           ) : null}
+          {/* Public product roadmap — recruiting front door only (404 on a white-label school), so
+              gate the link on the same flag as the page it points to. */}
+          {tenant.flags.recruiting ? (
+            <li>
+              <Link className="hover:underline" href="/roadmap">
+                Roadmap
+              </Link>
+            </li>
+          ) : null}
           {legal.termsUrl ? (
             <li>
               <Link className="hover:underline" href="/terms">
