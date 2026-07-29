@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { requirePlatformOwner } from "@/lib/session";
 import { listSchoolsWithBilling } from "@/db/queries/platform-subscriptions";
 import { SchoolBillingForm } from "@/components/school-billing-form";
+import { SchoolSuspendButton } from "@/components/school-suspend-button";
 
 export const metadata: Metadata = { title: "School billing" };
 
@@ -34,7 +35,8 @@ export default async function SchoolBillingPage() {
               <th className="py-2 pr-4">School</th>
               <th className="py-2 pr-4">Plan</th>
               <th className="py-2 pr-4">Price</th>
-              <th className="py-2">Status</th>
+              <th className="py-2 pr-4">Status</th>
+              <th className="py-2">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -47,7 +49,13 @@ export default async function SchoolBillingPage() {
                     {sub ? (sub.billingType === "lifetime" ? "Lifetime" : `Subscription, ${sub.interval}`) : "no deal"}
                   </td>
                   <td className="py-2 pr-4">{sub ? money(sub.amountCents, sub.currency) : ""}</td>
-                  <td className="py-2">{sub ? sub.status : ""}</td>
+                  <td className="py-2 pr-4">
+                    {sub ? sub.status : ""}
+                    {!s.isActive ? <span className="ml-1 text-neutral-500">(offline)</span> : null}
+                  </td>
+                  <td className="py-2">
+                    <SchoolSuspendButton tenantId={s.tenantId} isActive={s.isActive} />
+                  </td>
                 </tr>
               );
             })}

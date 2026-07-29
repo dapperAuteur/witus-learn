@@ -68,6 +68,17 @@ export async function POST(req: Request) {
     // only one of these matches, so calling both is safe.
     await cancelEnrollmentBySubscription(sub.id);
     await setPlatformSubscriptionStatusByStripeId(sub.id, "canceled");
+  } else if (event.type === "customer.subscription.updated") {
+    // Dunning for a SCHOOL's platform subscription (plans/51). Course enrollments ignore this event;
+    // this branch only touches platform subs, keyed by the Stripe subscription id (which never matches
+    // a student's course sub — those live in a different table). A repeated event is a no-op rewrite.
+    const sub = event.data.object as Stripe.Subscription;
+    if (sub.status === "past_due") {
+      await setPlatformSubscriptionStatusByStripeId(sub.id, "past_due");
+    } else if (sub.status === "active") {
+      // Payment recovered: flip the school back to active.
+      await setPlatformSubscriptionStatusByStripeId(sub.id, "active");
+    }
   }
 
   return new Response("ok", { status: 200 });

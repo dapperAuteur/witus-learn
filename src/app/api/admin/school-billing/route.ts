@@ -3,7 +3,11 @@ import { apiContext, errorJson, json } from "@/lib/api";
 import { isPlatformOwner } from "@/lib/session";
 import { getSiteUrl } from "@/lib/site-url";
 import { getStripe, createPlatformCheckout } from "@/lib/stripe";
-import { upsertPlatformDeal, getSchoolForBilling } from "@/db/queries/platform-subscriptions";
+import {
+  upsertPlatformDeal,
+  getSchoolForBilling,
+  getPlatformSubscription,
+} from "@/db/queries/platform-subscriptions";
 
 const Body = z.object({
   tenantId: z.string().uuid(),
@@ -27,6 +31,14 @@ export async function POST(req: Request) {
 
   const school = await getSchoolForBilling(tenantId);
   if (!school) return errorJson("School not found.", 404);
+
+  // Lifetime "already paid" guard: a lifetime purchase is paid forever, so never re-sell an active
+  // lifetime row (that would re-charge a school it already owns outright). Changing an active
+  // subscription, or setting up any pending/past_due/canceled deal, is still allowed.
+  const existing = await getPlatformSubscription(tenantId);
+  if (existing && existing.billingType === "lifetime" && existing.status === "active") {
+    return errorJson("This school already has an active lifetime purchase.", 409);
+  }
 
   const stripe = getStripe();
   if (!stripe) return errorJson("Stripe is not configured.", 503);
