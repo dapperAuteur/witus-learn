@@ -46,7 +46,10 @@ export default async function FamilyReportPage({ params }: { params: Promise<{ c
         <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
           Gradebook report, {rows.length} {rows.length === 1 ? "row" : "rows"}.
         </p>
-        <table className="mt-4 w-full border-collapse text-sm">
+        {/* Scroll the grade table inside its own box so a long course name never forces the whole
+            page to scroll sideways on a phone (page-quality rule). Print/PDF shows it full-width. */}
+        <div className="mt-4 overflow-x-auto">
+        <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b border-neutral-300 text-left">
               <th className="py-2 pr-4">Course</th>
@@ -73,6 +76,7 @@ export default async function FamilyReportPage({ params }: { params: Promise<{ c
             ) : null}
           </tbody>
         </table>
+        </div>
       </div>
     </main>
   );
