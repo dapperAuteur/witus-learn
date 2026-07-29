@@ -9,8 +9,9 @@ import {
   type PriceTier,
 } from "@/lib/course-pricing";
 import { BUNDLE_PROPOSALS } from "@/lib/bundles";
+import { PricingManager, type PricingRow } from "@/components/pricing-manager";
 
-export const metadata: Metadata = { title: "Proposed pricing" };
+export const metadata: Metadata = { title: "Pricing" };
 
 const TIER_ORDER: PriceTier[] = ["free", "foundation", "core", "premium", "certification"];
 const TIER_CLS: Record<PriceTier, string> = {
@@ -21,35 +22,32 @@ const TIER_CLS: Record<PriceTier, string> = {
   certification: "bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300",
 };
 
-function currentLabel(price: string | number, priceType: string): string {
-  if (priceType === "free" || Number(price) === 0) return "Free";
-  const n = Number(price);
-  const amount = Number.isFinite(n) ? `$${n % 1 === 0 ? n.toFixed(0) : n.toFixed(2)}` : `$${price}`;
-  return priceType === "subscription" ? `${amount}/mo` : amount;
-}
-
-// Owner-only proposed pricing for the whole catalog. Recommendations to review and apply on each
-// course's settings; nothing here changes a live price. Current price is read from the DB so the
-// owner sees current vs proposed side by side.
+// Owner-only pricing manager for the whole catalog. Shows each course's current price beside a
+// tier-based recommendation, and lets the owner change price / type / interval inline, apply the
+// proposed price per row, or bulk-apply across selected rows. Current price is read from the DB.
 export default async function PricingPage() {
   await requirePlatformOwner();
   const sdb = await getScopedDb();
   const courses = await listCourses(sdb.tenantId, { includeUnpublished: true });
 
-  const rows = courses
+  const rows: PricingRow[] = courses
     .map((c) => {
       const p = proposePricing(c.slug, c.category);
       return {
+        courseId: c.id,
+        slug: c.slug,
         title: c.title,
         category: c.category ?? "Uncategorized",
-        current: currentLabel(c.price, c.priceType),
-        proposed: p,
-        changes: currentLabel(c.price, c.priceType) !== (p.price === 0 ? "Free" : `$${p.price}`),
+        price: Number(c.price),
+        priceType: c.priceType as PricingRow["priceType"],
+        billingInterval: c.billingInterval as PricingRow["billingInterval"],
+        proposedPrice: p.price,
+        proposedTier: p.tier,
       };
     })
-    .sort((a, b) => a.category.localeCompare(b.category) || b.proposed.price - a.proposed.price);
+    .sort((a, b) => a.category.localeCompare(b.category) || b.proposedPrice - a.proposedPrice);
 
-  const countByTier = TIER_ORDER.map((t) => ({ tier: t, n: rows.filter((r) => r.proposed.tier === t).length }));
+  const countByTier = TIER_ORDER.map((t) => ({ tier: t, n: rows.filter((r) => r.proposedTier === t).length }));
 
   // Bundle sum-of-parts, from each member course's proposed price (real category from the catalog).
   const bySlug = new Map(courses.map((c) => [c.slug, c] as const));
@@ -64,11 +62,12 @@ export default async function PricingPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-10">
-      <h1 className="text-3xl font-bold">Proposed pricing</h1>
+      <h1 className="text-3xl font-bold">Pricing</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
-        Fair-and-competitive price recommendations for every course, by tier. These do not change any
-        live price. Apply the ones you like on each course&apos;s settings. Current price is read from the
-        catalog, so you can see current vs proposed side by side.
+        Fair-and-competitive price recommendations for every course, by tier, next to each course&apos;s
+        current price. Change a price here: edit the amount and type inline and Save, apply the proposed
+        price with one click, or select several rows and bulk-apply. Saving takes effect on the next
+        checkout.
       </p>
 
       <section aria-labelledby="sub" className="mt-6 rounded-lg border-2 p-5" style={{ borderColor: "var(--accent)" }}>
@@ -105,39 +104,13 @@ export default async function PricingPage() {
 
       <section aria-labelledby="courses" className="mt-8">
         <h2 id="courses" className="mb-3 text-xl font-semibold">
-          Every course ({rows.length})
+          Manage prices ({rows.length})
         </h2>
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse text-sm">
-            <thead>
-              <tr className="border-b border-neutral-300 text-left dark:border-neutral-700">
-                <th className="py-2 pr-3 font-semibold">Course</th>
-                <th className="py-2 pr-3 font-semibold">Category</th>
-                <th className="py-2 pr-3 font-semibold">Current</th>
-                <th className="py-2 pr-3 font-semibold">Proposed</th>
-                <th className="py-2 pr-3 font-semibold">Tier</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((r) => (
-                <tr key={r.title} className="border-b border-neutral-200 align-top dark:border-neutral-800">
-                  <td className="py-2 pr-3 font-medium">{r.title}</td>
-                  <td className="py-2 pr-3 text-neutral-500 whitespace-nowrap">{r.category}</td>
-                  <td className="py-2 pr-3 whitespace-nowrap text-neutral-500">{r.current}</td>
-                  <td className="py-2 pr-3 font-semibold whitespace-nowrap">
-                    {r.proposed.price === 0 ? "Free" : `$${r.proposed.price}`}
-                    {r.changes ? <span className="ml-1 text-xs text-amber-600">change</span> : null}
-                  </td>
-                  <td className="py-2 pr-3">
-                    <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${TIER_CLS[r.proposed.tier]}`}>
-                      {r.proposed.tier}
-                    </span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <p className="mb-3 text-sm text-neutral-600 dark:text-neutral-400">
+          Click a course name to open its manage page. The proposed price is the tier recommendation;
+          Apply proposed sets it as a one-time price (or Free when the tier is $0).
+        </p>
+        <PricingManager rows={rows} />
       </section>
 
       <section aria-labelledby="bundles" className="mt-10">
@@ -191,7 +164,8 @@ export default async function PricingPage() {
       </section>
 
       <p className="mt-6 text-xs text-neutral-500">
-        Proposals only. Nothing here changes a live price. No number is a promise about revenue.
+        Course prices you save here take effect on the next checkout. Bundle prices below are still
+        proposals: the app cannot yet sell a bundle. No number is a promise about revenue.
       </p>
     </main>
   );
