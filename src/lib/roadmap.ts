@@ -145,6 +145,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   scoped **coverage badge** ("Aligned to published standards in N states and Washington, D.C.") now
   leads the finder and appears on \`/explore\` and \`/platform\`: a true, checkable claim that renders
   nothing when a tenant backs no mapped state. All 28 standards isolation tests still pass.
+- ✅ **More TpT state-civics packets** (\`feat/tpt-more-state-packets\`): the four highest-population
+  states now have printable, standards-grounded units built (California, Texas, Florida, New York, on
+  top of Indiana / Illinois / Arizona), each drawn from its cited course with a standards file grounded
+  in that state's real codes via \`pnpm standards:for\`. Also recorded the missing packetDir for the
+  who-has-the-power and what-they-built units, and folded the new states into the State Civics Bundle.
+  Packet files are gitignored; \`/admin/tpt-plan\` now lists them as built.
 - ✅ **Public roadmap page + config/verify sweep** (\`chore/config-verify-sweep\`): a public,
   plain-language **\`/roadmap\`** (what's live / building / exploring, recruiting-gated, own OG card,
   linked in the footer) drawn from \`src/lib/public-roadmap.ts\`, separate from this owner-only detail.

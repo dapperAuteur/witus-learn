@@ -136,10 +136,11 @@ export const TPT_PLAN: TptPlanItem[] = [
     title: "Who Has the Power? A civics method unit",
     courseSlug: "who-has-the-power",
     status: "built",
+    packetDir: "who-has-the-power-unit",
     price: "$9",
     tier: "unit",
     rationale:
-      "Newly shipped, unusually strong for civics classrooms (Dillon's Rule, tribal sovereignty as a separate sovereign). Differentiated and standards-aligned. Build the packet next.",
+      "Newly shipped, unusually strong for civics classrooms (Dillon's Rule, tribal sovereignty as a separate sovereign). Differentiated and standards-aligned.",
     crossSell: "The Local Layer and the rest of the government-structures path.",
   },
   {
@@ -147,6 +148,7 @@ export const TPT_PLAN: TptPlanItem[] = [
     title: "What They Built: Black business districts",
     courseSlug: "what-they-built",
     status: "built",
+    packetDir: "what-they-built-unit",
     price: "$9",
     tier: "unit",
     rationale:
@@ -167,8 +169,44 @@ export const TPT_PLAN: TptPlanItem[] = [
   },
   {
     order: 11,
+    title: "Texas Civics: a printable unit",
+    courseSlug: "state-civics-tx",
+    status: "built",
+    packetDir: "texas-civics-unit",
+    price: "$7",
+    tier: "unit",
+    rationale:
+      "Second-largest teacher market in the country, and the most distinctive state-civics story in the series (deliberately weak governor, biennial legislature, two high courts, no citizen initiative), so it stands out in high-intent search. $7 matches the state-civics norm.",
+    crossSell: "The state-civics series (especially California as the direct-democracy contrast) and the US-civics catalog.",
+  },
+  {
+    order: 12,
+    title: "Florida Civics: a printable unit",
+    courseSlug: "state-civics-fl",
+    status: "built",
+    packetDir: "florida-civics-unit",
+    price: "$7",
+    tier: "unit",
+    rationale:
+      "Third-largest teacher market in the country, and Florida civics is high-intent, low-competition search. Written from Florida's own sources, it meets 'Florida civics' directly. $7 matches the state-civics norm.",
+    crossSell: "The state-civics series (Indiana, Illinois, Arizona, California) and the US-civics catalog.",
+  },
+  {
+    order: 13,
+    title: "New York Civics: a printable unit",
+    courseSlug: "state-civics-ny",
+    status: "built",
+    packetDir: "new-york-civics-unit",
+    price: "$7",
+    tier: "unit",
+    rationale:
+      "Another of the highest-population teacher markets (the California item names NY as a target), and the mirror image of California (no statewide initiative, inverted court names), so it pairs naturally with the CA unit for compare-and-contrast. High-intent search, little rivalry. $7 matches the state-civics norm.",
+    crossSell: "The California unit as its mirror-image pair, plus the US-civics catalog and the rest of the state-civics series.",
+  },
+  {
+    order: 14,
     title: "State Civics Bundle (Indiana, Illinois, Arizona, and more)",
-    bundleSlugs: ["state-civics-in", "state-civics-il", "state-civics-az", "state-civics-ca"],
+    bundleSlugs: ["state-civics-in", "state-civics-il", "state-civics-az", "state-civics-ca", "state-civics-tx", "state-civics-fl", "state-civics-ny"],
     status: "planned",
     price: "$18",
     tier: "bundle",
@@ -177,7 +215,7 @@ export const TPT_PLAN: TptPlanItem[] = [
     crossSell: "The full state-civics series at Learn.WitUS.Online.",
   },
   {
-    order: 12,
+    order: 15,
     title: "Black History Through Place Bundle (Green Book, Great Migration, What They Built)",
     bundleSlugs: ["green-book-how-to-read-a-route", "great-migration-and-the-world", "what-they-built"],
     status: "planned",
