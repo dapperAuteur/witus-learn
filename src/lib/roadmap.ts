@@ -159,6 +159,10 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   files are gitignored (not deployed), this is a LOCAL-dev tool: it reads the filesystem and shows an
   honest empty state where the files aren't present. Plus more state packets (Ohio, Georgia, North
   Carolina, Michigan).
+- ✅ **TpT state packets, tier 3** (\`feat/tpt-state-packets-tier3\`): Pennsylvania, New Jersey, Virginia,
+  Washington, and Tennessee civics units (orders 18-22), each standards-grounded against that state's
+  real codes via \`pnpm standards:for\`. 16 of the highest-population states now have a printable unit;
+  the two bundles move to 23/24 and all five join the State Civics Bundle.
   plain-language **\`/roadmap\`** (what's live / building / exploring, recruiting-gated, own OG card,
   linked in the footer) drawn from \`src/lib/public-roadmap.ts\`, separate from this owner-only detail.
   Plus a verify pass: \`/explore\` polish confirmed done (map OG, in-place episodes, no S2/S3), Indiana
