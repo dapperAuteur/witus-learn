@@ -151,7 +151,14 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   in that state's real codes via \`pnpm standards:for\`. Also recorded the missing packetDir for the
   who-has-the-power and what-they-built units, and folded the new states into the State Civics Bundle.
   Packet files are gitignored; \`/admin/tpt-plan\` now lists them as built.
-- ✅ **Public roadmap page + config/verify sweep** (\`chore/config-verify-sweep\`): a public,
+- ✅ **TpT packet preview + PDF + inline edit** (\`feat/tpt-packet-pdf-and-more-states\`): each built
+  packet on \`/admin/tpt-plan\` gets a "Preview / download PDF" button opening a branded, print-ready
+  view (Learn.WitUS header/footer + the tenant accent, one packet file per page). Download is the
+  browser's Save-as-PDF (print-isolated so only the packet prints), you can edit any section inline
+  with a live preview, and "Save to file" persists a fix back to the local markdown. Because the packet
+  files are gitignored (not deployed), this is a LOCAL-dev tool: it reads the filesystem and shows an
+  honest empty state where the files aren't present. Plus more state packets (Ohio, Georgia, North
+  Carolina, Michigan).
   plain-language **\`/roadmap\`** (what's live / building / exploring, recruiting-gated, own OG card,
   linked in the footer) drawn from \`src/lib/public-roadmap.ts\`, separate from this owner-only detail.
   Plus a verify pass: \`/explore\` polish confirmed done (map OG, in-place episodes, no S2/S3), Indiana
