@@ -14,10 +14,13 @@ export interface TriageReport {
 
 const STATUSES = ["new", "triaged", "closed"] as const;
 
-// Admin triage list for problem reports: filter by status + set each report's status.
+// Admin triage list for problem reports: filter by status, set each report's status, and
+// bulk-select a batch to close/triage in one click (clears the false backlog of already-fixed items).
 export function ReportsTriage({ reports }: { reports: TriageReport[] }) {
   const [rows, setRows] = useState(reports);
   const [filter, setFilter] = useState<"all" | "new" | "triaged" | "closed">("all");
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [busy, setBusy] = useState(false);
   const visible = filter === "all" ? rows : rows.filter((r) => r.status === filter);
 
   async function setStatus(id: string, status: (typeof STATUSES)[number]) {
@@ -31,6 +34,43 @@ export function ReportsTriage({ reports }: { reports: TriageReport[] }) {
     } catch {
       /* optimistic; a refresh will reconcile */
     }
+  }
+
+  function toggle(id: string) {
+    setSelected((p) => {
+      const next = new Set(p);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
+
+  const allVisibleSelected = visible.length > 0 && visible.every((r) => selected.has(r.id));
+  function toggleAllVisible() {
+    setSelected((p) => {
+      const next = new Set(p);
+      if (allVisibleSelected) visible.forEach((r) => next.delete(r.id));
+      else visible.forEach((r) => next.add(r.id));
+      return next;
+    });
+  }
+
+  async function bulkSet(status: (typeof STATUSES)[number]) {
+    const ids = [...selected];
+    if (ids.length === 0) return;
+    setBusy(true);
+    setRows((p) => p.map((r) => (selected.has(r.id) ? { ...r, status } : r))); // optimistic
+    try {
+      await fetch(`/api/admin/reports/bulk`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ ids, status }),
+      });
+    } catch {
+      /* optimistic; a refresh will reconcile */
+    }
+    setSelected(new Set());
+    setBusy(false);
   }
 
   const counts = {
@@ -54,13 +94,57 @@ export function ReportsTriage({ reports }: { reports: TriageReport[] }) {
           </button>
         ))}
       </div>
+
+      {visible.length > 0 ? (
+        <div className="mb-3 flex flex-wrap items-center gap-3 rounded-lg border border-neutral-200 px-3 py-2 text-sm dark:border-neutral-800">
+          <label className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              checked={allVisibleSelected}
+              onChange={toggleAllVisible}
+              className="min-h-4 min-w-4"
+              aria-label="Select all visible reports"
+            />
+            <span className="text-neutral-600 dark:text-neutral-400">
+              {selected.size > 0 ? `${selected.size} selected` : "Select all"}
+            </span>
+          </label>
+          {selected.size > 0 ? (
+            <>
+              <span className="text-neutral-400">Mark selected:</span>
+              {STATUSES.map((s) => (
+                <button
+                  key={s}
+                  type="button"
+                  disabled={busy}
+                  onClick={() => bulkSet(s)}
+                  className="rounded border border-neutral-300 px-2 py-1 capitalize hover:border-current focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 dark:border-neutral-700"
+                >
+                  {s}
+                </button>
+              ))}
+            </>
+          ) : null}
+        </div>
+      ) : null}
+
       {visible.length === 0 ? (
         <p className="text-neutral-500">No reports.</p>
       ) : (
         <ul className="space-y-3">
           {visible.map((r) => (
-            <li key={r.id} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
+            <li
+              key={r.id}
+              className={`rounded-lg border p-4 dark:border-neutral-800 ${selected.has(r.id) ? "border-current" : "border-neutral-200"}`}
+            >
               <div className="mb-1 flex flex-wrap items-center gap-2 text-xs text-neutral-500">
+                <input
+                  type="checkbox"
+                  checked={selected.has(r.id)}
+                  onChange={() => toggle(r.id)}
+                  className="min-h-4 min-w-4"
+                  aria-label={`Select report: ${r.message.slice(0, 40)}`}
+                />
                 <span className="rounded-full bg-neutral-100 px-2 py-0.5 capitalize dark:bg-neutral-800">{r.kind}</span>
                 <span>{new Date(r.createdAt).toLocaleString()}</span>
                 {r.pageUrl ? <span className="break-all">· {r.pageUrl}</span> : null}

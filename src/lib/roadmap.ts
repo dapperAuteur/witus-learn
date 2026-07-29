@@ -122,6 +122,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   in-app **problem reporter** (site-wide button → \`/admin/reports\` triage + WitUS Inbox mirror +
   \`reports:list\`); **category management** (\`/admin/categories\` add/rename/delete + settings picker);
   **admin dashboard** (\`/admin/dashboard\`, learners, enrollments, completions + learner roster).
+- ✅ **RAG auto-index + report bulk-resolve** (\`feat/rag-autoindex-and-report-bulk\`): publishing a
+  course now **auto-reindexes its embeddings** (a non-blocking \`after()\` hook, so chat-with-sources
+  and CYOA routing stay current without the manual "Generate embeddings" click), with a **staleness
+  badge** on the instructor tools when lessons are edited after publish; **bulk-resolve** on
+  \`/admin/reports\` (checkbox-select a batch of reports and close/triage them in one action, clearing
+  the false backlog of already-fixed items).
 - ✅ **LMS UX batch** (\`bundle/lms-ux-2026-07-01\`): **upload hardening** for the 100MB Cloudinary
   cap (shared chunked \`uploadToCloudinary\` + size guard; recorder live-size + auto-stop; "Stripe
   not configured" banner); **teacher catalog** (\`/teach\` fuzzy search + status filters + bulk
