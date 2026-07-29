@@ -35,6 +35,10 @@ export function SignOutButton({
           // here must never trap someone in a session they asked to leave.
           await purgeSensitivePages(null).catch(() => {});
           await authClient.signOut();
+          // Go to a PUBLIC page, do not refresh in place: if you signed out from a gated page
+          // (an admin or dashboard route), re-rendering it logged-out would forbidden() into a 403.
+          // "/" is the public front door (the landing/catalog), so sign-out always lands somewhere open.
+          router.push("/");
           router.refresh();
         })
       }

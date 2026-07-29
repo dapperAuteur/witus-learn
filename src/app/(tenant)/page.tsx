@@ -71,6 +71,31 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         ) : null}
       </header>
 
+      {/* 0) Value landing for signed-out visitors: lead with why to learn here (cited, standards-aligned,
+          media-rich, verifiable), not a bare catalog. Signed-in learners get the dashboard above. */}
+      {!session ? (
+        <section className="mb-8 rounded-xl border-2 p-6 sm:p-8" style={{ borderColor: "var(--accent)" }}>
+          <h2 className="text-2xl font-bold sm:text-3xl">Courses you can trust, and prove you took</h2>
+          <p className="mt-3 max-w-2xl text-neutral-600 dark:text-neutral-400">
+            Every course cites its sources, aligns to real state standards, and teaches with audio and
+            video, not walls of text. Finish one and earn a certificate anyone can verify. Learn
+            something real, and be able to show where you learned it.
+          </p>
+          <div className="mt-5 flex flex-wrap items-center gap-4">
+            <Link
+              href="/courses"
+              className="inline-block min-h-11 rounded-md px-5 py-2.5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
+              style={{ backgroundColor: "var(--accent)" }}
+            >
+              Browse courses →
+            </Link>
+            <Link href="/academic-standards" className="text-sm font-medium underline" style={{ color: "var(--accent)" }}>
+              See the standards we meet
+            </Link>
+          </div>
+        </section>
+      ) : null}
+
       {/* 1) Run your own school. */}
       {tenant.flags.recruiting ? (
         <section className="mb-8 rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">
