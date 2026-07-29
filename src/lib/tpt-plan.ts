@@ -157,7 +157,8 @@ export const TPT_PLAN: TptPlanItem[] = [
     order: 10,
     title: "California Civics: a printable unit",
     courseSlug: "state-civics-ca",
-    status: "planned",
+    status: "built",
+    packetDir: "california-civics-unit",
     price: "$7",
     tier: "unit",
     rationale:
@@ -167,7 +168,7 @@ export const TPT_PLAN: TptPlanItem[] = [
   {
     order: 11,
     title: "State Civics Bundle (Indiana, Illinois, Arizona, and more)",
-    bundleSlugs: ["state-civics-in", "state-civics-il", "state-civics-az"],
+    bundleSlugs: ["state-civics-in", "state-civics-il", "state-civics-az", "state-civics-ca"],
     status: "planned",
     price: "$18",
     tier: "bundle",
