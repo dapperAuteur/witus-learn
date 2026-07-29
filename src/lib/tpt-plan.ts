@@ -135,7 +135,7 @@ export const TPT_PLAN: TptPlanItem[] = [
     order: 8,
     title: "Who Has the Power? A civics method unit",
     courseSlug: "who-has-the-power",
-    status: "next",
+    status: "built",
     price: "$9",
     tier: "unit",
     rationale:
@@ -146,7 +146,7 @@ export const TPT_PLAN: TptPlanItem[] = [
     order: 9,
     title: "What They Built: Black business districts",
     courseSlug: "what-they-built",
-    status: "next",
+    status: "built",
     price: "$9",
     tier: "unit",
     rationale:
