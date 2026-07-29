@@ -160,6 +160,15 @@ function PickerView({
 }) {
   const mappedCodes = new Set(statesHere.map((s) => s.code));
   const rest = US_JURISDICTIONS.filter((j) => !mappedCodes.has(j.code));
+  // Coverage headline, derived from what THIS tenant can back (not a platform-wide boast).
+  const stateCount = statesHere.filter((s) => s.code !== "DC").length;
+  const hasDC = statesHere.some((s) => s.code === "DC");
+  const coverageWhere =
+    stateCount > 0 && hasDC
+      ? `${stateCount} state${stateCount === 1 ? "" : "s"} and Washington, D.C.`
+      : hasDC
+        ? "Washington, D.C."
+        : `${stateCount} state${stateCount === 1 ? "" : "s"}`;
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8 sm:py-10">
@@ -170,6 +179,14 @@ function PickerView({
         <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">
           Find your state&apos;s standards
         </h1>
+        {statesHere.length > 0 ? (
+          <p
+            className="mt-3 inline-flex rounded-full border px-4 py-1.5 text-sm font-semibold"
+            style={{ borderColor: "var(--accent)", color: "var(--accent)" }}
+          >
+            ✓ Aligned to published standards in {coverageWhere}
+          </p>
+        ) : null}
         <p className="mt-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
           Pick your state to see which {brand} courses meet which of its published standards:
           the exact code, the standard&apos;s own words, the lesson that covers it, and a link to

@@ -18,6 +18,7 @@ import { type MapBelt } from "@/components/growing-belts-map";
 import { MapTabs } from "@/components/map-tabs";
 import { EpisodeExplorer } from "@/components/episode-explorer";
 import { PricingContactForm } from "@/components/pricing-contact-form";
+import { StandardsCoverageBadge } from "@/components/standards-coverage-badge";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // /explore — the landing page for the map curriculum.
@@ -448,7 +449,10 @@ export default async function ExplorePage() {
         <h2 id="standards-heading" className="text-2xl font-bold">
           Standards alignment
         </h2>
-        <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
+        <div className="mt-3">
+          <StandardsCoverageBadge tenantId={tenant.id} />
+        </div>
+        <p className="mt-3 max-w-2xl text-neutral-600 dark:text-neutral-400">
           Designed for high school. We mapped this curriculum against the published{" "}
           <strong>Indiana Academic Standards</strong> and the standards{" "}
           <strong>Washington, D.C.</strong> has adopted, Common Core for literacy, NGSS for
