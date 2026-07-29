@@ -1,6 +1,13 @@
 import { and, eq, inArray, ne } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses } from "@/db/schema";
+import {
+  allAlignedCourseSlugs,
+  mappedStates,
+  scopeAlignments,
+  summarizeStandards,
+  type StateCode,
+} from "@/lib/standards";
 
 // Tenant-scoped resolver for /standards.
 //
@@ -51,4 +58,32 @@ export async function getAlignedCourses(
     out.set(r.slug, { id: r.id, title: r.title, slug: r.slug });
   }
   return out;
+}
+
+export interface StandardsCoverage {
+  /** Mapped jurisdictions THIS tenant can honestly back, each with its standards count. */
+  states: { code: StateCode; total: number }[];
+  /** How many of those are actual states (D.C. counted separately). */
+  stateCount: number;
+  /** Whether Washington, D.C. is among them. */
+  hasDC: boolean;
+}
+
+/**
+ * Tenant-scoped standards coverage — the count behind the coverage badge, the finder headline, and
+ * the sitemap's per-state URLs. Same tenant boundary as getAlignedCourses: a jurisdiction only
+ * counts if THIS tenant publishes at least one course that backs a standard there, so the badge can
+ * never advertise coverage for a course the tenant doesn't host (an empty tenant gets stateCount 0).
+ */
+export async function getStandardsCoverage(tenantId: string): Promise<StandardsCoverage> {
+  const available = await getAlignedCourses(tenantId, allAlignedCourseSlugs());
+  const states = mappedStates()
+    .map((code) => ({ code, groups: scopeAlignments(available, code) }))
+    .filter((s) => s.groups.length > 0)
+    .map((s) => ({ code: s.code, total: summarizeStandards(s.groups).total }));
+  return {
+    states,
+    stateCount: states.filter((s) => s.code !== "DC").length,
+    hasDC: states.some((s) => s.code === "DC"),
+  };
 }

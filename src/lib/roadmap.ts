@@ -138,6 +138,13 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
   \`onRequestError\` tags the request host (how tenants resolve) and a \`beforeSend\` scrub reuses
   \`redactSecrets\` so no learner email or magic-link token ever leaves for the vendor.
+- ✅ **Standards growth funnel** (\`feat/standards-growth-funnel\`): turns the (already all-51-state)
+  standards alignment into a discoverable SEO funnel. The **sitemap** now lists one indexable URL per
+  jurisdiction THIS tenant is aligned to (plus the finder, the matrix, courses, and explore), so a
+  teacher searching "<state> standards" can land on the page that answers them. A reusable, tenant-
+  scoped **coverage badge** ("Aligned to published standards in N states and Washington, D.C.") now
+  leads the finder and appears on \`/explore\` and \`/platform\`: a true, checkable claim that renders
+  nothing when a tenant backs no mapped state. All 28 standards isolation tests still pass.
 - ✅ **Public roadmap page + config/verify sweep** (\`chore/config-verify-sweep\`): a public,
   plain-language **\`/roadmap\`** (what's live / building / exploring, recruiting-gated, own OG card,
   linked in the footer) drawn from \`src/lib/public-roadmap.ts\`, separate from this owner-only detail.

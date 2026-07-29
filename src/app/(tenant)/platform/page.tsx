@@ -5,6 +5,7 @@ import { getScopedDb } from "@/db/scoped";
 import { brandName } from "@/lib/branding";
 import { ogImageUrl } from "@/lib/og";
 import { PLATFORM_PLANS, PLATFORM_PRICING_NOTE, PLATFORM_PRICING_CTA, displayPrice } from "@/lib/platform-pricing";
+import { StandardsCoverageBadge } from "@/components/standards-coverage-badge";
 
 const platformDescription =
   "Learn.WitUS is the multi-tenant learning platform behind Better Vice Club and other cited, media-rich schools. Run your own on your own domain.";
@@ -96,6 +97,11 @@ export default async function PlatformPage() {
           >
             Run your own school →
           </Link>
+        </div>
+        {/* Standards coverage is a top reason a school buys in — surface it, tenant-scoped so it's
+            a true count, and render nothing when there's none to claim. */}
+        <div className="mt-6 flex justify-center">
+          <StandardsCoverageBadge tenantId={tenant.id} />
         </div>
       </header>
 
