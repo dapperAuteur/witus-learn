@@ -100,6 +100,14 @@ results replay), and **never edit the prompt** — `questionKey` hashes the prom
 resets per-question history for every learner who already answered. Give distractors real, checkable,
 and definitively *wrong* specificity; padding them with filler just trades one tell for another.
 
+**Self-checks (`:::reveal`) get their own guard.** `check-reveals.ts` (also in `pnpm lint`, a ratchet
+like the two above) fails on a `:::reveal <question> ||| <answer>` card that is malformed, indented,
+has a placeholder answer, or whose answer equals its question — each of which renders as dead prose
+and silently never grades, so the failure is invisible in the app. Its *semantic* companion — does the
+answer actually match the lesson it sits in? — is the advisory **"Audit reveals"** button on the
+instructor tools (`/api/courses/[id]/audit-reveals`), deliberately NOT a build gate: an LLM verdict is
+non-deterministic and must never be able to block a commit.
+
 ## Page-quality rule — every page is found, shared, mobile-first, and usable
 
 A page that works but can't be found, or looks broken on a phone, or shares as a blank card, is a

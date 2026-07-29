@@ -128,6 +128,11 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   badge** on the instructor tools when lessons are edited after publish; **bulk-resolve** on
   \`/admin/reports\` (checkbox-select a batch of reports and close/triage them in one action, clearing
   the false backlog of already-fixed items).
+- ✅ **Assessment guardrail** (\`feat/rag-autoindex-and-report-bulk\`): a two-layer check that a \`:::reveal\`
+  self-check can't quietly break. **Structural** (\`pnpm check:reveals\`, a CI ratchet): flags a
+  malformed / indented / placeholder / answer-equals-question card that would render as dead prose and
+  never grade. **Semantic** ("Audit reveals" on the instructor tools): the AI judges whether each
+  card's answer is actually supported by its lesson, advisory only (never a build gate).
 - ✅ **LMS UX batch** (\`bundle/lms-ux-2026-07-01\`): **upload hardening** for the 100MB Cloudinary
   cap (shared chunked \`uploadToCloudinary\` + size guard; recorder live-size + auto-stop; "Stripe
   not configured" banner); **teacher catalog** (\`/teach\` fuzzy search + status filters + bulk
