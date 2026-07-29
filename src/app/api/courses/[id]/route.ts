@@ -1,6 +1,8 @@
+import { after } from "next/server";
 import { z } from "zod";
 import { apiContext, errorJson, isTenantAdmin, json, loadEditableCourse } from "@/lib/api";
 import { isPlatformOwner } from "@/lib/session";
+import { reindexCourseEmbeddings } from "@/lib/ai/reindex";
 import {
   deleteCourse,
   ensureUsernameById,
@@ -114,6 +116,21 @@ export async function PATCH(req: Request, { params }: Params) {
   if (patch.isPublished === true && !course.publishedAt) patch.publishedAt = new Date();
 
   const updated = await updateCourse(sdb.tenantId, id, patch);
+
+  // Publishing (re)indexes the course's embeddings so chat-with-sources and CYOA routing reflect
+  // the latest lessons without a manual "Generate embeddings" click. Non-blocking (runs after the
+  // response) and a no-op when Gemini isn't configured. Lesson edits AFTER publish don't hit this
+  // route, so the course page surfaces a staleness badge prompting a manual re-index (CourseAdminTools).
+  if (patch.isPublished === true) {
+    after(async () => {
+      try {
+        await reindexCourseEmbeddings(id);
+      } catch {
+        // Best-effort: a failed auto-index leaves the old index in place; the manual button remains.
+      }
+    });
+  }
+
   return json({ course: updated });
 }
 
