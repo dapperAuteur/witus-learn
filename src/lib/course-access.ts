@@ -6,7 +6,8 @@ import { getCourseBySlug, listLessons } from "@/db/queries/authoring";
 import { getCourseProgressSummary } from "@/db/queries/progress";
 import { isEnrolled as checkEnrolled } from "@/db/queries/enrollment";
 import { canAccessCourse } from "@/lib/api";
-import { getSession } from "@/lib/session";
+import { canSeeUnvettedContent, courseViewGate } from "@/lib/vetting";
+import { getSession, isPlatformOwner } from "@/lib/session";
 import { getActiveLearner } from "@/lib/active-learner";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
 import type { Session } from "@/lib/auth";
@@ -21,6 +22,11 @@ export interface CourseView {
   activeLearnerId: string | null;
   isEditor: boolean;
   isEnrolled: boolean;
+  /** True when the course is UNVETTED (`vetted_at IS NULL`) and this viewer isn't the owner,
+   *  its instructor or an enrollee. The page must render the public "Coming soon" landing face:
+   *  title, description, standards, share card, and nothing else. `lessons` and `modules` are
+   *  emptied in that case, so no consumer of this view can leak a lesson title or media URL. */
+  isComingSoon: boolean;
   lessons: Lesson[];
   /** Sections (course modules), ordered. Empty for flat courses. */
   modules: CourseModule[];
@@ -36,7 +42,9 @@ export interface CourseView {
 
 /** Load a course (by pretty URL) plus the viewer's access context. Returns null
  *  when it doesn't resolve in this tenant, or is a draft and the viewer can't
- *  edit it — both surface as 404 at the page. Enrollment/progress are read for
+ *  edit it, both surface as 404 at the page. An UNVETTED course still loads for
+ *  everyone (its landing page is public) but comes back with `isComingSoon` and
+ *  no lessons or sections. Enrollment/progress are read for
  *  the ACTIVE learner (self, or a managed child), so a parent "studying as" a
  *  child sees exactly what that child is enrolled in and has completed. Editor
  *  status is always the real signed-in account — never the active learner. */
@@ -50,17 +58,6 @@ export async function loadCourseView(
 
   const session = await getSession();
   const isEditor = await canAccessCourse(session, tenant.id, course);
-  // Hidden from non-owners when it's a draft OR marked private (private stays owner-only
-  // even if published). canAccessCourse already restricts private to owner/instructor.
-  if ((!course.isPublished || course.visibility === "private") && !isEditor) return null;
-
-  const all = await listLessons(course.id);
-  const lessons = isEditor ? all : all.filter((l) => l.isPublished);
-  const modules = await db
-    .select()
-    .from(courseModules)
-    .where(eq(courseModules.courseId, course.id))
-    .orderBy(asc(courseModules.sortOrder));
   const learner = await getActiveLearner(session);
   // ONE round trip for completion + last-viewed + playback positions (it replaces the old
   // completed-ids-only query rather than adding to it — resume costs no extra Neon egress).
@@ -71,6 +68,41 @@ export async function loadCourseView(
       ])
     : [null, false];
 
+  // One gate, three outcomes (src/lib/vetting.ts):
+  //   not-found → a draft, or private, to someone who can't edit it.
+  //   coming-soon → unvetted, and this viewer is not the owner, its instructor or an enrollee.
+  //   open → the normal course experience.
+  // The unvetted CONTENT gate is stricter than the edit gate on purpose: it is owner OR the
+  // course's own instructor OR an enrollee, never a brand_admin (the same reasoning that keeps
+  // a private course away from brand_admins). Enrollment is the ACTIVE learner's, so a parent
+  // studying as a child sees exactly what that child may see. An invited auditor (plans/52 §5)
+  // plugs in as canSeeUnvettedContent's `isAuditor` and needs no change here or at any page.
+  const isOwnerOrInstructor = session
+    ? course.instructorId === session.user.id || (await isPlatformOwner(session.user.id))
+    : false;
+  const gate = courseViewGate({
+    isPublished: course.isPublished,
+    visibility: course.visibility,
+    vettedAt: course.vettedAt,
+    isEditor,
+    canSeeUnvetted: canSeeUnvettedContent({ isOwnerOrInstructor, isEnrolled: enrolled }),
+  });
+  if (gate === "not-found") return null;
+  const isComingSoon = gate === "coming-soon";
+
+  // A coming-soon viewer gets NO lesson data at all, not a title, not a media URL, so the
+  // landing page cannot leak content and the lesson route 404s (it looks its lesson up in this
+  // list). Skipping both reads also makes the public face cheaper than the full page.
+  const all = isComingSoon ? [] : await listLessons(course.id);
+  const lessons = isEditor ? all : all.filter((l) => l.isPublished);
+  const modules = isComingSoon
+    ? []
+    : await db
+        .select()
+        .from(courseModules)
+        .where(eq(courseModules.courseId, course.id))
+        .orderBy(asc(courseModules.sortOrder));
+
   return {
     tenant,
     course,
@@ -78,6 +110,7 @@ export async function loadCourseView(
     activeLearnerId: learner?.id ?? null,
     isEditor,
     isEnrolled: enrolled,
+    isComingSoon,
     lessons,
     modules,
     completedLessonIds: progress?.completedLessonIds ?? new Set<string>(),

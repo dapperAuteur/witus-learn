@@ -1,8 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { isFreeCourse, lessonAccess } from "@/lib/gating";
 
-const free = { isPublished: true, isSequential: false, priceType: "free", price: "0" };
-const paid = { isPublished: true, isSequential: false, priceType: "one_time", price: "10" };
+// vettedAt is set on both fixtures: an unvetted course locks every lesson (see the
+// "unvetted course" cases below), which would otherwise mask what these tests measure.
+const VETTED = new Date("2026-07-29T00:00:00Z");
+const free = { isPublished: true, isSequential: false, priceType: "free", price: "0", vettedAt: VETTED };
+const paid = { isPublished: true, isSequential: false, priceType: "one_time", price: "10", vettedAt: VETTED };
 const lesson = (over: Partial<{ id: string; isPublished: boolean; isFreePreview: boolean }> = {}) => ({
   id: "L",
   isPublished: true,
@@ -49,6 +52,18 @@ describe("lessonAccess", () => {
     expect(
       lessonAccess(seq, b, ctx({ orderedLessonIds: ordered, completedLessonIds: new Set(["A"]) })).open,
     ).toBe(true);
+  });
+
+  it("unvetted course locks lessons for a stranger, even a free preview", () => {
+    const unvetted = { ...free, vettedAt: null };
+    expect(lessonAccess(unvetted, lesson(), ctx()).reason).toBe("unvetted");
+    expect(lessonAccess(unvetted, lesson({ isFreePreview: true }), ctx()).reason).toBe("unvetted");
+  });
+
+  it("unvetted course stays open to an existing enrollee and to an editor", () => {
+    const unvetted = { ...free, vettedAt: null };
+    expect(lessonAccess(unvetted, lesson(), ctx({ isEnrolled: true })).open).toBe(true);
+    expect(lessonAccess(unvetted, lesson(), ctx({ isEditor: true })).open).toBe(true);
   });
 
   it("isFreeCourse", () => {

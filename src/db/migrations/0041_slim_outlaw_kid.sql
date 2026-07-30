@@ -1,0 +1,1 @@
+ALTER TABLE "courses" ADD COLUMN "vetted_at" timestamp with time zone;

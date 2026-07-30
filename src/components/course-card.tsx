@@ -1,9 +1,16 @@
 import Link from "next/link";
 import type { Course } from "@/db/schema";
+import { isUnvetted } from "@/lib/vetting";
+import { ComingSoonBadge } from "./coming-soon-course";
 import { ProgressBar } from "./progress-bits";
 
 // Catalog / profile / my-courses card. Pass `progress` (0–100) for an enrolled
 // learner to show mastery instead of price; pass `href` to deep-link the pretty URL.
+//
+// An UNVETTED course still gets a card (finding a course marked "Coming soon" is useful
+// anticipation, not a dead end) but shows the badge INSTEAD of a price, because it cannot be
+// bought yet and a price beside it would be an offer we can't honour. A learner already enrolled
+// is passed `progress`, so their own card keeps showing progress: the badge is for strangers.
 export function CourseCard({
   course,
   progress,
@@ -39,6 +46,8 @@ export function CourseCard({
             {progress >= 100 ? "Completed ✓" : `${progress}% complete`}
           </p>
         </div>
+      ) : isUnvetted(course) ? (
+        <ComingSoonBadge />
       ) : (
         <p className="text-xs font-medium" style={{ color: "var(--accent)" }}>
           {isFree ? "Free" : `$${course.price}`}

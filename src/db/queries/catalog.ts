@@ -3,6 +3,7 @@ import { db } from "@/db/client";
 import {
   courseCategories,
   courses,
+  userProfiles,
   type Course,
   type CourseCategory,
 } from "@/db/schema";
@@ -79,6 +80,38 @@ export async function getCourseByIdOrSlug(tenantId: string, idOrSlug: string): P
     .where(and(eq(courses.slug, idOrSlug), eq(courses.tenantId, tenantId)))
     .limit(2); // 2 so an ambiguous slug is detectable rather than silently taking the first
   return rows.length === 1 ? rows[0] : null;
+}
+
+export interface SitemapCourse {
+  slug: string | null;
+  isPublished: boolean;
+  visibility: string;
+  /** The instructor's public username, half of the pretty URL /{username}/{slug}. */
+  username: string | null;
+  updatedAt: Date;
+}
+
+/**
+ * Rows for the tenant's sitemap: enough to build /{username}/{slug} and decide whether the URL
+ * is publicly reachable. UNVETTED courses are INCLUDED on purpose: their landing page is real
+ * public content (description + the standards they meet), which is what educators shop on; only
+ * the lessons behind it are closed. The include/exclude decision itself lives in one pure place,
+ * `includeInSitemap` in src/lib/vetting.ts, so it can be tested and can't drift per surface.
+ */
+export async function listSitemapCourses(tenantId: string): Promise<SitemapCourse[]> {
+  const rows = await db
+    .select({
+      slug: courses.slug,
+      isPublished: courses.isPublished,
+      visibility: courses.visibility,
+      username: userProfiles.username,
+      updatedAt: courses.updatedAt,
+    })
+    .from(courses)
+    .leftJoin(userProfiles, eq(userProfiles.userId, courses.instructorId))
+    .where(eq(courses.tenantId, tenantId))
+    .orderBy(asc(courses.title));
+  return rows;
 }
 
 export async function listCategories(tenantId: string): Promise<CourseCategory[]> {

@@ -1,5 +1,5 @@
 import "server-only";
-import { and, asc, count, eq } from "drizzle-orm";
+import { and, asc, count, eq, isNotNull } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses, lessons, userProfiles, type Lesson } from "@/db/schema";
 
@@ -7,7 +7,10 @@ import { courses, lessons, userProfiles, type Lesson } from "@/db/schema";
 // takes an explicit tenantId (resolved from the caller's API key — see
 // src/lib/api-v1-auth.ts) and bakes it into the WHERE; there is no unscoped variant.
 // PUBLISHED CONTENT ONLY — this is a public-facing surface, so unlike the authoring
-// queries there is no includeUnpublished escape hatch here at all.
+// queries there is no includeUnpublished escape hatch here at all. The course LIST includes
+// unvetted ("Coming soon") courses, because a title + description is discovery; the two reads
+// that return LESSONS withhold them, because those are content and would deep-link a consumer
+// into lessons nobody outside the school can open (see src/lib/vetting.ts).
 
 export interface ApiCourseListItem {
   id: string;
@@ -95,8 +98,12 @@ export interface ApiCourseDetail extends ApiCourseListItem {
 }
 
 /** Course + its published lessons, filtered to this tenant. Null if the id doesn't
- *  resolve in this tenant, isn't published, or isn't public — the route 404s on null
- *  rather than distinguishing "wrong tenant" from "doesn't exist" (no existence leak). */
+ *  resolve in this tenant, isn't published, isn't public, or is UNVETTED. The route 404s on null
+ *  rather than distinguishing "wrong tenant" from "doesn't exist" (no existence leak).
+ *
+ *  Unvetted courses are withheld here even though the LIST above includes them: this endpoint
+ *  returns lesson titles, which are course content, and the consuming app would deep-link into
+ *  lessons that are closed. Same reasoning as cross-course CYOA (see src/lib/vetting.ts). */
 export async function getPublishedCourseWithLessons(
   tenantId: string,
   id: string,
@@ -118,6 +125,7 @@ export async function getPublishedCourseWithLessons(
         eq(courses.tenantId, tenantId),
         eq(courses.isPublished, true),
         eq(courses.visibility, "public"),
+        isNotNull(courses.vettedAt),
       ),
     )
     .limit(1);
@@ -171,6 +179,7 @@ export async function getPublishedLesson(
         eq(courses.tenantId, tenantId),
         eq(courses.isPublished, true),
         eq(courses.visibility, "public"),
+        isNotNull(courses.vettedAt),
       ),
     )
     .limit(1);

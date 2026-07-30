@@ -7,6 +7,7 @@ import { resolveTenant } from "@/lib/tenant";
 import { isWitusBrandedHost } from "@/lib/witus-host";
 import { ecosystemProductBySlug } from "@/lib/ecosystem";
 import { matchEntities } from "@/lib/entities";
+import { isUnvetted } from "@/lib/vetting";
 import { CourseCard } from "@/components/course-card";
 
 export const metadata: Metadata = { title: "Courses" };
@@ -144,6 +145,9 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((c) => {
+            // "Coming soon" (unvetted) is a PUBLIC state, unlike the three editor-only badges
+            // above it, so it is the fallback rather than a competing case: an editor looking at
+            // an unvetted draft still wants to see "Draft" first.
             const badge =
               c.visibility === "private"
                 ? "🔒 Private"
@@ -151,7 +155,9 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
                   ? "⚠️ On hold"
                   : !c.isPublished
                     ? "Draft"
-                    : null;
+                    : isUnvetted(c)
+                      ? "🕒 Coming soon"
+                      : null;
             return (
               <div key={c.id} className="relative">
                 {badge ? (

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { requireBrandAdmin } from "@/lib/session";
 import { requireTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
-import { listLeads } from "@/db/queries/leads";
+import { COURSE_NOTIFY_SOURCE, listLeads } from "@/db/queries/leads";
 
 export const metadata: Metadata = { title: "Leads" };
 
@@ -71,7 +71,14 @@ export default async function LeadsPage() {
                         .filter(Boolean)
                         .join(" · ")}
                     </p>
-                    {q.message ? (
+                    {/* A "notify me when this course opens" signup from an unvetted course's
+                        landing page carries no message, so name the course instead: without it the
+                        entry would read as an empty enquiry. */}
+                    {q.source === COURSE_NOTIFY_SOURCE ? (
+                      <p className="mt-1.5 text-neutral-700 dark:text-neutral-300">
+                        🕒 Waiting for <strong>{q.courseTitle ?? "a course"}</strong> to open.
+                      </p>
+                    ) : q.message ? (
                       <p className="mt-1.5 whitespace-pre-wrap wrap-break-word text-neutral-700 dark:text-neutral-300">
                         {q.message}
                       </p>
@@ -79,7 +86,11 @@ export default async function LeadsPage() {
                       <p className="mt-1.5 text-neutral-500">No message.</p>
                     )}
                     <a
-                      href={`mailto:${l.email}?subject=${encodeURIComponent(`${brandName(tenant)}, pricing`)}`}
+                      href={`mailto:${l.email}?subject=${encodeURIComponent(
+                        q.source === COURSE_NOTIFY_SOURCE
+                          ? `${brandName(tenant)}, ${q.courseTitle ?? "your course"}`
+                          : `${brandName(tenant)}, pricing`,
+                      )}`}
                       className="mt-2 inline-block font-medium underline focus-visible:outline-2 focus-visible:outline-offset-2"
                       style={{ color: "var(--accent)" }}
                     >

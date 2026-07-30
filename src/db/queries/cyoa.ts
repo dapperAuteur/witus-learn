@@ -1,4 +1,4 @@
-import { and, eq, ne, sql } from "drizzle-orm";
+import { and, eq, isNotNull, ne, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses, lessonEmbeddings, lessons } from "@/db/schema";
 import { vectorLiteral } from "@/lib/ai/embeddings";
@@ -72,6 +72,11 @@ export async function matchLessons(
  * Cross-course semantic neighbors. **tenantFilter is mandatory** — without it,
  * CYOA routes a learner into another brand's course (the #1 leak vector). Also
  * requires the target course to opt in (allow_cross_course_cyoa).
+ *
+ * UNVETTED courses are excluded: this is a LESSON-ROUTING surface (it hands the learner a lesson
+ * to walk into), and an unvetted course's lessons are closed to everyone but its instructor, the
+ * owner and existing enrollees, so routing a stranger there is a guaranteed dead end. Discovery
+ * surfaces make the opposite choice on purpose (see src/lib/vetting.ts).
  */
 export async function matchLessonsGlobal(
   tenantFilter: string,
@@ -97,6 +102,7 @@ export async function matchLessonsGlobal(
         eq(courses.tenantId, tenantFilter),
         eq(courses.allowCrossCourseCyoa, true),
         eq(courses.isPublished, true),
+        isNotNull(courses.vettedAt),
         eq(lessons.isPublished, true),
         ne(lessons.id, excludeLessonId),
         ne(lessons.courseId, excludeCourseId),

@@ -73,6 +73,15 @@ export const courses = pgTable(
     isPublished: boolean("is_published").notNull().default(false),
     visibility: text("visibility").notNull().default("public"),
     publishedAt: timestamp("published_at", { withTimezone: true }),
+    // When the platform owner personally reviewed and VETTED this course's content.
+    // NULL = unvetted, and an unvetted course is "Coming soon": its LANDING page stays
+    // public and indexable (title, description, standards met, share card) because that
+    // is what educators shop on, but its CONTENT is closed. Only the platform owner, the
+    // course's own instructor, and anyone with an existing enrollment can reach lessons,
+    // lesson titles or media URLs. See src/lib/vetting.ts for the single gate and
+    // plans/52 for the decision record. Owner-only to set (PATCH /api/courses/[id]
+    // takes a boolean and stamps the time server-side; never a client timestamp).
+    vettedAt: timestamp("vetted_at", { withTimezone: true }),
     // When set, the course is HELD: a clear UI banner shows this reason and publishing is
     // blocked until it clears (e.g. "vet culturally" or "swap copyrighted source for open").
     // NULL = no hold.

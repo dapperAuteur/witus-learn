@@ -15,11 +15,13 @@ export interface CatalogCourse {
   publishHoldReason: string | null;
   priceType: string;
   price: number;
+  /** False = unvetted, so learners see "Coming soon" instead of the lessons. Owner-only to change. */
+  vetted: boolean;
   /** Instructor byline shown to owner/admins for courses they don't personally own (else null). */
   instructorLabel?: string | null;
 }
 
-type Status = "all" | "published" | "draft" | "private" | "hold";
+type Status = "all" | "published" | "draft" | "private" | "hold" | "vetted" | "unvetted";
 
 // Case-insensitive subsequence match — feels "fuzzy" without a dependency (e.g. "knt" → "Knots").
 function fuzzy(query: string, text: string): boolean {
@@ -40,9 +42,19 @@ function priceLabel(c: CatalogCourse): string {
   return `$${c.price}${c.priceType === "subscription" ? "/mo" : ""}`;
 }
 
-// Teacher course catalog: search + filter + bulk edit (publish/unpublish/reprice) + quick toggle.
-// Bulk actions reuse the per-course PATCH route (validated + edit-gated server-side).
-export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
+// Teacher course catalog: search + filter + bulk edit (publish/unpublish/reprice/vet) + quick
+// toggle. Bulk actions reuse the per-course PATCH route (validated + edit-gated server-side), so
+// there is no bulk endpoint to keep in sync with the single-course rules.
+//
+// `canVet` is the platform owner. Vetting is owner-only server-side (the PATCH route strips the
+// field for everyone else), so the buttons are hidden rather than shown-and-silently-ignored.
+export function TeacherCatalog({
+  courses,
+  canVet = false,
+}: {
+  courses: CatalogCourse[];
+  canVet?: boolean;
+}) {
   const router = useRouter();
   const [rows, setRows] = useState(courses);
   const [query, setQuery] = useState("");
@@ -59,6 +71,8 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
         if (status === "draft" && c.isPublished) return false;
         if (status === "private" && c.visibility !== "private") return false;
         if (status === "hold" && !c.publishHoldReason) return false;
+        if (status === "vetted" && !c.vetted) return false;
+        if (status === "unvetted" && c.vetted) return false;
         return fuzzy(query, `${c.title} ${c.category ?? ""}`);
       }),
     [rows, query, status],
@@ -117,6 +131,8 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
     if ("isPublished" in patch) out.isPublished = Boolean(patch.isPublished);
     if ("priceType" in patch) out.priceType = String(patch.priceType);
     if ("price" in patch) out.price = Number(patch.price);
+    // The wire field is a BOOLEAN; the server stamps/clears vetted_at itself.
+    if ("vetted" in patch) out.vetted = Boolean(patch.vetted);
     return out;
   }
 
@@ -152,7 +168,7 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
           aria-label="Search your courses"
           className="min-h-9 flex-1 rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900"
         />
-        {(["all", "published", "draft", "private", "hold"] as Status[]).map((s) => (
+        {(["all", "published", "draft", "private", "hold", "vetted", "unvetted"] as Status[]).map((s) => (
           <button
             key={s}
             type="button"
@@ -179,6 +195,28 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
           <button type="button" disabled={busy} onClick={() => bulk({ isPublished: true }, "Publish")} className={btn}>Publish</button>
           <button type="button" disabled={busy} onClick={() => bulk({ isPublished: false }, "Unpublish")} className={btn}>Unpublish</button>
           <button type="button" disabled={busy} onClick={() => bulk({ priceType: "free", price: 0 }, "Make free")} className={btn}>Make free</button>
+          {canVet ? (
+            <>
+              <button
+                type="button"
+                disabled={busy}
+                onClick={() => bulk({ vetted: true }, "Mark vetted")}
+                title="Reviewed: learners get the full course"
+                className={btn}
+              >
+                Mark vetted
+              </button>
+              <button
+                type="button"
+                disabled={busy}
+                onClick={() => bulk({ vetted: false }, "Mark unvetted")}
+                title="Not reviewed yet: learners get the Coming soon page (people already enrolled keep access)"
+                className={btn}
+              >
+                Mark unvetted
+              </button>
+            </>
+          ) : null}
           <span className="flex items-center gap-1">
             <span className="text-sm text-neutral-500">$</span>
             <input
@@ -236,6 +274,14 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
               ) : null}
               {c.publishHoldReason ? (
                 <span title={c.publishHoldReason} className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-800 dark:bg-amber-900 dark:text-amber-200">⚠️ hold</span>
+              ) : null}
+              {!c.vetted ? (
+                <span
+                  title="Unvetted: learners see the Coming soon page instead of the lessons"
+                  className="shrink-0 rounded-full bg-sky-100 px-2 py-0.5 text-xs text-sky-800 dark:bg-sky-900 dark:text-sky-200"
+                >
+                  🕒 coming soon
+                </span>
               ) : null}
               <button
                 type="button"

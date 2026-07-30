@@ -483,6 +483,25 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   no-signup demo. The homeschool page asserts no state's requirements; the community page carries the
   "communities educating themselves" heritage generally and points to the catalog's cited history
   courses for specifics. Still notes: the Teachers Pay Teachers course packets.
+- 🔧 **Unvetted courses, "Coming soon"** (\`feat/unvetted-coming-soon\`, **migration 0041**): a nullable
+  \`courses.vetted_at\` records that the platform owner personally reviewed a course. NULL = unvetted,
+  and the migration deliberately does **not backfill**, so every existing course reads as unvetted the
+  moment it runs (that IS the bulk "move them all to Coming soon" request). An unvetted course keeps a
+  **public, indexable landing page** (title, description, the standards it meets, its own OG card and
+  Course JSON-LD, and a **"notify me when this course opens"** email capture), because that page is what
+  teachers and schools shop on. The course **behind** it is closed: no lesson list, no lesson titles, no
+  media URLs, no price, no enroll button. Full access is **owner OR the course's own instructor OR
+  anyone with an existing enrollment** (un-vetting must never revoke access from someone mid-course,
+  least of all someone who paid); invited auditors are the one seat left to build (plans/52 §5).
+  Discovery surfaces (catalog, home, search, category counts, instructor pages, **sitemap**, which now
+  lists per-course URLs at all) **include** unvetted courses, badged; lesson-routing surfaces
+  (cross-course CYOA \`match_lessons_global\`, the api-v1 lesson reads) **exclude** them, because routing
+  a stranger into a closed lesson is a dead end. Vetting is **owner-only** and the API takes a
+  **boolean**, never a client timestamp; bulk **Mark vetted / Mark unvetted** plus **vetted/unvetted**
+  filters ride the existing \`/teach\` bulk mechanism (no new endpoint). Notify-me signups reuse the
+  existing \`leads\` funnel (\`leads.inquiries\`, so no second table and no extra migration), are mirrored
+  to the WitUS Inbox as \`learn-course-notify\`, counted on the course's own manage page, and read in
+  full at \`/admin/leads\`.
 - 🔧 **Platform + demo landing pages** (\`feat/platform-demo-landing\`): two public marketing pages,
   shown only on Learn.WitUS itself (\`tenant.flags.recruiting\`, 404 elsewhere so a white-label school
   never advertises the platform underneath it): **\`/platform\`** pitches Learn.WitUS as a product for

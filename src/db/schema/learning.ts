@@ -214,13 +214,18 @@ export type LinkClick = typeof linkClicks.$inferSelect;
  * this array instead: nothing a prospective customer writes is ever silently lost.
  */
 export interface LeadInquiry {
-  /** Which form produced it, e.g. "explore-pricing". */
+  /** Which form produced it, e.g. "explore-pricing" or "course-notify". */
   source: string;
   /** parent | teacher | homeschooler | school_district | other */
   role?: string | null;
   /** How many students they are asking about. */
   students?: number | null;
   message?: string | null;
+  /** For source "course-notify": the course they want to be told about when it opens. Set
+   *  server-side from a tenant-scoped read, so it can only ever name this school's own course. */
+  courseId?: string | null;
+  /** Denormalized so /admin/leads can name the course without a second query. */
+  courseTitle?: string | null;
   /** ISO-8601. Set server-side — never from the client. */
   at: string;
 }
