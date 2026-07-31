@@ -44,6 +44,10 @@ const PatchSchema = z.object({
   billingInterval: z.enum(["month", "year"]).nullable().optional(),
   // Cross-promotion: 0–3 ecosystem product slugs curated for this course.
   relatedProducts: z.array(z.string().max(60)).max(3).nullable().optional(),
+  // Owner-only. A BOOLEAN, never a timestamp: the server stamps vetted_at itself, so a client
+  // can't backdate a review (the date is a trust signal shown to educators). Stripped below for
+  // anyone but the platform owner. false = back to "Coming soon".
+  vetted: z.boolean().optional(),
   // Admin-only (stripped / validated below for non-admins)
   isFeatured: z.boolean().optional(),
   featuredOrder: z.number().int().nullable().optional(),
@@ -72,6 +76,19 @@ export async function PATCH(req: Request, { params }: Params) {
   // If pricing changed, drop the cached Stripe price id so ensureCoursePrice re-creates it at
   // the new amount/interval — otherwise checkout keeps charging the OLD (cached) price after an edit.
   if ("price" in patch || "priceType" in patch || "billingInterval" in patch) patch.stripePriceId = null;
+
+  // Vetting is the PLATFORM OWNER's review, not a per-brand setting: an instructor or brand_admin
+  // must not be able to mark their own course reviewed. Silently dropped for everyone else, the
+  // same way isFeatured is. Translate the boolean into the column here, never trusting a client
+  // timestamp, and keep an existing vetted_at as-is so re-vetting an already-vetted course
+  // doesn't move the recorded review date (bulk "Mark vetted" over a mixed selection is common).
+  if ("vetted" in patch) {
+    const wantVetted = patch.vetted === true;
+    delete patch.vetted; // never reaches the UPDATE: `vetted` is not a column
+    if (await isPlatformOwner(session.user.id)) {
+      patch.vettedAt = wantVetted ? (course.vettedAt ?? new Date()) : null;
+    }
+  }
 
   // Featured flags are admin-only.
   if ("isFeatured" in patch || "featuredOrder" in patch) {

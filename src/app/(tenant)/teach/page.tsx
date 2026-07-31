@@ -132,8 +132,12 @@ export default async function TeachPage() {
             publishHoldReason: c.publishHoldReason,
             priceType: c.priceType,
             price: Number(c.price ?? 0),
+            // Boolean, not the timestamp: the row only needs to know vetted or not, and the
+            // date itself is the owner's record, not something to ship to every client.
+            vetted: c.vettedAt != null,
             instructorLabel: labelFor(c),
           }))}
+          canVet={owner}
         />
       )}
     </main>

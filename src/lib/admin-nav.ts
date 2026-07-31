@@ -23,7 +23,7 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { href: "/admin/domains", title: "Domains", desc: "Map a custom domain to your school.", icon: "🌐" },
   { href: "/admin/api-keys", title: "API keys", desc: "Mint/revoke read keys for embedding your courses in another app.", icon: "🔑" },
   { href: "/admin/marketing", title: "Marketing", desc: "Promo codes now; email campaigns soon.", icon: "📣" },
-  { href: "/admin/leads", title: "Leads", desc: "Lead funnel signups.", icon: "🎯" },
+  { href: "/admin/leads", title: "Interest & leads", desc: "Who is waiting for which course, track, or bundle. Filter and export.", icon: "🎯" },
   { href: "/admin/reports", title: "Problem reports", desc: "In-app bug/idea reports to triage.", icon: "🐞" },
   { href: "/admin/paths", title: "Learning paths", desc: "Sequence courses into guided paths.", icon: "🧭" },
   { href: "/admin/live", title: "Live", desc: "Schedule and run live sessions.", icon: "🔴", ownerOnly: true },

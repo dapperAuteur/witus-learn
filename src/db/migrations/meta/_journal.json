@@ -288,6 +288,13 @@
       "when": 1785272304330,
       "tag": "0040_tiny_ser_duncan",
       "breakpoints": true
+    },
+    {
+      "idx": 41,
+      "version": "7",
+      "when": 1785382511481,
+      "tag": "0041_slim_outlaw_kid",
+      "breakpoints": true
     }
   ]
 }

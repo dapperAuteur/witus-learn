@@ -45,6 +45,9 @@ export default async function CourseResultsPage({ params }: Params) {
   const { username, courseSlug } = await params;
   const view = await loadCourseView(username, courseSlug);
   if (!view) notFound();
+  // An unvetted ("Coming soon") course has no lessons this viewer can take, so it can have no
+  // results for them either. 404 rather than render an empty scoreboard for a closed course.
+  if (view.isComingSoon) notFound();
   const { course, tenant, session, activeLearnerId, lessons, modules } = view;
   const base = `/${username}/${courseSlug}`;
 

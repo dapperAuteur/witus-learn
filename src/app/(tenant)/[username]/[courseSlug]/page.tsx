@@ -37,7 +37,8 @@ import { getEmbeddingStaleness } from "@/db/queries/cyoa";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { brandName } from "@/lib/branding";
-import { standardsForCourse } from "@/lib/standards";
+import { CourseStandards } from "@/components/course-standards";
+import { ComingSoonCourseFace } from "@/components/coming-soon-course";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -68,6 +69,30 @@ export default async function CourseBySlugPage({ params }: Params) {
   if (!view) notFound();
 
   const { course, lessons, isEditor, completedLessonIds, orderedLessonIds } = view;
+
+  // UNVETTED ("Coming soon"): the landing page stays public and indexable, because the description
+  // and the standards it meets are exactly what teachers and schools shop on. The course behind it
+  // is closed: no lesson list, no lesson titles, no media URLs, no price, no enroll button. Owner,
+  // instructor and existing enrollees never land here (loadCourseView resolves that gate and, for
+  // anyone else, returns the view with no lessons at all).
+  //
+  // Deliberately BEFORE the per-course age gate: this face shows no more than the catalog card
+  // already does (title + description), and an age wall in front of it would make a public page
+  // unindexable for no protective gain. Every actual lesson stays behind both gates.
+  if (view.isComingSoon) {
+    return (
+      <ComingSoonCourseFace
+        courseId={course.id}
+        title={course.title}
+        description={course.description}
+        username={username}
+        courseSlug={courseSlug}
+        brand={brandName(view.tenant)}
+        defaultEmail={view.session?.user.email}
+      />
+    );
+  }
+
   const courseLives = await listLiveForCourse(course.tenantId, course.id);
 
   // Cross-promotion is shown only on WitUS-branded hosts (or tenants that opt in), so
@@ -121,8 +146,6 @@ export default async function CourseBySlugPage({ params }: Params) {
   // Series membership: which learning path(s) this course sits in, so the learner is told it's part
   // of an ordered track (and where). Empty for a standalone course, so the banner just doesn't show.
   const coursePaths = await getPathsForCourse(view.tenant.id, course.id);
-  // Pure lookup over committed standards data; no query, no await.
-  const courseStandards = standardsForCourse(courseSlug);
   // Every lesson the learner may save for offline: page path, direct-media file (when applicable),
   // and the metadata the offline manifest needs so /downloads can name it with no network (a
   // cached URL alone can't tell you its course, section or title — see src/lib/offline-manifest.ts).
@@ -277,48 +300,7 @@ export default async function CourseBySlugPage({ params }: Params) {
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
       ) : null}
 
-      {/* Standards met, directly under the description, because standards coverage is what an
-          educator actually shops on and a separate page they must know about is not discoverable.
-          Collapsed by default so the course page stays clean: the summary line carries the numbers,
-          and the detail lives at /academic-standards?course=<slug>. An unmapped course renders
-          NOTHING rather than "0 standards", which would read as "meets none" when it means "not
-          analysed yet". scripts/check-standards-coverage.ts is the guard on that backlog. */}
-      {courseStandards.total > 0 ? (
-        <details className="mt-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
-          <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 px-4 text-sm font-medium pointer-coarse:min-h-12">
-            <span aria-hidden="true">🎓</span>
-            <span>
-              Meets <strong>{courseStandards.total}</strong> academic standard
-              {courseStandards.total === 1 ? "" : "s"} across{" "}
-              <strong>{courseStandards.jurisdictions.length}</strong>{" "}
-              {courseStandards.jurisdictions.length === 1 ? "jurisdiction" : "jurisdictions"}
-            </span>
-            <span className="ml-auto text-xs text-neutral-500">show</span>
-          </summary>
-          <div className="px-4 pb-4">
-            <ul className="mt-2 flex flex-wrap gap-2">
-              {courseStandards.jurisdictions.map((j) => (
-                <li key={j.state}>
-                  <Link
-                    href={`/academic-standards?state=${j.state.toLowerCase()}&course=${courseSlug}`}
-                    className="inline-flex items-center gap-1 rounded-full border border-neutral-300 px-3 py-1 text-xs hover:underline dark:border-neutral-700"
-                  >
-                    {j.jurisdiction}
-                    <span className="text-neutral-500">{j.count}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <Link
-              href={`/academic-standards?course=${courseSlug}`}
-              className="mt-3 inline-block text-sm underline underline-offset-2"
-              style={{ color: "var(--accent)" }}
-            >
-              See the full standards detail for this course
-            </Link>
-          </div>
-        </details>
-      ) : null}
+      <CourseStandards courseSlug={courseSlug} />
 
       {coursePaths.map((p) => {
         const next = p.courses[p.position]; // position is 1-based, so this is the course AFTER it

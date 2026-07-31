@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { resolveTenant } from "@/lib/tenant";
+import { ScopedDb } from "@/db/scoped";
+import { includeInSitemap } from "@/lib/vetting";
 import { getSiteUrl } from "@/lib/site-url";
 import { getStandardsCoverage } from "@/db/queries/standards";
 import { tenantHasMapData } from "@/db/queries/map";
@@ -15,6 +17,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${base}/`, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/courses`, changeFrequency: "weekly", priority: 0.8 },
   ];
+
+  // One entry per publicly-reachable course landing page, /{instructor}/{slug}. Tenant-scoped, so
+  // a brand's sitemap never names another brand's course.
+  //
+  // UNVETTED ("Coming soon") courses are LISTED on purpose: their landing page is real public
+  // content, carrying the description and the academic standards the course meets, which is what
+  // teachers and schools search for. Only the lessons behind it are closed. Drafts, private
+  // courses and courses with no pretty URL are excluded because those URLs 404, and a sitemap must
+  // never list a URL that 404s. That single decision lives in includeInSitemap.
+  const courseRows = await new ScopedDb(tenant).listSitemapCourses();
+  for (const c of courseRows) {
+    if (!c.username || !includeInSitemap(c)) continue;
+    entries.push({
+      url: `${base}/${c.username}/${c.slug}`,
+      lastModified: c.updatedAt,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    });
+  }
 
   if (tenant.legal.termsUrl) entries.push({ url: `${base}/terms`, priority: 0.3 });
   if (tenant.legal.privacyUrl) entries.push({ url: `${base}/privacy`, priority: 0.3 });

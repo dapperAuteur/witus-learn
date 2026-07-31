@@ -2,8 +2,10 @@ import "server-only";
 import { NextResponse } from "next/server";
 import type { Course } from "@/db/schema";
 import { getScopedDb, type ScopedDb } from "@/db/scoped";
+import { isEnrolled } from "@/db/queries/enrollment";
 import type { Session } from "@/lib/auth";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
+import { canSeeUnvettedContent, isUnvetted } from "@/lib/vetting";
 
 export const json = (data: unknown, status = 200) => NextResponse.json(data, { status });
 export const errorJson = (error: string, status: number) => json({ error }, status);
@@ -53,6 +55,12 @@ export async function canEditCourse(
  * canEditCourse (instructor OR any tenant admin). Use this — not canEditCourse — anywhere
  * a viewer could reach an unpublished/private course, so future admin/moderator roles
  * can't see the owner's private drafts.
+ *
+ * This is the EDIT gate. It deliberately says nothing about vetting: `vetted_at` is the
+ * platform owner's own review queue, and a white-label school's brand_admin must not lose
+ * the ability to fix their own brand's courses just because the owner hasn't reviewed them
+ * yet. Whether a viewer may see an UNVETTED course's content is a separate, stricter
+ * question, answered by canSeeUnvettedCourse below.
  */
 export async function canAccessCourse(
   session: Session | null,
@@ -63,6 +71,35 @@ export async function canAccessCourse(
   if (course.instructorId === session.user.id) return true;
   if (course.visibility === "private") return isPlatformOwner(session.user.id);
   return isTenantAdmin(session, tenantId);
+}
+
+/**
+ * CONTENT gate for an unvetted course (`vetted_at IS NULL`): may this viewer reach its
+ * lessons, lesson titles and media URLs, or do they get the public "Coming soon" landing
+ * face? Owner OR the course's own instructor OR anyone with an EXISTING enrollment (and,
+ * once plans/52 §5 ships, an invited auditor: pass `isAuditor` into canSeeUnvettedContent
+ * and nothing else here changes).
+ *
+ * A vetted course returns true immediately; ordinary publish/visibility/enrollment gating
+ * still applies on top of this, exactly as before.
+ *
+ * Enrollees are non-negotiable: the migration that added `vetted_at` did not backfill, so
+ * every existing course reads as unvetted at once, and dropping enrollees would cut off
+ * every learner mid-course, including everyone who has paid.
+ */
+export async function canSeeUnvettedCourse(
+  session: Session | null,
+  course: Course,
+): Promise<boolean> {
+  if (!isUnvetted(course)) return true;
+  if (!session) return false;
+  const isOwnerOrInstructor =
+    course.instructorId === session.user.id || (await isPlatformOwner(session.user.id));
+  if (isOwnerOrInstructor) return true;
+  return canSeeUnvettedContent({
+    isOwnerOrInstructor: false,
+    isEnrolled: await isEnrolled(session.user.id, course.id),
+  });
 }
 
 /** Load a course for editing: 404 if it isn't this tenant's, 403 if the caller

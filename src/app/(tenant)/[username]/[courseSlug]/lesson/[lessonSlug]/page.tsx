@@ -45,6 +45,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 const LOCK_COPY: Record<LessonLockReason, string> = {
   draft: "This lesson is not available.",
+  unvetted: "This course is still being reviewed. Its lessons open once it is published in full.",
   locked: "Enrollment is required for this lesson (coming in a later phase).",
   sequential: "Complete the previous lessons first to unlock this one.",
 };

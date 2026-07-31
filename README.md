@@ -43,11 +43,31 @@ A read-only, per-tenant, **API-key**-scoped surface so an external app's backend
 WanderLearn) can render real Learn.WitUS lesson content, `GET /api/v1/courses` (paginated,
 `?limit=&offset=`), `GET /api/v1/courses/[id]`, and `GET /api/v1/courses/[id]/lessons/[lessonId]`
 (full lesson body/media). The tenant comes **only** from `Authorization: Bearer <key>`, never the
-host, never client input, and every response is **published + `visibility:"public"` only**. Mint
+host, never client input, and every response is **published + `visibility:"public"` only**. The two
+reads that return LESSONS additionally require the course to be **vetted** (`courses.vetted_at IS NOT
+NULL`), so an unvetted "Coming soon" course is listed by `GET /api/v1/courses` but its lessons 404;
+see [src/lib/vetting.ts](src/lib/vetting.ts). Mint
 keys at `/admin/api-keys` (owner/brand-admin). Every response includes a top-level `disclaimer`
 field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.ts) and the
 consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
 `/embed/course/[id]` iframe view is also available for embedding without calling the API directly.
+
+## Vetting and "Coming soon" (`courses.vetted_at`)
+
+`courses.vetted_at` records that the **platform owner** personally reviewed a course against its
+sources. NULL means unvetted, and the migration that added the column deliberately did not backfill,
+so a course is unvetted until someone says otherwise. An unvetted course keeps a **public, indexable
+landing page** (title, description, the standards it meets, its own OG card, `Course` JSON-LD with no
+price/offer, and a **"notify me when this course opens"** email capture) because that page is what
+educators shop on, while the **content is closed**: no lesson list, no lesson titles, no media URLs,
+no price, no enroll button. Full access is **owner OR the course's own instructor OR anyone with an
+existing enrollment** (un-vetting must never revoke access from someone mid-course).
+
+Discovery surfaces (catalog, home, search, category counts, instructor pages, **sitemap**) include
+unvetted courses, badged; lesson-routing surfaces (cross-course CYOA, the api-v1 lesson reads)
+exclude them. The whole decision lives in one pure module,
+[src/lib/vetting.ts](src/lib/vetting.ts). Mark courses vetted or unvetted in bulk from `/teach`
+(owner only); notify-me signups land in `leads` and are read at `/admin/leads`.
 
 ## State-standards finder (`/academic-standards`) and explorer (`/academic-standards/matrix`)
 

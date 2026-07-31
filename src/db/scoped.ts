@@ -7,6 +7,7 @@ import {
   getCourseByIdOrSlug,
   listCategories,
   listCourses,
+  listSitemapCourses,
   type CatalogQuery,
 } from "@/db/queries/catalog";
 import { markCoursesAnnounced } from "@/db/queries/announce";
@@ -66,6 +67,11 @@ export class ScopedDb {
 
   listCategories() {
     return listCategories(this.tenantId);
+  }
+
+  /** Course rows for THIS tenant's sitemap (see listSitemapCourses). */
+  listSitemapCourses() {
+    return listSitemapCourses(this.tenantId);
   }
 
   /** Stamp `announced_at` on the given courses (tenant-scoped). Returns the ids updated. */

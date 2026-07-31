@@ -7,6 +7,8 @@ import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { hasStripe } from "@/lib/env";
 import { listLessons, listModules, listTenantInstructors } from "@/db/queries/authoring";
 import { listLinkUsage } from "@/db/queries/link-clicks";
+import { countCourseNotifySignups } from "@/db/queries/leads";
+import { isUnvetted } from "@/lib/vetting";
 import { getCourseRecallStats } from "@/db/queries/recall";
 import { CourseSettingsForm } from "@/components/course-settings-form";
 import { LessonsManager } from "@/components/lessons-manager";
@@ -31,15 +33,18 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   // Sibling authoring links keep the readable slug when the course has one.
   const courseHref = `/teach/${course.slug ?? course.id}`;
 
-  const [lessons, owner, membership, categories, linkUsage, recallStats, modules] = await Promise.all([
-    listLessons(courseId),
-    isPlatformOwner(session.user.id),
-    getMembership(session.user.id, sdb.tenantId),
-    sdb.listCategories(),
-    listLinkUsage(sdb.tenantId, courseId),
-    getCourseRecallStats(sdb.tenantId, courseId),
-    listModules(courseId),
-  ]);
+  const [lessons, owner, membership, categories, linkUsage, recallStats, modules, waiting] =
+    await Promise.all([
+      listLessons(courseId),
+      isPlatformOwner(session.user.id),
+      getMembership(session.user.id, sdb.tenantId),
+      sdb.listCategories(),
+      listLinkUsage(sdb.tenantId, courseId),
+      getCourseRecallStats(sdb.tenantId, courseId),
+      listModules(courseId),
+      // Only an unvetted course has a notify-me form, so only it can have anyone waiting.
+      isUnvetted(course) ? countCourseNotifySignups(sdb.tenantId, courseId) : Promise.resolve(0),
+    ]);
 
   // Number lessons the way the learner sees them ("Module 2, Lesson 7: …") so the instructor can
   // find the right one. Modules are ordered by sortOrder (position = module number); a lesson's
@@ -80,6 +85,29 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
       </div>
 
       <h1 className="mt-4 text-2xl font-bold">{course.title}</h1>
+
+      {/* Unvetted: learners get the public "Coming soon" landing page instead of the lessons, and
+          the people who asked to be told when it opens are counted right here, where the course is
+          worked on. The addresses themselves live with every other lead at /admin/leads. */}
+      {isUnvetted(course) ? (
+        <div className="mt-3 rounded-lg border border-sky-300 bg-sky-50 p-4 text-sm dark:border-sky-800 dark:bg-sky-950/40">
+          <p className="font-semibold text-sky-900 dark:text-sky-200">
+            🕒 Coming soon (not vetted yet)
+          </p>
+          <p className="mt-1 text-sky-800 dark:text-sky-300">
+            Learners see this course&apos;s title, description and standards, plus a notify-me form,
+            but not the lessons. You, and anyone already enrolled, still see everything.
+            {waiting > 0
+              ? ` ${waiting} ${waiting === 1 ? "person is" : "people are"} waiting to hear it opened.`
+              : " Nobody has signed up to be notified yet."}
+          </p>
+          {isAdmin ? (
+            <Link href="/admin/leads" className="mt-1 inline-block underline" style={{ color: "var(--accent)" }}>
+              See who is waiting →
+            </Link>
+          ) : null}
+        </div>
+      ) : null}
 
       <div className="mt-6 space-y-8">
         <CourseSettingsForm

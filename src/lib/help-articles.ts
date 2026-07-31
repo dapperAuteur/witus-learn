@@ -140,7 +140,79 @@ one). Categories power the catalog filter.`,
   (use this for content that still needs vetting).
 
 Toggle publish per course from **/teach** (click the status pill), or in bulk by selecting several
-courses and choosing **Publish / Unpublish**.`,
+courses and choosing **Publish / Unpublish**.
+
+See also **Vetting a course, and the "Coming soon" page**, for the separate review step that decides
+whether learners get the lessons or a coming-soon page.`,
+  },
+  {
+    slug: "vetting-and-coming-soon",
+    title: 'Vetting a course, and the "Coming soon" page',
+    category: "Courses",
+    keywords: [
+      "vet",
+      "vetted",
+      "unvetted",
+      "coming soon",
+      "review",
+      "notify me",
+      "bulk",
+      "waiting list",
+      "leads",
+      "interest",
+      "demand",
+      "bundle",
+      "track",
+      "csv",
+      "export",
+    ],
+    body: `# Vetting a course
+
+**Vetting is a separate step from publishing.** Publishing says the course exists; vetting says it has
+been reviewed against its sources and is ready for learners.
+
+A course that has **not** been vetted shows learners a **"Coming soon" page** instead of the lessons:
+
+- Its landing page stays **public**, and search engines still index it. Visitors read the title, the
+  description, and the academic standards it meets, and they can share the link.
+- The **content is closed**: no lesson list, no lesson titles, no media, no price, and no enroll button.
+- **Anyone already enrolled keeps full access**, and so do you (the instructor) and the platform owner.
+  Un-vetting a course never locks out someone who is already studying it, including anyone who paid.
+- Visitors can leave an email on the **"Get notified when this course opens"** form.
+
+There is deliberately **no expected date** on that page. A missed date is worse than no date.
+
+## Marking courses vetted (platform owner only)
+
+On **/teach**, tick the courses you want, then choose **Mark vetted** or **Mark unvetted**. Both work
+on any number of courses at once. Use the **Vetted** and **Unvetted** filters to find what still needs
+review, and the small **🕒 coming soon** tag on a row tells you at a glance.
+
+Marking a course vetted a second time does **not** change the date it was first vetted.
+
+## Who is waiting
+
+Open a course you have not vetted (**/teach → the course**) and the banner at the top says how many
+people asked to be told when it opens.
+
+**The list itself lives at Admin → Interest & leads (\`/admin/leads\`).** That page opens on a demand
+board: how many distinct people are waiting, counted **by course**, **by learning track**, **by
+bundle**, and **by source**, highest first. That is the answer to "what should I vet next". Tap any
+line to filter the list below it to exactly those people, or use the **Filter** form to combine a
+course, a track, a bundle, and a source. Everything is in the address bar, so you can bookmark a
+view, share it, or print it.
+
+- A **track** filter picks up everyone waiting on **any** course in that series.
+- A **bundle** filter picks up everyone waiting on **any** course that bundle contains.
+- The **source** filter separates "waiting for a course" from an **/explore** pricing enquiry.
+- **Download this list as CSV** exports whatever is currently filtered, one row per person, ready to
+  paste into an email tool.
+
+Each signup is also mirrored to the WitUS Inbox.
+
+**Vetting a course does not email the people waiting for it.** Nothing is sent automatically, on
+purpose: you decide what that message says and when it goes out. Filter to the course, export the
+CSV, and send it yourself.`,
   },
   {
     slug: "quick-recall",
