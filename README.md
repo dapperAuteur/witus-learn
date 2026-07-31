@@ -19,7 +19,11 @@ data model, API surface, content/pedagogy, auth/billing, multitenancy, migration
 
 Recent: publish-time RAG auto-indexing (+ staleness badge), an assessment guardrail (`pnpm
 check:reveals` lint + an AI "Audit reveals" instructor tool), admin bulk-resolve for problem reports,
-and Sentry error monitoring (wired, inert until a DSN is set). This public **`/roadmap`** page is new.
+and Sentry error monitoring (wired, inert until a DSN is set; every event passes through the
+`beforeSend` scrubber in [src/lib/sentry-scrub.ts](src/lib/sentry-scrub.ts), which strips identity,
+cookies, auth headers, token-bearing URLs, `request.query_string` in all three shapes Sentry sends it
+in, and any credential-named key in `extra` / `tags` / `contexts` / breadcrumbs, and degrades the
+event to identifiers if the scrub itself throws). This public **`/roadmap`** page is new.
 
 ## Stack
 
