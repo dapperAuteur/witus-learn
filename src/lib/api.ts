@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import type { Course } from "@/db/schema";
 import { getScopedDb, type ScopedDb } from "@/db/scoped";
 import { isEnrolled } from "@/db/queries/enrollment";
+import { isCourseAuditor } from "@/db/queries/course-auditors";
+import { AUDITOR_READ_ONLY_MESSAGE, isReadOnlyAuditor } from "@/lib/auditors";
 import type { Session } from "@/lib/auth";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { canSeeUnvettedContent, isUnvetted } from "@/lib/vetting";
@@ -76,9 +78,9 @@ export async function canAccessCourse(
 /**
  * CONTENT gate for an unvetted course (`vetted_at IS NULL`): may this viewer reach its
  * lessons, lesson titles and media URLs, or do they get the public "Coming soon" landing
- * face? Owner OR the course's own instructor OR anyone with an EXISTING enrollment (and,
- * once plans/52 §5 ships, an invited auditor: pass `isAuditor` into canSeeUnvettedContent
- * and nothing else here changes).
+ * face? Owner OR the course's own instructor OR anyone with an EXISTING enrollment OR an
+ * accepted INVITED AUDITOR (plans/52 §5), which is the only kind of read-only access this
+ * app grants: an auditor may read the lessons and may write nothing (src/lib/auditors.ts).
  *
  * A vetted course returns true immediately; ordinary publish/visibility/enrollment gating
  * still applies on top of this, exactly as before.
@@ -86,6 +88,9 @@ export async function canAccessCourse(
  * Enrollees are non-negotiable: the migration that added `vetted_at` did not backfill, so
  * every existing course reads as unvetted at once, and dropping enrollees would cut off
  * every learner mid-course, including everyone who has paid.
+ *
+ * The auditor read is LAST on purpose: it is the only branch that costs a query, and the
+ * three cheap in-memory/one-row checks above already answer for almost every caller.
  */
 export async function canSeeUnvettedCourse(
   session: Session | null,
@@ -96,10 +101,52 @@ export async function canSeeUnvettedCourse(
   const isOwnerOrInstructor =
     course.instructorId === session.user.id || (await isPlatformOwner(session.user.id));
   if (isOwnerOrInstructor) return true;
+  if (await isEnrolled(session.user.id, course.id)) return true;
   return canSeeUnvettedContent({
     isOwnerOrInstructor: false,
-    isEnrolled: await isEnrolled(session.user.id, course.id),
+    isEnrolled: false,
+    // The grant is per TENANT + per COURSE, and the tenant comes from the course row itself,
+    // never from the caller, so this cannot be widened by anything a client sends.
+    isAuditor: await isCourseAuditor({
+      tenantId: course.tenantId,
+      courseId: course.id,
+      userId: session.user.id,
+      email: session.user.email ?? null,
+    }),
   });
+}
+
+/**
+ * The read-only half of invite-to-audit (plans/52 §5): 403 when the caller's ONLY access to this
+ * course is an audit grant. Call it in every route that WRITES a learner record (progress, quiz
+ * attempts, recall grades, assignment submissions, enrollment, completion), before the write.
+ *
+ * Why it exists as its own check rather than leaning on lessonAccess: an auditor's lesson access is
+ * deliberately open (they are here to read the course), so the read gate cannot also be the write
+ * gate. Keeping their attempts out of the tables is the point, not a side effect. A reviewer
+ * clicking through a quiz to check the wording must not move that quiz's statistics or any
+ * dashboard average built on them.
+ *
+ * Returns null (no block) for everyone else, and costs no query at all on a vetted course, for an
+ * editor, or for an enrollee.
+ */
+export async function auditorReadOnlyBlock(input: {
+  session: Session;
+  tenantId: string;
+  course: Course;
+  isEditor: boolean;
+  isEnrolled: boolean;
+}): Promise<NextResponse | null> {
+  if (!isUnvetted(input.course) || input.isEditor || input.isEnrolled) return null;
+  const isAuditor = await isCourseAuditor({
+    tenantId: input.tenantId,
+    courseId: input.course.id,
+    userId: input.session.user.id,
+    email: input.session.user.email ?? null,
+  });
+  return isReadOnlyAuditor({ isAuditor, isUnvetted: true, isEditor: false, isEnrolled: false })
+    ? errorJson(AUDITOR_READ_ONLY_MESSAGE, 403)
+    : null;
 }
 
 /** Load a course for editing: 404 if it isn't this tenant's, 403 if the caller

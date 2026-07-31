@@ -61,7 +61,14 @@ landing page** (title, description, the standards it meets, its own OG card, `Co
 price/offer, and a **"notify me when this course opens"** email capture) because that page is what
 educators shop on, while the **content is closed**: no lesson list, no lesson titles, no media URLs,
 no price, no enroll button. Full access is **owner OR the course's own instructor OR anyone with an
-existing enrollment** (un-vetting must never revoke access from someone mid-course).
+existing enrollment OR an invited auditor** (un-vetting must never revoke access from someone
+mid-course).
+
+**Invite-to-audit** (`course_auditors`): from a course's `/teach/<course>` page, the owner or its
+instructor invites an email to **read one unvetted course** before it opens. A pending invite grants
+nothing; accepting does. Grants are per tenant and per course. Auditors are **read-only**, no
+enrolling, no certificate, no progress, and **no recorded quiz or recall attempts**, so a reviewer
+never moves the course's statistics. See [src/lib/auditors.ts](src/lib/auditors.ts).
 
 Discovery surfaces (catalog, home, search, category counts, instructor pages, **sitemap**) include
 unvetted courses, badged; lesson-routing surfaces (cross-course CYOA, the api-v1 lesson reads)

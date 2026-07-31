@@ -135,7 +135,7 @@ export default async function CourseBySlugPage({ params }: Params) {
       : null;
   const resumeHref =
     resumeLesson?.slug &&
-    lessonAccess(course, resumeLesson, { isEditor, isEnrolled: view.isEnrolled, completedLessonIds, orderedLessonIds }).open
+    lessonAccess(course, resumeLesson, { isEditor, isEnrolled: view.isEnrolled, isAuditor: view.isAuditor, completedLessonIds, orderedLessonIds }).open
       ? `${base}/lesson/${resumeLesson.slug}`
       : null;
   // Distinguish "you stopped mid-lesson" from "you finished that one, here's the next".
@@ -152,7 +152,7 @@ export default async function CourseBySlugPage({ params }: Params) {
   // Locked lessons are EXCLUDED — nothing useful to cache, and no checkbox is rendered for them.
   const moduleTitles = new Map(view.modules.map((m) => [m.id, m.title]));
   const savableLessons = lessons.reduce<SavableLesson[]>((acc, l) => {
-    const access = lessonAccess(course, l, { isEditor, isEnrolled: view.isEnrolled, completedLessonIds, orderedLessonIds });
+    const access = lessonAccess(course, l, { isEditor, isEnrolled: view.isEnrolled, isAuditor: view.isAuditor, completedLessonIds, orderedLessonIds });
     if (!access.open) return acc;
     const mediaUrl =
       (l.lessonType === "audio" || l.lessonType === "video") && l.contentUrl && isDirectMediaFile(l.contentUrl)
@@ -191,6 +191,9 @@ export default async function CourseBySlugPage({ params }: Params) {
     const access = lessonAccess(course, lesson, {
       isEditor,
       isEnrolled: view.isEnrolled,
+      // An invited auditor (plans/52 section 5) reads this unvetted course; every write is refused
+      // server-side, so opening the row here costs nothing but a reviewer being able to do the job.
+      isAuditor: view.isAuditor,
       completedLessonIds,
       orderedLessonIds,
     });
@@ -376,7 +379,14 @@ export default async function CourseBySlugPage({ params }: Params) {
         </div>
       ) : null}
 
-      {view.session && course.isPublished ? (
+      {/* An invited auditor (plans/52 section 5) is here to READ the course, not take it: no enroll,
+          no certificate, no recorded progress. Saying so beats an enroll button that 403s. */}
+      {view.isAuditor ? (
+        <p className="mt-6 rounded-lg border border-sky-300 bg-sky-50 p-4 text-sm text-sky-900 dark:border-sky-800 dark:bg-sky-950/40 dark:text-sky-200">
+          You are reviewing this course before it opens. You can read every lesson. Nothing you do is
+          recorded: no progress, no quiz scores, no certificate.
+        </p>
+      ) : view.session && course.isPublished ? (
         <CourseActions
           courseId={course.id}
           enrolled={view.isEnrolled}

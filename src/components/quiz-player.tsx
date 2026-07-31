@@ -77,10 +77,16 @@ export function QuizPlayer({
   courseId,
   lessonId,
   content,
+  readOnly = false,
 }: {
   courseId: string;
   lessonId: string;
   content: SafeQuiz;
+  /** An invited AUDITOR (plans/52 section 5) reading the course before it opens. They see every
+   *  question and option, which is most of what reviewing a quiz is, but there is no submit: the
+   *  server refuses to record their attempt, so offering the button would only ever fail, and a
+   *  reviewer's clicks must never reach this quiz's statistics. */
+  readOnly?: boolean;
 }) {
   const router = useRouter();
   const [served, setServed] = useState<Served[]>(() => buildAttempt(content));
@@ -212,7 +218,11 @@ export function QuizPlayer({
         );
       })}
 
-      {queued ? (
+      {readOnly ? (
+        <p role="status" className="rounded-md border-l-4 border-sky-500 bg-sky-50 p-3 text-sm dark:bg-sky-950/30">
+          You are reviewing this course, so this quiz is not scored and nothing you pick is recorded.
+        </p>
+      ) : queued ? (
         <p role="status" className="rounded-md border-l-4 border-amber-500 bg-amber-50 p-3 text-sm dark:bg-amber-950/30">
           Saved offline. Your answers will be scored automatically when you&apos;re back online. Look
           for the result on your <strong>results</strong> page then. Your answers aren&apos;t stored on

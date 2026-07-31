@@ -1,5 +1,5 @@
-import { apiContext, errorJson, json } from "@/lib/api";
-import { createCompletion, hasCompletedAllLessons } from "@/db/queries/enrollment";
+import { apiContext, auditorReadOnlyBlock, canEditCourse, errorJson, json } from "@/lib/api";
+import { createCompletion, hasCompletedAllLessons, isEnrolled } from "@/db/queries/enrollment";
 import { sendCompletionEmail } from "@/lib/emails";
 import { getSiteUrl } from "@/lib/site-url";
 import { getActiveLearner } from "@/lib/active-learner";
@@ -18,6 +18,18 @@ export async function POST(_req: Request, { params }: { params: Promise<{ id: st
 
   const course = await sdb.getCourseById(id);
   if (!course || !course.isPublished) return errorJson("Not found", 404);
+
+  // An invited auditor (plans/52 section 5) earns no certificate: the certificate is a claim about
+  // a learner, and an auditor deliberately records no progress to back one. Checked before the
+  // completeness test so the answer is the honest reason rather than "not yet complete".
+  const auditorBlocked = await auditorReadOnlyBlock({
+    session,
+    tenantId: sdb.tenantId,
+    course,
+    isEditor: await canEditCourse(session, sdb.tenantId, course),
+    isEnrolled: await isEnrolled(learner.id, id),
+  });
+  if (auditorBlocked) return auditorBlocked;
 
   if (!(await hasCompletedAllLessons(learner.id, id))) {
     return errorJson("Course is not yet complete", 400);

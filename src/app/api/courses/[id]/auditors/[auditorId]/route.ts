@@ -1,0 +1,26 @@
+import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
+import { isPlatformOwner } from "@/lib/session";
+
+type Params = { params: Promise<{ id: string; auditorId: string }> };
+
+// DELETE /api/courses/[id]/auditors/[auditorId] — revoke an audit grant. Takes effect on the next
+// request: the gate reads the table every time, so there is no cached grant to expire.
+export async function DELETE(_req: Request, { params }: Params) {
+  const { id, auditorId } = await params;
+  const { sdb, session } = await apiContext();
+  if (!session) return errorJson("Please sign in first.", 401);
+
+  const course = await sdb.getCourseById(id);
+  if (!course) return errorJson("Not found", 404);
+  const allowed =
+    session.user.id === course.instructorId ||
+    (await isPlatformOwner(session.user.id)) ||
+    (await isTenantAdmin(session, sdb.tenantId));
+  if (!allowed) return errorJson("Forbidden", 403);
+
+  // Scoped by tenant AND course, so an id from another school (or another course) deletes nothing
+  // and reports the same "not found" a made-up id would.
+  const removed = await sdb.revokeCourseAuditor(course.id, auditorId);
+  if (!removed) return errorJson("Not found", 404);
+  return json({ ok: true });
+}

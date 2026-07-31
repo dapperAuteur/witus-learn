@@ -53,6 +53,34 @@ export async function sendCohortInviteEmail(opts: {
   });
 }
 
+/**
+ * Invite-to-audit email (plans/52 §5): asks someone to REVIEW an unvetted course before it opens.
+ * The copy says out loud that nothing they do is recorded, because a reviewer who thinks they are
+ * being graded reads differently from one who knows they are not.
+ */
+export async function sendCourseAuditInviteEmail(opts: {
+  tenant: TenantRecord;
+  courseTitle: string;
+  to: string;
+  inviteUrl: string;
+}): Promise<void> {
+  const brand = brandName(opts.tenant);
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.tenant.email.replyTo,
+    subject: `Please review "${opts.courseTitle}" on ${brand}`,
+    text:
+      `You've been invited to audit the course "${opts.courseTitle}" on ${brand} before it opens to learners.\n\n` +
+      `Open this link, then sign in with this email address:\n${opts.inviteUrl}\n\n` +
+      `You can read every lesson. Nothing you do is recorded: no progress, no quiz scores, no certificate. ` +
+      `Send your notes to whoever invited you.\n`,
+    // `/audit/<token>` GRANTS read access to a closed course → stripped from the Inbox mirror.
+    kind: "course-audit-invite",
+    tenant: opts.tenant.slug,
+  });
+}
+
 const ROLE_LABELS: Record<string, string> = {
   parent: "Parent",
   teacher: "Teacher",

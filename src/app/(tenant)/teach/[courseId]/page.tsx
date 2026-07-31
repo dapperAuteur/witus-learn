@@ -13,6 +13,7 @@ import { getCourseRecallStats } from "@/db/queries/recall";
 import { CourseSettingsForm } from "@/components/course-settings-form";
 import { LessonsManager } from "@/components/lessons-manager";
 import { LinkUsagePanel } from "@/components/link-usage-panel";
+import { CourseAuditorsPanel } from "@/components/course-auditors-panel";
 
 export const metadata: Metadata = { title: "Manage course" };
 
@@ -33,7 +34,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   // Sibling authoring links keep the readable slug when the course has one.
   const courseHref = `/teach/${course.slug ?? course.id}`;
 
-  const [lessons, owner, membership, categories, linkUsage, recallStats, modules, waiting] =
+  const [lessons, owner, membership, categories, linkUsage, recallStats, modules, waiting, auditors] =
     await Promise.all([
       listLessons(courseId),
       isPlatformOwner(session.user.id),
@@ -44,6 +45,8 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
       listModules(courseId),
       // Only an unvetted course has a notify-me form, so only it can have anyone waiting.
       isUnvetted(course) ? countCourseNotifySignups(sdb.tenantId, courseId) : Promise.resolve(0),
+      // Invite-to-audit grants (plans/52 section 5), read through the tenant-scoped DAL.
+      sdb.listCourseAuditors(courseId),
     ]);
 
   // Number lessons the way the learner sees them ("Module 2, Lesson 7: …") so the instructor can
@@ -173,6 +176,17 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             </p>
           )}
         </section>
+
+        <CourseAuditorsPanel
+          courseId={course.id}
+          isUnvetted={isUnvetted(course)}
+          initial={auditors.map((a) => ({
+            id: a.id,
+            email: a.email,
+            invitedAt: a.invitedAt,
+            acceptedAt: a.acceptedAt,
+          }))}
+        />
 
         <LinkUsagePanel rows={linkUsage} />
       </div>

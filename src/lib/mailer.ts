@@ -12,6 +12,7 @@ export type EmailKind =
   | "certificate"
   | "cohort-invite"
   | "guardian-invite"
+  | "course-audit-invite"
   | "pricing-inquiry"
   | "other";
 

@@ -21,16 +21,22 @@ const mocks = vi.hoisted(() => ({
   getLessonById: vi.fn(),
   recordRecallAttempt: vi.fn(),
   getCourseById: vi.fn(),
+  canEditCourse: vi.fn(),
+  auditorReadOnlyBlock: vi.fn(),
+  isEnrolled: vi.fn(),
 }));
 
 vi.mock("@/lib/api", () => ({
   apiContext: mocks.apiContext,
+  canEditCourse: mocks.canEditCourse,
+  auditorReadOnlyBlock: mocks.auditorReadOnlyBlock,
   json: (data: unknown, status = 200) => Response.json(data, { status }),
   errorJson: (error: string, status: number) => Response.json({ error }, { status }),
 }));
 vi.mock("@/lib/active-learner", () => ({ getActiveLearner: mocks.getActiveLearner }));
 vi.mock("@/db/queries/authoring", () => ({ getLessonById: mocks.getLessonById }));
 vi.mock("@/db/queries/recall", () => ({ recordRecallAttempt: mocks.recordRecallAttempt }));
+vi.mock("@/db/queries/enrollment", () => ({ isEnrolled: mocks.isEnrolled }));
 
 import { POST } from "@/app/api/courses/[id]/lessons/[lessonId]/recall/route";
 
@@ -61,7 +67,12 @@ beforeEach(() => {
   });
   // Default: the parent is studying as themselves.
   mocks.getActiveLearner.mockResolvedValue({ id: "parent-1", name: "Parent", isChild: false });
-  mocks.getCourseById.mockResolvedValue({ id: COURSE });
+  // Vetted by default: the auditor read-only check (below) is skipped entirely on a vetted course,
+  // so these cases exercise exactly the path an ordinary learner takes.
+  mocks.getCourseById.mockResolvedValue({ id: COURSE, vettedAt: new Date("2026-07-30T00:00:00Z") });
+  mocks.canEditCourse.mockResolvedValue(false);
+  mocks.isEnrolled.mockResolvedValue(true);
+  mocks.auditorReadOnlyBlock.mockResolvedValue(null);
   mocks.getLessonById.mockResolvedValue({ id: LESSON, courseId: COURSE, textContent: LESSON_BODY });
 });
 
@@ -122,6 +133,27 @@ describe("reveal identity — server-derived, verified against the lesson body",
       expect(res.status).toBe(400);
     }
     expect(mocks.recordRecallAttempt).not.toHaveBeenCalled();
+  });
+});
+
+describe("an invited auditor's self-grades are NEVER recorded", () => {
+  it("403s on an unvetted course and writes nothing to recall_attempts", async () => {
+    // plans/52 section 5: a reviewer clicking through a lesson to check it must not move the
+    // course's recall accuracy, which is a number the instructor is meant to trust.
+    mocks.getCourseById.mockResolvedValue({ id: COURSE, vettedAt: null });
+    mocks.isEnrolled.mockResolvedValue(false);
+    mocks.auditorReadOnlyBlock.mockResolvedValue(
+      Response.json({ error: "You are auditing this course, so your answers and progress are not recorded." }, { status: 403 }),
+    );
+    const res = await post({ prompt: QUESTION, gotIt: true });
+    expect(res.status).toBe(403);
+    expect(mocks.recordRecallAttempt).not.toHaveBeenCalled();
+  });
+
+  it("does not even ask on a VETTED course: a stale grant costs no query", async () => {
+    await post({ prompt: QUESTION, gotIt: true });
+    expect(mocks.auditorReadOnlyBlock).not.toHaveBeenCalled();
+    expect(mocks.recordRecallAttempt).toHaveBeenCalledTimes(1);
   });
 });
 
