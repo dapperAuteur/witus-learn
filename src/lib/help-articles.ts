@@ -158,6 +158,13 @@ whether learners get the lessons or a coming-soon page.`,
       "notify me",
       "bulk",
       "waiting list",
+      "leads",
+      "interest",
+      "demand",
+      "bundle",
+      "track",
+      "csv",
+      "export",
     ],
     body: `# Vetting a course
 
@@ -186,9 +193,26 @@ Marking a course vetted a second time does **not** change the date it was first 
 ## Who is waiting
 
 Open a course you have not vetted (**/teach → the course**) and the banner at the top says how many
-people asked to be told when it opens. The addresses themselves sit with every other lead at
-**/admin/leads**, labelled with the course they are waiting for, and each signup is also mirrored to
-the WitUS Inbox.`,
+people asked to be told when it opens.
+
+**The list itself lives at Admin → Interest & leads (\`/admin/leads\`).** That page opens on a demand
+board: how many distinct people are waiting, counted **by course**, **by learning track**, **by
+bundle**, and **by source**, highest first. That is the answer to "what should I vet next". Tap any
+line to filter the list below it to exactly those people, or use the **Filter** form to combine a
+course, a track, a bundle, and a source. Everything is in the address bar, so you can bookmark a
+view, share it, or print it.
+
+- A **track** filter picks up everyone waiting on **any** course in that series.
+- A **bundle** filter picks up everyone waiting on **any** course that bundle contains.
+- The **source** filter separates "waiting for a course" from an **/explore** pricing enquiry.
+- **Download this list as CSV** exports whatever is currently filtered, one row per person, ready to
+  paste into an email tool.
+
+Each signup is also mirrored to the WitUS Inbox.
+
+**Vetting a course does not email the people waiting for it.** Nothing is sent automatically, on
+purpose: you decide what that message says and when it goes out. Filter to the course, export the
+CSV, and send it yourself.`,
   },
   {
     slug: "quick-recall",

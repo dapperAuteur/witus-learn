@@ -63,6 +63,40 @@ export async function getBundleCourseIds(tenantId: string, bundleId: string): Pr
   return rows.map((r) => r.id);
 }
 
+/**
+ * Every bundle for a tenant with its member course ids, for the /admin/leads interest dashboard.
+ *
+ * Unpublished bundles are INCLUDED: a bundle BAM is still assembling is exactly the one he wants
+ * demand numbers for before he prices it. Both sides of the join are pinned to the tenant, so a
+ * bundle can never report another school's course as a member.
+ */
+export async function listBundleMemberships(
+  tenantId: string,
+): Promise<{ slug: string; title: string; courseIds: string[] }[]> {
+  const all = await db
+    .select()
+    .from(bundles)
+    .where(eq(bundles.tenantId, tenantId))
+    .orderBy(asc(bundles.title));
+  if (all.length === 0) return [];
+
+  const links = await db
+    .select({ bundleId: bundleCourses.bundleId, courseId: courses.id })
+    .from(bundleCourses)
+    .innerJoin(courses, eq(courses.id, bundleCourses.courseId))
+    .innerJoin(bundles, eq(bundles.id, bundleCourses.bundleId))
+    .where(and(eq(courses.tenantId, tenantId), eq(bundles.tenantId, tenantId)))
+    .orderBy(asc(bundleCourses.sortOrder));
+
+  const byBundle = new Map<string, string[]>();
+  for (const l of links) {
+    const list = byBundle.get(l.bundleId);
+    if (list) list.push(l.courseId);
+    else byBundle.set(l.bundleId, [l.courseId]);
+  }
+  return all.map((b) => ({ slug: b.slug, title: b.title, courseIds: byBundle.get(b.id) ?? [] }));
+}
+
 /** Cache the Stripe product/price on the bundle (mirrors updateCourse), tenant-scoped. */
 export async function updateBundleStripe(
   tenantId: string,

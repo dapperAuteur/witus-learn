@@ -1,7 +1,10 @@
 import "server-only";
-import { and, desc, eq, sql } from "drizzle-orm";
+import { and, asc, desc, eq, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { leads, type Lead, type LeadInquiry } from "@/db/schema/learning";
+import { courses } from "@/db/schema/courses";
+import { listBundleMemberships } from "@/db/queries/bundles";
+import { COURSE_NOTIFY_SOURCE, type InterestCourse } from "@/lib/lead-interest";
 
 /** Capture a lead (idempotent per tenant+email). */
 export async function addLead(input: {
@@ -57,8 +60,10 @@ export async function addLeadInquiry(input: {
     });
 }
 
-/** Marker for a "tell me when this course opens" signup inside `leads.inquiries`. */
-export const COURSE_NOTIFY_SOURCE = "course-notify";
+// The marker itself lives in the pure module (src/lib/lead-interest.ts) so the admin dashboard can
+// read it without importing a server-only file. Re-exported here because every existing caller
+// imports it from the queries module.
+export { COURSE_NOTIFY_SOURCE };
 
 /**
  * "Get notified when this course opens" from an unvetted course's public landing page.
@@ -123,8 +128,67 @@ export async function countCourseNotifySignups(tenantId: string, courseId: strin
   return row?.count ?? 0;
 }
 
-export async function listLeads(tenantId: string): Promise<Lead[]> {
-  return db.select().from(leads).where(eq(leads.tenantId, tenantId)).orderBy(desc(leads.createdAt)).limit(500);
+/**
+ * Every lead for one tenant, newest first.
+ *
+ * The LIMIT is a real ceiling, not a formality: the interest dashboard filters `inquiries` in JS
+ * (see the scale note at the top of src/lib/lead-interest.ts), so a school that outgrows this
+ * needs the jsonb index or the normalized table described there, NOT a bigger number here. The
+ * page says out loud when the ceiling was hit rather than quietly showing a truncated list.
+ */
+export const LEADS_PAGE_LIMIT = 1000;
+
+export async function listLeads(tenantId: string, limit = 500): Promise<Lead[]> {
+  return db
+    .select()
+    .from(leads)
+    .where(eq(leads.tenantId, tenantId))
+    .orderBy(desc(leads.createdAt))
+    .limit(limit);
+}
+
+/**
+ * The tenant's courses, reduced to what the interest dashboard needs to resolve the course and
+ * track filters. Tenant-scoped: this is the only set a filter can ever resolve against, so a
+ * client-supplied course id from another school matches nothing.
+ */
+export async function listInterestCourses(tenantId: string): Promise<InterestCourse[]> {
+  return db
+    .select({
+      id: courses.id,
+      title: courses.title,
+      seriesSlug: courses.seriesSlug,
+      seriesTitle: courses.seriesTitle,
+    })
+    .from(courses)
+    .where(eq(courses.tenantId, tenantId))
+    .orderBy(asc(courses.title));
+}
+
+/**
+ * Everything the interest dashboard reasons about, for ONE tenant, in one place.
+ *
+ * The page and the CSV export both call this, so they can never drift into filtering different
+ * data. `truncated` is true when the lead list hit its ceiling; the page says so rather than
+ * pretending the list is complete.
+ */
+export async function loadTenantInterest(tenantId: string): Promise<{
+  leads: Lead[];
+  courses: InterestCourse[];
+  bundles: { slug: string; title: string; courseIds: string[] }[];
+  truncated: boolean;
+}> {
+  const [rows, courseList, bundleList] = await Promise.all([
+    listLeads(tenantId, LEADS_PAGE_LIMIT),
+    listInterestCourses(tenantId),
+    listBundleMemberships(tenantId),
+  ]);
+  return {
+    leads: rows,
+    courses: courseList,
+    bundles: bundleList,
+    truncated: rows.length >= LEADS_PAGE_LIMIT,
+  };
 }
 
 /** Total captured leads for a tenant — the operator-overview headline number. */

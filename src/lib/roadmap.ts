@@ -501,7 +501,15 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   filters ride the existing \`/teach\` bulk mechanism (no new endpoint). Notify-me signups reuse the
   existing \`leads\` funnel (\`leads.inquiries\`, so no second table and no extra migration), are mirrored
   to the WitUS Inbox as \`learn-course-notify\`, counted on the course's own manage page, and read in
-  full at \`/admin/leads\`.
+  full at \`/admin/leads\`, which is now an **interest dashboard**: a demand board counting distinct
+  people by **course**, by **learning track** (\`series_slug\`), by **bundle** (anyone waiting on any
+  course the bundle contains) and by **source** (so "wants this course" reads apart from "asked about
+  pricing"), each line linking to its own filtered list. Filters are plain \`searchParams\` on a GET
+  form, like \`/academic-standards\`, so every view is shareable and printable, and
+  **\`/api/admin/leads.csv\`** exports exactly the current filter, one row per person, for pasting into
+  an email tool. Filters resolve only against the requesting tenant's own courses and bundles, so an
+  id from another school selects nobody. **Vetting a course does NOT auto-email its waiting list**
+  (BAM's decision): the list is his to mail when he chooses.
 - 🔧 **Platform + demo landing pages** (\`feat/platform-demo-landing\`): two public marketing pages,
   shown only on Learn.WitUS itself (\`tenant.flags.recruiting\`, 404 elsewhere so a white-label school
   never advertises the platform underneath it): **\`/platform\`** pitches Learn.WitUS as a product for
