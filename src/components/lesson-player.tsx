@@ -23,11 +23,14 @@ export function LessonPlayer({
   resumeAt = 0,
   trackPlayback = false,
   trackRecall = false,
+  readOnly = false,
 }: {
   lesson: Lesson;
   resumeAt?: number;
   trackPlayback?: boolean;
   trackRecall?: boolean;
+  /** Auditor view (plans/52 section 5): read everything, record nothing. */
+  readOnly?: boolean;
 }) {
   // Only a signed-in learner has a position worth saving; signed out, the player is untracked.
   const track = trackPlayback ? { courseId: lesson.courseId, lessonId: lesson.id, resumeAt } : {};
@@ -113,7 +116,7 @@ export function LessonPlayer({
       // Strips correctIndex before it reaches the client AND resolves questionsPerAttempt through
       // the catalog-wide 10-question cap — every quiz in every course is served through here.
       const safe = toSafeQuiz(c);
-      return <QuizPlayer courseId={lesson.courseId} lessonId={lesson.id} content={safe} />;
+      return <QuizPlayer courseId={lesson.courseId} lessonId={lesson.id} content={safe} readOnly={readOnly} />;
     }
 
     case "exercise": {

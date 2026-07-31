@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { apiContext, canEditCourse, errorJson, json } from "@/lib/api";
+import { apiContext, auditorReadOnlyBlock, canEditCourse, errorJson, json } from "@/lib/api";
 import { getLessonById, listLessons } from "@/db/queries/authoring";
 import { getCompletedLessonIds, upsertProgress } from "@/db/queries/progress";
 import { isEnrolled } from "@/db/queries/enrollment";
@@ -30,9 +30,15 @@ export async function POST(req: Request, { params }: Params) {
   const all = await listLessons(id);
   const ordered = (isEditor ? all : all.filter((l) => l.isPublished)).map((l) => l.id);
   const completed = new Set(await getCompletedLessonIds(learner.id, id));
+  const enrolled = await isEnrolled(learner.id, id);
+  // An invited auditor may READ this course and may record nothing (plans/52 §5).
+  const blocked = await auditorReadOnlyBlock({ session, tenantId: sdb.tenantId, course, isEditor, isEnrolled: enrolled });
+  if (blocked) return blocked;
+  // `isAuditor` is deliberately NOT passed: this route writes, so an auditor must fail the read
+  // gate here too, and the block above is the message rather than the only defence.
   const access = lessonAccess(course, lesson, {
     isEditor,
-    isEnrolled: await isEnrolled(learner.id, id),
+    isEnrolled: enrolled,
     completedLessonIds: completed,
     orderedLessonIds: ordered,
   });

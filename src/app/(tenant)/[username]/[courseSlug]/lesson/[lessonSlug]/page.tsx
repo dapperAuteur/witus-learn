@@ -66,9 +66,14 @@ export default async function LessonPage({ params }: Params) {
   const access = lessonAccess(view.course, lesson, {
     isEditor: view.isEditor,
     isEnrolled: view.isEnrolled,
+    isAuditor: view.isAuditor,
     completedLessonIds: view.completedLessonIds,
     orderedLessonIds: view.orderedLessonIds,
   });
+  // An invited auditor (plans/52 section 5) READS this lesson and records nothing. Every write is
+  // refused server-side; hiding the write controls here is so the page never offers a button that
+  // can only fail, and says plainly that nothing is being kept.
+  const canRecord = Boolean(view.session) && !view.isAuditor;
 
   const idx = view.lessons.findIndex((l) => l.id === lesson.id);
   const prev = idx > 0 ? view.lessons[idx - 1] : null;
@@ -236,15 +241,16 @@ export default async function LessonPage({ params }: Params) {
                 when a parent is studying as one), so Continue can point at the lesson they were
                 really on instead of the first gap in the syllabus. Never a completion. Signed-out
                 learners simply don't render it — no ping, no error. */}
-            {view.session ? <LessonViewPing courseId={view.course.id} lessonId={lesson.id} /> : null}
+            {canRecord ? <LessonViewPing courseId={view.course.id} lessonId={lesson.id} /> : null}
             {/* Open with recall: quiz the PREVIOUS lesson before this one's content. */}
-            {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 ? (
+            {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 && canRecord ? (
               <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
             ) : null}
             <LessonPlayer
               lesson={lesson}
-              trackPlayback={Boolean(view.session)}
-              trackRecall={Boolean(view.session)}
+              trackPlayback={canRecord}
+              trackRecall={canRecord}
+              readOnly={view.isAuditor}
               resumeAt={view.watchSeconds.get(lesson.id) ?? 0}
             />
             <SaveOfflineButton
@@ -255,7 +261,12 @@ export default async function LessonPage({ params }: Params) {
             />
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
             <div className="mt-6">
-              {view.session ? (
+              {view.isAuditor ? (
+                <p className="rounded-lg border border-sky-300 bg-sky-50 p-4 text-sm text-sky-900 dark:border-sky-800 dark:bg-sky-950/40 dark:text-sky-200">
+                  You are reviewing this course. Nothing here is recorded: no progress, no quiz
+                  scores, no certificate. Send your notes to whoever invited you.
+                </p>
+              ) : view.session ? (
                 <MarkCompleteButton
                   courseId={view.course.id}
                   lessonId={lesson.id}
@@ -269,7 +280,7 @@ export default async function LessonPage({ params }: Params) {
                 </Link>
               )}
             </div>
-            {lesson.lessonType === "assignment" && view.session ? (
+            {lesson.lessonType === "assignment" && canRecord ? (
               <AssignmentSubmit
                 courseId={view.course.id}
                 lessonId={lesson.id}

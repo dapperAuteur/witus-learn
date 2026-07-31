@@ -1,4 +1,4 @@
-import { apiContext, errorJson, json } from "@/lib/api";
+import { apiContext, auditorReadOnlyBlock, canEditCourse, errorJson, json } from "@/lib/api";
 import { enrollFree, isEnrolled } from "@/db/queries/enrollment";
 import { getUnmetRequired } from "@/db/queries/prerequisites";
 import {
@@ -30,6 +30,18 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
   if (await isEnrolled(learner.id, id)) {
     return json({ enrolled: true });
   }
+
+  // An invited auditor (plans/52 section 5) was asked to REVIEW this unvetted course, not to take
+  // it. Enrolling would turn a read-only grant into a learner record, which is the one thing the
+  // audit seat is designed not to be, so it is refused here as well as hidden in the UI.
+  const auditorBlocked = await auditorReadOnlyBlock({
+    session,
+    tenantId: sdb.tenantId,
+    course,
+    isEditor: await canEditCourse(session, sdb.tenantId, course),
+    isEnrolled: false,
+  });
+  if (auditorBlocked) return auditorBlocked;
 
   const unmet = await getUnmetRequired(learner.id, id);
   if (unmet.length > 0) {

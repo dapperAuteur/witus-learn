@@ -6,7 +6,8 @@ import { getCourseBySlug, listLessons } from "@/db/queries/authoring";
 import { getCourseProgressSummary } from "@/db/queries/progress";
 import { isEnrolled as checkEnrolled } from "@/db/queries/enrollment";
 import { canAccessCourse } from "@/lib/api";
-import { canSeeUnvettedContent, courseViewGate } from "@/lib/vetting";
+import { canSeeUnvettedContent, courseViewGate, isUnvetted } from "@/lib/vetting";
+import { isCourseAuditor } from "@/db/queries/course-auditors";
 import { getSession, isPlatformOwner } from "@/lib/session";
 import { getActiveLearner } from "@/lib/active-learner";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
@@ -22,6 +23,10 @@ export interface CourseView {
   activeLearnerId: string | null;
   isEditor: boolean;
   isEnrolled: boolean;
+  /** True when this viewer is an ACCEPTED auditor of this course (plans/52 §5): they may READ an
+   *  unvetted course's lessons and may write nothing. Pages use it to hide every write control
+   *  (mark complete, enroll, submit) and to say out loud that nothing is being recorded. */
+  isAuditor: boolean;
   /** True when the course is UNVETTED (`vetted_at IS NULL`) and this viewer isn't the owner,
    *  its instructor or an enrollee. The page must render the public "Coming soon" landing face:
    *  title, description, standards, share card, and nothing else. `lessons` and `modules` are
@@ -76,16 +81,28 @@ export async function loadCourseView(
   // course's own instructor OR an enrollee, never a brand_admin (the same reasoning that keeps
   // a private course away from brand_admins). Enrollment is the ACTIVE learner's, so a parent
   // studying as a child sees exactly what that child may see. An invited auditor (plans/52 §5)
-  // plugs in as canSeeUnvettedContent's `isAuditor` and needs no change here or at any page.
+  // plugs in as canSeeUnvettedContent's `isAuditor`, and no page had to change for it.
   const isOwnerOrInstructor = session
     ? course.instructorId === session.user.id || (await isPlatformOwner(session.user.id))
     : false;
+  // The audit grant belongs to the SIGNED-IN account, not the active learner: a grant is issued to
+  // a person who was asked to review the course, and a managed child studying under it is not that
+  // person. Only asked for when it could change the answer, so the common paths cost no query.
+  const isAuditor =
+    session && !isOwnerOrInstructor && !enrolled && isUnvetted(course)
+      ? await isCourseAuditor({
+          tenantId: tenant.id,
+          courseId: course.id,
+          userId: session.user.id,
+          email: session.user.email ?? null,
+        })
+      : false;
   const gate = courseViewGate({
     isPublished: course.isPublished,
     visibility: course.visibility,
     vettedAt: course.vettedAt,
     isEditor,
-    canSeeUnvetted: canSeeUnvettedContent({ isOwnerOrInstructor, isEnrolled: enrolled }),
+    canSeeUnvetted: canSeeUnvettedContent({ isOwnerOrInstructor, isEnrolled: enrolled, isAuditor }),
   });
   if (gate === "not-found") return null;
   const isComingSoon = gate === "coming-soon";
@@ -110,6 +127,7 @@ export async function loadCourseView(
     activeLearnerId: learner?.id ?? null,
     isEditor,
     isEnrolled: enrolled,
+    isAuditor,
     isComingSoon,
     lessons,
     modules,

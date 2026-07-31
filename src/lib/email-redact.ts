@@ -33,7 +33,7 @@ const SECRET_PARAM_RE = /(token|secret|code|otp|passcode|password|pwd|pin|key|jw
 /** Path prefixes that are token-redemption endpoints by construction. Anything under these is
  *  redacted whether or not the token itself "looks" random. */
 const SECRET_PATH_RE =
-  /^\/(api\/auth|join|invite|accept|family\/accept|reset|reset-password|set-password|magic-link|confirm|activate|unsubscribe)(\/|$)/i;
+  /^\/(api\/auth|join|invite|accept|audit|family\/accept|reset|reset-password|set-password|magic-link|confirm|activate|unsubscribe)(\/|$)/i;
 
 /** A path segment that looks like a generated token: long, and drawn from the alphabet our token
  *  generators actually use (hex / base64url / nanoid). Deliberately loose — a real URL slug this

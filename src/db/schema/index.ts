@@ -19,3 +19,4 @@ export * from "./kid-login";
 export * from "./api-keys";
 export * from "./future-work";
 export * from "./bundles";
+export * from "./auditors";

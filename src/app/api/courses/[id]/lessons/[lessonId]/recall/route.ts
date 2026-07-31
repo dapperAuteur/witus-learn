@@ -1,7 +1,9 @@
 import { z } from "zod";
-import { apiContext, errorJson, json } from "@/lib/api";
+import { apiContext, auditorReadOnlyBlock, canEditCourse, errorJson, json } from "@/lib/api";
 import { getLessonById } from "@/db/queries/authoring";
 import { recordRecallAttempt } from "@/db/queries/recall";
+import { isEnrolled } from "@/db/queries/enrollment";
+import { isUnvetted } from "@/lib/vetting";
 import { getActiveLearner } from "@/lib/active-learner";
 import { matchReveal, revealPromptIndex } from "@/lib/reveals";
 
@@ -37,6 +39,21 @@ export async function POST(req: Request, { params }: Params) {
   if (!course) return errorJson("Not found", 404);
   const lesson = await getLessonById(sdb.tenantId, lessonId);
   if (!lesson || lesson.courseId !== id) return errorJson("Not found", 404);
+
+  // An invited auditor (plans/52 section 5) reads this course read-only: their self-grades must
+  // never reach recall_attempts, or the course's recall statistics measure a reviewer clicking
+  // through rather than a learner remembering. Only an UNVETTED course can have auditors, so the
+  // two extra reads below are skipped entirely on every ordinary course.
+  if (isUnvetted(course)) {
+    const blocked = await auditorReadOnlyBlock({
+      session,
+      tenantId: sdb.tenantId,
+      course,
+      isEditor: await canEditCourse(session, sdb.tenantId, course),
+      isEnrolled: await isEnrolled(learner.id, id),
+    });
+    if (blocked) return blocked;
+  }
 
   const parsed = Schema.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return errorJson("Invalid input", 400);

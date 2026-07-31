@@ -165,6 +165,11 @@ whether learners get the lessons or a coming-soon page.`,
       "track",
       "csv",
       "export",
+      "audit",
+      "auditor",
+      "review",
+      "reviewer",
+      "invite",
     ],
     body: `# Vetting a course
 
@@ -212,7 +217,28 @@ Each signup is also mirrored to the WitUS Inbox.
 
 **Vetting a course does not email the people waiting for it.** Nothing is sent automatically, on
 purpose: you decide what that message says and when it goes out. Filter to the course, export the
-CSV, and send it yourself.`,
+CSV, and send it yourself.
+
+## Inviting someone to review a course before it opens
+
+Open the course at **/teach → the course** and scroll to **"Invite someone to review this course"**.
+Enter an email address and send. The invitee gets a link (and you get the same link on screen, so you
+can send it yourself if you prefer). When they follow it and sign in **with that address**, they see
+the real course instead of the "Coming soon" page.
+
+A reviewer can read **every lesson of that one course**, and nothing else. In particular:
+
+- An invitation that has **not been accepted** yet grants nothing at all.
+- A reviewer of one course cannot see any other course, vetted or not.
+- Reviewers are **read-only**. They cannot enroll, cannot earn a certificate, and **nothing they do is
+  recorded**: no progress, no quiz scores, no recall grades. That is deliberate, so a reviewer
+  clicking through a quiz to check its wording never moves the course's statistics or your dashboard
+  averages. The pages say so plainly, so nobody thinks they are being graded.
+- Once you mark the course **vetted**, the invitation stops mattering: the course is open to its
+  normal audience, and the reviewer is an ordinary visitor again.
+
+**Remove** next to a name revokes access, and it takes effect immediately. If someone loses their
+link, invite the same address again, that mints a fresh link and replaces the old one.`,
   },
   {
     slug: "quick-recall",

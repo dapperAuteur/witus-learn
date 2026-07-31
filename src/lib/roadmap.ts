@@ -510,6 +510,24 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   an email tool. Filters resolve only against the requesting tenant's own courses and bundles, so an
   id from another school selects nobody. **Vetting a course does NOT auto-email its waiting list**
   (BAM's decision): the list is his to mail when he chooses.
+- 🔧 **Invite-to-audit** (\`feat/course-auditors\`, **migration 0042**): the last open seat in plans/52.
+  The owner, or a course's own instructor, invites an email from the course's \`/teach/<course>\` page;
+  the invitee follows a link, accepts, signs in with that address, and can then **read every lesson of
+  that ONE unvetted course** while everyone else still sees the public "Coming soon" page. The gate
+  needed no restructure: \`canSeeUnvettedContent\` already took an \`isAuditor\` flag, so the whole
+  feature is a new \`course_auditors\` table plus resolving that flag in the two places that compose it
+  (\`canSeeUnvettedCourse\` and \`loadCourseView\`). A **pending** invite grants nothing: only
+  \`accepted_at\` opens the course. Grants are per **tenant** and per **course**, matched by user id OR
+  the invited address, so an auditor of course A is a stranger to course B and a grant in one school
+  can never open a course in another. **Auditors are READ-ONLY, and that is the load-bearing half**:
+  no enrolling, no certificate, no progress, and **no recorded quiz or recall attempts**, enforced in
+  every write route (quiz, recall, progress, submission, enroll, complete), so a reviewer clicking
+  through a quiz to check its wording never moves that quiz's statistics or any dashboard average
+  built on them (the same reasoning as the quiz-integrity rule). The UI never offers a control that
+  can only fail: the course page shows a review notice instead of an enroll button, the lesson page
+  hides mark-complete, recall and assignment submission, and the quiz renders every question with
+  "this quiz is not scored". A grant confers **nothing once the course is vetted**, so a forgotten
+  invite is not free access forever. Revoke is one click and takes effect on the next request.
 - 🔧 **Platform + demo landing pages** (\`feat/platform-demo-landing\`): two public marketing pages,
   shown only on Learn.WitUS itself (\`tenant.flags.recruiting\`, 404 elsewhere so a white-label school
   never advertises the platform underneath it): **\`/platform\`** pitches Learn.WitUS as a product for

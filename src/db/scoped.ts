@@ -11,6 +11,12 @@ import {
   type CatalogQuery,
 } from "@/db/queries/catalog";
 import { markCoursesAnnounced } from "@/db/queries/announce";
+import {
+  inviteCourseAuditor,
+  isCourseAuditor,
+  listCourseAuditors,
+  revokeCourseAuditor,
+} from "@/db/queries/course-auditors";
 
 /**
  * The mandatory tenant-scoped data-access chokepoint.
@@ -77,6 +83,30 @@ export class ScopedDb {
   /** Stamp `announced_at` on the given courses (tenant-scoped). Returns the ids updated. */
   markCoursesAnnounced(courseIds: string[], at: Date = new Date()) {
     return markCoursesAnnounced(this.tenantId, courseIds, at);
+  }
+
+  // ── Invite-to-audit (plans/52 §5) ──────────────────────────────────────────
+  // Read-only grants on ONE unvetted course. Scoped here like every other content read, so no
+  // route can list, mint, or revoke a grant outside its own tenant.
+
+  /** Auditors invited to one of THIS tenant's courses. */
+  listCourseAuditors(courseId: string) {
+    return listCourseAuditors(this.tenantId, courseId);
+  }
+
+  /** Invite (or re-invite, refreshing the token) an email to audit one of this tenant's courses. */
+  inviteCourseAuditor(input: { courseId: string; email: string; invitedBy: string }) {
+    return inviteCourseAuditor({ tenantId: this.tenantId, ...input });
+  }
+
+  /** Revoke a grant. A grant id from another tenant or another course deletes nothing. */
+  revokeCourseAuditor(courseId: string, auditorId: string) {
+    return revokeCourseAuditor(this.tenantId, courseId, auditorId);
+  }
+
+  /** Is this person an ACCEPTED auditor of this course, in this tenant? */
+  isCourseAuditor(input: { courseId: string; userId: string | null; email: string | null }) {
+    return isCourseAuditor({ tenantId: this.tenantId, ...input });
   }
 }
 
