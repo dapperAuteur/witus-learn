@@ -410,8 +410,11 @@ function StateView({
   const shown = filterGroups(groups, { subject, courseSlug: course?.slug });
 
   const stats = summarizeStandards(shown);
+  // The unfiltered totals, so a narrowed list can say what it was narrowed FROM.
+  const allStats = summarizeStandards(groups);
   const plainText = toPlainText(shown, brand);
   const filtered = Boolean(subject || course);
+  const canFilter = subjects.length > 1 || courses.length > 1;
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8 sm:py-10">
@@ -455,6 +458,41 @@ function StateView({
           ))}
         </dl>
 
+        {/* The filter STATUS lives up here, next to the numbers it explains, because the filter
+            CONTROLS now sit below the standards. Someone who arrives on a filtered link (every
+            course page links here as ?state=..&course=..) has to learn in the first screenful that
+            the counts above are a narrowed view, not the whole state. It is deliberately not
+            print:hidden: a printed filing must say what it left out. Only the reset link, useless
+            on paper, is hidden. */}
+        {filtered ? (
+          <p
+            className="mt-5 rounded-xl border-2 px-4 py-3 text-sm leading-relaxed"
+            style={{ borderColor: "var(--accent)" }}
+            aria-live="polite"
+          >
+            <strong>This list is filtered.</strong> Showing {stats.total} standard
+            {stats.total === 1 ? "" : "s"}
+            {subject ? ` in ${subject}` : ""}
+            {course ? ` covered by ${course.title}` : ""}, out of {allStats.total} mapped for{" "}
+            {name}.{" "}
+            <Link href={href({ state })} className={`${textLink} print:hidden`} style={accent}>
+              Clear filters
+            </Link>
+          </p>
+        ) : null}
+
+        {canFilter ? (
+          <p className="mt-4 print:hidden">
+            <a
+              href="#narrow"
+              className={`${textLink} inline-flex min-h-11 items-center text-sm pointer-coarse:min-h-12`}
+              style={accent}
+            >
+              {filtered ? "Change the filters" : "Narrow by subject or course"} ↓
+            </a>
+          </p>
+        ) : null}
+
         <StandardsActions plainText={plainText} />
       </header>
 
@@ -493,91 +531,17 @@ function StateView({
         </ul>
       </section>
 
-      {/* Filters: plain links, so the page stays server-rendered, shareable, and printable. */}
-      <section className="mt-8 print:hidden" aria-label="Filter the alignment">
-        {subjects.length > 1 ? (
-          <div>
-            <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
-              Subject
-            </h2>
-            <ul className="mt-2 flex flex-wrap gap-2">
-              <li>
-                <Link
-                  href={href({ state, course: course?.slug })}
-                  className={subject === undefined ? chipActive : chipIdle}
-                  aria-current={subject === undefined ? "true" : undefined}
-                >
-                  All subjects
-                </Link>
-              </li>
-              {subjects.map((s) => (
-                <li key={s}>
-                  <Link
-                    href={href({ state, subject: subjectSlug(s), course: course?.slug })}
-                    className={subject === s ? chipActive : chipIdle}
-                    aria-current={subject === s ? "true" : undefined}
-                  >
-                    {s}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : null}
-
-        {courses.length > 1 ? (
-          <details className="mt-4" open={course !== undefined}>
-            <summary className="inline-flex min-h-11 cursor-pointer list-none items-center text-sm font-medium underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12">
-              {course ? `Filtering by course: ${course.title}` : "Filter by course"}
-            </summary>
-            <ul className="mt-3 flex flex-wrap gap-2">
-              <li>
-                <Link
-                  href={href({ state, subject: subject && subjectSlug(subject) })}
-                  className={course === undefined ? chipActive : chipIdle}
-                  aria-current={course === undefined ? "true" : undefined}
-                >
-                  All courses
-                </Link>
-              </li>
-              {courses.map((c) => (
-                <li key={c.slug}>
-                  <Link
-                    href={href({
-                      state,
-                      subject: subject && subjectSlug(subject),
-                      course: c.slug,
-                    })}
-                    className={course?.slug === c.slug ? chipActive : chipIdle}
-                    aria-current={course?.slug === c.slug ? "true" : undefined}
-                  >
-                    {c.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </details>
-        ) : null}
-
-        {filtered ? (
-          <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400" aria-live="polite">
-            Showing {stats.total} standard{stats.total === 1 ? "" : "s"}
-            {subject ? ` in ${subject}` : ""}
-            {course ? ` covered by ${course.title}` : ""}.{" "}
-            <Link href={href({ state })} className={textLink} style={accent}>
-              Clear filters
-            </Link>
-          </p>
-        ) : null}
-      </section>
-
       {shown.length === 0 ? (
         <p className="mt-10 text-neutral-600 dark:text-neutral-400">
           No standards match that combination of filters.{" "}
           <Link href={href({ state })} className={textLink} style={accent}>
             Clear the filters
           </Link>{" "}
-          to see all {name} standards.
+          to see all {name} standards, or{" "}
+          <a href="#narrow" className={textLink} style={accent}>
+            change your selection below
+          </a>
+          .
         </p>
       ) : null}
 
@@ -666,6 +630,105 @@ function StateView({
       ))}
 
       <NotClaimed state={state} />
+
+      {/* THE FILTERS, below the standards on purpose. A teacher who lands on their state wants to
+          see standards, not controls: refinement is what you reach for after you have seen what is
+          there. They stay plain links driven by searchParams, so every filtered view is still a
+          server-rendered URL a reader can share, bookmark, and print, and print:hidden keeps them
+          off a state filing. Following one of these links scrolls back to the top of the page,
+          which is what we want: the filtered notice in the header explains the new counts.
+          tabIndex={-1} on the section so the jump link in the header moves keyboard FOCUS here,
+          not just the scroll position, the same reason a skip link carries one. */}
+      {canFilter ? (
+        <section
+          id="narrow"
+          tabIndex={-1}
+          className="mt-12 print:hidden"
+          aria-labelledby="narrow-heading"
+        >
+          <h2 id="narrow-heading" className="text-2xl font-bold">
+            Narrow this list
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
+            Filtering rewrites the address bar, so you can bookmark or send a colleague exactly the
+            slice you are looking at.
+          </p>
+
+          {subjects.length > 1 ? (
+            <div className="mt-5">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                Subject
+              </h3>
+              <ul className="mt-2 flex flex-wrap gap-2">
+                <li>
+                  <Link
+                    href={href({ state, course: course?.slug })}
+                    className={subject === undefined ? chipActive : chipIdle}
+                    aria-current={subject === undefined ? "true" : undefined}
+                  >
+                    All subjects
+                  </Link>
+                </li>
+                {subjects.map((s) => (
+                  <li key={s}>
+                    <Link
+                      href={href({ state, subject: subjectSlug(s), course: course?.slug })}
+                      className={subject === s ? chipActive : chipIdle}
+                      aria-current={subject === s ? "true" : undefined}
+                    >
+                      {s}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
+          {courses.length > 1 ? (
+            <details className="mt-5" open={course !== undefined}>
+              <summary className="inline-flex min-h-11 cursor-pointer list-none items-center text-sm font-medium underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12">
+                {course ? `Filtering by course: ${course.title}` : "Filter by course"}
+              </summary>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                <li>
+                  <Link
+                    href={href({ state, subject: subject && subjectSlug(subject) })}
+                    className={course === undefined ? chipActive : chipIdle}
+                    aria-current={course === undefined ? "true" : undefined}
+                  >
+                    All courses
+                  </Link>
+                </li>
+                {courses.map((c) => (
+                  <li key={c.slug}>
+                    <Link
+                      href={href({
+                        state,
+                        subject: subject && subjectSlug(subject),
+                        course: c.slug,
+                      })}
+                      className={course?.slug === c.slug ? chipActive : chipIdle}
+                      aria-current={course?.slug === c.slug ? "true" : undefined}
+                    >
+                      {c.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ) : null}
+
+          {filtered ? (
+            <p className="mt-5 text-sm text-neutral-600 dark:text-neutral-400">
+              Showing {stats.total} of {allStats.total} {name} standard
+              {allStats.total === 1 ? "" : "s"}.{" "}
+              <Link href={href({ state })} className={textLink} style={accent}>
+                Clear filters
+              </Link>
+            </p>
+          ) : null}
+        </section>
+      ) : null}
 
       <section className="mt-12 rounded-2xl border border-neutral-200 p-6 dark:border-neutral-800 print:hidden">
         <h2 className="text-xl font-bold">See it for yourself</h2>

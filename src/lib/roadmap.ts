@@ -2136,6 +2136,22 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   **name the Pennsylvania Constitution** (5.1.12.D/E), giving that flagship a better home than CA/NY.
   \`state-civics-ny\`/\`state-civics-pa\` flagship claims added to \`claims.ts\`. Gates green
   (tsc/lint/test/build all 0). **No migration, no seed.** Next up flagged: **Texas, Florida.**
+- 🔧 **Standards before filters** (\`feat/standards-above-filters\`): on a mapped state page
+  (\`/academic-standards?state=XX\`) the alignment itself now sits **above** the filter controls. A
+  teacher who picks their state used to scroll past subject chips and a by-course \`<details>\` before
+  seeing a single standard; filters are refinement, not content. New order: header (state, intro,
+  the four count tiles, print/copy) → the **honesty disclaimer**, still above every claim, because a
+  teacher acting on a stale mapping is the harm this page can do → **the standards** → "What we
+  don't claim" → **"Narrow this list"** (the filters, with a \`#narrow\` jump link beside the count
+  tiles so a reader who wants to narrow does not hunt) → the CTA. The "showing N standards" feedback
+  moved **into the header** as an accented **"This list is filtered. Showing N ... out of M mapped
+  for <state>"** notice, so anyone arriving on a filtered link (every course page links here as
+  \`?state=..&course=..\`) learns in the first screenful that the counts are a narrowed view; it is
+  deliberately **not** \`print:hidden\` (a printed filing must say what it left out), only its reset
+  link is. Filters stay plain \`searchParams\` links, so every view is still server-rendered,
+  shareable, bookmarkable and \`print:hidden\`. Tenant scoping untouched: \`getAlignedCourses\` is
+  still the boundary and \`filterGroups\` still only narrows what \`scopeAlignments\` allowed. Scope is
+  the per-state view only; the picker and the matrix are unchanged. **No migration, no seed.**
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
