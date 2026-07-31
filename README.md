@@ -56,6 +56,31 @@ field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.
 consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
 `/embed/course/[id]` iframe view is also available for embedding without calling the API directly.
 
+## Health check (`/api/health`)
+
+**Point the uptime monitor here, not at the homepage.** A monitor on `/` can return 200 from a CDN
+cache while Neon is down, so the site looks up while nobody can log in or load a lesson.
+`GET /api/health` runs the cheapest possible liveness query (`select 1`) against the database on
+every request and answers:
+
+| Result | Status | Body |
+| --- | --- | --- |
+| Database answered | `200` | `{"ok":true,"checks":{"db":"ok"}}` |
+| Database refused / errored | `503` | `{"ok":false,"error":"database_unreachable","checks":{"db":"fail"}}` |
+| Database hung past 4s | `503` | `{"ok":false,"error":"database_timeout","checks":{"db":"fail"}}` |
+
+Public and unauthenticated (a monitor cannot log in), so the payload is deliberately minimal: no
+version, no env values, no counts, no tenant names, no user data. **The caught error never reaches
+the response**, only one of the two fixed reason tokens above, because a Neon connection failure
+routinely carries `DATABASE_URL` (password included) in its message. The failure is logged
+server-side through Sentry instead. Responses are `Cache-Control: no-store` and the route is
+`force-dynamic`.
+
+It is **tenant-agnostic on purpose**: it never calls the tenant resolver, so an unknown host, a raw
+`*.vercel.app` deployment URL, or a domain mid-DNS-cutover cannot make a healthy app read as down.
+It answers "app + database alive", never "this brand exists". Covered by
+[tests/health-route.test.ts](tests/health-route.test.ts).
+
 ## Vetting and "Coming soon" (`courses.vetted_at`)
 
 `courses.vetted_at` records that the **platform owner** personally reviewed a course against its

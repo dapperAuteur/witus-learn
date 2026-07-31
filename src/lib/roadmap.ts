@@ -138,6 +138,15 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
   \`onRequestError\` tags the request host (how tenants resolve) and a \`beforeSend\` scrub reuses
   \`redactSecrets\` so no learner email or magic-link token ever leaves for the vendor.
+- ✅ **Uptime health check** (\`feat/health-endpoint\`): \`GET /api/health\` is the endpoint an uptime
+  monitor (Better Stack) should poll instead of the homepage, which can serve a cached 200 while Neon
+  is down. It runs \`select 1\` on every request: **200** \`{"ok":true,"checks":{"db":"ok"}}\`, or **503**
+  with \`error:"database_unreachable"\` / \`"database_timeout"\` (4s cap, so a hung DB fails fast instead
+  of holding the request open). Public and unauthenticated, so the payload carries nothing else, and
+  the **caught error is never echoed**: a Neon failure routinely embeds \`DATABASE_URL\` with its
+  password, so only a fixed reason token is returned and the error goes to Sentry instead.
+  Deliberately **tenant-agnostic** (no tenant resolver), so an unknown host or a \`*.vercel.app\` URL
+  cannot read as down. \`force-dynamic\` + \`Cache-Control: no-store\`. No migration.
 - ✅ **Standards growth funnel** (\`feat/standards-growth-funnel\`): turns the (already all-51-state)
   standards alignment into a discoverable SEO funnel. The **sitemap** now lists one indexable URL per
   jurisdiction THIS tenant is aligned to (plus the finder, the matrix, courses, and explore), so a
