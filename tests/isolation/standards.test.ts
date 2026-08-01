@@ -7,15 +7,20 @@ import {
   NEXT_UP,
   STANDARDS_FETCHED_ON,
   allAlignedCourseSlugs,
+  courseJurisdictions,
   coursesIn,
   filterGroups,
   isStateCode,
   mappedStates,
   scopeAlignments,
+  standardsForCourse,
+  standardsHref,
   subjectsIn,
   summarizeStandards,
   toPlainText,
   type AlignedCourseLike,
+  type ScopedFramework,
+  type StateCode,
 } from "@/lib/standards";
 
 // /standards tells teachers — and homeschooling parents who may FILE IT WITH A STATE — which
@@ -391,5 +396,124 @@ describe("standards are tenant-scoped — a school can only claim what it actual
     expect(text).toContain("confirm against your jurisdiction's current requirements");
     expect(text).not.toContain("tobacco");
     expect(text).not.toContain("opioids");
+  });
+});
+
+// ─────────────────────────────────────────────────────────────────────────────
+// /academic-standards?course=<slug> with NO ?state=.
+//
+// This is the link every course page emits ("See the full standards detail for this course"),
+// and it used to land on the generic state chooser, which ignored ?course= entirely: someone who
+// asked "where does THIS course count?" was answered with "here are 51 states". The state-less
+// view now resolves the course through the SAME tenant boundary as everything else, and the
+// dangerous failure mode is the one guarded hardest below: a slug this tenant does not publish
+// must resolve to nothing, never to another brand's data and never to "everything".
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** What the page computes before it decides which view to render. */
+function finder(available: Map<string, AlignedCourseLike>): {
+  allGroups: ScopedFramework[];
+  statesHere: { code: StateCode; groups: ScopedFramework[] }[];
+} {
+  return {
+    allGroups: scopeAlignments(available),
+    statesHere: mappedStates()
+      .map((code) => ({ code, groups: scopeAlignments(available, code) }))
+      .filter((s) => s.groups.length > 0),
+  };
+}
+
+/** The page's ?course= resolution step, verbatim: resolve against the SCOPED courses only. */
+function resolveCourse(allGroups: ScopedFramework[], raw: string | undefined) {
+  if (!raw) return undefined;
+  return coursesIn(allGroups).find((c) => c.slug === raw);
+}
+
+describe("?course= with no ?state= — the course-scoped picker", () => {
+  it("resolves to that course's OWN jurisdictions, not the whole state list", () => {
+    const { allGroups, statesHere } = finder(catalog(...allAlignedCourseSlugs()));
+    const course = resolveCourse(allGroups, "coffee");
+    expect(course?.slug).toBe("coffee");
+
+    const perState = courseJurisdictions(statesHere, "coffee");
+    expect(perState.length).toBeGreaterThan(0);
+    // It is a strict narrowing of the generic picker, never a widening.
+    expect(perState.length).toBeLessThanOrEqual(statesHere.length);
+    const all = new Set(statesHere.map((s) => s.code));
+    for (const s of perState) expect(all, `${s.code} is not a mapped jurisdiction`).toContain(s.code);
+
+    // Every surviving standard is one this course actually backs.
+    for (const s of perState)
+      for (const g of s.groups)
+        for (const a of g.alignments)
+          expect(a.courses.some((c) => c.slug === "coffee"), `${a.code}`).toBe(true);
+
+    // And for a tenant holding the whole catalog it agrees exactly with what the course page's
+    // own summary told the reader, so the two surfaces can never quote different numbers.
+    const onCoursePage = standardsForCourse("coffee");
+    expect(perState.map((s) => s.code).sort()).toEqual(
+      onCoursePage.jurisdictions.map((j) => j.state).sort(),
+    );
+    expect(summarizeStandards(perState.flatMap((s) => s.groups)).total).toBe(onCoursePage.total);
+  });
+
+  it("a foreign or unknown slug resolves to NOTHING — never a leak, never 'everything'", () => {
+    const { allGroups, statesHere } = finder(catalog(...SEASON_1));
+    expect(statesHere.length).toBeGreaterThan(0);
+
+    // Another tenant's course, an unmapped course this tenant does publish, and pure garbage all
+    // land in the same place. That sameness is what stops the page leaking who hosts what.
+    for (const slug of ["tobacco", "state-civics-in", "not-a-course", "'; drop table courses--"]) {
+      expect(resolveCourse(allGroups, slug), slug).toBeUndefined();
+      expect(courseJurisdictions(statesHere, slug), slug).toEqual([]);
+    }
+    // The empty result must NOT be read as "no filter": it is never the unfiltered list.
+    expect(courseJurisdictions(statesHere, "tobacco")).not.toEqual(statesHere);
+  });
+
+  it("a course-scoped view still names only this tenant's courses", () => {
+    const { allGroups, statesHere } = finder(catalog(...SEASON_1));
+    const course = resolveCourse(allGroups, "chocolate");
+    expect(course?.slug).toBe("chocolate");
+
+    const perState = courseJurisdictions(statesHere, "chocolate");
+    expect(perState.length).toBeGreaterThan(0);
+    const named = perState.flatMap((s) =>
+      s.groups.flatMap((g) => g.alignments.flatMap((a) => a.courses.map((c) => c.slug))),
+    );
+    for (const slug of named) expect(SEASON_1, `leaked ${slug}`).toContain(slug);
+    // WH.4.4 also spans rum/tequila-mezcal/tobacco; none of them may appear here.
+    for (const slug of SEASON_2_3) expect(named, `leaked ${slug}`).not.toContain(slug);
+  });
+
+  it("every state link out of the course view carries the course param through", () => {
+    const { statesHere } = finder(catalog(...allAlignedCourseSlugs()));
+    const perState = courseJurisdictions(statesHere, "coffee");
+    for (const s of perState) {
+      const url = standardsHref({ state: s.code, course: "coffee" });
+      expect(url).toContain(`state=${s.code}`);
+      expect(url).toContain("course=coffee");
+    }
+    // And the back links: the state view returns to the course picker, not the generic one.
+    expect(standardsHref({ course: "coffee" })).toBe("/academic-standards?course=coffee");
+    expect(standardsHref({})).toBe("/academic-standards");
+    expect(standardsHref({ state: "IN", subject: "social-studies", course: "coffee" })).toBe(
+      "/academic-standards?state=IN&subject=social-studies&course=coffee",
+    );
+  });
+
+  it("the course filter is transitive: picking a state keeps exactly the same standards", () => {
+    // What the picker promised for a state must be what that state's page then shows.
+    const { statesHere } = finder(catalog(...allAlignedCourseSlugs()));
+    const perState = courseJurisdictions(statesHere, "coffee");
+    for (const s of perState) {
+      const onStatePage = filterGroups(
+        statesHere.find((x) => x.code === s.code)!.groups,
+        { courseSlug: "coffee" },
+      );
+      expect(summarizeStandards(onStatePage).total, s.code).toBe(
+        summarizeStandards(s.groups).total,
+      );
+    }
   });
 });

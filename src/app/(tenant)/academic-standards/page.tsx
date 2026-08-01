@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireTenant } from "@/lib/tenant";
@@ -9,6 +10,7 @@ import {
   NEXT_UP,
   US_JURISDICTIONS,
   allAlignedCourseSlugs,
+  courseJurisdictions,
   coursesIn,
   filterGroups,
   isStateCode,
@@ -16,9 +18,11 @@ import {
   jurisdictionName,
   mappedStates,
   scopeAlignments,
+  standardsHref as href,
   subjectsIn,
   summarizeStandards,
   toPlainText,
+  type AlignedCourseLike,
   type ScopedFramework,
   type StateCode,
   type Subject,
@@ -48,7 +52,15 @@ import { StandardsActions } from "@/components/standards-actions";
 // that scoped set (filterGroups), so no filter combination can leak another tenant's catalog.
 // ─────────────────────────────────────────────────────────────────────────────
 
-type SearchParams = Promise<{ state?: string; subject?: string; course?: string }>;
+// A repeated param (?course=a&course=b) arrives as an array, so every value is normalized through
+// one() before anything calls a string method on it. A hand-edited URL must never 500.
+type RawParam = string | string[] | undefined;
+type SearchParams = Promise<{ state?: RawParam; subject?: RawParam; course?: RawParam }>;
+
+function one(raw: RawParam): string | undefined {
+  const v = Array.isArray(raw) ? raw[0] : raw;
+  return typeof v === "string" && v.trim().length > 0 ? v.trim() : undefined;
+}
 
 function subjectSlug(s: Subject): string {
   return s
@@ -57,20 +69,49 @@ function subjectSlug(s: Subject): string {
     .replace(/^-|-$/g, "");
 }
 
-function href(params: { state?: string; subject?: string; course?: string }): string {
-  const qs = new URLSearchParams();
-  if (params.state) qs.set("state", params.state);
-  if (params.subject) qs.set("subject", params.subject);
-  if (params.course) qs.set("course", params.course);
-  const s = qs.toString();
-  return s ? `/academic-standards?${s}` : "/academic-standards";
-}
-
 /** Normalize ?state= to a real code, or null. Anything unrecognizable 404s (never redirects). */
 function parseState(raw: string | undefined): StateCode | null {
   if (!raw) return null;
   const up = raw.toUpperCase();
   return isStateCode(up) ? up : null;
+}
+
+/**
+ * THE TENANT BOUNDARY, resolved once per request (generateMetadata and the render both need it,
+ * and React's cache() keeps that to a single query).
+ */
+const loadFinder = cache(async (tenantId: string) => {
+  const available = await getAlignedCourses(tenantId, allAlignedCourseSlugs());
+  const allGroups = scopeAlignments(available);
+  // Which mapped states have at least one claim THIS tenant's catalog can back. A state whose
+  // data exists but rests entirely on courses this tenant does not publish is treated as
+  // not-yet-available here; an honest empty is better than a page of dropped claims.
+  const statesHere = mappedStates()
+    .map((code) => ({ code, groups: scopeAlignments(available, code) }))
+    .filter((s) => s.groups.length > 0);
+  return { allGroups, statesHere };
+});
+
+/**
+ * Resolve ?course= to a course, or undefined.
+ *
+ * It resolves against coursesIn(allGroups), the courses that survived the tenant scoping AND
+ * actually back a standard here, so an unknown slug, a slug belonging to another tenant, and a
+ * slug this tenant publishes but has no mapping for all land in exactly the same place: undefined.
+ * That sameness is the point. Any difference in what the page does for a foreign slug versus an
+ * invented one would leak which courses the other brands host.
+ */
+function resolveCourse(
+  allGroups: ScopedFramework[],
+  raw: string | undefined,
+): AlignedCourseLike | undefined {
+  if (!raw) return undefined;
+  return coursesIn(allGroups).find((c) => c.slug === raw);
+}
+
+/** A rejected ?course= value is echoed back to the reader, so cap what we will echo. */
+function shortSlug(raw: string): string {
+  return raw.length > 48 ? `${raw.slice(0, 48)}…` : raw;
 }
 
 export async function generateMetadata({
@@ -81,12 +122,30 @@ export async function generateMetadata({
   const tenant = await requireTenant();
   const brand = brandName(tenant);
   const sp = await searchParams;
-  const state = parseState(sp.state);
+  const state = parseState(one(sp.state));
 
-  const title = state ? `${jurisdictionName(state)} standards alignment` : "Find your state's standards";
-  const description = state
+  let title = state ? `${jurisdictionName(state)} standards alignment` : "Find your state's standards";
+  let description = state
     ? `Which ${jurisdictionName(state)} standards the ${brand} courses cover: the exact code, the standard's own words, and the lesson that covers it.`
     : `Pick your state and see which ${brand} courses meet which of its standards. Exact codes, verbatim text, and source links, printable for a state filing.`;
+
+  // The course-scoped picker is a different page to a reader, so it says so in the tab, the search
+  // result, and the share card. Resolved through the same tenant boundary as the render: a course
+  // this tenant does not publish falls back to the generic finder title and names nothing.
+  if (!state) {
+    const courseSlug = one(sp.course);
+    if (courseSlug) {
+      const { allGroups, statesHere } = await loadFinder(tenant.id);
+      const course = resolveCourse(allGroups, courseSlug);
+      const perState = course ? courseJurisdictions(statesHere, course.slug) : [];
+      if (course && perState.length > 0) {
+        const stats = summarizeStandards(perState.flatMap((s) => s.groups));
+        title = `${course.title}: standards by state`;
+        description = `${course.title} meets ${stats.total} published academic standard${stats.total === 1 ? "" : "s"} across ${perState.length} jurisdiction${perState.length === 1 ? "" : "s"}. Pick a state for the exact codes, the standard's own words, and the lesson that covers each one.`;
+      }
+    }
+  }
+
   return {
     title,
     description,
@@ -115,25 +174,46 @@ export default async function StandardsPage({ searchParams }: { searchParams: Se
   const sp = await searchParams;
 
   // ?state= must be a real jurisdiction. Garbage 404s — never a redirect, never a guess.
-  const state = parseState(sp.state);
-  if (sp.state && !state) notFound();
+  const rawState = one(sp.state);
+  const state = parseState(rawState);
+  if (rawState && !state) notFound();
 
   // Tenant boundary. Everything below is derived from what THIS tenant actually publishes.
-  const available = await getAlignedCourses(tenant.id, allAlignedCourseSlugs());
-  const allGroups = scopeAlignments(available);
+  const { allGroups, statesHere } = await loadFinder(tenant.id);
 
   // A tenant that hosts none of the mapped curriculum gets no standards page at all — better a
   // 404 than a finder that implies an alignment for courses it does not have.
   if (allGroups.length === 0) notFound();
 
-  // Which mapped states have at least one claim THIS tenant's catalog can back. A state whose
-  // data exists but rests entirely on courses this tenant does not publish is treated as
-  // not-yet-available here — an honest empty is better than a page of dropped claims.
-  const statesHere = mappedStates()
-    .map((code) => ({ code, groups: scopeAlignments(available, code) }))
-    .filter((s) => s.groups.length > 0);
+  const rawCourse = one(sp.course);
 
-  if (!state) return <PickerView brand={brand} statesHere={statesHere} />;
+  if (!state) {
+    // ?course= with no ?state= is the link every course page emits ("See the full standards detail
+    // for this course"). It gets the course's OWN jurisdictions, not the generic state list: the
+    // reader asked where THIS course counts. Each card carries the course param into the state.
+    const course = resolveCourse(allGroups, rawCourse);
+    const perState = course ? courseJurisdictions(statesHere, course.slug) : [];
+    if (course && perState.length > 0) {
+      return (
+        <CoursePickerView
+          brand={brand}
+          course={course}
+          statesHere={perState}
+          totalMapped={statesHere.length}
+        />
+      );
+    }
+    // Unknown slug, another tenant's slug, or one with no mapping here: keep the finder working,
+    // say plainly that the filter was dropped, and claim nothing about the course. Never a 404:
+    // this page is a real destination and ?course= is a filter on it, not its identity.
+    return (
+      <PickerView
+        brand={brand}
+        statesHere={statesHere}
+        droppedCourse={rawCourse ? shortSlug(rawCourse) : undefined}
+      />
+    );
+  }
 
   const stateEntry = statesHere.find((s) => s.code === state);
   if (!stateEntry) return <ComingView brand={brand} state={state} statesHere={statesHere} />;
@@ -143,8 +223,8 @@ export default async function StandardsPage({ searchParams }: { searchParams: Se
       brand={brand}
       state={state}
       groups={stateEntry.groups}
-      subjectParam={sp.subject}
-      courseParam={sp.course}
+      subjectParam={one(sp.subject)}
+      courseParam={rawCourse}
     />
   );
 }
@@ -154,9 +234,11 @@ export default async function StandardsPage({ searchParams }: { searchParams: Se
 function PickerView({
   brand,
   statesHere,
+  droppedCourse,
 }: {
   brand: string;
   statesHere: { code: StateCode; groups: ScopedFramework[] }[];
+  droppedCourse?: string;
 }) {
   const mappedCodes = new Set(statesHere.map((s) => s.code));
   const rest = US_JURISDICTIONS.filter((j) => !mappedCodes.has(j.code));
@@ -179,6 +261,20 @@ function PickerView({
         <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">
           Find your state&apos;s standards
         </h1>
+        {/* A ?course= we could not honour. Said out loud rather than dropped silently, because
+            the counts below are then about the WHOLE catalog, not the course the reader asked
+            about, and a reader who does not know that would file the wrong number. */}
+        {droppedCourse ? (
+          <p
+            className="mt-4 rounded-xl border-2 px-4 py-3 text-sm leading-relaxed"
+            style={{ borderColor: "var(--accent)" }}
+            role="status"
+          >
+            <strong>Showing every course.</strong> There is no standards mapping for a course called{" "}
+            <span className="font-mono wrap-break-word">{droppedCourse}</span> in the {brand}{" "}
+            catalog, so that filter was ignored. Everything below covers the full catalog.
+          </p>
+        ) : null}
         {statesHere.length > 0 ? (
           <p
             className="mt-3 inline-flex rounded-full border px-4 py-1.5 text-sm font-semibold"
@@ -291,6 +387,147 @@ function PickerView({
             style={{ backgroundColor: "var(--accent)" }}
           >
             Browse the courses
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+// ── The picker, narrowed to one course ───────────────────────────────────────
+//
+// Where a reader lands from a course page's "See the full standards detail for this course".
+// They asked a course question, so they get a course answer: the jurisdictions where THIS course
+// carries standards, with its own counts, and every link on into a state carries ?course= so the
+// filter survives the click. Deliberately NOT a cross-state dump of the course's standards: that
+// is what /academic-standards/matrix already is, and this page's job is the per-state filing.
+
+function CoursePickerView({
+  brand,
+  course,
+  statesHere,
+  totalMapped,
+}: {
+  brand: string;
+  course: AlignedCourseLike;
+  statesHere: { code: StateCode; groups: ScopedFramework[] }[];
+  totalMapped: number;
+}) {
+  const stats = summarizeStandards(statesHere.flatMap((s) => s.groups));
+  // Busiest jurisdictions first: the reader is scanning for their own state, and a long list
+  // sorted by nothing is harder to scan than one whose strongest claims lead.
+  const ordered = [...statesHere].sort(
+    (a, b) =>
+      summarizeStandards(b.groups).total - summarizeStandards(a.groups).total ||
+      jurisdictionName(a.code).localeCompare(jurisdictionName(b.code)),
+  );
+  const elsewhere = totalMapped - statesHere.length;
+
+  return (
+    <main className="mx-auto max-w-4xl px-4 py-8 sm:py-10">
+      <nav className="text-sm print:hidden">
+        <Link href={href({})} className={textLink} style={accent}>
+          ← All courses, all states
+        </Link>
+      </nav>
+
+      <header className="mt-4 max-w-3xl">
+        <p className="text-sm font-semibold uppercase tracking-widest" style={accent}>
+          {brand}
+        </p>
+        <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">
+          {course.title}: standards by state
+        </h1>
+        <p
+          className="mt-3 inline-flex rounded-full border px-4 py-1.5 text-sm font-semibold"
+          style={{ borderColor: "var(--accent)", color: "var(--accent)" }}
+        >
+          ✓ {stats.total} standard{stats.total === 1 ? "" : "s"} across {statesHere.length}{" "}
+          jurisdiction{statesHere.length === 1 ? "" : "s"}
+        </p>
+        <p className="mt-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
+          These are the jurisdictions where <strong>{course.title}</strong> meets published
+          standards. Pick yours to read the exact code, the standard&apos;s own words, the lesson
+          that covers it, and a link to the source document, still filtered to this course and
+          printable for a state filing.
+        </p>
+        {elsewhere > 0 ? (
+          <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+            {brand} has mapped {totalMapped} jurisdictions in all. This course carries no standards
+            we can honestly claim in the other {elsewhere}; other courses do.{" "}
+            <Link href={href({})} className={textLink} style={accent}>
+              See every state
+            </Link>
+            .
+          </p>
+        ) : null}
+      </header>
+
+      <section className="mt-8" aria-labelledby="course-states-heading">
+        <h2 id="course-states-heading" className="text-xl font-bold">
+          Where this course counts
+        </h2>
+        <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {ordered.map(({ code, groups }) => {
+            const s = summarizeStandards(groups);
+            return (
+              <li key={code}>
+                <Link
+                  href={href({ state: code, course: course.slug })}
+                  className={`${card} block transition-colors hover:border-current focus-visible:outline-2 focus-visible:outline-offset-2`}
+                >
+                  <span className="text-lg font-bold">{jurisdictionName(code)}</span>
+                  <span className="mt-1 block text-sm text-neutral-600 dark:text-neutral-400">
+                    {s.total} standard{s.total === 1 ? "" : "s"} · {s.full} fully covered ·{" "}
+                    {s.partial} partially · {s.frameworks} framework
+                    {s.frameworks === 1 ? "" : "s"}
+                  </span>
+                  <span className="mt-2 inline-block text-sm font-medium" style={accent}>
+                    See the alignment →
+                  </span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+
+      <section
+        className="mt-8 rounded-2xl border-2 p-5 sm:p-6"
+        style={{ borderColor: "var(--accent)" }}
+        aria-labelledby="course-honesty"
+      >
+        <h2 id="course-honesty" className="text-lg font-bold">
+          Read this before you rely on it
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+          This alignment was made by {brand} against each jurisdiction&apos;s published standards,
+          fetched from the publisher and transcribed word for word. It has not been reviewed or
+          endorsed by any education authority. Where the course only partly covers a standard, the
+          state page says <em>partially covered</em> and explains the gap, and every framework
+          shows the date it was retrieved, because standards get revised.
+        </p>
+      </section>
+
+      <section className="mt-12 rounded-2xl border border-neutral-200 p-6 dark:border-neutral-800 print:hidden">
+        <h2 className="text-xl font-bold">Check it against the course itself</h2>
+        <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
+          Don&apos;t take the mapping on trust. Open the course, read the lesson named as evidence,
+          and hold it against the standard.
+        </p>
+        <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <Link
+            href={`/course/${course.id}`}
+            className="inline-flex min-h-11 items-center justify-center rounded-md px-5 py-2.5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
+            Open {course.title}
+          </Link>
+          <Link
+            href="/academic-standards/matrix"
+            className="inline-flex min-h-11 items-center justify-center rounded-md border border-neutral-300 px-5 py-2.5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 pointer-coarse:min-h-12"
+          >
+            Compare every course in one table
           </Link>
         </div>
       </section>
@@ -418,9 +655,11 @@ function StateView({
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8 sm:py-10">
+      {/* Back out to the state list WITHOUT losing the course, when there is one: a reader who
+          arrived from a course page is still asking a course question. */}
       <nav className="text-sm print:hidden">
-        <Link href={href({})} className={textLink} style={accent}>
-          ← All states
+        <Link href={href({ course: course?.slug })} className={textLink} style={accent}>
+          {course ? `← All states for ${course.title}` : "← All states"}
         </Link>
       </nav>
 
@@ -745,7 +984,7 @@ function StateView({
             Browse the courses
           </Link>
           <Link
-            href={href({})}
+            href={href({ course: course?.slug })}
             className="inline-flex min-h-11 items-center justify-center rounded-md border border-neutral-300 px-5 py-2.5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 pointer-coarse:min-h-12"
           >
             Pick a different state

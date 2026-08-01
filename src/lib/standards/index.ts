@@ -263,6 +263,44 @@ export function filterGroups(
     .filter((g) => g.alignments.length > 0);
 }
 
+/**
+ * The URL of one /academic-standards view. ONE builder for the whole finder, so no view can
+ * silently drop a param the reader arrived with. That is not hypothetical: the course page links
+ * to `?course=<slug>` with no `?state=`, and the state-less view used to ignore the course
+ * entirely, answering "which states exist?" to someone who asked "where does THIS course count?".
+ */
+export function standardsHref(params: {
+  state?: string;
+  subject?: string;
+  course?: string;
+}): string {
+  const qs = new URLSearchParams();
+  if (params.state) qs.set("state", params.state);
+  if (params.subject) qs.set("subject", params.subject);
+  if (params.course) qs.set("course", params.course);
+  const s = qs.toString();
+  return s ? `/academic-standards?${s}` : "/academic-standards";
+}
+
+/**
+ * The jurisdictions where ONE course carries standards, and that course's standards within each.
+ *
+ * TENANT BOUNDARY, same shape as every other filter here: this takes the OUTPUT of
+ * scopeAlignments() per state (already narrowed to what this tenant publishes, already rewritten
+ * to name only this tenant's courses) and only ever NARROWS it, via filterGroups. It never reads
+ * the raw ALIGNMENTS table, so a slug this tenant does not publish cannot re-admit anything; it
+ * matches nothing and the caller gets `[]`, which is the honest answer and is indistinguishable
+ * from a slug that does not exist at all.
+ */
+export function courseJurisdictions(
+  statesHere: { code: StateCode; groups: ScopedFramework[] }[],
+  courseSlug: string,
+): { code: StateCode; groups: ScopedFramework[] }[] {
+  return statesHere
+    .map((s) => ({ code: s.code, groups: filterGroups(s.groups, { courseSlug }) }))
+    .filter((s) => s.groups.length > 0);
+}
+
 /** Counts for the page's summary line. Derived, never typed in by hand. */
 export function summarizeStandards(groups: ScopedFramework[]): {
   total: number;
