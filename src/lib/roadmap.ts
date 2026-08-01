@@ -549,6 +549,25 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   (dev only) \`acme.localhost\` on the dev port; if none exists yet the button degrades to a "not
   published yet" note instead of a dead link. Linked from a new **Demo** nav item, the home page's
   recruiting block, and the ecosystem footer. No migration.
+- 🔧 **The standards finder honours \`?course=\` without a state** (\`fix/standards-course-without-state\`):
+  every course page (and every "Coming soon" landing page) links to \`/academic-standards?course=<slug>\`
+  under "See the full standards detail for this course", and that URL used to land on the generic state
+  chooser, which **ignored the course param entirely**. Someone who asked "where does THIS course count?"
+  got a list of 51 states. It now renders a **course-scoped picker**: the jurisdictions where that course
+  actually carries standards, each card showing the course's own totals (mapped / full / partial /
+  frameworks), busiest first, headed by "N standards across M jurisdictions", plus an honest line about
+  the mapped jurisdictions where this course claims nothing. Every card links on with \`?state=..&course=..\`,
+  and the state view's back links now return to the course picker rather than dropping the filter, so the
+  reader stays filtered end to end. A **cross-state dump was deliberately not built**: that is what
+  \`/academic-standards/matrix\` already is, and this page's job is the per-state filing.
+  **Tenant scoping is unchanged**: \`getAlignedCourses\` is still the only boundary, and the course is
+  resolved against \`coursesIn(scopeAlignments(...))\`, so an **unknown slug, another brand's slug, and a
+  slug with no mapping are indistinguishable** (all resolve to nothing). A slug that does not resolve does
+  **not 404 and does not silently show unfiltered results**: the finder renders with a visible "showing
+  every course, that filter was ignored" notice, because a dropped filter a reader cannot see is how a
+  wrong number gets filed with a state. \`generateMetadata\` names the course in the title, description,
+  and OG card for the new view; a repeated param (\`?course=a&course=b\`) can no longer 500. New pure
+  helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
 - 🔧 **"Also discussed in" on lesson pages, and a year brush on the globe** (plans/45 follow-ups). A
