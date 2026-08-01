@@ -117,6 +117,12 @@ the picker and the in-app roadmap (`/admin/roadmap`) are the authoritative sourc
 states are covered. States without a verified mapping render as "not mapped yet", never as errors,
 and each mapped state publishes its **"What we don't claim"** rejections alongside the claims.
 
+`?course=<slug>` **without** a `?state=` (the link every course page emits under "See the full
+standards detail for this course") renders a **course-scoped picker**: only the jurisdictions where
+that course carries standards, with its own per-state counts, and every link on carries the course
+through so the reader stays filtered. A slug this tenant does not publish, or has no mapping for,
+resolves to nothing and says so, so the finder still works but never claims anything about it.
+
 The companion **standards explorer** (`/academic-standards/matrix`) flattens every
 (state x standard x course) alignment into one table you can fuzzy-search (code, standard text,
 course, state, subject), filter (state / subject / coverage / course), and sort by any column, with
