@@ -235,6 +235,29 @@ The proposals are **committed** (`src/lib/future-work-content/*`, generated from
 page renders the same in production. Add a proposal by dropping markdown in `plans/future-courses/`,
 re-running the generator, and registering it in `src/lib/future-work.ts`.
 
+## Teachers Pay Teachers packets (`/admin/tpt-plan`)
+
+Owner-only rollout plan for the TpT sales channel: which packet to post, in what order, at what
+recommended price, and why, with the course's real standards count on every row. Each built packet
+gets a branded preview with print-to-PDF and inline editing. The packet markdown lives **gitignored**
+under `plans/future-courses/tpt-packets/<dir>/`, so the preview is a **local-dev** tool: on a
+deployment it renders an honest empty state instead of pretending the files are there.
+
+Unit packets are hand-authored. **Bundle** packets (a compilation of already-built units) are half
+generated, because their standards claim is the union of their members' claims and retyping 171 codes
+by hand is where a wrong code reaches a teacher:
+
+```bash
+pnpm gen:tpt-bundle-standards            # every bundle in src/lib/tpt-plan.ts with a packetDir
+pnpm gen:tpt-bundle-standards <dir>      # just one, e.g. state-civics-bundle
+```
+
+It writes `02-included-units.md` (the member manifest, with the codes each member carries) and
+`03-standards-alignment.md` (the combined coverage, deduped per jurisdiction, every code quoted
+verbatim) straight from `src/lib/standards`, the same data behind the public finder. The cover,
+teaching guide, attribution, and listing pages stay hand-written. Re-run it after changing a bundle's
+`bundleSlugs` or any standards claim.
+
 ## Conventions
 
 This repo follows the WitUS ecosystem rules. Read [CLAUDE.md](CLAUDE.md) and

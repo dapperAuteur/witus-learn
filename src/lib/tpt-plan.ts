@@ -110,7 +110,14 @@ export const TPT_PLAN: TptPlanItem[] = [
   {
     order: 6,
     title: "The Great Migration: a printable unit",
-    courseSlug: "great-migration-and-the-world",
+    // The catalog has TWO Great Migration courses (seed-courses.ts): `great-migration` (the 12-lesson
+    // homeschool course) and `great-migration-and-the-world` (the high-school companion). This packet
+    // is the FIRST one: its reader's twelve lesson titles are verbatim from great-migration-course.ts,
+    // and its own alignment page cites the Indiana USH codes, which in src/lib/standards are backed by
+    // claims whose courseSlugs list `great-migration`. The slug used to read `great-migration-and-the-
+    // world`, which claims a disjoint set (Common Core RH/WHST only), so both the plan's standards
+    // count and the bundle rollup below were describing a course this packet is not drawn from.
+    courseSlug: "great-migration",
     status: "built",
     packetDir: "great-migration-unit",
     price: "$9",
@@ -531,7 +538,8 @@ export const TPT_PLAN: TptPlanItem[] = [
     order: 41,
     title: "State Civics Bundle (Indiana, Illinois, Arizona, and more)",
     bundleSlugs: ["state-civics-in", "state-civics-il", "state-civics-az", "state-civics-ca", "state-civics-tx", "state-civics-fl", "state-civics-ny", "state-civics-oh", "state-civics-ga", "state-civics-nc", "state-civics-mi", "state-civics-pa", "state-civics-nj", "state-civics-va", "state-civics-wa", "state-civics-tn", "state-civics-ma", "state-civics-mo", "state-civics-md", "state-civics-wi", "state-civics-co", "state-civics-mn", "state-civics-sc", "state-civics-al", "state-civics-la", "state-civics-ky", "state-civics-or", "state-civics-ok", "state-civics-ct", "state-civics-ut", "state-civics-ia", "state-civics-nv", "state-civics-ar", "state-civics-ms"],
-    status: "planned",
+    status: "built",
+    packetDir: "state-civics-bundle",
     price: "$18",
     tier: "bundle",
     rationale:
@@ -541,8 +549,11 @@ export const TPT_PLAN: TptPlanItem[] = [
   {
     order: 42,
     title: "Black History Through Place Bundle (Green Book, Great Migration, What They Built)",
-    bundleSlugs: ["green-book-how-to-read-a-route", "great-migration-and-the-world", "what-they-built"],
-    status: "planned",
+    // `great-migration`, not `great-migration-and-the-world`: see the note on order 6. The member of
+    // this bundle is the packet built from the 12-lesson homeschool course.
+    bundleSlugs: ["green-book-how-to-read-a-route", "great-migration", "what-they-built"],
+    status: "built",
+    packetDir: "black-history-through-place-bundle",
     price: "$22",
     tier: "bundle",
     rationale:
