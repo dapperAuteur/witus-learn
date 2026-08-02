@@ -17,8 +17,9 @@ full per-branch engineering detail. See [docs/BUILD_PLAN.md](docs/BUILD_PLAN.md)
 and [docs/spec/dedicated-lms/](docs/spec/dedicated-lms/) for the complete product specification (PRD,
 data model, API surface, content/pedagogy, auth/billing, multitenancy, migration).
 
-Recent: publish-time RAG auto-indexing (+ staleness badge), an assessment guardrail (`pnpm
-check:reveals` lint + an AI "Audit reveals" instructor tool), admin bulk-resolve for problem reports,
+Recent: publish-time RAG auto-indexing (+ staleness badge), the assessment guardrail (`pnpm
+check:reveals` and `pnpm check:assessment-fit` lints + the "Audit reveals" and "Audit assessment fit"
+instructor tools, deterministic gate and advisory AI split), admin bulk-resolve for problem reports,
 and Sentry error monitoring (wired, inert until a DSN is set; every event passes through the
 `beforeSend` scrubber in [src/lib/sentry-scrub.ts](src/lib/sentry-scrub.ts), which strips identity,
 cookies, auth headers, token-bearing URLs, `request.query_string` in all three shapes Sentry sends it
@@ -203,18 +204,44 @@ see [OPERATING.md](OPERATING.md), mirrored in-app at `/help` → "Keeping course
 
 ```bash
 pnpm typecheck   # next typegen && tsc --noEmit
-pnpm lint        # eslint + check:em-dashes + check:quiz-balance
+pnpm lint        # eslint + the content guards below, in order
 pnpm test        # Vitest, unit + the isolation suite
 ```
 
-The two content guards inside `pnpm lint` can also be run on their own:
+Every content guard inside `pnpm lint` also runs on its own. Several are **ratchets**: pre-existing
+violations sit in a `GRANDFATHERED` / `BACKLOG` map with their measured state and may not get worse,
+anything not on the list fails, and deleting an entry when you fix its file is the progress bar.
+Never add an entry to make new content pass.
 
 ```bash
-pnpm check:em-dashes     # no em/en dashes in user-visible copy (--list shows protected hits)
-pnpm check:quiz-balance  # no quiz bank of 8+ questions parks over 60% of its correct answers at
-                         #   one option index without `shuffleOptions: true` (--list prints every
-                         #   bank). The fix is always the flag, never reordering options.
+pnpm check:em-dashes       # no em/en dashes in user-visible copy (--list shows protected hits)
+pnpm check:quiz-balance    # no bank of 8+ questions parks over 60% of its correct answers at one
+                           #   option index without `shuffleOptions: true` (--list prints every
+                           #   bank). The fix is always the flag, never reordering options.
+pnpm check:longest-option  # ratchet. No bank is beatable by always clicking the LONGEST option;
+                           #   `shuffleOptions` does not help, because length travels with the text.
+pnpm check:recall          # recall cards quiz the PREVIOUS lesson, never the one they sit on.
+pnpm check:reveals         # ratchet. Every `:::reveal` card is well formed, so none rots into
+                           #   prose that silently never grades.
+pnpm check:assessment-fit  # ratchet. The assessment WIDGET fits its content: no explanation or
+                           #   option that names a screen POSITION (options re-shuffle on every
+                           #   attempt), no typed fill-in whose only answer is a bare number (a
+                           #   closed-set fact multiple-choice tests better), no `**Check
+                           #   yourself**` question left as prose. `--list` prints every finding.
+pnpm check:standards       # ratchet. Every seeded course declares its standards, or says why not.
+pnpm check:page-reachability  # ratchet. No public page is a menu orphan or rides the default OG card.
 ```
+
+The two quiz-integrity guards and the assessment-fit guard all cover the **deterministic** half of
+their question. Their semantic halves are advisory buttons on a course's instructor tools,
+deliberately NOT build gates, because an LLM verdict is non-deterministic and must never be able to
+block a commit: **Audit reveals** (is each self-check answer supported by its lesson?) and **Audit
+assessment fit** (does this lesson use the right widget for its content?).
+
+When `check:assessment-fit` flags a typed exercise whose answer is a number and producing that
+number by hand genuinely IS the skill (a calculation, a unit conversion), set `computedAnswer: true`
+on the item, the explicit opt-out equivalent of `shuffleOptions: false`. Never set it on a year, a
+seat count, or a form number.
 
 ## Future classes & features (`/admin/future`)
 

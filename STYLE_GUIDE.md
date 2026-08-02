@@ -82,6 +82,16 @@ Every customer-facing surface must pass before it can merge:
   `quiz_attempts.questionKey` is derived from the prompt text, so an edited prompt silently resets
   every learner's history for that question. On a bank of 15 or more, add `questionsPerAttempt: 8`
   so a retake draws a fresh subset (never above the bank size, never below 5).
+- **The assessment widget must fit its content.** `pnpm check:assessment-fit` (also part of
+  `pnpm lint`, a ratchet) fails on four mechanically-decidable mismatches: an explanation or option
+  that names a screen POSITION ("the first option is wrong", "all of the above"), which the default
+  shuffle makes false on screen; a typed `exercise` item whose every accepted answer is a bare
+  number, which is closed-set recall a multiple-choice question tests better; and a
+  `**Check yourself**` question left as prose instead of `:::reveal <q> ||| <a>`, which grades
+  nothing. Fix by editing explanation/option text or converting the widget, never by reordering
+  options or editing a prompt. When producing a number by hand genuinely IS the skill, set
+  `computedAnswer: true` on that item. Whether a widget *genuinely* fits is a judgment, so it lives
+  on the advisory "Audit assessment fit" instructor button, never in the build.
 
 ---
 

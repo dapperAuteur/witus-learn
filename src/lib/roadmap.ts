@@ -133,6 +133,19 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   malformed / indented / placeholder / answer-equals-question card that would render as dead prose and
   never grade. **Semantic** ("Audit reveals" on the instructor tools): the AI judges whether each
   card's answer is actually supported by its lesson, advisory only (never a build gate).
+- ✅ **Assessment FIT guardrail** (\`feat/assessment-fit-guard\`): the same two-layer split, widened
+  from "is this card well formed?" to "is this the right WIDGET for this content?", the mismatch
+  learners kept reporting one course at a time (a typed fill-in on a civics date, a typed open-answer
+  drill on interpretive history, a check-yourself question left as prose). **Deterministic**
+  (\`pnpm check:assessment-fit\`, a ratchet in \`pnpm lint\`): four rules that are runtime facts, not
+  opinions, since options now re-shuffle on every attempt: an explanation or option naming a screen
+  POSITION ("the first option is wrong") describes an order no learner saw; a typed drill whose every
+  accepted answer is a bare number is a closed-set fact multiple-choice tests better; a
+  \`**Check yourself**\` question left in prose grades nothing and records nothing. 59 files
+  grandfathered with per-rule ceilings that may only fall. **Semantic** ("Audit assessment fit" on
+  the instructor tools): the AI judges quiz vs exercise vs reveal per lesson, advisory only. Rules
+  measured against the catalog before shipping, so the noisy candidates (long free-text answers,
+  accept-list size, proper-noun answers) were rejected rather than allowlisted into uselessness.
 - 🔜 **Sentry error monitoring** (\`feat/rag-autoindex-and-report-bulk\`, wired, DSN pending → task 208):
   crash-grade signal (real stack traces, grouping, alerting) alongside the existing home-grown admin
   error reports. Server/edge/client init is **inert until \`SENTRY_DSN\` is set**, so it ships dark;
