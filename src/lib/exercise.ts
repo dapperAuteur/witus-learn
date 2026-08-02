@@ -14,6 +14,19 @@ export interface ExerciseItem {
   hint?: string;
   /** Shown after checking — the rule / why. */
   explanation?: string;
+  /**
+   * The learner PRODUCING this number is the skill being practised (a calculation, a unit
+   * conversion, a value read off a chart), not recalling a fact.
+   *
+   * Authoring-time only, read by scripts/check-assessment-fit.ts, never by the player. Its
+   * `closed-set-fill-in` rule fails a typed item whose every accepted answer is bare digits,
+   * because a date or a count is a closed set that multiple-choice tests better and that
+   * `checkExerciseAnswer`'s forgiveness (case, accents) cannot help with. Set this flag ONLY when
+   * the arithmetic is the point. Never set it on a year, a seat count, or a form number the
+   * learner can only have memorised: that is the exact mismatch the guard exists to catch. Same
+   * shape and same discipline as `shuffleOptions: false` on a quiz bank.
+   */
+  computedAnswer?: true;
 }
 
 export interface ExerciseContent {

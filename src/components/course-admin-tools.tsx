@@ -15,6 +15,18 @@ interface AuditResult {
   truncated: boolean;
 }
 
+interface FitFlag {
+  lessonTitle: string;
+  widget: string;
+  suggested: string;
+  note: string;
+}
+interface FitResult {
+  audited: number;
+  flagged: FitFlag[];
+  truncated: boolean;
+}
+
 // Editor-only course tools: generate embeddings + set the navigation mode. CYOA
 // crossroads appear on the lesson player once mode = cyoa AND embeddings exist.
 // `index` reports how many published lessons are missing/behind their embedding — publishing
@@ -32,6 +44,7 @@ export function CourseAdminTools({
   const [pending, setPending] = useState<string | null>(null);
   const [msg, setMsg] = useState<string | null>(null);
   const [audit, setAudit] = useState<AuditResult | null>(null);
+  const [fit, setFit] = useState<FitResult | null>(null);
   const stale = index && index.stale > 0;
 
   async function generateEmbeddings() {
@@ -56,6 +69,23 @@ export function CourseAdminTools({
       return;
     }
     setAudit(d as AuditResult);
+  }
+
+  // The SEMANTIC half of the assessment guardrail: "does this widget fit this content?" is a
+  // judgment, so it is advisory here and never a build gate. The deterministic half runs in
+  // `pnpm lint` (scripts/check-assessment-fit.ts).
+  async function auditFit() {
+    setPending("fit");
+    setMsg(null);
+    setFit(null);
+    const r = await fetch(`/api/courses/${courseId}/audit-assessment-fit`, { method: "POST" });
+    const d = await r.json().catch(() => ({}));
+    setPending(null);
+    if (!r.ok) {
+      setMsg(d.error ?? "Couldn't audit assessment fit.");
+      return;
+    }
+    setFit(d as FitResult);
   }
 
   async function setMode(mode: "linear" | "cyoa") {
@@ -113,6 +143,14 @@ export function CourseAdminTools({
         >
           {pending === "audit" ? "Auditing…" : "Audit reveals"}
         </button>
+        <button
+          type="button"
+          onClick={auditFit}
+          disabled={!!pending}
+          className="min-h-9 rounded-md border border-neutral-300 px-3 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 dark:border-neutral-700"
+        >
+          {pending === "fit" ? "Checking fit…" : "Audit assessment fit"}
+        </button>
         <span className="text-neutral-500">Navigation:</span>
         {modeBtn("linear", "Linear")}
         {modeBtn("cyoa", "CYOA")}
@@ -122,6 +160,10 @@ export function CourseAdminTools({
         generated (needs a Gemini key). Publishing re-indexes automatically; re-index by hand after
         editing lessons on an already-published course. &ldquo;Audit reveals&rdquo; asks the AI
         whether each self-check answer is supported by its lesson (advisory, needs an AI key).
+        &ldquo;Audit assessment fit&rdquo; asks whether each lesson uses the right WIDGET (scored
+        quiz, typed exercise, or self-check reveal) for the content it wraps. Both are suggestions
+        to verify, never gates: the mechanical half of the same check runs in{" "}
+        <code>pnpm lint</code>.
       </p>
       {msg ? (
         <p role="status" className="mt-2 text-neutral-700 dark:text-neutral-300">
@@ -159,6 +201,43 @@ export function CourseAdminTools({
           {audit.truncated ? (
             <p className="mt-2 text-xs text-neutral-500">
               Stopped early to keep the check fast; run again after fixing these to audit the rest.
+            </p>
+          ) : null}
+        </div>
+      ) : null}
+      {fit ? (
+        <div role="status" className="mt-3 rounded-md border border-neutral-200 p-3 dark:border-neutral-800">
+          {fit.flagged.length === 0 ? (
+            <p className="text-green-700 dark:text-green-400">
+              Checked {fit.audited} assessed lesson{fit.audited === 1 ? "" : "s"}, every widget fit its content ✓
+            </p>
+          ) : (
+            <>
+              <p className="font-medium">
+                {fit.flagged.length} of {fit.audited} assessed lesson{fit.audited === 1 ? "" : "s"} may use the
+                wrong widget (AI suggestion, verify yourself):
+              </p>
+              <ul className="mt-2 space-y-2">
+                {fit.flagged.map((f, i) => (
+                  <li key={i} className="rounded border border-amber-200 bg-amber-50 p-2 dark:border-amber-900/50 dark:bg-amber-900/20">
+                    <p className="text-xs font-semibold text-neutral-500">{f.lessonTitle}</p>
+                    <p className="mt-0.5">
+                      Uses <span className="font-medium">{f.widget}</span>
+                      {f.suggested && f.suggested !== "none" ? (
+                        <>
+                          , suggests <span className="font-medium">{f.suggested}</span>
+                        </>
+                      ) : null}
+                    </p>
+                    <p className="mt-1 text-amber-800 dark:text-amber-200">⚠ {f.note}</p>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          {fit.truncated ? (
+            <p className="mt-2 text-xs text-neutral-500">
+              Stopped early to keep the check fast; run again after fixing these to check the rest.
             </p>
           ) : null}
         </div>
