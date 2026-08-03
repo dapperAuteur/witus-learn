@@ -49,6 +49,14 @@ Every customer-facing surface must pass before it can merge:
   lists are tenant-filtered before any title reaches Gemini; sitemap/OG/JSON-LD use the resolved
   tenant's name + domain, never a hardcoded brand.
 - **The isolation test suite must stay green** (`tests/isolation/*`). It gates every phase.
+- **Pages redirect signed-out visitors, APIs return a status.** In a page component use
+  `requireUserPage()` (307 to `/login?next=<here>`); in a route handler use `requireUser()` (403 via
+  `forbidden()`). Getting this backwards is a real bug in both directions: a page that 403s
+  dead-ends a learner who followed a bookmark, and an API that redirects hands the admin UI's
+  `fetch` an HTML page to parse as JSON. "Not signed in" is a redirect; "signed in but wrong role"
+  stays a 403 and renders `src/app/forbidden.tsx`. Any `?next=` value must pass `safeNextPath()`
+  before use, or the sign-in page becomes an open redirect. Pinned by
+  `tests/signed-out-redirect.test.ts`.
 
 ---
 

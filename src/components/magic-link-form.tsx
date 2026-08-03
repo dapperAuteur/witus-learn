@@ -5,14 +5,19 @@ import { authClient } from "@/lib/auth-client";
 
 // Magic-link sign-in. The link is sent for the current origin, so the session
 // cookie lands on this tenant's host (see auth.ts rewriteOrigin).
-export function MagicLinkForm() {
+//
+// `callbackURL` is where the emailed link drops the learner once the session exists. It defaults to
+// the tenant home; the login page passes the validated `?next=` through so someone who was sent
+// here from /family lands back on /family instead of the home page. The page validates it with
+// safeNextPath BEFORE it reaches this prop, so this component never has to trust a raw query param.
+export function MagicLinkForm({ callbackURL = "/" }: { callbackURL?: string }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus("sending");
-    const { error } = await authClient.signIn.magicLink({ email, callbackURL: "/" });
+    const { error } = await authClient.signIn.magicLink({ email, callbackURL });
     setStatus(error ? "error" : "sent");
   }
 

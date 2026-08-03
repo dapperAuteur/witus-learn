@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { forbidden } from "next/navigation";
-import { requireUser } from "@/lib/session";
+import { requireUserPage } from "@/lib/session";
 import { getScopedDb } from "@/db/scoped";
 import { isGuardianOf } from "@/db/queries/family";
 import { getLearnerGradebook, getLearnerName } from "@/db/queries/gradebook";
@@ -16,7 +16,7 @@ export const metadata: Metadata = { title: "Family report" };
 export default async function FamilyReportPage({ params }: { params: Promise<{ childId: string }> }) {
   const { childId } = await params;
   const sdb = await getScopedDb();
-  const session = await requireUser();
+  const session = await requireUserPage();
 
   // THE gate — every per-child read is preceded by isGuardianOf (see src/db/queries/family.ts).
   if (!(await isGuardianOf(sdb.tenantId, session.user.id, childId))) forbidden();

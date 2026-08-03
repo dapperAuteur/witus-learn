@@ -8,15 +8,26 @@ import { hasDemoLogin } from "@/lib/env";
 import { DEMO_TENANT_SLUG } from "@/db/queries/demo";
 import Link from "next/link";
 import { MagicLinkForm } from "@/components/magic-link-form";
+import { safeNextPath } from "@/lib/next-path";
 import { WitusSsoButton } from "@/components/witus-sso-button";
 import { DemoLoginButton } from "@/components/demo-login-button";
 
 export const metadata: Metadata = { title: "Sign in" };
 
+type SearchParams = Promise<{ next?: string | string[] }>;
+
 // Outside the (tenant) group so it is NOT behind the age-gate — but still branded
 // from the resolved tenant.
-export default async function LoginPage() {
+export default async function LoginPage({ searchParams }: { searchParams: SearchParams }) {
   const tenant = await resolveTenant();
+
+  // Where to land after the magic link is followed. requireUserPage() puts the learner's original
+  // path here when it bounces them, so signing in returns them to the page they wanted. Validated
+  // through safeNextPath because it is a raw query param: without that, /login?next=https://evil
+  // would make our own sign-in page an open redirect. Anything unsafe degrades to the home page.
+  const sp = await searchParams;
+  const rawNext = Array.isArray(sp.next) ? sp.next[0] : sp.next;
+  const callbackURL = safeNextPath(rawNext);
   const accent = tenant?.theme.colors?.accent ?? tenant?.theme.themeColor ?? "#111111";
   const accentFg = tenant?.theme.colors?.accentFg ?? "#ffffff";
   const style = { "--accent": accent, "--accent-fg": accentFg } as CSSProperties;
@@ -44,7 +55,7 @@ export default async function LoginPage() {
           <h1 className="mt-1 text-2xl font-bold">Sign in</h1>
           <p className="mt-1 text-sm text-neutral-500">No password, we email you a one-time link.</p>
           <div className="mt-6">
-            <MagicLinkForm />
+            <MagicLinkForm callbackURL={callbackURL} />
           </div>
           {showWitusSso ? (
             <div className="mt-4">

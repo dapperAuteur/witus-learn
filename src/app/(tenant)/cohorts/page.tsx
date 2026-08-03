@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { requireTenant } from "@/lib/tenant";
-import { requireUser } from "@/lib/session";
+import { requireUserPage } from "@/lib/session";
 import { listCohorts } from "@/db/queries/cohorts";
 import { CreateCohortForm } from "@/components/create-cohort-form";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = { title: "Cohorts" };
 // signed-in teacher/parent-teacher can run their own cohorts.
 export default async function CohortsPage() {
   const tenant = await requireTenant();
-  const session = await requireUser();
+  const session = await requireUserPage();
 
   const cohorts = await listCohorts(tenant.id, session.user.id);
 

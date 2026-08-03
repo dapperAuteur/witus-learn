@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { requireUser } from "@/lib/session";
+import { requireUserPage } from "@/lib/session";
 import { getScopedDb } from "@/db/scoped";
 import { isGuardianOf, listAttendanceForChild, listChildren, listManagedChildren } from "@/db/queries/family";
 import { getLearnerDashboard, getLearnerStats } from "@/db/queries/dashboard";
@@ -27,7 +27,7 @@ interface ChildView {
 // filtered to this guardian) were ever refactored to be looser.
 export default async function FamilyPage() {
   const sdb = await getScopedDb();
-  const session = await requireUser();
+  const session = await requireUserPage();
 
   const [children, managedChildren] = await Promise.all([
     listChildren(sdb.tenantId, session.user.id),

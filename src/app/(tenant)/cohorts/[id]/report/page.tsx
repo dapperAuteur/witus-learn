@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound, forbidden } from "next/navigation";
-import { requireUser } from "@/lib/session";
+import { requireUserPage } from "@/lib/session";
 import { isTenantAdmin } from "@/lib/api";
 import { getScopedDb } from "@/db/scoped";
 import { getCohort } from "@/db/queries/cohorts";
@@ -15,7 +15,7 @@ export const metadata: Metadata = { title: "Cohort report" };
 export default async function CohortReportPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const sdb = await getScopedDb();
-  const session = await requireUser();
+  const session = await requireUserPage();
 
   const cohort = await getCohort(sdb.tenantId, id);
   if (!cohort) notFound();
