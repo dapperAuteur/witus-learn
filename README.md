@@ -218,6 +218,9 @@ pnpm seed:faa        # FAA Part 107 → Learn.WitUS (14 collapsible modules, a q
                      #   click-to-reveal quick checks). `pnpm seed:faa --dry-run` prints the
                      #   module → lesson/quiz breakdown WITHOUT touching the database.
 pnpm seed:bvc:real   # real 21-episode BVC content → Better Vice Club
+pnpm seed:sommelier  # BVC Sommelier series → Better Vice Club. Course #1 is Wine, a tasting-skills
+                     #   sequel to Episode 9. Age-gated (21+) with a no-alcohol path through every
+                     #   drill; 3 free preview lessons. Price + vetted state are set in the admin UI
 pnpm seed:languages  # Spanish/French/Portuguese/Italian → Learn.WitUS
 pnpm seed:health     # health/fitness courses (NASM CPT/CES/CNC, Read Your Body's Data,
                      #   ECS Foundations/Fitness) → Learn.WitUS (see scripts/seed-health.ts TARGET_SLUG)
