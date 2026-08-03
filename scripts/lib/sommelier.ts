@@ -139,8 +139,15 @@ export interface Flight {
   procedure: string[];
   /** What a learner should be able to say afterwards. */
   lookFor: string;
-  /** The parallel drill for a learner who does not drink alcohol. Required, never optional. */
-  noAlcohol: string;
+  /**
+   * The parallel drill for a learner who does not or cannot consume this commodity: alcohol in the
+   * wine and spirits courses, caffeine in coffee and tea, dairy or sugar in chocolate.
+   *
+   * REQUIRED, never optional, and that is the whole point of it living on the shared type. BAM's
+   * decision for the series is that every tasting drill has a parallel a non-consumer can run, and
+   * a required field cannot be forgotten by omission the way a convention can.
+   */
+  alternate: string;
 }
 
 /** Total price band of a flight, summed from its bottles, e.g. "45-60". */
@@ -162,7 +169,7 @@ export function flightCost(f: Flight): string {
  * price band and the spit-cup instruction cannot be dropped from one course and not another. The
  * output carries no em dashes, per the content policy.
  */
-export function flightCard(f: Flight): string {
+export function flightCard(f: Flight, alternateLabel = "Without alcohol"): string {
   const heading =
     f.n === 0
       ? `## Flight 0: ${f.title}`
@@ -192,9 +199,10 @@ ${steps}
 
 **You have got it when:** ${f.lookFor}
 
-**Without alcohol:** ${f.noAlcohol}`;
+**${alternateLabel}:** ${f.alternate}`;
 }
 
-/** The standing safety and method note that opens every tasting lesson in the series. Written once
- *  so it cannot drift between courses. */
-export const TASTING_METHOD_NOTE = `> **Spit, do not swallow.** A flight is four to six pours. Tasters spit because the goal is a working palate for an hour, not a buzz for twenty minutes, and because ethanol flattens your discrimination fast. Pour about 30 ml (an ounce), taste, spit into an opaque cup, and rinse with water between wines. Never drive after a tasting, spitting included. If you do not drink, run the no-alcohol drill at the bottom of each flight instead: it teaches the same structure with the same vocabulary.`;
+/** The standing safety and method note for the ALCOHOL courses in the series. Named for wine
+ *  because spitting and ethanol are specific to it: a coffee or chocolate course needs its own
+ *  note, not this one bent to fit. Written once so it cannot drift between the alcohol courses. */
+export const WINE_METHOD_NOTE = `> **Spit, do not swallow.** A flight is four to six pours. Tasters spit because the goal is a working palate for an hour, not a buzz for twenty minutes, and because ethanol flattens your discrimination fast. Pour about 30 ml (an ounce), taste, spit into an opaque cup, and rinse with water between wines. Never drive after a tasting, spitting included. If you do not drink, run the no-alcohol drill at the bottom of each flight instead: it teaches the same structure with the same vocabulary.`;

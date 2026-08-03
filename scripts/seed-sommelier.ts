@@ -6,6 +6,7 @@ import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { BVC_SOMMELIER_WINE_COURSE } from "./data/bvc-sommelier-wine-course";
+import { BVC_SOMMELIER_COFFEE_COURSE } from "./data/bvc-sommelier-coffee-course";
 
 // Seeds the BVC Sommelier series (plans/53-bvc-sommelier-series-wine.md) onto the BVC tenant.
 // Wine is course #1; chocolate, coffee, tea, beer, whiskey, rum and cannabis follow, and each one
@@ -103,6 +104,21 @@ async function main() {
     seriesSlug: SERIES_SLUG,
     seriesTitle: SERIES_TITLE,
     requiresAgeGate: true,
+    freePreviewCount: 3,
+  });
+
+  // Coffee is the series' first UN-GATED course, deliberately: wine sits behind a 21+ wall, so the
+  // series needed a front door that does not. No requiresAgeGate here, and that omission is the
+  // decision rather than an oversight.
+  await seedAuthoredCourse(db, {
+    tenantId: bvc,
+    instructorId,
+    slug: "bvc-sommelier-coffee",
+    course: BVC_SOMMELIER_COFFEE_COURSE,
+    category: CATEGORY,
+    navigationMode: "linear",
+    seriesSlug: SERIES_SLUG,
+    seriesTitle: SERIES_TITLE,
     freePreviewCount: 3,
   });
 
