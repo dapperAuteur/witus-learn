@@ -15,6 +15,7 @@ import { NEWS_STORYTELLING_COURSE } from "./data/news-storytelling-course";
 import { DOCUMENTARY_COURSE } from "./data/documentary-course";
 import { ORAL_HISTORY_COURSE } from "./data/oral-history-course";
 import { DIGITAL_SOCIAL_STORYTELLING_COURSE } from "./data/digital-social-storytelling-course";
+import { MOCKUMENTARY_COURSE } from "./data/mockumentary-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -1369,6 +1370,23 @@ async function main() {
     seriesCode: "STORY",
     seriesPosition: "D1",
     seriesTrack: "Distributed",
+  });
+
+  // The SERIES CAPSTONE, and the only course here that genuinely requires the others: a
+  // mockumentary works by exploiting conventions a learner has to already believe in, so taught
+  // early it is a gimmick and taught last it explains why documentary conventions persuade at all.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "mockumentary",
+    course: MOCKUMENTARY_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 99,
+    seriesCode: "STORY",
+    seriesPosition: "99",
   });
 
   await seedAuthoredCourse(db, {
