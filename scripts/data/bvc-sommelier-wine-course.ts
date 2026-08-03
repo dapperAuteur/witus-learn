@@ -2759,5 +2759,1074 @@ ${flightCard(FLIGHT_9)}
         ],
       },
     },
+
+    // ══════════════ MODULE 8 · CHOOSING ══════════════
+    {
+      slug: "somm-what-price-buys",
+      title: "36 · What a price actually buys",
+      section: "Module 8 · Choosing",
+      recallContent: [
+        {
+          prompt: "Why does the course say country names are useless for predicting wine style?",
+          answer:
+            "Because every major producing country contains both cool and warm regions, and the growing season is what you taste. Australia holds both Barossa and Tasmania. The useful questions are which region, and what alcohol the label states.",
+        },
+      ],
+      body: `A bottle's price is mostly not the wine. Understanding the fixed costs is the single most practical thing in this module, because it tells you where your money starts buying quality instead of overheads.
+
+**What is in the price before any wine happens.** Glass, closure, capsule, label, carton, freight, insurance, import duty, excise tax, and, in the United States, the margins of a distributor and a retailer under the three-tier system that requires most wine to pass through both. Those costs are roughly FLAT per bottle. They are nearly the same on a ten dollar wine and a hundred dollar one.
+
+**Which produces the effect that matters.** On a very cheap bottle, the fixed costs eat most of the price and the liquid is what is left. As the price rises, the fixed costs stay put and a rapidly growing share goes to the wine itself. That is why the jump from an eight dollar bottle to a twenty dollar bottle is enormous, and the jump from twenty to fifty is real but much smaller, and the jump from fifty to two hundred is mostly scarcity, reputation, oak, lower yields and hand work.
+
+**What more money genuinely buys, in rough order of how much difference you can taste**
+
+1. **Lower yields and better fruit.** The biggest single lever, and it costs money because the same land makes less wine.
+2. **Selection.** Discarding fruit or barrels that are not good enough is expensive by definition.
+3. **Time.** Cellaring a wine for years before release is capital sitting still.
+4. **New oak.** Expensive, and loud, which is why cheap wines imitate it with chips and staves.
+5. **Hand work.** Hand harvesting, hand sorting, gentler handling.
+6. **Scarcity and reputation.** Real market forces, and they buy you nothing in the glass.
+
+**The uncomfortable evidence.** In a large study of blind tastings, Goldstein and colleagues (2008) found that people without wine training enjoyed more expensive wines slightly LESS on average, while those with training showed a small positive relationship between price and enjoyment. That does not mean expensive wine is a con. It means that price and pleasure come apart when you cannot see the label, and that training changes what you get for your money. Both halves of that are worth taking seriously, and Flight 10 makes you run the experiment on yourself rather than take anybody's word for it.
+
+**The practical rule this course teaches.** Find your own ceiling. Somewhere on the price ladder is the point where a wine gets measurably better and you stop caring. Above that point you are buying an occasion, a story or a gift, all of which are legitimate purchases, as long as you know that is what you are doing.
+
+:::reveal Why is the quality gap between an eight dollar wine and a twenty dollar wine so much larger than the gap between fifty and one hundred? ||| Because the fixed costs per bottle (glass, closure, label, freight, duty, distributor and retailer margins) are roughly the same at every price, so on a cheap bottle they consume most of the price and very little is left for the liquid. As the price rises those costs stay flat and a rapidly growing share goes to the wine, until at the top the extra money is mostly buying scarcity, reputation and hand work rather than a proportionate gain in the glass.
+
+## Sources
+- Goldstein, R., Almenberg, J., Dreber, A., Emerson, J. W., Herschkowitsch, A., & Katz, J. (2008). Do more expensive wines taste better? Evidence from a large sample of blind tastings. *Journal of Wine Economics, 3*(1), 1-9. https://doi.org/10.1017/S1931436100000523
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.`,
+    },
+    {
+      slug: "somm-buying-in-a-shop",
+      title: "37 · Buying: how to use a shop, and where value hides",
+      section: "Module 8 · Choosing",
+      body: `**Ask a better question.** The single highest leverage move in a wine shop is to give the person behind the counter three pieces of information: a price, a style you liked before, and what you are eating. "About twenty dollars, I loved a Chablis last week, and I am making roast chicken" gets you a genuinely useful recommendation. "What is good?" gets you whatever they need to move.
+
+**Where value structurally hides.** Value is not random. It sits in predictable places, and every one of them is a market inefficiency you can name:
+
+| Where | Why it is cheap |
+| --- | --- |
+| **Unfashionable grapes** | Nobody can pronounce them, so demand is low and quality is not |
+| **The neighbour appellation** | Land beside a famous name costs a fraction of the famous name. Haut-Medoc beside Pauillac, Rosso di Montalcino beside Brunello, Langhe Nebbiolo beside Barolo |
+| **Misunderstood labels** | German Riesling and Sherry are the standing examples, both cheap because buyers cannot read what they are looking at |
+| **The second wine** | Many estates make a junior bottling from younger vines and declassified lots, at a fraction of the price |
+| **Off-vintages in great regions** | A weaker year from a serious producer often beats a strong year from a weak one |
+| **Whites and rose from red regions** | Dry white Bordeaux is the classic case |
+
+**Where value does not hide.** Famous names in famous vintages, anything heavily advertised, and supermarket own-label wine made to hit a price point rather than a style. Also: the second-cheapest bottle on a restaurant list, which is folklore worth dismantling in the next lesson.
+
+**Reading a shop.** A shop that stores wine upright under hot spotlights for months is damaging its stock, and heat is the most common way wine dies before you buy it. Dusty bottles in a cool corner are a better sign than a bright display. A shop that can tell you who imported a wine, and has opinions about importers, is a shop that thinks about provenance.
+
+**Buying to keep.** Most wine sold today is made to drink now, and will not improve. Wines that genuinely repay cellaring have some combination of high acid, high tannin, or high sugar, all of which are preservatives. If a wine has none of the three, drinking it sooner is not impatience, it is correct.
+
+${flightCard(FLIGHT_10)}
+
+:::reveal Name three structural places value hides in a wine shop, and give the reason each one is underpriced. ||| Any three of: unfashionable grapes (low demand from unfamiliarity, not from low quality), the appellation next door to a famous one (you pay for the name, not the land), misunderstood labels such as German Riesling and Sherry (demand suppressed by a labelling misunderstanding), estate second wines (younger vines and declassified lots from a serious producer), and off-vintages from strong producers (a weak year from a good winemaker often beats a strong year from a weak one).
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Goldstein, R., Almenberg, J., Dreber, A., Emerson, J. W., Herschkowitsch, A., & Katz, J. (2008). Do more expensive wines taste better? Evidence from a large sample of blind tastings. *Journal of Wine Economics, 3*(1), 1-9. https://doi.org/10.1017/S1931436100000523`,
+    },
+    {
+      slug: "somm-ordering-in-a-restaurant",
+      title: "38 · Ordering: the list, the markup, and the ritual",
+      section: "Module 8 · Choosing",
+      body: `A restaurant wine list is a document with a business model. Read it that way and it stops being intimidating.
+
+**The markup.** Restaurants commonly price wine at a multiple of what they paid, frequently in the range of two to four times the retail price, though the practice varies enormously by market, by venue and by bottle. The important structural point is not the multiple but its SHAPE: many lists apply a bigger multiple at the bottom and a smaller one at the top, because a fixed cash margin matters more than a fixed percentage. That has a direct consequence.
+
+**Which kills the second-cheapest myth.** The folklore says the second-cheapest bottle is where restaurants hide their worst value, because everyone orders it to avoid looking cheap. Whether or not that was ever reliably true, the useful analysis is the one you can do at the table: the cheapest bottles usually carry the HIGHEST multiple, so the best value on many lists sits in the middle, and on a serious list the most expensive bottles can carry the lowest multiple of all. Look at the shape of the list rather than at a rule of thumb.
+
+**Where the value is on a list**
+
+- **Unfashionable regions**, exactly as in a shop. A list's Portuguese, Austrian, Greek or Sherry section is usually its best value.
+- **The by-the-glass programme**, if the restaurant is busy enough to move bottles quickly. In a quiet place, an open bottle may have been open too long.
+- **Anything the venue is known for.** A place with a serious Italian list buys Italian well.
+- **Half bottles and larger formats**, both frequently mispriced.
+
+**Use the sommelier properly.** Point at a price on the list rather than saying a number out loud if you are self-conscious, name a wine you have enjoyed, and say what you are eating. Then ask the one question that reliably produces the best bottle in the house at your price: "What is exciting you on the list right now around here?" A good wine person has been waiting all night for someone to ask.
+
+**The ritual, and what it is actually for.** The presentation of the bottle is a series of checks, not theatre:
+
+1. **The bottle is shown to you.** Confirm it is what you ordered, including the VINTAGE, which is the one that goes wrong most often.
+2. **The cork may be placed on the table.** You are not required to smell it, and smelling it tells you very little. Looking at it can tell you about a leak or heat damage.
+3. **A small pour is offered.** This is the check that matters, and it is not asking whether you LIKE the wine. It is asking whether the wine is FAULTY.
+
+**Sending a bottle back.** You may send back a wine that is corked, oxidised, heat damaged, or otherwise faulty, and any decent venue replaces it without argument. You may not send back a wine because it turned out drier or more tannic than you expected. If you are unsure, say exactly that: "I think this might be corked, would you taste it?" That sentence is professional, it is honest, and it puts a second trained palate on the problem.
+
+:::reveal The small pour arrives. What question are you actually being asked, and what are you not being asked? ||| You are being asked whether the wine is FAULTY: corked, oxidised, heat damaged or otherwise wrong. You are not being asked whether you like it or whether it matches what you imagined, and a wine that is simply drier or more tannic than you expected is not grounds for sending it back. If you suspect a fault but are not certain, asking the server or sommelier to taste it is the correct and professional move.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Court of Master Sommeliers. (n.d.). *Introductory sommelier certificate: Course content*. https://www.courtofmastersommeliers.org`,
+    },
+    {
+      slug: "somm-quiz-8",
+      title: "39 · Knowledge check: choosing",
+      section: "Module 8 · Choosing",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questionsPerAttempt: 8,
+        questions: [
+          {
+            prompt: "Why is the quality jump from an eight dollar to a twenty dollar bottle so large?",
+            options: [
+              "Fixed per-bottle costs stay flat, so a growing share goes to the wine itself",
+              "Cheaper wines are taxed at a substantially higher rate in most markets",
+              "Wines under ten dollars are legally barred from stating a vintage year",
+              "Distributors refuse to carry wines priced below a fixed minimum threshold",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Glass, closure, label, freight, duty and trade margins cost roughly the same on any bottle. On a cheap wine they eat most of the price, so each extra dollar early on buys a lot of liquid.",
+            sourceLessonSlug: "somm-what-price-buys",
+          },
+          {
+            prompt: "What did Goldstein and colleagues (2008) find in their large blind tasting study?",
+            options: [
+              "Experts and non-experts agreed closely on which wines were most expensive",
+              "Non-experts enjoyed pricier wines slightly less, while trained tasters showed a small positive link",
+              "Price predicted enjoyment strongly for every group of tasters studied",
+              "Blind tasters could identify a wine's price bracket with high reliability",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The finding is that price and pleasure come apart once the label is hidden, and that training changes the relationship. It is evidence about labels and expectations rather than proof that expensive wine is a con.",
+            sourceLessonSlug: "somm-what-price-buys",
+          },
+          {
+            prompt: "Which of these buys the most detectable improvement in the glass?",
+            options: [
+              "The reputation and scarcity attached to a famous producer's name",
+              "A heavier glass bottle with a deeper punt at the base",
+              "Lower yields and better fruit from the vineyard",
+              "A longer and more elaborate back label description",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Lower yields are the biggest single quality lever and they cost money because the same land makes less wine. Scarcity and reputation are real market forces that buy nothing in the glass.",
+            sourceLessonSlug: "somm-what-price-buys",
+          },
+          {
+            prompt: "Why are German Riesling and Sherry described as structurally underpriced?",
+            options: [
+              "Both are produced in volumes far exceeding what the world can drink",
+              "Both are subsidised heavily by their national governments",
+              "Both are excluded from the EU appellation system entirely",
+              "Demand is suppressed by labels buyers cannot read rather than by quality",
+            ],
+            correctIndex: 3,
+            explanation:
+              "German labels rank harvest ripeness rather than sweetness, and Sherry is assumed sweet when most is bone dry. When a labelling misunderstanding suppresses demand, price falls below quality.",
+            sourceLessonSlug: "somm-buying-in-a-shop",
+          },
+          {
+            prompt: "What does the course say about the second-cheapest bottle on a restaurant list?",
+            options: [
+              "It is reliably the worst value on every list, as the folklore claims",
+              "It is always the best value because restaurants use it to attract customers",
+              "The cheapest bottles often carry the highest multiple, so read the list's shape",
+              "It is priced at cost, since venues make their margin on food instead",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Many lists apply a larger multiple at the bottom and a smaller one at the top, so value frequently sits in the middle and sometimes at the very top. The analysis you can do at the table beats any rule of thumb.",
+            sourceLessonSlug: "somm-ordering-in-a-restaurant",
+          },
+          {
+            prompt: "The small pour at the table is asking you to judge what?",
+            options: [
+              "Whether the wine is faulty, not whether you like it",
+              "Whether the wine is worth the price the list charges for it",
+              "Whether the vintage matches the one printed on the menu",
+              "Whether the wine has been served at the correct temperature",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Corked, oxidised or heat damaged wine gets replaced without argument. A wine that is drier or more tannic than you imagined is not grounds for sending it back, and the vintage check happens when the bottle is presented.",
+            sourceLessonSlug: "somm-ordering-in-a-restaurant",
+          },
+          {
+            prompt: "Which combination indicates a wine that might genuinely repay cellaring?",
+            options: [
+              "A heavy bottle, a long cork and an elaborately printed front label",
+              "High acid, high tannin or high sugar, all of which act as preservatives",
+              "A high stated alcohol level combined with pronounced new oak",
+              "A famous appellation name and a widely praised vintage year",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Acid, tannin and sugar preserve wine. Most wine sold today is made to drink now and will not improve, so drinking a wine lacking all three sooner is correct rather than impatient.",
+            sourceLessonSlug: "somm-buying-in-a-shop",
+          },
+          {
+            prompt: "What is the highest leverage thing to tell someone working in a wine shop?",
+            options: [
+              "The name of the most expensive wine you have ever been given",
+              "That you would like whatever they personally drink at home",
+              "A price, a style you enjoyed before, and what you are eating",
+              "That you are looking for something unusual and hard to find",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Those three facts let someone match a real bottle to a real occasion. Asking what is good, with no constraints, invites whatever the shop needs to move that week.",
+            sourceLessonSlug: "somm-buying-in-a-shop",
+          },
+          {
+            prompt: "Why does an estate's 'second wine' often represent good value?",
+            options: [
+              "It is produced from a completely different and cheaper vineyard region",
+              "It is made from younger vines and declassified lots by a serious producer",
+              "It is bottled by a negociant who buys surplus from many estates at once",
+              "It is released before the main wine and priced to fund the harvest",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same team, the same cellar and the same standards, applied to fruit that did not make the top selection, produces a wine at a fraction of the flagship price.",
+            sourceLessonSlug: "somm-buying-in-a-shop",
+          },
+          {
+            prompt: "What is a warning sign about how a wine shop stores its stock?",
+            options: [
+              "Dusty bottles resting on their sides in a cool, dim corner",
+              "Bottles stored upright for months under hot display spotlights",
+              "Staff who can name the importer behind each bottle they sell",
+              "A rotating selection that changes several times each season",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Heat is the most common way wine dies before you buy it, and standing upright under lights combines heat with a drying cork. Dust in a cool corner and importer knowledge are both good signs.",
+            sourceLessonSlug: "somm-buying-in-a-shop",
+          },
+        ],
+      },
+    },
+
+    // ══════════════ MODULE 9 · SERVICE AND FAULTS ══════════════
+    {
+      slug: "somm-temperature-glass-decanting",
+      title: "40 · Temperature, glass, decanting",
+      section: "Module 9 · Service and faults",
+      recallContent: [
+        {
+          prompt: "Name three places value structurally hides in a wine shop.",
+          answer:
+            "Unfashionable grapes, the appellation next door to a famous one, misunderstood labels such as German Riesling and Sherry, estate second wines, off-vintages from strong producers, and white or rose wines from regions famous for red.",
+        },
+      ],
+      body: `Service is where a good bottle is most often ruined, and almost always in one of two ways: most reds are served too warm, and most whites are served too cold.
+
+**Temperature bands.** Treat these as bands, because the right point inside a band depends on the wine and the room:
+
+| Style | Rough band |
+| --- | --- |
+| Sparkling | 6 to 8 degrees Celsius |
+| Light, crisp white, and rose | 8 to 10 |
+| Fuller white, oaked white | 10 to 13 |
+| Light, high acid red | 12 to 14 |
+| Full bodied red | 15 to 18 |
+
+**Why it matters so much.** Temperature changes the wine's chemistry in your glass, not just its feel. Cold suppresses aroma, tightens acid and makes tannin feel harsher. Warmth releases aroma and makes alcohol more obvious. Which means: a red served at room temperature in a warm room reads hot and flabby, and the fix is fifteen minutes in the fridge. A white served straight from a cold fridge tastes of almost nothing, and the fix is ten minutes on the counter. Those two habits will improve more bottles than any other single thing in this module.
+
+**Cheap wine benefits from cold.** Chilling suppresses aroma and emphasises freshness, which is exactly the trade you want on a simple wine. Serve a modest red slightly cool and it gets better.
+
+**Glassware, honestly.** Shape matters, and it matters much less than the marketing suggests. Practical requirements: a bowl big enough to swirl in, a rim that narrows to gather the aroma, a stem so your hand does not warm the wine, and clear glass so you can see the colour. One good universal glass beats a cupboard of grape-specific shapes, and a flute is the one shape actively working against you, because it concentrates bubbles and starves the aroma.
+
+**Decanting, and its two entirely different purposes.**
+
+1. **To separate sediment.** Old reds throw a deposit as colour and tannin polymerise. Stand the bottle upright for a day, then pour slowly and steadily into a decanter, stopping when the sediment reaches the neck. This is careful work, not aeration.
+2. **To introduce air.** Young, tannic, closed wines open up with oxygen. Here you WANT splashing, and an hour or two is not excessive on a young structured red.
+
+**The mistake is confusing the two.** A very old wine may be fragile, and half an hour of aggressive aeration can flatten it completely. So: old and delicate means decant gently, right before serving, for sediment only. Young and tough means decant early and pour roughly.
+
+**Does it need decanting?** Ask two questions. Is there sediment? Is the wine young, tannic and hard to smell? A yes to either is a reason. Neither is a reason to decant a crisp white, though decanting a reduced wine (Lesson 42) to blow off its struck-match note is a legitimate third use.
+
+:::reveal You have a fifteen year old red with visible sediment and a two year old tannic red that smells closed. Describe how you would decant each, and why the treatments differ. ||| The old wine gets stood upright for a day, then poured slowly and steadily into a decanter and stopped at the neck when sediment appears, and served straight away, because the purpose is separating deposit and an old wine can flatten within half an hour of aggressive air. The young wine gets poured splashily an hour or two ahead, because the purpose there is oxygen, which softens tannin and opens a closed nose.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Jackson, R. S. (2020). *Wine science: Principles and applications* (5th ed.). Academic Press.`,
+    },
+    {
+      slug: "somm-opening-and-storing",
+      title: "41 · Opening, closures, and keeping wine alive",
+      section: "Module 9 · Service and faults",
+      body: `**Opening a still bottle.** Cut the foil below the lip so wine never touches metal, insert the worm slightly off centre and drive it straight down, and use the lever in two stages if your corkscrew has them. A waiter's friend with a double hinge is the only tool worth owning. If a cork breaks, push the worm in at an angle to the remaining piece rather than straight down, or push the cork through and decant.
+
+**Opening a sparkling bottle, where carelessness causes actual injuries.** A Champagne bottle holds several atmospheres of pressure, which is a real hazard rather than an anecdote.
+
+1. Chill it thoroughly. Cold wine holds gas better and is far less likely to gush.
+2. Remove the foil and loosen the wire cage, keeping a thumb over the top from the moment the cage is loose.
+3. Hold the cork still and TURN THE BOTTLE, not the cork.
+4. Ease it out at an angle with a sigh, not a bang. The bang is wasted pressure and lost wine.
+5. Never point it at a person, and never open a warm or shaken bottle.
+
+**Closures, and what each one does to the wine.**
+
+| Closure | What it means for the wine |
+| --- | --- |
+| **Natural cork** | Allows a small, variable amount of oxygen. Carries the risk of cork taint (Lesson 42) |
+| **Technical and agglomerated corks** | Engineered from cork particles for consistency, with taint risk much reduced |
+| **Screwcap** | Very consistent, eliminates cork taint, and its low oxygen ingress makes reduction more likely. Widely used for wines meant to stay fresh, and increasingly for age worthy wine |
+| **Glass and crown cap** | Both used, both function, neither common |
+
+A screwcap is not a sign of a cheap wine. That association is a marketing legacy and Australia and New Zealand demolished it years ago.
+
+**Storage, in order of how much damage each factor does.**
+
+1. **Heat.** The big one. Wine ages faster and worse in warm conditions, and a hot car or a warm attic can kill a bottle in a day. A stable cool temperature, roughly 10 to 15 degrees, is ideal.
+2. **Temperature swings.** Repeated expansion and contraction pushes wine past the cork. A stable warm cupboard beats a fluctuating one.
+3. **Light.** Ultraviolet damages wine, which is why bottles are green and brown. Keep it dark.
+4. **Position.** Lie corked bottles down so the cork stays wet. Screwcapped bottles can stand up indefinitely.
+5. **Humidity.** Very dry air dries corks out over years. Moderate humidity, around two thirds, is the usual target.
+6. **Vibration.** Real but minor for most people. Do not store wine on top of the fridge, which combines vibration with heat anyway.
+
+**Keeping an open bottle.** Oxygen is the enemy, so reduce the wine's contact with it. Recork and refrigerate, including reds, and pull them out to warm before serving. A vacuum pump helps a little. Decanting the remainder into a smaller bottle, filled to the top, helps a lot more, because it is the surface area that matters. Most wines are noticeably tired after two or three days. Fortified wines are the great exception: an opened Madeira or an oxidative Sherry survives for weeks or months, because the damage oxygen does has already been done deliberately.
+
+:::reveal Why does a screwcap make reduction more likely, and why is that not an argument for cork? ||| A screwcap admits very little oxygen, and some sulfur compounds that cause reduced, struck-match or rotten-egg aromas are dissipated by small amounts of oxygen over time. So the very consistency that eliminates cork taint can leave a reductive wine reduced. It is not an argument for cork, because reduction can usually be blown off by decanting or vigorous swirling, whereas cork taint is permanent and ruins the bottle outright.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Jackson, R. S. (2020). *Wine science: Principles and applications* (5th ed.). Academic Press.`,
+    },
+    {
+      slug: "somm-faults",
+      title: "42 · The seven faults worth recognising",
+      section: "Module 9 · Service and faults",
+      body: `A fault is not "a wine I dislike." It is a specific, identifiable defect, and knowing them is what lets you send a bottle back with confidence and, just as importantly, NOT send one back when the wine is simply not to your taste.
+
+**1. Cork taint (TCA).** The famous one. The compound is 2,4,6-trichloroanisole, and many people detect it at concentrations of only a few nanograms per litre, which is parts per trillion (Sefton & Simpson, 2005). It smells of wet cardboard, damp basement, or a wet dog, and in milder cases it does not smell of anything at all: it simply strips the fruit out, leaving a wine that seems muted and short. That subtle version is far more common than the obvious one, and it is why a wine that seems oddly flat deserves a second sniff. It is not harmful, it is not the drinker's fault, and it is grounds for replacement anywhere.
+
+**2. Oxidation.** Too much oxygen, from a failed seal, poor storage or an old open bottle. Whites turn deep gold or brown and smell of bruised apple, nuts and toffee. Reds go brick coloured and lose fruit. The confusion to avoid: in Sherry, Madeira and certain traditional styles, oxidation is deliberate and correct.
+
+**3. Volatile acidity.** Acetic acid and ethyl acetate, from acetic bacteria or from stressed fermentation. Smells of vinegar, or of nail polish remover in the ethyl acetate version. Tiny amounts add lift and complexity and are present in many great wines, so this is a matter of degree rather than a switch.
+
+**4. Brettanomyces.** A yeast that produces compounds smelling of barnyard, sticking plaster, horse, or smoke. Genuinely divisive: small amounts read as savoury complexity to many experienced tasters, larger amounts smother fruit. It is a fault when it dominates, and calling it one at low levels will start an argument at any wine table in the world.
+
+**5. Reduction.** Sulfur compounds giving struck match, rubber, rotten egg or boiled cabbage. Often a temporary state rather than permanent damage. Decant it, swirl it hard, give it twenty minutes. If it blows off, it was reduction and the wine underneath may be excellent. If it does not, the bottle is faulty.
+
+**6. Heat damage.** A wine that has been cooked in transit or storage. Look for a pushed-up cork or a sticky capsule, and taste for baked, stewed, flat fruit with no freshness. Sight often catches it first, as Lesson 6 noted, because the colour is too advanced for the vintage.
+
+**7. Refermentation.** Unintended fizz and haze in a still wine, from yeast restarting in the bottle. Rare in modern commercial wine, obvious when it happens.
+
+**And the two things that are NOT faults, which get bottles sent back every day**
+
+- **Sediment** in an old red. Entirely normal, and a sign the wine was not stripped by heavy filtration. Decant it.
+- **Tartrate crystals**, the small clear crystals on the base of a cork or the bottom of a bottle. Harmless potassium bitartrate, precipitated by cold. They are sometimes a sign the wine was NOT cold stabilised, which some producers avoid deliberately.
+
+:::reveal A red wine smells of rotten egg and struck match. What is your first move, and how does the result tell you whether the bottle is faulty? ||| Decant it, swirl it vigorously, and give it fifteen to twenty minutes. Those aromas are sulfur compounds, and reduction is often a temporary state that oxygen dissipates. If the smell blows off and the wine underneath is clean, it was reduction and the bottle is fine, and may be very good. If it persists after real aeration, the wine is faulty and should be replaced.
+
+## Sources
+- Sefton, M. A., & Simpson, R. F. (2005). Compounds causing cork taint and the factors affecting their transfer from natural cork closures to wine: A review. *Australian Journal of Grape and Wine Research, 11*(2), 226-240. https://doi.org/10.1111/j.1755-0238.2005.tb00290.x
+- Waterhouse, A. L., Sacks, G. L., & Jeffery, D. W. (2016). *Understanding wine chemistry*. Wiley.
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.`,
+    },
+    {
+      slug: "somm-quiz-9",
+      title: "43 · Knowledge check: service and faults",
+      section: "Module 9 · Service and faults",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questionsPerAttempt: 8,
+        questions: [
+          {
+            prompt: "What are the two most common service errors the course identifies?",
+            options: [
+              "Reds served too warm and whites served too cold",
+              "Wines poured too generously and glasses filled too full",
+              "Bottles opened too early and decanters left uncovered",
+              "Glasses washed with detergent and stored upside down",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fifteen minutes in the fridge for a red and ten minutes on the counter for a white will improve more bottles than anything else in the module, because temperature changes aroma release, acid and tannin perception.",
+            sourceLessonSlug: "somm-temperature-glass-decanting",
+          },
+          {
+            prompt: "What does cold temperature do to a wine's perceived structure?",
+            options: [
+              "It softens tannin and makes acidity feel rounder and gentler",
+              "It suppresses aroma, tightens acid and makes tannin feel harsher",
+              "It increases the perception of alcohol and residual sweetness",
+              "It has no measurable effect until the wine falls below freezing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Cold suppresses aromatic release and sharpens the structural edges, which is why chilling suits simple fresh wines and punishes tannic ones. Warmth does the reverse and makes alcohol more obvious.",
+            sourceLessonSlug: "somm-temperature-glass-decanting",
+          },
+          {
+            prompt: "How do the two purposes of decanting differ in technique?",
+            options: [
+              "Sediment removal needs vigorous splashing, aeration needs a slow steady pour",
+              "Both require the same slow pour, differing only in the vessel used",
+              "Sediment removal needs a slow careful pour, aeration wants air and time",
+              "Aeration requires chilling the wine first, sediment removal does not",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Separating deposit is careful work done just before serving, since an old wine can flatten with aggressive air. Opening a young closed wine is the opposite: splash it and give it an hour or two.",
+            sourceLessonSlug: "somm-temperature-glass-decanting",
+          },
+          {
+            prompt: "What is the correct technique for opening a sparkling bottle?",
+            options: [
+              "Hold the cork still and turn the bottle, easing it out at an angle",
+              "Grip the cork firmly and twist it while holding the bottle steady",
+              "Loosen the cage fully, then let internal pressure push the cork free",
+              "Warm the neck slightly so the cork releases with less resistance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Several atmospheres of pressure make this a genuine hazard. Keep a thumb over the cork from the moment the cage loosens, chill the bottle thoroughly, and aim it away from people.",
+            sourceLessonSlug: "somm-opening-and-storing",
+          },
+          {
+            prompt: "Which storage factor does the course rank as doing the most damage?",
+            options: [
+              "Vibration from nearby appliances or passing traffic",
+              "Low humidity drying out the cork over several years",
+              "Storing bottles upright rather than lying them down",
+              "Heat, and especially repeated swings in temperature",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Heat ages wine faster and worse, and a hot car can kill a bottle in a day. Swings are worse than a stable warm cupboard, because expansion and contraction pushes wine past the cork.",
+            sourceLessonSlug: "somm-opening-and-storing",
+          },
+          {
+            prompt: "What is the most common presentation of cork taint?",
+            options: [
+              "An obvious smell of wet cardboard or a damp basement",
+              "A subtle stripping of fruit that leaves the wine muted and short",
+              "A visible haze combined with a light fizz on the palate",
+              "A bruised apple and toffee character with a browning colour",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The dramatic version is easy. The common one removes fruit without announcing itself, which is why a wine that seems oddly flat deserves a second sniff. Bruised apple and browning is oxidation instead.",
+            sourceLessonSlug: "somm-faults",
+          },
+          {
+            prompt: "Struck match and rotten egg aromas call for what response?",
+            options: [
+              "Immediate rejection, since the fault is permanent and untreatable",
+              "Chilling the wine hard, which suppresses sulfur compounds",
+              "Decanting and vigorous swirling, then reassessing after twenty minutes",
+              "Adding a small amount of water to dilute the affected compounds",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Reduction is often temporary and oxygen dissipates it. If the smell blows off the wine may be excellent, and if it survives real aeration the bottle is genuinely faulty.",
+            sourceLessonSlug: "somm-faults",
+          },
+          {
+            prompt: "Which of these is NOT a fault?",
+            options: [
+              "Tartrate crystals on the base of a cork or bottle",
+              "A vinegar aroma dominating the wine's fruit character",
+              "Baked, stewed fruit with a pushed-up cork and sticky capsule",
+              "A wet cardboard aroma that strips the fruit from the palate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tartrates are harmless potassium bitartrate precipitated by cold, and can indicate a wine that was not cold stabilised. The others describe volatile acidity, heat damage and cork taint.",
+            sourceLessonSlug: "somm-faults",
+          },
+          {
+            prompt: "Why is Brettanomyces described as divisive rather than simply bad?",
+            options: [
+              "It is undetectable to most tasters at any concentration",
+              "It is legally permitted in some countries and banned in others",
+              "It only affects white wines, which are rarely assessed for faults",
+              "Small amounts read as savoury complexity, larger amounts smother fruit",
+            ],
+            correctIndex: 3,
+            explanation:
+              "It is a matter of degree, like volatile acidity. Many experienced tasters value a trace of it, and calling it a fault at low levels reliably starts an argument at a wine table.",
+            sourceLessonSlug: "somm-faults",
+          },
+          {
+            prompt: "What is the most effective way to keep an opened bottle of table wine?",
+            options: [
+              "Leave it on the counter so it can continue to open up",
+              "Transfer it to a smaller bottle filled to the top, and refrigerate",
+              "Add a splash of a stronger wine to raise the alcohol level",
+              "Stand the original bottle upright without recorking it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Surface area in contact with oxygen is what matters, so a full small bottle beats a half empty large one, and cold slows everything down. Fortified wines are the exception, surviving weeks because the oxidation was deliberate.",
+            sourceLessonSlug: "somm-opening-and-storing",
+          },
+          {
+            prompt: "Why is a flute the least useful glass shape for tasting?",
+            options: [
+              "It concentrates bubbles and gives too little room for aroma",
+              "Its thick walls transfer heat from the hand into the wine",
+              "Its wide bowl allows aromatic compounds to escape too quickly",
+              "Its narrow base makes swirling physically impossible to perform",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A flute looks elegant and starves the nose. A normal white wine glass with a bowl to swirl in and a rim that narrows serves sparkling wine far better if you actually want to smell it.",
+            sourceLessonSlug: "somm-temperature-glass-decanting",
+          },
+        ],
+      },
+    },
+
+    // ══════════════ MODULE 10 · PAIRING ══════════════
+    {
+      slug: "somm-pairing-mechanics",
+      title: "44 · Pairing is mechanics, not etiquette",
+      section: "Module 10 · Pairing",
+      recallContent: [
+        {
+          prompt: "Name the seven faults from the previous module, and the two things that are commonly mistaken for faults.",
+          answer:
+            "Cork taint, oxidation, volatile acidity, Brettanomyces, reduction, heat damage and refermentation. Sediment in an old red and tartrate crystals are both normal and harmless.",
+        },
+      ],
+      body: `Forget red with meat and white with fish. That rule is a rough summary of a mechanism, and the mechanism itself is short enough to learn directly, at which point you can pair anything, including things no rule covers.
+
+**The interactions that actually drive pairing.** Every one of these is something you can feel in Flight 11.
+
+| Interaction | What happens | Use it for |
+| --- | --- | --- |
+| **Salt softens tannin** | Salt reduces the perception of bitterness and astringency, so a tannic red feels rounder | The single most useful trick in pairing. Salt is why cured meat and hard cheese rescue a young tannic red |
+| **Fat and protein soften tannin** | Tannins bind to proteins, so the fat and protein in food occupy them instead of your saliva | Why steak and Cabernet works. It is a chemical transaction, not a tradition |
+| **Acid in wine cuts fat** | High acid refreshes the palate between rich mouthfuls | Why Champagne works with fried food, and why a high acid white beats an oaked one with cream sauce |
+| **Acid matches acid** | A dish with lemon or vinegar makes a low acid wine taste flat and flabby | Match or exceed the dish's acidity. Sangiovese and tomato is this rule |
+| **Sweetness must not be outgunned** | If the food is sweeter than the wine, the wine tastes sour, thin and metallic | Dessert wine must be at least as sweet as the dessert |
+| **Umami makes wine seem harsher** | Umami rich food increases perceived bitterness and astringency | Mushrooms, aged cheese, soy and cured fish need care. Salt and acid in the dish counteract it |
+| **Alcohol amplifies chilli heat** | Ethanol intensifies capsaicin burn | With spicy food, drop the alcohol and add a little sweetness. Off dry Riesling is the classic answer |
+| **Bitter adds to bitter** | Tannin plus bitter food compounds rather than balances | Be careful with very tannic reds alongside bitter greens or dark chocolate |
+
+**The three principles those interactions collapse into.**
+
+1. **Match weight.** A delicate wine dies under a heavy dish and vice versa. This is the one that makes red with steak and white with sole roughly work.
+2. **Acid is your safety net.** A high acid wine is the most food flexible thing you can put on a table, because acid refreshes and rarely clashes.
+3. **The most extreme element on the plate is what you pair with.** Not the protein. If the fish comes in a heavy cream sauce, pair with the sauce. If the chicken is coated in chilli, pair with the chilli.
+
+**Two classic pairings, explained by the mechanism rather than the tradition.**
+
+- **Sancerre with goat cheese.** Both come from the same place, which is the folk explanation. The mechanism is that the cheese's tartness and salt meet a wine with matching acidity, so neither flattens the other.
+- **Port with Stilton.** Salt in the blue cheese softens the wine's structure, the wine's sweetness balances the cheese's savoury intensity, and both are powerful enough not to be erased.
+
+**When it goes wrong.** The most common failures are a sweet dessert with a dry wine (the wine turns sour), a tannic red with a chilli-heavy dish (the burn and the astringency compound), and a delicate old wine with anything assertive (the food simply erases the wine).
+
+:::reveal You are serving a spicy Thai curry. Explain, mechanically, why a high alcohol Zinfandel is a poor choice and what you would pour instead. ||| Ethanol amplifies the capsaicin burn, so a high alcohol red makes the dish hotter and the wine feel harsher, and any tannin adds astringency on top of the heat. The mechanical fix is lower alcohol plus some residual sugar, because sweetness tames the burn, so an off dry Riesling or a similar aromatic white at modest alcohol is the classic answer, and a fruity low tannin red served cool is a reasonable second choice.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Lawless, H. T., & Heymann, H. (2010). *Sensory evaluation of food: Principles and practices* (2nd ed.). Springer.`,
+    },
+    {
+      slug: "somm-pairing-practice",
+      title: "45 · Testing the mechanics on your own tongue",
+      section: "Module 10 · Pairing",
+      body: `Everything in the previous lesson is falsifiable, which is unusual in wine writing and worth exploiting. This flight is a laboratory: five foods, three wines, fifteen combinations, and only one thing to record each time, what MOVED.
+
+**Before you start, one warning about how you will be tempted to record results.** Do not write "good" or "bad." Write the direction of change. "The tannin dropped by a step." "The acid went from refreshing to sharp." "The wine tasted thinner." Direction is transferable to a wine you have never met, and a verdict is not.
+
+**Predict first.** For each of the fifteen combinations, write your prediction before tasting. This is not busywork: predicting and then being wrong is what fixes the mechanism in memory, and simply confirming what you read teaches you far less.
+
+**The two combinations to pay closest attention to**
+
+- **Tannic red plus salty food.** This is the largest and most reliable effect in the whole flight, and the one you will use most often for the rest of your life.
+- **Tannic red plus chilli.** The unpleasant one. Feeling how astringency and burn compound is the fastest way to stop making this mistake at a dinner table.
+
+**After the flight, do this.** Take the three worst combinations you found and write, for each, what you would change: a different wine, or a change to the dish. "Add salt or fat to the dish" is a legitimate answer, and it is what a kitchen actually does. Pairing is a two-sided negotiation, and the food can move.
+
+${flightCard(FLIGHT_11)}
+
+:::reveal In the flight you record that a wine "tasted thinner" after a bite of food. Which interaction most likely produced that, and what would you change? ||| Most likely the food was sweeter or more acidic than the wine. Sweetness in the dish makes a less sweet wine read sour, thin and metallic, and a sharply acidic dish makes a lower acid wine taste flat. The fix on the wine side is to move up in sweetness or acidity to at least match the dish, and the fix on the food side is to cut the sugar or the acid, which is a legitimate move since pairing negotiates from both directions.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Lawless, H. T., & Heymann, H. (2010). *Sensory evaluation of food: Principles and practices* (2nd ed.). Springer.`,
+    },
+    {
+      slug: "somm-quiz-10",
+      title: "46 · Knowledge check: pairing",
+      section: "Module 10 · Pairing",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why does steak work with a tannic red wine?",
+            options: [
+              "Tannins bind to the fat and protein in the food instead of to your saliva",
+              "The heat of cooked meat evaporates the alcohol in the wine",
+              "Red meat and red wine share the same dominant aroma compounds",
+              "Grilling produces acids that neutralise the tannins chemically",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tannin's drying grip comes from binding salivary proteins. Food that supplies its own fat and protein occupies the tannin, so the wine feels rounder. It is a transaction rather than a tradition.",
+            sourceLessonSlug: "somm-pairing-mechanics",
+          },
+          {
+            prompt: "What does the course call the single most useful trick in pairing?",
+            options: [
+              "Matching the wine's region to the dish's country of origin",
+              "Salt softening the perception of tannin and bitterness",
+              "Serving every wine two degrees cooler than usual",
+              "Choosing wines older than the recipe being cooked",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Salt reduces perceived bitterness and astringency, which is why cured meat and hard cheese rescue a young tannic red. It is the largest and most reliable effect in the pairing flight.",
+            sourceLessonSlug: "somm-pairing-mechanics",
+          },
+          {
+            prompt: "A dessert is sweeter than the wine served with it. What happens?",
+            options: [
+              "The wine tastes sweeter than it is by contrast with the dish",
+              "The wine's alcohol becomes more noticeable and warming",
+              "The wine tastes sour, thin and slightly metallic",
+              "The pairing is neutral, since sweetness does not interact",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Sweetness in food outguns a less sweet wine and strips it. The rule is that a dessert wine must be at least as sweet as the dessert it accompanies.",
+            sourceLessonSlug: "somm-pairing-mechanics",
+          },
+          {
+            prompt: "Which wine characteristic makes a chilli-heavy dish worse?",
+            options: [
+              "High alcohol, which amplifies the capsaicin burn",
+              "High residual sugar, which coats the palate",
+              "Low alcohol, which fails to cut through the spice",
+              "High acidity, which reacts with the chilli oils",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ethanol intensifies the burn, and tannin adds astringency on top of it. The mechanical fix is lower alcohol plus some sweetness, which is why off dry Riesling is the classic answer to spicy food.",
+            sourceLessonSlug: "somm-pairing-mechanics",
+          },
+          {
+            prompt: "What should you pair with when the plate holds a mild protein in an assertive sauce?",
+            options: [
+              "The protein, since it forms the bulk of the dish by weight",
+              "The most extreme element, which here is the sauce",
+              "The side dishes, which set the meal's overall weight",
+              "The cooking method, regardless of the ingredients used",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Fish in a heavy cream sauce is a cream sauce pairing, and chicken under chilli is a chilli pairing. This is the principle that replaces red with meat and white with fish.",
+            sourceLessonSlug: "somm-pairing-mechanics",
+          },
+          {
+            prompt: "Why does umami rich food need care with wine?",
+            options: [
+              "It coats the tongue and blocks retronasal aroma completely",
+              "It reacts with sulfites to produce an unpleasant aroma",
+              "It neutralises acidity, leaving the wine tasting flabby",
+              "It increases the perception of bitterness and astringency",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Mushrooms, aged cheese, soy and cured fish can make a wine seem harsher than it is. Salt and acid in the dish counteract the effect, which is why seasoning matters to a pairing.",
+            sourceLessonSlug: "somm-pairing-mechanics",
+          },
+          {
+            prompt: "Why is a high acid wine described as the most food flexible choice?",
+            options: [
+              "Acid refreshes the palate and rarely clashes with a dish",
+              "Acid masks any fault that might be present in the wine",
+              "High acid wines are always lower in alcohol than other wines",
+              "Acid prevents the food from changing the wine's structure at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Acid cuts fat and matches acidic dishes, so it works across a very wide range of food. Food does still change the wine, which is the entire point of running the pairing flight.",
+            sourceLessonSlug: "somm-pairing-mechanics",
+          },
+          {
+            prompt: "When recording results in the pairing flight, what should you write down?",
+            options: [
+              "A verdict on whether each combination was good or bad",
+              "The direction of change in each structural component",
+              "A score out of ten for every one of the combinations",
+              "Which of the two, the wine or the food, you preferred alone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Direction transfers to wines you have never met. A verdict does not, because it only describes the specific pair in front of you on that day.",
+            sourceLessonSlug: "somm-pairing-practice",
+          },
+          {
+            prompt: "What is the mechanical explanation for Port with Stilton?",
+            options: [
+              "Both originate in the same region, which guarantees a match",
+              "The cheese's fat is the only element interacting with the wine",
+              "Blue cheese contains no salt, so it cannot alter the wine",
+              "Salt softens the wine's structure, and both are intense enough to survive each other",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Salt in the cheese softens the wine, the wine's sweetness balances the cheese's savoury intensity, and matched weight keeps either from erasing the other. Geography is the folk explanation rather than the mechanism.",
+            sourceLessonSlug: "somm-pairing-mechanics",
+          },
+          {
+            prompt: "Why does the course tell you to predict each pairing result before tasting it?",
+            options: [
+              "Being wrong about a prediction fixes the mechanism in memory",
+              "Predictions are required to calculate a pairing score afterwards",
+              "It prevents the food from altering your perception of the wine",
+              "Predicting speeds the flight up by reducing tasting time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Confirming something you just read teaches very little. Committing to a prediction and finding it wrong is what makes the interaction stick, which is why the flight asks for fifteen written guesses.",
+            sourceLessonSlug: "somm-pairing-practice",
+          },
+        ],
+      },
+    },
+
+    // ══════════════ MODULE 11 · DEDUCTION ══════════════
+    {
+      slug: "somm-deduction-grid",
+      title: "47 · The deduction grid",
+      section: "Module 11 · Deduction",
+      recallContent: [
+        {
+          prompt: "State the three principles that all the pairing interactions collapse into.",
+          answer:
+            "Match the weight of the wine to the weight of the dish. Treat acid as your safety net, since a high acid wine is the most food flexible. And pair with the most extreme element on the plate, which is often the sauce or the spice rather than the protein.",
+        },
+      ],
+      body: `Blind tasting is deduction, not recognition. Nobody recognises wines. What good tasters do is gather evidence in a fixed order, eliminate possibilities, and arrive at the most defensible conclusion. The conclusion is often wrong. The PROCESS is what gets graded, and it is the process that makes you better at every other part of this course.
+
+**The order, and why each step comes where it does.**
+
+**Step 1: Structure, before anything else.** Score all six components. Structure is the least suggestible evidence you have, and it eliminates more than aroma does. High tannin with a pale colour has already removed most of the world's red grapes.
+
+**Step 2: Climate.** Use the four things that move together from Module 4: acid, alcohol, fruit ripeness, body. Climate is the call you will get right most often, and it should be made before you think about a grape, because it narrows the grape list enormously.
+
+**Step 3: Winemaking.** Ask what was DONE to this wine. Oak, and if so how new and what origin. Malolactic conversion. Lees. Carbonic. Skin contact. Getting this wrong is what sends people down a wrong grape path, because oak vanilla and carbonic banana are constantly mistaken for varietal character.
+
+**Step 4: Grape or grape family.** Only now. Use the markers from Module 3, and prefer a family to a name when the evidence is thin. "A thin skinned, high acid red" is a better answer than a confident wrong grape.
+
+**Step 5: Age.** Colour at the rim, the balance of primary to tertiary aromas, and how integrated the tannin feels. Ranges, not years: young, moderate, or with real age.
+
+**Step 6: Conclusion and quality.** Commit to a call. Then judge quality separately, using balance, length, intensity and complexity, and note whether the wine is ready.
+
+**The discipline that makes it work.** Write everything down before you speak. Never revise an earlier observation to fit a later guess, which is the single most common failure and it feels exactly like insight while you are doing it. If step 4 contradicts step 1, step 1 usually wins, because structure is harder to talk yourself into than aroma.
+
+**How accurate should you expect to be?** Not very, and this is worth saying plainly. Even professional judging is far less consistent than the confidence around it suggests: Hodgson (2008) found that judges at a major competition often failed to replicate their own scores on the same wine within the same event. Expect to call climate correctly most of the time, style and winemaking often, grape sometimes, and precise appellation and vintage rarely. Anyone claiming otherwise is performing.
+
+:::reveal Your structural evidence says high tannin and pale colour, but the aroma makes you want to call a Syrah. Which do you trust and why? ||| Trust the structure. Syrah is not pale, so the structural evidence has already eliminated it, and the temptation to revise an earlier observation to fit a later guess is the single most common failure in blind tasting. Pale plus high tannin plus high acid points at Nebbiolo, and the honest move is to record the conflict rather than quietly downgrade what you observed first.
+
+## Sources
+- Hodgson, R. T. (2008). An examination of judge reliability at a major U.S. wine competition. *Journal of Wine Economics, 3*(2), 105-113. https://doi.org/10.1017/S1931436100001152
+- Lawless, H. T., & Heymann, H. (2010). *Sensory evaluation of food: Principles and practices* (2nd ed.). Springer.`,
+    },
+    {
+      slug: "somm-calling-a-wine",
+      title: "48 · Calling a wine, and being wrong usefully",
+      section: "Module 11 · Deduction",
+      body: `Two worked examples, then the flight where you do it yourself.
+
+**Worked example one.**
+
+> Pale lemon, no rim development. Pronounced nose: grass, gooseberry, passionfruit, no oak markers. Dry. Very high acid. No tannin. Medium alcohol, around 12.5%. Light to medium body. Medium finish.
+
+Reasoning: no oak and no tertiary character, so young and unoaked. Very high acid with modest alcohol means a cool climate or an early pick. The green plus tropical combination is pyrazines and thiols together, which is a narrow door. Conclusion: Sauvignon Blanc, cool climate, one to three years old. If pressed on origin, the loud tropical end suggests New Zealand, the more restrained and mineral end suggests the Loire. Quality: judge on length and balance, not on how loud it is.
+
+**Worked example two.**
+
+> Medium ruby with a garnet rim. Medium intensity nose: dried cherry, tobacco, leather, dried herbs. Dry. Very high acid. High, slightly grainy tannin. Medium alcohol. Medium body. Long finish.
+
+Reasoning: a garnet rim with leather and tobacco means real age, so at least eight to ten years. Very high acid with high tannin and only medium body is not a warm climate profile. The savoury, herbal, sour cherry direction narrows sharply. Conclusion: Sangiovese from Tuscany with roughly a decade of age, or Nebbiolo if the colour were paler and the tannin finer. Note the honesty of that last clause: naming your second choice and the evidence that would have switched you is what a good tasting note does.
+
+**The three habits that separate a useful call from a lucky one**
+
+1. **Name your second choice.** And say which single observation would have moved you to it. That sentence is worth more than the primary call.
+2. **Say the confidence out loud.** "Cool climate, high confidence. Grape, low confidence." A calibrated taster is more useful than a confident one.
+3. **Record your errors by TYPE.** Not "I said Merlot and it was Syrah," but "I under-called acid again," or "I read oak as ripeness again." Errors cluster by type, and your own list of two or three recurring errors is the fastest improvement available to you.
+
+${flightCard(FLIGHT_12)}
+
+:::reveal Why is naming your second choice and the observation that would have switched you more valuable than the primary call? ||| Because it makes the reasoning inspectable and improvable, where a bare guess is only right or wrong. It shows which evidence you actually weighted, exposes the specific observation you were least sure of, and when you turn out to be wrong it tells you immediately whether the failure was in the observation or in the inference drawn from it. That distinction is what lets errors be sorted by type, which is the fastest route to getting better.
+
+## Sources
+- Hodgson, R. T. (2008). An examination of judge reliability at a major U.S. wine competition. *Journal of Wine Economics, 3*(2), 105-113. https://doi.org/10.1017/S1931436100001152
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.`,
+    },
+    {
+      slug: "somm-quiz-11",
+      title: "49 · Knowledge check: deduction",
+      section: "Module 11 · Deduction",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why does the deduction grid score structure before considering the grape?",
+            options: [
+              "Structure is the least suggestible evidence and eliminates the most options",
+              "Structure is the only element that appears on a certification score sheet",
+              "Aroma compounds fade too quickly to be assessed reliably at all",
+              "Grape identification is considered irrelevant to a professional taster",
+            ],
+            correctIndex: 0,
+            explanation:
+              "High tannin with a pale colour has already removed most red grapes before you smell anything. Structure is also much harder to talk yourself into than aroma is.",
+            sourceLessonSlug: "somm-deduction-grid",
+          },
+          {
+            prompt: "Which call should a taster expect to get right most often?",
+            options: [
+              "The exact vintage year of the wine",
+              "The precise appellation the wine came from",
+              "The climate the grapes were grown in",
+              "The specific producer who made the wine",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Climate moves four structural things together and is readable directly. Grape is sometimes gettable, and precise appellation and vintage are rarely reliable even for professionals.",
+            sourceLessonSlug: "somm-deduction-grid",
+          },
+          {
+            prompt: "What does Hodgson's (2008) study of a major competition establish?",
+            options: [
+              "That judges reliably agree with each other on the best wines",
+              "That judges often failed to replicate their own scores on the same wine",
+              "That blind tasting produces more accurate results than sighted tasting",
+              "That expert judges outperform amateurs by a very wide margin",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Self-consistency within a single event was poor, which is the honest backdrop for anyone claiming high blind tasting accuracy. It is a reason for calibration rather than for cynicism.",
+            sourceLessonSlug: "somm-deduction-grid",
+          },
+          {
+            prompt: "Your structural evidence conflicts with the grape your nose wants to call. What do you do?",
+            options: [
+              "Revise the structural scores so the evidence fits the grape",
+              "Discard both and start the assessment over from the beginning",
+              "Average the two and record a conclusion somewhere between them",
+              "Trust the structure and record the conflict openly in your note",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Quietly revising an earlier observation to fit a later guess is the most common failure in blind tasting, and it feels like insight while it is happening. Structure is the more reliable evidence.",
+            sourceLessonSlug: "somm-deduction-grid",
+          },
+          {
+            prompt: "Why should a taster record errors by TYPE rather than by wine?",
+            options: [
+              "Errors cluster by type, so a short list of recurring ones drives improvement",
+              "Recording by wine is prohibited under standard tasting protocols",
+              "Error types are needed to calculate an overall accuracy percentage",
+              "Wines change between vintages, so the specific wine is irrelevant",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'I under-called acid again' is actionable where 'I said Merlot and it was Syrah' is not. Two or three recurring error types are usually the fastest improvement available.",
+            sourceLessonSlug: "somm-calling-a-wine",
+          },
+          {
+            prompt: "What makes naming a second choice so valuable in a tasting note?",
+            options: [
+              "It doubles the chance that one of the two calls is correct",
+              "It shows the reasoning, and identifies which observation was weakest",
+              "It is required before a conclusion can be considered complete",
+              "It allows other tasters to score the note more consistently",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Naming the observation that would have switched you makes the reasoning inspectable, so a wrong call tells you whether the failure was in the observation or in the inference.",
+            sourceLessonSlug: "somm-calling-a-wine",
+          },
+          {
+            prompt: "In the grid, why does winemaking get assessed before the grape?",
+            options: [
+              "Winemaking is easier to identify than any structural component",
+              "Grape character disappears entirely once a wine is oaked",
+              "Oak and carbonic markers are routinely mistaken for varietal character",
+              "Winemaking determines the legal appellation the wine can claim",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Vanilla from oak and banana from carbonic maceration send tasters down wrong grape paths constantly. Naming the cellar decisions first removes them from the evidence pool.",
+            sourceLessonSlug: "somm-deduction-grid",
+          },
+          {
+            prompt: "A wine shows a garnet rim, leather, tobacco and dried cherry. What does that combination indicate?",
+            options: [
+              "A young wine that has been aged in heavily toasted new oak",
+              "A wine with real bottle age, likely eight to ten years or more",
+              "A wine that has suffered heat damage during shipping",
+              "A wine made by carbonic maceration and released early",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A garnet rim is the colour reading for age, and leather and tobacco are tertiary aromas. Heat damage reads as baked and flat fruit rather than as this developed, savoury complexity.",
+            sourceLessonSlug: "somm-calling-a-wine",
+          },
+          {
+            prompt: "What does the course recommend when the evidence for a specific grape is thin?",
+            options: [
+              "Name a grape family rather than committing to a single variety",
+              "Decline to offer any conclusion at all about the wine",
+              "Choose the most widely planted grape matching the profile",
+              "Guess the most expensive grape that fits the observations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'A thin skinned, high acid red' is a better and more defensible answer than a confident wrong grape, and it keeps the note honest about how much the evidence actually supports.",
+            sourceLessonSlug: "somm-deduction-grid",
+          },
+          {
+            prompt: "Why does the blind flight ask you to reveal all six wines at once rather than one at a time?",
+            options: [
+              "It saves time and keeps the tasting to a single sitting",
+              "Revealing individually is prohibited in formal examinations",
+              "An early miss would distort the calls you make on the rest",
+              "The wines must be compared simultaneously to be scored fairly",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Learning you were wrong on wine two changes how you approach wines three through six, which contaminates the exercise. Committing to all six in writing first keeps each call independent.",
+            sourceLessonSlug: "somm-calling-a-wine",
+          },
+        ],
+      },
+    },
+
+    // ══════════════ MODULE 12 · CLOSE ══════════════
+    {
+      slug: "somm-capstone",
+      title: "50 · Capstone: buy, taste, and defend three bottles",
+      section: "Module 12 · Close",
+      lessonType: "assignment",
+      body: `One assignment, three bottles, and a written defence. It is designed so that nobody can complete it by reading, and so that a learner on the no-alcohol path can complete it fully.
+
+**The brief.** You are choosing wine for a specific meal, for four people, with a total budget of sixty US dollars for three bottles. Pick any meal you like, including one you actually intend to cook. Then buy, taste and defend.
+
+**What to submit.**
+
+**1. The brief you set yourself.** The meal, in enough detail to pair against: the protein, the cooking method, the sauce, the seasoning, and which element is the most extreme one on the plate.
+
+**2. Three bottles, with reasoning.** For each: what you bought, what it cost, and WHY, referencing at least one mechanism from Module 10 and one piece of label evidence from Module 6. At least one of the three must come from a place where value structurally hides (Lesson 37), and you must say which category it falls into and why that category is underpriced.
+
+**3. A full tasting note on each**, on the grid from Module 2: sight, nose, all six structural components, conclusion. Scores must be defended by sensation, not by expectation.
+
+**4. A blind call on one of the three.** Have someone pour one of them without telling you which. Work the deduction grid from Module 47, commit to a written conclusion, then reveal. Include your call, the reveal, and, if you were wrong, the ONE observation that should have redirected you.
+
+**5. The pairing result.** What actually happened at the meal. Which of the three worked, which did not, and what MOVED in each wine when food arrived. A pairing that failed, analysed honestly, scores exactly as well here as one that worked.
+
+**6. Your price ceiling.** From Flight 10 and this assignment, where does more money stop buying you pleasure? Give a number and the evidence behind it.
+
+**The no-alcohol version.** Identical structure. Substitute three non-alcoholic drinks chosen to differ on acid, sweetness and grip (the substitution table in every flight card gives you the pattern), pair them against the same meal, run the same tasting grid minus the alcohol line, and run the blind call on one of the three. Every mechanism in Module 10 except the alcohol and chilli interaction is testable this way, and the assignment is graded identically.
+
+**What a strong submission looks like.** It is specific, it cites its own evidence, and it admits at least one thing that went wrong. A submission where all three bottles were perfect and every prediction was correct is a submission that was not really tested.`,
+    },
+    {
+      slug: "somm-cumulative-review",
+      title: "51 · Cumulative review: the whole course on one page",
+      section: "Module 12 · Close",
+      body: `**The grid.** Sight, nose, palate, conclusion, in that order, because it runs from least suggestible evidence to most, and the order is a defence against your own confirmation bias.
+
+**The six structural components**, each with its own address in your mouth: sweetness at the tip, acidity at the sides as salivation, tannin as a drying grip on the gums, alcohol as warmth after swallowing, body as weight, finish counted in seconds. Score them before describing flavour, because structure is close to measurable and flavour is associative.
+
+**The three aroma buckets.** Primary from grape and fermentation, secondary from winemaking (oak, malolactic, lees), tertiary from age. Sorting an aroma into a bucket is what turns a descriptor into information.
+
+**Quality is not preference.** Balance, length, intensity, complexity are the four criteria, and balance is the one a beginner can feel first. You should be able to say "this is excellent and I do not enjoy it" without embarrassment.
+
+**Climate moves four things together.** Warmer means more sugar and less acid, so alcohol and body rise, fruit moves from fresh toward cooked and dried, and tannins ripen. Two of the four is a hypothesis, four is a call. A large diurnal range is what explains the exceptions.
+
+**Terroir is real, and rock does not travel into the glass.** Soil works through drainage, heat and root depth. Minerality is a genuine perception with other causes.
+
+**The cellar imitates the grape, constantly.** Butter is malolactic. Vanilla and coconut are oak. Banana is carbonic. Bread is lees. Naming the winemaking first is what keeps you from misreading the variety.
+
+**Labels are legal documents.** Old World labels answer WHERE and carry more enforceable content. New World labels answer WHAT and carry percentage rules. Reserve means nothing in the United States. The German Pradikat ladder ranks ripeness at harvest, not sweetness, so read the alcohol.
+
+**Price is mostly fixed costs at the bottom.** Which is why cheap to mid is the biggest quality jump you will ever buy, and why finding your own ceiling matters more than anybody's score.
+
+**Service ruins more wine than winemaking does.** Reds too warm, whites too cold, and both fixable in ten minutes. Decant for sediment gently and late, decant for air early and roughly.
+
+**Faults are specific.** Cork taint, oxidation, volatile acidity, brett, reduction, heat damage, refermentation. Sediment and tartrates are not faults. Reduction may blow off, so decant before you judge.
+
+**Pairing is mechanics.** Salt and fat soften tannin. Acid cuts fat and must match the dish. The wine must be at least as sweet as the dessert. Alcohol amplifies chilli. Pair with the most extreme element on the plate.
+
+**Deduction is a process, not a party trick.** Structure, climate, winemaking, grape, age, conclusion. Name your second choice. State your confidence. Record errors by type.
+
+**And the one habit underneath all of it:** taste comparatively, write before you speak, and defend every score by pointing at a sensation.
+
+:::reveal Without looking back, name the six structural components and where each is felt, then the three aroma buckets and what each one tells you about the wine. ||| Sweetness at the tip of the tongue, acidity at the sides felt as salivation, tannin as a drying grip on the gums and cheeks, alcohol as warmth after swallowing or spitting, body as weight on the tongue, and finish counted in seconds after the wine is gone. The buckets are primary (grape and fermentation, so it tells you about the variety and ripeness), secondary (winemaking, so it tells you what someone decided to do), and tertiary (age, so it tells you the wine has time on it and something about how it was stored).
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Waterhouse, A. L., Sacks, G. L., & Jeffery, D. W. (2016). *Understanding wine chemistry*. Wiley.
+- Lawless, H. T., & Heymann, H. (2010). *Sensory evaluation of food: Principles and practices* (2nd ed.). Springer.`,
+    },
+    {
+      slug: "somm-sources",
+      title: "52 · Sources, and how to keep learning",
+      section: "Module 12 · Close",
+      body: `Every factual claim in this course is tied to a source, and the ones doing the heaviest lifting are gathered here. Where a rule is set by law, the law is cited rather than a summary of it, because appellation and labelling rules change and a secondary summary goes stale quietly.
+
+**How to keep learning, in order of return on effort**
+
+1. **Taste comparatively and write it down.** Two wines side by side, in a fixed note format, beats any amount of reading. A year of notes is the most valuable wine document you will ever own, because it is in your vocabulary.
+2. **Join or start a group.** Blind tasting alone is possible and much harder. Four people splitting six bottles costs each of you very little and doubles the learning rate.
+3. **Buy the same wine twice, years apart.** Almost nobody does this, and it teaches ageing in a way no book can.
+4. **Read the law when a label confuses you.** The regulations below are public, free, and much clearer than most of what is written about them.
+5. **Go back to Episode 9.** The history is not decoration. Knowing why the Dop system existed, what phylloxera did, and what the Judgment of Paris changed makes the map of modern wine legible in a way tasting alone does not.
+
+**A closing note on what this course is.** It taught you a method, roughly twenty grapes, a set of legal systems, and a way of being honest about what you can and cannot tell from a glass. It is not a certification, it is not affiliated with any certifying body, and it does not prepare you for their examinations. If it has done its job, you can walk into a shop with forty dollars and come out with something you will genuinely enjoy, and explain to somebody else why.
+
+## Sources
+
+**Law and regulation**
+- Alcohol and Tobacco Tax and Trade Bureau. (n.d.). *Labeling and advertising of wine* (27 C.F.R. Part 4). https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-4
+- Alcohol and Tobacco Tax and Trade Bureau. (n.d.). *American viticultural areas* (27 C.F.R. Part 9). https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-9
+- Commission Delegated Regulation (EU) 2019/33 of 17 October 2018 supplementing Regulation (EU) No 1308/2013 as regards applications for protection of designations of origin, geographical indications and traditional terms, labelling and presentation. *Official Journal of the European Union, L 9*, 2-45.
+- Commission Delegated Regulation (EU) 2019/934 of 12 March 2019 supplementing Regulation (EU) No 1308/2013 as regards wine-growing areas, oenological practices and the applicable restrictions. *Official Journal of the European Union, L 149*, 1-52.
+- Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013 establishing a common organisation of the markets in agricultural products. *Official Journal of the European Union, L 347*, 671-854.
+
+**Regulators and trade bodies**
+- Comite Champagne. (n.d.). *The Champagne appellation and its rules*. https://www.champagne.fr
+- Consejo Regulador DOCa Rioja. (n.d.). *Ageing categories*. https://www.riojawine.com
+- Institut national de l'origine et de la qualite. (n.d.). *Les signes officiels de la qualite et de l'origine*. https://www.inao.gouv.fr
+- International Organisation of Vine and Wine. (2021). *OIV standard for international wine competitions and spirituous beverages of vitivinicultural origin*. OIV. https://www.oiv.int
+- Verband Deutscher Pradikatsweinguter. (n.d.). *The VDP classification*. https://www.vdp.de
+- Wine Australia. (n.d.). *Label Integrity Programme*. https://www.wineaustralia.com
+
+**Science**
+- Bartoshuk, L. M. (2000). Comparing sensory experiences across individuals: Recent psychophysical advances illuminate genetic variation in taste perception. *Chemical Senses, 25*(4), 447-460. https://doi.org/10.1093/chemse/25.4.447
+- Bowers, J. E., & Meredith, C. P. (1997). The parentage of a classic wine grape, Cabernet Sauvignon. *Nature Genetics, 16*(1), 84-87. https://doi.org/10.1038/ng0597-84
+- Bowers, J., Boursiquot, J.-M., This, P., Chu, K., Johansson, H., & Meredith, C. (1999). Historical genetics: The parentage of Chardonnay, Gamay, and other wine grapes of northeastern France. *Science, 285*(5433), 1562-1565. https://doi.org/10.1126/science.285.5433.1562
+- Buck, L., & Axel, R. (1991). A novel multigene family may encode odorant receptors: A molecular basis for odor recognition. *Cell, 65*(1), 175-187. https://doi.org/10.1016/0092-8674(91)90418-X
+- Jackson, R. S. (2020). *Wine science: Principles and applications* (5th ed.). Academic Press.
+- Jones, G. V., White, M. A., Cooper, O. R., & Storchmann, K. (2005). Climate change and global wine quality. *Climatic Change, 73*(3), 319-343. https://doi.org/10.1007/s10584-005-4704-2
+- Lawless, H. T., & Heymann, H. (2010). *Sensory evaluation of food: Principles and practices* (2nd ed.). Springer.
+- Maletic, E., Pejic, I., Kontic, J. K., Piljac, J., Dangl, G. S., Vokurka, A., Lacombe, T., Mirosevic, N., & Meredith, C. P. (2004). Zinfandel, Dobricic, and Plavac Mali: The genetic relationships among three cultivars of the Dalmatian coast of Croatia. *American Journal of Enology and Viticulture, 55*(2), 174-180.
+- Maltman, A. (2013). Minerality in wine: A geological perspective. *Journal of Wine Research, 24*(3), 169-181. https://doi.org/10.1080/09571264.2013.793176
+- Sefton, M. A., & Simpson, R. F. (2005). Compounds causing cork taint and the factors affecting their transfer from natural cork closures to wine: A review. *Australian Journal of Grape and Wine Research, 11*(2), 226-240. https://doi.org/10.1111/j.1755-0238.2005.tb00290.x
+- van Leeuwen, C., & Seguin, G. (2006). The concept of terroir in viticulture. *Journal of Wine Research, 17*(1), 1-10. https://doi.org/10.1080/09571260600633135
+- Waterhouse, A. L., Sacks, G. L., & Jeffery, D. W. (2016). *Understanding wine chemistry*. Wiley.
+- Wood, C., Siebert, T. E., Parker, M., Capone, D. L., Elsey, G. M., Pollnitz, A. P., Eggers, M., Meier, M., Vossing, T., Widder, S., Krammer, G., Sefton, M. A., & Herderich, M. J. (2008). From wine to pepper: Rotundone, an obscure sesquiterpene, is a potent spicy aroma compound. *Journal of Agricultural and Food Chemistry, 56*(10), 3738-3744. https://doi.org/10.1021/jf800183k
+
+**Economics and judging**
+- Goldstein, R., Almenberg, J., Dreber, A., Emerson, J. W., Herschkowitsch, A., & Katz, J. (2008). Do more expensive wines taste better? Evidence from a large sample of blind tastings. *Journal of Wine Economics, 3*(1), 1-9. https://doi.org/10.1017/S1931436100000523
+- Hodgson, R. T. (2008). An examination of judge reliability at a major U.S. wine competition. *Journal of Wine Economics, 3*(2), 105-113. https://doi.org/10.1017/S1931436100001152
+
+**Reference**
+- International Organization for Standardization. (1977). *Sensory analysis: Apparatus. Wine-tasting glass* (ISO 3591:1977). ISO.
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Robinson, J., Harding, J., & Vouillamoz, J. (2012). *Wine grapes: A complete guide to 1,368 vine varieties, including their origins and flavours*. Ecco.`,
+    },
   ],
 };
