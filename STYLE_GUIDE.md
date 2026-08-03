@@ -87,6 +87,23 @@ Every customer-facing surface must pass before it can merge:
   [src/lib/research-checks.ts](src/lib/research-checks.ts) so it lands at `/admin/research` with the
   question, what the course currently claims, and exactly what is needed to close it. Delete the entry
   once the answer ships in the lesson.
+- **A course in a series carries a course code, and the code must not lie.** `seriesOrder` sorts;
+  the CODE is what a learner reads on a card in search results, on an instructor profile, anywhere
+  outside the series page. Set `seriesCode` (the prefix, e.g. `STORY`) and `seriesPosition` in the
+  `seedAuthoredCourse` call. The grammar is in [src/lib/series-code.ts](src/lib/series-code.ts):
+  `00` = start here, `01`–`98` = a step on one linear path, `T1`/`P2` = step 1 of track T / step 2
+  of track P, `99` = capstone taken last. Give `seriesTrack` a human name whenever the position
+  carries a letter, or the badge says "T1" with nothing on the page explaining what T is.
+  - **A letter is a promise that the tracks are independent.** Any track may be taken directly after
+    the `00` course, in any order, without the others. If a track secretly depends on another, the
+    fix is the curriculum, not the label: renumber it into the track it actually follows.
+  - **Never prefix the code onto `course.title`.** The title is also the OG card, the JSON-LD name,
+    the citation-list heading and what search matches against; `"STORY-T3 · Documentary"` breaks a
+    search for "Documentary" in all of them. The badge is rendered from the columns.
+  - `pnpm check:series-codes` (part of `pnpm lint`) fails a duplicate position, two courses claiming
+    the start or the capstone, a lettered position with no track name, and a prefix shared by two
+    series. It is **not** a ratchet and has no exception map: codes are new, so every code that
+    exists was written under this rule and there is nothing to grandfather.
 - No fabricated characters: real, cited figures or second-person address.
 - No "AI tells": no em/en dashes (use commas/periods/parentheses/colons), no ornate filler.
   Four things keep their dashes, because changing them would be an error, not a style fix:

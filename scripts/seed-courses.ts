@@ -11,6 +11,11 @@ import { MONODRAMA_PERFORMING_COURSE } from "./data/monodrama-performing-course"
 import { SHORT_FORM_DRAMA_COURSE } from "./data/short-form-drama-course";
 import { CIVIC_DOCUMENTATION_COURSE } from "./data/civic-documentation-course";
 import { HOW_STORIES_WORK_COURSE } from "./data/how-stories-work-course";
+import { NEWS_STORYTELLING_COURSE } from "./data/news-storytelling-course";
+import { DOCUMENTARY_COURSE } from "./data/documentary-course";
+import { ORAL_HISTORY_COURSE } from "./data/oral-history-course";
+import { DIGITAL_SOCIAL_STORYTELLING_COURSE } from "./data/digital-social-storytelling-course";
+import { MOCKUMENTARY_COURSE } from "./data/mockumentary-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -1227,7 +1232,10 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 1,
+    seriesOrder: 20,
+    seriesCode: "STORY",
+    seriesPosition: "P1",
+    seriesTrack: "Performed",
   });
 
   await seedAuthoredCourse(db, {
@@ -1239,7 +1247,10 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 2,
+    seriesOrder: 21,
+    seriesCode: "STORY",
+    seriesPosition: "P2",
+    seriesTrack: "Performed",
   });
 
   await seedAuthoredCourse(db, {
@@ -1251,7 +1262,10 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 3,
+    seriesOrder: 22,
+    seriesCode: "STORY",
+    seriesPosition: "P3",
+    seriesTrack: "Performed",
   });
 
   await seedAuthoredCourse(db, {
@@ -1263,13 +1277,17 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 4,
+    seriesOrder: 10,
+    seriesCode: "STORY",
+    seriesPosition: "T1",
+    seriesTrack: "True",
   });
 
-  // The CORE of the Storytelling series, written last on purpose (docs/storytelling-curriculum.md).
-  // seriesOrder 5 is its position in the reading order, not its importance: a learner may take it
-  // first and it lands harder fourth, once the specialised courses have put the six terms under
-  // pressure in forms that each remove something different.
+  // The CORE of the Storytelling series, written last on purpose (docs/storytelling-curriculum.md)
+  // and now coded STORY-00, the entry point. It was seriesOrder 5 while order was a flat integer,
+  // which was the BUILD order leaking into the learner's view: every other course in the series
+  // uses the six spine terms this one defines, so it is where a learner starts even though it is
+  // where the author finished. The tracks below fork from here and run in parallel.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -1279,7 +1297,96 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 5,
+    seriesOrder: 1,
+    seriesCode: "STORY",
+    seriesPosition: "00",
+  });
+
+  // The True track proper opens here. Civic documentation (order 4) came first because it is the
+  // most concrete, but news is the rung of the permission ladder directly above it: news may select
+  // and arrange, never invent.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "news-storytelling",
+    course: NEWS_STORYTELLING_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 11,
+    seriesCode: "STORY",
+    seriesPosition: "T2",
+    seriesTrack: "True",
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "documentary",
+    course: DOCUMENTARY_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 12,
+    seriesCode: "STORY",
+    seriesPosition: "T3",
+    seriesTrack: "True",
+  });
+
+  // Last rung of the True track, and the one that reframes the other three: civic documentation,
+  // news and documentary all point outward at an event, while oral history points at a person
+  // REMEMBERING, so its primary evidence is memory rather than correspondence to a record.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "oral-history",
+    course: ORAL_HISTORY_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 13,
+    seriesCode: "STORY",
+    seriesPosition: "T4",
+    seriesTrack: "True",
+  });
+
+  // The Distributed track, currently one course. Its discipline is the one the other two tracks
+  // never face: attention is re-earned every few seconds by someone who did not choose the work.
+  // Built on the CONSTRAINT rather than on any platform, because a course about a platform is
+  // obsolete in eighteen months and teaches nothing that transfers.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "digital-social-storytelling",
+    course: DIGITAL_SOCIAL_STORYTELLING_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 30,
+    seriesCode: "STORY",
+    seriesPosition: "D1",
+    seriesTrack: "Distributed",
+  });
+
+  // The SERIES CAPSTONE, and the only course here that genuinely requires the others: a
+  // mockumentary works by exploiting conventions a learner has to already believe in, so taught
+  // early it is a gimmick and taught last it explains why documentary conventions persuade at all.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "mockumentary",
+    course: MOCKUMENTARY_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 99,
+    seriesCode: "STORY",
+    seriesPosition: "99",
   });
 
   await seedAuthoredCourse(db, {

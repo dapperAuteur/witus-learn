@@ -6,6 +6,7 @@ import {
   getCourseById,
   getCourseByIdOrSlug,
   listCategories,
+  listSeries,
   listCourses,
   listSitemapCourses,
   type CatalogQuery,
@@ -73,6 +74,11 @@ export class ScopedDb {
 
   listCategories() {
     return listCategories(this.tenantId);
+  }
+
+  /** Every series this tenant publishes, summarised for the /series index. */
+  listSeries() {
+    return listSeries(this.tenantId);
   }
 
   /** Course rows for THIS tenant's sitemap (see listSitemapCourses). */

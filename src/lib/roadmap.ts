@@ -613,6 +613,41 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Course codes: a catalog that says where to start** (\`feat/storytelling-true-track\`,
+  migration 0047, task 235). Courses and categories now render in **curriculum order by default**
+  (category \`sort_order\`, then position within a series, then title; "Newest" is still one click
+  away but it is an owner's view, not a learner's), and every course in a series carries a **code
+  badge**, \`STORY-00\` or \`TASTE-02\`, on every card, everywhere a card appears. Grammar
+  (\`src/lib/series-code.ts\`, guarded by \`pnpm check:series-codes\`): \`00\` start here, \`01\`-\`98\` a
+  step on one linear path, **\`T1\`/\`P2\` a step on a parallel TRACK**, \`99\` capstone taken last.
+  The letter is what a flat integer could never express: Storytelling forks into a True track and a
+  Performed track that share a vocabulary but not a sequence, and numbering them 1-7 told a learner
+  that Documentary requires Monodrama. \`/series/<slug>\` now draws the fork, states the
+  parallel-tracks promise in words under each track, and explains how to read a code. The code is a
+  **badge, never a title prefix**: the title is also the OG card, the JSON-LD name and the
+  citation-list heading, so \`"STORY-T3 · Documentary"\` would break a search for "Documentary" in
+  all of them. A half-coded series degrades to a plain list rather than to a page missing courses.
+- 🔧 **/series, the course-paths front door** (\`feat/storytelling-true-track\`). \`/series/<slug>\`
+  could already explain one path, but nothing linked to it and nothing listed the others, so a
+  learner had to already know a series existed to find the page explaining it: the menu-orphan
+  failure one level up. \`/series\` now lists every series this tenant publishes with the two facts
+  that matter, **where to start** and **whether the path forks**, and it is in the Explore nav. Every
+  course card gains a "See the whole path" link. Tenant-scoped like any content read, because a
+  series NAME is information about another school; two isolation cases added, one for the series
+  list and one proving the curriculum sort's category join cannot pull a foreign sort_order (a leak
+  whose only symptom would be a wrong ORDER, with no foreign course returned).
+- 🔧 **Storytelling series COMPLETE, ten courses** (\`feat/storytelling-true-track\`). Courses #6-#10
+  finish both tracks and the capstone. **News storytelling** (\`T2\`): news may select and arrange
+  but never invent, so the ethics are made of choices rather than lies. **Documentary** (\`T3\`):
+  Nichols' modes as promises, consent as a process rather than an event, and an edit whose
+  dishonesties (frankenbite, false chronology, reaction transplant, absent context) are all made of
+  genuine footage. **Oral history** (\`T4\`): the only form whose primary evidence is a person
+  remembering, built on Portelli's Terni finding that a memory diverging from the record is data
+  rather than noise. **Digital and social** (\`D1\`): built on the CONSTRAINT, not on any platform,
+  and it makes no claim about what any platform currently rewards. **Mockumentary** (\`99\`): the
+  capstone, which reads the True track backwards and lands the series' hardest point, that a thing
+  which looks unproduced was produced to look unproduced, so roughness is no grounds for belief and
+  the real grounds are sourcing, disclosure, method and accountability.
 - 🔧 **BVC Sommelier series, course #1: Wine** (\`feat/bvc-sommelier-wine\`, plans/53). A skills sequel
   to BVC S2E9 "Wine: Blood of the Earth": that episode teaches wine's history, this one teaches
   tasting and choosing. 52 lessons in 12 modules at WSET-2-ish depth (the four-stage grid and six

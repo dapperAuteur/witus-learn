@@ -265,6 +265,11 @@ pnpm check:assessment-fit  # ratchet. The assessment WIDGET fits its content: no
                            #   closed-set fact multiple-choice tests better), no `**Check
                            #   yourself**` question left as prose. `--list` prints every finding.
 pnpm check:standards       # ratchet. Every seeded course declares its standards, or says why not.
+pnpm check:series-codes    # course codes (STORY-00) are legal and do not lie about a series'
+                           #   shape: no duplicate position, no two courses claiming to be the
+                           #   start or the capstone, no lettered track without a track NAME, no
+                           #   prefix shared by two series. NOT a ratchet: codes are new, so
+                           #   every code that exists was written under the rule.
 pnpm check:page-reachability  # ratchet. No public page is a menu orphan or rides the default OG card.
 ```
 

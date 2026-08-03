@@ -3,16 +3,24 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { ogImageUrl } from "@/lib/og";
+import { describePosition, formatCourseCode, groupSeries } from "@/lib/series-code";
 
-// A series landing page: the whole track, in order, in one place.
+// A series landing page: the whole curriculum, in order, in one place.
 //
 // Why it exists: a series could already say "these courses belong together" (series_slug) but not
-// "this one is first". The new courses.series_order column supplies the order, and this page is what
-// makes a series read as ONE thing rather than three courses that happen to share a label.
+// "this one is first". series_order supplies the order, and this page is what makes a series read as
+// ONE thing rather than three courses that happen to share a label.
+//
+// What changed with course codes: a series may FORK. Storytelling has one core course, three
+// parallel tracks and a capstone, and rendering that as a flat numbered list told a learner
+// something false — that course 7 requires course 6. So the page now draws the shape: start, then
+// the tracks side by side, then the capstone, with each group saying in words what it is claiming.
+// A series with no codes at all still renders as the plain ordered list it always was, because
+// groupSeries() puts uncoded courses in a final "Also in this series" group rather than dropping
+// them. Half-coding a series must degrade to a list, never to a page missing courses.
 //
 // Tenant-scoped throughout: getScopedDb() resolves the tenant from the request host and listCourses
 // filters on it, so a series slug that exists on another brand 404s here rather than leaking.
-// Ordering is series_order first, then title, so a partially numbered series still renders sensibly.
 
 async function loadSeries(slug: string) {
   const sdb = await getScopedDb();
@@ -23,7 +31,9 @@ async function loadSeries(slug: string) {
     const bo = b.seriesOrder ?? Number.MAX_SAFE_INTEGER;
     return ao !== bo ? ao - bo : a.title.localeCompare(b.title);
   });
-  return { title: ordered[0].seriesTitle ?? slug, courses: ordered };
+  const groups = groupSeries(ordered);
+  const trackCount = groups.filter((g) => g.kind === "track").length;
+  return { title: ordered[0].seriesTitle ?? slug, courses: ordered, groups, trackCount };
 }
 
 export async function generateMetadata({
@@ -54,42 +64,82 @@ export default async function SeriesPage({ params }: { params: Promise<{ slug: s
     <main className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="text-2xl font-semibold tracking-tight">{series.title}</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-        {series.courses.length} courses, in the order they are meant to be taken. You can start
-        anywhere, and they build.
+        {series.trackCount > 1
+          ? `${series.courses.length} courses. Start with the first one, then take whichever of the ${series.trackCount} tracks you want: they run in parallel, and none of them needs another.`
+          : `${series.courses.length} courses, in the order they are meant to be taken. You can start anywhere, and they build.`}
       </p>
 
-      <ol className="mt-8 space-y-4">
-        {series.courses.map((course, i) => (
-          <li
-            key={course.id}
-            className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800"
-          >
-            <div className="flex flex-wrap items-baseline gap-2">
-              <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
-                {course.seriesOrder ?? i + 1} of {series.courses.length}
-              </span>
-              {course.requiresAgeGate ? (
-                <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-900 dark:bg-amber-950 dark:text-amber-200">
-                  21+
-                </span>
-              ) : null}
-            </div>
-            <h2 className="mt-2 text-lg font-semibold">
-              <Link
-                href={`/course/${course.id}`}
-                className="underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
-              >
-                {course.title}
-              </Link>
-            </h2>
-            {course.description ? (
-              <p className="mt-1 line-clamp-3 text-sm text-neutral-700 dark:text-neutral-300">
-                {course.description}
-              </p>
-            ) : null}
-          </li>
-        ))}
-      </ol>
+      {/* How to read a course code, stated once rather than assumed. It is two lines, and without
+          it the badge is a mystery string that a learner has to reverse-engineer from examples. */}
+      {series.groups.some((g) => g.kind !== "unplaced") ? (
+        <details className="mt-4 rounded-lg border border-neutral-200 p-3 text-sm dark:border-neutral-800">
+          <summary className="cursor-pointer font-medium">How to read the course codes</summary>
+          <ul className="mt-2 space-y-1 text-neutral-700 dark:text-neutral-300">
+            <li>
+              <span className="font-mono font-semibold">-00</span> means start here.
+            </li>
+            <li>
+              <span className="font-mono font-semibold">-01</span>,{" "}
+              <span className="font-mono font-semibold">-02</span> are steps on one path, in order.
+            </li>
+            <li>
+              A letter (<span className="font-mono font-semibold">-T1</span>,{" "}
+              <span className="font-mono font-semibold">-P2</span>) marks a track. Tracks run in
+              parallel: take any track you like, in any order, without taking the others.
+            </li>
+            <li>
+              <span className="font-mono font-semibold">-99</span> is the capstone. Take it last.
+            </li>
+          </ul>
+        </details>
+      ) : null}
+
+      {series.groups.map((group) => (
+        <section key={`${group.kind}:${group.letter ?? ""}`} className="mt-8">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+            {group.kind === "track" ? `${group.label} track` : group.label}
+          </h2>
+          <ol className="mt-3 space-y-4">
+            {group.courses.map((course, i) => {
+              const code = formatCourseCode(course.seriesCode, course.seriesPosition);
+              const note = describePosition(course.seriesPosition, course.seriesTrack);
+              return (
+                <li
+                  key={course.id}
+                  className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800"
+                >
+                  <div className="flex flex-wrap items-baseline gap-2">
+                    <span className="rounded bg-neutral-100 px-2 py-0.5 font-mono text-xs font-semibold text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
+                      {code ?? `${course.seriesOrder ?? i + 1} of ${series.courses.length}`}
+                    </span>
+                    {course.requiresAgeGate ? (
+                      <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-900 dark:bg-amber-950 dark:text-amber-200">
+                        21+
+                      </span>
+                    ) : null}
+                  </div>
+                  <h3 className="mt-2 text-lg font-semibold">
+                    <Link
+                      href={`/course/${course.id}`}
+                      className="underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+                    >
+                      {course.title}
+                    </Link>
+                  </h3>
+                  {note ? (
+                    <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">{note}</p>
+                  ) : null}
+                  {course.description ? (
+                    <p className="mt-1 line-clamp-3 text-sm text-neutral-700 dark:text-neutral-300">
+                      {course.description}
+                    </p>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      ))}
     </main>
   );
 }
