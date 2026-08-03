@@ -625,6 +625,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Ships with a shared scaffold (\`scripts/lib/sommelier.ts\` + \`seriesSlug\`/\`freePreviewCount\` on the
   authored-course seeder) that the chocolate, coffee, tea, beer, whiskey, rum and cannabis courses
   inherit. Seeded by \`pnpm seed:sommelier\`. BAM sets the price and the vetted state in the admin UI.
+- 🔧 **BVC Sommelier #2 and #3: Coffee and Chocolate** (\`feat/sommelier-coffee-chocolate\`). The first
+  **un-gated** courses in the series, deliberately: wine sits behind a 21+ wall, so the series needed a
+  front door that does not. **Coffee** (24 lessons, 8 flights, sequel to S1E1) teaches the cupping
+  protocol, acidity as a virtue, extraction as something you can taste and correct, water as the
+  ingredient nobody buys, and the C-price economics behind the \$5 cup. **Chocolate** (17 lessons, 6
+  flights, sequel to S1E3) teaches melt and temper as data, why the percentage is a recipe ratio rather
+  than a quality score, that the Criollo/Forastero/Trinitario framework is superseded by ten genetic
+  clusters, and the labour and living-income facts with sources. Each carries a required parallel path
+  for non-consumers (caffeine-free, dairy-free/lower-sugar) via the generalised \`Flight.alternate\`
+  field on the shared scaffold. Both seeded by \`pnpm seed:sommelier\`.
 - 🔧 **"Also discussed in" on lesson pages, and a year brush on the globe** (plans/45 follow-ups). A
   lesson that NAMES a cross-course entity now carries a quiet "Also discussed in other courses" line
   linking to the entity page, matched by scanning the lesson text (no per-lesson tagging), tenant-scoped
