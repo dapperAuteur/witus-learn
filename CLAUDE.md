@@ -186,6 +186,27 @@ there as `*.md` (e.g. `course-experience.md`, `live.md`, `pricing.md`). Treat it
   notes and reference docs (`00-report-and-plan.md`) at the top level.
 A note isn't "done" until its behavior ships and the roadmap (`src/lib/roadmap.ts`) reflects it.
 
+## Citation-verification rule — a course joins the checkable list when it ships
+
+Two lists, one purpose: nothing in this catalog stays cited-but-unverified.
+
+- **List A, citations** (`/admin/citations`). Every source in a staged course, extracted from the
+  DATABASE by `pnpm gen:citations` (not from `scripts/data/`, because BVC episodes, health, FAA and
+  the languages are seeded from CSVs and generators that are gitignored or synthesized, so a
+  source-file reader silently covers two thirds of the library). **Ship a course, stage it:** add the
+  slug to `STAGED_COURSES` in `src/lib/citations.ts`, regenerate, commit. `pnpm check:citations`
+  fails a staged course producing zero citations. Invited `course_auditors` verify their own course's
+  citations at `/audit/citations`; the grant that lets someone read an unvetted course now also lets
+  them check its sources, and only that course's.
+- **List B, source checks** (`/admin/research`). The small hand-written queue of facts Claude could
+  not confirm against a primary source. **Whenever you write a hedge into a lesson**, file a check in
+  `src/lib/research-checks.ts` saying what the course claims and what would settle it, then delete it
+  when the answer ships. A hedge with no check is a hedge nobody will ever clear.
+
+Neither list may be closed without saying what was found; both the forms and the APIs enforce it. A
+citation marked verified with no evidence behind it stops anyone from looking again, which is worse
+than leaving it open. Staged rollout and the remaining stages: `docs/citation-verification-plan.md`.
+
 The BVC content-citation rule is a **product feature**, not just a style guide: every claim ties to a
 verified source (`course_sources` / `course_claims`), APA 7 in-line + a `## Sources` bibliography, no
 fabricated characters, no "AI tells" — the sources/claims/verify UI is a visible trust signal. (The

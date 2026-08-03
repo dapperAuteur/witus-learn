@@ -74,6 +74,19 @@ Every customer-facing surface must pass before it can merge:
 ## 3. Content policy (BVC content rules are product features)
 
 - Every factual claim ties to a verified source; APA 7 in-line + `## Sources` bibliography.
+- **A new course joins the citation list before it ships.** Add its slug to `STAGED_COURSES` in
+  [src/lib/citations.ts](src/lib/citations.ts), run `pnpm gen:citations`, and commit the regenerated
+  registry. `pnpm check:citations` (part of `pnpm lint`) fails a staged course that generated zero
+  citations, which catches both "forgot to regenerate" and "the Sources block is in a shape the
+  extractor does not read". The citations then appear at `/admin/citations` for BAM and at
+  `/audit/citations` for invited reviewers, who verify that each source exists, still resolves, and
+  actually says what the lesson claims.
+- **When you write a hedge you cannot resolve, file a source check.** A sentence like "verify the
+  current text before relying on this" is honest and completely unactionable on its own: nobody has a
+  list and nothing records whether it was ever done. Add an entry to
+  [src/lib/research-checks.ts](src/lib/research-checks.ts) so it lands at `/admin/research` with the
+  question, what the course currently claims, and exactly what is needed to close it. Delete the entry
+  once the answer ships in the lesson.
 - No fabricated characters: real, cited figures or second-person address.
 - No "AI tells": no em/en dashes (use commas/periods/parentheses/colons), no ornate filler.
   Four things keep their dashes, because changing them would be an error, not a style fix:

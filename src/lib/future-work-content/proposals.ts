@@ -9594,6 +9594,34 @@ export interface SubdirDoc extends ProposalDoc {
 
 export const SUBDIR_DOCS: SubdirDoc[] = [
   {
+    key: "360-camera-services-list-of-services-and-how-to",
+    title: "list of services and how to",
+    group: "360 Camera Services",
+    summary: "360-camera-services/list-of-services-and-how-to.md",
+    body: `360-camera-services/list-of-services-and-how-to.md
+
+- commercial and residential real estate tours
+- geocaching
+- geocaching games`,
+    provenance: "plans/future-courses/360-camera-services/list-of-services-and-how-to.md",
+  },
+  {
+    key: "drone-services-list-of-services-and-how-to",
+    title: "list of services and how to",
+    group: "Drone Services",
+    summary: "drone-services/list-of-services-and-how-to.md",
+    body: `drone-services/list-of-services-and-how-to.md
+
+- solar industry
+- roof inspections
+- accessor
+- construction
+- thermal sampling/testing
+- movie/tv show/corp videos
+- stadium`,
+    provenance: "plans/future-courses/drone-services/list-of-services-and-how-to.md",
+  },
+  {
     key: "he-did-the-work-list-of-men-that-did-the-work",
     title: "list of men that did the work",
     group: "He Did The Work",
@@ -12144,5 +12172,137 @@ How the Process WorksPriority Payouts: The auction money first pays off the prim
 
 You can do this nationally. There are no laws limiting your search to your own state. Because public records are open to everyone, you can look for surplus funds and contact homeowners in any of the 50 states.If you plan to scale this into a nationwide business, you must follow the distinct legal guidelines established by each state and county.1. Evaluate State Law VariationsWhile you can research any state from your computer, the rules for contacting owners and collecting fees change drastically at state lines.Asset Recovery Caps: Many states strictly limit how much money an asset finder can charge a homeowner. For example, some states cap your fee at 10% of the recovered funds, while others ban finder fees entirely for the first 24 months after a sale.Licensing Mandates: Certain states require you to hold a Private Investigator (PI) license, a real estate license, or a registered notary commission to legally act as a third-party finder.Strict Expiration Windows: The timeline to claim money varies heavily by location. Some counties hold funds for only 90 days before moving them to the state, while others give owners up to 5 years to file a claim.2. Follow a National BlueprintTo manage a nationwide search efficiently without leaving your home, organize your workflow by utilizing online tools.Target Digitized Counties: Start your search in larger, highly populated metropolitan counties. These areas are much more likely to publish updated surplus spreadsheets and auction results directly on their county clerk or treasurer websites.Utilize Skip Tracing Tools: Former homeowners who lost their properties often move immediately. You will need online skip-tracing software to cross-reference public data, track down their new addresses, and find valid phone numbers or email addresses.Draft Location-Specific Agreements: Never use a single, generic contract for every client. If you are charging a fee to help them file, ensure your contingency fee agreement is custom-tailored to comply with the exact consumer protection laws of the homeowner's state.`,
     provenance: "plans/future-courses/real-estate/surplus-funds-basics.md",
+  },
+  {
+    key: "verification-citation-verification-plan",
+    title: "Citation verification: the staged rollout plan",
+    group: "Verification",
+    summary: "BAM's ask (2026-08-03): use the Source checks feature to verify every source and citation in every",
+    body: `# Citation verification: the staged rollout plan
+
+BAM's ask (2026-08-03): use the Source checks feature to verify **every source and citation in every
+course**, as part of the vetting process, with invited course auditors able to verify citations too.
+Two separate lists, staged rollout, and a standing rule that every new course joins the list.
+
+---
+
+## The two lists, and why they are genuinely different
+
+| | **List A: Citations** | **List B: Source checks** |
+| --- | --- | --- |
+| What it holds | Every citation in a course's \`## Sources\` blocks | Facts Claude could not confirm against a primary source |
+| Who created it | A generator, mechanically, from the shipped lesson text | Claude, by hand, when writing a hedge into a lesson |
+| Size | ~6,361 entries across 175 course files today | 10 today, and it should stay small |
+| The question asked | "Does this source exist, say what we claim, and still resolve?" | "What is the actual answer to this specific open question?" |
+| Who can answer | BAM, or an invited auditor of that course | BAM, or an auditor, though most need judgment |
+| Done state | Every citation verified | The list is empty |
+
+They must stay separate because **mixing them buries the ten that matter under six thousand that are
+probably fine.** List B is triage; List A is inventory.
+
+---
+
+## Architecture, and the one decision that shaped it
+
+**Citations are extracted from the DATABASE, not from the source files.** This looked wrong at first
+and is correct, for a reason worth writing down: a large share of the catalog's content does not live
+in committed TypeScript. BVC episodes come from CSVs in the gitignored \`content/bvc/\`, the health
+courses are generated by \`gen-health-data.ts\`, FAA comes from \`seed-faa.ts\`, and languages from their
+own seeder. Four of the twelve courses BAM is enrolled in are in that category. A generator that read
+\`scripts/data/*-course.ts\` would silently cover about two thirds of the library and report success.
+
+So \`pnpm gen:citations\` is a dev-time step, like \`pnpm gen:future-work\`: it reads \`lessons.text_content\`
+for the staged courses, extracts the citation entries, and writes a COMMITTED module the app imports.
+Nothing reads the filesystem or the DB for this at request time.
+
+**Keys.** A citation's key is \`<courseSlug>:<hash of the normalized entry text>\`. Stable across
+reordering, and it CHANGES if the citation text changes. That is deliberate: an edited citation is a
+different claim and deserves re-verification. It is the opposite call from \`quiz_attempts.questionKey\`,
+where a reworded prompt must not reset history, and the difference is that a quiz answer is a
+learner's record while a citation check is a statement about the current text.
+
+**Storage.** \`course_citation_checks\`, one row per (tenant, citation key), holding status and note
+only. Same split as the roadmap, future-work and source-checks features: content committed, status in
+the database.
+
+**Access.** Owner sees everything. An accepted \`course_auditors\` grant already means "this person may
+read this unvetted course"; it now also means "this person may verify this course's citations, and
+only this course's." That reuses the existing per-course, tenant-scoped, read-only grant rather than
+inventing a second invitation system.
+
+---
+
+## Stages
+
+Each stage is a widening of \`STAGED_COURSES\` in \`src/lib/citations.ts\` plus a regeneration. No code
+changes after stage 1.
+
+### Stage 1, this branch: 16 courses
+
+**The four just created**, which have never been checked by anyone:
+\`bvc-sommelier-wine\`, \`bvc-sommelier-coffee\`, \`bvc-sommelier-chocolate\`, \`surplus-funds-basics\`.
+
+**The twelve BAM is enrolled in**, because those are the ones he can actually read alongside the
+citation list: \`ai-b1-prompt-engineering\`, \`ai-literacy\`, \`coffee\`, \`faa-part-107\`,
+\`green-book-how-to-read-a-route\`, \`harvard-ed-l-d\`, \`how-to-create-a-course\`, \`langgraph-triage-agent\`,
+\`nasm-cpt\`, \`read-your-bodys-data\`, \`spanish\`, \`state-civics-in\`.
+
+### Stage 2: the courses with the highest citation risk
+
+Courses making **legal, medical, or safety** claims, where a wrong citation does the most damage.
+Includes the civics and state-civics family, the health courses, and anything with a statute or a
+clinical guideline in it. Sized to roughly 25 courses.
+
+### Stage 3: the history catalog
+
+The largest group and the one where the catalog's reputation lives: the route series, the labor
+series, the precolonial and contested-history courses. Roughly 60 courses.
+
+### Stage 4: everything remaining
+
+The AI, study-skills, sports, trade and travel courses. Roughly 70.
+
+### Stage 5: the ratchet closes
+
+\`scripts/check-citations.ts\` flips from "staged courses must be generated" to "**every** registered
+course must be in the registry." At that point the standing rule below is enforced by the build rather
+than by memory.
+
+---
+
+## The standing rule
+
+> **Every course joins the citation list when it is created.**
+
+Enforced the same way the standards and length-tell rules are, as a ratchet: \`pnpm check:citations\`
+fails when a course is in \`STAGED_COURSES\` but has no generated citations, and it lists any registered
+course not yet staged so the backlog is visible rather than forgotten. From stage 5 it fails on any
+unstaged course outright.
+
+The authoring guides say it too, so it is a step rather than a surprise: see
+\`STYLE_GUIDE.md\`, \`CLAUDE.md\`, and the in-app \`how-to-create-a-course\` course.
+
+---
+
+## What auditors see
+
+An invited auditor, at \`/audit/citations\`, sees only the courses they hold an accepted grant for, and
+only the citation list, never the source checks (which are BAM's triage queue and often contain
+commercial context). They can mark a citation verified, broken or mismatched, and must say what they
+found, the same rule the source checks enforce.
+
+---
+
+## Open questions
+
+1. **Should a broken link block vetting?** A course cannot be marked vetted today on citation grounds.
+   Wiring "no citation is broken" into the vetting gate would be strong, and would also mean one dead
+   URL blocks a course, so it needs a deliberate decision rather than a default.
+2. **Do auditors need to see the lesson text alongside the citation?** They can open the course, but a
+   side-by-side would be better and is more work.
+3. **Automated link checking.** A nightly job could resolve every URL and pre-flag the dead ones, which
+   would remove most of the manual work from List A. Worth doing before stage 3, since 60 courses of
+   manual link checking is not a reasonable ask of anyone.`,
+    provenance: "plans/future-courses/verification/00-citation-verification-plan.md",
   },
 ];
