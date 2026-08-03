@@ -9594,6 +9594,26 @@ export interface SubdirDoc extends ProposalDoc {
 
 export const SUBDIR_DOCS: SubdirDoc[] = [
   {
+    key: "360-camera-services-360-sites-tools",
+    title: "360 sites tools",
+    group: "360 Camera Services",
+    summary: "list of online tools that use 360 media",
+    body: `list of online tools that use 360 media
+- Vimeo 360
+- https://www.momento360.com/
+- youtube
+- facebook
+- geofencing sites
+
+
+geofencing and 360 media:
+
+Yes, there are apps in the geocaching and location-based treasure hunting space that use 360-degree imagery, 3D spatial technology, or virtual media. While traditional geocaching centers heavily around finding physical containers outdoors, developers use immersive media to enhance navigation, allow virtual placements, or offer digital scavenger hunts.Geocaching Apps Using 360° or Immersive MediaGeooh GO: This premium Android geocaching app is unique because it uses Google’s experimental 3D map tiles. It allows you to "fly" into a cache location, tilt, and completely rotate a photorealistic 3D world view around the cache spot to study the landscape before you arrive.GeoHunt360: Available on iOS and Google Play, this app focuses on digital "geotags". Instead of physical boxes, users hunt for virtual drops. Once you walk within 100 feet of a location, you can unlock full videos, panoramic images, audio clues, and text left behind by other creators.Adventure Lab by Geocaching: Created by the official creators of Geocaching, this app handles virtual, story-driven scavenger hunts. While it doesn't have a native 360-degree camera engine built in, creators frequently link to custom YouTube 360° videos, 360° photo spheres, or street-view media as part of the clues you must examine to answer location-based riddles.A Common Misconception: "The 360 Challenge"If you see the term "360" on geocaching forums like Reddit, it usually refers to The 360-Degree Matrix Challenge rather than a media format. This is a popular statistical gameplay goal where players try to find at least one geocache in every single one of the 360 compass degrees radiating outward from their home coordinates.Are you looking for an app that lets you create your own 360-degree treasure hunt, or are you hoping to use VR/360 tools to preview a physical cache location before hiking out?
+
+If you want to build your own 360-degree treasure hunt, the best approach depends on whether you want a purely digital, virtual-reality style search (played from a couch) or a hybrid real-world game where players walk to physical coordinates and unlock 360-degree media.The software options are divided below by how they handle the 360-degree experience.1. Purely Virtual 360° Hunts (Digital "Escape Rooms")These platforms let you upload spherical 360° photos (shot on a 360 camera or a panoramic phone app) and turn them into an interactive game board. You can hide invisible clickable "hotspots" over objects that trigger riddles, open locks, or hand out clues to the next 360° room.Kuula: This is a leading virtual tour builder that features a highly gamified editor. “PRO and Business plans include features such as: Unlimited tours, Labels, Custom hotspots, Background audio, Interactive cards, Floor plans...” as noted by Kuula. You can easily make an interactive 360° puzzle game by hiding keys or text boxes inside the panorama.Panoee: If you are on a budget, this is an excellent choice. It is a “free virtual tour platform... with premium features to support users” like high-quality panoramas and customization tools. It gives you enough storage to string together multiple panoramic scenes into a scavenger hunt.CloudPano: A web platform that allows you to “create 360 virtual tours by uploading 360 photos and media” while customizing them by “adding hotspots and info spots”. It is highly interactive and viewers can navigate through floor plans or thumbnails to find items.2. Location-Based Real-World Hunts (GPS + 360 Media)If you want players to walk outside to real locations using their smartphones, these platforms let you build the logic of the game, and you can embed your 360° media right into the stops.PlayTours: This web-based scavenger hunt app builder is explicitly built to be “Infinitely Extensible” allowing creators to “Embed anything you can find online, Google documents, 360 virtual walks, crossword & jigsaw puzzles, etc.” Players open a URL in their web browser (no app download required) and navigate via GPS to coordinates to unlock your embedded 360° tasks.GeoHunt360: This is a mobile-first app designed specifically for user-generated treasure drops. As a creator, you can pin a virtual box to a location, and “Share images, videos, audio, QR codes, or text as hidden surprises for others to find” once they walk within 100 feet of your coordinates.Actionbound: A robust mobile app builder for creating custom real-world paths and timeline mysteries. It features an extensive "Bound Creator" toolset including “GPS locations, directions, maps, compass, pictures, videos, quizzes, missions...” While it handles multimedia seamlessly, you will need to host your 360-degree panorama links via a web URL for players to click during their missions.Would you prefer to design a game that players can complete entirely on a computer or phone from home, or are you planning a game where people physically explore a park or neighborhood?`,
+    provenance: "plans/future-courses/360-camera-services/02-360-sites-tools.md",
+  },
+  {
     key: "360-camera-services-list-of-services-and-how-to",
     title: "list of services and how to",
     group: "360 Camera Services",
@@ -9604,6 +9624,110 @@ export const SUBDIR_DOCS: SubdirDoc[] = [
 - geocaching
 - geocaching games`,
     provenance: "plans/future-courses/360-camera-services/list-of-services-and-how-to.md",
+  },
+  {
+    key: "acting-voice-acting",
+    title: "voice acting",
+    group: "Acting",
+    summary: "create a course/series/curriculum similar to this:",
+    body: `create a course/series/curriculum similar to this:
+
+Closing Credits
+- What is Voice Acting 101? Details below.
+- What is Closing Credits? Why is Closing Credits different from all the others out there?
+- Literally 100s of Testimonials. See our recs, dear.
+👉 Currently enrolling
+- Improv for Actors starts in 29 days
+
+- Voice Acting 401 starts in 30 days
+
+- Making AI Work For You starts in 36 days
+
+- Finding Your Own Work starts in 36 days
+
+- Career Mode: Business of Voice Acting starts in 1 day
+
+- Voice Acting 101 starts in 17 days
+
+- Dubbing: Knowing Your Genre starts in 15 days
+
+- Audio Engineering for Voice Actors starts in 8 days
+
+- Accents for Actors starts in 1 day
+
+- Dubbing: Knowing Your Genre 2 starts in 43 days
+
+- Authentic Narration Voiceover starts in 2 days
+
+- Anime Archetypes and Auditions starts in 33 days
+
+- Advanced Anime Archetypes and Auditions starts in 62 days
+
+- Game Mode 2.0: Advanced Acting for Video Games starts in 2 days
+
+- Voice Acting 301 starts in 36 days
+
+- Dubbing: Knowing Your Genre starts in 126 days
+
+- From Zero To Sampler starts in 33 days
+
+- Battle Effort Dynamics starts in 90 days
+
+- Accents for Actors starts in 64 days
+
+- In-Depth Script Analysis starts in 31 days
+
+- Game Mode: Acting for Video Games starts in 28 days
+
+- Advanced Character Commercial starts in 37 days
+
+- Voice Acting 101 starts in 73 days
+
+- Intimate Audio Business starts in 62 days
+
+- Mastering Pay 2 Play Auditions starts in 99 days
+
+- The Audition Playground starts in 99 days
+
+- Motivate Your Career starts in 99 days
+
+- Authentic Commercial Voiceover starts in 65 days
+
+
+
+What is Voice Acting 101?
+🤩 Voice Acting 101 is a 6 week course designed to help you master how you speak. You will learn about your Voicebox, your articulators, posture, warmup and breathing techniques, consonants, plosives, sibilance, natural articulation, handling a lisp, mic techniques, and so much more!
+
+⚡️ The course is live on zoom/discord, led by active industry experts & producers, formatted specifically for online.
+
+❤️ You will be alongside a group of peers. You won't be alone in your journey. We also assign each class several VO companions. You will be able to practice and get 1 on 1 coaching.
+
+🎥 If you can't make the morning session, we run a repeat evening session, and we record all sessions for you so you can review at any time.
+
+🌽 A weekend seminar at a famous studio or a weeklong boot camp with a voice coach may be cool, but it probably won't increase your abilities to the point of landing loads of voice gigs. That's why we designed this course with the goal of making sure students see tangible improvements in not just acting, but speaking as a whole.
+
+What is Closing Credits?
+🌻 Hi, it's me -- Buford. I created Closing Credits because I think every professional in the industry has something to teach. I'm not trying to be the gatekeeper of what is right and wrong to teach. Instead, I want Closing Credits to be the curator -- taking all the great lessons from the industry experts and presenting them in the best way for the student. If you're an active industry expert, email me. I'd love to work with you.
+
+🎓 I wanted to explain a little bit of details on what you get when you join our classes.
+
+🏫 Classes led by industry experts, whose work you've seen on Dragonball, My Little Pony, Goosebumps, Genshin Impact, Hunter X Hunter, and more
+🤩 Real outcomes. Some of our students have landed work with Crunchyroll, multi-million viewer YouTube channels, and a bunch more
+🧷 A safe place to learn. Everyone starts somewhere, and we want to be a safe place for that.
+🤝 Life long peers, and friends. Many of our students network together in our private community.
+🍀 Engineered luck. Start putting yourself in the right place, and then the right time will come.`,
+    provenance: "plans/future-courses/acting/voice-acting.md",
+  },
+  {
+    key: "documentary-list-of-documentary",
+    title: "list of documentary",
+    group: "Documentary",
+    summary: "new courses/series",
+    body: `new courses/series
+- documenter course based on mirror indy documenter role
+  - https://sulky-answer-76a.notion.site/23f6908d69e647869e20d5851d44fcd5, this is the documenters field guide that should be used as a source.
+  - at least one full course on the field guide alone`,
+    provenance: "plans/future-courses/documentary/01-list-of-documentary.md",
   },
   {
     key: "drone-services-list-of-services-and-how-to",
@@ -9630,7 +9754,8 @@ export const SUBDIR_DOCS: SubdirDoc[] = [
 - Walter White
 - WEB DuBois
 - Thurgood Marshall
-- James Weldon Johnson`,
+- James Weldon Johnson
+- Onesimus (vaccines)`,
     provenance: "plans/future-courses/he-did-the-work/01-list-of-men-that-did-the-work.md",
   },
   {
@@ -12172,6 +12297,152 @@ How the Process WorksPriority Payouts: The auction money first pays off the prim
 
 You can do this nationally. There are no laws limiting your search to your own state. Because public records are open to everyone, you can look for surplus funds and contact homeowners in any of the 50 states.If you plan to scale this into a nationwide business, you must follow the distinct legal guidelines established by each state and county.1. Evaluate State Law VariationsWhile you can research any state from your computer, the rules for contacting owners and collecting fees change drastically at state lines.Asset Recovery Caps: Many states strictly limit how much money an asset finder can charge a homeowner. For example, some states cap your fee at 10% of the recovered funds, while others ban finder fees entirely for the first 24 months after a sale.Licensing Mandates: Certain states require you to hold a Private Investigator (PI) license, a real estate license, or a registered notary commission to legally act as a third-party finder.Strict Expiration Windows: The timeline to claim money varies heavily by location. Some counties hold funds for only 90 days before moving them to the state, while others give owners up to 5 years to file a claim.2. Follow a National BlueprintTo manage a nationwide search efficiently without leaving your home, organize your workflow by utilizing online tools.Target Digitized Counties: Start your search in larger, highly populated metropolitan counties. These areas are much more likely to publish updated surplus spreadsheets and auction results directly on their county clerk or treasurer websites.Utilize Skip Tracing Tools: Former homeowners who lost their properties often move immediately. You will need online skip-tracing software to cross-reference public data, track down their new addresses, and find valid phone numbers or email addresses.Draft Location-Specific Agreements: Never use a single, generic contract for every client. If you are charging a fee to help them file, ensure your contingency fee agreement is custom-tailored to comply with the exact consumer protection laws of the homeowner's state.`,
     provenance: "plans/future-courses/real-estate/surplus-funds-basics.md",
+  },
+  {
+    key: "storytelling-storytelling-curriculum",
+    title: "Storytelling: the curriculum, the spine, and the build order",
+    group: "Storytelling",
+    summary: "Source note: `plans/future-courses/storytelling/01-storytelling-series.md`.",
+    body: `# Storytelling: the curriculum, the spine, and the build order
+
+Source note: \`plans/future-courses/storytelling/01-storytelling-series.md\`.
+
+BAM's decisions, 2026-08-03:
+
+| Question | Answer |
+| --- | --- |
+| Monodrama scope | **Two courses**: Monodrama I (writing), Monodrama II (performing and staging) |
+| Documenters course | **General civic-documentation course, plus an Indianapolis module** |
+| Home | **Learn.WitUS, new "Storytelling" category** |
+| Build order | Monodrama and short-form drama **first**, then back to the core |
+
+---
+
+## The spine, fixed now on purpose
+
+BAM wants the specialised courses built before the core. That is defensible (see "Why monodrama
+first" below) and it carries one real cost: whatever vocabulary those courses invent, the core has to
+be retrofitted to it later, or the series ends up teaching two dialects of the same idea.
+
+So the spine's vocabulary is fixed **here, before either course is written**, and both courses use
+these exact terms. The core course, when it is built, becomes the thing they were always pointing at
+rather than a summary bolted on afterwards.
+
+**Six terms. Every course in the series uses these words and no synonyms.**
+
+| Term | Definition the whole series uses |
+| --- | --- |
+| **The change** | What is different at the end from the beginning. A story with no change is an anecdote. This is the first question asked of any draft in any course |
+| **The owner** | Whose change it is. Not the narrator, not the most interesting person: the one the change happens to |
+| **Want and obstacle** | What the owner is trying to get, and what is in the way. Both must be concrete enough to point at |
+| **Withholding** | What the audience does not know yet, and when they learn it. The engine of attention in every form on this list |
+| **Scene and summary** | Scene is real time, shown. Summary is compressed, told. Choosing between them is the most frequent craft decision in any medium |
+| **The turn** | The moment the change becomes irreversible. Distinct from the ending, which is what the story says about the change |
+
+Two rules that travel with the vocabulary:
+
+1. **Every course opens by naming the change and the owner** of whatever it is teaching. Not as
+   theory: as the first exercise.
+2. **No course invents a synonym.** If a form has its own traditional word (beat, button, turn,
+   reveal), the course names it and then maps it onto the six above rather than replacing them.
+
+---
+
+## The map: one spine, three tracks, one bridge
+
+| Track | Forms | The discipline it teaches |
+| --- | --- | --- |
+| **True** | News storytelling, civic documentation (Documenters), documentary, oral history | Accuracy first. You do not get to invent the turn |
+| **Performed** | Monodrama, one-act, short-form drama, theatre, screen | A body in a space and a live audience |
+| **Distributed** | Social, digital-native, serialized short-form | Attention is not given, it is re-earned every few seconds |
+| **Bridge** | Mockumentary | Borrows the FORM of True to serve the intent of Performed |
+
+**Mockumentary belongs last, and only last.** It works by exploiting conventions the learner has to
+already believe in. Taught early it is a gimmick; taught after the True track it is the course that
+explains why documentary conventions are persuasive in the first place, which makes a learner better
+at both tracks. It is the series capstone.
+
+**Where the True track intersects the Documentarian series**, and this is the genuinely interesting
+seam: civic documentation teaches the OPPOSITE discipline from dramatic storytelling. Record what
+happened. Do not shape it. Do not find the arc. A storytelling series that also teaches **when not to
+tell a story** is stronger than one that pretends every event wants to be a narrative, and that
+tension is the thing worth building the intersection around rather than a shared toolset.
+
+---
+
+## Why monodrama first, which is not just sequencing convenience
+
+One performer, no scene partner, nothing to hide behind. No cutaway, no second character to carry
+exposition, no ensemble to cover a structural weakness. **Every one of the six spine terms is exposed
+in a monodrama**, which makes it the purest teaching instrument in the series rather than a niche
+form. Short-form drama does the same job by a different route: constraint forces structure, because
+there is no room to be vague.
+
+So the unusual build order is pedagogically defensible, not just a preference. The courses that come
+first are the ones where the fundamentals cannot be avoided.
+
+---
+
+## Build order
+
+1. **Monodrama I: writing the solo piece.** The spine, taught through the form that exposes it.
+   Direct address, who the audience is to the speaker, the single-body constraint, the turn, the
+   ending. Ends with a performable draft.
+2. **Monodrama II: performing and staging it.** One body in a space, direct address as a performance
+   problem, staging with nothing, rehearsing alone, and what changes when the audience is real.
+3. **Short-form drama.** Constraint as a structural tool. The ten-minute play, the one-act, and the
+   short-form video drama treated as the same craft problem under different runtimes.
+4. **Civic documentation (Documenters-style), plus the Indianapolis module.** The True track opens
+   here rather than with news, because it is the most concrete and the least romantic.
+5. **The core: How stories work.** Written last, using the vocabulary the earlier courses already
+   established.
+6. Then: news storytelling, documentary, oral history, digital and social, theatre and screen.
+7. **Mockumentary**, as the capstone.
+
+---
+
+## The Documenters course, as decided
+
+**A general civic-documentation course with an Indianapolis-specific module.**
+
+Verified about the program as of 2026-08-03: Documenters is run by **City Bureau**, a Chicago
+501(c)(3), describes itself as a "network of newsrooms and community organizations committed to
+participatory civic media," and **trains and pays** people to attend under-reported public meetings
+and publish documentation. It operates in roughly 31 cities, **including Indianapolis**.
+
+**Blocked, and filed as a source check:** the Documenters Field Guide lives at
+\`fieldguide.documenters.org\`, which redirects to a Notion page that renders client-side, so its
+contents could not be read. The general course does not depend on it. The Indianapolis module and any
+claim about Documenters' own standards **do**, so those wait for the check to clear rather than being
+written from assumption. See \`documenters-field-guide\` on \`/admin/research\`.
+
+The general course teaches the discipline itself: what a public meeting is and why the boring ones
+matter, agendas and minutes as documents, note-taking that survives being read by a stranger,
+distinguishing what was said from what it meant, records requests, and the ethics of documenting
+people who did not choose to be documented. That is useful in any city and does not depend on any one
+organisation's handbook.
+
+---
+
+## Open questions
+
+1. **Does Monodrama II need video?** Performance teaching without demonstration is thin, and the
+   catalog supports media lessons. Worth deciding before the outline is final.
+2. **Is there a performance capstone that can actually be assessed?** An assignment lesson can take a
+   submission; whether that is a script, a recording, or both changes the course.
+3. **Does the Storytelling category sit alongside Documentarian, or contain it?** They intersect at
+   the True track, and the answer decides navigation.`,
+    provenance: "plans/future-courses/storytelling/00-storytelling-curriculum.md",
+  },
+  {
+    key: "storytelling-storytelling-series",
+    title: "storytelling series",
+    group: "Storytelling",
+    summary: "series on storytelling fiction/non-fiction, news, documentaries, mockumentaries, monodramas, theatre, movie, short-form, one act plays , social media, digital",
+    body: `series on storytelling fiction/non-fiction, news, documentaries, mockumentaries, monodramas, theatre, movie, short-form, one act plays , social media, digital
+- how to tell stories when delivering the news?
+- documenter.org style`,
+    provenance: "plans/future-courses/storytelling/01-storytelling-series.md",
   },
   {
     key: "verification-citation-verification-plan",

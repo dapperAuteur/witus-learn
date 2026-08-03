@@ -193,6 +193,32 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     where: ["norc.org, the cocoa child labour report", "US Department of Labor, which commissioned it"],
   },
 
+  // ── Storytelling / Documentarian ──────────────────────────────────────────────────────────────
+  {
+    key: "documenters-field-guide",
+    course: "civic-documentation (planned)",
+    title: "Documenters Field Guide: what does it actually teach?",
+    severity: "high",
+    question:
+      "What are the sections of the Documenters Field Guide at fieldguide.documenters.org, and what standards does it set for note-taking, live updates, filing and ethics?",
+    claim:
+      "Nothing yet. The planned civic-documentation course is being written WITHOUT it, and the Indianapolis module plus any claim about Documenters' own standards is on hold until this is answered, rather than being written from assumption.",
+    stakes:
+      "This is a course about documenting accurately. Writing it from a guess about how the leading organisation trains people would be self-refuting. It is also the difference between a course a learner could use to actually sign up as a paid Documenter in Indianapolis and a course that merely admires the idea.",
+    needs: [
+      "The section and chapter titles, quoted",
+      "What it says about note-taking standard and format",
+      "What it says about live updates and filing deadlines",
+      "Anything on ethics, corrections, or what a Documenter must not do",
+      "Whether the guide may be referenced or quoted in a paid course, and under what terms",
+    ],
+    where: [
+      "https://fieldguide.documenters.org/ — it redirects to a Notion page that renders client-side, so it needs a human with a browser. Claude cannot read it",
+      "City Bureau directly, who may simply say yes to a course that sends them trained applicants",
+      "The Indianapolis instance at https://indianapolis-in.documenters.org/",
+    ],
+  },
+
   // ── Civics ────────────────────────────────────────────────────────────────────────────────────
   {
     key: "trump-v-barbara-status",

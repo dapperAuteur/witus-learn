@@ -23,6 +23,16 @@ const ROOTS = ["src", "scripts"];
 const EXCLUDE_DIRS = [
   // Verbatim state-standard text, transcribed from state documents. The isolation suite guards it.
   join("src", "lib", "standards", "data"),
+  // Verbatim CITATION text, generated from the lessons by `pnpm gen:citations`. Same reason as the
+  // standards data: these are quotations of someone else's words, and "fixing" them would corrupt
+  // them. A citation's dashes are load-bearing (page ranges like 847-886, hyphenated titles,
+  // publisher names), and a reference entry is already an explicit exception to the ban in the rule
+  // this script enforces.
+  //
+  // This surfaced the way these always do: the file passed lint while it was untracked, because
+  // trackedFiles() reads `git ls-files`, and started failing the moment it was committed. Worth
+  // remembering when adding any future generated artifact that carries quoted text.
+  join("src", "lib", "citation-content"),
   join("src", "db", "migrations"),
   join("node_modules"),
   join(".next"),
