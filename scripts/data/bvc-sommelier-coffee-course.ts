@@ -245,7 +245,7 @@ const FLIGHT_7: Flight = {
 // ─────────────────────────────── COURSE ───────────────────────────────
 
 export const BVC_SOMMELIER_COFFEE_COURSE: AuthoredCourse = {
-  title: "BVC Sommelier: Coffee",
+  title: "BVC Taster: Coffee",
   description:
     "Learn to taste coffee systematically and brew it repeatably: the cupping protocol used across the specialty trade and the attributes it scores, what acidity actually means in a cup and why it is a virtue, the two commercial species and the varieties that matter, how altitude and climate reach the cup, what washing, natural drying, honey processing and anaerobic fermentation each do, how to read a roast and hear what it costs you, extraction as something you can taste and correct, water as the ingredient nobody buys, what a bag's label legally promises and what certifications do and do not fix, the origins that set the reference points, the honest economics of the C price and why your $5 cup does not reach the farmer, brewing and espresso, the defects worth recognising, and blind deduction. The sequel to BVC Season 1, Episode 1, which covers coffee's history and economics. Eight flights with budgets and substitutes, and a caffeine-free path through every drill. Not affiliated with, and not exam preparation for, any certifying body.",
   lessons: [
@@ -281,6 +281,23 @@ It also names no roasters. Roasters change, lots sell out in weeks, and a course
 
 ${COFFEE_METHOD_NOTE}
 
+
+**And a note on what to call yourself, because the honest answer is more interesting than the title.**
+
+Every vice on this shelf has a real expert title, and most of them are **owned certification marks belonging to programmes this course has nothing to do with.**
+
+| Vice | The real title | What it actually is |
+| --- | --- | --- |
+| Wine | **Sommelier** | The one word that escaped into common use. Generic, unowned, and now borrowed by cheese, water and olive oil |
+| Beer | **Cicerone** | A trademarked certification. Its own programme states the word is reserved for people who have passed it and should not be used as a synonym for beer expert |
+| Coffee | **Q Grader** | A Coffee Quality Institute certification. The generic job word underneath it is *cupper* |
+| Chocolate | **Chocolate taster** | Taught by dedicated institutes; *chocolatier* is a maker, which is a different job |
+| Cannabis | **Interpener** | A specific institute's programme term |
+| Sake | **Kikisake-shi** | A Japanese certification, and the closest true parallel to a sommelier |
+
+So this course is called a **Taster** course, which is the plain English for what you are actually doing, and it is a word nobody owns.
+
+**How this relates to those programmes, stated plainly:** it is not any of them, it does not prepare you for their exams, and finishing it entitles you to call yourself nothing. What it does is teach the same underlying skill they all test, which is tasting systematically and describing accurately. If you later sit one of those exams, this will have helped. That is a claim about the subject, not a promise about a result, and anyone who tells you a course can hand you a protected title is selling you something.
 ## Sources
 - Specialty Coffee Association. (n.d.). *Protocols and best practices*. https://sca.coffee/research/protocols-best-practices
 - International Coffee Organization. (n.d.). *Statistics*. https://ico.org`,

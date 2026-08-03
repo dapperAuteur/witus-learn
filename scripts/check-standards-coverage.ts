@@ -47,7 +47,7 @@ const BACKLOG: Record<string, string> = {
   // inert. It is written here anyway because this is where the next author looks for the
   // standards decision on a course, and because it goes live automatically if the BVC Sommelier
   // series is ever registered in the file this check scans.
-  "bvc-sommelier-wine": "OUT OF SCOPE, vocational and 21+, no K-12 academic standard claimed",
+  "bvc-taster-wine": "OUT OF SCOPE, vocational and 21+, no K-12 academic standard claimed",
   // Adult professional/consumer education. Like the sommelier entry above, this one is currently
   // INERT: `registered` below only matches the shorthand `{ slug: "..." }` form, and this course is
   // registered through a seedAuthoredCourse call, so the guard never sees it. Written down anyway

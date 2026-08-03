@@ -57,9 +57,9 @@ export interface Citation {
  */
 export const STAGED_COURSES: string[] = [
   // Newly created, never reviewed by anyone
-  "bvc-sommelier-wine",
-  "bvc-sommelier-coffee",
-  "bvc-sommelier-chocolate",
+  "bvc-taster-wine",
+  "bvc-taster-coffee",
+  "bvc-taster-chocolate",
   "surplus-funds-basics",
   // BAM's enrolled courses
   "ai-b1-prompt-engineering",

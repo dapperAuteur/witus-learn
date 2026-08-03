@@ -23,6 +23,9 @@ export async function seedAuthoredCourse(
      *  BVC Sommelier courses are. Set both or neither. */
     seriesSlug?: string;
     seriesTitle?: string;
+    /** 1-based position within the series. Without it a series can say what belongs together but
+     *  not what comes first, which is the gap that made the sommelier three unorderable. */
+    seriesOrder?: number;
     /** How many leading lessons are free preview. Defaults to 1, the historical behaviour.
      *  A paid course whose first lesson is housekeeping needs 2-3 to show real teaching before
      *  the paywall. Counts from the top in authored order, quizzes included. */
@@ -40,6 +43,7 @@ export async function seedAuthoredCourse(
     ...(opts.requiresAgeGate != null ? { requiresAgeGate: opts.requiresAgeGate } : {}),
     ...(opts.seriesSlug != null ? { seriesSlug: opts.seriesSlug } : {}),
     ...(opts.seriesTitle != null ? { seriesTitle: opts.seriesTitle } : {}),
+    ...(opts.seriesOrder != null ? { seriesOrder: opts.seriesOrder } : {}),
     ...(opts.relatedProducts != null ? { relatedProducts: opts.relatedProducts } : {}),
   };
 

@@ -495,7 +495,7 @@ const FLIGHT_12: Flight = {
 // ─────────────────────────────── COURSE ───────────────────────────────
 
 export const BVC_SOMMELIER_WINE_COURSE: AuthoredCourse = {
-  title: "BVC Sommelier: Wine",
+  title: "BVC Taster: Wine",
   description:
     "Learn to taste wine systematically and choose it confidently: the four-stage tasting grid and the six structural components, the noble grapes and the markers that give each one away, how climate and place land in the glass, what the cellar does (oak, malolactic conversion, skin contact, carbonic maceration, the sparkling methods, botrytis and fortification), how to read any label in the world by decoding AOC, DOCG, DO, Predikat and AVA, the regions that set the reference points, what a price actually buys you in a shop and on a restaurant list, correct service, storage and the seven faults worth recognising, the mechanics behind why the classic food pairings work, and finally blind deduction: putting a glass in front of yourself and calling the grape, the climate, and the age from evidence. The sequel to BVC Season 2, Episode 9, which covers wine's history. Twelve tasting flights with budgets and substitutes, and a parallel no-alcohol path through every drill. Not affiliated with, and not exam preparation for, any certifying body.",
   lessons: [
@@ -532,6 +532,23 @@ It also will not tell you which bottles to buy by name. Producers change, vintag
 
 ${WINE_METHOD_NOTE}
 
+
+**And a note on what to call yourself, because the honest answer is more interesting than the title.**
+
+Every vice on this shelf has a real expert title, and most of them are **owned certification marks belonging to programmes this course has nothing to do with.**
+
+| Vice | The real title | What it actually is |
+| --- | --- | --- |
+| Wine | **Sommelier** | The one word that escaped into common use. Generic, unowned, and now borrowed by cheese, water and olive oil |
+| Beer | **Cicerone** | A trademarked certification. Its own programme states the word is reserved for people who have passed it and should not be used as a synonym for beer expert |
+| Coffee | **Q Grader** | A Coffee Quality Institute certification. The generic job word underneath it is *cupper* |
+| Chocolate | **Chocolate taster** | Taught by dedicated institutes; *chocolatier* is a maker, which is a different job |
+| Cannabis | **Interpener** | A specific institute's programme term |
+| Sake | **Kikisake-shi** | A Japanese certification, and the closest true parallel to a sommelier |
+
+So this course is called a **Taster** course, which is the plain English for what you are actually doing, and it is a word nobody owns.
+
+**How this relates to those programmes, stated plainly:** it is not any of them, it does not prepare you for their exams, and finishing it entitles you to call yourself nothing. What it does is teach the same underlying skill they all test, which is tasting systematically and describing accurately. If you later sit one of those exams, this will have helped. That is a claim about the subject, not a promise about a result, and anyone who tells you a course can hand you a protected title is selling you something.
 ## Sources
 - International Organisation of Vine and Wine. (2021). *OIV standard for international wine competitions and spirituous beverages of vitivinicultural origin*. OIV. https://www.oiv.int
 - Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.`,

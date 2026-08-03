@@ -104,6 +104,11 @@ export const courses = pgTable(
     seasonNumber: smallint("season_number"),
     seriesSlug: text("series_slug"),
     seriesTitle: text("series_title"),
+    /** Position within the series, 1-based. NULL = unordered, which is what every series was before
+     *  this column existed: a series could say "these three belong together" but not "this one is
+     *  first", so the app could not render an order and a learner had to guess. Ordering is by this
+     *  value, then by title, so a partially numbered series still renders sensibly. */
+    seriesOrder: integer("series_order"),
 
     // Featured strip
     isFeatured: boolean("is_featured").notNull().default(false),
