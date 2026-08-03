@@ -13,6 +13,7 @@ import { CIVIC_DOCUMENTATION_COURSE } from "./data/civic-documentation-course";
 import { HOW_STORIES_WORK_COURSE } from "./data/how-stories-work-course";
 import { NEWS_STORYTELLING_COURSE } from "./data/news-storytelling-course";
 import { DOCUMENTARY_COURSE } from "./data/documentary-course";
+import { ORAL_HISTORY_COURSE } from "./data/oral-history-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -1329,6 +1330,24 @@ async function main() {
     seriesOrder: 12,
     seriesCode: "STORY",
     seriesPosition: "T3",
+    seriesTrack: "True",
+  });
+
+  // Last rung of the True track, and the one that reframes the other three: civic documentation,
+  // news and documentary all point outward at an event, while oral history points at a person
+  // REMEMBERING, so its primary evidence is memory rather than correspondence to a record.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "oral-history",
+    course: ORAL_HISTORY_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 13,
+    seriesCode: "STORY",
+    seriesPosition: "T4",
     seriesTrack: "True",
   });
 
