@@ -9719,6 +9719,169 @@ What is Closing Credits?
     provenance: "plans/future-courses/acting/voice-acting.md",
   },
   {
+    key: "documentary-documenters-course-outline",
+    title: "The Documenters course, and the documentary track",
+    group: "Documentary",
+    summary: "Outline for the True track of the Storytelling series (`docs/storytelling-curriculum.md`).",
+    body: `# The Documenters course, and the documentary track
+
+Outline for the True track of the Storytelling series (\`docs/storytelling-curriculum.md\`).
+
+BAM's note (\`plans/future-courses/documentary/01-list-of-documentary.md\`) asks for:
+- a Documenter course based on the **Mirror Indy documenter role**,
+- the **Documenters Field Guide** as the source,
+- **at least one full course on the Field Guide alone**.
+
+The Field Guide is now in hand: eleven PDFs in that directory, supplied 2026-08-03. The source check
+\`documenters-field-guide\` can be closed.
+
+---
+
+## What the Field Guide actually contains, verified
+
+Read directly from the supplied PDFs rather than described from the website.
+
+**The programme.** City Bureau, a Chicago 501(c)(3), launched Documenters there in **2018** to "train
+and pay people to monitor local government, contribute to the public record, and hold power to
+account." The Documenters Network spans **more than 20 local news and community organisations** and
+has **trained more than 3,000 people**. Documenters are **paid a set rate based on meeting length,
+plus additional time for pre-research and editing.**
+
+**Indianapolis is run by Mirror Indy** (\`documenters@mirrorindy.org\`, \`indianapolis-in.documenters.org\`),
+which is what makes BAM's local framing concrete rather than hypothetical.
+
+**The Guide's own structure**, which is close to a syllabus already:
+
+| Section | Articles |
+| --- | --- |
+| Using Documenters.org | How to become a Documenter · How to take your first assignment · Using Google Docs |
+| General assignment tips | Before your assignment · Behavior at public meetings · Know your rights: Open meetings law · Note-taking assignment tips · Live reporting assignment tips · Interviewing tips · Photography tips · Audio recording tips · Tips for revising your notes · **AI Usage Guidelines** |
+| Local program guides | Per city, including Indianapolis (Mirror Indy) |
+
+**The spine sentence for the whole course**, quoted from the note-taking article:
+
+> "Remember that someone who didn't attend the meeting should be able to understand what happened
+> based on your notes."
+
+That single standard organises everything. Every technique in the course is downstream of it.
+
+**The note-taking article's six steps**, which become the backbone of the core module: do your
+pre-research, create a system, listen and learn, make connections, use your time efficiently, review
+and edit. Plus its "things you might consider including" checklist: attendee count excluding
+officials, start time, presenters with titles and affiliations, stated goals, main concerns and why
+they were raised, next steps, named and quoted community members (with the option to describe someone
+generally, for example "a resident"), recommended photo/audio/video, and links to related coverage.
+
+---
+
+## The course: Civic Documentation
+
+**Title:** *Civic Documentation: Recording What Happened in Public*
+**Home:** Learn.WitUS, Storytelling category, series position 4.
+**Length:** ~22 lessons.
+
+### Why it sits in the Storytelling series rather than apart from it
+
+Because it teaches the **opposite** discipline, and that contrast is the pedagogy. The monodrama and
+short-form courses teach a writer to find the change, shape the material and build to a turn. This
+course teaches: **record what happened, do not shape it, do not find the arc.**
+
+A learner who has felt both pulls is better at each. **Knowing when NOT to make a story out of
+something is a craft skill**, and this is the course that teaches it.
+
+### Module outline
+
+**Module 1 · Why public meetings, and why nobody covers them (4 lessons)**
+1. The gap: what happens in a room nobody attends, and what a documenter is for
+2. City Bureau, 2018, and the model: trained and paid, not volunteered
+3. What a public meeting actually is: bodies, agendas, quorums, votes, public comment
+4. Quiz
+
+**Module 2 · Before the meeting (3 lessons)**
+5. Pre-research: agendas, minutes, packets, and what to read first
+6. Finding the meeting: portals, calendars, and what to do when nothing is published
+7. Drill: pre-research a real meeting in your own county
+
+**Module 3 · In the room (5 lessons)**
+8. Behaviour at public meetings: you are a member of the public, not press with special rights
+9. **Know your rights: open meetings law.** The federal picture, and how to find YOUR state's act
+10. Note-taking, part one: the six steps and the standard that governs them
+11. Note-taking, part two: the checklist, and what to capture when the meeting is packed
+12. Quiz
+
+**Module 4 · Capture (4 lessons)**
+13. Audio recording: consent, placement, and what recording is for
+14. Photography: what is permitted, what is useful, and photographing people who did not choose it
+15. Live reporting: the discipline of publishing while it is still happening
+16. Interviewing: approaching someone after a meeting, and getting a name spelled right
+
+**Module 5 · After (4 lessons)**
+17. Revising notes: doing it before memory fades, and what "legible to a stranger" means
+18. **What not to write.** Where documentation ends and reporting begins, and why the line protects you
+19. **AI usage.** The Field Guide has its own guidelines; this lesson teaches the reasoning
+20. Quiz
+
+**Module 6 · Doing it for real (2 lessons)**
+21. **Capstone:** document one real public meeting to the standard
+22. Review and sources
+
+### The Indianapolis module
+
+Woven through rather than bolted on, because BAM's note asks for the Mirror Indy role specifically:
+Marion County's bodies and where they meet, Mirror Indy's own local guide, Indiana's open-meetings
+law as the worked example in Lesson 9, and how to actually apply.
+
+**It is written so a learner elsewhere can still use it**: every Indianapolis specific is paired with
+"here is how you find the equivalent where you are," which is the same method-over-table discipline
+the surplus-funds course uses.
+
+### The capstone
+
+Attend one real public meeting and produce notes to the Field Guide standard. Submit the notes, the
+pre-research that preceded them, and a short reflection on what was hard. **Graded against the spine
+sentence:** could someone who was not there understand what happened?
+
+A learner who cannot attend in person documents a livestreamed or recorded meeting instead, and says
+so. Most bodies now stream, which makes this genuinely available to everyone.
+
+---
+
+## Two things to settle before writing
+
+**1. Permission and framing with City Bureau and Mirror Indy.** The course teaches their published
+standard and points learners toward a paid programme, which is a benefit to them. Even so, a course
+built this closely on one organisation's guide should tell them it exists. **The honest framing is
+"this course teaches the practice, and here is how to apply to the real programme" rather than
+implying any endorsement**, exactly as the taster courses handle certification bodies. Worth an email
+before publishing, and it is filed as a source check.
+
+**2. How much to quote.** The Guide's structure and standards can be taught and cited. Reproducing its
+articles wholesale would be both a rights problem and a worse course. The rule: **teach the reasoning,
+cite the source, and send learners to the original.**
+
+---
+
+## The rest of the documentary track, sketched
+
+Once Civic Documentation exists, the True track continues:
+
+- **News storytelling.** BAM's original note asks "how to tell stories when delivering the news?" This
+  is where the tension between the two tracks is directly addressed: the change is real and you do not
+  get to invent the turn.
+- **Documentary.** Long-form, and the ethics of shaping a real person's story over months.
+- **Oral history.** Interview technique at depth, and archiving.
+- **Mockumentary**, the series capstone, which only works after the True track is real.
+
+---
+
+## Sources
+
+- City Bureau. (n.d.). *Documenters field guide*. https://fieldguide.documenters.org/
+- City Bureau. (2024, October 11). *Note-taking assignment tips*. Documenters Field Guide.
+- Documenters. (n.d.). *Indianapolis Documenters*, operated by Mirror Indy. https://indianapolis-in.documenters.org/`,
+    provenance: "plans/future-courses/documentary/00-documenters-course-outline.md",
+  },
+  {
     key: "documentary-list-of-documentary",
     title: "list of documentary",
     group: "Documentary",

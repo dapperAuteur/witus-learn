@@ -195,27 +195,24 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
 
   // ── Storytelling / Documentarian ──────────────────────────────────────────────────────────────
   {
-    key: "documenters-field-guide",
+    key: "documenters-permission",
     course: "civic-documentation (planned)",
-    title: "Documenters Field Guide: what does it actually teach?",
-    severity: "high",
+    title: "Documenters: tell City Bureau and Mirror Indy the course exists",
+    severity: "medium",
     question:
-      "What are the sections of the Documenters Field Guide at fieldguide.documenters.org, and what standards does it set for note-taking, live updates, filing and ethics?",
+      "Are City Bureau and Mirror Indy content for a paid course to teach the Documenters practice from their published Field Guide, citing it and directing learners to apply to the real programme?",
     claim:
-      "Nothing yet. The planned civic-documentation course is being written WITHOUT it, and the Indianapolis module plus any claim about Documenters' own standards is on hold until this is answered, rather than being written from assumption.",
+      "The planned Civic Documentation course is built on the Field Guide's structure and standards, cites them, and sends learners to documenters.org to apply. It claims no endorsement and no affiliation.",
     stakes:
-      "This is a course about documenting accurately. Writing it from a guess about how the leading organisation trains people would be self-refuting. It is also the difference between a course a learner could use to actually sign up as a paid Documenter in Indianapolis and a course that merely admires the idea.",
+      "The course is a benefit to them, since it produces trained applicants for a programme that trains and pays people. That is exactly why it should not arrive as a surprise. It is also a rights question about how much of the Guide may be quoted rather than taught.",
     needs: [
-      "The section and chapter titles, quoted",
-      "What it says about note-taking standard and format",
-      "What it says about live updates and filing deadlines",
-      "Anything on ethics, corrections, or what a Documenter must not do",
-      "Whether the guide may be referenced or quoted in a paid course, and under what terms",
+      "A reply from City Bureau (documenters@citybureau.org) and Mirror Indy (documenters@mirrorindy.org)",
+      "Any wording they want used, or want avoided, when the course names them",
+      "Whether they object to the course pointing learners at the Indianapolis programme",
     ],
     where: [
-      "https://fieldguide.documenters.org/ — it redirects to a Notion page that renders client-side, so it needs a human with a browser. Claude cannot read it",
-      "City Bureau directly, who may simply say yes to a course that sends them trained applicants",
-      "The Indianapolis instance at https://indianapolis-in.documenters.org/",
+      "documenters@citybureau.org and documenters@mirrorindy.org",
+      "The Field Guide's own Contact us section",
     ],
   },
 

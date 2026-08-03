@@ -64,6 +64,8 @@ const BACKLOG: Record<string, string> = {
   // direct fit for the Common Core ELA writing strands (W.11-12.3 narrative writing, W.11-12.5
   // revision), which is a closer fit than most of what the catalog has already mapped.
   "monodrama-writing": "MAP THIS, not excused. Narrative-writing course, fits the ELA writing strands",
+  "monodrama-performing": "MAP THIS, not excused. Performance craft; check the arts standards rather than ELA",
+  "short-form-drama": "MAP THIS, not excused. Dramatic writing, fits the ELA writing strands",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");
