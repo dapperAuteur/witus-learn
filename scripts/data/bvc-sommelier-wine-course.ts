@@ -101,6 +101,214 @@ const FLIGHT_1: Flight = {
     "Substitute four non-alcoholic drinks that isolate the same axes: unsweetened cranberry juice (high acid), a sweetened iced tea (residual sugar), a twelve minute black tea (tannin), and a full fat oat milk (body). Score them on the same six-line grid. The vocabulary transfers exactly, and alcohol is the one line you skip.",
 };
 
+const FLIGHT_2: Flight = {
+  n: 2,
+  title: "Four white grapes, four signatures",
+  teaches: "The markers that give a white grape away, tasted side by side so the differences are unmissable.",
+  tier: "core",
+  bottles: [
+    {
+      role: "Pyrazines and thiols",
+      target: "A Sauvignon Blanc from the Loire (Sancerre or Touraine) or from Marlborough",
+      priceUsd: "15-25",
+      substitute: "Any wine labelled Sauvignon Blanc from a cool region",
+    },
+    {
+      role: "Acid as a structural spine",
+      target: "A dry Riesling from Germany, Alsace or Austria",
+      priceUsd: "16-25",
+      substitute: "An Australian Riesling from Clare or Eden Valley",
+    },
+    {
+      role: "A neutral grape showing the winemaker instead of itself",
+      target: "An unoaked Chardonnay, Chablis if the budget stretches",
+      priceUsd: "18-28",
+      substitute: "Any Chardonnay whose back label says stainless steel or unoaked",
+    },
+    {
+      role: "Texture and salinity",
+      target: "An Albarino from Rias Baixas, or a Gruner Veltliner from Austria",
+      priceUsd: "15-24",
+      substitute: "A dry Chenin Blanc from the Loire or South Africa",
+    },
+  ],
+  procedure: [
+    "Serve all four at the same temperature, around 10 to 12 degrees Celsius. Temperature differences will masquerade as grape differences.",
+    "Nose all four before tasting any of them. Rank them from most aromatic to least, and write down what makes the loudest one loud.",
+    "Score acidity on all four before flavour. Riesling should be at or near the top. If it is not, check your Sauvignon Blanc, which can rival it.",
+    "Find the green note in the Sauvignon Blanc and name it precisely: grass, gooseberry, green pepper, blackcurrant leaf. That family is the pyrazine and thiol signature.",
+    "Ask of the Chardonnay: what does this taste of that is NOT the grape? That is the lesson of Chardonnay.",
+  ],
+  lookFor:
+    "Covering the labels and re-pouring in a different order, you can pick out the Sauvignon Blanc and the Riesling with confidence.",
+  noAlcohol:
+    "Run the same shape with four non-alcoholic drinks chosen for aromatic contrast: fresh grapefruit juice (loud and thiol-like), unsweetened green tea (herbaceous and lightly grippy), coconut water (neutral and textural), and a lime-and-mineral-water mix (acid spine). Rank aromatic intensity, score acid, and name the green note. The exercise is the ranking, and it works without wine.",
+};
+
+const FLIGHT_3: Flight = {
+  n: 3,
+  title: "Four red grapes, four structures",
+  teaches: "That red grapes differ more in STRUCTURE than in flavour, and structure is what you can actually recognise.",
+  tier: "core",
+  bottles: [
+    {
+      role: "Pale, high acid, low to medium tannin",
+      target: "A Pinot Noir from Burgundy at village level, Oregon, or a Beaujolais Cru for the cheaper version of the lesson",
+      priceUsd: "20-30",
+      substitute: "Any pale, light bodied red from a cool region",
+    },
+    {
+      role: "Peppery and savoury, medium to high tannin",
+      target: "A Syrah from the Northern Rhone (Crozes-Hermitage or Saint-Joseph)",
+      priceUsd: "20-30",
+      substitute: "A cool climate Syrah from Chile, Victoria or Washington",
+    },
+    {
+      role: "High tannin, black fruit, structural spine",
+      target: "A Cabernet Sauvignon from Bordeaux, Chile or California",
+      priceUsd: "18-28",
+      substitute: "A Bordeaux blend labelled by its appellation rather than its grape",
+    },
+    {
+      role: "High alcohol, ripe red fruit, soft tannin",
+      target: "A Grenache-based blend from the Southern Rhone (Cotes du Rhone or Rasteau)",
+      priceUsd: "15-24",
+      substitute: "A Garnacha from Aragon or a warm climate Grenache from Australia",
+    },
+  ],
+  procedure: [
+    "Serve all four at 16 to 18 degrees Celsius, cooler than most rooms. A warm red reads as alcoholic and flabby and will wreck the comparison.",
+    "Score tannin on all four FIRST, before any flavour note, and rank them. This ranking is the point of the flight.",
+    "Now score acid and rank again. Notice that the Pinot Noir can be the lightest AND among the highest in acid.",
+    "Look specifically for black pepper in the Syrah. Some people cannot smell the compound responsible, so if you find nothing there, that is a real and documented result, not a failure.",
+    "Check every label for stated alcohol after you have scored, and see how close your alcohol calls were.",
+  ],
+  lookFor:
+    "You can rank the four by tannin and by acid, and those two rankings are not the same ranking.",
+  noAlcohol:
+    "Build the same structural ladder without wine: a hibiscus or cranberry infusion (high acid, low grip), a twelve minute black tea (high grip), a pomegranate juice cut with water (fruit plus moderate grip), and a strong unsweetened cocoa infusion (grip plus body). Rank grip, then rank acid, and confirm the two rankings differ. That is the transferable lesson.",
+};
+
+const FLIGHT_4: Flight = {
+  n: 4,
+  title: "One grape, two climates",
+  teaches: "That climate is legible in the glass, and it moves acid, alcohol, fruit ripeness and body together.",
+  tier: "core",
+  bottles: [
+    {
+      role: "Cool climate white",
+      target: "A Chablis, or another cool region unoaked Chardonnay",
+      priceUsd: "20-30",
+      substitute: "A Chardonnay from Chile's Limari or from Tasmania",
+    },
+    {
+      role: "Warm climate white, same grape",
+      target: "A Chardonnay from California, South Australia or Mendoza, unoaked if you can find it",
+      priceUsd: "15-25",
+      substitute: "Any Chardonnay stating 14% alcohol or more",
+    },
+    {
+      role: "Cool climate red",
+      target: "A Syrah from the Northern Rhone",
+      priceUsd: "20-30",
+      substitute: "A cool climate Syrah from Chile or Washington",
+    },
+    {
+      role: "Warm climate red, same grape",
+      target: "A Shiraz from Barossa or McLaren Vale",
+      priceUsd: "18-28",
+      substitute: "Any Shiraz stating 14.5% alcohol or more",
+    },
+  ],
+  procedure: [
+    "Taste in pairs: the two Chardonnays together, then the two Syrahs together. Never all four at once, because the pair IS the experiment.",
+    "For each pair, score acid, alcohol, body and fruit state (fresh, ripe, cooked, dried). Four lines, two wines.",
+    "Predict which is which before you look, then check the labels and the stated alcohol.",
+    "Write one sentence per pair: what moved together. Acid down, alcohol up, fruit riper, body fuller is the standard warm climate package.",
+    "Now find the exception in your own results, because there usually is one, and ask whether winemaking rather than climate explains it.",
+  ],
+  lookFor:
+    "You called cool versus warm correctly in both pairs, and you can name the four things that moved together.",
+  noAlcohol:
+    "Compare fruit at two ripeness stages, which is the same variable: a green underripe apple against a soft ripe one, and fresh grapes against raisins. Score acid, sweetness, body and fruit state on each. The cool-to-warm package (acid falling, sugar rising, fruit moving from fresh to cooked to dried) is exactly what your mouth reports.",
+};
+
+const FLIGHT_5: Flight = {
+  n: 5,
+  title: "What oak actually does",
+  teaches: "Separating the taste of a GRAPE from the taste of a winemaking decision.",
+  tier: "core",
+  bottles: [
+    {
+      role: "The control, no oak",
+      target: "An unoaked Chardonnay, stainless steel stated on the label",
+      priceUsd: "15-22",
+      substitute: "A Chablis at village level",
+    },
+    {
+      role: "The same grape with oak",
+      target: "An oaked Chardonnay from California, Burgundy or Australia",
+      priceUsd: "20-30",
+      substitute: "Any Chardonnay whose back label mentions barrel fermentation or French oak",
+    },
+    {
+      role: "American oak signature",
+      target: "A Rioja Crianza or Reserva, traditionally aged in American oak",
+      priceUsd: "16-26",
+      substitute: "A Bourbon barrel aged red, which pushes the same signature further",
+    },
+  ],
+  procedure: [
+    "Nose the unoaked wine and write three aromas. This is your grape baseline.",
+    "Nose the oaked version of the same grape and write only what is ADDED. Vanilla, clove, toast, smoke, cedar, coconut, baking spice.",
+    "Taste both and compare TEXTURE, not flavour. Oak adds tannin to a white wine, which most people do not expect, and it usually adds a broader, rounder mouthfeel.",
+    "Nose the Rioja for coconut and dill. Those two point specifically toward American oak rather than French.",
+    "Ask the honest question on each wine: is the oak carrying the fruit, or hiding it?",
+  ],
+  lookFor:
+    "You can list what oak added without naming a single thing the grape itself contributed.",
+  noAlcohol:
+    "Oak is an infusion, so infuse. Steep a clean, food-safe oak chip (sold for home brewing and for cooking) in water overnight, then taste that water against plain water: vanilla, toast and a faint grip appear from nothing. Then compare plain unsweetened cocoa against a vanilla-and-toast-forward hot chocolate for the same lesson at a larger scale.",
+};
+
+const FLIGHT_6: Flight = {
+  n: 6,
+  title: "Three ways to put bubbles in a bottle",
+  teaches: "That how the second fermentation was done changes the aroma more than the grape does.",
+  tier: "core",
+  bottles: [
+    {
+      role: "Tank method, primary fruit preserved",
+      target: "A Prosecco, Brut or Extra Dry",
+      priceUsd: "14-20",
+      substitute: "Any sparkling wine made by the tank or Charmat method",
+    },
+    {
+      role: "Traditional method, autolytic character",
+      target: "A Cremant from France, or a Cava Reserva",
+      priceUsd: "16-26",
+      substitute: "Any sparkler labelled traditional method, methode traditionnelle or metodo classico",
+    },
+    {
+      role: "Dosage contrast",
+      target: "A second bottle of the traditional method wine at a different sweetness level, Brut Nature or Extra Dry",
+      priceUsd: "16-26",
+      substitute: "A Moscato d'Asti, which sits far along the same sweetness axis",
+    },
+  ],
+  procedure: [
+    "Serve all at 6 to 8 degrees Celsius, in a normal wine glass rather than a flute. A flute concentrates bubbles and hides aroma.",
+    "Nose the tank method wine: expect pear, apple and flowers, the primary fruit of the grape.",
+    "Nose the traditional method wine: look for bread, brioche, biscuit and toasted nuts. That family is autolysis, from time on the dead yeast.",
+    "Compare bubble texture, not bubble size. Time on lees tends to give a finer, more integrated feel.",
+    "Compare the two dosage levels and note how much sugar changes your read on the acid, even though the acid did not change.",
+  ],
+  lookFor:
+    "You can say which wine had a second fermentation in its own bottle, from aroma alone, without reading the label.",
+  noAlcohol:
+    "The autolytic character is a bread aroma, so smell it at the source: fresh bread crust, a plain biscuit and toasted brioche against a fresh pear and a green apple. Then run the sweetness half honestly with sparkling water plus zero, six and thirty grams of sugar per litre, tasting each against a squeeze of lemon. You will feel sugar mask acid without the acid changing.",
+};
+
 // ─────────────────────────────── COURSE ───────────────────────────────
 
 export const BVC_SOMMELIER_WINE_COURSE: AuthoredCourse = {
@@ -697,6 +905,975 @@ Four things carry most of a quality assessment, and they are all things you can 
             explanation:
               "Adaptation is why short sniffs with pauses beat one long inhale, and why the first still sniff before swirling is worth taking seriously. The wine has not changed meaningfully in a few seconds.",
             sourceLessonSlug: "somm-nose",
+          },
+        ],
+      },
+    },
+
+    // ══════════════ MODULE 3 · THE GRAPE ══════════════
+    {
+      slug: "somm-why-variety-matters",
+      title: "11 · Why variety matters, and where it stops mattering",
+      section: "Module 3 · The grape",
+      recallContent: [
+        {
+          prompt: "Name the four quality criteria from the conclusion stage, and say which one the course calls the most important.",
+          answer:
+            "Balance, length, intensity and complexity. Balance is the most important and the easiest for a beginner to feel, because green acid, hot alcohol, bitter tannin and cloying sugar all announce themselves.",
+        },
+      ],
+      body: `There are more than a thousand wine grape varieties in commercial use, documented variety by variety with their DNA relationships in Robinson, Harding and Vouillamoz (2012). You need about twenty. Those twenty cover most of what is on a shop shelf, and more importantly they set the REFERENCE POINTS you compare everything else against.
+
+**What a variety actually gives you.** A grape brings a package: how thick its skin is (and therefore colour and tannin), how much acid it holds onto as it ripens, how early or late it ripens, and a set of aroma compounds that are genuinely characteristic. Some of those compounds are identified and measurable, which is why certain markers are reliable rather than poetic:
+
+| Marker | Compound family | Grapes it points to |
+| --- | --- | --- |
+| Green bell pepper, blackcurrant leaf | Methoxypyrazines, which fall as the fruit ripens and gets sun exposure | Sauvignon Blanc, Cabernet Sauvignon, Cabernet Franc, Carmenere |
+| Passionfruit, grapefruit, box tree | Volatile thiols | Sauvignon Blanc above all |
+| Black pepper | Rotundone, identified as the pepper aroma in Shiraz by Wood et al. (2008) | Syrah, Gruner Veltliner, Mourvedre |
+| Petrol or kerosene in an older white | TDN, which develops with age, more in sun exposed and warm sites | Riesling |
+| Banana, kirsch, bubblegum | Isoamyl acetate, a fermentation product, not a grape trait | Any wine made by carbonic maceration, classically Beaujolais |
+
+That last row is the important caveat. Some of what tastes like "the grape" is actually the winemaking, and Module 5 exists to separate the two.
+
+**Where variety stops mattering.** Three places.
+
+1. **Climate outruns it.** The same grape in Chablis and in Barossa produces wines a beginner would not guess were related. Module 4 makes this the whole lesson.
+2. **Blends.** Much of the world's best wine is blended, and most Old World labels do not tell you what is in the bottle. A Chateauneuf-du-Pape may legally draw on a long list of permitted varieties. Asking "what grape is this" is sometimes the wrong question.
+3. **Winemaking can shout louder.** Heavy new oak, extended lees ageing, or carbonic maceration can dominate a neutral grape completely. This is not a flaw, it is a choice, and Chardonnay is famous precisely because it takes a winemaker's fingerprint so willingly.
+
+**How to actually learn twenty grapes.** Not by reading lists. By tasting them in CONTRAST, two or four at a time, and by writing down the one thing that separates them for you personally. The next two lessons give you the reference sets and the flights. Your notes from those flights are worth more than any table in this course, because they are in your vocabulary.
+
+:::reveal A red wine smells strongly of banana and bubblegum. Is that telling you about the grape or about the winemaking, and what does it imply? ||| The winemaking. Isoamyl acetate is a fermentation product associated with carbonic maceration, the whole-berry technique classically used in Beaujolais, so it points at a METHOD rather than at a variety. It is the cleanest example of why the grape and the cellar have to be scored separately.
+
+## Sources
+- Robinson, J., Harding, J., & Vouillamoz, J. (2012). *Wine grapes: A complete guide to 1,368 vine varieties, including their origins and flavours*. Ecco.
+- Wood, C., Siebert, T. E., Parker, M., Capone, D. L., Elsey, G. M., Pollnitz, A. P., Eggers, M., Meier, M., Vossing, T., Widder, S., Krammer, G., Sefton, M. A., & Herderich, M. J. (2008). From wine to pepper: Rotundone, an obscure sesquiterpene, is a potent spicy aroma compound. *Journal of Agricultural and Food Chemistry, 56*(10), 3738-3744. https://doi.org/10.1021/jf800183k`,
+    },
+    {
+      slug: "somm-noble-whites",
+      title: "12 · The white grapes worth knowing",
+      section: "Module 3 · The grape",
+      body: `Eight whites. Learn these and you can place most white wine you meet.
+
+| Grape | Acid | Aromatic? | The marker that gives it away | Classic homes |
+| --- | --- | --- | --- | --- |
+| **Riesling** | Very high | Yes | Piercing acid with real fruit ripeness, often some residual sugar, and petrol with age | Germany, Alsace, Austria, Clare and Eden Valley |
+| **Sauvignon Blanc** | High | Loudly | Green: grass, gooseberry, blackcurrant leaf, plus tropical thiols | Loire, Marlborough, Chile, Bordeaux blends |
+| **Chardonnay** | Varies with site | Barely | Very little of its own. What you taste is site plus cellar | Burgundy, everywhere else on earth |
+| **Chenin Blanc** | Very high | Moderate | Bruised apple, quince, wet wool, and it appears at every sweetness level | Loire (Vouvray, Savennieres), South Africa |
+| **Pinot Gris / Grigio** | Low to medium | Moderate | Two personalities: lean and neutral as Grigio, rich and spiced as Gris | Northern Italy, Alsace, Oregon |
+| **Gewurztraminer** | Low | Extremely | Lychee and rose. It is almost impossible to mistake and often reads sweet even when dry | Alsace, Alto Adige |
+| **Viognier** | Low | Very | Apricot and honeysuckle with a full, oily body | Condrieu, Rhone, California |
+| **Albarino / Gruner Veltliner** | High | Moderate | Albarino: citrus and salinity. Gruner: white pepper and lentil | Rias Baixas, Austria |
+
+**The four that matter most, and why.**
+
+**Riesling** is the reference for acid. It is also the most misunderstood grape in the shop, because a lot of people believe it is always sweet. It runs bone dry to intensely sweet, and Module 6 shows you how the German label tells you which. Its combination of high acid and low alcohol makes it one of the most food friendly wines in the world, and one of the longest lived whites.
+
+**Sauvignon Blanc** is the reference for aromatic loudness. The green notes are pyrazines, which fall as grapes get riper and more sun, so a green, grassy Sauvignon is telling you about a cool site or an early pick. The tropical passionfruit notes are thiols. Both are the grape, neither is the cellar.
+
+**Chardonnay** is the reference for NEUTRALITY, which is exactly why it became the world's most planted white. It is a blank cheque: it takes oak, lees, malolactic conversion and site expression more willingly than anything else. Chablis and a warm oaked Chardonnay taste unrelated, and are the same grape. The DNA work identifies it as a cross of Pinot and Gouais Blanc (Bowers et al., 1999), which is a useful reminder that most famous grapes are the children of unfamous ones.
+
+**Chenin Blanc** is the reference for RANGE. Dry, off dry, sweet, sparkling, and it holds enough acid to make all of them work. South Africa's plantings, historically called Steen, mean the grape is often the best value on a list.
+
+${flightCard(FLIGHT_2)}
+
+:::reveal Someone hands you a white with high acid, pronounced green apple and quince, and a faint wet wool note, and it is very slightly off dry. Name the likely grape and the two regions you would guess first. ||| Chenin Blanc, with the Loire (Vouvray in particular, which is made across the sweetness range) and South Africa as first guesses. The combination that points to it is very high acid holding up real fruit ripeness, plus that lanolin or wet wool note, plus the fact that a small amount of residual sugar is entirely normal for the grape rather than a sign of a cheap wine.
+
+## Sources
+- Bowers, J., Boursiquot, J.-M., This, P., Chu, K., Johansson, H., & Meredith, C. (1999). Historical genetics: The parentage of Chardonnay, Gamay, and other wine grapes of northeastern France. *Science, 285*(5433), 1562-1565. https://doi.org/10.1126/science.285.5433.1562
+- Robinson, J., Harding, J., & Vouillamoz, J. (2012). *Wine grapes: A complete guide to 1,368 vine varieties, including their origins and flavours*. Ecco.`,
+    },
+    {
+      slug: "somm-noble-reds",
+      title: "13 · The red grapes worth knowing",
+      section: "Module 3 · The grape",
+      body: `Ten reds, sorted by the thing you can actually feel: structure.
+
+| Grape | Tannin | Acid | Body | The marker that gives it away | Classic homes |
+| --- | --- | --- | --- | --- | --- |
+| **Pinot Noir** | Low to medium | High | Light to medium | Pale colour with real perfume: red cherry, rose, forest floor with age | Burgundy, Oregon, Central Otago, Sonoma Coast |
+| **Gamay** | Low | High | Light | Bright red fruit, often banana and kirsch when carbonic | Beaujolais |
+| **Nebbiolo** | Very high | Very high | Medium | The contradiction: pale garnet colour with ferocious tannin, tar and roses | Barolo, Barbaresco, Valtellina |
+| **Sangiovese** | High | Very high | Medium | Sour red cherry, tomato leaf, dried herbs, a savoury finish | Chianti, Montalcino, Montepulciano |
+| **Tempranillo** | Medium to high | Medium | Medium to full | Red fruit and leather, and very often coconut and dill from American oak | Rioja, Ribera del Duero |
+| **Merlot** | Medium | Medium | Medium to full | Plum and chocolate, softer and rounder than Cabernet at the same ripeness | Right Bank Bordeaux, everywhere |
+| **Cabernet Sauvignon** | High | Medium to high | Full | Blackcurrant, cedar, and a pyrazine green edge when not fully ripe | Bordeaux, Napa, Chile, Coonawarra |
+| **Syrah / Shiraz** | Medium to high | Medium | Full | Black pepper (rotundone) when cool grown, sweet blackberry and licorice when warm | Northern Rhone, Barossa, Chile |
+| **Grenache / Garnacha** | Low to medium | Low to medium | Full | High alcohol with soft tannin and ripe red fruit, often with a herbal edge | Southern Rhone, Priorat, Aragon |
+| **Malbec / Zinfandel** | Medium | Medium to low | Full | Malbec: inky violet, plush. Zinfandel: jammy, high alcohol, uneven ripeness | Mendoza, Cahors, California |
+
+**Read that table by column, not by row.** The rows are trivia. The columns are the skill. Learning that Nebbiolo is pale AND very tannic while Malbec is dark AND moderately tannic is what breaks the beginner's assumption that dark equals strong.
+
+**Cabernet Sauvignon is a made grape, and recently.** DNA analysis identified it as a natural cross of Cabernet Franc and Sauvignon Blanc (Bowers & Meredith, 1997), which explains the family resemblance in the green pyrazine note that runs through Sauvignon Blanc, Cabernet Franc and Cabernet Sauvignon alike. If you can find blackcurrant leaf in a Sauvignon Blanc, you already know how to find it in a Cabernet.
+
+**Zinfandel and Primitivo are the same variety**, tracked back to a Croatian grape by DNA work in the early 2000s (Maletic et al., 2004). It ripens unevenly, so a single bunch can hold raisined and underripe berries at once, which is exactly why the wines are often high in alcohol and jammy.
+
+**Syrah is the clearest climate demonstration in wine**, which is why Flight 4 uses it. Cool grown, it is peppery, savoury and medium bodied. Warm grown, the pepper compound largely disappears and the wine becomes sweet fruited, plush and high in alcohol. Same grape, two conclusions a beginner would swear were different varieties.
+
+${flightCard(FLIGHT_3)}
+
+:::reveal You have a red that is pale garnet, dries your gums aggressively, makes you salivate hard, and smells of tar and dried roses. What is your first guess and what is the confirming logic? ||| Nebbiolo, most likely from Barolo or Barbaresco. The confirming logic is the contradiction: almost no other grape combines a pale, easily seen-through colour with very high tannin and very high acid at once, and thin skins are precisely why it is pale despite the grip. Tar and roses is the classic descriptor pair, but the structure is what makes the call.
+
+## Sources
+- Bowers, J. E., & Meredith, C. P. (1997). The parentage of a classic wine grape, Cabernet Sauvignon. *Nature Genetics, 16*(1), 84-87. https://doi.org/10.1038/ng0597-84
+- Maletic, E., Pejic, I., Kontic, J. K., Piljac, J., Dangl, G. S., Vokurka, A., Lacombe, T., Mirosevic, N., & Meredith, C. P. (2004). Zinfandel, Dobricic, and Plavac Mali: The genetic relationships among three cultivars of the Dalmatian coast of Croatia. *American Journal of Enology and Viticulture, 55*(2), 174-180.
+- Robinson, J., Harding, J., & Vouillamoz, J. (2012). *Wine grapes: A complete guide to 1,368 vine varieties, including their origins and flavours*. Ecco.`,
+    },
+    {
+      slug: "somm-varietal-markers-drill",
+      title: "14 · Drill: name the grape from the evidence",
+      section: "Module 3 · The grape",
+      body: `Structure first, then marker, then name. Work from the evidence given and type the grape or the compound family. Answers are checked forgivingly, so spelling and accents will not sink you.
+
+This drill is deliberately harder than a multiple choice question, because producing a name from evidence is the skill blind tasting actually needs.`,
+      exercise: {
+        instructions:
+          "Read the evidence and type the answer. Grape names only, unless the prompt asks for a compound family.",
+        items: [
+          {
+            prompt: "Pale garnet, very high tannin, very high acid, tar and dried roses. Grape?",
+            answer: "Nebbiolo",
+            explanation:
+              "The pale-but-tannic contradiction is nearly unique to Nebbiolo, whose thin skins give little colour while delivering ferocious grip.",
+          },
+          {
+            prompt: "White wine, blistering acid, low alcohol, ripe stone fruit, faint petrol note. Grape?",
+            answer: "Riesling",
+            accept: ["Riesling (aged)"],
+            explanation:
+              "Petrol comes from TDN, which develops with bottle age in Riesling. High acid with low alcohol is the other half of the signature.",
+          },
+          {
+            prompt: "The compound family responsible for green bell pepper and blackcurrant leaf aromas?",
+            answer: "pyrazines",
+            accept: ["methoxypyrazines", "methoxypyrazine"],
+            explanation:
+              "Pyrazine levels fall as fruit ripens and gets sun exposure, so a strong green note points to a cool site or an early pick.",
+          },
+          {
+            prompt: "Red wine with obvious black pepper, medium body, savoury rather than sweet fruit. Grape and climate?",
+            answer: "Syrah, cool climate",
+            accept: ["Syrah cool", "cool climate Syrah", "Shiraz, cool climate"],
+            explanation:
+              "Rotundone, the pepper compound, is far more evident in cool grown Syrah. Warm grown Shiraz loses the pepper and gains sweet fruit and alcohol.",
+          },
+          {
+            prompt: "White wine, unmistakable lychee and rose, low acid, reads sweet even when dry. Grape?",
+            answer: "Gewurztraminer",
+            accept: ["Gewurztraminer", "Gewürztraminer"],
+            explanation:
+              "One of the few wines that is genuinely hard to mistake. Low acid plus overwhelming aromatics makes it read sweet regardless of residual sugar.",
+          },
+          {
+            prompt: "Red wine, banana and bubblegum on the nose, light body, low tannin. Grape and technique?",
+            answer: "Gamay, carbonic maceration",
+            accept: ["Gamay carbonic", "Gamay, carbonic", "Gamay with carbonic maceration"],
+            explanation:
+              "Isoamyl acetate from carbonic maceration produces the banana note. It is a method marker, not a grape marker, and Beaujolais is the classic home of both.",
+          },
+          {
+            prompt: "White wine with almost no aroma of its own, obvious vanilla and toast, broad texture. Grape and cellar decision?",
+            answer: "Chardonnay, oak",
+            accept: ["Chardonnay oak", "Chardonnay, oaked", "Chardonnay with oak"],
+            explanation:
+              "Chardonnay's neutrality is the point: what you are tasting is the winemaking. Vanilla and toast are oak markers, not grape markers.",
+          },
+          {
+            prompt: "Red wine, coconut and dill over red fruit and leather, medium tannin. Grape and oak origin?",
+            answer: "Tempranillo, American oak",
+            accept: ["Tempranillo American oak", "Tempranillo, American"],
+            explanation:
+              "Coconut and dill point specifically at American oak rather than French, and the traditional Rioja style is the classic pairing of that oak with Tempranillo.",
+          },
+          {
+            prompt: "Red wine, sour red cherry, dried herbs, tomato leaf, very high acid, savoury finish. Grape?",
+            answer: "Sangiovese",
+            explanation:
+              "The savoury, sour-cherry profile with very high acid is Sangiovese's signature, and it is why the grape works so well with tomato-based food.",
+          },
+          {
+            prompt: "Red wine, very high alcohol, soft tannin, ripe red fruit and a herbal edge. Grape?",
+            answer: "Grenache",
+            accept: ["Garnacha", "Grenache/Garnacha"],
+            explanation:
+              "Grenache accumulates sugar readily and holds relatively little tannin, so high alcohol with a soft structure is the standard package.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "somm-quiz-3",
+      title: "15 · Knowledge check: the grape",
+      section: "Module 3 · The grape",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questionsPerAttempt: 8,
+        questions: [
+          {
+            prompt: "Why is Chardonnay described as the reference grape for neutrality?",
+            options: [
+              "It ripens later than other whites, so it accumulates fewer aroma compounds",
+              "It contributes little aroma of its own, so site and cellar decisions show through",
+              "It is legally required to be fermented without added yeast",
+              "Its acid is so high that other flavours cannot be perceived",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Neutrality is why Chardonnay became the world's canvas grape: it takes oak, lees and malolactic conversion willingly, so Chablis and a warm oaked Chardonnay taste unrelated while being the same variety.",
+            sourceLessonSlug: "somm-noble-whites",
+          },
+          {
+            prompt: "A strong green bell pepper note in a Cabernet Sauvignon most directly indicates what?",
+            options: [
+              "Extended ageing in new French oak barrels",
+              "A fault caused by bacterial spoilage in the cellar",
+              "Pyrazines, which fall with ripeness and sun exposure",
+              "Residual sugar left in the wine after fermentation",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Methoxypyrazines drop as the fruit ripens, so a pronounced green edge points to a cool site or an early pick. It is a grape and ripeness signal, not oak, not a fault, and not sugar.",
+            sourceLessonSlug: "somm-why-variety-matters",
+          },
+          {
+            prompt: "What makes Nebbiolo's appearance so useful as a teaching example?",
+            options: [
+              "Its colour is pale while its tannin is very high, breaking the dark-equals-strong assumption",
+              "It is the only red grape that produces a wine with no visible rim variation",
+              "Its colour deepens with age rather than fading, unlike other reds",
+              "It is opaque when young and pale only after a decade in bottle",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Thin skins give little colour while still delivering ferocious grip, so a beginner who reads depth of colour as a proxy for structure gets it exactly backwards on Nebbiolo.",
+            sourceLessonSlug: "somm-noble-reds",
+          },
+          {
+            prompt: "Banana and bubblegum aromas in a light red are telling you about what?",
+            options: [
+              "The grape variety, which produces those esters naturally",
+              "The winemaking method, specifically carbonic maceration",
+              "The age of the wine, since esters develop over a decade",
+              "The soil type, which contributes those aromas through the roots",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Isoamyl acetate is a fermentation product tied to carbonic maceration, classically Beaujolais. It is the clearest example of the cellar imitating a grape trait, which is why the two are scored separately.",
+            sourceLessonSlug: "somm-why-variety-matters",
+          },
+          {
+            prompt: "DNA analysis established Cabernet Sauvignon as a natural cross of which two varieties?",
+            options: [
+              "Pinot Noir and Gouais Blanc",
+              "Merlot and Carmenere",
+              "Cabernet Franc and Sauvignon Blanc",
+              "Syrah and Mondeuse Blanche",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Bowers and Meredith (1997) identified the Cabernet Franc by Sauvignon Blanc parentage, which explains the shared green pyrazine thread running through all three. Pinot by Gouais Blanc produced Chardonnay and Gamay instead.",
+            sourceLessonSlug: "somm-noble-reds",
+          },
+          {
+            prompt: "What does a petrol or kerosene note in a white wine most reliably indicate?",
+            options: [
+              "A fault introduced by a contaminated storage tank",
+              "Fermentation carried out at an unusually high temperature",
+              "Contact with a synthetic closure over several years",
+              "TDN developing with age, characteristically in Riesling",
+            ],
+            correctIndex: 3,
+            explanation:
+              "TDN accumulates with bottle age and is more pronounced from sun exposed and warmer sites. It is a normal and prized part of mature Riesling, not a fault.",
+            sourceLessonSlug: "somm-why-variety-matters",
+          },
+          {
+            prompt: "Cool grown Syrah and warm grown Shiraz differ most obviously in what respect?",
+            options: [
+              "Peppery and savoury versus sweet fruited, plush and higher in alcohol",
+              "Pale and low tannin versus opaque and very high tannin",
+              "Very high acid versus no perceptible acid at all",
+              "Aromatic when young versus completely neutral when young",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Rotundone, the pepper compound, is far more evident in cool conditions. Warm growing pushes the wine toward sweet blackberry and licorice with more alcohol, which is why the same variety reads as two grapes.",
+            sourceLessonSlug: "somm-noble-reds",
+          },
+          {
+            prompt: "Why does the course say the grape variety is sometimes the wrong question to ask?",
+            options: [
+              "Because variety is legally secret in most of the world",
+              "Because blends are common and many Old World labels never state the grapes",
+              "Because DNA testing has shown most named varieties are identical",
+              "Because variety has no measurable effect on structure or aroma",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Much of the world's best wine is blended and labelled by place, so a Chateauneuf-du-Pape may draw on a long list of permitted varieties. Climate and winemaking can also outrun variety entirely.",
+            sourceLessonSlug: "somm-why-variety-matters",
+          },
+          {
+            prompt: "Coconut and dill notes over red fruit and leather point toward which combination?",
+            options: [
+              "Pinot Noir aged in stainless steel",
+              "Sangiovese fermented with whole bunches",
+              "Tempranillo aged in American oak",
+              "Grenache aged in concrete vessels",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Coconut and dill are American oak markers rather than French, and the traditional Rioja style pairs that oak with Tempranillo, which is why the combination is so recognisable.",
+            sourceLessonSlug: "somm-noble-reds",
+          },
+          {
+            prompt: "What is the practical reason the course teaches around twenty grape varieties rather than hundreds?",
+            options: [
+              "Twenty varieties account for all legally permitted plantings worldwide",
+              "Twenty is the maximum number a human palate can distinguish",
+              "The remaining varieties are all crosses of those twenty",
+              "They cover most shelves and set the reference points everything else is judged against",
+            ],
+            correctIndex: 3,
+            explanation:
+              "More than a thousand varieties are in commercial use. The twenty are chosen as reference points, not as a complete map, so an unfamiliar grape can be placed by comparison.",
+            sourceLessonSlug: "somm-why-variety-matters",
+          },
+          {
+            prompt: "Which structural pairing is characteristic of Grenache?",
+            options: [
+              "High alcohol with soft tannin",
+              "Low alcohol with very high tannin",
+              "High acid with no perceptible fruit",
+              "Very high tannin with very pale colour",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Grenache accumulates sugar readily, producing high alcohol, while carrying relatively little tannin. Very high tannin with a pale colour is the Nebbiolo signature instead.",
+            sourceLessonSlug: "somm-noble-reds",
+          },
+          {
+            prompt: "Why does the course tell you to read the grape tables by column rather than by row?",
+            options: [
+              "The columns list the regions where each grape is legally permitted",
+              "The columns are structural axes you can rank, which is the transferable skill",
+              "The rows are arranged alphabetically and carry no meaning",
+              "The columns are ordered by global planted area",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rows are trivia to memorise and forget. Ranking several grapes on tannin, then on acid, and noticing the two rankings differ is what actually transfers to a glass you have never seen.",
+            sourceLessonSlug: "somm-noble-reds",
+          },
+        ],
+      },
+    },
+
+    // ══════════════ MODULE 4 · PLACE ══════════════
+    {
+      slug: "somm-climate-in-the-glass",
+      title: "16 · Climate, and the four things that move together",
+      section: "Module 4 · Place",
+      recallContent: [
+        {
+          prompt: "Which grape is the reference for neutrality, and why does that make it the world's most planted white?",
+          answer:
+            "Chardonnay. It contributes little aroma of its own, so it takes oak, lees contact, malolactic conversion and site expression more willingly than anything else, which makes it a blank cheque for a winemaker.",
+        },
+      ],
+      body: `Climate is the single most legible thing in a glass, more legible than the grape, because it moves four things at once and in a predictable direction.
+
+**The package.** As a growing season gets warmer, grapes accumulate more sugar and lose acid. That is the entire mechanism, and everything else follows from it.
+
+| As the climate gets warmer | What happens in the glass |
+| --- | --- |
+| More sugar at harvest | Higher alcohol, and fuller body |
+| Acid falls | Softer, rounder, less refreshing |
+| Fruit ripens further | Fresh fruit becomes ripe, then cooked, then dried |
+| Tannins ripen too | Grippy and green becomes rounder and sweeter feeling |
+
+So when you find high acid, low alcohol and fresh or underripe fruit, you are looking at a cool climate or an early pick. When you find low acid, high alcohol and cooked or dried fruit, you are looking at a warm one. Two of the four is a hypothesis. Four of the four is a call.
+
+**Cool, moderate, warm.** These are relative terms about the GROWING SEASON, not about a country. Germany is a cool climate. The Barossa is a warm one. And both exist inside larger countries with regions of every kind, which is why "an Australian wine" tells you nothing.
+
+**Three climate types worth naming.**
+
+- **Maritime.** Ocean moderated: mild, with rainfall through the year and little difference between summer and winter. Bordeaux is the reference. Vintage variation is high because rain arrives at inconvenient times.
+- **Continental.** Inland: hot summers, cold winters, a big swing between them. Burgundy is the reference. Frost and hail are real annual risks, which is part of why the wines cost what they cost.
+- **Mediterranean.** Warm and dry through the growing season with the rain arriving in winter. The Southern Rhone, much of California, much of Spain. Vintage variation is lower, which is a commercial advantage and a stylistic ceiling.
+
+**Diurnal range, the factor that explains the exceptions.** Some very warm regions produce wines with startling acid, which the simple model above cannot explain. The answer is usually a big day to night temperature swing, common at altitude and near cold ocean currents. Warm days ripen the fruit, cold nights preserve the acid. Mendoza at altitude and parts of coastal California work exactly this way, and it is why "warm region" and "flabby wine" are not synonyms.
+
+**Altitude and aspect.** Higher is cooler, roughly. A slope facing the sun ripens more than a flat field beside it, which is why so many famous vineyards are on hillsides and why Old World appellation boundaries so often follow contours rather than roads.
+
+${flightCard(FLIGHT_4)}
+
+:::reveal A wine has high acid, 14.5% alcohol and fully ripe fruit. The simple warm-cool model says that combination should not happen. What explains it? ||| A large diurnal range, most often from altitude or from a cold ocean influence. Warm days push sugar accumulation, so alcohol is high and fruit is ripe, while cold nights slow the loss of acid. High altitude Mendoza and coastal California sites work this way, which is why a warm region does not automatically mean a flabby wine.
+
+## Sources
+- Jones, G. V., White, M. A., Cooper, O. R., & Storchmann, K. (2005). Climate change and global wine quality. *Climatic Change, 73*(3), 319-343. https://doi.org/10.1007/s10584-005-4704-2
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.`,
+    },
+    {
+      slug: "somm-terroir-honestly",
+      title: "17 · Terroir, stated honestly",
+      section: "Module 4 · Place",
+      body: `Episode 9 gave you terroir as an idea and a piece of history. This lesson gives it to you as a working tool, which means separating what is well evidenced from what is marketing.
+
+**The honest definition.** Terroir is the complete natural environment of a vineyard site: climate, soil, topography, and the way they interact, plus, in most French usage, the human tradition of working that site. It is a real and useful concept. Blind tastings have repeatedly shown that experienced tasters can distinguish wines from neighbouring sites made the same way, which is the claim that matters.
+
+**What is well evidenced about soil.** Soil affects wine mainly through PHYSICS, not chemistry:
+
+- **Drainage and water holding.** A vine under mild water stress puts less energy into leaves and more into fruit, and produces smaller, more concentrated berries. This is the biggest and best documented soil effect.
+- **Heat retention and reflection.** Stony soils store daytime heat and release it at night, and pale soils reflect light up into the canopy. Both push ripening.
+- **Root depth.** Deep, poor soils force roots down toward more stable water, which buffers a vine against drought years.
+
+**What is not evidenced: rocks tasted directly.** The claim that a mineral flavour travels from the rock, through the vine, into the glass does not survive contact with plant physiology. Vines take up mineral NUTRIENTS as dissolved ions in quantities far below sensory thresholds, and those ions do not carry the aromas people describe. The geologist Alex Maltman has laid this out carefully for wine audiences (Maltman, 2013). The perception of "minerality" is real, tasters agree about it more often than chance, and it appears to come from other things: acidity, low pH, sulfur compounds, reduction, low fruit intensity. So use the word if it helps you, and know that it is describing a sensation, not a mechanism.
+
+**Why the distinction matters commercially.** Terroir talk sells wine. A producer describing the limestone under their vineyard may be pointing at a genuine drainage and heat effect, or may be pointing at a story. You are allowed to enjoy the story. You should not pay a premium for the geology claim itself.
+
+**What to do with all this as a taster.** Do not try to taste soil. Taste the things soil influences: concentration, ripeness at a given alcohol level, acid retention, and how the wine holds together at the finish. Then, when a producer tells you about their site, you have your own evidence to compare their story against.
+
+:::reveal A producer says their wine tastes of the limestone in the vineyard. What part of that claim is defensible and what part is not, and what would you taste for? ||| The defensible part is that limestone influences drainage, water holding and heat, which affects vine stress, berry size and concentration, so the site genuinely shapes the wine. The indefensible part is the direct route: minerals are taken up as dissolved ions far below sensory thresholds and do not carry those aromas into the glass. Taste for concentration, acid retention and how the finish holds, which are the real downstream effects.
+
+## Sources
+- Maltman, A. (2013). Minerality in wine: A geological perspective. *Journal of Wine Research, 24*(3), 169-181. https://doi.org/10.1080/09571264.2013.793176
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- van Leeuwen, C., & Seguin, G. (2006). The concept of terroir in viticulture. *Journal of Wine Research, 17*(1), 1-10. https://doi.org/10.1080/09571260600633135`,
+    },
+    {
+      slug: "somm-old-and-new-world",
+      title: "18 · Old World and New World, and why the shorthand is leaking",
+      section: "Module 4 · Place",
+      body: `The oldest shorthand in wine divides Europe and the Middle East (Old World) from everywhere wine went later (New World). It is genuinely useful for one thing and increasingly misleading for another.
+
+**Where it still holds: the label.** This difference is legal and it is real.
+
+| | Old World | New World |
+| --- | --- | --- |
+| Labelled by | PLACE. Chablis, Barolo, Rioja | GRAPE. Chardonnay, Malbec, Shiraz |
+| Assumes you know | Which grapes that place is permitted to grow | Nothing, which is why it won the shelf |
+| Rules cover | Grape, yield, alcohol, ageing, often technique | Mostly boundaries and percentages |
+
+That is why a beginner finds a New World shelf easier and an Old World list harder: the Old World label answers "where," and expects you to already know what grows there. Module 6 turns that from an obstacle into an advantage, because a place name is a much denser piece of information than a grape name once you can read it.
+
+**Where the shorthand leaks: the style.** The old generalisation ran that Old World wines are lighter, higher in acid, more savoury and earthier, while New World wines are riper, fruitier, higher in alcohol and more oaked. That was a fair description of a real difference decades ago. Today it is a bad predictor, for three reasons:
+
+1. **Climate crosses the line.** Southern Italy and southern Spain are warm. Tasmania, Central Otago and the Sonoma Coast are cool. Climate predicts style better than continent does, and Module 4's first lesson gave you the tools to read it directly.
+2. **Technique moved in both directions.** New World producers pick earlier and use less new oak than they did, and plenty of European producers make ripe, extracted, generously oaked wine.
+3. **The people moved too.** Winemakers train and consult across the divide constantly.
+
+**The one stylistic difference that has held up better than the rest** is a matter of intent rather than geography: whether a wine is made to express a specific site or to express a grape at a consistent house style. That distinction runs straight through both hemispheres.
+
+**How to use it in practice.** Use Old World and New World as a LABELLING category, which is precise and useful. When you want to predict style, use climate, grape and winemaking instead. If you catch yourself saying "it tastes New World," translate: you probably mean ripe fruit, higher alcohol, evident oak. Say that instead, because it is falsifiable.
+
+:::reveal Translate the sentence "this tastes very New World" into three falsifiable observations. ||| Something like: the fruit reads ripe or cooked rather than fresh, the alcohol is high (likely 14% or above), and the oak is evident rather than integrated. Each of those can be checked against the glass and the label, where the original sentence cannot, and all three occur regularly in European wine from warm regions.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Jones, G. V., White, M. A., Cooper, O. R., & Storchmann, K. (2005). Climate change and global wine quality. *Climatic Change, 73*(3), 319-343. https://doi.org/10.1007/s10584-005-4704-2`,
+    },
+    {
+      slug: "somm-quiz-4",
+      title: "19 · Knowledge check: place",
+      section: "Module 4 · Place",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questionsPerAttempt: 8,
+        questions: [
+          {
+            prompt: "Which combination points most clearly to a cool climate or an early pick?",
+            options: [
+              "Low acid, high alcohol, cooked or dried fruit character",
+              "High acid, low alcohol, fresh or underripe fruit",
+              "High acid with high alcohol and raisined, dried fruit notes",
+              "Low acid, low alcohol, and neutral fruit with no ripeness",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Warmth raises sugar and lowers acid, so the cool package is the mirror image: acid retained, alcohol modest, fruit still fresh. Getting all four to agree is what turns a hypothesis into a call.",
+            sourceLessonSlug: "somm-climate-in-the-glass",
+          },
+          {
+            prompt: "A warm region produces wines with unexpectedly high acid. What most often explains it?",
+            options: [
+              "Warm region producers are required by law to acidify every wine they bottle",
+              "The grapes are left hanging and picked only after the first hard frost",
+              "A large diurnal range, from altitude or a cold ocean influence",
+              "Maritime rainfall falling steadily throughout the whole growing season",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Warm days ripen fruit while cold nights slow acid loss, which is why high altitude Mendoza and cool coastal California sites break the simple model. Frost harvesting is a sweet wine technique, not an acid strategy.",
+            sourceLessonSlug: "somm-climate-in-the-glass",
+          },
+          {
+            prompt: "What is the best evidenced way soil influences a wine?",
+            options: [
+              "Mineral compounds travel from rock into the vine and into the glass",
+              "Soil bacteria produce the aroma compounds found in the finished wine",
+              "Soil pH determines the wine's final acidity directly",
+              "Drainage and water holding change vine stress, berry size and concentration",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Soil works mainly through physics: water availability, heat retention and root depth. The direct mineral-to-glass route fails on plant physiology, since nutrients are taken up as ions far below sensory thresholds.",
+            sourceLessonSlug: "somm-terroir-honestly",
+          },
+          {
+            prompt: "What is the honest status of 'minerality' as a tasting term?",
+            options: [
+              "A real perception with causes other than dissolved rock, so usable but not a mechanism",
+              "A meaningless term that trained tasters agree on no more often than chance would predict",
+              "A direct sensory reading of the vineyard's underlying geology, rock by rock",
+              "A legally defined descriptor whose use is restricted to certain appellations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Tasters agree about it more often than chance, so the perception is real, but it appears to arise from acidity, low pH, sulfur compounds and low fruit intensity rather than from rock passing into the vine.",
+            sourceLessonSlug: "somm-terroir-honestly",
+          },
+          {
+            prompt: "Which distinction between Old World and New World remains precise and useful?",
+            options: [
+              "Old World wines are always lower in alcohol than New World equivalents",
+              "Old World labels state a place, New World labels state a grape",
+              "Old World wines are always aged in oak barrels before they are released",
+              "New World growing regions carry no legally defined boundaries at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The labelling difference is legal and holds. The stylistic generalisations leak badly, because southern Europe is warm, Tasmania is cool, and technique has crossed in both directions. New World regions do have defined boundaries, such as AVAs.",
+            sourceLessonSlug: "somm-old-and-new-world",
+          },
+          {
+            prompt: "Bordeaux is the reference example for which climate type?",
+            options: [
+              "Continental, with hot summers and cold winters",
+              "Mediterranean, with dry summers and winter rainfall",
+              "Maritime, ocean moderated with rainfall through the year",
+              "Alpine, with a very large diurnal range",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Maritime climates are ocean moderated with year round rain, which is why Bordeaux has such pronounced vintage variation. Burgundy is the continental reference, and the Southern Rhone the Mediterranean one.",
+            sourceLessonSlug: "somm-climate-in-the-glass",
+          },
+          {
+            prompt: "Why does the course say 'an Australian wine' tells you nothing about style?",
+            options: [
+              "Australian labels are not permitted by law to state a region of origin",
+              "Australia permits blending across the entire country without any disclosure",
+              "Australian wine is exported only in bulk and blended at its destination",
+              "Climate terms describe growing seasons, and one country holds regions of every kind",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Cool, moderate and warm describe growing seasons, not countries. Tasmania and the Barossa sit in the same nation and produce wines with almost nothing in common.",
+            sourceLessonSlug: "somm-climate-in-the-glass",
+          },
+          {
+            prompt: "Why do Old World appellation boundaries so often follow contours rather than roads?",
+            options: [
+              "Because slope and aspect change ripening, so the boundary tracks the growing conditions",
+              "Because the roads were all built long after the appellation boundaries were drawn",
+              "Because contour lines are cheaper and easier to survey than property lines are",
+              "Because European wine law forbids an appellation border from running straight",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A slope facing the sun ripens differently from the flat land beside it, and altitude changes temperature, so the meaningful unit is the growing condition rather than the parcel of land.",
+            sourceLessonSlug: "somm-climate-in-the-glass",
+          },
+          {
+            prompt: "Which stylistic distinction does the course say has held up better than Old World versus New World?",
+            options: [
+              "Whether the wine in the bottle is a red, a white or a rose",
+              "Whether the wine expresses a specific site or a consistent house style",
+              "Whether the wine is bottled under natural cork or under a screwcap",
+              "Whether the producer owns the vineyard or buys the fruit from growers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Site expression versus house consistency is a difference of intent, and it runs through both hemispheres, which is exactly why it survives when the geographic shorthand does not.",
+            sourceLessonSlug: "somm-old-and-new-world",
+          },
+          {
+            prompt: "What happens to tannins as a growing season gets warmer?",
+            options: [
+              "They disappear from the grape skins entirely before the fruit is picked",
+              "They convert into residual sugar over the course of the fermentation",
+              "They ripen, moving from grippy and green toward rounder and sweeter feeling",
+              "They increase sharply in both bitterness and astringency as sugar rises",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Tannin ripeness travels with the rest of the warm climate package, which is why a warm vintage red can carry a lot of tannin and still feel plush rather than severe.",
+            sourceLessonSlug: "somm-climate-in-the-glass",
+          },
+        ],
+      },
+    },
+
+    // ══════════════ MODULE 5 · PROCESS ══════════════
+    {
+      slug: "somm-grape-to-glass",
+      title: "20 · From grape to glass, in the order it happens",
+      section: "Module 5 · Process",
+      recallContent: [
+        {
+          prompt: "State the four things that move together as a growing season gets warmer.",
+          answer:
+            "Sugar rises so alcohol and body rise, acid falls, fruit character moves from fresh toward ripe, cooked and dried, and tannins ripen from grippy and green toward rounder and sweeter feeling.",
+        },
+      ],
+      body: `Every winemaking decision in the rest of this module is a variation on one process. Learn the spine first.
+
+**Fermentation, the only step that is not optional.** Yeast, principally Saccharomyces cerevisiae, converts sugar into ethanol and carbon dioxide. When the sugar runs out, the wine is dry. When the winemaker stops fermentation early, by chilling, filtering or adding spirit, sugar remains and the wine is sweet. That single choice is where every sweetness level in wine comes from.
+
+**The spine.**
+
+1. **Grow and pick.** The most consequential decision is WHEN, because picking date sets sugar, acid and ripeness at once (Module 4).
+2. **Sort and crush.** Some producers keep whole bunches, including stems, which adds tannin and a savoury, sometimes green character.
+3. **Press, or not yet.** This is the single biggest fork in the road.
+4. **Ferment.** Ambient yeast or a selected strain, warm or cool, in steel, oak, concrete or clay.
+5. **Post-fermentation choices.** Malolactic conversion, lees contact, oak, blending, fining, filtration.
+6. **Age and bottle.**
+
+**The fork that makes a red a red.** It is not the grape. It is WHEN you press.
+
+- **White wine:** press first, ferment the juice alone. Little or no skin contact, so little colour and almost no tannin.
+- **Red wine:** ferment ON the skins, then press. Colour, tannin and much of the flavour come out of the skins during that maceration.
+- **Rose:** brief skin contact, then press. Hours, not weeks.
+- **Skin contact or orange wine:** a white grape treated like a red, fermented on its skins for days to months. The result has tannin and grip, and it usually looks amber.
+
+Which is why you can make a white wine from a red grape: press immediately and keep the juice off the skins. Most Champagne does exactly that with Pinot Noir and Meunier.
+
+**Two decisions that fool beginners into thinking they are tasting a grape.**
+
+- **Malolactic conversion.** Bacteria, usually Oenococcus oeni, convert sharp malic acid into softer lactic acid, lowering acidity and often producing diacetyl, which smells of butter. It happens in almost all red wine and is a deliberate choice in white wine. The buttery Chardonnay style is this decision, not the grape.
+- **Time on the lees.** Leaving the wine on the dead yeast cells adds texture and, over time, bready and biscuity aromas as those cells break down. This is the backbone of traditional method sparkling wine (Lesson 23).
+
+**Sulfites, since the label mentions them.** Sulfur dioxide is an antioxidant and antimicrobial used in winemaking for centuries, and yeast also produce a little on their own, so no wine is entirely sulfite free. In the United States a wine carries the words "Contains sulfites" when the level reaches ten parts per million or more (27 CFR 4.32(e)). EU rules cap the total permitted level, with lower caps for red than for white and rose, and higher allowances for sweet wines (Commission Delegated Regulation (EU) 2019/934, Annex I, Part B). Sulfites cause genuine reactions in a small number of people, particularly some asthmatics. They are not the cause of ordinary red wine headaches, and no good evidence says they are.
+
+:::reveal Champagne is often made largely from Pinot Noir, a black grape, yet it is pale. Explain how, using the fork in the road from this lesson. ||| Colour lives in the skins, and the fork is when you press. Pressing black grapes immediately and fermenting only the juice keeps the wine off the skins, so almost no colour is extracted. Red wine is red because it ferments ON the skins before pressing, which is a decision about sequence rather than about the grape.
+
+## Sources
+- Commission Delegated Regulation (EU) 2019/934 of 12 March 2019 supplementing Regulation (EU) No 1308/2013 as regards wine-growing areas, oenological practices and the applicable restrictions. *Official Journal of the European Union, L 149*, 1-52.
+- Alcohol and Tobacco Tax and Trade Bureau. (n.d.). *Labeling and advertising of wine* (27 C.F.R. Part 4). https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-4
+- Waterhouse, A. L., Sacks, G. L., & Jeffery, D. W. (2016). *Understanding wine chemistry*. Wiley.`,
+    },
+    {
+      slug: "somm-oak-and-lees",
+      title: "21 · Oak, lees, and the taste of a decision",
+      section: "Module 5 · Process",
+      body: `Oak is the loudest thing a winemaker can add, and learning to hear it separately from the wine underneath is one of the fastest upgrades available to a taster.
+
+**What oak actually does.** Three separate jobs, and people conflate them constantly.
+
+1. **It adds flavour compounds.** Vanillin gives vanilla. Lactones give coconut. Toasting the barrel over fire produces smoke, toast, coffee and caramel notes. Wood also contributes its own tannin, which is why oaked white wine has a grip that unoaked white wine does not.
+2. **It allows slow oxygen exchange.** Barrels breathe slightly, which softens tannin and stabilises colour over time. This is a texture job, not a flavour job, and it is why a producer might choose old, neutral barrels that add no flavour at all.
+3. **It costs a fortune.** A new French oak barrel is one of the most expensive pieces of equipment in a small winery, which is why heavy new oak is concentrated in expensive wine and in wines that want to taste expensive.
+
+**The variables that change the signature.**
+
+| Variable | The effect you can taste |
+| --- | --- |
+| **French versus American oak** | French tends toward subtler spice and firmer tannin. American tends toward louder vanilla, coconut and dill |
+| **New versus used** | A first-use barrel gives strong flavour. By its third or fourth wine, a barrel is mostly a breathing vessel |
+| **Toast level** | Light toast leans woody and tannic. Heavy toast leans smoky, coffee, caramel |
+| **Barrel size** | A standard Bordeaux barrique holds 225 litres. Bigger vessels mean less wood surface per litre of wine, so less oak character |
+| **Chips and staves** | Cheaper alternatives that add flavour without the oxygen exchange or the price. Legal in many regions, and usually detectable as a flat, sawdust-like vanilla |
+
+**How to tell oak from fruit.** Oak markers are a short list and they do not smell like fruit: vanilla, coconut, dill, clove, baking spice, smoke, toast, cedar, coffee, caramel, chocolate. If your note contains three of those and one fruit, you are describing a barrel, not a vineyard.
+
+**The honest question.** Oak is not a fault and not a virtue. Ask instead: is there enough wine underneath to carry it? A concentrated wine absorbs new oak and integrates it over years. A thin wine wearing new oak tastes like a plank, and the giveaway is that the oak arrives before the fruit and stays after it.
+
+**Lees, the quieter cousin.** After fermentation the dead yeast cells settle out. Leaving the wine on them, and sometimes stirring them, adds body and a creamy texture. Given long enough, the cells break down and release compounds that read as bread, biscuit and toasted nuts. That is the aroma family behind traditional method sparkling wine, and it is a useful one to learn early because it is unmistakable once you have met it.
+
+${flightCard(FLIGHT_5)}
+
+:::reveal A white wine has a noticeable drying grip on the gums. It is not a skin contact wine. Where else could tannin have come from? ||| From oak. Wood contributes its own tannin along with its flavour compounds, so a barrel-aged white can have a real textural grip that an unoaked white never has. That is one of the more surprising things about the oak flight, because most people file tannin under red wine and skins only.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Waterhouse, A. L., Sacks, G. L., & Jeffery, D. W. (2016). *Understanding wine chemistry*. Wiley.`,
+    },
+    {
+      slug: "somm-skin-contact-and-carbonic",
+      title: "22 · Skin contact, rose, and carbonic maceration",
+      section: "Module 5 · Process",
+      body: `Three techniques that all play with the same variable, contact between juice and skins, and produce results a beginner routinely mistakes for grape character.
+
+**Rose, three ways.** Colour is not the point. Method is.
+
+- **Direct press.** Black grapes pressed quickly, taking only the faint colour that comes out immediately. The pale, delicate Provencal style is made this way, and it is a deliberate style rather than a weak version of something.
+- **Saignee**, meaning bleeding. Some juice is drawn off a red fermentation early. The juice becomes rose, and the remaining red wine gets a higher ratio of skins to juice and therefore more concentration. It is worth knowing that a saignee rose is sometimes a by-product of making a more concentrated red.
+- **Blending.** Mixing finished red and white wine is prohibited for most European still rose, but it is precisely how most rose Champagne is made, which is a real and specific exception rather than a loophole.
+
+**Skin contact whites, or orange wine.** A white grape fermented on its skins for days, weeks or months. The wine picks up colour (amber to orange), tannin, and a distinctive nutty, tea-like, sometimes savoury character. It is not a fault and it is not new: it is the traditional Georgian qvevri method Episode 9 covered, which is a rare case where a modern trend is genuinely ancient.
+
+Practically, this matters at a table because an orange wine behaves like a light red. Serve it cool but not cold, and pair it like a red.
+
+**Carbonic maceration.** Whole, uncrushed berries are sealed in a vessel filled with carbon dioxide. Without oxygen, the berries begin fermenting internally with their own enzymes before yeast take over properly. The results are consistent and easy to recognise:
+
+- Bright, almost translucent colour and low tannin, because there is little extraction.
+- Distinctive aromas: banana, kirsch, bubblegum, sometimes cinnamon.
+- Wines meant to be drunk young and often served slightly chilled.
+
+Beaujolais is the classic home. Many producers use a partial version, so the marker is often a hint rather than a shout. The reason it is worth knowing in a course about deduction is that it is a METHOD imitating a variety: those aromas belong to the technique, and if you file them under Gamay you will misread the next carbonic Syrah you meet.
+
+**Whole bunch fermentation**, a related idea, keeps the stems in a normal red fermentation. It adds stem tannin and a savoury, sometimes green or floral lift. It is common in Syrah and Pinot Noir, and when overdone it reads as stalky and bitter.
+
+:::reveal Why is a pale Provencal rose not simply a weakly coloured red wine, and what does its colour actually tell you? ||| Because pale colour is the result of a chosen method, direct pressing, which takes only the colour that comes off in the first moments of contact. Colour tells you about SKIN CONTACT TIME rather than about quality, ripeness or concentration, so a deeper rose means longer contact or a different method such as saignee, not a better or worse wine.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Waterhouse, A. L., Sacks, G. L., & Jeffery, D. W. (2016). *Understanding wine chemistry*. Wiley.`,
+    },
+    {
+      slug: "somm-sparkling",
+      title: "23 · Bubbles: the method is the flavour",
+      section: "Module 5 · Process",
+      body: `All sparkling wine works the same way: capture carbon dioxide from a second fermentation instead of letting it escape. WHERE that second fermentation happens changes the wine more than the grape does.
+
+| Method | Where the second fermentation happens | What it tastes like | Typical examples |
+| --- | --- | --- | --- |
+| **Traditional method** | In the bottle you buy, then aged on the lees before disgorging | Bread, brioche, biscuit, toasted nuts over the fruit | Champagne, Cremant, Cava, English sparkling, many others |
+| **Tank (Charmat) method** | In a large pressurised tank, then filtered and bottled | Primary fruit and flowers, fresh and aromatic | Prosecco, most Lambrusco |
+| **Ancestral method** | The original fermentation, finished in bottle, never disgorged | Cloudy, often lightly sweet or slightly funky, lower pressure | Petillant naturel, some Bugey |
+| **Transfer method** | In bottle, then emptied into a tank under pressure to filter | Between the first two, and often used for large formats | Various |
+| **Carbonation** | Injected, no second fermentation | Coarse, short lived bubbles | Inexpensive commodity sparkling |
+
+**Why the traditional method tastes like bread.** After the second fermentation the dead yeast stay in the bottle, and over months and years they break down. That is autolysis, and it is where brioche, biscuit and toasted nut character comes from. Time on lees is therefore the main quality lever, and it is also why traditional method wines cost more: the money is in the years of storage and the handling.
+
+Champagne's own appellation rules set minimum ageing periods, longer for vintage wines than for non-vintage, which is the legal expression of exactly that principle (Comite Champagne, n.d.). Crémant and Cava have their own minima under their own rules, generally shorter than Champagne's.
+
+**Dosage: the sweetness added at the end.** After disgorging, a small amount of liquid, usually wine with some sugar, tops the bottle up. That is dosage, and it sets the final sweetness. EU law defines the terms, and this table is the single most useful thing on a sparkling label:
+
+| Term | Sugar, grams per litre |
+| --- | --- |
+| Brut nature (also zero dosage) | Less than 3, with no sugar added |
+| Extra brut | 0 to 6 |
+| Brut | Less than 12 |
+| Extra dry | 12 to 17 |
+| Dry (sec) | 17 to 32 |
+| Demi-sec | 32 to 50 |
+| Doux | 50 or more |
+
+Two things people get wrong here, constantly. **"Extra dry" is sweeter than "brut,"** which is a genuine historical accident of the terminology and it catches everyone. And **most Prosecco sold as Extra Dry carries noticeable sugar**, which is a large part of why people think they dislike dry sparkling wine when they have never tried one.
+
+**Serving, briefly, because bubbles punish carelessness.** Cold, around 6 to 8 degrees Celsius. Open by holding the cork and turning the BOTTLE, with a thumb over the cork the whole time. A flute looks elegant and hides aroma, so use a normal white wine glass if you actually want to smell the wine. Module 9 has the rest.
+
+${flightCard(FLIGHT_6)}
+
+:::reveal Two sparkling wines, same grape, same region. One smells of pear and white flowers, the other of brioche and toasted almond. What differs, and which one probably cost more to make? ||| The method. Pear and flowers is primary fruit preserved by a tank fermentation, while brioche and toasted almond is autolytic character from long ageing on the lees after a second fermentation in the bottle. The traditional method wine almost certainly cost more, because the money in that method is the years of bottle storage and the handling, not the grapes.
+
+## Sources
+- Commission Delegated Regulation (EU) 2019/33 of 17 October 2018 supplementing Regulation (EU) No 1308/2013 as regards applications for protection of designations of origin, geographical indications and traditional terms, labelling and presentation. *Official Journal of the European Union, L 9*, 2-45.
+- Comite Champagne. (n.d.). *The Champagne appellation and its rules*. https://www.champagne.fr
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.`,
+    },
+    {
+      slug: "somm-sweet-and-fortified",
+      title: "24 · Sweet and fortified: five ways to keep the sugar",
+      section: "Module 5 · Process",
+      body: `Sweetness in wine is always the same story told five ways: get more sugar into the grape than the yeast can finish, or stop the yeast before they do.
+
+**1. Noble rot.** The fungus Botrytis cinerea, under the right conditions of humid mornings and dry afternoons, punctures ripe grapes and dehydrates them. Sugar and acid both concentrate, and the fungus adds its own honeyed, marmalade, saffron-like character. This is Sauternes, German and Austrian Beerenauslese and Trockenbeerenauslese, and Tokaji Aszu. The same fungus in the wrong conditions is grey rot, which ruins fruit, so the whole category depends on a knife-edge of weather. That risk is most of the price.
+
+**2. Freezing.** Grapes left on the vine until they freeze are pressed while still frozen, so water stays behind as ice and concentrated juice comes out. That is Eiswein or icewine, made in Germany, Austria and famously Canada. It requires a hard, sustained freeze at the right moment.
+
+**3. Drying.** Grapes are dried on mats or hung after picking, losing water and concentrating sugar. Italy calls the technique passito or appassimento, behind Vin Santo, Recioto, and, in a dry version fermented all the way out, Amarone. Amarone is the useful example: dried grapes, but fermented to dryness, so it is powerfully concentrated and high in alcohol without being sweet.
+
+**4. Stopping fermentation.** Chill, filter or sulfur the yeast into submission while sugar remains. This is how most inexpensive off-dry wine is made, and also how many fine German Rieslings retain sugar.
+
+**5. Fortifying.** Add neutral grape spirit. Yeast cannot survive high alcohol, so fermentation halts. WHEN you add the spirit decides everything:
+
+| Wine | Spirit added | Result |
+| --- | --- | --- |
+| **Port** | Partway through fermentation | Sugar remains, so Port is sweet and strong |
+| **Sherry** | After fermentation finishes | The base wine is dry, so most Sherry is DRY, whatever the shelf implies |
+| **Madeira** | Varies by style | Then deliberately heated, which is the signature |
+
+**Sherry deserves the correction.** Most Sherry is bone dry: Fino and Manzanilla age under a living film of yeast called flor, which protects the wine from oxygen and gives a saline, bready, almost bruised-apple character. Amontillado and Oloroso age with oxygen and become nutty and deep. Cream Sherry, the sweet style most people met first, is sweetened afterwards. The solera system, fractionally blending across many barrels of different ages, means a bottle carries an average of many years rather than one vintage.
+
+**Madeira deserves the odd fact.** It is deliberately heated during ageing, historically because barrels crossing the tropics as ballast improved with the voyage. The result is a wine that is effectively already cooked and oxidised, which is why an opened bottle survives months where a table wine dies in days.
+
+:::reveal Port and Sherry are both fortified, yet Port is sweet and most Sherry is dry. Explain the difference using one variable. ||| Timing. Port is fortified PARTWAY through fermentation, so the added spirit kills the yeast while sugar is still unfermented and that sugar stays in the wine. Sherry is fortified AFTER fermentation has finished, by which point the yeast have consumed the sugar, so the base wine is dry. The sweet Sherry styles on a shelf are sweetened later rather than born sweet.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Jackson, R. S. (2020). *Wine science: Principles and applications* (5th ed.). Academic Press.`,
+    },
+    {
+      slug: "somm-quiz-5",
+      title: "25 · Knowledge check: process",
+      section: "Module 5 · Process",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questionsPerAttempt: 8,
+        questions: [
+          {
+            prompt: "What single decision makes a wine red rather than white?",
+            options: [
+              "Fermenting on the skins before pressing, rather than pressing first",
+              "Using a black grape variety rather than a white one",
+              "Ageing in oak barrels rather than stainless steel",
+              "Allowing malolactic conversion to complete",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Colour and tannin come out of the skins during maceration, so the sequence decides the wine. This is exactly why most Champagne is pale despite being made largely from black grapes.",
+            sourceLessonSlug: "somm-grape-to-glass",
+          },
+          {
+            prompt: "A Chardonnay smells strongly of butter. What is the most likely cause?",
+            options: [
+              "The grape variety, which naturally produces buttery aromas",
+              "Extended skin contact before pressing",
+              "Malolactic conversion, which can produce diacetyl",
+              "Fortification with neutral grape spirit",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Bacteria convert sharp malic acid into softer lactic acid and often produce diacetyl, which smells of butter. It is a winemaking choice in white wine, not a grape trait, which is why the buttery style is a decision rather than a variety.",
+            sourceLessonSlug: "somm-grape-to-glass",
+          },
+          {
+            prompt: "Which sparkling wine term describes the SWEETEST of these categories?",
+            options: [
+              "Brut",
+              "Extra brut",
+              "Extra dry",
+              "Brut nature",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Extra dry sits at 12 to 17 grams of sugar per litre, above brut's limit of 12, which is a historical accident of terminology that catches nearly everyone. Brut nature is the driest of the group.",
+            sourceLessonSlug: "somm-sparkling",
+          },
+          {
+            prompt: "Where does the bread and brioche character of traditional method sparkling wine come from?",
+            options: [
+              "Oak barrels used for the first fermentation",
+              "Autolysis, as dead yeast cells break down during bottle ageing",
+              "A yeast strain selected specifically for bread aromas",
+              "Dosage added at the moment of disgorging",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Time on the lees is the main quality lever in traditional method wine, and it is why those wines cost more: the expense is years of storage and handling. Dosage sets sweetness, not autolytic character.",
+            sourceLessonSlug: "somm-sparkling",
+          },
+          {
+            prompt: "Port is sweet and most Sherry is dry. What explains the difference?",
+            options: [
+              "Port uses sweeter grape varieties than Sherry does",
+              "Sherry is filtered to remove sugar before bottling",
+              "Port is aged in a solera system and Sherry is not",
+              "Port is fortified during fermentation, Sherry after it finishes",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Adding spirit partway through fermentation kills the yeast while sugar remains, so Port keeps that sugar. Sherry's base wine has already fermented dry. The solera system belongs to Sherry rather than to Port, so that claim is backwards.",
+            sourceLessonSlug: "somm-sweet-and-fortified",
+          },
+          {
+            prompt: "Which oak markers point specifically toward American oak rather than French?",
+            options: [
+              "Coconut and dill",
+              "Cedar and graphite",
+              "Wet stone and citrus peel",
+              "Forest floor and mushroom",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Coconut and dill are the classic American oak signature, and the traditional Rioja style is where most tasters first learn them. Forest floor and mushroom are tertiary age markers rather than oak markers.",
+            sourceLessonSlug: "somm-oak-and-lees",
+          },
+          {
+            prompt: "Amarone is made from dried grapes, yet it is not a sweet wine. Why?",
+            options: [
+              "The drying process removes the sugar along with the water",
+              "It is fortified after fermentation, as Sherry is",
+              "The concentrated juice is fermented all the way to dryness",
+              "Acid levels are so high that sweetness cannot be perceived",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Drying concentrates sugar, and Amarone ferments that sugar out completely, which produces a powerfully concentrated wine high in alcohol rather than a sweet one. Recioto is the sweet wine made from the same dried fruit.",
+            sourceLessonSlug: "somm-sweet-and-fortified",
+          },
+          {
+            prompt: "What is the most reliable way to tell oak character apart from fruit character?",
+            options: [
+              "Oak character is always more intense than fruit character",
+              "Oak markers are a short non-fruit list: vanilla, coconut, clove, toast, smoke, cedar",
+              "Oak character appears only in red wine",
+              "Oak character disappears entirely once a wine is decanted",
+            ],
+            correctIndex: 1,
+            explanation:
+              "If three of those non-fruit descriptors and one fruit are in your note, you are describing a barrel rather than a vineyard. Oak also appears in white wine, where it adds a grip most people do not expect.",
+            sourceLessonSlug: "somm-oak-and-lees",
+          },
+          {
+            prompt: "What does carbonic maceration reliably produce, and why does it matter for deduction?",
+            options: [
+              "High tannin and deep colour, which can be mistaken for oak ageing",
+              "Banana and kirsch aromas, which can be mistaken for a grape trait",
+              "Petrol aromas, which can be mistaken for bottle age",
+              "Salinity, which can be mistaken for a coastal vineyard",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Isoamyl acetate from whole berry fermentation gives banana, kirsch and bubblegum with low tannin. Filing those aromas under Gamay leads a taster straight into misreading the next carbonic Syrah.",
+            sourceLessonSlug: "somm-skin-contact-and-carbonic",
+          },
+          {
+            prompt: "What does the pale colour of a Provencal style rose tell you?",
+            options: [
+              "How long the juice spent in contact with the skins",
+              "That the wine is lower in alcohol than a darker rose",
+              "That the grapes were harvested before full ripeness",
+              "That the wine was blended from red and white wine",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Direct pressing takes only the colour that comes off in the first moments, so depth of colour reports skin contact time and method rather than quality, ripeness or strength.",
+            sourceLessonSlug: "somm-skin-contact-and-carbonic",
+          },
+          {
+            prompt: "What is the honest position on sulfites in wine?",
+            options: [
+              "No wine contains them unless they are deliberately added",
+              "They are the established cause of red wine headaches",
+              "They cause real reactions in a small group, and are declared in the US at ten parts per million or more",
+              "They are banned outright in European winemaking",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Yeast produce some sulfites naturally, so no wine is entirely free of them. US labelling requires the declaration at ten parts per million, EU rules cap the totals, and the red wine headache claim is not supported by good evidence.",
+            sourceLessonSlug: "somm-grape-to-glass",
+          },
+          {
+            prompt: "A skin contact white wine, sometimes called orange wine, behaves at the table most like what?",
+            options: [
+              "A light red, served cool but not cold and paired like a red",
+              "A sparkling wine, served very cold in a flute",
+              "A fortified wine, served in small measures after a meal",
+              "A dessert wine, served with sweet food only",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fermenting a white grape on its skins gives real tannin and grip, so the wine has a red's structure. It is also the ancient Georgian qvevri method rather than a modern invention.",
+            sourceLessonSlug: "somm-skin-contact-and-carbonic",
           },
         ],
       },
