@@ -42,6 +42,7 @@
     "reassign:instructor": "tsx --env-file=.env.local scripts/reassign-instructor.ts",
     "reports:list": "tsx --env-file=.env.local scripts/report-list.ts",
     "feedback:list": "tsx --env-file=.env.local scripts/feedback-list.ts",
+    "research:list": "tsx --env-file=.env.local scripts/research-list.ts",
     "future:list": "tsx --env-file=.env.local scripts/future-list.ts",
     "gen:future-work": "tsx scripts/gen-future-work.ts",
     "gen:standards": "tsx scripts/gen-standards-index.ts",
