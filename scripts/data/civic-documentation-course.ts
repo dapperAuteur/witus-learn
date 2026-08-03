@@ -52,7 +52,16 @@ Both instincts are worth having, and a writer who has felt both pulls is better 
 
 **Where this comes from.** The method taught here is the one used by **Documenters**, a programme launched by **City Bureau** in Chicago in **2018** to, in its own words, "train and pay people to monitor local government, contribute to the public record, and hold power to account." The Documenters Network now spans more than twenty local news and community organisations and has trained more than three thousand people (City Bureau, n.d.).
 
-**This course is not affiliated with City Bureau or with any local Documenters programme.** It teaches the practice from their published Field Guide, cites it, and points you at the real programme, which pays people to do this. If you want to do the work for money, apply to them rather than to anyone else.
+**This course is not affiliated with City Bureau or with any local Documenters programme.** It teaches the practice from their published Field Guide, cites it throughout, and points you at the real programme, which pays people to do this.
+
+**Go and look at their work, not just at this course.** The method here belongs to them, and they are better placed to teach you the parts that change:
+
+- **[documenters.org](https://documenters.org)** lists the cities with programmes, the meetings needing coverage right now, and how to sign up.
+- **The [Documenters Field Guide](https://fieldguide.documenters.org/)** is the source for this course and is free to read in full.
+- **[City Bureau](https://www.citybureau.org)** built and runs the network, and their wider work on civic media is worth your time.
+- **[Mirror Indy](https://indianapolis-in.documenters.org/)** runs the Indianapolis programme, which is the local example used throughout.
+
+**If you finish this course, the useful next step is to apply to them**, not to read another course. They train you further, they pay you, and your notes enter a public record that people actually use.
 
 **The local example throughout is Indianapolis**, where the programme is run by **Mirror Indy**. Every Indianapolis specific is paired with how to find the equivalent where you live, because the method is the transferable part.
 
@@ -123,6 +132,8 @@ The Field Guide states the programme's purpose as training and paying people to 
 **How to actually join**, which the Field Guide covers in its "Using Documenters.org" section: sign up on documenters.org, attend an orientation or workshop, then apply for assignments through the platform and submit your work there. Whether a programme exists near you depends on the city, and there are roughly thirty at present, including Indianapolis.
 
 **And if there is no programme near you**, the work is still available. Public meetings are public whether or not anyone is paying you to attend, and the rest of this course teaches the practice rather than the platform.
+
+**Do this now rather than at the end.** Open [documenters.org](https://documenters.org) and find out whether your city has a programme. It takes two minutes, and it changes how you read the rest of this course: if there is one, everything here is preparation for work you can actually be paid for, and you will want to check their local guide alongside these lessons. If there is not, you are learning a practice you can still use, and you will be reading for transferable method rather than for a specific programme's standards.
 
 :::reveal Why does paying documenters change the quality of the public record, rather than just being fairer to the documenter? ||| Because unpaid civic work selects for people with free weekday afternoons, which is a narrow and unrepresentative group, and the people most affected by what a zoning or school board decides are frequently the least able to attend one unpaid. Paying widens who can do it, so the record gets made by a broader set of witnesses. It also defines the size of the job, which is what makes "reasonably concise and thorough" a usable standard rather than an impossible one.
 
@@ -1164,6 +1175,10 @@ ${NOT_LEGAL_ADVICE}`,
 **Documentation records; reporting asserts.** Attribute everything. Prefer the specific to the summary. **Record the accusation and the answer**, because the fair report privilege depends on substantial accuracy and omission can cost you it.
 
 **On AI: the question is never whether a tool was used, but whether the thing being paid for was done.** Transcripts check your notes; they cannot witness for you. Disclose what you used.
+
+**Where to go next, and it is not another course.** This course taught a practice that belongs to **City Bureau**, whose **Documenters** programme built it, and whose **Field Guide** is free to read in full at [fieldguide.documenters.org](https://fieldguide.documenters.org/). If there is a programme in your city, apply at [documenters.org](https://documenters.org); in Indianapolis it is run by **[Mirror Indy](https://indianapolis-in.documenters.org/)**. They will train you further, they pay for the work, and what you produce goes into a public record that residents, reporters and researchers use.
+
+**The last thing worth saying.** The gap this course opened with is real: rooms where decisions get made and nobody is watching. It does not close because you finished a course. It closes when somebody sits in the room and writes down what happened.
 
 :::reveal Without looking back, state the governing standard and the working rule that protects you legally. ||| The standard: someone who did not attend the meeting should be able to understand what happened based on your notes. The protective rule: record the accusation AND the answer. The fair report privilege covers a substantially accurate report of an official proceeding, and omitting important information, such as a denial, can put you outside the protection you were relying on, exposing both you and the site that publishes you.
 

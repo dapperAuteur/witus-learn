@@ -12792,6 +12792,13 @@ first are the ones where the fundamentals cannot be avoided.
 
 ## Build order
 
+**STATUS 2026-08-03: courses 1 to 5 are BUILT.** The series exists as \`monodrama-writing\`,
+\`monodrama-performing\`, \`short-form-drama\`, \`civic-documentation\` and \`how-stories-work\`, on
+Learn.WitUS in the Storytelling category with series order 1 to 5. The spine vocabulary held: no
+course invented a synonym, so the core was written as a synthesis rather than retrofitted. Remaining:
+news storytelling, documentary, oral history, digital and social, theatre and screen, then
+mockumentary as the capstone.
+
 1. **Monodrama I: writing the solo piece.** The spine, taught through the form that exposes it.
    Direct address, who the audience is to the speaker, the single-body constraint, the turn, the
    ending. Ends with a performable draft.
@@ -12817,17 +12824,22 @@ Verified about the program as of 2026-08-03: Documenters is run by **City Bureau
 participatory civic media," and **trains and pays** people to attend under-reported public meetings
 and publish documentation. It operates in roughly 31 cities, **including Indianapolis**.
 
-**Blocked, and filed as a source check:** the Documenters Field Guide lives at
-\`fieldguide.documenters.org\`, which redirects to a Notion page that renders client-side, so its
-contents could not be read. The general course does not depend on it. The Indianapolis module and any
-claim about Documenters' own standards **do**, so those wait for the check to clear rather than being
-written from assumption. See \`documenters-field-guide\` on \`/admin/research\`.
+**UNBLOCKED 2026-08-03.** BAM supplied the Field Guide as eleven PDFs, so the course was built from
+the source rather than from a description of it: the six note-taking steps, the inclusion checklist,
+the open-meetings summaries for Illinois and Michigan, and the AI usage guidelines (dated April 2026)
+were all read directly. The \`documenters-field-guide\` check is closed.
 
-The general course teaches the discipline itself: what a public meeting is and why the boring ones
-matter, agendas and minutes as documents, note-taking that survives being read by a stranger,
-distinguishing what was said from what it meant, records requests, and the ethics of documenting
-people who did not choose to be documented. That is useful in any city and does not depend on any one
-organisation's handbook.
+**One check remains open**, \`documenters-permission\`: telling City Bureau and Mirror Indy the course
+exists. It teaches their published standard and sends learners to their paid programme, which
+benefits them, and that is exactly why it should not arrive as a surprise. Do it before the course is
+public.
+
+The course teaches the discipline itself and cites City Bureau throughout: what a public meeting is
+and why the boring ones matter, agendas and packets as documents, note-taking that survives being read
+by a stranger, what open-meetings law protects, distinguishing what was said from what it meant, and
+the ethics of documenting people who did not choose it. Every Indianapolis specific is paired with how
+to find the equivalent elsewhere, and the course actively points learners at documenters.org,
+citybureau.org and Mirror Indy to learn more and to apply.
 
 ---
 

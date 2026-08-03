@@ -10,6 +10,7 @@ import { MONODRAMA_WRITING_COURSE } from "./data/monodrama-writing-course";
 import { MONODRAMA_PERFORMING_COURSE } from "./data/monodrama-performing-course";
 import { SHORT_FORM_DRAMA_COURSE } from "./data/short-form-drama-course";
 import { CIVIC_DOCUMENTATION_COURSE } from "./data/civic-documentation-course";
+import { HOW_STORIES_WORK_COURSE } from "./data/how-stories-work-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -1263,6 +1264,22 @@ async function main() {
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
     seriesOrder: 4,
+  });
+
+  // The CORE of the Storytelling series, written last on purpose (docs/storytelling-curriculum.md).
+  // seriesOrder 5 is its position in the reading order, not its importance: a learner may take it
+  // first and it lands harder fourth, once the specialised courses have put the six terms under
+  // pressure in forms that each remove something different.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-stories-work",
+    course: HOW_STORIES_WORK_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 5,
   });
 
   await seedAuthoredCourse(db, {

@@ -70,6 +70,7 @@ const BACKLOG: Record<string, string> = {
   // works, open-meetings law) plus source-critical writing and a research capstone. Fits both the
   // civics standards and the literacy strands the catalog already uses.
   "civic-documentation": "MAP THIS, not excused. Civics plus literacy; the best fit in this group",
+  "how-stories-work": "MAP THIS, not excused. Narrative craft across media; ELA reading and writing strands",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");
