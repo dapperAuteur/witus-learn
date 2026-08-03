@@ -48,6 +48,16 @@ const BACKLOG: Record<string, string> = {
   // standards decision on a course, and because it goes live automatically if the BVC Sommelier
   // series is ever registered in the file this check scans.
   "bvc-sommelier-wine": "OUT OF SCOPE, vocational and 21+, no K-12 academic standard claimed",
+  // Adult professional/consumer education. Like the sommelier entry above, this one is currently
+  // INERT: `registered` below only matches the shorthand `{ slug: "..." }` form, and this course is
+  // registered through a seedAuthoredCourse call, so the guard never sees it. Written down anyway
+  // because this is where the next author looks for the decision.
+  //
+  // Worth revisiting rather than treating as permanent: the course is source-critical research with
+  // statutory citation and a research capstone, which is the same profile that earned the catalog's
+  // history courses their Common Core literacy mappings (RH.11-12.8, WHST.11-12.7/8). It is excused
+  // for now on audience, not on rigour.
+  "surplus-funds-basics": "OUT OF SCOPE for now, adult professional education. Revisit for the literacy strands",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");
