@@ -9,6 +9,7 @@ import { SURPLUS_FUNDS_BASICS_COURSE } from "./data/surplus-funds-basics-course"
 import { MONODRAMA_WRITING_COURSE } from "./data/monodrama-writing-course";
 import { MONODRAMA_PERFORMING_COURSE } from "./data/monodrama-performing-course";
 import { SHORT_FORM_DRAMA_COURSE } from "./data/short-form-drama-course";
+import { CIVIC_DOCUMENTATION_COURSE } from "./data/civic-documentation-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -1250,6 +1251,18 @@ async function main() {
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
     seriesOrder: 3,
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "civic-documentation",
+    course: CIVIC_DOCUMENTATION_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 4,
   });
 
   await seedAuthoredCourse(db, {

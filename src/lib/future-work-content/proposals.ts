@@ -9778,7 +9778,7 @@ generally, for example "a resident"), recommended photo/audio/video, and links t
 
 **Title:** *Civic Documentation: Recording What Happened in Public*
 **Home:** Learn.WitUS, Storytelling category, series position 4.
-**Length:** ~22 lessons.
+**Length:** 20 lessons. **BUILT 2026-08-03** as \`civic-documentation\`, Storytelling series position 4.
 
 ### Why it sits in the Storytelling series rather than apart from it
 

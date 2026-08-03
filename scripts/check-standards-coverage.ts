@@ -66,6 +66,10 @@ const BACKLOG: Record<string, string> = {
   "monodrama-writing": "MAP THIS, not excused. Narrative-writing course, fits the ELA writing strands",
   "monodrama-performing": "MAP THIS, not excused. Performance craft; check the arts standards rather than ELA",
   "short-form-drama": "MAP THIS, not excused. Dramatic writing, fits the ELA writing strands",
+  // The strongest mapping candidate in the Storytelling group: civics content (how local government
+  // works, open-meetings law) plus source-critical writing and a research capstone. Fits both the
+  // civics standards and the literacy strands the catalog already uses.
+  "civic-documentation": "MAP THIS, not excused. Civics plus literacy; the best fit in this group",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");
