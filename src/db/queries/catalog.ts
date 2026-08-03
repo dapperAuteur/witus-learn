@@ -1,4 +1,4 @@
-import { and, asc, desc, eq, getTableColumns, ilike, inArray, or, sql, type SQL } from "drizzle-orm";
+import { and, asc, desc, eq, getTableColumns, ilike, inArray, isNotNull, or, sql, type SQL } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseCategories,
@@ -142,6 +142,83 @@ export async function listSitemapCourses(tenantId: string): Promise<SitemapCours
     .where(eq(courses.tenantId, tenantId))
     .orderBy(asc(courses.title));
   return rows;
+}
+
+export interface SeriesSummary {
+  slug: string;
+  title: string;
+  /** The shared code prefix, e.g. "STORY". Null when the series has no codes yet. */
+  code: string | null;
+  courseCount: number;
+  /** Distinct track names in the series, in curriculum order. Empty for a single-path series. */
+  tracks: string[];
+  /** Title of the course a learner should take first: the "00" course, else the lowest order. */
+  startsWith: string | null;
+  hasCapstone: boolean;
+}
+
+/**
+ * Every series this tenant publishes, summarised for the /series index.
+ *
+ * Built from the same published-course rows the catalog uses, so an unpublished course cannot
+ * inflate a count and a series that exists only on another brand is invisible here — the tenant
+ * filter is the whole point, since a series NAME is itself information about another school.
+ */
+export async function listSeries(tenantId: string): Promise<SeriesSummary[]> {
+  const rows = await db
+    .select({
+      seriesSlug: courses.seriesSlug,
+      seriesTitle: courses.seriesTitle,
+      seriesCode: courses.seriesCode,
+      seriesPosition: courses.seriesPosition,
+      seriesTrack: courses.seriesTrack,
+      seriesOrder: courses.seriesOrder,
+      title: courses.title,
+    })
+    .from(courses)
+    .where(
+      and(
+        eq(courses.tenantId, tenantId),
+        eq(courses.isPublished, true),
+        eq(courses.visibility, "public"),
+        isNotNull(courses.seriesSlug),
+      ),
+    )
+    .orderBy(sql`${courses.seriesOrder} nulls last`, asc(courses.title));
+
+  const bySlug = new Map<string, SeriesSummary>();
+  const explicitStart = new Map<string, string>();
+  for (const r of rows) {
+    const slug = r.seriesSlug as string;
+    let s = bySlug.get(slug);
+    if (!s) {
+      s = {
+        slug,
+        title: r.seriesTitle ?? slug,
+        code: r.seriesCode,
+        courseCount: 0,
+        tracks: [],
+        startsWith: null,
+        hasCapstone: false,
+      };
+      bySlug.set(slug, s);
+    }
+    s.courseCount++;
+    if (r.seriesCode && !s.code) s.code = r.seriesCode;
+    if (r.seriesTrack && !s.tracks.includes(r.seriesTrack)) s.tracks.push(r.seriesTrack);
+    const pos = r.seriesPosition?.trim().toUpperCase();
+    if (pos === "99") s.hasCapstone = true;
+    // Rows arrive in curriculum order, so the first row is the fallback start. An explicit "00"
+    // overrides it, because a series may give its entry course any series_order it likes and the
+    // code is the authoritative statement of where a learner begins.
+    if (pos === "00") explicitStart.set(slug, r.title);
+    else if (s.startsWith === null) s.startsWith = r.title;
+  }
+  for (const [slug, title] of explicitStart) {
+    const s = bySlug.get(slug);
+    if (s) s.startsWith = title;
+  }
+  return [...bySlug.values()].sort((a, b) => a.title.localeCompare(b.title));
 }
 
 export async function listCategories(tenantId: string): Promise<CourseCategory[]> {

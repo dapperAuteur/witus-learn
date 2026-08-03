@@ -41,6 +41,32 @@ describe.skipIf(!HAS_DB)("catalog is tenant-scoped (content isolation)", () => {
     expect(acme.map((c) => c.title)).toContain("Introduction to Acme");
   });
 
+  it("lists only the tenant's own series", async () => {
+    // A series NAME is itself information about another school ("they teach a Storytelling
+    // curriculum"), so the /series index must be scoped like any content read, not merely
+    // unreachable. Both directions asserted: neither tenant may see the other's series slugs.
+    const { listSeries } = await import("@/db/queries/catalog");
+
+    const bvc = await listSeries(bvcId);
+    const acme = await listSeries(acmeId);
+    const bvcSlugs = new Set(bvc.map((s) => s.slug));
+    for (const s of acme) expect(bvcSlugs.has(s.slug)).toBe(false);
+    const acmeSlugs = new Set(acme.map((s) => s.slug));
+    for (const s of bvc) expect(acmeSlugs.has(s.slug)).toBe(false);
+  });
+
+  it("curriculum sort does not let another tenant's category order leak in", async () => {
+    // The curriculum sort joins course_categories. If that join matched on name alone, a foreign
+    // category row with the same name would supply the sort_order for this tenant's page. No
+    // foreign COURSE would be returned, so the only visible symptom would be a wrong order, which
+    // is exactly the kind of quiet leak this suite exists to catch.
+    const { listCourses } = await import("@/db/queries/catalog");
+    const bvc = await listCourses(bvcId, { sort: "curriculum" });
+    expect(bvc.every((c) => c.tenantId === bvcId)).toBe(true);
+    const acme = await listCourses(acmeId, { sort: "curriculum" });
+    expect(acme.every((c) => c.tenantId === acmeId)).toBe(true);
+  });
+
   it("by-id reads return null (404) across tenants", async () => {
     const { getCourseById } = await import("@/db/queries/catalog");
 

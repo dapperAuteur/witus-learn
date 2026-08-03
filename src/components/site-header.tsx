@@ -53,6 +53,10 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
 
   // Content-driven links the tenant actually has, plus the always-on Instructors directory.
   const exploreItems: NavItem[] = [
+    // Every multi-course path this brand teaches, with where to start. Ungated: it degrades to an
+    // honest "no multi-course paths yet" on a school that has none, which is a true answer rather
+    // than a dead link, and it is how a learner discovers a series exists at all.
+    { href: "/series", label: "Course paths" },
     ...(hasCivics ? [{ href: "/civics", label: "Civics" }] : []),
     ...(hasLanguages ? [{ href: "/languages", label: "Languages" }] : []),
     ...(showMap ? [{ href: "/explore", label: "Explore" }] : []),
