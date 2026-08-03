@@ -5,6 +5,7 @@ import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { SURPLUS_FUNDS_BASICS_COURSE } from "./data/surplus-funds-basics-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -1192,6 +1193,24 @@ async function main() {
     slug: "us-passport",
     course: TRAVEL_PASSPORT_COURSE,
     category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+
+  // Money & Property. Course #1 of the Asset Recovery series
+  // (docs/asset-recovery-course-brief.md). Legal accuracy is the load-bearing constraint here:
+  // every state-specific figure is cited to the statute and dated IN THE LESSON, and the course
+  // teaches a research method rather than a national summary table, because a table goes stale
+  // silently. It is explicitly not legal advice and it makes no earnings claims.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Money & Property", sortOrder: 13 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "surplus-funds-basics",
+    course: SURPLUS_FUNDS_BASICS_COURSE,
+    category: "Money & Property",
     navigationMode: "linear",
   });
   await seedAuthoredCourse(db, {

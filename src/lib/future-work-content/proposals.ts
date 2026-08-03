@@ -15,6 +15,6496 @@ export interface ProposalDoc {
 
 export const PROPOSAL_DOCS: ProposalDoc[] = [
   {
+    key: "Claude Certified Architect - Foundations, Prepare for and pass the exam - freeCodeCamp",
+    title: "Claude Certified Architect   Foundations, Prepare for and pass the exam   freeCodeCamp",
+    summary: "CLAUDE CERTIFIED ARCHITECT - FOUNDATIONS, PREPARE FOR AND PASS THE EXAM! - FREECODECAMP.ORG (128K).MP3",
+    body: `CLAUDE CERTIFIED ARCHITECT - FOUNDATIONS, PREPARE FOR AND PASS THE EXAM! - FREECODECAMP.ORG (128K).MP3
+
+
+Date    2026-07-29
+
+Speaker  00:00
+Hey, this is Andrew bringing you another tech certification course and this time it's the Claude Architect Foundations Certification. And so I think I might be only one of the only providers that actually has this course out. And on top of that, I've put in the work and done a lot of hands on labs in this course so you will not only just learn the concepts, you'll be able to apply them very effectively. And I think you're going to be really happy with the content because even if you are not utilizing Claude and you're using some kind of other agent or AI vertical, the knowledge here is extremely transferable, extremely deep and extremely valuable. 
+
+Speaker  00:40
+So I hope you are excited to jump into this course as much as I had making it and I will see you soon. 
+
+Speaker  00:50
+Hey, this is Andrew Brown and we're the start of your journey asking the most important question for us, which is what is the Clod Architect Foundations course so this is a certification from Anthropic and it will help you teach you the broad underlying concepts of building agents, expose you to Claws, models, coding tools, and SDKS. It's focused on the adoption of workloads for orgs or if you really need to understand MCP, Anthropic, crazy idea of MCP so they really want you to know it in this course not that hard to learn. The exam code for this is CCA hyphen F. Technically is no official exam code, but this is what everybody is going with. 
+
+Speaker  01:24
+Consider the certification if you want to know how to effectively build a genetic workflows. You're planning to adopt CLOD as your primary AI driver within your org or you're part of the cloud, the CLOD partner network because it might be a requirement for you to advance within their network. But we'll continue on here. You can see the road map is really, really expanding and so I just want to give you some tips here. So if you're going to take the clawed certified architect looking for my pan, where's my pan there it is. 
+
+Speaker  01:55
+If you're taking, if you're thinking about taking this, take the clawed code essentials there's a 30 % overlap between them, but this one will get your feet wet and so you're not overwhelmed when you jump into this course. This is not an easy course despite them saying that it is. You need to have developer experience and I will help you through it i'm a developer of 20 years. So you are very, very good hands. If Clawed Code Essentials is too much then should be starting with the Jenny I Essentials. And if you really are struggling here then you should be looking out for my cloud code from Zero which is expensive but it's really designed to reuse the Super plain language and to break things down 1 to 1 so that you can be successful in terms of the ecosystem i've thrown in my NVIDIA one in here because I believe that understanding how these LMS work, like what takes it to deliver them at scale, is very, very important in data centers. 
+
+Speaker  02:42
+And that will help you understand if you ever want to bring your own model or just understand the costs involved. But you can see there's a lot going on there and you do not need to take the CLOD certified architect to do my clod code boot camp when that comes out. But you know, it doesn't hurt, right? Let's talk about how long it will take to pass well, I would say if you're a beginner, it's going to take 30 hours and it might even take you longer because the concepts here are so new even for me that it was taking me time to basically understand them and so for experienced people, if my course is 12 hours, even if you 2 times it, you're going to be taking 12 hours to do it. 
+
+Speaker  03:19
+So just consider that so maybe average time 12 hours, 50 % lecture labs, 3 % practice exams and you know, study once. One hour a day should be a good pace for you. Don't do this in a single day you'll burn out and you won't keep the information but do not take too long as it will leave your mind oK So what does it take to pass exam do the the video lectures. But the main thing is do the hands on labs. And it's hard because I cannot give you one-on-one instruction or one one to one instruction because LMS are chaotic. 
+
+Speaker  03:52
+They like to do things differently. But you should watch my videos and then try to figure it out yourselves what I'm providing you is my developer knowledge, my developer troubleshooting, and my judgment in terms of what looks good and what doesn't. And so you're watching them as a reference to figure out how to apply them and if you're getting the code that you want. 
+
+Speaker  04:10
+The other thing that I would just say is that I do have the code bases so you like, it's all the code is there for you so if you just want to run them and just inspect my code or even try to prompt it to make it better, go ahead and do that but just understand, I cannot give one to one instructions unless I spend a lot of time engineering the stuff and then we're losing all the learning value oK, we got pay practice exams on the platform we usually give you 1 for free. 
+
+Speaker  04:35
+It's over there on exam proco at forward slash CCAA hyhen F where you take this exam well, Anthropic is using Skilljar to serve it. They technically have their own course, but I'm going to tell you it's not enough. It simply is not enough. And it's very much research base where I am giving you hands on so you can actually apply the knowledge. And so it's a good pairing, like if you want to just round out and have a second source, but you're going to struggle if you just use them as your primary source. And I need to point out that this certification right now at the time of this video is only available to Claude Partner Network so everyone just saw the name certified architect they said I want to go get it. 
+
+Speaker  05:17
+But you might not be able to get it because if your company doesn't qualify for this and they have crazy requirements to get in, not crazy, but you have to have at least 10 people and a certain size of company, whatever, whatever, and you have to be aligned. You might not be able to get this and if you can't, Exampro has got you covered just take ours and generate it out, pass it on our platform, our version of it. And until you can get it, then you can, you know, come back to here if this ever becomes GA and they might make this generally available to everybody, not just in the partner network. 
+
+Speaker  05:48
+So what is the content outline well, there are 5 domains. So we have agentic architecture and orchestration, tool design and MCP integration, clod code configuration and workflows, prompt engineering, structured output, context management, and reliability. Notice here we see clod code this is not a clod code course, but the middle section here has a lot of clod code in it so 30 % of this content comes from my Cloud Code Essentials if you've already taken that course, you are doing really well so I think it's like basically half a domain 2 and all of domain 3 is coming from my Cloud Code Essentials. 
+
+Speaker  06:22
+But the new content here in domain one, especially domain five, are extremely valuable, but they're completely new concepts for most people. And so the only way I can make this content is I had to do it. In fact, I found that often the docs were wrong, the exam guy was wrong, the AI was wrong. And so only by doing it, by going through the process did we find out the real truth of these tools. And so that will probably improve with time. But, you know, having the real truth is you doing it for real oK and so that's why we have so many labs. 
+
+Speaker  06:55
+But yeah, the domains are all weighted differently as per usual. The passing grade is seven twenty so it's much higher the other ones use it as 70 % this one. Seventy two percent. There are 60 questions and you have 17 questions you can get wrong so huge pool of questions and a loss of opportunity to get things wrong. It's just multiple choice. But despite being multiple choice, the questions are very verbose. 
+
+Speaker  07:20
+It's like they're writing solution architect professional questions i don't know why they did that because it just makes it really hard, not in the sense that the question they're asking is hard, but the ability to parse it. And to me that's a mistake, but that's the choice they made. The duration is 2 hours you have a lot of time, 2 minutes per question so take your time reading the questions and absorbing what they're trying to say. Your exam time is one twenty minutes your seat time is one fifty minutes technically, there's probably no seat time because they're using skill Jar as the as the delivery for their certification, but you we should still plan to review instructions if there is an online project, there probably isn't and read and accept the Ndas or complete the exam and provide feedback oK, We don't know how long this course is valid for unless it becomes generally available to everybody, not just people in the clawed partner network, we're just not going to know. 
+
+Speaker  08:14
+But anyway, hopefully that gives you a clear idea and I will see you soon. Cha, cha out. 
+
+Speaker  08:24
+Hey folks, it's Andrew and I just want to give you considerations about this course so in terms of requirements, we're not covering the setup of Agent SDK or Cloud Code. I have that in another course, which is my Cloud Code Essentials course the reason I didn't include it in here is I just don't want this course to get be bloated and have repetitive content. And so I'm trying to reduce the amount of share and so I felt that I have a very good robust setup in another course and also if setup does change, I'll update in that course and this will keep this course fresh because I don't want people to feel that this course is up to date because the setup may have changed and so that's been separated out for a reason. 
+
+Speaker  09:04
+But it's still available to you for free and paid. So just go look for that. The approach we're taking for this is we're going to walk the exam guide i found that by just going through and trying to do everything they say in the order that they say, it is effective learning for this certification because of what they're trying to show you. And I would say that it's very important that we take an implementation focused approach. 
+
+Speaker  09:30
+I know people are using the Anthropic content, which is very conceptual based and there's people failing because it doesn't stick unless you do do it so for me, I'm going to take an implementation approach because I think that will be the best result for you. And so the idea here is we'll look at a code example and we will go implement it oK. And I did mention that Anthropic does have free courses. They are very concept based, so they have really nice diagrams, but they're really not showing you implementation or not enough implementation specifically for this certification. That might change later on, but you know, I want to to cover the gaps that are not being covered here and you know, implementation I think is going to be what is going to be best for you, best for everybody. 
+
+Speaker  10:14
+And so that's what I'm going to do oK, Chow, chow all. 
+
+Speaker  10:22
+Right so in this follow along, we're going to look at learning how stop reason works and we're basically learning also how to implement tool use. All right and So what I'm going to do is make a new folder here, and I'm going to call this one actually before I do that, just because I need to be diligent about this. I'm saying git init, add git Add all git commit hyphen, M hyphen M in hello world so I just want to get a set up here oK, so I'm going to put this repo later i'll probably make a video prior to this to show you where it is so you already know where this is but at this point in time, I don't actually have a push to get. 
+
+Speaker  11:01
+But anyway, we want a new folder here and the new folder is going to be stop reason, OK, And I want to describe what it is that I want to accomplish in here so I'm going to make a plan here i just like to call them plans. And I'm just kind of writing up ahead and we're going to ask Claude to help us out because Claude knows a good enough about Agent SDK it's not always the best at it, but generally it knows what's going on here. So what is our what is our goal? We want to show the user how stop reason works. 
+
+Speaker  11:37
+So by showing. So we want to show the user how stopper user works within the Claude Agent SDK. Ok, so we need to see stop reason for tool use. We need to see stop reason for end results. We need to see how it's changed appended, how the results is appended. I want to use a weather tool use example we are implementing in Python. 
+
+Speaker  12:28
+We want to use the Lib. 
+
+Speaker  12:36
+Sdk parser. 
+
+Speaker  12:40
+Sdk parser. 
+
+Speaker  12:45
+To format logging information. Ok, so I'm going to go ahead and do that and by the way, you know, if you get something different, this repo's up there, you can always copy my code and then try to run the same thing if you're not getting the exact same results, OK because you're just not going to be able to do it unless we go the old school way and I write this by hand and I can write the code by hand but I'm assuming folks out there, you want to leverage Claude as much as you can, and we will do that, OK but I totally am comfortable doing the old school way so I'm going to go here and say please execute the plan for plan dot MD and generate the code into the stop reason folder. 
+
+Speaker  13:36
+Ok, I probably should have told it like, the purpose of this is to show an example, right? And so we're talking about stop reason, but we're going to also learn about tool use here while this is going. And so I'm going to pause here and then we will see what we come back with if there's anything I need to accept, I will accept it back in just a moment oK, I'm just watching this thing go and right off the bat, it's like it created requirements that TXT with anthropic i'm like, wait, that's not right. So I think we're going to have to help it out here so tab to amends, I'm going to hit tab to amends and say, look, I shouldn't you be using using the. 
+
+Speaker  14:17
+Over here Claude agent SDK this. 
+
+Speaker  14:24
+Is what I'm confused about and we'll double check this here because, you know, they're always changing stuff on us and we want to keep nice up to date here as possible so I'll just double check here as we can't just fully trust, I guess we already have the tabs open here. We can't fully trust this stuff but it says Claude Agent SDK, so that must be what it is. 
+
+Speaker  14:39
+The Claude, the Claude code SDK was renamed Claude Agent SDK, So that is the proper name and so it's confused on its implementation. I'll go back over to here. I said the Claude Agent SDK and so it's the first thing we see here so I'm just going to edit this requirements while this is going because we'll probably keep using this document so. 
+
+Speaker  15:05
+Yeah, that's fine we'll come. We'll come back to that in a moment we'll just say yes for the session so it can work. And so we'll be uninterrupted. And I'm going to go ahead and do this here. Yeah, you can use Python sure. And what I want to do here is just help out with the requirements so the first thing is. 
+
+Speaker  15:28
+Use must use the Agent S Claude Agent SDK. 
+
+Speaker  15:41
+Ok must Python 3. I mean that's pretty obvious python 3 must implement. Must use Lib. 
+
+Speaker  16:06
+Format messaging here we'll go ahead and do that and this might help a little bit. 
+
+Speaker  16:13
+We are creating a code example to learn about stop reason. 
+
+Speaker  16:22
+Scope. We are learning about Agent, Claude Agent SDK and Claude Agent, I'll just say that that's fine, OK, 
+
+Speaker  16:40
+We don't need that and so now we've kind of adjusted that. 
+
+Speaker  16:45
+Here's trying to run it in an environment i don't know why it's doing that. 
+
+Speaker  16:54
+Just use the local Python environment. 
+
+Speaker  17:00
+No, I don't need to do it that way. Ok, that's silly. And the reason I say that is just because we could create ISO environments, but like, we're just installing that one thing, and I don't want to be doing that all day every day i'm already on WSL too i don't need any more isolation here. So let's go take a look at what it's produced and see if this is even readable here. Ok, so we're going to go all the way to the top here. And right away, I don't like this because it's giving us fixed weather data. So I guess I should have been more particular in saying like, hey, go use an API endpoint for that, which is fine. 
+
+Speaker  17:34
+But anyway, So here we have cloud options and the client, that's fine. We have a tool use block and a tool result block, OK. And they have simulated weather results we are defining a tool, get weather, get current weather for a city. And I mean, this looks like a decorator so the decorator in Python helps enrich functions so this has to be tightly coupled to this i'm not an expert in Python, but I know decorators when I see one. And so this is adding additional data that it needs to know about this function here. 
+
+Speaker  18:06
+And so the function takes an args and then we're going to parse the args, right? So here we're taking a city and it's going to look based on the weather data that matches and then it's going to return that information so we have type text, text result. Ok, then we'll go down below here and so we have logger helpers. Again, I want to keep everything within my logging tools i'm not sure why we have that. We have stop reason annotation. So I think what's going to help is looking at the main loop here so we have create SDK MCP server. 
+
+Speaker  18:42
+Why do we need an MCP? Well, I guess we could do it that way and. 
+
+Speaker  18:47
+So I'm going to go over to here. All right, I guess that's how it wants to do it that's fine. So we have weather tools and so we add a tool and then we have MPC Server's weather server options. So, you know, my thought as a, as a programmer, as a developer is like, why is it putting it into an MCP? I probably wouldn't want to do that right off the bat so there's that. Here's explaining the stuff. I don't need to explain it. Ok, so here's the problem with this, this program, OK, first thing is like, I'm. 
+
+Speaker  19:22
+Going to go say stop reason here stop reason. 
+
+Speaker  19:27
+The problem with this program is I don't want the program to actually explain how it works. All we are doing is outputting key outputs to observe. Ok, that's step one number one. The other thing is you implemented an MCP server. Do we really need that to show tool use? I mean, isn't there, Isn't there something simpler, 
+
+Speaker  20:04
+Something simpler? And then the other thing is like, can't you use API endpoint public to get weather data? So we'll go off and we'll do that while it's doing that, let's go look it up ourselves, OK because there's nothing stopping us from reading the code, but I wanted to show you like. Because I keep telling people they're like, yeah, you know, Claude can do whatever i'm like, yeah, but it doesn't know itself. And you still have to go look things up. So what we'll do here is we'll take a look and we'll go to API reference that might be a good starting point it's usually what I do for projects is I go there, say yes, I really need to make a Ding or something so I can hear it as it's doing that. 
+
+Speaker  20:52
+We'll go over to here and I'm going to see does it have any information here that might help us? No, not really that's not going to be useful we'll go back to the developer guide. 
+
+Speaker  21:04
+Usually I just go straight to API reference and usually that has all the information I need, but this does not look good so we'll go back a second here. 
+
+Speaker  21:16
+Go back a second here. I remember seeing a lot of stuff here before where is it? I guess we'll just scroll on down till we find it here. So what I'm looking for is that tool use implementation. 
+
+Speaker  21:30
+I remember having like a bunch of boxes and saying like, hey, if you need to do this, you need to do that give me a moment to go find that oK, All right, so one thing that's confusing, like here, I'm under tools, we're seeing Anthropic, but there's also the Agent SDK so which is it, right and so that's something we're going to figure out in right now so just give me a moment to figure out why there's a discopancy there. 
+
+Speaker  21:54
+Hey, this is Andrew and in this video we're going to take a look at set up for both Agent SDK and Claude Code technically, I have them already both installed and so the process might look a little bit different. If you need it completely from scratch and seeing that process, you can absolutely do that by looking at my Claude Code Essentials course, which shows multiple installations on multiple machines. 
+
+Speaker  22:15
+And if for whatever reason this is out of date, go to that other course because it will have the most up to date way of doing that so we'll go ahead and say Claude code install. It's going to be dependent on what kind of system you're on so I'm on WSL 2 and so that's going to be with Linux. And So what I'm looking for here is the installation instructions. And so here they are and so we have these modes. So we have native install Homebrew and Winget and they recommend it in general, people almost always recommend the the native installs because they're going to install directly from the source or they're going to compile and they're going to be the latest up to date if you take these other ones, the releases might be old and so you might run into an issue where you're having weird API issues because they're old and yeah, I would just say go with the native install so I'm on WSL, so I'm going to go ahead and grab this installer here. 
+
+Speaker  23:08
+I have a new folder I've made for for this course and we'll go ahead and install it again it's already installed, but we will run in here so you have an idea of that installation process. So it's just taking a moment there see, it already says that it's installed and we have version 2 1 to launch up Claude we're going to type in Claude, OK, and it thinks I'm already logged in, so I'm just going to log out here for a second, log out. I might not actually be logged in i actually didn't check, but what I'm constantly doing to see is I'll type in Claude auth status and that will tell you whether you're logged in or not. 
+
+Speaker  23:43
+Again, in my Claude Code Essentials, we have a lot of stuff that covers authentication and all these little things so if you really want to know all of it, you can go ahead and do that over there. But we'll launch Claude i'm going to go ahead. It wants dark mode sometimes it'll ask me on setup if it doesn't do this, all these steps, so you just type forward slash login but anyway, I'm going to go here to my subscription probably one of the best ways that you can use Claude because it's the most cost effective way right now for learning. 
+
+Speaker  24:09
+And so here it has opened up a new window in a Chrome browser it has a weird looking Chrome here. And so I'm going to ignore this one because it's weird. I'm going to go ahead and copy that, make a new link, paste it in here. It seemed like that was like an isolate Chrome browser running. I'm going to hit authorize we'll go back over to here, copy the code. 
+
+Speaker  24:30
+We will paste it in, hit enter. Ok, now we are successfully logged in. Enter, enter. If you didn't see that that whole setup, you just type in login it will do the same thing. Ok, so that's Part 1 of getting Claude there i just want to make sure that it is actually working. And so I'm just going to say I'll just talk to Claudia and say, can you create me a README dot MD file that is completely empty in this folder? Ok, So I'm going to go ask it to do that, just making sure that it works. 
+
+Speaker  25:07
+And we'll say yes, we can do that. We're using the Sonnet model down below here. We can change our models if we go here and type in like Haiku and things like that. Again, as we work through implementations, I will change things and just follow along as we go here and I'll go over to here and so we should have a folder or file. 
+
+Speaker  25:32
+I don't see it, so I'm just going to do code, period. Sometimes that helps it open up into context. 
+
+Speaker  25:41
+And so here it is oK, so that works that's great we'll go back over to here and so step one is done we have Claude installed it's working. The second part is the Agent SDK. So let's go ahead and take a look at that so we'll go over to Claude Agent SDK here it is over here. And yeah, it's been renamed yeah, that doesn't matter here. And so we're just looking for the install here it is oK, So we have pip install Agent SDK. Ok, I'm going to go ahead and hit enter here. Yes. 
+
+Speaker  26:25
+Ok. And I don't think you can use the SDK. The thing about can you use the subscription i don't know i always use it with the key as I was just thinking about that because, well, normally you'd be using this in a production environment, so it would never be tied to a subscription. But I just want to check if we can use it in development with subscription in just a moment. All right, so the suggestion is, is that we can actually use your subscription i don't know if it's true, but we'll have to validate it. 
+
+Speaker  26:53
+But the idea is that if we are logged in with the clawed CLI so if we go back over to here, we'll have to test this in a moment. I mean, we are testing it right now, I should say. And so we'll do this and so it says that I'm logged in, right? And so the idea is that if I was to use any kind of code here, it should be picked up so I'm going to go ahead here we'll make a new folder and we'll just say hello world it'll be our first hello world of using the Agent SDK. 
+
+Speaker  27:17
+I'm probably going to try to use the Agent SDK more than Cloud Code i guess we'll find out when we go through this course but just because we can use Cloud Code to help us write code for Agent SDK but I think that this course, especially this first section is really about implementation for companies and things like that so I think we'll benefit better driving it that way. But anyway, so here we have an example code i'm going to go ahead and copy this here and we will take a look at what we're looking at well, first of all, I got to make sure I have a file so we'll go here and this will be hello dot PY or just main dot PY, I suppose, main dot PY. 
+
+Speaker  27:55
+And we'll go ahead and paste this. Ok, I'm just going to zoom out here for a second. And so we have the agent SDK. Ok, here we have a message fix, find and fix the bug in the auth dot PY. So I'm going to change this to like hello world dot RB and I'm going to I'm going to make a mistake puts, puts, hello world. Ok, so I have a few mistakes here, right so what are the mistakes? It should be puts, not puts should have two double quotations or singles, and then it shouldn't have a parentheses or it should, right so we'll go over to here and say find and fix the bug in the hello world dot RB. 
+
+Speaker  28:44
+Ok, so we are giving it the option to read, edit and use bash in order to accomplish its tasks and then it will print out the results down below Here I'm just going to fix indentation. I like 2 spaces, not 4 spaces, which is what the creator Python wanted you to use but was never enforced that way. And so this should do something if it works. So I'm going to go ahead and run it. If you don't know how to run it, you could just ask Claude to do it i one thing I would like is the requirements dot TXT so I'm going to go over to here and just say hey Claude. 
+
+Speaker  29:16
+We're not saying hey, Claude, but in my hello world, I want to add a requirements dot TXT that my main dot pi will need. Can you figure out what I need? Ok and I mean, we already know what it is it's right over here. It's this. And so probably just be that an empty file, but I figured, you know, let's try to just get a little bit warmed up here. 
+
+Speaker  29:46
+For Claude API sure, OK. 
+
+Speaker  29:53
+And we'll give it a second here to get that implemented. Again, just if you're really, really rusty with the stuff we're just trying to get going here that looks good to me we'll say yes, That's all I was expecting. And so there it is. And so I'm going to go ahead here and we're just going to make a read me. 
+
+Speaker  30:11
+And this one's going to be, you know, CD hello world. 
+
+Speaker  30:19
+To write your own documentation i sure do that's what you're thinking. Python hello. Hello. Or just main dot pi so main dot pi oK, So what I'm going to do here is just quit out of here. No reason to waste credits for such such a simple action. And we will CD into our hello world folder. I'm going to try to keep these lowercase underscore just going to go ahead and fix that there there we go. 
+
+Speaker  30:44
+I won't let me do it well, that one's just going to be like that i'll try to not do that in the future folks, but we'll go ahead and we'll just type in Python main dot PY and it's saying there's no file there. I think there is. 
+
+Speaker  30:59
+Oh, it did change. It did change it's not in my UI let's go ahead and get this to refresh it was weird it's like we don't we can't change it and guess what, it did change it. That's fine i want that oK, so let's say Python main dot PY there we go. And I don't see any output, so we'll go back over to here. We'll just print some stuff so let's just say print running fix agent and. 
+
+Speaker  31:26
+We'll go ahead and try that again. We're getting you output. Oh, interesting. That's kind of strange for such a simple app. And I'm just going to say here, running main dot PY does not print to terminal. What's wrong? And I'll go in the front here, Just type in debug debug is just AI guess it's a scale that specializes in debugging. But this should work i'm not sure why it's not picking it up. It's kind of embarrassing that this basic script is not working right off the bat like this print should be working, Absolutely. My primary language is Ruby, so sometimes I have a lot of confidence in Python, but we'll give it a second and it'll tell us what the problem is oK, And Oh, right, yes, yes, yes, yes well, do you even have that over there? Oh, I missed it. 
+
+Speaker  32:19
+Ok, and that makes sense with async IO, actually you have a coding course I never published where I cover async IO and so basically if you have any synchronous stuff, you have to then run it within the the async tool is how it works so that's good that I caught that we'll go ahead and say yes, I don't need it to run it, but it might try to run it for us. 
+
+Speaker  32:40
+Great and so I'm just going to stop this here. We'll type in clear and we'll go back and hit up and it now executes, 
+
+Speaker  32:52
+Which is fine so here we have a bunch of stuff, but it's kind of hard to read so I'm going to go and take this here and I'm going to feed it back whoops, 
+
+Speaker  33:03
+Feed it back here we're going to get set up here so I'm going to go ahead and just say back to Claude. I'll go back a level. This is where we really should be every time you trigger Claude, it creates a project in your home directory so I want to try to stick in the same place so I'm going to go ahead and just say so I got back data for my. 
+
+Speaker  33:26
+Hello world Hello world main pie, but it's not human readable. I'm going to change the plan i hit shift, shift tab so now I hit it again so I'm on plan mode. Can you tell me how we can make the this output useful to a human? And can we create our own Python library for parsing it? Ok. And so I've given it the format and I mean, it might come up with something really simple like pretty print where it will just print the structure. 
+
+Speaker  34:05
+But what I'm hoping is that maybe we'll have this little file and then we can use it in other places, right so I know it seems like we're getting a little bit already advanced, but that's just how we roll here let's go ahead and hit yes i just wanted to have full access there. That's why I said yes always if I go over to here, it added this, it says always let Cloud API to do stuff, which I don't remember getting Cloud API before i just remember it working so I'm not sure why it needs to do that now, but that's fine. 
+
+Speaker  34:33
+And so it's off to the races trying to execute here, which is fine i don't want that. Microsoft Foundry's always popping up on me they're like, hey, you want to use Microsoft Foundry no, I'm using Claude right now go away. Was it? What's the insult to Microsoft these days micro micro slop. Go away, Micro slop. And So what we're looking for here, it's really taking a long time here it's not that complicated what I'm asking for it to do. 
+
+Speaker  35:02
+I'll pause here and we'll see what it comes back with its plan oK, All right and so I think we've got a plan back let's take a look at the plan. And we have the Hello World main pi script uses the clod Agent SDK and calls the print on each yielded by query this produces raw Python object repo strings. The user wants human readable terminal output or reusable Python library that's true. And so here it's saying SDK init dot pi formatter main dot pi and then we have SDK parser format so here it's suggesting the format so each handles these parts and it puts the parts through there export a single format message. 
+
+Speaker  35:41
+And by the way, you know, if you're like, oh, I don't have the exact same code as you, Andrew. This repo will be on GitHub i will show it earlier in the course so you can grab it. And then you can just grab the parts to have parity so, so like this thing, if I'm using it throughout the course, which I don't know yet at this point of time, then you can grab that code and use it oK, but it says export a single format message string. 
+
+Speaker  36:02
+And that looks good. The only thing I would say is like, it's pretty close. Good but I plan to use this library in multiple folder projects. So maybe it should live in a Lib directory at the top of the project and make sure to give me a read me so I know how to import it for projects within this repo. Ok so we'll go ahead and do that. And that's the only change I'd like. And so yeah, you have to read your plans if you want to get code that you like. 
+
+Speaker  36:47
+And so we'll give it a moment there i didn't tell it to go execute it supposed to update the plan, but we'll give it a moment to come back here, OK, Alright our plan is back and by the way, people don't complain if you see me doing this. When I made my clock to essentials, people were like, Andrew, you're right, you're using the thing and then you're pausing whatever, whatever like what else would I be doing this is what we're going to be doing so, you know, don't, don't give me those comments, OK? Because that's the work. 
+
+Speaker  37:12
+Anyway, let's take a look and see the plan updates so here is the Lib SDK parser and we have the init formatter and the README. I don't know what the output is like i'd be nice to be like, what does the output look like? But I would rather just test and find out explain what the library does. Yeah, I don't know what the output looks like. And we have a verification set up here so we'll go ahead and say yes, auto accept. 
+
+Speaker  37:35
+And so now it's going to go ahead and implement it and we'll be back here in just a moment oK, OK, so it looks like the code has been implemented and so now we have we'll give this a refresh here. We now have our Lib directory. Here's what it's done so did it actually test it now prints out formatted message to use another project, whatever, whatever let's take a look at the read me did it do what I wanted here and give me the simple instructions here i mean, it gave me a lot of information that did not ask for converts noisy output like this well, hey, at least it's going to tell us oh to this oK, so now we can actually see what it looks like and we have import options and stuff like that another good reason that we did this is that then the AI can pick up on this. 
+
+Speaker  38:13
+The only thing that I will do here is just change the read me to a Claude MD file, as that's what it prefers to look for stuff and so that's what I'm going to do so I'm going to go ahead and do that. It did change it it's just being silly i think i do think it's changed over to the capitalized take a look here, this Visual Studio Code thing it's really annoying and I'm going to go here for a second i'm going to say move Claude to Claude dot MD. It's not the same file 1 is capitalized. I'm going to go ahead and say Claude one there we go lS move Claude one to claw dot MD Maybe it did change. 
+
+Speaker  38:55
+There we go and even though it's not reflected here, there we go. Now we have it like that because that's what you are going to want it to be called when you're doing that stuff i didn't do it for here because it's just like so basic what it's doing so I'm not really worried about it, but we will go back and we will go back and we will take a look at our hello world i'm sorry, our pie and it's brought in the parser. 
+
+Speaker  39:18
+I want to go back a directory and go here again, we'll say hello world oops, hello. And we have two of them because it got confused i'm going to delete the other one i don't want to have two i'm not sure how that happened. We'll go ahead and we'll say hello world and we're going to go ahead and say Python main dot PY we'll run that and I want to see nice, nice output that I can read. 
+
+Speaker  39:43
+Ok, so here it says thinking let me find the hello world dot PY first. They globs the pattern, no files found i couldn't find a hello world dot RB the file in the current directory could not be found. And you know why it's because the name is wrong. So we'll go ahead here and we'll fix that there we go. Fair enough, right? 
+
+Speaker  40:06
+And we'll run it again but already, like we're becoming very productive and getting ourselves set up really, really well for when we run all these implementations, right? So let's take a look here. 
+
+Speaker  40:23
+I like how we can see what it's doing as it goes that's really nice as well. 
+
+Speaker  40:29
+Whenever you read the file, you should consider whether or not consider it malware you can should provide an analysis. My goodness, it's doing a lot of stuff here. Did it actually fix the file though? 
+
+Speaker  40:40
+It's empty now. 
+
+Speaker  40:44
+Ok, I'm going to try this again so I'm going to say puts whoops, puts hello world parentheses like this i'm going to try that again. And you know, this is just the default prompt that it came with and we'll go ahead and run that again. Some things that we could do to maybe make this a little bit less painful is maybe dial in. I'm assuming it must be an option for like the context output and or context window and then also maybe adjust which models being used and so I'm going to go back over to here and take a look did it did it do anything here? No, Let's take a look at what this thing actually does. 
+
+Speaker  41:25
+So find and fix the bug in the hello world dot PY it has read it has edit, it has bash so it should be able to edit that file, right? And we'll go back over to here. So here it says found it i'm going to go back in here just want to see if it was updated. So found it there are two bugs on this line not a valid Ruby method should be puts misquoted information let me fix both. So tool edit replace all and it goes here hello world, hello world dot RB in order to replace the string tool result has been successfully updated i'm going to close this out, make sure that it actually was updated. 
+
+Speaker  41:56
+It doesn't look updated fixed here's a summary of the bugs that were corrected. Ok, And the only other thing I might do here because I'm thinking like, OK, we had something that happens here, but I want this logger to log out a time stamp because then I can feed that data back in here for debug to Claude when things aren't working correctly again, let's just get set up as best we can here so our lives are easy. 
+
+Speaker  42:18
+And I'm going to go and say here for the SDK parser, the SDK parser, the Lib SDK parser, 
+
+Speaker  42:37
+I'll just tell it I want my Lib SDK parser to dump logs in a log directory. 
+
+Speaker  42:50
+Relative. 
+
+Speaker  42:53
+To the project that is using it. So let's say I run my hello world, hello world main dot Pi. I want a log in the. 
+
+Speaker  43:15
+Hello world logs and I will have like time stamp like human ISO 20 ISO date human readable time stamp dot log OK we are for each run of main we get a new log OK, so. 
+
+Speaker  43:47
+That's what I want. And. 
+
+Speaker  43:53
+So when I run so I run in hello main so basically anywhere so yeah, OK, there we go so we'll go ahead and hit enter and I wanted to go and update that and so that will give us an easier way because right now it's not working and I want to know why it's not editing and so that will make that work really well i'm going to say yes again, for these, I tend to just kind of accept these as they go. It's just a means to how we can do that it's weird because I said yes and then I thought, oh, maybe for that session that's what it was saying oK, but we'll be back here with the newer code and then we'll test it out. 
+
+Speaker  44:25
+So here we have a code update and again, remember this thing here, you can make your own, but if you want to have parody with me, so things are one to one when you're doing the other parts that mean your codes are not going to be the same, but at least this part will be the same. Then, you know, just grab from my code base and put it in your your stuff here. So you capture the time stamp, get the logs and write sure, yeah, that seems fine we'll go ahead and do that. 
+
+Speaker  44:52
+And yeah. And so now it's just we have format message, log message, right so we have two different things, which is fine and then it's bringing it in here so we have log message oK, sure. 
+
+Speaker  45:09
+And we will go ahead and print that yep, it's going to test it as well. 
+
+Speaker  45:18
+So that seems fine i'm going to go and quit out of this. We're already in the hello world. We'll go ahead and run that. And I want to go here, give us a refresh we do have logs, So there it is. And so now if that file has not changed, we can now feed it back into it and so that's going to make it really, really useful for debugging. Ok, so here I'm going to go back into i'm just going to go back in directory Claude i'm trying to stay in that one and I'm going to say debug. So I'm going to provide to the log so say. 
+
+Speaker  45:54
+Describe the issue so I am using Agent SDK. It's supposed to. 
+
+Speaker  46:03
+To edit a file. It does not here here. 
+
+Speaker  46:12
+Check the logs and help me. So we'll go here and say hello world logs like that, OK and the idea is now like it has logs, so like it has all the information about what it needs to to figure that out. And so we will wait a moment here and see what we get oK, All right, let's take a look here so what do we have so the edit actually did work the logs show the edit was successful the file currently confirms this. It already has this the likely reason it doesn't edit when you run it is because the bug is already gone. 
+
+Speaker  46:49
+No, that's not the problem so I go over to here. It's fixed What? Well, whatever at least we have this set up really, really nice i'm not sure what happened there maybe it's just like a caching issue here with Visual Studio Code, but it did force us to have this nice setup and have a debugging process. So I would say that we are set up for Agent SDK and Claude code so if you're at this point too, then you are set up as well. 
+
+Speaker  47:19
+If you need more setup instructions, this is not enough. I got more in that Cloud Code Essentials course, which is very specific about the tooling. We're here we're looking at implementation of the stuff that Anthropic wants us to learn oK, there you go. 
+
+Speaker  47:40
+Let's talk about what is clod Code so clod code is an agentic coding tool and it reads your code base, edits files, run commands, and integrates with your development tools you can find clod code at code. Dot <a href="clod.com">clod.com</a> It's available in your terminal ID, desktop app, browser, and more so it's across multiple services, which we'll talk about, and so it's going to look a bit different and work a bit different depending on where you use it. Here is the most common way to use it, which is via the terminal, and probably the most natural way to use it because it is a CLI tool. 
+
+Speaker  48:11
+Its use cases include things like automating your workflow you keep putting off, build features and fix bugs, create commits and pull requests, connect your tools with MCP, customize with instruction skills and hooks, run agent teams and build custom agents, pipe scripts, automate with the CLI, and work from anywhere. The thing that people are really interested in is the agent teams where you basically have a bunch of agents working together in a team to accomplish a task, which we definitely cover in this course. 
+
+Speaker  48:42
+So look forward to that. The main thing is that clod code is ACLI program it's a code harness. It's an agentic coding tool but at the at the end of it, it's just ACLI program, OK. And so by nature, it runs in your terminal. Clod code is specialized to write code, but it can also write docs, run builds, search files, research topics and more. And Clod code uses an agentic loop. Multiple models, specifically the clod code models. We have tool calls to achieve your desired goal. 
+
+Speaker  49:15
+We are going to dive into all of these things, OK? 
+
+Speaker  49:23
+All right, let's take a look at the agentic loop if you've learned about Asians, you probably already know this, but we'll cover it anyway and specifically in the context of Claude code. So there's some very specific things or configurations for it. And so with an agentic loop, the idea is that you are going to invoke Claude code, you're going to ask it to do something and that's going to start the loop. And so the loop is over here. And the idea is that at the start of your request there is going to be a very specific model being used it's going to be Opus Haiku or Sonnet. 
+
+Speaker  49:55
+Probably Sonnet is that is the default and it will continue on from there. Ok and there are three phases that the Cloud Code utilizes to execute its agentic loop we have gather context, take action, and verify results, and it loops in on itself so it's going to continuously do this until it achieves its goal. All of these things can call out to tools. So that is the idea of where it will call out to something that it doesn't know how to do or knowledge that it does not have and it's going to reach out to be able to do more or just interact with your system, right because the LM is in it's a little box, it would have to call out to a function in order to interact with your developer environment. 
+
+Speaker  50:45
+Ok. And the great thing is that at any time you can interrupt this loop and give it corrections and then eventually it will decide that it has met the goal or needs more feedback or it doesn't want to run anymore to not waste your money. And that's that but we will dive in a little bit more on the tool calls and the models for this. Ok, 
+
+Speaker  51:11
+Let's make sure we understand what tools are so tools are code functions that an agent is aware of and can invoke to complete their tasks and when I say their code functions, I literally mean it's just a code function. If you know cloud computing and you've ever used a llama before where it's an isolate piece of code, this is what it is. And so the reason why an LLM needs to interact with a external function is because it can only do so much within itself, right it can just produce text. And so it needs some way of interacting with external programs or maybe there's something that is something that is deterministic that you can use code for, and that's what it will use tools for so let's use an example of a tool that might be called in each stage of the genetic loop for Claude code so let's say we're trying to gather context. 
+
+Speaker  52:06
+And let's say the prompt is trying to fix a failing Python unit test so for gather context, it may attempt to read a file so it's going to try to read the test payment dot Pi. The agent knows what tools are available to it it knows the name of the function, what its inputs are, and what it expects back is output. Ok, so that's already rigged up for it, but here we're gathering context it's going to read a file, which is the test file, and now it's going to take an action so it's going to go ahead it and try to edit the file so it will need to know where that file is and what change to be made. 
+
+Speaker  52:44
+Then it's going to verify the results, so it'll run the command pi, test and then it will expect an output and track what that output is. Ok, but that's just a very simple example of one prompt through there if it helps, we're going to just look at more examples, not the functions themselves, but just what could be in each category. So for gathered context, it could be reading files, searching APIs, querying databases, code based scanners technically this is rag right here so retrieve, retrieval, augmented generation where it's going out and grabbing data from a database to enrich its context. 
+
+Speaker  53:22
+That's a rag. Ok? We have system state queries for that. And I don't really even talk about rags in this course because it is the concept of agents and stuff like that, but it just kind of seamlessly happens here so we don't even think about it when we're working the cloud code OK, But for take actions, it can edit code as we saw run a command, write files, call AP is execute scripts. 
+
+Speaker  53:43
+We have verified results so we can run a test, we can compile code, we can query output, we can expect logs, we can compare results. So the clawed code has built in tools in five categories. They have file operations, search and find execution, run web search code, code intelligence. So within clawed code, can you make your own tools? I believe so like in the context of skills, you can i literally can't remember this point, but if we can, it will be covered in the course if we can't, then you just won't hear me mention it. 
+
+Speaker  54:19
+But anyway, that is what tool call is, and it's happening underneath it's really driving a lot of the interactions without tools, no code would be changed, right nothing would be happening it would just be talking to you. But there you go, OK. 
+
+Speaker  54:38
+All right, let's talk about models, in particular for the agentic loop, specifically for clawed code. And that's the fact that when it executes, it's going to use the same model for all phases of the agentic loop. And so you have that opportunity to change it at that point in time. You have different model choices. You have the default option, which is just going to do its best guess in terms of what it should use. You have sonnet which is great for daily coding tasks you have Opus which is for complex reasoning you have Haiku which is fast and efficient for simple ones you have sonnet 1000000 so this is where you sonnet with a 1000000 token context window for long sessions. 
+
+Speaker  55:20
+And then you have Opus plan it's a special mode that uses Opus during plan mode then switches to sonnet for execution. Ok, So there is some variation there for, but for the most part, they're always using a single model. There are three levels of models and we basically just covered it, but we'll cover it again so you have Claude Opus, I think of it as really slow, really smart, great for difficult tasks. 
+
+Speaker  55:41
+You have Claude Sonnet, all around well balanced, the Goldilocks of models so that's what you're going to be mostly using and Haiku, really fast, really dumb, great for general tasks. If you are using the subscription model, it's very hard to gauge usage between these three models, whereas if you are using the API, you're getting token usage information, so you have a better idea of that spend. 
+
+Speaker  56:03
+We do have this graph over here, which is a bit dated because it's saying like 3 and 3 5 and three, you already know we have something newer, but generally Haiku is, you know, intelligent the cost all the way down here, as it suggests for Opus, it's probably way higher now so it's probably way up here now, and sonnet is probably in the middle. Ok, But to really understand these, you just really have to use them and figure out their tasks for them. For the most part, I've just been running sauna and I've been having no issues but some people say that if you move over to Opus, it's extremely good but again, you need to drive the stuff and figure it out oK, 
+
+Speaker  56:47
+All right folks, I'm just going to say it again just so you know, we are walking the exam guide so notice here at the Start Domain one, they're talking about stop reason. That's why we're talking about stop reason. And I just want to make it clear like this is going to be the best way because as we work through this, we're going to like talk about it, then use it, talk about it, then use it, talk about it, then use it. And then that will accumulate and it'll make total sense to you oK, so I know feels really random just jumping into stop reason without talking about agent SDK and everything around it, but I promise you this will work oK, so let's talk about stop reason so stop reason is the reason why the clawed agent has stopped executing its loop. 
+
+Speaker  57:26
+And there are two different values can come back from the the clod agent. Ok when I say clod agent, I don't necessarily mean agent SDKI mean whatever The thing is that they have on their server that we're not Privy to that is running their agent oK, and there's two values that will come back we have tool use tool use. I already have a spelling mistake. You know, it's not an Andrew bound course if you don't have a spelling mistake right off the bat, tool use and N turn OK and so the Jason data return from a required to the agent will have that stop reason value. So let's take a look at some return to output. 
+
+Speaker  58:06
+So here's an example of of a stop reason and so here it's saying it's stopped because of tool use. So this is when the agent stops with the intention to call an external function. If you do not know what a tool is, I covered this it might clawed code essentials, but the simplest way to understand it is that it's an external function, OK. The idea is that you have the agent and the agent is in its own little sandbox and to reach out it has to talk to tools functions over communication channel maybe it's GRPC or HTTP, I'm not actually sure it doesn't really matter. 
+
+Speaker  58:45
+But the point is it's calling those functions and then those functions are able to do something and then bring back output, right and so the idea is that the idea is that you prompt your agent saying, hey, I need you to go do this stuff. And there's tools that it's aware of that it can do and it's going to trigger those tools and if it does behind the scenes, it's going to return the stuff saying tool use. And then we will see that stuff there. Ok, does it make sense it will make sense when we go to implementation. 
+
+Speaker  59:14
+Another reason for stop will be end turn. So this is when the agent has decided to return you a result because it's done. And so here we have, if you care for a look at the tool, clearly someone's asking about the weather so it says like, I'll say like, hey, can you tell me what the weather is in Winnipeg i don't live in Winnipeg, by the way, I'm in Scriber, Ontario that's a different Winnipeg is a different province, but that's what I used. 
+
+Speaker  59:36
+So here it says let me check the weather for you so that's the tool replying or maybe the agent replying there. And then it's calling the tool use and there's a tool called get weather and the input is Winnipeg from what it extracted from the user. And later on, like it will end the turn and return that information. Ok, so The thing is like, how does how does this go from here to here? Ok and this is going to come down to the appended tool use so the idea is that here we have a message from the user it says what is the weather in Winnipeg? And it says, OK, let me check the weather for you and so the idea is that we do that and we're doing the tool use and the idea is that this is going to output data and then we append it back into the conversation, right that's all we're doing here oK, so you here you can see the tool use. 
+
+Speaker  1:00:26
+And then we have our, this is the 2 results i feel like it's supposed to say, let's go back here a second. Oh, stop reason, right so stop reason will show up somewhere else but anyway, the point is we'll, we'll see that when we look at the code, OK but the idea is that whatever the result is, we're appending it to our message conversation because what's in the messages is not the same of what is being outputted, right and that's why we don't see stop reason within our message thread that makes sense oK, so anyway, so when Claude returns the stop reason, which we'll use to the program, the program needs to parse and send the data to a function. 
+
+Speaker  1:01:03
+The function will return the data, then you append the result of that data. So let's go do that now oK, 
+
+Speaker  1:01:16
+Hey folks, it's Andrew and we are going to learn about stop reason. And I want to point out again that we are walking the exam guide as the method to which we will learn. I'm doing this because again, I think it will be the best outcome for everybody here and I do believe that it's more important to make sure we validate all these things actually work as expected and the only way to do that is to do it. So we'll go ahead and make a new folder here this will be for stop reason and we're going to attempt with the API right now so right now I am using the API with Anthropic. 
+
+Speaker  1:01:51
+I have some money loaded up on there so if you're not doing that, you're going to have a hard time testing that out as far as I'm aware of, there's no free tier for the API usage on the platform. Dot <a href="claude.com">claude.com</a> So if you do not want to spend the money, even though maybe I don't know, like maybe we can cover this all in five ten bucks i won't know till the whole course is done. But you know, I would strongly recommend load up five or 10 bucks and see what mileage you get because it'll give you an idea how fast the consumption is i think I was already, I had like 10 bucks loaded up and I'm already halfway through it because I was doing other stuff with it. 
+
+Speaker  1:02:22
+Not related to this course, but we will try to monitor our spend as we go here. And So what I want to do is I want to show off stop tool use or sorry, like stop reason and we'll go ahead and here we'll make a new main dot pi. Since we already have some base code here, we can go ahead up to this one. I'm going to copy it just to get us off the ground. And it didn't cost us any credits either or tokens we just copy paste it, right? If you can do it, save yourself some money, right? But anyway, so here we'll load in the anthropic key and we do have a function here i'll just take it out of the function so that it's a little bit easier to work with. 
+
+Speaker  1:03:03
+And let's go and pull up the API and we might be able to ask it to give us information, but I would rather just go ahead and take a look. So here we'll go over to here and what I want, just a moment. What I want to find here is the documentation specifically for tool use. And I know it's here somewhere i would I would say I just do not like the way any of this is organized i do find it very hard to find anything in the API, but give me a moment and I will find it quickly for us, OK? One thing we probably should do, so we just get better code is we probably would want to put it into something that's async, as I know that's probably more ideal and I think I'm just going to go ahead and do that very quickly here so I'm just going to grab this code again, don't have to spend any tokens that's right here for us, and we will go ahead and grab this here, 
+
+Speaker  1:04:02
+Ok, 
+
+Speaker  1:04:06
+Here and I guess we'll be ending up putting this back into a function, so I'll just grab this like this, OK, 
+
+Speaker  1:04:18
+And we'll indent that. And then we have our little async call here so this one's a little bit different in fact, we can probably just grab the whole thing to be honest, because we're just going to be working with something basic anyway i think it's actually the same thing the only thing that's different is the name of the model that's being used, right so again, try to maybe use one that's cost effective since we will be testing out a lot of stuff here and I'm having a little bit of trouble copying this, I'm going to go here and just paste it up as a value like this, like model like this, and then I could just do equals there i'll have less of an issue copy pasting, OK, And we will go ahead here and grab the stuff out of here like that, 
+
+Speaker  1:05:04
+Ok. And I think this is a little bit different so we'll grab this line. 
+
+Speaker  1:05:13
+And folks, we are learning by doing it manually it helps us see what's going on. Ok, great. So we now have one that is using async and I'm going to go ahead and just go into our stop reason and we will go ahead and execute this. I don't know if async is part of Python let's go find out we'll just run it and see. 
+
+Speaker  1:05:33
+It is not. So I'll go ahead and just grab this here requirements dot TXT and we will drop this in here i'm. 
+
+Speaker  1:05:46
+Going to assume that's what it is like that. And then we'll go ahead and do a pip install, pip install R requirements dot TXT and we will get that installed now let's go ahead and run that and see what we get. 
+
+Speaker  1:06:03
+Ai OK, maybe I called it the wrong thing. I think it even told me that's what it was called. So we'll try that one more time. We'll run it again. To use this, you must have installed the package an extra. 
+
+Speaker  1:06:18
+Ok, let's go ahead and do that. 
+
+Speaker  1:06:23
+All right, let's ask how to install this. Ok, so I'm going to go here, 
+
+Speaker  1:06:29
+Cloud Debug, and maybe you can help us out here. 
+
+Speaker  1:06:40
+So here, this area is a Python dependency here, Anthropic oh, that's why. 
+
+Speaker  1:06:50
+Ok, So what I'd probably rather do is take this approach. 
+
+Speaker  1:06:59
+Sure, we'll grab this, 
+
+Speaker  1:07:03
+Go over to here, paste it in such. 
+
+Speaker  1:07:10
+I'll just add like can you OK, yeah, update the requirements dot TXT. 
+
+Speaker  1:07:18
+The only reason I didn't just do that myself is looks like the indentation was wrong and so I just wanted it to correctly put it in. We'll just say yes for the session because it had like a little set value in there and I wasn't sure like oh two so it's saying move this to that, OK and so that was my confusion. Great we will close out of this. 
+
+Speaker  1:07:36
+We'll go back and we'll hit up. We've got to do pip install, pip install, right? There we go we'll go ahead and run it again. And so now we are getting output back. All right. So we are now better set up. So what we want to do is set up tool use, and I'm going to again find that here for us oK, so we scrolled on down here and we have to use so the SDK provides support for tool use, also known as function calling. 
+
+Speaker  1:08:05
+And the SDK provides helpers for defining running tools as pure functions. So you can use the beta tool option. Ok, and so here we have it here, and that's probably fine i'd rather do it at the lowest possible level. Let's see if they actually have that as an option here. Ok, so this is the actual isolate page about tool use that I was looking for before. Ok. And So what I want is a full example of the tool use that's what I'm looking for. 
+
+Speaker  1:08:42
+I know it's that beta tool, but I would rather if we can. 
+
+Speaker  1:08:49
+Have the full thing so the smallest possible tool using program one tool, one message. So this looks promising. All right, so here we're defining a tool, and then in here we have our tool choice. 
+
+Speaker  1:09:05
+And then we describe that here. So. 
+
+Speaker  1:09:12
+What I'm trying to figure out here is how does it align up the function with the tool, right because here we have a tool and the idea is it's going to call this. 
+
+Speaker  1:09:27
+And it's going to provide that input and then we're going to get that information back oh, right because this is where we would leave the agentic loop, right? And then we would parse it oK, So what we'll do, I'm not a huge fan on how complicated this tool is, but we'll try to write one that is very, very simple. So I'm going to go all the way to the top here, and I'm going to just fix the indentation here i'm going to go ahead and write tools. The reason we're doing this by hand is just so that the information sinks in of course, we could just generate this out, and I just want a very simple tool so I want a tool so this will be a tool that adds 2 numbers together, right very straightforward. 
+
+Speaker  1:10:13
+And then we'll say description. Oh, that's, that is the description. And actually here it should be like use this tool to add 2 numbers together so I'm being prescriptive to say like, hey, make sure you say it this way there's actually a reason for doing it that way. That way it helps it to know how to select the correct tool. I think we've, I know we covered in the Cloud Code Essentials, but we might also cover it in this course. And here I'll just be like add to numbers. This is obviously something that the agent would be capable of doing, so it might make it hard for it to know. 
+
+Speaker  1:10:48
+So maybe what we might rather do instead is like. 
+
+Speaker  1:10:54
+Magic, something like Magic 8 Ball instead, 
+
+Speaker  1:11:01
+When the user asks a yes or no question, 
+
+Speaker  1:11:08
+That is. 
+
+Speaker  1:11:12
+What's the word like. 
+
+Speaker  1:11:15
+Just a no fortune telling question. Call this function, OK. And so it doesn't matter what the input is because we're not really going to process it, but we'll get the idea across here so here, by the way, we have to do this, bring this up like this. And here we need to provide the input schema i'm literally just looking off screen of what is going on here so that we get an idea of it. Input schema. Don't worry, I won't be typing everything by hand but I just figured like early on here that it wouldn't hurt for us to do this. 
+
+Speaker  1:11:54
+And then once we've done this once, we're not going to type code out like this because it'll take forever, right? So say properties can't spell that word here properties. 
+
+Speaker  1:12:08
+And from here. 
+
+Speaker  1:12:13
+We just need question, really. Ok, so we'll have the question here type string and so really it's just feeding in the question. The question actually doesn't matter we're not going to actually use it. And then down below here, we need to have our whether they're required or not so let's say required and this is going to be questioned this looks a lot like pedantic or schema, whatever the schema format is called. 
+
+Speaker  1:12:44
+And so this is looking fine. There we go, common missing there. And I'm just checking if there's anything else that it needs for this nope, that looks like it. And so we have tools and tools choice oK, so we will go back over to here. And in here we have some options i'd rather have the model on the top here. That's just me. And we're going to say tools equals tools and then we're going to have tool choice here we will talk about tool choice later but here we can force it to use it. So it's auto. I don't know what the other one is, if it's. 
+
+Speaker  1:13:28
+Whatever, but we can actually force it to use a tool we'll talk about that later. But we're just explicitly sent to auto. And so now we're putting a question so hey, Claude, 
+
+Speaker  1:13:41
+Will I be a billionaire living on the moon, living on on Mars in 2026 And so the idea there is that it's supposed to help it trigger that. And so we have a single tool here and the idea is that we want to see that tool get called, right? And even here you can see that they are outputting the stop reason on the response, but we will output the entire response, not just the message contents let's just carefully look here. 
+
+Speaker  1:14:17
+Actually the message content is that they just call it response. And so I'm just going to change the response i kind of prefer that as a name response. And then we're going to get a mess of information here. Ok, so and this one says it's not completing, it's not closed we Thomas right here. Is that 1 is that the problem? nope. 
+
+Speaker  1:14:42
+Anyone see? Oh, you know what comma is missing here there we go. 
+
+Speaker  1:14:47
+Ok, now that we are good, let's go ahead and give this a run and see if we get a tool call out here so I'm going to go ahead here and we're going to run the Python dot main and we get information back so we have our message content tool use block Notice there will I be a millionaire magic eyeball so it is calling the message now we can make this a little bit easier to read out. 
+
+Speaker  1:15:17
+If we were to format it. So there's probably a way to pretty print the structure i'm going to go ahead and ask Claude for that. I am printing the response. 
+
+Speaker  1:15:33
+From Anthropic and stop Reason. 
+
+Speaker  1:15:44
+I might already be in that directory main dot Pi. Can I pretty print the response so it's formatted for easy reading? I don't want it to like go ahead and make a whole thing like we have the parser for the agent i just want something that is a. 
+
+Speaker  1:16:08
+Generic pretty print thing. Ruby has it, so Python has to have it. And maybe it might be jumping into Jason yeah, OK, That's exactly what it did so and that's fine that is a method of doing it. Other ones have like actually a pretty print feature, but here it's just going to dump it to Jason, OK and So what we'll do is we will stop that here and we'll go ahead and run this again. So now we actually have something that's readable. Ok, so let's take a look at the code here. 
+
+Speaker  1:16:44
+And so this is the response that's coming back, right and so here will I be a billionaire living on Mars 26 and it figured out that it should call a tool so here we can see it's going to call tool use here and notice at the top level here stop reason tool use. It reasoned that we should call a tool and so it's going over and doing that and notice that it figured out what to extract out to put into the inputs. 
+
+Speaker  1:17:11
+Ok, so that is what is happening there. So now what we need to do is we need to do the next step. Ok, so that's good for the first step the next thing is we want to do something with this, and I'm going to assume that we're going to have to parse it like saying, oh, the tool is this right and they probably have this right in here. 
+
+Speaker  1:17:36
+So we go here. And so they have a run tool function, 
+
+Speaker  1:17:46
+Right so I'm just kind of looking through here to see how they've decided to do it. Here we go so we have create response loop until the cloud stops asking for the tool. And so here is a way of doing it i'm pretty sure this course talks about looping and I'm pretty certain that this is the way that you want it to work. So we will just carefully look here. And so I'm just trying to make our code a little bit easier to work with. So. 
+
+Speaker  1:18:23
+I'm. 
+
+Speaker  1:18:26
+I'm thinking about this so what I'm going to do is paste this here like this. 
+
+Speaker  1:18:33
+And I'm going to see if I can just re factor this out real quickly so I'm going to say def. 
+
+Speaker  1:18:40
+This will be call or send message or invoke i'd rather have invoke here invoke and we'll go ahead and do this. 
+
+Speaker  1:18:56
+And we'll bring this up here. No, I don't know i'm going to leave it alone right now i'm just going to keep it nice and simple. Let's not complicate things. Ok? So what we want this to do is we want this to loop. 
+
+Speaker  1:19:13
+Until it has this but I don't see any external loop here this just says while this loop until Claude stops asking for the tools. Well, where's our loop? 
+
+Speaker  1:19:25
+Oh, this is the loop. Oh, I see oK, so here we have a response that's created. Actually, no, I don't understand what just give me a moment oK, My confusion with this code is that this is a this is a for loop, right? And so here it's returning back a response and so that response structure to me is a Python object. And so at least that's what I think it is. And so it's iterating through this. And The thing is like while they're, oh, as long as there is a tool use continue the loop. 
+
+Speaker  1:19:56
+And if there are no more tools, then stop because there could be more than one tool returned. Ok, so now I understand what's going on. That makes total sense to me. So what we'll do here is we now have our loop here. It's going to iterate through this. 
+
+Speaker  1:20:13
+Dump here until we get that information. And we still want to print out our client here that's fine. I'm just going to indent here so we are on the interior here, OK? And so this is where we want to start processing our results. So they have this block here, which is getting the actual tool use extraction, assuming that that is correct. And then I'm just going to go ahead here say print tool use. 
+
+Speaker  1:20:50
+I think it's that was S. 
+
+Speaker  1:20:58
+What is it S parentheses like that? I don't know what it is. So just like print to use i'll just keep it simple. I'm not trying to remember. 
+
+Speaker  1:21:11
+My Python right now. And from there then we have the results and oh, that's where I run the tool oK, so this is where I want to stop right now oK, so. 
+
+Speaker  1:21:26
+And this is stuff that goes in the loop. There we go. Ok, so here the idea is that it should loop and we should get one tool returned, so we'll go ahead and run that. 
+
+Speaker  1:21:40
+And it's looping forever so I'm just going to stop that there because it's never ending. And I think maybe the reason why is that it might not be processing it. So here, that's why I was confused i'm like, how's this ever going to stop? So this is what I don't understand so I'm going to go ahead and grab this i'm going to go over to Claude and ask them. 
+
+Speaker  1:22:06
+Actually, we'll give it the whole code sample here. 
+
+Speaker  1:22:11
+What will stop the while loop? Because to me, like right away when I looked at it, I was like, what stops it and I thought maybe oh when it hit something that it doesn't have it. So the while stop is when the stop reason is no longer to use this happens when Claude decides it has enough information to get the answer in this specific example, this occurs when Claude has the create answer for. Ok so but if I go to mine here like this. 
+
+Speaker  1:22:40
+So why did mine loop forever? It's like I'm missing something here because you never update the response inside the loop. Oh, OK. So we will go back over the code i did not notice that there, but we'll go all the way down here. Where is it getting updated? 
+
+Speaker  1:23:10
+I don't see. I mean, maybe this, I guess because it's calling it from within it oK so basically what we'll do is we'll keep this a little bit simpler because I think we're a little bit too far ahead of the game here, and their example is not really broken down to be simplified. So I think The thing is that we're going to get the data and we'll ignore this loop thing for now. And I want to go back up and look at our actual data that we had from before i'll just have to run it again to actually get it because I cannot see what's going on. 
+
+Speaker  1:23:42
+And I think we should just process this step by step, OK so we'll go run this again, OK. And so in here in our data structure, I want to get back the fact that this is a type of tool of tool use, OK? And so in the response there is content. And so it's response content tool use, OK? And so here I'm going to say print response content tool use. And then the idea here is that if response content tool use. 
+
+Speaker  1:24:28
+Equals tool use, then we will do this. 
+
+Speaker  1:24:34
+I need a period here, 
+
+Speaker  1:24:38
+Maybe parentheses, I don't know. I'm not the person that normally works in Python. And so the idea is that if we have that, then we would want to run the tool. And so here I'm going to take a look here and see how they are running it so you have run tool name, tool input, and then it says if it equals that, then we'll run that there. And so just to keep ours really, really simple, 
+
+Speaker  1:25:06
+I'm going to go up here and pretend that we already have our function. 
+
+Speaker  1:25:12
+So I'm going to see if I can do that here so we'll just say. 
+
+Speaker  1:25:16
+I don't want to keep getting. I don't know why this keeps drifting do you see my mouse? I don't know what's causing that it's kind of annoying. But we'll go here. There's something, there's obviously something doing it, but we'll go here and say Magic 8 ball, like we'll say tool, Magic 8 ball, 
+
+Speaker  1:25:34
+8 ball eyeball. 
+
+Speaker  1:25:39
+And so this will have the question. 
+
+Speaker  1:25:45
+And then down below here, 
+
+Speaker  1:25:50
+We'll go here and it will be based on the name of the tool. So for theirs do we have the name of the tool Here it is under name, 
+
+Speaker  1:26:07
+Content name, 
+
+Speaker  1:26:13
+Say response content name. The only problem here is notice here that we have this one and then that one, right so you do kind of have to iterate to get to the correct 1 and so probably what we do need. 
+
+Speaker  1:26:31
+Is this line here because then it will return the actual block that we want, right so we will place this here. 
+
+Speaker  1:26:42
+As it is trying to find it. So now we don't really need to check whether there is a tool it's just to see if there exists or not, right so here so if the tool use exists, then call the tool and pass it the. 
+
+Speaker  1:27:04
+Ok. So I might just go ahead and ask it to implement this for me so I'll go back here to Claude. Can you implement hooking up the tool Use call online 46. 
+
+Speaker  1:27:21
+For main dot PY? Please use the simplest solution to hook up the function to the function. Ok, and hopefully it doesn't try to implement the whole thing. 
+
+Speaker  1:27:40
+We'll see yes, sure. 
+
+Speaker  1:27:44
+It's just because I can't remember how to do the if call checking of the thing, like if it's undefined and I just don't feel like doing that. But what I expect to do is have an if. So yeah, that's what I wanted i want a random thing i don't like how to keep something imports in there. And so that is technically correct. Yes, you can edit it and then it should check whether the name matches and then it should call that function. 
+
+Speaker  1:28:07
+And so then we go here. 
+
+Speaker  1:28:14
+So call the tool and send the result. 
+
+Speaker  1:28:20
+And that's the input yes, that is correct and then it's using it as a splat to open it up that is correct. We have our tool results and then here it's doing the follow up and that would be the next step of like how we feed it back in there so this is good. 
+
+Speaker  1:28:41
+Ok, 
+
+Speaker  1:28:46
+Where is it? 
+
+Speaker  1:28:52
+And again, I'm not sure if this is just a problem with. Yeah, there we go i just reopened it there's some weird caching thing that's going on here with Visual Studio Code oK, great. So what do we have? We've grabbed that block of information, we then input the results of that information there. And then we're following back up into this here and we have role, user content, you know, whatever, whatever, and we're chaining it along. Ok, so I want to do a little little refactor so can you refactor the calls to. 
+
+Speaker  1:29:28
+Was it create. 
+
+Speaker  1:29:33
+Into its own function for main dot PY and we're just cleaning up the code a little bit here because it's a little bit hard we should really be tracking the messages here. 
+
+Speaker  1:29:50
+Ok here we go. 
+
+Speaker  1:29:54
+It's calling a follow up request initial request? No I mean OK but shouldn't they? Shouldn't they be a single function and messages are passed in right i don't know why I just created 2 separate functions we're using son of 4 6 here why is it being dumb? 
+
+Speaker  1:30:21
+Ok. 
+
+Speaker  1:30:25
+And so we'll go back up to here. 
+
+Speaker  1:30:33
+And I don't know why it's not showing us the latest, but we'll go ahead and open and close it. 
+
+Speaker  1:30:41
+Here's our create function so here is just passing information in and so we got hey Claude, I want I'm a billionaire. We are passing in the messages here. We are waiting our response. Ok, we get the the the. We iterate through that block until we find tool use and we only expect one right now, which is not a good way to code it, but it's a good way to show this here. Then here we have our tool results. So whatever is coming back here. 
+
+Speaker  1:31:11
+And then notice that we are putting back into here the actual tool results so here we have type tool result like we saw earlier. And then we have a tool use ID so we are bringing back the ID of the tool so it can map it up very easily, so it knows exactly what it's doing. And then the results itself. And then we can follow up and see the next one. And So what we want to see in that follow up is the end result, right? So I'm going to go here i'm going to take this one out because that would actually break our code and I want to re dump this out i'd rather call response toys, to be honest. 
+
+Speaker  1:31:55
+Ok, so now we should have two. So I'll go here. This will be follow up, 
+
+Speaker  1:32:03
+And then this one will be here it will be the. 
+
+Speaker  1:32:08
+Original. Ok, 
+
+Speaker  1:32:12
+And so I'm going to just stop this here we'll type in clear, we'll type in Python main dot PY and we'll go up. And so here is our original and then in our follow up, we are just observing that it ended the turn. Ok. So I know there's a lot of set up here, but we are going to reap the benefits of this code going forward as we are going to iterate through this oK, but there you go, Chow chow. 
+
+Speaker  1:32:44
+All right, let's talk about pre configured decision trees so these are when you hard code the logic and the code decides what happens next. A very simple one be an if else statement so if this then do that, or if you want to have something that's more complex, that would be a state machine where it's saying what the initial state is and you can transition to other States and stuff like that. You might hear the word tool sequence used through Anthropic. And so they're just really talking about a state machine or a series of steps. The thing is that when people were first trying to figure out what an agent looked like, they would implement state machines because that was the way they would set up the complex logic. 
+
+Speaker  1:33:25
+But we don't really consider that to be really agentic as something that's agentic is that goes through an agentic loop where each time the the decision is being made by the agent itself and not by the code so here the decision making is the agent, sorry, is the code. If the code is making the decision, then it's not exactly agentic, now is it? But if the agent is deciding, then it actually is agentic oK, so model driven decision making or basically an actual agentic model is where you you hand clawed a set of tools and a goal and clawed figures out the sequence itself at runtime based on context you don't tell it what to call or when. 
+
+Speaker  1:34:08
+Ok, so an example here would be like you are a helpful system that helps users manage their work work tasks. You have access to the following tools. Now you'll notice that when we did the the stop reason video, we never put in the prompt in the system prompt that these were the tools that were available. So if you're getting into this now and you weren't working with coding these things a few years ago, if you were working with these earlier, then you would have experienced this where you would have to write them in, but the agents or the models got smart enough that you didn't have to do this anymore or maybe there's something in their API they're doing some abstraction for us and we don't actually have to do this anymore. 
+
+Speaker  1:34:48
+But I might just do it as a exercise just so that we have an idea where that code would be. But one reason, the cloud API, we just literally specify these are the tools we have we don't have to literally tell it what tools are available. And so something we're going to hear a lot about is the hub and spoke architecture for setting up a coordinator agent. And so this is where you will have a single agent sitting at the center and it's going to talk out to other sub agents around it and it's going to intercept all communication between it. We will talk about that later but right now I just want to take a look at the the decision making, not for a model, model driven decision making, since we'll figure that out here shortly, but mostly the preconfigured stuff. 
+
+Speaker  1:35:36
+And both options are valid and useful it's just depending on what you're doing, OK. But obviously in this course, Anthropic wants you to be model driven, right because that's what they're trying to sell you on. But I'm telling you that both are useful oK, 
+
+Speaker  1:35:54
+Hey, this is Andrew in this video all I want to do is explore that decision making so I'm going to make a new folder here. We're going to call it decision making. And what I'm going to do is grab our existing code here for this one, and I'm going to make a new one this will be preconfigured. 
+
+Speaker  1:36:14
+We'll say, 
+
+Speaker  1:36:17
+What is it called? Preconfigured code so code, we'll say code driven. That's actually a better word i don't know why they called it preconfigured stuff i swear to goodness, the marketing material is being done by an agent. And so basically what we want to show is not tools in this one we want to just show. 
+
+Speaker  1:36:38
+I guess we could but anyway, I'll go ahead here and we'll ask Claude to, we'll back out for a second because it's in the wrong place. I'm going to go into the top level here and we're just going to ask Claude to change the code so here I'm going to say I want to demonstrate. 
+
+Speaker  1:36:56
+Preconfigured. What do they call it preconfigured decision trees. 
+
+Speaker  1:37:07
+And so where. 
+
+Speaker  1:37:11
+The logic is hard coded handling the information coming back from the LLM, can you adjust my code and remove the tool use OK and so in the decision making code driven file. And so hopefully we will get something that is a good example here, but we will see what we get. So I'm already 91 % up my session i've barely done anything today. People have been complaining about that quite a bit here today but maybe, maybe it will be three PM soon let me take a look here nope so that's OK i don't mind taking a break. 
+
+Speaker  1:37:59
+And so we'll give it a moment here to rework the code. I almost feel like I should just write it by hand cuz sometimes it's slow but here we have something and we will take a look at what we have. Ok, so let's just say yes, sure, there was a lot of stuff in there, so I'm not really sure if I like it, but we'll go ahead and take a look. And I don't know why it's still doing this, but I'll just I'll save this file here whoops, Nope, 
+
+Speaker  1:38:25
+Don't save i don't know what it's trying to do here. There we go. And So what do we have here so we have your customers support classifier classify the user message into exactly one of these categories, billing, technical or general respond with only the category name and nothing else. And so here we have the hard coded decisions handle billing, handle technical, handle general will go down below. And so here you can see it's going to route that information. 
+
+Speaker  1:38:51
+So let's take a look here so I was charged this twice a month can you help? My app keeps crashing after the latest updates. What are your business hours oK, that makes sense. And so here it's going to iterate through the messages Claude classify as category so it's telling Claude, this is actually something that we were told to do really early on with LMS is like have it output as like a like either stretchered output or or something that it can act on. And So what it's going to do is output a very specific category that makes sense, and then it's going to go and route it. So it puts the category and the message in here, and then we go up to here. 
+
+Speaker  1:39:33
+So we have a category in our message and depending on where it goes, it's going to go to these different locations, right so that's a hard coded solution. Let's go ahead and run that. So I'm going to go into decision making and we will type in Python And we'll choose code driven. Ok, we'll run that. And so here we can see some routing let's take a look at what it's done. 
+
+Speaker  1:39:59
+Routing to the billing team, pull account record and check payment status. My app keeps crashing after the latest update. Ok and so we actually have multiple runs here maybe I wasn't paying attention oh, there was 3 and so it ran three different ones and so it's showing us that it went two different places. And so that's the way to route it. You know, like a good example of where you might want to implement this, and maybe this is actually in a good example this is an example that I would use so like imagine you're creating a multi user dungeon text adventure game and you have very specific logic that you want to play out, but you want to have some flexibility. 
+
+Speaker  1:40:34
+This is where you can get a trade off where you have this logical structure that keeps the game working in a very particular way where you're not worried about things hallucinating and you're not consuming lots of tokens because you're expecting it to handle a lot of the in state logic where the logic or the state is being handled by the code. And so that would be a good use case for that. Ok, there might be better use cases that are more practical, but that's what I can think of off the top of my head. 
+
+Speaker  1:40:59
+Let's go over here and I'm going to make a different one, and this one is going to be model driven dot PY. The only thing that we didn't see there was the specification of tool use and so we're going to go ahead here and copy this and I'm going to paste this into here. 
+
+Speaker  1:41:19
+And I'm going to go back a directory i'm going to type in Claude here and here i want to say I want to, I want to demonstrate model driven decision making. 
+
+Speaker  1:41:36
+I want to. 
+
+Speaker  1:41:39
+Can you modify the code for model driven. You can change. 
+
+Speaker  1:41:51
+The tooling to meet a simple example that shows the model is driving decision. Can you show in the system prompt. 
+
+Speaker  1:42:07
+The tools defined? 
+
+Speaker  1:42:12
+I know a Claude doesn't need it. 
+
+Speaker  1:42:17
+It's showing for demonstration of where it used to go. Ok and so we'll go ahead and let it do that it's going to keep complaining about that that's totally fine i actually do have some overages so I like paid for some credit so it's probably fine if I hit 100 % here, it's not a big deal. And so you, you know, we're going to hope that we have a bit of rewrite. Also things like I don't know if my wife's using Claude, like sometimes my computer's open she doesn't know the difference between chat CPT and Claude she just uses what's ever there. 
+
+Speaker  1:42:49
+And so maybe she's she's consuming my credits right now, who knows? But you know, what we're trying to see is that loop, right and so we'll give it a moment here to output it. Ok, All right and we will just say let Yep, I thought it was done editing, but I guess not we'll give it a moment here. Oh, it is done oK, great. 
+
+Speaker  1:43:13
+Is it done? You're talking a lot oK Oh, I think it just ran it maybe did it run it? No, it's just saying what we will see so system prompt added yeah, we'll just read it together and I'll just close this out there seems to be some kind of weird caching issue here. So we have our tools implemented up here and I think it's just following the pattern that I implemented so it's not necessarily that this is the way you have to do it, but I think it's taking cues from our original code here. 
+
+Speaker  1:43:38
+And then it's just calling here i really don't like constants, but that's fine that's what it does. And then it's expanding out. Ok, so this is a reference to these functions. And then this is the actual schema of those functions and what they'll take in here. So we have check inventory, place order, send notifications, and then we have our system prompt, right and normally what we would see here, it didn't do it, but normally we would literally see the name of the tool be like send notifications, right it would literally tell you the exact name of it like this and do that. But anyway, in our prompt here, we have, you are an inventory management assistant, tools to check stock and place orders, send notifications when handling requests, always verify inventory available before ordering. 
+
+Speaker  1:44:23
+And so basically see these descriptions here. Usually what would happen is they would get picked up over here so the agent would know about these and that's how it would reason. And so that's probably why we don't need to have these here. Ok? Use your tool step by step in the order which calls that. 
+
+Speaker  1:44:40
+The order in which you call them matters sure i don't like the fact that it changed the model on me because I don't want to consume more credits. I'm going to change this back to this, OK, And. 
+
+Speaker  1:44:59
+We'll do that one thing I might do here is I might just create a Claude MD, 
+
+Speaker  1:45:07
+Say please use Haiku model. So our costs are low for API usage and I'm hoping that that way this will get picked up and so it won't do that in the future here. But let's take a look at what we have. So we solve our create function and grab our messages so I need 5 units of widget, a check if they're available, place the order if so right? And then here we have our loop. 
+
+Speaker  1:45:37
+Ok so while true, is that a good loop? I don't know about that. I think the the tool use loop was a little bit better. But here if it if it ever becomes false within the loop then it would stop i'm not sure where that break would occur. Probably at these points like break that might return the false. 
+
+Speaker  1:46:01
+So I would say the code here is not great, but that's OK We'll leave it alone for now because I think we actually have slides that addresses where that might be an issue. But the point is, is that the idea is that it's going to loop through this and it should call. 
+
+Speaker  1:46:19
+The create multiple times so here it calls it with one step and it's going to iterate over that over and over again and if it needs to use, it's going to stop and do that. Ok, so we'll stop this here and we'll CD into decision making into our model driven code here. 
+
+Speaker  1:46:40
+Oh, we don't we don't have to CD into it so we have to write it, run it oK and so we'll go ahead and do that and it's off to the races. So stop reason to use, stop reason to use and we can see that it's doing it and figuring it out in turn and then we have the completion of it. So yeah, the only part of the code that I think that it's probably not great is this wall true loop. 
+
+Speaker  1:47:01
+Ok, I think we might have better logic here, but we'll see as we work through this course and we might come back to this code and improve it. But there you go. 
+
+Speaker  1:47:14
+Let's look at some anti patterns that Anthropic wants you to know about when you are designing I guess your loop basically. So the first thing is that when you are going to decide that the loop is over, you do not want to just parse natural language to say like looking for an indicator from the text that it is complete. What you want to do is check on the stop reason for enter and that makes sense because the output for the text could be anything or The thing is that maybe these words test complete have something to do not with it being complete, but just in general the text so there's a lot of points of failure that can happen with parsing natural text specifically for stopping the loop. 
+
+Speaker  1:47:57
+And obviously they have a a very specific structure like stop reason and so that's going to be a lot more reliable and give you a better indicator and not be thrown off by the text content. That doesn't mean that you cannot use text and to use regular expressions that includes to make decisions on information, though those are brittle. But when we're talking about stopping the loop, we want to use stop reason oK. Another thing is that you can set an iteration number to cap as as a means to prevent from this overusing. Remember in the last fall along when we were going through that while loop, we just had a true statement on it so basically, if it never hit a false, it could go forever and so you might think, well, let's put an iteration on that, and that would partially help the problem but what if it needed to stop sooner, right because now you're consuming 10 iterations as opposed to if it only needed one or two or three. 
+
+Speaker  1:48:54
+And so we can still use the Max iteration, but we are also going to use that stop reason and then we're going to provide it that break to break out of that loop on so that is a another combination method of stuff that we're doing you're probably noticing a pattern here, which is use stop reason and turn oK. Another one is maybe you think, OK, well, if I get text back right, then surely it must be done it's not calling tools. But that is not necessarily the case, OK, because that structure can return back text in both cases or maybe it might not in some cases. So again, we are using stop reason and turn to determine it so you know, the the text could be a misleader using natural language could be a misleader, using iterations could be a misleader. 
+
+Speaker  1:49:44
+And yeah, we just want to make sure we do stop reason and turn, OK? 
+
+Speaker  1:49:53
+Ok, folks, let's make this a quick one what I want to do is improve our little loop here. And so I'm just going to go ahead and make a new folder as per usual i can just commit whatever I had before here. Great commit message. So my team will love that message there. And we'll just say end loop, end loop correctly oK, So I'll call that and what I'm going to do is go into our decision making one, because that's where we actually have are a nice little loop here i'm going to go ahead and copy that code, model driven, model driven decision making and notice how much we are reusing our code it's great a we'll go ahead and type in main dot pie. 
+
+Speaker  1:50:34
+We'll paste this in. And so the main thing we want to change is the loop here so here we have a while true, it's counting steps, which is fine. But here there's nothing that's going to prevent it from stopping. Now we do have end turn here we have our break so this is the thing that's going to break out and end the turn, OK. And so here the only thing I don't see is like what happens if it gets to the end i think at the end it would just return a false if there was nothing else to loop, I would imagine. 
+
+Speaker  1:51:12
+So that's the only indicator that I have here so I'm going to go ahead and just we'll go back a level here and we'll tell it to adjust this particular file so end loop. 
+
+Speaker  1:51:26
+Main dot PY. We use a while loop, but I would like to. 
+
+Speaker  1:51:36
+Have a Max iteration of 10 so we set an external var. Ok. Is there any other case where the end loop might not end? I won't even put that in there that'll be fine. And so we'll go ahead and we'll do that. And so that should be enough to fix it. I really should have moved that to Haiku i'm using Sonet 4 6 for simple coding tasks like that. I think Haiku could handle yeah, there does that max iterations. I don't like constants. If you're a good programmer, you don't. 
+
+Speaker  1:52:12
+But stuff like that, I feel like people in the developers or sorry, the, the, the data space might have done that because the practice wasn't coding, but more handling data and so you see that kind of amateurish coding methods in my, my opinion for this language. If we're talking about C plus plus different story those folks are champions over there, but we'll go over to here and that's it. So I don't think I need to test this it's pretty straightforward. 
+
+Speaker  1:52:40
+So I just wanted to show that we updated our code and what we would have done in that case and just to point out that break and I'm still like, well, is there still a little edge case and we could waste the tokens i just don't want to waste the tokens oK, 
+
+Speaker  1:52:57
+Let's take a look at hub and spoke architecture so hub and spoke architecture is a pattern where one coordinator agent sits at the center and all sub agents talk to the coordinator i highlighted that word coordinator because you're going to be seeing a lot of coordinator agent and when you think of like clawed, clawed code, I have a feeling that this is at least one of the means, at least when you're working with sub agents for communication, right so this is going to be something really, really useful to learn. It's going to be really fun and something that you can apply like immediately oK, so sub agents never have direct lines to each other so if you have like a research agent over here, it cannot directly talk the review review agent it has to go through the coordinator. 
+
+Speaker  1:53:43
+And so that is pretty clear. And the coordinator is going to own the routing so it's going to decide how to route things, context sharing so what will be shared so the research agent is not going to be aware of what everyone's doing unless the coordinator passes that information along and it gets injected so it really won't know. And any kind of air handling, any kind of observability, any anything like that. Ok. And obviously that would make it really good for observability because now everything's passing to there and we have a choke point where we can check and collect information, right? And so here we have kind of the task life cycle of like, OK, we have something that needs to be done and how is it going to get executed out so the role of that coordinator is task decomposition so break, break the task into subtasks, right? Then we have test delegation so who is going to be working on that problem? Result aggregation so bring it all back together to produce a final result and decide which sub agents to invoke based on query complexity so you know, we have a lot of things going on here, but let's just kind of walk through it. 
+
+Speaker  1:54:54
+So imagine you are a coordinator and when given a task, it'll breakdown subtasks for each of the available tools and we're saying do not do the work yourself so we're basically here defining, you know that you are coordinator and this is what you're going to be doing. Ok. And then here it's like your coordinator and use your judgement simple factual questions use a single agent, multi step tasks delegate out to a sequential, passing the results forward, independent subtasks delegate in parallel. 
+
+Speaker  1:55:21
+So we're basically defining, OK, what does the routing look like so it's not just like static routing it's, you know, use the routing you need to route based on the use case, right? Which I think is really, really interesting. And then down below here, it's like, OK, you've gotten all the outputs from multiple agents, combine them into a single coherent response, resolve any conflicts and make the data pretty. So that's the most basic thing when we're talking about this coordinator agent, there's a lot of stuff we have to consider when implementing this, but we will go and set up a super skeleton one really quick quickly here and then we will iterate on it oK, 
+
+Speaker  1:56:03
+Ok, folks so what I want to do in this fall along is implement a very simple coordinator agent so we'll say coordinator agent, simple or basic. And in here we will make a new main dot pi and I suppose that we could. 
+
+Speaker  1:56:28
+Pull up some code i'm going to see if we can switch over to Haiku. 
+
+Speaker  1:56:33
+And save some credits here because it might be able to do it. We'll see. Haiku, There we go. So now it's switched over to Haiku 4 5 model. And so I'm going to tell it create. 
+
+Speaker  1:56:49
+A very basic coordinator agent. 
+
+Speaker  1:56:54
+In coordinator basic main dot pie. Please follow our general. 
+
+Speaker  1:57:07
+Coding example would be. 
+
+Speaker  1:57:12
+What was when we did decision making would probably be 1 model driven, mile driven dot pipe and so I'm hoping that by giving it that reference, it will know how to reference that stuff and produce something that's going to be generally OK. But we'll see how Haiku does i really should run Haiku a lot more i just kind of stick at Sonnet and that's my, that's my fault there, right? And so we will give it a bit of time here, let it accept here and then we will decide whether Haiku could even do it or not. And does it have all the components we need? And there it is that's pretty darn fast. 
+
+Speaker  1:57:43
+Maybe it needs a little bit more work to do, but we have the start of it let's close out the tab here sometimes it helps to close out the tab and reopen it. For whatever reason, it's already done so here it says I've created a basic coordinator. We have create task, get task status, complete task, task list. And so we have the basic stuff let's take a look here and see if it's any good. 
+
+Speaker  1:58:05
+So we have tool implementation so tool create task, task status and so it's talking about how it has to manage the tasks generically, right? Then down below here, Yep so we have that. Create a task with an optional list of task IDs. Get the current status of the specific task, mark it as complete list all tasks as completed. So it seems like it's pretty simple your role is to manage and coordinate tasks. Well, a coordinator does that in general but I guess The thing is like this is literally, it sounds like it's managing tasks. Create tasks as needed for the workflow check this task status and dependencies, Complete tasks when appropriate. So what I'm trying to figure out here is what is the use case so set up a let's go down here for a second so we have user message so set up a workflow, create a task design and then create a task implementation that depends on design and then complete design task first this is so generic it's really hard to make sense of it. 
+
+Speaker  1:59:05
+We have our while loop here it brought in the while true so we don't have that Max iteration. 
+
+Speaker  1:59:13
+It might not be a major issue, but we still might want that in there i probably should have referenced the other code and mm, hmm. 
+
+Speaker  1:59:24
+So just carefully looking here and what we have. So we have our tools over here. And so I'm not really sure if that really fits our pattern exactly i'm going to go take a look at our diagram here what we have, we have decompose the routing and the aggregation, right so. 
+
+Speaker  1:59:49
+I don't think I see all those steps here. Ok, So what I'm going to do is I'm going to go back to our smarter model here, sonnet, OK? And I'm going to go and ask the coordinator or I'm going to ask it to improve our coordinator code. So you know, for a coordinator agent. 
+
+Speaker  2:00:11
+We should have decomposition tasks. 
+
+Speaker  2:00:17
+Just a moment here. 
+
+Speaker  2:00:26
+Routing it says assess complexity, but we have routing, 
+
+Speaker  2:00:33
+We'll say assess complexity, 
+
+Speaker  2:00:38
+Complexity and routing and aggregate results. The use case here is. 
+
+Speaker  2:00:48
+Two generic need a better use case. Ok, and so we'll go ahead and we'll see if it can improve that code. And if not, I might have to write an even more detailed prompt. I'm just kind of low on our usage unless the window has rolled over. Let me take a look here. Nope, I still got 50 minutes for my time to roll over over here, but we'll see. And so I just want to kind of see it mimic these patterns here and so it's not to say that it's not exactly doing it, but it's definitely not that sophisticated, right? 
+
+Speaker  2:01:29
+Because I would expect there to be a prompt for the routing component here i'm not seeing it here, right? It does say set up a workflow so technically that is that that right there. So maybe maybe it is kind of being implemented, but we'll give it a second here. Now I'll rewrite a concrete use case, technical due diligence, decompose the complex software review. Oh, I don't like that. 
+
+Speaker  2:01:52
+No, I'm going to stop this for a second here stop, stop, stop, stop. I, I don't like the use case. 
+
+Speaker  2:02:01
+Oh, it already stopped basically. 
+
+Speaker  2:02:06
+So this is breaks the request into five fixed areas. We already got the code I guess, let's just take a look here. 
+
+Speaker  2:02:18
+So here it says a user submits a software system for technical review. The coordinator has a decompose of requests, assesses the complexity prioria routes and and does that, runs an appropriate handler, aggregates all finds into a single report. So that sounds good. We have tool decompose requests tool assess complexity. 
+
+Speaker  2:02:44
+I don't really like the use case because I want something that's going to be easy for us to validate and test and this will be too complicated. I don't like the use case. Can you propose to me 10 possible use cases? I want something that is not super complex, that will be like super computational. 
+
+Speaker  2:03:10
+But would need complex routing and choices. 
+
+Speaker  2:03:17
+Don't implement, just suggest ideas oK and so I want to see if we can pick something a bit better if it can't then I might have to decide on myself here here. So job application Screener, 
+
+Speaker  2:03:32
+Event planning coordinator, bug triage, restaurant or customizer. 
+
+Speaker  2:03:41
+I mean, I like the travel one i'm going to have to go to the Internet i don't necessarily want to do that. 
+
+Speaker  2:03:55
+Ok, so like with Denver, what would be the sub tasks, the sub agents used because that's what I'm trying to figure out this comes back to, you know, this idea where we have an idea and it's doing a bunch of stuff, right? So like coder, writer, researcher, planner data, right so I'm trying to see what we have. And so we go over to here. And so we have request decomposer so takes the job posting resume, extracts it out, 
+
+Speaker  2:04:28
+Looks at each criteria and decides the routing OK execute execution phase, The actual routing targets. 
+
+Speaker  2:04:41
+Aggregation phase. So it has two different ones here. So I guess my question is like is the ownership. 
+
+Speaker  2:04:52
+I mean like should the coordinator be routing to a decomposer and. 
+
+Speaker  2:05:05
+Router routing because I thought the composer is supposed to own it. 
+
+Speaker  2:05:14
+In a hub and spoke architecture. And so that's the only thing I'm just making sure like maybe these are just tools and it's calling out to them and so it still has ownership so you're right, in a proper hub and spoke architecture, the coordinators, the hub, it owns it the decomposer isn't a separate sub agent that's why the coordinator owns its responsibility. So we have that sure, that looks like something. So the coordinator decomposes, assess complexity, decides routing, aggregates, the spokes just execute. This smells like something belonging to the coordinator versus sub agent does it need a full pitcher? 
+
+Speaker  2:05:47
+Does it need the full pitcher to do the its job decomposition is always routing, always needs the full pitcher. 
+
+Speaker  2:05:56
+I don't I don't. I don't know what you mean by full pitcher, 
+
+Speaker  2:06:03
+But we are implementing. 
+
+Speaker  2:06:07
+Hub and spoke model. 
+
+Speaker  2:06:11
+Architecture. Ok, So I don't know what's trying to say there, but maybe means like things have that context you're right. Ok, So since you're right oh, yeah, of course I'm always right. Receives the request, calls spokes, aggregates the results, independent workers, each job does one no knowledge of each other that's right. Ok, So for job app application Screener, now we have keyword scanner, deep evaluation, red flag detector, score aggregator takes all the spoke spoke outputs. The coordinator owns calling each spoke with the right input, deciding which spoke to call, collecting and combining their outputs. Yes, OK. And so now we're getting something there. 
+
+Speaker  2:06:51
+Just because it said it did, it does not mean it did. And this is me looking at going, that doesn't seem right, right? And so we will let it go ahead and do that i'm not getting any more warning so this is now using Extra Credits, so I am over my usage, but I should be OK. 
+
+Speaker  2:07:11
+You'd be surprised how long or how far five, 5$ will take it here. Ok, so it says it's completed the architecture here. Let's go take a look and check out the code. So now we've got lots of stuff here oK, so keyword scanner prompt you are a resume keyword scanner check whether required skills from the job posting appear explicitly in the resume for each required skill output one line be literal do not infer or extrapolate. Report only what is explicitly stated oK, and so then we basically have all the ones here and they're fine. Of course, if we're doing this for real, we would be tweaking this all by hand of course. 
+
+Speaker  2:07:51
+Then here we have the actual, I guess they're saying the spokes. We could say sub agents if you would, or they have them called as spokes and each of them are individually calling this stuff i'm not sure why they're doing it this way it seems like this could be easily re factor this seems a little bit messy maybe they're doing this so that you could improve it later on but to me this seems like this should all be just one function. And then we have the spoke aggregator where there actually is a little bit different so they do have that there, which is fine. 
+
+Speaker  2:08:24
+Then we have our dispatch tool. Ok, so basically like where should it go we have, yeah, whether it should go there or not, tool schema, So what the coordinator hub sees. 
+
+Speaker  2:08:39
+So we have run keyword scanner. Oh, like these are the actual tools deciding whether they should get triggered or not that's fine. Then we have our coordinator prompt so you are a job application screening coordinator that's fine your job is to orchestrate 3 independent screening agents. 
+
+Speaker  2:08:58
+Your job is to orchestrate the three independent screening agents and then aggregate the results. You may run 3 screening agents in order. Do not skip any of them and so here it's defining that saying you have an explicit order and so obviously there could be more complex routing than this, but this is all there is. Then we'll go down to here. And so here we have our job postings i was going to wonder where this data was because I was going to be like, is there a are the resumes generated here and they do so we have our job posting, then we have our resume and we only have a single resume, which is fine. 
+
+Speaker  2:09:32
+Alex Chen That's interesting. Ok, so we go down here and we're passing that data in. It's going through that loop. Again, we have this while true so I'm not sure if that's the best idea to have that while true like there, but I will run it and. 
+
+Speaker  2:09:50
+Take the risk. I think it's fine. 
+
+Speaker  2:09:56
+You know what I do want a Max iteration so I'm going to go here and just say like. 
+
+Speaker  2:10:02
+The while loop is true. Do you think we should have a Max iteration or any other suggestions? So it doesn't go. 
+
+Speaker  2:10:19
+On forever. And so that's what I want it to answer there we have the Max it might just do the Max iteration because now I've basically told it to do that. So here it says a while true loop with no exit condition i mean, there is an exit condition it's the break right here. And then we have a timeout for this use case. So a Max steps caps is the right fit that's what it's suggesting. 
+
+Speaker  2:10:51
+Fair enough. 
+
+Speaker  2:10:57
+How's it counting the Max steps? 
+
+Speaker  2:11:02
+So the loop only executes only when the condition becomes false max steps and not when and not when the brake is hit? So it clearly catches runaway loops without needing an extra flag oK, that's fine. The cap is 10 double the expected 5 steps give the model room to retry. I just don't see where it's counting them. Oh, I guess it's right here. Oh sure, I I guess so but I mean that's the same thing as a Max iteration. So. 
+
+Speaker  2:11:33
+Max steps is the same as Max iteration. I guess it's fine. I mean, I'm sure it will still work so if it doesn't, we'll find out and again, you know, you can just watch and see what my outcome is before you do this if you do not want to waste credits because I've made a poor decision, you know, like I'm loading my thing up with like 5$ at a time so I'm, I'm not that worried about small losses like that so we'll go ahead and go into here and let's go ahead and execute this. 
+
+Speaker  2:12:12
+And yeah, I'm not using my subscription. Now we could probably port this over to Agent SDK and this would be greatly simplified we might do that later to see what's happening here, but we'll do it right away. So here it says coordinator routes to the spoke. Ok, so it's found stuff something's missing coordinator routes to the run, a deep evaluator, a strong alignment with the senior level role with seven years of total experience cool, strong fit coordinator routes to the red flag detector. Imagine someone just coded this and this is what's keeping people out of their jobs that that would be a bummer. And then we have Step 2 of 10 so match keywords strong, no flags, decision higher alex demonstrates strong alignment with senior level requirements Coordinator for final recommendation for hire so it's recommending it 6 out of the seven strong, no red flags, all core required skills present, seven years experience, whatever, whatever. 
+
+Speaker  2:13:13
+And so we just implemented our own coordinator. Again, the only thing that's really simple, like I still not confident about the while loop, but the only thing that is very simple is the routing but the routing obviously is being handled here. And so, you know, like in that diagram, it just seems like it's a separate step, like you cut them up and then you do that. And so I'm not sure if that should be separated out but the point is we did implement coordinator agent and that's something we could decide later on if we wanted to have an individual step for more intelligent routing. 
+
+Speaker  2:13:45
+So that's the only thing that I might consider like I, I would probably ask it right now, like if it should be ran twice, but I'm, I don't know, I don't want to, because I don't think it's going to just tell me i think it's going to actually try to do it and so I don't want to muck with it and so I'd say that's fine, but just consider that that's an uncertainty that I have right now and then so I'm going to go back a director here i'll just say git at all Git commit hyphen M basic coordinator. 
+
+Speaker  2:14:12
+I know it's kind of fun. I thought the results were pretty good. Ok, and I will see you in the next one oK, Chow chow. 
+
+Speaker  2:14:27
+Ok, let's take a look at narrow task decomposition so when Claude decomposes the task, it can only delegate what it thinks to ask for. Ok, so here we have an example where it says, give me a comprehensive analysis of the EV market. Break the user's task into subtasks and delegate them out. And so here we see the subtasks we have research EV sales figures, research EV battery technology, research major EV manufacturers. So if the initial decomposition is too narrow, entire topics never get researched. 
+
+Speaker  2:15:00
+It's because each sub agent only sees its its its own isolated context. None of them can flag what's missing. So what got missed? Charging infrastructure, Government policies and subsidies? Second hand EV markets consumer sentiment and adoption barriers? Supply chains like lithium and cobalt? Grid capacity implications? Ok so you need to be very specific on the task so it fully covers what you expect so here it says, give me a comprehensive analysis of the EV market again. And so as the coordinator when decomposing the task, of course, we're generating out the the subtasks, but ask yourself, you know, more information, ask subtasks to cover those gaps only then begin delegating and for research tasks specifically, consider this information. 
+
+Speaker  2:15:49
+Now, what's interesting here is like we created our our job application thing, but this thing is talking about research so they might, they might have just a single sub agent that just does research. And so the idea is that all these tasks are going to the same sub agent as maybe separate instances that are spawned and they're being tasked with doing different things and so this is where you have a little bit more complex routing, right, or different kinds of routing. And so one thing that we can do to catch weak decomposition is because like, let's say for whatever reason in here, this coordinator that you wrote here to help it be very specific, it fails or you just don't do a good job, then you could implement a tool. 
+
+Speaker  2:16:36
+And so the tool can try to catch it because now when the court or when the agent goes and does a task, it's going to say, oh, did you submit a subtask breakdown for review for delegating? Well, then trigger this tool and then make sure right here that you do this stuff and this gives you a guarantee you know of this or maybe you want to be a little more flexible what the input is from the user. 
+
+Speaker  2:17:00
+And so this thing being decoupled might do that. Another way that you can fix this problem is it the aggregate level so after you're aggregating the results, it can check here and say, hey, did you make sure before writing the answer that you met these things and so you now have basically two different safeguards for improving over narrow task decomposition. So I'm not sure if this will work in the one that we're building right now or we'll have to build a new little coordinator, but we'll go and try it out oK, 
+
+Speaker  2:17:38
+All right, so we are back and what we'll do here is we'll try to figure out this narrow task decomposition i don't know if it's going to work for our case because for research it's a really good use case, but will it be for this one i don't know so I'm going to go ahead and just copy all this code here because we already have something that's good and Claude's going to have an easier time working with tweaking that now we're going to have an easier time working off of this. 
+
+Speaker  2:18:07
+So let's go down to where the main coordinator prompt is. So here it says your job application screening coordinator, your job is to orchestrate 3 independent screening agents and the aggregate their results run all three screening agents keywords deep evaluators detector so let's go ahead and just ask it. Ok so we'll go here, we'll say for our narrow task accomption, main for our coordinator prompt is the decomposition, 
+
+Speaker  2:18:52
+Is our task decomposition too narrow? And what do we need to ask for better decomposition? 
+
+Speaker  2:19:08
+Ok because this one's pretty darn simple, right it's just like there's these three things. Feed it into those three things because it's not conducting research, right? It's not going out and looking at large bodies of tax and trying to figure it out. So, you know, maybe if there was like more than one source, then that would be useful. And so maybe that's what we might recommend here in just a moment i might say, hey, like, you know, assume that you're ingesting more than one source of information and that might be a better example, but let's see what it comes back with here and then I'll tell you whether I agree with it or not. Just because it will produce something doesn't mean that it's useful. 
+
+Speaker  2:19:42
+So we will find out here oK. Also, I was just thinking about this what we should have done is just taken the coordinator information and provided it to here with the basic information because I feel like it's consuming a lot more tokens than it should require. I mean, it's not saying there's that many here, but it is taking some time here and I, again, I'll just wait, but I should have really just extracted out that individual information. So let's take a look here and Oh yeah, we can edit the main file that's fine yeah, I thought it was done. 
+
+Speaker  2:20:10
+I guess it's not done. Ok, so let's take a look at the problem here. Spokes are narrowly scoped, but appropriately interpretive that's actually reasonable but if you're designing new coordinators. Well, I'm not designing new coordinators, but we'll take a look here spokes answers what is X python found but without access to the resume. 
+
+Speaker  2:20:39
+Spokes answers, what does X mean for the hire receives pre interpreted signals and can make the integrated judgement. So I guess we're trying to determine like, is it fine so what to ask so so is it narrow so is skill explicit does experience demonstrate the skills X required? So if it's narrow saying like, is it just listed or is it actually telling us so that would be better that's true. Narrow resume only and so this is what I was talking about where we would have more than one type of information feed but here it's saying it feed in the resume and the job posting for the fit context what granule granularity so 1 spoke per keyword, 1 spoke per decision dimension, whatever so this file runs both the coordinator of the same candidate. 
+
+Speaker  2:21:33
+So you can see how the narrow decomposition loses the 50 million requests per day nuance while the better one catches it. Ok, so we'll go back up to here i'm just trying to make clear the this thing that we're looking at so narrow anti pattern. What is X? Python found six years, three no gaps that's probably like how actually recruitment people work. The aggregator receives new facts it still has to do all the reasoning, but now without access to the resume. 
+
+Speaker  2:22:03
+So spokes answers, what does X mean for the higher strong trajectory risk oK so one thing I was thinking of was like you need to cross coordinate this information, right? So I would say, you know one thing, one thing I noticed is, you know, can we validate the number of years. 
+
+Speaker  2:22:28
+Based on based on the resume information? Can we mock other data sources that that we would feed in where if we didn't do better task decomposition with very specific things to check, we would run into an issue Because that's, I think what's going to take it but like, that was one example of like, OK, well, you know, if you had to validate how many years someone had experience, you'd look at their resume, but you might also look at projects or references or other stuff and so let's just see if we can, you know, consider other data sources. Maybe we should just run the EV one because research is a really a really good one but I mean, in the sense like we are researching if there are multiple things like maybe they have blog posts and stuff like that. 
+
+Speaker  2:23:22
+But we'll we'll see what comes back here and I might make sense suggestions for data sources oK, 
+
+Speaker  2:23:29
+All right, it is back let's see what it's done so we'll go up to here. Key addition so show activity since 2018 from a git profile. You'll see all all assessed skills are above seeing your threshold. Verify 7 6 years experience. 
+
+Speaker  2:23:46
+Ok I mean did it run it again i didn't tell it to run it but I guess what we should do is just take a look at what the new coordinator information is. Your job is to coordinate 3 independent screening agents and then aggregate the results. I mean, this isn't this is showing steps, which is fine, but we're not seeing it doesn't seem to understand what I'm trying to tell it. 
+
+Speaker  2:24:12
+Ok, so no, I don't think it understands. So what I'll do, just give me a second here. I need to give it an example and I just need to extract out i'm going to give it a better example here. And we're just going to I have my screenshot i just don't have the raw data and so I'm just going to chat GBT or something here off screen and be like, get me, get me the text, 
+
+Speaker  2:24:38
+Ok? And just give me just a moment here, just getting the text here off screen see so getting the text and I'm going to feed it as an example of like more information. 
+
+Speaker  2:24:56
+Ok, so like. 
+
+Speaker  2:24:59
+We'll go back here. 
+
+Speaker  2:25:04
+So, you know, I don't think you understood. 
+
+Speaker  2:25:10
+To improve narrow task decomposition, 
+
+Speaker  2:25:17
+We should be giving it specific considerations. 
+
+Speaker  2:25:27
+Ok. Oh no, I didn't say to do that yet oK, we'll paste that in as an example, right so I don't know if it knows that's an example, but I think it might know. 
+
+Speaker  2:25:43
+So hopefully it understands because we're talking about this, this area here. And if this fails, then we could just again just make it they might even try to change it to EV but we'll see what happens here and wait a moment and see what it comes back with. Ok, so. 
+
+Speaker  2:26:03
+Some of your examples general through the Now, did it change it to EV stuff or is it actually changing it to a better part here so let's take a look here. So what did it change? 
+
+Speaker  2:26:18
+Let's take a look here so here's what changed the domain EV. No, I didn't want you to change the domain. I just wanted you to use that as an example of specific task decomposition. Ok, so there it's already kind of messed up and I had a feeling that it would do that because it literally did not put EG or stuff in there. And maybe it's just that what we're trying to do does not work for our use case, right maybe but it like I, I still think it is because you are doing research, you're collecting information and, and gathering it, but we're just assuming that we already have these things and doing analysis on that information. 
+
+Speaker  2:26:55
+But you know, when you're doing broad research and there's a lot of information, then it can do do more there so revert the domain name, but we'll do self reflection structure into the hiring coordinator. So we'll take a look at what it has and maybe we still will do the EV example separately. 
+
+Speaker  2:27:15
+I mean, it still has these in here so I'm not sure what it was saying. So don't say because I'm not trying to change that right now. 
+
+Speaker  2:27:23
+Yeah so like, you are a research coordinator and I don't know, this is the way that throbbing makes money where you tell it something and it doesn't do the right thing and it's making more stuff here, but we'll wait a little bit oK, All right, so it's back and so we say, OK, back to the original domain, right in the pattern what changed neuro coordinator mirrors the agent basic tells the model exactly the three checks, fix the pipeline no self reflection. 
+
+Speaker  2:27:48
+But that's not what I want better coordination, same domain, same spokes, general initial screening angles what am I missing fill the gaps and you know, I think I think it's struggling here let's go back down here so we'll go and take a look here again. Well, here is the Norton narrow coordinator so it says here screen the the candidate by running the following checks. And then down below here we have better coordinator so generate an initial list of screening angles. 
+
+Speaker  2:28:14
+Ask yourself what perspective stakeholders or dimensions are missing add screening angles to cover those gaps only then begin delegating to screening agent tool for hiring decisions specifically consider technical skills and soft skills, hard requirements, what candidate has done and etcetera. After all screening angles are covered, synthesize report here so now I would imagine that it's basically just hitting a single agent. Yes, it is. And so before we had those separated out tasks, right? But just as I thought it's like in order to do it, 
+
+Speaker  2:28:52
+The idea is that you say you're you're a screening agent and then you are contextualizing each one of it so in a sense, each of these are basically turning that into a specialized, A specialized one as before, we literally had three separated 1 out, right so that I think that's what we're getting at. So that is what we want that's actually good. So we'll go all the way down here and what we'll do is we'll go it says both the screen agent is identical, both the only variable is the coordinator prompt so with a hiring specific checklist of what the coordinator routinely looks for. 
+
+Speaker  2:29:23
+So let's go ahead and run that i believe that's going to give us a better result oK, so we'll go here, we'll say Python main dot PY we'll run it. 
+
+Speaker  2:29:36
+And so here it's going through it so. 
+
+Speaker  2:29:42
+And we're seeing the numbered values of what it's checking for. 
+
+Speaker  2:29:48
+Ok. Does the resume demonstrate all the required skills does the candidate experience depth? Are there any red flags? 
+
+Speaker  2:30:00
+Has some rails experienced the limited. 
+
+Speaker  2:30:05
+In the 5-8 senior range, no employment gaps or job hopping detected, the career directory is logical etcetera. And so we have that there. This is the narrow one, right so fixed checklist, no gap check oK, so let's go down to the more complex 1. 
+
+Speaker  2:30:25
+So we'll go down to this one. So now we have way more information so instead of those 3 individualized things, and remember those were three separate things before, now we have these. I just want to compare the old one quickly here because I just can't fully remember if we go here. Yeah, I notice that we have 3 individualized prompts. And even with the narrow one, I guess it's still only passing it through those 3 and so that's interesting but anyway, so here does the candidate demonstrate mastery of etcetera oK, so we go down here and I guess we can't really see the individualized results so that'll be something you might want to do is like output all of them and then save them and then save the generated final one to exactly see what it is. 
+
+Speaker  2:31:13
+So core stack match is excellent oK, risk and gaps questions for interviews, final, final recommendation now we have a maybe Alex is qualified candidate, but has some gaps for a true senior role higher if your team values this passive whatever bottom line, Alex is a strong back end engineer and then we have coverage. And so it's way better in terms of its information. But really to test this, you'd actually have to, you know, create sample data, right and test it and then and then adjust and say, hey, look, this is not how I would have judged it, right, based on that information. 
+
+Speaker  2:31:48
+But this is the example that we wanted but really that works when, you know, there's a generic research agent and then these individualized things are going in and kind of helping to specialize that research agent for its task. But yeah, that was cool. 
+
+Speaker  2:32:07
+All right let's talk about dynamic selection so the idea here is that when you have your coordinator and you have sub agents, you might find that if you run the entire pipeline for every single possible spoke in a sequence that you are consuming as much as you can and so with your coordinator, you probably want to tell it to think about what kind of passing it needs or what kind of routing it should have and give it ideas of kind of routing that it can perform under certain circumstances so that it's doing exactly what it needs to do. Even here it's saying like, you know, only invoke it if it makes sense and a way we can catch that problem so if we have a a poorly designed dynamic selection system, you can set up a tool just like how we talked about with the narrow task decomposition you could set up a tool that says, hey, did you do a good job here you can do the same thing with the tool as well. 
+
+Speaker  2:33:04
+And I mean it's really going to depend depend on what you're doing, but that's something that, you know, we'll want to consider oK, 
+
+Speaker  2:33:15
+Hey folks, we are back and we are going to try to do some dynamic selection so, you know, for ours, our, our job application, basically we are taking in information from, from one thing, but basically it's just checking everything and so, you know, the question is like, can we even think of any kind of select dynamic selection that would be need to be performed for a job application because I feel like it would be more if you were to ask certain questions to the agent along with this coordinator, then that's where I would want to choose different types of pathing and so I'm not exactly sure we'll let it help us think of an idea, but I do want to remind folks that we are just doing this to learn if you are doing this for real, write these things by hand yourself, use your brain. 
+
+Speaker  2:34:06
+That's how you can get the best result. Garbage in means garbage out so just because this thing works doesn't mean that this is well designed we're just going through this to learn these concepts, right oK, I'm not saying that this is the best. But anyway, we'll go ahead here and make a new folder. This one will be called dynamic selection, OK, And I'm going to go ahead and make a new main dot PY file and I'm going to go ahead and select this code. 
+
+Speaker  2:34:38
+And we're going to copy this and we'll paste this into here. And so I need to give it a concrete example of what we're talking about for dynamic selection. If I do not have my text here, I put it in there, I'm going to get Chachi BT to extract it out just how we did with the narrow neural 1 so just ask it to, you know, extract out the text for me here i'm just doing this off screen here because I need to give it a practical example and try to describe what we're doing here i'm going to CD back a couple and we'll open that up. 
+
+Speaker  2:35:13
+And so we'll go here and just say, you know, I want to implement dynamic dynamic selection for my. 
+
+Speaker  2:35:28
+Coordinator. 
+
+Speaker  2:35:33
+So that it's not running the entire pipeline, but trying to choose the best things to run based on use case. 
+
+Speaker  2:35:46
+Here is an example of good dynamic selection where we have different pipelines, OK, you can use to help you, OK. And the other thing is like edit the dynamic selection main dot PY file. Ok, so it's going to go off and do that and we'll see what it comes back with hopefully something that is useful but you know, if we don't kind of guy didn't say like these are the use cases, you know, I'd be surprised if it doesn't come back with anything good but we will try here just for learning purposes oK, all right, let's come back with something let's take a look at what we have. 
+
+Speaker  2:36:33
+So dynamic coordinator, we saw that Nero coordinator in there we should really remove that out of there because it probably is confusing. We now have like 3 coordinators. I don't want to have three, so we'll go here i'm just going to tell like look, I, I only need a single coordinator prompt, so I will, I'm being lazy here if we don't need the other ones, we can just delete them out, right we have this narrow 1, so we know this one is not something we want, so we'll take that out. 
+
+Speaker  2:37:14
+Then audits the gaps before delegating specific domains. And then here we have the dynamic 1, so we'll take this one out. Ok, look at that we wasted no tokens. There's no reason we can't do that we don't have to prompt everything. Then we'll go down here and take a look so this coordinator reads the roles, then decides which dimensions actually matter. So routing the logic so strong technical match or whatever, whatever let's take a look and see what we have. So routing guidance, adapt to what you observe, don't apply mechanically so simple factual match, skip keyword scan, go to straight to this non traditional background transfer skills. All this is cool i like this. 
+
+Speaker  2:37:55
+Never invoke a screening agent unless it's answers a real question. So I think that actually worked out perfectly. That's a great example of of that and so we'll go ahead here and I'm just going to go and run it so we'll CD into dynamic selection. This has actually been quite fun. Is it useful i don't know, depends on what you're building. And Oh yeah, we don't have the narrow coordinator so I'll go here just make sure narrow coordinator. I want to get rid of these other ones i don't want to waste all that here. 
+
+Speaker  2:38:30
+And so I'm just going to go back a step and just say it should be fine let's just do that i didn't realize there's more to RIP out i think it'll still work though. This is all three coordinators there's only one though, right because I ripped them out. So here it says describe the most complex screen angles delegated. 
+
+Speaker  2:38:58
+Ok and the only, the only way to really know if this is different. 
+
+Speaker  2:39:05
+What happened here? 
+
+Speaker  2:39:08
+We have narrow QS, so we still have some of that remaining remaining code there so it's just some of this stuff. And so I'll go ahead and try that again. 
+
+Speaker  2:39:20
+I'm not sure if that will work if it's just a single item, but I'm hoping that it does. 
+
+Speaker  2:39:26
+But here, you know, my best guess is that it's choosing exactly what it needs because we go back up to here. That's what it looks like it's doing. 
+
+Speaker  2:39:40
+Oh my goodness so I'm going to go back a directory here because this is very frustrating. 
+
+Speaker  2:39:48
+Remove the better. I only have a single coordinator, but I removed some of the other code because I only really need a single coordinator here. Can you fix fix the code? You know, what's funny is that sometimes, like I will type things and every single letter will be wrong and it still knows what I'm saying because it like it does the off shift, which I think is really cool. As someone that's dyslexic, as long as it understands me, I, I love that. 
+
+Speaker  2:40:25
+Yeah and so I'm just asking to clean it up i just want to make sure it's in a working state before we move on here. All right, so it thinks it's cleaned it up we'll go in to here again. 
+
+Speaker  2:40:37
+And we'll run this again. 
+
+Speaker  2:40:41
+So screening angles detected. What I'm trying to determine when it runs here is like, how is it selecting stuff so in your current role at the fintech, what is the scale of your system that you worked on? You transition from this have you designed or refactored it? So what it looks like it's doing is it's actually generating out possible angles based on this information. And so it's literally creating dynamic routing on the fly so it's not like here is a list that we had before here, but literally like here are things that you can check and then choose what you want to put in here so it's not always applying the same thing. 
+
+Speaker  2:41:17
+Then we'll go back up to here. It's still conditional maybe, but yeah, we're getting something that is. It's again very interesting to see this play out again. You know, we don't know if it's actually useful, but it's fun to see the system working and there you go oK, 
+
+Speaker  2:41:39
+Let's take a look at partitioning research so if you give 3 research agents the same brief, you get 3 overlapping answers and wasted token so you're trying to paralyze things, right, and say research CV market, research CV market and they're all doing the same thing. That's going to be nonsense, right? So carve up the scope so each agent owns a distinct slice. And so here we are seeing partition information where we are creating structure data and we're providing detailed information like topic cover, excluded, things like that and providing that information there. And as per usual, we can create a tool that would check and make sure that we're dividing the research scope into non overlapping assignments before delegation. 
+
+Speaker  2:42:22
+What's really interesting here is that it's making a structure and I mean, you know, in the last thing that we did, technically it is already kind of assembling its own way of doing stuff but I suppose what we could do is we could generate out into partitions in this sense and make sure that it's even more detailed in terms of what it's covering as an intermediate step to make sure that it's not doing the exact same thing but this one's more focused on very specific things that it's researching. 
+
+Speaker  2:42:50
+But yeah, the question is like, does our current one, even if it's not the exact same one, is it having overlapping tasks because that's what we don't know. And so maybe putting a structure structure, a structure with partitions might help, but we'll have to experiment, OK? 
+
+Speaker  2:43:10
+Ok, so let's see if we can implement partitioning in here. So what I'm going to do is make a new folder here called research partitioning partitioning. And we'll go ahead and make ourselves another new main dot PY file we're having lots of fun here and so we'll grab this wasn't this one this is the last one we worked on, right? Going to grab this here, copy it and go all the way down and oh wait, no, no, this one's empty here we go. Ok, so now we are back with our dynamic 1 so here we have off screen here i just told it to extract it out, right and I'm going to just say here like, you know, I want to make sure I want to make sure my research. 
+
+Speaker  2:44:06
+What are they called? 
+
+Speaker  2:44:09
+What did they call them here? My research agent agents aren't wasting credits tokens by having and time by having overlapping tasks. And so I would like to have another step where we have partitions. 
+
+Speaker  2:44:40
+And I mean like The thing is like you could manually make this up, but I'd rather this generated out so it makes it easier for us so we have partitions. Have a step where we generate out partitions based on a Jason structure and then we can determine if there is. If they are truly not doing the same task. Make sure to print out the structure so the human can see it on the run of the coordinator agent. 
+
+Speaker  2:45:22
+Update the research partitioning main dot pie and here is an example of partitioning. 
+
+Speaker  2:45:37
+From a different use case. 
+
+Speaker  2:45:41
+Ok. And so I'm going to copy this over, bring it on over here, right? And I'm hoping that this will work, right? But I mean, like this would also just be like a static way, like if you were just statically building a research agent that this would be a means to what you could do it and you don't have to delegate so much out to the agent, if you will. But then now we're kind of relying more on code driven logic but you can mix them by the way, we didn't, we didn't mention that but you can take a hybrid approach where some of it is the coordinator and some of it is code driven there's nothing wrong with it there's no rules here, folks. 
+
+Speaker  2:46:20
+There's no 100 % that it's what you want to do, right? And so we will see if it can come up with something here and then we will review that code oK, OK, let's take a look and see what it thinks it's doing here so narrow, we still got this language like narrow versus better i probably should get that out of there. 
+
+Speaker  2:46:46
+I really should be taking this out so that it's not getting as complicated here. So screening agent prompt, you are a specialist hiring analysts you will be given specific screening questions about a candidate. Answer the questions two to three focus sentences, be concrete and specific. So really changed it in this case. Oh no, no, this is fine this is still the same. Runs a specialized agent, calls once for screening, etcetera, etcetera. 
+
+Speaker  2:47:18
+I don't want oh, I do not want multiple agents look, I don't want more, more than one coordinator. We don't need the narrow coordinator, OK? And so it's just because we copied it and I had some of the code still lying around, and that's what's. Oh, no, no, no, no, no, no, no, no, no, no, no. I just realized I was editing the wrong file. Ok? So I went back there and I'm going to make sure I didn't muck that one up. 
+
+Speaker  2:47:52
+Yeah, I don't want to muck with this one. 
+
+Speaker  2:47:57
+Oh, now I don't know. 
+
+Speaker  2:48:01
+Did I break it good. 
+
+Speaker  2:48:12
+I think I can just go ahead here and discard the changes i think it'll be fine. Ok, so we'll go over to here this is the one we actually wanted and so it still has that logic in here, which is kind of a problem, but I we'll see if it actually is an issue because we only have one, right and I'm just going to remove i just don't want to get confused and I. 
+
+Speaker  2:48:36
+Don't want to explain any of that here, So I'm just going to take that out. So let's take a look here says for both coordinators so spoke system prompts i'm just going to take that out. It keeps talking about like. 
+
+Speaker  2:48:50
+Ok. 
+
+Speaker  2:48:54
+And now let's take a look here so you are a partitioning a screen partitioning planner given a job posting resume output a Jason array of non overlapping screen partitions. Each partition object must have an agent, a scope, rules, design partitions so that together they cover all relevant hiring questions no two partitions may shared the same cover aspect, only partitions that are generally needed for this candidate. I feel like we lost information here. 
+
+Speaker  2:49:29
+We have oh, this is the planner part OK, so this is actually a separate part OK, so that just generates the partition all right. And then down below, here we have the actual dynamic coordinator so you're here invoke exactly 1 screen partition call per partition, no more or less formulate the questions for each cell. Do not invent additional screening angles beyond the partitions provided. They were designed to cover all relevant dimensions without overlap. And so I mean, like that's another way where it's just specifying it in a different way, but I guess it's generating out the partitions. 
+
+Speaker  2:50:04
+So in the other one, we literally listed out possible things and here it's generating them out. Oh, here it is. 
+
+Speaker  2:50:15
+Is this good? Because before we had a list, right so we go back over to our, we'll just split this for a second and we go back to our dynamic selection here, 
+
+Speaker  2:50:31
+Right and so here we had this, but we lost our routing guidance. 
+
+Speaker  2:50:39
+So this is what I'm going to ask. 
+
+Speaker  2:50:43
+I'm going to resume the last conversation we had i'm going to make this a bit larger here. 
+
+Speaker  2:50:59
+No, so doesn't, we don't have it anymore, unfortunately or maybe I ran into a subfolder that's my problem so I'm going to go here and ask it like we have. We have a dynamic. What is it that we have we have a. 
+
+Speaker  2:51:17
+Research partition so that we don't have overlapping researchers doing the same thing. 
+
+Speaker  2:51:26
+Did we lose selective routing based on task and do we need to bring that back in while preserving. 
+
+Speaker  2:51:44
+Our partitioning? Ok. And so I'm going to go point to dynamic selection. 
+
+Speaker  2:51:55
+Has the original prompt that had routing. And then here we have research Partitioning. 
+
+Speaker  2:52:08
+Is our new prompt with partitioning, but the routing was removed. And so how would it know to do routing like do like, how would it know to choose the appropriate dynamic selection, OK. And so that's where I think there's a bit of an issue. Ok, because sure, like we now it will generate out that structure and things, but how does it know to drive what to generate? Because it doesn't say that, right. And so Diane both selects the angles matters and delegates it has routing that skips beyond the scan and strong matches now owns the selection step, but it has no routing rules it just generates non overlapping partitions well, guidance which on which one will skip. 
+
+Speaker  2:53:08
+And so here, 
+
+Speaker  2:53:14
+Ok, I'm. 
+
+Speaker  2:53:20
+Going to hit tab here. Ok, You are moving it back in, but are you thinking about how it will work or are you just dumping it back in? 
+
+Speaker  2:53:34
+Ok, 
+
+Speaker  2:53:38
+Because I could have done that. That doesn't mean that's a smart approach and maybe that's all we need to do, but let's take a look and see what it comes up with. I'm telling you, these things aren't smart folks. You got to think for it. So here we go fairpoint, let me think about it so we have partitioning that sees the resume and then the dynamic coordinator which sees the partitions. Where does the routing actually live now so dynamic selection, the coordinator was doing two of one things, deciding what to check and calling agents. And the research partitioning now splits routing, purchasing plowder planner's job and then the coordinator's job so the routing rules do belong to the partitioning planner, but they need to be reframed in the original 1 it says never invoked rules and less here we should say only create partition if the rules govern partition creation. 
+
+Speaker  2:54:26
+The coordinator in the new architecture should say as is it's correct to be done selection because the decision was already made upstream giving it routing logic again we create a conflict of two places fighting over what gets evaluated. The partition planner currently says only include the partition genuinely needed. That's vague adding a specific heuristic routing. I mean, like I would have thought, and you might agree with me, is that in the dynamic coordinator we had that list. But The thing is, it's like it was saying like, OK, if you do this, then then do this or do that but maybe the the problem was that when we looked at the EV research, it literally had pipelines where in this dynamic router, it just had things that you could choose from that you might want to consider, OK, but it wouldn't run them all. 
+
+Speaker  2:55:15
+So here it says we receive a set of pre planning partitions as Jason invoke exactly 1 screening agent. 
+
+Speaker  2:55:27
+Ok, well, let's just see what we get. Ok, I'm not sure if I like it, but we're trying here, right? And we'll go main dot pi, we'll run it. 
+
+Speaker  2:55:43
+And see what happens. So we have we have core stack proficiency. 
+
+Speaker  2:55:58
+Assess REST API capabilities. Ok, so we have here core sacrifices. Evaluate mastery required technologies directly matching the job stack. 
+
+Speaker  2:56:12
+Access REST API design capabilities, evaluate exposure to scaling patterns and nice to have technologies Confirm senior level experience. 
+
+Speaker  2:56:27
+And then here we have screening angles delegated does the candidate demonstrate mastery of required stuff? 
+
+Speaker  2:56:34
+Ok. 
+
+Speaker  2:56:38
+And here we're getting partials so we have a maybe recommendation alex is qualified to mid to senior. 
+
+Speaker  2:56:46
+And we have different coverage so I still don't know this is better i mean, like we should be dumping all these logs out and then comparing them and then and doing stuff so obviously we're just trying to meet the requirements of learning this stuff and kind of having a sense of it. But it is it good is it is another question that will take more time and I'm going to keep repeating that because I just want you to know, just because we're doing it doesn't mean it's great. And you should be thinking about like, OK, if I had these three four different, ways you, know determine usage, determine outcomes, have your examples, don't have them for you here, that 'd be a lot of work for me to set up for you but no, it's interesting trying to try out these techniques and apply them oK. 
+
+Speaker  2:57:30
+Let's take a look at a refinement loop so the idea right now is that everything's been one shot the idea is it goes through it, it produces an evaluation, and then then it's over but what if we could feed it back in the loop and refine it until we are happy with it and that's the idea behind refinement loop to make our research system really, really good. 
+
+Speaker  2:57:48
+So if you look at this prompt here for our coordinator, the idea here is that we are telling it that we can have up to maximum for refinement iterations and that we are going to redelegate the information back into here and so you'll notice here we have like an evaluation coverage and when to submit final and creating the synthesis and things like that and so we will go ahead and try to apply refinement loop to our our agent, OK. 
+
+Speaker  2:58:24
+Hey, folks, it's Andrew in this video, we're going to implement our own refinement loop. So what we'll do, as per usual, I'm going to go ahead and make a new folder. This will be my refinement loop. Ok? And then what we're going to do is we're going to go ahead. Let's just grab our code here, main dot PY. We're going to go grab our last one, which was research partitioning because we're building off of it every single time trying to make this thing a little bit better and we are going to implement the refinement loop. 
+
+Speaker  2:58:55
+I need to extract the text out because again I I don't have it on on hand, but let me go grab it from that slide oK, there we go i grabbed it and if you want to grab it too, all you got to do is take a screenshot feed it to Claude or chat GPT and extract it out folks, because you can you can make sure you do that oK, it's not hard just build up those skills oK, so I'm going to go ahead here and just CD out here we're going to go into our claw and you know, I need to implement a refinement loop. 
+
+Speaker  2:59:32
+In my agent for research partitioning main. Here is a example. 
+
+Speaker  2:59:44
+From another use case you can use as inspiration, as guidance. Ok, so I'm going to paste that in there. And so the idea though, is that with that information, I'm hoping that it can develop that refinement loop in here so we will see what it produces oK, All right, so in here we have changes let's take a look and well, it's still trying to edit stuff, so yes. 
+
+Speaker  3:00:15
+Let's see what we have, OK so it is bringing in evaluate coverage, OK so we have that submit final so it's setting different states based on whether you know higher maybe or pass only call this when the evaluation confirms sufficient coverage and final recommendation so we have that in our loop. Here it is adding the evaluation agent, OK. And we have some tweaks here so we have initial screening invoke exactly 1 screening agent call per partition, 
+
+Speaker  3:00:52
+Formulate each question, that's fine phase two, evaluate coverage after all initial partitions agents have reported, call evaluation coverage with plain text. Then here we have refinement Max reiterations if the evaluation coverage returns sufficient falls, invoke screening agents to fill only identified gaps, call submit final, etcetera, etcetera do not call the submit file before evaluation if it's only once oK, so here it's obviously done a lot. I'm kind of curious to think like maybe it's just like you're brute forcing to make it either that you really want this person or you really don't want this person. It'd be interesting to have a larger data set like let's say 100 applicants and you ran it through and to see if it just skewed it to one location or or one side or not. 
+
+Speaker  3:01:35
+But it would be very interesting to find out but we'll go back up to here and so we can see the changes and let's go and run this thing. Notice as we are progressing, it's becoming easier and easier for us to update our agent and so far we've been just using the Anthropic SDK, not using the Agent SDK the Agent SDK is awesome, but we will just continue on here it'd be interesting to convert it over and see what the code looks like and we'll probably do that, but let's go ahead and do Python main dot PY and we'll go ahead and run that. 
+
+Speaker  3:02:10
+And the idea it's going to run it says dynamic coordinator obviously it's the refinement one we don't change those names. And so here reads candidates first, routes to the relevant checks only. So evaluate depth access to database caching, verify API, confirm senior level experience and is the candidate senior level oK, great so now we're going into iteration 1, OK, so we have coverage score code quality practices and no evidence etcetera, etcetera. And so it is going again here. 
+
+Speaker  3:02:46
+Asking questions. They are, I think there are different questions. It's hard to because we have the this up here, right and then down below, oh, look, the the coverage score is going down now interesting. 
+
+Speaker  3:03:04
+And so we are done and over with. We'll go and look up here so did 2 iterations and their score went down. So yeah, that's iteration loop. Is that good? I don't know it takes a lot of work to evaluate this stuff. We would spend hours, hours upon hours tweaking this to figure out is this valuable information, is our data set good, etcetera, etcetera. There's no magic here, folks. We can code these out very quickly, but to make sure they actually work good as a different story, I'm going to keep repeating that because it's true, but that is what the refinement look refinement loop looks like oK. 
+
+Speaker  3:03:55
+Hey folks, we are back and I'm going to make a new folder and this will be coordinator observability, because the idea here is that our coordinator should act as an observable layer. And so I want to make sure that it actually is doing that so let's go back here and we'll go into, well, we'll type Claude here, right? And we already have the refinement loop over here so I'm going to go ahead and grab all this code. Ok, I'm going to grab all this code and we'll make a new file called main dot PY you're starting to get the pattern here. What we're doing right? Very repetitive, but it really is good in iteration. So what I want to figure out is do we actually have those values? Is the coordinator acting like a coordinator so I'm. 
+
+Speaker  3:04:46
+Just thinking about this for a second so what we want to do? So we're going to say I have an agent, a coordinator agent here so we'll say coordinator observability. 
+
+Speaker  3:05:05
+Here i'm going to put this into plan mode. Here are the questions I have is my coordinator operating from observability level. 
+
+Speaker  3:05:18
+Observability And. 
+
+Speaker  3:05:23
+I'm trying to think what like and controlling, controlling flow of information, you know, is it managing, you know, like is it I'm trying to think of it here. I have a coordinator agent right Here are the questions I have is my coordinator operating, operating from operating with an observability layer. 
+
+Speaker  3:05:47
+So we can capture. 
+
+Speaker  3:05:51
+Any errors, all messages that that that are being sent to our spokes sub agents? 
+
+Speaker  3:06:02
+Is it controlling context and what is passed to my. 
+
+Speaker  3:06:12
+Spokes and only those sub agents. 
+
+Speaker  3:06:20
+And talk to the coordinator, 
+
+Speaker  3:06:27
+Right? 
+
+Speaker  3:06:30
+Is there something I am missing. 
+
+Speaker  3:06:34
+To make my coordinator. 
+
+Speaker  3:06:39
+Like a coordinate coordinator, right? That's what we want to know and we'll go ahead and hit plan there you're thinking well, you know, you're just writing whatever out, but that's that's the fine problem you can't make perfect prompts here, folks. I mean, you can make better prompts yourself and spend time engineering them but this is good enough to start getting some information so let's see what it comes back with. And I'd be curious to layer something here there so I'm just curious what we can do to make our observability better. But we will wait for that generation, OK, OK, so let's take a look and see what it thinks. 
+
+Speaker  3:07:16
+So we're all the way to the top here so the user's coordinator uses a partition based hub spoke pattern for job screening they want to know does it have proper observability does it capture all messages spoke does it control context pass the spokes is is the spoke coordinator communication isolated and what is missing to be a good coordinator? So it says observability is weak i absolutely agree we haven't done anything for it. Could we do something better than just Oh yes, it's only print statements i agree with that error handling anywhere it's adjacent loads yeah that makes sense aPI level tracing, no token counts, no latency, no request IDs Yeah token counts would be really useful. 
+
+Speaker  3:07:53
+No persistent audit trail of all output and if there are more SD out, we have message capture partial, so delegate a list we are printing some stuff right because I told it to do that but tracks questions sent to spokes spoke responses are never stored they go straight into the tool results and are lost out of the coordinator no record of partition, each question addressed X. No log of coordinators own reasoning texts between tool calls. 
+
+Speaker  3:08:21
+Every spoke receives the full job posting. And so saying context control, loose resume regardless of its partition. I mean it would need it anyway right like all of them need it, so we're not really giving them separate data regardless of its partition scope. So cover exclude is only advisory only passed by Jason to the coordinator prompt, but not enforced at the spoke level of the coordinator. Could ask any question. No mechanism validates the question stays within the assigned partition. 
+
+Speaker  3:08:55
+Fair enough. Spoke isolation one Direction, One Direction law enforced the spokes are stateless functions called by the coordinator. No cross, no cross spoke communication so that's good. But spokes have no awareness of their assigned partitions they can't reject out of scope questions oh that's actually a good good point. No, only these folks can talk to coordinator mechanism it's just a single plane 1. So where are gaps? Can't debug or audit the run silent crashes on failures can't replay or inspect what's wrong coordinator doesn't know if all dimensions are covered mid run. Recommendation may be issued before all angles are addressed spokes are all data, even if relevant, all partitions even if some obviously relevant a single pass cannot fill gaps during it. 
+
+Speaker  3:09:39
+And also our data like if Really if we may want to make this better, we would be sending like different payloads of different information to specific research agents but right now everyone's getting the same job posting. So here they have recommended fixes so structured logging with time stamp levels. That seems good. That's fine sure and it's going to log that out error handling so wrap the Jason load, generate the partition, persist spoke inputs, outputs extend beyond the tracking, add coverage evaluation tool, add explicit gates, force the coordinator to call submit final. 
+
+Speaker  3:10:15
+And so these are fine. 
+
+Speaker  3:10:20
+The only challenge here is I don't i feel like there's a lot of tasks here so I'm just going to go here and say there is a lot of of work here. I am concerned you will not be able to remember all the tasks. Can you create this plan in a read me with a task checklist And can you check off the tasks as you complete them? Ok. And so the goal there is to help it out a bit. That's not exactly spectrum from development but the only thing is like, if we really wanted this to drive and be really good, we would want something that would clear context each time. 
+
+Speaker  3:11:06
+But we're not set up that way i'm not here to roll a a small spec driven development little thing for us here so that's totally fine and. 
+
+Speaker  3:11:17
+Read me with tasks and checklist. As long as it knows where it's doing that, that's fine but where's it going to put that file? You know, I'm just going to trust that it can do it. Let's go ahead and let her RIP, OK. And so the idea again here is to improve observability and we will see how that goes. Another thing is like, I would imagine that if you were to put this into production, you want to productionize it you might want to contain these sub agents into containers and then you might want to use Otel as another observability layer. 
+
+Speaker  3:11:50
+That's how I'm kind of thinking about it. But we're keeping it all monolith for now and we're not going to overly complicate it at this stage. And I'm going to let it go and burn away all my credits look at that 6 2000 credits. Wow, let's go over here it's like the worst time to do this. People are like there's on Twitter, they're like, oh, it's down and the usages are gone and stuff like that it's me. 
+
+Speaker  3:12:12
+It's me i'm the, I'm the problem. So we go over here and right off the bat, like we are well, resets in 9 minutes so that's really good but we're only 33 % well, let's burn, burn, burn baby. Though my week is, is getting up to use very quickly there. But anyway, 
+
+Speaker  3:12:32
+Oh yeah, it's, it's going up. So yeah, we're going to consume tokens like it's nobody's business. But I think it'll be worth it for this stage of the thing as we are continually refining it oK, So that was fast i feel like it should have take longer than that all six fix fixes are implemented i mean I would rather it have been more granular and clearing contacts between it so that we would have, you know, better stuff that's fine so is my coordinator operating with observability? No, it had only print statements etcetera, etcetera what was I missing error handling, mid run gap detection, no exit gate. 
+
+Speaker  3:13:06
+And I'm not even saying like this is the best, but you know, it's pretty good for us throwing things here together let's see if we can see what I mean it probably just tell us what code changes were made. I suppose that's the easiest way to check. And I'm just going to go all the way up here let's take a look here so we've added logging, OK? And we are implementing the logger here it says scope to each partition partition agent name is the names of the question belongs to from the partition Jason. Ok so it's being very particular to make sure that it's scoped That's good. 
+
+Speaker  3:13:45
+Evaluate coverage so mid run gap detection tool evaluate whether the screening findings are efficient to make a confident recommendation, 
+
+Speaker  3:13:54
+Confident that all partitions agents have reported return a coverage score etcetera, etcetera. Ok, submit final explicit exit gate. Submit the final hiring recommendation only this call this only after evaluate coverage fair enough. So we'll go down below here. 
+
+Speaker  3:14:14
+Fix error handling. So here we have. 
+
+Speaker  3:14:22
+Here's down the air handling down here below. Fair enough. That's very basic that's not really that important. And then we have the screening agent. So we are seeing, 
+
+Speaker  3:14:36
+Oh, to scope it in the boundary, right so making sure that it's scoped. Fair enough. Here we have rule changes. And so it's about passing that information and it's talking about that evaluation coverage in the final recommendation, 
+
+Speaker  3:14:54
+Ok. And then we got logs logs. 
+
+Speaker  3:15:04
+And more logic now this thing is pretty wild. I would probably want to take it farther, refactor it, but I don't really want to. Like this is just, this is a mess like this is not how you should have your code base. But I don't want to go overboard at this stage i just want to make sure that this works. Ok, So what we're going to do, because I'm expecting logging to appear, right? 
+
+Speaker  3:15:31
+And so I would probably say like we could just run it. But the other challenge would be like, we need actual ways to test that this stuff works so probably what would have been better, but it would have taken a lot like this would have took an hour or two and you folks don't want to wait around that long to test that but what I would have done if we had the time and you wanted to go through it, what I would do is I would stage examples and, and, and I would want to see if like we could pollute, pollute the context between agents and make sure that it is only receiving proper questions and it rejects it and those would be things that we test for. 
+
+Speaker  3:16:08
+So we really are skipping a lot of that stuff and that stuff that you would still have to do. But just because I'm not doing it here doesn't mean that I wouldn't do it. It's just I'm not doing it because you folks don't like when I make like two three hour videos, even though that's the actual effort for the work and I can't really just, you know, fake that along, right so we'll go ahead and we'll run that i think it's all observability wrong, which is fine. And So what I'm interested in is do we get any logging? Where's our logging i don't see it. 
+
+Speaker  3:16:38
+Ok. I mean, it's just going to St out so it's not logging to anywhere in particular, 
+
+Speaker  3:16:50
+Which is fine. So I, you know, I'd probably just have it logged like into in a log directory and that's the thing that might be missing here. 
+
+Speaker  3:17:05
+Ok and. 
+
+Speaker  3:17:09
+I'm just going to wait for it to oh, there we go, there it's done. And so we have our final information. Did it call that final evaluation step? 
+
+Speaker  3:17:18
+Yeah, final recommendation there it is. So there you go that's all it took to improve it definitely better than what we had before. But yeah, I would probably want to re factor this so that's like, you shouldn't have one big dumb file like this. And so we might do that in a separate video, especially if we want to convert it over to the Agent SDK to compare. 
+
+Speaker  3:17:40
+That might be something we might want to do oK, But yeah, now we've added observability. 
+
+Speaker  3:17:49
+Hey, this is Andrew in this video, we're going to look at how to handle errors when we have multiple agents being coordinated. And it's interesting because they have this later in Five Point three, but we covered about subagent stuff earlier so I'm not sure why they like we have subagent failure recovery here where we have this example. So maybe what we'll do is just go ahead and say make a new folder, we'll say coordinator failure handling. And so I'm going to go ahead and find that folder here. We'll go ahead and say main dot PY and we'll go back down to our one where it was with the subagent, this one here. 
+
+Speaker  3:18:35
+Ok, we'll go ahead and copy this and we'll go all the way up to this one and then we'll take a look at what we have. So what is it that this agent is doing as I don't remember this is is errors and so it's about checking for inventory, placing an order tool notifications. And So what we want to do is go plan dot MD and so coordinator error handle, error handle handling. 
+
+Speaker  3:19:10
+Test OK, so we want to turn our sub agent into a coordinator with multiple sub agents. 
+
+Speaker  3:19:22
+The goal is to demonstrate error handling by subagents, so we should have at least three different subagents. 
+
+Speaker  3:19:40
+Our goal is to do the following. 
+
+Speaker  3:19:46
+Return back structured error context, EG failure type. 
+
+Speaker  3:19:56
+Attempts. 
+
+Speaker  3:20:02
+Approaches. 
+
+Speaker  3:20:07
+Be clear about the well, I mean like it says, distinguish between access failures, invalid empty requests i think like the type would indicate that so that's kind of redundant here. We don't want generic errors so avoid avoid generic errors says whilst while silently suppressing errors or terminating. 
+
+Speaker  3:20:34
+Why Silently suppressing errors or terminating entire workflows and single failures are both anti patterns for obvious reasons because that would be bad, you know, Returning structured error context including failure type when attempted and partial results distinguishing access failed for valid empty ones. Having a sub agent implement local recovery for transit failures we already have that technically structuring synthesis output with coverage annotation indicating which findings are well supported versus which ones i'm not sure what they're trying to ask for that. 
+
+Speaker  3:21:04
+So I would say like we have a lot of this, but basically we're just doing this. So what we'll do is go ahead here, I'm just going to save this file, we'll open up cloud and I'm going to say main implement my plan. There we go and off to the races it goes we'll be back here in just a moment. So you can see like as we're reading through this, like some of this is just fluff. And so we need to really identify what it is that we're trying to solve for. 
+
+Speaker  3:21:32
+But we'll be back here in just a moment oK all right so it's back and it's done a bunch of work so it says beta tool decorator function, replace the Jason tools, make tools, factory creates tool closures. Oh, what the heck is this? This isn't sound, right maybe I'm in the wrong context. Oh, here's our problem so we are we are not in the correct location whatsoever. 
+
+Speaker  3:21:58
+And I have just mucked up my last one here so let me just give this a refresh i'm going to have to undo that one Second here, 
+
+Speaker  3:22:12
+Last one here. 
+
+Speaker  3:22:16
+Sorry can you undo the changes? 
+
+Speaker  3:22:21
+I'm in the wrong folder. 
+
+Speaker  3:22:25
+Ok, so I'll just undo those changes and then I'll go to the correct folder just be back here in just a moment oK, All right, so I was able to divert the changes and I just have to go into the correct directory, which is coordinator, coordinator fail, failure handling. We'll go ahead and do this. I'm getting a little bit tired of low quality code here, so I'm going to go over to Opus and we are on X high i don't want to be on XI so we'll go effort and we'll switch this over to high. They keep changing it on us here you've got to be very careful when you're using it because it's just like for usage otherwise you burn out on stuff really quickly so please implement plan dot MD, OK, and we'll wait for it oK, All right, so let's take a look here. 
+
+Speaker  3:23:09
+So end to end works the coordinator delegates to all three sub agents each return structure adjacent report notification sub agent recovered from the permissions error. What was implemented 3 sub agents so inventory, inventory agent, order agent, a notification agent. I'm not saying that we should be breaking them up like this, but it's just for our example as these are obviously very simple tool calls. Coordinator delegates each via the tool calls. We have structured error context, OK, no generic errors, so which we already had before demonstrate recovery so the notification sub agent hits a permission error on the executive team and recovers it so it's still sticking to our original 1 when we utilize this if you remember this use case and we will go over to here and we'll just take a look here so we have make error make OK, so every error is typed cool oK. 
+
+Speaker  3:24:00
+And then domain tools. And so we have inventory up here and our main tools. And so there they are. And then here scope tool set, each sub agent only sees its own tools, OK, and so here these are the tools that it's allowed to use to check inventory place order and notification. 
+
+Speaker  3:24:24
+Sure. Ok, so this is just tool handles to map to that oK, so each only get one tool which is fine. And we have structured report format so returns only a Jason object. And so here we have status, sub agent, summary, attempts, failures and then it's information and more information here then we have our inventory agent. So here you can see it has its detailed rules on how it should recover and same thing for this one, same thing for this one. Then we go down to here we see our coordinator so we have coordinator tools. All right, that makes sense and then we have the coordinator so you delegate to the three specialized sub agents each sub agent returns a structured Jason report, plans the workflow from the user, request from delegating. 
+
+Speaker  3:25:08
+Ok, makes sense after all, delegations give the user a concise summary outcome, OK and then we have our Max steps. And so really that's all we're doing is we're just structuring the data, making sure we are covering our use cases here. And then we have our sub agent registry down here i'm wondering how they're spawning them. And then down below it has run sub agents so let's just take a look at what that is. Oh, it's up here oK and so then it'll just spin one up here and I'm just trying to look here what it's calling. 
+
+Speaker  3:25:46
+Is this using a sub agent, double checking, double checking. 
+
+Speaker  3:25:54
+Or is it just putting everything through a single pipeline? 
+
+Speaker  3:26:01
+So report await sub agent. 
+
+Speaker  3:26:07
+So the only question I have here, you know, based on this code, you know is, is our sub agents. 
+
+Speaker  3:26:17
+Actually implemented as sub agents? Like they have their own context and are unaware of any other agent they are independently running, 
+
+Speaker  3:26:40
+Running separately. 
+
+Speaker  3:26:45
+Also like what are we using are we using the agent SDK? I mean, like, should we not use the Agent SDK and that way we can leverage agent definitions, 
+
+Speaker  3:27:06
+Check docs. And so I'm going to see if that makes a difference. There could be like a reason why we don't want to do that. We'll find out here in just a moment. So yes, be back here in just a second. All right, let's see what it considers, because maybe there's a reason why. 
+
+Speaker  3:27:25
+So here, yes, architecturally, per the agent SDK owned dock sub agents are defined for properties, constant isolation, tool restriction, specialized instructions. We have hand rolled its functionality the same pattern the agent SDK agent definition abstracts what the agent SDK gives us, what we don't have this is actually a good layout. So hand roll coordination, built in stuff, 50 lines of manual response context handling a query, resume, sub agent min conversation. Ok, so we can't do that parallel sub agents built in file system structured reports and so we don't get sequential or sorry, we don't get concurrent stuff. For this use case, sequential is fine. Stick with the manual pattern, hide the exact mechanics we're teaching, drop out our structure the agent SDK shines when you want file system shell sub agents. 
+
+Speaker  3:28:14
+That's what it's built for. So for domain specific coordinator, then we should use the rise decay. Fair enough sure, why not? But what we'll do is go ahead here like they they I mean, obviously agent SDK is leveraging cloud code stuff so things that are code code related make sense but you know, sometimes we will get some conveniences utilizing it as well. So now that that is there, let's go ahead and see if we can run it before we do that, I want to make sure do we have N dot we do excellent. 
+
+Speaker  3:28:45
+So we'll go ahead and say Python main dot PY and we'll run it. 
+
+Speaker  3:28:52
+And here we see the coordinator so coordinator delegates to three specialized sub agents. Each sub agent has its own scoop domain and structure the executive team notification triggers permission error so these requests, I need 5 units of widget A and then it goes here and then it returns back the report that it was successful and then we go to this one and this was successful and we're looking for the failure is probably this one here so here we send a notification and it comes back with that looks successful too. 
+
+Speaker  3:29:28
+Executive team, agent. 
+
+Speaker  3:29:34
+Direct executive team notification denied so I'm looking for it in here. 
+
+Speaker  3:29:42
+And where's the bubble up? So I'm going to go here because I can't see it it's just very hard to see so I'll go here. Where is the error information being shown here? Actually, you know what, let's make it so that it absolutely does break. So what I'll do here is I'll just change the inventory to zero. That might be a better example. And so we'll go here, Oh no, there yet. And then we'll just run it again, see what happens because this will be a probably a lot more clear and fail quicker. And so here we have an error and here it reports back, whoops, reports back status completed, sub agent inventory summary and so that is the information that we're expecting to see for that to understand if we're running to an issue so I would say that's pretty good. 
+
+Speaker  3:30:36
+And so hopefully it's very clear what it is that we need to do and I'll bring up the exam guide just one more time. So the idea here is just providing structured data that bubbles up, right, and being very clear on what to provide in terms of information. But yeah, there you go. 
+
+Speaker  3:30:59
+Hey folks, it's Andrew and in this video, what I want to do is I want to refactor our coordinator that we've been working on up to this point as I'm going to want to port it over maybe to Agent SDK to just take a look and see what that looks like. And so we're just going to say coordinator re factor here and I'm going to go ahead and grab the code here and we are going to ask it to re factor and let's just see if we can make this a little bit more maintainable, OK? If you are not a programmer, you might not know that this is not good code, OK? And it like it works for this point that we've been able to hold this all into memory, but we came back later, we wouldn't be able to really make sense of it. 
+
+Speaker  3:31:43
+And just because the agent can make sense of it and summarize it to it, that's not good enough. We need to make it so that it is more human readable. And that is what we are going to do. So I'm just going to see out of here and we're going to go into Claude and we are going to get some refactoring going on so what I'm going to do is I'm going to make a new file called Refactor. Refactor MD and I'm going to go say re factor tasks. So this is this document is the tasks I want completed to re factor this our coordinator agent. 
+
+Speaker  3:32:30
+Currently all code sits in the main dot pi and we need to break it into multiple files. Ok, so let's go ahead and start making some tasks i'm just going to make my observations of what I don't like. So the first thing is the prompts so all prompts should be stored as. 
+
+Speaker  3:33:04
+All prompts should be stored. All prompts should be stored as markdown files. 
+
+Speaker  3:33:10
+In a prompts directory. Ok, so that's step number one the other thing is like tools see how tools is very wieldy, so tools should be individually defined as their own files in the tools directory. We should have dot PY files for each actual tool code and the tools dot the tools. I mean like, can we? It's just Jason, right? 
+
+Speaker  3:33:51
+Can we i don't think there's anything special about this and the tools, Jason for the long tool, right i think it will understand what that is for the. 
+
+Speaker  3:34:08
+Gets passed to create so that is definitely something I would like fixed. What else what else? 
+
+Speaker  3:34:18
+During partitions we do have the partition system. 
+
+Speaker  3:34:26
+So say partition generation should be in Lib as its own file. That's something else I would do. 
+
+Speaker  3:34:38
+That's a function that is that run coordinator. 
+
+Speaker  3:34:48
+The logging is inconsistent i don't like how the logging is so we should have a logger that refactors all the logs to be consistent in a file, in a file called logger, in our logger pie, in our the directory that 'd be another thing I would want, 
+
+Speaker  3:35:19
+Yeah so I think that's a start. And so I'm going to go ahead and just say, 
+
+Speaker  3:35:27
+Coordinator, 
+
+Speaker  3:35:32
+I want you to re factor my code based on that markdown files tasks for the main dot pi in the coordinator re factor, OK. And so we will let it go do that and we will see if we can really reduce and organize that code base because it should be really easy for us to read, right like I know we can make sense of it because we've been carrying forward it, but we really need to be at 100 %. Like, yes, absolutely, I know what I'm looking at oK, 
+
+Speaker  3:36:08
+So I'm just going to accept everything that goes along here and then we will take a look and see what we have so it's already off to the races. We have our prompt, our partition planner, our screening agent, MD. For me, like I'd probably want these to be templates that you can inject stuff into, but there's no reason for that right now we don't really need dynamic injection, but it's definitely something that would be interesting to do. 
+
+Speaker  3:36:29
+We have our tools directory. I think we only have the one agent here. And then we have our tools, Jason so that is working out pretty well so far it's going pretty quick too. Man, these things are getting really, really better here we have our logger and then we are going to have our partitions up high i really don't like that we have constants i do not like using constants whatsoever. I think they're just, it's just bad, bad code. But we'll continue on here and check it out in a moment i'm going to just check how my usage is going and it doesn't matter just reset i'm back at 2 % look at that. 
+
+Speaker  3:37:03
+Lucky me, eh? Ok, so we are just chilling out here waiting for this to generate. I'm going to pause here and we will come back here in a moment. I think it might be done i didn't even really wait that long and so we'll go up here and take a look. And so we have our main dot PY we have our prompts, we have our tools, we have our libs. Let's go take a look here and see if this is reduced enough. 
+
+Speaker  3:37:29
+Ok, And I probably should have told it to check box off these, which is fine. So I'll just go here and just check them off myself i just didn't feel like telling it to do that i don't know. I assumed it would be fine. I can also ask it like, hey, is there anything else that we could do to refactor to make it more human readable? But I don't feel like it would know it's not a human. 
+
+Speaker  3:37:57
+And it's trained on garbage repos. Ok, so let's go into our main, wherever that is hold on here our main And I, I usually just have a sense of like, is this readable? right. And it's still yik, it's really, really long. 
+
+Speaker  3:38:21
+So there's still some stuff in here that needs to be refactored we'll go over to here. 
+
+Speaker  3:38:29
+So say coverage report, 
+
+Speaker  3:38:34
+Coverage report should be its own file in Lib called coverage report, 
+
+Speaker  3:38:47
+Ok. 
+
+Speaker  3:38:53
+The other thing is like the data so. 
+
+Speaker  3:38:57
+Right now we have hard coded data. 
+
+Speaker  3:39:06
+Make a data folder and store data artifacts and load them into the app. 
+
+Speaker  3:39:17
+Ok that's another thing. 
+
+Speaker  3:39:31
+I really dislike the logging. 
+
+Speaker  3:39:40
+Yeah, we have a trace append. It's still very very verbose. 
+
+Speaker  3:39:49
+And there are still things it's like I'm noticing here like. 
+
+Speaker  3:39:57
+There are there are templates for content for messages that should really. Be templated files that take variables. 
+
+Speaker  3:40:15
+And load it in maybe? 
+
+Speaker  3:40:24
+Ok, like is that a prompt? I mean like we have this it's technically a prompt so technically technically they are prompts. 
+
+Speaker  3:40:34
+Are prompts for content and so prompts, so move them. 
+
+Speaker  3:40:43
+Them to prompts folders. 
+
+Speaker  3:40:47
+Ok, so there's that there's a lot of those oK, And so we'll go back here we'll save the file. 
+
+Speaker  3:40:54
+All the way down to here. There are new tasks in the refactor. 
+
+Speaker  3:41:07
+Md OK And so we're going to have it go off and do those tasks. 
+
+Speaker  3:41:19
+And so we'll give it a moment there i'm going to pause and I mean, I really should tell it to check them off i didn't tell it to do that, but we'll come back and take a look and then we'll ask it to do a general refactor. I'm still like, I really don't like this like we see how we have like double lines and stuff like that. I don't need that kind of level logging, but I would have to explain to it why that's an issue. Yeah, it's still just making them MD files it's not marking them whether they're templates or not, but we'll just treat them as templates. 
+
+Speaker  3:41:45
+And here we're getting a lot more in here, so that's better. But I just know what good code looks like, and I know that's not good code, but there's only so much you can do with Python. Certain languages have the ability to have better readability, like Ruby's really, really good at that i'd love to put this over to Ruby. I just didn't check if the Agent SDK is available i don't think it is available in Ruby i just think that this Anthropic 1 is and so if the Agent SDK wasn't Ruby, I would absolutely be using it over the Python 1 as they really do not like Python code and it just you just can't get it to be extremely human readable. 
+
+Speaker  3:42:21
+Unfortunately, we're all kind of using it because of the way the industry is as they've adopted it, not because it's good, just because of mass adoption in the data, data science and stuff like that so it just became de facto, oh, look, it's already done. And so we have that there. And so we will again, look at the main file i'm just going to close it and reopen it sometimes it doesn't always show me right away it didn't check boxes off i really should tell it to check box them off when it does that so we'll go ahead and save that. 
+
+Speaker  3:42:49
+We'll go back over to our main pie and we'll scroll up and I get I'm looking that looking at this for for refactorability. And I would say like they haven't done a good job with logging so I'd say. 
+
+Speaker  3:43:06
+You haven't done a good job refactoring the logging, right so for example we have log log info partition like partition you should be making helper functions. So these logs did. 
+
+Speaker  3:43:30
+You like log partition. 
+
+Speaker  3:43:36
+Or you know like log right log worn and they will add. 
+
+Speaker  3:43:46
+The you know. 
+
+Speaker  3:43:49
+Tags. The other thing is. 
+
+Speaker  3:43:55
+You have superfluous logging that is great for human readability, but we want to focus on logging good for for logs and we should be outputting logs to a log folder relative to the folder of this agent. Ok and so that you know, that's one thing that's really bothering me. 
+
+Speaker  3:44:28
+I really hate constants so that'll be another thing that we fix here in just a moment. But again, we're just trying to get this to be in shape. 
+
+Speaker  3:44:40
+Did also move this out of here like what's this big thing like why is the tool used so large here? 
+
+Speaker  3:44:48
+Ok, and while that is thinking, let's go review our other parts of code. 
+
+Speaker  3:44:58
+Ok, I mean, this is fine. I think I wouldn't mind if we had like this is a big Jason object, but I wouldn't mind if we had a shorter syntax for this. I don't want to do that right now because it's totally possible that, but we will be able to do that in Agent SDK where it probably already has like a shorthand to make that code smaller and so I don't want to muck with that. And we'll look at the partition here. Really hate those constants and also I really dislike how it's loading in the prompt template so there should be a way to manage that. Like look at all this logger logic oh, no, that's the logger file. 
+
+Speaker  3:45:40
+Yeah, here, now we're starting to get those things that I was asking for that's good. 
+
+Speaker  3:45:49
+Ok, 
+
+Speaker  3:45:54
+The other thing that that's, and I mean, we don't need to do this, but like technically, you know, we have all these sub agents they're calling create. We could technically delegate them out to different models if we needed to. Or we could even say like, hey, can you try to choose the best model as it's working through there? But yeah, I guess the next thing on my task is to fix that. Like I'm not updating the re factor we could keep updating that as a means to keep keep track of stuff, which I just don't care. 
+
+Speaker  3:46:18
+And so, yeah, I want to fix those constants and I want to get something that loads in the templates. I'm just going to take a look here at our usage. 9 % doing OK over here. 
+
+Speaker  3:46:35
+Ok and so now that is fixed up, we'll take a look here. Again, I'm looking at my main, seeing if it's shorter. Yeah, it's looking. Yeah, this is way less messier. 
+
+Speaker  3:46:48
+I don't like using constants. 
+
+Speaker  3:46:53
+Pg like this is a var. Please don't use these in the folder for the coordinator re factor. Fix the code. Ok, so that's something I really dislike. 
+
+Speaker  3:47:12
+And so we will get that improvement there. This this to me is like there's a big issue with the loop so I feel that we need to give it a better instructions on like how to better re factor the loop. I mean, it's using just a big ELF is self block there might be some kind of state flow machine or something that could improve that loop as I'm not happy about it before we do that, I want to fix the template reading and loading of files. 
+
+Speaker  3:47:42
+And so there it's just making basic changes for names right there so those are getting changed good. And it'll be done here in probably just a moment yeah, it's just updating the main dot pi and then we will have those fixed come on, come on, Hurry up hurry up. 
+
+Speaker  3:48:07
+And also like loading these templates and populating them probably needs to be its own thing yeah great thanks. Ok, another thing is loading loading files and templates where you inject variables. 
+
+Speaker  3:48:25
+You can make a new template template. 
+
+Speaker  3:48:33
+Template file in the. 
+
+Speaker  3:48:37
+Lib directory and this should refactor having, you know, large. 
+
+Speaker  3:48:50
+Load code, EG like this oK. And so that's another thing that's kind of bothering me. So we will get that cleaned up as well. 
+
+Speaker  3:49:03
+So there's other things like this, like see how this is like something's happening here so that should be re factored out into a function. Like everything here, like just the units of code is just not explainable. 
+
+Speaker  3:49:16
+So the run coordinator definitely needs to be broken up into tons of functions every single of these if else blocks should be functions. 
+
+Speaker  3:49:25
+And I would probably prefer stateless classes i really prefer stateless classes as that makes it really easy to track inputs and outputs stuff, and Python is pretty good for that because of the way it defines these label tags i can't remember what they called the name properties, and so that will be good. We're making a lot of changes here, so there's a high chance this might not work, but that's fine. We can always work through that. It's fine you're fine, Claude, you're fine. Ok and so now that's loaded i'm not sure if that actually changed we'll go back over to here. 
+
+Speaker  3:49:58
+And so with that, now when it needs it, I feel yeah, like load prompt exactly like this. So yeah, the big problem still is the run coordinator. So the run coordinator file is giant. 
+
+Speaker  3:50:18
+We should refactor. 
+
+Speaker  3:50:23
+Into a stateless a stateless function, and all the parts of code should be chunked. 
+
+Speaker  3:50:38
+Into functions. So the functions basically act as documentation. You know, for example, the contents of if, if, if blocks are really should be function calls, right? We'll go ahead and we'll see if it understands what I'm trying to say but like when you write good code, you know, like this would be a function, this would be a function, this would be a function, whatever this is, right? These if blocks and we'll see if it understands what I'm talking about, but I feel like that's a really important component in fact, this run coordinator could also be in the Lib directory and we might suggest it to move that in a moment but right now I want to see if it could even handle what I'm asking it to do. 
+
+Speaker  3:51:31
+It might not understand because if I don't have like an example, it's just not going to know what I'm trying to ask for. Again, checking my coverage here, we're at 11 % usage. Some folks were suggesting that like when it's High Peak usage, it depends on like if you overlap with European time i'm not obviously in Europe. And so they said like just try a bit later when everyone's sleeping and it's way later so, you know, it would be maybe off peak usage time but anyway, we'll just wait here and see what happens oK, it's back with functions and again, we could call plan to ask it to do this before, but I don't really care that much so we have plan partitions, validate index partitions run. 
+
+Speaker  3:52:10
+I've seen some like with partition information, almost wondering if that should be really part of the partitions pi right? Log coordinator reasoning handle this information and so those partition ones, there's three with partition ones, right and so we'll go over to here. 
+
+Speaker  3:52:34
+I mean, like, sure, you could do it that way that's not what I asked for. I need to verify this, so I got to go over here like, what does a stateless class look like in Python can it be a class with static methods? Ok, because that's what I was asking for. 
+
+Speaker  3:52:59
+Yeah oK, So look, I don't, it did not do what I wanted. I mean close so OK, we'll go all the way down here. 
+
+Speaker  3:53:12
+You know, I wanted a stateless class, 
+
+Speaker  3:53:17
+That is a class with static functions. Ok, 
+
+Speaker  3:53:25
+Right so you didn't, and I noticed. 
+
+Speaker  3:53:32
+Some of the functions we're handling partition logic. 
+
+Speaker  3:53:38
+Is that something that should really be part of the partitions pi right so that's something I'm noticing as we are shaping that code. Ok. 
+
+Speaker  3:54:04
+And so we're going to give that a moment to shuffle those things around. 
+
+Speaker  3:54:11
+Now, is it thinking about that or is it just shoving things over there index by agent for partition, Sir, build initial messages again, is that for partition, is it actually asking that question, does it belong over there or is it just that it's handling partition data because it moved it and didn't actually question whether it goes there or not? 
+
+Speaker  3:54:33
+But. 
+
+Speaker  3:54:36
+Anyway, we'll go over to here and we'll take a look of what's changed, what's it still working and so now this is looking a lot better. 
+
+Speaker  3:54:49
+Because now we can see what is going in, what's going out, right, 
+
+Speaker  3:54:57
+Ok. 
+
+Speaker  3:55:06
+And so we have all these steps so we have call. So create a message log reasoning. 
+
+Speaker  3:55:17
+Again, like It does this logging stuff along with the logger handle screening agent. 
+
+Speaker  3:55:25
+Handle evaluation coverage handle files handle submit final process tool calls run. Did they put these at the bottom they did. Sometimes people put these at the top or sometimes they put at the bottom but like the one that obviously is the big one is this 1 here. And so the idea is that we should be able to easily see what it's doing so we have generate partitions, partitions validate overlap index agents, right and so this should be self documenting as you read it. 
+
+Speaker  3:55:53
+We go down here, we call the coordinator, we do the log reasoning. Why are these functions? Are these loose functions? They are. Well, no, they're part of the partition. And so I would go over to here and I would say, you know, give the, 
+
+Speaker  3:56:10
+Give the partitions pi the partitions pi like. 
+
+Speaker  3:56:20
+All of our Lib directory. No, I'll say our partitions pi should be a stateless class. 
+
+Speaker  3:56:31
+I so a class with static functions. Please update. And that's just the way I prefer it. Ok. I like to group them into domain i don't like having loose functions where we don't know where they're coming from and who respects them or owns them. People in the data space are very much used to just randomly importing a bunch of stuff so they have a less sensitivity to, to that kind of thing but to me as a very professional developer, I, I want to see where that stuff is coming from. 
+
+Speaker  3:57:00
+We still have some of our if else stuff here and notice in here like these, again, these should be functions, right all they're, all they're doing is calling these things but still, I want these as functions. If there's an if else statement in here, especially in our main loop, that's what it should be. We have a range of 1 to 31 so it's kind of defining how many steps it can take. I would rather that uplifted as a variable, but we're not going to go too crazy on this i just want to get it in enough shape here and mostly just to show you like what good code looks like and what you should be doing before you move on stuff you might say, well, Andrew, why? Like this is more work to read. 
+
+Speaker  3:57:38
+Yeah, but if you want to write test code for this, then you have an input and an output and you know exactly what to mock going in there and out of there. The only thing that I would also change is like if these are complex objects that want them to be Dumber and only passing really dumb data so that we could mock it a lot easier. And this is pain points if you've spent a lot of time writing a code and you might say, well, you know, the AI can write the test code for us, but that doesn't make it good tests or reliable tests and and you'll only know that by writing that stuff. 
+
+Speaker  3:58:08
+But we'll go over here, we'll take a look at our partitions. And so that is fine there's still lots of little improvements to be made like I'm looking at like, why is that like that i don't like hard coded stuff like that. There's just a bunch of little things. But I'll just say we'll move the coordinator over so the coordinator can be in its coordinate class should be in its own file in the Lib directory. 
+
+Speaker  3:58:37
+Ok. And we'll move that over there that'll be the last thing we do here. 
+
+Speaker  3:58:43
+And then what we will do is we'll just run it, make sure it still works, and then we'll call this, you know, done ish, right. But again, you know, if this was something that I would want to put in production, I would take the time and fine tune it. I'd take the time and fine tune it and and because that's about getting the word I'm looking for is. 
+
+Speaker  3:59:07
+Technical ownership, right that you have ownership of the code and and you know exactly what it's doing and when you shape it like that, then you have a better sense of it. So now the coordinator is over there. I want to just run it to make sure it works so I'm going to CD into the coordinator re factor and we're going to go ahead and run Python dot or Python dot main dot pi. Ok, so we're going to run that and we will take a look and hopefully it still works. 
+
+Speaker  3:59:33
+There we go i wonder if it's going to make the log file. We do get our logs excellent coordinator dot log and can see that's what I meant when I said I wanted to be nice and and whatever I might even suggest, like I'd probably prefer to log out Jason structure because then we could parse that information. 
+
+Speaker  3:59:53
+Yeah, I think that's what I would prefer especially like if you're data-driven you have Jason L data as logs it's super, super useful. So instead of having like coordinator delegate, I would probably just have Jason objects and then I could parse it and ingest it into something else. So again, these are little tricks that you learn building applications of all kinds, but the point is that it is running we just want to see to completion and then we will call this done and then we will move on because the next section of stuff we are looking at is stuff that I feel like Agent SDK is going to be very useful for. 
+
+Speaker  4:00:29
+They'll all have to decide on that and so it did run, worked great. The only thing that I probably asked it to do, which it's not doing right now is I would have it dump the coverage report into its own file. So I'll be the last thing that we do here. Ok, so I'm going to go here because that would actually make it useful, right so I'm going to go and just say, you know, for my coordinator refactor. 
+
+Speaker  4:00:54
+It currently generates, it generates a coverage report in the logs, but it really should be outputting, outputting the a report time stamped in a reports directory and formatted nicely. More human to read, right? And so that's the last thing I would absolutely say we need to do i just realized that that's a little bit gross on how it currently is. We never looked at our data, but yeah, we have our job posting and stuff. We could enrich these later, but they're fine. It's really next to new data here. We could have made a research that would go and grab job postings and make it for us not that anyone really should care about job postings anymore because agents are just going at it, but we'll wait for this to finish, OK, And then we might run this one more time. 
+
+Speaker  4:01:55
+Ok, there we go and so it says it's there. The other thing is that I don't think we're logging usage. So that would be nice to be able to log that information out but again, these might be things we get for free when we use the Agent SDK, so I'm not exactly sure. And so now that is done, I'm going to go ahead and run this one more time clear. 
+
+Speaker  4:02:15
+And I have no idea how many credits I'm burning like again, I haven't hit my, I have like 5$ or whatever i haven't hit it yet and Baco's not going to get mad if I load up another 5$ so, so far it is not a pain problem. People don't know Baco is the other Andrew, Andrew B i'm Andrew B and so we call him Baco so it's not confusing he's definitely a real person he's not an agent or is he? We don't know no one ever sees him. So we're going to run this again i'm going to pause here and then I just want to confirm the reports are there. 
+
+Speaker  4:02:44
+But again, you can just see my thoughts of like what would be good to do oK, we still have the coverage report being logged here, which I don't like, but that's fine as long as we got AI didn't we didn't tell it to not do that there, but we'll go here and then here is our report we can go ahead and view it over like this. And so there is our final coverage assessment. I really don't like how long it's written the stuff like if you were human, would you want to read this much information? Probably not, or you'd want it summarized in a different way but we never gave it a coverage report template, so that's fine we will consider this done we'll say get, Add all, get commit re factor, but that wasn't bad for a quick re factor still lots of work to be done there, right? I'll see you in the next one, Chow Chow. 
+
+Speaker  4:03:35
+Hey folks, it's Andrew we're back and it's time for us to port our coordinator application over to Agent SDK and the reason why is that we're going to be getting into. 
+
+Speaker  4:03:46
+Specific Agent SDK arguments and if we want to know how they work, we need to have an example over there. And I think we should just continue this project forward and I think it's not a bad idea. So what we are going to do is we're going to call this port to to Agent SDK, OK. And So what I'm going to do here is I'm going to grab the contents of all this, not the logs, we don't need the logs or the reports, but we will grab this, this, this, this, this and this right click copy we will go down over to our port to agent SDK we will paste this stuff in and we're are going to letter RIP and see if it will allow us to port it over in one go here. 
+
+Speaker  4:04:38
+So I need to port the my code base of Anthropic SDK based on for my agent that uses directly the Anthropic SDK to use Claude Agent SDK for this folder port SDK. And so we're going to ask it to go ahead and do that that's a big thing. Again, we probably should have put it into plan mode and ask it what it can do. But I'm just going to go off to the races and do that and if it works, we will explore it and we'll have time to look at the code base quite a bit as we walk through other features oK, All right, let's take a look here and see what we have. 
+
+Speaker  4:05:26
+So we have the run updated i'm not sure why it did that it's not really that big of a deal. 
+
+Speaker  4:05:35
+We've removed the async anthropic and coordinator these are now internal to the coordinator sure. It has a complete rewrite i was expecting that that I assume that would be the largest rewrite for us. And I guess all those are unchanged that's really interesting. And then we need to do a a update here i mean, you know, you know, can you make the requirements dot TXT for me? Because that's what it should have done, but we never copied it from a prior one that's probably why. Yeah, we didn't. So let's go take a look at the the major changes so we'll look at the main dot pie and here we can see async anthropic. Oh, so there's where it's for default AIOACP client that's why there was a change there. 
+
+Speaker  4:06:21
+This is the new one, right? There we go oK. And so this more or less looks the same, but we'll go into our coordinator directory here and let's see if we can. 
+
+Speaker  4:06:38
+Make the difference here. 
+
+Speaker  4:06:47
+Ok, So what I'm going to do is scroll up here what I might do just so that we can really clearly see the difference. We might refactor a smaller one because it's very hard to see the changes they don't even show us the code changes here, right? So what I'm going to do, I'm going to make another repo. We have. 
+
+Speaker  4:07:07
+Make another folder here let's see, port. 
+
+Speaker  4:07:11
+To Anthropic, port to agent, SDK small. 
+
+Speaker  4:07:22
+And the reason I want to do that again is to really clearly see the difference and so I'm trying to think of one that we were doing before, like narrow task decomposition. Yeah, where we have this one this one's a lot simpler, right? And we actually want to go one step before that where we are using tool use. 
+
+Speaker  4:07:42
+Could be decision making model driven, right so this one here. 
+
+Speaker  4:07:48
+Is a very simple one with multiple tools so what we'll we'll do is we'll copy this over here. I'm going to go into this directory just so we can clearly see the difference and then also maybe just have another one that we can work on, though I don't really like this use case per southeast OK. And so I'm going to go and say, OK, great can we can we convert the code for port to Agent SDK small. 
+
+Speaker  4:08:19
+Over to Agent SDK? And again, we haven't tested if these actually work. Hopefully those clawed Agent SDK, not just some generic one. But anyway, I think it knows i hope it knows. We'll wait here a moment oK. All right, so we have the re factor already done for this one didn't take too long let's see what it's changed. So the imports are different. 
+
+Speaker  4:08:41
+Yeah, it is using Anthropic, the correct one no, no, no, no, no. Yeah, it is oK, here it is. So here it is and. 
+
+Speaker  4:08:50
+Here, instead of handling tools here we have a decorator. And then the functions are probably defined a particular way see, this whole big thing is probably gone yep. And so we have decorators on top of our functions, making this code a lot smaller, OK? The call's a bit different, so that's one thing. And we are creating the SCKMCP server to pass the tools over so that is another thing that's changing, 
+
+Speaker  4:09:23
+Ok? 
+
+Speaker  4:09:27
+I mean, we have new modes and we're sending our MCP server with our tooling in it, 
+
+Speaker  4:09:35
+Ok. So basically we basically have an internal, internal MCP that's really interesting to make that super, super easy and this call is a little bit different so basically the big thing that we're seeing is that tool use. So let's go back to our larger refactor and I want to take a look at our tools. And so that tool, Jason, do we even need that anymore does that even make any sense? So what we'll do is go back over here because now we know it was refactored, right? And we'll say, do we even need. 
+
+Speaker  4:10:09
+The tools, Jason, anymore and shouldn't we be using the decorator? 
+
+Speaker  4:10:28
+For port 2 agent SDK based for clawed agent SDK and I imagine that you can probably pass in that Jason tools because it's it's doing it no, we don't we don't know if it actually works or not. If we go here tools dot Jason like I don't see it loaded in here maybe it's getting loaded in the main it is refactoring probably right now, so we wouldn't even know. 
+
+Speaker  4:10:59
+But we'll see what it says here because we do have tool right here, right so it is, it's right here. So maybe it just has to delete it out. But if the tool's here, then why isn't that defined or does it have to sit in the same place, 
+
+Speaker  4:11:15
+Right so we have this one here is this just a repeat? 
+
+Speaker  4:11:20
+Ok. 
+
+Speaker  4:11:33
+And like, look at all this inline stuff, eh, 
+
+Speaker  4:11:42
+Object, maybe pass rationals, key strengths that's the structure that we actually wanted from before. 
+
+Speaker  4:11:50
+And so here all three tool decorators are now using the simple param. Ok, but like, does the coordinator still have them in here? 
+
+Speaker  4:12:01
+Do we have to have the tools in the coordinator. 
+
+Speaker  4:12:11
+Dot Pi or can they actually they live in the tools directory. 
+
+Speaker  4:12:22
+A separate functions or it doesn't work because. 
+
+Speaker  4:12:32
+Tight coupling of the decorator, 
+
+Speaker  4:12:37
+Which is this part here it might be the reason why they can't do that. And I mean, I hope it knows what blast directory you're in because you have more than one but we'll ask that question and you know, this is what I'm trying to figure out as. 
+
+Speaker  4:12:54
+It says here so the key insight tools to decorate runs a call time, not in import time so you can apply it inside the factory function to captures state via normal closures. 
+
+Speaker  4:13:08
+Ok, well, speak English to me here. Can we move it or not? 
+
+Speaker  4:13:16
+Coordinary class tools, screening agent. Look, look, I'm trying to keep my stuff lean here, folks. 
+
+Speaker  4:13:27
+Did it move it out? Did you even tell me that it moved it out? 
+
+Speaker  4:13:34
+Ok, so here coordinator, state, make coordinator so it did move it out from tools. I don't like how they're make coordinator tools. 
+
+Speaker  4:13:47
+Ok, And then we have coordinator state all. 
+
+Speaker  4:13:52
+Right oK, I see so they they have a state file separately for I mean, state wouldn't belong in tools now, would it? So that doesn't make any sense unless it's coming from that file oh, maybe it's part of it that's why oK. And so we go over to here and we have make coordinator tools. Oh, and they do have it in here oK, so they were able to move it out. 
+
+Speaker  4:14:13
+And so here we have our multiple tools oK and so to me, that's what I would like it to be. So I'm going to go ahead and we're going to stop this and we're going to CD into the port to agent SDK and I just want to make sure that this still works. So we'll go ahead and say main dot Python dot main or main Python i got it backwards python main dot whatever whoops. 
+
+Speaker  4:14:44
+Ok. 
+
+Speaker  4:14:46
+And I just want to make sure that it still runs because we've changed a lot of code or at least with large file to another framework. 
+
+Speaker  4:14:58
+And. 
+
+Speaker  4:15:02
+It's login. We'll ause here and see the end result, but I'm pretty certain that it's going to work. Ok so it ran without issue and we are in good shape. Yeah, so we are set up and the question will be like, you know, do we use this to test out all the Agent SDK stuff or do we come back to this project? We will see. But at least we made it to this point and I think the key takeaway here is the fact that the tool use call got easier and it's setting up an MCP server. 
+
+Speaker  4:15:32
+Ok, So literally it's an internal MPC server and so clearly Entropic is obviously making that a priority tool. But anyway, there we go and we will move on from that oK, chow, chow all. 
+
+Speaker  4:15:50
+Right, so we have the agent tool and so this is where you are able to basically spin up an agent. It was previously called the task tool and I was really confused because the last time I used it, it was task tool and then the agent came along i didn't realize that they're basically it's just a name change and so task is just no longer there. But there are parts of the code where you will still see it so you'll see when I do the follow along that I'm under the impression that we are implementing task and then I realize that oh, they have changed the name. And I figured it wasn't worth re recording that video because I thought it was really interesting how the Claude did not know exactly itself and the documentation did not have proof of it i just wanted to make that as a proof of point that you can't just trust what agents say you have to go out and test them and then draw a line back to your information. 
+
+Speaker  4:16:44
+But anyway, when you spin up an agent, it has its own isolated context, its own system prompt and its own set of tools you can see that here. I believe this is the JavaScript implementation because I think the tool names are underscore, lowercase whereas in Python they are title cased, which is fine, whatever. But one thing that I need to point out is that though you're spinning up a sub agent, it's not necessarily going to be paralyzed so it depends on how scheduling is set up and how you are prompting Claude to do the work. 
+
+Speaker  4:17:11
+But generally it's going to block and until it's done and then report back to the like block the parent from doing anything until the the single sub agent is done and then come back. So really depends on how it's set up oK, and this should give you an indicator that we are using basically hub and spoke architecture within Claude code and that's probably why they they wanted to learn that specific, you know, coordinator agent. And by the way, when I say Claude code agent SDK, I'm talking about the same thing, OK. And so, you know, because this is basically a sub agent and we should be thinking of it like we have the the coordinator architecture that the spokes to our hub. 
+
+Speaker  4:17:59
+They're not going to be sharing contacts, they're not going to have the parents contacts and so if you need your your agent, it says task here. But if you need your agent to know something, you need to provide it otherwise it only knows what you tell it, right so it has the same feature of a coordinator agent. Ok, but there you go. 
+
+Speaker  4:18:23
+Hey, folks. So now it's time to try out the task tool so what I'm going to do, I'm just trying to think here for a moment what the task tool can be used for because it would have its own tools that it can read and so I'm thinking back to our research agent and I'm just thinking like, you know, should we attempt to extend it and do that but maybe we should just do a simple example first so what I'm going to do here is just say task tool, task tool. 
+
+Speaker  4:18:52
+And I'm going to bring in some code just so that it has something easy to work with so I'm just grabbing the small port SDK agent that way it can work off of something and it'll our lives will be a lot easier here and so I'm going to go ahead and paste this in. And by the way, I've been working everything off so far off of the dot env file. 
+
+Speaker  4:19:12
+And you know what I could do because we're using Agent SDK now is I can comment this out, right and we don't even have to, we don't have to use the dot EN view file we don't want to here because if I'm logged in as my subscription, it will use it. It's been a whole day since I've logged in so I'm going to go ahead and just type in Claude. I'm going to log back in here if it doesn't prompt me to do so, I'm going to go ahead and just hit login just because I feel like I'll probably have to and so I'm going to go ahead and do that i don't like this Chrome thing it opens, it's completely useless, doesn't really work. 
+
+Speaker  4:19:42
+I'm going to go ahead and copy this into a browser tab i'm doing this off screen, OK, And I'm going to accept and authorize there. All right, we'll copy that over here we'll paste it in, we'll hit enter. And so now we are logged in. So the idea here is I want to use task tool and it shouldn't be too complicated so well, actually here's a question are we already using it well, we do have tool here so we are defining tools. 
+
+Speaker  4:20:17
+But we want something that's demonstrative of just task tool so we're going to CD into. We actually don't have to CD into so I'm going to go say Task tool main i'm going to say here I want to use the built in task tool for part of Agent SDK. 
+
+Speaker  4:20:44
+Can we rework this entire file to make a simple demonstration of the task tool? Ok. 
+
+Speaker  4:21:05
+And so I guess the question is, does it come down to calling it or is it going to come down to invoking it? Because we know that like when we use Cloud Code, we can just say something and it will automatically invoke their built in tasks. But what will it look like in code is the real question. So we'll go ahead here. And now it's trying to call Cloud API, which is fine. 
+
+Speaker  4:21:25
+And we will see what it comes back with we'll be back in just a moment oK, All right, so we are back with some code and it's greatly, greatly simplified. And so we will go and take a look at what we have here as our simple implementation of getting just a tool here. There we go oK, so let's take a look what we have, it seems like it's stuck with the code i mean, I told it it could go change it i'm going to close this tab, but I don't trust it. There we go oK, now we definitely have something different so I'll bring this on down and we will take a look we have i really hate these constants i hate and I also hate all this commentary i do not like that, but that's fine it's in here. 
+
+Speaker  4:22:09
+You know what, I don't care i'm going to remove it i'm going to remove it goodbye. It really likes to do these constants, just cannot stand them. 
+
+Speaker  4:22:23
+Ok, so we'll go down here we'll take a look. So you're here as the topic. Well, first of all, what does this thing do so uses the Researcher agent to gather 3 key facts about the topic. Use the writer agent to turn those facts into short paragraphs. Return the final paragraph as your short answer so we have the James Webb Telescope write a short article about that topic, and that would be the topic and then we're going to print this 50 times so line over. And so the idea here is that we have a query function, OK, it's passing parameters in so I'm going to assume it's going to be called that create message there we're passing a prompt and we have our options so we're bringing our system prompt here you are a coordinator that that produces a short article on a topic sure we have the Haiku model, good allow tools agent, so it's going to use the agent tool. 
+
+Speaker  4:23:21
+And here we have agents so we have researcher and writer here we have researcher and writer. And then the permission mode is bypass permissions. I don't think we should have that. No, we're going to take that off there. Buybacks permissions means that it can just do whatever it wants and that is a no, no. So it's a good thing we're reviewing our code and not just letting it do whatever it wants so I'm removing that. 
+
+Speaker  4:23:45
+And here we have the message and then it say, are you an instance of this type of message and if so, then we're going to print that information. And up here we have task start message, task progress, task notification message. And so it's the type of message that's being returned back so it has these structures so that we can check that. Ok. And so I'm looking at this i'm going, OK, that's something. Where's the task tool, right? Maybe because everything is a task tool so here's my question so where is the built in task tool, right? 
+
+Speaker  4:24:28
+Or maybe we can observe it by logging out that information but that's what we're trying to find. 
+
+Speaker  4:24:36
+I hope it doesn't try to do something. Let's see what it thinks that it is. 
+
+Speaker  4:24:46
+Let it search. All right, so it's basically failed so far i'm going to just hit tabs i'm going to tell it to stop it's just it's being silly, OK no, no, sorry. Look, look. Do you know? If you don't, just let me know. 
+
+Speaker  4:25:02
+Don't go out to the Internet. 
+
+Speaker  4:25:10
+It probably doesn't, no. 
+
+Speaker  4:25:22
+I have a built in tool that listed as agent and that's what I I have allowed in the tools. The task tasks are listed as admitted when a sub agent task is completed, which implies it's from the agent tool. There might be distinct task tool cloud itself hasn't internally, but I don't have confidence of the documentation so I'm going to continue on i just want to make sure we can find that just give me a moment, OK, all right and so I think I know why we cannot find it. 
+
+Speaker  4:25:47
+And if we go over to here, take a look here, we're trying to find it I'm saying, hey, can you find it for me and it's showing it's saying like you can add task it's talking about agent and then you're tracking trying to check the docs cannot find it and it's saying, well, it's an older unofficial name for it and they're still using agent. And so you have to understand that when I'm going to find this here in just a moment, I just want to show you what I'm referring to. 
+
+Speaker  4:26:16
+See here knowledge of the task tool as the mechanism for spawning sub agents and the requirements that allow tools must allow task. But notice we cannot find anywhere in the docs that say it. Even the internal cloud code tool cannot find it so agent is Task and up here we can see we are bringing in this and so we're seeing that indicator this is tasked so tasked is agent agent is tasked. Isn't it great we always confirm and we don't just go based on the stuff. If you were to generate out your Lesson plan based on this, you would be in poor trouble because you know you have to test these things and concretely, no but even their docs don't make it clear and that's a frustration here but that's why we explore every little thing, OK? But anyway, so task is agent, agent is task and right off the bat, we can see we are getting agent definition we haven't talked about that yet that will come up very quickly here. 
+
+Speaker  4:27:14
+And so going back over to here, it says use the researcher agent to gather 3 facts, etcetera, right? Whatever, whatever it's going to call the query function and the queries just getting imported here. Interesting oK, so one thing I'm confused about we go over to here, we go down to this one. Oh no, it calls query. Oh, it's just the way they're doing it all right and so here they imported as client and then they call it off of that, where here they're directly importing query and that was my confusion. 
+
+Speaker  4:27:52
+This is something I don't really like about Python, his ability to, well, I guess you could do as many languages, but I just don't like the how it's ambiguous and I, I just couldn't tell that was client query query and I thought that was something else. Ok. And so then basically we define our agents, we have the research and the writer, and then we have our model down here. And because my, my usage for my Claude is getting up, there was saying like 75 % usage for the week. And I guess I could upgrade to Max if I need to, But I think what I'm going to do here is just put back in the API tokens. 
+
+Speaker  4:28:29
+So now we have it. And that answers our question, right? So we'll go ahead here and type in Python main pie and we'll run that. And we'll let it go and do some research and notice it has access to the web so this one has the ability and this one does not because it does not need to. And we will see how that runs. 
+
+Speaker  4:28:55
+Ok and it comes back here and so we can see the three tools running the progress oK, I'm just going to Scroll down here Yeah, the logging is coming from here oK good. And then we have a result is it a good article no, but it was able to do and, and go grab information so that was kind of cool. So yeah, I think that pretty much demonstrates the task rule. Now you could see if we wanted to add this to our our larger application, the job Screener, we could go out and say, hey, go research this person, go check their LinkedIn or whatever or try to find information on them. 
+
+Speaker  4:29:34
+And that might be something we might try. But we will leave this right now for what we just did, OK? 
+
+Speaker  4:29:45
+Hey this is Andrew and let's take a look at agent definition so the agent definition is the blueprint for the sub agent and it defines what the agent is, what it knows about itself, and what is allowed to do before a single message is sent. And so here is an example of an agent definition. I want to point out that I literally made this video 4 times and the reason why was that I had used this before. I wanted to know all the fields. I could not find it in the docs and so, you know, I said OK, Claude, can you tell me what it is and it said these are the fields i couldn't confirm it anywhere, so I said OK, I'll go test it. 
+
+Speaker  4:30:20
+I thought it would work i went out, used it and the fields didn't match. In fact, there were fields that weren't there then I found out that there are some fields that are only available in the TypeScript SDK and some that are not available in the Python SDK so I literally found out that the Python SDK can behind in features and not only that, that the TypeScript 1 can be behind in features so they don't have one to one SDKS that are being released out here it's very sloppy to tell you the truth. 
+
+Speaker  4:30:48
+And then the other thing was that, you know, I had to validate that all the fields worked and I could not tell you how many times clawed hallucinated and gave me fields that did not exist. And it had a really hard time finding the docs eventually I did find docs and I did also have it go and explore the actual code base to find out the solution to it. And it's just wild to think that, you know, you know, like if the docs are bad and the generation's bad, then you just have to kind of muddle it through and so I'm just going to tell you that this is my experience throughout the course i might complain a few more times about this, but that is what it's like. 
+
+Speaker  4:31:24
+So understand, make sure yet test everything and do not trust what the agent generates or sorry, like Claw generates do not trust what the docs say you got to go and test these things yourself though. Anyway, where's the name of the agent the agent is up there so see where it says research agent right up here, OK, that's its name. These names matter and we'll learn as we go through this that that can cause it to trigger or not trigger and stuff like that so this name is very sensitive in terms of what its name. 
+
+Speaker  4:31:53
+Same thing with the description this is what's going to trigger the agent. So this matters and we need to write it in a very particular way. Then we have our prompt knows it just says prompt, but it's actually the system prompt. And so it's a system prompt tools is just allowed tools at one point, I think it might have been named this there's other APIs like that so I just have it here called allow tools because that just makes it more clear. 
+
+Speaker  4:32:16
+Do we have disallow tools? And then we have Max turns and models. And so some of these fields are not available at the time this video in Python, right but they are in TypeScript. So just so you know, the SDKS are not one to one. They might not match and some of them may not have current features. I don't understand how they have all this compute and they do not have matching SDKS Makes no sense to me. But anyway, let's continue on oK? 
+
+Speaker  4:32:46
+Hey folks, it's Andrew we are back and I want to take a look at agent definition so we'll make a new folder here, we'll call it agent definition. And we're going to go back to our last one, which was. 
+
+Speaker  4:33:00
+This file here task tool. So go ahead and grab this code. We'll make a new main dot pie. Got lots of these going on. And we will see the back here we'll just ask Claude, I want to show all the options in an agent definition. 
+
+Speaker  4:33:21
+Can you modify my agent definition. 
+
+Speaker  4:33:27
+File to show us that? Ok. And So what I'm hoping is that we get all that information what I'm mostly interested is testing the constraints. 
+
+Speaker  4:33:38
+I notice like in that documentation it said allow tools, and here we have tools so there's going to be some variation on how that's defined i think we would have to go look at the Agent SDK i'm going to go take a look here. 
+
+Speaker  4:33:52
+And while it's thinking here, I'm just trying to find that example because sometimes what it will do. So you see here it says like allowed tools over TypeScript. Well, those ones are title case and this has options here but this one says allowed tools but that's query. Ok, but we're looking for agent definitions. So agent definitions. 
+
+Speaker  4:34:18
+Like where is it? Is it a great like I cannot find really basic stuff. And this is my complaint when I say I do not like the docs. The docs, it's like they weren't built for humans so I'm just going to have to rely on it and assume that it can do that. So we will. I'll go take a look here. Sure yeah, we'll say allow. 
+
+Speaker  4:34:47
+And just close this out here and we will reopen this up so we have tools. 
+
+Speaker  4:34:57
+We're going OK. 
+
+Speaker  4:35:04
+Is that all it's fields for agent definition are you sure? 
+
+Speaker  4:35:15
+Let's make sure. 
+
+Speaker  4:35:21
+Ok and so the reason I'm confused here is that I know there's more fields. And if I go over to here, take a look, we have tools, this a lot of tools, model MCP, server skills, Max turns, critical reminders so why am I getting more fields here is that they're different? Ok. What about the TypeScript implementation? 
+
+Speaker  4:35:40
+Ok, because right now we're only using Python, right? And this is where there's a bit of a confusion. So. 
+
+Speaker  4:35:56
+We will go, yeah, sure, yes, yes, Yep. And it what it's literally doing is looking at the code so it's not going out to the Internet. It's, and maybe because I told it early not to do that, but I don't think in this session I did, I did tell it to do that. And so I'm really trying to get it to. 
+
+Speaker  4:36:15
+Take a look at this and I could feed this information in here over to there and see what happens here it is linking to the docs over here so I can click over to here into the docs. 
+
+Speaker  4:36:37
+And I'm just looking for yeah, here it is right here. So go here. Ok, OK, stop, stop, stop, stop, stop look, look, look the docs show it. 
+
+Speaker  4:36:50
+Right? So I want to know where those other ones are. 
+
+Speaker  4:36:59
+Ok. I mean, we obviously have tools, and then there's disallowed tools right here, which is fine. There's skills, there's Max turns. Ok, OK. 
+
+Speaker  4:37:18
+Ok, So the typeset has typically more fields in the Python. 
+
+Speaker  4:37:24
+If you need these capabilities, you need to use the Wow, isn't that interesting, but I'd be, hey look, it's good that we know, right so if I had not checked that, then you know, I would have thought that's all there was, right so I mean, now we know, do we need to run this no, I just wanted to see if there was any critical difference or, you know, why that discrepancy was there. But I would say that's good oK, 
+
+Speaker  4:37:56
+All right so something you're going to want to take advantage of is being able to have parallel tool calls and the way you do that when you're using the Agent SDK is you just simply tell it that you want to do it so somewhere in here I'm looking for it. It's it says examples of tasks can be run parallel so we're not just we're not just saying that it can do it, but it's also here saying like this is a case where you would run in parallel parallelization and here would use do sequential. 
+
+Speaker  4:38:22
+So it's up to the coordinator to decide if they want to do them all the same time or not. I just wanted to remind you about the agent tool because that's what we're talking about here we're talking about agent SDK, right agent SDK with the. 
+
+Speaker  4:38:40
+The agent tool, but each agent tool runs in their own loop. Each agent is running at the same time or can if it if you specify it here, obviously in parallel and we might not be able to see what the internal loop is doing. You're going to find this out as we work through the follow along so that follow along was only long because we had an issue with structured Jason output, but I wanted to get logging for the internal loop. But you can't get it right now with the SDK and so I believe you'd have to drop down to the Anthropic SDK. 
+
+Speaker  4:39:12
+But the agent SDK is challenging if you're running agents with the agent definitions and so I was waiting a long time and I just wanted to know it was actually doing something or at least track my spend or or or help reguide it if it's going off tracks but you can't. And so that is just a limitation of how it works right now. 
+
+Speaker  4:39:36
+Ok so in this video, what I want to do is I want to show off parallel tool calls and so I'm going to make a new folder here called parallel tool calls or parallel agents, which is probably more. 
+
+Speaker  4:39:53
+Or parallel parallel agents or parallel tool calls. 
+
+Speaker  4:39:58
+Yeah, we'll say parallel, Yeah, parallel parallel agent calls oK, Agents, Agent tool calls. 
+
+Speaker  4:40:07
+I'm really being too particular about that. And we'll make a new folder here and we'll call it main dot Pi. And so I'm kind of liking the last one that we did there, which was under the findings, right so we're going to go over to here i'm going to go and grab this here and we will paste it into this one. And So what I want to try to do is figure out a way that we can coordinate multiple agent tool calls and why we might need to do that so I'm going to go all the way down here and we'll just see you back for a second and we'll enter here i'm going to go, you know, I'm going to make my life easier i haven't been doing this, but I'm going to just go into findings like this and then it's going to have context a lot easier and won't look at all these other repositories and cause me a bunch of issues as that is a growing problem is it's trying to use the context of the entire repo. 
+
+Speaker  4:40:49
+And even though this will create another project within our home directory, I think that's OK. So I want to make use of. 
+
+Speaker  4:41:01
+Parallel. 
+
+Speaker  4:41:05
+Agent calls it that run at the same time. So what would be a good use case for our current main dot pie where let's just make sure that it's select the right thing yeah, it is OK main dot pie i mean, it was trying to go up a directory though main dot pie. 
+
+Speaker  4:41:33
+Can you propose to me a new coordinator prompt, OK, and new agents, OK. And so that's what we're going to look at next. See what we get here. Ok, 
+
+Speaker  4:41:55
+I can't think of the top of my head why I would need multiples in parallel. I mean, like if there is multiple films and we're like, OK, each of you go out and grab multiple films, that could make sense here. 
+
+Speaker  4:42:09
+Right now, the coordinator calls research agent sequentially one at a time since no access depends on another, all 5 can be spawned at the same time. Oh, well, how useful is that so we have research agent so keep as is per access Deep research, Receive all findings, Remove duplicate overlapping films returns a finalist, receives duplicate findings ranks top ten so the new coordinator would be parallel research in a single response simultaneously for all 5 accesses do not wait between calls and go across all of these. Oh well, there we go, we already got a benefit call record findings. The current code already passes allow tools and supports multiple named agents via agent. 
+
+Speaker  4:42:50
+Adding dedupe just means adding two more agent definitions. Ok. 
+
+Speaker  4:43:02
+Sure. But I guess my thought here is like, is that going to paralyze tool calls just give me a second, OK, I'm just trying to look at the exam guide what is it task tool in a single coordinator rather than rely on separate turns. And so I think that will satisfy what it is that we want. And so we'll go ahead and say, OK, great. Yep, let's do it. 
+
+Speaker  4:43:27
+Ok, because I'm just trying to like satisfy what the exam guide wants, but we'll be back in just a moment. 
+
+Speaker  4:43:40
+Ok, and we'll say yes to the session. And so I'm just looking for what has changed. 
+
+Speaker  4:43:48
+The dupe agent Aha rules if the same file film appears more than once, keep the best best entry do not drop films. Return this object rank return Jason object with 10 films in ranked to most to least similar. 
+
+Speaker  4:44:11
+Ok. 
+
+Speaker  4:44:14
+And there there's our multiple agents. How do we know that's being paralyzed. 
+
+Speaker  4:44:25
+All in five one turns and so the key thing that I want to find out in this code is what is causing the the paralyzation that's what we want to know. 
+
+Speaker  4:44:38
+And so I'm just carefully looking here and trying to find. 
+
+Speaker  4:44:45
+So here you are parallel so any single response call research agent simultaneously, all axes at 1. So see here, we're telling it to do this, do not wait, but delegate to all of them, right and so that's the key thing that we are asking it to do. 
+
+Speaker  4:45:03
+We have bypass permissions on again, which I don't like. So I'm going to remove that again because we did not request it to do that. I'm. 
+
+Speaker  4:45:16
+Not sure that would cause us any trouble, but we will go ahead and just say take that bypass out there bypass means go do it. Well, I guess it's not really that dangerous because we know exactly what it's doing. But you have to be really careful with this because you have to think about like what it can do if it's just going to go and do web search, then that's not that big of a deal, I suppose. But I still really don't like that there's probably a better security model than just saying bypass permissions and thinking more about like what it could use and so really, So it doesn't seem like there's much of anything else to do other than to let it go off to the races here. 
+
+Speaker  4:45:51
+So let's go ahead and execute it. So we'll go ahead and type in Python main dot PY. 
+
+Speaker  4:45:59
+And oops, no, no, no, no, no, no wrong one wrong one, wrong one. Wait, hold on did we just update our findings in place? I thought we were going to go update this file. Hello. What did I change? So we changed this one by accident, right this is the paralyzed 1, 
+
+Speaker  4:46:20
+Which is fine i can just like swap their places so one second here, let's go rename here and old. I just want to muck things up and I'll move that here like this boom, not a big deal. Not a big deal, people. And we'll rename that one. I just wasn't paying attention and. 
+
+Speaker  4:46:41
+I'm going to make sure this is the correct one simultaneously. Ok, So what we'll do, I'm just going to CD back parallel agent and we'll go Python main dot pi and we will let that run. The only thing that will be hard here is to really observe that they're running all at the same time. But it says the agent is saying it's starting them all simultaneously. So at least we have an indicator that it's doing it i'm not sure exactly how we would monitor that. 
+
+Speaker  4:47:08
+It's not an exam guide to ask again, if I did a boot camp, this is where it's this is something that I would want to know because I'd want to keep track of what is going on but for this, as long as it comes back with the result, I think we'll be happy. 
+
+Speaker  4:47:22
+I would suspect that it would be faster than what we did before i didn't track what was happening before, but I'm just going to trust that it is simultaneously working and we'll be back here in just a moment. The only problem here is I, I have no sense of what's going on i've been waiting for quite a while and so I'm actually going to stop this and I'm going to just go here and be like, you know, when I am running, when I am running the agent and multiple agents are running in parallel, I have no, I have no output or logging and so I have no sense of, you know, if the models are going to or if the agents are stuck in a loop or if they are going to finish soon or what they're even doing. 
+
+Speaker  4:48:13
+All I see is this. 
+
+Speaker  4:48:19
+Can we get better logging and visibility? 
+
+Speaker  4:48:26
+Because that's going to drive me crazy another thing that I was thinking is that we didn't do this in the finding sections, but I would like to enrich the source URL just because they go here and say like source URLs, docket document names and page numbers, which I didn't, I didn't really provide, right? So we'll go ahead here and. 
+
+Speaker  4:48:47
+Why does it need more more access sure, fine i, I don't know why would you need that it's in the folder it needs to be right. 
+
+Speaker  4:49:01
+I'm just making sure that's not going outside of that look, I don't know what it's doing oK, hold on. Sorry just focus on the main, 
+
+Speaker  4:49:13
+Main dot PY. I'm not sure why you are looking at the directory to implement logging. 
+
+Speaker  4:49:27
+Ok. And so that's me paying attention to mean like, why are you doing that you don't need to look at that to stay focused on your task. 
+
+Speaker  4:49:38
+Ok, So we'll say yes, allow. 
+
+Speaker  4:49:58
+Ok, and we have some results here. Ok, so now our agents first you'll see research agent first city characters, so that's OK this will give a live trace in the flight without needing external instruments. The findings and coverage prints inside the MCPI. Noticed our findings doesn't contain things like source URL or or like document name or page number. So we can't like we can see. 
+
+Speaker  4:50:38
+We need to have better findings information, 
+
+Speaker  4:50:44
+Sourced information, right? So go ahead and we'll do that. Give it a moment. All right, let's go back here and take a look here. And I'm just going to close this sometimes it doesn't update, so we'll just do this this is like a problem for my machine. And so here we have the URL, the document name of the database, page number. And so now we have better source information we really should have done that prior so now we are going back and doing that now so that is good. And so, you know, I don't know if the login is going to be that much better, but I guess we'll find out here and we'll see because. 
+
+Speaker  4:51:15
+Before it's just like we didn't have a whole lot of information. 
+
+Speaker  4:51:20
+Ok, so there's the coordinator. So now we can see all the agents are starting, right so they're all firing up that's a lot more useful. 
+
+Speaker  4:51:32
+The only thing is that we can't see what those agents are doing, but they are running so that is good. Worldwide featuring, featuring mind control, the blend of etcetera. 
+
+Speaker  4:51:47
+And so I just don't know if those are like single actions or they're looping or like what are they doing? So while that's going there, I'm just going to take a look here and take a look. 
+
+Speaker  4:52:00
+Yeah, I think they're really just doing one thing they're just going out and then doing a single thing maybe. 
+
+Speaker  4:52:09
+Mm hmm. 
+
+Speaker  4:52:12
+I guess we will wait, OK i mean, it makes sense that if they're agents, they have their own agentic loop each of these things here and so the only thing is that, and I'm again, I don't know if this is true or not, we'd have to verify it. But it's suggesting here that sub agents you have to enable streaming where the parents, they already streamed the information to you and sub agents don't because right now it's like, what are they doing i can't really tell you know what I mean and this is not helpful so I'm going to go stop this here and I'm going to try this again i'm going to say can you I can't, I can't see what the sub agents are doing. 
+
+Speaker  4:52:51
+Ok, 
+
+Speaker  4:52:55
+Example. Is there a way we can we can monitor streaming information. 
+
+Speaker  4:53:06
+So we know that something is happening? Maybe we can dump logs to. 
+
+Speaker  4:53:19
+Each. 
+
+Speaker  4:53:23
+Agent, run each run of our pipeline of our of our coordinator and then in there have individual logs for for each sub agent that is spun up. So like spun up so EG logs, you know, run, 
+
+Speaker  4:53:53
+You know, time stamp, 
+
+Speaker  4:53:58
+You know, ISO, ISO, time stamp, sub agent name, log oK. And so I want to see if we could do that because again, this is just because I don't like waiting forever and I just want to make sure it's doing something I know eventually come back to us but let's see if we can get that single improvement here. I don't know if it's later in the course, so I can't remember, but I don't know, let's just make our lives a bit easier, right all right, let's take a look here so what do we have? We have logs i mean, if this works, that 'd be great. 
+
+Speaker  4:54:34
+Gets everything echoed to the SD out and then we obviously could just tailor logs and that would actually let us tail well, that would only tail one we actually can do a an asterisk on that to tail them all, to be honest so we'll go ahead and we will now run it again. I can see if we get output here, and I'm just going to split this vertically, I'm going to give this a nice refresh here. And I want to see if the other logs pop up here. 
+
+Speaker  4:55:02
+And there they go, there we go. I wish that they were named a little bit better in terms of what they are, but the very least we can see that. And so now what I can do is I can go and say tail F logs run asterisk dot log and so now it will show us all the logs, right and so if there are any changes that are happening here, we'll get propagated but it seems like they are propagating here now, 
+
+Speaker  4:55:31
+Are they? 
+
+Speaker  4:55:35
+So that's all it's doing it's just going out and doing that one thing. 
+
+Speaker  4:55:46
+Well, I mean, hey, like it's an improvement of, of what's happening before but yeah, I just, I, I still don't know, like, I guess it must be doing a tool call. I feel like there should be more going on there. Is that actually streaming the information? 
+
+Speaker  4:56:04
+I'm just going to be patient i'm going to pause and I'll be back here i'll give it like 5 minutes, but if it goes over that, I'm going to stop it and I will just very much try to get something that is logging a bit better but I'm not exactly sure what it did to change the logging here, so I'm just going to check and see if that's the case here. So that's what I'm looking for right now as I'm trying to find where in the code base it is doing that you might say, well, Angel, why don't you just ask it well, because it's, it's used up right now and also I just, I, I rather just look myself and find it. 
+
+Speaker  4:56:39
+So run logger. 
+
+Speaker  4:56:46
+Agent yeah, another agent yeah, 
+
+Speaker  4:56:55
+Uh huh. Ok, 
+
+Speaker  4:56:58
+I don't think it i don't think it's doing what I'm expecting it to do. Yeah, I I can't tell from that code anywhere that indicates that it's doing that that's going to log it more, but it's running, so I guess I'll wait oK, all right, the results are coming back here. I'll just close this one this one's not that useful here, and I'm just going to close this log and reopen it. I don't feel like it's streaming i feel like it would be like I'm making this tool call and I'm doing this and I'm doing that, 
+
+Speaker  4:57:29
+You know what I mean so, you know, maybe that's a separate thing to do is try to get more verbose logging. I feel like, you know, the agent SDK should just have that built in where it's like they should just make that opinionated because already they're already making the agents opinionated. So why do I got to do extra work to get that logging out there? If there's a library out there, I don't know of it might be interesting. 
+
+Speaker  4:57:49
+But yeah, we're getting a results back and I was just hoping to kind of get a sense of how long something takes, but it seems like this is working. One thing I am interested in seeing is if our findings data is updated so that we actually have better outputted information. So we will see that here in just a moment. Ok, so I'll just pause here and wait. Ok, so we are back. 
+
+Speaker  4:58:15
+And so now we have results let's go give this a nice refresh here i want to take a look at our Jason why is your Jason empty? What the heck? 
+
+Speaker  4:58:30
+Well, great, but where's my findings? 
+
+Speaker  4:58:35
+Am I crazy here is this just empty oK, so. 
+
+Speaker  4:58:42
+My findings Jason. 
+
+Speaker  4:58:48
+So after running I'll say debug. 
+
+Speaker  4:58:53
+After running my agent for main dot Pi, it was supposed to log results to results dot Jason but it's empty. Do you think this has anything to do? Do you think when we do you think when we added logging or changed it to run multiple agents at the same time, 
+
+Speaker  4:59:25
+This is where we lost the findings, Jason Data. We still want logs and paralyzed agents where's my results? Ok, so we'll let it do that there. See what it comes back with. And you know, so far it's just talking about the sub agent and so we're having issues with the hooks and so there are issues with getting actual information at least that's what it's suggesting. Again, I'd have to dig myself to figure out why we only get the final prompt for logging, but we're clearly missing a lot of information. 
+
+Speaker  5:00:08
+You know, again, that would require deeper investigation of, you know, reading code and looking at code but anyway, we're still trying to figure out why we're not getting our findings and so there could be many reasons i can see the problem let me check the research agents actually returned to understand the format mismatch. And so let's see if it figures that out i really hope it doesn't try to fire off the agent as I don't really want it to do that, but we will see what we get oK right so we have a reason for failure so the chain agent ran the file record finding on everything, deduped it Y fails which expects it to be this format, but the coordinator passes a plain list like this. 
+
+Speaker  5:00:45
+Add error logging so the failures are in silent handle the coordinators natural output format as a fall back. I don't understand it should get formatted anyway into pedantic, right? 
+
+Speaker  5:01:03
+Ok, well let's apply it i'm going to have to run this whole darn thing again and I don't have observability for sub agents, which is not great, but I will run it again and then we will see. But now it kind of makes me want to just roll my own using the Anthropic API if the Agent SDK is not really providing the tooling that we were hoping to have. 
+
+Speaker  5:01:33
+Still going here fields were passed the string, but got iterated character by character. 
+
+Speaker  5:01:42
+Ok, so. 
+
+Speaker  5:01:46
+Tries the strict find settings, finds list parse, which it should still works. On failure, should log falls back to converting it to the quarter's natural format returns a proper thing rerun the main and you'll see your results. Ok, so let's go ahead and we will run it again. I'm just going to, I don't know what will happen if we run it a second time so I'm going to delete out that. I'm going to pause here we'll be back when this is done running oK, OK, so we can see our results printed out here let's see if it actually filled out the results, Jason, There we go. 
+
+Speaker  5:02:23
+And so I'm just observing the information so we have a URL, the document URL document, what would probably be also really good here. I'm not going to do it right now, but like I would probably ask it to like whatever excerpt it took out specifically that it used i would probably say like, hey, can you provide that information because I think that would be like cite your sources, literally pull the piece of content that you're citing, not just literally put a URL there. And I think that would provide a better thing. 
+
+Speaker  5:02:54
+But the question was like parallelization and so I, yeah, I don't think our logging was an issue of parallelization it was a formatting issue there. But now we know that there is an issue with sub agents, at least with the SDK at this time that it's an internal, at least that's, that's what it's purporting is that it's an internal loop and we do not, do not know what it's doing until it reports back. 
+
+Speaker  5:03:19
+And that's not great from a uses perspective, right? So I would imagine, you know, if we're going to build something for production and we need to track stuff, we're going to have to roll the stuff ourselves using the lower level anthropic client but for that case, it actually would have been probably fine for what we're doing. But anyway, yeah, there we go. 
+
+Speaker  5:03:43
+Let us take a look here at few shot prompting oK so the idea here is that we have something we want we want to extract the measurement from each ingredient. And so now we might say roughly 3 teaspoons of olive oil and we want to format in a particular way. So here we're saying format it like this, but to make sure that we get it the way that we want, we're going to provided examples, OK? And the reason we do that is that it's going to provide consistent results and it's going to reduce hallucinations and, and this works extremely well. 
+
+Speaker  5:04:13
+Some other things that you can do is you can provide both good and bad examples. So like when I'm trying to get my Japanese language learning app to help with grammatical structures for output, I will provide really good ones and, and bad ones. And in fact, I will even score them and that will help them a lot more. But yeah, it's not a complicated concept add in examples or, or examples of of the results and you'll get better results oK. 
+
+Speaker  5:04:44
+Let's take a look here at goals and criteria driven results. So if you have procedural prompts that make the coordinator rigid, if a step breaks or the task doesn't fit the script, it will break. So here's an example you're a coordinator follow these steps exactly. Call this, call that call do this, do that, return the reviewed output always follow these exact sequences and so you know, if something fails along the way, you know The thing is done right. So a better way is to give the coordinator a goal or a criteria so first we're looking at here we're saying, you know, you're a researcher coordinator your goal is to produce the response that Feliz addressed the user request with accurate, well supported findings. 
+
+Speaker  5:05:29
+This is your quality criteria. These are your available agents, which we don't need to do that because in agent SDK it already knows when we're passing them in. But the point is, is that this one is going to be very valuable to us, the quality criteria. And then we have guidance down here if needed be but really the major thing we're looking at is this quality criteria, right? And so we can go further by specifying that quality criteria. And so if we go back here for a moment, we have that which is fine. But here you'll notice like we have very specific checklists of that information. We even take it further and say like what we're delegating out in our research goal or when to stop. 
+
+Speaker  5:06:10
+And so we have a lot better information about goals and criteria. So that's something we should give a try oK, 
+
+Speaker  5:06:23
+Ok, folks, let's continue on so I'm going to make a new folder here and this one is going to be for criteria. Criteria driven i believe that is. 
+
+Speaker  5:06:36
+The name we were looking for here. Technically it's goal and criteria driven. Where'd it go where'd it go where are you here we are. And I even spell criteria, right? It looks kind of funny. I don't know, but that's what it's going to be if it's no good, you just tell me it in the comments and be like Andrew, learn to spell. I know i wish I could. So what we'll do is we'll go all the way down here and remember we know how to refactor code it's interesting because we worked on that other use case and we never came back to it in the Agent SDK i don't know, I just had no interest in it and we spent all that time re factoring it too. 
+
+Speaker  5:07:12
+But at least I can read this one still, so it's fine. 
+
+Speaker  5:07:19
+So the question is, is this thing using criteria as a means to drive? That's what I want to know so I'm just going to go back and look at my slides so I can have an idea quality criteria. Quality criteria, That's what this should be called. Quality criteria. Ok. And so do we have that here? 
+
+Speaker  5:07:46
+I'm going to type into Claude. Nope, Nope, Nope wrong one, wrong one we'll go back and we'll say Claude here just because we're ending up with too much stuff here. And you know, for my main, I need to ensure the coordinator has a goal and a quality criteria. What can we do for that, right? And I'm going to go down here and look at our main coordinator here for I almost want to refactor this because it's becoming quite the headache, OK, over here. And so we have these, we actually do have in phases, right? Well, hold on. 
+
+Speaker  5:08:32
+Because here's The thing is like, if you go back to here, like look, we have your coordinator, you follow these steps exactly and this thing is going through phases, which is not necessarily a bad thing it can do that. But you know, is there a way that we can be more criteria driven? Ok, So we'll go here and say yes, down to this one here. 
+
+Speaker  5:08:54
+We'll see what it comes up with. Ok, But maybe we should have gave it an example as that might have been better even the the code that I have would have been a better example, right. 
+
+Speaker  5:09:06
+So gold block at the top and then inline coordinator evaluates against concrete standards. Update the. 
+
+Speaker  5:09:14
+Evaluation coverage tool description. Ok, so here we have our goal and criteria so what do we have here? By the way, our prompts getting kind of long too. I'm not sure if it's too long, We say produces A curated source back list at least 15 distinct films so that's been very clear as to how much then a fan school could could watch next the final output must cover all 5 similarity accesses and we have quality criteria finding is high quality when all are met. 
+
+Speaker  5:09:44
+So content, one specific information sentence about the film, high film, etcetera, etcetera, etcetera so that is good. I like that actually that is pretty good. 
+
+Speaker  5:09:55
+I don't see how it would loop back though. 
+
+Speaker  5:09:59
+So that might be the only thing that's not good here. 
+
+Speaker  5:10:07
+The other thing that I would want it to do because we didn't have this before, but I needed to actually extract out the findings information. 
+
+Speaker  5:10:18
+You know, we are, we are citing sources, go back to our findings. 
+
+Speaker  5:10:30
+Ok, So I'd say like, you know, we have our findings information, we have our findings information, but it seems like it's just focused on on finding a very specific movie and listing like let me go back over to here. Is this IMDb, just IMDb information? 
+
+Speaker  5:10:56
+Just IMDb information. 
+
+Speaker  5:11:00
+Where findings is really collecting the research parts. 
+
+Speaker  5:11:09
+That justify its choice. 
+
+Speaker  5:11:15
+Also findings, you know, should actually take the small expert. 
+
+Speaker  5:11:27
+That it's sourcing so we can see not just where the source is, 
+
+Speaker  5:11:36
+But what we are borrowing, what we are referencing exactly. Ok. Because that definitely is an issue, right. And so to me, because like if we're just going to have a bunch of IMDb stuff that's not, that's not helpful, is it? right. And we are using Haiku, It's not the best model, but it seems to be working OK for what we are doing i'm actually quite surprised to be honest. But it'd be very interesting to see what kind of different results we would get if we used another one. 
+
+Speaker  5:12:10
+All right, it's back let's see what it's decided to change so here's what's changed chemo infrastructure so used to hold name film, making it double as the film's identity card now the film director are top level fields on finding items and source only describes research documents being cited. So finding the most particular information, print findings. So here it might be like this a telenafic teenage girl is targeted by her peers. Yeah but the problem is that if it's always from the same darn place, it's not going to help us. 
+
+Speaker  5:12:40
+All right, So I'm going to go check this a little bit more thoroughly here. And so name of source. 
+
+Speaker  5:12:49
+Here each finding is one piece of evidence of of why it's similar. The source is the research documents you're citing, not the film itself. The excerpt is an actual passage of text quote if possible. The only thing is like, if everything comes from IMDb, it's going to be bad, right and so I won't know until we run it, but at least we now have something that's a little bit better and so hopefully that fits better into our criteria. I'm not sure if it actually tried to update the quality criteria in any way. So, you know, I'm going to just ask like, does the collecting of findings. 
+
+Speaker  5:13:26
+Tie into our quality criteria. 
+
+Speaker  5:13:34
+For evaluation? Ok. Because that's what it should do, right? And I just want to be explicit that it's actually thinking about, well, whatever thinking it can really do, but thinking of that. And so I just want to go down here. Not really there's a gap, yeah. Just parses and stores it returns records with no quality feedback so the coordinator self assesses against the criteria it's a pure model judgment the tool just logs it echoes whatever the score coordinator provides. 
+
+Speaker  5:14:03
+The quality criteria is the coordinator prompt, so nothing enforces or measures it so the coordinator has to mentally remember the criteria at the evaluation time, which is unreliable. To fix this, record findings compute a quality breakdown per finding. Is that what we really want. 
+
+Speaker  5:14:21
+Score against a quality criteria, so the coordinator gets immediate feedback. 
+
+Speaker  5:14:27
+And so we have director, source, whatever, whatever. 
+
+Speaker  5:14:34
+Assess coverage using quality already returned from records finding score 0. The only thing is like, you know, I would just, I would just suggest that in the evaluator if, if it's just IMDb, that might not be enough as a source. So the sources need to be varied. 
+
+Speaker  5:14:59
+Ok, I'm. 
+
+Speaker  5:15:07
+Not sure if it's an evaluator, but you can start to see what I'm saying, right like if it just brings me all black IMDb information, even if there's information there that's not the greatest, it's plot, it doesn't justify why it's similar similarly claims or, you know, things like that yeah yeah, exactly. That's why we're using our brains here. And so we will go up to here and take a look so what do we have? 
+
+Speaker  5:15:38
+So yeah, weak sources. 
+
+Speaker  5:15:46
+And maybe it's not the evaluator per southeast, because the coordinator has to kind of like tie that in here. Still going here. 
+
+Speaker  5:15:59
+Ok, so we have something new. Let's run it. Ok, we'll go Python main. 
+
+Speaker  5:16:10
+And it's off to the races here we'll see if we run into any issues. I'm not sure if it will print out whether the criteria is happening again, this is all about logging right and getting that keen information. If I was building this for real and not just for this, because again, this would double or triple the time, I would be stepping through everything a lot more individualized all this would be re factored. I would make sure every area is captured and then I can make sense of it to get the results that I want but anyway, this is fine we will sit back and see what happens oK, all right, we are back and it's not fully done, but we do have a bunch of findings, right and so we have plain covered films, 27 findings. 
+
+Speaker  5:16:52
+And notice it actually has more than one round of findings it's doing way more source documents, which is really, really nice. Is it actually storing the results? It's not storing the results that's going to be frustrating and it's not storing them right away. I don't like that. So now I have to wait till it finishes to find out if it actually stores them. Ok, and that's agent six. Yeah, it's not writing the the logs. 
+
+Speaker  5:17:25
+Do we at least get the logs in here no. 
+
+Speaker  5:17:30
+Ok, so this is one problem I have and I'm going to just adjust this so I'll give it back some of the feedback here. 
+
+Speaker  5:17:39
+Ok so I'm going to go here. It's a little bummer I had to do that. I can see my agent collecting findings, but it's not writing the findings as they find them. And that's a problem because if my agent loop quits or my program crashes, 
+
+Speaker  5:18:03
+I lose. 
+
+Speaker  5:18:07
+That findings data. 
+
+Speaker  5:18:11
+Ok, so that's one little change I'd like to make if I can make that improvement. As this is getting bigger and bigger to run i'm not sure how much it's consuming i don't have a means to track i'm sure we could figure out token usage if we really wanted to, but I'm not doing that right now. 
+
+Speaker  5:18:27
+And so we will just wait a moment here and see if we can make that improvement. 
+
+Speaker  5:18:34
+After each batch. Sure, we'll say yes. 
+
+Speaker  5:18:43
+That'll be a little bit better than what we have going on here. 
+
+Speaker  5:19:00
+Ok so now that should be a major improvement. I'm going to just stop here, type in clear and we will go ahead and run it again and so I'm hoping this time I'll actually get results and that will be much more useful to me. And we should have a new run there we go. And we will just hang out here oK the other thing is like the results should be named on the run and probably should go into the into the the run folder but that's fine we'll worry about that some other time. 
+
+Speaker  5:19:26
+And we are getting findings back here i'm going to give this a nice refresh. And now we're getting results. The only thing I'd probably ask is I do know is not dump everything. Again, we're not trying to build a full, full app here, but I'd probably dumped it somewhere else. So here we have the excerpt of the information where it's sourcing it from so here we have Wikipedia, here's another one from Wikipedia, another one from Wikipedia, another one from Zapped. And so you can kind of see a pattern here where it's not going out to anywhere else and so I mean, it's fine oh, here's an IMDb one that's totally fine. And so like if I wanted something that was good, I think I would also needed to go out to like. 
+
+Speaker  5:20:06
+Independent reviews and things like that and I think to really make it work, we'd have to be even more specific and say like, you should go here, you should go there, you should do this, you should do that. We're getting some errors back now for some of the findings. 
+
+Speaker  5:20:24
+Ok, so it's missing fields, but at least it's doing what we want it to do. Can it work through these errors i don't know. 
+
+Speaker  5:20:35
+Oh, it's formatting it OK so it didn't get back what it really wanted to. That's really interesting because we're forcing it through pedantic so it should always come back with the results that we want so we have high quality results. I wouldn't call that high quality but again, we are using Haiku as our model to keep costs low and I can already see problems with my data, which is fine but we'll come back and we'll have seven ten sufficient false. 
+
+Speaker  5:20:59
+And. 
+
+Speaker  5:21:03
+I have only one Japanese film. 
+
+Speaker  5:21:13
+And so we are just chilling out here trying to see the fall following one i think it's the last one we'll be back here in just a moment oK, We have our final results here and so we'll take a look here. And so it's just telling us what it found here i kind of wish we had a, a report or summary here because obviously we have lots of data. And so now it's coming back with excerpts of information. So carry fury scanner, ZAP, Firestarter, carry twice the fury so we're getting repeats here. 
+
+Speaker  5:21:47
+And so it's not taking these findings and really condensing it into an aggregated result. But we didn't ask it to do that. I would say that we have satisfied our criteria at least. The only challenges here is that I don't really see it in our, oh wait, hold on here carpet areas. 
+
+Speaker  5:22:08
+24 duplicated films, top 10 ranked list, 7 out of 10 coverage oh, and so here's the top 1. So before I was just, I was confused it was just reading, it was just showing me all the findings oK, so we did have a summary here this entire time. And so it's really suggesting Akira, I guess so I like, I wouldn't really agree, but it does have those telepathic stuff. 
+
+Speaker  5:22:34
+So we'll go back up to here. Yeah and so does it really meet our criteria? And that's the only thing that's kind of hard to tell. And so I don't want to spend any more time with this we're only 16 minutes in. But you know, if I wanted to improve this a bit better, I would try to again figure out, OK, how do I know that's meeting this criteria, right and so we have that criteria there and again, it's just the logging and the agent SDK is not great but anyway, we put it in there. 
+
+Speaker  5:23:04
+That's it for now oK, Cha, cha, 
+
+Speaker  5:23:11
+Let's take a look at how we can help enforce our rules that we actually want the the agent to do. So if you prompt an agent like in the coordinator and be like, yeah, we want you to always research before synthesizing, right always research before synthesizing. I never called the delegate synthesis before delicate research has completed. And you think, OK, well, I wrote that in there. Is it going to do that? It might not because when Claude has long conversations or unusual inputs or it's just having an off day, it will just not listen and it will do something else. 
+
+Speaker  5:23:44
+Ok. And that's an issue because you know, we wanted to do the things that we're asking to do. So how can we get enforcement through some programming stuff and so we can add prerequisite gates, things that have to happen or have to be met before it can proceed forward. And it makes it structurally impossible for them to skip so look at here we have our route function so imagine it's going off it's like, OK, who are we running to what's happening here? And we're going, OK, so if we are in this case, right, and the context is this and we have research, right, then it's like, hey, you didn't do this first, so you must go run the synthesis agent down here, right and so we are enforcing it that way. 
+
+Speaker  5:24:33
+And so that is fine. Even better way to organize it is using hooks, right so what we can do down below here is as we have our tool block coming in, our information coming in, it's like what tool to call before it calls a tool, it can look at those hooks. And so it says OK before you do delegate synthesis. And if you if your context is research, then you must do the research first or if it's after this, then do that, OK. And so the idea here is the prerequisite gate is don't let this run until it is done and the hook mechanism is a function that fires automatically before or after a tool call, which is where you put your logic gate. 
+
+Speaker  5:25:17
+Ok, there you go. 
+
+Speaker  5:25:24
+In this video, we are going to set up some enforcement gates and I think in this case, we are going to use Anthropic CLI direct or SDK, in this case enforcement gates. And the reason why with hooks, the reason why we're going to do it that way is because I know that agent SDK has probably hooks built into it if it doesn't, well, that's a bummer but I feel like this will be just a lot easier for us to do if we are using that there so I'm looking for one of our prior projects. 
+
+Speaker  5:25:57
+Where are we doing that maybe task use where we have something very simple and so here we have, but this is with agent definition, so that is too new. Ok and so I'm looking for something this is task tool i guess I chose the wrong 1 and I wish I kind of numbered these as we went so it would be a lot easier for me to find stuff. 
+
+Speaker  5:26:19
+We have narrow task decomposition does this use tools? This does use tools, OK. And So what I'm going to do is copy all this here and we're going to go into here, OK? And we'll make a new main dot pie and we will paste this in here. 
+
+Speaker  5:26:44
+And I'm going to go here and we'll go into enforcement gates. 
+
+Speaker  5:26:52
+We'll type in Claude. So I want to ensure that. 
+
+Speaker  5:26:59
+We enforce tool calls in the expected order in the expected order or requirements in the case that the prompt guidance simply ignores it. And I want to have hooks for before. 
+
+Speaker  5:27:24
+And after tool calls to have this enforcement, OK and we'll see if it can figure out exactly what I'm trying to ask for. Again, providing examples would be better we have example code I can do that. But I want to see what happens if I just tell it if it understands what I'm trying to say. But we do have examples up here. Ok, that would help give it good context. And I mean, like in the the example I had had like literally a route function that it would call and then decide on the tools i mean, that's no different than saying like call tool, right and so in here see how we have like our steps and stuff like if stop reason is this or whatever, whatever, then maybe we would do that. 
+
+Speaker  5:28:10
+I only see screening agent here so maybe we need more than a single tool if we went a little bit farther back that might have been better. 
+
+Speaker  5:28:20
+With a pre post hook around tool calls in the coordinator loop to guarantee ordering and requirements even when the model might not follow the prompt guidance oK, so I think it knows what it's talking about. I don't know why it always wants that fine, we'll give you the top directory. I don't see why it needs that. Why, why, why, why, why, why, why, why why, why, why, why Why are you going into the directory prior to it stop? 
+
+Speaker  5:28:50
+I wish it would stop doing that. 
+
+Speaker  5:29:01
+Because it's wasting time when it does that. It doesn't need to look at any of that stuff. It just needs to focus on its own code base. 
+
+Speaker  5:29:13
+We'll pause here we'll wait and see what we get. Interesting it's decided to make a gate dot PY file. Let's take a look here so we're getting, oh, we got another file going on here what's going on? Look at our main dot PY. 
+
+Speaker  5:29:30
+I'm trying to figure out where it's adding those gates, pre imposed tool call from the gate enforcement gate. So it creates a gate, then we can add a hook and a pre hook that's kind of cool. I actually like that it did that so maybe that's why I wanted to go up and look at my code because it's trying to match my coding practices, which is fine i mean, like I do like that, so I cannot complain, but I would like it to not go into the extended repos and consume a ton of tokens see, like how we have 8 8 tokens such as larger my consumption, but it is actually getting the coding style the way that I want it to be or closer to what I want it to be. 
+
+Speaker  5:30:09
+And so I'm going to go all over the top here let's see where the gate information is so it's going to give us a summary. So we have start at the start of each coordinator before executing any tool call, we'll do a check pre, then we will have this check, then we'll have a post check, and then we have a summary. We have 4 built in factories so Max hook calls, no duplicate arguments. A lot of stuff going on in here. When a pre hooked block is called, we have an error if there's an issue, but let's take a look and see if we can make sense of it. 
+
+Speaker  5:30:38
+We only have a single tool so I'm not sure how useful this is going to be i want to follow through to wherever this is enforcement gate, 
+
+Speaker  5:30:50
+Ok? And so it's here being passed to the run coordinator. 
+
+Speaker  5:30:59
+And so here, OK, in our actual loop here when we check the tools, it says check pre, 
+
+Speaker  5:31:08
+But where? Where's our gate logic? 
+
+Speaker  5:31:14
+Ok, so. 
+
+Speaker  5:31:19
+Screen post hooks oK cool. So add a gate, add a prehook. 
+
+Speaker  5:31:31
+Ok, where is the logic? Where do we store? Where do we define the logic when a gate is a hook is triggered? 
+
+Speaker  5:31:54
+Because here we see like in your tool, you'd have this like check pre pre. 
+
+Speaker  5:32:02
+One seventy nine one ninety so we'll go over to here. 
+
+Speaker  5:32:07
+Oh, right here oK, so. 
+
+Speaker  5:32:11
+Is that how it should work? I mean, I mean, is that how it should work? Shouldn't we have the code listening and then it triggers a function? 
+
+Speaker  5:32:31
+It seems. 
+
+Speaker  5:32:35
+Doesn't really seem like a hook architecture. 
+
+Speaker  5:32:45
+And that's probably because I mean like I'm used to TypeScript in other languages, but like it's not like it's like calling a llama or something. So we define or like a proc. 
+
+Speaker  5:32:58
+So I might have to tell like, hey, where's my llama where's my proc 4-2. 
+
+Speaker  5:33:08
+So the loop shouldn't look like this if else, it should look like yeah, a llama there we go oK, like I don't know what it is in called in Python, but it would either be a proc or a llama and that makes a lot more sense the the gates fire pre hooks the and they block and then they fire post hooks all internally let me redesign it. Sure, why not? We are back to look at the code and so now it kind of that looks like that or it should look like that so we go back over to here and if we look at our tool gates. 
+
+Speaker  5:33:39
+Now it's using a llama and it's calling it that way and so that looks better. I don't know this would be a lot better in TypeScript, I think i don't really like this in Python, but you get the point, right the idea is that we have a gate and the gate should get called and make sure that it meets whatever requirements. But again, I'm not happy with this i'm not going to go and re record this and do TypeScript you get the idea of what it is and just remember why that's important, OK? 
+
+Speaker  5:34:10
+A. 
+
+Speaker  5:34:13
+Hand off protocol is a structured package that the agent assembles before escalating it ensures whoever receives the escalation has everything they need without having to dig through conversation history. So the idea is that you have this hand off information and then you can escalate it to a human over here. And we're finding that maybe we should have been using TypeScript this entire time because this looks a lot better for this build stuff but anyway, we will go ahead and give this a try oK, 
+
+Speaker  5:34:45
+Hey folks, we are back and I want us to implement this hand off protocol so I'm going to make a new folder here we'll call it hand off protocol and what I'm going to do just to make it a little bit easier and go back to this whole taking screenshots and making sure this stuff works because I have that slide right so I'm just going to go here and I'm going to grab that slide information that I have that I made. This is because I just I usually put them in the notes down here, but I didn't do that. 
+
+Speaker  5:35:14
+Ok, so we'll go ahead and I'm actually just going to grab all the text here i'm not even going to goof around. I'm going to dump that into chat GPT i know it's a Claude course, but don't want to waste my credits. Give me the text it's what I'm writing here off screen, getting chat GPT to generate out for me. Ok, I'll just give it a moment here and I'm going to CD back here into this directory, hand off protocol. And I want this information. 
+
+Speaker  5:35:49
+Oh my goodness i just want all of it here so we want to grab it, copy the response there we go. And so we'll go ahead and go to plot. I want you to implement this using TypeScript. No will that work in this case using the Anthropic SDK directly? 
+
+Speaker  5:36:16
+I guess we just let it use whatever it wants in the main dot pi. This is what we want to show off, which is the handoff functionality. Ok, we'll hit enter and hopefully they'll figure that out and just write it in the main dot pi. 
+
+Speaker  5:36:38
+Just trying different approaches here to get different kind of quality, though we were doing OK just copying prior code bases we're obviously getting quite a bit here. But yeah, the goal here is just to make that hand off and so hopefully with that reference, even though it's not exactly the same code that we're doing here, we will get something that looks like that and that would be really, really nice. Ok, so we will just hang out here for a little bit. 
+
+Speaker  5:37:09
+Ok, so we have our and we'll say yes and I'm just going to close some of these out here so we can take a look. Where did it go? 
+
+Speaker  5:37:23
+Where is it writing? 
+
+Speaker  5:37:30
+Hold on, write me the code where's my file? Here it is oK, great. And. 
+
+Speaker  5:37:42
+Probably because it's not loading the same way so here we have look up order, attempt refund, clear fraud flag, simulate back end, look up order that's fine so it really did pull from our older code base, attempt refund and here. 
+
+Speaker  5:38:00
+Build hand off so here we're building the hand off. Ask them all to synthesize the structured hand off package for the conversation, 
+
+Speaker  5:38:09
+Escalate, run the agent good. 
+
+Speaker  5:38:15
+And here we see in the loop as it loops to the tools. If it needs to escalate to a human that's going to build that hand off and hand it out that way there and so then it stages it down below. So it does have a little bit of an issue here with the call. 
+
+Speaker  5:38:34
+And I'm going to go all the way to the top here because it's not loading in the the environment variable i'm going to go over to this one here. It's missing maybe not that hello world, it's the anthropic SDK. We'll go into another one we'll find one here here we go there's one. And so because we, we actually need it for this to work, it won't work without it, right? And. 
+
+Speaker  5:39:02
+You also need dot env it didn't bring that in, which is fine it's fine if it didn't do that and we need path, 
+
+Speaker  5:39:10
+Ok. And so now we'll try to run this again. It was already trying to run it, but we'll, we'll run it it was trying to be, it was being a little bit too aggressive there. 
+
+Speaker  5:39:26
+And. 
+
+Speaker  5:39:28
+This is what we get for not starting from a base. 
+
+Speaker  5:39:36
+Maybe because of where, where and how it's loading it as we should have that anthropic key somewhere. I'm just going to type in key here, like key, there it is. And then does it have this one key? And that's our problem so we'll go over to async. 
+
+Speaker  5:39:55
+Nope, that's not going to help us here. 
+
+Speaker  5:40:00
+You need to fix. The authentication for main dot Pi, you can look at narrow task decomposition main dot Pi for a reference on how to fix oK. And so. 
+
+Speaker  5:40:21
+I mean authentication API key, right, 
+
+Speaker  5:40:26
+For setting the API key to the client. 
+
+Speaker  5:40:34
+And make sure you are configuring the client correctly. And maybe we should have copied it because we do have this async anthropic stuff in here and it's not doing that right. So maybe that was my, my mistake. 
+
+Speaker  5:40:54
+Mm, hmm, I'm going to tab here and make sure you use async. Ok, 
+
+Speaker  5:41:12
+We are helping it along there, folks. 
+
+Speaker  5:41:21
+Ok, we'll take a look at its refactor here. 
+
+Speaker  5:41:26
+For our hand off. I'll close that out, reopen it, cancel, cancel not moving anything here. Sure, that's fine. And. 
+
+Speaker  5:41:39
+I don't really need that main there, but that's that's OK. Ok, so that looks like they may have fixed it we. 
+
+Speaker  5:41:49
+Still have client messages create, which is fine it's fine if they want to do that, let's go ahead and run it, 
+
+Speaker  5:42:01
+Ok. And so see here, it attempts it and then it has to escalate it to the customer. There you go. 
+
+Speaker  5:42:16
+Let's take a look at pre tool use and post tool use hooks. So this is part of Agent SDK where you can basically add, oops, add these hooks for pre and post tool for your tools so that you can go and intersect them so it absolutely does work. You obviously saw we rolled our own hook system, whereas, I mean, this would be really nice if you need to do that there. Notice that it's matching all hooks so technically, if you wanted to, you could tell it to match on a very specific tool, OK and then have different types of. 
+
+Speaker  5:42:56
+It's not that you just only get these two, but you can set exactly what the pre and post tool hook is for each individual allowed tool. But yeah, pretty straightforward, but obviously better than rolling your own if you're using the Agent SDK, right? 
+
+Speaker  5:43:14
+Hey folks, in this one, we're going to look at pre and post hooks i'm going to go ahead and make a new folder here and called pre and post hooks, OK and we'll create a new main, main file here. And I believe what we're going to want here is to use the Agent SDK so I'm going to go into our hello world i'm going to give it nice and simple and we're going to grab the most simple implementation that we have, OK, into here. And what we're going to do is CD into the pre and post hook directory here and we're going to go into Claude and I want to implement pre and post hooks for demonstration. 
+
+Speaker  5:44:02
+Here are code samples. 
+
+Speaker  5:44:06
+To help you think of what to do, OK? Or actually, you know what, let's just, I wanted to do for demonstration. Does Agent SDK have those built in? I'd rather just go ask it to do it because we do have the code samples if it does need them, we can provide it. But I figured, hey, let's just. 
+
+Speaker  5:44:34
+Let's just go see what it can do oK, We're getting some code output it is again going up the repo and taking a look at how there's some stuff and I'm just going to close this out of here and see what we have for our. 
+
+Speaker  5:44:50
+Stuff. Where did you put the code? Yeah, this is the context we have. Does not have built in pre post hooks the query function returns an async generator message. I don't know why I thought there was pre post hooks but. 
+
+Speaker  5:45:09
+That's fine. 
+
+Speaker  5:45:14
+One second. 
+
+Speaker  5:45:17
+Ok, how about this are you sure? What about pre post tool tool? Are these not part of the SDK? 
+
+Speaker  5:45:33
+Is this another limitation of the Python SDK? 
+
+Speaker  5:45:54
+We'll give it a second oK, here we go so it's like I was wrong pre and posts are built in the SDK, just not in the quad code CLI feature. We're doing the Agent SDK what do you think what do you think we're doing here, folks? Ok, so here we have the pre tool, use the post tool, use failure, etcetera. And I'm going to close this out, reopen this up. 
+
+Speaker  5:46:16
+Yeah, yes, please yes. Ok, so it was just researching first time it didn't just go out and do something, it did some research nice. And we'll just say, yes, you can go ahead and update that, That's totally fine. So here we have pre and post. 
+
+Speaker  5:46:37
+Ok, so done the hooks will print pre and post so let's go ahead and see if that actually works and we'll do Python main dot pi. 
+
+Speaker  5:46:50
+Ok, so we have our pre and post right so it did both of them. And so that's all. There's no hello world in here, so I'm not sure how it's going to fix it. But the point is that we hooked up our pre and post hooks and so you know, that's pretty cool. This is obviously a lot cleaner than the other implementation we had. As you saw before, we create like this whole hook system and it was so complicated, but why not just use this because it's right here and we can use it because it is right here. But there you go. 
+
+Speaker  5:47:25
+Let us take a look at prompt chaining so prompt chaining or you can think of it as a sequential pipeline is when you use a series of agents or calls to get the results so here what we're doing is we go, OK, we have our input, we run it, we put that out there, we run it, we put that out there, we run it, we put that out there. And so that would be example of prompt chaining. So this is good for document processing, content transformation, ETL pipelines, any tasks where you the, the shape of the work is fixed regardless of the content. 
+
+Speaker  5:47:56
+I'm saying the word agent here, but you know, before we were saying agent and putting things in an agentic loop. We could do this with LMS, and actually when we were really starting with LLMS and everything was very short and fixed, the only way we could work with LLMS was to prompt chain and so prompt chaining is not a new concept, it's very old, but if you're new to it, just understand that it is basically setting up, you know, a chain like this oK, 
+
+Speaker  5:48:27
+All right, so in this video, I want to show off prompt chaining. So we'll go ahead and make a new folder, so say prompt chaining, 
+
+Speaker  5:48:40
+Chaining, and we will create ourselves a new main dot pie and we're going to borrow from somewhere. 
+
+Speaker  5:48:49
+I'm going to take the hello world because it's super easy. And I mean, it'd probably be better to use the Anthropic SDK for this, but I don't care i'm just going to do it anyway and see what happens because we just conceptually need to understand what prompt chain is oK, so CD prompt chaining, it will let me into this directory please prompt chaining great. And we'll type in Claude. 
+
+Speaker  5:49:15
+Change i'm just going to make sure it knows prompt change no, no, it's just the main oK. We want to demonstrate prompt chaining, 
+
+Speaker  5:49:28
+Showing sequential calls. 
+
+Speaker  5:49:32
+To agents, 
+
+Speaker  5:49:36
+Multiple agents, agents or, or queries to show off a sequential. Yeah, for like a fixed pipeline fixed pipeline. Ok, So we'll go ahead and try that, see if it understands what I'm talking about so remember, it's not like it's bad. It's always about trade-offs here, right? I'm hoping that it does like the coding sample that I have because that's, I mean, I wrote that coding sample, but that's how I would think of it or that's how I would write it by hand but I'm curious as to what it thinks it's going to write. 
+
+Speaker  5:50:14
+Probably something complicated, not how I would do it, but we will see what it does so pause here and see what we get back. Oh, that was fast. That was fast we'll go ahead and hit yes. 
+
+Speaker  5:50:27
+And so we have identify bugs, proposed fixes, apply fixes, right, And we'll go back here. 
+
+Speaker  5:50:39
+It's OK so we have await run step, await run step so yeah, notice I didn't give it any code and it more or less is doing pretty much the same thing so I'm going to go in here and we'll make a hello world. I'll copy this one and we will paste it into here and I'm going to just break it a bit so say puts put hello world here and we could have probably gave it a more complex case. You know what I'm going to do that. I'm going to go over to chat, GBT give me busted, messed up block code for Ruby so I can I can test my agent that fixes bugs. 
+
+Speaker  5:51:25
+Ok, And so I'm just asking chat GPT here to do that for me. 
+
+Speaker  5:51:33
+And waiting in just a second here it's still generating. Oh, there we go we'll copy it. I wonder if I can spot the problems just for fun. 
+
+Speaker  5:51:57
+There's one problem is that the only problem we get. 
+
+Speaker  5:52:03
+A set of 10 tiny broken Ruby functions. Ok, well it says there's breaks, so it'll be interesting to see that work. And I'm going to go ahead and we are going to do Python, 
+
+Speaker  5:52:16
+Python main dot pi, 
+
+Speaker  5:52:22
+And we will see if it runs the pipeline looks like it's running the pipeline. There's nothing wrong with this stuff, right? But did we even save the file? Is it just working on a blank file one second let's try that again. Sorry, I don't think I saved the file now the file's saved. Otherwise it's doing nothing. 
+
+Speaker  5:52:44
+Ok, see, now it's taking longer because there's actually something to process oK, one second here it's applied, its fixes it doesn't tell us what it did, but let's go take a look here and oh, we got logs i don't know, it was logging that's nice. I guess we probably set that up there before. Oh, here we go so. 
+
+Speaker  5:53:09
+I'm just curious what it fixed. 
+
+Speaker  5:53:18
+Found most of the bugs yeah, it said there was 10 bugs, but yeah, I guess it fixed it. Cool so there you go, prompt chaining. 
+
+Speaker  5:53:31
+Let's take a look here at dynamic adaptive decomposition so this is when intermediate findings should change what you do next, which agents to call, how many times and in what order. And these are going to be really good for open-ended research, investigation tasks, anything where you don't know upfront how deep or wide the work needs to go so look at the example you are a research coordinator. 
+
+Speaker  5:53:52
+After each step, assess what you found to decide what to do next you may need more research, a different angle, or you may have enough to synthesize do not follow a fixed sequence, follow the evidence. So let's see if we can implement that oK, 
+
+Speaker  5:54:12
+Hey folks, it's Andrew and we are going to go ahead and do some dynamic, that's a weird word, dynamic. 
+
+Speaker  5:54:20
+Adaptive. 
+
+Speaker  5:54:23
+Decomp, OK. And so the goal here is we want to look at, back at the slide, we want to have the coordinator say, you know, what should we do next what age is it called, how many times and it's open-ended right it's up to itself to figure that out as we work through this it kind of feels like some of these things we've already kind of done, but I guess they're just in different kinds of variations. And so, you know, to me, it's not always really obvious right off the bat until we work through it but we will see how this goes as it seems like a lot of our other models have been pretty darn good. 
+
+Speaker  5:54:57
+So I'm just trying to think of here a basis of what we can work off of. I probably want to use Agent SDK one thing that we haven't really been doing is using the file system method. We've been programmatically implementing our agents in the code, and I might want to take a file system approach to this. And that just means how we organize our agents so they're loaded from a markdown file and they have their own folder and blah, blah, blah. 
+
+Speaker  5:55:24
+It'll make sense here in just a moment so I'm just trying to decide what for us to do. I need kind of like an open-ended objective let's just use something like Chachi BT to think of some ideas one second. Here we go and so I just asked Chachi BT and because it knows it knows me a little bit and it knows me too well because right away it's like Claude code agent dungeon, like make a dungeon this is something that I've tried to spend a lot of time trying to implement. 
+
+Speaker  5:55:52
+And and so maybe that would be a good one investigate like a dev OPS incident commander that sounds too real world that's too too much too much fun i'd save that for something else. Japanese sentence evolution engine? That's something else that tried to implement Fix my broken code no community health analyzer like this is for my community stuff. Clodco skill tree simulator. 
+
+Speaker  5:56:20
+Certifications meet progression. 
+
+Speaker  5:56:26
+I don't understand how that would fit in there. And so we might go back all the way up the top here, open and research, investigate tasks, anything where you don't know upfront, deeper, wide. I kind of like the cloud code agent dungeon to be honest so let's take a look here you build a dungeon crawler where each room has a decision it adapts. You're already build games, trading mods, you orchestrate cloud code, you're teaching this visual mental model. 
+
+Speaker  5:56:53
+So what I'm going to do is we're going to make a new file i'm going to call it plan dot MD and I just want to describe what it is that we want to do and I'm going to grab some of this text here so we have Claude code engine and so goal like technical goal is to implement and I got dynamic decomposition when, when, when intermediate finance should change to do with next agents how many times the call right? 
+
+Speaker  5:57:26
+So anything where we don't need information to go upfront. And so here is a business goal, we will implement. 
+
+Speaker  5:57:38
+Dynamic adaptive decomposition for a agent dungeon. Ok, so we will construct a. 
+
+Speaker  5:57:54
+Mud engine and the agent is you build a dungeon crawler where i'm just trying to see what they're suggesting here. Spawn debug agent if unclear, spawn research agent if too complex, I guess the idea is like so an agent dungeon so the idea is that we are generating the world as we play play the game. The agent has to figure a way to build the static world in code as we play along. 
+
+Speaker  5:58:39
+Ok. And so I guess the question is like, is that a good use case i'll go back here over to here and say, like, you know, is that. 
+
+Speaker  5:58:48
+No, no, no, no, no, no. Ok, I want this text here. I want to ask if it thinks like that's a good idea, because that's what I'm thinking, right? Oh my goodness, Just let me paste i can't paste here today. It's really frustrating now look, now my whole thing's messed up. There we go so we'll go here, right click paste. 
+
+Speaker  5:59:12
+Would this make sense? Because I think that's kind of what it's leaning towards, right? 
+
+Speaker  5:59:22
+I bet it's just like love bombing me here but the live discovery world. 
+
+Speaker  5:59:31
+Ok, well anyway what we'll go do is move this over, so we'll say implementation so technical, technical considerations. 
+
+Speaker  5:59:41
+We want to use Claude Agent SDK. We want to use the file system for agents, EG agents directory instead of coding them using Agent DEF OK. And so those are the things I want to enrich this so we have a spec, you've probably heard of spec driven development. You don't need those frameworks you can just kind of work through this and tweak it as we go. So what I'll do is I'm going to go ahead and type in Claude. Well, not there, maybe not there. We are going to go to our dynamic. As we've been working through this, we've been learning to isolate these folders. 
+
+Speaker  6:00:24
+Dynamic, Adaptive, all we have more than one word here, Adaptive. Oh my goodness, I'm going to change this to no, I'm just going to copy this i guess we'll paste that there great. And so we'll type in Claude. So I'm going to go plan can we, can we create a tech spec, Tech spec MD. 
+
+Speaker  6:00:52
+A technical spec to see its implementation? Or you know what can we create a Yeah, a tech spec yeah, I'm. 
+
+Speaker  6:01:08
+Trying to decide here, 
+
+Speaker  6:01:11
+Do I want a tech spec? Because what I'm thinking right now is, OK, I have this and I feel like it's kind of fuzzily defined in terms of what it's doing. And so I wanted to do a little bit more research and try to better describe the text back of not necessarily the implementation of it, but like I, I, I, like, we know, we know how to implement agents, but the trick is, does our business goal goal fit dynamic adaptive decomposition? So can you try and see how it fits writing a text back? 
+
+Speaker  6:01:55
+Ok. And maybe I shouldn't be calling it text back it's really more deeper research, but I don't care it will still do it and we will come back here and we'll see what it has and then we'll review it. And again, we're just trying to conceptually understand, are we driving this thing correctly for the solution we want, right. I bet people really want me to do the DevOps one, but I didn't do it. All right, we are back and we have something here we'll say yes, we'll take a look here. 
+
+Speaker  6:02:21
+I saw them on effort, medium effort, so I'm not sure why that was so darn long, but it really went off off on the rails it was consuming a lot of credits, unfortunately i'm actually going to go take a look at my subscription and take a look at how it's doing. And right there, look, I've just basically started my day and I'm already halfway through here so this is where we got to be really careful and maybe restrict how Claude is working. I've been having a lot better results with the API where I have more direct control over the exact context use usage, but we'll take a look here. So agent dungeon is a tech space world. 
+
+Speaker  6:02:53
+So damn verbose powered agent and each player demands new content static re planning is impossible the number of rooms dynamic adaptive decomposition is not an optimization optimization choice here it is the only viable pattern. They they make it sound like that has to be that way. Where is it genuinely required so unknown branching of generated rooms and the player moves north why static planning fails here. Pre plan generate 5 room produces a flat context free world the generator cannot know that the player is 3 levels deep in the necromancers tower. 
+
+Speaker  6:03:30
+Encounter depth is non deterministic. Ok, cogeneration for the world artifacts has unknown scope. 
+
+Speaker  6:03:42
+And so here player moves world generation for new room sub features, agent identity inventory, zoologist live in the agents directory this is something that we'd like to do so we have the orchestration orchestration 1, the central coordinator so I don't know why they just don't call it coordinator, but that's fine. Coordinator, the only agent that maintains the full decomposition state, It reads the current state, world state Jason, which is interesting because that's how I've always implemented these things i've always had like a world state file, Jason file. The decision logic is the orchestrator at runtime so in the room, it's structurally simple. 
+
+Speaker  6:04:14
+Does the room have an NPC does it have this, etcetera, etcetera so sounds like it's going to try to maintain the world state then we have the room builder, so generate the structural descriptions. So with the blueprint. Ok, so that makes sense. We have the code writer, so produce TypeScript code in a single game artifact, avoid redeclaring it, lower consistency, cool combat, cool puzzle, great world state model. The world state is shared artifact that makes the the place coherent. So we go look at the world state. The key subtypes. 
+
+Speaker  6:05:00
+Incremental build so each player turn starts with the open branches the orchestrator adds branches that it determines them, and then the orchestrator decides decisions. 
+
+Speaker  6:05:15
+Ok agents world. 
+
+Speaker  6:05:21
+The static dungeon generator creates A finite graph before a player begins a player who never goes east never has that stuff the static system assigns the NPC so the question I have here is I don't want the whole thing being driven by the agent. So like if there's an area that we've been through before, all agents will use the haiku model, that's good because that's cost effective for me. 
+
+Speaker  6:05:50
+Ok, so I guess my, my, my main one question so my question. 
+
+Speaker  6:05:57
+About the text back and I actually don't mind it so it's an OK text back. 
+
+Speaker  6:06:04
+Is are we only generating rooms when we go is? Will this only trigger the agent when we enter a new room? Because we want to not use AI to power the whole game, 
+
+Speaker  6:06:30
+Right? 
+
+Speaker  6:06:33
+Just for its generation of places it hasn't been. And the game engine is controlled. 
+
+Speaker  6:06:47
+By code, right? Right that's it's going to do that, right? It's just a really long dock and so there was nothing in there that told me that it was not going to do that so it says good catch the spec is written as ambiguous about this so the spec currently employees agent could fire on any player action which is wrong. What you actually want is 2 layer architecture, so game engine and then world generator and then the correct gate is that. 
+
+Speaker  6:07:10
+So the room blueprint would be this chain all happens inside one generator room. Once it resolves that room is permanent, the AI never touches again the spec needs a section clarifying this boundary explicitly. And yeah so I would say, yes, add that line and you know, maybe that might make the game a little bit boring, but like I think that we have to be a bit careful where we're adding that and so this is where I would like to see video game develop video game games play out where it's like, you know, it's 90 percent, 70 % code driven but then the the fun parts are that create spontaneous experiences, you know, calls out to LLM i think that's kind of cool or an agent. 
+
+Speaker  6:07:49
+And there could be key areas where it's like, OK, now we have a boss or it's like we decide there's a special thing and then trigger it but we will go ahead and let it make those little updates here, assuming we do not blow through all of our usage here. The other challenge right now is that it also has to do with when you're using clod so like right now I think everyone like both North America and Europe are using at the same time and so consumption will be quite higher. What I do find is that tokens like when we're using Haiku and stuff like that have been going really, really good. 
+
+Speaker  6:08:22
+Like I still haven't had to reload up stuff also, you know, having my extra usage over here has been really, really good as well i'm not sure if this is billed the same way as this, but this consumption has been actually excellent handling our over over overload so I have no idea. I feel like this top part is totally different from this part. That's what my experience has been and so we will just see as we go here. So Section 1 renumbered the key line is explicit AI fires once per unvisited room, never touches again. 
+
+Speaker  6:08:53
+Ok, cool. And so there are two parts to this where we need the. 
+
+Speaker  6:09:02
+The game engine so I'm going to scroll up here. 
+
+Speaker  6:09:06
+Ok, so OK, great, 
+
+Speaker  6:09:11
+Please build me the game engine. 
+
+Speaker  6:09:16
+Ok, actually just a clear context here because it's something we should constantly do so please go build the game engine for tech spec, 
+
+Speaker  6:09:34
+Implement tech spec OK. And so The thing is, is that again, it would be better if we were carrying code over like if I was, if I was being a little bit more diligent, if we weren't on a timeline, I had to get through this course, I would probably spend more time making my components reusable and keep pulling from a base template probably something I'll do for my, my, my more expensive courses. 
+
+Speaker  6:09:56
+But anyway, it's going to go ahead and implement something and as long as it works, that's all I care about and we can observe this a dynamic adaptive decomposition and we're going to be mostly interested in looking at what the prompt is going to be so we'll go ahead and say yes here and we will chill while this generates out oK, All right, folks so it's gone and done the work i think that it might have gone into extra usage and I'm going to just go take a look here as whatever but also I was talking to my friend Anthony he used to do the GCP courses he's like use this tool called monitor the only problem is that it's not reflective exactly of of it he's saying it was like 1 to 1 perfect. 
+
+Speaker  6:10:34
+But in my experience, it's not. So the biggest problem is like monitoring costs and the only way that I can reliably monitor my costs is to constantly open up this window so here it says 99 %, but like it says 123 % here doesn't match. The other challenge is like I have this over usage it didn't even hit the over usage, but notice I was like 99 % for this one task here but we did ask it to do a lot. And you know, I think like the other approach of me always pointing to another code base and setting up the boilerplate for them is obviously reducing the cost greatly. So we really should continue on using our boilerplate and pulling from it because I'm really keeping my cost low doing that but let's go take a look at what we have generated. 
+
+Speaker  6:11:17
+So what do we have? So here we have Agent Dungeon implemented, complete dynamic adaptive decomp run dev. So we have alert types, we have our agents, we have our branch resolver, a bunch of cool stuff let's go take a look here. Again, that's not how I want to fully code it, but it did do in TypeScript. I do have another repo where I actually do this in TypeScript and TypeScript is a great language when you're building this kind of thing because you can make identity object, identity system or whatever it's called i'm not saying that's what it's using, but so here I'm just looking at it and there's something, yeah, let's take a look at the orchestrator. 
+
+Speaker  6:11:59
+And So what we're looking for in here and again, your code's going to be different, but what I'm looking for in here is the actual prompt. So I'm going through here and I'm trying to find the prompt. I'm not seeing a prompt here. So if it's not there, where is it it's under agents. 
+
+Speaker  6:12:19
+Yeah, the orchestrator here, which is fine like I do like, well, I did tell it to write it as agent agent folders. And I don't think this is actually run following the agent SDK because the agent SDK would usually have front matter on the top of it. And so I think they're literally just agents is really now just a. 
+
+Speaker  6:12:40
+A prompt folder. But that's fine whatever yeah, I mean like that's not what this is not what I wanted but and I'll just point it out here like we go agent SDK. It's it's a very specific pattern that is used agent SDK, agent front matter. 
+
+Speaker  6:12:59
+I'm trying to find it here. I guess it's called like agent skills. 
+
+Speaker  6:13:09
+Is it this spec? Well anyway, the point is, is that this is not what I was expecting, but it it still probably will work so the file documents the orchestrator agent in our dad, our dynamic adaptive decomposition. It is central coordinator to the world, receives a player action, determines the sub agent, passes each agent output how it's going to the dad decision tree so they're going to move to a new room, it'll generate A blueprint, it'll determine NPCS, the puzzles, code writer, lure agent, more consistency, world state, persisted game response. 
+
+Speaker  6:13:45
+We have stopping conditions so like room generation, quest expansion, lower consistency overall turn then we have here does that mean it's going to do more than just rooms. 
+
+Speaker  6:13:58
+Needs to be invoked? So here, move to unknown room. Ok, so it's defining it right there so you move to unknown room, but we don't have any guarantees that it'll do that remember earlier we talked about programmatic gates, programmatic gates to enforce things. I doubt that this has it in here and so we're not going to do that but that would be something that we would want to do to really give a guarantee that it's going to do what it says it says like guarantee here. That's not a guarantee we need to give have programmatic guarantees. My room is returned to the player with the completed status, NBC etcetera. 
+
+Speaker  6:14:32
+We have down here agent token budgets. So I guess here saying like you can't go over those budgets and then we have the key files it needs to know about and then we have all this individualized stuff so we got a lot going on here. Let's just run it and see if it works. Ok, so how are we going to run it? Mpm run dev? Wait, hold on, hold on, hold on, hold on, hold on. How does it know what it's using here? Like where is the actual, 
+
+Speaker  6:15:05
+What do you call it? 
+
+Speaker  6:15:08
+Like haiku how do we know that it's using haiku? Where is that here before we run that haiku? Haiku, 
+
+Speaker  6:15:23
+How do we know where do we know, You know, Agent Runner, that's probably where it is oh, here it is. Ok, so here it is haiku. And so they have each one that's going to dynamically load, I guess, or load in those files. Yeah, it's just reading those files, read the agent's markdown file as a system prompt. And so I guess that gives you kind of some flexibility to change those out and load them in. 
+
+Speaker  6:15:44
+So we'll go down below and that's all I really cared about was whether it was doing that. The other thing is like, is it using our environment token? Because we have this here where it's using Anthropic, 
+
+Speaker  6:16:01
+But I don't see it loading it if we go to package dot Jason, this is where we might be able to detect if it's doing that it's not using token so are we using the dot env file so we can use the anthropic API key for our. 
+
+Speaker  6:16:24
+Dynamic. 
+
+Speaker  6:16:27
+For our project? I don't see it in places like main or Agent Runner. 
+
+Speaker  6:16:40
+And I don't see dot env in the package Jason. So I think that here it would probably consume my subscription, which I really don't want it to do. And we're going to go ahead and have that fixed i'll probably go over my budget now just for this one change. 
+
+Speaker  6:16:59
+I mean, it's it's one level up. 
+
+Speaker  6:17:03
+Look, the dot env is, but the dot env is 1 level up. 
+
+Speaker  6:17:15
+I put what level up? I just said one level up i wrote what level up. So it's going to go there we go and so that's what I needed to know. And so this will allow it to know. 
+
+Speaker  6:17:29
+So yeah, now it's going to make sure it's installed so it definitely was missing. And so these are things we have to kind of catch, especially when we're generating large pieces of code. I would, I would probably not want to ever implement something this way i would really walk through stuff here while doing stuff. And so now it's adding that dotting view there we go oK, so now it's adding it in and we will say, yes, it's just doing ATC TypeScript compile so and so now we are in good shape so what we'll do, I'm going to stop this tool, the cloud monitor, which is completely useless for me. 
+
+Speaker  6:18:03
+Dynamic, we'll do dynamic. We'll type in clear and I can't spell or I can't auto complete this easily so we'll just copy this like this and we'll paste it in, hit enter and I type clear. And then from here we will go ahead and do MPM install if we haven't already done that, then MPM run dev. Ok. And so I'm assuming there will be a game loop or an interface or something. So here we go so a world that builds itself as you explore, enter your name. We'll say Durano. 
+
+Speaker  6:18:36
+That's sometimes the name I use for a game handle, sometimes Omen King probably know that so we have this, we have the dungeon entrance you stated at the threshold of an ancient dungeon, etcetera, etcetera so what we're trying to observe here is it going to start building out our world so right now we're going here and we're not seeing any items and we have room information, right? And nothing so let's go ahead. You stand at the threshold of ancient dungeon torchlight flickers against Moss covered stone walls, casting dancing shadows the the small air whatever. 
+
+Speaker  6:19:13
+The paths are broken, A dark corners corridor stretching north and a heavy door to the east. So do we want to go north to a dark corridor that leads deeper into the dungeon or a heavy wooden door slightly ajar? Let's go east. Ok, you head east and the orchestrator is now generating the room. The only thing is like, how does it interpret these inputs? Again, we want this to be really static, but I have a feeling that every single input it's going to evaluate there and so that would be something where I might not want in the loop and so you says you head east, generating room, dungeon, whatever, whatever so I'm going to go here and I want to see do we have any rooms generated? 
+
+Speaker  6:19:55
+I don't see nothing updating here, but if we go here, it should add the room. Ok, So the watcher, A cloak figure, their face obscured by shadow, etcetera, etcetera. And so the thing that's missing here, 
+
+Speaker  6:20:12
+Like it's generated the person lower entries. Uh huh. 
+
+Speaker  6:20:23
+It didn't generate the person. Ok, so already this is failing this is not working good. If we go back up to our orchestrator in here, and this is probably the reason why we shouldn't have generated out on mass. So here player action builder room agent and so the idea is that that should trigger the builder room. You're a room builder in a text based dungeon game your sole job is to generate a structured blueprint Jason object. You must respond with valid Jason, and it does that. 
+
+Speaker  6:20:56
+Ok, which is fine generation rules use zones and depths for exits. And then here it's specifying the depths of stuff. And here's our example output. And so right off the bat, this isn't working as expected. So I would probably say that this is a bust. We could spend more time trying to pick this up, fix this up, but I'm already out of Claude for right now. And the key thing was just to really understand the concept of like dynamic adaptive decomposition the idea is that each time we are telling it to choose what agents to use and determine, right determine what to do next, right and so in theory, we conceptually understand it. 
+
+Speaker  6:21:38
+And we've done a lot of projects here so I don't want to hit us over the head here with a complex project, but yeah, we can see that there are issues and I again, I think going forward, I'm going to be more diligent about not generating from scratch like this and pulling from an existing code base that we know already has good, good observability and things in it oK, Chow Chow. 
+
+Speaker  6:22:06
+Let us take a look at an adaptive investigation plan so this treats each finding as input to the next decision not just data to collect, but a signal that reshapes what needs to be done next. So here's an example of a fixed plan where you say, hey, we need to do these three things. The only challenge here is that findings don't change after the plans executed. So having an adaptive plan, the idea here is that you are giving it room to make change so I'm getting my pen tool out here so we can read it you're an investigative researcher coordinator. 
+
+Speaker  6:22:36
+After each finding, what does this raise that i don't know yet what could, would have, would change by conclusion if we turned out differently? What claim here needs verification so generate targeted subtasks from those questions so the idea is that you're asking and it's generating subtasks based on that. And then the idea here is that now we can go perform research on those subtasks, OK? 
+
+Speaker  6:23:06
+Let us take a look at raw findings dilemma this is when you pass raw findings between agents as a single BLOB of text and attributions get lost so here the synthesis agent can't tell which claim came from which source and by the the time the final output is written, the Providence is gone so Providence is a really fun word of like, let's say you buy a very old antique and you want to make sure that it comes from a particular place then we use the word provenance. It's a fun word to use i don't get to use it very often, so it's thrown in there. 
+
+Speaker  6:23:41
+Ok. But anyway, here you see it says EV adoption grew 40 % in 2024 Battery cost have fallen the IEA report on page 14 says charging infrastructure is the main barrier. Reuters also reported that the BYD overtook Tesla in Q3 And so you should be asking things like which source, what page number, what document it doesn't have attribution anymore, It's just gone. Ok, So what should we be doing we want structured formats to keep content and metadata traveling together. So here we have our findings, information where it came from, the source and stuff like that. 
+
+Speaker  6:24:20
+Ok, 
+
+Speaker  6:24:26
+Hey, this is Andrew and in this video or this follow along, what we're going to do is tackle the raw findings dilemma the idea is that we get raw finding information, but we aren't keeping the findings of that information right. And So what we'll do is we will make a new folder i hope you're having fun making folders called findings and we'll go ahead and make it a main dot Pi and I keep doing the main dot Pi even though TypeScript has more features because at some point we're going to run into something where it, you know, doesn't have those features. 
+
+Speaker  6:25:01
+And so I'm thinking of one we recently did, but you remember, not the fork based one because that that one's in well, we could grab that one, but that one got converted back into original Anthropic SDK. And so I'm trying to think about what we were using before that I think was task tool. Yeah, the task tool. And so I'll go here, I'm going to copy that code code and we'll go into findings. And I'm just going to go ahead and screenshot, right. Sorry, sorry, everyone sorry. 
+
+Speaker  6:25:37
+Ok, So I just use, I like, I don't like wasting my cloud cred so I just go over to chat GPT i generate out that example. And so I'm just copying this example here that we have so that I can give it an example of what I want so let's go ahead and type in Claude. And we have a new one called findings. So in here, you know, I want to have my research generate out findings here so that we can remember the source of information. 
+
+Speaker  6:26:14
+Here is an example of of findings. You need to adjust this based on the use case. Ok. And so our use case, our use case will be trying to find nineteen eighties late nineteen seventies films that are similar to there was a movie I watched recently that I thought was really fun. It was like 1981 School in the crosshairs, 
+
+Speaker  6:26:57
+Ok. Like it's so similar to 1981 School's in the Crosshairs. 
+
+Speaker  6:27:04
+Ok, Japanese film. Ok. And so I'll go ahead and do that if you've never heard of it before i it was on to be for free and so I really enjoyed it but like it's, I guess they have these films that are, I guess like in Japan, they have idols and so these are, I don't know if they're singers or whatever i don't get it. But the the point is that they in the eighties, it just remind me of a Canadian film so that's why I really enjoyed it but like it seems like a normal like like young adult or or you know, like teen teen movie and it's just starts getting weird and weirder. 
+
+Speaker  6:27:42
+Like first the first half is normal and then the second-half just like it's really trippy. And I just thought that was really, really fun. It's mostly wholesome 90, ninety, 99 % wholesome and 1 %, you know, Japanese Strange, but I liked it i thought it'd be fun to try to find more films that are like that. But yeah, that's just generating it out there but yeah, I'm just trying to convince you to watch another, another thing you've ever seen before but but yeah, it it. Yeah this girl, she goes to school this this guy and he is in kendo so that they do like wooden stick practice or like wooden fighting with sticks. 
+
+Speaker  6:28:20
+But she ends up having telepathic powers and for some reason, the Japanese really like to give people telepathy in the early eighties for some reason i don't know why, but we'll go ahead we'll just say yes here and we'll take a look and see what we have and then we'll review it as it's almost done. But it's a, it's a recommendation, right? If you're interested in a film and it's 99 % wholesome and 1 % Japanese Weird, if you know what I mean. Ok, so, 
+
+Speaker  6:28:50
+So we have the results returned here i'm just going to close this because I never really edited the file i just want to make sure I have the latest and we'll open this up and we'll see what we have so research and summarize key facts you are a research incident with a topic. Let's read bullet point facts about it to be brief, turn research notes into short paragraphs. 
+
+Speaker  6:29:13
+Oh, this is task tool. That's why it makes no sense we'll go over to here. So we'll go over to here and we'll take a look. You are a specialist film researcher with deep knowledge in the nineteen seventies nineteen eighty cinema. And I mean, I would like it to be like, and television and television and we'll go here and so we have like, yeah, like how it put psychic powers right on the top there. That's great so, you know, high school setting called mind control antagonist. 
+
+Speaker  6:29:43
+I mean, it doesn't have to be exactly that it's more like a like a thematic thing, but that's fine you're a film researcher. And so it's really anchoring to that because I gave it that example and so here we have our tools. Why is it this old school way? 
+
+Speaker  6:29:58
+Why did it? Why is it using the. 
+
+Speaker  6:30:02
+It this way? Ok, here, here. Like so I'm going to just ask it here like why did you choose to use Anthropic SDK instead of Agent SDK, right? 
+
+Speaker  6:30:21
+Like there has to be a reason. 
+
+Speaker  6:30:28
+And I mean, I guess because it's like, and here maybe this is the distinction of like, what's a one off task and what's something that you are continuously talking to as I defaulted to the majority of examples in this repo use it directly. So, but that's not a good reason, right? So you you drive the loop manually, you stop it, you explain it that's 50 lines of boilerplate agent SDK. Ok, but but conceptually, but what makes more sense to do right, not what have we been doing. 
+
+Speaker  6:31:07
+Reason choices and then I'll decide, 
+
+Speaker  6:31:13
+Ok, 
+
+Speaker  6:31:16
+What do you think in there, Claude? Ok, so we say is the repo is actively moving that direction yeah, yeah, yeah. The tool, that's not the point the tool boilerplate is exactly what it, the Agent SDK eliminates. 
+
+Speaker  6:31:31
+I mean, I, I was thinking, I was thinking more conceptual, like maybe a, like maybe agent SDK is for agentic agentic. 
+
+Speaker  6:31:47
+I mean, like technically it's agentic anyway so yeah, no, I would, you know, make it make it Agent SDK. 
+
+Speaker  6:31:58
+Ok, so yeah, we got to pay attention just don't vibe code it. Review your code, make sure there's nothing dangerous in there. We'll be back here just a moment and it'll make it the way I'm expecting it to make it oK, OK, so it seems like it may have changed the code back or like not back, but it's now using Agent SDK let's go take a look here. 
+
+Speaker  6:32:20
+And again, we're just reviewing it to see if there's any gotchas. And yeah, it's going to use the API key, which is fine we're still using haiku. So again, we're not using the most intelligent model, but it serves our purpose for this and changed it from film so we don't have television there anymore that's fine we could just stick with film. Return only valid Jason array, no mark up markdown fences, no commentary. I'm pretty certain that it can produce if we use Pidantic and pass it in, it probably would be better we have the research agent over here still OK, good evaluation coverage, submit complete. 
+
+Speaker  6:33:06
+Coordinator prompts so. 
+
+Speaker  6:33:10
+We're going through here. So the only thing that I would say that's a little bit off here is the fact that I would think that, you know, if we're valuing so you know, we are asking for structure Jason output back for findings. 
+
+Speaker  6:33:32
+Can we use pedantic or does or is there a field specifically for enforcing. 
+
+Speaker  6:33:43
+Structure Jason output? Are we logging, are we saving the findings to a file so we can so we can see what they are at some given point? 
+
+Speaker  6:34:02
+Ok. And so those are the two things that I'm, I'm wondering about because normally when you're building this stuff, it has a hard time enforcing that pattern and the only thing it's enforcing it is within here, right so, 
+
+Speaker  6:34:17
+And normally we don't usually have to tell it like, oh, you need to do this structure we usually just pass it as a parameter. It's still using the anthropic key here, which is kind of annoying. So we see this here like why do we, why are we still using anthropic? So did it understand my request because. 
+
+Speaker  6:34:38
+We have call research agent and shouldn't shouldn't agent be an agent? 
+
+Speaker  6:34:44
+We have two all, but it's not defining that we've already learned about that, right so that's going to be another issue that we have here. And so actually I have to hit tab here. Let's get tab tab shift tab tab can I write. 
+
+Speaker  6:34:59
+There's 2 answers here. 
+
+Speaker  6:35:04
+Ok, but hold, hold on, hold on, hold on, hold on, hold on stop. Ok, you know I I do want instructor Jason output validated if there is a field. But I noticed you are still using using the Anthropic SDK. Shouldn't we be using the agent agent SDK and agent definition for the. 
+
+Speaker  6:35:44
+Where is it here. 
+
+Speaker  6:35:53
+Call research agent? And I think it might because of this code base is getting so large, it might be getting confused, OK. And so we'll help that along there because we know that exists, right so why are we getting the thing that we don't actually want, right? 
+
+Speaker  6:36:09
+And we'll give it a moment here to figure that out oK. And I did notice that it was doing that notified down validation on the sub agent. So we'll do that and we'll see if it takes it here. Ok, OK, so it looks like it has updated our stuff here find item, find list, switch over to SDK let's make sure that's correct. Ok, so we'll go all over the top and again, I'm going to give it a nice scan here with my eyes and determine it so we have Pidantic models good so that it's forcing that structure. It has the research state, so it's holding. 
+
+Speaker  6:36:46
+I'm not sure what data class decorator is for, but I'm assuming it's for creating data structures in Python. And so we have our findings and our counter and what's next? We have our information there. Where is our agent definition? Is it like, is it messing with me? Does it not know what agent definition is? Because, you know, I wanted to be an agent let's go back up to here, OK, OK. I still don't see you using agent definition. Like I, I don't understand what it doesn't understand like I don't know why I won't do it so we'll go over to here like. 
+
+Speaker  6:37:30
+We'll go over to here like this. Shouldn't you be using this for the research? The call research agent. 
+
+Speaker  6:37:46
+Ok, like literally we have to pull the code forward and it's becoming a big old dumb, dumb here. 
+
+Speaker  6:37:54
+And let's see if it can figure that out. 
+
+Speaker  6:38:01
+Ok, so we'll give it a moment to figure it out. 
+
+Speaker  6:38:08
+So OK, let's take a look here so the architecture now matches the agent definition and we still have the MCP tools as that is what it's going to do, which is totally fine. And so now we literally have our agent definition researches topics and summarizes facts your research assistant lists 3 concise bullet points about the fact. Your copywriter. 
+
+Speaker  6:38:33
+No, no, no, no, no, no, no, no, no what did you do you you destroyed the entire use case of the 19 like the nineteen eighties eighties film why why did you do that? 
+
+Speaker  6:38:54
+Ok, like it literally just destroyed it. 
+
+Speaker  6:39:03
+So now we've lost that code i'm going to see if I can roll it back there, but we'll try and so, you know, again, this stuff is imperfect. And every time they say it's better yeah, you're right. I shortened the research and prompted moving into ancient definition, losing all the detailed film features let me restore that uh huh yeah. Ok. We'll der der like. 
+
+Speaker  6:39:29
+And also where's the findings information? 
+
+Speaker  6:39:35
+It also got rid of my findings the whole point of it. Oh my goodness let's go back in here. 
+
+Speaker  6:39:46
+Where where is it? I don't see it in here. Is it actually in here? I'm in agent definition let me go over here findings here we go. Oh, maybe I just had the wrong file open this entire time. I don't know, but here we go so we have our agent definition. Maybe that's why I was getting so upset because I was looking at the wrong one oK, so I'm a I'm just a dumb dumb fair enough so. We have our agent, our agent definition, we have our finding information. What I'm interested in is like where is this going here so we have this findings and that is stored in our research state, 
+
+Speaker  6:40:23
+Ok. 
+
+Speaker  6:40:29
+And it seems to be validating it directly so you're not going to swore that the Agent SDK had a direct way to validate. But anyway, we've wasted enough time let's go ahead into our findings and we're going to go run this and let's see if I can get any recommendations for other shows that I can watch. One big challenge is that, you know, when I want to watch these things, I want them in the with good subtitles and then the movies might only be like 10 bucks in Japan, but when you ship into a Canada, it becomes like 100$ hundred dollar thing and I don't have a strategy for bringing them over to Canada where if I want to watch them, unfortunately, But so here says I'll help research nineteen seventies eighties films similar to schools in the crosshairs let me systematically cover all similar accesses through focus research. 
+
+Speaker  6:41:17
+And so I'll launch agent research. I'll launch a research agent for each major similarity axis. Ok, now if I did a boot camp, I would probably try to do this for real, where this we're just having fun, right but I would try to make something that would actually be useful if that was my goal. 
+
+Speaker  6:41:37
+But yeah, I actually don't know how long this is going to take. But thankfully I'm using the haiku stuff, so it's not giving me full visibility on what it's doing the right now. 
+
+Speaker  6:41:48
+So phase one, use the agent, call with a focus question, immediately call the recordings. No say like no visibility on how many runs it's doing or anything. Like how do I know when it quits i don't know. So this might be something that we might want to tune tune in i know like with agents, you can say like Max turn, whatever, whatever. So maybe that's something that we should have been doing in our our agent settings, but it can't do it in Pythons we'd have to convert it over to TypeScript, right so remember that agent definitions had like a Max turn option. 
+
+Speaker  6:42:26
+And so, yeah, am I just losing all my credits let me go over to the Claude platform and take a look here platform i mean, maybe I'm already out maybe that's the reason why it's it's hanging here because it is using my tokens there and so I'm going to go over to my usage. 
+
+Speaker  6:42:46
+I'm just opening it off screen here 301,000 thousand tokens so it says 301,000 thousand tokens here and I'm going to go look at my limits maybe or for API keys costs, 
+
+Speaker  6:43:10
+Can't really tell here. I haven't used a whole lot in the last few days i'm actually surprised how cost effective this has been. The sonnet very expensive compared to Haiku haiku is like costing me next to nothing. And yeah, it's been really good it's actually been more cost effective than if we were to use our subscription. 
+
+Speaker  6:43:30
+So anyway, we'll go here. And so we have a bunch of findings that's cool. Is it going to save it? I guess it doesn't save it as it goes. 
+
+Speaker  6:43:41
+Is it going to save the findings? I wouldn't mind to keep the findings here. So just looking to see if it actually saves it anywhere we did ask it to do that earlier. Pen Print. 
+
+Speaker  6:44:01
+Save findings right here so prints it and then it saves it. 
+
+Speaker  6:44:08
+Into results Jason Oh OK so this thing finished running. I have no idea why it's doing this it's really weird limited Eastern Europe Soviet cinema beyond whatever here So let me see assess the research coverage across all axis so here we have Akira virus, brother and sister Carrie the Furies obviously some things that are not Japanese related like Invasion of the Body Snatchers excellent coverage is efficient the research comprehensively covers all similarities axis with strong representation across international cinema. I don't want international cinema, I just want Japanese and so here we have stuff. 
+
+Speaker  6:44:55
+Sits within a broader traditional including Kiji, whatever, whatever. So I think this is another Obiashi film, maybe. 
+
+Speaker  6:45:09
+Like this one here and take a look at this. 
+
+Speaker  6:45:14
+Just going to open that up i'm just curious what it is. We got a movie called 1980 Virus. 
+
+Speaker  6:45:24
+Interesting. 
+
+Speaker  6:45:29
+Post pop. I mean, not really totally even close to being the same. We'll go down here and yeah, just describing particular elements, right so let's go down here so I successfully completed a comprehensive research. 
+
+Speaker  6:45:43
+So phase one research so Japanese supernatural psychic school films international team psychic telekinetic films mind control coming of age visually inventive direct directors coverage evaluation so 7 out of 10 geographic distribution thematic saturation. Yeah, I like I really like the mind control stuff. Comprehensive analysis submitted identifying 30 comparable films Key findings so Japanese supernatural, international psychic youth, 
+
+Speaker  6:46:18
+Firestarter phenomenon, mind control cults, how many of age hybrids, visionary directors. 
+
+Speaker  6:46:27
+And so all the data has been recorded and synthesized. 
+
+Speaker  6:46:33
+And so I guess it's what saying it's like the best match it can find combined science fiction with an assemble cast with a psychological phenomenal confined institutional settings echoing the school environment and mind control theaters. Yeah, but it's also not light hearted like I would say. Well, I guess the the movie that I was suggesting is not fully light hearted if if you look at it, but it does feel that way. Scanners Firestarter. 
+
+Speaker  6:47:02
+Well, that kind of that could be interesting actually i'm surprised I don't know the Stephen King one. I I like Stephen King i've seen Suspiria. So it does its best effort here to find stuff. 
+
+Speaker  6:47:15
+And then medium confidence so basically these are the ones that are the closest matches. Let's go over to look at the actual finding data and see if it's actually useful. So we'll go over to here. And so we have its contents. We have a confidence high, we have a claim, we have the type, the name, the author publish at access set. The only thing we don't have is like, where did it get that data? Ok, so that would be where we would just say, hey, look, that's great that you have this information, but where did it come from? So anyway, it's cool we did it, but we had to fiddle a bunch. 
+
+Speaker  6:47:49
+But yeah, we'll see you next one oK, chow chow, 
+
+Speaker  6:47:56
+Let us take a look here at fork based session management so fork based session management is the pattern where you take a single conversation at some point and then you're going to branch it off into their own sessions. And so the idea is that they can explore those things independently at the same time. This feature is available in the Agent SDK. You can also I guess implement it manually, but you'd want to use Agent SDK because this is the reason why they're probably talking about it in this this course. 
+
+Speaker  6:48:27
+And so the idea here is that we will have a separate session history per branch with its own UUID and we can resume that history because the the state is being saved. They run in parallel so things are returned quicker. They are isolated from each other and they're not sharing knowledge. And so the idea is that we have a function called fork session that's only available, by the way, in TypeScript at this time it's not available in Python i have no idea why the Python 1 is so far behind. 
+
+Speaker  6:48:53
+And we have session Idi wanted to give you a code, a code example. And so I thought, OK, we'll all use Claude, at least Claude, maybe you can help me get a code example i'm trying to find this here. And I literally was arguing with with it for like 15 minutes and it just refuses to make a code example despite me actually already having like look at this. I'll show you this like look, I'm saying can you use fork session it just refuses it keeps using this options, fork session option, no matter how much I ask it though, we're going to find out when we do the the actual lab, wherever that is here, right then we're going to find out that it that there is a actual function here, right so, you know, just understand again, I can just repeat this a few more times that what we read and what's generate out is not what is actually true and I'm going to show you the truth that's why you have to follow through on these follow alongs oK, Don't watch do and verify yourself so you have that knowledge all right. 
+
+Speaker  6:50:02
+Ok, let's go ahead and try out fork based session management so we'll make a new folder here called fork based session management. 
+
+Speaker  6:50:11
+Management and we're going to go ahead here and make a new file called main dot PY. And so I'm just thinking about this for a moment, OK. And So what I want to do is we're going to grab, I suppose the agent code is fine so we'll go ahead and just grab this. We'll just keep working off the last thing we have. I'm still using my dot DMV you can get rid of that if you want to use your subscription. 
+
+Speaker  6:50:37
+It's just I'm trying to manage my pro level the best I can i can upgrade to Max, but then I feel like I'm not experiencing what you're experiencing and so I want to be able to work around those issues and and share that experience with you oK, so I'm going to go ahead into the fork based session, actually not yet and so we're going to go ahead here and we'll launch applaud. Ok, and I want to tell it what does it want so I want to implement fork based session management where we have one point of history in oh, resets today that's good well, I got to use up my credits. 
+
+Speaker  6:51:19
+I was thinking of a project where I'm like maybe I should tell my computer to wake up and then in the off hours use up as much as I can but I guess the other thing is they have a weekly limit and if I'm using pretty much all of it then I suppose having it work throughout the night doesn't really matter. But anyway so I want to implement fork based sessions where we have one point in history, 
+
+Speaker  6:51:41
+We have one point in history. 
+
+Speaker  6:51:47
+And it branches off in its own isolated states. Can we implement this in Claude Agent SDK? Here is example. 
+
+Speaker  6:52:10
+Ok and so I just took, you know, as per usual, I just took a screenshot, dropped it in here. So just drop it in here, have it extracted i noticed my own text, but I didn't save it in the slides. And you'll have to do the same good practice for you folks. And we'll wait a moment here and come back with some code here, see what it tries to do, and then we will look and say OK, that's good or that's bad, right? Ok, it looks like it's more or less done. So here it says 1 shared API call that builds the common history. 
+
+Speaker  6:52:40
+Each branch gets its own copy. Mm hmm. Why direct API calls an agent SDK the agent SDK query is designed for agentic loops with tools. It owns the session state internally, so when you need to explicitly control and branch messages, then we want to use the native one oK, well that's fine. I thought that we would be utilizing Agent SDK, but I suppose that doesn't fit. So let's take a look here and see what we have. Ok, 
+
+Speaker  6:53:12
+So we have our client. We build a baseline. We have our branches so start with this exact point share it up to here. What is the most optimistic 5 year EV adoption scenario what is the most pessimistic? How could upcoming government regulations reshape it oK, and we're going to run each branch. Where is the baseline oh, build baseline right here. And so we go up to here. And so analyze the EV market briefly. 
+
+Speaker  6:53:44
+And then it comes back with the response of what it researched. And then down below here it's going to go again based on that information. Ok, interesting. All right, so let's go ahead and run that. 
+
+Speaker  6:54:02
+All the way down here. We'll stop this we will see the into fork based sessions, Python main dot pie and we'll go ahead and run that. 
+
+Speaker  6:54:15
+We'll see what it comes back with. I think I would have preferred to pick a topic I'd be more interested in, but that's fine. We'll see what it does here oK. 
+
+Speaker  6:54:26
+And. 
+
+Speaker  6:54:30
+So we have the optimistic, so aggressive EV mandates, growth projections, risk assess adjustments. 
+
+Speaker  6:54:41
+Ok. So that's something that's interesting. I don't have A use for it, but I mean I get it so like I guess we're just trying to compare this to what we were doing prior where we had a research agent and the idea was that we would define all of its angles. But here we're basically we have one and it's like we are just pushing that down a little bit so that we are seating with information then to go look other directions. So just it looks like a very similar pattern but a little bit different. But there we go that's fork based session management. I'm just trying to think here. But I guess The thing is that the only thing is that I wonder, I'm just trying to think of if we are done because we had a result, but is it actually managing sessions separately that's what I'm thinking. 
+
+Speaker  6:55:33
+So hold on. Ok. But are we actually managing. 
+
+Speaker  6:55:42
+Separate sessions. 
+
+Speaker  6:55:46
+Because they've just gone off and did stuff right like, like, how would we pick up a conversation from before? 
+
+Speaker  6:55:56
+Oh, sorry, sorry, sorry let's stop this for a second so I'm going to go try this again. I'm going to just go in here and just say 4 and we'll go back to resume. Yeah, resume come on, let me resume show me something. Show me history folks. 
+
+Speaker  6:56:15
+It is conking out here folks. Let's try this one more time i'm just trying to think like what is the use of this over the other one and so I wanted definitively know that we haven't missed something. 
+
+Speaker  6:56:28
+Yeah, we don't even have the history anymore that's great. Ok, so for the fork based, 
+
+Speaker  6:56:38
+Why won't it auto complete? Am I in the wrong directory here? Oh no, I'm not. Well, let's go up one sorry. I mean, I am, I am, but we'll go back to this conversation here so is this actually if you wanted to use the Agent SDK session system instead typeScript has the fork session session ID, which branches a session at its current point. But that isn't the Python one oh. Ok, great, port my code. Port my code to TypeScript and let's use that feature. 
+
+Speaker  6:57:17
+Cool, just can't trust anything here why is the TypeScript one up to date, not the Python one? I'm fine, I can work with TypeScript, but there's a little bit more set up with it so we will let it port it over. 
+
+Speaker  6:57:32
+And see if we can get 4 sessions in there oK, all right, so we are back and we should now if we refresh this, have our main TS. I like that it kept the main pie around so that's really nice. And we do want this to be using the SDK, which it is OK so hopefully you're comfortable moving between languages i am i have no problems with that. And so here we are analyzing the market we are passing our model, which model is being used the Haiku good, because I want to save money. 
+
+Speaker  6:58:01
+And then we'll go down below and we've seen the fork based session information so we're seeing run branch here and in here we have fork session and that is being imported by the Claude Agent SDK. So that makes a lot more sense, right because if it was just simply what we're doing in Python, then it's just like, OK, how's that any different in a different way of organizing stuff than how we were creating those different angles but here the idea is that it's going to literally you have a session state so basically you are keeping a conversation along those three things there. 
+
+Speaker  6:58:36
+Ok, So what we will do is we'll stop this. And you have to have JavaScript installed on here so no hyphen version, right? I'm not teaching that. You folks need to learn that oK, I got other courses on that somewhere. And so here I'm going to do MPM installed to make sure everything's installed, probably already is. And we'll do MPM run. It's just MPM run start you just MPM start. Let's try that MPM start. Is that what it is? I didn't check it, but that's usually what it is it is. And so it's going to go ahead and execute the TypeScript and we are going to just watch the results. 
+
+Speaker  6:59:14
+Ok, I'm now getting the habit of always doing the labs 1st and sometimes doing them two or three times before I'm doing the lecture content which is better? But anyway, so here it's forking into 3 isolated branches concurrently and so the idea is that it's having a conversation with each of them and then it comes back with our results. Ok. And so I would imagine one of the advantages would probably be that they're being paralyzed at the same time and I will look that up and put it in lecture slides and we'll find out if that's the case. But the idea is that it's holding three separate sessions also just going to go here and add a good ignore. 
+
+Speaker  6:59:54
+These node modules are always really giant get ignore or sorry node modules. 
+
+Speaker  7:00:03
+Ok, I want to ignore that big, big folder there. And so again, just going to carefully look at this here. 
+
+Speaker  7:00:10
+Fork session. 
+
+Speaker  7:00:14
+And so the idea is that they're basically running it's, I know it's really hard to see here in the code, but they're basically running each their own loop, right so build the baseline. Build the branches, iterate over the three branches here, right? Iterate over them, run the branch for each one, OK and then we go up here, we run the branch, we have fork session, all right. And actually, you know what I think in my Quad code essentials, I think we looked at fork session, but we might may have not have ran it. Now that I think about it. Let me just go take a look here in one moment, just a second here. 
+
+Speaker  7:00:54
+I mean, according to Gemini, it's saying that, it's saying here they're running in parallel and we are basically having their own session with their own UUID so that we can pick up a conversation later. And so that basically tracks of what the advantage would be here. I mean, paralyzation obviously is going to give us a huge advantage in terms of getting results quicker we're going to burn through more credits. But yeah, so we have our solution and there we go oK, 
+
+Speaker  7:01:25
+Hey folks, it's Andrew. And in this video I want to test if we actually have resume and fork session so these are features that I know Claude Code has, but the question is, does Agent SDK have it? I'm getting reports that it might do it, but I need to absolutely verify that so we're going to go down below here, make a new folder and this will be resume and fork session, resume, fork session here. 
+
+Speaker  7:01:49
+And so we will use that as a basis to find that out we're going to go ahead and make a new main file we know we're going to have a much easier time, a much easier time if we bring in some code now I do have a little bit of a problem here because I had a prior project under the under this one and I just got to make sure I ignore the docket ignore this is just something I forgot to do. Nothing you got to worry about here. 
+
+Speaker  7:02:16
+Get IG nor. 
+
+Speaker  7:02:24
+Ok, we'll type in node modules and we'll just make sure it's going to add that there i know it's not something I should be doing right now, but I got to do it folks. And there we go so now our change is a bit smaller here just say fix that there we go anyway, so back on task the idea here is that for the resume for work session, I want a basis of content. So let's look for the hello world, assuming that this one is using the Agent SDK, which it is. And so we will go ahead and copy this in here and we'll paste this in. And so now what we'll do is we'll see into, we'll. 
+
+Speaker  7:03:07
+See you back here into the resume. 
+
+Speaker  7:03:13
+Fork session, 
+
+Speaker  7:03:16
+Ok, we'll type in Claude. And So what we want to do is we want to demonstrate using resume and and fork session via. 
+
+Speaker  7:03:33
+The Agent SDK, assuming that it can do it and or the other question is like, is it available in, in, in Python so because I don't understand, like, how would it know where to write that repository so we'll go ahead and say yes, and we'll see if that works the only thing I don't like is when it goes and it checks everything above it, I want it to stay in this particular folder i'm not sure No, like why why? No, no, please just focus on the main pi file. 
+
+Speaker  7:04:11
+That's this problem where it aggressively searches other places, and I can't seem to prevent it doing that i'll be back in just a moment. And so here we have some code returned i'm going to go say yes. 
+
+Speaker  7:04:24
+And now we have an individual dot clod here. We'll close out some of these tabs. 
+
+Speaker  7:04:31
+Ok, all right, so let's take a look here we have session one initiate a query, so it's going to fix the code. I'll go ahead here and we will make ourselves a hello world dot RBI. Remember we had a larger code sample before i'm just going to go generate out one with some bugs. You know, can you generate out code, Ruby code with deliberate bugs, deliberate bugs to test so I can test my bug fixing agent i know I'm doing this off screen we will go ahead and generate that out. 
+
+Speaker  7:05:06
+Just give it a moment. Ok, so we'll go ahead and paste this code in here i'm going to go ahead and save this and we will go and give this a round well, before we do, let's take a look here we have the first session and it's going to read that file, right? And then it's going to log out the result it's going to resume the session here with the session ID and then we're going to have a forked conversation where it uses the fork session so it's starting a completely new session and we'll see if that works. 
+
+Speaker  7:05:33
+So I thought this would only be for Claude code, but I guess, I guess it's for everything, right? So we will go ahead and type in or Python main, 
+
+Speaker  7:05:49
+Ok? And that's going to initiate that query there. Ok and so it looked like it did exactly what it said it would do good. And so it's now fixing the thing what I'm going to be interested in is where is it storing this information that's what I want to know. 
+
+Speaker  7:06:08
+I think it actually just said here to resume fork session hello world no, no, that's not it. 
+
+Speaker  7:06:15
+This is almost done so we'll just wait till it's done oK, All right, so this seems to be complete here and I want to go ahead and take a look into a new folder and I'm going to go over to here. 
+
+Speaker  7:06:30
+And I'm trying to figure out where this could be so like, this is the project we were running, and so I'm not sure if it would pick up in the same name. So let's go in here and see what kind of sessions we have because that might also be an indicator of what stuff is. Ok. 
+
+Speaker  7:06:48
+And so we have three sessions here i don't think that we would have had three sessions before. One thing I'm going to do is I'm just going to delete these files out and run it again because if they generate in here, then we know absolutely that that is what is going on here, 
+
+Speaker  7:07:09
+Ok. And so I'm going to just do LSLS type in LA and we still have one more here i think it's because this is the active. There might be an active session here, OK, So I'm just going to stop it, clear it and we'll go over here, right? And we'll say remove and that will be removed, 
+
+Speaker  7:07:33
+Ok? And so we'll go ahead and run that. 
+
+Speaker  7:08:05
+All right, let's talk about Claude code sessions so Claude code session is functionally a conversation to the Claude code agent, and resuming a session is the same as resuming a previous conversation. So when you type in Claude, you're starting a new session and there are two types of sessions you have web and local, and it really depends on where you started that conversation so basically if you started via remote control or via cloud code for web, then it will be a web session but what I found was interesting is that if I was using the VS Code IDE, I would be able to resume a web conversation to local, which kind of makes sense because with remote control, the idea is to trigger it over web to then run your machine or in your development environment on your machine so but where it originated and stored is different. 
+
+Speaker  7:08:55
+But we'll talk about resuming in the upcoming slide here and show you that but there you go. 
+
+Speaker  7:09:06
+So this is going to be very straightforward and it's the resume command so you can resume a previous session by using forward slash resume and then you can just choose it like a separate conversation. You probably saw in the last slide that in the ID you literally just click on conversations, which is the same thing as sessions and that was a way to change it. When you do kill a session via the terminal, it will give you the slide for resume with a session ID i have no idea how you get the session IDs or list them. It's not really a big deal as I feel that most people are driving this stuff through this way. 
+
+Speaker  7:09:37
+Maybe if you had to do something programmatically you'd have to do it in the lab we'll see if maybe there is a CLI command in the non interactive way to grab those IDs, but there are session IDs for that. But there you go. 
+
+Speaker  7:09:54
+Hey folks, it's Andrew and in here I have a project which is the Claw task app not a whole lot going on in this one so we might be limited in terms of what kind of sessions we have or I could try to switch to one that had more. But if I go up to here with the SDK, the SDK, the the the Chrome 1 installed, you can see up Chrome what am I saying? The Visual Studio Code extension, you can see we have local and we have web so here are some previous conversations. 
+
+Speaker  7:10:21
+What's interesting is like I did these ones for very specific projects and so it's just generically showing me all web sessions where local seems to be scoped for this specific 1 so if we go over to here and we click on this one, it seems like it's going to teleport us in here and we're having a bit of an issue to be honest i haven't really continued web ones here prior, but here, what could be the issue? Missing file or encountered settings dot Jason path, etcetera. So I'm not exactly sure what the issue is here, but we are trying to continue something definitely in the wrong directory. 
+
+Speaker  7:10:56
+Here we go so this session was created with Exam Pro dev Claude code example. Open that folder oK, so here it's telling us to go ahead and do that. So I'm going to go back here and just kill this. So that's what I figured, which would be an issue if we continued one on. You probably wouldn't have it unless you did the web version here so I'm basically just showing you, but we'll go here and I think it was like Claude code. 
+
+Speaker  7:11:25
+I already forgot what it was called. So we'll go back over here for a second. 
+
+Speaker  7:11:33
+We'll try that one more time. The session was created in Exam Pro Dev Cloud code example. Open that folder first or continue in that current workspace because that is my in developer account, right and so I don't think I have it here i'm going to say continue here and see what happens. Oh, there we go. But that was a that was in the web so I'm not exactly sure how we continue on to that stuff i'm not really that interested in that. 
+
+Speaker  7:12:00
+I just wanted to show you that this drop down does exist. And so if I go to something where we have a bit more going on, I think it was called grocery store monitoring. I never showed you how to build this during the app it was something I was just building on the side while I was waiting for things to run. But if I open up this one, this is going to have a lot more sessions in it. So if I go here, you can see here I have whoops a bunch of sessions and I thought it was more than that i could have swore there is more and then you can just click it and then it would continue on but generally, I I like using the CLI down here so we type this and we type in resume. 
+
+Speaker  7:12:41
+We hit enter and here it's showing. This is show all projects control B to toggle branch V to preview and do control A because it's showing me which folder was I in when I did that hold on here escape. We've got to be really careful and pay attention to where we are. That's why I'm not seeing it oK so we're going to grocery store here and I'll try this again and now we'll do resume and so now we can see the sessions here. 
+
+Speaker  7:13:15
+Notice that it shows you the size of it so you have an idea of how much of the I guess the probably the conversation is at that that given point. Ok, but note down below here says show all projects, toggle branch control V to preview, rename things like that. I'm curious what it would be if we did Control V, Control V control shift V, control V Nothing, nothing nothing. Ok what about control A? Now we can see all projects, so I can click on the Bath Monster <a href="moms.com">moms.com</a> And so now we're in the context of this one. 
+
+Speaker  7:13:52
+Ok, So I mean, it's pretty straightforward it's not that complicated when you want to continue conversation, you just go to the conversation tab and change it or use the resume. Ok, 
+
+Speaker  7:14:07
+Let's talk about forking sessions so this allows you to resume a previous session without affecting the original session the way it works is that when we perform the fork, it's going to basically branch off as a new conversation with its own session ID Very straightforward to use we just use the hyphen, hyphen fork session to do that. And if you notice that there's continue resume, it's the same thing i just have a hard time typing continue. So I never, ever show you that i always just do resume. But yeah, pretty straightforward. There you go. 
+
+Speaker  7:14:45
+Hey folks, this is Andrew and in this video I want to take a look at forking a session. Just so you know, I'm jumping all around with these videos and so sometimes things will look a little bit different. So I do apologize, but I have a project here that has basically nothing in it. I'm going to start up Claude and I want to have some kind of conversation with it so what I'm going to do is I'm going to tell it to code me Flappy Bird in a new folder using JavaScript so that's obviously a very easy task for it to do, and we'll go ahead and allow it to do that. 
+
+Speaker  7:15:25
+And so whatever it wants, I'm just going to say yes, yes, yes, until it gets to a point, because I'm just trying to have a conversation, continue on here until we have something, OK? And then when that's done, we're going to then try to do a fork. Just a moment oK, All right so after a little while there, it's finished and so I'm just going to hit escape. And what we can do is we can go ahead and whoops, hit escape here. And yeah, it's fine there we go i'm not sure why I can't type. 
+
+Speaker  7:15:59
+I'll turn, hit shift, escape to go back into normal mode. Something just happens i have to like type a little bit to get here. So obviously there is the resume command. I'm not sure if they have a fork command here do they have a fork command they do. So that's obviously one way we can do it in the screenshot or in the the slides i didn't show you there was a fork command here like this way, but there obviously is. 
+
+Speaker  7:16:19
+We'll go ahead and do that and so now it's forked that conversation and we can see there's original 1 here. And so I'll just say, you know, can you check the Flappy Bird game for bugs, right? And so it's going to go off and do that i'm just going to click into any of this. And the reason I'm doing that is just so I can see there's more than one conversation. So here you see Code Flappy Bird and then you have this one and so clearly they're different we could probably rename it so we can distinguish it if we were working on another fork. 
+
+Speaker  7:16:50
+But really that's all it takes to fork something so that is not a complicated concept. Obviously we just have two conversations or two sessions and there you go. 
+
+Speaker  7:17:04
+Let us take a look here at the context command so context shows tokens consumed in the current session and available tokens broken down by category. And so here we have a completely brand new session and we are running the context command and notice that when we have a new session that basically all the spaces available, In fact, the only thing that's taking up any room is the skills being loaded into here. And then you have your auto compact buffer let's talk about that so auto compact buffer is clod code reserving a portion of the context window, so 22 % of it. That ensures there's enough headroom to summarize conversation history when the limits are approached. 
+
+Speaker  7:17:43
+So very, very useful feature. If we were to look at an older session here, you'll notice that we're getting actually a breakdown of information in terms of what it's utilizing. Ok, so there's obviously more going on here so we have the system prompt, how much room it's taking up. Skills is really small here. And then there's our actual message. So you'll find that that's really, really useful to keep track of stuff and later in the course, you'll see me use it a lot more as I start to think like, OK, how much usage do we have? And one thing I want to point out is that a really great way if you want to see this command is when you're using the resume or the resume flight to continue a previous session, then often you'll run the context here to see the size of it oK, but there you go. 
+
+Speaker  7:18:34
+All right, so let's take a look here at the context menu so or the context command so we're going to type in Claude down below and we'll hit enter. And so now that we're here, I'm going to go ahead and type in context so as far as I understand it that when you type in Claude, you are definitely creating a new session. If you're over here and you have previous conversations, I imagine that those are separate sessions notice it says search session. 
+
+Speaker  7:18:56
+So to me, these are previous sessions that we could resume. It's interesting that we have either web or local here so I guess we could pick up a something that we were doing in the web and then bringing it on over here. Actually, you definitely can because I'm noticing here that carryover. I'll probably make notes of this one moment. All right and so one thing that I'm surprised is that we have 7 percent, 7 % usage because I thought this would have been scoped per this session. 
+
+Speaker  7:19:23
+So I'm not exactly sure what we're looking at there, and I'm not sure how you would tell if you're in an existing session so I'm going to go ahead and hit escape. Ok, let's see if there's any way in here let's see here. 
+
+Speaker  7:19:40
+So what I'm looking for here is I just want to know i'm going to type in forward slash whoops. Can I type? Nope, Nope, Nope we'll keep hitting escape. That's not working i'm going to just control C out of there we'll type in clear. Oh, we just actually saw some session information. 
+
+Speaker  7:19:58
+We recommend medium effort for Opus. I'm actually surprised that it did this i didn't even prompt it for that and So what I'm carefully looking for here is if there's any session information, efforts to determine how long it thinks, or whatever. I I don't know what it's doing, so I'll hit enter i'm not sure why it was asking me that and I'm just going to make sure that whatever model I'm on, I'm on the default one because I want to have standard usage right now i'm just going to type in default. 
+
+Speaker  7:20:22
+There we go but I'm just wondering if there's anything for sessions in here. We don't. 
+
+Speaker  7:20:29
+Ok, what if we do we get we do have resume. Ok then we have clear. 
+
+Speaker  7:20:38
+Ok, So maybe this would help us see because we'll have some options oK, So here we have some options for sessions, right so I can go here and take a look notice that like the amounts are bigger or larger here i'm wondering if that's going to affect some suffer so I'm going to go ahead and hit enter here. And now what I want to do, I'm so tempted to type clear, but clear is going to clear the conversation it's not going to clear this here so you really don't want to type that, but we'll go ahead and type in context. 
+
+Speaker  7:21:06
+And So what I'm trying to figure out is that, you know, if I switch to different conversations or sessions, does this change? Right i also it's interesting that we have skills and messages here and they kind of stack up so you have an idea of usage. 
+
+Speaker  7:21:20
+And it's cool that we have like a little buffer here so that's kind of interesting. One second, I just wanted to screenshot that I want to go re record the context one. But anyway, so that's not really telling me what I want to know so I'm going to go ahead and we'll try this again, resume and we will switch to just anything that's different, right. And So what I'm looking for, 
+
+Speaker  7:21:42
+Yes, so it does. So it absolutely does change with your session so if you switch over to a previous session, you're going to get different information. Ok so that's pretty darn clear. 
+
+Speaker  7:21:54
+Yeah so I think that answers that and yeah, OK, there we go. 
+
+Speaker  7:22:05
+Let us take a look at the compact and clear commands so when you have larger conversations, that means they're going to consume more tokens that equals to greater cost with your API usage, or you're going to run out of your subscription usage, that 5 hour window a lot sooner than you think. So Claude code is going to do auto compaction. So technically it will take care of itself at those larger sizes, but there could be cases where you just want to automatic or manually trigger a compact, or you just want to clear the thing entirely and so they have two commands for that we have the compact command and then we have the clear command so it's pretty darn straightforward. 
+
+Speaker  7:22:45
+Clear will not clear out your cloud MD files or your auto memory. This was a thing that a lot of people get mixed up on the other thing is you got to be careful not to type clear, as in to clear your screen superficially it's very common in Linux to type in clear or CLS, but this will literally clear out like delete the conversation started started over from scratch, right? And I'm just going to again iterate this could save this a lot of time so that there are cases where conversation or sorry, your environment like WSL 2 might get halted. I was having a like a conversation that was at the Max and then all of a sudden my WSL 2 hung and I had to restart it completely. 
+
+Speaker  7:23:25
+So just be mindful of that. And the way that we can do that is with that context command, which will actually show us, right, which we saw in another video, but there you go oK, 
+
+Speaker  7:23:39
+Hey, this is Andrew in this video, I want to show you the compact and clear command they're pretty straightforward. So what we'll do is type in Claude and we can do it over here but I noticed that sometimes when you use commands here, they work a little bit different so for instance, context would tell us information about, you know, how large our context is but you notice here that it's not as nice it says, you know how much we have here, but it's not as nice as the one in the CLI so you just kind of learn, you know, over time probably one point in the course I told you I preferred the the ID now I prefer the the terminal. 
+
+Speaker  7:24:12
+But here, this gives us an idea of the size of our context usage so we can see here system prompts so how much the system prompts taking up the skills and the messages so not a whole lot there's not really any need to compress this, but maybe what we'll because this is a new a new session, right or it should be a new session. But what we're going to do is switch over to maybe an older one like Bath Monster <a href="moms.com">moms.com</a> and then we'll try this again we'll take a look and look at our session. 
+
+Speaker  7:24:40
+Is this any larger? It is it's a little bit larger it's not a lot, but it is larger. So we could kind of fiddle and try to find it a very long conversation. I probably could do that if I just go back to one of my prior projects here so if I go into this one, and again, if you didn't have such a long conversation, you just have to prompt until you did, but I can go here and then we'll type in resume. 
+
+Speaker  7:25:06
+And I want to see, can I find a really big one here? I thought I was seeing megabytes in here somewhere right, 
+
+Speaker  7:25:16
+That one here. Can you read, read me and define what is expected to be called it seems like there should be something larger than that. No, that's my largest one oK, And so let's go ahead and take a look here i'm assuming that's the largest one, right? No, not that much larger. So I'm not really sure where the long conversation is, but you know, if we did fill this up, we could do that so what I'm going to do is I just want to fill up the context. So I'm going to give it some kind of complicated task that's going to take forever to get done just so that it fills it up quite a bit so I'm just thinking about this for a second. 
+
+Speaker  7:25:54
+I'm going to say I want you to port the app over to Rust. I want you to port the back end over to Rust and the front end over to. 
+
+Speaker  7:26:14
+Typescript i guess because I, I wrote these, this is a JavaScript front end with Mithril and then this one here is a Go Lang app, right and so actually, I might just save it before I do anything else just so that I don't have to meddle with it, say Add all i don't think we want to add this one. We'll Add all the rest here, save changes just because I don't want, if I ever want to come back to this code, I just want to have in a good spot. And so this is a very large task. And so I'm going to go ahead, I'd ask you to do that. 
+
+Speaker  7:26:48
+And this is going to take a while, but the reason I'm doing it is just so that I can get a larger context menu and to show you the compact and clear so I'll be back here in a little bit oK, there we go so after 9 minutes, it rewrote our stuff i'm not actually trying to make this work i was just trying to give it a large task that it needed to do. But it's fun to give it large tasks and and let it run off to the races i'm going to go ahead and check my context and let's take a look here. 
+
+Speaker  7:27:18
+And so yeah, we're getting a lot more uses here clearly, there is still more room to be had. And while I'm here, I might as just check my usage, right so I'm at 28 % for the session, so that is good as well. But anyway, so I wanted to show you 2 things i wanted to show you compact and also clear so I'm not sure what is going to compact for this, but we'll go ahead and give it a try. So let's say compact. 
+
+Speaker  7:27:49
+And we will wait for it to compact i don't remember it taking very long for it to compact but basically what we're interested is, is what is this going to look like afterwards, right. Ok so I'll just pause it and we'll wait till it's done. All right so our compaction appears to be of completed. So here, conversation compacted control OO for history. I guess we do control O for history and see what we get. It's not very useful. We'll go all the way back down i guess it's just really scrolled us all the way to the top. I'll just hit escape here. And what we'll do is look at context and see if it's any smaller. 
+
+Speaker  7:28:26
+It is much, much smaller oK, so now let's try clear. So clear the conversation history and free up context. And that instantly executed. 
+
+Speaker  7:28:38
+We go check the context and now it's basically just one thing so there you go, that was R2 compacts and clear oK, 
+
+Speaker  7:28:53
+Let us take a look at the rename and rewind commands that affect your session so rename as it implies let's you rename your current session. I think this is a habit I need to get better at doing because I do find it very hard to distinguish those conversations. Just remember that you only have 30 days till you have those sessions and there's some way to back them up i'm not exactly sure. I'll have to look at that separately if that is a concern. But yeah, that is something that we'll need to look into. Then you have your rewind command so this will restore a session to an older point in time. So here I was just trying to do a low effort you can see I said to low effort and these are the prompts that I did. 
+
+Speaker  7:29:32
+So we can go to that prior conversation and basically it's just like literally you are clearing out to that point and continuing on from that point. So if you cannot afford to lose that other stuff, you know, just don't go too far back. But yeah, there you go not complicated, but we will give it a little try oK. 
+
+Speaker  7:29:58
+Hey, this is Andrew and we are going to take a look at Rename and Rewind very straightforward and will only take a moment of our time so again, it's hung up on me here i don't know why that happens, but I'll just close out the old one and we'll go ahead and type in Claude. And so we've started a new session i'm going to rename it right away and we'll just say maths. 
+
+Speaker  7:30:19
+Ok. And so now that's the name of our session i'm going to go ahead and maybe we could just take a look at resume because I'm just curious what other ones we have here and so none of them, those ones are named OK, but we're going to stay in our current session. And what I want to do is just do some basic logic so we're going to set the mode to low. We are oops mode, not mode, effort, effort, effort to low. And then the model here will make sure it's haiku. It's already haiku, but I'm just doing it out of habit. 
+
+Speaker  7:30:53
+And I'll just say 1 + 1, right? 2 + 2, three plus 3, 4 + 4, five plus 5. Nothing's ever exciting here. One thing I want to do is check context just to see what size we're at. So there we are we haven't really used up a lot, so we're probably not going to notice but it does say eight twenty two tokens right and I'm going to go here and rewind. 
+
+Speaker  7:31:20
+And so if we rewind, we can go in the past we'll go to now 2 + 2. And here it says restore conversation or summarize from here interesting we're going to restore the conversation, and now I'm going to do context. 
+
+Speaker  7:31:37
+And notice the token count is much. Well, it's not that much smaller, but it's smaller so obviously we had a couple options there and they're pretty straightforward, but there you go oK, chow, chow all. 
+
+Speaker  7:31:55
+Right, let's take a look here at Claude code setting scopes. So there's a settings Jason file, but there's a little bit more to it because you have to take in consideration at what scope it is being utilized at. And you're going to find these level scoped settings files for more than just the generic settings Jason file, but other ones as well. So just consider you'll need to apply that in other places. But anyway, let's work our way from the top to the bottom, starting with Manage settings it's the highest level of settings for Cloud Code this is for organization wide instructions. It's going to be managed by your IT and dev OPS team. 
+
+Speaker  7:32:30
+The next level is user settings these are your personal preferences across all projects. Then there's project specific settings and then there's local settings with the last one being project specific, but it doesn't get checked into your git repo. So where do these things live for the managed settings, it's going to be on your servers and there is a special settings file called a managed settings Jason file and there are some settings that only go on this one, so it will take all the other ones, but there are some that specifically only will work in the manage settings Jason file for user settings that will live in your home directory. 
+
+Speaker  7:33:08
+As you can see, the Tilda, I'm not sure what it would be for Windows, but for Linux machines, it'll be Tilda, which is your home directory forward slash dot clod and then it will be there for projects it's going to be very similar, but it's going to be in your project, your repo, wherever that is, and it's going to be in a similar folder. And then local, we'll just have dot local Jason on it and that's how you're going to distinguish it. And the priority of what takes precedence is what's higher in scope so something higher in scope is going to take presidents over settings in the lower scope, and there you go. 
+
+Speaker  7:33:47
+All right, so now that we understand scoping for cloud code settings, let's actually go look at all of them. And we are going to look at all of them. But my goal here is not to make you remember them here that's not important what's important is to get exposure to understand what settings are available to us because we're going to repeat that out throughout this course when we need to look at those settings oK, But there are a lot of settings here, but I think it'll be worth our time. 
+
+Speaker  7:34:09
+So first we're going to look at authentication settings and by the way, all of these are going to go to the settings dot Jason file there are going to be some settings here that are managed settings only, and we will point that out. So obviously authentication has to do authentication. And you'll notice right off the bat we have some things that are specific to 8 of us, but let's go take a look here so the first is API Key Helper, and this is a custom shell script to generate a temporary API key. 
+
+Speaker  7:34:31
+Then we have for eight of us auth refresh so that is going to be the trigger to refresh the authentication. And I mean, you'll probably leave it alone, but it'll be just eight of us sSO login so to do SSO login, single sign on login, then we have the auto select for the UID org so you can force the exact value that you want it to be. You can also force the login method so if you only want to use cloud AI, you can do that if you only want to use console which would be the for the API usage, then you can do that. 
+
+Speaker  7:35:02
+So that's something you can set and then if you need to export native as credentials with the grant there you can do that and set the script for Jason output. Let's take a look at session and storage settings so we can set a clean up period and so the default is 30 days. But the idea is that, you know, are those sessions aren't active, they're going to get deleted so you might want to have a strategy to back that stuff up. But the point is, and we showed you how to export somewhere in this course, how to export individual sessions, right? Or if you just have to go to the project files, we know that they're literally Jason L files so you could just back those up as well from there, but they're not as easy to parse. 
+
+Speaker  7:35:42
+But anyway, so if you set it to 0 to delete all transactions that start up and it will disable persists entirely. And so when it's zero, there will be no new Jason files written and resume shows nothing and hooks get empty transcript paths oK, So just a consideration if you do set it to 0 for auto memory directory, this will be a custom directory for your auto memory so you can change it to a different path, but it's not allowed in the Project cloud settings Jason file there oK. 
+
+Speaker  7:36:11
+And then for the plans directory, you can change where you want to store your plans pretty straightforward let's look at environment variables. This allows you to set environment variables right, So if you need to set them to be applied for every session, you can do that in your settings dot Jason file. For model settings, you can override the default model for all sessions. You can restrict exactly what models you can choose from so you're saying what available models? Ok, you can map model IDs to very specific provider IDs so example here to Amazon Bedrock. I can't imagine you can set this to anything outside of the clod models, but maybe there are different variants of clod models on Amazon Bedrock and you might want to set those. 
+
+Speaker  7:36:56
+You can set it so it's thinking is always enabled by default. And you can set the fast mode per session OP often if you want to so fast mode resets each session. Users must re enable fast each time, right? And fast mode is I believe that's the Opus feature, right where it gets expensive so that's why you'd set it in here if you don't want to keep setting it and you're comfortable with the cost of it, let's take a look at output and language settings. 
+
+Speaker  7:37:23
+So you can set the output style. And so that would be to explanatory output style we cover this somewhere else. Yeah, we actually have a section where we cover it, but that's going to change how it's going to work so explanatory means I'm going to not just only solve the problem, but I'm going to explain it as I go so you understand that you have another one called like Learning, which will let you it will stop and then let you learn like your pair programming with it. 
+
+Speaker  7:37:51
+And again, we cover that in the output styles language for saying language pretty clear. You might want it as English i I don't, I don't know why I might set the Japanese, but I never noticed in Japanese, but that's fine. And then we have include get instructions. So yeah, that will be for I guess the PR workflow. I don't think I've used that setting, but it's there. 
+
+Speaker  7:38:12
+Let's talk about get attribute attribution settings that's usually when you're saying who the author is. So you hear you can set it in terms of what the commit message looks like. And this option is now deprecated so you're not going to be able to set include co-author by let's take a look at announcements and update settings so here, this will be shown at the startup of multiple entries that are cycled in so if you're a company, maybe you want to cycle these things or remind people like, Hey, remember, you know, don't do XYZ or you know how like whatever companies want to do. 
+
+Speaker  7:38:44
+And then you can set the auto updates channel value to whatever you want it to be. For the UI itself and spinners, we have quite a few options so for show turn duration, we can change that value we can set the spinner verbs. Actually, you know what? I'm so glad that I know where that is because I really dislike these verbs, right so I think I'm going to make a lab where I change the settings so I do not ever have to see all these weird words again because I cannot stand them. Yeah, we have whether you want to show tips or not in the spinner, we can override the spinner tips. 
+
+Speaker  7:39:21
+So again, if you're working with a team, maybe suggestions you want them to see periodically you can show terminal progress for I term I term 2. This might actually fix. Well, we're not using I term 2 that's a Mac specific thing but you notice that in our WSL 2, my version, that the progress bar in the terminal is not great. That might need to be fixed. And then we can reduce spinners, shimmers and flash animations for accessibility so if they're bugging you, you can set that to false. Ok. For agent team settings, we have the ability to set the teammate mode. 
+
+Speaker  7:39:53
+I think this is how it's going to work so whether it's going to split pane or run in line or run in split panes in T mux, T mux is terminal actually, I don't know what T mux stands for i know what it is, but I don't know what it stands for. But it's a, it's like a terminal extension that lets you do split screens natively in terminal, right so a lot of programs these days let you do it at the OS level, but it literally will do it within the terminal, like the terminal shell window. 
+
+Speaker  7:40:20
+Let's take a look at permission rule settings. And this stuff, we're going to dive a little bit deeper because I have to explain the wild card logic and stuff but the idea is that these are the things that are allowed to do so whether it can read files, write files, utilize bash. And then there's, there's some logic in terms of how the wild card works, but that's where you don't require permissions or like he doesn't have to ask you to do it. Then the things that you wanted to ask you before it does it things that it will deny for very sensitive files or dangerous commands, if you need to include extra directory access beyond the project route. 
+
+Speaker  7:40:57
+So maybe there's some shared files that you want to include or shared documentation maybe you have a coding guideline across all your projects then you could maybe reference that information, let it know that it's there. Here we can set the default mode so here it says accepts edits. Yep so you know, default mode there. And then we have disable bypass permission mode so this would be, yes, set to disable, to block the data city permission flag entirely, to block the flag entirely. So that means we can't use it anyway we cover it i can't remember off the top of my head. 
+
+Speaker  7:41:36
+I think it means to disable the feature but we definitely cover it in that specific slide because I remember talking about it. We got MC server setting controls so auto approve all servers listed in the MC Jason file so if you want to enable them all then you just say true approve only specific servers so here we're saying we approve memory and the GitHub servers disable specific ones so specifically reject certain ones and then we could allow them based on server names these are based again, this is managed setting only so just pay attention to that so allow lists for MCP servers. 
+
+Speaker  7:42:11
+Yeah, so for specifically managed settings, OK, so that's all they're saying there. Then all of these settings here for plug in marketplace are for managed settings. Ok, So for your worldwide level settings. And here we have the option to use strict restrict to known marketplaces or block marketplaces or this is appendix of the plug in trust warning to show at install time so just a message there. Then we have managed settings only lockdown flags. So here we have allow managed permission rules only so whether we can set that there for MCP servers and hooks only and again, this is for managed settings. 
+
+Speaker  7:42:52
+And then we have hooks i don't know if this is the last slide, I think it might be the last slide. And so whether hooks are enabled or not, what are allowed hook URLs, the N bars that will be allowed to be interpreted, and then the actual hooks themselves and we have a whole section on hooks. I guess we're not dumb we still got observability, status line, IO, and miscellaneous settings. So here you can set the O tail header headers helper. So I guess if you're using O telemetry to export your data, you can utilize that there. This is where we can configure status line we already covered this when we did status line. 
+
+Speaker  7:43:28
+And then for file suggestions, we have a custom script to power the auto completion, which is interesting. And then we have respect git ignore so whether the file picker hides files matched by the Git ignore or not. So there you go. That's all the settings as of today. And again, do not worry about remembering all that stuff. We will figure it out as we go but I definitely want to change those darn spinner verbs they I cannot stand them oK, chow chow. 
+
+Speaker  7:43:59
+Hey folks this is Andrew in this video what I want to do is fiddle with settings now, obviously there's a lot of settings and at a lot of different levels, but I personally just want to change something for myself and I know that we already have a settings dot local dot Jason. If you don't go ahead and create one, but I'm pretty sure when you do clawed there at the start, you're going to get one or you could do clawed init as that we'll set one up initially for you. So I'm just thinking about this for a second. 
+
+Speaker  7:44:28
+Let's go make a new project because I just want to test this for sure. And we'll say MKDIR and this will just be settings example and I get ACD into that one there i'm going to do clot and so as I hit enter, OK, it's entered into settings example. And so whenever you do that, it generally is going to create a new thing but notice here it says in settings local dot Jason so I think that it might have already created 1 so I'm going to go ahead and type in code period, just so that we can get into this context so we're not confused. 
+
+Speaker  7:45:01
+I'm going to give this a refresh here. I want to see if there's any kind of file here that's what I'm looking for do we have any settings file yet? Ok, we'll go ahead and do terminal, new terminal here i'm just going to go ahead and make a read me file just so there's something here like hello world. So it has something to look at, right i'll even make a Ruby file we'll go ahead and just say hello dot RB. 
+
+Speaker  7:45:23
+This will be puts hello. 
+
+Speaker  7:45:27
+World because I noticed that when it was empty, it didn't prompt us for anything like do you trust this directory, which I'm used to seeing? So maybe there has to be something for it to do that. So go ahead and do that and it didn't, it didn't prompt us for anything. But we see this, it says in hello dot RB that's its context right now. Oh, because that's the page we're looking at up here oK, but it isn't let me just see it isn't telling me anything else let's go ahead and stop that so now I have nothing in context up here. 
+
+Speaker  7:45:56
+Let's go ahead and hit Claude. It's not asking me to trust anything so it says tips for getting started using it. Ok, and notice there is no dot Claude directory so we could obviously create that manually. I'm going to go ahead and use the init. Ok. So we'll go ahead and do the init and I believe that's going to go ahead and create it for us. So here it's searching if there's anything in that projects directory we'll give this a refresh now. And I still don't see anything so I'm going to stop this here i'm going to do LS hyphen LA and we still don't have a clod directory so I thought I for certain thought that was going to create for us. 
+
+Speaker  7:46:37
+What we wanted there and so we'll go ahead we'll just launch this up again i'm going to do forward slash init, initialize a new clod MD file it didn't even make one for me here. Am I not in the right directory here? I am. 
+
+Speaker  7:46:52
+Ok, I'm still going to do this i just want to see if it generates out a settings Jason file, OK, because I don't remember creating that other one. Maybe Claude changed it at some point maybe I tried to change permissions. And so we're just trying to observe what it creates here. Ok, Like I don't need a Claude dot MD file. We'll go ahead and just say yes, it's fine. But what I do need is that page and so again, just trying to verify if that's correct or not we'll pause here and see what happens. 
+
+Speaker  7:47:23
+Oh, looks like the file is already here we'll say yes, refresh and so we're not getting that directory so we have our claw dot MD, which is fine, but that's not going to do anything for us so we'll go ahead and we'll make a new one here this will be clawed. 
+
+Speaker  7:47:37
+And then we'll make a new settings file i always forget if it's I think it's settings dot local dot Jason. It is. And because I only want to apply to me. 
+
+Speaker  7:47:48
+Do that. The reason we went through all that init stuff is I just wanted to see if we'd actually make one apparently doesn't. Ok, so now we have this and so I'm going to go ahead and we'll do curlies. And the thing that I want to get rid of is that the the spinner verbs, you heard me already i really don't like the spinner verbs they drive me crazy and so I'm really glad that we have this option and so I'm going to go ahead here and change it like this. 
+
+Speaker  7:48:14
+And I'll go here and put verbs. And so I'm going to list it to very specific ones so I'm just trying to think of, well, by the way, if we want this to work, we're going to have to name it correctly so it's going to be local. Dot <a href="jason.com">jason.com</a> not jason. Dot <a href="local.com">local.com</a> that makes no sense but I'm just trying to think of of a verb that will not infuriate me. 
+
+Speaker  7:48:37
+And so I am thinking. 
+
+Speaker  7:48:45
+Computing. 
+
+Speaker  7:48:49
+What is it for Computing. 
+
+Speaker  7:48:53
+Ok and so that's the one I have. We might need to set the mode. Just a moment let me take a look here. And so we'll go into the settings, Jason, Claude, and see what the exact specification is for this. 
+
+Speaker  7:49:10
+So what I'm looking for is the possible settings so we want spinner verbs, spinner verbs, spinner verbs, and there's the mode append i'm not sure we have set mode to replace to only use your verbs or pen to add them. Oh, I do not want any other ones. So we're going to go here and say mode and replace. Ok, so now we have it. And so the question will be, will this work also, you know, if I change my settings, does it automatically take effect so can you create me a simple Sinatra app that has a hello world endpoint so that's what we're going to do very simple request. 
+
+Speaker  7:49:54
+It says Bo boon dangling and it's also giving me tips. So it doesn't seem I'm just hitting escape to interrupt it that it's taking effect. So how can we reload our settings thing without having to completely go out there is there like a reload? Whoops it's hanging there a bit and notice I'm hitting control C so I didn't really mean to quit that session i'm just re entering it there. 
+
+Speaker  7:50:19
+So now it says settings local Jason OK and I'm just curious is it going to refresh or reload? Reload plugins remote environment i don't see any option there so really it seems like the only way to reload it is to exit it out i'm just not convinced that changing settings takes effect until you go in and leave again. But anyway, what we'll do here is we'll get and go say build me a simple hello world endpoint in a Sinatra app. Sinatra is Ruby and it's a very small framework. And notice it's now just saying computing. So now my sanity is back. 
+
+Speaker  7:50:59
+So I'm very happy about that as I've been getting so sick of those commands. But I want this to take effect everywhere, right because you know, I really don't like that those verbs so I'm going to go ahead and grab this and copy it and what I'm going to do is just cancel out of here. And I want to go to my home directory in the Claude. There should be a directory here and there should be a settings. If there's not, I'm going to make one so I'm going to go here and say touch. 
+
+Speaker  7:51:26
+Settings dot Jason. And then I'm just going to say code Claude here so I can open that up very quickly. And in here we have a settings, Jason, and apparently we already have one, even though I don't recall there being one there, but that's fine. I'm going to paste that in and we're going to merge this stuff together. And so now across all my projects for me, I should never, ever see these again so I'm going to go ahead and delete this cell permanently, OK and we're going to type in Claude. 
+
+Speaker  7:51:59
+And I'm going to resume a previous conversation we were having. 
+
+Speaker  7:52:06
+So I, I interrupted you. 
+
+Speaker  7:52:11
+Can you continue? 
+
+Speaker  7:52:15
+Can proceed. You can proceed again because I can't spell the word continue. So we have computing, which is great and that file's not there anymore, right so I'm going to stop that because all I wanted to see was that worked. We'll go over to here. And so this is 1 is settings example, which was the folder we just created, but this is actually grocery share monitoring and so this has its own settings dot local file, right? And so if I do Claude and I'm just going to say, you know, what version of Claude am I using? It's a really simple question. 
+
+Speaker  7:52:49
+And now it's saying computing. Ok, great and we don't have it set there so there you go that is something I think the most practical setting we have. I've also kind of tempted to try out language as they say, you can switch out language so preferred language. And I know folks here probably don't know Japanese i know enough Japanese, but I'm not very good at it. 
+
+Speaker  7:53:12
+But I'm going to try and then pretend that I know Japanese even though I don't. And we'll go ahead and put that there and so I'm going to run Claude i just want to see if we get Japanese text. So we'll go ahead and type that. Oh, you know what, to make it work, I think you're going to spell language correctly do I have that spelled correctly? We do Claude codes, preferred response language oh, that's how it's going to respond. Ok, So what we'll say what Claude code version am I using is it going to reply in Japanese? Because I'm using English, so that might not help, right? 
+
+Speaker  7:53:55
+Oh, it did perfect so we have Claude code no. 
+
+Speaker  7:54:01
+Bajing bajingwa des. Ok, so I kind of know it, but that's cool so if I want Japanese, we could just swap it to Japanese, But there you go that's our fiddling with settings oK. 
+
+Speaker  7:54:22
+All right, let's take a look here at permission rule so Claude uses a tiered permission system that is tool based access controls or T back and you won't find that anywhere on the Internet because I just came up with it. So we all know RBAC, so rule based access controls but the way the permissions work with Claude, it's all around their tools. Ok, but here's example of a permissions that this would be in your settings dot JSON we saw earlier in the settings dot JSON section, but we're going to go deeper on this stuff. 
+
+Speaker  7:54:53
+So permission levels are allow, ask, deny it should be straightforward what they are, but let's just cover them allow means it's allowed to do it, right. Ask means ask the user if Claude's allowed to do it. Deny means you're not allowed to do it. Ok, the rules are evaluated from deny, ask, allow. So what will be applied is what's either, we could say least permissive or most restrictive. That's the same thing i'm just saying it two different ways. So a deny will always rule over an ask and allow an ask will happen before an allow happens. 
+
+Speaker  7:55:27
+So there you go. Where are the tools well, they're here it's bash, it's read, it's edit those are two separate ones i just have an editing issue there. We have web fetch, MCP and agents, and specifically we're talking about sub agents oK, so now we know that and the next thing we need to cover is all the syntax sugar here so you can configure this perfectly OK. 
+
+Speaker  7:55:52
+Hey folks, this is Andrew and in this video I want to go ahead and just test all the types of tools in our permissions and see if they work. So right now we have a settings dot local dot Jason file here and we have some allows so we can install anything we want. We have this database information and we have this to fetch from bright data. But I'm just going to back out here for a moment i'm going to make a new directory i keep doing this. This will be like hello world tasks as you can see, we just keep making new ones to whatever, whatever we need to, to work our our use case here. 
+
+Speaker  7:56:24
+And I'm going to go ahead and make a new folder called dot clod as we learned, and it's not going to help us there we're going to have to make that ourselves. 
+
+Speaker  7:56:35
+And I'm going to apply this all at the settings dot local Jason level oK, And so in here I'm using permissions yes, I know we can use Claude to help us write permissions, but folks, we got to do a little bit of work ourselves, right? Permissions and in here we have our allow, right? We have our deny, OK, 
+
+Speaker  7:57:00
+And we have our ask, OK so right now we don't have really anything in these, of course, And there's obviously different tools, oops, tools that we have here. And I'm not sure why it's complaining like that maybe because there's nothing in them right. 
+
+Speaker  7:57:25
+Now that's probably why, because they're empty incorrect type for array oh, sorry, array that's why oK, so there we go so now we are set up to start working with them. And technically the order is deny, ask, allow, or ask allow. You know, however you want to order them this is how I'm going to order them oK, so now we have our permissions in here, or the startup permission so let's take a look first at bash. Ok, so I'm going to go ahead here and just say bash and we're going to deny it. 
+
+Speaker  7:57:59
+And I'm going to go ahead here into a new terminal down below, and we will type in Claude to start it up and I'll just say, you know, can you run a bash command in the project directory for LS? Ok. And so we want to see what happens here. So I explicitly told it just go ahead and run the single command. So I don't have access to the Bash tool in this environment. I can use the glob tool to list files. And so the project directory contains only one file. So it found a way around it because it obviously has other tools available to us, but that is something that it could do. 
+
+Speaker  7:58:39
+How about how about we just make a new file here? This will just be data dot Jason. Ok, and I'm going to go ahead, just make some data in here so I'm going to go and say. 
+
+Speaker  7:58:53
+Hp 100 make a value there MP three hundred. 
+
+Speaker  7:59:03
+Class mage oK, so just random data. I mean, obviously for RPG, but random data that we have here and so I'm going to go back here and say, can you use JQ to return back dot HP data from the data Jason file? Ok. And so it might try to find another way around it. So since I don't have a batch tool available to run JQ, but I can read the file and show you the HP directly and so it found another way around it, which is awesome. So what we'll do is we will take this and we will permit it. We'll just say that we'll, yeah, we'll go and move it to ask and let's see what happens here. 
+
+Speaker  7:59:50
+Ok, so we'll go back and try this again. 
+
+Speaker  8:00:00
+And it didn't ask us, right so I'm thinking that maybe the data is cached? Ok, so I'll go back over here and say, can you use the JQ file to read MP data? 
+
+Speaker  8:00:12
+So it might be trying to work around the problem. 
+
+Speaker  8:00:19
+And it didn't ask us. So are you using the MP, the JQ tool or are you relying on something like cache? Because I'm trying to test it for that, right? 
+
+Speaker  8:00:40
+Each time there's no cache involved each executes the thing oK, you can verify this yourself, but it's confusing because we've told it that it has to ask us if it wants to be able to do that. But maybe it has to do with our mode, right because I think it's the first time it asks a tool, that's where we run into an issue. So I think what we need to do is figure out what is going to be our mode setting now we can toggle with Shift tab here and here it says accepts edits on or plan mode on. 
+
+Speaker  8:01:09
+But I think the challenge here is that we need to make it a little bit more explicit so I need to figure out what all the permission modes are. I know we have a slide on it, so let me just go grab that slide really quick so we can compare it. I know it comes later on here or maybe we've already done it we'll see here. But our permission modes is default so standard behavior prompts for permissions on 1st use of each tool. 
+
+Speaker  8:01:33
+Ok, we have accepts edits automatically accepts file edits plan Claude can analyze but not modify files and execute commands auto denies unless pre approved via permissions auto denies tools so let's go ahead well, this is don't ask. We have bypass permissions, so skip all permissions. And so it's strange because if it's been asked once before, it's not going to explicitly ask again i'm not sure how we force it to ask. Let me see if there's anything we can do to make sure we can test that behavior. 
+
+Speaker  8:02:05
+Oh, you know what I think the problem is human error look, there's a colon on the inside you probably saw this the entire time. So we'll go back here and it was probably me, OK and we'll go back and ask it to do this now so now. Oh, here we go so permission rule, do you want we'll say yes, OK and so now another thing we learned was that it's not caching it every time, right so it's going to ask it every single time. So we'll go back over here can you return the HP data so we want to see if it prompts us, right? We'll say yes, we get the data back, we'll move it over to here, OK? And we'll try this again. 
+
+Speaker  8:02:50
+And so one thing, another thing we confirmed is that we can update our settings, Jason, and we'll take effect immediately. There were some cases, I think, where if we hadn't created it and we created after the fact, it didn't work. But clearly we can change this file and it's reading it every single time so that is really useful to know. So we have those. Let's talk about the read so we'll just say we'll deny read. I'll make another one here. This will be player data, so we'll rename this to player, and then I'll make a new one. 
+
+Speaker  8:03:20
+We'll call this world Jason. And in here we'll just say location, 
+
+Speaker  8:03:29
+The current location. 
+
+Speaker  8:03:32
+Town, right so we're in a town and we'll go back over to here and so we're going to deny all reads so can you return the contents of World Jason for me? And maybe it'll find another way around using Bash. 
+
+Speaker  8:03:52
+Ok, so it's returned back that data so what I'm going to do is I'm going to take this bash command. I'm going to put it over here, OK? And so in theory, it won't be able to use bash, so it can't use cat or anything else to get to it. So go ahead here and then we'll try this again. 
+
+Speaker  8:04:10
+Because we've denied it on two things, bash and read. 
+
+Speaker  8:04:19
+Ok, it's thinking, it's thinking hard. I also should start typing clear here because we're just experimenting because it's adding that context every time, right? 
+
+Speaker  8:04:29
+And there we go so here it says tool use, 
+
+Speaker  8:04:36
+Import Jason, world, Jason, allow, allow, whatever, whatever so it's trying to execute code in a very roundabout way. I'm not exactly sure. So it's ID execute tool so it's trying to find another way to work. That's really confusing so what I'm going to do is stop this i'm going to clear this out so we have no context we can check it again, Just make sure that it's emptied. Ok, See, it's nice and emptied. We're going to try that again, OK? Because I think it's trying to find a way around it, right it's trying to search the file it's not allowed to read it. 
+
+Speaker  8:05:17
+See what it read it, but we have those on deny right? I'm going to stop this and restart it up as we're again, we're just trying to get a reliable sense of reading it. 
+
+Speaker  8:05:37
+Ok, how how are you able to read the file when I have deny for re bash and read OK that's what I want to know. Can you even answer me that? 
+
+Speaker  8:05:53
+I use the Rep tool, not reader bash i searched the the pattern for it in the file, which effectively turns it. So Rep is a separate tool from read. Oh OK, but it's not under bash. 
+
+Speaker  8:06:11
+Grab is its own dedicated tools oK tools. How do I get a list of all available tools? Because I didn't see that in the docs. 
+
+Speaker  8:06:26
+And so we have this here, look at that dock maps skills dot MD. It's trying to it doesn't even know what tools are available. This is where I would probably like start going in the code base so we go Claude code. Github isn't that interesting. We have a tool that we're not aware of. It's not in the docs. And so I'd go in here and I might just go search this code base so I'm going to head period on my keyboard i'm logged into GitHub and I'm not asking Claude to do it i'm just doing it myself i don't want to wait around asking it to look in the code base. 
+
+Speaker  8:07:00
+And so I'm going to go here and I'm just going to. 
+
+Speaker  8:07:05
+Yeah, that's fine let's just get me logged in here. I just want to quickly search across this repo so finding files, grap, right i'm just trying to see if that finds us anything. 
+
+Speaker  8:07:20
+Quickly here. So here we have glob, we have grep oh, I didn't cover these i'm going to have to go make an additional video just to cover the ones that are missing. Ok but we have docs here that explains it. 
+
+Speaker  8:07:36
+Mm Hmm. 
+
+Speaker  8:07:39
+So, you know, I would have thought that there would have been a very specific place for this how did I miss these am I crazy here we have read, write, grep, glob, bash agent, web fetch, web search task, notebook. Ok Claude code tools. 
+
+Speaker  8:08:06
+Oh hold on here, permission required. Oh wow we have way more rules than I thought. Ok, maybe my confusion was when I was doing the permissions, I didn't realize how many tools there are. So I guess I will need to go back and correct that. But it seems like we have a lot more tools available to us and we'd have to go here and say like, no glob, no glob, right? And then we would need. 
+
+Speaker  8:08:36
+No grep to get this to work, right? So go back and I'm going to ask it again. 
+
+Speaker  8:08:50
+Cool, more slides i got to make more slides. 
+
+Speaker  8:08:57
+Looks like you've denied it as well for bash so what I'll do is now I will bring in the read me just the read we'll say allow, but you're basically getting the idea of how this works it's not complicated, right? 
+
+Speaker  8:09:15
+But I guess you'd have to really test it and make sure so with bash and read, can you read it i don't have the remaining tools I can use to retrieve it. So it needs a combination of tools to achieve its goals. So that's really, really interesting. So I will need to go back and retroactively update this so you'll know by the time you watch this that there is obviously a bunch of tools or I'll follow it right after this, this video here. But we're getting an idea of how this works, right we didn't deny the bash stuff, so we can go here and you know, deny very specific tooling, but I'll just go here and bring these back and we'll just do one more test here we'll be like JQJQ is denied or maybe just like J question asterisk so OK, so go ahead i'm just going to go back and say like read with the JQ tool. 
+
+Speaker  8:10:05
+And so it should be denied here. So it's denied. Ok, so I think we've got some experience here and I have a missing spot here probably the next video will literally start talking about tools. I'll see you the next one oK, Chow, Chow, 
+
+Speaker  8:10:22
+Let us take a look at permission modes. Ok, so permission modes is going to change the way Claude is going to work with you in terms of whether it will go ahead and do something or ask you. And so in the lieu of having permission rules, this is what it's going to do. Ok, so the first is default so standard behavior prompts for permission on the first use of each tool. Then we have accept edits so automatically accept files and edit permissions for the session. We have plan basically, which is plan mode. This will make Claude analyze but not modify files or execute commands. And so you can have it where you can have it do a plan. 
+
+Speaker  8:11:03
+But then you probably want to get out of that mode next step, right so you wouldn't want to run that all the time. We have don't ask so auto deny tool unless auto denies all tools, sorry, unless pre approved via the permissions or some kind of allow rule, right? We have bypass permission, so skip all permission prompts. Obviously you shouldn't do that, but that is an option that you have. And if you want, when you launch up Claude, you can tell it what mode to start in, but you can obviously toggle away from it so you're not like locked into it. And when you're in the interactive shell, you can use Shift Tab to change through some modes, not all of them, but some of them and the first one is default. 
+
+Speaker  8:11:42
+You'll be in it because there'll be no message there. Plan will literally say plan mode and then accept Edit will be on accept mode and as you hit Shift tab, it will toggle between those 3 so there you go. 
+
+Speaker  8:11:58
+All right, in this video, I want to take a look at permission modes and we will get to tools in a moment here but I figured this would be a very easy one to jump into. And so if we want to start up in a different mode, we can go ahead and do permission mode plan. That's going to bring us into plan mode. I do have one little issue here, so I'll just kind of fix this and update my old settings file here so I'm going to stop and try this again. 
+
+Speaker  8:12:24
+Ok, I'll just say like, you know, can you read the player Jason data using JQ with four eight for the HP? Ok, very worded, but it's in plan mode, so it shouldn't be able to execute it. So what we're looking for is to see what happens. What I really like is plan mode when we're using it over here because it'll open up a markdown file and so that's a lot nicer. But here I'm just carefully looking at it so we have Explorer so we can read it we'll do bash, we'll run it, and we'll go down below, find all visible files in the project do. 
+
+Speaker  8:13:09
+You want to proceed? So I'm assuming that this is the plan, right? Ok. But it's hard to see it because of the way we're looking at it and we could talk about plan mode later on, but we go over to here, I'm going to switch it over to plan mode there we go. I'll just say, can you read the contents of player Jason and return HP? Maybe use the JQ tool, OK. And so this way it's a little bit better it'll make a markdown file we're obviously covering plans sooner than I want to, but that's fine it's OK. 
+
+Speaker  8:13:48
+And so it should output A markdown file. 
+
+Speaker  8:13:52
+It's in plan mode. Where's my plan where's my plan? 
+
+Speaker  8:14:06
+I should have written a plan first wow, That's a screenshot we're going to take there we go. 
+
+Speaker  8:14:17
+Escape to cancel. 
+
+Speaker  8:14:20
+So I'll take a screenshot for that for our plan stuff but that is very interesting. Ok, All right so that's kind of interesting that that was the result for the plans but I mean, really just came down to me showing you that this will enter you into different modes for that command there. And of course, we can change our setting for this so maybe we'll do that as well as I guess that is the second-half of that part. 
+
+Speaker  8:14:47
+I just looking for the list, the slide I have here, which will help me know which ones we can change to. Ok, it's somewhere here. There we go permission modes yeah, I just can't remember the names of them. So there's also accepts edits, plan and don't ask so maybe try don't ask, don't ask and so it shows don't ask what's interesting is that when we toggle on this stuff, it only toggles on those two so we want to get to a mode that's not there, right? We have to do that. 
+
+Speaker  8:15:20
+As soon as we toggle out, we don't have it anymore. And I don't plan on running it in this video, but we'll go ahead and try bypass, bypass permissions, assuming I'm typing that, right. Let's see, we get a big, big warning, right? And in fact, they have their own flag for that and we'll cover that in a separate video because obviously it's a big, big deal. But yeah, so I guess just that one, one or two modes that we cannot access anyway but it was interesting to find out that our plan didn't stick to its plan mode so, you know, if you're expecting it not to muck with stuff, just be aware of that oK, Chow Chow. 
+
+Speaker  8:16:00
+Hey folks, let's take a look at syntax sugar for the bash tool. And specifically we're talking about this wild card function so here's an example of permissions and these are all bash commands. And you'll notice that bash takes a parameter. It's it's a tool, it can take inputs. And So what it's taking as an input is actually a bash command so running MPM run or get or whatever you could think of it can do. But the thing that is a little bit different here is the fact that there's that wild card there that's that asterisk. 
+
+Speaker  8:16:31
+And so basically anything can be substituted in there. You can put a wild card before or after or in the middle, as you can see here just get my pen tool out so we can point to it so it's here, here and here so different spots, there's only one catch with this thing is you have to just be aware of spaces. So spaces do matter so like if you have the command here LS space asterisk, it will match this LSI in LA, but it will not match LSOF. 
+
+Speaker  8:16:58
+Ok, so that's just one little caveat. Pretty straightforward there you go. 
+
+Speaker  8:17:07
+Let us take a look at the read and edit tools so here we have a bunch of read and edits and let's talk about the pattern for pathing that we can pass in here. And so there are four ways that you can do your your pattern matching here for your pass the 1st is with a double forward slash. So this is going to be at the root of your file system. So normally when you're in Linux, just a single forward slash would be at your root. But when we're doing this, we're using a double forward slash. Ok. If you want to work from your home directory, you're using Tilda that's a very common practice in Linux. 
+
+Speaker  8:17:43
+Ok, then we just have a single forward slash this is going to be at your project root and so that can trip some people up, but that's what it does. Then we have your relative 1, so that's your dot forward slash period or just nothing there. And that's pretty much it. Ok, 
+
+Speaker  8:18:06
+Let us take a look at the web fetch rule technically tool. And so here's an example of us using Webfetch across allow, ask, deny. And the only thing it really needs is a domain and you'll notice it says domain colon and then whatever it is, maybe in the future they'll have more things you can put in there and that's all there is. And you'll notice 1 little thing down below here, Notice that we don't have any input for this there's no parameters. And we'll probably make a separate slide on this just to make sure that you know, But if you have that, that just means that it's it's like a catch all for everything it's saying deny all for web fetch or if you had it here, it would be like ask for all or if you had it here, it would be like allow for all oK, there you go. 
+
+Speaker  8:18:52
+All right, let's take a look at MCP rules for so for the MCP tool, we have many examples here. So if we want to accept everything from a very specific MCP server, we do MCP underscore and score and whatever the name of the server is according to Claude's directory that we could have a wild card to say we want to match all possible tools in there. And then we have one here for a very specific tool that we're matching. One thing I don't understand is like why wouldn't the wild card be the same thing as the server? There's probably some distinction there. 
+
+Speaker  8:19:26
+I can't really tell what it is, but we will continue on oK, 
+
+Speaker  8:19:34
+Let's take a look at bare name tool rules so here we have our tools as rules, but notice that there's no parentheses or stuff like that so when you have a bare tool name with no parentheses, that's going to give you total coverage, no domain filtering, no patterns so Web Fetch is going to do all fetches, all domains read will do all reads, all files edits will do all files all edits, right? Bash will do all bash commands. You're getting the picture here. Mcp is the only one that's unusual where you'd have to say the name of it, so it's not just MPC underscore underscore that's not a thing. 
+
+Speaker  8:20:09
+You still have to do an individual name, and I still don't know why there's one with a double underscore asterisk it doesn't explain it in the docs, but there's a variant, so just be aware of the bare name tools. 
+
+Speaker  8:20:27
+Sandboxing or a sandbox is a security mechanism for separating running programs for your operating system, and a sandbox provides a tightly controlled set of resources for your guest programs to run in storage and memory scratch space, limited network access, the ability to inspect the host system, disallowing or heavily restricting reading from input devices. So you can use sandboxes with cloud code and so if we were to type forward slash sandbox depending on our operating system, it's going to need certain programs installed because they won't be there by default. Since I'm on WSL 2, it's asking for bubble wrap, so cat And's E comp filter. 
+
+Speaker  8:21:11
+And so it gives you the commands right there and you install them and then once you have that, you'll be able to go into sandbox mode notice that we can have a few options where it says sandbox bash tools with auto allow sandbox bash tools with regular permissions or no sandbox. And so the reason why you'd want to use sandboxing is that it's very, very useful when you're running a session with dangerously skipped permissions where you want a bash command that's not going to happen. 
+
+Speaker  8:21:38
+So the key thing you have to remember about sandboxes is that sandboxes only apply to bash tools, right so that is what we're limiting is bash OK bit technically it's bash tool. And so let's say we wanted to read something from the Internet. If we used a curl command through bash, it would get restricted, right? But if we tried to use web fetch, it sits outside of the sandbox, It's a tool outside of it. 
+
+Speaker  8:22:06
+It's not trying to utilize the host system directly. And so it can go out to the Internet and grab it so just be aware that it's about limiting bash tools. And so I'll definitely be trying to find a use case that is safe for me to use with dangerously skipped permissions. But there you go. 
+
+Speaker  8:22:28
+Hey folks, in this video, we're going to take a look at sandboxing or just getting it enabled so let's go ahead and get into the interactive shell we have claude, I'm going to go and type in sandbox. It's going to depend on what you are running, right so I'm on WSL 2. I never installed bubble wrap. I guess it just came installed on this Ubuntu virtual machine, but you can see it really depends on what is it you want to do so here it's giving you instructions saying do app install socat. Ok, so I'll make a new tab here. We'll go ahead and do that. 
+
+Speaker  8:23:05
+And so I'll just go up and say sudo app install. Ok, I guess it just wants that. We'll just say yes so it's going to get that installed and it looks like there was one more so here it says the C comp filter required to block Unix stuff and so we'll go ahead and do that separately over here. Ok, we'll hit enter and it looks like it's been installed i'm going to make my way back over to here i'm just going to hit escape. We'll go back up to sandbox, and it shows that socat's not installed so what I'm going to do is I'm just going to get out of this here and I'm going to try this again and just open a new terminal to try to get a new session, OK because maybe it doesn't know that it's installed. 
+
+Speaker  8:23:50
+So go ahead and do that and we will say sandbox. Ok, so now we get this mode so I've been showing that we don't have anything installed it's now showing us the steps for us to configure. So let's take a look at the modes we have we have sandbox batch tool with auto allow sandbox tools with regular permissions or no sandbox. And then down below, auto allows commands will try to run in the sandbox automatically and attempts to run outside of the sandbox fall back will fail. So what we'll do is choose the first one. And so now we have it turned on. How do we know that it's turned on i wonder if we could do like status line, status line show if sandbox mode is turned on. 
+
+Speaker  8:24:33
+I had a status line earlier when we did the cost, but I ended up removing it right away so that's why you're wondering why you haven't been seeing it. It's because I keep fiddling with things, but we'll go ahead i just want to see if I can add it there. I don't know if that's something that's available in the status line API as I don't know what is being returned and I never figured out how to well, I just never put any effort to figure out what's being returned, but I'm just curious if we can get that information there or not. 
+
+Speaker  8:24:57
+And so here it looks like it's trying to grab is sandbox mode. So we'll go ahead and say yes it looks like it's bringing back all the old code too that I had from when I did the last status line. Ok. And so your status line is now configured and to display a sandbox label to magenta when sandbox mode is active. I don't see it, but maybe we need to exit and reenter here so I'm going to go ahead, type in clear, we'll reenter. Ok, I'm going to go sandbox. It says we're on right now, so it obviously didn't set it and so maybe there is some trick to it, but I guess if we want to know that we have sandbox mode, we'll have to do that. 
+
+Speaker  8:25:42
+I'm just going to check one second i just want to see if we can actually get it in status line or not. All right, So apparently what it's piping to us is Jason's Jason session data. So apparently this is all the data here. So I'm curious, is there sandbox in here? And we do not see it, So maybe that's just not an option and it made it up OK, because this apparently is the data that's available to us, which is fine and so when we want to check sandbox, that's how we're going to have to do it. 
+
+Speaker  8:26:10
+Commands will try to run in sandbox automatically and attempt to run outside of the sandbox of the sandbox, fall back to regular permissions. And so just depends on what we have set for there. So I would think that if we want this to work, we would need to set something to deny it, right so we'll fall back to regular permissions, explicit ask or deny. So my question is like, how do we set up a scenario to test that that's what I want to know so just give me a second i'm going to go ask Claude off screen here and see if you can give us some code to put in our settings file to make this work oK. 
+
+Speaker  8:26:47
+Oh my goodness it's so hard to make sense of whatever clot is outputting for instructions i guess that's why I'm here. But what we'll do is we'll go ahead into our settings local. It's saying settings, Jason, but it doesn't really matter here. And I'm going to grab in the deny for deny all so I'm going to grab this one here, OK? And I'm going to paste it in and the idea is that we're saying you're not allowed to curl W get look at environments or secrets, OK? And so then for the sandbox, apparently we have configuration for that. It says configure to catch what escapes the deny rules allow unbox sandbox commands, false networks, allow domains, GitHub and whatever. 
+
+Speaker  8:27:30
+So we'll go ahead and we'll grab this as well. Ok Oh, we have it right here so I'm just going to grab this command here, OK, and we'll save that and it says test testing the stage flows. So here we have Claude P run curl command. I mean, we shouldn't have to do this headless, but we'll just go ahead and grab it here like this also, I'm just going to stop i don't know if those permissions will take effect immediately they probably do, but I'm paranoid so I'm just going to go ahead and restart that there. 
+
+Speaker  8:28:06
+We probably actually could have just checked them to be honest so here I have run <a href="curlexample.com">curlexample.com</a> OK and so here they're saying this should hit the deny rule before ever reaching the sandbox so permission to use bash with a command curl has been denied this command has been denied this is likely due to the sandbox restriction. Sorry oK, And so that's what we want to happen so then here we have this test, the sandbox catching something and the deny rules missing it so let's go ahead and give that a try, OK? So we'll go ahead and do that. 
+
+Speaker  8:28:46
+And here, network requests outside of the sandbox did you want to allow this connection so it's asking us if we want to allow it, and that's fine i'm just going to hit escape here. We'll say yes, sure, that's fine. Ok. And yeah, we'll see. Yes, yes, 
+
+Speaker  8:29:10
+Yes, yes. 
+
+Speaker  8:29:15
+Ok. And so here we have a message coming back here. So the sandbox prevented the clod CLI couldn't create it's session directory due to file system restrictions if you want to check SSH config files, you can run it directly in your own terminal. So the idea is that it's trying to check our SSH file which is on the exterior on here. And so here you can see that working so yeah, the sandbox is working expected. And so hopefully that was clear. I think it was but I'm just going to revert these for now as I do not need these set and I'll take these rules out as well so I do not forget. 
+
+Speaker  8:29:49
+And I'm going to go and turn sandbox off. 
+
+Speaker  8:29:54
+And we'll say no sandbox currently. Now, should I have used this with dangerously permissions probably to show you, but I just also don't want to make a muck of anything so I don't even feel comfortable using it i probably don't launch up a virtual machine and then we would try to do something destructive. I might do that we'll see. But for now, I think we've shown how sandbox works OK. 
+
+Speaker  8:30:19
+I'm starting to notice at the beginning of videos I keep saying let us take a look at so I'm going to try to break that pattern here. Bingo bongo. We are checking out dangerously skipped permissions i don't know. So dangerously skipped permissions is a setting which will tell Claude for a session to stop prompting you to ask for permission so basically go run at it and if you want to use it, you type in Claude dangerously skipped permissions and you could even one shot it with the headless task here, which we haven't talked about headless tasks, but that is something that you can do. You can set it in your settings dot JSON. 
+
+Speaker  8:30:54
+Of course it is not SJ or S John, it is JSON it's just a spelling mistake there. And that is a setting that permission default mode so bypass permissions we saw it earlier i just didn't say anything about it because I was waiting to talk about it now let's have a serious talk about this feature because it can be dangerous, as it says, dangerously skip permissions. So why would you use it but you probably shouldn't because you're getting annoyed that when you walk away and you come back, your task is not completed due to a hanging ask for a permission request. So you should avoid using dangerously skip permissions because it says it's dangerous. 
+
+Speaker  8:31:31
+A lot of folks say that they can avoid this issue by doing a lot of planning upfront and then working their permission files. But it's going to be different for other people in practice. Or one really strange thing, I don't know this is a good thing. But some people what they do is they take their their clawed API key and they put it in a dot env in their root directory and they say that helps avoid a lot of waiting around for them but again, that sounds bad to me i don't know why it just does. 
+
+Speaker  8:31:58
+So when should you use it? When you are running a dev container in AVM and there's no concern of risk, you know exactly what it's doing and it's hands off. It's in an automated system like a CICD pipeline and hang ups going to cause you issues. It's very low risk stuff, well scoped you know exactly what it's doing it's linting errors across hundreds of files it shouldn't be deleting files, right So how you can make it safer well, at the very least, if you're going to use it run it in sandbox mode and this will limit the amount of risk on a host machine where serious damage could be done and we will obviously talk about sandboxing oK, 
+
+Speaker  8:32:39
+All right, So I want to use sandbox and also the skip dangerously permissions command. And so I want to set up a dangerous scenario for us to do we're not actually going to do anything dangerous, but this would be a good area of exploit. And I just want to prove to you that even if we have these two layers of protection, we can still run into a problem oK, so one thing is MPX so MPX is a utility tool, part of the node ecosystem and what it can do is download and execute arbitrary code from the Internet on the fly. 
+
+Speaker  8:33:11
+Very often used to set up projects so like MPX create react app or MPX maybe like create or initialize AVTAGS thing so there's many MPX commands you come about, but the idea is that when you don't want to necessarily install library, but you wanted to execute and do something in one go. So even if you think you have it completely locked down, there are still trap doors with MPX where those restrictions don't matter. So you might think, OK, well, how do I protect myself from this well, I can set up a rule on Bash that denies MPX, right? That would be one thing I can do and then we can enable a sandbox account, right? So we believe that those two things are going to protect us, right? But the only problem is that the sandbox cannot protect you when Claude actively reasons that the sandbox is the obstacle and decides to remove it. 
+
+Speaker  8:34:03
+And so when you're using dangerously skip permissions and auto proves, the sandbox becomes something Claude can simply opt out of whenever it completes a task. But also, it's just like when you have like 20 commands, you're going to miss that, right so unless you're sitting there but watching it, you're not going to see it. And the whole point of this thing is to be able to walk away, right? So the next lab we're going to do is I'm going to go and set up an EC two instance we're going to implement these two things, right we're going to do this and this. 
+
+Speaker  8:34:33
+We're going to download an MPX thing and we're going to see if Claude will go ahead and try to remove the sandbox i'm going to tell you first try and it did it so I'll show you here. Sandbox is enabled. I asked it to run an MPX command and it wasn't able to do it because we blocked it. It did ask us impromptus and say, hey, do you want to run this command? So I was able to do that but right after that I failed and it just figured out, hey, if I disable the sandbox, I can get around that problem and then it ran it. 
+
+Speaker  8:35:06
+Ok, so this is where you can run into serious issues. But again, this is not, this isn't really a dangerous thing that we're doing, but we are pretending that we're executing a dangerous MPX and we are either missing it or we don't have the guardrails in place to keep us safe oK, 
+
+Speaker  8:35:29
+Hey, this is Angie Brown in this video what we are going to do is go play around with Sandbox and dangerously skip permissions in a virtual machine so generally when you're using dangerously skip permissions, you're supposed to use it in an environment where you do not care if anything goes wrong and so I think that running in a virtual machine on a glass is going to be a great place to do that. And so I'm going to go over to EC two and what I'm going to do is launch up a new instance. 
+
+Speaker  8:35:57
+Of course, you can do this anywhere with like Google Cloud or Azure wherever you want, but I'm going to do it here i'm going to go with Ubuntu because I want this to be an easy install in fact, I'm pretty sure Amazon Linux 2 or Amazon Linux 3, whatever version it is now, is not going to be an easy install i ran into problems with that. And technically we need to have four four gigabytes of memory so I'm going to launch AT two medium. 
+
+Speaker  8:36:18
+You can run it on something smaller, but I'm going to just go with the that there is, they don't plan to run this very, very long, but you know, just be careful of cost there if you're concerned about it because there is a cost associated with running that, especially if you forget to turn it off i'm going to choose my EC two SSM role this is a role that I've created, I've had forever and I'll just show you what it looks like if you need to create it yourself. And so all it is, it's a role, EC two role here. And it has the key thing it needs to have is this managed instance course so you can create that yourself by creating a rule and then choosing EC two here. 
+
+Speaker  8:36:54
+I'm not going to fully make it here, but I'll give you some of the steps. And from here we'll go next. And then it's that SSM core, OK, I type in core to get it half the time here it is. Create that, attach it oK. So what we'll do here is we have that attached and we are ready to to go check this out so it'll just say sandbox, test, cloud code, 
+
+Speaker  8:37:17
+Cloud code. I got to remember what we're doing here. And so we'll go ahead and launch that instance. I do not need a key pair as we have oops, as we have a sessions manager that's how we're going to get into it. Ok, So we'll give that a moment here to get spun up and get going oK, All right and so let's go take a look at that instance and see if it is spun up. So here we have two checks passed i'm going to go over and connect to that instance, and we're going to use SSM Sessions Manager as the means to connect. I think it also lets us specify exactly how we're connecting to it so that is really good. 
+
+Speaker  8:37:53
+Zeta Bus is always making changes i'm here oh, cool, we got shortcuts here as well. And so I'm going to say who am I just want to make sure that I am the user i thought it was actually I need to be the Ubuntu user that's who I need to be i wasn't paying attention here, so maybe here oh, they let you pick it there, but what I need to be is the correct use so I'll just say I want to change over to it so I'm just thinking about the command it's sudo SU hyphen, hyphen Ubuntu as that is the user that we expect on here. 
+
+Speaker  8:38:22
+Let's go figure out how to get clawed code CLI installed. It's a single line install, so it should be pretty darn easy for us to get going here. Here is the command we'll go ahead and grab it, paste it in, paste it in, let me paste and Yep and we get a little bit of mess up there, so I'll have to fix that no big deal, very easy for us to fix. And so that's going to go ahead and get the CLI installed. I'm going to make my way over to Amazon Bedrock. 
+
+Speaker  8:38:48
+Actually, I don't have to do that all all I need to get this going is 8 of us credentials and just set a flag so since this is set up, I guess what we would need is permissions for this to have access to Amazon bedrock. So what I'm going to do is I'm going to make a a new I am roll i didn't think about this while I was working through it, but we'll make a new I am roll and we'll just say like Amazon bedrock, bedrock access so we'll go here and I'll say managed core because I'm going to need that core. 
+
+Speaker  8:39:21
+And oh, there it is bedrock. 
+
+Speaker  8:39:25
+I'll say bedrock. Just a moment here so I'm trying to think of like which one will give me access to and I'm going to say full access here today. Ok, we'll go next and this will be my clod code EC two. Ok and so I'm going to go ahead and create that role and so now I have a role that's going to help us out so even though we have this installed, OK, we'll go ahead and say clod, right oops. 
+
+Speaker  8:39:56
+Here it says native installations exist, but not in your path oK, So what we'll do, I'm going to open this up here and I'm going to actually I'll just run this one line because that will put it into the oops. Into the Nope, that's not getting it into the into our paths oK, so I'll go ahead and paste that in there there we go we'll hit enter and it probably won't take effect just now. 
+
+Speaker  8:40:23
+Oh no, it did because it has source source here on the end so it does repeat. And so I'll go ahead and hit enter. And so we have modes here, which is fine. But The thing is, is that we need to get the right role attached here to get Amazon Bedrock access or this is not going to work. So what I'm going to do is go here to our instance or to our actions. And what I'm looking for is the means to change the role there we go so I'm going to go here and this will be what did we call it it had clod code in the name. There we go and so this should still allow us to have access to sessions manager, but also Amazon Bedrock. 
+
+Speaker  8:40:58
+So now what I need to do is I need to go and change a flag here. So we'll go ahead and just type in i think it's under your configuration, maybe deployment Amazon bedrock. And the command I'm looking for here is not that one, this one here, right so they have some other stuff up here export Amazon Bedrock keys. 
+
+Speaker  8:41:29
+We might need that one as well let me go back over here i can't remember. I have a poor memory of this. 
+
+Speaker  8:41:38
+Using API keys, view API keys, 
+
+Speaker  8:41:43
+Long terms. So here's one that I generated and it's expired. So let's say confirm here and delete it and I'm going to. 
+
+Speaker  8:41:57
+So delete an I user owning it if you are using it for any other purpose, 
+
+Speaker  8:42:04
+Delete. Oh, delete the side music yeah, OK, sure. 
+
+Speaker  8:42:09
+Yeah, sure we'll delete that. 
+
+Speaker  8:42:13
+Well, I don't know i'm about to make another API key, so I'm just going to ignore that message for now it's a little bit unusual. We'll go ahead and this will just be one day, 
+
+Speaker  8:42:22
+You see, they'll be very sensitive here with Amazon bedrock keys and so I'm going to grab that, go back over to here. We'll paste it in like that. Ok, so that's one being set. And then the other thing we need to do here is go all the way down here and set this value so that it knows. 
+
+Speaker  8:42:42
+Ok, we'll hit paste. And so now I'll just type in clear what we'll do is type in Claude auth status. And so it says that we can use bedrock, right? So I'm going to go ahead and type in Claude. And sure, dark mode's fine. We'll hit enter here fine. I trust this directory that's fine and so I'm going to say, what version of Claude am I using we're just trying to confirm if we're having API token usage here. Excellent so it is working i'm just go ahead and exit out of that just hitting Control C to do that. 
+
+Speaker  8:43:16
+And here I'm just going to make a new directory. We'll just call this Hello World because I just want something to work with it. Oops, let's go to here. I went to the home directory and I'm just going to make a new directory called Hello World and we'll CD into that. And so now we have a means to work with cloud so I want to enable sandbox mode so we'll go say yes, I trust this folder i'm going to type in sandbox and there's a couple commands that we have to do we need the pseudo app install, the bubble and the other one so I'm just copying these off screen somewhere very quickly just give me a moment. 
+
+Speaker  8:43:51
+Just trying to find a spot to put them. 
+
+Speaker  8:43:56
+And this copy is very finicky. So go ahead and do that pasting them off screen here. We will grab the next one. I'm not sure if we can get NPM installed that easily there and then we will grab the next one here. Ok, because we're staging that scenario we had a bit earlier i got to copy this. Right click, copy what a paint, right click paste oK, so I'm going to do the first one, so I'm just going to hit control C, Control C here or get out of this. Here we go control C typing clear and we're going to install bubble wrap we probably need to do pseudo in here we'll try it anyway. 
+
+Speaker  8:44:34
+Yeah, we need pseudo that's going to install bubble wrap. 
+
+Speaker  8:44:39
+Ok, so that is now set up. 
+
+Speaker  8:44:44
+We'll go ahead and we will install. 
+
+Speaker  8:44:48
+So cat, OK, 
+
+Speaker  8:44:52
+That's another one we'll go ahead and try the MPM install assuming MPM is even installed on this machine, it is not installed so sudo apartment install MPM, 
+
+Speaker  8:45:06
+Sudo apartment install MPM. 
+
+Speaker  8:45:12
+Ok install MPM Ubuntu. It might be sudo snap install. 
+
+Speaker  8:45:27
+Mm hmm. 
+
+Speaker  8:45:33
+Just looking for it old school way just. 
+
+Speaker  8:45:38
+Give me the command here it is. I don't really like taking it from somewhere like that. I guess we could install MVMMVM install, 
+
+Speaker  8:45:48
+Which is fine i'm trying to go to the source for instructions. Well, install sub I generally that's how I do it. We'll go back over to here do we have curl installed? We do. 
+
+Speaker  8:46:02
+So did you have that export thing i believe that's already appended so it's already there i don't have to worry about it. So let's say M, do we have MPM yet MVM installed no, I don't know what the versions are. So here we have that one, 
+
+Speaker  8:46:22
+Yeah, like MVM, like Node version 20, right so I don't know what the latest versions of Node is node, we'll say MPM GitHub, because that way we can find out what the latest version is, right so we're going to go in here, I'm looking for Node, and I'm going to go here and see we have 1420 are we still in 20 i don't know. So I'll go back over to here and what we're going to do is say like MVM install 20, I'm going to see if it just takes version 20. I keep thinking there's something newer than 20. 
+
+Speaker  8:47:00
+Mvm list. It's not there yet maybe source, Bash RC, 
+
+Speaker  8:47:09
+Mvm. There we go, MVM install 20 so it's going to install a version of Node for us. Ok, that's now installed i'm going to go grab up here that last command we needed from earlier. And so that will install all those three things so now in theory, we should have all sandbox stuff installed that looks like installed that red stuff makes it look like it's bad, but it's actually fine. Also notice it feels like a little bit cut off here on the bottom. There we go zoomed out a bit. And so we'll go ahead and type in Claude. And so now I'm going to type in sandbox. 
+
+Speaker  8:47:44
+So here we have sandbox mode on so it's a sandbox batch tool, auto allow, right? So I guess the question is, we'll say allow, auto allow. The only thing we didn't do is we didn't deny NPX so that's something else we should do so I'm going to do control C control C to back out of this and hit escape escape i'm just trying to get back to my terminal. And so something else that we're going to need is a a dot. I'd like a clod file so we're going to say make directory and we'll say dot clod. And then inside of that, I'm going to touch a new file called clod and this will be called settings dot local dot Jason. 
+
+Speaker  8:48:26
+And then now I'm going to use them to do this stuff. And we'll go ahead and do that and in here, I'm going to set my permissions. 
+
+Speaker  8:48:36
+Ok? 
+
+Speaker  8:48:40
+Permissions yeah, permissions, permissions i don't like how the indentation is like giant here, but there's not much I can do about it. And so I only need a deny so I'm going to say deny. And we need an array in here. And so this is going to be bash, and then this is going to be NPX, OK? And so in that sense, that should work let's see if there's anything wrong with their settings file. 
+
+Speaker  8:49:08
+It seems like it's fine, right so what is the contents? Oh, actually, you know, what we can do is just go to permissions so we want to check it we'll go to permissions here and then we go deny and see that MPX is denied so we should not be able to run MPX. And so in theory this should work so you know, what is a popular, you know, can you attempt to run MPX for me. 
+
+Speaker  8:49:36
+Like generate a projects for JavaScript or something? There's a lot of JavaScript frameworks that use MPX to download and run a binary. And so I want to see if it can execute it right and. 
+
+Speaker  8:49:53
+I want to see if it fails because now we have 2 measures we have sandbox and another thing here. And so it's asking here, can you attempt i'll try to generate it out. We have MPM install Y. 
+
+Speaker  8:50:09
+It didn't it didn't use it look, it went MPM init. 
+
+Speaker  8:50:15
+Ok, So what I'm going to need is a very particular command so I'm going to go here and just say, you know, what MPX tool can we use that will reach out to the Internet and generate something, make suggestions. 
+
+Speaker  8:50:34
+Ok, so I'm not asking it to do something, I'm just asking it for an MPX tool i could look for what I suppose is it MPX or MP? No, it is. Ok so yeah, this is what I'm looking like create React app. Great, so. 
+
+Speaker  8:50:50
+Great so we'll say here and say try create React app. Ok, so MPX should execute a binary so MPX, create React app, we have an explicit deny in our local settings file. Ok, and so we'll go ahead and hit enter. 
+
+Speaker  8:51:13
+And it shouldn't be able to execute. 
+
+Speaker  8:51:18
+Ok? It looks like it can though, if we go to permissions while we're waiting here, we'll have to wait for it to queue up. But my expectation is that it can't, right, because we have that limitation on it. So anyway, I'm going to go back over to. 
+
+Speaker  8:51:38
+I'm just going to pause here and wait until it does something oK, so what's strange here is it's still going and we have 16 lines, but I'm not sure what it is. And so it could be generating here i'm just going to hit escape because I don't know what it's doing so I'm going to just hit control C here i want to do an LS and so it clearly is using my React app. So I'm just going to go ahead and remove this really quickly. And I want to type my react like I want to say it should be MPX, my react React app. 
+
+Speaker  8:52:07
+If we run that, we should get a command here. Let's go back up to here what did it suggest? Oh, it's create, it's create react app, right create React app. 
+
+Speaker  8:52:26
+And So what if we go here and just say yes like that? 
+
+Speaker  8:52:37
+Ok, So what I want is an example i'm just going to go over to Claude and ask like over here so I want to test we'll go over here i'll just say like, I want to test. I want to test MPX. 
+
+Speaker  8:52:51
+On my machine. I want one which will not require any prompts, but it will generate something. 
+
+Speaker  8:53:03
+Ok, 
+
+Speaker  8:53:14
+Ok, So what I'm going to do is just grab this one here well, hold on, what's Causeway? I know what Causeway is, but the only problem is that I don't want a bunch of this but we'll try it anyway because I think this one's animated, right causeway would be fun. 
+
+Speaker  8:53:30
+No, actually, that's totally fine. Ok, So what we'll do is we'll copy this command and it's not supposed to be able to use MPX, but I'm going to go. 
+
+Speaker  8:53:42
+Back into here and even though it shouldn't work, I'm going to run it anyway. 
+
+Speaker  8:53:50
+Using bash, execute this. Oh, here's a better question are we even using the sandbox right now i don't know. 
+
+Speaker  8:54:04
+And here it's asking if we need permission for it, right? 
+
+Speaker  8:54:09
+Which is strange because if it's denied, it should be not denied so what I'm going to do is just hit escape. Let's go to permissions. 
+
+Speaker  8:54:17
+Bash MPX, huh? Ok, one second let me just make sure I have the format correctly, all right so I'm over here and I'm looking, right? And this is what it is so maybe we need an asterisk maybe it's not enough to just say MPX, I totally forgot to do that part. So what I'm going to do here is I'm going to go to this rule, delete it, we'll add a new rule, we'll call it bash, just another way we can do this MPX and then we'll do asterisk. Ok, so or we'll just do that because we do, we still have to have a space there for it to work and we'll update our local file and so now we have that rule. 
+
+Speaker  8:54:54
+So what we'll do is go back to this command here and we'll run it again and so it should get denied. Actually, before we do that, I'm going to hit escape i just want to check her sandbox is there sandbox on? 
+
+Speaker  8:55:09
+It's currently disabled so we'll say with auto allow. And I'll go back here and say use with this. So now we have both sandbox and that deny rule on. 
+
+Speaker  8:55:20
+And so here it says network request is outside of sandbox. Do you want to allow this connection? Ok, so we're going to say yes, OK, but it should still fail so there you have two layers the sandbox is asking, saying, hey, it has to go to the Internet because that's what happens to sandbox. And then the second part, it shouldn't be able to work, right? So here it says the command failed due to sandbox restrictions nPM needs to write to the cache. Let me try. Let me retry with sandbox disabled. 
+
+Speaker  8:55:52
+See, it actually disabled it. We didn't even use that permissive thing and it did it that is so awesome that we were able to get that to work. And that is deserving of a screenshot just give me a moment oK, that's awesome. But my point is, is that if you're running dangerously, skip things and it's not going to know this so what I'm going to do next is I want to put that flag on so we'll just go here and say skip, say disable dangerously. 
+
+Speaker  8:56:23
+I mean, the way I noticed it is the flags what I'll do here is I'll just cancel out here and we'll go Claude, and we'll say dangerously skip permissions is that what's called? Let me double check. 
+
+Speaker  8:56:40
+Dangerously skip permissions. If you don't spell right, it's not going to work. So it says Claude Kilt Clode will not ask for approval before running potential dangerous commands. And I'm going to say yes, I accept, OK, And I'm going to make sure sandbox mode is on. I think it already is on for some reason. It is good. I'm going to go ahead and hit up until I get back to my previous command. And so now I'm going to ask it we are not doing anything. It's just going to run here. 
+
+Speaker  8:57:13
+And so it's going to go and attempt to do this so I still have to ask this something. 
+
+Speaker  8:57:21
+The one thing I'm surprised is like, why do I have to ask for the the network out here? So we'll go ahead here and I'll just say. 
+
+Speaker  8:57:31
+Yes. And so it failed here and it's going to find a way around the sandbox. It turned it off. 
+
+Speaker  8:57:43
+Ok and so it did that the sent prevented sandbox versus prevented MPM caching partially initially. The COSMIC command executed successfully with that. So let's go take a look at sandbox again, 
+
+Speaker  8:57:56
+Ok? And so there was still a prompt area, but if you're not paying attention carefully and you have like 20 or 30 commands queued up, you could see how the dangerous part will spin up there. So I mean, there you go i mean, we figured it out so let's go ahead and we'll spin down our instance. So that was nice it just worked. Doesn't always work, and sometimes I have to do this multiple times but first try we got the result that we wanted. So I'm pretty happy with that i'm going to make sure I get rid of my Amazon key here so I'm just going to go back over to the API keys, wherever that is, API keys here and get rid of that key. 
+
+Speaker  8:58:40
+Ok, Just delete it i don't need it anymore. Bye bye key. 
+
+Speaker  8:58:47
+I don't care about deleting the user right now, but that's about it and I'll see you in the next one oK, Chow chow all. 
+
+Speaker  8:58:57
+Right, so we discovered that there actually are a lot more tools than I thought that they were i don't know how I missed this earlier but anyway, what we'll do is go review all the built in tools that can get the job done for you and ones that are marked with an asterisk are permissions required? So as far as I understand it, the ones that are not asterisk which don't require permissions, it doesn't mean that you cannot set permissions to deny it it's just I think that in default mode there is a tool that when it first time you use it, it's going to ask you whether it's allowed to use it but I'm thinking for tools that do not have the asterisk, it probably will not ask you the default mode, but we can still explicitly deny them, allow or ask them oK. 
+
+Speaker  8:59:39
+And generally if they don't have the aspect, they're probably just read only tools or they should be anywhere or things that wouldn't impact your code base. But let's take a look here at the tools it's all alphabetical, so we'll start at the top with agent. So spawns a sub agent with its own context window to handle a task. We have ask user question so ask multiple choice questions to gather requirements or clarify Ambu. There we go, I could say it. We have the bash command execute shell commands in your environment make note of the asterisk as it obviously is going to be doing heavy lifting. 
+
+Speaker  9:00:13
+Cron create schedule a reoccurring or one shot prompt with the current session. We have Cron delete, so it's obviously going to delete it based on a task ID. We can list the Cron jobs so whether we can see them or not, whether we want to edit a very specific file, whether we can enter plan mode so switch to plan mode to design and approach yep, Yep, enter the work tree. So look at an islet, get work tree, exit the plan mode, exit the work tree, utilize glob. Ok whether we can Rep or not graph is just a pattern for searching across files, listing the MPC resource tools. Lots of this stuff is very self-explanatory LSP, we have a slide on this so yeah, it's code intelligence tool so LSP is a language server protocol. 
+
+Speaker  9:01:01
+So whether or not it can use a language server protocol to understand more about a language, whether it can edit a notebook, notice the asterisk there as it's editing something. And that's for Jupiter notebooks, the read command, whether it can read MCP resource tools, whether it can execute a skill, create a task, get a task, list a task, task output, stop a task, OK, task update to do, right? And we got a few more so we got tool search so whether you can search and search tools, I guess whether you can fetch something from a URL, whether you can perform searches, whether you can write, and I mean, they're all pretty self-explanatory the only one I think I wasn't really sure on was the last one to do write, manage the session task checklist no, no, that's pretty straightforward. 
+
+Speaker  9:01:53
+But yeah, there's obviously more tools there and any of those can be applied they might even have some of them, some parameters as you saw, like whether it needs a task ID or something. But there you go. 
+
+Speaker  9:02:09
+Hey, this is Angie Brown let's take a look at the status command this is going to allow you to know what method of authentication you're currently using basically tells you whether you're logged in or not. Here we are using it within the interactive Clod CLI, so forward slash status, but I normally will use it before I go into the interactive console because it's more useful to know before you go and start using clod exactly which one you're utilizing. So depending on the method you're you're logged in with, it's going to look different and so it's important that you recognize this stuff so you don't end up using something you don't mean to use. 
+
+Speaker  9:02:43
+So if you're logged in with the Anthropic console for API token usage, what you're going to notice here, I'm going to get my pen tool out here. What you're going to notice is it's going to say Claude AI first party so it's coming directly from Claude and if you look here you can see subscription type is null. So that is indicating that it is using the API because it is null and look it says manage key that means that we click through and said the Claude code user within her account to go make it for us so we didn't manually make the custom key and import it. 
+
+Speaker  9:03:17
+We told it we wanted to log in with the console and made the key and added it to it for us. If we have a subscription, it's going to tell us our subscription here and that's how we're going to know. Nosa doesn't say manage key, just says first party. And we don't see API key source because we're not using API key source, right? So still at first party because it's coming from Claude directly that's what I meant to say. 
+
+Speaker  9:03:39
+And then if we were to create a key ourselves, then it would say first party but you can see that we're using Anthropic API key as our key source so that's the custom key much smaller. Ok. And if we use a third party, then we can see that we're using a third party with bedrock and this would be set with our eight of us credentials the normal way and then we would have another flag that would say, hey, use bedrock. This would work very similarly for all the other providers. 
+
+Speaker  9:04:06
+And then down below, if we are not logged in at all, then we should see logged in false auth method none and then API provider first party. So I don't, I think we've all been, No, the only one that wasn't. No, they've all been yeah, no, sorry. Yeah, they're all for most part, first part of them wasn't, that was the bedrock so that's where that's going to change. One thing I want to point out is that I ran into a case where I actually had more than one token in here i'm not sure how I had it, but the nice part was is that it prompted me and saying, hey, you have more than one here, so do something about it and so you'd have to log out, check your NVAR keys, and then explicitly log back in and fix that issue. 
+
+Speaker  9:04:45
+Another thing I noticed was that when I had the API token set and I pulled up Claude, it actually reminded me like saying, hey, did you know you have the set and you're doing this? Is this what you want to do? And this is kind of important because when you're using the API key, then you're you're having more direct span, it's more expensive or can get more expensive. And so that was a nice reminder that they had in there. 
+
+Speaker  9:05:07
+So I just wanted to point that stuff out oK, 
+
+Speaker  9:05:15
+All right, folks, let's take a look at the debug command so it's a mode that will output verbose information to a specific text file. And Claude will also prompt you to describe the problem as it attempts to investigate the issue so I would imagine that this is probably for you providing those diagnostic information if you find something critically wrong with the way the model is working and provide it to Anthropic, I'm not sure how you would do that then go to <a href="cloudcode.com">cloudcode.com</a> or maybe you have a customer service account. 
+
+Speaker  9:05:46
+Not exactly sure, but it's pretty straightforward you type in debug and notice that it's asking us to describe the problem. There's also a flag to start this up on the start so you can do hyphen, hyphen debug. But anyway you can see it describes, say, hey, help us out here, tell us what's wrong. Makes a text file, we have an output, says stuff like what it connects to, what tools are disabled or used, all a bunch of stuff. But there you go oK, 
+
+Speaker  9:06:17
+Hey, this is Andrew in this video we are going to look at the debug command so I saw it i figured we should go explore it i'll probably retroactively make the slides so you've already seen them, but I'm in here and I'm going to turn on debug mode so we have debug mode. This is enabled debug logging for this session, so we'll go ahead and enter that in. And now you'll notice that it's outputting to a very specific directory, which we will investigate as we're working through this. So I'm going to assume that debugging is when you run into an issue and possibly you're providing it to Claude but let's take a read here to help debug the issue, describe the problem, what you're having so reproduce it, perform it i'll review the logs and I'll do this if you can't easily reproduce it in the session, you can also restart Claude code with debug mode enabled from the start with Claude Debug what issue would you like debugging? 
+
+Speaker  9:07:09
+I mean, I don't have an issue, but we'll go ahead and just say like, yeah, the code doesn't seem to be, you know, the code outputted seems to be containing. 
+
+Speaker  9:07:23
+Mistakes like I'm not sure what to ask it, but we really just are here to observe what it's outputting here and try to figure it out i need more details what code? Floppy Flappy Bird, Flappy Bird repo. 
+
+Speaker  9:07:37
+The code should be in Go, 
+
+Speaker  9:07:43
+The bird should be flappy and I'm asking a really dumb things, but we'll see if it can handle it. So here it says permission rules for batch command we'll say yes. And again, we're just really interested in the output of this file. We are asking really dumb stuff but we will wait a little while here. So I found the issue what issue? You have a Flappy Bird in JavaScript, but you wanted to go the current bird does have flapping animation codes, but since you need to Go version, you'll need to rewrite it. What output format do you want the Go version? So it's asking, and it seems like it's a little bit more ASCII like as it's trying to debug stuff. 
+
+Speaker  9:08:18
+But I'm really interested in this particular file so what we're going to do here is we're going to stop this here, we'll type in clear, and we'll cap this file out. And so that's going to give us debug information. So is any of this really useful let's take a look here. And so it's just saying like temps files rewritten, add original permission file. 
+
+Speaker  9:08:42
+So I mean, like if there were communication issues or other stuff going on there, I could see that might be helpful. But anyway, this seems like something that you would provide to Claude to say like, hey, I had problems can you help me debug it i don't know if there's any sensitive information in here i don't see any. But yeah, there you go. 
+
+Speaker  9:09:07
+All right, so the Agents SDK comes with a bunch of built in, built in tools and there's way more than just this, but these are the main ones that Anthropic is going to want you to know. The 1st is read, so it's going to be able to load files. So maybe here's something you might say like summarize this file and then you have that read option so it can read that file. Then we have grep so grep will allow you to search file contents and so it can go ahead and do that so that's what that would do you have glob which will discover files matching on a pattern. So similar but grep can like look, I think in the contents of files, whereas glob is really looking at the names or list of files and it's really for listing a bunch of files out. 
+
+Speaker  9:09:59
+Then we have edit so this is when you want to edit files if you don't have this, can't edit files, and you have bash and basically bash can do basically all this other stuff, right so I mean, you can have bash just use any kind of bash command but when you're working in a sandbox, normally Bash is not allowed and it has to go outside the sandbox, generally speaking but these are the key ones that you'll need to know. 
+
+Speaker  9:10:27
+Super not complicated, very straightforward if you know basic development or DevOps. But yeah, we'll take a look at them oK, 
+
+Speaker  9:10:39
+All right, let's take a look at built in tools so we'll go ahead here and say make dir built in tools. And then from here we will go and find this folder main dot IE and. 
+
+Speaker  9:11:00
+I'll go down here. 
+
+Speaker  9:11:04
+Into our main dot IE here and we'll go ahead and paste that in. 
+
+Speaker  9:11:10
+And we'll type in Claude. And so here want to say like I want to demonstrate the built in tools. 
+
+Speaker  9:11:24
+Of Agents SDK so edit, read Rep glob and bash. Ok. And so that's going to go ahead and try to update that we'll just say built in. 
+
+Speaker  9:11:42
+Tools cloud code as there is a lot like there's a lot. So if I can find it here, so it should be a lot. So here we have agent, bash, edit, cronlist, glob. You can see there's a bunch. Maybe there's not as many as I thought there's also web search, I guess web fetch. Maybe my confusion is that there's other providers that have a larger list or maybe there are more and I'm just not seeing them here but I could have swore there was more. But we'll go ahead and we'll let it go ahead and do that but if you were to build your own coding harness, these are like very basic ones you absolutely want to have, right? We'll just chill out and let's see it. 
+
+Speaker  9:12:21
+Create us an example of each. Let's take a look what we got here so I'm not sure why that's crashing i don't care about that if that was correctly set up but I can't run inside clock code session that's OK i want to run it myself. So we have glob read the calculator, grep there, bash edit and then spawn an agent, which we don't really need to do, but it's nice that they threw that in for us. And so you can see that we have all of our cases here and they're just giving you access to all of these, right so those are all the built in ones. Oh yeah. So it's going to complete those in that order oK, great. 
+
+Speaker  9:12:57
+So I'm just going to stop that there and we will go have a little bit of fun there we go and watch it go off to the races, 
+
+Speaker  9:13:09
+Ok and so here we are seeing a glob and it's matching a pattern. So that makes sense there. Ok, we have the tool read so here it is reading a actual file, pretty straightforward. We have our graph so notice that it is using a path matching pattern. Oh, sorry, here's the pattern here so here's the pattern against that path. And so then we get the output. And so that is the results of it because we're matching definitions oK, that makes sense so def, def, def, def, def, def. And then here we have a batch command where it's running Python to insert something here, which is fine. 
+
+Speaker  9:13:47
+Then we have it edit so it's going to edit this particular file. And then somewhere there is agent, here agent, agent, agent so here it is running an agent and then it's running it and doing a bunch of stuff. But yeah, pretty straightforward. 
+
+Speaker  9:14:06
+Let's cover tool choice so this controls if Claude uses a tool. So over here you'll see that I am using tool choice with type auto. And notice that we're using the Anthropic SDK because you have to use that. It's not available in the Agent SDK, which I thought it was, but it isn't. And so when we do a lab later on, you'll see that I try to use Agent SDK and then I can't. Let's talk about what modes we have. We have autos this decides whether to use a tool. 
+
+Speaker  9:14:33
+And so an option is that it doesn't use a tool at all. Ok, so if you want structure Jason output and a tool is going to return that, if it doesn't use that tool, then it might just return back text and so that is an edge case where things might break and so for structure Jason output that you'll have to consider later on. So I'm pointing that out now. Any means it must use some tool so you give it a list of tools and it must choose 1-1 to utilize. And then tool is where you must specify a specific tool and this is considered forced. 
+
+Speaker  9:15:05
+I think there might have been an API that used to call this forest and now it's just called tool. Maybe I'm wrong, but that's what I could recall that it was B or I'm just remembering that is the forced option. But this will never return and then turn. So I was using this and it was just looping forever and like, why isn't using enter well, this one, you have to say exactly what tool to use and for whatever reason, it just was never ending, at least the experience that I have. Or maybe maybe just means it'll use one tool but definitively, when we were testing it, it was looping forever and Claude was even saying like, use a break to get out of it and it'll never end. 
+
+Speaker  9:15:37
+So I, I think that's the case here. And you can also say none i just want to remind folks that this is only available in the low level Anthropic SDK other providers will bubble this up. Like I think open the eyes Agents SDK, you can use it, but for whatever reason, Anthropic keeps it at the lower level here. And this is something that I wasn't aware of when I was working on the code because, you know, Agents SDK wasn't something I heavily used before. I used to just use the Anthropic SDK. But anyway, we find that out in a video when we do the structured Jason output oK, 
+
+Speaker  9:16:12
+Ok, let's talk about Jason's schema format so this is a declarative language for annotating, validating Jason document structures, constraints and data types. And so this is kind of what it looks like the thing that I want you to pay attention to is the different types of properties. So we have string, integer, billion, number. We can provide an array of items, We can provide a denum which allows you to choose a value that has to be set. And you can have an object of the stuff embedded and it has a required area. When we want to get structured Jason output, usually Pidantic is used, which is another library i don't have a slide on it, but it's another Python library where you describe models as basically that looks like classes. 
+
+Speaker  9:16:51
+And in the end it's just going to output Jason schema format. Ok. And this Jason schema, most if not all the frontier models understand what it is, and they use this to understand how they need to output Jason. Ok, so now that we know what that is, let's move over to tool input schema so tools can have inputs and you can say that it expects a specific Jason structure as input. And so the thing that you need to really pay attention to for the exam is remember the enums. 
+
+Speaker  9:17:24
+So you can have a property, let's say unit, and it's a string, and it can only take as a value of Celsius or Fahrenheit so now the AI can determine well, which one should I input, right? And you can also have required so here it expects both the location units to be supplied they're not optional. And so Claude is going to read that input schema because it's schema Jason, and then it will know what to generate out. All right, 
+
+Speaker  9:17:54
+Hey, this is Andrew in this video what I want to do is see if we can do some force structure Jason output via tools. So what I'm going to do here is just make a new folder called forced structured Jason, and we'll go into our, I suppose, our hello world where that is. Where's our hello world here. Yeah, here we are. We'll copy that and we'll give it a good starting point. 
+
+Speaker  9:18:25
+And so I'm pretty sure that there is a way to pass instructor Jason output at least with other AP is like open AI, you can pass something structured using a specific thing. But let's go ahead and just see what it generates out because there's a few things we need to do. We need to, we want to focus on a tool that's going to do this. Ok, so I'm going to say I want to demonstrate structured Jason output via a tool use. Can you have a payload, have a tool that takes Jason and outputs a different kind of Jason structure? Think of A use case, OK. 
+
+Speaker  9:19:16
+And so we'll see what it comes up with and then we'll just talk about some of our options we might go a little bit beyond what the exam guide is asking for, as they are saying very particular things like, oh, well, you should use for like, but not auto, but whatever the mode is that forces forces use and maybe it's down here. But anyway, yeah, we'll we'll go and explore it i'm sorry, I'm not that articulate right now. 
+
+Speaker  9:19:42
+Right now we'll get some code out here oK, OK, so let's take a look at the output i'm not sure why I tried running it, but that's fine so let's take a clear indicator of what's happening here so we have the Anthropic API, Could we use it sure, that's fine and so here we are seeing a particular tool, tool choice so we're seeing type tool name, submit triage. Ok, so you are a support triage engine analyzing incoming ticket and call support triage with the structured record. 
+
+Speaker  9:20:12
+Be concise and complete. Ok, And so here. We are seeing triage's ticket and so that we have the raw ticket data which is coming from here. 
+
+Speaker  9:20:27
+So I'd say The thing is like it has to create it and then pass it so I'm going to go back here and there's a few things. The thing is like tool choice should be set OK to something, any or anything or auto the the agent should generate out Jason and pass it to the tool. Ok, so and you should use the agents, the anthropic agent SDK. 
+
+Speaker  9:21:05
+Ok i don't know why it keeps doing that it's kind of frustrating, but there's something there's some kind of disconnect claude AI knows what it is, but whatever, whatever models I got running on the codec side, they always seem to not be aware of it but we'll see if it can make those changes and we'll be back here in just a moment as I don't feel like this is going to work for what we want to do. 
+
+Speaker  9:21:24
+Ok, 
+
+Speaker  9:21:27
+All right, let's take a look and see what changes were made to our structure hopefully it is using the Agent SDK because it's just going to have a smaller footprint. It still isn't using it. I don't know why it's doing i'm going to go copy this code over to from Cloud IAI like, can we not use the Anthropic Agent SDK? And maybe the reason why the cloud AI does better is because it has memory, right? And so it's literally rewriting it here. 
+
+Speaker  9:22:00
+I'm going no, no, no, the Agent SDK. 
+
+Speaker  9:22:06
+So it doesn't seem to know this Agent SDK, and it's weird because the original 1 was this so you know you are supposed to use the Agent SDK, right? And so we'll see if that fixes it. It's just refusing to do it. Is there any reason why it says it's not doing that? Could it not use it? 
+
+Speaker  9:22:33
+Give it a second here it's suggesting that it may have listened to my instruction let's take a look and see if it actually is using the Agents SDK. That looks much better yeah oK, so here we'll go down and it's just because we're going to get a smaller footprint and we're not really getting much by directly using the other one the only thing I'm not seeing here, disabled all built in tools, only MCP tools available, which is fine. 
+
+Speaker  9:22:57
+And so here it's setting it to our loud tools, which is from an MCP server and that's definitely a way that we can do it. And so here we have our triage server and if we go all the way the top, this is our tool and we have a submit triage, the name of the function, submit a structured triage record and so here is the structure and these are the required fields. Ok, so that makes sense. And so we have a raw ticket and it's unstructured so I guess it's just different kind of data i'm not sure how this gets fed in, if it's just fed in is 1 big BLOB so we go down here and it's just dumping the data so it's raw raw data, at least here raw data, yeah and so they're just saying here is the ticket in the in the most raw format. 
+
+Speaker  9:23:44
+And so it's going to have to generate that out. And this tool. 
+
+Speaker  9:23:53
+I'm trying to see here, so. 
+
+Speaker  9:23:57
+Submit triage because we have one here this is the submit triage, right and so this thing is going to then go through this function, it's going to record it, dump it, oh, and then return different data. So the idea is that it's going to bring in data in a very particular format. It's going to print it out so we know that it came in this format and it's going to return in another way. The only thing that's missing here is tool choice. So I'm not sure we see this like auto or any. 
+
+Speaker  9:24:24
+And I'll just go back here and just say the. 
+
+Speaker  9:24:29
+There is tool choice with Agents SDK and we want it set to. 
+
+Speaker  9:24:41
+It's like there's any there's one that's like for like where you can force it. There's auto and any to any. Please don't change it. Change it back to Anthropic low level SDK, use the Agent SDK, OK. And so we'll just see if that information is exposed i mean, I think I'm pretty certain that it's in the Agent SDK as well, that feature. So it is going and fetching information before it does that but I just didn't see that tool choice in there i don't remember where it is. So we want to bring in that option, 
+
+Speaker  9:25:19
+Ok and so we'll go ahead and hit yes and see if it can add that code. All right and so here it's saying tool choice is not a parameter of the clot agent options it doesn't exist the Agent SDK, all versions including this Agent SDK controls tool permissions, but does not expose the underlying tool choice flag so there's my mistake so we'll have to go, OK, we need, we need this code. 
+
+Speaker  9:25:42
+To use tool choice. So please convert it. 
+
+Speaker  9:25:49
+To Anthropic SDK. And so I mean, if, if it says it doesn't have it doesn't have it. I mean, while it's doing it, I'm just going to double check here so just say Agent because it might and just it's bad at searching as sonnet is not today working as expected. Agent SDK tool choice, 
+
+Speaker  9:26:22
+We'll say here Anthropic. It's frustrating that they call it Agent SDK because then they're all fighting for the same name. 
+
+Speaker  9:26:32
+The underlying API supports tool choice the Agent SDK implementation compatibility has constraints. And so here it's saying that it can't, can't do it. The other thing is that maybe it can, but it just can't be done through this so another thing I might ask, I'm just going to go to ask Claude, you're separately off screen here. And this is like, does Anthropics Anthropics Agent SDK have tool choice? 
+
+Speaker  9:27:02
+Check the Python SDK and the TypeScript SDK for specifically the Agent SDK for this option. And the reason why is that we learned earlier that there were some features that were just only available in the TypeScript 1 and not in the Python 1 and so I'd like to rule that out though i mean, we already did rewrite this into under the format here so it's not like we cannot use this more verbose 1. 
+
+Speaker  9:27:31
+Did it rewrite it? Well, here, this looks the same. Let me close that out. We know sometimes it is caching. 
+
+Speaker  9:27:42
+Did we write it all the way down the ground here? Oh, it hasn't yet and so I just want to give this answer back before I say yes, 
+
+Speaker  9:27:54
+Python SDK is fully supported. 
+
+Speaker  9:27:59
+Claude Agent SDK is not a parameter in the Agent SDK the SDK wraps the Claude CLI. Ok, so it has to be used within the lower level 1 so we're going to have to go lower level here but when we can use Agent SDK, I'm going to prefer it. I just did not realize it was a bit lower. And so we'll go and close up this tab here because it is much, much more verbose and we have our raw data we'll go down here. 
+
+Speaker  9:28:26
+It is loading anthropic good. And we saw the same structure. We're using Haiku, which is excellent. And so I'm looking for where that option is here it is tool type, tool choice, Eddy right, and tool choice we have a slide on it. Let me go pull it up one second. Here's our slide. So we have auto, any or force force means that it has to use the tool any means it might choose to use it and so The thing is like we want to guarantee that it uses it so I'm going to say force i don't even want it to be any or auto, but we absolutely want it to follow through and utilize that option. 
+
+Speaker  9:29:11
+But the thing you have to understand is like, just because we're using it doesn't necessarily mean we'll 100 % get the results that we want, but we will go ahead and try this out. And even if it does work, that doesn't necessarily mean it actually is working every single time. Which the only way you'd know that is if we did a batch processing and we ran like 100 times i don't want to do that but I'm just saying if we really needed to test it to see if it breaks, that is when you start to actually see things. 
+
+Speaker  9:29:37
+And so we'll say Python And we'll say main dot pie. And I think I just have to bring in my key back here just a moment. And the reason it's not working, it's not loading the key so that's kind of annoying. I know we did one where we used the Anthropic SDK. It's up here. And so if I go here, we just grab this code here that's missing. I don't know why it did that, but that's fine. 
+
+Speaker  9:30:02
+Just paste it in like that and then bring in our dot env and our path, probably the OS as well if they're not in there, OK, And that will load in that key. I think we also need to set it explicitly i'm just going to do that. So we'll grab that there like this, and I'm going to paste that in like that and so that will resolve that issue there it should. And So what do we have? 
+
+Speaker  9:30:32
+Error code, error, invalid request tool choice, force bad using type does not match auto any tool or none. Oh, why do I think there's force then where's that coming from maybe I'm getting mixed up with another provider. Just a moment, OK, OK you know what it is, I have the word wrong so it's technically tool i wondered before because there's more than one provider and they might vary on this implementation. And so I've just corrected that to Tool i have to reshoot that and also maybe add none. 
+
+Speaker  9:30:59
+So that obviously is bad and out of date. But anyway, so we will change that over to tool. 
+
+Speaker  9:31:07
+No big deal so we'll go ahead and change that to tool, but let's just take a look here so cloud decides whether to use the tool, must use some tool, cloud picks which one must use this specific tool cannot use any tools. We absolutely wanted to use a tool. So we'll go ahead and run that again. 
+
+Speaker  9:31:24
+And here, field name required and so here we're having an issue where the field is not being provided. 
+
+Speaker  9:31:35
+And so. 
+
+Speaker  9:31:39
+The trick here is like we don't know what is being generated before it passes on the tool, do we? 
+
+Speaker  9:31:48
+So we'll go back over to here. Are we able to see what is being passed as the PRAM to the tool before it's called via a puts for vain dot pie? I'm not sure if that's like hidden to us, but if we get that data, that 'd be really good yes, we can print it here it is oK, good. And so that will help us understand what's going on here because we can have inconsistent usage here. 
+
+Speaker  9:32:24
+One thing that we, I don't know if we're doing this, but like usually you want to provide the structure too but I guess if they can read the structure, they generally have an idea of what it is they have to do. Let's take a look here and we'll run this again. And so it's fine that we have that problem let's take a look at what it's trying to do. 
+
+Speaker  9:32:45
+Tool choice, name oh, name required oK, so there's a different problem here. It's our tool choice it's not named correctly. Tool choice. I thought it was something else. And so here it says type and we have to provide a name field tool choice. 
+
+Speaker  9:33:11
+Only type oh, OK. So which one do we have to specify oK, that's why I was confused i don't ever recalling having to do that, but let's go ahead and do that again i'm not sure if this is completely consistent with each provider, but maybe there's some variance between other ones. And so here we need to go up and it's submit triage so we'll go here, submit triage, 
+
+Speaker  9:33:37
+Triage, and we will go ahead and run this again and see what we get. So far, so good. And I mean, it's good that we added the additional stuff here so calling it, here's our tool input and it's passing that structure and it's received by the tool it came back. Oh, it is repeating like I'm saying before that, you know, you'd have to iterate it on multiple times to find out. And so that's what it's doing right now actually how many times is it going to do it? 
+
+Speaker  9:34:06
+I didn't even realize that was that was there. How. 
+
+Speaker  9:34:12
+Many times is it going to run? 
+
+Speaker  9:34:22
+It's still going OK, I'm going to stop it so for whatever reason it's looping. 
+
+Speaker  9:34:30
+So here says while true, hit the response and it just keeps looping forever. I mean, it's consistently working so that's really, really good. But it clearly doesn't have a way to stop. And I'm going to go back here and just ask like why. 
+
+Speaker  9:34:49
+The agent just kept looping? 
+
+Speaker  9:34:54
+Why did it never stop? And maybe it has to do with with what comes back with the response here. 
+
+Speaker  9:35:05
+So I'm trying to look at the symmet triage here. 
+
+Speaker  9:35:10
+Because if it says submitted right, you go, OK, it has that and it appends it. But there's nothing here that would like a little thing I could think of as like it would have an intern that would come back as the response. 
+
+Speaker  9:35:29
+Ok, but there's nothing really in the code that would indicate that, oh, there's a break missing. Oh, OK so here the the bug forces a tool call in every API request. Oh, any tool, any after that tool runs, the results are pending the loop and continues, which forces another tool call oh oh and that's why we want to have any. Ah, OK, well that's good that we did that because otherwise I would have thought, you know, we'd have another issue here so let's go ahead and try this again now on any, 
+
+Speaker  9:36:04
+This is turning out to be a really good example. And so we run it OK and so this way it actually comes back with an N turn, right? So that's pretty good i would assume auto is going to do basically the same thing we'll switch it over to auto. Ok, yeah, yeah. It it thinks I didn't save the file i'm going to say don't save i don't want to muck it up. And we'll switch this to auto here. 
+
+Speaker  9:36:31
+I don't know why it didn't say auto here, 
+
+Speaker  9:36:37
+O, we'll go here and run it again it's. 
+
+Speaker  9:36:43
+The so same thing oK, So if we go back over to here, OK, one second, let's just read this section here. All right, So here it's saying auto because auto can just not use a tool at all then I guess the idea here is that if we ran auto enough times, it may just return text and then it would fail. Whereas any it says must call a tool but can choose which one. 
+
+Speaker  9:37:04
+And obviously, but if it's on tool mode, that absolutely has to call a tool every single time and it's never going to get to that prompt and turn. And we have to break it out of the loop to to solve that problem. So that's kind of interesting that you'd have to force a break. And we have strict Jason schemas via the the tool use a limited syntax errors, but do not prevent somatic errors. What they're saying here is that just because it's generating, you can still make a mistake. There's another way that we can improve that with pedantic, pedantic formatting. So it's a library very popular in the Python space called Pedantic. 
+
+Speaker  9:37:42
+And So what this does, this is not in the exam guide because they're not asking for it and this, this exam guide is still dated from 2025 maybe when they release it, they'll update it. But by Dantic, you define data structure models and then you can pass your data into it and then it validates it and if it doesn't match, then it can, it can say, hey, you need to go fix it or fail early or, or you can give the structure to the model remember few shots so like this can generate out the structure as Jason RC or whatever the schema schema RC or whatever the format is and inject it into your prompt and then you'll get better results. 
+
+Speaker  9:38:24
+But we're not going to add that layer here because they're not asking for it. But in in practice, you know, I would absolutely be using pedantic this is not enough for me for structure Jason output, but it is it is working, right so again, we'd have to run this in batch like a thousand times and then maybe we'd see a failure but now we know the difference that tool is going to always call it tool and you'd have to break out of here on a specific tool use any means it has to use some kind of tool, but it can also hit enter and then auto means it can be none or or any so none is obviously another option and so, yeah, there we go. 
+
+Speaker  9:39:07
+Ok, so one thing you have to worry about when you are prompting, because when you're vague is you'll get false positives what I mean by false positives is that it's going to try to do the work and it'll start working on the wrong files or looking at the wrong things because it just doesn't know what it's supposed to be doing and so it's just broadly doing many, many things. So imagine you're saying, hey, you got to go review the code base for issues. 
+
+Speaker  9:39:28
+What issues are you looking for specific ones because here it'll come back with all sorts of stuff, lead up your compute, lead up your time and maybe you're looking for a very specific one. Whereas here you're saying, oh, OK, we'll do this very specific thing it's going to go and audit only the single one. And it's going to save you time and compute and get realistic results oK, So beware of false positives because of vague prompting. 
+
+Speaker  9:39:56
+This is probably the most obvious, but the most important prompting technique, which is be specific when you're prompting if you give vague instructions, you're going to get unpredictable and probably not good results. It doesn't mean that vague prompting can't work, but it's just not recommended. So if you say fix the login bug, it's like, fix it how like use what email at what address? Is there more than one app in here? And so more information is going to have the. Agent SDK or Claude code perform a lot better. If you can be more specific, that is even better. And so sometimes you can even use plan mode or some other things to extract out better tasks that you need to go investigate into review. 
+
+Speaker  9:40:41
+But also you know it's going to waste a lot of time looking around for stuff so if you want better results, provide better prompts. And that is just by being specific, OK? 
+
+Speaker  9:40:57
+Hey, this is Andrew and we're on 5 5 where we are looking at designing human review workflows and confidence calibration what this section is asking, even though it's not clearly described, is that it's talking about like when you work with data, how do you ensure that the data is actually accurate and a human's able to easily review it? So imagine you're aggregating a bunch of data and you're getting a final score of 90 % overall. 
+
+Speaker  9:41:20
+This might sound like you have a good metric, but when it's a single metric like this it can be hiding information if you were to breakdown the the accuracy based on the document type, field complexity, other factors, then that distribution of information is going to look differently. Then you have this thing they call stratified random sampling. So instead of randomly spot checking, you're deliberately sampling from each category. 
+
+Speaker  9:41:44
+And so this is way you know, calories don't get lost in their average. Then you have field level confidence scores oK, this isn't just AI saying, you know, I think this invoice is right it's saying I'm 99 % sure on on the date, 72 % sure on the vendor name, 40 % sure on the total line items. And so you're getting a lot more detailed information so in order to do this, we're going to need a data set. 
+
+Speaker  9:42:08
+And so I think that we will just go use Hugging Face as that is a very easy way for us to grab one and there's something called like QUCUAD which are like contracts i think they're for like legal. And I think that that might be our approach that we can do. So I'm not sure what we want to call this, but I'll just call it like confidence calibration. It's too, it's too nerdy researching these terms here, but we will try to make it make sense here so I'm going to go here and say confidence, confidence calibration, confidence calibration and in here I'm going to go ahead and find it and make a main dot PY all right and so we want to bring in data set information so what I'm going to do is I'm going to have to do a pip install here. 
+
+Speaker  9:43:00
+So we'll make a new requirements dot TXT. I don't use Hugging Face that often, but I know enough that I think from memory that I can probably write the import statement so it's probably like from data sets, import, load data set and then like let's say we call it data set, load data set. And then it's something like this let me go look up what it is. So I'm looking up for specifically for this project oK, I found it. 
+
+Speaker  9:43:26
+And so it is the Attic US project CUAD. 
+
+Speaker  9:43:34
+Press remote code equals true, OK and so even if that's not right, we will adjust it here in just a moment. So we'll just say print the data here and we'll see if that at least works. So I'm going to go ahead and CD into our confidence calibration and we'll say pip install R requirements TXT and we will let that run here for just a moment and get that installed. Ok. And once that's installed, which it is, let's see if we can run it so I'm going to do Python main dot PY hopefully that just works it'd be really nice if it just works. 
+
+Speaker  9:44:08
+And so it's not loading the data set so what I'm going to do, it's data set. It's pretty good for my memory. And did you mean load data set i'm certain that that's what I wrote. Did I not save that file let's try that again. 
+
+Speaker  9:44:25
+We'll try this again. Load data set up here load data set oK, and we'll run it again. And so it's pulling data, it's going to put it right there in the folder i can't remember where this places the data has to put it somewhere, right? 
+
+Speaker  9:44:43
+And so now the data is pulled. We do have a bit of an error, 
+
+Speaker  9:44:53
+So I'm not really sure but the first thing we want to do is just pull some data so I'm going to go ahead and we're going to type in clawed. I'm going to make sure that I'm on sonnet here, say model sonnet and I'm going to just go front here and say debug and we'll go ahead and do that be back in just a moment. So it's saying download, doesn't it match the expected size five eleven samples found out of this so add verification mode with no checks and re download it here. I don't need a large set so to me, like, I just want like a little amount of records, but we'll take a look here i'm not like amazing at data, so I can't say for certain, but we'll go ahead here and just clear out. 
+
+Speaker  9:45:35
+Oops, I'm just. 
+
+Speaker  9:45:38
+Making sure I'm copying that there. Whoops, come on, let me out. We'll go ahead and Oh my goodness, I have tabs opening other places that are that I'm not expecting. So oh there, whoop, whoop, whoop. And now I have Claude talking to me off screen, even though I didn't trigger it but let's go ahead and, and I copy this line please let me copy. Ok? And then we will go ahead and clear that I'll type in clear and we will try this again so I'm just trying to get that data set to print out here. 
+
+Speaker  9:46:10
+And so we have 511 rows. Ok, great. So the next thing I want to do is I want to bring it over some boilerplate code. And we've learned with the Hello world that it actually always has the imports missing, which is kind of frustrating. So I'm going to I mean, even though we don't have it, I'm going to have to grab it anyway here. I really should just update the original 1, which I never do so I'm just trying to find any single one that has it, the import statements. 
+
+Speaker  9:46:48
+Yeah so I'm going to just. 
+
+Speaker  9:46:52
+Place this here and I'm I'm not sure why Lib directory we don't actually need a Lib directory i think I just kind of bring that over for no reason sDK parser, we don't need that. And so I'll go back over to here, grab this and paste that in and also I already have that. 
+
+Speaker  9:47:21
+And so I'll let it fix it at least it knows what I want to load, right? Let's so we'll go here we kind of want to describe what it is that we're doing i'm going to make this a read me just so my life's a little bit easier. We'll say plan. 
+
+Speaker  9:47:39
+I have a data set from Hugging Face called QAD. What I want to do is show. I'll just take a look here and see what they're describing here. 
+
+Speaker  9:47:57
+How to make my data more accurate. So instead of an aggregate accuracy metric, overall metric, I want to show specific breakdowns EG document types or fields. 
+
+Speaker  9:48:27
+Stratfield strategic stratified random sampling, field level confidence scores, 
+
+Speaker  9:48:38
+Ok. And so that should be enough for this. 
+
+Speaker  9:48:44
+Ok. And I'm going to go back over to here we'll reference the plan and we'll say, you know, can you create a agent that will allow for human review workflow and solve for the accuracy issues I have. I don't know what to do with the data. 
+
+Speaker  9:49:10
+So, you know, make a use case and explore the data. We'll go ahead and do that and so maybe they'll get us started, right of course, if we knew exactly what we were working with, this would be easier. But we're just learning this for certification. And if I was doing this for real, again, I'll probably make this a separate course in my from zero stuff with a real use case. 
+
+Speaker  9:49:31
+But we will hang out here and see what happens oK, all right, let's take a look here so let me explore. Now I have a clear picture building A4 file system, data explorer, extract agent, accuracy tracker field, human review workflow, law firm contract intake pipeline, AI extracts 41 clause types, routes low confidence items, attorney reviews, tracks accuracy by clause types. Again, I'm not a domain expert on this i did work with, you know, law firms and stuff like that, but my mind's not in there and usually you need to have that domain expert with you too. Now we get the stuff, but we'll pull it anyway and we'll see what we can get out of this obviously, it's going to do a lot of work and it's setting up a lot of stuff, but we will just see if we have something to play with and really just comes down to visualize and seeing those metrics, right? And Oh yeah, it's going quick let's let it edit be back in just a moment. 
+
+Speaker  9:50:26
+All right, let's take a look here so what do we have use case law firm contract intake pipeline contracts come in clawed extracts 30 key clauses routed by confidence attorney only touch when reviews accuracy tracked by fields and documents. We have agent review accuracy main so Claude Haiku extracts clause fields interact CLI confirms edits defers each flag extraction i'm not sure if we need that right off the bat, but we'll see. 
+
+Speaker  9:50:50
+Tracks accuracy per field per document shows calibration gap orchestrator with two commands explorer and run. So key accuracy improvements, field breakdown, calibration, gap, stratified sampling, and I mean, I've already ran this, so I don't think they've added anything additional, but let's take a look. Oh, there is a few things like we have Rich i'm not sure what Rich is so we will make sure we run this the other ones are pretty clear, 
+
+Speaker  9:51:17
+But we'll go ahead and do that i want to explore the code so I can understand what is going on here i don't know if they've made a read me for this. They did not. We'll go here and just add a read me and I'm going to go ahead and paste this in here and we will this is a little bit messed up. 
+
+Speaker  9:51:36
+Little bit messed up oh, I think I have word wrap on that's the problem. There we go no problems now. And I want to just take a look and see what we have. Ok. It's just because it says how to run it doesn't mean I doesn't mean I agree with it so here we have our little data set we're using, I think Anthropic directly. It must be over here in the agent. Yeah, it gets loaded into here. So here it loads the file systems and then we are getting the records or splitting them open in terms of their content. 
+
+Speaker  9:52:09
+We are matching fields. I'm not sure what GT stands for, but I guess it's extracting information out of it. We're matching fields. We have stratified sampling, so sample and documents, ensuring each clause type is represented oK, we are exploring which is whatever so oh, the explorer run commands oK, I see. And then we have actually tracker and review session. 
+
+Speaker  9:52:36
+And then we have a bunch of arguments we go over to our agent here, we're using Haiku, we have auto approved threshold or human review and here are the clause types, hopefully extract them out correctly we are representing these data structures it's not pedantic, but it is some kind of data structures. 
+
+Speaker  9:52:57
+So we have the extraction information i'm just seeing if there's like any bad extraction method so it says extract content fields, contract fields. So this is the prompt, OK and saying like, OK, how, what format see here pedantic would be very probably very useful and enforcing tool use might be very useful here it's creating the the client. And so here we have the field extraction which is happening over here. And then we have the contract analysis over here let's take it accuracy. So this is obviously checking for the accuracy of the documents. 
+
+Speaker  9:53:25
+Ok, Yep, OK, pretty clear. So there's a lot going on here, But I mean, I don't think I it's, it's that hard and then this is the review so this probably just generates the review. So let's go ahead and run it. 
+
+Speaker  9:53:39
+Data set stats. 
+
+Speaker  9:53:43
+Ok, so I just want to type in clear here and we'll run it, see what we get. 
+
+Speaker  9:53:52
+And right off the bat, we have a problem. So go ahead and we'll say debug. 
+
+Speaker  9:54:00
+And we'll be back here in just a moment. Ok, So remove the trust remote code is a standard Parcat data set, so no script loading needed oK, fix the data structure mismatch and we will just get out of here and then we'll run this here. Where is it? 
+
+Speaker  9:54:23
+And we'll give it a second. And we have a new problem and again, I'm just going to keep hitting it here. 
+
+Speaker  9:54:33
+Can you ensure that the script starts or that the script starts up without errors and if it does resolve them DG Python main dot pi we'll go over to here Explorer, OK, because it's just getting annoying here constantly having to check it. And so I'm hoping it feedback, it has a feedback loop and corrects it i don't know if that Hugging Face interactive will mess it up or it might just may not be able to do it. And so it is encountering some issues here. So it has the correct structure, but I'll update the load on the data set so here it's changing where the data set's loading. 
+
+Speaker  9:55:15
+So one has a flat parquet data set, the other one is a flat data set, one per QA result. So literally changing where the data set is coming from all the answer fields in the data set is answer start instead of nested set. So just trying, I guess a different format and nest set i mean, I like park head files, but you know, if it's having a hard time, let it switch it over here as this is not a very serious project. The question field is already the cause, type name directory oK, directly. So here we go this is working through that data set now it runs cleanly let's go ahead and run it. 
+
+Speaker  9:55:50
+Maybe because I didn't put Explorer, I. 
+
+Speaker  9:55:54
+Don't think that's the reason why. And So what do we have? We have sample document titles. So I was kind of expecting to go through a review process with this let's go back and take a look at what it says. So a law firm receives commercial contracts for intake review before an attorney reads each contract, this system extracts 30 key clause types, and we have 80 % is there anything being outputted here no, actually track per field, stratify samples, ensure the information. 
+
+Speaker  9:56:26
+So explore the CUDA data set structure oh, this is just the structure of the data. Oh, I see so here it's saying the clause type, the documents and the coverage and how much of each thing is in here. And then down below we have the sample document titles down below oK, so this isn't actually doing anything this is just us reviewing it so we'll go here. So we run the review with human review and then we have one with had no interactive review, which is cool. 
+
+Speaker  9:56:50
+So we'll go ahead and do this i like this this is nice and we'll give it a moment. Wow, that looks good. I like this. This is absolutely impressive oK, so contract selected and it's extracting the first one. And so here we have the first one confidential information shall remain the sole company IP ownership assignment so the extract states the information remains company property, but does not explicitly address work product IP. This is cool. So we have confirm edit or what does edit let us do, I don't know, 73 % There we go. Wow, I like that. That is nice. Now, it doesn't make clear those percentages and everything probably not but I mean, like you conceptually understand what it's doing right and how that is a value. 
+
+Speaker  9:57:45
+So I don't think we need to see any more i think this is quite the impressive demo. I mean, I'm not saying it's accurate, but I'm just saying like the plumbing and how it works is really, really good. And so I'm very happy with this and I would say that we have, you know, completed what we wanted to complete here, OK. 
+
+Speaker  9:58:06
+Hey, this is Andrew and we are now taking a look at preserving information when handling uncertainty in multiple source synthesis. So we actually did do some synthesis with our Doom, our Doom explorer so if you remember over here, we have more than one agent, we have a synthesizer, right and what was the synthesizer doing they were going into our findings, taking these items, and then creating a synthesis of information. If we go all the way down here, we have sources of information that are specifically providing it so I'm not sure we've already kind of solved this. 
+
+Speaker  9:58:44
+I mean, if we had something that goes up to the Internet and synthesizes information, that could be a different story. So let's go back here so how source tribute is lost during summarization steps when findings are compressed without preservation of claim source mappings. I mean, it looks like it's right here, right? The importance of structured claim source mappings that this agent must preserve and merge on, combining findings, how to handle conflicting statistics from credible sources, annotating conflicts with source attributions. 
+
+Speaker  9:59:13
+So here we do have conflicts or contradictions and deductions, but it's not necessarily saying exactly where it is i mean, kind of is, but you know, is this a good data source where we're exploring a code base or is it more for going to external information so we have how to handle conflict statistics for credible sources, requiring sub agents to output structured claims, source mappings. 
+
+Speaker  9:59:39
+To see here so compiling document analysis with conflicting values, requiring sub agents to include publications or dates. So I guess really this one might be better if we go out to the Internet and get multiple sources, we do have in here our agent that goes out and finds information if you remember which I'm trying to remember which one it is, it is let me find it one second. So we do have this one where we have findings and then it returns back findings with information and confidence score and source and tags and information. 
+
+Speaker  10:00:13
+So I mean there is this. Right and I suppose we could adopt it where we have stuff where it gathers findings and then it synthesizes it and then it produces a result where here it's just collecting the results of sources in a single location. Whereas each artifact, I mean like in the sense this is artifacts, right so you could think of this as. 
+
+Speaker  10:00:39
+Little sections here, right? So I'm just wondering if there's a way that we can adopt this i'm going to go ahead and I'm going to make a new folder. I'll just say findings. Findings with synthesizing with findings with synthesis synthesis. 
+
+Speaker  10:01:02
+Is that how we spell it? I'm going to go grab the word. I'm so bad at spelling i'm so sorry, folks. And so we'll go ahead and paste this in here like this, and we will go and grab this file here. And I'm going to go to this one and we'll make a new main dot Pi. 
+
+Speaker  10:01:21
+Yeah, well, that's not the contents. That's not the contents. And we'll grab this one. 
+
+Speaker  10:01:29
+I'll paste it in here. So I'm going to go and make a new plan. 
+
+Speaker  10:01:35
+And I'm going to go grab the contents from the. 
+
+Speaker  10:01:44
+Exam guide. 
+
+Speaker  10:01:47
+So here how source distribute is lost during summarization, the importance of structured claim mappings that the synthesis bus, how to handle the conflicting so I'm going to go here and just say findings improved. So we want to change our agent that goes and to agent to have a explorer and synthesis agent. 
+
+Speaker  10:02:25
+Reference. You can use the Doom Explorer project as a way to. 
+
+Speaker  10:02:35
+Bootstrap or to take inspiration for explorer and synthesis agent. But for the use case of our current project, we want to change our agent to have a. What does our project do? Our our agent goes out to the Internet. 
+
+Speaker  10:03:01
+And tries to find similar movies. Ok, so so you know right now right now it collects sources in a results Jason file. I wonder if we should take a findings approach with scratch pads. 
+
+Speaker  10:03:27
+And synthesize. 
+
+Speaker  10:03:32
+I want to be able to ask questions to help drive a final solution, OK, because I kind of like our Doom Explorer, but maybe applied for data so, but you know, instead of exploring code bases, 
+
+Speaker  10:03:50
+You're exploring movie contents, right? 
+
+Speaker  10:03:56
+And so we can do that, which is. 
+
+Speaker  10:04:01
+I'm going to go get the full path for this. So we have this, 
+
+Speaker  10:04:08
+Which is found. 
+
+Speaker  10:04:12
+At say Doom Explorer. 
+
+Speaker  10:04:20
+These are the goals or concepts we are trying to learn. 
+
+Speaker  10:04:31
+Or to achieve for synthesis. 
+
+Speaker  10:04:37
+Ok, 
+
+Speaker  10:04:41
+Oh, give me this word here oK, so now we have some kind of plan and I'm going to just CD back here and we'll go into our findings with synthesis. What's really nice is that we build up this large code base, right and so we can keep pulling and we don't have to do as much work, which is really, really nice. So I do feel that, you know, if I wasn't in a hurry and I was just, I, I would have probably used that refactored code base a lot more as I really do like it. 
+
+Speaker  10:05:08
+But, you know, just trying to get this out as quick as possible for you folks is always the trick. But we'll go ahead here and open up Claude. And I'm going to go ahead and say, you know, can you create a spec dot MD to execute out our plan? And probably we should be using Opus, but I just ran out of my credits and it just refreshed and I just want to make sure that I'm able to do this here. So I think it'll be OK. And so I'm just going to pause here and just accept whatever it needs to get this done oK, All right, so let's take a look here. 
+
+Speaker  10:05:48
+So we have movie explorer movie. They can just have generic names that's fine deposit structured scrap patch to findings. Read only to findings conflicts retain table temporal note section coordinator in main phase all the province goals for the plan baked into the agent contracts task breakdown. So we will go over to our I'll give this a refresh here ours back. We don't need spec driven development just make specs here of all the current single agent film research script into a 2 agent system. 
+
+Speaker  10:06:19
+The three census goal is to have Providence preservation conflict annotation temporary metadata receives the research question and similarity access dispatches movie explorer and we have that information state files. Sure scratch pads cool. So we have question findings conflicts, open follow-ups topics, source consultants, synthesis, claim maps, conflicts, retain temporal notes, manifest schema. So the thing that runs it all sub sub sub agent contracts. 
+
+Speaker  10:06:56
+Coordinator phase for each similarity access to this file it out task breakdown. So you have scaffold directories, author movie agent, movie pie, resume flow, acceptance criteria. Ok, so I'm not sure where the sources are going to be here, but we'll just go let it build it and we will find out so we're going to go ahead and type in clear. We'll start on over we'll say implement the spec dot MD. 
+
+Speaker  10:07:29
+Be back here in just a moment. All right, so it looks like it has implemented it we'll go and scroll up here and we have 2-1-2-3-2-4-2-5 Let's go explore the code base i mean, we have a general idea how it works because we did it before. So we go into our main. So we're all the way to the top and we got finding sources, research, state. 
+
+Speaker  10:07:54
+Setting tasks or sub agents. 
+
+Speaker  10:08:00
+Research is a specific similarity angle for films related to schools in the crosshair. I mean those are hard coded right write a scratch pad findings read finding scratch pads and producing structure synthesis the only problem is like those are hard coded that's not a good idea. But they are using haiku, so that's fine. 
+
+Speaker  10:08:21
+I mean like for synthesis, we might want to use something a little bit smarter than haiku. It worked fine and the other case it was totally fine. Your film research coordinator from the late nineteen seventies eighties. 
+
+Speaker  10:08:37
+Find stability so it's already kind of set up here and it has the explorer evaluate, fill gaps, synthesize stages. 
+
+Speaker  10:08:46
+Ok, it's a little bit different this is interesting. 
+
+Speaker  10:08:52
+So literally it's telling to go through the phases and then evaluate them with the coverage score and then to fill the gaps. 
+
+Speaker  10:09:00
+And then synthesize information. 
+
+Speaker  10:09:04
+You never hold raw data for research text, only task ID, scratch pads and stuff like that. If your findings directory. So it's just it's just strange to like have another way and then mash them up and go, OK, do they even work together or should be one or the other? I don't know and I don't think anyone can answer that. We'll go over to our coordinator so we already had this from before so it's basically the same thing. 
+
+Speaker  10:09:26
+Let's go look at our agents. 
+
+Speaker  10:09:31
+Why does it why do we have this and then those what's the point of both so we go back to our main here. 
+
+Speaker  10:09:44
+Oh, loads it into here and oh, these are the descriptions to trigger it, right oK, OK, so that's what they're doing. Though if it's on the file system, I feel like it shouldn't need to load it from agents, but because it's over here as well, right so why is it doing that? 
+
+Speaker  10:10:03
+You know, I noticed, I noticed you are using agents file system, but also agent definitions. 
+
+Speaker  10:10:13
+And so the agent definitions overrides the front matter from the agents directory. Shouldn't shouldn't we just just use the agents file system? So that's one one unusual thing that I saw. Again, we're using Sonic so I think if we did Opus, it might resolve it or it might waste a lot of our time. So we'll see what it thinks here. But to me, that's a little bit strange. 
+
+Speaker  10:10:53
+And you know, with with the obviously with agent definition, you can dynamically load them i don't care about that, though. Ok, Yeah and it's putting the agents in like that. There we go that makes a lot more sense so that was the only thing that I think that was questionable to me. I still don't know if our phases make sense. So I'm going to go over here and just ask Opus, 
+
+Speaker  10:11:14
+What do you think of our phases? Does it make sense with the way our synthesis and explorer works? 
+
+Speaker  10:11:32
+I'm not asking you to change code, but just give me perspective, 
+
+Speaker  10:11:40
+Ok? And so we switched to Opus just because it's way more. We're not on Opus. 
+
+Speaker  10:11:48
+Ok, so cuz I typed in while we're doing Opus there, that's why. 
+
+Speaker  10:11:54
+I could have also just said make a plan, but I think this would automatically go into plan mode. And so we will see. 
+
+Speaker  10:12:04
+What it thinks but I'm trying to avoid using Opus it burns up my credits like crazy. And I didn't notice this, but I think we mentioned it where we had results, Jason, and we have a bit of a conflict there so phase four and three, the synthesizers is only a thing that reads scratch pads. What feels awkward is Phase 2 so we have that. There's no phase with the synthesizer says I found conflicts I can't resolve please explore access so the pure version would drop the results, Jason. 
+
+Speaker  10:12:30
+So I'd say, yeah, like, I mean, let's drop results, Jason, because scratch pad synthesis is our way to go. 
+
+Speaker  10:12:42
+Ok, so we'll go ahead and do that. I know we're running the Opus, but I really need to be intelligent here for those prompts. So now it's back here so record findings, identity model schema now lives in the explore agent research state findings the quarter now holds the task ID scratch pads and synthesis or whatever. And so I would expect that our main coordinate, well, our main prompt here would be less gross. 
+
+Speaker  10:13:13
+And yeah, it looks a lot better. So let's go ahead and execute it i'm not sure if we can even enter a prompt into it, but we'll go ahead and just say main, I guess before we drove it from here, right? So, but it is a main dot PY, right so we'll just do, I guess it's the other weird part is the other one was like it was driven by the cloud code, which we could have coded it that way, but that's not how this one is. So this really is hard coded for a school in the crosshairs and it's not like you can ask it more questions, but we'll see what it collects out and we'll decide whether we even want to tweak it and by the way, again over here, I'm actually fixing these things something that AI cannot do is work with very messy people talking to each other, background noise, all that kind of stuff i would try to do this if I could i'd have to probably build a custom model for this, but I do not have a computer science degree in data science and stuff like that so like building machine learning models so I'm not going to be able to do it, but we will wait for this to complete. 
+
+Speaker  10:14:13
+Ok, OK so here we have some stuff coming through, so scoring it and it's expanding and talk about the gaps and retrieving information. I'm curious to see if it's rating to any of the findings yet here. Nothing yet it seems like it's going to Waterfall and then right to it so we'll have to hang out and wait. It is still going here. But one nice thing is that it's doing the synthesizing but now we have our artifacts i'm just curious what we have as artifacts. 
+
+Speaker  10:14:39
+So with Japanese supernatural psychic school films, we have this and here we have examples virus haunted school occult and we have confidence claim tags not identify the research represents documented Japanese films, the Japanese supernatural psychic school cinema. And then we go over to here what international teen psychic telekinetic films of this so we have content confidence type tags. Does it really work for this? I guess maybe, but like I'm not seeing any sourced information. 
+
+Speaker  10:15:18
+So like none of these fragments. 
+
+Speaker  10:15:24
+Are showing any source information. So how is it going to meet the requirements so we'll wait for it to finish and then we'll ask unless it's saying how it sorts the findings and not necessarily the external information. So synthesis is complete and we're going to go back over to here take a look here. I thought I'd be generating it out. 
+
+Speaker  10:15:47
+Let me write it to the synthesized file oK, So it's writing it right now and we'll give it a second. So the research is complete. And so here we have the full synthesis. Let's go take a look here. 
+
+Speaker  10:16:02
+At the synthesis it's the same document we'll go here, topic source, consulted findings. 
+
+Speaker  10:16:17
+And so we have stuff here, but like I call this junk i like, I don't really like it like we do have sources here, but it didn't preserve the original source. So I feel like this failed and we'll go back to Claude here. You know, we have the results of the findings, but the goal was to. 
+
+Speaker  10:16:42
+Preserve Providence. 
+
+Speaker  10:16:47
+And I don't feel we did. 
+
+Speaker  10:16:54
+Because we don't have original sources. Can you please fix our agent? Ok. And you can see I'm already at 72 %. I barely, oh, it's on extra high those buggers, those buggers, they're doing that to me all the time i hate that so I've got to go here. I've got to change effort to to medium because I'm going to end up using up all my my credits that's why I'm at 72 % i've barely done anything and I'm already 72 %. 
+
+Speaker  10:17:25
+I really dislike that when you switch it over the default to that they shouldn't do that. So 70 % and the next time will be April twenty third five PM. So what's today date today, Literally I won't get access for multiple days absolutely disgusting. I'm not happy with you, Anthropic. But that's their trick, right so they get you to try to use the high reasoning models it eats through your credits things and they want you to buy the tokens. Luckily, I'm subscribed to like three to two other providers and the open source ones. But to finish this course, I'm going to need the credits to do so. 
+
+Speaker  10:18:01
+Has no web search filters it's hallucinating the films oh, it's hallucinating wow, but we did build a bus on it so let me check the spec to stay consistent. 
+
+Speaker  10:18:14
+Well I don't understand the original one had tools. Are you saying the original 1 never used tools because I'm almost certain that it did. Now I'm kind of wondering, did this one never actually work properly? 
+
+Speaker  10:18:31
+Oh my goodness, 
+
+Speaker  10:18:34
+It never used tools, but then how did it source information? Oh my goodness, wow. Wow that is, it's interesting, people, if you missed that, you're going to find out later on you're like, wow, Andrew, that. I mean, that makes a whole lot of sense like why I wasn't really happy with the data and it kept sourcing very specific ones but before it seemed like it worked i mean, we had more than findings it must have had that at some point though wow. Well, you don't have credits to run this stuff though. 
+
+Speaker  10:19:09
+We'll see. 
+
+Speaker  10:19:14
+That's crazy. See how easy it is to miss stuff. We go here and now we have that, so we got to run it again. 
+
+Speaker  10:19:26
+Well, before we do, I'm just going to clear out the old stuff and we will delete this. Delete permanently and we'll run it again for the amount of credits that's where we're going to end here oK folks, assuming I can even get through this run, but it's using haiku so it should be easy. But it also maybe it's just doing a lot of stuff and that's why it's kind of running into that problem. But we'll see what happens oK, Actually it says my usage is here, so it should be fine. You should be able to do it. I'm not sure why it gave me that crazy warning, but we will continue on here. 
+
+Speaker  10:20:01
+It seems to be hanging here i haven't seen it moved whatsoever, so I'm going to kill it now. We're going to go ahead and say Claude and it just we'll move it back to Sonnet here. It just seems to hang at this step. Ok, So I'm going to go ahead and ask it because I'm literally waiting here it's doing nothing. All right, This thing is really, really struggling so I'm going to go ahead here and I just think that the coordination is just a little bit messed here and I'm going to go say, you know, I think my prompt for my phases is too over engineered. 
+
+Speaker  10:20:39
+Since we are mixing 2 methods together, 
+
+Speaker  10:20:46
+Can we simplify the process? Ok, and we'll see what it comes back with. So here is talking about duplication for these things already defined the coordinator prompt should just have the state high level sequences. I'll simplify it to 15 lines so hopefully Sonnet is doing a better job but I mean, it does feel a little bit over engineered and there does seem like there could be conflicts between the two. And so we'll go over here and just take a look. And so. 
+
+Speaker  10:21:15
+Did it change it or is it asking to change it? Yes. Ok, because I was going to say that didn't look like it was changed. So here we have a reduction and so, yeah, those phases are really compiled down. And so this will maybe give us a better chance of a better execution so we'll go ahead and try this. Hopefully it'll be faster and won't hang. We'll see what happens here oK, again, it feels like it's hanging here and not moving so I'm going to go ahead and just go here. You know, it feels like the agent is hanging here. Can we get better logging right to see what is going on? I'm going to add this to debug mode this is driving me crazy it just and again maybe it just takes time but for each access call Alec mark then dispatch movie explorer with return task ID that's phase one. 
+
+Speaker  10:22:29
+Another thing is that maybe we instead of having it launch all those, we can just provided a single access to research and we don't need to do them all in parallel, right? 
+
+Speaker  10:22:40
+So he says now I understand this, you clearly let me see the SDK sure, if you think that you understand the problem clearly, that. 
+
+Speaker  10:22:47
+'d be nice. 
+
+Speaker  10:22:51
+The coordinator receives loop prints only and all other events. Ok, so here we have the new line process yes, 
+
+Speaker  10:23:14
+Ok, our running web searches, so it looks frozen. Ok, so it is working. 
+
+Speaker  10:23:30
+Ok. So again, it would just be nice because I'm just sitting here and I cannot tell. 
+
+Speaker  10:23:39
+All right so we'll go ahead here and we'll try again. 
+
+Speaker  10:23:48
+And I'm expecting to see something. 
+
+Speaker  10:23:53
+There we go oK, so now we can see this exploring. Now I'm dispatching the movie Explorer agents for each pixel parallel. There we go. And now it's doing the web searches. Excellent so this would be things that we absolutely want to log and then we could feed the logs back and say, hey, did it do a good search? But we will now pause and I'll just let it go and do what it wants to do. 
+
+Speaker  10:24:14
+It did stop. Oh, is it done? 
+
+Speaker  10:24:20
+Oh, we ran out of. 
+
+Speaker  10:24:24
+50.000 thousand tokens inputs per second, so you can see the header. So here it's just doing too much. 
+
+Speaker  10:24:34
+Rate limit. Ok, so let's go back here. 
+
+Speaker  10:24:41
+Look, can we just explore 1 axis at a time? 
+
+Speaker  10:24:56
+This has been painful i'm so sorry this is taking forever. 
+
+Speaker  10:25:06
+I'll change it to Explorer 1 Explorer at a time. But I mean, like, yeah, but no but only Explorer a single access. Ok. Because we just are testing Providence, 
+
+Speaker  10:25:26
+Right because this is overkill i can't i can't keep waiting here for a thousand years. 
+
+Speaker  10:25:33
+Yeah, I mean, I could have done that too, I suppose, but we'll go ahead yeah, I just kind of simplified it to 1. So say yes, 
+
+Speaker  10:25:42
+We'll try this again and we'll have less of a problem but you know, obviously it was going like crazy here hopefully this does not hit our Max token requests. And here you can see it's going so I'm thinking we're running to less problems here. And here it is still searching so it hasn't aired out, but it's still going. It's still going taking a considerable amount of time, but we'll wait till it's done. All right, so this says it's complete scratch pads are written to. 
+
+Speaker  10:26:09
+Let's see how much it collected it seems like it collected a lot and we'll go refresh this. 
+
+Speaker  10:26:23
+It didn't write in the files. My goodness, my goodness. It didn't write anything what? Oh, because they hit Max usage oh my. 
+
+Speaker  10:26:38
+Goodness. Look, this is this is stressing me out oK, 
+
+Speaker  10:26:46
+The agent is too exhaustive, right? And if it fails, it doesn't write to scratchpad. Ok so it has to not be be so exhaustive in its search. 
+
+Speaker  10:27:10
+And if it fails due to token rates, we need to pick up where we left off, 
+
+Speaker  10:27:21
+Which technically the manifest should allow us to do that, but I'm not really sure if it will actually do that and none of these things are here, right so I don't know. We'll give it a second. I mean, technically it's supposed to pick up where it last left off, but like, we haven't really had to do that so it says before writing anything, hits rate limits before saving, no incremental rights to scratchpad resume logic existing coordinator, but doesn't wire to the resume form i'll fix these things. Oh, yeah. Yeah you think you say you're going to help me here, but you haven't been so far. 
+
+Speaker  10:27:57
+Ok yeah yeah. 
+
+Speaker  10:28:00
+I need to reset the manifest file, please, so we do a clean run. 
+
+Speaker  10:28:12
+Ok, Once that's done, all right, and I'm going to just make sure this manifest file is cleared out great. Let's run it again please. Just give me findings give me findings i don't care if it even works well, I just want to see anything. But yeah, mixing them together maybe not a great idea they just the phases and this, this stuff is just not a good mash. And so I was hoping that would work, but I think I'd have to spend more time thinking about it and I'm obviously not doing that and that's kind of part of the problem. 
+
+Speaker  10:28:43
+But at least we should be able to get finding sooner i'm still not seeing findings in here, but we'll just have to hang out and see. All right, so as it's done, we'll give it a refresh here we'll take a look we now have a single finding so I guess I only did one, which is. 
+
+Speaker  10:29:00
+So I guess the finding, I would have thought they would have done a scratchpad for each of the things that it searched out for results, but I guess not. So it's not exactly what I wanted. Does it have sources it does and it's following kind of our original source pattern, which is fine. And it's only doing synthesis from a single 1 so it's not really a good example we refresh this. We don't even have the synthesis. So I think you know what we wanted to accomplish for this the idea is that we're cross referencing multiple sources and ingesting them to a single location, but I'm obviously not having success here and I'm tired and is the last video, so whatever. 
+
+Speaker  10:29:37
+But hey, at least we tried oK, see you the next one, Chow chow. 
+
+Speaker  10:29:44
+Hey, this is Andrew In this video we want to take a look at multi instance and multi pass review architectures. So that's the section here but really they're just saying is like if you have a model or an agent and it implements something, let's say it generates a code or a document or whatever, and then you ask it to review it because it already has that history prior it's going to take bias to its work and think that it's done a really, really good job. 
+
+Speaker  10:30:12
+And So what it's saying is that what you should do is you should have an independent agent or model or step that's going to review it so that it doesn't have that context or that memory where it has biased i think it's work is really, really good. So what we're going to do is go ahead and make a new a new folder here and this will be. 
+
+Speaker  10:30:33
+Create and review or this will be like independent in peer reviewed looks like they say peer reviewed, peer reviewed agents or peer reviewed example. Ok, because that's really what it is you're having a peer, so somebody else that's smart, another agent review your stuff or model, if you will. So we'll say main dot PY and to just help anchor it so it does a good reference here we'll go ahead and grab this stuff here and we will paste it in. 
+
+Speaker  10:31:03
+Ok. And so now what we want to do is CD back here and we're going to go ahead and type in Claude. And so I want to show an example where a model reasoning has bias to be correct. 
+
+Speaker  10:31:29
+When it's multi turn and they have previous context. And so we want to show a case where one agent is creating and then validating its own work. 
+
+Speaker  10:31:48
+And another case where we have a completely separate. 
+
+Speaker  10:32:01
+Agent or just, or, or just just empty context or just new context. Can we use can we use Japanese language learning, let's say generating out practice exam vocab practice vocab questions. 
+
+Speaker  10:32:22
+For the J LPTN5 as I'm studying for that so that's the fun use case for me and we'll see if it can make sense of what I'm trying to ask for to do. But here it says multi pass review, but like I think of it as like peer reviewed by another agent or just again, completely from scratch here. We'll give it a second all right, let's take a look at what we have. 
+
+Speaker  10:32:43
+Ok and so. 
+
+Speaker  10:32:47
+Using the, it's not using the agent's SDK, which is fine i mean like, I think it'd be a little bit easier to read if it was. But here we have generation problems so generate 5 GLPT vocabulary practice questions and multiple choice factor. Each question tests one vocabulary word. Returns only a Jason array in this exact format so this is what we're expecting review prompts to review these GLPT vocabulary questions critically check each for accuracy. And so we have these separated out. I think it'd be really hard to show bias in its reasoning so I'm not sure if it's really worth trying to do that, but let's see if it actually do it so here it says self review base continue the same conversation the model has full context of having generated these questions. 
+
+Speaker  10:33:27
+It's anchored to its own reasoning, prior choices. This might not be the strongest use case for it because I feel like it's not as as subjective or if it well, I guess the other thing is like if it made a wrong mistake, would it actually know? It might double down on it. So that actually is what we're really talking about so it might still do that but I used to try to make these and I would just get terrible, terrible results and I would have to have a second or third step to validate it with a lot of example information so that we could reference it but let's take a look here. 
+
+Speaker  10:33:57
+So we will go and just run this. 
+
+Speaker  10:34:03
+Main Python, oops, Python dot main, sorry, Python dot main. Let's see what we get. And I think the reason it's not working is that it's stripped out. I don't know it does that, but it's stripped out the code here i don't, it didn't have to switch over to this and even if we tell it to use Agents SDK, it doesn't know what it is half the time but I'm going to go look for our Anthropic SDK test because up here we have this here. So we can just drop into here. Yeah, peer review that's the one we want. So go ahead and just replace that like that. We still need Jason maybe. 
+
+Speaker  10:34:43
+And I'm going to go back over to this one, grab this line. I really just like the does constants like that. 
+
+Speaker  10:34:57
+And we will search for clients. 
+
+Speaker  10:35:01
+And I'm just looking for that client. 
+
+Speaker  10:35:10
+Oh, here it is oK, so just replace that. So now. 
+
+Speaker  10:35:18
+There we go this should work. We'll go ahead and hit up. 
+
+Speaker  10:35:25
+I don't know, let's fix this here i don't feel like piddling with it, so we'll go back into that here and I'll just say debug go ahead and paste that in. We'll have it fix the code here. All right, OK, so that should resolve the issue fix the import line so that's all I had to do it took a lot of time to do that. And so here we have self versus peer i expect self to do totally fine, but we'll take a look and see what we get. 
+
+Speaker  10:35:53
+Oh, the first one could not parse the Jason for preview continue with raw output. Wow, that's not good. So we'll go over to here and so, 
+
+Speaker  10:36:08
+Ok, so we'll go here and look at self review so the model continues the conversation which it generated it. It carries full memory for its own reasoning. And so here it's saying they're all correct, peer reviewed, a brand new request with no prior messages the model has no knowledge. And so here it is scoring based on accuracy. What's interesting is like we have this other one and it's not using, well, I guess it is, but it's just not visualizing it the same way, 
+
+Speaker  10:36:35
+Ok for any AI generate content that requires quality control, always use a separate context, right and so here it's just saying for the validation steps, never ask the generator to grade its own input in the same conversation. And so that's all it is suggesting here, though, the question is like, you know, is the results wrong and like it would take multiple generations and checking and stuff like that to figure it out so we can't say for certain, but anyway, just be aware that this is what the approach you should take is that one generates one reviews, OK, and they don't have the same context. 
+
+Speaker  10:37:12
+Hey folks, this is Andrew in this video, I want to focus on what we can do in terms of if we run into issues so like imagine we are using our structured Jason and it comes back with either syntax errors or there's just something absolutely wrong and we want to have a way for it to correct. Ok, so I did say pedantic can validate data that comes in and out imagine we're not using Pedantic or even if we are using Pedantic and it's not a structural thing, but there's another problem with it. 
+
+Speaker  10:37:40
+We want to feedback that information back into our loop and have it try to correct and maybe it has a certain amount of retries that it can back off to do. And this is really to address, you know, retry and retry and I'm going to say remediate, remediate as that's really what they should be calling this but this is in this section where they're saying, well, you know, we should implement validation, retry feedback loops for extraction quality, right? And so I'm going to go ahead here, say main dot PY and I'm going to go over to our our the one with our structure Jason output, wherever that is structure Jason output. 
+
+Speaker  10:38:22
+Here it is. Oops, here it is. And we will grab this because that's good code and we'll put it over here we'll paste it in. I'm going to CD into the correct directory here and we'll type in Claude so we'll say for our main dot pie, we want to demonstrate. 
+
+Speaker  10:38:47
+That the loop can handle. 
+
+Speaker  10:38:52
+Validation and retry, you know so imagine, you know, the data that comes back, 
+
+Speaker  10:39:02
+It, you know, does not meet our requirements. Just let me think about this for a second, OK, OK and So what I was just doing was trying to just read this carefully and so here it just says the pending specific validation errors back to the prompted retry i'm just going to copy this line as that's pretty good. So so imagine our data came back, but it has problems, but it has validation problems from our tool schema, right? We want to append specific validation errors to the prompt and retry, retry that there. 
+
+Speaker  10:39:38
+Ok, so we'll go ahead and hit enter. And so you know, what we wanted to do is feedback into the loop, make corrections so that it can work on it so really it's just saying, hey, I got this back as the problem and we're just going to refeedback it and shouldn't be too challenging all right, let's see what it's changed so here it says validate triage so run for business rule checks and return specific error strings. 
+
+Speaker  10:40:01
+If the ticket does not match exactly this of the summary must be exactly this on failure, the tool result is returned and is error true pinpointed the error. We'll continue to loop with no breaks. Let's take a look and see if it's actually implementing the loop as we expect. Ok, so our loop is here it's going to create a message you are a support triage engine analyzing incoming tickets that are coming in here. And so we are appending the response. So as it goes, it's appending it. If it ends, it ends the turn we have tool use and so within here we have tool use and we have validate triage it's going to return errors if there are any errors, it needs to validate them all the validation failed, fix all the issues. 
+
+Speaker  10:40:49
+So it's giving the text as to what it needs to do and then it's a pending that information so that it knows like, hey, look, these are the validations errors we have and you need to go fix these. And then the loop is going to continue on that's going to be fed back into it it's going to know that information and then go fix some. And if it's not, it'll say that it's past and continue on. So that is what it's doing down below here we do have Max attempts that it can try and it will quit out if it meets those we'll go up to here and to just take a look here at the validate triage so here it's validating on the way out. 
+
+Speaker  10:41:25
+I kind of wonder if instructor or pedantic can take care of some or more of that, but that will definitely help quite a bit. Let's go ahead and go all the way to the bottom here, and we will go ahead and run this. So we'll say Python, 
+
+Speaker  10:41:43
+Python main dot Pi, and we'll go ahead and see what we get as a results. So here is the raw ticket. We have a validation failure and then it goes and it triages it. It corrects the information. Let's see here. So validation failed and then an attempt a second call here. And so then we have our correction and then it goes on to the next one let me just double check this, make sure this makes sense. So we have attempt to call calling submit triage so it submits the triage. 
+
+Speaker  10:42:20
+And then validation failed on attempt one tags must use snake case and then it's calling a second time and now it passed and now it's outputting oK, great so there we go we implemented a loop. So is there any other questions that we need to kind of address and no, let's take a look here. So we have provide a retry error feedback loop we did that limit the amount of retries. These are infected when the required information is simply absent from the source document. 
+
+Speaker  10:42:46
+Ok. And so, you know, we do obviously have down here the amount of retries that can come here, but you could, there could also be a thing that says like, hey, should we even bother retrying this so you could go and re prompt this and say, hey, make a use case where if you, if you find that it just really, it's never going to meet the requirements, then you should quit out. That might be another thing here feedback loop tracking when code constructs triggers findings to enable systematic analysis of dismissal patterns i don't know what they're trying to say there difference between semantic validation errors and schema syntax errors. 
+
+Speaker  10:43:21
+I mean a limited by tool use or values don't sum or wrong field so this one validation errors is like the quality of the data that's coming through it, right so like you know, cement errors like does it meet the Jason requirements and validation errors is like, is the data actually correct? I don't think again, we need to really show that i think that's pretty darn clear. The key things is here is feeding things back in the loop, setting retries. And obviously we could add a little bit more if we want to, but I think other tools like instructor might take care of some of this. 
+
+Speaker  10:43:50
+We'd have to double check but again, it's not an exam guide, so we're not really building for real use case here so I'm going to leave that off the table oK, 
+
+Speaker  10:44:02
+Let's talk about some large context problems and this is things that are going to occur when your context gets too large, like you have too much information you're passing to the model so the first one is progressive summarization risks. So when an AI is asked to condense information over multiple steps, there's going to be information in there that's very important, like dates, percentages, numbers, or even key information. The problem is, is that as you summarize that information, it doesn't know that that's important information and it's going to literally make a generic and you're going to lose that information so the solution is to extract that information out stored somewhere and then always inject it back into the next prompt or or to the context, the exact information so it knows what is the most important information and we're not losing that out. 
+
+Speaker  10:44:47
+We have loss in the middle effect so if you have, if you give a model a lot of data, like let's say 50 pages of data, what it's going to do is it's going to look at the first few pages and the last and it's going to miss the middle information. And this is just how the model works so it's just what it's going to do. So what you can do is break up your data and have it processed in sections. 
+
+Speaker  10:45:08
+Or if the most important information you know is going to be read only at the start and the beginning, then move that information there but really you should process in sections it will be the solution. If you call external tools or APIs, they often return back data, usually Jason. But you might not need all that Jason data, maybe just need the order number or key information. And you don't need to use LLMS to filter that data out, but you can make an additional step to a smaller agent or model to do that to reduce the amount of information but you're not going to want to pass back the entire API request. 
+
+Speaker  10:45:42
+A good example might be using something like Trivago, where I've used the MCP and it gets you the best deals on flights and stuff, but it returns a lot of information. You're not going to want to ingest all that you're going to want to only get what you need and pass that to the model. Last one, and this is just for you like this is something that gets taken care of you in general if you've ever used Cloud Code or any other tools, or if you've ever used like Chachibt, and you'll notice that you can have a conversation that goes on forever, but what's happening behind the scenes is that they're summarizing the information. 
+
+Speaker  10:46:19
+So The thing is that for an agent to know how to do stuff, it needs the whole conversation history. And each time you prompt it, you're feeding back in the last thing that you said and all the things you said. But at some point you're going to run out of memory and so you have to summarize parts of it or, or the entire conversation. And so these are our large context problems and those are our solutions, OK. 
+
+Speaker  10:46:47
+Hey, this is Andrew in this video, I want us to tackle some of these large context problems. I think the ones that make the most sense are, I mean, chunking, chunking sections seems pretty easy, so I don't think we need to do that but I think the ones that will be valuable will be extracting key information out and also paring down Jason calls so what I'm going to do is I'm going to go grab our hello world example as we continuously do, and I'm going to make a new folder here called Large context problems. I don't want all those, those, those letters there that's a minor mistake there. But we'll make a new folder here saying large context problems. 
+
+Speaker  10:47:27
+And we'll go ahead and say main dot PY. I just realized this entire time I could have been writing out the prompts i don't know why I didn't do that just make a prompts file so you could replicate this as well. But I'm going to go CD into our large context problems we're going to type in Claude. And here I'm just going to say, you know, I want to demonstrate two things to solve large context problems oK, so the first, the first is that key precise information, 
+
+Speaker  10:48:02
+Key precision information should be extracted out, 
+
+Speaker  10:48:08
+Stored externally and. 
+
+Speaker  10:48:13
+And brought back as case facts for future iterative prompts. And also. 
+
+Speaker  10:48:25
+We want to show tool use. 
+
+Speaker  10:48:32
+That returns that returns lots of Jason and we just filter out. 
+
+Speaker  10:48:46
+A little bit of information. So imagine, imagine we have a Tex adventure game. 
+
+Speaker  10:48:56
+Ok, so we don't need a whole anyway, we'll go ahead and ask to do that and we'll see if it knows what we're asking for but the idea here is that I'm expecting it to store the information somewhere it doesn't need the whole repo so no, you don't, just you don't need to read the repo for examples. Just please proceed to code loves doing that i hate when it does that. 
+
+Speaker  10:49:28
+So let it think we'll be back here in just a moment. All right for some reason decided to run it sometimes it does that, but here it says clearly states the two forty five characters filter down through the 2O3 cases. The demo works technique 1 technique 2 returns the etcetera information and shows that, and that's fine, but I would rather run this myself and find out i guess the reason to return the results is because we'd actually have to run it and see what happens. So it says run it and then do this, but let's just read it that's probably why I did it so tool output filtering so get well, first let's look at the code sorry, I'm all over the place. 
+
+Speaker  10:50:01
+Ok, so here we have the world state that totally makes sense. This is something that we'd absolutely want to keep track of, and so we'll go down here. Then we have lots of relevant bulk data, so that makes sense. I would think that we'd also want to filter some of this out, but maybe not. And so here's his return to full world state, simulating A bloated API response that's true. 
+
+Speaker  10:50:22
+Tool output filtering filter the mass of world state down to only what's needed so instead of injecting thousands of tokens, we'll inject 5050 tokens of the fact. Here we have case facts, so load persistent persistent player facts from disk. So here it is doing that. We have saved case facts of persist information here oK, extract the case fax data so it's storing it somewhere. And if we go and find our problem here, did it actually do that? No, but it's supposed to store it somewhere. I guess it's just storing it in memory. 
+
+Speaker  10:50:58
+Build the system prompt. 
+
+Speaker  10:51:02
+Ok, you are a narrator of a text adventure game here's the case facts so it's providing this information each time and every time the loop current room so this is the information that's filtered out responding to players actions oK, and then we have our text adventure so large context demo, world size state and there we go so we'll go down below here we'll just play a little bit, see what happens. We might not be able to really be able to see what's going on here. We'll try it anyway. 
+
+Speaker  10:51:33
+So say North. 
+
+Speaker  10:51:36
+And as per usual, doesn't have the API key, so that makes me think it didn't even work when they tested it. I really wish that this stupid thing would copy this here, but it never does so we will grab this here it's kind of getting used to paste it in here myself. What can you do though, and we'll grab this here, 
+
+Speaker  10:52:09
+We'll load that and we'll go back over to here. 
+
+Speaker  10:52:15
+And we're looking for. 
+
+Speaker  10:52:22
+The key. Key there it is. Grab that here like this. Go back to this one. We will find where that goes. Here it is. So now this should be able to work. We go back it up. 
+
+Speaker  10:52:41
+Ok, 
+
+Speaker  10:52:45
+Did we forget to include that the async. 
+
+Speaker  10:52:51
+Bring that go back all the way here. Maybe I took it out by accident, do this again and I'm getting tired of this so we'll go ahead and we'll let it fix the problem. I'll be back in just a moment. Ok, So let's see if it's resolved those issues. We'll say look around. 
+
+Speaker  10:53:16
+Just a second here. So you take a moment to look around, 
+
+Speaker  10:53:22
+Pick up Rusty key. I think it's showing us the facts as it goes through here. There we go. Look at old map. 
+
+Speaker  10:53:35
+The map provides useful information, but you're still standing in the in the grand hall with rusty keys at your feet. So there we go so it's working and I mean like it's obviously we're not exposing that information here, but let's again just go take a look here and make sure we clearly understand how it's doing this. So here we have the world state and basically for the room, we're going to get all the room data so we say get world state from the tool and then we're just individually selecting that data and returning it back to the model. Notice here we have our case facts so this data is being stored somewhere, I think in our, oh, it is a file. 
+
+Speaker  10:54:13
+Now that we ran it, we have it. And so it's just extracting that information out of that file and then loading into context every time and so that solves those two problems. Obviously we're not checking the one where we have a very large dock where we'd have to process it. If I feel like doing those videos, I might do them, but I don't think it's important. But yeah, we will move on from here oK. 
+
+Speaker  10:54:39
+Hey, this is Andrew and in this video we are going to figure out how to manage context effectively and large code base exploration this is the 5 4 section. And so the purpose of this section is that imagine you have a large code base and you need to figure out how it works. But the problem is, is that if you have a large code base and it's ingesting a lot of information, the context is going to get muddled because as it increases more information that goes, it forgets things on the tail end or when it summarizes it, it loses key information. 
+
+Speaker  10:55:10
+And So what we need is like an external memory. And so the idea is that as we crawl through information into the code base, we can save that somewhere like let's say a findings dot MD file. And also the other thing is like we want to delegate out to sub agent because if we had our main agent running like just Claude code being the person that consumes all that information as there's a lot of busy information that's going to eat up it the coordinators context and it's not going to be able to coordinate effectively. 
+
+Speaker  10:55:41
+So we need a sub agent that can handle the noise we need a sub agent that will, or at least the coordinator that will write to the findings file so that when the context is working, it can continuously reference that information. And let's say, you know, for whatever reason our computer shuts down or there's an error or something, we run out of credits and we want to pick up where we last left off. 
+
+Speaker  10:56:05
+So we have crash recovery and that's what we want to do. So I thought it would be fun if we explored a fun code base like the Doom code base, anytime we can work in Doom, why not so I'm going to go over to here and I, I have not looked at the Doom code base for some time here. I'm going to go ahead and grab it. And I don't want to SSH it, to be honest i just want to, let's see if we can figure this out. 
+
+Speaker  10:56:30
+So I'm going to make a new folder here and we're going to call this Doom Explorer. And in here. 
+
+Speaker  10:56:42
+We'll say Doom Explorer i'm going to open up Claude. I'm just going to switch it back to Sonnet and I'm going to put the effort back to medium, 
+
+Speaker  10:56:54
+Sorry. And So what I want to do here is I'm just going to ask it like I want to clone the Doom code base. 
+
+Speaker  10:57:07
+In this folder, but I don't want it get tracked because I don't want to to have. 
+
+Speaker  10:57:21
+A git repo and a git repo. 
+
+Speaker  10:57:25
+I also want you to ignore the contents can you create me a shell script that will pull the code base into this folder without the problems that I want to avoid? Ok, so it's going to go ahead and make that script and I'm going to run it and yeah, it should be fun, or at least it's fun for me i don't know if it's fun for you, but maybe you want real world use cases. You know, I don't know, maybe this is a real world use case for you. And so we will get that little script going here and it's already here. 
+
+Speaker  10:58:09
+So that's going to pull it and. 
+
+Speaker  10:58:14
+Yeah, just removes it. I mean, that's what I was going to do so that's pretty darn simple. So we'll just chamod that U + X Doom script and we will do set up Doom. I'm hoping that it pulls it into a folder, 
+
+Speaker  10:58:28
+It adds it to that directory i guess that's fine you could do it that way too. I was thinking, Oh no, it added it right here perfect and so now we have the Doom source. Ok, so now what we want to do is we want to create something so we're going to make a file called findings MD. We're going to create another file here, which is going to be manifest dot Jason. 
+
+Speaker  10:58:53
+And I'm going to go ahead and make a new plan. 
+
+Speaker  10:58:58
+Doom code base exploration orchestration i'm. 
+
+Speaker  10:59:08
+Going to say I want to use cloud code to explore the Doom code base. 
+
+Speaker  10:59:16
+Example like How does a player take damage? I am concerned that due to the size of the code base that Claude code will lose context. 
+
+Speaker  10:59:33
+As it summarizes information. I want to have external information, external information saved to findings, external key information, key information saved to findings dot MD so that. 
+
+Speaker  10:59:56
+It helps. 
+
+Speaker  11:00:00
+Guide memory I want to. 
+
+Speaker  11:00:08
+Run. Exploration as a subagent so that it does not eat it does not muddy the context of the main parent agent. 
+
+Speaker  11:00:29
+Or let's say Cloud Code Runtime so it can effectively. 
+
+Speaker  11:00:35
+Coordinate on. I want to be able to recover or resume. 
+
+Speaker  11:00:48
+Sub agent sub agent tasks and so I have a manifest. I want that state to be stored in manifest Jason. 
+
+Speaker  11:01:03
+I want a sub agent defined with based on Claude codes. 
+
+Speaker  11:01:18
+Expectation like conventions, EG you know, agents i don't know if it's a Claude agents, right. Ok, and so now we have that i'm going to go over to Claude here and I'm going to reference our plan i'm actually going to switch back to hope is for this and I'm going to reference my plan. Can you create me a spec and task breakdown and save it in a file called spec dot MD and we will let it go ahead and do that. 
+
+Speaker  11:02:01
+All right, so let's take a look at our plan so here it says written aspec. It says build a cloud code orchestrator. It's copying. How does a player take damage without polluting the parents agent, context, persisting files, etcetera. Dispatch the expiration questions dispatch a sub agent per question. Read findings dot MD. Never perform raw code exploration itself. Keep context clean defined at the Doom Explorer i like that it could be even more generic, but we're going to just call it Doom Explorer. Append findings to the findings dot MD. Append knowledge log question status really have one sub agent so if we were multiple sub agents, we would probably have to manage that. Coordinator reads manifest file. 
+
+Speaker  11:02:50
+And so that seems good. So scaffold author the agent define the manifest file coordinator workflow prompt template, Yeah, that's something we're going to need prompt template so that'll be maybe the claw dot MDI would think that we would load findings on MD resume flow. 
+
+Speaker  11:03:12
+Smoke test failure handling acceptance criteria so this looks good so which and here we have open questions which oh, we don't know so it says which doom fork affects the file layout. I mean, 
+
+Speaker  11:03:30
+You have some questions. We are using. I don't even know it's I guess it's the Doom GitHub it's probably the official one. 
+
+Speaker  11:03:44
+This Doom. 
+
+Speaker  11:03:48
+Should findings MDB chunk per topic. I think findings can be a folder and we can just create artifacts within it, 
+
+Speaker  11:04:03
+Essentially scratch pad files. Do we want a second sub agent type synthesis? Yes, let's have a second sub agent. Please update our spec. Ok, so we'll have it update the spec. All right, so it looks like our code has done something. Oh, it updated our spec, right so that's what we were doing let's go and review our spec file and so here. 
+
+Speaker  11:04:36
+Pair never calls grep or read all the doom S source does all exploration output lives in the findings directory. Sub agent, crash coordinator, marks task failed smoke test. I mean like findings is pretty much our knowledge base basically for our repo. In fact, I'd be pretty tempted to rename that as knowledge base, but I'm going to leave it alone for now. How does a player take damage sub agent crash. And so we obviously have two steps, synthesis and this one so consolidated answers written by the Doom synthesizer makes sense, 
+
+Speaker  11:05:20
+Seems good oK, so we'll go ahead here. Please execute specs in specs MD. 
+
+Speaker  11:05:34
+All right, so we'll go ahead and have that implement and we'll be back here when it's done. All right, so we have scaffold complete T1 to T5 done T6 are our runtime behaviors encoded into the two agents. So it built these things here, the manifest file, the two things here, cleaned up states, finding not executed, runtime tasks, smoke test failure. Let me kick those off so what I'm going to do here is just take a look and see what we have. So we have a findings folder now, which is better? I guess we'll see what happens to be dropped in the synthesis let's go here and take a look at our explorer. 
+
+Speaker  11:06:13
+So explores the Doom C source code. I know C, but it's been a long time, so I'm not going to say I'm an expert at it but here we can see that it has lots of access. You're a Doom code base explorer and you investigate the Doom source. The coordinator prompt will contain a task, a question, a resume from OK, so it's passing very specific things. You may only write edit paths under findings and manifest Jason because it's not there to edit. 
+
+Speaker  11:06:43
+You may never modify the files, Never write the code. Derive A kebab case slug. Ok, I didn't know that it's called a kebab. I mean, it kind of makes sense like if it's skewered it looks like a kebab. Ok, Yep, never knew that was called kebab case. All right oh, snake cases underscore i've been complaining like snake curses have a hyphen and I guess they're saying that snake case or so that's kebab case so sorry folks earlier for complaining about it. 
+
+Speaker  11:07:12
+If resume from is provided appended to the file, update the manifest file, use glob to glob or grep to glob there we go fill the scratch pad. On success, update the stuff. So here's a template task ID question, and it's not much of a template. Oh, this is the whole template oK, question entry points, call chain key files, summary append only never rewrite a prior scratch pad section. Makes sense let's look at the synthesizer. Consolidate multiple doom expiration scratch pads into a single synthesis document under findings, your doom finding synthesizer, you merge pre task scratch pads into 1 coherent answer oh that's cool. Never read anything under the Doom source and you update the manasus file. 
+
+Speaker  11:07:57
+So that's interesting so here we have an example of what it finds. No speculation. If it doesn't cover it, say so in gaps, no code blocks, etcetera, etcetera. That looks pretty good i'm not sure if it these are using Haiku that's cool so I think it's just pulling that from before because I was using them, but I actually wouldn't mind it doing that and seeing how it performs. So the question is like, how do we kick this off i would thought that there is something for the coordinator, which is the the main runtime here. 
+
+Speaker  11:08:31
+Let's go back to the spec and take a look here. So six seven on startups, scan the manifest file no, no, no smoke test how does a player take damage follow up with a synthesis pass with the result scratch pads, verify parent contacts. 
+
+Speaker  11:08:50
+So these require you to kick off an actual expiration run. Say the words and I'll dispatch Doom Explorer. Ok, go and go and perform. Yeah, go, go oK, there we go i don't know what to say to kick it off all right, but here, it's going to kick it off while it's kicking off let's go look at the code base for fun. 
+
+Speaker  11:09:20
+Look, it's C It'd be fun to explore the code base and see exactly how it works. All right, But OK, here's the real code i was like, where's the stuff? Look, there's this is how you do the cheats. 
+
+Speaker  11:09:37
+Nineteen ninety three nineteen ninety six that's crazy. Well, that's it. That's all we got in the head. And as it's executing off, just having fun looking at the code wow, this stuff is really simplistic so keep expecting to see more in here let's go look at the enemies. Ok, now we're getting more stuff oK, it's directions. 
+
+Speaker  11:10:04
+All right, so it looks like more real stuff, but we will pause here and see what it comes back with. Ok, And we can see that it's exploring. Well, actually I guess while it's it's doing this, we should really point out the fact that the artist didn't register our project level agents definitions as sub agent types only built in agents types are exposed i'll work around this by invoking general purpose with Doom Explorer contract which preserves it. 
+
+Speaker  11:10:29
+Agent type Doom Explorer well that doesn't seem good. 
+
+Speaker  11:10:35
+Maybe that'll be an issue later on finding persisted disc parent stays clean. Oh, it's back so smoke test passed. So we have our findings let's give us a refresh here. And. 
+
+Speaker  11:10:52
+So. 
+
+Speaker  11:10:55
+What is the sequence of events and data transformations when an N player character receives damage and doom? So projectile, projectile collision, damage during trace hits, scan weapon damage during ray cast, blast radius damage propagation, various game system calls, target player checks, player pointer extracted from the target baby, difficulty reduction, armor absorption oK cool, so kind of walks us through all those stuff and tells us where the key files are. So player damage in Doom flows from here a central function called by projectiles, hit scan weapons expirations. The process is armor absorption oK, what is the exact pain chance probability mechanism how do we specify weapon type calculations what happens during invulnerability, grace periods and upgrades? Let's go down to our manifest file so we have a manifest file and there is a task, and then it can continue to collect those tasks. 
+
+Speaker  11:11:50
+So this is pretty good. So here it says we passed the smoke test. Want me to dispatch the Doom synthesizer over the single scratch pad as a dry run? Because they run separately, right so yes, please run. 
+
+Speaker  11:12:08
+Maybe, yeah, let's let's run three more explorations and then run the synthesizer. 
+
+Speaker  11:12:20
+Ok, so we'll do that first all right, just checking in here look, it is collected those three things, armor mechanics, weapon damage, player death, and then here we have our findings and it's going to go ahead and synthesize it so we'll see what pops out of here while it's happening let's go take a look and just look at the results so here, how does armor pick up an armor class effect absorption? Doom's damage system uses a hit scan for oh, how weapons compute imply targets, cool, player death transitions, etcetera, etcetera so that stuff is continuing on here and we're waiting for the synthesis to complete and see what we get. 
+
+Speaker  11:12:55
+Ok and so it is now done so all 5 tasks are complete. It did more than three, but that's fine. And then here, unified life cycle sites, scratch pads, only 6 gaps flagged. And so we will go into here. So parent context state clean zero dooms source Reds in the conversation, all expirations happened inside the isolated sub agents. The synthesizer never touched the doom as a source. Want to peek at the synthesize dock drill into one of the flag gaps? I mean, I only is this the only file that we have The synthesize dock synthesis dooms damage pipeline forms a complete life cycle. 
+
+Speaker  11:13:38
+I mean, yes, I guess so, but like, 
+
+Speaker  11:13:45
+Oh, gaps, here we go. So pain chance probability. What is the exact pain chance probability mechanism in vulnerability? Ok, 
+
+Speaker  11:13:57
+And so here's my question is, you know, what does the I get it, but I'm just going to ask it very clearly what does the synthesis doc do for us? Like what like what is? Why do we want it? 
+
+Speaker  11:14:13
+Is the answer artifact the thing a human actually reads the per task scratch pads are raw files this is the report. So it clearly gives you 1 narrative instead of four of the scratch pads each answer a narrow sub question. The synthesis stitches them into a single end to end story. Ok, so that's the idea so is this actually useful that's the question we'll go back to the top. 
+
+Speaker  11:14:35
+So damage life cycle synthesis, damage armor, weapons and death. Oh, because now it's kind of rounding up all those together. Dooms damage pipeline forms a complete life cycle weapons of environmental hazards inflicts damaged. Ok, so do we have to like so do we ask a question for synthesis? 
+
+Speaker  11:14:57
+And if we did, what was it prompted with? 
+
+Speaker  11:15:06
+Ok, 
+
+Speaker  11:15:11
+Has its own question passed to it so the question was how does the player damage armor? How does the player damage armor, weapons and death fit together? I made it up unifying the questions across it's deliberately broader than any single scratch pad because in this is only earns its keep when it's integrating the actual prompts sent to the synthesizer agent. So here, how does how does it do this findings do not read anything under any other places. 
+
+Speaker  11:15:38
+Again, we're calling out I authored the synthesis question myself rather than coming in from you in a clear design original questions, etcetera would be that right now the spec doesn't formalize the parent child decomposition the coordinator just invents both layers. Worth tightening the spec MD if he wants us to always track back to a real user that asked. No, I don't care about that. So here again we'll just read it so dooms damage pipeline from a complete life cycle weapons or environmental hazards inflict damage which flow through a central damage handler that applies armor absorption before reducing players health. 
+
+Speaker  11:16:14
+Once health reaches zero, death is triggered. And so here we have our weapons environment system, our projectile weapons, our environmental stuff. 
+
+Speaker  11:16:25
+And so we can see all those things there armor integration damage flows, so armor sits directly inside the damage mobs player branch. And so here armor extends survival by absorbing the incoming damage key falsy duped. So here we are seeing duplicate information. Fair enough. 
+
+Speaker  11:16:49
+Contradictions all for scratch pads presents consistent mechanics. Applies armor before health. Armor types and capacities are not contradicted in other documents. Weapon damage computations are consistent with the damage entry points. Death logic consistently describes it here so I would I would think that it's oh, so none are detected oK, so pain chance, probability and vulnerability detection, boss spiders, immunity, armor bonus edge cases, megasphere interaction, corpus Q details fine. And then all our sources. 
+
+Speaker  11:17:19
+So this is excellent. Yeah, it's great. I think the only thing is that if we go back to our original implementation, I'm not sure if we implemented failed failure handling. 
+
+Speaker  11:17:33
+So I just go back here and say, did we did we implement T9 failure handling? 
+
+Speaker  11:17:45
+But you can see how this could just be generalized that doesn't have to be Doom Explorer, but it's pretty cool. So we'll give it a moment here for it to come back. 
+
+Speaker  11:17:55
+Yeah, only the happy side so what exists both the agent definitions. Whoop, whoop, whoop, whoop, whoop, whoop. I did not ask you to change anything i just jumped here. So. 
+
+Speaker  11:18:09
+With a short note to reason. Scratch pads are append only by convention, so partial work will survive what's missing parent side crash detection resume exercise, no failure injection tests. What would it take a coordinator wrapper, a startup routine that scans for stuck running failed rows 1 deliberate failed test. 
+
+Speaker  11:18:32
+Yeah, go for it. It's a big task, but let's just wrap it up here on on the seventh because I'm the reason I'm doing this is because maybe I might reuse this and and do something better with it but we will let it do that oK. And that was fastly implemented so we have here. 
+
+Speaker  11:18:53
+What was proven and then injected a running row coordinator reconciles correctly, flip to fail dispatch resume from sub agent appends the update benefits now shows a value acceptance criteria killing and restarting the parent mid task resumes without losing findings. Oh, that sounds perfect. So I mean, we can go a bit far oh, so here's the coordinator. Coordinator helper for the doom Explorer so reconcile, verify stuck. And so I'm guessing what it's doing is it's going to invoke this first verify stuck, what was built coordinator with three commands stuck, list the rows needed, dispatch, whatever. Ok, so how is the coordinator getting invoked because that's the only thing that's not really spelling it out to me like I assume it's the main runtime that's doing that. 
+
+Speaker  11:19:49
+Honestly, it isn't automatically i ran it by hand with a bash call no wiring what's actually happening right now so. 
+
+Speaker  11:19:58
+Ok, but my my issue is like, OK, but like. 
+
+Speaker  11:20:03
+Ways to actually wire it up oK, here we go so document the coordinator or put it in the clod procedure before any dispatch run the stuck. So I would say, you know, I would prefer a coordinator and I would like some clod instructions. To Claude MD to have instructions to tell it to invoke. Unless you think it should be a skill. 
+
+Speaker  11:20:33
+To invoke the coordinator. Ok, so. 
+
+Speaker  11:20:42
+I mean, I probably see a coordinator MD file, but that's what I'm kind of wondering like, but then skill is but skill I think runs if you have skills, they run in the main context they're not actually sub agents. 
+
+Speaker  11:20:55
+My take claw dot MD not a skill so skills must be explicitly invoked the coordinate well, not necessarily, because you can implicitly say that the coordinator runs needs a fire every time the parent dispatches a sub agent so a skill would only make sense for that. Yeah, but I still want a coordinator dot MD file. 
+
+Speaker  11:21:15
+See, it wasn't asking me it was just writing it. And so we'll go here we'll take a look. 
+
+Speaker  11:21:21
+This directory is an exploration orchestration doom sorry. Sorry did you did you put in the Claude MD what? 
+
+Speaker  11:21:34
+What could have been the coordinator. 
+
+Speaker  11:21:39
+Md. 
+
+Speaker  11:21:45
+And can we just have something later in the cloud MD. 
+
+Speaker  11:21:54
+To invoke it? Also, I thought skills can be invoked directly based on their descriptions. And why wouldn't we want to have a skill for direct invocation? And skills run in the main agent, the main runtime loop, right? So to me, like it still seems like we should have skill, so maybe it's not reasoning well like this this seems like this should be in the coordinator dot MD, right and then we should have a skill to invoke it that's in the project. And also we could end up extracting this up. 
+
+Speaker  11:22:37
+We'll we'll wait a moment here. So here it goes you're right on both accounts i was wrong to dismiss the skills so it also invokes based on the description, descriptions like this procedures live inside the skill it's not in the cloud MD. 
+
+Speaker  11:22:53
+Fair enough we can do that as well. I dumped the whole procedure in there should have been a light pointer. So we'll go ahead and take a look at what it's done and we'll go into here. Did it get rid of this file exploration orchestrator over at the Doom source design in spec when the coordinator exploration works in this directory, use the doom coordinator. Never read or grab the doom source. We don't really need this line as the skills should be able to do it. But here we have an example you're a coordinator for the doom code base. Never do this. And so now we can do, say, Doom Coordinator. It's really exploration it's a terrible name that they have here. 
+
+Speaker  11:23:34
+I'm just going to cancel out of this and try this again. Doom Coordinator, I want to know how level difficulty, effects, gameplay i've. 
+
+Speaker  11:23:49
+Used 100 % of my session. Well, I guess we'll never know if that works, but we reached our little end here, so that's perfectly fine. Technically, I have, what do you call it credits so it's not a big deal, but I thought that was really funny that we made it right there to the end. Ok, But I think we built something really, really good there i think I would have probably packaged this into like, do go further and package this into a separate course. 
+
+Speaker  11:24:14
+But anyway, I hope you enjoyed that Chow chow. 
+
+Speaker  11:24:21
+Hey, this is Andrew in this video, I just want to show you how batch processing works and it's not that complicated we're going to make a new folder, call it batch processing and we are going to copy, I guess our maybe not our retry, but our force structure, Jason Outut and we'll go ahead and copy this and we're going to go into our batch processing and make a new main file. I don't want to run this because batch processing isn't something that will happen instantly. I think it takes time for it to come back because it yeah, it can take up to 24 hours to process with no guaranteed SLA. So I'm not a huge fan of trying to run that and I think for the exam just want you to know that exists and you can save money with it. 
+
+Speaker  11:24:59
+Let's take a look at what we could get as our output code so let's say you know, can you, can you change this to utilize batch processing for Anthropic so we get savings? What is the key thing we need to consider? Like how does it know where the output goes oK, I think what it does is it probably has like an endpoint where it outputs that generation and you have to hit it that's probably what it's going to do. 
+
+Speaker  11:25:29
+When I'm thinking about open AI, we'll go ahead, we'll just say yes and we'll see what it comes back with and we'll just take a look here i don't think I'm going to run it because I just want to see what it looks like, but I don't want to run something that I have to check. Maybe I'll run it, but maybe we just won't see the results oK, OK, let's take a look and see what changes so here we have a custom ID on each request and submitting and then when you call batch results, every results comes back as a custom ID, OK? And then when you batch, if I forget, you can't do interactive round trips. 
+
+Speaker  11:26:01
+So instead of using tool use, it's going to force a single tool call and the tool input is going to block, OK, And then you just extract it directly and then you were saving some money so let's take a look. Just close this out, make sure we have the latest code and see what this looks like. Let's go all the way to the top, OK? And so here we have a couple tickets. We still have our tool and our required information, and here it's going to input that information. And so we still have tool choice, which is fine. 
+
+Speaker  11:26:38
+Let's say I had to change something with that. 
+
+Speaker  11:26:42
+All the way down here. Instead of tool choice, any forces a single tool call. Oh, instead tool choice, any forces a single tool called oK. I mean, like we were already, I think we were already doing that, so that's fine. And so we'll go here and do we have a loop we don't really have a loop, do we so we have batch create those that we have now batch create, OK? And it's going to loop and then retrieve that information. And then it'll tell us when it succeeded. 
+
+Speaker  11:27:16
+Ok, so I don't know, I guess I'll run it i'm like, I'm not really sure what to expect there, but I was thinking there'd be like a link or something and like the payload would be somewhere else maybe I just don't understand. But we'll run and we'll find out together. 
+
+Speaker  11:27:30
+So here it's sending those out, creating that batch process, and now it's processing it oK, so maybe this stuff will literally hang until then. 
+
+Speaker  11:27:43
+Oh, wow oK, so really we're basically waiting here until later. 
+
+Speaker  11:27:53
+So I guess my thought is like the problem with this, like this is the problem with this approach, right? So I'd say, you know, 
+
+Speaker  11:28:02
+For batch processing, the user has to wait is there is there a way we can make it so we can run it and then just check on it. 
+
+Speaker  11:28:17
+Ourselves. 
+
+Speaker  11:28:21
+At another time? You know, if they're, if they're, you know, because I think to me that's going to be a better result because maybe you don't care and just come back and you check. But like having to wait there would take forever. So we'll just hang out here for a second, see what it does. All right, we are back and so now we have a few options so we have submit, check and run. 
+
+Speaker  11:28:42
+Let's take a look at what has changed so we have submit, check and run, run and wait so here it is creating a state file, all right? And then in the check here, it's loading that state file oK, so let's go ahead and give this a try so we have submit, check and run, right so we'll go here and we'll say submit. 
+
+Speaker  11:29:08
+So here it says submitted to the batch far as the batch, saves the batch ID to the batch state file so we'll give this a refresh here. There we go so we have that there, original blocking behavior, OK that's if we want to do that there and so now whenever we want to check it, we can just go and check it. 
+
+Speaker  11:29:28
+And it's showing if it's succeeded or not and let's go take a look at how that check works. And so it's calling that retrieve, OK and so it is hitting an API endpoint and we're just using an ID. And so that's batch processing i think it's pretty straightforward. I would expect we just get a result back and we process it but yeah, if you don't need things right away, apparently extremely, extremely good savings, OK. 
+
+Speaker  11:29:55
+Let's take a look here at MCP Discovery so this is when you configure multiple MCP servers and all their tools are discovered and loaded at the connection time. And so the agent will treat it like a flat list with no awareness of which server comes from where. Now this is not what the code would look like if you're using Anthropic or the Agent SDK this is just kind of a pseudo code if you will but the idea is that in your tools or somewhere here, you're going to specify MCP servers and it's going to end up loading all of the tool uses, OK and you can see where this could run into an issue because now you have a bunch of different tools here and so that is 1 consideration that we have to consider but what we'll do is just go ahead and just make sure we know how to implement this. 
+
+Speaker  11:30:41
+But there you go. 
+
+Speaker  11:30:46
+All right, folks, this is for MCP Discovery i'm having a hard time showing a good example here because this last one seems to be failing quite a bit and I made it over here. But basically I just said, hey, can you go ahead and show me discovery with a few examples? But here you can see within the cloud agent options, we have MCP servers. We're specifying those locations we have to install them individually. This one will not work. But the idea is that all these will just be available to the agent, and all I just really want to show you is just that there's this MCP server option, OK and then all those tools will be then accessible. 
+
+Speaker  11:31:22
+I actually did install them here locally, so Claude should be aware of it if we go to MCP, if we go over to here, it should show them here no, it doesn't, though i think maybe that's because Claude has a very different specific line. But the point is, is that we have installed them and we can use them here i just don't have a complex use case and we got enough video, so I just wanted to show you the code oK. 
+
+Speaker  11:31:51
+Ok, so with an MCP there is more than just tools, there's also resources and prompts nobody uses prompt templates as they're not useful, but resources are and they don't get talked about enough and you definitely need to know them for the exam. So tools we keep seeing, which is basically functions that are called often they are used to handle a domain of an API so there might be individual functions, but maybe you have users, API endpoints and here it is kind of acting as a buffer between that domain but here it's saying, you know what tables exist in the database. And so the tool will call a function, right, which will make a database, call an SQL query and return back those results. 
+
+Speaker  11:32:35
+Where let's say you have a database or you have an API endpoint an API endpoint is just going to return back data, right and so it might seem very heavy to have to do tool call for very basic API calls. And so basically resources has this schema that maps what the data looks like from your your data source. And the idea is that it'll just read it directly and so you'll get faster results. There will be less back and forth. And so resources are definitely something that we want to utilize oK, 
+
+Speaker  11:33:12
+All right, let's see if we can show how MCP resources and tools work so I'm going to make a new one, say MCP resources versus tools, OK and I'm going to go into our hello world just so it has a reference of what it should do yeah, that one's fine. And we'll go over to our new file here, main dot PY. 
+
+Speaker  11:33:41
+I don't think I copied it, so we'll try that one more time and paste that on in there oK so now I'm going to go here. I want to show off how show off tools versus resources for MCP using the Agent SDK framework. It should load a custom MCP server with that can read a local SQLite three database. In this folder. 
+
+Speaker  11:34:23
+Called to do's It should have tool used to create, update, edit, destroy to do's It should have a MCP resource to list out to do's OK, so we'll go ahead and do that and see if it will be able do that because I gave it a little bit much more than I was expecting, but we'll see if that helps. Ok, all right, let's take a look and see what we have for our code. 
+
+Speaker  11:34:58
+Ok, so. 
+
+Speaker  11:35:05
+Scroll on down. 
+
+Speaker  11:35:10
+What I was expecting we have the TODO server here. Well, I guess we'd have to have some kind of server. Do we need a server? Yeah, yeah, this is the MCP server so this is the actual MCP server. And here it can connect to the database list tools, write out so tool, tool, tool resource and so see this resource and it's just making a call here as well, but it's following this schema format. 
+
+Speaker  11:35:35
+So I mean, it's still basically like a function it's calling it, but I guess the differences that it only expects read only information. I always thought that it was a direct call. I never knew it was a function inside of this because I don't really implement resources i usually just implement tools. But I know that this is a schema syntax we say like resource schema MCP i absolutely know there's a schema for that we'll go to the model context protocol website and see what we have. So somewhere here. 
+
+Speaker  11:36:05
+Kind of describe it not really. Yeah, I don't know but anyway, it looks like something like this oK, But we'll go back over to this one and see if we can make sense of what it's doing so here. 
+
+Speaker  11:36:23
+We can see we have our server script oK, 
+
+Speaker  11:36:28
+Convert MCP tool list into anthropic tool format i'm not sure why we should have to do that, but OK like you'd think it would already have done that. Here we're running the agent and we're grabbing the tools. 
+
+Speaker  11:36:43
+I don't know why it's using anthropic directly it's using async anthropic, 
+
+Speaker  11:36:54
+So it's fine but like could we, can you use Agent SDK? Like I don't understand why it's using like why why are you not using? Why are using a Tropic SDK? 
+
+Speaker  11:37:17
+Now there could be a reason for that, but we'll see why this is just son it's reasoning if we went to Opus, I think we'd have less of these issues. But again, I'm trying to make this cost effective. So yes, I, I don't know why it wants to read the whole darn thing like it should know what agent SDK is. Look, stop, stop, stop looking around. Why did you not use Agent SDK, Anthropics Agent SDK? 
+
+Speaker  11:37:52
+Let's see if it will answer us here. And while that's going here, 
+
+Speaker  11:37:59
+I'll just ask, you know, can we load in a custom MPC server into Agent Anthropics Agent SDK? I'm just asking this to Claude here in the chat you don't see me doing this, but I just want to see what it's doing here because sometimes the actual Claude chat seems to be a little bit more on point, maybe because of what tools it has available to us. But we will see here in a moment. Ok, so this thing is still trying really hard and if we go over to here, look inline MCP. 
+
+Speaker  11:38:42
+So we have this query list files of prompts await. 
+
+Speaker  11:38:50
+Ok and so here what I'm going to do is grab stuff like this, OK? Like why? Like look here, OK, because it's trying to get reference information. And so maybe it just doesn't understand, right? 
+
+Speaker  11:39:09
+So we'll give it a moment here to fix it, and hopefully that gives it context. All right, So now let's see if we actually got better code output here and so I'm just going to close this out and reopen it up. Ok. And so let's take a look at what we have so here we have Agent SDK, we're loading the server, we have the prompt to demonstrate the difference. Do the following steps. So read the resource, use the tool, updated, read the resource, use the tool, etcetera, going in that order. And here it is and so you can see this is way, way better i don't know, it was zoomed before, but that was crazy and so here we have allowed tools. 
+
+Speaker  11:39:51
+And if we go up to here. 
+
+Speaker  11:39:55
+Mcp tools, so we're allowing any stuff here i'm just trying to find where we are setting the MCP server. 
+
+Speaker  11:40:08
+Todo server server script args and so we're passing in here so oh, here it is, MCP server todos. And then this is the argument to start it up. Ok, so that looks pretty good. We'll go ahead and stop this. Yeah, it really just comes down to like, you know, is what you're looking at, correct, right because you can see it can generate out variations of code that might work, but that doesn't mean it's good code. 
+
+Speaker  11:40:34
+And so we're just watching it and see if it reads so here it's listing it out and then it will go ahead and create some and then it's going to do an update, it's going to do another read or it's choosing resource now it's deleting. Ok, but we can clearly see, you know, they're both just functions. But the idea is that these are just read only actions, right? Or they should be obviously you can put anything you want in here. But the other part is that you're just able to follow the syntax. 
+
+Speaker  11:41:07
+Could you also emit very specific fields i don't know i don't do enough with resource to know. But anyway, hopefully that gives you a distinction and treat one as read only, one as as like actions, OK. 
+
+Speaker  11:41:24
+All right, so another way we can use Claude code is with GitHub Actions it allows us to trigger Claude code based on workflows to perform tasks in our repo. So here's an example of the Claude bot and it is doing stuff and checking stuff off and actually performing work just like a developer in your team. So you can create instant PR creations, you can automate code implementations, follow your coding standards, do simple setup, and it's secure by default. I think that description kind of under sells it but the way it works is that you are setting up basically a claw dot yaml file in your workflow. 
+
+Speaker  11:41:58
+And if you notice here, you can tell it where to trigger so maybe you when you create a new comment or if you create a new comment in a pull request or you open a new issue or sign it or submit it, obviously adjust this however you want, OK and then if you notice here, they have a clawed code action and so basically it'll just do whatever it needs to do to get the job done. And the only downside to this, I like the workflow, but it's just slow because you're not just waiting for Claude to execute, but for the GitHub action to execute and has to spin up that environment every time. 
+
+Speaker  11:42:30
+So I would just say that the GitHub actions are slow and if it was faster, this would probably be my preferred method of working because if you move up in your career as a developer, you end up managing developers and writing issues and, and seeing it through that lens and that's the way I would probably like to work but again, it's too slow. And so I would not drive it that way in, in reality but it is cool to see that and if you are on the management side, then at least if it's in there, maybe use it to review things or assist you, stuff like that. 
+
+Speaker  11:43:01
+Ok, 
+
+Speaker  11:43:07
+All right so apparently there are integrations with GitHub Actions and specifically using Claude in our PRS or our issues so that's kind of interesting. It'd be cool to make an issue and then it executed out so I'm not exactly sure if that's what it's talking about, but we'll go down here we'll take a look and see how we integrate it so the easiest way to set up this is through Claude code and just the terminal just open Claude, run, install GitHub app. You must be a repo install the GitHub app and app secrets is that going to install the GitHub app? Because I don't want the GitHub app. 
+
+Speaker  11:43:44
+Ok, 
+
+Speaker  11:43:47
+Install the GitHub or the clawed GitHub app. Oh, so I think what it's saying is like the actual GitHub like GitHub app, not like the desktop application. So what we'll do is we'll go over to GitHub and I believe that this is my developer account and we'll make our way over to the examples repo that we have here the clog code example, assuming the code is saved there yeah and so if we go to settings and we go to apps, right is it installed it already is installed so when we set this up earlier, we already configured it or we we set it up i'm just going to see if there's any additional options there's not so it is ready to go. 
+
+Speaker  11:44:24
+And so in in a sense, I think we should be able to make issues and do that at sign and be able to utilize it right away. So what I'm looking for here is that information, 
+
+Speaker  11:44:37
+A. 
+
+Speaker  11:44:41
+Lot of talk, just tell me how to do it so. 
+
+Speaker  11:44:46
+Here. 
+
+Speaker  11:44:50
+We have a bunch of stuff and then we have actions. Give me a second oK, one thing I noticed is that it needs these particular permissions, but I'm pretty sure we just gave it a carte blank like all permissions to the that individual repo. So I don't think that'll be an issue. 
+
+Speaker  11:45:08
+Ok, but it's not really talking about how to use it Like yes, of course there are these actions here like if you tagged it review this for PR for security issues i was thinking that like, if we do the at sign Claude, then it would go in like in issues and go do something here because with a simple at sign mentioned in in APR or issue yes, clock and analyze your code and create pull requests, implement fixes and bugs. 
+
+Speaker  11:45:35
+All right, And then I mean, these are just actions so I'm assuming that that's just we wanted to do something. So like if there was a push, then it would trigger that oK, that makes sense so what we'll do is we'll go over to here, we'll make a new issue and we'll just say create individual product page. I don't know if the dimension has to be here in the description. So I'm going to try over here 1st and we'll just say Claude. So I need implement the following page. So create a product HTML page. This is the page that describes an individual product for purchase. 
+
+Speaker  11:46:20
+This is a mock page, so all products will link to this page. And you know what i'm going to go ahead and make check boxes and see if it'll actually check boxes off i'm curious if it would actually do that. 
+
+Speaker  11:46:38
+Create for now a mock page for all possible products. 
+
+Speaker  11:46:46
+Point all products links to this single product HTML page. Ok, so there we go and I haven't mentioned Claude down here i've added it up there. It'd be interesting if you could assign it to Claude so that that would be smart. We'll go ahead and we'll create it. We'll see what happens. And so I'm curious like if we go to get up actions, is there any trigger? There's nothing happening here. So I thought something would happen. Ok, I'm going to go ahead here and say, you know, Claude, 
+
+Speaker  11:47:22
+Are you there? I'd be like curious if it like it would pop up and start talking. We have code with agent mode. That's probably for GitHub, 
+
+Speaker  11:47:34
+Right and so. 
+
+Speaker  11:47:37
+Claude did that. Ok, so we'll go here so, Claude, 
+
+Speaker  11:47:44
+Can you implement this this issue? Oh my goodness, I, I really hope this is what it's like just working with a with a bot and how like being like are you doing properly? Like this is actually probably how I would want to work with this here oK, so it keeps looking at at my stuff here. 
+
+Speaker  11:48:05
+Claude, are you able to comment back Ifs? 
+
+Speaker  11:48:12
+If so, indicate with an emoji like like one or zero or like or yes or no or something. 
+
+Speaker  11:48:24
+Or if you can write a comment, just write a comment like are you OK blink yes or no, right? And so I'm curious. It just keeps doing the same thing so that's kind of not helpful whatsoever. And so I thought that it would go off to the races there because that's what it's describing up here we go up the top here and it's saying right, I'm not crazy. It says with a simple Claude mention in your PR issue, Claude can analyze your code and create pull requests all while following your project standards. 
+
+Speaker  11:48:53
+Well, I would love that, but it's not doing it so just give me a moment and seeing what the issue is oK, so I mean there are additional steps here and maybe this stuff isn't happening, but I would have thought because we had created that repo through Claude web that it would already have that but maybe what we should do is open up this repository and yeah, we still have this environment, so I'm going to reopen up this in the browser i'm going to see if we can just go ahead and run that install script. 
+
+Speaker  11:49:21
+I don't think we have to do it, OK i think that because we did it through Claude Web, unless we did it through here and this is actually how we did it i just don't remember. 
+
+Speaker  11:49:31
+But we'll get Claude working through GitHub Code Spaces, and then we'll try to run this and maybe it's just lacking permissions or something. 
+
+Speaker  11:49:43
+Ok, so just waiting a little bit more time here. And. 
+
+Speaker  11:49:51
+Ok, and so I'm just going to go back a directory i'm going to say Claude auth status. Is Claude even installed no, it is not. So install Claude code. 
+
+Speaker  11:50:08
+And we'll go down to here and we're going to grab this one here. 
+
+Speaker  11:50:21
+And we'll go ahead and do this. 
+
+Speaker  11:50:31
+Ok, so we're just waiting for this to build shouldn't take too long, but it'll take a little bit of time. Ok so yeah, it's now installed and so we'll go ahead and we'll do our cloth auth login i can't remember if we had issues. 
+
+Speaker  11:50:46
+Logging in with this so I think what I'll do just to make my life easier, assuming that the extension is over here, I'm going to grab Claude Code from here, if it even lets me. Oh, they do OK, great. I thought they might not have it because, you know, Microsoft might want to keep them out but we can see Claude in here and I thought I saw KIRO, but don't really like KIRO sorry folks i'm not even going to look at it to see if I like it because I already know I don't like it. 
+
+Speaker  11:51:14
+But anyway, so now Claude code is here and so I want to get this authenticated and I'm just going the roundabout way to do to do this so it'll make it a lot easier. We'll go here, we'll say authorize because then if there is, we can paste, paste the code in here, right? And we have the callback code up here, so I can just grab it out of here we got to be creative folks. We'll say continue and. 
+
+Speaker  11:51:43
+That should get us authenticated it's not showing us anything, but I'm going to go down here and say status and see if we're logged in. We are not logged in. So what I'll do instead, one second here, we'll go into Claude code examples. I guess we didn't have to use it this way i kind of forgot that we can just type in Claude like this. And yes, dark mode is fine. And we'll do that and we will say open, we'll try this again. We'll say authorize i think it knows to give us the code to copy paste it here. 
+
+Speaker  11:52:13
+It didn't, but we'll go ahead and grab this call back here. 
+
+Speaker  11:52:18
+We'll paste it and we'll hit enter. 
+
+Speaker  11:52:22
+I copied the whole darn thing we'll hit enter to retry. So maybe that was an older link, I don't know, Say open, close the old one just so we don't get mixed up authorize. There we go that's looking a lot more normal oK, and so then we'll go ahead and paste it in we'll hit enter and now we are logged in so we are good we'll hit enter again. Yeah, yes, I trust this folder. 
+
+Speaker  11:52:47
+And So what we want to do here is get set up GitHub so or GitHub Actions installed the GitHub Actions app, it should already be installed, but maybe it will give it additional permissions or whatever else we need. So it's checking GitHub CLI, use the current one, yes. And so it's going over to here. Ok, I thought I would do a little bit more so it gets already installed. 
+
+Speaker  11:53:11
+To have read and write to access code, read and write access to actions and metadata. I guess we could have just checked that the entire time we didn't really have to go through that whole install process, but we'll go down here what I'm looking for, not remote code, is we're looking for the permissions do we have the correct permissions, 
+
+Speaker  11:53:31
+Permissions, permissions, permissions where is it? Read and write, read and write, read and write. So we go back over to here, we confirm, read and write code discussions, issues so yes, it has that access. So there should be nothing preventing it right from being able to respond to this stuff. All right, so let me figure out the next step oK, OK, So it is suggesting the Anthropic API key and also this part here, though because we're using a subscription, I would assume that we wouldn't need an API key. So maybe we do copy the workflow file for Claude YAML so maybe that's what we're missing is this. 
+
+Speaker  11:54:11
+Oh, look, it responds issues. Ok, so we definitely need this so what we'll do is we'll copy this file here we'll go back over since we already have GitHub actions open or sorry, this this here, I'm just going to go ahead and make the folder. I believe it is not a Claude directory, but for ours we need to make the actions folder i always forget what it is GitHub Actions workflow folder name which is it dot GitHub for? Got got dot GitHub Ford slash workflow so we'll go back over to here. 
+
+Speaker  11:54:48
+We'll make make a new folder dot GitHub. To think as I made a whole course, I'd remember this stuff and I use it all the time nope, doesn't work that way. Ok, we'll go Claude YAML i don't think it matters if it's YML or YML. And so we'll go here, we'll take a look. Since we, you know, care about what our code is doing, we're carefully looking at it. And so you can see it's responding to those things if we didn't want them, we could remove them out of there, Customize the trigger phase for Claude. 
+
+Speaker  11:55:21
+Ok, so it's already defaulted to Claude, so we could probably change the name, change the name of the bot. So that looks fine we'll go ahead, say add Claude. The only other thing that we're missing is that key, the API key. So we'll go over to here and supposedly we need, let me go back and stuff we need an actual key. So I'll go over to here and into my settings. I'm looking for tokens. I mean, that feels like for like coding stuff like I mean like literally directly working on the API but we'll go over here maybe maybe they have one for here. Oh, cool we can see the history of authorization, authorization use. 
+
+Speaker  11:56:04
+Ok, so I'm just going to, I just want to make AI didn't know that was here so I'm just saying authorization token usage, right because I thought that was kind of interesting and I'm just taking a screenshot this is just for the course for us later here oK, but anyway, so they're saying we need that API token, but wouldn't that be coming on the code side and then we'd have to pay for that and it would be part of our subscription. So maybe that's something that I didn't consider, which is fine we have to put 10 bucks on it i can do that if I can frickin find the page. 
+
+Speaker  11:56:35
+I really dislike their their links here it gets really confusing. So not that page. 
+
+Speaker  11:56:43
+So here it says Anthropic API key. 
+
+Speaker  11:56:48
+So that makes me think that you can't use it with the subscription. Ok, which is fine because that's an opportunity for us to grab that there so. 
+
+Speaker  11:57:01
+I guess we could try to find that. I've done it before usage, I just don't remember where the tokens are account. 
+
+Speaker  11:57:13
+General. 
+
+Speaker  11:57:20
+Ok, So what we'll do is we'll go Claude, 
+
+Speaker  11:57:25
+It's just like Workbench or something because that's the platform, right so if we go over to here, the developer platform, this will have the API token in it, right so this is separate from your subscription and knocks, you have to put some money on here the only thing I don't like is that if you don't use it by the end of the year, you'll lose your your money, which is I don't like, but begin buying with only 5 credits. That sounds good to me because this is where the API keys are, right so we'll go ahead, we'll try this and I'm just going to quickly load this up just give me a moment, OK i'm just buying 5 credits here i didn't have to enter my credit card it's already entered in. 
+
+Speaker  11:58:01
+And so I just hit that buy button and I just had five and I'm now I'm just verifying so hopefully it works. I don't know if I have a new company credit card, so I might have to update it, but we'll see in just a moment oK, there we go i got a 5$ balance, so we'll go over API tokens here. And obviously you can see I I was working with Japanese grammar there. That's been a while so I'm just going to disable the key for now. I'm going to create a new key and this will just be for code or cloud code, 
+
+Speaker  11:58:30
+And it'll be in the default workspace. And you didn't see that i'll have to actually delete that oK, so I'll copy that key there. I don't know why they do that that's ridiculous but now you've seen it, I'm I'm not going to edit it out right now i'll, I'll delete the key very promptly here after this video. So what we're going to do here is go to our repository secrets i'm in the repository and we have secrets here. Technically, it is for actions to use repository secrets that's where they said to put it i'm going to paste that in and I'm going to go back over to here. And what we're looking for. 
+
+Speaker  11:59:13
+Is. 
+
+Speaker  11:59:19
+Where is it? I'm looking for it. 
+
+Speaker  11:59:24
+This, this is what I want so we'll go back over to here and we'll grab this here and we'll add that key, that secret. And so now we have that repository key there. And so now in theory, we have all three things set up and so I'm going to go back over to here and say. 
+
+Speaker  11:59:43
+These are a little bit silly so I'm going to go ahead and delete these. Delete, delete, delete so when is it going to trigger on that's the question. So go back to our code and we'll take a look here. So on an issue created, created, open, assigned, submitted. So this issue would have to be created. Ok. I'm just going to go ahead here and. 
+
+Speaker  12:00:11
+Can we assign this to Claude now i just want I keep on expecting to see Claude over there. Does it also trigger on comment issue comment? Yes, yes, yes. So can Claude can you implement this ticket please? I assume we would do feature branching, but we'll find out. 
+
+Speaker  12:00:36
+There we go. And so the main thing is like, did this get triggered? And it has OK, and we'll go into here. And so it's going right. I'm not sure how we would go about debugging it i guess here post run Claude. 
+
+Speaker  12:00:53
+So it's actually installing Claude code and that's probably why I need the API token. And so I assume it can't use subscription, but I would think that there 'd be a way to configure it to use subscription. But maybe because it uses that auth mode that just doesn't work. I'm not sure. 
+
+Speaker  12:01:12
+But anyway, it's going so I'm. 
+
+Speaker  12:01:19
+Just trying to figure out like what we expect to see in there it's using Claude Sonnet 4 6. I would imagine that if we needed to adjust it, we could probably go into that GitHub Actions file and like say, hey, use this model and stuff like that yeah, we can right here. So how many turns, what kind of model, additional system prompt things that we can tweak it so that looks good in terms of what it can do. 
+
+Speaker  12:01:41
+I would assume that as it's executing those actions, we would see them right here because let's say run Claude code, right? 
+
+Speaker  12:01:50
+So I'm just going to pause it here and because we're not seeing much and we're back in just a moment oK, All right, let's see what the results are so down below, we can see OK, multiple runs, and that's pretty clear i was hoping to like clearly see the commands that are running, but I'm not sure if I can really tell from here what's going on. We'll go down complete job usage would be kind of interesting we just have 3 point. I thought maybe it'd be like tokens you use, but I guess not. Workflow file, It's just the file we're in let's go back over to issues and we'll take a look here. And well, I guess I made this so it wouldn't be able to check boxes off it would be me that would check them, eh? So implement implementation complete. 
+
+Speaker  12:02:42
+So gather contact oops, I didn't mean to check box that off i hope that wouldn't trigger it more than once let's see but that actually triggered it again that 'd be really annoying. 
+
+Speaker  12:02:54
+No, it did not oK, so go back over to here. 
+
+Speaker  12:02:59
+Created bath box from our product dot HTML page uses the URLs, never asked to do that contains mock for all 6 pages. Ok and so I could kind of see that as a process to like I might want to do stuff, but it didn't make a pull request. Ok, So what I would have preferred is that if it followed that the branching strategy also, I don't see it here, So we'll go back for a second. Yeah so we have a separate, separate one here do we have a pull request? 
+
+Speaker  12:03:31
+Ok, where's the pull request? 
+
+Speaker  12:03:39
+I'm just going to see if it attempts to go make one. The annoying part is that it probably will have to trigger every time this GitHub action, and that's a little bit slow. Yeah, it's triggering right now because. 
+
+Speaker  12:03:53
+You don't want to wait like 3 minutes every time you reply to it. 
+
+Speaker  12:03:59
+But I could see how we could work around that a bit. 
+
+Speaker  12:04:06
+So again, we'll just wait a few minutes and give it some time oK, All right so I thought that was executing, but maybe it stopped i just don't recognize the symbol here. I thought maybe that would indicate something maybe it did reply let me go back over to here and I'm not here, Not here issues. We'll go back here. Oh, I didn't tell it to sorry claude, where's the pull request? 
+
+Speaker  12:04:38
+Can you make one, please? 
+
+Speaker  12:04:46
+And so we'll go ahead and let that do there. I guess I'd probably also need to know where to where to make a pull request into. And So what I'm going to do just quickly here, probably it will move faster than I will, but I'm going to create a new branch called Maine because there should be one. There just isn't. And then I'm going to go over to settings i'm trying to do this as quick as I can. 
+
+Speaker  12:05:08
+And. 
+
+Speaker  12:05:14
+Yeah, of course, that's ridiculous, having it as that we'll go to Maine, OK. And that's what it really should be. Ok. And you know, we'll see how that works i don't know if it if it if it doesn't have a main branch, if it'll mess up. And also I was kind of doing that in the middle of stuff so we'll see what happens. So I guess these ones are like, oh, a comment was created. Oh, they created a comment here so let's go back over to issues. 
+
+Speaker  12:05:41
+Oh, OK so this is how we're going to monitor it that's interesting, 
+
+Speaker  12:05:49
+Interesting, interesting. 
+
+Speaker  12:06:00
+Ok. 
+
+Speaker  12:06:06
+But I'm sure there's other stuffs that we could tell it to do, which I we're just obviously not doing right now, 
+
+Speaker  12:06:12
+But we will give it a moment here. 
+
+Speaker  12:06:16
+To figure this stuff out. Yeah, because we run the job it's the only thing is like, I can't see what it's doing. You know, that's the only thing I don't particularly like but I guess there's a lot of options in terms of the ways we can work here. 
+
+Speaker  12:06:30
+Anyway, we'll we'll hang out here for a bit oK, There we go so our pull request, according to this has been created oh, we just got the updated information. 
+
+Speaker  12:06:42
+It's the question is like, would it known to send that pull request over to, I don't see it here, actually would send it over to the correct location so I'm not sure if it's still running. It is finished. 
+
+Speaker  12:06:59
+Create pull request. 
+
+Speaker  12:07:08
+Where's the pull request? 
+
+Speaker  12:07:18
+Ok, so I would have thought, describe what you need Claude to do i'm just checking here. Claude creates a complete PR with all necessary changes, so it should be able to create APR so I'm going to go back over to here. 
+
+Speaker  12:07:32
+You know you, Claude, you didn't. 
+
+Speaker  12:07:39
+Please create APR. Can you make the? 
+
+Speaker  12:07:51
+Also notice here that it doesn't have a branch associated with it. 
+
+Speaker  12:07:58
+Also, this issue, the branch isn't associated with it, 
+
+Speaker  12:08:07
+Right because that's what I would like it to do. And so, you know, if, if we were spending a lot more time with this, I would spend more time trying to force it through a very specific workflow just so that I could come here and and see things the way I expect to see them. But we'll give it another chance here and see what happens. And it is running the job, so it is working so there we go so I'll analyze and get back to you. It's just like we can't really have a conversation with it, so it makes it kind of hard to, you know, whatever, whatever. 
+
+Speaker  12:08:41
+So I don't know if this would be a really good workflow, but I mean, it is an option for us, but we'll give it a moment. Also, one thing I noticed is like the order so like this feels like this should have happened 1st and then afterwards so it's interesting that it's kind of matching based on the order that I said as opposed to what would be most optimal but I guess it's not a big deal, but I would would probably like to see that done 1st. And so here we can see it's reasoning so I found the branch and there's been no changes the actual implementation is in the product create APR from the branch that has been implemented. 
+
+Speaker  12:09:15
+Github doesn't have automatic association with existing branches you can link them from the issue sidebar. I guess maybe they might might mean to say like through the API, like I thought maybe through an API call they'd be able to do it. 
+
+Speaker  12:09:29
+And do we still, do we get APR? No so there's obviously some trick to this maybe it's because I'm asking it to go to main, but before that was less of an issue but I'm going to go ahead here i'm just going to do it myself. And. 
+
+Speaker  12:09:45
+I guess there's two, I guess they created 2 separate branches for the exact same thing. 
+
+Speaker  12:09:52
+But anyway, I'm going to merge each of these individually. 
+
+Speaker  12:09:58
+New pull request, and I'll do this one here. 
+
+Speaker  12:10:07
+Oh, maybe that's their initial one. Ok, and so we'll hold on here. No, no, no, that's the wrong 1 so we'll go to this one here. 
+
+Speaker  12:10:21
+Uh huh. I can't tell the order because I would have thought there's code in here, right? 
+
+Speaker  12:10:29
+Oh, maybe main oK, so main's already up to date i see why because it's just the order that I created it in that's fine. So we'll go ahead and we'll create that we'll say create the pull request, and I just want to see the new page working, to be honest it's all and we'll confirm and merge, and then we'll go back up to. 
+
+Speaker  12:10:49
+This here. We'll make another pull request. Oh, I don't know which one we just merged. 
+
+Speaker  12:11:01
+Does it say I don't like the issue names this makes it really hard 1956 So we'll go over to this. We'll create another one. We'll do this one here. So that would be something I would want to know it's like OK, can I make more human readable names? 
+
+Speaker  12:11:21
+And so we have conflicts i think that they're identical so I don't think there's any difference to those. Let's go back over to here and I want to go my code space code space a stop, but we'll start that back up but what I'm going to want to do here is I just want to go and pull and check and see what the result is i'm sure it's fine, but I just want to see it for my own my own interest. 
+
+Speaker  12:11:51
+Mm hmm, 
+
+Speaker  12:11:59
+Get check out main. 
+
+Speaker  12:12:02
+Good status. Ok, so that's not going to work. No, it should git pull, git check out main. 
+
+Speaker  12:12:16
+Git pull. 
+
+Speaker  12:12:20
+And we have a product page now. 
+
+Speaker  12:12:25
+I don't have my products page, so that other one must have been it, right? 
+
+Speaker  12:12:34
+We'll just resolve the conflicts, I guess. 
+
+Speaker  12:12:39
+So it's like, do you want the same one or the same one is there even a difference between these two no one's gift set or gift set. I don't think it matters to be honest, because it's all just example stuff. I just didn't feel like resolving conflicts that's why didn't do that there. I don't know which is which here. 
+
+Speaker  12:13:10
+Oh, this makes it really hard to know. 
+
+Speaker  12:13:16
+We'll just accept those changes because I like probably both are supposed to be there, but I just really can't tell. So we'll go ahead and do this. You can already see like working with this you if you'd have to break up your code into a lot of small files. Otherwise it's going to be really hard to tell what's going on. 
+
+Speaker  12:13:36
+And yeah, so doesn't necessarily make anything easier so we'll mark resolved, mark resolved, we'll commit merge, we'll go ahead over here and merge, pull request, merge pull request, 
+
+Speaker  12:13:55
+And we'll do a GET pull here. So that's now updated. Http server OK. We'll go over to here. I want to open the browser. Let's take a look at what we have. Some things might be broken because we really didn't take the time to make sure these requests were good. Looks more or less the same. I think these would be clickable, but no. And so this is that individual order page it's fine it's not obviously good maybe there's an error because of the merges we did. 
+
+Speaker  12:14:30
+There is see. So when I merged it, something messed up i'm sure we would have had a nicer page than that, but the point is that that's that so that's totally fine. I'm going to go ahead here and close out this GitHub code spaces. And I mean, that's pretty much it so I think we learned what we could there and obviously, you know, you have to really think about your workflow and work through a sample project and iron out the little kinks in that but there you go oK, 
+
+Speaker  12:15:01
+Hey, this is Andrew in this video we are going to be building AI guess a support bot because we want to take a look at how to handle escalation as that is something that the exam wants us to know. And So what I'm going to do is go into our hello world, which is a great example of where we can start. And I'm going to go over and make a new folder and this will be our support agent and I will make a new file here called main dot PY i'm going to go ahead and paste in our code and I'm going to do something a little bit different we're going to make a plan ahead of time so plan dot MD because I want to design this in a particular way and I'm just looking at this off screen here to decide what it is so first, like. 
+
+Speaker  12:15:52
+Business use case. So we'll say we are building Exam Pro Training Inc. And by the way, we use real humans i can't if I even wanted to make this, Baker would never accept it. Like you don't understand, He like uninstalled his sorry, stop paying for his anthropic subscription because he likes to do everything manually so on exam pro right now, at least the time this video support is 100 % humans but let's pretend that we want to be greasy we want to have a an agent that does this we'll say Exam Pro Training Inc needs a support agent to handle requests. 
+
+Speaker  12:16:32
+And so, you know, we have to give more context so example training is a tech education, a tech education or a tech platform that has, 
+
+Speaker  12:16:46
+That has multiple self-paced tech education courses similar to OK, so we'll say that. 
+
+Speaker  12:16:59
+They need a customer support agent that will. 
+
+Speaker  12:17:10
+Resolve common issues. So we'll just define common issues so what are the common issues that we have? I would say you know refunds, changing, changing, swapping out courses, swapping out courses that are similar in price was to say bought the wrong say refunds or swapping of courses EG purchased wrong course. 
+
+Speaker  12:17:41
+One that always happens is the. 
+
+Speaker  12:17:47
+Not receiving. 
+
+Speaker  12:17:51
+Email. 
+
+Speaker  12:17:55
+Confirmation email. Confirmation email that one's really, really annoying. What else what else refund, swapping out, not receiving email? 
+
+Speaker  12:18:09
+Technical mistake or a mistake, or we'll say bug with the platform. We'll say issue or issue with a specific video, EG out or issue with specific content problems, 
+
+Speaker  12:18:32
+You know, stale, EG stale content. 
+
+Speaker  12:18:37
+Or no audio in video. So we'll say, EG you know, Quizlet button does not work, start count or yeah, yeah so we're going to say like, 
+
+Speaker  12:18:56
+Say start count is incorrect. And maybe like business development opportunity, 
+
+Speaker  12:19:08
+We'll say what's the thing they call it's like where they want their data taken down because they're from Europe, European data ask for data takedown i don't know what you call that i forget what it's called GDPRGDPR request, right? And so, you know, maybe those are things that we have common, let's not say issues, let's say common requests, OK. And so the agent needs to handle the following. 
+
+Speaker  12:19:41
+What else do we need to solve for so we'll go back over to this document here. So appropriate escalation so we have customer requests for a human. Ok, so let's talk about escalation so escalation actually won't worry about this right now so we'll just say version 1. Implement an agent using Anthropics Agent SDK. Not the age, not the Anthropic Low level SDK. And create. 
+
+Speaker  12:20:26
+And create. I don't know what to say here. 
+
+Speaker  12:20:31
+Because we're not like we like they can't actually invoke and we will mock out. 
+
+Speaker  12:20:41
+Api requests EG like create a ticket, create a ticket, or issue a refund or things like that right. 
+
+Speaker  12:20:57
+As tool calls oK. 
+
+Speaker  12:21:01
+As an MPC server, we probably would have an MPC server that goes to Exam Pro endpoints, but then there are I guess that's mostly and so tool calls would live there. 
+
+Speaker  12:21:24
+Ok, so we'll do that and I yeah, I know some of the best riddance, but we'll go ahead and execute this. So we'll say support agent, we'll say Claude and I'm going to say plan, we'll say build me version 1 and we'll go ahead and let that do that. All right, so it's produced some kind of code here let's go take a look and see what we have. And so here your customer support agent for exam Pro tech tech training platform, literally just grab the prompt. 
+
+Speaker  12:21:55
+I think for me, like I would think I would have a knowledge base and tell it how to handle all of these kind of requests. We're not going to build a giant support agent there is actually interest in that i would make that a separate course. We needed this just to work just good enough for our use case so always be polite and empathetic oh, good so we're providing state here. It is using agent SDK, which is good. 
+
+Speaker  12:22:17
+It's not using our M dot so you you need to load in m. Dot you keep removing that to please for the dot env file, please refer to. I don't know like does hello world have that i feel like it does right? 
+
+Speaker  12:22:37
+I don't know why it does that. It tries to be crazy. 
+
+Speaker  12:22:42
+Oh, never did have it oh, well, there you go there you i've been complaining this entire time it's just not in the example that we're pulling from. And so I'm the problem. I'm the problem folks, you know, so I'm going to go ahead and I guess I'll just manually grab it here. Actually, I'm just going to tell it to do it. There we go. 
+
+Speaker  12:23:01
+And so it should just be able to update that there and we can continue on reading here so always be polite to hear our tools to issue a refund, swap a course, resend confirmation email, create a bug ticket, create a content issue ticket, route a business development process, GDPR request. And so here we have our tool calls for those particular things. And so we can run our support agent and have a conversation. I accidentally purchased a course with the eight of a solution architect. 
+
+Speaker  12:23:30
+Oh cool and so we have that information we don't have order numbers like that, but let's go ahead and see if it works now. It should have added in that env thing for us. So we'll go ahead and type in Python main dot PY. And here we have unexpected tool handler i'm not sure why we'd be having that problem. 
+
+Speaker  12:23:55
+I guess it just made something up. So we'll go ahead here and go back to Claude. We're using Sonnet, right we're trying to keep our costs down here if we used Opus, it probably would work, but you know let's, you know, be able to get through this course right with actually stuff oK, so let it adjust that fix that problem. Ok, so it did a lot more than what I asked it to do, but says fix the clod agent SDK and now we have a tool loop good let's go ahead and try to run this and see what happens. 
+
+Speaker  12:24:27
+Oh my goodness, this thing is just not implementing anything correct here today. 
+
+Speaker  12:24:39
+There we go. 
+
+Speaker  12:24:42
+And so here we're having a bit of back and forth here so hi, I actually purchased this course i'm happy to help you swap your course let me get the course ID. And so here I need your information however, I need specific course IDs for both to complete could you provide them? These are typically the courses etcetera, etcetera. So what I'm going to do here is I want to change this so that it's actually a loop so I'm going to go back over here, make the agent a real loop I can talk to in when I run it, when I run it, OK, because that right now it's like hard coded, right, these values and we don't want that we actually want to interact with this. 
+
+Speaker  12:25:21
+And so we will ask it to do that and then we will look at our next versions. Ok, let's take a look here the agent is now interactive loop. We have messages run, turn, etcetera. And so now what we can do is kind of drive our interest and see what it can do oops, oops, oops, oops, oops we actually want to run it oK, so we'll go ahead and run this so let's say I want a refund for the CLF CO two i purchased. Ok, that's what it does here. 
+
+Speaker  12:25:51
+So it goes oK, I'm happy to help with the refund. I need a few pieces so this would be <a href="andrewexample.com">andrewexample.com</a> order 1-2-3-4 I don't need. I didn't use the course. Ok, so we'll go ahead and do this. I'm not sure why it's double repeating i hear that's kind of annoying here so perfect, your refund will be processed successfully here are the details, etcetera so there's an example of it understanding. And so if we go over to here, let's take a look here. 
+
+Speaker  12:26:21
+And so we have a customer request for a human policy exception gaps and ability to make meaningful progress meaning like there isn't an option to talk to a person so imagine you're trying to talk to a person and say, can I talk to a human? 
+
+Speaker  12:26:42
+Unfortunately, I don't have a direct transfer function available in my current system. And so The thing is like with these systems, you generally want them to follow some kind of structure before there's an escalation. So maybe what we should be making is some kind of graph or diagram in terms of what it is that should escalate it so I'm going to go back over here and we'll say, you know, I want to show, I want to have a system where through progressive escalation, escalation, 
+
+Speaker  12:27:14
+They can be turned over to a human. How can we map out that step or flow and feed it into the agent? And I would think like, like, is there a state machine, a simple state machine? 
+
+Speaker  12:27:37
+So, you know, like what we could do is tell the the prompt like what the state machine is and then have it updated that probably be the easiest way to do it. That's what I would do but let's just see what it comes up with here because once we've defined defined like a flow or steps that it should follow to get to those desired states, then we can see here so here, yeah, it's putting it right into the thing. Bot handling escalation trigger human, cue human active resolved right. So customer explicitly ask for human, AI can't resolve it after N turns, AI decides it's out of scope. Certain issues auto escalate so GDPR request legal how it feeds into the agent. 
+
+Speaker  12:28:15
+So add escalation to tools. So now it has a tool for that track the state and count in the session context. And so we will take a look and see what that looks like. There's obviously like many ways that we can implement this so I'm not saying like this is how I would actually do it, but like if it works in this one case to for our understanding that that will be a good enough. So we'll go over here to support agent. Now let's take a look at what we have here. So we have this well, like I would probably map out state machines for all of these things this is probably what I would do. 
+
+Speaker  12:28:59
+So what I'm looking for here so here we have GDPR request wrote business development. Sure, sure, sure, sure, sure. Did it add human intervention or is there human Human. I don't think it did so I'm going to close this again, reopen it. Human want me to implement it, but didn't even implement it yes. I thought it was already there so we'll hang on and see what we get oK, All right, so now we should have a loop let's take a look here and see if we can find exactly where this information is. So we'll go all the way to the top here and OK, so basically this is our escalation state so we have some state here and then we have a session context. 
+
+Speaker  12:29:47
+So how many turns the reason the messaging, which is fine and it's current state so by handling escalation triggered human queue, human active resolved. So that's fine like we can try this, but how do we trigger it so you must call the escalation human tool with any of the followings are true the customer exclusively asked to speak to a human. This involves a legal threat, fraud claim or dispute. The customer expresses extreme frustration you cannot resolve the issue after two three attempts the request fails. So we'll go ahead here. Well, they say requesting human, but we technically don't want that to happen. 
+
+Speaker  12:30:23
+So. 
+
+Speaker  12:30:27
+So we can go here and say. 
+
+Speaker  12:30:34
+The thing is like we wouldn't always. So do not attempt to handle the situation clearly that requires human judgment, right so if the customer. 
+
+Speaker  12:30:50
+So just take that one line out because I really want it to, you know, attempt its best effort so try, you know, you know, if it doesn't, we won't even put that in there but like, you know what I'm trying to say, like, you know, if, if you can try to not bother the humans, right, unless really absolutely needing to right. And so we'll go ahead and we will run this here. 
+
+Speaker  12:31:14
+We'll say I I am having problems with my CLFCO CO2 count SU course. Ok, I want a refund. 
+
+Speaker  12:31:33
+I will say <a href="andrew@example.com">andrew@example.com</a>. 
+
+Speaker  12:31:40
+No, 
+
+Speaker  12:31:45
+I need that information now. So now I'm being rude. 
+
+Speaker  12:31:54
+Look, I told you now. 
+
+Speaker  12:32:03
+And so here it transferred to humans so there you go. So you can kind of see how that works and customers extremely frustrated, demanding immediate refund for the CLF CO2 course. Customers having providing email for that information i guess I didn't really write in the plan like what these iterations were, but the idea was to, I guess I should have done a better job with that but if you're following along, it's not that big of a deal. Let's go back over to our exam guy here and just take a look and see if we are satisfied so we have appropriate escalation triggers, customer request a human right. 
+
+Speaker  12:32:38
+The distinction between escalating immediately when a customer explicitly demands it versus offering to resolve when the issue is straightforward so you'll notice that like it was staying on track i mean, it really wouldn't be hard for us to do that but I think again, to make this really good, we would have to expand. 
+
+Speaker  12:32:56
+All of these, all of these options and really make a state machine for all of them because that's usually how the systems works is that if you know if you can keep them in that system, it's going to save humans time i'm not saying it's good i don't obviously don't like that but I'm just saying like if we're engineering based on what they are saying here, why sentiment based escalation and self reported confidence scores are unreliable proxies for actual complexity use case. So sentiment based escalation means like are they mad? Why wouldn't that work? It obviously worked right there so adding explicit escalation criteria with few shot examples. 
+
+Speaker  12:33:30
+So here it wants us to add examples to give an idea honoring explicit customer requests for human agents immediately without first attempting investigation. I mean it would have done that if we had that line there to begin with. Acknowledging frustration while offering a solution when the issue is with the agents capability escalating when the policy is ambiguous or silent or the customer requests instructions, the agents to ask for additional identifiers with the tools. 
+
+Speaker  12:33:58
+So it's already kind of doing some of these things and basically they've given us the list. I like, I don't, I'm not usually pulling from the exam guide like this, but I think in this case we would just go here and say like, 
+
+Speaker  12:34:13
+Like implement implementation list. 
+
+Speaker  12:34:17
+To do's OK and so we'll go over to here. Really it's that it's that simple. We'll say plan, please implement the to do's OK, and we'll come back here and just look at what it's changed in the code. But again, like, you know, if we're doing this for real and again, I just don't want to make a three hour course here or you folks are going to yell at me because you want to pass your exam here. But I would make state machines for each of these things and test them and do a bunch of other stuff. 
+
+Speaker  12:34:47
+But for this case, we're just trying to cement this information here. But this seems pretty evident the only thing I'm not clear about is like why sentiment based escalation and self reported confidence are unreliable proxies for actual use case complexity. I guess if something was very, very complex then it doesn't work and then you'd have to offload to human. So maybe that's what they're trying to say there. 
+
+Speaker  12:35:09
+It's not exactly clear, but I think if we got questions we would be able to handle them we'll wait a moment here oK OK, so it's now updated that code let's take a look and see. And it's probably just mostly going to be in the prompt here wow, it's large. So here that's the same be polite, multiple matches ask for clarification so if a tool returns multiple matching records, 
+
+Speaker  12:35:37
+Let's add the word wrap here so we can actually read it. If a, if a tool returns multiple matching records, do not guess or pick, that's actually smart ask the customer for additional information. Multiple orders found for <a href="janexample.com">janexample.com</a> I found two orders on your account. Another thing that's like, you know, where's the source coming from so if somebody's asking you like how you know you're not just grabbing information for a just like someone's just trying to trick the bot, right but if you're logged into the account, I feel like if it's within your platform, you already have that data handling customer frustrations when a customer expresses frustration or dissatisfaction, but does not explicitly ask for human, acknowledge the frustration and offer to resolve the issue, only escalate if necessary. 
+
+Speaker  12:36:19
+Oh, so they have some examples oK, good. Explicit human requests, no frustration context. So if a customer very first messages and they want to speak to human call right away, right? Obviously there are some systems that are evil that want to push this off right? A policy ambiguity escalate rather than improvise. If a customer request is not covered by your defining capabilities or fails in a Gray area, escalate to a human rather than guessing or improvising. Ok good competitor price match i saw this course can you match that price? I have two Exam Pro accounts i want to merge them. 
+
+Speaker  12:36:58
+The course is listed at 49 on the site, but was charged 79 But I said that's a good example sometimes that happens, I don't know, like that's not the prices, but that's an example of where maybe the coupon did not apply. So escalate immediately, offer a resolution first, resolve autonomously, and we will go ahead and try this out so that's pretty good. But again, I would do more with the state machine if it was me. 
+
+Speaker  12:37:27
+So say I want a refund, 
+
+Speaker  12:37:33
+We'll say <a href="androidexampro.com">androidexampro.com</a>. 
+
+Speaker  12:37:42
+It's for the CLF CO two. 
+
+Speaker  12:37:48
+I don't have the other information. 
+
+Speaker  12:37:59
+So here, I don't know, let. 
+
+Speaker  12:38:04
+Me. 
+
+Speaker  12:38:07
+Connect with human support oK, great so there it did and it transferred it to a human. So that's pretty, pretty good, I would say for what we have there the only thing that doesn't really help is that sentiment information. But I think generally, you know, the the key thing is like make sure the customer's not frustrated, but we will continue on. We'll continue on with other stuff, but I think our support agent solves the things we're trying to go for, OK.`,
+    provenance: "plans/future-courses/Claude Certified Architect - Foundations, Prepare for and pass the exam - freeCodeCamp.md",
+  },
+  {
     key: "africa-precolonial-track-proposal",
     title: "Precolonial Africa, course track proposal",
     summary: "A proposed \"Africa Before Colonization\" track: one built anchor course plus seven follow-on",
@@ -417,6 +6907,23 @@ test before a student goes and evaluates a paradigm of their own.
     provenance: "plans/future-courses/afrocentricity-track-proposal.md",
   },
   {
+    key: "bvc-sommelier",
+    title: "Bvc sommelier",
+    summary: "bvc-sommelier",
+    body: `bvc-sommelier
+create class to teach me and others to be a sommelier and for other commodotties in curriculum:
+- wine
+- chocolate
+- coffee
+- tea
+- rum
+- whiskey
+- beer
+- cannabis
+- and all others`,
+    provenance: "plans/future-courses/bvc-sommelier.md",
+  },
+  {
     key: "civics-more-proposal",
     title: "More civics courses, proposal (topic choice is BAM's to redirect)",
     summary: "Six high-value topics that fill gaps in the existing civics catalog (civics-101, us-constitution,",
@@ -452,6 +6959,350 @@ follow-ups. Tell Claude which to author.`,
     provenance: "plans/future-courses/civics-more-proposal.md",
   },
   {
+    key: "claude-architect-foundations-outline",
+    title: "Claude Certified Architect, Foundations (CCA-F), Private Course Outline",
+    summary: "Status: outline approved-for-authoring · Visibility: `private` (owner-only, BAM) · Date: 2026-07-30",
+    body: `# Claude Certified Architect, Foundations (CCA-F), Private Course Outline
+
+**Status:** outline approved-for-authoring · **Visibility:** \`private\` (owner-only, BAM) · **Date:** 2026-07-30
+
+Built by cross-referencing the full 12.5-hour ExamPro/freeCodeCamp transcript (this directory,
+644KB, mapped segment-by-segment with timestamps) against the CCA-F exam blueprint. This document
+drives the per-module authoring sessions.
+
+## Sources & IP posture
+
+- **Base:** A. Brown, *Claude Certified Architect, Foundations* (ExamPro via freeCodeCamp, 2026).
+  Transcript in this dir. **Derived text goes in gitignored \`content/claude-architect/\`, never
+  committed, never published.** Course stays \`visibility: "private"\` permanently. If a public
+  version is ever wanted, rebuild from the exam guide + Anthropic docs + original labs only.
+- **Exam blueprint:** community study guides ([dnacenta/claude-certified-architect](https://github.com/dnacenta/claude-certified-architect),
+  [tutorialsdojo CCAR-F guide](https://tutorialsdojo.com/ccar-f-claude-certified-architect-foundations-study-guide/),
+  [freeCodeCamp article](https://www.freecodecamp.org/news/claude-certified-architect-foundations-prep-for-anthropic-s-new-certification-exam/)).
+  Official exam guide v1.0 (July 2026) lives in Anthropic Partner Academy.
+- **Primary technical sources for every lesson:** platform.claude.com docs + code.claude.com docs
+  (Agent SDK, Claude Code). Every technical claim gets re-verified against current docs at
+  authoring time and cited APA-style (\`course_sources\` / \`## Sources\` per lesson).
+
+**Delivery discrepancy to verify at authoring time (authoritative-values rule, don't assert):**
+the transcript (recorded earlier) says Skilljar + Claude Partner Network only (≥10-person company);
+newer community guides say Pearson VUE (OnVUE/test center), $125, credential valid 12 months.
+State both in M0 with dates, or check the Partner Academy page when writing M0.
+
+## Exam blueprint (drives module sizing and the mock exam)
+
+| Domain | Weight | ≈ of 60 Qs |
+|---|---|---|
+| D1 Agentic Architecture & Orchestration | 27% | 16 |
+| D2 Tool Design & MCP Integration | 18% | 11 |
+| D3 Claude Code Configuration & Workflows | 20% | 12 |
+| D4 Prompt Engineering & Structured Output | 20% | 12 |
+| D5 Context Management & Reliability | 15% | 9 |
+
+Logistics: 60 multiple-choice scenario questions · 120 min (150 seat) · passing **720/1000 (72%)**
+→ 17 wrong allowed · proctored, closed-book, no AI assistance · questions deliberately verbose
+("SA-Pro style"), practice parsing them.
+
+## WitUS pedagogy wiring (applies to every module)
+
+- **Lesson kit:** text lessons (markdown, own words, APA citations, \`## Sources\`), \`exercise\`
+  lessons for labs, \`recallContent\` cards for memorization, glossary terms, \`[REMEMBER]\` beat
+  closing every lesson.
+- **Labs are the product.** Each lab lesson = reproducible spec: goal, constraints, starting
+  scaffold, prompts to give Claude, expected observations, done-criteria, and "what went wrong in
+  the source run" as a debugging appendix. Run each lab against the **current** SDK before the
+  lesson ships, that's also the staleness check.
+- **Quizzes:** per-module pools with \`explanation\` + \`sourceLessonSlug\` on every question,
+  \`shuffleOptions: true\` (default), \`questionsPerAttempt\` for fresh retakes, length-balanced
+  distractors (length-tell guard). Module quizzes pass at 80 (WitUS default). **Mock exam passes
+  at 72** to mirror the real exam.
+- **Sequential linear navigation**, quiz gates between modules.
+
+## Seeding & repo wiring (build once, at M0 authoring)
+
+1. Content lives in \`content/claude-architect/\` (gitignored, FAA precedent), lesson markdown,
+   quiz pools, lab specs. Committed code: a \`scripts/seed-claude-architect.ts\` reading from it
+   (mirror \`seed-faa.ts\`), or extend \`seedAuthoredCourse\` with a \`visibility\` opt.
+2. Set \`visibility: "private"\` at insert (seeder currently defaults \`public\`, must override).
+3. \`BACKLOG\` line in \`check-standards-coverage.ts\`: professional-cert prep, private owner-only,
+   no academic standard, permanent excuse.
+4. No DB migration needed (schema already supports everything). No standards claims. Not vetted
+   /listed anywhere public, private visibility handles it.
+
+---
+
+# Module 0, Orientation & Exam Logistics (transcript 00:00-10:22, ~47:40 lecture block)
+
+- **0.1 text, What the CCA-F is.** Domains + weights, format, scoring, availability
+  (partner-network/Skilljar vs Pearson VUE, see discrepancy note), validity, who it's for.
+  Recall cards: 60 Qs · 120 min · 720/72% · 17 wrong allowed · 5 domains + weights.
+- **0.2 text, How this course works.** Lab-first rationale ("concepts don't stick unless you do
+  them"), repo layout convention (one folder per concept, git commit per checkpoint), the two SDK
+  surfaces used throughout (**\`anthropic\` Messages API** vs **\`claude-agent-sdk\`**) and when each
+  appears, cost discipline (subscription vs API credits, Haiku for labs, isolated project folders,
+  \`/clear\`, effort settings).
+- **0.3 exercise, Environment setup.** Install Claude Code (native installer), \`/login\` (both
+  subscription and API-key paths), \`claude auth status\`, \`pip install anthropic claude-agent-sdk\`,
+  hello-world for each SDK; a shared \`lib/\` log formatter (own implementation, not Brown's).
+  Done-criteria: both SDKs return a message; \`/status\` correctly identifies the auth method.
+- **Quiz 0**, pool ~12, draw 6 (logistics + setup facts).
+
+# Module 1, Agentic Architecture & Orchestration (D1, 27%), largest module
+
+Transcript: 47:40-2:32 (loop, stop_reason, coordinator), 2:14-3:30 (decomposition→observability),
+4:15-5:06 (Agent tool, AgentDefinition, parallel), 5:47-6:24 (chaining, DAD), 12:15-end (escalation).
+
+- **1.1 text, The agentic loop.** Gather context → take action → verify results; model-driven vs
+  code-driven decisions ("if the code decides, it's not agentic"); tool sequence = state machine;
+  when code-driven is the right call (fixed work shape, no hallucination budget). [47:40-56:47,
+  1:32-1:47]
+- **1.2 exercise LAB, stop_reason & the hand-rolled tool-use loop.** Messages API, Magic-8-Ball
+  tool. Observe \`stop_reason: tool_use\` → append \`tool_result\` (matching \`tool_use_id\`) →
+  \`end_turn\`. **Verify against current API:** full stop_reason set is now larger (\`max_tokens\`,
+  \`pause_turn\`, \`refusal\`, \`model_context_window_exceeded\`…), teach the full set, course only
+  taught two. Includes the infinite-loop bug (response never reassigned). [56:47-1:32]
+- **1.3 text, Loop termination anti-patterns.** Don't parse prose for "done"; don't rely on
+  iteration caps alone; text-in-response ≠ finished; correct = \`stop_reason\` check + bounded
+  \`max_iterations\`. Recall cards. [1:47-1:53]
+- **1.4 text, Hub-and-spoke & the coordinator.** Spokes never talk to each other; coordinator
+  owns decomposition, complexity-based routing, context injection, aggregation, error handling,
+  observability ("needs the full picture ⇒ belongs to the hub"). [1:52-1:56]
+- **1.5 exercise LAB, Job-application screener coordinator.** Messages API. Three spokes
+  (keyword scanner with "be literal, don't infer" prompt, deep evaluator, red-flag detector),
+  dispatch tools, \`max_steps\`. [1:56-2:14]
+- **1.6 text, Decomposition failure modes & safeguards.** Narrow decomposition ("Claude can only
+  delegate what it thinks to ask for"; isolated spokes can't flag gaps, EV-market example);
+  the three-layer remedy: prompt instruction → pre-delegation review tool → post-aggregation
+  coverage gate. Dynamic selection ("never invoke an agent unless it answers a real question").
+  [2:14-2:42]
+- **1.7 exercise LAB, Partitioning + refinement loop.** JSON partition plan (covered/excluded,
+  no overlap), planner-vs-coordinator authority (routing lives in ONE place), \`evaluate_coverage\`
+  tool, \`submit_final\` as exit gate, bounded refinement iterations. [2:42-3:04]
+- **1.8 text, Coordinator observability & failure recovery.** What "real" looks like: persist
+  spoke I/O, token counts/latency/request IDs, structured typed errors (failure type, attempts,
+  approaches, partial results), access-failure ≠ empty-result, local recovery for transient
+  failures; anti-patterns: silent suppression, whole-workflow termination on one spoke failure.
+  [3:04-3:31]
+- **1.9 text, Sub-agents in the Agent SDK.** Agent tool (renamed from Task tool), isolated
+  context/system-prompt/tools, no parent-context inheritance, spawning ≠ parallelism,
+  AgentDefinition fields (description triggers the agent), Python vs TS parity gaps,
+  parallel fan-out is prompt-driven, sub-agent internals are opaque (observability gap → drop to
+  Messages API when you need traces). **Heavy verify-against-current-docs lesson.** [4:15-4:40]
+- **1.10 exercise LAB, Parallel fan-out with AgentDefinition.** Film-similarity researcher:
+  5 axes fanned out in one turn, dedupe agent, rank agent, findings persisted incrementally.
+  Teaches: silent tool-input validation failure, per-run log dirs. [4:39-5:04]
+- **1.11 text, Orchestration patterns.** Prompt chaining (fixed sequential pipeline; ETL/document
+  processing), dynamic adaptive decomposition ("follow the evidence, not a fixed sequence"),
+  fixed vs adaptive plans, AI-at-the-edges/engine-in-code (deterministic gates around the LLM).
+  [5:47-5:55, 6:22-6:24]
+- **1.12 exercise LAB, Prompt chain.** 3-stage pipeline (identify bugs → propose → apply) over
+  10 broken Ruby functions. Small, fast. [5:48-5:54]
+- **1.13 text, Escalation & human handoff.** Handoff protocol = structured package assembled at
+  escalation; escalation state machine (bot_handling → … → resolved); explicit triggers (explicit
+  human request honored immediately; legal/fraud/GDPR auto-escalate; 2-3 failed attempts;
+  frustration acknowledged-then-offered, not auto-escalated); exam claim: sentiment + self-reported
+  confidence are unreliable proxies vs explicit criteria + few-shot; ambiguous policy → escalate,
+  don't improvise; multiple matching records → ask, never guess. [5:34-5:42, 12:15-12:38]
+- **1.14 exercise LAB, Support agent with escalation.** Agent SDK, mocked tools (refund, swap,
+  resend, tickets, GDPR), REPL loop, state machine in prompt + session context, few-shot
+  escalation examples. [12:15-12:38]
+- **Quiz M1**, pool 30, draw 12.
+
+# Module 2, Tool Design & MCP Integration (D2, 18%)
+
+Transcript: 51:11-54:38 (tools), 4:03-4:19 (port to Agent SDK), 5:42-5:47 (hooks), 9:09-9:17
+(built-ins, JSON Schema), 11:29-11:41 (MCP).
+
+- **2.1 text, Tool anatomy.** name/description/\`input_schema\`; the description is how the model
+  selects the tool (imperative "when the user…"); pick tools the model *can't* do itself; tool
+  categories mapped to loop phases. [51:11-54:38]
+- **2.2 text, JSON Schema for tools.** Types, **enums** (exam emphasis), \`required\`, nested
+  objects; Pydantic as the Python route. Recall cards on schema keywords. [9:16-9:18]
+- **2.3 exercise LAB, Port Messages-API tools to the Agent SDK.** \`@tool\` decorator +
+  \`create_sdk_mcp_server\` (in-process MCP server, "your local tools ARE an MCP server");
+  hand-written schemas and dispatch disappear; \`@tool\` in a factory closure for stateful tools.
+  Port the small 3-tool example, not the big app. [4:03-4:16]
+- **2.4 text, MCP.** Servers, three primitives (tools / resources / prompts), discovery at
+  connection time, flat namespace (no server attribution → bloat consideration), \`mcp_servers\`
+  config, resources = read-only-by-convention schema-shaped reads vs tools = actions. [11:29-11:33]
+- **2.5 exercise LAB, MCP resources vs tools over SQLite.** Custom todo MCP server: CRUD tools +
+  list resource; Agent SDK client with \`mcp__…\` allowed_tools; drive read→act→read sequence.
+  [11:33-11:41]
+- **2.6 text, Built-in tools.** Agent SDK five (Read/Grep/Glob/Edit/Bash, Grep searches
+  contents, Glob matches names) + Claude Code's full catalog (Agent, AskUserQuestion, Web*, Task*,
+  Cron*, LSP, NotebookEdit…; asterisk = needs permission). **Verify current roster.** [8:58-9:14]
+- **2.7 text, Hooks.** Agent SDK PreToolUse/PostToolUse (+matchers, per-tool config) vs Claude
+  Code settings-file hooks, same concept, different surface; hooks as enforcement gates
+  (prerequisite gates: structurally impossible > discouraged). [5:23-5:26, 5:42-5:47]
+- **2.8 exercise LAB, Pre/post hooks.** Wire PreToolUse/PostToolUse in the Agent SDK; contrast
+  with a small hand-rolled gate (\`check_pre\` blocking a call). [5:25-5:47]
+- **Quiz M2**, pool 24, draw 10.
+
+# Module 3, Claude Code Configuration & Workflows (D3, 20%), exam-densest module
+
+Transcript: 21:54-25:41 (install/auth), 7:08-8:39 (sessions→settings→permissions→sandbox),
+8:36-9:09 (EC2/Bedrock, /status, /debug), 11:41-12:15 (GitHub Actions).
+
+- **3.1 text, Claude Code & auth.** What it is (agentic harness: loop + models + tools),
+  surfaces; install modes (native/brew/winget, native recommended); \`/status\` fingerprints:
+  subscription vs managed key vs \`ANTHROPIC_API_KEY\` vs Bedrock/Vertex (env flag + cloud creds);
+  two-token conflicts; \`/debug\`. [21:54-25:41, 9:02-9:09]
+- **3.2 text, Models & cost.** Tiers (Opus/Sonnet/Haiku), Sonnet-1M, Opus-Plan mode; effort
+  levels and their cost impact; subscription 5-hour windows vs API spend visibility.
+  **Rewrite against current model lineup, transcript is stale here by design.** [54:38-56:47]
+- **3.3 text, Sessions.** Session = conversation; local vs web; directory-scoped; \`/resume\`
+  (Ctrl+A all projects), \`--fork-session\` & \`/fork\` (new ID, original untouched), \`/rename\`,
+  \`/rewind\` (restore vs summarize-from-here), ~30-day retention, JSONL storage. [7:08-7:32]
+- **3.4 text, Context controls.** \`/context\` category breakdown, auto-compact buffer headroom,
+  \`/compact\`, \`/clear\`, **\`/clear\` does NOT clear CLAUDE.md or auto-memory** (prime trap).
+  [7:17-7:29]
+- **3.5 exercise LAB, Session drill.** Fill context, \`/context\` → \`/compact\` → \`/clear\`;
+  fork a session and diverge; rewind and verify. [7:14-7:32]
+- **3.6 text, Settings scopes & catalog.** Precedence: managed > user (\`~/.claude/settings.json\`)
+  > project (\`.claude/settings.json\`) > local (\`settings.local.json\`, uncommitted); recognition
+  tour of key categories (auth helpers, cleanup-period 0 = no persistence + empty hook
+  transcripts, model mapping to providers, spinner/output, managed-only lockdowns); some settings
+  need session restart, permission rules apply immediately. [7:31-7:54]
+- **3.7 text, Permissions.** allow/ask/deny; evaluation deny→ask→allow (most restrictive wins);
+  syntax: \`Bash(npx *)\`, **space + glob matters, \`Bash(ls *)\` ≠ \`lsof\`**; path forms (\`//\` root,
+  \`~/\` home, \`/\` project root, \`./\` cwd); \`WebFetch(domain:…)\`; \`mcp__server\`/\`mcp__server__tool\`;
+  bare tool name = total coverage (MCP excepted); permission modes (default/acceptEdits/plan/
+  don't-ask/bypassPermissions; Shift+Tab cycles three). [7:54-8:22]
+- **3.8 exercise LAB, Permission rules empirically.** The rerouting discovery: deny Bash → Claude
+  uses Glob; deny Read → Grep still reads content; **you must deny the whole capability set**;
+  malformed rules fail silently as "no prompt". [7:55-8:10]
+- **3.9 text, Sandbox & bypass.** Sandbox = bash-tool-only isolation (WebFetch sits OUTSIDE it);
+  deps (bubblewrap/socat/seccomp); deny rules evaluate BEFORE sandbox; \`--dangerously-skip-
+  permissions\` (when acceptable: disposable VM, CI, low-risk bulk); **the npx trapdoor: Claude can
+  reason the sandbox is the obstacle and disable it**, sandbox is not a hard boundary. [8:20-8:36]
+- **3.10 exercise LAB (optional/heavy), Disposable EC2 + Bedrock.** SSM Session Manager, Bedrock
+  env-flag auth, sandbox + deny rules + bypass, watch the escape. [8:35-8:59]
+- **3.11 text + exercise LAB, Claude Code in GitHub Actions.** \`/install-github-app\`,
+  \`.github/workflows/claude.yml\`, \`@claude\` trigger, **requires an API key secret, subscriptions
+  don't work in runners**; branch-association and no-auto-PR gotchas; when it's too slow. [11:41-12:15]
+- **Quiz M3**, pool 30, draw 12.
+
+# Module 4, Prompt Engineering & Structured Output (D4, 20%)
+
+Transcript: 5:03-5:07 (few-shot, criteria prompts), 6:23-6:48 (findings/Pydantic), 9:14-9:41
+(tool_choice, forced JSON, specificity).
+
+- **4.1 text, Prompt specificity & goal-driven prompts.** Vague prompts → false positives and
+  wasted compute; procedural step-lists make coordinators rigid, prefer goal + quality criteria
+  + stop conditions; criteria in a prompt are NOT enforcement (compute scores in a tool).
+  [9:39-9:41, 5:04-5:06]
+- **4.2 text, Few-shot.** Consistency + hallucination reduction; good AND bad examples; scored
+  examples. [5:03-5:04]
+- **4.3 text, tool_choice.** auto / any / tool(+\`name\` required) / none; "force" doesn't exist;
+  Agent SDK doesn't expose tool_choice (it wraps the CLI); **the trap: \`type: "tool"\` in a loop
+  never yields \`end_turn\`**, break on the tool call itself; \`auto\` may skip tools (structured-
+  output risk); \`any\` for forced-single-call (also the Batches idiom). [9:14-9:16]
+- **4.4 exercise LAB, Forced structured JSON triage.** Support-ticket triage via \`submit_triage\`
+  tool; reproduce the invalid-\`force\` error, the missing-\`name\` error, and the infinite loop;
+  fix with \`any\` + explicit break. **Verify: current API has native structured outputs
+  (\`output_config.format\`), teach both, note which the exam guide covers.** [9:17-9:39]
+- **4.5 text, Structured findings & provenance objects.** Raw-text blobs destroy attribution;
+  structured finding objects carry claim + source + page + excerpt + confidence; Pydantic schema
+  enforcement vs prompt-only; schema fixes syntax, not semantics. [6:23-6:26]
+- **4.6 exercise LAB, Findings with Pydantic + AgentDefinition.** Film-research findings with
+  full provenance fields; observe the missing-source failure and fix the schema. [6:24-6:48]
+- **Quiz M4**, pool 24, draw 10.
+
+# Module 5, Context Management & Reliability (D5, 15%)
+
+Transcript: 9:40-10:44 (review workflows, provenance, validation), 10:44-11:30 (large context,
+DOOM explorer, batches), plus 2:57-3:04 (refinement) already in M1.
+
+- **5.1 text, Four large-context failure modes.** Progressive-summarization precision loss
+  (extract facts, store externally, re-inject verbatim); lost-in-the-middle (chunk; head/tail
+  fallback); bloated tool results (filter deterministically before ingestion); unbounded history
+  (compaction). Recall cards. [10:44-10:47]
+- **5.2 exercise LAB, Case-facts memory + tool filtering.** Text-adventure: durable facts file
+  re-injected each turn; bloated \`get_world_state\` filtered to ~50 tokens. [10:46-10:55]
+- **5.3 exercise LAB, Codebase exploration at scale (DOOM Explorer).** Coordinator that never
+  reads source; explorer sub-agent writing append-only scratchpads under \`findings/\`;
+  \`manifest.json\` task ledger; synthesizer flagging gaps/contradictions; crash/resume proof.
+  The flagship D5 lab. [10:54-11:24]
+- **5.4 text, Provenance through synthesis.** Claim→source maps preserved and merged; conflicting
+  credible sources annotated (with dates), not silently reconciled; sub-agents must emit
+  structured claims. Include the cautionary tale: the researcher that hallucinated films because
+  it never had web tools, silent no-ops. [9:58-10:30]
+- **5.5 text, Validation-retry loops.** Schema/syntax vs semantic errors; return specific errors
+  via \`tool_result\` + \`is_error: true\`; bounded retries; detect information-absent and quit.
+  [10:37-10:44]
+- **5.6 exercise LAB, validate_triage retry loop.** Business rules beyond schema; observe
+  "tags must use snake_case" self-correction on attempt 2. [10:37-10:44]
+- **5.7 text, Review workflows & calibration.** Self-review in-conversation is biased (doubles
+  down), always fresh-context peer review; aggregate accuracy hides distribution, break down by
+  type/field/complexity; stratified sampling; field-level confidence as routing signal;
+  calibration gap. [9:40-9:42, 10:29-10:31]
+- **5.8 exercise LAB, Peer review with fresh context.** Generate 5 quiz questions, self-review
+  (same conversation) vs peer-review (empty context); compare verdicts. [10:29-10:37]
+- **5.9 text, Batches for cost.** \`custom_id\`, submit/poll/retrieve, up-to-24h no-SLA, ~50%
+  discount (**verify current pricing**), no multi-turn loops → \`tool_choice: any\` single-call
+  idiom; submit/check CLI pattern with a state file. [11:24-11:30]
+- **Quiz M5**, pool 20, draw 9.
+
+# Module 6, Mock Exam
+
+- **6.1 text, Exam-day strategy.** Verbose-question parsing drills, 2-min/question pacing,
+  flag-and-return, the 17-wrong budget.
+- **6.2 quiz, Full mock.** Pool ≥90 scenario-style questions, \`questionsPerAttempt: 60\`,
+  domain-weighted per the blueprint table, \`passingScore: 72\`, \`shuffleOptions: true\`. Verbose
+  scenario stems to match the real exam's style. Every question: \`explanation\` +
+  \`sourceLessonSlug\`.
+
+---
+
+## Consolidated verify-before-teaching list (stale-risk claims from the source)
+
+Check each against current docs during the relevant module's authoring session; cite the doc:
+
+1. Claude Code SDK → **Claude Agent SDK** rename; current package names + install.
+2. Full current \`stop_reason\` value set (course taught only tool_use/end_turn).
+3. Task tool → **Agent tool** rename; current built-in tool roster (course's own slides were
+   incomplete: missing Grep/Glob/Task/NotebookEdit at minimum).
+4. AgentDefinition field set; Python vs TypeScript parity (\`forkSession\`, \`maxTurns\` were TS-only
+   at recording); sub-agent observability gap, still true?
+5. \`tool_choice\` absent from Agent SDK options, still true?
+6. Native structured outputs (\`output_config.format\`) vs forced-tool-use idiom, what the current
+   exam guide expects.
+7. Auto-compact buffer % (course said ~22%), session retention 30 days, settings hot-reload
+   behavior, \`includeCoAuthoredBy\` deprecation.
+8. Sandbox: bash-only scope, deps, deny-before-sandbox ordering; whether the model-disables-
+   sandbox escape still reproduces.
+9. Batch discount %, 24h window; rate-limit figures (50K input-TPS was account-specific).
+10. Current model lineup + effort levels for 3.2 (rewrite entirely from current docs).
+11. GitHub Action: API-key-only claim; current claude.yml template.
+12. Exam delivery: Skilljar/partner-gated vs Pearson VUE GA; fee; validity period.
+
+## Glossary seed (course_glossary_terms)
+
+agentic loop · stop_reason · tool_use / tool_result / tool_use_id · input_schema · tool_choice ·
+hub-and-spoke · coordinator/spoke · task decomposition · partition plan · refinement loop ·
+enforcement gate · handoff protocol · AgentDefinition · in-process (SDK) MCP server · MCP
+tools/resources/prompts · PreToolUse/PostToolUse · permission modes · managed settings ·
+sandbox (bubblewrap) · --dangerously-skip-permissions · provenance · calibration gap · stratified
+sampling · progressive summarization · lost-in-the-middle · compaction · Message Batches API
+
+## Authoring session plan
+
+| Session | Deliverable |
+|---|---|
+| 1 | Seeder + content dir skeleton + M0 (3 lessons + quiz) + BACKLOG line; seed & verify private visibility end-to-end |
+| 2 | M1 lessons 1.1-1.7 (text + first 3 labs run against current SDK) |
+| 3 | M1 lessons 1.8-1.14 + Quiz M1 |
+| 4 | M2 complete + Quiz M2 |
+| 5 | M3 complete + Quiz M3 |
+| 6 | M4 complete + Quiz M4 |
+| 7 | M5 complete + Quiz M5 |
+| 8 | M6 mock-exam pool (90+ scenario questions) + exam-strategy lesson + full course QA pass |
+
+Per-session ritual: verify that session's items from the stale-risk list, run the labs, write
+\`## Sources\` per lesson, keep quiz options length-balanced.`,
+    provenance: "plans/future-courses/claude-architect-foundations-outline.md",
+  },
+  {
     key: "cross-city-connections",
     title: "Cross-city connections: the DC-to-Indianapolis kind, at scale",
     summary: "Finding lines like DC-to-Indianapolis (Washington authorised blight clearance in Berman v. Parker,",
@@ -472,6 +7323,29 @@ Build: one cross-link lesson per existing city course, then a "how the tools tra
 then a diagram (DC and the federal acts are hubs, cities are leaves). Every edge is a claim of
 causation and must be sourced to that standard. Full plan: plans/42-cross-city-connections.md.`,
     provenance: "plans/future-courses/cross-city-connections.md",
+  },
+  {
+    key: "economics",
+    title: "Economics",
+    summary: "economics courses modeled after mit economics and the best economics programs in the world",
+    body: `economics courses modeled after mit economics and the best economics programs in the world
+
+it'll be part of elementary mba`,
+    provenance: "plans/future-courses/economics.md",
+  },
+  {
+    key: "elementary-mba",
+    title: "Elementary mba",
+    summary: "I created a curriculum for children when I was in grad school to get my mba teaching the students what I was learning to get my mba.",
+    body: `I created a curriculum for children when I was in grad school to get my mba teaching the students what I was learning to get my mba.
+I want to revise and improve the curriculum
+I want to model it on the curriculum and the best mba programs in the world
+
+inspiration:
+- mit economics
+
+who to model after for marketing, supply chain, statistics, etc`,
+    provenance: "plans/future-courses/elementary-mba.md",
   },
   {
     key: "explore-map-and-entities",
@@ -546,6 +7420,14 @@ Progressive disclosure keeps it calm: default is globe at continent zoom, era ch
 so only two controls are visible. Zooming or clicking an era densifies pins and fills the rail.
 Expanding the rail reveals the brush. The brush is never the first thing a newcomer meets.`,
     provenance: "plans/future-courses/explore-map-and-entities.md",
+  },
+  {
+    key: "faa-part107",
+    title: "Faa part107",
+    summary: "I noticed the FAA part 107 course didnt have standards for any state. Is that because it wasn't checked or because it didnt meet any standards?",
+    body: `I noticed the FAA part 107 course didnt have standards for any state. Is that because it wasn't checked or because it didnt meet any standards?
+I'd like to show standards on all the courses. Especially the fitness and health courses.`,
+    provenance: "plans/future-courses/faa-part107.md",
   },
   {
     key: "green-book",
@@ -2712,6 +9594,18 @@ export interface SubdirDoc extends ProposalDoc {
 
 export const SUBDIR_DOCS: SubdirDoc[] = [
   {
+    key: "he-did-the-work-list-of-men-that-did-the-work",
+    title: "list of men that did the work",
+    group: "He Did The Work",
+    summary: "list of men that did the work",
+    body: `list of men that did the work
+- Walter White
+- WEB DuBois
+- Thurgood Marshall
+- James Weldon Johnson`,
+    provenance: "plans/future-courses/he-did-the-work/01-list-of-men-that-did-the-work.md",
+  },
+  {
     key: "he-did-the-work-Molefi-Kete-Asante",
     title: "Molefi Kete Asante",
     group: "He Did The Work",
@@ -4408,5 +11302,847 @@ The Grocer. (2024, April). *Divine Chocolate financial results*.
 
 Vigneri, M., & Holmes, R. (2009). *When being more productive still doesn't pay: Gender inequality and socio-economic constraints in Ghana's cocoa sector*. Overseas Development Institute.`,
     provenance: "plans/future-courses/mansa-gold/03-women-in-cocoa-and-coffee.md",
+  },
+  {
+    key: "real-estate-surplus-funds-brief",
+    title: "Surplus Funds & Asset Recovery: course brief",
+    group: "Real Estate",
+    summary: "> Mirrored from `docs/asset-recovery-course-brief.md` (the committed copy). Edit that file, then",
+    body: `# Surplus Funds & Asset Recovery: course brief
+
+> Mirrored from \`docs/asset-recovery-course-brief.md\` (the committed copy). Edit that file, then
+> re-run \`pnpm gen:future-work\` to refresh what /admin/future shows.
+
+
+A readable summary of the decisions, the legal research, and the ethics module behind
+**Surplus Funds Basics**, course #1 of the Asset Recovery series. Working plans live in
+\`plans/real-estate/\` (gitignored); this file is the committed, durable version.
+
+**Nothing here is legal advice.** Every figure carries a research date and a confidence marking, and
+the course itself is gated on the legal review BAM agreed to. Statutes change. Re-check before
+publication and state an as-of date in the course.
+
+Researched 2026-08-03.
+
+---
+
+## 1. The model, decided
+
+> **Tell them what the money is, where it is, and that they can claim it themselves. Give them a free
+> PDF with the steps and your contact details. Charge only for doing it for them.**
+
+That is the house style for every course in the series. It began as an ethical preference and the
+research turned it into a structural requirement.
+
+### Why it is the only workable model
+
+**Texas makes it the only lawful one.** Texas Tax Code § 34.04 states that *"a person who is not an
+attorney may not charge a fee to obtain excess proceeds for an owner."* A fee-for-service surplus
+recovery business run by a non-attorney is prohibited there outright. Even attorneys are capped at 25
+percent **or $1,000, whichever is less**, which means the fee is effectively $1,000 on any surplus
+above $4,000. Texas has deliberately made this unattractive as a service business. Giving information
+away for free is not charging a fee to obtain excess proceeds, so the free PDF survives where the fee
+model does not.
+
+**Florida already compels the disclosure.** Florida Statute § 45.033(3)(a)2 requires a valid
+assignment of foreclosure surplus to include *"a statement that the owner does not need an attorney or
+other representative to recover surplus funds in a foreclosure."* Every competitor must make that
+disclosure grudgingly, in fine print, at the moment of signing. This model leads with it. That is a
+competitive position rather than a compliance cost.
+
+**The PDF is the only asset that does not need rebuilding per state.** The paid service must be
+configured jurisdiction by jurisdiction. The free information layer works everywhere unchanged, which
+is the argument for building the entire funnel on it.
+
+---
+
+## 2. The three-state research
+
+Confidence marking: **[VERIFIED]** means read against the statute text. **[REPORTED]** means
+consistent across secondary legal sources but not yet confirmed against primary text, and must be
+upgraded before a lesson asserts it.
+
+### Florida
+
+**Foreclosure surplus, Fla. Stat. § 45.033** [VERIFIED]. A voluntary transfer or assignment is valid
+only if all of the following hold:
+
+| Requirement | Substance |
+| --- | --- |
+| Fee cap | Total compensation to the transferee or assignee may not exceed **12 percent of the surplus** |
+| Financial disclosure | Must state assessed value, that assessed value may be lower than actual value, approximate debt encumbering the property, and approximate equity |
+| The key disclosure | Must state **that the owner does not need an attorney or other representative** to recover surplus funds |
+| Deadline | Filed with the court **within 60 days** after the filing of the certificate of disbursements |
+| Who may take assignment | Transferee must qualify, or be able to qualify, as a surplus trustee under § 45.034 |
+
+There is a rebuttable presumption that the owner of record on the date the lis pendens was filed is
+the person entitled to surplus, after subordinate lienholders' timely claims.
+
+**Tax deed surplus, Fla. Stat. § 197.582** [REPORTED]. A different pool with a different clock.
+Claimants have **120 days from the date of the notice** to file. Claims other than the property
+owner's that miss the 120th day are **barred**, and the property owner is treated differently from
+other claimants.
+
+> **Florida requires teaching two separate regimes.** Conflating tax deed surplus with foreclosure
+> surplus is the most likely factual error in this whole subject, and the course calls it out.
+
+### Texas
+
+**Tax sale excess proceeds, Tex. Tax Code § 34.04** [VERIFIED].
+
+| Rule | Substance |
+| --- | --- |
+| Non-attorney prohibition | *"A person who is not an attorney may not charge a fee to obtain excess proceeds for an owner."* |
+| Attorney fee cap | 25 percent of the amount obtained **or $1,000, whichever is less** |
+| Assignee cap | A court may not order more than **125 percent of what the assignee paid** the assignor |
+| Deadline | Petition must be filed **before the second anniversary of the sale** |
+| Penalty | An assignee obtaining proceeds without complying is liable to the assignor for the amount obtained plus fees and expenses |
+
+**What a Texas business can actually be:** free information plus referral (noting that attorneys
+generally may not split fees with non-lawyers, which needs its own check); buying claims as an
+assignee within the 125 percent cap, which is a different business with a sharper disclosure problem;
+or not charging in Texas and using it as a demonstration jurisdiction.
+
+### Georgia
+
+**Tax sale excess funds, O.C.G.A. § 48-4-5** [REPORTED].
+
+| Rule | Substance |
+| --- | --- |
+| County notice duty | Written notice by first-class mail **within 30 days** after the sale, to the record owner, each security deed holder, and other recorded interests |
+| Deadline | A claim may be filed **at any time after the sale until the funds are awarded** |
+| The five-year cliff | After five years, unclaimed funds go to the Department of Revenue. Release then requires **a court order from an interpleader action** in the county where the sale occurred |
+
+Before the cliff, a form. After it, litigation. That is the most useful single fact for a Georgia
+learner.
+
+**Unclaimed property finders, O.C.G.A. § 44-12-224 and § 7-1-359** [REPORTED]. This governs property
+already delivered to the commissioner, which is where Georgia excess funds land after the five-year
+cliff.
+
+| Rule | Substance |
+| --- | --- |
+| Fee cap | May not exceed **10 percent** of the value recovered |
+| 24-month unenforceability | Agreements to pay compensation are unenforceable for **24 months** after payment or delivery to the commissioner |
+| Pay-direct rule | Funds **must be paid directly to the owner** and may not be paid to the finder, *"whether pursuant to a duly executed power of attorney or otherwise"* |
+| Registration | Since **1 July 2024**, Claimant Designated Representatives must register with the Georgia Department of Revenue |
+
+> **The pay-direct rule is an operational bombshell if it survives primary-text verification.** If
+> funds cannot pass through your account, you cannot net your fee at source. You invoice, and you
+> carry collection risk on every file. That changes cash flow, the contract, and the payment tracking
+> in the CRM.
+
+### Comparison
+
+| | Florida | Texas | Georgia |
+| --- | --- | --- | --- |
+| Fee-for-service by a non-attorney? | Yes, up to 12% on assigned foreclosure surplus | **No** | Yes for county-held funds; 10% cap once state-held |
+| Mandatory "you do not need us" disclosure? | **Yes, in statute** | Not found | Not found for § 48-4-5 |
+| Hard deadline | 60 days (assignment), 120 days (tax deed claim) | 2 years from sale | 5 years, then interpleader |
+| Can you net your fee from the funds? | Via assignment structure | Not applicable | **Apparently not** for state-held property |
+
+---
+
+## 3. The ethics and industry module
+
+BAM asked for a section on ethics, community membership, market competition, and how others in the
+industry do business. It sits in **course #1** rather than the later business course, because a
+learner forms their model of the industry in week one and it is hard to move afterwards. Seven parts.
+
+### 3.1 Who these people actually are
+
+Tax foreclosure and equity stripping do not fall randomly. They concentrate on the elderly, the
+low-income, heirs holding clouded title, and disproportionately on Black homeowners.
+
+Atuahene and Berry (2019) documented that more than 100,000 Detroit properties, about one in four in
+the city, were tax-foreclosed from 2011; that the city over-assessed homes in violation of the
+Michigan Constitution; and that roughly 10 percent of all tax foreclosures, rising to about 25 percent
+among the lowest-priced quintile of homes, were attributable to unconstitutional assessments. Most of
+those displaced were African American.
+
+*Tyler v. Hennepin County* reached the Supreme Court because a county kept the surplus equity of a
+94-year-old woman.
+
+The person on the other end of your letter is not an abstraction, and the course does not let a
+learner treat them as a lead. This also connects the course to the rest of this catalog rather than
+leaving it sitting apart from it.
+
+### 3.2 Read the fee caps as a historical record
+
+Florida's 12 percent, Georgia's 10 percent, Texas's outright prohibition. Legislatures do not write
+numbers like that in the abstract; each is a response to conduct that happened. Teaching the caps as a
+compliance checklist misses the lesson. Teaching them as evidence of what the industry did **is** the
+lesson.
+
+### 3.3 How the industry actually does business
+
+Described factually, so a learner can choose a model rather than absorbing whichever they meet first.
+
+| Archetype | How it works | Where it sits |
+| --- | --- | --- |
+| **Attorney practice area** | Claims handled as legal work, often alongside probate or real estate | Legitimate. In Texas, the only fee-charging option |
+| **Professional finder** | Contingency fee for locating and filing | Legitimate where permitted. The regulated middle |
+| **Claim buyer / assignee** | Buys the claim at a discount and bears the risk | Structurally legitimate, and where information asymmetry does the most damage. Texas's 125 percent cap exists to constrain exactly this |
+| **Mass mail operation** | Volume letters, low touch, low conversion, scale economics | Legal, and the reason owners get five letters and trust none of them |
+| **Skip-trace and cold-call shop** | Phone first, high pressure | Where TCPA and Do Not Call exposure lives |
+| **The course seller** | Sells training about surplus recovery | See 3.7 |
+
+### 3.4 The practices on the line
+
+Named explicitly for recognition rather than adoption, each paired with its compliant replacement,
+because a learner needs a replacement behaviour and not only a prohibition:
+
+- Withholding the source of the funds.
+- Overstating the difficulty of self-filing to someone who just declined to pay.
+- Pressing for a signature before the person has read the agreement.
+- Taking a power of attorney that routes funds through your account, which Georgia appears to prohibit
+  for state-held property.
+- Contacting claimants inside a statutory waiting period.
+
+### 3.5 Good community membership, which is also the marketing
+
+Know the free alternatives and refer to them by name: HUD-approved housing counselling agencies, legal
+aid, and the county office itself, which will usually walk someone through a claim for nothing. Refer
+away work you could have taken when the person is better served elsewhere.
+
+This is a small world with long memories and a repeat-referral dynamic. A reputation for sending
+people to the free option is worth more over five years than the files it costs. Serve your own
+community first, where trust already exists and where the letters people receive are least likely to
+be honest.
+
+### 3.6 Competing on disclosure
+
+You are the fifth letter in the mailbox, and every competitor is optimising the same envelope. The
+only genuine differentiator available is being the one that tells the truth about what the money is,
+where it is, and that they can get it themselves. That is the free PDF, and it is the strategy rather
+than a giveaway attached to one. It is also the differentiator nobody can copy without becoming you.
+
+### 3.7 The uncomfortable part, which the course says about itself
+
+A substantial share of the money in this industry is made **selling training about the industry**
+rather than recovering funds. This is a course about surplus recovery, so it owes the reader an honest
+statement of its own position: the business is fee-capped in Florida and Georgia, effectively closed
+to non-attorney fee-charging in Texas, deadline-driven, and it requires real per-jurisdiction
+research. A course promising easy money would sell better.
+
+Saying this plainly is the course applying its own standard to itself, and it is the strongest
+available demonstration that disclosure-first is not a slogan.
+
+---
+
+## 4. What is still open
+
+1. Upgrade every **[REPORTED]** item to **[VERIFIED]** against primary text, especially the Georgia
+   pay-direct rule and the Florida 120-day tax deed clock.
+2. Georgia: does any rule govern finders for **county-held** excess funds under § 48-4-5, as distinct
+   from state-held unclaimed property? This is the gap in the comparison table.
+3. Texas: attorney referral-fee arrangements under the rules of professional conduct.
+4. Whether any of the three states requires registration or licensure for a surplus recovery business
+   specifically, beyond Georgia's CDR registration.
+5. Unauthorized practice of law boundaries in each state for claim-preparation assistance. Relevant to
+   the free PDF: describing a process is information, advising a named person on their matter is not.
+6. The legal review BAM agreed to, before the business module publishes.
+
+---
+
+## 5. Practical help: what to actually do
+
+Added at BAM's request. This section is operating guidance, not course content.
+
+### 5.1 The honest economics, per file
+
+Read this before deciding how much time a file deserves. The caps do most of the work.
+
+| State | What you may charge | Revenue on a $20,000 surplus | Revenue on a $60,000 surplus |
+| --- | --- | --- | --- |
+| **Florida** (foreclosure surplus, assigned) | Up to 12% | Up to $2,400 | Up to $7,200 |
+| **Georgia** (county-held excess funds) | Not capped by the unclaimed-property rule; verify whether any rule applies pre-transfer | Open question, see 4.2 | Open question |
+| **Georgia** (state-held, post 5-year cliff) | Up to 10%, and unenforceable for 24 months | Up to $2,000 | Up to $6,000 |
+| **Texas** (non-attorney) | **Nothing** | $0 | $0 |
+| **Texas** (attorney) | 25% or $1,000, whichever is less | $1,000 | $1,000 |
+
+**The strategic read:** Florida is the only one of the three where a fee-for-service business scales,
+because the cap is a percentage rather than a dollar ceiling. Georgia works before the five-year cliff
+if the county-held gap resolves favourably. Texas is a free-information and referral market, or an
+assignee market, and nothing else. **Do not build a national business model on a Florida spreadsheet.**
+
+### 5.2 The first thirty days, in order
+
+1. **Pick one county.** Not one state, one county. Learn its ledger format, its clerk, its claim form
+   and its actual timelines before adding a second.
+2. **Read that county's last twelve months of surplus lists** without contacting anyone. You are
+   learning what a normal file looks like, what the typical surplus is, and how fast they are claimed.
+3. **File one claim for yourself or a willing friend**, if you can legitimately find one, or walk the
+   process with the clerk's office as a member of the public. **Do not sell a service you have never
+   performed.**
+4. **Write the free PDF for that one county** (outline in 5.3), and have the clerk's office glance at
+   it. Most will tell you if it is wrong, and a clerk who recognises your name later is an asset.
+5. **Only then, contact anyone.**
+
+### 5.3 What goes in the free PDF
+
+One per jurisdiction, because a national PDF is either useless or wrong. Roughly two pages:
+
+1. What surplus funds are, in three sentences, and that the money is theirs.
+2. **The specific office holding it** in that county, with address, phone and hours.
+3. The exact form name, and where to download it.
+4. What documents they need: government ID, proof of ownership at the time of sale, and the notice
+   they received.
+5. **The deadline, in bold**, with what happens if they miss it.
+6. That it costs nothing to file themselves, stated plainly.
+7. The free help available: the clerk's office, legal aid, and HUD-approved housing counselling.
+8. **Then, and only at the end:** what you charge to do it for them, and what they get for it.
+
+Keep it general to the process, never specific to their case. Describing a procedure is information;
+telling a named person what to file in their matter drifts toward the unauthorized practice of law.
+
+### 5.4 The questions to bring to the lawyer
+
+The review BAM agreed to is worth far more with a specific list. In priority order:
+
+1. In this state, may a non-attorney charge a fee to assist with a surplus or excess-funds claim, and
+   under what structure?
+2. Does any registration, bonding or licence apply to that activity here (PI, real estate, notary,
+   claimant representative)?
+3. Where is the line between preparing a claim and practising law in this state?
+4. Is there a mandatory disclosure, a waiting period after sale, or a required contract form?
+5. May client funds pass through my account, or must the county or state pay the owner directly?
+6. What does my contingency agreement need to contain, and what would void it?
+7. If I operate in several states, which state's rules govern: where the property is, where the owner
+   now lives, or where I am?
+8. What is my exposure if a claim I file is rejected or is later contested by another claimant?
+
+Question 7 is the one people forget, and for a national business it is the most consequential.
+
+### 5.5 Data sources, in the order of how much they cost you
+
+Free first, because most of this is public by law.
+
+- **County clerk of court, treasurer, tax commissioner and comptroller sites.** Surplus lists, excess
+  proceeds reports, registry of court balances. Often published outright.
+- **Public records request** where nothing is published. It is public information and you may ask.
+- **State unclaimed property portals**, reachable through the NAUPA directory and MissingMoney, for
+  funds that have already passed the county stage.
+- **The court docket** for the underlying case, which tells you the lienholders and whether anything
+  is contested.
+- **Paid skip tracing** last, once a file is worth it. It is the only line item with real per-record
+  cost and the only one carrying consumer-data obligations.
+
+### 5.6 Metrics worth tracking from file one
+
+Most operators track revenue and nothing else, which hides the two things that actually kill the
+business: files that expire, and outreach that never lands.
+
+| Metric | Why it matters |
+| --- | --- |
+| Lists monitored, and days since last check | A missed list is a missed deadline you never knew about |
+| Files opened per list | Tells you which counties are worth the monitoring cost |
+| Skip trace hit rate | Directly sets your cost per contactable file |
+| Contact rate, and response rate | The letter is either working or it is not, and volume hides which |
+| Conversion to signed | Where the disclosure model should outperform, and you will have the data to prove it |
+| **Days to deadline at signing** | The single best predictor of whether a file closes |
+| **Files expired unclaimed** | The number that should keep you honest. Every one is a person who lost money |
+| Realised fee versus cap | Whether you are pricing at the ceiling or below it, and whether that is deliberate |
+
+### 5.7 Who not to work with
+
+The industry has a partnering culture, and some of it is a liability transfer. Signals worth walking
+away from: anyone who will not put their fee in writing before a signature; anyone selling lists of
+"pre-qualified" claimants without saying how consent was obtained; anyone whose contract routes funds
+through their account in a state where that is restricted; anyone teaching that the deadline pressure
+should be used as a closing tool rather than disclosed as a fact; and anyone who cannot tell you which
+statute caps their fee in the state they operate in.
+
+### 5.8 Where this stops being a good idea
+
+Stated plainly, because the course says the same thing about itself. Reconsider if: the counties near
+you publish nothing and answer no records requests; your state prohibits non-attorney fees, as Texas
+does; you cannot fund several months of outreach before the first fee arrives; or you are not willing
+to tell every single person that they can do this themselves for free. **The last one is not a
+values test. It is the business model**, and without it you are competing on envelope design against
+operators with more capital.
+
+## References
+
+- Atuahene, B., & Berry, C. R. (2019). Taxed out: Illegal property tax assessments and the epidemic of tax foreclosures in Detroit. *UC Irvine Law Review, 9*(4), 847-886. https://scholarship.law.uci.edu/ucilr/vol9/iss4/3/
+- Fla. Stat. § 45.033 (2025). *Sale or assignment of rights to surplus funds in a property subject to foreclosure*. https://www.flsenate.gov/Laws/Statutes/2025/0045.033
+- Fla. Stat. § 197.582 (2025). *Disbursement of proceeds of sale*. https://www.flsenate.gov/Laws/Statutes/2025/197.582
+- Ga. Code Ann. § 7-1-359. *Fee prohibited for conducting search of dormant, abandoned, or unclaimed deposit accounts; commission or finder's fee allowed*. https://law.justia.com/codes/georgia/2020/title-7/chapter-1/article-2/part-6/section-7-1-359/
+- Ga. Code Ann. § 44-12-224. *Agreement and fees for recovery or assistance in recovery of property reported and delivered to commissioner*. https://law.justia.com/codes/georgia/2021/title-44/chapter-12/article-5/section-44-12-224/
+- Ga. Code Ann. § 48-4-5. *Payment of excess*. https://law.justia.com/codes/georgia/title-48/chapter-4/article-1/section-48-4-5/
+- Georgia Department of Revenue. (n.d.). *Unclaimed property program*. https://dor.georgia.gov/unclaimed-property-program
+- Tex. Tax Code § 34.04. *Claims for excess proceeds*. https://texas.public.law/statutes/tex._tax_code_section_34.04
+- *Tyler v. Hennepin County*, 598 U.S. 631 (2023). https://www.supremecourt.gov/opinions/22pdf/22-166_8n59.pdf`,
+    provenance: "plans/future-courses/real-estate/00-surplus-funds-brief.md",
+  },
+  {
+    key: "real-estate-surplus-compliments",
+    title: "surplus compliments",
+    group: "Real Estate",
+    summary: "make this a series and learning path.",
+    body: `make this a series and learning path.
+what other services could I offer that are similar, complimentary, etc?
+
+
+If you already have the infrastructure to look up public records, cross-reference data, and skip trace hard-to-find individuals, you can easily pivot into several high-margin, complementary niches.The asset recovery and real estate sectors offer multiple parallel services that leverage the exact same skill sets.1. Directly Similar "Asset Recovery" NichesInstead of focusing only on foreclosure auctions, you can target other places where cash gets trapped in government systems.Deceased Estate & Probate Research (Heir Finding): When a person dies without a will or obvious heirs, their cash, investments, and property sit in a probate court or state fund. You use your skip tracing skills to find the next of kin, notify them of their inheritance, and help them file a claim with the probate court.State Unclaimed Property Locating: Millions of dollars in uncashed corporate checks, old utility deposits, forgotten insurance payouts, and dormant bank accounts are sitting in state databases (like MissingMoney). Many states allow registered "Professional Finders" to locate the owners and claim a percentage of the cash.Corporate Asset Recovery: Businesses lose track of massive funds due to mergers, name changes, or closed locations. You can audit state registries specifically looking for dissolved or active companies that have large uncashed vendor checks, tax overpayments, or forgotten escrow balances.2. Complimentary "Pre-Auction" Real Estate ServicesInstead of waiting for a house to be sold and chasing the leftover money, you can reach out to homeowners before they lose the property.Pre-Foreclosure / Tax Delinquency Consulting: Use the county's public "delinquent tax" or "lis pendens" (foreclosure warning) lists to find homeowners who are behind on payments. You can connect them with legal aid, help them negotiate a payment plan, or guide them through a short sale to save their equity before the state takes it.Wholesaling or Real Estate Investing: Many people facing foreclosure simply want out. You can partner with a real estate investor (or act as one) to make cash offers to purchase the distressed home directly from the owner, paying off their debt and letting them walk away with cash without a destructive foreclosure on their credit score.3. Service Provider Niches (B2B)You can flip your business model and sell your research directly to other professionals who need your data but don't want to dig for it.Skip Tracing for Real Estate Investors: Real estate investors constantly look for "zombie properties" or vacant houses but cannot find the owners. You can charge a flat fee to locate the current contact info, phone numbers, or relatives of the property owner.Asset Searches for Family Law or Probate Attorneys: Attorneys frequently hire private locators to run comprehensive asset checks on individuals. You can perform deep-dive public record audits to uncover hidden properties, corporate links, or vehicles for divorce or estate settlements
+
+I want to do both, focus on individual people (heir hunting, unclaimed cash) or businesses (corporate refunds)?
+
+Here are the exact data sources and marketing strategies needed to execute both cash recovery and real estate investing across individual and corporate markets.
+------------------------------
+## Part 1: Cash Recovery (Individuals & Businesses)
+To recover surplus funds, unclaimed cash, corporate refunds, and estate assets, you must master two separate operational pipelines.
+## Specific Data Sources
+
+* 
+* Surplus & Tax Overage Funds: Monitor the County Clerk of Court foreclosure auction ledgers and the County Treasurer or Comptroller tax deed sale lists. Look for documents labeled "Registry of Court Balances" or "Excess Proceeds Reports."
+* State Unclaimed Property (Individuals): Audit official state treasury portals linked via the [National Association of Unclaimed Property Administrators (NAUPA)](https://unclaimed.org/) and [MissingMoney](https://www.missingmoney.com/). [1, 2] 
+* Corporate Refunds & Bankruptcy Dividends: Scrape the [U.S. Courts PACER system](https://pacer.uscourts.gov/) for Chapter 7 or Chapter 11 bankruptcy cases with unclaimed funds due to creditors. Search state Department of Revenue portals for corporate tax overpayments.
+* Heir Hunting & Probate Asset Records: Review your local Probate Court docket for estates opened "intestate" (without a will) where no heirs are listed. Cross-reference these names with genealogy databases like [Ancestry.com](https://www.ancestry.com/) or [FamilySearch](https://www.familysearch.org/) to map out family trees.
+* People Finding & Skip Tracing: Use professional-grade skip tracing platforms like [IdentiFI (formerly TLOxp)](https://www.tlo.com/), LexisNexis Accurint, or [BatchSkipTracing](https://www.batchskiptracing.com/) to find hidden corporate officers, new addresses, and next of kin.
+* 
+
+## Marketing Strategies
+
+* 
+* The "Zero Out-of-Pocket" Contingency Letter: Send a hyper-personalized, professional letter to the individual or business owner. Do not tell them the exact source of the money yet.
+* The Pitch: "Our firm has located audit overpayments/unclaimed funds belonging to [Name/Company] held by a government agency. We work entirely on a contingency fee; if we do not recover your funds, you owe us nothing."
+* Corporate B2B Outreach: When targeting businesses for corporate refunds, bypass general customer service. Direct your mail, cold calls, or LinkedIn outreach to the Chief Financial Officer (CFO), Controller, or Corporate Counsel.
+* Heir Hunting Proof Packages: When contacting potential heirs, present a clear, documented family tree layout alongside your contingency agreement to establish immediate credibility and prove your research is legitimate.
+* 
+
+------------------------------
+## Part 2: Real Estate Investing (Pre-Auction Equity Rescue)
+Instead of waiting for a house to go to auction, you can use the same data to intervene early. This allows you to buy the property directly from the owner, pay off their debt, and keep the remaining equity.
+## Specific Data Sources
+
+* 
+* Pre-Foreclosures (Lis Pendens): Pull weekly or daily "Lis Pendens" or "Notice of Default" filings from your local County Recorder of Deeds or County Clerk.
+* Tax Delinquencies: Request the annual or quarterly Delinquent Tax Roll directly from the County Tax Collector. This list contains every property owner who is behind on their property taxes but has not yet lost the home.
+* Inherited/Probate Properties: Monitor the Probate Court listings for newly filed estates. Look for cases where real estate is listed as an asset, indicating that the heirs may want to liquidate the property quickly for cash.
+* Aggregated Real Estate Data Systems: Use investor-specific platforms like [PropStream](https://www.propstream.com/) or [BatchLeads](https://batchleads.io/) to filters properties nationwide by specific motivation markers (e.g., "Out-of-State Owner + Tax Delinquent"). [3, 4, 5, 6, 7] 
+* 
+
+## Marketing Strategies
+
+* 
+* The "Equity Rescue" Direct Mail Campaign: Send a compassionate, non-threatening letter or postcard to distressed property owners before the auction date arrives.
+* The Pitch: "We notice your property has an upcoming public date. Avoid a permanent hit to your credit score. We can buy your home as-is for cash, pay off your total debt immediately, and put the remaining equity directly into your pocket before the sale."
+* Multichannel Skip Tracing & Cold Calling: Feed your delinquent tax list into an auto-dialer platform. Call the owners directly to offer a fast cash close, focusing your script on solving their immediate financial crisis.
+* Door Knocking/Local Field Research: For high-equity properties facing immediate auction, physically visit the home to hand-deliver an offer package. If the property is vacant, look up neighbors to locate the owner's current whereabouts. [8] 
+* 
+
+------------------------------
+## Comparative Strategy Overview
+Use this table to balance your operations as you scale nationally.
+
+| Strategy Pillar | Target Market | Primary Data Source | Core Marketing Channel | Typical Monetization |
+|---|---|---|---|---|
+| Surplus Recovery | Individuals / Businesses | County Clerk Auction Ledgers | Direct Mail / Skip Trace Calls | 10%, 30% Contingency Fee |
+| Heir Hunting | Next of Kin / Heirs | Intestate Probate Dockets | Certified Mail / Genealogy Proof | Percentage of total estate value |
+| Unclaimed Cash | Active / Dissolved Corporations | State Treasuries / PACER | B2B Cold Outreach (CFO/Controller) | Contracted recovery fee |
+| Real Estate Investing | Distressed Property Owners | Tax Delinquent Lists / Lis Pendens | Direct Mail / Door Knocking / Cash Offers | Assignment Fee (Wholesale) or Property Equity |
+
+------------------------------
+To help you draft your first action plan, let me know:
+
+* 
+* What state or city do you want to use as your initial test market?
+* Will you start as a solo operator digging into data, or do you have a budget for paid databases and mailing campaigns?
+* 
+
+ provide a step-by-step launch checklist for your chosen market size.
+
+To launch this venture successfully, we will look at a Medium-Market Blueprint. This means targeting one core state with 2 to 3 highly populated counties to test your systems before scaling nationally.
+This checklist is structured to take you from a solo researcher to an active operator making deals.
+------------------------------
+## Phase 1: Legal & Structural Setup (Days 1-7)
+Before reaching out to the public or corporations, you must protect yourself legally and comply with state asset laws. [1] 
+
+* [ ] Form a Business Entity: Set up a Limited Liability Company (LLC). Choose a professional, neutral name like [Your Name] Asset Management or [Your Name] Equity Solutions so it works seamlessly for both cash recovery and real estate. [2, 3] 
+* [ ] Set Up a Virtual Office: Secure a professional business address (not a P.O. Box) using a service like iPostal1 or Regus, and set up a dedicated business phone line via Google Voice, OpenPhone, or Zoom Phone.
+* [ ] Pull State Compliance Rules: Research your target state’s laws regarding "Unclaimed Property Finders" and "Foreclosure Surplus Recovery." Note any state-mandated caps on finders' fees (e.g., 10% limit) and verify if a Private Investigator (PI) license or Notary stamp is required.
+* [ ] Establish Business Banking: Open a business checking account using your LLC paperwork and Employee Identification Number (EIN). You will need this to keep your business expenses and future contingency checks separate from personal funds. [4, 5, 6, 7, 8] 
+
+------------------------------
+## Phase 2: Data Extraction & List Building (Days 8-14)
+Gather your first batch of data for both cash recovery and real estate investing.
+
+* [ ] Pull the Tax Deed & Foreclosure Surplus Ledger: Go online or call the County Clerk of Court / County Treasurer in your 2-3 target counties. Request the "registry of court balances," "excess proceeds list," or "overage spreadsheet."
+* [ ] Extract the County Tax Delinquent Roll: Contact the County Tax Collector and request the list of all properties currently 2+ years behind on property taxes. Filter this list to find properties with high estimated equity. [9] 
+* [ ] Scrape State Unclaimed Property Databases: Search the state treasury portal or MissingMoney.com specifically for active or dissolved corporations in your target counties that have unclaimed funds over $1,000.
+* [ ] Scrape the Probate Docket: Access the local county probate court portal. Download records of individuals who died "intestate" (without a will) within the last 12 months where an estate administrator has not yet found all the heirs.
+
+------------------------------
+## Phase 3: Skip Tracing & Lead Filtering (Days 15-21)
+Turn your raw list of names and old addresses into actionable contact information.
+
+* [ ] Select a Professional Skip Tracing Tool: Sign up for an investor-grade locator platform. Use BatchSkipTracing, PropStream, or IdentiFI (TLOxp) to access deep public data.
+* [ ] Upload and Clean Your Lists: Run your surplus list and tax delinquent list through the skip tracer. Ensure you pull the most current phone numbers, email addresses, and mailing addresses for the owners or their potential next of kin.
+* [ ] Filter for High-Value Leads: Prioritize your lists. For cash recovery, focus on balances over $5,000. For real estate investing, look for properties facing a forced auction date within the next 30 to 60 days. [10, 11] 
+
+------------------------------
+## Phase 4: Marketing & Outreach (Days 22-30)
+Launch your outreach campaigns simultaneously across both niches.
+
+* [ ] Print and Mail "Cash Recovery" Letters: Mail highly professional, personalized letters to the surplus owners or heirs. Use an authoritative, non-sales tone offering a 100% contingency-based asset recovery service.
+* [ ] Launch "Equity Rescue" Letters / Postcards: Send direct mail to the tax-delinquent homeowners. Offer a compassionate "cash buy-out" solution to pay off their debt and hand them their equity before the state takes the home.
+* [ ] Execute Corporate B2B Cold Outreach: Call or message the CFOs, Controllers, or registered agents of the businesses you found with unclaimed corporate refunds. Frame the call as a corporate audit discovery.
+* [ ] Run a Cold Calling Campaign: Dedicate 2 to 3 hours a day to calling your skip-traced phone numbers for both lists. Use a calm, problem-solving script focused entirely on how you can help them navigate the county's complex processes. [12] 
+
+------------------------------
+## Phase 5: Transaction & Contract Management (Ongoing)
+Secure your finder's fee or secure the real estate purchase agreement.
+
+* [ ] Deploy Contingency Fee Agreements: When a cash recovery lead responds, have them sign a state-compliant Contingency Agreement and a Limited Power of Attorney so you can legally file the claim on their behalf.
+* [ ] Deploy Real Estate Purchase Contracts: When a tax-delinquent homeowner agrees to sell, secure the property using a standard as-is Purchase and Sale Agreement.
+* [ ] Coordinate with a Title Company / Attorney: Partner with an investor-friendly title company or real estate attorney. They will handle the closing for your real estate deals or help navigate the county court hearings to release your clients' surplus funds.
+
+------------------------------
+To help customize this blueprint, let me know:
+
+* What specific state have you decided to target for your launch?
+* Do you have legal templates (like a Contingency Fee Agreement or Real Estate Purchase Contract) ready to use?
+
+start in Indiana, AZ, CA, NY.reating
+I would like help creating legal templates  (like a Contingency Fee Agreement or Real Estate Purchase Contract) ready to use
+
+When launching across [Indiana](https://www.google.com/search?kgmid=/m/03v1s), [Arizona](https://www.google.com/search?kgmid=/m/0vmt), [California](https://www.google.com/search?kgmid=/m/01n7q), and [New York](https://www.google.com/search?kgmid=/m/059rby), you are dealing with four distinct legal landscapes. For asset recovery (surplus funds), state-specific compliance is non-negotiable because states enforce strict consumer protection laws regarding what a "finder" can do and charge.
+
+* 
+* Indiana: Limits tax sale surplus agreement fees strictly and requires specific statutory disclosure language notifying the owner that they can claim the funds for free through the state.
+* Arizona & California: Enforce strict statutory caps on asset recovery fees. In California, third-party asset finders are highly regulated, and agreements must explicitly layout gross vs. net recovery costs.
+* New York: Extremely protective of consumers; agreements must be strictly written to avoid being classified as unauthorized practice of law or predatory.
+* 
+
+The foundational blueprints below outline the key legal components required for these operations.
+------------------------------
+## 1. Asset Recovery Contingency Fee Agreement (Template Blueprint)
+This agreement establishes you as the independent investigator and defines your fee structures based on successful recovery.
+
+ASSET RECOVERY & DISCOVERY AGREEMENT (CONTINGENCY-BASED)
+
+1. THE PARTIES: This Agreement is entered into by and between [Your LLC Name] ("Finder") and [Homeowner/Heir Name] ("Claimant").
+
+2. THE PROPERTY/ASSET: Finder has located unclaimed funds, surplus auction proceeds, or overpayments (the "Asset") stemming from public records tracking associated with the property formerly known as [Prior Property Address / Parcel ID].
+
+3. SERVICES RENDERED: Finder agrees to prepare, file, and track the necessary administrative documentation with the holding government agency to facilitate the release of the Asset to Claimant. Finder acts solely as an independent researcher and does not provide legal representation.
+
+4. CONTINGENCY FEE & EXPENSES: 
+   - Claimant agrees to pay Finder a contingency fee equal to [X]% of the gross funds successfully recovered and released by the agency. 
+   - [STATE COMPLIANCE CLAUSE]:
+     * For CALIFORNIA/ARIZONA: Fees shall not exceed the maximum statutory caps for third-party asset recovery.
+     * For INDIANA: In accordance with Ind. Code § 32-34-1.5-74, Claimant is hereby informed that a claim for property held by the state may be made without charge through the state directly. The value expected to be recovered is approximately $________ before fees, and $________ after Finder's fee.
+   - Finder will advance all upfront tracking, administrative, and notary costs. If NO funds are recovered, Claimant owes Finder $0.00.
+
+5. LIMITED POWER OF ATTORNEY: Claimant grants Finder a Limited Power of Attorney solely to request documentation, communicate with the holding treasury/court clerk, and submit claims regarding this specific Asset. This does not grant authority over any other personal assets or accounts.
+
+6. AGREEMENT TERM & EXPIRATION: This contract remains valid for exactly twelve (12) months from the execution date. If the holding agency rejects the claim or funds cannot be cleared within this window, this contract automatically terminates.
+
+CLAIMANT SIGNATURE: _______________________ DATE: ___________
+FINDER SIGNATURE: _________________________ DATE: ___________
+
+------------------------------
+## 2. Real Estate Purchase & Sale Contract (Investor-Friendly Blueprint)
+This contract is designed for your "Equity Rescue" model, enabling you to buy a distressed property "as-is" to pay off the owner's debt before the state auction occurs.
+
+REAL ESTATE PURCHASE AND SALE AGREEMENT (AS-IS CONDITIONAL)
+
+1. PARTIES & PROPERTY: [Seller Name] ("Seller") agrees to sell, and [Your LLC Name] and/or its assigns ("Buyer") agrees to buy the real property located at: [Full Legal Address & Parcel ID Number].
+
+2. PURCHASE PRICE & FINANCING: 
+   - Total Purchase Price: $____________________
+   - Earnest Money Deposit (Held in Escrow): $____________________
+   - Balance due to Seller at closing via wire transfer after clearing all recorded liens, delinquent taxes, and mortgages.
+
+3. CLOSING DATE & ESCROW: Closing shall take place on or before [Date], or within ____ days of clearing title defects. Closing will be handled by a licensed title company or real estate attorney selected by Buyer.
+
+4. CONDITION OF PROPERTY ("AS-IS"): Seller agrees to deliver the property in its current "as-is" condition at the time of contract execution. Buyer assumes responsibility for all outstanding structural, mechanical, cosmetic, or environmental defects. Seller is relieved of all repair liabilities.
+
+5. INVESTOR CONTINGENCIES (BUYER'S RIGHT TO CANCEL):
+   - TITLE INSPECTION: This agreement is strictly contingent upon the Buyer obtaining a clean, insurable clear title report showing no unresolvable judgments or secondary lien restrictions.
+   - PARTNERSHIP/FUNDS APPROVAL: Buyer retains an inspection period of _____ business days from the effective date to perform due diligence, property walkthroughs, and secure internal partner project funding. Buyer may terminate this contract via written notice before this window expires without forfeiting the Earnest Money Deposit.
+
+6. LIENS & EQUITY RESCUE CLEARANCE: Buyer's closing agent is explicitly authorized to issue direct payouts from the purchase proceeds to satisfy all delinquent property taxes, active foreclosure balances, and municipal code liens to completely rescue the Seller from impending public auction execution.
+
+SELLER SIGNATURE: _______________________ DATE: ___________
+BUYING ENTITY SIGNATURE: _________________ DATE: ___________
+
+------------------------------
+## 3. State-Specific Implementation Reminders
+Before utilizing these blueprints, align your operational terms with local state codes:
+
+* 
+* California Civil Code § 22.2 / Government Codes: Ensure that for foreclosure surpluses, you verify whether the county requires a specialized Trustee Sale Guarantee (TSG) or structured motion format before submitting a claim on behalf of an owner.
+* Indiana Code § 6-1.1-24-7.5: If you are recovering money from an Indiana Tax Sale Surplus Fund specifically, agreements signed before the tax deed is issued or within a specific window face hyper-strict invalidation risks if they exceed statutory terms.
+* Assignability Clauses: The phrase "and/or its assigns" in the Real Estate contract allows you to wholesale the property to another investor for an assignment fee if you do not want to fund the full purchase yourself. Ensure assignment rules are permitted by the local county boards you target.
+* 
+
+To finalize your document package, tell me:
+
+* 
+* Do you plan to have a closing attorney review these, or do you need a list of investor-friendly title companies in your target cities?
+* Do you want to add an authorization form that lets you speak directly to the homeowner’s mortgage bank?
+* 
+
+I can provide the exact language to secure authorization from financial institutions.
+
+I need a list of investor-friendly title companies in your target cities? I want to add an authorization form that lets you speak directly to the homeowner’s mortgage bank? provide the exact language to secure authorization from financial institutions
+
+## 1. Investor-Friendly Title Companies & Closing Attorneys
+When wholesaling, doing "equity rescues," or executing complex double-closings, you cannot use a traditional retail title company. Retail title companies often panic when they see assigned contracts or back-to-back closings. You need firms that understand assignments, double-closings, and corporate investor structures. [1] 
+Because real estate is highly localized, here are vetted, investor-preferred national and regional settlement providers covering your four target states: [2] 
+## National & Multi-State Providers
+
+* Amrock / Rocket Title (Operates nationally, highly digitized for remote investor closings).
+* First American Title, National Commercial Services (Excellent for handling high-volume corporate and commercial investment deals across CA, AZ, IN, and NY).
+* Fidelity National Title (Investor-friendly branches in almost every major metro area).
+
+## Arizona (Maricopa County / Phoenix Metro)
+
+* Empire Title Agency (Well-known among local Phoenix wholesalers and flippers for smooth contract assignments).
+* Pioneer Title Agency (Highly investor-friendly, understands distressed assets and probate sales).
+
+## California (Los Angeles / San Diego / Bay Area)
+
+* Viva Escrow! (Based in LA; highly experienced with investor transactions, flip escrows, and assignments).
+* Orange Coast Title Company (Has dedicated investor desks that routinely close wholesale and double-close deals).
+
+## Indiana (Marion County / Indianapolis Metro)
+
+* Royal Title Services (The go-to title company for Indianapolis real estate investors; completely understands wholesaling and double-closings).
+* Centurion Land Title (Very investor-friendly, swift turnarounds on title searches for distressed tax-delinquent properties).
+
+## New York (NYC / Buffalo / Rochester)
+
+* Note: New York is an attorney-closing state. Title companies issue the insurance, but real estate attorneys must clear the title and close the deal.
+* Riverside Abstract (A massive, investor-focused title agency that works seamlessly with investment attorneys in NY).
+* Avenue 360 Abstract (Specializes in investor transactions, commercial deals, and distressed property title clearance).
+
+------------------------------
+## 2. Authorization to Release Information (The Third-Party Authorization Form)
+Mortgage companies will absolutely refuse to speak to you, give you a payoff balance, or confirm a foreclosure timeline due to strict federal privacy laws (Gramm-Leach-Bliley Act).
+To bypass this, the homeowner must sign a Third-Party Authorization Form. You will fax or email this document directly to the bank’s loss mitigation or customer service department before you call.
+## Exact Legal Language for the Authorization Form
+
+THIRD-PARTY AUTHORIZATION TO RELEASE INFORMATION
+
+TO (Financial Institution / Mortgage Servicer): __________________________________
+LENDER ACCT / LOAN NUMBER: ____________________________________________________
+PROPERTY ADDRESS: _____________________________________________________________
+BORROWER 1 NAME: ________________________ SSN (Last 4): XXX-XX-_______
+BORROWER 2 NAME: ________________________ SSN (Last 4): XXX-XX-_______
+
+1. AUTHORIZATION GRANT: 
+I/We, the undersigned Borrower(s), hereby explicitly authorize and direct the above-named Financial Institution, its agents, successors, and assigns, to release any and all financial, account, and transactional information to the following authorized third party:
+
+AUTHORIZED PARTY NAME: [Your LLC Name]
+AUTHORIZED REPRESENTATIVES: [Your Name] and/or designated staff
+MAILING ADDRESS: [Your LLC Business Address]
+PHONE NUMBER: [Your Business Phone]
+EMAIL ADDRESS: [Your Business Email]
+
+2. SCOPE OF INFORMATION TO BE RELEASED:
+This authorization permits the unhindered disclosure of all information regarding my loan account, including but not limited to: current reinstatement figures, total payoff balances, corporate advance breakdowns, payment histories, escrow balances, active foreclosure sale dates, loss mitigation statuses, and any legal notices or fee ledgers.
+
+3. REPRESENTATION DISCLAIMER:
+I/We understand and acknowledge that the Authorized Party is an independent entity and does not represent the Financial Institution. The Authorized Party is permitted to request verbal or written updates, electronic documents, or faxed payoff statements on my behalf.
+
+4. DURATION & REVOCATION:
+A photocopy, electronic copy, or facsimile of this signed authorization shall be deemed as valid as the original. This authorization shall remain in full force and effect for exactly twelve (12) months from the date of execution unless revoked by me in writing.
+
+BORROWER 1 SIGNATURE: _______________________ DATE: ___________
+
+BORROWER 2 SIGNATURE: _______________________ DATE: ___________
+
+------------------------------
+## 3. Operational Step-by-Step for Using the Authorization Form
+
+   1. Get it Signed Up Front: Have the homeowner sign this form at the exact same time they sign your Real Estate Purchase Contract or Asset Recovery Agreement.
+   2. Contact the Servicer: Call the mortgage company with the homeowner. Ask for the fax number or secure upload email address for "Third-Party Authorizations." [3] 
+   3. Submit and Wait: Send the form in. It typically takes the bank 24 to 48 hours to scan the document into their system and flag your name as an authorized contact.
+   4. Follow Up For the Payoff: Once processed, you can call the bank independently (without the homeowner on the line) to request the exact written payoff statement needed by your investor-friendly title company to close the deal.
+
+------------------------------
+To help keep your launch moving forward, let me know:
+
+* Would you like me to draft a scripts template for what to say when calling the homeowner or the bank?
+* Do you want to see an example of a wholesale assignment contract used to flip the real estate deals to other investors?
+
+draft a scripts template for what to say when calling the homeowner or the bank. I want to see an example of a wholesale assignment contract used to flip the real estate deals to other investor
+
+## 1. Communication Scripts## A. Calling a Homeowner (Surplus Funds / Cash Recovery)
+
+* Goal: Build trust, verify identity, and explain that they have money waiting for them without sounding like a scammer.
+
+You: "Hello, is this [Owner Name]?"
+Homeowner: "Yes, who is this?"
+You: "Hi [Owner Name], my name is [Your Name] with [Your LLC Name]. I know this call is out of the blue, but I am an asset researcher. Our company audits public records, and we found a significant amount of unclaimed funds held by the county court that legally belongs to you, stemming from your previous property on [Old Street Address]. Are you familiar with that property?"
+Homeowner: (Skeptical) "Yeah, I lost that house. There is no money left."
+You: "I completely understand why you'd think that, and I am so sorry for what you went through with that sale. But here is what actually happened: when the county sold the house at auction, it sold for more than the back taxes/debt you owed. By law, that extra money belongs to you, not the state. The county doesn't go out of their way to find you, so it just sits there until it expires. We want to help you recover it."
+Homeowner: "What's the catch? How much does this cost?"
+You: "There is absolutely no upfront cost. We work entirely on a contingency basis. We cover all the administrative paperwork, notary fees, and tracking out of our own pocket. If we successfully recover your money, we take a small percentage fee at the very end when you get paid. If we don't get your money back, you owe us absolutely nothing. I can send over our simple agreement to look over. What is the best email or mailing address for you?"
+
+## B. Calling a Homeowner (Pre-Foreclosure / Real Estate Equity Rescue)
+
+* Goal: Offer a quick, dignified escape from foreclosure before the state or bank takes their equity.
+
+You: "Hello, I'm looking for [Owner Name]."
+Homeowner: "This is [Owner Name]."
+You: "Hi [Owner Name], my name is [Your Name]. I am a local real estate transition specialist. I’m calling because I noticed your property on [Street Address] has an upcoming public auction date. I'm not calling to list your home as an agent-I'm calling to see if I can help you save your equity before that auction happens."
+Homeowner: "I can't afford to save it, the bank is taking it."
+You: "I understand, and it's a very stressful position to be in. But if the property goes to auction, the bank takes control, your credit is heavily damaged for seven years, and you walk away with nothing. Our company can step in right now, buy the property directly from you 'as-is' for cash, completely pay off your mortgage debt to stop the auction, and put your remaining equity directly into your pocket at closing. It costs you nothing out of pocket, and you leave with cash to start your next chapter. If I could make a cash offer that clears your debt and puts money in your pocket this week, would you be open to hearing it?"
+
+## C. Calling the Mortgage Bank (After Authorization is Processed)
+
+* Goal: Safely extract the exact payoff amount and stop-auction timeline.
+
+You: "Hi, my name is [Your Name] representing [Your LLC Name]. I am calling regarding loan number [Loan Number] for borrower [Borrower Name]. We submitted a Third-Party Authorization form to your customer service/loss mitigation department on [Date]. I need to confirm that it has been uploaded to the account so I can request a written payoff statement."
+Bank Agent: (Checks system) "Yes, I see the authorization form on file here. How can I help you today?"
+You: "Great. Please generate a formal, written Payoff Statement good through [Date 30 days from now] including all principal, interest, deferred balances, and corporate advances. Please email that statement directly to [Your Business Email]. Additionally, can you confirm the exact date and time of the scheduled foreclosure sale, and verify if the bank requires a executed purchase contract to consider a temporary postponement of that sale?"
+
+------------------------------
+## 2. Real Estate Assignment of Contract (Template Blueprint)
+This is the legal contract you use to "flip" your purchase agreement to a cash buyer/investor for an assignment fee, without ever funding the purchase yourself.
+
+ASSIGNMENT OF REAL ESTATE PURCHASE AND SALE AGREEMENT
+
+1. THE PARTIES: This Assignment Agreement ("Assignment") is entered into on this _____ day of ____________, 20___, by and between [Your LLC Name] ("Assignor") and [Cash Buyer's Investor LLC Name] ("Assignee").
+
+2. THE UNDERLYING CONTRACT: Assignor is the designated Buyer under that certain Real Estate Purchase and Sale Agreement dated [Original Contract Date] ("Original Contract"), by and between Assignor and [Original Seller/Homeowner Name] ("Seller"), for the purchase of the real property located at: [Full Address & Parcel ID] (the "Property"). A true and correct copy of the Original Contract is attached hereto as "Exhibit A".
+
+3. ASSIGNMENT OF RIGHTS: For valuable consideration received, Assignor hereby completely assigns, transfers, and sets over unto Assignee all of Assignor’s rights, title, interest, and obligations in, to, and under the Original Contract. Assignee explicitly assumes all responsibilities and liabilities of the Buyer outline within the Original Contract.
+
+4. CONSIDERATION / ASSIGNMENT FEE: 
+   - Assignee agrees to pay Assignor a total non-refundable Assignment Fee of $____________________.
+   - Assignee shall deposit an Earnest Money Deposit of $____________________ with [Name of Investor-Friendly Title Company] within twenty-four (24) business hours of executing this Assignment.
+   - The remaining balance of the Assignment Fee shall be paid in full to Assignor by the closing agent at the time of the successful closing of the Property transaction.
+
+5. TOTAL PURCHASE PRICE & TERMS: Assignee acknowledges that the total capital required to close this transaction is the original purchase price of $____________________ (payable to Seller/Liens) PLUS the Assignment Fee of $____________________, resulting in a total net acquisition price of $____________________.
+
+6. CLOSING & CONDITION: Assignee agrees to close on the acquisition of the Property on or before the closing date specified in the Original Contract ([Original Closing Date]). Assignee accepts the Property strictly in its "as-is" condition and acknowledges that Assignor makes no representations or warranties regarding the structural or financial status of the property.
+
+7. DEFAULT AND FORFEITURE: If Assignee fails to complete the closing in accordance with the terms of the Original Contract and this Assignment, the Earnest Money Deposit held by the title company shall be immediately forfeited to Assignor as liquidated damages, and this Assignment shall automatically terminate.
+
+ASSIGNOR SIGNATURE: _______________________ DATE: ___________
+By: [Your Name], Managing Member of [Your LLC Name]
+
+ASSIGNEE SIGNATURE: _______________________ DATE: ___________
+By: [Cash Buyer Name], Managing Member of [Investor LLC Name]
+
+------------------------------
+To help organize your database before launching, let me know:
+
+* Would you like a layout for an Excel/Google Sheets CRM tracker to manage your leads?
+* Do you want to review the typical objections homeowners throw at you and how to beat them?
+
+I can provide the exact objection-handling strategies to keep your conversations moving forward.
+
+I Would like a layout for an Excel/Google Sheets CRM tracker to manage your leads. I want to review the typical objections homeowners throw at me and how to beat them.  provide the exact objection-handling strategies to keep conversations moving forward.
+
+## 1. Excel / Google Sheets CRM Tracker Layout
+To manage both asset recovery and real estate leads effectively, you need an organized, data-driven tracker. Set up your spreadsheet with the following columns across four distinct tabs to keep your workflows separate but unified. [1] 
+## Tab 1: Lead Intake & Core Info
+
+* A: Lead ID (e.g., IN-001, AZ-002)
+* B: Lead Type (Dropdown: Surplus Funds / Heir Hunting / Pre-Foreclosure / Tax Delinquent)
+* C: Property Address (Street, City, State, Zip)
+* D: Parcel ID / APN (County identification number)
+* E: Homeowner Name(s)
+* F: Current Mailing Address (Found via skip tracing)
+* G: Phone 1 / Phone 2
+* H: Email Address
+
+## Tab 2: Financial Metrics
+
+* A: Lead ID (Matches Tab 1)
+* B: Estimated Property Value (For real estate deals)
+* C: Total Debt Owed (Back taxes or mortgage payoff balance)
+* D: Estimated Equity / Surplus Balance (The total pool of cash available)
+* E: Target Fee % (e.g., 20% for asset recovery)
+* F: Projected Revenue (Formula: Surplus Balance * Target Fee % OR expected wholesale spread)
+
+## Tab 3: Sales Pipeline & Follow-up
+
+* A: Lead ID (Matches Tab 1)
+* B: Lead Status (Dropdown: New / Skip Traced / No Answer / In Conversation / Contract Sent / Under Contract / Closed-Won / Closed-Lost)
+* C: Last Contact Date (DD/MM/YYYY)
+* D: Next Follow-Up Date (DD/MM/YYYY, Use conditional formatting to turn this row red when today's date passes it)
+* E: Communication Log (e.g., "Called 03/08/2026: Spoke to daughter, left message for owner.") [2, 3, 4, 5, 6] 
+
+## Tab 4: Transaction Milestones
+
+* A: Lead ID (Matches Tab 1)
+* B: Contract Execution Date (Date they signed your contingency or purchase agreement)
+* C: Document Checklist (Dropdown or checklist: Contingency signed / 3rd Party Auth Signed / Notarized Claim Sent to County)
+* D: Title / Escrow Company (Name of the investor-friendly settlement provider handling the file)
+* E: Expected Clearance Date (Target payout or closing date)
+
+------------------------------
+## 2. Homeowner Objections & Handling Strategies
+When dealing with distressed properties or unclaimed money, homeowners are naturally highly defensive, skeptical, and emotionally exhausted. [7] 
+## Objection 1: "This sounds like a scam. If the government owed me money, they would have sent me a check."
+
+* The Reality: The government has no financial incentive to find people they owe money to. Eventually, unclaimed cash moves to the state’s general fund.
+* The Strategy: Validate their skepticism immediately, redirect the focus to the local public records, and emphasize your zero-upfront-cost structure.
+* Exact Script:
+
+*"I completely agree with you, [Name]. If someone called me out of the blue about free money, I’d think it was a scam too. But the truth is, county departments are understaffed and under no legal obligation to track you down. They simply hold the money until the statute of limitations runs out, and then they keep it.You don't have to take my word for it. This is a matter of public record. I can give you the exact case number and the name of the county office holding it so you can verify it yourself. Best of all, you never pay me a single dime out of pocket. I only get a percentage if and when the county releases the funds directly to you. If I fail, my company eats the cost of all the paperwork and filing. Does that sound fair?"*
+
+
+## Objection 2: "I don't need you. I'll just go to the county and get the money myself."
+
+* The Reality: Navigating county court registries, surplus filing fees, and asset release hearings requires intense paperwork that most everyday consumers fail to execute correctly.
+* The Strategy: Agree that they have the right to do it alone, but explain the hidden roadblocks, strict deadlines, and complex legal petitions involved.
+* Exact Script:
+
+*"You are 100% correct, [Name]. You absolutely have the legal right to file a claim on your own. But the reason people hire my firm is the same reason people hire an accountant to do their taxes-it’s about avoiding costly mistakes.The county doesn't just hand over a check; you have to file a formal legal motion, clear any secondary liens or judgments from your past that might try to seize the money, get documents notarized, and sometimes stand before a magistrate. If you fill out one form incorrectly, the county rejects the claim, and if your timeline expires, the money is gone forever. We handle all the red tape, legal filings, and administrative headaches for you. We assume 100% of the risk so you don't have to guess. Let's get this filed correctly for you today so you don't miss the deadline."*
+
+
+## Objection 3: "I'm working with the bank on a loan modification. They told me they won't foreclose."
+
+* The Reality: Banks routinely practice "dual tracking." The customer service department will tell the owner they are reviewing a modification, while the bank’s legal department continues pushing the foreclosure auction forward in the background.
+* The Strategy: Gently break the illusion, warn them about dual tracking, and use the Third-Party Authorization form to get the hard truth from the lender.
+* Exact Script:
+
+*"I am genuinely glad you are talking to them, [Name], but I need to give you a critical warning. Banks do something called 'dual tracking' all the time. The customer service agent on the phone will tell you they are reviewing your modification documents, but their automated legal department is still moving forward with the auction date. I have seen hundreds of families get foreclosed on while waiting for a modification approval letter that never came.Let's do this: sign our standard Third-Party Authorization form. It doesn't give me any ownership of your home; it just gives me the right to call your bank's legal department and get the concrete, written timeline. If they are truly pausing the auction, I will tell you. If they are secretly moving forward with the sale next week, we will find out in time to rescue your equity. We need to verify their actual legal stance today before it's too late."*
+
+
+## Objection 4: "Your fee is too high. I'm not giving you 20% of my money." [8] 
+
+* The Reality: 80% of a large sum is infinitely better than 100% of zero dollars (which is what they get if the timeline expires).
+* The Strategy: Reframe the fee as an investment in a guaranteed outcome where they risk absolutely nothing.
+* Exact Script:
+
+*"I completely understand your perspective, [Name]. 20% sounds like a lot at first glance. But remember: 20% of this money is currently what pays for our research team, our corporate skip tracing software, our legal document preparation, and the hours we spend fighting the county bureaucracy on your behalf.Right now, you are receiving 0% of these funds because they are locked in a government vault. If we don't step in and win this claim for you, that money will eventually become property of the state, and you will walk away with nothing. We take 100% of the financial risk. If we spend months fighting the county and lose, you owe us nothing. We only succeed if you succeed. Would you rather have 80% of these funds sitting safely in your personal bank account, or leave 100% of it sitting in the government's hands?"*
+
+
+------------------------------
+To help you get completely set up, let me know:
+
+* Would you like a template for a "Proof of Funds" letter to show homeowners you have the capacity to buy their property cash?
+* Do you want to review a "First Contact" direct mail letter template that you can print and send to your surplus list right away?
+
+I can provide the exact copy to start launching your mailing campaigns.`,
+    provenance: "plans/future-courses/real-estate/surplus-compliments.md",
+  },
+  {
+    key: "real-estate-surplus-funds-basics",
+    title: "surplus funds basics",
+    group: "Real Estate",
+    summary: "Surplus Funds Basics",
+    body: `Surplus Funds Basics
+
+I want to learn how to help homeowners recover the surplus from their home sales. Here's what I found. Create a course to help me start a service to do this?
+create a series to show me how to use technology (software, ai, etc) to automate as much of the process as possible
+
+Definition: The extra money left over after the government subtracts the back taxes, penalties, interest, and legal costs from the final auction price.Legal Right: As noted by Justia, excess cash from a forced sale rightfully belongs to the owner of the equity.Supreme Court Protection: The U.S. Supreme Court ruled in Tyler v. Hennepin County that a local government keeping a home's surplus equity beyond the owed debt is an unconstitutional taking of private property.
+
+How the Process WorksPriority Payouts: The auction money first pays off the primary tax debt or mortgage, followed by any junior liens or secondary judgments.The Balance: Whatever cash is left after all official debts are satisfied is held by the county court or treasurer for the previous owner.Action Required: The former homeowner typically must file a formal claim or petition with the local county office or court to retrieve their money
+
+1. Where to Find the InformationBecause foreclosure or tax sales happen locally, the records sit with the specific county where the house was located.The Local County Website: Many counties publish a "Surplus Funds List" or "Tax Deed Overages List" directly on their website. Check the portal for the County Clerk of Court, County Treasurer, or Comptroller.Public Records Request: If the county does not post the list online, you can call or visit the Clerk of Court or County Treasurer's office. Ask for the "foreclosure surplus ledger" or "tax sale overage report". By law, this is public information.State Unclaimed Property Databases: If the home was sold years ago and the owner never claimed the cash, the county eventually transfers it to the state. You can search the homeowner's name for free on official portals like the National Association of Unclaimed Property Administrators or MissingMoney.2. How to Guide the HomeownerIf you find a balance and want to help the owner retrieve it, give them a clear roadmap so they avoid getting scammed by third-party locators who charge massive fees.Verify Identity and Ownership: Tell the homeowner they will need to prove they legally owned the property at the exact time of the sale. They should gather a government ID, the old property deed, and any legal notices they received regarding the foreclosure or tax sale.File a Formal Motion/Claim: The homeowner must contact the specific county agency holding the funds and request a Surplus Claim Form. They will fill it out, usually get it notarized, and submit it directly to the county clerk or treasurer.Watch the Clock: Emphasize that deadlines are strict. Depending on the state, owners may only have anywhere from 90 days to a few years to claim the money before it permanently transfers to the state or becomes unclaimable
+
+You can do this nationally. There are no laws limiting your search to your own state. Because public records are open to everyone, you can look for surplus funds and contact homeowners in any of the 50 states.If you plan to scale this into a nationwide business, you must follow the distinct legal guidelines established by each state and county.1. Evaluate State Law VariationsWhile you can research any state from your computer, the rules for contacting owners and collecting fees change drastically at state lines.Asset Recovery Caps: Many states strictly limit how much money an asset finder can charge a homeowner. For example, some states cap your fee at 10% of the recovered funds, while others ban finder fees entirely for the first 24 months after a sale.Licensing Mandates: Certain states require you to hold a Private Investigator (PI) license, a real estate license, or a registered notary commission to legally act as a third-party finder.Strict Expiration Windows: The timeline to claim money varies heavily by location. Some counties hold funds for only 90 days before moving them to the state, while others give owners up to 5 years to file a claim.2. Follow a National BlueprintTo manage a nationwide search efficiently without leaving your home, organize your workflow by utilizing online tools.Target Digitized Counties: Start your search in larger, highly populated metropolitan counties. These areas are much more likely to publish updated surplus spreadsheets and auction results directly on their county clerk or treasurer websites.Utilize Skip Tracing Tools: Former homeowners who lost their properties often move immediately. You will need online skip-tracing software to cross-reference public data, track down their new addresses, and find valid phone numbers or email addresses.Draft Location-Specific Agreements: Never use a single, generic contract for every client. If you are charging a fee to help them file, ensure your contingency fee agreement is custom-tailored to comply with the exact consumer protection laws of the homeowner's state.`,
+    provenance: "plans/future-courses/real-estate/surplus-funds-basics.md",
   },
 ];

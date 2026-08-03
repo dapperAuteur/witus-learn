@@ -30,7 +30,7 @@
 // the cannabis and tobacco courses in this series need it.
 
 import type { AuthoredCourse } from "./authored-course";
-import { flightCard, STRUCTURE, TASTING_GRID, TASTING_METHOD_NOTE, type Flight } from "../lib/sommelier";
+import { flightCard, STRUCTURE, TASTING_GRID, WINE_METHOD_NOTE, type Flight } from "../lib/sommelier";
 
 // ─────────────────────────────── FLIGHTS ───────────────────────────────
 
@@ -54,7 +54,7 @@ const FLIGHT_0: Flight = {
   ],
   lookFor:
     "You can say out loud where in your mouth you feel each of the four, and you stopped needing to look it up.",
-  noAlcohol: "This whole flight is already alcohol free. It is the foundation for every later flight, so run it first either way.",
+  alternate: "This whole flight is already alcohol free. It is the foundation for every later flight, so run it first either way.",
 };
 
 const FLIGHT_1: Flight = {
@@ -97,7 +97,7 @@ const FLIGHT_1: Flight = {
   ],
   lookFor:
     "Two of your six structure scores would match another taster's within one step, and you can defend every score by pointing to where you felt it.",
-  noAlcohol:
+  alternate:
     "Substitute four non-alcoholic drinks that isolate the same axes: unsweetened cranberry juice (high acid), a sweetened iced tea (residual sugar), a twelve minute black tea (tannin), and a full fat oat milk (body). Score them on the same six-line grid. The vocabulary transfers exactly, and alcohol is the one line you skip.",
 };
 
@@ -141,7 +141,7 @@ const FLIGHT_2: Flight = {
   ],
   lookFor:
     "Covering the labels and re-pouring in a different order, you can pick out the Sauvignon Blanc and the Riesling with confidence.",
-  noAlcohol:
+  alternate:
     "Run the same shape with four non-alcoholic drinks chosen for aromatic contrast: fresh grapefruit juice (loud and thiol-like), unsweetened green tea (herbaceous and lightly grippy), coconut water (neutral and textural), and a lime-and-mineral-water mix (acid spine). Rank aromatic intensity, score acid, and name the green note. The exercise is the ranking, and it works without wine.",
 };
 
@@ -185,7 +185,7 @@ const FLIGHT_3: Flight = {
   ],
   lookFor:
     "You can rank the four by tannin and by acid, and those two rankings are not the same ranking.",
-  noAlcohol:
+  alternate:
     "Build the same structural ladder without wine: a hibiscus or cranberry infusion (high acid, low grip), a twelve minute black tea (high grip), a pomegranate juice cut with water (fruit plus moderate grip), and a strong unsweetened cocoa infusion (grip plus body). Rank grip, then rank acid, and confirm the two rankings differ. That is the transferable lesson.",
 };
 
@@ -229,7 +229,7 @@ const FLIGHT_4: Flight = {
   ],
   lookFor:
     "You called cool versus warm correctly in both pairs, and you can name the four things that moved together.",
-  noAlcohol:
+  alternate:
     "Compare fruit at two ripeness stages, which is the same variable: a green underripe apple against a soft ripe one, and fresh grapes against raisins. Score acid, sweetness, body and fruit state on each. The cool-to-warm package (acid falling, sugar rising, fruit moving from fresh to cooked to dried) is exactly what your mouth reports.",
 };
 
@@ -267,7 +267,7 @@ const FLIGHT_5: Flight = {
   ],
   lookFor:
     "You can list what oak added without naming a single thing the grape itself contributed.",
-  noAlcohol:
+  alternate:
     "Oak is an infusion, so infuse. Steep a clean, food-safe oak chip (sold for home brewing and for cooking) in water overnight, then taste that water against plain water: vanilla, toast and a faint grip appear from nothing. Then compare plain unsweetened cocoa against a vanilla-and-toast-forward hot chocolate for the same lesson at a larger scale.",
 };
 
@@ -305,7 +305,7 @@ const FLIGHT_6: Flight = {
   ],
   lookFor:
     "You can say which wine had a second fermentation in its own bottle, from aroma alone, without reading the label.",
-  noAlcohol:
+  alternate:
     "The autolytic character is a bread aroma, so smell it at the source: fresh bread crust, a plain biscuit and toasted brioche against a fresh pear and a green apple. Then run the sweetness half honestly with sparkling water plus zero, six and thirty grams of sugar per litre, tasting each against a squeeze of lemon. You will feel sugar mask acid without the acid changing.",
 };
 
@@ -337,7 +337,7 @@ const FLIGHT_7: Flight = {
   ],
   lookFor:
     "You can defend a left bank or right bank call using structure rather than flavour, which is the more reliable evidence.",
-  noAlcohol:
+  alternate:
     "Run the structural half with two black teas: an assertive Assam and a softer Ceylon, both steeped ten minutes, tasted side by side. The lesson is that two things from the same family can differ mainly in the SHAPE of their tannin, angular against round, and that shape is what a left bank and right bank comparison is really teaching.",
 };
 
@@ -369,7 +369,7 @@ const FLIGHT_8: Flight = {
   ],
   lookFor:
     "You can explain why both wines make more sense with food than without, and name what in each wine the food was acting on.",
-  noAlcohol:
+  alternate:
     "Use a strong unsweetened black tea and a tart hibiscus infusion, tasted before and after eating aged cheese or salted olives. Score grip and acid each time. The direction of the change (fat and salt softening grip, food making acid feel refreshing rather than sharp) is exactly what the wine flight demonstrates.",
 };
 
@@ -401,7 +401,7 @@ const FLIGHT_9: Flight = {
   ],
   lookFor:
     "You can describe the difference without ranking them, and you can then rank them and say clearly that the ranking is your preference.",
-  noAlcohol:
+  alternate:
     "Compare a single origin light roast coffee against a commercial dark roast blend, both brewed the same way. One is detailed, acidic and site specific, the other is louder, rounder and more consistent. Score intensity against detail separately. That is the same philosophical split the wine flight is teaching, in a drink you can buy anywhere.",
 };
 
@@ -424,7 +424,7 @@ const FLIGHT_10: Flight = {
   ],
   lookFor:
     "You can name your own price ceiling with evidence: the point above which the wine got better and you stopped caring.",
-  noAlcohol:
+  alternate:
     "Run it with olive oil, chocolate or coffee at three price tiers, same origin and style, tasted blind and scored on the same four criteria. Almost everyone finds the jump from cheapest to middle is large and the jump from middle to expensive is smaller, which is the finding that changes how you shop.",
 };
 
@@ -462,7 +462,7 @@ const FLIGHT_11: Flight = {
   ],
   lookFor:
     "You can predict, before tasting, what salt will do to tannin and what chilli will do to alcohol, because you felt both happen.",
-  noAlcohol:
+  alternate:
     "Every mechanism in this flight except the alcohol and chilli interaction works without wine. Use strong black tea (tannin), lemon water (acid) and a sweetened iced tea (sugar) against the same five foods. Salt softening tannin and fat softening tannin are both dramatic in tea, and the sugar and chilli relationship works exactly the same way.",
 };
 
@@ -488,7 +488,7 @@ const FLIGHT_12: Flight = {
   ],
   lookFor:
     "You called climate correctly more often than grape, which is the normal and correct order of difficulty, and you can name your own recurring error.",
-  noAlcohol:
+  alternate:
     "Run a six-sample blind on teas, juices or coffees, chosen so that three variables are in play: intensity, acid, and grip. Work the same grid, commit to written conclusions, and reveal all six at once. The skill being trained is the DISCIPLINE of not guessing early, and that is drink agnostic.",
 };
 
@@ -530,7 +530,7 @@ It also will not tell you which bottles to buy by name. Producers change, vintag
 
 **One safety rule, stated once and meant every time.**
 
-${TASTING_METHOD_NOTE}
+${WINE_METHOD_NOTE}
 
 ## Sources
 - International Organisation of Vine and Wine. (2021). *OIV standard for international wine competitions and spirituous beverages of vitivinicultural origin*. OIV. https://www.oiv.int
@@ -544,7 +544,7 @@ ${TASTING_METHOD_NOTE}
         {
           prompt: "This course names one thing it flatly refuses to claim about itself. What is it?",
           answer:
-            "That it is affiliated with, or preparation for, any certifying body such as WSET or the Court of Master Sommeliers. It follows a similar arc because the profession has converged on that order, and it says so instead of implying an endorsement.",
+            "That it is affiliated with, or preparation for, any certifying body such as the Wine and Spirit Education Trust or the Court of Master Sommeliers. It follows a similar arc because the profession has converged on that order, and it says so instead of implying an endorsement.",
         },
       ],
       body: `The word arrives loaded. Most people picture a tasting competition: a person in a suit swirling a glass, announcing a village and a vintage, and being right. That is real, it is a small and theatrical corner of the job, and it is almost never what the work is.

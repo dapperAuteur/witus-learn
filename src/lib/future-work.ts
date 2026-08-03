@@ -164,6 +164,13 @@ const PROPOSAL_META: Record<
   // "this type of stuff", and pricing is exactly the kind of thing that goes stale unseen.
   "home-school-pricing": { group: "Pricing", kind: "feature" },
   "home-school-pricing-research": { group: "Pricing", kind: "feature" },
+  // Asset recovery. The brief is the researched, decision-carrying document (statutes, the
+  // disclosure model, the ethics module, the operating guidance); the other two are BAM's raw
+  // source notes. All three sit under one group so the reviewed version is next to what it came
+  // from, and the brief is a COURSE rather than a feature because it is course #1's spec.
+  "real-estate-surplus-funds-brief": { group: "Asset Recovery", kind: "course", status: "building" },
+  "real-estate-surplus-funds-basics": { group: "Asset Recovery", kind: "course", status: "researching" },
+  "real-estate-surplus-compliments": { group: "Asset Recovery", kind: "course", status: "researching" },
 };
 
 export const FUTURE_WORK: FutureWorkItem[] = [
@@ -181,20 +188,25 @@ export const FUTURE_WORK: FutureWorkItem[] = [
       provenance: p.provenance,
     };
   }),
-  // Subdirectory bundles (mansa-gold/, …) — multi-file research packs. `feature`, not course
-  // proposals: they're reference material you read, grouped by their folder. Auto-discovered.
-  ...SUBDIR_DOCS.map(
-    (d): FutureWorkItem => ({
-      key: d.key,
+  // Subdirectory bundles (mansa-gold/, …) — multi-file research packs. `feature` by DEFAULT, not
+  // course proposals: they're reference material you read, grouped by their folder. Auto-discovered.
+  // PROPOSAL_META still applies, so a subdir doc that IS a course proposal can say so rather than
+  // being mislabelled a feature. Auto-discovery is preserved either way: an uncurated file still
+  // appears, it just appears with the defaults.
+  ...SUBDIR_DOCS.map((d): FutureWorkItem => {
+    const meta = PROPOSAL_META[d.key] ?? {};
+    return {
+      key: meta.key ?? d.key,
       title: d.title,
-      kind: "feature",
-      status: "researching",
-      group: d.group,
+      kind: meta.kind ?? "feature",
+      status: meta.status ?? "researching",
+      group: meta.group ?? d.group,
       summary: d.summary,
       body: d.body,
       provenance: d.provenance,
-    }),
-  ),
+      ...(meta.courseSlugs ? { courseSlugs: meta.courseSlugs } : {}),
+    };
+  }),
 ];
 
 export function getFutureWorkItem(key: string): FutureWorkItem | undefined {
