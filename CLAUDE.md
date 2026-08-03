@@ -76,7 +76,8 @@ the rule and the isolation suite guards the verbatim state text.
 ## Quiz-integrity rule — a quiz must not be passable without reading it
 
 Two guards in `pnpm lint` protect the same thing from two directions, and a quiz that fails either is
-measuring test-taking rather than learning (which also corrupts every dashboard average built on it):
+measuring test-taking rather than learning (which also corrupts every dashboard average built on it).
+Two more, below, protect the self-check card and the choice of widget itself:
 
 - `check-quiz-balance.ts` — the **position** tell. Fix by adding `shuffleOptions: true`. Cheap and
   content-preserving. **Shuffle is now the default** (`toSafeQuiz` in `src/lib/quiz.ts` serves
@@ -107,6 +108,33 @@ and silently never grades, so the failure is invisible in the app. Its *semantic
 answer actually match the lesson it sits in? — is the advisory **"Audit reveals"** button on the
 instructor tools (`/api/courses/[id]/audit-reveals`), deliberately NOT a build gate: an LLM verdict is
 non-deterministic and must never be able to block a commit.
+
+**And the widget itself must fit the content.** `check-assessment-fit.ts` (in `pnpm lint`, a ratchet;
+rules as pure predicates in `src/lib/assessment-fit.ts`) is the fourth guard, aimed at the mismatch
+learners kept reporting one course at a time: a typed fill-in on a civics date where multiple-choice
+belongs, a typed open-answer drill on interpretive history, a check-yourself question left as prose.
+It carries only rules that are runtime FACTS, never opinions:
+
+- **`positional-explanation` / `positional-option`** — an explanation naming an option by position
+  ("the first option is wrong") or an option reading "all of the above". Shuffle is the default, so
+  both describe an order no learner ever saw. Fix by naming the option by its CONTENT, editing
+  explanation or option text only.
+- **`closed-set-fill-in`** — a typed `exercise` item whose every accepted answer is a bare number. An
+  exercise is graded by string equality (case and accents forgiven, which buys "1851" nothing), so a
+  year or a seat count is a closed-set fact multiple-choice tests better. Convert it to a quiz
+  question, or, when producing the number by hand genuinely IS the skill, set `computedAnswer: true`
+  on the item, the explicit opt-out equivalent of `shuffleOptions: false`.
+- **`prose-self-check`** — a `**Check yourself**` question left as prose instead of
+  `:::reveal <q> ||| <a>`: it grades nothing and records nothing. Fix with `pnpm reveal:convert`.
+
+Its *semantic* companion — does this widget genuinely fit this content? — is the advisory **"Audit
+assessment fit"** button (`/api/courses/[id]/audit-assessment-fit`), the sibling of "Audit reveals"
+and, for the same reason, never a build gate. **Do not widen the deterministic half with judgment
+calls.** Candidates were measured against the catalog and rejected on the evidence: long free-text
+answers (4 in the whole catalog, all translation drills, so zero true positives), accept-list size
+(the best-authored bank has four variants), proper-noun answers (capitalisation is not a signal), and
+"are these options mutually exclusive" (pure judgment). A guard that cries wolf gets allowlisted into
+uselessness, which is worse than no guard.
 
 ## Page-quality rule — every page is found, shared, mobile-first, and usable
 
