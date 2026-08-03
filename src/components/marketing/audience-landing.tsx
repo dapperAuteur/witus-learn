@@ -4,12 +4,22 @@ import type { AudienceLandingContent } from "@/lib/marketing/audience-landing";
 // Shared renderer for every /for/<audience> page. Server component, no state. Mirrors the shape and
 // accessibility of /platform: >=44px tap targets, sr-only section headings, dark-mode pairs, and the
 // tenant accent for every accent colour. The content (and its honesty) lives in the audience files.
+export interface AudienceEbook {
+  slug: string;
+  title: string;
+  subtitle: string;
+}
+
 export function AudienceLanding({
   content,
   brand,
+  ebook,
 }: {
   content: AudienceLandingContent;
   brand: string;
+  /** An APPROVED ebook for this audience, if there is one. The page never renders an unapproved
+   *  one: the server resolves approval and passes undefined otherwise. */
+  ebook?: AudienceEbook;
 }) {
   const primaryBtn =
     "inline-block min-h-11 rounded-md px-5 py-2.5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12";
@@ -40,6 +50,24 @@ export function AudienceLanding({
             </Link>
           ) : null}
         </div>
+
+        {ebook ? (
+          <div className="mx-auto mt-8 max-w-2xl rounded-lg border border-neutral-200 p-4 text-left dark:border-neutral-800">
+            <p className="text-sm font-semibold">Free guide: {ebook.title}</p>
+            <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">{ebook.subtitle}</p>
+            <p className="mt-3">
+              <Link
+                href={`/ebooks/${ebook.slug}`}
+                className="inline-flex min-h-11 items-center justify-center rounded-md border border-neutral-300 px-4 py-2 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 pointer-coarse:min-h-12"
+              >
+                Read it or download it
+              </Link>
+            </p>
+            <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-400">
+              No email required.
+            </p>
+          </div>
+        ) : null}
       </header>
 
       <section aria-labelledby="value-heading" className="mb-12">
