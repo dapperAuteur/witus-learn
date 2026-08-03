@@ -102,8 +102,13 @@ function main() {
 
   // ── She Did The Work: the proposal + one seed file per subject ───────────────────────────────
   const proposal = deDash(readFileSync(join(sdtw, "00-course-proposals.md"), "utf8").trim());
+  // Subject seeds are named after the woman (`abigail-adams.md`). A NUMBER-PREFIXED file is an index
+  // or list doc, not a person: `00-course-proposals.md` is read separately above, and a later
+  // `01-list-of-women-that-did-the-work.md` was silently emitted as a 30th "subject" whose 88-char
+  // body then failed tests/future-work.test.ts. Skipping the whole `NN-` convention rather than just
+  // `00-` fixes the class instead of the instance.
   const subjectFiles = readdirSync(sdtw)
-    .filter((f) => f.endsWith(".md") && !f.startsWith("00-"))
+    .filter((f) => f.endsWith(".md") && !/^\d+-/.test(f))
     .sort();
 
   const subjects = subjectFiles.map((f) => {
@@ -139,11 +144,15 @@ function main() {
   for (const f of proposalFiles) {
     const body = deDash(readFileSync(join(dir, f), "utf8").trim());
     if (!body) continue;
-    const key = f.replace(/\.md$/, "");
+    // deDash the FILENAME too, not just the body. A source note whose filename contains an en-dash
+    // (one does) otherwise writes that dash straight into `key`, `title` and `provenance` in this
+    // committed module, and `pnpm lint` fails on every regeneration for a reason that looks like it
+    // came from nowhere.
+    const key = deDash(f.replace(/\.md$/, ""));
     // Title: prefer the doc's own H1; fall back to the filename, de-slugged.
     const h1 = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
     const title = h1 ?? key.replace(/-/g, " ").replace(/^\w/, (c) => c.toUpperCase());
-    out2 += `  {\n    key: ${JSON.stringify(key)},\n    title: ${JSON.stringify(title)},\n    summary: ${JSON.stringify(summarize(body))},\n    body: \`${lit(body)}\`,\n    provenance: ${JSON.stringify(`plans/future-courses/${f}`)},\n  },\n`;
+    out2 += `  {\n    key: ${JSON.stringify(key)},\n    title: ${JSON.stringify(title)},\n    summary: ${JSON.stringify(summarize(body))},\n    body: \`${lit(body)}\`,\n    provenance: ${JSON.stringify(deDash(`plans/future-courses/${f}`))},\n  },\n`;
   }
   out2 += `];\n`;
 
@@ -167,11 +176,11 @@ function main() {
     for (const f of files) {
       const body = deDash(readFileSync(join(dir, sub, f), "utf8").trim());
       if (!body) continue;
-      const key = `${sub}-${f.replace(/\.md$/, "").replace(/^\d+-/, "")}`;
+      const key = deDash(`${sub}-${f.replace(/\.md$/, "").replace(/^\d+-/, "")}`);
       const h1 = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
       const title = h1 ?? f.replace(/\.md$/, "").replace(/^\d+-/, "").replace(/-/g, " ");
       const group = sub.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-      out2 += `  {\n    key: ${JSON.stringify(key)},\n    title: ${JSON.stringify(title)},\n    group: ${JSON.stringify(group)},\n    summary: ${JSON.stringify(summarize(body))},\n    body: \`${lit(body)}\`,\n    provenance: ${JSON.stringify(`plans/future-courses/${sub}/${f}`)},\n  },\n`;
+      out2 += `  {\n    key: ${JSON.stringify(key)},\n    title: ${JSON.stringify(title)},\n    group: ${JSON.stringify(group)},\n    summary: ${JSON.stringify(summarize(body))},\n    body: \`${lit(body)}\`,\n    provenance: ${JSON.stringify(deDash(`plans/future-courses/${sub}/${f}`))},\n  },\n`;
     }
   }
   out2 += `];\n`;
