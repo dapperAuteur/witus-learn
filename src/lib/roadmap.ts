@@ -613,6 +613,33 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Course codes: a catalog that says where to start** (\`feat/storytelling-true-track\`,
+  migration 0047, task 235). Courses and categories now render in **curriculum order by default**
+  (category \`sort_order\`, then position within a series, then title; "Newest" is still one click
+  away but it is an owner's view, not a learner's), and every course in a series carries a **code
+  badge**, \`STORY-00\` or \`TASTE-02\`, on every card, everywhere a card appears. Grammar
+  (\`src/lib/series-code.ts\`, guarded by \`pnpm check:series-codes\`): \`00\` start here, \`01\`-\`98\` a
+  step on one linear path, **\`T1\`/\`P2\` a step on a parallel TRACK**, \`99\` capstone taken last.
+  The letter is what a flat integer could never express: Storytelling forks into a True track and a
+  Performed track that share a vocabulary but not a sequence, and numbering them 1-7 told a learner
+  that Documentary requires Monodrama. \`/series/<slug>\` now draws the fork, states the
+  parallel-tracks promise in words under each track, and explains how to read a code. The code is a
+  **badge, never a title prefix**: the title is also the OG card, the JSON-LD name and the
+  citation-list heading, so \`"STORY-T3 · Documentary"\` would break a search for "Documentary" in
+  all of them. A half-coded series degrades to a plain list rather than to a page missing courses.
+- 🔧 **Storytelling series, courses #6 and #7: News storytelling + Documentary**
+  (\`feat/storytelling-true-track\`). The True track proper, one rung above civic documentation on
+  the permission ladder. **News storytelling** (11 lessons): what news is for, the inverted pyramid
+  as a reader-serving structure rather than a formula, finding the owner, attribution, numbers, the
+  narrative temptations, corrections. Its organising idea is that news may select and arrange but
+  never invent, so the ethics are made of choices rather than lies. **Documentary** (10 lessons):
+  what the form claims, Nichols' modes as implicit promises to a viewer, **consent as a process
+  rather than an event** (a release protects you; it does not make a thing right), structure found
+  in material rather than scripted, interviewing at depth and the uses of silence, the ethics of the
+  edit (frankenbite, false chronology, reaction transplant, absent context, all made of genuine
+  footage), signalling reenactment, and who the film is finally for. Both use the six spine terms
+  unchanged. Series now: \`STORY-00\` core, \`T1\`-\`T3\` True, \`P1\`-\`P3\` Performed. Remaining: oral
+  history (\`T4\`), digital and social (\`D1\`), mockumentary as the capstone (\`99\`).
 - 🔧 **BVC Sommelier series, course #1: Wine** (\`feat/bvc-sommelier-wine\`, plans/53). A skills sequel
   to BVC S2E9 "Wine: Blood of the Earth": that episode teaches wine's history, this one teaches
   tasting and choosing. 52 lessons in 12 modules at WSET-2-ish depth (the four-stage grid and six

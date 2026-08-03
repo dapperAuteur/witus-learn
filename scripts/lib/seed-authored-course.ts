@@ -26,6 +26,14 @@ export async function seedAuthoredCourse(
     /** 1-based position within the series. Without it a series can say what belongs together but
      *  not what comes first, which is the gap that made the sommelier three unorderable. */
     seriesOrder?: number;
+    /** Course code, rendered as a badge everywhere a card appears (STORY-00). `seriesCode` is the
+     *  series prefix, `seriesPosition` is the grammar in src/lib/series-code.ts: "00" start here,
+     *  "01".."98" a linear step, "T1"/"P2" a step on a parallel track, "99" capstone. Give
+     *  `seriesTrack` a human name whenever the position carries a letter, or the badge says "T1"
+     *  with nothing to tell a learner what T is. Validated by scripts/check-series-codes.ts. */
+    seriesCode?: string;
+    seriesPosition?: string;
+    seriesTrack?: string;
     /** How many leading lessons are free preview. Defaults to 1, the historical behaviour.
      *  A paid course whose first lesson is housekeeping needs 2-3 to show real teaching before
      *  the paywall. Counts from the top in authored order, quizzes included. */
@@ -44,6 +52,9 @@ export async function seedAuthoredCourse(
     ...(opts.seriesSlug != null ? { seriesSlug: opts.seriesSlug } : {}),
     ...(opts.seriesTitle != null ? { seriesTitle: opts.seriesTitle } : {}),
     ...(opts.seriesOrder != null ? { seriesOrder: opts.seriesOrder } : {}),
+    ...(opts.seriesCode != null ? { seriesCode: opts.seriesCode } : {}),
+    ...(opts.seriesPosition != null ? { seriesPosition: opts.seriesPosition } : {}),
+    ...(opts.seriesTrack != null ? { seriesTrack: opts.seriesTrack } : {}),
     ...(opts.relatedProducts != null ? { relatedProducts: opts.relatedProducts } : {}),
   };
 

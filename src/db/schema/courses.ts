@@ -109,6 +109,21 @@ export const courses = pgTable(
      *  first", so the app could not render an order and a learner had to guess. Ordering is by this
      *  value, then by title, so a partially numbered series still renders sensibly. */
     seriesOrder: integer("series_order"),
+    /** Short uppercase prefix for the series, e.g. "STORY". Rendered with series_position as a
+     *  course code (STORY-00) so a learner scanning ANY list — catalog, search, a shared link —
+     *  can see which series a course belongs to and where in it they are standing. Deliberately
+     *  NOT baked into courses.title: the title feeds OG cards, JSON-LD, search and the citation
+     *  list, and "STORY-T3 · Documentary" would break a search for "Documentary" in all of them. */
+    seriesCode: text("series_code"),
+    /** The part after the dash. Grammar (src/lib/series-code.ts): "00" = start here, "01".."98" =
+     *  a step on a single linear path, "T1"/"P2" = step 1 of track T, step 2 of track P, "99" =
+     *  capstone, take last. Free text rather than a CHECK constraint so a new series shape never
+     *  needs a migration; the grammar is enforced by a guard and the isolation suite instead. */
+    seriesPosition: text("series_position"),
+    /** Human name of the track a lettered position belongs to, e.g. "True". NULL on a single-path
+     *  series. The letter alone is not something a learner can read, so the label is stored rather
+     *  than derived: a white-label school defining its own tracks has no code to edit. */
+    seriesTrack: text("series_track"),
 
     // Featured strip
     isFeatured: boolean("is_featured").notNull().default(false),

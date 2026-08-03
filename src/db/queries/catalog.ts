@@ -1,4 +1,4 @@
-import { and, asc, desc, eq, ilike, inArray, or, type SQL } from "drizzle-orm";
+import { and, asc, desc, eq, getTableColumns, ilike, inArray, or, sql, type SQL } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseCategories,
@@ -17,7 +17,10 @@ export interface CatalogQuery {
   category?: string;
   seriesSlug?: string;
   featured?: boolean;
-  sort?: "newest" | "title" | "featured";
+  /** `curriculum` is the DEFAULT and the one a browsing learner wants: category order first (the
+   *  order the tenant chose in course_categories.sort_order), then position within a series, then
+   *  title. `newest` is still available and is what an owner checking recent work wants. */
+  sort?: "curriculum" | "newest" | "title" | "featured";
   /** Owner/instructor tooling only; the public catalog never sets this. */
   includeUnpublished?: boolean;
 }
@@ -31,6 +34,33 @@ export async function listCourses(tenantId: string, opts: CatalogQuery = {}): Pr
   if (opts.q) {
     const like = `%${opts.q}%`;
     conds.push(or(ilike(courses.title, like), ilike(courses.description, like)) as SQL);
+  }
+
+  // Curriculum order needs the tenant's chosen category order, which lives on another table, so it
+  // takes a LEFT JOIN (left, not inner: a course whose category string matches no category row must
+  // still appear, sorted to the end of the categories rather than dropped from the catalog). The
+  // join is ON tenant_id too — joining on name alone would pull another brand's category row and
+  // let its sort_order influence this tenant's page, which is a leak of exactly the kind the
+  // isolation suite exists to catch, even though no foreign course would be returned.
+  if (opts.sort == null || opts.sort === "curriculum") {
+    return db
+      .select(getTableColumns(courses))
+      .from(courses)
+      .leftJoin(
+        courseCategories,
+        and(
+          eq(courseCategories.tenantId, courses.tenantId),
+          eq(courseCategories.name, courses.category),
+        ),
+      )
+      .where(and(...conds))
+      .orderBy(
+        sql`${courseCategories.sortOrder} nulls last`,
+        asc(courseCategories.name),
+        sql`${courses.seriesTitle} nulls last`,
+        sql`${courses.seriesOrder} nulls last`,
+        asc(courses.title),
+      );
   }
 
   const orderBy =

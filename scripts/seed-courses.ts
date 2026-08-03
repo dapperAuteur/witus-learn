@@ -1229,7 +1229,10 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 1,
+    seriesOrder: 20,
+    seriesCode: "STORY",
+    seriesPosition: "P1",
+    seriesTrack: "Performed",
   });
 
   await seedAuthoredCourse(db, {
@@ -1241,7 +1244,10 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 2,
+    seriesOrder: 21,
+    seriesCode: "STORY",
+    seriesPosition: "P2",
+    seriesTrack: "Performed",
   });
 
   await seedAuthoredCourse(db, {
@@ -1253,7 +1259,10 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 3,
+    seriesOrder: 22,
+    seriesCode: "STORY",
+    seriesPosition: "P3",
+    seriesTrack: "Performed",
   });
 
   await seedAuthoredCourse(db, {
@@ -1265,13 +1274,17 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 4,
+    seriesOrder: 10,
+    seriesCode: "STORY",
+    seriesPosition: "T1",
+    seriesTrack: "True",
   });
 
-  // The CORE of the Storytelling series, written last on purpose (docs/storytelling-curriculum.md).
-  // seriesOrder 5 is its position in the reading order, not its importance: a learner may take it
-  // first and it lands harder fourth, once the specialised courses have put the six terms under
-  // pressure in forms that each remove something different.
+  // The CORE of the Storytelling series, written last on purpose (docs/storytelling-curriculum.md)
+  // and now coded STORY-00, the entry point. It was seriesOrder 5 while order was a flat integer,
+  // which was the BUILD order leaking into the learner's view: every other course in the series
+  // uses the six spine terms this one defines, so it is where a learner starts even though it is
+  // where the author finished. The tracks below fork from here and run in parallel.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -1281,7 +1294,9 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 5,
+    seriesOrder: 1,
+    seriesCode: "STORY",
+    seriesPosition: "00",
   });
 
   // The True track proper opens here. Civic documentation (order 4) came first because it is the
@@ -1296,7 +1311,10 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 6,
+    seriesOrder: 11,
+    seriesCode: "STORY",
+    seriesPosition: "T2",
+    seriesTrack: "True",
   });
 
   await seedAuthoredCourse(db, {
@@ -1308,7 +1326,10 @@ async function main() {
     navigationMode: "linear",
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
-    seriesOrder: 7,
+    seriesOrder: 12,
+    seriesCode: "STORY",
+    seriesPosition: "T3",
+    seriesTrack: "True",
   });
 
   await seedAuthoredCourse(db, {

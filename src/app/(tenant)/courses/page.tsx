@@ -20,7 +20,13 @@ type SearchParams = Promise<{ q?: string; category?: string; sort?: string }>;
 export default async function CoursesPage({ searchParams }: { searchParams: SearchParams }) {
   const sp = await searchParams;
   const sdb = await getScopedDb();
-  const sort = sp.sort === "title" || sp.sort === "featured" || sp.sort === "newest" ? sp.sort : undefined;
+  // Default is curriculum order (undefined → the DAL's curriculum branch): category order the
+  // tenant chose, then position within a series. "Newest" is still one click away, but it is an
+  // owner's view of the catalog, not a learner's — a learner wants to know where to start.
+  const sort =
+    sp.sort === "title" || sp.sort === "featured" || sp.sort === "newest" || sp.sort === "curriculum"
+      ? sp.sort
+      : undefined;
 
   const session = await getSession();
   const owner = session ? await isPlatformOwner(session.user.id) : false;
@@ -80,7 +86,8 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
           className="min-h-11 flex-1 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900"
         />
         {sp.category ? <input type="hidden" name="category" value={sp.category} /> : null}
-        <select name="sort" defaultValue={sort ?? "newest"} className="min-h-11 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900">
+        <select name="sort" defaultValue={sort ?? "curriculum"} className="min-h-11 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900">
+          <option value="curriculum">Course order</option>
           <option value="newest">Newest</option>
           <option value="title">A-Z</option>
           <option value="featured">Featured</option>

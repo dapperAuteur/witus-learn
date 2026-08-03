@@ -440,9 +440,9 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
             prompt: "What is a frankenbite, and why is it indefensible?",
             options: [
               "A sentence assembled from words said at different times, putting words in a real mouth",
-              "A reenactment presented without any on-screen signalling",
-              "An interview conducted without the subject's written consent",
-              "A cutaway inserted to disguise a cut in a long answer",
+              "A reenactment staged for the camera and presented without any on-screen signalling to mark it",
+              "An interview conducted on a signed release that was obtained before the film changed direction",
+              "A cutaway of the interviewer listening, inserted to disguise a cut inside one long answer",
             ],
             correctIndex: 0,
             explanation:
@@ -452,10 +452,10 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
           {
             prompt: "What makes a reenactment honest?",
             options: [
-              "Using actors who resemble the real participants closely",
+              "Casting actors who resemble the real participants closely enough to be mistaken for them",
               "Signalling it clearly enough that no viewer mistakes it for actual footage",
-              "Restricting it to events for which no footage exists",
-              "Obtaining the participants' approval of the staged version",
+              "Restricting it strictly to events for which no photographic or archive footage survives",
+              "Obtaining every surviving participant's written approval of the staged version before release",
             ],
             correctIndex: 1,
             explanation:
@@ -492,9 +492,9 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
             prompt: "Where does funding most commonly influence documentary?",
             options: [
               "In which films get made at all, rather than in their conclusions",
-              "In the choice of interview locations and technical crew",
-              "In demanding specific conclusions in the final cut",
-              "In requiring participants to sign additional releases",
+              "In the choice of interview locations, technical crew and delivery format for the finished film",
+              "In demanding that the final cut reach a specific conclusion the commission named in advance",
+              "In requiring every participant to sign an additional release naming the funder by name",
             ],
             correctIndex: 0,
             explanation:
@@ -517,10 +517,10 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
           {
             prompt: "Why does distribution change the ethics of a film?",
             options: [
-              "Wider distribution requires additional legal clearances",
-              "Platforms impose their own editorial standards on documentaries",
+              "Wider distribution requires additional music, archive and location clearances before release",
+              "Platforms impose their own editorial standards, which override the maker's judgement on the cut",
               "A local screening and a permanent global platform have different consequences for participants",
-              "Audiences in different territories interpret material differently",
+              "Audiences in different territories interpret the same material differently, changing its meaning",
             ],
             correctIndex: 2,
             explanation:
