@@ -4,6 +4,8 @@ import { getScopedDb } from "@/db/scoped";
 import { brandName } from "@/lib/branding";
 import { AUDIENCES, audienceBySlug } from "@/lib/marketing/audiences";
 import { AudienceLanding } from "@/components/marketing/audience-landing";
+import { ebookForAudience } from "@/lib/ebooks";
+import { isEbookApproved } from "@/db/queries/ebook-approvals";
 
 type Params = { params: Promise<{ audience: string }> };
 
@@ -28,5 +30,13 @@ export default async function AudienceLandingPage({ params }: Params) {
   if (!sdb.tenant.flags.recruiting) notFound();
   const content = audienceBySlug(audience);
   if (!content) notFound();
-  return <AudienceLanding content={content} brand={brandName(sdb.tenant)} />;
+  // Only an APPROVED ebook reaches the page. Approval is resolved here, server-side, so an
+  // unapproved draft cannot be linked from marketing even by mistake.
+  const candidate = ebookForAudience(audience);
+  const ebook =
+    candidate && (await isEbookApproved(sdb.tenantId, candidate.slug))
+      ? { slug: candidate.slug, title: candidate.title, subtitle: candidate.subtitle }
+      : undefined;
+
+  return <AudienceLanding content={content} brand={brandName(sdb.tenant)} ebook={ebook} />;
 }
