@@ -309,6 +309,189 @@ const FLIGHT_6: Flight = {
     "The autolytic character is a bread aroma, so smell it at the source: fresh bread crust, a plain biscuit and toasted brioche against a fresh pear and a green apple. Then run the sweetness half honestly with sparkling water plus zero, six and thirty grams of sugar per litre, tasting each against a squeeze of lemon. You will feel sugar mask acid without the acid changing.",
 };
 
+const FLIGHT_7: Flight = {
+  n: 7,
+  title: "Bordeaux, left bank against right bank",
+  teaches: "That one region's two halves are two different wines, and that the grape mix is readable from the glass.",
+  tier: "splurge",
+  bottles: [
+    {
+      role: "Cabernet Sauvignon dominant, gravel soils",
+      target: "A left bank Bordeaux: Haut-Medoc, Saint-Estephe, Pauillac, Saint-Julien or Margaux",
+      priceUsd: "35-60",
+      substitute: "A Haut-Medoc at the lower end of the band, which shows the same structure with less flesh",
+    },
+    {
+      role: "Merlot dominant, clay and limestone",
+      target: "A right bank Bordeaux: Saint-Emilion, or a Lalande-de-Pomerol for the affordable version",
+      priceUsd: "35-60",
+      substitute: "A Castillon or Fronsac, the same grapes from the neighbouring appellations",
+    },
+  ],
+  procedure: [
+    "Decant both an hour ahead, and taste at 16 to 18 degrees Celsius. These wines are built to be aired.",
+    "Score tannin, acid and body on both before smelling for flavour.",
+    "Look for the structural difference: the Cabernet dominant wine should feel firmer and more angular, the Merlot dominant one rounder and plusher at the same price.",
+    "Look for the aromatic difference: blackcurrant, cedar and a graphite or pencil-lead note on one side, plum and chocolate on the other.",
+    "Then check the technical sheet or the producer's site for the actual blend, and mark how close you were.",
+  ],
+  lookFor:
+    "You can defend a left bank or right bank call using structure rather than flavour, which is the more reliable evidence.",
+  noAlcohol:
+    "Run the structural half with two black teas: an assertive Assam and a softer Ceylon, both steeped ten minutes, tasted side by side. The lesson is that two things from the same family can differ mainly in the SHAPE of their tannin, angular against round, and that shape is what a left bank and right bank comparison is really teaching.",
+};
+
+const FLIGHT_8: Flight = {
+  n: 8,
+  title: "Two Italians, two kinds of high acid",
+  teaches: "That acid and tannin combine differently in different grapes, and that Italy's greatness is savoury rather than fruity.",
+  tier: "splurge",
+  bottles: [
+    {
+      role: "Nebbiolo, the tannin and acid extreme",
+      target: "A Barolo or Barbaresco, or a Langhe Nebbiolo at half the price for most of the lesson",
+      priceUsd: "40-70",
+      substitute: "A Nebbiolo from Alto Piemonte or Valtellina",
+    },
+    {
+      role: "Sangiovese, savoury and food shaped",
+      target: "A Chianti Classico, ideally a Riserva",
+      priceUsd: "25-40",
+      substitute: "A Rosso di Montalcino, which is the younger sibling of Brunello",
+    },
+  ],
+  procedure: [
+    "Taste both without food first. Score acid and tannin on each, and write down which one your mouth finds harder work.",
+    "Now eat something fatty and salty with them: aged cheese, cured meat, or a simple tomato and olive oil dish.",
+    "Score again. The scores will move, and the direction they move is the entire lesson of Module 10.",
+    "Find the savoury notes rather than the fruit ones: tar, dried rose, leather, tomato leaf, dried herbs.",
+    "Ask yourself the honest question: were either of these enjoyable on their own, and did that change with food?",
+  ],
+  lookFor:
+    "You can explain why both wines make more sense with food than without, and name what in each wine the food was acting on.",
+  noAlcohol:
+    "Use a strong unsweetened black tea and a tart hibiscus infusion, tasted before and after eating aged cheese or salted olives. Score grip and acid each time. The direction of the change (fat and salt softening grip, food making acid feel refreshing rather than sharp) is exactly what the wine flight demonstrates.",
+};
+
+const FLIGHT_9: Flight = {
+  n: 9,
+  title: "One grape, two philosophies",
+  teaches: "The difference between a wine made to express a SITE and a wine made to express FRUIT.",
+  tier: "splurge",
+  bottles: [
+    {
+      role: "Site expression",
+      target: "A village level red Burgundy, or a Bourgogne Rouge from a good producer if the budget is tight",
+      priceUsd: "35-70",
+      substitute: "A Cru Beaujolais such as Morgon or Moulin-a-Vent, which teaches the same idea for far less",
+    },
+    {
+      role: "Fruit expression",
+      target: "A Pinot Noir from Sonoma Coast, Willamette Valley or Central Otago",
+      priceUsd: "30-55",
+      substitute: "Any New World Pinot Noir stating 14% alcohol or more",
+    },
+  ],
+  procedure: [
+    "Taste blind if you can get someone to pour. This is the flight where knowing the label most distorts the judgement.",
+    "Score fruit intensity, acid, alcohol and body. Then score how much of the wine is NOT fruit: earth, mushroom, stem, spice, savoury notes.",
+    "Ask which wine is louder and which is more detailed. They are not the same question, and this flight exists to prove it.",
+    "Now ask the honest preference question separately from the quality question, exactly as Lesson 9 framed it.",
+    "Write one sentence you would say to a guest about each, in plain language, without a single wine word.",
+  ],
+  lookFor:
+    "You can describe the difference without ranking them, and you can then rank them and say clearly that the ranking is your preference.",
+  noAlcohol:
+    "Compare a single origin light roast coffee against a commercial dark roast blend, both brewed the same way. One is detailed, acidic and site specific, the other is louder, rounder and more consistent. Score intensity against detail separately. That is the same philosophical split the wine flight is teaching, in a drink you can buy anywhere.",
+};
+
+const FLIGHT_10: Flight = {
+  n: 10,
+  title: "What price actually buys, blind",
+  teaches: "Where your own money stops buying you pleasure, which is a personal number nobody else can give you.",
+  tier: "core",
+  bottles: [
+    { role: "Entry tier", target: "A wine at about $10 from a region you like", priceUsd: "9-12" },
+    { role: "The value sweet spot", target: "The same grape and region at about $20", priceUsd: "18-24" },
+    { role: "Step up", target: "The same grape and region at about $40", priceUsd: "35-45" },
+  ],
+  procedure: [
+    "Same grape, same region, three prices. Have someone else pour them into numbered glasses, or bag the bottles yourself and shuffle.",
+    "Score all three on the full grid before guessing any prices.",
+    "Rank them by quality using the four criteria: balance, length, intensity, complexity.",
+    "Rank them again by pure enjoyment. Write both rankings down before revealing.",
+    "Reveal. The question that matters is not whether you ranked them in price order, it is where the jump was biggest FOR YOU.",
+  ],
+  lookFor:
+    "You can name your own price ceiling with evidence: the point above which the wine got better and you stopped caring.",
+  noAlcohol:
+    "Run it with olive oil, chocolate or coffee at three price tiers, same origin and style, tasted blind and scored on the same four criteria. Almost everyone finds the jump from cheapest to middle is large and the jump from middle to expensive is smaller, which is the finding that changes how you shop.",
+};
+
+const FLIGHT_11: Flight = {
+  n: 11,
+  title: "Pairing, tested rather than assumed",
+  teaches: "That pairing is mechanics you can predict, not etiquette you have to memorise.",
+  tier: "core",
+  bottles: [
+    {
+      role: "High acid white",
+      target: "A Sauvignon Blanc, a dry Riesling or a Muscadet",
+      priceUsd: "15-22",
+      substitute: "Any unoaked white from a cool region",
+    },
+    {
+      role: "High tannin red",
+      target: "A young Cabernet Sauvignon or a Nebbiolo",
+      priceUsd: "18-30",
+      substitute: "Any young red whose tannin you scored as high in Flight 1",
+    },
+    {
+      role: "Off dry white",
+      target: "An off dry Riesling or a Vouvray Demi-Sec",
+      priceUsd: "16-25",
+      substitute: "A Moscato d'Asti",
+    },
+  ],
+  procedure: [
+    "Set out five foods: a lemon wedge, salted crisps or olives, a hard aged cheese, a fatty item such as rare steak or a rich cheese, and something genuinely spicy with chilli heat.",
+    "Taste each wine alone and record acid, tannin, sweetness and how much you like it right now.",
+    "Now taste each wine after each food, one at a time, rinsing with water between. Fifteen combinations. It goes faster than it sounds.",
+    "Record only what MOVED: did the wine seem more or less acidic, more or less tannic, more or less sweet, more or less enjoyable.",
+    "Pay particular attention to two combinations: the tannic red with the fatty item, and the tannic red with the chilli.",
+  ],
+  lookFor:
+    "You can predict, before tasting, what salt will do to tannin and what chilli will do to alcohol, because you felt both happen.",
+  noAlcohol:
+    "Every mechanism in this flight except the alcohol and chilli interaction works without wine. Use strong black tea (tannin), lemon water (acid) and a sweetened iced tea (sugar) against the same five foods. Salt softening tannin and fat softening tannin are both dramatic in tea, and the sugar and chilli relationship works exactly the same way.",
+};
+
+const FLIGHT_12: Flight = {
+  n: 12,
+  title: "Blind: six wines, no labels",
+  teaches: "Deduction under real conditions, including being wrong and finding out why.",
+  tier: "core",
+  bottles: [
+    { role: "Cool climate white", target: "Anything from Flight 2 or 4, poured by someone else", priceUsd: "15-25" },
+    { role: "Warm climate white", target: "A contrasting white from a warm region", priceUsd: "15-25" },
+    { role: "Light bodied red", target: "A Pinot Noir, Gamay or other pale, high acid red", priceUsd: "18-28" },
+    { role: "Full bodied red", target: "A Cabernet, Syrah or Malbec from a warm region", priceUsd: "16-26" },
+    { role: "A wine with obvious winemaking", target: "Something oaked, carbonic, skin contact or sparkling", priceUsd: "16-26" },
+    { role: "A wine with some age", target: "Anything at least six or seven years old, from your own shelf or a shop's back stock", priceUsd: "20-40" },
+  ],
+  procedure: [
+    "Someone else pours, bags the bottles, and does not tell you the order. If you are alone, bag them, shuffle, and pour with your eyes closed.",
+    "Work the full deduction grid on each wine in silence, writing everything down before you speak or guess.",
+    "Commit to a written conclusion on each: grape or grape family, climate, rough age, and a quality judgement.",
+    "Reveal all six at once, not one at a time, so an early miss does not distort your later calls.",
+    "For every wrong call, write the ONE observation that should have redirected you. That sentence is the actual output of this flight.",
+  ],
+  lookFor:
+    "You called climate correctly more often than grape, which is the normal and correct order of difficulty, and you can name your own recurring error.",
+  noAlcohol:
+    "Run a six-sample blind on teas, juices or coffees, chosen so that three variables are in play: intensity, acid, and grip. Work the same grid, commit to written conclusions, and reveal all six at once. The skill being trained is the DISCIPLINE of not guessing early, and that is drink agnostic.",
+};
+
 // ─────────────────────────────── COURSE ───────────────────────────────
 
 export const BVC_SOMMELIER_WINE_COURSE: AuthoredCourse = {
@@ -1874,6 +2057,704 @@ ${flightCard(FLIGHT_6)}
             explanation:
               "Fermenting a white grape on its skins gives real tannin and grip, so the wine has a red's structure. It is also the ancient Georgian qvevri method rather than a modern invention.",
             sourceLessonSlug: "somm-skin-contact-and-carbonic",
+          },
+        ],
+      },
+    },
+
+    // ══════════════ MODULE 6 · LAW AND LABELS ══════════════
+    {
+      slug: "somm-why-appellations-exist",
+      title: "26 · Why appellations exist, and what they do and do not promise",
+      section: "Module 6 · Law and labels",
+      recallContent: [
+        {
+          prompt: "Name the one variable that decides whether a fortified wine ends up sweet or dry.",
+          answer:
+            "When the spirit is added. Fortifying partway through fermentation kills the yeast while sugar remains, which is Port. Fortifying after fermentation has finished leaves a dry wine, which is why most Sherry is dry.",
+        },
+      ],
+      body: `An appellation is a legal answer to fraud. Before them, a merchant could put a famous name on any barrel, and did, at enormous scale. The modern European system grew directly out of that, and the fraud problem is worth holding onto, because it explains what appellation rules actually guarantee and what they do not.
+
+**What an appellation legally does.** It draws a boundary and attaches rules to the name. Those rules typically cover which grapes may be planted, maximum yield per hectare, minimum alcohol, and sometimes ageing time or technique. In EU law these sit in two tiers (Regulation (EU) No 1308/2013):
+
+- **PDO**, protected designation of origin. Tighter boundaries, stricter rules, all grapes from the named place. French AOP/AOC, Italian DOC and DOCG, Spanish DO and DOCa, German Qualitatswein and Pradikatswein all sit here.
+- **PGI**, protected geographical indication. Looser: bigger areas, more permitted grapes, higher yields. French IGP, Italian IGT, Spanish Vino de la Tierra.
+- Below both sits generic wine with no geographic claim, such as Vin de France.
+
+The United States runs a lighter version: the American Viticultural Area, a boundary defined and administered by the TTB under 27 CFR Part 9. An AVA delimits a place and nothing else. It does not tell a grower what to plant or how much to crop.
+
+**What an appellation genuinely promises**
+
+- The wine came from that place, within the stated tolerance.
+- It used permitted grapes and met the stated production limits.
+- For some appellations, that it was aged at least a stated minimum.
+
+**What an appellation does NOT promise**
+
+- **That the wine is good.** A poor producer inside a great appellation makes poor wine with a great name on it, and charges more for it than a good producer just outside.
+- **That the rules are neutral.** Appellation boundaries are political documents, negotiated by people with land at stake, and they get redrawn.
+- **That the hierarchy is a quality ranking.** Some of the world's most sought-after wine is deliberately declassified to a lower tier, because the producer wanted to work outside the rules.
+
+**Why you should still learn them.** Because a place name is a much denser piece of information than a grape name. "Chablis" tells you the grape, the climate, the usual style, the likely acid, the typical oak treatment and a price expectation, all in one word. That density is the payoff for the two lessons that follow, and it is why the Old World shelf gets EASIER than the New World shelf once you can read it.
+
+:::reveal A famous producer sells a wine labelled only as a generic regional or national wine, well below the appellation tier, at a high price. What are two legitimate reasons for that? ||| Either the producer used grapes or techniques the appellation rules do not permit (an unpermitted variety, a different vessel, a yield above the maximum), or the wine was rejected or not submitted for the tasting panel that grants the appellation. Neither is evidence of low quality: declassifying deliberately is a well established way of working outside rules the producer disagrees with.
+
+## Sources
+- Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013 establishing a common organisation of the markets in agricultural products. *Official Journal of the European Union, L 347*, 671-854.
+- Alcohol and Tobacco Tax and Trade Bureau. (n.d.). *American viticultural areas* (27 C.F.R. Part 9). https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-9
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.`,
+    },
+    {
+      slug: "somm-reading-old-world-labels",
+      title: "27 · Reading an Old World label",
+      section: "Module 6 · Law and labels",
+      body: `Four systems cover most of what you will meet. Each has a single organising idea, and once you have the idea the vocabulary follows.
+
+**France: the smaller the named place, the tighter the rules.** That is the whole system. Burgundy shows it most clearly, as a ladder:
+
+| Tier | What the label says | What it means |
+| --- | --- | --- |
+| Regional | Bourgogne | Grapes from across the region |
+| Village | Gevrey-Chambertin, Meursault | Grapes from one commune |
+| Premier Cru | The village, then the vineyard, then 1er Cru | A classified vineyard within that commune |
+| Grand Cru | The vineyard name, often alone | The top classified vineyards, and the village name may not appear at all |
+
+That last row is the trap: the most expensive bottles carry the LEAST familiar words, because a Grand Cru does not need to name its village. Bordeaux organises differently, by chateau and by the 1855 classification of the Medoc and Sauternes into five growths, a ranking based on the prices those estates commanded at the time. It has been amended exactly once in over a century and a half, when Mouton Rothschild was promoted to first growth in 1973. Saint-Emilion runs its own classification, revised periodically and repeatedly contested in court. Pomerol, home to some of the most expensive wine in the world, has no classification at all, which is the cleanest possible demonstration that a hierarchy is not a quality measure.
+
+**Italy: the tier is a word, and the rest is geography.** DOCG sits above DOC, both above IGT, all above generic Vino. Two words worth more than the tier:
+
+- **Classico** means the historic heartland of a zone, before the boundary was expanded for commercial reasons. Chianti Classico is a different and generally more serious thing than Chianti.
+- **Riserva** means longer ageing before release, with the exact minimum set by each appellation rather than nationally.
+
+**Spain: the tier plus the age.** DOCa (or DOQ) sits above DO. But the more useful information is the ageing term, historically Rioja's system and now used widely: Joven or Generico, then Crianza, Reserva, Gran Reserva, in rising order of minimum total ageing and minimum time in barrel. For red Rioja the ladder runs roughly two, three and five years total, with one, one and two of those in oak, and the exact requirements are set and periodically revised by the Consejo Regulador, so check the current rules rather than trusting a decade-old summary. The practical point stands regardless: on a Spanish label, the age term tells you more about the style in the glass than the appellation does.
+
+**Germany: sweetness is not what the ladder measures.** This is the most misunderstood label in wine. The Pradikat ladder, Kabinett, Spatlese, Auslese, Beerenauslese, Eiswein, Trockenbeerenauslese, ranks the SUGAR IN THE GRAPES AT HARVEST, not the sugar in the finished wine. A Spatlese can be fermented bone dry. The minimum must weights differ by region and by grape variety, which is why no single number describes the ladder nationally.
+
+So how do you tell if a German wine is dry? Different words entirely:
+
+- **Trocken** means dry. **Halbtrocken** or **feinherb** means off dry.
+- A **Grosses Gewachs** (often marked GG) is a dry wine from a top classified vineyard, under the rules of the VDP, which is a private producers' association with its own vineyard classification rather than a government tier.
+- Failing all of that, read the alcohol. A Riesling at 8% has kept a lot of sugar. The same wine at 12% or above fermented most of it away.
+
+:::reveal A German Riesling is labelled Spatlese and states 12.5% alcohol. Is it likely to be sweet, and how do you know? ||| Probably not sweet, or only just off dry. Spatlese describes how ripe the GRAPES were at harvest, not the finished wine, so it sets the potential sugar rather than the residual sugar. At 12.5% alcohol most of that sugar has been fermented into alcohol, whereas a genuinely sweet Spatlese usually lands nearer 8%. The word Trocken, if present, would settle it outright.
+
+## Sources
+- Regulation (EU) No 1308/2013 of the European Parliament and of the Council of 17 December 2013 establishing a common organisation of the markets in agricultural products. *Official Journal of the European Union, L 347*, 671-854.
+- Consejo Regulador DOCa Rioja. (n.d.). *Ageing categories*. https://www.riojawine.com
+- Verband Deutscher Pradikatsweinguter. (n.d.). *The VDP classification*. https://www.vdp.de
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.`,
+    },
+    {
+      slug: "somm-reading-new-world-labels",
+      title: "28 · Reading a New World label, and the words that mean nothing",
+      section: "Module 6 · Law and labels",
+      body: `A New World label answers "what grape" first and "where" second, which makes it easier to start with and less informative once you know something. The rules that matter are percentage rules.
+
+**United States, under 27 CFR Part 4.** Four numbers do most of the work:
+
+| Claim on the label | What the law requires |
+| --- | --- |
+| A grape variety named | At least 75% of that variety, federally. Some states set a higher bar for themselves, Oregon being the well known example |
+| An AVA named | At least 85% of the grapes from that AVA |
+| A vintage named, with an AVA | At least 95% from that year |
+| A vintage named, with a state or county appellation | At least 85% from that year |
+
+**Estate bottled** is a real, defined term: the winery must be within the named AVA and must have controlled the vineyard, and it must have done the whole production on its premises. It tells you about control of the fruit, which is worth something.
+
+**And now the words that mean nothing at all.** In the United States, none of these carries a legal definition:
+
+- **Reserve**, and every variant of it. Nothing. It appears on wines costing six dollars.
+- **Old vines** or **vieilles vignes**. Nothing, almost everywhere. There is no legal minimum age.
+- **Barrel select**, **winemaker's selection**, **proprietor's blend**, **hand crafted**. Marketing.
+- **Natural**. Not legally defined in most markets. It describes a real philosophy (minimal intervention, little or no added sulfur, ambient yeast), and there is no authority checking it.
+- **Contains no sulfites.** Impossible in practice, since yeast produce some. The regulated claim is the DECLARATION at ten parts per million or more.
+
+Compare that with Europe, where Riserva, Classico, Grand Cru and Gran Reserva all have specific legal content. This is the real trade the two systems make: New World labels are easy to read and carry less enforceable information, Old World labels are hard to read and carry more.
+
+**The rest of the New World, briefly.** Australia, New Zealand, Chile, Argentina and South Africa all run geographical indication systems with percentage rules similar in spirit to the American ones, generally 85% for a named region, variety or vintage. Australia's Label Integrity Programme is worth knowing about by name, because it audits those claims through the supply chain rather than trusting them.
+
+**How to actually use a New World label.** Read three things in this order: the region (the more specific, the more the producer is claiming), the alcohol (your best single clue to climate and style), and the back label's technical detail if there is any. Ignore every adjective on the front.
+
+:::reveal A California bottle says "Reserve Cabernet Sauvignon, Napa Valley, 2021." Which parts of that carry a legal guarantee and which do not? ||| Cabernet Sauvignon guarantees at least 75% of that variety federally, Napa Valley guarantees at least 85% of the fruit from that AVA, and 2021 with an AVA named guarantees at least 95% from that vintage. Reserve guarantees nothing whatsoever in the United States, and appears on wines at every price.
+
+## Sources
+- Alcohol and Tobacco Tax and Trade Bureau. (n.d.). *Labeling and advertising of wine* (27 C.F.R. Part 4). https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-4
+- Wine Australia. (n.d.). *Label Integrity Programme*. https://www.wineaustralia.com
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.`,
+    },
+    {
+      slug: "somm-label-drill",
+      title: "29 · Drill: what does this label actually promise?",
+      section: "Module 6 · Law and labels",
+      body: `Each prompt gives you a label. Say what it legally guarantees, or what the key term means. Type short answers, they are checked forgivingly.
+
+The habit being built is separating the enforceable from the decorative, which is worth real money at a shop counter.`,
+      exercise: {
+        instructions: "Answer in a few words. Where a term has no legal meaning, say so plainly.",
+        items: [
+          {
+            prompt: "A US label says Reserve. What does that legally guarantee?",
+            answer: "nothing",
+            accept: ["no legal meaning", "nothing at all", "it means nothing"],
+            explanation:
+              "Reserve has no federal definition in the United States, unlike Riserva in Italy or Reserva in Spain, both of which set minimum ageing.",
+          },
+          {
+            prompt: "German label, Riesling Spatlese, 8% alcohol, no other sweetness term. Sweet or dry, and why?",
+            answer: "likely sweet, low alcohol means sugar was left unfermented",
+            accept: [
+              "sweet, low alcohol",
+              "likely sweet",
+              "sweet because the alcohol is low",
+              "sweet, sugar was not fermented",
+            ],
+            explanation:
+              "Pradikat ranks ripeness at harvest, not finished sweetness. Alcohol is the practical tell: sugar that did not become alcohol is still in the glass.",
+          },
+          {
+            prompt: "What does Classico mean on an Italian label?",
+            answer: "the historic heartland of the zone",
+            accept: [
+              "the original heartland zone",
+              "historic core of the appellation",
+              "the older, smaller original zone",
+            ],
+            explanation:
+              "Zones were often expanded for commercial reasons, so Classico marks the original core. Chianti Classico is a distinct and generally more serious wine than Chianti.",
+          },
+          {
+            prompt: "A Burgundy label names only a vineyard, with no village name. What tier is it?",
+            answer: "Grand Cru",
+            accept: ["grand cru", "the grand cru tier"],
+            explanation:
+              "Grand Cru vineyards may stand alone without the village. The trap is that the most expensive bottles carry the least familiar words.",
+          },
+          {
+            prompt: "Two US labels state a vintage. One names an AVA, one names a state. Which carries the stricter vintage rule?",
+            answer: "the one naming the AVA",
+            accept: ["the AVA", "AVA", "the AVA one", "the wine with the AVA"],
+            explanation:
+              "A vintage claim alongside an AVA requires at least 95% of the fruit from that year, where a state or county appellation drops the requirement to 85%. The tighter the place claim, the tighter the vintage rule.",
+          },
+          {
+            prompt: "What does Estate Bottled guarantee on a US label?",
+            answer: "the winery is in the AVA and controlled the vineyard and production",
+            accept: [
+              "winery in the AVA and controlled the vineyard",
+              "grown and made by the same producer in the AVA",
+              "the producer controlled the vineyard and made the wine on site",
+            ],
+            explanation:
+              "Unlike Reserve, this one is defined: the winery must sit inside the named AVA, must have controlled the vineyard, and must have produced the wine on its premises.",
+          },
+          {
+            prompt: "Spanish red labelled Gran Reserva. What does the term describe?",
+            answer: "the longest minimum ageing tier, including time in barrel",
+            accept: [
+              "long minimum ageing including barrel time",
+              "the top ageing category",
+              "minimum ageing in barrel and bottle",
+            ],
+            explanation:
+              "The Spanish ageing ladder runs Joven, Crianza, Reserva, Gran Reserva. Exact minimums are set by each Consejo Regulador and are revised periodically.",
+          },
+          {
+            prompt: "A bottle claims Contains No Sulfites. Why is that claim a problem?",
+            answer: "yeast produce sulfites naturally, so no wine is free of them",
+            accept: [
+              "sulfites occur naturally from fermentation",
+              "fermentation produces some sulfites",
+              "no wine is entirely sulfite free",
+            ],
+            explanation:
+              "The regulated claim is a declaration at ten parts per million or more, not an absence claim. Some sulfite is a by-product of fermentation itself.",
+          },
+          {
+            prompt: "Pomerol has no classification system at all. What does that demonstrate?",
+            answer: "a classification is not a measure of quality",
+            accept: [
+              "hierarchy is not quality",
+              "classifications do not measure quality",
+              "quality does not require a classification",
+            ],
+            explanation:
+              "Some of the most expensive wine in the world comes from an unclassified appellation, which is the cleanest available proof that a hierarchy is a historical document rather than a quality ranking.",
+          },
+          {
+            prompt: "What does the abbreviation GG on a German label indicate?",
+            answer: "a dry wine from a top classified vineyard under VDP rules",
+            accept: [
+              "Grosses Gewachs, dry wine from a top vineyard",
+              "dry wine from a classified vineyard",
+              "Grosses Gewachs",
+            ],
+            explanation:
+              "The VDP is a private producers' association with its own vineyard classification, so GG is not a government tier, and it does signal a dry wine from a top site.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "somm-quiz-6",
+      title: "30 · Knowledge check: law and labels",
+      section: "Module 6 · Law and labels",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questionsPerAttempt: 8,
+        questions: [
+          {
+            prompt: "What does an appellation legally guarantee?",
+            options: [
+              "That an independent panel judged the wine to be of high quality",
+              "Origin, permitted grapes and production limits, and sometimes minimum ageing",
+              "That the producer owns every vineyard named on the bottle outright",
+              "That the wine will improve for at least a decade in a proper cellar",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Appellation rules cover where the fruit came from, what could be planted, how much could be cropped, and sometimes ageing. They were built to stop fraud, not to certify quality.",
+            sourceLessonSlug: "somm-why-appellations-exist",
+          },
+          {
+            prompt: "In Burgundy, a label naming only a vineyard with no village indicates what?",
+            options: [
+              "A regional wine blended from across the whole of Burgundy",
+              "A village wine from a commune too small to be widely recognised",
+              "A Grand Cru, the top tier, which need not name its village",
+              "A declassified wine that failed the appellation tasting panel",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The ladder runs regional, village, Premier Cru, Grand Cru, and a Grand Cru vineyard may stand alone. The most expensive bottles therefore carry the least familiar words on the shelf.",
+            sourceLessonSlug: "somm-reading-old-world-labels",
+          },
+          {
+            prompt: "What does the German Pradikat ladder actually measure?",
+            options: [
+              "The residual sugar remaining in the finished bottled wine",
+              "The number of years the wine was aged before its release",
+              "The classification rank of the vineyard the fruit came from",
+              "The sugar in the grapes at harvest, which is ripeness rather than sweetness",
+            ],
+            correctIndex: 3,
+            explanation:
+              "A Spatlese can be fermented bone dry, which is why the ladder confuses so many drinkers. Trocken and feinherb describe finished sweetness, and alcohol level is the practical tell.",
+            sourceLessonSlug: "somm-reading-old-world-labels",
+          },
+          {
+            prompt: "Which term on a United States label carries NO legal definition?",
+            options: [
+              "Reserve",
+              "Estate Bottled",
+              "The named American Viticultural Area",
+              "The stated vintage year",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Estate Bottled, the AVA and the vintage all carry enforceable requirements under 27 CFR Part 4. Reserve appears on wines at every price and guarantees nothing at all.",
+            sourceLessonSlug: "somm-reading-new-world-labels",
+          },
+          {
+            prompt: "Pomerol has no classification system, yet produces some of the world's costliest wine. What does that show?",
+            options: [
+              "That French appellation law does not apply to the Right Bank of Bordeaux",
+              "That classification hierarchies are historical documents, not quality measures",
+              "That unclassified wines are systematically undervalued by the market",
+              "That classification systems were abolished across France after 1973",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Appellation boundaries and classifications are negotiated by people with land at stake. Pomerol is the cleanest demonstration that the absence of a rank says nothing about the wine.",
+            sourceLessonSlug: "somm-reading-old-world-labels",
+          },
+          {
+            prompt: "What is the practical difference between the EU's PDO and PGI tiers?",
+            options: [
+              "PDO wines are always red and PGI wines are always white or rose",
+              "PDO applies to European wine and PGI applies to imported wine",
+              "PDO covers tighter areas with stricter rules, PGI is broader and looser",
+              "PDO requires oak ageing while PGI prohibits any use of oak",
+            ],
+            correctIndex: 2,
+            explanation:
+              "PDO covers French AOC, Italian DOC and DOCG, Spanish DO and DOCa. PGI covers IGP, IGT and Vino de la Tierra, with bigger areas, more permitted grapes and higher yields.",
+            sourceLessonSlug: "somm-why-appellations-exist",
+          },
+          {
+            prompt: "How does an American Viticultural Area differ from a French AOC?",
+            options: [
+              "An AVA delimits a place only, and sets no rules on grapes or yields",
+              "An AVA requires all fruit to come from a single named vineyard site",
+              "An AVA is granted by a tasting panel that assesses each vintage",
+              "An AVA can only be applied to wines made from native American grapes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An AVA is a boundary administered under 27 CFR Part 9 and nothing more. It does not tell a grower what to plant or how much to crop, which is the core structural difference between the systems.",
+            sourceLessonSlug: "somm-why-appellations-exist",
+          },
+          {
+            prompt: "Why does the course say an Old World shelf becomes EASIER than a New World one with knowledge?",
+            options: [
+              "Because Old World labels print the grape variety in larger type",
+              "Because Old World bottles are consistently cheaper at every quality tier",
+              "Because Old World wines are made in a narrower range of styles overall",
+              "Because a place name encodes grape, climate, style and price at once",
+            ],
+            correctIndex: 3,
+            explanation:
+              "One word like Chablis carries the grape, the climate, the usual oak treatment, the likely acid and a price expectation. A grape name alone carries far less.",
+            sourceLessonSlug: "somm-why-appellations-exist",
+          },
+          {
+            prompt: "What does Classico mean on an Italian label?",
+            options: [
+              "A wine made using only traditional equipment and native yeast",
+              "The historic heartland of a zone, before the boundary was expanded",
+              "A wine aged for a legally specified minimum period before release",
+              "A blend drawn from several appellations within one Italian region",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Zones were widened for commercial reasons, and Classico marks the original core. Riserva is the term that specifies extra ageing, with minimums set appellation by appellation.",
+            sourceLessonSlug: "somm-reading-old-world-labels",
+          },
+          {
+            prompt: "The 1855 Bordeaux classification was based on what, and how often has it changed?",
+            options: [
+              "On soil surveys, and it is revised every ten years by the INAO",
+              "On blind tastings, and it has been fully revised three times since",
+              "On the prices estates commanded then, and it changed once, in 1973",
+              "On vineyard size, and it has never been amended in any way",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It ranked the Medoc and Sauternes by the prices those estates were fetching at the time, and the single amendment promoted Mouton Rothschild to first growth in 1973.",
+            sourceLessonSlug: "somm-reading-old-world-labels",
+          },
+          {
+            prompt: "A US wine names a grape variety on the front label. What is the federal minimum for that variety?",
+            options: [
+              "51%, with the remainder unrestricted as to variety",
+              "75%, with some states setting a higher bar for themselves",
+              "85%, matching the requirement for a named AVA",
+              "100%, with no blending of other varieties permitted",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The federal varietal minimum is 75%. The 85% figure applies to a named AVA, and Oregon is the well known case of a state holding itself to a stricter standard than the federal one.",
+            sourceLessonSlug: "somm-reading-new-world-labels",
+          },
+          {
+            prompt: "Which is the most useful order for reading a New World label?",
+            options: [
+              "Front label adjectives, then the brand name, then the vintage year",
+              "Price sticker, then the importer, then the closure type used",
+              "Region specificity, then stated alcohol, then any technical back label",
+              "Grape variety, then the reserve designation, then the bottle weight",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A more specific region means the producer is claiming more, alcohol is the single best clue to climate and style, and a technical back label is real information. Front label adjectives are marketing.",
+            sourceLessonSlug: "somm-reading-new-world-labels",
+          },
+        ],
+      },
+    },
+
+    // ══════════════ MODULE 7 · THE REGIONS ══════════════
+    {
+      slug: "somm-france",
+      title: "31 · France, the reference points",
+      section: "Module 7 · The regions",
+      recallContent: [
+        {
+          prompt: "Name three words on a US wine label that carry no legal definition at all.",
+          answer:
+            "Reserve, old vines, and any of the selection phrases such as barrel select, winemaker's selection or proprietor's blend. Natural is also undefined in most markets. Estate Bottled, by contrast, is legally defined.",
+        },
+      ],
+      body: `France matters not because it is best but because most of the world's benchmarks were set there, so the vocabulary of wine is largely French vocabulary. Six regions carry most of it.
+
+**Bordeaux: blends, and the river divides them.** The Gironde estuary splits the region, and the split is legible in the glass.
+
+- **Left bank** (Medoc, Haut-Medoc, and the communes of Saint-Estephe, Pauillac, Saint-Julien, Margaux, plus Graves and Pessac-Leognan to the south). Gravel soils, Cabernet Sauvignon dominant blends. Firmer tannin, blackcurrant, cedar, a graphite edge, longer lived.
+- **Right bank** (Saint-Emilion, Pomerol, and the satellites). Clay and limestone, Merlot dominant with Cabernet Franc. Rounder, plusher, plum and chocolate, approachable earlier.
+- **Sauternes** makes botrytised sweet wine from Semillon and Sauvignon Blanc, and dry white Bordeaux from the same pair is one of the genuinely underpriced categories in wine.
+
+**Burgundy: one grape each, and the site is everything.** Chardonnay for white, Pinot Noir for red, with the ladder from Lesson 27. Chablis at the northern end is the cool, high acid, usually unoaked reference for Chardonnay. The Cote de Nuits leans red and the Cote de Beaune holds the great whites. Prices are brutal, and the Cote Chalonnaise and Maconnais are where the value hides. **Beaujolais**, immediately south, is Gamay: light, high acid, often carbonic, and Cru Beaujolais such as Morgon or Moulin-a-Vent is the best value entry to the Burgundian idea.
+
+**The Rhone: two valleys pretending to be one region.**
+
+- **Northern Rhone.** Syrah alone for reds (Cote-Rotie, Hermitage, Cornas, Crozes-Hermitage, Saint-Joseph), peppery and savoury. Whites from Viognier (Condrieu), Marsanne and Roussanne.
+- **Southern Rhone.** Blends led by Grenache with Syrah and Mourvedre. Chateauneuf-du-Pape is the famous one, Cotes du Rhone and Rasteau the value. Warmer, higher alcohol, rounder.
+
+**The Loire: a river of high acid.** Muscadet at the Atlantic end (lean, saline, brilliant with shellfish), Chenin Blanc in the middle at every sweetness level (Vouvray, Savennieres), Cabernet Franc for reds (Chinon, Bourgueil, leafy and red fruited), and Sauvignon Blanc at the eastern end (Sancerre, Pouilly-Fume).
+
+**Alsace: France labelled like Germany.** Varietally labelled, mostly Riesling, Gewurztraminer, Pinot Gris and Muscat, generally dry but not always, and the label often does not say which. Read the alcohol.
+
+**Champagne: covered in Lesson 23.** Chardonnay, Pinot Noir and Meunier, the traditional method, and the coolest major region in France, which is exactly why the base wines have the acid the method needs.
+
+${flightCard(FLIGHT_7)}
+
+:::reveal Two Bordeaux at the same price, one firm and angular with blackcurrant and graphite, one round and plush with plum. Which bank is which, and what is the underlying cause? ||| The firm, angular, blackcurrant and graphite wine is left bank, Cabernet Sauvignon dominant on gravel soils. The round, plush, plummy one is right bank, Merlot dominant on clay and limestone. The cause is which grape ripens well on which soil, so the river is really dividing two soil types and therefore two blends.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Institut national de l'origine et de la qualite. (n.d.). *Les signes officiels de la qualite et de l'origine*. https://www.inao.gouv.fr`,
+    },
+    {
+      slug: "somm-italy",
+      title: "32 · Italy, where acid is the house style",
+      section: "Module 7 · The regions",
+      body: `Italy grows wine in every one of its regions and uses hundreds of native varieties, which makes it look impossible. One idea makes it tractable: Italian wine is built for the table. Acid is high, tannin is often firm, fruit is rarely the loudest thing, and a great many Italian wines are unimpressive alone and transformed by food.
+
+**Piedmont: Nebbiolo, and the two hills.** Barolo and Barbaresco are both Nebbiolo, both in the Langhe. Barbaresco is generally the slightly softer and earlier drinking of the pair. Both are pale, tannic, high in acid, and smell of tar, dried roses and, with age, forest floor. **Langhe Nebbiolo** is the same grape at a fraction of the price and is how most people should learn it. Alongside them, **Barbera** gives high acid with low tannin, **Dolcetto** gives the reverse, and **Moscato d'Asti** is the region's sweet, low alcohol, lightly sparkling counterweight.
+
+**Tuscany: Sangiovese, four ways.**
+
+- **Chianti Classico**, from the historic heartland, is the reference: sour red cherry, dried herbs, tomato leaf, very high acid.
+- **Brunello di Montalcino** is a single Sangiovese clone grown in a warmer, drier zone, aged long, and priced accordingly. **Rosso di Montalcino** is its younger sibling and a far better value lesson.
+- **Vino Nobile di Montepulciano** is a third Sangiovese expression, and it is not the same thing as Montepulciano d'Abruzzo, which is a different GRAPE entirely from a different region. That naming collision catches everyone once.
+- The **Super Tuscans** were born as a rebellion: producers using Cabernet Sauvignon and Merlot outside the appellation rules had to sell as basic table wine, and the wines were so successful that the law eventually built new appellations around them, notably Bolgheri. It is the best story in wine about a hierarchy failing to describe quality.
+
+**Veneto: volume and surprises.** Soave (Garganega, quietly excellent at the top), Valpolicella (light and fresh), Amarone (dried grapes, fermented dry, powerful) and Prosecco (Glera, tank method) all come from here.
+
+**The south, and the islands.** Where the value has moved. Aglianico from Campania and Basilicata is tannic and long lived. Primitivo from Puglia is the same variety as Zinfandel. Nero d'Avola in Sicily is warm and generous, and **Etna** on volcanic soil at altitude makes pale, high acid reds from Nerello Mascalese that fool a great many blind tasters into calling Burgundy.
+
+${flightCard(FLIGHT_8)}
+
+:::reveal A pale, high acid, savoury red with fine tannin turns out to be from Sicily. How is that possible in one of the hottest wine regions in Europe? ||| Altitude and volcanic soils on Mount Etna. Vineyards sit high enough that the growing season behaves like a much cooler region, with a large diurnal range preserving acid, so Nerello Mascalese produces pale, perfumed, high acid reds. It is the clearest single reminder that latitude and country are poor predictors, and that growing season conditions are what you actually taste.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Robinson, J., Harding, J., & Vouillamoz, J. (2012). *Wine grapes: A complete guide to 1,368 vine varieties, including their origins and flavours*. Ecco.`,
+    },
+    {
+      slug: "somm-spain-portugal-germany-austria",
+      title: "33 · Spain, Portugal, Germany and Austria",
+      section: "Module 7 · The regions",
+      body: `Four countries that between them hold most of the remaining value in fine wine, largely because their labels are harder to read.
+
+**Spain: oak, age, and altitude.**
+
+- **Rioja** is Tempranillo led, and its defining variable is the ageing ladder from Lesson 27 rather than the vineyard. The traditional style, long ageing in American oak, gives the coconut and dill signature. A modern style uses French oak and shorter ageing for a darker, fruitier wine. Both exist under the same appellation, and the label rarely tells you which, so the producer is the information.
+- **Ribera del Duero** is Tempranillo at higher altitude, with a big diurnal range: darker, more structured, less overtly oaky.
+- **Priorat** is old vine Garnacha and Carinena on slate, low yielding, powerful and expensive.
+- **Rias Baixas** in the cool, wet, green northwest makes Albarino: citrus, salinity, high acid.
+- **Jerez** makes Sherry, covered in Lesson 24, and remains the most underpriced fine wine category in the world.
+
+**Portugal: the best value in Europe, for a specific reason.** Portugal grows a very large number of native varieties almost nobody outside the country can name, which suppresses prices without suppressing quality.
+
+- **Douro** is where Port comes from, and its dry red table wines from the same grapes (Touriga Nacional, Touriga Franca, Tinta Roriz which is Tempranillo) are excellent and comparatively cheap.
+- **Vinho Verde** in the north is light, low alcohol, high acid and often faintly spritzy.
+- **Dao** and **Alentejo** cover the elegant and the generous ends of the red spectrum.
+
+**Germany: cool climate Riesling, and the value question.** The Mosel makes the lightest, lowest alcohol, most piercing Rieslings on steep slate slopes. The Rheingau is fuller and more often dry. The Pfalz is warmer and riper. Germany also makes serious Pinot Noir, called **Spatburgunder**, which almost nobody expects. The label rules from Lesson 27 are the whole barrier here, and dismantling that barrier is why German Riesling remains one of the great value plays in fine wine.
+
+**Austria: dry, precise, and consistent.** **Gruner Veltliner** is the signature white: white pepper, citrus, a savoury lentil note, high acid, almost always dry, and one of the most food friendly wines made anywhere. Austrian Riesling is drier and fuller than most German equivalents. **Blaufrankisch** is the red worth knowing: medium bodied, peppery, high acid, and structurally closer to a Northern Rhone Syrah than to anything else.
+
+${flightCard(FLIGHT_9)}
+
+:::reveal Why does the course argue German Riesling and Sherry are systematically underpriced rather than simply unpopular? ||| Because in both cases the barrier is legibility rather than quality. A German label ranks harvest ripeness rather than sweetness, so buyers cannot tell a dry wine from a sweet one without training, and Sherry is assumed to be sweet when most of it is bone dry. When demand is suppressed by a labelling misunderstanding rather than by what is in the glass, the price falls below the quality, which is exactly the gap a trained buyer exploits.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Consejo Regulador DOCa Rioja. (n.d.). *Ageing categories*. https://www.riojawine.com
+- Verband Deutscher Pradikatsweinguter. (n.d.). *The VDP classification*. https://www.vdp.de`,
+    },
+    {
+      slug: "somm-new-world-regions",
+      title: "34 · The New World, region by region",
+      section: "Module 7 · The regions",
+      body: `The useful frame here is not country. It is the specific place, because every one of these countries contains cool and warm regions, and Module 4 already taught you that the growing season predicts the glass.
+
+**United States.** California produces the great majority of American wine. **Napa** is warm and Cabernet Sauvignon country, priced globally. **Sonoma** is more varied, and its coastal edge is genuinely cool, giving high acid Pinot Noir and Chardonnay. **Oregon's Willamette Valley** is cool and marginal, making Pinot Noir closer in structure to Burgundy than to California. **Washington's** Columbia Valley is continental and dry, strong in Cabernet, Merlot and Syrah. **New York's Finger Lakes** makes Riesling that surprises people who have not been paying attention.
+
+**Australia.** **Barossa** and **McLaren Vale** are warm, giving rich Shiraz and Grenache. **Coonawarra** on its red soils makes structured Cabernet. **Clare** and **Eden Valley** make some of the world's finest dry Riesling, lime driven and searingly acidic. **Yarra Valley**, **Mornington**, **Tasmania** and **Margaret River** cover the cool end, with Margaret River in particular producing Cabernet and Chardonnay at a very high level.
+
+**New Zealand.** **Marlborough** Sauvignon Blanc changed the world's expectations of that grape in a single generation: pungent, tropical and grassy at once. **Central Otago** is one of the southernmost wine regions on earth and makes concentrated, high acid Pinot Noir.
+
+**Chile.** A long, narrow country where the meaningful axis runs east to west, from cool coastal valleys to warm interior ones. **Maipo** for Cabernet, **Casablanca** and **San Antonio** for cool climate whites and Pinot, **Colchagua** for warm reds. **Carmenere**, long mistaken for Merlot until DNA work identified it in the 1990s, is Chile's signature: dark, savoury, with a pyrazine edge when picked early.
+
+**Argentina.** **Mendoza**, and the story is altitude. Vineyards run from around 600 metres up past 1,500, and the higher ones have the diurnal range that keeps Malbec fresh rather than merely ripe. The **Uco Valley** is where that plays out most clearly. Argentine Malbec at altitude is the standard example of a warm country making structured wine.
+
+**South Africa.** A long history and a recent transformation. **Stellenbosch** for Cabernet and Bordeaux blends, **Swartland** for old vine Chenin Blanc and Rhone varieties, **Hemel-en-Aarde** for cool climate Pinot Noir. South African **Chenin Blanc**, from old bush vines, is arguably the best quality-to-price ratio available anywhere in white wine.
+
+**The pattern worth carrying away.** Every one of these countries has cool regions and warm regions, and the cool ones are where the fine wine conversation has moved. When a shop tells you a country's style, ask which region, then ask about the alcohol.
+
+:::reveal A shop assistant says "Australian reds are all big and jammy." Give the two-sentence correction a trained buyer would make. ||| Australia contains regions of every climate, so the country name predicts nothing: Barossa Shiraz is warm and rich while Yarra, Mornington and Tasmania are genuinely cool and make restrained, high acid wine. The useful questions are which region and what the stated alcohol is, because the growing season is what you actually taste.
+
+## Sources
+- Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
+- Robinson, J., Harding, J., & Vouillamoz, J. (2012). *Wine grapes: A complete guide to 1,368 vine varieties, including their origins and flavours*. Ecco.`,
+    },
+    {
+      slug: "somm-quiz-7",
+      title: "35 · Knowledge check: the regions",
+      section: "Module 7 · The regions",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questionsPerAttempt: 8,
+        questions: [
+          {
+            prompt: "What is the structural difference between left bank and right bank Bordeaux?",
+            options: [
+              "Left bank is Cabernet dominant and firmer, right bank is Merlot dominant and rounder",
+              "Left bank is a white wine region and right bank produces only red wine",
+              "Left bank wines are unoaked while right bank wines are aged in new barrels",
+              "Left bank permits blending and right bank requires a single named variety",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Gravel soils on the left bank favour Cabernet Sauvignon, clay and limestone on the right favour Merlot, so the river is really dividing two soil types and therefore two blends and two structures.",
+            sourceLessonSlug: "somm-france",
+          },
+          {
+            prompt: "Barolo and Barbaresco are both made from which grape?",
+            options: [
+              "Sangiovese, the grape behind Chianti and Brunello",
+              "Nebbiolo, pale in colour and very high in tannin",
+              "Barbera, which carries high acid and low tannin",
+              "Corvina, the principal grape of Valpolicella",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both are Nebbiolo from the Langhe in Piedmont. Langhe Nebbiolo is the same grape at a fraction of the price, and is how most people should first learn it.",
+            sourceLessonSlug: "somm-italy",
+          },
+          {
+            prompt: "Vino Nobile di Montepulciano and Montepulciano d'Abruzzo differ how?",
+            options: [
+              "They are the same wine sold under two regional trade names",
+              "One is a sweet dessert wine and the other is a dry table wine",
+              "One is Sangiovese from Tuscany, the other a different grape from Abruzzo",
+              "One is a DOCG and the other has no appellation status of any kind",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Montepulciano is a Tuscan town in one name and a grape variety in the other, which is the naming collision that catches nearly every learner once.",
+            sourceLessonSlug: "somm-italy",
+          },
+          {
+            prompt: "What does the Super Tuscan story demonstrate about appellation hierarchies?",
+            options: [
+              "That a hierarchy can fail to describe quality, forcing the law to catch up",
+              "That producers who ignore appellation rules are always penalised commercially",
+              "That Italian wine law has never been revised since it was first written",
+              "That international grape varieties cannot succeed outside their homeland",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Producers using Cabernet and Merlot outside the rules had to sell as basic table wine, the wines succeeded anyway, and new appellations such as Bolgheri were eventually built around them.",
+            sourceLessonSlug: "somm-italy",
+          },
+          {
+            prompt: "Etna produces pale, high acid, perfumed reds despite Sicily's heat. Why?",
+            options: [
+              "The grapes are harvested months earlier than elsewhere in Sicily",
+              "Volcanic soil chemistry lowers the sugar content of the ripe fruit",
+              "Sea breezes cool the island uniformly throughout the growing season",
+              "Altitude gives a large diurnal range that preserves acidity in the fruit",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Vineyards sit high enough on the volcano that the growing season behaves like a much cooler region. It is the clearest reminder that country and latitude predict far less than growing conditions do.",
+            sourceLessonSlug: "somm-italy",
+          },
+          {
+            prompt: "What is the defining variable in Rioja that the label does report?",
+            options: [
+              "The specific vineyard site the fruit was grown on",
+              "The ageing ladder: Joven, Crianza, Reserva, Gran Reserva",
+              "Whether the wine was fermented with ambient or selected yeast",
+              "The exact proportion of Tempranillo in the finished blend",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rioja is organised around ageing rather than around site. What the label does not report is whether the producer used the traditional American oak style or the modern French oak one, so the producer is the information there.",
+            sourceLessonSlug: "somm-spain-portugal-germany-austria",
+          },
+          {
+            prompt: "Why does the course call Portuguese wine unusually good value?",
+            options: [
+              "Portugal subsidises wine exports more heavily than other EU states",
+              "Portuguese wine is exempt from EU appellation law and its costs",
+              "Its many native varieties are unfamiliar, which suppresses price but not quality",
+              "Portuguese vineyards are mechanised, which lowers production costs sharply",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Recognition drives price. A country whose grapes almost nobody outside it can name has weak brand recognition and strong wine, and the dry reds of the Douro are the clearest example.",
+            sourceLessonSlug: "somm-spain-portugal-germany-austria",
+          },
+          {
+            prompt: "Which Austrian white is described as one of the most food friendly wines made anywhere?",
+            options: [
+              "Gruner Veltliner, with white pepper, citrus and high acid",
+              "Blaufrankisch, medium bodied and peppery",
+              "Spatburgunder, grown mainly on limestone soils",
+              "Garganega, the principal grape of the Soave zone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Gruner Veltliner is almost always dry, high in acid and savoury rather than fruity. Blaufrankisch is Austria's notable red, Spatburgunder is German Pinot Noir, and Garganega is Italian.",
+            sourceLessonSlug: "somm-spain-portugal-germany-austria",
+          },
+          {
+            prompt: "What makes Argentine Malbec from the Uco Valley structured rather than merely ripe?",
+            options: [
+              "Irrigation restrictions that deliberately stress the vines all season",
+              "Altitude, and the large diurnal range that comes with it",
+              "Harvesting before the grapes reach full phenolic ripeness",
+              "Extended maceration on the skins after fermentation ends",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Mendoza vineyards run from around 600 metres to past 1,500. Warm days ripen the fruit while cold nights preserve acid, which is the same mechanism that explains high acid wines from other warm regions.",
+            sourceLessonSlug: "somm-new-world-regions",
+          },
+          {
+            prompt: "Carmenere was mistaken for which grape until DNA work identified it in Chile?",
+            options: [
+              "Cabernet Franc, which shares its herbaceous character",
+              "Syrah, which shares its dark colour and savoury profile",
+              "Merlot, which it was planted alongside and sold as",
+              "Malbec, which was also widely planted in Bordeaux",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Chilean plantings were sold as Merlot for decades before the identification in the 1990s. Carmenere ripens later, and picked early it shows a pronounced pyrazine edge.",
+            sourceLessonSlug: "somm-new-world-regions",
+          },
+          {
+            prompt: "A shop says a country's wines are all one style. What is the trained buyer's response?",
+            options: [
+              "Ask for the vintage chart, since style varies by year not by place",
+              "Accept it for New World countries and challenge it for European ones",
+              "Ask which region, then check the stated alcohol on the bottle",
+              "Ask whether the wine was bottled at the estate or by a negociant",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Every major producing country contains cool and warm regions, so the country name predicts almost nothing. Region and alcohol together get you most of the way to the style.",
+            sourceLessonSlug: "somm-new-world-regions",
+          },
+          {
+            prompt: "Which pairing correctly matches a region to its signature wine?",
+            options: [
+              "Marlborough with Sauvignon Blanc, Willamette Valley with Pinot Noir",
+              "Coonawarra with Riesling, Clare Valley with Cabernet Sauvignon",
+              "Swartland with Pinot Noir, Hemel-en-Aarde with old vine Chenin Blanc",
+              "Casablanca with Cabernet Sauvignon, Maipo with cool climate Chardonnay",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Marlborough remade the world's expectations of Sauvignon Blanc and Willamette is cool climate Pinot country. The other three each swap two regions that genuinely produce the opposite of what is claimed.",
+            sourceLessonSlug: "somm-new-world-regions",
           },
         ],
       },
