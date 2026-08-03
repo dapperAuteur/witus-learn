@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { forbidden } from "next/navigation";
-import { requireUser } from "@/lib/session";
+import { requireUserPage } from "@/lib/session";
 import { isTenantAdmin } from "@/lib/api";
 import { getScopedDb } from "@/db/scoped";
 import { getCohort, listMembers } from "@/db/queries/cohorts";
@@ -25,7 +25,7 @@ export async function generateMetadata({
 export default async function CohortRosterPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const sdb = await getScopedDb();
-  const session = await requireUser();
+  const session = await requireUserPage();
 
   const found = await getCohort(sdb.tenantId, id);
   const cohort = sdb.ownOrNotFound(found);

@@ -160,6 +160,21 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   password, so only a fixed reason token is returned and the error goes to Sentry instead.
   Deliberately **tenant-agnostic** (no tenant resolver), so an unknown host or a \`*.vercel.app\` URL
   cannot read as down. \`force-dynamic\` + \`Cache-Control: no-store\`. No migration.
+- ✅ **Signed-out redirect instead of a dead-end 403** (\`fix/signed-out-login-redirect\`): \`/family\`,
+  \`/cohorts\`, and both report pages guarded with \`requireUser()\`, which calls \`forbidden()\`, so a
+  signed-out visitor following a bookmark or a shared link got a bare **403** with no way forward
+  (\`NEXT_HTTP_ERROR_FALLBACK;403\` in the logs, which also paged the uptime monitor on every hit),
+  while every \`/teach\` page redirected to \`/login\` for the identical condition. Pages now use a new
+  **\`requireUserPage()\`** that redirects to \`/login?next=<the page they wanted>\`, so the magic link
+  returns the learner where they were headed; \`requireUser()\` keeps returning **403** for API routes
+  and the role guards, because redirecting \`/api/admin/*\` would hand the admin UI's \`fetch\` an HTML
+  page to parse as JSON. The path comes from an \`x-pathname\` request header stamped in \`proxy.ts\`
+  (request-side only, query string deliberately dropped), and every \`?next=\` goes through
+  **\`safeNextPath()\`** so absolute, protocol-relative, backslash and control-character values can
+  never turn the sign-in page into an open redirect. Adds a **branded \`app/forbidden.tsx\`** (Sign in
+  when signed out, Back to home when signed in, and it never names the resource, tenant, or role),
+  replacing Next's unstyled fallback. 18 tests in \`tests/signed-out-redirect.test.ts\`, including a
+  source guard that fails if any \`(tenant)\` page reaches for the API-shaped guard again. No migration.
 - ✅ **Standards growth funnel** (\`feat/standards-growth-funnel\`): turns the (already all-51-state)
   standards alignment into a discoverable SEO funnel. The **sitemap** now lists one indexable URL per
   jurisdiction THIS tenant is aligned to (plus the finder, the matrix, courses, and explore), so a

@@ -82,6 +82,38 @@ It is **tenant-agnostic on purpose**: it never calls the tenant resolver, so an 
 It answers "app + database alive", never "this brand exists". Covered by
 [tests/health-route.test.ts](tests/health-route.test.ts).
 
+## Signed-out visitors: redirect, don't dead-end
+
+Two guards in [src/lib/session.ts](src/lib/session.ts), and picking the wrong one is a visible bug:
+
+| Guard | Signed-out result | Use it in |
+| --- | --- | --- |
+| `requireUserPage()` | `307` to `/login?next=<the page they wanted>` | **page components** |
+| `requireUser()` | `403` via `forbidden()` | **API routes**, and the role guards built on it |
+
+The split exists because the two callers need opposite things. A person needs a way forward, so a
+page sends them to sign in and brings them back afterwards. An API caller needs a status it can
+branch on: redirecting `/api/admin/*` would hand the admin UI's `fetch` an HTML sign-in page to
+parse as JSON. **A missing session is "not signed in yet" (redirect); a session without the right
+role is "not allowed" (403).** Role guards (`requireBrandAdmin` and friends) therefore keep using
+`forbidden()` for the role failure itself.
+
+`requireUserPage()` learns the current path from the `x-pathname` request header, which
+[src/proxy.ts](src/proxy.ts) stamps on every matched request (request-side only, never sent to the
+browser, and without the query string so no token in a URL rides along into a redirect). The
+`?next=` value is validated by `safeNextPath()` in [src/lib/next-path.ts](src/lib/next-path.ts)
+before anything redirects to it or hands it to the magic link as a `callbackURL`: absolute,
+protocol-relative, backslash and control-character values all degrade to `/`, so the sign-in page
+can never be turned into an open redirect for phishing.
+
+`forbidden()` renders [src/app/forbidden.tsx](src/app/forbidden.tsx), a branded 403 that offers a
+**Sign in** button when the visitor has no session and a way back to the home page when they do. It
+never names the resource, the tenant, or the required role. Without that file Next renders its own
+unstyled fallback, which is what produced the bare `NEXT_HTTP_ERROR_FALLBACK;403` page.
+
+Covered by [tests/signed-out-redirect.test.ts](tests/signed-out-redirect.test.ts), which also fails
+the build if any `(tenant)` page reaches for the API-shaped guard again.
+
 ## Vetting and "Coming soon" (`courses.vetted_at`)
 
 `courses.vetted_at` records that the **platform owner** personally reviewed a course against its
