@@ -14,6 +14,7 @@ import { HOW_STORIES_WORK_COURSE } from "./data/how-stories-work-course";
 import { NEWS_STORYTELLING_COURSE } from "./data/news-storytelling-course";
 import { DOCUMENTARY_COURSE } from "./data/documentary-course";
 import { ORAL_HISTORY_COURSE } from "./data/oral-history-course";
+import { DIGITAL_SOCIAL_STORYTELLING_COURSE } from "./data/digital-social-storytelling-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -1349,6 +1350,25 @@ async function main() {
     seriesCode: "STORY",
     seriesPosition: "T4",
     seriesTrack: "True",
+  });
+
+  // The Distributed track, currently one course. Its discipline is the one the other two tracks
+  // never face: attention is re-earned every few seconds by someone who did not choose the work.
+  // Built on the CONSTRAINT rather than on any platform, because a course about a platform is
+  // obsolete in eighteen months and teaches nothing that transfers.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "digital-social-storytelling",
+    course: DIGITAL_SOCIAL_STORYTELLING_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 30,
+    seriesCode: "STORY",
+    seriesPosition: "D1",
+    seriesTrack: "Distributed",
   });
 
   await seedAuthoredCourse(db, {

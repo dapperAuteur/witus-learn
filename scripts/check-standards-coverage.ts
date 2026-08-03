@@ -74,6 +74,7 @@ const BACKLOG: Record<string, string> = {
   "news-storytelling": "MAP THIS, not excused. Media literacy plus ELA informational writing and sourcing",
   documentary: "MAP THIS, not excused. Media literacy, research ethics, ELA argument-from-evidence",
   "oral-history": "MAP THIS, not excused. ELA speaking/listening plus social-studies historical inquiry",
+  "digital-social-storytelling": "MAP THIS, not excused. Media literacy plus ELA production and distribution of writing",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");
