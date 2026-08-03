@@ -613,6 +613,18 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **BVC Sommelier series, course #1: Wine** (\`feat/bvc-sommelier-wine\`, plans/53). A skills sequel
+  to BVC S2E9 "Wine: Blood of the Earth": that episode teaches wine's history, this one teaches
+  tasting and choosing. 52 lessons in 12 modules at WSET-2-ish depth (the four-stage grid and six
+  structural components, ~20 grapes sorted by structure, climate and an honest account of terroir,
+  the cellar decisions that imitate grape character, AOC/DOCG/DO/Prädikat/AVA label law cited to the
+  regulations, the regions, price and buying, service and the seven faults, pairing as mechanics,
+  blind deduction, and an assignment capstone). 12 tasting flights with price bands, substitutes and
+  a **required no-alcohol parallel drill** on every one, plus \`requiresAgeGate\`. Claims **no**
+  affiliation with, and no exam preparation for, any certifying body, and says so in lesson 1.
+  Ships with a shared scaffold (\`scripts/lib/sommelier.ts\` + \`seriesSlug\`/\`freePreviewCount\` on the
+  authored-course seeder) that the chocolate, coffee, tea, beer, whiskey, rum and cannabis courses
+  inherit. Seeded by \`pnpm seed:sommelier\`. BAM sets the price and the vetted state in the admin UI.
 - 🔧 **"Also discussed in" on lesson pages, and a year brush on the globe** (plans/45 follow-ups). A
   lesson that NAMES a cross-course entity now carries a quiet "Also discussed in other courses" line
   linking to the entity page, matched by scanning the lesson text (no per-lesson tagging), tenant-scoped

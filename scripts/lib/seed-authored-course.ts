@@ -18,6 +18,15 @@ export async function seedAuthoredCourse(
     navigationMode?: "linear" | "cyoa";
     seasonNumber?: number;
     requiresAgeGate?: boolean;
+    /** Track this course belongs to (courses.series_slug / series_title). A SEASON is BVC's
+     *  broadcast ordering; a SERIES is a track that cuts across seasons, which is what the
+     *  BVC Sommelier courses are. Set both or neither. */
+    seriesSlug?: string;
+    seriesTitle?: string;
+    /** How many leading lessons are free preview. Defaults to 1, the historical behaviour.
+     *  A paid course whose first lesson is housekeeping needs 2-3 to show real teaching before
+     *  the paywall. Counts from the top in authored order, quizzes included. */
+    freePreviewCount?: number;
     /** Ecosystem product slugs (src/lib/ecosystem.ts) for the "Related WitUS tools" card. */
     relatedProducts?: string[];
     /** Delete existing lessons first (clean replacement, e.g. migrating over a sample). */
@@ -29,6 +38,8 @@ export async function seedAuthoredCourse(
   const extra = {
     ...(opts.seasonNumber != null ? { seasonNumber: opts.seasonNumber } : {}),
     ...(opts.requiresAgeGate != null ? { requiresAgeGate: opts.requiresAgeGate } : {}),
+    ...(opts.seriesSlug != null ? { seriesSlug: opts.seriesSlug } : {}),
+    ...(opts.seriesTitle != null ? { seriesTitle: opts.seriesTitle } : {}),
     ...(opts.relatedProducts != null ? { relatedProducts: opts.relatedProducts } : {}),
   };
 
@@ -113,7 +124,7 @@ export async function seedAuthoredCourse(
     mapContent: l.mapContent ?? null,
     recallContent: l.recallContent ?? null,
     sortOrder: i + 1,
-    isFreePreview: i === 0,
+    isFreePreview: i < Math.max(1, opts.freePreviewCount ?? 1),
     isPublished: true,
   }));
   if (lessonRows.length) {
