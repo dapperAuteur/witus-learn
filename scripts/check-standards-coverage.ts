@@ -58,6 +58,12 @@ const BACKLOG: Record<string, string> = {
   // history courses their Common Core literacy mappings (RH.11-12.8, WHST.11-12.7/8). It is excused
   // for now on audience, not on rigour.
   "surplus-funds-basics": "OUT OF SCOPE for now, adult professional education. Revisit for the literacy strands",
+  // Monodrama I. Inert for the same reason as the two above (registered via seedAuthoredCourse, not
+  // the shorthand form this guard scans). Flagged as a GENUINE mapping candidate rather than an
+  // exemption: a course whose capstone is a written narrative draft with structural revision is a
+  // direct fit for the Common Core ELA writing strands (W.11-12.3 narrative writing, W.11-12.5
+  // revision), which is a closer fit than most of what the catalog has already mapped.
+  "monodrama-writing": "MAP THIS, not excused. Narrative-writing course, fits the ELA writing strands",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");

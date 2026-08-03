@@ -11457,6 +11457,250 @@ Vigneri, M., & Holmes, R. (2009). *When being more productive still doesn't pay:
     provenance: "plans/future-courses/mansa-gold/03-women-in-cocoa-and-coffee.md",
   },
   {
+    key: "marketing-ebook-ai-course-creation",
+    title: "Building Courses With AI Without Embarrassing Yourself",
+    group: "Marketing",
+    summary: "A Learn.WitUS field guide. Draft for review.",
+    body: `# Building Courses With AI Without Embarrassing Yourself
+
+### A working method from the people who had to fix it the hard way
+
+*A Learn.WitUS field guide. Draft for review.*
+
+---
+
+## Who this is for
+
+You can now produce a forty-lesson course in an afternoon. That is genuinely new, and it is not the
+hard part.
+
+The hard part is that the same tool which makes production nearly free makes **trust nearly
+worthless**. When anyone can generate a syllabus, a syllabus proves nothing. When anyone can generate
+a citation, a citation proves nothing either. What is scarce now is not content. It is the ability to
+say, credibly, that what you wrote is true.
+
+This guide is the method one catalogue uses to make that claim. It is not theory. Every rule in it
+exists because something went wrong first, and the failures are named.
+
+---
+
+## Part 1: The four ways AI-built courses fail
+
+Not "AI is unreliable." Specific, recurring, and each with a specific fix.
+
+### 1. The citation that does not exist
+
+The famous one, and the least interesting, because everybody already fears it. A model will produce a
+plausible author, a plausible journal, a plausible year, and a DOI that resolves to nothing.
+
+**But the version that actually gets published is subtler.** The source exists. The author is real.
+The paper is real. It simply does not say what the lesson claims it says. No link checker catches
+that. No spell check catches it. A reader who trusts you never catches it, which is the problem.
+
+### 2. The quiz that can be passed without reading
+
+Two tells, and they are mechanical.
+
+**Position.** An author writes the correct answer first and pads three distractors after it. Do that
+across a bank and a learner can score full marks by clicking the first option every time, having read
+nothing.
+
+**Length.** More insidious, and it survives shuffling. The correct answer is the one the author cared
+about, so it collects the qualifier, the date and the "because" clause, while the distractors stay
+short. The learner clicks the longest option and passes.
+
+We measured this. One freshly written bank scored **88 percent** for the strategy "always pick the
+longest option, never read the question." Another scored 72. These were written carefully, by
+someone trying not to do it.
+
+**Why it matters beyond the quiz:** every dashboard average, every completion statistic, every claim
+about learning outcomes is computed from those scores. A quiz that measures test-taking rather than
+learning does not just fail the learner. It corrupts everything downstream that cites it.
+
+### 3. The hedge that ships forever
+
+You write: *"Verify the current rules before relying on this."*
+
+That sentence is honest. It is also completely unactionable. Nobody keeps a list of them. Nothing
+records whether anyone ever looked. The hedge ships to learners, and it is still there two years
+later, in a lesson that has been read three thousand times.
+
+The failure is not the hedge. Hedging is correct when you are uncertain. The failure is that the
+hedge has nowhere to go.
+
+### 4. The claim that rots
+
+You align a course to an academic standard, or you state a fee cap, or you cite a statute. All true
+on the day you wrote it.
+
+Then you cut a lesson. The standard you claimed is now evidenced by nothing. Or the statute is
+amended. Or the programme closes. **Nothing in your process notices**, because the course still
+builds, the links still resolve, and the page still renders.
+
+A wrong standard shown to a teacher is worse than a missing one. A stale statute shown to someone
+starting a business can put them on the wrong side of a consumer protection law.
+
+---
+
+## Part 2: The method
+
+### Rule 1: Automate production, never automate judgment
+
+The split that works:
+
+| Give to the machine | Keep for a person |
+| --- | --- |
+| Drafting prose from an outline | Deciding what the course claims |
+| Restructuring, tightening, reformatting | Deciding whether a source supports a claim |
+| Generating distractors for a question | Deciding whether the question is worth asking |
+| Finding candidate sources | Reading them |
+| Catching mechanical defects at scale | Deciding what counts as a defect |
+
+The line is not "hard versus easy." It is **reversible versus not**. A badly worded paragraph is
+fixed in a minute by anyone who notices. A fabricated citation is repeated by learners for years and
+is fixed by nobody, because nobody knows it is there.
+
+### Rule 2: Make correctness structural, not remembered
+
+Any rule that depends on remembering will be broken the week you are busy. The fix is to make the
+correct thing the *easy* thing and the incorrect thing *fail loudly*.
+
+In practice that means automated guards that run on every build. Not as bureaucracy: as the thing
+that catches you.
+
+**The guards that earn their keep**, in rough order of how much they have caught:
+
+- **Answer-position balance.** Fails a bank that parks most correct answers at one index without
+  shuffling.
+- **Answer-length balance.** Scores the "always pick the longest" strategy and fails a bank where it
+  beats guessing by a wide margin. This is the one that catches careful authors.
+- **Widget fit.** Fails an explanation that names a screen position ("the first option is wrong")
+  when options are shuffled, and a typed fill-in whose only accepted answer is a bare number, which
+  is closed-set recall that multiple choice tests better.
+- **Self-check integrity.** Fails a check-yourself card that is malformed, has a placeholder answer,
+  or whose answer restates the question. Each of those renders as dead prose and silently grades
+  nothing, so the failure is invisible in the app.
+- **Coverage ratchets.** Every course must either carry a standards alignment or an explicit one-line
+  reason it has none. Same for citations. The list of exceptions may shrink and may not grow
+  casually.
+
+**The ratchet is the important shape.** A guard that fails 35 existing problems gets switched off
+within a week. A guard that grandfathers what exists, refuses to let it get worse, and fails anything
+NEW makes the decision explicit at the moment a course ships. Map it, or say in one line why not.
+
+### Rule 3: Writing a citation is not verifying it
+
+This is the rule that costs the most and matters the most.
+
+**The author is the worst person to check their own sources.** They already believe them. They wrote
+the sentence because they thought it was true, and re-reading it confirms exactly that.
+
+So verification is a separate act, done by a different person, against three questions:
+
+1. Does the source exist?
+2. Does the link still resolve?
+3. **Does it actually say what the lesson claims it says?**
+
+An automated checker answers the first two. Only a person answers the third, and the third is where
+the real failures live.
+
+**And nothing may be closed without evidence.** A citation marked verified with nothing written
+behind it is worse than one left unchecked, because it stops the next person from ever looking. The
+rule is: say what you found, or leave it open.
+
+### Rule 4: Give every hedge somewhere to go
+
+When you write a sentence you cannot resolve, file it as a check, with:
+
+- the precise question,
+- **what the lesson currently claims**, so the stakes are visible,
+- what would settle it,
+- and where to look.
+
+Then it is a queue rather than a confession. Somebody answers it, the lesson gets fixed, the check is
+deleted. The list shrinking is the progress bar.
+
+The distinction worth preserving is between **two separate lists**:
+
+- **Every citation in the catalogue.** Large, mostly fine, mechanical to check.
+- **The handful of things nobody could confirm.** Small, needs judgment.
+
+Merge them and the ten that matter are buried under six hundred that are probably fine.
+
+### Rule 5: Say what you cannot do
+
+The most persuasive thing a course can contain is an honest limit.
+
+State plainly what the course is not, what it does not certify, and what it could not verify. Mark a
+figure as researched-on-a-date so a reader knows what to re-check. Where a fact is reported rather
+than confirmed, say so **in the lesson**, not in a footnote nobody reads.
+
+This feels like weakening your product. It is the opposite. In a market where anyone can generate
+confident prose, **confidence is free and calibration is expensive.** A course that tells you where it
+is unsure is making a claim that a generated course cannot cheaply imitate.
+
+---
+
+## Part 3: What this costs
+
+Honestly, because a guide that pretends rigour is free is doing the thing it warns against.
+
+**It is slower.** Not at drafting, which is fast. At everything after: verification, the guard
+failures you have to fix, the questions that come back unanswered.
+
+**It fails your own work in public.** The length guard failed a bank the author was proud of. The
+citation extractor reported zero sources for three courses that plainly had them, which turned out to
+be the extractor's fault, and finding that took an afternoon. This happens constantly and it is the
+system working.
+
+**Some of it cannot be finished by you.** Some facts need a phone call to a county clerk, a
+paywalled statute, or a trade body that answers email. Those wait. A course that waits is better than
+a course that guesses.
+
+**What you get:** a course you can defend line by line, to a teacher, a regulator, or a learner who
+noticed something. And the ability to say, with evidence rather than assertion, that a person checked
+this.
+
+---
+
+## Part 4: A checklist you can steal
+
+Before a course ships:
+
+- [ ] Every factual claim has a source, cited inline, with a bibliography.
+- [ ] Every source has been opened by a person who was not the author.
+- [ ] Every figure that could change carries the date it was checked.
+- [ ] No quiz bank can be beaten by clicking the longest or the first option.
+- [ ] Every quiz question says why the answer is right and points at the lesson that teaches it.
+- [ ] Every self-check actually grades something.
+- [ ] Every hedge has a filed question behind it.
+- [ ] The course states plainly what it is not and what it does not certify.
+- [ ] Somebody other than the author has read it end to end.
+
+If you cannot tick the second line, you do not have a verified course. You have a draft with
+footnotes.
+
+---
+
+## Where Learn.WitUS fits
+
+Everything above is implemented, not aspirational. The guards run on every build. The two
+verification lists are pages in the app. Invited reviewers can verify a course's citations without
+being given the keys to anything else, and neither list can be closed without writing down what was
+found.
+
+That is the argument, and it is deliberately checkable rather than asserted: **the platform makes the
+honest thing structural.** Not because rigour is a feature people ask for, but because in a market
+where content is free, the only thing left worth selling is whether it is true.
+
+---
+
+*Draft for BAM's review. No statistics, testimonials, prices or efficacy claims appear in this
+document, and none should be added: the argument works because it is checkable, and inventing a
+number to strengthen it would refute it.*`,
+    provenance: "plans/future-courses/marketing/00-ebook-ai-course-creation.md",
+  },
+  {
     key: "real-estate-surplus-funds-brief",
     title: "Surplus Funds & Asset Recovery: course brief",
     group: "Real Estate",
