@@ -7,6 +7,7 @@ import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { BVC_SOMMELIER_WINE_COURSE } from "./data/bvc-sommelier-wine-course";
 import { BVC_SOMMELIER_COFFEE_COURSE } from "./data/bvc-sommelier-coffee-course";
+import { BVC_SOMMELIER_CHOCOLATE_COURSE } from "./data/bvc-sommelier-chocolate-course";
 
 // Seeds the BVC Sommelier series (plans/53-bvc-sommelier-series-wine.md) onto the BVC tenant.
 // Wine is course #1; chocolate, coffee, tea, beer, whiskey, rum and cannabis follow, and each one
@@ -115,6 +116,19 @@ async function main() {
     instructorId,
     slug: "bvc-sommelier-coffee",
     course: BVC_SOMMELIER_COFFEE_COURSE,
+    category: CATEGORY,
+    navigationMode: "linear",
+    seriesSlug: SERIES_SLUG,
+    seriesTitle: SERIES_TITLE,
+    freePreviewCount: 3,
+  });
+
+  // Chocolate, also un-gated.
+  await seedAuthoredCourse(db, {
+    tenantId: bvc,
+    instructorId,
+    slug: "bvc-sommelier-chocolate",
+    course: BVC_SOMMELIER_CHOCOLATE_COURSE,
     category: CATEGORY,
     navigationMode: "linear",
     seriesSlug: SERIES_SLUG,
