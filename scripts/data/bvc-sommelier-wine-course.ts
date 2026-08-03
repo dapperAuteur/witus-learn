@@ -544,7 +544,7 @@ ${TASTING_METHOD_NOTE}
         {
           prompt: "This course names one thing it flatly refuses to claim about itself. What is it?",
           answer:
-            "That it is affiliated with, or preparation for, any certifying body such as WSET or the Court of Master Sommeliers. It follows a similar arc because the profession has converged on that order, and it says so instead of implying an endorsement.",
+            "That it is affiliated with, or preparation for, any certifying body such as the Wine and Spirit Education Trust or the Court of Master Sommeliers. It follows a similar arc because the profession has converged on that order, and it says so instead of implying an endorsement.",
         },
       ],
       body: `The word arrives loaded. Most people picture a tasting competition: a person in a suit swirling a glass, announcing a village and a vintage, and being right. That is real, it is a small and theatrical corner of the job, and it is almost never what the work is.

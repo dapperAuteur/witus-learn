@@ -75,9 +75,12 @@ async function ensureInstructor(tenantId: string): Promise<string> {
 }
 
 async function main() {
-  const bvc = await tenantBySlug("bvc");
+  // The tenant slug is "better-vice-club", NOT "bvc". `bvc` is only the content directory name
+  // (content/bvc/) and the informal name in comments; seed-tenants.ts is the authority, and
+  // seed-bvc.ts / seed-bvc-real.ts both resolve the same string.
+  const bvc = await tenantBySlug("better-vice-club");
   if (!bvc) {
-    console.error("BVC tenant missing, run `pnpm seed:tenants` first.");
+    console.error("Better Vice Club tenant missing, run `pnpm seed:tenants` first.");
     process.exit(1);
   }
 
