@@ -82,7 +82,19 @@ Write for the ear:
 - **Cite APA style, inline,** and link to the official source (a .gov page for law, the publisher or DOI for research).
 - **Produce the four source artifacts:** a master source-and-usage map (every source with APA, link, PDF, and the lessons that cite it); a teacher evidence ledger (each claim, the source's evidence, the exact lesson); a "sources still needed" list; and a fake-claims audit (what was wrong in drafts and how you caught it).
 
-**Try it.** Take one claim in your draft and find its primary source. If you cannot, rewrite the claim so it no longer needs one.`,
+**Then hand your sources to someone else.** Writing a citation is not verifying it, and the person who wrote it is the worst person to check it: you already believe it. Every course on this platform joins a **citation list** when it ships, at \`/admin/citations\`, and anyone invited to review the course can work through it at \`/audit/citations\`. Each entry asks three questions, and the third is the one that matters:
+
+1. Does the source exist?
+2. Does the link still resolve?
+3. **Does it actually say what the lesson claims it says?**
+
+An automated link checker answers the first two. Only a person answers the third, and a source that exists but does not support the claim is the failure that survives every other check.
+
+**And file what you could not settle.** If you write a sentence like "verify the current rules before relying on this," that hedge is honest and, on its own, completely unactionable: nobody has a list of them and nothing records whether anyone ever looked. Those go on a second list, the **source checks**, with the question, what the lesson currently claims, and what would close it. A hedge with no check attached is a hedge that ships to learners forever.
+
+Neither list can be closed without writing down what you found. A citation marked verified with no evidence behind it is worse than one left unchecked, because it stops the next person from looking.
+
+**Try it.** Take one claim in your draft and find its primary source. If you cannot, rewrite the claim so it no longer needs one. Then pick a citation you are confident about and actually open it, and check that it says what you think it says.`,
     },
     {
       slug: "quizzes-that-teach",

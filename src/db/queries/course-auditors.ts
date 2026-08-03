@@ -134,3 +134,42 @@ export async function isCourseAuditor(viewer: AuditorViewer): Promise<boolean> {
     );
   return isAcceptedAuditor(grants, viewer);
 }
+
+/**
+ * Course slugs this viewer holds an ACCEPTED audit grant for, in this tenant.
+ *
+ * Added for citation verification: an auditor's grant already means "you may read this unvetted
+ * course", and it now also means "you may verify this course's citations". This is the query that
+ * answers WHICH courses, so the auditor board shows exactly their courses and nothing else. Identity
+ * still goes through the pure matcher in src/lib/auditors.ts, so there remains one definition of
+ * "is an auditor" for the isolation suite to exercise.
+ */
+export async function listAuditedCourseSlugs(
+  tenantId: string,
+  viewer: { userId: string | null; email: string | null },
+): Promise<string[]> {
+  if (!viewer.userId && !viewer.email) return [];
+  const rows = await db
+    .select({
+      tenantId: courseAuditors.tenantId,
+      courseId: courseAuditors.courseId,
+      email: courseAuditors.email,
+      userId: courseAuditors.userId,
+      acceptedAt: courseAuditors.acceptedAt,
+      slug: courses.slug,
+    })
+    .from(courseAuditors)
+    .innerJoin(courses, eq(courses.id, courseAuditors.courseId))
+    .where(and(eq(courseAuditors.tenantId, tenantId), isNotNull(courseAuditors.acceptedAt)));
+
+  const out: string[] = [];
+  for (const r of rows) {
+    if (!r.slug) continue;
+    const matched = isAcceptedAuditor(
+      [{ tenantId: r.tenantId, courseId: r.courseId, email: r.email, userId: r.userId, acceptedAt: r.acceptedAt }],
+      { tenantId, courseId: r.courseId, userId: viewer.userId, email: viewer.email },
+    );
+    if (matched) out.push(r.slug);
+  }
+  return [...new Set(out)];
+}
