@@ -180,7 +180,7 @@ const FLIGHT_5: Flight = {
 // ─────────────────────────────── COURSE ───────────────────────────────
 
 export const BVC_SOMMELIER_CHOCOLATE_COURSE: AuthoredCourse = {
-  title: "BVC Sommelier: Chocolate",
+  title: "BVC Taster: Chocolate",
   description:
     "Learn to taste chocolate systematically and buy it knowingly: the grid of appearance, snap, aroma, melt, flavour and finish, why the percentage on a wrapper is a recipe ratio rather than a quality score, what cacao genetics actually say now that the old Criollo and Forastero framework has been superseded, how fermentation and drying at origin create most of the flavour before a maker touches the bean, what roasting, conching, alkalising and tempering each decide, why a bar snaps and shines and what bloom really is, what the standards of identity legally require in the United States and the EU, which label words mean nothing, the ethics the category cannot avoid including child labour and the living income differential, food pairing, and blind deduction. The sequel to BVC Season 1, Episode 3, which covers chocolate's history. Six flights with budgets and substitutes, and a dairy-free, lower-sugar path through every drill. Not affiliated with, and not exam preparation for, any certifying body.",
   lessons: [
@@ -220,6 +220,23 @@ So the percentage tells you roughly how much sugar is NOT in the bar, which is g
 
 ${CHOCOLATE_METHOD_NOTE}
 
+
+**And a note on what to call yourself, because the honest answer is more interesting than the title.**
+
+Every vice on this shelf has a real expert title, and most of them are **owned certification marks belonging to programmes this course has nothing to do with.**
+
+| Vice | The real title | What it actually is |
+| --- | --- | --- |
+| Wine | **Sommelier** | The one word that escaped into common use. Generic, unowned, and now borrowed by cheese, water and olive oil |
+| Beer | **Cicerone** | A trademarked certification. Its own programme states the word is reserved for people who have passed it and should not be used as a synonym for beer expert |
+| Coffee | **Q Grader** | A Coffee Quality Institute certification. The generic job word underneath it is *cupper* |
+| Chocolate | **Chocolate taster** | Taught by dedicated institutes; *chocolatier* is a maker, which is a different job |
+| Cannabis | **Interpener** | A specific institute's programme term |
+| Sake | **Kikisake-shi** | A Japanese certification, and the closest true parallel to a sommelier |
+
+So this course is called a **Taster** course, which is the plain English for what you are actually doing, and it is a word nobody owns.
+
+**How this relates to those programmes, stated plainly:** it is not any of them, it does not prepare you for their exams, and finishing it entitles you to call yourself nothing. What it does is teach the same underlying skill they all test, which is tasting systematically and describing accurately. If you later sit one of those exams, this will have helped. That is a claim about the subject, not a promise about a result, and anyone who tells you a course can hand you a protected title is selling you something.
 ## Sources
 - U.S. Food and Drug Administration. (n.d.). *Cacao products* (21 C.F.R. Part 163). https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-163
 - Council Directive 2000/36/EC of the European Parliament and of the Council of 23 June 2000 relating to cocoa and chocolate products intended for human consumption. *Official Journal of the European Communities, L 197*, 19-25.

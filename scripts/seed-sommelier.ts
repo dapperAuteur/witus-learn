@@ -1,4 +1,4 @@
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import { neonConfig, Pool } from "@neondatabase/serverless";
 import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
@@ -35,9 +35,9 @@ if (!connectionString || connectionString.includes("placeholder")) {
 const pool = new Pool({ connectionString });
 const db = drizzle(pool, { schema, casing: "snake_case" });
 
-const SERIES_SLUG = "bvc-sommelier";
-const SERIES_TITLE = "BVC Sommelier";
-const CATEGORY = "BVC Sommelier";
+const SERIES_SLUG = "bvc-taster";
+const SERIES_TITLE = "BVC Taster";
+const CATEGORY = "BVC Taster";
 
 async function tenantBySlug(slug: string): Promise<string | undefined> {
   const r = await db
@@ -76,6 +76,41 @@ async function ensureInstructor(tenantId: string): Promise<string> {
   return userId;
 }
 
+
+// Renamed 2026-08-03: "Sommelier" is wine's word, and the other vices' real titles (Cicerone,
+// Q Grader, Interpener) are owned certification marks this course must not borrow. The series is
+// now "Taster", which is plain English and unowned; each course explains the real title for its
+// vice inside lesson 1.
+//
+// This renames IN PLACE rather than letting the seeder create new rows beside the old ones. A fresh
+// insert would orphan the existing courses with their lessons, enrolments, progress and embeddings
+// still attached, and leave two copies of every course in the catalog. Slug is the only thing that
+// changes; every id survives.
+const RENAMES: Record<string, string> = {
+  "bvc-sommelier-wine": "bvc-taster-wine",
+  "bvc-sommelier-coffee": "bvc-taster-coffee",
+  "bvc-sommelier-chocolate": "bvc-taster-chocolate",
+};
+
+async function renameLegacySlugs(tenantId: string): Promise<void> {
+  for (const [oldSlug, newSlug] of Object.entries(RENAMES)) {
+    const [existingNew] = await db
+      .select({ id: schema.courses.id })
+      .from(schema.courses)
+      .where(and(eq(schema.courses.tenantId, tenantId), eq(schema.courses.slug, newSlug)))
+      .limit(1);
+    if (existingNew) continue; // already renamed on a previous run
+    const [old] = await db
+      .select({ id: schema.courses.id })
+      .from(schema.courses)
+      .where(and(eq(schema.courses.tenantId, tenantId), eq(schema.courses.slug, oldSlug)))
+      .limit(1);
+    if (!old) continue;
+    await db.update(schema.courses).set({ slug: newSlug }).where(eq(schema.courses.id, old.id));
+    console.log(`~ renamed ${oldSlug} -> ${newSlug} (course id preserved)`);
+  }
+}
+
 async function main() {
   // The tenant slug is "better-vice-club", NOT "bvc". `bvc` is only the content directory name
   // (content/bvc/) and the informal name in comments; seed-tenants.ts is the authority, and
@@ -85,6 +120,8 @@ async function main() {
     console.error("Better Vice Club tenant missing, run `pnpm seed:tenants` first.");
     process.exit(1);
   }
+
+  await renameLegacySlugs(bvc);
 
   const instructorId = await ensureInstructor(bvc);
 
@@ -98,7 +135,8 @@ async function main() {
   await seedAuthoredCourse(db, {
     tenantId: bvc,
     instructorId,
-    slug: "bvc-sommelier-wine",
+    slug: "bvc-taster-wine",
+    seriesOrder: 1,
     course: BVC_SOMMELIER_WINE_COURSE,
     category: CATEGORY,
     navigationMode: "linear",
@@ -114,7 +152,8 @@ async function main() {
   await seedAuthoredCourse(db, {
     tenantId: bvc,
     instructorId,
-    slug: "bvc-sommelier-coffee",
+    slug: "bvc-taster-coffee",
+    seriesOrder: 2,
     course: BVC_SOMMELIER_COFFEE_COURSE,
     category: CATEGORY,
     navigationMode: "linear",
@@ -127,7 +166,8 @@ async function main() {
   await seedAuthoredCourse(db, {
     tenantId: bvc,
     instructorId,
-    slug: "bvc-sommelier-chocolate",
+    slug: "bvc-taster-chocolate",
+    seriesOrder: 3,
     course: BVC_SOMMELIER_CHOCOLATE_COURSE,
     category: CATEGORY,
     navigationMode: "linear",

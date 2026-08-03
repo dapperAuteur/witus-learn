@@ -140,7 +140,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   // ── Sommelier series ──────────────────────────────────────────────────────────────────────────
   {
     key: "rioja-ageing-ladder",
-    course: "bvc-sommelier-wine",
+    course: "bvc-taster-wine",
     title: "Rioja: current minimum ageing for Crianza, Reserva, Gran Reserva",
     severity: "medium",
     question:
@@ -158,7 +158,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   },
   {
     key: "sca-extraction-window",
-    course: "bvc-sommelier-coffee",
+    course: "bvc-taster-coffee",
     title: "SCA: is the 18-22% extraction and 1.15-1.35% strength window current?",
     severity: "medium",
     question:
@@ -176,7 +176,7 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   },
   {
     key: "norc-child-labour-figure",
-    course: "bvc-sommelier-chocolate",
+    course: "bvc-taster-chocolate",
     title: "Chocolate: the 1.56 million child labour figure and its survey years",
     severity: "high",
     question:
