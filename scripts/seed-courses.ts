@@ -11,6 +11,8 @@ import { MONODRAMA_PERFORMING_COURSE } from "./data/monodrama-performing-course"
 import { SHORT_FORM_DRAMA_COURSE } from "./data/short-form-drama-course";
 import { CIVIC_DOCUMENTATION_COURSE } from "./data/civic-documentation-course";
 import { HOW_STORIES_WORK_COURSE } from "./data/how-stories-work-course";
+import { NEWS_STORYTELLING_COURSE } from "./data/news-storytelling-course";
+import { DOCUMENTARY_COURSE } from "./data/documentary-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -1280,6 +1282,33 @@ async function main() {
     seriesSlug: "storytelling",
     seriesTitle: "Storytelling",
     seriesOrder: 5,
+  });
+
+  // The True track proper opens here. Civic documentation (order 4) came first because it is the
+  // most concrete, but news is the rung of the permission ladder directly above it: news may select
+  // and arrange, never invent.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "news-storytelling",
+    course: NEWS_STORYTELLING_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 6,
+  });
+
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "documentary",
+    course: DOCUMENTARY_COURSE,
+    category: "Storytelling",
+    navigationMode: "linear",
+    seriesSlug: "storytelling",
+    seriesTitle: "Storytelling",
+    seriesOrder: 7,
   });
 
   await seedAuthoredCourse(db, {

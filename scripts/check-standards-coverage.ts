@@ -71,6 +71,8 @@ const BACKLOG: Record<string, string> = {
   // civics standards and the literacy strands the catalog already uses.
   "civic-documentation": "MAP THIS, not excused. Civics plus literacy; the best fit in this group",
   "how-stories-work": "MAP THIS, not excused. Narrative craft across media; ELA reading and writing strands",
+  "news-storytelling": "MAP THIS, not excused. Media literacy plus ELA informational writing and sourcing",
+  documentary: "MAP THIS, not excused. Media literacy, research ethics, ELA argument-from-evidence",
 };
 
 const seed = readFileSync("scripts/seed-courses.ts", "utf-8");
