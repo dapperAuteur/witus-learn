@@ -115,6 +115,10 @@ import { RIVER_LOCKS_DAMS_AND_BARGES_COURSE } from "./data/river-locks-dams-and-
 import { RIVER_CAIRO_THE_CONFLUENCE_COURSE } from "./data/river-cairo-the-confluence-course";
 import { RIVER_SOLD_DOWN_THE_RIVER_COURSE } from "./data/river-sold-down-the-river-course";
 import { RIVER_THE_DELTA_AND_THE_MIGRATION_COURSE } from "./data/river-the-delta-and-the-migration-course";
+import { RIVER_LIVING_ON_THE_WATER_COURSE } from "./data/river-living-on-the-water-course";
+import { RIVER_FINDING_YOUR_WAY_COURSE } from "./data/river-finding-your-way-course";
+import { RIVER_THE_DEAD_ZONE_COURSE } from "./data/river-the-dead-zone-course";
+import { RIVER_TELLING_THE_RIVER_COURSE } from "./data/river-telling-the-river-course";
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { GREAT_MIGRATION_AND_THE_WORLD_COURSE } from "./data/great-migration-and-the-world-course";
@@ -687,6 +691,10 @@ async function main() {
     { slug: "river-cairo-the-confluence", course: RIVER_CAIRO_THE_CONFLUENCE_COURSE, position: "05" },
     { slug: "river-sold-down-the-river", course: RIVER_SOLD_DOWN_THE_RIVER_COURSE, position: "06" },
     { slug: "river-the-delta-and-the-migration", course: RIVER_THE_DELTA_AND_THE_MIGRATION_COURSE, position: "07" },
+    { slug: "river-living-on-the-water", course: RIVER_LIVING_ON_THE_WATER_COURSE, position: "08" },
+    { slug: "river-finding-your-way", course: RIVER_FINDING_YOUR_WAY_COURSE, position: "09" },
+    { slug: "river-the-dead-zone", course: RIVER_THE_DEAD_ZONE_COURSE, position: "10" },
+    { slug: "river-telling-the-river", course: RIVER_TELLING_THE_RIVER_COURSE, position: "11" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
