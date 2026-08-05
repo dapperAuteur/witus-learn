@@ -109,6 +109,16 @@ import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 import { RIVER_WHAT_AN_EXPEDITION_IS_COURSE } from "./data/river-what-an-expedition-is-course";
+import { RIVER_WABASH_HEADWATERS_COURSE } from "./data/river-the-wabash-headwaters-course";
+import { RIVER_THE_OHIO_AND_THE_LINE_COURSE } from "./data/river-the-ohio-and-the-line-course";
+import { RIVER_LOCKS_DAMS_AND_BARGES_COURSE } from "./data/river-locks-dams-and-barges-course";
+import { RIVER_CAIRO_THE_CONFLUENCE_COURSE } from "./data/river-cairo-the-confluence-course";
+import { RIVER_SOLD_DOWN_THE_RIVER_COURSE } from "./data/river-sold-down-the-river-course";
+import { RIVER_THE_DELTA_AND_THE_MIGRATION_COURSE } from "./data/river-the-delta-and-the-migration-course";
+import { RIVER_LIVING_ON_THE_WATER_COURSE } from "./data/river-living-on-the-water-course";
+import { RIVER_FINDING_YOUR_WAY_COURSE } from "./data/river-finding-your-way-course";
+import { RIVER_THE_DEAD_ZONE_COURSE } from "./data/river-the-dead-zone-course";
+import { RIVER_TELLING_THE_RIVER_COURSE } from "./data/river-telling-the-river-course";
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { GREAT_MIGRATION_AND_THE_WORLD_COURSE } from "./data/great-migration-and-the-world-course";
@@ -673,6 +683,31 @@ async function main() {
     seriesCode: "RIVER",
     seriesPosition: "01",
   });
+
+  for (const r of [
+    { slug: "river-the-wabash-headwaters", course: RIVER_WABASH_HEADWATERS_COURSE, position: "02" },
+    { slug: "river-the-ohio-and-the-line", course: RIVER_THE_OHIO_AND_THE_LINE_COURSE, position: "03" },
+    { slug: "river-locks-dams-and-barges", course: RIVER_LOCKS_DAMS_AND_BARGES_COURSE, position: "04" },
+    { slug: "river-cairo-the-confluence", course: RIVER_CAIRO_THE_CONFLUENCE_COURSE, position: "05" },
+    { slug: "river-sold-down-the-river", course: RIVER_SOLD_DOWN_THE_RIVER_COURSE, position: "06" },
+    { slug: "river-the-delta-and-the-migration", course: RIVER_THE_DELTA_AND_THE_MIGRATION_COURSE, position: "07" },
+    { slug: "river-living-on-the-water", course: RIVER_LIVING_ON_THE_WATER_COURSE, position: "08" },
+    { slug: "river-finding-your-way", course: RIVER_FINDING_YOUR_WAY_COURSE, position: "09" },
+    { slug: "river-the-dead-zone", course: RIVER_THE_DEAD_ZONE_COURSE, position: "10" },
+    { slug: "river-telling-the-river", course: RIVER_TELLING_THE_RIVER_COURSE, position: "11" },
+  ]) {
+    await seedAuthoredCourse(db, {
+      tenantId: learnWitus,
+      instructorId,
+      slug: r.slug,
+      course: r.course,
+      category: "Rivers & Expeditions",
+      navigationMode: "linear",
+      seriesSlug: "river-expedition",
+      seriesCode: "RIVER",
+      seriesPosition: r.position,
+    });
+  }
 
   // WOOP (Wish · Outcome · Obstacle · Plan) — Oettingen's Mental Contrasting with Implementation
   // Intentions. The sibling of Learning How to Learn, and deliberately a course about a METHOD, not
