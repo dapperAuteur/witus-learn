@@ -661,13 +661,13 @@ Everything else in this course is technique. That one is character, and it is th
 
 ## Sources
 
-American Psychological Association. (2020). *Publication manual of the American Psychological Association* (7th ed.). American Psychological Association.
+- American Psychological Association. (2020). *Publication manual of the American Psychological Association* (7th ed.). American Psychological Association. https://apastyle.apa.org/products/publication-manual-7th-edition
 
-Society of Professional Journalists. (2014). *SPJ code of ethics*. https://www.spj.org/ethicscode.asp
+- Society of Professional Journalists. (2014). *SPJ code of ethics*. https://www.spj.org/ethicscode.asp
 
-Oral History Association. (2018). *Principles and best practices for oral history*. https://oralhistory.org/principles-and-best-practices-revised-2018/
+- Oral History Association. (2018). *Principles and best practices for oral history*. https://oralhistory.org/principles-and-best-practices-revised-2018/
 
-International Federation of Library Associations and Institutions. (2017). *How to spot fake news*. https://www.ifla.org/publications/node/11174
+- International Federation of Library Associations and Institutions. (2017). *How to spot fake news*. https://www.ifla.org/publications/node/11174
 
 Note on this list: it is deliberately short and every entry was consulted directly. Per lesson 11, a bibliography states what the work actually used rather than what it might have.`,
     },

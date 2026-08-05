@@ -3999,6 +3999,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Builds a documented account of its subject by integrating cited primary and secondary sources into one coherent understanding.",
     courseSlugs: [
+      // River Expedition 01 integrates primary and secondary material on the domestic slave trade,
+      // the Ohio as a legal border, and the Great Migration into one account of a single corridor.
+      "river-what-an-expedition-is",
       // How to Research teaches this integration directly rather than exercising it on a subject:
       // primary vs secondary vs tertiary, and tracing a secondary claim back to its primary record
       // (lesson 4).
@@ -4086,6 +4089,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Teaches the student to test a historical claim against its sources: corroborate it, challenge it, or downgrade and cut it when the evidence does not support it.",
     courseSlugs: [
+      // Lesson 6 states outright that the primary source wins over anything in the course, and asks
+      // learners to record predictions and check themselves against what happens.
+      "river-what-an-expedition-is",
       // Lessons 6 and 7 are this claim stated as method: corroborate across INDEPENDENT sources, and
       // flag rather than assert what could not be settled.
       "how-to-research",
