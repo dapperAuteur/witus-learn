@@ -3999,6 +3999,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Builds a documented account of its subject by integrating cited primary and secondary sources into one coherent understanding.",
     courseSlugs: [
+      // Integrates regional scholarship on the Ohio borderland with the documented structure of the
+      // Madison networks into one account, and states what the record cannot establish.
+      "river-the-ohio-and-the-line",
       // River Expedition 01 integrates primary and secondary material on the domestic slave trade,
       // the Ohio as a legal border, and the Great Migration into one account of a single corridor.
       "river-what-an-expedition-is",
@@ -4089,6 +4092,15 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Teaches the student to test a historical claim against its sources: corroborate it, challenge it, or downgrade and cut it when the evidence does not support it.",
     courseSlugs: [
+      // Lesson 5 is this claim as method: which parts are well established, which are contested, and
+      // why any confident escape total should be treated with suspicion.
+      "river-the-ohio-and-the-line",
+      // Lesson 5 asks why the course withheld figures it could have recited, and sends the learner to
+      // the measuring agency instead of to a summary.
+      "river-the-wabash-headwaters",
+      // Lesson 5 states the limits of what a written course can establish about conditions that change
+      // with flow, season and traffic.
+      "river-locks-dams-and-barges",
       // Lesson 6 states outright that the primary source wins over anything in the course, and asks
       // learners to record predictions and check themselves against what happens.
       "river-what-an-expedition-is",

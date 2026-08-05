@@ -71,6 +71,9 @@ const CATALOG = [
   "how-to-research",
   // River Expedition series (RIVER-01), also registered via seedAuthoredCourse.
   "river-what-an-expedition-is",
+  "river-the-wabash-headwaters",
+  "river-the-ohio-and-the-line",
+  "river-locks-dams-and-barges",
   "us-civics-101",
   "us-constitution-101",
   "voting-elections-101",
