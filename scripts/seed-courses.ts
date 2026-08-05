@@ -112,6 +112,9 @@ import { RIVER_WHAT_AN_EXPEDITION_IS_COURSE } from "./data/river-what-an-expedit
 import { RIVER_WABASH_HEADWATERS_COURSE } from "./data/river-the-wabash-headwaters-course";
 import { RIVER_THE_OHIO_AND_THE_LINE_COURSE } from "./data/river-the-ohio-and-the-line-course";
 import { RIVER_LOCKS_DAMS_AND_BARGES_COURSE } from "./data/river-locks-dams-and-barges-course";
+import { RIVER_CAIRO_THE_CONFLUENCE_COURSE } from "./data/river-cairo-the-confluence-course";
+import { RIVER_SOLD_DOWN_THE_RIVER_COURSE } from "./data/river-sold-down-the-river-course";
+import { RIVER_THE_DELTA_AND_THE_MIGRATION_COURSE } from "./data/river-the-delta-and-the-migration-course";
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { GREAT_MIGRATION_AND_THE_WORLD_COURSE } from "./data/great-migration-and-the-world-course";
@@ -681,6 +684,9 @@ async function main() {
     { slug: "river-the-wabash-headwaters", course: RIVER_WABASH_HEADWATERS_COURSE, position: "02" },
     { slug: "river-the-ohio-and-the-line", course: RIVER_THE_OHIO_AND_THE_LINE_COURSE, position: "03" },
     { slug: "river-locks-dams-and-barges", course: RIVER_LOCKS_DAMS_AND_BARGES_COURSE, position: "04" },
+    { slug: "river-cairo-the-confluence", course: RIVER_CAIRO_THE_CONFLUENCE_COURSE, position: "05" },
+    { slug: "river-sold-down-the-river", course: RIVER_SOLD_DOWN_THE_RIVER_COURSE, position: "06" },
+    { slug: "river-the-delta-and-the-migration", course: RIVER_THE_DELTA_AND_THE_MIGRATION_COURSE, position: "07" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,

@@ -3999,6 +3999,12 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Builds a documented account of its subject by integrating cited primary and secondary sources into one coherent understanding.",
     courseSlugs: [
+      // Integrates the trade's economic structure, the market geography and the origin of the phrase
+      // into one account, and names whose records survive and whose do not.
+      "river-sold-down-the-river",
+      // The route out of the Delta, drawn from railway, newspaper and migration scholarship, and
+      // explicitly bounded against the two Great Migration courses.
+      "river-the-delta-and-the-migration",
       // Integrates regional scholarship on the Ohio borderland with the documented structure of the
       // Madison networks into one account, and states what the record cannot establish.
       "river-the-ohio-and-the-line",
@@ -4092,6 +4098,15 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Teaches the student to test a historical claim against its sources: corroborate it, challenge it, or downgrade and cut it when the evidence does not support it.",
     courseSlugs: [
+      // Lesson 4 refuses a tidy causal account of Cairo's decline and states what settling it would
+      // actually require.
+      "river-cairo-the-confluence",
+      // Lesson 4 explains why totals are contested and why the fullest surviving view of the trade is
+      // a hostile one.
+      "river-sold-down-the-river",
+      // Lesson 4 warns against any single-cause account of the Migration, including one crediting the
+      // Defender.
+      "river-the-delta-and-the-migration",
       // Lesson 5 is this claim as method: which parts are well established, which are contested, and
       // why any confident escape total should be treated with suspicion.
       "river-the-ohio-and-the-line",
