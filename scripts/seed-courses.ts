@@ -107,6 +107,7 @@ import { AI_B5_DEPLOYING_EVALUATING_COURSE } from "./data/ai-b5-deploying-evalua
 import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capstone-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
+import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { GREAT_MIGRATION_AND_THE_WORLD_COURSE } from "./data/great-migration-and-the-world-course";
@@ -635,6 +636,20 @@ async function main() {
     instructorId,
     slug: "learning-how-to-learn",
     course: LEARNING_HOW_TO_LEARN_COURSE,
+    category: "Study Skills",
+    navigationMode: "linear",
+  });
+
+  // How to Research — the discipline underneath documentary, oral history, news and civic
+  // documentation, none of which teach it. Built on the Trusted Documentation Rubric already shipped
+  // in src/lib/field-log-rubric.ts, so the course and the instrument reviewers score against are the
+  // same object and cannot drift. Standalone by decision, complementary to the Documentarian
+  // program rather than its on-ramp. Plan: plans/55-how-to-research-course.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-to-research",
+    course: HOW_TO_RESEARCH_COURSE,
     category: "Study Skills",
     navigationMode: "linear",
   });

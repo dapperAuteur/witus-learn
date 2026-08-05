@@ -3999,6 +3999,10 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Builds a documented account of its subject by integrating cited primary and secondary sources into one coherent understanding.",
     courseSlugs: [
+      // How to Research teaches this integration directly rather than exercising it on a subject:
+      // primary vs secondary vs tertiary, and tracing a secondary claim back to its primary record
+      // (lesson 4).
+      "how-to-research",
       // Route series + capstones
       "green-book-how-to-read-a-route",
       "indiana-avenue-a-district-and-what-replaced-it",
@@ -4082,6 +4086,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Teaches the student to test a historical claim against its sources: corroborate it, challenge it, or downgrade and cut it when the evidence does not support it.",
     courseSlugs: [
+      // Lessons 6 and 7 are this claim stated as method: corroborate across INDEPENDENT sources, and
+      // flag rather than assert what could not be settled.
+      "how-to-research",
       "green-book-how-to-read-a-route",
       "indiana-avenue-a-district-and-what-replaced-it",
       "the-gym-and-the-color-line",
@@ -4139,6 +4146,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Ships a graded research capstone: the student locates a primary record, corroborates it across sources, and writes it up with citations.",
     courseSlugs: [
+      // Lesson 15 is a graded research capstone scored against the Trusted Documentation Rubric:
+      // locate sources, corroborate, cite, disclose.
+      "how-to-research",
       "green-book-how-to-read-a-route",
       "indiana-avenue-a-district-and-what-replaced-it",
       "the-gym-and-the-color-line",
