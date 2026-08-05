@@ -54,6 +54,18 @@ async function main() {
       continue;
     }
 
+    // A bundle whose price assumes a full set must not seed as a partial one. Without this, the
+    // Imaging & Drone bundles would seed the moment faa-part-107 resolves and show a $99 price on a
+    // one-course bundle. Unpublished either way, but an admin list that lies about what is in a
+    // bundle is how a wrong price gets published later.
+    if (b.plannedUntilComplete && missing.length > 0) {
+      skippedEmpty++;
+      console.log(
+        `  SKIP  ${b.slug}: planned bundle, still missing ${missing.length} of ${b.appMembers.length} course(s): ${missing.join(", ")}`,
+      );
+      continue;
+    }
+
     const existing = await db
       .select({ id: schema.bundles.id })
       .from(schema.bundles)

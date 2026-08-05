@@ -507,6 +507,17 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   SALES: the app cannot yet sell a bundle, because it is a payments feature with a prod migration and a
   webhook that grants paid access, so it is scoped as its own reviewed branch in \`plans/48\` rather
   than rushed. Prices are recommendations; nothing changes a live price.
+- 🔧 **Market comparison on /admin/pricing** (\`src/lib/market-comparison.ts\`, owner-only). Every
+  competing product a price recommendation is reasoned against, with a clickable link, the price, the
+  DATE it was gathered, and an honest alike/different pair for each. Written because the pricing page
+  named comparisons ("well below Coursera's $39-79") that the owner could not see, click, or check,
+  which made the reasoning unauditable at the moment it mattered. Three rules are enforced in the
+  file's own contract: every price is a dated snapshot rather than a fact; nothing may reach a
+  learner or a marketing page unverified (each entry has a matching \`price-*\` check on
+  \`/admin/research\`); and \`different\` must be honest in both directions, including where the
+  competitor is genuinely better, because a table where we win every row is useless for setting a
+  price. Anchors also render per bundle. Seeded with the drone/360 vocational market (Drone Launch
+  Academy, Pilot Institute, Udemy) plus the catalog-wide Coursera anchor.
 - 🔧 **Proposed pricing** (\`/admin/pricing\`, owner-only): a fair-and-competitive price
   recommendation for every course, in five tiers (Free, Foundation $9, Core $19, Premium $29,
   Certification prep $39), assigned by category with per-course overrides (US Civics 101 free as a

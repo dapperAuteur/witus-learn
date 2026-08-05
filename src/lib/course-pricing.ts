@@ -77,6 +77,10 @@ const CATEGORY_TIER: Record<string, PriceTier> = {
   "Education Leadership": "core",
   Cybersecurity: "premium",
   "Careers & Media": "core",
+  // Vocational with direct economic value, like AI and Cybersecurity: a learner buys these to get
+  // paid work, and the competing products are $199-$499 PER COURSE (see MARKET_COMPARISON in
+  // src/lib/market-comparison.ts). Premium here is still an order of magnitude below the market.
+  "Imaging & Drone Services": "premium",
 };
 
 // Per-course overrides where the course is special relative to its category.
@@ -90,6 +94,31 @@ const SLUG_TIER: Record<string, PriceTier> = {
   "exported-how-others-studied-american-race-law": "premium",
   // Real certification prep.
   "faa-part-107": "certification",
+
+  // ── Imaging & Drone Services (plans/54) ─────────────────────────────────────────────────────
+  // PLANNED, not yet seeded. Listed here anyway so /admin/pricing computes an honest bundle
+  // sum-of-parts BEFORE the courses exist — proposePricing() keys off the slug, so a planned member
+  // resolves to its real tier instead of silently defaulting to Core and understating the bundle.
+  // The bundle cards show "0 of 5 courses" until they are seeded, which is the honest signal.
+  //
+  // The shared business core is FREE by decision: it is the funnel into the paid verticals, and the
+  // course that proves the catalog's quality to someone deciding whether to buy one.
+  "capture-services-business": "free",
+  // The two shorter courses on the no-licence on-ramp. Kept at Core so the cheapest complete path
+  // to a first paid job stays cheap; the comparable Udemy virtual-tour title is $49.99 for 3 hours.
+  "360-capture-fundamentals": "core",
+  "360-publishing-and-hosting": "core",
+  // The verticals. Premium follows the category default; spelled out per slug so a later category
+  // rename cannot silently reprice a course a learner is mid-purchase on.
+  "360-real-estate-tours": "premium",
+  "360-location-based-games": "premium",
+  "drone-work-for-hire": "premium",
+  "drone-roof-property-and-claims": "premium",
+  "drone-solar-and-thermal": "premium",
+  "drone-construction-documentation": "premium",
+  "drone-film-tv-and-corporate": "premium",
+  "drone-stadium-and-events": "premium",
+  "capture-services-capstone": "premium",
 };
 
 export interface CoursePriceProposal {
