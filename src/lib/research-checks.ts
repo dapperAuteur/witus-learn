@@ -253,6 +253,127 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
     where: ["The administering agency's own site for each programme"],
   },
+
+  // ── Pricing anchors (src/lib/market-comparison.ts) ───────────────────────────────────────────
+  // These differ from every other check in this file: they do not fix a sentence in a lesson, they
+  // clear a number used to REASON about our own prices, and gate whether that number may ever be
+  // quoted publicly. BAM said he would verify prices himself, so they live on the same list he
+  // already works, /admin/research, rather than in a separate doc nobody opens.
+  //
+  // Each `price-*` key matches a MarketComparison `key`. When one is answered, update the entry's
+  // price + gatheredOn, flip `needsVerification` to false, and DELETE the check from this file.
+  {
+    key: "price-dla-part-107",
+    course: "pricing: market anchors",
+    title: "Drone Launch Academy, Part 107 exam prep, current price?",
+    severity: "medium",
+    question:
+      "What does Drone Launch Academy charge TODAY for its FAA Part 107 Exam Prep course, at full list price and at any standing discount?",
+    claim:
+      "market-comparison.ts records $199 as of 2026-08-04, and the Drone Services bundle's justification says $99 'undercuts their $199 exam prep ALONE'.",
+    stakes:
+      "This is the single comparison the drone bundle's price is argued from. If their real price is $99 on a standing sale, our headline is wrong and the bundle is mispriced. It is also the number most likely to end up in marketing copy, where a wrong figure about a named competitor is worse than no figure.",
+    needs: [
+      "Current list price in USD",
+      "Any standing or seasonal discount, and what it reduces to",
+      "The URL and the date checked",
+    ],
+    where: ["dronelaunchacademy.com course/pricing pages", "Their checkout, which is the only authoritative price"],
+  },
+  {
+    key: "price-dla-roof-inspection",
+    course: "pricing: market anchors",
+    title: "Drone Launch Academy, Aerial Roof Inspection Pro: price, and what $499 actually buys",
+    severity: "medium",
+    question:
+      "What is the current price of Aerial Roof Inspection Pro, and what does it include that our planned drone-roof-property-and-claims course does not, sample reports, client deliverables, an industry affiliation, live support?",
+    claim:
+      "market-comparison.ts records $499 as of 2026-08-04 and notes the $499-vs-$29 gap is 'worth investigating rather than boasting about'.",
+    stakes:
+      "The widest gap in the comparison table, so it is both our best marketing line and our biggest blind spot. If $499 buys sample deliverables and report templates, that is a real product gap in course 07 worth closing before launch, a competitive-intelligence answer, not just a price.",
+    needs: [
+      "Current price",
+      "The course's syllabus or module list",
+      "Whether it ships templates, sample reports, or any credential",
+      "URL and date checked",
+    ],
+    where: ["dronelaunchacademy.com", "Their sales page's curriculum section", "Buying it once is a legitimate way to answer this"],
+  },
+  {
+    key: "price-pilot-institute-part-107",
+    course: "pricing: market anchors",
+    title: "Pilot Institute, Part 107 and the Part 107 + Business bundle: standing prices?",
+    severity: "medium",
+    question:
+      "What are Pilot Institute's standing (non-promotional) prices for the Part 107 course and for the Commercial Drone Pilot Bundle (Part 107 + Drone Business)?",
+    claim:
+      "market-comparison.ts records ~$149 as of 2026-08-04 with a note that it was 'reported as a LIMITED-TIME reduction', and that the full bundle price could not be established.",
+    stakes:
+      "The least reliable figure in the table, and the most structurally relevant one: their Part 107 + business bundle is EXACTLY the shape of our Drone Services bundle, so it is the closest thing to a direct competitor our $99 has. Getting this wrong misprices the flagship bundle.",
+    needs: [
+      "Standing price of the Part 107 course",
+      "Price of the Part 107 + Drone Business bundle",
+      "What the business half covers, module by module",
+      "URL and date checked",
+    ],
+    where: ["pilotinstitute.com course and bundle pages"],
+  },
+  {
+    key: "price-udemy-virtual-tours",
+    course: "pricing: market anchors",
+    title: "Udemy 360/virtual-tour courses, what do they ACTUALLY sell for?",
+    severity: "low",
+    question:
+      "What is the typical effective (post-discount) price of the main 360 / virtual-property-tour courses on Udemy, observed across a few visits rather than at one moment?",
+    claim:
+      "market-comparison.ts records a $49.99 list price and already warns that 'Udemy's real price after discount is frequently under $20, so the honest comparison for our $19 fundamentals course is about the same money, much more course'.",
+    stakes:
+      "Our $19 fundamentals course and the $49 360 bundle are both anchored here. Udemy list prices are close to fictional; if the real price is $15, the 360 bundle is competing on volume and quality rather than on price, which changes how it should be marketed.",
+    needs: [
+      "Observed effective prices on 2-3 separate days",
+      "The course URLs",
+      "Dates checked",
+    ],
+    where: ["udemy.com, checked logged-out, on more than one day"],
+  },
+  {
+    key: "price-dla-connect-membership",
+    course: "pricing: market anchors",
+    title: "Drone Launch Connect, what does the $348/year membership actually include?",
+    severity: "low",
+    question:
+      "What does Drone Launch Academy's Connect community membership include at $348/12 months, job leads, referrals, live calls, course access?",
+    claim:
+      "market-comparison.ts records $348/12mo and states plainly that 'theirs buys a PEER COMMUNITY... ours buys a CONTENT CATALOG. Do not present $99 vs $348 as like-for-like.'",
+    stakes:
+      "This is the clearest case of a competitor charging more for something we do not offer at all. The answer decides a product question, not just a price one: whether all-access should ever include a community, and whether $99/year is underpriced if it did.",
+    needs: [
+      "Current price and term",
+      "What membership includes",
+      "Whether course access is bundled with it",
+      "URL and date checked",
+    ],
+    where: ["dronelaunchacademy.com membership/community pages"],
+  },
+  {
+    key: "price-coursera-range",
+    course: "pricing: market anchors",
+    title: "Coursera single-course range, is $39-79 still right?",
+    severity: "low",
+    question:
+      "What is the current price range for a single self-paced Coursera course with a certificate, and has the model shifted further toward subscription-only (Coursera Plus)?",
+    claim:
+      "course-pricing.ts has anchored the whole catalog's tier ladder on 'Coursera $39-79 (with a certificate)' since the original pricing turn, and market-comparison.ts flags the range as predating this turn.",
+    stakes:
+      "This anchor sets the ceiling for the ENTIRE catalog, not just this series, every Core and Premium price is justified relative to it. If Coursera has moved to subscription-only, the comparison our tier ladder rests on no longer exists and the ladder needs rethinking.",
+    needs: [
+      "Current single-course price range",
+      "Whether single-course purchase is still offered at all",
+      "Coursera Plus pricing, since that is now the closer analogue to our all-access",
+      "Date checked",
+    ],
+    where: ["coursera.org, logged out"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

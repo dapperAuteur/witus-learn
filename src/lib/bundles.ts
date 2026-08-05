@@ -1,7 +1,9 @@
 // Proposed bundles for selling on the app AND on Teachers Pay Teachers, owner-facing at
 // /admin/pricing. A bundle is a themed set of courses sold together at a discount. These are
-// RECOMMENDATIONS with a justification for EACH channel; the app cannot yet SELL a bundle (see
-// plans/48 and the operator task), so treat these as the plan the bundle-sales feature will seed.
+// RECOMMENDATIONS with a justification for EACH channel. Bundle SALES now ship (schema/bundles.ts,
+// createBundleCheckout, the webhook, /admin/bundles, /bundles/[slug]): `pnpm seed:bundles` creates
+// each of these UNPUBLISHED with the recommended price pre-filled, and BAM sets the final price and
+// publishes at /admin/bundles. Nothing here changes a live price on its own.
 //
 // Two channels, two products, two prices:
 //   - APP bundle: the full interactive courses, sold as one purchase. Priced at a real discount off
@@ -28,6 +30,20 @@ export interface BundleProposal {
   tptPrice: number | null;
   /** Why this TpT price, and which packets it bundles. */
   tptJustification: string;
+  /**
+   * Do not seed this bundle until EVERY member course exists in the tenant.
+   *
+   * Default (false/undefined) is the growing-bundle behaviour the older proposals rely on: seed with
+   * whichever members exist and let the bundle fill out as courses ship. That is right for
+   * `structural-paths`, whose justification explicitly plans for it.
+   *
+   * It is WRONG for a bundle whose price assumes a full set that does not exist yet. The Imaging &
+   * Drone bundles include `faa-part-107`, which is already seeded, so without this flag
+   * `pnpm seed:bundles` would create a "$99 Drone Services" bundle containing exactly one course.
+   * Unpublished, so nothing could sell, but the admin list would show a price that is a lie about
+   * what is in it.
+   */
+  plannedUntilComplete?: boolean;
 }
 
 const ROUTE_SERIES = [
@@ -128,5 +144,79 @@ export const BUNDLE_PROPOSALS: BundleProposal[] = [
     tptPrice: null,
     tptJustification:
       "No labor packets built yet. A good future TpT bundle once two or three labor packets exist; the comparative worksheets travel well as printables.",
+  },
+
+  // ══ Imaging & Drone Services (plans/54) ══════════════════════════════════════════════════════
+  // PLANNED, none of these courses are seeded yet, so /admin/pricing shows "0 of N courses" until
+  // they are. The prices are here now because they are the reasoning the series is being built
+  // against, and because the market anchors behind them (src/lib/market-comparison.ts) are visible
+  // on the same page for vetting.
+  //
+  // The shared core `capture-services-business` is FREE and appears in all three bundles: it is the
+  // funnel, so it contributes $0 to every sum-of-parts and belongs in each list for completeness.
+  {
+    slug: "imaging-360-services",
+    plannedUntilComplete: true,
+    title: "360 Imaging Services",
+    appMembers: [
+      "capture-services-business",
+      "360-capture-fundamentals",
+      "360-real-estate-tours",
+      "360-publishing-and-hosting",
+      "360-location-based-games",
+    ],
+    appPrice: 49,
+    appJustification:
+      "The no-licence on-ramp: everything needed to earn with a 360 camera, or a phone, without waiting on an FAA certificate. Four paid courses sum to $96, so $49 is a clean half-off. It is priced just under the single $49.99 Udemy virtual-tour title it competes with while delivering four courses instead of three hours, though Udemy discounts hard, so treat that as position rather than a knockout. This is the impulse tier and the entry point to the whole series.",
+    tptPrice: null,
+    tptJustification:
+      "No TpT price, and there should never be one. Teachers Pay Teachers is a K-12 teacher marketplace; commercial 360 capture services have no buyer there. Recorded explicitly so this is not re-litigated as an oversight.",
+  },
+  {
+    slug: "drone-services",
+    plannedUntilComplete: true,
+    title: "Drone Services (with Part 107)",
+    appMembers: [
+      "capture-services-business",
+      "faa-part-107",
+      "drone-work-for-hire",
+      "drone-roof-property-and-claims",
+      "drone-solar-and-thermal",
+      "drone-construction-documentation",
+      "drone-film-tv-and-corporate",
+      "drone-stadium-and-events",
+    ],
+    appPrice: 99,
+    appJustification:
+      "Licence to livelihood in one purchase, and it MUST include faa-part-107: the certificate is a hard prerequisite for all six vertical courses, so selling this bundle without it would be selling a locked door. Sum of parts is $213. At $99 it undercuts Drone Launch Academy's $199 exam prep ALONE, before any vertical training, which is why this is the bundle marketing should lead with. Their roof-inspection course by itself is $499 against our $29 equivalent; that gap is worth investigating rather than boasting about, since a $499 course usually ships sample deliverables we do not have yet.",
+    tptPrice: null,
+    tptJustification:
+      "No TpT price. Commercial drone services have no K-12 teacher buyer. See the 360 bundle's note.",
+  },
+  {
+    slug: "imaging-and-drone-complete",
+    plannedUntilComplete: true,
+    title: "Imaging & Drone Services (Complete)",
+    appMembers: [
+      "capture-services-business",
+      "faa-part-107",
+      "360-capture-fundamentals",
+      "360-real-estate-tours",
+      "360-publishing-and-hosting",
+      "360-location-based-games",
+      "drone-work-for-hire",
+      "drone-roof-property-and-claims",
+      "drone-solar-and-thermal",
+      "drone-construction-documentation",
+      "drone-film-tv-and-corporate",
+      "drone-stadium-and-events",
+      "capture-services-capstone",
+    ],
+    appPrice: 129,
+    appJustification:
+      "Both capture methods, every vertical, the certificate, and the capstone. Sum of parts is $338. NOTE THE DELIBERATE EXCEPTION: this is the only bundle priced ABOVE the $99/year all-access, breaking the rule stated at the top of this file. The reasoning is that at $99 it would be exactly dominated by all-access and give a buyer no reason to prefer it, while the honest distinction, perpetual access versus a lapsing subscription, is worth the $30. The comparison set here is $200-$500 per SINGLE course, not $10-20 titles: the competitor's exam prep plus its roof course alone is $698. If the invariant matters more than the margin, the fallback is 360 $49 / drone $79 excluding Part 107 / complete $99, which is fully consistent with today's rules and leaves roughly $30 per combined sale on the table.",
+    tptPrice: null,
+    tptJustification:
+      "No TpT price. See the 360 bundle's note.",
   },
 ];
