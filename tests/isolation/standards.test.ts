@@ -66,6 +66,11 @@ const SEASON_2_3 = [
 // media literacy). Every slug must match its registration in scripts/seed-*.ts exactly — the
 // "unknown slug" test below is the guard against a typo making a standard unreachable.
 const CATALOG = [
+  // Study Skills. Registered via seedAuthoredCourse rather than the shorthand form, which is why
+  // check-standards-coverage cannot see it and this list has to carry it explicitly.
+  "how-to-research",
+  // River Expedition series (RIVER-01), also registered via seedAuthoredCourse.
+  "river-what-an-expedition-is",
   "us-civics-101",
   "us-constitution-101",
   "voting-elections-101",
