@@ -47,6 +47,7 @@
     "research:list": "tsx --env-file=.env.local scripts/research-list.ts",
     "future:list": "tsx --env-file=.env.local scripts/future-list.ts",
     "gen:ebooks": "tsx scripts/gen-ebooks.ts",
+    "gen:pdfs": "tsx scripts/gen-pdfs.ts",
     "gen:citations": "tsx --env-file=.env.local scripts/gen-citations.ts",
     "gen:future-work": "tsx scripts/gen-future-work.ts",
     "gen:standards": "tsx scripts/gen-standards-index.ts",
