@@ -107,6 +107,8 @@ import { AI_B5_DEPLOYING_EVALUATING_COURSE } from "./data/ai-b5-deploying-evalua
 import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capstone-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
+import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
+import { RIVER_WHAT_AN_EXPEDITION_IS_COURSE } from "./data/river-what-an-expedition-is-course";
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { GREAT_MIGRATION_AND_THE_WORLD_COURSE } from "./data/great-migration-and-the-world-course";
@@ -637,6 +639,39 @@ async function main() {
     course: LEARNING_HOW_TO_LEARN_COURSE,
     category: "Study Skills",
     navigationMode: "linear",
+  });
+
+  // How to Research — the discipline underneath documentary, oral history, news and civic
+  // documentation, none of which teach it. Built on the Trusted Documentation Rubric already shipped
+  // in src/lib/field-log-rubric.ts, so the course and the instrument reviewers score against are the
+  // same object and cannot drift. Standalone by decision, complementary to the Documentarian
+  // program rather than its on-ramp. Plan: plans/55-how-to-research-course.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-to-research",
+    course: HOW_TO_RESEARCH_COURSE,
+    category: "Study Skills",
+    navigationMode: "linear",
+  });
+
+  // River Expedition, course 1 of 11 (RIVER-01). FREE: it is the series funnel and the course that
+  // has to earn a stranger's attention. Cross-listed under Culture & History because the spine is
+  // the freedom line and the domestic slave trade, not the paddling. Plan: plans/56.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Rivers & Expeditions", sortOrder: 14 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "river-what-an-expedition-is",
+    course: RIVER_WHAT_AN_EXPEDITION_IS_COURSE,
+    category: "Rivers & Expeditions",
+    navigationMode: "linear",
+    seriesSlug: "river-expedition",
+    seriesCode: "RIVER",
+    seriesPosition: "01",
   });
 
   // WOOP (Wish · Outcome · Obstacle · Plan) — Oettingen's Mental Contrasting with Implementation
