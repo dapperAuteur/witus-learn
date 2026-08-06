@@ -2292,6 +2292,14 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   still the boundary and \`filterGroups\` still only narrows what \`scopeAlignments\` allowed. Scope is
   the per-state view only; the picker and the matrix are unchanged. **No migration, no seed.**
 
+- 🔧 **Owner library** (\`feat/admin-library\`, **migration 0048**): an owner-only \`/admin/library\`
+  reading room for the private job-prep ebooks (interview prep, the commercial playbook) that live
+  as local markdown outside this public repo. \`node scripts/sync-library.mjs <files...>\` upserts
+  them into \`library_documents\` (platform-level, deliberately no tenant_id); list + reader render
+  through the shared safe \`<Markdown>\` pipeline and both sit behind \`requirePlatformOwner()\`, so
+  no school ever sees them. Mirrors witus.online's \`/admin/library\`. **Migration 0048, no seed;**
+  content arrives only via the sync script, never git.
+
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
   → regen embeddings. Set \`PLATFORM_OWNER_EMAIL=bam@awews.com\`.

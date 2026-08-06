@@ -303,6 +303,17 @@ The proposals are **committed** (`src/lib/future-work-content/*`, generated from
 page renders the same in production. Add a proposal by dropping markdown in `plans/future-courses/`,
 re-running the generator, and registering it in `src/lib/future-work.ts`.
 
+## Owner library (`/admin/library`)
+
+Owner-only reading room for BAM's private long-form ebooks (interview prep, the commercial
+playbook). The markdown lives outside this public repo; `node scripts/sync-library.mjs
+<markdown files...>` upserts each file into `library_documents` (slug from the filename minus any
+date prefix, title from the first `#` heading, sort order from the argument order), and the pages
+render it through the same safe `Markdown` component lessons use. The table is platform-level (no
+`tenant_id`), both pages sit behind `requirePlatformOwner()`, and nothing tenant-scoped or public
+links to it, so no school ever sees a byte of it. Mirrors `/admin/library` on witus.online.
+Migration `0048_nebulous_vermin.sql` creates the table (`pnpm db:migrate:prod` after merging).
+
 ## Teachers Pay Teachers packets (`/admin/tpt-plan`)
 
 Owner-only rollout plan for the TpT sales channel: which packet to post, in what order, at what
