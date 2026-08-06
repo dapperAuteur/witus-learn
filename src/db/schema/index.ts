@@ -23,3 +23,4 @@ export * from "./citation-checks";
 export * from "./ebook-approvals";
 export * from "./bundles";
 export * from "./auditors";
+export * from "./library";
