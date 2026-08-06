@@ -3999,6 +3999,18 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Builds a documented account of its subject by integrating cited primary and secondary sources into one coherent understanding.",
     courseSlugs: [
+      // Integrates the four-step hypoxia mechanism, nutrient-source data and the task force's history
+      // into one account of a basin-scale system.
+      "river-the-dead-zone",
+      // Integrates the trade's economic structure, the market geography and the origin of the phrase
+      // into one account, and names whose records survive and whose do not.
+      "river-sold-down-the-river",
+      // The route out of the Delta, drawn from railway, newspaper and migration scholarship, and
+      // explicitly bounded against the two Great Migration courses.
+      "river-the-delta-and-the-migration",
+      // Integrates regional scholarship on the Ohio borderland with the documented structure of the
+      // Madison networks into one account, and states what the record cannot establish.
+      "river-the-ohio-and-the-line",
       // River Expedition 01 integrates primary and secondary material on the domestic slave trade,
       // the Ohio as a legal border, and the Great Migration into one account of a single corridor.
       "river-what-an-expedition-is",
@@ -4089,6 +4101,30 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Teaches the student to test a historical claim against its sources: corroborate it, challenge it, or downgrade and cut it when the evidence does not support it.",
     courseSlugs: [
+      // Lesson 4 names the three values that must be read from an agency every time, and why a
+      // confident summary of access law would be worse than useless.
+      "river-living-on-the-water",
+      // Lesson 4 withholds the zone's measured size on purpose and explains that freezing a moving
+      // value into a sentence is the failure to avoid.
+      "river-the-dead-zone",
+      // Lesson 4 refuses a tidy causal account of Cairo's decline and states what settling it would
+      // actually require.
+      "river-cairo-the-confluence",
+      // Lesson 4 explains why totals are contested and why the fullest surviving view of the trade is
+      // a hostile one.
+      "river-sold-down-the-river",
+      // Lesson 4 warns against any single-cause account of the Migration, including one crediting the
+      // Defender.
+      "river-the-delta-and-the-migration",
+      // Lesson 5 is this claim as method: which parts are well established, which are contested, and
+      // why any confident escape total should be treated with suspicion.
+      "river-the-ohio-and-the-line",
+      // Lesson 5 asks why the course withheld figures it could have recited, and sends the learner to
+      // the measuring agency instead of to a summary.
+      "river-the-wabash-headwaters",
+      // Lesson 5 states the limits of what a written course can establish about conditions that change
+      // with flow, season and traffic.
+      "river-locks-dams-and-barges",
       // Lesson 6 states outright that the primary source wins over anything in the course, and asks
       // learners to record predictions and check themselves against what happens.
       "river-what-an-expedition-is",
@@ -4152,6 +4188,12 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim:
       "Ships a graded research capstone: the student locates a primary record, corroborates it across sources, and writes it up with citations.",
     courseSlugs: [
+      // The capstone requires a cited factual account of a real place, with gaps flagged, paired with a
+      // labelled imaginative piece and a reflection on what each form can do.
+      "river-telling-the-river",
+      // Lesson 4 sends the learner to accident-report literature across three fields to test whether the
+      // incremental-commitment pattern is real.
+      "river-finding-your-way",
       // Lesson 15 is a graded research capstone scored against the Trusted Documentation Rubric:
       // locate sources, corroborate, cite, disclose.
       "how-to-research",
