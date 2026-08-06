@@ -37,6 +37,7 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { href: "/admin/pricing", title: "Proposed pricing", desc: "Fair, competitive price recommendations for every course, current vs proposed.", icon: "💵", ownerOnly: true },
   { href: "/admin/bundles", title: "Bundles", desc: "Course bundles sold at one price; publish and price them.", icon: "📦", ownerOnly: true },
   { href: "/admin/school-billing", title: "School billing", desc: "Sell each white-label school at its own price, a subscription or a one-time lifetime payment.", icon: "🏫", ownerOnly: true },
+  { href: "/admin/library", title: "Library", desc: "Private ebooks synced from local markdown. Your reading room, invisible to schools.", icon: "📖", ownerOnly: true },
   { href: "/admin/roadmap", title: "Roadmap", desc: "Internal progress tracker.", icon: "🗺️", ownerOnly: true },
   { href: "/admin/commands", title: "Commands", desc: "CLI reference, migrations, seeds, feedback:list…", icon: "⌨️", ownerOnly: true },
   { href: "/admin/source-chat", title: "Source Chat", desc: "Chat-with-sources config + test (per course).", icon: "💬", ownerOnly: true },
