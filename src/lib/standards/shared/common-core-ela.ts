@@ -19,16 +19,20 @@ export const COMMON_CORE_ELA: SharedFramework = {
     {
       code: "CCSS.ELA-Literacy.RH.11-12.6",
       text: "Evaluate authors' differing points of view on the same historical event or issue by assessing the authors' claims, reasoning, and evidence.",
-      claimIds: ["bvc.whose-voice-differing-accounts"],
+      claimIds: ["bvc.whose-voice-differing-accounts", "dragons.document-as-decisions"],
       coverage: "full",
-      note: "The strongest single alignment on this page. Ep 4 puts a planter's euphemism and passive voice directly against two first-person accounts by formerly enslaved writers, and teaches the student to assess each author's claims and evidence.",
+      note: "The strongest single alignment on this page. Ep 4 puts a planter's euphemism and passive voice directly against two first-person accounts by formerly enslaved writers, and teaches the student to assess each author's claims and evidence. Monsters at the Edge of the Map runs the same assessment on documents rather than testimony: three contemporary map genres set against each other, then the reasons (cost, buyer, argument, inheritance) an element appears at all.",
     },
     {
       code: "CCSS.ELA-Literacy.RH.11-12.8",
       text: "Evaluate an author's premises, claims, and evidence by corroborating or challenging them with other information.",
-      claimIds: ["bvc.evaluate-claims-fallacies", "catalog.test-a-historical-claim"],
+      claimIds: [
+        "bvc.evaluate-claims-fallacies",
+        "catalog.test-a-historical-claim",
+        "dragons.repetition-is-not-corroboration",
+      ],
       coverage: "full",
-      note: "The BVC value-chain course teaches fallacy-spotting; the route series, the labor and precolonial courses, and Afrocentricity make testing a claim against its sources (corroborating, challenging, or downgrading it) the explicit method of the course.",
+      note: "The BVC value-chain course teaches fallacy-spotting; the route series, the labor and precolonial courses, and Afrocentricity make testing a claim against its sources (corroborating, challenging, or downgrading it) the explicit method of the course. Monsters at the Edge of the Map adds the corroboration half directly: it teaches that repeated claims count only when their sources are independent, and drills tracing a claim back to its earliest form.",
     },
     {
       code: "CCSS.ELA-Literacy.RH.11-12.9",

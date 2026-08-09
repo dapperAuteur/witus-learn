@@ -4245,6 +4245,47 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "21 · Your assignment: test one connection of your own",
       "17 · Your assignment: one schoolhouse, and the budget line that raised it",
       "20 · Your assignment: write one property",
+      // Here Be Dragons course 1 closes with a graded assignment that is this claim exactly: take a
+      // real historical map, trace one drawn element back as far as the record allows, and mark the
+      // point where the trail goes cold rather than closing the gap.
+      "16 · Assignment: read one map's margin",
+    ],
+  },
+
+  // ══ Here Be Dragons (plans/58) ══════════════════════════════════════════════
+  {
+    id: "dragons.repetition-is-not-corroboration",
+    claim:
+      "Teaches that repeated claims count as evidence only when their sources are independent, and drills tracing a claim back to its earliest form.",
+    courseSlugs: ["monsters-at-the-edge-of-the-map"],
+    lessons: [
+      // The island-whale is followed from the Physiologus through Brendan and Sinbad to a 1539 map,
+      // and the lesson names the rule: nine sources copying a tenth is one piece of evidence and
+      // nine copies.
+      "9 · The whale that is an island",
+      // Standing (whether a writer had any way of knowing) versus style, worked on a compiled
+      // travelogue that was read as testimony for centuries, plus strategic scepticism as a device.
+      "10 · How they wrote it: the eyewitness who was not there",
+      // The course opens by taking its own most famous fact apart: one object, and specialists
+      // disagree about what its inscription says.
+      "1 · The phrase that is on almost no map",
+    ],
+  },
+  {
+    id: "dragons.document-as-decisions",
+    claim:
+      "Reads a document as a set of decisions made by someone with interests: its genre, its purpose, its buyer, and what it leaves out.",
+    courseSlugs: ["monsters-at-the-edge-of-the-map"],
+    lessons: [
+      // Three contemporary map genres put side by side, each answering a different question, with
+      // the explicit rule that judging one against another's job produces nonsense.
+      "2 · Three objects that look alike and are not",
+      // Cost, buyer, authorial argument and inheritance named as the reasons an element appears,
+      // then turned on a modern chart in an annual report.
+      "7 · Decoration, warning, advertisement",
+      // Harley's silences: a European map of Africa's interior got EMPTIER after 1375, and the
+      // lesson works through why that is a fact about the document rather than about the place.
+      "13 · How Africa's map emptied out",
     ],
   },
 ];

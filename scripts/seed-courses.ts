@@ -108,6 +108,8 @@ import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capsto
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
+// Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
+import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
 import { RIVER_WHAT_AN_EXPEDITION_IS_COURSE } from "./data/river-what-an-expedition-is-course";
 import { RIVER_WABASH_HEADWATERS_COURSE } from "./data/river-the-wabash-headwaters-course";
 import { RIVER_THE_OHIO_AND_THE_LINE_COURSE } from "./data/river-the-ohio-and-the-line-course";
@@ -845,6 +847,15 @@ async function main() {
     // (the True Reformers embezzlement, Binga's charge) sit in the achievement column where they
     // belong. It deliberately teaches NO instruments of clearance; the route series owns those.
     { slug: "what-they-built", course: WHAT_THEY_BUILT_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" (plans/58), course 1 of 5: how people described a world they had not seen,
+    // and what those descriptions were later used for. Grades 9-12, aimed at the homeschool/teacher
+    // market. THE RULE THIS SERIES IS BUILT ON: the naive framing ("they thought it was flat, then we
+    // got smart") is factually wrong and the series teaches the inverse, that people reasoned well
+    // from what they had. Lesson 12 is the hinge, carrying the monstrous-races device forward into
+    // what it was later used to justify, and it links to training-the-colonizer and the precolonial
+    // courses. Sections 1-4 each end with a 12-question bank serving 8. Contains one `map` lesson
+    // (the margins over time, year-driven) and one two-lane `:::timeline` (claim vs evidence).
+    { slug: "monsters-at-the-edge-of-the-map", course: MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE, category: "Culture & History" },
     // "What a Business Entity Actually Is" is course 1 (the method course) of the "How a Business Is
     // Formed" path (plans/46, Path B): an entity is a bundle of four decisions (liability, taxation,
     // ownership/transfer, governance), and reading the formation documents as primary sources is the
