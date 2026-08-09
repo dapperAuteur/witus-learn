@@ -52,20 +52,28 @@ export const COMMON_CORE_ELA: SharedFramework = {
     {
       code: "CCSS.ELA-Literacy.RI.11-12.6",
       text: "Determine an author's point of view or purpose in a text in which the rhetoric is particularly effective, analyzing how style and content contribute to the power, persuasiveness or beauty of the text.",
-      claimIds: ["bvc.rhetoric-power-persuasion"],
+      claimIds: ["bvc.rhetoric-power-persuasion", "dragons.genre-and-truth-claim"],
       coverage: "full",
     },
     {
       code: "CCSS.ELA-Literacy.WHST.11-12.7",
       text: "Conduct short as well as more sustained research projects to answer a question (including a self-generated question) or solve a problem; narrow or broaden the inquiry when appropriate; synthesize multiple sources on the subject, demonstrating understanding of the subject under investigation.",
-      claimIds: ["bvc.coffee-project-synthesis", "catalog.research-a-primary-record"],
+      claimIds: [
+        "bvc.coffee-project-synthesis",
+        "catalog.research-a-primary-record",
+        "dragons.sustained-source-research",
+      ],
       coverage: "full",
       note: "The Coffee episode ships a graded assignment; the route series and the positive-track courses each close with a research capstone (find a listing, write one firm, test one connection) in which the student runs a self-directed inquiry and synthesizes multiple sources.",
     },
     {
       code: "CCSS.ELA-Literacy.WHST.11-12.8",
       text: "Gather relevant information from multiple authoritative print and digital sources, using advanced searches effectively; assess the strengths and limitations of each source in terms of the specific task, purpose, and audience; integrate information into the text selectively to maintain the flow of ideas, avoiding plagiarism and overreliance on any one source and following a standard format for citation.",
-      claimIds: ["bvc.coffee-project-sources-ethics", "catalog.research-a-primary-record"],
+      claimIds: [
+        "bvc.coffee-project-sources-ethics",
+        "catalog.research-a-primary-record",
+        "dragons.sustained-source-research",
+      ],
       coverage: "full",
       note: "The route and positive-track capstones require the student to locate a primary record, corroborate it across independent sources, weigh each source's limits, and write it up with citations: the whole of this standard.",
     },

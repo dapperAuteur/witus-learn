@@ -111,6 +111,7 @@ import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
 import { GIANTS_DRAGONS_AND_THE_BONES_COURSE } from "./data/giants-dragons-and-the-bones-course";
+import { WRITING_THE_WORLD_COURSE } from "./data/writing-the-world-course";
 import { RIVER_WHAT_AN_EXPEDITION_IS_COURSE } from "./data/river-what-an-expedition-is-course";
 import { RIVER_WABASH_HEADWATERS_COURSE } from "./data/river-the-wabash-headwaters-course";
 import { RIVER_THE_OHIO_AND_THE_LINE_COURSE } from "./data/river-the-ohio-and-the-line-course";
@@ -866,6 +867,15 @@ async function main() {
     // "may have inspired" in the file is hedged in the prose on purpose, and lesson 5 makes the hedge
     // itself the object of study.
     { slug: "giants-dragons-and-the-bones", course: GIANTS_DRAGONS_AND_THE_BONES_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" course 5 of 5, the ELA capstone and the series' standards anchor: one finding
+    // written five ways (chronicle, field note, paper, press release, headline, post), then the moves
+    // inside the sentence (naming, the missing actor, the hedge, the citation). 20 lessons, closing on
+    // TWO graded assignments, which are what make the WHST.11-12.7 and .8 claims honest rather than
+    // aspirational: a six-source ledger with a documented narrowing of the question, and a chain of
+    // custody from headline back to paper with a search log that must include the searches that
+    // FAILED. Deliberately teaches no `:::figure` directive, because that has not shipped; lesson 12
+    // teaches alt, caption and credit as a general publishing convention instead.
+    { slug: "writing-the-world", course: WRITING_THE_WORLD_COURSE, category: "Culture & History" },
     // "What a Business Entity Actually Is" is course 1 (the method course) of the "How a Business Is
     // Formed" path (plans/46, Path B): an entity is a bundle of four decisions (liability, taxation,
     // ownership/transfer, governance), and reading the formation documents as primary sources is the

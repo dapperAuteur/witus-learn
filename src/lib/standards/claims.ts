@@ -4276,6 +4276,39 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
   {
+    id: "dragons.genre-and-truth-claim",
+    claim:
+      "Reads one finding across five genres (chronicle, field note, paper, press release, headline and post) and shows what each genre's conventions permit its author to assert.",
+    courseSlugs: ["writing-the-world"],
+    lessons: [
+      // The spine: the same discovery written five ways, each with a different truth claim.
+      "1 · Five genres, one discovery",
+      // Hedges read as structure: what "consistent with" asserts and what a scientist will not say.
+      "4 · The paper: hedges, consistent with, and what a scientist will not say",
+      // The institutional voice, read for purpose rather than for accuracy.
+      "5 · The press release: the institution's voice",
+      // Where a paper's qualified verb becomes an unqualified one, and who makes that choice.
+      "6 · The headline: where suggests becomes proves",
+    ],
+  },
+  {
+    id: "dragons.sustained-source-research",
+    claim:
+      "Requires a sustained research project with a documented search (including failed queries), a per-source assessment of strengths and limits for the specific task, and APA 7 citation.",
+    courseSlugs: ["writing-the-world"],
+    lessons: [
+      // Six-source ledger, a documented narrowing or broadening of the question, a method note, and
+      // three genre productions from one finding.
+      "15 · Assignment: one discovery, three genres, with sources",
+      // Chain of custody from headline back to paper, a required search log that includes the
+      // searches that failed, per-source limits stated for THIS task, purpose and audience, and a
+      // cap so no single source supplies more than half the citations.
+      "16 · Assignment: trace a headline back to the paper",
+      // Citation taught as an instruction to a reader with a job, plus its four failure modes.
+      "11 · Citation as a genre convention with a job",
+    ],
+  },
+  {
     id: "dragons.hold-a-dispute-open",
     claim:
       "Evaluates two published positions on one question without resolving it, naming the narrow sentence in dispute and what each side would accept as a loss.",

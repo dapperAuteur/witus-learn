@@ -374,6 +374,51 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
     where: ["coursera.org, logged out"],
   },
+
+  // ── Here Be Dragons: Writing the World (plans/58) ──────────────────────────────────────────────
+  // Both filed by the course's own author, who flagged them rather than shipping a citation it could
+  // not stand behind. This is the rule working as intended: a hedge with no check is a hedge nobody
+  // will ever clear.
+  {
+    key: "wtw-nasa-alh84001-release-title",
+    course: "writing-the-world",
+    title: "Exact title of the 1996 NASA ALH84001 press release",
+    severity: "medium",
+    question:
+      "What was the exact title and release date of the NASA press release announcing the ALH84001 Martian meteorite findings in August 1996?",
+    claim:
+      "Lesson 5 (the press release) cites it as: National Aeronautics and Space Administration. (1996, August 7). Meteorite yields evidence of primitive life on early Mars. The date and the event are solid. The exact release TITLE is the part that was not verified against NASA's own archive.",
+    stakes:
+      "Lesson 5 is the course's worked example of institutional voice, and it teaches students to trace a claim back to its source document. A misquoted title in the one lesson about citing precisely would be the most self-undermining error the course could ship. It is also an ELA capstone whose standards claims rest on modelling WHST.11-12.8.",
+    needs: [
+      "The verbatim release title",
+      "The release date and any release number",
+      "A stable URL in NASA's newsroom or history archive",
+    ],
+    where: [
+      "NASA newsroom archive, nasa.gov",
+      "NASA History Division online reference collection",
+      "The Internet Archive capture of nasa.gov from August 1996",
+    ],
+  },
+  {
+    key: "wtw-orwell-horizon-citation",
+    course: "writing-the-world",
+    title: "Volume, issue and page range for Orwell's Politics and the English Language",
+    severity: "low",
+    question:
+      "What are the correct volume, issue and page numbers for George Orwell's Politics and the English Language as first published in Horizon in April 1946?",
+    claim:
+      "Lesson 9 (the passive voice and the missing actor) and lesson 10 cite it as Horizon, 13(76), 252-265. The essay, the journal and the year are not in doubt; the volume, issue and page range were not confirmed against the issue itself.",
+    stakes:
+      "Low stakes for the argument, which does not depend on the pagination, but this is the lesson that teaches citation as an instruction to a reader with a job. A wrong page range here is a small error in exactly the place a sharp student will check.",
+    needs: ["Volume number", "Issue number", "First and last page"],
+    where: [
+      "A library copy or scan of Horizon vol. 13 (1946)",
+      "The Orwell Foundation, which reproduces the essay with publication details",
+      "Any scholarly edition of Orwell's essays, which will carry the original citation",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
