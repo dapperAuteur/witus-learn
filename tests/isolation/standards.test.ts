@@ -69,6 +69,13 @@ const CATALOG = [
   // Study Skills. Registered via seedAuthoredCourse rather than the shorthand form, which is why
   // check-standards-coverage cannot see it and this list has to carry it explicitly.
   "how-to-research",
+  // Here Be Dragons series (plans/58), Culture & History, grades 9-12. Five courses on how people
+  // described a world they had not seen, and what those descriptions were later used for.
+  "monsters-at-the-edge-of-the-map",
+  "giants-dragons-and-the-bones",
+  "deep-time-and-the-dinosaur-renaissance",
+  "wrong-for-good-reasons",
+  "writing-the-world",
   // River Expedition series (RIVER-01), also registered via seedAuthoredCourse.
   "river-what-an-expedition-is",
   "river-the-wabash-headwaters",
