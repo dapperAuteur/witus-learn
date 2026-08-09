@@ -22,6 +22,7 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { STAGED_COURSES } from "../src/lib/citations";
+import { inTextCitationExcerpt } from "../src/lib/lesson-excerpt";
 import { resolveDbUrl } from "./db-url";
 
 const OUT_DIR = join(import.meta.dirname, "..", "src", "lib", "citation-content");
@@ -121,6 +122,7 @@ async function main() {
   const rows: string[] = [];
   const seen = new Set<string>();
   let totalCitations = 0;
+  let withExcerpt = 0;
   const perCourse: { slug: string; n: number; lessons: number }[] = [];
 
   for (const slug of STAGED_COURSES) {
@@ -147,10 +149,18 @@ async function main() {
         if (seen.has(key)) continue;
         seen.add(key);
         const urlMatch = entry.match(URL_RE);
+        // The sentence in THIS lesson that cites this source, when the in-text citation can be
+        // matched. It is the claim a verifier is judging the source against, and showing it beside
+        // the reference is the difference between checking twenty citations and checking two. No
+        // match means no excerpt: see the note on Citation.excerpt for why a near miss is worse
+        // than a blank.
+        const excerpt = inTextCitationExcerpt(lesson.text, entry);
+        if (excerpt) withExcerpt++;
         rows.push(
           `  {\n    key: ${lit(key)},\n    courseSlug: ${lit(course.slug)},\n    courseTitle: ${lit(course.title)},\n` +
             `    lessonSlug: ${lit(lesson.slug ?? "")},\n    lessonTitle: ${lit(lesson.title)},\n    text: ${lit(entry)},\n` +
             (urlMatch ? `    url: ${lit(urlMatch[1])},\n` : "") +
+            (excerpt ? `    excerpt: ${lit(excerpt)},\n` : "") +
             `  },`,
         );
         n++;
@@ -164,6 +174,9 @@ async function main() {
     console.log(`  ${p.slug.padEnd(34)} ${String(p.n).padStart(4)} citations across ${p.lessons} lessons`);
   }
   console.log(`\n${totalCitations} unique citation(s) from ${perCourse.length} staged course(s).`);
+  console.log(
+    `${withExcerpt} carry the sentence that cites them; the rest cite in a style the matcher does not recognise.`,
+  );
 
   if (process.argv.includes("--dry-run")) {
     console.log("(dry run, nothing written)");

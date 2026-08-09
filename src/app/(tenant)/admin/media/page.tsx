@@ -9,6 +9,8 @@ import {
   type MediaKind,
   type MediaStatus,
 } from "@/lib/media-verify";
+import { buildLessonLinkIndex, lessonTitleFor, reviewLocation } from "@/lib/lesson-links";
+import { proseAroundNeedle } from "@/lib/lesson-excerpt";
 import { MediaVerifyList, type MediaAssetRow } from "@/components/media-verify-list";
 
 export const metadata: Metadata = { title: "Media verification" };
@@ -30,25 +32,54 @@ export default async function AdminMediaPage() {
   const sdb = await getScopedDb();
   const rows = await sdb.listMediaAssets();
 
+  // The lesson each asset illustrates, and the prose either side of it.
+  //
+  // A reviewer is being asked whether a caption matches a picture and whether a scan is legible
+  // enough to teach from, and neither question can be answered from the picture alone: the answer
+  // is in the argument the figure was put there to carry. The asset's URL appears in the lesson
+  // inside its `:::figure` directive (src/lib/figures.ts), so the paragraphs around that line ARE
+  // that argument, quoted from the lesson rather than summarised.
+  const links = buildLessonLinkIndex(
+    await sdb.listLessonLocations(rows.flatMap((a) => (a.courseSlug ? [a.courseSlug] : []))),
+  );
+  const bodies = await sdb.listLessonBodies(
+    rows.flatMap((a) =>
+      a.courseSlug && a.lessonSlug ? [{ courseSlug: a.courseSlug, lessonSlug: a.lessonSlug }] : [],
+    ),
+  );
+  const bodyByRef = new Map(bodies.map((b) => [`${b.courseSlug} ${b.lessonSlug}`, b.text]));
+
   // Serialise once, then count and group the serialised rows, so the summary at the top and the
   // cards below can never disagree about what is pending. `kind` and `status` are text columns with
   // a database CHECK behind them, so the narrowing here is a restatement, not an assumption.
-  const assets: MediaAssetRow[] = rows.map((a) => ({
-    id: a.id,
-    courseSlug: a.courseSlug,
-    lessonSlug: a.lessonSlug,
-    kind: a.kind as MediaKind,
-    url: a.url,
-    alt: a.alt,
-    caption: a.caption,
-    credit: a.credit,
-    rightsStatus: a.rightsStatus,
-    sourceUrl: a.sourceUrl,
-    status: a.status as MediaStatus,
-    reviewNote: a.reviewNote,
-    reviewedAt: a.reviewedAt ? a.reviewedAt.toISOString() : null,
-    createdAt: a.createdAt.toISOString(),
-  }));
+  const assets: MediaAssetRow[] = rows.map((a) => {
+    const where = reviewLocation(links, a.courseSlug, a.lessonSlug);
+    const body =
+      a.courseSlug && a.lessonSlug ? (bodyByRef.get(`${a.courseSlug} ${a.lessonSlug}`) ?? null) : null;
+    const around = proseAroundNeedle(body, a.url);
+    return {
+      id: a.id,
+      courseSlug: a.courseSlug,
+      lessonSlug: a.lessonSlug,
+      kind: a.kind as MediaKind,
+      url: a.url,
+      alt: a.alt,
+      caption: a.caption,
+      credit: a.credit,
+      rightsStatus: a.rightsStatus,
+      sourceUrl: a.sourceUrl,
+      status: a.status as MediaStatus,
+      reviewNote: a.reviewNote,
+      reviewedAt: a.reviewedAt ? a.reviewedAt.toISOString() : null,
+      createdAt: a.createdAt.toISOString(),
+      lessonTitle: lessonTitleFor(links, a.courseSlug, a.lessonSlug),
+      lessonHref: where.href,
+      lessonIsLinked: where.isLesson,
+      locationNote: where.note,
+      leadIn: around.before,
+      followOn: around.after,
+    };
+  });
 
   const counts = countByStatus(assets);
   const pendingCourses = coursesWithPendingMedia(assets);
@@ -61,6 +92,10 @@ export default async function AdminMediaPage() {
         Every image, video, audio file and document uploaded for a course, with what it looks or
         sounds like, who made it, and what rights we hold. Approve or reject each one before its
         course goes live.
+      </p>
+      <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        Each asset names the lesson it illustrates, links to it, and quotes the prose either side of
+        it, so you can see what the figure is being asked to carry before judging it.
       </p>
 
       <dl className="mt-4 grid grid-cols-3 gap-2 text-center">

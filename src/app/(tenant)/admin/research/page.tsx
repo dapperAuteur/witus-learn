@@ -8,7 +8,15 @@ import {
   groupedResearchChecks,
   type ResearchCheckStatus,
 } from "@/lib/research-checks";
+import {
+  buildLessonLinkIndex,
+  courseTitleFor,
+  lessonTitleFor,
+  reviewLocation,
+} from "@/lib/lesson-links";
+import { phraseAppearsIn } from "@/lib/lesson-excerpt";
 import { ResearchCheckForm } from "@/components/research-check-form";
+import { ReviewContext } from "@/components/review-context";
 
 export const metadata: Metadata = { title: "Source checks" };
 
@@ -39,6 +47,24 @@ export default async function ResearchChecksPage() {
   const groups = groupedResearchChecks();
 
   const all = groups.flatMap((g) => g.checks);
+
+  // Where each hedge actually is. A check carries a course and, when someone recorded it, a lesson
+  // (src/lib/research-checks.ts explains why that field is written by hand and never guessed). Both
+  // resolve through the scoped DAL, so a check filed against a course this school does not host
+  // renders its names without a link rather than pointing at another brand's lesson.
+  //
+  // `course` is a slug for most checks and a GROUP LABEL for the rest ("pricing: market anchors"),
+  // which is exactly the case the lookup must not paper over: a label matches no course, so those
+  // checks say the location was never recorded, which is true.
+  const links = buildLessonLinkIndex(await sdb.listLessonLocations(groups.map((g) => g.course)));
+
+  // The recorded sentence is verified against the live lesson rather than trusted. A check whose
+  // hedge has since been rewritten out of the course is stale, and knowing that is worth more than
+  // the quotation itself.
+  const bodies = await sdb.listLessonBodies(
+    all.flatMap((c) => (c.lesson ? [{ courseSlug: c.course, lessonSlug: c.lesson }] : [])),
+  );
+  const bodyByRef = new Map(bodies.map((b) => [`${b.courseSlug} ${b.lessonSlug}`, b.text]));
   const openCount = all.filter((c) => (answers.get(c.key)?.status ?? "open") === "open").length;
 
   return (
@@ -48,6 +74,10 @@ export default async function ResearchChecksPage() {
         Facts in the catalog that need a primary source, and that Claude could not get to: paywalled
         statutes, a call to a county clerk, a trade body&rsquo;s current standard. Answer one and it
         goes straight to Claude, who fixes the lesson and removes the check.
+      </p>
+      <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        Each check that is tied to a lesson quotes the hedging sentence and links to it, so you can
+        read it in context before deciding. A few are not tied to one sentence, and those say so.
       </p>
       <p className="mt-2 text-sm font-medium">
         {openCount} open of {all.length} total.
@@ -71,6 +101,19 @@ export default async function ResearchChecksPage() {
             {group.checks.map((check) => {
               const row = answers.get(check.key);
               const status = (row?.status ?? "open") as ResearchCheckStatus;
+              const where = reviewLocation(links, check.course, check.lesson ?? null);
+              const body = check.lesson
+                ? (bodyByRef.get(`${check.course} ${check.lesson}`) ?? null)
+                : null;
+              // Three states, and the difference matters. Present: quote it. Recorded but gone from
+              // the lesson: say so, because the check may be settling a question the course no
+              // longer asks. Never recorded: say that instead of implying there is no hedge.
+              const quoteIsLive = check.quote ? phraseAppearsIn(body, check.quote) : false;
+              const locationNote = check.lesson
+                ? check.quote && body && !quoteIsLive
+                  ? "The recorded sentence is no longer in this lesson. The course may have been rewritten since this check was filed."
+                  : where.note
+                : "No lesson was recorded for this check, so it is not tied to one sentence.";
               return (
                 <li
                   key={check.key}
@@ -125,6 +168,20 @@ export default async function ResearchChecksPage() {
                       </dd>
                     </div>
                   </dl>
+
+                  <ReviewContext
+                    courseLabel={courseTitleFor(links, check.course) ?? check.course}
+                    lessonLabel={
+                      lessonTitleFor(links, check.course, check.lesson ?? null) ??
+                      check.lesson ??
+                      null
+                    }
+                    href={where.href}
+                    isLesson={where.isLesson}
+                    note={locationNote}
+                    excerpt={quoteIsLive ? (check.quote ?? null) : null}
+                    excerptLabel="The sentence in the lesson"
+                  />
 
                   <ResearchCheckForm
                     checkKey={check.key}

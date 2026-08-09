@@ -27,6 +27,11 @@ import {
   type UpsertMediaAsset,
 } from "@/db/queries/media-assets";
 import { listTenantPrerequisiteEdges } from "@/db/queries/prerequisites";
+import {
+  listLessonBodies,
+  listLessonLocations,
+  type LessonBodyRef,
+} from "@/db/queries/lesson-locations";
 
 /**
  * The mandatory tenant-scoped data-access chokepoint.
@@ -147,6 +152,22 @@ export class ScopedDb {
   /** Record an approve/reject decision. Undefined when the id is not this tenant's. */
   setMediaAssetStatus(input: Omit<SetMediaAssetStatus, "tenantId">) {
     return setMediaAssetStatus({ tenantId: this.tenantId, ...input });
+  }
+
+  // ── Review context ("where in the course does this appear") ────────────────
+  // The review boards hold items that name a course slug and usually a lesson slug: a citation, a
+  // source check, an uploaded figure. These turn that into a link and a title the reviewer can
+  // read. Scoped like every other content read, so a slug this brand does not host resolves to
+  // nothing and the board shows the names without a link rather than pointing somewhere false.
+
+  /** Lessons of the named courses, for this tenant, with the username half of the pretty URL. */
+  listLessonLocations(courseSlugs: readonly string[]) {
+    return listLessonLocations(this.tenantId, courseSlugs);
+  }
+
+  /** Bodies of specific lessons, for this tenant, so a board can quote the prose around an item. */
+  listLessonBodies(refs: readonly LessonBodyRef[]) {
+    return listLessonBodies(this.tenantId, refs);
   }
 
   // ── Connection graph (/admin/graph, plans/57) ──────────────────────────────

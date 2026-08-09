@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { playableAudioSrc } from "@/lib/media";
+import { ReviewContext } from "@/components/review-context";
 import {
   MEDIA_KIND_LABEL,
   MEDIA_STATUS_LABEL,
@@ -39,6 +40,18 @@ export interface MediaAssetRow {
   reviewNote: string | null;
   reviewedAt: string | null;
   createdAt: string;
+  /** This school's title for the lesson, when it holds one. Resolved server-side, tenant-scoped. */
+  lessonTitle: string | null;
+  /** Where to read that lesson, or null. */
+  lessonHref: string | null;
+  /** True when lessonHref opens the lesson itself rather than the course landing page. */
+  lessonIsLinked: boolean;
+  /** Why the lesson could not be linked, when it could not. */
+  locationNote: string | null;
+  /** The lesson's paragraph immediately before the figure: the argument it stands in for. */
+  leadIn: string | null;
+  /** The lesson's paragraph immediately after it. */
+  followOn: string | null;
 }
 
 const statusClass: Record<MediaStatus, string> = {
@@ -157,12 +170,24 @@ function MediaCard({ row, onDecided }: { row: MediaAssetRow; onDecided: (next: M
         <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
           {MEDIA_KIND_LABEL[row.kind]}
         </span>
-        {row.lessonSlug ? (
-          <span className="text-xs text-neutral-500 dark:text-neutral-400">{row.lessonSlug}</span>
-        ) : null}
       </div>
 
       <Preview row={row} />
+
+      {/* The lesson the asset illustrates, and the prose around it. Whether a caption matches its
+          picture and whether a scan is legible enough to teach from are both questions about the
+          argument the figure carries, and that argument is in the paragraphs either side of it. */}
+      <ReviewContext
+        courseLabel={row.courseSlug}
+        lessonLabel={row.lessonTitle ?? row.lessonSlug}
+        href={row.lessonHref}
+        isLesson={row.lessonIsLinked}
+        note={row.locationNote}
+        excerpt={row.leadIn}
+        excerptLabel="What the lesson says just before it"
+        secondExcerpt={row.followOn}
+        secondExcerptLabel="And just after"
+      />
 
       <dl className="mt-3 space-y-2 text-sm">
         <div>

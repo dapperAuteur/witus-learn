@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { CITATION_STATUS_LABEL, type Citation, type CitationStatus } from "@/lib/citations";
+import { ReviewContext } from "@/components/review-context";
 
 // The citation verification list, shared by the owner board (/admin/citations) and the auditor board
 // (/audit/citations). Same component, different data: the server decides which courses a viewer may
@@ -14,6 +15,12 @@ import { CITATION_STATUS_LABEL, type Citation, type CitationStatus } from "@/lib
 export interface CitationRow extends Citation {
   status: CitationStatus;
   note: string | null;
+  /** Where to read the lesson this source is cited in, resolved server-side and tenant-scoped. */
+  lessonHref: string | null;
+  /** True when lessonHref opens the lesson itself rather than the course landing page. */
+  lessonIsLinked: boolean;
+  /** Why the lesson could not be linked, when it could not. */
+  locationNote: string | null;
 }
 
 const STATUSES: CitationStatus[] = ["unverified", "verified", "broken", "mismatch"];
@@ -64,7 +71,6 @@ function CitationItem({ row }: { row: CitationRow }) {
         <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${statusClass[status]}`}>
           {CITATION_STATUS_LABEL[status]}
         </span>
-        <span className="text-xs text-neutral-500 dark:text-neutral-400">{row.lessonTitle}</span>
       </div>
 
       <p className="mt-2 text-sm text-neutral-800 dark:text-neutral-200">{row.text}</p>
@@ -85,6 +91,19 @@ function CitationItem({ row }: { row: CitationRow }) {
           No link in this entry. Verify it against a library or publisher catalogue.
         </p>
       )}
+
+      {/* The lesson this source is cited in, and where possible the sentence that cites it. The
+          question on this board is whether the source says what the LESSON claims, and until this
+          card existed the lesson was the one thing the board never showed. */}
+      <ReviewContext
+        courseLabel={row.courseTitle}
+        lessonLabel={row.lessonTitle}
+        href={row.lessonHref}
+        isLesson={row.lessonIsLinked}
+        note={row.locationNote}
+        excerpt={row.excerpt ?? null}
+        excerptLabel="The sentence that cites it"
+      />
 
       <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
         <label htmlFor={`st-${row.key}`} className="sr-only">

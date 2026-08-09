@@ -44,6 +44,19 @@ export interface Citation {
   text: string;
   /** First URL or DOI found in the entry, when there is one. Most of the checking is clicking this. */
   url?: string;
+  /**
+   * The sentence in the lesson that carries this source's in-text citation, when one was found.
+   *
+   * This is the whole question the reviewer is being asked, in one line: the board asks whether the
+   * source "says what the lesson claims", and until now it showed the source and not the claim. It
+   * is computed at generation time by `pnpm gen:citations` (src/lib/lesson-excerpt.ts) and committed
+   * with the rest of the registry, so this module still reads no database at request time.
+   *
+   * ABSENT MEANS NOT FOUND, never "there is none". A course that cites in a style the matcher does
+   * not recognise gets no excerpt and the reviewer follows the lesson link instead. Showing a
+   * nearby-looking sentence would be worse than showing nothing: it reads as the lesson's own words.
+   */
+  excerpt?: string;
 }
 
 /**

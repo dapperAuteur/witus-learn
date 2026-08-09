@@ -4,6 +4,7 @@ import { requireUserPage, isPlatformOwner } from "@/lib/session";
 import { listAuditedCourseSlugs } from "@/db/queries/course-auditors";
 import { citationChecksByKey } from "@/db/queries/citation-checks";
 import { citationsByCourse, type CitationStatus } from "@/lib/citations";
+import { buildLessonLinkIndex, reviewLocation } from "@/lib/lesson-links";
 import { CitationList, type CitationRow } from "@/components/citation-list";
 
 export const metadata: Metadata = { title: "Verify citations" };
@@ -38,6 +39,14 @@ export default async function AuditCitationsPage() {
   const groups = citationsByCourse(owner ? undefined : audited);
   const checks = await citationChecksByKey(sdb.tenantId);
 
+  // Lesson links for exactly the courses already on screen, and no others. `groups` is the whole
+  // authorisation decision (the auditor's own grants, or everything for the owner), so deriving the
+  // slug list from it cannot widen the grant: an auditor asks for locations only in the one course
+  // they were invited to read. The lookup is tenant-scoped as well, so neither can the tenant.
+  const links = buildLessonLinkIndex(
+    await sdb.listLessonLocations(groups.map((g) => g.courseSlug)),
+  );
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="text-2xl font-semibold tracking-tight">Verify citations</h1>
@@ -45,6 +54,10 @@ export default async function AuditCitationsPage() {
         Thank you for checking these. For each source: does it exist, does the link still work, and
         does it actually say what the lesson claims it says? The last one is the one that matters most
         and the one an automated link checker can never catch.
+      </p>
+      <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        Each source says which lesson it comes from and links straight to it, and where we could find
+        the sentence that cites it, that sentence is quoted underneath. Read it before you decide.
       </p>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Say what you found before marking anything. A citation marked verified with nothing written
@@ -60,10 +73,14 @@ export default async function AuditCitationsPage() {
         groups.map((g) => {
           const rows: CitationRow[] = g.citations.map((c) => {
             const row = checks.get(c.key);
+            const where = reviewLocation(links, c.courseSlug, c.lessonSlug);
             return {
               ...c,
               status: (row?.status ?? "unverified") as CitationStatus,
               note: row?.note ?? null,
+              lessonHref: where.href,
+              lessonIsLinked: where.isLesson,
+              locationNote: where.note,
             };
           });
           return (
