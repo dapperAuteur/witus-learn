@@ -1357,10 +1357,10 @@ When someone shows you a timeline of discovery, ask what the second track would 
           {
             prompt: "Which statement about the frame and the economic interest does the course endorse?",
             options: [
-              "The frame did not create the interest, but the interest was far easier to defend publicly with it",
-              "The frame caused the interest, which would not otherwise have arisen",
-              "The interest and the frame developed with no connection between them",
-              "The frame was invented after the interest, to explain it retrospectively",
+              "The frame did not create the interest, but made it far easier to defend publicly",
+              "The frame caused the interest, which no European economy would otherwise have formed",
+              "The interest and the frame developed independently, with no traceable link between them",
+              "The frame was invented afterwards, purely to explain an interest that already existed",
             ],
             correctIndex: 0,
             explanation:
@@ -1384,9 +1384,9 @@ When someone shows you a timeline of discovery, ask what the second track would 
             prompt: "What did Swift's 1733 couplet describe geographers doing?",
             options: [
               "Filling the gaps in African maps with animals and savage pictures",
-              "Copying Ptolemy's coordinates without checking them",
-              "Selling the same map under several different titles",
-              "Refusing to draw any region they had not visited",
+              "Copying Ptolemy's stale coordinates onto new plates without checking them",
+              "Selling one engraving under several titles in different national markets",
+              "Refusing to draw any region a named surveyor had not personally visited",
             ],
             correctIndex: 0,
             explanation:
@@ -1409,10 +1409,10 @@ When someone shows you a timeline of discovery, ask what the second track would 
           {
             prompt: "Which of these is a reason a map interior got emptier that is NOT simply ignorance?",
             options: [
-              "The map's purpose shifted toward serving states and companies with claims to press",
-              "Engraving techniques could no longer render inland detail",
-              "Paper shortages forced mapmakers to reduce the number of labels",
-              "Guild rules prohibited depicting territory outside Europe",
+              "The map's purpose shifted toward states and companies with claims to press",
+              "Engraving techniques of the period could no longer render fine inland detail",
+              "Paper shortages forced mapmakers to cut the number of labels they printed",
+              "Guild rules prohibited depicting any territory outside of Europe itself",
             ],
             correctIndex: 0,
             explanation:
@@ -1422,10 +1422,10 @@ When someone shows you a timeline of discovery, ask what the second track would 
           {
             prompt: "What did J. B. Harley mean by the silences of a map?",
             options: [
-              "That absences are deliberate and readable, and a silence is itself a statement",
-              "That mapmakers were forbidden from labelling contested borders",
-              "That printed maps omitted the sounds of place names",
-              "That surveyors withheld their measurements from publication",
+              "That absences are deliberate and readable, so a silence is a statement",
+              "That mapmakers were legally forbidden from labelling any contested border",
+              "That printed maps omitted the local pronunciation of the place names",
+              "That surveyors withheld their measurements from rival publishing houses",
             ],
             correctIndex: 0,
             explanation: "A silence is not the lack of a statement. It is a statement.",
@@ -1447,10 +1447,10 @@ When someone shows you a timeline of discovery, ask what the second track would 
           {
             prompt: "Which error does lesson 14 exist to correct?",
             options: [
-              "Treating the survival of a document as evidence about the existence of knowledge",
-              "Assuming that all navigation requires instruments",
-              "Believing that only coastal peoples produced maps",
-              "Supposing that oral traditions cannot encode direction",
+              "Treating a document's survival as evidence about the existence of knowledge",
+              "Assuming that all long-distance navigation requires manufactured instruments",
+              "Believing that only peoples living on a coastline ever produced maps",
+              "Supposing that an oral tradition cannot encode direction or distance",
             ],
             correctIndex: 0,
             explanation:
@@ -1460,10 +1460,10 @@ When someone shows you a timeline of discovery, ask what the second track would 
           {
             prompt: "What question should you ask when told what people in the past knew?",
             options: [
-              "Knew, or wrote down in a form that survived in a searched archive",
-              "Knew, or merely suspected without proof",
-              "Knew, or were taught by a recognised authority",
-              "Knew, or agreed on among themselves",
+              "Knew, or wrote down in a form that survived in an archive",
+              "Knew, or merely suspected without any supporting proof at all",
+              "Knew, or were taught it by an authority they already recognised",
+              "Knew, or simply agreed on among themselves without checking",
             ],
             correctIndex: 0,
             explanation:
