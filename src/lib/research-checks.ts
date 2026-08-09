@@ -32,6 +32,28 @@ export interface ResearchCheck {
   key: string;
   /** Course slug this affects, or a group label when it spans several. */
   course: string;
+  /**
+   * Slug of the lesson the hedge is actually in, when it is known. OPTIONAL, and unset means
+   * "nobody recorded it", which /admin/research says in those words.
+   *
+   * WHY IT IS FILLED IN BY HAND. A reviewer is being asked to settle a hedge and cannot read the
+   * sentence that hedges, so the board needs to link to the lesson. A check only carries a course,
+   * so the lesson has to come from somewhere, and keyword-matching one and printing it as fact is
+   * the worst option available: a wrong location sends the reviewer to the wrong page and they have
+   * no reason to doubt it. `pnpm locate:research-checks` reports which lessons contain a check's
+   * quoted phrases and statute numbers, WITH the matching sentence, and a human writes this field
+   * after reading that evidence. Some checks span a whole course, or name a course that does not
+   * exist yet, and those legitimately stay unset forever.
+   */
+  lesson?: string;
+  /**
+   * The verbatim hedging sentence from the lesson, when one was recorded.
+   *
+   * The board verifies it against the live lesson before showing it, and says plainly when it no
+   * longer appears: a check whose sentence has been rewritten out of the course is stale, and that
+   * is worth knowing before spending an afternoon on a phone call to settle it.
+   */
+  quote?: string;
   /** Short label for the list. */
   title: string;
   /** How urgent, in terms of what is at stake if the current text is wrong. */
@@ -53,6 +75,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "ga-pay-direct-rule",
     course: "surplus-funds-basics",
+    lesson: "surplus-georgia",
+    quote:
+      'Located funds must be paid directly to the owner and may not be paid to the finder, "whether pursuant to a duly executed power of attorney or otherwise"',
     title: "Georgia: must recovered funds be paid directly to the owner?",
     severity: "high",
     question:
@@ -75,6 +100,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "ga-county-held-finder-rules",
     course: "surplus-funds-basics",
+    lesson: "surplus-georgia",
+    quote:
+      "Whether Georgia regulates finders for county-held excess funds, as distinct from state-held unclaimed property, is not established here.",
     title: "Georgia: are finders regulated for COUNTY-held excess funds?",
     severity: "high",
     question:
@@ -97,6 +125,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "fl-197582-tax-deed-clock",
     course: "surplus-funds-basics",
+    lesson: "surplus-florida",
+    quote:
+      "Reported requirements, and this one has not been read against the primary text yet, so verify before relying on it: claimants have 120 days from the date of the notice to file with the clerk, and claims other than the property owner's that miss the 120th day are barred.",
     title: "Florida: the 120-day tax deed surplus clock",
     severity: "medium",
     question:
@@ -118,6 +149,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "tx-attorney-referral-fees",
     course: "surplus-funds-basics",
+    lesson: "surplus-texas",
+    quote:
+      "Note that attorneys generally may not split fees with non-lawyers under the rules of professional conduct, so a referral-fee arrangement needs its own check with a Texas lawyer.",
     title: "Texas: can a non-attorney take a referral fee from an attorney?",
     severity: "medium",
     question:
@@ -141,6 +175,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "rioja-ageing-ladder",
     course: "bvc-taster-wine",
+    lesson: "somm-reading-old-world-labels",
+    quote:
+      "For red Rioja the ladder runs roughly two, three and five years total, with one, one and two of those in oak, and the exact requirements are set and periodically revised by the Consejo Regulador",
     title: "Rioja: current minimum ageing for Crianza, Reserva, Gran Reserva",
     severity: "medium",
     question:
@@ -159,6 +196,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "sca-extraction-window",
     course: "bvc-taster-coffee",
+    lesson: "coffee-extraction",
+    quote:
+      "The Specialty Coffee Association's brewing control work puts a widely used target range at roughly 18 to 22 percent extraction yield, with strength around 1.15 to 1.35 percent dissolved solids for filter coffee.",
     title: "SCA: is the 18-22% extraction and 1.15-1.35% strength window current?",
     severity: "medium",
     question:
@@ -177,6 +217,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "norc-child-labour-figure",
     course: "bvc-taster-chocolate",
+    lesson: "choc-ethics",
+    quote:
+      "estimated approximately 1.56 million children in child labour in cocoa production in those two countries in the 2018/19 season, with a large majority engaged in hazardous work as defined by the survey",
     title: "Chocolate: the 1.56 million child labour figure and its survey years",
     severity: "high",
     question:
@@ -220,6 +263,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "trump-v-barbara-status",
     course: "citizenship-naturalization",
+    lesson: "birthright-citizenship",
+    quote:
+      "the Supreme Court struck down a 2025 executive order that had sought to limit birthright citizenship",
     title: "Trump v. Barbara: current status and whether the lesson still holds",
     severity: "high",
     question:
@@ -382,6 +428,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "wtw-nasa-alh84001-release-title",
     course: "writing-the-world",
+    lesson: "press-release-institutional-voice",
+    quote:
+      "On 7 August 1996, more than a week before the paper appeared in print, NASA held a press conference at its Washington headquarters to announce the ALH84001 findings.",
     title: "Exact title of the 1996 NASA ALH84001 press release",
     severity: "medium",
     question:
@@ -404,6 +453,8 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "wtw-orwell-horizon-citation",
     course: "writing-the-world",
+    lesson: "the-missing-actor",
+    quote: "Orwell, G. (1946). Politics and the English language. Horizon, 13(76), 252-265.",
     title: "Volume, issue and page range for Orwell's Politics and the English Language",
     severity: "low",
     question:
@@ -424,6 +475,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "wfgr-tharp-dismissal-quotation",
     course: "wrong-for-good-reasons",
+    lesson: "who-gets-believed",
+    quote:
+      "Working that way she identified the mid-ocean rift valley and argued it was continuous, and by her own account the finding was initially waved off.",
     title: "What Marie Tharp was actually told when she first mapped the rift valley",
     severity: "medium",
     question:
@@ -445,6 +499,9 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
   {
     key: "wfgr-letronne-1834-citation",
     course: "wrong-for-good-reasons",
+    lesson: "irving-1828",
+    quote:
+      "In 1834, the French scholar Antoine-Jean Letronne published an influential essay arguing that the Church Fathers had held a flat earth.",
     title: "Full citation for Letronne's 1834 essay on medieval cosmography",
     severity: "low",
     question:

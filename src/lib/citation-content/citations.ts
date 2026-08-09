@@ -39,6 +39,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "3 · Your palate is trainable, and the bottleneck is language",
     text: "Bartoshuk, L. M. (2000). Comparing sensory experiences across individuals: Recent psychophysical advances illuminate genetic variation in taste perception. *Chemical Senses, 25*(4), 447-460. https://doi.org/10.1093/chemse/25.4.447",
     url: "https://doi.org/10.1093/chemse/25.4.447",
+    excerpt: "People genuinely differ, less than they think. There is real variation in sensitivity to certain bitter compounds, measured with the chemicals PROP and PTC: some people taste them intensely, some barely at all (Bartoshuk, 2000).",
   },
   {
     key: "bvc-taster-wine:c54f2a403c6e",
@@ -48,6 +49,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "3 · Your palate is trainable, and the bottleneck is language",
     text: "Buck, L., & Axel, R. (1991). A novel multigene family may encode odorant receptors: A molecular basis for odor recognition. *Cell, 65*(1), 175-187. https://doi.org/10.1016/0092-8674(91)90418-X",
     url: "https://doi.org/10.1016/0092-8674(91",
+    excerpt: "Odour perception runs on a large family of odorant receptor genes, discovered by Buck and Axel (1991), work that later took the Nobel Prize in Physiology or Medicine (Nobel Assembly, 2004).",
   },
   {
     key: "bvc-taster-wine:c9727b0c67ef",
@@ -64,6 +66,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "somm-your-palate-is-trainable",
     lessonTitle: "3 · Your palate is trainable, and the bottleneck is language",
     text: "Lawless, H. T., & Heymann, H. (2010). *Sensory evaluation of food: Principles and practices* (2nd ed.). Springer.",
+    excerpt: "Naming is the hard part, and it is learnable. Sensory science has known for decades that describing an odour is much harder than detecting or recognising it, and that trained panels improve mostly by fixing shared reference points to words (Lawless & Heymann, 2010).",
   },
   {
     key: "bvc-taster-wine:d3b4a3677797",
@@ -107,6 +110,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "11 · Why variety matters, and where it stops mattering",
     text: "Wood, C., Siebert, T. E., Parker, M., Capone, D. L., Elsey, G. M., Pollnitz, A. P., Eggers, M., Meier, M., Vossing, T., Widder, S., Krammer, G., Sefton, M. A., & Herderich, M. J. (2008). From wine to pepper: Rotundone, an obscure sesquiterpene, is a potent spicy aroma compound. *Journal of Agricultural and Food Chemistry, 56*(10), 3738-3744. https://doi.org/10.1021/jf800183k",
     url: "https://doi.org/10.1021/jf800183k",
+    excerpt: "Black pepper · Rotundone, identified as the pepper aroma in Shiraz by Wood et al. (2008) · Syrah, Gruner Veltliner, Mourvedre",
   },
   {
     key: "bvc-taster-wine:886f1da80a9d",
@@ -116,6 +120,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "12 · The white grapes worth knowing",
     text: "Bowers, J., Boursiquot, J.-M., This, P., Chu, K., Johansson, H., & Meredith, C. (1999). Historical genetics: The parentage of Chardonnay, Gamay, and other wine grapes of northeastern France. *Science, 285*(5433), 1562-1565. https://doi.org/10.1126/science.285.5433.1562",
     url: "https://doi.org/10.1126/science.285.5433.1562",
+    excerpt: "The DNA work identifies it as a cross of Pinot and Gouais Blanc (Bowers et al., 1999), which is a useful reminder that most famous grapes are the children of unfamous ones.",
   },
   {
     key: "bvc-taster-wine:444fce578da7",
@@ -125,6 +130,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "13 · The red grapes worth knowing",
     text: "Bowers, J. E., & Meredith, C. P. (1997). The parentage of a classic wine grape, Cabernet Sauvignon. *Nature Genetics, 16*(1), 84-87. https://doi.org/10.1038/ng0597-84",
     url: "https://doi.org/10.1038/ng0597-84",
+    excerpt: "Cabernet Sauvignon is a made grape, and recently. DNA analysis identified it as a natural cross of Cabernet Franc and Sauvignon Blanc (Bowers & Meredith, 1997), which explains the family resemblance in the green pyrazine note that runs through Sauvignon Blanc, Cabernet Franc and Cabernet Sauvignon alike.",
   },
   {
     key: "bvc-taster-wine:3da7c9a18069",
@@ -133,6 +139,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "somm-noble-reds",
     lessonTitle: "13 · The red grapes worth knowing",
     text: "Maletic, E., Pejic, I., Kontic, J. K., Piljac, J., Dangl, G. S., Vokurka, A., Lacombe, T., Mirosevic, N., & Meredith, C. P. (2004). Zinfandel, Dobricic, and Plavac Mali: The genetic relationships among three cultivars of the Dalmatian coast of Croatia. *American Journal of Enology and Viticulture, 55*(2), 174-180.",
+    excerpt: "Zinfandel and Primitivo are the same variety, tracked back to a Croatian grape by DNA work in the early 2000s (Maletic et al., 2004).",
   },
   {
     key: "bvc-taster-wine:ffc2864ac22b",
@@ -151,6 +158,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "17 · Terroir, stated honestly",
     text: "Maltman, A. (2013). Minerality in wine: A geological perspective. *Journal of Wine Research, 24*(3), 169-181. https://doi.org/10.1080/09571264.2013.793176",
     url: "https://doi.org/10.1080/09571264.2013.793176",
+    excerpt: "The geologist Alex Maltman has laid this out carefully for wine audiences (Maltman, 2013).",
   },
   {
     key: "bvc-taster-wine:cfd7e337c9ba",
@@ -194,6 +202,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "23 · Bubbles: the method is the flavour",
     text: "Comite Champagne. (n.d.). *The Champagne appellation and its rules*. https://www.champagne.fr",
     url: "https://www.champagne.fr",
+    excerpt: "Champagne's own appellation rules set minimum ageing periods, longer for vintage wines than for non-vintage, which is the legal expression of exactly that principle (Comite Champagne, n.d.).",
   },
   {
     key: "bvc-taster-wine:4e47ee237d7a",
@@ -264,6 +273,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "36 · What a price actually buys",
     text: "Goldstein, R., Almenberg, J., Dreber, A., Emerson, J. W., Herschkowitsch, A., & Katz, J. (2008). Do more expensive wines taste better? Evidence from a large sample of blind tastings. *Journal of Wine Economics, 3*(1), 1-9. https://doi.org/10.1017/S1931436100000523",
     url: "https://doi.org/10.1017/S1931436100000523",
+    excerpt: "The uncomfortable evidence. In a large study of blind tastings, Goldstein and colleagues (2008) found that people without wine training enjoyed more expensive wines slightly LESS on average, while those with training showed a small positive relationship between price and enjoyment.",
   },
   {
     key: "bvc-taster-wine:121dd5501b89",
@@ -273,6 +283,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "42 · The seven faults worth recognising",
     text: "Sefton, M. A., & Simpson, R. F. (2005). Compounds causing cork taint and the factors affecting their transfer from natural cork closures to wine: A review. *Australian Journal of Grape and Wine Research, 11*(2), 226-240. https://doi.org/10.1111/j.1755-0238.2005.tb00290.x",
     url: "https://doi.org/10.1111/j.1755-0238.2005.tb00290.x",
+    excerpt: "The compound is 2,4,6-trichloroanisole, and many people detect it at concentrations of only a few nanograms per litre, which is parts per trillion (Sefton & Simpson, 2005).",
   },
   {
     key: "bvc-taster-coffee:ae822d9dcecd",
@@ -308,6 +319,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "3 · Your palate is trainable, and the bottleneck is language",
     text: "Buck, L., & Axel, R. (1991). A novel multigene family may encode odorant receptors: A molecular basis for odor recognition. *Cell, 65*(1), 175-187. https://doi.org/10.1016/0092-8674(91)90418-X",
     url: "https://doi.org/10.1016/0092-8674(91",
+    excerpt: "That route is retronasal olfaction, and it runs on a large family of odorant receptor genes described by Buck and Axel (1991), work that later took the Nobel Prize in Physiology or Medicine (Nobel Assembly, 2004).",
   },
   {
     key: "bvc-taster-coffee:b4e4f3b668c5",
@@ -316,6 +328,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "coffee-your-palate-is-trainable",
     lessonTitle: "3 · Your palate is trainable, and the bottleneck is language",
     text: "Lawless, H. T., & Heymann, H. (2010). *Sensory evaluation of food: Principles and practices* (2nd ed.). Springer.",
+    excerpt: "Naming is the hard part, and it is learnable. Describing an odour is much harder than detecting or recognising one, and trained panels improve mostly by fixing shared reference points to words (Lawless & Heymann, 2010).",
   },
   {
     key: "bvc-taster-coffee:d3b4a3677797",
@@ -352,6 +365,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "9 · Two species, and the varieties worth knowing",
     text: "Scalabrin, S., Toniutti, L., Di Gaspero, G., Scaglione, D., Magris, G., Vidotto, M., Pinosio, S., Cattonaro, F., Magni, F., Jurman, I., Cerutti, M., Liverani, F. S., Navarini, L., Del Terra, L., Pellegrino, G., Ruosi, M. R., Vitulo, N., Valle, G., Pallavicini, A., … Morgante, M. (2020). A single polyploidization event at the origin of the tetraploid genome of Coffea arabica is responsible for the extremely low genetic variation in wild and cultivated germplasm. *Scientific Reports, 10*, 4642. https://doi.org/10.1038/s41598-020-61216-7",
     url: "https://doi.org/10.1038/s41598-020-61216-7",
+    excerpt: "That origin left it with strikingly little genetic diversity, which is the underlying reason the species is so vulnerable to disease and to a warming climate (Scalabrin et al., 2020).",
   },
   {
     key: "bvc-taster-coffee:901aa8dd0878",
@@ -370,6 +384,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "10 · Altitude, climate, and what place does to a cup",
     text: "Bunn, C., Läderach, P., Ovalle Rivera, O., & Kirschke, D. (2015). A bitter cup: Climate change profile of global production of Arabica and Robusta coffee. *Climatic Change, 129*(1-2), 89-101. https://doi.org/10.1007/s10584-014-1306-x",
     url: "https://doi.org/10.1007/s10584-014-1306-x",
+    excerpt: "Modelling of the major producing regions projects substantial reductions in suitable area under continued warming (Bunn et al., 2015).",
   },
   {
     key: "bvc-taster-coffee:44fd964a8447",
@@ -440,6 +455,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "2 · Texture is data, and melt is the whole trick",
     text: "Buck, L., & Axel, R. (1991). A novel multigene family may encode odorant receptors: A molecular basis for odor recognition. *Cell, 65*(1), 175-187. https://doi.org/10.1016/0092-8674(91)90418-X",
     url: "https://doi.org/10.1016/0092-8674(91",
+    excerpt: "The physiology is the same as the rest of this series: the tongue reports a short list of tastes, and everything else you call flavour is odour arriving through the back of the throat as you swallow, on the retronasal route that runs on the odorant receptor gene family described by Buck and Axel (1991).",
   },
   {
     key: "bvc-taster-chocolate:b4e4f3b668c5",
@@ -457,6 +473,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "6 · Cacao genetics, and the framework almost every book still gets wrong",
     text: "Motamayor, J. C., Lachenaud, P., da Silva e Mota, J. W., Loor, R., Kuhn, D. N., Brown, J. S., & Schnell, R. J. (2008). Geographic and genetic population differentiation of the Amazonian chocolate tree (Theobroma cacao L.). *PLoS ONE, 3*(10), e3311. https://doi.org/10.1371/journal.pone.0003311",
     url: "https://doi.org/10.1371/journal.pone.0003311",
+    excerpt: "What the genetics actually show. A large sampling study resolved Theobroma cacao into ten genetic clusters, named for the regions and rivers where they were sampled: Maranon, Curaray, Criollo, Iquitos, Nanay, Contamana, Amelonado, Purus, Nacional and Guiana (Motamayor et al., 2008).",
   },
   {
     key: "bvc-taster-chocolate:9ec876f499f1",
@@ -475,6 +492,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "10 · Tempering, snap, gloss, and what bloom really is",
     text: "Wille, R. L., & Lutton, E. S. (1966). Polymorphism of cocoa butter. *Journal of the American Oil Chemists' Society, 43*(8), 491-496. https://doi.org/10.1007/BF02641273",
     url: "https://doi.org/10.1007/BF02641273",
+    excerpt: "Cocoa butter can crystallise in more than one form. The classic crystallographic work identified six polymorphic forms, conventionally numbered I to VI, each with a different melting point and stability (Wille & Lutton, 1966).",
   },
   {
     key: "bvc-taster-chocolate:5ea0f17bd39c",
@@ -520,6 +538,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "5 · Who is on the other end of your letter",
     text: "Atuahene, B., & Berry, C. R. (2019). Taxed out: Illegal property tax assessments and the epidemic of tax foreclosures in Detroit. *UC Irvine Law Review, 9*(4), 847-886. https://scholarship.law.uci.edu/ucilr/vol9/iss4/3/",
     url: "https://scholarship.law.uci.edu/ucilr/vol9/iss4/3/",
+    excerpt: "The Detroit evidence. Atuahene and Berry (2019) examined Detroit's property tax foreclosure crisis and found that more than 100,000 properties, roughly one in four in the city, were tax-foreclosed from 2011.",
   },
   {
     key: "surplus-funds-basics:66cbab8b7cf0",
@@ -637,6 +656,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "1 · Roles: system, developer, and user prompts",
     text: "OpenAI. (2025). *Prompting* (API documentation): message roles and the instruction hierarchy (platform / developer / user). https://platform.openai.com/docs/guides/prompting",
     url: "https://platform.openai.com/docs/guides/prompting",
+    excerpt: "OpenAI's newer models formalize this as a distinct role that sits below platform/system but above the user, giving you a place for app logic that user text shouldn't override (OpenAI, 2025).",
   },
   {
     key: "ai-b1-prompt-engineering:022235947c44",
@@ -646,6 +666,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "1 · Roles: system, developer, and user prompts",
     text: "Anthropic. (n.d.). *Prompt engineering overview*: system prompts and role prompting. https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
     url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+    excerpt: "Put policy, role, and output contract in system/developer, never in the user message where untrusted content can sit next to it. - Keep the system message stable and versioned (later lesson); keep per-request, per-user data in the user message. - Anthropic's guidance is the same in different words: give Claude a role…",
   },
   {
     key: "ai-b1-prompt-engineering:14d04a921d01",
@@ -655,6 +676,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "2 · Structured output: JSON, schemas, and tool/function calling",
     text: "OpenAI. (2025). *Structured Outputs* and *Function calling* (API documentation): `strict: true`, JSON Schema adherence, tool-call arguments. https://platform.openai.com/docs/guides/structured-outputs",
     url: "https://platform.openai.com/docs/guides/structured-outputs",
+    excerpt: "OpenAI's Structured Outputs guarantees schema adherence when strict: true (OpenAI, 2025), a step beyond plain \"JSON mode,\" which only guarantees valid JSON, not your shape. - Tool / function calling. You describe functions (name, description, JSON-Schema parameters); the model returns a structured call (a function…",
   },
   {
     key: "ai-b1-prompt-engineering:aad97c1ef6e2",
@@ -664,6 +686,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "2 · Structured output: JSON, schemas, and tool/function calling",
     text: "Anthropic. (n.d.). *Tool use with Claude*: tool schemas, `tool_use` blocks, and strict tool use. https://docs.anthropic.com/en/docs/build-with-claude/tool-use/overview",
     url: "https://docs.anthropic.com/en/docs/build-with-claude/tool-use/overview",
+    excerpt: "Both OpenAI and Anthropic support this, and both let you require schema-conforming arguments (OpenAI, 2025; Anthropic, n.d.).",
   },
   {
     key: "ai-b1-prompt-engineering:ad16774be2d6",
@@ -673,6 +696,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "3 · Few-shot prompting and example selection",
     text: "OpenAI. (2025). *Prompting* (API documentation): giving examples (few-shot) and writing clear instructions. https://platform.openai.com/docs/guides/prompting",
     url: "https://platform.openai.com/docs/guides/prompting",
+    excerpt: "Both providers rank \"give examples\" among the highest-leverage techniques (OpenAI, 2025; Anthropic, n.d.).",
   },
   {
     key: "ai-b1-prompt-engineering:fa15aef79207",
@@ -682,6 +706,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "3 · Few-shot prompting and example selection",
     text: "Anthropic. (n.d.). *Prompt engineering overview*: multishot (examples) prompting and using XML tags to structure examples. https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
     url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+    excerpt: "Both providers rank \"give examples\" among the highest-leverage techniques (OpenAI, 2025; Anthropic, n.d.).",
   },
   {
     key: "ai-b1-prompt-engineering:983503c67ab8",
@@ -691,6 +716,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "4 · Chain-of-thought and self-consistency",
     text: "Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., … Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. *arXiv:2201.11903*. https://arxiv.org/abs/2201.11903",
     url: "https://arxiv.org/abs/2201.11903",
+    excerpt: "Chain-of-thought (CoT) prompting asks the model to produce intermediate reasoning steps before its final answer. Wei et al. (2022) showed this substantially improves performance on arithmetic, commonsense, and symbolic reasoning: the reasoning becomes an explicit part of the output the model can build on, rather than…",
   },
   {
     key: "ai-b1-prompt-engineering:9d5b0f1ced56",
@@ -700,6 +726,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "4 · Chain-of-thought and self-consistency",
     text: "Wang, X., Wei, J., Schuurmans, D., Le, Q., Chi, E., Narang, S., … Zhou, D. (2023). Self-consistency improves chain of thought reasoning in language models. *arXiv:2203.11171* (ICLR 2023). https://arxiv.org/abs/2203.11171",
     url: "https://arxiv.org/abs/2203.11171",
+    excerpt: "(2022/2023) showed this markedly improves CoT accuracy: correct reasoning tends to converge on the same answer through different paths, while errors scatter (Wang et al., 2023).",
   },
   {
     key: "ai-b1-prompt-engineering:7acbd65452ce",
@@ -709,6 +736,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "5 · ReAct: interleaving reasoning and acting",
     text: "Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023). ReAct: Synergizing reasoning and acting in language models. *arXiv:2210.03629* (ICLR 2023). https://arxiv.org/abs/2210.03629",
     url: "https://arxiv.org/abs/2210.03629",
+    excerpt: "It can't look anything up, so it can confidently reason from wrong premises. ReAct (Yao et al., 2022/2023) interleaves reasoning with acting: the model alternates thought (\"I need the order status\") → action (call a tool / search) → observation (the tool's result) → next thought, looping until it can answer (Yao et…",
   },
   {
     key: "ai-b1-prompt-engineering:2867eb7fbd17",
@@ -718,6 +746,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "5 · ReAct: interleaving reasoning and acting",
     text: "OWASP. (2025). *Top 10 for LLM Applications 2025*, LLM06: Excessive Agency (least privilege for tools). https://genai.owasp.org/llm-top-10/",
     url: "https://genai.owasp.org/llm-top-10/",
+    excerpt: "This is OWASP's Excessive Agency (LLM06) and the injection defense (LLM01), both ahead (OWASP, 2025). - Observations are untrusted input. A tool result (a web page, a database row, another model's output) can contain injected instructions.",
   },
   {
     key: "ai-b1-prompt-engineering:ce55057efdd2",
@@ -727,6 +756,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "6 · Decomposition and prompt chaining",
     text: "Anthropic. (n.d.). *Prompt engineering overview*: chain complex prompts; and *Building Effective Agents*: workflows over agents when steps are knowable. https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
     url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+    excerpt: "Both providers recommend it for complex work: a chain of simple, checkable steps beats one prompt doing everything (Anthropic, n.d.; OpenAI, 2025).",
   },
   {
     key: "ai-b1-prompt-engineering:1480bf1a4871",
@@ -736,6 +766,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "6 · Decomposition and prompt chaining",
     text: "OpenAI. (2025). *Prompting* (API documentation): splitting complex tasks into simpler subtasks. https://platform.openai.com/docs/guides/prompting",
     url: "https://platform.openai.com/docs/guides/prompting",
+    excerpt: "Both providers recommend it for complex work: a chain of simple, checkable steps beats one prompt doing everything (Anthropic, n.d.; OpenAI, 2025).",
   },
   {
     key: "ai-b1-prompt-engineering:95a67ca39ca9",
@@ -745,6 +776,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "7 · Controlling determinism: temperature, top-p, and seeds",
     text: "OpenAI. (2025). *Prompting* / API reference: `temperature`, `top_p`, and reproducibility (`seed`) parameters. https://platform.openai.com/docs/guides/prompting",
     url: "https://platform.openai.com/docs/guides/prompting",
+    excerpt: "Both providers expose it and advise low temperature for deterministic tasks (OpenAI, 2025; Anthropic, n.d.). - Top-p (nucleus sampling) caps sampling to the smallest set of tokens whose probabilities sum to p.",
   },
   {
     key: "ai-b1-prompt-engineering:24f6351e3d36",
@@ -754,6 +786,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "7 · Controlling determinism: temperature, top-p, and seeds",
     text: "Anthropic. (n.d.). *Prompt engineering overview*: sampling controls (temperature) for deterministic vs. creative tasks. https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
     url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+    excerpt: "Both providers expose it and advise low temperature for deterministic tasks (OpenAI, 2025; Anthropic, n.d.). - Top-p (nucleus sampling) caps sampling to the smallest set of tokens whose probabilities sum to p.",
   },
   {
     key: "ai-b1-prompt-engineering:c014999180cd",
@@ -763,6 +796,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "8 · Prompt injection and defense",
     text: "OWASP. (2025). *Top 10 for LLM Applications 2025*, LLM01: Prompt Injection; LLM05: Improper Output Handling; LLM06: Excessive Agency. https://genai.owasp.org/llm-top-10/",
     url: "https://genai.owasp.org/llm-top-10/",
+    excerpt: "Prompt injection is the #1 risk for LLM applications (OWASP LLM01, 2025).",
   },
   {
     key: "ai-b1-prompt-engineering:0cd2ee452ad3",
@@ -772,6 +806,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "8 · Prompt injection and defense",
     text: "OpenAI. (2025). *Prompting* (API documentation): instruction hierarchy and handling untrusted input. https://platform.openai.com/docs/guides/prompting",
     url: "https://platform.openai.com/docs/guides/prompting",
+    excerpt: "This raises the bar; it does not make injection impossible (OpenAI, 2025). - Delimit and label untrusted content. Wrap user input and retrieved documents in clear markers (Anthropic recommends XML-style tags) and tell the model explicitly: the content inside these tags is data to analyze, never instructions to follow…",
   },
   {
     key: "ai-b1-prompt-engineering:f16b2a85032c",
@@ -781,6 +816,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "9 · Evaluating prompts: test sets, regression, and LLM-as-judge",
     text: "Anthropic. (n.d.). *Prompt engineering overview*: define success criteria and build evaluations before tuning prompts. https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
     url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+    excerpt: "Anthropic puts evaluation before prompt-tuning for exactly this reason: define success criteria and build evals first (Anthropic, n.d.).",
   },
   {
     key: "ai-b1-prompt-engineering:de43c230fb62",
@@ -835,6 +871,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "1 · What AI really is (and isn't)",
     text: "Vaswani, A., et al. (2017). Attention is all you need. arXiv:1706.03762. https://arxiv.org/abs/1706.03762",
     url: "https://arxiv.org/abs/1706.03762",
+    excerpt: "Modern LLMs are built on the transformer architecture (Vaswani et al., 2017).",
   },
   {
     key: "ai-literacy:d514fbd24633",
@@ -871,6 +908,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "5 · Spotting deepfakes and synthetic media",
     text: "CISA, NSA, FBI. (2023). Contextualizing Deepfake Threats to Organizations. https://www.cisa.gov/resources-tools/resources/contextualizing-deepfake-threats-organizations",
     url: "https://www.cisa.gov/resources-tools/resources/contextualizing-deepfake-threats-organizations",
+    excerpt: "Government agencies now warn that synthetic media is a real threat for fraud and disinformation (CISA et al., 2023).",
   },
   {
     key: "ai-literacy:9ff611b71c12",
@@ -898,6 +936,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Coffee, and Why a Cup Is a Classroom",
     text: "International Coffee Organization. (2023). Coffee market report. https://www.ico.org",
     url: "https://www.ico.org",
+    excerpt: "The cup next to you connects you to about 25 million farming families across roughly 70 countries, and to a global industry worth about 245 billion dollars (International Coffee Organization, 2023).",
   },
   {
     key: "coffee:174558f0154a",
@@ -907,6 +946,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "The Coffee Belt: Where Coffee Grows and Why",
     text: "Davis, A. P., Gole, T. W., Baena, S., & Moat, J. (2012). The impact of climate change on indigenous Arabica coffee (Coffea arabica). PLOS ONE, 7(11), e47981. https://doi.org/10.1371/journal.pone.0047981",
     url: "https://doi.org/10.1371/journal.pone.0047981",
+    excerpt: "Arabica is the species in about 70 percent of the coffee people drink (Davis et al., 2012).",
   },
   {
     key: "coffee:5a71f3196d12",
@@ -916,6 +956,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "The Coffee Belt: Where Coffee Grows and Why",
     text: "International Coffee Organization. (2024). Coffee market report 2024. https://www.ico.org",
     url: "https://www.ico.org",
+    excerpt: "Almost all of the world's coffee comes from a single band wrapped around the middle of the Earth (International Coffee Organization, 2024).",
   },
   {
     key: "coffee:150f7f46d5a7",
@@ -925,6 +966,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "The Big Producers and Their Terroir",
     text: "Federación Nacional de Cafeteros de Colombia. (2023). Colombian coffee production report 2023. https://federaciondecafeteros.org",
     url: "https://federaciondecafeteros.org",
+    excerpt: "Colombia grows 100 percent Arabica, no Robusta at all (Federación Nacional de Cafeteros de Colombia, 2023).",
   },
   {
     key: "coffee:115cdc576b80",
@@ -934,6 +976,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Climate Change Is Redrawing the Map",
     text: "Bunn, C., Läderach, P., Ovalle Rivera, O., & Kirschke, D. (2015). A bitter cup: Climate change profile of global production of Arabica and Robusta coffee. Climatic Change, 129(1-2), 89-101. https://doi.org/10.1007/s10584-014-1306-x",
     url: "https://doi.org/10.1007/s10584-014-1306-x",
+    excerpt: "By 2050, up to half of the land that grows coffee today could become unsuitable for it (Bunn et al., 2015).",
   },
   {
     key: "coffee:eb995faf67eb",
@@ -942,6 +985,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "l5-climate-change-is-redrawing-the-map",
     lessonTitle: "Climate Change Is Redrawing the Map",
     text: "Rabobank. (2024). World coffee map 2024: Climate challenges and price volatility. Rabobank Food and Agribusiness Research.",
+    excerpt: "In 2024, drought and frost in Brazil helped drive a roughly 70 percent jump in coffee prices in a single year (Rabobank, 2024).",
   },
   {
     key: "coffee:a2552cf5c3e4",
@@ -951,6 +995,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Climate Change Is Redrawing the Map",
     text: "World Bank. (2023). Climate change and coffee production: Economic impacts and adaptation strategies. https://climateknowledgeportal.worldbank.org",
     url: "https://climateknowledgeportal.worldbank.org",
+    excerpt: "Farmers are leading the response, often ahead of any policy (World Bank, 2023).",
   },
   {
     key: "coffee:a89c4e2f3ded",
@@ -959,6 +1004,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "l6-the-coffeehouse-revolution",
     lessonTitle: "The Coffeehouse Revolution",
     text: "Cowan, B. (2005). The social life of coffee: The emergence of the British coffeehouse. Yale University Press.",
+    excerpt: "For one penny, the price of a single cup, anyone could walk in, sit down, and join the debate, and the education was cheaper than any formal school (Cowan, 2005).",
   },
   {
     key: "coffee:b48045138863",
@@ -967,6 +1013,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "l6-the-coffeehouse-revolution",
     lessonTitle: "The Coffeehouse Revolution",
     text: "Hattox, R. S. (1985). Coffee and coffeehouses: The origins of a social beverage in the medieval Near East. University of Washington Press.",
+    excerpt: "The Oromo people of Ethiopia were the earliest documented users, and Sufi monks in Yemen took it up around the 1450s, using it to stay awake through long nights of prayer (Hattox, 1985).",
   },
   {
     key: "coffee:400c2b268586",
@@ -975,6 +1022,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "l6-the-coffeehouse-revolution",
     lessonTitle: "The Coffeehouse Revolution",
     text: "Pendergrast, M. (2010). Uncommon grounds: The history of coffee and how it transformed our world (Rev. ed.). Basic Books.",
+    excerpt: "The idea reached London in 1652, when the first London coffeehouse opened (Pendergrast, 2010).",
   },
   {
     key: "coffee:f048474eff2b",
@@ -983,6 +1031,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "l6-the-coffeehouse-revolution",
     lessonTitle: "The Coffeehouse Revolution",
     text: "Royal Proclamation for the Suppression of Coffee Houses. (1675). London Gazette. British Library Digital Collections.",
+    excerpt: "In 1675, King Charles II tried to ban London's coffeehouses, calling them places where, in his words, \"false, malicious, and scandalous reports are devised and spread abroad to the defamation of His Majesty's government\" (Royal Proclamation for the Suppression of Coffee Houses, 1675).",
   },
   {
     key: "coffee:e4cdd0c2f736",
@@ -991,6 +1040,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "l7-two-truths-democracy-and-colonial-labor",
     lessonTitle: "Two Truths: Democracy and Colonial Labor",
     text: "Topik, S., & Clarence-Smith, W. G. (Eds.). (2003). The global coffee economy in Africa, Asia, and Latin America, 1500-1989. Cambridge University Press.",
+    excerpt: "The Dutch set up forced cultivation in Java starting in 1696, under a system called the Cultuurstelsel that lasted into the 1870s, which required farmers to dedicate their land to export crops whether they wanted to or not (Topik & Clarence-Smith, 2003).",
   },
   {
     key: "coffee:9b290ee64a9c",
@@ -1009,6 +1059,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Follow the Money: Bean to Cup",
     text: "Fair Trade USA. (2023). Coffee impact report: Price premiums and farmer income. https://www.fairtradecertified.org",
     url: "https://www.fairtradecertified.org",
+    excerpt: "In that commodity system, the farmer, the person doing the hardest, most weather-exposed, most skilled work, captures only about 30 percent of what you pay (Fair Trade USA, 2023; Specialty Coffee Association, 2024).",
   },
   {
     key: "coffee:78ea5d535352",
@@ -1018,6 +1069,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Follow the Money: Bean to Cup",
     text: "Specialty Coffee Association. (2024). The specialty coffee almanac 2024: Market trends and pricing analysis. https://sca.coffee",
     url: "https://sca.coffee",
+    excerpt: "Coffee is the world's second most traded agricultural commodity (Specialty Coffee Association, 2024).",
   },
   {
     key: "coffee:8fde149be0d9",
@@ -1026,6 +1078,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "l10-price-shocks-and-why-you-keep-buying",
     lessonTitle: "Price Shocks and Why You Keep Buying",
     text: "American Independent Business Alliance. (2023). The local multiplier effect: How locally-owned businesses create more economic impact. AMIBA Research.",
+    excerpt: "Spend the same money at a chain, and only about 43 percent stays local (American Independent Business Alliance, 2023).",
   },
   {
     key: "coffee:51bf42a62202",
@@ -1034,6 +1087,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "l11-the-words-coffee-carries",
     lessonTitle: "The Words Coffee Carries",
     text: "Weinberg, B. A., & Bealer, B. K. (2001). The world of caffeine: The science and culture of the world's most popular drug. Routledge.",
+    excerpt: "The word traveled almost as far as the bean did, and it picked up a new shape in every language it passed through (Weinberg & Bealer, 2001).",
   },
   {
     key: "coffee:923ae445ba4d",
@@ -1042,6 +1096,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "l12-the-ethiopian-ceremony-as-story",
     lessonTitle: "The Ethiopian Ceremony as Story",
     text: "Pankhurst, R. (1997). The Ethiopian borderlands: Essays in regional history from ancient times to the end of the 18th century. Red Sea Press.",
+    excerpt: "Now picture a coffee ceremony in Ethiopia that is built the exact same way, on purpose, across three rounds of coffee (Pankhurst, 1997).",
   },
   {
     key: "coffee:5bf42b716dc9",
@@ -3901,6 +3956,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "1 · What the Green Book was, and who made it",
     text: "Green, V. H. (Ed.). (1956). *The Negro travelers' Green book: 1956*. Victor H. Green & Co. Schomburg Center for Research in Black Culture, The New York Public Library. https://digitalcollections.nypl.org/collections/the-green-book",
     url: "https://digitalcollections.nypl.org/collections/the-green-book",
+    excerpt: "He kept the mail job the entire time the guide was growing, and did not retire from the Post Office until 1952, after thirty-nine years of service (Green, 1956).",
   },
   {
     key: "green-book-how-to-read-a-route:3128d39859c2",
@@ -3910,6 +3966,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "1 · What the Green Book was, and who made it",
     text: "National Park Service. (n.d.-a). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm",
     url: "https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm",
+    excerpt: "He served in the Army in the First World War, returned to the postal route, and in 1936 published the first edition of the guide that carried his name (National Park Service, n.d.-b).",
   },
   {
     key: "green-book-how-to-read-a-route:cb37f67c0e8b",
@@ -3919,6 +3976,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "1 · What the Green Book was, and who made it",
     text: "National Park Service. (n.d.-b). *Green Book properties listed in the National Register of Historic Places*. https://www.nps.gov/articles/green-book-properties-listed-in-the-national-register-of-historic-places.htm",
     url: "https://www.nps.gov/articles/green-book-properties-listed-in-the-national-register-of-historic-places.htm",
+    excerpt: "He served in the Army in the First World War, returned to the postal route, and in 1936 published the first edition of the guide that carried his name (National Park Service, n.d.-b).",
   },
   {
     key: "green-book-how-to-read-a-route:b462ea8e5af6",
@@ -3937,6 +3995,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "2 · The book kept changing, and the changes are evidence",
     text: "New York Public Library. (n.d.). *Green Book research guide*. https://libguides.nypl.org/greenbook",
     url: "https://libguides.nypl.org/greenbook",
+    excerpt: "The first two editions leaned heavily on Harlem businesses (National Park Service, n.d.-a). - 1937. Demand was high enough that Green made it national (New York Public Library, n.d.). - 1942 to 1945. Wartime rationing forced a hiatus of about four years (National Park Service, n.d.-a). - 1946. It came back with a…",
   },
   {
     key: "green-book-how-to-read-a-route:10c20162f306",
@@ -3945,6 +4004,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "gbr-the-risk-of-the-road",
     lessonTitle: "4 · What 'we can't stop here' actually meant",
     text: "Loewen, J. W. (2005). *Sundown towns: A hidden dimension of American racism*. The New Press.",
+    excerpt: "He documented more than 440 in Illinois alone and thousands nationwide, and he found that they were far more common outside the South than most people assume (Loewen, 2005).",
   },
   {
     key: "green-book-how-to-read-a-route:fa6c5ee45343",
@@ -3970,6 +4030,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "7 · The anatomy of a listing",
     text: "Friends of the Latimore Tourist Home. (n.d.). *What is the Green Book?* https://www.latimoretouristhome.org/what-is-the-green-book",
     url: "https://www.latimoretouristhome.org/what-is-the-green-book",
+    excerpt: "Jackson's on Herman Street, no longer stands (Friends of the Latimore Tourist Home, n.d.).",
   },
   {
     key: "green-book-how-to-read-a-route:2f23dc25289a",
@@ -3979,6 +4040,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "7 · The anatomy of a listing",
     text: "National Park Service. (n.d.-c). *Latimore Tourist Home*. https://www.nps.gov/places/latimore-tourist-home.htm",
     url: "https://www.nps.gov/places/latimore-tourist-home.htm",
+    excerpt: "Now follow that one entry outward, because it shows you what the method can do. The Latimore Tourist Home in Russellville, Arkansas was run by Eugene Latimore and his wife Cora Wilson Latimore, took in railroad workers and travelers passing through, stayed in business into the 1970s, and was listed on the National…",
   },
   {
     key: "green-book-how-to-read-a-route:3eaeedaf5035",
@@ -3988,6 +4050,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "11 · Chaining listings into a route",
     text: "National Park Service. (n.d.-d). *Route 66 and the historic Negro Motorist Green Book*. https://www.nps.gov/articles/000/route-66-and-the-historic-negro-motorist-green-book.htm",
     url: "https://www.nps.gov/articles/000/route-66-and-the-historic-negro-motorist-green-book.htm",
+    excerpt: "A worked example: Chicago to Los Angeles on U.S. 66, using the 1940 edition. Route 66 ran from Chicago to Los Angeles across eight states, and it is the most heavily mythologised road in the country (National Park Service, n.d.-d).",
   },
   {
     key: "green-book-how-to-read-a-route:8dd02a9fc5d7",
@@ -4015,6 +4078,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "16 · Why so many of the places are gone",
     text: "National Archives. (n.d.). *National Interstate and Defense Highways Act (1956)*. https://www.archives.gov/milestone-documents/national-interstate-and-defense-highways-act",
     url: "https://www.archives.gov/milestone-documents/national-interstate-and-defense-highways-act",
+    excerpt: "Reason three: the roads moved. The Federal-Aid Highway Act of 1956, signed on June 29, 1956, authorised the National System of Interstate and Defense Highways, roughly 41,000 miles of new highway and the largest public works project in the country's history to that point (National Archives, n.d.).",
   },
   {
     key: "harvard-ed-l-d:3af95ed748a5",
@@ -4067,6 +4131,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "From a chain to a graph",
     text: "LangChain. (n.d.-a). *Why LangGraph?* LangChain. https://langchain-ai.github.io/langgraphjs/concepts/high_level/",
     url: "https://langchain-ai.github.io/langgraphjs/concepts/high_level/",
+    excerpt: "The LangGraph documentation makes the same point: reach for the simplest abstraction that fits, and a chain is simpler than a graph (LangChain, n.d.-a).",
   },
   {
     key: "langgraph-triage-agent:9b637d5348ae",
@@ -4076,6 +4141,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "From a chain to a graph",
     text: "LangChain. (n.d.-b). *Human-in-the-loop*. LangChain. https://langchain-ai.github.io/langgraphjs/concepts/human_in_the_loop/",
     url: "https://langchain-ai.github.io/langgraphjs/concepts/human_in_the_loop/",
+    excerpt: "The LangGraph documentation makes the same point: reach for the simplest abstraction that fits, and a chain is simpler than a graph (LangChain, n.d.-a).",
   },
   {
     key: "langgraph-triage-agent:0c50846653e6",
@@ -4085,6 +4151,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Designing agent state",
     text: "Anthropic. (n.d.). *Tool use with the Messages API*. Anthropic. https://docs.anthropic.com/en/docs/build-with-claude/tool-use",
     url: "https://docs.anthropic.com/en/docs/build-with-claude/tool-use",
+    excerpt: "The same schema object is handed to the model via .withStructuredOutput() and used to validate the model's reply at runtime (Anthropic, n.d.).",
   },
   {
     key: "langgraph-triage-agent:ef3a819cd62f",
@@ -4112,6 +4179,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Tools and the human-in-the-loop interrupt",
     text: "LangChain. (n.d.-a). *Tools*. LangChain. https://langchain-ai.github.io/langgraphjs/concepts/low_level/",
     url: "https://langchain-ai.github.io/langgraphjs/concepts/low_level/",
+    excerpt: "It documents the inputs, it validates them at the boundary, and if the tool is ever bound to a model for the model to call, it becomes the JSON schema the model sees (LangChain, n.d.-a).",
   },
   {
     key: "langgraph-triage-agent:a4f0bf352c8b",
@@ -4121,6 +4189,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Tools and the human-in-the-loop interrupt",
     text: "LangChain. (n.d.-b). *Persistence and checkpointers*. LangChain. https://langchain-ai.github.io/langgraphjs/concepts/persistence/",
     url: "https://langchain-ai.github.io/langgraphjs/concepts/persistence/",
+    excerpt: "It documents the inputs, it validates them at the boundary, and if the tool is ever bound to a model for the model to call, it becomes the JSON schema the model sees (LangChain, n.d.-a).",
   },
   {
     key: "langgraph-triage-agent:ba16bd368f2a",
@@ -4130,6 +4199,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Tools and the human-in-the-loop interrupt",
     text: "LangChain. (n.d.-c). *How to add human-in-the-loop with interrupt*. LangChain. https://langchain-ai.github.io/langgraphjs/how-tos/",
     url: "https://langchain-ai.github.io/langgraphjs/how-tos/",
+    excerpt: "It documents the inputs, it validates them at the boundary, and if the tool is ever bound to a model for the model to call, it becomes the JSON schema the model sees (LangChain, n.d.-a).",
   },
   {
     key: "langgraph-triage-agent:e8bc39d375fe",
@@ -4148,6 +4218,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Observability: reading a trace",
     text: "LangChain. (n.d.-a). *Observability quick start*. LangSmith. https://docs.smith.langchain.com/",
     url: "https://docs.smith.langchain.com/",
+    excerpt: "LangChain's tracing activates from three environment variables, LANGSMITH_TRACING, LANGSMITH_API_KEY, and LANGSMITH_PROJECT, which the SDK reads on its own (LangChain, n.d.-a).",
   },
   {
     key: "langgraph-triage-agent:94da12003aae",
@@ -4157,6 +4228,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Observability: reading a trace",
     text: "LangChain. (n.d.-b). *Trace with LangGraph*. LangSmith. https://docs.smith.langchain.com/observability/how_to_guides",
     url: "https://docs.smith.langchain.com/observability/how_to_guides",
+    excerpt: "LangChain's tracing activates from three environment variables, LANGSMITH_TRACING, LANGSMITH_API_KEY, and LANGSMITH_PROJECT, which the SDK reads on its own (LangChain, n.d.-a).",
   },
   {
     key: "langgraph-triage-agent:b1288e8ed321",
@@ -4184,6 +4256,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "The ten-line fix: the Postgres checkpointer",
     text: "LangChain. (n.d.). *PostgresSaver* [LangGraph checkpoint-postgres reference]. https://langchain-ai.github.io/langgraph/reference/checkpoints/",
     url: "https://langchain-ai.github.io/langgraph/reference/checkpoints/",
+    excerpt: "That's the point worth slowing down on: durability is a swap at compile time, not a rewrite of your agent. setup() is idempotent, so running it again on an existing database is safe; it creates the tables only if they're missing (LangChain, n.d.).",
   },
   {
     key: "langgraph-triage-agent:51dd89b6d6b1",
@@ -4285,6 +4358,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l1-your-body-s-dashboard-what-health-metrics-are",
     lessonTitle: "Your Body's Dashboard: What Health Metrics Are",
     text: "Daily steps increase from using a tracker or app, about eighteen hundred more steps a day: Laranjo, L., et al. (2020). Do smartphone applications and activity trackers increase physical activity in adults? Systematic review, meta-analysis and metaregression. British Journal of Sports Medicine, 55(8), 422 to 432.",
+    excerpt: "In a large review of the research, people who used a tracker or an app to watch a simple number, like their daily steps, walked about eighteen hundred more steps a day (Laranjo et al., 2020).",
   },
   {
     key: "read-your-bodys-data:1ca95c23ac31",
@@ -4293,6 +4367,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l2-accuracy-vs-precision",
     lessonTitle: "Accuracy vs Precision",
     text: "Fuller, D., et al. (2020). Reliability and validity of commercially available wearable devices for measuring steps, energy expenditure, and heart rate: Systematic review. JMIR mHealth and uHealth, 8(9), e18694.",
+    excerpt: "When researchers checked these devices, steps came out very accurate, under two percent error in good devices, heart rate landed in the moderate range, and calorie burn was way off, more than thirty percent error (Fuller et al., 2020).",
   },
   {
     key: "read-your-bodys-data:505737508763",
@@ -4301,6 +4376,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l2-accuracy-vs-precision",
     lessonTitle: "Accuracy vs Precision",
     text: "Quer, G., et al. (2020). Inter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: Retrospective, longitudinal cohort study of 92,457 adults. PLOS ONE, 15(2), e0227709.",
+    excerpt: "A study of more than ninety thousand adults showed exactly that (Quer et al., 2020).",
   },
   {
     key: "read-your-bodys-data:79f67a4cd236",
@@ -4309,6 +4385,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l3-core-metric-resting-heart-rate",
     lessonTitle: "Core Metric: Resting Heart Rate",
     text: "Quer, G., et al. (2020). Inter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: Retrospective, longitudinal cohort study of 92,457 adults. PLOS ONE, 15(2), e0227709. Study of 92,457 adults: about one in five experienced a week with resting heart rate swings of ten or more beats per minute; personal baselines differ substantially between people.",
+    excerpt: "In one study of more than ninety thousand adults, about one in five had a week where their resting heart rate swung by ten beats or more (Quer et al., 2020).",
   },
   {
     key: "read-your-bodys-data:43f78b2e840e",
@@ -4317,6 +4394,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l3-core-metric-resting-heart-rate",
     lessonTitle: "Core Metric: Resting Heart Rate",
     text: "Zhang, D., Wang, W., & Li, F. (2016a). Association between resting heart rate and coronary artery disease, stroke, sudden death and noncardiovascular diseases: a meta-analysis. CMAJ, 188(15), E384-E392. Meta-analysis: a higher resting heart rate is associated with higher all-cause and cardiovascular mortality, so a lower resting heart rate tracks with longer life.",
+    excerpt: "A large review found that a higher resting heart rate is linked to a higher risk of death, both from all causes and from heart disease (Zhang et al., 2016a).",
   },
   {
     key: "read-your-bodys-data:3f689ca010c6",
@@ -4325,6 +4403,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l4-core-metric-daily-steps",
     lessonTitle: "Core Metric: Daily Steps",
     text: "Laranjo, L., et al. (2020). Do smartphone applications and activity trackers increase physical activity in adults? Systematic review, meta-analysis and metaregression. British Journal of Sports Medicine, 55(8), 422-432.",
+    excerpt: "And here is a bonus: simply using a tracker or an app tends to get people moving more, by close to eighteen hundred extra steps a day on average (Laranjo et al., 2020).",
   },
   {
     key: "read-your-bodys-data:433971e9189c",
@@ -4333,6 +4412,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l4-core-metric-daily-steps",
     lessonTitle: "Core Metric: Daily Steps",
     text: "Lee, I-M., et al. (2019). Association of step volume and intensity with all-cause mortality in older women. JAMA Internal Medicine, 179(8), 1105-1112.",
+    excerpt: "In older women, more daily steps were linked to lower death risk, with the benefit leveling off around seven thousand five hundred steps (Lee et al., 2019).",
   },
   {
     key: "read-your-bodys-data:beb78f3ff294",
@@ -4341,6 +4421,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l4-core-metric-daily-steps",
     lessonTitle: "Core Metric: Daily Steps",
     text: "Paluch, A. E., et al. (2021). Steps per day and all-cause mortality in middle-aged adults in the Coronary Artery Risk Development in Young Adults study. JAMA Network Open, 4(9), e2124516.",
+    excerpt: "In middle-aged adults, those walking about seven thousand or more steps a day had roughly fifty to seventy percent lower death risk than those walking under seven thousand (Paluch et al., 2021).",
   },
   {
     key: "read-your-bodys-data:9914a649252c",
@@ -4349,6 +4430,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l4-core-metric-daily-steps",
     lessonTitle: "Core Metric: Daily Steps",
     text: "Paluch, A. E., et al. (2022). Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. The Lancet Public Health, 7(3), e219-e228.",
+    excerpt: "The science shows clear gains beginning around seven thousand steps a day, and the benefit levels off well below ten thousand, somewhere around six to eight thousand steps for older adults (Paluch et al., 2022).",
   },
   {
     key: "read-your-bodys-data:78a4edcad711",
@@ -4357,6 +4439,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l4-core-metric-daily-steps",
     lessonTitle: "Core Metric: Daily Steps",
     text: "Saint-Maurice, P. F., et al. (2020). Association of daily step count and step intensity with mortality among US adults. JAMA, 323(12), 1151-1160.",
+    excerpt: "Taking about eight thousand steps a day was linked to roughly half the risk of dying as taking about four thousand steps a day (Saint-Maurice et al., 2020).",
   },
   {
     key: "read-your-bodys-data:049047c01cdf",
@@ -4365,6 +4448,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l5-core-metric-sleep",
     lessonTitle: "Core Metric: Sleep",
     text: "Paluch, A. E., et al. (2021). Steps per day and all-cause mortality in middle-aged adults in the Coronary Artery Risk Development in Young Adults study. JAMA Network Open, 4(9), e2124516. (Recall: about seven thousand or more steps a day linked to roughly fifty to seventy percent lower death risk.)",
+    excerpt: "Middle aged adults getting about seven thousand or more steps a day had roughly fifty to seventy percent lower death risk than people under seven thousand (Paluch et al., 2021).",
   },
   {
     key: "read-your-bodys-data:96aef32c1d2e",
@@ -4373,6 +4457,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l5-core-metric-sleep",
     lessonTitle: "Core Metric: Sleep",
     text: "Hirshkowitz, M., et al. (2015). National Sleep Foundation's sleep time duration recommendations: Methodology and results summary. Sleep Health, 1(1), 40-43. (Adults are recommended about seven to nine hours of sleep.)",
+    excerpt: "Most adults do best with about seven to nine hours a night (Hirshkowitz et al., 2015).",
   },
   {
     key: "read-your-bodys-data:16fd38e1e1d1",
@@ -4381,6 +4466,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l5-core-metric-sleep",
     lessonTitle: "Core Metric: Sleep",
     text: "Cappuccio, F. P., et al. (2010). Sleep duration and all-cause mortality: A systematic review and meta-analysis of prospective studies. Sleep, 33(5), 585-592. (Both short and long sleep duration are linked to higher mortality.)",
+    excerpt: "Both too little and too much sleep are linked to a higher risk of dying early (Cappuccio et al., 2010).",
   },
   {
     key: "read-your-bodys-data:acf4060a2e9d",
@@ -4389,6 +4475,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l6-core-metric-activity-minutes",
     lessonTitle: "Core Metric: Activity Minutes",
     text: "Piercy, K. L., et al. (2018). The Physical Activity Guidelines for Americans. JAMA. US Physical Activity Guidelines: about one hundred fifty to three hundred minutes of moderate or seventy-five to one hundred fifty minutes of vigorous activity a week, and activity of any length counts.",
+    excerpt: "There are two levels. Moderate effort is when you can still talk but not sing. Think a brisk walk or an easy bike ride. Vigorous effort is when talking gets hard, like a jog or fast cycling. The guidelines give a weekly target. Aim for about one hundred fifty to three hundred minutes of moderate effort a week. Or…",
   },
   {
     key: "read-your-bodys-data:1206b0d7ab9a",
@@ -4405,6 +4492,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l6-core-metric-activity-minutes",
     lessonTitle: "Core Metric: Activity Minutes",
     text: "Lear, S. A., et al. (2017). The effect of physical activity on mortality and cardiovascular disease in 130,000 people from 17 high-income, middle-income, and low-income countries: the PURE study. Direction of effect only; higher activity is linked with substantially lower death and heart disease risk.",
+    excerpt: "Reaching higher activity is linked with substantially lower death and heart disease risk (Lear et al., 2017).",
   },
   {
     key: "read-your-bodys-data:7c6ee626d7df",
@@ -4413,6 +4501,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l7-the-science-why-small-data-guided-changes-compound",
     lessonTitle: "The Science: Why Small Data-Guided Changes Compound",
     text: "Brickwood, K. J., Watson, G., O'Brien, J., & Williams, A. D. (2019). Consumer-based wearable activity trackers increase physical activity participation: Systematic review and meta-analysis. JMIR mHealth and uHealth, 7(4), e11819.",
+    excerpt: "Wearable trackers, the everyday kind on your wrist, have been shown to increase how active people are (Brickwood et al., 2019).",
   },
   {
     key: "read-your-bodys-data:4bb45c70cd53",
@@ -4421,6 +4510,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l7-the-science-why-small-data-guided-changes-compound",
     lessonTitle: "The Science: Why Small Data-Guided Changes Compound",
     text: "Fuller, D., Colwell, E., Low, J., Orychock, K., Tobin, M. A., Simango, B., Buote, R., Van Heerden, D., Luan, H., Cullen, K., Slade, L., & Taylor, N. G. A. (2020). Reliability and validity of commercially available wearable devices for measuring steps, energy expenditure, and heart rate: Systematic review. JMIR mHealth and uHealth, 8(9), e18694.",
+    excerpt: "And the calorie or energy number is the weakest, often off by more than thirty percent (Fuller et al., 2020).",
   },
   {
     key: "read-your-bodys-data:1446e011d58a",
@@ -4429,6 +4519,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l7-the-science-why-small-data-guided-changes-compound",
     lessonTitle: "The Science: Why Small Data-Guided Changes Compound",
     text: "Laranjo, L., Ding, D., Heleno, B., Kocaballi, B., Quiroz, J. C., Tong, H. L., Chahwan, B., Neves, A. L., Gabarron, E., Dao, K. P., Rodrigues, D., Neves, G. C., Antunes, M. L., Coiera, E., & Bates, D. W. (2020). Do smartphone applications and activity trackers increase physical activity in adults? Systematic review, meta-analysis and metaregression. British Journal of Sports Medicine, 55(8), 422-432.",
+    excerpt: "In a large research review, people who used an app or a tracker walked roughly eighteen hundred more steps a day than people who did not (Laranjo et al., 2020).",
   },
   {
     key: "read-your-bodys-data:4cdc7090b3bb",
@@ -4437,6 +4528,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l7-the-science-why-small-data-guided-changes-compound",
     lessonTitle: "The Science: Why Small Data-Guided Changes Compound",
     text: "Lear, S. A., Hu, W., Rangarajan, S., Gasevic, D., Leong, D., Iqbal, R., et al. (2017). The effect of physical activity on mortality and cardiovascular disease in 130,000 people from 17 high-income, middle-income, and low-income countries: The PURE study. The Lancet, 390(10113), 2643-2654.",
+    excerpt: "In a study that followed more than one hundred thirty thousand people, higher activity was linked to lower risk of death and heart disease (Lear et al., 2017).",
   },
   {
     key: "read-your-bodys-data:a40174da876e",
@@ -4445,6 +4537,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l7-the-science-why-small-data-guided-changes-compound",
     lessonTitle: "The Science: Why Small Data-Guided Changes Compound",
     text: "Paluch, A. E., Bajpai, S., Bassett, D. R., et al. (2022). Daily steps and all-cause mortality: A meta-analysis of 15 international cohorts. The Lancet Public Health, 7(3), e219-e228.",
+    excerpt: "In a large analysis of older adults, the benefit from more steps kept rising and then leveled off well below ten thousand, somewhere around six to eight thousand steps a day (Paluch et al., 2022).",
   },
   {
     key: "read-your-bodys-data:f24a0025f009",
@@ -4453,6 +4546,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l7-the-science-why-small-data-guided-changes-compound",
     lessonTitle: "The Science: Why Small Data-Guided Changes Compound",
     text: "Paluch, A. E., Gabriel, K. P., Fulton, J. E., et al. (2021). Steps per day and all-cause mortality in middle-aged adults in the Coronary Artery Risk Development in Young Adults study. JAMA Network Open, 4(9), e2124516.",
+    excerpt: "In middle-aged adults, getting to about seven thousand or more steps a day was linked to a much lower risk of death than staying under seven thousand (Paluch et al., 2021).",
   },
   {
     key: "read-your-bodys-data:a07055a7a95d",
@@ -4461,6 +4555,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l8-interpreting-your-first-week-baseline-and-red-flags",
     lessonTitle: "Interpreting Your First Week: Baseline and Red Flags",
     text: "Quer, G., et al. (2020). Inter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: Retrospective, longitudinal cohort study of 92,457 adults. (About one in five had a week with resting heart rate fluctuating ten or more beats a minute; individual normal ranges can differ by up to seventy beats a minute between people.)",
+    excerpt: "A study of more than ninety thousand adults found that a normal resting heart rate can differ by as much as seventy beats a minute from one healthy person to the next (Quer et al., 2020).",
   },
   {
     key: "read-your-bodys-data:224487ff917c",
@@ -4469,6 +4564,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l8-interpreting-your-first-week-baseline-and-red-flags",
     lessonTitle: "Interpreting Your First Week: Baseline and Red Flags",
     text: "Reed, D. L., & Sacco, W. P. (2016). Measuring sleep efficiency: What should the denominator be? Journal of Clinical Sleep Medicine. (Sleep efficiency of about eighty percent is the threshold for normal; most healthy young adults exceed ninety percent.)",
+    excerpt: "Watch out Here is what trips people up. They panic at a single bad number. One night of poor sleep, one high heart rate reading, and they think something is wrong. It usually is not. In that study of ninety thousand adults, about one in five people had a week where their resting heart rate jumped by ten beats or more,…",
   },
   {
     key: "read-your-bodys-data:7558563fb11f",
@@ -4477,6 +4573,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l9-module-1-review-foundations-of-health-metrics",
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Steps and mortality: Paluch, A. E., et al. (2022). Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. The Lancet Public Health, 7(3), e219 to e228. Benefit levels off well below ten thousand steps, around six thousand to eight thousand for older adults.",
+    excerpt: "The pattern to remember is that more steps go with a lower risk of death, and the benefit levels off well below ten thousand, somewhere around six thousand to eight thousand for older adults (Paluch et al., 2022).",
   },
   {
     key: "read-your-bodys-data:c1f64a1b8260",
@@ -4485,6 +4582,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l9-module-1-review-foundations-of-health-metrics",
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Steps and mortality: Paluch, A. E., et al. (2021). Steps per day and all-cause mortality in middle-aged adults in the Coronary Artery Risk Development in Young Adults study. JAMA Network Open, 4(9), e2124516. About seven thousand or more steps a day went with roughly fifty to seventy percent lower death risk than under seven thousand.",
+    excerpt: "For middle-aged adults, walking about seven thousand or more steps a day went with roughly fifty to seventy percent lower risk of death than walking under seven thousand (Paluch et al., 2021).",
   },
   {
     key: "read-your-bodys-data:00cb65d0a727",
@@ -4493,6 +4591,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l9-module-1-review-foundations-of-health-metrics",
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Steps and mortality: Saint-Maurice, P. F., et al. (2020). Association of daily step count and step intensity with mortality among US adults. JAMA, 323(12), 1151 to 1160. About eight thousand steps a day was linked to roughly half the death risk of about four thousand steps a day.",
+    excerpt: "In US adults, taking about eight thousand steps a day was linked to roughly half the death risk of about four thousand steps a day (Saint-Maurice et al., 2020).",
   },
   {
     key: "read-your-bodys-data:efcd99a498b3",
@@ -4501,6 +4600,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l9-module-1-review-foundations-of-health-metrics",
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Resting heart rate and mortality: Zhang, D., et al. (2016b). Resting heart rate and all-cause and cardiovascular mortality. A meta-analysis. A higher resting heart rate is linked to higher all-cause and cardiovascular mortality, so a lower resting heart rate tracks with a longer life.",
+    excerpt: "A higher resting heart rate is linked to higher death risk, so a lower resting heart rate tends to track with a longer life (Zhang et al., 2016b).",
   },
   {
     key: "read-your-bodys-data:ba752062ce72",
@@ -4509,6 +4609,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l9-module-1-review-foundations-of-health-metrics",
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Sleep duration: Hirshkowitz, M., et al. (2015). National Sleep Foundation's sleep time duration recommendations. Sleep Health, 1(1), 40 to 43. Adults are recommended about seven to nine hours of sleep.",
+    excerpt: "The National Sleep Foundation recommends about seven to nine hours a night for adults (Hirshkowitz et al., 2015).",
   },
   {
     key: "read-your-bodys-data:cb9f5c6a6e8c",
@@ -4517,6 +4618,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l9-module-1-review-foundations-of-health-metrics",
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Physical activity guidelines: Piercy, K. L., et al. (2018). The Physical Activity Guidelines for Americans. JAMA, 320(19), 2020 to 2028. About one hundred fifty to three hundred minutes of moderate or seventy five to one hundred fifty minutes of vigorous activity a week, and activity of any length counts.",
+    excerpt: "Or about seventy five to one hundred fifty minutes a week of hard effort (Piercy et al., 2018).",
   },
   {
     key: "read-your-bodys-data:2cad8505e7d6",
@@ -4525,6 +4627,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l9-module-1-review-foundations-of-health-metrics",
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Resting heart rate variability and baselines: Quer, G., et al. (2020). Inter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: Retrospective, longitudinal cohort study of 92,457 adults. PLOS ONE, 15(2), e0227709. About one in five adults had a week with a ten or more beat swing; personal baselines differ a lot.",
+    excerpt: "Keep in mind that some swing is normal, in a study of more than ninety thousand adults about one in five had a week where their resting heart rate moved by ten or more beats, and personal baselines differ a lot from person to person (Quer et al., 2020).",
   },
   {
     key: "read-your-bodys-data:a8da496fe184",
@@ -4533,6 +4636,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m1-l9-module-1-review-foundations-of-health-metrics",
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Sleep efficiency threshold: Reed, D. L., & Sacco, W. P. (2016). Measuring sleep efficiency: What should the denominator be? Journal of Clinical Sleep Medicine, 12(2), 263 to 266. About eighty percent is treated as the low end of normal.",
+    excerpt: "Another red flag is sleep efficiency below eighty percent, which is the level researchers treat as the low end of normal (Reed & Sacco, 2016).",
   },
   {
     key: "read-your-bodys-data:afe6f5e00dca",
@@ -4569,6 +4673,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Hirshkowitz, M., Whiton, K., Albert, S. M., Alessi, C., Bruni, O., DonCarlos, L., Hazen, N., Herman, J., Katz, E. S., Kheirandish-Gozal, L., Neubauer, D. N., O’Donnell, A. E., Ohayon, M., Peever, J., Rawding, R., Sachdeva, R. C., Setters, B., Vitiello, M. V., Ware, J. C., & Adams Hillard, P. J. (2015). National Sleep Foundation’s sleep time duration recommendations: methodology and results summary. Sleep Health, 1(1), 40-43. https://doi.org/10.1016/j.sleh.2014.12.010",
     url: "https://doi.org/10.1016/j.sleh.2014.12.010",
+    excerpt: "The National Sleep Foundation recommends about seven to nine hours a night for adults (Hirshkowitz et al., 2015).",
   },
   {
     key: "read-your-bodys-data:26f1f34ea83a",
@@ -4605,6 +4710,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Paluch, A. E., Bajpai, S., Bassett, D. R., Carnethon, M. R., Ekelund, U., Evenson, K. R., Galuska, D. A., Jefferis, B. J., Kraus, W. E., Lee, I. M., Matthews, C. E., Omura, J. D., Patel, A. V., Pieper, C. F., Rees-Punia, E., Dallmeier, D., Klenk, J., Whincup, P. H., Dooley, E. E., ... Fulton, J. E. (2022). Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts. The Lancet Public Health, 7(3), e219-e228. https://doi.org/10.1016/s2468-2667(21)00302-9",
     url: "https://doi.org/10.1016/s2468-2667(21",
+    excerpt: "The pattern to remember is that more steps go with a lower risk of death, and the benefit levels off well below ten thousand, somewhere around six thousand to eight thousand for older adults (Paluch et al., 2022).",
   },
   {
     key: "read-your-bodys-data:f0ed259bfa8c",
@@ -4614,6 +4720,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Paluch, A. E., Gabriel, K. P., Fulton, J. E., Lewis, C. E., Schreiner, P. J., Sternfeld, B., Sidney, S., Siddique, J., Whitaker, K. M., & Carnethon, M. R. (2021). Steps per Day and All-Cause Mortality in Middle-aged Adults in the Coronary Artery Risk Development in Young Adults Study. JAMA Network Open, 4(9), e2124516. https://doi.org/10.1001/jamanetworkopen.2021.24516",
     url: "https://doi.org/10.1001/jamanetworkopen.2021.24516",
+    excerpt: "For middle-aged adults, walking about seven thousand or more steps a day went with roughly fifty to seventy percent lower risk of death than walking under seven thousand (Paluch et al., 2021).",
   },
   {
     key: "read-your-bodys-data:73e5b33e32f6",
@@ -4623,6 +4730,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Piercy, K. L., Troiano, R. P., Ballard, R. M., Carlson, S. A., Fulton, J. E., Galuska, D. A., George, S. M., & Olson, R. D. (2018). The Physical Activity Guidelines for Americans. JAMA, 320(19), 2020. https://doi.org/10.1001/jama.2018.14854",
     url: "https://doi.org/10.1001/jama.2018.14854",
+    excerpt: "Or about seventy five to one hundred fifty minutes a week of hard effort (Piercy et al., 2018).",
   },
   {
     key: "read-your-bodys-data:bae74e20ea56",
@@ -4632,6 +4740,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Quer, G., Gouda, P., Galarnyk, M., Topol, E. J., & Steinhubl, S. R. (2020). Inter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: Retrospective, longitudinal cohort study of 92,457 adults. PLOS ONE, 15(2), e0227709. https://doi.org/10.1371/journal.pone.0227709",
     url: "https://doi.org/10.1371/journal.pone.0227709",
+    excerpt: "Keep in mind that some swing is normal, in a study of more than ninety thousand adults about one in five had a week where their resting heart rate moved by ten or more beats, and personal baselines differ a lot from person to person (Quer et al., 2020).",
   },
   {
     key: "read-your-bodys-data:8c7366fbfd51",
@@ -4641,6 +4750,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Reed, D. L., & Sacco, W. P. (2016). Measuring Sleep Efficiency: What Should the Denominator Be?. Journal of Clinical Sleep Medicine, 12(2), 263-266. https://doi.org/10.5664/jcsm.5498",
     url: "https://doi.org/10.5664/jcsm.5498",
+    excerpt: "Another red flag is sleep efficiency below eighty percent, which is the level researchers treat as the low end of normal (Reed & Sacco, 2016).",
   },
   {
     key: "read-your-bodys-data:6b6fec42cb97",
@@ -4650,6 +4760,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Saint-Maurice, P. F., Troiano, R. P., Bassett, D. R., Graubard, B. I., Carlson, S. A., Shiroma, E. J., Fulton, J. E., & Matthews, C. E. (2020). Association of Daily Step Count and Step Intensity With Mortality Among US Adults. JAMA, 323(12), 1151. https://doi.org/10.1001/jama.2020.1382",
     url: "https://doi.org/10.1001/jama.2020.1382",
+    excerpt: "In US adults, taking about eight thousand steps a day was linked to roughly half the death risk of about four thousand steps a day (Saint-Maurice et al., 2020).",
   },
   {
     key: "read-your-bodys-data:1d995314ca4f",
@@ -4659,6 +4770,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 1 Review: Foundations of Health Metrics",
     text: "Zhang, D., Shen, X., & Qi, X. (2016b). Resting heart rate and all-cause and cardiovascular mortality in the general population: a meta-analysis. Canadian Medical Association Journal, 188(3), E53-E63. https://doi.org/10.1503/cmaj.150535",
     url: "https://doi.org/10.1503/cmaj.150535",
+    excerpt: "A higher resting heart rate is linked to higher death risk, so a lower resting heart rate tends to track with a longer life (Zhang et al., 2016b).",
   },
   {
     key: "read-your-bodys-data:328d200e4888",
@@ -4756,6 +4868,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Sleep Efficiency as a Longevity Biomarker",
     text: "Dew, M. A., Hoch, C. C., Buysse, D. J., Monk, T. H., Begley, A. E., Houck, P. R., Hall, M., Kupfer, D. J., & Reynolds, C. F. (2003). Healthy older adults' sleep predicts all-cause mortality at 4 to 19 years of follow-up. Psychosomatic Medicine, 65(1), 63-73. https://doi.org/10.1097/01.psy.0000039756.23250.7c",
     url: "https://doi.org/10.1097/01.psy.0000039756.23250.7c",
+    excerpt: "In one long-running study, healthy older adults with a sleep efficiency below eighty percent had close to twice the risk of dying over the following years compared with those above it (Dew et al., 2003).",
   },
   {
     key: "read-your-bodys-data:2b251c6d70d3",
@@ -4861,6 +4974,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 2 Review: Wearable Tech and Data Collection",
     text: "Chevance, G., Golaszewski, N. M., Tipton, E., Hekler, E. B., Buman, M., Welk, G. J., Patrick, K., & Godino, J. G. (2022). Accuracy and Precision of Energy Expenditure, Heart Rate, and Steps Measured by Combined-Sensing Fitbits Against Reference Measures: Systematic Review and Meta-analysis. JMIR mHealth and uHealth, 10(4), e35626. https://doi.org/10.2196/35626",
     url: "https://doi.org/10.2196/35626",
+    excerpt: "A large review of Fitbit devices found they underestimated heart rate, calories, and even steps against careful reference measures (Chevance et al., 2022).",
   },
   {
     key: "read-your-bodys-data:8127520f6a62",
@@ -4879,6 +4993,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 2 Review: Wearable Tech and Data Collection",
     text: "Feehan, L. M., Geldman, J., Sayre, E. C., Park, C., Ezzat, A. M., Yoo, J. Y., Hamilton, C. B., & Li, L. C. (2018). Accuracy of Fitbit Devices: Systematic Review and Narrative Syntheses of Quantitative Data. JMIR mHealth and uHealth, 6(8), e10527. https://doi.org/10.2196/10527",
     url: "https://doi.org/10.2196/10527",
+    excerpt: "One review of Fitbit devices found heart rate agreement ranging anywhere from twenty six percent to ninety two percent, and the harder the exercise, the worse it got (Feehan et al., 2018).",
   },
   {
     key: "read-your-bodys-data:a4139b0cce7f",
@@ -4888,6 +5003,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 2 Review: Wearable Tech and Data Collection",
     text: "Germini, F., Noronha, N., Borg Debono, V., Abraham Philip, B., Pete, D., Navarro, T., Keepanasseril, A., Parpia, S., de Wit, K., & Iorio, A. (2022). Accuracy and Acceptability of Wrist-Wearable Activity-Tracking Devices: Systematic Review of the Literature. Journal of Medical Internet Research, 24(1), e30791. https://doi.org/10.2196/30791",
     url: "https://doi.org/10.2196/30791",
+    excerpt: "A review of wrist trackers found heart rate accuracy is reasonable at rest but varies a lot from device to device (Germini et al., 2022).",
   },
   {
     key: "read-your-bodys-data:37f87f45f17a",
@@ -4915,6 +5031,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 2 Review: Wearable Tech and Data Collection",
     text: "Shcherbina, A., Mattsson, C., Waggott, D., Salisbury, H., Christle, J., Hastie, T., Wheeler, M., & Ashley, E. (2017). Accuracy in Wrist-Worn, Sensor-Based Measurements of Heart Rate and Energy Expenditure in a Diverse Cohort. Journal of Personalized Medicine, 7(2), 3. https://doi.org/10.3390/jpm7020003",
     url: "https://doi.org/10.3390/jpm7020003",
+    excerpt: "Heart rate was measured reasonably well, but calorie estimates were not (Shcherbina et al., 2017).",
   },
   {
     key: "read-your-bodys-data:18b17f100b1f",
@@ -5037,6 +5154,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Module 3 Review: Data Analytics Basics",
     text: "Lillie, E. O., Patay, B., Diamant, J., Issell, B., Topol, E. J., & Schork, N. J. (2011). The N-Of-1 Clinical Trial: The Ultimate Strategy For Individualizing Medicine?. Personalized Medicine, 8(2), 161-173. https://doi.org/10.2217/pme.11.7",
     url: "https://doi.org/10.2217/pme.11.7",
+    excerpt: "Done this way, it gives you a valid personal answer (Davidson et al., 2021; Lillie et al., 2011).",
   },
   {
     key: "read-your-bodys-data:1ce8d280da54",
@@ -5215,6 +5333,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonSlug: "m5-l2-resilience-your-master-health-signal",
     lessonTitle: "Resilience: Your Master Health Signal",
     text: "Sebastiani, P., & Perls, T. T. (2012). The genetics of extreme longevity: Lessons from the New England Centenarian Study. People who reach extreme old age and the characteristics they share.",
+    excerpt: "The New England Centenarian Study followed people who live to a hundred and beyond (Sebastiani & Perls, 2012).",
   },
   {
     key: "read-your-bodys-data:3b958763eef5",
@@ -5304,6 +5423,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "Community and Health Leadership",
     text: "This is a how-to lesson built on the ideas from the course, plus one piece of outside research: Scarapicchia, T. M. F., Amireault, S., Faulkner, G., & Sabiston, C. M. (2017). Social support and physical activity participation among healthy adults: A systematic review of prospective studies. International Review of Sport and Exercise Psychology, 10(1), 50-83. https://doi.org/10.1080/1750984X.2016.1183222 (Social support from people close to you shows a real, if modest, positive link to staying active over time.)",
     url: "https://doi.org/10.1080/1750984X.2016.1183222",
+    excerpt: "A review pooling years of research on healthy adults found that social support, the kind that comes from family, friends, or a workout partner, has a real, if modest, positive link to how physically active people stay over time (Scarapicchia et al., 2017).",
   },
   {
     key: "read-your-bodys-data:e651ce4f10eb",
@@ -5396,6 +5516,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "1 · Indiana's constitution: the 1851 rulebook",
     text: "Indiana Historical Bureau. (n.d.). *The 1851 Indiana Constitution* (by D. G. Vanderstel). IN.gov. https://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/state-constitutions/the-1851-indiana-constitution-by-david-g-vanderstel/",
     url: "https://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/state-constitutions/the-1851-indiana-constitution-by-david-g-vanderstel/",
+    excerpt: "Indiana is on its second constitution, adopted in 1851, replacing the original 1816 statehood constitution (Indiana Historical Bureau, n.d.).",
   },
   {
     key: "state-civics-in:64ef5b80997e",
@@ -5414,6 +5535,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "2 · The three branches, and Indiana's deliberately weak governor",
     text: "Indiana General Assembly. (n.d.). *About the General Assembly*. IGA.in.gov. https://iga.in.gov/information/about",
     url: "https://iga.in.gov/information/about",
+    excerpt: "Legislative: the Indiana General Assembly. A two-chamber (bicameral) legislature: - House of Representatives: 100 members, 2-year terms. - Senate: 50 members, 4-year terms. It writes state law and passes the budget (Indiana General Assembly, n.d.).",
   },
   {
     key: "state-civics-in:5a611d21ba3d",
@@ -5423,6 +5545,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "2 · The three branches, and Indiana's deliberately weak governor",
     text: "Indiana Historical Bureau. (n.d.). *Constitution of 1851, Article 4 - Legislative*. IN.gov. https://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/indiana-documents-leading-to-statehood/constitution-of-1851/article-4-legislative/",
     url: "https://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/indiana-documents-leading-to-statehood/constitution-of-1851/article-4-legislative/",
+    excerpt: "Indiana's signature feature: a deliberately WEAK governor. The single most important thing to know about the balance of power in Indiana: the General Assembly can override the governor's veto with a SIMPLE majority, the same majority it took to pass the bill in the first place (Indiana General Assembly, n.d.; Indiana…",
   },
   {
     key: "state-civics-in:ed5776a64f97",
@@ -5432,6 +5555,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "3 · Indiana's courts: merit selection + retention",
     text: "State of Indiana, Judicial Branch. (n.d.). *About the Indiana Supreme Court / selection of justices*. [courts.in.gov](https://www.in.gov/courts/). https://www.in.gov/courts/supreme/about/",
     url: "https://www.in.gov/courts/",
+    excerpt: "Merit selection, then retention (since 1970). For the Indiana Supreme Court and the Court of Appeals, Indiana does not choose justices in a contested popular election. Instead (State of Indiana, Judicial Branch, n.d.): 1. A nonpartisan Judicial Nominating Commission reviews applicants and sends the Governor a short…",
   },
   {
     key: "state-civics-in:452e58f5883c",
@@ -5450,6 +5574,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "4 · How a bill becomes an Indiana law",
     text: "Indiana General Assembly. (n.d.). *How a bill becomes a law / legislative process*. IGA.in.gov. https://iga.in.gov/information/about",
     url: "https://iga.in.gov/information/about",
+    excerpt: "A bill in the Indiana General Assembly travels a path that rhymes with Congress but has its own steps and, crucially, its own ending. Here's the route (Indiana General Assembly, n.d.).",
   },
   {
     key: "state-civics-in:ad8b05d67a70",
@@ -5459,6 +5584,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "4 · How a bill becomes an Indiana law",
     text: "Indiana General Assembly. (n.d.). *Indiana General Assembly home*. IGA.in.gov. https://iga.in.gov/",
     url: "https://iga.in.gov/",
+    excerpt: "A bill in the Indiana General Assembly travels a path that rhymes with Congress but has its own steps and, crucially, its own ending. Here's the route (Indiana General Assembly, n.d.).",
   },
   {
     key: "state-civics-in:fa8ae92b28d5",
@@ -5468,6 +5594,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "5 · Local government in Indiana: 92 counties and 1,000+ townships",
     text: "Indiana General Assembly. (n.d.). *Indiana Code, Title 36 - Local Government*. IGA.in.gov. https://iga.in.gov/laws/current/ic/titles/36",
     url: "https://iga.in.gov/laws/current/ic/titles/36",
+    excerpt: "A typical Indiana county is run by two elected bodies working together (Indiana General Assembly, n.d.; National Association of Counties, n.d.): - A Board of Commissioners (usually three members): the county's executive, handling day-to-day administration, roads, and the like. - A County Council (usually seven…",
   },
   {
     key: "state-civics-in:23ee4be562e8",
@@ -5477,6 +5604,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "5 · Local government in Indiana: 92 counties and 1,000+ townships",
     text: "National Association of Counties. (n.d.). *County government overview: Indiana*. https://www.naco.org/",
     url: "https://www.naco.org/",
+    excerpt: "A typical Indiana county is run by two elected bodies working together (Indiana General Assembly, n.d.; National Association of Counties, n.d.): - A Board of Commissioners (usually three members): the county's executive, handling day-to-day administration, roads, and the like. - A County Council (usually seven…",
   },
   {
     key: "state-civics-in:b4b99383307c",
@@ -5504,6 +5632,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "6 · Elections in Indiana: strict photo ID, excuse-required mail voting",
     text: "Indiana Election Division. (2026). *2026 Indiana voter registration guidebook* (p. 18). [in.gov/sos](https://www.in.gov/sos/). https://www.in.gov/sos/elections/files/2026-Voter-Registration-Guidebook.FINAL.pdf",
     url: "https://www.in.gov/sos/",
+    excerpt: "The Indiana Election Division puts the rule plainly: \"As a general rule, the voter registration period closes in Indiana twenty-nine (29) days before each primary, general, municipal, or special election\" (Indiana Election Division, 2026, p. 18, citing IC 3-7-13-10).",
   },
   {
     key: "state-civics-in:382c811ebc28",
@@ -5513,6 +5642,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "6 · Elections in Indiana: strict photo ID, excuse-required mail voting",
     text: "Indiana Historical Bureau. (n.d.). *Constitution of 1851, Article 16 - Amendments*. IN.gov. https://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/indiana-documents-leading-to-statehood/constitution-of-1851/article-16-amendments/",
     url: "https://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/indiana-documents-leading-to-statehood/constitution-of-1851/article-16-amendments/",
+    excerpt: "No statewide citizen initiative. Here's a big structural fact for ballot access: Indiana has NO statewide citizen-initiated ballot measures. In many Western states, ordinary citizens can gather signatures to put a law or constitutional amendment directly on the ballot. In Indiana, they can't: the 1851 constitution…",
   },
   {
     key: "state-civics-in:51fe68dd6aaa",
@@ -5522,6 +5652,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "6 · Elections in Indiana: strict photo ID, excuse-required mail voting",
     text: "Crawford v. Marion County Election Board, 553 U.S. 181 (2008). https://www.supremecourt.gov/",
     url: "https://www.supremecourt.gov/",
+    excerpt: "Marion County Election Board, 553 U.S. 181 (2008), the Court upheld Indiana's photo-ID requirement, making it a landmark decision that other states pointed to (Indiana Election Division, n.d.; Crawford v.",
   },
   {
     key: "state-civics-in:d50c3db7950d",
@@ -5531,6 +5662,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "7 · Two Indiana offices that recently CHANGED (flagged)",
     text: "Indiana General Assembly. (2019). *House Bill 1005 (2019): State superintendent of public instruction*. IGA.in.gov. https://iga.in.gov/legislative/2019/bills/house/1005",
     url: "https://iga.in.gov/legislative/2019/bills/house/1005",
+    excerpt: "Indiana changed this: the legislature passed House Bill 1005 (2019), titled \"State superintendent of public instruction,\" which moved up the date the elected office is abolished and provided for a Secretary of Education appointed by the Governor beginning January 11, 2021 (Indiana General Assembly, 2019; Ballotpedia,…",
   },
   {
     key: "state-civics-in:650b1cd23b51",
@@ -5549,6 +5681,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "7 · Two Indiana offices that recently CHANGED (flagged)",
     text: "Ballotpedia. (n.d.-a). *Indiana Secretary of Education*. https://ballotpedia.org/Indiana_Secretary_of_Education",
     url: "https://ballotpedia.org/Indiana_Secretary_of_Education",
+    excerpt: "Indiana changed this: the legislature passed House Bill 1005 (2019), titled \"State superintendent of public instruction,\" which moved up the date the elected office is abolished and provided for a Secretary of Education appointed by the Governor beginning January 11, 2021 (Indiana General Assembly, 2019; Ballotpedia,…",
   },
   {
     key: "state-civics-in:57e54ae3cc64",
@@ -5558,6 +5691,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "7 · Two Indiana offices that recently CHANGED (flagged)",
     text: "WFYI Public Media. (2023, May 8). *Indiana state auditor changing title to state comptroller*. https://www.wfyi.org/public-affairs/2023-05-08/indiana-state-auditor-changing-title-to-state-comptroller",
     url: "https://www.wfyi.org/public-affairs/2023-05-08/indiana-state-auditor-changing-title-to-state-comptroller",
+    excerpt: "2) State Auditor → State Comptroller (effective July 1, 2023). The statewide elected officer long called the State Auditor, the state's chief financial/accounting officer, was renamed the State Comptroller, effective July 1, 2023 (WFYI Public Media, 2023).",
   },
   {
     key: "state-civics-in:2f840c5583d5",
@@ -5576,6 +5710,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "8 · Get involved where you live in Indiana",
     text: "Indiana General Assembly. (n.d.). *Find your legislators / track legislation*. IGA.in.gov. https://iga.in.gov/",
     url: "https://iga.in.gov/",
+    excerpt: "Look them up and track bills at iga.in.gov, where you can also find committee schedules and read bills (Indiana General Assembly, n.d.). 3. Testify or submit comment on a bill. Indiana's committee hearings are where most bills live or die.",
   },
   {
     key: "state-civics-in:6d9f376aaefd",
@@ -7158,6 +7293,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "5 · The press release: the institution's voice",
     text: "Sumner, P., Vivian-Griffiths, S., Boivin, J., Williams, A., Venetis, C. A., Davies, A., Ogden, J., Whelan, L., Hughes, B., Dalton, B., Boy, F., & Chambers, C. D. (2014). The association between exaggeration in health related science news and academic press releases: Retrospective observational study. *BMJ, 349*, g7015. https://doi.org/10.1136/bmj.g7015",
     url: "https://doi.org/10.1136/bmj.g7015",
+    excerpt: ":::reveal What did Sumner and colleagues (2014) find about news exaggeration? ||| That it was strongly associated with exaggeration already present in the university press release, so the distortion often enters before the newsroom.",
   },
   {
     key: "writing-the-world:fdd4b3336426",
@@ -7235,6 +7371,7 @@ export const STAGED_CITATIONS: Citation[] = [
     lessonTitle: "11 · Citation as a genre convention with a job",
     text: "Greenberg, S. A. (2009). How citation distortions create unfounded authority: Analysis of a citation network. *BMJ, 339*, b2680. https://doi.org/10.1136/bmj.b2680",
     url: "https://doi.org/10.1136/bmj.b2680",
+    excerpt: ":::reveal What did Greenberg (2009) show by tracing a citation network? ||| That a thin base of primary data can be cited and re-cited through reviews and commentaries until a belief carries an impressive volume of references and very little independent evidence.",
   },
   {
     key: "writing-the-world:4c1ef62e8aa0",

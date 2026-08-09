@@ -259,6 +259,27 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   a foreign-tenant id rather than redirecting. Pure clearance logic in \`src/lib/media-verify.ts\`
   (\`isCourseMediaCleared\`), unit-tested plus an isolation test.
 
+- 🔧 **Review context, "where in the course is this?"** (\`feat/review-lesson-context\`, **no
+  migration**): every review surface was asking for a judgment call on a fragment cut out of its
+  lesson. Citations showed a bare APA string and asked whether it supports *what the lesson claims*;
+  Source checks asked about a hedge without showing the sentence that hedges; Media showed a picture
+  with no sight of the lesson it illustrates. A decision made blind is worse than none, because it
+  **closes** the item and nobody looks again. All four boards (**/admin/citations**,
+  **/audit/citations**, **/admin/research**, **/admin/media**) now name the course and lesson, link
+  straight to it, and quote the lesson's own words where they can be found honestly:
+  **citations** get the sentence carrying the in-text citation, computed by \`pnpm gen:citations\` so
+  the registry still reads no database at request time (137 of 883; the rest list sources without
+  in-text citations and get the link alone rather than a guessed sentence); **source checks** get an
+  optional hand-recorded \`lesson\` + verbatim \`quote\`, **verified against the live lesson on every
+  render** so a check whose hedge was rewritten out of the course says it is stale (12 of 20 located
+  from evidence printed by the new \`pnpm locate:research-checks\`; the other 8 name group labels like
+  "pricing: market anchors" and stay unlocated); **media** gets the prose either side of the
+  \`:::figure\` line, which is the argument the picture stands in for. Isolation: the lookups go
+  through \`ScopedDb\` and filter \`tenant_id\` on lessons **and** courses, so a slug this school does
+  not host resolves to **no link plus a sentence saying why**, never a link into another brand's
+  catalog; an ambiguous slug links to nothing, matching \`getCourseByIdOrSlug\`. The auditor board
+  feeds the lookup from the same groups that already encode the grant, so it cannot widen it.
+
 - 🔧 **Connection graph** (\`feat/admin-connection-graph\`, **no migration**): owner-only
   **/admin/graph**, which answers the two questions a 180-course catalog cannot answer by scrolling:
   *what is this course connected to*, and *what is connected to nothing?* **Derived at request time**

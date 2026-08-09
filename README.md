@@ -328,7 +328,9 @@ audio and video, a link for documents. Two rules are enforced in the API as well
 matching the citation board: a **rejection cannot be saved without a note** (a rejected image whose
 problem was never written down gets re-uploaded unchanged), and media whose rights read `unknown`
 **cannot be approved at all**. The top of the page shows the pending / approved / rejected counts and
-**which courses still have media waiting**.
+**which courses still have media waiting**. Each card also names the lesson the asset illustrates,
+links to it, and quotes the prose either side of its `:::figure` line (see
+[Review context](#review-context-where-in-the-course-does-this-appear)).
 
 ```
 GET   /api/admin/media          # this tenant's assets, newest first
@@ -342,6 +344,41 @@ lives in [src/lib/media-verify.ts](src/lib/media-verify.ts): `isCourseMediaClear
 true when every registered asset for that course is approved, so "media signed off" is a checkable
 pre-launch condition. Migration `0049_typical_the_leader.sql` creates the table (`pnpm
 db:migrate:prod` after merging).
+
+## Review context: where in the course does this appear?
+
+Every review surface used to ask for a judgment call on a fragment cut out of its lesson. Citations
+showed a bare APA string and asked whether the source says *what the lesson claims*, with no way to
+read the lesson. Source checks asked about a hedge without showing the sentence that hedges. Media
+showed a picture with no sight of the lesson it illustrates. A decision made blind is worse than no
+decision, because it **closes** the item and nobody looks again.
+
+All four boards, `/admin/citations`, `/audit/citations`, `/admin/research` and `/admin/media`, now
+name the course and lesson, link straight to the lesson, and quote the lesson's own words where they
+can be found honestly:
+
+| Board | Context shown |
+| --- | --- |
+| Citations (owner + auditor) | The sentence carrying the in-text citation, e.g. the prose ending `(Fuller et al., 2020)`. Computed by `pnpm gen:citations` and committed, so `src/lib/citations.ts` still reads no database at request time. 137 of 883 citations match; the rest list their sources without in-text citations and get the link alone. |
+| Source checks | An optional hand-recorded `lesson` slug and verbatim `quote` on the check, **verified against the live lesson on every render**: a check whose hedge has been rewritten out of the course is stale, and the board says so instead of quoting text that is gone. |
+| Media | The prose immediately before and after the asset's `:::figure` line, which is the argument the picture is standing in for. |
+
+**Nothing is guessed.** Every helper returns null when it cannot find a real match, and every missing
+link comes with a sentence saying why ("this school does not host that course"). A wrong location is
+worse than none: it sends a reviewer to the wrong page and they have no reason to doubt it. That is
+also why the source-check `lesson` field is written by hand rather than keyword-matched, with
+`pnpm locate:research-checks` printing the candidate lessons and the matching sentences as evidence
+for a human to read (12 of 20 checks are located; the other 8 name group labels such as
+`pricing: market anchors` rather than a course, and stay unlocated).
+
+**Isolation.** The lookups (`ScopedDb.listLessonLocations`, `ScopedDb.listLessonBodies`) filter
+`tenant_id` on lessons *and* courses. The citation registry is global (a citation is a property of
+the text, not of a brand), so on a school that does not host a staged course the entry renders its
+names with no link. A slug held by two instructors in one school links to nothing, matching
+`getCourseByIdOrSlug`. `/audit/citations` feeds the lookup from the same groups that already encode
+the auditor's grant, so it cannot widen it. Covered by
+[tests/isolation/review-context.test.ts](tests/isolation/review-context.test.ts) and
+[lesson-locations.db.test.ts](tests/isolation/lesson-locations.db.test.ts). No migration.
 
 ## Connection graph (`/admin/graph`)
 

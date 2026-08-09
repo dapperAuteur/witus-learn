@@ -4,6 +4,7 @@ import { getScopedDb } from "@/db/scoped";
 import { requirePlatformOwner } from "@/lib/session";
 import { citationChecksByKey } from "@/db/queries/citation-checks";
 import { citationsByCourse, STAGED_COURSES, type CitationStatus } from "@/lib/citations";
+import { buildLessonLinkIndex, reviewLocation } from "@/lib/lesson-links";
 import { CitationList, type CitationRow } from "@/components/citation-list";
 
 export const metadata: Metadata = { title: "Citations" };
@@ -18,6 +19,14 @@ export default async function CitationsPage() {
   const checks = await citationChecksByKey(sdb.tenantId);
   const groups = citationsByCourse();
 
+  // Where each citation actually sits, so a verifier can read the lesson rather than judge a bare
+  // reference string. The registry is global (a citation is a property of the text, not of a
+  // brand), so the lookup is scoped and a course this school does not host simply resolves to no
+  // link and says so, instead of pointing at somebody else's catalog.
+  const links = buildLessonLinkIndex(
+    await sdb.listLessonLocations(groups.map((g) => g.courseSlug)),
+  );
+
   const all = groups.flatMap((g) => g.citations);
   const checked = all.filter((c) => (checks.get(c.key)?.status ?? "unverified") !== "unverified").length;
 
@@ -27,6 +36,10 @@ export default async function CitationsPage() {
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Every source cited by a staged course. The question for each one: does it exist, does it still
         resolve, and does it actually say what the lesson claims?
+      </p>
+      <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+        Each one names the lesson it sits in and links to it, and quotes the sentence that cites it
+        when that sentence could be found.
       </p>
       <p className="mt-2 text-sm font-medium">
         {checked} of {all.length} checked, across {groups.length} of {STAGED_COURSES.length} staged
@@ -43,10 +56,14 @@ export default async function CitationsPage() {
       {groups.map((g) => {
         const rows: CitationRow[] = g.citations.map((c) => {
           const row = checks.get(c.key);
+          const where = reviewLocation(links, c.courseSlug, c.lessonSlug);
           return {
             ...c,
             status: (row?.status ?? "unverified") as CitationStatus,
             note: row?.note ?? null,
+            lessonHref: where.href,
+            lessonIsLinked: where.isLesson,
+            locationNote: where.note,
           };
         });
         return (

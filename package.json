@@ -47,6 +47,7 @@
     "reports:list": "tsx --env-file=.env.local scripts/report-list.ts",
     "feedback:list": "tsx --env-file=.env.local scripts/feedback-list.ts",
     "research:list": "tsx --env-file=.env.local scripts/research-list.ts",
+    "locate:research-checks": "tsx --env-file=.env.local scripts/locate-research-checks.ts",
     "future:list": "tsx --env-file=.env.local scripts/future-list.ts",
     "gen:ebooks": "tsx scripts/gen-ebooks.ts",
     "gen:pdfs": "tsx scripts/gen-pdfs.ts",
