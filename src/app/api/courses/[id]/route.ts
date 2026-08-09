@@ -3,6 +3,9 @@ import { z } from "zod";
 import { apiContext, errorJson, isTenantAdmin, json, loadEditableCourse } from "@/lib/api";
 import { isPlatformOwner } from "@/lib/session";
 import { reindexCourseEmbeddings } from "@/lib/ai/reindex";
+import { countActiveEnrollments } from "@/db/queries/enrollment";
+import { hasStripe } from "@/lib/env";
+import { assessPriceChange, type PriceType } from "@/lib/price-change";
 import {
   deleteCourse,
   ensureUsernameById,
@@ -53,6 +56,9 @@ const PatchSchema = z.object({
   featuredOrder: z.number().int().nullable().optional(),
   // Reassign the course to a different instructor (admin-only; validated in the handler).
   instructorId: z.string().min(1).optional(),
+  // Deliberate acknowledgement of a MATERIAL price change (see the confirm gate below). Never a
+  // column: it is deleted from the patch before the UPDATE, the same way `vetted` is.
+  confirm: z.boolean().optional(),
 });
 
 // PATCH /api/courses/[id] — instructor (owner) or brand-admin edits a course.
@@ -66,6 +72,48 @@ export async function PATCH(req: Request, { params }: Params) {
   const parsed = PatchSchema.safeParse(body);
   if (!parsed.success) return errorJson("Invalid input", 400);
   const patch: Record<string, unknown> = { ...parsed.data };
+  const confirmed = parsed.data.confirm === true;
+  delete patch.confirm; // never reaches the UPDATE: `confirm` is not a column
+
+  // The SECOND way a price changes (the pricing manager is the other). Same guard, same helper:
+  // classify the change while the values are still numbers, and refuse a material one that wasn't
+  // confirmed. Only the price fields are inspected, so every other setting still saves silently.
+  if ("price" in patch || "priceType" in patch || "billingInterval" in patch) {
+    const currentState = {
+      price: Number(course.price),
+      priceType: course.priceType as PriceType,
+      billingInterval: course.billingInterval as "month" | "year" | null,
+    };
+    const nextType = (parsed.data.priceType ?? currentState.priceType) as PriceType;
+    const nextState = {
+      price: nextType === "free" ? 0 : (parsed.data.price ?? currentState.price),
+      priceType: nextType,
+      billingInterval:
+        nextType === "subscription"
+          ? ((parsed.data.billingInterval ?? currentState.billingInterval) ?? "month")
+          : null,
+    };
+    // The settings form PATCHes every field on every save, so this branch runs on edits that touch
+    // no price at all. Classify first (pure, free), and only pay for the enrollment count when the
+    // change is material enough to be worth counting.
+    const material = assessPriceChange(currentState, nextState, { stripeConfigured: hasStripe }).material;
+    const assessment = material
+      ? assessPriceChange(currentState, nextState, {
+          enrollmentCount: await countActiveEnrollments(course.id),
+          stripeConfigured: hasStripe,
+        })
+      : null;
+    if (assessment && !confirmed) {
+      return json(
+        {
+          error: `This changes the price from ${assessment.fromLabel} to ${assessment.toLabel}. Review the consequences, then confirm.`,
+          needsConfirmation: true,
+          changes: [{ courseId: course.id, title: course.title, slug: course.slug, ...assessment }],
+        },
+        409,
+      );
+    }
+  }
 
   // numeric column wants a string; a free course is always $0.
   if (patch.priceType === "free") patch.price = "0";

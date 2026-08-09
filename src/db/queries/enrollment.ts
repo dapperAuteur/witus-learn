@@ -28,6 +28,26 @@ export async function isEnrolled(userId: string, courseId: string): Promise<bool
   return rows.length > 0;
 }
 
+/** Active enrollments on one course. The number that makes a price change real: these learners keep
+ *  their access (src/lib/gating.ts checks enrollment before price), and none of them is told. */
+export async function countActiveEnrollments(courseId: string): Promise<number> {
+  const [row] = await db
+    .select({ n: sql<number>`count(*)::int` })
+    .from(enrollments)
+    .where(and(eq(enrollments.courseId, courseId), eq(enrollments.status, "active")));
+  return Number(row?.n ?? 0);
+}
+
+/** courseId -> active enrollment count for one tenant, in a single query, for the pricing table. */
+export async function countActiveEnrollmentsByCourse(tenantId: string): Promise<Map<string, number>> {
+  const rows = await db
+    .select({ courseId: enrollments.courseId, n: sql<number>`count(*)::int` })
+    .from(enrollments)
+    .where(and(eq(enrollments.tenantId, tenantId), eq(enrollments.status, "active")))
+    .groupBy(enrollments.courseId);
+  return new Map(rows.map((r) => [r.courseId, Number(r.n)]));
+}
+
 /** Idempotent free enrollment. Returns the existing or new active enrollment. */
 export async function enrollFree(
   tenantId: string,
