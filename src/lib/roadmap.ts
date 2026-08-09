@@ -510,6 +510,22 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Tenant isolation is tested (a bundle 404s across tenants and never surfaces another tenant's course).
   Promos and ecosystem cross-promo (CentenarianOS, FlashLearnAI) already worked and are unchanged.
   **After merge: \`pnpm db:migrate:prod\`, then \`pnpm seed:bundles\`.**
+- 🔧 **Price-change check and warning** (\`src/lib/price-change.ts\`, no migration). A price is
+  changeable from two places, \`/admin/pricing\` and a course's own settings form, and until now both
+  saved silently, so a free funnel course could be made paid by a stray click and nobody would know
+  what that did. One pure helper now classifies a proposed change (free to paid, paid to free, an
+  increase or decrease, a one-time / subscription switch, or nothing material) and returns the
+  consequences it actually carries: the cached Stripe price is cleared so the next checkout mints a
+  new one, existing subscribers are NOT cancelled or migrated by anything this app does, nobody is
+  refunded a difference, and the new price is public the moment it saves. Both write paths refuse a
+  material change without an explicit \`confirm: true\` and answer **409** with the warning list, so
+  the guard survives a direct API call, and both UIs show that list plus the course's CURRENT
+  ENROLLMENT COUNT before anything is written. An immaterial edit still saves in one click, because a
+  warning that fires on everything gets clicked through. Learner side, the course page now states what
+  is genuinely true at the point of decision: an active enrollment survives a later price change
+  (\`src/lib/gating.ts\` checks enrollment before price, and no price path touches enrollments), with
+  the subscription case worded honestly, since a deleted Stripe subscription does cancel that
+  enrollment.
 - 🔧 **Bundle proposals + the bundle-sales gap** (\`src/lib/bundles.ts\`, on \`/admin/pricing\`).
   Six themed bundles (the full route series, Black History Through Place, Civics Essentials, the state
   civics collection, the two structural paths, and the global labor series), each with an APP price and

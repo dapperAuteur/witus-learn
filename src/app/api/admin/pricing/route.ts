@@ -2,6 +2,10 @@ import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
 import { isPlatformOwner } from "@/lib/session";
 import { updateCourse } from "@/db/queries/authoring";
+import { listCourses } from "@/db/queries/catalog";
+import { countActiveEnrollmentsByCourse } from "@/db/queries/enrollment";
+import { hasStripe } from "@/lib/env";
+import { assessPriceChange, type PriceType } from "@/lib/price-change";
 
 // One price change from the /admin/pricing manager. `subscriptionInterval` is the request-body name
 // for what the DB stores as `billing_interval` (courses.billingInterval); it only applies to a
@@ -15,6 +19,9 @@ const Update = z.object({
 
 const Body = z.object({
   updates: z.array(Update).min(1).max(500),
+  // Deliberate acknowledgement of the warnings below. A MATERIAL change without it is refused with a
+  // 409 and the warning list, so the guard holds for a direct API call, not just for the UI button.
+  confirm: z.boolean().optional(),
 });
 
 // POST /api/admin/pricing (owner-only). Change one OR many courses' price / type / interval from the
@@ -42,6 +49,46 @@ export async function POST(req: Request) {
     if (u.priceType !== "free" && u.price <= 0) {
       return errorJson("A paid course needs a price above 0.", 400);
     }
+  }
+
+  // Confirmation gate. Read every course ONCE (listCourses is one tenant-scoped query) plus one
+  // grouped enrollment count, classify each proposed change, and refuse a material batch that did
+  // not say `confirm: true`. A no-op or an immaterial edit passes straight through, so the warning
+  // only ever fires on a change that genuinely does something.
+  const current = new Map(
+    (await listCourses(sdb.tenantId, { includeUnpublished: true })).map((c) => [c.id, c] as const),
+  );
+  const enrollmentCounts = await countActiveEnrollmentsByCourse(sdb.tenantId);
+  const material = parsed.data.updates.flatMap((u) => {
+    const c = current.get(u.courseId);
+    if (!c) return []; // another tenant's id, or deleted: the UPDATE below misses it anyway
+    const assessment = assessPriceChange(
+      {
+        price: Number(c.price),
+        priceType: c.priceType as PriceType,
+        billingInterval: c.billingInterval as "month" | "year" | null,
+      },
+      {
+        price: u.price,
+        priceType: u.priceType,
+        billingInterval: u.priceType === "subscription" ? (u.subscriptionInterval ?? "month") : null,
+      },
+      { enrollmentCount: enrollmentCounts.get(u.courseId) ?? 0, stripeConfigured: hasStripe },
+    );
+    return assessment.material
+      ? [{ courseId: c.id, title: c.title, slug: c.slug, ...assessment }]
+      : [];
+  });
+
+  if (material.length > 0 && parsed.data.confirm !== true) {
+    return json(
+      {
+        error: `${material.length} price change${material.length === 1 ? "" : "s"} need${material.length === 1 ? "s" : ""} confirmation. Review the consequences, then send confirm: true.`,
+        needsConfirmation: true,
+        changes: material,
+      },
+      409,
+    );
   }
 
   let updated = 0;

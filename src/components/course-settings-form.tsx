@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { estimatedFee, estimatedNet } from "@/lib/fees";
 import { CROSS_PROMO_PRODUCTS } from "@/lib/ecosystem";
+import { assessPriceChange, type PriceState } from "@/lib/price-change";
+import { PriceChangeConfirm, type PriceChangeItem } from "@/components/price-change-confirm";
 
 export interface CourseSettings {
   title: string;
@@ -38,6 +40,11 @@ function instructorLabel(o: InstructorOption): string {
   return o.displayName || (o.username ? `@${o.username}` : o.userId);
 }
 
+/** Just the three fields a price change is judged on. */
+function pricingOf(s: CourseSettings): PriceState {
+  return { price: s.price, priceType: s.priceType, billingInterval: s.billingInterval };
+}
+
 // Edit course settings (PATCH /api/courses/[id]). isFeatured is platform-owner only
 // (the API strips it for non-admins; we only show it when canFeature). The instructor picker
 // is admin-only (owner / brand_admin) and likewise validated + stripped server-side.
@@ -49,6 +56,7 @@ export function CourseSettingsForm({
   hasStripe = true,
   instructors = [],
   canAssignInstructor = false,
+  enrollmentCount = null,
 }: {
   courseId: string;
   initial: CourseSettings;
@@ -61,6 +69,8 @@ export function CourseSettingsForm({
   instructors?: InstructorOption[];
   /** Whether the viewer may change the course's instructor (owner / brand_admin). */
   canAssignInstructor?: boolean;
+  /** Active enrollments, shown in the price-change confirmation. Null when the caller didn't load it. */
+  enrollmentCount?: number | null;
 }) {
   const router = useRouter();
   const [v, setV] = useState<CourseSettings>(initial);
@@ -68,6 +78,11 @@ export function CourseSettingsForm({
   const [errMsg, setErrMsg] = useState<string | null>(null);
   const [savedSnapshot, setSavedSnapshot] = useState(() => JSON.stringify(initial));
   const dirty = JSON.stringify(v) !== savedSnapshot;
+  // The last SAVED pricing, which a proposed change is judged against, plus the change waiting on an
+  // explicit confirmation. This is the second of the two ways a price changes; /admin/pricing is the
+  // other, and both go through the same helper and the same server-side confirm gate.
+  const [savedPricing, setSavedPricing] = useState<PriceState>(() => pricingOf(initial));
+  const [pending, setPending] = useState<PriceChangeItem[] | null>(null);
 
   // Warn before leaving (tab close / refresh / external nav) with unsaved changes.
   useEffect(() => {
@@ -83,10 +98,12 @@ export function CourseSettingsForm({
   function set<K extends keyof CourseSettings>(k: K, val: CourseSettings[K]) {
     setV((p) => ({ ...p, [k]: val }));
     setState("idle");
+    // Editing a price field invalidates a confirmation already on screen: it describes the OLD
+    // proposal, and confirming it would apply consequences nobody read.
+    if (k === "price" || k === "priceType" || k === "billingInterval") setPending(null);
   }
 
-  async function save(e: React.FormEvent) {
-    e.preventDefault();
+  async function submit(confirm: boolean) {
     setState("saving");
     setErrMsg(null);
     let r: Response;
@@ -94,7 +111,7 @@ export function CourseSettingsForm({
       r = await fetch(`/api/courses/${courseId}`, {
         method: "PATCH",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify(v),
+        body: JSON.stringify(confirm ? { ...v, confirm: true } : v),
       });
     } catch {
       setState("error");
@@ -104,20 +121,46 @@ export function CourseSettingsForm({
     if (r.ok) {
       setState("saved");
       setSavedSnapshot(JSON.stringify(v)); // clears the unsaved-changes warning
+      setSavedPricing(pricingOf(v));
+      setPending(null);
       router.refresh();
       return;
     }
-    // Surface WHY it didn't save — a vague "couldn't save" reads as "changes didn't persist".
+    // Surface WHY it didn't save, because a vague "couldn't save" reads as "changes didn't persist".
     setState("error");
-    const serverMsg = await r
+    const body = await r
       .json()
-      .then((d: { error?: string }) => d?.error)
+      .then((d: { error?: string; needsConfirmation?: boolean; changes?: PriceChangeItem[] }) => d)
       .catch(() => null);
+    // The server re-checks the price against the DB, so it can refuse a change this form thought was
+    // immaterial (someone edited the price elsewhere). Show ITS warnings rather than a bare error.
+    if (r.status === 409 && body?.needsConfirmation && body.changes && body.changes.length > 0) {
+      setPending(body.changes);
+      setErrMsg(body.error ?? "This price change needs your confirmation.");
+      return;
+    }
     setErrMsg(
       r.status === 403
-        ? "You don't have permission to edit this course, it's owned by another instructor. Ask an admin to reassign it to you (Course settings → Instructor)."
-        : serverMsg || `Could not save (error ${r.status}).`,
+        ? "You don't have permission to edit this course, it's owned by another instructor. Ask an admin to reassign it to you (Course settings, Instructor)."
+        : body?.error || `Could not save (error ${r.status}).`,
     );
+  }
+
+  function save(e: React.FormEvent) {
+    e.preventDefault();
+    // A material price change stops here for an explicit confirmation. Everything else, including a
+    // price edit that changes nothing a learner would notice, saves in one click as before.
+    const a = assessPriceChange(savedPricing, pricingOf(v), {
+      enrollmentCount,
+      stripeConfigured: hasStripe,
+    });
+    if (a.material && !pending) {
+      setState("idle");
+      setErrMsg(null);
+      setPending([{ courseId, title: v.title, ...a }]);
+      return;
+    }
+    void submit(a.material);
   }
 
   const field = "min-h-11 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900";
@@ -303,6 +346,19 @@ export function CourseSettingsForm({
           <label className="flex items-center gap-2"><input type="checkbox" checked={v.isFeatured} onChange={(e) => set("isFeatured", e.target.checked)} /> Featured on the catalog</label>
         ) : null}
       </fieldset>
+
+      {pending ? (
+        <PriceChangeConfirm
+          changes={pending}
+          busy={state === "saving"}
+          confirmLabel="Yes, change the price and save"
+          onConfirm={() => void submit(true)}
+          onCancel={() => {
+            setPending(null);
+            setV((p) => ({ ...p, ...savedPricing, billingInterval: savedPricing.billingInterval ?? null }));
+          }}
+        />
+      ) : null}
 
       <div className="flex items-center gap-3">
         <button type="submit" disabled={state === "saving"} className="min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>

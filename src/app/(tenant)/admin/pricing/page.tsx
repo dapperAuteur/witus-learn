@@ -3,6 +3,8 @@ import Link from "next/link";
 import { requirePlatformOwner } from "@/lib/session";
 import { getScopedDb } from "@/db/scoped";
 import { listCourses } from "@/db/queries/catalog";
+import { countActiveEnrollmentsByCourse } from "@/db/queries/enrollment";
+import { hasStripe } from "@/lib/env";
 import {
   PRICE_TIERS,
   SUBSCRIPTION_RECOMMENDATION,
@@ -35,6 +37,9 @@ export default async function PricingPage() {
   await requirePlatformOwner();
   const sdb = await getScopedDb();
   const courses = await listCourses(sdb.tenantId, { includeUnpublished: true });
+  // Active enrollments per course, in one grouped query. It is the number that makes a free-to-paid
+  // change real, so the confirm step can say how many learners it is being made in front of.
+  const enrolled = await countActiveEnrollmentsByCourse(sdb.tenantId);
 
   const rows: PricingRow[] = courses
     .map((c) => {
@@ -49,6 +54,7 @@ export default async function PricingPage() {
         billingInterval: c.billingInterval as PricingRow["billingInterval"],
         proposedPrice: p.price,
         proposedTier: p.tier,
+        enrollmentCount: enrolled.get(c.id) ?? 0,
       };
     })
     .sort((a, b) => a.category.localeCompare(b.category) || b.proposedPrice - a.proposedPrice);
@@ -130,9 +136,11 @@ export default async function PricingPage() {
         </h2>
         <p className="mb-3 text-sm text-neutral-600 dark:text-neutral-400">
           Click a course name to open its manage page. The proposed price is the tier recommendation;
-          Apply proposed sets it as a one-time price (or Free when the tier is $0).
+          Apply proposed sets it as a one-time price (or Free when the tier is $0). Any change that a
+          learner or Stripe would notice stops for a confirmation step first, with what it does and how
+          many learners are already enrolled.
         </p>
-        <PricingManager rows={rows} />
+        <PricingManager rows={rows} hasStripe={hasStripe} />
       </section>
 
       <section aria-labelledby="bundles" className="mt-10">
