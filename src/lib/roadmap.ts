@@ -246,6 +246,19 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   lesson recording** (offline-first audio: MediaRecorder → IndexedDB → queued Cloudinary upload →
   auto-attach + mark recorded). Migration 0020.
 
+- 🔧 **Media verification** (\`feat/admin-media-verify\`): owner-only **/admin/media**, the third
+  review list beside Citations and Source checks, and the one that covers what neither of those can.
+  Every uploaded **image, video, audio file and document** is registered in the tenant-scoped
+  \`media_assets\` table (migration **0049**) with its **provenance triple** (credit, rights status,
+  source) and reviewed **before its course goes live**: the card renders the real asset, not a
+  filename, because whether a scan is legible or a caption matches the picture cannot be checked from
+  a spreadsheet. **A rejection requires a note**, and media whose rights read \`unknown\` cannot be
+  approved at all, the same discipline the citation board enforces. The top of the page says how many
+  are pending, approved and rejected, and **which courses still have media waiting**. Register an
+  upload by POSTing to \`/api/admin/media\`; decisions go to \`PATCH /api/admin/media/[id]\`, which 404s
+  a foreign-tenant id rather than redirecting. Pure clearance logic in \`src/lib/media-verify.ts\`
+  (\`isCourseMediaCleared\`), unit-tested plus an isolation test.
+
 ### Platform backlog
 - ⚪ **Add RideWitUS to cross-promotion when it's public**: it's intentionally omitted from
   \`src/lib/ecosystem.ts\` because it isn't registered in the canonical \`gemini/witus/lib/products.ts\`

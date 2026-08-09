@@ -344,6 +344,13 @@
       "when": 1785984677216,
       "tag": "0048_nebulous_vermin",
       "breakpoints": true
+    },
+    {
+      "idx": 49,
+      "version": "7",
+      "when": 1786281281602,
+      "tag": "0049_typical_the_leader",
+      "breakpoints": true
     }
   ]
 }
