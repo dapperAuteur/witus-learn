@@ -141,6 +141,45 @@ export function proposePricing(slug: string | null | undefined, category: string
   return { tier, price: def.price, rationale: def.rationale };
 }
 
+/**
+ * Courses that are free BY DESIGN, with the reason, so the decision survives the person who made it.
+ *
+ * WHY THIS EXISTS. A course row that reads price 0 / priceType "free" is ambiguous in the worst way:
+ * it means either "we decided this is the funnel" or "nobody has priced it yet." Those look identical
+ * in the database and call for opposite actions. This list is the difference.
+ *
+ * It is read by the price-change warning, so an owner about to make one of these paid sees the reason
+ * it was free BEFORE they confirm, rather than discovering the funnel is gone from a traffic chart a
+ * month later. Removing a slug from this list is itself the decision to stop treating it as a funnel,
+ * and it belongs in a diff someone can review.
+ *
+ * The seeder applies `priceType` on FIRST INSERT ONLY (scripts/lib/seed-authored-course.ts), so
+ * nothing here fights an owner who deliberately changes a price later. This is a warning, not a lock.
+ */
+const HERE_BE_DRAGONS_REASON =
+  "One of the five Here Be Dragons courses, ALL of which are free by design (BAM, 2026-08-09). The series is the acquisition channel for the whole catalog rather than a product in itself: it is the argument for what a cited, standards-aligned course is, so reach is worth more than per-course revenue on it. Pricing any one of them breaks the funnel and should be a deliberate decision to stop using the series that way, not a tidy-up.";
+
+export const FREE_BY_DESIGN: { slug: string; reason: string }[] = [
+  { slug: "monsters-at-the-edge-of-the-map", reason: HERE_BE_DRAGONS_REASON },
+  { slug: "giants-dragons-and-the-bones", reason: HERE_BE_DRAGONS_REASON },
+  { slug: "deep-time-and-the-dinosaur-renaissance", reason: HERE_BE_DRAGONS_REASON },
+  { slug: "wrong-for-good-reasons", reason: HERE_BE_DRAGONS_REASON },
+  { slug: "writing-the-world", reason: HERE_BE_DRAGONS_REASON },
+  {
+    slug: "river-what-an-expedition-is",
+    reason:
+      "Course 1 of 11 in the River Expedition series, free because it is the series funnel and the course that has to earn a stranger's attention.",
+  },
+];
+
+const FREE_BY_DESIGN_BY_SLUG = new Map(FREE_BY_DESIGN.map((c) => [c.slug, c.reason]));
+
+/** The reason a course is deliberately free, or null if it is not on the list. */
+export function freeByDesignReason(slug: string | null | undefined): string | null {
+  if (!slug) return null;
+  return FREE_BY_DESIGN_BY_SLUG.get(slug) ?? null;
+}
+
 /** Recommended all-access subscription, the model the page recommends as primary. */
 export const SUBSCRIPTION_RECOMMENDATION = {
   monthly: 12,

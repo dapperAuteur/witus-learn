@@ -18,6 +18,14 @@ import {
   listCourseAuditors,
   revokeCourseAuditor,
 } from "@/db/queries/course-auditors";
+import {
+  getMediaAsset,
+  listMediaAssets,
+  setMediaAssetStatus,
+  upsertMediaAsset,
+  type SetMediaAssetStatus,
+  type UpsertMediaAsset,
+} from "@/db/queries/media-assets";
 
 /**
  * The mandatory tenant-scoped data-access chokepoint.
@@ -113,6 +121,31 @@ export class ScopedDb {
   /** Is this person an ACCEPTED auditor of this course, in this tenant? */
   isCourseAuditor(input: { courseId: string; userId: string | null; email: string | null }) {
     return isCourseAuditor({ tenantId: this.tenantId, ...input });
+  }
+
+  // ── Media verification (/admin/media) ──────────────────────────────────────
+  // Uploaded images/video/audio/documents awaiting the owner's approve/reject decision. Scoped
+  // here like every other content read: one school's unreviewed media is invisible to another,
+  // and a by-id read for a foreign asset returns nothing (the route 404s, never redirects).
+
+  /** Every registered asset for THIS tenant, newest first. */
+  listMediaAssets() {
+    return listMediaAssets(this.tenantId);
+  }
+
+  /** One asset, or undefined for an id that is not this tenant's. */
+  getMediaAsset(id: string) {
+    return getMediaAsset(this.tenantId, id);
+  }
+
+  /** Register an upload (or refresh its details); the decision is never reset by a re-register. */
+  upsertMediaAsset(input: Omit<UpsertMediaAsset, "tenantId">) {
+    return upsertMediaAsset({ tenantId: this.tenantId, ...input });
+  }
+
+  /** Record an approve/reject decision. Undefined when the id is not this tenant's. */
+  setMediaAssetStatus(input: Omit<SetMediaAssetStatus, "tenantId">) {
+    return setMediaAssetStatus({ tenantId: this.tenantId, ...input });
   }
 }
 

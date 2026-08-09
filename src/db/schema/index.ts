@@ -24,3 +24,4 @@ export * from "./ebook-approvals";
 export * from "./bundles";
 export * from "./auditors";
 export * from "./library";
+export * from "./media-assets";

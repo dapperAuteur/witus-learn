@@ -3,18 +3,47 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+/**
+ * What a price change does to someone who enrolls TODAY. Every sentence is what the code does, not a
+ * policy we would like to have:
+ *
+ * - Free and one-time: src/lib/gating.ts only applies the paywall to a viewer who is NOT enrolled, and
+ *   no price-change path touches the enrollments table, so an active enrollment survives any later
+ *   price change. The one thing that cancels an enrollment is the Stripe webhook on
+ *   customer.subscription.deleted (src/app/api/stripe/webhook/route.ts), which matches by Stripe
+ *   subscription id and so can never match a free or one-time enrollment.
+ * - Subscription: that webhook CAN match, so access is not permanent and this copy does not say it is.
+ *   What it does say (the amount does not change under you) holds because nothing in this app calls
+ *   the Stripe subscription API, so an existing subscription keeps the price it was created with.
+ *
+ * If any of that changes, change this copy in the same commit. A false reassurance about access is
+ * worse than no copy at all.
+ */
+function accessNote(isFree: boolean, priceType: "free" | "one_time" | "subscription"): string {
+  if (isFree) {
+    return "Enroll now and this course stays open to you, free, even if its price changes later.";
+  }
+  if (priceType === "subscription") {
+    return "Your access runs for as long as your subscription is active, and if this course's price changes later your subscription keeps the amount you signed up at.";
+  }
+  return "What you buy today stays yours: if this course's price changes later, your access does not change.";
+}
+
 // Enroll (free) + claim-certificate actions for the course page. The server
 // re-validates everything; these just call the APIs and refresh.
 export function CourseActions({
   courseId,
   enrolled,
   isFree,
+  priceType,
   priceLabel,
   allComplete,
 }: {
   courseId: string;
   enrolled: boolean;
   isFree: boolean;
+  /** Drives the access disclosure, because a subscription is the one kind that can be revoked. */
+  priceType: "free" | "one_time" | "subscription";
   priceLabel: string;
   allComplete: boolean;
 }) {
@@ -84,6 +113,12 @@ export function CourseActions({
         <a href={verifyUrl} className="text-sm underline">
           View your certificate →
         </a>
+      ) : null}
+      {/* Said where the decision is made, and only to someone who has not enrolled yet. */}
+      {!enrolled ? (
+        <p className="w-full text-sm text-neutral-600 dark:text-neutral-400">
+          {accessNote(isFree, priceType)}
+        </p>
       ) : null}
       {error ? (
         <p role="alert" className="w-full text-sm text-red-600">

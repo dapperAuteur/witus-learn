@@ -246,6 +246,19 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   lesson recording** (offline-first audio: MediaRecorder → IndexedDB → queued Cloudinary upload →
   auto-attach + mark recorded). Migration 0020.
 
+- 🔧 **Media verification** (\`feat/admin-media-verify\`): owner-only **/admin/media**, the third
+  review list beside Citations and Source checks, and the one that covers what neither of those can.
+  Every uploaded **image, video, audio file and document** is registered in the tenant-scoped
+  \`media_assets\` table (migration **0049**) with its **provenance triple** (credit, rights status,
+  source) and reviewed **before its course goes live**: the card renders the real asset, not a
+  filename, because whether a scan is legible or a caption matches the picture cannot be checked from
+  a spreadsheet. **A rejection requires a note**, and media whose rights read \`unknown\` cannot be
+  approved at all, the same discipline the citation board enforces. The top of the page says how many
+  are pending, approved and rejected, and **which courses still have media waiting**. Register an
+  upload by POSTing to \`/api/admin/media\`; decisions go to \`PATCH /api/admin/media/[id]\`, which 404s
+  a foreign-tenant id rather than redirecting. Pure clearance logic in \`src/lib/media-verify.ts\`
+  (\`isCourseMediaCleared\`), unit-tested plus an isolation test.
+
 ### Platform backlog
 - ⚪ **Add RideWitUS to cross-promotion when it's public**: it's intentionally omitted from
   \`src/lib/ecosystem.ts\` because it isn't registered in the canonical \`gemini/witus/lib/products.ts\`
@@ -497,6 +510,22 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Tenant isolation is tested (a bundle 404s across tenants and never surfaces another tenant's course).
   Promos and ecosystem cross-promo (CentenarianOS, FlashLearnAI) already worked and are unchanged.
   **After merge: \`pnpm db:migrate:prod\`, then \`pnpm seed:bundles\`.**
+- 🔧 **Price-change check and warning** (\`src/lib/price-change.ts\`, no migration). A price is
+  changeable from two places, \`/admin/pricing\` and a course's own settings form, and until now both
+  saved silently, so a free funnel course could be made paid by a stray click and nobody would know
+  what that did. One pure helper now classifies a proposed change (free to paid, paid to free, an
+  increase or decrease, a one-time / subscription switch, or nothing material) and returns the
+  consequences it actually carries: the cached Stripe price is cleared so the next checkout mints a
+  new one, existing subscribers are NOT cancelled or migrated by anything this app does, nobody is
+  refunded a difference, and the new price is public the moment it saves. Both write paths refuse a
+  material change without an explicit \`confirm: true\` and answer **409** with the warning list, so
+  the guard survives a direct API call, and both UIs show that list plus the course's CURRENT
+  ENROLLMENT COUNT before anything is written. An immaterial edit still saves in one click, because a
+  warning that fires on everything gets clicked through. Learner side, the course page now states what
+  is genuinely true at the point of decision: an active enrollment survives a later price change
+  (\`src/lib/gating.ts\` checks enrollment before price, and no price path touches enrollments), with
+  the subscription case worded honestly, since a deleted Stripe subscription does cancel that
+  enrollment.
 - 🔧 **Bundle proposals + the bundle-sales gap** (\`src/lib/bundles.ts\`, on \`/admin/pricing\`).
   Six themed bundles (the full route series, Black History Through Place, Civics Essentials, the state
   civics collection, the two structural paths, and the global labor series), each with an APP price and
@@ -629,6 +658,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   **homeschool/teacher market**. Monsters at the Edge of the Map (20) · Giants, Dragons, and the
   Bones They Came From (22) · Deep Time and the Dinosaur Renaissance (25) · Wrong for Good Reasons
   (22) · Writing the World (20, the ELA capstone). **No migration**, seeds with \`pnpm seed:courses\`.
+  **All five are FREE** (BAM, 2026-08-09): the series is the acquisition channel for the catalog
+  rather than a product in itself. Expressed in code, not left to a manual step: the seeder now takes
+  a \`priceType\` applied **on first insert only** (so a re-seed can never revert a price set by hand),
+  and \`FREE_BY_DESIGN\` in \`src/lib/course-pricing.ts\` records WHY each is free, because a row
+  reading price 0 otherwise means either "this is the funnel" or "nobody priced it yet" and those
+  call for opposite actions. **10 public-domain/CC0 images** are uploaded to Cloudinary by the new
+  \`scripts/upload-course-media.mjs\`, which rights-checks every asset against the Wikimedia licence
+  metadata, refuses anything it cannot classify as free-with-commercial-use, and verifies the target
+  lesson slug exists before uploading. They await approval at \`/admin/media\` and do not render until
+  the \`:::figure\` directive ships.
   **The rule the series is built on:** the obvious framing, "people thought the world was flat, then
   we got smart," is **factually wrong**, and shipping it would have been the worst possible failure
   for a catalog whose trust signal is that it checks claims. Educated Europeans knew the earth was

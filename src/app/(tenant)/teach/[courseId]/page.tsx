@@ -8,6 +8,7 @@ import { hasStripe } from "@/lib/env";
 import { listLessons, listModules, listTenantInstructors } from "@/db/queries/authoring";
 import { listLinkUsage } from "@/db/queries/link-clicks";
 import { countCourseNotifySignups } from "@/db/queries/leads";
+import { countActiveEnrollments } from "@/db/queries/enrollment";
 import { isUnvetted } from "@/lib/vetting";
 import { getCourseRecallStats } from "@/db/queries/recall";
 import { CourseSettingsForm } from "@/components/course-settings-form";
@@ -34,8 +35,18 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   // Sibling authoring links keep the readable slug when the course has one.
   const courseHref = `/teach/${course.slug ?? course.id}`;
 
-  const [lessons, owner, membership, categories, linkUsage, recallStats, modules, waiting, auditors] =
-    await Promise.all([
+  const [
+    lessons,
+    owner,
+    membership,
+    categories,
+    linkUsage,
+    recallStats,
+    modules,
+    waiting,
+    auditors,
+    enrolledNow,
+  ] = await Promise.all([
       listLessons(courseId),
       isPlatformOwner(session.user.id),
       getMembership(session.user.id, sdb.tenantId),
@@ -47,6 +58,9 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
       isUnvetted(course) ? countCourseNotifySignups(sdb.tenantId, courseId) : Promise.resolve(0),
       // Invite-to-audit grants (plans/52 section 5), read through the tenant-scoped DAL.
       sdb.listCourseAuditors(courseId),
+      // Active enrollments, shown in the price-change confirmation: the number of learners a
+      // free-to-paid switch is being made in front of.
+      countActiveEnrollments(courseId),
     ]);
 
   // Number lessons the way the learner sees them ("Module 2, Lesson 7: …") so the instructor can
@@ -120,6 +134,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           categories={categories.map((c) => c.name)}
           canAssignInstructor={isAdmin}
           instructors={instructors}
+          enrollmentCount={enrolledNow}
           initial={{
             instructorId: course.instructorId,
             title: course.title,
