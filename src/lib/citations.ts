@@ -74,6 +74,17 @@ export const STAGED_COURSES: string[] = [
   "read-your-bodys-data",
   "spanish",
   "state-civics-in",
+  // Here Be Dragons (plans/58). Staged as a set, because the series' whole subject is the difference
+  // between a claim and the evidence for it: a course teaching that, with sources nobody has checked,
+  // would be the most self-undermining thing in the catalog. Several of these deliberately cite
+  // CONTESTED scholarship (the griffin thesis and its 2024 rebuttal, the Brontosaurus proposal, the
+  // Deccan-tempo papers that disagree with each other), so a verifier should expect to confirm that a
+  // source exists and says what the lesson says it says, NOT that the field agrees with it.
+  "monsters-at-the-edge-of-the-map",
+  "giants-dragons-and-the-bones",
+  "deep-time-and-the-dinosaur-renaissance",
+  "wrong-for-good-reasons",
+  "writing-the-world",
 ];
 
 export const CITATIONS: Citation[] = STAGED_CITATIONS;
