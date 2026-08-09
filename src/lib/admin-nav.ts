@@ -26,6 +26,13 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { href: "/admin/leads", title: "Interest & leads", desc: "Who is waiting for which course, track, or bundle. Filter and export.", icon: "🎯" },
   { href: "/admin/reports", title: "Problem reports", desc: "In-app bug/idea reports to triage.", icon: "🐞" },
   { href: "/admin/paths", title: "Learning paths", desc: "Sequence courses into guided paths.", icon: "🧭" },
+  {
+    href: "/admin/graph",
+    title: "Connection graph",
+    desc: "What each course is connected to, and which ones connect to nothing. Rebuilt live on every load.",
+    icon: "🕸️",
+    ownerOnly: true,
+  },
   { href: "/admin/live", title: "Live", desc: "Schedule and run live sessions.", icon: "🔴", ownerOnly: true },
   { href: "/admin/documentarian", title: "Documentarian", desc: "Course-family build tracker, check off + leave notes.", icon: "🎬", ownerOnly: true },
   { href: "/admin/future", title: "Future classes & features", desc: "Proposed courses + features to review, leave notes Claude reads.", icon: "🔮", ownerOnly: true },

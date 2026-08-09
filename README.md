@@ -343,6 +343,40 @@ true when every registered asset for that course is approved, so "media signed o
 pre-launch condition. Migration `0049_typical_the_leader.sql` creates the table (`pnpm
 db:migrate:prod` after merging).
 
+## Connection graph (`/admin/graph`)
+
+Owner-only view of how the catalog hangs together, answering the two questions scrolling a
+180-course list cannot: *what is this course connected to*, and *what is connected to nothing?*
+
+**Derived at request time, never stored.** No table, no migration, no cron, no cache: the graph is
+rebuilt from live rows on every load, so a course added or a prerequisite set in `/admin/paths` a
+minute ago is already in it and there is no regeneration step to forget. Edges come from
+`course_prerequisites` (required, solid with an arrow; recommended, dashed with an arrow) and the
+`ENTITIES` registry (two courses covering the same person, case, law or concept, the line labelled
+with the entity's name). Category drives colour and clustering. **Entity links are code, so they
+move on deploy, not on save**, and the page says so rather than implying otherwise.
+
+Two pictures, both deterministic trigonometry with **no `d3-force` and no new dependency**, so the
+same course draws identically every time and a screenshot is comparable between sessions: an
+**ego-centric radial** view of one course with its neighbours on rings by tie strength, and a
+**whole-catalog** view clustered by category rather than scattered into a hairball. Semantic (CYOA)
+neighbours are deliberately **not** drawn: the similarity match is lesson-grained, so rolling it up
+to a course-level line is a judgment call whose choice would be visible in the output, and the
+underlying query only sees courses that opted into cross-course CYOA.
+
+The other half, and the more useful one, is the **orphan and weak-link report** under the drawing:
+unconnected published courses, single-thread courses, **category islands** (a category no edge
+leaves), entity coverage including entities inert here because fewer than two courses resolve,
+one-way recommendations, and **dangling entity references**, an `ENTITIES` course slug matching no
+course in this school, which nothing else in the app catches. That report is also the accessibility
+path: the SVG is `aria-hidden` and every node and edge it draws is a link in the tables below it.
+
+Expect most of the catalog to show as orphaned today. That is the picture telling the truth, not a
+broken page. The graph logic is pure and DB-free in
+[src/lib/course-graph.ts](src/lib/course-graph.ts) (unit-tested in `tests/course-graph.test.ts`);
+reads go through `ScopedDb.listPrerequisiteEdges()`, which scopes **both** ends of every
+prerequisite to the tenant. No migration.
+
 ## Teachers Pay Teachers packets (`/admin/tpt-plan`)
 
 Owner-only rollout plan for the TpT sales channel: which packet to post, in what order, at what
