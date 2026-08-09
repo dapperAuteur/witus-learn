@@ -88,6 +88,11 @@ export default async function ConnectionGraphPage({
 
   // Default centre: the most connected course, so the first load shows the graph doing something
   // rather than an empty ring. Ties break on the node order, which is already fixed and sorted.
+  //
+  // A `course` id that is not in this list (a stale bookmark, or an id pasted from another school)
+  // resolves to nothing and quietly falls back to the default. This is a lookup inside an
+  // already tenant-scoped set, not a by-id database read, so it cannot leak the foreign course's
+  // existence: the page renders exactly as it would with no parameter at all.
   const mostConnected = [...graph.nodes].sort((a, b) => b.degree - a.degree)[0];
   const requestedCentre = typeof sp.course === "string" ? graph.byId.get(sp.course) : undefined;
   const centreNode = requestedCentre ?? mostConnected;
@@ -218,7 +223,9 @@ export default async function ConnectionGraphPage({
         <h2 className="text-lg font-semibold tracking-tight">
           {view === "catalog"
             ? "The whole catalog, by category"
-            : `Around ${centreNode?.title ?? "nothing yet"}`}
+            : centreNode
+              ? `Around ${centreNode.title}`
+              : "Nothing to draw yet"}
         </h2>
 
         {graph.nodes.length === 0 ? (
