@@ -150,6 +150,108 @@ export const ENTITIES: Entity[] = [
       { courseSlug: "what-they-built", note: "The population that built the northern business districts." },
     ],
   },
+
+  // ══ CONCEPT entities (plans/58, and the finding in plans/57) ══════════════════════════════════════
+  //
+  // The registry's first entities that are not a case, a law or a place. That matters more than it
+  // sounds: /admin/graph established that 20 of 22 categories are ISLANDS, connected by 3 edges in
+  // total, because a case or a place can only ever link courses that share a period and a geography.
+  // A concept links courses that share neither, which is the only kind of edge that can cross a
+  // category boundary. Two of the four below do exactly that, into Study Skills and into the
+  // precolonial track.
+  //
+  // EVERY course listed here was verified against the actual lesson text before being added, and two
+  // proposed entities were DROPPED rather than shipped: `the-cardiff-giant` and `the-bone-wars` are
+  // each taught in exactly one course, and the registry hides an entity with fewer than two of a
+  // tenant's courses, so they would have been invisible rows pretending to be connections.
+  {
+      slug: "what-would-change-my-mind",
+      kind: "concept",
+      name: "What would change my mind",
+      aliases: ["what would change your mind", "falsifiable", "losing condition"],
+      description:
+        "The question that separates holding a belief from defending one: naming in advance the evidence that would make you drop it.",
+      courses: [
+        {
+          courseSlug: "wrong-for-good-reasons",
+          note: "The course is built on it. Lesson 1 poses it and the graded assignment closes on it, applied to a claim the learner actually holds.",
+        },
+        {
+          courseSlug: "giants-dragons-and-the-bones",
+          note: "Used as a tool on a live dispute: lesson 4 names what would DAMAGE each side of the griffin argument, rather than picking a winner.",
+        },
+        {
+          courseSlug: "deep-time-and-the-dinosaur-renaissance",
+          note: "Lesson 18 leaves the end-Cretaceous questions open and says what would settle each one.",
+        },
+        {
+          courseSlug: "woop",
+          note: 'Stated as the third test of a real theory: "if nothing would, you are not doing science, you are doing loyalty."',
+        },
+      ],
+    },
+    {
+      slug: "who-gets-believed",
+      kind: "concept",
+      name: "Who gets believed",
+      aliases: ["whose name goes on the paper", "credit"],
+      description:
+        "Whose account is treated as evidence, and what a record loses when the answer depends on the speaker's class, sex, discipline or nation rather than on what they found.",
+      courses: [
+        {
+          courseSlug: "wrong-for-good-reasons",
+          note: "Lesson 15 names the cost to the record directly, and holds the genre to its own standard by including a case historians have since complicated.",
+        },
+        {
+          courseSlug: "deep-time-and-the-dinosaur-renaissance",
+          note: 'Lesson 7, "Whose name goes on the paper": Mary Anning found them, and the papers carried other people\'s names.',
+        },
+        {
+          courseSlug: "monsters-at-the-edge-of-the-map",
+          note: "Lesson 14 asks who was mapping whom, and separates the survival of a document from the existence of knowledge.",
+        },
+      ],
+    },
+    {
+      slug: "the-missing-actor",
+      kind: "concept",
+      name: "The missing actor",
+      aliases: ["passive voice", "may have inspired"],
+      description:
+        "A sentence built so that nobody did anything: the passive voice, the agentless hedge, and what a reader stops asking once the actor is gone.",
+      courses: [
+        {
+          courseSlug: "writing-the-world",
+          note: 'Lesson 9, "The passive voice and the missing actor", teaches the move and how to reverse it.',
+        },
+        {
+          courseSlug: "giants-dragons-and-the-bones",
+          note: 'Lesson 5 makes one hedge the object of study: what "may have inspired" asserts, and what it quietly declines to.',
+        },
+      ],
+    },
+    {
+      slug: "discovery-as-a-word",
+      kind: "concept",
+      name: "Discovery as a word",
+      aliases: ["a word with an owner", "did not discover"],
+      description:
+        "Who a thing is said to have been discovered by, and what that word does to the people who already knew about it.",
+      courses: [
+        {
+          courseSlug: "giants-dragons-and-the-bones",
+          note: 'Lesson 12 is the argument in full: "Discovery" is a word with an owner, applied to fossil beds people had known for generations.',
+        },
+        {
+          courseSlug: "monsters-at-the-edge-of-the-map",
+          note: "Lesson 14 makes the same move about maps: European mapping produced documents that entered archives, which is a fact about institutions rather than about who understood their world.",
+        },
+        {
+          courseSlug: "asia-before-european-colonization",
+          note: 'Lesson 10 states it plainly about Angkor: the 1860s European traveller "did not discover a lost city", because Khmer people were worshipping in it.',
+        },
+      ],
+    },
 ];
 
 const BY_SLUG = new Map(ENTITIES.map((e) => [e.slug, e]));

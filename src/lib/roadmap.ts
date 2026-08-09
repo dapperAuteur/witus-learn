@@ -690,6 +690,20 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   all public domain or CC0, registered into /admin/media by the new \`pnpm register:media\` and
   awaiting approval. Renders a semantic \`<figure>\`/\`<figcaption>\` so the caption is
   programmatically tied to the image rather than merely near it. No migration.
+- 🔧 **The catalog's first CONCEPT entities** (\`feat/dragons-shared-surfaces\`, \`plans/58\` §5).
+  Direct answer to what /admin/graph found: 20 of 22 categories were islands, because a case, a law
+  or a place can only link courses that share a period and a geography. A CONCEPT links courses that
+  share neither, which is the only edge type that can cross a category boundary. Four added, and two
+  of them do exactly that: **what-would-change-my-mind** reaches Study Skills (WOOP states it as the
+  third test of a real theory), and **discovery-as-a-word** reaches the precolonial track (Asia
+  Before European Colonization says outright that the 1860s traveller did not discover Angkor, because
+  Khmer people were worshipping in it). Plus **who-gets-believed** and **the-missing-actor**.
+  Entity edges 12 → 25, courses touched 18. **Two proposed entities were DROPPED rather than shipped:**
+  the Cardiff Giant and the Bone Wars are each taught in exactly one course, and the registry hides an
+  entity with fewer than two, so they would have been invisible rows pretending to be connections.
+  Every course listed was checked against the actual lesson text first. Also adds a second
+  \`:::timeline\` lane pair to the catalog rail (**claim vs evidence**, free-form lane strings so no
+  code change) and 7 globe pins. No migration.
 - 🔧 **Here Be Dragons: how we learned what the world is** (\`content/here-be-dragons-series\`,
   \`plans/58\`). **Five courses, 109 lessons**, Culture & History, aimed squarely at the grades 9-12
   **homeschool/teacher market**. Monsters at the Edge of the Map (20) · Giants, Dragons, and the
