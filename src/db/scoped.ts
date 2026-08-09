@@ -26,6 +26,7 @@ import {
   type SetMediaAssetStatus,
   type UpsertMediaAsset,
 } from "@/db/queries/media-assets";
+import { listTenantPrerequisiteEdges } from "@/db/queries/prerequisites";
 
 /**
  * The mandatory tenant-scoped data-access chokepoint.
@@ -146,6 +147,13 @@ export class ScopedDb {
   /** Record an approve/reject decision. Undefined when the id is not this tenant's. */
   setMediaAssetStatus(input: Omit<SetMediaAssetStatus, "tenantId">) {
     return setMediaAssetStatus({ tenantId: this.tenantId, ...input });
+  }
+
+  // ── Connection graph (/admin/graph, plans/57) ──────────────────────────────
+
+  /** Every prerequisite relationship inside THIS tenant, both ends scoped. Ids only. */
+  listPrerequisiteEdges() {
+    return listTenantPrerequisiteEdges(this.tenantId);
   }
 }
 

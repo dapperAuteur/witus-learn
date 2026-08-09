@@ -259,6 +259,30 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   a foreign-tenant id rather than redirecting. Pure clearance logic in \`src/lib/media-verify.ts\`
   (\`isCourseMediaCleared\`), unit-tested plus an isolation test.
 
+- 🔧 **Connection graph** (\`feat/admin-connection-graph\`, **no migration**): owner-only
+  **/admin/graph**, which answers the two questions a 180-course catalog cannot answer by scrolling:
+  *what is this course connected to*, and *what is connected to nothing?* **Derived at request time**
+  from live rows, never stored, so there is no regeneration step to forget and no stale copy to
+  distrust: a course added or a prerequisite set in \`/admin/paths\` a minute ago is already in it.
+  Edges come from \`course_prerequisites\` (required, solid + arrow; recommended, dashed + arrow) and
+  the \`ENTITIES\` registry (a shared person/case/law/concept, labelled with the entity's name);
+  colour and clustering come from the course's category. Two views: an **ego-centric radial** picture
+  of one course on rings by tie strength, and a **whole-catalog** view clustered by category rather
+  than scattered into a hairball. Deterministic trigonometry, **no \`d3-force\` and no new
+  dependency**, so the same course draws identically every load and a screenshot is comparable
+  between sessions. The other half, and the more useful one, is the **orphan and weak-link report**:
+  unconnected published courses, single-thread courses, **category islands**, entity coverage
+  (including entities inert because fewer than two courses resolve), one-way recommendations, and
+  **dangling entity references** (an \`ENTITIES\` course slug matching no course here), which nothing
+  else in the app catches. The report is also the accessibility path through the drawing: the SVG is
+  \`aria-hidden\` and every node and edge it shows is a link in the tables under it. Pure, DB-free
+  graph builder in \`src/lib/course-graph.ts\` with a unit suite; reads go through
+  \`ScopedDb.listPrerequisiteEdges()\`, which scopes **both** ends of every prerequisite to the tenant.
+  **Entity links move on deploy, not on save** (the registry is code), and the page says so.
+  Semantic/CYOA edges (ring 4) are **not shipped**: the similarity match is lesson-grained, so the
+  course-level rollup rule is a visible judgment call, and the underlying query only sees courses
+  that opted into cross-course CYOA. It ships when that rule is decided and can be labelled.
+
 ### Platform backlog
 - ⚪ **Add RideWitUS to cross-promotion when it's public**: it's intentionally omitted from
   \`src/lib/ecosystem.ts\` because it isn't registered in the canonical \`gemini/witus/lib/products.ts\`

@@ -1,4 +1,5 @@
 import { and, asc, eq, inArray } from "drizzle-orm";
+import { alias } from "drizzle-orm/pg-core";
 import { db } from "@/db/client";
 import {
   courseCompletions,
@@ -12,6 +13,40 @@ import { unmetRequired } from "@/lib/prerequisites";
 export interface PrerequisiteRow {
   prereq: Course;
   enforcement: string;
+}
+
+/** One prerequisite relationship, ids only, for the connection graph. */
+export interface PrerequisiteEdgeRow {
+  courseId: string;
+  prerequisiteCourseId: string;
+  enforcement: string;
+}
+
+/**
+ * Every prerequisite relationship inside ONE tenant, for the owner-only connection graph.
+ *
+ * `course_prerequisites` carries no tenant column of its own, so both ends are joined back to
+ * `courses` and BOTH are filtered on the tenant. Filtering only the dependent end would let a row
+ * that somehow points at another school's course pull that course into this school's graph, which
+ * is exactly the leak the isolation rule exists to stop. A cross-tenant row would be a data bug;
+ * this query declines to draw it either way.
+ */
+export async function listTenantPrerequisiteEdges(
+  tenantId: string,
+): Promise<PrerequisiteEdgeRow[]> {
+  const dependent = alias(courses, "dependent_course");
+  const prereq = alias(courses, "prereq_course");
+  return db
+    .select({
+      courseId: coursePrerequisites.courseId,
+      prerequisiteCourseId: coursePrerequisites.prerequisiteCourseId,
+      enforcement: coursePrerequisites.enforcement,
+    })
+    .from(coursePrerequisites)
+    .innerJoin(dependent, eq(dependent.id, coursePrerequisites.courseId))
+    .innerJoin(prereq, eq(prereq.id, coursePrerequisites.prerequisiteCourseId))
+    .where(and(eq(dependent.tenantId, tenantId), eq(prereq.tenantId, tenantId)))
+    .orderBy(asc(coursePrerequisites.sortOrder));
 }
 
 /** A course's prerequisites with the prereq course rows (tenant inherited). */
