@@ -4257,8 +4257,12 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     id: "dragons.repetition-is-not-corroboration",
     claim:
       "Teaches that repeated claims count as evidence only when their sources are independent, and drills tracing a claim back to its earliest form.",
-    courseSlugs: ["monsters-at-the-edge-of-the-map"],
+    courseSlugs: ["monsters-at-the-edge-of-the-map", "giants-dragons-and-the-bones"],
     lessons: [
+      // The dragon-bone story split into what the record documents (Haberer's drugstore collection,
+      // Schlosser 1903, excavation from 1921) and what it does not (a causal arrow from that tooth
+      // to that hill), which is the same corroboration discipline on a story worth wanting.
+      "1 · A tooth in a Beijing apothecary",
       // The island-whale is followed from the Physiologus through Brendan and Sinbad to a 1539 map,
       // and the lesson names the rule: nine sources copying a tenth is one piece of evidence and
       // nine copies.
@@ -4269,6 +4273,23 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // The course opens by taking its own most famous fact apart: one object, and specialists
       // disagree about what its inscription says.
       "1 · The phrase that is on almost no map",
+    ],
+  },
+  {
+    id: "dragons.hold-a-dispute-open",
+    claim:
+      "Evaluates two published positions on one question without resolving it, naming the narrow sentence in dispute and what each side would accept as a loss.",
+    courseSlugs: ["giants-dragons-and-the-bones"],
+    lessons: [
+      // Mayor's fossil origin for the griffin against Witton and Hing's 2024 rebuttal: four strongest
+      // points per side, the losing condition for each, and an explicit refusal to issue a verdict.
+      '4 · The griffin argument, held open',
+      // The cyclops and dwarf-elephant story labelled attractive, unfalsified and unsupported, with
+      // a statement of what evidence would settle it.
+      "3 · The cyclops and the dwarf elephant",
+      // The hedge itself as the object of study: what "may have inspired" asserts, what it does not,
+      // and why a careful writer reaches for it.
+      '5 · How they wrote it: what "may have inspired" is doing',
     ],
   },
   {

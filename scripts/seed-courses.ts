@@ -110,6 +110,7 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
+import { GIANTS_DRAGONS_AND_THE_BONES_COURSE } from "./data/giants-dragons-and-the-bones-course";
 import { RIVER_WHAT_AN_EXPEDITION_IS_COURSE } from "./data/river-what-an-expedition-is-course";
 import { RIVER_WABASH_HEADWATERS_COURSE } from "./data/river-the-wabash-headwaters-course";
 import { RIVER_THE_OHIO_AND_THE_LINE_COURSE } from "./data/river-the-ohio-and-the-line-course";
@@ -856,6 +857,15 @@ async function main() {
     // courses. Sections 1-4 each end with a 12-question bank serving 8. Contains one `map` lesson
     // (the margins over time, year-driven) and one two-lane `:::timeline` (claim vs evidence).
     { slug: "monsters-at-the-edge-of-the-map", course: MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" course 2 of 5: fossils before palaeontology existed, from dragon bones in a
+    // Beijing apothecary to the Cardiff Giant's ticket price. 22 lessons, one `map` lesson and one
+    // two-lane `:::timeline` (found vs explained). Its distinctive move is lesson 4, which holds the
+    // griffin/Protoceratops dispute OPEN: Mayor's four strongest points against Witton and Hing's
+    // 2024 rebuttal, the losing condition for each side, and an explicit refusal to issue a verdict.
+    // A course about holding claims at arm's length had to do that with its own best story. Every
+    // "may have inspired" in the file is hedged in the prose on purpose, and lesson 5 makes the hedge
+    // itself the object of study.
+    { slug: "giants-dragons-and-the-bones", course: GIANTS_DRAGONS_AND_THE_BONES_COURSE, category: "Culture & History" },
     // "What a Business Entity Actually Is" is course 1 (the method course) of the "How a Business Is
     // Formed" path (plans/46, Path B): an entity is a bundle of four decisions (liability, taxation,
     // ownership/transfer, governance), and reading the formation documents as primary sources is the

@@ -19,7 +19,11 @@ export const COMMON_CORE_ELA: SharedFramework = {
     {
       code: "CCSS.ELA-Literacy.RH.11-12.6",
       text: "Evaluate authors' differing points of view on the same historical event or issue by assessing the authors' claims, reasoning, and evidence.",
-      claimIds: ["bvc.whose-voice-differing-accounts", "dragons.document-as-decisions"],
+      claimIds: [
+        "bvc.whose-voice-differing-accounts",
+        "dragons.document-as-decisions",
+        "dragons.hold-a-dispute-open",
+      ],
       coverage: "full",
       note: "The strongest single alignment on this page. Ep 4 puts a planter's euphemism and passive voice directly against two first-person accounts by formerly enslaved writers, and teaches the student to assess each author's claims and evidence. Monsters at the Edge of the Map runs the same assessment on documents rather than testimony: three contemporary map genres set against each other, then the reasons (cost, buyer, argument, inheritance) an element appears at all.",
     },
