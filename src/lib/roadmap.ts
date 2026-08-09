@@ -624,6 +624,37 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Here Be Dragons: how we learned what the world is** (\`content/here-be-dragons-series\`,
+  \`plans/58\`). **Five courses, 109 lessons**, Culture & History, aimed squarely at the grades 9-12
+  **homeschool/teacher market**. Monsters at the Edge of the Map (20) · Giants, Dragons, and the
+  Bones They Came From (22) · Deep Time and the Dinosaur Renaissance (25) · Wrong for Good Reasons
+  (22) · Writing the World (20, the ELA capstone). **No migration**, seeds with \`pnpm seed:courses\`.
+  **The rule the series is built on:** the obvious framing, "people thought the world was flat, then
+  we got smart," is **factually wrong**, and shipping it would have been the worst possible failure
+  for a catalog whose trust signal is that it checks claims. Educated Europeans knew the earth was
+  round continuously from antiquity; the medieval flat-earth story is a 19th-century construction
+  (Irving 1828, then Draper and White). So the series teaches the inverse: **people were usually
+  reasoning well from what they had**, and the questions worth asking are what they had, who they
+  would let speak, and what it took to change their minds, including ours. No condescension, ever,
+  including toward the religious.
+  Two lessons carry the weight. **Course 1 lesson 12** is the hinge: the monstrous-races device is
+  the same rhetorical move later aimed at real people, stated as the narrow defensible claim (the
+  frame did not create the interest, and the interest could not have been publicly defended so
+  easily without it) and explicitly refusing both to overstate and to understate the mechanism. It
+  bridges to \`training-the-colonizer\` and the precolonial courses. **Course 4 lesson 13** ("They
+  laughed at Galileo") sits immediately after the Wegener pair with no quiz between, because those
+  lessons would be irresponsible without it: five criteria separate a vindicated dissenter from a
+  crank, and being rejected is not one of them.
+  The series also **declines** things on purpose: NGSS is unclaimed because only HS-ESS1 was ever
+  fetched verbatim; the griffin/*Protoceratops* thesis is taught as genuinely contested with each
+  side's losing condition named; Chicxulub ends unresolved; popular figures (the Marsh/Cope species
+  counts) were dropped rather than repeated; and four **research checks** were filed instead of
+  shipping citations that could not be stood behind.
+  Standards: **six new claims** in \`src/lib/standards/claims.ts\`, all hanging off the
+  already-fetched Common Core ELA framework, so **no new publisher fetch**. Coverage ratchet moved
+  115/119 → **120/123**. Images are deliberately absent: the \`:::figure\` directive and its guard
+  have not shipped, and the public-domain scans are **operator task 243**. Every lesson stands on
+  its text.
 - 🔧 **Course codes: a catalog that says where to start** (\`feat/storytelling-true-track\`,
   migration 0047, task 235). Courses and categories now render in **curriculum order by default**
   (category \`sort_order\`, then position within a series, then title; "Newest" is still one click
