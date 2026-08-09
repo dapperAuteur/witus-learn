@@ -762,7 +762,7 @@ async function main() {
       .values({ tenantId: learnWitus, name, sortOrder })
       .onConflictDoNothing();
   }
-  for (const { slug, course, category } of [
+  for (const { slug, course, category, priceType } of [
     { slug: "knot-tying", course: KNOTS_COURSE, category: "Trade Skills" },
     { slug: "croquet", course: CROQUET_COURSE, category: "Sports" },
     { slug: "off-grid-survival", course: SURVIVAL_COURSE, category: "Survival" },
@@ -859,7 +859,14 @@ async function main() {
     // what it was later used to justify, and it links to training-the-colonizer and the precolonial
     // courses. Sections 1-4 each end with a 12-question bank serving 8. Contains one `map` lesson
     // (the margins over time, year-driven) and one two-lane `:::timeline` (claim vs evidence).
-    { slug: "monsters-at-the-edge-of-the-map", course: MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE, category: "Culture & History" },
+    // ALL FIVE Here Be Dragons courses are FREE BY DESIGN (BAM, 2026-08-09), and that is a decision
+    // rather than a default. The series is the acquisition channel for the whole catalog: it is the
+    // argument for what a cited, standards-aligned course is, so putting it in front of as many
+    // people as possible is worth more than per-course revenue on it. See FREE_BY_DESIGN in
+    // src/lib/course-pricing.ts, which the price-change warning reads so nobody flips one to paid
+    // without first seeing why it was free.
+    // `priceType` applies on FIRST INSERT ONLY, so a later re-seed never reverts a price BAM sets.
+    { slug: "monsters-at-the-edge-of-the-map", course: MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE, category: "Culture & History", priceType: "free" as const },
     // "Here Be Dragons" course 2 of 5: fossils before palaeontology existed, from dragon bones in a
     // Beijing apothecary to the Cardiff Giant's ticket price. 22 lessons, one `map` lesson and one
     // two-lane `:::timeline` (found vs explained). Its distinctive move is lesson 4, which holds the
@@ -868,7 +875,7 @@ async function main() {
     // A course about holding claims at arm's length had to do that with its own best story. Every
     // "may have inspired" in the file is hedged in the prose on purpose, and lesson 5 makes the hedge
     // itself the object of study.
-    { slug: "giants-dragons-and-the-bones", course: GIANTS_DRAGONS_AND_THE_BONES_COURSE, category: "Culture & History" },
+    { slug: "giants-dragons-and-the-bones", course: GIANTS_DRAGONS_AND_THE_BONES_COURSE, category: "Culture & History", priceType: "free" as const },
     // "Here Be Dragons" course 5 of 5, the ELA capstone and the series' standards anchor: one finding
     // written five ways (chronicle, field note, paper, press release, headline, post), then the moves
     // inside the sentence (naming, the missing actor, the hedge, the citation). 20 lessons, closing on
@@ -877,7 +884,7 @@ async function main() {
     // custody from headline back to paper with a search log that must include the searches that
     // FAILED. Deliberately teaches no `:::figure` directive, because that has not shipped; lesson 12
     // teaches alt, caption and credit as a general publishing convention instead.
-    { slug: "writing-the-world", course: WRITING_THE_WORLD_COURSE, category: "Culture & History" },
+    { slug: "writing-the-world", course: WRITING_THE_WORLD_COURSE, category: "Culture & History", priceType: "free" as const },
     // "Here Be Dragons" course 4 of 5, the epistemology payload. 22 lessons. The flat-earth story is
     // taught as a 19th-century CONSTRUCTION (Irving 1828, then Draper and White), Columbus's real
     // error was circumference and his critics were right, and geocentrism is reconstructed as good
@@ -891,7 +898,7 @@ async function main() {
     // mechanism: it cites where curriculum authority sits, names no live dispute, uses none as an
     // example, and says outright that people who disagree completely use the same procedure.
     // Astronomy detail is deliberately thin per plans/58 §6; the science track owns that.
-    { slug: "wrong-for-good-reasons", course: WRONG_FOR_GOOD_REASONS_COURSE, category: "Culture & History" },
+    { slug: "wrong-for-good-reasons", course: WRONG_FOR_GOOD_REASONS_COURSE, category: "Culture & History", priceType: "free" as const },
     // "Here Be Dragons" course 3 of 5: deep time, and a picture that kept changing AFTER science
     // arrived. 25 lessons, closing on a 29-event two-lane `:::timeline` (claim vs evidence).
     // The course's discipline is refusing to overclaim consensus. Brontosaurus is a PROPOSAL
@@ -902,7 +909,7 @@ async function main() {
     // mechanism. Popular-account figures were dropped rather than repeated: the often-quoted Marsh
     // and Cope species counts are gone, and the quarry-dynamiting story survives only as a quiz
     // distractor where it is marked WRONG.
-    { slug: "deep-time-and-the-dinosaur-renaissance", course: DEEP_TIME_AND_THE_DINOSAUR_RENAISSANCE_COURSE, category: "Culture & History" },
+    { slug: "deep-time-and-the-dinosaur-renaissance", course: DEEP_TIME_AND_THE_DINOSAUR_RENAISSANCE_COURSE, category: "Culture & History", priceType: "free" as const },
     // "What a Business Entity Actually Is" is course 1 (the method course) of the "How a Business Is
     // Formed" path (plans/46, Path B): an entity is a bundle of four decisions (liability, taxation,
     // ownership/transfer, governance), and reading the formation documents as primary sources is the
@@ -1198,6 +1205,8 @@ async function main() {
       course,
       category,
       navigationMode: "linear",
+      // Insert-only: a re-seed never rewrites a price BAM set at /admin/pricing.
+      priceType,
     });
   }
   // Hold BOTH Hoodoo courses from publishing, and make the comprehensive one PRIVATE

@@ -629,6 +629,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   **homeschool/teacher market**. Monsters at the Edge of the Map (20) · Giants, Dragons, and the
   Bones They Came From (22) · Deep Time and the Dinosaur Renaissance (25) · Wrong for Good Reasons
   (22) · Writing the World (20, the ELA capstone). **No migration**, seeds with \`pnpm seed:courses\`.
+  **All five are FREE** (BAM, 2026-08-09): the series is the acquisition channel for the catalog
+  rather than a product in itself. Expressed in code, not left to a manual step: the seeder now takes
+  a \`priceType\` applied **on first insert only** (so a re-seed can never revert a price set by hand),
+  and \`FREE_BY_DESIGN\` in \`src/lib/course-pricing.ts\` records WHY each is free, because a row
+  reading price 0 otherwise means either "this is the funnel" or "nobody priced it yet" and those
+  call for opposite actions. **10 public-domain/CC0 images** are uploaded to Cloudinary by the new
+  \`scripts/upload-course-media.mjs\`, which rights-checks every asset against the Wikimedia licence
+  metadata, refuses anything it cannot classify as free-with-commercial-use, and verifies the target
+  lesson slug exists before uploading. They await approval at \`/admin/media\` and do not render until
+  the \`:::figure\` directive ships.
   **The rule the series is built on:** the obvious framing, "people thought the world was flat, then
   we got smart," is **factually wrong**, and shipping it would have been the worst possible failure
   for a catalog whose trust signal is that it checks claims. Educated Europeans knew the earth was

@@ -42,6 +42,21 @@ export async function seedAuthoredCourse(
     relatedProducts?: string[];
     /** Delete existing lessons first (clean replacement, e.g. migrating over a sample). */
     replaceLessons?: boolean;
+    /**
+     * Initial price, applied **on FIRST INSERT ONLY** and never on a re-seed.
+     *
+     * Why insert-only, and do not "fix" this: `courses.price` / `priceType` are OWNER-EDITABLE at
+     * /admin/pricing. If a re-seed wrote them, every `pnpm seed:courses` would silently revert every
+     * price BAM had set, which is the kind of bug that is invisible until a paid course has been
+     * quietly free for a week. The refresh branch below therefore does not include these.
+     *
+     * Set it when a course is free BY DESIGN (a series funnel) rather than free by accident. Without
+     * it a new course takes the schema default, which is also free, and the two are indistinguishable
+     * in the code: one is a decision, the other is nobody having decided yet. See FREE_BY_DESIGN in
+     * src/lib/course-pricing.ts.
+     */
+    price?: number;
+    priceType?: "free" | "one_time" | "subscription";
   },
 ): Promise<string> {
   const { tenantId, instructorId, slug, course, category } = opts;
@@ -78,6 +93,10 @@ export async function seedAuthoredCourse(
         isPublished: true,
         publishedAt: new Date(),
         navigationMode,
+        // Insert-only pricing (see the option's doc comment). Omitted values fall through to the
+        // schema defaults, which are price "0" / priceType "free".
+        ...(opts.price != null ? { price: String(opts.price) } : {}),
+        ...(opts.priceType != null ? { priceType: opts.priceType } : {}),
         ...extra,
       })
       .returning({ id: schema.courses.id });
