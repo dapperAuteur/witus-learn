@@ -40,6 +40,8 @@ export interface MediaAssetRow {
   reviewNote: string | null;
   reviewedAt: string | null;
   createdAt: string;
+  /** This school's title for the course, when it holds one. Resolved server-side, tenant-scoped. */
+  courseTitle: string | null;
   /** This school's title for the lesson, when it holds one. Resolved server-side, tenant-scoped. */
   lessonTitle: string | null;
   /** Where to read that lesson, or null. */
@@ -178,7 +180,7 @@ function MediaCard({ row, onDecided }: { row: MediaAssetRow; onDecided: (next: M
           picture and whether a scan is legible enough to teach from are both questions about the
           argument the figure carries, and that argument is in the paragraphs either side of it. */}
       <ReviewContext
-        courseLabel={row.courseSlug}
+        courseLabel={row.courseTitle ?? row.courseSlug}
         lessonLabel={row.lessonTitle ?? row.lessonSlug}
         href={row.lessonHref}
         isLesson={row.lessonIsLinked}

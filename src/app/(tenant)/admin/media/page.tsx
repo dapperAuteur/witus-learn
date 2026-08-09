@@ -9,7 +9,12 @@ import {
   type MediaKind,
   type MediaStatus,
 } from "@/lib/media-verify";
-import { buildLessonLinkIndex, lessonTitleFor, reviewLocation } from "@/lib/lesson-links";
+import {
+  buildLessonLinkIndex,
+  courseTitleFor,
+  lessonTitleFor,
+  reviewLocation,
+} from "@/lib/lesson-links";
 import { proseAroundNeedle } from "@/lib/lesson-excerpt";
 import { MediaVerifyList, type MediaAssetRow } from "@/components/media-verify-list";
 
@@ -72,6 +77,7 @@ export default async function AdminMediaPage() {
       reviewNote: a.reviewNote,
       reviewedAt: a.reviewedAt ? a.reviewedAt.toISOString() : null,
       createdAt: a.createdAt.toISOString(),
+      courseTitle: courseTitleFor(links, a.courseSlug),
       lessonTitle: lessonTitleFor(links, a.courseSlug, a.lessonSlug),
       lessonHref: where.href,
       lessonIsLinked: where.isLesson,

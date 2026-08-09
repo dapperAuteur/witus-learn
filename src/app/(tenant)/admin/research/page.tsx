@@ -113,7 +113,12 @@ export default async function ResearchChecksPage() {
                 ? check.quote && body && !quoteIsLive
                   ? "The recorded sentence is no longer in this lesson. The course may have been rewritten since this check was filed."
                   : where.note
-                : "No lesson was recorded for this check, so it is not tied to one sentence.";
+                : where.href
+                  ? "No lesson was recorded for this check, so it is not tied to one sentence."
+                  : // Several checks name a group label rather than a course slug (the pricing
+                    // anchors, a course that does not exist yet). Saying the course cannot be found
+                    // is more useful than saying no lesson was recorded.
+                    where.note;
               return (
                 <li
                   key={check.key}
