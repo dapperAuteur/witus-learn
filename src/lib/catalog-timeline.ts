@@ -17,4 +17,28 @@ export const CATALOG_TIMELINE: TimelineEvent[] = [
   { year: "1974", lane: "ruling", text: "Milliken v. Bradley limits desegregation across district lines" },
   { year: "1984", lane: "ruling", text: "Hawaii Housing Authority v. Midkiff broadens the public-use doctrine" },
   { year: "2005", lane: "ruling", text: "Kelo v. New London allows taking for economic development" },
+
+  // ── Here Be Dragons (plans/58): a second lane PAIR on the same axis ──────────────────────────────
+  // The rail above is `ruling` vs `policy`, which is the route series' spine. These are `claim` vs
+  // `evidence`, and the gap between the two is the argument of the whole series: a claim about the
+  // world is made, and the evidence that could test it arrives decades or centuries later, or arrives
+  // and is ignored. `lane` is a free-form string on TimelineEvent, so this needed no code change.
+  //
+  // Read the pairs, not the rows. 1912 against 1966 is Wegener. 1811 against the 1990s is Anning.
+  // 1828 is the one to notice: a claim with no evidence behind it at all, which outlived most of the
+  // properly evidenced entries on this list.
+  { year: "77", lane: "claim", text: "Pliny compiles descriptions of peoples at the edge of the world" },
+  { year: "c. 1300", lane: "claim", text: "The Hereford Mappa Mundi draws Pliny's peoples in its margins" },
+  { year: "1375", lane: "evidence", text: "The Catalan Atlas draws Mali's ruler from Saharan trade testimony" },
+  { year: "1539", lane: "claim", text: "The Carta Marina prints excellent coastlines covered in sea monsters" },
+  { year: "1705", lane: "evidence", text: "Giant bones surface at Claverack, New York, and are read as biblical" },
+  { year: "1811", lane: "evidence", text: "Mary Anning begins finding the fossils that others will publish" },
+  { year: "1815", lane: "evidence", text: "William Smith's map shows strata as a picture for the first time" },
+  { year: "1828", lane: "claim", text: "Irving invents the Salamanca scene, and the flat-earth myth with it" },
+  { year: "1869", lane: "claim", text: "The Cardiff Giant is buried, dug up, and sold by the ticket" },
+  { year: "1912", lane: "claim", text: "Wegener proposes drifting continents and is dismissed for decades" },
+  { year: "1966", lane: "evidence", text: "Seafloor magnetic striping settles it, from instruments built for other work" },
+  { year: "1969", lane: "evidence", text: "Deinonychus overturns the sluggish, tail-dragging picture of dinosaurs" },
+  { year: "1980", lane: "claim", text: "Alvarez proposes an asteroid, on an iridium layer nobody wanted" },
+  { year: "1991", lane: "evidence", text: "The Chicxulub crater is identified, and parts of the debate stay open" },
 ];

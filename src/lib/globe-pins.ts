@@ -58,4 +58,16 @@ export const GLOBE_PINS: GlobePin[] = [
   { id: "great-zimbabwe", lat: -20.2674, lng: 30.9337, title: "Great Zimbabwe", courseSlug: "africa-before-colonization", tier: 3 },
   { id: "accra", lat: 5.6037, lng: -0.187, title: "Accra, Ghana", courseSlug: "pan-africanism", tier: 2 },
   { id: "teotihuacan", lat: 19.6925, lng: -98.8438, title: "Teotihuacan, Mesoamerica", courseSlug: "precolumbian-mesoamerica", tier: 2 },
+  // ── Here Be Dragons (plans/58): where a claim was made, and where the evidence turned out to be ──
+  // Each `year` is the year that MATTERS for the pin, and where those differ the description says so
+  // rather than letting the brush imply a discovery date. Lyme Regis is dated to Anning's finds, not
+  // to when the papers credited her; the Beijing pin is dated to the documented drugstore collection,
+  // not to the older practice it interrupted.
+  { id: "hbd-lyme-regis", lat: 50.7256, lng: -2.9366, title: "Lyme Regis, England", courseSlug: "deep-time-and-the-dinosaur-renaissance", tier: 2, year: 1811 },
+  { id: "hbd-cardiff-ny", lat: 42.83, lng: -76.15, title: "Cardiff, New York", courseSlug: "giants-dragons-and-the-bones", tier: 3, year: 1869 },
+  { id: "hbd-claverack", lat: 42.22, lng: -73.73, title: "Claverack, New York", courseSlug: "giants-dragons-and-the-bones", tier: 3, year: 1705 },
+  { id: "hbd-zhoukoudian", lat: 39.6858, lng: 115.9236, title: "Zhoukoudian, near Beijing", courseSlug: "giants-dragons-and-the-bones", tier: 2, year: 1921 },
+  { id: "hbd-chicxulub", lat: 21.4, lng: -89.5167, title: "Chicxulub crater, Yucatan", courseSlug: "deep-time-and-the-dinosaur-renaissance", tier: 2, year: 1980 },
+  { id: "hbd-uppsala", lat: 59.8586, lng: 17.6389, title: "Uppsala, Sweden", courseSlug: "monsters-at-the-edge-of-the-map", tier: 3, year: 1539 },
+  { id: "hbd-hereford", lat: 52.0567, lng: -2.7151, title: "Hereford, England", courseSlug: "monsters-at-the-edge-of-the-map", tier: 2, year: 1300 },
 ];
