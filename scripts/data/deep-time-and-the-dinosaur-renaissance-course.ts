@@ -195,7 +195,9 @@ And the cyclic, steady-state picture that made his case so elegant was also a co
       slug: "william-smiths-map",
       title: "4 · William Smith's map, and the first time strata were a picture",
       section: "Section 1 · How the earth got old",
-      body: `In 1815 a canal surveyor published a hand-coloured geological map of England and Wales, about 2.6 metres tall, showing the strata beneath the surface in bands of colour. It was called *A Delineation of the Strata of England and Wales with part of Scotland*, and there had never been anything like it at that scale.
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281374/witus/courses/here-be-dragons/deep-time-and-the-dinosaur-renaissance/william-smith-geological-map.jpg ||| A large hand-coloured geological map of England and Wales, with strata shown as bands of different colours. ||| William Smith's 1815 map: the first time strata were a picture rather than an argument. Smith was first, went uncredited by the institution, and was imprisoned for debt while his work circulated. ||| William Smith (1769-1839). Geological map Britain William Smith 1815.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Geological_map_Britain_William_Smith_1815.jpg
+In 1815 a canal surveyor published a hand-coloured geological map of England and Wales, about 2.6 metres tall, showing the strata beneath the surface in bands of colour. It was called *A Delineation of the Strata of England and Wales with part of Scotland*, and there had never been anything like it at that scale.
 
 ## How he knew
 
@@ -479,7 +481,9 @@ The gap between the columns is where you will later find your mistakes, and you 
       slug: "mary-anning-of-lyme-regis",
       title: "6 · Mary Anning of Lyme Regis: what she found",
       section: "Section 2 · The people who found the bones",
-      body: `The cliffs at Lyme Regis in Dorset are Early Jurassic marine shales, and they fall down. Winter storms strip the face, the sea takes what falls, and anything exposed has to be found and got out before the next tide destroys it.
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281375/witus/courses/here-be-dragons/deep-time-and-the-dinosaur-renaissance/mary-anning.jpg ||| A painted portrait of a woman in a bonnet and long coat holding a rock hammer, with a dog lying beside her. ||| Mary Anning of Lyme Regis. She found them; the papers carried other people's names. The course states what the record supports and flags the folklore around her as unverified. ||| Credited to 'Mr. Grey' in Crispin Tickell's book 'Mary Anning of Lyme Regis' (1996). Mary Anning painting.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Mary_Anning_painting.jpg
+The cliffs at Lyme Regis in Dorset are Early Jurassic marine shales, and they fall down. Winter storms strip the face, the sea takes what falls, and anything exposed has to be found and got out before the next tide destroys it.
 
 Mary Anning, born in 1799, worked that shore for a living from childhood until her death in 1847. Her family sold what they found. It was a trade, and for long stretches it was a trade that barely fed them.
 

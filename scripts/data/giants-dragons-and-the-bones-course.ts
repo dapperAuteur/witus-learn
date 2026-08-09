@@ -1500,7 +1500,9 @@ The blue markers cluster in the eighteenth and nineteenth centuries, in Europe a
       slug: "the-cardiff-giant",
       title: "14 · The Cardiff Giant, and what a quarter bought",
       section: "Section 4 · The giant with a ticket price",
-      body: `On 16 October 1869, two men digging a well behind the barn of William Newell, a farmer at Cardiff in Onondaga County, New York, struck stone about three feet down. What they uncovered was the figure of a man, over ten feet long, lying on his side with one hand across his abdomen, apparently in the ground and apparently very old.
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281373/witus/courses/here-be-dragons/giants-dragons-and-the-bones/cardiff-giant-1869.jpg ||| A photograph of men standing around a deep pit containing a large carved stone figure of a man. ||| The Cardiff Giant at its excavation in 1869. A manufactured hoax with a ticket price, and then a counterfeit of the counterfeit. ||| Unknown. Cardiff giant exhumed 1869.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Cardiff_giant_exhumed_1869.jpg
+On 16 October 1869, two men digging a well behind the barn of William Newell, a farmer at Cardiff in Onondaga County, New York, struck stone about three feet down. What they uncovered was the figure of a man, over ten feet long, lying on his side with one hand across his abdomen, apparently in the ground and apparently very old.
 
 Newell put a tent over the hole and began charging admission. A quarter, at first.
 

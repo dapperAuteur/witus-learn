@@ -35,7 +35,9 @@ export const MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE: AuthoredCourse = {
       slug: "here-be-dragons",
       title: "1 · The phrase that is on almost no map",
       section: "Section 1 · The phrase, and the genre",
-      body: `Everyone knows that old maps said **"here be dragons"** at the edges, where the mapmakers ran out of knowledge and started guessing.
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281336/witus/courses/here-be-dragons/monsters-at-the-edge-of-the-map/hunt-lenox-globe-dragons.png ||| A detail of an engraved copper globe showing the Latin words HC SVNT DRACONES beside a coastline. ||| The one well-known historical instance of the phrase, on the Hunt-Lenox Globe of about 1510. Look at how small it is, and remember that thousands of other maps survive without it. ||| Rare Book Division, The New York Public Library. Lenox Globe Dragons.png. CC0. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Lenox_Globe_Dragons.png
+Everyone knows that old maps said **"here be dragons"** at the edges, where the mapmakers ran out of knowledge and started guessing.
 
 Almost none of them did.
 
@@ -127,7 +129,9 @@ This is called reading for **genre**, and it is the most portable skill in this 
       slug: "the-t-o-map",
       title: "3 · The diagram everyone mistakes for a failed map",
       section: "Section 1 · The phrase, and the genre",
-      body: `There is a medieval diagram that gets reproduced constantly as proof that people had no idea what the world looked like. It is a circle with a T inside it, dividing the circle into three parts labelled Asia, Europe and Africa. It is called a **T-O map**, and it comes from a text by Isidore of Seville, a Spanish bishop writing in the 600s. It appears in the printed edition of his *Etymologiae* published in Augsburg in 1472, which is where most people have seen it.
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281337/witus/courses/here-be-dragons/monsters-at-the-edge-of-the-map/t-o-map-1472.jpg ||| A circle divided by a T shape into three labelled parts: Asia across the top half, Europe and Africa below. ||| The T-O diagram from the 1472 printing of Isidore's Etymologiae. A schematic of how three landmasses relate, not an attempt at a coastline, and judging it as a survey is the category error the lesson names. ||| Isidore of Seville. T and O map Guntherus Ziner 1472.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:T_and_O_map_Guntherus_Ziner_1472.jpg
+There is a medieval diagram that gets reproduced constantly as proof that people had no idea what the world looked like. It is a circle with a T inside it, dividing the circle into three parts labelled Asia, Europe and Africa. It is called a **T-O map**, and it comes from a text by Isidore of Seville, a Spanish bishop writing in the 600s. It appears in the printed edition of his *Etymologiae* published in Augsburg in 1472, which is where most people have seen it.
 
 It looks like a child's drawing. That is the trap.
 
@@ -325,7 +329,9 @@ The medieval version is a safe place to practise, because nothing is at stake an
       slug: "hereford-close-reading",
       title: "4 · Reading one object closely: the Hereford Mappa Mundi",
       section: "Section 2 · Reading the maps",
-      body: `Around 1300, someone drew the world on a single sheet of calfskin about 1.6 metres tall. It still hangs in Hereford Cathedral. It is the largest medieval map of its kind to survive intact, and it rewards the kind of slow looking this course is asking you to practise.
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281337/witus/courses/here-be-dragons/monsters-at-the-edge-of-the-map/hereford-mappa-mundi.jpg ||| A large circular medieval world map drawn on vellum, dense with figures, buildings, animals and text. ||| The Hereford Mappa Mundi, about 1300. East at the top, Jerusalem at the centre, and a real river, a scriptural event and a creature from a Roman encyclopaedia sharing one surface with no visible seam. ||| Unknown. Hereford Mappa Mundi 1300.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Hereford_Mappa_Mundi_1300.jpg
+Around 1300, someone drew the world on a single sheet of calfskin about 1.6 metres tall. It still hangs in Hereford Cathedral. It is the largest medieval map of its kind to survive intact, and it rewards the kind of slow looking this course is asking you to practise.
 
 ## Start with the frame, not the content
 
@@ -403,7 +409,9 @@ You will meet the sharpest version of that in course 4 of this series, where a s
       slug: "carta-marina",
       title: "6 · Olaus Magnus and the Carta Marina",
       section: "Section 2 · Reading the maps",
-      body: `In 1539, a Swedish churchman living in exile in Italy published an enormous map of the northern seas. Olaus Magnus called it the *Carta marina*, and it was printed in Venice from nine woodblocks that together make a sheet roughly 1.7 metres wide.
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281369/witus/courses/here-be-dragons/monsters-at-the-edge-of-the-map/carta-marina-1539.jpg ||| A large sixteenth-century map of northern Europe and its seas, filled with ships and sea creatures. ||| Olaus Magnus, Carta marina, 1539. Hold two facts together: these were the best coastlines available for the northern seas, and the water is full of monsters. ||| Olaus Magnus. Carta Marina.jpeg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Carta_Marina.jpeg
+In 1539, a Swedish churchman living in exile in Italy published an enormous map of the northern seas. Olaus Magnus called it the *Carta marina*, and it was printed in Venice from nine woodblocks that together make a sheet roughly 1.7 metres wide.
 
 It is the single most famous monster map in existence. Sea serpents coil around ships. A creature with tusks climbs a cliff. Something enormous and whiskered surfaces beside a vessel while sailors on deck react. There is a whale being mistaken for an island, with men lighting a fire on its back.
 
@@ -446,7 +454,9 @@ When you meet something on a document that looks like superstition, ask what it 
       slug: "monsters-as-argument",
       title: "7 · Decoration, warning, advertisement",
       section: "Section 2 · Reading the maps",
-      body: `Lesson 6 gave you three jobs a sea monster can do. This lesson turns that into something you can use on any document, because the underlying move is not about monsters at all.
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281340/witus/courses/here-be-dragons/monsters-at-the-edge-of-the-map/carta-marina-sea-serpent.jpg ||| A detail from a sixteenth-century sea chart showing a large serpent coiled around a sailing ship. ||| A detail worth asking the lesson's question about: not whether the mapmaker believed it, but what it is doing. Information, warning, and advertisement for an expensive printed sheet. ||| Original printed map drawn by Olaus Magnus in 1539. His WP page is https://en.wikipedia.org/wiki/Olaus_Magnus. The photo of the map is by Wiki Commons user Jeff Dahl at https://commons.wikimedia.org/wiki/User:Jeff_Dahl. Carta Marina 1539 with sea serpent.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Carta_Marina_1539_with_sea_serpent.jpg
+Lesson 6 gave you three jobs a sea monster can do. This lesson turns that into something you can use on any document, because the underlying move is not about monsters at all.
 
 ## Every element on a made thing is there because someone put it there
 
@@ -1166,7 +1176,9 @@ This platform has courses that take the next step in detail, with sources: how t
       slug: "the-blank-interior",
       title: "13 · How Africa's map emptied out",
       section: "Section 4 · From the margin to the world",
-      body: `In 1733 Jonathan Swift wrote four lines about mapmakers that have been quoted ever since:
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281341/witus/courses/here-be-dragons/monsters-at-the-edge-of-the-map/catalan-atlas-mansa-musa.jpg ||| A panel from a medieval atlas showing a crowned ruler seated and holding up a large gold nugget. ||| The Catalan Atlas, 1375, showing the ruler of Mali with a gold nugget. This is what a European map of West Africa looked like BEFORE the interior went blank, which is why the blankness was a development rather than a starting condition. ||| attributed to Abraham Cresques. Catalan Atlas BNF Sheet 6 Mansa Musa.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg
+In 1733 Jonathan Swift wrote four lines about mapmakers that have been quoted ever since:
 
 > So Geographers in Afric-maps
 > With Savage-Pictures fill their Gaps;
@@ -1230,7 +1242,9 @@ That is a much harder thing to catch than a lie, in 1750 and now. It is also the
       slug: "who-was-mapping-whom",
       title: "14 · Who was mapping whom",
       section: "Section 4 · From the margin to the world",
-      body: `A course that spends thirteen lessons on European maps risks leaving an impression it has not argued for: that mapping is a European activity that other people were the subject of.
+      body: `
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786281373/witus/courses/here-be-dragons/monsters-at-the-edge-of-the-map/marshall-islands-stick-chart.jpg ||| A navigational chart made from a lattice of tied sticks with small shells fixed at intervals. ||| A Marshall Islands rebbelib. It models how swells bend around islands, which is the information a navigator on that ocean actually needs, and it was studied on land rather than carried aboard. ||| Unknown authorUnknown author. Marshall Islands stick chart, Rebbelib type. LOC 2010586182.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Marshall_Islands_stick_chart,_Rebbelib_type._LOC_2010586182.jpg
+A course that spends thirteen lessons on European maps risks leaving an impression it has not argued for: that mapping is a European activity that other people were the subject of.
 
 ## Stick charts
 

@@ -130,6 +130,31 @@ Every customer-facing surface must pass before it can merge:
   options or editing a prompt. When producing a number by hand genuinely IS the skill, set
   `computedAnswer: true` on that item. Whether a widget *genuinely* fits is a judgment, so it lives
   on the advisory "Audit assessment fit" instructor button, never in the build.
+- **An image in a lesson uses `:::figure`, never markdown's `![]()`.** One flush-left line, four
+  fields, the same `|||` separator as `:::reveal`:
+
+  ```
+  :::figure <url> ||| <alt> ||| <caption> ||| <credit>
+  ```
+
+  The reason is the fourth field. `![alt](url)` has nowhere to put a **credit**, and in this catalog
+  an unattributed image is the visual equivalent of an uncited claim; for third-party media it is
+  also how a takedown starts. So the credit is the same discipline as the `## Sources` block, and
+  the directive makes it structurally impossible to omit.
+
+  `alt` and `caption` are different things and `pnpm check:figures` (part of `pnpm lint`, a ratchet)
+  fails if they are identical: **alt** describes the image for someone who cannot see it, **caption**
+  says what to look at and why it is in this lesson. The guard also fails on a malformed or indented
+  directive (which renders as literal text, so the failure is invisible in the app), on a placeholder
+  or missing alt/caption/credit, and on any URL that is not `https://res.cloudinary.com` (hotlinking
+  a museum server means the image can rotate or 404 unnoticed).
+
+  **Get the image there first.** `scripts/upload-course-media.mjs` reads the licence from the source's
+  own metadata, refuses anything it cannot classify as free-with-commercial-use, and copies the asset
+  into Cloudinary. Then `pnpm register:media <manifest>` puts it in the owner's review queue at
+  `/admin/media`, where a human approves it before the course goes live. Never publish an image whose
+  rights you have not established: dropping it and letting the lesson stand on its text is the correct
+  trade, and every lesson should be written so that it can.
 
 ---
 

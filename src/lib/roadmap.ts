@@ -653,6 +653,19 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Lesson images that carry their own provenance** (\`feat/figure-directive\`): a new
+  \`:::figure <url> ||| <alt> ||| <caption> ||| <credit>\` directive, plus \`pnpm check:figures\` in
+  \`pnpm lint\` (a ratchet, no grandfathered list, and none should ever be added). Markdown's own
+  \`![]()\` renders an image but has nowhere to put a CREDIT, and in this catalog an unattributed
+  image is the visual equivalent of an uncited claim: for third-party media it is also how a takedown
+  starts. The directive makes the credit structurally impossible to omit. The guard fails on a
+  malformed or indented directive (which renders as literal text, so the failure is otherwise
+  invisible in the app), on placeholder or missing alt/caption/credit, on alt duplicated as the
+  caption (a screen-reader user hears one sentence twice and learns nothing about the image), and on
+  any non-Cloudinary URL. **The first 10 figures are live** across Here Be Dragons courses 1, 2 and 3,
+  all public domain or CC0, registered into /admin/media by the new \`pnpm register:media\` and
+  awaiting approval. Renders a semantic \`<figure>\`/\`<figcaption>\` so the caption is
+  programmatically tied to the image rather than merely near it. No migration.
 - 🔧 **Here Be Dragons: how we learned what the world is** (\`content/here-be-dragons-series\`,
   \`plans/58\`). **Five courses, 109 lessons**, Culture & History, aimed squarely at the grades 9-12
   **homeschool/teacher market**. Monsters at the Edge of the Map (20) · Giants, Dragons, and the
