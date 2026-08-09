@@ -4276,6 +4276,26 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
   {
+    id: "dragons.provisional-picture",
+    claim:
+      "Traces how a scientific picture was revised across two centuries, separating what the evidence settled from what remains in dispute, and leaves the open questions open.",
+    courseSlugs: ["deep-time-and-the-dinosaur-renaissance"],
+    lessons: [
+      // Tschopp et al. 2015 taught as a PROPOSAL rather than a ruling, with later analyses on both
+      // sides and the dispute located in a genus-rank convention rather than in the fossils.
+      "12 · Brontosaurus: the animal that was, was not, and may be again",
+      // Bakker's predator-prey ratios named as not holding up, with the taphonomic reason, and the
+      // modern position stated as diverse and unresolved rather than as a victory.
+      "15 · Bakker, warm blood, and an argument that was won in parts",
+      // Ends unresolved on purpose: Deccan tempo (two disagreeing 2019 papers), whether ecosystems
+      // were pre-stressed (a minority position stated fairly rather than dismissed), kill mechanism,
+      // and a 41-author review paired with the formal published comments disputing it.
+      "18 · Chicxulub: what confirmed it, and what is still argued",
+      // A two-lane timeline of claim against evidence, where the gap between the lanes is the point.
+      "19 · Claim and evidence, across two hundred years",
+    ],
+  },
+  {
     id: "dragons.reasonable-error-and-its-antidote",
     claim:
       "Reconstructs why a superseded position was well supported on the evidence available, and separates a vindicated dissenter from a crank by criteria other than having been rejected.",

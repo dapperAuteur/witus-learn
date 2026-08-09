@@ -47,9 +47,10 @@ export const COMMON_CORE_ELA: SharedFramework = {
         "bvc.nearest-green-oral-history",
         "bvc.whose-voice-absence",
         "catalog.cited-primary-secondary-synthesis",
+        "dragons.provisional-picture",
       ],
       coverage: "partial",
-      note: "Full in the BVC Nathan Green lesson, where the documentary and oral records openly disagree. Partial across the catalog-wide claim: every one of those courses integrates cited primary and secondary sources into a coherent account (the standard's first clause), and the route, labor, and contested-scholarship courses also foreground where the sources disagree, but the narrative histories (bathing, hoodoo) integrate sources without making discrepancy-resolution a systematic exercise.",
+      note: "Full in the BVC Nathan Green lesson, where the documentary and oral records openly disagree, and full in Deep Time and the Dinosaur Renaissance, which makes discrepancy the organising exercise: Tschopp et al. 2015 taught as a proposal with later analyses on both sides, two disagreeing 2019 papers on Deccan tempo, and a 41-author review paired with the formal published comments disputing it. Partial across the catalog-wide claim: every one of those courses integrates cited primary and secondary sources into a coherent account (the standard's first clause), and the route, labor, and contested-scholarship courses also foreground where the sources disagree, but the narrative histories (bathing, hoodoo) integrate sources without making discrepancy-resolution a systematic exercise.",
     },
     {
       code: "CCSS.ELA-Literacy.RI.11-12.6",

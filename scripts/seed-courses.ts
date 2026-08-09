@@ -113,6 +113,7 @@ import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-e
 import { GIANTS_DRAGONS_AND_THE_BONES_COURSE } from "./data/giants-dragons-and-the-bones-course";
 import { WRITING_THE_WORLD_COURSE } from "./data/writing-the-world-course";
 import { WRONG_FOR_GOOD_REASONS_COURSE } from "./data/wrong-for-good-reasons-course";
+import { DEEP_TIME_AND_THE_DINOSAUR_RENAISSANCE_COURSE } from "./data/deep-time-and-the-dinosaur-renaissance-course";
 import { RIVER_WHAT_AN_EXPEDITION_IS_COURSE } from "./data/river-what-an-expedition-is-course";
 import { RIVER_WABASH_HEADWATERS_COURSE } from "./data/river-the-wabash-headwaters-course";
 import { RIVER_THE_OHIO_AND_THE_LINE_COURSE } from "./data/river-the-ohio-and-the-line-course";
@@ -891,6 +892,17 @@ async function main() {
     // example, and says outright that people who disagree completely use the same procedure.
     // Astronomy detail is deliberately thin per plans/58 §6; the science track owns that.
     { slug: "wrong-for-good-reasons", course: WRONG_FOR_GOOD_REASONS_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" course 3 of 5: deep time, and a picture that kept changing AFTER science
+    // arrived. 25 lessons, closing on a 29-event two-lane `:::timeline` (claim vs evidence).
+    // The course's discipline is refusing to overclaim consensus. Brontosaurus is a PROPOSAL
+    // (Tschopp et al. 2015) with later analyses on both sides, not a ruling. Bakker's predator-prey
+    // ratios are named as not holding up, and the modern thermal position is stated as diverse and
+    // unresolved rather than as a victory. Lesson 18 ENDS UNRESOLVED on Deccan tempo, whether
+    // ecosystems were pre-stressed (a minority position stated fairly, not dismissed), and the kill
+    // mechanism. Popular-account figures were dropped rather than repeated: the often-quoted Marsh
+    // and Cope species counts are gone, and the quarry-dynamiting story survives only as a quiz
+    // distractor where it is marked WRONG.
+    { slug: "deep-time-and-the-dinosaur-renaissance", course: DEEP_TIME_AND_THE_DINOSAUR_RENAISSANCE_COURSE, category: "Culture & History" },
     // "What a Business Entity Actually Is" is course 1 (the method course) of the "How a Business Is
     // Formed" path (plans/46, Path B): an entity is a bundle of four decisions (liability, taxation,
     // ownership/transfer, governance), and reading the formation documents as primary sources is the
