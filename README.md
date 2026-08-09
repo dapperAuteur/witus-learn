@@ -314,6 +314,35 @@ render it through the same safe `Markdown` component lessons use. The table is p
 links to it, so no school ever sees a byte of it. Mirrors `/admin/library` on witus.online.
 Migration `0048_nebulous_vermin.sql` creates the table (`pnpm db:migrate:prod` after merging).
 
+## Media verification (`/admin/media`)
+
+Owner-only sign-off on every image, video, audio file and document uploaded for a course, **before
+that course goes live**. It is the third review list beside Citations and Source checks, and the one
+that covers what neither of those can: a course can be perfectly cited and still ship a figure with
+murky rights, a caption describing a different photograph, or a scan too dark to read.
+
+Each uploaded asset is registered in the tenant-scoped `media_assets` table with its **provenance
+triple** (`credit`, `rights_status`, `source_url`) and sits at `pending` until it is approved or
+rejected. The card renders the **real asset**, not a filename: an `<img>` for images, a player for
+audio and video, a link for documents. Two rules are enforced in the API as well as in the form,
+matching the citation board: a **rejection cannot be saved without a note** (a rejected image whose
+problem was never written down gets re-uploaded unchanged), and media whose rights read `unknown`
+**cannot be approved at all**. The top of the page shows the pending / approved / rejected counts and
+**which courses still have media waiting**.
+
+```
+GET   /api/admin/media          # this tenant's assets, newest first
+POST  /api/admin/media          # register an upload: url, kind, credit, rightsStatus, sourceUrl (+ course/lesson/alt/caption)
+PATCH /api/admin/media/[id]     # record a decision: { status, note }
+```
+
+Everything goes through the scoped DAL, so one school's unreviewed media is invisible to every other,
+and a by-id decision on a foreign asset **404s** rather than redirecting. The pure clearance logic
+lives in [src/lib/media-verify.ts](src/lib/media-verify.ts): `isCourseMediaCleared(slug, assets)` is
+true when every registered asset for that course is approved, so "media signed off" is a checkable
+pre-launch condition. Migration `0049_typical_the_leader.sql` creates the table (`pnpm
+db:migrate:prod` after merging).
+
 ## Teachers Pay Teachers packets (`/admin/tpt-plan`)
 
 Owner-only rollout plan for the TpT sales channel: which packet to post, in what order, at what
