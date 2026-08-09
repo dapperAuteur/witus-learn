@@ -1,9 +1,11 @@
 import { Fragment } from "react";
+import { FIGURE_RE } from "@/lib/figures";
 import { REVEAL_RE } from "@/lib/reveals";
 import { TIMELINE_CLOSE, TIMELINE_OPEN_RE, parseTimelineEvents } from "@/lib/timeline";
 import { Markdown } from "./markdown";
 import { EcosystemCallout } from "./ecosystem-callout";
 import { FieldLogCallout } from "./field-log/field-log-callout";
+import { Figure } from "./figure";
 import { Reveal } from "./reveal";
 import { TimelineBlock } from "./timeline-block";
 
@@ -14,7 +16,10 @@ import { TimelineBlock } from "./timeline-block";
 //     (the capstone → Field Log hook),
 //  4. `:::reveal <question> ||| <answer>` becomes a click-to-reveal self-check (Check-yourself)
 //     with an "I got it / Missed it" self-grade when `trackRecall` says the viewer is a
-//     signed-in learner (the grade posts to /api/.../recall — see src/components/reveal.tsx).
+//     signed-in learner (the grade posts to /api/.../recall — see src/components/reveal.tsx),
+//  5. `:::figure <url> ||| <alt> ||| <caption> ||| <credit>` becomes a semantic figure with its
+//     provenance attached. Markdown's own `![]()` cannot carry a credit, and in this catalog an
+//     image with no attribution is the visual equivalent of an uncited claim — see src/lib/figures.ts.
 // Everything else is ordinary markdown. Splitting on the directives keeps the Markdown renderer
 // pure (no custom remark plugin / new dependency). REVEAL_RE is shared with the recall API and
 // the dashboard history (src/lib/reveals.ts) so what renders is exactly what's tracked.
@@ -73,7 +78,13 @@ export function LessonBody({
     const tool = line.match(TOOL_RE);
     const fl = line.match(FIELD_LOG_RE);
     const rv = line.match(REVEAL_RE);
-    if (tool) {
+    const fig = line.match(FIGURE_RE);
+    if (fig) {
+      flush(`md-${i}`);
+      blocks.push(
+        <Figure key={`fig-${i}`} url={fig[1]} alt={fig[2]} caption={fig[3]} credit={fig[4]} />,
+      );
+    } else if (tool) {
       flush(`md-${i}`);
       blocks.push(
         <EcosystemCallout key={`tool-${i}`} slug={tool[1]} cta={tool[2]} courseId={courseId} lessonId={lessonId} />,
