@@ -4276,6 +4276,25 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
   {
+    id: "dragons.reasonable-error-and-its-antidote",
+    claim:
+      "Reconstructs why a superseded position was well supported on the evidence available, and separates a vindicated dissenter from a crank by criteria other than having been rejected.",
+    courseSlugs: ["wrong-for-good-reasons"],
+    lessons: [
+      // Geocentrism reconstructed as good science: undetectable stellar parallax was a real and
+      // serious objection to a moving earth, unresolved observationally until 1838.
+      "8 · Geocentrism was good science",
+      // Wegener right and dismissed, then what changed it, from instruments built for other purposes.
+      "11 · Wegener was right, and he was dismissed",
+      // The antidote, placed immediately after so the previous lesson cannot be misused: a five-point
+      // asymmetry (convergence, risky commitments, engaging the strongest objection, the objection
+      // answered rather than outlasted, and independent evidence arriving) rather than rejection.
+      "13 · They laughed at Galileo",
+      // Tracing a claim to its manufactured origin: Irving 1828, then Draper and White.
+      "4 · Where the flat-earth story came from",
+    ],
+  },
+  {
     id: "dragons.genre-and-truth-claim",
     claim:
       "Reads one finding across five genres (chronicle, field note, paper, press release, headline and post) and shows what each genre's conventions permit its author to assert.",

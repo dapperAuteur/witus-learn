@@ -112,6 +112,7 @@ import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
 import { GIANTS_DRAGONS_AND_THE_BONES_COURSE } from "./data/giants-dragons-and-the-bones-course";
 import { WRITING_THE_WORLD_COURSE } from "./data/writing-the-world-course";
+import { WRONG_FOR_GOOD_REASONS_COURSE } from "./data/wrong-for-good-reasons-course";
 import { RIVER_WHAT_AN_EXPEDITION_IS_COURSE } from "./data/river-what-an-expedition-is-course";
 import { RIVER_WABASH_HEADWATERS_COURSE } from "./data/river-the-wabash-headwaters-course";
 import { RIVER_THE_OHIO_AND_THE_LINE_COURSE } from "./data/river-the-ohio-and-the-line-course";
@@ -876,6 +877,20 @@ async function main() {
     // FAILED. Deliberately teaches no `:::figure` directive, because that has not shipped; lesson 12
     // teaches alt, caption and credit as a general publishing convention instead.
     { slug: "writing-the-world", course: WRITING_THE_WORLD_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" course 4 of 5, the epistemology payload. 22 lessons. The flat-earth story is
+    // taught as a 19th-century CONSTRUCTION (Irving 1828, then Draper and White), Columbus's real
+    // error was circumference and his critics were right, and geocentrism is reconstructed as good
+    // science because undetectable stellar parallax was a genuine objection until 1838.
+    // Lesson 13 ("They laughed at Galileo") sits immediately after the Wegener pair with NO quiz
+    // between them, because lessons 11 and 12 would be irresponsible without it: the five-point
+    // asymmetry (convergence, risky commitments, engaging the strongest objection, the objection
+    // answered rather than outlasted, and independent evidence arriving from instruments built for
+    // other purposes) is what separates a vindicated dissenter from a crank, and rejection is not.
+    // Lesson 17 (curriculum as a civics question) was KEPT because it could be written as pure
+    // mechanism: it cites where curriculum authority sits, names no live dispute, uses none as an
+    // example, and says outright that people who disagree completely use the same procedure.
+    // Astronomy detail is deliberately thin per plans/58 §6; the science track owns that.
+    { slug: "wrong-for-good-reasons", course: WRONG_FOR_GOOD_REASONS_COURSE, category: "Culture & History" },
     // "What a Business Entity Actually Is" is course 1 (the method course) of the "How a Business Is
     // Formed" path (plans/46, Path B): an entity is a bundle of four decisions (liability, taxation,
     // ownership/transfer, governance), and reading the formation documents as primary sources is the

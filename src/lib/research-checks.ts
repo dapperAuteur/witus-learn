@@ -419,6 +419,47 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Any scholarly edition of Orwell's essays, which will carry the original citation",
     ],
   },
+
+  // ── Here Be Dragons: Wrong for Good Reasons (plans/58) ─────────────────────────────────────────
+  {
+    key: "wfgr-tharp-dismissal-quotation",
+    course: "wrong-for-good-reasons",
+    title: "What Marie Tharp was actually told when she first mapped the rift valley",
+    severity: "medium",
+    question:
+      "Is there a documented, sourceable quotation for the reaction Marie Tharp received when she first identified the rift valley in the Mid-Atlantic Ridge, and what exactly was said?",
+    claim:
+      "Lesson 15 (who gets believed) currently PARAPHRASES the reaction as her being waved off, rather than quoting the widely repeated line, because the famous wording is reported in secondary retellings more often than it is documented.",
+    stakes:
+      "Lesson 15 is the course's who-gets-believed lesson, and lesson 9 of course 1 teaches that repetition is not corroboration. Printing a much-repeated quotation without a source would break the series' own rule in the lesson least able to afford it. The paraphrase is safe but weaker than the real thing would be.",
+    needs: [
+      "A quotation with a documented source (Tharp's own writing, an interview transcript, or an archival record)",
+      "Or confirmation that no such documented wording exists, in which case the paraphrase stays and this check closes as blocked",
+    ],
+    where: [
+      "Tharp, M. (1999). Connect the dots: Mapping the seafloor and discovering the mid-ocean ridge, in Lamont-Doherty's own published memoir collection",
+      "Lamont-Doherty Earth Observatory archives, Columbia University",
+      "Hali Felt's biography Soundings (2012), checking ITS sourcing rather than treating it as the source",
+    ],
+  },
+  {
+    key: "wfgr-letronne-1834-citation",
+    course: "wrong-for-good-reasons",
+    title: "Full citation for Letronne's 1834 essay on medieval cosmography",
+    severity: "low",
+    question:
+      "What are the journal, volume and page numbers for J. A. Letronne's 1834 essay on the cosmographical opinions of the Church Fathers?",
+    claim:
+      "Lesson 4 credits Letronne (1834) alongside Washington Irving as a co-originator of the flat-earth myth, so the story is not told as a single-author invention. The citation currently omits volume and page numbers rather than guessing them.",
+    stakes:
+      "Low: the argument does not depend on the pagination, and naming Letronne at all is what keeps the lesson from oversimplifying its own myth-busting. But an incomplete citation in a course about tracing claims to their origin is a visible weak spot for a careful reader.",
+    needs: ["Journal title", "Volume and year", "First and last page"],
+    where: [
+      "Russell, J. B. (1991). Inventing the flat earth, whose notes cite Letronne directly",
+      "Revue des Deux Mondes archives for 1834",
+      "Gallica, the Bibliothèque nationale de France digital library",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
