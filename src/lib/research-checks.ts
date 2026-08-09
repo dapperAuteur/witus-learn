@@ -374,6 +374,92 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     ],
     where: ["coursera.org, logged out"],
   },
+
+  // ── Here Be Dragons: Writing the World (plans/58) ──────────────────────────────────────────────
+  // Both filed by the course's own author, who flagged them rather than shipping a citation it could
+  // not stand behind. This is the rule working as intended: a hedge with no check is a hedge nobody
+  // will ever clear.
+  {
+    key: "wtw-nasa-alh84001-release-title",
+    course: "writing-the-world",
+    title: "Exact title of the 1996 NASA ALH84001 press release",
+    severity: "medium",
+    question:
+      "What was the exact title and release date of the NASA press release announcing the ALH84001 Martian meteorite findings in August 1996?",
+    claim:
+      "Lesson 5 (the press release) cites it as: National Aeronautics and Space Administration. (1996, August 7). Meteorite yields evidence of primitive life on early Mars. The date and the event are solid. The exact release TITLE is the part that was not verified against NASA's own archive.",
+    stakes:
+      "Lesson 5 is the course's worked example of institutional voice, and it teaches students to trace a claim back to its source document. A misquoted title in the one lesson about citing precisely would be the most self-undermining error the course could ship. It is also an ELA capstone whose standards claims rest on modelling WHST.11-12.8.",
+    needs: [
+      "The verbatim release title",
+      "The release date and any release number",
+      "A stable URL in NASA's newsroom or history archive",
+    ],
+    where: [
+      "NASA newsroom archive, nasa.gov",
+      "NASA History Division online reference collection",
+      "The Internet Archive capture of nasa.gov from August 1996",
+    ],
+  },
+  {
+    key: "wtw-orwell-horizon-citation",
+    course: "writing-the-world",
+    title: "Volume, issue and page range for Orwell's Politics and the English Language",
+    severity: "low",
+    question:
+      "What are the correct volume, issue and page numbers for George Orwell's Politics and the English Language as first published in Horizon in April 1946?",
+    claim:
+      "Lesson 9 (the passive voice and the missing actor) and lesson 10 cite it as Horizon, 13(76), 252-265. The essay, the journal and the year are not in doubt; the volume, issue and page range were not confirmed against the issue itself.",
+    stakes:
+      "Low stakes for the argument, which does not depend on the pagination, but this is the lesson that teaches citation as an instruction to a reader with a job. A wrong page range here is a small error in exactly the place a sharp student will check.",
+    needs: ["Volume number", "Issue number", "First and last page"],
+    where: [
+      "A library copy or scan of Horizon vol. 13 (1946)",
+      "The Orwell Foundation, which reproduces the essay with publication details",
+      "Any scholarly edition of Orwell's essays, which will carry the original citation",
+    ],
+  },
+
+  // ── Here Be Dragons: Wrong for Good Reasons (plans/58) ─────────────────────────────────────────
+  {
+    key: "wfgr-tharp-dismissal-quotation",
+    course: "wrong-for-good-reasons",
+    title: "What Marie Tharp was actually told when she first mapped the rift valley",
+    severity: "medium",
+    question:
+      "Is there a documented, sourceable quotation for the reaction Marie Tharp received when she first identified the rift valley in the Mid-Atlantic Ridge, and what exactly was said?",
+    claim:
+      "Lesson 15 (who gets believed) currently PARAPHRASES the reaction as her being waved off, rather than quoting the widely repeated line, because the famous wording is reported in secondary retellings more often than it is documented.",
+    stakes:
+      "Lesson 15 is the course's who-gets-believed lesson, and lesson 9 of course 1 teaches that repetition is not corroboration. Printing a much-repeated quotation without a source would break the series' own rule in the lesson least able to afford it. The paraphrase is safe but weaker than the real thing would be.",
+    needs: [
+      "A quotation with a documented source (Tharp's own writing, an interview transcript, or an archival record)",
+      "Or confirmation that no such documented wording exists, in which case the paraphrase stays and this check closes as blocked",
+    ],
+    where: [
+      "Tharp, M. (1999). Connect the dots: Mapping the seafloor and discovering the mid-ocean ridge, in Lamont-Doherty's own published memoir collection",
+      "Lamont-Doherty Earth Observatory archives, Columbia University",
+      "Hali Felt's biography Soundings (2012), checking ITS sourcing rather than treating it as the source",
+    ],
+  },
+  {
+    key: "wfgr-letronne-1834-citation",
+    course: "wrong-for-good-reasons",
+    title: "Full citation for Letronne's 1834 essay on medieval cosmography",
+    severity: "low",
+    question:
+      "What are the journal, volume and page numbers for J. A. Letronne's 1834 essay on the cosmographical opinions of the Church Fathers?",
+    claim:
+      "Lesson 4 credits Letronne (1834) alongside Washington Irving as a co-originator of the flat-earth myth, so the story is not told as a single-author invention. The citation currently omits volume and page numbers rather than guessing them.",
+    stakes:
+      "Low: the argument does not depend on the pagination, and naming Letronne at all is what keeps the lesson from oversimplifying its own myth-busting. But an incomplete citation in a course about tracing claims to their origin is a visible weak spot for a careful reader.",
+    needs: ["Journal title", "Volume and year", "First and last page"],
+    where: [
+      "Russell, J. B. (1991). Inventing the flat earth, whose notes cite Letronne directly",
+      "Revue des Deux Mondes archives for 1834",
+      "Gallica, the Bibliothèque nationale de France digital library",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

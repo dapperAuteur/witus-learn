@@ -108,6 +108,12 @@ import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capsto
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
+// Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
+import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
+import { GIANTS_DRAGONS_AND_THE_BONES_COURSE } from "./data/giants-dragons-and-the-bones-course";
+import { WRITING_THE_WORLD_COURSE } from "./data/writing-the-world-course";
+import { WRONG_FOR_GOOD_REASONS_COURSE } from "./data/wrong-for-good-reasons-course";
+import { DEEP_TIME_AND_THE_DINOSAUR_RENAISSANCE_COURSE } from "./data/deep-time-and-the-dinosaur-renaissance-course";
 import { RIVER_WHAT_AN_EXPEDITION_IS_COURSE } from "./data/river-what-an-expedition-is-course";
 import { RIVER_WABASH_HEADWATERS_COURSE } from "./data/river-the-wabash-headwaters-course";
 import { RIVER_THE_OHIO_AND_THE_LINE_COURSE } from "./data/river-the-ohio-and-the-line-course";
@@ -845,6 +851,58 @@ async function main() {
     // (the True Reformers embezzlement, Binga's charge) sit in the achievement column where they
     // belong. It deliberately teaches NO instruments of clearance; the route series owns those.
     { slug: "what-they-built", course: WHAT_THEY_BUILT_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" (plans/58), course 1 of 5: how people described a world they had not seen,
+    // and what those descriptions were later used for. Grades 9-12, aimed at the homeschool/teacher
+    // market. THE RULE THIS SERIES IS BUILT ON: the naive framing ("they thought it was flat, then we
+    // got smart") is factually wrong and the series teaches the inverse, that people reasoned well
+    // from what they had. Lesson 12 is the hinge, carrying the monstrous-races device forward into
+    // what it was later used to justify, and it links to training-the-colonizer and the precolonial
+    // courses. Sections 1-4 each end with a 12-question bank serving 8. Contains one `map` lesson
+    // (the margins over time, year-driven) and one two-lane `:::timeline` (claim vs evidence).
+    { slug: "monsters-at-the-edge-of-the-map", course: MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" course 2 of 5: fossils before palaeontology existed, from dragon bones in a
+    // Beijing apothecary to the Cardiff Giant's ticket price. 22 lessons, one `map` lesson and one
+    // two-lane `:::timeline` (found vs explained). Its distinctive move is lesson 4, which holds the
+    // griffin/Protoceratops dispute OPEN: Mayor's four strongest points against Witton and Hing's
+    // 2024 rebuttal, the losing condition for each side, and an explicit refusal to issue a verdict.
+    // A course about holding claims at arm's length had to do that with its own best story. Every
+    // "may have inspired" in the file is hedged in the prose on purpose, and lesson 5 makes the hedge
+    // itself the object of study.
+    { slug: "giants-dragons-and-the-bones", course: GIANTS_DRAGONS_AND_THE_BONES_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" course 5 of 5, the ELA capstone and the series' standards anchor: one finding
+    // written five ways (chronicle, field note, paper, press release, headline, post), then the moves
+    // inside the sentence (naming, the missing actor, the hedge, the citation). 20 lessons, closing on
+    // TWO graded assignments, which are what make the WHST.11-12.7 and .8 claims honest rather than
+    // aspirational: a six-source ledger with a documented narrowing of the question, and a chain of
+    // custody from headline back to paper with a search log that must include the searches that
+    // FAILED. Deliberately teaches no `:::figure` directive, because that has not shipped; lesson 12
+    // teaches alt, caption and credit as a general publishing convention instead.
+    { slug: "writing-the-world", course: WRITING_THE_WORLD_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" course 4 of 5, the epistemology payload. 22 lessons. The flat-earth story is
+    // taught as a 19th-century CONSTRUCTION (Irving 1828, then Draper and White), Columbus's real
+    // error was circumference and his critics were right, and geocentrism is reconstructed as good
+    // science because undetectable stellar parallax was a genuine objection until 1838.
+    // Lesson 13 ("They laughed at Galileo") sits immediately after the Wegener pair with NO quiz
+    // between them, because lessons 11 and 12 would be irresponsible without it: the five-point
+    // asymmetry (convergence, risky commitments, engaging the strongest objection, the objection
+    // answered rather than outlasted, and independent evidence arriving from instruments built for
+    // other purposes) is what separates a vindicated dissenter from a crank, and rejection is not.
+    // Lesson 17 (curriculum as a civics question) was KEPT because it could be written as pure
+    // mechanism: it cites where curriculum authority sits, names no live dispute, uses none as an
+    // example, and says outright that people who disagree completely use the same procedure.
+    // Astronomy detail is deliberately thin per plans/58 §6; the science track owns that.
+    { slug: "wrong-for-good-reasons", course: WRONG_FOR_GOOD_REASONS_COURSE, category: "Culture & History" },
+    // "Here Be Dragons" course 3 of 5: deep time, and a picture that kept changing AFTER science
+    // arrived. 25 lessons, closing on a 29-event two-lane `:::timeline` (claim vs evidence).
+    // The course's discipline is refusing to overclaim consensus. Brontosaurus is a PROPOSAL
+    // (Tschopp et al. 2015) with later analyses on both sides, not a ruling. Bakker's predator-prey
+    // ratios are named as not holding up, and the modern thermal position is stated as diverse and
+    // unresolved rather than as a victory. Lesson 18 ENDS UNRESOLVED on Deccan tempo, whether
+    // ecosystems were pre-stressed (a minority position stated fairly, not dismissed), and the kill
+    // mechanism. Popular-account figures were dropped rather than repeated: the often-quoted Marsh
+    // and Cope species counts are gone, and the quarry-dynamiting story survives only as a quiz
+    // distractor where it is marked WRONG.
+    { slug: "deep-time-and-the-dinosaur-renaissance", course: DEEP_TIME_AND_THE_DINOSAUR_RENAISSANCE_COURSE, category: "Culture & History" },
     // "What a Business Entity Actually Is" is course 1 (the method course) of the "How a Business Is
     // Formed" path (plans/46, Path B): an entity is a bundle of four decisions (liability, taxation,
     // ownership/transfer, governance), and reading the formation documents as primary sources is the

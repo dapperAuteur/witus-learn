@@ -4245,6 +4245,140 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "21 · Your assignment: test one connection of your own",
       "17 · Your assignment: one schoolhouse, and the budget line that raised it",
       "20 · Your assignment: write one property",
+      // Here Be Dragons course 1 closes with a graded assignment that is this claim exactly: take a
+      // real historical map, trace one drawn element back as far as the record allows, and mark the
+      // point where the trail goes cold rather than closing the gap.
+      "16 · Assignment: read one map's margin",
+    ],
+  },
+
+  // ══ Here Be Dragons (plans/58) ══════════════════════════════════════════════
+  {
+    id: "dragons.repetition-is-not-corroboration",
+    claim:
+      "Teaches that repeated claims count as evidence only when their sources are independent, and drills tracing a claim back to its earliest form.",
+    courseSlugs: ["monsters-at-the-edge-of-the-map", "giants-dragons-and-the-bones"],
+    lessons: [
+      // The dragon-bone story split into what the record documents (Haberer's drugstore collection,
+      // Schlosser 1903, excavation from 1921) and what it does not (a causal arrow from that tooth
+      // to that hill), which is the same corroboration discipline on a story worth wanting.
+      "1 · A tooth in a Beijing apothecary",
+      // The island-whale is followed from the Physiologus through Brendan and Sinbad to a 1539 map,
+      // and the lesson names the rule: nine sources copying a tenth is one piece of evidence and
+      // nine copies.
+      "9 · The whale that is an island",
+      // Standing (whether a writer had any way of knowing) versus style, worked on a compiled
+      // travelogue that was read as testimony for centuries, plus strategic scepticism as a device.
+      "10 · How they wrote it: the eyewitness who was not there",
+      // The course opens by taking its own most famous fact apart: one object, and specialists
+      // disagree about what its inscription says.
+      "1 · The phrase that is on almost no map",
+    ],
+  },
+  {
+    id: "dragons.provisional-picture",
+    claim:
+      "Traces how a scientific picture was revised across two centuries, separating what the evidence settled from what remains in dispute, and leaves the open questions open.",
+    courseSlugs: ["deep-time-and-the-dinosaur-renaissance"],
+    lessons: [
+      // Tschopp et al. 2015 taught as a PROPOSAL rather than a ruling, with later analyses on both
+      // sides and the dispute located in a genus-rank convention rather than in the fossils.
+      "12 · Brontosaurus: the animal that was, was not, and may be again",
+      // Bakker's predator-prey ratios named as not holding up, with the taphonomic reason, and the
+      // modern position stated as diverse and unresolved rather than as a victory.
+      "15 · Bakker, warm blood, and an argument that was won in parts",
+      // Ends unresolved on purpose: Deccan tempo (two disagreeing 2019 papers), whether ecosystems
+      // were pre-stressed (a minority position stated fairly rather than dismissed), kill mechanism,
+      // and a 41-author review paired with the formal published comments disputing it.
+      "18 · Chicxulub: what confirmed it, and what is still argued",
+      // A two-lane timeline of claim against evidence, where the gap between the lanes is the point.
+      "19 · Claim and evidence, across two hundred years",
+    ],
+  },
+  {
+    id: "dragons.reasonable-error-and-its-antidote",
+    claim:
+      "Reconstructs why a superseded position was well supported on the evidence available, and separates a vindicated dissenter from a crank by criteria other than having been rejected.",
+    courseSlugs: ["wrong-for-good-reasons"],
+    lessons: [
+      // Geocentrism reconstructed as good science: undetectable stellar parallax was a real and
+      // serious objection to a moving earth, unresolved observationally until 1838.
+      "8 · Geocentrism was good science",
+      // Wegener right and dismissed, then what changed it, from instruments built for other purposes.
+      "11 · Wegener was right, and he was dismissed",
+      // The antidote, placed immediately after so the previous lesson cannot be misused: a five-point
+      // asymmetry (convergence, risky commitments, engaging the strongest objection, the objection
+      // answered rather than outlasted, and independent evidence arriving) rather than rejection.
+      "13 · They laughed at Galileo",
+      // Tracing a claim to its manufactured origin: Irving 1828, then Draper and White.
+      "4 · Where the flat-earth story came from",
+    ],
+  },
+  {
+    id: "dragons.genre-and-truth-claim",
+    claim:
+      "Reads one finding across five genres (chronicle, field note, paper, press release, headline and post) and shows what each genre's conventions permit its author to assert.",
+    courseSlugs: ["writing-the-world"],
+    lessons: [
+      // The spine: the same discovery written five ways, each with a different truth claim.
+      "1 · Five genres, one discovery",
+      // Hedges read as structure: what "consistent with" asserts and what a scientist will not say.
+      "4 · The paper: hedges, consistent with, and what a scientist will not say",
+      // The institutional voice, read for purpose rather than for accuracy.
+      "5 · The press release: the institution's voice",
+      // Where a paper's qualified verb becomes an unqualified one, and who makes that choice.
+      "6 · The headline: where suggests becomes proves",
+    ],
+  },
+  {
+    id: "dragons.sustained-source-research",
+    claim:
+      "Requires a sustained research project with a documented search (including failed queries), a per-source assessment of strengths and limits for the specific task, and APA 7 citation.",
+    courseSlugs: ["writing-the-world"],
+    lessons: [
+      // Six-source ledger, a documented narrowing or broadening of the question, a method note, and
+      // three genre productions from one finding.
+      "15 · Assignment: one discovery, three genres, with sources",
+      // Chain of custody from headline back to paper, a required search log that includes the
+      // searches that failed, per-source limits stated for THIS task, purpose and audience, and a
+      // cap so no single source supplies more than half the citations.
+      "16 · Assignment: trace a headline back to the paper",
+      // Citation taught as an instruction to a reader with a job, plus its four failure modes.
+      "11 · Citation as a genre convention with a job",
+    ],
+  },
+  {
+    id: "dragons.hold-a-dispute-open",
+    claim:
+      "Evaluates two published positions on one question without resolving it, naming the narrow sentence in dispute and what each side would accept as a loss.",
+    courseSlugs: ["giants-dragons-and-the-bones"],
+    lessons: [
+      // Mayor's fossil origin for the griffin against Witton and Hing's 2024 rebuttal: four strongest
+      // points per side, the losing condition for each, and an explicit refusal to issue a verdict.
+      '4 · The griffin argument, held open',
+      // The cyclops and dwarf-elephant story labelled attractive, unfalsified and unsupported, with
+      // a statement of what evidence would settle it.
+      "3 · The cyclops and the dwarf elephant",
+      // The hedge itself as the object of study: what "may have inspired" asserts, what it does not,
+      // and why a careful writer reaches for it.
+      '5 · How they wrote it: what "may have inspired" is doing',
+    ],
+  },
+  {
+    id: "dragons.document-as-decisions",
+    claim:
+      "Reads a document as a set of decisions made by someone with interests: its genre, its purpose, its buyer, and what it leaves out.",
+    courseSlugs: ["monsters-at-the-edge-of-the-map"],
+    lessons: [
+      // Three contemporary map genres put side by side, each answering a different question, with
+      // the explicit rule that judging one against another's job produces nonsense.
+      "2 · Three objects that look alike and are not",
+      // Cost, buyer, authorial argument and inheritance named as the reasons an element appears,
+      // then turned on a modern chart in an annual report.
+      "7 · Decoration, warning, advertisement",
+      // Harley's silences: a European map of Africa's interior got EMPTIER after 1375, and the
+      // lesson works through why that is a fact about the document rather than about the place.
+      "13 · How Africa's map emptied out",
     ],
   },
 ];
