@@ -107,6 +107,7 @@ import { AI_B5_DEPLOYING_EVALUATING_COURSE } from "./data/ai-b5-deploying-evalua
 import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capstone-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
+import { HOW_TO_READ_A_NUMBER_COURSE } from "./data/how-to-read-a-number-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
@@ -669,6 +670,34 @@ async function main() {
     course: HOW_TO_RESEARCH_COURSE,
     category: "Study Skills",
     navigationMode: "linear",
+  });
+
+  // ── Science & Math, Wave 1 ───────────────────────────────────────────────────────────────────
+  // Track proposal: plans/future-courses/sciences/02-science-and-math-track-proposal.md.
+  // The category is new. Every course in it complements courses that already exist rather than
+  // sitting beside the catalog: SCI-01 serves the 34 Civics courses, which all quote numbers and
+  // none of which teach a learner how to check one.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Science & Math", sortOrder: 15 })
+    .onConflictDoNothing();
+
+  // SCI-01 How to Read a Number. Wave 1, so it needs NO platform work: every assessment is
+  // scenario multiple-choice or a `:::reveal` self-check, and the learner is never asked to
+  // produce a number (which `checkExerciseAnswer` grades by string equality and could not mark
+  // fairly). Outline: plans/future-courses/sciences/outlines/01-how-to-read-a-number.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-to-read-a-number",
+    course: HOW_TO_READ_A_NUMBER_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    seriesSlug: "science-and-math",
+    seriesTitle: "Science & Math",
+    seriesOrder: 1,
+    seriesCode: "SCI",
+    seriesPosition: "01",
   });
 
   // River Expedition, course 1 of 11 (RIVER-01). FREE: it is the series funnel and the course that
