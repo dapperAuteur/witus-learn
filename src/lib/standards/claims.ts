@@ -4485,6 +4485,40 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "9 · What a margin of error actually covers",
     ],
   },
+  {
+    id: "catalog.astronomical-evidence-chain",
+    claim:
+      "Traces how the composition, distance and motion of objects nobody can visit are established from spectra and apparent brightness, and identifies which link in that chain a given number depends on.",
+    courseSlugs: ["how-we-know-whats-out-there"],
+    lessons: [
+      // Absorption lines as a fingerprint: what a spectrum gives you (elements, temperature,
+      // motion), and the displaced-pattern reading that becomes redshift six lessons later.
+      "5 · Light itself",
+      // Redshift and expansion, stated precisely enough to kill the flying-apart-from-a-centre
+      // misreading, plus the Lemaitre priority and what the IAU recommended.
+      "11 · Redshift and an expanding universe",
+      // Two well-built measurements of the expansion rate that disagree, and the three candidate
+      // explanations. Live disagreement taught as normal science rather than as scandal.
+      "12 · The Hubble tension",
+      // The capstone: take a number from a popular astronomy article, trace it to the measurement
+      // it rests on, name the weakest link, and say what kind of claim it is.
+      "16 · Capstone: trace a number down the ladder",
+    ],
+  },
+  {
+    id: "catalog.stars-produce-elements",
+    claim:
+      "Explains how stars build the elements over their life cycle, and sets out the independent lines of evidence that establish it.",
+    courseSlugs: ["how-we-know-whats-out-there"],
+    lessons: [
+      // The HR diagram as a snapshot of a population at different stages of life, which is what
+      // makes "over their life cycle" mean anything.
+      "7 · Reading a star: the HR diagram",
+      // Fusion up to iron, why it stops there, what stellar death produces, and the four
+      // independent-ish lines of evidence that agree.
+      "13 · What stars make",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

@@ -108,6 +108,7 @@ import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capsto
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { HOW_TO_READ_A_NUMBER_COURSE } from "./data/how-to-read-a-number-course";
+import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out-there-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
@@ -698,6 +699,25 @@ async function main() {
     seriesOrder: 1,
     seriesCode: "SCI",
     seriesPosition: "01",
+  });
+
+  // SCI-02 How We Know What's Out There. The course BAM asked for: astronomy taught as EVIDENCE,
+  // starting where river-finding-your-way ends (navigation) and climbing the distance ladder. No
+  // equations, by design, so it ships in Wave 1. Its risk is not the physics, it is the biography:
+  // five checks are registered in src/lib/research-checks.ts and the lessons hedge in the text
+  // until they are answered. Outline: plans/future-courses/sciences/outlines/02-*.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-we-know-whats-out-there",
+    course: HOW_WE_KNOW_WHATS_OUT_THERE_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    seriesSlug: "science-and-math",
+    seriesTitle: "Science & Math",
+    seriesOrder: 2,
+    seriesCode: "SCI",
+    seriesPosition: "02",
   });
 
   // River Expedition, course 1 of 11 (RIVER-01). FREE: it is the series funnel and the course that
