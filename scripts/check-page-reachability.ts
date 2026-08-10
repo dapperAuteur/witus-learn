@@ -55,17 +55,11 @@ const ORPHAN_OK: Record<string, string> = {
 /** Public top-level pages that still ride the tenant's default OG card instead of setting their own.
  *  Debt: give each its own `ogImageUrl({ title })` and delete the line. Legal pages may stay. */
 const SHARED_CARD_OK: Record<string, string> = {
-  "/civics": "pre-existing",
-  "/courses": "pre-existing",
-  "/demo": "pre-existing",
-  "/for": "pre-existing (the index; each /for/<audience> is a detail page)",
-  "/globe": "pre-existing feature page",
-  "/great-migration-map": "pre-existing single-lesson map",
-  "/help": "pre-existing",
-  "/instructors": "pre-existing",
-  "/languages": "pre-existing",
-  "/live": "pre-existing",
-  "/paths": "pre-existing",
+  // The eleven "pre-existing" entries were CLEARED on 2026-08-10: every one of those pages now sets
+  // its own title, description and `ogImageUrl` card. BAM's requirement was that every landing page
+  // be optimised for sharing, with its own preview when sent by text or posted socially, and a page
+  // riding the default card shares identically to every other page and says nothing about itself.
+  // Only the legal pages remain, and they stay by choice.
   "/privacy": "Legal page; the default card is fine.",
   "/safety": "Legal page; the default card is fine.",
   "/terms": "Legal page; the default card is fine.",

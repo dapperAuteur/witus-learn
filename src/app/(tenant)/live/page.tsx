@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { getScopedDb } from "@/db/scoped";
 import { brandName } from "@/lib/branding";
 import { getSession } from "@/lib/session";
@@ -13,7 +14,16 @@ import { LivePresence } from "@/components/live-presence";
 
 export async function generateMetadata(): Promise<Metadata> {
   const sdb = await getScopedDb();
-  return { title: `Live, ${brandName(sdb.tenant)}` };
+  const brand = brandName(sdb.tenant);
+  const title = `Live, ${brand}`;
+  const description = `Live classes at ${brand}: what is on air now, what is scheduled next, and recordings of what you missed.`;
+  const image = ogImageUrl({ title: "Live classes", subtitle: "On now, coming up, and recorded" });
+  return {
+    title,
+    description,
+    openGraph: { title, description, images: [image] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
+  };
 }
 
 // Live classes for this school: live now, upcoming, and recordings. Tenant-scoped;

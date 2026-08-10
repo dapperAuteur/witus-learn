@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { getScopedDb } from "@/db/scoped";
 import { listCourses } from "@/db/queries/catalog";
 import { GLOBE_PINS } from "@/lib/globe-pins";
@@ -6,9 +7,24 @@ import { CATALOG_TIMELINE } from "@/lib/catalog-timeline";
 import { ExploreGlobe, type GlobeMarker } from "@/components/explore-globe";
 import { TimelineBlock } from "@/components/timeline-block";
 
+const TITLE = "Where our courses take place";
+const DESCRIPTION =
+  "A rotating globe of the places our courses are about. Drag to spin, zoom in for more, and open the course behind any pin.";
+
 export const metadata: Metadata = {
-  title: "Where our courses take place",
-  description: "A rotating globe of the places our courses are about. Drag to spin, zoom for more.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: "Where our courses take place", subtitle: "Spin the globe, open a course" })],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: "Where our courses take place", subtitle: "Spin the globe, open a course" })],
+  },
 };
 
 // The explore globe (plans/45). Tenant-scoped: a pin only appears if the tenant actually publishes

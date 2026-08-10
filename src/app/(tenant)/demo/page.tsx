@@ -1,13 +1,28 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { notFound } from "next/navigation";
 import { getScopedDb } from "@/db/scoped";
 import { getDemoSchoolUrl } from "@/db/queries/demo";
 
+const TITLE = "Try the demo";
+const DESCRIPTION =
+  "A live demo school and shared demo teacher account, try every teacher and admin feature on Learn.WitUS, no signup required. Data resets nightly at midnight.";
+
 export const metadata: Metadata = {
-  title: "Try the demo",
-  description:
-    "A live demo school and shared demo teacher account, try every teacher and admin feature on Learn.WitUS, no signup required. Data resets nightly at midnight.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "No signup required" })],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "No signup required" })],
+  },
 };
 
 // Explains the demo teacher account + Acme Academy demo school, and links out to it.

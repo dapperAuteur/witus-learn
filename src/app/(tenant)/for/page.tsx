@@ -1,14 +1,29 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { notFound } from "next/navigation";
 import { getScopedDb } from "@/db/scoped";
 import { brandName } from "@/lib/branding";
 import { AUDIENCES } from "@/lib/marketing/audiences";
 
+const TITLE = "Who is Learn.WitUS for?";
+const DESCRIPTION =
+  "Cited, standards-aligned, media-rich courses for teachers, school leaders, parents, homeschool families, and community leaders. Find the page written for you.";
+
 export const metadata: Metadata = {
-  title: "Who is Learn.WitUS for?",
-  description:
-    "Cited, standards-aligned, media-rich courses for teachers, school leaders, parents, homeschool families, and community leaders. Find the page written for you.",
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Find the page written for you" })],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Find the page written for you" })],
+  },
 };
 
 // The index of the per-audience landing pages. Recruiting-tenant only, like each page it links to.
