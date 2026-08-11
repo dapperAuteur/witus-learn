@@ -12,10 +12,31 @@ export const NGSS: SharedFramework = {
   subject: "Science",
   name: "Next Generation Science Standards (NGSS)",
   publisher: "NGSS Lead States / nextgenscience.org",
-  version: "HS-ESS1 Earth's Place in the Universe; HS-ESS3 Earth and Human Activity",
+  version: "HS-ESS1 Earth's Place in the Universe; HS-ESS2 Earth's Systems; HS-ESS3 Earth and Human Activity",
   sourceUrl: "https://www.nextgenscience.org/dci-arrangement/hs-ess1-earths-place-universe",
   fetchedOn: "2026-08-10",
   standards: [
+    // ── HS-ESS2 Earth's Systems ───────────────────────────────────────────────────────────────
+    // Fetched verbatim 2026-08-10 from nextgenscience.org/dci-arrangement/hs-ess2-earths-systems.
+    //
+    // ⚠️ FOUR OF THE SEVEN ARE ABSENT ON PURPOSE. HS-ESS2-1, -3 and -6 all begin "Develop a model"
+    // and HS-ESS2-7 is about the coevolution of Earth systems and life, none of which this catalog
+    // teaches. HS-ESS2-4 (energy flow and climate) is touched only glancingly. Claiming a
+    // model-building expectation for a reading course would be the widening index.ts forbids.
+    {
+      code: "HS-ESS2-2",
+      text: "Analyze geoscience data to make the claim that one change to Earth's surface can create feedbacks that cause changes to other Earth systems.",
+      claimIds: ["catalog.watershed-feedbacks"],
+      coverage: "partial",
+      note: "The best NGSS fit in the catalog for a feedback argument. The River and the Watershed is built out of them: paving a watershed raises flood peaks AND lowers baseflow through one mechanism (lesson 2); a dam trapping sediment starves the channel below and stops resupplying the delta a thousand miles away (lesson 6); fertiliser on an Indiana field ends as an oxygen-depleted zone in the Gulf (lessons 9 and 10). PARTIAL because of the first verb: the learner ANALYZES geoscience data only in the capstone, where they read a USGS gauge record and an EPA impairment listing for their own watershed. The lessons supply the analysis; the student repeats it once.",
+    },
+    {
+      code: "HS-ESS2-5",
+      text: "Plan and conduct an investigation of the properties of water and its effects on Earth materials and surface processes.",
+      claimIds: ["catalog.water-and-surface-processes"],
+      coverage: "partial",
+      note: "PARTIAL, and the gap is the entire first half of the sentence. The CONTENT is taught directly and at length: water's properties drive erosion and deposition, meanders, cut banks and point bars (lesson 5), sediment transport and what a dam does to it (lesson 6), and density stratification, which is why the Gulf hypoxic zone persists through the summer (lesson 9). But the learner never PLANS AND CONDUCTS AN INVESTIGATION. There is no laboratory work in this catalog and no fieldwork is required to finish this course. If your science requirement is assessed on students conducting investigations, this contributes and does not discharge. Course 4 of this track teaches how to design one; running it is still the student's own project.",
+    },
     // ── HS-ESS1 Earth's Place in the Universe ─────────────────────────────────────────────────
     // Fetched verbatim 2026-08-10 from nextgenscience.org/dci-arrangement/hs-ess1-earths-place-universe.
     // Raw text and the full reasoning for what is and is not claimed:

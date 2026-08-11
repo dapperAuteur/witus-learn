@@ -74,6 +74,7 @@ const CATALOG = [
   // that carries the catalog's first MATHEMATICS claims.
   "how-to-read-a-number",
   "how-we-know-whats-out-there",
+  "the-river-and-the-watershed",
   // Here Be Dragons series (plans/58), Culture & History, grades 9-12. Five courses on how people
   // described a world they had not seen, and what those descriptions were later used for.
   "monsters-at-the-edge-of-the-map",

@@ -644,6 +644,52 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Lemaitre 1927, Annales de la Societe Scientifique de Bruxelles",
     ],
   },
+
+  // ── The River and the Watershed (SCI-03) ──────────────────────────────────────────────────────
+  {
+    key: "gulf-hypoxic-zone-extent",
+    course: "the-river-and-the-watershed",
+    lesson: "why-the-oxygen-runs-out",
+    quote:
+      "The affected area varies from year to year and is measured by survey each summer.",
+    title: "Gulf of Mexico hypoxic zone: the current measured extent",
+    severity: "medium",
+    question:
+      "What was the measured extent of the Gulf of Mexico hypoxic zone in the most recent annual summer survey, and what is the five-year average the Hypoxia Task Force reports against its own reduction target?",
+    claim:
+      "The lesson describes the mechanism in four steps and states that the affected area varies year to year and is measured each summer. It deliberately prints NO figure.",
+    stakes:
+      "MEDIUM. The lesson is honest and durable as written, and the mechanism is the teaching point. But the size is the fact everyone wants, a course that can give it with a year attached is stronger, and printing a typical size from memory would be exactly the fake precision this track's courses teach against.",
+    needs: [
+      "The most recent survey's measured extent, with its year",
+      "The five-year running average and the Task Force's stated target",
+      "A note on when to re-check, since this is annual",
+    ],
+    where: [
+      "NOAA annual hypoxia survey announcements",
+      "Mississippi River/Gulf of Mexico Hypoxia Task Force reports, epa.gov/ms-htf",
+    ],
+  },
+  {
+    key: "mississippi-basin-drainage-share",
+    course: "the-river-and-the-watershed",
+    lesson: "you-live-in-a-watershed",
+    quote:
+      "The Mississippi basin drains a very large share of the continental United States",
+    title: "What share of the continental United States the Mississippi basin drains",
+    severity: "low",
+    question:
+      "What share of the land area of the continental United States does the Mississippi River basin drain, per the USGS or another primary authority, and how is the basin boundary defined for that figure?",
+    claim:
+      "Lesson 1 says the basin drains 'a very large share' of the continental United States and names the Rockies and Appalachians as the reach of its tributaries, without giving a percentage.",
+    stakes:
+      "LOW. The teaching point is that a watershed is the land that drains to a place, not the exact fraction. But the commonly quoted figure varies between sources depending on how the basin is delimited, and a course whose first lesson is about what a watershed IS should be able to state the number and say how it was defined.",
+    needs: [
+      "A figure from a primary authority, with the definition of the basin used",
+      "Whether the commonly quoted variants differ because of boundary definition or because of error",
+    ],
+    where: ["U.S. Geological Survey", "U.S. Army Corps of Engineers, Mississippi Valley Division"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

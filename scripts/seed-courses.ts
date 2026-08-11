@@ -109,6 +109,7 @@ import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { HOW_TO_READ_A_NUMBER_COURSE } from "./data/how-to-read-a-number-course";
 import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out-there-course";
+import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
@@ -718,6 +719,25 @@ async function main() {
     seriesOrder: 2,
     seriesCode: "SCI",
     seriesPosition: "02",
+  });
+
+  // SCI-03 The River and the Watershed. The PHYSICAL half of the eleven River Expedition courses,
+  // which teach what the basin means and never how the river works. Deliberately does NOT duplicate
+  // river-the-dead-zone: lesson 9 here gives the hypoxia MECHANISM, that course keeps the
+  // problems-with-no-author argument, and each links to the other. Lesson 12 is the only lesson
+  // with an external dependency (the kayak trip) and is written to work with whatever arrives.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-river-and-the-watershed",
+    course: THE_RIVER_AND_THE_WATERSHED_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    seriesSlug: "science-and-math",
+    seriesTitle: "Science & Math",
+    seriesOrder: 3,
+    seriesCode: "SCI",
+    seriesPosition: "03",
   });
 
   // River Expedition, course 1 of 11 (RIVER-01). FREE: it is the series funnel and the course that

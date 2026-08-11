@@ -4519,6 +4519,42 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "13 · What stars make",
     ],
   },
+  {
+    id: "catalog.watershed-feedbacks",
+    claim:
+      "Traces how one change to the land surface propagates through a river system into other systems, including changes that appear a thousand miles from their cause.",
+    courseSlugs: ["the-river-and-the-watershed"],
+    lessons: [
+      // Paving removes infiltration, which raises flood peaks AND lowers baseflow: one mechanism,
+      // two symptoms that look contradictory until you see it.
+      "2 · Where a river's water comes from",
+      // A dam traps sediment, so the channel below erodes and the delta stops being resupplied.
+      "6 · Sediment, and what a dam does to it",
+      // Nutrients to bloom to die-off to decomposition, with stratification as the step that makes
+      // the low-oxygen zone persist.
+      "9 · Why the oxygen runs out",
+      // Fertiliser, tile drainage and the physical route from an Indiana field to the Gulf, plus
+      // why the cost and the benefit land in different places.
+      "10 · A thousand miles of nitrogen",
+    ],
+  },
+  {
+    id: "catalog.water-and-surface-processes",
+    claim:
+      "Explains how water's physical properties shape land and move material: erosion and deposition, sediment transport, and density stratification.",
+    courseSlugs: ["the-river-and-the-watershed"],
+    lessons: [
+      // Meanders, cut banks, point bars, oxbows and floodplains as erosion and deposition in
+      // particular arrangements, taught as a process caught mid-motion rather than as shapes.
+      "5 · The river shapes the land",
+      // Carrying capacity as a function of energy, which is why sediment-starved water below a dam
+      // is MORE erosive rather than less.
+      "6 · Sediment, and what a dam does to it",
+      // Density stratification: why warm fresh water over cold salt water cuts the bottom layer
+      // off from the atmosphere, and why a storm breaks it up.
+      "9 · Why the oxygen runs out",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
