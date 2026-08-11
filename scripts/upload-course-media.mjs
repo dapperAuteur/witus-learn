@@ -193,9 +193,14 @@ async function cloudinaryUpload(env, { buffer, mime, publicId, context }) {
 {
   let bad = 0;
   for (const t of TARGETS) {
-    const file = join(ROOT, "scripts", "data", `${t.course}-course.ts`);
+    // The data file is USUALLY named after the course slug, and sometimes is not: the route/place
+    // courses were authored with short file names (indiana-avenue-course.ts) and long registered
+    // slugs (indiana-avenue-a-district-and-what-replaced-it). A target may therefore name its file
+    // explicitly. Without this the check refused perfectly good targets, which would have been read
+    // as "that course does not exist" rather than "this script guessed the filename".
+    const file = join(ROOT, "scripts", "data", t.file ?? `${t.course}-course.ts`);
     if (!existsSync(file)) {
-      console.log(`! ${t.commons}: no course file for "${t.course}"`);
+      console.log(`! ${t.commons}: no course file at ${t.file ?? `${t.course}-course.ts`}`);
       bad++;
       continue;
     }
