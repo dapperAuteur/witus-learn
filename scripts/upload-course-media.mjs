@@ -38,7 +38,7 @@
 // surface reads so BAM can confirm each one before a course goes live.
 
 import { createHash } from "node:crypto";
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -253,20 +253,47 @@ async function cloudinaryUpload(env, { buffer, mime, publicId, context }) {
 {
   let bad = 0;
   for (const t of TARGETS) {
+    const label = t.commons ?? `LOC ${t.loc}`;
     // The data file is USUALLY named after the course slug, and sometimes is not: the route/place
     // courses were authored with short file names (indiana-avenue-course.ts) and long registered
     // slugs (indiana-avenue-a-district-and-what-replaced-it). A target may therefore name its file
     // explicitly. Without this the check refused perfectly good targets, which would have been read
     // as "that course does not exist" rather than "this script guessed the filename".
+    // A BVC episode has NO committed course file: its lessons come from a gitignored CSV. Validate
+    // against that CSV instead, computing the slug exactly as scripts/seed-bvc-real.ts does. This is
+    // a better check than the committed-file one, not a weaker one, because it reads the actual
+    // source of truth rather than a transcription of it. Figures for these lessons are declared in
+    // src/lib/course-figures.ts (the sidecar), so a wrong slug would otherwise fail silently: the
+    // seeder would simply never match it and the image would never appear.
+    if (t.csv) {
+      const dir = join(ROOT, "content", "bvc");
+      const found = existsSync(dir)
+        ? readdirSync(dir).find((f) => new RegExp(`^bvc-episode-\\d+-${t.csv}-lessons\\.csv$`).test(f))
+        : undefined;
+      if (!found) {
+        console.log(`! ${label}: no BVC CSV for "${t.csv}" (content/ is gitignored; is it present locally?)`);
+        bad++;
+        continue;
+      }
+      const csv = readFileSync(join(dir, found), "utf8");
+      // Cheap containment check rather than a full parse: the derived slug's distinctive tail is the
+      // slugified title, and a title that is not in the file cannot produce a matching slug.
+      const tail = t.lesson.replace(/^l\d+-/, "").slice(0, 30);
+      if (!csv.toLowerCase().replace(/[^a-z0-9]+/g, "-").includes(tail)) {
+        console.log(`! ${label}: lesson "${t.lesson}" not found in ${found}`);
+        bad++;
+      }
+      continue;
+    }
     const file = join(ROOT, "scripts", "data", t.file ?? `${t.course}-course.ts`);
     if (!existsSync(file)) {
-      console.log(`! ${t.commons}: no course file at ${t.file ?? `${t.course}-course.ts`}`);
+      console.log(`! ${label}: no course file at ${t.file ?? `${t.course}-course.ts`}`);
       bad++;
       continue;
     }
     const src = readFileSync(file, "utf8");
     if (!src.includes(`slug: "${t.lesson}"`)) {
-      console.log(`! ${t.commons}: lesson "${t.lesson}" does not exist in ${t.course}`);
+      console.log(`! ${label}: lesson "${t.lesson}" does not exist in ${t.course}`);
       bad++;
     }
   }

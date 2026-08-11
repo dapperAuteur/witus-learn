@@ -50,11 +50,41 @@ export type CourseFigureMap = Record<string, Record<string, CourseFigure[]>>;
 /**
  * Declared figures for courses whose bodies are not committed.
  *
- * EMPTY BY DESIGN until BAM answers task 248 and the first BVC batch is sourced. The plumbing ships
- * first so the images have somewhere durable to land, rather than sourcing images against storage
- * that cannot hold them.
+ * Every entry here was uploaded and rights-checked by scripts/upload-course-media.mjs, whose
+ * manifest under scripts/data/media/ carries the full provenance and feeds /admin/media. The lesson
+ * slugs were validated against the actual CSVs at upload time, because a slug that matches nothing
+ * does not error: it simply never renders. See `unmatchedFigureKeys` below.
  */
-export const COURSE_FIGURES: CourseFigureMap = {};
+export const COURSE_FIGURES: CourseFigureMap = {
+  // BVC episodes (stage 10 of plans/63). Declared here rather than inline because these lesson
+  // bodies come from gitignored CSVs, so an inline credit would never reach git.
+  tea: {
+    "l3-the-tea-plant-and-its-climate-zones": [
+      {
+        url: "https://res.cloudinary.com/devdash54321/image/upload/v1786418888/witus/courses/bvc-episodes/tea/camellia-sinensis-kohler-plate.jpg",
+        alt:
+          "A colour botanical plate headed Ternstroemiaceae showing a tea branch: pointed dark green leaves with finely toothed edges, several white flowers with dense yellow stamens at their centres, and tight round buds. Around the margins are enlarged studies of single stamens, a flower cut lengthways, a young fruit in cross-section, and a woody three-lobed seed capsule shown closed and split open with seeds inside.",
+        caption:
+          "Every kind of tea in this episode, green, black, oolong, white, comes from this one species. What separates them is not the plant but what happens to the leaf in the hours after it is picked. Note the seed capsule at the lower right: tea is a camellia, and a close relative of the ornamental in a hundred front gardens.",
+        credit:
+          "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen. Camellia sinensis - Köhler–s Medizinal-Pflanzen-025.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Camellia_sinensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-025.jpg",
+      },
+    ],
+  },
+  sugar: {
+    "l3-two-plants-one-sweetness": [
+      {
+        url: "https://res.cloudinary.com/devdash54321/image/upload/v1786418888/witus/courses/bvc-episodes/sugar/saccharum-officinarum-kohler-plate.jpg",
+        alt:
+          "A colour botanical plate of sugarcane. Two very long strap-shaped leaves arch across the image with a pale midrib. Behind them stand jointed canes topped with feathery flowering plumes, one pink and one silver-grey. At the right is a length of cut cane showing its banded joints and pale cut end, and along the bottom are small studies of individual florets and seeds.",
+        caption:
+          "This is one of the two plants in the lesson's title, and it is a giant grass. The other, sugar beet, is a root that looks nothing like it and grows where this cannot. Two entirely unrelated plants were bred toward the same molecule, and which one a place grew decided a great deal about who worked there and under what terms.",
+        credit:
+          "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen. Saccharum officinarum - Köhler–s Medizinal-Pflanzen-125.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Saccharum_officinarum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-125.jpg",
+      },
+    ],
+  },
+};
 
 /** Render one figure as the `:::figure` directive line the lesson renderer already understands. */
 export function figureLine(f: CourseFigure): string {
