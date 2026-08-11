@@ -19,12 +19,13 @@
 //
 // WHAT IS DELIBERATELY NOT CLAIMED, and why it matters more than what is:
 // S-ID.1, .4, .6 and .8, and S-IC.2, .4 and .5, all require the learner to PRODUCE something —
-// a plot, a fit, a correlation coefficient, a simulation, a margin of error. `how-to-read-a-number`
-// is a reading-and-judgment course: it never asks a learner to compute, because the platform grades
-// typed answers by string equality and could not mark a computed number fairly (see
-// src/lib/exercise.ts and scripts/check-assessment-fit.ts). Claiming a produce-it standard for an
-// interpret-it course would be exactly the widening src/lib/standards/index.ts forbids. Those
-// standards become claimable when the numeric-grading work lands, and not before.
+// a plot, a fit, a correlation coefficient, a simulation, a margin of error. Both courses claiming
+// here (how-to-read-a-number, intro-to-citizen-science) are reading-and-judgment courses: neither
+// asks a learner to compute, because the platform grades typed answers by string equality and could
+// not mark a computed number fairly (see src/lib/exercise.ts and scripts/check-assessment-fit.ts).
+// Claiming a produce-it standard for an interpret-it course would be exactly the widening
+// src/lib/standards/index.ts forbids. Those standards become claimable when the numeric-grading
+// work lands, and not before.
 
 import type { SharedFramework } from "../types";
 
@@ -41,16 +42,23 @@ export const COMMON_CORE_MATH: SharedFramework = {
     {
       code: "CCSS.Math.Content.HSS-IC.B.6",
       text: "Evaluate reports based on data.",
-      claimIds: ["catalog.evaluate-reports-based-on-data"],
+      claimIds: ["catalog.evaluate-reports-based-on-data", "catalog.honest-measurement-reporting"],
       coverage: "full",
-      note: "Cluster: Make inferences and justify conclusions from sample surveys, experiments, and observational studies. The strongest mathematics alignment in this catalog, and the only one claimed at full coverage: the standard is a single sentence describing evaluation rather than computation, and evaluating a public report against its own evidence is the entire course. The capstone requires the learner to do it on a real published number and write the honest version of the sentence it appeared in.",
+      note: "Cluster: Make inferences and justify conclusions from sample surveys, experiments, and observational studies. The strongest mathematics alignment in this catalog: the standard is a single sentence describing evaluation rather than computation, and evaluating a public report against its own evidence is the whole of How to Read a Number, whose capstone requires the learner to do it on a real published number and write the honest version of the sentence it appeared in. Intro to Citizen Science reaches the same standard from the other side, evaluating a report you produced yourself.",
     },
     {
       code: "CCSS.Math.Content.HSS-ID.C.9",
       text: "Distinguish between correlation and causation.",
-      claimIds: ["catalog.correlation-not-causation"],
+      claimIds: ["catalog.correlation-not-causation", "catalog.confounders-in-your-own-data"],
       coverage: "full",
-      note: "Cluster: Interpret linear models. Lesson 11 is this standard and nothing else: the four competing explanations for two things moving together, what actually establishes causation, and why programme evaluation is the civic case where it bites.",
+      note: "Cluster: Interpret linear models. Taught twice, deliberately, from both sides. How to Read a Number lesson 11 is the READING side: four competing explanations for two things moving together, and what actually establishes causation. Intro to Citizen Science lesson 6 is the COLLECTING side, working six candidate confounders through one relationship, several of which are ways the measurement responds rather than ways the world does.",
+    },
+    {
+      code: "CCSS.Math.Content.HSS-IC.B.3",
+      text: "Recognize the purposes of and differences among sample surveys, experiments, and observational studies; explain how randomization relates to each.",
+      claimIds: ["catalog.study-design-and-its-limits"],
+      coverage: "full",
+      note: "Intro to Citizen Science owns this one. Lesson 1 names the three kinds and states the consequence that matters to a volunteer: nearly all citizen science is a survey or an observational study, almost never an experiment, and that ceiling decides what the data will ever be able to say. Lessons 5 and 7 develop how randomisation relates to each and what is available when you cannot randomise.",
     },
     {
       code: "CCSS.Math.Content.HSS-IC.A.1",
@@ -98,9 +106,9 @@ export const COMMON_CORE_MATH: SharedFramework = {
     {
       code: "CCSS.Math.Content.HSN-Q.A.3",
       text: "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.",
-      claimIds: ["catalog.accuracy-and-provenance"],
+      claimIds: ["catalog.accuracy-and-provenance", "catalog.honest-measurement-reporting"],
       coverage: "full",
-      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. Lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release; lesson 9 establishes that a stated margin of error is a lower bound on uncertainty rather than the whole of it.",
+      note: "A judgment rather than a computation, which is why a course that grades no arithmetic can claim it honestly. In How to Read a Number, lesson 8 separates a census from a sample estimate from a projection and refuses to quote a revisable figure without its release, and lesson 9 establishes that a stated margin of error is a lower bound on uncertainty. Intro to Citizen Science lesson 9 makes it a rule the learner applies to their own data: a derived number cannot be more precise than its roughest input.",
     },
   ],
 };

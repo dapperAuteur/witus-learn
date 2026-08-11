@@ -109,6 +109,7 @@ import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { HOW_TO_READ_A_NUMBER_COURSE } from "./data/how-to-read-a-number-course";
 import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out-there-course";
+import { INTRO_TO_CITIZEN_SCIENCE_COURSE } from "./data/intro-to-citizen-science-course";
 import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
@@ -738,6 +739,25 @@ async function main() {
     seriesOrder: 3,
     seriesCode: "SCI",
     seriesPosition: "03",
+  });
+
+  // SCI-04 Intro to Citizen Science. The practical capstone of Wave 1: SCI-01, -02 and -03 all
+  // teach reading other people's evidence, and this one teaches making your own. NOT blocked by
+  // the Ghana beach-cleanup data (operator task 242): this is the METHOD course and it teaches
+  // from published projects and worked hypotheticals. Ships with the `citizen-science-study` Field
+  // Log template, the only platform work in the whole of Wave 1.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "intro-to-citizen-science",
+    course: INTRO_TO_CITIZEN_SCIENCE_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    seriesSlug: "science-and-math",
+    seriesTitle: "Science & Math",
+    seriesOrder: 4,
+    seriesCode: "SCI",
+    seriesPosition: "04",
   });
 
   // River Expedition, course 1 of 11 (RIVER-01). FREE: it is the series funnel and the course that

@@ -97,6 +97,48 @@ export const FIELD_LOG_TEMPLATES: FieldLogTemplate[] = [
       ] },
     ],
   },
+  {
+    key: "citizen-science-study",
+    title: "Citizen science study",
+    description:
+      "Design a study you could actually run, and know what your own data will and will not support. The capstone of Intro to Citizen Science.",
+    audience: "learner",
+    stages: [
+      // The stage spine is the shared documentation one, because a study and a documentary have
+      // the same failure mode: decisions made during collection, in ways that suit what you are
+      // finding. The ITEMS are what differ.
+      { key: "plan", title: "Plan", items: [
+        { id: "plan-question", label: "Write the question so it names what, where, over what period, and compared with what" },
+        { id: "plan-falsify", label: "Say what you would see if the answer were NO (a question that cannot come out negative is not a question)" },
+        { id: "plan-proxy", label: "Name what you are actually measuring, and the assumptions between it and what you care about" },
+      ] },
+      { key: "source", title: "Source", items: [
+        { id: "source-existing", label: "Check what is already measured here (public gauges, agency data, an existing project)" },
+        { id: "source-protocol", label: "Write the protocol BEFORE measuring: what counts, where, when, how long, with what, by whom" },
+        { id: "source-sampling", label: "Decide the sampling plan, and if it is convenience sampling, write down what that limits the result to" },
+      ] },
+      { key: "consent", title: "Consent", items: [
+        { id: "consent-access", label: "Permission for any land or premises you need to be on, repeatedly" },
+        { id: "consent-people", label: "Consent for anyone identifiable in photographs, with guardian consent for minors" },
+        { id: "consent-ownership", label: "Agree who owns the data, who is credited, and whether contributors can get it back" },
+      ] },
+      { key: "capture", title: "Capture", items: [
+        { id: "capture-conditions", label: "Record the conditions alongside every measurement (observer, weather, time, effort)" },
+        { id: "capture-raw", label: "Keep the raw data unedited; corrections go in a new column with a note" },
+        { id: "capture-missing", label: "Use an explicit convention for missing versus zero, and never leave a cell ambiguous" },
+      ] },
+      { key: "verify", title: "Verify", items: [
+        { id: "verify-confounders", label: "List the confounders, including the ones about your own measuring process" },
+        { id: "verify-precision", label: "Check you are not reporting more precisely than your method can distinguish" },
+        { id: "verify-changes", label: "Record every protocol change with its date (an unrecorded change is an uninterpretable step)" },
+      ] },
+      { key: "publish", title: "Publish", items: [
+        { id: "publish-limits", label: "State plainly what the study cannot conclude, and why" },
+        { id: "publish-method", label: "Publish the protocol alongside the results so a reader can judge what it supports" },
+        { id: "publish-withhold", label: "Decide whether any precise location should be withheld to protect a site or the people who helped" },
+      ] },
+    ],
+  },
 ];
 
 const BY_KEY = new Map(FIELD_LOG_TEMPLATES.map((t) => [t.key, t]));

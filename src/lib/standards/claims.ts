@@ -4555,6 +4555,54 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "9 · Why the oxygen runs out",
     ],
   },
+  {
+    id: "catalog.study-design-and-its-limits",
+    claim:
+      "Designs a study that could actually be run, distinguishes surveys from experiments from observational studies, and states plainly what the resulting data will not be able to conclude.",
+    courseSlugs: ["intro-to-citizen-science"],
+    lessons: [
+      // The three study kinds named up front, with the point that volunteer work is almost never
+      // an experiment because that requires assigning the treatment yourself.
+      "1 · What citizen science is, and what it is not",
+      // Convenience, systematic, random and stratified sampling, and the fact that a measurement is
+      // a place AND a time.
+      "5 · Where and when you look decides what you find",
+      // Comparison sites, before periods, repeated cycles, negative controls and blind counts, each
+      // with its cost, and the rule that weak controls described as strong ones is the real failure.
+      "7 · Controls and baselines without a laboratory",
+      // The graded capstone, whose two heaviest sections are the named confounders and the explicit
+      // statement of what the study cannot conclude.
+      "13 · Capstone: design a study you could actually run",
+    ],
+  },
+  {
+    id: "catalog.confounders-in-your-own-data",
+    claim:
+      "Generates the list of alternative explanations for a relationship in data the learner collected themselves, including the ones caused by their own measuring process.",
+    courseSlugs: ["intro-to-citizen-science"],
+    lessons: [
+      // Six candidate confounders worked through on one relationship, of which several are ways the
+      // MEASUREMENT responds rather than ways the world does. Explicitly the sibling of How to Read
+      // a Number lesson 11, from the collecting side rather than the reading side.
+      "6 · The confounder",
+      // Proxies and the chain of assumptions between what is measured and what is cared about.
+      "3 · What you can measure vs what you care about",
+    ],
+  },
+  {
+    id: "catalog.honest-measurement-reporting",
+    claim:
+      "Reports a measured quantity only as precisely as the method supports, and records data so that its own limits remain visible to a later reader.",
+    courseSlugs: ["intro-to-citizen-science"],
+    lessons: [
+      // Units, timestamps, missing versus zero, conditions recorded alongside, and the rule that
+      // raw data is never overwritten.
+      "8 · Recording data so future-you can use it",
+      // Precision against accuracy, and the rule that a derived number cannot be more precise than
+      // its roughest input.
+      "9 · Error, uncertainty, and how precise to be",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
