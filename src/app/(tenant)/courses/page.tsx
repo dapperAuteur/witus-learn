@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { headers } from "next/headers";
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { getScopedDb } from "@/db/scoped";
 import { getSession, getMembership, isPlatformOwner } from "@/lib/session";
 import { resolveTenant } from "@/lib/tenant";
@@ -10,7 +11,25 @@ import { matchEntities } from "@/lib/entities";
 import { isUnvetted } from "@/lib/vetting";
 import { CourseCard } from "@/components/course-card";
 
-export const metadata: Metadata = { title: "Courses" };
+const TITLE = "Courses";
+const DESCRIPTION =
+  "The full catalog: cited, media-rich courses you can filter by subject and sort by where to start. Every claim ties back to a source you can check.";
+
+export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Browse the full catalog" })],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Browse the full catalog" })],
+  },
+};
 
 type SearchParams = Promise<{ q?: string; category?: string; sort?: string }>;
 

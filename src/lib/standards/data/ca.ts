@@ -43,6 +43,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { COMMON_CORE_ELA } from "../shared/common-core-ela";
+import { COMMON_CORE_MATH } from "../shared/common-core-math";
 import { NGSS } from "../shared/ngss";
 import type { JurisdictionFile } from "../types";
 
@@ -52,7 +53,12 @@ export const JURISDICTION: JurisdictionFile = {
     {
       framework: COMMON_CORE_ELA,
       adoption:
-        "California adopted the Common Core State Standards in August 2010; SB 1200 (2012) modifications of March 13, 2013, added California-specific standards flagged “CA” in the state's own document (California Common Core State Standards: ELA & Literacy in History/Social Studies, Science, and Technical Subjects). We compared every standard we cite against that document: at grades 11-12 none of the six carries a CA flag and the text is identical — the single variance is a serial comma printed in RI.11-12.6 (“persuasiveness, or beauty”). We claim no mathematics standards.",
+        "California adopted the Common Core State Standards in August 2010; SB 1200 (2012) modifications of March 13, 2013, added California-specific standards flagged “CA” in the state's own document (California Common Core State Standards: ELA & Literacy in History/Social Studies, Science, and Technical Subjects). We compared every standard we cite against that document: at grades 11-12 none of the six carries a CA flag and the text is identical — the single variance is a serial comma printed in RI.11-12.6 (“persuasiveness, or beauty”). Mathematics is a SEPARATE adoption, below.",
+    },
+    {
+      framework: COMMON_CORE_MATH,
+      adoption:
+        "MATHEMATICS WAS CHECKED SEPARATELY FROM ELA, because a state's math and ELA adoptions are not the same decision and several states kept one and not the other. The California Department of Education's mathematics content standards page states that California's math standards are the Common Core State Standards for Mathematics, “adopted by the California State Board of Education in August 2010 (Modified January 2013 Publication Version)”, with the Mathematics Framework implementing them most recently adopted on July 12, 2023 (fetched 2026-08-10). The Framework is guidance for instruction; the standards are the CCSS, so we cite the canonical CCSS codes and add no aliases. This is the first mathematics claim in this catalog, and it comes from one course, How to Read a Number, which teaches the reading of published quantities and grades no arithmetic. Every standard claimed here is therefore an interpret-it standard; the produce-it standards (S-ID.1, .4, .6, .8 and S-IC.2, .4, .5) are deliberately absent and are listed under what we do not claim.",
     },
     {
       framework: NGSS,
@@ -571,8 +577,8 @@ export const JURISDICTION: JurisdictionFile = {
   // Standards we CONSIDERED AND REJECTED — published as loudly as the claims.
   notClaimed: [
     {
-      heading: "Mathematics — nothing.",
-      body: "This catalog does no mathematics instruction, so it meets no California Common Core mathematics standard.",
+      heading: "Mathematics — the interpret-it standards only, and never the produce-it ones.",
+      body: "One course, How to Read a Number, teaches the reading of published quantities: provenance, denominators, what a summary discarded, what a margin of error covers, correlation against causation, and the arithmetic of representation. It grades no arithmetic. Every assessment is scenario multiple-choice or a click-to-reveal self-check, and the learner is never asked to produce a number. So we claim the standards about interpreting and evaluating data, and we do NOT claim S-ID.1, S-ID.4, S-ID.6, S-ID.8, S-IC.2, S-IC.4 or S-IC.5, every one of which requires the student to construct a plot, fit a model, compute a correlation coefficient, run a simulation, or develop a margin of error. A course that never asks for those cannot claim them. If your mathematics requirement is assessed on students producing statistical work, this contributes to it and does not discharge it. We also claim nothing in algebra, functions, geometry or probability, because we teach none of it.",
     },
     {
       heading: "Science — one partial claim, via the shared NGSS file.",

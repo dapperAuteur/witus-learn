@@ -107,6 +107,10 @@ import { AI_B5_DEPLOYING_EVALUATING_COURSE } from "./data/ai-b5-deploying-evalua
 import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capstone-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
+import { HOW_TO_READ_A_NUMBER_COURSE } from "./data/how-to-read-a-number-course";
+import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out-there-course";
+import { INTRO_TO_CITIZEN_SCIENCE_COURSE } from "./data/intro-to-citizen-science-course";
+import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 // Here Be Dragons (plans/58), course 1 of 5. Culture & History, grades 9-12.
 import { MONSTERS_AT_THE_EDGE_OF_THE_MAP_COURSE } from "./data/monsters-at-the-edge-of-the-map-course";
@@ -669,6 +673,91 @@ async function main() {
     course: HOW_TO_RESEARCH_COURSE,
     category: "Study Skills",
     navigationMode: "linear",
+  });
+
+  // ── Science & Math, Wave 1 ───────────────────────────────────────────────────────────────────
+  // Track proposal: plans/future-courses/sciences/02-science-and-math-track-proposal.md.
+  // The category is new. Every course in it complements courses that already exist rather than
+  // sitting beside the catalog: SCI-01 serves the 34 Civics courses, which all quote numbers and
+  // none of which teach a learner how to check one.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Science & Math", sortOrder: 15 })
+    .onConflictDoNothing();
+
+  // SCI-01 How to Read a Number. Wave 1, so it needs NO platform work: every assessment is
+  // scenario multiple-choice or a `:::reveal` self-check, and the learner is never asked to
+  // produce a number (which `checkExerciseAnswer` grades by string equality and could not mark
+  // fairly). Outline: plans/future-courses/sciences/outlines/01-how-to-read-a-number.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-to-read-a-number",
+    course: HOW_TO_READ_A_NUMBER_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    seriesSlug: "science-and-math",
+    seriesTitle: "Science & Math",
+    seriesOrder: 1,
+    seriesCode: "SCI",
+    seriesPosition: "01",
+  });
+
+  // SCI-02 How We Know What's Out There. The course BAM asked for: astronomy taught as EVIDENCE,
+  // starting where river-finding-your-way ends (navigation) and climbing the distance ladder. No
+  // equations, by design, so it ships in Wave 1. Its risk is not the physics, it is the biography:
+  // five checks are registered in src/lib/research-checks.ts and the lessons hedge in the text
+  // until they are answered. Outline: plans/future-courses/sciences/outlines/02-*.md.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-we-know-whats-out-there",
+    course: HOW_WE_KNOW_WHATS_OUT_THERE_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    seriesSlug: "science-and-math",
+    seriesTitle: "Science & Math",
+    seriesOrder: 2,
+    seriesCode: "SCI",
+    seriesPosition: "02",
+  });
+
+  // SCI-03 The River and the Watershed. The PHYSICAL half of the eleven River Expedition courses,
+  // which teach what the basin means and never how the river works. Deliberately does NOT duplicate
+  // river-the-dead-zone: lesson 9 here gives the hypoxia MECHANISM, that course keeps the
+  // problems-with-no-author argument, and each links to the other. Lesson 12 is the only lesson
+  // with an external dependency (the kayak trip) and is written to work with whatever arrives.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-river-and-the-watershed",
+    course: THE_RIVER_AND_THE_WATERSHED_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    seriesSlug: "science-and-math",
+    seriesTitle: "Science & Math",
+    seriesOrder: 3,
+    seriesCode: "SCI",
+    seriesPosition: "03",
+  });
+
+  // SCI-04 Intro to Citizen Science. The practical capstone of Wave 1: SCI-01, -02 and -03 all
+  // teach reading other people's evidence, and this one teaches making your own. NOT blocked by
+  // the Ghana beach-cleanup data (operator task 242): this is the METHOD course and it teaches
+  // from published projects and worked hypotheticals. Ships with the `citizen-science-study` Field
+  // Log template, the only platform work in the whole of Wave 1.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "intro-to-citizen-science",
+    course: INTRO_TO_CITIZEN_SCIENCE_COURSE,
+    category: "Science & Math",
+    navigationMode: "linear",
+    seriesSlug: "science-and-math",
+    seriesTitle: "Science & Math",
+    seriesOrder: 4,
+    seriesCode: "SCI",
+    seriesPosition: "04",
   });
 
   // River Expedition, course 1 of 11 (RIVER-01). FREE: it is the series funnel and the course that

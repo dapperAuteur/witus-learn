@@ -65,8 +65,16 @@ describe("standards matrix — flatten shape", () => {
       expect(mapped.has(r.state), `${r.state} not in mappedStates()`).toBe(true);
       expect(r.stateName.length).toBeGreaterThan(0);
       expect(r.code.length).toBeGreaterThan(0);
-      // A short "text" is the signature of a paraphrase; real standards are sentences.
-      expect(r.text.length, r.code).toBeGreaterThan(40);
+      // A short "text" is the signature of a paraphrase; real standards are sentences. The two
+      // exceptions are genuinely short Common Core mathematics standards, transcribed whole from
+      // the publisher's PDF — padding them would break the verbatim rule. Kept in step with the
+      // identical list in standards.test.ts.
+      const VERBATIM_AND_SHORT = new Set([
+        "CCSS.Math.Content.HSS-IC.B.6", // "Evaluate reports based on data."
+        "CCSS.Math.Content.HSS-ID.C.9", // "Distinguish between correlation and causation."
+      ]);
+      if (!VERBATIM_AND_SHORT.has(r.code)) expect(r.text.length, r.code).toBeGreaterThan(40);
+      expect(r.text.length, r.code).toBeGreaterThan(20);
       expect(r.sourceUrl, r.frameworkId).toMatch(/^https:\/\//);
       expect(r.fetchedOn, r.frameworkId).toMatch(/^\d{4}-\d{2}-\d{2}$/);
       expect(["full", "partial"]).toContain(r.coverage);

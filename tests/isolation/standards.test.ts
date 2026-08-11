@@ -69,6 +69,13 @@ const CATALOG = [
   // Study Skills. Registered via seedAuthoredCourse rather than the shorthand form, which is why
   // check-standards-coverage cannot see it and this list has to carry it explicitly.
   "how-to-research",
+  // Science & Math track, Wave 1 (plans/future-courses/sciences/). Same reason as how-to-research:
+  // registered via seedAuthoredCourse, so the coverage ratchet cannot see it. This is the course
+  // that carries the catalog's first MATHEMATICS claims.
+  "how-to-read-a-number",
+  "how-we-know-whats-out-there",
+  "the-river-and-the-watershed",
+  "intro-to-citizen-science",
   // Here Be Dragons series (plans/58), Culture & History, grades 9-12. Five courses on how people
   // described a world they had not seen, and what those descriptions were later used for.
   "monsters-at-the-edge-of-the-map",
@@ -241,7 +248,19 @@ describe("standards data integrity — a wrong code could be filed with a state"
   it("every standard has a verbatim text, at least one course, and at least one lesson", () => {
     for (const a of ALIGNMENTS) {
       // A short "text" is the signature of a paraphrase. Real standards are sentences.
-      expect(a.text.length, a.code).toBeGreaterThan(40);
+      //
+      // Two Common Core mathematics standards genuinely ARE this short, and padding them to satisfy
+      // the heuristic would break the rule this whole module exists to enforce: `text` is the
+      // standard's own words. Both were transcribed from the CCSSI's own PDF (p. 81) and are
+      // complete sentences as published, not truncations. Add to this list only after reading the
+      // standard in the publisher's document and confirming the text is whole.
+      const VERBATIM_AND_SHORT = new Set([
+        "CCSS.Math.Content.HSS-IC.B.6", // "Evaluate reports based on data."
+        "CCSS.Math.Content.HSS-ID.C.9", // "Distinguish between correlation and causation."
+      ]);
+      if (!VERBATIM_AND_SHORT.has(a.code)) expect(a.text.length, a.code).toBeGreaterThan(40);
+      // Even the short ones must be a real sentence, not a stub or the code echoed back.
+      expect(a.text.length, a.code).toBeGreaterThan(20);
       expect(a.courseSlugs.length, a.code).toBeGreaterThan(0);
       expect(a.lessons.length, a.code).toBeGreaterThan(0);
     }

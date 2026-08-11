@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { requireTenant } from "@/lib/tenant";
@@ -6,7 +7,25 @@ import { listCourses } from "@/db/queries/catalog";
 import { UsStatesMap, type StateLink } from "@/components/us-states-map";
 import { US_STATES, stateCodeFromSlug } from "@/lib/us-states";
 
-export const metadata: Metadata = { title: "Civics by State" };
+const TITLE = "Civics by State";
+const DESCRIPTION =
+  "Find the civics course for your state: how your legislature, courts and elections actually work, written from that state's own official sources and cited.";
+
+export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Pick your state on the map" })],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Pick your state on the map" })],
+  },
+};
 
 // Per-state civics hub: a clickable US map. A state lights up when this tenant has a course
 // with slug `state-civics-<code>`. Tenant-scoped (only this brand's courses) and only shown

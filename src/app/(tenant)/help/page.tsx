@@ -1,9 +1,28 @@
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import Link from "next/link";
 import { HELP_ARTICLES } from "@/lib/help-articles";
 import { HelpSearch, type HelpEntry } from "@/components/help-search";
 
-export const metadata: Metadata = { title: "Help & teacher guide" };
+const TITLE = "Help & teacher guide";
+const DESCRIPTION =
+  "How to use the platform, for learners and for teachers: setting up a class, tracking progress, assigning work, and getting a course ready to teach.";
+
+export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Search the guide" })],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Search the guide" })],
+  },
+};
 
 // In-app Help Center / teacher guide (help-documention.md). Fuzzy-searchable how-tos for using the
 // app. Public — harmless to read, and one link away from Teach.

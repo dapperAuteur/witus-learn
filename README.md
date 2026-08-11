@@ -156,6 +156,19 @@ that course carries standards, with its own per-state counts, and every link on 
 through so the reader stays filtered. A slug this tenant does not publish, or has no mapping for,
 resolves to nothing and says so, so the finder still works but never claims anything about it.
 
+**Subjects.** Social Studies, English/Language Arts, Science, **Mathematics**, Health & Wellness, and
+Physical Education. Mathematics arrived with the Science & Math track (2026-08-10) and is the newest:
+Common Core Mathematics, mapped once in `src/lib/standards/shared/common-core-math.ts` and adopted so
+far by California. **A state's mathematics adoption is a separate decision from its ELA adoption** and
+must be checked against that state's own department of education before it is added; several states
+kept one and not the other. NGSS carries HS-ESS1 and HS-ESS2 alongside the original HS-ESS3.
+
+Every mathematics and science standard this catalog claims is an **interpret-it** standard. The
+produce-it expectations (Common Core S-ID.1/.4/.6/.8 and S-IC.2/.4/.5; every NGSS "Develop a model"
+performance expectation) are deliberately **unclaimed**, because no course asks a learner to construct
+a plot, fit a model, run a simulation or build a model, and the platform could not grade it if they
+did. They become claimable when numeric grading ships, and not before.
+
 The companion **standards explorer** (`/academic-standards/matrix`) flattens every
 (state x standard x course) alignment into one table you can fuzzy-search (code, standard text,
 course, state, subject), filter (state / subject / coverage / course), and sort by any column, with

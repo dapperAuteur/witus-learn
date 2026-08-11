@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { getScopedDb } from "@/db/scoped";
 import { brandName } from "@/lib/branding";
 import { LanguagesMap } from "@/components/languages-map";
@@ -7,7 +8,17 @@ import { notFound } from "next/navigation";
 
 export async function generateMetadata(): Promise<Metadata> {
   const sdb = await getScopedDb();
-  return { title: `Language Atlas, ${brandName(sdb.tenant)}` };
+  const brand = brandName(sdb.tenant);
+  const title = `Language Atlas, ${brand}`;
+  const description =
+    "Where the languages we teach come from and where they travelled: origin pins, speaker regions, and the routes colonisation carried them along.";
+  const image = ogImageUrl({ title: "Language Atlas", subtitle: "Origins, speakers, and the routes between" });
+  return {
+    title,
+    description,
+    openGraph: { title, description, images: [image] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
+  };
 }
 
 // The Languages map (origin pins + speaker regions + colonial-spread arcs). Only

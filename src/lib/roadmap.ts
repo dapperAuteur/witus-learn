@@ -5,6 +5,28 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **Science & Math track, Wave 1** (\`feat/science-math-wave-1\`, a NEW category and the
+  \`science-and-math\` series): four courses that each complement what the catalog already has rather
+  than sitting beside it. **SCI-01 How to Read a Number** serves the 34 Civics courses, which all
+  quote numbers and none of which taught how to check one. **SCI-02 How We Know What's Out There**
+  picks up where \`river-finding-your-way\` ends and climbs the distance ladder. **SCI-03 The River
+  and the Watershed** is the physical half of the eleven River Expedition courses. **SCI-04 Intro to
+  Citizen Science** is the practical capstone and ships the \`citizen-science-study\` Field Log
+  template. No platform work needed: no equations and no graded arithmetic anywhere, because the
+  app has no math rendering and \`checkExerciseAnswer\` grades by string equality. Carries the
+  catalog's **first mathematics standards** (Common Core, adopted by California, whose math adoption
+  was verified separately from its ELA adoption) and **NGSS HS-ESS1 + HS-ESS2**, with every
+  produce-it expectation deliberately unclaimed and published under what we do not claim. Seven
+  research checks filed rather than guessed. Track plan:
+  \`plans/future-courses/sciences/02-science-and-math-track-proposal.md\`.
+- ✅ **Every public landing page has its own share card** (\`feat/science-math-wave-1\`): eleven pages
+  (\`/civics\`, \`/courses\`, \`/demo\`, \`/for\`, \`/globe\`, \`/great-migration-map\`, \`/help\`,
+  \`/instructors\`, \`/languages\`, \`/live\`, \`/paths\`) rode the tenant's DEFAULT OG card, so texting
+  any of them produced a preview identical to every other page. Six also had a bare title and no
+  description at all. Each now sets a unique title, a written description, and \`openGraph\` +
+  \`twitter\` images via \`ogImageUrl()\`. The eleven allowlist entries are DELETED from
+  \`check-page-reachability.ts\`, so the ratchet now fails any new public page shipping on the default
+  card; only the three legal pages remain excused.
 - ✅ Phases 1-7 + 5a-d (isolation, catalog, auth, enrollment, Stripe, prerequisites, CYOA,
   embeddings, pedagogy/trust, certificates).
 - ✅ AI tutor (multi-agent + streaming + LangSmith + per-tenant + paid-only + isolation test).

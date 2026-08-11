@@ -1,10 +1,29 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { notFound } from "next/navigation";
 import { getScopedDb } from "@/db/scoped";
 import { listPaths } from "@/db/queries/paths";
 
-export const metadata: Metadata = { title: "Learning paths" };
+const TITLE = "Learning paths";
+const DESCRIPTION =
+  "Curated routes through the catalog: which courses to take, in what order, and what each one prepares you for.";
+
+export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Where to start, and what follows" })],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Where to start, and what follows" })],
+  },
+};
 
 // Curated course tracks for a school (flags.paths).
 export default async function PathsPage() {

@@ -4381,6 +4381,228 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "13 · How Africa's map emptied out",
     ],
   },
+
+  // ── Science & Math track, Wave 1 ─────────────────────────────────────────────────────────────
+  // The catalog's FIRST mathematics claims. They are deliberately narrow and they are all about
+  // INTERPRETING data rather than producing it, because `how-to-read-a-number` grades no
+  // arithmetic: every assessment is scenario multiple-choice or a `:::reveal` self-check. That is
+  // not a limitation being worked around, it is what the course is. A produce-it standard
+  // (S-ID.1/.4/.6/.8, S-IC.2/.4/.5) is claimed by NONE of these, and must not be added until the
+  // numeric-grading work ships.
+  {
+    id: "catalog.evaluate-reports-based-on-data",
+    claim:
+      "Takes a number published in support of a public argument and establishes what it does and does not claim, from its provenance, its denominator, and what its summary discarded.",
+    courseSlugs: ["how-to-read-a-number"],
+    lessons: [
+      // The four questions (what was counted, who counted it, when, compared to what) run on a real
+      // headline shape until it is clear the sentence does not yet say anything.
+      "1 · The four questions",
+      // Five kinds of object that print identically: census, sample survey, administrative record,
+      // estimate, projection. The administrative blind spot is taught as a definition, not a flaw.
+      "8 · Where the number came from",
+      // The graded capstone: a real published number, the four questions answered or marked
+      // unanswerable, and the original sentence rewritten to claim exactly what the evidence supports.
+      "16 · Capstone: take a number apart",
+    ],
+  },
+  {
+    id: "catalog.correlation-not-causation",
+    claim:
+      "Separates the four competing explanations for two quantities moving together, and names what would actually be required to establish that one caused the other.",
+    courseSlugs: ["how-to-read-a-number"],
+    lessons: [
+      // Forward causation, reverse causation, confounding and coincidence, then randomisation,
+      // natural experiments, mechanism and repetition as the things that do establish causation.
+      "11 · Correlation and causation",
+      // The civic case: a programme's outcomes cannot be read until you know how neighbourhoods
+      // were selected for it, because programmes are almost never assigned at random.
+      "12 · Knowledge check: what is hidden, and what polls can say",
+    ],
+  },
+  {
+    id: "catalog.sample-to-population-inference",
+    claim:
+      "Reads a survey result as an inference from a sample to a population, and identifies the specific ways a real sample stops representing the population it is meant to describe.",
+    courseSlugs: ["how-to-read-a-number"],
+    lessons: [
+      // A margin of error covers sampling error and nothing else; it is a lower bound on
+      // uncertainty computed under an assumption no real survey achieves.
+      "9 · What a margin of error actually covers",
+      // Coverage error, nonresponse and screening as three distinct exits from the sample, plus
+      // what weighting can and cannot repair.
+      "10 · Who is not in the sample",
+    ],
+  },
+  {
+    id: "catalog.distribution-shape-and-spread",
+    claim:
+      "Recovers what a summary statistic discarded: which average was chosen, whether the distribution is skewed, and what the spread would have shown.",
+    courseSlugs: ["how-to-read-a-number"],
+    lessons: [
+      // Mean, median and mode diverge exactly when the distribution is skewed, and the divergence
+      // is the story: average income can rise in a year when most people got poorer.
+      "6 · Averages that hide",
+      // Range, interquartile range and standard deviation, and the argument that classifying an
+      // outlier requires subject knowledge rather than statistical technique.
+      "7 · Spread, outliers, and the number that is not there",
+      // Charts as arguments made through geometry: truncated and dual axes, area used where length
+      // was meant, the chosen window, and the choropleth trap.
+      "13 · Charts that lie",
+    ],
+  },
+  {
+    id: "catalog.units-denominators-and-scale",
+    claim:
+      "Chooses and defends the quantity a public measurement should be expressed in: what it is divided by, and what the scale and origin of its display do to the impression it leaves.",
+    courseSlugs: ["how-to-read-a-number"],
+    lessons: [
+      // Counts rank by population; per-capita is better and often still the wrong denominator;
+      // per-exposure (deaths per mile driven, injuries per hour worked) is usually the honest one.
+      "2 · Counts, rates, and per-capita",
+      // Turnout over registered voters, the voting-eligible population, or the voting-age
+      // population: three honest numbers for one election, and the denominator is where the
+      // disenfranchised go.
+      "4 · The denominator is the argument",
+      // Apportionment: 435 seats, whole numbers, and the Balinski-Young result that the desirable
+      // properties of a method cannot all be satisfied at once.
+      "14 · Apportionment: the math of representation",
+    ],
+  },
+  {
+    id: "catalog.accuracy-and-provenance",
+    claim:
+      "Reports a quantity only as precisely as its source supports, and distinguishes a measurement from an estimate and from a projection before repeating either.",
+    courseSlugs: ["how-to-read-a-number"],
+    lessons: [
+      // Percent, percentage point and percent change are three different things sharing one symbol;
+      // relative risk without absolute risk is unreadable.
+      "3 · Percent, percentage point, and percent change",
+      // A projection is an argument about the future dressed as a measurement. The census
+      // undercount discussion refuses to quote a revisable figure without naming its release.
+      "8 · Where the number came from",
+      // A stated margin of error is a lower bound on uncertainty, not the whole of it.
+      "9 · What a margin of error actually covers",
+    ],
+  },
+  {
+    id: "catalog.astronomical-evidence-chain",
+    claim:
+      "Traces how the composition, distance and motion of objects nobody can visit are established from spectra and apparent brightness, and identifies which link in that chain a given number depends on.",
+    courseSlugs: ["how-we-know-whats-out-there"],
+    lessons: [
+      // Absorption lines as a fingerprint: what a spectrum gives you (elements, temperature,
+      // motion), and the displaced-pattern reading that becomes redshift six lessons later.
+      "5 · Light itself",
+      // Redshift and expansion, stated precisely enough to kill the flying-apart-from-a-centre
+      // misreading, plus the Lemaitre priority and what the IAU recommended.
+      "11 · Redshift and an expanding universe",
+      // Two well-built measurements of the expansion rate that disagree, and the three candidate
+      // explanations. Live disagreement taught as normal science rather than as scandal.
+      "12 · The Hubble tension",
+      // The capstone: take a number from a popular astronomy article, trace it to the measurement
+      // it rests on, name the weakest link, and say what kind of claim it is.
+      "16 · Capstone: trace a number down the ladder",
+    ],
+  },
+  {
+    id: "catalog.stars-produce-elements",
+    claim:
+      "Explains how stars build the elements over their life cycle, and sets out the independent lines of evidence that establish it.",
+    courseSlugs: ["how-we-know-whats-out-there"],
+    lessons: [
+      // The HR diagram as a snapshot of a population at different stages of life, which is what
+      // makes "over their life cycle" mean anything.
+      "7 · Reading a star: the HR diagram",
+      // Fusion up to iron, why it stops there, what stellar death produces, and the four
+      // independent-ish lines of evidence that agree.
+      "13 · What stars make",
+    ],
+  },
+  {
+    id: "catalog.watershed-feedbacks",
+    claim:
+      "Traces how one change to the land surface propagates through a river system into other systems, including changes that appear a thousand miles from their cause.",
+    courseSlugs: ["the-river-and-the-watershed"],
+    lessons: [
+      // Paving removes infiltration, which raises flood peaks AND lowers baseflow: one mechanism,
+      // two symptoms that look contradictory until you see it.
+      "2 · Where a river's water comes from",
+      // A dam traps sediment, so the channel below erodes and the delta stops being resupplied.
+      "6 · Sediment, and what a dam does to it",
+      // Nutrients to bloom to die-off to decomposition, with stratification as the step that makes
+      // the low-oxygen zone persist.
+      "9 · Why the oxygen runs out",
+      // Fertiliser, tile drainage and the physical route from an Indiana field to the Gulf, plus
+      // why the cost and the benefit land in different places.
+      "10 · A thousand miles of nitrogen",
+    ],
+  },
+  {
+    id: "catalog.water-and-surface-processes",
+    claim:
+      "Explains how water's physical properties shape land and move material: erosion and deposition, sediment transport, and density stratification.",
+    courseSlugs: ["the-river-and-the-watershed"],
+    lessons: [
+      // Meanders, cut banks, point bars, oxbows and floodplains as erosion and deposition in
+      // particular arrangements, taught as a process caught mid-motion rather than as shapes.
+      "5 · The river shapes the land",
+      // Carrying capacity as a function of energy, which is why sediment-starved water below a dam
+      // is MORE erosive rather than less.
+      "6 · Sediment, and what a dam does to it",
+      // Density stratification: why warm fresh water over cold salt water cuts the bottom layer
+      // off from the atmosphere, and why a storm breaks it up.
+      "9 · Why the oxygen runs out",
+    ],
+  },
+  {
+    id: "catalog.study-design-and-its-limits",
+    claim:
+      "Designs a study that could actually be run, distinguishes surveys from experiments from observational studies, and states plainly what the resulting data will not be able to conclude.",
+    courseSlugs: ["intro-to-citizen-science"],
+    lessons: [
+      // The three study kinds named up front, with the point that volunteer work is almost never
+      // an experiment because that requires assigning the treatment yourself.
+      "1 · What citizen science is, and what it is not",
+      // Convenience, systematic, random and stratified sampling, and the fact that a measurement is
+      // a place AND a time.
+      "5 · Where and when you look decides what you find",
+      // Comparison sites, before periods, repeated cycles, negative controls and blind counts, each
+      // with its cost, and the rule that weak controls described as strong ones is the real failure.
+      "7 · Controls and baselines without a laboratory",
+      // The graded capstone, whose two heaviest sections are the named confounders and the explicit
+      // statement of what the study cannot conclude.
+      "13 · Capstone: design a study you could actually run",
+    ],
+  },
+  {
+    id: "catalog.confounders-in-your-own-data",
+    claim:
+      "Generates the list of alternative explanations for a relationship in data the learner collected themselves, including the ones caused by their own measuring process.",
+    courseSlugs: ["intro-to-citizen-science"],
+    lessons: [
+      // Six candidate confounders worked through on one relationship, of which several are ways the
+      // MEASUREMENT responds rather than ways the world does. Explicitly the sibling of How to Read
+      // a Number lesson 11, from the collecting side rather than the reading side.
+      "6 · The confounder",
+      // Proxies and the chain of assumptions between what is measured and what is cared about.
+      "3 · What you can measure vs what you care about",
+    ],
+  },
+  {
+    id: "catalog.honest-measurement-reporting",
+    claim:
+      "Reports a measured quantity only as precisely as the method supports, and records data so that its own limits remain visible to a later reader.",
+    courseSlugs: ["intro-to-citizen-science"],
+    lessons: [
+      // Units, timestamps, missing versus zero, conditions recorded alongside, and the rule that
+      // raw data is never overwritten.
+      "8 · Recording data so future-you can use it",
+      // Precision against accuracy, and the rule that a derived number cannot be more precise than
+      // its roughest input.
+      "9 · Error, uncertainty, and how precise to be",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

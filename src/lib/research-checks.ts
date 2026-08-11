@@ -517,6 +517,179 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "Gallica, the Bibliothèque nationale de France digital library",
     ],
   },
+
+  // ── How We Know What's Out There (SCI-02) ─────────────────────────────────────────────────────
+  // The physics in this course is settled and citable. The BIOGRAPHY is where the risk is, and the
+  // She Did the Work audit is the precedent: 14 factual errors in one social calendar, several
+  // about living people. Popular science history is worse, because a good anecdote gets repeated
+  // for a century before anyone checks it. Each lesson below HEDGES IN THE TEXT rather than
+  // asserting, and tells the learner it is hedging, which is the subject of the course being
+  // modelled rather than a disclaimer bolted on. Close a check by fixing the lesson and DELETING
+  // the entry.
+  {
+    key: "banneker-lenfant-plan",
+    course: "how-we-know-whats-out-there",
+    lesson: "banneker-and-the-almanac",
+    quote:
+      "Treat that story as unestablished. It is widely repeated, and historians have questioned whether it holds up.",
+    title: "Banneker and the reconstruction of the Washington plan from memory",
+    severity: "high",
+    question:
+      "What does the primary record support about Benjamin Banneker's role in the survey of the federal district, and specifically about the claim that he reconstructed L'Enfant's plan from memory after L'Enfant left with the drawings?",
+    claim:
+      "The lesson states his documented work (almanac ephemerides, the 1791 letter to Jefferson, the boundary survey under Andrew Ellicott) and explicitly declines to repeat the reconstruction story, telling the learner it is contested and that an already-remarkable life acquiring a better story is a reason to check.",
+    stakes:
+      "HIGH, in two directions. Asserting a likely-false story in a course about evidence would be self-refuting. But under-crediting him would be its own error, and this is a Black scientist whose reputation has been both inflated by admirers and attacked by detractors. Getting the line exactly right matters more here than almost anywhere in the catalog.",
+    needs: [
+      "What the surviving survey records show about his actual role and dates",
+      "The earliest known appearance of the reconstruction story, and whether any contemporary source supports it",
+      "A citable statement from a historian or holding institution on its status",
+    ],
+    where: [
+      "Library of Congress, Banneker and early District of Columbia survey records",
+      "Maryland Center for History and Culture",
+      "National Park Service history of the L'Enfant plan",
+    ],
+  },
+  {
+    key: "payne-thesis-retraction",
+    course: "how-we-know-whats-out-there",
+    lesson: "cecilia-payne-and-what-stars-are-made-of",
+    quote:
+      "The compressed version is doing several things at once, and this course flags rather than repeats it.",
+    title: "Cecilia Payne's 1925 thesis: what actually happened with the hedged conclusion",
+    severity: "medium",
+    question:
+      "What do the 1925 thesis and the surrounding correspondence actually show about how the hydrogen-abundance conclusion came to be described as almost certainly not real, and what was Henry Norris Russell's documented role?",
+    claim:
+      "The lesson states that the published thesis contains language stepping back from the result, that she was correct, and that the widely told forced-to-retract version compresses several things. It deliberately does not narrate the sequence.",
+    stakes:
+      "MEDIUM. The science is not in question and the lesson is honest as written. But this is one of the most-repeated stories in popular astronomy and the popular version may be unfair to one or both parties. A course about evidence should tell it accurately or not at all.",
+    needs: [
+      "The exact hedging sentence in the published thesis, with its page",
+      "What the surviving correspondence shows about who advised the hedge",
+      "How Russell's own later publication treated her priority",
+    ],
+    where: [
+      "The published 1925 thesis, Stellar Atmospheres, Radcliffe College",
+      "Harvard College Observatory archives and the Payne-Gaposchkin papers",
+    ],
+  },
+  {
+    key: "leavitt-nobel-anecdote",
+    course: "how-we-know-whats-out-there",
+    lesson: "rung-two-leavitts-yardstick",
+    quote:
+      "That story is usually told inaccurately, and this course leaves it out pending a check against primary sources.",
+    title: "The Henrietta Leavitt Nobel nomination anecdote",
+    severity: "low",
+    question:
+      "What is the documented basis for the story that Henrietta Swan Leavitt was going to be nominated for a Nobel Prize, and is the usual telling accurate?",
+    claim:
+      "The lesson mentions the anecdote exists, says it is usually told inaccurately, omits it, and argues that introducing her through a prize she did not receive makes the prize the measure of the work.",
+    stakes:
+      "LOW for the astronomy, which is unaffected. Worth settling anyway: it is repeated everywhere, and this course tells the learner it is unreliable, so it should be able to say why.",
+    needs: [
+      "The documented origin of the story and who recorded it",
+      "Whether any nomination or intent to nominate is evidenced",
+      "Whether the usual retelling misstates the dates",
+    ],
+    where: ["The Nobel Foundation nomination archive", "Harvard College Observatory archives"],
+  },
+  {
+    key: "hubble-tension-current-values",
+    course: "how-we-know-whats-out-there",
+    lesson: "the-hubble-tension",
+    quote:
+      "This course does not print current values for the expansion rate, because they are actively revised and a course is a poor place for a number that moves.",
+    title: "Current expansion-rate values from both method families",
+    severity: "medium",
+    question:
+      "What are the current published values, with uncertainties and dates, for the Hubble constant from the distance-ladder family and from the early-universe family, and has the tension narrowed?",
+    claim:
+      "The lesson describes the disagreement and its three candidate explanations, and deliberately prints NO numbers, telling the learner to go to a current source and note which method produced the figure.",
+    stakes:
+      "MEDIUM. The lesson is honest and durable as written, which was the point of omitting the numbers. But a course about how we know things is stronger if it can show the reader the actual gap, and this is live enough to need a date attached and a plan to revisit.",
+    needs: [
+      "One current representative value plus uncertainty from each family, with publication and date",
+      "Whether the gap has narrowed, widened, or held",
+      "A note on when this should next be re-checked",
+    ],
+    where: [
+      "NASA and ESA mission pages",
+      "The most recent peer-reviewed determinations from each method family",
+    ],
+  },
+  {
+    key: "iau-hubble-lemaitre-resolution",
+    course: "how-we-know-whats-out-there",
+    lesson: "redshift-and-an-expanding-universe",
+    quote:
+      "The International Astronomical Union has recommended the name Hubble-Lemaitre law, and this course uses it.",
+    title: "The IAU resolution on the Hubble-Lemaitre law: exact status and wording",
+    severity: "low",
+    question:
+      "What did IAU Resolution B4 (2018) actually say, what was the outcome of the member vote, and is the recommendation binding or advisory?",
+    claim:
+      "The lesson states that Lemaitre published the relationship in 1927, two years before Hubble, that the IAU has recommended the name Hubble-Lemaitre law, and that this course uses it.",
+    stakes:
+      "LOW. The priority fact is well documented and is the teaching point. But the lesson makes a claim about what a scientific body decided, and recommended versus voted-to-rename is exactly the distinction this course teaches learners to notice. It should be right about its own example.",
+    needs: [
+      "The resolution's operative wording",
+      "The vote outcome and whether it is advisory",
+      "Confirmation of the 1927 publication details",
+    ],
+    where: [
+      "iau.org, Resolution B4 (2018)",
+      "Lemaitre 1927, Annales de la Societe Scientifique de Bruxelles",
+    ],
+  },
+
+  // ── The River and the Watershed (SCI-03) ──────────────────────────────────────────────────────
+  {
+    key: "gulf-hypoxic-zone-extent",
+    course: "the-river-and-the-watershed",
+    lesson: "why-the-oxygen-runs-out",
+    quote:
+      "The affected area varies from year to year and is measured by survey each summer.",
+    title: "Gulf of Mexico hypoxic zone: the current measured extent",
+    severity: "medium",
+    question:
+      "What was the measured extent of the Gulf of Mexico hypoxic zone in the most recent annual summer survey, and what is the five-year average the Hypoxia Task Force reports against its own reduction target?",
+    claim:
+      "The lesson describes the mechanism in four steps and states that the affected area varies year to year and is measured each summer. It deliberately prints NO figure.",
+    stakes:
+      "MEDIUM. The lesson is honest and durable as written, and the mechanism is the teaching point. But the size is the fact everyone wants, a course that can give it with a year attached is stronger, and printing a typical size from memory would be exactly the fake precision this track's courses teach against.",
+    needs: [
+      "The most recent survey's measured extent, with its year",
+      "The five-year running average and the Task Force's stated target",
+      "A note on when to re-check, since this is annual",
+    ],
+    where: [
+      "NOAA annual hypoxia survey announcements",
+      "Mississippi River/Gulf of Mexico Hypoxia Task Force reports, epa.gov/ms-htf",
+    ],
+  },
+  {
+    key: "mississippi-basin-drainage-share",
+    course: "the-river-and-the-watershed",
+    lesson: "you-live-in-a-watershed",
+    quote:
+      "The Mississippi basin drains a very large share of the continental United States",
+    title: "What share of the continental United States the Mississippi basin drains",
+    severity: "low",
+    question:
+      "What share of the land area of the continental United States does the Mississippi River basin drain, per the USGS or another primary authority, and how is the basin boundary defined for that figure?",
+    claim:
+      "Lesson 1 says the basin drains 'a very large share' of the continental United States and names the Rockies and Appalachians as the reach of its tributaries, without giving a percentage.",
+    stakes:
+      "LOW. The teaching point is that a watershed is the land that drains to a place, not the exact fraction. But the commonly quoted figure varies between sources depending on how the basin is delimited, and a course whose first lesson is about what a watershed IS should be able to state the number and say how it was defined.",
+    needs: [
+      "A figure from a primary authority, with the definition of the basin used",
+      "Whether the commonly quoted variants differ because of boundary definition or because of error",
+    ],
+    where: ["U.S. Geological Survey", "U.S. Army Corps of Engineers, Mississippi Valley Division"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {

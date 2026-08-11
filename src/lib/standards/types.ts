@@ -18,6 +18,7 @@ export type Subject =
   | "Social Studies"
   | "English/Language Arts"
   | "Science"
+  | "Mathematics"
   | "Health & Wellness"
   | "Physical Education";
 

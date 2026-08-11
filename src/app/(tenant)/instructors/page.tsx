@@ -1,9 +1,28 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { requireTenant } from "@/lib/tenant";
 import { listInstructors } from "@/db/queries/authoring";
 
-export const metadata: Metadata = { title: "Instructors" };
+const TITLE = "Instructors";
+const DESCRIPTION =
+  "The people who wrote these courses, what each one teaches, and how to reach them.";
+
+export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Who teaches here" })],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: TITLE, subtitle: "Who teaches here" })],
+  },
+};
 
 // Tenant-scoped directory: only instructors with a published course on THIS brand.
 export default async function InstructorsPage() {

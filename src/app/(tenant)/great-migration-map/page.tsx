@@ -1,11 +1,30 @@
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/og";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { requireTenant } from "@/lib/tenant";
 import { listCourses } from "@/db/queries/catalog";
 import { GreatMigrationMap } from "@/components/great-migration-map";
 
-export const metadata: Metadata = { title: "The Great Migration, Interactive Map" };
+const TITLE = "The Great Migration, Interactive Map";
+const DESCRIPTION =
+  "Trace the three migration streams that carried six million people out of the American South, on an interactive map built from the course that explains them.";
+
+export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: "The Great Migration", subtitle: "An interactive map of the three streams" })],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [ogImageUrl({ title: "The Great Migration", subtitle: "An interactive map of the three streams" })],
+  },
+};
 
 const VALID_FOCUS = new Set(["chicago", "harlem", "detroit", "vanport"]);
 
