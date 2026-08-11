@@ -386,6 +386,8 @@ Three days later, a bomb went off in Chicago.
       ],
       body: `This is the lesson where this course does something you should demand of every history you read: **it refuses to tell you something it does not know.**
 
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786415236/witus/courses/precolonial-and-labor/history-of-unions/haymarket-1886-harpers-engraving.jpg ||| A dramatic black and white engraving of a night scene in a city street. At the left a bearded man stands on a wagon with one arm raised, addressing a crowd. At the centre a bomb bursts in a blaze of light among a close-ranked line of uniformed police, several of whom are firing revolvers. Men scatter in every direction and bodies lie on the ground. Building signs read SALESROOMS and JEFFERSON ST. ||| Harper's Weekly, 1886. Read this as evidence about the coverage rather than about the event: it is an artist's reconstruction, published for a national audience, and it decides for the reader who was speaking, who was orderly and who threw the bomb. The lesson beside it refuses to settle the last of those. This picture does not. ||| Thure de Thulstrup. HaymarketRiot-Harpers.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:HaymarketRiot-Harpers.jpg
+
 **What is not in dispute.**
 
 The eight-hour strikes began on May 1, 1886. On **May 3**, police fired on strikers outside the McCormick Harvesting Machine Company in Chicago and killed several of them. Anarchist organizers called a protest rally for the next evening at **Haymarket Square**.
