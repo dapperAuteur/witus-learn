@@ -1,0 +1,50 @@
+[
+  {
+    "course": "sake",
+    "lesson": "l5-the-rice-wine-belt-of-asia",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786445991/witus/courses/bvc-episodes-3/sake/oryza-sativa-kohler-plate.jpg",
+    "publicId": "witus/courses/bvc-episodes-3/sake/oryza-sativa-kohler-plate",
+    "alt": "A colour botanical plate of the rice plant. A clump of upright grassy stems with long narrow leaves rises from a dense mass of fine white roots. At the right hangs a heavy golden seed head, its grains ripe and bending the stalk over. Enlarged studies around the edges show a single flower opened to reveal six yellow stamens, individual grains husked and unhusked, and a grain cut lengthways to show the white starch inside.",
+    "caption": "Look at the roots and then at the grain. The dense fibrous root mass is what lets rice stand in flooded ground where other cereals drown, and the flooding is the whole reason for the paddy landscape this episode maps. The cut grain at the lower right is the other half of the story: that white starch is what the mould in the previous lesson converts to sugar.",
+    "credit": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen. Oryza sativa - Köhler–s Medizinal-Pflanzen-232.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Oryza_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-232.jpg",
+    "rightsStatus": "Public domain",
+    "rightsTier": "open",
+    "rightsObligation": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oryza_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-232.jpg",
+    "width": 452,
+    "height": 592
+  },
+  {
+    "course": "chocolate",
+    "lesson": "l3-the-cacao-tree-and-the-narrowest-belt",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786445992/witus/courses/bvc-episodes-3/chocolate/theobroma-cacao-kohler-plate-bvc.jpg",
+    "publicId": "witus/courses/bvc-episodes-3/chocolate/theobroma-cacao-kohler-plate-bvc",
+    "alt": "A colour botanical plate of cacao. Two very large oval leaves dominate the centre. At the upper left, a thick woody branch carries small pale pink and cream flowers growing directly out of the bark rather than from twigs or leaf joints. Around the edges are enlarged studies of a single flower, its parts separated, stamens, and a seed shown whole and in cross-section.",
+    "caption": "This lesson is about how narrow the growing belt is, and the plant explains part of it. Cacao is an understorey tree of wet tropical forest: it wants shade, steady heat and constant moisture, and it will not tolerate a dry season or a cool night. The band of the world that offers all of that at once is thin, and it is why the map in this lesson looks the way it does.",
+    "credit": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen. Theobroma cacao - Köhler–s Medizinal-Pflanzen-136.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Theobroma_cacao_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-136.jpg",
+    "rightsStatus": "Public domain",
+    "rightsTier": "open",
+    "rightsObligation": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Theobroma_cacao_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-136.jpg",
+    "width": 410,
+    "height": 597
+  },
+  {
+    "course": "coffee",
+    "lesson": "l3-the-coffee-belt-where-coffee-grows-and-why",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786445993/witus/courses/bvc-episodes-3/coffee/coffea-arabica-kohler-plate-bvc.jpg",
+    "publicId": "witus/courses/bvc-episodes-3/coffee/coffea-arabica-kohler-plate-bvc",
+    "alt": "A colour botanical plate of a coffee branch headed Rubiaceae and captioned Coffea arabica L. The branch carries long glossy dark green leaves in opposite pairs, clusters of white five-petalled flowers at the leaf joints, and oval fruits ripening from green to dark red. Along the lower edge are enlarged studies: a flower opened out, stamens, a cross-section of a fruit showing two seeds face to face, and two whole beans.",
+    "caption": "The fruits on the branch are the reason the belt is where it is. They ripen unevenly, a few at a time on the same branch, so the crop has to be picked over and over by hand across a season. That labour demand, not the climate alone, shaped who grew coffee and under what arrangements, which is where this episode goes next.",
+    "credit": "Köhler. Coffea arabica -Köhler.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Coffea_arabica_-K%C3%B6hler.jpg",
+    "rightsStatus": "Public domain",
+    "rightsTier": "open",
+    "rightsObligation": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coffea_arabica_-K%C3%B6hler.jpg",
+    "width": 870,
+    "height": 1200
+  }
+]
