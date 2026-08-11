@@ -1,0 +1,34 @@
+[
+  {
+    "course": "how-we-know-whats-out-there",
+    "lesson": "light-itself",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786416008/witus/courses/science-and-math/how-we-know-whats-out-there/solar-spectrum-absorption-lines.jpg",
+    "publicId": "witus/courses/science-and-math/how-we-know-whats-out-there/solar-spectrum-absorption-lines",
+    "alt": "The visible spectrum of the Sun, cut into horizontal strips and stacked one above another against black. The topmost strip is deep red, and the colours run down through orange, yellow, green and blue to faint violet at the bottom. Every strip is crossed by many fine dark vertical lines of varying width and darkness, some isolated and some in tight groups.",
+    "caption": "The Sun's own spectrum, sliced into strips so the whole of it fits on one page. The dark lines are the entire subject of this lesson: each one is light that never arrived, absorbed on the way out by a particular element. Count how many there are, then remember that before anyone could read them, the composition of the stars was the standard example of a thing humans could never know.",
+    "credit": "NSO/AURA/NSF. Solar spectrum, visible (noao-01771).jpg. CC BY 4.0. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Solar_spectrum,_visible_(noao-01771).jpg",
+    "rightsStatus": "CC BY 4.0",
+    "rightsTier": "attribution",
+    "rightsObligation": "Attribution and a licence link are required wherever this image appears.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solar_spectrum,_visible_(noao-01771).jpg",
+    "width": 3072,
+    "height": 2048
+  },
+  {
+    "course": "how-we-know-whats-out-there",
+    "lesson": "reading-a-star-the-hr-diagram",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786416008/witus/courses/science-and-math/how-we-know-whats-out-there/hertzsprung-russell-diagram.jpg",
+    "publicId": "witus/courses/science-and-math/how-we-know-whats-out-there/hertzsprung-russell-diagram",
+    "alt": "A Hertzsprung-Russell diagram on a black background. Luminosity in solar units runs up the vertical axis from ten to the minus five to ten to the sixth; surface temperature in Kelvin runs along the bottom from about 30,000 on the left down to 3,000 on the right, with a coloured bar labelled O, B, A, F, G, K, M beneath it. A broad diagonal band labelled MAIN SEQUENCE runs from hot and bright at the upper left to cool and faint at the lower right, with the Sun marked near its middle. A separate group labelled GIANTS sits at the right, SUPERGIANTS including Betelgeuse and Antares at the upper right, and a sparse group labelled WHITE DWARFS at the lower left. Named stars, stellar masses and lifetimes are annotated throughout.",
+    "caption": "Do not read this as a catalogue of kinds of star. Find the Sun on the main sequence, then find Sirius B down among the white dwarfs, and notice that nothing here was designed: astronomers plotted measurements, the structure appeared, and only then did anyone work out that they were looking at a population of different ages. The diagram is a snapshot of stellar lives.",
+    "credit": "Daniel William \"Danny\" Wilson. Updated Hertzsprung-Russell Diagram.jpg. CC BY 4.0. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Updated_Hertzsprung-Russell_Diagram.jpg",
+    "rightsStatus": "CC BY 4.0",
+    "rightsTier": "attribution",
+    "rightsObligation": "Attribution and a licence link are required wherever this image appears.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Updated_Hertzsprung-Russell_Diagram.jpg",
+    "width": 1064,
+    "height": 1125
+  }
+]
