@@ -10,6 +10,7 @@ import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { cleanLessonMarkdown, convertCentosQuiz, type CentosQuiz } from "./lib/centos-content";
 import type { AuthoredCourse, AuthoredLesson } from "./data/authored-course";
+import { unmatchedFigureKeys, withFigures } from "../src/lib/course-figures";
 
 // Migrates the REAL BVC content (CentOS) into the BVC tenant. Reads the per-episode
 // lesson CSVs in content/bvc/ (lessons + an embedded quiz), strips stage tags, converts
@@ -63,7 +64,9 @@ interface Row {
   map_content: string;
 }
 
-function buildEpisode(file: string, episodeSlug: string): AuthoredCourse | null {
+// `courseSlug` is the slug the episode is REGISTERED under, which is what the figure sidecar keys
+// on. It is passed in rather than derived here so the sidecar can never disagree with registration.
+function buildEpisode(file: string, episodeSlug: string, courseSlug: string): AuthoredCourse | null {
   const rows = parse(readFileSync(join(CONTENT, file), "utf-8"), {
     columns: true,
     skip_empty_lines: true,
@@ -80,10 +83,14 @@ function buildEpisode(file: string, episodeSlug: string): AuthoredCourse | null 
         quiz: convertCentosQuiz(JSON.parse(r.quiz_content) as CentosQuiz),
       };
     }
+    // Figures for these lessons are declared in src/lib/course-figures.ts rather than inline,
+    // because the body comes from a gitignored CSV and a credit written there would never reach
+    // git. See that file's header and plans/63 §4c.
+    const slug = `l${r.lesson_order}-${slugify(r.title)}`.slice(0, 90);
     const base: AuthoredLesson = {
-      slug: `l${r.lesson_order}-${slugify(r.title)}`.slice(0, 90),
+      slug,
       title: r.title,
-      body: cleanLessonMarkdown(r.text_content),
+      body: withFigures(courseSlug, slug, cleanLessonMarkdown(r.text_content)),
     };
     // A lesson with map_content becomes a MAP lesson (producer markers + trade-route
     // lines + production polygons), keeping its script as the context text.
@@ -144,8 +151,13 @@ async function main() {
   for (const ep of files) {
     const season = Math.ceil(ep.n / 7); // 1-7 -> S1, 8-14 -> S2, 15-21 -> S3
     const gated = season >= 2;
-    const course = buildEpisode(ep.file, ep.slug);
+    const course = buildEpisode(ep.file, ep.slug, ep.slug);
     if (!course) continue;
+    // A figure declared against a lesson slug that no longer exists does not error, it simply never
+    // renders, which looks identical to never having added the image. Say so out loud.
+    for (const key of unmatchedFigureKeys(ep.slug, course.lessons.map((l) => l.slug))) {
+      console.log(`  ! figure declared for a lesson that does not exist: ${key}`);
+    }
     await seedAuthoredCourse(db, {
       tenantId,
       instructorId,
@@ -190,7 +202,7 @@ async function main() {
     const shareInstructor = await ensureInstructor(shareTenant, share.instructor);
     await db.insert(schema.courseCategories).values({ tenantId: shareTenant, name: share.collection, sortOrder: 9 }).onConflictDoNothing();
     for (const ep of s1Files) {
-      const course = buildEpisode(ep.file, ep.slug);
+      const course = buildEpisode(ep.file, ep.slug, ep.slug);
       if (!course) continue;
       // ElementaryMBA drops the "BVC: " prefix + vice framing (neutral, kid-appropriate).
       const framed = share.keepBvcBranding

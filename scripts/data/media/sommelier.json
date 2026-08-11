@@ -1,0 +1,34 @@
+[
+  {
+    "course": "bvc-taster-coffee",
+    "lesson": "coffee-species-and-varieties",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786418271/witus/courses/sommelier/bvc-taster-coffee/coffea-arabica-kohler-plate.jpg",
+    "publicId": "witus/courses/sommelier/bvc-taster-coffee/coffea-arabica-kohler-plate",
+    "alt": "A colour botanical plate of a coffee branch, headed Rubiaceae and captioned Coffea arabica L. The branch carries long glossy dark green leaves in opposite pairs, clusters of white five-petalled flowers at the leaf joints, and oval fruits ripening from green to dark red. Along the lower edge are separate enlarged studies: a flower opened out, stamens, a cross-section of a fruit showing two seeds face to face, and two whole beans in side and grooved view.",
+    "caption": "Look at the bottom right of the plate: the fruit is cut open and there are two seeds lying flat against each other, grooved sides in. That is where the flat face of a coffee bean comes from, and why a bean that develops alone in the cherry is round instead. The plant is a fruit tree, and the bean is a seed.",
+    "credit": "Köhler. Coffea arabica -Köhler.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Coffea_arabica_-K%C3%B6hler.jpg",
+    "rightsStatus": "Public domain",
+    "rightsTier": "open",
+    "rightsObligation": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coffea_arabica_-K%C3%B6hler.jpg",
+    "width": 870,
+    "height": 1200
+  },
+  {
+    "course": "bvc-taster-chocolate",
+    "lesson": "choc-genetics",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786418272/witus/courses/sommelier/bvc-taster-chocolate/theobroma-cacao-kohler-plate.jpg",
+    "publicId": "witus/courses/sommelier/bvc-taster-chocolate/theobroma-cacao-kohler-plate",
+    "alt": "A colour botanical plate of cacao. Two very large oval leaves dominate the centre. At the upper left, a thick woody branch carries small pale pink and cream flowers growing directly out of the bark itself rather than from twigs or leaf joints. Around the edges are enlarged studies of a single flower, its parts separated, stamens, and a seed shown whole and in cross-section.",
+    "caption": "The detail worth pausing on is at the upper left: the flowers are growing straight out of the woody trunk. Cacao is cauliflorous, so the pods form on the trunk and old branches rather than at the ends of twigs. That single fact is why cacao is still cut by hand, one pod at a time, and why the crop resists mechanisation in a way coffee does not.",
+    "credit": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen. Theobroma cacao - Köhler–s Medizinal-Pflanzen-136.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Theobroma_cacao_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-136.jpg",
+    "rightsStatus": "Public domain",
+    "rightsTier": "open",
+    "rightsObligation": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Theobroma_cacao_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-136.jpg",
+    "width": 410,
+    "height": 597
+  }
+]

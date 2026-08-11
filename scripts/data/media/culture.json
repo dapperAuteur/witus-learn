@@ -1,0 +1,50 @@
+[
+  {
+    "course": "history-of-bathing",
+    "lesson": "bathing-rome-thermae",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786414635/witus/courses/culture/history-of-bathing/baths-of-caracalla-engraving.jpg",
+    "publicId": "witus/courses/culture/history-of-bathing/baths-of-caracalla-engraving",
+    "alt": "An engraving of the ruined Baths of Caracalla: three enormous brick arches, walls stripped back to their rubble core, with vegetation growing from the ledges and further ruined columns visible through the central arch. Four tiny human figures stand on the ground in the middle distance, one gesturing upward. A caption in Italian runs along the bottom edge.",
+    "caption": "Look at the people. Four figures, standing inside a single room of one bath complex, and they barely reach the base of the arches. This is the ruin, not the building: what the Romans actually built was larger, roofed, heated and faced in marble.",
+    "credit": "Aegidius Sadeler. View of the Baths of Caracalla MET DP828384.jpg. CC0. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:View_of_the_Baths_of_Caracalla_MET_DP828384.jpg",
+    "rightsStatus": "CC0",
+    "rightsTier": "open",
+    "rightsObligation": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Baths_of_Caracalla_MET_DP828384.jpg",
+    "width": 3647,
+    "height": 2367
+  },
+  {
+    "course": "history-of-bathing",
+    "lesson": "bathing-rome-oil-strigil-soap",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786414638/witus/courses/culture/history-of-bathing/roman-bronze-strigil.jpg",
+    "publicId": "witus/courses/culture/history-of-bathing/roman-bronze-strigil",
+    "alt": "A corroded bronze tool photographed against a plain pale background. It is a single curved blade, tapering and hooked at one end, joined at the other to a long flat rectangular loop that forms the handle. The surface is mottled dark brown and green with age.",
+    "caption": "A strigil. This is the whole technology: oil the skin, let it lift the dirt, then drag this along the body and scrape the mixture off. The curve is not decorative, it is what lets the blade follow an arm or a shin.",
+    "credit": "Unknown. Bronze strigil (scraper) MET DP107030.jpg. CC0. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Bronze_strigil_(scraper)_MET_DP107030.jpg",
+    "rightsStatus": "CC0",
+    "rightsTier": "open",
+    "rightsObligation": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bronze_strigil_(scraper)_MET_DP107030.jpg",
+    "width": 3840,
+    "height": 3840
+  },
+  {
+    "course": "pan-africanism",
+    "lesson": "garvey-and-the-unia",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786414639/witus/courses/culture/pan-africanism/marcus-garvey-1920-portrait.jpg",
+    "publicId": "witus/courses/culture/pan-africanism/marcus-garvey-1920-portrait",
+    "alt": "A sepia photographic print of a seated man in a three-piece suit and patterned tie, turned slightly and looking directly at the camera without smiling. A round badge is pinned to his waistcoat. Behind him is a desk with papers and a dark wooden fitting.",
+    "caption": "Marcus Garvey in 1920, at the height of the UNIA. Note the setting: a desk, papers, a suit, a membership badge. The movement that reached millions presented itself as an organisation with officers and records, not as a mood, and that is a large part of how it reached them.",
+    "credit": "Keystone View Company.. Marcus Garvey - \"Provisional President of Africa\" / photo from Keystone View Co. Inc. of N.Y., 1920. No copyright renewal per Photoduplication Service 1993. Library of Congress. https://www.loc.gov/item/94509041/",
+    "rightsStatus": "No copyright renewal per Photoduplication Service 1993.",
+    "rightsTier": "no-copyright-renewal",
+    "rightsObligation": "The Library of Congress's Photoduplication Service checked the copyright renewal records and found no renewal, which for a pre-1964 US work means the term lapsed and the work is in the public domain in the United States. That is a records finding rather than a licence grant. Credit as recorded.",
+    "sourceUrl": "https://www.loc.gov/item/94509041/",
+    "width": 801,
+    "height": 1024
+  }
+]

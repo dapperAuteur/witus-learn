@@ -759,6 +759,8 @@ ${flightCard(FLIGHT_1, ALT)}
       ],
       body: `Nearly all commercial coffee is one of two species, and the difference between them is the first thing to learn because it explains most of the price gap on any shelf.
 
+:::figure https://res.cloudinary.com/devdash54321/image/upload/v1786418271/witus/courses/sommelier/bvc-taster-coffee/coffea-arabica-kohler-plate.jpg ||| A colour botanical plate of a coffee branch, headed Rubiaceae and captioned Coffea arabica L. The branch carries long glossy dark green leaves in opposite pairs, clusters of white five-petalled flowers at the leaf joints, and oval fruits ripening from green to dark red. Along the lower edge are separate enlarged studies: a flower opened out, stamens, a cross-section of a fruit showing two seeds face to face, and two whole beans in side and grooved view. ||| Look at the bottom right of the plate: the fruit is cut open and there are two seeds lying flat against each other, grooved sides in. That is where the flat face of a coffee bean comes from, and why a bean that develops alone in the cherry is round instead. The plant is a fruit tree, and the bean is a seed. ||| Köhler. Coffea arabica -Köhler.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Coffea_arabica_-K%C3%B6hler.jpg
+
 | | **Arabica** (*Coffea arabica*) | **Robusta** (*Coffea canephora*) |
 | --- | --- | --- |
 | Grows best | Higher altitude, cooler, more particular | Lower altitude, hotter, hardier |

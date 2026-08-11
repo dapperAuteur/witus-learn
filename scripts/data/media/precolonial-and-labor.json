@@ -1,0 +1,50 @@
+[
+  {
+    "course": "africa-before-colonization",
+    "lesson": "africa-mansa-musa",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786415233/witus/courses/precolonial-and-labor/africa-before-colonization/catalan-atlas-mansa-musa.jpg",
+    "publicId": "witus/courses/precolonial-and-labor/africa-before-colonization/catalan-atlas-mansa-musa",
+    "alt": "A detail from a medieval illuminated map showing a crowned Black king seated on a throne, facing left. He holds a large round gold nugget up in his right hand and a sceptre in his left. He wears a gold crown and a pale robe, and the throne is drawn with red cushions. Red and green navigational lines cross the parchment around him, with Catalan text at the upper right.",
+    "caption": "Mansa Musa on the Catalan Atlas of about 1375, drawn in Majorca by a mapmaker who had never been to Mali. Look at what the image is doing: it places him on a European sea chart, at the end of the trade routes, holding the thing those routes were for. This is not a portrait. It is what Mali meant to somebody on the other side of the Sahara.",
+    "credit": "attributed to Abraham Cresques. Catalan Atlas BNF Sheet 6 Mansa Musa (cropped).jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg",
+    "rightsStatus": "Public domain",
+    "rightsTier": "open",
+    "rightsObligation": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg",
+    "width": 1856,
+    "height": 2118
+  },
+  {
+    "course": "precolumbian-mesoamerica",
+    "lesson": "meso-teotihuacan-city",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786415234/witus/courses/precolonial-and-labor/precolumbian-mesoamerica/teotihuacan-avenue-of-the-dead.jpg",
+    "publicId": "witus/courses/precolonial-and-labor/precolumbian-mesoamerica/teotihuacan-avenue-of-the-dead",
+    "alt": "A wide gravel avenue running straight away from the camera toward a stepped stone pyramid at its far end, with a green mountain ridge rising behind. Low stone platforms with staircases line both sides of the avenue. Perhaps thirty visitors are spread along its length, the nearest in the foreground and the furthest reduced to specks near the pyramid's base.",
+    "caption": "The Avenue of the Dead, looking toward the Pyramid of the Moon. Use the visitors as a ruler: the people nearest the pyramid are barely visible, and the avenue continues well behind the camera. The city was laid out on this axis before it was built along it, which is the part worth holding onto.",
+    "credit": "Jarek Tuszyński. Wiki Loves Pyramids - Teotihuacan - Avenue of the Dead - 1.JPG. CC BY 4.0. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Wiki_Loves_Pyramids_-_Teotihuacan_-_Avenue_of_the_Dead_-_1.JPG",
+    "rightsStatus": "CC BY 4.0",
+    "rightsTier": "attribution",
+    "rightsObligation": "Attribution and a licence link are required wherever this image appears.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wiki_Loves_Pyramids_-_Teotihuacan_-_Avenue_of_the_Dead_-_1.JPG",
+    "width": 3840,
+    "height": 2550
+  },
+  {
+    "course": "history-of-unions",
+    "lesson": "haymarket-1886",
+    "kind": "image",
+    "url": "https://res.cloudinary.com/devdash54321/image/upload/v1786415236/witus/courses/precolonial-and-labor/history-of-unions/haymarket-1886-harpers-engraving.jpg",
+    "publicId": "witus/courses/precolonial-and-labor/history-of-unions/haymarket-1886-harpers-engraving",
+    "alt": "A dramatic black and white engraving of a night scene in a city street. At the left a bearded man stands on a wagon with one arm raised, addressing a crowd. At the centre a bomb bursts in a blaze of light among a close-ranked line of uniformed police, several of whom are firing revolvers. Men scatter in every direction and bodies lie on the ground. Building signs read SALESROOMS and JEFFERSON ST.",
+    "caption": "Harper's Weekly, 1886. Read this as evidence about the coverage rather than about the event: it is an artist's reconstruction, published for a national audience, and it decides for the reader who was speaking, who was orderly and who threw the bomb. The lesson beside it refuses to settle the last of those. This picture does not.",
+    "credit": "Thure de Thulstrup. HaymarketRiot-Harpers.jpg. Public domain. Via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:HaymarketRiot-Harpers.jpg",
+    "rightsStatus": "Public domain",
+    "rightsTier": "open",
+    "rightsObligation": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:HaymarketRiot-Harpers.jpg",
+    "width": 964,
+    "height": 669
+  }
+]

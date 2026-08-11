@@ -63,6 +63,19 @@ function trackedFiles(): string[] {
 const REFERENCE = /^\s*[-*]\s+.*\((?:n\.d\.|\d{4}[a-z]?)\)/;
 /** A code comment line. The (?!\*) matters: markdown **bold** prose is CONTENT, not a comment. */
 const COMMENT_LINE = /^\s*(\/\/|\/\*|\*(?!\*))/;
+/**
+ * A media CREDIT: the verbatim attribution line for an image, carrying the source file's own title.
+ *
+ * Same principle as REFERENCE above and for a stronger reason. A credit is transcribed from the
+ * holding institution or from Commons, and several real filenames contain a dash: the Köhler plates
+ * are catalogued on Commons as "Köhler–s Medizinal-Pflanzen-025.jpg", with an en dash where an
+ * apostrophe belongs. That is the file's actual name. "Correcting" it would break the link between
+ * the credit and the thing it credits, which is the one property a credit has to have.
+ *
+ * Narrow on purpose: it fires only on an object field literally named `credit`, so ordinary prose
+ * that happens to mention an image is still copy and still checked.
+ */
+const MEDIA_CREDIT = /^\s*(credit:|"credit":)/;
 /** A markdown blockquote — quoted material. */
 const BLOCKQUOTE = /^\s*>/;
 /** A heading that opens a citations block. */
@@ -87,7 +100,7 @@ const FAA_MODULE_TITLE = /^\s*\d+:\s*"Module \d+ [—–]/;
 const FAA_REVIEW_TITLE = /`Module \$\{m\.moduleOrder\} Review [—–]/;
 
 /** Why this dash is allowed to stay, or null if it is a violation. */
-function reasonFor(line: string, inBlockComment: boolean, inSources: boolean): string | null {
+function reasonFor(line: string, inBlockComment: boolean, inSources: boolean, prevLine = ""): string | null {
   if (FAA_MODULE_TITLE.test(line) || FAA_REVIEW_TITLE.test(line)) {
     return "FAA module label (coupled to the seeder; pending decision, task 179)";
   }
@@ -102,6 +115,10 @@ function reasonFor(line: string, inBlockComment: boolean, inSources: boolean): s
     const dashAt = line.search(DASH);
     if (dashAt > open) return "comment";
   }
+  // The field name and its value are often on separate lines once the string is long, so check the
+  // line above too. Without this the rule only fires on short credits, which is the opposite of
+  // what is needed: a long credit is exactly the one carrying a full verbatim source title.
+  if (MEDIA_CREDIT.test(line) || MEDIA_CREDIT.test(prevLine)) return "media credit (verbatim source title)";
   if (BLOCKQUOTE.test(line)) return "blockquote (quoted material)";
   if (inSources) return "sources/references block";
   if (REFERENCE.test(line)) return "reference entry (verbatim title)";
@@ -149,7 +166,7 @@ function scan(files: string[]): Hit[] {
           file,
           line: i + 1,
           text: line.trim(),
-          reason: reasonFor(line, inBlockComment, inSources),
+          reason: reasonFor(line, inBlockComment, inSources, i > 0 ? lines[i - 1] : ""),
         });
       }
       if (opened && !closed) inBlockComment = true;

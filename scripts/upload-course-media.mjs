@@ -38,9 +38,9 @@
 // surface reads so BAM can confirm each one before a course goes live.
 
 import { createHash } from "node:crypto";
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const UA = "witus-learn-course-build/1.0 (https://learn.witus.online; tools@awews.com)";
@@ -77,99 +77,33 @@ function classify(licence) {
 // file was written. `alt` is for a reader who cannot see the image and is NOT the caption; `caption`
 // says what to look at and why it is here. Both are authored here rather than generated, because a
 // generated alt text is worse than none.
-const BATCH = "here-be-dragons";
-const TARGETS = [
-  {
-    commons: "File:Lenox Globe Dragons.png",
-    course: "monsters-at-the-edge-of-the-map",
-    lesson: "here-be-dragons",
-    name: "hunt-lenox-globe-dragons",
-    alt: "A detail of an engraved copper globe showing the Latin words HC SVNT DRACONES beside a coastline.",
-    caption:
-      "The one well-known historical instance of the phrase, on the Hunt-Lenox Globe of about 1510. Look at how small it is, and remember that thousands of other maps survive without it.",
-  },
-  {
-    commons: "File:T and O map Guntherus Ziner 1472.jpg",
-    course: "monsters-at-the-edge-of-the-map",
-    lesson: "the-t-o-map",
-    name: "t-o-map-1472",
-    alt: "A circle divided by a T shape into three labelled parts: Asia across the top half, Europe and Africa below.",
-    caption:
-      "The T-O diagram from the 1472 printing of Isidore's Etymologiae. A schematic of how three landmasses relate, not an attempt at a coastline, and judging it as a survey is the category error the lesson names.",
-  },
-  {
-    commons: "File:Hereford Mappa Mundi 1300.jpg",
-    course: "monsters-at-the-edge-of-the-map",
-    lesson: "hereford-close-reading",
-    name: "hereford-mappa-mundi",
-    alt: "A large circular medieval world map drawn on vellum, dense with figures, buildings, animals and text.",
-    caption:
-      "The Hereford Mappa Mundi, about 1300. East at the top, Jerusalem at the centre, and a real river, a scriptural event and a creature from a Roman encyclopaedia sharing one surface with no visible seam.",
-  },
-  {
-    commons: "File:Carta Marina.jpeg",
-    course: "monsters-at-the-edge-of-the-map",
-    lesson: "carta-marina",
-    name: "carta-marina-1539",
-    alt: "A large sixteenth-century map of northern Europe and its seas, filled with ships and sea creatures.",
-    caption:
-      "Olaus Magnus, Carta marina, 1539. Hold two facts together: these were the best coastlines available for the northern seas, and the water is full of monsters.",
-  },
-  {
-    commons: "File:Carta Marina 1539 with sea serpent.jpg",
-    course: "monsters-at-the-edge-of-the-map",
-    lesson: "monsters-as-argument",
-    name: "carta-marina-sea-serpent",
-    alt: "A detail from a sixteenth-century sea chart showing a large serpent coiled around a sailing ship.",
-    caption:
-      "A detail worth asking the lesson's question about: not whether the mapmaker believed it, but what it is doing. Information, warning, and advertisement for an expensive printed sheet.",
-  },
-  {
-    commons: "File:Catalan Atlas BNF Sheet 6 Mansa Musa.jpg",
-    course: "monsters-at-the-edge-of-the-map",
-    lesson: "the-blank-interior",
-    name: "catalan-atlas-mansa-musa",
-    alt: "A panel from a medieval atlas showing a crowned ruler seated and holding up a large gold nugget.",
-    caption:
-      "The Catalan Atlas, 1375, showing the ruler of Mali with a gold nugget. This is what a European map of West Africa looked like BEFORE the interior went blank, which is why the blankness was a development rather than a starting condition.",
-  },
-  {
-    commons: "File:Marshall Islands stick chart, Rebbelib type. LOC 2010586182.jpg",
-    course: "monsters-at-the-edge-of-the-map",
-    lesson: "who-was-mapping-whom",
-    name: "marshall-islands-stick-chart",
-    alt: "A navigational chart made from a lattice of tied sticks with small shells fixed at intervals.",
-    caption:
-      "A Marshall Islands rebbelib. It models how swells bend around islands, which is the information a navigator on that ocean actually needs, and it was studied on land rather than carried aboard.",
-  },
-  {
-    commons: "File:Cardiff giant exhumed 1869.jpg",
-    course: "giants-dragons-and-the-bones",
-    lesson: "the-cardiff-giant",
-    name: "cardiff-giant-1869",
-    alt: "A photograph of men standing around a deep pit containing a large carved stone figure of a man.",
-    caption:
-      "The Cardiff Giant at its excavation in 1869. A manufactured hoax with a ticket price, and then a counterfeit of the counterfeit.",
-  },
-  {
-    commons: "File:Geological map Britain William Smith 1815.jpg",
-    course: "deep-time-and-the-dinosaur-renaissance",
-    lesson: "william-smiths-map",
-    name: "william-smith-geological-map",
-    alt: "A large hand-coloured geological map of England and Wales, with strata shown as bands of different colours.",
-    caption:
-      "William Smith's 1815 map: the first time strata were a picture rather than an argument. Smith was first, went uncredited by the institution, and was imprisoned for debt while his work circulated.",
-  },
-  {
-    commons: "File:Mary Anning painting.jpg",
-    course: "deep-time-and-the-dinosaur-renaissance",
-    lesson: "mary-anning-of-lyme-regis",
-    name: "mary-anning",
-    alt: "A painted portrait of a woman in a bonnet and long coat holding a rock hammer, with a dog lying beside her.",
-    caption:
-      "Mary Anning of Lyme Regis. She found them; the papers carried other people's names. The course states what the record supports and flags the folklore around her as unverified.",
-  },
-];
+// ── The batch ─────────────────────────────────────────────────────────────────────────────────────
+// Batches live in scripts/data/media-batches/<name>.mjs, each exporting { batch, targets }. The
+// script is the tool; a batch is data. That split is what the header promised and is what makes the
+// next course family one new file and one command rather than an edit to this script.
+const batchArg = (() => {
+  const i = process.argv.indexOf("--batch");
+  return i !== -1 ? process.argv[i + 1] : undefined;
+})();
+if (!batchArg) {
+  console.error(
+    "Usage: node scripts/upload-course-media.mjs --batch <name> [--dry-run]\n" +
+      "Batches: scripts/data/media-batches/<name>.mjs",
+  );
+  process.exit(1);
+}
+const batchFile = join(ROOT, "scripts", "data", "media-batches", `${batchArg}.mjs`);
+if (!existsSync(batchFile)) {
+  console.error(`No batch file at ${batchFile}`);
+  process.exit(1);
+}
+const { batch: BATCH, targets: TARGETS } = await import(pathToFileURL(batchFile).href);
+if (!BATCH || !Array.isArray(TARGETS) || TARGETS.length === 0) {
+  console.error(`Batch "${batchArg}" must export a non-empty { batch, targets }.`);
+  process.exit(1);
+}
+console.log(`Batch "${BATCH}": ${TARGETS.length} target(s).`);
+
 
 // ── Helpers ───────────────────────────────────────────────────────────────────────────────────────
 
@@ -218,6 +152,66 @@ async function commonsMeta(title) {
   };
 }
 
+/**
+ * Library of Congress item metadata.
+ *
+ * WHY A SECOND SOURCE. Commons turned out to be far thinner than the archives for American places
+ * (see plans/63): the route/place stage expected to be the richest and produced three images,
+ * because HABS and FSA cover these places heavily and Commons does not carry most of it. The LOC
+ * itself does, and it exposes a JSON API.
+ *
+ * THE RIGHTS FIELD IS THE WHOLE REASON THIS IS SAFE TO AUTOMATE. `rights_advisory` is a short
+ * machine-readable statement, and for the collections that matter here it reads "No known
+ * restrictions on publication." We allow ONLY that phrasing. Anything else, including an empty
+ * field, is refused: the LOC is explicit that it does not own rights to most of its collections and
+ * cannot grant permission, so an item without an affirmative no-restrictions statement is an item
+ * whose rights nobody has established.
+ *
+ * "No known restrictions" is NOT the same sentence as "public domain", and this script does not
+ * pretend it is. It records the phrase verbatim in the manifest, and /admin/media shows it, so the
+ * human confirming an asset sees the actual claim rather than a tidied-up version of it.
+ */
+async function locMeta(itemId) {
+  const id = String(itemId).replace(/^https?:\/\/(www\.)?loc\.gov\/item\//, "").replace(/\/$/, "");
+  const url = `https://www.loc.gov/item/${id}/?fo=json`;
+  const res = await fetch(url, { headers: { "User-Agent": UA } });
+  if (!res.ok) throw new Error(`LOC API ${res.status} for ${id}`);
+  const item = (await res.json())?.item ?? {};
+  const advisory = Array.isArray(item.rights_advisory)
+    ? item.rights_advisory.join(" ")
+    : item.rights_advisory || "";
+  // Prefer the largest offered rendition that is still a plain image.
+  const images = (item.image_url || []).filter((u) => /\.(jpe?g|png|tiff?)(#|$)/i.test(u));
+  const fileUrl = (images[images.length - 1] || "").split("#")[0];
+  const creators = (item.contributor_names || item.contributors || []).slice(0, 2).join("; ");
+  return {
+    advisory: stripHtml(advisory).trim(),
+    title: Array.isArray(item.title) ? item.title[0] : item.title || id,
+    date: item.date || (Array.isArray(item.created_published) ? item.created_published[0] : "") || "",
+    artist: creators || "Unattributed",
+    fileUrl: fileUrl ? (fileUrl.startsWith("http") ? fileUrl : `https:${fileUrl}`) : null,
+    descriptionUrl: `https://www.loc.gov/item/${id}/`,
+  };
+}
+
+/**
+ * The ONLY LOC rights statements this script will publish on. Deliberately narrow, and both are
+ * POSITIVE determinations rather than silence:
+ *
+ *   · "No known restrictions on publication."  the LOC's standard statement for collections it has
+ *     cleared, e.g. FSA/OWI.
+ *   · "No copyright renewal ..."               the LOC's Photoduplication Service checked the
+ *     renewal records and found none, which for a pre-1964 US work means the term lapsed. This one
+ *     was added after it refused a 1920 Marcus Garvey photograph that is genuinely usable, and the
+ *     refusal was the script being wrong rather than careful.
+ *
+ * An EMPTY advisory is still refused, and that is the important half. The LOC says plainly that it
+ * does not own rights to most of its collections and cannot grant permission, so silence means
+ * nobody has established anything. "Publication is restricted" is refused by the same rule, which
+ * is what correctly rejected a James Van DerZee photograph of Garvey.
+ */
+const LOC_ALLOWED = /^(no known restrictions|no copyright renewal)/i;
+
 async function cloudinaryUpload(env, { buffer, mime, publicId, context }) {
   const cloud = env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
   const key = env.CLOUDINARY_API_KEY;
@@ -259,15 +253,47 @@ async function cloudinaryUpload(env, { buffer, mime, publicId, context }) {
 {
   let bad = 0;
   for (const t of TARGETS) {
-    const file = join(ROOT, "scripts", "data", `${t.course}-course.ts`);
+    const label = t.commons ?? `LOC ${t.loc}`;
+    // The data file is USUALLY named after the course slug, and sometimes is not: the route/place
+    // courses were authored with short file names (indiana-avenue-course.ts) and long registered
+    // slugs (indiana-avenue-a-district-and-what-replaced-it). A target may therefore name its file
+    // explicitly. Without this the check refused perfectly good targets, which would have been read
+    // as "that course does not exist" rather than "this script guessed the filename".
+    // A BVC episode has NO committed course file: its lessons come from a gitignored CSV. Validate
+    // against that CSV instead, computing the slug exactly as scripts/seed-bvc-real.ts does. This is
+    // a better check than the committed-file one, not a weaker one, because it reads the actual
+    // source of truth rather than a transcription of it. Figures for these lessons are declared in
+    // src/lib/course-figures.ts (the sidecar), so a wrong slug would otherwise fail silently: the
+    // seeder would simply never match it and the image would never appear.
+    if (t.csv) {
+      const dir = join(ROOT, "content", "bvc");
+      const found = existsSync(dir)
+        ? readdirSync(dir).find((f) => new RegExp(`^bvc-episode-\\d+-${t.csv}-lessons\\.csv$`).test(f))
+        : undefined;
+      if (!found) {
+        console.log(`! ${label}: no BVC CSV for "${t.csv}" (content/ is gitignored; is it present locally?)`);
+        bad++;
+        continue;
+      }
+      const csv = readFileSync(join(dir, found), "utf8");
+      // Cheap containment check rather than a full parse: the derived slug's distinctive tail is the
+      // slugified title, and a title that is not in the file cannot produce a matching slug.
+      const tail = t.lesson.replace(/^l\d+-/, "").slice(0, 30);
+      if (!csv.toLowerCase().replace(/[^a-z0-9]+/g, "-").includes(tail)) {
+        console.log(`! ${label}: lesson "${t.lesson}" not found in ${found}`);
+        bad++;
+      }
+      continue;
+    }
+    const file = join(ROOT, "scripts", "data", t.file ?? `${t.course}-course.ts`);
     if (!existsSync(file)) {
-      console.log(`! ${t.commons}: no course file for "${t.course}"`);
+      console.log(`! ${label}: no course file at ${t.file ?? `${t.course}-course.ts`}`);
       bad++;
       continue;
     }
     const src = readFileSync(file, "utf8");
     if (!src.includes(`slug: "${t.lesson}"`)) {
-      console.log(`! ${t.commons}: lesson "${t.lesson}" does not exist in ${t.course}`);
+      console.log(`! ${label}: lesson "${t.lesson}" does not exist in ${t.course}`);
       bad++;
     }
   }
@@ -284,31 +310,62 @@ let refused = 0;
 let uploaded = 0;
 
 for (const t of TARGETS) {
-  process.stdout.write(`\n${t.commons}\n`);
-  let meta;
+  const label = t.commons ?? `LOC ${t.loc}`;
+  process.stdout.write(`\n${label}\n`);
+  let meta, tier, creditLine;
   try {
-    meta = await commonsMeta(t.commons);
+    meta = t.loc ? await locMeta(t.loc) : await commonsMeta(t.commons);
   } catch (err) {
     console.log(`  ! SKIPPED, could not read metadata: ${err.message}`);
     refused++;
     continue;
   }
 
-  const tier = classify(meta.licence);
-  console.log(`  licence: ${meta.licence || "(none reported)"}${tier ? ` [${tier.tier}]` : ""}`);
-  if (!tier) {
-    console.log("  ! REFUSED. Licence is missing, non-commercial, no-derivatives, or unreadable.");
-    refused++;
-    continue;
+  if (t.loc) {
+    console.log(`  rights: ${meta.advisory || "(none stated)"}`);
+    if (!LOC_ALLOWED.test(meta.advisory)) {
+      console.log("  ! REFUSED. The LOC states no affirmative no-known-restrictions advisory, so");
+      console.log("    nobody has established this item's rights. Not publishable on that basis.");
+      refused++;
+      continue;
+    }
+    if (!meta.fileUrl) {
+      console.log("  ! REFUSED. No downloadable image rendition offered for this item.");
+      refused++;
+      continue;
+    }
+    // "No known restrictions" is a statement about what the LOC knows, not a licence grant, so it
+    // gets its own tier rather than being folded into `open` and quietly losing that distinction.
+    // The obligation must describe the advisory THIS item actually carries. The two allowed
+    // statements say different things and folding them into one message would misreport to the
+    // person confirming the asset at /admin/media, which is the one reader who must not be
+    // misled.
+    const renewal = /^no copyright renewal/i.test(meta.advisory);
+    tier = {
+      tier: renewal ? "no-copyright-renewal" : "no-known-restrictions",
+      obligation: renewal
+        ? "The Library of Congress's Photoduplication Service checked the copyright renewal records and found no renewal, which for a pre-1964 US work means the term lapsed and the work is in the public domain in the United States. That is a records finding rather than a licence grant. Credit as recorded."
+        : "The Library of Congress states no known restrictions on publication, which is not the same as a positive grant of licence: the LOC does not own rights to most of its collections and cannot grant permission. Credit as recorded. If a rights holder ever surfaces, this is the asset to reconsider.",
+    };
+    creditLine = `${meta.artist}. ${meta.title}${meta.date ? `, ${meta.date}` : ""}. ${meta.advisory} Library of Congress. ${meta.descriptionUrl}`;
+    console.log(`  obligation: ${tier.obligation}`);
+  } else {
+    tier = classify(meta.licence);
+    console.log(`  licence: ${meta.licence || "(none reported)"}${tier ? ` [${tier.tier}]` : ""}`);
+    if (!tier) {
+      console.log("  ! REFUSED. Licence is missing, non-commercial, no-derivatives, or unreadable.");
+      refused++;
+      continue;
+    }
+    if (tier.obligation) console.log(`  obligation: ${tier.obligation}`);
+    creditLine = `${meta.artist}. ${t.commons.replace(/^File:/, "")}. ${meta.licence}. Via Wikimedia Commons. ${meta.descriptionUrl}`;
   }
-  if (tier.obligation) console.log(`  obligation: ${tier.obligation}`);
 
   const publicId = `witus/courses/${BATCH}/${t.course}/${t.name}`;
-  const creditLine = `${meta.artist}. ${t.commons.replace(/^File:/, "")}. ${meta.licence}. Via Wikimedia Commons. ${meta.descriptionUrl}`;
 
   if (dryRun) {
     console.log(`  would upload -> ${publicId}`);
-    manifest.push({ ...t, publicId, url: null, credit: creditLine, rightsStatus: meta.licence, rightsTier: tier.tier, rightsObligation: tier.obligation, sourceUrl: meta.descriptionUrl });
+    manifest.push({ ...t, publicId, url: null, credit: creditLine, rightsStatus: t.loc ? meta.advisory : meta.licence, rightsTier: tier.tier, rightsObligation: tier.obligation, sourceUrl: meta.descriptionUrl });
     continue;
   }
 
@@ -324,7 +381,7 @@ for (const t of TARGETS) {
   const context = `alt=${t.alt.replace(/[|=]/g, " ")}|credit=${creditLine.replace(/[|=]/g, " ")}`;
   let up;
   try {
-    up = await cloudinaryUpload(env, { buffer, mime: meta.mime, publicId, context });
+    up = await cloudinaryUpload(env, { buffer, mime: meta.mime ?? "image/jpeg", publicId, context });
   } catch (err) {
     // Never abort the batch: a failure on asset 7 must not discard the manifest entries for 1 to 6.
     console.log(`  ! SKIPPED, upload failed: ${err.message}`);
@@ -343,7 +400,7 @@ for (const t of TARGETS) {
     alt: t.alt,
     caption: t.caption,
     credit: creditLine,
-    rightsStatus: meta.licence,
+    rightsStatus: t.loc ? meta.advisory : meta.licence,
     rightsTier: tier.tier,
     rightsObligation: tier.obligation,
     sourceUrl: meta.descriptionUrl,
