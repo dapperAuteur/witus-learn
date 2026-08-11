@@ -152,6 +152,66 @@ async function commonsMeta(title) {
   };
 }
 
+/**
+ * Library of Congress item metadata.
+ *
+ * WHY A SECOND SOURCE. Commons turned out to be far thinner than the archives for American places
+ * (see plans/63): the route/place stage expected to be the richest and produced three images,
+ * because HABS and FSA cover these places heavily and Commons does not carry most of it. The LOC
+ * itself does, and it exposes a JSON API.
+ *
+ * THE RIGHTS FIELD IS THE WHOLE REASON THIS IS SAFE TO AUTOMATE. `rights_advisory` is a short
+ * machine-readable statement, and for the collections that matter here it reads "No known
+ * restrictions on publication." We allow ONLY that phrasing. Anything else, including an empty
+ * field, is refused: the LOC is explicit that it does not own rights to most of its collections and
+ * cannot grant permission, so an item without an affirmative no-restrictions statement is an item
+ * whose rights nobody has established.
+ *
+ * "No known restrictions" is NOT the same sentence as "public domain", and this script does not
+ * pretend it is. It records the phrase verbatim in the manifest, and /admin/media shows it, so the
+ * human confirming an asset sees the actual claim rather than a tidied-up version of it.
+ */
+async function locMeta(itemId) {
+  const id = String(itemId).replace(/^https?:\/\/(www\.)?loc\.gov\/item\//, "").replace(/\/$/, "");
+  const url = `https://www.loc.gov/item/${id}/?fo=json`;
+  const res = await fetch(url, { headers: { "User-Agent": UA } });
+  if (!res.ok) throw new Error(`LOC API ${res.status} for ${id}`);
+  const item = (await res.json())?.item ?? {};
+  const advisory = Array.isArray(item.rights_advisory)
+    ? item.rights_advisory.join(" ")
+    : item.rights_advisory || "";
+  // Prefer the largest offered rendition that is still a plain image.
+  const images = (item.image_url || []).filter((u) => /\.(jpe?g|png|tiff?)(#|$)/i.test(u));
+  const fileUrl = (images[images.length - 1] || "").split("#")[0];
+  const creators = (item.contributor_names || item.contributors || []).slice(0, 2).join("; ");
+  return {
+    advisory: stripHtml(advisory).trim(),
+    title: Array.isArray(item.title) ? item.title[0] : item.title || id,
+    date: item.date || (Array.isArray(item.created_published) ? item.created_published[0] : "") || "",
+    artist: creators || "Unattributed",
+    fileUrl: fileUrl ? (fileUrl.startsWith("http") ? fileUrl : `https:${fileUrl}`) : null,
+    descriptionUrl: `https://www.loc.gov/item/${id}/`,
+  };
+}
+
+/**
+ * The ONLY LOC rights statements this script will publish on. Deliberately narrow, and both are
+ * POSITIVE determinations rather than silence:
+ *
+ *   · "No known restrictions on publication."  the LOC's standard statement for collections it has
+ *     cleared, e.g. FSA/OWI.
+ *   · "No copyright renewal ..."               the LOC's Photoduplication Service checked the
+ *     renewal records and found none, which for a pre-1964 US work means the term lapsed. This one
+ *     was added after it refused a 1920 Marcus Garvey photograph that is genuinely usable, and the
+ *     refusal was the script being wrong rather than careful.
+ *
+ * An EMPTY advisory is still refused, and that is the important half. The LOC says plainly that it
+ * does not own rights to most of its collections and cannot grant permission, so silence means
+ * nobody has established anything. "Publication is restricted" is refused by the same rule, which
+ * is what correctly rejected a James Van DerZee photograph of Garvey.
+ */
+const LOC_ALLOWED = /^(no known restrictions|no copyright renewal)/i;
+
 async function cloudinaryUpload(env, { buffer, mime, publicId, context }) {
   const cloud = env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
   const key = env.CLOUDINARY_API_KEY;
@@ -223,31 +283,62 @@ let refused = 0;
 let uploaded = 0;
 
 for (const t of TARGETS) {
-  process.stdout.write(`\n${t.commons}\n`);
-  let meta;
+  const label = t.commons ?? `LOC ${t.loc}`;
+  process.stdout.write(`\n${label}\n`);
+  let meta, tier, creditLine;
   try {
-    meta = await commonsMeta(t.commons);
+    meta = t.loc ? await locMeta(t.loc) : await commonsMeta(t.commons);
   } catch (err) {
     console.log(`  ! SKIPPED, could not read metadata: ${err.message}`);
     refused++;
     continue;
   }
 
-  const tier = classify(meta.licence);
-  console.log(`  licence: ${meta.licence || "(none reported)"}${tier ? ` [${tier.tier}]` : ""}`);
-  if (!tier) {
-    console.log("  ! REFUSED. Licence is missing, non-commercial, no-derivatives, or unreadable.");
-    refused++;
-    continue;
+  if (t.loc) {
+    console.log(`  rights: ${meta.advisory || "(none stated)"}`);
+    if (!LOC_ALLOWED.test(meta.advisory)) {
+      console.log("  ! REFUSED. The LOC states no affirmative no-known-restrictions advisory, so");
+      console.log("    nobody has established this item's rights. Not publishable on that basis.");
+      refused++;
+      continue;
+    }
+    if (!meta.fileUrl) {
+      console.log("  ! REFUSED. No downloadable image rendition offered for this item.");
+      refused++;
+      continue;
+    }
+    // "No known restrictions" is a statement about what the LOC knows, not a licence grant, so it
+    // gets its own tier rather than being folded into `open` and quietly losing that distinction.
+    // The obligation must describe the advisory THIS item actually carries. The two allowed
+    // statements say different things and folding them into one message would misreport to the
+    // person confirming the asset at /admin/media, which is the one reader who must not be
+    // misled.
+    const renewal = /^no copyright renewal/i.test(meta.advisory);
+    tier = {
+      tier: renewal ? "no-copyright-renewal" : "no-known-restrictions",
+      obligation: renewal
+        ? "The Library of Congress's Photoduplication Service checked the copyright renewal records and found no renewal, which for a pre-1964 US work means the term lapsed and the work is in the public domain in the United States. That is a records finding rather than a licence grant. Credit as recorded."
+        : "The Library of Congress states no known restrictions on publication, which is not the same as a positive grant of licence: the LOC does not own rights to most of its collections and cannot grant permission. Credit as recorded. If a rights holder ever surfaces, this is the asset to reconsider.",
+    };
+    creditLine = `${meta.artist}. ${meta.title}${meta.date ? `, ${meta.date}` : ""}. ${meta.advisory} Library of Congress. ${meta.descriptionUrl}`;
+    console.log(`  obligation: ${tier.obligation}`);
+  } else {
+    tier = classify(meta.licence);
+    console.log(`  licence: ${meta.licence || "(none reported)"}${tier ? ` [${tier.tier}]` : ""}`);
+    if (!tier) {
+      console.log("  ! REFUSED. Licence is missing, non-commercial, no-derivatives, or unreadable.");
+      refused++;
+      continue;
+    }
+    if (tier.obligation) console.log(`  obligation: ${tier.obligation}`);
+    creditLine = `${meta.artist}. ${t.commons.replace(/^File:/, "")}. ${meta.licence}. Via Wikimedia Commons. ${meta.descriptionUrl}`;
   }
-  if (tier.obligation) console.log(`  obligation: ${tier.obligation}`);
 
   const publicId = `witus/courses/${BATCH}/${t.course}/${t.name}`;
-  const creditLine = `${meta.artist}. ${t.commons.replace(/^File:/, "")}. ${meta.licence}. Via Wikimedia Commons. ${meta.descriptionUrl}`;
 
   if (dryRun) {
     console.log(`  would upload -> ${publicId}`);
-    manifest.push({ ...t, publicId, url: null, credit: creditLine, rightsStatus: meta.licence, rightsTier: tier.tier, rightsObligation: tier.obligation, sourceUrl: meta.descriptionUrl });
+    manifest.push({ ...t, publicId, url: null, credit: creditLine, rightsStatus: t.loc ? meta.advisory : meta.licence, rightsTier: tier.tier, rightsObligation: tier.obligation, sourceUrl: meta.descriptionUrl });
     continue;
   }
 
@@ -263,7 +354,7 @@ for (const t of TARGETS) {
   const context = `alt=${t.alt.replace(/[|=]/g, " ")}|credit=${creditLine.replace(/[|=]/g, " ")}`;
   let up;
   try {
-    up = await cloudinaryUpload(env, { buffer, mime: meta.mime, publicId, context });
+    up = await cloudinaryUpload(env, { buffer, mime: meta.mime ?? "image/jpeg", publicId, context });
   } catch (err) {
     // Never abort the batch: a failure on asset 7 must not discard the manifest entries for 1 to 6.
     console.log(`  ! SKIPPED, upload failed: ${err.message}`);
@@ -282,7 +373,7 @@ for (const t of TARGETS) {
     alt: t.alt,
     caption: t.caption,
     credit: creditLine,
-    rightsStatus: meta.licence,
+    rightsStatus: t.loc ? meta.advisory : meta.licence,
     rightsTier: tier.tier,
     rightsObligation: tier.obligation,
     sourceUrl: meta.descriptionUrl,
