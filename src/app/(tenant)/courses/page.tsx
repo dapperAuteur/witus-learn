@@ -105,7 +105,8 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
           className="min-h-11 flex-1 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900"
         />
         {sp.category ? <input type="hidden" name="category" value={sp.category} /> : null}
-        <select name="sort" defaultValue={sort ?? "curriculum"} className="min-h-11 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900">
+        <label className="sr-only" htmlFor="sort">Sort courses</label>
+        <select id="sort" name="sort" defaultValue={sort ?? "curriculum"} className="min-h-11 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900">
           <option value="curriculum">Course order</option>
           <option value="newest">Newest</option>
           <option value="title">A-Z</option>

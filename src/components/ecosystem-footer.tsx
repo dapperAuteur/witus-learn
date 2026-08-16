@@ -125,7 +125,9 @@ export function EcosystemFooter({ tenant }: { tenant: TenantRecord }) {
         ) : null}
 
         <p className="text-neutral-500">© {brandName(tenant)}</p>
-        <p className="text-xs text-neutral-400 dark:text-neutral-600">{DISCLAIMER_SHORT}</p>
+        {/* WCAG AA 4.5:1 for 12px text: neutral-500 on white = 4.74:1, dark neutral-400
+            on the #0a0a0a page bg = 7.66:1. The old -400/-600 pair sat at ~2.6:1. */}
+        <p className="text-xs text-neutral-500 dark:text-neutral-400">{DISCLAIMER_SHORT}</p>
       </div>
     </footer>
   );
@@ -234,7 +236,10 @@ function RiseWellnessCallout() {
         above challenges and live a fulfilling, healthy life. Our care is
         guided by the belief that healing is personal, holistic, and rooted
         in compassion.&rdquo;
-        <span className="mt-1 block not-italic text-neutral-400">
+        {/* neutral-500 (not -400) so the 12px attribution meets WCAG AA 4.5:1 on the
+            bg-neutral-50 card (#737373 on #fafafa = 4.54:1) — same shade as the quote
+            around it. dark:-400 keeps the dark side passing (7.31:1 on the dark card). */}
+        <span className="mt-1 block not-italic text-neutral-500 dark:text-neutral-400">
           Rise Wellness of Indiana
         </span>
       </blockquote>
