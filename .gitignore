@@ -57,3 +57,7 @@ yarn-error.log*
 # read-your-body-course.ts is NOT ignored — now hand-maintained + tracked (see its banner).
 /scripts/data/speedway-course.ts
 /.claude/
+
+# Playwright output
+test-results/
+playwright-report/
