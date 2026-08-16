@@ -56,7 +56,9 @@ export function SiteFooter({ tenant }: { tenant: TenantRecord }) {
         </ul>
       </div>
       <div className="mx-auto max-w-5xl px-4 pb-6">
-        <p className="text-xs text-neutral-400 dark:text-neutral-600">{DISCLAIMER_SHORT}</p>
+        {/* WCAG AA 4.5:1 for 12px text: neutral-500 on white = 4.74:1, dark neutral-400
+            on the #0a0a0a page bg = 7.66:1. The old -400/-600 pair sat at ~2.6:1. */}
+        <p className="text-xs text-neutral-500 dark:text-neutral-400">{DISCLAIMER_SHORT}</p>
       </div>
     </footer>
   );
