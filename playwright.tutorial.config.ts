@@ -26,7 +26,12 @@ export default defineConfig({
     viewport: { width: 1280, height: 720 },
     video: { mode: "on", size: { width: 1280, height: 720 } },
     launchOptions: { slowMo: 350 },
-    ...(bypass ? { extraHTTPHeaders: { "x-vercel-protection-bypass": bypass } } : {}),
+    extraHTTPHeaders: {
+      // Recording sessions are synthetic traffic too — same tag as the CI suite, so Honeycomb and
+      // analytics can separate tutorial takes from real users (tag, not a drop: traces still flow).
+      "x-witus-origin-test": "playwright-synthetic",
+      ...(bypass ? { "x-vercel-protection-bypass": bypass } : {}),
+    },
     ...(process.env.TUTORIAL_STORAGE_STATE ? { storageState: process.env.TUTORIAL_STORAGE_STATE } : {}),
     // Playwright's bundled chromium does not support macOS 13, so local runs drive the installed
     // Google Chrome (same reasoning as playwright.config.ts).
