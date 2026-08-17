@@ -60,6 +60,9 @@
     "reveal:convert": "tsx scripts/reveal-convert.ts",
     "rag:index": "tsx --env-file=.env.local scripts/rag-index.ts",
     "rag:list": "tsx --env-file=.env.local scripts/rag-list.ts",
+    "tutorial:record": "playwright test --config playwright.tutorial.config.ts",
+    "tutorial:docs": "node scripts/tutorial-video/gen-docs.mjs",
+    "tutorial:video": "node scripts/tutorial-video/compose.mjs",
     "test": "vitest run"
   },
   "dependencies": {

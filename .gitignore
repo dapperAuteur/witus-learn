@@ -61,3 +61,11 @@ yarn-error.log*
 # Playwright output
 test-results/
 playwright-report/
+
+# Tutorial-as-test pipeline (witus plan 30 §8.3): recordings + marks, BAM's per-step narration
+# audio, and signed-in storage states. docs/tutorials/ output is already covered by /docs/ above,
+# but the video dir is named anyway so the intent survives if /docs/ ever gets un-ignored.
+tutorial-output/
+audio/
+.auth/
+docs/tutorials/video/
