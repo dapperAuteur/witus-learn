@@ -82,6 +82,75 @@ It is **tenant-agnostic on purpose**: it never calls the tenant resolver, so an 
 It answers "app + database alive", never "this brand exists". Covered by
 [tests/health-route.test.ts](tests/health-route.test.ts).
 
+## Observability & E2E
+
+Error tracking (Sentry SDK, inert until `SENTRY_DSN` is set, every event through the
+`beforeSend` scrubber) is described under [Status](#status) above and in the
+[Health check](#health-check-apihealth) section. The rest of the observability story:
+
+### Distributed tracing
+
+Traces go to **Honeycomb** over OTLP via `@vercel/otel` ([otel.config.ts](otel.config.ts), loaded
+from `src/instrumentation.ts` **before** the Sentry configs — whoever registers the global tracer
+provider first wins, and Sentry is told to stand down via `skipOpenTelemetrySetup` in
+[sentry.server.config.ts](sentry.server.config.ts)). Service name is **`learn-witus`** — one
+`service.name` for the whole deployment on purpose: tenant brand domains all serve this same app,
+and spans carry the request host for per-tenant splitting.
+
+- **Inert until the key is set**: `HONEYCOMB_INGEST_API_KEY_SECRET` (fallback `HONEYCOMB_API_KEY`).
+  With neither var set, registration is skipped entirely — same inert-until-provisioned pattern as
+  the Sentry DSN.
+- **`/api/health` spans are dropped at the sampler** (`DropHealthChecksSampler`) — uptime monitors
+  probe it around the clock, and those requests must not spend Honeycomb's free-tier event budget.
+  Everything else is recorded unsampled.
+
+### E2E + accessibility CI
+
+Playwright specs live in `e2e/`; the gate runs in
+[.github/workflows/e2e.yml](.github/workflows/e2e.yml) on `deployment_status` — it tests the **real
+Vercel deployment URL** (preview → full suite, production → `@smoke` only, desktop project), so CI
+needs no secrets, database, or env. There is deliberately no `webServer` block in
+[playwright.config.ts](playwright.config.ts): this repo's dev server needs real env that CI and
+fresh clones don't have. The suite runs desktop plus a 360px mobile project (the ecosystem charter
+is mobile-first), and covered pages must pass an axe check with **zero serious or critical
+violations** — minor/moderate findings are reported but don't gate. The gate is strict on purpose;
+fix the page, not the gate.
+
+- Local runs: `PLAYWRIGHT_BASE_URL=<url> pnpm exec playwright test` (local runs drive installed
+  Chrome via `channel: "chrome"` — Playwright's bundled chromium doesn't support macOS 13; CI uses
+  the bundled browser).
+- If the Vercel project enables Deployment Protection, set the project's "Protection Bypass for
+  Automation" secret as the `VERCEL_AUTOMATION_BYPASS_SECRET` Actions secret; public previews need
+  nothing.
+
+### Synthetic traffic tag
+
+Every request Playwright makes — the CI gate and the tutorial recordings alike — carries
+`x-witus-origin-test: playwright-synthetic` (an `extraHTTPHeaders` entry in both Playwright
+configs). The OTel layer surfaces it as the **`witus.origin_test`** span attribute
+(`attributesFromHeaders` in [otel.config.ts](otel.config.ts)), so Honeycomb queries can include or
+exclude synthetic traffic. Absent header = attribute absent = real user; queries about real users
+exclude the attribute.
+
+### Tutorial pipeline (tutorial-as-test)
+
+Every user-facing tutorial is a **runnable Playwright spec** in `e2e/tutorials/*.tutorial.ts`,
+driven by the helper in [e2e/tutorials/tutorial.ts](e2e/tutorials/tutorial.ts) — so a tutorial that
+no longer matches the app **fails**, instead of quietly rotting as prose:
+
+```bash
+pnpm tutorial:record   # run the specs via playwright.tutorial.config.ts → video + step marks
+pnpm tutorial:docs     # generate per-step markdown walkthroughs into docs/tutorials/
+pnpm tutorial:video    # compose the narrated video from recordings + BAM's narration audio
+```
+
+Auth-gated tutorials **skip** (never fail) unless `TUTORIAL_STORAGE_STATE` points at a signed-in
+Playwright storage state. Recordings, step marks, narration audio, storage states, and composed
+video are all gitignored (`tutorial-output/`, `audio/`, `.auth/`, `docs/tutorials/video/`) — and
+note that in this repo the generated walkthroughs under `docs/tutorials/` are **local-only too**,
+because `/docs/` as a whole is gitignored here. The per-step narration master lives in the witus
+repo at `plans/31-tutorial-narration-scripts.md`.
+
 ## Signed-out visitors: redirect, don't dead-end
 
 Two guards in [src/lib/session.ts](src/lib/session.ts), and picking the wrong one is a visible bug:
