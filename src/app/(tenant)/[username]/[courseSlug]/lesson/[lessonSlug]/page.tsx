@@ -364,7 +364,7 @@ export default async function LessonPage({ params }: Params) {
 
       {/* Personal notes (plans/61). Auditors record nothing, so they get no notes panel; the
           API refuses their writes regardless. */}
-      {access.open && canRecord ? <NotesPanel courseId={view.course.id} lessonId={lesson.id} /> : null}
+      {access.open && canRecord ? <NotesPanel courseId={view.course.id} lessonId={lesson.id} base={base} /> : null}
 
       {access.open && view.session ? (
         <CurriculumFeedback courseId={view.course.id} lessonId={lesson.id} />

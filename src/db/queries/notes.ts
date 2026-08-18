@@ -437,7 +437,7 @@ export async function searchNotesInCourse(
   viewerId: string,
   courseId: string,
   query: string,
-): Promise<(LessonNote & { lessonTitle: string | null })[]> {
+): Promise<(LessonNote & { lessonTitle: string | null; lessonSlug: string | null })[]> {
   const q = `%${query.replaceAll("%", "\\%").replaceAll("_", "\\_")}%`;
   const textMatches = or(ilike(lessonNotes.body, q), ilike(lessonNotes.quote, q));
   const mine = and(eq(lessonNotes.authorId, viewerId), eq(lessonNotes.kind, "personal"));
@@ -478,7 +478,7 @@ export async function searchNotesInCourse(
     or(hasNoRecipients, isRecipient),
   );
   const rows = await db
-    .select({ note: lessonNotes, lessonTitle: lessons.title })
+    .select({ note: lessonNotes, lessonTitle: lessons.title, lessonSlug: lessons.slug })
     .from(lessonNotes)
     .leftJoin(lessons, eq(lessons.id, lessonNotes.lessonId))
     .where(
@@ -491,7 +491,7 @@ export async function searchNotesInCourse(
     )
     .orderBy(desc(lessonNotes.createdAt))
     .limit(50);
-  return rows.map((r) => ({ ...r.note, lessonTitle: r.lessonTitle }));
+  return rows.map((r) => ({ ...r.note, lessonTitle: r.lessonTitle, lessonSlug: r.lessonSlug }));
 }
 
 // ── Anchoring support ────────────────────────────────────────────────────────

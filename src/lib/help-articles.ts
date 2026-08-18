@@ -330,6 +330,56 @@ A parent only ever sees children they've been explicitly linked to. Kids keep th
 too young for their own account.`,
   },
   {
+    slug: "notes-and-annotations",
+    title: "Notes, highlights, and class notes",
+    category: "Live",
+    keywords: ["notes", "annotation", "highlight", "share", "private", "teacher note", "class note", "export", "search notes"],
+    body: `# Notes, highlights, and class notes
+
+Every signed-in learner can take notes on a lesson, and a note is **private to its author unless
+they explicitly share it**, one note at a time. There is deliberately no "share all my notes"
+switch anywhere.
+
+**For learners** (this is what your students see):
+
+- The **My notes** panel at the bottom of every lesson holds their notes for that lesson.
+- Selecting any text in the lesson offers **Add note**, which pins the note to that exact passage
+  and highlights it. If the lesson text later changes, the note is kept and marked "the text this
+  was attached to has changed", never deleted.
+- **Share with teacher…** on a note shares that one note with a teacher (an owner of a class
+  they belong to). They can unshare at any time, and the note says in words who can see it.
+- **Search my notes** finds their notes and highlights across the whole course, and **Download my
+  notes (.md)** exports them with the quoted passages and lesson links.
+
+**For teachers:**
+
+- On any lesson, **Send a note to your class** attaches a note to that lesson for one of your
+  classes, or only the students you pick ("individual" and "group" are just narrower audiences).
+  It appears in those students' notes panel on that lesson. It is **not** an email or a
+  notification, and it never leaves the lesson page.
+- Notes students shared with you appear under **Shared with you by students** on the lesson they
+  wrote them on. A student can withdraw a share at any time.
+
+**For guardians:** the Family report (/family → report) shows notes a teacher sent their child.
+A child's own notes stay private to the child unless the child shares them, and the report says
+so.`,
+  },
+  {
+    slug: "in-course-search",
+    title: "Search inside a course",
+    category: "Courses",
+    keywords: ["search", "find", "lesson search", "image search", "captions", "alt text"],
+    body: `# Search inside a course
+
+Enrolled learners (and you, on your own courses) get a **Search this course** box on the course
+page. It finds where the course said something: lesson text, self-check questions and answers,
+and image descriptions, the alt text, captions, and credits that every figure in this catalog is
+required to carry.
+
+Be precise with students about that last part: it searches the **text attached to** images, not
+the pictures themselves, which is why the empty state says so in those words.`,
+  },
+  {
     slug: "learner-feedback-and-reports",
     title: "See learner feedback and problem reports",
     category: "Feedback",

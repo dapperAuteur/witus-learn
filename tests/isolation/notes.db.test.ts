@@ -106,6 +106,60 @@ describe.skipIf(!HAS_DB)("lesson notes are tenant- and author-scoped", () => {
     expect(await deleteOwnNote(bvcId, teacherId, noteId)).toBe(false);
   });
 
+  it("scopes teacher notes to cohort membership, honoring recipient narrowing", async () => {
+    const { db } = await import("@/db/client");
+    const { cohortMembers, cohorts, users } = await import("@/db/schema");
+    const { eq } = await import("drizzle-orm");
+    const { createTeacherNote, listTeacherNotesForStudent } = await import("@/db/queries/notes");
+
+    const outsiderId = `iso-note-outsider-${stamp}`;
+    await db.insert(users).values({ id: outsiderId, email: `${outsiderId}@isolation.test`, name: "Iso Outsider" });
+    const [cohort] = await db
+      .insert(cohorts)
+      .values({ tenantId: bvcId, ownerId: teacherId, name: `iso-notes-cohort-${stamp}` })
+      .returning();
+    try {
+      await db.insert(cohortMembers).values([
+        { tenantId: bvcId, cohortId: cohort.id, userId: authorId },
+        { tenantId: bvcId, cohortId: cohort.id, userId: outsiderId },
+      ]);
+
+      // Un-narrowed: every member sees it; a non-member (the teacher's other tenant view) does not.
+      const broad = await createTeacherNote({
+        tenantId: bvcId,
+        courseId,
+        lessonId,
+        authorId: teacherId,
+        cohortId: cohort.id,
+        body: "for the whole class",
+      });
+      // Narrowed to the outsider only: the author-member must NOT see it.
+      const narrowed = await createTeacherNote({
+        tenantId: bvcId,
+        courseId,
+        lessonId,
+        authorId: teacherId,
+        cohortId: cohort.id,
+        body: "for one student",
+        recipientIds: [outsiderId],
+      });
+
+      const forAuthor = (await listTeacherNotesForStudent(bvcId, authorId, lessonId)).map((n) => n.id);
+      expect(forAuthor).toContain(broad.id);
+      expect(forAuthor).not.toContain(narrowed.id);
+
+      const forOutsider = (await listTeacherNotesForStudent(bvcId, outsiderId, lessonId)).map((n) => n.id);
+      expect(forOutsider).toContain(broad.id);
+      expect(forOutsider).toContain(narrowed.id);
+
+      // Cross-tenant: the same student under Acme sees nothing.
+      expect(await listTeacherNotesForStudent(acmeId, authorId, lessonId)).toHaveLength(0);
+    } finally {
+      await db.delete(cohorts).where(eq(cohorts.id, cohort.id));
+      await db.delete(users).where(eq(users.id, outsiderId));
+    }
+  });
+
   it("searches only the viewer's own notes, inside the tenant", async () => {
     const { searchNotesInCourse } = await import("@/db/queries/notes");
     const own = await searchNotesInCourse(bvcId, authorId, courseId, "isolation test");

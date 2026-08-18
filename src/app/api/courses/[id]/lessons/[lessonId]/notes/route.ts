@@ -5,6 +5,7 @@ import { getCompletedLessonIds } from "@/db/queries/progress";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { lessonAccess } from "@/lib/gating";
 import { getActiveLearner } from "@/lib/active-learner";
+import { listCohorts, listMembers } from "@/db/queries/cohorts";
 import {
   NOTE_BLOCK_ID_MAX,
   NOTE_BODY_MAX,
@@ -62,14 +63,27 @@ export async function GET(_req: Request, { params }: Params) {
   const { sdb, learner, access } = g;
   if (!access.open) return errorJson("Forbidden", 403);
 
-  const [own, teacherNotes, sharedWithMe, sent, teachers, bodyText] = await Promise.all([
-    sdb.listOwnLessonNotes(learner.id, lessonId),
-    sdb.listTeacherNotesForStudent(learner.id, lessonId),
-    sdb.listNotesSharedWithTeacher(g.session.user.id, lessonId),
-    sdb.listSentTeacherNotes(g.session.user.id, lessonId),
-    sdb.listTeachersForLearner(learner.id),
-    sdb.getLessonBodyText(lessonId),
-  ]);
+  const [own, teacherNotes, sharedWithMe, sent, teachers, bodyText, ownedCohorts] =
+    await Promise.all([
+      sdb.listOwnLessonNotes(learner.id, lessonId),
+      sdb.listTeacherNotesForStudent(learner.id, lessonId),
+      sdb.listNotesSharedWithTeacher(g.session.user.id, lessonId),
+      sdb.listSentTeacherNotes(g.session.user.id, lessonId),
+      sdb.listTeachersForLearner(learner.id),
+      sdb.getLessonBodyText(lessonId),
+      // The compose-to-cohort surface: cohorts the ACCOUNT owns (never the acted-as child).
+      listCohorts(sdb.tenantId, g.session.user.id),
+    ]);
+  const myCohorts = await Promise.all(
+    ownedCohorts.map(async (c) => ({
+      id: c.id,
+      name: c.name,
+      members: (await listMembers(sdb.tenantId, c.id)).map((m) => ({
+        userId: m.userId,
+        name: m.displayName,
+      })),
+    })),
+  );
   const shares = await sdb.listNoteShares(learner.id, own.map((n) => n.id));
   const sharesByNote = new Map<string, { teacherUserId: string; teacherName: string | null }[]>();
   for (const s of shares) {
@@ -88,6 +102,7 @@ export async function GET(_req: Request, { params }: Params) {
     sharedWithMe: sharedWithMe.map((n) => ({ ...n, resolves: quoteStillResolves(bodyText, n.quote) })),
     sent,
     teachers,
+    myCohorts,
   });
 }
 
