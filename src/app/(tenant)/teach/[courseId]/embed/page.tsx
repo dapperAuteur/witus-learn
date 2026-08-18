@@ -107,7 +107,7 @@ export default async function EmbedSnippetPage({ params }: { params: Promise<{ c
 
       <p className="mt-8 text-xs text-neutral-500">
         Looking for a deeper integration (another app reading your catalog as JSON)? That is the
-        API-key path, see the help article &quot;Embed your courses in another app&quot; under
+        API-key path; see the help article &quot;Embed your courses in another app&quot; under
         /help.
       </p>
     </main>
