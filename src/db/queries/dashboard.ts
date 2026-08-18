@@ -15,6 +15,14 @@ import {
 import { listLessons } from "@/db/queries/authoring";
 import { getLastViewedLessonId } from "@/db/queries/progress";
 import { selectResume } from "@/lib/resume";
+import {
+  SPECIALIZATIONS,
+  computeSpecializations,
+  specializationCourseSlugs,
+  type CompletionRef,
+  type PublishedCourseRef,
+  type SpecializationStatus,
+} from "@/lib/specializations";
 
 export interface NextLesson {
   slug: string;
@@ -328,6 +336,61 @@ export async function getLearnerStats(tenantId: string, userId: string): Promise
       completedAt: r.completedAt,
     })),
   };
+}
+
+/**
+ * Specialization credentials (src/lib/specializations.ts) for one learner in one tenant,
+ * computed at read time from course_completions — no table of their own. TENANT-SCOPED:
+ * both the published-course lookup and the completions join filter courses.tenant_id, so a
+ * specialization resolves only against this tenant's own published catalog and another
+ * brand's completion of an identically-slugged course can never count here.
+ */
+export async function getSpecializations(
+  tenantId: string,
+  userId: string,
+): Promise<SpecializationStatus[]> {
+  const slugs = specializationCourseSlugs(SPECIALIZATIONS);
+  if (slugs.length === 0) return [];
+
+  const courseRows = await db
+    .select({ id: courses.id, slug: courses.slug, title: courses.title })
+    .from(courses)
+    .where(
+      and(eq(courses.tenantId, tenantId), inArray(courses.slug, slugs), eq(courses.isPublished, true)),
+    );
+
+  const published = new Map<string, PublishedCourseRef>();
+  const idBySlug = new Map<string, string>();
+  for (const row of courseRows) {
+    if (!row.slug || published.has(row.slug)) continue; // first match wins on a duplicate slug
+    published.set(row.slug, { title: row.title });
+    idBySlug.set(row.slug, row.id);
+  }
+  if (published.size === 0) return [];
+
+  const completionRows = await db
+    .select({
+      slug: courses.slug,
+      completedAt: courseCompletions.completedAt,
+      verificationToken: courseCompletions.verificationToken,
+    })
+    .from(courseCompletions)
+    .innerJoin(courses, eq(courses.id, courseCompletions.courseId))
+    .where(
+      and(
+        eq(courseCompletions.userId, userId),
+        eq(courses.tenantId, tenantId),
+        inArray(courses.id, [...idBySlug.values()]),
+      ),
+    );
+
+  const completions = new Map<string, CompletionRef>();
+  for (const row of completionRows) {
+    if (!row.slug) continue;
+    completions.set(row.slug, { completedAt: row.completedAt, verificationToken: row.verificationToken });
+  }
+
+  return computeSpecializations(SPECIALIZATIONS, published, completions);
 }
 
 function computeStreaks(dayCount: Map<string, number>) {

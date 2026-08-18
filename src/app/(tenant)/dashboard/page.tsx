@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { requireTenant } from "@/lib/tenant";
 import { getSession } from "@/lib/session";
 import { getActiveLearner } from "@/lib/active-learner";
-import { getLearnerDashboard, getLearnerStats } from "@/db/queries/dashboard";
+import { getLearnerDashboard, getLearnerStats, getSpecializations } from "@/db/queries/dashboard";
 import { getRecallHistory } from "@/db/queries/recall";
 import { ProgressBar, WeekBars } from "@/components/progress-bits";
 import { DashboardProfileForm } from "@/components/dashboard-profile-form";
@@ -64,11 +64,15 @@ export default async function DashboardPage() {
   // section below stays on the signed-in account regardless (see "Manage your profile").
   const learner = await getActiveLearner(session);
   const activeLearnerId = learner?.id ?? session.user.id;
-  const [dashboard, stats, recallHistory] = await Promise.all([
+  const [dashboard, stats, recallHistory, specializations] = await Promise.all([
     getLearnerDashboard(tenant.id, activeLearnerId),
     getLearnerStats(tenant.id, activeLearnerId),
     getRecallHistory(tenant.id, activeLearnerId),
+    getSpecializations(tenant.id, activeLearnerId),
   ]);
+  // Only specializations the learner has STARTED (or earned). An untouched track renders
+  // nothing: listing every possible combination would bury the credentials that are real.
+  const startedSpecializations = specializations.filter((s) => s.completedCount > 0);
   const { streak, bestStreak, week, courses, xp, level, xpIntoLevel, xpForLevel, badges } = dashboard;
   const lessonsCompleted = courses.reduce((sum, c) => sum + c.completed, 0);
 
@@ -176,6 +180,59 @@ export default async function DashboardPage() {
             ))}
           </ul>
         )}
+
+        {startedSpecializations.length > 0 ? (
+          <div className="mt-6">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Specializations</h3>
+            <p className="mt-1 text-xs text-neutral-500">
+              A specialization is earned here by completing all three of its courses. It is a record on
+              this site, not an external certification or license.
+            </p>
+            <ul className="mt-3 space-y-3">
+              {startedSpecializations.map((s) => (
+                <li
+                  key={s.slug}
+                  className="rounded-xl border border-neutral-200 bg-white p-4 dark:border-neutral-800 dark:bg-neutral-900"
+                >
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <span className="font-medium">{s.title}</span>
+                    {s.earned && s.earnedAt ? (
+                      <span className="shrink-0 rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300">
+                        Earned{" "}
+                        {s.earnedAt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+                      </span>
+                    ) : (
+                      <span className="shrink-0 text-xs font-medium tabular-nums text-neutral-500">
+                        {s.completedCount} of {s.courses.length} courses
+                      </span>
+                    )}
+                  </div>
+                  <p className="mt-1 text-xs text-neutral-500">{s.description}</p>
+                  <ul className="mt-2 space-y-1 text-sm">
+                    {s.courses.map((c) => (
+                      <li key={c.courseSlug} className="flex items-center gap-2">
+                        <span aria-hidden="true">{c.completed ? "✓" : "○"}</span>
+                        {c.completed && c.verificationToken ? (
+                          <Link href={`/verify/${c.verificationToken}`} className="underline">
+                            {c.title}
+                          </Link>
+                        ) : (
+                          <span className="text-neutral-500">{c.title}</span>
+                        )}
+                        <span className="sr-only">{c.completed ? "completed" : "not completed yet"}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {!s.earned ? (
+                    <p className="mt-2 text-xs text-neutral-500">
+                      Still to finish: {s.remaining.map((c) => c.title).join(", ")}
+                    </p>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
       </section>
 
       {/* Discoverability only — the manager itself lives at /downloads, which is DB-free and

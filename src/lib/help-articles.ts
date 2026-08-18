@@ -323,7 +323,7 @@ You see only your own classes; brand admins/owner can see any class on the schoo
     slug: "family",
     title: "Give parents a read-only Family view",
     category: "Live",
-    keywords: ["family", "parent", "guardian", "child", "progress", "grades", "attendance", "cohort"],
+    keywords: ["family", "parent", "guardian", "child", "progress", "grades", "attendance", "cohort", "specialization", "credential"],
     body: `# Family
 
 **/family** gives a parent a read-only view of their own child's **course progress**, **grades**
@@ -336,7 +336,11 @@ family's child.
 2. The parent opens the link at \`/family/accept/[token]\`, signs in (magic link), and is linked to
    that one child.
 3. At **/family** they see that child's enrolled-course progress %, recall accuracy, quiz average,
-   earned credentials, and which live-class days they attended.
+   earned credentials, and which live-class days they attended. Under credentials it also lists any
+   earned **specializations**: a named track of three courses (a shared research core, a craft
+   course, and a subject course) that only appears once the child has completed all three. It is a
+   record on this site, not an external certification, and a parent never sees partial progress
+   toward one, only earned specializations.
 
 A parent only ever sees children they've been explicitly linked to. Kids keep their own accounts
 (this is not a shared/managed login), a future release may add managed sub-profiles for children

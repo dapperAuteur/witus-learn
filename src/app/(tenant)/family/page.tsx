@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { requireUserPage } from "@/lib/session";
 import { getScopedDb } from "@/db/scoped";
 import { isGuardianOf, listAttendanceForChild, listChildren, listManagedChildren } from "@/db/queries/family";
-import { getLearnerDashboard, getLearnerStats } from "@/db/queries/dashboard";
+import { getLearnerDashboard, getLearnerStats, getSpecializations } from "@/db/queries/dashboard";
 import { ManageChildren } from "@/components/manage-children";
 
 export const metadata: Metadata = { title: "Family" };
@@ -14,6 +14,8 @@ interface ChildView {
   recallAccuracy: number;
   quizAvg: number;
   credentials: { courseTitle: string; completedAt: Date }[];
+  /** EARNED specializations only (all three courses complete), never partial progress. */
+  specializations: { title: string; earnedAt: Date }[];
   attendance: { cohortName: string; days: string[] }[];
 }
 
@@ -40,10 +42,11 @@ export default async function FamilyPage() {
     const allowed = await isGuardianOf(sdb.tenantId, session.user.id, child.userId);
     if (!allowed) continue;
 
-    const [dashboard, stats, attendance] = await Promise.all([
+    const [dashboard, stats, attendance, specializations] = await Promise.all([
       getLearnerDashboard(sdb.tenantId, child.userId),
       getLearnerStats(sdb.tenantId, child.userId),
       listAttendanceForChild(sdb.tenantId, child.userId),
+      getSpecializations(sdb.tenantId, child.userId),
     ]);
 
     views.push({
@@ -53,6 +56,10 @@ export default async function FamilyPage() {
       recallAccuracy: stats.recallAccuracy,
       quizAvg: stats.quizAvg,
       credentials: stats.credentials.map((c) => ({ courseTitle: c.courseTitle, completedAt: c.completedAt })),
+      // Earned only: a parent report must never imply a credential the child does not have.
+      specializations: specializations
+        .filter((s) => s.earned && s.earnedAt)
+        .map((s) => ({ title: s.title, earnedAt: s.earnedAt as Date })),
       attendance: attendance.map((a) => ({ cohortName: a.cohortName, days: a.days })),
     });
   }
@@ -132,6 +139,24 @@ export default async function FamilyPage() {
                     ))}
                   </ul>
                 )}
+                {child.specializations.length > 0 ? (
+                  <div className="mt-3">
+                    <h4 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                      Specializations
+                    </h4>
+                    <p className="mt-0.5 text-xs text-neutral-500">
+                      Earned by completing all three courses in a track. A record on this site, not an
+                      external certification.
+                    </p>
+                    <ul className="mt-1 space-y-1 text-sm">
+                      {child.specializations.map((s) => (
+                        <li key={s.title}>
+                          {s.title}, earned {new Date(s.earnedAt).toLocaleDateString()}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
               </div>
 
               <div className="mt-4">
