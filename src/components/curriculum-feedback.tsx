@@ -89,15 +89,9 @@ export function CurriculumFeedback({ courseId, lessonId }: { courseId: string; l
     }
   }
 
-  // A sent note ends the interaction — unless something is still waiting, in which case the pending
-  // rows have to stay on screen (they are the only copy that exists).
-  if (state === "done" && pending.length === 0) {
-    return (
-      <p className="mt-10 text-sm text-green-700 dark:text-green-400">
-        Thanks, your note was sent to the instructor.
-      </p>
-    );
-  }
+  // A successful send used to REPLACE the form with a thanks line, which meant a learner with a
+  // second thought had to refresh the page to say it (reported 2026-08-10). The form now stays,
+  // cleared and ready; the inline role=status line below the button says thanks.
 
   return (
     <details className="mt-10 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800" open={pending.length > 0}>
