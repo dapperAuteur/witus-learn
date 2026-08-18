@@ -5,6 +5,16 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- ✅ **In-course text search** (\`feat/course-search\`, plans/61 §5, build-order step 2): a search box
+  on the course page ("Search this course") for enrolled learners, editors, and invited auditors.
+  Searches the PUBLISHED lessons of that one course: titles, body prose, \`:::reveal\` self-checks
+  (question + answer), and the text attached to \`:::figure\` images (**alt text, captions, credits,
+  never the URL**; deliberately described in those terms, never as "image search", per plans/61 §5's
+  phrasing discipline). Pure ranking lib \`src/lib/course-search.ts\` (exact phrase > all-words,
+  title matches first, ~60-char snippets), tenant-scoped read through \`ScopedDb\`
+  (\`listPublishedLessonSearchRows\`), API at \`GET /api/courses/[id]/search?q=\` (403 for anyone who
+  can't read the content, 404 across tenants). Independent of the notes/annotations work (steps 1,
+  3-5 of plans/61 remain). No migration.
 - ✅ **Science & Math track, Wave 1** (\`feat/science-math-wave-1\`, a NEW category and the
   \`science-and-math\` series): four courses that each complement what the catalog already has rather
   than sitting beside it. **SCI-01 How to Read a Number** serves the 34 Civics courses, which all

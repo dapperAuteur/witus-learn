@@ -257,6 +257,22 @@ changes. Tenant-scoped end to end: standards are keyed by course slug and resolv
 requesting tenant's own published catalog, so a brand can never surface a standard its courses
 don't back.
 
+## In-course search
+
+Every course page shows a **"Search this course"** box to viewers who can read the content
+(enrolled learners, the instructor/owner, invited auditors). It searches the **published lessons of
+that one course**: lesson titles, body prose, `:::reveal` self-checks (question + answer), and the
+text attached to `:::figure` images: **alt text, captions, and credits, never the URL**. That last
+part is deliberate phrasing (plans/61 §5): the app greps the text attached to an image, not the
+image, so no surface calls it "image search". Exact-phrase matches rank above all-words matches and
+title matches rank highest, with a ~60-character snippet around the first match.
+
+The ranking is a pure module ([src/lib/course-search.ts](src/lib/course-search.ts), unit-tested in
+`tests/course-search.test.ts`); the lesson read is tenant-scoped through `ScopedDb`
+(`listPublishedLessonSearchRows`, isolation-tested in `tests/isolation/course-search.db.test.ts`);
+the API is `GET /api/courses/[id]/search?q=` (404 across tenants, 403 for anyone who can't read the
+content, 400 outside 2 to 200 characters).
+
 ## Self-serve custom domains
 
 At `/admin/domains`, a school's **brand_admin** maps a domain to their tenant entirely self-serve,
