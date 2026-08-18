@@ -5,7 +5,9 @@ import {
   canSeeUnvettedContent,
   courseViewGate,
   includeInSitemap,
+  isOpenWhileUnvetted,
   isUnvetted,
+  isVettingLocked,
 } from "@/lib/vetting";
 
 // Unvetted ("Coming soon") courses, guarded from both sides:
@@ -21,7 +23,7 @@ import {
 const VETTED = new Date("2026-07-29T00:00:00Z");
 const src = (p: string) => readFileSync(join(process.cwd(), p), "utf8");
 
-const published = { isPublished: true, visibility: "public" };
+const published = { isPublished: true, visibility: "public", allowUnvettedPublic: false };
 const stranger = { isEditor: false, canSeeUnvetted: false };
 
 describe("isUnvetted", () => {
@@ -65,19 +67,46 @@ describe("courseViewGate", () => {
     ).toBe("open");
   });
 
+  it("opens an unvetted course to a stranger when the owner flagged allow_unvetted_public", () => {
+    expect(
+      courseViewGate({ ...published, allowUnvettedPublic: true, vettedAt: null, ...stranger }),
+    ).toBe("open");
+  });
+
+  it("the flag never overrides draft/private: still not-found", () => {
+    expect(
+      courseViewGate({
+        isPublished: false,
+        visibility: "public",
+        allowUnvettedPublic: true,
+        vettedAt: null,
+        ...stranger,
+      }),
+    ).toBe("not-found");
+  });
+
+  it("isVettingLocked and isOpenWhileUnvetted split the unvetted state by the flag", () => {
+    expect(isVettingLocked({ vettedAt: null, allowUnvettedPublic: false })).toBe(true);
+    expect(isVettingLocked({ vettedAt: null, allowUnvettedPublic: true })).toBe(false);
+    expect(isVettingLocked({ vettedAt: VETTED, allowUnvettedPublic: false })).toBe(false);
+    expect(isOpenWhileUnvetted({ vettedAt: null, allowUnvettedPublic: true })).toBe(true);
+    // The flag is meaningless once vetted: no disclosure on a reviewed course.
+    expect(isOpenWhileUnvetted({ vettedAt: VETTED, allowUnvettedPublic: true })).toBe(false);
+  });
+
   it("opens normally once vetted", () => {
     expect(courseViewGate({ ...published, vettedAt: VETTED, ...stranger })).toBe("open");
   });
 
   it("still 404s a draft or a private course, vetted or not", () => {
     expect(
-      courseViewGate({ isPublished: false, visibility: "public", vettedAt: VETTED, ...stranger }),
+      courseViewGate({ isPublished: false, visibility: "public", vettedAt: VETTED, allowUnvettedPublic: false, ...stranger }),
     ).toBe("not-found");
     expect(
-      courseViewGate({ isPublished: true, visibility: "private", vettedAt: VETTED, ...stranger }),
+      courseViewGate({ isPublished: true, visibility: "private", vettedAt: VETTED, allowUnvettedPublic: false, ...stranger }),
     ).toBe("not-found");
     expect(
-      courseViewGate({ isPublished: false, visibility: "public", vettedAt: null, ...stranger }),
+      courseViewGate({ isPublished: false, visibility: "public", vettedAt: null, allowUnvettedPublic: false, ...stranger }),
     ).toBe("not-found");
   });
 });
@@ -201,10 +230,12 @@ describe("the notify-me endpoint treats the public form as hostile input", () =>
     expect(route).not.toContain("tenantId: parsed.data");
   });
 
-  it("only accepts signups for a published, non-private, UNVETTED course", () => {
+  it("only accepts signups for a published, non-private, VETTING-LOCKED course", () => {
     expect(route).toContain("!course.isPublished");
     expect(route).toContain('course.visibility === "private"');
-    expect(route).toContain("!isUnvetted(course)");
+    // isVettingLocked, not isUnvetted: a course the owner flagged "live but unvetted" has no
+    // Coming-soon page, so there is nothing to be notified about and the signup 404s.
+    expect(route).toContain("!isVettingLocked(course)");
   });
 
   it("has a honeypot, a rate limit, and mirrors to the Inbox after the response", () => {

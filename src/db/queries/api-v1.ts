@@ -125,6 +125,9 @@ export async function getPublishedCourseWithLessons(
         eq(courses.tenantId, tenantId),
         eq(courses.isPublished, true),
         eq(courses.visibility, "public"),
+        // DELIBERATELY vetted-only, ignoring allow_unvetted_public (plans/52): an external
+        // consumer republishing lessons is a bigger promise than our own pages rendering them
+        // behind a review-in-progress disclosure. The flag opens the site, never the API.
         isNotNull(courses.vettedAt),
       ),
     )

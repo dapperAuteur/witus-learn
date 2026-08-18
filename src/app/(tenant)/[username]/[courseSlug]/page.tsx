@@ -40,6 +40,8 @@ import { brandName } from "@/lib/branding";
 import { CourseStandards } from "@/components/course-standards";
 import { CourseSearch } from "@/components/course-search";
 import { ComingSoonCourseFace } from "@/components/coming-soon-course";
+import { UnvettedDisclosure } from "@/components/unvetted-disclosure";
+import { isOpenWhileUnvetted } from "@/lib/vetting";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -303,6 +305,8 @@ export default async function CourseBySlugPage({ params }: Params) {
       {course.description ? (
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
       ) : null}
+
+      {isOpenWhileUnvetted(course) ? <UnvettedDisclosure /> : null}
 
       <CourseStandards courseSlug={courseSlug} />
 

@@ -31,6 +31,32 @@ export function isUnvetted(course: { vettedAt: Date | null }): boolean {
 }
 
 /**
+ * Is this course's content CLOSED for lack of vetting? This, not isUnvetted, is what every
+ * access gate asks: a course stays truthfully "unvetted" (isUnvetted, the disclosure banner,
+ * the review queue) while the owner's explicit `allow_unvetted_public` flag opens its content
+ * anyway ("live but unvetted", plans/52's one deferred field). The flag is owner-set only and
+ * means nothing once vetted_at is stamped.
+ *
+ * Deliberate exception: the api-v1 syndication reads keep the stricter vetted-only bar and do
+ * NOT consult this — an external site republishing lessons is a bigger promise than our own
+ * pages rendering them behind a disclosure.
+ */
+export function isVettingLocked(course: {
+  vettedAt: Date | null;
+  allowUnvettedPublic: boolean;
+}): boolean {
+  return isUnvetted(course) && !course.allowUnvettedPublic;
+}
+
+/** Should a surface show the "open while review is in progress" disclosure? */
+export function isOpenWhileUnvetted(course: {
+  vettedAt: Date | null;
+  allowUnvettedPublic: boolean;
+}): boolean {
+  return isUnvetted(course) && course.allowUnvettedPublic;
+}
+
+/**
  * Who the viewer is, relative to ONE course. Every flag is resolved server-side (session +
  * tenant-scoped reads); nothing here may come from the client.
  */
@@ -68,6 +94,8 @@ export function courseViewGate(input: {
   isPublished: boolean;
   visibility: string;
   vettedAt: Date | null;
+  /** Owner-set "live but unvetted": content opens with a disclosure instead of Coming soon. */
+  allowUnvettedPublic: boolean;
   /** Passes the draft/private gate (canAccessCourse: owner, instructor, or tenant admin). */
   isEditor: boolean;
   /** Passes the unvetted CONTENT gate (canSeeUnvettedContent), a stricter set. */
@@ -76,7 +104,7 @@ export function courseViewGate(input: {
   if ((!input.isPublished || input.visibility === "private") && !input.isEditor) {
     return "not-found";
   }
-  if (isUnvetted(input) && !input.canSeeUnvetted) return "coming-soon";
+  if (isVettingLocked(input) && !input.canSeeUnvetted) return "coming-soon";
   return "open";
 }
 

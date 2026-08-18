@@ -101,6 +101,7 @@ export async function loadCourseView(
     isPublished: course.isPublished,
     visibility: course.visibility,
     vettedAt: course.vettedAt,
+    allowUnvettedPublic: course.allowUnvettedPublic,
     isEditor,
     canSeeUnvetted: canSeeUnvettedContent({ isOwnerOrInstructor, isEnrolled: enrolled, isAuditor }),
   });

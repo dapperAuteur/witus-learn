@@ -82,7 +82,7 @@ describe("who counts as an auditor", () => {
 });
 
 describe("what an accepted auditor can SEE", () => {
-  const unvetted = { isPublished: true, visibility: "public", vettedAt: null };
+  const unvetted = { isPublished: true, visibility: "public", vettedAt: null, allowUnvettedPublic: false };
 
   it("reaches the real course, not the Coming soon face", () => {
     const canSeeUnvetted = canSeeUnvettedContent({
@@ -122,6 +122,7 @@ describe("what an accepted auditor can SEE", () => {
       priceType: "one_time" as const,
       price: "29",
       vettedAt: null,
+      allowUnvettedPublic: false,
     };
     const lesson = { id: "L2", isPublished: true, isFreePreview: false };
     const ctx = {
@@ -135,7 +136,7 @@ describe("what an accepted auditor can SEE", () => {
   });
 
   it("does NOT open a draft lesson: reviewing is not editing", () => {
-    const course = { isPublished: true, isSequential: false, priceType: "free", price: "0", vettedAt: null };
+    const course = { isPublished: true, isSequential: false, priceType: "free", price: "0", vettedAt: null, allowUnvettedPublic: false };
     const draft = { id: "L1", isPublished: false, isFreePreview: false };
     expect(lessonAccess(course, draft, {
       isEditor: false,
@@ -153,6 +154,7 @@ describe("what an accepted auditor can SEE", () => {
       priceType: "one_time" as const,
       price: "29",
       vettedAt: new Date("2026-07-30T00:00:00Z"),
+      allowUnvettedPublic: false,
     };
     const lesson = { id: "L1", isPublished: true, isFreePreview: false };
     expect(

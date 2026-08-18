@@ -8,7 +8,7 @@ import { getBundleBySlug } from "@/db/queries/bundles";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { BundleBuyButton } from "@/components/bundle-buy-button";
 import { ComingSoonBadge } from "@/components/coming-soon-course";
-import { isUnvetted } from "@/lib/vetting";
+import { isVettingLocked } from "@/lib/vetting";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -86,7 +86,7 @@ export default async function BundlePage({ params }: Params) {
                     than let the price imply every course in it is open: buying the bundle enrolls
                     you, and an enrollee DOES get the full course, so this is disclosure, not a
                     lock. Whether a bundle should be allowed to include one at all is BAM's call. */}
-                {isUnvetted(c) ? <ComingSoonBadge className="ml-2 align-middle" /> : null}
+                {isVettingLocked(c) ? <ComingSoonBadge className="ml-2 align-middle" /> : null}
                 {c.description ? (
                   <span className="mt-1 block text-sm text-neutral-600 dark:text-neutral-400">{c.description}</span>
                 ) : null}
