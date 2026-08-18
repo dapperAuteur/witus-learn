@@ -489,7 +489,7 @@ Three shapes that work at this length:
             prompt: "What production reality shapes what short plays get staged?",
             options: [
               "Festival programs require every play to run under eight minutes",
-              "Programmes favor small casts, minimal sets and little technical support",
+              "Programs favor small casts, minimal sets and little technical support",
               "Only plays whose scripts are already published are eligible for programming",
               "Venues require a director to already be attached at the point of submission",
             ],

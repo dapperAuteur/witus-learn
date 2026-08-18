@@ -1191,7 +1191,7 @@ One caution, to teach rather than hide. **A minority of judges and scholars have
 
 | Model | What the statute or constitution lists | Who gets the unforeseen power |
 |---|---|---|
-| **Reserved powers** | The matters kept for the CENTRE; everything else is the region's | The region (the residue falls to it) |
+| **Reserved powers** | The matters kept for the CENTER; everything else is the region's | The region (the residue falls to it) |
 | **Conferred powers** | The matters GIVEN to the region; everything else stays central | The center (the residue stays with it) |
 
 **This is the residual-power question from Section 2, wearing work clothes.** Under a **reserved-powers** model, the drafters name what the center keeps, and anything not named is the region's by default: a broad, generous grant. Under a **conferred-powers** model, the drafters name what the region gets, and anything not named stays with the center: a narrower, list-bound grant. **The difference never shows up on the powers the drafters thought of. It decides everything they missed.**
@@ -1448,7 +1448,7 @@ The markers are grouped by **how the middle layer holds its power**, which is th
 
 ## What the map cannot show, and what that proves
 
-**It cannot show the terms of power, which is the whole point.** A blue US-state dot and an amber Scotland dot can look equally important on the map, and represent opposite kinds of authority: one entrenched, one delegated. **Colour is doing the work the position cannot.** Read the legend, not the geography.
+**It cannot show the terms of power, which is the whole point.** A blue US-state dot and an amber Scotland dot can look equally important on the map, and represent opposite kinds of authority: one entrenched, one delegated. **Color is doing the work the position cannot.** Read the legend, not the geography.
 
 **It cannot show the second axis.** Nothing in a dot's color tells you whether the unit is reserved-powers or conferred-powers (Lesson 15). Scotland (amber) is reserved-powers; Canada's province (blue) sits under a centralising residue. That distinction you carry in your head. **The map is a prompt for the classification you are about to do, not a substitute for it.** Now classify one yourself.
 

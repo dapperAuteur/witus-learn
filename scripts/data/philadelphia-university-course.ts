@@ -517,7 +517,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 |---|---|---|
 | Formed by | Indiana University alone | A coalition, Penn dominant, with junior partners |
 | Founded | 1962 | 1959 |
-| Original stated purpose | A land-acquisition vehicle | Neighbourhood safety and stability after a 1958 killing, then land |
+| Original stated purpose | A land-acquisition vehicle | Neighborhood safety and stability after a 1958 killing, then land |
 | Relationship to the campus | The university's own shell | A multi-institution consortium the university funded and ran |
 
 **The parallel is real: in both cities a university did its neighborhood land work through a nonprofit intermediary rather than only in its own name.** The difference is real too: Hoosier Realty was a single university's dedicated shell, while the West Philadelphia Corporation was a consortium with a broader founding mission that became a land program. **If you say "Penn used a shell company exactly like Indiana University did," you have overclaimed.** The honest sentence is: both universities worked through a surrogate nonprofit, and the surrogates differed in structure and origin. That sentence is more useful precisely because it is more careful.
@@ -1086,7 +1086,7 @@ export const PHILADELPHIA_UNIVERSITY_COURSE: AuthoredCourse = {
 
 **The habits this builds, which transfer to any American city.** The names of the tools change from city to city and the facts do not: **parcel or account number, owner of record, assessed value, and the zoning versus the plan.** Learn to find those four and you can research any address in the country. Philadelphia calls its map Atlas and its assessor the OPA; Indianapolis called them MapIndy and the Marion County Assessor. Same four facts.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a city database. Practise on institutional and commercial addresses. This is the same rule *The Green Book* applied to tourist homes and *Indiana Avenue* applied to parcels, and it is the same restraint the MOVE lesson used in refusing to pin an exact house on the map.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a city database. Practice on institutional and commercial addresses. This is the same rule *The Green Book* applied to tourist homes and *Indiana Avenue* applied to parcels, and it is the same restraint the MOVE lesson used in refusing to pin an exact house on the map.
 
 ## Sources
 - City of Philadelphia. (n.d.-a). *Atlas*. https://atlas.phila.gov/
@@ -1479,7 +1479,7 @@ A short, checkable piece in which every sentence is either something you read in
 
 **What you can do that you could not before.**
 - Confirm an instrument at a second site, and state precisely how the second case is parallel, merely similar, and different.
-- Recognise that two states passing a blight law in the same year is evidence of a shared federal program, not a coincidence.
+- Recognize that two states passing a blight law in the same year is evidence of a shared federal program, not a coincidence.
 - Hold a control case (Society Hill) next to a clearance and see which variable actually moved.
 - Keep two decisions in one city distinct (the Black Bottom clearance and the MOVE bombing) instead of collapsing them into a mood.
 - Read a present-day fight (PILOTs) as the continuation of a documented past relationship.

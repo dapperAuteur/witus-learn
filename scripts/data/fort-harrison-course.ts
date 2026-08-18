@@ -1475,7 +1475,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
 
 **The habits this builds, which transfer to any American county.** Every county has an assessor and most have a GIS. **The names of the tools change and the facts do not: parcel number, owner of record, assessed value, which overlapping jurisdictions the parcel sits in, and whether it is inside a designated district.** Learn to find those five and you can research any address in the country.
 
-**The rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** Much of the former post is now housing, and a current occupant's name attached to their address in a piece of writing is a different act from a public record sitting in a county database. **Practise on institutional and commercial addresses.** This is the same rule the method course applied to tourist homes and course 1 applied to the Avenue.
+**The rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** Much of the former post is now housing, and a current occupant's name attached to their address in a piece of writing is a different act from a public record sitting in a county database. **Practice on institutional and commercial addresses.** This is the same rule the method course applied to tourist homes and course 1 applied to the Avenue.
 
 ## Sources
 - City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
@@ -1747,7 +1747,7 @@ The City of Lawrence's own municipal code contains a section titled **Cooperatio
           {
             prompt: "Name three things the tour cannot show you.",
             options: [
-              "Colour, texture and scale",
+              "Color, texture and scale",
               "Jurisdiction, tax status, what was demolished, and who was allowed where",
               "Buildings, roads and signs",
               "Season, weather, time of day and the direction of the light when the capture was made",
@@ -1881,7 +1881,7 @@ A short, checkable piece in which every sentence is either something you read in
 - Explain why federal land pays no property tax, and name the two programs that partly compensate for it.
 - Explain the one design feature that makes base closure politically possible, and recognize the same architecture in other policy.
 - Distinguish a **public benefit conveyance** from a sale at fair market value, and say who decides between them.
-- Recognise that a **National Register listing on federal land** triggers Section 106 consultation rather than a demolition veto, and that the HABS record you read is itself a product of that process.
+- Recognize that a **National Register listing on federal land** triggers Section 106 consultation rather than a demolition veto, and that the HABS record you read is itself a product of that process.
 - Say why the largest tract of forest in central Indiana exists, in one sentence about taxation.
 - Report the limits of a record instead of filling them.
 

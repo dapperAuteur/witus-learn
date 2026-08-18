@@ -291,7 +291,7 @@ Not the narrator, not the most interesting person present: the one the change ha
             ],
             correctIndex: 1,
             explanation:
-              "As written it is unfalsifiable, which is why it is usually a dodge. Behaviour can be shown, checked and disagreed with, which is what makes it usable.",
+              "As written it is unfalsifiable, which is why it is usually a dodge. Behavior can be shown, checked and disagreed with, which is what makes it usable.",
             sourceLessonSlug: "hsw-change-and-owner",
           },
           {

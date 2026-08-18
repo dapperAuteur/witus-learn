@@ -471,7 +471,7 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
             prompt: "A narrator begins to cry mid-interview. What does the course say to do?",
             options: [
               "Stop recording immediately and offer to reschedule the session",
-              "Apologise for the question and move to a lighter topic",
+              "Apologize for the question and move to a lighter topic",
               "Stay quiet, let the pause run, then offer to stop and let them decide",
               "Continue with the next question so the moment is not made larger",
             ],
@@ -561,8 +561,8 @@ export const ORAL_HISTORY_COURSE: AuthoredCourse = {
           {
             prompt: "What does the course say about a narrator's dialect and grammar in a transcript?",
             options: [
-              "Standardise it so the narrator is not embarrassed by the printed version",
-              "Standardise it only where a reader would otherwise misunderstand the sense",
+              "Standardize it so the narrator is not embarrassed by the printed version",
+              "Standardize it only where a reader would otherwise misunderstand the sense",
               "Offer the narrator the choice of standardising their own speech at review",
               "Never standardize it: transcribe what was said",
             ],

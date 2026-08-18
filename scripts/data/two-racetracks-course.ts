@@ -826,7 +826,7 @@ The four gates above are permission gates. **The fifth is capital, and it applie
 
 **None of these has been read into this course. All of them exist somewhere.**
 - **AAA Contest Board rulebooks, bulletins and minutes** for the 1910s through the 1950s.
-- **Licence registers and entry lists** for the Indianapolis 500 in that period, including rejected entries.
+- **License registers and entry lists** for the Indianapolis 500 in that period, including rejected entries.
 - **The full runs of the *Indianapolis Recorder* and the *Chicago Defender***, which covered both tracks and asked the questions nobody else asked.
 - **USAC's founding bylaws of 1955**, which would show what the successor body wrote down at the moment it was free to write anything.
 
@@ -1006,7 +1006,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 
 ## The three method lessons of Section 3
 
-1. **Enumerate the gates before you assign a cause.** Licence, entry, membership, venue, capital. Each has a holder and a record, or a documented lack of one.
+1. **Enumerate the gates before you assign a cause.** License, entry, membership, venue, capital. Each has a holder and a record, or a documented lack of one.
 2. **Distinguish an outcome from an instrument.** Eighty years without a Black starter is an outcome. A rule is an instrument. **This course established the first and could not establish the second, and said so.**
 3. **Measure the interval between the opening and the change.** It is where the real barrier usually lives.
 
@@ -1539,7 +1539,7 @@ The Encyclopedia attributes the end of the Sweepstakes to **Depression finances 
 
 **The habits this builds, which transfer to any American county.** **Ownership, jurisdiction, adopted plan, deciding body, meeting schedule.** The names of the tools change from state to state; those five facts do not.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** Practise on institutional and commercial addresses. A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different act from a public record sitting in a county database. This is the same rule the method course applied to tourist homes and course 1 applied to the Avenue.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** Practice on institutional and commercial addresses. A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different act from a public record sitting in a county database. This is the same rule the method course applied to tourist homes and course 1 applied to the Avenue.
 
 ## Sources
 - City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
@@ -1942,7 +1942,7 @@ A short, checkable piece in which every sentence is either something you read in
 
 ## What you can do that you could not do before
 
-- **Recognise a sanctioning body** as an instrument, and know that its defining feature is that it need not leave a record.
+- **Recognize a sanctioning body** as an instrument, and know that its defining feature is that it need not leave a record.
 - **Tell an outcome from an instrument**, and say which one your evidence supports.
 - **Read a parallel institution as evidence about the main one**, and credit its builders by name.
 - **Notice a statute renamed rather than repealed.** "Area needing redevelopment" is where "blighted" went, and condemnation is still on the list of acquisition methods.

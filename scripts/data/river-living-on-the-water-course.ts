@@ -103,7 +103,7 @@ A stove is reliable and a fire is not, because dry fuel is not guaranteed and op
         {
           prompt: "Why does a multi-state river journey complicate fishing?",
           answer:
-            "Licences are per state, and rules on species, size, season, method and consumption advisories all vary between them.",
+            "Licenses are per state, and rules on species, size, season, method and consumption advisories all vary between them.",
         },
       ],
     },
@@ -143,7 +143,7 @@ A stove is reliable and a fire is not, because dry fuel is not guaranteed and op
           {
             prompt: "What complicates fishing on a journey crossing several states?",
             options: [
-              "Licences are per state, and species, size, season and method rules vary between them",
+              "Licenses are per state, and species, size, season and method rules vary between them",
               "A federal permit is required for any fishing on a navigable interstate waterway",
               "Commercial traffic has exclusive rights to fish stocks within the navigation channel",
               "Fishing is prohibited outright within levee districts along most of the corridor",

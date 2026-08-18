@@ -616,7 +616,7 @@ Spoilers and gerrymanders look like different problems and are the same one wear
             prompt: "Duverger's law, stated correctly, holds that first-past-the-post:",
             options: [
               "Guarantees exactly two parties",
-              "Favours a two-party system",
+              "Favors a two-party system",
               "Causes many small parties",
               "Has no effect on parties",
             ],

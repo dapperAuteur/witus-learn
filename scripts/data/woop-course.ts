@@ -1582,7 +1582,7 @@ Answer with one word. Spelling is forgiving.`,
             options: [
               "There is honestly no real difference between the two at all",
               "A label is a word; elaboration is the vivid room, hour, and feeling",
-              "Labelling is the research-backed method; elaboration is folk advice",
+              "Labeling is the research-backed method; elaboration is folk advice",
               "Elaboration means writing out at least 500 full words on it",
             ],
             correctIndex: 1,

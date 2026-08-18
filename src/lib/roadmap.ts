@@ -981,12 +981,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   accessibility affordance and the no-JS fallback. Tenant-scoped: a pin only appears if the tenant
   publishes the course it points to. Linked from /explore (\`Spin the globe\`). Pins are a curated set
   of real course locations (\`src/lib/globe-pins.ts\`); coordinates are ordinary city/site coordinates,
-  several reused from the verified How the Tools Travelled map, nothing invented.
+  several reused from the verified How the Tools Traveled map, nothing invented.
 - ✅ **Map time-slider** (plans/44 Option B). The map lesson gains an optional \`year\` on any marker,
   line, or polygon; when present, a Play button and a year slider appear and the map reveals elements
   as of the chosen year, so a learner watches the pins light up over time (diffusion). An element with
   no year always shows, so every existing map renders exactly as before. Play steps through the
-  distinct event years, one cohort at a time. First use: **How the Tools Travelled**, where the six
+  distinct event years, one cohort at a time. First use: **How the Tools Traveled**, where the six
   dated doctrinal markers now light up in order, 1917 Buchanan BEFORE the 1949 federal upstream, which
   is the course's own chronology point (an instrument that arrives after a practice is not its cause).
   All six years are verified from the course text. Next in plans/45: the explore-map globe.
@@ -1135,7 +1135,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   **Washington DC** (where the instrument was blessed), **Philadelphia** (the university and the
   block), **Pittsburgh** (where the playbook was written), **Baltimore** (the whole chain, 1910
   ordinance → covenant → redlining → renewal) and **Seattle** (the modern bookend), and **two
-  capstones** close it: *How the Tools Travelled* tests the cross-city connections as claims rather
+  capstones** close it: *How the Tools Traveled* tests the cross-city connections as claims rather
   than asserting them, and *Exported* asks what South Africa and Nazi Germany actually read of
   American race law, keeping those two on **separate evidentiary footings** and stating in its own
   text that it does not equate outcomes.

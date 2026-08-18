@@ -137,7 +137,7 @@ export const MONODRAMA_PERFORMING_COURSE: AuthoredCourse = {
             prompt: "What does the course call the single most useful exercise, available immediately?",
             options: [
               "Reading the whole piece aloud, standing, in one go, timed",
-              "Memorising the opening five minutes word for word",
+              "Memorizing the opening five minutes word for word",
               "Recording a video of yourself and watching it back",
               "Performing the first draft to a friend for feedback",
             ],
@@ -462,7 +462,7 @@ Linklater's *Freeing the Natural Voice* (1976) is the standard reference for the
             prompt: "What should a performer do when they blank?",
             options: [
               "Stop, breathe, and go to the want, without apologising",
-              "Apologise briefly to the audience and restart the section",
+              "Apologize briefly to the audience and restart the section",
               "Skip ahead to the next section and continue as normal",
               "Ask the technical operator to hold while they find the line",
             ],
@@ -661,7 +661,7 @@ If you have one usable effect, spend it on the turn.
 
 **Voice is athletic.** Support from the diaphragm. Mark breath before memorizing. Nerves narrow range and speed you up, and the pause after a hard line is where the audience does the work.
 
-**Memorise wants, turns and transitions before words.** Knowing the want gives you a detour; knowing the words gives you one path. When you blank: stop, breathe, go to the want, do not apologize.
+**Memorize wants, turns and transitions before words.** Knowing the want gives you a detour; knowing the words gives you one path. When you blank: stop, breathe, go to the want, do not apologize.
 
 **Solo rehearsal entrenches.** Record and watch in three focused passes. Ask two narrow questions. Change one variable. Leave it alone. Trust the structure over your enthusiasm.
 

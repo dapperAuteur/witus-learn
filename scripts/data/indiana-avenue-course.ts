@@ -654,7 +654,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 - **Early 1960s.** The state began purchasing homes and commercial buildings in the highway right of way (Historic Indianapolis, n.d.).
 - **Late 1960s to early 1970s.** I-65 and I-70 were built through the city. Historic Indianapolis dates the I-65 work to **1968 to 1971** (Historic Indianapolis, n.d.).
 - **1975.** The **inner loop**, the roughly 4.5-mile downtown ring formed by I-65 and I-70, opened (WRTV, n.d.; Indianapolis Monthly, 2020).
-- Neighbourhoods named in reporting as cut by the two interstates include the Southside, Fountain Square, Fletcher Place, Martindale-Brightwood, the Old Northside, St. Joseph, and **Ransom Place** (WRTV, n.d.; Historic Indianapolis, n.d.).
+- Neighborhoods named in reporting as cut by the two interstates include the Southside, Fountain Square, Fletcher Place, Martindale-Brightwood, the Old Northside, St. Joseph, and **Ransom Place** (WRTV, n.d.; Historic Indianapolis, n.d.).
 
 **The figure everyone quotes, handled properly.** You will see "17,000 residents displaced and 8,000 buildings demolished" attached to Indianapolis interstate construction. **WRTV attributes that figure to an Indianapolis Star article of October 15, 1976** (WRTV, n.d.). Three cautions before you use it:
 1. **It is city-wide**, covering roughly 31 miles of interstate inside I-465 including the inner loop. **It is not an Indiana Avenue figure.**
@@ -1310,7 +1310,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
 
 **The habits this builds, which transfer to any American county.** Every county has an assessor and most have a GIS. **The names of the tools change and the four facts do not: parcel number, owner of record, assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a county database. Practise on institutional and commercial addresses. This is the same rule the method course applied to tourist homes.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a county database. Practice on institutional and commercial addresses. This is the same rule the method course applied to tourist homes.
 
 ## Sources
 - City of Indianapolis and Marion County. (n.d.-a). *MapIndy*. https://maps.indy.gov/MapIndy/
@@ -1487,7 +1487,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
             options: [
               "Formally adopted in 2023 and now being implemented",
               "Announced 2023, still unfinished, nothing yet adopted",
-              "Cancelled outright by the city council in 2024",
+              "Canceled outright by the city council in 2024",
               "Adopted directly by the Indiana General Assembly",
             ],
             correctIndex: 1,
@@ -1557,7 +1557,7 @@ Read those numbers next to lesson 1's numbers and you have this course in one li
           {
             prompt: "Name three things a 360 tour of a place cannot show you.",
             options: [
-              "Colour, texture, and scale",
+              "Color, texture, and scale",
               "A date, an owner, an intention, and absence",
               "Buildings, streets, and signs",
               "Weather, season, and time of day",
@@ -1704,7 +1704,7 @@ A short, checkable piece in which every sentence is either something you read in
 - Test a historical thesis against a chronology, and report it when the thesis loses.
 - Distinguish a claim about a document from a claim about the world. **"The Green Book lists 30 Avenue businesses" is the first. "There were 30 Black businesses on the Avenue" is the second, and it is false.**
 - Find the four facts about any parcel in any American county.
-- Recognise that a plan not yet adopted is where a citizen has the most leverage.
+- Recognize that a plan not yet adopted is where a citizen has the most leverage.
 
 **What this course deliberately did not cover, and why.**
 - **Crispus Attucks High School** appears here as a neighbor and as the school the NAACP fought to prevent and then took pride in. **It gets its own course**, because a segregated school, a 1955 state championship, and what the building is today is more than a paragraph can carry.

@@ -530,7 +530,7 @@ Pew Research Center. (n.d.). *Why survey response rates matter*. https://www.pew
 
 Suppose districts with more of some public program show better outcomes on some measure. Before concluding the program works, ask:
 
-- Did the program go to places that were **already** doing better, or already doing worse? Programmes are rarely assigned at random, and how they were assigned usually explains a lot.
+- Did the program go to places that were **already** doing better, or already doing worse? Programs are rarely assigned at random, and how they were assigned usually explains a lot.
 - Did the same places also change something else at the same time?
 - Is the measured outcome the thing you care about, or a proxy that could move independently of it?
 
@@ -596,7 +596,7 @@ National Institutes of Health. (n.d.). *Understanding clinical studies*. https:/
             ],
             correctIndex: 0,
             explanation:
-              "Programmes are almost never assigned at random. If they went to places already improving, or already struggling, the assignment rule explains part or all of the gap. How the treatment was assigned is the question that has to be answered first.",
+              "Programs are almost never assigned at random. If they went to places already improving, or already struggling, the assignment rule explains part or all of the gap. How the treatment was assigned is the question that has to be answered first.",
             sourceLessonSlug: "correlation-and-causation",
           },
           {

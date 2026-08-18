@@ -838,7 +838,7 @@ And the rule, because a real choice is near: whether an LLC is right for you, in
       slug: "usf-s-corp-election",
       title: "11 · The S-corp is a tax election, not an entity type",
       section: "Section 3 · The LLC and the S-corp election",
-      body: `This is the single most misunderstood point in the whole subject, and it gets its own lesson because getting it wrong quietly corrupts everything else on the menu. Course 1 planted the sentence; this course drives it home in the middle of the real forms, where it does the most work. Memorise it:
+      body: `This is the single most misunderstood point in the whole subject, and it gets its own lesson because getting it wrong quietly corrupts everything else on the menu. Course 1 planted the sentence; this course drives it home in the middle of the real forms, where it does the most work. Memorize it:
 
 **An S-corp is not a type of entity. It is a federal tax election that an eligible entity makes.**
 

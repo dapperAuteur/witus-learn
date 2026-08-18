@@ -1607,7 +1607,7 @@ This is the core of the capstone. If the two projects classify your country diff
 1. **Current reports, not memory.** Every classification ties to a named report and year you actually read. No score from this course, no number from recall.
 2. **No invented figure, category, or quote.** If you cannot source it, it does not go in, or it goes in flagged "not verified."
 3. **Explain the gap; do not resolve it.** The deliverable is the explanation via the four reasons, not a verdict on which project is right.
-4. **Neutral on the country.** Analyse institutions from evidence; do not judge a nation or advocate a political side.
+4. **Neutral on the country.** Analyze institutions from evidence; do not judge a nation or advocate a political side.
 5. **Keep the name apart from the classification.** The country's self-description is a claim, not your finding.
 
 ## What good looks like

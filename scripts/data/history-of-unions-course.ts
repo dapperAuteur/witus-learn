@@ -97,7 +97,7 @@ The honest one. Can you be fired? Sued? Blacklisted? Arrested? Deported? Killed?
 
 ---
 
-Practise on a country you already live in or have heard of. You will not have the answers yet. Notice which of the four you cannot answer, that is the shape of what you are about to learn.
+Practice on a country you already live in or have heard of. You will not have the answers yet. Notice which of the four you cannot answer, that is the shape of what you are about to learn.
 
 A note on evidence, since we are about to spend a course on a subject people argue about. **Labor history is politically contested.** Both "unions built the middle class" and "unions destroyed American industry" are things adults will say to you with total confidence. This course's rule, which you should steal: *every number gets a year and a source; where the record genuinely does not settle a question, we say that it does not, rather than picking the version we like.* You will see that rule get its hardest test in the very next section.
 

@@ -159,7 +159,7 @@ The **declarative theory** is Montevideo's own position. It holds that **stateho
 
 ## The constitutive theory: recognition helps MAKE the state
 
-The **constitutive theory** holds the opposite. It says that **an entity becomes a state, as a full subject of international law, only insofar as it is RECOGNISED by existing states.** Recognition does not acknowledge a fact; it helps constitute the fact. On this view, meeting the four criteria is necessary but not enough. Until the community of states accepts you, you are not yet fully a state in the eyes of the law, however effectively you govern. **The constitutivist looks at the same effective entity and says: it may govern, but whether it is a STATE depends on whether others treat it as one.**
+The **constitutive theory** holds the opposite. It says that **an entity becomes a state, as a full subject of international law, only insofar as it is RECOGNIZED by existing states.** Recognition does not acknowledge a fact; it helps constitute the fact. On this view, meeting the four criteria is necessary but not enough. Until the community of states accepts you, you are not yet fully a state in the eyes of the law, however effectively you govern. **The constitutivist looks at the same effective entity and says: it may govern, but whether it is a STATE depends on whether others treat it as one.**
 
 ## The two theories, side by side
 
@@ -835,8 +835,8 @@ Contested situations are not all alike. It helps to sort them by where the effec
 | Pattern | The gap |
 |---|---|
 | **Functions, little or no recognition** | Effective de facto control, but few or no states recognize it as independent |
-| **Recognised by many, not by all** | A large number of states recognize it; others, often including a claimant state, do not |
-| **Recognised by one, or a few** | Recognised only by a single state or a small group, disputed by most |
+| **Recognized by many, not by all** | A large number of states recognize it; others, often including a claimant state, do not |
+| **Recognized by one, or a few** | Recognized only by a single state or a small group, disputed by most |
 
 **Read these as patterns, not rankings.** They describe how the recognition disagreement is distributed, not who deserves what. Now, cases, each stated under the three-part rule.
 

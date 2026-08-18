@@ -385,7 +385,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
 
 **Wall one: job reservation, the statutory color bar.** The **Mines and Works Act 12 of 1911** and, decisively, its **1926 Amendment** (known plainly as the "Colour Bar Act") reserved certificates of competency for skilled mine work, blasting, engine driving, for white and colored workers (South African History Online). The **Industrial Conciliation Act 28 of 1956** went further: its **section 77** let the minister reserve whole classes of work for a specified race, in any industry. A Black worker could be barred from a job not by an employer's prejudice but by a government notice.
 
-**And who demanded the color bar? Organised white labor.** In 1922, when mine owners moved to replace expensive white workers with cheaper Black workers, white miners rose in the armed **Rand Revolt**, some marched under the banner, preserved in the photographic record, **"Workers of the World, Unite and Fight for a White South Africa"** (SAHO). The Smuts government crushed the rising with troops, aircraft and artillery; well over a hundred people died. But the white miners lost the battle and won the war: the government elected in 1924 adopted a "civilised labour" policy, and the 1926 Colour Bar Act wrote their demand into law. The anchor taught you that American unions spent decades excluding Black workers from their own ranks. South Africa's version is the same lesson at maximum voltage: **a union is a machine for the people inside it, and it can be aimed at the people outside it.**
+**And who demanded the color bar? Organized white labor.** In 1922, when mine owners moved to replace expensive white workers with cheaper Black workers, white miners rose in the armed **Rand Revolt**, some marched under the banner, preserved in the photographic record, **"Workers of the World, Unite and Fight for a White South Africa"** (SAHO). The Smuts government crushed the rising with troops, aircraft and artillery; well over a hundred people died. But the white miners lost the battle and won the war: the government elected in 1924 adopted a "civilised labour" policy, and the 1926 Colour Bar Act wrote their demand into law. The anchor taught you that American unions spent decades excluding Black workers from their own ranks. South Africa's version is the same lesson at maximum voltage: **a union is a machine for the people inside it, and it can be aimed at the people outside it.**
 
 **Wall two: the pass.** Pass laws, consolidated by the bluntly misnamed **Natives (Abolition of Passes and Co-ordination of Documents) Act 67 of 1952** into a single reference book, the "dompas", controlled where an African worker could live, travel and take work. At their peak, pass-law prosecutions ran to **hundreds of thousands per year** (SAHO). For labor law the pass did double duty: it made workers *removable* (fired often meant expelled from the urban area), and, per Lesson 3, carrying one was exactly what defined you out of the word "employee."
 
@@ -516,7 +516,7 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
             prompt: "Who demanded the statutory colour bar of 1926?",
             options: [
               "Mine owners, in order to cut costs by fixing the rate for all certificated work",
-              "Organised white labor, after the armed 1922 Rand Revolt against cheaper Black substitutes",
+              "Organized white labor, after the armed 1922 Rand Revolt against cheaper Black substitutes",
               "The British colonial office, as one of the conditions of the 1910 Union settlement",
               "African unions, as a compromise in exchange for recognition on the new councils",
             ],
@@ -996,7 +996,7 @@ Add the **Basic Conditions of Employment Act 75 of 1997** (hours, leave, notice)
     },
     {
       slug: "sa-labour-broking",
-      title: "10 · Labour broking: the outside-the-category move returns",
+      title: "10 · Labor broking: the outside-the-category move returns",
       section: "Section 4 · After 1994, the paper and the reality",
       body: `By now you can smell this track's signature move from a page away. The United States does it with **misclassification**, call the worker an "independent contractor" and the NLRA no longer sees her. Mexico did it with the **protection contract**, a union that belongs to the employer. Poland does it with the **junk contract**, a civil-law form that is not "employment." Here is South Africa's version, and the rhyme is exact: **labor broking**.
 
@@ -1486,7 +1486,7 @@ The same building the LRA built, with a side door that lets the work in while le
           {
             prompt: "Which of these is something the commission did NOT do?",
             options: [
-              "Criticise the police operation and the planning behind the deployment",
+              "Criticize the police operation and the planning behind the deployment",
               "Convict individuals or award compensation; an inquiry is not a court",
               "Recommend an inquiry into the National Commissioner's fitness for office",
               "Make findings about the conduct of NUM and AMCU during the strike",

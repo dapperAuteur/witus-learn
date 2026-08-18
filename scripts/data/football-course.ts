@@ -108,7 +108,7 @@ Compare that to a basketball court or a tennis court, where the dimensions are e
 | Penalty area, from the goal line | 16.5 m (18 yds) |
 | Goal area ("six-yard box"), from the goal line | 5.5 m (6 yds) |
 | Penalty mark, from the goal line | 11 m (12 yds) |
-| Centre circle radius (and the distance opponents must retreat at most restarts) | 9.15 m (10 yds) |
+| Center circle radius (and the distance opponents must retreat at most restarts) | 9.15 m (10 yds) |
 
 That last number, **9.15 m / 10 yds**, is worth memorizing. It is the "keep back" distance at kick-offs, corners, and free kicks, and it is the radius of the center circle. The circle is not decoration; it is a ruler.
 
@@ -158,7 +158,7 @@ Everything beyond "one goalkeeper" is **not law, it is choice.** The Laws do not
 **The goalkeeper.** The only player who may handle the ball, and **only inside their own penalty area** (IFAB, 2026, Law 12). Outside it, the goalkeeper is subject to exactly the same handball restrictions as anyone else. A modern goalkeeper is also expected to be the team's first passer and to sweep up behind a high defensive line.
 
 **Defenders (the back line).**
-- **Centre-backs** (usually two, sometimes three). Defend the middle, win headers, start attacks with passes out from the back.
+- **Center-backs** (usually two, sometimes three). Defend the middle, win headers, start attacks with passes out from the back.
 - **Full-backs** (left and right). Defend the flanks and, in most modern systems, provide the team's width when attacking. Physically, the hardest running job on the pitch.
 - **Wing-backs.** A full-back in a system with three center-backs, expected to cover the entire touchline, defending and attacking.
 
@@ -169,7 +169,7 @@ Everything beyond "one goalkeeper" is **not law, it is choice.** The Laws do not
 - **Wingers.** Attack from the flanks, either to cross or to cut inside and shoot.
 
 **Forwards.**
-- **Centre-forward / striker (the "9")**. Scores, holds the ball up with their back to goal, and (in the modern game) is the first defender, because pressing starts at the front.
+- **Center-forward / striker (the "9")**. Scores, holds the ball up with their back to goal, and (in the modern game) is the first defender, because pressing starts at the front.
 - **False nine.** A center-forward who deliberately drops deep, dragging a center-back out of position and opening a hole for a midfielder to run into.
 
 **About those numbers.** "The 6," "the 8," "the 10," "the 9" come from the old habit of assigning shirt numbers 1-11 by position. The **shirt numbers are gone**, squads now number into the nineties, but **the positional numbers survive as vocabulary**, and coaches, scouts and commentators still use them constantly. If someone says a team "has no proper 6," they mean it has no holding midfielder.
@@ -1586,7 +1586,7 @@ The single most under-used weapon in amateur football. When the opposition has s
 
 **The counter-argument, stated fairly.** There is an entire, respectable school of football, direct play, second balls, set pieces, pressing high and going long, that wins matches and trophies. Possession is **not** a virtue in itself. A team that has 70% of the ball and does nothing with it has simply found an elaborate way to pass sideways. **What matters is what possession produces**: shots from good positions (Lesson 7).
 
-:::reveal Your opponents have crowded every player over to your right wing to trap you. What is the most valuable pass on the pitch, and why? ||| A **switch of play**, a long, flat pass to the completely empty **left** side. Defences are at their most disorganised while moving sideways, and forcing the whole block to sprint across the pitch and re-set is what creates the gap. Grinding them to one side and then punishing the other is the point of moving the ball at all.
+:::reveal Your opponents have crowded every player over to your right wing to trap you. What is the most valuable pass on the pitch, and why? ||| A **switch of play**, a long, flat pass to the completely empty **left** side. Defenses are at their most disorganised while moving sideways, and forcing the whole block to sprint across the pitch and re-set is what creates the gap. Grinding them to one side and then punishing the other is the point of moving the ball at all.
 
 ## Sources
 - International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
@@ -1822,7 +1822,7 @@ Almost everybody watches the ball. The ball is the least informative object on t
             ],
             correctIndex: 1,
             explanation:
-              "Defences are at their most disorganised while moving sideways. Grind them to one side, then punish the other. The switch is the single most under-used weapon in amateur football.",
+              "Defenses are at their most disorganised while moving sideways. Grind them to one side, then punish the other. The switch is the single most under-used weapon in amateur football.",
             sourceLessonSlug: "football-in-possession",
           },
           {
@@ -1944,7 +1944,7 @@ Human beings have been kicking objects at, over, and past each other for a very 
 
 **Cuju.** The oldest ball game FIFA itself recognises is **cuju** (蹴鞠, literally "kick ball"), played in China. FIFA's position is careful and worth quoting in its own terms: cuju is **"the earliest form of football for which there is scientific evidence"** (FIFA, n.d.). During the **Han dynasty (206 BCE - 220 CE)**, cuju spread from the army to the royal court and the upper classes, and the games were **standardized, with established rules** (FIFA, n.d.).
 
-Notice what that means. **Standardised, ruled ball-kicking is roughly two thousand years older than England.** The English contribution is real, but it is a contribution to a very long story, not the first page of it.
+Notice what that means. **Standardized, ruled ball-kicking is roughly two thousand years older than England.** The English contribution is real, but it is a contribution to a very long story, not the first page of it.
 
 **Other games, honestly stated.** Many cultures played ball games that resemble football to a greater or lesser degree, among them **kemari** in Japan, **episkyros** and **harpastum** in the Greek and Roman worlds, and a family of rough, large-scale **"mob football"** games played across medieval Europe, in which whole villages contested a ball across open country with few rules and frequent injuries.
 
@@ -3317,7 +3317,7 @@ Rates are set by **each league or association**, not nationally, so the honest w
 
 **Recreational league:**
 
-| Age group | Centre referee | Assistant referee |
+| Age group | Center referee | Assistant referee |
 | --- | --- | --- |
 | U9-U10 | $30 | $15 |
 | U11-U12 | $35 | $20 |
@@ -3327,7 +3327,7 @@ Rates are set by **each league or association**, not nationally, so the honest w
 
 **Higher-level competitive leagues (NCSL / ECNL-RL / EDP):**
 
-| Age group | Centre referee | Assistant referee |
+| Age group | Center referee | Assistant referee |
 | --- | --- | --- |
 | U11-U12 | $70 | $35-40 |
 | U13-U14 | $75 | $35-45 |
@@ -3400,11 +3400,11 @@ It starts free and gets progressively more demanding:
 | --- | --- |
 | **Introduction to Grassroots Coaching** | A short, **free** online module. This is the front door, anyone can walk through it today. |
 | **Grassroots licenses: 4v4, 7v7, 9v9, 11v11** | Short (around two-hour) courses, each tied to a game format. Available online and in person. **Two must be taken in person**, and one of those in-person courses must be the **11v11**, before you can move up. |
-| **National D Licence** | The **first formal license** and the step from grassroots into competitive coaching, a multi-week course combining in-person sessions, virtual meetings, assignments and mentoring with a licensed U.S. Soccer educator. |
-| **National C Licence** | Aimed at coaching in the roughly U13-U17 environment. |
-| **National B Licence** | A months-long course focused on player and team development in a performance environment. Requires holding the C for a period, several years' coaching experience, and an active coaching role with access to 11v11 training. |
-| **National A Licence** | Typically split into **A-Youth** (developing the future professional player) and **A-Senior** (high-performance senior environments). |
-| **Pro Licence** | The top qualification, for coaching at the professional level (MLS, NWSL, USL, national teams). |
+| **National D License** | The **first formal license** and the step from grassroots into competitive coaching, a multi-week course combining in-person sessions, virtual meetings, assignments and mentoring with a licensed U.S. Soccer educator. |
+| **National C License** | Aimed at coaching in the roughly U13-U17 environment. |
+| **National B License** | A months-long course focused on player and team development in a performance environment. Requires holding the C for a period, several years' coaching experience, and an active coaching role with access to 11v11 training. |
+| **National A License** | Typically split into **A-Youth** (developing the future professional player) and **A-Senior** (high-performance senior environments). |
+| **Pro License** | The top qualification, for coaching at the professional level (MLS, NWSL, USL, national teams). |
 
 **Outside the US**, the equivalent ladder in Europe runs under **UEFA's coaching convention**, with licenses commonly labeled **C → B → A → Pro**, administered by each **national association** (The FA in England, the DFB in Germany, and so on). **The exact names, prerequisites and costs are set by that national association, look them up at the source for the country you are in.** Do not take a course's word for it, including this one.
 
@@ -3421,12 +3421,12 @@ It starts free and gets progressively more demanding:
 
 **How to actually be good at it, briefly.**
 
-- **Maximise touches.** The single most common mistake in youth coaching is drills in which twelve children stand in a line and one child touches the ball. **Small-sided games** with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.
+- **Maximize touches.** The single most common mistake in youth coaching is drills in which twelve children stand in a line and one child touches the ball. **Small-sided games** with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.
 - **Let them play.** Children learn football by playing football. A session that is 80% talking is a session about you.
 - **Coach the decision, not just the outcome.** "Good pass" teaches nothing. "You saw the switch was on, good decision" teaches the thing you actually want repeated.
 - **Safeguarding is not paperwork.** Background checks, certification, never being alone with a child, knowing your club's reporting procedure. It is the **most important part of the job** and the part that ends careers when it is neglected. Take it seriously from your very first session.
 
-:::reveal You are 16 and want to start coaching. What is the very first, free step, and what is the constraint on climbing past the grassroots level? ||| The **free online "Introduction to Grassroots Coaching" module**, that is the front door, and you can do it today. Then the grassroots licenses (**4v4, 7v7, 9v9, 11v11**). The constraint: **two of the grassroots courses must be taken IN PERSON, and one of those must be the 11v11 course**, before you can progress to the **National D Licence**, the first formal license and the step into competitive coaching.
+:::reveal You are 16 and want to start coaching. What is the very first, free step, and what is the constraint on climbing past the grassroots level? ||| The **free online "Introduction to Grassroots Coaching" module**, that is the front door, and you can do it today. Then the grassroots licenses (**4v4, 7v7, 9v9, 11v11**). The constraint: **two of the grassroots courses must be taken IN PERSON, and one of those must be the 11v11 course**, before you can progress to the **National D License**, the first formal license and the step into competitive coaching.
 
 ## Sources
 - U.S. Soccer. (2018, August 15). *7v7, 9v9 and 11v11 online courses complete new U.S. Soccer grassroots coaching pathway*. https://www.ussoccer.com/stories/2018/08/7v7-9v9-and-11v11-online-courses-complete-new-us-soccer-grassroots-coaching-pathway
@@ -3436,12 +3436,12 @@ It starts free and gets progressively more demanding:
         {
           prompt: "What is the first step on the U.S. Soccer coaching ladder, and what does it cost?",
           answer:
-            "The 'Introduction to Grassroots Coaching' online module, it is free and short. From there: the 4v4, 7v7, 9v9 and 11v11 grassroots licenses, then the National D Licence.",
+            "The 'Introduction to Grassroots Coaching' online module, it is free and short. From there: the 4v4, 7v7, 9v9 and 11v11 grassroots licenses, then the National D License.",
         },
         {
           prompt: "What is the most common mistake in youth coaching?",
           answer:
-            "Drills where twelve children queue and one touches the ball. Maximise touches, small-sided games with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.",
+            "Drills where twelve children queue and one touches the ball. Maximize touches, small-sided games with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.",
         },
       ],
     },
@@ -3619,7 +3619,7 @@ A professional club fields eleven players. It **employs**, directly or through t
 
 **Sports medicine and performance.** Physiotherapists, athletic trainers, doctors, sports scientists, strength and conditioning coaches, nutritionists, and (a fast-growing area) **rehabilitation** and **injury-prevention** specialists. These are qualified professions with real training routes, and they exist at every level from a college program upward.
 
-**Performance analysis.** The person who codes every match, tags every event, builds the opposition report, and hands the coach the clips that decide the team talk. **This is now a standard role at professional clubs**, and it is one of the most accessible ways in for a young person who is good with a laptop, because the entry test is a **portfolio**, not a CV. **Analyse a match. Write it up. Publish it. Do it again.** Do that fifty times and you have something almost nobody else applying has.
+**Performance analysis.** The person who codes every match, tags every event, builds the opposition report, and hands the coach the clips that decide the team talk. **This is now a standard role at professional clubs**, and it is one of the most accessible ways in for a young person who is good with a laptop, because the entry test is a **portfolio**, not a CV. **Analyze a match. Write it up. Publish it. Do it again.** Do that fifty times and you have something almost nobody else applying has.
 
 **Data and recruitment analytics.** Clubs employ statisticians and data scientists to value players and model outcomes (expected goals, from Lesson 7, is the most famous product of this field). If you like maths and football, this is a real, growing, well-paid job, and it did not exist twenty-five years ago.
 
@@ -3662,7 +3662,7 @@ You are extremely unlikely to be paid to play football. You are **very likely in
         {
           prompt: "What is the entry test for a job in football analysis or scouting?",
           answer:
-            "A PORTFOLIO, not a CV. Analyse a match, write it up, publish it, repeat. Write scouting reports on players in your own local league. Nobody will stop you, and it is literally what the job is.",
+            "A PORTFOLIO, not a CV. Analyze a match, write it up, publish it, repeat. Write scouting reports on players in your own local league. Nobody will stop you, and it is literally what the job is.",
         },
         {
           prompt: "What dominates the costs of a lower-league club, and what is the structural trap?",
@@ -3729,10 +3729,10 @@ You are extremely unlikely to be paid to play football. You are **very likely in
           {
             prompt: "What is the free first step on the U.S. Soccer coaching ladder?",
             options: [
-              "The National D coaching Licence, taken in person",
+              "The National D coaching License, taken in person",
               "The 'Introduction to Grassroots Coaching' online module",
-              "The more advanced UEFA B coaching Licence course",
-              "The elite professional-level Pro Licence course",
+              "The more advanced UEFA B coaching License course",
+              "The elite professional-level Pro License course",
             ],
             correctIndex: 1,
             explanation:
@@ -3762,7 +3762,7 @@ You are extremely unlikely to be paid to play football. You are **very likely in
             ],
             correctIndex: 1,
             explanation:
-              "Maximise touches. Children learn football by playing football, and a session that is 80% talking is a session about you.",
+              "Maximize touches. Children learn football by playing football, and a session that is 80% talking is a session about you.",
             sourceLessonSlug: "football-coaching-badges",
           },
           {

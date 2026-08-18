@@ -266,7 +266,7 @@ The commonest failure: **the setup that explains the setup.** "So today I want t
             options: [
               "Post consistently enough that the system learns your account",
               "Build something that survives the middle: an audience and body of work you control",
-              "Specialise in whichever format the platforms currently favor",
+              "Specialize in whichever format the platforms currently favor",
               "Match your output to the length the container is optimised for",
             ],
             correctIndex: 1,

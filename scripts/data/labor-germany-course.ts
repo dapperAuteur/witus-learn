@@ -2000,7 +2000,7 @@ That last one is the whole point of the Workers' Rights track. Germany is one an
             ],
             correctIndex: 1,
             explanation:
-              "Behaviour is the language that never lies. But note the limit: 'firms try to avoid it' and 'it does measurable harm' are different claims, and only the first survives the data.",
+              "Behavior is the language that never lies. But note the limit: 'firms try to avoid it' and 'it does measurable harm' are different claims, and only the first survives the data.",
             sourceLessonSlug: "germany-two-critiques-and-your-verdict",
           },
           {

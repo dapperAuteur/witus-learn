@@ -887,7 +887,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
           {
             prompt: "Which international instruments carry the definitional fight SEWA started in 1972?",
             options: [
-              "The USMCA Rapid Response Labour Mechanism, enforced through trade sanctions",
+              "The USMCA Rapid Response Labor Mechanism, enforced through trade sanctions",
               "The ILO Home Work Convention, 1996 (No. 177) and Recommendation 204 of 2015",
               "The Geneva Conventions on the treatment of prisoners and civilians in war",
               "The Paris Agreement on limiting global greenhouse-gas emissions worldwide",
@@ -966,7 +966,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
             prompt: "What one-line verdict on SEWA does this course ask you to carry forward?",
             options: [
               "SEWA ultimately failed because it never once managed to sign a collective contract",
-              "Organising the employer-less works and SEWA shows how, but bargaining needs an employer",
+              "Organizing the employer-less works and SEWA shows how, but bargaining needs an employer",
               "SEWA is really a political party in waiting, biding its time before contesting polls",
               "SEWA's whole model only works inside the single home state of Gujarat, nowhere else",
             ],
@@ -1068,7 +1068,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 
 **The definitions (Code on Social Security, 2020, § 2).** A **"gig worker"** is a person who earns from work arrangements **"outside of traditional employer-employee relationship."** A **"platform worker"** is a gig worker whose arrangement runs through an online platform. An **"aggregator"** is the digital intermediary, the app, connecting buyers of a service with its providers. Read the gig-worker definition twice, because something remarkable is happening in it: **the statute defines the worker by the absence of an employer.** Everything lesson 2's cathedral assumed, this definition negates, and instead of pretending the category doesn't exist, the law finally names it. It is lesson 1's ~90%, or rather its app-mediated sliver, written into § 2.
 
-**The money.** The Code directs that schemes for gig and platform workers be funded in part by the aggregators themselves: a contribution of **1-2% of an aggregator's annual turnover, capped at 5% of the amount paid or payable to its gig and platform workers**, into a social-security fund. Registration runs through **e-Shram**, the national database of unorganised workers launched in **August 2021**, which by **July 2025** recorded **over 30.9 crore (309 million) registered workers** (Press Information Bureau, 2025). Pause on that number the way this course has taught you to: it is a count of *registrations on a self-declaration portal*, not of benefits delivered, but as a measure of how many people raised their hand when the state finally asked who works informally, it is staggering. Recognise the playbook, too: registration, identity, a welfare fund attached to the worker rather than to any employer, **the SEWA logic of lesson 7, run at national scale by the state.**
+**The money.** The Code directs that schemes for gig and platform workers be funded in part by the aggregators themselves: a contribution of **1-2% of an aggregator's annual turnover, capped at 5% of the amount paid or payable to its gig and platform workers**, into a social-security fund. Registration runs through **e-Shram**, the national database of unorganised workers launched in **August 2021**, which by **July 2025** recorded **over 30.9 crore (309 million) registered workers** (Press Information Bureau, 2025). Pause on that number the way this course has taught you to: it is a count of *registrations on a self-declaration portal*, not of benefits delivered, but as a measure of how many people raised their hand when the state finally asked who works informally, it is staggering. Recognize the playbook, too: registration, identity, a welfare fund attached to the worker rather than to any employer, **the SEWA logic of lesson 7, run at national scale by the state.**
 
 **What the recognition is not.** The Code gives gig workers *social security schemes*, not a minimum wage (that lives in the Code on Wages, keyed to employment), not working-time limits, not collective-bargaining rights. India has, in effect, answered the question the United States has litigated for a decade, *is a gig worker an employee?*, by statute, and the answer is **"no, but they get a third category with welfare attached."** Compare the anchor's misclassification wars: the American fight is over pushing gig workers *into* the employee box; India built a box *between* employee and invisible. Advocates of the approach call it realism, coverage without a definitional war. Critics call it entrenchment, informality, now with a statutory blessing and a discount social-security rate. Both readings are live; this course holds them open.
 
@@ -1752,7 +1752,7 @@ Both sentences can be true at once, and seeing how is a skill this course has be
             options: [
               "Attach identity, registration and protection to the person, not to a job or employer",
               "Fund absolutely everything entirely through the members' own trade-union dues alone",
-              "Organise only the formal-sector workers, and never any of the informal workers at all",
+              "Organize only the formal-sector workers, and never any of the informal workers at all",
               "Replace the entire state apparatus with member-owned worker cooperatives everywhere",
             ],
             correctIndex: 0,

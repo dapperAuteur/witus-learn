@@ -1040,7 +1040,7 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
             prompt: "The course describes a pipeline from Mandeville onto maps. What are its steps?",
             options: [
               "Text to text to picture to fact",
-              "Rumour to sermon to statute to map",
+              "Rumor to sermon to statute to map",
               "Observation to sketch to engraving to archive",
               "Voyage to logbook to chart to atlas",
             ],

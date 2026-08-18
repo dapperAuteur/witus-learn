@@ -1738,10 +1738,10 @@ These are the specific, checkable facts this course wants in your head, the ones
           {
             prompt: "Running Question 1 across Poland: what is the striking pairing in the answer 'today'?",
             options: [
-              "Organising is banned, yet density is above 30%",
+              "Organizing is banned, yet density is above 30%",
               "Everyone may organize, yet density is only about 9%",
               "Only farmers may organize, and density is ~30%",
-              "Organising still requires Party approval today",
+              "Organizing still requires Party approval today",
             ],
             correctIndex: 1,
             explanation:

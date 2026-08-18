@@ -47,7 +47,7 @@ Second: **know your last certain position.** When something stops making sense, 
     {
       slug: "when-the-plan-fails",
       title: "2 · When the plan fails",
-      section: "Section 2 · Judgement under pressure",
+      section: "Section 2 · Judgment under pressure",
       body: `Every expedition's plan is wrong. The question is only how, and what happens next.
 
 ## Three failures that recur
@@ -103,7 +103,7 @@ When it arrives, resist the urge to judge them. Ask instead: **what did they bel
     {
       slug: "quiz-finding-your-way",
       title: "3 · Knowledge check: judgment",
-      section: "Section 2 · Judgement under pressure",
+      section: "Section 2 · Judgment under pressure",
       quiz: {
         shuffleOptions: true,
         questions: [
@@ -125,7 +125,7 @@ When it arrives, resist the urge to judge them. Ask instead: **what did they bel
             options: [
               "Noticing usually happens near dark, when options are already limited",
               "The hours before it were spent confidently wrong, and every decision since inherits the error",
-              "Recognising the problem causes people to panic and make worse choices immediately",
+              "Recognizing the problem causes people to panic and make worse choices immediately",
               "By then you have usually traveled beyond the range of any rescue",
             ],
             correctIndex: 1,
@@ -165,7 +165,7 @@ When it arrives, resist the urge to judge them. Ask instead: **what did they bel
     {
       slug: "finding-your-way-sources",
       title: "4 · Sources",
-      section: "Section 2 · Judgement under pressure",
+      section: "Section 2 · Judgment under pressure",
       body: `## What this course is, and is not
 
 It is about **judgment**, which is why it is scenario-based and why almost nothing in it is a fact to memorize. It is not navigation instruction and not a safety qualification. Learning to navigate requires doing it under supervision, and learning to handle a river requires water.

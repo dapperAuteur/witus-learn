@@ -54,7 +54,7 @@ const FLIGHT_0: Flight = {
     "Three cups of water with a quarter, a half and a full teaspoon of sugar. Taste in order. Sweetness lands at the front of the tongue and fades.",
     "Lemon into three cups at rising strength. Notice where you salivate, at the sides of the tongue and under the jaw. That salivation IS acidity, and in coffee it is a virtue rather than a defect.",
     "Steep one tea bag for four, eight and twelve minutes, then taste a shaving of unsweetened chocolate. You are separating two things people conflate: BITTERNESS (a taste) from ASTRINGENCY (the drying grip).",
-    "Sip skim, then whole, then half and half. Flavour barely moves, WEIGHT moves. That weight is body, and in coffee it is what people mean by a cup feeling thin or syrupy.",
+    "Sip skim, then whole, then half and half. Flavor barely moves, WEIGHT moves. That weight is body, and in coffee it is what people mean by a cup feeling thin or syrupy.",
     "Write one sentence per component in your own words. Not a coffee word, your word.",
   ],
   lookFor:
@@ -347,7 +347,7 @@ So this course is called a **Taster** course, which is the plain English for wha
 
 **Four rules for this whole course**
 
-1. **Score structure before flavor.** Acidity, sweetness, body and bitterness are close to measurable. Flavour is associative and personal.
+1. **Score structure before flavor.** Acidity, sweetness, body and bitterness are close to measurable. Flavor is associative and personal.
 2. **Use your own references.** If it smells like the cereal you ate as a child, write that.
 3. **Always taste comparatively.** One coffee alone teaches almost nothing. Two side by side teach the difference.
 4. **Write before you speak.** In a group, whoever speaks first sets everyone else's note.
@@ -809,7 +809,7 @@ ${flightCard(FLIGHT_1, ALT)}
 
 **The rest of the environment, briefly.** Rainfall pattern determines whether there is one harvest or two. Shade trees moderate temperature and slow ripening. Soil matters mostly through drainage and nutrition, exactly as it does in wine, and the "you can taste the volcanic soil" claim runs into the same plant physiology problem the wine course covers: minerals are taken up as dissolved ions far below sensory thresholds.
 
-**Climate change is not a future item in coffee.** Warming pushes the viable altitude band upward, and up a mountain there is progressively less land, so the area suitable for arabica shrinks rather than moves. Modelling of the major producing regions projects substantial reductions in suitable area under continued warming (Bunn et al., 2015). This is the mechanism behind the rising interest in robusta, in rust-resistant hybrids, and in new origins, and it will show up in what you can buy and what it costs.
+**Climate change is not a future item in coffee.** Warming pushes the viable altitude band upward, and up a mountain there is progressively less land, so the area suitable for arabica shrinks rather than moves. Modeling of the major producing regions projects substantial reductions in suitable area under continued warming (Bunn et al., 2015). This is the mechanism behind the rising interest in robusta, in rust-resistant hybrids, and in new origins, and it will show up in what you can buy and what it costs.
 
 **How this reaches your cup, practically.** When you read "1,800 to 2,000 metres, washed, Bourbon" on a bag, you can predict a great deal: probably bright, probably clean, probably denser beans that a roaster had to work harder to develop. When the bag says nothing about altitude, that silence is itself information about how much the seller knows or wants to tell you.
 
@@ -873,13 +873,13 @@ ${flightCard(FLIGHT_2, ALT)}
 | Roast character | Minimal | Present | Dominant: smoke, char |
 | Surface | Dry | Dry | Often oily |
 
-**Development, the concept that matters more than color.** A bean can be dark on the outside and under-developed on the inside if the roast moved too fast. Under-developed coffee tastes of raw cereal, grass and a papery sourness that is easy to mistake for a bad bean or a bad brew. Colour alone does not tell you the roast was good, which is the same lesson the wine course teaches about color depth.
+**Development, the concept that matters more than color.** A bean can be dark on the outside and under-developed on the inside if the roast moved too fast. Under-developed coffee tastes of raw cereal, grass and a papery sourness that is easy to mistake for a bad bean or a bad brew. Color alone does not tell you the roast was good, which is the same lesson the wine course teaches about color depth.
 
 **Quakers.** Underripe or defective beans that fail to brown and stay pale in a finished roast. In a light roast you can see them, and they taste of peanut and cardboard. Picking them out of a bag by hand before grinding is a five-second habit worth having.
 
 ${flightCard(FLIGHT_3, ALT)}
 
-:::reveal A coffee looks convincingly dark but tastes of raw cereal, grass and a papery sourness. What most likely went wrong, and why is colour not enough to diagnose it? ||| The roast was probably under-developed: the beans browned on the outside without the inside progressing far enough, usually because the roast moved too fast. Colour reports only the surface, so a bean can be dark outside and raw inside, which is why development rather than color is the concept that matters. It is the same reason depth of color does not tell you a wine's structure.
+:::reveal A coffee looks convincingly dark but tastes of raw cereal, grass and a papery sourness. What most likely went wrong, and why is colour not enough to diagnose it? ||| The roast was probably under-developed: the beans browned on the outside without the inside progressing far enough, usually because the roast moved too fast. Color reports only the surface, so a bean can be dark outside and raw inside, which is why development rather than color is the concept that matters. It is the same reason depth of color does not tell you a wine's structure.
 
 ## Sources
 - Folmer, B. (Ed.). (2017). *The craft and science of coffee*. Academic Press.
@@ -995,7 +995,7 @@ ${flightCard(FLIGHT_3, ALT)}
             ],
             correctIndex: 2,
             explanation:
-              "It happens when the roast moves too fast, and it produces a papery sourness easy to mistake for a bad bean or a bad brew. Colour reports only the surface, which is why development matters more than color.",
+              "It happens when the roast moves too fast, and it produces a papery sourness easy to mistake for a bad bean or a bad brew. Color reports only the surface, which is why development matters more than color.",
             sourceLessonSlug: "coffee-roasting",
           },
           {
@@ -1444,7 +1444,7 @@ This is the drill that pays for the course. Diagnosing a cup is the difference b
 
 **5. Potato defect.** A raw potato smell, associated with damage from the antestia bug and found particularly in coffees from the Great Lakes region of Africa. It affects individual beans, so it can appear in one cup and not the next, which is exactly why cuppers brew several cups of the same coffee.
 
-**6. Mould and mustiness.** Damp, cellar-like, dusty. Usually a drying or storage failure, and the reason drying is the stage that ruins the most coffee.
+**6. Mold and mustiness.** Damp, cellar-like, dusty. Usually a drying or storage failure, and the reason drying is the stage that ruins the most coffee.
 
 **7. Baked or scorched roast.** Baked coffee is flat and papery with no sweetness, from a roast that stalled and dragged. Scorched shows dark spots and a burnt, acrid edge, from too much heat too fast. Both are roasting errors rather than bean problems.
 

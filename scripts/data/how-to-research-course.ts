@@ -258,7 +258,7 @@ Watch for these:
 
 Not all of them, and pretending otherwise leads to work nobody finishes. Corroborate the claims that are **load-bearing**: the ones your conclusion rests on, the ones that would change a reader's mind, the ones about a named person, and any number you are asking anyone to act on.
 
-Colour and context can rest on a single decent source, as long as you have not dressed it up as more than it is.
+Color and context can rest on a single decent source, as long as you have not dressed it up as more than it is.
 
 ## What to do when corroboration is not available
 
@@ -414,7 +414,7 @@ The failure mode to watch for is a piece of work that is **technically accurate 
             prompt:
               "A person you interviewed for a written article asks, before publication, that you not use their interview. What is the right response?",
             options: [
-              "Honour it and do not publish the interview",
+              "Honor it and do not publish the interview",
               "Publish it without their name, since anonymity resolves the concern",
               "Publish it, because they consented at the time it was recorded",
               "Publish the parts that are already corroborated by other sources",

@@ -1066,7 +1066,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
             prompt: "What reason do the AI guidelines give for not outsourcing your takeaways?",
             options: [
               "AI summaries are frequently inaccurate about numbers and votes",
-              "Programme staff cannot verify AI-generated content before publication",
+              "Program staff cannot verify AI-generated content before publication",
               "Your perspective and synthesis is what you are engaged and compensated for",
               "Publishing AI content would breach the program's funding conditions",
             ],
@@ -1091,7 +1091,7 @@ The Guide adds the point that makes this practical rather than abstract: **if yo
           {
             prompt: "Why should the revision pass happen the same day?",
             options: [
-              "Programme deadlines usually require submission within hours",
+              "Program deadlines usually require submission within hours",
               "Recordings become harder to retrieve after twenty-four hours",
               "Editors are only available to review notes on the day of the meeting",
               "Details fade, including what your own shorthand meant",

@@ -1743,7 +1743,7 @@ Write the same finding three times.
 
 **A field note.** Written as if you were present at the moment of the observation. To do this at all you have to work out what the observation physically was: what was in front of a person, when, and what they did next. That is the point of the exercise, and most of the work.
 
-This version must be **labeled as constructed**, in a line above it, because you were not there. Labelling an invented passage as invented is a rule this course applies to itself in lessons 1, 7 and 12, and it applies to you here. An unlabelled reconstruction presented as a record is the single fastest way to fail this assignment.
+This version must be **labeled as constructed**, in a line above it, because you were not there. Labeling an invented passage as invented is a rule this course applies to itself in lessons 1, 7 and 12, and it applies to you here. An unlabelled reconstruction presented as a record is the single fastest way to fail this assignment.
 
 **A paragraph of the paper.** Report the finding as the researchers could support it. It must contain at least **two load-bearing hedges** and **one stated limitation**, and each hedge must survive the three-question test from lesson 10: who is uncertain, about what, and what would settle it.
 

@@ -457,7 +457,7 @@ Historian **James D. Anderson** argues in *The Education of Blacks in the South,
               "142 dollars and 50 cents, the same amount as the labor contributed by local residents",
             ],
             correctIndex: 1,
-            explanation: "Of the local Black contribution, 150 dollars was cash and 142.50 was labor valued in dollars. Labour counted, and it was counted at a price.",
+            explanation: "Of the local Black contribution, 150 dollars was cash and 142.50 was labor valued in dollars. Labor counted, and it was counted at a price.",
             sourceLessonSlug: "sn-washington-rosenwald-credit",
           },
           {
@@ -601,7 +601,7 @@ Two National Register documentation forms, prepared eight years and two states a
 
 **2. This course could not verify the public-funds figure that usually completes the table.** You will frequently see "18.1 million dollars in public funds" attached to this program. **No institutional source read for this course states it**, and the course will not repeat a number it has not seen sourced. What the verified totals support is only this: **28.5 million total, minus 4.7 and minus 4.3, leaves about 19.5 million from public tax revenue and white contributions combined.** If you need the split, go and find it, and cite where you found it.
 
-**3. Labour was counted at a valuation, and somebody chose the valuation.** At Loachapoka in 1913, local Black residents' labor was entered on the budget at **142 dollars 50 cents** (Obenauer & Brown, 2015, p. 6). **That is a price somebody set for other people's work.** The records read for this course do not say who set it or on what basis. **A contribution figure that includes valued labor is partly an accounting decision**, and you should say so whenever you quote one.
+**3. Labor was counted at a valuation, and somebody chose the valuation.** At Loachapoka in 1913, local Black residents' labor was entered on the budget at **142 dollars 50 cents** (Obenauer & Brown, 2015, p. 6). **That is a price somebody set for other people's work.** The records read for this course do not say who set it or on what basis. **A contribution figure that includes valued labor is partly an accounting decision**, and you should say so whenever you quote one.
 
 **4. A national percentage is not a school.** Lesson 7 shows two real school cards where the community share was 3.5 percent and 10.5 percent. **Neither is 16.5 percent. The average is an average.**
 

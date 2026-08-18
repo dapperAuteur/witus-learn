@@ -384,7 +384,7 @@ Questions worth answering before you draft, not after:
 
 Most drafts are too heavy on summary, because summary is what happens when you tell someone about your life. Scene is what happens when you show it, and it costs more words per minute of story, which is exactly why it is worth reserving.
 
-**The rule that holds.** Scene the moments the change runs through. Summarise everything else. If a passage is not carrying the change, it does not need real time.
+**The rule that holds.** Scene the moments the change runs through. Summarize everything else. If a passage is not carrying the change, it does not need real time.
 
 **What a monodrama can do that almost nothing else can:** move between the two mid-sentence, and let the speaker comment on the scene while playing it. *"He said, and I remember thinking he had never once used my name, he said..."* That is summary, scene and interpretation in one breath. It is the form's greatest advantage.
 

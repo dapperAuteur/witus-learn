@@ -342,7 +342,7 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
 
 **The test that resolves most cases**, and it is the same as the news one: **am I selecting and arranging, or am I supplying?** A cut that removes a boring minute is arranging. A cut that manufactures a causal link is supplying.
 
-**The second test, for the cases the first does not settle:** would the participant recognize the person on screen as themselves? Not "would they like it." Recognise.
+**The second test, for the cases the first does not settle:** would the participant recognize the person on screen as themselves? Not "would they like it." Recognize.
 
 **On reenactment.** Legitimate and long-established, and its honesty lives entirely in the **signalling**. A reenactment a viewer might mistake for actual footage is a deception whatever the intent. Visual grammar, an on-screen note, or a narration line all work; **choosing none is choosing to mislead.**
 
@@ -485,7 +485,7 @@ export const DOCUMENTARY_COURSE: AuthoredCourse = {
             ],
             correctIndex: 3,
             explanation:
-              "Recognise, not like. It is a test about accuracy of representation rather than about whether the portrayal is flattering.",
+              "Recognize, not like. It is a test about accuracy of representation rather than about whether the portrayal is flattering.",
             sourceLessonSlug: "doc-the-edit",
           },
           {

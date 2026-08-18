@@ -620,7 +620,7 @@ Behind both the canons and these cases sits one rule you should carry out of thi
             options: [
               "A museum piece with no force",
               "Living law, deciding cases now",
-              "Cancelled by the 1871 Act",
+              "Canceled by the 1871 Act",
               "Enforced only by the tribe itself",
             ],
             correctIndex: 1,
@@ -846,7 +846,7 @@ Finally, the point the whole course keeps making: this is not history. The Haude
             options: [
               "Abolished the tribal council",
               "Ended the Navajo court system",
-              "Recognised traditional Dine law",
+              "Recognized traditional Dine law",
               "Adopted the 1934 IRA template",
             ],
             correctIndex: 2,

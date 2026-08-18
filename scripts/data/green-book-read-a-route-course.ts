@@ -1861,7 +1861,7 @@ A short, checkable report in which every sentence is either something you read i
 **What you can do that you could not do before.**
 - Name the edition and the page for any claim you make about the guide.
 - Tell the difference between a claim about the book and a claim about the world, and write only the one your evidence supports.
-- Recognise that density and usefulness run in opposite directions, so a heat map of listings is not a map of where the guide mattered.
+- Recognize that density and usefulness run in opposite directions, so a heat map of listings is not a map of where the guide mattered.
 - Treat a gap as a question with three testable answers rather than as a conclusion.
 - Follow one address from a page of small type to a parcel record and, where the record allows, to the decision that changed it.
 

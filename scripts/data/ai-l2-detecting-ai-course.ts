@@ -387,7 +387,7 @@ That's it. You will not catch every fake: **nobody can, and no tool can; detecti
           {
             prompt: "What is the durable skill that survives better AI models?",
             options: [
-              "Memorising an ever longer list of the visual artifacts",
+              "Memorizing an ever longer list of the visual artifacts",
               "Provenance and lateral reading: who made it and who confirms it",
               "Trusting whichever detector happens to give the highest score",
               "Only ever believing video footage, and never any photographs",

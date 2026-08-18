@@ -503,7 +503,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
         },
         {
           prompt: "What does survival on this ground correlate with?",
-          answer: "Organisation, ownership and timing, not importance. The Royal Theatre was one of the most important buildings on The Avenue and it is gone, because designation arrived too late.",
+          answer: "Organization, ownership and timing, not importance. The Royal Theatre was one of the most important buildings on The Avenue and it is gone, because designation arrived too late.",
         },
         {
           prompt: "Does National Register listing stop a private owner from demolishing a building, and what does in Baltimore?",
@@ -612,7 +612,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
       section: "Section 3 · Powers",
       body: `The fourth instrument is the one you can still stand in, and it is why Baltimore is the best single city for this course. **The zoning was struck by courts. The covenants were disabled by Shelley. The highway was actually built, and then abandoned halfway, so it is the one link in the chain that is still physically open.**
 
-**What was built.** In the late 1960s and early 1970s the city cut a **1.4-mile** sunken expressway, the **Franklin-Mulberry** section of **US 40**, through West Baltimore, in the neighborhoods around **Rosemont, Harlem Park and Franklin Square** (Congress for the New Urbanism, n.d.; Baltimore City Department of Transportation, 2022). It was meant to be one leg of a downtown expressway system linking Interstate 70 to the harbor. **That system was never finished.** Organised community and environmental opposition stopped the larger plan, and the leg that was built simply ends, carrying local traffic into a trench and back out. The nickname is the finding: the **"Highway to Nowhere."**
+**What was built.** In the late 1960s and early 1970s the city cut a **1.4-mile** sunken expressway, the **Franklin-Mulberry** section of **US 40**, through West Baltimore, in the neighborhoods around **Rosemont, Harlem Park and Franklin Square** (Congress for the New Urbanism, n.d.; Baltimore City Department of Transportation, 2022). It was meant to be one leg of a downtown expressway system linking Interstate 70 to the harbor. **That system was never finished.** Organized community and environmental opposition stopped the larger plan, and the leg that was built simply ends, carrying local traffic into a trench and back out. The nickname is the finding: the **"Highway to Nowhere."**
 
 **The human cost, with its owner and its uncertainty attached.** The commonly reported demolition and displacement figures for the corridor are **about 971 homes, 62 businesses, and one school**, with roughly **1,500 residents** displaced (Baltimore City Department of Transportation, 2022; Congress for the New Urbanism, n.d.). **Handle these numbers the way Section 1 handled the Green Book listings: give them their owner and do not smooth them.** Two honest cautions:
 - **The block count varies by source.** Some accounts describe roughly **twenty** demolished blocks; others count about **fourteen** contiguous blocks. The difference is not an error to resolve by averaging; it is what happens when different tellings count the demolition footprint versus the built corridor length. **Report the range and its cause.**
@@ -1133,7 +1133,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
 
 **The habits this builds, which transfer to any American county.** Every county has an assessor and most have a GIS. **The names of the tools change and the four facts do not: the parcel identifier, the owner of record, the assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a state database. Practise on institutional and commercial addresses. This is the same rule the method prerequisite applied to tourist homes.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a state database. Practice on institutional and commercial addresses. This is the same rule the method prerequisite applied to tourist homes.
 
 ## Sources
 - Baltimore City Department of Planning. (n.d.-b). *GIS and mapping*. https://planning.baltimorecity.gov/maps-data/gis
@@ -1285,7 +1285,7 @@ export const BALTIMORE_CHAIN_COURSE: AuthoredCourse = {
               "Because it sits just outside Baltimore City's parcel system",
             ],
             correctIndex: 1,
-            explanation: "Founded in 1905 and still operating at 2426 Pennsylvania Avenue. Practise on institutional and commercial addresses, never on somebody's home.",
+            explanation: "Founded in 1905 and still operating at 2426 Pennsylvania Avenue. Practice on institutional and commercial addresses, never on somebody's home.",
             sourceLessonSlug: "bc-next-exercise",
           },
           {

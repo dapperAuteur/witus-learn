@@ -911,7 +911,7 @@ The returner's cardinal sin is going for too much on the return of a second serv
         },
         {
           prompt: "What are 'The First 4 Shots'?",
-          answer: "Serve, return, Serve +1 (server's next ball), and Return +1 (returner's next ball). Practised least, decisive most.",
+          answer: "Serve, return, Serve +1 (server's next ball), and Return +1 (returner's next ball). Practiced least, decisive most.",
         },
       ],
     },

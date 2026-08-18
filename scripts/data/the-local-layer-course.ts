@@ -1510,11 +1510,11 @@ Unigov ties this whole course together. The **state** had the power to reorganiz
 
 Section 1 taught that a state can hand its localities a broad, standing grant of power (**home rule**) or make them ask permission for anything not clearly granted (**Dillon's Rule**), and that most states do some of each. This map sorts the fifty states into three honest buckets:
 
-| Colour | Category | What it means |
+| Color | Category | What it means |
 |---|---|---|
 | **Blue** | Home rule (broad) | The standard references list the state as a home-rule state that does not apply Dillon's Rule to its municipalities |
 | **Amber** | Dillon's Rule (limited) | The references list the state as a Dillon's Rule state, with no broad home-rule grant |
-| **Grey** | Mixed / contested | The state applies home rule to some governments or powers and Dillon's Rule to others, or the sources genuinely disagree, or its status could not be placed with confidence |
+| **Gray** | Mixed / contested | The state applies home rule to some governments or powers and Dillon's Rule to others, or the sources genuinely disagree, or its status could not be placed with confidence |
 
 **The gray bucket is the honest one, and it is deliberately the largest.** It holds the many states that are genuinely a blend, plus every state this map could not confidently sort. That is the point, not a cop-out: Section 1's whole argument is that "your state is a Dillon's Rule state" is a starting hypothesis, not a fact, so a state that cannot be placed cleanly is colored as unsettled rather than forced into a binary. Better honest and vague than confidently wrong.
 
@@ -1528,7 +1528,7 @@ Notice that **Indiana is gray**, not amber. After Section 4, where the state red
 
 ## What the map cannot show, and what that proves
 
-**It cannot show the spectrum inside a single color.** Two blue states can entrench home rule very differently (constitutional versus legislative, from Lesson 4), and two gray states can be mixed for opposite reasons. Colour carries one rough sort; the real answer for any state needs its constitution and statutes, which is exactly where the capstone sends you. This map is where the course's caution becomes a picture: it points you at the documents, it does not stand in for them. It is not legal advice.
+**It cannot show the spectrum inside a single color.** Two blue states can entrench home rule very differently (constitutional versus legislative, from Lesson 4), and two gray states can be mixed for opposite reasons. Color carries one rough sort; the real answer for any state needs its constitution and statutes, which is exactly where the capstone sends you. This map is where the course's caution becomes a picture: it points you at the documents, it does not stand in for them. It is not legal advice.
 
 ## Sources
 - National League of Cities. (n.d.). Cities 101: Delegation of power. https://www.nlc.org/resource/cities-101-delegation-of-power/

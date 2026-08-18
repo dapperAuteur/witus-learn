@@ -936,7 +936,7 @@ That trade, *we recognise your unions; you recognise our authority to run the bu
             prompt: "What single line summarises how the Nordic wage floor is maintained?",
             options: [
               "A single national statute fixes the wage floor, and the police and the courts then enforce it directly",
-              "Organised sectors bargain under self-regulation, enforced by collective pressure rather than by statute",
+              "Organized sectors bargain under self-regulation, enforced by collective pressure rather than by statute",
               "The EU sets the wage floor centrally and legally extends it to every single firm in both countries",
               "Employers set the wage floor unilaterally, and unions simply administer whatever figure they choose",
             ],

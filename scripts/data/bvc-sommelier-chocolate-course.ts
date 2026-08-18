@@ -199,7 +199,7 @@ This is the other half: tasting it, and buying it knowingly.
 - Find acidity in chocolate, which most people do not know is there.
 - Read an ingredient list and say what the maker decided, separately from what the bean brought.
 - Explain what a percentage legally means, and why it is not a quality score.
-- Recognise bloom, poor temper and over-conching, and know which are faults and which are choices.
+- Recognize bloom, poor temper and over-conching, and know which are faults and which are choices.
 - Speak accurately about the category's labor and income problems, with sources rather than vibes.
 
 **What this course refuses to be.** Not affiliated with any certifying body, not exam preparation, and not a health course. Chocolate carries a large and noisy literature of health claims. This course makes none, in either direction.
@@ -288,7 +288,7 @@ ${flightCard(FLIGHT_0, ALT)}
       section: "Module 1 · Before you taste",
       body: `Six stages, in order, for the same reason every tasting system in this series fixes an order: it runs from the least suggestible evidence to the most.
 
-**1. Appearance.** Look at the surface. A well tempered bar is glossy and even. Dull, streaked, grayish or white-filmed means poor temper or bloom, and Lesson 12 separates those. Colour ranges from pale reddish brown to almost black, and it reports roast level, origin and whether cocoa was alkalised, not quality.
+**1. Appearance.** Look at the surface. A well tempered bar is glossy and even. Dull, streaked, grayish or white-filmed means poor temper or bloom, and Lesson 12 separates those. Color ranges from pale reddish brown to almost black, and it reports roast level, origin and whether cocoa was alkalised, not quality.
 
 **2. Snap.** Break a piece near your ear. A properly tempered dark bar gives a clean, sharp crack. A dull thud or a bend means the crystal structure is wrong, or the bar is warm, or it has a high milk or fat content, which softens the snap legitimately. Milk chocolate should not be expected to snap like dark.
 
@@ -299,7 +299,7 @@ ${flightCard(FLIGHT_0, ALT)}
 
 **4. Melt.** Put it on your tongue, press it to the roof of your mouth, and do not chew. Time it roughly. Note the speed, the temperature at which it gives, and the texture as it goes: creamy, waxy, greasy, gritty, or clean.
 
-**5. Flavour and structure.** As it melts, score:
+**5. Flavor and structure.** As it melts, score:
 
 | Component | What you are looking for |
 | --- | --- |
@@ -307,7 +307,7 @@ ${flightCard(FLIGHT_0, ALT)}
 | **Astringency** | A texture, a drying grip on the gums. From polyphenols, and often from under-fermented beans |
 | **Acidity** | Real and often overlooked. Bright and fruity when it comes from fermentation, sharp and sour when there was too much of it |
 | **Sweetness** | The sugar, and the inverse of the percentage |
-| **Flavour** | Only now, and from broad to specific |
+| **Flavor** | Only now, and from broad to specific |
 
 **6. Finish.** Wait. Chocolate's finish is longer than almost anything you will taste, often a full minute or more, and it changes as it goes. Note what LINGERS: fruit, nuts and cocoa are good company, while a chalky, dusty or bitter-only finish is not.
 
@@ -422,7 +422,7 @@ ${flightCard(FLIGHT_1, ALT)}
               "Appearance, snap, aroma, melt, flavor, finish",
               "Aroma, flavor, appearance, snap, melt, finish",
               "Snap, flavor, finish, aroma, appearance, melt",
-              "Flavour, finish, melt, aroma, snap, appearance",
+              "Flavor, finish, melt, aroma, snap, appearance",
             ],
             correctIndex: 0,
             explanation:
@@ -636,7 +636,7 @@ ${flightCard(FLIGHT_3, ALT)}
 
 | | **Fat bloom** | **Sugar bloom** |
 | --- | --- | --- |
-| Looks like | Greyish white, streaky or blotchy, often soft-edged | White, gritty, crystalline, sometimes sparkly |
+| Looks like | Grayish white, streaky or blotchy, often soft-edged | White, gritty, crystalline, sometimes sparkly |
 | Caused by | Temperature swings or poor temper; fat migrates and recrystallises into the more stable Form VI | Moisture on the surface dissolving sugar, which recrystallises when it dries |
 | Where from | A warm car, a windowsill, repeated warming and cooling, or untempered chocolate | A fridge, condensation, a humid room |
 | Fixable | Not really, though it can be re-melted and re-tempered | No |
@@ -648,7 +648,7 @@ ${flightCard(FLIGHT_3, ALT)}
 
 ${flightCard(FLIGHT_4, ALT)}
 
-:::reveal A bar has a greyish, streaky film. Your friend says it has gone off. Give the accurate answer, including which kind of bloom and what caused it. ||| It has not gone off and it is not dangerous. Greyish, streaky and soft-edged is FAT bloom: temperature swings or poor temper let the cocoa butter migrate and recrystallise into a more stable form, which wrecks the gloss and the texture while leaving the chocolate safe to eat. Gritty, crystalline white would be SUGAR bloom instead, from moisture dissolving surface sugar which then recrystallises, typically from a fridge or a humid room. Both are usually storage failures after purchase rather than manufacturing faults.
+:::reveal A bar has a greyish, streaky film. Your friend says it has gone off. Give the accurate answer, including which kind of bloom and what caused it. ||| It has not gone off and it is not dangerous. Grayish, streaky and soft-edged is FAT bloom: temperature swings or poor temper let the cocoa butter migrate and recrystallise into a more stable form, which wrecks the gloss and the texture while leaving the chocolate safe to eat. Gritty, crystalline white would be SUGAR bloom instead, from moisture dissolving surface sugar which then recrystallises, typically from a fridge or a humid room. Both are usually storage failures after purchase rather than manufacturing faults.
 
 ## Sources
 - Wille, R. L., & Lutton, E. S. (1966). Polymorphism of cocoa butter. *Journal of the American Oil Chemists' Society, 43*(8), 491-496. https://doi.org/10.1007/BF02641273

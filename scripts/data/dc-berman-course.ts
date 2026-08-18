@@ -1248,7 +1248,7 @@ The eventual redevelopment drew on both, and the built result is the physical ar
 
 **The habits this builds, which transfer to any American jurisdiction.** Every jurisdiction has an assessor or a tax office and most have a GIS. **The names of the tools change and the four facts do not: the parcel identifier, the owner of record, the assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a database. Practise on institutional, commercial, and public addresses. This is the same rule the method course applied to tourist homes and the Indiana Avenue course applied to residential parcels.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a database. Practice on institutional, commercial, and public addresses. This is the same rule the method course applied to tourist homes and the Indiana Avenue course applied to residential parcels.
 
 ## Sources
 - DC Office of Tax and Revenue. (n.d.). *Real property tax database search*. https://otr.cfo.dc.gov/page/real-property-tax-database-search
@@ -1642,7 +1642,7 @@ A short, checkable piece in which every sentence is either something you read in
 - Read the actual opinion behind a doctrine, rather than a summary of it, and quote it accurately.
 - Separate what a case held from what it is popularly said to have held. **Berman held that an area may be taken as a whole and conveyed to a private developer. It did not hold that any particular building was a slum**, and it was brought by a store owner, not a displaced family.
 - Test a cross-city link against a chronology and report the weaker, true version. **Berman did not cause Indiana Avenue's clearance; it backstopped the tool nationwide.**
-- Recognise the *Berman* pattern, public taking then private rebuilding, when it runs again, as it does at The Wharf.
+- Recognize the *Berman* pattern, public taking then private rebuilding, when it runs again, as it does at The Wharf.
 - Ask who holds the vote over a piece of ground, and notice when the answer is "not the people who live on it."
 
 **What this course deliberately did not cover, and why.**

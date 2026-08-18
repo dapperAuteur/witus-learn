@@ -87,7 +87,7 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
 
 **Who fought it, and lost.** The NAACP sued in the name of an Indianapolis resident, **Archie Greathouse**, "charging that students would not receive an equal education in a separate school." **The suit and the appeal both failed**, and construction went ahead (Encyclopedia of Indianapolis, n.d.-a). Keep this. It is the same shape as the state NAACP's position recorded in course 1: the objection was made at the time, in public, by named people, and it was overruled. **Nobody in this story had to wait for hindsight.**
 
-**What opened.** Crispus Attucks High School opened in **September 1927** under principal **Matthias Nolcox**, who recruited faculty from Black colleges across the South. Enrolment came in at **1,350** rather than the anticipated 1,000, and staff had to be increased the following year (Encyclopedia of Indianapolis, n.d.-a).
+**What opened.** Crispus Attucks High School opened in **September 1927** under principal **Matthias Nolcox**, who recruited faculty from Black colleges across the South. Enrollment came in at **1,350** rather than the anticipated 1,000, and staff had to be increased the following year (Encyclopedia of Indianapolis, n.d.-a).
 
 **And what the opening did legally.** Dillin's findings are blunt: "When such school, Crispus Attucks, was opened in September, 1927, **all Negro high school students were forthwith compelled to attend it, regardless of their place of residence in the city**" (*United States v. Board of School Commissioners*, 1971, p. 663). One school, one race, one city, and no exceptions for where you lived.
 
@@ -265,7 +265,7 @@ export const GYM_COLOR_LINE_COURSE: AuthoredCourse = {
               "They could choose between Attucks and their neighborhood school",
               "They were compelled to attend Attucks regardless of where they lived",
               "Only those living within two miles of Attucks were assigned there",
-              "Enrolment at Attucks stayed voluntary until the 1949 state act",
+              "Enrollment at Attucks stayed voluntary until the 1949 state act",
             ],
             correctIndex: 1,
             explanation: "The court's words are 'forthwith compelled to attend it, regardless of their place of residence in the city.'",
@@ -489,7 +489,7 @@ A high school gym seating eight thousand people in a town far smaller than eight
 
 ## The present, which is why this is not a lament
 
-In **May 2026**, Indianapolis Public Schools announced a **44 million dollar** expansion of the Crispus Attucks campus: about **25 million dollars** donated by **Indiana University Health** and about **20 million dollars** from IPS bonds. It includes a **new gym meeting IHSAA standards, seating roughly 2,400**, with home and visitor locker rooms, indoor concessions and a weight room, plus a healthcare lab, a technology lab, and an atrium connecting the original building to the new south-campus addition. **Attucks is currently the only IPS high school with just one gym.** Completion is expected in **2028**, just over a century after the school opened. Enrolment is about **1,200**, roughly **65 percent Black and 28 percent Hispanic** (Chalkbeat Indiana, 2026a; WFYI, 2026a).
+In **May 2026**, Indianapolis Public Schools announced a **44 million dollar** expansion of the Crispus Attucks campus: about **25 million dollars** donated by **Indiana University Health** and about **20 million dollars** from IPS bonds. It includes a **new gym meeting IHSAA standards, seating roughly 2,400**, with home and visitor locker rooms, indoor concessions and a weight room, plus a healthcare lab, a technology lab, and an atrium connecting the original building to the new south-campus addition. **Attucks is currently the only IPS high school with just one gym.** Completion is expected in **2028**, just over a century after the school opened. Enrollment is about **1,200**, roughly **65 percent Black and 28 percent Hispanic** (Chalkbeat Indiana, 2026a; WFYI, 2026a).
 
 **Put the two numbers side by side and you have this section.** A state whose largest high school gym seats **8,424**. A school that in 1967-68 held **2,394** students on **8.4 acres**. And a **2,400-seat** gym arriving in **2028**. **Those are not rhetorical numbers. They are all cited, and the comparison is yours to make.**
 
@@ -1611,7 +1611,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
 
 **The habits this builds, which transfer to any American district.** The tool names change from state to state and the four facts do not: **which district a school is in, where that district's boundary runs, which overlapping jurisdictions cover the same ground, and which fund pays for the building.** Learn to find those four and you can research any school in the country.
 
-**One rule you do not get to break.** **Do not run this drill on a child.** Do not attach a named student to an address, a school assignment or a demographic figure in anything you publish. Practise on institutions, boundaries and public bodies. **A school is a public body. A student is not.**
+**One rule you do not get to break.** **Do not run this drill on a child.** Do not attach a named student to an address, a school assignment or a demographic figure in anything you publish. Practice on institutions, boundaries and public bodies. **A school is a public body. A student is not.**
 
 ## Sources
 - City of Indianapolis and Marion County. (n.d.). *MapIndy*. https://maps.indy.gov/MapIndy/
@@ -1898,7 +1898,7 @@ On remand Dillin held that Milliken did not bar a Marion County remedy, precisel
               "Never attend any public board meeting without prior permission",
             ],
             correctIndex: 1,
-            explanation: "Practise on institutions, boundaries and public bodies. A school is a public body. A student is not.",
+            explanation: "Practice on institutions, boundaries and public bodies. A school is a public body. A student is not.",
             sourceLessonSlug: "gcl-next-exercise-district",
           },
         ],
@@ -2024,7 +2024,7 @@ A short, checkable piece in which every sentence is either something you read in
 - **Distinguish a claim about a document from a claim about the world.** "The court found more than 90 percent of about 350 boundary changes promoted segregation" is the first. "Indianapolis schools were segregated by accident" is the second, and the record contradicts it.
 - **Read a funding formula as a boundary question.** Rate multiplied by assessed value inside the line.
 - **Find any school's district, and any district's boundary file**, in any state.
-- **Recognise that a proposal not yet adopted is where a citizen has the most leverage**, whether it is a redevelopment plan or a boundary change.
+- **Recognize that a proposal not yet adopted is where a citizen has the most leverage**, whether it is a redevelopment plan or a boundary change.
 
 ## What this course deliberately did not cover, and why
 

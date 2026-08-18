@@ -812,7 +812,7 @@ The ***Atlanta Daily World*** was founded as the *Atlanta World* by **W. A. Scot
         },
         {
           prompt: "Why did the Saint Luke Emporium close, and why must both causes be reported?",
-          answer: "Organised opposition from white retailers and reluctance among Black consumers to shop there. Reporting only the first tells a comfortable story about an external enemy; reporting only the second tells an uglier and equally incomplete one. The record says both.",
+          answer: "Organized opposition from white retailers and reluctance among Black consumers to shop there. Reporting only the first tells a comfortable story about an external enemy; reporting only the second tells an uglier and equally incomplete one. The record says both.",
         },
         {
           prompt: "Jackson Ward's cast-iron porches are described as the richest display of ornamental ironwork in Virginia. What does that prove about the local economy?",
@@ -1084,7 +1084,7 @@ On May 31 and June 1, 1921, a white mob destroyed the district. **This course is
             options: [
               "A fire and an uninsured loss",
               "The 1907 financial panic and a rent increase",
-              "Organised white retailer opposition, and Black consumer reluctance to shop there",
+              "Organized white retailer opposition, and Black consumer reluctance to shop there",
               "Competition from a larger department store that opened two blocks away in 1909 and undercut its prices",
             ],
             correctIndex: 2,
@@ -1756,7 +1756,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
               "They relied on philanthropy from outside the community",
             ],
             correctIndex: 1,
-            explanation: "Organise a society, collect small regular payments from many people, accumulate a reserve, get it chartered and regulated, then lend it to yourselves.",
+            explanation: "Organize a society, collect small regular payments from many people, accumulate a reserve, get it chartered and regulated, then lend it to yourselves.",
             sourceLessonSlug: "wtb-money-problem",
           },
           {
@@ -2005,7 +2005,7 @@ The same record, in full, with every entry sourced elsewhere in the course:
 
 **Four rules for visiting, and they are not optional.**
 1. **These are neighborhoods, not exhibits.** People live in them. Do not photograph into windows and do not knock uninvited.
-2. **Read what the community publishes about itself first.** Neighbourhood associations, heritage centers and business districts all publish, and their account is the one to start from.
+2. **Read what the community publishes about itself first.** Neighborhood associations, heritage centers and business districts all publish, and their account is the one to start from.
 3. **Do not narrate a place as ruined.** A street with vacancies on it is a street with a market condition, and a resident hearing you call their neighborhood a ruin will correctly conclude you are a tourist.
 4. **Name what is operating.** If a firm on that street is open today, that is the most interesting fact available to you, and it is the one visitors most reliably miss.
 

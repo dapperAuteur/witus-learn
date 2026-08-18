@@ -1759,7 +1759,7 @@ Course 1 gave four questions that work for any American parcel. **Here is what e
             prompt: "Name the four things a virtual tour of this ground cannot show you.",
             options: [
               "A boundary, a tax rate, a waiver, a decision",
-              "Colour, texture, scale, shadow and season",
+              "Color, texture, scale, shadow and season",
               "Buildings, streets, signs, trees and vehicles",
               "Weather, time of day, traffic, cars and noise",
             ],

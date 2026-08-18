@@ -1163,7 +1163,7 @@ The Heinz History Center gives "over 8,000 residents were displaced, as well as 
 
 **The habits this builds, which transfer to any American county.** Every county has an assessor or its equivalent and most have a GIS. **The names of the tools change and the four facts do not: parcel number, owner of record, assessed value, and which overlapping jurisdictions the parcel sits in.** Learn to find those four and you can research any address in the country.
 
-**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a county database. Practise on institutional and commercial addresses. This is the same rule the method course applied to tourist homes.
+**One rule you do not get to break.** **Do not run this drill on somebody's home and publish the result.** A parcel record is public, and a current occupant's name attached to their address in a piece of writing is a different thing from a public record sitting in a county database. Practice on institutional and commercial addresses. This is the same rule the method course applied to tourist homes.
 
 ## Sources
 - Allegheny County. (n.d.-a). *Allegheny County GIS viewer*. https://experience.arcgis.com/experience/68f5e4ae2f5b47b78cefcdf019e154bd
@@ -1508,7 +1508,7 @@ Pick one and commit, because mixing them is what makes place writing mushy.
 4. **Living communities describe themselves.** Use the names and terms the people who live and work on the Hill use, and say where you got them. The Hill District documents itself; **Freedom Corner, the Hill CDC and the August Wilson House are the neighborhood's own voice, and you should read it before you write over it.**
 5. **No ruin porn, and no lost golden age.** A district that ran a complete economy under segregation, produced the country's leading Black newspaper and fed the birth of bebop was not a paradise, and its clearance was not a natural death. **Both of those framings flatter the writer and cheat the subject.**
 6. **Credit what was built.** The Courier, the Crawford Grill, the Pittsburgh Crawfords, Bethel AME, the musicians who came up in the jam sessions, and the residents who held the line at Freedom Corner. **A piece that only inventories loss is an incomplete report.**
-7. **Private homes are private.** Do not publish a current resident's name with their address, do not photograph into windows, and do not knock uninvited. Practise on institutional and commercial addresses.
+7. **Private homes are private.** Do not publish a current resident's name with their address, do not photograph into windows, and do not knock uninvited. Practice on institutional and commercial addresses.
 8. **Say what you did to a number.** If you adjusted for inflation, say so and say how.
 
 ## What good looks like
@@ -1541,7 +1541,7 @@ A short, checkable piece in which every sentence is either something you read in
 - Test a city's proudest story about itself against a table of dates, and report the result when the story loses.
 - Tell a claim about a document from a claim about the world. **"Pittsburgh was visited by seventy delegations who admired its partnership" is the first. "Seventy cities copied Pittsburgh's clearance of the Hill" is the second, and it is not supported.**
 - Find the four facts about any parcel in any American county.
-- Recognise that ground being re-decided right now is where a citizen has the most leverage.
+- Recognize that ground being re-decided right now is where a citizen has the most leverage.
 
 **What this course deliberately did not cover, and why.**
 - **The wider Pittsburgh Renaissance.** Gateway Center, the smoke-control and flood-control programs, and the Point State Park development are the projects the delegations actually came to see. **They are the other half of the URA's story and they get their own treatment**, because a course that folded them in would lose the Hill in the celebration, which is exactly the substitution lesson 12 warned against.

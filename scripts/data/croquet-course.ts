@@ -3097,7 +3097,7 @@ Now choose one, and go at it seriously:
 | **Coach** | Ask your club about the **Club-Level Coach** course (two days). If you want to coach under-18s in England, the **U18s license comes first**. |
 | **Build a club** | Read the **Croquet Facility Guide** and Croquet England's **Forming a Club** starter pack. Find a site that already has fine turf and a greenkeeper, a school, a bowls club, a tennis club. Start with a **small court** (GC Rule 2.4 makes it legal). |
 | **Build a business** | Read the **WCF approved-equipment list** and the **Equipment Regulations** (£100 approval fee). Look at what the three approved ball makers and nine approved hoop makers *don't* cover. |
-| **Organise** | Start a school or college club. The **USCA Collegiate National Championship** exists, school membership is **free**, and the results pages show how few schools compete. |
+| **Organize** | Start a school or college club. The **USCA Collegiate National Championship** exists, school membership is **free**, and the results pages show how few schools compete. |
 
 ## The thing to hold onto
 

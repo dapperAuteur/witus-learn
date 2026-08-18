@@ -512,7 +512,7 @@ This is the other half. This course teaches you to pick up a glass and say somet
 
 - Taste any wine through a repeatable four-stage grid instead of guessing.
 - Score six structural components (sweetness, acidity, tannin, alcohol, body, finish) and defend each score.
-- Recognise the markers of about twenty grape varieties.
+- Recognize the markers of about twenty grape varieties.
 - Read a French, Italian, Spanish, German or American label cold and know what it legally promises.
 - Say what a wine is likely to cost to make, and therefore whether its price is fair.
 - Serve, store, decant, and spot the seven faults that actually show up.
@@ -590,7 +590,7 @@ So this course is called a **Taster** course, which is the plain English for wha
       section: "Module 1 · Before you pour",
       body: `The most common thing people say before their first tasting is "I have a terrible palate." Almost none of them do. What they have is a small vocabulary, and vocabulary is the actual bottleneck.
 
-**Most of tasting is smelling.** The tongue reports a short list: sweet, sour, salty, bitter, umami, plus physical sensations like temperature, burn, and the drying grip of tannin. Everything you call "flavour" beyond that list is smell, arriving through the back of the throat while you chew or swallow. That route is called retronasal olfaction, and it is why food goes flat when you are congested. Odour perception runs on a large family of odorant receptor genes, discovered by Buck and Axel (1991), work that later took the Nobel Prize in Physiology or Medicine (Nobel Assembly, 2004). You have the hardware.
+**Most of tasting is smelling.** The tongue reports a short list: sweet, sour, salty, bitter, umami, plus physical sensations like temperature, burn, and the drying grip of tannin. Everything you call "flavour" beyond that list is smell, arriving through the back of the throat while you chew or swallow. That route is called retronasal olfaction, and it is why food goes flat when you are congested. Odor perception runs on a large family of odorant receptor genes, discovered by Buck and Axel (1991), work that later took the Nobel Prize in Physiology or Medicine (Nobel Assembly, 2004). You have the hardware.
 
 **People genuinely differ, less than they think.** There is real variation in sensitivity to certain bitter compounds, measured with the chemicals PROP and PTC: some people taste them intensely, some barely at all (Bartoshuk, 2000). That variation is real, and it is far smaller than the difference between a trained taster and an untrained one. Training beats genetics here.
 
@@ -598,7 +598,7 @@ So this course is called a **Taster** course, which is the plain English for wha
 
 So the practical method for this whole course:
 
-1. **Score structure before flavor.** Structure is close to measurable. Flavour is associative and personal.
+1. **Score structure before flavor.** Structure is close to measurable. Flavor is associative and personal.
 2. **Use your own references.** If a wine smells like the inside of your grandmother's spice cupboard, write that. A borrowed descriptor you cannot actually smell teaches you nothing.
 3. **Always taste comparatively.** One wine alone teaches almost nothing. Two wines side by side teach the difference, and difference is the only thing your senses are good at.
 4. **Write it down before you discuss it.** Tasting in a group without writing first turns into agreeing with whoever spoke first.
@@ -798,7 +798,7 @@ A workable blank looks like this. Copy it into a notebook, print twenty, or draw
 
 **The one rule that makes the whole grid honest:** every score has to be defensible by pointing at a sensation. "High acid because my mouth watered for three seconds after I spat." Not "high acid because it is a Riesling."
 
-:::reveal Why does the grid put SIGHT first when colour alone almost never identifies a wine? ||| Because it is the least suggestible evidence, and it narrows the field before your brain commits to a guess. Colour tells you a small number of real things (rough age from the rim, likely a white or a red, sometimes an oxidative style), and the order protects you from the reverse process, where you decide the wine is a Chardonnay first and then find butter in a Chenin Blanc.
+:::reveal Why does the grid put SIGHT first when colour alone almost never identifies a wine? ||| Because it is the least suggestible evidence, and it narrows the field before your brain commits to a guess. Color tells you a small number of real things (rough age from the rim, likely a white or a red, sometimes an oxidative style), and the order protects you from the reverse process, where you decide the wine is a Chardonnay first and then find butter in a Chenin Blanc.
 
 ## Sources
 - Lawless, H. T., & Heymann, H. (2010). *Sensory evaluation of food: Principles and practices* (2nd ed.). Springer.
@@ -812,9 +812,9 @@ A workable blank looks like this. Copy it into a notebook, print twenty, or draw
 
 **Clarity.** Clear or hazy. Haze used to be a straightforward fault signal. It is not any more: a lot of deliberately unfined and unfiltered wine is hazy on purpose and perfectly sound. So haze is now a question, not a verdict.
 
-**Intensity.** Pale, medium, or deep. Look at the CENTRE of the wine, straight down through the bowl. Intensity in a red comes mostly from how much skin contact the wine got and how thick the grape's skins were, which is why a Pinot Noir with thin skins is pale and a Syrah is not.
+**Intensity.** Pale, medium, or deep. Look at the CENTER of the wine, straight down through the bowl. Intensity in a red comes mostly from how much skin contact the wine got and how thick the grape's skins were, which is why a Pinot Noir with thin skins is pale and a Syrah is not.
 
-**Colour.** Say an actual color word. Whites run lemon green, lemon, gold, amber, brown. Reds run purple, ruby, garnet, tawny, brown. Rosé runs pink, salmon, orange.
+**Color.** Say an actual color word. Whites run lemon green, lemon, gold, amber, brown. Reds run purple, ruby, garnet, tawny, brown. Rosé runs pink, salmon, orange.
 
 **The rim.** Where the wine thins at the edge, compare it to the center. This is the most useful thing sight gives you, because it is the closest thing to an age reading.
 
@@ -826,7 +826,7 @@ A workable blank looks like this. Copy it into a notebook, print twenty, or draw
 | A red shifting from purple to garnet at the rim | Age. Anthocyanins polymerise over time and the blue tones go first |
 | A very pale red | A thin skinned grape (Pinot Noir, Nebbiolo, Gamay) or very short skin contact |
 | A red that is nearly opaque to the center | A thick skinned grape, a warm climate, or long maceration |
-| Any deposit in an old bottle | Normal. Colour and tannin polymerise and drop out. This is exactly why you decant old reds |
+| Any deposit in an old bottle | Normal. Color and tannin polymerise and drop out. This is exactly why you decant old reds |
 
 **What color does NOT tell you, no matter what anybody says at the table**
 
@@ -1090,7 +1090,7 @@ Four things carry most of a quality assessment, and they are all things you can 
             ],
             correctIndex: 0,
             explanation:
-              "Length is hard to fake in production and easy to count without training. Colour depth is grape and winemaking, aroma count rewards performance over accuracy, and alcohol is a fact you read rather than a judgment you make.",
+              "Length is hard to fake in production and easy to count without training. Color depth is grape and winemaking, aroma count rewards performance over accuracy, and alcohol is a fact you read rather than a judgment you make.",
             sourceLessonSlug: "somm-conclusion-and-quality",
           },
           {
@@ -1554,7 +1554,7 @@ ${flightCard(FLIGHT_4)}
 
 | | Old World | New World |
 | --- | --- | --- |
-| Labelled by | PLACE. Chablis, Barolo, Rioja | GRAPE. Chardonnay, Malbec, Shiraz |
+| Labeled by | PLACE. Chablis, Barolo, Rioja | GRAPE. Chardonnay, Malbec, Shiraz |
 | Assumes you know | Which grapes that place is permitted to grow | Nothing, which is why it won the shelf |
 | Rules cover | Grape, yield, alcohol, ageing, often technique | Mostly boundaries and percentages |
 
@@ -1568,7 +1568,7 @@ That is why a beginner finds a New World shelf easier and an Old World list hard
 
 **The one stylistic difference that has held up better than the rest** is a matter of intent rather than geography: whether a wine is made to express a specific site or to express a grape at a consistent house style. That distinction runs straight through both hemispheres.
 
-**How to use it in practice.** Use Old World and New World as a LABELLING category, which is precise and useful. When you want to predict style, use climate, grape and winemaking instead. If you catch yourself saying "it tastes New World," translate: you probably mean ripe fruit, higher alcohol, evident oak. Say that instead, because it is falsifiable.
+**How to use it in practice.** Use Old World and New World as a LABELING category, which is precise and useful. When you want to predict style, use climate, grape and winemaking instead. If you catch yourself saying "it tastes New World," translate: you probably mean ripe fruit, higher alcohol, evident oak. Say that instead, because it is falsifiable.
 
 :::reveal Translate the sentence "this tastes very New World" into three falsifiable observations. ||| Something like: the fruit reads ripe or cooked rather than fresh, the alcohol is high (likely 14% or above), and the oak is evident rather than integrated. Each of those can be checked against the glass and the label, where the original sentence cannot, and all three occur regularly in European wine from warm regions.
 
@@ -1747,7 +1747,7 @@ That is why a beginner finds a New World shelf easier and an Old World list hard
 **The fork that makes a red a red.** It is not the grape. It is WHEN you press.
 
 - **White wine:** press first, ferment the juice alone. Little or no skin contact, so little color and almost no tannin.
-- **Red wine:** ferment ON the skins, then press. Colour, tannin and much of the flavor come out of the skins during that maceration.
+- **Red wine:** ferment ON the skins, then press. Color, tannin and much of the flavor come out of the skins during that maceration.
 - **Rose:** brief skin contact, then press. Hours, not weeks.
 - **Skin contact or orange wine:** a white grape treated like a red, fermented on its skins for days to months. The result has tannin and grip, and it usually looks amber.
 
@@ -1760,7 +1760,7 @@ Which is why you can make a white wine from a red grape: press immediately and k
 
 **Sulfites, since the label mentions them.** Sulfur dioxide is an antioxidant and antimicrobial used in winemaking for centuries, and yeast also produce a little on their own, so no wine is entirely sulfite free. In the United States a wine carries the words "Contains sulfites" when the level reaches ten parts per million or more (27 CFR 4.32(e)). EU rules cap the total permitted level, with lower caps for red than for white and rose, and higher allowances for sweet wines (Commission Delegated Regulation (EU) 2019/934, Annex I, Part B). Sulfites cause genuine reactions in a small number of people, particularly some asthmatics. They are not the cause of ordinary red wine headaches, and no good evidence says they are.
 
-:::reveal Champagne is often made largely from Pinot Noir, a black grape, yet it is pale. Explain how, using the fork in the road from this lesson. ||| Colour lives in the skins, and the fork is when you press. Pressing black grapes immediately and fermenting only the juice keeps the wine off the skins, so almost no color is extracted. Red wine is red because it ferments ON the skins before pressing, which is a decision about sequence rather than about the grape.
+:::reveal Champagne is often made largely from Pinot Noir, a black grape, yet it is pale. Explain how, using the fork in the road from this lesson. ||| Color lives in the skins, and the fork is when you press. Pressing black grapes immediately and fermenting only the juice keeps the wine off the skins, so almost no color is extracted. Red wine is red because it ferments ON the skins before pressing, which is a decision about sequence rather than about the grape.
 
 ## Sources
 - Commission Delegated Regulation (EU) 2019/934 of 12 March 2019 supplementing Regulation (EU) No 1308/2013 as regards wine-growing areas, oenological practices and the applicable restrictions. *Official Journal of the European Union, L 149*, 1-52.
@@ -1809,7 +1809,7 @@ ${flightCard(FLIGHT_5)}
       section: "Module 5 · Process",
       body: `Three techniques that all play with the same variable, contact between juice and skins, and produce results a beginner routinely mistakes for grape character.
 
-**Rose, three ways.** Colour is not the point. Method is.
+**Rose, three ways.** Color is not the point. Method is.
 
 - **Direct press.** Black grapes pressed quickly, taking only the faint color that comes out immediately. The pale, delicate Provencal style is made this way, and it is a deliberate style rather than a weak version of something.
 - **Saignee**, meaning bleeding. Some juice is drawn off a red fermentation early. The juice becomes rose, and the remaining red wine gets a higher ratio of skins to juice and therefore more concentration. It is worth knowing that a saignee rose is sometimes a by-product of making a more concentrated red.
@@ -1829,7 +1829,7 @@ Beaujolais is the classic home. Many producers use a partial version, so the mar
 
 **Whole bunch fermentation**, a related idea, keeps the stems in a normal red fermentation. It adds stem tannin and a savory, sometimes green or floral lift. It is common in Syrah and Pinot Noir, and when overdone it reads as stalky and bitter.
 
-:::reveal Why is a pale Provencal rose not simply a weakly coloured red wine, and what does its colour actually tell you? ||| Because pale color is the result of a chosen method, direct pressing, which takes only the color that comes off in the first moments of contact. Colour tells you about SKIN CONTACT TIME rather than about quality, ripeness or concentration, so a deeper rose means longer contact or a different method such as saignee, not a better or worse wine.
+:::reveal Why is a pale Provencal rose not simply a weakly coloured red wine, and what does its colour actually tell you? ||| Because pale color is the result of a chosen method, direct pressing, which takes only the color that comes off in the first moments of contact. Color tells you about SKIN CONTACT TIME rather than about quality, ripeness or concentration, so a deeper rose means longer contact or a different method such as saignee, not a better or worse wine.
 
 ## Sources
 - Robinson, J. (Ed.). (2015). *The Oxford companion to wine* (4th ed.). Oxford University Press.
@@ -1929,7 +1929,7 @@ ${flightCard(FLIGHT_6)}
             ],
             correctIndex: 0,
             explanation:
-              "Colour and tannin come out of the skins during maceration, so the sequence decides the wine. This is exactly why most Champagne is pale despite being made largely from black grapes.",
+              "Color and tannin come out of the skins during maceration, so the sequence decides the wine. This is exactly why most Champagne is pale despite being made largely from black grapes.",
             sourceLessonSlug: "somm-grape-to-glass",
           },
           {
@@ -3533,7 +3533,7 @@ ${flightCard(FLIGHT_11)}
 
 **Step 4: Grape or grape family.** Only now. Use the markers from Module 3, and prefer a family to a name when the evidence is thin. "A thin skinned, high acid red" is a better answer than a confident wrong grape.
 
-**Step 5: Age.** Colour at the rim, the balance of primary to tertiary aromas, and how integrated the tannin feels. Ranges, not years: young, moderate, or with real age.
+**Step 5: Age.** Color at the rim, the balance of primary to tertiary aromas, and how integrated the tannin feels. Ranges, not years: young, moderate, or with real age.
 
 **Step 6: Conclusion and quality.** Commit to a call. Then judge quality separately, using balance, length, intensity and complexity, and note whether the wine is ready.
 

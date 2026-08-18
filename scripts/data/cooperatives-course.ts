@@ -1310,29 +1310,29 @@ Co-ops have invented ways to attract capital without giving away control, and ea
     },
     {
       slug: "coop-demutualisation",
-      title: "16 · Demutualisation: the entity choice reversed",
+      title: "16 · Demutualization: the entity choice reversed",
       section: "Section 4 · The money and governance question",
       body: `The last teaching lesson closes a loop the financing course opened. **A cooperative is a choice, and a choice can be un-made.** The reversal has a name, demutualization, and understanding it is the final test of whether you can read the co-op form, because it is the moment a co-op stops being one.
 
 ## What demutualization is
 
-**Demutualisation is the conversion of a member-owned cooperative or mutual into an investor-owned company.** The members who used to own the business one-member-one-vote are converted into ordinary shareholders (or bought out), and control passes from members-as-users to shareholders-as-investors. **In the language of the four decisions, demutualization rewrites decisions three and four**: ownership changes from a membership tied to use into tradeable stock, and governance changes from one member, one vote into one share, one vote. **The label "co-op" comes off, whatever the sign still says.**
+**Demutualization is the conversion of a member-owned cooperative or mutual into an investor-owned company.** The members who used to own the business one-member-one-vote are converted into ordinary shareholders (or bought out), and control passes from members-as-users to shareholders-as-investors. **In the language of the four decisions, demutualization rewrites decisions three and four**: ownership changes from a membership tied to use into tradeable stock, and governance changes from one member, one vote into one share, one vote. **The label "co-op" comes off, whatever the sign still says.**
 
 Course 4 already showed you this happening. Its lesson on building societies taught that many British building societies and American savings and loans **demutualised**, converting from member-owned mutuals into shareholder-owned banks and distributing windfalls to members in the process (Mason, 2004). **This course is naming the general move that case was an instance of.**
 
 ## Why it happens: the member-capital problem, cashed out
 
-Demutualisation is usually driven by the exact tension the last lesson described. A mutual that has accumulated capital over generations sits on a large pool of value, and:
+Demutualization is usually driven by the exact tension the last lesson described. A mutual that has accumulated capital over generations sits on a large pool of value, and:
 
 - **Managers may want access to equity markets** that the mutual form denies them, to grow or compete, and demutualising opens that door.
 - **Members may be offered a windfall**, a payout of shares or cash, for voting to convert, which can be individually tempting.
-- **The accumulated common capital becomes distributable.** A mutual's reserves were built by many members over many years, held in common. Demutualisation is, in part, the moment that common wealth gets divided up among whoever happens to be a member at the time.
+- **The accumulated common capital becomes distributable.** A mutual's reserves were built by many members over many years, held in common. Demutualization is, in part, the moment that common wealth gets divided up among whoever happens to be a member at the time.
 
 **Hold that last point, because it is the heart of the ethical question.** The capital a century of members built up was **held in common for future members too.** When it is cashed out to the current members, they gain, but the cooperative that would have served the next generation is gone. Whether that is a fair release of trapped value or a raid on a common inheritance is a genuine debate, and this course does not settle it (Birchall, 2011). **What the course insists on is that you see the move for what it is: a transfer of a form from members-as-users to shareholders-as-investors.**
 
 ## The reframing this completes
 
-Section 1 said the co-op form buys democratic control and pays for it in harder access to capital. Demutualisation is what happens when an organization decides **it would rather have the capital.** And that is exactly the reframing course 1 made about the LLC and course 4 made about the mutual:
+Section 1 said the co-op form buys democratic control and pays for it in harder access to capital. Demutualization is what happens when an organization decides **it would rather have the capital.** And that is exactly the reframing course 1 made about the LLC and course 4 made about the mutual:
 
 > **These structures are choices, not facts of nature, and a choice can be un-made.**
 

@@ -1394,7 +1394,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 | **Interpretive themes** | The handful of ideas every tour is supposed to carry | An interpretive plan |
 | **Tour script** | What a guide actually says | Staff training documents |
 | **Label copy** | What an object's card claims | Exhibit files |
-| **Programmes** | What the site teaches beyond the tour | Published program descriptions |
+| **Programs** | What the site teaches beyond the tour | Published program descriptions |
 
 **Note the shape of that table.** **Only the last row is normally visible from outside.** The Harrison site publishes program names including **Youth Leadership Programs**, **Future Presidents of America**, **Project POTUS**, **23rd in the 21st**, and materials **For Educators** (Benjamin Harrison Presidential Site, n.d.-c). **The rest of the table exists and can be asked for**, and asking for it politely, in writing, is a normal thing for a researcher, a student or a neighbor to do.
 
@@ -1461,7 +1461,7 @@ export const PRESIDENTS_HOUSE_COURSE: AuthoredCourse = {
 4. Find the **National Register** record for the property and note the reference number and the listing date.
 5. In MapIndy, find **1230 North Delaware Street** and note the parcel number and which **township, council district and school district** it sits in. **Section 3 explained why those three boundaries are not the same shape.**
 
-**One rule you do not get to break.** **Do not run the parcel drill on somebody's home and publish the result.** Practise on institutional and commercial addresses. A public building whose address is published by the institution that occupies it is a safe target; a house somebody lives in is somebody's home first. **This is the same rule the prerequisite course applied to tourist homes.**
+**One rule you do not get to break.** **Do not run the parcel drill on somebody's home and publish the result.** Practice on institutional and commercial addresses. A public building whose address is published by the institution that occupies it is a safe target; a house somebody lives in is somebody's home first. **This is the same rule the prerequisite course applied to tourist homes.**
 
 ## Sources
 - Internal Revenue Service. (n.d.). *Tax exempt organization search*. https://apps.irs.gov/app/eos/

@@ -117,7 +117,7 @@ they built.
               "Steamboat traffic north along the Mississippi toward St. Louis and beyond",
               "The Illinois Central railway and its subsidiary, running roughly 800 miles across the Delta",
               "Highway routes built during the same period to connect southern farms to northern markets",
-              "Organised bus services chartered by northern employers seeking agricultural labor",
+              "Organized bus services chartered by northern employers seeking agricultural labor",
             ],
             correctIndex: 1,
             explanation:

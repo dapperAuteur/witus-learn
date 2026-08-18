@@ -501,7 +501,7 @@ A plausible choice is a **C-corporation**, often formed in a state chosen for it
 
 - **Liability.** The corporation is a separate legal person with a wall, the same protection an LLC would give. Liability is not where this choice is won or lost; it is a floor both candidates clear.
 - **Taxation.** Here is the honest cost: a C-corporation is its own taxpayer, so its profit is taxed at the entity level, the double-tax feature from course 2. The defense does not hide this. It says the founders accept an entity-level tax cost in exchange for the fundraising fit, and that an accountant weighs how much that cost bites.
-- **Ownership and transfer.** This is why the C-corp wins. Standardised, tradeable **shares** are what priced investment rounds, employee option pools, and later share transfers all assume. Investors know how to buy shares; they do not want to negotiate a membership interest in an operating agreement.
+- **Ownership and transfer.** This is why the C-corp wins. Standardized, tradeable **shares** are what priced investment rounds, employee option pools, and later share transfers all assume. Investors know how to buy shares; they do not want to negotiate a membership interest in an operating agreement.
 - **Governance.** Delegated, in the board-and-officers shape investors expect: shareholders elect a board, the board hires officers. Investors typically want a board seat, and this structure gives them the familiar mechanism.
 
 ## Beat one alternative
@@ -554,7 +554,7 @@ A plausible choice is a **worker cooperative**, where the state recognises a coo
 
 ## Defend it against the four
 
-- **Liability.** Organised as an incorporated cooperative, it is a separate legal person with a wall, so the members are generally shielded from the business's debts, subject to the usual gaps.
+- **Liability.** Organized as an incorporated cooperative, it is a separate legal person with a wall, so the members are generally shielded from the business's debts, subject to the usual gaps.
 - **Taxation.** The defense stays honest and conceptual: cooperative taxation has its own rules, and how this one is taxed depends on its structure and elections. This is a place to say "an accountant would confirm this," not to assert a rate.
 - **Ownership and transfer.** Members own the cooperative through their participation, not through shares bought and sold on a market. Ownership is tied to being a worker there, which is exactly what "the people who do the work are the owners" asked for.
 - **Governance.** This is where the choice is won. **One member one vote** gives each worker an equal say regardless of how much capital they contributed. People control, not capital. That single rule is the reason the cooperative beats the alternatives, and it is pure decision four (International Cooperative Alliance, n.d.).

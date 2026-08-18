@@ -273,7 +273,7 @@ A real constitution answers all three questions simultaneously, and the answers 
             prompt: "A constitution that distributes power but never limits it can:",
             options: [
               "Never actually be obeyed",
-              "Organise an efficient tyranny",
+              "Organize an efficient tyranny",
               "Only ever be a short text",
               "Not create any institutions",
             ],
@@ -1495,7 +1495,7 @@ The fills, and the markers on them, are grouped by the course's FIRST axis, how 
 
 ## Read the other two axes in the descriptions
 
-Colour carries only the first axis. Each marker's description carries the other two (territorial and form) plus, where relevant, the MAKING route from Section 4, so the map ties the whole course together:
+Color carries only the first axis. Each marker's description carries the other two (territorial and form) plus, where relevant, the MAKING route from Section 4, so the map ties the whole course together:
 
 - The **federal** cases (the United States, Germany, Brazil) against the **unitary** ones (France, Japan, New Zealand, and the United Kingdom at its center).
 - The **uncodified** cluster (the United Kingdom and New Zealand here, with Israel the third from Lesson 9) against the codified majority.
@@ -1503,7 +1503,7 @@ Colour carries only the first axis. Each marker's description carries the other 
 
 ## What the map cannot show, and what that proves
 
-**It cannot show that two same-colored dots are opposite in every other way.** Amber Germany and amber New Zealand are both parliamentary, yet one is federal, codified, and rigid, and the other is unitary, uncodified, and flexible. **Colour carries one axis; the portrait needs all three**, which is exactly why the capstone asks you to write all three out for a country of your choosing, from its documents. Read the legend, then go classify one. This is comparative description, not legal advice.
+**It cannot show that two same-colored dots are opposite in every other way.** Amber Germany and amber New Zealand are both parliamentary, yet one is federal, codified, and rigid, and the other is unitary, uncodified, and flexible. **Color carries one axis; the portrait needs all three**, which is exactly why the capstone asks you to write all three out for a country of your choosing, from its documents. Read the legend, then go classify one. This is comparative description, not legal advice.
 
 ## Sources
 - Lijphart, A. (1999). Patterns of democracy: Government forms and performance in thirty-six countries. Yale University Press.

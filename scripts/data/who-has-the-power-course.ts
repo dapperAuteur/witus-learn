@@ -1517,7 +1517,7 @@ The map places, over one region, the layers of government that can hold authorit
 
 **It cannot show overlap as area.** A reservation, a city, a county, and a water district are shapes that lie on top of one another, and a dot cannot draw a shape. The plan for this path notes that these courses are the first content that genuinely needs a polygon map layer rather than pins; until that ships, hold the overlap in your head while you read the dots.
 
-**It cannot show how firmly each power is held.** The blue markers look alike, but the state is entrenched in the federal constitution and the city is a creature of the state. Colour shows the sovereign/stack distinction; it cannot show the entrenchment distinction inside the stack. That one you carry from Section 3.
+**It cannot show how firmly each power is held.** The blue markers look alike, but the state is entrenched in the federal constitution and the city is a creature of the state. Color shows the sovereign/stack distinction; it cannot show the entrenchment distinction inside the stack. That one you carry from Section 3.
 
 ## Sources
 - U.S. Census Bureau. (2017). 2017 Census of Governments, Organization component. https://www.census.gov/programs-surveys/cog.html
