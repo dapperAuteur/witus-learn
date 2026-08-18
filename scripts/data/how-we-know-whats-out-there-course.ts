@@ -463,7 +463,7 @@ This is where almost every popular account goes wrong, so be precise.
 
 **It does not mean** galaxies are flying outward through space away from a central point where something happened. There is no such point, and we are not near it.
 
-**It means** the distances between things are increasing everywhere. Space itself is expanding, and light traveling through it gets stretched along the way. Every observer anywhere sees distant galaxies receding, which is why "where was the centre" is a question with no location as an answer.
+**It means** the distances between things are increasing everywhere. Space itself is expanding, and light traveling through it gets stretched along the way. Every observer anywhere sees distant galaxies receding, which is why "where was the center" is a question with no location as an answer.
 
 The standard image is dots on a balloon being inflated: every dot moves away from every other dot, no dot is the center, and the surface has no edge. Like every analogy it breaks if pushed, but the part it gets right is the part people get wrong.
 

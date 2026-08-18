@@ -26,7 +26,7 @@
 
 import type { AuthoredCourse } from "./authored-course";
 
-const NOT_LEGAL_ADVICE = `> **This is education about the law, not legal advice.** Open-meetings law, recording-consent rules and defamation standards differ by state and change. Where this course names a rule it names the state it belongs to and the source it came from. For your own jurisdiction, read your state's act and ask your local programme staff, which is what the Documenters Field Guide itself tells you to do.`;
+const NOT_LEGAL_ADVICE = `> **This is education about the law, not legal advice.** Open-meetings law, recording-consent rules and defamation standards differ by state and change. Where this course names a rule it names the state it belongs to and the source it came from. For your own jurisdiction, read your state's act and ask your local program staff, which is what the Documenters Field Guide itself tells you to do.`;
 
 export const CIVIC_DOCUMENTATION_COURSE: AuthoredCourse = {
   title: "Civic Documentation: Recording What Happened in Public",

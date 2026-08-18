@@ -366,7 +366,7 @@ Put those two paragraphs side by side, because the distance between them is the 
 
 **Why the parking lots are evidence, and of what.** A parking lot is not evidence about anybody's motive. It is evidence that there is no building. But on the Lower Hill the surface lots are also evidence about the plan: they are the physical footprint of promises made to justify a clearance and then not kept. **When beat 5 sends you to the redevelopment happening on this ground right now, those same lots are the thing being fought over**, which is why a land-use fact from 1966 is still a live civic fact in your lifetime.
 
-**A caution before Section 3.** Nothing in this lesson yet tells you who decided any of it, or under what power. "The neighbourhood was cleared" is a description, not an instrument. **Section 3 names the bodies and the statutes.** For now, hold the shape of the change: from a working neighborhood to a single building and a field of parking, on ground where a cultural center was promised.
+**A caution before Section 3.** Nothing in this lesson yet tells you who decided any of it, or under what power. "The neighborhood was cleared" is a description, not an instrument. **Section 3 names the bodies and the statutes.** For now, hold the shape of the change: from a working neighborhood to a single building and a field of parking, on ground where a cultural center was promised.
 
 ## Sources
 - The Field. (2021, January 26). *Reviving the Hill, one of the oldest residential neighborhoods in the Steel City*. American Society of Landscape Architects. https://thefield.asla.org/2021/01/26/reviving-the-hill-one-of-the-oldest-residential-neighborhoods-in-the-steel-city/

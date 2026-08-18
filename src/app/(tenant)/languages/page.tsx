@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const brand = brandName(sdb.tenant);
   const title = `Language Atlas, ${brand}`;
   const description =
-    "Where the languages we teach come from and where they travelled: origin pins, speaker regions, and the routes colonisation carried them along.";
+    "Where the languages we teach come from and where they traveled: origin pins, speaker regions, and the routes colonization carried them along.";
   const image = ogImageUrl({ title: "Language Atlas", subtitle: "Origins, speakers, and the routes between" });
   return {
     title,

@@ -792,7 +792,7 @@ International law borrows two Latin phrases to mark this gap, and they are worth
 
 ## Recognition is a spectrum, not a switch
 
-The second correction to intuition: **recognition is not on-or-off.** Between "recognised by everyone" and "recognised by no one" lies a wide middle. An entity might be recognized by a handful of states, or by a large bloc but not by its immediate neighbor, or recognized at one time and de-recognized later as other governments change their positions. **Recognition is also bilateral and political:** each state decides for itself whom to recognize, and it can and does change its mind. So "is this a state?" often has no single global answer, only a map of which governments say yes, which say no, and which stay deliberately silent.
+The second correction to intuition: **recognition is not on-or-off.** Between "recognized by everyone" and "recognized by no one" lies a wide middle. An entity might be recognized by a handful of states, or by a large bloc but not by its immediate neighbor, or recognized at one time and de-recognized later as other governments change their positions. **Recognition is also bilateral and political:** each state decides for itself whom to recognize, and it can and does change its mind. So "is this a state?" often has no single global answer, only a map of which governments say yes, which say no, and which stay deliberately silent.
 
 ## The rule this section runs on
 
@@ -901,7 +901,7 @@ There is also a status short of membership. The UN recognises **permanent observ
 | Is it a UN member? | A Security Council recommendation (with the veto) plus a two-thirds Assembly vote |
 | Is it recognized by country Z? | Country Z's own political decision, which it can change |
 
-**Read the three rows as three separate questions with three separate answers.** They often line up, which is why the shortcut feels reliable, but in exactly the contested cases where you most want an answer, they can come apart: an entity can be a UN member and still have its status disputed by some, or can govern effectively for decades and never be admitted. **The clean lesson to carry out of Section 3: "state," "UN member," and "recognised by country Z" are three different statuses, and treating any one as a stand-in for another is where clear thinking about the recognition question goes wrong.**
+**Read the three rows as three separate questions with three separate answers.** They often line up, which is why the shortcut feels reliable, but in exactly the contested cases where you most want an answer, they can come apart: an entity can be a UN member and still have its status disputed by some, or can govern effectively for decades and never be admitted. **The clean lesson to carry out of Section 3: "state," "UN member," and "recognized by country Z" are three different statuses, and treating any one as a stand-in for another is where clear thinking about the recognition question goes wrong.**
 
 ## Sources
 - Charter of the United Nations, arts. 4, 18 (1945). https://www.un.org/en/about-us/un-charter/full-text

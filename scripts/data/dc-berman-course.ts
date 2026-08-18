@@ -1575,7 +1575,7 @@ Pick one and commit, because mixing them is what makes place writing mushy.
 
 ## Step 4 · Write it, under these craft rules
 1. **Lead with a specific.** A street number, a percentage from the survey, a date on a document. Not a mood.
-2. **Name the instrument every time you name a loss.** "The neighbourhood was cleared" is weak. "The Redevelopment Land Agency acquired it under the 1945 Act, and Berman v. Parker held the taking lawful" is strong, if you can source it.
+2. **Name the instrument every time you name a loss.** "The neighborhood was cleared" is weak. "The Redevelopment Land Agency acquired it under the 1945 Act, and Berman v. Parker held the taking lawful" is strong, if you can source it.
 3. **Give a figure its owner.** Not "23,000 people were displaced" but "the local histories compiled by WETA's Boundary Stones put displacement from the Southwest renewal at about 23,000 residents."
 4. **Attribute an argument as an argument.** James Baldwin called urban renewal "Negro removal" (WTTW, n.d.). **You may quote and engage that. You may not launder it into your own narration as though it were a finding.** The distinction between a documented chronology and an interpretive frame is the most important thing in this section.
 5. **Quote the opinion exactly, or not at all.** If you use *Berman*, use its real words. Douglas wrote that public welfare is "broad and inclusive." **Do not improve the quotation, and do not attribute to the Court a holding it did not reach**, which lesson 9 spelled out.

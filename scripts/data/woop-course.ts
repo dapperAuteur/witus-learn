@@ -1334,7 +1334,7 @@ The clearest published description of the procedure is in the methods of the exe
 - **Obstacle:** I never log my hours as I go, so when invoicing day comes I cannot face reconstructing the month, and I put it off.
 - **Plan:** If I close my laptop at the end of a working day, then I will log that day's hours before I stand up.
 
-Notice what that plan is *not*. It is not "invoice on time." It is not "be more organised." It attacks the **obstacle**, which was never the invoicing at all. It was the logging. That is what the obstacle step is for: it moves the intervention from the place where the pain shows up to the place where the failure actually happens.
+Notice what that plan is *not*. It is not "invoice on time." It is not "be more organized." It attacks the **obstacle**, which was never the invoicing at all. It was the logging. That is what the obstacle step is for: it moves the intervention from the place where the pain shows up to the place where the failure actually happens.
 
 (This mapping of the four steps onto getting paid as a freelancer is BAM's, from the *She Clocked In* series, and it is a correct and non-trivial application of the method.)
 

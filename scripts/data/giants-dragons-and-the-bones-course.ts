@@ -1532,7 +1532,7 @@ Andrew Dickson White, then president of Cornell, went to look and came away unpe
 
 Gypsum is soft and it is soluble. A gypsum figure buried in damp New York soil for the thousands of years the story required would not have crisp tool marks on it. It would be pitted, rounded and partly gone.
 
-That is the sort of argument that settles things: not "this seems unlikely" but "this material behaves in a known way under known conditions, and this object does not show that behaviour." It is checkable by anybody, and it does not require you to know anything about Hull.
+That is the sort of argument that settles things: not "this seems unlikely" but "this material behaves in a known way under known conditions, and this object does not show that behavior." It is checkable by anybody, and it does not require you to know anything about Hull.
 
 Hull confessed within a few months of the discovery.
 

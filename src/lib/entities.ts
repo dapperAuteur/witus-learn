@@ -47,7 +47,7 @@ export const ENTITIES: Entity[] = [
     aliases: ["milliken"],
     description: "The 1974 decision that limited school desegregation remedies across district lines.",
     courses: [
-      { courseSlug: "the-gym-and-the-color-line", note: "The district line as a colour line." },
+      { courseSlug: "the-gym-and-the-color-line", note: "The district line as a color line." },
       { courseSlug: "seattle-the-modern-bookend", note: "The modern application of the district-line logic." },
       { courseSlug: "how-the-tools-travelled", note: "One of the capstone's tested cross-city rhymes." },
     ],
@@ -248,7 +248,7 @@ export const ENTITIES: Entity[] = [
         },
         {
           courseSlug: "asia-before-european-colonization",
-          note: 'Lesson 10 states it plainly about Angkor: the 1860s European traveller "did not discover a lost city", because Khmer people were worshipping in it.',
+          note: 'Lesson 10 states it plainly about Angkor: the 1860s European traveler "did not discover a lost city", because Khmer people were worshipping in it.',
         },
       ],
     },

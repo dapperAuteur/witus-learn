@@ -149,7 +149,7 @@ Every customer-facing surface must pass before it can merge:
   or missing alt/caption/credit, and on any URL that is not `https://res.cloudinary.com` (hotlinking
   a museum server means the image can rotate or 404 unnoticed).
 
-  **Get the image there first.** `scripts/upload-course-media.mjs` reads the licence from the source's
+  **Get the image there first.** `scripts/upload-course-media.mjs` reads the license from the source's
   own metadata, refuses anything it cannot classify as free-with-commercial-use, and copies the asset
   into Cloudinary. Then `pnpm register:media <manifest>` puts it in the owner's review queue at
   `/admin/media`, where a human approves it before the course goes live. Never publish an image whose

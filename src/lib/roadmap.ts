@@ -400,8 +400,8 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   from live rows, never stored, so there is no regeneration step to forget and no stale copy to
   distrust: a course added or a prerequisite set in \`/admin/paths\` a minute ago is already in it.
   Edges come from \`course_prerequisites\` (required, solid + arrow; recommended, dashed + arrow) and
-  the \`ENTITIES\` registry (a shared person/case/law/concept, labelled with the entity's name);
-  colour and clustering come from the course's category. Two views: an **ego-centric radial** picture
+  the \`ENTITIES\` registry (a shared person/case/law/concept, labeled with the entity's name);
+  color and clustering come from the course's category. Two views: an **ego-centric radial** picture
   of one course on rings by tie strength, and a **whole-catalog** view clustered by category rather
   than scattered into a hairball. Deterministic trigonometry, **no \`d3-force\` and no new
   dependency**, so the same course draws identically every load and a screenshot is comparable
@@ -416,7 +416,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   **Entity links move on deploy, not on save** (the registry is code), and the page says so.
   Semantic/CYOA edges (ring 4) are **not shipped**: the similarity match is lesson-grained, so the
   course-level rollup rule is a visible judgment call, and the underlying query only sees courses
-  that opted into cross-course CYOA. It ships when that rule is decided and can be labelled.
+  that opted into cross-course CYOA. It ships when that rule is decided and can be labeled.
 
 ### Platform backlog
 - ⚪ **Add RideWitUS to cross-promotion when it's public**: it's intentionally omitted from
@@ -522,7 +522,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   deciding the endpoint and body **once, at enqueue time** (\`src/lib/outbox-kinds.ts\`); the flusher
   stays generic, with no \`switch (kind)\`, so the page a bug was seen on and the lesson a correction is
   about are **baked in** rather than re-derived from wherever the browser happens to be when the
-  network returns. **Online behaviour is unchanged**, a healthy submit goes straight to its API and is
+  network returns. **Online behavior is unchanged**, a healthy submit goes straight to its API and is
   never routed through the queue. Pending items are **visible** (a "N waiting" badge on the collapsed
   Report button, pending rows in both forms, each with an honest status and a Discard), because
   someone who files a bug and sees nothing files it again. Signed-out reports queue and flush
@@ -542,7 +542,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   would copy working credentials into a triage inbox. \`src/lib/email-redact.ts\` therefore strips every
   token-bearing URL from the mirrored body (**biased to redact when unsure**: unknown query-param
   secrets, token-redemption paths, token-shaped path segments, and anything unparseable), scrubs
-  labelled raw secrets (PIN/password), and **never mirrors the HTML part** at all. \`/verify/<token>\`
+  labeled raw secrets (PIN/password), and **never mirrors the HTML part** at all. \`/verify/<token>\`
   is deliberately **kept**, a certificate check is *meant* to be shareable. What crosses the boundary
   is **metadata** (recipient, subject, which email, tenant, timestamp, delivered/failure) plus the
   redacted body and the **routes** the stripped links pointed at, enough to answer "did the sign-in
@@ -680,7 +680,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   what that did. One pure helper now classifies a proposed change (free to paid, paid to free, an
   increase or decrease, a one-time / subscription switch, or nothing material) and returns the
   consequences it actually carries: the cached Stripe price is cleared so the next checkout mints a
-  new one, existing subscribers are NOT cancelled or migrated by anything this app does, nobody is
+  new one, existing subscribers are NOT canceled or migrated by anything this app does, nobody is
   refunded a difference, and the new price is public the moment it saves. Both write paths refuse a
   material change without an explicit \`confirm: true\` and answer **409** with the warning list, so
   the guard survives a direct API call, and both UIs show that list plus the course's CURRENT
@@ -796,7 +796,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   (dev only) \`acme.localhost\` on the dev port; if none exists yet the button degrades to a "not
   published yet" note instead of a dead link. Linked from a new **Demo** nav item, the home page's
   recruiting block, and the ecosystem footer. No migration.
-- ✅ **The standards finder honours \`?course=\` without a state** (\`fix/standards-course-without-state\`):
+- ✅ **The standards finder honors \`?course=\` without a state** (\`fix/standards-course-without-state\`):
   every course page (and every "Coming soon" landing page) links to \`/academic-standards?course=<slug>\`
   under "See the full standards detail for this course", and that URL used to land on the generic state
   chooser, which **ignored the course param entirely**. Someone who asked "where does THIS course count?"
@@ -836,7 +836,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   share neither, which is the only edge type that can cross a category boundary. Four added, and two
   of them do exactly that: **what-would-change-my-mind** reaches Study Skills (WOOP states it as the
   third test of a real theory), and **discovery-as-a-word** reaches the precolonial track (Asia
-  Before European Colonization says outright that the 1860s traveller did not discover Angkor, because
+  Before European Colonization says outright that the 1860s traveler did not discover Angkor, because
   Khmer people were worshipping in it). Plus **who-gets-believed** and **the-missing-actor**.
   Entity edges 12 → 25, courses touched 18. **Two proposed entities were DROPPED rather than shipped:**
   the Cardiff Giant and the Bone Wars are each taught in exactly one course, and the registry hides an
@@ -855,7 +855,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   and \`FREE_BY_DESIGN\` in \`src/lib/course-pricing.ts\` records WHY each is free, because a row
   reading price 0 otherwise means either "this is the funnel" or "nobody priced it yet" and those
   call for opposite actions. **10 public-domain/CC0 images** are uploaded to Cloudinary by the new
-  \`scripts/upload-course-media.mjs\`, which rights-checks every asset against the Wikimedia licence
+  \`scripts/upload-course-media.mjs\`, which rights-checks every asset against the Wikimedia license
   metadata, refuses anything it cannot classify as free-with-commercial-use, and verifies the target
   lesson slug exists before uploading. They await approval at \`/admin/media\` and do not render until
   the \`:::figure\` directive ships.
@@ -949,7 +949,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   ingredient nobody buys, and the C-price economics behind the \$5 cup. **Chocolate** (17 lessons, 6
   flights, sequel to S1E3) teaches melt and temper as data, why the percentage is a recipe ratio rather
   than a quality score, that the Criollo/Forastero/Trinitario framework is superseded by ten genetic
-  clusters, and the labour and living-income facts with sources. Each carries a required parallel path
+  clusters, and the labor and living-income facts with sources. Each carries a required parallel path
   for non-consumers (caffeine-free, dairy-free/lower-sugar) via the generalised \`Flight.alternate\`
   field on the shared scaffold. Both seeded by \`pnpm seed:sommelier\`.
 - ✅ **"Also discussed in" on lesson pages, and a year brush on the globe** (plans/45 follow-ups). A
@@ -995,7 +995,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   course can SHOW co-occurrence (two things happening at once) instead of asserting it. Syntax mirrors
   the \`:::reveal\` family: \`:::timeline Optional title\` then \`year | lane | text\` (or
   \`year | text\`) lines, closed by \`:::\`. Events with lanes (e.g. built vs done) each get a
-  colour and a legend, so the two tracks read at a glance and stay mobile-friendly. Pure data plus
+  color and a legend, so the two tracks read at a glance and stay mobile-friendly. Pure data plus
   markup (offline-safe, no dependency, no new lesson type), parsed by \`src/lib/timeline.ts\` (unit
   tested) and rendered by \`TimelineBlock\`, wired into \`LessonBody\` beside the reveal/tool/field-log
   directives. The design rule holds in the author's text, not the renderer: co-occurrence is the claim,
@@ -1055,7 +1055,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   contested states taught neutrally with attribution, and self-governing communities), **How Power
   Changes Hands** (\`how-power-changes-hands\`, government course 8: election systems that turn identical
   votes into different winners, then coups, revolutions, negotiated transitions and term limits, the
-  worked example labelled hypothetical), and **Governance: Who Actually Decides** (\`business-governance\`,
+  worked example labeled hypothetical), and **Governance: Who Actually Decides** (\`business-governance\`,
   business course 6: boards, fiduciary duty, dual-class shares, the German two-tier board, and one share
   one vote vs one member one vote). All map to the RH/WHST strands; every new bank 23-35% on the length
   tell. Finally the two CAPSTONES land and **both paths are complete**: **Map Your Own Stack**
@@ -1141,7 +1141,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   text that it does not equate outcomes.
   **Then the shape problem got fixed.** Fourteen courses on clearance and exclusion can leave a
   learner concluding this history is only things done to people, which is false, and no amount of
-  upbeat sentences inside those courses fixes it, because the argument is made by the CATALOGUE.
+  upbeat sentences inside those courses fixes it, because the argument is made by the CATALOG.
   So a second track runs beside it (\`plans/44\`): **The Schoolhouse Network** (the Rosenwald
   school-building program, where the finding is that communities contributed **more** than the Fund,
   16.5 vs 15.1 percent, which reframes a story usually told as philanthropy), **Where We Rested**
@@ -1185,7 +1185,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`pnpm check:longest-option\` runs inside \`pnpm lint\` as a **ratchet**: the 138 pre-existing files
   carry their measured score, may not get worse, and anything not on that list fails. The remaining
   sweep is planned in \`plans/47\`, AI series first.
-- ✅ **Quiz answer positions are balanced, and guarded** (\`fix/quiz-answer-balance\`). A catalogue-wide
+- ✅ **Quiz answer positions are balanced, and guarded** (\`fix/quiz-answer-balance\`). A catalog-wide
   audit found **118 quiz banks** where more than 60 percent of correct answers sat at one option index
   with no shuffling, roughly 1,250 questions a learner could pass by always picking the same letter.
   All 118 now shuffle, so the stored index never reaches the screen as a fixed slot, and scoring is
@@ -1206,7 +1206,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   check is the one network call on that screen and fails silently, so offline the page behaves
   exactly as before.
 - ✅ **Readable authoring URLs** (\`feat/teach-readable-urls\`). The instructor pages were
-  \`/teach/<uuid>\`, which is impossible to read, say out loud, or recognise in a browser history.
+  \`/teach/<uuid>\`, which is impossible to read, say out loud, or recognize in a browser history.
   They now accept the course **slug**: \`/teach/faa-part-107\`, \`/teach/faa-part-107/script\`,
   \`/teach/faa-part-107/submissions\`. **Every existing uuid link still works**, so nothing bookmarked
   breaks. No migration: \`courses.slug\` already existed for the public
@@ -1636,7 +1636,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Laboral** (DL 2756 unions / DL 2758 bargaining; eight decree laws, one 1978 + seven July 1979;
   José Piñera, appointed late 1978 amid the **AFL-CIO boycott threat**), bargaining locked to the
   **firm**, federations barred, pluralism-as-fragmentation, non-union \`grupos negociadores\`, and
-  the strike engineered not to paralyse (replacement + the **59-day deemed-resignation trapdoor**,
+  the strike engineered not to paralyze (replacement + the **59-day deemed-resignation trapdoor**,
   mirrored against *Mackay Radio* 1938). Before it: Iquique 1907 (toll taught **as contested**,
   official ~126 vs the Cantata's 3,600), the CUT (1953), the **34% density peak (1973,
   Fundación Sol)**; the destruction told from **Rettig Commission findings** (3,000+ killed or
@@ -1665,14 +1665,14 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   The spine: the union movement that helped end apartheid **then joined the government it once
   fought**. Exclusion **by race, by statute**, the track's outside-the-category move undisguised
   (ICA 1924's "employee" definition excluding pass-bearers, the 1953 strike ban and "works
-  committees", the 1926 Colour Bar Act that white labour itself demanded, the Rand Revolt taught
+  committees", the 1926 Colour Bar Act that white labor itself demanded, the Rand Revolt taught
   honestly). Durban 1973's leaderless strikes (documented RANGE: ~61,000 per the IIE study /
   ~100,000 per SAHO), Wiehahn's control gamble, **Joe Foster's 1982 independence warning** planted
   as "a prediction whose test results come later", COSATU's 1985 launch (~460,000, SAHO), the 1987
   miners' strike (both sides' numbers), the Tripartite Alliance into 1994. Post-94: **LRA 66 of
   1995** (no farm/domestic carve-out, the anchor's NLRA move deliberately refused) vs **32.9%
   official / 43.1% expanded unemployment (Q1 2025, Stats SA QLFS)**, the insider/outsider critique
-  steelmanned BOTH ways, and **labour broking** as the track's rhyme (s 198, s 198A of 2014,
+  steelmanned BOTH ways, and **labor broking** as the track's rhyme (s 198, s 198A of 2014,
   *Assign Services* [2018] ZACC 22). 🔴 **Marikana taught from the Farlam Commission's published
   findings** (report released 25 Jun 2015): what it FOUND (defective operation, materially
   untruthful police account, Lonmin/NUM/AMCU failures, Ramaphosa accusation rejected) vs what it
@@ -1945,7 +1945,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   one carrying an \`explanation\` + \`sourceLessonSlug\`). The game the US calls soccer, called
   **football** throughout at BAM's instruction: the game & the pitch · **how to play** (first touch,
   dribbling, finishing, defending, goalkeeping) · **the Laws** · **strategy** · **history** · who runs
-  what & the leagues · money & labour · **opportunities for amateurs and entrepreneurs**.
+  what & the leagues · money & labor · **opportunities for amateurs and entrepreneurs**.
   **Governance is stated correctly, and this is the load-bearing part**: the **Laws of the Game are
   written by THE IFAB, not FIFA**, FIFA holds **4 of 8 votes**, a change needs a three-quarters
   majority (**6**), so FIFA *cannot change a Law alone*. There are **17 Laws**, revised annually, and
@@ -1964,7 +1964,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   **the FA's 1921 ban on women's football, which lasted 50 years**, the resolution quoted verbatim
   ("quite unsuitable for females"). The entrepreneur section is concrete and cited: **refereeing** as a
   real paid job from age **13** (one association's *published* pay scale, \$30-\$90/game), the coaching
-  licence ladder, the **pay-to-play** problem (Aspen/Project Play: soccer ≈**\$1,188**/child/season;
+  license ladder, the **pay-to-play** problem (Aspen/Project Play: soccer ≈**\$1,188**/child/season;
   **24% vs 40%** participation by household income), and the honest odds (**NCAA's own** table: **1.4%**
   of HS boys and **2.8%** of girls reach D-I, and the NCAA publishes **no** HS→pro figure for soccer,
   which the course explains rather than inventing). **No fabricated statistics, quotes or people**; the
@@ -2001,7 +2001,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
   now answers **what is this → what will my student learn → why trust it → what next**, for the
   people who actually buy (parents, teachers, homeschoolers), each addressed on their own terms.
-  **The map is still the centrepiece**, short hero, map immediately below it, both CTAs pointing
+  **The map is still the centerpiece**, short hero, map immediately below it, both CTAs pointing
   back at it. **Every figure on the page is a count of the tenant's own rows** (episodes, origins,
   seasons, belt countries, lessons, courses, free courses, cited sources, verified sources, tracked
   claims, named instructors) via a new tenant-scoped \`src/db/queries/explore.ts\`, \`course_sources\`

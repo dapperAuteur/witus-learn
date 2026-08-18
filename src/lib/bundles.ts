@@ -167,7 +167,7 @@ export const BUNDLE_PROPOSALS: BundleProposal[] = [
     ],
     appPrice: 49,
     appJustification:
-      "The no-licence on-ramp: everything needed to earn with a 360 camera, or a phone, without waiting on an FAA certificate. Four paid courses sum to $96, so $49 is a clean half-off. It is priced just under the single $49.99 Udemy virtual-tour title it competes with while delivering four courses instead of three hours, though Udemy discounts hard, so treat that as position rather than a knockout. This is the impulse tier and the entry point to the whole series.",
+      "The no-license on-ramp: everything needed to earn with a 360 camera, or a phone, without waiting on an FAA certificate. Four paid courses sum to $96, so $49 is a clean half-off. It is priced just under the single $49.99 Udemy virtual-tour title it competes with while delivering four courses instead of three hours, though Udemy discounts hard, so treat that as position rather than a knockout. This is the impulse tier and the entry point to the whole series.",
     tptPrice: null,
     tptJustification:
       "No TpT price, and there should never be one. Teachers Pay Teachers is a K-12 teacher marketplace; commercial 360 capture services have no buyer there. Recorded explicitly so this is not re-litigated as an oversight.",
@@ -188,7 +188,7 @@ export const BUNDLE_PROPOSALS: BundleProposal[] = [
     ],
     appPrice: 99,
     appJustification:
-      "Licence to livelihood in one purchase, and it MUST include faa-part-107: the certificate is a hard prerequisite for all six vertical courses, so selling this bundle without it would be selling a locked door. Sum of parts is $213. At $99 it undercuts Drone Launch Academy's $199 exam prep ALONE, before any vertical training, which is why this is the bundle marketing should lead with. Their roof-inspection course by itself is $499 against our $29 equivalent; that gap is worth investigating rather than boasting about, since a $499 course usually ships sample deliverables we do not have yet.",
+      "License to livelihood in one purchase, and it MUST include faa-part-107: the certificate is a hard prerequisite for all six vertical courses, so selling this bundle without it would be selling a locked door. Sum of parts is $213. At $99 it undercuts Drone Launch Academy's $199 exam prep ALONE, before any vertical training, which is why this is the bundle marketing should lead with. Their roof-inspection course by itself is $499 against our $29 equivalent; that gap is worth investigating rather than boasting about, since a $499 course usually ships sample deliverables we do not have yet.",
     tptPrice: null,
     tptJustification:
       "No TpT price. Commercial drone services have no K-12 teacher buyer. See the 360 bundle's note.",

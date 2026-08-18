@@ -55,7 +55,7 @@ That is the whole course in one sentence. A bank will not lend to you, an insure
 
 ## Where you have already seen this, if you took the earlier courses
 
-**The shipped course *What They Built* is one worked example of this idea.** It taught that Black communities in Durham, Richmond, Atlanta, Tulsa and Chicago, shut out of white banks and insurers, financed themselves through **fraternal orders, industrial insurance companies and building and loan associations**. That course made one argument that this one now generalises: those institutions "are not colour. They are entity types, chosen because of what the law let each one do."
+**The shipped course *What They Built* is one worked example of this idea.** It taught that Black communities in Durham, Richmond, Atlanta, Tulsa and Chicago, shut out of white banks and insurers, financed themselves through **fraternal orders, industrial insurance companies and building and loan associations**. That course made one argument that this one now generalises: those institutions "are not color. They are entity types, chosen because of what the law let each one do."
 
 **And the method course, *What a Business Entity Actually Is*, gave you the tool to read them.** It taught that any entity is a bundle of **four decisions**: who pays the debts (liability), who pays the tax (taxation), who owns it and how ownership moves (ownership and transfer), and who gets to decide (governance). **Every institution in this course is a different set of answers to those four questions**, chosen under a constraint. Hold the four decisions in your head and a friendly society, a chit fund and an Islamic bank all become readable.
 

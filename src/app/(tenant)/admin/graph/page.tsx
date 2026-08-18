@@ -146,7 +146,7 @@ export default async function ConnectionGraphPage({
         Prerequisite links are live from the database. Entity links come from{" "}
         <code>src/lib/entities.ts</code>, which is code, so they change on{" "}
         <strong className="font-semibold">deploy</strong>, not when a course is saved. Semantic
-        (CYOA) neighbours are deliberately not drawn: see the note under the picture.
+        (CYOA) neighbors are deliberately not drawn: see the note under the picture.
       </p>
 
       {/* ── Controls ─────────────────────────────────────────────────────── */}
@@ -156,7 +156,7 @@ export default async function ConnectionGraphPage({
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <label htmlFor="course" className="block text-sm font-medium">
-              Centre the graph on
+              Center the graph on
             </label>
             <select id="course" name="course" defaultValue={centreNode?.id ?? ""} className={`${controlBase} mt-1`}>
               {allCategories.map((cat) => (
@@ -181,7 +181,7 @@ export default async function ConnectionGraphPage({
               View
             </label>
             <select id="view" name="view" defaultValue={view} className={`${controlBase} mt-1`}>
-              <option value="ego">One course and its neighbours</option>
+              <option value="ego">One course and its neighbors</option>
               <option value="catalog">Whole catalog, clustered by category</option>
             </select>
             <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
@@ -260,9 +260,9 @@ export default async function ConnectionGraphPage({
         <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-xs text-neutral-600 dark:text-neutral-400">
           <span>Solid line with arrow: required prerequisite, pointing at the course that needs it.</span>
           <span>Dashed line with arrow: recommended prerequisite.</span>
-          <span>Thin plain line: a shared entity, labelled with its name.</span>
+          <span>Thin plain line: a shared entity, labeled with its name.</span>
         </div>
-        <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs" aria-label="Category colours">
+        <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs" aria-label="Category colors">
           {allCategories.map((cat) => (
             <li key={cat} className="flex items-center gap-1.5 text-neutral-600 dark:text-neutral-400">
               <span
@@ -276,13 +276,13 @@ export default async function ConnectionGraphPage({
         </ul>
 
         <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
-          Semantic (CYOA) neighbours, the fourth ring in the plan, are not drawn. Two reasons, both
+          Semantic (CYOA) neighbors, the fourth ring in the plan, are not drawn. Two reasons, both
           honest: the similarity match is lesson-grained, so turning it into a course-to-course line
           needs a rollup rule (highest single match? a count above a threshold?) whose choice is
           visible in the output and is not obviously right yet; and the underlying query only
           considers courses that opted into cross-course CYOA, so the ring would quietly imply
           &ldquo;nothing similar&rdquo; about every course that has not. It ships when the rule is
-          decided and can be labelled.
+          decided and can be labeled.
         </p>
       </section>
 

@@ -335,7 +335,7 @@ function PickerView({
         <p className="mt-3 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
           We map a state only after fetching its actual standards documents and checking each
           standard against actual lesson content. Nothing is cited from memory, partial coverage
-          is labelled as loudly as full coverage, and each framework shows the date it was
+          is labeled as loudly as full coverage, and each framework shows the date it was
           retrieved. That takes time per state, so states appear here as their mapping is
           verified, not before. The courses themselves work anywhere; only the paperwork mapping
           is state-by-state.

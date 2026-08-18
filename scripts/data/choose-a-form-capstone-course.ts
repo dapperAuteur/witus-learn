@@ -114,7 +114,7 @@ Most of the story in a scenario is not structural. Branding, the product, the st
 | "It runs on donations and a mission, not on profit" | Ownership and taxation (a nonprofit has no owners) |
 | "It is small, simple, and just starting" | Taxation and governance (keep it light) |
 
-**One fact can flip a whole decision.** "They want outside investors" turns the ownership question from "keep it in known hands" to "standardised, tradeable shares," and that alone can change the recommended form. Reading for the flipping fact is what you practice next.
+**One fact can flip a whole decision.** "They want outside investors" turns the ownership question from "keep it in known hands" to "standardized, tradeable shares," and that alone can change the recommended form. Reading for the flipping fact is what you practice next.
 
 ## "It depends" is a professional sentence, not a dodge
 

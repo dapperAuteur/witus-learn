@@ -887,7 +887,7 @@ Read a sentence from a genuine report and a sentence from a compilation and they
 
 The book creates standing with technique. A narrator with a name and a nationality. First person. Dates and itineraries. Small confiding admissions. Occasional skepticism about one marvel, which purchases credibility for the next twenty.
 
-That last one is worth naming, because it is still in constant use: **strategic skepticism**. A writer who doubts one thing seems like a careful person, and their assent then carries weight it has not earned. Watch for it in advertising, in political speech, and in any account that says "now, I was sceptical at first."
+That last one is worth naming, because it is still in constant use: **strategic skepticism**. A writer who doubts one thing seems like a careful person, and their assent then carries weight it has not earned. Watch for it in advertising, in political speech, and in any account that says "now, I was skeptical at first."
 
 ## Why this belongs in a course about maps
 
@@ -1033,7 +1033,7 @@ Hold on to two things before you turn the page. First, Pliny is not the villain:
             ],
             correctIndex: 0,
             explanation:
-              "Strategic skepticism. It is still in constant use, and the phrase to watch for is some version of \"I was sceptical at first.\"",
+              "Strategic skepticism. It is still in constant use, and the phrase to watch for is some version of \"I was skeptical at first.\"",
             sourceLessonSlug: "the-eyewitness-who-wasnt",
           },
           {

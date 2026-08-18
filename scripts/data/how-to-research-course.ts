@@ -497,7 +497,7 @@ Funding. Employment. A relationship with someone in the piece. A financial stake
 
 ## The test is not whether you were influenced
 
-That is the mistake almost everyone makes. "It did not affect my judgement" may be entirely true and is not the question.
+That is the mistake almost everyone makes. "It did not affect my judgment" may be entirely true and is not the question.
 
 The question is whether **a reasonable reader would want to know**. Disclosure exists so they can weigh the work themselves rather than trusting your self-assessment of your own objectivity, which is the one assessment you are least able to make.
 

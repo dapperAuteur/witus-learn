@@ -203,7 +203,7 @@ Getting that order right is not pedantry. The most likely serious problem on a t
 
 - Leave No Trace Center for Outdoor Ethics. *The seven principles*. https://lnt.org/why/7-principles/
 
-:::reveal Which three things must be checked against an authoritative source every time? ||| Access and camping rules, fishing licences and consumption advisories, and fire restrictions. All vary and all change.
+:::reveal Which three things must be checked against an authoritative source every time? ||| Access and camping rules, fishing licenses and consumption advisories, and fire restrictions. All vary and all change.
 
 :::reveal What is the most likely serious problem on a trip like this? ||| Not a skills failure. Being somewhere you are not permitted to be.`,
       recallContent: [

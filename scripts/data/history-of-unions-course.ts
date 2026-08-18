@@ -192,7 +192,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             ],
             correctIndex: 1,
             explanation:
-              "Question 1 is \"Who is allowed to organise?\", including whether workers may form their own union, or must join one the state already runs.",
+              "Question 1 is \"Who is allowed to organize?\", including whether workers may form their own union, or must join one the state already runs.",
             sourceLessonSlug: "the-four-questions",
           },
           {
@@ -412,7 +412,7 @@ Four men were executed for a killing the state never proved any of them committe
 
 And **May 1** became **International Workers' Day** across much of the world, in memory of Haymarket, which is why most countries mark labor's holiday on May 1 and the United States, which is where it happened, does not.
 
-> **A word on that last fact**, because it is a favourite of confident people. You will hear that an American president deliberately moved the labor holiday to September to bury the memory of Haymarket. Be careful. The **September** date came from union parades and state holiday laws in the 1880s — Oregon passed the first state Labor Day law in 1887 — well before Congress made the first Monday in September a federal holiday on **June 28, 1894** (U.S. Department of Labor, n.d.). The *motives* of the men who voted for it are a matter of interpretation. The *dates* are not. Keep those apart.
+> **A word on that last fact**, because it is a favorite of confident people. You will hear that an American president deliberately moved the labor holiday to September to bury the memory of Haymarket. Be careful. The **September** date came from union parades and state holiday laws in the 1880s — Oregon passed the first state Labor Day law in 1887 — well before Congress made the first Monday in September a federal holiday on **June 28, 1894** (U.S. Department of Labor, n.d.). The *motives* of the men who voted for it are a matter of interpretation. The *dates* are not. Keep those apart.
 
 :::reveal Who threw the bomb at Haymarket on May 4, 1886? ||| Nobody knows. The state never identified or produced the bomb-thrower; the prosecution's theory was that the defendants had incited an unknown person, and the judge instructed the jury that the bomber's identity did not matter. Four men were executed anyway. Any source that names the bomber with confidence is going beyond the evidence.
 
@@ -1873,7 +1873,7 @@ Toyota's workers have a Toyota union. Its members are the regular employees of T
 
 **Ask Question 3.** Who bargains with whom? The company's union bargains with the company. So the union's fortunes are tied, tightly and directly, to the firm's fortunes. If the company does badly, the union does badly. **This produces cooperation.** Japan's strike rates are among the lowest in the industrialized world, and Japanese unions have historically accepted restructuring in exchange for protecting the jobs of their members.
 
-**Then how does anyone get a raise?** Through a mechanism with no American equivalent: the **shuntō**, the "spring labour offensive." Every spring, enterprise unions across the whole economy bargain at roughly the same time. The national federation, **RENGO**, the Japanese Trade Union Confederation, formed in 1989, sets a target, big exporters settle first, and their settlement becomes the benchmark everyone else negotiates against. It is a way of getting *coordinated*, economy-wide wage-setting out of a movement organized company by company. In the 2024 shuntō, RENGO reported an average wage increase above **5%**, its highest in over three decades, after decades of near-flat wages (JILPT, 2025).
+**Then how does anyone get a raise?** Through a mechanism with no American equivalent: the **shuntō**, the "spring labor offensive." Every spring, enterprise unions across the whole economy bargain at roughly the same time. The national federation, **RENGO**, the Japanese Trade Union Confederation, formed in 1989, sets a target, big exporters settle first, and their settlement becomes the benchmark everyone else negotiates against. It is a way of getting *coordinated*, economy-wide wage-setting out of a movement organized company by company. In the 2024 shuntō, RENGO reported an average wage increase above **5%**, its highest in over three decades, after decades of near-flat wages (JILPT, 2025).
 
 **And now Question 2, which is where the model bleeds.**
 
@@ -1926,7 +1926,7 @@ So: you may join a union. You may not found an **independent** one. There is one
 
 **And the international marker.** China has **not ratified** ILO Convention No. **87** (Freedom of Association and Protection of the Right to Organise, 1948) or Convention No. **98** (Right to Organise and Collective Bargaining, 1949), the two conventions that define the international floor you will meet in Section 7 (ILO NORMLEX, n.d.).
 
-**Why this lesson is in the course.** Not to score a political point. Because it teaches you the sharpest possible version of **Question 1**. In most of this course, "who may organise?" has been a question about *obstacles*, cost, retaliation, exclusion, hostile employers. In China it is a question about **definition**: the thing you are permitted to join is not the thing an American or a Swede means by the word.
+**Why this lesson is in the course.** Not to score a political point. Because it teaches you the sharpest possible version of **Question 1**. In most of this course, "who may organize?" has been a question about *obstacles*, cost, retaliation, exclusion, hostile employers. In China it is a question about **definition**: the thing you are permitted to join is not the thing an American or a Swede means by the word.
 
 When you compare countries, the word "union" is not a fixed unit. **Check what the institution actually is before you compare the numbers.** A membership figure means nothing if you have not asked who the organization answers to.
 
@@ -1975,7 +1975,7 @@ The state's answer came on **13 December 1981**: **martial law**. Solidarity was
 
 And then it won. The **Round Table talks** of February-April **1989** produced partly free elections in **June 1989**, which Solidarity's candidates swept. Poland became the first Soviet-bloc country to break, and the rest of the bloc followed within months.
 
-**Sit with what that means.** A trade union, a *trade union*, was the instrument that ended communist rule in Poland. Question 1 ("who may organise?") turned out, in a one-party state, to be the same question as "who governs?"
+**Sit with what that means.** A trade union, a *trade union*, was the instrument that ended communist rule in Poland. Question 1 ("who may organize?") turned out, in a one-party state, to be the same question as "who governs?"
 
 ---
 
@@ -1993,7 +1993,7 @@ Because Black workers had **no vote**, the union became the political vehicle. C
 
 **What both cases teach.** When workers have no other legal channel, no vote, no party, no free press, **the union becomes the channel**, and the state understands that perfectly well. That is why authoritarian governments so often permit *a* union and forbid *an independent* one. They are not confused about what a union is. They know exactly what it is.
 
-:::reveal Why did a trade union become the vehicle for democratic change in both Poland and apartheid South Africa? ||| Because in each case workers had no other legal channel, no free vote, no independent party, no free press. When the union is the only organization the state has failed to control, "who may organise?" becomes the same question as "who governs?", which is precisely why authoritarian states permit a union but forbid an independent one.
+:::reveal Why did a trade union become the vehicle for democratic change in both Poland and apartheid South Africa? ||| Because in each case workers had no other legal channel, no free vote, no independent party, no free press. When the union is the only organization the state has failed to control, "who may organize?" becomes the same question as "who governs?", which is precisely why authoritarian states permit a union but forbid an independent one.
 
 ## Sources
 - UNESCO. (n.d.). *Twenty-one demands, Gdańsk, August 1980: The birth of the Solidarity trade union*. Memory of the World Register. https://www.unesco.org/en/memory-world/twenty-one-demands-gdansk-august-1980-birth-solidarity-trades-union-massive-social-movement
@@ -2242,7 +2242,7 @@ The mechanism is not exotic. It is the oldest one there is.
             ],
             correctIndex: 1,
             explanation:
-              "Not pay, the right to organize. In a one-party state, Question 1 (\"who may organise?\") turned out to be the same question as \"who governs?\"",
+              "Not pay, the right to organize. In a one-party state, Question 1 (\"who may organize?\") turned out to be the same question as \"who governs?\"",
             sourceLessonSlug: "solidarity-and-cosatu",
           },
           {
@@ -2563,7 +2563,7 @@ These are the specific, checkable facts this course wants in your head, the ones
             prompt: "Solidarity's very first demand at Gdańsk in August 1980 was not about pay. It was the right to form free trade unions ___ of the Communist Party.",
             answer: "independent",
             explanation:
-              "In a one-party state, \"who may organise?\" turned out to be the same question as \"who governs?\" Poland's communist government fell in 1989.",
+              "In a one-party state, \"who may organize?\" turned out to be the same question as \"who governs?\" Poland's communist government fell in 1989.",
           },
         ],
       },

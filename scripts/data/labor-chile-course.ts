@@ -1626,7 +1626,7 @@ So here is the assignment the entire track has been building to. **Go re-read yo
 - Exclusions: who is your system's subcontracted-Codelco-miner, formally free to organize, structurally unable to reach the party with power?
 - And the Chilean question, the one this course exists to install: **if this system had a named author, what would you say they wanted?**
 
-A labor system is an answer to the question "how much organised power should working people have?" Chile's was written by a man who answered *less*, said so, and built well. Whatever your country's answer is, someone gave it, in statutes, court rulings, and quiet structural choices, whether or not they signed their work the way José Piñera signed his. You now know how to find them. That is what this track was for.
+A labor system is an answer to the question "how much organized power should working people have?" Chile's was written by a man who answered *less*, said so, and built well. Whatever your country's answer is, someone gave it, in statutes, court rulings, and quiet structural choices, whether or not they signed their work the way José Piñera signed his. You now know how to find them. That is what this track was for.
 
 *(Where to from here: the anchor's closing lesson, "Apply the four questions," pairs with this one; "Know Your Rights at Work" covers what you can do on Monday. And this course's numbers will age, the OECD updates density and coverage regularly, Chilean politics is live, and the 40-hour phase-in completes in 2028. Re-check before you quote.)*
 

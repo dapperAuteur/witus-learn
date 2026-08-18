@@ -2965,7 +2965,7 @@ This is where the dispute stops being about arithmetic and starts being about **
 
 **So the honest conclusion is not a number. It is this:**
 
-> **The true toll of the labour that built Qatar 2022 is genuinely unknown — and it is unknown in large part because the deaths were not investigated. The absence of a reliable figure is not a neutral gap in the data. It is itself the finding.**
+> **The true toll of the labor that built Qatar 2022 is genuinely unknown — and it is unknown in large part because the deaths were not investigated. The absence of a reliable figure is not a neutral gap in the data. It is itself the finding.**
 
 That is a harder sentence than "6,500 workers died." It is also the true one, and the one you can defend.
 

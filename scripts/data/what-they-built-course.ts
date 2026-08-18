@@ -2099,7 +2099,7 @@ Use Section 4's five strategies as your checklist: **savings, family, retained p
 
 1. **Lead with a specific.** A charter date, a line in a directory, a dollar figure. Not a mood.
 2. **Give every figure an owner, a date and a scope.** Every single one.
-3. **Name the instrument.** Not "they raised money" but "they organised a mutual benefit association and chartered a bank against its reserves", if you can source it.
+3. **Name the instrument.** Not "they raised money" but "they organized a mutual benefit association and chartered a bank against its reserves", if you can source it.
 4. **Attribute an argument as an argument.** Du Bois's explanation of Durham is a case being made in 1912. **Quote it and engage it. Do not launder it into your own narration.**
 5. **Use the present tense for the present.** If the firm or its successor operates today, that is present-tense material.
 6. **One paragraph, minimum, on what you could not establish.** Required, not optional.

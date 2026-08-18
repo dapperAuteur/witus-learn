@@ -1513,7 +1513,7 @@ On classification: some states counted descent "for up to three generations," fi
 
 **4. The reception of the argument is part of the argument.** Michael Stolleis, reviewing the book from Germany, noticed that its warm American reception seemed to carry an implication: that American society should reflect critically on its own past and present rather than only pointing at Nazi Germany (Stolleis, 2018). He also closes his review by observing that a sharper light on the American share of discrimination by color, religion, sex and language makes visible that the whole business was not banished on 8 May 1945 (Stolleis, 2018). **Notice that a German legal historian is the one making that point about America, and notice that noticing it does not settle whether he is right.**
 
-**5. What to do with all of this, concretely.** When you next meet the phrase "modelled on" in a news story about a law, treat it as a claim that needs the same handling this course has given its two claims.
+**5. What to do with all of this, concretely.** When you next meet the phrase "modeled on" in a news story about a law, treat it as a claim that needs the same handling this course has given its two claims.
 
 | Ask | Because |
 |---|---|

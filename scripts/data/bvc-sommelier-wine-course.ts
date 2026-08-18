@@ -590,7 +590,7 @@ So this course is called a **Taster** course, which is the plain English for wha
       section: "Module 1 · Before you pour",
       body: `The most common thing people say before their first tasting is "I have a terrible palate." Almost none of them do. What they have is a small vocabulary, and vocabulary is the actual bottleneck.
 
-**Most of tasting is smelling.** The tongue reports a short list: sweet, sour, salty, bitter, umami, plus physical sensations like temperature, burn, and the drying grip of tannin. Everything you call "flavour" beyond that list is smell, arriving through the back of the throat while you chew or swallow. That route is called retronasal olfaction, and it is why food goes flat when you are congested. Odor perception runs on a large family of odorant receptor genes, discovered by Buck and Axel (1991), work that later took the Nobel Prize in Physiology or Medicine (Nobel Assembly, 2004). You have the hardware.
+**Most of tasting is smelling.** The tongue reports a short list: sweet, sour, salty, bitter, umami, plus physical sensations like temperature, burn, and the drying grip of tannin. Everything you call "flavor" beyond that list is smell, arriving through the back of the throat while you chew or swallow. That route is called retronasal olfaction, and it is why food goes flat when you are congested. Odor perception runs on a large family of odorant receptor genes, discovered by Buck and Axel (1991), work that later took the Nobel Prize in Physiology or Medicine (Nobel Assembly, 2004). You have the hardware.
 
 **People genuinely differ, less than they think.** There is real variation in sensitivity to certain bitter compounds, measured with the chemicals PROP and PTC: some people taste them intensely, some barely at all (Bartoshuk, 2000). That variation is real, and it is far smaller than the difference between a trained taster and an untrained one. Training beats genetics here.
 
@@ -832,7 +832,7 @@ A workable blank looks like this. Copy it into a notebook, print twenty, or draw
 
 *Legs, or tears, the streaks running down the inside of the glass, are not a quality signal.* They are the Marangoni effect: alcohol evaporates faster than water from the film on the glass, the surface tension changes, and the liquid climbs and falls back. Thick slow legs tell you the wine is high in alcohol or sugar. That is all they tell you, and it is worth saying at a table because it is the single most confidently repeated piece of folklore in wine.
 
-*Depth of colour is not quality either.* It is grape thickness and winemaking. Some of the most expensive red wine on earth is pale.
+*Depth of color is not quality either.* It is grape thickness and winemaking. Some of the most expensive red wine on earth is pale.
 
 **One thing sight is genuinely great at.** Spotting a wine that has been cooked. A white that has gone deep gold or brown before its time, especially with a slightly sticky, baked apple nose, has probably sat in a hot warehouse or a car. Module 9 covers heat damage as a fault. Sight catches it first.
 

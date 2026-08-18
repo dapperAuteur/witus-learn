@@ -1109,7 +1109,7 @@ The habit being built is separating the enforceable from the decorative, which i
 - Motamayor, J. C., Lachenaud, P., da Silva e Mota, J. W., Loor, R., Kuhn, D. N., Brown, J. S., & Schnell, R. J. (2008). Geographic and genetic population differentiation of the Amazonian chocolate tree (Theobroma cacao L.). *PLoS ONE, 3*(10), e3311. https://doi.org/10.1371/journal.pone.0003311
 - Wille, R. L., & Lutton, E. S. (1966). Polymorphism of cocoa butter. *Journal of the American Oil Chemists' Society, 43*(8), 491-496. https://doi.org/10.1007/BF02641273
 
-**Labour and trade**
+**Labor and trade**
 - Fairtrade International. (n.d.). *Cocoa standards and minimum prices*. https://www.fairtrade.net
 - NORC at the University of Chicago. (2020). *Assessing progress in reducing child labor in cocoa production in cocoa growing areas of Côte d'Ivoire and Ghana*. https://www.norc.org`,
     },

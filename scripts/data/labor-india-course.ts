@@ -425,7 +425,7 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
 
 **Note the irony in the target.** The unions' central demand in 2025 was repeal of the Labour Codes, laws whose stated purpose includes *extending* rights (a universal minimum wage, social security for gig workers) to the informal majority. Why would unions strike against that? Section 4 lays out what the Codes actually say, what the federations object to, and why the honest answer is "both sides have a case", dated, as always.
 
-:::reveal "Over 250 million workers joined the 9 July 2025 general strike." What is the epistemically careful version of that sentence, and why? ||| "The organising unions claimed over 250 million participants." The figure is the organisers' own estimate, there is no independent count of a one-day strike across a country of 1.4 billion, and in informal sectors striking is indistinguishable from not working that day. Attribute the number; don't assert or dismiss it.
+:::reveal "Over 250 million workers joined the 9 July 2025 general strike." What is the epistemically careful version of that sentence, and why? ||| "The organizing unions claimed over 250 million participants." The figure is the organisers' own estimate, there is no independent count of a one-day strike across a country of 1.4 billion, and in informal sectors striking is indistinguishable from not working that day. Attribute the number; don't assert or dismiss it.
 
 ## Sources
 - ITUC-Asia Pacific. (2025, July). *Bharat Bandh: India's workers rise in unprecedented unity against anti-labour policies*. https://www.ituc-ap.org/news-and-updates/bharat-bandh-indias-workers-rise-in-unprecedented-unity-against-anti-labour-policies

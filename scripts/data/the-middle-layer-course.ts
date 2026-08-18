@@ -528,7 +528,7 @@ Compacts are the active tool; three constitutional clauses form the passive fram
 
 ## Why this belongs in the middle-layer course
 
-Horizontal federalism is the feature you will look for, or miss, abroad. **Germany's Laender, Canada's provinces, and Spain's autonomous communities each deal sideways in their own way, and the rules differ.** Some federations centralise these functions; others leave them to the units; devolved systems often route everything back through the sovereign center. When you meet a middle layer, ask not only "how does it deal with the centre?" but "how does it deal with its neighbours, and who wrote those rules?" **A layer that can bind its neighbors by compact, subject only to the center's consent, is holding a genuinely sovereign kind of power.** This is description of structure, not legal advice.
+Horizontal federalism is the feature you will look for, or miss, abroad. **Germany's Laender, Canada's provinces, and Spain's autonomous communities each deal sideways in their own way, and the rules differ.** Some federations centralise these functions; others leave them to the units; devolved systems often route everything back through the sovereign center. When you meet a middle layer, ask not only "how does it deal with the center?" but "how does it deal with its neighbors, and who wrote those rules?" **A layer that can bind its neighbors by compact, subject only to the center's consent, is holding a genuinely sovereign kind of power.** This is description of structure, not legal advice.
 
 ## Sources
 - U.S. Const. art. I, s. 10. https://constitution.congress.gov/constitution/article-1/section-10/
