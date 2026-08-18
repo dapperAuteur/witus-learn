@@ -4,6 +4,7 @@ import { requireTenant } from "@/lib/tenant";
 import { getSession } from "@/lib/session";
 import { getActiveLearner } from "@/lib/active-learner";
 import { getLearnerDashboard, getLearnerStats, getSpecializations } from "@/db/queries/dashboard";
+import { listStudentOverridesWithCourse } from "@/db/queries/overrides";
 import { getRecallHistory } from "@/db/queries/recall";
 import { ProgressBar, WeekBars } from "@/components/progress-bits";
 import { DashboardProfileForm } from "@/components/dashboard-profile-form";
@@ -64,11 +65,12 @@ export default async function DashboardPage() {
   // section below stays on the signed-in account regardless (see "Manage your profile").
   const learner = await getActiveLearner(session);
   const activeLearnerId = learner?.id ?? session.user.id;
-  const [dashboard, stats, recallHistory, specializations] = await Promise.all([
+  const [dashboard, stats, recallHistory, specializations, adjustments] = await Promise.all([
     getLearnerDashboard(tenant.id, activeLearnerId),
     getLearnerStats(tenant.id, activeLearnerId),
     getRecallHistory(tenant.id, activeLearnerId),
     getSpecializations(tenant.id, activeLearnerId),
+    listStudentOverridesWithCourse(tenant.id, activeLearnerId),
   ]);
   // Only specializations the learner has STARTED (or earned). An untouched track renders
   // nothing: listing every possible combination would bury the credentials that are real.
@@ -160,6 +162,32 @@ export default async function DashboardPage() {
       ) : null}
 
       <section className="mt-8">
+        {adjustments.length > 0 ? (
+          <section aria-label="Teacher adjustments to your record" className="mb-8">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+              Adjustments
+            </h2>
+            <p className="mt-1 text-xs text-neutral-500">
+              A teacher adjusted these values. Your recorded attempts are unchanged and both
+              values are shown wherever your grades appear.
+            </p>
+            <ul className="mt-2 space-y-1 text-sm">
+              {adjustments.map((a) => (
+                <li key={a.id} className="rounded-lg border border-neutral-200 p-2 dark:border-neutral-800">
+                  <span className="font-medium">{a.courseTitle ?? "A course"}</span>:{" "}
+                  {a.kind === "quiz_score"
+                    ? `quiz score adjusted to ${Number(a.value)}%`
+                    : a.kind === "course_complete"
+                      ? "course marked complete (display only)"
+                      : "lesson marked complete"}
+                  <span className="block text-xs text-neutral-500">
+                    {a.createdAt.toISOString().slice(0, 10)} · {a.reason}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
         <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Credentials</h2>
         {stats.credentials.length === 0 ? (
           <p className="mt-2 text-sm text-neutral-500">Finish a course to earn your first credential.</p>

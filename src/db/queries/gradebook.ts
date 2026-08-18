@@ -1,4 +1,6 @@
 import { and, eq, inArray, isNotNull, sql } from "drizzle-orm";
+import { getStudentOverrideMap } from "@/db/queries/overrides";
+import { effectiveCompletions, effectiveQuizScore } from "@/lib/overrides";
 import { db } from "@/db/client";
 import {
   cohortMembers,
@@ -28,11 +30,21 @@ import { getUserCourseQuizAttempts } from "./quiz-attempts";
 // batch (see the plan).
 
 export interface GradebookRow {
+  userId: string;
   student: string;
+  courseId: string;
   courseTitle: string;
+  /** EFFECTIVE count (real completions plus lesson_complete overrides); the real count rides in
+   *  `originalLessonsCompleted` whenever they differ. Overrides are display-only (plans/66). */
   lessonsCompleted: number;
-  /** Best of the learner's recorded quiz scores (0-100), or null if they have not taken a quiz yet. */
+  originalLessonsCompleted?: number;
+  /** EFFECTIVE best quiz (0-100): the real best, unless a teacher wrote a quiz_score override,
+   *  in which case `adjusted` carries the marker and `originalBestQuiz` the untouched value. */
   bestQuiz: number | null;
+  originalBestQuiz?: number | null;
+  adjusted?: { reason: string; teacherUserId: string; at: Date };
+  /** Course marked complete by a teacher override (display only; no certificate, plans/66 2b). */
+  courseMarkedComplete?: { reason: string } | null;
   enrolledAt: Date;
 }
 
@@ -55,16 +67,29 @@ export async function getLearnerGradebook(tenantId: string, userId: string): Pro
   const courses = await listMyCourses(tenantId, userId);
   const rows: GradebookRow[] = [];
 
+  const overrides = await getStudentOverrideMap(tenantId, userId);
   for (const { enrollment, course } of courses) {
     const [summary, attempts] = await Promise.all([
       getCourseProgressSummary(userId, course.id),
       getUserCourseQuizAttempts(tenantId, userId, course.id),
     ]);
+    const realBest = attempts.length ? Math.max(...attempts.map((a) => a.score)) : null;
+    const quiz = effectiveQuizScore(realBest, overrides, course.id);
+    const completion = effectiveCompletions(summary.completedLessonIds, overrides, course.id);
     rows.push({
+      userId,
       student,
+      courseId: course.id,
       courseTitle: course.title,
-      lessonsCompleted: summary.completedLessonIds.size,
-      bestQuiz: attempts.length ? Math.max(...attempts.map((a) => a.score)) : null,
+      lessonsCompleted: completion.effectiveCount,
+      ...(completion.effectiveCount !== completion.originalCount
+        ? { originalLessonsCompleted: completion.originalCount }
+        : {}),
+      bestQuiz: quiz.effective,
+      ...(quiz.adjusted ? { originalBestQuiz: quiz.original, adjusted: quiz.adjusted } : {}),
+      courseMarkedComplete: completion.courseMarkedComplete
+        ? { reason: completion.courseMarkedComplete.reason }
+        : null,
       enrolledAt: enrollment.enrolledAt,
     });
   }

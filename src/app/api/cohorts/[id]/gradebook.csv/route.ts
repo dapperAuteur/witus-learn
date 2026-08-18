@@ -24,9 +24,19 @@ export async function GET(_req: Request, { params }: { params: Promise<{ id: str
   }
 
   const rows = await getCohortGradebook(sdb.tenantId, id);
-  const header = ["Student", "Course", "Lessons completed", "Best quiz score (%)", "Enrolled"];
+  // "Adjusted" makes teacher overrides (plans/66) visible in the export too: an adjusted number
+  // with no marker would be indistinguishable from a real one. The cell carries what changed and
+  // the recorded reason; empty = untouched real values.
+  const header = ["Student", "Course", "Lessons completed", "Best quiz score (%)", "Enrolled", "Adjusted"];
   const lines = [header.join(",")];
   for (const r of rows) {
+    const adjustments = [
+      r.adjusted
+        ? `quiz adjusted${r.originalBestQuiz != null ? ` from ${r.originalBestQuiz}%` : ""}: ${r.adjusted.reason}`
+        : null,
+      r.originalLessonsCompleted != null ? `lessons adjusted from ${r.originalLessonsCompleted}` : null,
+      r.courseMarkedComplete ? `marked complete: ${r.courseMarkedComplete.reason}` : null,
+    ].filter(Boolean);
     lines.push(
       [
         csvCell(r.student),
@@ -34,6 +44,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ id: str
         csvCell(r.lessonsCompleted),
         csvCell(r.bestQuiz ?? ""),
         csvCell(r.enrolledAt.toISOString().slice(0, 10)),
+        csvCell(adjustments.join(" | ")),
       ].join(","),
     );
   }
