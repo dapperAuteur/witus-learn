@@ -10,6 +10,7 @@ import { RecallPlayer } from "@/components/recall-player";
 import { ProgressBar } from "@/components/progress-bits";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
 import { NotesPanel } from "@/components/notes-panel";
+import { AnnotationLayer } from "@/components/annotation-layer";
 import { AssignmentSubmit } from "@/components/assignment-submit";
 import { getSubmission } from "@/db/queries/assignments";
 import { buildCrossroads } from "@/lib/crossroads";
@@ -247,13 +248,28 @@ export default async function LessonPage({ params }: Params) {
             {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 && canRecord ? (
               <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
             ) : null}
-            <LessonPlayer
-              lesson={lesson}
-              trackPlayback={canRecord}
-              trackRecall={canRecord}
-              readOnly={view.isAuditor}
-              resumeAt={view.watchSeconds.get(lesson.id) ?? 0}
-            />
+            {/* The annotation layer (plans/61) wraps the player so a learner can select lesson
+                text and attach a note to that exact passage. Signed-out viewers and read-only
+                auditors get the untouched player: no selection affordance, no highlights. */}
+            {canRecord ? (
+              <AnnotationLayer courseId={view.course.id} lessonId={lesson.id}>
+                <LessonPlayer
+                  lesson={lesson}
+                  trackPlayback={canRecord}
+                  trackRecall={canRecord}
+                  readOnly={view.isAuditor}
+                  resumeAt={view.watchSeconds.get(lesson.id) ?? 0}
+                />
+              </AnnotationLayer>
+            ) : (
+              <LessonPlayer
+                lesson={lesson}
+                trackPlayback={canRecord}
+                trackRecall={canRecord}
+                readOnly={view.isAuditor}
+                resumeAt={view.watchSeconds.get(lesson.id) ?? 0}
+              />
+            )}
             <SaveOfflineButton
               pagePath={`${base}/lesson/${lesson.slug}`}
               mediaUrl={directMediaUrl(lesson)}
